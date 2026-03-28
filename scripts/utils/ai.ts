@@ -113,7 +113,18 @@ Please provide a corrected translation that addresses the issue mentioned above.
       }
 
       try {
-        const { response } = await model.generateContent(prompt)
+        const { response } = await model.generateContent({
+          contents: [
+            {
+              role: 'user',
+              parts: [{ text: prompt }],
+            },
+          ],
+          generationConfig: {
+            ...generationConfig,
+            responseMimeType: 'application/json',
+          },
+        })
 
         // 프롬프트 차단 확인
         const promptFeedback = response.promptFeedback

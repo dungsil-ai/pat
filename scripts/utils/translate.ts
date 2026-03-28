@@ -23,6 +23,43 @@ interface BulkTranslateContext {
   modName?: string
 }
 
+const MAX_BULK_ITEMS_PER_REQUEST = 24
+const MAX_BULK_CHARS_PER_REQUEST = 6000
+
+interface UnresolvedBulkItem {
+  index: number
+  text: string
+  cacheKey: string
+}
+
+function splitBulkRequests(items: UnresolvedBulkItem[]): UnresolvedBulkItem[][] {
+  const batches: UnresolvedBulkItem[][] = []
+  let currentBatch: UnresolvedBulkItem[] = []
+  let currentChars = 0
+
+  for (const item of items) {
+    const itemChars = item.text.length
+    const shouldSplit =
+      currentBatch.length > 0 &&
+      (currentBatch.length >= MAX_BULK_ITEMS_PER_REQUEST || currentChars + itemChars > MAX_BULK_CHARS_PER_REQUEST)
+
+    if (shouldSplit) {
+      batches.push(currentBatch)
+      currentBatch = []
+      currentChars = 0
+    }
+
+    currentBatch.push(item)
+    currentChars += itemChars
+  }
+
+  if (currentBatch.length > 0) {
+    batches.push(currentBatch)
+  }
+
+  return batches
+}
+
 /**
  * Regex patterns for detecting variable-only text that should be returned immediately without AI translation.
  * 
@@ -280,7 +317,7 @@ export async function translateBulk (
   }
 
   const results: BulkTranslateResult[] = Array.from({ length: texts.length }, () => ({ translatedText: '' }))
-  const unresolved: Array<{ index: number; text: string; cacheKey: string }> = []
+  const unresolved: UnresolvedBulkItem[] = []
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const modLogPrefix = context?.modName ? `[모드:${context.modName}] ` : ''
 
@@ -340,50 +377,56 @@ export async function translateBulk (
     return results
   }
 
-  try {
-    log.info(`${modLogPrefix}[벌크] AI 벌크 요청 전송: items=${unresolved.length}, gameType=${gameType}${useTransliteration ? ' (음역 모드)' : ''}`)
+  const batches = splitBulkRequests(unresolved)
 
-    for (const unresolvedItem of unresolved) {
-      log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 벌크 요청에 포함: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
-    }
+  for (const [batchIndex, batch] of batches.entries()) {
+    try {
+      log.info(
+        `${modLogPrefix}[벌크] AI 벌크 요청 전송: batch=${batchIndex + 1}/${batches.length}, items=${batch.length}, gameType=${gameType}${useTransliteration ? ' (음역 모드)' : ''}`
+      )
 
-    const aiTranslated = await translateAIBulk(unresolved.map(item => item.text), gameType, useTransliteration)
-
-    for (const [bulkIndex, unresolvedItem] of unresolved.entries()) {
-      const translatedText = sanitizeTranslationText(aiTranslated[bulkIndex] || unresolvedItem.text)
-      const validation = validateTranslation(unresolvedItem.text, translatedText, gameType)
-
-      if (validation.isValid) {
-        await setCache(unresolvedItem.cacheKey, translatedText, gameType)
-        results[unresolvedItem.index] = { translatedText }
-        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
-      } else {
-        log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 검증 실패, 개별 번역으로 재시도: ${unresolvedItem.text} -> ${translatedText} (사유: ${validation.reason})`)
-        // 검증 실패 시 개별 번역으로 재시도
-        const fallback = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
-        results[unresolvedItem.index] = { translatedText: fallback }
-        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 재시도 응답 처리: ${unresolvedItem.text} -> ${fallback}${useTransliteration ? ' (음역 모드)' : ''}`)
+      for (const unresolvedItem of batch) {
+        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 벌크 요청에 포함: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
       }
-    }
-  } catch (error) {
-    const errorInfo = error instanceof Error ? error : String(error)
-    log.warn(
-      `${modLogPrefix}[벌크] AI 벌크 요청 실패, 개별 번역으로 폴백${useTransliteration ? ' (음역 모드)' : ''}`,
-      errorInfo
-    )
-    // 벌크 요청 실패 시 개별 번역으로 폴백
-    for (const unresolvedItem of unresolved) {
-      try {
-        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 요청: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
-        const translatedText = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
-        results[unresolvedItem.index] = { translatedText }
-        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
-      } catch (error) {
-        if (error instanceof TranslationRefusedError || error instanceof TranslationRetryExceededError) {
-          results[unresolvedItem.index] = { translatedText: unresolvedItem.text, error }
-          log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 실패, 원문 유지: ${unresolvedItem.text} (사유: ${(error as Error).message})`)
+
+      const aiTranslated = await translateAIBulk(batch.map(item => item.text), gameType, useTransliteration)
+
+      for (const [bulkIndex, unresolvedItem] of batch.entries()) {
+        const translatedText = sanitizeTranslationText(aiTranslated[bulkIndex] || unresolvedItem.text)
+        const validation = validateTranslation(unresolvedItem.text, translatedText, gameType)
+
+        if (validation.isValid) {
+          await setCache(unresolvedItem.cacheKey, translatedText, gameType)
+          results[unresolvedItem.index] = { translatedText }
+          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
         } else {
-          throw error
+          log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 검증 실패, 개별 번역으로 재시도: ${unresolvedItem.text} -> ${translatedText} (사유: ${validation.reason})`)
+          // 검증 실패 시 개별 번역으로 재시도
+          const fallback = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
+          results[unresolvedItem.index] = { translatedText: fallback }
+          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 재시도 응답 처리: ${unresolvedItem.text} -> ${fallback}${useTransliteration ? ' (음역 모드)' : ''}`)
+        }
+      }
+    } catch (error) {
+      const errorInfo = error instanceof Error ? error : String(error)
+      log.warn(
+        `${modLogPrefix}[벌크] AI 벌크 요청 실패, 개별 번역으로 폴백: batch=${batchIndex + 1}/${batches.length}${useTransliteration ? ' (음역 모드)' : ''}`,
+        errorInfo
+      )
+      // 벌크 요청 실패 시 해당 배치만 개별 번역으로 폴백
+      for (const unresolvedItem of batch) {
+        try {
+          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 요청: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
+          const translatedText = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
+          results[unresolvedItem.index] = { translatedText }
+          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
+        } catch (error) {
+          if (error instanceof TranslationRefusedError || error instanceof TranslationRetryExceededError) {
+            results[unresolvedItem.index] = { translatedText: unresolvedItem.text, error }
+            log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 실패, 원문 유지: ${unresolvedItem.text} (사유: ${(error as Error).message})`)
+          } else {
+            throw error
+          }
         }
       }
     }
