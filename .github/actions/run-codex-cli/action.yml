@@ -1,0 +1,58 @@
+name: 'Run Codex CLI'
+description: 'Codex CLI 인증 파일을 구성하고 프롬프트를 실행합니다.'
+inputs:
+  prompt:
+    description: 'Codex CLI에 전달할 프롬프트'
+    required: true
+  codex-auth-json:
+    description: 'CODEX_AUTH_JSON 시크릿 값'
+    required: true
+  codex-home:
+    description: 'Codex 홈 디렉터리 경로'
+    required: false
+    default: '.codex-home'
+  workdir:
+    description: 'codex exec 실행 경로'
+    required: false
+    default: '${{ github.workspace }}'
+runs:
+  using: 'composite'
+  steps:
+    - name: Codex 인증 파일 구성
+      shell: bash
+      env:
+        CODEX_HOME: ${{ inputs.codex-home }}
+        INPUT_CODEX_AUTH_JSON: ${{ inputs.codex-auth-json }}
+        INPUT_CODEX_HOME: ${{ inputs.codex-home }}
+      run: |
+        mkdir -p "$INPUT_CODEX_HOME"
+        if [ -z "$INPUT_CODEX_AUTH_JSON" ]; then
+          echo "CODEX_AUTH_JSON 시크릿이 비어 있습니다." >&2
+          exit 1
+        fi
+        printf '%s' "$INPUT_CODEX_AUTH_JSON" > "$INPUT_CODEX_HOME/auth.json"
+        chmod 600 "$INPUT_CODEX_HOME/auth.json"
+
+    - name: Codex CLI 설치
+      shell: bash
+      run: npm install -g @openai/codex
+
+    - name: Codex CLI 실행
+      shell: bash
+      env:
+        CODEX_HOME: ${{ inputs.codex-home }}
+        INPUT_PROMPT: ${{ inputs.prompt }}
+        INPUT_WORKDIR: ${{ inputs.workdir }}
+      run: |
+        codex exec \
+          --cd "$INPUT_WORKDIR" \
+          --sandbox danger-full-access \
+          "$INPUT_PROMPT"
+
+    - name: Codex 인증 파일 정리
+      if: always()
+      shell: bash
+      env:
+        CODEX_HOME: ${{ inputs.codex-home }}
+        INPUT_CODEX_HOME: ${{ inputs.codex-home }}
+      run: rm -f "$INPUT_CODEX_HOME/auth.json"

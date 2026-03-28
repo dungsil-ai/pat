@@ -42,21 +42,6 @@ jobs:
       - name: 의존성 설치
         run: pnpm install --frozen-lockfile
 
-      - name: Codex 홈 경로 설정
-        run: echo "CODEX_HOME=$RUNNER_TEMP/codex-home" >> "$GITHUB_ENV"
-
-      - name: Codex 인증 파일 구성
-        env:
-          CODEX_AUTH_JSON: ${{ secrets.CODEX_AUTH_JSON }}
-        run: |
-          mkdir -p "$CODEX_HOME"
-          if [ -z "$CODEX_AUTH_JSON" ]; then
-            echo "CODEX_AUTH_JSON 시크릿이 비어 있습니다." >&2
-            exit 1
-          fi
-          printf '%s' "$CODEX_AUTH_JSON" > "$CODEX_HOME/auth.json"
-          chmod 600 "$CODEX_HOME/auth.json"
-
       - name: 이슈 메타데이터 파싱
         id: parse
         uses: actions/github-script@v8
@@ -82,12 +67,10 @@ jobs:
 
       - name: Codex로 fallback 번역 반영
         id: run_codex
-        uses: openai/codex-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./.github/actions/run-codex-cli
         with:
-          codex-home: ${{ env.CODEX_HOME }}
-          sandbox: danger-full-access
+          codex-auth-json: ${{ secrets.CODEX_AUTH_JSON }}
+          codex-home: ${{ github.workspace }}/.codex-home
           prompt: |
             당신은 패러독스 게임 모드 번역 저장소의 유지보수 담당 엔지니어입니다.
 
@@ -117,10 +100,6 @@ jobs:
 
       - name: 테스트 실행
         run: pnpm test
-
-      - name: Codex 인증 파일 정리
-        if: always()
-        run: rm -f "$CODEX_HOME/auth.json"
 
       - name: fallback 번역 PR 생성
         uses: peter-evans/create-pull-request@v7
