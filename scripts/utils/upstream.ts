@@ -451,13 +451,7 @@ async function cloneOptimizedRepository(targetPath: string, config: UpstreamConf
     // 2. Partial clone (blob 없이 메타데이터만) + shallow clone으로 디스크 공간 최소화
     // 최신 태그나 기본 브랜치를 명시적으로 지정하여 클론
     log.start(`[${config.path}] Partial clone 시작 (${latestRef.type}: ${latestRef.name})...`)
-    if (latestRef.type === 'tag') {
-      // 태그가 있는 경우, 해당 태그를 기준으로 shallow clone
-      await execAsync(`git clone --filter=blob:none --depth=1 --branch "${latestRef.name}" --no-checkout "${config.url}" "${targetPath}"`)
-    } else {
-      // 태그가 없는 경우, 기본 브랜치로 shallow clone
-      await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
-    }
+    await cloneWithFallback(targetPath, config, latestRef)
     
     // 3. Sparse checkout 설정
     log.start(`[${config.path}] Sparse checkout 설정 중...`)
@@ -479,6 +473,43 @@ async function cloneOptimizedRepository(targetPath: string, config: UpstreamConf
     log.error(`[${config.path}] 클론 실패:`, error)
     throw error
   }
+}
+
+/**
+ * 최신 참조로 클론을 시도하고, 태그 불일치 시 기본 브랜치로 폴백합니다.
+ */
+async function cloneWithFallback(
+  targetPath: string,
+  config: UpstreamConfig,
+  latestRef: { type: 'tag' | 'branch', name: string }
+): Promise<void> {
+  if (latestRef.type === 'branch') {
+    await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
+    return
+  }
+
+  try {
+    // 태그가 있는 경우, 해당 태그를 기준으로 shallow clone
+    await execAsync(`git clone --filter=blob:none --depth=1 --branch "${latestRef.name}" --no-checkout "${config.url}" "${targetPath}"`)
+  } catch (error) {
+    if (!isRemoteRefNotFoundError(error)) {
+      throw error
+    }
+
+    log.warn(`[${config.path}] 태그(${latestRef.name})를 찾을 수 없어 기본 브랜치로 폴백합니다`)
+    await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
+  }
+}
+
+/**
+ * 원격 참조가 존재하지 않아 발생한 clone 오류인지 판별합니다.
+ */
+function isRemoteRefNotFoundError(error: unknown): boolean {
+  if (!(error instanceof Error)) {
+    return false
+  }
+
+  return /Remote branch .+ not found/i.test(error.message)
 }
 
 /**
