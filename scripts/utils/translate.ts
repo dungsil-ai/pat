@@ -335,8 +335,10 @@ export async function translateBulk (
   }
 
   try {
+    log.info(`[벌크] AI 벌크 요청 전송: items=${unresolved.length}, gameType=${gameType}${useTransliteration ? ' (음역 모드)' : ''}`)
+
     for (const unresolvedItem of unresolved) {
-      log.info(`[벌크/${unresolvedItem.index}] AI 요청 전송: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
+      log.info(`[벌크/${unresolvedItem.index}] AI 벌크 요청에 포함: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
     }
 
     const aiTranslated = await translateAIBulk(unresolved.map(item => item.text), gameType, useTransliteration)
