@@ -144,6 +144,19 @@
   VIET_decision_snow_festival_context_tooltip: "#emphasis 역사적 배경:#! 이 미니 이벤트 연쇄는 중세 후기와 르네상스 시대 유럽에서 역사적으로 기록된 유사한 사건들을 느슨하게 기반으로 합니다. 가장 잘 알려진 사례는 1511년 브뤼셀 시에서 열린 눈 축제입니다. 비록 이 사건이 브뤼셀 시민들이 포르노적이거나 풍자적인 조각상을 만들어 도시 엘리트들에 대항한 정치적 시위였다고 온라인에서 과장되었지만, 실제로는 도시 관리들이 지지하고 심지어 후원했으며, 정치적, 사회적 불안감을 해소하고, 시민적 정체성과 자부심을 고취하며, 외세와 종교적 적들을 풍자하고, 단순히 즐거움을 누리는 방식이었습니다." # 6210724789186887966
   VIET_decision_snow_festival_confirm: "겨울을 즐겨보자!" # 13756337464774014736
   VIET_winter_capital_req: "귀하의 [capital|E] [barony|E]가 [winter|E]로 인해 어려움을 겪고 있습니다 (즉, 겨울 [barony|E] [modifiers|E]가 적용 중입니다)." # 17152019415133795283
+  VIET_decision_strawberry_garden: "딸기 정원 가꾸기" # 4757347518966568351
+  VIET_decision_strawberry_garden_tooltip: "딸기는 맛있고 영양가도 높습니다!" # 8047517541545324757
+  VIET_decision_strawberry_garden_desc: "농학자들과 정원사들은 제 [realm|E]의 일부 지역이 딸기 재배에 매우 적합하다고 생각합니다. 약간의 노력이 필요하겠지만, 자금을 지원한다면 그곳에 딸기 정원을 지을 수 있을 것입니다." # 3696563125298037198
+  VIET_decision_strawberry_garden_county_req: "귀하의 [capital|E]는 [GetModifier('VIET_potential_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 보유하고 있습니다." # 17647092909176750887
+  VIET_decision_strawberry_garden_confirm: "해내자!" # 331371430259311057
+  VIET_decision_strawberry_garden_context_tooltip: "#emphasis Historical Context:#! 현대의 딸기는 18세기에 프랑스에서 북미의 #italic Fragaria Virginiana#!와 북미 및 남미 태평양 연안과 하와이의 #italic Fragaria chiloensis#! 두 신대륙 딸기 품종을 교배하여 만들어졌습니다. 콜럼버스 교환 이전, 구세계의 딸기는 북유라시아에서 유래한 #italic Fragaria Vesca#!와 같은 다른 종에서 나왔습니다. 신석기 시대부터 많은 이들이 즐겼지만, 현대 딸기보다 작고 둥글었으며, 특히 프랑스에서는 후기 중세 시대부터 더 체계적으로 재배되었습니다. 예를 들어, 14세기 프랑스 국왕 샤를 5세는 자신의 정원에 1200그루의 딸기나무를 두었다고 전해집니다." # 8071152887093533688
+  VIET_decision_get_strawberries: "최고급 딸기 획득" # 2962825671927632943
+  VIET_decision_get_strawberries_tooltip: "저는 꼭 먹어봐야 할 미식가용 딸기가 있습니다!" # 18372795021823157984
+  VIET_decision_get_strawberries_desc: "저는 이 지역에서 딸기 맛으로 유명한 딸기 정원에 접근할 수 있습니다." # 17707543211896346553
+  VIET_decision_get_strawberries_confirm: "음... 딸기!" # 3322974901629810865
+  VIET_decision_strawberries_landless_req: "귀하의 [domicile|E]는 [GetModifier('VIET_famous_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 가진 [county|E]에 있습니다." # 7549140432680279921
+  VIET_decision_strawberries_landed_req: "귀하 또는 [vassal|E]가 [GetModifier('VIET_famous_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 가진 [capital|E]를 소유하고 있습니다." # 1374551291113110608
+  VIET_decision_get_strawberries_context_tooltip: "$VIET_decision_strawberry_garden_context_tooltip$" # 17816808640468463565
   VIET_gift_baklava: "특별한 과자 선물하기" # 7592671782255085168
   VIET_gift_baklava_desc: "유명한 제과사가 만든 다양한 페이스트리, 과자, 디저트를 [recipient.GetShortUINameNoTooltip]에게 줄 선물로 사야겠군" # 4947150406463498334
   VIET_gift_baklava_effect_tooltip: "[recipient.GetShortUINameNoTooltip]께서는 귀하께서 선택하신 후식 선물을 받으실 것이며, 이는 [recipient.GetHerHim]에게 [character_modifier|E]를 선사할 것입니다." # 12292820056766794884
@@ -170,16 +183,3 @@
   activity_VIET_trip_flower_meadows: "꽃이 만발한 초원 방문 여행" # 17463200934085476513
   activity_VIET_trip_flower_meadows_desc: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U]의 꽃이 핀 초원 방문" # 9536644077270564882
   activity_VIET_xxxxx: "xxxxx" # 1951045980481827005
-  VIET_decision_strawberry_garden: "딸기 정원 가꾸기" # 4757347518966568351
-  VIET_decision_strawberry_garden_tooltip: "딸기는 맛있고 영양가도 높습니다!" # 8047517541545324757
-  VIET_decision_strawberry_garden_desc: "농학자들과 정원사들은 제 [realm|E]의 일부 지역이 딸기 재배에 매우 적합하다고 생각합니다. 약간의 노력이 필요하겠지만, 자금을 지원한다면 그곳에 딸기 정원을 지을 수 있을 것입니다." # 3696563125298037198
-  VIET_decision_strawberry_garden_county_req: "귀하의 [capital|E]는 [GetModifier('VIET_potential_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 보유하고 있습니다." # 17647092909176750887
-  VIET_decision_strawberry_garden_confirm: "해내자!" # 331371430259311057
-  VIET_decision_strawberry_garden_context_tooltip: "#emphasis Historical Context:#! 현대의 딸기는 18세기에 프랑스에서 북미의 #italic Fragaria Virginiana#!와 북미 및 남미 태평양 연안과 하와이의 #italic Fragaria chiloensis#! 두 신대륙 딸기 품종을 교배하여 만들어졌습니다. 콜럼버스 교환 이전, 구세계의 딸기는 북유라시아에서 유래한 #italic Fragaria Vesca#!와 같은 다른 종에서 나왔습니다. 신석기 시대부터 많은 이들이 즐겼지만, 현대 딸기보다 작고 둥글었으며, 특히 프랑스에서는 후기 중세 시대부터 더 체계적으로 재배되었습니다. 예를 들어, 14세기 프랑스 국왕 샤를 5세는 자신의 정원에 1200그루의 딸기나무를 두었다고 전해집니다." # 8071152887093533688
-  VIET_decision_get_strawberries: "최고급 딸기 획득" # 2962825671927632943
-  VIET_decision_get_strawberries_tooltip: "저는 꼭 먹어봐야 할 미식가용 딸기가 있습니다!" # 18372795021823157984
-  VIET_decision_get_strawberries_desc: "저는 이 지역에서 딸기 맛으로 유명한 딸기 정원에 접근할 수 있습니다." # 17707543211896346553
-  VIET_decision_get_strawberries_confirm: "음... 딸기!" # 3322974901629810865
-  VIET_decision_strawberries_landless_req: "귀하의 [domicile|E]는 [GetModifier('VIET_famous_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 가진 [county|E]에 있습니다." # 7549140432680279921
-  VIET_decision_strawberries_landed_req: "귀하 또는 [vassal|E]가 [GetModifier('VIET_famous_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]를 가진 [capital|E]를 소유하고 있습니다." # 1374551291113110608
-  VIET_decision_get_strawberries_context_tooltip: "$VIET_decision_strawberry_garden_context_tooltip$" # 17816808640468463565

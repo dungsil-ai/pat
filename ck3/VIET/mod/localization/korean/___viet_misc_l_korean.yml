@@ -131,11 +131,6 @@
   VIET_snow_sculpture_reaction_13: "[ROOT.Char.GetFaith.HighGodName]의 위대함을 증명하는 증거" # 6767245043230644648
   VIET_snow_sculpture_reaction_14: "나의 통치를 지지하는 강력한 정치적 선언" # 18016161869001798977
   VIET_snow_sculpture_reaction_15: "겸허하게, 우주 속에서의 우리의 위치를 상기시켜 주는군" # 3817343023008329821
-  decision_group_type_VIET_everyday: "일반 결정 (VIET)" # 7266792202340396659
-  decision_group_type_VIET_rare: "비범한 결정들 (VIET)" # 1728300078209032470
-  VIETintro.0011.t: "여정의 시작" # 9698579941998381735
-  VIETintro.0011.desc: "이제 [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]으로 향하는 [ROOT.Char.GetInvolvedActivity.GetShortName] 여정을 시작할 시간입니다. 이 여행을 준비하는 두통과 번거로움이 목적지에 도착했을 때 그만한 가치가 있기를 바랍니다... 아니, 그렇지 않다면 이 모든 여행 준비로 인한 스트레스가 헛수고가 될 테니, 그렇게 되기를 바랄 수밖에 없겠지요." # 7414818866934797355
-  VIETintro.0011.a: "우리는 이 모든 번거로움을 좋은 이유 때문에 감수하는 것이오." # 5238792602042800629
   VIET_cherry: "체리" # 17773146735301636101
   VIET_apple: "사과" # 6379808199001010847
   VIET_orange: "오렌지" # 13996788840987944361
@@ -270,4 +265,9 @@
   VIET_random_oblivion_dynasty_names_067: "오투이" # 14848062564817596976
   VIET_random_oblivion_dynasty_names_068: "오체아" # 6765237699922328010
   VIET_random_oblivion_dynasty_names_069: "소크디치" # 11280430273254706855
+  decision_group_type_VIET_everyday: "일반 결정 (VIET)" # 7266792202340396659
+  decision_group_type_VIET_rare: "비범한 결정들 (VIET)" # 1728300078209032470
+  VIETintro.0011.t: "여정의 시작" # 9698579941998381735
+  VIETintro.0011.desc: "이제 [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]으로 향하는 [ROOT.Char.GetInvolvedActivity.GetShortName] 여정을 시작할 시간입니다. 이 여행을 준비하는 두통과 번거로움이 목적지에 도착했을 때 그만한 가치가 있기를 바랍니다... 아니, 그렇지 않다면 이 모든 여행 준비로 인한 스트레스가 헛수고가 될 테니, 그렇게 되기를 바랄 수밖에 없겠지요." # 7414818866934797355
+  VIETintro.0011.a: "우리는 이 모든 번거로움을 좋은 이유 때문에 감수하는 것이오." # 5238792602042800629
   VIETintro.0012.desc: "[uriel.GetTitledFirstName]\n\n[martin.GetTitledFirstName]\n\n[baurus.GetTitledFirstName]\n\n[jauffre.GetTitledFirstName]" # 2718968619359624883

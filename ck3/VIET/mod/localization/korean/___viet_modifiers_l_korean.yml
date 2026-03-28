@@ -1544,7 +1544,6 @@
   VIET_unimpressed_ruler_desc: "쳇! 누구나 할 수 있었을 텐데." # 4251930365927208917
   VIET_dragon_dormant: "잠자는 용" # 1275384928186905751
   VIET_dragon_dormant_desc: "이 인물이 최근 자신의 거처에서 신비로운 아기 용을 만났다는 소문이 돌고 있습니다." # 1635073465173550512
-  xxxxxxxxxx: "xxx" # 4339025660404407451
   VIET_opinion_didnt_listen_to_my_advice: "내 조언을 듣지 않음" # 322151758970333823
   VIET_opinion_annoying_elder: "성가신 어른" # 12179194324654321659
   VIET_opinion_wise_elder: "현명한 어른" # 17300546840235745395
@@ -1605,3 +1604,4 @@
   VIET_lily_of_the_valley_with_side_effects_desc: "이 인물은 기억력 향상에 도움이 된다고 알려진 은방울꽃으로 만든 약을 정기적으로 섭취합니다. 하지만 은방울꽃의 독성과 아마도 약의 잘못된 제조 때문에, 이 인물은 몇 가지 부작용을 겪고 있는 것 같습니다." # 15629290587319070268
   VIET_jasmine_tea: "자스민 차를 즐김" # 16687744640553823848
   VIET_hired_skilled_peasant_cooks: "숙련된 농민 요리사 고용" # 17568221689379108684
+  xxxxxxxxxx: "xxx" # 4339025660404407451
