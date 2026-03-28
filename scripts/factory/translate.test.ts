@@ -69,9 +69,11 @@ describe('processLanguageFile 증분 쓰기', () => {
   let testDir: string
 
   beforeEach(async () => {
+    vi.clearAllMocks()
     // 테스트를 위한 임시 디렉토리 생성
     testDir = join(tmpdir(), `translate-test-${Date.now()}`)
     await mkdir(testDir, { recursive: true })
+    delete process.env.TRANSLATE_BATCH_SIZE
   })
 
   afterEach(async () => {
@@ -167,6 +169,67 @@ language = "english"
     
     expect(parsedOutput.l_korean).toBeDefined()
     expect(Object.keys(parsedOutput.l_korean).length).toBe(entryCount)
+  })
+
+  it('TRANSLATE_BATCH_SIZE 환경변수로 배치 크기를 조정해야 함', async () => {
+    process.env.TRANSLATE_BATCH_SIZE = '2'
+    const entryCount = 5
+    const sourceContent = createLargeYamlFile(entryCount, 'english')
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'batch_l_english.yml'), sourceContent, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    // 5개 항목을 배치 크기 2로 처리하면 3번 호출되어야 함 (2,2,1)
+    expect(vi.mocked(translateBulk)).toHaveBeenCalledTimes(3)
+  })
+
+  it('배치 번역이 끝나면 즉시 파일에 저장해야 함', async () => {
+    process.env.TRANSLATE_BATCH_SIZE = '2'
+    const entryCount = 4
+    const sourceContent = createLargeYamlFile(entryCount, 'english')
+    const { processModTranslations } = await import('./translate')
+    const { log } = await import('../utils/logger')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'immediate-save_l_english.yml'), sourceContent, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    // 배치 크기 2로 4개 항목 처리 시 배치 저장 로그가 2번 찍혀야 함
+    const batchSaveLogs = vi.mocked(log.info).mock.calls
+      .map(call => String(call[0]))
+      .filter(message => message.includes('배치 번역 결과 저장 완료'))
+    expect(batchSaveLogs.length).toBe(2)
   })
 
   it('기존 번역을 보존하고 변경된 항목만 업데이트해야 함', async () => {

@@ -13,6 +13,7 @@ const execAsync = promisify(exec)
 
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
+const DEFAULT_TRANSLATE_BATCH_SIZE = 20
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -34,6 +35,25 @@ function getLocalizationFolderName(gameType: GameType): string {
     default:
       throw new Error(`Unsupported game type: ${gameType}`)
   }
+}
+
+/**
+ * 배치 번역 크기를 환경변수에서 읽어옵니다.
+ * 잘못된 값이 들어오면 기본값을 사용합니다.
+ */
+function getTranslateBatchSize (): number {
+  const batchSizeEnv = process.env.TRANSLATE_BATCH_SIZE
+  if (!batchSizeEnv) {
+    return DEFAULT_TRANSLATE_BATCH_SIZE
+  }
+
+  const parsed = Number.parseInt(batchSizeEnv, 10)
+  if (Number.isNaN(parsed) || parsed <= 0) {
+    log.warn(`TRANSLATE_BATCH_SIZE 값이 올바르지 않아 기본값(${DEFAULT_TRANSLATE_BATCH_SIZE})을 사용합니다: ${batchSizeEnv}`)
+    return DEFAULT_TRANSLATE_BATCH_SIZE
+  }
+
+  return parsed
 }
 
 interface ModTranslationsOptions {
@@ -363,8 +383,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     log.verbose(`[${mode}/${file}] 언어 키 발견! "${langKey}" -> "l_korean"`)
   }
 
-  const SAVE_BATCH_SIZE = 1000 // 1,000 라인마다 파일에 저장
-  const TRANSLATE_BATCH_SIZE = 20 // 번역 API는 20개 단위 벌크 처리
+  const TRANSLATE_BATCH_SIZE = getTranslateBatchSize() // 번역 API 배치 크기 (환경변수로 조정 가능)
   let processedCount = 0
   const entries = Object.entries(sourceYaml[`l_${sourceLanguage}`])
   const totalEntries = entries.length
@@ -436,6 +455,11 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
 
     await processModeItems(normalItems, false)
     await processModeItems(transliterationItems, true)
+
+    // 배치 번역이 끝나면 즉시 파일에 반영
+    const updatedContent = stringifyYaml(newYaml)
+    await writeFile(targetPath, updatedContent, 'utf-8')
+    log.info(`[${mode}/${file}] 배치 번역 결과 저장 완료 (${processedCount}/${totalEntries} 처리됨)`)
   }
 
   for (const [key, [sourceValue]] of entries) {
@@ -496,12 +520,6 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       await flushPendingTranslations()
     }
 
-    // 1,000 라인마다 중간 저장
-    if (processedCount > 0 && processedCount % SAVE_BATCH_SIZE === 0) {
-      const updatedContent = stringifyYaml(newYaml)
-      await writeFile(targetPath, updatedContent, 'utf-8')
-      log.info(`[${mode}/${file}] 중간 저장 완료 (${processedCount}/${totalEntries} 처리됨)`)
-    }
   }
 
   await flushPendingTranslations()
