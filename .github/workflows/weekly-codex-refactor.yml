@@ -47,7 +47,7 @@ jobs:
           chmod 600 "$CODEX_HOME/auth.json"
 
       - name: Codex CLI 설치
-        run: npm install -g @openai/codex@1
+        run: npm install -g @openai/codex
 
       - name: Codex로 주간 리팩토링 수행
         run: |
