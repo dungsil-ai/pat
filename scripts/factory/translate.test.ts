@@ -19,8 +19,8 @@ vi.mock('../utils/logger', () => ({
 
 vi.mock('../utils/translate', () => {
   class TranslationRetryExceededError extends Error {
-    constructor() {
-      super()
+    constructor(text: string) {
+      super(`번역 재시도 횟수 초과: ${text}`)
       this.name = 'TranslationRetryExceededError'
     }
   }
@@ -37,25 +37,28 @@ vi.mock('../utils/translate', () => {
     const prefix = useTransliteration ? '[TRANSLITERATION]' : '[KO]'
     return Promise.resolve(`${prefix}${text}`)
   })
-  
+
+  const mockTranslateBulk = vi.fn(async (texts: string[], gameType?: any, useTransliteration?: boolean) => {
+    // 벌크 모킹은 실제 번역 로직을 재현하지 않고, 테스트에서 필요한 최소 계약만 유지
+    const results: Array<{ translatedText: string; error?: Error }> = []
+    for (const text of texts) {
+      try {
+        const translatedText = await mockTranslate(text, gameType, 0, undefined, useTransliteration)
+        results.push({ translatedText })
+      } catch (error) {
+        if (error instanceof TranslationRetryExceededError || error instanceof TranslationRefusedError) {
+          results.push({ translatedText: text, error })
+          continue
+        }
+        throw error
+      }
+    }
+    return results
+  })
+
   return {
     translate: mockTranslate,
-    translateBulk: vi.fn(async (texts: string[], gameType?: any, useTransliteration?: boolean) => {
-      const results: Array<{ translatedText: string; error?: Error }> = []
-      for (const text of texts) {
-        try {
-          const translatedText = await mockTranslate(text, gameType, 0, undefined, useTransliteration)
-          results.push({ translatedText })
-        } catch (error) {
-          if (error instanceof TranslationRetryExceededError || error instanceof TranslationRefusedError) {
-            results.push({ translatedText: text, error })
-            continue
-          }
-          throw error
-        }
-      }
-      return results
-    }),
+    translateBulk: mockTranslateBulk,
     TranslationRetryExceededError,
     TranslationRefusedError
   }
@@ -81,6 +84,24 @@ function expectWarnLogContains(warnMock: MockWithCalls, ...keywords: string[]): 
   const warnMessages = getWarnLogMessages(warnMock)
   const hasMatchedMessage = warnMessages.some(message => keywords.every(keyword => message.includes(keyword)))
   expect(hasMatchedMessage).toBe(true)
+}
+
+function findTranslateBulkCallByText(
+  bulkMock: MockWithCalls,
+  targetText: string,
+): { texts: string[]; useTransliteration: boolean } | undefined {
+  for (const call of bulkMock.mock.calls) {
+    const texts = call[0]
+    const useTransliteration = call[2]
+    if (!Array.isArray(texts) || typeof useTransliteration !== 'boolean') {
+      continue
+    }
+    if (texts.includes(targetText)) {
+      return { texts, useTransliteration }
+    }
+  }
+
+  return undefined
 }
 
 describe('processLanguageFile 증분 쓰기', () => {
@@ -770,6 +791,7 @@ language = "english"
 
   it('meta.toml의 transliteration_files 옵션으로 수동 지정된 파일은 음역 모드를 사용해야 함', async () => {
     const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
     
     // meta.toml에 transliteration_files 옵션 추가
     const modDir = join(testDir, 'transliteration-test-mod')
@@ -812,7 +834,7 @@ transliteration_files = ["custom_events_l_english.yml", "*_special_*"]
       onlyHash: false
     })
 
-    // 파일이 생성되었는지만 확인 (모킹 문제로 내용 검증은 생략)
+    // 출력 파일 생성 여부 검증
     const customEventsOutput = join(modDir, 'mod', 'localization', 'korean', '___custom_events_l_korean.yml')
     await access(customEventsOutput) // 파일이 없으면 예외 발생
 
@@ -821,6 +843,18 @@ transliteration_files = ["custom_events_l_english.yml", "*_special_*"]
 
     const regularOutput = join(modDir, 'mod', 'localization', 'korean', '___regular_l_korean.yml')
     await access(regularOutput)
+
+    // 수동 지정 파일은 음역 모드(true), 일반 파일은 번역 모드(false)로 요청되었는지 검증
+    const customCall = findTranslateBulkCallByText(vi.mocked(translateBulk), 'Test Name 1')
+    const specialCall = findTranslateBulkCallByText(vi.mocked(translateBulk), 'Special Name 1')
+    const regularCall = findTranslateBulkCallByText(vi.mocked(translateBulk), 'Regular Text 1')
+
+    expect(customCall).toBeDefined()
+    expect(customCall?.useTransliteration).toBe(true)
+    expect(specialCall).toBeDefined()
+    expect(specialCall?.useTransliteration).toBe(true)
+    expect(regularCall).toBeDefined()
+    expect(regularCall?.useTransliteration).toBe(false)
 
     // 정리
     await rm(testDir, { recursive: true, force: true })
