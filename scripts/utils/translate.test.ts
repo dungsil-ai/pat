@@ -520,9 +520,20 @@ describe('translateBulk', () => {
       { translatedText: '[벌크번역]second' },
     ])
 
-    // 내부 로그 문구 변경과 무관하게, 핵심 흐름(요청 포함 + 응답 처리)만 검증
-    expectInfoLogContains(vi.mocked(log.info), '[벌크/0]', 'first')
-    expectInfoLogContains(vi.mocked(log.info), '[벌크/0]', '[벌크번역]first')
+    // 내부 문구 전체에는 결합하지 않되, 요청/응답 단계가 각각 존재하는지 분리 검증
+    const infoMessages = getInfoLogMessages(vi.mocked(log.info))
+    const hasRequestLog = infoMessages.some(message =>
+      message.includes('[벌크/0]') &&
+      message.includes('first') &&
+      !message.includes('[벌크번역]first')
+    )
+    const hasResponseLog = infoMessages.some(message =>
+      message.includes('[벌크/0]') &&
+      message.includes('[벌크번역]first')
+    )
+
+    expect(hasRequestLog).toBe(true)
+    expect(hasResponseLog).toBe(true)
   })
 
   it('벌크 번역 실패 시 개별 번역으로 폴백해야 함', async () => {
