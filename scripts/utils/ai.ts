@@ -1,5 +1,3 @@
-import { generateText } from 'ai'
-import { createGoogleGenerativeAI } from '@ai-sdk/google'
 import dotenv from 'dotenv'
 import { type GameType, getSystemPrompt } from './prompts'
 import { addQueue } from './queue'
@@ -20,13 +18,62 @@ export class TranslationRefusedError extends Error {
   }
 }
 
-let _googleProvider: ReturnType<typeof createGoogleGenerativeAI> | null = null
+type GenerateTextFunction = (input: {
+  model: unknown
+  system: string
+  prompt: string
+  temperature: number
+  topP: number
+  maxOutputTokens: number
+  providerOptions: {
+    google: {
+      topK: number
+    }
+  }
+}) => Promise<{
+  text: string
+  finishReason?: string
+}>
+
+type GoogleProviderFactory = (config: { apiKey: string }) => (modelId: string) => unknown
+
+let _generateText: GenerateTextFunction | null = null
+let _createGoogleGenerativeAI: GoogleProviderFactory | null = null
+let _googleProvider: ReturnType<GoogleProviderFactory> | null = null
+
+async function loadAISDK(): Promise<{
+  generateText: GenerateTextFunction
+  createGoogleGenerativeAI: GoogleProviderFactory
+}> {
+  if (_generateText && _createGoogleGenerativeAI) {
+    return {
+      generateText: _generateText,
+      createGoogleGenerativeAI: _createGoogleGenerativeAI,
+    }
+  }
+
+  const aiModuleName = 'ai'
+  const googleModuleName = '@ai-sdk/google'
+  const [aiModule, googleModule] = await Promise.all([
+    import(aiModuleName),
+    import(googleModuleName),
+  ])
+
+  _generateText = aiModule.generateText as GenerateTextFunction
+  _createGoogleGenerativeAI = googleModule.createGoogleGenerativeAI as GoogleProviderFactory
+
+  return {
+    generateText: _generateText,
+    createGoogleGenerativeAI: _createGoogleGenerativeAI,
+  }
+}
 
 /**
  * Google AI 프로바이더를 반환합니다. API 키가 없으면 오류를 발생시킵니다.
  */
-function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
+async function getGoogle(): Promise<ReturnType<GoogleProviderFactory>> {
   if (!_googleProvider) {
+    const { createGoogleGenerativeAI } = await loadAISDK()
     const apiKey = process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY
     if (!apiKey) {
       throw new Error(
@@ -98,11 +145,12 @@ export async function translateAI (text: string, gameType: GameType = 'ck3', ret
     addQueue(
       text,
       async () => {
+        const { generateText } = await loadAISDK()
         const prompt = buildPrompt(text, retranslationContext)
 
         try {
           const result = await generateText({
-            model: getGoogle()(GEMINI_MODEL),
+            model: (await getGoogle())(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
@@ -151,6 +199,7 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
     addQueue(
       queueKey,
       async () => {
+        const { generateText } = await loadAISDK()
         const prompt = [
           'Translate all items into Korean and return ONLY valid JSON.',
           'Output format must be exactly: {"translations":["..."]}',
@@ -162,7 +211,7 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
 
         try {
           const result = await generateText({
-            model: getGoogle()(GEMINI_MODEL),
+            model: (await getGoogle())(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
@@ -320,4 +369,3 @@ export function parseBulkResponse (rawText: string, expectedLength: number): str
 
   return translations.map((item) => String(item))
 }
-

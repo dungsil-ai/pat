@@ -23,6 +23,7 @@ jobs:
       ISSUE_NUMBER: "${{ github.event.issue.number }}"
       ISSUE_TITLE: "${{ github.event.issue.title }}"
       ISSUE_BODY: "${{ github.event.issue.body }}"
+      CODEX_SANDBOX_MODE: "${{ vars.CODEX_SANDBOX_MODE || 'workspace-write' }}"
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v6
@@ -57,6 +58,9 @@ jobs:
           printf '%s' "$CODEX_AUTH_JSON" > "$CODEX_HOME/auth.json"
           chmod 600 "$CODEX_HOME/auth.json"
 
+      - name: Codex CLI 설치
+        run: npm install -g @openai/codex
+
       - name: 이슈 메타데이터 파싱
         id: parse
         uses: actions/github-script@v8
@@ -81,36 +85,59 @@ jobs:
             core.setOutput('mod', modMatch[1].trim());
 
       - name: Codex로 fallback 번역 반영
-        id: run_codex
-        uses: openai/codex-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          codex-home: ${{ env.CODEX_HOME }}
-          sandbox: workspace-write
-          prompt: |
-            당신은 패러독스 게임 모드 번역 저장소의 유지보수 담당 엔지니어입니다.
+        run: |
+          PROMPT=$(cat <<'EOF'
+          당신은 패러독스 게임 모드 번역 저장소의 유지보수 담당 엔지니어입니다.
 
-            아래 이슈에 포함된 `translation-refused` 항목을 fallback 번역으로 처리하고 PR 가능한 변경을 만드세요.
-            - 이슈 번호: #${{ env.ISSUE_NUMBER }}
-            - 게임: ${{ steps.parse.outputs.game }}
-            - 모드: ${{ steps.parse.outputs.mod }}
-            - 이슈 제목: ${{ env.ISSUE_TITLE }}
+          아래 이슈에 포함된 `translation-refused` 항목을 fallback 번역으로 처리하고 PR 가능한 변경을 만드세요.
+          - 이슈 번호: #${{ env.ISSUE_NUMBER }}
+          - 게임: ${{ steps.parse.outputs.game }}
+          - 모드: ${{ steps.parse.outputs.mod }}
+          - 이슈 제목: ${{ env.ISSUE_TITLE }}
 
-            이슈 본문:
-            ---
-            ${{ env.ISSUE_BODY }}
-            ---
+          이슈 본문:
+          ---
+          ${{ env.ISSUE_BODY }}
+          ---
 
-            작업 지침:
-            1) 이슈 본문의 표에서 파일/키/원문 항목을 파싱한다.
-            2) 해당 항목만 대상으로 한국어 fallback 번역을 작성해 반영한다.
-            3) 게임 변수, 포맷 토큰, 마크업 문법은 원본과 동일하게 보존한다.
-            4) 번역이 어려운 고유명사는 음역 우선 정책을 적용한다.
-            5) 불필요한 파일 생성/수정은 금지한다.
-            6) 변경 후 반드시 아래 검증을 모두 실행하고 통과시킨다.
-               - pnpm exec tsc --noEmit
-               - pnpm test
+          작업 지침:
+          1) 이슈 본문의 표에서 파일/키/원문 항목을 파싱한다.
+          2) 해당 항목만 대상으로 한국어 fallback 번역을 작성해 반영한다.
+          3) 게임 변수, 포맷 토큰, 마크업 문법은 원본과 동일하게 보존한다.
+          4) 번역이 어려운 고유명사는 음역 우선 정책을 적용한다.
+          5) 불필요한 파일 생성/수정은 금지한다.
+          6) 변경 후 반드시 아래 검증을 모두 실행하고 통과시킨다.
+             - pnpm exec tsc --noEmit
+             - pnpm test
+          EOF
+          )
+
+          LOG_FILE="$(mktemp)"
+          set +e
+          codex exec \
+            --cd "$GITHUB_WORKSPACE" \
+            --sandbox "$CODEX_SANDBOX_MODE" \
+            "$PROMPT" 2>&1 | tee "$LOG_FILE"
+          EXIT_CODE=${PIPESTATUS[0]}
+          set -e
+
+          if [ "$EXIT_CODE" -eq 0 ]; then
+            exit 0
+          fi
+
+          if grep -q "bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted" "$LOG_FILE"; then
+            echo "::warning::기본 샌드박스($CODEX_SANDBOX_MODE)에서 bwrap 오류가 발생해 danger-full-access로 1회 재시도합니다."
+            codex exec \
+              --cd "$GITHUB_WORKSPACE" \
+              --sandbox danger-full-access \
+              "$PROMPT"
+            exit 0
+          fi
+
+          echo "::error::Codex 실행에 실패했습니다. 로그를 확인하세요."
+          exit "$EXIT_CODE"
 
       - name: 타입 검사
         run: pnpm exec tsc --noEmit
