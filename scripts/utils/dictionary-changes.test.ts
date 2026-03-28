@@ -1,11 +1,16 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { getChangedDictionaryKeys } from './dictionary-changes'
-import { execFile } from 'node:child_process'
-import { promisify } from 'node:util'
 
-vi.mock('node:child_process')
+// vi.mock 팩토리 내에서 참조할 수 있도록 vi.hoisted()로 선언
+const execFileAsyncMock = vi.hoisted(() => vi.fn())
 
-const execFileAsync = vi.mocked(promisify(execFile))
+// execFile의 promisify.custom 심볼을 직접 제공해 모듈과 테스트가 동일한 함수를 공유
+vi.mock('node:child_process', () => {
+  const execFileMock = Object.assign(vi.fn(), {
+    [Symbol.for('nodejs.util.promisify.custom')]: execFileAsyncMock,
+  })
+  return { execFile: execFileMock }
+})
 
 describe('dictionary-changes', () => {
   beforeEach(() => {
@@ -23,7 +28,7 @@ describe('dictionary-changes', () => {
     })
 
     it('변경사항이 없으면 빈 배열을 반환해야 함', async () => {
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: '', stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: '', stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceCommit: 'abc1234' })
       expect(keys).toEqual([])
@@ -41,7 +46,7 @@ index 123..456 789
 +  newterm: '새로운 용어',
    senate: '원로원',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceCommit: 'abc1234' })
       expect(keys).toContain('newterm')
@@ -59,7 +64,7 @@ index 123..456 789
 +  term2: '용어2',
    landless: '비지주',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { commitRange: 'abc1234..def5678' })
       expect(keys).toEqual(expect.arrayContaining(['term1', 'term2']))
@@ -77,7 +82,7 @@ index 123..456 789
 +  recentterm: '최근 용어',
    landless: '비지주',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceDate: '2024-01-01' })
       expect(keys).toContain('recentterm')
@@ -95,7 +100,7 @@ index 123..456 789
 +  'special-key': '특수문자 키',
    landless: '비지주',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceCommit: 'abc1234' })
       expect(keys).toEqual(expect.arrayContaining(['key with spaces', 'special-key']))
@@ -112,7 +117,7 @@ index 123..456 789
 +  newstellaristerm: '새 스텔라리스 용어',
    federation: '연방',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('stellaris', { sinceCommit: 'abc1234' })
       expect(keys).toContain('newstellaristerm')
@@ -129,7 +134,7 @@ index 123..456 789
 +  'NewPerson': '새로운 인물',
    'af Fasge': '아프 파스게',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceCommit: 'abc1234' })
       expect(keys).toContain('NewPerson')
@@ -150,7 +155,7 @@ index 123..456 789
 +  duplicatekey: '중복 키 다시',
    stewardship: '관리력',
 `
-      vi.mocked(execFileAsync).mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
+      execFileAsyncMock.mockResolvedValue({ stdout: mockDiff, stderr: '' } as any)
       
       const keys = await getChangedDictionaryKeys('ck3', { sinceCommit: 'abc1234' })
       expect(keys.filter(k => k === 'duplicatekey').length).toBe(1)

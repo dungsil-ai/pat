@@ -15,8 +15,8 @@ interface DictionaryEntry {
   gameType: 'ck3' | 'stellaris' | 'vic3'
 }
 
-// Git revision 형식 검증 (명령 주입 방지)
-const GIT_REV_PATTERN = /^[a-zA-Z0-9~^:/._-]+$/
+// Git revision 형식 검증 (명령 주입 방지: -로 시작하는 값은 git 옵션으로 해석될 수 있어 거부)
+const GIT_REV_PATTERN = /^[a-zA-Z0-9~^:/._][a-zA-Z0-9~^:/._-]*$/
 
 function isValidGitRevision(revision: string): boolean {
   return GIT_REV_PATTERN.test(revision)
