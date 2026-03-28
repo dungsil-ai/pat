@@ -15,7 +15,6 @@ jobs:
     env:
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
       CODEX_HOME: "${{ github.workspace }}/.codex-home"
-      CODEX_SANDBOX_MODE: "${{ vars.CODEX_SANDBOX_MODE || 'danger-full-access' }}"
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v6
@@ -35,75 +34,32 @@ jobs:
       - name: 의존성 설치
         run: pnpm install --frozen-lockfile
 
-      - name: Codex 인증 파일 구성
-        env:
-          CODEX_AUTH_JSON: ${{ secrets.CODEX_AUTH_JSON }}
-        run: |
-          mkdir -p "$CODEX_HOME"
-          if [ -z "$CODEX_AUTH_JSON" ]; then
-            echo "CODEX_AUTH_JSON 시크릿이 비어 있습니다." >&2
-            exit 1
-          fi
-          printf '%s' "$CODEX_AUTH_JSON" > "$CODEX_HOME/auth.json"
-          chmod 600 "$CODEX_HOME/auth.json"
-
-      - name: Codex CLI 설치
-        run: npm install -g @openai/codex
-
       - name: Codex로 주간 리팩토링 수행
-        run: |
-          PROMPT=$(cat <<'EOF'
-          당신은 이 저장소의 유지보수 담당 엔지니어입니다.
+        uses: ./.github/actions/run-codex-cli
+        with:
+          codex-auth-json: ${{ secrets.CODEX_AUTH_JSON }}
+          codex-home: ${{ env.CODEX_HOME }}
+          prompt: |
+            당신은 이 저장소의 유지보수 담당 엔지니어입니다.
 
-          목표:
-          1) 보안, 성능, 유지보수성 개선 여지를 점검한다.
-          2) 위험도가 낮고 가치가 높은 리팩토링을 적용한다.
-          3) 변경 후 반드시 아래 검증을 실행하고 통과시킨다.
-             - pnpm exec tsc --noEmit
-             - pnpm test
+            목표:
+            1) 보안, 성능, 유지보수성 개선 여지를 점검한다.
+            2) 위험도가 낮고 가치가 높은 리팩토링을 적용한다.
+            3) 변경 후 반드시 아래 검증을 실행하고 통과시킨다.
+               - pnpm exec tsc --noEmit
+               - pnpm test
 
-          작업 규칙:
-          - 변경 범위는 작고 안전하게 유지한다.
-          - 한국어 주석/문서 규칙을 준수한다.
-          - 불필요한 파일은 생성하지 않는다.
-          - 개선 사항이 없으면 파일을 수정하지 않는다.
-          EOF
-          )
-
-          LOG_FILE="$(mktemp)"
-          set +e
-          codex exec \
-            --cd "$GITHUB_WORKSPACE" \
-            --sandbox "$CODEX_SANDBOX_MODE" \
-            "$PROMPT" 2>&1 | tee "$LOG_FILE"
-          EXIT_CODE=${PIPESTATUS[0]}
-          set -e
-
-          if [ "$EXIT_CODE" -eq 0 ]; then
-            exit 0
-          fi
-
-          if grep -q "bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted" "$LOG_FILE"; then
-            echo "::warning::기본 샌드박스($CODEX_SANDBOX_MODE)에서 bwrap 오류가 발생해 danger-full-access로 1회 재시도합니다."
-            codex exec \
-              --cd "$GITHUB_WORKSPACE" \
-              --sandbox danger-full-access \
-              "$PROMPT"
-            exit 0
-          fi
-
-          echo "::error::Codex 실행에 실패했습니다. 로그를 확인하세요."
-          exit "$EXIT_CODE"
+            작업 규칙:
+            - 변경 범위는 작고 안전하게 유지한다.
+            - 한국어 주석/문서 규칙을 준수한다.
+            - 불필요한 파일은 생성하지 않는다.
+            - 개선 사항이 없으면 파일을 수정하지 않는다.
 
       - name: 변경사항 린트 검증
         run: pnpm exec tsc --noEmit
 
       - name: 변경사항 테스트 검증
         run: pnpm test
-
-      - name: Codex 인증 파일 정리
-        if: always()
-        run: rm -f "$CODEX_HOME/auth.json"
 
       - name: 자동 리팩토링 PR 생성
         id: create_pr
