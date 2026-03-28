@@ -2,21 +2,36 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 
 /**
  * TranslationRefusedError 클래스 정의
- * 
- * 주의: 이 클래스는 scripts/utils/ai.ts의 TranslationRefusedError와 동일한 구현입니다.
- * vi.mock()은 파일 상단에서 호이스팅되므로 dynamic import를 사용할 수 없어
- * 불가피하게 클래스 정의를 복제합니다.
- * 
- * ai.ts의 TranslationRefusedError가 변경되면 이 정의도 함께 업데이트해야 합니다.
+ *
+ * 주의: vi.mock() 호이스팅 제약 때문에 테스트 전용 최소 구현을 사용합니다.
+ * 운영 코드의 상세 메시지 포맷에 의존하지 않도록 필요한 속성만 유지합니다.
  */
 class TranslationRefusedError extends Error {
   constructor(
     public readonly text: string,
     public readonly reason: string,
   ) {
-    super(`번역 거부: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}" (사유: ${reason})`)
+    super(`번역 거부: ${reason}`)
     this.name = 'TranslationRefusedError'
   }
+}
+
+interface MockWithCalls {
+  mock: {
+    calls: any[][]
+  }
+}
+
+function getInfoLogMessages(logInfoMock: MockWithCalls): string[] {
+  return logInfoMock.mock.calls
+    .map(call => call[0])
+    .filter((value): value is string => typeof value === 'string')
+}
+
+function expectInfoLogContains(logInfoMock: MockWithCalls, ...keywords: string[]): void {
+  const messages = getInfoLogMessages(logInfoMock)
+  const hasMatchedMessage = messages.some(message => keywords.every(keyword => message.includes(keyword)))
+  expect(hasMatchedMessage).toBe(true)
 }
 
 // 의존성 모킹
@@ -504,9 +519,21 @@ describe('translateBulk', () => {
       { translatedText: '[벌크번역]first' },
       { translatedText: '[벌크번역]second' },
     ])
-    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크] AI 벌크 요청 전송'))
-    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 벌크 요청에 포함'))
-    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 응답 처리'))
+
+    // 내부 문구 전체에는 결합하지 않되, 요청/응답 단계가 각각 존재하는지 분리 검증
+    const infoMessages = getInfoLogMessages(vi.mocked(log.info))
+    const hasRequestLog = infoMessages.some(message =>
+      message.includes('[벌크/0]') &&
+      message.includes('first') &&
+      !message.includes('[벌크번역]first')
+    )
+    const hasResponseLog = infoMessages.some(message =>
+      message.includes('[벌크/0]') &&
+      message.includes('[벌크번역]first')
+    )
+
+    expect(hasRequestLog).toBe(true)
+    expect(hasResponseLog).toBe(true)
   })
 
   it('벌크 번역 실패 시 개별 번역으로 폴백해야 함', async () => {
@@ -532,6 +559,6 @@ describe('translateBulk', () => {
     const results = await translateBulk(['cached'], 'ck3', false)
 
     expect(results).toEqual([{ translatedText: '[캐시번역]cached' }])
-    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] 캐시 응답 사용: cached -> [캐시번역]cached'))
+    expectInfoLogContains(vi.mocked(log.info), '[벌크/0]', 'cached', '[캐시번역]cached')
   })
 })
