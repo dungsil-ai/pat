@@ -7,6 +7,13 @@ import { join } from 'node:path'
 // 프로젝트 루트 디렉토리
 const projectRoot = join(import.meta.dirname, '../..')
 
+interface GameDictionaryBundle {
+  all: Record<string, string>
+  glossary: Record<string, string>
+  properNouns: Record<string, string>
+  lookup: Record<string, string>
+}
+
 /**
  * TOML 파일에서 단어사전을 로드합니다.
  * @param filename 파일명 (dictionaries/ 디렉토리 기준 상대 경로)
@@ -29,8 +36,8 @@ function loadDictionaryFromFile(filename: string): Record<string, string> {
     }
     
     return dict
-  } catch (error: any) {
-    if (error.code === 'ENOENT') {
+  } catch (error: unknown) {
+    if (isNodeError(error) && error.code === 'ENOENT') {
       console.warn(
         `[dictionary] 딕셔너리 파일을 찾을 수 없습니다: ${filePath}\n` +
         `빈 딕셔너리가 대신 사용됩니다.\n` +
@@ -39,13 +46,31 @@ function loadDictionaryFromFile(filename: string): Record<string, string> {
       return {}
     } else {
       console.warn(
-        `[dictionary] 딕셔너리 로드 실패: ${filePath}: ${error.message}\n` +
+        `[dictionary] 딕셔너리 로드 실패: ${filePath}: ${getErrorMessage(error)}\n` +
         `빈 딕셔너리가 대신 사용됩니다.\n` +
         `해결 방법: 파일의 TOML 문법 오류를 확인하세요.`
       )
       return {}
     }
   }
+}
+
+function isNodeError(error: unknown): error is NodeJS.ErrnoException {
+  return error instanceof Error
+}
+
+function getErrorMessage(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message
+  }
+
+  return String(error)
+}
+
+function createNormalizedLookup(dictionary: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(
+    Object.entries(dictionary).map(([key, value]) => [normalizeKey(key), value])
+  )
 }
 
 // CK3 일반 용어 사전 (번역 메모리로 LLM에 전달됨)
@@ -65,55 +90,58 @@ const vic3Dictionaries: Record<string, string> = loadDictionaryFromFile('vic3.to
 // CK3 딕셔너리: 일반 용어와 고유명사를 합친 전체 사전
 const ck3Dictionaries: Record<string, string> = { ...ck3Glossary, ...ck3ProperNouns }
 
-export function getDictionaries(gameType: GameType): Record<string, string> {
-  switch (gameType) {
-    case 'ck3':
-      return ck3Dictionaries
-    case 'stellaris':
-      return stellarisDictionaries
-    case 'vic3':
-      return vic3Dictionaries
-    default:
-      throw new Error(`Unsupported game type: ${gameType}`)
+const EMPTY_DICTIONARY: Record<string, string> = {}
+
+const gameDictionaryBundles: Record<GameType, GameDictionaryBundle> = {
+  ck3: {
+    all: ck3Dictionaries,
+    glossary: ck3Glossary,
+    properNouns: ck3ProperNouns,
+    lookup: createNormalizedLookup(ck3Dictionaries)
+  },
+  stellaris: {
+    all: stellarisDictionaries,
+    glossary: stellarisDictionaries,
+    properNouns: EMPTY_DICTIONARY,
+    lookup: createNormalizedLookup(stellarisDictionaries)
+  },
+  vic3: {
+    all: vic3Dictionaries,
+    glossary: vic3Dictionaries,
+    properNouns: EMPTY_DICTIONARY,
+    lookup: createNormalizedLookup(vic3Dictionaries)
   }
+}
+
+function getGameDictionaryBundle(gameType: GameType): GameDictionaryBundle {
+  const bundle = gameDictionaryBundles[gameType]
+  if (!bundle) {
+    throw new Error(`Unsupported game type: ${gameType}`)
+  }
+
+  return bundle
+}
+
+export function getDictionaries(gameType: GameType): Record<string, string> {
+  return getGameDictionaryBundle(gameType).all
 }
 
 // 일반 용어만 반환하는 함수 (번역 메모리용)
 export function getGlossary(gameType: GameType): Record<string, string> {
-  switch (gameType) {
-    case 'ck3':
-      return ck3Glossary
-    case 'stellaris':
-      return stellarisDictionaries // Stellaris는 아직 고유명사 분리가 필요 없음
-    case 'vic3':
-      return vic3Dictionaries // VIC3도 아직 고유명사 분리가 필요 없음
-    default:
-      throw new Error(`Unsupported game type: ${gameType}`)
-  }
+  return getGameDictionaryBundle(gameType).glossary
 }
 
 export function hasDictionary (key: string, gameType: GameType = 'ck3') {
-  const dictionaries = getDictionaries(gameType)
-  return Object.hasOwn(dictionaries, normalizeKey(key))
+  return Object.hasOwn(getGameDictionaryBundle(gameType).lookup, normalizeKey(key))
 }
 
 export function getDictionary (key: string, gameType: GameType = 'ck3'): string | null {
-  const dictionaries = getDictionaries(gameType)
-  return dictionaries[normalizeKey(key)] || null
+  return getGameDictionaryBundle(gameType).lookup[normalizeKey(key)] || null
 }
 
 // 고유명사 사전만 반환하는 함수
 export function getProperNouns(gameType: GameType): Record<string, string> {
-  switch (gameType) {
-    case 'ck3':
-      return ck3ProperNouns
-    case 'stellaris':
-      return {} // Stellaris는 아직 고유명사 분리가 없음
-    case 'vic3':
-      return {} // VIC3도 아직 고유명사 분리가 없음
-    default:
-      throw new Error(`Unsupported game type: ${gameType}`)
-  }
+  return getGameDictionaryBundle(gameType).properNouns
 }
 
 // 원문에서 고유명사를 찾아 반환하는 함수

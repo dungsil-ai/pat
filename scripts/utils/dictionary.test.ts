@@ -92,6 +92,12 @@ describe('딕셔너리', () => {
       expect(hasDictionary('king', 'ck3')).toBe(true)
     })
 
+    it('대문자 키도 소문자 조회로 찾을 수 있어야 함', () => {
+      expect(hasDictionary('RICE', 'ck3')).toBe(true)
+      expect(hasDictionary('rice', 'ck3')).toBe(true)
+      expect(hasDictionary('viet', 'ck3')).toBe(true)
+    })
+
     it('존재하지 않는 키에 대해 false를 반환해야 함', () => {
       expect(hasDictionary('nonexistent_key', 'ck3')).toBe(false)
     })
@@ -116,6 +122,12 @@ describe('딕셔너리', () => {
     it('존재하는 키에 대한 번역을 반환해야 함', () => {
       expect(getDictionary('duke', 'ck3')).toBe('공작')
       expect(getDictionary('king', 'ck3')).toBe('왕')
+    })
+
+    it('대문자 원본 키도 소문자 조회로 같은 값을 반환해야 함', () => {
+      expect(getDictionary('RICE', 'ck3')).toBe('RICE')
+      expect(getDictionary('rice', 'ck3')).toBe('RICE')
+      expect(getDictionary('viet', 'ck3')).toBe('VIET')
     })
 
     it('존재하지 않는 키에 대해 null을 반환해야 함', () => {
