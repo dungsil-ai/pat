@@ -343,15 +343,6 @@
   VIETmisc.2081.desc.conclusion: "\n\n조각상들 중 하나는 단연 최고로 꼽혔으며, 이번 행사의 하이라이트였습니다. 그것은 [GetPlayer.Custom('VIET_snow_sculpture')]를 묘사하고 있었습니다. 많은 이들은 이 조각상을 [GetPlayer.Custom('VIET_snow_sculpture_reaction')]라고 평했습니다." # 13842661331080416436
   VIETmisc.2081.a: "모두 즐거우셨다니 기쁩니다!" # 11951592586353082528
   VIETmisc.2081.b: "이 자들은 도덕성이 참으로 천박하군…." # 13262441168270913020
-  VIETmisc.2082.t: "xxxxx" # 1951045980481827005
-  VIETmisc.2082.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.2082.a: "xxxxx" # 1951045980481827005
-  VIETmisc.2083.t: "xxxxx" # 1951045980481827005
-  VIETmisc.2083.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.2083.a: "xxxxx" # 1951045980481827005
-  VIETmisc.2084.t: "xxxxx" # 1951045980481827005
-  VIETmisc.2084.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.2084.a: "xxxxx" # 1951045980481827005
   VIETmisc.2085.t: "xxxxx" # 1951045980481827005
   VIETmisc.2085.desc: "xxxxx" # 1951045980481827005
   VIETmisc.2085.a: "xxxxx" # 1951045980481827005
@@ -397,3 +388,17 @@
   VIETmisc.2099.t: "xxxxx" # 1951045980481827005
   VIETmisc.2099.desc: "xxxxx" # 1951045980481827005
   VIETmisc.2099.a: "xxxxx" # 1951045980481827005
+  VIETmisc.2082.t: "딸기 제안" # 14233098793662043990
+  VIETmisc.2082.desc: "“[ROOT.Char.GetLadyLord]이시여, 제 권고를 고려해 주십시오.” [courtier.GetTitledFirstName]이 [courtier.GetSheHe]의 주장을 요약하며 말합니다. “말씀드렸듯이, 이곳에는 야생 딸기를 좀 더 통제된 환경에서 재배하는 방법을 발견한 정원사와 농학자들이 있습니다. [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] 주변의 땅은 약간의 노력만 기울이면 딸기 정원을 가꾸기에 적합하며, 이 정원 조성을 지원한다면 이 지역은 전 세계 귀족과 왕족들의 부러움을 살 것이라 확신합니다.”\n\n모두가 맛있는 딸기를 좋아하지만, 이를 재배하는 데는 노력이 필요합니다. 그럼에도 불구하고 [courtier.GetFirstNameNoTooltip]은 이것이 [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]에 좋은 투자가 될 것이라고 주장하며, 오늘 궁정에서 제게 그 주장을 펼치기까지 했습니다." # 15616724286181171509
+  VIETmisc.2082.a: "숲에서 야생 딸기를 찾는 수고를 덜 수 있는데 왜 그런 일을 해야 합니까?" # 10718561111125601252
+  VIETmisc.2082.b: "당신 말이 일리가 있군요. 고려해 보겠습니다." # 4351405675663123261
+  VIETmisc.2082.tooltip: "[GetModifier('VIET_potential_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]가 활성화되어 있는 동안, [capital.GetNameNoTier]의 [rulers|E]는 [modifier|E]를 개선할 [decision|E]인 #V $VIET_decision_strawberry_garden$#!을 이용할 수 있게 될 것입니다." # 12263428331344485880
+  VIETmisc.2083.t: "딸기 정원" # 2791153138334573441
+  VIETmisc.2083.desc: "딸기 재배는 쉬운 일이 아닙니다. 야생 딸기를 숲에서 정성껏 설계된 정원으로 옮겨 심어야 하기 때문입니다. 하지만 약간의 계획과 많은 노력 끝에, 저는 [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]의 일부 정원에 건강한 딸기 모종을 성공적으로 정착시켰다고 생각합니다.\n\n앞으로 제가 이 지역에 머무는 동안, 저와 제 궁정에서 소비하는 모든 음식과 음료에 대해 좀 더 영구적인 딸기 공급원이 생기기를 기대해야겠군요! 이 딸기들이 오랫동안 번성하기를 바랄 뿐입니다." # 2647527480728241055
+  VIETmisc.2083.a: "맛있는 딸기… 기대되는군요!" # 775210801852180083
+  VIETmisc.2083.tooltip: "[GetModifier('VIET_famous_strawberry_gardens').GetNameWithTooltip] [county_modifier|E]가 활성화되어 있는 동안, [capital.GetNameNoTier] [county|E]를 소유한 [rulers|E]와 그들의 [lieges|E], 그리고 그곳에 [domicile|E]를 둔 자들은 #V $VIET_decision_get_strawberries$#!을 수행할 [decision|E]를 취할 수 있습니다." # 14275767933857774357
+  VIETmisc.2084.t: "고품질 딸기" # 11265727073113376455
+  VIETmisc.2084.desc: "[capital.GetNameNoTier]의 딸기 정원은 이 지역에서 가장 잘 재배되는 딸기 공급원 중 하나로, 그 맛과 아름다운 붉은색, 비교적 큰 크기로 유명합니다.\n\n" # 5007418005455948096
+  VIETmisc.2084.desc.landless: "물론, 이것은 황야에서 (약간의 노력을 들여) 찾을 수 있는 평범한 야생 딸기가 아닙니다. 이 정원들은 지역 엘리트들이 소유하고 있기 때문에 이 특별한 딸기들에 돈을 지불해야 하지만, 기꺼이 지불할 의사가 있는 가격입니다." # 8873547544195675945
+  VIETmisc.2084.desc.landed: "저는 이 정원에서 많은 양의 딸기를 모으도록 하인들을 보냈습니다. 개인 식사부터 성대한 연회, 약재 재료에 이르기까지, 이 딸기들은 저에게 아주 유용하게 쓰일 것입니다!" # 11815225688732786193
+  VIETmisc.2084.a: "$VIETmisc.2083.a$" # 10561079484521049405

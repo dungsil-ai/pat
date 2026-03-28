@@ -25,7 +25,6 @@
   VIET_hourglass_name: "모래시계" # 6804874569195157187
   VIET_hourglass_desc: "아름다운 모래시계로다. 시간을 재는 데 쓰이거나, 주인이 딱히 할 일이 없을 때 모래가 한쪽에서 다른 쪽으로 쏟아져 내리는 것을 멍하니 바라보는 데 사용될 수도 있겠지." # 7220879146301206275
   VIET_nutcracker_name: "호두까기 인형" # 16759944203520332493
-  VIET_nutcracker_desc: "먹기 위해 견과류를 깨는 데 사용되는 도구입니다. 이 도구는 특히 단단한 나무로 솜씨 좋게 만들어진 훌륭한 물건이로군요." # 4280687538261670348
   VIET_star_chart_name: "별자리표" # 13733919540177024712
   VIET_star_chart_desc: "다양한 천체의 위치를 묘사한 양피지 조각." # 6621814726699695634
   VIET_silverware_set_name: "정교한 은기 세트" # 9821062646573333691
@@ -33,24 +32,19 @@
   VIET_exotic_quill_pen_name: "이국적인 깃펜" # 13132742372282833994
   VIET_exotic_quill_pen_desc: "이 깃펜은 멀고 이국적인 영역의 새 깃털로 만들어졌습니다." # 3690851603887065129
   VIET_beautiful_pitcher_name: "아름다운 투수" # 11569985080529987708
-  VIET_beautiful_pitcher_desc: "물이나 술과 같은 액체를 잔에 따를 수 있을 뿐만 아니라, [ROOT.Char.GetCulture.GetName] 장식 요소의 소박함에도 불구하고 - 혹은 소박하기 때문에 - 매우 멋져 보이는 금속 주전자입니다. 어떤 연회나 대규모 모임에서 손님들에게 깊은 인상을 남기기에 유용할 것입니다." # 7446311299725681974
   VIET_basic_pitcher_name: "기본 투수" # 12526918193650112178
-  VIET_basic_pitcher_desc: "평범한 나무 주전자로, 물이나 술 같은 액체를 잔에 따를 수 있습니다. 특별히 인상적이진 않지만, 일상생활에 유용하게 쓰일 만한 견고한 물건이며, [ROOT.Char.GetCulture.GetName]의 소박한 솜씨에서 오는 매력이 있습니다." # 9923497309175206327
   VIET_secure_chest_name: "매우 안전한 상자" # 10091260339186810169
   VIET_secure_chest_desc: "이 궤짝의 자물쇠는 부수거나 따기가 극도로 어렵습니다. 주인이 안에 무엇을 두든 안전하다고 안심해도 될 것입니다. 물론 열쇠를 훔치거나 궤짝 자체를 통째로 가져가지 않는 한 말이죠\"" # 201612943343827519
   VIET_hand_mirror_name: "손거울" # 17851525725253758008
   VIET_hand_mirror_desc: "이처럼 맑은 유리 거울은 흔치 않기에, 그 주인은 자신의 모습이 항상 완벽하도록 이 거울을 신성시하며 사용합니다." # 18414117446503506177
   VIET_ivory_chess_set_name: "상아 체스 세트" # 1710083857956754072
   VIET_ivory_chess_set_desc: "품이 덜 나는, 조악한 상아로 정교하게 조각된 낡은 체스 말 세트입니다. 체스를 두거나 체스를 둘 줄 아는 척하기에 더 적합하겠지요." # 2562235569912751098
-  VIET_wooden_chess_set_name: "나무 체스판" # 8249607651546993495
   VIET_wooden_chess_set_desc: "그것이 딱히 아름답지는 않지만, 이 체스판은 제 역할을 다합니다. 결국, 체스판이 얼마나 아름다운지는 중요하지 않습니다. 중요한 것은 얼마나 잘 두느냐죠\"" # 14592242106743754128
   VIET_porcelain_chopsticks_name: "자기 젓가락" # 15464565143145237939
   VIET_porcelain_chopsticks_desc: "도자기 재질의 단순하면서도 우아한 젓가락 한 쌍." # 16500309263406433852
   VIET_bone_dice_name: "뼈 주사위" # 1036830153233178945
   VIET_bone_dice_desc: "게임이나 도박에 사용하는, 일종의 동물 뼈로 만든 주사위로군. 어차피 자기 주사위를 쓰는 게 낫지. 상대방이 조작된 주사위를 쓰고 있을지도 모르지 않겠는가?" # 8309470071747131178
   VIET_wood_dice_name: "나무 주사위" # 4566816423743660908
-  VIET_wood_dice_desc: "게임이나 도박에 사용되는, 일종의 나무로 만든 주사위입니다. 어차피 자신의 주사위를 사용하는 것이 더 낫습니다. 상대방이 조작된 주사위를 쓰고 있을지 누가 알겠습니까?" # 18039172512274796064
-  VIET_silk_slippers_name: "비단 슬리퍼" # 13733303395106141367
   VIET_silk_slippers_desc: "가장 퇴폐적이고 자기만족적인 사람들만이 신을 수 있는 아끼는 신발 한 켤레입니다." # 14149906269458554986
   VIET_pewter_spoon_name: "납땜 숟가락" # 9637894693303415153
   VIET_pewter_spoon_desc: "평범한 평민의 식기처럼 보일지 모르나, 주인에게는 좋은 음식을 먹는 데 쓰는 좋은 숟가락이며, 남이 준 도구보다 이 숟가락을 더 신뢰합니다. 게다가 자세히 살펴보면 그 소박함 속에 우아한 매력이 있습니다\"" # 13607369343344582605
@@ -67,37 +61,29 @@
   VIET_leather_knapsack_name: "가죽 배낭" # 12768770724874596022
   VIET_leather_knapsack_desc: "손에 들고 다닐 이유가 무엇인가? 믿을 만한 배낭에 넣으면 되지!" # 12311302127657110174
   VIET_wooden_bowl_name: "나무 그릇" # 9503009983062438087
-  VIET_wooden_bowl_desc: "이 나무 그릇은 소박하지만, 그 안에 깃든 아름다움이 있음을 기억해야 합니다. 그릇의 [ROOT.Char.GetCulture.GetName] 양식의 장식에는 투박한 매력이 있습니다. 소유주가 이 보잘것없는 실용성을 높이 평가한다는 점은 말할 것도 없고요." # 3871142343592587871
   VIET_reliable_lockpick_name: "믿음직한 자물쇠 따개" # 9768244247237660477
   VIET_reliable_lockpick_desc: "좀 더 불미스러운 인물들에게 무엇이든 열어줄 수 있는 유용한 도구로군. 뭐, 거의 모든 것이지. #italic 아마도#! 삶이나 사랑의 비밀까지 열어주지는 못할 테지만." # 9590203101767619199
   VIET_ceramic_tankard_name: "도자기 술잔" # 13634911359109364447
   VIET_ceramic_tankard_desc: "[ROOT.Char.GetCulture.GetName] 장인들이 만든, 도기로 만든 소박하고 겸손한 마시는 잔입니다. 분명 그 주인 역시 겸손한 성품을 지녔을 것입니다." # 11031315000188175377
   VIET_wooden_tankard_name: "나무 술잔" # 10850980432639959667
-  VIET_wooden_tankard_desc: "[ROOT.Char.GetCulture.GetName] 장인들이 만든, 마시기 위한 소박하고 검소한 나무 잔이로다. 분명 그 주인 또한 겸손한 성품을 지녔을 것이 분명하다." # 6410781632928533184
   VIET_convenient_backscratcher_name: "편리한 등 긁개" # 12844741246735352500
   VIET_convenient_backscratcher_desc: "평범하지만 대체 불가능하게 유용한 도구입니다. 이것의 주인은 절대로 긁을 수 없는 가려움을 겪지 않으리라 확신해도 좋습니다." # 17303170560261318834
   VIET_rugged_walking_stick_name: "투박한 지팡이" # 1873541082722690694
-  VIET_rugged_walking_stick_desc: "일부 [ROOT.Char.GetCulture.GetName] 문양과 이미지가 새겨진 지팡이입니다. 투박하고 단단하여 미려하지는 않지만, 소유자가 걸어서 여행할 때 유용하게 쓰일 것입니다." # 8461954533049284425
   VIET_simple_gloves_name: "평범한 장갑" # 1202358865832633150
   VIET_simple_gloves_desc: "가죽으로 만든 평범한 장갑 한 쌍입니다. 화려하지는 않지만, 일상생활에서 꽤 믿음직하여 주인이 다른 장갑보다 선호하는 듯합니다." # 1833947419949551859
   VIET_elegant_candlestick_name: "우아한 촛대" # 5707001033934563571
-  VIET_elegant_candlestick_desc: "밤늦게 독서나 식사와 같은 일상 활동을 돕기 위해 촛불을 고정하는 데 사용되는 도구입니다. 도자기로 만들어졌습니다." # 4586774103598328083
   VIET_basic_lantern_name: "기본 등불" # 18148505419381016083
   VIET_basic_lantern_desc: "얇게 깎아 평평하게 만든 동물의 뿔로 만든 유용한 등불로, 촛불이 비칠 수 있도록 반투명한 창을 만들었습니다. 이것만 있으면 밤에 주인이 두려워할 것이 없을 것입니다. 아마도요." # 17496897545565470503
   VIET_favored_handkerchief_name: "총애하는 손수건" # 11825226373959128069
   VIET_favored_handkerchief_desc: "개인 위생을 위해 사용하는 얇은 천으로 된 네모난 조각. 그 주인이 정기적으로 세탁하기를 바랄 뿐이다." # 18336416314213464338
   VIET_candy_jar_name: "사탕 항아리" # 14573555876868879000
-  VIET_candy_jar_desc: "맛있는 간식을 담기 위해 만들어진 작은 도자기 단지입니다. 휴대하기 편리하고 작아서 여러 방이나 짧은 여행에도 큰 번거로움 없이 들고 다닐 수 있어, 소유주가 언제든 단것에 대한 욕구를 채울 수 있도록 해줍니다." # 2816493839653273784
   VIET_wooden_whistle_name: "나무 호각" # 12693410576954510907
-  VIET_wooden_whistle_desc: "나무로 만든 단순한 호루라기로, 대규모 집단을 지휘하거나 타인의 주의를 끌 때 사용됩니다. 소유자가 이 호루라기를 항상 가까이 두는 것은 자신의 말을 듣기를 원하거나 들어야 할 필요가 있는 인물임을 시사합니다." # 3269486193104143070
   VIET_simple_waterskin_name: "단순한 물주머니" # 8932256131472862274
   VIET_simple_waterskin_desc: "양가죽이나 염소 가죽으로 만들어진 이 주머니는 물을 담을 수 있으며, 특히 험난한 지형에서 장거리 여행 시 유용합니다. 그 주인은 수분 유지의 중요성을 잘 알고 있습니다!" # 6280282471215736264
   VIET_hollow_doll_name: "속 빈 인형" # 822159684631930395
   VIET_hollow_doll_desc: "일부 사람들은 이 인형의 주인이 집안에 인형을 두는 것을 그저 유치한 변덕으로 여기며 비웃을지도 모릅니다. 하지만 그들은 이 평범해 보이는 인형이 속이 비어 있어 온갖 수상한 물건들을 은밀히 숨기고 있다는 사실을 깨닫는다면 더 이상 비웃지 못할 것입니다." # 9340031571586757493
   VIET_decorated_broom_name: "장식된 빗자루" # 7565762290462139983
-  VIET_decorated_broom_desc: "정교한 [ROOT.Char.GetCulture.GetName] 문양과 예술이 손잡이에 새겨진 잘 만들어진 나무 빗자루로다. 그 주인은 청결의 중요성을 분명히 알고 있음에 틀림없다! 혹은, 급할 때는 최후의 수단으로 비상용 무기로도 사용될 수 있겠지." # 2332613020708205849
   VIET_traveling_inkwell_name: "여행하는 잉크병" # 11380427313167244959
-  VIET_traveling_inkwell_desc: "유리, 황동, 백랍 또는 기타 기본적인 재료로 만들어졌으며 몇 가지 장식적인 요소로 꾸며진 작은 단지입니다. 이 단지는 특히 단단히 조이는 나사형 뚜껑이 있어 소유자가 잉크가 새는 것에 대해 걱정하지 않고 잉크를 휴대할 수 있습니다." # 14793602397016017392
   VIET_ancient_coin_name: "고대 주화" # 3925456984987717271
   VIET_ancient_coin_desc: "이 동전은 수 세기 혹은 그 이상 되었을지도 모르지만, 너무 닳아서 그 특징을 거의 알아볼 수 없습니다. 그럼에도 불구하고, 소유자에게 훌륭한 대화 주제가 되어줄 재미있는 진기한 물건입니다." # 10192864630709336636
   VIET_special_rock_name: "스페셜 록" # 8406926956057166325
@@ -109,7 +95,6 @@
   VIET_thunderstone_talisman_name: "선더스톤 탈리스만" # 12376764181103462629
   VIET_thunderstone_talisman_desc: "천둥석으로 빚은 보호 부적입니다. 이 돌은 출처를 알 수 없는 특별한 돌로, 어쩌면 초자연적인 것일지도 모릅니다." # 1053463374993328880
   VIET_patchwork_quilt_name: "패치워크 퀼트" # 12260391749486002776
-  VIET_patchwork_quilt_desc: "전통적인 [ROOT.Char.GetCulture.GetName] 문양과 디자인으로 장식된 소박하지만 아름다운 퀼트입니다." # 16155530670262190166
   VIET_leather_ball_name: "레더 볼" # 17819620782279675955
   VIET_leather_ball_desc: "깃털을 채워 가죽 조각들을 꿰맨 공입니다. 놀이를 하거나 몸을 단련하는 데 아주 좋습니다." # 17949781575642921944
   VIET_small_seashell_name: "스몰 쉘" # 8757466938166241459
@@ -127,7 +112,6 @@
   VIET_fire_striker_name: "신뢰할 수 있는 불꽃 격투가" # 12559867826762778386
   VIET_fire_striker_desc: "불을 피우기 위해 부싯돌 및 기타 돌과 함께 사용하여 불꽃을 일으키는 데 사용되는 금속 조각으로, 보통 철이나 강철로 만들어집니다. 이 물건은 특히 품질이 뛰어나 소유자를 실망시키지 않을 것입니다." # 5146223936930303875
   VIET_coconut_cup_name: "코코넛 컵" # 6319350788814366089
-  VIET_coconut_cup_desc: "[ROOT.Char.GetCulture.GetName] 예술 양식의 전형을 따라 귀금속으로 정교하게 장식된 코코넛 껍데기 그릇입니다. 이는 전시용이며 술을 마시는 데 사용됩니다." # 15147598778412730185
   VIET_horse_armor_name: "고품질 말 갑옷" # 1401975978005745132
   VIET_horse_armor_desc: "우아하고 튼튼하며, 아름답고 회복력 있는 이 [ROOT.Char.GetCulture.GetName] 말 갑옷은 세상의 위험으로부터 말을 보호해 줄 뿐만 아니라 멋지기까지 합니다." # 16745096088887774862
   VIET_recipe_baklava_name: "바클라바 레시피" # 12014768716919957718
@@ -146,3 +130,26 @@
   VIET_recipe_bean_soup_desc: "이 조리법을 아는 요리사들은 간단하고 푸짐하며 소박한 콩 수프를 만드는 법을 알 것입니다. 일부 엘리트들은 이것을 그저 농민을 위한 음식이라 폄하하지만, 적절한 허브, 향신료, 채소, 그리고 조리법만 있다면, 어떤 콩 수프라도 모든 식사의 건강하고 맛있는 일부가 될 수 있습니다." # 15948960955295842658
   VIET_recipe_dumpling_name: "[cook.GetCulture.GetNameNoTooltip] [cook.Custom('VIET_dumpling_name')|U] 레시피" # 15496060587414805622
   VIET_recipe_dumpling_desc: "이 조리법을 가진 요리사들은 맛있는 [cook.GetCulture.GetName] [cook.Custom('VIET_dumpling_name')]을 만들 수 있는 지식을 갖게 될 것입니다. 채소, 향신료, 약초 등 풍미 가득한 재료로 속을 채운 이 만두는 의심할 여지 없이 모두를 기쁘게 하고 감탄하게 할 것입니다." # 5267328518443822329
+  VIET_nutcracker_desc: "식사용 견과류를 깨는 데 사용되는 도구입니다. 이 도구는 특히 솜씨 좋게 만들어진 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 단단한 나무로 [likeness.GetTitledFirstNameNicknamedRegnal]의 모습을 본떠 제작되었습니다." # 12222343606996079463
+  VIET_nutcracker_aniconic_desc: "식사용 견과류를 깨는 데 사용되는 도구입니다. 이 도구는 특히 솜씨 좋게 만들어진 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 단단한 나무로 제작되었습니다." # 7551104010207408547
+  VIET_beautiful_pitcher_desc: "[VIET_clutter_artifact.GetFeatureText( 'decoration_material_inlay' )] 상감 장식이 된 주전자입니다. 물이나 술을 잔에 따르는 용도 외에도, [noble.GetCulture.GetName] 양식의 단순한 장식 요소 덕분에 - 혹은 그 단순함 때문에 - 놀랍도록 멋져 보입니다. 어떤 연회나 대규모 모임에서든 손님들에게 깊은 인상을 남기는 데 유용할 것입니다.\" " # 15954079782232433323
+  VIET_basic_pitcher_desc: "물이나 술을 잔에 따를 수 있는 평범한 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 나무 주전자입니다. 특별히 인상적이지는 않지만 일상생활에 유용한 견고한 물건이며, 소박한 [ROOT.Char.GetCulture.GetName] 솜씨에서 매력이 느껴집니다." # 17462059626053860445
+  VIET_wood_dice_desc: "[VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 나무로 만든 게임 및 도박용 주사위입니다. 어쨌든 자신의 주사위를 사용하는 것이 낫습니다. 상대방이 조작된 주사위를 사용하는지 누가 알겠습니까?\" " # 17855092609446880639
+  VIET_wooden_bowl_desc: "이 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 나무 그릇은 소박하지만, 단순함 속에 아름다움이 있을 수 있다는 것을 기억해야 합니다. 그 [ROOT.Char.GetCulture.GetName] 양식의 장식에서 소박한 매력이 느껴집니다. 주인이 그것의 보잘것없는 유용성을 소중히 여긴다는 것은 말할 것도 없습니다." # 4837938218390252019
+  VIET_wooden_tankard_desc: "[ROOT.Char.GetCulture.GetName] 장인들이 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 나무로 만든 소박하고 겸손한 음주용 컵입니다. 분명 그 주인 역시 겸손한 기질을 지녔을 것입니다." # 18088755648375725111
+  VIET_rugged_walking_stick_desc: "그 위에 [ROOT.Char.GetCulture.GetName] 상징과 이미지가 새겨진 지팡이입니다. 단단하고 견고한 이 [VIET_clutter_artifact.GetFeatureText( 'shaft_wood' )] 막대는 보기 좋을지는 몰라도, 주인이 걸어서 여행할 때 훌륭한 역할을 할 것입니다." # 7937842344961901590
+  VIET_elegant_candlestick_desc: "특히 저녁 늦은 시간에 독서나 식사와 같은 일상 활동을 돕기 위해 주인이 촛불을 두는 데 사용하는 도구입니다. [VIET_clutter_artifact.GetFeatureText( 'generic_material_earthware' )] 토기로 만들어졌으며 [VIET_clutter_artifact.GetFeatureText( 'decoration_pattern' )] 문양으로 장식되어 있습니다." # 13154358491897228994
+  VIET_candy_jar_desc: "맛있고 멋진 간식을 보관하는 용도로 사용되는 작은 [VIET_clutter_artifact.GetFeatureText( 'generic_material_earthware' )] 토기 단지입니다. 휴대하기 쉽고 작아서 큰 번거로움 없이 다른 방이나 짧은 여행에도 쉽게 가지고 다닐 수 있어, 주인이 언제든 단것에 대한 갈망을 채울 수 있도록 해줍니다." # 8835078093589756938
+  VIET_wooden_whistle_desc: "크고 작은 무리를 지휘하거나 다른 사람들의 주의를 끌기 위해 사용되는 [VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )] 나무로 만든 단순한 호루라기입니다. 주인이 항상 몸 가까이에 두는 사실은 그가 자신의 말을 경청시키고자 하거나 들어야 할 필요가 있는 사람임을 나타냅니다." # 13025180525596760717
+  VIET_decorated_broom_desc: "손잡이에 [VIET_clutter_artifact.GetFeatureText( 'decoration_pattern' )] 문양이 새겨진 정교하게 만들어진 [VIET_clutter_artifact.GetFeatureText( 'shaft_wood' )] 나무 빗자루입니다. 그 주인은 청결의 중요성을 분명히 알고 있습니다! 혹은 급할 때 비상용 최후의 무기로도 사용될 수 있습니다." # 8307802744949270296
+  VIET_traveling_inkwell_desc: "[VIET_clutter_artifact.GetFeatureText( 'box_material' )]로 만들어지고 [VIET_clutter_artifact.GetFeatureText( 'decoration_pattern' )] 문양으로 장식된 작은 단지입니다. 이 단지는 특히 단단히 잠기는 나사형 뚜껑이 있어 주인이 잉크가 새어 나올 걱정 없이 잉크를 휴대할 수 있게 해줍니다." # 1630143770533670862
+  VIET_patchwork_quilt_desc: "전통적인 [culture.GetName] 문양과 디자인으로 장식된 소박하지만 아름다운 [VIET_clutter_artifact.GetFeatureText( 'generic_material_cloth' )] 천 퀼트입니다." # 11376044037357776918
+  VIET_coconut_cup_desc: "그릇으로 사용되는 코코넛 껍질로, [VIET_clutter_artifact.GetFeatureText( 'decoration_material_inlay' )] 상감 장식으로 정교하게 꾸며져 있고 [VIET_clutter_artifact.GetFeatureText( 'decoration_pattern' )] 문양이 새겨져 있습니다. 전시용 및 음주용으로 제작되었습니다." # 18311441401629794788
+  VIET_lucky_horseshoe_desc: "이 [ROOT.Char.GetCulture.GetName] 말굽은 입구나 문 옆에 두었을 때 특히 효과적인 행운의 부적입니다. 악령과 불운으로부터 주인을 보호하고 행운을 가져다준다고 믿어집니다." # 5803736839052739612
+  VIET_recipe_fruit_preserve_desc: "이 요리법을 가진 요리사들은 전통적인 [fruit_culture.GetName] 방식으로 일종의 #bold [ROOT.Char.Custom('VIET_random_fruit')]#! 절임을 만드는 데 필요한 지식을 갖게 될 것입니다. 이 과일 절임은 다른 요리와 곁들여 먹거나 간식으로 혼자 먹을 수 있습니다. 어떻든 달콤하고 맛있습니다!" # 4963511794660150851
+  VIET_recipe_tofu_desc: "이 요리법을 가진 요리사들은 두부를 [ROOT.Char.GetCulture.GetName] 방식으로 준비하는 방법을 알게 될 것입니다. 전통적인 [Glossary( 'East Asian vegetarian cuisine', 'BUDDHIST_CUISINE_GLOSS' )]의 일부로 즐기거나, 채식주의자가 아닌 요리의 재료로도 사용할 수 있습니다." # 4110909014447632542
+  VIET_wooden_chess_set_name: "[VIET_clutter_artifact.GetFeatureText( 'generic_material_wood' )|U] 체스 세트" # 6366557581301879315
+  VIET_silk_slippers_name: "[VIET_clutter_artifact.GetFeatureText( 'generic_material_cloth' )|U] 슬리퍼" # 8507984943718113337
+  VIET_lucky_horseshoe_name: "행운의 말굽" # 12025837952100661756
+  VIET_recipe_fruit_preserve_name: "[fruit_culture.GetNameNoTooltip] 과일 절임 레시피" # 10596754979091948500
+  VIET_recipe_tofu_name: "[ROOT.Char.GetCulture.GetNameNoTooltip] 두부 레시피" # 12554986851546946947
