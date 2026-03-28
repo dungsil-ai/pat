@@ -110,7 +110,7 @@ interface ModProcessResult {
 }
 
 function resolveLogModName(modName: string, filePath: string): string {
-  if (modName !== 'ETC') {
+  if (modName.toLowerCase() !== 'etc') {
     return modName
   }
 
