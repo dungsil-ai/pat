@@ -15,6 +15,7 @@ jobs:
     env:
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
       CODEX_HOME: "${{ github.workspace }}/.codex-home"
+      CODEX_SANDBOX_MODE: "${{ vars.CODEX_SANDBOX_MODE || 'workspace-write' }}"
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v6
@@ -69,10 +70,30 @@ jobs:
           EOF
           )
 
+          LOG_FILE="$(mktemp)"
+          set +e
           codex exec \
             --cd "$GITHUB_WORKSPACE" \
-            --sandbox workspace-write \
-            "$PROMPT"
+            --sandbox "$CODEX_SANDBOX_MODE" \
+            "$PROMPT" 2>&1 | tee "$LOG_FILE"
+          EXIT_CODE=${PIPESTATUS[0]}
+          set -e
+
+          if [ "$EXIT_CODE" -eq 0 ]; then
+            exit 0
+          fi
+
+          if grep -q "bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted" "$LOG_FILE"; then
+            echo "::warning::기본 샌드박스($CODEX_SANDBOX_MODE)에서 bwrap 오류가 발생해 danger-full-access로 1회 재시도합니다."
+            codex exec \
+              --cd "$GITHUB_WORKSPACE" \
+              --sandbox danger-full-access \
+              "$PROMPT"
+            exit 0
+          fi
+
+          echo "::error::Codex 실행에 실패했습니다. 로그를 확인하세요."
+          exit "$EXIT_CODE"
 
       - name: 변경사항 린트 검증
         run: pnpm exec tsc --noEmit
@@ -85,8 +106,11 @@ jobs:
         run: rm -f "$CODEX_HOME/auth.json"
 
       - name: 자동 리팩토링 PR 생성
+        id: create_pr
+        continue-on-error: true
         uses: peter-evans/create-pull-request@v7
         with:
+          token: ${{ secrets.CI_GITHUB_TOKEN != '' && secrets.CI_GITHUB_TOKEN || github.token }}
           branch: chore/weekly-codex-refactor
           delete-branch: true
           commit-message: "chore: 주간 Codex 자동 리팩토링"
@@ -103,3 +127,8 @@ jobs:
           labels: |
             automation
             codex
+
+      - name: PR 생성 실패 안내
+        if: steps.create_pr.outcome != 'success'
+        run: |
+          echo "::warning::자동 PR 생성에 실패했습니다. 저장소 설정에서 'Allow GitHub Actions to create and approve pull requests'를 켜거나 CI_GITHUB_TOKEN 시크릿(PAT, repo 권한)을 설정하세요."
