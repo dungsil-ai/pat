@@ -1,9 +1,9 @@
-import { exec } from 'node:child_process'
+import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { log } from './logger'
 import { type GameType } from './prompts'
 
-const execAsync = promisify(exec)
+const execFileAsync = promisify(execFile)
 
 export interface DictionaryChangeOptions {
   /** 특정 커밋의 변경사항만 추출 */
@@ -63,7 +63,7 @@ export async function getChangedDictionaryKeysWithInfo(
   log.info(`[${gameType.toUpperCase()}] 딕셔너리 변경사항 추출 중...`)
   
   // Git diff 명령 구성
-  let gitCommand = 'git log -p'
+  const gitArgs = ['log', '-p']
   
   if (options.sinceCommit) {
     // 커밋 ID 유효성 검증
@@ -71,18 +71,17 @@ export async function getChangedDictionaryKeysWithInfo(
       throw new Error(`유효하지 않은 커밋 ID 형식: ${options.sinceCommit}`)
     }
     // 해당 커밋 하나만 확인 (-1: 단일 커밋, -p: 패치 포함)
-    gitCommand += ` -1 ${options.sinceCommit}`
+    gitArgs.push('-1', options.sinceCommit)
     log.debug(`조건: ${options.sinceCommit} 커밋만 확인`)
   } else if (options.commitRange) {
     // 커밋 범위 유효성 검증
     if (!isValidCommitRange(options.commitRange)) {
       throw new Error(`유효하지 않은 커밋 범위 형식: ${options.commitRange}`)
     }
-    gitCommand += ` ${options.commitRange}`
+    gitArgs.push(options.commitRange)
     log.debug(`조건: 커밋 범위 ${options.commitRange}`)
   } else if (options.sinceDate) {
-    // 날짜는 git이 자체적으로 검증하므로 따옴표로 감싸서 전달
-    gitCommand += ` --since="${options.sinceDate}"`
+    gitArgs.push(`--since=${options.sinceDate}`)
     log.debug(`조건: ${options.sinceDate} 이후`)
   } else {
     // 옵션이 없으면 빈 배열 반환 (전체 딕셔너리를 사용하도록)
@@ -90,10 +89,10 @@ export async function getChangedDictionaryKeysWithInfo(
     return []
   }
   
-  gitCommand += ` -- ${dictionaryPath}`
+  gitArgs.push('--', dictionaryPath)
   
   try {
-    const { stdout } = await execAsync(gitCommand)
+    const { stdout } = await execFileAsync('git', gitArgs, { maxBuffer: 10 * 1024 * 1024 })
     
     if (!stdout || stdout.trim() === '') {
       log.info(`[${gameType.toUpperCase()}] 변경사항 없음`)

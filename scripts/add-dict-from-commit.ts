@@ -1,4 +1,4 @@
-import { exec } from 'node:child_process'
+import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { readFile, writeFile } from 'node:fs/promises'
 import { join, dirname, basename } from 'pathe'
@@ -7,12 +7,19 @@ import process from 'node:process'
 import { parseYaml } from './parser/yaml'
 import { parseToml } from './parser/toml'
 
-const execAsync = promisify(exec)
+const execFileAsync = promisify(execFile)
 
 interface DictionaryEntry {
   key: string
   value: string
   gameType: 'ck3' | 'stellaris' | 'vic3'
+}
+
+// Git revision 형식 검증 (명령 주입 방지: -로 시작하는 값은 git 옵션으로 해석될 수 있어 거부)
+const GIT_REV_PATTERN = /^[a-zA-Z0-9~^:/._][a-zA-Z0-9~^:/._-]*$/
+
+function isValidGitRevision(revision: string): boolean {
+  return GIT_REV_PATTERN.test(revision)
 }
 
 /**
@@ -24,7 +31,7 @@ async function extractDictionaryChangesFromCommit(commitId: string): Promise<Dic
   
   try {
     // git show로 커밋에서 변경된 *_l_korean.yml 파일 목록 가져오기
-    const { stdout: filesOutput } = await execAsync(`git diff-tree --no-commit-id --name-only -r ${commitId}`)
+    const { stdout: filesOutput } = await execFileAsync('git', ['diff-tree', '--no-commit-id', '--name-only', '-r', commitId])
     const changedFiles = filesOutput.split('\n').filter(f => f.endsWith('_l_korean.yml'))
     
     if (changedFiles.length === 0) {
@@ -53,7 +60,7 @@ async function extractDictionaryChangesFromCommit(commitId: string): Promise<Dic
       }
       
       // 커밋에서 변경된 내용 가져오기 (추가된 라인만)
-      const { stdout: diffOutput } = await execAsync(`git show ${commitId} -- "${koreanFile}"`)
+      const { stdout: diffOutput } = await execFileAsync('git', ['show', commitId, '--', koreanFile])
       
       if (!diffOutput) {
         continue
@@ -170,7 +177,11 @@ async function findUpstreamEnglishFile(koreanFilePath: string, gameType: string)
       
       try {
         // 해당 경로에서 영어 파일 찾기
-        const { stdout } = await execAsync(`find "${searchDir}" -name "${englishFileName}" -type f 2>/dev/null`)
+        const { stdout } = await execFileAsync(
+          'find',
+          [searchDir, '-name', englishFileName, '-type', 'f'],
+          { maxBuffer: 10 * 1024 * 1024 }
+        )
         const foundFiles = stdout.trim().split('\n').filter(f => f)
         
         if (foundFiles.length > 0) {
@@ -341,6 +352,11 @@ async function main() {
       log.error('사용법: pnpm add-dict <commit-id>')
       log.info('예시: pnpm add-dict abc123')
       log.info('도움말: pnpm add-dict --help')
+      process.exit(1)
+    }
+
+    if (!isValidGitRevision(commitId)) {
+      log.error(`유효하지 않은 커밋 ID 형식: ${commitId}`)
       process.exit(1)
     }
     
