@@ -8,7 +8,7 @@ export function parseLogLevel(envLogLevel = env.LOG_LEVEL): LogLevel {
     return LogLevels.info
   }
 
-  if (normalizedLogLevel in LogLevels) {
+  if (Object.hasOwn(LogLevels, normalizedLogLevel)) {
     return LogLevels[normalizedLogLevel as keyof typeof LogLevels] as LogLevel
   }
 
