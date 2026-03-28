@@ -9,7 +9,7 @@
 
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
-import { access, mkdir, readFile, writeFile, readdir } from 'node:fs/promises'
+import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
 import { join, dirname } from 'pathe'
 import * as semver from 'semver'
 import natsort from 'natsort'
@@ -497,6 +497,7 @@ async function cloneWithFallback(
     }
 
     log.warn(`[${config.path}] 태그(${latestRef.name})를 찾을 수 없어 기본 브랜치로 폴백합니다`)
+    await rm(targetPath, { recursive: true, force: true })
     await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
   }
 }
@@ -568,10 +569,23 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     
     // 원격 변경사항 가져오기
     log.start(`[${config.path}] 원격 변경사항 가져오는 중...`)
+    let updateRef = latestRef
     if (isShallow) {
       if (latestRef.type === 'tag') {
         // shallow clone에서 특정 태그로 업데이트하려면 해당 태그를 fetch
-        await execAsync(`git fetch --depth=1 origin tag "${latestRef.name}"`, { cwd: repositoryPath })
+        try {
+          await execAsync(`git fetch --depth=1 origin tag "${latestRef.name}"`, { cwd: repositoryPath })
+        } catch (error) {
+          if (!isRemoteRefNotFoundError(error)) {
+            throw error
+          }
+
+          // 태그가 사라진 경우 기본 브랜치로 폴백하여 이후 업데이트도 안정적으로 유지
+          const defaultBranchRef = await getDefaultBranch(config.url, config.path)
+          log.warn(`[${config.path}] 태그(${latestRef.name}) fetch 실패로 기본 브랜치(${defaultBranchRef.name})로 폴백합니다`)
+          await execAsync(`git fetch --depth=1 origin "${defaultBranchRef.name}"`, { cwd: repositoryPath })
+          updateRef = defaultBranchRef
+        }
       } else {
         // 브랜치의 경우 기존 방식대로
         await execAsync(`git fetch --depth=1 origin "${latestRef.name}"`, { cwd: repositoryPath })
@@ -582,17 +596,17 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     }
     
     // 최신 버전으로 체크아웃
-    log.start(`[${config.path}] ${latestRef.type} ${latestRef.name}(으)로 업데이트 중...`)
-    await execAsync(`git checkout "${latestRef.name}"`, { cwd: repositoryPath })
+    log.start(`[${config.path}] ${updateRef.type} ${updateRef.name}(으)로 업데이트 중...`)
+    await execAsync(`git checkout "${updateRef.name}"`, { cwd: repositoryPath })
     
-    if (latestRef.type === 'branch') {
+    if (updateRef.type === 'branch') {
       // 브랜치의 경우 원격 상태로 강제 리셋 (브랜치는 변경 가능하므로)
       // 태그는 불변이므로 checkout만으로 충분함
       // upstream 리포지토리는 읽기 전용이므로 로컬 변경사항은 무시하고 원격 상태로 리셋
-      await execAsync(`git reset --hard "origin/${latestRef.name}"`, { cwd: repositoryPath })
+      await execAsync(`git reset --hard "origin/${updateRef.name}"`, { cwd: repositoryPath })
     }
     
-    log.success(`[${config.path}] 업데이트 완료 (${latestRef.type}: ${latestRef.name})`)
+    log.success(`[${config.path}] 업데이트 완료 (${updateRef.type}: ${updateRef.name})`)
     
   } catch (error) {
     log.error(`[${config.path}] 업데이트 실패:`, error)
