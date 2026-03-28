@@ -504,7 +504,8 @@ describe('translateBulk', () => {
       { translatedText: '[벌크번역]first' },
       { translatedText: '[벌크번역]second' },
     ])
-    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 요청 전송: first'))
+    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크] AI 벌크 요청 전송: items=2, gameType=ck3'))
+    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 벌크 요청에 포함: first'))
     expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 응답 처리: first -> [벌크번역]first'))
   })
 
