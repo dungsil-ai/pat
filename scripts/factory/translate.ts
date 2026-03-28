@@ -92,6 +92,10 @@ interface ModMeta {
   };
 }
 
+type UpstreamFileHashMap = Record<string, string>
+
+const UPSTREAM_FILE_HASHES_FILENAME = '.pat-file-hashes.json'
+
 export interface UntranslatedItem {
   mod: string
   file: string
@@ -156,6 +160,27 @@ async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModW
   return workItems
 }
 
+async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFileHashMap> {
+  try {
+    const content = await readFile(hashFilePath, 'utf-8')
+    const parsed = JSON.parse(content)
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+      return {}
+    }
+    return parsed as UpstreamFileHashMap
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      return {}
+    }
+    log.warn(`업스트림 파일 해시를 읽는 중 오류가 발생해 초기 상태로 진행합니다: ${hashFilePath}`)
+    return {}
+  }
+}
+
+async function writeUpstreamFileHashes(hashFilePath: string, hashes: UpstreamFileHashMap): Promise<void> {
+  await writeFile(hashFilePath, `${JSON.stringify(hashes, null, 2)}\n`, 'utf-8')
+}
+
 export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
@@ -192,6 +217,11 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
 
     const metaContent = await readFile(metaPath, 'utf-8')
     const meta = parseToml(metaContent) as ModMeta
+    const hashFilePath = join(modDir, 'upstream', UPSTREAM_FILE_HASHES_FILENAME)
+    const savedFileHashes = await readUpstreamFileHashes(hashFilePath)
+    const nextFileHashes: UpstreamFileHashMap = { ...savedFileHashes }
+    const currentSourcePaths = new Set<string>()
+    let hasHashChanges = false
     log.debug(`[${mod}] 메타데이터:  upstream.language: ${meta.upstream.language}, upstream.localization: [${meta.upstream.localization}]`)
 
     for (const locPath of meta.upstream.localization) {
@@ -252,7 +282,23 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         }
         // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
         if (file.endsWith(`.yml`) && file.includes(`_l_${meta.upstream.language}`)) {
-          processes.push(processLanguageFile(mod, sourceDir, targetDir, file, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
+          const sourcePath = join(sourceDir, file)
+          const sourceContent = await readFile(sourcePath, 'utf-8')
+          const sourceFileHash = hashing(sourceContent)
+          const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')
+          currentSourcePaths.add(sourceRelativePath)
+          const previousFileHash = savedFileHashes[sourceRelativePath]
+
+          if (!onlyHash && previousFileHash === sourceFileHash) {
+            log.debug(`[${mod}/${file}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
+          } else {
+            processes.push(processLanguageFile(mod, sourceDir, targetDir, file, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
+          }
+
+          if (nextFileHashes[sourceRelativePath] !== sourceFileHash) {
+            nextFileHashes[sourceRelativePath] = sourceFileHash
+            hasHashChanges = true
+          }
           // 처리될 한국어 파일 경로 추적
           const targetParentDir = join(targetDir, dirname(file))
           const targetFileName = '___' + basename(file).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
@@ -273,6 +319,17 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     // 모든 파일 처리 완료 후 orphaned 파일 정리
     for (const task of locPathCleanupTasks) {
       await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot)
+    }
+
+    for (const savedPath of Object.keys(nextFileHashes)) {
+      if (!currentSourcePaths.has(savedPath)) {
+        delete nextFileHashes[savedPath]
+        hasHashChanges = true
+      }
+    }
+
+    if (hasHashChanges) {
+      await writeUpstreamFileHashes(hashFilePath, nextFileHashes)
     }
     
     const untranslatedItems: UntranslatedItem[] = []

@@ -1319,6 +1319,124 @@ language = "english"
     // 정리
     await rm(testDir, { recursive: true, force: true })
   })
+
+  it('업스트림 파일 해시를 저장해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(
+      join(upstreamDir, 'hash-target_l_english.yml'),
+      `l_english:
+  key_a: "alpha"
+  key_b: "beta"`,
+      'utf-8'
+    )
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const hashIndexPath = join(upstreamDir, '.pat-file-hashes.json')
+    const hashIndex = JSON.parse(await readFile(hashIndexPath, 'utf-8')) as Record<string, string>
+
+    expect(Object.keys(hashIndex)).toContain('hash-target_l_english.yml')
+    expect(typeof hashIndex['hash-target_l_english.yml']).toBe('string')
+    expect(hashIndex['hash-target_l_english.yml'].length).toBeGreaterThan(0)
+  })
+
+  it('업스트림 파일 해시가 같으면 해당 파일 번역을 건너뛰어야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(
+      join(upstreamDir, 'same-hash_l_english.yml'),
+      `l_english:
+  key_1: "hello"
+  key_2: "world"`,
+      'utf-8'
+    )
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const firstRunCallCount = vi.mocked(translateBulk).mock.calls.length
+    expect(firstRunCallCount).toBeGreaterThan(0)
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const secondRunCallCount = vi.mocked(translateBulk).mock.calls.length
+    expect(secondRunCallCount).toBe(firstRunCallCount)
+  })
+
+  it('업스트림 파일 해시가 변경된 파일만 다시 번역해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+
+    const stableFilePath = join(upstreamDir, 'stable_l_english.yml')
+    const changedFilePath = join(upstreamDir, 'changed_l_english.yml')
+    await writeFile(stableFilePath, `l_english:\n  key_stable: "stable text"`, 'utf-8')
+    await writeFile(changedFilePath, `l_english:\n  key_changed: "first text"`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const firstRunCallCount = vi.mocked(translateBulk).mock.calls.length
+
+    await writeFile(changedFilePath, `l_english:\n  key_changed: "updated text"`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const secondRunCallCount = vi.mocked(translateBulk).mock.calls.length
+    expect(secondRunCallCount).toBe(firstRunCallCount + 1)
+  })
 })
 
 // 지정된 개수의 항목을 가진 YAML 파일을 생성하는 헬퍼 함수
