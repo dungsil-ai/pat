@@ -5,7 +5,7 @@ import { basename, dirname, join } from 'pathe'
 import { parseToml, parseYaml, stringifyYaml } from '../parser'
 import { hashing } from '../utils/hashing'
 import { log } from '../utils/logger'
-import { translate, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
+import { translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
 import { updateAllUpstreams } from '../utils/upstream'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
 
@@ -111,11 +111,12 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         await access(sourceDir)
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-          throw new Error(
-            `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${sourceDir}\n` +
-            `meta.toml의 localization 경로를 확인하거나 upstream 업데이트가 실패했을 수 있습니다.\n` +
+          log.warn(
+            `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${sourceDir}\n` +
+            `meta.toml의 localization 경로를 확인하거나 upstream 업데이트 상태를 점검하세요.\n` +
             `경로: ${locPath}`
           )
+          continue
         }
         throw error
       }
@@ -336,10 +337,80 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     log.verbose(`[${mode}/${file}] 언어 키 발견! "${langKey}" -> "l_korean"`)
   }
 
-  const BATCH_SIZE = 1000 // 1,000 라인마다 파일에 저장
+  const SAVE_BATCH_SIZE = 1000 // 1,000 라인마다 파일에 저장
+  const TRANSLATE_BATCH_SIZE = 20 // 번역 API는 20개 단위 벌크 처리
   let processedCount = 0
   const entries = Object.entries(sourceYaml[`l_${sourceLanguage}`])
   const totalEntries = entries.length
+  const pendingTranslations: Array<{ key: string; sourceValue: string; sourceHash: string; shouldTransliterate: boolean }> = []
+
+  async function flushPendingTranslations (): Promise<void> {
+    if (pendingTranslations.length === 0) {
+      return
+    }
+
+    const translationItems = pendingTranslations.splice(0, pendingTranslations.length)
+    const transliterationItems = translationItems.filter(item => item.shouldTransliterate)
+    const normalItems = translationItems.filter(item => !item.shouldTransliterate)
+
+    const applyResults = (items: typeof translationItems, results: Awaited<ReturnType<typeof translateBulk>>) => {
+      for (const [index, item] of items.entries()) {
+        const result = results[index]
+        let hashForEntry: string | null = item.sourceHash
+        let translatedValue = result.translatedText
+
+        if (result.error instanceof TranslationRetryExceededError) {
+          log.warn(`[${mode}/${file}:${item.key}] 번역 재시도 초과, 원문을 유지합니다.`)
+          translatedValue = item.sourceValue
+          hashForEntry = null
+          untranslatedItems.push({ mod: mode, file, key: item.key, message: item.sourceValue })
+        } else if (result.error instanceof TranslationRefusedError) {
+          log.warn(`[${mode}/${file}:${item.key}] 번역 거부됨: ${result.error.reason}`)
+          log.info(`[${mode}/${file}:${item.key}] 원문을 유지하고 다음 항목으로 계속 진행합니다.`)
+          translatedValue = item.sourceValue
+          hashForEntry = null
+          untranslatedItems.push({
+            mod: mode,
+            file,
+            key: item.key,
+            message: `${item.sourceValue} (번역 거부: ${result.error.reason})`
+          })
+        }
+
+        newYaml.l_korean[item.key] = [translatedValue, hashForEntry]
+        processedCount++
+      }
+    }
+
+    async function processModeItems (items: typeof translationItems, useTransliteration: boolean): Promise<void> {
+      if (items.length === 0) {
+        return
+      }
+
+      try {
+        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration)
+        applyResults(items, results)
+      } catch (error) {
+        const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
+        log.warn(`[${mode}/${file}] ${modeLabel} 처리 중 오류 발생, 해당 모드는 원문 유지 후 다음 모드로 진행합니다.`)
+        log.warn(`[${mode}/${file}] ${modeLabel} 오류 상세: ${String(error)}`)
+
+        for (const item of items) {
+          newYaml.l_korean[item.key] = [item.sourceValue, null]
+          untranslatedItems.push({
+            mod: mode,
+            file,
+            key: item.key,
+            message: `${item.sourceValue} (${modeLabel} 오류: ${String(error)})`
+          })
+          processedCount++
+        }
+      }
+    }
+
+    await processModeItems(normalItems, false)
+    await processModeItems(transliterationItems, true)
+  }
 
   for (const [key, [sourceValue]] of entries) {
     // 타임아웃 확인: 100회마다만 체크
@@ -392,53 +463,22 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       log.verbose(`[${mode}/${file}:${key}] 키 레벨 음역 모드 활성화됨 (키가 _adj 또는 _name으로 끝남)`)
     }
 
-    // 번역 요청 (음역 모드 플래그 전달)
-    log.verbose(`[${mode}/${file}:${key}] ${shouldTransliterate ? '음역' : '번역'} 요청: ${sourceHash} | "${sourceValue}"`)
-    let translatedValue: string
-    let hashForEntry: string | null = sourceHash
+    log.verbose(`[${mode}/${file}:${key}] ${shouldTransliterate ? '음역' : '번역'} 요청 대기열 추가: ${sourceHash} | "${sourceValue}"`)
+    pendingTranslations.push({ key, sourceValue, sourceHash, shouldTransliterate })
 
-    try {
-      translatedValue = await translate(sourceValue, gameType, 0, undefined, shouldTransliterate)
-    } catch (error) {
-      if (error instanceof TranslationRetryExceededError) {
-        log.warn(`[${mode}/${file}:${key}] 번역 재시도 초과, 원문을 유지합니다.`)
-        translatedValue = sourceValue
-        hashForEntry = null
-        // 번역되지 않은 항목 추적
-        untranslatedItems.push({
-          mod: mode,
-          file,
-          key,
-          message: sourceValue
-        })
-      } else if (error instanceof TranslationRefusedError) {
-        // 번역 거부 시 원문을 유지하고 계속 진행
-        log.warn(`[${mode}/${file}:${key}] 번역 거부됨: ${error.reason}`)
-        log.info(`[${mode}/${file}:${key}] 원문을 유지하고 다음 항목으로 계속 진행합니다.`)
-        translatedValue = sourceValue
-        hashForEntry = null
-        // 번역되지 않은 항목 추적
-        untranslatedItems.push({
-          mod: mode,
-          file,
-          key,
-          message: `${sourceValue} (번역 거부: ${error.reason})`
-        })
-      } else {
-        throw error
-      }
+    if (pendingTranslations.length >= TRANSLATE_BATCH_SIZE) {
+      await flushPendingTranslations()
     }
 
-    newYaml.l_korean[key] = [translatedValue, hashForEntry]
-    processedCount++
-
     // 1,000 라인마다 중간 저장
-    if (processedCount % BATCH_SIZE === 0) {
+    if (processedCount > 0 && processedCount % SAVE_BATCH_SIZE === 0) {
       const updatedContent = stringifyYaml(newYaml)
       await writeFile(targetPath, updatedContent, 'utf-8')
       log.info(`[${mode}/${file}] 중간 저장 완료 (${processedCount}/${totalEntries} 처리됨)`)
     }
   }
+
+  await flushPendingTranslations()
 
   // 최종 저장
   // 빈 파일 생성 방지: l_korean 객체가 비어있으면 파일을 쓰지 않음

@@ -354,19 +354,40 @@ async function getSemanticVersion(repoUrl: string, configPath: string): Promise<
       }
       
       const releases = await response.json() as Array<{ tag_name: string }>
-      
-      // semver 유효한 태그만 필터링
-      const validSemvers = releases
-        .map(r => r.tag_name.replace(/^v/, ''))
-        .filter(tag => semver.valid(tag))
-      
-      if (validSemvers.length === 0) {
+
+      // semver 정렬을 위해 태그를 파싱하되, 실제 체크아웃에는 원본 태그명을 사용
+      const parsedReleases = releases
+        .map(({ tag_name }) => {
+          const normalizedTag = tag_name.replace(/^v/, '')
+          const parsed = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
+          if (!parsed) {
+            return null
+          }
+
+          return {
+            originalTag: tag_name,
+            normalizedTag,
+            normalizedVersion: parsed.version
+          }
+        })
+        .filter((release): release is { originalTag: string, normalizedTag: string, normalizedVersion: string } => release !== null)
+
+      if (parsedReleases.length === 0) {
         throw new Error(`유효한 시멘틱 버전 태그를 찾을 수 없음`)
       }
-      
-      // semver 정렬
-      const sorted = validSemvers.sort(semver.compare)
-      return { type: 'tag', name: `v${sorted[sorted.length - 1]}` }
+
+      // semver 정렬 (오름차순) 후 가장 마지막 값 선택
+      const naturalSorter = natsort({ desc: true })
+      const sorted = parsedReleases.sort((a, b) => {
+        const versionCompare = semver.compare(a.normalizedVersion, b.normalizedVersion)
+        if (versionCompare !== 0) {
+          return versionCompare
+        }
+
+        // 같은 시멘틱 버전(예: 1.18.1, 1.18.1.a, 1.18.1.b)에서는 자연 정렬로 최신 태그 선택
+        return -naturalSorter(a.normalizedTag, b.normalizedTag)
+      })
+      return { type: 'tag', name: sorted[sorted.length - 1].originalTag }
     },
     `${configPath}-semantic`
   )

@@ -54,6 +54,28 @@ export async function translateAI (text: string, gameType: GameType = 'ck3', ret
 }
 
 /**
+ * 여러 텍스트를 한 번의 AI 요청으로 번역합니다.
+ * 응답 형식은 JSON 배열(또는 translations 필드)을 기대합니다.
+ */
+export async function translateAIBulk (texts: string[], gameType: GameType = 'ck3', useTransliteration: boolean = false): Promise<string[]> {
+  if (texts.length === 0) {
+    return []
+  }
+
+  return new Promise<string[]>((resolve, reject) => {
+    try {
+      return translateAIBulkByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), texts)
+    } catch (e) {
+      try {
+        return translateAIBulkByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), texts)
+      } catch (ee) {
+        reject(ee)
+      }
+    }
+  })
+}
+
+/**
  * 번역 거부 사유인지 확인
  */
 function isRefusalReason(finishReason: FinishReason | undefined): boolean {
@@ -122,6 +144,80 @@ Please provide a corrected translation that addresses the issue mentioned above.
         // TranslationRefusedError나 다른 에러를 promise의 reject로 전달
         // reject를 호출하면 외부 Promise가 거부되고, 에러는 호출자에게 전파됨
         // throw하지 않음으로써 큐 작업은 정상 완료되고 unhandled promise rejection 방지
+        reject(error)
+      }
+    },
+  )
+}
+
+function parseBulkResponse (rawText: string, expectedLength: number): string[] {
+  const cleaned = rawText
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/\s*```$/i, '')
+    .trim()
+
+  const parsed = JSON.parse(cleaned)
+  const translations = Array.isArray(parsed) ? parsed : parsed?.translations
+
+  if (!Array.isArray(translations)) {
+    throw new Error('벌크 번역 응답에 translations 배열이 없습니다.')
+  }
+
+  if (translations.length !== expectedLength) {
+    throw new Error(`벌크 번역 응답 길이가 일치하지 않습니다. expected=${expectedLength}, actual=${translations.length}`)
+  }
+
+  return translations.map((item) => String(item))
+}
+
+async function translateAIBulkByModel (
+  resolve: (value: string[] | PromiseLike<string[]>) => void,
+  reject: (reason?: any) => void,
+  model: GenerativeModel,
+  texts: string[],
+): Promise<void> {
+  const queueKey = `bulk:${texts[0]?.slice(0, 30) || 'empty'}:${texts.length}`
+
+  return addQueue(
+    queueKey,
+    async () => {
+      const prompt = [
+        'Translate all items into Korean and return ONLY valid JSON.',
+        'Output format must be exactly: {"translations":["..."]}',
+        'Keep the same order and item count.',
+        'Do not include markdown, explanations, or extra keys.',
+        '',
+        JSON.stringify({ texts }),
+      ].join('\n')
+
+      try {
+        const { response } = await model.generateContent(prompt)
+
+        const promptFeedback = response.promptFeedback
+        if (promptFeedback?.blockReason) {
+          throw new TranslationRefusedError(
+            texts.join(' | ').slice(0, 200),
+            `프롬프트 차단됨: ${promptFeedback.blockReason}${promptFeedback.blockReasonMessage ? ` - ${promptFeedback.blockReasonMessage}` : ''}`
+          )
+        }
+
+        const candidate = response.candidates?.[0]
+        if (candidate && isRefusalReason(candidate.finishReason)) {
+          throw new TranslationRefusedError(
+            texts.join(' | ').slice(0, 200),
+            `응답 거부됨: ${candidate.finishReason}${candidate.finishMessage ? ` - ${candidate.finishMessage}` : ''}`
+          )
+        }
+
+        const translatedItems = parseBulkResponse(response.text(), texts.length)
+          .map(item => item
+            .replaceAll(/\n/g, '\\n')
+            .replaceAll(/[^\\]"/g, '\\"')
+            .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
+            .replaceAll(/#강조/g, '#bold'))
+
+        resolve(translatedItems)
+      } catch (error) {
         reject(error)
       }
     },

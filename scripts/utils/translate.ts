@@ -1,4 +1,4 @@
-import { translateAI, TranslationRefusedError, type RetranslationContext } from './ai'
+import { translateAI, translateAIBulk, TranslationRefusedError, type RetranslationContext } from './ai'
 import { getCache, hasCache, removeCache, setCache } from './cache'
 import { getDictionary, hasDictionary } from './dictionary'
 import { log } from './logger.js'
@@ -13,6 +13,11 @@ export class TranslationRetryExceededError extends Error {
 }
 
 export { TranslationRefusedError }
+
+export interface BulkTranslateResult {
+  translatedText: string
+  error?: TranslationRefusedError | TranslationRetryExceededError
+}
 
 /**
  * Regex patterns for detecting variable-only text that should be returned immediately without AI translation.
@@ -254,4 +259,109 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
 
   await setCache(cacheKey, translatedText, gameType)
   return translatedText
+}
+
+/**
+ * 여러 텍스트를 한 번에 처리하여 가능한 경우 AI 벌크 번역을 사용합니다.
+ * 실패 시 개별 번역으로 폴백하여 안정성을 보장합니다.
+ */
+export async function translateBulk (
+  texts: string[],
+  gameType: GameType = 'ck3',
+  useTransliteration: boolean = false,
+): Promise<BulkTranslateResult[]> {
+  if (texts.length === 0) {
+    return []
+  }
+
+  const results: BulkTranslateResult[] = Array.from({ length: texts.length }, () => ({ translatedText: '' }))
+  const unresolved: Array<{ index: number; text: string; cacheKey: string }> = []
+  const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
+
+  for (const [index, text] of texts.entries()) {
+    if (!text || text.trim() === '') {
+      results[index] = { translatedText: '' }
+      continue
+    }
+
+    const normalizedText = text
+
+    if (
+      DOLLAR_VARIABLE_REGEX.test(normalizedText) ||
+      POUND_VARIABLE_REGEX.test(normalizedText) ||
+      AT_VARIABLE_REGEX.test(normalizedText) ||
+      ANGLE_VARIABLE_REGEX.test(normalizedText) ||
+      SQUARE_BRACKET_REGEX.test(normalizedText) ||
+      HASH_FORMAT_REGEX.test(normalizedText) ||
+      SECTION_SIGN_VARIABLE_REGEX.test(normalizedText) ||
+      isVariableOnlyText(normalizedText)
+    ) {
+      results[index] = { translatedText: normalizedText }
+      continue
+    }
+
+    if (hasDictionary(normalizedText, gameType)) {
+      results[index] = { translatedText: sanitizeTranslationText(getDictionary(normalizedText, gameType)!) }
+      continue
+    }
+
+    const cacheKey = `${transliterationPrefix}${normalizedText}`
+    if (await hasCache(cacheKey, gameType)) {
+      const cached = await getCache(cacheKey, gameType)
+      if (cached) {
+        const sanitizedCached = sanitizeTranslationText(cached)
+        if (sanitizedCached !== cached) {
+          await setCache(cacheKey, sanitizedCached, gameType)
+        }
+
+        const { isValid } = validateTranslation(normalizedText, sanitizedCached, gameType)
+        if (isValid) {
+          results[index] = { translatedText: sanitizedCached }
+          continue
+        }
+
+        await removeCache(cacheKey, gameType)
+      }
+    }
+
+    unresolved.push({ index, text: normalizedText, cacheKey })
+  }
+
+  if (unresolved.length === 0) {
+    return results
+  }
+
+  try {
+    const aiTranslated = await translateAIBulk(unresolved.map(item => item.text), gameType, useTransliteration)
+
+    for (const [bulkIndex, unresolvedItem] of unresolved.entries()) {
+      const translatedText = sanitizeTranslationText(aiTranslated[bulkIndex] || unresolvedItem.text)
+      const validation = validateTranslation(unresolvedItem.text, translatedText, gameType)
+
+      if (validation.isValid) {
+        await setCache(unresolvedItem.cacheKey, translatedText, gameType)
+        results[unresolvedItem.index] = { translatedText }
+      } else {
+        // 검증 실패 시 개별 번역으로 재시도
+        const fallback = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
+        results[unresolvedItem.index] = { translatedText: fallback }
+      }
+    }
+  } catch {
+    // 벌크 요청 실패 시 개별 번역으로 폴백
+    for (const unresolvedItem of unresolved) {
+      try {
+        const translatedText = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
+        results[unresolvedItem.index] = { translatedText }
+      } catch (error) {
+        if (error instanceof TranslationRefusedError || error instanceof TranslationRetryExceededError) {
+          results[unresolvedItem.index] = { translatedText: unresolvedItem.text, error }
+        } else {
+          throw error
+        }
+      }
+    }
+  }
+
+  return results
 }

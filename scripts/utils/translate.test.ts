@@ -22,6 +22,7 @@ class TranslationRefusedError extends Error {
 // 의존성 모킹
 vi.mock('./ai', () => ({
   translateAI: vi.fn((text: string) => Promise.resolve(`[번역됨]${text}`)),
+  translateAIBulk: vi.fn((texts: string[]) => Promise.resolve(texts.map(text => `[벌크번역]${text}`))),
   TranslationRefusedError,
 }))
 
@@ -486,5 +487,33 @@ describe('TranslationRefusedError 처리', () => {
 
     // translate 함수가 일반 오류도 재throw하는지 확인
     await expect(translate('another text', 'ck3')).rejects.toThrow('네트워크 오류')
+  })
+})
+
+describe('translateBulk', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+  })
+
+  it('벌크 번역 응답을 순서대로 반환해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const results = await translateBulk(['first', 'second'], 'ck3', false)
+
+    expect(results).toEqual([
+      { translatedText: '[벌크번역]first' },
+      { translatedText: '[벌크번역]second' },
+    ])
+  })
+
+  it('벌크 번역 실패 시 개별 번역으로 폴백해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk, translateAI } = await import('./ai')
+
+    vi.mocked(translateAIBulk).mockRejectedValueOnce(new Error('벌크 실패'))
+
+    const results = await translateBulk(['fallback-test'], 'ck3', false)
+
+    expect(results).toEqual([{ translatedText: '[번역됨]fallback-test' }])
+    expect(translateAI).toHaveBeenCalledWith('fallback-test', 'ck3', undefined, false)
   })
 })
