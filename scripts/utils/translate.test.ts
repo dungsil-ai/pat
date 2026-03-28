@@ -566,4 +566,17 @@ describe('translateBulk', () => {
     expect(results).toEqual([{ translatedText: '[캐시번역]cached' }])
     expectInfoLogContains(vi.mocked(log.info), '[벌크/0]', 'cached', '[캐시번역]cached')
   })
+
+  it('벌크 대상이 많으면 여러 배치로 나누어 요청해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk } = await import('./ai')
+
+    const texts = Array.from({ length: 25 }, (_, index) => `item-${index + 1}`)
+    const results = await translateBulk(texts, 'ck3', false)
+
+    expect(results).toHaveLength(25)
+    expect(translateAIBulk).toHaveBeenCalledTimes(2)
+    expect(vi.mocked(translateAIBulk).mock.calls[0][0]).toHaveLength(24)
+    expect(vi.mocked(translateAIBulk).mock.calls[1][0]).toHaveLength(1)
+  })
 })
