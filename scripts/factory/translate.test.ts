@@ -18,6 +18,20 @@ vi.mock('../utils/logger', () => ({
 }))
 
 vi.mock('../utils/translate', () => {
+  class TranslationRetryExceededError extends Error {
+    constructor() {
+      super()
+      this.name = 'TranslationRetryExceededError'
+    }
+  }
+
+  class TranslationRefusedError extends Error {
+    constructor(public readonly text: string, public readonly reason: string) {
+      super(`번역 거부: ${text} (사유: ${reason})`)
+      this.name = 'TranslationRefusedError'
+    }
+  }
+
   const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean) {
     // 기본적으로 [KO] 접두사 사용, 음역 모드면 [TRANSLITERATION] 접두사 사용
     const prefix = useTransliteration ? '[TRANSLITERATION]' : '[KO]'
@@ -26,18 +40,24 @@ vi.mock('../utils/translate', () => {
   
   return {
     translate: mockTranslate,
-    TranslationRetryExceededError: class TranslationRetryExceededError extends Error {
-      constructor() {
-        super()
-        this.name = 'TranslationRetryExceededError'
+    translateBulk: vi.fn(async (texts: string[], gameType?: any, useTransliteration?: boolean) => {
+      const results: Array<{ translatedText: string; error?: Error }> = []
+      for (const text of texts) {
+        try {
+          const translatedText = await mockTranslate(text, gameType, 0, undefined, useTransliteration)
+          results.push({ translatedText })
+        } catch (error) {
+          if (error instanceof TranslationRetryExceededError || error instanceof TranslationRefusedError) {
+            results.push({ translatedText: text, error })
+            continue
+          }
+          throw error
+        }
       }
-    },
-    TranslationRefusedError: class TranslationRefusedError extends Error {
-      constructor(public readonly text: string, public readonly reason: string) {
-        super(`번역 거부: ${text} (사유: ${reason})`)
-        this.name = 'TranslationRefusedError'
-      }
-    }
+      return results
+    }),
+    TranslationRetryExceededError,
+    TranslationRefusedError
   }
 })
 
