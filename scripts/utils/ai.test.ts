@@ -69,6 +69,8 @@ describe('AI 유틸리티', () => {
         if (jsonParseErrorMessage) {
           expect(message).toContain(jsonParseErrorMessage)
         }
+        expect(message).toContain('AI 응답 원문:')
+        expect(message).toContain(raw)
       }
     })
 

@@ -505,7 +505,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       }
 
       try {
-        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration)
+        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration, { modName: mode })
         applyResults(items, results)
       } catch (error) {
         const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
