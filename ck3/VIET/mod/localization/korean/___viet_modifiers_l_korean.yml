@@ -1545,3 +1545,63 @@
   VIET_dragon_dormant: "잠자는 용" # 1275384928186905751
   VIET_dragon_dormant_desc: "이 인물이 최근 자신의 거처에서 신비로운 아기 용을 만났다는 소문이 돌고 있습니다." # 1635073465173550512
   xxxxxxxxxx: "xxx" # 4339025660404407451
+  VIET_opinion_didnt_listen_to_my_advice: "내 조언을 듣지 않음" # 322151758970333823
+  VIET_opinion_annoying_elder: "성가신 어른" # 12179194324654321659
+  VIET_opinion_wise_elder: "현명한 어른" # 17300546840235745395
+  VIET_opinion_agrees_basic: "내 의견에 동의함" # 14581491847473019534
+  VIET_opinion_disagrees_basic: "내 의견에 반대함" # 11430698415370032217
+  VIET_strawberry_pick_me: "과장된 식사 예절" # 15814973382096123219
+  VIET_strawberry_pick_me_desc: "이 인물은 과장되면서도 매력적인 방식으로 올바른 식사 예절을 보여주는 것을 좋아합니다. 보기에는 좋지만, 어떤 이들은 이를 관심 끌기 행동으로 볼 수도 있습니다." # 12171425997847916396
+  VIET_strawberry_not_pick_me: "적절한 식사 예절" # 7739318247214083044
+  VIET_strawberry_not_pick_me_desc: "이 인물은 식사 예절을 연습할 때 너무 과장되어 보이지 않도록 조심합니다. 자신이 얼마나 매력적인지 뽐내는 사람으로 오해받고 싶어 하지 않습니다." # 18139211015959294127
+  VIET_avoiding_dangerous_caves: "위험한 동굴 피하기" # 2822568453667032147
+  VIET_child_obsessed_with_medicine: "의학에 집착함" # 12612115432188857021
+  VIET_child_obsessed_with_medicine_desc: "이 아이는 의학과 의료 행위에 비범한 관심을 보입니다." # 6878500701358580150
+  VIET_diligent_studies: "부지런한 공부" # 11643354870740624588
+  VIET_diligent_studies_desc: "이 아이는 공부에 집중하려고 노력하고 있습니다." # 9918887150264317268
+  VIET_abandoned_village_curse: "버려진 마을의 저주" # 9128364006695935410
+  VIET_abandoned_village_curse_desc: "이 인물은 한때 악마와 사악한 영혼들조차도 피한다고 알려진, 저주받은 버려진 마을에서 잠을 잔 적이 있습니다. 이것이 이 인물에게 많은 불운과 불행한 사건으로 나타났다고 합니다." # 6928306626049243591
+  VIET_judgmental_boomer: "판단력이 강한 노인" # 16471765350790297432
+  VIET_increased_studiousness: "더 열심히 공부할 영감을 받음" # 18387837493902480904
+  VIET_patronized_local_church_renovations: "지역 교회 보수 후원" # 17024097848004178520
+  VIET_irritated_eyes: "눈의 자극" # 3952264999575275128
+  VIET_irritated_eyes_desc: "이 인물의 눈에 뭔가 문제가 있는 것 같습니다. 자주 욱신거리고 가렵고 건조함을 느낍니다." # 10612723546506198508
+  VIET_interesting_trivia_about_wild_plants: "야생 식물에 대한 흥미로운 잡지식을 배움" # 1426038536860204276
+  VIET_ate_delicious_strawberries: "맛있는 딸기를 먹음" # 5200080443419730331
+  VIET_ate_delicious_strawberries_desc: "“저 딸기 정말 컸어!”" # 10905695653279121584
+  VIET_expert_strawberry_gatherers: "전문 딸기 채집꾼" # 12567182624943044966
+  VIET_potential_strawberry_gardens: "잠재적 딸기 정원" # 8206859350992426980
+  VIET_potential_strawberry_gardens_desc: "일부 농학자들과 정원사들은 이 지역에 신중하게 가꾼 딸기 정원을 조성할 수 있다고 믿습니다.\n\n#EMP 이 [county|E]의 [ruler|E]는 [decision|E]인 #V $VIET_decision_strawberry_garden$#을 내려 [modifier|E]를 개선할 수 있습니다! 이 [modifier|E]는 [decision|E]가 내려지면 제거됩니다.#!" # 11286156478479901218
+  VIET_famous_strawberry_gardens: "명성 높은 딸기 정원" # 16982332069787245181
+  VIET_famous_strawberry_gardens_desc: "이 지역은 현지인들이 재배의 어려움에도 불구하고 열심히 관리하는 수준 높은 딸기 정원이 있는 것으로 알려져 있습니다.\n\n#EMP 이 [county|E]를 소유한 [rulers|E]와 그들의 [lieges|E], 그리고 이곳에 [domicile|E]를 둔 자들은 이 [modifier|E]가 활성화되어 있는 한 #V $VIET_decision_get_strawberries$# [decision|E]를 내릴 수 있습니다!#!" # 591775941346185208
+  VIET_harvested_strawberries_ruler: "맛있는 딸기" # 7502964990702502191
+  VIET_harvested_strawberries_adventurer: "$VIET_harvested_strawberries_ruler$" # 1076845009926883583
+  VIET_sympathetic_to_mothers: "어머니들에게 동정적" # 7907274166631669683
+  VIET_suspicious_of_hystical_women: "히스테리 여성들을 의심함" # 15355193938651836120
+  VIET_strawberry_tree_tonic: "딸기나무 자양강장제" # 11677848864780597566
+  VIET_strawberry_tree_tonic_desc: "이 인물은 딸기 식물과는 구별되는 딸기나무 잎으로 만든 자양강장제를 정기적으로 섭취합니다. 이 잎들은 많은 좋은 약효가 있다고 알려져 있습니다." # 12255283305546837877
+  VIET_bayberries_county: "유명한 포도나무 열매" # 12666976466467023345
+  VIET_bayberries_county_desc: "이 지역의 포도나무 열매는 다른 많은 곳에서 명성을 얻었습니다." # 12273931883679487763
+  VIET_strawberries_county: "유명한 딸기" # 10025345792200171144
+  VIET_strawberries_county_desc: "이 지역의 딸기는 품질이 뛰어난 것으로 명성이 높습니다." # 1898649653928196668
+  VIET_hired_falcators: "고용한 매사냥꾼" # 3536074825745570264
+  VIET_hired_falcators_desc: "이 인물은 말에게 먹이를 조달하는 데 도움을 받기 위해 몇몇 [Glossary( 'falcators', 'FALCATORS_GLOSS' )]를 고용했습니다." # 15493157353979202407
+  VIET_confidence_in_horses: "말에 대한 신뢰" # 15162696788136627644
+  VIET_caution_with_horses: "말에 대한 신중함" # 15987712290559188371
+  VIET_learned_about_warhorse_rearing: "군마 사육에 대해 배움" # 6428608385903330040
+  VIET_experience_handling_young_horses: "어린 말 다루기 경험" # 15851790098143400790
+  VIET_did_not_do_horse_bloodletting: "말 피 빼기 시술을 하지 않음" # 6206381610773002621
+  VIET_did_horse_bloodletting: "최근에 말 피 빼기 시술을 함" # 4277761492634931749
+  VIET_dreamt_of_ox_head_horse_face: "황소 머리와 말 얼굴 꿈" # 17085203164727947774
+  VIET_dreamt_of_ox_head_horse_face_desc: "이 인물은 최근 [Glossary( ' Ox-Head and Horse-Face', 'OX_HEAD_AND_HORSE_FACE_GLOSS' )]의 방문에 대한 꿈을 꾼 후 가벼운 병을 앓았습니다. 이상하게도 그것은 불길한 꿈이 아니었습니다. 두 인물은 실수로 이 인물을 방문했으며, 약간의 행운으로 그 수고에 대해 보상하겠다고 말했습니다." # 4342491997781018605
+  VIET_milk_bather: "우유 목욕을 좋아함" # 6754231619743957529
+  VIET_prefers_humble_monks: "수도사는 겸손해야 함" # 5098172551961139632
+  VIET_prefers_humble_monks_desc: "이 인물은 겸손이 이상적인 기독교 수도사에게 가장 중요한 자질 중 하나라고 믿습니다." # 7516790213943546104
+  VIET_prefers_pure_monks: "수도사는 순결해야 함" # 731510528800965509
+  VIET_prefers_pure_monks_desc: "이 인물은 영적인 순결이 이상적인 기독교 수도사에게 가장 중요한 자질 중 하나라고 믿습니다." # 5211195450361680074
+  VIET_lily_of_the_valley: "은방울꽃" # 8630472468000050603
+  VIET_lily_of_the_valley_desc: "이 인물은 기억력 향상에 도움이 된다고 알려진 은방울꽃으로 만든 약을 정기적으로 섭취합니다." # 4818119642774742869
+  VIET_lily_of_the_valley_with_side_effects: "$VIET_lily_of_the_valley$" # 5129486957788013038
+  VIET_lily_of_the_valley_with_side_effects_desc: "이 인물은 기억력 향상에 도움이 된다고 알려진 은방울꽃으로 만든 약을 정기적으로 섭취합니다. 하지만 은방울꽃의 독성과 아마도 약의 잘못된 제조 때문에, 이 인물은 몇 가지 부작용을 겪고 있는 것 같습니다." # 15629290587319070268
+  VIET_jasmine_tea: "자스민 차를 즐김" # 16687744640553823848
+  VIET_hired_skilled_peasant_cooks: "숙련된 농민 요리사 고용" # 17568221689379108684

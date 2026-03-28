@@ -59785,96 +59785,96 @@ eepeiros:0 "épeiros"
  cn_okju: "Okju" # 沃州 (옥주)
  #counties+
  cn_jeoju: "Jeoju" # 宁州 (저주)
- cn_jeoju_adj: "$ cn_jeoju$"
+ cn_jeoju_adj: "$cn_jeoju$"
  cn_buyeo: "Buyeo" # 扶餘 (부여)
- cn_buyeo_adj: "$ cn_buyeo$"
+ cn_buyeo_adj: "$cn_buyeo$"
  cn_yodong: "Yodong" # 遼東 (요동)
- cn_yodong_adj: "$ cn_yodong$"
+ cn_yodong_adj: "$cn_yodong$"
  cn_yongju: "Yongju" # 龍州 (용주)
- cn_yongju_adj: "$ cn_yongju$"
+ cn_yongju_adj: "$cn_yongju$"
  cn_gyeongju: "Gyeongju" # 庆州 (경주)
- cn_gyeongju_adj: "$ cn_gyeongju$"
+ cn_gyeongju_adj: "$cn_gyeongju$"
  cn_hyeonju: "Hyeonju" # 顯州 (현주)
- cn_hyeonju_adj: "$ cn_hyeonju$"
+ cn_hyeonju_adj: "$cn_hyeonju$"
  cn_sinju: "Sinju" # 神州 (신주)
- cn_sinju_adj: "$ cn_sinju$"
+ cn_sinju_adj: "$cn_sinju$"
  cn_buju: "Buju" # 扶州 (부주)
- cn_buju_adj: "$ cn_buju$"
+ cn_buju_adj: "$cn_buju$"
  cn_solbin: "Solbin" # 率賓 (솔빈)
- cn_solbin_adj: "$ cn_solbin$"
+ cn_solbin_adj: "$cn_solbin$"
  cn_dalju: "Dalju" # 達州 (달주)
- cn_dalju_adj: "$ cn_dalju$"
+ cn_dalju_adj: "$cn_dalju$"
  cn_anwon: "Anwon" # 安遠 (안원)
- cn_anwon_adj: "$ cn_anwon$"
+ cn_anwon_adj: "$cn_anwon$"
  cn_solbin_anwon: "Solbin-Anwon" # 率賓 (솔빈) - 安遠 (안원)
- cn_solbin_anwon_adj: "$ cn_solbin_anwon$"
+ cn_solbin_anwon_adj: "$cn_solbin_anwon$"
  cn_north_anwon: "North Anwon" # 安遠 (안원)
- cn_north_anwon_adj: "$ cn_north_anwon$"
+ cn_north_anwon_adj: "$cn_north_anwon$"
  cn_anbyeon: "Anbyeon" # 安邊 (안변)
- cn_anbyeon_adj: "$ cn_anbyeon$"
+ cn_anbyeon_adj: "$cn_anbyeon$"
  cn_north_anbyeon: "North Anbyeon" # 安邊 (안변)
- cn_north_anbyeon_adj: "$ cn_north_anbyeon$"
+ cn_north_anbyeon_adj: "$cn_north_anbyeon$"
  cn_jeongni: "Jeongni" # 定理 (정리)
- cn_jeongni_adj: "$ cn_jeongni$"
+ cn_jeongni_adj: "$cn_jeongni$"
  cn_south_yongwon: "South Yongwon" # 龍原 (용원)
- cn_south_yongwon_adj: "$ cn_south_yongwon$"
+ cn_south_yongwon_adj: "$cn_south_yongwon$"
  cn_north_yongwon: "North Yongwon" # 龍原 (용원)
- cn_north_yongwon_adj: "$ cn_north_yongwon$"
+ cn_north_yongwon_adj: "$cn_north_yongwon$"
  cn_namhae: "Namhae" # 南海 (남해)
- cn_namhae_adj: "$ cn_namhae$"
+ cn_namhae_adj: "$cn_namhae$"
  cn_east_jangryeong: "East Jangryeong" # 長嶺 (장령)
- cn_east_jangryeong_adj: "$ cn_east_jangryeong$"
+ cn_east_jangryeong_adj: "$cn_east_jangryeong$"
  cn_west_jangryeong: "West Jangyreong" # 長嶺 (장령)
- cn_west_jangryeong_adj: "$ cn_west_jangryeong$"
+ cn_west_jangryeong_adj: "$cn_west_jangryeong$"
  cn_east_amnok: "East Amnok" # 鴨綠 (압녹)
- cn_east_amnok_adj: "$ cn_east_amnok$"
+ cn_east_amnok_adj: "$cn_east_amnok$"
  cn_west_amnok: "West Amnok" # 鴨綠 (압녹)
- cn_wast_amnok_adj: "$ cn_west_amnok$"
+ cn_wast_amnok_adj: "$cn_west_amnok$"
  cn_east_hyeondeok: "East Hyeondeok" # 顯德 (현덕)
- cn_east_hyeondeok_adj: "$ cn_east_hyeondeok$"
+ cn_east_hyeondeok_adj: "$cn_east_hyeondeok$"
  cn_west_hyeondeok: "West Hyeondeok" # 顯德 (현덕)
- cn_west_hyeondeok_adj: "$ cn_west_hyeondeok$"
+ cn_west_hyeondeok_adj: "$cn_west_hyeondeok$"
  cn_amnok_jangryeong: "Amnok-Jangryeong" # 鴨綠 (압녹)-長嶺 (장령)
- cn_amnok_jangryeong_adj: "$ cn_amnok_jangryeong$"
+ cn_amnok_jangryeong_adj: "$cn_amnok_jangryeong$"
  cn_yongcheon: "Yongcheon" # 龍泉 (용천)
- cn_yongcheon_adj: "$ cn_yongcheon$"
+ cn_yongcheon_adj: "$cn_yongcheon$"
  cn_balhae: "Balhae" # 渤海 (발해)
- cn_balhae_adj: "$ cn_balhae$"
+ cn_balhae_adj: "$cn_balhae$"
  cn_west_cheolli: "West Cheolli" # 鐵利 (철리)
- cn_west_cheolli_adj: "$ cn_west_cheolli$"
+ cn_west_cheolli_adj: "$cn_west_cheolli$"
  cn_yeongju: "Yeongju" # 郢州 (영주)
  cn_yeongju_adj: "$c_BAL_yeongju$"
  cn_dongju: "Dongju" # 銅州 (동주)
  cn_dongju_adj: "$c_BAL_dongju$"
  cn_hoewon: "Hoewon" # 懷遠 (회원)
- cn_hoewon_adj: "$ cn_hoewon$"
+ cn_hoewon_adj: "$cn_hoewon$"
  cn_west_hoewon: "West Hoewon" # 懷遠 (회원)
- cn_west_hoewon_adj: "$ cn_west_hoewon$"
+ cn_west_hoewon_adj: "$cn_west_hoewon$"
  cn_central_hoewon: "Central Hoewon" # 懷遠 (회원)
- cn_central_hoewon_adj: "$ cn_central_hoewon$"
+ cn_central_hoewon_adj: "$cn_central_hoewon$"
  cn_east_hoewon: "East Hoewon" # 懷遠 (회원)
- cn_east_hoewon_adj: "$ cn_east_hoewon$"
+ cn_east_hoewon_adj: "$cn_east_hoewon$"
  cn_south_hoewon: "South Hoewon" # 懷遠 (회원)
- cn_south_hoewon_adj: "$ cn_south_hoewon$"
+ cn_south_hoewon_adj: "$cn_south_hoewon$"
  cn_dongpyeong: "Dongpyeong" # 東平 (동평)
- cn_dongpyeong_adj: "$ cn_dongpyeong$"
+ cn_dongpyeong_adj: "$cn_dongpyeong$"
  cn_cheolli: "Cheolli" # 鐵利 (철리)
- cn_cheolli_adj: "$ cn_cheolli$"
+ cn_cheolli_adj: "$cn_cheolli$"
  cn_jeonghwa: "Jeonghwa" # 鄭颉 (정화)
- cn_jeonghwa_adj: "$ cn_jeonghwa$"
+ cn_jeonghwa_adj: "$cn_jeonghwa$"
  cn_jeongju_2: "Jeongju" # 鄭州 (정주)
- cn_jeongju_adj: "$ cn_jeongju$"
+ cn_jeongju_adj: "$cn_jeongju$"
  cn_jinju: "Jinju" # 陳州 (진주)
- cn_jinju_adj: "$ cn_jinju$"
+ cn_jinju_adj: "$cn_jinju$"
  cn_okjeo: "Okjeo" # 沃沮 (옥저)
- cn_okjeo_adj: "$ cn_okjeo$"
+ cn_okjeo_adj: "$cn_okjeo$"
  cn_pungju: "Pungju" # 豐州 (풍주)
- cn_pungju_adj: "$ cn_pungju$"
+ cn_pungju_adj: "$cn_pungju$"
  # Japan
  cn_east_hokkaido: "East Hokkaidō"
- cn_east_hokkaido_adj: "$ cn_east_hokkaido$"
+ cn_east_hokkaido_adj: "$cn_east_hokkaido$"
  cn_west_hokkaido: "West Hokkaidō"
- cn_west_hokkaido_adj: "$ cn_west_hokkaido$"
+ cn_west_hokkaido_adj: "$cn_west_hokkaido$"
  cn_matsumae: "Matsumae" # 松前
  cn_kameda: "Kameda" # 亀田
  cn_nishi: "Nishi" # 爾志
@@ -59919,44 +59919,44 @@ eepeiros:0 "épeiros"
  cn_otchishi: "Otchishi" # 落石
  cn_kusunkotan: "Kushunkotan" # 久春古丹
  cn_okinawa: "Okinawa" # 沖縄
- cn_okinawa_adj: "$ cn_okinawa$"
+ cn_okinawa_adj: "$cn_okinawa$"
  cn_taga: "Taga" # 多賀
- cn_taga_adj: "$ cn_taga$"
+ cn_taga_adj: "$cn_taga$"
  cn_dewa: "Dewa" # 出羽
- cn_dewa_adj: "$ cn_dewa$"
+ cn_dewa_adj: "$cn_dewa$"
  cn_akita: "Akita" # 秋田
- cn_akita_adj: "$ cn_akita$"
+ cn_akita_adj: "$cn_akita$"
  cn_mutsu: "Mutsu" # 陸奥
- cn_mutsu_adj: "$ cn_mutsu$"
+ cn_mutsu_adj: "$cn_mutsu$"
  cn_ryukyu: "Ryūkyū" # 琉球
- cn_ryukyu_adj: "$ cn_ryukyu$"
+ cn_ryukyu_adj: "$cn_ryukyu$"
  cn_east_oshima: "East Oshima" # 渡島
- cn_east_oshima_adj: "$ cn_east_oshima$"
+ cn_east_oshima_adj: "$cn_east_oshima$"
  cn_west_oshima: "West Oshima" # 渡島
- cn_west_oshima_adj: "$ cn_west_oshima$"
+ cn_west_oshima_adj: "$cn_west_oshima$"
  cn_ezo: "Ezo" # 蝦夷
- cn_ezo_adj: "$ cn_ezo$"
+ cn_ezo_adj: "$cn_ezo$"
  cn_kuye: "Kuye" # 库页
- cn_kuye_adj: "$ cn_kuye$"
+ cn_kuye_adj: "$cn_kuye$"
  cn_sahaliyan: "Sahaliyan" # 萨哈林
  cn_ygh_mif: "Ygh-mif"
- cn_ygh_mif_adj: "$ cn_ygh_mif$" 
- cn_sahaliyan_adj: "$ cn_sahaliyan$"
+ cn_ygh_mif_adj: "$cn_ygh_mif$" 
+ cn_sahaliyan_adj: "$cn_sahaliyan$"
  cn_karafuto: "Karafuto" # 樺太
- cn_karafuto_adj: "$ cn_karafuto$"
+ cn_karafuto_adj: "$cn_karafuto$"
  cn_yankemosir: "Yankemosir"
- cn_yankemosir_adj: "$ cn_yankemosir$"
+ cn_yankemosir_adj: "$cn_yankemosir$"
  cn_boluo: "Boluo" # 波羅
  cn_guohuo: "Guohuo" # 果夥
  cn_nanghaer: "Nanghaer" # 嚢哈儿
  cn_yidui: "Yidui" # 伊対
  cn_wulie: "Wulie" # 兀烈
  cn_shimajiri: "Shimajiri" # 島尻
- cn_shimajiri_adj: "$ cn_shimajiri$"
+ cn_shimajiri_adj: "$cn_shimajiri$"
  cn_nakagami: "Nakagami" # 中頭
- cn_nakagami_adj: "$ cn_nakagami$"
+ cn_nakagami_adj: "$cn_nakagami$"
  cn_kunigami: "Kunijiri" # 国頭
- cn_kunigami_adj: "$ cn_kunigami$"
+ cn_kunigami_adj: "$cn_kunigami$"
  cn_kunohe: "Kunohe" # 九戸
  cn_kurihara: "Kurihara" # 栗原
  cn_kita: "Kita" # 北
@@ -59969,7 +59969,7 @@ eepeiros:0 "épeiros"
  cn_haguro: "Haguro" # 羽黒山
  cn_motoyoshi: "Motoyoshi" # 本吉
  cn_michinoku: "Michinoku" # 陸奥
- cn_michinoku_adj: "$ cn_michinoku$"
+ cn_michinoku_adj: "$cn_michinoku$"
  cn_koma: "Koma" # 高麗
  cn_shiragi: "Shiragi" # 新羅
  cn_kudara: "Kudara" # 百済
@@ -59996,9 +59996,9 @@ eepeiros:0 "épeiros"
  cn_shenzhou: "Shénzhōu" # 神州
  cn_xiazhou: "Xiázhōu" # 瑕州
  cn_zhengjie: "Zhèngjié" # 鄭颉
- cn_zhengjie_adj: "$ cn_zhengjie$"
+ cn_zhengjie_adj: "$cn_zhengjie$"
  cn_zhengzhou: "Zhèngzhōu" # 鄭颉
- cn_zhengzhou_adj: "$ cn_zhengzhou$"
+ cn_zhengzhou_adj: "$cn_zhengzhou$"
  cn_jiaozhou: "Jiaozhou" # 交州
  cn_songping: "Songping" # 宋平
  cn_longbian: "Longbian" # 龙编

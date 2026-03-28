@@ -136,3 +136,138 @@
   VIETintro.0011.t: "여정의 시작" # 9698579941998381735
   VIETintro.0011.desc: "이제 [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]으로 향하는 [ROOT.Char.GetInvolvedActivity.GetShortName] 여정을 시작할 시간입니다. 이 여행을 준비하는 두통과 번거로움이 목적지에 도착했을 때 그만한 가치가 있기를 바랍니다... 아니, 그렇지 않다면 이 모든 여행 준비로 인한 스트레스가 헛수고가 될 테니, 그렇게 되기를 바랄 수밖에 없겠지요." # 7414818866934797355
   VIETintro.0011.a: "우리는 이 모든 번거로움을 좋은 이유 때문에 감수하는 것이오." # 5238792602042800629
+  VIET_cherry: "체리" # 17773146735301636101
+  VIET_apple: "사과" # 6379808199001010847
+  VIET_orange: "오렌지" # 13996788840987944361
+  VIET_banana: "바나나" # 14911808561875815650
+  VIET_date: "대추야자" # 9202271988582577219
+  VIET_strawberry: "딸기" # 8128462165977714555
+  VIET_bayberry: "담배" # 14118157277126040599
+  VIET_mango: "망고" # 14877046948682931644
+  VIET_durian: "두리안" # 5382210134519433437
+  VIET_pear: "배" # 16441169724966315442
+  VIET_peach: "복숭아" # 17338230901504728917
+  VIET_apricot: "살구" # 14097817056986276806
+  VIET_plum: "자두" # 5739354590004070529
+  VIET_raspberry: "산딸기" # 17198688611800251545
+  VIET_lingonberry: "링곤베리" # 1062873290539310386
+  VIET_yuzu: "유자" # 3943998113843085786
+  VIET_fig: "무화과" # 11589363594758333989
+  VIET_pomegranate: "석류" # 4932679952627717767
+  VIET_lychee: "리치" # 9540912361161867369
+  VIET_rose_hip: "로즈힙" # 3710878790949059413
+  VIET_star_apple: "스타 애플" # 7678042540445249746
+  VIET_persimmon: "감" # 1681079763921187464
+  VIET_jackalberry: "자칼베리" # 13812059913818900114
+  VIET_watermelon: "수박" # 12162841490730813416
+  VIET_redcurrant: "붉은커런트" # 15355297669400463170
+  VIET_grape: "포도" # 12376881128838110080
+  VIET_kumquat: "금귤" # 9108850282046812203
+  VIET_mulberry: "뽕나무 열매" # 2739005082811701320
+  VIET_melon: "멜론" # 7019801199340271524
+  VIET_kaong: "카옹" # 6871040478962497363
+  VIET_lipote: "리포테" # 8818005611490308565
+  VIET_korlan: "코를란" # 2601281734726431962
+  VIET_longan: "용안" # 6971249153297676719
+  VIET_marula: "마룰라" # 11165585297066371304
+  VIET_sloe: "가시나무 열매" # 13013172050793024627
+  VIET_sourplum: "신맛 자두" # 5160744099895799569
+  VIET_wax_apple: "왁스 애플" # 11630641666353173834
+  VIET_barberry: "매자나무 열매" # 15194057932959379257
+  VIET_bilimbi: "빌림비" # 6568183559591324459
+  VIET_karonda: "카론다" # 16222151304629390437
+  VIET_elderberry: "엘더베리" # 13250031968949008865
+  VIET_honeyberry: "하스카프" # 2779318336538511422
+  VIET_star_fruit: "스타 프루트" # 7184771914473041538
+  VIET_goji_berry: "구기자" # 2964065600514941600
+  VIET_baobab: "바오밥" # 17453989947452160257
+  VIET_wood_apple: "목과" # 12225453794828766910
+  VIET_calamansi: "칼라만시" # 17082335274733370081
+  VIET_bergamot_orange: "베르가못 오렌지" # 1929359430054116047
+  VIET_lemon: "레몬" # 15837399225570196352
+  VIET_citron: "시트론" # 8324020905630807178
+  VIET_etrog: "에트로그" # 10801970729620268944
+  VIET_pomelo: "포멜로" # 17776403171716015973
+  VIET_cloudberry: "클라우드베리" # 4734666279192773881
+  VIET_elephant_apple: "코끼리 사과" # 15830264483903537213
+  VIET_breadnut: "빵나무 열매" # 15010539051770147051
+  VIET_jackfruit: "잭프루트" # 8056669869980390701
+  VIET_cempedak: "쳄페닥" # 11615011055281469153
+  VIET_kokum: "코쿰" # 366879668064310694
+  VIET_langsat: "랑삿" # 3555138759237529424
+  VIET_mangosteen: "망고스틴" # 14417424903663913592
+  VIET_salak: "살락" # 1602689417868825753
+  VIET_tamarind: "타마린드" # 11375026115734690695
+  VIET_ginkgo: "은행" # 1506758172936787707
+  VIET_jujube: "대추" # 1183100639451300111
+  VIET_juniper_berry: "주니퍼 베리" # 13195093421930077425
+  VIET_random_oblivion_dynasty_names_001: "셉팀" # 12905612715827081675
+  VIET_random_oblivion_dynasty_names_002: "나나반메" # 12388216205339182914
+  VIET_random_oblivion_dynasty_names_003: "갈리쿠오기" # 7654531588303034110
+  VIET_random_oblivion_dynasty_names_004: "마이카피토" # 17037665688440267269
+  VIET_random_oblivion_dynasty_names_005: "디치" # 13462007902917590834
+  VIET_random_oblivion_dynasty_names_006: "워로우라" # 17647029912567924578
+  VIET_random_oblivion_dynasty_names_007: "자그와" # 13265139535205899378
+  VIET_random_oblivion_dynasty_names_008: "투바이" # 17980360167625645149
+  VIET_random_oblivion_dynasty_names_009: "예칠" # 617583779707535571
+  VIET_random_oblivion_dynasty_names_010: "메쉬비데" # 9403213860484877300
+  VIET_random_oblivion_dynasty_names_011: "세프테노스\" " # 5603202032573076382
+  VIET_random_oblivion_dynasty_names_012: "삽타마\" " # 6317805265845296689
+  VIET_random_oblivion_dynasty_names_013: "레글레\" " # 180557446623421045
+  VIET_random_oblivion_dynasty_names_014: "쉽탐\" " # 5585205937617125554
+  VIET_random_oblivion_dynasty_names_015: "사비" # 802105639400647491
+  VIET_random_oblivion_dynasty_names_016: "하프톰" # 3771809434324573365
+  VIET_random_oblivion_dynasty_names_017: "이시콤비사" # 17700547291429807165
+  VIET_random_oblivion_dynasty_names_018: "야사바" # 8551975771797198543
+  VIET_random_oblivion_dynasty_names_019: "셉티엠" # 14648170849072024224
+  VIET_random_oblivion_dynasty_names_020: "세드모요프" # 9043127810157941306
+  VIET_random_oblivion_dynasty_names_021: "에브도모스" # 14412373169173468381
+  VIET_random_oblivion_dynasty_names_022: "헤브도모스" # 2653478528699739791
+  VIET_random_oblivion_dynasty_names_023: "슈비이" # 15533269555110917939
+  VIET_random_oblivion_dynasty_names_024: "사타빈" # 15539848592961838902
+  VIET_random_oblivion_dynasty_names_025: "엘라바투" # 6031090530708108279
+  VIET_random_oblivion_dynasty_names_026: "샤와" # 15157041183804329933
+  VIET_random_oblivion_dynasty_names_027: "이치 치코메" # 16195352575209873376
+  VIET_random_oblivion_dynasty_names_028: "우욱" # 1558308880531828199
+  VIET_random_oblivion_dynasty_names_029: "세프티모" # 3082167838899469579
+  VIET_random_oblivion_dynasty_names_030: "칸치스 니키" # 17078252883521926580
+  VIET_random_oblivion_dynasty_names_031: "차타흐카톤" # 11312810311599093590
+  VIET_random_oblivion_dynasty_names_032: "에히쿠" # 2137251624949314030
+  VIET_random_oblivion_dynasty_names_033: "안세크투" # 1362318263322348081
+  VIET_random_oblivion_dynasty_names_034: "섹스타메토스" # 11287563035742857360
+  VIET_random_oblivion_dynasty_names_035: "셈프" # 5622905084299964414
+  VIET_random_oblivion_dynasty_names_036: "사프하우" # 10536525953775461858
+  VIET_random_oblivion_dynasty_names_037: "이미" # 14267244784606683007
+  VIET_random_oblivion_dynasty_names_038: "자즈피가레나" # 5493932350322444821
+  VIET_random_oblivion_dynasty_names_039: "이슈타테" # 17454188284912044726
+  VIET_random_oblivion_dynasty_names_040: "위르키" # 11811292829164147312
+  VIET_random_oblivion_dynasty_names_041: "탈레블룸" # 14089002977017001485
+  VIET_random_oblivion_dynasty_names_042: "아라와니킨네" # 7699994374913778445
+  VIET_random_oblivion_dynasty_names_043: "케투주" # 5363350334979424597
+  VIET_random_oblivion_dynasty_names_044: "둔파" # 14790112638458292479
+  VIET_random_oblivion_dynasty_names_045: "삽탄트" # 6528449159824968449
+  VIET_random_oblivion_dynasty_names_046: "콜로다" # 12543035541145729347
+  VIET_random_oblivion_dynasty_names_047: "라푸나" # 7563664635908392099
+  VIET_random_oblivion_dynasty_names_048: "달로에르" # 15633209531065779827
+  VIET_random_oblivion_dynasty_names_049: "세이츠메" # 3155557786944718962
+  VIET_random_oblivion_dynasty_names_050: "젭텐" # 18385577324459519941
+  VIET_random_oblivion_dynasty_names_051: "시셈" # 1794384837111082097
+  VIET_random_oblivion_dynasty_names_052: "예딘지" # 825209654918095538
+  VIET_random_oblivion_dynasty_names_053: "세오푼다" # 17076709670404049852
+  VIET_random_oblivion_dynasty_names_054: "아에사" # 12792060455464026210
+  VIET_random_oblivion_dynasty_names_055: "에케예" # 8622986985583019753
+  VIET_random_oblivion_dynasty_names_056: "에다바" # 10346536620814769247
+  VIET_random_oblivion_dynasty_names_057: "프람피이" # 15985517644715593306
+  VIET_random_oblivion_dynasty_names_058: "다이캇" # 13408366270848203169
+  VIET_random_oblivion_dynasty_names_059: "콜로드" # 7594583839528990453
+  VIET_random_oblivion_dynasty_names_060: "루카투" # 7739054120994412295
+  VIET_random_oblivion_dynasty_names_061: "하데드" # 9012827128846763180
+  VIET_random_oblivion_dynasty_names_062: "옴비" # 12599244419439583978
+  VIET_random_oblivion_dynasty_names_063: "하자드" # 1052341867049319106
+  VIET_random_oblivion_dynasty_names_064: "바가브레" # 5645395620316526270
+  VIET_random_oblivion_dynasty_names_065: "벨리드" # 1065161002355994807
+  VIET_random_oblivion_dynasty_names_066: "세파" # 3083356221405294608
+  VIET_random_oblivion_dynasty_names_067: "오투이" # 14848062564817596976
+  VIET_random_oblivion_dynasty_names_068: "오체아" # 6765237699922328010
+  VIET_random_oblivion_dynasty_names_069: "소크디치" # 11280430273254706855
+  VIETintro.0012.desc: "[uriel.GetTitledFirstName]\n\n[martin.GetTitledFirstName]\n\n[baurus.GetTitledFirstName]\n\n[jauffre.GetTitledFirstName]" # 2718968619359624883
