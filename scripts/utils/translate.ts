@@ -358,7 +358,11 @@ export async function translateBulk (
       }
     }
   } catch (error) {
-    log.warn(`[벌크] AI 벌크 요청 실패, 개별 번역으로 폴백: ${String(error)}${useTransliteration ? ' (음역 모드)' : ''}`)
+    const errorInfo = error instanceof Error ? error : String(error)
+    log.warn(
+      `[벌크] AI 벌크 요청 실패, 개별 번역으로 폴백${useTransliteration ? ' (음역 모드)' : ''}`,
+      errorInfo
+    )
     // 벌크 요청 실패 시 개별 번역으로 폴백
     for (const unresolvedItem of unresolved) {
       try {
