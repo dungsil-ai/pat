@@ -3,6 +3,7 @@
   sarnaism_religion_adj: "케르왈" # 3462103050904356051
   sarnaism_religion_adherent: "케르왈리스트" # 13130062975999364091
   sarnaism_religion_adherent_plural: "케르왈파" # 11235806752738581387
+  sarnaism_religion_desc: "$sarnaism_desc$" # 6209310096571852395
   sarnaism: "사르나교" # 1085214771217232033
   sarnaism_adj: "사르나이스트" # 10000072517664773032
   sarnaism_adherent: "사르나이스트" # 10000072517664773032

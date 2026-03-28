@@ -1,0 +1,534 @@
+﻿l_korean:
+  Cu_Connacht: "쿠 코나흐트" # 12999293254856983260
+  dynn_RICE_dalaigh: "달라이" # 8825921029990480095
+  innovation_RICE_placeholder_01: "보그 버터" # 18372596822692348552
+  innovation_RICE_placeholder_01_desc: "브리튼 제도의 많은 지역에서는 버터를 늪지에 묻어 보존하곤 합니다. 이는 식품과 화장품에서 연고 등에 이르기까지 버터의 중요성과 다양한 용도 덕분에 수천 년 동안 지속되어 온 고대의 관습입니다." # 16474668304569110651
+  innovation_RICE_placeholder_02: "크래녹" # 18194875858486500383
+  innovation_RICE_placeholder_02_desc: "브리튼 제도, 특히 켈트 지역에서 크라노그는 호수와 습지 위에 축조된 인공 섬 형태의 특수한 목조 구조물을 의미합니다." # 356117870098542820
+  RICE_any_held_county_bog_butter_terrain_capital_req: "귀하의 [capital|E]이 #V 구릉지#!, #V 삼림#!, #V 습지#!, 혹은 #V 타이가#! [terrain|E]에 있습니다" # 17932333040288457972
+  RICE_any_held_county_bog_butter_terrain_domicile_req: "[domicile|E]가 #V 구릉지#!, #V 삼림#!, #V 습지#! 또는 #V 타이가#! [terrain|E]에 위치함" # 7596580798650154418
+  RICE_any_held_county_not_bog_butter_flag_req: "최소 1년 동안 묻어두어 현재 파낼 수 있는 늪지 버터가 없습니다." # 2532339385273433178
+  RICE_any_held_county_bog_butter_flag_req: "최소 1년 동안 묻어 두어, 현재 파낼 수 있는 습지 버터가 있습니다." # 17345821276638815877
+  RICE_mayo_castlebar_distance_req: "귀하의 [capital|E]가 [GetTitleByKey('c_mayo').GetNameNoTier]와 가깝거나 [GetGeographicalRegion('custom_ireland').GetName] [region|E] 내에 위치함" # 3887374057902960670
+  RICE_mayo_in_castlebar_req: "귀하의 [camp|E]는 [GetTitleByKey('b_castlebar').GetNameNoTier]에 있습니다." # 7617466872678236422
+  RICE_all_family_members_at_court_sharing_old_heritage: "이전 [culture|E]와 동일한 [heritage|E]를 공유하는 [court|E] 내 모든 [close_family|E] 구성원" # 14205861702913209348
+  RICE_all_courtiers_sharing_old_heritage: "당신의 이전 [culture|E]와 동일한 [heritage|E]를 공유하는 모든 [courtiers|E]" # 1510123038660709179
+  RICE_every_goidelic_ruler_in_realm: "[culture|E]가 $heritage_goidelic_name$ [heritage|E]인 [realm|E] 내 모든 [ruler|E]" # 9603166010113067884
+  RICE_every_non_goidelic_ruler_in_realm: "[realm|E] 내 [culture|E]가 $heritage_goidelic_name$ [heritage|E]에 속하지 않는 모든 [ruler|E]" # 11830839994843442082
+  RICE_opinion_embraced_gaelicization: "게일화를 수용함" # 16629778571754623367
+  RICE_every_goidelic_county: "$heritage_goidelic_name$ [heritage|E]인 [culture|E]를 가진 모든 [county|E]" # 759509413343709176
+  dynn_RICE_eriugena: "에리우게나" # 227979077609866189
+  nick_RICE_scottus: "스코투스" # 6387783942928263776
+  nick_RICE_scottus_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat]는 본래 라틴어로 [Glossary( 'Scotti', 'SCOTTI_GLOSS' )]라 불리는 민족이 거주하는 아일랜드섬 출신입니다. 그리하여 그[CHARACTER.GetSheHe]는 라틴어로 아일랜드인을 뜻하는 #italic Scottus#!라 알려져 있습니다." # 296026369222845923
+  Wulfad: "울파드" # 15083744659238246702
+  Winibert: "위니베르트" # 12629037775302956326
+  RICE_nick_butterlord: "버터 군주" # 7053556120426120132
+  RICE_nick_butterlord_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharHaveHas(CHARACTER)]께서는 갓 만든 신선한 버터부터 독특한 풍미의 늪지 버터에 이르기까지, 최고급의 가장 맛있는 버터들을 내놓는 호화로운 연회를 베풀며 버터를 진심으로 좋아한다는 평판을 얻었습니다." # 12537251563037222168
+  RICE_anglo_norman_mercenaries_event_troops: "앵글로노르만 모험가들" # 15713907434732981395
+  RICE_irish_event_troops: "아일랜드 군대" # 16643179737642137900
+  RICE_irish_high_king_message_tooltip: "[GetGeographicalRegion('custom_ireland').GetName] 내의 [independent|E] [dukes|E]와 [counts|E]들은 당신의 [vassal|E] 혹은 [tributary|E]이 되는 것 중 하나를 선택할 것입니다." # 11011613754081304111
+  Bega: "베가" # 11864014380290442897
+  game_concept_bog_butter_bog: "습지" # 14060218799529751213
+  game_concept_bog_butter_short: "버터" # 11522961092526878050
+  game_concept_bog_butter: "보그 버터" # 18372596822692348552
+  game_concept_bog_butter_desc: "$game_concept_bog_butter$은 고대와 중세 시대 브리튼 제도의 일부 지역에서 버터를 보존하던 전통적인 방식입니다. 이는 #bold $RICE_mayo_bury_bog_butter$#!와 #bold $RICE_mayo_retrieve_bog_butter$#!라는 두 가지 [decisions|E]을 통해 구현됩니다.\n\n이 두 [decisions|E]은 #V $game_concept_bog_butter$#! [innovation|E]을 보유한 모든 [culture|E]이 사용할 수 있습니다. 첫 번째 [decision|E]을 실행한 후, 두 번째 [decision|E]을 실행하려면 최소 1년을 기다려야 합니다." # 2409945853527325011
+  game_concept_gift_of_luxury_butter: "고급 버터 선물" # 12240443616960694480
+  game_concept_gift_luxury_butter_gift: "선물" # 2606541427898960113
+  game_concept_gift_luxury_butter_short: "버터" # 11522961092526878050
+  game_concept_gift_luxury_butter: "고급 버터 선물하기" # 2527254947855768159
+  game_concept_gift_luxury_butter_desc: "[cultures|E] with the #bold $tradition_RICE_brehon_law_name$#! [tradition|E]을 보유한 [cultures|E]는 #V $RICE_mayo_butter_interaction$#! [character_interaction|E]을 사용할 수 있습니다. 이는 전근대 아일랜드에서 가축과 버터가 신분과 부의 중요한 상징이었음을 나타냅니다. 버터는 전통적으로 환대의 표시로서 손님에게 제공되었으며, 사회적 계급에 따라 받아야 할 버터의 양이 정해져 있었습니다.\n\n이 [interaction|E]은 상대방의 당신에 대한 [opinion_i|E] [opinion|E]을 높이고 긍정적인 [modifier|E]를 부여합니다. 양측의 [rank|E]가 높을수록(본인, [close_family|E], 혹은 [spouse|E]가 [title|E]를 보유하고 있는지와 그 [title_tier|E]에 따라 결정됨), 양측이 돌려받는 [prestige_i|E] [prestige|E]가 많아집니다. 받는 사람이 [duchy|E] [title_tier|E] 이상일 경우, 주는 사람 또한 받는 사람의 [title_tier|E]에 따라 약간의 [legitimacy_i|E] [legitimacy|E]를 얻습니다." # 8951467536526190161
+  RICE_mayo_butter_interaction: "고급 버터 선물하기" # 2527254947855768159
+  RICE_mayo_butter_interaction_desc: "\"[recipient.GetShortUINamePossessiveNoTooltip]에게 질 좋은 [gift_luxury_butter_short|E]를 선물합니\"" # 14011800011850718115
+  RICE_mayo_butter_interaction_notification: "\"부디 경의의 표시로, 저희 가문에서 보낸 진하고 고소한 [gift_luxury_butter_short|E] 선물을 받아주십시오. 속담에도 있듯이, 버터로 고칠 수 없는 것에는 약도 없는 법입니다\"" # 4487930071823854594
+  RICE_mayo_periphyseon_name: "페리피세온" # 15675987470687695461
+  RICE_mayo_periphyseon_desc: "\"이 문헌, [Glossary( '페리피세온', 'PERIPHYSEON_GLOSS' )]은 [ROOT.Char.GetFirstName](이)가 익명의 [ROOT.Char.GetCulture.GetName] 필사생의 도움을 받아 수년에 걸쳐 집필한 것입니다. [ROOT.Char.GetFirstNamePossessiveNoTooltip] 친구인 [wulfad.GetTitledFirstName]에게 헌정된 이 저작은 신학과 철학에 관한 스승과 제자 사이의 길고 깊은 대화로 구성되어 있으며, 특히 [ROOT.Char.GetFirstNameNoTooltip](이)가 생각하는 실재의 네 가지 '종'에 대해 다루고 있습니다:\n\n$BULLET_WITH_TAB$창조하되 창조되지 않는 것\n$BULLET_WITH_TAB$창조되기도 하고 창조하기도 하는 것\n$BULLET_WITH_TAB$창조되되 창조하지 않는 것\n$BULLET_WITH_TAB$창조되지도 않고 창조하지도 않는 것\n\n이 책의 논거는 일부 [GetReligionByKey('christianity_religion').GetAdjective] 사상가들로부터 [Glossary( '범신론', 'PANTHEISM_GLOSS' )] 및 신플라톤주의 이교 신앙에 너무 가깝다는 비판을 받기도 했으나, 다른 이들은 이 책의 지적 엄밀함과 대담한 관점, 그리고 고대 철학을 [GetReligionByKey('christianity_religion').GetAdjectiveNoTooltip] 세계관에 통합시킨 능력을 높이 평가합니다\"" # 4180345709465480818
+  building_type_RICE_mayo_mayo_of_the_saxons_01: "\"작센의 마\"" # 13981641814830717018
+  building_type_RICE_mayo_mayo_of_the_saxons_01_desc: "[\n \"린디스판의 성 콜만이 설립한 이래로 수 세대 동안, 마요 수도원은 브리튼 제도에서 학문과 예배의 중요한 중심지 역할을 해왔습니다. 이 기관은 아일랜드와 잉글랜드의 성직자 및 지식인들 사이의 유대를 독려하는 역할을 수행합니다\"\n]" # 14589824710083609201
+  building_RICE_mayo_mayo_of_the_saxons_01: "$building_type_RICE_mayo_mayo_of_the_saxons_01$" # 2139556008433387215
+  building_RICE_mayo_mayo_of_the_saxons_01_desc: "$building_type_RICE_mayo_mayo_of_the_saxons_01_desc$" # 2793035788849104612
+  building_type_RICE_mayo_croagh_patrick: "\"크로 패트\"" # 17479531779650956256
+  building_type_RICE_mayo_croagh_patrick_desc: "\"성 패트릭은 시나이산의 모세처럼 대서양이 내려다보이는 이 산의 정상에서 40일 동안 금식하며 지냈다고 전해집니다. 그 후로 아일랜드 전역의 기독교인들은 성 패트릭의 발자취를 되짚어보기 위해 이 신성한 산으로 순례를 떠났습니다. 산 주변에는 수많은 제단과 고대 암각화, 그리고 거대한 의례적 경관을 형성하는 여러 유적들이 자리하고 있습니다\"" # 1460450947154834396
+  building_RICE_mayo_croagh_patrick: "$building_type_RICE_mayo_croagh_patrick$" # 491991552862384691
+  building_RICE_mayo_croagh_patrick_desc: "$building_type_RICE_mayo_croagh_patrick_desc$" # 7260155742677287026
+  building_type_RICE_mayo_giants_causeway: "\"자이언츠 코즈웨\"" # 7321222096429345241
+  building_type_RICE_mayo_giants_causeway_desc: "{\n \"translatio\":\"수천 개의 서로 맞물린 주상절리 기둥이 이곳 해안의 일부를 따라 모여 있습니다. 현지 민담에 따르면, 이 장엄한 천연 구조물은 전설적인 피온 맥 쿨이 건설한 둑길의 잔해라고 전해집니다\"\n}" # 12858240586512796336
+  building_RICE_mayo_giants_causeway: "$building_type_RICE_mayo_giants_causeway$" # 17859687336046596034
+  building_RICE_mayo_giants_causeway_desc: "$building_type_RICE_mayo_giants_causeway_desc$" # 16125813740577946437
+  building_type_RICE_mayo_abbey_of_kells: "\"켈스 수도\"" # 1909806302139783436
+  building_type_RICE_mayo_abbey_of_kells_desc: "\"이오나 수도원 출신의 성 콜룸바가 설립한 이 수도원은 아일랜드 학문의 중심지입니다. 이곳은 특히 수 세기 동안 경건한 기독교인들을 매료시키고 영감을 준, 비할 데 없는 예술적 아름다움을 간직한 복음서인 켈스의 서를 보관하고 있는 것으로 유명합니다\"" # 15822969890647641893
+  building_RICE_mayo_abbey_of_kells: "$building_type_RICE_mayo_abbey_of_kells$" # 13750852247911758002
+  building_RICE_mayo_abbey_of_kells_desc: "$building_type_RICE_mayo_abbey_of_kells_desc$" # 8353185683805979703
+  building_type_RICE_mayo_rock_of_cashel_01: "\"카셸의 바\"" # 3906320027566694615
+  building_type_RICE_mayo_rock_of_cashel_01_desc: "\"넓은 평원이 내려다보이는 카셸의 거대한 요새는 성 패트릭이 먼스터의 왕을 기독교로 개종시킨 장소라고 전해집니다. 이곳은 수 세기 동안 먼스터 왕들의 거처였습니다\"" # 15779623335146533486
+  building_RICE_mayo_rock_of_cashel_01: "\"카셸의 바\"" # 3906320027566694615
+  building_RICE_mayo_rock_of_cashel_01_desc: "$building_type_RICE_mayo_rock_of_cashel_01_desc$" # 431337429287438726
+  building_RICE_mayo_rock_of_cashel_02: "\"신성화된 카셸의 바\"" # 9078621866347935475
+  building_RICE_mayo_rock_of_cashel_02_desc: "[\n \"$building_type_RICE_mayo_rock_of_cashel_01_desc$ 최근의 통치자들은 이 건물 복합단지의 상당 부분을 지역 종교 기관에 기부했습니다. 종교 기관들은 이곳에 대단히 장엄하고 신성한 건축물들을 추가로 건설했으며, 값을 매길 수 없는 방대한 예술품들을 수집해 왔습니다\"\n]" # 13667851353361257804
+  building_type_RICE_mayo_hill_of_tara: "타라의 언덕" # 6026372457862560458
+  building_type_RICE_mayo_hill_of_tara_desc: "옛 시절, 타라는 아일랜드에서 가장 중요한 의례 및 매장지였으며, 이곳의 운명의 돌인 #italic 리아 팔#!에서 아일랜드의 고왕들이 신성한 의식을 통해 즉위하곤 했습니다." # 9167230861763016028
+  building_RICE_mayo_hill_of_tara: "$building_type_RICE_mayo_hill_of_tara$" # 5134632932118422425
+  building_RICE_mayo_hill_of_tara_desc: "$building_type_RICE_mayo_hill_of_tara_desc$" # 14663254609463231589
+  RICE_mayo_aspiration_ruaidri_o_connor_desc: "\n\n#bold [historical_aspiration_main_objectives|E]#! (@warning_icon! [historical_aspiration_routes|E]는 상호 배타적입니다)\n#bold #italic #N 잉글랜드 봉신 [historical_aspiration_route|E]#!#!#!\n$EFFECT_LIST_BULLET$ [GetTitleByKey('k_england').GetNameNoTier]의 [vassal|E] 또는 [tributary|E]가 되십시오\n$EFFECT_LIST_BULLET$ [completely_control|E], 직간접적으로 [vassals|E]를 통해, [GetGeographicalRegion('custom_ireland').GetName] 내 최소 #V 6#! 개의 [counties|E]를 소유하십시오\n$EFFECT_LIST_BULLET$ [prestige_level|E]가 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상이어야 합니다\n#bold #italic #P 독립 통치자 [historical_aspiration_route|E]#!#!#!\n$EFFECT_LIST_BULLET$ [independent|E], 비 [tributary|E] 상태의 $heritage_goidelic_name$ [ruler|E]로 남으십시오\n$EFFECT_LIST_BULLET$ [completely_control|E], 직간접적으로 [vassals|E]를 통해, [GetGeographicalRegion('custom_ireland').GetName] 내 최소 #V 9#! 개의 [counties|E]를 소유하십시오\n$EFFECT_LIST_BULLET$ [GetGeographicalRegion('custom_ireland').GetName] 내 [counties|E] 중 $heritage_goidelic_name$ [culture|E]가 아닌 [rulers|E]가 직접 소유한 곳은 최대 #V 2#! 개여야 합니다\n$EFFECT_LIST_BULLET$ [prestige_level|E]가 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상이어야 합니다\n\n#bold 보상#!\n$EFFECT_LIST_BULLET$명성 @prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [prestige|E] 획득\n#italic #bold #N 잉글랜드 봉신 [historical_aspiration_route|E]#!#!#!\n$EFFECT_LIST_BULLET$재물 @gold_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [gold|E] 획득\n$EFFECT_LIST_BULLET$잉글랜드 [special_troops|E] #V 1000#!개, [men_at_arms|E] 포함 수령\n$EFFECT_LIST_BULLET$귀하의 [culture|E]와 노르만 및 잉글랜드 [cultures|E] 간의 [cultural_acceptance|E] 증가\n#italic #bold #P 독립 통치자 [historical_aspiration_route|E]#!#!#!\n$EFFECT_LIST_BULLET$가문 명성 @dynasty_prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [dynasty_prestige|E] 획득\n$EFFECT_LIST_BULLET$아일랜드 [special_troops|E] #V 2000#!개, [men_at_arms|E] 포함 수령\n$EFFECT_LIST_BULLET$아직 없다면 [GetTitleByKey('k_ireland').GetNameNoTier] 획득\n$EFFECT_LIST_BULLET$$RICE_irish_high_king_message_tooltip$\n\n#bold [historical_aspiration_bonus_objectives|E]#! (두 [historical_aspiration_routes|E] 모두에 적용 가능)\n$EFFECT_LIST_BULLET$ [piety_level|E]가 [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] 이상이어야 합니다 (보상: [diplomacy_lifestyle|E] [perk|E] 획득)\n$EFFECT_LIST_BULLET$ [GetActivityType( 'activity_RICE_mayo_croagh_patrick_pilgrimage' ).GetName] [activity|E]를 최소 한 번 수행하십시오 (보상: 신앙심 @piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [piety|E] 획득)" # 555759754330437734
+  RICE_mayo_historical_aspiration_action_ruaidri_o_connor: "#italic 나는 수십 년 동안 아일랜드의 고왕으로서 나의 권위를 주장하기 위해 노력해왔다. 거만한 경쟁 아일랜드 통치자들, 교활한 친척들, 그리고 의도가 의심스러운 새로 온 앵글로-노르만 모험가들을 상대로 말이다. 나는 이제 늙어가고 있으며, 성 패트릭의 전설적인 섬에 대한 통제력을 어느 정도 되찾기를 희망한다.#!$RICE_mayo_aspiration_ruaidri_o_connor_desc$" # 15189859633963436541
+  RICE_mayo_historical_aspiration_modifier_desc_ruaidri_o_connor: "[GetModifier('RICE_mayo_aspiration_maintain_authority_in_ireland').GetNameWithTooltip]" # 16262052046527987026
+  RICE_mayo_aspiration_maintain_authority_in_ireland: "[RICE_aspiration|E]: 아일랜드 내 권위 유지" # 3236514506166508969
+  RICE_mayo_aspiration_maintain_authority_in_ireland_desc: "#italic 루아드리 우아 콘초바르(Ruaidrí Ua Conchobair)는 수십 년 동안 아일랜드의 고왕으로서 자신의 권위를 주장하기 위해 노력해왔다. 거만한 경쟁 아일랜드 통치자들, 교활한 친척들, 그리고 의도가 의심스러운 새로 온 앵글로-노르만 모험가들을 상대로 말이다. 그는 이제 늙어가고 있으며, 성 패트릭의 전설적인 섬에 대한 통제력을 어느 정도 되찾기를 희망한다.#!$RICE_mayo_aspiration_ruaidri_o_connor_desc$\n\n" # 16266014069983062837
+  activity_RICE_mayo_croagh_patrick_pilgrimage_host_an_a: "$host_activity_a$" # 13713790857143020716
+  activity_RICE_mayo_croagh_patrick_pilgrimage: "크로아흐 파트리크 성지 순례" # 8375507955542513023
+  activity_RICE_mayo_croagh_patrick_pilgrimage_desc: "크로아흐 파트리크 산은 아일랜드의 수호성인인 성 패트릭과 연관되어 있어 아일랜드에서 가장 인기 있는 성지 순례지 중 하나입니다." # 15181441315509524855
+  RICE_mayo_croagh_patrick_pilgrimage_context_tooltip: "#emphasis 역사적 배경:#! 크로아흐 파트리크는 신석기 시대부터 신성한 장소로 여겨졌을 가능성이 높습니다. 기독교화된 이후에는 아일랜드의 유명한 성 패트릭과 강하게 연관되었는데, 그는 시나이 산에서 모세처럼 정상에서 40일 동안 금식했다고 전해집니다. 오늘날에도 매년 많은 순례자들이 이곳을 찾아, 특히 '성지 일요일(Reek Sunday)'에 산을 오르려고 합니다." # 14541169104615346046
+  activity_RICE_mayo_croagh_patrick_pilgrimage_selection_tooltip: "[GetTitleByKey('c_mayo').GetNameNoTier]에 있는 크로아흐 파트리크로 [local_pilgrimage|E]를 떠나십시오.\n\n$RICE_mayo_croagh_patrick_pilgrimage_context_tooltip$" # 15205868169622979319
+  activity_RICE_mayo_croagh_patrick_pilgrimage_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ [piety_level|E]에 따라 #P 긍정적인#! [character_modifiers|E]를 성공적으로 얻을 확률" # 10460726711560591909
+  activity_RICE_mayo_croagh_patrick_pilgrimage_guest_desc: "$activity_RICE_mayo_croagh_patrick_pilgrimage_host_desc$" # 16681723424471249842
+  activity_RICE_mayo_croagh_patrick_pilgrimage_province_desc: "크로아흐 파트리크는 [GetTitleByKey('b_castlebar').GetNameNoTier] 근처에 있습니다." # 15059443631571140023
+  activity_RICE_mayo_croagh_patrick_pilgrimage_destination_selection: "$activity_RICE_mayo_croagh_patrick_pilgrimage_province_desc$" # 150478020384351623
+  activity_RICE_mayo_croagh_patrick_pilgrimage_guest_help_text: "$activity_RICE_mayo_croagh_patrick_pilgrimage$" # 8546430324515446477
+  activity_RICE_mayo_croagh_patrick_pilgrimage_predicted_cost: "크로아 패트릭으로 떠나는 [local_pilgrimage|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 5382527829469749421
+  activity_RICE_mayo_croagh_patrick_pilgrimage_conclusion_desc: "우리의 [GetActivityType( 'activity_RICE_mayo_croagh_patrick_pilgrimage' ).GetName]이 끝났습니다. 이 산의 영적인 장엄함은 부정할 수 없군요!" # 7387610172220138633
+  RICE_mayo_croagh_patrick_pilgrimage_completed_log_title: "크로아흐 파트리크 성지 순례 완료" # 16216470005750735793
+  RICE_mayo_croagh_patrick_pilgrimage_completed_log: "[CHARACTER.GetShortUIName|U]가 크로아흐 파트리크로의 [CHARACTER.GetHerHis] [local_pilgrimage|E]를 완료했습니다" # 15663983909378322116
+  TRAVEL_NAME_FOR_activity_RICE_mayo_croagh_patrick_pilgrimage: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_mayo_croagh_patrick_pilgrimage$" # 6281105940606846191
+  RICE_mayo_croagh_patrick_injury_log_title: "등반 중 부상" # 14753609542317338144
+  RICE_mayo_croagh_patrick_injury_log: "[injured_person.GetShortUIName|U]가 크로아흐 파트리크를 등반하다가 부상을 입었습니다" # 7427191440622962793
+  RICE_mayo_croagh_patrick_lightning_harmless_log_title: "번개" # 1492464728205172306
+  RICE_mayo_croagh_patrick_lightning_harmless_log: "[lightning_person.GetShortUIName|U]가 번개를 맞을 뻔했습니다" # 12401974512742521883
+  RICE_mayo_croagh_patrick_lightning_injury_log_title: "$RICE_mayo_croagh_patrick_lightning_harmless_log_title$" # 13523498268863704692
+  RICE_mayo_croagh_patrick_lightning_injury_log: "[lightning_person.GetShortUIName|U]가 번개를 맞고 부상을 입었습니다" # 1814318072649074935
+  RICE_mayo_croagh_patrick_lightning_death_log_title: "$RICE_mayo_croagh_patrick_lightning_harmless_log_title$" # 13523498268863704692
+  RICE_mayo_croagh_patrick_lightning_death_log: "[lightning_person.GetShortUIName|U]가 번개에 맞아 사망했습니다" # 3595303583755761965
+  activity_RICE_visit_holy_well_host_an_a: "$host_activity_a$" # 13713790857143020716
+  activity_RICE_visit_holy_well: "성스러운 샘 방문" # 5842428111298866417
+  activity_RICE_visit_holy_well_desc: "근처에 현지인들 사이에서 숭배의 장소로 인기 있는 성스러운 샘이 있습니다. 그곳에서 [GetPlayer.GetFaith.PantheonTerm]께 기도하고 헌금을 드릴 수 있습니다." # 9922647038454835562
+  RICE_visit_holy_well_context_tooltip: "$RICE_consecrate_holy_well_context_tooltip$" # 14712878235315251628
+  activity_RICE_visit_holy_well_selection_tooltip: "지역 성수를 방문하십시오.\n\n$RICE_visit_holy_well_context_tooltip$" # 5630287925948940528
+  activity_RICE_visit_holy_well_host_desc: "\n$BULLET_WITH_TAB$ [stress_loss_i|E] [stress|E] 감소\n$BULLET_WITH_TAB$ [piety_i|E] [piety|E]\n$BULLET_WITH_TAB$ [legitimacy_i|E] [legitimacy|E]\n$BULLET_WITH_TAB$ [GetStaticModifier('TFE_healing_waters_of_a_holy_well').GetNameWithTooltip] [character_modifier|E] 획득 확률" # 15118327664823397814
+  activity_RICE_visit_holy_well_guest_desc: "$activity_RICE_visit_holy_well_host_desc$" # 11612423045399309869
+  activity_RICE_visit_holy_well_province_desc: "이곳에 성수가 있습니다." # 1751947475934186128
+  activity_RICE_visit_holy_well_destination_selection: "$activity_RICE_visit_holy_well_province_desc$" # 9541785315807852537
+  activity_RICE_visit_holy_well_guest_help_text: "$activity_RICE_visit_holy_well$" # 8443400562898428901
+  activity_RICE_visit_holy_well_predicted_cost: "이 방문 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
+  activity_RICE_visit_holy_well_conclusion_desc: "[GetActivityType( 'activity_RICE_visit_holy_well' ).GetName] 활동이 종료되었습니다. 겸허해지는 영적 체험이었습니다!" # 15302161785086471128
+  RICE_visit_holy_well_prayer_phase: "기도" # 3105075337060657930
+  RICE_visit_holy_well_prayer_phase_desc: "성수는 영적 숭배, 치유, 성찰의 장소입니다." # 1864168832440581873
+  RICE_visit_holy_well_worship_intent_header: "예배:" # 5975529624042931288
+  RICE_visit_holy_well_worship_intent: "예배" # 7766295194512236388
+  RICE_visit_holy_well_worship_intent_desc: "$RICE_visit_holy_well_prayer_phase_desc$" # 7712699145286487165
+  RICE_visit_holy_well_completed_log_title: "성수 방문 완료" # 4081627031299861590
+  RICE_visit_holy_well_completed_log: "[CHARACTER.GetShortUIName|U]가 성수 방문을 마쳤습니다" # 14285242370694695734
+  TRAVEL_NAME_FOR_activity_RICE_visit_holy_well: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_visit_holy_well$" # 15461948535919832004
+  RICE_visit_holy_well_gain_modifier_log_title: "축복" # 9790579056371878484
+  RICE_visit_holy_well_gain_modifier_log: "[CHARACTER.GetShortUIName|U]가 성수로부터 축복을 받았습니다" # 16804103192289019344
+  RICE_mayo_bog_butter_modifier: "보그 버터" # 18372596822692348552
+  RICE_opinion_butter_gift: "고급 버터 선물" # 12240443616960694480
+  RICE_mayo_butter_gift_modifier: "$RICE_opinion_butter_gift$" # 1193779955371918972
+  RICE_mayo_butter_gift_modifier_desc: "이 인물은 최근 다른 [ruler|E]로부터 [gift_luxury_butter|E]를 받았는데, 이는 그 인물의 중요성과 사회적 지위를 잘 보여줍니다." # 13126119199985539056
+  TFE_holy_well_level_1: "작은 성수가 최근 축성됨" # 15448720014000972441
+  TFE_holy_well_level_1_desc: "이 지역의 종교 당국이 최근 명망 있는 성수를 축성했습니다. 신도들이 근처 지역에서 기도하고 헌금을 하기 위해 이 장소로 모여들고 있습니다.\n\n#italic 이 [county|E]를 소유하거나 이곳에 [domicile|E]를 가진 [rulers|E]의 [culture|E]가 $heritage_goidelic_name$, $heritage_brythonic_name$, 또는 $heritage_west_germanic_name$ [heritage|E]일 경우 [GetActivityType( 'activity_RICE_visit_holy_well' ).GetName] [activity|E]의 보너스를 향상시킵니다. 작은 성수는 이 [decision|E]를 수행할 때 주요 성수나 대성수에 비해 보너스가 적습니다.#!" # 9649216319391730425
+  TFE_holy_well_level_2: "주요 성수가 최근 축성됨" # 247926406848953253
+  TFE_holy_well_level_2_desc: "이 지역의 종교 당국이 최근 명망 있는 성수를 축성했습니다. 신도들이 기도하고 헌금을 하기 위해 주변 지역에서 이 장소로 모여들고 있습니다.\n\n#italic 이 [county|E]를 소유하거나 이곳에 [domicile|E]를 가진 [rulers|E]의 [culture|E]가 $heritage_goidelic_name$, $heritage_brythonic_name$, 또는 $heritage_west_germanic_name$ [heritage|E]일 경우 [GetActivityType( 'activity_RICE_visit_holy_well' ).GetName] [activity|E]의 보너스를 향상시킵니다. 주요 성수는 이 [decision|E]를 수행할 때 작은 성수보다 보너스가 많지만, 대성수보다는 적습니다.#!" # 1424718837699912153
+  TFE_holy_well_level_3: "대성수가 최근 축성됨" # 12350263683158842008
+  TFE_holy_well_level_3_desc: "이 지역의 종교 당국이 최근 명망 있는 성수를 축성했습니다. 신도들이 기도하고 헌금을 하기 위해 근처 지역에서 이 장소로 모여들고 있습니다.\n\n#italic 이 [county|E]를 소유하거나 이곳에 [domicile|E]를 가진 [rulers|E]의 [culture|E]가 $heritage_goidelic_name$, $heritage_brythonic_name$, 또는 $heritage_west_germanic_name$ [heritage|E]일 경우 [GetActivityType( 'activity_RICE_visit_holy_well' ).GetName] [activity|E]의 보너스를 향상시킵니다. 대성수는 이 [decision|E]를 수행할 때 작은 성수와 주요 성수보다 더 많은 보너스를 제공합니다.#!" # 1774874072484054721
+  TFE_healing_waters_of_a_holy_well: "성수의 치유수" # 9656134553255166610
+  TFE_healing_waters_of_a_holy_well_desc: "이 인물은 최근 성수를 방문하여 기도하고 종교적 헌금을 바쳤습니다. 그 후, 이 인물은 영적 및 육체적으로 재활되는 느낌을 받았습니다." # 14077028460429621138
+  RICE_recently_gaelicized: "최근 게일화됨" # 15375985740793715645
+  RICE_rulers_recently_gaelicized: "최근 게일화된 통치자들" # 8783345868964178152
+  RICE_mayo_supported_galway_bay_seafarers: "골웨이 만의 해양 종사자 지원" # 17009411423859521515
+  RICE_mayo_supported_galway_bay_seafarers_desc: "이 인물은 자신의 높은 지위를 이용하여 골웨이 만의 해안 지역 사회에 여러 방면으로 아낌없이 도움을 주어 그들의 감사와 지지를 얻었습니다." # 17624871354358707985
+  RICE_mayo_saint_macdara_support: "성 마크다라 섬을 위한 기부금" # 17682615125252096016
+  RICE_mayo_saint_macdara_support_desc: "골웨이 해안에 있는 한 섬은 오랫동안 선원들의 수호자로 여겨지는 지역 성인인 성 마크다라와 연관되어 왔습니다. 최근 통치자들이 섬으로 향하는 지역 순례와 그들의 전통적인 종교 의식을 돕기 위해 자원과 자금을 제공했습니다." # 6129499967409276099
+  RICE_mayo_hazelnut_tribute: "개암 열매 공물" # 2637358758421424181
+  RICE_mayo_hazelnut_tribute_desc: "고대 아일랜드 법에서 개암나무는 [Glossary( '삼림의 군주', 'LORDS_OF_THE_WOOD_GLOSS' )] 중 하나로 여겨지며, 군주는 매년 고객들로부터 개암나무 가지의 일부를 받을 권리가 있습니다. 최근 이 인물의 부하들이 울타리, 우리, 집 벽 건설에 사용할 개암나무 가지와 식용으로 먹을 열매를 꽤 많이 수확했습니다." # 16706214337403864087
+  RICE_mayo_bountiful_hazelnut_harvest: "풍성한 개암 열매 수확" # 3055611371912708002
+  RICE_mayo_pine_trees: "아일랜드 소나무" # 16595568020359913781
+  RICE_mayo_school_irish_modifier: "마요의 꽃피는 학파" # 16809871915517285147
+  RICE_mayo_school_irish_modifier_desc: "지역 통치자들이 과거 앵글로색슨이 지배했던 오래된 기관인 마요 학파가 아일랜드 문화와 학문의 중심지로 변모하는 것을 지원했습니다." # 8384878352344449039
+  RICE_mayo_school_irish_character_modifier: "마요 학파 지원" # 14952318522003578896
+  RICE_mayo_school_irish_character_modifier_desc: "이 인물의 재정적, 정치적 지원 덕분에 마요 학파는 아일랜드 문화와 학문의 주요 중심지로 성공적으로 전환되었습니다." # 6688887610600943835
+  RICE_mayo_school_english_modifier: "마요 학파 부흥" # 7739344935086445904
+  RICE_mayo_school_english_modifier_desc: "지역 통치자들이 과거 앵글로색슨이 지배했던 마요 학파를 지원하여 잉글랜드와의 관계를 부흥시켰습니다." # 11193264299183701634
+  RICE_mayo_school_english_character_modifier: "마요 학파 부흥시키기" # 15224908458552700981
+  RICE_mayo_school_english_character_modifier_desc: "이 인물의 재정적, 정치적 지원 덕분에 마요 학파는 잉글랜드 교회와의 관계를 성공적으로 부흥시켰고, 다시 한번 아일랜드와 잉글랜드 사이의 주요 연결고리라는 명성을 되찾았습니다." # 16474334188974304702
+  RICE_mayo_school_destroy_character_modifier: "마요 학파에 대한 지원 철회" # 12532915281598251613
+  RICE_mayo_school_destroy_character_modifier_desc: "진정한 신념 때문이든, 혹은 더 냉소적인 물질적 이유 때문이든, 이 인물은 과거 앵글로색슨이 지배했던 오래된 기관인 마요 학파를 비난했습니다." # 14793253410335859638
+  RICE_mayo_school_of_mayo_decision: "색슨족의 마요 학파 방향에 영향 미치기" # 4704318195929592975
+  RICE_mayo_school_of_mayo_decision_tooltip: "마요 학파가 우리 눈앞에서 변화하고 있으며, 이제 그 방향에 영향을 미칠 때입니다." # 15053347921443716815
+  RICE_mayo_school_of_mayo_decision_desc: "색슨족의 마요 학파, 또는 마요 학파는 아일랜드의 위대한 학문 중심지 중 하나로 자리매김해 왔는데, 이는 아일랜드인과 앵글로색슨 모두의 열렬한 지지 덕분이기도 합니다. 하지만 학교가 앵글로색슨 뿌리와의 관계가 약해지면서 그 운명은 어떻게 될까요?" # 18001236672759923552
+  RICE_mayo_school_of_mayo_decision_effect_tooltip_1: "[GetReligionByKey('christianity_religion').GetAdjective] 수도사나 수녀들이 $heritage_west_germanic_name$ [heritage|E]에 속한 자들이 [GetGeographicalRegion('custom_ireland').GetName]에서 간혹 나타날 수 있으며, 특히 [county_modifier|E]가 아직 유효한 동안 그러합니다." # 1691260540272334442
+  RICE_mayo_school_of_mayo_decision_confirm: "우리는 마요 학파의 미래에 영향을 미칠 것입니다" # 14386300564870783300
+  RICE_mayo_school_of_mayo_decision_context_tooltip: "#emphasis 역사적 배경:#! 우리가 아는 마요의 정착지는 서기 668년경 잉글랜드에서 열린 휘트비 시노드(Synod of Whitby)의 결과에 대해 이견을 가진 앵글로색슨 수도사들과 동맹을 맺은 아일랜드 수도사들이 세운 색슨족의 마요라는 수도원에서 유래했습니다. 시간이 지나면서 마요 학파는 아일랜드와 앵글로색슨 세계를 잇는 중요한 종교적 중심지이자, 아일랜드에서 공부하고자 하는 앵글로색슨들을 위한 주요 교육 중심지가 되었습니다. 색슨족의 마요의 전성기는 8세기와 9세기 초였으며, 이후 몇 세기 동안 아일랜드의 주요 기독교 중심지로 남아 있었지만, 점차 고유한 앵글로색슨적 특성을 잃어갔고, 종교개혁 때까지 잊혀지게 되었습니다." # 8586997934818362316
+  RICE_mayo_school_of_mayo_decision_PICK_TYPE: "$RICE_mayo_school_of_mayo_decision_confirm$" # 1146835126610086078
+  RICE_mayo_school_of_mayo_decision_select_text: "색슨족의 메이오에게 미래에 무엇이 기다리고 있을까요?\n$select_one_of_the_available_option_step_one_top_text$" # 4840936806597464162
+  RICE_mayo_school_of_mayo_decision_irish_name: "#Bold 아일랜드 학습 포용#!" # 14984485177733472299
+  RICE_mayo_school_of_mayo_decision_irish_desc: "$RICE_mayo_school_of_mayo_decision_irish_name$" # 16359572552698983843
+  RICE_mayo_school_of_mayo_decision_irish_tooltip: "#italic 메이오 학파는 오랫동안 아일랜드와 잉글랜드 간의 긴밀한 종교적 유대의 증거였으며, 이 유대는 이전보다 훨씬 더 강화될 수 있습니다.#!" # 16652068565143928886
+  RICE_mayo_school_of_mayo_decision_english_name: "#Bold 잉글랜드 연결 활성화#!" # 16556136889632545882
+  RICE_mayo_school_of_mayo_decision_english_desc: "$RICE_mayo_school_of_mayo_decision_english_name$" # 11024865520959725020
+  RICE_mayo_school_of_mayo_decision_english_tooltip: "#italic 메이오 학파의 오래된 앵글로색슨 영향력은 사라지고 있으며, 이제 아일랜드 문화권에서 온 새로운 세대의 학자들과 수도사들을 지원해야 할 때입니다.#!" # 2359437454255748556
+  RICE_mayo_school_of_mayo_decision_destroy_name: "#Bold 학교 지원 철회#!" # 232426135509788450
+  RICE_mayo_school_of_mayo_decision_destroy_desc: "$RICE_mayo_school_of_mayo_decision_destroy_name$" # 10976656152083946457
+  RICE_mayo_school_of_mayo_decision_destroy_tooltip: "#italic 메이오 학파는 수년간 잉글랜드와 아일랜드 사이의 가교이자 학문의 중심지로서의 역할을 다한 쇠퇴하는 기관입니다. 우리는 지원을 철회하고 일부 자산을 몰수해야 합니다.#!" # 7045731935023305184
+  RICE_mayo_bury_bog_butter: "늪지 버터 묻기" # 3360189678772697572
+  RICE_mayo_bury_bog_butter_tooltip: "[bog_butter_short|E]를 늪지에 묻는 것은 그것을 보존하는 훌륭한 방법입니다." # 14840331721499032613
+  RICE_mayo_bury_bog_butter_desc: "[bog_butter_short|E]를 늪지에 묻는 것은 장기적으로 보존하는 전통적인 방식입니다. 제 버터를 묻을 만한 근처 늪지가 있어야 할 것입니다." # 16095825576609317012
+  RICE_mayo_bury_bog_butter_effect_tooltip_1: "#bold $RICE_mayo_retrieve_bog_butter$#! [decision|E]는 #V 1#!년 후에 취할 수 있으며, 다른 보너스들 외에도 [GetModifier('RICE_mayo_bog_butter_modifier').GetNameWithTooltip] [character_modifier|E]를 얻을 수 있습니다." # 3701206357348885104
+  RICE_mayo_bury_bog_butter_effect_tooltip_2: "#bold $tradition_RICE_brehon_law_name$#! [tradition|E]는 이 [decision|E]의 보너스를 증가시킵니다." # 13387541622108493873
+  RICE_mayo_bury_bog_butter_confirm: "나는 버터를 정말 좋아해!" # 11015091902063115439
+  RICE_mayo_bury_bog_butter_context_tooltip: "#emphasis 역사적 배경:#! 버터는 식량, 화장품, 연고 등 다양한 용도로 사용되었기 때문에 역사적으로 영국 제도 내 여러 사회에서 귀중하게 여겨졌습니다. 고대와 중세 시대에는 아일랜드와 스코틀랜드에서 늪지에 묻어 보존하기도 했습니다. 이는 일반 신선한 버터와 다른 독특한 풍미를 주기도 했습니다." # 2902249934971400133
+  RICE_mayo_retrieve_bog_butter: "늪지 버터 되찾기" # 11373770511386633904
+  RICE_mayo_retrieve_bog_butter_tooltip: "예전에 늪지에 묻어 두었던 버터를 찾을 때가 왔습니다." # 1889233404116597024
+  RICE_mayo_retrieve_bog_butter_desc: "저는 보존을 위해 [bog_butter_short|E]를 늪지에 묻어 두었습니다. 지금이 그것을 파내어 어떻게 변했는지 맛볼 좋은 시기일지도 모르겠군요?" # 13075442635282819907
+  RICE_mayo_retrieve_bog_butter_effect_tooltip_1: "xxxxxxxxxxx" # 151847500354160245
+  RICE_mayo_retrieve_bog_butter_confirm: "버터 수확 철이다!" # 8521173655614124208
+  RICE_mayo_retrieve_bog_butter_context_tooltip: "$RICE_mayo_bury_bog_butter_context_tooltip$" # 3676405434837984020
+  RICE_consecrate_holy_well: "성스러운 샘 축성하기" # 8181880229544146116
+  RICE_consecrate_holy_well_tooltip: "이 땅은 신성한 수원으로 가득 차 있으며, 이를 축성할 수 있습니다." # 143745332949061816
+  RICE_consecrate_holy_well_desc: "신성한 샘과 성스러운 우물은 [ROOT.Char.GetCulture.GetName]의 민속에서 중요한 역할을 하며, 제 영토 곳곳에 그러한 장소가 많지만, 저는 [capital|E] 근처의 우물 하나를 축성하여 모든 신실한 [ROOT.Char.GetFaith.GetAdherentNamePlural]의 눈에 그 중요성을 높이고 싶습니다." # 15968674978565886935
+  RICE_consecrate_holy_well_effect_tooltip_1: "이 [decision|E]는 평생 #V 단 한 번#!만 내릴 수 있습니다." # 3084338753079845342
+  RICE_consecrate_holy_well_effect_tooltip_2: "귀하의 [capital|E]는 [county_opinion|E]와 [control|E]를 증가시키는 #V 20#!년간의 [county_modifier|E]를 받게 됩니다. 이 보너스의 강도는 무작위이지만 [piety_level|E]의 영향을 받습니다." # 7392602172812408202
+  RICE_consecrate_holy_well_effect_tooltip_3: "이 [county_modifier|E]가 활성화되어 있는 동안, 그것이 있는 [county|E]를 소유하거나 그곳에 [domicile|E]를 둔 [rulers|E]는 [activity|E]인 [GetActivityType( 'activity_RICE_visit_holy_well' ).GetName]에 접근할 수 있습니다." # 12392514196711925059
+  RICE_consecrate_holy_well_confirm: "적절한 성스러운 우물을 찾자!" # 13041218207830383622
+  RICE_consecrate_holy_well_context_tooltip: "#emphasis 역사적 배경:#! 신석기 시대 이래로 우물과 샘은 민족이나 종교에 관계없이 영국 제도의 사람들에게 큰 중요성을 지녀왔습니다. 최근 일부 학자들이 영국 '성스러운 우물'이 일관된 개념인지에 대해 의문을 제기하기도 했습니다. 예를 들어, 이교도와 기독교 관행 사이에 성스러운 우물에서 어떤 연관성이 있는지에 대해 의문을 제기하는 등, 물을 중심으로 이루어진다는 사실 외에는 말입니다. 하지만 그러한 우물들이 여러 세대에 걸쳐 영성의 장소였음은 분명합니다." # 16429710139185066715
+  RICE_no_holy_well_county: "성스러운 우물 [county_modifier|E]가 있는 [county|E]를 소유하고 있지 않습니다" # 16243585553357762708
+  RICE_yes_holy_well_county: "성스러운 우물 [county_modifier|E]가 있는 [county|E]를 소유하고 있습니다" # 95239671090385615
+  RICE_embrace_gaelicization: "게일화 수용" # 6074008505414559117
+  RICE_embrace_gaelicization_tooltip: "게일 민족의 관습과 세계관이 그대를 부릅니다." # 6320845183685542807
+  RICE_embrace_gaelicization_desc: "나의 기원이 어떻든, 나는 [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier]의 [ROOT.Char.GetCapitalLocation.GetCulture.GetCollectiveNoun]들 사이에서 더 편안함을 느끼기 시작한다. 그들의 언어, 음악, 음식, 패션, 예절.... 이 모든 것이 내 영혼 깊은 곳에 자리 잡고 있다." # 11605883861930550058
+  RICE_embrace_gaelicization_effect_tooltip_1: "xxxxxxxxxxx" # 151847500354160245
+  RICE_embrace_gaelicization_confirm: "우리는 [ROOT.Char.GetCapitalLocation.GetCulture.GetCollectiveNounNoTooltip]보다 더 [ROOT.Char.GetCapitalLocation.GetCulture.GetNameNoTooltip]해질 것이다!" # 15181452586852193555
+  RICE_embrace_gaelicization_context_tooltip: "#emphasis Historical Context:#! 아일랜드에 정착한 앵글로-노르만인의 후손들은 토착 게일 문화에 너무나 잘 동화되어, 후대의 평론가들은 이 앵글로-노르만인들이 “아일랜드인보다 더 아일랜드인”이 되었다고 낭만적으로 주장하기도 했다. 후기 잉글랜드 군주들이 근세 초기에 아일랜드를 보다 직접적으로 통제하고 정복하려 했을 때, “토착” 아일랜드 가문의 후손들과 “구(舊) 잉글랜드인”이라고도 불렸던 이 히베르노-노르만인들은 서로 심하게 혼인했으며, 때로는 잉글랜드의 지배에 저항하기 위해 함께 협력했다." # 3468111891191772703
+  mayo.0000.t: "xxxxx" # 1951045980481827005
+  mayo.0000.desc: "xxxxx" # 1951045980481827005
+  mayo.0000.a: "xxxxx" # 1951045980481827005
+  mayo.0001.t: "xxxxx" # 1951045980481827005
+  mayo.0001.desc: "xxxxx" # 1951045980481827005
+  mayo.0001.a: "xxxxx" # 1951045980481827005
+  mayo.0002.t: "xxxxx" # 1951045980481827005
+  mayo.0002.desc: "xxxxx" # 1951045980481827005
+  mayo.0002.a: "xxxxx" # 1951045980481827005
+  mayo.0003.t: "xxxxx" # 1951045980481827005
+  mayo.0003.desc: "xxxxx" # 1951045980481827005
+  mayo.0003.a: "xxxxx" # 1951045980481827005
+  mayo.0004.t: "xxxxx" # 1951045980481827005
+  mayo.0004.desc: "xxxxx" # 1951045980481827005
+  mayo.0004.a: "xxxxx" # 1951045980481827005
+  mayo.0005.t: "xxxxx" # 1951045980481827005
+  mayo.0005.desc: "xxxxx" # 1951045980481827005
+  mayo.0005.a: "xxxxx" # 1951045980481827005
+  mayo.0006.t: "xxxxx" # 1951045980481827005
+  mayo.0006.desc: "xxxxx" # 1951045980481827005
+  mayo.0006.a: "xxxxx" # 1951045980481827005
+  mayo.0007.t: "xxxxx" # 1951045980481827005
+  mayo.0007.desc: "xxxxx" # 1951045980481827005
+  mayo.0007.a: "xxxxx" # 1951045980481827005
+  mayo.0008.t: "xxxxx" # 1951045980481827005
+  mayo.0008.desc: "xxxxx" # 1951045980481827005
+  mayo.0008.a: "xxxxx" # 1951045980481827005
+  mayo.0009.t: "xxxxx" # 1951045980481827005
+  mayo.0009.desc: "xxxxx" # 1951045980481827005
+  mayo.0009.a: "xxxxx" # 1951045980481827005
+  mayo.0010.t: "고왕의 곤경" # 8891045294182083741
+  mayo.0010.desc: "[norman.GetCollectiveNoun]이 용병과 모험가로서 우리 섬에 처음 왔을 때, 나는 [GetTitleByKey('k_ireland').GetNameNoTier]의 고왕으로서 권위를 가져야 할 정치적 다툼에 그들이 개입했소. 섬의 [irish.GetName] 통치자들은 수년 동안 너무나도 무질서해져서 내 뜻에 굽히기를 거부했지.\n\n[henry_ii.GetTitledFirstName]는 교회의 지지를 받아 이 [norman.GetCollectiveNounNoTooltip]들에게 제재를 가하는 것이 옳다고 여겼지만, 우리는 몇 년 전 윈저 조약을 통해 합의에 이르렀소. 그것은 내가 매년 [henry_ii.GetHerHim]에게 공물을 바치는 조건으로 섬을 내 영향권과 [henry_ii.GetFirstNamePossessiveNoTooltip]의 영역으로 나누는 용인할 만한 타협이었으며, 고왕으로서의 권위를 재확인하기 위한 보잘것없는 희생이었지.\n\n그러나 [henry_ii.GetFirstNamePossessiveNoTooltip]의 부하들은 기만적임이 드러났소. 그들은 끊임없이 내 영향권으로 침범하며 조약을 깨고 있소. 나는 이 [norman.GetCollectiveNounNoTooltip]들을 거의 믿지 않소... 하지만 아직 또 다른 합의에 도달할 수 있다고 생각하는 이들도 있소." # 892754460338294510
+  mayo.0010.a: "나는 고왕의 자리를 지키기 위해 너무나 오랫동안 고군분투했소…." # 16096305422794636056
+  mayo.0010.info: "#emphasis 역사적 배경:#! 아일랜드의 마지막으로 널리 인정받은 고왕은 루아이드리 우아 콘초바일(Ruaidrí Ua Conchobair, 영어식으로 로리 오코너Rory O'Connor)이었습니다. 루아이드리는 고왕으로서의 권위를 주장하기 위해 평생을 보냈지만 결과는 엇갈렸습니다. 상황을 더욱 복잡하게 만든 것은 지역 아일랜드 분쟁에 앵글로노르만 용병들이 개입한 것이었고, 이는 잉글랜드의 헨리 2세 왕이 승인한 이들 앵글로노르만족의 침공으로 걷잡을 수 없이 번졌습니다. 루아이드리와 헨리는 1175년에 윈저 조약에 서명했고, 이 조약으로 헨리와 루아이드리는 아일랜드 내의 영향권을 나누었으며, 루아이드리는 헨리에게 충성을 맹세했습니다. 하지만 이 합의는 각 왕의 노르만 및 아일랜드 봉신들이 조약을 무시하고 서로 공개적으로 전쟁을 벌이면서 빠르게 무너졌습니다. 1198년 루아이드리가 사망한 후, 그 칭호를 주장하는 몇몇 인물들(14세기에는 더 유명한 로버트 브루스의 동생인 에드워드 브루스 포함)이 있었지만, 그 누구도 광범위한 지지를 얻지 못했습니다." # 9651500108344103924
+  mayo.0011.t: "xxxxx" # 1951045980481827005
+  mayo.0011.desc: "xxxxx" # 1951045980481827005
+  mayo.0011.a: "xxxxx" # 1951045980481827005
+  mayo.0012.t: "자연에 대하여" # 9323754980140272046
+  mayo.0012.desc: "수년간의 노력 끝에, 나는 나의 소중한 친구이자 동료 학자인 [wulfad.GetTitledFirstName]에게 헌정하는 [Glossary( 'Periphyseon', 'PERIPHYSEON_GLOSS' )]를 마침내 완성했소. 이것은 우주의 본질에 대한 철학과 [ROOT.Char.GetFaith.HighGodName]과 창조 간의 관계를 탐구하는 내 평생의 역작이오.\n\n나는 나를 [GetGeographicalRegion('custom_ireland').GetName] 출신의 교양 없는 속물이라고 비난하는 지적인 경쟁자들이 이 저작을 이단이라고 외치며, 내 주장이 [Glossary( 'pantheism', 'PANTHEISM_GLOSS' )]에 너무 가깝다고 주장할 것이라 확신하오.\n\n하지만 그 경쟁자들조차도 나 같은 '야만인'이 [greek.GetLanguage.GetName]과 신학적 문제에 대해 해박한 지식을 가지고 있으며, [GetGeographicalRegion('world_europe_west_francia').GetName]에서 나의 경력을 도왔던 위대한 [charles.GetTitledFirstName]의 후원을 반복적으로 받았다는 것을 인정하오. 그들은 나의 신학적 입장에 동의하지 않을 수 있지만, 내가 적어도 그들의 지적 동등자라는 사실은 부인할 수 없을 것이오." # 16521251244692075949
+  mayo.0012.a: "그리고 이 모든 것을 내가 평신도로서 해냈소!" # 14674140659658060686
+  mayo.0012.b: "[GetGeographicalRegion('custom_ireland').GetNameNoTooltip]에서 수도사로 훈련받은 것이 보람이 있었소." # 7171020620010650936
+  mayo.0012.info: "#emphasis 역사적 배경:#! 요하네스 스코투스 에리우게나는 9세기 최고의 기독교 사상가 중 한 명으로 여겨지는 아일랜드 신학자로, 카롤루스 대제의 르네상스 시기 궁정 학교의 수장으로도 봉사했습니다. 그는 자신의 역작인 [Glossary( 'Periphyseon', 'PERIPHYSEON_GLOSS' )]의 집필을 866년에 마쳤습니다. 그의 높은 교육 수준(그리스어와 같은 여러 언어 지식 포함)으로 인해 그가 성직자나 수도사였을 가능성이 더 높았지만, 그가 평신도였는지 성직자였는지는 단정하기 어렵습니다. 비록 그가 나중에 알프레드 대왕의 초청으로 잉글랜드로 건너가 제자들에게 스타일러스로 찔려 죽었다는 위작 이야기가 있지만, 그는 말년에 프랑스에 머물렀을 가능성이 더 큽니다." # 15074378013074979849
+  mayo.0013.t: "조교" # 9458052525165679421
+  mayo.0013.desc: "[Glossary( 'Periphyseon', 'PERIPHYSEON_GLOSS' )]를 집필하는 데 나의 소중한 제자 [nisifortinus.GetFirstName]가 큰 도움을 주었소. 비록 [nisifortinus.GetSheHe]가 나의 가장 신랄한 비판과 공격적인 주장의 일부를 완화해야 했지만 말이오. [nisifortinus.GetSheHe]가 얼마나 자주 [Glossary( 'nisi forte', 'NISI_FORTE_GLOSS' )]를 다시 써넣으며 개입했는지!\n\n그럼에도 불구하고, [nisifortinus.GetFirstNameNoTooltip]가 내 저작을 덜 논란이 되게 하기 위해 필요하다고 믿었던 이러한 개입에도 불구하고, 나는 [nisifortinus.GetHerHis]의 노고에 감사하오. 이제 인생의 여정을 계속하고 다음에 어디로 가서 무엇을 할지 결정하면서, 우리가 이 파트너십을 계속해야 할지 궁금하오." # 12594186681654217342
+  mayo.0013.a: "우리의 길은 이제 갈라지지만, 언젠가 다시 만날지도 모르지." # 22001255382274638
+  mayo.0013.b: "[ROOT.Char.GetFaith.HighGodName]께서 우리가 한 가지 이유로 함께 일하도록 이끄셨소." # 7349759211660541177
+  mayo.0013.info: "#emphasis 역사적 배경:#! 요하네스 스코투스 에리우게나는 그의 역작인 [Glossary( 'Periphyseon', 'PERIPHYSEON_GLOSS' )] 등을 집필하는 데 도움을 준 조교이자 제자가 있었습니다. 그 제자의 이름은 역사 속에서 사라졌지만, 현대 학자들은 그가 말을 완화하고 좀 더 재치 있고 덜 논란이 되도록 만들 때마다 [Glossary( 'nisi forte', 'NISI_FORTE_GLOSS' )]를 썼던 습관 때문에 그에게 #italic 니시포르티누스#!라는 별명을 붙였습니다." # 14399234236769671791
+  mayo.0014.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
+  mayo.0014.desc: "한때는 지금의 제 위치가 탐탁지 않았을지도 모릅니다. 하지만 $k_england$의 [GetTitleByKey('k_england').GetNameNoTier]에 신하로서 충성을 맹세하는 것이 장점만 있는 것은 아닙니다.\n\n저는 더 이상 명백하게 독립적인 $k_ireland$의 고왕은 아니지만, 이 섬이 서로 사소한 땅 조각과 몇 안 되는 가축을 두고 치열하게 다투던 하찮은 [irish.GetName] 족장들과 왕들의 약탈로 황폐해졌을 때보다 섬에 대한 더 많은 권위를 휘두르고 있습니다.\n\n[norman.GetCollectiveNoun]은 재앙이지만, 저는 그 재앙을 교활하게 이용하여 이 섬에 질서와 번영의 일말을 회복했습니다. 그들과의 관계조차도 꽤나 모호하며, 언젠가 저나 제 후손들이 그들과 다시 싸워야 할 날이 올 수도 있겠지만, 지금으로서는 평화가 있을 것입니다." # 17896763685778962761
+  mayo.0014.a: "제 삶이 곧 끝날 것 같습니다…." # 2150317433481490776
+  mayo.0015.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
+  mayo.0015.desc: "수십 년은 고통과 눈물로 점철되었으며, 나는 [GetTitleByKey('k_ireland').GetNameNoTier]의 #bold 고왕# 자리를 되찾기 위해 고군분투했다. 심지어 배신적인 [norman.GetCollectiveNoun]조차도 지역 [irish.GetName]의 다툼에 개입하려 했으며, 그들은 배신과 무자비함을 통해 영향력을 확산시키려 했다.\n\n하지만 세월이 흘렀고, 우리는 군사적, 외교적 수단을 통해 나를 고왕으로 하는 새로운 [GetTitleByKey('k_ireland').GetNameNoTierNoTooltip]를 세웠다. 분쟁과 무질서의 세월 이후 힘을 재건하고 요새화하는 데는 시간이 걸릴 것이며, 우리는 섬 건너편 이웃들을 항상 경계해야 한다. 그들은 윈저 조약을 파기했을 때 나를 배신했으며, 기회만 된다면 또다시 배신할 것이라 의심치 않는다.\n\n하지만 지금은, 오랫동안 분열되어 있던 통일된 [GetTitleByKey('k_ireland').GetNameNoTierNoTooltip]의 첫 번째 무혈의 #bold 고왕#으로서 잠시나마 쉴 수 있겠구나." # 10905835704314919384
+  mayo.0015.a: "$mayo.0014.a$" # 10447615665692955161
+  mayo.0016.t: "고왕의 귀환" # 9921594219182606473
+  mayo.0016.desc: "비록 [rory_o_connor.GetFirstName] 께서는 수십 년 동안 [GetTitleByKey('k_ireland').GetNameNoTier]의 “#bold 고왕#” 칭호를 주장해 오셨지만, 그저 주장만 했을 뿐 실제로 그분의 권위를 행사하신 것은 최근 들어서야 가능해졌습니다. 기만적인 [norman.GetCollectiveNoun] 족의 수명이 짧았던 침공과, [rory_o_connor.GetFirstNameNoTooltip] 께서 처음에 그들과 맺었던 윈저 조약을 그들이 배신하고 파기한 사건이 진정한 고왕이 되기 위한 [rory_o_connor.GetHerHis] 여정의 촉매제가 된 듯합니다.\n\n[rory_o_connor.GetFirstNameNoTooltip] 께서는 이제 [GetTitleByKey('k_ireland').GetNameNoTierNoTooltip]에서 가장 강력한 영주로 우뚝 섰습니다." # 16976387767441363931
+  mayo.0016.desc.irish: "일부 사람들은 내가 $k_ireland$의 [GetTitleByKey('k_ireland').GetNameNoTierNoTooltip]의 통치자로서 [rory_o_connor.GetHerHim]에게 신하의 예를 표하거나 적어도 조공을 바쳐야 한다고 믿습니다. 하지만 다른 이들은 [rory_o_connor.GetFirstNamePossessive]의 기만적인 무력 과시에 위축될 필요가 없다고 말합니다. 왜냐하면 [rory_o_connor.GetHerHis]의 권세는 오래가지 못할 수도 있고, 저 늙은 [rory_o_connor.GetWomanMan]이 죽으면 고왕국이 와해될 수도 있기 때문입니다." # 186087432626436154
+  mayo.0016.a: "이 상황이 얼마나 오래갈지 두고 보지." # 12540942274355641573
+  mayo.0016.b: "나는 이 건방진 놈에게 결코 충성을 맹세하지 않을 것이다!" # 4497970019094109292
+  mayo.0016.c: "우리는 소와 버터 같은 공물을 조심스럽게 바칠 것이다." # 10518340909134014330
+  mayo.0016.d: "선택의 여지가 있나? 나는 충성을 맹세하겠다." # 14797265646077264674
+  mayo.0017.t: "xxxxx" # 1951045980481827005
+  mayo.0017.desc: "xxxxx" # 1951045980481827005
+  mayo.0017.a: "xxxxx" # 1951045980481827005
+  mayo.0018.t: "xxxxx" # 1951045980481827005
+  mayo.0018.desc: "xxxxx" # 1951045980481827005
+  mayo.0018.a: "xxxxx" # 1951045980481827005
+  mayo.0019.t: "xxxxx" # 1951045980481827005
+  mayo.0019.desc: "xxxxx" # 1951045980481827005
+  mayo.0019.a: "xxxxx" # 1951045980481827005
+  mayo.0020.t: "성스러운 샘을 축성하며" # 9180516932562439453
+  mayo.0020.desc: "기억이 닿는 한, 신성한 샘과 성수는 [ROOT.Char.GetCulture.GetName] 사람들의 설화와 일상생활에서 중요한 역할을 해왔습니다.\n\n저의 지휘 아래, [ROOT.Char.GetFaith.GetAdjective] [ROOT.Char.Custom('DefaultPriestTitlePlural')]들이 [county.GetNameNoTier]에서 지역적으로 숭배받는 성스러운 샘을 발견했는데, 이 샘은 숭배와 기도의 장소로서 더 많은 인정을 받을 자격이 있습니다. 우리가 이 성스러운 샘을 축성하기 위한 여러 의식을 거행한 후, 그곳의 영적 및 치유적 특성에 대한 소문이 지역에 빠르게 퍼지고 있습니다.\n\n이 성스러운 샘이 앞으로 수년간 지역 [ROOT.Char.GetFaith.GetAdjective] 종교 활동의 중요한 초점이 될 것이라는 점에는 의심의 여지가 없습니다." # 1128643386841831578
+  mayo.0020.a: "기쁜 소식이군!" # 2285397353523959189
+  mayo.0020.tooltip: "$RICE_consecrate_holy_well_effect_tooltip_3$" # 6667963458681588657
+  mayo.0021.t: "성스러운 샘 방문" # 16134636294484092417
+  mayo.0021.desc: "기억이 닿는 한, 신성한 샘과 성수는 [ROOT.Char.GetCulture.GetName] 사람들의 설화와 일상생활에서 중요한 역할을 해왔습니다. 많은 사람이 종교적인 이유로 땅에 흩어져 있는 이 샘이나 작은 물웅덩이를 찾습니다. 저도 마찬가지로, 저는 [county.GetNameNoTier]에 있는 지역적으로 명성이 높은 성스러운 샘을 방문하기로 결정했습니다.\n\n현장에 도착하니, 비록 규모는 작지만 고요하고 겸허해지는 기분이 듭니다. 저는 오랫동안 느끼지 못했던 영적, 육체적 평화를 느낍니다. 저는 [ROOT.Char.GetFaith.PantheonTerm]께 [ROOT.Char.GetFaith.GetAdjective] 방식으로 기도하고 떠나기 전에 헌금을 남깁니다." # 3121193954454149928
+  mayo.0021.a: "전반적으로 훌륭한 경험이었다." # 9587808954024855152
+  mayo.0021.toast: "성스러운 샘의 물이 당신에게 축복을 내리기를" # 9916947762810761958
+  mayo.0022.t: "성스러운 샘" # 8021000777811039461
+  mayo.0022.desc: "[ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]의 성스러운 샘들은 최근 그 영적인 힘으로 명성을 얻었습니다. 저조차도, [ROOT.Char.GetTitleAsNameNoTooltip]인 저조차도 그 힘의 혜택을 받을 수 있습니다. 다른 많은 이들처럼, 저도 [ROOT.Char.GetFaith.PantheonTerm]께 축복을 구하기 위해 그곳으로 순례할 것입니다." # 18247011210615826164
+  mayo.0022.a: "자, 이제 성스러운 샘으로!" # 740397689180217655
+  mayo.0023.t: "한때 [old_culture.GetNameNoTooltip]이었으나, 이제 [gaelic_culture.GetNameNoTooltip]" # 5477376666015427743
+  mayo.0023.desc: "우리는 오랫동안 [gaelic_culture.GetCollectiveNoun]들 사이에서 살아왔으며, 시간이 흐르면서 그들의 음식이나 옷과 같은 피상적인 모습뿐만 아니라 그들의 언어와 사고방식까지 받아들였습니다. 심지어 동족인 [old_culture.GetCollectiveNoun]들 중 다수는 [gaelic_culture.GetNameNoTooltip] 씨족과 혼인 관계를 맺기도 했습니다.\n\n심지어 [gaelic_culture.GetCollectiveNounNoTooltip]들조차도 가끔 내가 [gaelic_culture.GetCollectiveNounNoTooltip]들보다 더 [gaelic_culture.GetNameNoTooltip]다워졌다고 말하곤 합니다! 이는 내가 이 땅과 그 백성들을 혈육처럼 여기게 되었기에 자랑스럽게 생각하는 칭찬입니다." # 11966111963335370830
+  mayo.0023.a: "나는 영원히 [gaelic_culture.GetNameNoTooltip]이다!" # 16697333333658793860
+  mayo.0024.t: "xxxxx" # 1951045980481827005
+  mayo.0024.desc: "xxxxx" # 1951045980481827005
+  mayo.0024.a: "xxxxx" # 1951045980481827005
+  mayo.0025.t: "xxxxx" # 1951045980481827005
+  mayo.0025.desc: "xxxxx" # 1951045980481827005
+  mayo.0025.a: "xxxxx" # 1951045980481827005
+  mayo.0026.t: "xxxxx" # 1951045980481827005
+  mayo.0026.desc: "xxxxx" # 1951045980481827005
+  mayo.0026.a: "xxxxx" # 1951045980481827005
+  mayo.0027.t: "xxxxx" # 1951045980481827005
+  mayo.0027.desc: "xxxxx" # 1951045980481827005
+  mayo.0027.a: "xxxxx" # 1951045980481827005
+  mayo.0028.t: "xxxxx" # 1951045980481827005
+  mayo.0028.desc: "xxxxx" # 1951045980481827005
+  mayo.0028.a: "xxxxx" # 1951045980481827005
+  mayo.0029.t: "xxxxx" # 1951045980481827005
+  mayo.0029.desc: "xxxxx" # 1951045980481827005
+  mayo.0029.a: "xxxxx\" " # 15308465615999842627
+  mayo.0030.t: "산으로" # 363996708916726920
+  mayo.0030.desc: "[GetGeographicalRegion('custom_ireland').GetName]은 많은 성지가 있는 섬이지만, 가장 인기 있는 곳 중 하나는 성 패트릭이 정상에서 40일 동안 단식했던 산인 크로아 파트릭입니다.\n\n순례자들은 그들이 직면하는 위험에도 불구하고 수세기 동안 맨발로 산을 오르기도 했습니다. 오늘, 저도 그곳으로 여정을 시작합니다." # 12743098895988016997
+  mayo.0030.a: "성 패트릭께서 저를 보호해 주시기를!" # 2995543123805517940
+  mayo.0031.t: "산맥의 기슭" # 13535441135132487717
+  mayo.0031.desc: "[ROOT.Char.GetFaith.HighGodName]께 찬미를!\n\n나 이전의 많은 이들처럼, 나 역시 마침내 위대한 크로아 패트릭의 기슭에 도달했소. 성 패트릭께서 시나이 산에서 모세처럼 이곳 정상에서 사십 일 동안 금식하셨던 곳이지.\n\n오늘 밤은 이곳 아래에서 쉬겠지만, 내일이면 험난한 산행을 시작할 것이오. 전통적으로 많은 순례자들이 자신의 강인함과 열심을 시험하고 죄를 속죄하는 행위로 맨발로 산을 올랐다고 하오." # 2499101148803984084
+  mayo.0031.a: "맨발로 산을 오르겠습니다." # 10144378303287578648
+  mayo.0031.b: "발이 피곤하여 맨발로는 걸을 수 없소." # 13749454579727029188
+  mayo.0032.t: "고된 오르막길" # 4788070611201259178
+  mayo.0032.desc.intro: "내 발은 몇 시간이나 되는 듯한 크로아 패트릭의 바위투성이 오르막을 오르느라 지쳤다. 하지만 나만 그런 것은 아니다. 내 주위의 수많은 순례자들도 똑같이 오르고 있다." # 2219635626916263946
+  mayo.0032.desc.injury_you: "아아, 올라가는 길에 부상을 입었소. 다행히 심각한 정도는 아니지만, 험준한 산을 오를 때 감수해야 할 위험이 이런 것이겠지. 이제는 고통스러울지라도 다른 이들의 도움을 받아 나아가야 하겠소." # 7337660702300143565
+  mayo.0032.desc.injury_other: "아, 오르는 도중 [injured_person.GetTitledFirstName]께서 [injured_person.GetHerselfHimself]를 다치셨습니다. 다행히 심각하지는 않지만, 험준한 산을 오를 때 감수해야 할 위험이 바로 이런 고통이지요. 이제 [injured_person.GetSheHe|U]는 고통스러울지라도 다른 이들의 도움을 받아 계속 나아가야 할 것입니다." # 12071841869324067367
+  mayo.0032.desc: "그럼에도 불구하고, 올라가는 길에 우리는 [Glossary( '성 패트릭의 의자', 'SAINT_PATRICKS_CHAIR_GLOSS' )]와 같은 수많은 고대의 돌과 돌무덤을 지나치는데, 일부에는 우리보다 먼저 이곳에 왔던 이들이 새긴 조각들이 남아있습니다. 나는 그중 한 돌 옆에 멈춰 휴식을 취하며 성 패트릭께 기도를 올립니다." # 2967054594038036120
+  mayo.0032.a: "계속 가자! 조금만 더 하면 돼!" # 566680328399186665
+  mayo.0033.t: "정상회담" # 11741898939309316035
+  mayo.0033.desc: "우리의 발은 쉴 틈 없이 고통스러웠으나, 마침내 크로아 패트릭 산 정상에 도착하니 안도감이 밀려온다. 성 패트릭을 기리기 위해 세워진 소박한 예배당을 보니 마음이 놓인다.\n\n예배당에서 우리는 우리의 죄를 용서해 주시기를 기도하며, [ROOT.Char.GetFaith.HighGodName]와 창조의 영광에 대해 묵상한다. 또한, 성 패트릭께서 시나이 산의 모세처럼 산 정상에서 사십 일간 단식하며 [GetGeographicalRegion('custom_ireland').GetName]의 모든 악마와 뱀을 추방했다는 이야기도 되새긴다. 그가 단식을 마쳤을 때, [ROOT.Char.GetFaith.HighGodName]께서 그에게 [GetGeographicalRegion('custom_ireland').GetNameNoTooltip]의 모든 백성을 최후의 심판에서 심판할 권리를 주셨다고 전해진다." # 14376287005420447356
+  mayo.0033.a: "우리는 이곳에서 밤을 지새우며 기도할 것입니다." # 15120131959200109082
+  mayo.0034.t: "화염의 무도회" # 9570893818286374885
+  mayo.0034.desc: "저녁이 깊어지자, 칠흑 같은 하늘 저편에서 천둥이 울려 퍼졌고 바람이 거세졌습니다. 이 위험한 산에서는 이런 날씨가 드물지 않으며, 성 파트리치오께서 이곳에서 40일간 단식하실 때도 이런 위험에 맞서셨습니다. [ROOT.Char.GetFaith.HighGodNameAlternate]를 믿으며, 저희는 밤샘 단식과 철야를 계속했습니다.\n\n그때, 세상의 모든 소리보다 더 크게, 마치 지옥 자체가 우리에게 내려온 듯한 굉음이 들렸습니다.\n\n우리 중 누구도 반응할 새도 없이, 불덩이가 우리에게 곤두박질쳤습니다. 번개가 그 역할을 하는 동안, 비명과 절규가 뒤섞인 대혼란이 벌어졌습니다. 순식간에 몇몇 순례자들이 쓰러져 죽었습니다." # 2537911721482870607
+  mayo.0034.a: "[ROOT.Char.GetFaith.HighGodName]께서 우리를 지켜주시길! [ROOT.Char.GetFaith.HighGodName]께서 우리를 보호해주시길!" # 15932956688813726002
+  mayo.0034.info: "#emphasis 역사적 배경:#! 크로 패트릭 산은 지리적 위치 때문에 위험한 날씨에 노출되기 쉬운 지역에 자리 잡고 있습니다. 수 세기 동안 이 산을 찾은 순례자들은 그러한 날씨와 저체온증으로 인해 부상을 입거나 심지어 사망하기도 했습니다. 1113년에 있었던 주목할 만한 중세 사례가 있는데, #italic 얼스터 연대기#!에 따르면 성 패트릭 축일(3월 17일)에 산 정상에 모였던 순례자 서른 명이 밤에 번개를 맞아 사망했다고 합니다." # 13071239317459490116
+  mayo.0035.t: "경사면을 따라 내려가기" # 10789429252368797369
+  mayo.0035.desc: "산 아래로 내려오는 여정은 올라갈 때보다 수월하게 느껴졌다. 크로아 파트릭 성지 순례의 고난은 심약한 자들을 위한 것이 아니지만, 태고에 성 패트릭께서 정상에 오르셨을 때 인내하셨으니, 우리가 할 수 있는 최소한의 일은 그분의 모범을 따르려 노력하는 것이다.\n\n우리는 변화된 모습으로 산기슭으로 돌아온다." # 15855110256104908138
+  mayo.0035.a: "성 패트릭이 말했듯이: [Glossary( '그리스도와 함께', '그리스도 앞에', 'SAINT_PATRICKS_BREASTPLATE_GLOSS' )]." # 10424219129833328625
+  mayo.0036.t: "xxxxx" # 1951045980481827005
+  mayo.0036.desc: "xxxxx" # 1951045980481827005
+  mayo.0036.a: "xxxxx" # 1951045980481827005
+  mayo.0037.t: "xxxxx" # 1951045980481827005
+  mayo.0037.desc: "xxxxx" # 1951045980481827005
+  mayo.0037.a: "xxxxx" # 1951045980481827005
+  mayo.0038.t: "xxxxx" # 1951045980481827005
+  mayo.0038.desc: "xxxxx" # 1951045980481827005
+  mayo.0038.a: "xxxxx" # 1951045980481827005
+  mayo.0039.t: "xxxxx" # 1951045980481827005
+  mayo.0039.desc: "xxxxx" # 1951045980481827005
+  mayo.0039.a: "xxxxx" # 1951045980481827005
+  mayo.0040.t: "버터를 묻다" # 8330718582111849950
+  mayo.0040.desc: "나는 내 하인들에게 내 거처 근처의 늪지에 상당한 양의 [bog_butter_short|E]를 보관하도록 명령했다.\n\n시간이 지나면 이 버터는 잘 보존될 뿐만 아니라, 독특한 맛을 지닌 맛있는 무언가로 변모할 것이다." # 14784005996534842718
+  mayo.0040.a: "기다릴 수가 없군!" # 12382765414218653345
+  mayo.0041.t: "버터 수거하기" # 7519664244621079475
+  mayo.0041.desc: "얼마 전, 나는 하인들에게 근처 늪지 중 한 곳에 [bog_butter_short|E]를 묻으라고 명령했다. 충분한 시간이 지났으니, 이 늪지 버터는 잘 숙성되었을 것이다.\n\n그래서 나는 하인들에게 우리가 묻어둔 버터를 가져오라고 명령한다. 이제 연회에서든 나 개인적인 소비를 위해서든 즐길 때이다." # 3007172780657962541
+  mayo.0041.a: "음... 늪지 버터!" # 4143618900269762066
+  mayo.0042.t: "버터의 군주" # 17678986603386541983
+  mayo.0042.desc: "나의 [bog_butter_short|E]에 대한 사랑은 이 땅 전체에 잘 알려져 있다. 이 때문에 몇몇 사람들이 나를 그 결과 #V '$RICE_nick_butterlord|U$'#라고 부르기 시작한 것 같다.\n\n그 별명이 가장 듣기 좋은 것은 아니지만, 그것이 모욕을 주려는 의도는 아니며, 내가 수년간 버터를 얼마나 많이 사용하고 소비했는지에 대한 익살스러운 증명에 가깝다." # 1238519754574379352
+  mayo.0042.a: "재미있는 별명이군. 마음에 들어!" # 11738682307195571312
+  mayo.0042.b: "쳇! 전혀 나에게 어울리지 않아!" # 3988326108350613142
+  mayo.0042.b.tooltip: "이 [nickname|E]를 받을 기회는 이후로는 없을 것이다." # 11234521952333061427
+  mayo.0043.t: "버터 선물" # 9169691401070034129
+  mayo.0043.desc: "[bog_butter_short|E]는 [actor.GetCulture.GetCollectiveNoun] 사이에서 높이 평가받는데, 그럴 만한 이유가 있다. 가축은 헤아릴 수 없을 정도로 귀중하며, 버터와 같은 그들이 제공하는 산물 역시 그만큼 귀중하다.\n\n나는 [recipient.GetTitledFirstName]에게 선의와 우정의 표시로 [recipient.GetHerHis]의 사회적 지위에 걸맞은 적절한 양의 버터를 선물했다." # 12288207198827927242
+  mayo.0043.a: "버터가 맛있고 즐겁기를 바라오!" # 9811464910944459655
+  mayo.0044.t: "$mayo.0043.t$" # 7461438948770806365
+  mayo.0044.desc: "[bog_butter_short|E]는 [recipient.GetCulture.GetCollectiveNoun] 사이에서 높이 평가받고 있으며, 그럴 만도 합니다. 소는 헤아릴 수 없이 귀중하며, 버터와 같은 그 산물들 역시 마찬가지로 귀하기 때문입니다.\n\n[actor.GetTitledFirstName]께서 저의 사회적 지위에 걸맞은 적절한 양의 버터를 선물로 주셨는데, 이는 호의와 우정의 표시입니다." # 12121281879399374541
+  mayo.0044.a: "맛있고 매우 고마운 선물이로군!" # 17321954526450540581
+  mayo.0045.t: "xxxxx" # 1951045980481827005
+  mayo.0045.desc: "xxxxx" # 1951045980481827005
+  mayo.0045.a: "xxxxx" # 1951045980481827005
+  mayo.0046.t: "xxxxx" # 1951045980481827005
+  mayo.0046.desc: "xxxxx" # 1951045980481827005
+  mayo.0046.a: "xxxxx" # 1951045980481827005
+  mayo.0047.t: "xxxxx" # 1951045980481827005
+  mayo.0047.desc: "xxxxx" # 1951045980481827005
+  mayo.0047.a: "xxxxx" # 1951045980481827005
+  mayo.0048.t: "xxxxx" # 1951045980481827005
+  mayo.0048.desc: "xxxxx" # 1951045980481827005
+  mayo.0048.a: "xxxxx" # 1951045980481827005
+  mayo.0049.t: "xxxxx" # 1951045980481827005
+  mayo.0049.desc: "xxxxx" # 1951045980481827005
+  mayo.0049.a: "xxxxx" # 1951045980481827005
+  mayo.0050.intro: "성 콜만이 668년에 위대한 [GetReligionByKey('christianity_religion').GetAdjective] 마요 학파를 설립한 후, 이 학파는 오랫동안 번성했습니다. 이는 [GetTitleByKey('c_mayo').GetNameNoTier]로 유학 오기 위해 [GetGeographicalRegion('custom_england').GetName]에서 찾아온 열성적인 [anglo_saxon_culture.GetName] 수도사들이 대거 포진했기 때문이었습니다. 비록 여전히 중요한 학문적 중심지이긴 하지만, 최근 이 학파의 명성은 다소 쇠퇴했습니다.\n\n이제, [GetTitleByKey('c_mayo').GetNameNoTierNoTooltip]의 통치자인 [mayo_leader.GetTitledFirstName]의 최근 행보로 인해 이 학파의 역사가 흥미로운 국면을 맞이하게 되었습니다." # 8686670480500051594
+  mayo.0050.t: "마요 학파" # 12192286237698162864
+  mayo.0050.desc: "$mayo.0050.intro$세월이 흐르면서 이 학파는 본래의 [anglo_saxon_culture.GetNameNoTooltip] 정체성을 많이 잃었고, 점차 $heritage_goidelic_name$의 격식을 더 많이 받아들였습니다.\n\n[mayo_leader.GetFirstNameNoTooltip]은 이러한 변화에 저항하는 대신, 마요 학파가 [GetGeographicalRegion('custom_ireland').GetName] 내 다른 [GetReligionByKey('christianity_religion').GetAdjectiveNoTooltip] 기관들과 더욱 긴밀한 관계를 맺도록 장려했습니다. [mayo_leader.GetHerHis|U]의 목표는 마요 학파가 이 섬의 선도적인 기관이 되도록 돕는 것입니다." # 8967583545655800983
+  mayo.0050.a: "이것은 [GetTitleByKey('c_mayo').GetNameNoTierNoTooltip] 역사의 새로운 장이다...." # 8098314302490635579
+  mayo.0051.t: "$mayo.0050.t$" # 6965975144621717601
+  mayo.0051.desc: "$mayo.0050.intro$ [mayo_leader.GetSheHe|U]는 이 학파가 원래 힘의 원천이었던 잉글랜드의 [GetGeographicalRegion('custom_england').GetNameNoTooltip]와의 오래된 관계를 되살려야 한다고 믿는다. 그것은 영국 제도의 여러 부분 간의 관계를 구축하는 핵심 연결고리였다.\n\n따라서 [mayo_leader.GetFirstNameNoTooltip]는 이 학파가 잉글랜드의 [GetGeographicalRegion('custom_england').GetNameNoTooltip]에 있는 다른 종교 기관들과 공식적인 관계를 재확장하는 데 도움을 주었다. [mayo_leader.GetHerHis|U]의 희망은 그렇게 함으로써 학파의 운명을 회복시키고 그 영향력을 다시 한번 확장하는 것이다." # 2100652953112547802
+  mayo.0051.a: "$mayo.0050.a$" # 12458101469435081628
+  mayo.0052.t: "$mayo.0050.t$" # 6965975144621717601
+  mayo.0052.desc: "$mayo.0050.intro$사실, [mayo_leader.GetFirstNamePossessiveNoTooltip]의 행동 덕분에 이 학파는 예전의 영광으로 #italic 결코#! 돌아가지 못할 것이다.\n\n학파의 거주자들에게 여러 가지 죄목을 뒤집어씌운 후, [mayo_leader.GetFirstNameNoTooltip]는 학파에 대한 지지를 철회했다. 그뿐만 아니라, 토지부터 서적과 성물에 이르기까지 학파의 일부 자산이 [mayo_leader.GetHerselfHimself]를 위해 압수되었다. 일부는 이 행위 뒤에 정치적 또는 재정적 이유가 있었는지 의문을 제기한다.\n\n학파는 남아 있지만, 예전의 영광에 가려져 있다." # 10040678367020192648
+  mayo.0052.a: "$mayo.0050.a$" # 12458101469435081628
+  mayo.0053.t: "잉글랜드의 [GetGeographicalRegion('custom_england').GetNameNoTooltip]에서 온 [saxon_monk.Custom('NunMonk')|U]" # 8193834488153551128
+  mayo.0053.desc: "#bold 마요 학파#가 재건된 이래로, [GetReligionByKey('christianity_religion').GetAdjective]의 중요한 중심지인 [GetGeographicalRegion('custom_ireland').GetName]은 [GetGeographicalRegion('custom_england').GetName]과 다시 관계를 맺었습니다. 이는 학파가 처음 두각을 나타내게 했던 바로 그 관계였죠. 그 후 [GetGeographicalRegion('custom_england').GetNameNoTooltip]의 많은 학자들이 에메랄드 섬으로 건너와 [GetTitleByKey('c_mayo').GetNameNoTier]에서 공부하고 있습니다.\n\n이 학자들 중 한 명이 바로 [saxon_monk.GetCulture.GetName] 출신의 [saxon_monk.Custom('NunMonk')]인 [saxon_monk.GetFirstName]입니다. [saxon_monk.GetSheHe|U]는 마요 학파에서 많은 시간을 보내며 그곳에서 인맥을 쌓았지만, 이제 [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier]에 정착하여 종교 문제를 돕고 [saxon_monk.GetHerHis] 인맥을 통해 저를 돕겠다고 제안했습니다." # 9649014611368033402
+  mayo.0053.a: "환영하오! 당신 같은 사람이 필요했소." # 13266687503991842115
+  mayo.0053.b: "[saxon_monk.GetSheHe|U]는 나를 감동시키지 못하는군." # 14488751042129520186
+  mayo.0054.t: "xxxxx" # 1951045980481827005
+  mayo.0054.desc: "xxxxx" # 1951045980481827005
+  mayo.0054.a: "xxxxx" # 1951045980481827005
+  mayo.0055.t: "xxxxx" # 1951045980481827005
+  mayo.0055.desc: "xxxxx" # 1951045980481827005
+  mayo.0055.a: "xxxxx" # 1951045980481827005
+  mayo.0056.t: "xxxxx" # 1951045980481827005
+  mayo.0056.desc: "xxxxx" # 1951045980481827005
+  mayo.0056.a: "xxxxx" # 1951045980481827005
+  mayo.0057.t: "xxxxx" # 1951045980481827005
+  mayo.0057.desc: "xxxxx" # 1951045980481827005
+  mayo.0057.a: "xxxxx" # 1951045980481827005
+  mayo.0058.t: "xxxxx" # 1951045980481827005
+  mayo.0058.desc: "xxxxx" # 1951045980481827005
+  mayo.0058.a: "xxxxx" # 1951045980481827005
+  mayo.0059.t: "xxxxx" # 1951045980481827005
+  mayo.0059.desc: "xxxxx" # 1951045980481827005
+  mayo.0059.a: "xxxxx" # 1951045980481827005
+  mayo.0060.t: "xxxxx" # 1951045980481827005
+  mayo.0060.desc: "xxxxx" # 1951045980481827005
+  mayo.0060.a: "xxxxx" # 1951045980481827005
+  mayo.0061.t: "xxxxx" # 1951045980481827005
+  mayo.0061.desc: "xxxxx" # 1951045980481827005
+  mayo.0061.a: "xxxxx" # 1951045980481827005
+  mayo.0062.t: "xxxxx" # 1951045980481827005
+  mayo.0062.desc: "xxxxx" # 1951045980481827005
+  mayo.0062.a: "xxxxx" # 1951045980481827005
+  mayo.0063.t: "xxxxx" # 1951045980481827005
+  mayo.0063.desc: "xxxxx" # 1951045980481827005
+  mayo.0063.a: "xxxxx" # 1951045980481827005
+  mayo.0064.t: "xxxxx" # 1951045980481827005
+  mayo.0064.desc: "xxxxx" # 1951045980481827005
+  mayo.0064.a: "xxxxx" # 1951045980481827005
+  mayo.0065.t: "xxxxx" # 1951045980481827005
+  mayo.0065.desc: "xxxxx" # 1951045980481827005
+  mayo.0065.a: "xxxxx" # 1951045980481827005
+  mayo.0066.t: "xxxxx" # 1951045980481827005
+  mayo.0066.desc: "xxxxx" # 1951045980481827005
+  mayo.0066.a: "xxxxx" # 1951045980481827005
+  mayo.0067.t: "xxxxx" # 1951045980481827005
+  mayo.0067.desc: "xxxxx" # 1951045980481827005
+  mayo.0067.a: "xxxxx" # 1951045980481827005
+  mayo.0068.t: "xxxxx" # 1951045980481827005
+  mayo.0068.desc: "xxxxx" # 1951045980481827005
+  mayo.0068.a: "xxxxx" # 1951045980481827005
+  mayo.0069.t: "xxxxx" # 1951045980481827005
+  mayo.0069.desc: "xxxxx" # 1951045980481827005
+  mayo.0069.a: "xxxxx" # 1951045980481827005
+  mayo.0070.t: "xxxxx" # 1951045980481827005
+  mayo.0070.desc: "xxxxx" # 1951045980481827005
+  mayo.0070.a: "xxxxx" # 1951045980481827005
+  mayo.0071.t: "xxxxx" # 1951045980481827005
+  mayo.0071.desc: "xxxxx" # 1951045980481827005
+  mayo.0071.a: "xxxxx" # 1951045980481827005
+  mayo.0072.t: "xxxxx" # 1951045980481827005
+  mayo.0072.desc: "xxxxx" # 1951045980481827005
+  mayo.0072.a: "xxxxx" # 1951045980481827005
+  mayo.0073.t: "xxxxx" # 1951045980481827005
+  mayo.0073.desc: "xxxxx" # 1951045980481827005
+  mayo.0073.a: "xxxxx" # 1951045980481827005
+  mayo.0074.t: "xxxxx" # 1951045980481827005
+  mayo.0074.desc: "xxxxx" # 1951045980481827005
+  mayo.0074.a: "xxxxx" # 1951045980481827005
+  mayo.0075.t: "xxxxx" # 1951045980481827005
+  mayo.0075.desc: "xxxxx" # 1951045980481827005
+  mayo.0075.a: "xxxxx" # 1951045980481827005
+  mayo.0076.t: "xxxxx" # 1951045980481827005
+  mayo.0076.desc: "xxxxx" # 1951045980481827005
+  mayo.0076.a: "xxxxx" # 1951045980481827005
+  mayo.0077.t: "xxxxx" # 1951045980481827005
+  mayo.0077.desc: "xxxxx" # 1951045980481827005
+  mayo.0077.a: "xxxxx" # 1951045980481827005
+  mayo.0078.t: "xxxxx" # 1951045980481827005
+  mayo.0078.desc: "xxxxx" # 1951045980481827005
+  mayo.0078.a: "xxxxx" # 1951045980481827005
+  mayo.0079.t: "xxxxx" # 1951045980481827005
+  mayo.0079.desc: "xxxxx" # 1951045980481827005
+  mayo.0079.a: "xxxxx" # 1951045980481827005
+  mayo.0080.t: "성 마크다라 섬" # 17876420491382336483
+  mayo.0080.desc: "[GetTitleByKey('b_galway').GetNameNoTier] 해안에는 전설적인 성 마크다라의 섬이 있습니다. 이곳에서 동명의 성인이 6세기에 작은 교회를 짓고 은둔자로 살았다고 전해집니다. 현지인들은 그를 선원과 어부들의 수호성인으로 공경하며, 때로는 용감하게 바다로 나가 섬으로 작은 순례를 떠나기도 합니다.\n\n[GetTitleByKey('c_connacht').GetNameNoTier]를 다스리는 [ROOT.Char.GetTitleAsNameNoTooltip]인 저는 지역 지도자들로부터 섬의 작은 교회와 순례자들을 돕기 위해 자원을 할애하는 것에 관심이 있는지에 대해 문의를 받았습니다. 비록 이 성인이 지역 밖에서는 거의 알려지지 않았을지라도, 이곳 해안에 사는 선원들 사이에서 저의 이미지를 높이는 데 큰 도움이 될 것입니다." # 5361989446620588163
+  mayo.0080.a: "성 마크다라의 이름으로 기꺼이 돕겠습니다!" # 14718897173860150816
+  mayo.0080.info: "#emphasis 역사적 배경:#! 골웨이 해안에 위치한 성 마크다라 섬은 오랫동안 6세기 지역 성인인 성 마크다라와 관련이 있었습니다. (실제로 성인전 자료에는 거의 언급되지 않아) 지역 밖에서는 거의 알려져 있지 않지만, 그는 오늘날까지도 선원들의 수호성인으로서 그 지역에서 매우 인기가 높습니다. 선원이나 어부들이 섬을 지날 때 돛을 세 번 내리거나 현지인들이 정기적으로 순례를 가는 등 성 마크다라와 관련된 여러 해양 풍습과 영적 관습이 있습니다." # 4921255587567351146
+  mayo.0080.b: "이 일에 자금을 댈 여유가 없습니다." # 4484584319802405844
+  mayo.0081.t: "숲의 영주, 헤이즐" # 17675757913331796259
+  mayo.0081.desc: "[ROOT.Char.GetCulture.GetCollectiveNoun]의 고대 법률에는 우리에게 중요한 자원을 제공한다는 이유로 [Glossary( '숲의 영주', 'LORDS_OF_THE_WOOD_GLOSS' )]로 여겨지는 일곱 그루의 나무가 있습니다.\n\n그중 하나인 헤이즐 나무는 올해 [county.GetNameNoTier]에서 상당히 풍성한 수확을 안겨주었습니다. 심지어 헤이즐넛 작황이 너무 많아서 작은 강 일부가 막힐 정도였다는 보고까지 받았습니다!\n\n고대 법률에 따라, 저는 [ROOT.Char.GetTitleAsNameNoTooltip]로서 이 수확물에서 얻은 헤이즐 가지 일부를 받을 자격이 있으며, 평민들이 수레 한 짐을 보내왔습니다." # 1257057082610456188
+  mayo.0081.a: "이것이 매우 유용할 것이오!" # 14024222595988033859
+  mayo.0081.info: "#emphasis 역사적 배경:#! 중세 아일랜드에서는 일곱 그루의 나무가 너무 중요하여 소위 [Glossary( '숲의 영주', 'LORDS_OF_THE_WOOD_GLOSS' )]로 분류되었고, 그 용도와 관련하여 수많은 법률이 부과되었습니다. 헤이즐 나무는 목재는 다양한 건축에 사용되었고 헤이즐넛은 식량 공급원으로 귀중하게 여겨져 그러한 나무 중 하나였습니다. 중세 아일랜드 법에 따라 영주들은 헤이즐 수확물의 일부를 받을 권리가 있었습니다. 헤이즐 나무는 너무나 중요해서 아일랜드 연대기들은 좋은 견과류 해였을 때를 기록할 정도였습니다. 중요한 1차 사료인 #italic 얼스터 연대기#!는 예를 들어 836년과 1066년에 헤이즐넛 작황이 너무 풍부하여 강을 막았다고 재미있게 기록하고 있습니다." # 13715930570808626073
+  mayo.0082.t: "무단 침입자" # 2230209190028105300
+  mayo.0082.desc: "[trespasser.GetTitledFirstName]가 돈을 건네며 멋쩍은 듯 저를 쳐다봅니다. “저의 [ROOT.Char.GetLadyLord]님, 무단 침입에 대해 사과드립니다만, 제 성미를 이기지 못했습니다.”\n\n우리 모두 [ROOT.Char.GetCulture.GetName]의 법률이 무단 침입에 대한 벌금에 대해 명확하다는 것을 알고 있습니다. 누구든 벌칙 없이 밖에서 문을 열어 안에 사람이 있는지 확인할 수는 있지만, 허락 없이 들어오는 사람은 벌금을 내야 합니다. 특히 집의 문을 열었다면 더욱 그렇습니다.\n\n[trespasser.GetFirstNameNoTooltip]는 불법적인 일을 하려던 것은 아니었겠지만, 며칠 전 저와 중요한 용무로 이야기하기 위해 들어오려던 것이 너무 조급하고 불안했던 모양입니다. [trespasser.GetSheHe]는 제가 하인들을 시켜 [trespasser.GetHerHim]를 들여보내기를 기다리지 않고 그렇게 했습니다." # 10400696955878524052
+  mayo.0082.a: "좋소. 변상금은 받겠소." # 15191052119674564523
+  mayo.0082.b: "돈은 가지되, 다음에는 교훈을 얻으시오." # 17593448424635496034
+  mayo.0082.info: "#emphasis 역사적 배경:#! 이 사건은 8세기 법률 텍스트인 #italic 크리스 가블라크#!('갈라진 구매'라는 뜻)에서 논의된 초기 중세 아일랜드의 무단 침입 관련 법률에 기반하고 있습니다. 이 텍스트는 지위와 중세 아일랜드의 다양한 사회 계층 간의 차이점에 초점을 맞추고 있습니다. 당시 아일랜드는 고도로 계층화된 사회였으며, 피해자와 가해자의 지위에 따라 법적 처벌이 크게 달라질 수 있었습니다." # 11161993927378707914
+  mayo.0083.t: "천한 빗살깎이 장인들" # 1457791218283036479
+  mayo.0083.desc: "“[arrogant.GetTitledFirstName]가 콧방귀를 뀌며 말합니다. ‘빗살깎이 장인들(Combmakers)이라니. 며칠 전에 한 명을 보았는데, 정말 역겹더군요? 그들은 개나 똥더미와 같아서, 그들이 재료를 얻는 곳이 그렇죠.’\n\n저는 단지 [arrogant.GetFirstNameNoTooltip]에게 며칠 전 시내에 다녀온 일에 대해 물었을 뿐인데, [arrogant.GetSheHe]가 보고 싶지 않은 천한 장인들을 보았고 그 일로 꽤나 불쾌해하는 것 같습니다." # 14655370777036605238
+  mayo.0083.a: "그들은 신분이 낮지만, 너무 심하게 조롱해서는 안 되오." # 17806134436426326544
+  mayo.0083.b: "그 빗살깎이 장인들은 참으로 역겨운 사람들이지, 나도 동의하오!" # 15266675449967431765
+  mayo.0083.info: "#emphasis 역사적 배경:#! 중세 아일랜드는 고도로 계층화된 사회였으며, 사람들은 자신의 지위와 직업에 따라 다양한 특권과 지위를 부여받았습니다. 목수, 구리 세공인, 대장장이와 같은 특정 장인들은 높은 지위로 여겨졌으며 때로는 낮은 계급 귀족과 비슷한 명예 가격을 가지기도 했습니다. 반면에 빗살깎이 장인과 같은 다른 장인들은 낮은 사회적 지위로 간주되었습니다. 예를 들어, 법률 텍스트에서는 빗살깎이 장인들을 그들이 원재료를 얻는 개나 똥더미와 연관지었습니다." # 5105045599465455397
+  mayo.0084.t: "희귀한 아일랜드 소나무" # 2603209739305852016
+  mayo.0084.desc: "놀라운 발견이었습니다. [county.GetNameNoTier]의 먼 숲속에 숨겨진 큰 소나무 숲이었죠.\n\n저의 [councilor.GetCouncilTitle]인 [councilor.GetTitledFirstName]는 이 희귀한 나무들을 수지 생산이나 건축에 사용할 수 있다고 말합니다. 어쨌든 그들은 [ROOT.Char.GetCulture.GetCollectiveNoun]의 [Glossary( '숲의 영주', 'LORDS_OF_THE_WOOD_GLOSS' )] 중 하나로 여겨지니, 소나무를 발견하는 것 자체가 기적과도 같습니다." # 15496323035444248211
+  mayo.0084.a: "그 소나무들은 매우 유용할 것이오!" # 2579276982884601675
+  mayo.0084.b: "그럴 가치가 없다고 생각하오." # 17479641005779795776
+  mayo.0084.info: "#emphasis 역사적 배경:#! 역사적으로 소나무(#italic Pinus Sylvestris#!), 즉 잣나무의 일종은 아일랜드에서 발견되었으나 중세 시대 동안 개체 수가 크게 줄어들어 멸종에 이르렀습니다. 이 나무는 18세기에 이르러서야 섬에 재도입되었습니다. 그럼에도 불구하고 목재와 송진 때문에 [Glossary( '삼림의 지배자', 'LORDS_OF_THE_WOOD_GLOSS' )] 중 하나로서 매우 중요했습니다. 이 나무의 희귀성은 소나무로 식당을 지으려 했던 한 수도원에 얽힌 중세 전설에 잘 반영되어 있습니다. 그들은 며칠 동안 숲을 샅샅이 뒤졌음에도 소나무의 흔적을 전혀 찾지 못했고, 8세기 전설적인 아일랜드의 수녀원장이자 아바스였던 성 삼탄(Saint Samthann)의 기적적인 개입을 통해서야 비로소 소나무를 찾을 수 있었다고 합니다." # 2000505754665025906
+  mayo.0085.t: "케시 동굴" # 15684814769520358025
+  mayo.0085.desc: "[GetTitleByKey('b_sligo').GetNameNoTier]에 있는 케시 동굴은 그 주변에 얽힌 전설들 덕분에 오랫동안 왕족과 연관되어 왔습니다. 오늘날 저의 음유시인들은 케시 동굴과 관련된 가장 두드러진 전설에 대한 이야기를 들려주고 있습니다.\n\n오래전, 위대한 명예, 관대함, 지혜, 자비심을 지녔던 전설적인 [GetGeographicalRegion('custom_ireland').GetName]의 고왕 코르막 막 아르트(Cormac Mac Airt)에 대한 이야기가 전해집니다. 그의 아버지가 친척과의 전투에서 살해당하고 그 친척이 왕좌를 찬탈하자, 어린 코르막은 암늑대에게 납치되어 케시 동굴에서 길러졌고, 몇 년 후 그는 고왕으로서 마땅한 정당한 상속권을 되찾았습니다." # 2443747573205330422
+  mayo.0085.a: "훌륭한 이야기로군 – 하지만 허구야." # 8617939153277146489
+  mayo.0085.b: "동굴에서 왕족의 기운이 느껴지는 데는 이유가 있지." # 8962449884933241076
+  mayo.0086.t: "수상한 [ROOT.Char.GetCulture.GetNameNoTooltip] 법률가" # 13930191310624886577
+  mayo.0086.desc: "[ROOT.Char.GetCulture.GetName] 법률가가 자신이 조언하는 법적 사건의 세부 사항과 뉘앙스를 설명하며 계속해서 지루하게 떠들어대는 동안, 모든 이들이 그것을 알아차렸습니다. 그의 뺨에 희미하지만 분명하게 보이는 이상한 붉은빛이 나타난 것입니다.\n\n현장에 있던 모든 이들이 이를 보고 흥분하여 속삭였습니다. 설마? 이 법률가가 진실에서 벗어나고 있는 것일까? 뺨의 반점은 그런 일의 명백한 징후입니다.\n\n결국, 모여 있던 신하들 중 누군가가 모두가 생각하고 있던 바를 목소리 높여 지적했습니다. 법률가의 목소리는 순식간에 지루한 단조로움에서 당황한 어조로 바뀌었고, 그는 자신이 오직 진실만을 말하고 있으며 단지 긴장해서 얼굴이 붉어진 것뿐이라고 우리를 안심시켰습니다." # 3361547864938257385
+  mayo.0086.a: "법률가의 말을 믿는다" # 1440780585459251425
+  mayo.0086.b: "거짓말한 법률가를 처벌한다" # 18433763221966875170
+  mayo.0086.c: "법률가의 법률 자문의 결함을 지적한다" # 5698375444924277930
+  mayo.0086.info: "#emphasis 역사적 배경:#! 법률가들은 초기 중세 아일랜드 사회에서 아일랜드 시인들과 비견될 만한 초자연적인 신비감과 존경을 받으며 중요한 역할을 했습니다. 그들의 직무 표장은 토크(torc)였으며, 만약 법률가가 거짓을 말하면 토크가 목을 조여 질식시킬 것이라고 믿어졌습니다. 따라서 8세기 다양한 아일랜드 법률 문헌을 집대성한 #italic 센차스 마르(Senchas Már)#!에는 법률가가 진실에서 벗어날 때 목에 반점이 생긴다고 언급되어 있습니다." # 1270380198726233546
+  mayo.0087.t: "[ROOT.Char.GetCulture.GetNameNoTooltip] 문화의 세 가지 바위" # 1618232352808073719
+  mayo.0087.desc: "나는 [ROOT.Char.GetCulture.GetName] 법의 기초이자 올바른 행동의 근간은 종교, 군주, 그리고 가문이라는 '세 가지 바위'라고 들었소. 이들의 영향력은 우리의 삶에 스며들어 우리를 인도하지. 하지만 나는 궁금하오… 적어도 법적인 문제에 있어서 가장 중요한 것은 무엇일까?" # 7621231392766140536
+  mayo.0087.a: "[ROOT.Char.GetFaith.HighGodName] 없는 법이 무슨 소용인가?" # 4138706843099151049
+  mayo.0087.b: "정의를 실현하는 열쇠는 통치자에게 있다." # 13392406611674424836
+  mayo.0087.c: "우리는 혈족을 통해 올바른 행동을 배우고 실천한다." # 12919857389948005164
+  mayo.0087.info: "#emphasis 역사적 배경:#! 이 이벤트는 8세기에 법, 예절, 지리 등 다양한 주제를 다루는 문헌 모음인 #italic 아일랜드의 삼중주(Triads of Ireland)#!의 발췌문에서 영감을 받았습니다. 그 발췌문에는 '올바른 행동이 묶여 있는 세 가지 바위: 수도원, 군주, 혈족'이라고 명시되어 있습니다. 이 진술은 초기 아일랜드 문화의 이상과 가치, 그리고 법과 올바른 행동이 종교, 왕권, 그리고 자신의 가족과 얼마나 밀접하게 연결되어 있었는지를 반영합니다." # 15792176944180552386
+  mayo.0088.t: "xxxxx" # 1951045980481827005
+  mayo.0088.desc: "xxxxx" # 1951045980481827005
+  mayo.0088.a: "xxxxx" # 1951045980481827005
+  mayo.0089.t: "xxxxx" # 1951045980481827005
+  mayo.0089.desc: "xxxxx" # 1951045980481827005
+  mayo.0089.a: "xxxxx" # 1951045980481827005
+  mayo.0090.t: "xxxxx" # 1951045980481827005
+  mayo.0090.desc: "xxxxx" # 1951045980481827005
+  mayo.0090.a: "xxxxx" # 1951045980481827005
+  mayo.0091.t: "xxxxx" # 1951045980481827005
+  mayo.0091.desc: "xxxxx" # 1951045980481827005
+  mayo.0091.a: "xxxxx" # 1951045980481827005
+  mayo.0092.t: "xxxxx" # 1951045980481827005
+  mayo.0092.desc: "xxxxx" # 1951045980481827005
+  mayo.0092.a: "xxxxx" # 1951045980481827005
+  mayo.0093.t: "xxxxx" # 1951045980481827005
+  mayo.0093.desc: "xxxxx" # 1951045980481827005
+  mayo.0093.a: "xxxxx" # 1951045980481827005
+  mayo.0094.t: "xxxxx" # 1951045980481827005
+  mayo.0094.desc: "xxxxx" # 1951045980481827005
+  mayo.0094.a: "xxxxx" # 1951045980481827005
+  mayo.0095.t: "xxxxx" # 1951045980481827005
+  mayo.0095.desc: "xxxxx" # 1951045980481827005
+  mayo.0095.a: "xxxxx" # 1951045980481827005
+  mayo.0096.t: "xxxxx" # 1951045980481827005
+  mayo.0096.desc: "xxxxx" # 1951045980481827005
+  mayo.0096.a: "xxxxx" # 1951045980481827005
+  mayo.0097.t: "xxxxx" # 1951045980481827005
+  mayo.0097.desc: "xxxxx" # 1951045980481827005
+  mayo.0097.a: "xxxxx" # 1951045980481827005
+  mayo.0098.t: "xxxxx" # 1951045980481827005
+  mayo.0098.desc: "xxxxx" # 1951045980481827005
+  mayo.0098.a: "xxxxx" # 1951045980481827005
+  mayo.0099.t: "xxxxx" # 1951045980481827005
+  mayo.0099.desc: "xxxxx" # 1951045980481827005
+  mayo.0099.a: "xxxxx" # 1951045980481827005

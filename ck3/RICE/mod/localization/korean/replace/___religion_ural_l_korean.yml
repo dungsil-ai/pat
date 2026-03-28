@@ -251,8 +251,8 @@
   erzya_pagan_old: "올드 파존 코이" # 11472616996531677534
   erzya_pagan_old_adj: "올드 파존 코이" # 11472616996531677534
   erzya_pagan_old_adherent: "오래된 파존 코이스트" # 2219001437432866801
-  erzya_pagan_old_adherent_plural: "오래된 파존 코이스트파" # 11833796194059676179
-  erzya_pagan_desc: "에르자족은 두 모르드빈 민족 중 하나입니다. 모르드빈 이교도들은 위대한 영웅 신인 튜슈탸와 같은 다양한 주신과 부신을 믿습니다." # 11497572853879209995
+  erzya_pagan_old_adherent_plural: "구 파존 코이교도" # 17299006586416109906
+  erzya_pagan_desc: "에르자는 모르드바의 두 분파 중 하나입니다. 모르드바 이교도들은 위대한 영웅신 튜슈탸와 같은 여러 주신과 부신들을 믿습니다." # 15896620611821697979
   moksha_pagan: "슈카이즘" # 3643275044336295773
   moksha_pagan_adj: "슈카이스트" # 773192122443335136
   moksha_pagan_adherent: "슈카이스트" # 773192122443335136
@@ -260,10 +260,10 @@
   moksha_pagan_old: "고대 슈카이즘" # 1644653611821977245
   moksha_pagan_old_adj: "고대 슈카이파" # 14756744907206864294
   moksha_pagan_old_adherent: "고대 슈카이파" # 14756744907206864294
-  moksha_pagan_old_adherent_plural: "오래된 슈카이파 신봉자들" # 15818977485786741680
-  moksha_pagan_desc: "목샤족은 두 모르드빈 민족 중 하나입니다. 모르드빈 이교도들은 위대한 영웅 신인 튜슈탸와 같은 여러 주요 및 소규모 신들을 믿습니다." # 10203525843739732347
+  moksha_pagan_old_adherent_plural: "구 슈카이교도" # 7275464310286917466
+  moksha_pagan_desc: "모크샤는 모르드바의 두 분파 중 하나입니다. 모르드바 이교도들은 위대한 영웅신 튜슈탸와 같은 여러 주신과 부신들을 믿습니다." # 5532192749397214234
   mordvin_religious_symbol: "모르드빈" # 7731759956980756931
-  mordvin_religion_desc: "에르자족과 목샤족은 함께 모르드빈족을 이루며, 볼가 강 유역 출신의 핀우그리아어족 화자들입니다. 그들의 종교적 관습은 다른 핀우그리아 민족들과 유사하지만, 그들만의 독특한 측면도 가지고 있습니다." # 17783348780797850763
+  mordvin_religion_desc: "에르자와 모크샤 민족은 통칭 모르드바인으로 불리며, 볼가강 유역의 핀우그리아어파 화자들입니다. 이들의 종교적 관습은 다른 핀우그리아계 민족들과 유사하지만, 그들만의 고유한 특징 또한 지니고 있습니다." # 17735173179715828521
   mordvin_religion: "모르드빈" # 16410895659426604848
   mordvin_religion_adj: "모르드빈" # 16410895659426604848
   mordvin_religion_adherent: "모르드빈" # 16410895659426604848
@@ -361,7 +361,7 @@
   erzya_pagan_house_of_worship_2: "$erzya_pagan_house_of_worship$" # 8521576620163972198
   erzya_pagan_house_of_worship_3: "$erzya_pagan_house_of_worship$" # 8521576620163972198
   erzya_pagan_house_of_worship_plural: "케레메트" # 12282443650047783752
-  erzya_priest_male: "오자티\" #\"기도하는 아버지" # 7210143049789405224
+  erzya_priest_male: "오자탸" # 10260466269016885224
   erzya_priest_male_plural: "오자티아" # 10260466269016885224
   erzya_priest_female: "오지이이" # 16544360826144070429
   erzya_priest_female_plural: "오지이이" # 16544360826144070429
@@ -408,7 +408,7 @@
   moksha_pagan_house_of_worship_2: "$moksha_pagan_house_of_worship$" # 11406975706416688699
   moksha_pagan_house_of_worship_3: "$moksha_pagan_house_of_worship$" # 11406975706416688699
   moksha_pagan_house_of_worship_plural: "리페슈테스" # 3242215406565429188
-  moksha_priest_male: "이냐티\" #\"성직자" # 8432858522666145039
+  moksha_priest_male: "이냐탸" # 16733044337155885511
   moksha_priest_male_plural: "이냐티아스" # 12903264006620173093
   moksha_priest_female: "이냐탸" # 16733044337155885511
   moksha_priest_female_plural: "이냐티아스" # 12903264006620173093
@@ -550,7 +550,7 @@
   samoyedic_group: "사모예드" # 13571579553277648192
   nenets: "네네츠" # 15707267417364288874
   samoyedic_religion: "사모예드" # 13571579553277648192
-  samoyedic_religion_desc: "네네츠 신앙은 애니미즘적이며 샤머니즘적입니다. 그들의 최고신은 세 세계 중 하나를 다스리는 위대한 눔입니다." # 10546526860421090765
+  samoyedic_religion_desc: "네네츠 신앙은 애니미즘과 샤머니즘적 성격을 띱니다. 그들의 최고신은 세 세계 중 하나를 다스리는 위대한 눔입니다." # 13672391113904651272
   samoyedic_religion_adj: "사모예드" # 13571579553277648192
   samoyedic_religion_adherent: "사모예드" # 13571579553277648192
   samoyedic_religion_adherent_plural: "사모예드족" # 2655358623530790383
@@ -602,7 +602,7 @@
   nenets_pagan_water_god_name: "흠" # 18440563783804725040
   nenets_pagan_water_god_name_possessive: "늠스" # 7883860586548861004
   udmurt_religion: "우드무르트" # 10604437488310967182
-  udmurt_religion_desc: "인마르는 하늘의 신으로, 우드무르트의 주요 신들 중 하나입니다." # 6901429552580689328
+  udmurt_religion_desc: "하늘의 신 인마르는 우드무르트의 주요 신 중 하나입니다." # 11455924798561023167
   udmurt_religion_adj: "우드무르트" # 10604437488310967182
   udmurt_religion_adherent: "우드무르트" # 10604437488310967182
   udmurt_religion_adherent_plural: "우드무르트인" # 16582239031958805400

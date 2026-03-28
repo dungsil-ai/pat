@@ -19,7 +19,6 @@
   RICE_greenland_socio_economic_pressures: "사회경제적 압박" # 12037970218084548828
   RICE_greenland_environmental_pressures: "환경적 압력" # 16214610356039689930
   RICE_vinland_viability: "실현 가능성" # 4435025508067654977
-
   RICE_greenland_capacity_resources_title: "[RICE_greenland_struggle|E]에 영향을 미치는 요소를 더 잘 이해하려면 각 아이콘을 살펴보십시오." # 6680730218597399255
   RICE_greenland_concepts_title: "[greenland_settlements|E]와 상호작용하는 방법을 더 잘 이해하려면 각 아이콘을 살펴보십시오." # 1008063907854494860
   RICE_coastal_geographical_req: "최소 하나 이상의 해안 [county|E]를 보유하고 있습니다" # 17992146886501021303
@@ -2214,3 +2213,4 @@
   north_atlantic.0299.t: "xxxxx" # 1951045980481827005
   north_atlantic.0299.desc: "xxxxx" # 1951045980481827005
   north_atlantic.0299.a: "xxxxx" # 1951045980481827005
+

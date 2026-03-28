@@ -10,6 +10,7 @@
   BOOKMARK_RELATION_RICE_NEARBY_RULER: "인근 군주" # 14944135094658572233
   BOOKMARK_RELATION_MENTOR: "(교육자)" # 6620783065704056237
   BOOKMARK_RELATION_RICE_FORMER_WIFE: "(전 배우자)" # 7797942133936912816
+  BOOKMARK_RELATION_PUPIL: "(제자)" # 4824513998772629445
   bm_867_rice_2: "RICE (중동 및 북아프리카)" # 8271990753482678637
   bm_867_rice_2_desc: "중세 세계는 9세기에 형태를 갖추기 시작합니다. 이것은 정체된 '암흑 시대'가 아니라, 위대하고 역동적인 변화의 시기입니다. 전 세계에는 끊임없이 진화하는 민족들과 그 지도자들의 태피스트리가 펼쳐져 있습니다.\n\nRICE 모드는 세계의 민족과 장소에 새로운 풍미를 더하며, 이 북마크는 RICE의 콘텐츠를 최대한 활용할 수 있는 867년의 수많은 잠재적 플레이 중 일부만을 보여줍니다.\n\n#bold 고대 말기는 끝났습니다. 새로운 역사의 시대가 쓰이고 있으며, 당신이 그 기록자가 될 것입니다. 미래의 모습, 세계의 운명—이것들을 당신이 결정하게 될까요?#!" # 6406058107814287775
   bm_867_rice_1: "RICE (유럽)" # 16852226878578761861
@@ -351,3 +352,13 @@
   bookmark_RICE_1066_kong_zongyuan_desc: "공자의 후예라는 사실만으로도 엄청난 영광입니다. 이제 $dynn_Kong_5B54$ $Zongyuan_5B97_613F$ 께서는 더 큰 영광을 얻으셨습니다. 송 황실께서 공자님의 가장 선임 후손 중 한 명으로서 그에게 연성공(Duke Yansheng) 작위를 하사하셨습니다. 이 작위는 거의 천 년 동안, 20세기에 이르기까지 그의 후계자들이 물려받게 될 것입니다.\n\n#bold 이제 공자님의 고귀한 혈통의 선임 후손으로 정식으로 인정받으셨습니다. 이 영광스러운 유산을 어떻게 이어가시겠습니까?#!\n\n#italic RICE 풍미 팩 중점: 항저우, 타림 분지#!" # 16278139656134666432
   bookmark_RICE_1066_kong_zongyuan_alt_kong_ruomeng: "$dynn_Kong_5B54$ $Ruomeng_82E5_8499$" # 8847323161116177558
   bookmark_RICE_1066_kong_zongyuan_alt_kong_ruoxu: "$dynn_Kong_5B54$ $Ruoxu_82E5_865A$" # 4995353395790702129
+  bookmark_RICE_1178_ruaidri: "$RuaidrI_$ Ua $dynn_Conchobair$" # 12717049159355710992
+  bookmark_RICE_1178_ruaidri_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$" # 1849679257833897438
+  bookmark_RICE_1178_ruaidri_desc: "루어드리는 수십 년간 전쟁, 외교, 그리고 모략을 통해 아일랜드의 고왕으로서 자신의 권리를 주장했습니다. 1169년 경쟁 관계였던 아일랜드 통치자들이 그에 대항하기 위해 앵글로노르만인들에게 군사적 지원을 요청했고, 그는 패배하여 고왕의 지위를 포기해야만 했습니다. 그는 역사상 아일랜드의 마지막 논란 없는 고왕이 될 운명이었습니다.\n\n#bold 노르만인이 공격해 왔을 때 모든 것이 바뀌었습니다. 아니, 정말 그랬을까요? 이 강력하면서도 위험한 이방인들은 유용한 친구가 될 수도, 증오스러운 적이 될 수도 있습니다. 아일랜드 역사의 흐름을 바꿀 시간은 아직 충분합니다!#!\n\n#italic RICE 풍미 팩 중점: 메이오, 북대서양, 요크셔#!" # 13214002678903898604
+  bookmark_RICE_1178_ruaidri_alt_henry: "헨리 2세" # 9488187729930905020
+  bookmark_RICE_1178_ruaidri_alt_aoife: "$AI_fe$" # 18349318141144421561
+  bookmark_RICE_1066_constantine_the_african: "콘스탄티누스" # 3045891356226953424
+  bookmark_RICE_1066_constantine_the_african_subheading: "$BOOKMARK_SUBHEADING_ADVENTURER$" # 17036965201935904007
+  bookmark_RICE_1066_constantine_the_african_desc: "북아프리카에서 상인으로서 이탈리아에 도착했을 때, 콘스탄티누스는 살레르노의 훌륭한 의학교에서조차 이탈리아의 의학 지식이 부족하다는 사실에 당혹감을 느꼈습니다. 이미 여러 언어에 능통하고 폭넓은 의학적 전문 지식을 갖추고 있었던 그는 헬레니즘과 이슬람 의학을 가르치는 것을 평생의 사명으로 삼았습니다. 결국 그는 유명한 몬테카시노 수도원에 수도사로 정착하여 자신의 역작인 #italic 리베르 판테그니#!를 완성했습니다.#!\n\n#bold 세속적인 이익을 쫓는 삶을 버리고, 번역가이자 치유사, 그리고 스승으로서의 운명을 완수하십시오!#!\n\n#italic RICE 풍미 팩 중점: 사르데냐, 시칠리아#!" # 13334452500911772779
+  bookmark_RICE_1066_constantine_the_african_alt_johannes: "야히야" # 13763311852986239698
+  bookmark_RICE_1066_constantine_the_african_alt_atto: "아토" # 6882471768751379690

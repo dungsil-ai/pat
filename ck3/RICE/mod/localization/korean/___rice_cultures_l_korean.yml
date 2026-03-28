@@ -60,6 +60,7 @@
   RICE_beothuk_history_loc: "[Glossary( '$beothuk_collective_noun|q$', '베오툭_글로스' )]은 뉴펀들랜드의 토착민입니다" # 7884008788941170547
   RICE_goliad_history_loc: "서기 1천 년경 드니에프르 분지에 살던 $baltic_group$ 부족들에게서 유래했습니다." # 9521306311483779920
   RICE_chagga_history_loc: "$heritage_bantu_name$ 정착민들에게서 형성되었으며, 2천 년기 초에 킬리만자로 산 주변에 위치했습니다." # 14167215181298868203
+  RICE_nabati_history_loc: "고대 남부 메소포타미아 후손들로부터 형성됨" # 2371575973544972213
   tradition_RICE_siberian_survivalists_name: "시베리아 생존주의" # 1550866272953178782
   tradition_RICE_siberian_survivalists_desc: "태고적부터 시베리아의 민족들은 극북의 얼어붙은 땅에서 살아가고, 생존하며, 번성해 왔습니다. 이 지역의 삶과 죽음에 대한 그들의 지식은 그들에게 큰 도움이 됩니다." # 3487573712189664721
   tradition_RICE_swahili_contacts_name: "스와힐리 접촉" # 11593058755973091578
@@ -281,6 +282,14 @@
   culture_parameter_unlock_rice_sea_nomads_travel_option: "$RICE_sea_nomads_option$ [travel_option|E] 불문하고 잠금 해제" # 9391558323630710830
   culture_parameter_unlock_rice_sea_nomads_travel_option_free: "$RICE_sea_nomads_option$ [travel_option|E]은 항상 무료입니다" # 13019358877454468067
   culture_parameter_unlock_rice_sea_nomads_decision: "[decision|E] #bold $RICE_SEA_manage_sea_lanes$# 결정을 활성화합니다!" # 4243287545430196772
+  tradition_RICE_brehon_law_name: "브레혼 법" # 9395991657074841901
+  tradition_RICE_brehon_law_desc: "#F 아일랜드의 고대 법은 구전 전통에서 기원하여 나중에 기록되었으며, 중재자로서 법을 보존하고 해석하는 #italic 브레혼#!에 의해 집행됩니다. 이들은 이 문화 사회의 기초를 형성하는 다양한 씨족을 섬깁니다.#!" # 15227785418601473444
+  RICE_bog_butter_decisions_unlock: "#bold $RICE_mayo_bury_bog_butter$#! [decision|E] 잠금 해제" # 16152780737426724625
+  RICE_butter_interaction_unlock: "#bold $RICE_mayo_retrieve_bog_butter$#! [decision|E] 잠금 해제" # 14347312005226209958
+  RICE_butter_decision_bonus: "#bold $RICE_mayo_retrieve_bog_butter$#! [decision|E]이 추가 [prestige_i|E] [prestige|E]을 제공함" # 9437498684099984891
+  culture_parameter_unlock_rice_butter_interaction: "#bold $RICE_mayo_butter_interaction$#! [interaction|E] 잠금 해제" # 3641915488149132626
+  culture_parameter_unlock_rice_gaelicization_mechanic: "[capital|E] 또는 [domicile|E]이 이 [culture|E]의 [counties|E]에 있는 [rulers|E]는 #bold $RICE_embrace_gaelicization$#! [decision|E]을 내릴 수 있음" # 13978636473084095522
+  culture_parameter_unlock_rice_bog_butter_bonus_prestige: "$RICE_butter_decision_bonus$" # 6386361386936247460
   culture_parameter_unlock_maa_guanche_warrior: "[men_at_arms|E]로 [GetMaA('guanche_warrior').GetName]을 징집할 수 있습니다." # 5577205177325801307
   tradition_guanche_warrior_name: "치치키퀴초" # 15979354436935695300
   tradition_guanche_warrior_desc: "#F 치치키퀴초는 과란체족의 전사 계급을 형성했습니다. 투척과 협곡 매복에 능하며 경장갑이지만 숙련된 교전병입니다. 치치키퀴초는 자신들의 섬의 구릉 및 산악 지형을 목숨 걸고 방어할 것입니다.#!" # 11008193849402200922

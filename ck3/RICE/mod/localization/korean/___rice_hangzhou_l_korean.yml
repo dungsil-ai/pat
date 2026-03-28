@@ -185,6 +185,10 @@
   RICE_hangzhou_legend_qian_liu_tidal_bore_chapter_famous_deed_new_title: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]께서는 밀려드는 파도의 기세에 굴복하지 않고 행동에 나서기로 결심하셨습니다. 음력 8월 18일, 조수간만의 차가 가장 심할 때, [ROOT.Legend.GetProtagonist.GetSheHe]께서는 쇠뇌로 무장한 만 명 이상의 궁수들을 모아 강을 포위했습니다. 파도가 거세게 밀려오자, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]께서는 현지인들이 환호하는 가운데 궁수들에게 강물 속으로 맹렬한 화살 세례를 퍼부으라는 명령을 내리셨습니다. 이 의로운 힘을 과시하는 모습에 위축된 파도는 기적처럼 물러났고, 건설 중이던 둑은 무사했습니다." # 10575773814757780754
   RICE_hangzhou_legend_qian_liu_tidal_bore_chapter_extra_deed_new_title: "xxxxx" # 1951045980481827005
   RICE_hangzhou_legend_qian_liu_tidal_bore_chapter_conclusion_new_title: "xxxxx" # 1951045980481827005
+  RICE_hangzhou_84000_stupas_interaction: "소형 탑 선물하기" # 2222037999837373337
+  RICE_hangzhou_84000_stupas_interaction_desc: "[recipient.GetShortUINamePossessiveNoTooltip]에게 귀하가 제작을 의뢰한 소탑 중 하나를 선물합니다." # 16413968268339368382
+  RICE_hangzhou_84000_stupas_interaction_notification: "모든 중생의 이익을 위해, 얼마 전 84,000개의 소형 탑을 제작하도록 명했습니다. 부디 그중 하나를 선물로 받아주시길 간곡히 청합니다." # 16971108520529317892
+  RICE_hangzhou_84000_stupas_interaction_effect: "[recipient.GetShortUINameNoTooltip](이)가 #V $RICE_hangzhou_84000_miniature_stupa_artifact_name$#! [artifact|E]를 획득합니다" # 492402279379392176
   RICE_hangzhou_ten_scenes_painting_name: "서호십경 그림" # 10057381465407021519
   RICE_hangzhou_ten_scenes_painting_desc: "[ROOT.Char.GetTitledFirstName]께서 그리신 이 아름다운 삽화는 유명한 [RICE_ten_scenes_of_west_lake|E]를 생생하게 묘사하고 있습니다. 이는 십경(十景)의 가장 초기에 알려진 묘사 중 하나로, 서호(西湖)를 찾은 아시아 문인들과 관광객들 사이에서 이 주제가 유행하는 데 역할을 한 것으로 여겨집니다." # 6383924915600147153
   RICE_hangzhou_ten_scenes_scroll_name: "서호십경 안내서" # 16845063087648206607
@@ -206,6 +210,8 @@
   RICE_lu_you_final_poem_desc_kaifeng_reclaimed: "이것은 [lu_you.GetFirstName]께서 돌아가시기 전에 남기신 마지막 시의 사본입니다." # 12478769579405813336
   RICE_lu_you_shen_garden_two_poems_name: "선원(諂謌) 두 편" # 11719055960943342093
   RICE_lu_you_shen_garden_two_poems_desc: "노인이 된 [lu_you.GetFirstName]은 이혼 8년 후, [Glossary( '심원', 'SHEN_GARDEN_GLOSS' )]에서 첫 부인인 [tang_wan.GetFirstName]을 다시 만났던 때를 회상했습니다. 그때 그는 겨우 서른한 살이었고, 그 자리에서 읊었던 [Glossary( '시', 'LU_YOU_PHOENIX_HAIRPIN_GLOSS' )]와 [Glossary( '그녀의 화답', 'TANG_WAN_PHOENIX_HAIRPIN_GLOSS' )]을 떠올렸습니다. 이 기억에서 비롯된 깊은 슬픔은 그에게 두 편의 시를 더 쓰도록 영감을 주었습니다.\n\n$LU_YOU_SHEN_GARDEN_TWO_POEMS_GLOSS$" # 16364765277178921434
+  RICE_hangzhou_84000_miniature_stupa_artifact_name: "미니어처 파고다" # 7145242208593006697
+  RICE_hangzhou_84000_miniature_stupa_artifact_desc: "이것은 위대한 인도 군주 아쇼카를 본받아 [stupa_builder.GetTitledFirstName](이)가 제작하도록 명한 84,000개의 소형 청동 탑 중 하나입니다." # 17386057344768821241
   RICE_hangzhou_aspiration_lu_you_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetTitleByKey('h_china').GetNameNoTier]의 [vassal|E]로 남기\n$EFFECT_LIST_BULLET$자신의 [domicile|E] 외의 다른 [title|E]를 소유하지 않기\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_poet').GetName( GetNullCharacter )] [trait|E]의 [trait_level_track_xp|E]를 #V 100#! 달성하기\n$EFFECT_LIST_BULLET$ [prestige_level|E]이 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상 달성하기\n$EFFECT_LIST_BULLET$ [stress_i|E]가 #V [EmptyScope.ScriptValue('higher_than_baseline_stress')]#! 미만의 [stress|E] 유지하기\n\n#bold 보상#!\n$EFFECT_LIST_BULLET$남은 생애 동안 모든 [appointments|E]를 영구적으로 거부함\n$EFFECT_LIST_BULLET$ @prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [prestige|E] 획득\n$EFFECT_LIST_BULLET$ @gold_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_tiny_resource_bonus')]#! [gold|E] 획득\n$EFFECT_LIST_BULLET$ [GetModifier('RICE_hangzhou_liberated_old_man').GetNameWithTooltip] [modifier|E] 획득\n$EFFECT_LIST_BULLET$ [education_trait|E] 업그레이드\n\n#bold [historical_aspiration_bonus_objectives|E]#!\n$EFFECT_LIST_BULLET$ [friend|E] 또는 [best_friend|E]를 최소 한 명 보유하기 (보상: @influence_icon! #V [EmptyScope.ScriptValue('major_influence_gain')]#! [influence|E] 획득)\n$EFFECT_LIST_BULLET$ [stress_i|E]가 #V [EmptyScope.ScriptValue('low_stress')]#! 미만의 [stress|E] 유지하기 (보상: @piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [piety|E] 획득)" # 147909266630947345
   RICE_hangzhou_historical_aspiration_action_lu_you: "#italic 나는 힘없는 관료들로 가득 찬 현 세대에 염증을 느낀다. 그들은 내가 여진족에 대한 원정을 간절히 주장했음에도 불구하고 송 왕조의 북부 영토를 되찾을 준비를 거부하고 있다. 나는 관직 생활에서 물러나 남은 여생을 평화롭게 보내고 싶다.#!$RICE_hangzhou_aspiration_lu_you_desc$" # 11459730771630177376
   RICE_hangzhou_historical_aspiration_modifier_desc_lu_you: "[GetModifier('RICE_hangzhou_aspiration_retire_into_seclusion').GetNameWithTooltip]" # 3600205599267335355
@@ -383,6 +389,9 @@
   RICE_hangzhou_ten_scenes_enjoyer_desc: "이 교양 있고 글을 읽을 줄 아는 여행자는 [RICE_west_lake|E]의 경이로움과 볼거리에 대한 최고의 전문가 중 한 명으로 여겨집니다. 많은 문인들은 그를 [RICE_ten_scenes_of_west_lake|E]라는 개념을 대중화한 중요한 인물로 보고 있습니다." # 5467171903309188172
   RICE_hangzhou_honored_yue_fei: "악비 사당을 건설했습니다" # 7644279603100208873
   RICE_hangzhou_honored_yue_fei_desc: "이 인물은 그의 무덤 근처에 영웅 악비(Yuè Fēi)를 기리는 사원을 세워, 충성과 용맹과 같은 이 위대한 장군의 미덕을 드높였습니다." # 9987707745361607551
+  RICE_opinion_mini_stupa_gift: "소형 탑 선물" # 14252377748381723152
+  RICE_hangzhou_84000_stupas_modifier: "84,000개의 소형 탑" # 7615591168182317556
+  RICE_hangzhou_84000_stupas_modifier_desc: "이 인물은 위대한 [GetReligionByKey('buddhism_religion').GetAdjective] 군주 아쇼카의 전례를 본받아, 내부에 불교 [Glossary( 'sutras', 'BUDDHIST_SUTRAS_GLOSS' )] 사본을 봉안한 84,000개의 소형 공양탑 제작을 명했습니다.\n\n#Emp 다른 [rulers|E]와 #V $RICE_hangzhou_84000_stupas_interaction$#!을 할 수 있는 특별한 [interaction|E]를 사용할 수 있습니다#!" # 9313123652857684366
   RICE_hangzhou_improve_west_lake: "서호 개발" # 13308211766697488301
   RICE_hangzhou_improve_west_lake_tooltip: "[RICE_west_lake|E] 지역은 그 아름다움을 유지하거나 개선하는 데 많은 노력이 필요합니다." # 8078677509935009331
   RICE_hangzhou_improve_west_lake_desc: "[RICE_west_lake|E]는 오랫동안 [GetTitleByKey('c_hangzhou').GetNameNoTier]의 유명한 명소였으며, 수질과 아름다움을 유지하거나 심지어 개선하기 위해 정기적인 관리가 필요합니다." # 5777064882566310319
@@ -434,6 +443,13 @@
   RICE_hangzhou_ten_scenes_west_lake_decision_effect_tooltip_2: "[activity|E] 유형인 [GetActivityType( 'activity_RICE_hangzhou_sightsee_at_west_lake' ).GetName] 활동이 더 넓은 지리적 범위에서 가능해지며, [activity|E] 참가자들은 영감을 얻을 확률이 더 높아질 것입니다." # 5924436016276162469
   RICE_hangzhou_ten_scenes_west_lake_decision_confirm: "모두가 열 가지 장면을 알게 될 것이다!" # 2862304558220943069
   RICE_hangzhou_ten_scenes_west_lake_decision_context_tooltip: "$RICE_hangzhou_sightsee_at_west_lake_context_tooltip$ 송나라 때부터 문인들은 서호에서 꼭 봐야 할 열 가지 명승지 목록을 만들었는데, 이는 너무나 유명해져 [Glossary( 'Sinosphere', 'SINOSPHERE_GLOSS' )] 내의 다른 도시들도 지역 랜드마크에 대한 자신들만의 십경(十景)을 갖게 되었습니다. 이는 중국 문화에서 너무나 진부한 것이어서, 중국의 가장 위대한 20세기 작가 중 한 명인 루쉰(Lǔ Xùn)은 냉소적으로 이렇게 썼습니다.\"우리 중국인들 중 다수는 일종의 '십경 증후군'을 가지고 있는데 (...) 이는 청나라 때 유행병 수준에 이르렀습니다\"" # 15444285960563944536
+  RICE_hangzhou_84000_miniature_stupas_decision: "84,000개의 소형 탑 제작 명하기" # 9916428013769723190
+  RICE_hangzhou_84000_miniature_stupas_decision_tooltip: "아쇼카의 전례를 따라야겠군!" # 8546039716528106364
+  RICE_hangzhou_84000_miniature_stupas_decision_desc: "[GetReligionByKey('buddhism_religion').GetAdjective] 전설에 따르면, 아쇼카 왕은 부처의 사리를 봉안하고 가르침을 전파하기 위해 84,000개의 소형 스투파를 제작하도록 명했다고 합니다. 고통과 갈등의 시대에 사람들에게는 영적인 영감이 필요하니, 나 또한 아쇼카의 전례를 본받겠습니다." # 16465404192549128604
+  RICE_hangzhou_84000_miniature_stupas_decision_effect_tooltip_1: "소형 탑 [artifact|E] 획득" # 4352583111015185489
+  RICE_hangzhou_84000_miniature_stupas_decision_effect_tooltip_2: "다른 [rulers|E]와 #V $RICE_hangzhou_84000_stupas_interaction$#!을 할 수 있는 특별한 [interaction|E] 활성화" # 5127248017263854379
+  RICE_hangzhou_84000_miniature_stupas_decision_confirm: "이 공덕이 모두에게 이롭기를!" # 1924529213338231126
+  RICE_hangzhou_84000_miniature_stupas_decision_context_tooltip: "#emphasis Historical Context:#! 중국 역사의 오대십국 시대에 항저우를 수도로 삼은 오월국은 중국 불교의 주요 중심지로 부상했습니다. 오월의 마지막 통치자인 전숙은 서기 955년 또는 965년에 불교 [Glossary( 'sutras', 'BUDDHIST_SUTRAS_GLOSS' )] 사본을 내부에 봉안한 84,000개의 소형 공양탑 제작을 명했습니다. 전숙은 이러한 종교적 헌신을 수행한 유일한 인물은 아니었으며, 인도 황제 아쇼카가 행한 전설적인 업적을 의도적으로 본받은 것이었으나 그의 사례가 가장 유명합니다. 예를 들어 오월의 불교 신도들이 제작한 유사한 탑의 증거가 있으며, 8세기 일본의 쇼토쿠 천황은 백만 개 이상의 소형 탑을 제작하도록 명했다고 전해집니다." # 15056086736825883370
   hangzhou.0000.t: "xxxxx" # 1951045980481827005
   hangzhou.0000.desc: "xxxxx" # 1951045980481827005
   hangzhou.0000.a: "xxxxx" # 1951045980481827005
@@ -506,12 +522,13 @@
   hangzhou.0023.t: "#월비 사당#" # 17817325619117268867
   hangzhou.0023.desc: "수년 전, 위대한 장군 악비(Yuè Fēi)께서는 송(Sòng) 왕조의 군대를 이끌고 북쪽의 가짜 금(Jīn) 왕조에 맞서 싸웠으나, 특히 진회(Qín Huì)와 같은 간신들의 모함과 거짓 혐의로 인해 투옥되고 처형당하셨습니다. 다행히도, 의로운 간수 위순(Wěi Shùn)께서는 목숨을 걸고 악비 장군의 시신을 몰래 빼내 한 사원 아래에 묻어주셨습니다.\n\n그 후 악비 장군의 시신이 재발견되었고, 그의 명예는 회복되었습니다. 이제 이 배신당한 영웅에게 마땅히 받아야 할 존경을 돌려야 한다는 목소리가 더욱 커지고 있습니다!\n\n이에 본인은 [GetTitleByKey('c_hangzhou').GetNameNoTier]에 있는 그의 묘소 주변에 사원을 건립하도록 명을 내렸습니다. 또한, 방문객들이 영원히 저주를 퍼부을 수 있도록 악당 진회와 그의 공모자들의 철제 조각상들이 묘소 앞에 무릎 꿇은 자세로 세워졌습니다. 이제 덕과 용기를 지닌 이들은 악비 장군의 고귀한 정신을 기리며 그분을 올바르게 추앙할 것입니다!" # 10118709569211783195
   hangzhou.0023.a: "유 비 장군의 영혼이 이 시련의 시기에 우리를 인도하시기를!" # 8952074545747092133
-  hangzhou.0024.t: "xxxxx" # 1951045980481827005
-  hangzhou.0024.desc: "xxxxx" # 1951045980481827005
-  hangzhou.0024.a: "xxxxx" # 1951045980481827005
-  hangzhou.0025.t: "xxxxx" # 1951045980481827005
-  hangzhou.0025.desc: "xxxxx" # 1951045980481827005
-  hangzhou.0025.a: "xxxxx" # 1951045980481827005
+  hangzhou.0024.t: "84,000개의 탑" # 4990698236263909414
+  hangzhou.0024.desc: "오래전, 역사상 가장 위대한 [GetReligionByKey('buddhism_religion').GetAdjective] 군주인 인도 군주 아쇼카는 부처의 가르침을 전파하고 왕국 전역에 배포하기 위해 수천수만 개의 소형 스투파를 세웠습니다.\n\n부처님의 경이로운 가르침을 전파하여 모든 중생의 고통을 덜어주고자, 나 또한 84,000개가 넘는 소형 청동 탑의 제작을 명했습니다. 우리는 전쟁과 역병, 빈곤이 일상인 어려운 시대를 살아가고 있습니다. 이 탑들과 부처님과 보살님들의 자비가 모두에게 영감을 주고 치유가 되기를 바랍니다!" # 6589766572484746584
+  hangzhou.0024.a: "모든 중생이 고통에서 벗어나기를!" # 7858783203987981629
+  hangzhou.0025.t: "$hangzhou.0024.t$" # 5430633121329651702
+  hangzhou.0025.desc.actor: "아쇼카 왕의 전례를 본받아 84,000개의 소형 탑을 제작하도록 명했지만, 이 [GetReligionByKey('buddhism_religion').GetAdjective] 보물들을 나 혼자 간직하는 것이 무슨 소용이 있겠습니까?\n\n호의의 표시로 [recipient.GetTitledFirstName]에게 이 작은 청동 탑 중 하나와 두루마리, 성유물 같은 다른 선물들을 보냈습니다. 이것이 [recipient.GetHerHim]에게 영감을 주어, 그가 모든 중생의 고통을 덜어주고 [actor.GetFaith.HighGodName]의 가르침을 전파하는 데 최선을 다하게 되기를 바랍니다." # 16838685962138356553
+  hangzhou.0025.desc.recipient: "인도의 위대한 [GetReligionByKey('buddhism_religion').GetAdjective] 군주 아쇼카처럼, [actor.GetTitledFirstName](은)는 84,000개의 소형 청동 탑을 세움으로써 84,000개의 소형 스투파를 세운 그의 위대한 업적을 본받고자 했습니다.\n\n호의의 표시로 그가 나에게 이 소형 탑 중 하나와 다른 작은 [GetReligionByKey('buddhism_religion').GetAdjectiveNoTooltip] 두루마리 및 성유물들을 선물했습니다. 이러한 보물들을 영감 삼아, 우리 모두 중생의 고통을 덜어주고 [actor.GetFaith.HighGodName]의 가르침을 전파하는 데 최선을 다합시다." # 10569603407807209341
+  hangzhou.0025.a: "모든 중생이 이익을 얻기를!" # 3293309446549863937
   hangzhou.0026.t: "xxxxx" # 1951045980481827005
   hangzhou.0026.desc: "xxxxx" # 1951045980481827005
   hangzhou.0026.a: "xxxxx" # 1951045980481827005

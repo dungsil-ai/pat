@@ -797,7 +797,7 @@
   rice_doctrine_buddhist_canon_name: "불교 경전" # 11551699356301682398
   rice_doctrine_buddhist_canon_desc: "어떤 가르침이 진실하며 붓다의 말씀과 모순되지 않는지를 인식하는 것이 중요합니다. 이러한 가르침들은 #italic 삼장#!(‘세 개의 바구니’라는 의미)을 핵심으로 하는 경전 모음집으로 편찬될 것입니다." # 2890920331301361679
   rice_mahayana_canon_doctrine_name: "대승 불전" # 16648909315852171496
-  rice_mahayana_canon_doctrine_desc: "경전의 대창고(#italic 대장경#!, 중국어)는 동아시아의 대승불교 종파에서 수용하는 느슨한 불교 경전 집합체로, 중국 또는 동아시아 경전이라고도 불립니다. 여기에는 다양한 대승 경전뿐만 아니라 팔리어 경전에 포함되지 않았거나 제외된 초기 불교 학파의 경전들, 예를 들어 설일체유부와 법장부의 경전들도 포함됩니다." # 6932128694145508858
+  rice_mahayana_canon_doctrine_desc: "대장경(#italic 대장경#!, 중국어), 혹은 중국 또는 동아시아 정전으로도 알려진 이것은 동아시아의 대승 불교 종파들이 수용한 불교 문헌들의 느슨한 정전입니다. 여기에는 다양한 대승 [Glossary( '경전', 'BUDDHIST_SUTRAS_GLOSS' )]뿐만 아니라, 설일체유부 및 법장부와 같이 팔리 정전의 일부가 아니거나 제외된 초기 불교 부파의 문헌들도 포함되어 있습니다." # 10401475716002909087
   rice_theravada_canon_doctrine_name: "팔리어 경전" # 15463644479338391070
   rice_theravada_canon_doctrine_desc: "팔리어 3장 경전은 동남아시아의 상좌부 불교 종파들이 수용하는 불교 경전의 정전입니다. 전통적으로 첫 번째 팔리 경전은 기원전 29년 스리랑카에서 열린 제4차 불교 결집에서 성문화된 것으로 여겨지지만, 상좌부, 대승, 금강승 및 기타 초기 불교 학파들이 사상을 교류하면서 그 이후로도 수 세기 동안 경전은 계속 수정되고 변경되었습니다." # 10751507668238002158
   rice_vajrayana_canon_doctrine_name: "탄트라 경전" # 12339750508573305946
@@ -920,7 +920,7 @@
   special_doctrine_is_west_iranian_faith_name: "서부 이란 정교" # 1269001911942350673
   is_west_iranian_faith_name: "$special_doctrine_is_west_iranian_faith_name$" # 10769740957220466645
   special_doctrine_is_west_iranian_faith_desc: "고립과 험준한 지형 덕분에 북부 메소포타미아, 서부 이란, 동부 아나톨리아의 고지대와 계곡은 많은 이단 종교들의 본거지가 되었습니다. 이 분파들은 종교적 기원은 다를지라도 많은 관습, 신념, 사상을 공유하고 있습니다." # 12486635510070165183
-  doctrine_parameter_hostility_override_special_doctrine_is_west_iranian_faith: "동방이 아닌 [faiths|E] 중 $special_doctrine_is_west_iranian_faith_name$ [doctrine|E]를 가진 신앙은 $hostility_hostile_tooltippable$ 또는 $hostility_evil_tooltippable$ 대신 [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]로 간주됩니다." # 3425439022572921130
+  doctrine_parameter_hostility_override_special_doctrine_is_west_iranian_faith: "$special_doctrine_is_west_iranian_faith_name$ [doctrine|E]를 보유한 [faiths|E]는 $hostility_hostile_tooltippable$ 또는 $hostility_evil_tooltippable$ 대신 [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]로 간주됩니다." # 11352229787320837732
   special_doctrine_rice_doctrine_horse_sacrifice_name: "신성한 말들" # 8480677673508286689
   rice_doctrine_horse_sacrifice_name: "$special_doctrine_rice_doctrine_horse_sacrifice_name$" # 13929441420474515062
   special_doctrine_rice_doctrine_horse_sacrifice_desc: "말은 우리 우주의 경이로운 피조물 중 하나입니다. 마땅히 제대로 숭배되어야 하며, 종교 의식의 일환으로 하늘에 제물로 바쳐져야 합니다." # 6376816055060635197

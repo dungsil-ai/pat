@@ -1,0 +1,33 @@
+﻿l_korean:
+  great_project_type_reestablish_neoplatonic_academy: "아테네 학당 재건" # 4414649874080153367
+  great_project_type_reestablish_neoplatonic_academy_desc: "거의 천 년 동안 플라톤이 설립한 학당은 고대 세계 철학의 등불이었습니다. 신플라톤주의 학파로서의 마지막 모습은 황제의 칙령으로 폐쇄되기 전까지 헬레니즘 사상의 마지막 보루였으며, 그 학자들은 흩어지고 불꽃은 꺼졌습니다. 이를 복원하는 것은 문화적 후원의 기념비적인 행위가 될 것입니다.\n\n우리는 신성한 전당을 재건할 뿐만 아니라, 오랜 망명 생활을 하던 위대한 지성들을 불러모으고, 소실된 비전 문헌 도서관을 복구하며, 황실 헌장을 통해 그 미래를 보장할 것입니다. 수 세기 동안 어둠 속에 있던 지혜의 등불을 다시 밝혀, 아테네를 다시 한번 세계 철학의 중심지로 만들 것입니다." # 5798351236538892071
+  great_project_type_reestablish_neoplatonic_academy_contribution_rebuild_academy_grove: "학당의 숲 재건" # 11395249911336537292
+  great_project_type_reestablish_neoplatonic_academy_contribution_rebuild_academy_grove_desc: "학당의 물리적 중심지는 폐허로 변했습니다. 우리는 아테네에 숙련된 건축가와 석공들을 파견하여 부지를 되찾아야 합니다. 그들은 강의실, 학자들을 위한 거주 구역, 그리고 철학자들이 아카데무스의 올리브 숲 사이를 거닐며 다시 한번 토론할 수 있는 평온한 주랑을 재건할 것입니다." # 5898643946285550910
+  great_project_type_reestablish_neoplatonic_academy_contribution_recover_academy_texts: "소실된 문헌 복구" # 7590803592512082009
+  great_project_type_reestablish_neoplatonic_academy_contribution_recover_academy_texts_desc: "학당이 폐쇄되었을 때, 전설적인 도서관은 약탈당하고 흩어졌습니다. 우리는 알려진 세계 전역—동방의 학술 도시, 서방의 수도원, 귀족들의 개인 소장품—에 요원과 필사생들을 파견하여 플라톤, 플로티누스, 이암블리코스 및 기타 거장들의 소실된 저작을 추적하고, 구매하거나 복사하여 이 고대 지혜의 보물을 다시 모아야 합니다." # 5986230349623004415
+  great_project_type_reestablish_neoplatonic_academy_contribution_recall_academy_philosophers: "철학자 소환" # 14174945894542005114
+  great_project_type_reestablish_neoplatonic_academy_contribution_recall_academy_philosophers_desc: "스승이 없는 학교는 아무것도 아닙니다. 마지막 신플라톤주의자들의 지적 후예들은 흩어져 비밀리에 또는 외국 궁정에서 철학을 수행하고 있습니다. 우리는 제국 전역과 그 너머에 공식 소환장을 보내, 아테네로 돌아와 재탄생한 학당에서 가르치라는 부름에 응하는 모든 학자에게 넉넉한 급료와 안전한 통행, 그리고 왕실의 보호를 약속할 것입니다." # 17927659948246398158
+  great_project_type_reestablish_neoplatonic_academy_contribution_establish_academy_charter: "황실 헌장 제정" # 12829963120179950972
+  great_project_type_reestablish_neoplatonic_academy_contribution_establish_academy_charter_desc: "지난 학당은 황제의 변덕으로 폐쇄되었으나, 우리의 학당은 황제에 의해 보호받을 것입니다. 우리는 학당에 법적 인격권을 부여하고 국고에서 경비와 급료를 위한 영구 기금을 할당하는 공식 황실 헌장을 발행할 것입니다. 이 칙령은 근시안적인 사제들과 관리들의 간섭으로부터 학당을 보호하여, 앞으로 수 세대 동안 그 유산을 지켜낼 것입니다." # 13838204581047193998
+  academy_of_athens_modifier: "아테네의 신플라톤주의 학당" # 8932254052118822685
+  academy_of_athens_modifier_desc: "오랫동안 꺼진 것으로 여겨졌던 헬레니즘 지혜의 불꽃이 아테네에서 다시 타올랐습니다. 복원된 학당은 고대 거장들의 비전적 신비를 연구하고자 하는 학생, 시인, 철학자들을 끌어들이는 찬란한 등불 역할을 합니다. 문화와 깊은 학문으로 인한 도시의 명성은 해가 갈수록 높아지고 있으며, 그 통치자는 전 세계에서 진정한 철인왕으로 칭송받고 있습니다." # 9708639280398480150
+  reestablish_neoplatonic_academy.0001.t: "준비된 전당" # 13377011228885443864
+  reestablish_neoplatonic_academy.0001.desc: "주군이시여, 아테네의 수석 건축가로부터 전갈이 왔습니다. 재건이 완료되었습니다. 새로운 전당은 깨끗하며, 대리석 주랑은 아티카의 태양 아래 빛나고 부지에는 나무가 다시 심어졌습니다. 학당의 물리적 외형이 완성되어, 학자들의 목소리가 다시 한번 생명력을 불어넣어 주기를 고요히 기다리고 있습니다." # 5797796027299895545
+  reestablish_neoplatonic_academy.0001.a: "이제, 이 전당을 지혜로 채울 때다." # 13980363461534164672
+  reestablish_neoplatonic_academy.0002.t: "다시 숨 쉬는 도서관" # 5103686492423466606
+  reestablish_neoplatonic_academy.0002.desc: "주군이시여, 우리 요원들이 값을 매길 수 없는 필사본과 두루마리를 가득 실은 상단과 함께 돌아왔습니다. 전 세계에서 위대한 거장들의 저작이 수집되었습니다. 학당의 새로운 도서관 서가는 이제 고대인들의 깊은 지혜로 가득 차 연구를 기다리고 있습니다. 학당의 정신이 복구되었습니다." # 7510358203719969283
+  reestablish_neoplatonic_academy.0002.a: "플라톤 본인에게도 어울릴 법한 도서관이로군." # 13437342280852037850
+  reestablish_neoplatonic_academy.0003.t: "집결하는 위대한 지성들" # 17496253121540915832
+  reestablish_neoplatonic_academy.0003.desc: "주군이시여, 현실이 되었습니다. 바다 건너 주군의 소환에 이끌려 첫 번째 철학자들이 아테네에 도착하기 시작했습니다. 오랫동안 침묵했던 주랑과 강의실은 이제 수십 가지의 다양한 억양으로 이루어지는 치열한 토론과 비전적 담론으로 메아리치고 있습니다. 학당의 영혼이 다시 살아났습니다!" # 14767047611970750848
+  reestablish_neoplatonic_academy.0003.a: "토론을 시작하라!" # 17333247920437540137
+  reestablish_neoplatonic_academy.0004.t: "학술원의 미래가 보장되다" # 14644134858796340870
+  reestablish_neoplatonic_academy.0004.desc: "주군이시여, 제국 칙령의 초안이 작성되고 봉인되어 아테네 학술원의 대강당에 전시하기 위해 발송되었습니다. 기부금은 국고에서 공식적으로 할당되었습니다. 이제 학술원은 단순한 프로젝트가 아니라 우리 영역의 영구적이고 보호받는 기관이며, 그 미래는 우리의 권위로 수호될 것입니다." # 3038613122977791732
+  reestablish_neoplatonic_academy.0004.a: "온 세상이 우리의 문화에 경탄하게 하라!" # 1346126148897008073
+  reestablish_neoplatonic_academy.0006.t: "다시 타오르는 아테네의 등불" # 3780367479327798958
+  reestablish_neoplatonic_academy.0006.desc: "수 세기 동안의 침묵이 깨졌습니다. 한때 희미해진 기억이었던 아테네의 신플라톤 학술원이 다시금 살아 숨 쉬고 있습니다. 그 강당은 당대 최고의 지성들로 가득 찼고, 도서관에는 천 년의 지혜가 축적되어 있으며, 그 미래는 우리의 제국적 의지에 의해 보장되었습니다.\n\n귀하는 단순한 건물의 복원 그 이상의 일을 해내셨습니다. 탐구와 고전적 사상의 불꽃을 다시 지피고, 전 세계를 위한 새로운 학문의 중심지를 만드셨습니다. 귀하의 성함은 진정한 지혜의 후원자로서 옛 철인왕들과 함께 기억될 것입니다." # 2483403735309022246
+  reestablish_neoplatonic_academy.0006.a: "'일자'에 대한 탐구가 새로이 시작되었습니다." # 1593762142416581254
+  reestablish_neoplatonic_academy.0005.t: "꺼져가는 등불" # 3527190619483265139
+  reestablish_neoplatonic_academy.0005.desc: "아테네 학술원을 복원하려던 야심 찬 프로젝트는 수치스러운 실패로 끝났습니다. 자금은 탕진되었고, 절반만 지어진 강당은 버려진 채 방치되었으며, 르네상스를 감히 꿈꿨던 학자들은 완전히 환멸을 느낀 채 유배지로 돌아갔습니다.\n\n지혜의 등불 대신, 우리는 우리 자신의 지적 허영심을 기리는 기념비를 세운 셈입니다. 이제 침묵은 깨지지 않은 채 유지될 것이며, 이는 우리의 어리석음에 대한 증거이자 우리 치세의 오점이 될 것입니다." # 8129043109175340831
+  reestablish_neoplatonic_academy.0005.a: "교양 없는 자의 어리석음." # 9484171620465240613
+  ATTICA_LOCATION_1_TOOLTIP: "아티카가 귀하의 영역 내에 있음" # 9124712350458530335
+  adult_education_has_academy_of_athens_desc: "\n#P +++ 아테네의 신플라톤 학술원 #!" # 10822584818109360800

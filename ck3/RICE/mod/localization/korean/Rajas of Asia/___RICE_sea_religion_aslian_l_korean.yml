@@ -50,6 +50,7 @@
   senoi_pagan_household_god_name_possessive: "$senoi_pagan_good_god_possessive$" # 8134911570606869293
   senoi_pagan_fate_god_name: "나가" # 5260966519731851951
   senoi_pagan_fate_god_name_possessive: "나가족" # 9633589018065601487
+  senoi_pagan_knowledge_god_name: "$senoi_pagan_fate_god_name$" # 5908408480925257067
   senoi_pagan_knowledge_god_name_possessive: "$senoi_pagan_fate_god_name_possessive$" # 3780178947132031725
   senoi_pagan_war_god_name: "이포 베르네이" # 6815327442177324611
   senoi_pagan_war_god_name_possessive: "이포 베르네이스" # 5415127995627149153

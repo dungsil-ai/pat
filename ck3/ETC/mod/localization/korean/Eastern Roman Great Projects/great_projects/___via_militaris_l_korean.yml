@@ -1,0 +1,131 @@
+﻿l_korean:
+  great_project_type_via_militaris_restoration: "비아 밀리타리스 복구" # 4063909724075142405
+  great_project_type_via_militaris_restoration_desc: "비아 밀리타리스는 제국의 진정한 군사적 중추로, 콘스탄티노폴리스의 성문에서 발칸반도의 심장부로 직접 이어지는 거대한 도로입니다. 수 세기 동안 이곳은 군단과 황제들이 지나던 길이었습니다. 그러나 지금은 과거의 영광은 온데간데없고, 기능적인 고속도로라기보다는 지도 위의 선에 불과한 그림자일 뿐입니다. 구멍이 뚫리고 풀이 무성해진 이 도로는 산적들의 은신처가 되었고 통치의 걸림돌이 되었습니다. 이는 내륙 무역을 마비시키고, 트라키아와 그 너머의 주둔군을 안정적인 보급로로부터 고립시키며, 제국의 감시에서 벗어난 계곡들에서 불만이 싹트게 합니다. 이를 복구하기 위해서는 기념비적인 사업이 필요합니다. 도로와 이를 지원하는 감시 초소를 재건함으로써, 우리는 무역을 되살릴 뿐만 아니라 이 핵심 지역들에 대한 지배력을 강화할 것입니다. 황제의 칙령은 거침없이 전달될 것이며, 주둔군은 보급을 받고 세금은 막힘없이 흘러들어와 제국의 심장부가 수도와 하나 되어 고동치게 될 것입니다." # 2508837003981810826
+  great_project_type_via_militaris_restoration_contribution_imperial_survey: "제국 조사" # 17970156955724799681
+  great_project_type_via_militaris_restoration_contribution_open_imperial_quarries: "제국 채석장 개설" # 15147921464181004378
+  great_project_type_via_militaris_restoration_contribution_paving_the_strata: "도로 포장" # 527482615461097755
+  great_project_type_via_militaris_restoration_contribution_finance_laborers: "노동자 자금 지원" # 16287079221957872522
+  great_project_type_via_militaris_restoration_contribution_establish_road_outposts: "도로 전초 기지 설립" # 16669641280561386892
+  great_project_type_via_militaris_restoration_contribution_construct_imperial_bridges: "제국 교량 건설" # 16529312461777537029
+  great_project_type_via_militaris_restoration_contribution_organize_the_cursus: "쿠르수스 푸블리쿠스 조직" # 9048497810841846251
+  great_project_type_via_militaris_restoration_contribution_found_imperial_stud_farms: "제국 마목장 설립" # 161056393374428988
+  via_militaris_LOCATION_1_TOOLTIP: "브리시스 백작령이 당신의 영역 내에 있음" # 12425196640556995865
+  via_militaris_LOCATION_2_TOOLTIP: "아드리아노폴리스 백작령이 귀하의 영역 내에 있음" # 15996920988485027066
+  via_militaris_LOCATION_3_TOOLTIP: "베로에 백작령이 귀하의 영역 내에 있음" # 1416947079333064990
+  via_militaris_LOCATION_4_TOOLTIP: "필리포폴리스 백작령이 귀하의 영역 내에 있음" # 6227833959858528960
+  via_militaris_LOCATION_5_TOOLTIP: "스레데츠 백작령이 귀하의 영역 내에 있음" # 4416293584976783275
+  via_militaris_LOCATION_6_TOOLTIP: "나이수스 백작령이 귀하의 영역 내에 있음" # 9780284921030030696
+  via_militaris_LOCATION_7_TOOLTIP: "비딘 백작령이 귀하의 영역 내에 있음" # 15166047196959603285
+  via_militaris_LOCATION_8_TOOLTIP: "브라니체보 백작령이 귀하의 영역 내에 있음" # 16376682609628689283
+  via_militaris_LOCATION_9_TOOLTIP: "베오그라드 백작령이 귀하의 영역 내에 있음" # 18096461166476215175
+  via_militaris_LOCATION_10_TOOLTIP: "비잔티움 제국 작위를 보유함" # 14818536208865635014
+  has_manorialism_tooltip: "장원제 혁신을 연구했습니다" # 1825053946374643423
+  has_urbanization_tooltip: "도시화 혁신을 연구했습니다" # 7908432524181174697
+  AI_WILL_DO_via_militaris_COUNTY_HOLDER: "비아 밀리타리스를 따라 백작령을 보유함" # 6338798643309059015
+  via_militaris_reward_toast_title: "귀하의 공헌에 대한 보상입니다!" # 2498546846554597073
+  neglected_via_militaris_modifier_desc: "한때 제국의 동맥이자 위대했던 비아 밀리타리스가 한탄스러울 정도로 황폐해졌습니다. 포장석은 약탈당하고 다리는 무너졌으며, 도로는 잡초로 뒤덮여 기회주의적인 도적들의 은신처가 되었습니다.\n\n경로를 따른 상업 활동은 위축되어 성장을 저해하고 권위를 세우는 것을 어렵게 만들고 있습니다. 군대는 보급선이 압박을 받고 진흙과 잔해 속에서 행군 속도가 느려지는 상황에 처해 있습니다.\n\n" # 15671085051767581421
+  neglected_via_militaris_modifier: "방치된 비아 밀리타리스" # 11684431256257227471
+  restored_via_militaris_modifier_desc: "황제의 칙령과 엄청난 노력 끝에 비아 밀리타리스가 과거의 영광을 되찾았습니다. 포장석이 다시 깔리고 다리가 재건되었으며, 일정한 간격으로 주둔군이 배치되어 여행자들이 빠르고 안전하게 도로를 이용할 수 있게 되었습니다.\n\n상업이 다시 활발해지며 도로가 지나는 땅에 부와 번영을 가져다주고 있습니다. 제국의 권위는 확고해졌으며, 군대는 이제 국경을 방어하기 위해 신속하고 충분한 보급을 받으며 행군할 수 있습니다. 이 도로는 갱신된 제국의 힘과 번영의 증거입니다.\n\n" # 12416686502041414276
+  restored_via_militaris_modifier: "복구된 비아 밀리타리스" # 2058603468349624848
+  via_militaris_quarry_surplus_modifier: "채석장 잉여분" # 2128474324748575327
+  via_militaris_quarry_surplus_modifier_desc: "다시 문을 연 제국 채석장에서 고품질의 석재가 과잉 생산되고 있습니다.\n\n" # 5691954982552471704
+  via_militaris_road_planner_modifier: "도로 계획가" # 13647618817470658367
+  via_militaris_road_planner_modifier_desc: "비아 밀리타리스를 조사한 이 인물의 경험은 그를 대규모 병참 계획의 전문가로 만들었습니다.\n\n" # 6716289095741525121
+  via_militaris_master_of_logistics_modifier: "병참의 대가" # 7294940405086700184
+  via_militaris_master_of_logistics_modifier_desc: "비아 밀리타리스의 포장 자금을 지원한 일은 이 인물에게 군사 병참에 관한 귀중한 교훈을 주었습니다.\n\n" # 9070588455690277266
+  via_militaris_beloved_patron_modifier: "사랑받는 후원자" # 13167239716129078285
+  via_militaris_beloved_patron_modifier_desc: "비아 밀리타리스의 노동자들에게 아낌없이 자금을 지원한 이 인물은 평민들의 사랑을 받게 되었습니다.\n\n" # 12630248309174996387
+  via_militaris_fortification_expert_modifier: "요새화 전문가" # 9243818302944842951
+  via_militaris_fortification_expert_modifier_desc: "이 인물은 도로 초소 건설을 감독하며 방어 구조물에 대한 전문 지식을 갖추게 되었습니다.\n\n" # 3989646652057076199
+  via_militaris_information_network_modifier: "정보망" # 1141728508049106550
+  via_militaris_information_network_modifier_desc: "쿠르수스 푸블리쿠스를 재조직함으로써 이 인물은 더 빠른 정보 흐름에 접근할 수 있게 되었습니다.\n\n" # 16630147507904889832
+  via_militaris_master_breeder_modifier: "사육의 대가" # 3179314279177402487
+  via_militaris_master_breeder_modifier_desc: "제국 종마 사육장에 투자한 이 인물은 훌륭한 군마를 사육하는 전문가가 되었습니다.\n\n" # 6471151556404689107
+  via_militaris_events.0001.t: "조사관의 보상" # 16689328884151725823
+  via_militaris_events.0001.desc: "출발한 지 몇 주 후, 비아 밀리타리스의 상태를 평가하는 임무를 맡은 수석 조사관이 이끄는, 먼지투성이지만 의기양양한 수행단이 궁정에 도착했습니다.\n\n거대한 평의회 탁자 위에 그들은 일련의 거대한 양피지들을 펼쳤습니다. 그것은 숨이 멎을 정도로 정교한 작업물로, 수도에서 아드리아해 연안까지 이어지는 고대 *도로(strata)*의 완전한 지도입니다.\n\\\"옛 도로의 뼈대는 훌륭합니다, 주군\" 조사관이 길고 구불구불한 경로를 손가락으로 짚으며 보고합니다.\"수 세기 동안의 방치와 뻔뻔한 석재 도난으로 피해가 컸고, 많은 다리가 한때 가로질렀던 강 속으로 무너져 내린 지 오래입니다. 하지만 로마의 기초는 튼튼합니다. 경로는 명확합니다\"\n\n오랜 세월 만에 처음으로 과업의 전체 범위가 파악되었습니다. 이 지식을 바탕으로 진정한 복원 작업을 시작할 수 있습니다." # 1239752966399044591
+  via_militaris_events.0001.a: "나의 공헌이 인정받았군." # 8741042328280279313
+  via_militaris_events.0002.t: "황실 채석장으로부터" # 17071792548199814314
+  via_militaris_events.0002.desc: "본인의 자금 지원으로 황실 채석장이 개방되어, 위대한 비아 밀리타리스를 복원하는 데 필요한 석재를 공급하게 되었습니다. 이 공로로 본인은 채석장 잉여분의 일부를 하사받았으며, 이는 분명 본인의 영지에 도움이 될 것입니다." # 16243863607602432115
+  via_militaris_events.0002.a: "나의 채석장이 제국의 원동력이 되리라!" # 7040993262585195595
+  via_militaris_events.0003.t: "길을 닦으며" # 1474971166704390068
+  via_militaris_events.0003.desc: "본인의 후원 덕분에 비아 밀리타리스의 도로가 새로 포장되고 있습니다. 이 기념비적인 과업을 위한 병참을 조직하면서 인원과 물자의 이동에 대해 많은 것을 배웠으며, 이는 위대한 지휘관들에게 걸맞은 경험입니다." # 17818760688618254293
+  via_militaris_events.0003.a: "안전한 도로가 곧 안전한 제국이다." # 4284277843608996810
+  via_militaris_events.0004.t: "백성의 후원자" # 1971564950588996290
+  via_militaris_events.0004.desc: "비아 밀리타리스에 필요한 노동자 군단에 자금을 지원함으로써, 본인은 자신의 신앙심과 평민들에 대한 헌신을 증명했습니다. 백성들은 본인의 관대함을 목격하고 있으며, 하느님조차 이 위대한 과업에 미소 지으시는 듯합니다." # 943599083948050036
+  via_militaris_events.0004.a: "백성을 부양하는 것은 성스러운 행위다." # 10119477613550747073
+  via_militaris_events.0005.t: "도로를 수호하며" # 2615890938973751599
+  via_militaris_events.0005.desc: "보호 없이는 도로가 취약해질 수밖에 없습니다. 본인의 자금은 비아 밀리타리스를 따라 새로운 전초 기지와 감시 초소를 세우는 데 도움을 주었으며, 여행자와 상인들을 위해 도로를 안전하게 확보했습니다. 방어 시설에 대한 본인의 전문성은 이제 널리 알려졌습니다." # 9887921843355513936
+  via_militaris_events.0005.a: "우리의 감시 초소는 영원히 서 있을 것이다." # 3504819121786174122
+  via_militaris_events.0006.t: "단절을 잇는 다리" # 14859320727250050151
+  via_militaris_events.0006.desc: "한때 강이 전진을 가로막았던 곳에 이제 장엄한 새 다리들이 서 있으며, 이는 비아 밀리타리스 복원에 대한 본인의 지원을 증명하는 증거입니다. 이러한 공학적 업적은 대대로 회자될 것이며, 본인의 이름을 빛낼 위대한 기념비가 될 것입니다." # 16103131095197299390
+  via_militaris_events.0006.a: "우리의 창의성을 기리는 기념비로다!" # 2901270809938088775
+  via_militaris_events.0007.t: "쿠르수스 푸블리쿠스의 부활" # 18166916203570833530
+  via_militaris_events.0007.desc: "나의 헌신은 고대 제국의 우편 및 정보 기구인 쿠르수스 푸블리쿠스를 복구하는 데 큰 도움이 되었습니다. 전령과 역참망을 조직함으로써, 정보... 그리고 비밀의 흐름에 대한 독특한 통찰력을 얻었습니다." # 15847986794463279384
+  via_militaris_events.0007.a: "정보는 우리 전령만큼이나 빠르게 흐를 것입니다." # 18058975615539803510
+  via_militaris_events.0008.t: "제국 마구간" # 17199000771705058940
+  via_militaris_events.0008.desc: "전령의 속도는 그가 탄 말의 속도에 달려 있습니다. 새로운 제국 종마 사육장을 설립함으로써, 쿠르수스 푸블리쿠스가 제국에서 가장 훌륭하고 빠른 말들을 공급받을 수 있도록 보장했습니다. 이제 제 이름은 우수한 품종의 동물과 연관되어 불릴 것입니다." # 16829200456479161217
+  via_militaris_events.0008.a: "제국을 위한 최고의 말들이군\"" # 3488531375067705223
+  via_militaris_events.0009.t: "도로 위의 질서" # 10992502823629654896
+  via_militaris_events.0009.d: "내가 후원한 *Curatores Viarum*이 이제 비아 밀리타리스를 따라 배치되었다는 소식이 들려옵니다. 그들의 근면한 노력은 이 거대한 도로의 매 마일마다 제국의 법과 효율적인 행정을 가져다주었으며, 앞으로도 오랫동안 이 도로가 왕국의 자산으로 남을 수 있게 할 것입니다." # 7228564619027687912
+  via_militaris_events.0009.a: "효율적이고 정의로운 체계로다." # 1984912269727386460
+  via_militaris_events.0010.t: "돌에 새겨진 기록" # 895350875982696774
+  via_militaris_events.0010.d: "이정표와 기념비가 완성되었습니다! 여행자들은 매 마일마다 제 이름이 새겨진 표지석을 보게 될 것이며, 주요 교차로에는 제 치세를 증명하는 웅장한 아치형 관문이 서 있게 될 것입니다. 비아 밀리타리스의 영광에 기여한 나의 공적은 모두가 볼 수 있도록 돌에 새겨졌습니다." # 10797828632473468902
+  via_militaris_events.0010.a: "만대에 전해질 유산이군." # 9405056312010597473
+  via_militaris_events.0011.t: "불후의 업적" # 18404666114609759498
+  via_militaris_events.0011.d: "비아 밀리타리스 전 구간에 상설 유지 보수팀이 조직되었습니다. 다른 이들이 영광을 위해 건설할 때, 저는 영원을 위해 건설했습니다. 이 위대한 도로는 이제 세월의 풍파로부터 보호받게 되었으니, 이는 저의 선견지명과 신중함의 증거입니다." # 7126421643471885552
+  via_militaris_events.0011.a: "미래를 위한 확고한 기반이로다." # 14973058090828865642
+  via_militaris_events.0012.t: "상업의 흐름" # 1254683604658722079
+  via_militaris_events.0012.d: "내 국고로 후원한 거대한 카라반사라이들이 활기로 북적입니다! 전 세계의 상인들이 안전과 상업의 안식처인 이곳으로 모여듭니다. 시장에서 상인들은 제 이름을 연호하며 축배를 들고, 제 금고는 그들의 번창하는 사업에서 나온 수익으로 가득 차고 있습니다." # 544847908825902741
+  via_militaris_events.0012.a: "이익은 현명한 투자를 따르는 법이지." # 348794553976152489
+  via_militaris_events.0013.t: "황제의 평화" # 10468245406481206035
+  via_militaris_events.0013.d: "정예 *Vigiles Stratorum*이 이제 비아 밀리타리스를 끊임없이 감시합니다. 그들의 경계심과 무용에 대한 소문이 널리 퍼지고 있습니다. 도적들은 그들 앞에서 도망치고 상인들은 두려움 없이 여행합니다. 나의 권위가 이 거대한 도로의 구석구석까지 미치고 있습니다." # 16068727279137501665
+  via_militaris_events.0013.a: "힘을 통한 안전." # 11647405474037574304
+  via_militaris_events.0014.t: "권력의 통행료" # 12517602804411674647
+  via_militaris_events.0014.d: "비아 밀리타리스를 따라 놓인 제국 교량들은 이제 두 가지 목적을 수행합니다. 요새화된 성문이 통행량을 조절하고, 충성스러운 통행료 징수원들이 모든 상단이 제국 국고에 기여하도록 보장합니다. 이 길은 안전할 뿐만 아니라 막대한 이익을 가져다줍니다." # 11898520728304488668
+  via_militaris_events.0014.a: "모든 여행자는 마땅한 대가를 치러야 할 것이다." # 2049606272868328264
+  via_militaris_events.0015.t: "사고의 속도" # 12826545243377999260
+  via_militaris_events.0015.d: "쿠르수스 푸블리쿠스가 완전히 바뀌었습니다! 곳곳에 새로 설치된 역참 덕분에 이제 전령이 그 어느 때보다 빠르게 제국 전역을 누빕니다. 도달할 수 없는 먼 곳의 궁정은 없으며, 어떤 비밀도 오래 유지될 수 없습니다. 영토는 더 가깝게 느껴지고, 제 지배력은 더욱 확고해졌습니다." # 3189574318187609494
+  via_militaris_events.0015.a: "정보가 곧 힘이다." # 6580828676543368805
+  via_militaris_events.0016.t: "우수한 군마" # 14236294557033100714
+  via_militaris_events.0016.d: "제국 마목장을 특성화하려는 저의 야심 찬 계획이 큰 성공을 거두었습니다. 이제 기사들을 위한 중무장 돌격마뿐만 아니라, 전령들을 위한 날랜 경주마와 상인들을 위한 지치지 않는 노새도 사육합니다. 우리 탈것들의 품질은 전 세계의 부러움을 사고 있습니다." # 15012012210486226700
+  via_militaris_events.0016.a: "기병은 군대의 영혼이다." # 6106326831180271577
+  great_project_type_via_militaris_improvement: "비아 밀리타리스 개선" # 7495284148230983010
+  great_project_type_via_militaris_improvement_desc: "비아 밀리타리스가 복구되어, 포장된 돌들이 다시 한번 제국의 대도시들을 연결하고 있습니다. 하지만 복구는 진정한 번영을 쌓아 올리기 위한 기초일 뿐입니다. 기능적인 도로는 그저 시작일 뿐이며, 상업과 권력이 고동치는 동맥이 되는 것은 전혀 다른 차원의 일입니다.\n\n이 다음의 위대한 과업은 이 길을 단순한 고속도로에서 영토의 고동치는 심장으로 탈바꿈시킬 것입니다. 우리는 이를 관리할 공식 행정관을 임명하고, 상인들에게 안식처를 제공할 거대한 카라반사라이에 자금을 지원하며, 안전을 보장하기 위한 순찰대를 조직할 것입니다. 이정표와 기념비로 길을 장식함으로써, 우리는 이곳을 제국의 위엄과 명성의 상징으로 만들 것입니다.\n\n과업이 끝나면, 비아 밀리타리스는 단순한 도로가 아니라 우리의 비전을 보여주는 기념비이자 경제의 엔진, 그리고 전 세계의 부러움의 대상이 될 것입니다." # 8380906374039368768
+  great_project_type_via_militaris_improvement_contribution_establish_road_magistracies: "도로 행정관 임명" # 7455118200299423288
+  great_project_type_via_militaris_improvement_contribution_erect_milestones: "이정표 및 기념비 건립" # 6628211489688588668
+  great_project_type_via_militaris_improvement_contribution_organize_maintenance: "유지보수팀 조직" # 18368240483705529520
+  great_project_type_via_militaris_improvement_contribution_subsidize_caravanserais: "카라반사라이 보조금 지급" # 808562414966333198
+  great_project_type_via_militaris_improvement_contribution_institute_patrols: "고속도로 순찰대 창설" # 10210418254912821061
+  great_project_type_via_militaris_improvement_contribution_toll_bridges: "통행료 징수 교량 요새화 및 병력 배치" # 7859537743860299281
+  great_project_type_via_militaris_improvement_contribution_expand_relay_network: "역참망 확장" # 1965369434379248729
+  great_project_type_via_militaris_improvement_contribution_breeding_programs: "특수 사육 프로그램" # 6522782412525195289
+  great_project_type_via_militaris_improvement_contribution_establish_road_magistracies_desc: "도로 조사가 완료되었으니, 이제 통치할 차례입니다. 이 기부금은 통행료 징수, 교통 관리, 분쟁 해결을 담당하며 도로가 제국의 최고 수준으로 유지되도록 보장하는 제국 행정관인 쿠라토레스 비아룸(Curatores Viarum)의 임명을 지원할 것입니다." # 17823893633778987329
+  great_project_type_via_militaris_improvement_contribution_erect_milestones_desc: "채석장은 도로의 기초를 닦을 석재를 제공했습니다. 이제 영광을 기릴 대리석을 제공할 것입니다. 우리는 매 마일마다 표시할 화려한 이정표의 조각과 배치뿐만 아니라, 우리의 위대한 업적을 기념하고 여행자들에게 경외심을 주기 위해 주요 교차로에 더 웅장한 기념비와 아치를 세우는 데 자금을 지원할 것입니다." # 18403802842941591011
+  great_project_type_via_militaris_improvement_contribution_organize_maintenance_desc: "위대한 도로는 한 번 건설되는 것이 아니라 영원히 유지되는 것입니다. 이 기부금은 노동자와 기술자로 구성된 상설 팀을 창설하고 지원할 것입니다. 비아 밀리타리스(Via Militaris)를 따라 배치된 그들의 유일한 임무는 균열 수리, 배수구 청소 등 도로를 영구적으로 관리하여 우리의 투자가 수 세기 동안 지속되도록 보장하는 것입니다." # 11238761038171459474
+  great_project_type_via_militaris_improvement_contribution_subsidize_caravanserais_desc: "도로를 건설한 노동자들은 그 길을 여행하는 상인들로 대체되었습니다. 상업을 장려하기 위해, 우리는 국가 보조금을 받는 대규모 카라반사라이(Caravanserais) 건설에 자금을 지원할 것입니다. 이 거대한 여관은 급증하는 상인 통행을 위해 안전한 숙소, 방대한 시장, 안전한 마구간을 제공할 것입니다." # 125876186058450241
+  great_project_type_via_militaris_improvement_contribution_institute_patrols_desc: "고정된 초소만으로는 한계가 있습니다. 진정한 안전을 보장하기 위해 비아 밀리타리스는 적극적으로 순찰되어야 합니다. 우리는 도로 전 구간을 주행하며 상단을 도적으로부터 보호하고 땅의 구석구석까지 제국의 권위를 투영할 기마 도로 경비대인 비길레스 스트라토룸(Vigiles Stratorum) 정예 부대 창설에 자금을 지원할 것입니다." # 3124994398344444508
+  great_project_type_via_militaris_improvement_contribution_toll_bridges_desc: "교량은 교통과 상업의 핵심 동맥입니다. 교량에 성문을 세워 요새화하고 충성스러운 통행료 징수원을 배치함으로써 보안을 개선할 뿐만 아니라 제국 국고의 중요하고 신뢰할 수 있는 수입원으로 전환할 것입니다." # 12464364367123336262
+  great_project_type_via_militaris_improvement_contribution_expand_relay_network_desc: "제국 우편은 잘 작동하고 있지만, 더 빨라질 수 있습니다. 이 기부금은 기존의 만시오네스(Mansiones, 숙박소) 사이에 수십 개의 새로운 무타티오네스(Mutationes, 교체소)를 건설하는 데 사용될 것입니다. 네트워크의 밀도를 높임으로써 전령들이 항상 신선한 말을 확보하게 하여 정보 전달 속도를 획기적으로 높일 것입니다." # 13141928814463837449
+  great_project_type_via_militaris_improvement_contribution_breeding_programs_desc: "우리의 종마 사육장은 그 가치를 증명했습니다. 이제 전문화할 때입니다. 이 프로그램은 마구간을 다양화하여 중무장 군마뿐만 아니라 쿠르수스 푸블리쿠스(Cursus Publicus)를 위한 더 가볍고 빠른 말, 그리고 이제 비아 밀리타리스로 몰려드는 상인 상단을 위한 유난히 강하고 튼튼한 노새를 번식시키는 데 집중할 것입니다." # 11197475435311782826
+  bustling_via_militaris_modifier_desc: "비아 밀리타리스의 복구는 시작에 불과했습니다. 평화의 번영과 집중적인 투자를 통해, 위대한 도로는 이제 끊임없는 활동으로 활기가 넘칩니다. 동방의 비단을 실은 거대한 상단이 북방의 모피를 파는 상인들을 지나치며, 물품의 교환은 문화와 사상의 교환으로 이어집니다.\n\n새로운 정착지들은 활기찬 마을로 꽃피웠고, 금과 물자의 물결은 그곳을 엄청난 부의 중심지로 만들었습니다. 제국 순찰대와 요새화된 초소의 지속적인 존재로 인해 도적질은 먼 옛날의 기억이 되었습니다. 이것은 이제 단순한 도로가 아니라, 번영하는 제국의 고동치는 심장입니다.\n\n" # 8204549992781816384
+  bustling_via_militaris_modifier: "북적이는 비아 밀리타리스" # 852847445343887707
+  via_militaris_broken_promises_modifier: "깨진 약속" # 1853353620922781007
+  via_militaris_broken_promises_modifier_desc: "나는 온 영역에 장대한 비전, 즉 내 치세의 기념비가 될 비아 밀리타리스의 복구를 선포했습니다. 이제 프로젝트는 중단되었고, 나의 말은 재가 되어 사라졌습니다. 석조 도로 대신 나는 실패의 유산을 쌓았고, 내 이름은 이제 거창한 선언과 한심한 결과의 대명사가 되었습니다.\n\n" # 15678605299201699489
+  via_militaris_beograd_hub_modifier: "베오그라드 중심지" # 17302576217041022605
+  via_militaris_beograd_hub_modifier_desc: "로마인들에게 싱기두눔(Singidunum)으로 알려진 이 요새 도시는 강력한 비아 밀리타리스의 북서쪽 거점입니다. 군단이 이곳에 집결하고 보급품이 동쪽으로 흐르며, 도시는 다뉴브 전선에서 제국의 굴하지 않는 보루로 서 있습니다. 베오그라드를 차지하는 것은 판노니아와 발칸 반도 모두로 향하는 관문을 차지하는 것입니다.\n\n" # 3931034409102533774
+  via_militaris_patron_of_order_modifier: "질서의 후원자" # 5423849810973981651
+  via_militaris_patron_of_order_modifier_desc: "비아 밀리타리스의 행정관직에 자금을 지원하고 감독한 경험을 통해 법과 행정에 대한 깊은 이해를 얻었습니다." # 8488587622284172252
+  via_militaris_prudent_planner_modifier: "신중한 계획가" # 945348334562008305
+  via_militaris_prudent_planner_modifier_desc: "위대한 도로의 상설 유지보수 팀을 조직하면서 효율성과 장기 프로젝트 관리에 대한 귀중한 교훈을 얻었습니다. 이제 이 지식을 나의 모든 건설 사업에 적용할 수 있습니다." # 12349035645886359834
+  via_militaris_vigilant_protector_modifier: "경계하는 보호자" # 6695565568623079532
+  via_militaris_vigilant_protector_modifier_desc: "고속도로 순찰대를 창설한 나의 노력은 방어와 보안에 대한 나의 본능을 연마시켰습니다. 덕분에 내 영지는 더욱 안전해졌습니다." # 8768788674785897327
+  via_militaris_master_of_the_cursus_modifier: "쿠르수스의 주인" # 15037130335504247197
+  via_militaris_master_of_the_cursus_modifier_desc: "제국의 역참망을 확장하면서 저는 방대한 연락망과 정보가 전달되는 방식에 대한 예리한 통찰력을 갖게 되었습니다. 이 영역 내에서 제 손이 닿지 않는 비밀은 거의 없습니다." # 4051941171657393455
+  via_militaris_imperial_master_breeder_modifier: "제국 수석 사육사" # 7426205656267896466
+  via_militaris_imperial_master_breeder_modifier_desc: "전문적인 사육 프로그램을 감독하면서 저는 축산 전문가가 되었습니다. 제 마구간은 최고의 군마를 생산하며, 이는 제 기사들과 보급 부대 모두에게 이득이 됩니다." # 12701142648130468966
+  via_militaris_patrons_landmark_modifier: "후원자의 랜드마크" # 11359987831304248044
+  via_militaris_patrons_landmark_modifier_desc: "이 백작령의 통치자가 자금을 지원한 웅장한 기념물은 비아 밀리타리스에 대한 그들의 공헌을 증명하는 증거로 서 있습니다. 이는 순례자와 고위 인사들을 모두 끌어들여, 이 지역의 위신과 중요성을 더해줍니다." # 12317026283261085887
+  via_militaris_flourishing_caravanserai_modifier: "번창하는 카라반사라이" # 1143748142757426761
+  via_militaris_flourishing_caravanserai_modifier_desc: "통치자의 투자의 직접적인 결과로, 국가 보조금을 받는 거대한 카라반사라이가 이 백작령에서 운영되고 있습니다. 이곳은 상업의 주요 중심지가 되어 지역에 상당한 부와 성장을 가져다주었습니다." # 1572301559309158227
+  via_militaris_fortified_toll_bridge_modifier: "요새화된 통행료 징수 교량" # 2528939376289758907
+  via_militaris_fortified_toll_bridge_modifier_desc: "통치자의 투자 덕분에 이 백작령의 중요한 교량이 요새화되고 병력이 배치되었습니다. 이제 이 교량은 강화된 방어력과 꾸준한 통행료 수입을 모두 제공합니다." # 3383050631699499765

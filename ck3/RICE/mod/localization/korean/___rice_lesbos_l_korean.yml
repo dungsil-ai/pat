@@ -133,7 +133,7 @@
   RICE_pirate_recruit_pirates_effect_tooltip_1: "#V 200#!에서 #V 500#! 사이의 [special_troops|E]를 받게 되며, 여기에는 일부 [men_at_arms|E]가 포함됩니다." # 12659893175194012445
   RICE_pirate_ransom_prisoners_name: "포로 몸값 받기" # 12548882477684306168
   RICE_pirate_ransom_prisoners_desc: "$RICE_pirate_ransom_prisoners_name$" # 16835351758288007162
-  RICE_pirate_ransom_prisoners_tooltip: "#italic 우리는 해적 네트워크를 이용하여 다른 해적들에게 붙잡힌 우리 신민들을 찾아내고 몸값을 받고 본국으로 돌려보낼 수 있습니다!#" # 1878852978102587172
+  RICE_pirate_ransom_prisoners_tooltip: "#italic 우리는 해적망을 이용해 다른 해적들에게 붙잡힌 우리 백성들을 찾아내어 귀환시킬 수 있습니다... 물론, 대가가 따르겠지만요.#!" # 1283870299542445075
   RICE_pirate_ransom_prisoners_effect_tooltip_1: "귀하는 몸값을 지불하기 위해 #V [gold_i|E][GetPlayer.MakeScope.ScriptValue('RICE_pirate_ransom_min_value')|0]#!에서 #V [gold_i|E][GetPlayer.MakeScope.ScriptValue('RICE_pirate_ransom_max_value')|0]#! 사이의 무작위 양의 [gold|E]를 #N 잃게# 될 것입니다." # 4661971022913274061
   RICE_pirate_ransom_prisoners_effect_tooltip_2: "지불해야 할 [gold_i|E] [gold|E]의 양은 귀하의 [diplomacy_i|E] [diplomacy|E], [martial_i|E] [martial|E], 그리고 [intrigue_i|E] [intrigue|E]에 의해 영향을 받습니다." # 3557418239672568630
   RICE_mediterranean_collaborate_with_pirates: "지중해 해적들과 협력하기" # 10039082919778414671

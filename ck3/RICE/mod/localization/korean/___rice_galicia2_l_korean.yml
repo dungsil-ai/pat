@@ -288,7 +288,7 @@
   galicia2.0011.b: "$sus.0001.b$" # 16170894306468653032
   galicia2.0011.b.failure: "$sus.0001.b.failure$" # 10244786469165914241
   galicia2.0011.b.success: "$sus.0001.b.success$" # 12213007599100476414
-  RICE_volga_dnieper_merchant_trait_gain_tooltip: "#weak 귀하는 이전에 [GetGeographicalRegion('RICE_volga_dnieper_trade_region').GetName]에 연결된 교역로를 따라 #V [GetPlayer.MakeScope.Var('RICE_volga_dnieper_merchant_success_count').GetValue]#! 건의 성공적인 무역 거래를 성사시켰습니다. 거래를 더 많이 성사시킬수록 [GetTrait('RICE_trans_saharan_merchant').GetName( GetNullCharacter )] [trait|E]를 얻을 확률이 높아집니다.#!" # 931071132009486071
+  RICE_volga_dnieper_merchant_trait_gain_tooltip: "#weak 귀하는 이전에 [GetGeographicalRegion('RICE_volga_dnieper_trade_region').GetName]와 연결된 무역로를 따라 #V [GetPlayer.MakeScope.Var('RICE_volga_dnieper_merchant_success_count').GetValue]#!번의 성공적인 무역 거래를 성사시켰습니다. 거래를 더 많이 성사시킬수록 [GetTrait('RICE_volga_dnieper_merchant').GetName( GetNullCharacter )] [trait|E]를 획득할 확률이 높아집니다.#!" # 8274412191725187427
   RICE_volga_dnieper_number_of_successes_tooltip: "#weak 귀하는 이전에 [GetGeographicalRegion('RICE_volga_dnieper_trade_region').GetName]에 연결된 교역로를 따라 #V [GetPlayer.MakeScope.Var('RICE_volga_dnieper_merchant_success_count').GetValue]#! 건의 성공적인 상업 거래를 확보하셨습니다.#!" # 3854594276649503832
   galicia2.0012.t: "신에게 경의를 표하기" # 17639333994492582788
   galicia2.0012.desc: "슬라브 통치자로서 제 의무는 백성의 신들을 기리고, 그들의 축복을 받아 우리와 타인에게 우리가 진정으로 번영을 누리고 있음을 보여주는 것입니다. 우상을 세워 특정 신을 기리기로 선택함으로써, 저는 의심할 여지 없이 저의 신성한 후원자의 축복을 얻고, 통치자로서 제가 어떤 가치와 우선순위를 구현하는지 백성들에게 보여줄 것입니다." # 15009800966432665875

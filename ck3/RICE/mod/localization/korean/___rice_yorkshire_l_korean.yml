@@ -46,9 +46,9 @@
   RICE_yorkshire_stamford_bull_run_completed_log_title: "스탬퍼드 소몰이 행사에 참석 완료" # 14019051621251802081
   RICE_yorkshire_stamford_bull_run_completed_log: "[CHARACTER.GetShortUIName|U] 님께서 스탬퍼드 황소 돌진 행사에 참석을 마쳤습니다." # 2320840233452079049
   TRAVEL_NAME_FOR_activity_RICE_yorkshire_stamford_bull_run: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_yorkshire_stamford_bull_run$" # 383240668566254381
-  activity_RICE_yorkshire_beverley_pilgrimage_an_a: "$host_activity_a$" # 13713790857143020716
+  activity_RICE_yorkshire_beverley_pilgrimage_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_yorkshire_beverley_pilgrimage: "베벌리 순례" # 8655834564631197574
-  activity_RICE_yorkshire_beverley_pilgrimage_desc: "[saint_john_of_beverley|E]는 브리튼에서 가장 인기 있는 성인 중 한 명이며, 많은 순례자들이 그를 공경하기 위해 요크셔의 베벌리로 모여듭니다. 그에게 헌신하는 덕망 있는 통치자들은 힘과 승리의 축복을 받을 것이라고 전해집니다." # 11147291876691963206
+  activity_RICE_yorkshire_beverley_pilgrimage_desc: "[saint_john_of_beverley|E]는 브리튼에서 가장 널리 공경받는 성인 중 한 명으로, 수많은 순례자가 그를 기리기 위해 요크셔의 베벌리로 모여듭니다. 그에게 헌신하는 덕망 높은 통치자는 힘과 승리의 축복을 받을 것이라고 전해집니다." # 11403620234017808479
   activity_RICE_yorkshire_beverley_pilgrimage_selection_tooltip: "[local_pilgrimage|E]를 떠나 [saint_john_of_beverley|E]를 공경하십시오.\n\n$RICE_yorkshire_secure_canonization_of_john_of_beverley_context_tooltip$" # 15486265303598279365
   activity_RICE_yorkshire_beverley_pilgrimage_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ 이 [local_pilgrimage|E]를 완료하면 [saint_john_of_beverley|E]의 깃발을 빌리는 [decision|E]를 내릴 수 있는 능력을 얻게 됩니다.\n$BULLET_WITH_TAB$ 이 [local_pilgrimage|E]를 여러 번 수행하면 [saint_john_of_beverley|E]의 깃발을 빌리는 [decision|E]의 효과가 증가합니다." # 9664965257464444445
   activity_RICE_yorkshire_beverley_pilgrimage_guest_desc: "$activity_RICE_yorkshire_beverley_pilgrimage_host_desc$" # 13119892126080939978

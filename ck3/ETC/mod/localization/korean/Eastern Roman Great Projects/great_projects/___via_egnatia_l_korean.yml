@@ -1,0 +1,129 @@
+﻿l_korean:
+  great_project_type_via_egnatia_restoration: "비아 에그나티아 복구" # 4772042607213702806
+  great_project_type_via_egnatia_restoration_desc: "비아 에그나티아는 한때 발칸 반도에서 로마 권력의 거대한 동맥이었으며, 아드리아해 연안과 콘스탄티노폴리스를 잇는 공학의 경이였습니다. 수세기에 걸친 방치로 인해 도로의 일부는 무너졌고, 다리는 붕괴되었으며, 도로의 전 구간은 이제 산적들의 소굴이 되었습니다. 이러한 쇠퇴는 단순히 상징적인 문제가 아닙니다. 이는 동부와 서부 속주 사이의 무역을 억제하고, 우리 주둔군의 보급을 방해하며, 산악 내륙 지역에 대한 제국 권위의 투사를 약화시킵니다. 이제 이 중요한 가도를 복구할 때가 왔습니다. 이 기념비적인 사업에는 막대한 금화와 수년에 걸친 조직적인 노력이 필요할 것입니다. 복구가 완료되면, 이 도로는 상업의 새로운 황금기를 자극하고, 국경 요새에 항상 보급이 이루어지도록 보장하며, 효율적인 세금 징수를 가능하게 하여 발칸 반도를 수도와 끊어지지 않는 돌과 강철의 사슬로 묶어줄 것입니다." # 17790827601912958409
+  great_project_type_via_egnatia_restoration_contribution_imperial_survey: "제국 조사" # 17970156955724799681
+  great_project_type_via_egnatia_restoration_contribution_open_imperial_quarries: "제국 채석장 개설" # 15147921464181004378
+  great_project_type_via_egnatia_restoration_contribution_paving_the_strata: "도로 포장" # 527482615461097755
+  great_project_type_via_egnatia_restoration_contribution_finance_laborers: "노동자 자금 지원" # 16287079221957872522
+  great_project_type_via_egnatia_restoration_contribution_establish_road_outposts: "도로 전초 기지 설립" # 16669641280561386892
+  great_project_type_via_egnatia_restoration_contribution_construct_imperial_bridges: "제국 교량 건설" # 16529312461777537029
+  great_project_type_via_egnatia_restoration_contribution_organize_the_cursus: "쿠르수스 푸블리쿠스 조직" # 9048497810841846251
+  great_project_type_via_egnatia_restoration_contribution_found_imperial_stud_farms: "제국 마목장 설립" # 161056393374428988
+  VIA_EGNATIA_LOCATION_1_TOOLTIP: "브리시스 백작령이 당신의 영역 내에 있음" # 12425196640556995865
+  VIA_EGNATIA_LOCATION_2_TOOLTIP: "칼리오폴리스 백작령이 당신의 영역 내에 있음" # 14514754332154606357
+  VIA_EGNATIA_LOCATION_3_TOOLTIP: "모시노폴리스 백작령이 당신의 영역 내에 있음" # 14181264804651274221
+  VIA_EGNATIA_LOCATION_4_TOOLTIP: "세레스 백작령이 당신의 영역 내에 있음" # 4166056497992654106
+  VIA_EGNATIA_LOCATION_5_TOOLTIP: "베리아 백작령이 당신의 영역 내에 있음" # 7324142124043442222
+  VIA_EGNATIA_LOCATION_6_TOOLTIP: "테살로니카 백작령이 당신의 영역 내에 있음" # 17053116149580104980
+  VIA_EGNATIA_LOCATION_7_TOOLTIP: "오흐리드 백작령이 당신의 영역 내에 있음" # 3940070169073137314
+  VIA_EGNATIA_LOCATION_8_TOOLTIP: "안티파트레이아 백작령이 당신의 영역 내에 있음" # 17532575440237538988
+  VIA_EGNATIA_LOCATION_9_TOOLTIP: "디라키온 백작령이 당신의 영역 내에 있음" # 15369160556716824142
+  VIA_EGNATIA_LOCATION_10_TOOLTIP: "비잔티움 제국 작위를 보유함" # 14818536208865635014
+  AI_WILL_DO_VIA_EGNATIA_COUNTY_HOLDER: "비아 에그나티아를 따라 위치한 백작령을 보유함" # 170253256041436736
+  via_egnatia_reward_toast_title: "귀하의 공헌에 대한 보상입니다!" # 2498546846554597073
+  neglected_via_egnatia_modifier_desc: "한때 제국의 동맥이었던 위대한 비아 에그나티아가 개탄스러울 정도로 황폐해졌습니다. 보도블록은 약탈당했고, 다리는 무너졌으며, 길은 잡초로 뒤덮여 기회주의적인 도적들의 은신처가 되었습니다.\n\n이 경로를 따르는 상업은 쇠퇴하여 성장을 저해하고 권위를 세우기 어렵게 만들고 있습니다. 군대는 보급선이 압박받고 진흙과 잔해 속에서 진군 속도가 거북이걸음처럼 느려지는 것을 목격하고 있습니다.\n\n" # 11475084017913460837
+  neglected_via_egnatia_modifier: "방치된 비아 에그나티아" # 1536184970457082619
+  restored_via_egnatia_modifier_desc: "황제의 칙령과 막대한 노력 끝에 비아 에그나티아가 과거의 영광을 되찾았습니다. 보도블록이 다시 깔리고 다리가 재건되었으며 일정 간격으로 수비대가 배치되어 여행자들에게 빠르고 안전한 길이 되었습니다.\n\n상업이 다시 자유롭게 흐르며 이 길이 닿는 땅에 부와 번영을 가져다줍니다. 제국의 권위는 의심의 여지가 없으며, 군대는 이제 국경을 방어하기 위해 신속하고 충분한 보급을 받으며 행군할 수 있습니다. 이 길은 갱신된 제국의 힘과 번영의 증거입니다.\n\n" # 6468042878410104778
+  restored_via_egnatia_modifier: "복구된 비아 에그나티아" # 17337382536645212531
+  via_egnatia_quarry_surplus_modifier: "채석장 잉여분" # 2128474324748575327
+  via_egnatia_quarry_surplus_modifier_desc: "다시 문을 연 제국 채석장에서 고품질의 석재가 과잉 생산되고 있습니다.\n\n" # 5691954982552471704
+  via_egnatia_road_planner_modifier: "도로 계획가" # 13647618817470658367
+  via_egnatia_road_planner_modifier_desc: "비아 에그나티아를 측량한 이 인물의 경험은 그를 대규모 병참 계획의 전문가로 만들었습니다.\n\n" # 5432853215422648809
+  via_egnatia_master_of_logistics_modifier: "병참의 대가" # 7294940405086700184
+  via_egnatia_master_of_logistics_modifier_desc: "비아 에그나티아의 포장 자금을 지원한 경험은 이 인물에게 군사 병참에 관한 귀중한 교훈을 주었습니다.\n\n" # 4912059418726232941
+  via_egnatia_beloved_patron_modifier: "사랑받는 후원자" # 13167239716129078285
+  via_egnatia_beloved_patron_modifier_desc: "비아 에그나티아의 노동자들에게 아낌없이 자금을 지원한 이 인물은 평민들의 사랑을 받게 되었습니다.\n\n" # 6182308930220483671
+  via_egnatia_fortification_expert_modifier: "요새화 전문가" # 9243818302944842951
+  via_egnatia_fortification_expert_modifier_desc: "이 인물은 도로 초소 건설을 감독하며 방어 구조물에 대한 전문 지식을 갖추게 되었습니다.\n\n" # 3989646652057076199
+  via_egnatia_information_network_modifier: "정보망" # 1141728508049106550
+  via_egnatia_information_network_modifier_desc: "쿠르수스 푸블리쿠스를 재조직함으로써 이 인물은 더 빠른 정보 흐름에 접근할 수 있게 되었습니다.\n\n" # 16630147507904889832
+  via_egnatia_master_breeder_modifier: "사육의 대가" # 3179314279177402487
+  via_egnatia_master_breeder_modifier_desc: "제국 종마 사육장에 투자한 이 인물은 훌륭한 군마를 사육하는 전문가가 되었습니다.\n\n" # 6471151556404689107
+  via_egnatia_events.0001.t: "측량사의 보상" # 16689328884151725823
+  via_egnatia_events.0001.desc: "그들이 출발한 지 몇 주 후, 에그나티아 가도의 조사를 맡은 수석 측량사가 이끄는 먼지투성이지만 의기양양한 수행단이 궁정에 도착했습니다.\n\n거대한 평의회 탁자 위에 그들은 일련의 거대한 양피지 뭉치를 펼쳤습니다. 그것은 숨이 멎을 정도로 정교한 작업물로, 수도에서 아드리아해 연안에 이르는 고대 *strata*의 완전한 지도였습니다.\n\\\"주군, 옛 도로의 뼈대는 훌륭합니다\" 측량사가 길고 구불구불한 경로를 손가락으로 짚으며 보고합니다.\"수세기에 걸친 방치와 뻔뻔한 석재 도난으로 피해가 컸고, 많은 교량이 한때 가로질렀던 강물 속으로 무너져 내린 지 오래입니다. 하지만 로마의 기초는 튼튼합니다. 경로는 명확합니다\"\n\n오랫동안 보이지 않던 과업의 전체 규모가 마침내 파악되었습니다. 이 지식을 바탕으로 진정한 복구 작업이 시작될 수 있습니다." # 5143753296688792511
+  via_egnatia_events.0001.a: "나의 공헌이 인정받았군." # 8741042328280279313
+  via_egnatia_events.0002.t: "제국 채석장으로부터" # 17071792548199814314
+  via_egnatia_events.0002.desc: "본인의 자금 지원으로 제국 채석장이 개방되어 위대한 에그나티아 가도를 복구하는 데 필요한 석재가 공급되었습니다. 이 공로로 본인은 채석장 잉여분의 일부를 하사받았으며, 이는 분명 본인의 영지에 도움이 될 것입니다." # 15511977549797336129
+  via_egnatia_events.0002.a: "내 채석장이 제국을 지탱한다!" # 7040993262585195595
+  via_egnatia_events.0003.t: "길을 닦다" # 1474971166704390068
+  via_egnatia_events.0003.desc: "본인의 후원 덕분에 에그나티아 가도의 층(strata)이 새로이 포장되고 있습니다. 이 기념비적인 과업을 위한 병참을 조직하며 인원과 물자의 이동에 대해 많은 것을 배웠으니, 이는 위대한 지휘관들에게 걸맞은 경험입니다." # 1222736923522928357
+  via_egnatia_events.0003.a: "안전한 도로가 곧 안전한 제국이다." # 4284277843608996810
+  via_egnatia_events.0004.t: "백성의 후원자" # 1971564950588996290
+  via_egnatia_events.0004.desc: "에그나티아 가도에 필요한 노동자 군단에 자금을 지원함으로써, 본인은 경건함과 평민들에 대한 헌신을 증명했습니다. 백성들은 본인의 관대함을 목격했으며, 하느님조차 이 위대한 과업에 미소를 지으시는 듯합니다." # 11508935619218948830
+  via_egnatia_events.0004.a: "백성을 지원하는 것은 성스러운 행위다." # 10119477613550747073
+  via_egnatia_events.0005.t: "도로 수호" # 2615890938973751599
+  via_egnatia_events.0005.desc: "보호 없이는 도로가 취약해질 수밖에 없습니다. 본인의 자금은 에그나티아 가도를 따라 새로운 전초 기지와 감시탑을 세우는 데 도움을 주었으며, 여행자와 상인들을 위해 도로를 안전하게 확보했습니다. 방어 시설에 대한 본인의 전문 지식은 이제 널리 알려졌습니다." # 17496804364438787671
+  via_egnatia_events.0005.a: "우리의 감시탑은 영겁토록 서 있을 것이다." # 3504819121786174122
+  via_egnatia_events.0006.t: "간극을 잇는 교량" # 14859320727250050151
+  via_egnatia_events.0006.desc: "한때 강물이 전진을 가로막았던 곳에 이제 웅장한 새 교량들이 서 있으니, 이는 에그나티아 가도 복구에 대한 본인의 지원을 증명하는 것입니다. 이러한 공학적 위업은 대대로 회자될 것이며, 본인의 이름을 기리는 위대한 기념비가 될 것입니다." # 13462839438911564849
+  via_egnatia_events.0006.a: "우리의 독창성을 기리는 기념비로다!" # 2901270809938088775
+  via_egnatia_events.0007.t: "부활한 쿠르수스 푸블리쿠스" # 18166916203570833530
+  via_egnatia_events.0007.desc: "본인의 기여는 제국의 우편 및 정보 서비스인 고대 쿠르수스 푸블리쿠스를 복구하는 데 도움이 되었습니다. 전령과 역참의 연결망을 조직함으로써, 본인은 정보의 흐름... 그리고 비밀에 대한 독특한 통찰력을 얻었습니다." # 15847986794463279384
+  via_egnatia_events.0007.a: "정보는 우리 전령들만큼이나 빠르게 흐를 것입니다." # 18058975615539803510
+  via_egnatia_events.0008.t: "제국 마구간" # 17199000771705058940
+  via_egnatia_events.0008.desc: "전령의 속도는 그가 탄 말의 속도에 달려 있습니다. 새로운 제국 종마 사육장을 설립함으로써, 나는 쿠르수스 푸블리쿠스가 제국에서 가장 훌륭하고 빠른 말들로 운영되도록 보장했습니다. 이제 내 이름은 우수한 품종의 동물과 연관될 것입니다." # 16829200456479161217
+  via_egnatia_events.0008.a: "제국을 위한 최고의 말들을\" " # 3488531375067705223
+  via_egnatia_events.0009.t: "도로 위의 질서" # 10992502823629654896
+  via_egnatia_events.0009.d: "내가 자금을 지원한 *쿠라토레스 비아룸*이 이제 비아 에그나티아를 따라 배치되었다는 소식이 들려옵니다. 그들의 부지런한 노력은 이 거대한 도로의 매 마일마다 제국의 법과 효율적인 행정을 가져다주며, 앞으로도 오랫동안 영역의 자산으로 남을 수 있게 보장합니다." # 16330971047752902073
+  via_egnatia_events.0009.a: "효율적이고 정의로운 체계로군." # 1984912269727386460
+  via_egnatia_events.0010.t: "돌에 새겨지다" # 895350875982696774
+  via_egnatia_events.0010.d: "이정표와 기념비가 완성되었습니다! 매 마일마다 여행자들은 내 이름이 새겨진 표지석을 보게 될 것이며, 주요 교차로에는 내 통치의 증거로 웅장한 아치가 서 있습니다. 비아 에그나티아의 영광에 대한 나의 공헌은 모두가 볼 수 있도록 돌에 새겨졌습니다." # 14988019847815229354
+  via_egnatia_events.0010.a: "만대를 위한 유산이로다." # 9405056312010597473
+  via_egnatia_events.0011.t: "불멸의 업적" # 18404666114609759498
+  via_egnatia_events.0011.d: "비아 에그나티아 전 구간에 걸쳐 상설 유지보수팀이 조직되었습니다. 다른 이들이 영광을 위해 건설할 때, 나는 영원을 위해 건설했습니다. 이 위대한 도로는 이제 세월의 풍파로부터 보호받으며, 나의 선견지명과 신중함의 증거가 될 것입니다." # 4000241119913272873
+  via_egnatia_events.0011.a: "미래를 위한 확고한 토대군." # 14973058090828865642
+  via_egnatia_events.0012.t: "상업의 흐름" # 1254683604658722079
+  via_egnatia_events.0012.d: "내 국고로 지원한 거대한 카라반사라이들이 활기로 북적입니다! 알려진 세계 전역의 상인들이 안전과 상업의 안식처인 이곳으로 몰려듭니다. 시장에서 상인들은 내 이름을 연호하며 축배를 들고, 나의 금고는 그들의 번창하는 사업 수익으로 가득 차고 있습니다." # 544847908825902741
+  via_egnatia_events.0012.a: "이익은 현명한 투자를 따르는 법이지." # 348794553976152489
+  via_egnatia_events.0013.t: "황제의 평화" # 10468245406481206035
+  via_egnatia_events.0013.d: "정예 *비길레스 스트라토룸*이 이제 비아 에그나티아를 지속적으로 감시합니다. 그들의 경계심과 무용에 대한 소문이 퍼지고 있습니다. 산적들은 그들 앞에서 도망치고 상인들은 두려움 없이 여행합니다. 나의 권위가 이 거대한 도로의 구석구석에서 느껴집니다." # 17387914291965731268
+  via_egnatia_events.0013.a: "힘을 통한 안전이로군." # 11647405474037574304
+  via_egnatia_events.0014.t: "권력의 통행료" # 12517602804411674647
+  via_egnatia_events.0014.d: "에그나티아 가도를 따라 세워진 제국 교량들은 이제 두 가지 목적을 수행합니다. 요새화된 관문은 통행량을 조절하고, 충성스러운 통행료 징수원들은 모든 상단이 제국 국고에 기여하도록 보장합니다. 이 길은 안전할 뿐만 아니라 막대한 이익을 가져다줍니다." # 16488000235638674939
+  via_egnatia_events.0014.a: "모든 여행자는 마땅한 대가를 치러야 할 것이다." # 2049606272868328264
+  via_egnatia_events.0015.t: "생각의 속도" # 12826545243377999260
+  via_egnatia_events.0015.d: "쿠르수스 푸블리쿠스가 완전히 탈바꿈했습니다! 곳곳에 새로 들어선 역참 덕분에 이제 전령이 그 어느 때보다 빠르게 제국 전역을 누빕니다. 아무리 먼 궁정이라도 닿지 않는 곳이 없으며, 어떤 비밀도 오랫동안 감춰질 수 없습니다. 영토는 더 가깝게 느껴지고, 제 지배력은 더욱 공고해졌습니다." # 3189574318187609494
+  via_egnatia_events.0015.a: "정보는 곧 힘이다." # 6580828676543368805
+  via_egnatia_events.0016.t: "우수한 군마" # 14236294557033100714
+  via_egnatia_events.0016.d: "제국 마사들을 특성화하려는 야심 찬 계획이 큰 성공을 거두었습니다. 이제 기사들을 위한 중무장 돌격마뿐만 아니라, 전령들을 위한 빠른 경마와 상인들을 위한 지치지 않는 노새도 사육하고 있습니다. 우리 군마의 품질은 전 세계의 부러움을 사고 있습니다." # 15012012210486226700
+  via_egnatia_events.0016.a: "기병은 군대의 영혼이다." # 6106326831180271577
+  great_project_type_via_egnatia_improvement: "에그나티아 가도 개선" # 764809464699018499
+  great_project_type_via_egnatia_improvement_desc: "에그나티아 가도가 복구되어, 그 포석들이 다시 한번 제국의 대도시들을 연결하고 있습니다. 하지만 복구는 진정한 번영을 쌓아 올리기 위한 토대일 뿐입니다. 기능적인 도로와 상업 및 권력이 소용돌이치는 동맥은 전혀 다른 차원의 문제입니다.\n\n이 다음의 위대한 과업은 이 길을 단순한 고속도로에서 영토의 고동치는 심장으로 변화시킬 것입니다. 우리는 이를 관리할 공식 행정관직을 신설하고, 상인들에게 안식처를 제공할 거대한 카라반사라이에 자금을 지원하며, 안전을 보장하기 위한 순찰대를 조직할 것입니다. 이정표와 기념비로 길을 장식함으로써, 우리는 이곳을 제국의 위엄과 명성의 상징으로 만들 것입니다.\n\n과업이 끝나면 에그나티아 가도는 단순한 도로가 아닌, 우리의 비전을 보여주는 기념비이자 경제의 원동력이며 전 세계의 부러움의 대상이 될 것입니다." # 687164614607198767
+  great_project_type_via_egnatia_improvement_contribution_establish_road_magistracies: "도로 행정관직 신설" # 7455118200299423288
+  great_project_type_via_egnatia_improvement_contribution_erect_milestones: "이정표 및 기념비 건립" # 6628211489688588668
+  great_project_type_via_egnatia_improvement_contribution_organize_maintenance: "유지보수반 조직" # 18368240483705529520
+  great_project_type_via_egnatia_improvement_contribution_subsidize_caravanserais: "카라반사라이 보조금 지원" # 808562414966333198
+  great_project_type_via_egnatia_improvement_contribution_institute_patrols: "가도 순찰대 도입" # 10210418254912821061
+  great_project_type_via_egnatia_improvement_contribution_toll_bridges: "통행료 징수 교량 요새화 및 병력 배치" # 7859537743860299281
+  great_project_type_via_egnatia_improvement_contribution_expand_relay_network: "역참망 확장" # 1965369434379248729
+  great_project_type_via_egnatia_improvement_contribution_breeding_programs: "특성화 사육 프로그램" # 6522782412525195289
+  great_project_type_via_egnatia_improvement_contribution_establish_road_magistracies_desc: "도로 조사가 완료되었으니, 이제 통치할 차례입니다. 이 기부금은 통행료 징수, 교통 관리, 분쟁 해결을 담당하며 도로가 제국의 최고 수준으로 유지되도록 보장하는 제국 행정관인 쿠라토레스 비아룸의 임명에 사용될 것입니다." # 17823893633778987329
+  great_project_type_via_egnatia_improvement_contribution_erect_milestones_desc: "채석장은 도로의 기초를 닦을 돌을 제공했습니다. 이제는 도로를 영광스럽게 장식할 대리석을 제공할 것입니다. 우리는 매 마일마다 표시할 화려한 이정표를 조각하고 배치하며, 주요 교차로에는 우리의 위대한 업적을 기념하고 여행자들에게 경외심을 줄 웅장한 기념비와 아치를 세우는 데 자금을 지원할 것입니다." # 18403802842941591011
+  great_project_type_via_egnatia_improvement_contribution_organize_maintenance_desc: "위대한 도로는 한 번 건설되는 것이 아니라 영원히 유지되는 것입니다. 이 기여를 통해 노동자와 기술자로 구성된 상설 작업반을 설립하고 자금을 지원할 것입니다. 비아 에그나티아를 따라 배치된 이들의 유일한 임무는 균열 수리, 배수구 청소 등 도로를 지속적으로 관리하여 우리의 투자가 수 세기 동안 지속되도록 보장하는 것입니다." # 13395643716784497213
+  great_project_type_via_egnatia_improvement_contribution_subsidize_caravanserais_desc: "도로를 건설한 노동자들의 자리는 그 길을 여행하는 상인들로 대체되었습니다. 상업을 장려하기 위해 우리는 국가 보조금을 지원하는 대규모 카라반사라이 건설에 자금을 댈 것입니다. 이 웅장한 여관들은 급증하는 상인들에게 안전한 숙소와 광활한 시장, 그리고 보안이 철저한 마구간을 제공할 것입니다." # 125876186058450241
+  great_project_type_via_egnatia_improvement_contribution_institute_patrols_desc: "정적인 초소만으로는 한계가 있습니다. 진정한 안전을 보장하기 위해 비아 에그나티아를 적극적으로 순찰해야 합니다. 우리는 기마 도로 경비대인 비길레스 스트라토룸(Vigiles Stratorum)이라는 정예 부대를 창설하여 도로 전 구간을 누비며 도적들로부터 상단을 보호하고 제국의 권위를 땅 구석구석까지 떨칠 것입니다." # 9572027217625741120
+  great_project_type_via_egnatia_improvement_contribution_toll_bridges_desc: "교량은 교통과 상업의 핵심 동맥입니다. 교량에 성문을 세워 요새화하고 충성스러운 통행료 징수원을 배치함으로써 보안을 강화할 뿐만 아니라, 제국 국고의 중요하고 안정적인 수입원으로 탈바꿈시킬 것입니다." # 12464364367123336262
+  great_project_type_via_egnatia_improvement_contribution_expand_relay_network_desc: "제국 역참은 잘 작동하고 있으나 더 빨라질 수 있습니다. 이 기여를 통해 기존의 만시오네스(숙박소) 사이에 수십 개의 새로운 무타티오네스(교체소)를 건설할 것입니다. 통신망의 밀도를 높임으로써 전령들이 항상 신선한 말을 갈아탈 수 있게 하여 정보의 전달 속도를 획기적으로 높일 것입니다." # 13141928814463837449
+  great_project_type_via_egnatia_improvement_contribution_breeding_programs_desc: "우리의 종마 사육장은 그 가치를 증명했습니다. 이제 전문화할 때입니다. 이 프로그램을 통해 마구간을 다양화하여 중장기병용 군마뿐만 아니라 쿠르수스 푸블리쿠스를 위한 더 가볍고 빠른 말, 그리고 비아 에그나티아로 몰려드는 상단을 위한 유난히 강하고 튼튼한 노새를 번식시키는 데 집중할 것입니다." # 2570680836313771095
+  bustling_via_egnatia_modifier_desc: "비아 에그나티아의 복구는 시작에 불과했습니다. 평화의 번영과 집중적인 투자를 통해 이 위대한 도로는 이제 끊임없는 활기로 가득 차 있습니다. 동방의 비단을 실은 거대 상단이 북방의 모피를 파는 상인들과 스쳐 지나가며, 물자의 교류는 문화와 사상의 교류로 이어집니다.\n\n새로운 정착지들은 활기찬 도시로 피어났고, 쏟아져 들어오는 금과 물자는 그곳을 거대한 부의 중심지로 만들었습니다. 제국 순찰대와 요새화된 초소가 상주하면서 도적질은 옛이야기가 되었습니다. 이것은 이제 단순한 도로가 아닙니다. 번영하는 제국의 고동치는 심장입니다.\n\n" # 18384673597779733467
+  bustling_via_egnatia_modifier: "북적이는 비아 에그나티아" # 9672671628039643536
+  via_egnatia_broken_promises_modifier: "깨진 약속" # 1853353620922781007
+  via_egnatia_broken_promises_modifier_desc: "나는 온 왕국에 나의 치세를 기념할 비아 에그나티아의 복구라는 웅대한 비전을 선포했습니다. 그러나 이제 프로젝트는 버려졌고, 나의 말은 재가 되어 사라졌습니다. 석조 도로 대신 나는 실패의 유산을 쌓았으며, 이제 내 이름은 거창한 선언과 초라한 결과의 대명사가 되었습니다.\n\n" # 12280510058107304563
+  via_egnatia_dyrrachion_hub_modifier: "서방으로 가는 관문" # 4181140600693244101
+  via_egnatia_dyrrachion_hub_modifier_desc: "비아 에그나티아가 복구됨에 따라 디라키온은 이제 위대한 도로가 아드리아해와 만나는 웅장한 서쪽 종착지 역할을 수행합니다. 이탈리아와 그 너머에서 온 상인들이 항구로 몰려들어 물건을 내리고 제국의 심장부로 향하는 상단에 짐을 싣습니다. 도시는 상업과 군사 물류의 북적이고 부유한 중심지가 되었으며, 알려진 세계의 동부와 서부를 잇는 필수적인 연결 고리가 되었습니다.\n\n" # 17537842012979195547
+  via_egnatia_patron_of_order_modifier: "질서의 후원자" # 5423849810973981651
+  via_egnatia_patron_of_order_modifier_desc: "비아 에그나티아의 행정관직에 자금을 지원하고 감독한 경험을 통해 법과 행정에 대한 깊은 이해를 얻었습니다." # 3925669396106117245
+  via_egnatia_prudent_planner_modifier: "신중한 계획가" # 945348334562008305
+  via_egnatia_prudent_planner_modifier_desc: "위대한 도로를 위한 상설 유지보수반을 조직하면서 효율성과 장기 프로젝트 관리에 대한 귀중한 교훈을 얻었습니다. 이제 이 지식을 나의 모든 건설 사업에 적용할 수 있습니다." # 12349035645886359834
+  via_egnatia_vigilant_protector_modifier: "경계하는 보호자" # 6695565568623079532
+  via_egnatia_vigilant_protector_modifier_desc: "도로 순찰대를 조직한 일은 방어와 보안에 대한 나의 본능을 연마시켰습니다. 덕분에 나의 영지는 더욱 안전해졌습니다." # 8768788674785897327
+  via_egnatia_master_of_the_cursus_modifier: "쿠르수스의 주인" # 15037130335504247197
+  via_egnatia_master_of_the_cursus_modifier_desc: "제국 역참망을 확장하면서 인맥의 망을 형성했고 정보가 어떻게 이동하는지에 대해 예리하게 이해하게 되었습니다. 이 왕국에서 내 손이 닿지 않는 비밀은 거의 없습니다." # 4051941171657393455
+  via_egnatia_imperial_master_breeder_modifier: "제국 수석 사육사" # 7426205656267896466
+  via_egnatia_imperial_master_breeder_modifier_desc: "전문적인 번식 프로그램을 감독하며 축산 전문가가 되었습니다. 내 마구간은 최고의 군마를 생산하여 기사들과 보급 부대 모두에게 이득을 줍니다." # 12701142648130468966
+  via_egnatia_patrons_landmark_modifier: "후원자의 랜드마크" # 11359987831304248044
+  via_egnatia_patrons_landmark_modifier_desc: "이 백작령의 통치자가 자금을 지원한 웅장한 기념비는 에그나티아 가도에 대한 그들의 공헌을 증명하는 증거로 서 있습니다. 이곳은 순례자와 고위 인사들을 끌어모으며, 이 지역의 위신과 중요성을 더해줍니다." # 14599601005775239810
+  via_egnatia_flourishing_caravanserai_modifier: "번창하는 카라반사라이" # 1143748142757426761
+  via_egnatia_flourishing_caravanserai_modifier_desc: "통치자의 투자의 직접적인 결과로, 이 백작령에서는 국가 보조금을 받는 거대한 카라반사라이가 운영되고 있습니다. 이곳은 상업의 주요 중심지가 되어 지역에 상당한 부와 성장을 가져다주었습니다." # 1572301559309158227
+  via_egnatia_fortified_toll_bridge_modifier: "요새화된 통행료 징수 교량" # 2528939376289758907
+  via_egnatia_fortified_toll_bridge_modifier_desc: "통치자의 투자 덕분에 이 백작령의 중요한 교량이 요새화되고 병력이 배치되었습니다. 이제 이 다리는 강화된 방어력과 꾸준한 통행료 수입을 모두 제공합니다." # 3383050631699499765

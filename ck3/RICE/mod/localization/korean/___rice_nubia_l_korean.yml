@@ -1179,6 +1179,8 @@
   RICE_nubia_enjoys_making_karkade: "카르카데 만들기를 즐김" # 6010728466705807505
   RICE_nubia_enjoys_making_karkade_desc: "이 인물은 자신의 지위에 걸맞은지 여부와 상관없이, 그저 [Glossary( 'karkade', 'KARKADE_GLOSS' )]를 너무 좋아하기 때문에 하인들과 함께 그것을 만드는 데 참여하는 것을 즐깁니다." # 433507472204817498
   RICE_opinion_sibir_festival: "위대한 시비르 축제" # 13050329756048091323
+  RICE_nubia_drank_holy_texts: "성전을 마심" # 2109605723740316157
+  RICE_nubia_drank_holy_texts_desc: "이 인물은 최근 종교 경전의 구절을 적는 데 사용된 먹물을 마시는 아프리카의 의식에 참여했습니다." # 6946010867862887659
   RICE_nile_pastoralists_positive_modifier: "나일 농목축민과의 관계 개선" # 6306608061886194325
   RICE_nile_pastoralists_positive_modifier_desc: "[RICE_nile_river|E]의 이 지역을 따라 자리한 토착 농경 공동체들은 이 지역의 목축민 이웃들에게 더욱 우호적이고 친근한 태도를 길러왔습니다." # 9207219398760766203
   RICE_nile_pastoralists_positive_modifier_enhanced: "나일 농목민과의 관계 대폭 개선" # 15767606600617875258
@@ -1453,6 +1455,11 @@
   RICE_nile_empire_decision_effect_tooltip_2: "이집트나 누비아의 과거에 존재했던 여러 역사적 또는 전설적 인물 중 한 명의 후손임을 선포하기 위해 다양한 [legend_seeds|E] 중에서 귀하의 [dynasty|E]를 선택하게 될 것입니다." # 11131364589939826981
   RICE_nile_empire_decision_confirm: "나일강과 우리의 제국은 영원할 것이다!" # 1982746540620734584
   RICE_nile_empire_decision_context_tooltip: "#emphasis 역사적 배경:#! 이집트와 누비아는 역사 속 여러 시기에 하나의 제국 아래 통합된 적이 있습니다. 예를 들어, 고대 이집트 역사에서 이집트 파라오들은 여러 시기에 누비아를 지배했으며, 반대로 누비아의 왕들이 이집트를 정복하여 이집트 제25왕조를 세우기도 했습니다. 중세 후기에는 맘루크가 누비아의 일부를 정복하거나 봉신국으로 삼았습니다." # 471093562683939638
+  RICE_nubia_drink_holy_text: "[ROOT.Char.GetFaith.ReligiousText] 마시기" # 18247440249599143576
+  RICE_nubia_drink_holy_text_tooltip: "[ROOT.Char.GetFaith.ReligiousText]을 적는 데 사용된 먹물 마시기" # 14798299056923481738
+  RICE_nubia_drink_holy_text_desc: "일부 [ROOT.Char.GetCulture.GetName] [ROOT.Char.GetFaith.GetAdherentNamePlural] 사이에는 [ROOT.Char.GetFaith.ReligiousText]의 구절을 적는 데 사용된 먹물을 마시는 관습이 있습니다. 이 먹물은 의학적이고 기적적인 효능이 있다고 믿어집니다." # 6556387553807780498
+  RICE_nubia_drink_holy_text_confirm: "[ROOT.Char.GetFaith.HighGodName]의 축복은 여러 형태로 나타납니다." # 2171187437231068091
+  RICE_nubia_drink_holy_text_context_tooltip: "#emphasis 역사적 배경:#! 사하라 이남 아프리카의 일부 무슬림, 특히 수단이나 스와힐리 지역과 같은 동아프리카에서는 쿠란을 '마시는' 관습이 있습니다. 쿠란 구절을 깨끗한 표면에 (식용) 먹물로 쓴 다음 물로 씻어내며, 이 물과 먹물의 혼합물을 약으로 쓰거나 영적인 축복을 위해, 혹은 공부에 도움이 된다는 믿음으로 마십니다." # 436698509410946484
   nubia.0000.t: "xxxxx" # 1951045980481827005
   nubia.0000.desc: "xxxxx" # 1951045980481827005
   nubia.0000.a: "xxxxx" # 1951045980481827005
@@ -1570,9 +1577,9 @@
   nubia.0026.t: "xxxxx" # 1951045980481827005
   nubia.0026.desc: "xxxxx" # 1951045980481827005
   nubia.0026.a: "xxxxx" # 1951045980481827005
-  nubia.0027.t: "xxxxx" # 1951045980481827005
-  nubia.0027.desc: "xxxxx" # 1951045980481827005
-  nubia.0027.a: "xxxxx" # 1951045980481827005
+  nubia.0027.t: "[ROOT.Char.GetFaith.ReligiousText] 마시기" # 1026795024305358902
+  nubia.0027.desc: "[ROOT.Char.GetFaith.ReligiousText]은 기적적인 힘이 깃든 위대한 지혜와 지식의 원천입니다. 식용 성분으로 만든 먹물로 특별한 판 위에 [ROOT.Char.GetFaith.ReligiousText]의 구절을 적은 뒤, 물로 먹물을 씻어내어 그 혼합액을 마시는 관습은 [ROOT.Char.GetCulture.GetName] [ROOT.Char.GetFaith.GetAdjective]들 사이에서 잘 확립된 수행법입니다.\n\n나는 오늘 이 의식을 거행하기 위해 치유와 종교적 문제에 정통한 지역 [ROOT.Char.Custom('DefaultPriestTitle')]을 방문했습니다.\"이 액체를 잘 마시십시오\" 그가 내게 말했습니다.\"[ROOT.Char.GetFaith.HighGodName]께서 우리에게 자비롭게 내려주신 [ROOT.Char.GetFaith.ReligiousText]에 나타난 위대한 영적 힘을 내면화하십시오. 그 힘은 오직 [ROOT.Char.GetFaith.HighGodHerHis|U] 의지로부터만 나옵니다\"" # 16982689433391429817
+  nubia.0027.a: "이 축복을 내려주신 [ROOT.Char.GetFaith.HighGodName]을 찬양하라!" # 4827413834345256067
   nubia.0028.t: "xxxxx" # 1951045980481827005
   nubia.0028.desc: "xxxxx" # 1951045980481827005
   nubia.0028.a: "xxxxx" # 1951045980481827005

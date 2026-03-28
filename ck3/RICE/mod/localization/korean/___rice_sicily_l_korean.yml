@@ -373,6 +373,8 @@
   RICE_sicily_salerno_medical_text_artifact_desc: "이 의학 문헌은 [GetTitleByKey('c_salerno').GetNameNoTier]의 저명한 의학 학파 소속 의사이자 의학 학자들의 저작입니다. 다른 지역의 의학 서적을 번역한 것인지, 혹은 이전 학자들의 지식을 종합하여 독창적으로 집필한 것인지는 알 수 없으나, 이 학파의 훌륭한 의학 지식의 또 다른 본보기임에는 틀림없습니다." # 16355177876733053796
   RICE_sicily_ayo_visto_lo_mappamundi_name: "[ROOT.Char.Custom('RICE_sicily_ayo_visto_lo_mappamundi_song_name')]" # 15705841685984311192
   RICE_sicily_ayo_visto_lo_mappamundi_desc: "이것은 [alfonso.GetTitledFirstName]의 통치 기간 동안 [GetGeographicalRegion('custom_sicily').GetName]에서 유행했던 민요인 [ROOT.Char.Custom('RICE_sicily_ayo_visto_lo_mappamundi_song_name')]의 필사본입니다. 이 노래는 시칠리아의 아름다움을 찬양합니다." # 12998625674281518354
+  RICE_sicily_liber_pantegni_name: "리베르 판테그니" # 8866891260122472941
+  RICE_sicily_liber_pantegni_desc: "이것은 학자이자 의사인 [constantine.GetTitledFirstName]이 편찬한 의학서의 사본으로, [constantine.GetHerHis] 최고의 역작으로 평가받습니다. 지금까지 집필된 가장 포괄적인 의학서 중 하나인 이 책은 고대 헬레니즘 의학과 당대의 이슬람 의학을 집대성하여 [roman_culture.GetLanguage.GetName]로 번역한 것이며, 해부학과 외과학부터 생리학과 치료법에 이르기까지 광범위한 주제를 아우르고 있습니다." # 4027358495014042103
   building_type_RICE_sicily_mount_etna: "에트나 산" # 11078472443028871902
   building_type_RICE_sicily_mount_etna_desc: "지중해의 가장 위대한 산 중 하나인 에트나 산은 수세기 동안 전설과 민속의 대상이 되어 왔습니다. 고대에 이 화산은 종교적인 의미를 지녔는데, 신 불카누스, 혹은 헤파이스토스가 에트나 산 아래에 그의 대장간을 가지고 있다고 믿어졌기 때문입니다. 오늘날, 그 활동으로 생성된 화산 토양은 시칠리아에서 가장 비옥한 지역 중 하나로 인근 지역을 만들며, 시칠리아 자체도 이미 상당히 비옥한 곳입니다." # 18407333101251218767
   building_RICE_sicily_mount_etna: "$building_type_RICE_sicily_mount_etna$" # 5878136399176550128
@@ -429,6 +431,9 @@
   RICE_sicily_aspiration_andreas_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$비지주인 경우 [camp|E]를 이전하거나, 영주인 경우 [ruler|E]로서 [county|E]의 영주가 되십시오. 해당 [county|E]는 [GetReligionByKey('judaism_religion').GetAdjective] [faith|E]에 속하거나, [GetTitleByKey('c_alexandria').GetNameNoTier], [GetTitleByKey('c_cairo').GetNameNoTier], [GetTitleByKey('c_baghdad').GetNameNoTier], [GetTitleByKey('c_shiraz').GetNameNoTier], [GetTitleByKey('c_isfahan').GetNameNoTier], [GetTitleByKey('c_sanaa').GetNameNoTier] 또는 [GetTitleByKey('c_jerusalem').GetNameNoTier] 중 하나여야 합니다.\n$EFFECT_LIST_BULLET$ [piety_level|E]가 [GetModifier( 'piety_level_2' ).GetNameWithTooltip|L] 이상이어야 합니다.\n$EFFECT_LIST_BULLET$ [GetReligionByKey('judaism_religion').GetAdjective] [faith|E]를 유지해야 합니다.\n\n#bold Rewards#!\n$EFFECT_LIST_BULLET$@prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [prestige|E] 획득\n$EFFECT_LIST_BULLET$@piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [piety|E] 획득\n$EFFECT_LIST_BULLET$@gold_icon! #V [EmptyScope.ScriptValue('RICE_sicily_andreas_aspiration_achieved_gold_value')]#! [gold|E] 획득\n\n#bold [historical_aspiration_bonus_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait|E] 획득 (@piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_small_resource_bonus')]#! [piety|E] 및 [learning_lifestyle|E] [perk|E] 획득)\n$EFFECT_LIST_BULLET$ [GetReligionByKey('judaism_religion').GetAdjective] [faith|E]를 가진 [followers|E] 또는 [courtiers|E]가 자신의 [dynasty|E]나 [spouse|E] 또는 [child|E]에 속하지 않는 인물을 최소 세 명 보유 (@piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [piety|E] 및 [diplomacy_lifestyle|E] [perk|E] 획득)" # 7428660303887479133
   RICE_sicily_historical_aspiration_action_andreas: "#italic 그대는 한때 바리의 기독교 대주교였으나, 주님께서 그대의 마음에 모세의 토라에 대한 사랑을 심어주셨습니다. 아아, 그대는 더 이상 기독교 국가에서 안전하지 않으니, 이제 (상대적으로) 더 안전할 중동의 유대교 중심지로 향해야 할 것입니다. 어쩌면 다른 유대인들이나 잠재적인 유대인들이 그대의 영웅적인 여정에 고무될 수도 있겠지요!#!$RICE_sicily_aspiration_andreas_desc$" # 13551052072500359984
   RICE_sicily_historical_aspiration_modifier_desc_andreas: "[GetModifier('RICE_sicily_aspiration_find_jewish_refuge').GetNameWithTooltip]" # 7598010981818528300
+  RICE_sicily_aspiration_constantine_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetGeographicalRegion('world_europe_south_italy').GetName]에 [adventurer|E]로서 머무르거나 해당 [region|E] 내에 최소 하나의 [county|E]를 소유하기\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_sicilian_ruler').GetName( GetNullCharacter )] [trait|E]의 @RICE_sicily_latin_icon! [sicily_latin|E] 트랙에서 최소 #V 75#! [trait_level_track_xp|E]에 도달하기\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_sicilian_ruler').GetName( GetNullCharacter )] [trait|E]의 @RICE_sicily_greek_icon! [sicily_greek|E] 및 @RICE_sicily_arabic_icon! [sicily_arabic|E] 트랙에서 최소 #V 50#! [trait_level_track_xp|E]에 도달하기\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_physician').GetName( GetNullCharacter )] [trait|E]의 [trait_level_track_xp|E]를 #V 100#! 달성하기\n$EFFECT_LIST_BULLET$$RICE_sicily_constantine_the_african_decision$ [decision|E]을 최소 #V 10#!회 완료하기\n$EFFECT_LIST_BULLET$ [piety_level|E]이 [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] 이상이거나 [prestige_level|E]이 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상이기\n\n#bold 보상#!\n$EFFECT_LIST_BULLET$#V 리베르 판테그니(Liber Pantegni)#! [artifact|E] 획득\n$EFFECT_LIST_BULLET$@prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [prestige|E] 획득\n$EFFECT_LIST_BULLET$ [education_trait|E] 강화\n$EFFECT_LIST_BULLET$ [GetModifier('RICE_sicily_constantine_the_african_modifier').GetNameWithTooltip] [modifier|E] 강화\n\n#bold [historical_aspiration_bonus_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetReligionByKey('christianity_religion').GetAdjective] [faith|E] 유지 (@piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [piety|E] 및 @gold_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_small_resource_bonus')]#! [gold|E] 획득)\n$EFFECT_LIST_BULLET$ [landed|E] [ruler|E]인 [friend|E] 혹은 [best_friend|E]를 최소 한 명 보유 ([diplomacy_lifestyle|E] [perk|E] 획득)\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_sicilian_ruler').GetName( GetNullCharacter )] [trait|E]의 @RICE_sicily_latin_icon! [sicily_latin|E] 트랙에서 최소 #V 100#! [trait_level_track_xp|E]에 도달하기 ([stewardship_lifestyle|E] [perk|E] 획득)" # 5756184155652629148
+  RICE_sicily_historical_aspiration_action_constantine: "#italic 본래 아프리카 출신의 상인이었던 당신은 위대한 살레르노 의학교에서조차 이탈리아의 의학 지식이 부족하다는 사실에 당혹감을 느꼈습니다. 고향에서 의학을 공부했던 당신은 헬레니즘과 이슬람의 의학 지식을 이탈리아 전역에 전파하는 것을 평생의 사명으로 삼았습니다.#!$RICE_sicily_aspiration_constantine_desc$" # 11267540878060838230
+  RICE_sicily_historical_aspiration_modifier_desc_constantine: "[GetModifier('RICE_sicily_aspiration_disseminate_modern_medicine').GetNameWithTooltip]" # 4273780214361443069
   RICE_sicily_aspiration_establish_islam_in_southern_italy: "[RICE_aspiration|E]: 남부 이탈리아에 이슬람 거점 확보" # 1838606956816489567
   RICE_sicily_aspiration_establish_islam_in_southern_italy_desc: "#italic 압바스 왕조가 혼란에 빠지고 대부분의 무슬림들이 바리 토후국을 다르 알 이슬람의 무법지대 변경으로 치부하는 상황에서, 사우단은 바리라는 신생 식민지를 모든 종류의 적으로부터 방어하는 데 앞장서야만 이탈리아에 이슬람을 영구적으로 정착시킬 수 있을 것입니다.#!$RICE_sicily_aspiration_sawdan_desc$\n\n" # 16167925715440113639
   RICE_sicily_aspiration_complete_conquest_of_sicily: "[RICE_aspiration|E]: 시칠리아 정복 완료" # 6851069948419471556
@@ -437,6 +442,8 @@
   RICE_sicily_aspiration_reunify_sicily_desc: "#italic 칼비드 에미리트의 붕괴는 시칠리아의 타이파(Taifa)들 사이에 수년간의 내전을 초래했습니다. 강력한 지도자가 일어나 시칠리아의 무슬림 신도들을 통합하고 위험한 침략자로 변모한 노르만 용병들에 대한 통제권을 회복해야 합니다!#$RICE_sicily_aspiration_benavert_desc$\n\n" # 15487042463809027975
   RICE_sicily_aspiration_find_jewish_refuge: "[RICE_aspiration|E]: 유대인 피난처 찾기" # 12286741752960826458
   RICE_sicily_aspiration_find_jewish_refuge_desc: "#italic 안드레아스는 한때 바리의 기독교 대주교였으나, 주님께서 그의 마음에 모세의 토라에 대한 사랑을 심어주셨습니다. 아아, 이제 그는 더 이상 기독교 땅에서 안전하지 않으니, 그는 (비교적) 더 안전할 유대인 중심지인 중동으로 향해야 합니다. 그곳에서 어쩌면 다른 유대인들이나 잠재적인 유대인들도 그의 영웅적인 여정에 영감을 받을 수도 있을 것입니다!#!$RICE_sicily_aspiration_andreas_desc$\n\n" # 6873082743399438763
+  RICE_sicily_aspiration_disseminate_modern_medicine: "[RICE_aspiration|E]: 이탈리아에 의학 지식 전파" # 5986592204528428246
+  RICE_sicily_aspiration_disseminate_modern_medicine_desc: "#italic 본래 아프리카 출신의 상인이었던 콘스탄티누스는 위대한 살레르노 의학교에서조차 이탈리아의 의학 지식이 부족하다는 사실에 당혹감을 느꼈습니다. 고향에서 의학을 공부했던 그는 헬레니즘과 이슬람의 의학 지식을 이탈리아 전역에 전파하는 것을 평생의 사명으로 삼았습니다.#!$RICE_sicily_aspiration_constantine_desc$" # 10881769736321759163
   RICE_sicily_legacy_track_name: "경계성" # 1091250949091939530
   RICE_sicily_legacy_track_desc: "세 세계의 경계에서 우리의 운명과 고향을 찾으며." # 16210400051429444058
   RICE_sicily_legacy_1_name: "삼중 부족민" # 15674077399503784836
@@ -685,6 +692,13 @@
   RICE_sicily_almadraba_modifier_desc: "지역 통치자들은 지중해에서 대서양으로 이동하는 특정 시기에 대규모 참치를 잡기 위해 정교한 그물망을 설치하여 포획하는, 소위 [GetPlayer.Custom('RICE_almadraba')] 방식에 의존하는 참치 어업에 재정적 지원을 해왔습니다." # 11205375640048771337
   RICE_sicily_andreas_archbishop_of_bari_modifier: "바리 전 대주교" # 6196176279520860519
   RICE_sicily_andreas_archbishop_of_bari_modifier_desc: "이 인물은 한때 바리의 대주교였으며 그 직위의 세속적인 영광을 누렸으나, 마음을 바꿔 유대교로 개종했습니다. 그는 작위를 버리고 다른 기독교인들의 증오로 인해 많은 고통을 겪었음에도 불구하고, 다른 누구보다도 역경과 위험에서 살아남았기에 더 높은 힘의 보호를 받고 있다고 전해집니다." # 15277087799769258797
+  RICE_sicily_constantine_the_african_modifier: "카르타고 의원" # 3050196026993384031
+  RICE_sicily_constantine_the_african_modifier_desc: "기독교인들 사이에서 아프리카인 콘스탄티누스로 알려진 그는 본래 북아프리카 출신의 교육 수준이 높은 상인이었으나, 이후 이탈리아 전역에 의학 지식을 전파하는 것을 평생의 사명으로 삼았습니다." # 10267637164271869873
+  RICE_sicily_constantine_the_african_modifier_upgraded: "위대한 카르타고 의사" # 15894412437671594663
+  RICE_sicily_constantine_the_african_modifier_upgraded_desc: "기독교인들에게 아프리카인 콘스탄티누스로 알려진 그는 본래 북아프리카 출신의 학식 높은 상인이었으나, 이후 헬레니즘과 이슬람의 의학 지식을 집대성하여 라틴 세계에 공헌하고자 최초의 라틴어 종합 의학서 중 하나인 #italic 리베르 판테그니#!를 저술하였습니다. 그는 이를 통해 이탈리아 전역에 의학 지식을 전파하려던 필생의 과업을 완수해냈습니다." # 425916582905811002
+  RICE_sicily_constantine_latin_modifier: "의학 문헌을 라틴어로 번역하기" # 4525260284722570443
+  RICE_sicily_constantine_greek_modifier: "헬레니즘 의학 문헌 수집 및 연구" # 12639302584175895740
+  RICE_sicily_constantine_arabic_modifier: "이슬람 의학 서적 수집 및 연구" # 16321919893850253058
   RICE_sicily_virgil_modifier_intro: "베르길리우스의 신탁" # 7797439312574889253
   RICE_sicily_virgil_modifier_intro_desc: "#italic 베르길리우스의 점술#!, 즉 베르길리우스의 시를 이용한 점술을 행한 후, 이 인물은 베르길리우스의 #italic 아이네이스#!에서 다음 구절을 뽑았습니다:" # 14910982496803387991
   RICE_sicily_virgil_positive_modifier_1: "$RICE_sicily_virgil_modifier_intro$" # 6999102761057277332
@@ -1006,6 +1020,22 @@
   RICE_sicily_embed_into_sicily_effect_tooltip_1: "선택에 따라 [GetTrait('RICE_sicilian_ruler').GetName( GetNullCharacter )] [trait|E]의 [sicily_latin_dominance_i|E] [sicily_latin|E], [sicily_greek_dominance_i|E] [sicily_greek|E], 또는 [sicily_arabic_dominance_i|E] [sicily_arabic|E] [trait_level_track|E]에서 #V [EmptyScope.ScriptValue('RICE_sicily_signore_trait_xp_gain_medium')]#! [trait_level_track_xp|E]를 획득합니다." # 911494496083191725
   RICE_sicily_embed_into_sicily_confirm: "$RICE_sicily_occupy_sicilian_frontier_confirm$" # 11682894078271547860
   RICE_sicily_embed_into_sicily_context_tooltip: "$RICE_sicily_occupy_sicilian_frontier_context_tooltip$" # 735374218432206944
+  RICE_sicily_constantine_the_african_decision: "의학 지식 수집" # 8077357640802911901
+  RICE_sicily_constantine_the_african_decision_tooltip: "[GetGeographicalRegion('world_europe_south_italy').GetName]에 새로운 의학 지식을 전파하는 것이 제 일생의 사명입니다!" # 2593411708337858312
+  RICE_sicily_constantine_the_african_decision_desc: "나는 이슬람과 헬레니즘 세계의 방대한 의학 지식을 수집하여, 이를 [GetGeographicalRegion('world_europe_south_italy').GetName]와 그 너머의 사람들에게 가르치는 것을 일생의 사명으로 삼았습니다." # 6858605001423416672
+  RICE_sicily_constantine_the_african_decision_effect_tooltip_1: "[historical_aspiration|E]가 완료되면 #V 리베르 판테그니#! [artifact|E]를 받게 됩니다." # 14669391762047624588
+  RICE_sicily_constantine_the_african_decision_confirm: "의학 지식은 널리 공유되어야 합니다!" # 9047378014959592562
+  RICE_sicily_constantine_the_african_decision_context_tooltip: "#emphasis 역사적 배경:#! xxxxx" # 15679297959543210897
+  RICE_constantine_latin_option_name: "트랜슬레이트 인투 라틴" # 1507787897178327912
+  RICE_constantine_latin_option_desc: "$RICE_constantine_latin_option_name$" # 3640412462766805369
+  RICE_constantine_latin_option_tooltip: "#weak 이탈리아의 학자들이 그 안에 담긴 복잡하고 난해한 정보를 이해하려면 헬레니즘 및 이슬람 의학 서적의 훌륭한 번역이 필요합니다.#!" # 16055040220860719609
+  RICE_constantine_greek_option_name: "스터디 에인션트 그레코로만 텍스트" # 7375121331778582196
+  RICE_constantine_greek_option_desc: "$RICE_constantine_greek_option_name$" # 6527006386280305744
+  RICE_constantine_greek_option_tooltip: "#weak 고대 그리스와 로마의 학자들은 비록 그들의 사상 중 일부가 새로운 발견으로 대체되었을지라도, 비할 데 없는 지식의 원천입니다.#!" # 510661486990521302
+  RICE_constantine_arabic_option_name: "스터디 미들 이스턴 텍스트" # 2989271129631789452
+  RICE_constantine_arabic_option_desc: "$RICE_constantine_greek_option_name$" # 6527006386280305744
+  RICE_constantine_arabic_option_tooltip: "#weak 최근 중동 전역에는 다양한 신앙과 문화 출신의 수많은 사상가가 등장하여 의학에 대한 우리의 지식을 크게 확장시켰습니다.#!" # 2958631505935366942
+  CHOOSE_CONSTANTINE_ACTION: "의학 지식을 어떻게 더 발전시킬 수 있겠습니까?" # 509537412086071968
   sicily.0000.t: "xxxxx" # 1951045980481827005
   sicily.0000.desc: "xxxxx" # 1951045980481827005
   sicily.0000.a: "xxxxx" # 1951045980481827005
@@ -1703,27 +1733,33 @@
   sicily.0187.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
   sicily.0187.desc: "저는 이스라엘의 [ROOT.Char.GetFaith.HighGodName]시여, 제가 시련과 고난을 이겨낼 수 있도록 보호해 주시리라 기도했습니다. 주님께서 저를 사랑하셨기에, 저는 살아남았습니다.\n\n저는 [GetGeographicalRegion('world_middle_east').GetName]에 있는 [GetReligionByKey('judaism_religion').GetAdherentNamePlural]들의 안식처에 도착했습니다. 이곳은 우리가 많은 수로 모여 살며 훌륭한 공동체를 이루고 있는 곳입니다. 우리의 안전과 생명 자체가 지역 통치자들의 변덕에 달려 있기에 진정으로 안전한 고향이란 곳은 없지만, [GetTitleByKey('c_bari').GetNameNoTier]에 있을 때보다는 훨씬 낫습니다.\n\n이곳의 동족 [GetReligionByKey('judaism_religion').GetAdherentNamePluralNoTooltip] 중 일부는 제가 #italic 한때#! [GetReligionByKey('christianity_religion').GetAdjective] 대주교였다는 사실 때문에 제 개종의 진정성을 의심하지만, 훨씬 더 많은 이들이 저를 두 팔 벌려 환영해 주었습니다. 그들은 저에게서 자신들의 고난을 보았고, 제가 겪은 고초를 이야기할 때 함께 울었으며, 제가 주님, [ROOT.Char.GetFaith.HighGodNameAlternate]께서 저와 이 모든 이들을 향해 가지신 사랑에 대해 이야기할 때 환호했고, 저를 가족처럼 받아들여 주었습니다. 마침내 진정한 안식처를 찾았습니다." # 4871592914062028282
   sicily.0187.a: "[ROOT.Char.GetFaith.HighGodName]이시여, 저를 이곳으로 인도해 주시니 감사합니다." # 10165717648718827650
-  sicily.0188.t: "xxxxx" # 1951045980481827005
-  sicily.0188.desc: "xxxxx" # 1951045980481827005
-  sicily.0188.a: "xxxxx" # 1951045980481827005
-  sicily.0189.t: "xxxxx" # 1951045980481827005
-  sicily.0189.desc: "xxxxx" # 1951045980481827005
-  sicily.0189.a: "xxxxx" # 1951045980481827005
-  sicily.0190.t: "xxxxx" # 1951045980481827005
-  sicily.0190.desc: "xxxxx" # 1951045980481827005
-  sicily.0190.a: "xxxxx" # 1951045980481827005
-  sicily.0191.t: "xxxxx" # 1951045980481827005
-  sicily.0191.desc: "xxxxx" # 1951045980481827005
-  sicily.0191.a: "xxxxx" # 1951045980481827005
-  sicily.0192.t: "xxxxx" # 1951045980481827005
-  sicily.0192.desc: "xxxxx" # 1951045980481827005
-  sicily.0192.a: "xxxxx" # 1951045980481827005
-  sicily.0193.t: "xxxxx" # 1951045980481827005
-  sicily.0193.desc: "xxxxx" # 1951045980481827005
-  sicily.0193.a: "xxxxx" # 1951045980481827005
-  sicily.0194.t: "xxxxx" # 1951045980481827005
-  sicily.0194.desc: "xxxxx" # 1951045980481827005
-  sicily.0194.a: "xxxxx" # 1951045980481827005
+  sicily.0188.t: "카르타고 의원" # 3050196026993384031
+  sicily.0188.desc: "본인은 한때 긍지 높은 카르타고가 서 있던 곳 근처인 [GetGeographicalRegion('custom_roman_africa').GetName]에서 왔소. 비록 여러 학문을 익히긴 했으나, 본래 상인으로서 삶을 시작했지. 하지만 업무차 [GetGeographicalRegion('world_europe_south_italy').GetName]에 왔을 때, 이곳의 부족한 의학 지식에 큰 충격을 받았다오. 그리하여 내가 배운 의학 지식을 이곳 사람들에게 전파하는 것을 일생의 목표로 삼게 되었지.\n\n가능한 한 많은 헬레니즘과 이슬람 학문의 두루마리를 구하기 위해 고향으로 돌아갔으나, 아아, 돌아오는 길에 우리 배가 폭풍을 만나고 말았소. 다행히 다친 곳은 없었지만, 많은 두루마리가 훼손되고 말았지.\n\n그럼에도 불구하고, 이곳의 일부 사람들, 특히 귀족과 성직자들 사이에서 환대를 받게 되었소. [GetReligionByKey('islam_religion').GetName]이 지배하는 땅에서 온 [GetReligionByKey('christianity_religion').GetAdherentName]라는 나의 출신 성분은 그들의 호기심을 자극했소. 내가 개종자인지, 아니면 점차 사라져가는 고대 [african_roman_culture.GetName] 공동체 출신인지 궁금해하는 소문이 들리더군." # 8295170364216989638
+  sicily.0188.a: "저는 카르타고와 [GetGeographicalRegion('custom_roman_africa').GetNameNoTooltip]의 자랑스러운 아들입니다!" # 12105373712821456883
+  sicily.0188.b: "[GetReligionByKey('christianity_religion').GetAdjectiveNoTooltip] 가르침이 설득력 있다고 느껴 개종하였습니다." # 8315479672770049174
+  sicily.0188.info: "#emphasis 역사적 배경:#! 콘스탄티누스는 11세기에 사업차 이탈리아로 건너간 북아프리카 출신의 상인이었습니다. 그는 의학에 어느 정도 지식이 있었으며, 전해지는 바에 따르면 당시 이탈리아의 열악한 의학 지식 수준에 큰 충격을 받아 헬레니즘 및 이슬람 의학을 전파하는 데 평생을 바쳤고, 결국 유명한 몬테카시노에 수도사로서 정착했습니다. 현대 학계는 그가 기독교로 개종한 무슬림이었는지, 아니면 중세 후기까지 북아프리카 방언의 로망스어를 사용했던 것으로 확인되는 북아프리카의 쇠퇴해가는 토착 기독교 공동체의 일원이었는지에 대해 확신하지 못하고 있습니다." # 10142387705443253365
+  sicily.0189.t: "$sicily.0188.t$" # 7812155200632363696
+  sicily.0189.desc: "하지만 [GetGeographicalRegion('world_europe_south_italy').GetName](으)로 돌아온 것은 이 땅의 학자들과 의사들에게 고금의 가장 지혜로운 의학적 가르침을 전파하려는 제 여정의 첫걸음일 뿐입니다.\n\n저는 이곳의 유명한 의학교 때문에 특별히 [GetTitleByKey('c_salerno').GetNameNoTier](으)로 왔으며, 그곳의 교직원들과 학생들은 저를 기꺼이 환영해 주었습니다. 여정 중에 저는 두 명의 유망한 제자도 얻었습니다. 유명한 몬테카시노 출신의 수도사인 [atto.GetFirstName]와, 이전에 [GetReligionByKey('christianity_religion').GetName](으)로 개종한 북아프리카 동포인 [johannes.GetFirstName]입니다.\n\n제 인생의 새로운 장을 시작하며, 제 평생의 과업에 온전히 집중할 수 있도록 저 또한 수도사가 되어야 할지 고민이 됩니다...." # 10494267092222404251
+  sicily.0189.a: "세속적인 인맥을 갖는 것에는 나름의 이점이 있습니다." # 6095499976884213365
+  sicily.0189.b: "나는 수도자로서의 소명을 찾았다." # 12640166927524937896
+  sicily.0189.info: "#emphasis 역사적 배경:#! 아프리카인 콘스탄티누스는 생애 어느 시점에 베네딕토회 수도사가 되었습니다. 그는 1077년 유명한 몬테카시노 수도원에 입회하여 여러 제자의 도움을 받으며 의학 서적을 번역하고 저술했습니다. 그의 저술에 따르면 그가 아들이나 친구처럼 아꼈던 가장 가까운 두 제자는 몬테카시노의 동료 수도사인 아토와 요하네스 아플라키우스라는 인물이었습니다. 요하네스 아플라키우스는 기독교로 개종한 무슬림 아랍인이었을 가능성이 있으며, 본명은 야히아 이븐 아플라였을 것으로 추정됩니다." # 1152696909966866925
+  sicily.0190.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
+  sicily.0190.desc: "촛불에 겨우 의지한 채 오래된 필사본 위로 몸을 굽히고 보낸 수많은 밤... 서적과 두루마리에 관한 아주 작은 소문이라도 찾아 헤매며 보낸 셀 수 없는 나날... 그리고 고된 노력과 걱정, 이것이 진정 내 삶의 운명인지 [ROOT.Char.GetFaith.HighGodName]께 되물으며 보낸 세월들....\n\n[GetGeographicalRegion('world_europe_south_italy').GetName] 전역에 가능한 한 많은 의학 지식을 전파하기 위해 최선을 다하고 있기에 나의 과업은 결코 끝나지 않을 것입니다. 미래의 학자들과 의사들이 과거 위인들의 업적을 토대로 발전할 수 있도록 보장하기 위해 해야 할 일은 언제나 산더미처럼 남아 있습니다.\n\n하지만 헬레니즘과 이슬람의 의학을 [roman_culture.GetLanguage.GetName]로 번역한 요약본인 #italic 리베르 판테그니#!를 완성했으니, 이제 나의 과업도 한결 수월해질 것입니다. 혹자는 번역을 비판하거나 저술의 질을 의심할지도 모르나, 그 어떤 학자가 이토록 방대한 정보를 이만큼 포괄적인 방식으로 엮어낸 적이 있었습니까?" # 15101852173326366177
+  sicily.0190.a: "후대가 이 일의 덕을 보게 될 것입니다!" # 5181982832957054153
+  sicily.0190.artifact_tooltip: "주변의 [rulers|E]는 #italic 리베르 판테그니#!의 사본을 [artifact|E]로 받을 수 있습니다." # 18202489081357199119
+  sicily.0191.t: "리베르 판테그니" # 3277895932397247074
+  sicily.0191.desc: "고대 도시 카르타고 인근의 [GetGeographicalRegion('custom_roman_africa').GetName] 출신 학자이자 의사인 [constantine.GetFullName] (은)는 최근 몇 년 동안 [GetGeographicalRegion('world_europe_south_italy').GetName]에서 교사, 번역가, 그리고 의학 지식의 전파자로서 [constantine.GetHerselfHimself]의 명성을 떨치고 있습니다.\n\n최근 그는 [constantine.GetHerHis] #italic 리베르 판테그니#!를 완성했습니다. 이는 헬레니즘과 이슬람 의학을 [roman_culture.GetLanguage.GetName](으)로 번역한 요약서입니다. 서방의 어떤 학자도 이토록 포괄적인 의학 지식 모음집을 편찬한 적이 없었으며, 내 영지의 의사들과 학자들이 혜택을 입을 수 있도록 그 사본 한 권이 제게도 전달되었습니다." # 12661424436881482580
+  sicily.0191.a: "이 자의 노고가 많은 이들의 고통을 덜어줄 것이오." # 5573387050869354792
+  sicily.0192.intro: "[GetGeographicalRegion('world_europe_south_italy').GetName]에서 찾아볼 수 있는 빈약한 의학 지식은 이 지역에 유통되는 헬레니즘 및 이슬람 의학 서적의 [roman_culture.GetLanguage.GetName] 번역본이 부족하기 때문이기도 합니다.\n\n" # 11041494702152615102
+  sicily.0192.t: "라틴어 번역" # 4826933090996952288
+  sicily.0192.desc: "$sicily.0192.intro$최근 번역이 필요한 의학 서적 몇 권을 확인했습니다. 아직 적절한 [roman_culture.GetLanguage.GetNameNoTooltip] 번역본을 찾지 못했기 때문입니다. 이 지역에 의학 지식을 전파하려면, 제가 직접 이 서적들을 번역하는 작업을 수행해야만 합니다." # 17770266431696949988
+  sicily.0192.a: "작업을 시작하지...." # 1966805419602853231
+  sicily.0193.t: "헬레니즘 의학" # 16287488649605538160
+  sicily.0193.desc: "$sicily.0192.intro$최근 오래된 헬레니즘 의학 서적의 사본 몇 권을 발견했습니다. 이를 연구하고 어떤 지식을 얻을 수 있을지 살펴보는 데 시간이 좀 필요할 것 같습니다. 유용한 의학 정보임이 증명된다면, 이를 전파하기 위해 최선을 다하겠습니다." # 17800133217859637123
+  sicily.0193.a: "$sicily.0192.a$" # 173875555032157302
+  sicily.0194.t: "이슬람 의학" # 16984145140885686097
+  sicily.0194.desc: "$sicily.0192.intro$최근 중동의 의학 서적 사본 몇 권을 발견했습니다. 이를 연구하고 어떤 지식을 얻을 수 있을지 살펴보는 데 시간이 좀 필요할 것 같습니다. 유용한 의학 정보임이 증명된다면, 이를 전파하기 위해 최선을 다하겠습니다." # 17461269845067840035
+  sicily.0194.a: "$sicily.0192.a$" # 173875555032157302
   sicily.0195.t: "xxxxx" # 1951045980481827005
   sicily.0195.desc: "xxxxx" # 1951045980481827005
   sicily.0195.a: "xxxxx" # 1951045980481827005

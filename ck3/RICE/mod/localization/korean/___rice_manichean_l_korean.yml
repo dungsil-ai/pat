@@ -203,7 +203,7 @@
   RICE_manichean_fast_health_malus_modifier: "마니교 금식" # 16115503331562524804
   RICE_manichean_fast_health_malus_modifier_desc: "이 인물의 육신은 베마 축제를 준비하는 동안 마니교의 금식을 견디지 못했습니다." # 652724345686329895
   RICE_uyghur_manichean_church_decision: "$uyghur$ [GetFaithByKey('manichean').GetNameNoTooltip]의 미래에 영향을 미치십시오" # 323519509095833993
-  RICE_uyghur_manichean_church_decision_tooltip: "마니" # 4502404034836779475
+  RICE_uyghur_manichean_church_decision_tooltip: "선조들께서는 명교를 확고히 따르셨으나, 일부는 그 제도에 의문을 품기 시작했습니다." # 4048614463474042768
   RICE_uyghur_manichean_church_decision_desc: "[GetFaithByKey('manichean').GetAdjective] 교단은 [GetTitleByKey('e_uyghur_khanate').GetNameNoTier]의 붕괴와 중국에서의 박해 이후 쇠락했습니다. 이제 많은 이들이 [Glossary( 'Elect', 'ELECT_GLOSS' )]가 부패하고 탐욕스러워졌다고 주장합니다. 강력한 [ROOT.Char.GetCulture.GetName] [GetFaithByKey('manichean').GetAdjectiveNoTooltip]인 나로서는 이 상황에 대해 무언가 조치를 취해야 할지도 모르겠습니다...." # 6338087028321790209
   RICE_uyghur_manichean_church_decision_effect_tooltip_1: "마니" # 4502404034836779475
   RICE_uyghur_manichean_church_decision_confirm: "우리는 영적인 진리를 찾을 것입니다." # 16254524545853945948
@@ -265,7 +265,7 @@
   RICE_manichean_confession_decision_context_tooltip: "#emphasis 역사적 배경:#! 마니교 신자들에게 중요한 의무 중 하나는 매주 열리는 의식으로, 평신도와 성직자들이 모여 고도로 의례화된 방식으로 죄를 고백하고 속죄해야 했습니다. 이 주간 모임이 일요일에 열렸는지 월요일에 열렸는지에 대해서는 자료마다 차이가 있지만, 고백 중에 일어난 일에 대해서는 지역적 차이가 있었을 가능성이 높습니다. 예를 들어, 중앙아시아와 중국의 마니교 고백 의식은 불교의 영향을 받았을 수 있습니다." # 3792884368474589872
   RICE_manichean_confession_lose_sin_effect_tooltip: "$RICE_manichean_confession_decision_effect_tooltip_1$" # 10043879772553659365
   RICE_manichean_lin_deng_decision: "린 덩을 숭배하라" # 7657370703689246662
-  RICE_manichean_lin_deng_decision_tooltip: "린 덩" # 13069146687773081986
+  RICE_manichean_lin_deng_decision_tooltip: "임등은 광명불의 가르침을 전파하였으며, 지금도 의롭고 덕 있는 자들을 보살피고 있습니다." # 13985079686684516943
   RICE_manichean_lin_deng_decision_desc: "위대한 마법사 린 덩은 비할 데 없는 영웅으로, 우리에게 심오한 가르침과 의식을 전수해 주었소. 그리하여 우리는 그의 영혼이 사후에도 우리에게 축복을 내리고 보호해 주시기를 바라며 정기적으로 그를 숭배하고 있소." # 2041385046160215146
   RICE_manichean_lin_deng_decision_effect_tooltip_1: "귀하는 유용한 #P 긍정적#인 [modifiers|E]를 얻을 확률이 #V [GetPlayer.MakeScope.ScriptValue('RICE_manichean_lin_deng_decision_modifier_chance')]%#이며, 그 확률은 귀하의 [piety_level|E], [traits|E], 그리고 [learning_i|E] [learning|E]에 따라 달라집니다." # 14294935882891111096
   RICE_manichean_lin_deng_decision_confirm: "그분께서 우리를 보호하고 인도하시기를!" # 95645064481207088
@@ -316,12 +316,12 @@
   RICE_manichean_convert_to_nestorian_tooltip: "[GetFaithByKey('nestorian').GetName] 교회가 중앙아시아 전역, 심지어 유목민들 사이에서도 퍼져나갔습니다. [GetFaithByKey('manichean').GetName]의 중요한 교리는 마니가 예수의 사도였으며, [GetReligionByKey('christianity_religion').GetAdherentNamePlural]은 타락한 가르침을 따르는 잘못된 길을 걷고 있다는 것입니다. 하지만 만약 그 반대였다면 어땠을까요?" # 389108607351137556
   RICE_manichean_convert_to_maturidi_name: "[GetFaithByKey('maturidi').GetName]" # 5648966459109796115
   RICE_manichean_convert_to_maturidi_desc: "[GetFaithByKey('maturidi').GetNameNoTooltip]" # 14040613506075460700
-  RICE_manichean_convert_to_maturidi_tooltip: "[GetReligionByKey('islam_religion').GetName]의 부상은 세계 역사를 영원히 바꾸어 놓았으며, 그 신봉자들이 말하는 정의와 자선은 매혹적입니다. 말할 것도 없이, 그들은 이전에 타락한 가르침을 부활시킨 예언자가 있다고 주장합니다. 혹시 그들이 진정으로 타락하지 않은 구원의 메시지를 지니고 있는 것은 아닐까요?" # 327046629748388095
+  RICE_manichean_convert_to_maturidi_tooltip: "[GetReligionByKey('islam_religion').GetName]의 발흥은 세계사를 영원히 바꾸어 놓았습니다. 그 신봉자들이 말하는 정의와 자선은 매혹적이며, 그들이 내세우는 예언자의 교리는 이전에 타락했던 가르침을 부활시킨 것이라고 합니다. 어쩌면 그들이야말로 오염되지 않은 진정한 구원의 메시지를 간직하고 있는 것은 아닐까요?" # 15031866245339464589
   RICE_manichean_convert_to_khurmazta_name: "[GetFaithByKey('khurmazta').GetName]" # 3761067629123984479
   RICE_manichean_convert_to_khurmazta_desc: "[GetFaithByKey('khurmazta').GetNameNoTooltip]" # 16110099145300800492
   RICE_manichean_convert_to_khurmazta_tooltip: "수 세기 동안 [GetFaithByKey('manichean').GetAdjective] 신앙을 가진 자들과 [GetReligionByKey('zoroastrianism_religion').GetAdjective] 신앙을 가진 자들은 나란히 살아왔으며, 우리는 실크로드를 따라 널리 퍼진 후자의 지역적 변형인 [GetFaithByKey('khurmazta').GetName]에 익숙합니다. 어쩌면 진실은 이 모든 시간 동안 우리 곁에 숨어 있었던 것은 아닐까요?" # 7337735507489004981
   RICE_manichean_recruit_ming_cultists: "명교 신도 모집하기" # 1229767446492773952
-  RICE_manichean_recruit_ming_cultists_tooltip: "xxxxx" # 1951045980481827005
+  RICE_manichean_recruit_ming_cultists_tooltip: "세상 사람들이 가련하도다! 참으로 많은 고난에 직면해 있구나!" # 3767083935875411563
   RICE_manichean_recruit_ming_cultists_desc: "[ROOT.Char.GetCulture.GetName]의 [ROOT.Char.GetFaith.GetName] 신도들은 수세대 동안 사악한 세력에게 억압받아 온 형제자매와 같습니다. 우리 모두 단결하여, 부패하고 탐욕스러운 자들로부터 세상을 지키기 위해 연대의 정신으로 무기를 듭시다!" # 9405229327549242774
   RICE_manichean_recruit_ming_cultists_effect_tooltip_1: "이 [decision|E]를 내리는 데 필요한 [gold_i|E] [gold|E]와 [piety_i|E] [piety|E] 비용은 각각 귀하의 [diplomacy_i|E] [diplomacy|E]와 [learning_i|E] [learning|E]에 따라 결정됩니다." # 213325815909401635
   RICE_manichean_recruit_ming_cultists_effect_tooltip_2: "이 [decision|E]의 재사용 대기시간은 귀하의 [stewardship_i|E] [stewardship|E]에 따라 결정됩니다." # 17411921186904581150
