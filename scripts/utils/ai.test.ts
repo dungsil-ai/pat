@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { TranslationRefusedError } from './ai'
+import { parseBulkResponse, TranslationRefusedError } from './ai'
 
 describe('AI 유틸리티', () => {
   describe('TranslationRefusedError', () => {
@@ -36,6 +36,22 @@ describe('AI 유틸리티', () => {
       
       expect(error.message).not.toContain('...')
       expect(error.message).toContain(shortText)
+    })
+  })
+
+  describe('parseBulkResponse', () => {
+    it('코드블록 외부 텍스트가 포함되어도 JSON을 파싱해야 함', () => {
+      const raw = '참고: 아래는 결과입니다.\n```json\n{"translations":["첫째","둘째"]}\n```\n끝'
+      const parsed = parseBulkResponse(raw, 2)
+
+      expect(parsed).toEqual(['첫째', '둘째'])
+    })
+
+    it('JSON이 손상되면 원인을 포함한 오류를 던져야 함', () => {
+      const raw = '{"translations":["정상","비정상]}'
+
+      expect(() => parseBulkResponse(raw, 2))
+        .toThrowError(/벌크 번역 JSON 파싱에 실패했습니다/)
     })
   })
 })

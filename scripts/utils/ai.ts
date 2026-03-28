@@ -150,14 +150,48 @@ Please provide a corrected translation that addresses the issue mentioned above.
   )
 }
 
-function parseBulkResponse (rawText: string, expectedLength: number): string[] {
+function extractJsonCandidates (text: string): string[] {
+  const candidates = [text]
+  const firstBrace = text.indexOf('{')
+  const lastBrace = text.lastIndexOf('}')
+  if (firstBrace !== -1 && lastBrace !== -1 && firstBrace < lastBrace) {
+    candidates.push(text.slice(firstBrace, lastBrace + 1))
+  }
+
+  const firstBracket = text.indexOf('[')
+  const lastBracket = text.lastIndexOf(']')
+  if (firstBracket !== -1 && lastBracket !== -1 && firstBracket < lastBracket) {
+    candidates.push(text.slice(firstBracket, lastBracket + 1))
+  }
+
+  return [...new Set(candidates)]
+}
+
+export function parseBulkResponse (rawText: string, expectedLength: number): string[] {
   const cleaned = rawText
     .replace(/^```(?:json)?\s*/i, '')
     .replace(/\s*```$/i, '')
     .trim()
 
-  const parsed = JSON.parse(cleaned)
-  const translations = Array.isArray(parsed) ? parsed : parsed?.translations
+  let parsed: unknown
+  let lastError: unknown
+
+  for (const candidate of extractJsonCandidates(cleaned)) {
+    try {
+      parsed = JSON.parse(candidate)
+      lastError = undefined
+      break
+    } catch (error) {
+      lastError = error
+    }
+  }
+
+  if (parsed === undefined) {
+    const errorMessage = lastError instanceof Error ? lastError.message : String(lastError)
+    throw new Error(`벌크 번역 JSON 파싱에 실패했습니다: ${errorMessage}`)
+  }
+
+  const translations = Array.isArray(parsed) ? parsed : (parsed as { translations?: unknown[] })?.translations
 
   if (!Array.isArray(translations)) {
     throw new Error('벌크 번역 응답에 translations 배열이 없습니다.')
