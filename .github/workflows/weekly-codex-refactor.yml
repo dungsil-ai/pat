@@ -1,0 +1,98 @@
+name: Weekly Codex Refactor
+
+on:
+  schedule:
+    - cron: '0 1 * * 1' # 매주 월요일 UTC 01:00 (KST 10:00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  codex-refactor:
+    runs-on: ubuntu-latest
+    env:
+      LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
+      CODEX_HOME: "${{ runner.temp }}/codex-home"
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: pnpm 설치
+        uses: pnpm/action-setup@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v6
+        with:
+          cache: 'pnpm'
+          node-version-file: .node-version
+
+      - name: 의존성 설치
+        run: pnpm install --frozen-lockfile
+
+      - name: Codex 인증 파일 구성
+        env:
+          CODEX_AUTH_JSON: ${{ secrets.CODEX_AUTH_JSON }}
+        run: |
+          mkdir -p "$CODEX_HOME"
+          if [ -z "$CODEX_AUTH_JSON" ]; then
+            echo "CODEX_AUTH_JSON 시크릿이 비어 있습니다." >&2
+            exit 1
+          fi
+          printf '%s' "$CODEX_AUTH_JSON" > "$CODEX_HOME/auth.json"
+          chmod 600 "$CODEX_HOME/auth.json"
+
+      - name: Codex로 주간 리팩토링 수행
+        id: run_codex
+        uses: openai/codex-action@v1
+        with:
+          codex-home: ${{ env.CODEX_HOME }}
+          sandbox: workspace-write
+          prompt: |
+            당신은 이 저장소의 유지보수 담당 엔지니어입니다.
+
+            목표:
+            1) 보안, 성능, 유지보수성 개선 여지를 점검한다.
+            2) 위험도가 낮고 가치가 높은 리팩토링을 적용한다.
+            3) 변경 후 반드시 아래 검증을 실행하고 통과시킨다.
+               - pnpm exec tsc --noEmit
+               - pnpm test
+
+            작업 규칙:
+            - 변경 범위는 작고 안전하게 유지한다.
+            - 한국어 주석/문서 규칙을 준수한다.
+            - 불필요한 파일은 생성하지 않는다.
+            - 개선 사항이 없으면 파일을 수정하지 않는다.
+
+      - name: 변경사항 린트 검증
+        run: pnpm exec tsc --noEmit
+
+      - name: 변경사항 테스트 검증
+        run: pnpm test
+
+      - name: Codex 인증 파일 정리
+        if: always()
+        run: rm -f "$CODEX_HOME/auth.json"
+
+      - name: 자동 리팩토링 PR 생성
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/weekly-codex-refactor
+          delete-branch: true
+          commit-message: "chore: 주간 Codex 자동 리팩토링"
+          title: "chore: 주간 Codex 자동 리팩토링"
+          body: |
+            ## 개요
+            - Codex Actions가 주간 보안/성능/개선점을 점검하고 자동 리팩토링을 적용했습니다.
+
+            ## 검증
+            - pnpm exec tsc --noEmit
+            - pnpm test
+
+            > 이 PR은 GitHub Actions 워크플로우(`Weekly Codex Refactor`)에서 자동 생성되었습니다.
+          labels: |
+            automation
+            codex
