@@ -148,4 +148,56 @@ language = "english"
       expect(allConfigs.length).toBe(2)
     })
   })
+
+  describe('getLatestRefFromRemote', () => {
+    it('semantic 전략에서 1.18.1.b 같은 확장 태그를 최신 버전으로 선택해야 함', async () => {
+      fetchMock.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => ([
+          { tag_name: '1.18.1.b' },
+          { tag_name: '1.18.1.a' },
+          { tag_name: '1.18.1' },
+          { tag_name: '1.8.3' }
+        ])
+      })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      const latestRef = await getLatestRefFromRemote(
+        'https://github.com/cybrxkhan/RICE-for-CK3.git',
+        'ck3/RICE/upstream',
+        'semantic'
+      )
+
+      expect(latestRef).toEqual({
+        type: 'tag',
+        name: '1.18.1.b'
+      })
+    })
+
+    it('semantic 전략에서 v 접두사가 있는 태그도 원본 이름으로 반환해야 함', async () => {
+      fetchMock.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => ([
+          { tag_name: 'v1.9.1' },
+          { tag_name: 'v1.10.0' }
+        ])
+      })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      const latestRef = await getLatestRefFromRemote(
+        'https://github.com/test/test.git',
+        'ck3/Test/upstream',
+        'semantic'
+      )
+
+      expect(latestRef).toEqual({
+        type: 'tag',
+        name: 'v1.10.0'
+      })
+    })
+  })
 })
