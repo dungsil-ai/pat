@@ -772,6 +772,67 @@ transliteration_files = ["custom_events_l_english.yml", "*_special_*"]
     await rm(testDir, { recursive: true, force: true })
   })
 
+  it('한 모드에서 오류가 발생해도 다음 모드 번역을 계속 진행해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+    const prompts = await import('../utils/prompts')
+
+    const modDir = join(testDir, 'mode-fallback-mod')
+    const upstreamDir = join(modDir, 'upstream')
+
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+
+    const sourceContent = `l_english:
+  normal_key: "Normal text"
+  dynasty_name: "Dynasty Name"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'events_l_english.yml'), sourceContent, 'utf-8')
+
+    vi.spyOn(prompts, 'shouldUseTransliterationForKey').mockImplementation((key: string) => key === 'dynasty_name')
+
+    const originalTranslateBulk = vi.mocked(translateBulk).getMockImplementation()
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[], gameType?: any, useTransliteration?: boolean) => {
+      if (!useTransliteration) {
+        throw new Error('일반 번역 모드 실패')
+      }
+      if (originalTranslateBulk) {
+        return originalTranslateBulk(texts, gameType, useTransliteration)
+      }
+      return texts.map(text => ({ translatedText: `[TRANSLITERATION]${text}` }))
+    })
+
+    const result = await processModTranslations({
+      rootDir: testDir,
+      mods: ['mode-fallback-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const outputPath = join(modDir, 'mod', 'localization', 'korean', '___events_l_korean.yml')
+    const outputContent = await readFile(outputPath, 'utf-8')
+    const outputYaml = parseYaml(outputContent)
+
+    // 일반 번역 모드 오류가 난 항목은 원문 유지
+    expect(outputYaml.l_korean['normal_key'][0]).toBe('Normal text')
+    expect(outputYaml.l_korean['normal_key'][1]).toBeNull()
+
+    // 다음 모드(음역)는 계속 진행되어 번역 결과가 반영되어야 함
+    expect(outputYaml.l_korean['dynasty_name'][0]).not.toBe('Dynasty Name')
+    expect(outputYaml.l_korean['dynasty_name'][1]).toBeDefined()
+
+    expect(result.untranslatedItems.some(item => item.key === 'normal_key')).toBe(true)
+    expect(result.untranslatedItems.some(item => item.key === 'dynasty_name')).toBe(false)
+
+    await rm(testDir, { recursive: true, force: true })
+  })
+
   it('중복되는 항목을 제거하고 고유한 항목만 JSON 파일에 저장해야 함', async () => {
     // 같은 모드 내에서 여러 localization 경로에 동일한 파일이 있는 경우를 시뮬레이션
     // 이런 경우 같은 mod::file::key 조합이 중복될 수 있음

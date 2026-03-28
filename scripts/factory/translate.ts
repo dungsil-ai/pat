@@ -381,15 +381,34 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       }
     }
 
-    if (normalItems.length > 0) {
-      const normalResults = await translateBulk(normalItems.map(item => item.sourceValue), gameType, false)
-      applyResults(normalItems, normalResults)
+    async function processModeItems (items: typeof translationItems, useTransliteration: boolean): Promise<void> {
+      if (items.length === 0) {
+        return
+      }
+
+      try {
+        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration)
+        applyResults(items, results)
+      } catch (error) {
+        const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
+        log.warn(`[${mode}/${file}] ${modeLabel} 처리 중 오류 발생, 해당 모드는 원문 유지 후 다음 모드로 진행합니다.`)
+        log.warn(`[${mode}/${file}] ${modeLabel} 오류 상세: ${String(error)}`)
+
+        for (const item of items) {
+          newYaml.l_korean[item.key] = [item.sourceValue, null]
+          untranslatedItems.push({
+            mod: mode,
+            file,
+            key: item.key,
+            message: `${item.sourceValue} (${modeLabel} 오류: ${String(error)})`
+          })
+          processedCount++
+        }
+      }
     }
 
-    if (transliterationItems.length > 0) {
-      const transliterationResults = await translateBulk(transliterationItems.map(item => item.sourceValue), gameType, true)
-      applyResults(transliterationItems, transliterationResults)
-    }
+    await processModeItems(normalItems, false)
+    await processModeItems(transliterationItems, true)
   }
 
   for (const [key, [sourceValue]] of entries) {
