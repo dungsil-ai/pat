@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseBulkResponse, TranslationRefusedError } from './ai'
+import { parseBulkResponse, postProcessTranslation, TranslationRefusedError } from './ai'
 
 describe('AI 유틸리티', () => {
   describe('TranslationRefusedError', () => {
@@ -36,6 +36,35 @@ describe('AI 유틸리티', () => {
       
       expect(error.message).not.toContain('...')
       expect(error.message).toContain(shortText)
+    })
+  })
+
+  describe('postProcessTranslation', () => {
+    it('실제 개행을 \\n 리터럴로 변환해야 함', () => {
+      expect(postProcessTranslation('줄1\n줄2')).toBe('줄1\\n줄2')
+    })
+
+    it('이스케이프되지 않은 따옴표를 이스케이프해야 함', () => {
+      expect(postProcessTranslation('안녕"세계"')).toBe('안녕\\"세계\\"')
+    })
+
+    it('이미 이스케이프된 따옴표는 그대로 유지해야 함', () => {
+      expect(postProcessTranslation('안녕\\"세계')).toBe('안녕\\"세계')
+    })
+
+    it('이스케이프된 역슬래시 뒤의 따옴표는 이스케이프해야 함', () => {
+      // \\" → 이스케이프된 역슬래시 + 이스케이프 필요한 따옴표
+      expect(postProcessTranslation('텍스트\\\\"끝')).toBe('텍스트\\\\\\"끝')
+    })
+
+    it('#약화된, #약하게, #약한 태그를 #weak으로 변환해야 함', () => {
+      expect(postProcessTranslation('#약화된텍스트')).toBe('#weak텍스트')
+      expect(postProcessTranslation('#약하게')).toBe('#weak')
+      expect(postProcessTranslation('#약한')).toBe('#weak')
+    })
+
+    it('#강조 태그를 #bold로 변환해야 함', () => {
+      expect(postProcessTranslation('#강조텍스트')).toBe('#bold텍스트')
     })
   })
 

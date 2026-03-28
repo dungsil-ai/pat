@@ -20,9 +20,25 @@ export class TranslationRefusedError extends Error {
   }
 }
 
-const google = createGoogleGenerativeAI({
-  apiKey: process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY || '',
-})
+let _googleProvider: ReturnType<typeof createGoogleGenerativeAI> | null = null
+
+/**
+ * Google AI 프로바이더를 반환합니다. API 키가 없으면 오류를 발생시킵니다.
+ */
+function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
+  if (!_googleProvider) {
+    const apiKey = process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    if (!apiKey) {
+      throw new Error(
+        'Google AI API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.',
+      )
+    }
+    _googleProvider = createGoogleGenerativeAI({ apiKey })
+  }
+  return _googleProvider
+}
+
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
 
 const generationConfig = {
   temperature: 0.5,
@@ -63,6 +79,20 @@ function isRefusal(finishReason?: string): boolean {
   return finishReason === 'content-filter'
 }
 
+/**
+ * AI 번역 결과 텍스트를 YAML 파일에 삽입 가능한 형태로 후처리합니다.
+ * - 실제 개행을 \n 리터럴로 변환
+ * - 이스케이프되지 않은 따옴표를 이스케이프 (이스케이프된 역슬래시 뒤의 따옴표는 유지)
+ * - 한국어 서식 태그를 게임 태그로 변환
+ */
+export function postProcessTranslation(text: string): string {
+  return text
+    .replaceAll(/\n/g, '\\n')
+    .replaceAll(/(?<!(?<!\\)\\)"/g, '\\"')
+    .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
+    .replaceAll(/#강조/g, '#bold')
+}
+
 export async function translateAI (text: string, gameType: GameType = 'ck3', retranslationContext?: RetranslationContext, useTransliteration: boolean = false) {
   return new Promise<string>((resolve, reject) => {
     addQueue(
@@ -72,7 +102,7 @@ export async function translateAI (text: string, gameType: GameType = 'ck3', ret
 
         try {
           const result = await generateText({
-            model: google('gemini-3-flash-preview'),
+            model: getGoogle()(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
@@ -92,11 +122,7 @@ export async function translateAI (text: string, gameType: GameType = 'ck3', ret
             )
           }
 
-          const translated = result.text
-            .replaceAll(/\n/g, '\\n')
-            .replaceAll(/[^\\]"/g, '\\"')
-            .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
-            .replaceAll(/#강조/g, '#bold')
+          const translated = postProcessTranslation(result.text)
 
           resolve(translated)
         } catch (error) {
@@ -136,7 +162,7 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
 
         try {
           const result = await generateText({
-            model: google('gemini-3-flash-preview'),
+            model: getGoogle()(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
@@ -157,11 +183,7 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
           }
 
           const translatedItems = parseBulkResponse(result.text, texts.length)
-            .map(item => item
-              .replaceAll(/\n/g, '\\n')
-              .replaceAll(/[^\\]"/g, '\\"')
-              .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
-              .replaceAll(/#강조/g, '#bold'))
+            .map(item => postProcessTranslation(item))
 
           resolve(translatedItems)
         } catch (error) {
