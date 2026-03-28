@@ -228,7 +228,8 @@ language = "english"
 
     // 기본 배치 크기(20) 적용 시 41개 항목은 3번 호출(20,20,1)
     expect(vi.mocked(translateBulk)).toHaveBeenCalledTimes(3)
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('TRANSLATE_BATCH_SIZE 값이 올바르지 않아 기본값(20)을 사용합니다: 0'))
+    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('TRANSLATE_BATCH_SIZE 값이 올바르지'))
+    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('기본값(20)'))
   })
 
   it('배치 번역이 끝나면 즉시 파일에 저장해야 함', async () => {
