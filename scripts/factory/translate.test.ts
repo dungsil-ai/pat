@@ -113,6 +113,7 @@ describe('processLanguageFile 증분 쓰기', () => {
     testDir = join(tmpdir(), `translate-test-${Date.now()}`)
     await mkdir(testDir, { recursive: true })
     delete process.env.TRANSLATE_BATCH_SIZE
+    delete process.env.TRANSLATE_MOD_CONCURRENCY
   })
 
   afterEach(async () => {
@@ -823,6 +824,58 @@ language = "english"
 
     // 정리
     await rm(testDir, { recursive: true, force: true })
+  })
+
+  it('모드 단위 병렬 처리 동시성을 적용해야 함', async () => {
+    const testDir = join(tmpdir(), `translate-test-mod-concurrency-${Date.now()}`)
+    const ck3Dir = join(testDir, 'ck3')
+
+    const mod1Dir = join(ck3Dir, 'mod1')
+    const mod2Dir = join(ck3Dir, 'mod2')
+    await mkdir(join(mod1Dir, 'upstream'), { recursive: true })
+    await mkdir(join(mod2Dir, 'upstream'), { recursive: true })
+
+    await writeFile(join(mod1Dir, 'meta.toml'), `
+[upstream]
+localization = ["."]
+language = "english"
+`, 'utf-8')
+    await writeFile(join(mod2Dir, 'meta.toml'), `
+[upstream]
+localization = ["."]
+language = "english"
+`, 'utf-8')
+    await writeFile(join(mod1Dir, 'upstream', 'mod1_l_english.yml'), `l_english:\n key1:0 "Value 1"\n`, 'utf-8')
+    await writeFile(join(mod2Dir, 'upstream', 'mod2_l_english.yml'), `l_english:\n key2:0 "Value 2"\n`, 'utf-8')
+
+    const { translate } = await import('../utils/translate')
+    vi.mocked(translate).mockImplementation(async (text: string) => {
+      await new Promise(resolve => setTimeout(resolve, 120))
+      return `[KO]${text}`
+    })
+
+    process.env.TRANSLATE_MOD_CONCURRENCY = '1'
+    const { processModTranslations } = await import('./translate')
+    const sequentialStart = Date.now()
+    await processModTranslations({
+      rootDir: ck3Dir,
+      mods: ['mod1', 'mod2'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+    const sequentialElapsed = Date.now() - sequentialStart
+
+    process.env.TRANSLATE_MOD_CONCURRENCY = '2'
+    const parallelStart = Date.now()
+    await processModTranslations({
+      rootDir: ck3Dir,
+      mods: ['mod1', 'mod2'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+    const parallelElapsed = Date.now() - parallelStart
+
+    expect(parallelElapsed).toBeLessThan(sequentialElapsed)
   })
 
   it('한 모드에 여러 파일이 있을 때 번역 거부가 발생해도 다른 파일들은 정상 처리되어야 함', async () => {

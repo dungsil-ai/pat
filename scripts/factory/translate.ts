@@ -14,6 +14,7 @@ const execAsync = promisify(exec)
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
 const DEFAULT_TRANSLATE_BATCH_SIZE = 20
+const DEFAULT_MOD_CONCURRENCY = 4
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -56,6 +57,25 @@ function getTranslateBatchSize (): number {
   return parsed
 }
 
+/**
+ * 모드 단위 병렬 처리 동시성 값을 환경변수에서 읽어옵니다.
+ * 잘못된 값이 들어오면 기본값을 사용합니다.
+ */
+function getModConcurrency (): number {
+  const concurrencyEnv = process.env.TRANSLATE_MOD_CONCURRENCY
+  if (!concurrencyEnv) {
+    return DEFAULT_MOD_CONCURRENCY
+  }
+
+  const parsed = Number.parseInt(concurrencyEnv, 10)
+  if (Number.isNaN(parsed) || parsed <= 0) {
+    log.warn(`TRANSLATE_MOD_CONCURRENCY 값이 올바르지 않아 기본값(${DEFAULT_MOD_CONCURRENCY})을 사용합니다: ${concurrencyEnv}`)
+    return DEFAULT_MOD_CONCURRENCY
+  }
+
+  return parsed
+}
+
 interface ModTranslationsOptions {
   rootDir: string
   mods: string[]
@@ -83,6 +103,12 @@ export interface TranslationResult {
   untranslatedItems: UntranslatedItem[]
 }
 
+interface ModProcessResult {
+  mod: string
+  untranslatedItems: UntranslatedItem[]
+  timeoutReached: boolean
+}
+
 export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
@@ -100,9 +126,10 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     log.info(`타임아웃 설정: ${timeoutMinutes ?? 15}분`)
   }
 
-  const allUntranslatedItems: UntranslatedItem[] = []
+  const modConcurrency = Math.min(getModConcurrency(), Math.max(mods.length, 1))
+  log.info(`모드 병렬 처리 동시성: ${modConcurrency}`)
 
-  for (const mod of mods) {
+  const modTasks = mods.map((mod) => async (): Promise<ModProcessResult> => {
     const processes: Promise<UntranslatedItem[]>[] = []
     const locPathCleanupTasks: Array<{ targetDir: string; expectedKoreanFiles: string[]; mod: string; locPath: string }> = []
     log.start(`[${mod}] 작업 시작 (원본 파일 경로: ${rootDir}/${mod})`)
@@ -111,7 +138,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
 
     // `meta.toml`이 존재하지 않거나 디렉토리 등 파일이 아니면 무시
     if (!(await stat(metaPath)).isFile()) {
-      continue
+      return { mod, untranslatedItems: [], timeoutReached: false }
     }
 
     const metaContent = await readFile(metaPath, 'utf-8')
@@ -140,7 +167,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
               `upstream 클론이 누락되었을 수 있습니다.\n` +
               `필요 시 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
             )
-            continue
+            return { mod, untranslatedItems: [], timeoutReached: false }
           }
 
           throw new Error(
@@ -206,18 +233,15 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         if (error instanceof TimeoutReachedError) {
           log.warn(`[${mod}] 타임아웃으로 인해 번역 중단됨`)
           log.info(`타임아웃 도달: 처리된 작업까지 저장하고 종료합니다`)
-          // 타임아웃 시에도 현재까지 수집된 항목 반환
-          allUntranslatedItems.push(...untranslatedItems)
-          return saveAndReturnResult(projectRoot, gameType, allUntranslatedItems)
+          // 타임아웃 시에도 현재까지 수집된 항목은 반환하여 상위에서 저장합니다.
+          return { mod, untranslatedItems, timeoutReached: true }
         } else {
           // 다른 예외는 그대로 throw
           throw error
         }
       }
     }
-    
-    allUntranslatedItems.push(...untranslatedItems)
-    
+
     log.success(`[${mod}] 번역 완료`)
     
     // 번역되지 않은 항목 요약 출력
@@ -227,6 +251,31 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       }
     } else if (!onlyHash) {
       log.success(`모든 항목이 성공적으로 번역되었습니다.`)
+    }
+    return { mod, untranslatedItems, timeoutReached: false }
+  })
+
+  const allUntranslatedItems: UntranslatedItem[] = []
+  let hasTimeout = false
+
+  for (let i = 0; i < modTasks.length; i += modConcurrency) {
+    const chunk = modTasks.slice(i, i + modConcurrency)
+    const executing = chunk.map(task => task())
+    const results = await Promise.allSettled(executing)
+
+    for (const result of results) {
+      if (result.status === 'fulfilled') {
+        allUntranslatedItems.push(...result.value.untranslatedItems)
+        if (result.value.timeoutReached) {
+          hasTimeout = true
+        }
+      } else {
+        throw result.reason
+      }
+    }
+
+    if (hasTimeout) {
+      break
     }
   }
 
