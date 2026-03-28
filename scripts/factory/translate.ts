@@ -14,7 +14,6 @@ const execAsync = promisify(exec)
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
 const DEFAULT_TRANSLATE_BATCH_SIZE = 20
-const DEFAULT_MOD_CONCURRENCY = 4
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -61,16 +60,17 @@ function getTranslateBatchSize (): number {
  * 모드 단위 병렬 처리 동시성 값을 환경변수에서 읽어옵니다.
  * 잘못된 값이 들어오면 기본값을 사용합니다.
  */
-function getModConcurrency (): number {
+function getModConcurrency (modCount: number): number {
   const concurrencyEnv = process.env.TRANSLATE_MOD_CONCURRENCY
   if (!concurrencyEnv) {
-    return DEFAULT_MOD_CONCURRENCY
+    return Math.max(modCount, 1)
   }
 
   const parsed = Number.parseInt(concurrencyEnv, 10)
   if (Number.isNaN(parsed) || parsed <= 0) {
-    log.warn(`TRANSLATE_MOD_CONCURRENCY 값이 올바르지 않아 기본값(${DEFAULT_MOD_CONCURRENCY})을 사용합니다: ${concurrencyEnv}`)
-    return DEFAULT_MOD_CONCURRENCY
+    const fallback = Math.max(modCount, 1)
+    log.warn(`TRANSLATE_MOD_CONCURRENCY 값이 올바르지 않아 기본값(${fallback})을 사용합니다: ${concurrencyEnv}`)
+    return fallback
   }
 
   return parsed
@@ -113,6 +113,11 @@ interface ModProcessResult {
   timeoutReached: boolean
 }
 
+interface ModWorkItem {
+  mod: string
+  etcSubMod?: string
+}
+
 function resolveLogModName(modName: string, filePath: string): string {
   if (modName.toLowerCase() !== 'etc') {
     return modName
@@ -121,6 +126,38 @@ function resolveLogModName(modName: string, filePath: string): string {
   const normalizedPath = filePath.replace(/\\/g, '/')
   const [actualModName] = normalizedPath.split('/')
   return actualModName || modName
+}
+
+async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
+  const workItems: ModWorkItem[] = []
+
+  for (const mod of mods) {
+    if (mod.toLowerCase() !== 'etc') {
+      workItems.push({ mod })
+      continue
+    }
+
+    const etcUpstreamDir = join(rootDir, mod, 'upstream')
+    try {
+      const entries = await readdir(etcUpstreamDir, { withFileTypes: true })
+      const subMods = entries
+        .filter(entry => entry.isDirectory())
+        .map(entry => entry.name)
+
+      if (subMods.length === 0) {
+        workItems.push({ mod })
+        continue
+      }
+
+      for (const etcSubMod of subMods) {
+        workItems.push({ mod, etcSubMod })
+      }
+    } catch {
+      workItems.push({ mod })
+    }
+  }
+
+  return workItems
 }
 
 async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFileHashMap> {
@@ -161,13 +198,15 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     log.info(`타임아웃 설정: ${timeoutMinutes ?? 15}분`)
   }
 
-  const modConcurrency = Math.min(getModConcurrency(), Math.max(mods.length, 1))
+  const modWorkItems = await expandModWorkItems(rootDir, mods)
+  const modConcurrency = Math.min(getModConcurrency(modWorkItems.length), Math.max(modWorkItems.length, 1))
   log.info(`모드 병렬 처리 동시성: ${modConcurrency}`)
 
-  const modTasks = mods.map((mod) => async (): Promise<ModProcessResult> => {
+  const modTasks = modWorkItems.map(({ mod, etcSubMod }) => async (): Promise<ModProcessResult> => {
     const processes: Promise<UntranslatedItem[]>[] = []
     const locPathCleanupTasks: Array<{ targetDir: string; expectedKoreanFiles: string[]; mod: string; locPath: string }> = []
-    log.start(`[${mod}] 작업 시작 (원본 파일 경로: ${rootDir}/${mod})`)
+    const workLabel = etcSubMod ? `${mod}/${etcSubMod}` : mod
+    log.start(`[${workLabel}] 작업 시작 (원본 파일 경로: ${rootDir}/${mod})`)
     const modDir = join(rootDir, mod)
     const metaPath = join(modDir, 'meta.toml')
 
@@ -238,6 +277,9 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       const expectedKoreanFiles: string[] = []
       
       for (const file of sourceFiles) {
+        if (etcSubMod && !file.startsWith(`${etcSubMod}/`)) {
+          continue
+        }
         // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
         if (file.endsWith(`.yml`) && file.includes(`_l_${meta.upstream.language}`)) {
           const sourcePath = join(sourceDir, file)
@@ -265,7 +307,9 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       }
       
       // 각 로케일 경로별 예상 파일 목록 저장
-      locPathCleanupTasks.push({ targetDir, expectedKoreanFiles, mod, locPath })
+      if (!etcSubMod) {
+        locPathCleanupTasks.push({ targetDir, expectedKoreanFiles, mod, locPath })
+      }
     }
 
     // Promise.allSettled를 사용하여 모든 파일 처리가 완료될 때까지 대기
@@ -298,7 +342,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         // 실패한 경우: 에러 타입에 따라 처리
         const error = result.reason
         if (error instanceof TimeoutReachedError) {
-          log.warn(`[${mod}] 타임아웃으로 인해 번역 중단됨`)
+          log.warn(`[${workLabel}] 타임아웃으로 인해 번역 중단됨`)
           log.info(`타임아웃 도달: 처리된 작업까지 저장하고 종료합니다`)
           // 타임아웃 시에도 현재까지 수집된 항목은 반환하여 상위에서 저장합니다.
           return { mod, untranslatedItems, timeoutReached: true }
@@ -309,7 +353,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       }
     }
 
-    log.success(`[${mod}] 번역 완료`)
+    log.success(`[${workLabel}] 번역 완료`)
     
     // 번역되지 않은 항목 요약 출력
     if (untranslatedItems.length > 0) {
