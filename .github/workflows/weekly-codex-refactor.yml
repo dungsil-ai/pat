@@ -51,9 +51,7 @@ jobs:
 
       - name: Codex로 주간 리팩토링 수행
         run: |
-          PROMPT_FILE=$(mktemp)
-          trap 'rm -f "$PROMPT_FILE"' EXIT
-          cat <<'EOF' > "$PROMPT_FILE"
+          PROMPT=$(cat <<'EOF'
           당신은 이 저장소의 유지보수 담당 엔지니어입니다.
 
           목표:
@@ -69,11 +67,12 @@ jobs:
           - 불필요한 파일은 생성하지 않는다.
           - 개선 사항이 없으면 파일을 수정하지 않는다.
           EOF
+          )
 
           codex exec \
             --cd "$GITHUB_WORKSPACE" \
             --sandbox workspace-write \
-            --prompt-file "$PROMPT_FILE"
+            "$PROMPT"
 
       - name: 변경사항 린트 검증
         run: pnpm exec tsc --noEmit
