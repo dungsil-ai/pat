@@ -113,6 +113,16 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         await access(upstreamRoot)
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+          // 여러 모드를 한 번에 처리할 때는 누락된 모드만 건너뛰고 다음 모드를 계속 처리
+          if (mods.length > 1) {
+            log.warn(
+              `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${upstreamRoot}\n` +
+              `upstream 클론이 누락되었을 수 있습니다.\n` +
+              `필요 시 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
+            )
+            continue
+          }
+
           throw new Error(
             `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${upstreamRoot}\n` +
             `upstream 클론이 누락되었을 수 있습니다.\n` +
