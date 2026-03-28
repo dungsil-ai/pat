@@ -1,6 +1,7 @@
 ### Cache ###
 *.db
 *.db-journal
+.codex-home/
 
 ### Local environment ###
 .env
