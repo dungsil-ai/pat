@@ -106,7 +106,23 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       // 모드 디렉토리 생성
       await mkdir(targetDir, { recursive: true })
 
-      // upstream 디렉토리 존재 여부 확인
+      const upstreamRoot = join(modDir, 'upstream')
+
+      // upstream 루트 존재 여부 확인
+      try {
+        await access(upstreamRoot)
+      } catch (error) {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+          throw new Error(
+            `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${upstreamRoot}\n` +
+            `upstream 클론이 누락되었을 수 있습니다.\n` +
+            `먼저 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
+          )
+        }
+        throw error
+      }
+
+      // localization 경로 존재 여부 확인
       try {
         await access(sourceDir)
       } catch (error) {

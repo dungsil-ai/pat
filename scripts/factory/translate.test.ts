@@ -461,6 +461,26 @@ language = "english"
     expect(outputContent).toContain('[KO]Value 1')
   })
 
+  it('upstream 루트가 없으면 클론 명령어를 포함한 오류를 표시해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'cfp-like-mod')
+    const metaContent = `
+[upstream]
+localization = ["localization/english"]
+language = "english"
+`
+    await mkdir(modDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+
+    await expect(processModTranslations({
+      rootDir: testDir,
+      mods: ['cfp-like-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })).rejects.toThrow(/pnpm upstream ck3 \"cfp-like-mod\"/)
+  })
+
   it('번역 거부 시 원문을 유지하고 다음 항목 처리를 계속해야 함', async () => {
     const entryCount = 10
     const sourceContent = createLargeYamlFile(entryCount, 'english')
