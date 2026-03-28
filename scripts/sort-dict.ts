@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import consola from 'consola'
+import { consola } from 'consola'
 import { parseTomlWithComments, sortBlocks, blocksToToml } from './utils/dict-sorter'
 
 // 프로젝트 루트 디렉토리

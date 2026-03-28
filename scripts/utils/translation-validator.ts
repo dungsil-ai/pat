@@ -684,8 +684,8 @@ function validateTransliteration(
  * @param useTransliteration 음역 모드 여부 (true면 음역 검증 추가)
  */
 export function validateTranslationEntries(
-  sourceEntries: Record<string, [string, string]>,
-  translationEntries: Record<string, [string, string]>,
+  sourceEntries: Record<string, [string, string] | string[]>,
+  translationEntries: Record<string, [string, string] | string[]>,
   gameType: GameType = 'ck3',
   useTransliteration: boolean = false
 ): { key: string; sourceValue: string; translatedValue: string; reason: string }[] {
