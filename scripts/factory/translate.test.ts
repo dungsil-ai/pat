@@ -420,26 +420,45 @@ language = "english"
     expect(jsonContent.gameType).toBe('ck3')
   })
 
-  it('upstream 디렉토리가 없으면 명확한 오류 메시지를 표시해야 함', async () => {
+  it('upstream 디렉토리가 없으면 경고를 남기고 다음 모드 처리를 계속해야 함', async () => {
     const { processModTranslations } = await import('./translate')
+    const { log } = await import('../utils/logger')
 
-    // meta.toml 생성하지만 upstream 디렉토리는 생성하지 않음
-    const modDir = join(testDir, 'test-mod')
-    const metaContent = `
+    // mod1은 upstream 디렉토리가 없고, mod2는 정상 번역 가능한 상태로 구성
+    const mod1Dir = join(testDir, 'missing-upstream-mod')
+    const mod2Dir = join(testDir, 'normal-mod')
+    const mod1MetaContent = `
 [upstream]
 localization = ["localisation/english"]
 language = "english"
 `
-    await mkdir(modDir, { recursive: true })
-    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    const mod2MetaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(mod1Dir, { recursive: true })
+    await mkdir(join(mod2Dir, 'upstream'), { recursive: true })
+    await writeFile(join(mod1Dir, 'meta.toml'), mod1MetaContent, 'utf-8')
+    await writeFile(join(mod2Dir, 'meta.toml'), mod2MetaContent, 'utf-8')
+    await writeFile(join(mod2Dir, 'upstream', 'normal_l_english.yml'), `l_english:
+ key1:0 "Value 1"
+`, 'utf-8')
 
-    // 번역 실행 시 오류가 발생해야 함
-    await expect(processModTranslations({
+    // 번역 실행 시 전체 프로세스는 종료되지 않고 정상 완료되어야 함
+    const result = await processModTranslations({
       rootDir: testDir,
-      mods: ['test-mod'],
+      mods: ['missing-upstream-mod', 'normal-mod'],
       gameType: 'stellaris',
       onlyHash: false
-    })).rejects.toThrow(/upstream 디렉토리가 존재하지 않습니다/)
+    })
+
+    expect(result.untranslatedItems).toEqual([])
+    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다'))
+
+    const outputPath = join(mod2Dir, 'mod', 'localisation', 'korean', '___normal_l_korean.yml')
+    const outputContent = await readFile(outputPath, 'utf-8')
+    expect(outputContent).toContain('[KO]Value 1')
   })
 
   it('번역 거부 시 원문을 유지하고 다음 항목 처리를 계속해야 함', async () => {
@@ -769,6 +788,67 @@ transliteration_files = ["custom_events_l_english.yml", "*_special_*"]
     await access(regularOutput)
 
     // 정리
+    await rm(testDir, { recursive: true, force: true })
+  })
+
+  it('한 모드에서 오류가 발생해도 다음 모드 번역을 계속 진행해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+    const prompts = await import('../utils/prompts')
+
+    const modDir = join(testDir, 'mode-fallback-mod')
+    const upstreamDir = join(modDir, 'upstream')
+
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+
+    const sourceContent = `l_english:
+  normal_key: "Normal text"
+  dynasty_name: "Dynasty Name"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'events_l_english.yml'), sourceContent, 'utf-8')
+
+    vi.spyOn(prompts, 'shouldUseTransliterationForKey').mockImplementation((key: string) => key === 'dynasty_name')
+
+    const originalTranslateBulk = vi.mocked(translateBulk).getMockImplementation()
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[], gameType?: any, useTransliteration?: boolean) => {
+      if (!useTransliteration) {
+        throw new Error('일반 번역 모드 실패')
+      }
+      if (originalTranslateBulk) {
+        return originalTranslateBulk(texts, gameType, useTransliteration)
+      }
+      return texts.map(text => ({ translatedText: `[TRANSLITERATION]${text}` }))
+    })
+
+    const result = await processModTranslations({
+      rootDir: testDir,
+      mods: ['mode-fallback-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const outputPath = join(modDir, 'mod', 'localization', 'korean', '___events_l_korean.yml')
+    const outputContent = await readFile(outputPath, 'utf-8')
+    const outputYaml = parseYaml(outputContent)
+
+    // 일반 번역 모드 오류가 난 항목은 원문 유지
+    expect(outputYaml.l_korean['normal_key'][0]).toBe('Normal text')
+    expect(outputYaml.l_korean['normal_key'][1]).toBeNull()
+
+    // 다음 모드(음역)는 계속 진행되어 번역 결과가 반영되어야 함
+    expect(outputYaml.l_korean['dynasty_name'][0]).not.toBe('Dynasty Name')
+    expect(outputYaml.l_korean['dynasty_name'][1]).toBeDefined()
+
+    expect(result.untranslatedItems.some(item => item.key === 'normal_key')).toBe(true)
+    expect(result.untranslatedItems.some(item => item.key === 'dynasty_name')).toBe(false)
+
     await rm(testDir, { recursive: true, force: true })
   })
 
