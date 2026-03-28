@@ -497,12 +497,15 @@ describe('translateBulk', () => {
 
   it('벌크 번역 응답을 순서대로 반환해야 함', async () => {
     const { translateBulk } = await import('./translate')
+    const { log } = await import('./logger')
     const results = await translateBulk(['first', 'second'], 'ck3', false)
 
     expect(results).toEqual([
       { translatedText: '[벌크번역]first' },
       { translatedText: '[벌크번역]second' },
     ])
+    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 요청 전송: first'))
+    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] AI 응답 처리: first -> [벌크번역]first'))
   })
 
   it('벌크 번역 실패 시 개별 번역으로 폴백해야 함', async () => {
@@ -515,5 +518,19 @@ describe('translateBulk', () => {
 
     expect(results).toEqual([{ translatedText: '[번역됨]fallback-test' }])
     expect(translateAI).toHaveBeenCalledWith('fallback-test', 'ck3', undefined, false)
+  })
+
+  it('벌크 처리에서 캐시 응답 로그를 남겨야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { hasCache, getCache } = await import('./cache')
+    const { log } = await import('./logger')
+
+    vi.mocked(hasCache).mockResolvedValueOnce(true)
+    vi.mocked(getCache).mockResolvedValueOnce('[캐시번역]cached')
+
+    const results = await translateBulk(['cached'], 'ck3', false)
+
+    expect(results).toEqual([{ translatedText: '[캐시번역]cached' }])
+    expect(log.info).toHaveBeenCalledWith(expect.stringContaining('[벌크/0] 캐시 응답 사용: cached -> [캐시번역]cached'))
   })
 })
