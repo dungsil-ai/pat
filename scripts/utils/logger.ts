@@ -1,18 +1,18 @@
-import { env } from 'node:process' 
+import { env } from 'node:process'
 import { createConsola, LogLevels, type LogLevel } from 'consola'
 
-function parseLogLevel(): LogLevel {
-  const envLogLevel = env.LOG_LEVEL
+export function parseLogLevel(envLogLevel = env.LOG_LEVEL): LogLevel {
+  const normalizedLogLevel = envLogLevel?.trim().toLowerCase()
 
-  if (!envLogLevel) {
+  if (!normalizedLogLevel) {
     return LogLevels.info
   }
 
-  if (envLogLevel in LogLevels) {
-    return LogLevels[envLogLevel as keyof typeof LogLevels] as LogLevel
+  if (normalizedLogLevel in LogLevels) {
+    return LogLevels[normalizedLogLevel as keyof typeof LogLevels] as LogLevel
   }
 
-  const numericLevel = Number(envLogLevel)
+  const numericLevel = Number(normalizedLogLevel)
   if (Number.isFinite(numericLevel)) {
     return numericLevel as LogLevel
   }
