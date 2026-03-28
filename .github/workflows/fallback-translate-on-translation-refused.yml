@@ -1,0 +1,147 @@
+name: Fallback translate on translation-refused issue
+
+on:
+  issues:
+    types:
+      - labeled
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: translation
+  cancel-in-progress: false
+
+jobs:
+  fallback-translate:
+    if: github.event.label.name == 'translation-refused'
+    runs-on: ubuntu-latest
+    env:
+      LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
+      ISSUE_NUMBER: "${{ github.event.issue.number }}"
+      ISSUE_TITLE: "${{ github.event.issue.title }}"
+      ISSUE_BODY: "${{ github.event.issue.body }}"
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: pnpm 설치
+        uses: pnpm/action-setup@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v6
+        with:
+          cache: 'pnpm'
+          node-version-file: .node-version
+
+      - name: 의존성 설치
+        run: pnpm install --frozen-lockfile
+
+      - name: Codex 홈 경로 설정
+        run: echo "CODEX_HOME=$RUNNER_TEMP/codex-home" >> "$GITHUB_ENV"
+
+      - name: Codex 인증 파일 구성
+        env:
+          CODEX_AUTH_JSON: ${{ secrets.CODEX_AUTH_JSON }}
+        run: |
+          mkdir -p "$CODEX_HOME"
+          if [ -z "$CODEX_AUTH_JSON" ]; then
+            echo "CODEX_AUTH_JSON 시크릿이 비어 있습니다." >&2
+            exit 1
+          fi
+          printf '%s' "$CODEX_AUTH_JSON" > "$CODEX_HOME/auth.json"
+          chmod 600 "$CODEX_HOME/auth.json"
+
+      - name: 이슈 메타데이터 파싱
+        id: parse
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const labels = (issue.labels || []).map((label) => typeof label === 'string' ? label : label.name);
+            const gameLabel = labels.find((label) => ['ck3', 'vic3', 'stellaris'].includes(label));
+
+            if (!gameLabel) {
+              core.setFailed('게임 라벨(ck3/vic3/stellaris)을 찾지 못했습니다.');
+              return;
+            }
+
+            const modMatch = issue.title.match(/:\s*(.+)$/);
+            if (!modMatch) {
+              core.setFailed('이슈 제목에서 모드명을 파싱하지 못했습니다.');
+              return;
+            }
+
+            core.setOutput('game', gameLabel);
+            core.setOutput('mod', modMatch[1].trim());
+
+      - name: Codex로 fallback 번역 반영
+        id: run_codex
+        uses: openai/codex-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          codex-home: ${{ env.CODEX_HOME }}
+          sandbox: workspace-write
+          prompt: |
+            당신은 패러독스 게임 모드 번역 저장소의 유지보수 담당 엔지니어입니다.
+
+            아래 이슈에 포함된 `translation-refused` 항목을 fallback 번역으로 처리하고 PR 가능한 변경을 만드세요.
+            - 이슈 번호: #${{ env.ISSUE_NUMBER }}
+            - 게임: ${{ steps.parse.outputs.game }}
+            - 모드: ${{ steps.parse.outputs.mod }}
+            - 이슈 제목: ${{ env.ISSUE_TITLE }}
+
+            이슈 본문:
+            ---
+            ${{ env.ISSUE_BODY }}
+            ---
+
+            작업 지침:
+            1) 이슈 본문의 표에서 파일/키/원문 항목을 파싱한다.
+            2) 해당 항목만 대상으로 한국어 fallback 번역을 작성해 반영한다.
+            3) 게임 변수, 포맷 토큰, 마크업 문법은 원본과 동일하게 보존한다.
+            4) 번역이 어려운 고유명사는 음역 우선 정책을 적용한다.
+            5) 불필요한 파일 생성/수정은 금지한다.
+            6) 변경 후 반드시 아래 검증을 모두 실행하고 통과시킨다.
+               - pnpm exec tsc --noEmit
+               - pnpm test
+
+      - name: 타입 검사
+        run: pnpm exec tsc --noEmit
+
+      - name: 테스트 실행
+        run: pnpm test
+
+      - name: Codex 인증 파일 정리
+        if: always()
+        run: rm -f "$CODEX_HOME/auth.json"
+
+      - name: fallback 번역 PR 생성
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/fallback-translate-issue-${{ env.ISSUE_NUMBER }}
+          delete-branch: true
+          commit-message: "chore: 번역 거부 항목 fallback 번역 처리 (#${{ env.ISSUE_NUMBER }})"
+          title: "chore: 번역 거부 항목 fallback 번역 처리 (#${{ env.ISSUE_NUMBER }})"
+          body: |
+            ## 개요
+            - `translation-refused` 라벨 이슈 #${{ env.ISSUE_NUMBER }}의 번역 거부 항목을 Codex가 fallback 번역으로 반영했습니다.
+            - 대상 게임: `${{ steps.parse.outputs.game }}`
+            - 대상 모드: `${{ steps.parse.outputs.mod }}`
+
+            ## 검증
+            - pnpm exec tsc --noEmit
+            - pnpm test
+
+            ## 참고 이슈
+            - #${{ env.ISSUE_NUMBER }}
+          labels: |
+            automation
+            codex
+            translation-refused
