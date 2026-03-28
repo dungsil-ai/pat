@@ -13,6 +13,7 @@ const execAsync = promisify(exec)
 
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
+const DEFAULT_TRANSLATE_BATCH_SIZE = 20
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -34,6 +35,25 @@ function getLocalizationFolderName(gameType: GameType): string {
     default:
       throw new Error(`Unsupported game type: ${gameType}`)
   }
+}
+
+/**
+ * 배치 번역 크기를 환경변수에서 읽어옵니다.
+ * 잘못된 값이 들어오면 기본값을 사용합니다.
+ */
+function getTranslateBatchSize (): number {
+  const batchSizeEnv = process.env.TRANSLATE_BATCH_SIZE
+  if (!batchSizeEnv) {
+    return DEFAULT_TRANSLATE_BATCH_SIZE
+  }
+
+  const parsed = Number.parseInt(batchSizeEnv, 10)
+  if (Number.isNaN(parsed) || parsed <= 0) {
+    log.warn(`TRANSLATE_BATCH_SIZE 값이 올바르지 않아 기본값(${DEFAULT_TRANSLATE_BATCH_SIZE})을 사용합니다: ${batchSizeEnv}`)
+    return DEFAULT_TRANSLATE_BATCH_SIZE
+  }
+
+  return parsed
 }
 
 interface ModTranslationsOptions {
@@ -363,12 +383,33 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     log.verbose(`[${mode}/${file}] 언어 키 발견! "${langKey}" -> "l_korean"`)
   }
 
-  const SAVE_BATCH_SIZE = 1000 // 1,000 라인마다 파일에 저장
-  const TRANSLATE_BATCH_SIZE = 20 // 번역 API는 20개 단위 벌크 처리
+  const TRANSLATE_BATCH_SIZE = getTranslateBatchSize() // 번역 API 배치 크기 (환경변수로 조정 가능)
   let processedCount = 0
   const entries = Object.entries(sourceYaml[`l_${sourceLanguage}`])
   const totalEntries = entries.length
+  const sourceKeys = new Set(entries.map(([key]) => key))
+  const previousKoreanEntries = (targetYaml[langKey] ?? {}) as Record<string, [string, string | null]>
   const pendingTranslations: Array<{ key: string; sourceValue: string; sourceHash: string; shouldTransliterate: boolean }> = []
+  let hasUnsavedChanges = false
+
+  const buildProgressYaml = (): typeof newYaml => {
+    const mergedEntries: Record<string, [string, string | null]> = { ...newYaml.l_korean }
+
+    // 아직 순회하지 않은 키는 기존 번역 파일 값을 유지하여 중간 저장 시 파일 잘림을 방지
+    for (const [key, value] of Object.entries(previousKoreanEntries)) {
+      if (!Object.hasOwn(mergedEntries, key) && sourceKeys.has(key)) {
+        mergedEntries[key] = value
+      }
+    }
+
+    return { l_korean: mergedEntries }
+  }
+
+  async function saveCurrentProgress (): Promise<void> {
+    const updatedContent = stringifyYaml(buildProgressYaml())
+    await writeFile(targetPath, updatedContent, 'utf-8')
+    hasUnsavedChanges = false
+  }
 
   async function flushPendingTranslations (): Promise<void> {
     if (pendingTranslations.length === 0) {
@@ -404,6 +445,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
         }
 
         newYaml.l_korean[item.key] = [translatedValue, hashForEntry]
+        hasUnsavedChanges = true
         processedCount++
       }
     }
@@ -423,6 +465,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
 
         for (const item of items) {
           newYaml.l_korean[item.key] = [item.sourceValue, null]
+          hasUnsavedChanges = true
           untranslatedItems.push({
             mod: mode,
             file,
@@ -436,6 +479,10 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
 
     await processModeItems(normalItems, false)
     await processModeItems(transliterationItems, true)
+
+    // 배치 번역이 끝나면 즉시 파일에 반영
+    await saveCurrentProgress()
+    log.verbose(`[${mode}/${file}] 배치 번역 결과 저장 완료 (${processedCount}/${totalEntries} 처리됨)`)
   }
 
   for (const [key, [sourceValue]] of entries) {
@@ -443,8 +490,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     if (timeoutMs !== null && processedCount % 100 === 0 && Date.now() - startTime >= timeoutMs) {
       log.info(`[${mode}/${file}] 타임아웃 도달 (${processedCount}/${totalEntries} 처리됨)`)
       // 현재까지 작업 저장
-      const updatedContent = stringifyYaml(newYaml)
-      await writeFile(targetPath, updatedContent, 'utf-8')
+      await saveCurrentProgress()
       log.info(`[${mode}/${file}] 타임아웃으로 인한 중간 저장 완료`)
       throw new TimeoutReachedError()
     }
@@ -457,6 +503,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     // 해싱 처리용 유틸리티
     if (onlyHash) {
       newYaml.l_korean[key] = [targetValue, sourceHash]
+      hasUnsavedChanges = true
       log.debug(`[${mode}/${file}:${key}] 해시 업데이트: ${targetHash} -> ${sourceHash}`)
       processedCount++
       continue
@@ -466,6 +513,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     if (targetValue && targetHash && (sourceHash === targetHash)) {
       log.verbose(`[${mode}/${file}:${key}] 번역파일 문자열: ${targetHash} | "${targetValue}" (번역됨)`)
       newYaml.l_korean[key] = [targetValue, targetHash]
+      hasUnsavedChanges = true
       processedCount++
       continue
     }
@@ -496,12 +544,6 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       await flushPendingTranslations()
     }
 
-    // 1,000 라인마다 중간 저장
-    if (processedCount > 0 && processedCount % SAVE_BATCH_SIZE === 0) {
-      const updatedContent = stringifyYaml(newYaml)
-      await writeFile(targetPath, updatedContent, 'utf-8')
-      log.info(`[${mode}/${file}] 중간 저장 완료 (${processedCount}/${totalEntries} 처리됨)`)
-    }
   }
 
   await flushPendingTranslations()
@@ -537,8 +579,9 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       }
     }
   } else {
-    const updatedContent = stringifyYaml(newYaml)
-    await writeFile(targetPath, updatedContent, 'utf-8')
+    if (hasUnsavedChanges) {
+      await saveCurrentProgress()
+    }
     log.debug(`[${mode}/${file}] 번역 완료 (번역 파일 위치: ${targetPath})`)
   }
   
