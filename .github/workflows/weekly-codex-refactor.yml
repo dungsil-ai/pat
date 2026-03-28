@@ -47,11 +47,12 @@ jobs:
           chmod 600 "$CODEX_HOME/auth.json"
 
       - name: Codex CLI 설치
-        run: npm install -g @openai/codex
+        run: npm install -g @openai/codex@1
 
       - name: Codex로 주간 리팩토링 수행
         run: |
           PROMPT_FILE=$(mktemp)
+          trap 'rm -f "$PROMPT_FILE"' EXIT
           cat <<'EOF' > "$PROMPT_FILE"
           당신은 이 저장소의 유지보수 담당 엔지니어입니다.
 
@@ -73,8 +74,6 @@ jobs:
             --cd "$GITHUB_WORKSPACE" \
             --sandbox workspace-write \
             --prompt-file "$PROMPT_FILE"
-
-          rm -f "$PROMPT_FILE"
 
       - name: 변경사항 린트 검증
         run: pnpm exec tsc --noEmit
