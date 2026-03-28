@@ -1,4 +1,4 @@
-import { describe, expect, it, vi, beforeEach } from 'vitest'
+import { describe, expect, it, vi, beforeEach, type Mock } from 'vitest'
 import { TranslationRefusedError } from './ai'
 
 // delay와 logger를 최소 동작으로 모킹
@@ -46,7 +46,7 @@ describe('큐 동작', () => {
 
   it('일반 오류는 재시도 후 성공하면 resolve되어야 함', async () => {
     const { addQueue } = await import('./queue')
-    const delayMock = (await import('./delay')).delay as unknown as vi.Mock
+    const delayMock = (await import('./delay')).delay as unknown as Mock
 
     const task = vi.fn()
       .mockRejectedValueOnce(new Error('일시 오류'))
@@ -89,7 +89,7 @@ describe('큐 동작', () => {
 
   it('일반 오류가 MAX_RETRIES 초과 시 reject되어야 함', async () => {
     const { addQueue } = await import('./queue')
-    const delayMock = (await import('./delay')).delay as unknown as vi.Mock
+    const delayMock = (await import('./delay')).delay as unknown as Mock
     
     // 6번 연속 실패하는 작업 (초기 시도 1회 + 재시도 5회)
     const task = vi.fn().mockRejectedValue(new Error('지속적인 오류'))
@@ -105,7 +105,7 @@ describe('큐 동작', () => {
 
   it('일반 오류는 여러 번 재시도 후 성공하면 resolve되어야 함', async () => {
     const { addQueue } = await import('./queue')
-    const delayMock = (await import('./delay')).delay as unknown as vi.Mock
+    const delayMock = (await import('./delay')).delay as unknown as Mock
 
     // 3번 실패 후 성공
     const task = vi.fn()
