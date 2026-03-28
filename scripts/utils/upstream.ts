@@ -484,7 +484,7 @@ async function cloneWithFallback(
   latestRef: { type: 'tag' | 'branch', name: string }
 ): Promise<void> {
   if (latestRef.type === 'branch') {
-    await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
+    await execAsync(`git clone --filter=blob:none --depth=1 --single-branch --branch "${latestRef.name}" --no-checkout "${config.url}" "${targetPath}"`)
     return
   }
 
