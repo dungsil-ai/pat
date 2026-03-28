@@ -18,6 +18,7 @@ vi.mock('../utils/logger', () => ({
 
 vi.mock('../utils/translate', () => ({
   translate: vi.fn((text: string) => Promise.resolve(`[KO]${text}`)),
+  translateBulk: vi.fn((texts: string[]) => Promise.resolve(texts.map(text => ({ translatedText: `[KO]${text}` })))),
   TranslationRetryExceededError: class TranslationRetryExceededError extends Error {
     constructor() {
       super()
