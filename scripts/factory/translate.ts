@@ -111,11 +111,12 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
         await access(sourceDir)
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-          throw new Error(
-            `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${sourceDir}\n` +
-            `meta.toml의 localization 경로를 확인하거나 upstream 업데이트가 실패했을 수 있습니다.\n` +
+          log.warn(
+            `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${sourceDir}\n` +
+            `meta.toml의 localization 경로를 확인하거나 upstream 업데이트 상태를 점검하세요.\n` +
             `경로: ${locPath}`
           )
+          continue
         }
         throw error
       }
