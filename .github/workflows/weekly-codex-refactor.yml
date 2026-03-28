@@ -15,7 +15,7 @@ jobs:
     env:
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
       CODEX_HOME: "${{ github.workspace }}/.codex-home"
-      CODEX_SANDBOX_MODE: "${{ vars.CODEX_SANDBOX_MODE || 'workspace-write' }}"
+      CODEX_SANDBOX_MODE: "${{ vars.CODEX_SANDBOX_MODE || 'danger-full-access' }}"
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v6

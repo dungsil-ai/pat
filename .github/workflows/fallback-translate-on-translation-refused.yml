@@ -87,7 +87,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           codex-home: ${{ env.CODEX_HOME }}
-          sandbox: workspace-write
+          sandbox: danger-full-access
           prompt: |
             당신은 패러독스 게임 모드 번역 저장소의 유지보수 담당 엔지니어입니다.
 
