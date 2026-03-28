@@ -65,6 +65,24 @@ vi.mock('../utils/upstream', () => ({
   updateAllUpstreams: vi.fn(() => Promise.resolve())
 }))
 
+interface MockWithCalls {
+  mock: {
+    calls: any[][]
+  }
+}
+
+function getWarnLogMessages(warnMock: MockWithCalls): string[] {
+  return warnMock.mock.calls
+    .map(call => call[0])
+    .filter((value): value is string => typeof value === 'string')
+}
+
+function expectWarnLogContains(warnMock: MockWithCalls, ...keywords: string[]): void {
+  const warnMessages = getWarnLogMessages(warnMock)
+  const hasMatchedMessage = warnMessages.some(message => keywords.every(keyword => message.includes(keyword)))
+  expect(hasMatchedMessage).toBe(true)
+}
+
 describe('processLanguageFile 증분 쓰기', () => {
   let testDir: string
 
@@ -340,13 +358,10 @@ language = "english"
 
     // 번역되지 않은 항목에 대한 경고 로그가 호출되었는지 확인
     // 번역 재시도 초과 경고 메시지 확인
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('번역 재시도 초과'))
-    // 키 정보가 포함된 로그 확인
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('test_key_3'))
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('test_key_7'))
-    // 원본 메시지가 포함된 로그 확인
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('Test value 3'))
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('Test value 7'))
+    expectWarnLogContains(vi.mocked(log.warn), '번역 재시도 초과')
+    // 로그 문구의 세부 포맷 대신, 핵심 식별자/원문 포함 여부만 확인
+    expectWarnLogContains(vi.mocked(log.warn), 'test_key_3', 'Test value 3')
+    expectWarnLogContains(vi.mocked(log.warn), 'test_key_7', 'Test value 7')
 
     // 출력 파일에 원문이 보존되었는지 확인
     const outputPath = join(modDir, 'mod', 'localization', 'korean', '___fail_l_korean.yml')
@@ -454,7 +469,7 @@ language = "english"
     })
 
     expect(result.untranslatedItems).toEqual([])
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다'))
+    expectWarnLogContains(vi.mocked(log.warn), 'upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다')
 
     const outputPath = join(mod2Dir, 'mod', 'localisation', 'korean', '___normal_l_korean.yml')
     const outputContent = await readFile(outputPath, 'utf-8')
@@ -520,7 +535,7 @@ language = "english"
     })
 
     // 번역 거부 로그가 호출되었는지 확인
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('번역 거부'))
+    expectWarnLogContains(vi.mocked(log.warn), '번역 거부')
 
     // 반환값에 거부된 항목이 포함되어 있는지 확인
     expect(result.untranslatedItems).toBeDefined()
