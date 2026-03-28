@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   retranslate-invalid:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
