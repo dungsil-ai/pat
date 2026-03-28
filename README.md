@@ -131,7 +131,10 @@ pnpm add-dict abc123
 
 ```bash
 GOOGLE_GENERATIVE_AI_API_KEY=your_api_key_here
+TRANSLATION_TIMEOUT_MINUTES=15
 ```
+
+- `TRANSLATION_TIMEOUT_MINUTES`: 번역 작업 타임아웃(분)입니다. `false` 또는 `0`으로 설정하면 비활성화됩니다.
 
 ## 프로젝트 구조
 

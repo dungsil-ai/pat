@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import process from 'node:process'
 import { readdir } from 'node:fs/promises'
 import { join } from 'pathe'
@@ -11,6 +12,7 @@ import { log } from './utils/logger'
 import { isSqliteIOError } from './utils/cache'
 import { getDiskUsageString } from './utils/disk-usage'
 import { filterMods } from './utils/mod-filter'
+import { getTranslationTimeoutMinutesFromEnv } from './utils/translation-timeout'
 
 async function main () {
   try {
@@ -24,18 +26,8 @@ async function main () {
     // 특정 모드가 지정된 경우 해당 모드만 처리
     const mods = filterMods(allMods, process.argv?.[3])
 
-    // 타임아웃 설정: 환경변수 TRANSLATION_TIMEOUT_MINUTES 또는 false(비활성화)
-    // 환경변수가 'false' 또는 '0'이면 타임아웃 비활성화
-    const timeoutEnv = process.env.TRANSLATION_TIMEOUT_MINUTES
-    let timeoutMinutes: number | false | undefined = undefined // undefined = 기본값 사용
-    if (timeoutEnv === 'false' || timeoutEnv === '0') {
-      timeoutMinutes = false // 타임아웃 비활성화
-    } else if (timeoutEnv) {
-      const parsed = parseInt(timeoutEnv, 10)
-      if (!isNaN(parsed) && parsed > 0) {
-        timeoutMinutes = parsed
-      }
-    }
+    // 타임아웃 설정: 환경변수 TRANSLATION_TIMEOUT_MINUTES(.env 포함) 또는 false(비활성화)
+    const timeoutMinutes = getTranslationTimeoutMinutesFromEnv()
 
     if (updateDict) {
       // CLI 인자 파싱: --since-commit, --commit-range, --since-date
