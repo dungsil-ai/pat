@@ -50,8 +50,33 @@ describe('AI 유틸리티', () => {
     it('JSON이 손상되면 원인을 포함한 오류를 던져야 함', () => {
       const raw = '{"translations":["정상","비정상]}'
 
-      expect(() => parseBulkResponse(raw, 2))
-        .toThrowError(/벌크 번역 JSON 파싱에 실패했습니다/)
+      let jsonParseErrorMessage = ''
+      try {
+        JSON.parse(raw)
+      } catch (error) {
+        if (error instanceof Error) {
+          jsonParseErrorMessage = error.message
+        }
+      }
+
+      try {
+        parseBulkResponse(raw, 2)
+        throw new Error('parseBulkResponse가 예외를 던져야 하지만 그렇지 않았습니다.')
+      } catch (error) {
+        expect(error).toBeInstanceOf(Error)
+        const message = (error as Error).message
+        expect(message).toMatch(/벌크 번역 JSON 파싱에 실패했습니다/)
+        if (jsonParseErrorMessage) {
+          expect(message).toContain(jsonParseErrorMessage)
+        }
+      }
+    })
+
+    it('코드블록 외부 배열 텍스트는 벌크 응답으로 오인하지 않아야 함', () => {
+      const raw = '참고용 배열: ["첫째","둘째"]\n결과는 아래 객체를 확인하세요.\n{"translations":["정상1","정상2"]}'
+      const parsed = parseBulkResponse(raw, 2)
+
+      expect(parsed).toEqual(['정상1', '정상2'])
     })
   })
 })
