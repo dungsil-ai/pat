@@ -14,7 +14,7 @@ inputs:
   workdir:
     description: 'codex exec 실행 경로'
     required: false
-    default: '${{ github.workspace }}'
+    default: ''
 runs:
   using: 'composite'
   steps:
@@ -44,8 +44,9 @@ runs:
         INPUT_PROMPT: ${{ inputs.prompt }}
         INPUT_WORKDIR: ${{ inputs.workdir }}
       run: |
+        WORKDIR="${INPUT_WORKDIR:-$GITHUB_WORKSPACE}"
         codex exec \
-          --cd "$INPUT_WORKDIR" \
+          --cd "$WORKDIR" \
           --sandbox danger-full-access \
           "$INPUT_PROMPT"
 
