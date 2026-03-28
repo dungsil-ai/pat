@@ -19,13 +19,66 @@ export class TranslationRefusedError extends Error {
   }
 }
 
-const ai = new GoogleGenerativeAI(process.env.GOOGLE_AI_STUDIO_TOKEN!)
+const ai = new GoogleGenerativeAI(
+  process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY || '',
+)
 
 const generationConfig = {
   temperature: 0.5,
   topP: 0.95,
   topK: 40,
   maxOutputTokens: 8192,
+}
+
+interface AiSdkGenerateTextResult {
+  text: string
+  finishReason?: string
+  rawFinishReason?: string
+}
+
+type AiSdkGenerateText = (options: Record<string, unknown>) => Promise<AiSdkGenerateTextResult>
+type AiSdkGoogleProvider = (modelId: string) => unknown
+
+interface AiSdkRuntime {
+  generateText: AiSdkGenerateText
+  google: AiSdkGoogleProvider
+}
+
+let aiSdkRuntime: AiSdkRuntime | null = null
+let aiSdkLoadFailed = false
+
+/**
+ * ai-sdk.dev 패키지가 설치된 환경이면 우선 사용하고, 없으면 기존 SDK로 폴백합니다.
+ */
+async function loadAiSdkRuntime (): Promise<AiSdkRuntime | null> {
+  if (aiSdkRuntime) {
+    return aiSdkRuntime
+  }
+  if (aiSdkLoadFailed) {
+    return null
+  }
+
+  try {
+    const dynamicImport = new Function('m', 'return import(m)') as (moduleId: string) => Promise<any>
+    const [{ generateText }, { createGoogleGenerativeAI }] = await Promise.all([
+      dynamicImport('ai'),
+      dynamicImport('@ai-sdk/google'),
+    ])
+
+    const apiKey = process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    const google = createGoogleGenerativeAI({
+      ...(apiKey ? { apiKey } : {}),
+    }) as AiSdkGoogleProvider
+
+    aiSdkRuntime = {
+      generateText: generateText as AiSdkGenerateText,
+      google,
+    }
+    return aiSdkRuntime
+  } catch {
+    aiSdkLoadFailed = true
+    return null
+  }
 }
 
 const gemini = (model: string, gameType: GameType, useTransliteration: boolean = false) => ai.getGenerativeModel({
@@ -39,13 +92,52 @@ export interface RetranslationContext {
   failureReason: string
 }
 
+function buildPrompt(text: string, retranslationContext?: RetranslationContext): string {
+  if (!retranslationContext) {
+    return text
+  }
+
+  return `## Retranslation Request
+
+### Original Text
+${text}
+
+### Previous Translation (INCORRECT)
+${retranslationContext.previousTranslation}
+
+### Reason for Retranslation
+${retranslationContext.failureReason}
+
+### Instructions
+Please provide a corrected translation that addresses the issue mentioned above. Remember to strictly follow all translation guidelines from the system instruction.`
+}
+
+function isAiSdkRefusal(result: AiSdkGenerateTextResult): boolean {
+  if (result.finishReason === 'content-filter') {
+    return true
+  }
+
+  if (!result.rawFinishReason) {
+    return false
+  }
+
+  const normalizedReason = result.rawFinishReason.toUpperCase()
+  return [
+    'SAFETY',
+    'BLOCKLIST',
+    'PROHIBITED_CONTENT',
+    'RECITATION',
+    'SPII',
+  ].includes(normalizedReason)
+}
+
 export async function translateAI (text: string, gameType: GameType = 'ck3', retranslationContext?: RetranslationContext, useTransliteration: boolean = false) {
   return new Promise<string>((resolve, reject) => {
     try {
-      return translateAIByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), text, retranslationContext)
+      return translateAIByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), text, gameType, useTransliteration, retranslationContext)
     } catch (e) {
       try {
-        return translateAIByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), text, retranslationContext)
+        return translateAIByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), text, gameType, useTransliteration, retranslationContext)
       } catch (ee) {
         reject(ee)
       }
@@ -64,10 +156,10 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
 
   return new Promise<string[]>((resolve, reject) => {
     try {
-      return translateAIBulkByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), texts)
+      return translateAIBulkByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), texts, gameType, useTransliteration)
     } catch (e) {
       try {
-        return translateAIBulkByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), texts)
+        return translateAIBulkByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), texts, gameType, useTransliteration)
       } catch (ee) {
         reject(ee)
       }
@@ -89,30 +181,54 @@ function isRefusalReason(finishReason: FinishReason | undefined): boolean {
   ].includes(finishReason)
 }
 
-async function translateAIByModel (resolve: (value: string | PromiseLike<string>) => void, reject: (reason?: any) => void, model: GenerativeModel, text: string, retranslationContext?: RetranslationContext): Promise<void> {
+async function translateAIByModel (
+  resolve: (value: string | PromiseLike<string>) => void,
+  reject: (reason?: any) => void,
+  model: GenerativeModel,
+  text: string,
+  gameType: GameType,
+  useTransliteration: boolean,
+  retranslationContext?: RetranslationContext,
+): Promise<void> {
   return addQueue(
     text,
     async () => {
-      let prompt = text
-      
-      // 재번역 시, 이전 번역과 실패 사유를 프롬프트에 포함
-      if (retranslationContext) {
-        prompt = `## Retranslation Request
-
-### Original Text
-${text}
-
-### Previous Translation (INCORRECT)
-${retranslationContext.previousTranslation}
-
-### Reason for Retranslation
-${retranslationContext.failureReason}
-
-### Instructions
-Please provide a corrected translation that addresses the issue mentioned above. Remember to strictly follow all translation guidelines from the system instruction.`
-      }
+      const prompt = buildPrompt(text, retranslationContext)
 
       try {
+        const aiSdk = await loadAiSdkRuntime()
+        if (aiSdk) {
+          const result = await aiSdk.generateText({
+            model: aiSdk.google('gemini-3-flash-preview'),
+            system: getSystemPrompt(gameType, useTransliteration),
+            prompt,
+            temperature: generationConfig.temperature,
+            topP: generationConfig.topP,
+            maxOutputTokens: generationConfig.maxOutputTokens,
+            providerOptions: {
+              google: {
+                topK: generationConfig.topK,
+              },
+            },
+          })
+
+          if (isAiSdkRefusal(result)) {
+            throw new TranslationRefusedError(
+              text,
+              `응답 거부됨: ${result.rawFinishReason || result.finishReason || 'UNKNOWN'}`
+            )
+          }
+
+          const translated = result.text
+            .replaceAll(/\n/g, '\\n')
+            .replaceAll(/[^\\]"/g, '\\"')
+            .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
+            .replaceAll(/#강조/g, '#bold')
+
+          resolve(translated)
+          return
+        }
+
         const { response } = await model.generateContent({
           contents: [
             {
@@ -293,6 +409,8 @@ async function translateAIBulkByModel (
   reject: (reason?: any) => void,
   model: GenerativeModel,
   texts: string[],
+  gameType: GameType,
+  useTransliteration: boolean,
 ): Promise<void> {
   const queueKey = `bulk:${texts[0]?.slice(0, 30) || 'empty'}:${texts.length}`
 
@@ -309,6 +427,40 @@ async function translateAIBulkByModel (
       ].join('\n')
 
       try {
+        const aiSdk = await loadAiSdkRuntime()
+        if (aiSdk) {
+          const result = await aiSdk.generateText({
+            model: aiSdk.google('gemini-3-flash-preview'),
+            system: getSystemPrompt(gameType, useTransliteration),
+            prompt,
+            temperature: generationConfig.temperature,
+            topP: generationConfig.topP,
+            maxOutputTokens: generationConfig.maxOutputTokens,
+            providerOptions: {
+              google: {
+                topK: generationConfig.topK,
+              },
+            },
+          })
+
+          if (isAiSdkRefusal(result)) {
+            throw new TranslationRefusedError(
+              texts.join(' | ').slice(0, 200),
+              `응답 거부됨: ${result.rawFinishReason || result.finishReason || 'UNKNOWN'}`
+            )
+          }
+
+          const translatedItems = parseBulkResponse(result.text, texts.length)
+            .map(item => item
+              .replaceAll(/\n/g, '\\n')
+              .replaceAll(/[^\\]"/g, '\\"')
+              .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
+              .replaceAll(/#강조/g, '#bold'))
+
+          resolve(translatedItems)
+          return
+        }
+
         const { response } = await model.generateContent(prompt)
 
         const promptFeedback = response.promptFeedback
