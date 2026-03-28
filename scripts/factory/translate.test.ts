@@ -826,6 +826,61 @@ language = "english"
     await rm(testDir, { recursive: true, force: true })
   })
 
+  it('모드 이름이 ETC일 때는 하위 실제 모드 이름을 참조해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk, TranslationRefusedError } = await import('../utils/translate')
+
+    const ck3Dir = join(testDir, 'ck3')
+    const etcDir = join(ck3Dir, 'ETC')
+    const upstreamDir = join(etcDir, 'upstream')
+
+    await mkdir(join(upstreamDir, 'More Character Names', 'names'), { recursive: true })
+    await writeFile(join(etcDir, 'meta.toml'), `
+[upstream]
+localization = ["."]
+language = "english"
+`, 'utf-8')
+
+    await writeFile(
+      join(upstreamDir, 'More Character Names', 'names', 'character_names_l_english.yml'),
+      `l_english:
+ key_ok:0 "Safe Name"
+ key_refused:0 "Bunsom"
+`,
+      'utf-8'
+    )
+
+    vi.mocked(translateBulk).mockImplementationOnce(async (texts: string[]) => {
+      return texts.map((text) => {
+        if (text === 'Bunsom') {
+          return {
+            translatedText: text,
+            error: new TranslationRefusedError(text, 'SAFETY')
+          }
+        }
+        return { translatedText: `[KO]${text}` }
+      })
+    })
+
+    const result = await processModTranslations({
+      rootDir: ck3Dir,
+      mods: ['ETC'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(result.untranslatedItems).toHaveLength(1)
+    expect(result.untranslatedItems[0].mod).toBe('More Character Names')
+    expect(result.untranslatedItems[0].file).toBe('More Character Names/names/character_names_l_english.yml')
+
+    const jsonPath = join(testDir, 'ck3-untranslated-items.json')
+    const jsonData = JSON.parse(await readFile(jsonPath, 'utf-8'))
+    expect(jsonData.items[0].mod).toBe('More Character Names')
+
+    const bulkCallContext = vi.mocked(translateBulk).mock.calls.at(-1)?.[3] as { modName?: string } | undefined
+    expect(bulkCallContext?.modName).toBe('More Character Names')
+  })
+
   it('모드 단위 병렬 처리 동시성을 적용해야 함', async () => {
     const testDir = join(tmpdir(), `translate-test-mod-concurrency-${Date.now()}`)
     const ck3Dir = join(testDir, 'ck3')

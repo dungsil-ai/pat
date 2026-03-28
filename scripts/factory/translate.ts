@@ -109,6 +109,16 @@ interface ModProcessResult {
   timeoutReached: boolean
 }
 
+function resolveLogModName(modName: string, filePath: string): string {
+  if (modName !== 'ETC') {
+    return modName
+  }
+
+  const normalizedPath = filePath.replace(/\\/g, '/')
+  const [actualModName] = normalizedPath.split('/')
+  return actualModName || modName
+}
+
 export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
@@ -391,6 +401,7 @@ class TimeoutReachedError extends Error {
 async function processLanguageFile (mode: string, sourceDir: string, targetBaseDir: string, file: string, sourceLanguage: string, gameType: GameType, onlyHash: boolean, startTime: number, timeoutMs: number | null, projectRoot: string, transliterationFiles?: string[]): Promise<UntranslatedItem[]> {
   const sourcePath = join(sourceDir, file)
   const untranslatedItems: UntranslatedItem[] = []
+  const logModName = resolveLogModName(mode, file)
 
   // 파일명을 기반으로 음역 모드 파일인지 감지
   const isTransliterationFile = shouldUseTransliteration(file, undefined, transliterationFiles)
@@ -479,14 +490,14 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           log.warn(`[${mode}/${file}:${item.key}] 번역 재시도 초과, 원문을 유지합니다.`)
           translatedValue = item.sourceValue
           hashForEntry = null
-          untranslatedItems.push({ mod: mode, file, key: item.key, message: item.sourceValue })
+          untranslatedItems.push({ mod: logModName, file, key: item.key, message: item.sourceValue })
         } else if (result.error instanceof TranslationRefusedError) {
           log.warn(`[${mode}/${file}:${item.key}] 번역 거부됨: ${result.error.reason}`)
           log.info(`[${mode}/${file}:${item.key}] 원문을 유지하고 다음 항목으로 계속 진행합니다.`)
           translatedValue = item.sourceValue
           hashForEntry = null
           untranslatedItems.push({
-            mod: mode,
+            mod: logModName,
             file,
             key: item.key,
             message: `${item.sourceValue} (번역 거부: ${result.error.reason})`
@@ -505,7 +516,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
       }
 
       try {
-        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration, { modName: mode })
+        const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration, { modName: logModName })
         applyResults(items, results)
       } catch (error) {
         const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
@@ -516,7 +527,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           newYaml.l_korean[item.key] = [item.sourceValue, null]
           hasUnsavedChanges = true
           untranslatedItems.push({
-            mod: mode,
+            mod: logModName,
             file,
             key: item.key,
             message: `${item.sourceValue} (${modeLabel} 오류: ${String(error)})`
