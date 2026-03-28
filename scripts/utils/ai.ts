@@ -150,14 +150,116 @@ Please provide a corrected translation that addresses the issue mentioned above.
   )
 }
 
-function parseBulkResponse (rawText: string, expectedLength: number): string[] {
+interface JsonCandidate {
+  text: string
+  allowArray: boolean
+}
+
+function collectBalancedSegments (source: string, openChar: '{' | '[', closeChar: '}' | ']'): string[] {
+  const segments: string[] = []
+  let depth = 0
+  let startIndex = -1
+
+  for (let i = 0; i < source.length; i++) {
+    const ch = source[i]
+    if (ch === openChar) {
+      if (depth === 0) {
+        startIndex = i
+      }
+      depth++
+      continue
+    }
+
+    if (ch === closeChar && depth > 0) {
+      depth--
+      if (depth === 0 && startIndex !== -1) {
+        const segment = source.slice(startIndex, i + 1).trim()
+        if (segment.length > 0) {
+          segments.push(segment)
+        }
+        startIndex = -1
+      }
+    }
+  }
+
+  return segments
+}
+
+function extractJsonCandidates (text: string): JsonCandidate[] {
+  const candidates = new Map<string, JsonCandidate>()
+  const base = text.trim()
+  if (base.length > 0) {
+    candidates.set(base, { text: base, allowArray: false })
+  }
+
+  const addCandidate = (candidateText: string, allowArray: boolean): void => {
+    if (!candidateText) {
+      return
+    }
+    const normalized = candidateText.trim()
+    if (!normalized) {
+      return
+    }
+
+    const existing = candidates.get(normalized)
+    if (existing) {
+      existing.allowArray = existing.allowArray || allowArray
+      return
+    }
+    candidates.set(normalized, { text: normalized, allowArray })
+  }
+
+  // 코드블록 내부는 신뢰 구간으로 간주하여 배열 응답도 허용
+  const codeBlockRegex = /```(?:json)?\s*([\s\S]*?)\s*```/gi
+  let blockMatch: RegExpExecArray | null
+  while ((blockMatch = codeBlockRegex.exec(text)) !== null) {
+    addCandidate(blockMatch[1] || '', true)
+
+    for (const objectSegment of collectBalancedSegments(blockMatch[1] || '', '{', '}')) {
+      addCandidate(objectSegment, true)
+    }
+    for (const arraySegment of collectBalancedSegments(blockMatch[1] || '', '[', ']')) {
+      addCandidate(arraySegment, true)
+    }
+  }
+
+  // 객체는 전역 텍스트에서도 수집하되, 배열은 신뢰 구간(코드블록)에서만 허용
+  for (const objectSegment of collectBalancedSegments(text, '{', '}')) {
+    addCandidate(objectSegment, false)
+  }
+
+  return [...candidates.values()]
+}
+
+export function parseBulkResponse (rawText: string, expectedLength: number): string[] {
   const cleaned = rawText
     .replace(/^```(?:json)?\s*/i, '')
     .replace(/\s*```$/i, '')
     .trim()
 
-  const parsed = JSON.parse(cleaned)
-  const translations = Array.isArray(parsed) ? parsed : parsed?.translations
+  let parsed: unknown
+  let lastError: unknown
+
+  for (const candidate of extractJsonCandidates(cleaned)) {
+    try {
+      const candidateParsed = JSON.parse(candidate.text)
+      if (Array.isArray(candidateParsed) && !candidate.allowArray) {
+        continue
+      }
+      parsed = candidateParsed
+      lastError = undefined
+      break
+    } catch (error) {
+      lastError = error
+    }
+  }
+
+  if (parsed === undefined) {
+    const errorMessage = lastError instanceof Error ? lastError.message : String(lastError)
+    throw new Error(`벌크 번역 JSON 파싱에 실패했습니다: ${errorMessage}`)
+  }
+
+  const translations = Array.isArray(parsed) ? parsed : (parsed as { translations?: unknown[] })?.translations
 
   if (!Array.isArray(translations)) {
     throw new Error('벌크 번역 응답에 translations 배열이 없습니다.')
