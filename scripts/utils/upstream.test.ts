@@ -2,8 +2,27 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mkdir, writeFile, rm } from 'node:fs/promises'
 import { join } from 'pathe'
 import { tmpdir } from 'node:os'
+import { exec } from 'node:child_process'
 
 let fetchMock: ReturnType<typeof vi.fn>
+let execAsyncHandler: (command: string) => Promise<{ stdout: string, stderr: string }>
+
+vi.mock('node:child_process', () => ({
+  exec: Object.assign(
+    vi.fn((command: string, options: unknown, callback?: (error: Error | null, stdout: string, stderr: string) => void) => {
+      const cb = typeof options === 'function' ? options : callback
+      if (!cb) return {} as never
+
+      execAsyncHandler(command)
+        .then(({ stdout, stderr }) => cb(null, stdout, stderr))
+        .catch((error) => cb(error as Error, '', ''))
+      return {} as never
+    }),
+    {
+      [Symbol.for('nodejs.util.promisify.custom')]: (command: string) => execAsyncHandler(command)
+    }
+  )
+}))
 
 // 의존성 모킹
 vi.mock('./logger', () => ({
@@ -22,6 +41,8 @@ describe('upstream 유틸리티', () => {
   let testDir: string
 
   beforeEach(async () => {
+    vi.resetModules()
+
     // 테스트를 위한 임시 디렉토리 생성
     testDir = join(tmpdir(), `upstream-test-${Date.now()}`)
     await mkdir(testDir, { recursive: true })
@@ -33,6 +54,8 @@ describe('upstream 유틸리티', () => {
       json: async () => ({})
     }))
     vi.stubGlobal('fetch', fetchMock)
+    execAsyncHandler = async () => ({ stdout: '', stderr: '' })
+    vi.mocked(exec).mockClear()
   })
 
   afterEach(async () => {
@@ -146,6 +169,88 @@ language = "english"
       // 모든 모드
       const allConfigs = await parseUpstreamConfigs(testDir)
       expect(allConfigs.length).toBe(2)
+    })
+  })
+
+  describe('태그 clone/fetch 폴백', () => {
+    it('태그 clone 실패 시 실패한 디렉토리를 정리한 뒤 기본 브랜치 clone으로 폴백해야 함', async () => {
+      const commands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      execAsyncHandler = async (command: string) => {
+        commands.push(command)
+        if (command.startsWith('git ls-remote --tags --refs')) {
+          return { stdout: 'abc123\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        if (command.includes('git clone') && command.includes('--branch "v1.0.0"')) {
+          throw new Error('Remote branch v1.0.0 not found in upstream origin')
+        }
+
+        if (command.startsWith('git clone ')) {
+          await mkdir(join(repoPath, '.git', 'info'), { recursive: true })
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'natural'
+      }, testDir)
+
+      const tagCloneIndex = commands.findIndex(command => command.includes('git clone') && command.includes('--branch "v1.0.0"'))
+      const fallbackCloneIndex = commands.findIndex(command => command === `git clone --filter=blob:none --depth=1 --no-checkout "https://github.com/test/repo.git" "${repoPath}"`)
+
+      expect(tagCloneIndex).toBeGreaterThanOrEqual(0)
+      expect(fallbackCloneIndex).toBeGreaterThan(tagCloneIndex)
+    })
+
+    it('shallow 저장소에서 태그 fetch가 ref-not-found면 기본 브랜치 fetch로 폴백해야 함', async () => {
+      const commands: string[] = []
+      execAsyncHandler = async (command: string) => {
+        commands.push(command)
+        if (command === 'git status --porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+        if (command.startsWith('git ls-remote --tags --refs')) {
+          return { stdout: 'abc123\trefs/tags/v2.0.0\n', stderr: '' }
+        }
+        if (command === 'git describe --tags --exact-match') {
+          throw new Error('fatal: no tag exactly matches')
+        }
+        if (command === 'git rev-parse --abbrev-ref HEAD') {
+          return { stdout: 'main\n', stderr: '' }
+        }
+        if (command === 'git fetch --depth=1 origin tag "v2.0.0"') {
+          throw new Error('Remote branch v2.0.0 not found in upstream origin')
+        }
+        if (command.startsWith('git ls-remote --symref')) {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+      await writeFile(join(repoPath, '.git', 'shallow'), 'shallow')
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'natural'
+      }, testDir)
+
+      expect(commands).toContain('git fetch --depth=1 origin tag "v2.0.0"')
+      expect(commands).toContain('git fetch --depth=1 origin "main"')
+      expect(commands).toContain('git checkout "main"')
+      expect(commands).toContain('git reset --hard "origin/main"')
     })
   })
 
