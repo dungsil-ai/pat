@@ -29,7 +29,6 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@google/generative-ai": "0.24.1",
     "@iarna/toml": "2.2.5",
     "@libsql/client": "0.15.15",
     "@octokit/rest": "^22.0.1",
@@ -47,5 +46,9 @@
     "unstorage": "1.17.3",
     "vitest": "4.0.15",
     "xxhash-wasm": "1.1.0"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.53",
+    "ai": "^6.0.141"
   }
 }

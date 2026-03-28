@@ -1,4 +1,5 @@
-import { type GenerativeModel, GoogleGenerativeAI, FinishReason } from '@google/generative-ai'
+import { generateText } from 'ai'
+import { createGoogleGenerativeAI } from '@ai-sdk/google'
 import dotenv from 'dotenv'
 import { type GameType, getSystemPrompt } from './prompts'
 import { addQueue } from './queue'
@@ -19,7 +20,25 @@ export class TranslationRefusedError extends Error {
   }
 }
 
-const ai = new GoogleGenerativeAI(process.env.GOOGLE_AI_STUDIO_TOKEN!)
+let _googleProvider: ReturnType<typeof createGoogleGenerativeAI> | null = null
+
+/**
+ * Google AI 프로바이더를 반환합니다. API 키가 없으면 오류를 발생시킵니다.
+ */
+function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
+  if (!_googleProvider) {
+    const apiKey = process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    if (!apiKey) {
+      throw new Error(
+        'Google AI API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.',
+      )
+    }
+    _googleProvider = createGoogleGenerativeAI({ apiKey })
+  }
+  return _googleProvider
+}
+
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
 
 const generationConfig = {
   temperature: 0.5,
@@ -28,28 +47,92 @@ const generationConfig = {
   maxOutputTokens: 8192,
 }
 
-const gemini = (model: string, gameType: GameType, useTransliteration: boolean = false) => ai.getGenerativeModel({
-  model,
-  generationConfig,
-  systemInstruction: getSystemPrompt(gameType, useTransliteration),
-})
-
 export interface RetranslationContext {
   previousTranslation: string
   failureReason: string
 }
 
+function buildPrompt(text: string, retranslationContext?: RetranslationContext): string {
+  if (!retranslationContext) {
+    return text
+  }
+
+  return `## Retranslation Request
+
+### Original Text
+${text}
+
+### Previous Translation (INCORRECT)
+${retranslationContext.previousTranslation}
+
+### Reason for Retranslation
+${retranslationContext.failureReason}
+
+### Instructions
+Please provide a corrected translation that addresses the issue mentioned above. Remember to strictly follow all translation guidelines from the system instruction.`
+}
+
+/**
+ * 번역 거부 사유인지 확인
+ */
+function isRefusal(finishReason?: string): boolean {
+  return finishReason === 'content-filter'
+}
+
+/**
+ * AI 번역 결과 텍스트를 YAML 파일에 삽입 가능한 형태로 후처리합니다.
+ * - 실제 개행을 \n 리터럴로 변환
+ * - 이스케이프되지 않은 따옴표를 이스케이프 (이스케이프된 역슬래시 뒤의 따옴표는 유지)
+ * - 한국어 서식 태그를 게임 태그로 변환
+ */
+export function postProcessTranslation(text: string): string {
+  return text
+    .replaceAll(/\n/g, '\\n')
+    .replaceAll(/(?<!(?<!\\)\\)"/g, '\\"')
+    .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
+    .replaceAll(/#강조/g, '#bold')
+}
+
 export async function translateAI (text: string, gameType: GameType = 'ck3', retranslationContext?: RetranslationContext, useTransliteration: boolean = false) {
   return new Promise<string>((resolve, reject) => {
-    try {
-      return translateAIByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), text, retranslationContext)
-    } catch (e) {
-      try {
-        return translateAIByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), text, retranslationContext)
-      } catch (ee) {
-        reject(ee)
-      }
-    }
+    addQueue(
+      text,
+      async () => {
+        const prompt = buildPrompt(text, retranslationContext)
+
+        try {
+          const result = await generateText({
+            model: getGoogle()(GEMINI_MODEL),
+            system: getSystemPrompt(gameType, useTransliteration),
+            prompt,
+            temperature: generationConfig.temperature,
+            topP: generationConfig.topP,
+            maxOutputTokens: generationConfig.maxOutputTokens,
+            providerOptions: {
+              google: {
+                topK: generationConfig.topK,
+              },
+            },
+          })
+
+          if (isRefusal(result.finishReason)) {
+            throw new TranslationRefusedError(
+              text,
+              `응답 거부됨: ${result.finishReason}`,
+            )
+          }
+
+          const translated = postProcessTranslation(result.text)
+
+          resolve(translated)
+        } catch (error) {
+          // TranslationRefusedError나 다른 에러를 promise의 reject로 전달
+          // reject를 호출하면 외부 Promise가 거부되고, 에러는 호출자에게 전파됨
+          // throw하지 않음으로써 큐 작업은 정상 완료되고 unhandled promise rejection 방지
+          reject(error)
+        }
+      },
+    )
   })
 }
 
@@ -63,102 +146,52 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
   }
 
   return new Promise<string[]>((resolve, reject) => {
-    try {
-      return translateAIBulkByModel(resolve, reject, gemini('gemini-3-flash-preview', gameType, useTransliteration), texts)
-    } catch (e) {
-      try {
-        return translateAIBulkByModel(resolve, reject, gemini('gemini-flash-lite-latest', gameType, useTransliteration), texts)
-      } catch (ee) {
-        reject(ee)
-      }
-    }
-  })
-}
+    const queueKey = `bulk:${texts[0]?.slice(0, 30) || 'empty'}:${texts.length}`
 
-/**
- * 번역 거부 사유인지 확인
- */
-function isRefusalReason(finishReason: FinishReason | undefined): boolean {
-  if (!finishReason) return false
-  return [
-    FinishReason.SAFETY,
-    FinishReason.BLOCKLIST,
-    FinishReason.PROHIBITED_CONTENT,
-    FinishReason.RECITATION,
-    FinishReason.SPII,
-  ].includes(finishReason)
-}
+    addQueue(
+      queueKey,
+      async () => {
+        const prompt = [
+          'Translate all items into Korean and return ONLY valid JSON.',
+          'Output format must be exactly: {"translations":["..."]}',
+          'Keep the same order and item count.',
+          'Do not include markdown, explanations, or extra keys.',
+          '',
+          JSON.stringify({ texts }),
+        ].join('\n')
 
-async function translateAIByModel (resolve: (value: string | PromiseLike<string>) => void, reject: (reason?: any) => void, model: GenerativeModel, text: string, retranslationContext?: RetranslationContext): Promise<void> {
-  return addQueue(
-    text,
-    async () => {
-      let prompt = text
-      
-      // 재번역 시, 이전 번역과 실패 사유를 프롬프트에 포함
-      if (retranslationContext) {
-        prompt = `## Retranslation Request
-
-### Original Text
-${text}
-
-### Previous Translation (INCORRECT)
-${retranslationContext.previousTranslation}
-
-### Reason for Retranslation
-${retranslationContext.failureReason}
-
-### Instructions
-Please provide a corrected translation that addresses the issue mentioned above. Remember to strictly follow all translation guidelines from the system instruction.`
-      }
-
-      try {
-        const { response } = await model.generateContent({
-          contents: [
-            {
-              role: 'user',
-              parts: [{ text: prompt }],
+        try {
+          const result = await generateText({
+            model: getGoogle()(GEMINI_MODEL),
+            system: getSystemPrompt(gameType, useTransliteration),
+            prompt,
+            temperature: generationConfig.temperature,
+            topP: generationConfig.topP,
+            maxOutputTokens: generationConfig.maxOutputTokens,
+            providerOptions: {
+              google: {
+                topK: generationConfig.topK,
+              },
             },
-          ],
-          generationConfig: {
-            ...generationConfig,
-            responseMimeType: 'application/json',
-          },
-        })
+          })
 
-        // 프롬프트 차단 확인
-        const promptFeedback = response.promptFeedback
-        if (promptFeedback?.blockReason) {
-          throw new TranslationRefusedError(
-            text,
-            `프롬프트 차단됨: ${promptFeedback.blockReason}${promptFeedback.blockReasonMessage ? ` - ${promptFeedback.blockReasonMessage}` : ''}`
-          )
+          if (isRefusal(result.finishReason)) {
+            throw new TranslationRefusedError(
+              texts.join(' | ').slice(0, 200),
+              `응답 거부됨: ${result.finishReason}`,
+            )
+          }
+
+          const translatedItems = parseBulkResponse(result.text, texts.length)
+            .map(item => postProcessTranslation(item))
+
+          resolve(translatedItems)
+        } catch (error) {
+          reject(error)
         }
-
-        // 응답 완료 사유 확인 (안전 필터, 콘텐츠 정책 등)
-        const candidate = response.candidates?.[0]
-        if (candidate && isRefusalReason(candidate.finishReason)) {
-          throw new TranslationRefusedError(
-            text,
-            `응답 거부됨: ${candidate.finishReason}${candidate.finishMessage ? ` - ${candidate.finishMessage}` : ''}`
-          )
-        }
-
-        const translated = response.text()
-          .replaceAll(/\n/g, '\\n')
-          .replaceAll(/[^\\]"/g, '\\"')
-          .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
-          .replaceAll(/#강조/g, '#bold')
-
-        resolve(translated)
-      } catch (error) {
-        // TranslationRefusedError나 다른 에러를 promise의 reject로 전달
-        // reject를 호출하면 외부 Promise가 거부되고, 에러는 호출자에게 전파됨
-        // throw하지 않음으로써 큐 작업은 정상 완료되고 unhandled promise rejection 방지
-        reject(error)
-      }
-    },
-  )
+      },
+    )
+  })
 }
 
 interface JsonCandidate {
@@ -288,56 +321,3 @@ export function parseBulkResponse (rawText: string, expectedLength: number): str
   return translations.map((item) => String(item))
 }
 
-async function translateAIBulkByModel (
-  resolve: (value: string[] | PromiseLike<string[]>) => void,
-  reject: (reason?: any) => void,
-  model: GenerativeModel,
-  texts: string[],
-): Promise<void> {
-  const queueKey = `bulk:${texts[0]?.slice(0, 30) || 'empty'}:${texts.length}`
-
-  return addQueue(
-    queueKey,
-    async () => {
-      const prompt = [
-        'Translate all items into Korean and return ONLY valid JSON.',
-        'Output format must be exactly: {"translations":["..."]}',
-        'Keep the same order and item count.',
-        'Do not include markdown, explanations, or extra keys.',
-        '',
-        JSON.stringify({ texts }),
-      ].join('\n')
-
-      try {
-        const { response } = await model.generateContent(prompt)
-
-        const promptFeedback = response.promptFeedback
-        if (promptFeedback?.blockReason) {
-          throw new TranslationRefusedError(
-            texts.join(' | ').slice(0, 200),
-            `프롬프트 차단됨: ${promptFeedback.blockReason}${promptFeedback.blockReasonMessage ? ` - ${promptFeedback.blockReasonMessage}` : ''}`
-          )
-        }
-
-        const candidate = response.candidates?.[0]
-        if (candidate && isRefusalReason(candidate.finishReason)) {
-          throw new TranslationRefusedError(
-            texts.join(' | ').slice(0, 200),
-            `응답 거부됨: ${candidate.finishReason}${candidate.finishMessage ? ` - ${candidate.finishMessage}` : ''}`
-          )
-        }
-
-        const translatedItems = parseBulkResponse(response.text(), texts.length)
-          .map(item => item
-            .replaceAll(/\n/g, '\\n')
-            .replaceAll(/[^\\]"/g, '\\"')
-            .replaceAll(/#약(하게|화된|[화한])/g, '#weak')
-            .replaceAll(/#강조/g, '#bold'))
-
-        resolve(translatedItems)
-      } catch (error) {
-        reject(error)
-      }
-    },
-  )
-}
