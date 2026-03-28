@@ -256,7 +256,12 @@ export function parseBulkResponse (rawText: string, expectedLength: number): str
 
   if (parsed === undefined) {
     const errorMessage = lastError instanceof Error ? lastError.message : String(lastError)
-    throw new Error(`벌크 번역 JSON 파싱에 실패했습니다: ${errorMessage}`)
+    const compactRawText = rawText.replace(/\s+/g, ' ').trim()
+    const previewLimit = 500
+    const rawTextPreview = compactRawText.length > previewLimit
+      ? `${compactRawText.slice(0, previewLimit)}...`
+      : compactRawText
+    throw new Error(`벌크 번역 JSON 파싱에 실패했습니다: ${errorMessage} | AI 응답 원문: ${rawTextPreview}`)
   }
 
   const translations = Array.isArray(parsed) ? parsed : (parsed as { translations?: unknown[] })?.translations

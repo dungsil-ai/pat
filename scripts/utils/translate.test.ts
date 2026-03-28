@@ -539,13 +539,18 @@ describe('translateBulk', () => {
   it('벌크 번역 실패 시 개별 번역으로 폴백해야 함', async () => {
     const { translateBulk } = await import('./translate')
     const { translateAIBulk, translateAI } = await import('./ai')
+    const { log } = await import('./logger')
 
     vi.mocked(translateAIBulk).mockRejectedValueOnce(new Error('벌크 실패'))
 
-    const results = await translateBulk(['fallback-test'], 'ck3', false)
+    const results = await translateBulk(['fallback-test'], 'ck3', false, { modName: 'RICE' })
 
     expect(results).toEqual([{ translatedText: '[번역됨]fallback-test' }])
     expect(translateAI).toHaveBeenCalledWith('fallback-test', 'ck3', undefined, false)
+    const warnMessages = vi.mocked(log.warn).mock.calls
+      .map(call => call[0])
+      .filter((value): value is string => typeof value === 'string')
+    expect(warnMessages.some(message => message.includes('[모드:RICE] [벌크] AI 벌크 요청 실패, 개별 번역으로 폴백'))).toBe(true)
   })
 
   it('벌크 처리에서 캐시 응답 로그를 남겨야 함', async () => {
