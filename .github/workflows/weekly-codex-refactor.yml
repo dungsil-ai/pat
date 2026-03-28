@@ -34,6 +34,11 @@ jobs:
       - name: 의존성 설치
         run: pnpm install --frozen-lockfile
 
+      - name: Git 사용자 설정
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Codex로 주간 리팩토링 수행
         uses: ./.github/actions/run-codex-cli
         with:
@@ -55,34 +60,49 @@ jobs:
             - 불필요한 파일은 생성하지 않는다.
             - 개선 사항이 없으면 파일을 수정하지 않는다.
 
-      - name: 변경사항 린트 검증
-        run: pnpm exec tsc --noEmit
-
-      - name: 변경사항 테스트 검증
-        run: pnpm test
+            Git 및 PR 작업 규칙:
+            - 변경 사항이 있는 경우에만 아래 Git 작업을 수행한다.
+            - 변경 내용을 설명하는 영문 브랜치 이름을 만든다 (예: chore/codex-refactor/improve-error-handling).
+              브랜치 이름은 반드시 'chore/codex-refactor/' 접두사로 시작해야 한다.
+            - 변경 사항을 커밋한다. 커밋 메시지는 conventional commit 형식을 따른다.
+            - 브랜치를 origin에 push한다.
+            - PR 메타데이터를 아래 파일에 작성한다:
+              * /tmp/codex-pr-title.txt — PR 제목 (한 줄, 한국어)
+              * /tmp/codex-pr-body.md — PR 본문 (마크다운 형식, 한국어)
+                본문에는 변경 개요, 변경 사항 목록, 검증 결과를 포함한다.
+            - 개선 사항이 없으면 Git 작업을 수행하지 않고, PR 메타데이터 파일도 생성하지 않는다.
 
       - name: 자동 리팩토링 PR 생성
         id: create_pr
         continue-on-error: true
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.CI_GITHUB_TOKEN != '' && secrets.CI_GITHUB_TOKEN || github.token }}
-          branch: chore/weekly-codex-refactor
-          delete-branch: true
-          commit-message: "chore: 주간 Codex 자동 리팩토링"
-          title: "chore: 주간 Codex 자동 리팩토링"
-          body: |
-            ## 개요
-            - Codex Actions가 주간 보안/성능/개선점을 점검하고 자동 리팩토링을 적용했습니다.
+        env:
+          GH_TOKEN: ${{ secrets.CI_GITHUB_TOKEN != '' && secrets.CI_GITHUB_TOKEN || github.token }}
+        run: |
+          if [ ! -f /tmp/codex-pr-title.txt ] || [ ! -f /tmp/codex-pr-body.md ]; then
+            echo "PR 메타데이터 파일이 없습니다. 변경 사항이 없는 것으로 판단합니다."
+            exit 0
+          fi
 
-            ## 검증
-            - pnpm exec tsc --noEmit
-            - pnpm test
+          BRANCH=$(git branch --show-current)
 
-            > 이 PR은 GitHub Actions 워크플로우(`Weekly Codex Refactor`)에서 자동 생성되었습니다.
-          labels: |
-            automation
-            codex
+          if [ "$BRANCH" = "main" ]; then
+            echo "브랜치가 main입니다. 변경 사항이 없는 것으로 판단합니다."
+            exit 0
+          fi
+
+          PR_TITLE=$(cat /tmp/codex-pr-title.txt | xargs)
+          if [ -z "$PR_TITLE" ]; then
+            echo "::error::PR 제목이 비어 있습니다."
+            exit 1
+          fi
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "$PR_TITLE" \
+            --body-file /tmp/codex-pr-body.md \
+            --label "automation" \
+            --label "codex"
 
       - name: PR 생성 실패 안내
         if: steps.create_pr.outcome != 'success'
