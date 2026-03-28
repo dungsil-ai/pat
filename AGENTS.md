@@ -4,7 +4,7 @@ This file provides guidance to AI when working with code in this repository.
 
 ## Project Overview
 
-This is a **Paradox Interactive Game Mod Translation Tool** that automatically translates localization files for **Crusader Kings III (CK3)**, **Victoria 3 (VIC3)**, and **Stellaris** mods from English to Korean using Google's Gemini AI. The tool processes game mod files while preserving game-specific formatting, variables, and syntax.
+This is a **Paradox Interactive Game Mod Translation Tool** that automatically translates localization files for **Crusader Kings III (CK3)**, **Victoria 3 (VIC3)**, and **Stellaris** mods from English to Korean using Google Gemini via **ai-sdk.dev**. The tool processes game mod files while preserving game-specific formatting, variables, and syntax.
 
 ## Common Commands
 
@@ -133,9 +133,10 @@ The `transliteration_files` option allows manual specification of files that sho
    - Automatic: Based on filename patterns (culture, dynasty, names keywords)
    - Manual: Via `transliteration_files` option in `meta.toml`
 5. **Hashing**: Generate content hashes to detect changes (via `utils/hashing.ts`)
-6. **Translation/Transliteration**: AI translation or transliteration with game-specific context prompts
-7. **Caching**: Store results in database with separate cache keys for translation vs transliteration
-8. **Output**: Generate Korean files with `___` prefix for proper load order
+6. **Upstream hash skip**: Skip translation when the upstream file hash is unchanged from the previous run
+7. **Translation/Transliteration**: AI translation or transliteration with game-specific context prompts
+8. **Caching**: Store results in database with separate cache keys for translation vs transliteration
+9. **Output**: Generate Korean files with `___` prefix for proper load order
 
 ### Key Components
 
@@ -146,9 +147,12 @@ The `transliteration_files` option allows manual specification of files that sho
 - Handles file discovery, parsing, and output generation
 - Translation refusal tracking and graceful error handling
 - Exports untranslated items to `{game}-untranslated-items.json`
+- Defaults parallel workers to the detected mod count; ETC `upstream/` subfolders are treated as separate mods for concurrency
 
 **AI Integration** (`scripts/utils/ai.ts`):
-- Google Gemini API integration
+- Google Gemini via **ai-sdk.dev** (primary) using `GOOGLE_AI_STUDIO_TOKEN`
+- Optional fallback to legacy Gemini key (`GOOGLE_GENERATIVE_AI_API_KEY`)
+- Configurable model via `GEMINI_MODEL` (default `gemini-flash-lite-latest`)
 - Context-aware prompts for medieval/historical content
 - Separate transliteration prompts for proper nouns (culture, dynasty, character names)
 - Retry logic for API failures
