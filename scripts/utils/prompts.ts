@@ -200,7 +200,7 @@ export function shouldUseTransliteration(filename: string, key?: string, manualL
  * @returns 일반 번역 컨텍스트이면 true
  */
 export function isRegularTranslationContext(key: string): boolean {
-  return /(?:^|_)(decision|desc|event)$/.test(key.toLowerCase())
+  return /(?:^|[_.])(decision|desc|event)$/.test(key.toLowerCase())
 }
 
 /**
