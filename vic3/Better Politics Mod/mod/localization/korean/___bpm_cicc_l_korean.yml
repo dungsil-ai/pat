@@ -24,7 +24,7 @@
   je_bpm_dissent_revolution1: "#header;yellow 혁명#! (#lore Slot 2#!)" # 12396585608122642805
   je_bpm_dissent_revolution2: "#header;yellow 혁명#! (#lore Slot 3#!)" # 13456202061144108164
   je_bpm_dissent_revolution3: "#header;노란색 혁명#! (#lore Slot 4#!)" # 2212994862911867246
-  je_bpm_dissent_revolution_desc: "#tooltip_header #bold 혁명#!#!\n$TOOLTIP_DELIMITER$\n#lore 혁명은 새로운 체제를 위해 정부나 사회 질서를 무력으로 전복하는 것을 의미합니다. 이는 정부를 전복하려는 모든 집단의 최후의 수단입니다.#!\n\n이 #yellow 잠재적 선동 행위#!는 모든 [Concept('concept_interest_group', '이해집단')]이 사용할 수 있습니다.\n\n이 행위는 언제든지 사용할 수 있으나, 다른 모든 수단이 소진되었을 경우에만 가능합니다." # 13735014480332673142
+  je_bpm_dissent_revolution_desc: "#tooltip_header #bold 혁명#!#!\n$TOOLTIP_DELIMITER$\n#lore 혁명은 새로운 체제를 위해 정부나 사회 질서를 무력으로 전복하는 것을 의미합니다. 이는 정부를 전복하려는 모든 집단의 최후의 수단입니다.#!\n\n이 #yellow 잠재적 선동 행위#!는 모든 [Concept('concept_interest_group', '이해집단')]이 사용할 수 있습니다.\n\n이 행위는 언제든지 사용할 수 있으나, 다른 모든 수단이 소진되었을 경우에만 가능합니다."
   je_bpm_crises_some_crisis: "#header;yellow 일부 위기#!" # 6714847374742990739
   je_bpm_crises_some_crisis_desc: "#tooltip_header #bold 일부 위기#!#!\n$TOOLTIP_DELIMITER$\n#lore 위기란 정부가 심각한 문제에 직면한 상황을 말합니다.#" # 11398858840523221614
   je_bpm_scandal_backroom_tax_cuts: "#header;yellow 은밀한 세금 감면#!" # 2115459934564830688

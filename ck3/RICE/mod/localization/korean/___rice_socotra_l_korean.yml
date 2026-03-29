@@ -209,7 +209,7 @@
   RICE_pirate_indian_ocean_decision_tooltip: "$RICE_pirate_mediterranean_decision_tooltip$" # 685492010751058312
   RICE_pirate_indian_ocean_decision_desc: "[GetGeographicalRegion('RICE_indian_ocean_region').GetName]은 언제나 해적들의 본거지였습니다. 숙련된 [rulers|E]들은 상호 이익을 위해 협조적인 해적들과 언제 협력해야 할지 알고 있습니다." # 4841261111252268585
   RICE_pirate_indian_ocean_decision_confirm: "$RICE_pirate_mediterranean_decision_confirm$" # 10768863105011263844
-  RICE_pirate_indian_ocean_decision_requirement_1: "#V 인도양 해적 소굴#을 소유한 [county|E]를 소유하거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 보유하십시오." # 512342565247883128
+  RICE_pirate_indian_ocean_decision_requirement_1: "#V 인도양 해적 소굴#을 소유한 [county|E]를 소유하거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 보유하십시오."
   RICE_NOT_pirate_indian_ocean_decision_requirement_1: "당신은 #bold 소유하고 있지 않습니다#! #V Indian Ocean Pirate Den#!이 있는 [county|E]를 소유하고 있거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 가지고 있지 않습니다." # 9259602843743371212
   RICE_pirate_indian_ocean_decision_context_tooltip: "$RICE_socotra_collaborate_with_pirates_context_tooltip$" # 8049344977440282555
   RICE_pirate_establish_relations_effect_tooltip_2: "이제 $RICE_pirate_indian_ocean_decision$의 다른 선택지들을 [decision|E]에서 이용할 수 있습니다." # 5505806833737385432

@@ -17,8 +17,8 @@
   job_giga_catalyst_worker_plural: "웃긴 노동자" # 7493627504687618370
   job_giga_catalyst_worker_desc: "음... 크램프트..." # 15298140473268731765
   job_giga_catalyst_worker_effect_desc: "£job_giga_catalyst_worker£ $job_giga_catalyst_worker_plural$은(는) $r_research$와 £unity£ §Y$unity$§!를 사용하여 §Y$building_giga_catalyst_crafter$§!의 효율성을 향상시킵니다." # 3177045425060687807
-  mod_job_giga_catalyst_worker_add: "$job_giga_catalyst_worker$ 일자리" # 11216283808585442362
-  mod_job_giga_catalyst_worker_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_catalyst_worker$ 직책" # 16981969654474246846
+  mod_job_giga_catalyst_worker_add: "$job_giga_catalyst_worker$ 일자리"
+  mod_job_giga_catalyst_worker_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_catalyst_worker$ 직책"
   mod_job_giga_catalyst_worker_per_pop_short: "§G+1§! £mod_job_giga_catalyst_worker_add£당 $VALUE$ £pop£" # 15004278368937198220
   giga_councilor_catalyst: "기묘한 평의회 의원" # 10816978465556115995
   giga_councilor_catalyst_desc: "여러 가지 작업을 수행합니다." # 16738953141794288845

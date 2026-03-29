@@ -102,30 +102,30 @@
   job_giga_media_coordinator_plural: "미디어 거물" # 14551599186835369452
   job_giga_media_coordinator_desc: "가상 엔터테인먼트 제국의 창의적인 정신을 가진 미디어 거물들은 우리 국민들이 결코 부족함을 느끼지 않도록 보장합니다. 조명. 카메라. 액션!" # 53231834105144008
   job_giga_media_coordinator_effect_desc: "£job_giga_media_coordinator£ $job_giga_media_coordinator_plural$은 £consumer_goods£ §Y$consumer_goods$§!을 £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, 그리고 £mod_trade_value_add£ §Y$TRADE_VALUE$§!로 전환하며, 우리 제국 전역의 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 수치를 소폭 증가시킵니다." # 13383647619034169097
-  mod_job_giga_media_coordinator_add: "$job_giga_media_coordinator$ 일자리" # 3824943581673378546
-  mod_job_giga_media_coordinator_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_media_coordinator$ 직위" # 14812583891581420588
-  mod_job_giga_media_coordinator_per_pop_short: "§G+1§! £mod_job_giga_media_coordinator_add£당 $VALUE$ £pop£" # 10738307967454101442
+  mod_job_giga_media_coordinator_add: "$job_giga_media_coordinator$ 일자리"
+  mod_job_giga_media_coordinator_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_media_coordinator$ 직위"
+  mod_job_giga_media_coordinator_per_pop_short: "§G+1§! £mod_job_giga_media_coordinator_add£당 $VALUE$ £pop£"
   job_giga_media_coordination_drone: "미디어 조정 드론" # 4655657334627761031
   job_giga_media_coordination_drone_plural: "미디어 조정 드론" # 6457293750274616664
   job_giga_media_coordination_drone_desc: "이 특화 드론 군집들은 기계 지능의 유기체 보호대상들의 선호에 맞춰 끝없는 콘텐츠 흐름을 생산합니다." # 17893812435332393886
   job_giga_media_coordination_drone_effect_desc: "£job_giga_media_coordination_drone£ $job_giga_media_coordination_drone_plural$은 £consumer_goods£ §Y$consumer_goods$§!을 £unity£ §Y$unity$§!과 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!로 전환하며, 우리 제국 전체의 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!을 소폭 증가시킵니다." # 15069440022081077187
-  mod_job_giga_media_coordination_drone_add: "$job_giga_media_coordination_drone$ 일자리" # 11969056504340593469
-  mod_job_giga_media_coordination_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_media_coordination_drone$ 직책" # 12615827670857526695
-  mod_job_giga_media_coordination_drone_per_pop_short: "§G+1§! £mod_job_giga_media_coordinator_add£당 $VALUE$ £pop£" # 10738307967454101442
+  mod_job_giga_media_coordination_drone_add: "$job_giga_media_coordination_drone$ 일자리"
+  mod_job_giga_media_coordination_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_media_coordination_drone$ 직책"
+  mod_job_giga_media_coordination_drone_per_pop_short: "§G+1§! £mod_job_giga_media_coordinator_add£당 $VALUE$ £pop£"
   job_giga_gamer_fe_game_master: "게임 마스터" # 5986734667460224359
   job_giga_gamer_fe_game_master_plural: "게임 마스터" # 14130146186520027601
   job_giga_gamer_fe_game_master_desc: "이 학구적인 존재들은 현실 시뮬레이터의 다른 거주자들이 즐길 수 있도록, 마트료시카 브레인의 거대한 연산 능력을 사용하여 복잡한 세계를 만들어냅니다." # 12442230136794248137
   job_giga_gamer_fe_game_master_effect_desc: "£job_giga_gamer_fe_game_master£ $job_giga_gamer_fe_game_master_plural$는 행성 £stability£ §YStability§를 향상시키고, 플레이어들이 잠재력을 최대한 발휘하도록 돕습니다." # 12391415571880813178
-  mod_job_giga_gamer_fe_game_master_add: "$job_giga_gamer_fe_game_master$ 직업" # 9940606088424567476
-  mod_job_giga_gamer_fe_game_master_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gamer_fe_game_master$ 직위" # 7266455417475765706
-  mod_job_giga_gamer_fe_game_master_per_pop_short: "§G+1§! £mod_giga_gamer_fe_game_master_add£ 당 $VALUE$ £pop£" # 18157017554449658978
+  mod_job_giga_gamer_fe_game_master_add: "$job_giga_gamer_fe_game_master$ 직업"
+  mod_job_giga_gamer_fe_game_master_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gamer_fe_game_master$ 직위"
+  mod_job_giga_gamer_fe_game_master_per_pop_short: "§G+1§! £mod_giga_gamer_fe_game_master_add£ 당 $VALUE$ £pop£"
   job_giga_gamer_fe_npc: "비플레이어 캐릭터" # 5613729852166253753
   job_giga_gamer_fe_npc_plural: "비플레이어 캐릭터" # 96023456400324741
   job_giga_gamer_fe_npc_desc: "모든 영웅 뒤에는 친구든, 적이든, 아니면 단순히 방관자든, 여러 조연 캐릭터들이 존재합니다. 이 역할들 중 일부는 현실 시뮬레이터의 거주자들이 연기하지만, 대다수는 정교한 시뮬레이션입니다." # 3869594215026256058
   job_giga_gamer_fe_npc_effect_desc: "£job_giga_gamer_fe_npc£ $job_giga_gamer_fe_npc_plural$은 £unity£ §Y$unity$§!와 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!를 생산하며, 성장하는 플레이어들에게 완벽한 상대가 되어 줍니다." # 7390007088753577245
-  mod_job_giga_gamer_fe_npc_add: "$job_giga_gamer_fe_npc$ 일자리" # 9972571702399721421
-  mod_job_giga_gamer_fe_npc_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gamer_fe_npc$ 직위" # 4508324813333496508
-  mod_job_giga_gamer_fe_npc_per_pop_short: "§G+1§! £mod_job_giga_gamer_fe_npc_add£ 당 $VALUE$ £pop£" # 10748548702376891704
+  mod_job_giga_gamer_fe_npc_add: "$job_giga_gamer_fe_npc$ 일자리"
+  mod_job_giga_gamer_fe_npc_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gamer_fe_npc$ 직위"
+  mod_job_giga_gamer_fe_npc_per_pop_short: "§G+1§! £mod_job_giga_gamer_fe_npc_add£ 당 $VALUE$ £pop£"
   job_giga_virtual_livestock: "가상 $job_livestock$" # 2328606633510678066
   job_giga_virtual_livestock_plural: "가상 $job_livestock_plural$" # 14199134311339854587
   job_giga_virtual_livestock_desc: "가상 세계에서 축복받은 무지 속 삶을 살고 있는 그들은 자신들의 궁극적인 목적지를 알지 못합니다." # 15521022270180958210
@@ -143,17 +143,17 @@
   job_giga_virtual_hell_inmate: "가상 망자" # 13051053859464690936
   job_giga_virtual_hell_inmate_plural: "가상 망자" # 13051053859464690936
   job_giga_virtual_hell_inmate_desc: "최하층 죄수들은 잠재적 범죄자들이 자신의 삶의 선택을 재고하게 겁주기 위해, 상상 가능한 최악의 조건 속에서 고통받도록 선고받습니다." # 489720187617299034
-  job_giga_virtual_hell_inmate_effect_desc: "£job_giga_virtual_hell_inmate£ §Y$job_giga_virtual_hell_inmate_plural$§!들은 그들의 상위 계층을 위해 고통받으며, £energy£ §Y$energy$§!를 제국 전체의 감소와 지역적인 £crime£ §Y$PLANET_CRIME_TITLE$§! 증가로 전환합니다." # 13814402218317174834
+  job_giga_virtual_hell_inmate_effect_desc: "£job_giga_virtual_hell_inmate£ §Y$job_giga_virtual_hell_inmate_plural$§!들은 그들의 상위 계층을 위해 고통받으며, £energy£ §Y$energy$§!를 제국 전체의 감소와 지역적인 £crime£ §Y$PLANET_CRIME_TITLE$§! 증가로 전환합니다."
   mod_job_giga_virtual_hell_inmate_add: "$job_giga_virtual_hell_inmate$ 직업" # 8540223377304609009
   mod_job_job_giga_virtual_hell_inmate_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_hell_inmate$ 직업" # 11402664780966966395
-  mod_job_job_giga_virtual_hell_inmate_per_pop_short: "§G+1§! £mod_job_giga_virtual_hell_inmate_add£ 당 $VALUE$ £pop£" # 2257222434012066817
+  mod_job_job_giga_virtual_hell_inmate_per_pop_short: "§G+1§! £mod_job_giga_virtual_hell_inmate_add£ 당 $VALUE$ £pop£"
   job_giga_virtual_diplomat: "가상 영사" # 14317731476772327680
   job_giga_virtual_diplomat_plural: "가상 영사들" # 11812795394279309898
   job_giga_virtual_diplomat_desc: "더욱 빠르고 정확하게 상황을 파악하며, 우리 외교관들은 우리 마트료시카 두뇌의 막대한 힘을 이용하여 다른 국가들의 외교관들을 능수능란하게 압도할 수 있습니다." # 4093195641469322137
   job_giga_virtual_diplomat_effect_desc: "£job_giga_virtual_diplomat£ §Y$job_giga_virtual_diplomat_plural$§!은 £consumer_goods£ §Y$consumer_goods$§!을 사용하여 모든 이들이 우리 제국에 대해 갖는 £opinion£ §Yopinion§!을 개선하고, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!, 그리고 £mod_spy_network_daily_value_mult£ §Y$MOD_SPY_NETWORK_DAILY_VALUE_MULT$§!을 증가시킵니다." # 14432363175329285797
   mod_job_giga_virtual_diplomat_add: "$job_giga_virtual_diplomat$ 일자리" # 13384676454405134048
   mod_job_job_giga_virtual_diplomat_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat$ 직책" # 7192501904275402746
-  mod_job_job_giga_virtual_diplomat_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_virtual_diplomat_add£" # 9897370699381128342
+  mod_job_job_giga_virtual_diplomat_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_virtual_diplomat_add£"
   giga_opinion_from_jobs: "팝 직업에서" # 2118822301967765252
   job_giga_virtual_diplomat_drone: "가상 외교 드론" # 12900500641402561331
   job_giga_virtual_diplomat_drone_plural: "가상 외교 드론" # 12703993888012597549
@@ -161,21 +161,21 @@
   job_giga_virtual_diplomat_drone_effect_desc: "£job_giga_virtual_diplomat_drone£ §Y$job_giga_virtual_diplomat_drone_plural$§!은(는) £energy£ §Y$energy$§!와 그들의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 사용하여 모든 이들의 우리 제국에 대한 £opinion£ §Y호감도§!를 향상시키며, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!, 그리고 £mod_spy_network_daily_value_mult£ §Y$MOD_SPY_NETWORK_DAILY_VALUE_MULT$§!를 제공합니다." # 1314597317639743922
   mod_job_giga_virtual_diplomat_drone_add: "$job_giga_virtual_diplomat_drone$ 직업" # 14976038509764508160
   mod_job_job_giga_virtual_diplomat_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat_drone$ 직위" # 12325693300025425878
-  mod_job_job_giga_virtual_diplomat_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_virtual_diplomat_add£" # 9897370699381128342
+  mod_job_job_giga_virtual_diplomat_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_virtual_diplomat_add£"
   job_giga_virtual_diplomat_servitor: "가상 외교 팀" # 17047467728388701949
   job_giga_virtual_diplomat_servitor_plural: "가상 외교 팀" # 17946135043613012516
   job_giga_virtual_diplomat_servitor_desc: "이 드론들은 엄격하게 통제된 조건 하에서 외부 영향과 안전하게 상호작용할 수 있는 특별 훈련을 받은 유기체 외교관들을 지원하고 감독합니다." # 14379327306384667132
   job_giga_virtual_diplomat_servitor_effect_desc: "£job_giga_virtual_diplomat_servitor£ §Y$job_giga_virtual_diplomat_servitor_plural$§!은 £consumer_goods£ §Y$consumer_goods$§!을 사용하여 모든 이들의 우리 제국에 대한 £opinion£ §Y의견§!을 개선하며, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!을 제공합니다!" # 7532963632866540092
   mod_job_giga_virtual_diplomat_servitor_add_desc: "$job_giga_virtual_diplomat_servitor$ 일자리" # 2883662496362124878
   mod_job_job_giga_virtual_diplomat_machine_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat_servitor$ 직책" # 17013921226581619315
-  mod_job_job_giga_virtual_diplomat_machine_per_pop_short: "§G+1§! £mod_job_giga_virtual_diplomat_servitor_add£ 당 $VALUE$ £pop£" # 10090321124890630227
+  mod_job_job_giga_virtual_diplomat_machine_per_pop_short: "§G+1§! £mod_job_giga_virtual_diplomat_servitor_add£ 당 $VALUE$ £pop£"
   job_giga_virtual_training_coordinator: "가상 훈련 조정관" # 4560586313351726694
   job_giga_virtual_training_coordinator_plural: "가상 훈련 조정관" # 57030399099466446
   job_giga_virtual_training_coordinator_desc: "우리의 가장 뛰어난 인재를 양성하려면 그만큼 뛰어난 교사가 필요합니다." # 10115327595579792804
   job_giga_virtual_training_coordinator_effect_desc: "£job_giga_virtual_training_coordinator£ §Y$job_giga_virtual_training_coordinator_plural$§!는 £consumer_goods£ §Y$consumer_goods$§!를 £mod_leader_species_exp_gain£ §Y$MOD_LEADER_SPECIES_EXP_GAIN$§!로 전환합니다." # 9289429524900712962
   mod_job_giga_virtual_training_coordinator_add: "$job_giga_virtual_training_coordinator$ 일자리" # 9230538130669027155
   mod_job_job_giga_virtual_training_coordinator_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_training_coordinator$ 직책" # 13258075466601644214
-  mod_job_job_giga_virtual_training_coordinator_per_pop_short: "§G+1§! £mod_job_giga_virtual_training_coordinator_add£당 $VALUE$ £pop£" # 13627050954613538968
+  mod_job_job_giga_virtual_training_coordinator_per_pop_short: "§G+1§! £mod_job_giga_virtual_training_coordinator_add£당 $VALUE$ £pop£"
   job_giga_virtual_training_coordination_drone: "시뮬레이션 운영 드론" # 11140017211345198898
   job_giga_virtual_training_coordination_drone_plural: "시뮬레이션 운영 드론" # 12197027875867493133
   job_giga_virtual_training_coordination_drone_desc: "이 특화된 드론 군집들은 우리의 경험적 평가에 사용되는 시뮬레이션을 조형합니다." # 1945563870737386842
@@ -183,4 +183,4 @@
   job_giga_virtual_training_coordination_drone_effect_machine_desc: "£job_giga_virtual_training_coordination_drone£ §Y$job_giga_virtual_training_coordination_drone_plural$§!는 £energy£ §Y$energy$§!를 £mod_leader_species_exp_gain£ §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! 및 제국 전역의 £mod_ship_experience_gain_mult£ §YShip and Army Experience§! 보너스로 전환합니다." # 6582973865249223793
   mod_job_giga_virtual_training_coordination_drone_add: "$job_giga_virtual_training_coordination_drone$ 일자리" # 7008140644009780117
   mod_job_job_giga_virtual_training_coordination_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_training_coordination_drone$ 직책" # 8802648645492736942
-  mod_job_job_giga_virtual_training_coordination_drone_per_pop_short: "§G+1§! £mod_job_giga_virtual_training_coordinator_add£당 $VALUE$ £pop£" # 13627050954613538968
+  mod_job_job_giga_virtual_training_coordination_drone_per_pop_short: "§G+1§! £mod_job_giga_virtual_training_coordinator_add£당 $VALUE$ £pop£"

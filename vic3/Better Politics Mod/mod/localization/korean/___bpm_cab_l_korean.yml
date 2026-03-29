@@ -38,9 +38,9 @@
   bpm_cabinet_hog_modifiers: "$bpm_hog_modifier_desc$" # 5673984816954046540
   BPMANTHEAD: "#header 반감으로부터:#!\n [GetStaticModifier('bpm_schools_capis_modifier').GetDesc]" # 13680899900755266099
   ANTAGONISM: "#red;bold;shadow [Concept('concept_character', 'Antagonistic')]#!\n본 [concept_character]는 이 [concept_institution]의 존재에 반대하거나, 그들의 [concept_interest_group]의 지지율이 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만입니다." # 13384875366891616539
-  bpm_cab_synergy_tt: "#header [Concept('concept_bpm_synergy', '시너지')]#!: [GetPlayer.MakeScope.ScriptValue('bpm_cab_synergy_value')|v]\n$TOOLTIP_DELIMITER$\n[GetPlayer.MakeScope.GetScriptValueDesc('bpm_cab_synergy_value')].$bpm_cab_synergy_mult_modifier$" # 13156518070824529510
+  bpm_cab_synergy_tt: "#header [Concept('concept_bpm_synergy', '시너지')]#!: [GetPlayer.MakeScope.ScriptValue('bpm_cab_synergy_value')|v]\n$TOOLTIP_DELIMITER$\n[GetPlayer.MakeScope.GetScriptValueDesc('bpm_cab_synergy_value')].$bpm_cab_synergy_mult_modifier$"
   bpm_cab_synergy_mult_modifier: "[AddTextIf(Not(EqualTo_string('', Country.GetModifier.GetDescFor('country_synergy_mult'))), Concatenate('\n\n', Country.GetModifier.GetDescFor('country_synergy_mult')))]" # 4664073125025234080
-  bpm_synergy_text: "[concept_bpm_synergy]: [GetPlayer.MakeScope.ScriptValue('bpm_cab_synergy_value')|v]" # 1227296951908578986
+  bpm_synergy_text: "[concept_bpm_synergy]: [GetPlayer.MakeScope.ScriptValue('bpm_cab_synergy_value')|v]"
   bpm_cabinet_synergy_prediction: "[SelectLocalization(EqualTo_CFixedPoint(Character.MakeScope.ScriptValue('bpm_cab_char_synergy_value'), '(CFixedPoint)0'), '', 'bpm_cabinet_synergy_prediction_raw')]" # 8149768513631142600
   bpm_cabinet_synergy_prediction_raw: "내각과의 이념적 결속력: #v [Character.MakeScope.ScriptValue('bpm_cab_char_synergy_value')|%0]#!" # 7038413470946232975
   bpm_cabinet_institution_grid: "[Institution.GetCustom('bpm_institution_grid_data')]\n [GetPlayer.GetCustom('bpm_hog_title')]와(과) 함께 #v 50%#!" # 14706008389612959819
@@ -105,7 +105,7 @@
   bpm_cab_appoint_tooltip: "[GetScriptedGui('bpm_newcab_select_ig').IsValidTooltip(GuiScope.SetRoot(InterestGroup.MakeScope).End)]\n[GetScriptedGui('bpm_newcab_select_ig').ExecuteTooltip(GuiScope.SetRoot(InterestGroup.MakeScope).End)]" # 6923452824555218662
   bpm_cab_select_ig_tt: "해당 직위에 필요한 인적 자원이 [Concept('concept_interest_group', '이해집단')]에 충분합니다." # 8813105284529088450
   country_bpm_base_mandate_add: "기본 [concept_bpm_mandate]" # 12313785490522103913
-  bpm_mandate_overall_text: "#tooltippable;tooltip:[Country.GetTooltipTag],bpm_mandate_overall_tt [Country.MakeScope.Var('bpm_government_mandate_used').GetValue|v0] #v /#! [Country.MakeScope.ScriptValue('bpm_government_total_mandate_value')|v0]#! 총 @votes_icon! [concept_bpm_mandate]" # 13092619514325800770
+  bpm_mandate_overall_text: "#tooltippable;tooltip:[Country.GetTooltipTag],bpm_mandate_overall_tt [Country.MakeScope.Var('bpm_government_mandate_used').GetValue|v0] #v /#! [Country.MakeScope.ScriptValue('bpm_government_total_mandate_value')|v0]#! 총 @votes_icon! [concept_bpm_mandate]"
   bpm_mandate_overall_desc: "@information! @votes_icon! 위임은 장관 임명에 사용할 수 있는 [Concept('concept_interest_group', '이해집단')]을 결정하는 데 사용됩니다.\n[Concept('concept_interest_group', '이해집단')] @votes_icon! 위임은 해당 이해집단의 [Concept('concept_in_government','정부')] [concept_clout] 및 귀국의 #yellow 행정 원칙#! 법률에서 파생됩니다.\n특정 [Concept('concept_interest_group', '이해집단')]은 특정 [Concept('concept_institution', '부처')]에 더 적합하며, 임명 시 더 적은 @votes_icon! 위임 비용이 듭니다.\n장관의 기술은 그들의 [Concept('concept_character_trait','특성')]에 의해 결정되며, 이는 [Concept('concept_institution', '부처')]의 최대 투자 수준에 영향을 미칠 수 있습니다.\n장관을 임명하면 사용 가능한 #yellow 가장 유능한# 후보자가 선택됩니다." # 9762771406796462616
   bpm_mandate_cost_text_ig: "비용: [SelectLocalization(EqualTo_CFixedPoint(InterestGroup.MakeScope.Var('bpm_cost_ig_position_var').GetValue, '(CFixedPoint)5'), 'bpm_mandate_cost_tt', 'bpm_mandate_cost_tt_no')] @votes_icon!" # 17926709146870910098
   bpm_mandate_overall_ig_text: "이 단체의 [concept_bpm_mandate]:\n#bold 사용된 [InterestGroup.MakeScope.Var('bpm_ig_mandate_used').GetValue|0] / [InterestGroup.MakeScope.Var('bpm_ig_mandate').GetValue|0]#! @votes_icon!" # 2152219752658840388
@@ -132,8 +132,8 @@
   bpm_view_minister_button: "후보자 보기" # 2033574658796601417
   bpm_ig_same_as_ruler_tt: "[Concept('concept_ruler', '국가원수')]의 [concept_interest_group]는" # 423986815945944814
   BPM_CABINET_SYNERGY_FROM_DEFAULT: "기본 시너지" # 14336142189307492863
-  BPM_CABINET_SYNERGY_FROM_HOS_HOG_COMPATIBILITY: "[Country.GetRuler.GetPrimaryRoleTitle]과 $bpm_hog_title_default$의 이념적 근접성: [GetPlayer.MakeScope.Var('bpm_cab_hoshog_synergy').GetValue|%b0] x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_hos_hog_compatibility')]" # 2246907740847234835
-  BPM_CABINET_SYNERGY_FROM_IDEOLOGY: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속력: [GetPlayer.MakeScope.Var('bpm_cab_synergy').GetValue|%b0] x [GetPlayer.GetModifier.GetValueWithBreakdownFor('country_synergy_from_ideological_compatibility')]" # 2830763129190306060
+  BPM_CABINET_SYNERGY_FROM_HOS_HOG_COMPATIBILITY: "[Country.GetRuler.GetPrimaryRoleTitle]과 $bpm_hog_title_default$의 이념적 근접성: [GetPlayer.MakeScope.Var('bpm_cab_hoshog_synergy').GetValue|%b0] x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_hos_hog_compatibility')]"
+  BPM_CABINET_SYNERGY_FROM_IDEOLOGY: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속력: [GetPlayer.MakeScope.Var('bpm_cab_synergy').GetValue|%b0] x [GetPlayer.GetModifier.GetValueWithBreakdownFor('country_synergy_from_ideological_compatibility')]"
   BPM_CABINET_SYNERGY_FROM_HOS_IN_GOVERNMENT: "[Country.GetRuler.GetPrimaryRoleTitle]이 정부에 있는 동안" # 433856617527987562
   BPM_CABINET_SYNERGY_FROM_RIGIDITY: "[Concept('concept_bpm_political_stability', concept_bpm_political_stability)]: [GetPlayer.MakeScope.Var('bpm_political_stability').GetValue|b0]#b %#! x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_rigidity_add')]" # 2079080496861572465
   BPM_IS_RULER_IG: "[Concept('concept_ruler', '국가원수')]의 [concept_interest_group]는" # 423986815945944814

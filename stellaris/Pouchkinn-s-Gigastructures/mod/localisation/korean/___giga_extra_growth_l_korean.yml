@@ -20,20 +20,20 @@
   job_giga_extra_healthcare_plural: "보조 의료 인력" # 11318451110122013204
   job_giga_extra_healthcare_desc: "우리 시민들의 건강과 복지를 확보하는 것이 장기적인 번영의 열쇠입니다." # 15991157676623919075
   job_giga_extra_healthcare_effect_desc: "£job_giga_extra_healthcare£ $job_giga_extra_healthcare_plural$은 £consumer_goods£ §Y$consumer_goods$§! 및 £food£ §Y$food$§! (또는 £minerals£ §Y$minerals$§!)을 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 및 £mod_pop_growth_speed£ §Y$mod_giga_pop_growth_speed_extra_add$§!로 전환합니다." # 5980067644279954157
-  mod_job_giga_extra_healthcare_add: "$job_giga_extra_healthcare$ 일자리" # 8552010131666168818
-  mod_job_giga_extra_healthcare_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_extra_healthcare$ 직업" # 2843456389413943916
+  mod_job_giga_extra_healthcare_add: "$job_giga_extra_healthcare$ 일자리"
+  mod_job_giga_extra_healthcare_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_extra_healthcare$ 직업"
   mod_job_giga_extra_healthcare_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
   job_giga_cloning: "복제 기술자" # 10505005767567817427
   job_giga_cloning_plural: "복제 기술자" # 13212332078191597412
   job_giga_cloning_desc: "복도를 거닐며, 부러울 만큼 세심한 태도로 배양조를 돌보고 있습니다." # 2390947303708295692
   job_giga_cloning_effect_desc: "£job_giga_cloning£ $job_giga_cloning_plural$은 £consumer_goods£ §Y$consumer_goods$§! 및 £food£ §Y$food$§! (또는 £minerals£ §Y$minerals$§!)을 £mod_planet_pop_assembly_organic_add£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!로 전환합니다!" # 9073343187121486394
-  mod_job_giga_cloning_add: "$job_giga_cloning$ 일자리" # 8830654644968855954
-  mod_job_giga_cloning_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_cloning$ 직위" # 6977696680055323294
+  mod_job_giga_cloning_add: "$job_giga_cloning$ 일자리"
+  mod_job_giga_cloning_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_cloning$ 직위"
   mod_job_giga_cloning_per_pop_short: "§G+1§! £mod_job_giga_cloning_add£ 당 $VALUE$ £pop£" # 15857435180039259528
   job_giga_extra_crucible_drone: "보충 발생 드론" # 2350657033486569644
   job_giga_extra_crucible_drone_plural: "보조 생산 드론" # 17393082476492074789
   job_giga_extra_crucible_drone_desc: "체화된 합성, 요람에서 무덤까지." # 14715311514321637279
   job_giga_extra_crucible_drone_effect_desc: "£job_giga_extra_crucible_drone£ $job_giga_extra_crucible_drone_plural$은 £alloys£ §Y$alloys$§! 및 £food£ §Y$food$§! (또는 £minerals£ §Y$minerals$§!)을 §Y$PLANET_AMENITIES_TITLE$§! £mod_planet_amenities_add£ 및 §Y$mod_giga_pop_growth_speed_extra_add$§! £mod_pop_growth_speed£ 로 전환합니다!" # 11827954077310419883
-  mod_job_giga_extra_crucible_drone_add: "$job_giga_extra_crucible_drone$ 직업" # 13272490323625503660
-  mod_job_giga_extra_crucible_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_extra_crucible_drone$ 직위" # 10739493587115006580
+  mod_job_giga_extra_crucible_drone_add: "$job_giga_extra_crucible_drone$ 직업"
+  mod_job_giga_extra_crucible_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_extra_crucible_drone$ 직위"
   mod_job_giga_extra_crucible_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
