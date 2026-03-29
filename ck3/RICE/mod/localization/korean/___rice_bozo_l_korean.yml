@@ -12,6 +12,18 @@
   ghw_region_the_sahel: "사헬" # 8702593431080824086
   RICE_culture_in_niger_river_basin_desc: "[culture|E]는 [GetGeographicalRegion('ghw_region_the_sahel').GetName] [region|E] 내에 최소 #V 4#!개의 [counties|E]를 보유하고 있습니다." # 2768849562194047013
   activity_RICE_bozo_local_pilgrimage_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E] [stress|E] 상실\n$BULLET_WITH_TAB$ [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait|E] / [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait_level_track_xp|E]" # 5617381781335626209
+  building_type_RICE_bozo_bandiagara_escarpment: "반디아가라 절벽" # 10996031457663307015
+  building_type_RICE_bozo_bandiagara_escarpment_desc: "반디아가라 절벽을 따라 수백 미터 높이로 솟아 있는 반디아가라 지역의 모래 고원, 절벽, 평야에는 셀 수 없이 많은 마을들이 점점이 흩어져 있으며, 이곳 절벽에는 가옥, 곡물 창고, 집회소, 감시 초소 등이 세워져 있습니다. 접근하기 어렵고 척박한 지역에 자리 잡고 있어 방어하기 쉬우며, 문화적, 종교적으로 매우 중요한 곳입니다." # 2395143136341511375
+  building_RICE_bozo_bandiagara_escarpment: "$building_type_RICE_bozo_bandiagara_escarpment$" # 5659917304789526055
+  building_RICE_bozo_bandiagara_escarpment_desc: "$building_type_RICE_bozo_bandiagara_escarpment_desc$" # 6767955325781562094
+  building_type_RICE_bozo_dia_mounds: "디아 둔덕" # 8325543774162075664
+  building_type_RICE_bozo_dia_mounds_desc: "고대 정착지인 디아의 둔덕은 서아프리카에서 두드러진 여러 민족과 사회 집단의 기원이라고 전해집니다. 이 지역에서 가장 큰 공동묘지 중 하나를 포함하고 있을 뿐만 아니라, 다양한 아프리카 민족들이 융합된 교역, 영성, 문화 교류의 중심지이기도 합니다." # 11298545069545679401
+  building_RICE_bozo_dia_mounds: "$building_type_RICE_bozo_dia_mounds$" # 13872258996165442844
+  building_RICE_bozo_dia_mounds_desc: "$building_type_RICE_bozo_dia_mounds_desc$" # 5147749385802170235
+  building_type_RICE_bozo_loropeni_fortress: "로로페니 요새" # 7967932641811211080
+  building_type_RICE_bozo_loropeni_fortress_desc: "로로페니 정착지 근처의 웅장한 성벽과 요새는 북아프리카와 남쪽의 금광 및 삼림 왕국을 연결하는 수익성 높은 사하라 횡단 무역로를 확보하기 위해 건설되었습니다." # 5135416958261376384
+  building_RICE_bozo_loropeni_fortress: "$building_type_RICE_bozo_loropeni_fortress$" # 227036259323306083
+  building_RICE_bozo_loropeni_fortress_desc: "$building_type_RICE_bozo_loropeni_fortress_desc$" # 3539240951373862872
   game_concept_wangara: "왕가라" # 1978063903127432063
   game_concept_wangara_desc: "왕가라족은 중세 및 근세 아프리카 경제사에서 중요한 역할을 했던 서아프리카 상인 집단이었습니다. 이들은 여러 만데어 사용 민족들이 결합된 집단이었으며, 그 용어는 맥락에 따라 다양한 의미를 가졌습니다.\n\n서아프리카의 금광을 통제하는 [ruler|E]가 $RICE_bozo_establish_wangara_decision$ [decision|E]를 내리면, $innovation_RICE_wangara$ [innovation|E]를 통해 왕가라 콘텐츠가 잠금 해제됩니다. 이 [innovation|E]는 몇 가지 방법으로 획득할 수 있습니다. 정상적인 [innovation|E] 획득 과정을 통해 자연적으로 얻거나, $RICE_bozo_establish_wangara_decision$ [decision|E]를 통해서, 혹은 왕가라족을 자신의 [culture|E] 공동체에 통합하는 [decision|E]를 통해서 얻을 수 있습니다. 후자의 두 가지 방법은 [era|E]보다 일찍 [innovation|E]를 얻을 수 있게 해줍니다.\n\n기본적인 이점 외에도, 이 [innovation|E]는 다른 장점들도 가지고 있습니다. 예를 들어, 이는 [counties|E]에 유용한 보너스를 제공할 수 있는 $RICE_bozo_wangara_synergy_decision$ [decision|E]를 잠금 해제합니다." # 8851328696660686083
   game_concept_mud_masonry: "진흙 건축술" # 7049119410526428293

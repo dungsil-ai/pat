@@ -47,6 +47,14 @@
   RICE_siwa_necropolis_of_el_bagawat: "엘-바가와트 네크로폴리스 최근 복원됨" # 5287797697536293102
   RICE_siwa_necropolis_of_el_bagawat_desc: "카르가 오아시스의 기독교 공동체가 최근 수 세기 전 그들의 선조들처럼 엘-바가왓의 지하 묘지를 다시 사용하기 시작했습니다. 그곳은 무덤과 엄숙한 예배당으로 가득 찬, 잘 보존된 거대한 장소입니다." # 3715616611145431648
   RICE_siwa_necropolis_of_el_bagawat_restorer: "엘바가왓의 네크로폴리스를 복원했습니다." # 4602292664915907702
+  RICE_siwa_kharshif_structures_decision: "카르시프 구조물 유지" # 6510915715388446784
+  RICE_siwa_kharshif_structures_decision_tooltip: "[KHARSHIF_GLOSS] 블록들이 [GetTitleByKey('b_siwa').GetNameNoTier]에서 수 세대 동안 사용되어 왔습니다." # 7324401856715630930
+  RICE_siwa_kharshif_structures_decision_desc: "[Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )]가 건축 자재로서 얼마나 효과적인지는 시간이 거듭될수록 증명되고 있습니다. 하지만 [GetTitleByKey('b_siwa').GetNameNoTier]의 이러한 전통적인 건축 자재들은 언제나 약간의 보수가 필요합니다." # 12788106220346167503
+  RICE_siwa_kharshif_structures_decision_effect_tooltip_1: "xxxxx" # 1951045980481827005
+  RICE_siwa_kharshif_structures_decision_confirm: "일을 시작합시다!" # 16358131364908957336
+  RICE_siwa_kharshif_structures_decision_context_tooltip: "#emphasis Historical Context:#! $KHARSHIF_GLOSS$" # 3765366036956764941
+  RICE_siwa_kharshif_modifier: "카르시프 구조물 유지" # 6526367982534205819
+  RICE_siwa_kharshif_modifier_desc: "지역 통치자들은 [Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )] 블록이 시와 오아시스 구조물에서 아주 오랫동안 유지될 수 있도록 자원을 투입했습니다." # 10879566362646216126
   RICE_siwa_oracle_of_amun_host_memory: "[GetTitleByKey('b_siwa').GetNameNoTier]로 가서 [GetActivityType( 'activity_RICE_siwa_oracle_of_amun' ).GetName]를 행하고 그 지혜를 구했습니다." # 308808014227150424
   RICE_siwa_oracle_of_amun_host_memory_first_perspective: "저는 지혜를 구하고자 [GetTitleByKey('b_siwa').GetNameNoTier]에 가서 [GetActivityType( 'activity_RICE_siwa_oracle_of_amun' ).GetName]에 참배했습니다." # 13547629263451921316
   RICE_siwa_oracle_of_amun_host_memory_second_perspective: "당신은 [GetTitleByKey('b_siwa').GetNameNoTier]로 가서 [GetActivityType( 'activity_RICE_siwa_oracle_of_amun' ).GetName]를 행하고 그 지혜를 구했습니다." # 11125313957906620227
@@ -152,9 +160,9 @@
   siwa.0000.t: "xxxxx" # 1951045980481827005
   siwa.0000.desc: "xxxxx" # 1951045980481827005
   siwa.0000.a: "xxxxx" # 1951045980481827005
-  siwa.0001.t: "xxxxx" # 1951045980481827005
-  siwa.0001.desc: "xxxxx"
-  siwa.0001.a: "xxxxx" # 1951045980481827005
+  siwa.0001.t: "카르시프" # 1696324513166328232
+  siwa.0001.desc: "전통적으로 [GetTitleByKey('c_siwa').GetNameNoTier]의 사람들은 소금과 기타 재료로 만든 [Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )] 블록을 사용하여 많은 건물을 지어왔습니다.\n\n하지만 시간이 지나면서 적절한 보수가 없으면 [Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )] 블록은 낡아버릴 수 있습니다. 따라서 저는 기존 구조물을 유지하고 새로운 건물을 위한 블록 생산을 위해 오아시스 지역 주민들에게 자원을 할당했습니다." # 3217304159313477411
+  siwa.0001.a: "이 소금 블록들은 지역 사회에 수 세대 동안 큰 도움이 되었습니다." # 10190421824464278855
   siwa.0002.t: "xxxxx" # 1951045980481827005
   siwa.0002.desc: "xxxxx" # 1951045980481827005
   siwa.0002.a: "xxxxx" # 1951045980481827005

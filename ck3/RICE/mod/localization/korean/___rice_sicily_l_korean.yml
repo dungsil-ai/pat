@@ -156,6 +156,18 @@
   RICE_restart_sicily_struggle_make_cultures_faiths_involved_effect_tooltip: "[GetGeographicalRegion('custom_sicily').GetName] 내에 [county|E]를 소유한 [ruler|E]가 단 한 명이라도 있는 모든 [cultures|E] 또는 [faiths|E]는 이미 [struggle_involved|E] 상태가 아니라면 [RICE_sicily_struggle|E]에 [struggle_involved|E] 상태가 됩니다." # 16279115432056159476
   dynn_RICE_fiore: "피오레" # 1451332135603237272
   Gioacchino: "조아키노" # 13295433682074624657
+  RICE_sicily_refugee_type_small_loc: "#bold 소규모#! 난민 집단으로, 아마도 내 수도에 정착시킬 수 있을 것 같습니다." # 13770686904092283492
+  RICE_sicily_refugee_type_large_loc: "#bold 대규모#! 난민 집단으로, 근처에 작은 정착지를 세울 수 있을 것입니다." # 17200604367833891855
+  RICE_sicilian_refugee_type_nobles_loc: "지중해 주변의 다른 엘리트, 정치적 네트워크와 연줄이 있는 #bold 귀족들#!" # 5959046062964755374
+  RICE_sicilian_refugee_type_soldiers_loc: "전쟁과 약탈에서 잔뼈가 굵은, 전투와 전략에 능숙한 #bold 병사들#!" # 15130870311196961249
+  RICE_sicilian_refugee_type_merchants_loc: "지중해를 가로지르는 무역로를 따라 여행하고 상업을 관리하는 경험이 있는 #bold 상인들#!" # 9457876064205238130
+  RICE_sicilian_refugee_type_artisans_loc: "다양한 종류의 아름다운 공예품을 생산할 수 있으며 때로는 다양한 사회 계층과 연줄이 있는 #bold 장인들#!" # 2243377890918397888
+  RICE_sicilian_refugee_type_literati_loc: "시인, 학자, 발명가 및 기타 종류의 지식을 갖춘 전문가들로 풍부한 지식과 웅변술을 지닌 #bold 문필가들#!" # 116495640131785922
+  RICE_sicilian_migrant_type_nobles_loc: "$RICE_sicilian_refugee_type_nobles_loc$" # 3484142837536505385
+  RICE_sicilian_migrant_type_soldiers_loc: "$RICE_sicilian_refugee_type_soldiers_loc$" # 9647074911781144951
+  RICE_sicilian_migrant_type_merchants_loc: "$RICE_sicilian_refugee_type_merchants_loc$" # 12368619008148428490
+  RICE_sicilian_migrant_type_artisans_loc: "$RICE_sicilian_refugee_type_artisans_loc$" # 11105638413614205946
+  RICE_sicilian_migrant_type_literati_loc: "$RICE_sicilian_refugee_type_literati_loc$" # 9482071546499723655
   game_concept_RICE_sicily_struggle_adjective: "시칠리아의" # 7965192507963567190
   game_concept_RICE_sicily_struggle_short: "시칠리아" # 6545308416482399150
   game_concept_RICE_sicily_struggle: "시칠리아 변경주" # 11292476531466517513
@@ -699,6 +711,26 @@
   RICE_sicily_constantine_latin_modifier: "의학 문헌을 라틴어로 번역하기" # 4525260284722570443
   RICE_sicily_constantine_greek_modifier: "헬레니즘 의학 문헌 수집 및 연구" # 12639302584175895740
   RICE_sicily_constantine_arabic_modifier: "이슬람 의학 서적 수집 및 연구" # 16321919893850253058
+  RICE_sicily_refugee_connections_nobles: "시칠리아 난민 귀족과의 연줄" # 5395685690029060851
+  RICE_sicily_refugees_nobles: "시칠리아 난민 귀족 공동체" # 15530036704898268998
+  RICE_sicily_refugee_connections_soldiers: "시칠리아 난민 병사와의 연줄" # 14260729255196257926
+  RICE_sicily_refugees_soldiers: "시칠리아 난민 병사 공동체" # 12330594093031287009
+  RICE_sicily_refugee_connections_merchants: "시칠리아 난민 상인과의 연줄" # 473455955497865311
+  RICE_sicily_refugees_merchants: "시칠리아 난민 상인 공동체" # 9034992277877462379
+  RICE_sicily_refugee_connections_artisans: "시칠리아 난민 장인과의 연줄" # 14819806552526715347
+  RICE_sicily_refugees_artisans: "시칠리아 난민 장인 공동체" # 14768442207309631036
+  RICE_sicily_refugee_connections_literati: "시칠리아 난민 문필가와의 연줄" # 13669352416202388892
+  RICE_sicily_refugees_literati: "시칠리아 난민 문필가 공동체" # 757975203971490502
+  RICE_sicily_migrants_nobles: "시칠리아로 유입된 외국인 귀족" # 2755134870828615251
+  RICE_sicily_migrants_soldiers: "시칠리아로 유입된 외국인 병사" # 12477535186769480231
+  RICE_sicily_migrants_merchants: "시칠리아로 유입된 외국인 상인" # 16487867386601471639
+  RICE_sicily_migrants_artisans: "시칠리아로 유입된 외국인 장인" # 15661499486429616309
+  RICE_sicily_migrants_literati: "시칠리아로 유입된 외국인 문필가" # 5774042941999006689
+  RICE_sicily_notable_diplomacy: "시칠리아 귀족과의 연줄" # 6241074428671308480
+  RICE_sicily_notable_martial: "시칠리아 병사와의 연줄" # 6340251500351324432
+  RICE_sicily_notable_stewardship: "시칠리아 상인과의 연줄" # 15981375159356228333
+  RICE_sicily_notable_intrigue: "시칠리아 장인과의 연줄" # 4345221723029481977
+  RICE_sicily_notable_learning: "시칠리아 지식인과의 연줄" # 9037804354172159042
   RICE_sicily_virgil_modifier_intro: "베르길리우스의 신탁" # 7797439312574889253
   RICE_sicily_virgil_modifier_intro_desc: "#italic 베르길리우스의 점술#!, 즉 베르길리우스의 시를 이용한 점술을 행한 후, 이 인물은 베르길리우스의 #italic 아이네이스#!에서 다음 구절을 뽑았습니다:" # 14910982496803387991
   RICE_sicily_virgil_positive_modifier_1: "$RICE_sicily_virgil_modifier_intro$" # 6999102761057277332
@@ -1908,12 +1940,14 @@
   sicily.0233.a: "라틴 세계" # 996165428204339028
   sicily.0233.b: "그리스 세계" # 1257942304613485656
   sicily.0233.c: "아랍-베르베르 세계" # 8287834018389551983
-  sicily.0234.t: "xxxxx" # 1951045980481827005
-  sicily.0234.desc: "xxxxx"
-  sicily.0234.a: "xxxxx"
-  sicily.0235.t: "xxxxx" # 1951045980481827005
-  sicily.0235.desc: "xxxxx"
-  sicily.0235.a: "xxxxx" # 1951045980481827005
+  sicily.0234.t: "$RICE_sicily_struggle$로부터의 난민" # 8850085545364627586
+  sicily.0234.desc: "[GetGeographicalRegion('custom_sicily').GetNameNoTooltip]은 모험으로 가득 찬 변경 지대이지만, 혼란과 갈등 또한 존재합니다. 저는 최근 이 지역의 혼란을 피해 온 [courtier.GetFaith.GetAdjective] [courtier.GetCulture.GetName] 난민들이 제 영지에 도착했다는 소식을 들었습니다. 그들은 [courtier.GetFullName]이라는 자가 이끌고 있으며, 그자는 제가 자비를 베풀어 [courtier.GetHerHis] 백성을 돕기를 바라고 있습니다.\n\n제 관리들은 [courtier.GetFirstNamePossessiveNoTooltip] 집단이 주로 [GetPlayer.Custom('RICE_sicilian_refugee_type_loc')]로 구성되어 있으며, 그들이 [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]의 [GetPlayer.Custom('RICE_sicilian_refugee_size_loc')] 집단이라고 언급했습니다." # 7576989699802241378
+  sicily.0234.a: "아주 좋소! [courtier.GetFirstNameNoTooltip] 그대, 이곳에 온 것을 환영하오." # 3447681104253547165
+  sicily.0234.b: "미안하지만, 다른 곳에서 새로운 보금자리를 찾아야 할 것이오." # 1852222485247626563
+  sicily.0235.t: "$RICE_sicily_struggle$로 향하는 재능 있는 이주민" # 5616367183473419548
+  sicily.0235.desc: "[GetGeographicalRegion('custom_sicily').GetNameNoTooltip]은 기회를 잡으려는 이들에게 기회로 가득 찬 변경 지대입니다. 가끔씩 얼굴 없는 이민자 무리가 반도 해안에 도착하지만, 저는 [courtier.GetFullName]이라는 특히 뛰어난 개인이 제 영지에 도착하여 이 지역에서 일자리를 찾고 있다는 소식을 들었습니다.\n\n이 [courtier.GetCulture.GetName] [courtier.GetWomanMan]이 알현을 위해 제 앞에 소환되었을 때, [courtier.GetFirstName]은 [courtier.GetSheHe]가 원래 [county.GetNameNoTier] 출신이며, [GetPlayer.Custom('RICE_sicilian_migrant_type_loc')] 공동체에 속해 있었다고 말합니다." # 8385952024835261994
+  sicily.0235.a: "그대의 봉사는 대단히 환영받을 것이오." # 7269497886084824519
+  sicily.0235.b: "그대의 봉사에는 관심이 없소." # 12757395797494952700
   sicily.0236.t: "xxxxx" # 1951045980481827005
   sicily.0236.desc: "xxxxx" # 1951045980481827005
   sicily.0236.a: "xxxxx" # 1951045980481827005

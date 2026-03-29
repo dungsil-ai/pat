@@ -4,13 +4,13 @@
   setting_RICE_intro_event_on_desc: "게임을 불러올 때 한 번 발동하는 소개 이벤트는 현재 사용 중인 RICE 버전과 최신 기능을 알려줍니다. 이는 모드가 올바르게 설치되었고 최신 버전을 사용 중인지 확인하는 데 도움이 됩니다." # 11839336696882962670
   setting_RICE_intro_event_off: "끔" # 8927729592684634549
   setting_RICE_intro_event_off_desc: "시작 이벤트는 비활성화됩니다." # 11155068692559715121
-  RICEintro.0000.t: "RICE 1.18.1\"성 패트\"" # 2209469596720751367
-  RICEintro.0000.desc: "RICE 1.18.1이 성공적으로 설치되었습니다. 이 이벤트는 게임 시작 시에만 발생하며 게임 규칙을 통해 비활성화할 수 있습니다. 최신 업데이트에 추가된 일부 기능은 새 게임이 필요하다는 점에 유의하십시오. Steam 창작마당, PI 포럼 또는 제 디스코드에서 버그를 보고하거나 피드백을 남겨주세요.\n\nRICE는 현재 전 세계의 다양한 문화, 종교, 지역을 다루는 #V #Bold 43#!#!개의 플레이버 팩을 포함하고 있습니다. 최신 플레이버 팩은 #V #Bold 마요: 헤더와 주목#!#!입니다.\n\n이 플레이버 팩들은 [GetTitleByKey('c_mayo').GetNameNoTier]와 [RICE_culture.GetCollectiveNoun]에 새로운 풍미를 추가하는 데 중점을 둡니다." # 11430257419165270416
+  RICEintro.0000.t: "RICE 1.18.2 \"에리트레아 해\"" # 18127799406071812865
+  RICEintro.0000.desc: "RICE 1.18.2 설치가 성공적으로 완료되었습니다. 이 이벤트는 게임 시작 시에만 발생하며 게임 규칙을 통해 비활성화할 수 있습니다. 최신 업데이트에서 추가된 일부 기능은 새 게임을 필요로 할 수 있습니다. 스팀 창작마당, PI 포럼 또는 제 디스코드에서 버그를 신고하거나 피드백을 제공해 주십시오.\n\nRICE는 현재 전 세계의 다양한 문화, 종교 및 지역을 다루는 #V #Bold 43#!#! 풍미 팩을 포함하고 있습니다. 최신 풍미 팩은 #V #Bold 마요: 헤더와 주목나무#!#!입니다.\n\n이러한 풍미 팩은 [GetTitleByKey('c_mayo').GetNameNoTier]와 [RICE_culture.GetCollectiveNoun]에 새로운 풍미를 더하는 데 중점을 둡니다." # 2918771292011602583
   RICEintro.0000.a: "좋군!" # 2933982366699918903
   RICEintro.0000.b: "이번 업데이트의 새로운 추가 사항에 대한 개요를 원하시는군요." # 2296478953061761299
   RICEintro.0000.c: "이 메시지를 향후 이 저장 파일에서는 비활성화해 주십시오." # 15745156042237332393
   RICEintro.0000.c.tooltip: "#EMP 이 옵션을 선택하면 앞으로 이 저장 파일에 대한 성공적인 업데이트 알림을 받지 못하게 됩니다!#!" # 11916024186952248667
-  RICEintro_intro_tooltip: "#EMP 평화는 승리한 전쟁보다 낫다.\n친구는 에일보다 낫다.\n변화는 파괴보다 낫다.\n\n– 노섬브리아의 왕 알드프리드의 격언집 중 발췌, 중세 아일랜드 지혜의 서#!" # 5585624774596893119
+  RICEintro_intro_tooltip: "#EMP \"잔지 땅으로 가는 자는 모두 소코트라 섬을 지나칩니다. 그곳 인구의 대다수는 기독교도 아랍인들입니다. 거기서부터는 알로에와 이 섬에서만 자라는 나무의 수지 등이 공급됩니다.\"\n– 야쿠트 알-하마위(1179–1229 CE), 이슬람 학자 및 지리학자#!" # 13395714237889420811
   RICEintro_TFE_warning_tooltip: "\n----------------------------------------\n\n#V #bold 타락한 독수리#!#!가 실행 중인 것으로 감지되었습니다. 이것이 사실이라면, 새 게임을 시작하기 전에 모드 로드 순서에서 TFE가 RICE보다 #underline 아래에# 오도록 #bold 확인하십시오#!." # 5055225297519247687
   RICEintro_ROA_warning_tooltip: "\n----------------------------------------\n\n#V #bold 아시아의 라자#!#!가 실행 중인 것으로 감지되었습니다. 사실이라면, 새 게임을 시작하기 전에 모드 로드 순서에서 ROA가 RICE #underline 아래에 오도록 #bold 확인하십시오#!." # 13831992960958359029
   RICE_decision_pagan_requirement: "이교도 [faith|E]를 따릅니다." # 2667718468984044947
@@ -506,6 +506,14 @@
   d_laamp_RICE_constantine_the_african_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   d_laamp_RICE_ibn_jubayr: "참회하는 순례자들" # 16323485775679535916
   d_laamp_RICE_ibn_jubayr_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_wang_jian: "도둑 왕들" # 16052414557289535427
+  d_laamp_RICE_wang_jian_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_said_ibn_najahid: "나자흐의 후예들" # 13213439604204681598
+  d_laamp_RICE_said_ibn_najahid_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_saint_bona_of_pisa: "순례자들의 수호자" # 7638573756209223395
+  d_laamp_RICE_saint_bona_of_pisa_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_joao_poet: "파이바의 시인들" # 2593889244434392501
+  d_laamp_RICE_joao_poet_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   d_nf_RICE_li_shichang: "서부의 학자-신사 계층" # 15491962007794571614
   d_nf_RICE_li_shichang_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   c_nf_RICE_zhai_dunhuang: "$dynn_zhai$ 가문" # 13864192181880426652
@@ -542,6 +550,14 @@
   d_nf_RICE_mahmud_yalavach_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   d_nf_RICE_al_uzgandi: "사법 치료사" # 1281159991571348398
   d_nf_RICE_al_uzgandi_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  RICE_mideast_deities.spirit: "정령" # 17983738769237101458
+  RICE_mideast_deities.jinn: "진" # 17228324217159083127
+  RICE_mideast_deities.pari: "파리" # 1820982453597050992
+  RICE_mideast_deities.shida: "쉬다" # 17920309124774129832
+  RICE_mideast_deities.spirits: "정령들" # 14535763589429283235
+  RICE_mideast_deities.jinns: "$RICE_mideast_deities.jinn$" # 2480217491401609364
+  RICE_mideast_deities.paris: "파리들" # 4310706960894954080
+  RICE_mideast_deities.shidas: "쉬다들" # 16686129364838720484
   RICEmisc.0000.t: "xxxxx" # 1951045980481827005
   RICEmisc.0000.desc: "xxxxx" # 1951045980481827005
   RICEmisc.0000.a: "xxxxx" # 1951045980481827005

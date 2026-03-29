@@ -76,6 +76,7 @@
   RICE_greater_himalayan_region_capital_req: "[capital|E]는 [GetGeographicalRegion('RICE_greater_himalayan_region').GetName]에 위치해 있습니다." # 1445312579649414396
   Humar: "후마르" # 14022034763949036858
   Milarepa: "밀라레파" # 9467045929041699370
+  kaldan_sherab: "칼단 셰랍" # 15860698735034358085
   RICE_tibet_deities_type_deities: "신들" # 10024869336305504466
   RICE_tibet_deities_type_spirits: "영혼들" # 14535763589429283235
   RICE_random_tibetan_buddhist_figure_01: "석가모니 부처" # 16915828092187849667

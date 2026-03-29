@@ -1,5 +1,6 @@
 ﻿l_korean:
   RICE_upper_egypt_every_nile_county_desc: "[GetGeographicalRegion('RICE_nile_river_valley').GetName]에 속한 귀하가 소유한 모든 [county|E]" # 18400414728451162603
+  RICE_upper_egypt_every_nile_county_nilometers_desc: "[GetGeographicalRegion('RICE_nile_river_valley').GetName]에 소유한 모든 [county|E]는 [GetModifier('RICE_nile_renovated_nilometers').GetNameWithTooltip] [modifier|E]를 보유합니다" # 18224717297125465387
   Yarjukh: "야르주흐" # 18278972743238438944
   Shukayr: "슈케어" # 2442406575486139165
   dynn_shukayr: "슈카이리드" # 2720288103246051416
@@ -458,7 +459,7 @@
   upper_egypt.0021.t: "나일 측정기" # 13969169294922751515
   upper_egypt.0021.desc: "파라오 시대 이래로, 나일로미터는 수세기 동안 [GetGeographicalRegion('RICE_nile_river_valley').GetName] 유역 사회의 필수적인 부분이었습니다. 이 구조물들은 나일강 범람 수위를 측정하는 데 도움을 주며, 이 지식은 한편으로는 번영을, 다른 한편으로는 혼돈을 가르는 차이가 될 수 있습니다. 따라서 저는 제가 다스리는 영토 내의 여러 나일로미터를 보수하고 수리하도록 명을 내렸습니다. 그래야만 그 구조물들이 신뢰할 수 있고 정확하게 유지될 수 있을 것입니다. 필요하다면 다른 구조물들도 건설될 수 있을 것입니다." # 13140467691095916307
   upper_egypt.0021.a: "이것이 앞으로 몇 년 동안 우리에게 큰 도움이 되기를 바랍니다." # 11150733284983902646
-  upper_egypt.0022.t: "나일 운하 개방" # 1244793610449949077
+  upper_egypt.0022.t: "의식" # 12617158727748286151
   upper_egypt.0022.desc: "매년 나일강은 범람합니다. 이집트에 사는 모든 이들의 삶은 여기에 달려있습니다. 이는 태고적부터 그래왔습니다.\n\n다행히 올해 나일강의 범람은 풍성했고, 나일강 유역의 농부들은 최악의 경우에도 적절한 수확을 기대할 수 있습니다. 곧 우리는 이집트 전역의 수로와 수로를 통해 곧 비옥해질 농지에 물을 공급하기 위해 운하를 열 수 있을 것입니다. 이 운하들을 공식적인 의식을 통해, 장엄하고 격식 있게 여는 것은 [ROOT.Char.GetCulture.GetName]의 전통입니다.\n\n준비는 이미 진행 중입니다." # 493233113665016594
   upper_egypt.0022.desc.normal: "이 수로 개통을 위한 의무적인 의식을 계획했습니다. 우리의 행운을 축하합시다!" # 11291916787347108182
   upper_egypt.0022.desc.grand: "올해 행사를 위해 많은 노력이 들어갔습니다. 평소보다 더 화려하고 기쁨이 넘치는 성대한 행사를 거행하고 싶기 때문입니다." # 16430665644927885216

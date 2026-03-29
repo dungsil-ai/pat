@@ -10,6 +10,9 @@
   RICE_decision_gifaataa_month_req: "달은 7월과 8월 사이입니다" # 1496522151925622366
   Motolomi: "모톨로미" # 1325289929432702760
   dynn_Motolomi: "다모트" # 812981822651263830
+  RICE_sycamore_fig_region: "플라타너스 무화과 지역" # 8190894817983771283
+  RICE_sycamore_geographical_req: "귀하의 [capital|E]는 [GetGeographicalRegion('RICE_sycamore_fig_region').GetName]에 위치해 있습니다" # 3387955250077333923
+  RICE_sycamore_domicile_geographical_req: "귀하의 [domicile|E]는 [GetGeographicalRegion('RICE_sycamore_fig_region').GetName]에 위치해 있습니다" # 5203853339646662356
   tradition_RICE_south_ethiopian_walls_name: "농경지 성벽" # 15203083192814216022
   tradition_RICE_south_ethiopian_walls_desc: "#F 이 문화권은 토양 유실을 막고 관개 목적으로 석벽을 자주 쌓습니다. 이 문화권의 선견지명이 있는 지도자들은 이러한 석벽 건설 기술과 그 기반이 되는 사회 제도를 활용하여 적의 약탈과 침공으로부터 국경을 방어합니다.#!" # 4060471132027365916
   tradition_RICE_great_rift_valley_name: "리프트 밸리 상인들" # 12784381547696985316
@@ -178,6 +181,31 @@
   RICE_south_ethiopia_did_not_relocate_artisan_communities: "원치 않는 장인 공동체를 이전시키지 않았음" # 6015871694217762869
   RICE_south_ethiopia_did_not_relocate_artisan_communities_desc: "최근 지역 주민들이 이 통치자에게 자신들의 권위를 사용하여 바람직하지 않은 카스트에 속한 장인 가문들을 강제로 이주시킬 것을 요청했습니다. 이 통치자는 이 장인들이 다른 이들에게 오염을 끼치는 존재로 여겨져 이미 충분히 멀리 떨어져 살고 있다고 판단하여, 이러한 요구를 거부했습니다." # 4554851621604167764
   RICE_south_ethiopia_planted_enset_trees_around_house: "집 주변에 엔세트 나무를 더 심었습니다." # 6126517438432530745
+  RICE_south_ethiopia_sycamore_tree_good_diplomacy_1: "플라타너스 나무 정령의 도움 (명예)" # 9462101545139170956
+  RICE_south_ethiopia_sycamore_tree_good_diplomacy_2: "플라타너스 나무 정령의 도움 (명예)" # 9462101545139170956
+  RICE_south_ethiopia_sycamore_tree_good_diplomacy_3: "플라타너스 나무 정령의 도움 (명예)" # 9462101545139170956
+  RICE_south_ethiopia_sycamore_tree_good_diplomacy_4: "플라타너스 나무 정령의 도움 (명예)" # 9462101545139170956
+  RICE_south_ethiopia_sycamore_tree_good_diplomacy_5: "플라타너스 나무 정령의 도움 (명예)" # 9462101545139170956
+  RICE_south_ethiopia_sycamore_tree_good_martial_1: "플라타너스 나무 정령의 도움 (전쟁술)" # 6247842583396256759
+  RICE_south_ethiopia_sycamore_tree_good_martial_2: "플라타너스 나무 정령의 도움 (전쟁술)" # 6247842583396256759
+  RICE_south_ethiopia_sycamore_tree_good_martial_3: "플라타너스 나무 정령의 도움 (전쟁술)" # 6247842583396256759
+  RICE_south_ethiopia_sycamore_tree_good_martial_4: "플라타너스 나무 정령의 도움 (전쟁술)" # 6247842583396256759
+  RICE_south_ethiopia_sycamore_tree_good_martial_5: "플라타너스 나무 정령의 도움 (전쟁술)" # 6247842583396256759
+  RICE_south_ethiopia_sycamore_tree_good_stewardship_1: "플라타너스 나무 정령의 도움 (부)" # 11508216904650963866
+  RICE_south_ethiopia_sycamore_tree_good_stewardship_2: "플라타너스 나무 정령의 도움 (부)" # 11508216904650963866
+  RICE_south_ethiopia_sycamore_tree_good_stewardship_3: "플라타너스 나무 정령의 도움 (부)" # 11508216904650963866
+  RICE_south_ethiopia_sycamore_tree_good_stewardship_4: "플라타너스 나무 정령의 도움 (부)" # 11508216904650963866
+  RICE_south_ethiopia_sycamore_tree_good_stewardship_5: "플라타너스 나무 정령의 도움 (부)" # 11508216904650963866
+  RICE_south_ethiopia_sycamore_tree_good_intrigue_1: "플라타너스 나무 정령의 도움 (관계)" # 17092298395975438591
+  RICE_south_ethiopia_sycamore_tree_good_intrigue_2: "플라타너스 나무 정령의 도움 (관계)" # 17092298395975438591
+  RICE_south_ethiopia_sycamore_tree_good_intrigue_3: "플라타너스 나무 정령의 도움 (관계)" # 17092298395975438591
+  RICE_south_ethiopia_sycamore_tree_good_intrigue_4: "플라타너스 나무 정령의 도움 (관계)" # 17092298395975438591
+  RICE_south_ethiopia_sycamore_tree_good_intrigue_5: "플라타너스 나무 정령의 도움 (관계)" # 17092298395975438591
+  RICE_south_ethiopia_sycamore_tree_good_learning_1: "플라타너스 나무 정령의 도움 (지혜)" # 4833985246460982197
+  RICE_south_ethiopia_sycamore_tree_good_learning_2: "시카모어 나무 정령의 도움 (지혜)" # 4833985246460982197
+  RICE_south_ethiopia_sycamore_tree_good_learning_3: "시카모어 나무 정령의 도움 (지혜)" # 4833985246460982197
+  RICE_south_ethiopia_sycamore_tree_good_learning_4: "시카모어 나무 정령의 도움 (지혜)" # 4833985246460982197
+  RICE_south_ethiopia_sycamore_tree_good_learning_5: "시카모어 나무 정령의 도움 (지혜)" # 4833985246460982197
   RICE_south_ethiopia_enset_decision: "엔셋을 수확하여 식량 불안정 완화" # 2668794181890376550
   RICE_south_ethiopia_enset_decision_tooltip: "엔셋은 가뭄과 식량 불안에 강한 작물입니다." # 18442680523342724077
   RICE_south_ethiopia_enset_decision_desc: "수 세대 동안 [ROOT.Char.GetCulture.GetName] 사람들은 #V 엔셋#을 재배하고 수확해 왔습니다. 이 작물은 가뭄에 매우 강하고 생애 주기 어느 때든 수확할 수 있어 여러 차례 기근을 막아주었습니다. 식량 안보를 개선하기 위해 지금 당장 지역 마을들에게 일부를 수확하도록 명령해야겠습니다." # 8359606626127928658
@@ -208,6 +236,19 @@
   RICE_south_ethiopia_fandaanano_decision_effect_tooltip_2: "이제 [GetFaithByKey('fandaanano').GetName]으로 개종할 수 있습니다." # 10562188834439457051
   RICE_south_ethiopia_fandaanano_decision_confirm: "[GetFaithByKey('fandaanano').GetNameNoTooltip]의 가르침을 따릅시다!" # 17775786893136271208
   RICE_south_ethiopia_fandaanano_decision_context_tooltip: "#emphasis 역사적 배경:#! 판다아나교는 이슬람교와 토착 쿠시족 신앙이 융합된 혼합주의 종교였습니다. 한때 시다마어를 사용하는 하디야족 사이에서 널리 행해졌으나, 선교사들을 통해 다른 민족에게도 퍼져나갔습니다. 판다아나교는 15세기에 에티오피아 남부에서 발생했으며, 정치적 격변 이후 주류 이슬람교와 지리적으로 고립된 고원지대 무슬림 공동체에서 유래했을 가능성이 큽니다. 이슬람교와 차이점에도 불구하고, 판다아나교 신봉자들 중 다수는 스스로를 무슬림으로 여겼습니다. 이 전통은 현재는 소멸했지만, 종교적 소속과 관계없이 현대 하디야족에게 미치는 상당한 영향력 속에 살아 숨 쉬고 있습니다." # 17940106189235124594
+  RICE_south_ethiopia_pray_to_a_sycamore_tree: "시카모어 나무에게 기도하기" # 5674062964878811335
+  RICE_south_ethiopia_pray_to_a_sycamore_tree_tooltip: "우리 백성들은 오랫동안 시카모어 나무를 숭배해 왔습니다." # 2081545739132863029
+  RICE_south_ethiopia_pray_to_a_sycamore_tree_desc: "태고적부터 [ROOT.Char.GetCulture.GetCollectiveNoun]은 시카모어 무화과의 위대한 영적 힘을 알고 있었습니다. 이제 저는 그 주위에 거주하는 [GetPlayer.Custom('RICE_mideast_spirit_plural')]가 그 영적 힘을 사용하여 저를 인도하고 소원을 이루어 주기를 바라며 그중 하나에게 기도할 것입니다." # 5423760167997263365
+  RICE_south_ethiopia_pray_to_a_sycamore_tree_effect_tooltip_1: "당신은 [traits|E] (특히 [virtues|E]와 [sins|E])와 [piety_level|E]에 따라 당신의 [skills|E]를 향상시키는 #P 유익한#! [character_modifiers|E]를 얻을 수 있습니다." # 1567633439251381875
+  RICE_south_ethiopia_pray_to_a_sycamore_tree_confirm: "제물을 준비하라!" # 17418423168661925689
+  RICE_south_ethiopia_pray_to_a_sycamore_tree_context_tooltip: "#emphasis 역사적 배경:#! 시카모어 무화과는 여러 동아프리카, 주로 쿠시어 사용 민족들 사이에서 막대한 영적 힘을 지닌 것으로 여겨집니다. 무슬림이나 기독교인조차도 베자족처럼 시카모어에게 희생이나 제물을 바치는 등 이러한 시카모어와 관련된 오래된 의식을 수행합니다." # 8105316039476863041
+  RICE_south_ethiopia_sycamore_tree_neutral: "[GetPlayer.Custom('RICE_mideast_spirit_plural')]가 당신을 무시합니다" # 3363750889195824762
+  RICE_south_ethiopia_sycamore_tree_neutral_tooltip: "$RICE_south_ethiopia_sycamore_tree_neutral$" # 7639579316187171879
+  RICE_south_ethiopia_sycamore_tree_bad: "[GetPlayer.Custom('RICE_mideast_spirit_plural')]가 당신의 제물을 싫어합니다" # 4693374006816184303
+  RICE_south_ethiopia_sycamore_tree_bad_short: "#N 나쁜 결과#!" # 10851782698402296098
+  RICE_south_ethiopia_sycamore_tree_good: "[GetPlayer.Custom('RICE_mideast_spirit_plural')]가 당신의 제물에 만족했습니다" # 17615890379114201138
+  RICE_south_ethiopia_sycamore_tree_good_short: "#P 좋은 결과#!" # 8076865324419795280
+  RICE_south_ethiopia_sycamore_tree_neutral_short: "#N 결과 없음#!" # 11640704405340868353
   south_ethiopia.0000.t: "xxxxx" # 1951045980481827005
   south_ethiopia.0000.desc: "xxxxx" # 1951045980481827005
   south_ethiopia.0000.a: "xxxxx" # 1951045980481827005
@@ -219,9 +260,13 @@
   south_ethiopia.0002.a: "$fandaanano_high_god_name$와 선한 정령들에게 찬미를!" # 2484980128083326350
   south_ethiopia.0002.b: "알겠습니다. 흥미로운 소식이군요." # 5622699544128072071
   south_ethiopia.0002.c: "이 새로운 생활 방식은 정말 매력적이로군…." # 757278992157485000
-  south_ethiopia.0003.t: "xxxxx" # 1951045980481827005
-  south_ethiopia.0003.desc: "xxxxx"
-  south_ethiopia.0003.a: "xxxxx"
+  south_ethiopia.0003.t: "시카모어 나무" # 3692088659233377931
+  south_ethiopia.0003.desc: "#bold 플라타너스 무화과#나무는 많은 영적인 힘을 지니고 있으며, 위대하고 강력한 [GetPlayer.Custom('RICE_mideast_spirit_plural')]들이 종종 이 나무들 곁에 머문다고 전해집니다. 충분하고 마음에 드는 제물을 바친다면, [ROOT.Char.GetFaith.GetReligion.GetAdjective] 법과 관습을 따르는 [GetPlayer.Custom('RICE_mideast_spirit_plural')]들이 우리가 곤경에 처했을 때 지침을 내려줄 수 있을 것입니다.\n\n[ROOT.Char.GetFaith.GetAdjective] [ROOT.Char.Custom('DefaultPriestTitlePlural')]들과 나의 가신들, 그리고 다른 유력자들을 대동하고, 나는 근처에 있는, 지역의 자비로운 [GetPlayer.Custom('RICE_mideast_spirit')]가 깃들어 있다고 알려진 플라타너스 무화과나무로 희생 제물을 바치러 왔습니다. [ROOT.Char.GetFaith.HighGodName]께 기도한 후, 우리는 제물을 바치고, 저는 [GetPlayer.Custom('RICE_mideast_spirit')]께 저의...에 관한 조언과 도움을 간청합니다." # 17797477051338966499
+  south_ethiopia.0003.a: "[diplomacy_i|E] 명예" # 9194844055549444325
+  south_ethiopia.0003.b: "[martial_i|E] 전쟁" # 15991502031350388827
+  south_ethiopia.0003.c: "[stewardship_i|E] 부" # 489982120030572582
+  south_ethiopia.0003.d: "[intrigue_i|E] 관계" # 8358326738290792836
+  south_ethiopia.0003.e: "[learning_i|E] 지혜" # 4916617336679919583
   south_ethiopia.0004.t: "xxxxx" # 1951045980481827005
   south_ethiopia.0004.desc: "xxxxx" # 1951045980481827005
   south_ethiopia.0004.a: "xxxxx" # 1951045980481827005

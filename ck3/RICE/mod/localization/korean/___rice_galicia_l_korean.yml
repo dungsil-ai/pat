@@ -12,6 +12,7 @@
   RICE_galicia_coastal_geographical_req: "[GetGeographicalRegion('RICE_galicia_region').GetName] 내에 해안을 접한 [county|E]를 하나 이상 소유하고 있습니다." # 9464729531853218769
   RICE_every_coastal_county_in_galicia: "[GetGeographicalRegion('RICE_galicia_region').GetName] 내에 소유하고 있는 모든 해안 [county|E]" # 16582869341512482339
   RICE_galicia_santiago_holy_site_building_level_2_req: "[GetBuilding('holy_site_basilica_santiago_01').GetName]이 건설되었습니다." # 10931231070910893161
+  dynn_RICE_paiva: "파이바" # 17225582954341878615
   RICE_galicia_csm_legend_name: "성모 마리아의 노래" # 6214455793004565309
   RICE_galicia_csm_legend_desc: "[compiler.GetTitledFirstName]의 학식과 웅변술은 전설적입니다. 갈리시아-포르투갈어 시의 위대한 모음집인 #italic 칸티가스 데 산타 마리아#!의 편찬은 [compiler.GetHerHis]의 노력 덕분입니다." # 2830681814438261112
   RICE_galicia_csm_legend_chapter_opening_new_title: "모든 이들이 [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]의 박식함과 웅변술을 알고 있을 것입니다. 지금도 그분의 시 작품들은 많은 이들에게 찬사를 받고 있습니다\"" # 15700253320238823732

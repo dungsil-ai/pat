@@ -192,6 +192,12 @@
   building_wap_bronze_industry_02_desc: "우리는 생산 과정의 낭비를 줄이고 산출량을 늘리기 위해 청동 세공 산업을 중앙집중화하는 작업을 시작했습니다. 우리의 노력으로 주변 광산에서 공급받는 중요한 밀랍 주조지가 개발되었습니다." # 6212215147090739379
   building_wap_bronze_industry_03: "거대한 청동 세공품" # 5045011720220216037
   building_wap_bronze_industry_03_desc: "이제 우리 군주님의 청동 세공을 위한 대규모의 중앙집중식 구역이 생겼습니다. 최고의 청동, 구리, 철 세공에 특화된 우리 장인들의 명성은 니제르에서 나일강 유역까지 뻗어나가고 있습니다." # 1928590362300498185
+  building_type_RICE_niger_delta_sungbos_eredo_01: "숭보의 에레도" # 3229712833775380827
+  building_type_RICE_niger_delta_sungbos_eredo_01_desc: "이예부 오데 정착지는 길고 유서 깊은 역사를 가지고 있습니다. 전설에 따르면, 그 거대한 방어벽과 참호 시스템은 많은 이들의 존경을 받았던 부유하고 자식 없는 미망인 빌리키수 숭보를 기리기 위해 건설되었다고 합니다. 이 요새들은 이 때문에 숭보의 에레도라고 불립니다." # 10309503085735442280
+  building_RICE_niger_delta_sungbos_eredo_01: "$building_type_RICE_niger_delta_sungbos_eredo_01$" # 16888140433381833928
+  building_RICE_niger_delta_sungbos_eredo_01_desc: "$building_type_RICE_niger_delta_sungbos_eredo_01_desc$" # 4594062865176141868
+  building_RICE_niger_delta_sungbos_eredo_02: "확장된 숭보의 에레도" # 6346735760317946900
+  building_RICE_niger_delta_sungbos_eredo_02_desc: "$building_type_RICE_niger_delta_sungbos_eredo_01_desc$" # 4594062865176141868
   RICE_niger_delta_new_yam_festival_ruler_ate_first_yam: "첫 번째 얌을 먹었다" # 16085899945379215104
   RICE_niger_delta_new_yam_festival_ruler_ate_first_yam_desc: "이 인물이 최근에 연 새로운 얌 축제에서, 그 해에 갓 수확한 첫 얌(즉, 새로 수확한 얌)을 먹는 영예를 스스로 차지했습니다." # 17297346605893799379
   RICE_niger_delta_new_yam_festival_priests_ate_first_yam: "성직자들이 첫 번째 마를 먹었다" # 3923994413863656335

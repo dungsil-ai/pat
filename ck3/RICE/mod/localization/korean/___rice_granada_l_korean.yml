@@ -158,6 +158,12 @@
   RICE_granada_munya_vacation_group_completed_log: "[CHARACTER.GetShortUIName|U]께서 [CHARACTER.GetHerHis] [munya|E]에서 주최하신 단체 휴가가 [PROVINCE.GetBaronyNameExplicitly]에서 끝났습니다." # 1066029995865383944
   TRAVEL_NAME_FOR_activity_RICE_granada_munya_vacation_group: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_granada_munya_vacation_group$" # 10436001381932138048
   RICE_granada_munya_vacation_length_desc: "휴가 기간" # 15807456725632011311
+  building_type_RICE_granada_alcazaba_01: "말라가의 알카사바" # 17624383061172733171
+  building_type_RICE_granada_alcazaba_01_desc: "지중해를 내려다보는 이 소박하지만 중요한 요새는 육로와 해로 양쪽에서 말라가 시를 보호합니다." # 3282819971431642161
+  building_RICE_granada_alcazaba_01: "$building_type_RICE_granada_alcazaba_01$" # 18066533670506181427
+  building_RICE_granada_alcazaba_01_desc: "$building_type_RICE_granada_alcazaba_01_desc$" # 8579255198272899053
+  building_RICE_granada_alcazaba_02: "궁정 양식의 $building_type_RICE_granada_alcazaba_01$" # 1434326814658115624
+  building_RICE_granada_alcazaba_02_desc: "이곳에 세워졌던 초기 소박한 요새를 확장한 말라가의 난공불락의 궁전 단지는 가장 인상적인 #italic 알카사바# 중 하나로, 도시 방어 체계의 나머지 부분과 연결되어 있습니다. 또한 정교한 정원, 연못, 목욕탕을 갖춘 화려한 궁전도 포함하고 있습니다." # 7226823633134764991
   RICE_granada_garnata_al_yahud_tensions: "그라나타 알-야후드의 긴장감" # 4713174250932438904
   RICE_granada_garnata_al_yahud_tensions_desc: "전설에 따르면 그라나다는 수 세기 전 유대인 망명자들에 의해 세워졌다고 합니다. 도시 인구의 상당수가 유대인이기에, 아랍어로 이 도시는 종종 '가르나타 알-야후드'\"유대인의 그라나\")라고 불립니다. 이제 그라나다가 지역 중심지로서 일비라를 대체하면서 다른 집단들도 정착했는데, 이들과 유대인 사이에 긴장이 조성되고 있습니다. 일부는 언젠가 유대인에 대한 폭력이 터질까 두려워하고 있습니다.\n\n#italic 이 [county_modifier|E]가 활성화되어 있는 동안, 그라나다 [county|E]의 [rulers|E]는 가끔 재능 있는 유대인 궁정 인사를 맞이하여 그들의 궁정에 봉사하게 할 수 있습니다. 하지만, 머지않아 지역 주민들 사이에서 반유대주의 감정이 최고조에 달할 수도 있습니다...!#" # 12669290606210413132
   RICE_granada_garnata_al_yahud_jews_dominant: "가르나타 알-야후드 내 유대교 영향력" # 8461386389597171924

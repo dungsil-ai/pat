@@ -17,6 +17,36 @@
   RICE_every_coastal_county_in_indian_ocean: "[GetGeographicalRegion('RICE_indian_ocean_region').GetName]에 속한 귀하가 소유한 모든 해안 [county|E]" # 2325472525565584377
   RICE_indian_ocean_pirate_spawn_event_troops: "인도양 해적들" # 528378064322841476
   RICE_indian_ocean_region_coastal_req: "[GetGeographicalRegion('RICE_indian_ocean_region').GetName] [region|E]에 해안을 접한 [county|E]를 하나 이상 소유하십시오." # 7626193399806318715
+  RICE_dynn_kishin: "일-키신" # 14338200100231224157
+  Rahabhan: "라하반" # 12465130750766098526
+  al_franji: "알-프란지" # 14650961878235625007
+  al_hindi: "알-힌디" # 13830072748917411886
+  al_zanji: "알-잔지" # 11184273683926927348
+  RICE_physical_appearance_change_wife_desc: "선택한 [culture|E]에 맞게 배우자의 외모가 변경됩니다" # 7319698899350302989
+  RICE_socotra_development_req: "[GetTitleByKey('c_socotra').GetNameNoTier]는 최소 [EmptyScope.ScriptValue('RICE_sicily_pavia_development_level')|0]의 [development|E]를 보유해야 합니다\" " # 12555912940315826132
+  RICE_socotra_rejuvenate_clan_interaction: "마법으로 힘을 부여하기" # 4292651124367133527
+  RICE_socotra_rejuvenate_clan_interaction_desc: "마법을 사용하여 [recipient.GetShortUINameNoTooltip]에게 힘을 부여하고 그/그녀의 [skills|E]를 강화합니다." # 10205676506579576610
+  trait_RICE_socotra_sorcerer: "케힌" # 12143813450451130553
+  trait_RICE_socotra_sorcerer_female: "케히네" # 6603292142004155401
+  trait_RICE_socotra_sorcerer_desc: "이 인물은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]에 대한 경험이 있다고 알려져 있습니다." # 1749516376241450132
+  trait_RICE_socotra_sorcerer_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]에 대한 경험이 있다고 알려져 있습니다." # 6011820951599473236
+  trait_RICE_socotra_sorcerer_2: "인정받은 케힌" # 17755481089339667853
+  trait_RICE_socotra_sorcerer_2_female: "인정받은 케히네" # 8032559078033854540
+  trait_RICE_socotra_sorcerer_2_desc: "이 인물은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]에 대한 알려진 숙련도로 명성을 얻었습니다." # 696528971751935027
+  trait_RICE_socotra_sorcerer_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]에 대한 알려진 숙련도로 명성을 얻었습니다." # 5920365637831241186
+  trait_RICE_socotra_sorcerer_3: "악명 높은 케힌" # 14447059183710493978
+  trait_RICE_socotra_sorcerer_3_female: "악명 높은 케히네" # 9880690296013797581
+  trait_RICE_socotra_sorcerer_3_desc: "이 인물은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]의 악명 높고 전설적인 전문가입니다." # 1269959469900937988
+  trait_RICE_socotra_sorcerer_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]은 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )] 연안 거주민들이 행하는 무시무시한 [RICE_socotra_sorcery|E]의 악명 높고 전설적인 전문가입니다." # 3726499193901116820
+  trait_track_RICE_socotra_sorcerer: "$trait_RICE_socotra_sorcerer$" # 4961704401147095867
+  trait_track_RICE_socotra_sorcerer_desc: "수 세기 동안 [Glossary( 'Erythraean Sea', 'ERYTHRAEAN_SEA_GLOSS' )]의 연안 거주민들은 그들의 알려진 마법 능력으로 두려움을 받아왔습니다." # 9907177053688218592
+  TRAIT_FLAG_DESC_rice_socotra_sorcery_decision_unlock: "[culture|E]에 관계없이 [decision|E]를 통해 #V $RICE_socotra_cast_insular_sorcery$#!을 시전하는 등 고유의 [RICE_socotra_sorcery|E] 메커니즘을 잠금 해제합니다." # 14341822339269234383
+  TRAIT_FLAG_DESC_rice_socotra_sorcery_decision_bonus: "증가된 [trait_level_track_xp|E]는 [decision|E]인 #V $RICE_socotra_cast_insular_sorcery$#!의 #V 비용#!과 #V 재사용 대기시간#!을 감소시키며, [gold_i|E] [gold|E]와 [piety_i|E] [piety|E]를 줄입니다." # 5273214568135827213
+  RICE_socotra_aspiration_rahabhan_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$ [independent|E] [ruler|E]로서 [GetTitleByKey('c_socotra').GetNameNoTier] 유지\n$EFFECT_LIST_BULLET$ [gold_i|E]#V [EmptyScope.ScriptValue('RICE_aspiration_tiny_resource_bonus')]#! [gold|E] 보유\n$EFFECT_LIST_BULLET$ [piety_level|E]가 [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] 이상이거나, [prestige_level|E]가 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상이어야 함\n$EFFECT_LIST_BULLET$ [adult|E] 자녀 중 하나라도 한 [skill|E]에서 #V 12#! 이상을 보유해야 함\n$EFFECT_LIST_BULLET$ [decision|E]인 #V $RICE_socotra_cast_insular_sorcery$#!를 최소 한 번 사용해야 함\n$EFFECT_LIST_BULLET$만약 외국인 아내가 살아 있다면, 그 아내가 당신에게 #P 50#! 이상의 [opinion_i|E] [opinion|E]를 가져야 함\n\n#bold 보상#!\n$EFFECT_LIST_BULLET$ @dynasty_prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [dynasty_prestige|E] 획득\n$EFFECT_LIST_BULLET$ (만약 [prestige_level|E]가 [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L] 이상이라면) @piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [piety|E] 획득\n$EFFECT_LIST_BULLET$ (만약 [piety_level|E]가 [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] 이상이라면) @prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [prestige|E] 획득\n$EFFECT_LIST_BULLET$ @gold_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [gold|E] 획득\n$EFFECT_LIST_BULLET$ [GetTitleByKey('c_socotra').GetNameNoTier]에 @development_icon! #V [EmptyScope.ScriptValue('RICE_socotra_rahabhan_aspiration_dev_bonus')]#! [development|E] 부여\n\n#bold [historical_aspiration_bonus_objectives|E]#!\n$EFFECT_LIST_BULLET$외국인 아내가 살아 있다면, 그 아내와 [friend|E], [best_friend|E], [lover|E], 혹은 [soulmate|E] 관계가 되십시오 (보상: 평생 동안 [GetModifier('RICE_socotra_rahabhan_wife_relationship_modifier').GetNameWithTooltip] [modifier|E] 획득)\n$EFFECT_LIST_BULLET$ [decision|E]인 #V $RICE_socotra_moon_sacrifice$#!를 최소 한 번 사용하십시오 (보상: [intrigue_lifestyle|E] [perk|E] 획득)\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_socotra_sorcerer').GetName( GetNullCharacter )] [trait|E]의 [trait_level_track_xp|E]를 #V 50#!까지 달성하십시오 (보상: [learning_lifestyle|E] [perk|E] 획득)\n$EFFECT_LIST_BULLET$ [decisions|E]인 #V $RICE_socotra_draft_bawarij_pirates$#!를 최소 한 번 사용하십시오 (보상: [men_at_arms|E] 일부를 포함한 #V 1000#!의 [special_troops|E] 획득)" # 13426491409141502077
+  RICE_socotra_historical_aspiration_action_rahabhan: "#italic 나는 교활함을 통해 이방 침략자들을 몰아냄으로써 소코트라 섬의 많은 이들의 존경을 얻었다. 마법적 힘을 가졌다고 주장하는 외국인 아내의 도움으로, 나는 소코트라의 다른 부족들을 지배하고, 미래의 침략에 대비하여 용혈의 섬을 강화할 것이다.#!$RICE_socotra_aspiration_rahabhan_desc$" # 9651654683120796289
+  RICE_socotra_historical_aspiration_modifier_desc_rahabhan: "[GetModifier('RICE_socotra_aspiration_conslidate_clan').GetNameWithTooltip]" # 2081164592428006439
+  RICE_socotra_aspiration_conslidate_clan: "[RICE_aspiration|E]: 소코트라에 대한 부족의 영향력 공고히 하기" # 17170850713002234504
+  RICE_socotra_aspiration_conslidate_clan_desc: "#italic 교활함을 통해 이방 침략자들을 몰아낸 후, 라하반은 소코트라 섬의 많은 이들의 존경을 얻었다. 마법적 힘을 가졌다고 주장하는 외국인 아내의 도움으로, 그는 소코트라의 다른 부족들을 지배하고, 미래의 침략에 대비하여 용혈의 섬을 강화하고자 한다.#!$RICE_socotra_aspiration_rahabhan_desc$\n\n" # 6535506142432008069
   RICE_socotra_legend_new_title_name: "새로운 소코트라" # 3036728752079679637
   RICE_socotra_legend_new_title_desc: "작고 보잘것없는 섬이지만, [GetTitleByKey('k_socotra').GetNameNoTier]는 수세기 동안 전설의 대상이었으며, 이를 위대한 왕국으로 만든 것은 그에 못지않은 전설적인 통치자, 바로 [founder.GetName]였습니다." # 8147189565203604458
   RICE_socotra_legend_chapter_opening_new_title: "[ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] 섬은 전설과 신화, 이국적인 사치품, 고대 민족, 그리고 숨 막히는 풍경으로 가득한 땅입니다. 하지만 옛날에는 이곳이 흉포한 짐승들과 두려움을 떨치던 바와리지(Bawarij) 같은 더욱 사나운 해적들이 들끓던 땅이었습니다. 오직 [ROOT.Legend.GetProtagonist.GetNameNoTooltip]와 같은 영광스러운 지도자만이 이 섬을 길들일 수 있었을 것입니다." # 2809456420797604552
@@ -76,6 +106,12 @@
   game_concept_indian_ocean_local_pirate: "지역 해적" # 16205042067334868494
   game_concept_indian_ocean_local_pirates: "지역 해적들" # 14800408829530387227
   game_concept_indian_ocean_pirate_desc: "인도양의 [RICE_pirates|E] 해적들과 사략선원들은 게임에서 여러 가지 방식으로 구현됩니다. 첫째, 인도양을 따라 특정 조건을 만족하는 통치자들은 [decision|E]을 내려 인도양 해적 소굴이라는 [special_building|E]을 건설할 수 있습니다. 이 건물은 여러 군사적, 경제적 보너스를 제공하며, 역사적으로 해적들의 본거지였거나 그들과 협력했던 일부 [counties|E]에는 게임 시작 시점에 이미 이 건물이 자리 잡고 있습니다.\n\n소코트라 섬은 인도양에 기반을 둔 인도계 사략선원들로 악명 높았던 바와리지(Bawarij)를 나타내는 바와리지 소굴이라는 [special_building|E]의 특별한 변형을 얻습니다. 소코트라의 여러 메커니즘조차도 바와리지와 관련이 있습니다. 예를 들어, 소코트라 [county|E]의 [rulers|E]는 전쟁 중에 [decision|E]을 내려 바와리지 무법자들을 모집하여 군대를 강화할 수 있지만, 이는 파괴적인 부정적 [county_modifier|E]를 대가로 합니다. 또한 바와리지 소굴을 적절한 수준으로 업그레이드한 경우, [decision|E]을 내려 소코트라 [kingdom|E]를 형성할 수도 있습니다.\n\n마지막으로, 바와리지 해적들은 이벤트로 인해 [courtiers|E]로 나타나기도 합니다. 이는 소코트라의 [rulers|E]와, 해양 무역 계통에서 [dynasty_perk|E]인 [GetDynastyPerk('RICE_socotra_indian_ocean_legacy_2').GetName]을 해금한 왕조를 가진 인도양 지역의 [rulers|E]로 제한됩니다. 이들은 종종 훌륭한 [knights|E]나 [commanders|E]가 되는 강력하고 유능한 인물들입니다.\n\n마지막으로, 여러 선택지가 있는 $RICE_pirate_indian_ocean_decision$ [decision|E]도 존재합니다. 대부분의 선택지는 영토 내에 인도양 해적 소굴을 보유하고 있거나, 앞서 언급한 [decision|E]의 $RICE_pirate_establish_relations_name$ 선택지를 통해 얻는 $RICE_pirate_indian_ocean_connections_modifier$ [modifier|E]를 통해 해금됩니다." # 2047385556282583706
+  game_concept_RICE_socotra_sorcerous_ways: "마법적인 방식" # 8357412423028704233
+  game_concept_RICE_socotra_sorcerous: "마법적인" # 2060990617027678824
+  game_concept_RICE_socotra_sorcerer: "마법사" # 2742755627375690311
+  game_concept_RICE_socotra_sorcerers: "마법사들" # 14553542752760559772
+  game_concept_RICE_socotra_sorcery: "마법" # 6510159189777941794
+  game_concept_RICE_socotra_sorcery_desc: "게임 시작 시 $south_arabian$ [culture|E]와 같이 $tradition_RICE_sorcerous_corsairs_name$ [tradition|E]를 가진 [cultures|E]는 에리트레아 해의 여러 민족들 사이에서 행해지거나 행해진다고 알려진 [game_concept_RICE_socotra_sorcery|E] 형태와 관련된 특성을 이용할 수 있다 (이는 [Glossary( 'Old South Arabian Languages', 'OLD_SOUTH_ARABIAN_LANGUAGES_GLOSS' )]와 혼동해서는 안 된다).\n\n가장 중요하게도, 이 [tradition|E]는 다섯 가지 다른 선택지를 제공하여 다양한 보너스를 주는 [decision|E]인 #V $RICE_socotra_cast_insular_sorcery$#!를 해금한다. 이 [decision|E]를 사용할 때마다 보너스는 #V weak#!, #V normal#!, 또는 #V strong#! 효과를 가질 수 있다.\n\n이 [decision|E]는 [GetTrait('RICE_socotra_sorcerer').GetName( GetNullCharacter )] [trait|E]와 관련이 있다. 이 [trait|E]의 [trait_level_track_xp|E]는 [decision|E]를 사용함으로써 얻을 수 있으며, 많이 얻을수록 [decision|E]의 비용이 저렴해진다." # 7715529976570838197
   RICE_socotra_pirate_infestation: "해적 창궐" # 13903469855409467172
   RICE_socotra_pirate_infestation_desc: "지역 통치자들이 약탈과 무역에 관해 상호 이익을 위해 지역 해적들에게 접근하기 시작했으며, 이들에게 이 땅에 영구적인 거점을 마련하도록 허용하고 있습니다. 하지만 해적 지도부가 동료 해적들을 통제하고 그들을 인근 공동체 및 지역 권력 구조에 통합시키는 데는 다소 시간이 걸릴 것입니다." # 1291127219689404151
   RICE_socotra_invest_myrrh: "소코트라 몰약 투자" # 8297939833484191340
@@ -152,6 +188,51 @@
   RICE_indian_ocean_pirate_sales_desc: "지역 통치자들은 해적들(혹은 그들과 거래 관계에 있는 자들)이 이 지역에서 그들이 부당하게 얻었든 아니든 간에 상품을 팔도록 허용합니다. 결국 많은 '해적'들은 상인이기도 하며, 다시 말해 많은 상인들이 부업으로 해적 행위를 벌입니다." # 10124932167980077858
   RICE_indian_ocean_reneged_pirate_deals: "인도양 해적과의 협약 파기" # 16711858430605446661
   RICE_indian_ocean_reneged_pirate_deals_desc: "#EMP 특정 [indian_ocean_pirates|E] 관련 [decisions|E]를 막습니다!#" # 18142814990075293876
+  RICE_socotra_rejuvenate_clan_strength_modifier_weak: "사소한 마법적 힘" # 15331198474403527419
+  RICE_socotra_rejuvenate_clan_strength_modifier_weak_desc: "이 부족의 힘은 에리트레아 해의 전통적인 [RICE_socotra_sorcery|E] 사용을 통해 강화된 것으로 여겨진다." # 3886899854365875019
+  RICE_socotra_rejuvenate_clan_strength_modifier_normal: "주요 마법적 힘" # 16745559064485353617
+  RICE_socotra_rejuvenate_clan_strength_modifier_normal_desc: "$RICE_socotra_rejuvenate_clan_strength_modifier_weak_desc$" # 5453290262156842332
+  RICE_socotra_rejuvenate_clan_strength_modifier_strong: "위대한 마법적 힘" # 9042575792452809652
+  RICE_socotra_rejuvenate_clan_strength_modifier_strong_desc: "$RICE_socotra_rejuvenate_clan_strength_modifier_weak_desc$" # 5453290262156842332
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_weak: "사소한 마법적 지혜" # 2315482284842360752
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_weak_desc: "이 부족의 지혜는 에리트레아 해의 전통적인 [RICE_socotra_sorcery|E] 사용을 통해 강화된 것으로 여겨진다." # 9541737668636999629
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_normal: "주요 마법적 지혜" # 3229215212779177064
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_normal_desc: "$RICE_socotra_rejuvenate_clan_wisdom_modifier_weak_desc$" # 8337852864716158686
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_strong: "위대한 마법적 지혜" # 4610154220455627657
+  RICE_socotra_rejuvenate_clan_wisdom_modifier_strong_desc: "$RICE_socotra_rejuvenate_clan_wisdom_modifier_weak_desc$" # 8337852864716158686
+  RICE_socotra_rejuvenate_clan_fortune_modifier_weak: "사소한 마법적 행운" # 14694257418603733345
+  RICE_socotra_rejuvenate_clan_fortune_modifier_weak_desc: "이 부족의 행운은 에리트레아 해의 전통적인 [RICE_socotra_sorcery|E] 사용을 통해 강화된 것으로 여겨진다." # 9080849209279795086
+  RICE_socotra_rejuvenate_clan_fortune_modifier_normal: "주요 마법적 행운" # 10881394305095968615
+  RICE_socotra_rejuvenate_clan_fortune_modifier_normal_desc: "$RICE_socotra_rejuvenate_clan_fortune_modifier_weak_desc$" # 238016470985847207
+  RICE_socotra_rejuvenate_clan_fortune_modifier_strong: "위대한 마법적 행운" # 1994509704151109427
+  RICE_socotra_rejuvenate_clan_fortune_modifier_strong_desc: "$RICE_socotra_rejuvenate_clan_fortune_modifier_weak_desc$" # 238016470985847207
+  RICE_socotra_impairing_enemies_modifier_weak: "적에 대한 사소한 마법" # 9647249349771562490
+  RICE_socotra_impairing_enemies_modifier_weak_desc: "이 인물은 에리트레아 해에서 전통적으로 행해지는 [RICE_socotra_sorcerous_ways|E]를 통해 적들을 약화시키는 것으로 여겨진다." # 6399749067710187858
+  RICE_socotra_impairing_enemies_modifier_normal: "적에 대한 주요 마법" # 8350944345131980959
+  RICE_socotra_impairing_enemies_modifier_normal_desc: "$RICE_socotra_impairing_enemies_modifier_weak_desc$" # 7552723008527675628
+  RICE_socotra_impairing_enemies_modifier_strong: "적에 대한 위대한 마법" # 3329024970108849551
+  RICE_socotra_impairing_enemies_modifier_strong_desc: "$RICE_socotra_impairing_enemies_modifier_weak_desc$" # 7552723008527675628
+  RICE_socotra_pray_for_water_modifier_weak: "사소한 마법적 물 축복" # 9897159817955397834
+  RICE_socotra_pray_for_water_modifier_weak_desc: "에리트레아 해의 전통적인 [RICE_socotra_sorcery|E]에 능숙한 현지 [RICE_socotra_sorcerers|E]들이 강우, 지하수면 확대 또는 기타 수단을 통해 이 지역의 수위를 높였다고 믿어집니다." # 6542214458160430301
+  RICE_socotra_pray_for_water_modifier_normal: "주요 마법적 물 축복" # 10686239739393748920
+  RICE_socotra_pray_for_water_modifier_normal_desc: "$RICE_socotra_pray_for_water_modifier_weak_desc$" # 13252739872768637245
+  RICE_socotra_pray_for_water_modifier_strong: "위대한 마법적 물 축복" # 6255051668064583536
+  RICE_socotra_pray_for_water_modifier_strong_desc: "$RICE_socotra_pray_for_water_modifier_strong$" # 13586878326420519152
+  RICE_socotra_insulated_coastline_modifier_weak: "사소한 마법적 단열" # 12251662021908177363
+  RICE_socotra_insulated_coastline_modifier_weak_desc: "이 해안 지역 주민들이 에리트레아 해의 모든 종류의 무서운 전통적인 [RICE_socotra_sorcery|E]에 능숙하며, 외세의 침략으로부터 스스로를 보호하기 위해 최근 온갖 종류의 어두운 마법을 행했다는 소문이 외부인들 사이에서 돌고 있습니다." # 5419556629432591295
+  RICE_socotra_insulated_coastline_modifier_normal: "주요 마법적 단열" # 14376237077042937695
+  RICE_socotra_insulated_coastline_modifier_normal_desc: "$RICE_socotra_insulated_coastline_modifier_weak_desc$" # 6136370980376130590
+  RICE_socotra_insulated_coastline_modifier_strong: "위대한 마법적 단열" # 11653247094492267256
+  RICE_socotra_insulated_coastline_modifier_strong_desc: "$RICE_socotra_insulated_coastline_modifier_weak_desc$" # 6136370980376130590
+  RICE_socotra_blessed_ships_modifier_desc: "에리트레아 해의 전통적인 [RICE_socotra_sorcery|E]의 도움으로, 이 인물은 자신이 소유하거나 관련된 항구에 우호적인 선박이 도착할 때마다 보호와 감사의 의식을 행하기 위해 노력해 왔습니다." # 13436533548898937689
+  RICE_socotra_blessed_ships_modifier_weak: "사소한 마법적 선박 축복" # 4592428717754758805
+  RICE_socotra_blessed_ships_modifier_weak_desc: "$RICE_socotra_blessed_ships_modifier_desc$\n\n#italic #V [GetPlayer.MakeScope.ScriptValue('RICE_socotra_bless_ship_chance_weak')]%#! 이 [modifier|E]가 활성화되어 있는 동안 매년 약간의 [piety_i|E] [piety|E], [prestige_i|E] [prestige|E], 그리고 [legitimacy_i|E] [legitimacy|E]를 얻을 확률입니다.#!" # 9779799553799298457
+  RICE_socotra_blessed_ships_modifier_normal: "주요 마법적 선박 축복" # 13479025290955066520
+  RICE_socotra_blessed_ships_modifier_normal_desc: "$RICE_socotra_blessed_ships_modifier_desc$\n\n#italic #V [GetPlayer.MakeScope.ScriptValue('RICE_socotra_bless_ship_chance_normal')]%#! 이 [modifier|E]가 활성화되어 있는 동안 매년 약간의 [piety_i|E] [piety|E], [prestige_i|E] [prestige|E], 그리고 [legitimacy_i|E] [legitimacy|E]를 얻을 확률입니다.#!" # 17385523242145115485
+  RICE_socotra_blessed_ships_modifier_strong: "위대한 마법적 선박 축복" # 9781453894638866303
+  RICE_socotra_blessed_ships_modifier_strong_desc: "$RICE_socotra_blessed_ships_modifier_desc$\n\n#italic #V [GetPlayer.MakeScope.ScriptValue('RICE_socotra_bless_ship_chance_strong')]%#! 이 [modifier|E]가 활성화되어 있는 동안 매년 약간의 [piety_i|E] [piety|E], [prestige_i|E] [prestige|E], 그리고 [legitimacy_i|E] [legitimacy|E]를 얻을 확률입니다.#!" # 16179091025896624999
+  RICE_socotra_rahabhan_wife_relationship_modifier: "전설적인 이방인 아내" # 6722263615925741178
+  RICE_socotra_rahabhan_wife_relationship_modifier_desc: "비교적 고립된 소코트라 섬 출신임에도 불구하고, 라하반은 자신의 마법적 능력으로 유명한 이방인 아내를 얻는 데 성공했습니다. 그와 아내의 생산적인 관계는 여러 상황에서 그에게 도움이 되었습니다." # 4354379188147048031
   RICE_socotra_collaborate_with_pirates: "인도양 해적과 협력하기" # 15899784795797806240
   RICE_socotra_collaborate_with_pirates_tooltip: "[indian_ocean_local_pirate|E]와 협상하여 그들이 당신의 영토 내에 작전 기지를 유지하는 것을 허용하는 대신, 그들의 수익 일부와 당신의 보호를 받는 상인들을 괴롭히지 않겠다는 약속을 받아내십시오." # 3904502296490247058
   RICE_socotra_collaborate_with_pirates_desc: "이 [indian_ocean_pirates|E]와 싸우는 대신, 공동의 적들로부터 함께 이익을 얻는 것이 어떻습니까?" # 17869196947285507244
@@ -209,7 +290,7 @@
   RICE_pirate_indian_ocean_decision_tooltip: "$RICE_pirate_mediterranean_decision_tooltip$" # 685492010751058312
   RICE_pirate_indian_ocean_decision_desc: "[GetGeographicalRegion('RICE_indian_ocean_region').GetName]은 언제나 해적들의 본거지였습니다. 숙련된 [rulers|E]들은 상호 이익을 위해 협조적인 해적들과 언제 협력해야 할지 알고 있습니다." # 4841261111252268585
   RICE_pirate_indian_ocean_decision_confirm: "$RICE_pirate_mediterranean_decision_confirm$" # 10768863105011263844
-  RICE_pirate_indian_ocean_decision_requirement_1: "#V 인도양 해적 소굴#을 소유한 [county|E]를 소유하거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 보유하십시오."
+  RICE_pirate_indian_ocean_decision_requirement_1: "#V 인도양 해적 소굴#!을 가진 [county|E]를 소유하거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 보유하거나 이 선택지를 해금하는 [tradition|E]를 가짐" # 13835032027693097447
   RICE_NOT_pirate_indian_ocean_decision_requirement_1: "당신은 #bold 소유하고 있지 않습니다#! #V Indian Ocean Pirate Den#!이 있는 [county|E]를 소유하고 있거나 [GetModifier('RICE_pirate_indian_ocean_connections_modifier').GetNameWithTooltip] [character_modifier|E]를 가지고 있지 않습니다." # 9259602843743371212
   RICE_pirate_indian_ocean_decision_context_tooltip: "$RICE_socotra_collaborate_with_pirates_context_tooltip$" # 8049344977440282555
   RICE_pirate_establish_relations_effect_tooltip_2: "이제 $RICE_pirate_indian_ocean_decision$의 다른 선택지들을 [decision|E]에서 이용할 수 있습니다." # 5505806833737385432
@@ -225,6 +306,37 @@
   RICE_indian_ocean_renege_on_pirate_collaboration_confirm: "그들은 좋아하지 않겠지만, 우리는 해야만 한다" # 5783375992893383446
   RICE_indian_ocean_renege_on_pirate_collaboration_req: "#V $building_type_RICE_pirate_den_01$#! [special_building|E]을 보유한 [county|E]를 소유하십시오." # 17797802667628495988
   RICE_indian_ocean_renege_on_pirate_collaboration_context_tooltip: "$RICE_socotra_collaborate_with_pirates_context_tooltip$" # 8049344977440282555
+  RICE_socotra_cast_insular_sorcery: "고립된 마법 시전" # 13374905702707758019
+  RICE_socotra_cast_insular_sorcery_tooltip: "우리 민족은 오랫동안 마법의 힘을 알고 있었습니다." # 13406645510783412267
+  RICE_socotra_cast_insular_sorcery_desc: "[ROOT.Char.GetCulture.GetCollectiveNoun]은 여러 세대에 걸쳐 [RICE_socotra_sorcery|E]를 해왔습니다. 외부인들이 우리를 두려워하는 것이 당연하지만, 이 [RICE_socotra_sorcery|E]는 선과 악 양쪽으로 사용될 수 있습니다." # 17787036213702794466
+  RICE_socotra_cast_insular_sorcery_effect_tooltip_1: "[piety_i|E] [piety_level|E], [trait_level_track_xp|E]에 따른 [GetTrait('RICE_socotra_sorcerer').GetName(GetNullCharacter)] [trait|E]의 #Bold weak#!, #Bold normal#!, 또는 #Bold strong#! 마법 보너스를 얻고, [skills|E], 특히 [learning_i|E] [learning|E] 능력치를 확인하십시오." # 300104213902260177
+  RICE_socotra_cast_insular_sorcery_effect_tooltip_2: "[trait_level_track_xp|E]을 획득하거나, 해당 [trait|E]를 소유하고 있지 않다면 획득할 기회를 얻습니다. 획득량은 [GetTrait('RICE_socotra_sorcerer').GetName(GetNullCharacter)] [trait|E]의 위력에 따라 결정되며, [RICE_socotra_sorcery|E]가 얼마나 강력한지에 따라 달라집니다." # 14343979398753318075
+  RICE_socotra_cast_insular_sorcery_confirm: "우리의 마법적인 방식에 그들이 두려워할 것이다!" # 16953048041369274072
+  RICE_socotra_cast_insular_sorcery_context_tooltip: "#emphasis Historical Context:#! 고대 및 중세의 많은 기록에는 소코트라인들(그리고 마흐리족과 같은 관련 민족들)이 마법에 소질이 있다는 내용이 언급되었습니다. 마르코 폴로와 이븐 알-무가위르와 같은 무슬림 자료들은 소코트라인들이 예를 들어 바람을 일으켜 배들을 쫓아낼 수 있었다고 주장했습니다. 이러한 자료들이 과장된 것은 분명하지만, 마법과 주술은 소코트라 민속에서 큰 역할을 차지하며, 이는 소코트라 기독교와 이슬람이 이교도 관습과 융합되었다는 단서들을 반영하는 것일 수 있습니다." # 1396981444763954767
+  RICE_SOCOTRA_SORCERY_PICK_TYPE: "$RICE_socotra_cast_insular_sorcery_confirm$" # 9889772037028575476
+  RICE_socotra_cast_insular_sorcery_type: "우리의 [RICE_socotra_sorcerers|E]는 무엇을 해야 할까요?" # 6075335278604195083
+  RICE_socotra_cast_insular_sorcery_select_text: "$RICE_socotra_cast_insular_sorcery_type$\n$select_one_of_the_available_option_step_one_top_text$" # 15734313831947179041
+  RICE_socotra_cast_insular_sorcery_rejuvenate_clan_name: "#V #Bold 클랜 재건#!#!" # 14857308166904638877
+  RICE_socotra_cast_insular_sorcery_rejuvenate_clan_desc: "$RICE_socotra_cast_insular_sorcery_rejuvenate_clan_name$" # 3842407393826138591
+  RICE_socotra_cast_insular_sorcery_rejuvenate_clan_tooltip: "#italic 우리의 동족들은 다가올 시련을 견디기 위해 치유와 힘을 북돋아 줄 필요가 있소.#!" # 1362553875632843247
+  RICE_socotra_cast_insular_sorcery_rejuvenate_clan_effect_tooltip_1: "세 가지 방식으로 [dynasty_members|E]의 [skills|E]를 증진하는 [modifiers|E] 중 하나를 선택하십시오:\n$EFFECT_LIST_BULLET$#bold 힘#!: [fertility|E], @health_icon! [health|E], [martial_i|E] [martial|E], [prowess_i|E] [prowess|E]\n$EFFECT_LIST_BULLET$#bold 지혜#!: [opinion_i|E] [opinion|E], [piety_i|E] [piety|E], [diplomacy_i|E] [diplomacy|E], [learning_i|E] [learning|E]\n$EFFECT_LIST_BULLET$#bold 행운#!: [gold_i|E] [income|E], [prestige_i|E] [prestige|E], [stewardship_i|E] [stewardship|E], [intrigue_i|E] [intrigue|E]" # 847358998757461603
+  RICE_socotra_cast_insular_sorcery_impair_enemies_name: "#V #Bold 적 약화#!#!" # 16480035774219692413
+  RICE_socotra_cast_insular_sorcery_impair_enemies_desc: "$RICE_socotra_cast_insular_sorcery_impair_enemies_name$" # 6874671608206000354
+  RICE_socotra_cast_insular_sorcery_impair_enemies_tooltip: "#italic 우리는 적들의 힘을 약화시키고 환상과 끔찍한 환영으로 그들을 혼란에 빠뜨릴 것이오.#!" # 6841868821939713624
+  RICE_socotra_cast_insular_sorcery_impair_enemies_effect_tooltip_1: "당신을 겨냥한 [hostile_schemes|E]의 효과를 감소시키고, [advantage|E]를 증진하며, 어쩌면 당신 자신의 [hostile_schemes|E] 효과를 증진하고 [battles|E]에서 적의 [casualties|E]를 증가시키는 [modifier|E]를 획득합니다." # 4645575023453621016
+  RICE_socotra_cast_insular_sorcery_pray_for_water_name: "#V #Bold 물을 구하다#!#!" # 1021725078946071145
+  RICE_socotra_cast_insular_sorcery_pray_for_water_desc: "$RICE_socotra_cast_insular_sorcery_pray_for_water_name$" # 9773923125233622087
+  RICE_socotra_cast_insular_sorcery_pray_for_water_tooltip: "#italic 우리가 의존하는 강, 개울, 호수, 물웅덩이가 우리의 작물, 가축, 그리고 우리 자신에게 영양을 줄 수 있는 생명수를 주기를.#!" # 17946929966924521822
+  RICE_socotra_cast_insular_sorcery_pray_for_water_effect_tooltip_1: "당신이 소유한 모든 [county|E]는 [development_i|E] [development|E], [gold_i|E] [tax|E], 그리고 어쩌면 [control_i|E] [control|E]와 [opinion_i|E] [county_opinion|E]를 증진하는 [modifier|E]를 얻습니다." # 11480568704143775381
+  RICE_socotra_cast_insular_sorcery_insulate_coasts_name: "#V #Bold 해안 단열#!#!" # 18436294406408401920
+  RICE_socotra_cast_insular_sorcery_insulate_coasts_desc: "$RICE_socotra_cast_insular_sorcery_insulate_coasts_name$" # 8086835777850334503
+  RICE_socotra_cast_insular_sorcery_insulate_coasts_tooltip: "#italic 우리의 마법으로, 우리는 바람, 안개, 폭풍을 보내 적대적인 외부인들을 몰아내고, 우리의 해안선을 위험으로부터 보호할 것입니다.#!" # 2824522448761323606
+  RICE_socotra_cast_insular_sorcery_insulate_coasts_effect_tooltip_1: "가지고 있는 모든 #V 해안가#! [county|E]는 [fort_level_i|E] [fort_level|E], [epidemic_i|E] [epidemic_resistance|E]를 높여주고, 어쩌면 수비 중인 [holding|E]의 [command_modifier_i|E] [advantage|E]와 @toughness_icon! [stationed|E] [men_at_arms|E]의 [toughness|E]를 제공하는 [modifier|E]를 얻습니다." # 3596406606174882131
+  RICE_socotra_cast_insular_sorcery_bless_ships_name: "#V #Bold 함선 축복#!#!" # 8260448181180934725
+  RICE_socotra_cast_insular_sorcery_bless_ships_desc: "$RICE_socotra_cast_insular_sorcery_bless_ships_name$" # 3745399885678546553
+  RICE_socotra_cast_insular_sorcery_bless_ships_tooltip: "#italic 바다는 위험하니, 우리의 배와 친구들의 배가 안전하게 우리의 해안에 도착하고 떠날 수 있도록 하는 것이 중요하오.#!" # 11617076519883735555
+  RICE_socotra_cast_insular_sorcery_bless_ships_effect_tooltip_1: "[prestige_i|E] [prestige|E], [piety_i|E] [piety|E], 그리고 [legitimacy_i|E] [legitimacy|E] 획득량을 증진하는 [modifier|E]를 획득합니다." # 13413359275851206620
+  RICE_socotra_cast_insular_sorcery_bless_ships_effect_tooltip_2: "앞으로 #V 10#!년 동안 매년, 당신은 대략 [piety_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_piety_gain')|0]#! [prestige|E] [piety|E], [prestige_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_prestige_gain')|0]#! [prestige|E], 그리고 [legitimacy_i|E] #V [GetPlayer.MakeScope.ScriptValue('miniscule_legitimacy_gain')|0]#! [prestige|E] [legitimacy|E]를 얻을 기회를 갖게 됩니다." # 3026630730319533358
   RICE_socotra_indian_ocean_legacy_track_name: "해상 무역" # 17418942655208309308
   RICE_socotra_indian_ocean_legacy_track_desc: "인도양 무역로에 대한 통제력 확보로 더 큰 부와 영향력을 얻을 수 있습니다." # 3171849581766584448
   RICE_socotra_indian_ocean_legacy_1_name: "동방 귀족" # 18409544196705439636
@@ -696,3 +808,327 @@
   socotra.0099.t: "xxxxx" # 1951045980481827005
   socotra.0099.desc: "xxxxx" # 1951045980481827005
   socotra.0099.a: "xxxxx" # 1951045980481827005
+  socotra.0100.t: "이방인들" # 17380338001655090164
+  socotra.0100.desc: "얼마 전, 무시무시한 배를 타고 무장한 채로 외국인 침략자들이 [GetTitleByKey('c_socotra').GetNameNoTier]의 해안에 도착했습니다. 우리 백성들은 두려움에 떨며 내륙으로 물러났습니다. \n\n섬의 족장 중 한 명으로서, 저는 홀로 있던 외국인 여성과 남성 한 명을 붙잡아 직접 나섰습니다. 저는 그들을 동굴로 데려가 양 한 마리와 함께 여성을 양탄자 안에 숨기고 양을 찔러 죽인 뒤, 그 양의 생고기 조각을 먹고 그 피를 남자 앞에서 제 몸에 문지르며 그 여자가 꽤 맛있었다고 주장했습니다.\n\n저는 그가 도망치도록 일부러 놓아주었고, 그는 동료들에게 달려가 우리 섬이 마법을 쓰는 식인종들로 가득 차 있다고 떠벌렸습니다. 그 외국인들은 다시는 돌아오지 않았는데, 이는 자신이 마법의 힘을 가졌다고 주장하며 나의 교활한 계략이 자신에게 존경심을 안겨주었다고 인정한 그 여성의 심기를 건드렸습니다. 제가 그 여성에게서 얻은 정보에 따르면, 이 침략자들은...." # 15414599794583985495
+  socotra.0100.a: "프랑크족, 아마도 길을 잃은 십자군" # 4057311233753737661
+  socotra.0100.b: "로마인들, 그들은 다른 방식으로 신을 숭배하지" # 4757516845424242784
+  socotra.0100.c: "페르시아인들, 그들은 종종 이 바다에서 무역을 하오" # 14021895989549700060
+  socotra.0100.d: "인도인들, 우리 섬을 은신처로 자주 이용하는 해적들" # 13583699545821727353
+  socotra.0100.e: "아프리카인들, 여기서 멀리 떨어진 항구 도시의 선원들" # 18079229890527847957
+  socotra.0101.t: "소코트라의 미래" # 6325322813268980262
+  socotra.0101.desc: "어쨌든, 그들의 여자인 [rahabhan_wife.GetFirstName]을 제외하고 침략자들은 해안에서 사라졌습니다. 저는 그녀를 제 아내로 맞이했습니다. 저는 그녀의 의도에 대해 확신하지 못하고 그녀의 마법 능력이 실제로 존재하는지도 모르겠지만, 그녀는 도움이 된다는 것이 증명되었고 심지어 아들까지 낳았습니다... 비록 이상하게도 그는 갓난아기로는 커 보이지만요.\n\n외국인들이 해안에서 사라졌으니, 이제 저는 우리 씨족의 힘을 키우는 데 집중할 수 있습니다. 외부인들에 대한 저의 승리와, 이상하지만 강력한 아내를 곁에 둔 덕분에 저는 이 지역에서 일종의 영웅이 되었습니다. 어쩌면 이것을 제 이점으로 활용할 수 있을지도 모르겠군요...." # 15078452715997795082
+  socotra.0101.a: "우리의 사랑하는 섬에 영광스러운 미래가 기다리고 있도다!" # 1534008513260039130
+  socotra.0101.info: "#emphasis 역사적 배경:#! 라하반은 소코트라의 민중 영웅으로, 이전 이벤트에서 언급된 일화처럼 유럽 침략자들을 몰아내고 그들 중 한 여인과 결혼했다고 전해집니다. 한 학자는 이 전설이 유럽 식민주의보다 앞선 시기의 것이며, 소코트라가 수 세기 동안 여러 다른 민족에게 정착되거나 공격당했음을 고려할 때 구 버전에서는 유럽인이 아닌 다른 적들이 등장했을 수도 있다고 주장합니다. 또 다른 전설에 따르면, 그의 아들 헤게는 비만이었음에도 불구하고 민첩성과 건장함을 증명하여 아버지의 후계자가 될 자격이 있음을 입증했다고 합니다. 라하반은 그의 이방인 아내가 마법으로 돕고자 노력했음에도 불구하고, 경쟁 관계에 있던 소코트라 부족과의 전투에서 사망했다고 전해집니다." # 2451004255924808662
+  socotra.0102.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
+  socotra.0102.desc: "외부인들에게 소코트라 섬은 신비로운 나무와 전설적이고 무시무시한 마법사들 및 해적들의 땅으로 알려져 있습니다. 하지만 우리 섬 주민들에게 용혈의 섬은 그저 고향일 뿐입니다.\n\n이 섬에 흩어져 살고 있는 수많은 부족들은 이제 섬 내륙의 강인한 목축민들부터 좀 더 혼합적이고 국제적인 해안 거주민들에 이르기까지, 우리 [ROOT.Char.GetDynasty.GetName] 가문의 우위와 영향력을 인정하고 있습니다. 우리는 힘과 부, 그리고 행운을 통해 우리의 영향력을 확장해 왔습니다. 물론 저와 제 아내가 전통적인 마법을 통해 가져온 기술들도 도움이 되었지요.\n\n앞으로 우리에게 어떤 일이 닥치든, 제 업적이 앞으로 수 세기 동안 소코트라 사람들의 전설이 될 것이라고 생각하니 기쁩니다...." # 1685547287030637372
+  socotra.0102.a: "아직 해야 할 일이 많습니다." # 13857817310772162753
+  socotra.0103.t: "xxxxx" # 1951045980481827005
+  socotra.0103.desc: "xxxxx" # 1951045980481827005
+  socotra.0103.a: "xxxxx" # 1951045980481827005
+  socotra.0104.t: "xxxxx" # 1951045980481827005
+  socotra.0104.desc: "xxxxx" # 1951045980481827005
+  socotra.0104.a: "xxxxx" # 1951045980481827005
+  socotra.0105.t: "xxxxx" # 1951045980481827005
+  socotra.0105.desc: "xxxxx" # 1951045980481827005
+  socotra.0105.a: "xxxxx" # 1951045980481827005
+  socotra.0106.t: "xxxxx" # 1951045980481827005
+  socotra.0106.desc: "xxxxx" # 1951045980481827005
+  socotra.0106.a: "xxxxx" # 1951045980481827005
+  socotra.0107.t: "xxxxx" # 1951045980481827005
+  socotra.0107.desc: "xxxxx" # 1951045980481827005
+  socotra.0107.a: "xxxxx" # 1951045980481827005
+  socotra.0108.t: "xxxxx" # 1951045980481827005
+  socotra.0108.desc: "xxxxx" # 1951045980481827005
+  socotra.0108.a: "xxxxx" # 1951045980481827005
+  socotra.0109.t: "xxxxx" # 1951045980481827005
+  socotra.0109.desc: "xxxxx" # 1951045980481827005
+  socotra.0109.a: "xxxxx" # 1951045980481827005
+  socotra.0110.intro: "[ROOT.Char.GetCulture.GetCollectiveNoun]의 마법적 관습은 외국인들에게 마땅히 두려움을 사지만, 선을 위한 힘으로 사용될 수도 있습니다. 저 역시 이 주문과 마법에 대해 꽤 알고 있답니다." # 1598325320877152108
+  socotra.0110.t: "[ROOT.Char.GetCulture.GetName] 마법: 일족 회춘" # 5872534020622840325
+  socotra.0110.desc: "$socotra.0110.intro$만약 우리의 [sorcerer.GetDynasty.GetName] 가문이 이 험난한 세상에서 살아남으려면, 약간의 마법이 언제나 승리를 보장해주진 않겠지만 우리의 목표 달성에 큰 도움이 될 것이다.\n\n나는 적절한 마법을 준비하고 내 가문을 어떻게 강화할지 방법을 찾아봐야겠다." # 4359725095558286159
+  socotra.0110.a: "힘을 부여하라" # 8183617689945443141
+  socotra.0110.b: "지혜를 부여하라" # 17841830708932179875
+  socotra.0110.c: "행운 부여" # 7289299585427308105
+  socotra.0110.strong: "그 마법은 #Bold 강력한#! 효과를 지니고 있습니다." # 13984576661398896978
+  socotra.0110.normal: "마법은 #Bold 일반#! 효과를 지닙니다." # 12878437850913966421
+  socotra.0110.weak: "그 마법은 #Bold 약화#! 효과를 지니고 있습니다" # 18040846900356680843
+  socotra.0111.t: "[ROOT.Char.GetCulture.GetName] 마법: 적 약화시키기" # 2757135494942360657
+  socotra.0111.desc: "$socotra.0110.intro$나를 죽이거나, 적어도 해치려는 자들이 있소. 물리적인 수단으로든, 그렇지 않은 수단으로든 말이오. 비록 마법이 적들의 계략으로부터 나와 내 부하들을 지키는 데 완벽한 방법은 아닐지라도, #italic 도움이 될 수는 있소#!.\n\n적들이 감히 나를 공격하려 든다면, 그들의 날카로운 칼날, 배신적인 말, 그리고 사악한 마법에 맞서기 위한 적절한 마법 의식을 준비할 것이오." # 6807098959842440181
+  socotra.0111.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0111.strong: "$socotra.0110.strong$" # 1802595977018510074
+  socotra.0111.normal: "$socotra.0110.normal$" # 4061361847330848616
+  socotra.0111.weak: "$socotra.0110.weak$" # 589764148270593939
+  socotra.0112.t: "[ROOT.Char.GetCulture.GetName] 마법: 물을 기원하기" # 3899173892760798357
+  socotra.0112.desc: "$socotra.0110.intro$모두가 갈증을 해소하고 작물과 가축을 기르는 데 물이 얼마나 중요한지 알고 있습니다. 마법의 가장 위대하고 오래된 용도 중 하나는 비, 우물, 기타 지하수원을 통해 이 물이 오고 계속 오도록 보장하는 것입니다.\n\n저는 [ROOT.Char.GetFaith.HighGodName]께서 제 기도를 들어주시고 제 영토가 번성하는 데 필요한 물을 내려주시도록 마법을 행할 준비가 되었습니다." # 14669851632388959279
+  socotra.0112.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0112.strong: "$socotra.0110.strong$" # 1802595977018510074
+  socotra.0112.normal: "$socotra.0110.normal$" # 4061361847330848616
+  socotra.0112.weak: "$socotra.0110.weak$" # 589764148270593939
+  socotra.0113.t: "[ROOT.Char.GetCulture.GetName] 마법: 해안 방벽 구축" # 14348692246456575118
+  socotra.0113.desc: "$socotra.0110.intro$우리의 마법 능력에 대한 이야기가 [Glossary( 'Seven Seas', 'SEVEN_SEAS_GLOSS' )] 전역에서 두려움 속에 속삭여지고 있으며, 이 이야기들 중 다수는 우리가 날씨를 바꾸고, 섬과 해안선을 사라지게 하며, 침입자들의 무리에 마법 공격을 퍼부어 우리 해안에 도달하는 외국인 침입자들을 혼란에 빠뜨리는 능력에 관한 것입니다.$k_socotra$의 해안을 지키는 데 필요한 마법을 시전할 준비가 되었습니다." # 9056465843190467319
+  socotra.0113.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0113.strong: "$socotra.0110.strong$" # 1802595977018510074
+  socotra.0113.normal: "$socotra.0110.normal$" # 4061361847330848616
+  socotra.0113.weak: "$socotra.0110.weak$" # 589764148270593939
+  socotra.0114.t: "[ROOT.Char.GetCulture.GetName] 마법: 선박 축복" # 8321357315420600209
+  socotra.0114.desc: "$socotra.0110.intro$우리 항구에 도착하는 우호적인 선박들은 대개 시간이 흘러 잊힌 전통 의식으로 환영받습니다. 이는 [ROOT.Char.GetFaith.HighGodName]께 무사히 도착했음에 감사드리고 지속적인 보호를 기원하기 위함입니다.\n\n어선이든 무역선이든 해안을 지키는 군함이든, 이러한 선박들은 마법적인 의식을 통해 보호받을 수 있습니다." # 17416746304371707566
+  socotra.0114.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0114.strong: "$socotra.0110.strong$" # 1802595977018510074
+  socotra.0114.normal: "$socotra.0110.normal$" # 4061361847330848616
+  socotra.0114.weak: "$socotra.0110.weak$" # 589764148270593939
+  socotra.0115.t: "xxxxx" # 1951045980481827005
+  socotra.0115.desc: "xxxxx" # 1951045980481827005
+  socotra.0115.a: "xxxxx" # 1951045980481827005
+  socotra.0116.t: "xxxxx" # 1951045980481827005
+  socotra.0116.desc: "xxxxx" # 1951045980481827005
+  socotra.0116.a: "xxxxx" # 1951045980481827005
+  socotra.0117.t: "xxxxx" # 1951045980481827005
+  socotra.0117.desc: "xxxxx" # 1951045980481827005
+  socotra.0117.a: "xxxxx" # 1951045980481827005
+  socotra.0118.t: "xxxxx" # 1951045980481827005
+  socotra.0118.desc: "xxxxx" # 1951045980481827005
+  socotra.0118.a: "xxxxx" # 1951045980481827005
+  socotra.0119.t: "xxxxx" # 1951045980481827005
+  socotra.0119.desc: "xxxxx" # 1951045980481827005
+  socotra.0119.a: "xxxxx" # 1951045980481827005
+  socotra.0120.t: "[sorcerer.GetCulture.GetNameNoTooltip] 마법: 힘을 부여하다" # 9747614945513073327
+  socotra.0120.desc: "[sorcerer.GetTitledFirstName]께서 [sorcerer.GetCulture.GetLanguage.GetName]의 전통적인 마법 주문과 술법을 사용하여 우리 가문의 구성원들의 힘과 건강을 증진시키려 했습니다. 그가 우리의 결속된 힘으로 인해 [sorcerer.GetDynasty.GetName] 가문의 이익이 증진되기를 바라고 있다는 것은 의심의 여지가 거의 없습니다." # 10232631611857372149
+  socotra.0120.a: "이 마법의 힘이 이 정도라니!" # 8743531342025030546
+  socotra.0121.t: "[sorcerer.GetCulture.GetNameNoTooltip] 마법: 지혜 강화" # 15748999756813766788
+  socotra.0121.desc: "[sorcerer.GetTitledFirstName] 께서는 전통적인 [sorcerer.GetCulture.GetLanguage.GetName] 주술적 주문과 마법을 사용하여 우리 가문의 구성원들의 집단 지식과 신중함을 증진시켰다고 합니다. [sorcerer.GetDynasty.GetName] 가문이 우리의 이익을 추구함에 있어 이 지혜에 의해 신중하게 인도될 것임은 분명합니다." # 8579739756303339547
+  socotra.0121.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0122.t: "[sorcerer.GetCulture.GetNameNoTooltip] 주술: 행운을 강화하다" # 1637501078085155409
+  socotra.0122.desc: "[sorcerer.GetTitledFirstName] 께서는 전통적인 [sorcerer.GetCulture.GetLanguage.GetName] 주술적 주문과 마법을 사용하여 우리 가문의 구성원들의 개인적, 세속적 행운을 증진시켰다고 합니다. 의심할 여지 없이, 이 위험한 세상에서 [sorcerer.GetDynasty.GetName] 가문은 그들의 이익을 보호하기 위해 얻을 수 있는 모든 자원이 필요합니다." # 5263555737633720285
+  socotra.0122.a: "$socotra.0120.a$" # 3513941869349956543
+  socotra.0123.title: "당신의 주술로 축복받은 함선들" # 13304182468968172474
+  socotra.0123.t: "xxxxx" # 1951045980481827005
+  socotra.0123.desc: "xxxxx" # 1951045980481827005
+  socotra.0123.a: "xxxxx" # 1951045980481827005
+  socotra.0124.t: "xxxxx" # 1951045980481827005
+  socotra.0124.desc: "xxxxx" # 1951045980481827005
+  socotra.0124.a: "xxxxx" # 1951045980481827005
+  socotra.0125.t: "xxxxx" # 1951045980481827005
+  socotra.0125.desc: "xxxxx" # 1951045980481827005
+  socotra.0125.a: "xxxxx" # 1951045980481827005
+  socotra.0126.t: "xxxxx" # 1951045980481827005
+  socotra.0126.desc: "xxxxx" # 1951045980481827005
+  socotra.0126.a: "xxxxx" # 1951045980481827005
+  socotra.0127.t: "xxxxx" # 1951045980481827005
+  socotra.0127.desc: "xxxxx" # 1951045980481827005
+  socotra.0127.a: "xxxxx" # 1951045980481827005
+  socotra.0128.t: "xxxxx" # 1951045980481827005
+  socotra.0128.desc: "xxxxx" # 1951045980481827005
+  socotra.0128.a: "xxxxx" # 1951045980481827005
+  socotra.0129.t: "xxxxx" # 1951045980481827005
+  socotra.0129.desc: "xxxxx" # 1951045980481827005
+  socotra.0129.a: "xxxxx\" " # 15308465615999842627
+  socotra.0130.t: "xxxxx" # 1951045980481827005
+  socotra.0130.desc: "xxxxx" # 1951045980481827005
+  socotra.0130.a: "xxxxx" # 1951045980481827005
+  socotra.0131.t: "xxxxx" # 1951045980481827005
+  socotra.0131.desc: "xxxxx" # 1951045980481827005
+  socotra.0131.a: "xxxxx" # 1951045980481827005
+  socotra.0132.t: "xxxxx" # 1951045980481827005
+  socotra.0132.desc: "xxxxx" # 1951045980481827005
+  socotra.0132.a: "xxxxx" # 1951045980481827005
+  socotra.0133.t: "xxxxx" # 1951045980481827005
+  socotra.0133.desc: "xxxxx" # 1951045980481827005
+  socotra.0133.a: "xxxxx" # 1951045980481827005
+  socotra.0134.t: "xxxxx" # 1951045980481827005
+  socotra.0134.desc: "xxxxx" # 1951045980481827005
+  socotra.0134.a: "xxxxx" # 1951045980481827005
+  socotra.0135.t: "xxxxx" # 1951045980481827005
+  socotra.0135.desc: "xxxxx" # 1951045980481827005
+  socotra.0135.a: "xxxxx" # 1951045980481827005
+  socotra.0136.t: "xxxxx" # 1951045980481827005
+  socotra.0136.desc: "xxxxx" # 1951045980481827005
+  socotra.0136.a: "xxxxx" # 1951045980481827005
+  socotra.0137.t: "xxxxx" # 1951045980481827005
+  socotra.0137.desc: "xxxxx" # 1951045980481827005
+  socotra.0137.a: "xxxxx" # 1951045980481827005
+  socotra.0138.t: "xxxxx" # 1951045980481827005
+  socotra.0138.desc: "xxxxx" # 1951045980481827005
+  socotra.0138.a: "xxxxx" # 1951045980481827005
+  socotra.0139.t: "xxxxx" # 1951045980481827005
+  socotra.0139.desc: "xxxxx" # 1951045980481827005
+  socotra.0139.a: "xxxxx" # 1951045980481827005
+  socotra.0140.t: "xxxxx" # 1951045980481827005
+  socotra.0140.desc: "xxxxx" # 1951045980481827005
+  socotra.0140.a: "xxxxx" # 1951045980481827005
+  socotra.0141.t: "xxxxx" # 1951045980481827005
+  socotra.0141.desc: "xxxxx" # 1951045980481827005
+  socotra.0141.a: "xxxxx" # 1951045980481827005
+  socotra.0142.t: "xxxxx" # 1951045980481827005
+  socotra.0142.desc: "xxxxx" # 1951045980481827005
+  socotra.0142.a: "xxxxx" # 1951045980481827005
+  socotra.0143.t: "xxxxx" # 1951045980481827005
+  socotra.0143.desc: "xxxxx" # 1951045980481827005
+  socotra.0143.a: "xxxxx" # 1951045980481827005
+  socotra.0144.t: "xxxxx" # 1951045980481827005
+  socotra.0144.desc: "xxxxx" # 1951045980481827005
+  socotra.0144.a: "xxxxx" # 1951045980481827005
+  socotra.0145.t: "xxxxx" # 1951045980481827005
+  socotra.0145.desc: "xxxxx" # 1951045980481827005
+  socotra.0145.a: "xxxxx" # 1951045980481827005
+  socotra.0146.t: "xxxxx" # 1951045980481827005
+  socotra.0146.desc: "xxxxx" # 1951045980481827005
+  socotra.0146.a: "xxxxx" # 1951045980481827005
+  socotra.0147.t: "xxxxx" # 1951045980481827005
+  socotra.0147.desc: "xxxxx" # 1951045980481827005
+  socotra.0147.a: "xxxxx" # 1951045980481827005
+  socotra.0148.t: "xxxxx" # 1951045980481827005
+  socotra.0148.desc: "xxxxx" # 1951045980481827005
+  socotra.0148.a: "xxxxx" # 1951045980481827005
+  socotra.0149.t: "xxxxx" # 1951045980481827005
+  socotra.0149.desc: "xxxxx" # 1951045980481827005
+  socotra.0149.a: "xxxxx" # 1951045980481827005
+  socotra.0150.t: "xxxxx" # 1951045980481827005
+  socotra.0150.desc: "xxxxx" # 1951045980481827005
+  socotra.0150.a: "xxxxx" # 1951045980481827005
+  socotra.0151.t: "xxxxx" # 1951045980481827005
+  socotra.0151.desc: "xxxxx" # 1951045980481827005
+  socotra.0151.a: "xxxxx" # 1951045980481827005
+  socotra.0152.t: "xxxxx" # 1951045980481827005
+  socotra.0152.desc: "xxxxx" # 1951045980481827005
+  socotra.0152.a: "xxxxx" # 1951045980481827005
+  socotra.0153.t: "xxxxx" # 1951045980481827005
+  socotra.0153.desc: "xxxxx" # 1951045980481827005
+  socotra.0153.a: "xxxxx" # 1951045980481827005
+  socotra.0154.t: "xxxxx" # 1951045980481827005
+  socotra.0154.desc: "xxxxx" # 1951045980481827005
+  socotra.0154.a: "xxxxx" # 1951045980481827005
+  socotra.0155.t: "xxxxx" # 1951045980481827005
+  socotra.0155.desc: "xxxxx" # 1951045980481827005
+  socotra.0155.a: "xxxxx" # 1951045980481827005
+  socotra.0156.t: "xxxxx" # 1951045980481827005
+  socotra.0156.desc: "xxxxx" # 1951045980481827005
+  socotra.0156.a: "xxxxx" # 1951045980481827005
+  socotra.0157.t: "xxxxx" # 1951045980481827005
+  socotra.0157.desc: "xxxxx" # 1951045980481827005
+  socotra.0157.a: "xxxxx" # 1951045980481827005
+  socotra.0158.t: "xxxxx" # 1951045980481827005
+  socotra.0158.desc: "xxxxx" # 1951045980481827005
+  socotra.0158.a: "xxxxx" # 1951045980481827005
+  socotra.0159.t: "xxxxx" # 1951045980481827005
+  socotra.0159.desc: "xxxxx" # 1951045980481827005
+  socotra.0159.a: "xxxxx" # 1951045980481827005
+  socotra.0160.t: "xxxxx" # 1951045980481827005
+  socotra.0160.desc: "xxxxx" # 1951045980481827005
+  socotra.0160.a: "xxxxx" # 1951045980481827005
+  socotra.0161.t: "xxxxx" # 1951045980481827005
+  socotra.0161.desc: "xxxxx" # 1951045980481827005
+  socotra.0161.a: "xxxxx" # 1951045980481827005
+  socotra.0162.t: "xxxxx" # 1951045980481827005
+  socotra.0162.desc: "xxxxx" # 1951045980481827005
+  socotra.0162.a: "xxxxx" # 1951045980481827005
+  socotra.0163.t: "xxxxx" # 1951045980481827005
+  socotra.0163.desc: "xxxxx" # 1951045980481827005
+  socotra.0163.a: "xxxxx" # 1951045980481827005
+  socotra.0164.t: "xxxxx" # 1951045980481827005
+  socotra.0164.desc: "xxxxx" # 1951045980481827005
+  socotra.0164.a: "xxxxx" # 1951045980481827005
+  socotra.0165.t: "xxxxx" # 1951045980481827005
+  socotra.0165.desc: "xxxxx" # 1951045980481827005
+  socotra.0165.a: "xxxxx" # 1951045980481827005
+  socotra.0166.t: "xxxxx" # 1951045980481827005
+  socotra.0166.desc: "xxxxx" # 1951045980481827005
+  socotra.0166.a: "xxxxx" # 1951045980481827005
+  socotra.0167.t: "xxxxx" # 1951045980481827005
+  socotra.0167.desc: "xxxxx" # 1951045980481827005
+  socotra.0167.a: "xxxxx" # 1951045980481827005
+  socotra.0168.t: "xxxxx" # 1951045980481827005
+  socotra.0168.desc: "xxxxx" # 1951045980481827005
+  socotra.0168.a: "xxxxx" # 1951045980481827005
+  socotra.0169.t: "xxxxx" # 1951045980481827005
+  socotra.0169.desc: "xxxxx" # 1951045980481827005
+  socotra.0169.a: "xxxxx" # 1951045980481827005
+  socotra.0170.t: "xxxxx" # 1951045980481827005
+  socotra.0170.desc: "xxxxx" # 1951045980481827005
+  socotra.0170.a: "xxxxx" # 1951045980481827005
+  socotra.0171.t: "xxxxx" # 1951045980481827005
+  socotra.0171.desc: "xxxxx" # 1951045980481827005
+  socotra.0171.a: "xxxxx" # 1951045980481827005
+  socotra.0172.t: "xxxxx" # 1951045980481827005
+  socotra.0172.desc: "xxxxx" # 1951045980481827005
+  socotra.0172.a: "xxxxx" # 1951045980481827005
+  socotra.0173.t: "xxxxx" # 1951045980481827005
+  socotra.0173.desc: "xxxxx" # 1951045980481827005
+  socotra.0173.a: "xxxxx" # 1951045980481827005
+  socotra.0174.t: "xxxxx" # 1951045980481827005
+  socotra.0174.desc: "xxxxx" # 1951045980481827005
+  socotra.0174.a: "xxxxx" # 1951045980481827005
+  socotra.0175.t: "xxxxx" # 1951045980481827005
+  socotra.0175.desc: "xxxxx" # 1951045980481827005
+  socotra.0175.a: "xxxxx" # 1951045980481827005
+  socotra.0176.t: "xxxxx" # 1951045980481827005
+  socotra.0176.desc: "xxxxx" # 1951045980481827005
+  socotra.0176.a: "xxxxx" # 1951045980481827005
+  socotra.0177.t: "xxxxx" # 1951045980481827005
+  socotra.0177.desc: "xxxxx" # 1951045980481827005
+  socotra.0177.a: "xxxxx" # 1951045980481827005
+  socotra.0178.t: "xxxxx" # 1951045980481827005
+  socotra.0178.desc: "xxxxx" # 1951045980481827005
+  socotra.0178.a: "xxxxx" # 1951045980481827005
+  socotra.0179.t: "xxxxx" # 1951045980481827005
+  socotra.0179.desc: "xxxxx" # 1951045980481827005
+  socotra.0179.a: "xxxxx" # 1951045980481827005
+  socotra.0180.t: "xxxxx" # 1951045980481827005
+  socotra.0180.desc: "xxxxx" # 1951045980481827005
+  socotra.0180.a: "xxxxx" # 1951045980481827005
+  socotra.0181.t: "xxxxx" # 1951045980481827005
+  socotra.0181.desc: "xxxxx" # 1951045980481827005
+  socotra.0181.a: "xxxxx" # 1951045980481827005
+  socotra.0182.t: "xxxxx" # 1951045980481827005
+  socotra.0182.desc: "xxxxx" # 1951045980481827005
+  socotra.0182.a: "xxxxx" # 1951045980481827005
+  socotra.0183.t: "xxxxx" # 1951045980481827005
+  socotra.0183.desc: "xxxxx" # 1951045980481827005
+  socotra.0183.a: "xxxxx" # 1951045980481827005
+  socotra.0184.t: "xxxxx" # 1951045980481827005
+  socotra.0184.desc: "xxxxx" # 1951045980481827005
+  socotra.0184.a: "xxxxx" # 1951045980481827005
+  socotra.0185.t: "xxxxx" # 1951045980481827005
+  socotra.0185.desc: "xxxxx" # 1951045980481827005
+  socotra.0185.a: "xxxxx" # 1951045980481827005
+  socotra.0186.t: "xxxxx" # 1951045980481827005
+  socotra.0186.desc: "xxxxx" # 1951045980481827005
+  socotra.0186.a: "xxxxx" # 1951045980481827005
+  socotra.0187.t: "xxxxx" # 1951045980481827005
+  socotra.0187.desc: "xxxxx" # 1951045980481827005
+  socotra.0187.a: "xxxxx" # 1951045980481827005
+  socotra.0188.t: "xxxxx" # 1951045980481827005
+  socotra.0188.desc: "xxxxx" # 1951045980481827005
+  socotra.0188.a: "xxxxx" # 1951045980481827005
+  socotra.0189.t: "xxxxx" # 1951045980481827005
+  socotra.0189.desc: "xxxxx" # 1951045980481827005
+  socotra.0189.a: "xxxxx" # 1951045980481827005
+  socotra.0190.t: "xxxxx" # 1951045980481827005
+  socotra.0190.desc: "xxxxx" # 1951045980481827005
+  socotra.0190.a: "xxxxx" # 1951045980481827005
+  socotra.0191.t: "xxxxx" # 1951045980481827005
+  socotra.0191.desc: "xxxxx" # 1951045980481827005
+  socotra.0191.a: "xxxxx" # 1951045980481827005
+  socotra.0192.t: "xxxxx" # 1951045980481827005
+  socotra.0192.desc: "xxxxx" # 1951045980481827005
+  socotra.0192.a: "xxxxx" # 1951045980481827005
+  socotra.0193.t: "xxxxx" # 1951045980481827005
+  socotra.0193.desc: "xxxxx" # 1951045980481827005
+  socotra.0193.a: "xxxxx" # 1951045980481827005
+  socotra.0194.t: "xxxxx" # 1951045980481827005
+  socotra.0194.desc: "xxxxx" # 1951045980481827005
+  socotra.0194.a: "xxxxx" # 1951045980481827005
+  socotra.0195.t: "xxxxx" # 1951045980481827005
+  socotra.0195.desc: "xxxxx" # 1951045980481827005
+  socotra.0195.a: "xxxxx" # 1951045980481827005
+  socotra.0196.t: "xxxxx" # 1951045980481827005
+  socotra.0196.desc: "xxxxx" # 1951045980481827005
+  socotra.0196.a: "xxxxx" # 1951045980481827005
+  socotra.0197.t: "xxxxx" # 1951045980481827005
+  socotra.0197.desc: "xxxxx" # 1951045980481827005
+  socotra.0197.a: "xxxxx" # 1951045980481827005
+  socotra.0198.t: "xxxxx" # 1951045980481827005
+  socotra.0198.desc: "xxxxx" # 1951045980481827005
+  socotra.0198.a: "xxxxx" # 1951045980481827005
+  socotra.0199.t: "xxxxx" # 1951045980481827005
+  socotra.0199.desc: "xxxxx" # 1951045980481827005
+  socotra.0199.a: "xxxxx" # 1951045980481827005

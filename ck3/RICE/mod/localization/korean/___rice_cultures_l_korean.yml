@@ -118,7 +118,7 @@
   tradition_RICE_music_practice_name: "음악 연주자와 감상자" # 13899867034921102573
   tradition_RICE_music_practice_desc: "#F 이 문화권은 자신의 음악적 능력이 어떻든 간에, 개인적인 소양 함양이나 지위 획득을 위해 고전 악기 연주를 정기적으로 하는 것을 중요하게 여깁니다. 반대로, 이 문화권의 젊은이들은 레이브 파티에 가서 EDM 음악을 듣는 것을 즐기는 경향이 있습니다. (이 문화권의 구성원들은 이상하게도 완벽한 음감을 가질 확률이 더 높은 경향도 있습니다.)#!" # 15875935962343913372
   culture_parameter_unlock_rice_edm_raves: "[decision|E] EDM 레이브 참석과 [interaction|E] 레이브 베이에게 함께 가자고 요청하기를 해금합니다." # 33608397400472761
-  culture_parameter_unlock_rice_music_practice: "악기 연습 [decision|E]을 활성화하여 잠재적으로 [GetTrait('lifestyle_poet').GetName( GetPlayer )] [trait|E]을 획득합니다."
+  culture_parameter_unlock_rice_music_practice: "악기 연습 [decision|E]을 활성화하고 잠재적으로 [GetTrait('lifestyle_poet').GetName( GetNullCharacter )] [trait|E]을 얻습니다." # 639922132016679039
   culture_parameter_unlock_rice_boba_drink: "[decision|E] 버블티 마시기를 해금하여 [stress|E]를 줄이거나 다른 이들과 교류할 수 있습니다." # 6853181182607876531
   culture_parameter_unlock_rice_kevin_nguyen_abg: "AGB 또는 케빈 응우옌이 되기 위한 [decisions|E]와 케빈 또는 ABG [cultures|E]를 형성하는 [decisions|E]를 해금합니다." # 16804119281105206386
   tradition_RICE_kala_settlements_name: "칼라 정착지" # 18240235196374882638
@@ -290,6 +290,16 @@
   culture_parameter_unlock_rice_butter_interaction: "#bold $RICE_mayo_butter_interaction$#! [interaction|E] 잠금 해제" # 3641915488149132626
   culture_parameter_unlock_rice_gaelicization_mechanic: "[capital|E] 또는 [domicile|E]이 이 [culture|E]의 [counties|E]에 있는 [rulers|E]는 #bold $RICE_embrace_gaelicization$#! [decision|E]을 내릴 수 있음" # 13978636473084095522
   culture_parameter_unlock_rice_bog_butter_bonus_prestige: "$RICE_butter_decision_bonus$" # 6386361386936247460
+  tradition_RICE_sorcerous_corsairs_name: "#bold#소르세러스 코르세어스#bold#!" # 3407978916146109282
+  tradition_RICE_sorcerous_corsairs_desc: "#F 외국인들은 이 문화의 사람들과 땅을 두려움 속에서 바라보며, 그들이 강력한 마법사이자 자신들의 고향인 섬과 해안을 지키기 위해서라면 무엇이든 하는 무자비한 해적이라고 속삭입니다.#!" # 4679501581612447938
+  culture_parameter_unlock_rice_insular_sorcery_decision: "고유한 [RICE_socotra_sorcery|E] 메커니즘을 잠금 해제합니다. 여기에는 #V $RICE_socotra_cast_insular_sorcery$#! [decision|E]와 [GetTrait('RICE_socotra_sorcerer').GetName( GetNullCharacter )] [trait|E]가 포함됩니다." # 1098934458902513952
+  culture_parameter_unlock_rice_moon_sacrifice_decision: "[decision|E]을 활성화하여 #V $RICE_socotra_moon_sacrifice$#!" # 14441980021328199281
+  culture_parameter_unlock_rice_enables_pirate_options_by_default: "#V $RICE_pirate_indian_ocean_decision$#! 에 대한 모든 [decision|E] 옵션은 먼저 관계를 수립할 필요가 없습니다" # 7591975317655933191
+  tradition_RICE_honorable_marauders_name: "#Bold# #Italic# #Bold 명예로운 약탈자들#\n" # 10864221937720013532
+  tradition_RICE_honorable_marauders_desc: "#F 고대부터 이 문화의 이웃들은 그들의 빠르고 잔혹한 습격을 두려워해 왔다. 그럼에도 불구하고 이 문화는 전쟁을 수행할 때조차도 환대, 대화, 자제력을 강조하는 엄격한 행동 강령인 [Glossary( 'salif', 'SALIF_GLOSS' )]을 고수한다.#!" # 15497761380783507368
+  culture_parameter_unlock_rice_sycamore_tree_decision: "[decision|E]을 #V $RICE_south_ethiopia_pray_to_a_sycamore_tree$#!을 활성화합니다!" # 10417772061926518001
+  tradition_RICE_toloka_name: "톨로카" # 1791159532197536767
+  tradition_RICE_toloka_desc: "#F 이 문화는 마을 사람들이 집을 짓거나 작물을 수확하는 것과 같은 중요한 노력에 서로 돕는 상호적이고 공동체적인 노동의 전통을 가지고 있습니다. 노동이 끝나면 도움을 받은 주요 수혜자는 잔치를 베풀어 모두에게 감사를 표합니다.#!" # 13658582161193455804
   culture_parameter_unlock_maa_guanche_warrior: "[men_at_arms|E]로 [GetMaA('guanche_warrior').GetName]을 징집할 수 있습니다." # 5577205177325801307
   tradition_guanche_warrior_name: "치치키퀴초" # 15979354436935695300
   tradition_guanche_warrior_desc: "#F 치치키퀴초는 과란체족의 전사 계급을 형성했습니다. 투척과 협곡 매복에 능하며 경장갑이지만 숙련된 교전병입니다. 치치키퀴초는 자신들의 섬의 구릉 및 산악 지형을 목숨 걸고 방어할 것입니다.#!" # 11008193849402200922
@@ -6109,3 +6119,34 @@
   dynn_Puned: "푸네드" # 2537988172136766657
   dynn_Sangay: "상가이" # 6539518629411481865
   dynn_Selub: "셀루브" # 14112311269278288074
+  Adabog: "아다보그" # 15684526572957355097
+  Aliksher: "알릭셔" # 8698352594019221877
+  Asparhoni: "아스파르호니" # 12969122307752944977
+  Babura: "바부라" # 2873311292745661117
+  Bangota: "방고타" # 14923855174758685991
+  Bangush: "방구시" # 948023368146857972
+  Bedana: "베다나" # 6290577961099137328
+  Bulasing: "불라싱" # 5801953534922872858
+  Chiu: "치우" # 6188866625494785681
+  Danisht: "다니슈트" # 13815667151517404453
+  Dhondi: "돈디" # 15548236860839865440
+  Dhulla: "둘라" # 15016534789183850011
+  Gaha: "가하" # 2715541275977460768
+  Gilasur: "길라수르" # 13932939055909559320
+  Gordemeo: "고르데메오" # 5533506675430962535
+  Gorghekht: "고르그헥트" # 10956985615552407872
+  Jangashingar: "장가싱가르" # 610188840887738040
+  Khurkash: "쿠르카쉬" # 294181426193903258
+  Kolandy: "콜란디" # 16013032086818434998
+  Komakshai: "코막샤이" # 12331898447193679540
+  Latharuk: "라타룩" # 7105980091051242376
+  Majikdamori: "마지크다모리" # 15590307480882007716
+  Miteravi: "미테라비" # 15079743585509880410
+  Mitrawi: "미트라위" # 14908972909292019266
+  Rajuk: "라죽" # 7802182111694570202
+  Shalak: "샬락" # 5157627401023223218
+  Sharuta: "샤루타" # 16365968233211065105
+  Shurasai: "슈라사이" # 8655163700857314819
+  Sirang: "시랑" # 18057105809214353033
+  Suasai: "수아사이" # 10357576723853669490
+  Wai: "와이" # 8330257928931234713

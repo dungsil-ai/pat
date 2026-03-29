@@ -12,6 +12,30 @@
   nick_RICE_ha_dani_desc: "이 이상한 [CHARACTER.GetWomanMan]은 자신을 단 지파의 후손이라고 주장하는데, 그에 따르면 그들은 아프리카 어딘가에 살고 있다고 합니다. 많은 유대인들이 [CharYourHerHis(CHARACTER)]의 선정적인 이야기를 믿고 있지만, 모두가 그런 것은 아닙니다." # 2311968853655421224
   dynn_RICE_bundar: "분다리드" # 11455433138869729714
   Bundar: "분다르" # 11213572783994519279
+  nick_al_ahwal: "알-아흐왈" # 4110067037108378943
+  nick_me_al_muayyid: "알-무아이얏" # 2809453923736519171
+  RICE_dynn_najahid: "나자흐" # 18200191074454732442
+  RICE_dynn_khaulanite: "카울란" # 523553930013335142
+  RICE_all_khat_courtiers_and_guests: "씹는 카트(khat)를 즐길 만한 모든 [courtiers|E]와 [guests|E]" # 16695623612243087441
+  RICE_opinion_chewed_khat_together: "함께 카트를 씹음" # 138121332253278585
+  Jayyash: "자야쉬" # 2334258617588847120
+  Mu_arik: "무아리크" # 5659792324054238611
+  Najah: "나자흐" # 12479106636896905536
+  adh-Dhakhirah: "아드-다키라" # 3724949580011208570
+  al-Fatik: "알-파티크" # 10920302996498240819
+  Abd_al-Wahid: "압드 알-와히드" # 14871062878839121338
+  rais_mulaib: "라이스 물라이브" # 2595668671049964745
+  RICE_opinion_aborted_coup: "쿠데타 미수" # 11142412616007189014
+  RICE_opinion_prevented_coup: "쿠데타 방지" # 4168142458409104262
+  RICE_opinion_successful_coup: "쿠데타 성공" # 8990137261913943831
+  RICE_red_sea_aspiration_said_jayyash_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetTitleByKey('d_taizz').GetNameNoTier]와 [GetTitleByKey('d_sanaa').GetNameNoTier]가 귀하나 귀하의 형제자매에 의해 [independent|E] [ruler|E]로서 [completely_controlled|E]되어야 함\n$EFFECT_LIST_BULLET$귀하의 [nemesis|E]인 술라이히 가문의 알리가 사망하거나, [titles|E]를 소유하지 않거나, [imprisoned|E] 상태인지 확인하십시오.\n$EFFECT_LIST_BULLET$모든 형제자매가 귀하에게 #bold 최소#! [opinion_i|E] #P 25#! [opinion|E]를 가지도록 하십시오.\n\n#bold 보상#!\n$EFFECT_LIST_BULLET$생존한 형제자매 한 명당 @dynasty_prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [dynasty_prestige|E] 획득\n$EFFECT_LIST_BULLET$ [landed|E] 상태인 경우 @legitimacy_icon! #V [EmptyScope.ScriptValue('medium_legitimacy_gain')]#! [legitimacy|E] 획득\n$EFFECT_LIST_BULLET$귀하와 생존한 형제자매들은 [GetModifier('RICE_red_sea_heirs_of_najah_modifier').GetNameWithTooltip] [character_modifier|E]를 얻습니다.\n$EFFECT_LIST_BULLET$ [landed|E] 상태인 경우 #V 1000#! [special_troops|E], 일부 [men_at_arms|E] 포함, 획득\n\n#bold [historical_aspiration_bonus_objectives|E]#!)\n$EFFECT_LIST_BULLET$술라이히 가문의 알리와 그의 모든 자손을 사망하게 하십시오 (보상: [intrigue_lifestyle|E] [perk|E] 및 @prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [prestige|E] 획득)\n$EFFECT_LIST_BULLET$직접 [GetTitleByKey('c_dahlak').GetNameNoTier]를 소유하십시오 (보상: @gold_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [gold|E] 획득) (아래의 보상과 상호 배타적)\n$EFFECT_LIST_BULLET$ [GetTitleByKey('c_dahlak').GetNameNoTier]를 귀하의 [vassal|E] 또는 [tributary|E]로 두십시오 (보상: [GetTitleByKey('d_taizz').GetNameNoTier]와 [GetTitleByKey('d_sanaa').GetNameNoTier] 내의 모든 [county|E]가 @development_icon! #V [EmptyScope.ScriptValue('RICE_red_sea_al_umari_aspiration_dev_bonus')]#! [development|E] 획득) (위의 보상과 상호 배타적)" # 3667434177175124180
+  RICE_red_sea_historical_aspiration_action_said_jayyash: "#italic 우리의 아버지 나자흐께서는 한때 예멘의 많은 부분을 다스렸으나, 탐욕스러운 술라이히드 가문의 노예 소녀에게 암살당하셨소. 비록 우리가 망명길에 올랐지만, 나와 내 형제들은 언젠가 아버지를 복수하고 우리의 정당한 유산을 되찾을 것이오. #!$RICE_red_sea_aspiration_said_jayyash_desc$" # 15386200616263865388
+  RICE_red_sea_historical_aspiration_modifier_desc_said_jayyash: "[GetModifier('RICE_red_sea_aspiration_conslidate_clan').GetNameWithTooltip]" # 502378786044554241
+  RICE_red_sea_aspiration_avenge_najah: "[RICE_aspiration|E]: 나자흐의 복수 $nick_me_al_muayyid$" # 8685367391763413014
+  RICE_red_sea_aspiration_avenge_najah_desc: "#italic 나자흐께서는 한때 예멘의 많은 부분을 다스렸던 에티오피아 출신 노예였으나, 탐욕스러운 술라이히드 가문의 노예 소녀에게 암살당하셨습니다. 그의 생존한 자녀들은 망명길에 올랐지만, 언젠가 아버지를 복수하고 그들의 정당한 유산을 되찾기를 희망하고 있습니다.#!$RICE_red_sea_aspiration_said_jayyash_desc$\n\n" # 4029652978029099681
+  trait_RICE_khat_addict: "카트 중독자" # 151186356514107030
+  trait_RICE_khat_addict_desc: "이 인물은 끊임없이 카트 잎을 씹고 있는 모습이 발견됩니다. 자극적인 식물이긴 하지만, 이 인물은 정도를 지나쳐 건강을 해치고 있습니다." # 622461608537325972
+  trait_RICE_khat_addict_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]께서는 끊임없이 카트 잎을 씹고 있는 모습이 발견됩니다. 자극적인 식물이긴 하지만, [ROOT.GetCharacter.GetSheHe]께서는 정도를 지나쳐 [ROOT.GetCharacter.GetHerHis] 건강을 해치고 있습니다." # 15446067327793788588
   game_concept_red_sea_ferry: "홍해 연락선" # 6843574945234926184
   game_concept_red_sea_ferries: "홍해 페리" # 7354992881506464868
   game_concept_red_sea_ferry_desc: "#V 아이답#!, #V 수아킨#!, 그리고 #V 제다#!를 따라 홍해에 위치한 여러 속주에는 다양한 보너스를 제공하는 $game_concept_red_sea_ferry$라는 이름의 [special_building|E]가 있습니다. 이 항구들은 홍해를 건너고자 하는 하지 순례자들의 주요 통로 역할을 합니다.\n\n아이답이나 수아킨의 [ruler|E]는 그곳 순례자들에게 #V 세금을 인상#!하는 [decision|E]를 사용할 수도 있습니다. 하지만 그렇게 하는 것에는 부정적인 결과도 따릅니다. 게다가 아이답과 수아킨은 전통적으로 경쟁 관계였기 때문에, 한쪽의 세금 인상은 순례자들의 일부 이동을 다른 도시로 돌리게 될 것입니다." # 2296292410468470336
@@ -76,6 +100,10 @@
   building_RICE_red_sea_al_radrad_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
   building_RICE_red_sea_al_radrad_mines_04: "알-라드라드 광산 단지" # 16026760831214331157
   building_RICE_red_sea_al_radrad_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_RICE_red_sea_walled_city_of_shibam: "시밤의 성벽 도시" # 17004513160779467842
+  building_type_RICE_red_sea_walled_city_of_shibam_desc: "시밤의 흙벽돌 탑들이 하늘 높이 솟아 인상적인 높이에 도달합니다. 이 건물들은 끊임없이 새롭고 신선한 흙을 덧발라 유지해야 하지만, 거주민들에게는 그 외에 훌륭한 방어 구조물이 되어 줍니다." # 10084640721673288712
+  building_RICE_red_sea_walled_city_of_shibam: "$building_type_RICE_red_sea_walled_city_of_shibam$" # 9034261774470790512
+  building_RICE_red_sea_walled_city_of_shibam_desc: "$building_type_RICE_red_sea_walled_city_of_shibam_desc$" # 10700340341033729311
   RICE_red_sea_egypt_textile_industry: "이집트 직물 제조 중심지" # 6776503853799664514
   RICE_red_sea_egypt_textile_industry_desc: "파라오 시대 이래로 직물은 이집트의 주요 수출품이었습니다. 이 장인 정신이 깃든 제품들은 전 세계적으로 수요가 높으며, 종종 지중해와 홍해를 따라 위치한 항구들을 통해 먼 땅으로 운송됩니다." # 5168038972234092577
   RICE_red_sea_is_al_umari: "학자, 상인, 그리고 군벌" # 430830365539811509
@@ -107,6 +135,8 @@
   RICE_red_sea_massawa_mosque_desc: "마사와 정착지에는 모스크가 하나 있는데, 작고 소박하지만 이슬람 신자들에게는 매우 중요한 곳입니다. 이곳은 세상에서 가장 초기에 지어진 모스크 중 하나로 여겨지기 때문입니다. 전설에 따르면, 예언자 무함마드가 박해를 피해 메카를 떠났을 때, 그의 추종자들 중 일부가 마사와로 피신하여 이 모스크를 세웠다고 합니다." # 4613722510576092805
   RICE_red_sea_aspiration_red_sea_riches: "[RICE_aspiration|E]: 홍해의 피를 말려라" # 14294850576923683025
   RICE_red_sea_aspiration_red_sea_riches_desc: "#italic 압바스 왕조의 권력 공백을 이용하고 적들을 잔혹하게 짓밟음으로써, 알-우마리는 동부 사막의 재물로 자신의 금고를 채우고 홍해를 따라 가장 두려운 군벌로 부상하기를 바라고 있습니다.#!$RICE_red_sea_aspiration_al_umari_desc$\n\n" # 7232400784529268187
+  RICE_red_sea_heirs_of_najah_modifier: "나자흐의 후계자들" # 12803561292202490722
+  RICE_red_sea_heirs_of_najah_modifier_desc: "노예 출신 통치자 나자흐 $nick_al_ahwal$의 자식들은 위험하고 도전으로 가득 찬 여정에도 불구하고 아버지의 복수를 성공적으로 완수하고 예멘에서 그의 권력과 영향력의 상당 부분을 되찾았습니다." # 4549281592407600891
   RICE_red_sea_seek_investors_from_aswan: "아스완에서 투자자를 찾으십시오" # 4926535241008582437
   RICE_red_sea_seek_investors_from_aswan_tooltip: "[ruler|E]의 통치자로서, 당신은 와디 알라키의 광산에 투자자를 찾게 될 것입니다." # 10552823139683702194
   RICE_red_sea_seek_investors_from_aswan_effect_tooltip: "아스완에서 와디 알라키 금광 개발을 도울 투자자들을 찾아보겠습니다." # 7768022439908746121
@@ -133,6 +163,12 @@
   RICE_red_sea_organized_the_red_sea_ferries_desc: "하지 순례는 독실한 무슬림에게 위험하지만 중요한 여정입니다. 순례자들을 위해 이 여정을 더 안전하게 만들기 위해, 저와 이 지역의 다른 무슬림 지도자들은 위험천만한 바다를 건너 사람들을 수송할 수 있는 신뢰할 수 있는 [red_sea_ferries|E]에 자금을 지원하는 노력을 조율해야 합니다." # 7165945388065540602
   RICE_red_sea_organized_the_red_sea_ferries_confirm: "이것은 많은 순례자들에게 도움이 될 것입니다, 인샬라!" # 16119780902631134249
   RICE_red_sea_organized_the_red_sea_ferries_context_tooltip: "#emphasis 역사적 배경:#! 중세 시대에 홍해를 건너 메카로 향하거나 메카에서 돌아오는 무슬림 순례자들은 안전하게 여행하기 위해 거쳐갈 수 있는 항구가 몇 군데로 제한적이었습니다. 주로 홍해 서쪽의 수아킨과 아이다브, 그리고 동쪽의 제다였습니다." # 4227643522031504852
+  RICE_red_sea_chew_khat: "츄 캇" # 3688847218672092366
+  RICE_red_sea_chew_khat_tooltip: "카트 씹기는 [stress|E]를 줄이는 한 가지 방법이다...." # 3959931822100047210
+  RICE_red_sea_chew_khat_desc: "좋은 사람들과 함께 카트 잎을 씹는 것은 정말 자극적이지." # 8614143567508891523
+  RICE_red_sea_chew_khat_effect_tooltip_1: "귀하가 [GetTrait('RICE_khat_addict').GetName( GetNullCharacter )|U] [trait|E]를 얻을 작은 가능성이 있습니다. 이 수치는 이 [decision|E]를 사용할 때마다 증가합니다." # 17394396102638958319
+  RICE_red_sea_chew_khat_confirm: "이것이 내 삶에 필요하다!" # 14632698311227789308
+  RICE_red_sea_chew_khat_context_tooltip: "#emphasis 역사적 배경:#! 카트(또는 차트)는 동아프리카와 카트의 원산지인 예멘 일부 지역에서 각성제로 씹는 잎입니다. 수세기 동안 이 지역의 사회 문화에서 중요한 역할을 해왔으며, 중세 시대에 처음으로 기록되었습니다. 하지만 중독성이 있으며 세계보건기구(WHO)에 의해 \"남용 약물\"로 분류됩니다." # 15114006550992447525
   red_sea.0000.t: "xxxxx" # 1951045980481827005
   red_sea.0000.desc: "xxxxx" # 1951045980481827005
   red_sea.0000.a: "xxxxx" # 1951045980481827005
@@ -151,12 +187,13 @@
   red_sea.0004.t: "동료들의 모스크" # 8921772133434868643
   red_sea.0004.desc: "무슬림 세력이 홍해에서 점점 더 강해짐에 따라, [massawa_county.GetNameNoTier]의 많은 무슬림들은 그들의 신앙의 생존이 불확실했던 어렵고 초기 시절을 기억하고 있습니다. 바로 그 시기에 예언자 무함마드의 동료들을 포함한 소수의 무슬림 무리가 이 항구 도시에 피신하여 작은 모스크를 세웠습니다. 어떤 이들은 아직도 서 있는 이 건물이 세상 최초의 모스크라고 주장하기까지 합니다.\n\n어느 쪽이든, 이제 동료들의 모스크로 알려진 이 모스크는 이와 관련된 전설들 때문에 무슬림 세계에서 더 큰 명성과 명성을 얻게 되었습니다. 이는 분명 [massawa_county.GetNameNoTier]가 이 지역에서 누릴 위신에 좋은 징조일 것입니다." # 8976921239656928525
   red_sea.0004.a: "흥미롭군!" # 10192862565275920482
-  red_sea.0005.t: "xxxxx" # 1951045980481827005
-  red_sea.0005.desc: "xxxxx" # 1951045980481827005
-  red_sea.0005.a: "xxxxx" # 1951045980481827005
-  red_sea.0006.t: "xxxxx" # 1951045980481827005
-  red_sea.0006.desc: "xxxxx" # 1951045980481827005
-  red_sea.0006.a: "xxxxx" # 1951045980481827005
+  red_sea.0005.t: "카트 씹기" # 5017934325407357632
+  red_sea.0005.desc: "우리는 나란히 앉아 곁에 #italic 카트#! 잎사귀를 수북이 쌓아둡니다. 잎사귀를 즐겁게 씹으며 즐거운 대화를 나누니, 삶에 대한 행복감과 설렘이 밀려오는군요." # 9678128925495689675
+  red_sea.0005.a: "이 카트 잎사귀는 좋군." # 11810704352300183881
+  red_sea.0006.t: "카트 중독" # 7449974291053577540
+  red_sea.0006.desc: "나는 매일 카트를 씹어왔소.... 세상에 대해 기분 좋게 느끼려면 그것이 필요하오, 삶을 즐길 에너지를 주려면 그것이 필요하오...." # 4661253073664381590
+  red_sea.0006.a: "필요합니다!" # 1775211717169635013
+  red_sea.0006.liege.message: "$red_sea.0006.t$" # 1408605212034056838
   red_sea.0007.t: "xxxxx" # 1951045980481827005
   red_sea.0007.desc: "xxxxx" # 1951045980481827005
   red_sea.0007.a: "xxxxx" # 1951045980481827005
@@ -315,24 +352,27 @@
   red_sea.0049.t: "xxxxx" # 1951045980481827005
   red_sea.0049.desc: "xxxxx" # 1951045980481827005
   red_sea.0049.a: "xxxxx" # 1951045980481827005
-  red_sea.0050.t: "xxxxx" # 1951045980481827005
-  red_sea.0050.desc: "xxxxx"
-  red_sea.0050.a: "xxxxx" # 1951045980481827005
-  red_sea.0051.t: "xxxxx" # 1951045980481827005
-  red_sea.0051.desc: "xxxxx"
-  red_sea.0051.a: "xxxxx"
-  red_sea.0052.t: "xxxxx" # 1951045980481827005
-  red_sea.0052.desc: "xxxxx"
-  red_sea.0052.a: "xxxxx" # 1951045980481827005
-  red_sea.0053.t: "xxxxx" # 1951045980481827005
-  red_sea.0053.desc: "xxxxx"
-  red_sea.0053.a: "xxxxx" # 1951045980481827005
-  red_sea.0054.t: "xxxxx" # 1951045980481827005
-  red_sea.0054.desc: "xxxxx"
-  red_sea.0054.a: "xxxxx" # 1951045980481827005
-  red_sea.0055.t: "xxxxx" # 1951045980481827005
-  red_sea.0055.desc: "xxxxx"
-  red_sea.0055.a: "xxxxx" # 1951045980481827005
+  red_sea.0050.t: "고아가 된 형제자매들" # 12201100751918774284
+  red_sea.0050.desc: "제가 형제들이 [sulayhid.GetFullName]에게 느끼는 증오심은 아무리 강조해도 지나치지 않습니다. 그자는 우리 아버지인 [najah.GetFirstNameNicknamed]를 속여 노예 소녀를 보내 독살하려 했고, 그로 인해 아버지가 [GetTitleByKey('k_yemen').GetNameNoTier]에서 정당하게 다스리던 영토를 빼앗았습니다. 심지어 평소 침착한 편인 제 형 [jayyash.GetFirstName]조차도 수년이 지난 지금까지 격분하고 있습니다.\n\n큰형인 [mu_arik.GetFirstName]은 그 여파로 섣불리 자결하고 말았으니, 어리석기 짝이 없지요! 이제는 영원한 숙적인 [sulayhid.GetDynasty.GetName] 가문을 물리치기 위한 여정에서 형제들을 이끌어야 할 책임이 제게 주어졌습니다. 하지만 우리는 현재 멀리 떨어진 [GetTitleByKey('c_dahlak').GetNameNoTier]의 해안가에서 망명 생활을 하고 있으며, 이곳의 통치자는 과거 저희 아버지에게 공물을 바치던 자로, 당분간 우리에게 망명을 허락해 주었습니다..." # 7046852904215580877
+  red_sea.0050.a: "우리의 다음 행보는 무엇인가?" # 11659251657976109427
+  red_sea.0050.info: "#emphasis 역사적 배경:#! 예멘의 나자히드 왕조는 1018년까지 서부 예멘을 통치했던 지야디드 왕조의 에티오피아 출신 노예 군인이었던 나자흐에 의해 건국되었습니다. 나자흐는 이후의 정치적 혼란을 종식시키고 1060년경까지 통치했으나, 나자흐의 수니파와 달리 시아파였던 그의 술라이히드 경쟁자들에게 암살당했습니다. 나자흐의 맏아들 무아리크가 자살하자, 나자흐의 다른 두 아들인 사이드와 자야시는 도망쳐 현대 에리트레아 연안의 군도인 달락으로 피신했는데, 이곳은 한때 그들의 아버지의 종주권 아래에 있던 곳이었습니다." # 9353374448939225810
+  red_sea.0051.t: "배신인가?" # 15249358373156910901
+  red_sea.0051.desc: "[dahlak_ruler.GetLadyLord]께서 $c_dahlak$의 작위명 없는 이름인 [GetTitleByKey('c_dahlak').GetNameNoTier]에서 우리에게 망명을 허락해 주셨으나, [dahlak_ruler.GetFirstName]께서는 나약한 얼간이에 불과하다. #italic 내가#! 더 나은 통치자가 될 수 있을 텐데! 이 섬 군도는 작은 크기에도 불구하고 경제적, 군사적으로 매우 중요한 요충지이다. 우리가 [sulayhid.GetDynasty.GetName]의 숙적들에게 전쟁을 벌일 때 완벽한 작전 기지가 되어줄 것이다.\n\n나는 뜻을 같이하는 자들을 모아 어리석은 [dahlak_ruler.GetFirstNameNoTooltip]에게 쿠데타를 준비했으나, 내 동생 [jayyash.GetFirstName]이 나를 막으려 했다. [jayyash.GetSheHe|U]는 명예와 아버지의 복수라는 우리의 주요 목표를 잊고 내가 오만해지고 있다며 헛소리를 지껄였다. 이 쿠데타가 그 목표를 달성하기 위한 한 단계라는 것을 그가 깨닫지 못하는가? 그럼에도 불구하고, 우리의 대립 이후...." # 16726015519625032546
+  red_sea.0051.a: "[jayyash.GetFirstNameNoTooltip]가 내 쿠데타 시도를 막아냈다." # 3554646827946315029
+  red_sea.0051.b: "[jayyash.GetFirstNameNoTooltip]가 마지못해 나를 지지하기로 동의했다." # 9237371067749843476
+  red_sea.0051.info: "#emphasis 역사적 배경:#! 달라크 술탄이 베푼 환대에도 불구하고, 사이드는 배신적으로 달라크의 통제권을 장악하려 했습니다. 하지만 그는 사이드보다 더 겸손하고 명예로운 성품으로 알려진 그의 형 자야쉬에 의해 저지당했습니다. 성급하고 거만한 사이드는 분노하여 예멘으로 떠났습니다." # 7087485016498274861
+  red_sea.0052.t: "쿠데타 저지됨" # 16744865439180129515
+  red_sea.0052.desc: "[jayyash.GetFirstName], 이 어리석은 놈! 쯧쯧! 너희 모두 어리석기 짝이 없구나!\n\n우리는 자원 없이는, 병력 없이는, 작전 거점 없이는 적들을 물리칠 수 없다! 비열한 수단을 써서 작은 섬 하나를 차지하는 것이 대수인가? 우리의 최종 목표는 아버지를 복수하는 것으로 여전히 숭고하다!\n\n내 쿠데타가 실패한 후 [jayyash.GetFirstNameNoTooltip]을 쳤어야 했지만, 그는 여전히 나의 형제이고, 단지 명예와 자비라는 헛된 생각에 사로잡혀 있을 뿐이다.\n\n상관없다. 이것은 또 하나의 장애물일 뿐이다. 비록 우리가 또다시 도망자 신세가 되었지만, 나는 아버지를 복수하고 혐오스러운 [sulayhid.GetDynasty.GetName] 가문에 크고 끔찍한 파멸을 가져올 다른 방법을 찾아낼 것이다. 그 약골 [jayyash.GetFirstName]이 다음번 내 계획에 동조해주기만을 바랄 뿐이다...." # 14963603906138510589
+  red_sea.0052.a: "아버지, 반드시 복수하겠습니다!" # 2463476376249878494
+  red_sea.0053.t: "쿠데타 진행" # 13564725167982653670
+  red_sea.0053.desc: "[jayyash.GetFirstName]가 명예와 자비라는 헛된 생각에 사로잡혀 있을지 모르나, 그 역시 우리가 자원, 병력, 작전 거점 없이는 적들을 물리칠 수 없다는 내 주장에 마지못해 동의했다. 비열한 수단을 써서 작은 섬 하나를 차지하는 것이 대수인가? 우리의 최종 목표는 아버지를 복수하는 것으로 여전히 숭고하다!\n\n[dahlak_ruler.GetFirstName]을 [GetTitleByKey('c_dahlak').GetNameNoTier]에서 몰아냄으로써, 나는 이제 이 군도를 장악했다. 이곳의 행정, 군대, 그리고 무역으로 들어오는 부는 모두 한 가지 목적을 위해 사용될 것이다. 바로 아버지를 복수하고 혐오스러운 [sulayhid.GetDynasty.GetName] 가문에 끔찍한 파멸을 가져오는 것이다!\n\n오, [jayyash.GetFirstName], 마음이 여린 약골 같으니, 이 쿠데타가 정당했는지 따위는 걱정하지 마라. 너의 형으로서, 언젠가는 이 모든 것의 지혜를 깨닫게 되리라 믿는다." # 17696437285615389030
+  red_sea.0053.a: "$red_sea.0052.a$" # 10068794376526017536
+  red_sea.0054.t: "$red_sea.0052.t$" # 7018090912523579629
+  red_sea.0054.desc: "[najah.GetFirstNameNicknamed], 내가 섬기던 [GetTitleByKey('k_yemen').GetNameNoTier]의 위대한 통치자가 [sulayhid.GetDynasty.GetName] 가문에 의해 배신당해 암살당했을 때, 나는 자비롭게 그의 자식들에게 망명을 허락했었다.\n\n그의 아들 중 한 명인 [said.GetFirstName]이 스스로 배신을 꾀했다는 사실을 알고 내 마음속에 얼마나 큰 슬픔과 분노가 치미는지! 나에게 감사하고 은혜를 갚는 대신, 그는 쿠데타를 일으켜 나를 전복시키고 [GetTitleByKey('c_dahlak').GetNameNoTier]를 차지하려 했다. 그의 근시안적인 목표는 이 군도를 아버지의 암살자들에 대항하는 작전 거점으로 삼는 것이었다.\n\n나는 [najah.GetFirstNameNoTooltip]을 죽일 수도 있었겠지만, [said.GetFirstNamePossessiveNoTooltip]의 형제인 [jayyash.GetFirstName]이 쿠데타를 막는 데 성공하며 많은 것을 감수했다는 사실 때문에 손을 멈췄다. 나는 [jayyash.GetFirstNameNoTooltip]이 명예로운 인물임을 알고 있으며, 그가 이 어리석은 동생의 열정을 잠재울 수 있을지 궁금하다...." # 12550309827621186002
+  red_sea.0054.a: "내가 너무 자비로운 것 같지만, 그들을 이곳에서 추방하시오." # 16355176251966109124
+  red_sea.0055.t: "$red_sea.0053.t$" # 8021877579584080302
+  red_sea.0055.desc: "[najah.GetFirstNameNicknamed], 내가 섬기던 [GetTitleByKey('k_yemen').GetNameNoTier]의 위대한 통치자가 [sulayhid.GetDynasty.GetName] 가문에 의해 배신당해 암살당했을 때, 나는 자비롭게 그의 자식들에게 망명을 허락했었다.\n\n그의 아들 중 한 명인 [said.GetFirstName]이 스스로 배신에 빠졌다는 사실을 알고 내 마음속에 얼마나 큰 슬픔과 분노가 치미는지! 나에게 감사하고 은혜를 갚는 대신, 그는 나의 적들을 모아 쿠데타를 일으켜 나를 전복시키고 [GetTitleByKey('c_dahlak').GetNameNoTier]를 차지했다. 그의 근시안적인 목표는 이 군도를 아버지의 암살자들에 대항하는 작전 거점으로 삼는 것이었다.\n\n내가 더 명예롭고 분별력이 있다고 생각했던 그의 형제 [jayyash.GetFirstName]마저도 동생에게 설득당해 “마지못해” 지지했다는 소식에 더욱 슬프다. 어쩌면 그가 [said.GetFirstNameNoTooltip]이 나를 죽이지 않고 내버려 두도록 설득했을지도 모른다." # 13403622978472806429
+  red_sea.0055.a: "쯧쯧. 이 비열한 무리들과 더는 엮이고 싶지 않다." # 17357617779410260433
   red_sea.0056.t: "xxxxx" # 1951045980481827005
   red_sea.0056.desc: "xxxxx" # 1951045980481827005
   red_sea.0056.a: "xxxxx" # 1951045980481827005
@@ -345,9 +385,9 @@
   red_sea.0059.t: "xxxxx" # 1951045980481827005
   red_sea.0059.desc: "xxxxx" # 1951045980481827005
   red_sea.0059.a: "xxxxx" # 1951045980481827005
-  red_sea.0060.t: "xxxxx" # 1951045980481827005
-  red_sea.0060.desc: "xxxxx"
-  red_sea.0060.a: "xxxxx" # 1951045980481827005
+  red_sea.0060.t: "$RICE_historical_aspiration_fulfilled_title$" # 6312590152546762382
+  red_sea.0060.desc: "수년이 걸렸지만, 마침내 우리는 우리의 정당한 권리를 되찾았고, [GetTitleByKey('k_yemen').GetNameNoTier]에서 [sulayhid.GetDynasty.GetName] 가문의 세력을 무력화함으로써 사랑하는 아버지 [najah.GetFirstNameNicknamed]의 복수를 어느 정도 이루었다.\n\n명예로운 수단이든 비열한 수단이든, 외교든 전투든, 우리는 오래전에 그것이 가능할 것이라 확신조차 못 했던 무언가를 성취했다. 의심할 여지 없이 [ROOT.Char.GetFaith.HighGodName]께서는 우리와 우리 가문을 총애하신다.\n\n하지만 아직 해야 할 일이 많다! 이 지역은 여전히 수년간의 전쟁과 정치적 혼란으로 고통받고 있다. 우리는 재건해야 할 것이다... 하지만 어떻게 해야 할까?" # 2372276815791889017
+  red_sea.0060.a: "당분간은 아버지가 하늘에서 우리를 보고 미소 짓고 계시리라 믿는다." # 4223846339307468241
   red_sea.0061.t: "xxxxx" # 1951045980481827005
   red_sea.0061.desc: "xxxxx" # 1951045980481827005
   red_sea.0061.a: "xxxxx" # 1951045980481827005
