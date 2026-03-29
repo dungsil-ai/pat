@@ -277,22 +277,24 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       const expectedKoreanFiles: string[] = []
       
       for (const file of sourceFiles) {
-        if (etcSubMod && !file.startsWith(`${etcSubMod}/`)) {
+        const normalizedFile = file.replace(/\\/g, '/')
+
+        if (etcSubMod && !normalizedFile.startsWith(`${etcSubMod}/`)) {
           continue
         }
         // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
-        if (file.endsWith(`.yml`) && file.includes(`_l_${meta.upstream.language}`)) {
-          const sourcePath = join(sourceDir, file)
+        if (normalizedFile.endsWith(`.yml`) && normalizedFile.includes(`_l_${meta.upstream.language}`)) {
+          const sourcePath = join(sourceDir, normalizedFile)
           const sourceContent = await readFile(sourcePath, 'utf-8')
           const sourceFileHash = hashing(sourceContent)
-          const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')
+          const sourceRelativePath = join(locPath, normalizedFile).replace(/\\/g, '/')
           currentSourcePaths.add(sourceRelativePath)
           const previousFileHash = savedFileHashes[sourceRelativePath]
 
           if (!onlyHash && previousFileHash === sourceFileHash) {
-            log.debug(`[${mod}/${file}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
+            log.debug(`[${mod}/${normalizedFile}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
           } else {
-            processes.push(processLanguageFile(mod, sourceDir, targetDir, file, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
+            processes.push(processLanguageFile(mod, sourceDir, targetDir, normalizedFile, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
           }
 
           if (nextFileHashes[sourceRelativePath] !== sourceFileHash) {
@@ -300,8 +302,8 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
             hasHashChanges = true
           }
           // 처리될 한국어 파일 경로 추적
-          const targetParentDir = join(targetDir, dirname(file))
-          const targetFileName = '___' + basename(file).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
+          const targetParentDir = join(targetDir, dirname(normalizedFile))
+          const targetFileName = '___' + basename(normalizedFile).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
           expectedKoreanFiles.push(join(targetParentDir, targetFileName))
         }
       }
