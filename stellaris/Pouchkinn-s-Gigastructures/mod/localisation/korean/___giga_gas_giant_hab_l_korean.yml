@@ -32,13 +32,13 @@
   job_giga_gas_extraction_manager_plural: "특수 가스 추출 관리자들" # 11462241424064749460
   job_giga_gas_extraction_manager_desc: "풍부한 대기 또는 다른 이국적인 환경 특성으로 인해 이 행정관들은 우리의 $job_technician_plural$가 이 자원들을 최대로 개발하도록 보장합니다." # 13709432611723388156
   job_giga_gas_extraction_manager_effect_desc: "£job_giga_gas_extraction_manager£ $job_giga_gas_extraction_manager_plural$는 £exotic_gases£ §Y$exotic_gases$§!를 채취하고 £job_technician£ §Y$job_technician_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산을 제공합니다." # 7800938091760667624
-  mod_job_giga_gas_extraction_manager_add: "$job_giga_gas_extraction_manager$ 일자리" # 17284028634152829172
-  mod_job_giga_gas_extraction_manager_per_pop: "§G+1§! 팝당 §Y$VALUE$§! $job_giga_gas_extraction_manager$ 직책" # 4832606834358032451
+  mod_job_giga_gas_extraction_manager_add: "$job_giga_gas_extraction_manager$ 일자리"
+  mod_job_giga_gas_extraction_manager_per_pop: "§G+1§! 팝당 §Y$VALUE$§! $job_giga_gas_extraction_manager$ 직책"
   mod_job_giga_gas_extraction_manager_per_pop_short: "§G+1§! £mod_job_giga_gas_extraction_manager_add£당 §Y$VALUE$§! £pop£" # 14751402272505335152
   job_giga_gas_extraction_manager_drone: "이색 가스 추출 관리 클러스터" # 3867218797353502284
   job_giga_gas_extraction_manager_drone_plural: "이국적 가스 추출 관리 클러스터" # 12659113990457149922
   job_giga_gas_extraction_manager_drone_desc: "풍부한 대기 또는 다른 이색적인 환경 특성으로 인해 이 관리자들은 우리의 $job_technician_drone_plural$이 이 자원들을 최대한 활용하도록 보장합니다." # 3174156755281679982
   job_giga_gas_extraction_manager_drone_effect_desc: "£job_giga_gas_extraction_manager£ $job_giga_gas_extraction_manager_drone_plural$는 £exotic_gases£ §Y$exotic_gases$§!를 수집하고 £job_technician£ §Y$job_technician_drone_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산을 제공합니다." # 12144644546016258943
-  mod_job_giga_gas_extraction_manager_drone_add: "$job_giga_gas_extraction_manager_drone$ 직업" # 3767288586263213592
-  mod_job_giga_gas_extraction_manager_drone_per_pop: "§G+1§! $job_giga_gas_extraction_manager_drone$ 직업당 §Y$VALUE$§! 팝" # 6768008484939589801
+  mod_job_giga_gas_extraction_manager_drone_add: "$job_giga_gas_extraction_manager_drone$ 직업"
+  mod_job_giga_gas_extraction_manager_drone_per_pop: "§G+1§! $job_giga_gas_extraction_manager_drone$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_gas_extraction_manager_drone_per_pop_short: "§G+1§! £mod_job_giga_gas_extraction_manager_add£당 §Y$VALUE$§! £pop£" # 14751402272505335152

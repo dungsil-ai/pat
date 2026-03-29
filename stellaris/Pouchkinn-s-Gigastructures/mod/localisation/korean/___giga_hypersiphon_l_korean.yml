@@ -38,24 +38,24 @@
   job_giga_shroud_conduit_worker_plural: "장막 도관 기술자들" # 8759060127003500098
   job_giga_shroud_conduit_worker_desc: "$building_giga_shroud_conduit$에 의해 열린 미세한 장막 터널들의 관리를 맡은 전문가들." # 15532566115525976524
   job_giga_shroud_conduit_worker_effect_desc: "£job_giga_shroud_conduit_worker£ $job_giga_shroud_conduit_worker_plural$은 £energy£ §Y$energy$§!을 소모하여 £unity£ §Y$unity$§!을 생산하고 행성의 생산성을 증진시킵니다." # 5836586306097277525
-  mod_job_giga_shroud_conduit_worker_add: "$job_giga_shroud_conduit_worker$ 일자리" # 264325895743606776
-  mod_job_giga_shroud_conduit_worker_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_worker$ 직업" # 17227557514280197309
+  mod_job_giga_shroud_conduit_worker_add: "$job_giga_shroud_conduit_worker$ 일자리"
+  mod_job_giga_shroud_conduit_worker_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_worker$ 직업"
   mod_job_giga_shroud_conduit_worker_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_shroud_conduit_worker_add£" # 3030728465513581531
   job_giga_shroud_conduit_worker_icon: "£장막 도관 작업자£" # 11925301240567771890
   job_giga_shroud_conduit_priest: "장막 소통자" # 4629448911500272706
   job_giga_shroud_conduit_priest_plural: "장막 교감자" # 14820941605002688210
   job_giga_shroud_conduit_priest_desc: "$building_giga_shroud_conduit$에 의해 생성된 섬세한 연결들을 관리하는 임무를 맡은 사이오닉 성직자" # 3661239057354435133
   job_giga_shroud_conduit_priest_effect_desc: "£job_giga_shroud_conduit_priest£ $job_giga_shroud_conduit_priest_plural$은 £energy£ §Y$energy$§!을 사용하여 £unity£ §Y$unity$§!을 생산하고, £amenities£ $MOD_PLANET_AMENITIES_ADD$를 제공하며, 해당 행성의 생산성을 증진시킵니다." # 5602535296183819399
-  mod_job_giga_shroud_conduit_priest_add: "$job_giga_shroud_conduit_priest$ 직업" # 10464234356755249936
-  mod_job_giga_shroud_conduit_priest_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_priest$ 직위" # 10292264916626203043
+  mod_job_giga_shroud_conduit_priest_add: "$job_giga_shroud_conduit_priest$ 직업"
+  mod_job_giga_shroud_conduit_priest_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_priest$ 직위"
   mod_job_giga_shroud_conduit_priest_per_pop_short: "§G+1§! £mod_job_giga_shroud_conduit_priest_add£당 $VALUE$ £pop£당" # 6482663746549720518
   job_giga_shroud_conduit_priest_icon: "기가 장막 도관 성직자" # 18233715836081949096
   job_giga_shroud_conduit_drone: "장막 도관 드론" # 17591958876384422934
   job_giga_shroud_conduit_drone_plural: "장막 도관 드론" # 7021363258338885928
   job_giga_shroud_conduit_drone_desc: "$building_giga_shroud_conduit$에서 생성된 섬세한 연결망 관리에 특화된 사이오닉 활성 드론입니다." # 14753991932469849009
   job_giga_shroud_conduit_drone_effect_desc: "£job_giga_shroud_conduit_drone£ $job_giga_shroud_conduit_drone_plural$은 £energy£ §Y$energy$§!을 집중시켜 £unity£ §Y$unity$§!을 생산하고 행성의 생산성을 증대시킵니다." # 16339433606235388904
-  mod_job_giga_shroud_conduit_drone_add: "$job_giga_shroud_conduit_drone$ 직업" # 14455696916857428472
-  mod_job_giga_shroud_conduit_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_drone$ 직업" # 13578358290063055787
+  mod_job_giga_shroud_conduit_drone_add: "$job_giga_shroud_conduit_drone$ 직업"
+  mod_job_giga_shroud_conduit_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_shroud_conduit_drone$ 직업"
   mod_job_giga_shroud_conduit_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_shroud_conduit_worker_add£" # 3030728465513581531
   job_giga_shroud_conduit_drone_icon: "£장막_도관_드론£" # 8499759240693934815
   mod_planet_pops_psionic_upkeep_mult: "£pop£ 사이오닉 팝으로부터의 유지 비용" # 10982906173077780426

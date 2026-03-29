@@ -196,128 +196,128 @@
   job_giga_birch_structure_manager_plural: "인슐라 건설 관리자들" # 17835124541860752383
   job_giga_birch_structure_manager_desc: "모든 건설 작업의 중추인 우리의 가장 숙련된 건설 전문가들이 엔지니어 팀을 이끌며 새로운 인술라를 건설합니다." # 6552098707771345560
   job_giga_birch_structure_manager_effect_desc: "£job_giga_birch_structure_manager£ $job_giga_birch_structure_manager_plural$은 £alloys£ §Y$alloys$§!와 £consumer_goods£ §Y$consumer_goods$§!을 £engineering_research£ §Y$engineering_research$§! 및 £unity£ §Y$unity$§!로 전환하고, §Y실업§!을 해소하며, £job_giga_birch_structure_engineer£ $job_giga_birch_structure_engineer$ 직책을 제공합니다.\n$job_giga_birch_structure_engineer_effect_desc$" # 2140838924755187213
-  mod_job_giga_birch_structure_manager_add: "$job_giga_birch_structure_manager$ 일자리" # 17662378305718143696
-  mod_job_giga_birch_structure_manager_per_pop: "§G+1§! $job_giga_birch_structure_manager$ 직업당 §Y$VALUE$§! 팝" # 15411548713847549180
+  mod_job_giga_birch_structure_manager_add: "$job_giga_birch_structure_manager$ 일자리"
+  mod_job_giga_birch_structure_manager_per_pop: "§G+1§! $job_giga_birch_structure_manager$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_structure_manager_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£ 당 £mod_job_giga_birch_structure_manager_add£" # 6189179010608248345
   job_giga_birch_structure_manager_drone: "인슐라 건설 관리 클러스터" # 9450910223357332111
   job_giga_birch_structure_manager_drone_plural: "인술라 건설 관리 클러스터" # 9964466487379004474
   job_giga_birch_structure_manager_drone_desc: "이 드론 군체들은 전체 건설 작업의 핵심부로서, 하급 공학 드론 팀을 지휘하여 새로운 인술라를 건설합니다." # 12454677199346059947
   job_giga_birch_structure_manager_drone_effect_desc: "£job_giga_birch_structure_manager_drone£ $job_giga_birch_structure_manager_drone_plural$은 £alloys£ §Y$alloys$§와 £energy£ §Y$energy$§를 £engineering_research£ §Y$engineering_research$§와 £unity£ §Y$unity$§로 전환하며, §Y실업 상태§!를 해소하고 $job_giga_birch_structure_engineer_drone$ $job_giga_birch_structure_engineer_drone$ 직책을 제공합니다.\n$job_giga_birch_structure_engineer_drone_effect_desc$" # 3770259254994540523
-  mod_job_giga_birch_structure_manager_drone_add: "$job_giga_birch_structure_manager_drone$ 직업" # 4017505154240848146
-  mod_job_giga_birch_structure_manager_drone_per_pop: "§G+1§! 팝당 $job_giga_birch_structure_manager_drone$ 직업, §Y$VALUE$§! 개" # 1088713131739617247
+  mod_job_giga_birch_structure_manager_drone_add: "$job_giga_birch_structure_manager_drone$ 직업"
+  mod_job_giga_birch_structure_manager_drone_per_pop: "§G+1§! 팝당 $job_giga_birch_structure_manager_drone$ 직업, §Y$VALUE$§! 개"
   mod_job_giga_birch_structure_manager_drone_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£당 £mod_job_giga_birch_structure_manager_drone_add£" # 6410570718324909430
   job_giga_birch_structure_engineer: "인술라 건설 기술자" # 9165007304218289989
   job_giga_birch_structure_engineer_plural: "인술라 건설 기술자" # 13532126800899405512
   job_giga_birch_structure_engineer_desc: "구조물 운영팀의 필수적인 부분으로, 이 숙련공들은 거대한 인술라 건설에 전념합니다." # 7407067457872842596
   job_giga_birch_structure_engineer_effect_desc: "£job_giga_birch_structure_engineer£ $job_giga_birch_structure_engineer_plural$는 £consumer_goods£ §Y$consumer_goods$§!를 사용하여 £housing£ §Y$PLANET_HOUSING_TITLE$§!와 £amenities£ §YAmenities§!를 제공합니다." # 8767628411420866178
-  mod_job_giga_birch_structure_engineer_add: "$job_giga_birch_structure_engineer$ 일자리" # 3739458324127689722
-  mod_job_giga_birch_structure_engineer_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 개의 $job_giga_birch_structure_engineer$ 직위" # 2389983462847652071
+  mod_job_giga_birch_structure_engineer_add: "$job_giga_birch_structure_engineer$ 일자리"
+  mod_job_giga_birch_structure_engineer_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 개의 $job_giga_birch_structure_engineer$ 직위"
   mod_job_giga_birch_structure_engineer_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£당 £mod_job_giga_birch_structure_engineer_add£" # 724882581857474546
   job_giga_birch_structure_engineer_drone: "인술라 건설 드론" # 12258641341221194271
   job_giga_birch_structure_engineer_drone_plural: "인술라 건설 드론" # 3668137987915944303
   job_giga_birch_structure_engineer_drone_desc: "구조물 운영 체계의 필수적인 부분인 이 전문 드론들은 거대한 인술라에 건설에 전념합니다." # 12735033462584035849
   job_giga_birch_structure_engineer_drone_effect_desc: "£job_giga_birch_structure_engineer_drone£ $job_giga_birch_structure_engineer_drone_plural$는 £minerals£ §Y$minerals$§!을(를) 사용하여 £housing£ §Y$PLANET_HOUSING_TITLE$§! 및 £amenities£ §YAmenities§!을(를) 제공합니다." # 5654218507156303457
-  mod_job_giga_birch_structure_engineer_drone_add: "$job_giga_birch_structure_engineer_drone$ 직업" # 6523565575304928580
-  mod_job_giga_birch_structure_engineer_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 만큼의 $job_giga_birch_structure_engineer_drone$ 직업" # 10686430312544978826
+  mod_job_giga_birch_structure_engineer_drone_add: "$job_giga_birch_structure_engineer_drone$ 직업"
+  mod_job_giga_birch_structure_engineer_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 만큼의 $job_giga_birch_structure_engineer_drone$ 직업"
   mod_job_giga_birch_structure_engineer_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_structure_engineer_drone_add£ 당 §Y$VALUE$§! £pop£" # 10333011430551428732
   job_giga_birch_orykta_manager: "오릭타 인술라 관리자" # 14280908559775686141
   job_giga_birch_orykta_manager_plural: "오릭타 인술라 관리자들" # 13081981917230711334
   job_giga_birch_orykta_manager_desc: "$name_birch$의 $pc_core_black_hole$과 상호작용하도록 설계된 장비 전문가인 이 숙련된 관리자들은 우리 추출 작전이 최대 효율로 가동되도록 합니다." # 13059189938250825484
   job_giga_birch_orykta_manager_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_plural$는 £consumer_goods£ §Y$consumer_goods$§!를 £physics_research£ £engineering_research£ §Y연구점§!으로 전환하고, £job_technician£ $job_technician_plural$와 £job_miner£ $job_miner_plural$의 $giga_r_energy$$giga_r_minerals$ §Y생산성§!을 향상시킵니다." # 12434861138132174488
-  mod_job_giga_birch_orykta_manager_add: "$job_giga_birch_orykta_manager$ 일자리" # 5291417138912029939
-  mod_job_giga_birch_orykta_manager_per_pop: "§G+1§! $job_giga_birch_orykta_manager$ 직업당 §Y$VALUE$§! 팝" # 16765575215797102060
+  mod_job_giga_birch_orykta_manager_add: "$job_giga_birch_orykta_manager$ 일자리"
+  mod_job_giga_birch_orykta_manager_per_pop: "§G+1§! $job_giga_birch_orykta_manager$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_orykta_manager_per_pop_short: "§G+1§! £mod_job_giga_birch_orykta_manager_add£당 §Y$VALUE$§! £pop£" # 11753755385722661217
   job_giga_birch_orykta_worker: "오릭타 인술라 노동자" # 18373357029631687824
   job_giga_birch_orykta_worker_plural: "오릭타 인술라 노동자" # 13649704749734828165
   job_giga_birch_orykta_worker_desc: "오릭타 인술라 시설 배치를 위해 훈련되었으나, 아직 특정 직무가 할당되지 않은 작업자들." # 15063000466159864256
   job_giga_birch_orykta_worker_effect_desc: "$job_giga_birch_orykta_worker_plural$는 £에너지£ §Y$energy$§!와 £광물£ §Y$minerals$§!을 소량 생산하며, $giga_birch_orykta_name$ 구역 건설을 통해 특화될 수 있습니다." # 1686235611880652622
-  mod_job_giga_birch_orykta_worker_add: "$job_giga_birch_orykta_worker$ 일자리" # 5242790994821033548
-  mod_job_giga_birch_orykta_worker_per_pop: "§G+1§! 팝당 $job_giga_birch_orykta_worker$ 직업, §Y$VALUE$§!개" # 10881002354211941186
+  mod_job_giga_birch_orykta_worker_add: "$job_giga_birch_orykta_worker$ 일자리"
+  mod_job_giga_birch_orykta_worker_per_pop: "§G+1§! 팝당 $job_giga_birch_orykta_worker$ 직업, §Y$VALUE$§!개"
   mod_job_giga_birch_orykta_worker_per_pop_short: "§G+1§! £mod_job_giga_birch_orykta_worker_add£ 당 §Y$VALUE$§! £pop£" # 6732055051473388268
   job_giga_birch_orykta_manager_drone: "오릭타 인술라 관리 클러스터" # 4003992337781651467
   job_giga_birch_orykta_manager_drone_plural: "오릭타 인술라 관리 클러스터" # 7737910843209070036
   job_giga_birch_orykta_manager_drone_desc: "$name_birch$의 $pc_core_black_hole$과 상호작용하도록 설계된 장비 전문가들인 이 특별 제작 드론 클러스터는 우리의 추출 운영이 최대 효율로 진행되도록 보장합니다." # 7664446350346394911
   job_giga_birch_orykta_manager_drone_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_plural$ 는 £energy£ §Y$energy$§! 를 £physics_research£ £engineering_research£ §YResearch Points§! 로 전환하며, £job_technician_drone£ $job_technician_drone_plural$ 와 £job_mining_drone£ $job_mining_drone_plural$ 의 $giga_r_energy$$giga_r_minerals$ §YProductivity§! 를 향상시킵니다." # 17130275114040948480
-  mod_job_giga_birch_orykta_manager_drone_add: "$job_giga_birch_orykta_manager_drone$ 직업" # 10308807663593140638
-  mod_job_giga_birch_orykta_manager_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 만큼의 $job_giga_birch_orykta_manager_drone$ 직책" # 9667683768298783226
+  mod_job_giga_birch_orykta_manager_drone_add: "$job_giga_birch_orykta_manager_drone$ 직업"
+  mod_job_giga_birch_orykta_manager_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 만큼의 $job_giga_birch_orykta_manager_drone$ 직책"
   mod_job_giga_birch_orykta_manager_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_orykta_manager_drone_add£ 당 §Y$VALUE$§! £pop£" # 16213760161802813977
   job_giga_birch_orykta_worker_drone: "오릭타 인술라 드론" # 16465772007585181140
   job_giga_birch_orykta_worker_drone_plural: "오릭타 인슐라 드론" # 7907334477268063434
   job_giga_birch_orykta_worker_drone_desc: "오릭타 인술라 시설의 인력 충원을 담당하도록 배치되었지만, 아직 할 특정 작업이 없는 드론들." # 8932047924027777687
   job_giga_birch_orykta_worker_drone_effect_desc: "£job_giga_birch_orykta_worker_drone£ $job_giga_birch_orykta_worker_drone_plural$은 소량의 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!를 생산하며, $giga_birch_orykta_name$ 구역 건설을 통해 전문화할 수 있습니다." # 12755857605867747970
-  mod_job_giga_birch_orykta_worker_drone_add: "$job_giga_birch_orykta_worker_drone$ 일자리" # 13997845329508444282
-  mod_job_giga_birch_orykta_worker_drone_per_pop: "§G+1§! $job_giga_birch_orykta_worker_drone$ 직업당 §Y$VALUE$§! 팝" # 3906535421063538384
+  mod_job_giga_birch_orykta_worker_drone_add: "$job_giga_birch_orykta_worker_drone$ 일자리"
+  mod_job_giga_birch_orykta_worker_drone_per_pop: "§G+1§! $job_giga_birch_orykta_worker_drone$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_orykta_worker_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_orykta_worker_drone_add£ 당 §Y$VALUE$§! £pop£" # 12829287194726205846
   job_giga_birch_ktisma_manager: "크티스마 인술라 관리자" # 11462550881554295608
   job_giga_birch_ktisma_manager_plural: "크티스마 인슐라 관리자들" # 12758425761787820481
   job_giga_birch_ktisma_manager_desc: "크티스마 인슐라의 관리 인원은 산업 전반을 총괄하며, 우리 공장들이 시계처럼 오차 없이 가동되도록 합니다." # 16000413657204495906
   job_giga_birch_ktisma_manager_effect_desc: "£job_giga_birch_ktisma_manager£ $job_giga_birch_ktisma_manager_plural$는 £consumer_goods£ §Y$consumer_goods$§!를 사용하여 £engineering_research£ §YResearch Points§!를 생산하고, £mod_planet_building_build_speed_mult£ §Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§!만큼 건설 속도를 증가시키며, £job_foundry£ [owner.GetAlloyProducerPlural]와 [owner.GetArtisanIcon] [owner.GetArtisanPlural]의 $giga_r_alloys$$giga_r_cgs$ §YProductivity§!를 향상시킵니다." # 11002487936712072973
-  mod_job_giga_birch_ktisma_manager_add: "$job_giga_birch_ktisma_manager$ 일자리" # 5810636670630839306
-  mod_job_giga_birch_ktisma_manager_per_pop: "§G+1§! $job_giga_birch_ktisma_manager$ 직책당 §Y$VALUE$§! 팝" # 13694996663495458929
+  mod_job_giga_birch_ktisma_manager_add: "$job_giga_birch_ktisma_manager$ 일자리"
+  mod_job_giga_birch_ktisma_manager_per_pop: "§G+1§! $job_giga_birch_ktisma_manager$ 직책당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_ktisma_manager_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£당 £mod_job_giga_birch_ktisma_manager_add£" # 2287077784213822975
   job_giga_birch_ktisma_worker: "크티스마 인술라 노동자" # 8476474909963324035
   job_giga_birch_ktisma_worker_plural: "크티스마 인술라 노동자" # 10449022437456267041
   job_giga_birch_ktisma_worker_desc: "크티스마 인술라의 시설 인력으로 훈련되었으나, 아직 특정 업무에 할당되지 않은 인력." # 816340531975559220
   job_giga_birch_ktisma_worker_effect_desc: "£job_giga_birch_ktisma_worker£ $job_giga_birch_ktisma_worker_plural$는 £alloys£ §Y$alloys$§!과 £consumer_goods£ §Y$consumer_goods$§!를 소량 생산하며, $giga_birch_ktisma_name$ 구역을 건설하여 전문화할 수 있습니다." # 2456297319232074912
-  mod_job_giga_birch_ktisma_worker_add: "$job_giga_birch_ktisma_worker$ 직업" # 5597529926305610961
-  mod_job_giga_birch_ktisma_worker_per_pop: "§G+1§! $job_giga_birch_ktisma_worker$ 직업당 §Y$VALUE$§! 팝" # 18328654170400633920
+  mod_job_giga_birch_ktisma_worker_add: "$job_giga_birch_ktisma_worker$ 직업"
+  mod_job_giga_birch_ktisma_worker_per_pop: "§G+1§! $job_giga_birch_ktisma_worker$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_ktisma_worker_per_pop_short: "§G+1§! £mod_job_giga_birch_ktisma_worker_add£당 §Y$VALUE$§! £pop£당" # 9584842137522983546
   job_giga_birch_ktisma_manager_drone: "크티스마 인술라 관리 집단" # 13994590357894553138
   job_giga_birch_ktisma_manager_drone_plural: "크티스마 인술라 관리 클러스터" # 4243670082132668409
   job_giga_birch_ktisma_manager_drone_desc: "산업 활동 전반을 감독하는 이 특화 드론 군집들은 우리 제조 시설이 완벽하게 작동하도록 보장합니다." # 7713203874292744865
   job_giga_birch_ktisma_manager_drone_effect_desc: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_plural$는 £minerals£ §Y$minerals$§!를 £engineering_research£ §Y연구 점수§!로 전환하고, £mod_planet_building_build_speed_mult£ §Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§!를 증가시키며, £job_foundry£ [owner.GetAlloyProducerPlural]의 $giga_r_alloys$ §Y생산량§!을 개선합니다." # 16584279397974816753
   job_giga_birch_ktisma_manager_drone_effect_desc_cgs: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_plural$는 £minerals£ §Y$minerals$§!를 £engineering_research£ §Y연구 점수§!로 변환하며, £mod_planet_building_build_speed_mult£ §Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§!를 증가시키고, £job_foundry£ [owner.GetAlloyProducerPlural]와 [owner.GetArtisanIcon] [owner.GetArtisanPlural]의 $giga_r_alloys$$giga_r_cgs$ §Y생산성§!을 향상시킵니다." # 9838652039390279121
-  mod_job_giga_birch_ktisma_manager_drone_add: "$job_giga_birch_ktisma_manager_drone$ 직업" # 8406916557938769235
-  mod_job_giga_birch_ktisma_manager_drone_per_pop: "§G+1§! $job_giga_birch_ktisma_manager_drone$ 직업당 §Y$VALUE$§! 팝" # 8083704208829215643
+  mod_job_giga_birch_ktisma_manager_drone_add: "$job_giga_birch_ktisma_manager_drone$ 직업"
+  mod_job_giga_birch_ktisma_manager_drone_per_pop: "§G+1§! $job_giga_birch_ktisma_manager_drone$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_ktisma_manager_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_ktisma_manager_drone_add£ 당 §Y$VALUE$§! £pop£" # 1896955640736244969
   job_giga_birch_ktisma_worker_drone: "크티스마 인술라 드론" # 10592106668626734969
   job_giga_birch_ktisma_worker_drone_plural: "크티스마 인술라 드론" # 2228658517331005726
   job_giga_birch_ktisma_worker_drone_desc: "크티스마 인술라 시설 인력을 담당하도록 배정되었으나, 아직 구체적인 업무가 없는 드론들." # 846547841223514576
   job_giga_birch_ktisma_worker_drone_effect_desc: "£job_giga_birch_ktisma_worker_drone£ $job_giga_birch_ktisma_worker_drone_plural$는 소량의 £alloys£ §Y$alloys$§!를 생산하며, $giga_birch_ktisma_name$ 섹터를 건설하여 특화할 수 있습니다." # 5749417239258174910
-  mod_job_giga_birch_ktisma_worker_drone_add: "$job_giga_birch_ktisma_worker_drone$ 일자리" # 14225254066741054693
-  mod_job_giga_birch_ktisma_worker_drone_per_pop: "§G+1§! §Y$VALUE$§! 팝당 $job_giga_birch_ktisma_worker_drone$ 직업" # 13527661953424513902
+  mod_job_giga_birch_ktisma_worker_drone_add: "$job_giga_birch_ktisma_worker_drone$ 일자리"
+  mod_job_giga_birch_ktisma_worker_drone_per_pop: "§G+1§! §Y$VALUE$§! 팝당 $job_giga_birch_ktisma_worker_drone$ 직업"
   mod_job_giga_birch_ktisma_worker_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_ktisma_worker_drone_add£ 당 §Y$VALUE$§! £pop£" # 12067769397431441679
   job_giga_birch_physma_manager: "피즈마 인술라 관리자" # 14582488700474294620
   job_giga_birch_physma_manager_plural: "피스마 인술라 관리자들" # 13589930676460968290
   job_giga_birch_physma_manager_desc: "환경 프로젝트, 연구 및 문화 업무의 관리자들로서, 이 공무원들과 그들의 부하들은 피스마 인술라의 사회를 결속시킵니다." # 12168115913730712778
   job_giga_birch_physma_manager_effect_desc: "£job_giga_birch_physma_manager£ $job_giga_birch_physma_manager_plural$은 £consumer_goods£ §Y$consumer_goods$§!을 £society_research£ §Y$society_research$§! 및 £unity£ §Y$unity$§!로 전환하고, £job_farmer£ [owner.GetFarmerPlural], [owner.GetResearcherIcon] [owner.GetResearcherPlural], 및 [GetAdministratorPluralWithIcon]의 $giga_r_food$$giga_r_research$$giga_r_unity$ §Y생산성§!을 향상시킵니다." # 15658044222296296108
-  mod_job_giga_birch_physma_manager_add: "$job_giga_birch_physma_manager$ 일자리" # 14983101711918106857
-  mod_job_giga_birch_physma_manager_per_pop: "§G+1§! $job_giga_birch_physma_manager$ 직업당 §Y$VALUE$§! 팝" # 18045741330269599244
+  mod_job_giga_birch_physma_manager_add: "$job_giga_birch_physma_manager$ 일자리"
+  mod_job_giga_birch_physma_manager_per_pop: "§G+1§! $job_giga_birch_physma_manager$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_birch_physma_manager_per_pop_short: "§G+1§! £mod_job_giga_birch_physma_manager_add£당 §Y$VALUE$§! £pop£당" # 418145822755023468
   job_giga_birch_physma_worker: "피스마 인술라 노동자" # 10541434163637409344
   job_giga_birch_physma_worker_plural: "피스마 인술라 노동자" # 10217024939495468411
   job_giga_birch_physma_worker_desc: "피스마 인술라의 시설 운영을 위해 훈련되었지만, 아직 할 특정 직업이 없는 팝." # 3828639126056351922
   job_giga_birch_physma_worker_effect_desc: "£job_giga_birch_physma_worker£ $job_giga_birch_physma_worker_plural$은 소량의 £unity£ §Y통합§!을 생산하며, $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 소모하고, $giga_birch_physma_name$ 구역을 건설하여 전문화될 수 있습니다." # 13905742423355728003
-  mod_job_giga_birch_physma_worker_add: "$job_giga_birch_physma_worker$ 직업" # 8964463107348037483
-  mod_job_giga_birch_physma_worker_per_pop: "§G+1§! 팝당 $job_giga_birch_physma_worker$ 직위" # 6034747361443797201
+  mod_job_giga_birch_physma_worker_add: "$job_giga_birch_physma_worker$ 직업"
+  mod_job_giga_birch_physma_worker_per_pop: "§G+1§! 팝당 $job_giga_birch_physma_worker$ 직위"
   mod_job_giga_birch_physma_worker_per_pop_short: "§G+1§! £mod_job_giga_birch_physma_worker_add£ 당 §Y$VALUE$§! £pop£" # 12100971128363628202
   job_giga_birch_physma_manager_drone: "피스마 섬 관리 성단" # 13240860115393400992
   job_giga_birch_physma_manager_drone_plural: "피스마 인술라 관리 군집" # 9040479485372836234
   job_giga_birch_physma_manager_drone_desc: "환경 프로젝트, 연구, 그리고 신호 무결성의 관리자들인 이 드론 집단들과 그 하위 개체들은 퓌스마 인술라의 원활한 운영을 보장합니다." # 4141560018395213674
   job_giga_birch_physma_manager_drone_effect_desc: "£job_giga_birch_physma_manager_drone£ $job_giga_birch_physma_manager_drone_plural$은 그들의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 £society_research£ §Y$society_research$§! 및 £unity£ §Y$unity$§!로 전환하고, £job_agri_drone£ [owner.GetFarmerPlural], [owner.GetResearcherIcon] [owner.GetResearcherPlural], 및 [owner.GetAdministratorPluralWithIcon]의 $giga_r_food$$giga_r_research$$giga_r_unity$ §Y생산성§!을 향상시킵니다!" # 7332160696813753565
-  mod_job_giga_birch_physma_manager_drone_add: "$job_giga_birch_physma_manager_drone$ 일자리" # 17500258944981970360
-  mod_job_giga_birch_physma_manager_drone_per_pop: "§G+1§! 팝당 $job_giga_birch_physma_manager_drone$ 직업, §Y$VALUE$§! 개" # 5078249465400741928
+  mod_job_giga_birch_physma_manager_drone_add: "$job_giga_birch_physma_manager_drone$ 일자리"
+  mod_job_giga_birch_physma_manager_drone_per_pop: "§G+1§! 팝당 $job_giga_birch_physma_manager_drone$ 직업, §Y$VALUE$§! 개"
   mod_job_giga_birch_physma_manager_drone_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£당 £mod_job_giga_birch_physma_manager_drone_add£ 추가" # 6974905557226516274
   job_giga_birch_physma_worker_drone: "피스마 인술라 드론" # 4243549147918346743
   job_giga_birch_physma_worker_drone_plural: "피스마 인술라 드론" # 8804139940990862162
   job_giga_birch_physma_worker_drone_desc: "피스마 인슐라 시설에 배치되어 있지만, 아직 특정 임무를 부여받지 않은 드론들." # 17060756420453742415
   job_giga_birch_physma_worker_drone_effect_desc: "£job_giga_birch_physma_worker_drone£ $job_giga_birch_physma_worker_drone_plural$은 소량의 £unity£ §Y통합력§!과 그들의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 생산하며, $giga_birch_physma_name$ 섹터를 건설하여 전문화될 수 있습니다." # 17696709753371789650
-  mod_job_giga_birch_physma_worker_drone_add: "$job_giga_birch_physma_worker_drone$ 일자리" # 8214513590542379586
-  mod_job_giga_birch_physma_worker_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! $job_giga_birch_physma_worker_drone$ 직업" # 1821911823568793766
+  mod_job_giga_birch_physma_worker_drone_add: "$job_giga_birch_physma_worker_drone$ 일자리"
+  mod_job_giga_birch_physma_worker_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! $job_giga_birch_physma_worker_drone$ 직업"
   mod_job_giga_birch_physma_worker_drone_per_pop_short: "§G+1§! £mod_job_giga_birch_physma_worker_drone_add£ 당 §Y$VALUE$§! £pop£" # 6502474495163680259
   job_giga_dark_matter_weaver: "암흑 물질 직조자" # 195770429593505461
   job_giga_dark_matter_weaver_plural: "암흑 물질 직조자" # 816175029916562939
   job_giga_dark_matter_weaver_desc: "이 전문가들은 블랙홀의 헤이즈에서 암흑 물질을 자아냅니다." # 248987907795996609
   job_giga_dark_matter_weaver_effect_desc: "£job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$는 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!를 사용하여 £sr_dark_matter£ §Y$sr_dark_matter$§!를 얻습니다." # 6239434742993886583
-  mod_job_giga_dark_matter_weaver_add: "$job_giga_dark_matter_weaver$ 일자리" # 10191843821956289422
-  mod_job_giga_dark_matter_weaver_per_pop: "§G+1§! $job_giga_dark_matter_weaver$ 직업당 §Y$VALUE$§! 팝" # 15052451356947096871
+  mod_job_giga_dark_matter_weaver_add: "$job_giga_dark_matter_weaver$ 일자리"
+  mod_job_giga_dark_matter_weaver_per_pop: "§G+1§! $job_giga_dark_matter_weaver$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_dark_matter_weaver_per_pop_short: "§G+1§! £mod_job_giga_dark_matter_weaver_add£당 §Y$VALUE$§! £pop£당" # 11910948746006481751
   job_giga_dark_matter_weaver_drone: "암흑 물질 엮는 드론" # 6275320621344887145
   job_giga_dark_matter_weaver_drone_plural: "암흑 물질 직조자 드론" # 8948321253553664689
   job_giga_dark_matter_weaver_drone_desc: "이 드론들은 블랙홀의 아지랑이로부터 암흑 물질을 짜냅니다." # 4286180702816910007
   job_giga_dark_matter_weaver_drone_effect_desc: "£job_giga_dark_matter_weaver_drone£ $job_giga_dark_matter_weaver_drone_plural$은 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!을 사용하여 £sr_dark_matter£ §Y$sr_dark_matter$§!을 수집합니다." # 11688251538920384640
-  mod_job_giga_dark_matter_weaver_drone_add: "$job_giga_dark_matter_weaver_drone$ 일자리" # 11902167297698954759
-  mod_job_giga_dark_matter_weaver_drone_per_pop: "§G+1§! $job_giga_dark_matter_weaver_drone$ 직업당 §Y$VALUE$§! 팝" # 4188520426301231999
+  mod_job_giga_dark_matter_weaver_drone_add: "$job_giga_dark_matter_weaver_drone$ 일자리"
+  mod_job_giga_dark_matter_weaver_drone_per_pop: "§G+1§! $job_giga_dark_matter_weaver_drone$ 직업당 §Y$VALUE$§! 팝"
   mod_job_giga_dark_matter_weaver_drone_per_pop_short: "§G+1§! §Y$VALUE$§! £pop£당 £mod_job_giga_dark_matter_weaver_drone_add£" # 10982377023677677945
   job_giga_birch_resident: "$name_birch$ 거주자" # 12704112684175418107
   job_giga_birch_resident_plural: "$name_birch$ 거주민" # 16672431353998936555
