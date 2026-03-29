@@ -172,6 +172,56 @@ language = "english"
     })
   })
 
+  describe('기존 저장소 업데이트', () => {
+    it('로컬 변경사항이 있으면 기존 저장소를 지우고 재클론해야 함', async () => {
+      const commands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+
+      execAsyncHandler = async (command: string) => {
+        commands.push(command)
+
+        if (command === 'git status --porcelain') {
+          return { stdout: ' M localization/english/test.yml\n', stderr: '' }
+        }
+
+        if (command.startsWith('git ls-remote --tags --refs')) {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (command.startsWith('git ls-remote --symref')) {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        if (command === 'git describe --tags --exact-match') {
+          throw new Error('fatal: no tag exactly matches')
+        }
+
+        if (command === 'git rev-parse --abbrev-ref HEAD') {
+          return { stdout: 'develop\n', stderr: '' }
+        }
+
+        if (command.startsWith('git clone ')) {
+          await mkdir(join(repoPath, '.git', 'info'), { recursive: true })
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'default'
+      }, testDir)
+
+      expect(commands.some(command => command.startsWith('git clone '))).toBe(true)
+      expect(commands).toContain('git checkout HEAD')
+      expect(commands).not.toContain('git fetch --tags')
+    })
+  })
+
   describe('태그 clone/fetch 폴백', () => {
     it('태그 clone 실패 시 실패한 디렉토리를 정리한 뒤 기본 브랜치 clone으로 폴백해야 함', async () => {
       const commands: string[] = []

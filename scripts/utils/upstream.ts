@@ -557,7 +557,10 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     const { stdout: status } = await execAsync('git status --porcelain', { cwd: repositoryPath })
     
     if (status.trim()) {
-      log.warn(`[${config.path}] 로컬 변경사항이 있어 업데이트를 건너뜁니다`)
+      log.warn(`[${config.path}] 로컬 변경사항이 있어 upstream 저장소를 재클론합니다`)
+      // upstream은 캐시 성격의 읽기 전용 데이터이므로, 더 안전하게 전체 재클론합니다
+      await rm(repositoryPath, { recursive: true, force: true })
+      await cloneOptimizedRepository(repositoryPath, config)
       return
     }
     
