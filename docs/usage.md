@@ -24,7 +24,7 @@ pnpm install
 
 ### 3. 환경 변수 설정
 
-`.env` 파일을 생성하고 API 키를 설정합니다:
+`.env` 파일을 생성하고 API 키와 실행 옵션을 설정합니다:
 
 ```bash
 cp .env.sample .env
@@ -34,12 +34,28 @@ cp .env.sample .env
 
 ```env
 GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
+# (선택) 구 Gemini 키 폴백
+GOOGLE_GENERATIVE_AI_API_KEY=legacy_key
+
+# 실행 옵션
+LOG_LEVEL=info
+TRANSLATE_BATCH_SIZE=10
+TRANSLATION_TIMEOUT_MINUTES=15
+GEMINI_MODEL=gemini-flash-lite-latest
 ```
 
 **API 키 발급:**
 1. [Google AI Studio](https://aistudio.google.com/app/apikey) 방문
 2. "Create API Key" 클릭
 3. 생성된 키를 복사하여 `.env`에 붙여넣기
+
+**환경 변수 설명:**
+- `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev가 사용하는 기본 Gemini API 키 (필수)
+- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
+- `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 10)
+- `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
+- `GEMINI_MODEL`: 사용할 Gemini 모델 ID (기본 `gemini-flash-lite-latest`)
+- `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
 
 ## 기본 사용법
 
