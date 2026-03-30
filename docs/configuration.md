@@ -339,6 +339,72 @@ export GOOGLE_AI_STUDIO_TOKEN=your_api_key
 pnpm ck3
 ```
 
+### GOOGLE_GENERATIVE_AI_API_KEY
+
+**필수:** 아니오 (선택)
+
+**설명:** 기존 Gemini SDK 키. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+
+### GEMINI_MODEL
+
+**필수:** 아니오
+
+**기본값:** `gemini-2.0-flash` (코드 기본값), `.env.sample` 권장값: `gemini-flash-lite-latest`
+
+**설명:** 사용할 Gemini 모델 ID를 지정합니다.
+
+```env
+GEMINI_MODEL=gemini-flash-lite-latest
+```
+
+### TRANSLATE_BATCH_SIZE
+
+**필수:** 아니오
+
+**기본값:** `20`
+
+**설명:** 벌크 번역 시 한 번에 요청할 항목 수입니다. 잘못된 값이 입력되면 경고 후 기본값(20)을 사용합니다.
+
+```env
+TRANSLATE_BATCH_SIZE=10
+```
+
+### TRANSLATION_TIMEOUT_MINUTES
+
+**필수:** 아니오
+
+**기본값:** `15` (분)
+
+**설명:** 번역 작업 타임아웃(분)입니다. `false` 또는 `0`으로 설정하면 타임아웃이 비활성화됩니다.
+
+```env
+TRANSLATION_TIMEOUT_MINUTES=15
+```
+
+### TRANSLATE_MOD_CONCURRENCY
+
+**필수:** 아니오
+
+**기본값:** 모드 개수 (자동 계산)
+
+**설명:** 모드 단위 병렬 처리 동시성을 지정합니다. 미설정 시 현재 처리 중인 모드 개수만큼 자동으로 설정됩니다. ETC 모드의 경우 `upstream/` 하위 폴더 수를 기준으로 계산합니다. 잘못된 값이 입력되면 경고 후 자동 계산값을 사용합니다.
+
+```env
+TRANSLATE_MOD_CONCURRENCY=4
+```
+
+### LOG_LEVEL
+
+**필수:** 아니오
+
+**기본값:** `info`
+
+**설명:** 로깅 레벨을 설정합니다. (`silent`, `error`, `warn`, `info`, `debug`, `verbose`)
+
+```env
+LOG_LEVEL=info
+```
+
 ## 모범 사례
 
 ### 1. 저장소 URL은 HTTPS 사용
