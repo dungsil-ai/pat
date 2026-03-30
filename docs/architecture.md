@@ -254,9 +254,9 @@ Google Gemini API를 통한 AI 번역을 관리합니다.
 
 **파일 위치:** `scripts/utils/ai.ts`
 
-**모델 설정:**
-- `GEMINI_MODEL` 환경변수로 모델 지정 (코드 기본값: `gemini-2.0-flash`)
-- ai-sdk.dev(`@ai-sdk/google`) 기반으로 동작
+**모델 전략:**
+1. `GEMINI_MODEL` 환경 변수 우선 사용
+2. 미설정 시 기본 모델 `gemini-flash-lite-latest` 사용
 
 **설정:**
 ```typescript

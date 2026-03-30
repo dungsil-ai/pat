@@ -11,8 +11,8 @@
 - **지원 게임**: CK3, Victoria 3, Stellaris
 
 #### FR-1.2: AI 기반 번역
-- **요구사항**: Google Gemini AI를 사용한 맥락 인식 번역 (ai-sdk.dev 기반)
-- **모델**: `GEMINI_MODEL` 환경변수로 설정 (코드 기본값: `gemini-2.0-flash`)
+- **요구사항**: Google Gemini AI를 사용한 맥락 인식 번역
+- **모델**: `GEMINI_MODEL` 환경 변수 우선, 미설정 시 `gemini-flash-lite-latest`
 - **재시도 메커니즘**: 실패 시 자동 재시도
 - **타임아웃**: `TRANSLATION_TIMEOUT_MINUTES` 환경변수로 설정 (기본 15분)
 

@@ -195,8 +195,9 @@ const translated = await translateAI('The Duke arrives', 'ck3')
 ```
 
 **동작:**
-1. `GEMINI_MODEL` 환경변수로 지정된 단일 모델 사용 (코드 기본값: `gemini-2.0-flash`)
-2. 응답 후처리 (이스케이프, 마크업 수정)
+1. `GEMINI_MODEL` 환경 변수가 설정되어 있으면 해당 모델 사용
+2. 미설정 시 기본값 `gemini-flash-lite-latest` 사용
+3. 응답 후처리 (이스케이프, 마크업 수정)
 
 **후처리:**
 ```typescript
