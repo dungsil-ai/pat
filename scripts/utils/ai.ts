@@ -38,7 +38,7 @@ function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
   return _googleProvider
 }
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
 
 const generationConfig = {
   temperature: 0.5,

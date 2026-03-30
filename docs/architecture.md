@@ -255,8 +255,8 @@ Google Gemini API를 통한 AI 번역을 관리합니다.
 **파일 위치:** `scripts/utils/ai.ts`
 
 **모델 전략:**
-1. 1차 시도: `gemini-flash-lite-latest` (빠르고 저렴)
-2. 2차 시도: `gemini-flash-latest` (더 강력)
+1. `GEMINI_MODEL` 환경 변수 우선 사용
+2. 미설정 시 기본 모델 `gemini-flash-lite-latest` 사용
 
 **설정:**
 ```typescript

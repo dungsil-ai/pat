@@ -12,7 +12,7 @@
 
 #### FR-1.2: AI 기반 번역
 - **요구사항**: Google Gemini AI를 사용한 맥락 인식 번역
-- **모델**: gemini-flash-lite-latest (1차), gemini-flash-latest (2차 폴백)
+- **모델**: `GEMINI_MODEL` 환경 변수 우선, 미설정 시 `gemini-flash-lite-latest`
 - **재시도 메커니즘**: 실패 시 자동 재시도
 - **타임아웃**: 기본 120초, 최대 600초
 

@@ -299,7 +299,7 @@ if (sourceHash === targetHash) {
              ▼
 ┌─────────────────────────────────────┐
 │ 2. 모델 선택 및 설정               │
-│    - Model: gemini-flash-lite      │
+│    - Model: gemini-flash-lite-latest│
 │    - Temperature: 0.5              │
 │    - Max tokens: 8192              │
 └────────────┬────────────────────────┘
@@ -357,17 +357,9 @@ Now translate the following:
 
 ```typescript
 async function translateAI(text: string, gameType: GameType) {
-  try {
-    // 1차 시도: Flash Lite (빠르고 저렴)
-    return await translateByModel('gemini-flash-lite-latest', text)
-  } catch (e) {
-    try {
-      // 2차 시도: Flash (더 강력)
-      return await translateByModel('gemini-flash-latest', text)
-    } catch (ee) {
-      throw ee
-    }
-  }
+  const modelName = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
+
+  return await translateByModel(modelName, text)
 }
 ```
 
