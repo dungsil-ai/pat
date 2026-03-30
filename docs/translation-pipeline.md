@@ -357,17 +357,8 @@ Now translate the following:
 
 ```typescript
 async function translateAI(text: string, gameType: GameType) {
-  try {
-    // 1차 시도: Flash Lite (빠르고 저렴)
-    return await translateByModel('gemini-flash-lite-latest', text)
-  } catch (e) {
-    try {
-      // 2차 시도: Flash (더 강력)
-      return await translateByModel('gemini-flash-latest', text)
-    } catch (ee) {
-      throw ee
-    }
-  }
+  // GEMINI_MODEL 환경변수로 지정된 모델 사용 (기본값: gemini-2.0-flash)
+  return await translateByModel(process.env.GEMINI_MODEL || 'gemini-2.0-flash', text)
 }
 ```
 

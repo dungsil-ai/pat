@@ -148,11 +148,12 @@ The `transliteration_files` option allows manual specification of files that sho
 - Translation refusal tracking and graceful error handling
 - Exports untranslated items to `{game}-untranslated-items.json`
 - Defaults parallel workers to the detected mod count; ETC `upstream/` subfolders are treated as separate mods for concurrency
+- Override concurrency via `TRANSLATE_MOD_CONCURRENCY` environment variable
 
 **AI Integration** (`scripts/utils/ai.ts`):
 - Google Gemini via **ai-sdk.dev** (primary) using `GOOGLE_AI_STUDIO_TOKEN`
 - Optional fallback to legacy Gemini key (`GOOGLE_GENERATIVE_AI_API_KEY`)
-- Configurable model via `GEMINI_MODEL` (default `gemini-flash-lite-latest`)
+- Configurable model via `GEMINI_MODEL` (code default: `gemini-2.0-flash`; `.env.sample` recommends `gemini-flash-lite-latest`)
 - Context-aware prompts for medieval/historical content
 - Separate transliteration prompts for proper nouns (culture, dynasty, character names)
 - Retry logic for API failures
@@ -258,7 +259,8 @@ Even within regular translation files, specific key patterns are processed in tr
 - `*_name` - Names (e.g., `dynasty_name`, `culture_name`)
 
 **Exclusion rules**:
-- Keys ending with `*_desc`, `*_event`, `*_decision` use semantic translation
+- Keys ending with `*_desc`, `*_event`, `*_decision` (underscore `_` separator) use semantic translation
+- Keys ending with `*.desc`, `*.event`, `*.decision` (dot `.` separator) also use semantic translation
 - Context-based keys (descriptions, events, decisions) require semantic translation
 
 **Examples**:
@@ -270,6 +272,8 @@ shouldUseTransliterationForKey("culture_adj")           // → true (_adj suffix
 shouldUseTransliterationForKey("dynasty_name")          // → true (_name suffix)
 shouldUseTransliterationForKey("heritage_desc")         // → false (_desc suffix)
 shouldUseTransliterationForKey("culture_event")         // → false (_event suffix)
+shouldUseTransliterationForKey("some.desc")             // → false (.desc suffix)
+shouldUseTransliterationForKey("some.event")            // → false (.event suffix)
 ```
 
 **Result example**:
@@ -464,7 +468,7 @@ pnpm ck3
 ## Development Notes
 
 - Uses TypeScript with jiti for direct execution
-- Google Gemini AI integration requires `GOOGLE_GENERATIVE_AI_API_KEY` environment variable
+- Google Gemini AI integration requires `GOOGLE_AI_STUDIO_TOKEN` (primary) or `GOOGLE_GENERATIVE_AI_API_KEY` (fallback) environment variable
 - File hashing system prevents unnecessary retranslation of unchanged content
 - Translation dictionaries in `dictionaries/*.toml` provide manual overrides (loaded by `scripts/utils/dictionary.ts`)
 - Logging system supports different verbosity levels via `scripts/utils/logger.ts`

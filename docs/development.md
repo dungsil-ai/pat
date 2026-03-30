@@ -350,7 +350,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 // 2. 외부 라이브러리
-import { GoogleGenerativeAI } from '@google/generative-ai'
+import { createGoogleGenerativeAI } from '@ai-sdk/google'
 import dotenv from 'dotenv'
 
 // 3. 내부 모듈
