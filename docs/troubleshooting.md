@@ -489,7 +489,7 @@ const gameType: GameType = 'ck3'  // GameType
 
 **증상:**
 ```
-Cannot find module '@google/generative-ai'
+Cannot find module '@ai-sdk/google'
 ```
 
 **원인:** 의존성 설치 안 됨

@@ -41,6 +41,7 @@ GOOGLE_GENERATIVE_AI_API_KEY=legacy_key
 LOG_LEVEL=info
 TRANSLATE_BATCH_SIZE=10
 TRANSLATION_TIMEOUT_MINUTES=15
+TRANSLATE_MOD_CONCURRENCY=4
 GEMINI_MODEL=gemini-flash-lite-latest
 ```
 
@@ -54,7 +55,8 @@ GEMINI_MODEL=gemini-flash-lite-latest
 - `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
 - `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 10)
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
-- `GEMINI_MODEL`: 사용할 Gemini 모델 ID (기본 `gemini-flash-lite-latest`)
+- `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
+- `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-2.0-flash`) 사용
 - `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
 
 ## 기본 사용법
