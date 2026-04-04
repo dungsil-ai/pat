@@ -1,0 +1,88 @@
+name: Upstream translation issue dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          cache: pnpm
+          node-version-file: .node-version
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build dashboard body
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md
+
+      - name: Upsert dashboard issue
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs')
+            const title = '[대시보드] 업스트림 변경 대비 번역 미반영 현황'
+            const label = 'upstream-dashboard'
+            const body = fs.readFileSync('upstream-dashboard.md', 'utf8')
+
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: label,
+              })
+            } catch {
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: label,
+                color: 'BFDADC',
+                description: '업스트림 대비 번역 미반영 대시보드 이슈',
+              })
+            }
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: label,
+              per_page: 100,
+            })
+
+            const existing = issues.find((issue) => issue.title === title)
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                title,
+                body,
+              })
+              core.info(`대시보드 이슈 #${existing.number}를 업데이트했습니다.`)
+            } else {
+              const created = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: [label],
+              })
+              core.info(`대시보드 이슈 #${created.data.number}를 생성했습니다.`)
+            }
