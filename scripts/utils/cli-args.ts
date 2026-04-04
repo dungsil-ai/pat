@@ -12,16 +12,12 @@ export interface ParsedTranslateCommandArgs {
 
 type TranslateCommand = 'onlyHash' | 'updateDict' | 'retranslate' | 'updateTransliterationFiles'
 
-const TRANSLATE_COMMANDS: ReadonlyArray<TranslateCommand> = [
-  'onlyHash',
-  'updateDict',
-  'retranslate',
-  'updateTransliterationFiles'
-]
-
-const TRANSLATE_COMMAND_LOOKUP: ReadonlyMap<string, TranslateCommand> = new Map(
-  TRANSLATE_COMMANDS.map(command => [command.toLowerCase(), command])
-)
+const TRANSLATE_COMMANDS: Readonly<Record<string, TranslateCommand>> = {
+  onlyhash: 'onlyHash',
+  updatedict: 'updateDict',
+  retranslate: 'retranslate',
+  updatetransliterationfiles: 'updateTransliterationFiles'
+}
 
 /**
  * CLI 인자에서 딕셔너리 필터링 옵션을 파싱합니다.
@@ -62,11 +58,11 @@ export function parseDictionaryFilterArgs(args: string[]): ParsedDictionaryFilte
  * - 예: `pnpm ck3 updateDict rice --since-commit abc1234` → command='updateDict', targetMod='rice'
  */
 export function parseTranslateCommandArgs(args: string[]): ParsedTranslateCommandArgs {
-  const firstArg = args[0]?.trim()
-  const normalizedFirstArg = firstArg?.toLowerCase()
-  const command = normalizedFirstArg ? TRANSLATE_COMMAND_LOOKUP.get(normalizedFirstArg) : undefined
-  const hasCommand = command !== undefined
-  const targetMod = hasCommand ? args[1] : args[0]
+  const rawFirstArg = args[0]
+  const normalizedCommand = rawFirstArg?.trim().toLowerCase()
+  const command = normalizedCommand ? TRANSLATE_COMMANDS[normalizedCommand] : undefined
+  const hasCommand = !!command
+  const targetMod = hasCommand ? args[1] : rawFirstArg
   const commandArgs = hasCommand ? args.slice(1) : args.slice(0)
 
   return {

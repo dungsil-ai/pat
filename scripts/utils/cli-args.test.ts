@@ -112,5 +112,12 @@ describe('cli-args', () => {
       expect(result.targetMod).toBe('unknownMode')
       expect(result.commandArgs).toEqual(['unknownMode'])
     })
+
+    it('명령어는 대소문자를 구분하지 않아야 함', () => {
+      const result = parseTranslateCommandArgs(['UpdateDict', 'Rice'])
+      expect(result.command).toBe('updateDict')
+      expect(result.targetMod).toBe('Rice')
+      expect(result.commandArgs).toEqual(['Rice'])
+    })
   })
 })
