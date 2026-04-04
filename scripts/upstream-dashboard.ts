@@ -4,6 +4,9 @@ import process from 'node:process'
 import { parseToml } from './parser/toml'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
+import { fileURLToPath } from 'node:url'
+import natsort from 'natsort'
+import semver from 'semver'
 
 const execFileAsync = promisify(execFile)
 
@@ -39,15 +42,8 @@ interface DashboardRow {
   trackedBy: 'tag' | 'commit'
   baselineVersion: string
   latestVersion: string
-  status: '미반영' | '최신' | '번역 이력 없음'
+  status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패'
   compareUrl?: string
-}
-
-interface GitHubTag {
-  name: string
-  commit: {
-    sha: string
-  }
 }
 
 interface GitHubCommit {
@@ -57,6 +53,47 @@ interface GitHubCommit {
       date?: string
     }
   }
+}
+
+type TagInfo = {
+  name: string
+  committedAt: string
+}
+
+type GitHubTagTarget =
+  | {
+    __typename: 'Commit'
+    oid: string
+    committedDate: string
+  }
+  | {
+    __typename: 'Tag'
+    target: GitHubTagTarget | null
+  }
+  | {
+    __typename: string
+    target?: GitHubTagTarget | null
+  }
+  | null
+
+type GitHubTagResponse = {
+  repository: {
+    refs: {
+      nodes: Array<{
+        name: string
+        target: GitHubTagTarget
+      }>
+      pageInfo: {
+        hasNextPage: boolean
+        endCursor: string | null
+      }
+    }
+  } | null
+}
+
+type GitHubGraphqlResponse<T> = {
+  data: T
+  errors?: Array<{ message?: string }>
 }
 
 function parseGitHubUrl(url: string): { owner: string, repo: string } | null {
@@ -205,28 +242,226 @@ async function githubApi<T>(path: string, token?: string): Promise<T> {
 
   throw new Error(`GitHub API 요청 실패: ${path}`)
 }
+
+async function githubGraphql<T>(query: string, variables: Record<string, unknown>, token?: string): Promise<T> {
+  const maxAttempts = 4
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    try {
+      const response = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({ query, variables })
+      })
+
+      if (response.ok) {
+        const body = await response.json() as GitHubGraphqlResponse<T>
+        if (body.errors?.length) {
+          throw new Error(`GitHub GraphQL 오류: ${body.errors.map(error => error.message ?? '').filter(Boolean).join(', ')}`)
+        }
+        return body.data
+      }
+
+      if (shouldRetryGitHubResponse(response.status) && attempt < maxAttempts - 1) {
+        await sleep(getGitHubRetryDelayMs(response, attempt))
+        continue
+      }
+
+      throw new Error(`GitHub GraphQL 요청 실패 (${response.status})`)
+    } catch (error) {
+      if (attempt >= maxAttempts - 1) {
+        throw error
+      }
+
+      await sleep(Math.min(1000 * 2 ** attempt, 8000))
+    }
+  }
+
+  throw new Error('GitHub GraphQL 요청 실패')
+}
+
 function formatVersionWithLink(version: string, compareUrl?: string): string {
   if (!compareUrl) return `\`${version}\``
   return `[\`${version}\`](${compareUrl})`
+}
+
+function isCommitTarget(target: GitHubTagTarget): target is { __typename: 'Commit', oid: string, committedDate: string } {
+  return Boolean(target && target.__typename === 'Commit' && 'committedDate' in target && 'oid' in target)
+}
+
+function extractCommitFromTagTarget(target: GitHubTagTarget): { committedAt: string, sha: string } | null {
+  let current: GitHubTagTarget | null = target
+
+  while (current && current.__typename === 'Tag') {
+    current = current.target ?? null
+  }
+
+  if (!isCommitTarget(current)) {
+    return null
+  }
+
+  return {
+    committedAt: current.committedDate,
+    sha: current.oid
+  }
+}
+
+async function fetchRepositoryTags(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
+  const tags: TagInfo[] = []
+  let cursor: string | null = null
+  const query = `
+    query ($owner: String!, $repo: String!, $cursor: String) {
+      repository(owner: $owner, name: $repo) {
+        refs(refPrefix: "refs/tags/", first: 100, after: $cursor, orderBy: { field: TAG_COMMIT_DATE, direction: DESC }) {
+          nodes {
+            name
+            target {
+              __typename
+              ... on Commit {
+                oid
+                committedDate
+              }
+              ... on Tag {
+                target {
+                  __typename
+                  ... on Commit {
+                    oid
+                    committedDate
+                  }
+                  ... on Tag {
+                    target {
+                      __typename
+                      ... on Commit {
+                        oid
+                        committedDate
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+        }
+      }
+    }
+  `
+
+  while (true) {
+    const data: GitHubTagResponse = await githubGraphql<GitHubTagResponse>(query, { owner, repo, cursor }, token)
+    const refs = data.repository?.refs
+    if (!refs) break
+
+    for (const node of refs.nodes) {
+      const commit = extractCommitFromTagTarget(node.target)
+      if (!commit) continue
+      tags.push({ name: node.name, committedAt: commit.committedAt })
+    }
+
+    if (!refs.pageInfo.hasNextPage || !refs.pageInfo.endCursor) break
+    cursor = refs.pageInfo.endCursor
+  }
+
+  return tags
+}
+
+function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagInfo[] {
+  if (strategy === 'natural') {
+    const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
+    return tags.filter(tag => {
+      const lower = tag.name.toLowerCase()
+      return !preReleaseKeywords.some(keyword => lower.includes(keyword))
+    })
+  }
+
+  if (strategy === 'semantic') {
+    return tags.filter(tag => {
+      const normalizedTag = tag.name.replace(/^v/, '')
+      const parsed = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
+      if (!parsed) return false
+      return semver.prerelease(parsed) === null
+    })
+  }
+
+  return tags
+}
+
+function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | null {
+  if (!tags.length) return null
+
+  if (strategy === 'natural') {
+    const naturalSorter = natsort({ desc: true })
+    const sorted = [...tags].sort((a, b) => naturalSorter(a.name, b.name))
+    return sorted[0]
+  }
+
+  if (strategy === 'semantic') {
+    const naturalSorter = natsort({ desc: true })
+    const parsed = tags
+      .map(tag => {
+        const normalizedTag = tag.name.replace(/^v/, '')
+        const parsedVersion = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
+        if (!parsedVersion) return null
+        if (semver.prerelease(parsedVersion)) return null
+        return { ...tag, normalizedTag, parsedVersion }
+      })
+      .filter((tag): tag is TagInfo & { normalizedTag: string, parsedVersion: semver.SemVer } => tag !== null)
+
+    if (parsed.length === 0) {
+      return null
+    }
+
+    const sorted = parsed.sort((a, b) => {
+      const versionCompare = semver.rcompare(a.parsedVersion.version, b.parsedVersion.version)
+      if (versionCompare !== 0) {
+        return versionCompare
+      }
+
+      return naturalSorter(a.normalizedTag, b.normalizedTag)
+    })
+
+    return sorted[0]
+  }
+
+  return tags[0]
+}
+
+function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | null): TagInfo | null {
+  if (!lastTranslation) return null
+  const translationTime = new Date(lastTranslation.committedAt).getTime()
+
+  return [...tags]
+    .sort((a, b) => new Date(b.committedAt).getTime() - new Date(a.committedAt).getTime())
+    .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
 }
 
 async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: string): Promise<DashboardRow> {
   const lastTranslation = await getLastTranslationCommit(rootDir, meta.translationPath)
   const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
   const latestCommit = await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
-  const tags = await githubApi<GitHubTag[]>(`/repos/${meta.owner}/${meta.repo}/tags?per_page=100`, token)
-  const useTagTracking = meta.strategy !== 'default' && tags.length > 0
+  const preferTagTracking = meta.strategy !== 'default'
+  const tags = preferTagTracking ? await fetchRepositoryTags(meta.owner, meta.repo, token) : []
+  const filteredTags = preferTagTracking ? filterTagsByStrategy(tags, meta.strategy) : []
+  const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
+  const useTagTracking = preferTagTracking && latestTag !== null
 
   if (!lastTranslation) {
-    if (useTagTracking) {
-      const latestTag = tags[0].name
+    if (useTagTracking && latestTag) {
       return {
         game: meta.game,
         mod: meta.mod,
         strategy: meta.strategy,
         trackedBy: 'tag',
         baselineVersion: '번역 이력 없음',
-        latestVersion: latestTag,
+        latestVersion: latestTag.name,
         status: '번역 이력 없음'
       }
     }
@@ -242,21 +477,8 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
     }
   }
 
-  if (useTagTracking) {
-    const latestTag = tags[0]
-    let baselineTag: GitHubTag | null = null
-
-    for (const tag of tags) {
-      const tagCommit = await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${tag.commit.sha}`, token)
-      const tagDate = tagCommit.commit.committer?.date
-      if (!tagDate) continue
-
-      if (new Date(tagDate).getTime() <= new Date(lastTranslation.committedAt).getTime()) {
-        baselineTag = tag
-        break
-      }
-    }
-
+  if (useTagTracking && latestTag) {
+    const baselineTag = findBaselineTag(filteredTags, lastTranslation)
     const isOutdated = baselineTag ? baselineTag.name !== latestTag.name : true
     return {
       game: meta.game,
@@ -309,6 +531,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
 function buildIssueBody(rows: DashboardRow[]): string {
   const timestamp = new Date().toISOString()
   const outdatedRows = rows.filter(row => row.status === '미반영')
+  const failedRows = rows.filter(row => row.status === '조회 실패')
 
   const lines: string[] = []
   lines.push('# 업스트림 변경 대비 번역 미반영 대시보드')
@@ -316,6 +539,9 @@ function buildIssueBody(rows: DashboardRow[]): string {
   lines.push(`- 마지막 갱신: ${timestamp}`)
   lines.push(`- 미반영 모드 수: ${outdatedRows.length}`)
   lines.push(`- 확인 대상 모드 수: ${rows.length}`)
+  if (failedRows.length > 0) {
+    lines.push(`- 조회 실패 모드 수(집계 제외): ${failedRows.length}`)
+  }
   lines.push('')
   lines.push('| 게임 | 모드 | 버전 기준 | 추적 방식 | 번역 기준 버전 | 최신 버전 | 상태 |')
   lines.push('|---|---|---|---|---|---|---|')
@@ -327,7 +553,7 @@ function buildIssueBody(rows: DashboardRow[]): string {
   }
 
   lines.push('')
-  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하고, 그 외에는 기본 브랜치 커밋 ID로 비교합니다. git 저장소가 아닌 upstream은 제외합니다.')
+  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하며(유효한 태그가 없으면 커밋으로 폴백), 그 외에는 기본 브랜치 커밋 ID로 비교합니다. git 저장소가 아닌 upstream은 제외합니다.')
 
   return `${lines.join('\n')}\n`
 }
@@ -350,7 +576,7 @@ async function main() {
         trackedBy: 'commit',
         baselineVersion: '조회 실패',
         latestVersion: '조회 실패',
-        status: '미반영'
+        status: '조회 실패'
       })
       process.stderr.write(`[경고] ${meta.game}/${meta.mod}: ${error instanceof Error ? error.message : String(error)}\n`)
     }
@@ -359,7 +585,21 @@ async function main() {
   process.stdout.write(buildIssueBody(rows))
 }
 
-main().catch((error) => {
-  process.stderr.write(`${error instanceof Error ? error.stack ?? error.message : String(error)}\n`)
-  process.exit(1)
-})
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    process.stderr.write(`${error instanceof Error ? error.stack ?? error.message : String(error)}\n`)
+    process.exit(1)
+  })
+}
+
+export {
+  findBaselineTag,
+  filterTagsByStrategy,
+  parseGitHubUrl,
+  pickLatestTag
+}
+
+export type {
+  TagInfo,
+  TranslationCommit
+}
