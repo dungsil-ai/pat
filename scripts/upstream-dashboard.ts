@@ -65,6 +65,24 @@ function parseGitHubUrl(url: string): { owner: string, repo: string } | null {
   return { owner: match[1], repo: match[2] }
 }
 
+async function resolveTranslationPath(rootDir: string, game: string, mod: string): Promise<string> {
+  const candidates = [
+    join(game, mod, 'mod', 'localization', 'korean'),
+    join(game, mod, 'mod', 'localisation', 'korean')
+  ]
+
+  for (const candidate of candidates) {
+    try {
+      await access(join(rootDir, candidate))
+      return candidate
+    } catch {
+      continue
+    }
+  }
+
+  return candidates[0]
+}
+
 async function findModMetas(rootDir: string): Promise<ModMeta[]> {
   const metas: ModMeta[] = []
   for (const game of ['ck3', 'vic3', 'stellaris']) {
@@ -99,7 +117,7 @@ async function findModMetas(rootDir: string): Promise<ModMeta[]> {
         owner: repo.owner,
         repo: repo.repo,
         strategy: config.upstream?.version_strategy ?? 'default',
-        translationPath: join(game, modEntry.name, 'mod', 'localization', 'korean')
+        translationPath: await resolveTranslationPath(rootDir, game, modEntry.name)
       })
     }
   }
@@ -146,9 +164,10 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
   const latestCommit = await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
   const tags = await githubApi<GitHubTag[]>(`/repos/${meta.owner}/${meta.repo}/tags?per_page=100`, token)
+  const useTagTracking = meta.strategy !== 'default' && tags.length > 0
 
   if (!lastTranslation) {
-    if (tags.length > 0) {
+    if (useTagTracking) {
       const latestTag = tags[0].name
       return {
         game: meta.game,
@@ -172,9 +191,9 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
     }
   }
 
-  if (tags.length > 0) {
+  if (useTagTracking) {
     const latestTag = tags[0]
-    let baselineTag = latestTag
+    let baselineTag: GitHubTag | null = null
 
     for (const tag of tags) {
       const tagCommit = await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${tag.commit.sha}`, token)
@@ -187,16 +206,18 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       }
     }
 
-    const isOutdated = baselineTag.name !== latestTag.name
+    const isOutdated = baselineTag ? baselineTag.name !== latestTag.name : true
     return {
       game: meta.game,
       mod: meta.mod,
       strategy: meta.strategy,
       trackedBy: 'tag',
-      baselineVersion: baselineTag.name,
+      baselineVersion: baselineTag?.name ?? '기준 태그 없음',
       latestVersion: latestTag.name,
       status: isOutdated ? '미반영' : '최신',
-      compareUrl: isOutdated ? `https://github.com/${meta.owner}/${meta.repo}/compare/${encodeURIComponent(baselineTag.name)}...${encodeURIComponent(latestTag.name)}` : undefined
+      compareUrl: isOutdated && baselineTag
+        ? `https://github.com/${meta.owner}/${meta.repo}/compare/${encodeURIComponent(baselineTag.name)}...${encodeURIComponent(latestTag.name)}`
+        : undefined
     }
   }
 
@@ -255,7 +276,7 @@ function buildIssueBody(rows: DashboardRow[]): string {
   }
 
   lines.push('')
-  lines.push('> 규칙: tag가 존재하는 업스트림은 tag 버전으로 비교하고, tag가 없는 git 업스트림은 기본 브랜치 커밋 ID로 비교합니다. git 저장소가 아닌 upstream은 제외합니다.')
+  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하고, 그 외에는 기본 브랜치 커밋 ID로 비교합니다. git 저장소가 아닌 upstream은 제외합니다.')
 
   return `${lines.join('\n')}\n`
 }
