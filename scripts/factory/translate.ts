@@ -128,6 +128,10 @@ function resolveLogModName(modName: string, filePath: string): string {
   return actualModName || modName
 }
 
+function normalizePathForComparison(path: string): string {
+  return path.replace(/\\/g, '/')
+}
+
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
   const workItems: ModWorkItem[] = []
 
@@ -322,7 +326,8 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     for (const task of locPathCleanupTasks) {
       const nestedCleanupDirs = locPathCleanupTasks
         .map(({ targetDir }) => targetDir)
-        .filter(targetDir => targetDir !== task.targetDir && targetDir.startsWith(`${task.targetDir}/`))
+        .filter(targetDir => normalizePathForComparison(targetDir).startsWith(`${normalizePathForComparison(task.targetDir)}/`))
+        .filter(targetDir => targetDir !== task.targetDir)
 
       await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot, nestedCleanupDirs)
     }
@@ -475,17 +480,21 @@ async function cleanupOrphanedFiles(
   )
 
   // expectedKoreanFiles를 Set으로 변환하여 빠른 검색
-  const expectedSet = new Set(expectedKoreanFiles)
+  const expectedSet = new Set(expectedKoreanFiles.map(path => normalizePathForComparison(path)))
+  const excludedSet = excludedSubDirs
+    .map(path => normalizePathForComparison(path))
+    .map(path => path.endsWith('/') ? path : `${path}/`)
 
   // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
+    const normalizedFullPath = normalizePathForComparison(fullPath)
 
-    if (excludedSubDirs.some(excludedDir => fullPath.startsWith(`${excludedDir}/`))) {
+    if (excludedSet.some(excludedDir => normalizedFullPath.startsWith(excludedDir))) {
       continue
     }
     
-    if (!expectedSet.has(fullPath)) {
+    if (!expectedSet.has(normalizedFullPath)) {
       log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
       try {
         // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백
