@@ -194,9 +194,9 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
   }
 
   // 잘못된 형식인 경우 빈 텍스트 반환
-  if (!text || text.trim() === '') {
-    log.debug('빈 텍스트 번역 요청 감지, 빈 문자열 반환 처리')
-    return ''
+  if (text.trim() === '') {
+    log.debug('빈 텍스트 번역 요청 감지, 원문 유지 처리')
+    return text
   }
 
   const normalizedText = text
@@ -322,8 +322,8 @@ export async function translateBulk (
   const modLogPrefix = context?.modName ? `[모드:${context.modName}] ` : ''
 
   for (const [index, text] of texts.entries()) {
-    if (!text || text.trim() === '') {
-      results[index] = { translatedText: '' }
+    if (text.trim() === '') {
+      results[index] = { translatedText: text }
       continue
     }
 

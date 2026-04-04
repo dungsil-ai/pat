@@ -591,3 +591,7 @@
   south_ethiopia.0099.t: "xxxxx" # 1951045980481827005
   south_ethiopia.0099.desc: "xxxxx" # 1951045980481827005
   south_ethiopia.0099.a: "xxxxx" # 1951045980481827005
+  activity_RICE_south_ethiopia_cattle_counting_ceremony_province_desc: "" # 17241709254077376921
+  activity_RICE_south_ethiopia_gifaataa_festival_province_desc: "" # 17241709254077376921
+  activity_RICE_south_ethiopia_fichee_chambalaalla_festival_province_desc: "" # 17241709254077376921
+  RICE_south_ethiopia_sidama_groves_decision_effect_tooltip_2: "" # 17241709254077376921

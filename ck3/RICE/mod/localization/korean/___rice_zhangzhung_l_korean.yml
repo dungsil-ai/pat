@@ -1363,3 +1363,7 @@
   dharma_festivals.067.t: "결론" # 3822412533199628403
   dharma_festivals.067.desc: "로사르 축제가 마침내 끝났으며, 축제의 즐거운 분위기는 며칠 더 이어질 것입니다. 아아, 모든 것이 덧없듯이, 모든 좋은 것들 역시 끝이 나야만 하는 것 같습니다." # 11891305610502008079
   dharma_festivals.067.home: "축제가 이제 끝났습니다." # 493449509155308930
+  activity_RICE_glacier_marriage_province_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_hills_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desert_mountains_desc: "" # 17241709254077376921

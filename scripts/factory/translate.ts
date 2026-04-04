@@ -308,7 +308,8 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
           // 처리될 한국어 파일 경로 추적
           const targetParentDir = join(targetDir, dirname(normalizedFile))
           const targetFileName = '___' + basename(normalizedFile).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
-          expectedKoreanFiles.push(join(targetParentDir, targetFileName))
+          const targetPath = join(targetParentDir, targetFileName)
+          expectedKoreanFiles.push(targetPath)
         }
       }
       

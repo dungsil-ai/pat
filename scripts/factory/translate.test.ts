@@ -33,6 +33,10 @@ vi.mock('../utils/translate', () => {
   }
 
   const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean) {
+    if (text.trim() === '') {
+      return Promise.resolve(text)
+    }
+
     // 기본적으로 [KO] 접두사 사용, 음역 모드면 [TRANSLITERATION] 접두사 사용
     const prefix = useTransliteration ? '[TRANSLITERATION]' : '[KO]'
     return Promise.resolve(`${prefix}${text}`)
@@ -1437,6 +1441,7 @@ language = "english"
     const secondRunCallCount = vi.mocked(translateBulk).mock.calls.length
     expect(secondRunCallCount).toBe(firstRunCallCount + 1)
   })
+
 })
 
 // 지정된 개수의 항목을 가진 YAML 파일을 생성하는 헬퍼 함수
