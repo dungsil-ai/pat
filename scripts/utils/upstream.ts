@@ -7,7 +7,7 @@
  * meta.toml 파일에서 모든 설정 정보 (URL, localization 경로)를 읽어옵니다.
  */
 
-import { exec } from 'node:child_process'
+import { exec, execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
 import { join, dirname } from 'pathe'
@@ -19,6 +19,7 @@ import { parseToml } from '../parser/toml'
 import { reportVersionStrategyError } from './version-strategy-reporter'
 
 const execAsync = promisify(exec)
+const execFileAsync = promisify(execFile)
 
 export type VersionStrategy = 'semantic' | 'natural' | 'default'
 
@@ -467,7 +468,7 @@ async function getRemoteRefCommitHash(
     : `refs/heads/${ref.name}`
 
   try {
-    const { stdout } = await execAsync(`git ls-remote "${repoUrl}" "${refPath}"`, {
+    const { stdout } = await execFileAsync('git', ['ls-remote', repoUrl, refPath], {
       timeout: 10000
     })
     const line = stdout.trim().split('\n')[0]
