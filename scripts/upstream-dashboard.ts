@@ -138,22 +138,73 @@ async function getLastTranslationCommit(rootDir: string, translationPath: string
   }
 }
 
-async function githubApi<T>(path: string, token?: string): Promise<T> {
-  const response = await fetch(`https://api.github.com${path}`, {
-    headers: {
-      'Accept': 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...(token ? { 'Authorization': `Bearer ${token}` } : {})
-    }
-  })
-
-  if (!response.ok) {
-    throw new Error(`GitHub API 요청 실패 (${response.status}): ${path}`)
-  }
-
-  return await response.json() as T
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
+function shouldRetryGitHubResponse(status: number): boolean {
+  return status === 429 || status === 500 || status === 502 || status === 503 || status === 504
+}
+
+function getGitHubRetryDelayMs(response: Response, attempt: number): number {
+  const retryAfter = response.headers.get('retry-after')
+  if (retryAfter) {
+    const retryAfterSeconds = Number(retryAfter)
+    if (Number.isFinite(retryAfterSeconds) && retryAfterSeconds >= 0) {
+      return retryAfterSeconds * 1000
+    }
+
+    const retryAt = Date.parse(retryAfter)
+    if (!Number.isNaN(retryAt)) {
+      return Math.max(0, retryAt - Date.now())
+    }
+  }
+
+  const rateLimitReset = response.headers.get('x-ratelimit-reset')
+  if (response.status === 429 && rateLimitReset) {
+    const resetAtSeconds = Number(rateLimitReset)
+    if (Number.isFinite(resetAtSeconds) && resetAtSeconds > 0) {
+      return Math.max(0, resetAtSeconds * 1000 - Date.now())
+    }
+  }
+
+  return Math.min(1000 * 2 ** attempt, 8000)
+}
+
+async function githubApi<T>(path: string, token?: string): Promise<T> {
+  const maxAttempts = 4
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    try {
+      const response = await fetch(`https://api.github.com${path}`, {
+        headers: {
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+        }
+      })
+
+      if (response.ok) {
+        return await response.json() as T
+      }
+
+      if (shouldRetryGitHubResponse(response.status) && attempt < maxAttempts - 1) {
+        await sleep(getGitHubRetryDelayMs(response, attempt))
+        continue
+      }
+
+      throw new Error(`GitHub API 요청 실패 (${response.status}): ${path}`)
+    } catch (error) {
+      if (attempt >= maxAttempts - 1) {
+        throw error
+      }
+
+      await sleep(Math.min(1000 * 2 ** attempt, 8000))
+    }
+  }
+
+  throw new Error(`GitHub API 요청 실패: ${path}`)
+}
 function formatVersionWithLink(version: string, compareUrl?: string): string {
   if (!compareUrl) return `\`${version}\``
   return `[\`${version}\`](${compareUrl})`
