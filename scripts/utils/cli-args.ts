@@ -58,10 +58,11 @@ export function parseDictionaryFilterArgs(args: string[]): ParsedDictionaryFilte
  * - 예: `pnpm ck3 updateDict rice --since-commit abc1234` → command='updateDict', targetMod='rice'
  */
 export function parseTranslateCommandArgs(args: string[]): ParsedTranslateCommandArgs {
-  const firstArg = args[0]?.trim()
-  const hasCommand = !!firstArg && TRANSLATE_COMMANDS.has(firstArg as TranslateCommand)
-  const command = hasCommand ? firstArg as TranslateCommand : undefined
-  const targetMod = hasCommand ? args[1] : args[0]
+  const rawFirstArg = args[0]
+  const normalizedFirstArg = rawFirstArg?.trim()
+  const hasCommand = !!normalizedFirstArg && TRANSLATE_COMMANDS.has(normalizedFirstArg as TranslateCommand)
+  const command = hasCommand ? normalizedFirstArg as TranslateCommand : undefined
+  const targetMod = hasCommand ? args[1] : rawFirstArg
   const commandArgs = hasCommand ? args.slice(1) : args.slice(0)
 
   return {
