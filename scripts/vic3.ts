@@ -7,7 +7,7 @@ import { invalidateDictionaryTranslations } from './utils/dictionary-invalidator
 import { invalidateIncorrectTranslations } from './utils/retranslation-invalidator'
 import { invalidateTransliterationFilesChanges } from './utils/transliteration-files-invalidator'
 import { getChangedDictionaryKeys } from './utils/dictionary-changes'
-import { parseDictionaryFilterArgs } from './utils/cli-args'
+import { parseDictionaryFilterArgs, parseTranslateCommandArgs } from './utils/cli-args'
 import { log } from './utils/logger'
 import { isSqliteIOError } from './utils/cache'
 import { getDiskUsageString } from './utils/disk-usage'
@@ -18,20 +18,21 @@ async function main () {
   try {
     const vic3Dir = join(import.meta.dirname, '..', 'vic3')
     const allMods = await readdir(vic3Dir)
-    const onlyHash = process.argv?.[2] === 'onlyHash'
-    const updateDict = process.argv?.[2] === 'updateDict'
-    const retranslate = process.argv?.[2] === 'retranslate'
-    const updateTransliterationFiles = process.argv?.[2] === 'updateTransliterationFiles'
-    
-    // 특정 모드가 지정된 경우 해당 모드만 처리
-    const mods = filterMods(allMods, process.argv?.[3])
+    const { command, targetMod, commandArgs } = parseTranslateCommandArgs(process.argv.slice(2))
+    const onlyHash = command === 'onlyHash'
+    const updateDict = command === 'updateDict'
+    const retranslate = command === 'retranslate'
+    const updateTransliterationFiles = command === 'updateTransliterationFiles'
+
+    // 특정 모드가 지정된 경우 해당 모드만 처리 (`pnpm vic3 rice` 형식 지원)
+    const mods = filterMods(allMods, targetMod)
 
     // 타임아웃 설정: 환경변수 TRANSLATION_TIMEOUT_MINUTES(.env 포함) 또는 false(비활성화)
     const timeoutMinutes = getTranslationTimeoutMinutesFromEnv()
 
     if (updateDict) {
       // CLI 인자 파싱: --since-commit, --commit-range, --since-date
-      const filterArgs = parseDictionaryFilterArgs(process.argv.slice(3))
+      const filterArgs = parseDictionaryFilterArgs(commandArgs)
       
       // 필터링 옵션이 지정되었을 경우, 변경된 키만 추출
       let filterKeys: string[] | undefined
