@@ -456,6 +456,33 @@ async function getDefaultBranch(repoUrl: string, configPath: string): Promise<{ 
 }
 
 /**
+ * 원격 참조(태그/브랜치)의 커밋 해시를 조회합니다.
+ */
+async function getRemoteRefCommitHash(
+  repoUrl: string,
+  ref: { type: 'tag' | 'branch', name: string }
+): Promise<string | null> {
+  const refPath = ref.type === 'tag'
+    ? `refs/tags/${ref.name}`
+    : `refs/heads/${ref.name}`
+
+  try {
+    const { stdout } = await execAsync(`git ls-remote "${repoUrl}" "${refPath}"`, {
+      timeout: 10000
+    })
+    const line = stdout.trim().split('\n')[0]
+    if (!line) {
+      return null
+    }
+
+    const [commitHash] = line.split(/\s+/)
+    return commitHash || null
+  } catch {
+    return null
+  }
+}
+
+/**
  * 새 리포지토리를 효율적으로 클론합니다
  */
 async function cloneOptimizedRepository(targetPath: string, config: UpstreamConfig): Promise<void> {
@@ -587,8 +614,21 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     }
     
     if (current === latestRef.name && currentType === latestRef.type) {
-      log.info(`[${config.path}] 이미 최신 버전입니다 (${latestRef.type}: ${latestRef.name})`)
-      return
+      const remoteCommitHash = await getRemoteRefCommitHash(config.url, latestRef)
+
+      if (remoteCommitHash) {
+        const { stdout: localCommitHashOutput } = await execAsync('git rev-parse HEAD', { cwd: repositoryPath })
+        const localCommitHash = localCommitHashOutput.trim()
+
+        if (localCommitHash === remoteCommitHash) {
+          log.info(`[${config.path}] 이미 최신 버전입니다 (${latestRef.type}: ${latestRef.name})`)
+          return
+        }
+
+        log.info(`[${config.path}] 동일한 참조명이지만 커밋이 변경되어 업데이트를 진행합니다 (${localCommitHash.slice(0, 7)} -> ${remoteCommitHash.slice(0, 7)})`)
+      } else {
+        log.info(`[${config.path}] 원격 커밋 해시 확인에 실패하여 보수적으로 업데이트를 진행합니다 (${latestRef.type}: ${latestRef.name})`)
+      }
     }
     
     // 원격 변경사항 가져오기
