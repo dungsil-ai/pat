@@ -128,6 +128,10 @@ function resolveLogModName(modName: string, filePath: string): string {
   return actualModName || modName
 }
 
+function normalizePathForComparison(path: string): string {
+  return path.replace(/\\/g, '/')
+}
+
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
   const workItems: ModWorkItem[] = []
 
@@ -320,7 +324,12 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     
     // 모든 파일 처리 완료 후 orphaned 파일 정리
     for (const task of locPathCleanupTasks) {
-      await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot)
+      const nestedCleanupDirs = locPathCleanupTasks
+        .map(({ targetDir }) => targetDir)
+        .filter(targetDir => normalizePathForComparison(targetDir).startsWith(`${normalizePathForComparison(task.targetDir)}/`))
+        .filter(targetDir => targetDir !== task.targetDir)
+
+      await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot, nestedCleanupDirs)
     }
 
     for (const savedPath of Object.keys(nextFileHashes)) {
@@ -448,7 +457,14 @@ async function saveAndReturnResult(
  * @param locPath 로케일 경로
  * @param projectRoot 프로젝트 루트 디렉토리 (git 작업 디렉토리)
  */
-async function cleanupOrphanedFiles(targetDir: string, expectedKoreanFiles: string[], mod: string, locPath: string, projectRoot: string): Promise<void> {
+async function cleanupOrphanedFiles(
+  targetDir: string,
+  expectedKoreanFiles: string[],
+  mod: string,
+  locPath: string,
+  projectRoot: string,
+  excludedSubDirs: string[] = []
+): Promise<void> {
   try {
     // targetDir 디렉토리가 존재하는지 확인
     await access(targetDir)
@@ -464,13 +480,21 @@ async function cleanupOrphanedFiles(targetDir: string, expectedKoreanFiles: stri
   )
 
   // expectedKoreanFiles를 Set으로 변환하여 빠른 검색
-  const expectedSet = new Set(expectedKoreanFiles)
+  const expectedSet = new Set(expectedKoreanFiles.map(path => normalizePathForComparison(path)))
+  const excludedSet = excludedSubDirs
+    .map(path => normalizePathForComparison(path))
+    .map(path => path.endsWith('/') ? path : `${path}/`)
 
   // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
+    const normalizedFullPath = normalizePathForComparison(fullPath)
+
+    if (excludedSet.some(excludedDir => normalizedFullPath.startsWith(excludedDir))) {
+      continue
+    }
     
-    if (!expectedSet.has(fullPath)) {
+    if (!expectedSet.has(normalizedFullPath)) {
       log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
       try {
         // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백

@@ -362,4 +362,66 @@ language = "english"
     // 파일의 변경사항이 git checkout으로 롤백됨 (테스트에서는 삭제로 시뮬레이션)
     expect(existsSync(nestedOutput)).toBe(false)
   })
+
+  it('중첩된 localization 경로가 있어도 하위 경로 파일을 상위 경로 정리에서 롤백하지 않아야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamBaseDir = join(modDir, 'upstream')
+    const upstreamEnglishDir = join(upstreamBaseDir, 'localization', 'english')
+    const upstreamReplaceEnglishDir = join(upstreamBaseDir, 'localization', 'replace', 'english')
+    const koreanDir = join(modDir, 'mod', 'localization', 'korean')
+    const koreanReplaceDir = join(koreanDir, 'replace')
+
+    const metaContent = `
+[upstream]
+localization = ["localization/english", "localization/replace/english"]
+language = "english"
+`
+
+    await mkdir(upstreamEnglishDir, { recursive: true })
+    await mkdir(upstreamReplaceEnglishDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+
+    await writeFile(join(upstreamEnglishDir, 'base_l_english.yml'), `l_english:
+ key1:0 "Base Value"
+`, 'utf-8')
+    await writeFile(join(upstreamReplaceEnglishDir, 'replace_l_english.yml'), `l_english:
+ key2:0 "Replace Value"
+`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const baseOutput = join(koreanDir, '___base_l_korean.yml')
+    const replaceOutput = join(koreanReplaceDir, '___replace_l_korean.yml')
+
+    await access(baseOutput)
+    await access(replaceOutput)
+
+    mockExecAsync.mockClear()
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(existsSync(baseOutput)).toBe(true)
+    expect(existsSync(replaceOutput)).toBe(true)
+
+    // 상위 경로(localization/english) 정리 단계에서 replace 하위 파일을 건드리지 않아야 함
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git checkout HEAD --') &&
+        cmd.includes('___replace_l_korean.yml')
+      )
+    ).toBe(false)
+  })
 })
