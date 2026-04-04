@@ -98,6 +98,14 @@ describe('cli-args', () => {
       expect(result.commandArgs).toEqual(['rice', '--since-commit', 'abc1234'])
     })
 
+
+    it('명령어 대소문자를 구분하지 않고 파싱해야 함', () => {
+      const result = parseTranslateCommandArgs(['UpDaTeDiCt', 'rice', '--since-commit', 'abc1234'])
+      expect(result.command).toBe('updateDict')
+      expect(result.targetMod).toBe('rice')
+      expect(result.commandArgs).toEqual(['rice', '--since-commit', 'abc1234'])
+    })
+
     it('알 수 없는 첫 인자는 모드로 처리해야 함', () => {
       const result = parseTranslateCommandArgs(['unknownMode'])
       expect(result.command).toBeUndefined()
