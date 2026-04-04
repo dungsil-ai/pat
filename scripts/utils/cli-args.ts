@@ -4,6 +4,21 @@ export interface ParsedDictionaryFilterArgs extends DictionaryChangeOptions {
   hasFilterOptions: boolean
 }
 
+export interface ParsedTranslateCommandArgs {
+  command?: TranslateCommand
+  targetMod?: string
+  commandArgs: string[]
+}
+
+type TranslateCommand = 'onlyHash' | 'updateDict' | 'retranslate' | 'updateTransliterationFiles'
+
+const TRANSLATE_COMMANDS: Readonly<Record<string, TranslateCommand>> = {
+  onlyhash: 'onlyHash',
+  updatedict: 'updateDict',
+  retranslate: 'retranslate',
+  updatetransliterationfiles: 'updateTransliterationFiles'
+}
+
 /**
  * CLI 인자에서 딕셔너리 필터링 옵션을 파싱합니다.
  * --since-commit, --commit-range, --since-date 옵션을 지원합니다.
@@ -34,5 +49,25 @@ export function parseDictionaryFilterArgs(args: string[]): ParsedDictionaryFilte
     commitRange,
     sinceDate,
     hasFilterOptions
+  }
+}
+
+/**
+ * 번역 스크립트용 CLI 인자를 파싱합니다.
+ * - 예: `pnpm ck3 rice` → targetMod='rice'
+ * - 예: `pnpm ck3 updateDict rice --since-commit abc1234` → command='updateDict', targetMod='rice'
+ */
+export function parseTranslateCommandArgs(args: string[]): ParsedTranslateCommandArgs {
+  const rawFirstArg = args[0]
+  const normalizedCommand = rawFirstArg?.trim().toLowerCase()
+  const command = normalizedCommand ? TRANSLATE_COMMANDS[normalizedCommand] : undefined
+  const hasCommand = !!command
+  const targetMod = hasCommand ? args[1] : rawFirstArg
+  const commandArgs = hasCommand ? args.slice(1) : args.slice(0)
+
+  return {
+    command,
+    targetMod,
+    commandArgs
   }
 }

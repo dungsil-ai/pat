@@ -15,6 +15,12 @@ describe('모드 필터링 유틸리티', () => {
       expect(result).toEqual(['RICE'])
     })
 
+
+    it('모드 이름 대소문자를 구분하지 않고 매칭해야 함', () => {
+      const result = filterMods(allMods, 'rice')
+      expect(result).toEqual(['RICE'])
+    })
+
     it('지정된 모드가 존재하지 않으면 에러를 발생시켜야 함', () => {
       expect(() => filterMods(allMods, 'NONEXISTENT')).toThrowError(
         `지정된 모드 'NONEXISTENT'가 존재하지 않습니다. 사용 가능한 모드: RICE, VIET, CFP, ETC`

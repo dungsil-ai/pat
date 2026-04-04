@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseDictionaryFilterArgs } from './cli-args'
+import { parseDictionaryFilterArgs, parseTranslateCommandArgs } from './cli-args'
 
 describe('cli-args', () => {
   describe('parseDictionaryFilterArgs', () => {
@@ -73,6 +73,51 @@ describe('cli-args', () => {
       const result = parseDictionaryFilterArgs(['--since-date', '1 week ago'])
       expect(result.hasFilterOptions).toBe(true)
       expect(result.sinceDate).toBe('1 week ago')
+    })
+  })
+
+  describe('parseTranslateCommandArgs', () => {
+    it('명령어 없이 모드만 전달하면 targetMod로 파싱해야 함', () => {
+      const result = parseTranslateCommandArgs(['rice'])
+      expect(result.command).toBeUndefined()
+      expect(result.targetMod).toBe('rice')
+      expect(result.commandArgs).toEqual(['rice'])
+    })
+
+    it('명령어만 전달하면 command로 파싱해야 함', () => {
+      const result = parseTranslateCommandArgs(['onlyHash'])
+      expect(result.command).toBe('onlyHash')
+      expect(result.targetMod).toBeUndefined()
+      expect(result.commandArgs).toEqual([])
+    })
+
+    it('명령어와 모드를 함께 전달하면 둘 다 파싱해야 함', () => {
+      const result = parseTranslateCommandArgs(['updateDict', 'rice', '--since-commit', 'abc1234'])
+      expect(result.command).toBe('updateDict')
+      expect(result.targetMod).toBe('rice')
+      expect(result.commandArgs).toEqual(['rice', '--since-commit', 'abc1234'])
+    })
+
+
+    it('명령어 대소문자를 구분하지 않고 파싱해야 함', () => {
+      const result = parseTranslateCommandArgs(['UpDaTeDiCt', 'rice', '--since-commit', 'abc1234'])
+      expect(result.command).toBe('updateDict')
+      expect(result.targetMod).toBe('rice')
+      expect(result.commandArgs).toEqual(['rice', '--since-commit', 'abc1234'])
+    })
+
+    it('알 수 없는 첫 인자는 모드로 처리해야 함', () => {
+      const result = parseTranslateCommandArgs(['unknownMode'])
+      expect(result.command).toBeUndefined()
+      expect(result.targetMod).toBe('unknownMode')
+      expect(result.commandArgs).toEqual(['unknownMode'])
+    })
+
+    it('명령어는 대소문자를 구분하지 않아야 함', () => {
+      const result = parseTranslateCommandArgs(['UpdateDict', 'Rice'])
+      expect(result.command).toBe('updateDict')
+      expect(result.targetMod).toBe('Rice')
+      expect(result.commandArgs).toEqual(['Rice'])
     })
   })
 })
