@@ -468,15 +468,30 @@ async function getRemoteRefCommitHash(
     : `refs/heads/${ref.name}`
 
   try {
-    const { stdout } = await execFileAsync('git', ['ls-remote', repoUrl, refPath], {
-      timeout: 10000
-    })
-    const line = stdout.trim().split('\n')[0]
-    if (!line) {
+    const args = ref.type === 'tag'
+      ? ['ls-remote', repoUrl, `${refPath}^{}`, refPath]
+      : ['ls-remote', repoUrl, refPath]
+
+    const { stdout } = await execFileAsync('git', args, { timeout: 10000 })
+    const lines = stdout.trim().split('\n').filter(Boolean)
+    if (lines.length === 0) {
       return null
     }
 
-    const [commitHash] = line.split(/\s+/)
+    if (ref.type === 'tag') {
+      const peeledLine = lines.find(line => line.includes(`${refPath}^{}`))
+      const directLine = lines.find(line => line.includes(refPath))
+      const targetLine = peeledLine ?? directLine
+
+      if (!targetLine) {
+        return null
+      }
+
+      const [commitHash] = targetLine.split(/\s+/)
+      return commitHash || null
+    }
+
+    const [commitHash] = lines[0].split(/\s+/)
     return commitHash || null
   } catch {
     return null

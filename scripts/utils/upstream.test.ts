@@ -6,6 +6,7 @@ import { exec } from 'node:child_process'
 
 let fetchMock: ReturnType<typeof vi.fn>
 let execAsyncHandler: (command: string) => Promise<{ stdout: string, stderr: string }>
+let execFileAsyncHandler: (file: string, args?: readonly string[]) => Promise<{ stdout: string, stderr: string }>
 
 vi.mock('node:child_process', () => ({
   exec: Object.assign(
@@ -20,6 +21,31 @@ vi.mock('node:child_process', () => ({
     }),
     {
       [Symbol.for('nodejs.util.promisify.custom')]: (command: string) => execAsyncHandler(command)
+    }
+  ),
+  execFile: Object.assign(
+    vi.fn((
+      file: string,
+      argsOrOptions: unknown,
+      optionsOrCallback?: unknown,
+      maybeCallback?: (error: Error | null, stdout: string, stderr: string) => void
+    ) => {
+      const args = Array.isArray(argsOrOptions) ? argsOrOptions : []
+      const cb = typeof optionsOrCallback === 'function'
+        ? optionsOrCallback
+        : typeof maybeCallback === 'function'
+          ? maybeCallback
+          : null
+
+      if (!cb) return {} as never
+
+      execFileAsyncHandler(file, args)
+        .then(({ stdout, stderr }) => cb(null, stdout, stderr))
+        .catch((error) => cb(error as Error, '', ''))
+      return {} as never
+    }),
+    {
+      [Symbol.for('nodejs.util.promisify.custom')]: (file: string, args?: readonly string[]) => execFileAsyncHandler(file, args)
     }
   )
 }))
@@ -55,6 +81,7 @@ describe('upstream 유틸리티', () => {
     }))
     vi.stubGlobal('fetch', fetchMock)
     execAsyncHandler = async () => ({ stdout: '', stderr: '' })
+    execFileAsyncHandler = async () => ({ stdout: '', stderr: '' })
     vi.mocked(exec).mockClear()
   })
 
@@ -219,6 +246,116 @@ language = "english"
       expect(commands.some(command => command.startsWith('git clone '))).toBe(true)
       expect(commands).toContain('git checkout HEAD')
       expect(commands).not.toContain('git fetch --tags')
+    })
+
+    it('동일한 참조명이면서 커밋도 동일하면 업데이트를 건너뛰어야 함', async () => {
+      const commands: string[] = []
+      const execFileCommands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+
+      execAsyncHandler = async (command: string) => {
+        commands.push(command)
+
+        if (command === 'git status --porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (command.startsWith('git ls-remote --tags --refs')) {
+          return { stdout: 'tagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        if (command === 'git describe --tags --exact-match') {
+          return { stdout: 'v1.0.0\n', stderr: '' }
+        }
+
+        if (command === 'git rev-parse HEAD') {
+          return { stdout: 'commit123\n', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'ls-remote') {
+          return { stdout: 'commit123\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'natural'
+      }, testDir)
+
+      expect(execFileCommands.some(command => command.includes('refs/tags/v1.0.0^{}'))).toBe(true)
+      expect(commands.some(command => command.startsWith('git fetch'))).toBe(false)
+      expect(commands.some(command => command.startsWith('git checkout'))).toBe(false)
+    })
+
+    it('동일한 참조명이어도 커밋이 다르면 업데이트를 진행해야 함', async () => {
+      const commands: string[] = []
+      const execFileCommands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+
+      execAsyncHandler = async (command: string) => {
+        commands.push(command)
+
+        if (command === 'git status --porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (command.startsWith('git ls-remote --tags --refs')) {
+          return { stdout: 'newtaghash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        if (command === 'git describe --tags --exact-match') {
+          return { stdout: 'v1.0.0\n', stderr: '' }
+        }
+
+        if (command === 'git rev-parse HEAD') {
+          return { stdout: 'oldcommit\n', stderr: '' }
+        }
+
+        if (command === 'git fetch --tags') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (command.startsWith('git checkout')) {
+          return { stdout: '', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'ls-remote') {
+          return { stdout: 'newcommit\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'natural'
+      }, testDir)
+
+      expect(execFileCommands.some(command => command.includes('refs/tags/v1.0.0^{}'))).toBe(true)
+      expect(commands).toContain('git fetch --tags')
+      expect(commands.some(command => command.startsWith('git checkout "v1.0.0"'))).toBe(true)
     })
   })
 
