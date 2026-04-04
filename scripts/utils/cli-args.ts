@@ -12,12 +12,16 @@ export interface ParsedTranslateCommandArgs {
 
 type TranslateCommand = 'onlyHash' | 'updateDict' | 'retranslate' | 'updateTransliterationFiles'
 
-const TRANSLATE_COMMANDS: ReadonlySet<TranslateCommand> = new Set([
+const TRANSLATE_COMMANDS: ReadonlyArray<TranslateCommand> = [
   'onlyHash',
   'updateDict',
   'retranslate',
   'updateTransliterationFiles'
-])
+]
+
+const TRANSLATE_COMMAND_LOOKUP: ReadonlyMap<string, TranslateCommand> = new Map(
+  TRANSLATE_COMMANDS.map(command => [command.toLowerCase(), command])
+)
 
 /**
  * CLI 인자에서 딕셔너리 필터링 옵션을 파싱합니다.
@@ -59,8 +63,9 @@ export function parseDictionaryFilterArgs(args: string[]): ParsedDictionaryFilte
  */
 export function parseTranslateCommandArgs(args: string[]): ParsedTranslateCommandArgs {
   const firstArg = args[0]?.trim()
-  const hasCommand = !!firstArg && TRANSLATE_COMMANDS.has(firstArg as TranslateCommand)
-  const command = hasCommand ? firstArg as TranslateCommand : undefined
+  const normalizedFirstArg = firstArg?.toLowerCase()
+  const command = normalizedFirstArg ? TRANSLATE_COMMAND_LOOKUP.get(normalizedFirstArg) : undefined
+  const hasCommand = command !== undefined
   const targetMod = hasCommand ? args[1] : args[0]
   const commandArgs = hasCommand ? args.slice(1) : args.slice(0)
 
