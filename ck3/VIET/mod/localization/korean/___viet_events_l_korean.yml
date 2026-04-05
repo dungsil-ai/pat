@@ -1974,7 +1974,7 @@
   VIETmisc.0410.b.toast_good: "그녀는 당신의 말에 동의합니다" # 5431196476978988733
   VIETmisc.0410.c: "나도 좀 더 해야겠군!" # 15948571075996603476
   VIETmisc.0411.t: "흑의인가, 백의인가?" # 7208156437547720046
-  VIETmisc.0411.desc: "[GetReligionByKey('christianity_religion').GetAdherentNamePluralNoTooltip] 세계 전역에서 수도사들은 각기 다른 색의 수도복을 입습니다. 하지만 이 수도자들에게 가장 어울리는 색은 무엇일까요? 이 문제를 두고 수년간 논쟁이 이어져 왔고, 오늘 [courtier_1.GetTitledFirstName]와 [courtier_2.GetTitledFirstName]도 이 문제를 두고 우호적이면서도 다소 격렬한 토론을 벌였습니다.\n\n“검은색은 허영과 화려함이 없어 겸손함을 드러내지요.” [courtier_1.GetFirstNameNoTooltip](이)가 거듭 주장합니다. “흰색이요? 지나치게 자만스럽습니다. 과시하려는 색이에요. 남의 시선을 끌려는 거죠. 수도자가 해선 안 될 일입니다.”\n\n“오해하셨군요.” [courtier_2.GetFirstNameNoTooltip](이)가 웃으며 고개를 저으며 반박합니다. “흰색은 동정녀 마리아처럼 순수와 결백, 혹은 덕의 색입니다. 검은색은 죄와 죽음을 상징하지요. 어째서 우리 수도자들이 그런 것과 연관되어야 합니까?”" # 9858713435124246719
+  VIETmisc.0411.desc: "[GetReligionByKey('christianity_religion').GetAdherentNamePluralNoTooltip] 세계 전역에서 수도사들은 각기 다른 색의 수도복을 입습니다. 하지만 이 수도자들에게 가장 어울리는 색은 무엇일까요? 이 문제를 두고 수년간 논쟁이 이어져 왔고, 오늘 [courtier_1.GetTitledFirstName]와 [courtier_2.GetTitledFirstName]도 이 문제를 두고 우호적이면서도 다소 격렬한 토론을 벌였습니다.\n\n“검은색은 허영과 화려함이 없어 겸손함을 드러내지요.” [courtier_1.GetFirstNameNoTooltip](이)가 거듭 주장합니다. “흰색이요? 지나치게 자만스럽습니다. 과시하려는 색이에요. 남의 시선을 끌려는 거죠. 수도자가 해선 안 될 일입니다.”\n\n“오해하셨군요.” [courtier_2.GetFirstNameNoTooltip](이)가 웃으며 고개를 저으며 반박합니다. “흰색은 동정녀 마리아처럼 순수와 결백, 혹은 덕의 색입니다. 검은색은 죄와 죽음을 상징하지요. 어째서 우리 수도자들이 그런 것과 연관되어야 합니까?”"
   VIETmisc.0411.a: "흑인의 겸손함이 나에게는 더 잘 맞는군." # 9441127112891331893
   VIETmisc.0411.b: "흰색의 순수함이 그들에게 잘 어울린다고 생각합니다." # 257067786592540153
   VIETmisc.0411.c: "제가 알기로는 둘 다 괜찮습니다." # 3318480054757203575
