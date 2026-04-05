@@ -1,0 +1,41 @@
+﻿l_korean:
+  rule_uba_decision_cooldown_set: "#high ARC:#! 건설 재사용 대기시간" # 9128180145272627237
+  setting_uba_decision_cooldown_no: "재사용 대기시간 없음" # 15675418853079197063
+  setting_uba_decision_cooldown_no_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 재사용 대기시간이 없습니다." # 12591595640326146826
+  setting_uba_decision_cooldown_default: "기본값" # 8341519292606584866
+  setting_uba_decision_cooldown_default_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 5년마다 한 번 사용할 수 있습니다." # 10731364317952670177
+  setting_uba_decision_cooldown_less: "#high 더 짧게#!" # 17237324834576298964
+  setting_uba_decision_cooldown_less_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 2년마다 한 번 사용할 수 있습니다." # 3067422365875756132
+  setting_uba_decision_cooldown_more: "#high 더 길게#!" # 14923969248696369833
+  setting_uba_decision_cooldown_more_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 10년마다 한 번 사용할 수 있습니다." # 59036874619450391
+  setting_uba_decision_cooldown_much_more: "#high 훨씬 더 길게#!" # 4488356512913082189
+  setting_uba_decision_cooldown_much_more_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 20년마다 한 번 사용할 수 있습니다." # 11412651435789624349
+  rule_uba_decision_cost_set: "#high ARC:#! 건설 비용" # 6704164436804389608
+  setting_uba_decision_cost_default: "기본값" # 8341519292606584866
+  setting_uba_decision_cost_default_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 2000 [gold|E]이(가) 필요합니다." # 15802505881465031772
+  setting_uba_decision_cost_less: "#high 더 적게#!" # 3834641606896081663
+  setting_uba_decision_cost_less_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 1000 [gold|E]이(가) 필요합니다." # 8641652167236270372
+  setting_uba_decision_cost_more: "#high 더 많이#!" # 5333256085775359396
+  setting_uba_decision_cost_more_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 4000 [gold|E]이(가) 필요합니다." # 7854609480814138137
+  setting_uba_decision_cost_much_more: "#high 훨씬 더 많이#!" # 10269890717300603384
+  setting_uba_decision_cost_much_more_desc: "$great_project_type_uba_construct_wonder$ [great_project|E]은(는) 8000 [gold|E]이(가) 필요합니다." # 9223480019449809405
+  rule_uba_common_buildings_switch: "#high ARC:#! 모드 일반 건물" # 11373637647492517798
+  setting_uba_common_buildings_on: "활성화" # 3649806351959466267
+  setting_uba_common_buildings_on_desc: "이 모드에서 추가된 일반 건물을 이용할 수 있습니다." # 11801652659528722137
+  setting_uba_common_buildings_off: "#color_red 비활성화#!" # 10380707171630719869
+  setting_uba_common_buildings_off_desc: "이 모드에서 추가된 일반 건물을 #color_red 더 이상 #!이용할 수 없습니다." # 9530944831798193384
+  rule_uba_wonder_buildings_unique_switch: "#high ARC:#! 모드 불가사의 건물 고유성" # 16320042293001357021
+  setting_uba_wonder_buildings_unique_on: "활성화" # 3649806351959466267
+  setting_uba_wonder_buildings_unique_on_desc: "이 모드에서 추가된 불가사의 건물은 각 유형별로 하나씩만 최대 레벨까지 업그레이드할 수 있습니다." # 9868133967204957597
+  setting_uba_wonder_buildings_unique_off: "#color_green 제한 없음 #!" # 5476380869684172945
+  setting_uba_wonder_buildings_unique_off_desc: "이 모드에서 추가된 모든 불가사의 건물은 제한 없이 최대 레벨까지 업그레이드할 수 있습니다." # 6409677486106231893
+  rule_uba_history_special_buildings: "#high ARC:#! 모드 역사적 특수 건물" # 13502157372258171540
+  setting_uba_history_special_buildings_on: "활성화" # 3649806351959466267
+  setting_uba_history_special_buildings_on_desc: "이 모드에서 추가된 역사적 특수 건물을 사용할 수 있습니다." # 5774068805055728813
+  setting_uba_history_special_buildings_off: "#color_red 비활성화 #!" # 10380707171630719869
+  setting_uba_history_special_buildings_off_desc: "이 모드에서 추가된 역사적 특수 건물을 #color_red 더 이상 #!사용할 수 없습니다." # 12017268619172530707
+  rule_uba_innovation_requirement: "#high ARC:#! 특수 건물 업그레이드 요구 사항" # 3534685376819261566
+  setting_uba_innovation_requirement_on: "기본값" # 8341519292606584866
+  setting_uba_innovation_requirement_on_desc: "특수 건물을 업그레이드할 때 특정 혁신이 필요합니다." # 15514651095256190081
+  setting_uba_innovation_requirement_off: "#color_green 요구 사항 없음#!" # 15725305027057599331
+  setting_uba_innovation_requirement_off_desc: "특수 건물을 업그레이드할 때 더 이상 특정 혁신이 필요하지 않습니다." # 5367108842784305610

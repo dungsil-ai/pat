@@ -1,0 +1,100 @@
+﻿l_korean:
+  building_type_UBA_gems_mines_01: "거대 보석 광산" # 4215483903611103753
+  building_type_UBA_gems_mines_01_desc: "수 세기 동안 땅속 깊은 곳에 숨겨져 있던 이 아름다운 보석들의 존재는 알려지지 않았습니다. 하지만 이제 무수한 보물이 우리의 채굴을 기다리고 있습니다." # 10398619856130973173
+  building_UBA_gems_mines_01: "보석 구덩이" # 6824502460981662957
+  building_UBA_gems_mines_01_desc: "$building_type_UBA_gems_mines_01_desc$" # 1108160180120917382
+  building_UBA_gems_mines_02: "보석 광산" # 9304622315615437883
+  building_UBA_gems_mines_02_desc: "$building_ratnapura_mines_02_desc$" # 8732319712673723208
+  building_UBA_gems_mines_03: "대형 보석 광산" # 4073453744932356945
+  building_UBA_gems_mines_03_desc: "$building_ratnapura_mines_03_desc$" # 6771985671615047474
+  building_UBA_gems_mines_04: "보석 채굴 단지" # 11205184667682897328
+  building_UBA_gems_mines_04_desc: "$building_ratnapura_mines_04_desc$" # 13724205083280173511
+  building_type_UBA_diamonds_mines_01: "거대 다이아몬드 광산" # 15537483630511887738
+  building_type_UBA_diamonds_mines_01_desc: "이 아름다운 보석들은 눈부신 광채를 드러내기 위해 세공이 필요하지만, 우리에게 상상할 수 없는 부를 가져다줄 것입니다." # 10582688011060948467
+  building_UBA_diamonds_mines_01: "다이아몬드 구덩이" # 12191746896333048082
+  building_UBA_diamonds_mines_01_desc: "$building_kollur_mines_01_desc$" # 17842854099695767087
+  building_UBA_diamonds_mines_02: "다이아몬드 광산" # 7911073244442635432
+  building_UBA_diamonds_mines_02_desc: "$building_kollur_mines_02_desc$" # 9279156125381036850
+  building_UBA_diamonds_mines_03: "대형 다이아몬드 광산" # 2502146470490016507
+  building_UBA_diamonds_mines_03_desc: "$building_kollur_mines_03_desc$" # 10023210347724336534
+  building_UBA_diamonds_mines_04: "다이아몬드 채굴 단지" # 16259605884506067251
+  building_UBA_diamonds_mines_04_desc: "$building_kollur_mines_04_desc$" # 1163940913012407392
+  building_type_UBA_jade_mines_01: "거대 옥 광산" # 8647613628024306148
+  building_type_UBA_jade_mines_01_desc: "이 지역은 옥이 풍부합니다. 옥은 산에서 직접 캐내거나 노천 구덩이와 강바닥에서 채취합니다." # 5363757182722250872
+  building_UBA_jade_mines_01: "옥 채굴 정착지" # 4477046858163475889
+  building_UBA_jade_mines_01_desc: "$building_type_UBA_jade_mines_01_desc$" # 4643019471846606562
+  building_UBA_jade_mines_02: "옥 광산" # 18226902513884711029
+  building_UBA_jade_mines_02_desc: "$building_hetian_mines_02_desc$" # 6188711495495687201
+  building_UBA_jade_mines_03: "대형 옥 광산" # 3512534019212388018
+  building_UBA_jade_mines_03_desc: "$building_hetian_mines_03_desc$" # 17395500746431349038
+  building_UBA_jade_mines_04: "옥 채굴 단지" # 2305613314446999891
+  building_UBA_jade_mines_04_desc: "$building_hetian_mines_04_desc$" # 10741687437400497256
+  building_type_UBA_salt_mines_01: "거대 소금 광산" # 428766551077681526
+  building_type_UBA_salt_mines_01_desc: "소금 없이는 누구도 살아갈 수 없습니다. 이 광산들과 소금 시장은 이 지역의 핵심적인 수입원입니다." # 15092240501635553086
+  building_UBA_salt_mines_01: "소금 채굴 정착지" # 12106580933794687949
+  building_UBA_salt_mines_01_desc: "$building_type_UBA_salt_mines_01_desc$" # 18021298773659180869
+  building_UBA_salt_mines_02: "소금 광산" # 14960737813624425304
+  building_UBA_salt_mines_02_desc: "$building_taghaza_mines_02_desc$" # 6648550614050579410
+  building_UBA_salt_mines_03: "대형 소금 광산" # 6826403579996502247
+  building_UBA_salt_mines_03_desc: "$building_taghaza_mines_03_desc$" # 9467188026647366065
+  building_UBA_salt_mines_04: "소금 채굴 단지" # 17857586816195157725
+  building_UBA_salt_mines_04_desc: "$building_taghaza_mines_04_desc$" # 10508770049178524601
+  building_type_UBA_gold_mines_01: "거대한 금광" # 11753054424925828354
+  building_type_UBA_gold_mines_01_desc: "이 빛나는 보물의 찬란함을 거부할 자는 아무도 없으며, 이 지역은 마침 이 귀금속을 산출합니다." # 13926498952840731514
+  building_UBA_gold_mines_01: "금 채굴 정착지" # 7946255982550076483
+  building_UBA_gold_mines_01_desc: "$building_type_UBA_gold_mines_01_desc$" # 245404990051878186
+  building_UBA_gold_mines_02: "금광" # 16482840207951343274
+  building_UBA_gold_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_UBA_gold_mines_03: "대규모 금광" # 2402247275676152930
+  building_UBA_gold_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_UBA_gold_mines_04: "금 채굴 단지" # 16667230024148634955
+  building_UBA_gold_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_UBA_silver_mines_01: "거대한 은광" # 13322670680113419056
+  building_type_UBA_silver_mines_01_desc: "이 거대한 은 매장지는 기회를 의미하며, 많은 이들을 이 지역으로 끌어들입니다." # 2277328241661624973
+  building_UBA_silver_mines_01: "은 채굴 정착지" # 1117746034392225119
+  building_UBA_silver_mines_01_desc: "$building_type_UBA_silver_mines_01_desc$" # 8644478638478623574
+  building_UBA_silver_mines_02: "은광" # 7106253149140252416
+  building_UBA_silver_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_UBA_silver_mines_03: "대규모 은광" # 8345447097015169395
+  building_UBA_silver_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_UBA_silver_mines_04: "은 채굴 단지" # 6931581786871682423
+  building_UBA_silver_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_UBA_copper_mines_01: "거대한 구리 광산" # 6869458955328029701
+  building_type_UBA_copper_mines_01_desc: "이곳의 광맥만큼 풍부한 구리 매장지는 거의 없습니다. 머지않아 이곳은 놀라운 양의 구리 광석을 생산하기 시작할 것입니다." # 5855540330952397259
+  building_UBA_copper_mines_01: "구리 채굴 정착지" # 3457362061353166340
+  building_UBA_copper_mines_01_desc: "$building_type_UBA_copper_mines_01_desc$" # 5412178308881457012
+  building_UBA_copper_mines_02: "구리 광산" # 8725830901064687523
+  building_UBA_copper_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_UBA_copper_mines_03: "대규모 구리 광산" # 5684645578840563924
+  building_UBA_copper_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_UBA_copper_mines_04: "구리 채굴 단지" # 8888670971693391573
+  building_UBA_copper_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_UBA_iron_mines_01: "거대한 철광" # 11195423978241695780
+  building_type_UBA_iron_mines_01_desc: "광부들은 이 평범한 금속을 얻기 위해 피와 땀을 바쳤고, 이는 곧 강력한 무기로 제련될 것입니다." # 4860434547582956820
+  building_UBA_iron_mines_01: "채굴 정착지" # 915563000628537053
+  building_UBA_iron_mines_01_desc: "$building_type_UBA_iron_mines_01_desc$" # 11428479567658372728
+  building_UBA_iron_mines_02: "대규모 라멜스베르크 광산" # 611439566417082932
+  building_UBA_iron_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_UBA_iron_mines_03: "대규모 라멜스베르크 광산" # 611439566417082932
+  building_UBA_iron_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_UBA_iron_mines_04: "채굴 단지" # 14243692058512184493
+  building_UBA_iron_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  UBA_iron_mines_effect_desc: "#V $building_type_wind_furnace_01$#![buildings|E] 모든 지역에 건설 가능" # 10513625985043902759
+  building_type_UBA_wonderful_mines_01: "신비로운 광산" # 12191485373117603359
+  building_type_UBA_wonderful_mines_01_desc: "이 땅에 묻힌 경이로운 보물을 진정으로 헤아릴 수 있는 자가 누구인가? 우리가 찾는 부는 어쩌면 바로 우리 발밑에 숨겨져 있을지도 모른다." # 15833127513668276870
+  building_UBA_wonderful_mines_01: "신비로운 광산" # 12191485373117603359
+  building_UBA_wonderful_mines_01_desc: "최근 발견된 기묘한 광산이다. 이 매장지에 채굴 가치가 있는지 아직 판명되지 않았다." # 4009969136165451422
+  building_UBA_wonderful_mines_02: "기적의 광산: 철" # 11181474116226963168
+  building_UBA_wonderful_mines_02_desc: "철을 생산하는 광산이다. 초기 광산 주변으로 수십 개의 마을이 세워졌다. 이 채굴 구역은 초기에는 철광석의 소규모 생산에 집중하며, 간혹 주석, 납 및 기타 금속 광석이 발견되기도 한다." # 10851083468028943171
+  building_UBA_wonderful_mines_03: "기적의 광산: 구리" # 14985770939414539955
+  building_UBA_wonderful_mines_03_desc: "다양한 금속을 생산하는 광산이다. 철, 주석, 납 및 기타 금속 외에도 광부들이 쉽게 접근할 수 있는 구리 광맥을 발견했으며, 곧 막대한 양의 구리 광석을 산출할 것이다." # 9912787771613019810
+  building_UBA_wonderful_mines_04: "기적의 광산: 은" # 13698127786646027673
+  building_UBA_wonderful_mines_04_desc: "정착민이 늘어남에 따라 사람들은 이 광산에 대해 더 깊이 이해하게 되었다. 이곳에는 상상할 수 있는 거의 모든 금속이 층을 이루어 명확히 구분되어 있으며 매장량도 엄청나다. 게다가 귀중한 은까지 이곳에서 발견되었다!" # 2742025485071199066
+  building_UBA_wonderful_mines_05: "기적의 광산: 금" # 5862081598956073356
+  building_UBA_wonderful_mines_05_desc: "여러 요인이 이곳이 다양하고 질 좋은 광석이 풍부한 기적의 금속 매장지임을 가리키고 있다. 금 발견 소식에 숙련된 기술자들이 대거 몰려들었고, 진정으로 중요한 채굴 현장을 건설하는 것이 가능해졌다." # 10082208605737391885
+  building_UBA_wonderful_mines_06: "기적의 광산: 보석" # 9527858797769453474
+  building_UBA_wonderful_mines_06_desc: "채굴 규모가 커짐에 따라 더 많은 광산 입구가 개방되고, 더 깊은 매장지에 도달하기 위해 거대한 수직 갱도가 굴착되고 있다. 노동자들이 대형 보석을 자주 발견함에 따라, 보석 추출량을 늘리기 위해 더 많은 기술자가 투입되고 있다." # 10416968923829021597
+  building_UBA_wonderful_mines_07: "기적의 채굴 복합단지" # 18070553068225789959
+  building_UBA_wonderful_mines_07_desc: "채굴량과 광물 자원의 종류가 지속적으로 증가함에 따라 정착지 근처에 다수의 제련소와 주조소가 설립되었고, 총 노동자 수는 수만 명에 육박하게 되었다. 또한 보석 채굴이 산업적 규모에 도달하여 전 세계의 장인과 상인들을 끌어모으고 있으며, 이는 상상할 수 없는 부를 가져다줄 것이다." # 14297150491679680316
+  building_UBA_wonderful_mines_08: "채굴의 수도" # 5560516119306965918
+  building_UBA_wonderful_mines_08_desc: "광산에서 끝없는 부가 계속해서 쏟아져 나오면서, 한때 무명이었던 이 마을은 이제 널리 이름을 떨치게 되었다. 시인들의 말처럼, 이곳의 이름은 이제 부와 동의어가 되었다." # 10216635478116002273

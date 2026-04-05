@@ -361,6 +361,7 @@
   maa_cap_high: "MGR" # 10298390964080620778
   maa_cap_vhigh: "MGR" # 10298390964080620778
   maa_cap_extreme: "MGR" # 10298390964080620778
+  ai_aggressiveness_extreme: "\" " # 8144695638692744150
   mgr_recent_holy_war: "최근 성전" # 6270305194832323513
   mgr_recent_holy_war_desc: "이 인물은 최근에 성전을 선포했습니다." # 4787444958419401478
   mgr_recent_conquest_war: "최근 정복" # 14844837252538347007
@@ -383,6 +384,7 @@
   setting_no_dejure_empires_desc: "제국 규범 권역이 존재하지 않습니다." # 4905791967670499292
   d_mgr_null_article: "No Duchy" # 12724900300331515104
   k_mgr_null_article: "No Kingdom" # 3105032529330778160
+  k_mgr_null_adj: "\" " # 8144695638692744150
   e_mgr_null_article: "No Empire" # 16011794868592383206
   rule_special_title_creation: "#G MGR: #! 특수 작위" # 16305661186362624898
   setting_default_special_titles: "기본" # 8341519292606584866
@@ -577,3 +579,12 @@
   setting_mgr_meritocracies_all_desc: "명예주의 정부는 모든 통치자가 선택할 수 있는 행정 정부 방식입니다." # 6655373453935173965
   setting_mgr_meritocracies_celestial: "#high 천하제일#!" # 8626537794516790774
   setting_mgr_meritocracies_celestial_desc: "가문주의 및 천상 정부는 모든 통치자에게 행정 정부 선택지로 제공됩니다." # 7729232412974699161
+  ai_aggressiveness_vlow: "" # 17241709254077376921
+  ai_aggressiveness_low: "" # 17241709254077376921
+  ai_aggressiveness_high: "" # 17241709254077376921
+  ai_aggressiveness_vhigh: "" # 17241709254077376921
+  d_mgr_null: "" # 17241709254077376921
+  k_mgr_null: "" # 17241709254077376921
+  e_mgr_null: "" # 17241709254077376921
+  d_mgr_null_adj: "" # 17241709254077376921
+  e_mgr_null_adj: "" # 17241709254077376921

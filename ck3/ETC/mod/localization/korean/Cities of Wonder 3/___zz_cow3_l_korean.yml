@@ -69,7 +69,7 @@
   populate.0001.k: "세계 최대의 시장" # 4512557310493636299
   populate.0001.tt.k: "[GetBuilding('cow_great_harbor_01').GetName]을 건설했습니다." # 10097179421134192165
   populate.0001.l: "난공불락의 우뚝 솟은 성벽" # 14681585507754321210
-  populate.0001.tt.l: "귀하는 [GetBuilding('cow_walls_new').GetName]을 건설했습니다." # 15130403237308531101
+  populate.0001.tt.l: "[GetBuilding('cow_walls_new_01').GetName]을(를) 건설합니다" # 7157220461708608891
   populate.0001.m: "천 년을 버틸 요새" # 17010633018612384117
   populate.0001.tt.m: "[GetBuilding('cow_grand_fortress_01').GetName]을 건설했습니다." # 14577796130306220521
   populate.0001.n: "역사상 가장 위대한 등대" # 16444968486350998874
@@ -80,3 +80,13 @@
   found_local_kingdom_decision_tooltip: "경이로운 도시의 후원 아래, 그대는 스스로를 [ROOT.Char.Custom('GetQueenKing')|U]로 즉위시킬 수 있을 것입니다." # 3359029711479858236
   found_local_kingdom_decision_confirm: "그들의 새로운 [ROOT.Char.Custom('GetQueenKing')|U]를 보게 하라!" # 3805369031612303549
   found_local_kingdom_decision_desc: "[ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]은 거대한 부르그로 성장했지만, 스스로 왕이라 칭하는 많은 이들은 여전히 그들의 의지를 따를 신민 하나 없이 끝없이 펼쳐진 땅을 다스리고 있습니다.\n\n하지만 저는 세상이 이제껏 보아온 가장 위대한 도시 중 하나를 다스리고 있습니다. 저의 신민은 수십만에 달하며, 저의 군대는 이 땅에 흩어져 있는 거대한 제국들의 군대보다도 더 웅장합니다. 이제 세상이 [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]의 힘을 알 때가 되었습니다!" # 4488510595024092409
+  1_burge_limit_trigger: "귀하는 경이의 도시를 1개 넘게 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 2개 이상의 경이의 도시가 존재하지 않습니다" # 10436541995994886778
+  2_burge_limit_trigger: "귀하는 경이의 도시를 2개 넘게 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 5개 이상의 경이의 도시가 존재하지 않습니다" # 3113428692425094752
+  5_burge_limit_trigger: "귀하는 경이의 도시를 5개 넘게 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 9개 이상의 경이의 도시가 존재하지 않습니다" # 9050596635267924508
+  rebuild_1_burge_limit_trigger: "귀하는 경이의 도시를 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 2개 이상의 경이의 도시가 존재하지 않습니다" # 2945450224013731229
+  rebuild_2_burge_limit_trigger: "귀하는 경이의 도시를 2개 이상 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 5개 이상의 경이의 도시가 존재하지 않습니다" # 18151190865525306548
+  rebuild_5_burge_limit_trigger: "귀하는 경이의 도시를 5개 이상 직접 보유하고 있지 않으며, 귀하 또는 귀하의 주군 전체 영지 내에 9개 이상의 경이의 도시가 존재하지 않습니다" # 4776991554876456851
+  repopulate.0002.t: "재건합시다!" # 10121842779680217235
+  repopulate.0002.desc: "나의 [GetPlayer.GetLadyLord|U]여, 우리의 경이의 도시 중 하나 이상이 파손되었으니 옛 영광을 되찾기 위해 복구해야 합니다." # 15273584112757715581
+  repopulate.0003.t: "[my_barony.GetNameNoTierNoTooltip]은(는) 경이의 도시입니다!" # 14819787918264003567
+  repopulate.0003.desc: "나의 [GetPlayer.GetLadyLord|U]여, 아시다시피 [my_barony.GetNameNoTier]은(는) 오랫동안 세계의 위대한 도시 중 하나로 자리매김해 왔습니다. 따라서 이 도시는 강력한 방어 시설과 번영하는 경제, 활기찬 문화를 자랑하며, 파괴된 후에도 빠르게 회복할 수 있을 것입니다.\n\n[GetPlayer.GetTitleAsNameNoTooltip] [GetPlayer.GetFirstNameNoTooltip]이시여, [my_barony.GetNameNoTierNoTooltip]을(를) 다른 경이의 도시들과 차별화하기 위해 어떤 독특한 건축물을 세우셨는지 상기시켜 주시겠습니까?" # 14131096748433464318

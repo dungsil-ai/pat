@@ -1,0 +1,50 @@
+﻿l_english:
+# 决议组
+ decision_group_type_uba_flavor: "Buildings Flavor Decisions"
+# 决议
+ uba_unlock_pet_flavor_desc:0 "Enable #EMP $uba_flavor_pet_decision$#![decision|E]"
+ uba_flavor_pet_decision:0 "Adopt Animal"
+ uba_flavor_pet_decision_tooltip:0 "Adopt a lovely pet... or a warhorse!"
+ uba_flavor_pet_decision_effect:0 "Choose the animal to adopt."
+ uba_flavor_pet_decision_desc:0 "Life is not all plots and killings, sometimes a little something else is needed... Why don't I adopt an animal to keep me company?"
+ uba_flavor_pet_decision_confirm:0 "Make the Decision"
+
+ uba_unlock_hunt_flavor_desc:0 "Enable #EMP $uba_flavor_hunt_decision$#![decision|E]"
+ uba_flavor_hunt_decision:0 "Seek Prey"
+ uba_flavor_hunt_decision_tooltip:0 "Look for something to hunt."
+ uba_flavor_hunt_decision_effect:0 "Have your $master_of_hunt_court_position$ seek suitable prey within your domain."
+ uba_flavor_hunt_decision_desc:0 "It has been too long since I tested my hunting skills. I swear I can hear my bow sighing... It is time to find it some worthy opponents."
+ uba_flavor_hunt_decision_confirm:0 "Dispatch Messengers"
+
+ uba_unlock_knight_flavor_desc:0 "Enable #EMP $uba_flavor_knight_decision$#![decision|E]"
+ uba_flavor_knight_decision:0 "Train $knight_culture_player_plural_no_tooltip$"
+ uba_flavor_knight_decision_tooltip:0 "Provide a training regimen for the $knight_culture_player_plural_no_tooltip$."
+ uba_flavor_knight_decision_effect:0 "Provide a comprehensive training regimen for your $knight_culture_player_plural_no_tooltip$."
+ uba_flavor_knight_decision_desc:0 "I have noticed that my $knight_culture_player_plural_no_tooltip$ seem to have grown lax in their training. If a $knight_culture_player$ is neither skilled in arms nor versed in tactics, how can they hope to overcome the enemy on the battlefield?"
+ uba_flavor_knight_decision_confirm:0 "Begin Training"
+
+ uba_flavor_decisions.0011.t:0 "$uba_flavor_pet_decision$"
+ uba_flavor_decisions.0011.desc:0 "I wander through the courtyard, pondering what sort of animal would be the most suitable choice.\n\nAfter rounding yet another corner, I finally make up my mind --"
+ uba_flavor_decisions.0011.a:0 "A lovely cat."
+ uba_flavor_decisions.0011.b:0 "A clever dog."
+ uba_flavor_decisions.0011.c:0 "A valiant horse."
+ uba_flavor_decisions.0011.rock:0 "A rock by the roadside."
+ uba_flavor_decisions.0011.rock.tt:0 "For reasons unknown, I suddenly feel that a rock would also make a fine pet..."
+ uba_flavor_decisions.0011.cancel:0 "Alas, perhaps not now."
+
+ uba_flavor_decisions.0012.t:0 "$uba_flavor_hunt_decision$"
+ uba_flavor_decisions.0012.desc:0 "The $master_of_hunt_court_position$ looks eager: "My lord, whatever quarry you desire, I shall do my utmost to find it!"\n\nI nod, my decision made."
+ uba_flavor_decisions.0012.a:0 "Find suitable prey for my hunting bow."
+ uba_flavor_decisions.0012.b:0 "Find an appropriate target for my hunting falcon."
+ uba_flavor_decisions.0012.c:0 "[ROOT.Char.GetTitleAsNameNoTooltip] needs a worthy opponent."
+ uba_flavor_decisions.0012.d:0 "[ROOT.Char.GetTitleAsNameNoTooltip] does not shy away from dangerous game."
+ uba_flavor_decisions.0012.cancel:0 "I have changed my mind, let us forget this."
+
+ uba_flavor_decisions.0021.t:0 "$uba_flavor_knight_decision$"
+ uba_flavor_decisions.0021.desc:0 "I arrive at the training grounds to see [training_knight.GetFirstNameNoTooltip] and the other $knight_culture_player_plural_no_tooltip$ lined up, awaiting my command.\n\n"My lord, all the knights are here, ready for your orders," [training_knight.GetFirstNameNoTooltip] says.\n\nPerhaps I should decide on a theme for today's training."
+ uba_flavor_decisions.0021.a:0 "Simple sparring will suffice."
+ uba_flavor_decisions.0021.a.tt:0 "All knights (and myself) will gain some $prowess$."
+ uba_flavor_decisions.0021.b:0 "The $knight_culture_player_plural_no_tooltip$ should learn some new tactics."
+ uba_flavor_decisions.0021.b.tt:0 "All knights (and myself) will learn some new tactics."
+ uba_flavor_decisions.0021.cancel:0 "All of you, dismissed!"
+

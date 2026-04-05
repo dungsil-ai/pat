@@ -84,6 +84,7 @@
   VIDIN_LOCATION_1_TOOLTIP: "비딘 테마가 귀하의 영토 내에 있습니다" # 4378528587714779010
   BULGARIA_LOCATION_2_TOOLTIP: "불가리아 테마가 귀하의 영토 내에 있습니다" # 643666136866554980
   TURNOVO_LOCATION_3_TOOLTIP: "모에시아 테마가 귀하의 영토 내에 있습니다" # 2719415425695458388
+  e_bulgaria_article: "\" " # 8144695638692744150
   e_bulgaria: "불가리아 차르국" # 10773196119139716367
   e_bulgaria_adj: "불가리아" # 10473958699367931300
   empire_of_bulgaria_decision: "불가리아 차르국 형성" # 16207025795754103047
@@ -95,3 +96,13 @@
   title_bulgarian_tsar_female: "차리나" # 3749445363252026030
   title_bulgarian_tsar: "차르국" # 3393529145639846724
   founded_empire_of_bulgaria_modifier: "불가리아의 중건자" # 15933981279510091660
+  great_project_name_possessive_pacify_slavs: "" # 17241709254077376921
+  great_project_name_pacify_slavs: "" # 17241709254077376921
+  great_project_type_pacify_slavs_contribution_name_zupans: "" # 17241709254077376921
+  great_project_type_pacify_slavs_contribution_name_ohrid: "" # 17241709254077376921
+  great_project_type_pacify_slavs_contribution_name_fortress: "" # 17241709254077376921
+  great_project_type_pacify_slavs_contribution_name_brigands: "" # 17241709254077376921
+  great_project_type_pacify_slavs_contribution_name_tax: "" # 17241709254077376921
+  slavic_unrest.0007.t: "" # 17241709254077376921
+  slavic_unrest.0007.desc: "" # 17241709254077376921
+  slavic_unrest.0007.a: "" # 17241709254077376921

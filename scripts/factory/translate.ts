@@ -7,6 +7,7 @@ import { hashing } from '../utils/hashing'
 import { log } from '../utils/logger'
 import { translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
 import { updateAllUpstreams } from '../utils/upstream'
+import { getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
 
 const execAsync = promisify(exec)
@@ -92,10 +93,6 @@ interface ModMeta {
   };
 }
 
-type UpstreamFileHashMap = Record<string, string>
-
-const UPSTREAM_FILE_HASHES_FILENAME = '.pat-file-hashes.json'
-
 export interface UntranslatedItem {
   mod: string
   file: string
@@ -164,27 +161,6 @@ async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModW
   return workItems
 }
 
-async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFileHashMap> {
-  try {
-    const content = await readFile(hashFilePath, 'utf-8')
-    const parsed = JSON.parse(content)
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-      return {}
-    }
-    return parsed as UpstreamFileHashMap
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-      return {}
-    }
-    log.warn(`업스트림 파일 해시를 읽는 중 오류가 발생해 초기 상태로 진행합니다: ${hashFilePath}`)
-    return {}
-  }
-}
-
-async function writeUpstreamFileHashes(hashFilePath: string, hashes: UpstreamFileHashMap): Promise<void> {
-  await writeFile(hashFilePath, `${JSON.stringify(hashes, null, 2)}\n`, 'utf-8')
-}
-
 export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
@@ -221,7 +197,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
 
     const metaContent = await readFile(metaPath, 'utf-8')
     const meta = parseToml(metaContent) as ModMeta
-    const hashFilePath = join(modDir, 'upstream', UPSTREAM_FILE_HASHES_FILENAME)
+      const hashFilePath = getUpstreamFileHashesPath(modDir)
     const savedFileHashes = await readUpstreamFileHashes(hashFilePath)
     const nextFileHashes: UpstreamFileHashMap = { ...savedFileHashes }
     const currentSourcePaths = new Set<string>()

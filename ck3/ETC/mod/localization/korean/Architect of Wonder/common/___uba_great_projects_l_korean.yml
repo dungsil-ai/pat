@@ -1,0 +1,134 @@
+﻿l_korean:
+  great_project_type_uba_construct_wonder: "경이 건축" # 13445680059978733801
+  great_project_type_uba_construct_wonder_desc: "내 삶은 언젠가 끝을 맞이하겠지만, 내 손으로 빚어낸 이 경이는 내가 떠난 뒤에도 세상의 변화를 증명하는 증인이 될 것이다." # 13004089770289029469
+  great_project_type_uba_construct_wonder_plan: "경이가 선택되었습니다" # 9087110204166072832
+  great_project_type_uba_construct_wonder_does_not_control: "은(는) 영지입니다" # 4073884157192902282
+  great_project_type_uba_construct_wonder_does_not_already_have_special_buildings: "기존의 [special_building|E]이(가) 없습니다" # 6882647520905943986
+  great_project_type_uba_construct_wonder_does_not_have_holdings: "[holding|E]을(를) 보유하고 있습니다" # 10044746369235294928
+  great_project_type_uba_construct_wonder_possessive: "$great_project_type_uba_construct_wonder$" # 15175869758910509287
+  uba_construct_wonder_province_gains_wonders_fallback: "선택된 [barony|E]" # 7866197674974393449
+  uba_construct_wonder_province_gains_wonders: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_gains_wonders_fallback')]은(는) 새로운 경이 [special_building|E]을(를) 얻게 됩니다" # 3866049113342317323
+  uba_special_building_replace_tt: "@alert_icon! #alert_trial 기존의 [special_building|E]이(가) 교체됩니다#!" # 3283322336656277173
+  great_project_type_uba_construct_wonder_contribution_materials: "재료" # 3602731907356340269
+  great_project_type_uba_construct_wonder_contribution_work_force: "노동력" # 13654392870804098078
+  great_project_type_uba_construct_wonder_contribution_architects: "건축가" # 14466715384246141290
+  great_project_type_uba_construct_wonder_contribution_engineers: "기술자" # 500841390026647505
+  great_project_type_uba_construct_wonder_built_recently: "최근에 $great_project_type_uba_construct_wonder$ [great_project|E]을(를) 완료하지 않았습니다" # 17374495220695965499
+  uba_construct_wonder_built_modifier: "$great_project_type_uba_construct_wonder$" # 15175869758910509287
+  uba_construct_wonder_built_modifier_desc: "이곳에서 최근 웅장한 $great_project_type_uba_construct_wonder$ [great_project|E]이(가) 완공되었습니다." # 12480241475830380448
+  uba_construct_wonder_built_modifier_tooltip: "$great_project_type_uba_construct_wonder$ [great_project|E]을(를) 완료한 후에는 일정 기간 동안 이 결정을 다시 사용할 수 없습니다." # 642472058028822710
+  great_project_type_uba_find_mines: "광산 찾기" # 14226150087928056545
+  great_project_type_uba_find_mines_desc: "파고! 또 파라! 계속 파라! 광맥을 찾아내면 막대한 부를 거머쥐리라!" # 1373872673229825331
+  great_project_type_uba_find_mines_plan: "광산이 선택되었습니다" # 12868400633713213733
+  great_project_type_uba_find_mines_possessive: "$great_project_type_uba_find_mines$" # 16197693453681821430
+  uba_construct_wonder_province_find_mines_fallback: "선택된 [barony|E]" # 8757697183309041034
+  uba_construct_wonder_province_find_mines: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_find_mines_fallback')]에서 광산 [special_building|E]을(를) 발견하게 됩니다" # 16616757382344888085
+  great_project_type_uba_find_mines_contribution_guides: "안내인" # 10964292749163094226
+  great_project_type_uba_find_mines_contribution_work_force: "노동력" # 13654392870804098078
+  great_project_type_uba_find_mines_contribution_prospectors: "탐사대" # 12678709598279272777
+  great_project_type_uba_find_mines_contribution_engineers: "공학자" # 500841390026647505
+  uba_find_mines_tooltip: "저 광맥을 찾아낼 수만 있다면, 모든 비용을 들일 가치가 있을 것이다!" # 7745281212413825719
+  great_project_type_uba_forbidden_city_update: "황궁 개보수" # 3903906378927161101
+  great_project_type_uba_forbidden_city_update_desc: "자금성은 거의 천 채에 달하는 개별 건물로 구성된 거대한 황실 궁궐입니다. 단지 전체가 높은 성벽과 깊은 해자로 둘러싸여 있어, 통치 정부와 그 안에서 끊임없이 일하는 수많은 관료를 보호합니다. 추가적인 개보수와 개선을 통해, 자금성은 우리 왕조의 영광스러운 업적을 증명하는 상징이 될 것입니다." # 3596311307291242166
+  great_project_type_uba_forbidden_city_update_possessive: "$great_project_type_uba_forbidden_city_update$" # 10831845519749532765
+  great_project_type_uba_forbidden_city_update_contribution_materials: "$great_project_type_strengthen_capital_contribution_materials$" # 5445080837620596951
+  great_project_type_uba_forbidden_city_update_contribution_architects: "$great_project_type_strengthen_capital_contribution_architects$" # 10197072158955556636
+  great_project_type_uba_forbidden_city_update_contribution_engineers: "$great_project_type_strengthen_capital_contribution_engineers$" # 4466862647648478522
+  great_project_type_uba_forbidden_city_update_contribution_workforce: "$great_project_type_strengthen_capital_contribution_workforce$" # 12106515280917713111
+  great_project_type_uba_forbidden_city_update_contribution_sculptors: "$great_project_type_strengthen_capital_contribution_sculptors$" # 11795822944552423917
+  great_project_type_uba_update_recently: "마지막 프로젝트 이후 최소 5년이 지남" # 14317393291819056129
+  uba_forbidden_city_update_modifier: "황궁 건설 프로젝트" # 2600450148162157351
+  uba_forbidden_city_update_modifier_desc: "최근 이곳에서 웅장한 건설 프로젝트가 완료되었습니다." # 7066494365256010899
+  great_project_type_uba_capital_city: "황성 건설" # 11426277192351620561
+  great_project_type_uba_capital_city_desc: "수도라면 천자의 위엄을 드러낼 수 있도록 웅장하고 화려해야 합니다. 이 성벽 안에서 강력하고 효율적인 정부가 통치하여, 도시와 제국 전역이 번영을 누리게 할 것입니다." # 13504108426130584807
+  uba_capital_city_province_gains_buildings_fallback: "선택된 [barony|E]" # 8757697183309041034
+  uba_capital_city_province_gains_buildings: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_find_mines_fallback')]은(는) [GetBuilding('kaifeng_palace_01').GetName] [duchy_building|E]을(를) 획득합니다." # 7812302801504331081
+  great_project_type_uba_capital_city_possessive: "$great_project_type_uba_capital_city$" # 15610019247327332300
+  great_project_type_uba_capital_city_contribution_materials: "$great_project_type_uba_construct_wonder_contribution_materials$" # 10528216865054528038
+  great_project_type_uba_capital_city_contribution_architects: "$great_project_type_uba_construct_wonder_contribution_architects$" # 16214804689640719622
+  great_project_type_uba_capital_city_contribution_engineers: "$great_project_type_uba_construct_wonder_contribution_engineers$" # 7329250084218313704
+  great_project_type_uba_capital_city_contribution_work_force: "$great_project_type_uba_construct_wonder_contribution_work_force$" # 5354318787592859842
+  great_project_type_uba_capital_city_duchy_capital: "[de_jure|E] [duchy|E] [capital|E]인가" # 11259370353912752415
+  great_project_type_uba_capital_city_not_again: "[GetBuilding('kaifeng_palace_01').GetName]을(를) 보유하지 않음" # 8564760210175331349
+  great_project_type_uba_construct_wall: "장성 건설" # 6837629500341646619
+  great_project_type_uba_construct_wall_desc: "$uba_decisions.1100.desc$" # 8268696290376083162
+  uba_construct_wall_province_gains_buildings_fallback: "선택된 [barony|E]" # 8757697183309041034
+  uba_construct_wall_province_gains_buildings: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_find_mines_fallback')]은(는) [GetBuilding('UBA_wall_01').GetName] [duchy_building|E]을(를) 획득합니다." # 1492364173227338864
+  great_project_type_uba_construct_wall_possessive: "$great_project_type_uba_construct_wall$" # 16971983087367668695
+  great_project_type_uba_construct_wall_contribution_materials: "$great_project_type_uba_construct_wonder_contribution_materials$" # 10528216865054528038
+  great_project_type_uba_construct_wall_contribution_architects: "$great_project_type_uba_construct_wonder_contribution_architects$" # 16214804689640719622
+  great_project_type_uba_construct_wall_contribution_engineers: "$great_project_type_uba_construct_wonder_contribution_engineers$" # 7329250084218313704
+  great_project_type_uba_construct_wall_contribution_work_force: "$great_project_type_uba_construct_wonder_contribution_work_force$" # 5354318787592859842
+  great_project_type_uba_construct_valhalla: "피와 황금의 도시" # 13039942777122182761
+  great_project_type_uba_construct_valhalla_desc: "수년간 나는 칠해에서 셀 수 없이 많은 부를 약탈하여 만의 높은 성벽 안에 쌓아두었다. 이제 이 보물들을 수용할 더 웅장한 도시가 필요하다." # 1669806848535706297
+  uba_construct_valhalla_province_gains_buildings_fallback: "선택된 [barony|E]" # 8757697183309041034
+  uba_construct_valhalla_province_gains_buildings: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_find_mines_fallback')]은(는) [GetBuilding('UBA_valhalla_01').GetName] [duchy_building|E]을(를) 획득합니다." # 12739616170432163483
+  great_project_type_uba_construct_valhalla_possessive: "$great_project_type_uba_construct_valhalla$" # 14575255478491731818
+  great_project_type_uba_construct_valhalla_contribution_materials: "$great_project_type_uba_construct_wonder_contribution_materials$" # 10528216865054528038
+  great_project_type_uba_construct_valhalla_contribution_architects: "$great_project_type_uba_construct_wonder_contribution_architects$" # 16214804689640719622
+  great_project_type_uba_construct_valhalla_contribution_engineers: "$great_project_type_uba_construct_wonder_contribution_engineers$" # 7329250084218313704
+  great_project_type_uba_construct_valhalla_contribution_work_force: "$great_project_type_uba_construct_wonder_contribution_work_force$" # 5354318787592859842
+  great_project_type_uba_construct_headquarter: "성기사단 본부" # 10820379813766152105
+  great_project_type_uba_construct_headquarter_desc: "마침내 진정으로 성스러운 땅이 되었구나! 아스칼론에서 오마르까지 황금 십자가가 빛나고, 이교도들은 성지에서 완전히 쫓겨났다. 성지를 수호하는 기사단에게는 그들의 위상에 걸맞은 본부가 필요하다." # 7290405647961013574
+  uba_construct_headquarter_province_gains_buildings_fallback: "선택된 [barony|E]" # 8757697183309041034
+  uba_construct_headquarter_province_gains_buildings: "[SelectLocalization(province.IsValid,province.GetName,'uba_construct_wonder_province_find_mines_fallback')]은(는) [GetBuilding('UBA_headquarter_01').GetName] [duchy_building|E]을(를) 획득합니다." # 12160126300351043319
+  great_project_type_uba_construct_headquarter_possessive: "$great_project_type_uba_construct_headquarter$" # 11763067109383960080
+  great_project_type_uba_construct_headquarter_contribution_materials: "$great_project_type_uba_construct_wonder_contribution_materials$" # 10528216865054528038
+  great_project_type_uba_construct_headquarter_contribution_architects: "$great_project_type_uba_construct_wonder_contribution_architects$" # 16214804689640719622
+  great_project_type_uba_construct_headquarter_contribution_engineers: "$great_project_type_uba_construct_wonder_contribution_engineers$" # 7329250084218313704
+  great_project_type_uba_construct_headquarter_contribution_work_force: "$great_project_type_uba_construct_wonder_contribution_work_force$" # 5354318787592859842
+  great_project_type_uba_palatium_magnum_constantinople: "[capital|E]은(는) [GetTitleByKey('b_constantinople').GetNameNoTier]입니다" # 18425042902147118123
+  uba_palatium_magnum_modifier: "황궁 건설 프로젝트" # 2600450148162157351
+  uba_palatium_magnum_modifier_desc: "이곳에서 웅장한 건설 프로젝트가 최근 완료되었습니다." # 7066494365256010899
+  great_project_type_uba_palatium_magnum: "대궁전 건설" # 9327973369189839026
+  great_project_type_uba_palatium_magnum_desc: "대궁전은 황제의 거처일 뿐만 아니라 제국의 행정 및 의례의 중심지입니다. \n\n로마의 위엄을 무너뜨릴 수 있는 것은 아무것도 없기에, 이곳은 영원히 그 자리를 지킬 것입니다." # 5839095367755687095
+  great_project_type_uba_palatium_magnum_possessive: "$great_project_type_uba_palatium_magnum$의" # 127740679212917584
+  great_project_type_uba_palatium_magnum_contribution_materials: "자재" # 3602731907356340269
+  great_project_type_uba_palatium_magnum_contribution_architects: "건축가" # 14466715384246141290
+  great_project_type_uba_palatium_magnum_contribution_engineers: "기술자" # 500841390026647505
+  great_project_type_uba_palatium_magnum_contribution_work_force: "인력" # 13654392870804098078
+  great_project_type_uba_palatium_magnum_contribution_sculptors: "조각가" # 3980928358752309889
+  great_project_type_uba_palatium_magnum_update: "대궁전 개보수" # 3666771332205959701
+  great_project_type_uba_palatium_magnum_update_desc: "대궁전은 황제의 거처일 뿐만 아니라 제국의 행정 및 의례의 중심지입니다.\n\n로마의 위엄을 무너뜨릴 수 있는 것은 아무것도 없기에, 이곳은 영원히 그 자리를 지킬 것입니다." # 15067302415946463328
+  great_project_type_uba_palatium_magnum_update_possessive: "$great_project_type_uba_palatium_magnum_update$" # 13940582187260305660
+  great_project_type_uba_palatium_magnum_update_contribution_materials: "$great_project_type_uba_palatium_magnum_contribution_materials$" # 6771333529857672219
+  great_project_type_uba_palatium_magnum_update_contribution_architects: "$great_project_type_uba_palatium_magnum_contribution_architects$" # 8417193413546217229
+  great_project_type_uba_palatium_magnum_update_contribution_engineers: "$great_project_type_uba_palatium_magnum_contribution_engineers$" # 9994488711928447990
+  great_project_type_uba_palatium_magnum_update_contribution_work_force: "$great_project_type_uba_palatium_magnum_contribution_work_force$" # 12063413773089819819
+  great_project_type_uba_palatium_magnum_update_contribution_sculptors: "$great_project_type_uba_palatium_magnum_contribution_sculptors$" # 8531831380432328608
+  great_project_type_uba_palatium_hill_roma: "[capital|E]은(는) [GetTitleByKey('b_roma').GetNameNoTier]입니다" # 2631592926987304472
+  great_project_type_uba_palatium_hill: "팔라티노 언덕 재건" # 5402829927819713053
+  great_project_type_uba_palatium_hill_desc: "팔라티노 언덕은 황제의 거처일 뿐만 아니라 제국의 행정 및 의례의 중심지입니다.\n\n로마의 위엄을 무너뜨릴 수 있는 것은 아무것도 없기에, 이곳은 영원히 그 자리를 지킬 것입니다." # 1261908165682531260
+  great_project_type_uba_palatium_hill_possessive: "$great_project_type_uba_palatium_hill$" # 17297609461990959447
+  great_project_type_uba_palatium_hill_contribution_materials: "$great_project_type_uba_palatium_magnum_contribution_materials$" # 6771333529857672219
+  great_project_type_uba_palatium_hill_contribution_architects: "$great_project_type_uba_palatium_magnum_contribution_architects$" # 8417193413546217229
+  great_project_type_uba_palatium_hill_contribution_engineers: "$great_project_type_uba_palatium_magnum_contribution_engineers$" # 9994488711928447990
+  great_project_type_uba_palatium_hill_contribution_work_force: "$great_project_type_uba_palatium_magnum_contribution_work_force$" # 12063413773089819819
+  great_project_type_uba_palatium_hill_contribution_sculptors: "$great_project_type_uba_palatium_magnum_contribution_sculptors$" # 8531831380432328608
+  great_project_type_uba_palatium_hill_update: "팔라티노 언덕 확장" # 6833923809540320012
+  great_project_type_uba_palatium_hill_update_desc: "팔라티노 언덕은 황제의 거처일 뿐만 아니라 제국의 행정 및 의례의 중심지입니다.\n\n로마의 위엄을 무너뜨릴 수 있는 것은 아무것도 없기에, 이곳은 영원히 그 자리를 지킬 것입니다." # 1261908165682531260
+  great_project_type_uba_palatium_hill_update_possessive: "$great_project_type_uba_palatium_hill_update$" # 18315144548655049465
+  great_project_type_uba_palatium_hill_update_contribution_materials: "$great_project_type_uba_palatium_hill_contribution_materials$" # 11185262222494566832
+  great_project_type_uba_palatium_hill_update_contribution_architects: "$great_project_type_uba_palatium_hill_contribution_architects$" # 6162990387135466022
+  great_project_type_uba_palatium_hill_update_contribution_engineers: "$great_project_type_uba_palatium_hill_contribution_engineers$" # 8179482072952826064
+  great_project_type_uba_palatium_hill_update_contribution_work_force: "$great_project_type_uba_palatium_hill_contribution_work_force$" # 3810738467017615889
+  great_project_type_uba_palatium_hill_update_contribution_sculptors: "$great_project_type_uba_palatium_hill_contribution_sculptors$" # 14876001460693117430
+  uba_madinat_al_salam_modifier: "원형 도시 건설 프로젝트" # 3543164225269189758
+  uba_madinat_al_salam_modifier_desc: "$uba_palatium_magnum_modifier_desc$" # 4840955492583037716
+  uba_madinat_al_salam_province_gains_buildings: "귀하의 [capital|E]에 $building_type_madinat_al-salam_01$ [great_building|E]이(가) 추가됩니다" # 7622575258947778207
+  great_project_type_uba_madinat_al_salam: "원형 도시 건설" # 9387045481905350374
+  great_project_type_uba_madinat_al_salam_desc: "완벽한 동심원으로 이루어진 평화의 도시를 건설할 것입니다.\n\n이곳은 내 통치의 중심이자, 세계의 중심이 될 것입니다." # 7168752295292497214
+  great_project_type_uba_madinat_al_salam_possessive: "$great_project_type_uba_madinat_al_salam$" # 12116076716742574570
+  great_project_type_uba_madinat_al_salam_contribution_materials: "$great_project_type_uba_palatium_magnum_contribution_materials$" # 6771333529857672219
+  great_project_type_uba_madinat_al_salam_contribution_architects: "$great_project_type_uba_palatium_magnum_contribution_architects$" # 8417193413546217229
+  great_project_type_uba_madinat_al_salam_contribution_engineers: "$great_project_type_uba_palatium_magnum_contribution_engineers$" # 9994488711928447990
+  great_project_type_uba_madinat_al_salam_contribution_work_force: "$great_project_type_uba_palatium_magnum_contribution_work_force$" # 12063413773089819819
+  great_project_type_uba_madinat_al_salam_contribution_sculptors: "$great_project_type_uba_palatium_magnum_contribution_sculptors$" # 8531831380432328608
+  great_project_type_uba_madinat_al_salam_update: "원형 도시 확장" # 17253902662547412912
+  great_project_type_uba_madinat_al_salam_update_desc: "완벽한 동심원으로 이루어진 평화의 도시를 건설할 것입니다.\n\n이곳은 내 통치의 중심이자, 세계의 중심이 될 것입니다." # 7168752295292497214
+  great_project_type_uba_madinat_al_salam_update_possessive: "$great_project_type_uba_madinat_al_salam_update$" # 4581258104769723381
+  great_project_type_uba_madinat_al_salam_update_contribution_materials: "$great_project_type_uba_madinat_al_salam_contribution_materials$" # 7109912703251184388
+  great_project_type_uba_madinat_al_salam_update_contribution_architects: "$great_project_type_uba_madinat_al_salam_contribution_architects$" # 5073867722062481833
+  great_project_type_uba_madinat_al_salam_update_contribution_engineers: "$great_project_type_uba_madinat_al_salam_contribution_engineers$" # 16827290737408019046
+  great_project_type_uba_madinat_al_salam_update_contribution_work_force: "$great_project_type_uba_madinat_al_salam_contribution_work_force$" # 5104734594408616227
+  great_project_type_uba_madinat_al_salam_update_contribution_sculptors: "$great_project_type_uba_madinat_al_salam_contribution_sculptors$" # 12445036129717770986

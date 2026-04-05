@@ -1,0 +1,535 @@
+﻿l_korean:
+  building_giant_wild_goose_pagoda_02: "$building_yingtian_academy_03$" # 7016466248393980452
+  building_giant_wild_goose_pagoda_02_desc: "$building_yingtian_academy_03_desc$" # 13186745681725789913
+  building_type_daxiangguo_temple_01: "$building_daxiangguo_temple_01$" # 2947272430510099002
+  building_type_daxiangguo_temple_01_desc: "$building_daxiangguo_temple_01_desc$" # 14751627953101820017
+  building_daxiangguo_temple_01: "대상국사" # 8959341984842060817
+  building_daxiangguo_temple_01_desc: "카이펑의 으뜸가는 불교 사원입니다. 그 거대한 규모와 끊이지 않는 향불은 이곳이 불교 활동의 중요한 지역 중심지임을 보여줍니다. 구름과 안개처럼 찬란한 황금빛을 띠고, 수천 대의 마차와 기마병이 용처럼 흘러드는 그 웅장함은 찬사와 노래로 칭송받기에 부족함이 없습니다." # 6572368025869399953
+  building_daxiangguo_temple_02: "$building_yingtian_academy_03$" # 7016466248393980452
+  building_daxiangguo_temple_02_desc: "$building_yingtian_academy_03_desc$" # 13186745681725789913
+  building_type_white_horse_temple_01: "$building_white_horse_temple_01$" # 18440320426824361104
+  building_type_white_white_horse_temple_01_desc: "$building_white_horse_temple_01_desc$" # 13709189291708798177
+  building_white_horse_temple_01: "백마사" # 2525847972701730897
+  building_white_horse_temple_01_desc: "백마사는 불교가 중국에 전래된 이후 최초로 공식 건립된 사찰로서 '중국 제일의 고찰'로 불립니다. 장엄하고 위엄 있는 건축 양식은 수 세기에 걸친 불교 문화의 축적을 고스란히 담고 있습니다." # 7944227400222142568
+  building_white_horse_temple_02: "$building_yingtian_academy_03$" # 7016466248393980452
+  building_white_horse_temple_02_desc: "$building_yingtian_academy_03_desc$" # 13186745681725789913
+  building_type_xianshen_temple_01: "$building_xianshen_temple_01$" # 11985262234309859063
+  building_type_xianshen_temple_01_desc: "$building_xianshen_temple_01_desc$" # 17863419296032413600
+  building_xianshen_temple_01: "조로아스터교 사원" # 16647123755594618080
+  building_xianshen_temple_01_desc: "중국에서 보기 드문 조로아스터교 건축물 복합체로, 독특한 이국적 양식과 정교한 장식으로 유명합니다. 처마 아래의 유약 기와 장식과 목조 조각은 서아시아 페르시아의 요소를 결합하여 실크로드를 통한 종교와 문화 교류를 증명하며, 서로 다른 문명이 공존했음을 보여주는 증거가 됩니다." # 1105748406779897521
+  building_type_wuhou_shrine_01: "$building_wuhou_shrine_01$" # 1565193176833911007
+  building_type_wuhou_shrine_01_desc: "$building_wuhou_shrine_01_desc$" # 6898376718885256091
+  building_wuhou_shrine_01: "무후사" # 11146684620971334816
+  building_wuhou_shrine_01_desc: "무후사와 혜릉, 한소열묘는 유비와 제갈량 등 촉한의 영웅들을 기리기 위해 세워진 사당입니다. 사당과 전각은 엄숙하며, 현명한 군주와 어진 신하를 기리는 성스러운 장소일 뿐만 아니라 시대를 막론하고 문인들이 충절과 정직을 되새기는 정신적 상징이기도 합니다." # 16324267242298115046
+  building_type_confucian_temple_01: "$building_confucian_temple_01$" # 16990051498380591151
+  building_type_confucian_temple_01_desc: "$building_confucian_temple_01_desc$" # 16944948859341722250
+  building_confucian_temple_01: "공자묘" # 10910909621063716566
+  building_confucian_temple_01_desc: "역대 왕조가 지성선사 공자를 제사 지내는 곳입니다. 이곳은 유교 사상과 국가 교육 체계의 상징입니다. 황궁을 본떠 지어진 사당은 엄격한 배치와 높이 솟은 전각을 자랑합니다. 유교와 교육을 중시하고 문치로 나라를 다스리며 예와 윤리를 숭상하는 것은 문화 전통의 근간입니다." # 17811654879471374872
+  building_type_dujiangyan_01: "$building_dujiangyan_01$" # 18275098632468414981
+  building_type_dujiangyan_01_desc: "$building_dujiangyan_01_desc$" # 12657683336291823057
+  building_dujiangyan_01: "도강언" # 10495372441028692669
+  building_dujiangyan_01_desc: "자연적인 물 흐름을 교묘하게 이용하여 홍수 조절, 취수, 관개를 수행하는 고대 수리 공학의 위대한 걸작입니다. 이 프로젝트는 천 리에 달하는 비옥한 땅을 보장하여, 이 지역이 영원히 풍요로운 생산물을 거둘 수 있게 했습니다." # 12307271576717218626
+  building_type_qingshui_temple_01: "$building_qingshui_temple_01$" # 1368600735204613950
+  building_type_qingshui_temple_01_desc: "$building_qingshui_temple_01_desc$" # 17301200472698279958
+  building_qingshui_temple_01: "서산 사찰군" # 17914989894094859168
+  building_qingshui_temple_01_desc: "서산 교외의 수많은 사찰은 맑은 샘물, 고목, 목련, 그리고 우아한 환경으로 유명합니다. 산과 물의 즐거움이 이곳에서 온전히 실현되기에, 황제들이 휴식을 취하거나 여름 더위를 피하기 위해 자주 찾던 곳이기도 합니다." # 6525093578937552122
+  building_type_marco_polo_bridge_01: "$building_marco_polo_bridge_01$" # 3244320270862860117
+  building_type_marco_polo_bridge_01_desc: "$building_marco_polo_bridge_01_desc$" # 15090743128773660098
+  building_marco_polo_bridge_01: "노구교" # 15254776636008982668
+  building_marco_polo_bridge_01_desc: "노구하를 가로지르는 이 석교는 강 양안을 잇는 중요한 통로입니다. 구조가 견고하며 아름답게 조각된 난간과 다양한 조형미를 갖추고 있습니다. 13세기 베네치아의 여행가 마르코 폴로는 중국을 방문했을 때 이 다리를 극찬했습니다." # 8360338040413919095
+  building_type_yueyang_tower_01: "$building_yueyang_tower_01$" # 7641911673866052384
+  building_type_yueyang_tower_01_desc: "$building_yueyang_tower_01_desc$" # 3042059151130671099
+  building_yueyang_tower_01: "악양루" # 8109446739025074300
+  building_yueyang_tower_01_desc: "이 고대 성루는 바링 서문 위 높이 솟아 동정호를 굽어보고 군산과 마주하며, 북쪽으로는 장강을 등지고 있습니다. 범중엄의 '악양루기' 덕분에 유명해졌으며 '동정호는 천하의 으뜸가는 물이요, 악양루는 천하의 으뜸가는 누각'이라는 명성을 누리고 있습니다." # 15444555859747994809
+  building_type_yellow_crane_tower_01: "$building_yellow_crane_tower_01$" # 16082471514104181152
+  building_type_yellow_crane_tower_01_desc: "$building_yellow_crane_tower_01_desc$" # 6467519252577342159
+  building_yellow_crane_tower_01: "황학루" # 9028366044851654686
+  building_yellow_crane_tower_01_desc: "강하성은 서쪽으로 큰 강과 접해 있습니다. 남쪽 기슭 모퉁이의 바위 여울 위에 누각을 세웠는데, 이를 황학루라 합니다. 역사상 수많은 중국의 유명 시인들이 시로 칭송했으며 천하에 비할 데 없는 절경이라는 높은 명성을 누리고 있습니다." # 12598862310458766873
+  building_type_stork_tower_01: "$building_stork_tower_01$" # 11828962802049443656
+  building_type_stork_tower_01_desc: "$building_stork_tower_01_desc$" # 11382288940963611738
+  building_stork_tower_01: "관작루" # 17331945171575001759
+  building_stork_tower_01_desc: "관작루는 자주 깃들어 쉬던 황새의 이름을 따서 지어졌습니다. 누각의 높은 곳에서는 황하를 굽어볼 수 있습니다. 예로부터 문인들이 누각에 올라 역사를 회고하고 감회를 읊었으며, 당나라 초기 시인 왕지환의 오언절구 '관작루에 올라'는 전 세계적으로 유명합니다." # 17322916769958684810
+  building_type_prince_teng_pavilion_01: "$building_prince_teng_pavilion_01$" # 17720707861769666344
+  building_type_prince_teng_pavilion_01_desc: "$building_prince_teng_pavilion_01_desc$" # 11934591831085956934
+  building_prince_teng_pavilion_01: "등왕각" # 9608364625420963517
+  building_prince_teng_pavilion_01_desc: "등왕각은 난창시 북서쪽, 간강의 동쪽 기슭에 위치합니다. 당시 홍주 도독이었던 등왕 이원영이 세웠기에 이러한 이름이 붙었습니다. 강남에는 아름다운 수변 경관이 많지만, 등왕각은 그 웅장함과 비할 데 없는 독특함으로 단연 으뜸으로 꼽힙니다." # 13249453679625642228
+  building_type_penglai_pavilion_01: "$building_penglai_pavilion_01$" # 15546867917778441436
+  building_type_penglai_pavilion_01_desc: "$building_penglai_pavilion_01_desc$" # 3913353357989222021
+  building_penglai_pavilion_01: "펑라이각" # 574602259960169688
+  building_penglai_pavilion_01_desc: "펑라이각은 펑라이 북쪽 해안 인근 단야산에 자리하고 있습니다. 전설에 따르면 이곳은 팔선이 각자의 마법 보물을 선보이고 파도를 밟으며 바다를 건너기 전에 연회를 베풀었던 곳이라 합니다. '팔선이 바다를 건너니 각자 저마다의 신통력을 뽐낸다'는 말의 유래가 바로 이곳입니다." # 7770459301310021927
+  building_type_songling_mausoleum_01: "$building_songling_mausoleum_01$" # 16128317547433660793
+  building_type_songling_mausoleum_01_desc: "$building_songling_mausoleum_01_desc$" # 2606576080247483729
+  building_songling_mausoleum_01: "쑹링 능묘" # 3790029561394863759
+  building_songling_mausoleum_01_desc: "쑹링 능묘는 송나라 역대 황제와 황실 일가, 명장, 공신들의 묘역입니다. 이곳은 전용 능묘 구역을 조성하는 선례를 남겼으며, 엄격한 위계질서와 경직된 왕실 서열을 반영하고 있습니다." # 18328043428170564134
+  building_type_changgan_temple_01: "$building_changgan_temple_03$" # 1772197393686050119
+  building_type_changgan_temple_01_desc: "$building_changgan_temple_01_desc$" # 11557374013494857685
+  building_changgan_temple_01: "창간사" # 15596735330753200505
+  building_changgan_temple_01_desc: "창간사는 동오 시대에 처음 세워졌으며 강남 지역의 유서 깊은 불교 사찰입니다. 부처의 유골인 사리를 안치하고 있어 이 지역 신도들의 순례지입니다." # 3334037004629736556
+  building_changgan_temple_02: "톈시사" # 173086609093289723
+  building_changgan_temple_02_desc: "이 사찰은 송나라 때 톈시사로 개칭되었으며 진링성에서 가장 중요한 사찰 중 하나가 되었습니다. 사찰의 규모는 크게 확장되었고 전각은 웅장하며 향불은 더욱 번성했습니다." # 2279785611830045596
+  building_changgan_temple_03: "다바오언사" # 5446114233228632629
+  building_changgan_temple_03_desc: "이 사찰은 명나라 때 재건되었습니다. 새로 지어진 사찰은 규모가 거대했으며 건축 양식은 궁궐을 방불케 했습니다. 건축 과정은 매우 정교했으며 전적으로 황궁의 기준에 맞춰 진행되었습니다.\n\n또한 본전 뒤편에 위치한 다바오언사의 도자기 탑은 세계 건축사의 경이로움이었습니다. 9층 높이의 팔각형 탑으로 금빛으로 찬란하게 빛나 밤낮으로 밝았으며, 양쯔강 수십 리 밖에서도 보일 정도였습니다." # 4954886048696964589
+  building_type_foguang_temple_01: "$building_foguang_temple_01$" # 4150586650943895186
+  building_type_foguang_temple_01_desc: "$building_foguang_temple_01_desc$" # 1283288275178608498
+  building_foguang_temple_01: "포광사" # 5888383367161107039
+  building_foguang_temple_01_desc: "포광사는 오대산에 위치하며 오대산의 '십대 사찰' 중 하나입니다. 전각은 위압적인 목재와 석재로 건축되어 보는 이로 하여금 경외심을 불러일으킵니다. 사찰에는 정교한 불상과 벽화가 있어 수많은 신도가 예배를 드리러 찾아오며 향불이 끊이지 않습니다." # 17156421468069525271
+  building_type_qingcheng_mountain_temples_01: "$building_qingcheng_mountain_temples_01$" # 11845420316505656598
+  building_type_qingcheng_mountain_temples_01_desc: "$building_qingcheng_mountain_temples_01_desc$" # 224236258502538806
+  building_qingcheng_mountain_temples_01: "칭청산 사찰군" # 14048522264209402611
+  building_qingcheng_mountain_temples_01_desc: "칭청산 곳곳에 퍼져 있는 사찰과 암자들은 수많은 고위 도사들을 배출하여 '신선들이 모이는 곳'이라는 칭호를 얻었습니다. 사찰들은 절벽을 따라 깊고 그윽하며 심오하게 지어져 있어 수양과 정신적 정화를 위한 복된 땅입니다." # 4342054214936149820
+  building_type_daming_temple_01: "$building_daming_temple_01$" # 14608868377930376517
+  building_type_daming_temple_01_desc: "$building_daming_temple_01_desc$" # 7326875608740737132
+  building_daming_temple_01: "다밍사" # 3777714967358555512
+  building_daming_temple_01_desc: "사리를 안치하기 위해 사찰 내에 9층 높이의 웅장하고 거대한 치링탑을 세웠기에 이 사찰은 치링사라고도 불렸습니다. 다밍사의 저명한 율종 학자인 감진 대사는 일본 승려들의 초청을 받아 수많은 위험을 무릅쓰고 동쪽 일본으로 건너가 불법을 전파했습니다." # 3114518746407573890
+  building_type_tianshi_mansion_01: "$building_tianshi_mansion_01$" # 666876994268643464
+  building_type_tianshi_mansion_01_desc: "$building_tianshi_mansion_01_desc$" # 10446429948824929660
+  building_tianshi_mansion_01: "천사부" # 18362257891489150971
+  building_tianshi_mansion_01_desc: "전설에 따르면 정일교의 창시자인 장도릉이 일찍이 용호산에서 단약을 정제했다고 합니다. 단약이 완성되자 용과 호랑이가 나타났다고 전해집니다. 천사부 단지는 엄숙하고 장엄하며 전각, 부적, 인장이 보관되어 있습니다. 이곳은 도교 정일파의 본산입니다." # 11669290179317294454
+  building_type_guoqing_temple_01: "$building_guoqing_temple_01$" # 10072257865625810799
+  building_type_guoqing_temple_01_desc: "$building_guoqing_temple_01_desc$" # 8489028083962333173
+  building_guoqing_temple_01: "궈칭사" # 11356152533314844578
+  building_guoqing_temple_01_desc: "궈칭사는 톈타이산 기슭에 위치합니다. 원래 이름은 톈타이사였으며 전각이 엄숙하고 역사가 깊습니다. 이곳은 중국 천태종과 일본 천태종의 본산입니다." # 5278265169039127107
+  building_type_puji_temple_01: "보타산 사찰" # 14185237239083386663
+  building_type_puji_temple_01_desc: "$building_puji_temple_01_desc$" # 14632786057983896155
+  building_puji_temple_01: "불긍관음원" # 2239243247693742170
+  building_puji_temple_01_desc: "당나라 시대에 일본 승려 혜악 대사가 오대산에서 관세음보살 성상을 얻어 고국으로 가져가려 했다는 기록이 있습니다. 배가 보타산 앞바다를 지날 때 철연꽃이 배를 휘감았습니다. 관세음보살이 동쪽으로 가기를 원치 않는다고 여겨 불상을 산에 남겨두었습니다." # 14755693098851466703
+  building_puji_temple_02: "보타관음사" # 7225050219262328546
+  building_puji_temple_02_desc: "보타관음사가 위치한 보타산은 관음을 모시는 특별한 도량입니다. 사찰 내 원통전은 관음의 별칭에서 이름을 따왔습니다. 사찰은 규모가 웅장하고 향불이 끊이지 않습니다." # 5166980697756823621
+  building_type_hanshan_temple_01: "$building_hanshan_temple_01$" # 1813786026245030624
+  building_type_hanshan_temple_01_desc: "$building_hanshan_temple_01_desc$" # 11800530352407945180
+  building_hanshan_temple_01: "한산사" # 14696358639835577772
+  building_hanshan_temple_01_desc: "한산사는 고소성 밖에 위치합니다. 전설에 따르면 당나라의 유명한 승려 한산의 이름을 따서 지어졌다고 합니다. 당나라 시인 장계의 시구 \"한밤중 종소리는 나그네의 배에 닿네\"로 인해 전 세계적으로 유명해졌습니다." # 1240934220839599473
+  building_type_palace_of_epang_01: "$building_palace_of_epang_03$" # 15086915694505307096
+  building_type_palace_of_epang_01_desc: "$building_palace_of_epang_03_desc$" # 17853226629759151106
+  building_palace_of_epang_01: "아방궁 유적" # 7586886051712610832
+  building_palace_of_epang_01_desc: "진나라와 한나라 시대를 거쳐 온 슬픈 길, 만 개의 궁궐 문이 모두 먼지로 변했습니다." # 5890699466537987420
+  building_palace_of_epang_02: "상림원" # 16617376116605273447
+  building_palace_of_epang_02_desc: "새로운 꾀꼬리들이 상림원을 날아다니며, 소소와 봉황 생황 소리에 노래를 섞으려 합니다." # 12975890739317366795
+  building_palace_of_epang_03: "아방궁" # 9274945401278394785
+  building_palace_of_epang_03_desc: "여섯 왕은 멸망하고 사해는 통일되었으며, 촉산은 헐벗었으니 아방궁이 솟아올랐도다." # 2594706588141775556
+  building_type_famen_temple_01: "$building_famen_temple_01$" # 10633822547370365641
+  building_type_famen_temple_01_desc: "$building_famen_temple_01_desc$" # 10925007922174457818
+  building_famen_temple_01: "법문사" # 13098848685209456000
+  building_famen_temple_01_desc: "법문사는 황실 사찰일 뿐만 아니라 세계적으로 숭배받는 불교 성지입니다. 사찰 안에는 진신사리탑이라 불리는 4층 사각형 누각식 탑이 서 있습니다. 탑 아래 지하 궁전에는 부처의 손가락 뼈 사리와 당나라 밀교 만다라 의례를 통해 봉안된 수천 점의 진귀한 보물이 안치되어 있습니다." # 10401910155078351703
+  building_type_atsuta_jingu_01: "$building_atsuta_jingu_01$" # 3644715231538004413
+  building_type_atsuta_jingu_01_desc: "$building_atsuta_jingu_01_desc$" # 1953011185032464053
+  building_atsuta_jingu_01: "아쓰타 신궁" # 3197154237017905454
+  building_atsuta_jingu_01_desc: "아쓰타 신궁은 태양의 여신 #EMP 아마테라스#!를 모시는 곳으로, 가장 신성한 신토 성지 중 하나입니다. 이 신궁은 삼종신기 중 하나인 쿠사나기의 검을 수호하고 있어 숭고한 지위를 누립니다." # 11680625878524568270
+  building_type_hachimanguu_01: "$building_hachimanguu_01$" # 15648629518949294881
+  building_type_hachimanguu_01_desc: "$building_hachimanguu_01_desc$" # 3183500545988949136
+  building_hachimanguu_01: "하치만궁" # 10359637455692462831
+  building_hachimanguu_01_desc: "하치만궁은 전쟁의 신 #EMP 하치만신#!을 모시는 신사입니다. 그는 무사 계급의 수호신으로, 영원한 무운을 지켜줍니다." # 14156906265930828564
+  building_type_shitenno_temple_01: "$building_shitenno_temple_01$" # 6975227246135919010
+  building_type_shitenno_temple_01_desc: "$building_shitenno_temple_01_desc$" # 2553089397323252313
+  building_shitenno_temple_01: "사천왕사" # 2047149573390434826
+  building_shitenno_temple_01_desc: "쇼토쿠 태자가 건립한 일본 최초의 불교 사찰 중 하나입니다. 전설에 따르면 쇼토쿠 태자가 사천왕에게 기도한 후에야 모노노베노 모리야 일파를 물리칠 수 있었다고 합니다. 사천왕사는 일본 불교 문화의 이정표로 여겨지며, 이후 쇼토쿠 태자 숭배의 중심지가 되었습니다." # 12267076710835150490
+  building_type_zhaozhou_bridge_01: "$building_zhaozhou_bridge_01$" # 1194781972679317030
+  building_type_zhaozhou_bridge_01_desc: "$building_zhaozhou_bridge_01_desc$" # 2740749823746034679
+  building_zhaozhou_bridge_01: "안제교" # 5711435372115899997
+  building_zhaozhou_bridge_01_desc: "조주교라고도 불리는 안제교는 수나라 시대 석조 아치교 건축의 걸작입니다. 그 구조가 기발하고 형태가 아름다우며, 수 세기 동안 비바람에도 흔들림 없이 남아 있습니다." # 14603771088482414600
+  building_type_daqin_temple_pagoda_01: "$building_daqin_temple_pagoda_01$" # 6101487091626907223
+  building_type_daqin_temple_pagoda_01_desc: "$building_daqin_temple_pagoda_01_desc$" # 18335413710261062424
+  building_daqin_temple_pagoda_01: "대진사 탑" # 14583151336699086978
+  building_daqin_temple_pagoda_01_desc: "대진사는 원래 네스토리우스파 기독교 교회였던 경교사였으나 이후 불교 사찰로 개조되었습니다. \"대진\"은 중국인들이 로마 제국을 지칭하던 이름입니다." # 12405662226309690736
+  building_type_anhakgung_palace_01: "$building_anhakgung_palace_02$" # 10342633853372991635
+  building_type_anhakgung_palace_01_desc: "$building_anhakgung_palace_02_desc$" # 15276515886175152686
+  building_anhakgung_palace_01: "광법사" # 10381317237734839966
+  building_anhakgung_palace_01_desc: "광개토왕이 나무로 지은 불교 사찰입니다. 이 사찰은 건축이 웅장하고 향불이 번성하며, 주변에는 꽃과 숲이 넓게 조성되어 있습니다." # 14139095334551542239
+  building_anhakgung_palace_02: "안학궁" # 4603609285979522659
+  building_anhakgung_palace_02_desc: "안학궁은 본래 고구려가 건립한 왕궁이었으나, 현재는 재건되었습니다. 궁궐의 규모는 웅장하며 산을 등지고 물을 굽어보는 형세입니다." # 3672767743729157885
+  building_type_songak_palace_01: "$building_songak_palace_01$" # 7124282950242278570
+  building_type_songak_palace_01_desc: "$building_songak_palace_01_desc$" # 8365058507308391806
+  building_songak_palace_01: "송악궁" # 10435166162863713853
+  building_songak_palace_01_desc: "송악궁은 송악산 아래에 세워진 왕국의 수도입니다. 궁궐 건축은 웅장하고 위엄이 넘치며, 통치자가 국정을 운영하고 성대한 의식을 거행하며 사신을 접견하는 중심지 역할을 합니다." # 2994414268638239812
+  building_songak_palace_02: "성균관" # 12719835388865007940
+  building_songak_palace_02_desc: "성균관은 국가 최고의 교육 기관이자 유교 교육과 문화 유산의 중심지입니다. 이곳에서는 유교 경전을 가르치고 국가의 인재를 양성하며, 왕국의 문화 발전과 정치 체제에 지대한 영향을 미칩니다." # 5700220358888212871
+  building_type_gyeongbokgung_palace_01: "$building_gyeongbokgung_palace_01$" # 1359181866269709999
+  building_type_gyeongbokgung_palace_01_desc: "$building_gyeongbokgung_palace_01_desc$" # 13069934230822175027
+  building_gyeongbokgung_palace_01: "경복궁" # 2208083972728546377
+  building_gyeongbokgung_palace_01_desc: "경복궁은 엄격하고 대칭적인 배치를 갖추고 있으며, 왕국의 의례와 정치 체제의 핵심 역할을 합니다. 장엄하고 화려하며 그 규모가 매우 거대합니다." # 4309682474520690550
+  building_gyeongbokgung_palace_02: "$building_songak_palace_02$" # 1950764369659737452
+  building_gyeongbokgung_palace_02_desc: "$building_songak_palace_02_desc$" # 4963795294128052906
+  building_type_izumo_taisha_uba_01: "$building_izumo_taisha_uba_01$" # 11601733873920272017
+  building_type_izumo_taisha_uba_01_desc: "$building_izumo_taisha_uba_01_desc$" # 14223077738459126988
+  building_izumo_taisha_uba_01: "이즈모 대사" # 6074147420770080876
+  building_izumo_taisha_uba_01_desc: "이즈모 대사는 #EMP 오쿠니누시#!가 나라를 양도하는 조건으로 아마테라스에게 받은 성소입니다. 오랜 역사를 지닌 고대의 매우 숭고한 신사입니다." # 6288757964610311927
+  building_type_mireuk_temple_01: "$building_mireuk_temple_01$" # 17155003485233351054
+  building_type_mireuk_temple_01_desc: "$building_mireuk_temple_01_desc$" # 8461247671371084287
+  building_mireuk_temple_01: "미륵사" # 1836771458531728920
+  building_mireuk_temple_01_desc: "백제 왕조는 국가의 모든 역량을 불교에 쏟아부어 이 웅장한 사찰을 건립했습니다. 사찰의 건축은 거대하고 위엄이 있으며, 미륵불을 모신 거대한 석탑으로 유명합니다." # 9017409495232140628
+  building_type_chongrung_temple_01: "$building_chongrung_temple_01$" # 3622977607202275944
+  building_type_chongrung_temple_01_desc: "$building_chongrung_temple_01_desc$" # 13560570040916763486
+  building_chongrung_temple_01: "정릉사" # 2670848499523155848
+  building_chongrung_temple_01_desc: "사찰의 중앙 마당에는 팔각 칠층탑이 서 있고, 그 주위를 세 개의 금당이 둘러싸고 있습니다. 이 사찰은 높은 지위를 누리고 있으며 향불이 끊이지 않습니다." # 7687172504053569348
+  building_type_haein_temple_01: "$building_haein_temple_01$" # 12306898557171410165
+  building_type_haein_temple_01_desc: "$building_haein_temple_01_desc$" # 16432013955415669565
+  building_haein_temple_01: "해인사" # 14493309422582740393
+  building_haein_temple_01_desc: "해인사는 가야산에 위치하며 반도의 삼보사찰 중 하나입니다. 사찰은 귀중한 조각, 회화, 불경을 보존하고 있습니다." # 14982245369680395378
+  building_type_chongsheng_temple_01: "$building_chongsheng_temple_01$" # 2822969698132393752
+  building_type_chongsheng_temple_01_desc: "$building_chongsheng_temple_01_desc$" # 18443552977029469067
+  building_chongsheng_temple_01: "숭성사" # 14281095562883572734
+  building_chongsheng_temple_01_desc: "숭성사는 서남부의 불교 중심지로 '불도'라 불리며, 다섯 개의 위대한 의례용 그릇과 나란히 서 있는 세 개의 탑이 만드는 장엄한 광경으로 전 세계에 유명합니다." # 2352871496448305893
+  building_type_chengtian_temple_01: "$building_chengtian_temple_01$" # 4350144241936947266
+  building_type_chengtian_temple_01_desc: "$building_chengtian_temple_01_desc$" # 9858380748505033606
+  building_chengtian_temple_01: "승천사" # 13240723839322883990
+  building_chengtian_temple_01_desc: "승천사는 서하의 황태후였던 몰장 황후의 명으로 건립되었습니다. 사찰에서는 황실 법회와 다양한 중요 불교 행사가 자주 열렸으며, 각국에서 온 승려들이 경전을 번역하고 설법을 전했습니다." # 2475394976770036529
+  building_type_zhangye_temple_01: "$building_zhangye_temple_01$" # 17874775347929857952
+  building_type_zhangye_temple_01_desc: "$building_zhangye_temple_01_desc$" # 6534985088337163286
+  building_zhangye_temple_01: "가섭여래사" # 1022323115047440218
+  building_zhangye_temple_01_desc: "가섭여래사는 석가모니 부처의 열반상을 모시고 있어 '와불사'라고도 불립니다. 역대 황실 사찰로서 전형적인 궁궐 건축 양식을 갖추고 있습니다." # 8953225641447213420
+  building_type_yongquan_temple_01: "$building_yongquan_temple_01$" # 6437494034399688069
+  building_type_yongquan_temple_01_desc: "$building_yongquan_temple_01_desc$" # 16503651441313344826
+  building_yongquan_temple_01: "용천사" # 8367321913486554182
+  building_yongquan_temple_01_desc: "복주의 고산에 위치하여 환경이 고요하며 종종 구름과 안개에 싸여 있습니다. '산에 들어와도 절이 보이지 않고, 절에 들어와도 산이 보이지 않는다'는 독특한 건축 배치를 특징으로 합니다." # 12615095875090503462
+  building_type_zhengding_longxing_temple_01: "$building_zhengding_longxing_temple_01$" # 16789082119908304460
+  building_type_zhengding_longxing_temple_01_desc: "$building_zhengding_longxing_temple_01_desc$" # 3278087817100474603
+  building_zhengding_longxing_temple_01: "용흥사" # 7185268108782900513
+  building_zhengding_longxing_temple_01_desc: "북쪽에 위치한 유명한 고대 불교 사원입니다. 웅장한 건축 배치는 명확한 위계와 높낮이 변화를 보여주며 장엄한 분위기를 자아냅니다. 이 사원에는 42개의 팔을 가진 거대한 천수관음 청동상이 안치되어 있습니다." # 8269445454573519087
+  building_type_qingzhou_longxing_temple_01: "$building_qingzhou_longxing_temple_01$" # 12013710315817617096
+  building_type_qingzhou_longxing_temple_01_desc: "$building_qingzhou_longxing_temple_01_desc$" # 9051299962521986749
+  building_qingzhou_longxing_temple_01: "룽싱 사원" # 7185268108782900513
+  building_qingzhou_longxing_temple_01_desc: "오랜 역사를 자랑하는 중요한 불교 사찰입니다. 이곳에는 수백 개의 불상이 안치되어 있으며, 모두 화려한 채색과 금박으로 장식되어 있습니다. 일부 불상은 신체나 법의에 다양한 색상으로 인물과 서사적 장면이 그려져 있기도 합니다." # 15010250411888339907
+  building_type_kaiyuan_temple_01: "$building_kaiyuan_temple_01$" # 15081622517110756223
+  building_type_kaiyuan_temple_01_desc: "$building_kaiyuan_temple_01_desc$" # 3583854876172229588
+  building_kaiyuan_temple_01: "카이위안 도관" # 2518153695759429181
+  building_kaiyuan_temple_01_desc: "당나라 카이위안 연간, 현종 황제는 거인을 꿈꾸고 도장을 세우길 원했습니다. 마침 징저우에서 철로 주조된 천존상이 발굴되었다는 보고가 올라왔습니다. 이에 현종은 그 상이 발견된 자리에 도관을 세우도록 명하고, 카이위안 도관이라는 이름을 하사했습니다." # 11656980324110438611
+  building_type_stone_buddha_temple_01: "$building_stone_buddha_temple_01$" # 15531474019351981039
+  building_type_stone_buddha_temple_01_desc: "$building_stone_buddha_temple_01_desc$" # 17678589778599826638
+  building_stone_buddha_temple_01: "석불사" # 11443534456492876476
+  building_stone_buddha_temple_01_desc: "석불사는 발해의 호국 사찰로, 사원 내에 있는 거대한 석불상에서 이름이 유래했습니다. 경내에 있는 약 6미터 높이의 석등 기둥(등종)과 귀부(거북 모양의 비석 받침)는 세계적으로 유명합니다." # 16006623749683532830
+  building_type_sarira_temple_pagoda_01: "$building_sarira_temple_pagoda_01$" # 12868556645661049927
+  building_type_sarira_temple_pagoda_01_desc: "$building_sarira_temple_pagoda_01_desc$" # 4209139356599777039
+  building_sarira_temple_pagoda_01: "사리사 사찰 탑" # 7052932547087371670
+  building_sarira_temple_pagoda_01_desc: "사리사 사찰은 그 탑으로 인해 세워졌습니다. 사리탑은 부처의 사리를 봉안하고 있습니다. 이 탑은 위엄이 넘치며 중요한 지역 불교 랜드마크 역할을 합니다." # 4726418149155866188
+  building_type_guangyou_temple_01: "$building_guangyou_temple_01$" # 9496348876901517898
+  building_type_guangyou_temple_01_desc: "$building_guangyou_temple_01_desc$" # 6432267900738199854
+  building_guangyou_temple_01: "광우사" # 15396472737623361766
+  building_guangyou_temple_01_desc: "광우사는 규모가 거대하여 전성기에는 전각과 누각이 이백여 개에 달했습니다. 사찰 내의 석가모니 불상은 전각 안에 모셔진 좌상 석가모니 불상 중 세계에서 가장 높고 큽니다." # 12658683362339541118
+  building_type_gansheng_temple_01: "$building_gansheng_temple_01$" # 1084158469188213963
+  building_type_gansheng_temple_01_desc: "$building_gansheng_temple_01_desc$" # 8577463591744667294
+  building_gansheng_temple_01: "감성사" # 10260709583192595925
+  building_gansheng_temple_01_desc: "감성사는 대명탑을 모시고 있습니다. 탑신에는 보살좌상, 금강역사, 비천상이 조각되어 있고 처마에는 풍경이 달려 있습니다. 이 고탑은 웅장하고 품위 있으며 당당하게 서 있습니다. 맑은 날에는 백 리 밖에서도 육안으로 볼 수 있습니다." # 5280377853913062959
+  building_type_baosheng_temple_01: "$building_baosheng_temple_01$" # 4433189281886330729
+  building_type_baosheng_temple_01_desc: "$building_baosheng_temple_01_desc$" # 10021492236663569637
+  building_baosheng_temple_01: "보성사" # 10420825806386546349
+  building_baosheng_temple_01_desc: "회녕부에 건립된 황실 사찰입니다. 사찰의 이름은 보물을 모으고 승리를 거둔다는 의미를 담고 있습니다. 이 사찰은 고귀한 지위를 지니고 있으며 불법을 봉안하고 종교 의식을 거행하는 중요한 장소입니다." # 13927289857141918425
+  building_type_sevenstar_temple_01: "$building_sevenstar_temple_01$" # 12019966262941684941
+  building_type_sevenstar_temple_01_desc: "$building_sevenstar_temple_01_desc$" # 6234111206371959170
+  building_sevenstar_temple_01: "칠성 불교 사원" # 998485461427672849
+  building_sevenstar_temple_01_desc: "실크로드의 요충지인 서역 국경에 위치한 석굴 사원입니다. 석굴에는 정교한 벽화와 엄숙한 불상이 있으며, 고대 다문화주의의 융합과 불교의 동서 전파를 보여주는 역사적 증거입니다." # 8156318188976099505
+  building_type_longmen_grottoes_01: "$building_longmen_grottoes_01$" # 4236335586269521608
+  building_type_longmen_grottoes_01_desc: "$building_longmen_grottoes_01_desc$" # 11072540192747219274
+  building_longmen_grottoes_01: "용문석굴" # 17938304062516934346
+  building_longmen_grottoes_01_desc: "이하 양안으로 두 산이 마주 보고 있으며, 절벽에 수만 개의 불상이 조각되어 장엄한 광경을 자아냅니다. 산의 암벽을 깎아 만든 아홉 개의 대형 불상 중 중앙의 비로자나불은 당시 조각 예술의 정점을 보여줍니다." # 15378739717789800426
+  building_type_mogao_grottoes_01: "$building_mogao_grottoes_01$" # 13436559060384002609
+  building_type_mogao_grottoes_01_desc: "$building_mogao_grottoes_01_desc$" # 2760381017440229418
+  building_mogao_grottoes_01: "막고굴" # 6950685274010981559
+  building_mogao_grottoes_01_desc: "하서주랑 서쪽 끝에 위치한 불교 석굴 예술의 보고입니다. 벽화와 채색 조각은 십 대 왕조와 천 년에 걸친 세월을 아우르며, 그 내용이 방대하고 정교합니다." # 17529432218384701114
+  building_type_maijishan_grottoes_uba_01: "$building_maijishan_grottoes_uba_01$" # 11140460930427884392
+  building_type_maijishan_grottoes_uba_01_desc: "$building_maijishan_grottoes_uba_01_desc$" # 7374780831056083284
+  building_maijishan_grottoes_uba_01: "맥적산 석굴" # 14018188430268452730
+  building_maijishan_grottoes_uba_01_desc: "4세기에 처음 건설된 이 석굴은 대부분 절벽 면을 깎아 만들었으며 정교한 진흙 조각으로 유명합니다. 불상의 양식은 섬세하고 생동감이 넘치며 왕조를 거치며 끊임없이 발전하여 수백 년에 걸친 불교 조각 예술의 변화를 반영합니다." # 16935384216420444340
+  building_type_kumarajiva_temple_01: "$building_kumarajiva_temple_01$" # 1220816263594616852
+  building_type_kumarajiva_temple_01_desc: "$building_kumarajiva_temple_01_desc$" # 3874636785713262519
+  building_kumarajiva_temple_01: "구마라습 사원" # 10052639072686204981
+  building_kumarajiva_temple_01_desc: "서역 출신의 존경받는 승려 구마라습을 기리기 위해 세워졌습니다. 이 대사는 중원에서 불경을 번역했으며 불교의 전파와 한역 대장경의 확립에 없어서는 안 될 인물이었습니다. 그가 죽은 후 제자들은 그의 유언에 따라 사찰 내 구마라습 사원 탑에 그의 혀 사리를 봉안했습니다." # 15513636231997401329
+  building_type_kongxiang_temple_01: "$building_kongxiang_temple_01$" # 2270994588603988879
+  building_type_kongxiang_temple_01_desc: "$building_kongxiang_temple_01_desc$" # 6597962809290596986
+  building_kongxiang_temple_01: "공상사" # 3769354359337458880
+  building_kongxiang_temple_01_desc: "서기 1세기에 처음 지어진 이 사찰은 달마 대사가 불법을 위해 자신을 희생하고 선종을 창시한 것으로 세계적으로 유명합니다. 이곳은 승려들이 참선하고 깨달음을 구하며 돈오를 추구하는 청정한 도량입니다." # 3891554951429093593
+  building_type_jinshan_temple_01: "$building_jinshan_temple_01$" # 13400387133173080974
+  building_type_jinshan_temple_01_desc: "$building_jinshan_temple_01_desc$" # 480148126000727014
+  building_jinshan_temple_01: "금산사" # 13239992312885627062
+  building_jinshan_temple_01_desc: "금산사는 용유사라고도 불립니다. 사찰은 산을 따라 지어져 장엄한 풍경을 자아냅니다. 강남 지역의 중요한 선종 불교 도량이며 향불이 끊이지 않습니다." # 13409423234603619418
+  building_type_kumbum_temple_01: "$building_kumbum_temple_01$" # 17374320875202407233
+  building_type_kumbum_temple_01_desc: "$building_kumbum_temple_01_desc$" # 4222634219655421016
+  building_kumbum_temple_01: "쿰붐 사원" # 8345991528476843358
+  building_kumbum_temple_01_desc: "이 사원은 향불이 끊이지 않고 건축물이 웅장하여 암도 지역에서 가장 중요한 티베트 불교의 중심지입니다." # 2916805348555244597
+  building_type_yongning_temple_01: "$building_yongning_temple_01$" # 13819461493437771085
+  building_type_yongning_temple_01_desc: "$building_yongning_temple_01_desc$" # 3155344743553937812
+  building_yongning_temple_01: "영녕사" # 2564909163209703423
+  building_yongning_temple_01_desc: "영녕사는 아무르강 하구 근처에 위치하며, 관세음보살을 모시는 작은 사찰에서 확장되었습니다. 누르간 지역과 그 백성들의 영원한 번영과 평화를 기원하기 위해 영녕(永寧)이라 명명되었습니다. 사찰 내에는 영녕사비가 세워져 있으며, 현지 주민들은 이 비석을 신성하게 여겼습니다." # 5526713241362578000
+  building_type_fengguo_temple_01: "$building_fengguo_temple_01$" # 342713263913826112
+  building_type_fengguo_temple_01_desc: "$building_fengguo_temple_01_desc$" # 891466739059757969
+  building_fengguo_temple_01: "봉국사" # 5445957392256562615
+  building_fengguo_temple_01_desc: "요나라 시대에 처음 건립된 요나라의 황실 사찰 중 하나입니다. 이 사찰은 웅장한 대웅보전으로 유명하며, 북방 거란족의 불교 신앙과 건축 예술을 상징하는 거대한 불상 일곱 구가 모셔져 있습니다." # 9802609959020664205
+  building_type_xuanzhong_temple_01: "$building_xuanzhong_temple_01$" # 11174523533129126904
+  building_type_xuanzhong_temple_01_desc: "$building_xuanzhong_temple_01_desc$" # 15258626757238109434
+  building_xuanzhong_temple_01: "현중사" # 7295601789372652820
+  building_xuanzhong_temple_01_desc: "현중사는 정토종의 발상지입니다. 북위 시대부터 수나라와 당나라 시대에 이르기까지 중국 정토종의 세 위대한 조사들이 이곳에 머물렀습니다. 아미타불의 정토 신앙은 이곳에서 중국 민중에게 빠르게 퍼져 나갔고, 이후 한국과 일본으로도 전파된 사상적 기반이 되었습니다." # 10449236926784863252
+  building_type_yuquan_temple_01: "$building_yuquan_temple_01$" # 18389432225641633859
+  building_type_yuquan_temple_01_desc: "$building_yuquan_temple_01_desc$" # 8628740048566783417
+  building_yuquan_temple_01: "옥천사" # 9088163452073920647
+  building_yuquan_temple_01_desc: "옥천사는 천태종의 발상지 중 하나입니다. 지의 대사가 이곳에서 천태종을 창시했습니다. 사찰 주변은 조용하고 한적하여 승려들이 수행하기에 적합하며, 남부 지역에서 유명한 불교 선종 사찰 중 하나입니다." # 4859507697176266482
+  building_type_bezeklik_grottoes_01: "$building_bezeklik_grottoes_01$" # 1975860122628719358
+  building_type_bezeklik_grottoes_01_desc: "$building_bezeklik_grottoes_01_desc$" # 15874698092799478164
+  building_bezeklik_grottoes_01: "영롱사" # 6473403151681309840
+  building_bezeklik_grottoes_01_desc: "영롱사 혹은 베제클릭 천불동은 화염산 기슭에 위치하며, 실크로드의 대규모 불교 석굴 사원입니다. 석굴에는 정교한 벽화와 엄숙한 불상이 있으며, 오랫동안 고창 지역의 불교 중심지 역할을 했습니다." # 18339469043293747812
+  building_type_guge_palace_01: "$building_guge_palace_01$" # 12114074930890929399
+  building_type_guge_palace_01_desc: "$building_guge_palace_01_desc$" # 14700859403289431195
+  building_guge_palace_01: "구게 왕국 성채" # 13228573386964835913
+  building_guge_palace_01_desc: "성채는 산을 깎아 지어져 위압적인 풍경을 자아냅니다. 건축물은 상, 중, 하 3단으로 나뉘어 각각 왕궁, 사원, 주거 구역으로 구성되어 있습니다. 왕궁 내부의 천장과 사방 벽면에는 독특한 양식의 벽화가 그려져 있습니다." # 12169808291339064615
+  building_type_yellowemperor_mausoleum_01: "$building_yellowemperor_mausoleum_01$" # 785648974476493372
+  building_type_yellowemperor_mausoleum_01_desc: "$building_yellowemperor_mausoleum_01_desc$" # 16483529821365763899
+  building_yellowemperor_mausoleum_01: "황제릉" # 14063076280943547249
+  building_yellowemperor_mausoleum_01_desc: "황제릉은 고대에는 교릉이라 불렸으며, 사기에 기록된 대로 교산에 위치한 헌원 황제의 안식처입니다. 역대 왕조가 조상에게 제사를 지내던 성스러운 장소입니다. 묘 앞의 고대 측백나무는 황제가 직접 심었다고 전해집니다." # 12010909749679727721
+  building_type_baidi_fortress_01: "$building_baidi_fortress_01$" # 398884584194944307
+  building_type_baidi_fortress_01_desc: "$building_baidi_fortress_01_desc$" # 14712454335187661503
+  building_baidi_fortress_01: "백제성" # 5297948272852183072
+  building_baidi_fortress_01_desc: "백제성은 지형상 수비하기 쉽고 공격하기 어려워 역사적으로 전략적 요충지였으며, 삼협을 방어하고 파와 촉 지역을 지키는 곳으로 유명합니다. 서한의 공손술이 이곳에 할거 정권을 세웠으며, 촉한의 유비는 백제성으로 후퇴하여 후사를 부탁함으로써 한의 혈통을 보존했습니다. 역대 시인들이 자주 백제성에 올라 시를 남겼기에 시의 성이라는 명성을 얻었습니다." # 4235948801950625281
+  building_type_diaoyu_fortress_01: "$building_diaoyu_fortress_01$" # 9658057108985998046
+  building_type_diaoyu_fortress_01_desc: "$building_diaoyu_fortress_01_desc$" # 15450352681491991201
+  building_diaoyu_fortress_01: "조어성" # 12148332997223017361
+  building_diaoyu_fortress_01_desc: "조어산은 자릉강과 인접해 있습니다. 거대한 신이 이곳에서 낚시를 했다는 전설이 있어 조어산이라는 이름이 붙었습니다. 조어성은 산과 강을 끼고 전략적으로 위치하며, 수비하기 쉽고 공격하기 어려운 험준한 지형을 갖추고 있고 내성과 외성으로 나뉩니다. 외성 성벽은 가파른 절벽 위에 다듬은 돌로 쌓아 올려 침입하는 적들에게 공포를 심어줍니다." # 6345396047323671609
+  building_type_taiyuan_fortress_01: "$building_taiyuan_fortress_01$" # 10128959019377256643
+  building_type_taiyuan_fortress_01_desc: "$building_taiyuan_fortress_01_desc$" # 1845795302756855259
+  building_taiyuan_fortress_01: "진양성" # 10683297026517030724
+  building_taiyuan_fortress_01_desc: "진양은 태원 분지의 전략적 지형 위에 세워진 이래로 고대부터 북방의 핵심 군사 거점이었습니다. 성벽이 높고 견고하여 수비하기 쉽고 공격하기 어렵습니다. 역대 왕조는 이곳에 군대를 주둔시켰으며, 중원과 장성 너머 지역 사이의 교통을 통제하고 북방 국경을 수호하는 중요한 방어선 역할을 했습니다." # 7229227960863813956
+  building_taiyuan_fortress_02: "태원성" # 13150005443633184531
+  building_taiyuan_fortress_02_desc: "태원은 옛 진양성 밖에 건설된 새로운 도시로 규모는 더 작습니다. 도시 계획이 독특하여 대부분의 거리가 십자형이 아닌 T자형으로 되어 있습니다. 태원은 중원 북부 국경을 지키는 최후의 방어선이며 절대 잃어서는 안 되는 곳입니다." # 10345873773481932263
+  building_type_shuri_castle_01: "$building_shuri_castle_01$" # 2894421629441108258
+  building_type_shuri_castle_01_desc: "$building_shuri_castle_01_desc$" # 4630365786368732447
+  building_shuri_castle_01: "슈리성" # 4988428393289806924
+  building_shuri_castle_01_desc: "슈리성은 중국, 일본, 류큐 제도의 건축 양식을 융합했습니다. 류큐 왕국의 수도이자 왕궁이 위치한 곳으로, 류큐의 정치 및 외교적 중심지일 뿐만 아니라 독특한 문화의 상징이기도 합니다." # 7848145336461068905
+  building_type_daming_fortress_01: "$building_daming_fortress_01$" # 1320203464346509052
+  building_type_daming_fortress_01_desc: "$building_daming_fortress_01_desc$" # 7133946605055538194
+  building_daming_fortress_01: "다밍 요새 도시" # 13556757850063624658
+  building_daming_fortress_01_desc: "위, 그것이 바로 다밍이다! 다밍부는 화북 평원의 중요한 요새 도시이다. 성벽은 광대하고 계획은 엄격하며, 웅장하고 거대하여 북부의 경제, 정치, 문화의 핵심 중심지 역할을 한다." # 5528007526148629729
+  building_type_xiangyang_fortress_01: "$building_xiangyang_fortress_01$" # 5523368597674024020
+  building_type_xiangyang_fortress_01_desc: "$building_xiangyang_fortress_01_desc$" # 9282849382083679850
+  building_xiangyang_fortress_01: "샹양 요새 도시" # 1482537642196656190
+  building_xiangyang_fortress_01_desc: "한수 강변에 위치한 이 도시는 견고하게 요새화되어 있으며, 역사적으로 군사 전략가들이 다투던 전략적 요충지였다. 강력한 방어력과 중요한 지리적 위치 덕분에 역대 왕조의 전쟁에서 결정적인 역할을 수행했다." # 6714803290626866824
+  building_type_beiting_fortress_01: "$building_beiting_fortress_01$" # 10088520752294649223
+  building_type_beiting_fortress_01_desc: "$building_beiting_fortress_01_desc$" # 1456878135690174012
+  building_beiting_fortress_01: "베이팅 요새 도시" # 4368191906269792814
+  building_beiting_fortress_01_desc: "톈산 산맥 북쪽 기슭에 위치한 주요 군사 및 행정 중심지로, 내성과 외성으로 구성되어 있다. 이 도시는 실크로드 북로를 통제하며 서역으로 향하는 중요한 관문이자 교통의 요충지 역할을 한다." # 17023711214579363390
+  building_type_yuelu_academy_uba_01: "$building_yuelu_academy_uba_01$" # 8747985639879270789
+  building_type_yuelu_academy_uba_01_desc: "$building_yuelu_academy_uba_01_desc$" # 6989840679249522158
+  building_yuelu_academy_uba_01: "웨루 서원" # 16049773904149938441
+  building_yuelu_academy_uba_01_desc: "이 서원은 후난의 웨루 산에 자리 잡고 있다. 고요한 강당과 엄격한 유교 경전 교육으로 유명하며, 많은 학자를 배출했다." # 18215540395699929560
+  building_type_chenghao_academy_01: "$building_chenghao_academy_01$" # 9309504396177584349
+  building_type_chenghao_academy_01_desc: "$building_chenghao_academy_01_desc$" # 17286884531067690826
+  building_chenghao_academy_01: "청호 서원" # 16050446632129346544
+  building_chenghao_academy_01_desc: "성리학의 창시자 중 한 명인 청호가 세운 최초의 서원으로서, 청호 서원은 학자들에게 성리학의 발상지로 여겨졌으며 한때 역사적으로 매우 저명한 지위를 누렸다." # 12671405806354420036
+  building_type_shidong_academy_01: "$building_shidong_academy_01$" # 2079755351147283954
+  building_type_shidong_academy_01_desc: "$building_shidong_academy_01_desc$" # 9436531994068820106
+  building_shidong_academy_01: "스둥 서원" # 1214059117207296731
+  building_shidong_academy_01_desc: "둥양에 위치한 이 사립 서원은 당대의 수많은 저명한 학자들이 방문하여 강학을 펼쳤으며, 많은 시와 비문을 남겼다. 당시 학문 교류의 주요 중심지 중 하나였다." # 3597099101654765465
+  building_type_quanshan_academy_01: "$building_quanshan_academy_01$" # 4834869239676324673
+  building_type_quanshan_academy_01_desc: "$building_quanshan_academy_01_desc$" # 14029079596502488218
+  building_quanshan_academy_01: "취안산 서원" # 7633613342790759954
+  building_quanshan_academy_01_desc: "송대의 유명한 성리학자 주희가 이곳에 취안산 서원을 세우고 서원 제도를 장려하여, 취안저우의 서원 발전을 직접적으로 촉진했으며 취안저우를 푸젠은 물론 전국에서 서원 문화가 가장 번성한 지역 중 하나로 빠르게 만들었다." # 10121311783456021362
+  building_type_ehu_academy_01: "어후 서원" # 16921317160101242144
+  building_type_ehu_academy_01_desc: "$building_ehu_academy_02_desc$" # 1847452628687032158
+  building_ehu_academy_01: "런서우 사원" # 12861072174827844358
+  building_ehu_academy_01_desc: "어후 산에 위치한 고찰로, 산의 이름을 따서 어후 사원으로 개칭되었다. 환경이 그윽하고 조용하다. 수많은 신도가 이곳을 찾아 불공을 드리며, 향불이 끊이지 않는다." # 10271123602127725172
+  building_ehu_academy_02: "사현당" # 10263328017893304627
+  building_ehu_academy_02_desc: "어후는 서원 학술 토론의 시초가 된 유명한 어후 회의로 인해 세계적으로 유명하다. 이 사건을 기념하기 위해 후대 사람들은 어후 사원 옆에 사현당을 세우고 서원을 설립했다." # 16175031935097735015
+  building_type_yingtian_academy_01: "$building_yingtian_academy_02$" # 11153602994422206823
+  building_type_yingtian_academy_01_desc: "$building_yingtian_academy_02_desc$" # 17011993506665705523
+  building_yingtian_academy_01: "수이양 서원" # 5390783626464800590
+  building_yingtian_academy_01_desc: "규모는 작지만, 수이양 서원은 지식을 갈구하는 이들에게 학문의 청정 도량을 제공한다." # 14273136262513224143
+  building_yingtian_academy_02: "잉톈 서원" # 1207486277646927985
+  building_yingtian_academy_02_desc: "서원은 역사적으로 대부분 경치 좋은 산림에 위치했으나, 잉톈 서원은 독특하게 번화하고 번영하는 도심에 자리 잡고 있으며, 역사적으로 끊임없이 인재를 배출해 왔다." # 17056915739655063792
+  building_yingtian_academy_03: "국자감" # 7421518342092679123
+  building_yingtian_academy_03_desc: "부와 현에 학교를 세우는 일이 여기서 시작되었으니, 온 나라의 학교들이 이곳을 본보기로 삼습니다. 지식을 모아 바다를 이루고, 아홉 강을 삼키며, 백 개의 골짜기를 공경합니다. 글자를 벼려 칼을 만드니, 떠다니는 구름을 베고 고운 옥을 깎아냅니다." # 13545296263123154819
+  building_type_songyang_academy_01: "$building_songyang_academy_01$" # 12779221919115356921
+  building_type_songyang_academy_01_desc: "$building_songyang_academy_01_desc$" # 1649239014003466305
+  building_songyang_academy_01: "송양 서원" # 13120534702751701060
+  building_songyang_academy_01_desc: "송양 서원은 한때 불교 사찰이자 도교 사원이기도 했으나, 종종 저명한 유학자들이 모여 강학하는 장소였습니다. 이곳은 송나라 시대 성리학의 발상지 중 하나입니다." # 13183362164715245917
+  building_type_ashikaga_academy_01: "$building_ashikaga_academy_01$" # 8520847408535174960
+  building_type_ashikaga_academy_01_desc: "$building_ashikaga_academy_01_desc$" # 141161488517771328
+  building_ashikaga_academy_01: "아시카가 학교" # 5997638188058887837
+  building_ashikaga_academy_01_desc: "아시카가 학교는 일본에서 가장 오래된 종합 학교이자, 당대 간토 지역에서 사실상의 최고 교육 기관이었습니다. 이곳은 일본 내 성리학 확산의 중요한 거점 역할을 했습니다." # 6374488006400718748
+  building_type_bailuzhou_academy_01: "$building_bailuzhou_academy_01$" # 18135883888151025096
+  building_type_bailuzhou_academy_01_desc: "$building_bailuzhou_academy_01_desc$" # 6980828841477140945
+  building_bailuzhou_academy_01: "백로주 서원" # 10039313427454535835
+  building_bailuzhou_academy_01_desc: "루링에 위치한 이곳은 강남 지역의 유명한 성리학 서원입니다. 학풍이 청렴하고 유명한 스승들이 모여들어 수많은 인재를 길러냈습니다. 이곳은 유학을 전파하는 중요한 중심지입니다." # 5056723893770094149
+  building_type_quanzhou_seaport_01: "$building_quanzhou_seaport_01$" # 164973893857654748
+  building_type_quanzhou_seaport_01_desc: "$building_quanzhou_seaport_01_desc$" # 12324228861938152351
+  building_quanzhou_seaport_01: "취안저우 항구" # 12173783764012072883
+  building_quanzhou_seaport_01_desc: "취안저우 항구는 각지에서 온 외국 상인들을 불러모읍니다. 아라비아와 아나톨리아, 일본과 고려를 비롯한 온 세상의 상인들이 이곳을 찾습니다. 끊임없이 드나드는 무역선 덕분에 지역 산업은 번창하고 있으며, 취안저우는 이 지역 최고의 조선업 중심지가 되었습니다." # 1130342962689442236
+  building_type_hangzhou_seaport_01: "$building_hangzhou_seaport_01$" # 11052837462115870008
+  building_type_hangzhou_seaport_01_desc: "$building_hangzhou_seaport_01_desc$" # 18196596207667533583
+  building_hangzhou_seaport_01: "항저우 항구" # 2410221500441511523
+  building_hangzhou_seaport_01_desc: "항저우 항구는 강과 바다, 운하를 모두 이용할 수 있는 이점이 있습니다. 여러 지역의 비단, 차, 도자기와 같은 물산이 이곳으로 모여 수로를 통해 사방으로 퍼져 나갑니다. 상인들이 구름처럼 모여들고 상선들이 쉴 새 없이 오갑니다." # 1853312820955865804
+  building_type_xiuzhou_seaport_01: "$building_xiuzhou_seaport_01$" # 3698697489377659858
+  building_type_xiuzhou_seaport_01_desc: "$building_xiuzhou_seaport_01_desc$" # 8187908828130926319
+  building_xiuzhou_seaport_01: "슈저우 항구" # 14863455428754628687
+  building_xiuzhou_seaport_01_desc: "슈저우의 화팅은 양쯔강 하구에 위치하여 수로망이 촘촘하고 선박 운항에 유리합니다. 발달한 수로를 바탕으로 양저 지역의 생산물들이 항구와 강을 따라 끊임없이 유통됩니다." # 14461873367528630033
+  building_type_mingzhou_seaport_01: "$building_mingzhou_seaport_01$" # 5000616274232194384
+  building_type_mingzhou_seaport_01_desc: "$building_mingzhou_seaport_01_desc$" # 12037924194690990915
+  building_mingzhou_seaport_01: "밍저우 항구" # 4679988850962491566
+  building_mingzhou_seaport_01_desc: "밍저우 항구는 세 강이 만나는 지점에 위치하여 수심이 깊고 해안이 넓습니다. 특히 일본 및 고려와의 무역이 매우 번성합니다. 이곳은 동중국해 무역의 핵심 거점일 뿐만 아니라, 천조의 위엄을 뽐내는 외국 사절단의 접견지이기도 합니다." # 5546854030676396219
+  building_type_guangzhou_seaport_01: "$building_guangzhou_seaport_01$" # 8886775641593674681
+  building_type_guangzhou_seaport_01_desc: "$building_guangzhou_seaport_01_desc$" # 2717806204077153357
+  building_guangzhou_seaport_01: "광저우 항구" # 4345496656552955875
+  building_guangzhou_seaport_01_desc: "광저우는 예로부터 남중국해 무역의 중심지로서, 해외에서 들어오는 진귀한 향료와 상아, 보석이 이곳에 도착합니다. 먼 바닷길의 남쪽 관문으로서 수 세기 동안 수많은 돛대가 항구를 메웠으며, 동서양 교역의 지속적인 번영을 증명하고 있습니다." # 12469425991001348013
+  building_type_mizhou_seaport_01: "$building_mizhou_seaport_01$" # 7721687374265707489
+  building_type_mizhou_seaport_01_desc: "$building_mizhou_seaport_01_desc$" # 5260318516488955823
+  building_mizhou_seaport_01: "미저우 항구" # 6970291906055064483
+  building_mizhou_seaport_01_desc: "북방의 유일한 해상 무역항인 반교진은 당나라 시대부터 이미 상당한 규모의 해상 운송 무역을 수행했으며, 점차 고려 및 일본과의 해상 교류를 위한 중요한 항구 중 하나로 자리 잡았습니다." # 252353861595658028
+  building_type_edo_port_01: "$building_edo_port_01$" # 8276010658415109781
+  building_type_edo_port_01_desc: "$building_edo_port_01_desc$" # 6269297732790008910
+  building_edo_port_01: "에도 항구" # 435136182639690913
+  building_edo_port_01_desc: "에도는 간토의 관문이자 간토 지역 물자 수송과 상업의 생명선입니다. 항구는 배들이 쉴 새 없이 드나들며 활기가 넘치고, 이는 에도의 번영을 뒷받침합니다." # 15356149985346036667
+  building_edo_port_02: "$building_edo_port_01$" # 8276010658415109781
+  building_edo_port_02_desc: "$building_edo_port_01_desc$" # 6269297732790008910
+  building_type_sakai_port_01: "$building_sakai_port_01$" # 10819427355163693156
+  building_type_sakai_port_01_desc: "$building_sakai_port_01_desc$" # 16304157719589263002
+  building_sakai_port_01: "사카이 항구" # 12113352262387369476
+  building_sakai_port_01_desc: "사카이는 세 개의 주가 만나는 지점에 위치하며 항구 이용의 이점을 누립니다. 이곳은 일본에서 가장 자유롭고 번영한 자치 항구 도시로, 수많은 상인이 모여들며 고도로 발달한 상업을 자랑합니다." # 15994603890831756996
+  building_sakai_port_02: "$building_sakai_port_01$" # 10819427355163693156
+  building_sakai_port_02_desc: "$building_sakai_port_01_desc$" # 16304157719589263002
+  building_type_cheonghaejin_port_01: "$building_cheonghaejin_port_01$" # 16424875101615888795
+  building_type_cheonghaejin_port_01_desc: "$building_cheonghaejin_port_01_desc$" # 6617160317790917743
+  building_cheonghaejin_port_01: "청해진 항구" # 7807121080956704967
+  building_cheonghaejin_port_01_desc: "청해진은 해상 항로의 요충지를 장악하고 있어 해상 무역을 통제하고 해적의 침입을 방어하여 해로의 안전을 보장하는 데 결정적인 역할을 합니다." # 6113573399351436989
+  building_type_mount_tai_01: "$building_mount_tai_01$" # 13472472556497088989
+  building_type_mount_tai_01_desc: "$building_mount_tai_01_desc$" # 17195701964861454594
+  building_mount_tai_01: "태산" # 11478970956906320846
+  building_mount_tai_01_desc: "태산은 대산이라고도 불리며, 그 형세가 웅장하고 장엄하며 경치가 아름답기로 유명합니다. 그 위엄 있는 기세 덕분에 오악의 으뜸으로 꼽히며, 중국에서 상징적으로 가장 중요한 성산입니다. 고대부터 황제들은 이곳에서 봉선 의식을 거행하여 국가의 평안과 번영을 기원하고, 제국의 통치권이 하늘로부터 부여받았음을 천명했습니다.\n\n하늘과 땅을 잇는 가교로서 태산은 또한 #EMP 동악대제#!의 도량이기도 합니다. 전설에 따르면 이 신은 인간 세상의 선악을 다스리고 하늘 아래의 생사를 관장한다고 합니다." # 12784394802344418901
+  building_type_huangguoshu_01: "$building_huangguoshu_01$" # 17694780467433162063
+  building_type_huangguoshu_01_desc: "$building_huangguoshu_01_desc$" # 9824047348622934794
+  building_huangguoshu_01: "황과수 폭포" # 16800077639860826932
+  building_huangguoshu_01_desc: "높은 절벽에서 거대한 기세로 쏟아지는 물줄기가 안개에 휩싸여 있습니다. 이곳의 풍경은 장엄하며 자연이 빚어낸 신비로운 걸작이라 할 수 있습니다." # 3133987460640158500
+  building_type_wuxia_01: "$building_wuxia_01$" # 351526314102789199
+  building_type_wuxia_01_desc: "$building_wuxia_01_desc$" # 10574650883597932728
+  building_wuxia_01: "무협" # 1846428209762030471
+  building_wuxia_01_desc: "양쯔강 삼협 중 하나로, 깊고 고요하며 그림 같은 아름다움으로 유명합니다. 양쪽 기슭의 봉우리는 마치 조각한 듯 가파르고, 강물은 구름과 안개에 싸여 굽이쳐 흐르며 무산십이봉의 험준한 장엄함과 화려함을 유감없이 보여줍니다." # 5302952511022636303
+  building_type_mount_wuzhi_01: "$building_mount_wuzhi_01$" # 8684304684857516700
+  building_type_mount_wuzhi_01_desc: "$building_mount_wuzhi_01_desc$" # 14093592278668158828
+  building_mount_wuzhi_01: "우즈산" # 13961610658433766703
+  building_mount_wuzhi_01_desc: "하이난섬에서 가장 높은 봉우리로, 다섯 손가락을 닮은 형상이 구름 위로 곧게 솟아 있습니다." # 7106767086537310891
+  building_type_mount_yonaha_01: "$building_mount_yonaha_01$" # 5608976673872497534
+  building_type_mount_yonaha_01_desc: "$building_mount_yonaha_01_desc$" # 5276715022812854384
+  building_mount_yonaha_01: "요나하산" # 10796153034138872465
+  building_mount_yonaha_01_desc: "류큐 제도에서 가장 높은 산봉우리로, 그 위용이 당당하고 숲이 울창합니다. 전설에 따르면 천조의 신 #EMP 아마미키요#!께서 이곳에 천지 기둥을 세워 자신이 창조한 류큐 제도를 안정시켰다고 합니다." # 2891387247491950428
+  building_type_mount_kumgang_01: "$building_mount_kumgang_01$" # 12136967200305416501
+  building_type_mount_kumgang_01_desc: "$building_mount_kumgang_01_desc$" # 5677531936631971206
+  building_mount_kumgang_01: "금강산" # 7548353537021738139
+  building_mount_kumgang_01_desc: "한반도 동부에 위치한 유명한 산맥으로, 가파르고 그림 같은 봉우리와 독특한 암석들로 명성이 자자합니다." # 7389505493211339403
+  building_type_mount_mogan_01: "$building_mount_mogan_01$" # 14942807754987773623
+  building_type_mount_mogan_01_desc: "$building_mount_mogan_01_desc$" # 2043097506349404246
+  building_mount_mogan_01: "모간산" # 8436975842537111470
+  building_mount_mogan_01_desc: "오나라의 합려왕이 보낸 간장과 막야 부부가 이곳에서 부부검을 제련했다는 전설에서 이름이 유래했습니다. 풍경이 그림처럼 아름답고 식생이 울창하여 유명한 피서지로 알려져 있습니다." # 254794480503670711
+  building_type_jiuzhaigou_01: "$building_jiuzhaigou_01$" # 14789725913444987647
+  building_type_jiuzhaigou_01_desc: "$building_jiuzhaigou_01_desc$" # 8756105869086559375
+  building_jiuzhaigou_01: "주자이거우 계곡" # 16695263206893962759
+  building_jiuzhaigou_01_desc: "고원 지대에 위치한 고지대 호수군으로, 에메랄드빛 호수와 쏟아지는 폭포, 다채로운 숲과 설산으로 유명합니다. 물빛이 찬란하고 풍경이 더할 나위 없이 독특하여 마치 선경과 같으며, 자연이 빚어낸 신비로운 걸작이라 할 수 있습니다." # 10482325757331430733
+  building_type_mount_danxia_01: "$building_mount_danxia_01$" # 1825819698460272975
+  building_type_mount_danxia_01_desc: "$building_mount_danxia_01_desc$" # 14961275809497411850
+  building_mount_danxia_01: "단샤산" # 8674164308026346333
+  building_mount_danxia_01_desc: "영남 지역의 붉은 사암 지형으로 유명한 곳이며, 단샤 지형이라는 명칭의 유래가 되었습니다. 기묘한 형상과 선명한 색채를 띤 암석들이 자연의 경이로움과 흥미로 가득한 장엄한 풍경을 자아냅니다." # 4822662572275539114
+  building_type_mount_kailash_01: "$building_mount_kailash_01$" # 2023809228901576187
+  building_type_mount_kailash_01_desc: "$building_mount_kailash_01_desc$" # 9985897029586824673
+  building_mount_kailash_01: "카일라스산" # 3909732224448300884
+  building_mount_kailash_01_desc: "카일라스산은 티베트 불교, 힌두교, 본교 등 여러 종교에서 세계의 중심이자 성스러운 산으로 여겨집니다. 정상은 일 년 내내 눈으로 덮여 있고 독특한 형상을 하고 있어, 수많은 순례자가 코라(성지 순례)를 행하기 위해 수천 리 길을 걸어오는 성스러운 목적지입니다." # 13140769247914708030
+  building_type_halong_bay_01: "$building_halong_bay_01$" # 8236173430900296622
+  building_type_halong_bay_01_desc: "$building_halong_bay_01_desc$" # 7976096728216390806
+  building_halong_bay_01: "하롱베이" # 1529361282940781389
+  building_halong_bay_01_desc: "베트남 북부 해안에 위치한 하롱베이는 수많은 섬이 흩어져 있어 매혹적인 바다와 산의 절경을 자랑합니다." # 8459588571753951601
+  building_halong_bay_02: "$building_halong_bay_01$" # 8236173430900296622
+  building_halong_bay_02_desc: "하롱베이 내부는 자연적으로 형성된 안전한 항구로, 수심이 깊고 물살이 잔잔하여 선박 정박에 이상적입니다. 이곳은 중요한 무역 관문일 뿐만 아니라 해군 집결과 해적 공격 방어를 위한 천혜의 요새이기도 합니다." # 8096402721434873795
+  building_type_tonglyushan_mines_01: "퉁뤼산 구리 광산" # 1778615410610165151
+  building_type_tonglyushan_mines_01_desc: "후베이에 위치한 퉁뤼산 구리 광산입니다. 산 이름은 구리의 색에서 유래했으며, 채굴 역사는 진나라 이전 시대까지 거슬러 올라갑니다." # 400772619368104511
+  building_tonglyushan_mines_01: "퉁뤼산 구리 채굴장" # 9938489737386524081
+  building_tonglyushan_mines_01_desc: "$building_type_tonglyushan_mines_01_desc$" # 667662758160218811
+  building_tonglyushan_mines_02: "퉁뤼산 구리 광산" # 10011012286351934317
+  building_tonglyushan_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_tonglyushan_mines_03: "대규모 퉁뤼산 구리 광산" # 17995891502472066604
+  building_tonglyushan_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_tonglyushan_mines_04: "퉁뤼산 구리 채굴 단지" # 5754205736841816866
+  building_tonglyushan_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_huize_mines_01: "후이쩌 구리 광산" # 12276938223078263235
+  building_type_huize_mines_01_desc: "후이쩌 구리 광산은 서남 고원에 위치해 있습니다. 이곳의 구리 광석은 품위가 매우 높고 채굴 규모가 방대하여 서남 지역 경제 발전에 지대한 영향을 미치고 있습니다." # 4438906102914017496
+  building_huize_mines_01: "후이쩌 구리 갱도" # 15674441621991752684
+  building_huize_mines_01_desc: "$building_type_huize_mines_01_desc$" # 13704594674240935910
+  building_huize_mines_02: "후이쩌 구리 광산" # 7420620490886657333
+  building_huize_mines_02_desc: "$building_rammelsberg_mines_02_desc$" # 17900462089297107088
+  building_huize_mines_03: "대규모 후이쩌 구리 광산" # 2958813178534865579
+  building_huize_mines_03_desc: "$building_rammelsberg_mines_03_desc$" # 16535131840662613047
+  building_huize_mines_04: "후이쩌 구리 채굴 단지" # 603578396429390820
+  building_huize_mines_04_desc: "$building_rammelsberg_mines_04_desc$" # 498090809535580329
+  building_type_yanzhou_salt_01: "옌츠 염전" # 3763218700315475076
+  building_type_yanzhou_salt_01_desc: "서북 지역에서 생산되는 녹색 또는 백색 소금은 정밀하게 가공되며 가격이 저렴하여 서민들 사이에서 널리 사랑받고 있습니다. 옌츠는 필수 생활 물자를 제공할 뿐만 아니라 관련 산업이 지역 재정의 주요 수입원이기도 합니다." # 10775310492233497436
+  building_yanzhou_salt_01: "고대 옌츠 염전" # 15347565738886626235
+  building_yanzhou_salt_01_desc: "$building_type_yanzhou_salt_01_desc$" # 185111485543681463
+  building_yanzhou_salt_02: "옌츠 염전" # 3763218700315475076
+  building_yanzhou_salt_02_desc: "사람들은 자연 호수 소금 자원을 활용하여 호숫가에 햇볕과 증발로 결정된 소금 결정을 채취하여 인근 주민들의 수요를 충족시킵니다." # 15897977288146163716
+  building_yanzhou_salt_03: "대규모 옌츠 염전" # 14190243085031689941
+  building_yanzhou_salt_03_desc: "대규모 소금 생산 기술이 도입되어 염전이 더욱 확장되었고 생산량이 비약적으로 증가했습니다." # 12213668390149010066
+  building_yanzhou_salt_04: "옌츠 염업" # 3551061474963537206
+  building_yanzhou_salt_04_desc: "식용 소금 생산량이 급격히 증가함에 따라 이곳에 소금 전매 기관이 설립되어 식용 소금의 수집, 저장 및 운송을 담당하게 되었습니다." # 1793745099084402927
+  building_type_xiechi_salt_01: "셰츠 염전" # 12395560766920389641
+  building_type_xiechi_salt_01_desc: "허둥 염호라고도 불리는 셰츠는 황제에게 살해당한 치우의 피가 변하여 소금물이 되었다는 전설이 있습니다. 셰츠 염전은 주로 노염을 생산하며, 백 리에 달하는 긴 염호는 광활하고 웅장하며 장관을 이룹니다." # 2076488372661160737
+  building_xiechi_salt_01: "셰츠 염전" # 12395560766920389641
+  building_xiechi_salt_01_desc: "$building_type_xiechi_salt_01_desc$" # 981556183880544163
+  building_xiechi_salt_02: "고대 셰츠 염전" # 10230046673383813113
+  building_xiechi_salt_02_desc: "$building_yanzhou_salt_02_desc$" # 6590755605790294006
+  building_xiechi_salt_03: "대규모 셰츠 염전" # 18292258277659308496
+  building_xiechi_salt_03_desc: "$building_yanzhou_salt_03_desc$" # 8404339890603709434
+  building_xiechi_salt_04: "셰츠 염업" # 3224986634140813645
+  building_xiechi_salt_04_desc: "$building_yanzhou_salt_04_desc$" # 1386377040829375712
+  building_type_lianghuai_salt_01: "량화이 염전" # 1091738230146458370
+  building_type_lianghuai_salt_01_desc: "량화이 지역은 긴 해안선을 자랑하며 서한 시대부터 바닷물을 끓여 소금을 만드는 방식이 존재했습니다. 해염의 주요 생산지로서 \"예로부터 동남쪽의 소금 끓이는 이익은 으뜸이었고, 그중 량화이가 가장 컸다\"라거나 \"량화이의 소금세가 천하 제일이다\"라는 말이 전해집니다." # 11229102622902302029
+  building_lianghuai_salt_01: "량화이 염전" # 1091738230146458370
+  building_lianghuai_salt_01_desc: "$building_type_lianghuai_salt_01_desc$" # 13661674084571961555
+  building_lianghuai_salt_02: "고대 량화이 염전" # 5282657062546833495
+  building_lianghuai_salt_02_desc: "$building_yanzhou_salt_02_desc$" # 6590755605790294006
+  building_lianghuai_salt_03: "대량화이 염전" # 4391379702794504174
+  building_lianghuai_salt_03_desc: "$building_yanzhou_salt_03_desc$" # 8404339890603709434
+  building_lianghuai_salt_04: "량화이 제염업" # 17148324834255399549
+  building_lianghuai_salt_04_desc: "$building_yanzhou_salt_04_desc$" # 1386377040829375712
+  building_type_yanguan_salt_01: "옌관 염전" # 4523151513843953774
+  building_type_yanguan_salt_01_desc: "항저우만의 광활한 갯벌 덕분에 조수가 끊임없이 북쪽 해안을 씻어냅니다. 해안선은 불안정하지만, 이는 제염업에 기회를 가져다주었습니다. 수 세기에 걸쳐 옌관 염전은 그 규모를 지속적으로 확장하여 전국에서 가장 앞서가는 자염 생산지 중 하나로 자리 잡았습니다." # 8826521041852875341
+  building_yanguan_salt_01: "옌관 염전" # 4523151513843953774
+  building_yanguan_salt_01_desc: "$building_type_yanguan_salt_01_desc$" # 1364190773968045507
+  building_yanguan_salt_02: "고대 옌관 염전" # 18133606055995361364
+  building_yanguan_salt_02_desc: "$building_yanzhou_salt_02_desc$" # 6590755605790294006
+  building_yanguan_salt_03: "대규모 옌관 염전" # 11110145764754653437
+  building_yanguan_salt_03_desc: "$building_yanzhou_salt_03_desc$" # 8404339890603709434
+  building_yanguan_salt_04: "옌관 제염업" # 16686089435182921614
+  building_yanguan_salt_04_desc: "$building_yanzhou_salt_04_desc$" # 1386377040829375712
+  building_type_sado_mines_01: "$building_sado_mines_02$" # 17549254396391929780
+  building_type_sado_mines_01_desc: "$building_sado_mines_01_desc$" # 3005329489933317456
+  building_sado_mines_01: "사도 금광" # 14844977302970313554
+  building_sado_mines_01_desc: "유배지로 알려진 먼 섬 사도에 이토록 막대한 양의 금이 숨겨져 있으리라고는 아무도 예상하지 못했을 것입니다." # 13989536125488072399
+  building_sado_mines_02: "사도 금광" # 2569469564712219801
+  building_sado_mines_02_desc: "채굴 구덩이가 확장되었고, 금 추출량을 진정으로 늘리기 위해 기술자들이 투입되었습니다." # 18088672461587963184
+  building_sado_mines_03: "대규모 사도 금광" # 9777158358957756302
+  building_sado_mines_03_desc: "수많은 채굴 구덩이 주변으로 마을이 형성되었고, 일꾼들은 정기적으로 새로운 금맥을 발견하고 있습니다." # 13364864127096686711
+  building_sado_mines_04: "사도 금광 복합시설" # 7167490688094201432
+  building_sado_mines_04_desc: "금 추출이 거의 산업적 규모에 도달했으며, 일꾼의 수는 이제 수천 명에 이릅니다. 광산에서 끝없는 부가 흘러나오는 듯합니다." # 11796271378389652138
+  building_type_iwami_mines_01: "$building_iwami_mines_02$" # 10361233667520775864
+  building_type_iwami_mines_01_desc: "이와미 은광은 일본 최대의 은광으로, 실로 엄청난 양의 은을 생산합니다. 이 광산은 일본 대외 무역의 주요 경화 역할을 하며 중요한 지위를 차지하고 있습니다." # 12036092062508736412
+  building_iwami_mines_01: "이와미 은광" # 16514856556588356720
+  building_iwami_mines_01_desc: "$building_type_iwami_mines_01_desc$" # 11942342602222069503
+  building_iwami_mines_02: "이와미 은광" # 12248392302111188964
+  building_iwami_mines_02_desc: "$building_sado_mines_02_desc$" # 17728405468473200702
+  building_iwami_mines_03: "대규모 이와미 은광" # 1656342395574231837
+  building_iwami_mines_03_desc: "$building_sado_mines_03_desc$" # 15684914065621941418
+  building_iwami_mines_04: "이와미 은광 복합시설" # 2572610722330813576
+  building_iwami_mines_04_desc: "$building_sado_mines_04_desc$" # 4356029583790037740
+  building_type_rongxian_salt_01: "룽셴 염정" # 14951025232935540921
+  building_type_rongxian_salt_01_desc: "룽셴은 동한 시대부터 이어진 천 년이 넘는 정염 생산 역사를 지니고 있습니다. 이곳은 쓰촨 분지의 유명한 심정염 생산지입니다. 장인들은 수천 피트 깊이의 우물을 파고, 독특한 심정 굴착 및 펌프 공법을 사용하여 지하 염수를 끌어올린 뒤 이를 끓여 소금을 생산합니다." # 12221986811247009522
+  building_rongxian_salt_01: "룽셴 고대 염정" # 12539770417803294415
+  building_rongxian_salt_01_desc: "$building_type_rongxian_salt_01_desc$" # 780444854230256836
+  building_rongxian_salt_02: "룽셴 염정" # 14951025232935540921
+  building_rongxian_salt_02_desc: "$building_taghaza_mines_02_desc$" # 6648550614050579410
+  building_rongxian_salt_03: "룽셴 염업" # 10603932463280625835
+  building_rongxian_salt_03_desc: "$building_taghaza_mines_03_desc$" # 9467188026647366065
+  building_rongxian_salt_04: "룽셴 염업 단지" # 5424011402050306437
+  building_rongxian_salt_04_desc: "$building_taghaza_mines_04_desc$" # 10508770049178524601
+  building_type_kurokawa_mines_01: "$building_kurokawa_mines_02$" # 5772600847771561284
+  building_type_kurokawa_mines_01_desc: "카이는 광물 자원이 풍부한 산악 지대입니다. 쿠로카와 금광에서 생산된 금으로 주조한 금화는 높은 순도로 유명합니다." # 1671719552599339960
+  building_kurokawa_mines_01: "쿠로카와 금광 갱도" # 794148331246277134
+  building_kurokawa_mines_01_desc: "$building_type_kurokawa_mines_01_desc$" # 17960404835830193430
+  building_kurokawa_mines_02: "쿠로카와 금광" # 16245753253108318505
+  building_kurokawa_mines_02_desc: "$building_sado_mines_02_desc$" # 17728405468473200702
+  building_kurokawa_mines_03: "대규모 쿠로카와 금광" # 15486185686316929237
+  building_kurokawa_mines_03_desc: "$building_sado_mines_03_desc$" # 15684914065621941418
+  building_kurokawa_mines_04: "쿠로카와 금 채굴 단지" # 5161317976468445698
+  building_kurokawa_mines_04_desc: "$building_sado_mines_04_desc$" # 4356029583790037740
+  building_fengtian_mines_04: "펑톈 채굴 단지" # 3888347280532541271
+  building_fengtian_mines_04_desc: "$building_hetian_mines_04_desc$" # 10741687437400497256

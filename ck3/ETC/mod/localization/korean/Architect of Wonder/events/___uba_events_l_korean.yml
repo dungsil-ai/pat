@@ -1,0 +1,269 @@
+﻿l_korean:
+  uba_nomadic_decisions.0001.t: "건축 계획: 초원 위에서" # 11818557835111614424
+  uba_nomadic_decisions.0001.desc: "이 초원의 건물은 이미 너무 작고 낡았어... 내 기대에 미치지 못하는군!\n\n이 땅을 다스릴 나의 신성한 권리를 부정할 자는 없으며, 이 건물은 그것을 영원히 증명할 것이다.\n\n이 웅장한 계획을 계속하기 위해 당장 찾을 수 있는 모든 장인을 불러 모아야겠어!" # 16386062968618615428
+  uba_nomadic_decisions.0001.a: "지금 시작하라!" # 17826254662410414639
+  uba_remove_decisions.0001.t: "경이로운 건축: 부지 정리" # 11106194868300911749
+  uba_remove_decisions.0001.desc: "장인들이 한때 유명했던 이 건물을 철거할 준비를 마쳤다.\n\n아... 생각해보라, 더 위대한 건물이 그 자리를 대신할 것이다. 완성된다면 나의 권력과 영광을 보여주겠지!" # 6374224074740431864
+  uba_remove_decisions.0001.a: "아쉬움이 남을지도 모르겠군." # 2554652780324591878
+  uba_remove_decisions.0001.a.flavor: "이곳의 특수 건물은 철거될 것이다.\n\n후회된다면, 나중에 더 많은 비용을 들여 건물을 재건할 수 있다." # 4584452820940097103
+  uba_decisions.0001.t: "경이로운 건축: 부지 선정" # 12897352618338271899
+  uba_decisions.0001.desc: "[uba_building_locale.GetName]의 높은 곳에 서니 주변 풍경이 한눈에 들어오는군.\n\n둘러보던 중, 멀리 괜찮은 공터가 있다는 것을 깨달았다. 지형이 평탄하여 건설하기 쉽고, 교통도 비교적 편리하다. 적절한 장소인 것 같군." # 11164302144369765568
+  uba_decisions.0001.a: "그럼 결정했다." # 6446797874537088804
+  uba_decisions.0001.a_tt: "향후 건설 프로젝트의 부지로 [uba_building_locale.GetNameNoTooltip]을(를) 선택했다." # 2530664538186444991
+  uba_decisions.0001.cancel: "좋은 생각이 아닌 것 같군." # 12415380519980180394
+  uba_decisions.0001.cancel_tt: "당신은 [uba_building_locale.GetNameNoTooltip]에 건설하려던 생각을 조용히 포기했다." # 5555271753817327523
+  uba_decisions.0999.t: "세계의 경이: [uba_building_province.GetNameNoTooltip]" # 16391600730666194856
+  uba_decisions.0999.desc: "수십 년, 수 세기가 흐른 뒤, 나의 꿈은 마침내 현실이 되었다:\n\n[uba_building_province.GetName]의 위대한 경이는 이제 그 중요한 상징이 되어 수많은 관광객과 학자들을 불러 모으고 있다. 누가 이런 위대한 기적을 만들었는지 모르는 이는 없을 것이다!\n\n오늘날, 모두가 [ROOT.Char.GetDynasty.GetName]의 이름을 기억할 것이다." # 15208371315874137466
+  uba_decisions.0999.a: "완성되었다." # 2565713411589481999
+  uba_decisions.0999.a.flavor: "$trait_architect_desc$" # 4886750915547297863
+  uba_decisions.0998.t: "$building_UBA_secret_05$：[uba_building_province.GetNameNoTooltip]" # 4498266621449635373
+  uba_decisions.0998.desc: "수십 년, 수 세기가 흐른 뒤, 나의 꿈은 마침내 현실이 되었다:\n\n[uba_building_province.GetName]의 비밀 궁전이 이제 완성되었다... 그리고 그것은 나의 것이 될 것이다. 비밀 은신처는 또한 나의 음모의 중심지가 될 것이다.\n\n오늘날, 모두가 [ROOT.Char.GetDynasty.GetName]의 이름을 두려워할 것이다." # 1641886266109321164
+  uba_decisions.1000.t: "건축 계획: $uba_building_decision_wall$" # 10605947321315260417
+  uba_decisions.1000.desc: "나의 생애도 언젠가 끝을 맞이하겠지만, 내가 만든 이 건물은 내 뒤의 변화를 목격할 것이다. 다음 질문은 이것이다:\n\n무엇이 나를 세상에 기억될 만한 가치가 있게 만드는가?" # 13331320722203399065
+  uba_decisions.1000.achievement: "나의 공적이면 충분히 답이 될 것이다." # 15619648607838809253
+  uba_decisions.1000.achievement.flavor: "당신은 자신의 업적을 반영할 건물을 건설하는 것을 고려하고 있다." # 2288714469316379709
+  uba_decisions.1000.wall: "나의 성벽은 대대로 내 백성을 보호할 것이다." # 3526695240798048905
+  uba_decisions.1000.wall.flavor: "당신은 $building_type_UBA_wall_01$ 건설을 고려하고 있다." # 6443578286413966926
+  uba_decisions.1000.test: "...그저 시험 중입니다." # 16625195050299553918
+  uba_decisions.1000.test.flavor: "이곳에 시험용 건물을 건설하기로 결정하셨습니다." # 18268463993190506916
+  uba_decisions.1000.back: "...아마도 좋은 생각은 아닌 것 같군요." # 17322311948144708765
+  uba_decisions.1000.back.flavor: "그래서 당신은 조용히 이 생각을 포기했습니다." # 18128030817225678940
+  uba_decisions.1000.cancel: "...아마도 다른 장소를 선택해야 할 것 같습니다." # 2601186815728396440
+  uba_decisions.1000.cancel.flavor: "그래서 당신은 조용히 건설 계획을 포기했습니다." # 17873364380945080296
+  uba_decisions.1001.t: "건축 계획: 역사에 기억되리라" # 13538105544297134649
+  uba_decisions.1001.desc: "내가 역사에 기억되기를 #EMP 바라는#! 것이 아니라, 역사가 나를 #EMP 기억해야#! 하는 것이다!\n\n나의 업적은 수많은 보잘것없는 자들을 #EMP 넘어섰으며#!;\n나는 이 세상에 뚜렷한 족적을 #EMP 남겼다#!;\n그리고 나는 이 세상이 영원히 나의 이름을 기억하게 #EMP 만들 것이다#!:" # 6725621225180940045
+  uba_decisions.1001.a: "\"나는 북해의 지고한 왕이자, 만 섬과 제도의 군주이다.\"" # 9485228238468974344
+  uba_decisions.1001.tt: "당신은 $great_project_type_uba_construct_valhalla$ [great_project|E]를 시작할 수 있습니다." # 16550711935285611848
+  uba_decisions.1001.a.flavor: "북방의 영역을 통일한 왕, 북해를 정복한 군주, 지고한 왕의 옥좌를 주조한 자." # 11878734999714952312
+  uba_decisions.1001.b: "나는 우트르메르의 군주이자, 십자군을 지휘하는 사령관이다." # 10173422460810001287
+  uba_decisions.1001.b.flavor: "\"나는 우리 주님의 성스러운 십자가를 바다에서 바다 끝까지 심었노라.\"" # 4478100978600242710
+  uba_decisions.1001.b.tt: "당신은 $great_project_type_uba_construct_headquarter$ [great_project|E]를 시작할 수 있습니다." # 15639157841516845732
+  uba_decisions.1010.t: "피와 금의 도시" # 13039942777122182761
+  uba_decisions.1010.desc.pagan: "수년 동안 나는 칠해에서 수많은 부를 약탈하여 높은 성벽 안에 쌓아 올렸다. 이제 나는 이 보물들을 수용할 더 웅장한 도시가 필요하다.\n\n이 도시는 지상의 발할라를 닮아야 하며, 그곳에서 나는 모든 바이킹 전사들을 불러모아 나를 위해 싸우게 할 것이다. 칠해의 모든 #EMP 부#!와 #EMP 영광#!을 위해서. 그것이 오딘의 뜻이다.\n\n이 도시는 세상의 모든 보물을 차지하고 모을 것이며;\n이 도시는 음유시인들의 노래를 통해 전 세계에 명성을 떨칠 것이고;\n이 도시는 [ROOT.Char.GetHouse.GetBaseNameNoTooltip][ROOT.Char.GetTitleAsNameNoTooltip]이라는 이름으로 영원히 기억될 것이다!" # 18347316296060915955
+  uba_decisions.1010.desc.else: "수년 동안 나는 칠해에서 수많은 부를 약탈하여 높은 성벽 안에 쌓아 올렸다. 이제 나는 이 보물들을 수용할 더 웅장한 도시가 필요하다.\n\n이 도시는 북해의 해안에 영원히 서서, #EMP 부#!와 #EMP 영광#!을 위해 나를 위해 싸울 수많은 영웅들을 불러모을 것이다.\n\n이 도시는 세상의 모든 보물을 차지하고 모을 것이며;\n이 도시는 음유시인들의 노래를 통해 전 세계에 명성을 떨칠 것이고;\n이 도시는 [ROOT.Char.GetHouse.GetBaseNameNoTooltip][ROOT.Char.GetTitleAsNameNoTooltip]이라는 이름으로 영원히 기억될 것이다!" # 7268354270683624891
+  uba_decisions.1010.a: "북해 군주의 이름은 영원히 지속되리라." # 13127661750654551444
+  uba_decisions.1010.a.flavor: "당신의 이름은 모두에게 칭송받을 것이며, 당신의 업적은 영원히 남을 것이다." # 1054248224137768447
+  uba_decisions.1011.t: "십자군의 도시" # 9703938692522321180
+  uba_decisions.1011.desc: "마침내, 진정으로 성스러운 땅이여! 아스칼론에서 오마르까지 황금 십자가가 빛나고, 이교도들은 성지에서 완전히 쫓겨났다.\n\n이 도시는 우트르메르에 영원히 서서, #EMP 신앙#!과 #EMP 영광#!을 위해 싸울 수많은 전사들을 불러모을 것이다.\n\n이 도시는 [ROOT.Char.GetFaith.HighGodName]의 이름과 함께 영원히 지속될 것이다!" # 16129710334228843481
+  uba_decisions.1011.a: "신의 이름으로!" # 620682036202363887
+  uba_decisions.1011.a.flavor: "우리에게가 아니라, 주여, 우리에게가 아니라 오직 주님의 이름에 영광을 돌리소서." # 8422732962947480116
+  uba_decisions.1100.t: "건축 계획: $building_type_UBA_wall_01$" # 674460745697461604
+  uba_decisions.1100.desc: "나는 내 백성을 영원히 보호할 튼튼한 성벽을 세우리라.\n\n영원한 수호자이자 불멸의 기념비로서, 이 성벽은 수많은 비바람과 전쟁을 견뎌내며 대대로 백성을 보호할 것이다." # 2820767082867153575
+  uba_decisions.1100.a: "그것으로 충분하다." # 886435802842278738
+  uba_decisions.1100.a_tt: "당신은 $great_project_type_uba_construct_wall$ [great_project|E]를 시작할 수 있다." # 6540515771931299895
+  uba_decisions.1100.back: "$uba_decisions.1000.back$" # 10777709133793823816
+  uba_decisions.1100.back.flavor: "$uba_decisions.1000.back.flavor$" # 15999321757731740733
+  uba_decisions.1999.t: "건축 계획: 시험" # 4095840084958219831
+  uba_decisions.1999.desc: "대상 위치에 시험용 건물을 건설한다" # 11469152403650887792
+  uba_decisions.1999.a: "그것으로 충분하다." # 886435802842278738
+  uba_decisions.1999.a_tt: "대상 위치에 시험용 건물을 건설한다" # 11469152403650887792
+  uba_decisions.2000.t: "건축 계획: $uba_building_decision_diplomacy$" # 7225694816262283845
+  uba_decisions.2000.desc: "내 생은 언젠가 끝을 맞이하겠지만, 내가 세운 이 건축물은 내 뒤에 남겨진 변화를 증명할 것이다.\n\n그 누구도 이 땅을 통치할 나의 신성한 권리를 부정할 수 없으며, 이 건축물은 그것을 영원한 표식으로 남길 것이다..." # 14679426289142040806
+  uba_decisions.2000.colosseum: "...세상의 극장보다 더 나은 곳." # 11479597184747820145
+  uba_decisions.2000.colosseum.flavor: "당신은 $building_type_UBA_colosseum_01$ 건설을 고려하고 있다." # 11897792961410638901
+  uba_decisions.2000.palace: "...웅장한 궁전." # 7965060163040777538
+  uba_decisions.2000.palace.flavor: "당신은 $building_type_UBA_palace_01$ 건설을 고려하고 있다." # 17961122216140513285
+  uba_decisions.2000.reserve: "...숲 정원은 오직 나의 것이다." # 6613701937343340760
+  uba_decisions.2000.reserve.flavor: "당신은 $building_type_UBA_reserve_01$ 건설을 고려하고 있다." # 16462451760465435146
+  uba_decisions.2100.t: "건축 계획: $building_type_UBA_colosseum_01$" # 4819146157435935040
+  uba_decisions.2100.desc: "나는 세상에 비할 데 없는 극장을 지어 대리석을 경이로운 기적으로 바꾸리라.\n\n연극과 음악의 예술은 그 비범한 매력으로 수천의 눈길을 사로잡을 것이며, 이 극장은 무대 위에서 수많은 웃음과 꿈을 뒷받침할 것이다." # 2324197477164290678
+  uba_decisions.2100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.2100.a_tt: "웅장한 건설 프로젝트가 시작되려 하니, 적절한 위치를 선택해야겠다." # 11146395179694389371
+  uba_decisions.2200.t: "건축 계획: $building_type_UBA_palace_01$" # 452865065504458490
+  uba_decisions.2200.desc: "나는 내 통치의 위대함을 세상에 알릴 웅장한 궁전을 지으리라.\n\n궁전의 높은 성벽은 수십만 년의 흥망성쇠를 목격할 것이며, 웅장한 돔은 나의 영광과 꿈처럼 역사의 비바람 속에서도 영원히 서 있을 것이다." # 16322399350149772069
+  uba_decisions.2200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.2200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.2300.t: "건축 계획: $building_type_UBA_reserve_01$" # 7764158463995648275
+  uba_decisions.2300.desc: "나는 세상에 비할 데 없는 숲 정원을 지어 그 아름다움으로 온 세상을 놀라게 하리라.\n\n산과 강, 나무와 궁전, 정자가 서로 어우러져 세상에 보기 드문 호화로운 정원을 이룰 것이다." # 12407838304322251134
+  uba_decisions.2300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.2300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.3000.t: "건축 계획: $uba_building_decision_martial$" # 9802337440469748834
+  uba_decisions.3000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.3000.castle: "...난공불락의 요새." # 12649944445378292473
+  uba_decisions.3000.castle.flavor: "$building_type_UBA_castle_01$ 건설을 고려하고 있습니다." # 17873939224466766820
+  uba_decisions.3000.tower: "...웅장하고 높은 탑." # 12116152861264002284
+  uba_decisions.3000.tower.flavor: "$building_type_UBA_tower_01$ 건설을 고려하고 있습니다." # 57505236390586381
+  uba_decisions.3000.knight: "...최고의 영광을 누릴 군사 아카데미" # 17637790187587637230
+  uba_decisions.3000.knight.flavor: "$building_type_UBA_knight_01$ 건설을 고려하고 있습니다." # 11498310677953220413
+  uba_decisions.3100.t: "건축 계획: $building_type_UBA_castle_01$" # 2731531557046861247
+  uba_decisions.3100.desc: "난공불락의 요새를 건설하여 나의 힘과 결의를 세상에 보여주리라.\n\n이 요새는 대대로 영주들의 영광과 백성들의 평온을 수호할 것이며, 수많은 기사와 장군들의 업적을 증명할 것이다." # 16637731272223541338
+  uba_decisions.3100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.3100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.3200.t: "건축 계획: $building_type_UBA_tower_01$" # 17184922707890403525
+  uba_decisions.3200.desc: "하늘 높이 솟은 탑을 건설하여 영토를 확실히 통제하리라.\n\n위압적인 탑은 잠재적인 침입자로부터 영지를 보호할 뿐만 아니라, 길을 오가는 이들에게 이정표가 되어줄 것이다." # 8614972112450783770
+  uba_decisions.3200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.3200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.3300.t: "건축 계획: $building_type_UBA_knight_01$" # 9185234121577049949
+  uba_decisions.3300.desc: "최고의 영광을 누릴 군사 아카데미를 건설하여 나의 군대를 위해 더욱 용맹한 전사들을 길러내리라.\n\n수많은 기사와 장교들이 이곳에서 전장으로 나아갈 것이며, 그 명성은 나의 적들을 공포에 떨게 할 것이다." # 18238782334400968721
+  uba_decisions.3300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.3300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.4000.t: "건축 계획: $uba_building_decision_stewardship$" # 2658560066886125950
+  uba_decisions.4000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.4000.governor: "...옳고 그름을 판단하는 궁정." # 1189685793722662851
+  uba_decisions.4000.governor.flavor: "$building_type_UBA_governor_01$ 건설을 고려하고 있습니다." # 8240597733548179574
+  uba_decisions.4000.workshop: "...뛰어난 장인 정신이 깃든 공방." # 546046698445320633
+  uba_decisions.4000.workshop.flavor: "$building_type_UBA_workshop_01$ 건설을 고려하고 있습니다." # 9669487771474125824
+  uba_decisions.4000.parliament: "...함께 국사를 논하는 의회" # 18074775458588591913
+  uba_decisions.4000.parliament.flavor: "$building_type_UBA_parliament_01$ 건설을 고려하고 있습니다." # 18269634317137678062
+  uba_decisions.4100.t: "건축 계획: $building_type_UBA_governor_01$" # 4944785189480053134
+  uba_decisions.4100.desc: "나의 통치 아래 공정함과 정의를 보장할 사법 궁정을 세우리라.\n\n심판이란 이 광활한 영토와 백성 모두에게 정의를 가져다주는 것이다. 이 체계는 세상이 끝날 때까지 지속될 것이다." # 2824080641815612048
+  uba_decisions.4100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.4100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.4200.t: "건축 계획: $building_type_UBA_workshop_01$" # 1207596872744062103
+  uba_decisions.4200.desc: "장인들이 모여들 공방을 건설하리라. 뛰어난 기술을 가진 장인들은 영토 번영의 증거이다.\n\n정교한 장비와 도구는 이곳의 명함이 되어, 장인의 도시로서 그 명성을 널리 떨치게 할 것이다." # 9182967380417513641
+  uba_decisions.4200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.4200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.4300.t: "건축 계획: $building_type_UBA_parliament_01$" # 11312941494924285009
+  uba_decisions.4300.desc: "포용적인 의회를 설립하여 나의 신하와 봉신들이 국사를 논의하도록 하리라.\n\n귀족, 성직자, 시민의 대표들이 함께 모여 국가의 모든 사안을 토론할 것이다. 이를 바탕으로 수립된 새로운 체계는 향후 수천 년 동안 나의 나라를 완전히 다르게 보이게 할 것이다." # 15124844382052305555
+  uba_decisions.4300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.4300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.5000.t: "건축 계획: $uba_building_decision_intrigue$" # 7763399412883375751
+  uba_decisions.5000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.5000.secret: "...알려지지 않은 은신처" # 3899067179355610706
+  uba_decisions.5000.secret.flavor: "당신은 $building_type_UBA_secret_01$ 건설을 고려하고 있습니다." # 10794995861335101906
+  uba_decisions.5100.t: "건축 계획: $building_type_UBA_secret_01$" # 8342646898260538888
+  uba_decisions.5100.desc: "나는 숨겨져 있고 아무도 알 수 없는 궁전을 지어 그곳에서 그림자 속에 나의 제국을 건설할 것이다.\n\n외부인이 이 비밀을 절대 알지 못하게 할 것이다. 궁전 건설에 참여한 장인과 하인들조차 살아서 나갈 수 없을 것이다." # 10736156746022396778
+  uba_decisions.5100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.5100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.6000.t: "건축 계획: $uba_building_decision_learning$" # 3089104346257030981
+  uba_decisions.6000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.6000.hospital: "...생명을 구하고 부상자를 치유하는 병원." # 3162467174241180691
+  uba_decisions.6000.hospital.flavor: "당신은 $building_type_UBA_hospital_01$ 건설을 고려하고 있습니다." # 4274294732395978233
+  uba_decisions.6000.university: "...가르치고 배우기 위한 대학." # 5648221593611015062
+  uba_decisions.6000.university.flavor: "당신은 $building_type_UBA_university_01$ 건설을 고려하고 있습니다." # 6445717155547993224
+  uba_decisions.6000.church: "...웅장하고 엄숙한 사원" # 15113050125583111796
+  uba_decisions.6000.church.flavor: "당신은 $building_type_UBA_church_01$ 건설을 고려하고 있습니다." # 10742291108685200970
+  uba_decisions.6100.t: "건축 계획: $building_type_UBA_hospital_01$" # 1632562218256775913
+  uba_decisions.6100.desc: "나는 역병이 나의 통치와 신민을 해치지 못하도록 생명을 구하는 병원을 지을 것이다.\n\n경건하고 신성한 이들이 이곳에서 병자와 장애인을 돌보며, 고통받는 이들에게 희망을 줄 것이다." # 2842956839440913224
+  uba_decisions.6100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.6100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.6200.t: "건축 계획: $building_type_UBA_university_01$" # 2105755034214741438
+  uba_decisions.6200.desc: "나는 학자들이 모여들고 전 세계의 지식이 집대성될 대학을 지을 것이다.\n\n이곳은 지식의 궁전이자 문화의 요람이 될 것이다. 영감이 충돌하여 눈부신 불꽃을 일으키는 곳이 될 것이다." # 8409633312001365984
+  uba_decisions.6200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.6200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.6300.t: "건축 계획: $building_type_UBA_church_01$" # 11615140274311505952
+  uba_decisions.6300.desc: "나는 웅장한 사원을 지어 이 위대한 건축물을 신께 바칠 것이다.\n\n웅장한 사원은 각지의 신도들을 불러모아 경배하게 할 것이며, 그들은 그곳에서 신의 가호를 빌고 신의 시선을 느낄 것이다." # 2553522260291581684
+  uba_decisions.6300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.6300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.7000.t: "건축 계획: $uba_building_decision_travel$" # 4692726287538948150
+  uba_decisions.7000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.7000.market: "...상인들이 모여드는 시장." # 4031467719895577194
+  uba_decisions.7000.market.flavor: "당신은 $building_type_UBA_market_01$ 건설을 고려하고 있습니다." # 9097062826671588637
+  uba_decisions.7000.port: "...배들로 붐비는 항구." # 4932205388518356925
+  uba_decisions.7000.port.flavor: "당신은 $building_type_UBA_port_01$ 건설을 고려하고 있습니다." # 5974294404632980662
+  uba_decisions.7000.holyland: "...다양한 신앙의 성지." # 16523102653809542522
+  uba_decisions.7000.holyland.flavor: "$building_type_UBA_holyland_01$ 건설을 고려하고 있습니다." # 16464923276381647956
+  uba_decisions.7000.basins: "...저수지, 분지." # 17131210733168584021
+  uba_decisions.7000.basins.flavor: "$building_type_UBA_basins_01$ 건설을 고려하고 있습니다." # 2367025450224344426
+  uba_decisions.7100.t: "건축 계획: 교역소" # 14356998687094412897
+  uba_decisions.7100.desc.market: "상인들이 모여 전 세계의 희귀한 보물을 수집할 시장을 건설하겠습니다.\n\n전 세계의 물품과 사람들이 거의 본 적 없는 화폐, 그리고 세상의 모든 부가 이곳에 모일 것입니다." # 1057737524388312142
+  uba_decisions.7100.market: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.7100.market_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.7100.desc.port: "무역로의 보석이자 배들로 가득한 항구를 건설하겠습니다.\n\n이 항구는 도시와 통합되어 끊임없이 배들이 드나들 것입니다. 수많은 꿈을 실어 나르고 수많은 삶을 목격할 것입니다." # 17822611497189138731
+  uba_decisions.7100.port: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.7100.port_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.7200.t: "건축 계획: $building_type_UBA_holyland_01$" # 15315018414543102587
+  uba_decisions.7200.desc: "세상 그 누구도 상상하지 못한 길을 실천하겠습니다. 전 세계의 신도들이 이곳에 모일 수 있을 것입니다...\n\n...하지만 그들은 서로 싸우는 대신 서로를 존중할 것입니다. 신앙. 그들은 축복을 빌고, 고통을 없애며, 세상에 평화의 씨앗을 뿌릴 것입니다.\n\n어려운 일이겠지만, 우리는 시도해 볼 수 있습니다." # 13775464809611852548
+  uba_decisions.7200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.7200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.7300.t: "건축 계획: $building_type_UBA_basins_01$" # 10892296683905167590
+  uba_decisions.7300.desc: "홍수의 위협을 줄이고 인근 지역의 물을 보호하여 대대로 혜택을 줄 저수지를 건설하겠습니다.\n\n잘 정비된 저수지와 수로 체계는 물의 흐름을 정밀하게 제어하고 수자원을 극대화하여 내 영지를 더욱 번영하게 만들 것입니다." # 309500199631684730
+  uba_decisions.7300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.7300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.8000.t: "건축 계획: $uba_building_decision_lifestyle$" # 9173551367489146749
+  uba_decisions.8000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.8000.academy: "...방대한 서적의 도서관." # 12440223371493376894
+  uba_decisions.8000.academy.flavor: "$building_type_UBA_academy_01$ 건설을 고려하고 있습니다." # 13757527587204397340
+  uba_decisions.8000.garden: "...살아있는 정원" # 3526716971520284314
+  uba_decisions.8000.garden.flavor: "$building_type_UBA_garden_01$ 건설을 고려하고 있습니다." # 11327876016254041648
+  uba_decisions.8000.hunting: "...야생 사냥터." # 2363591332481408951
+  uba_decisions.8000.hunting.flavor: "$building_type_UBA_hunting_01$ 건설을 고려하고 있습니다." # 484109390162925246
+  uba_decisions.8100.t: "건축 계획: $building_type_UBA_academy_01$" # 6763824799769422064
+  uba_decisions.8100.desc: "지식의 계승을 보장하기 위해 방대한 도서관을 건설하겠습니다.\n\n이곳은 지식의 궁전이자 문화의 요람이 될 것입니다. 이곳에는 알렉산드리아 도서관을 능가하는 수많은 서적이 있을 것이며, 그 지식은 바그다드의 지혜의 궁전보다 더 위대할 것입니다." # 2032926449362539525
+  uba_decisions.8100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.8100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.8200.t: "건축 계획: $building_type_UBA_garden_01$" # 8805794472278842984
+  uba_decisions.8200.desc: "예술가의 꿈속 풍경을 재현할 놀라운 정원을 건설하겠습니다.\n\n이 기적 같은 정원은 계절이 바뀌어도 그 아름다움을 잃지 않도록 전 세계의 이국적인 꽃과 식물을 수집할 것이며, 바빌론과 페르시아의 고대 불가사의조차 이에 비하면 빛을 잃을 것입니다." # 15710374226936480741
+  uba_decisions.8200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.8200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.8300.t: "건축 계획: $building_type_UBA_hunting_01$" # 3794333930363033118
+  uba_decisions.8300.desc: "야생 사냥터를 건설하고 근처의 미개발지를 모두 에워싸겠습니다.\n\n사냥터 가장자리에는 사냥 시설이 설치될 것이며, 호화로운 별장까지 포함하여 사냥을 고급스러운 경험으로 만들 것입니다." # 4782433080664396040
+  uba_decisions.8300.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.8300.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.9000.t: "건축 계획: $uba_building_decision_lifestyle$" # 9173551367489146749
+  uba_decisions.9000.desc: "$uba_decisions.2000.desc$" # 14213830960904078489
+  uba_decisions.9000.yurt: "...칸에게 어울리는 왕실 궁정." # 14657085363179393202
+  uba_decisions.9000.yurt.flavor: "당신은 $building_type_UBA_yurt_01$을(를) 건설할지 고려하고 있습니다." # 8755571682324969596
+  uba_decisions.9000.pasture: "...풍요로운 목초지." # 5610595830247756672
+  uba_decisions.9000.pasture.flavor: "당신은 $building_type_UBA_pasture_01$을(를) 건설할지 고려하고 있습니다." # 5818698098630864206
+  uba_decisions.9000.hunting: "$uba_decisions.8000.hunting$" # 8551979263080456841
+  uba_decisions.9000.hunting.flavor: "$uba_decisions.8000.hunting.flavor$" # 14656652794214884988
+  uba_decisions.9100.t: "건축 계획: $building_type_UBA_yurt_01$" # 17487871674612800770
+  uba_decisions.9100.desc: "칸에 걸맞은 왕실을 세워 초원의 명실상부한 권력의 중심지가 되리라. \n\n나의 명령은 그곳에서부터 퍼져나가, 나의 노예든 적이든 초원의 모든 부족이 내 발밑에 엎드리게 할 것이다." # 2860274960992024952
+  uba_decisions.9100.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.9100.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_decisions.9200.t: "건축 계획: $building_type_UBA_pasture_01$" # 8010579972792051644
+  uba_decisions.9200.desc: "염소, 양, 말, 낙타, 소와 같은 가축들이 초원에서 자유롭게 뛰놀 수 있는 풍요로운 목초지를 구획하겠다. \n\n더 나은 방목 방식과 관리로 더 큰 가축 떼를 거느릴 것이다..." # 17542274718449309071
+  uba_decisions.9200.a: "$uba_decisions.1100.a$" # 8808037058914094669
+  uba_decisions.9200.a_tt: "$uba_decisions.2100.a_tt$" # 6201425305918770023
+  uba_vassalyn.1000.t: "거래: 할 것인가, 말 것인가?" # 13769912897472944092
+  uba_vassalyn.1000.desc: "내 옷장이 움직이고 있다!\n\n심장이 거세게 뛰는 소리가 들리는 것 같다. 저게 뭐지? 암살자인가.\n\n도움을 청하려던 찰나, 옷장 안에서 기이하고도 섬뜩한 목소리가 들려왔다:\n\n\"친애하는 [ROOT.GetCharacter.GetFirstNameNoTooltip], #EMP [gold|E]#!가 필요한 게지?\" 네가 원하는 건 무엇이든 줄 수 있다. 그저 탁자 위에 있는 금화 주머니와 네 영혼의 아주 작은 조각을 내게 넘기기만 하면 된다...\"\n\n젠장, 옷장에 악마라도 들었단 말인가? 정체불명의 존재와 거래를 하다니, 제정신인가?" # 11638067530999942591
+  uba_vassalyn.1000.a: "원하는 건 무엇이든 주겠다!" # 16679855092081672321
+  uba_vassalyn.1000.a.flavor: "\"그냥 주머니를 거기에 두거라. 영혼은 나중에 와서 가져가마.\" 목소리가 대답했다." # 11239179528299226849
+  uba_vassalyn.1000.back: "악마와는 거래하지 않겠다, 당장 꺼져라!" # 5418370965115674045
+  uba_vassalyn.1000.back.flavor: "목소리는 즉시 사라졌다. 달려온 근위병들이 옷장을 샅샅이 뒤졌지만, 아무것도 발견하지 못했다." # 12257567058809528635
+  uba_vassalyn.1000.cancel: "이건 환각임이 틀림없어!" # 12185007321772345389
+  uba_vassalyn.1000.cancel.flavor: "기이한 소음을 무시했지만, 분명 불길한 징조였다." # 12426949943087518276
+  uba_vassalyn.1001.t: "거래: 옷장 속의 목소리" # 7805155459937018585
+  uba_vassalyn.1001.desc: "\"거래 성립이다.\" 목소리가 말했다. \"물러설 생각은 마라. 내가 네게 줄 것은 이 금화 주머니의 가치를 훨씬 뛰어넘을 테니.\"\n\n\"예를 들면, 마르지 않는 광산 같은 것 말이다.\"\n\n광산이라고? 어리석은 소리. 정말 그런 게 있었다면 진작에 발견되었겠지.\n\n\"믿든 말든 네 자유다. 하지만 선택해야 할 것이다. 무엇을 원하느냐? 보석인가, 아니면 금속인가? - 아, 참고로 약간의 수수료를 받는다... 걱정 마라, 영혼을 아주 조금 가져갈 뿐이니, 정말 아주 조금이다!\"" # 2614637871228873581
+  uba_vassalyn.1001.again: "\"나쁘지 않지?\" \n\n\"무엇을 원하느냐? 보석인가, 아니면 금속인가? - 아, 참고로 약간의 수수료를 받는다... 걱정 마라, 영혼을 아주 조금 가져갈 뿐이니, 정말 아주 조금이다!\"" # 4651550464876294393
+  uba_vassalyn.1001.a: "#EMP 보석#! 광맥 하나가 금화 주머니보다 훨씬 가치 있지." # 11815095156856340562
+  uba_vassalyn.1001.a.flavor: "\"좋은 선택이다.\" 그 목소리는 내 생각을 읽고 있는 듯했다." # 5096348852111044561
+  uba_vassalyn.1001.b: "#EMP 금속#! 광산을 가질 수만 있다면..." # 6377480542311289044
+  uba_vassalyn.1001.b.flavor: "\"이를테면, 금 말인가? 하하하——\" 목소리가 섬뜩하게 웃었다." # 15243315149258337782
+  uba_vassalyn.1001.c: "전부 다 원한다!" # 2306395774872642153
+  uba_vassalyn.1001.c.flavor: "\"내 앞에서 잔꾀를 부리는 건 좋지 않은 생각이다.\"" # 18270019135865384394
+  uba_vassalyn.1001.back: "아니, 악마와는 거래하지 않겠다! 경비병!" # 8640697483104937901
+  uba_vassalyn.1001.back.flavor: "목소리는 한숨을 내쉬더니 사라졌다. 달려온 경비병이 옷장을 확인했지만, 아무것도 발견하지 못했다." # 14841408955303591198
+  uba_vassalyn.1001.cancel: "아니, 이건 환각임이 분명해..." # 10330673650850289907
+  uba_vassalyn.1001.cancel.flavor: "$uba_vassalyn.1000.cancel.flavor$" # 14632096679393092489
+  uba_vassalyn.1100.t: "거래: 보석인가?" # 13090936928419063201
+  uba_vassalyn.1100.desc: "그래, 만약 보석이 끝없이 공급된다면 난 그것들로 많은 일을 할 수 있을 거야. 영지민들의 마음을 사로잡거나, 기사와 시종들에게 보상을 하거나, 심지어 성 전체를 보석으로 뒤덮을 수도 있겠지...\n\n내가 막 말을 꺼내려는 찰나, 서투른 시종 하나가 문을 갑자기 열고 들어와 내 말을 가로막는다. 내가 그를 꾸짖기도 전에 그가 말하기 시작한다:\n\n\"주군, 방금 발견한 것이 있습니다...\"\n\n이 순간, 너는 시종이 무슨 말을 하는지 전혀 관심이 없다. 왜냐하면 그 목소리가 너에게 속삭이고 있기 때문이다:" # 7653601865363847457
+  uba_vassalyn.1100.a: "#EMP 보석#!이라니!! 분명 네가 가장 좋아하는 것일 테지!" # 12218008026905696895
+  uba_vassalyn.1100.a.flavor: "잠시 후, 너는 시종에게서 같은 대답을 듣게 되지만, 탁자 위에 있던 동전 주머니는 흔적도 없이 사라져 있다.\n\n분명 악마가 네 제안을 받아들인 것이다. 하지만 동전 주머니와 약간의 영혼을 끝없는 보석과 바꿀 기회라니, 이토록 좋은 거래는 #color_gray 다시#! 오지 않을 것이다." # 10930408064962511837
+  uba_vassalyn.1100.b: "네가 #EMP 다이아몬드#!를 원할 줄 알았지!!" # 11414310070866594396
+  uba_vassalyn.1100.b.flavor: "잠시 후, 너는 시종에게서 같은 대답을 듣게 되지만, 탁자 위에 있던 동전 주머니는 흔적도 없이 사라져 있다.\n\n분명 악마가 네 제안을 받아들인 것이다. 하지만 동전 주머니와 약간의 영혼을 끝없는 다이아몬드와 바꿀 기회라니, 이토록 좋은 거래는 #color_gray 다시#! 오지 않을 것이다." # 2265570432228978180
+  uba_vassalyn.1100.c: "\"아니면 #EMP 옥#!을 더 선호하나?\"" # 15248609676222900836
+  uba_vassalyn.1100.c.flavor: "$uba_vassalyn.1200.a.flavor$" # 13400210025527859183
+  uba_vassalyn.1100.d: "\"#EMP 소금#!은 어떤가?\"" # 4605351110108296135
+  uba_vassalyn.1100.d.flavor: "$uba_vassalyn.1200.a.flavor$" # 13400210025527859183
+  uba_vassalyn.1100.z: "\"이봐, 정신 차려!\"" # 8863488970471268282
+  uba_vassalyn.1100.z.flavor: "그 목소리가 너를 환각에서 현실로 끌어당긴다." # 5350916384272229362
+  uba_vassalyn.1200.t: "거래: 금속인가?" # 3953738450553468406
+  uba_vassalyn.1200.desc: "그래, 경이로운 금속들이지. 금광이나 은광이 있다면 나는 엄청난 부자가 될 거야. 철광이나 구리 광산이 있다면 가장 좋은 금속으로 무기를 제련할 수 있을 텐데...\n\n내가 막 말을 꺼내려는 찰나, 서투른 시종 하나가 문을 갑자기 열고 들어와 내 말을 가로막는다. 내가 그를 꾸짖기도 전에 그가 말하기 시작한다:\n\n\"주군, 방금 발견한 것이 있습니다...\"\n\n이 순간, 너는 시종이 무슨 말을 하는지 전혀 관심이 없다. 왜냐하면 그 목소리가 너에게 속삭이고 있기 때문이다:" # 6935314052947105900
+  uba_vassalyn.1200.a: "그것은 #EMP 금#! 광산이다." # 3554255112850388369
+  uba_vassalyn.1200.a.flavor: "잠시 후, 너는 시종에게서 같은 대답을 듣게 되지만, 탁자 위에 있던 동전 주머니는 흔적도 없이 사라져 있고, 몇 가지 물건들도 함께 자취를 감추었다.\n\n분명 악마가 네 제안을 받아들인 것이다." # 13479510414032583765
+  uba_vassalyn.1200.b: "네가 #EMP 은#! 광산을 더 선호할 것 같군." # 12622645550543691695
+  uba_vassalyn.1200.b.flavor: "$uba_vassalyn.1200.a.flavor$" # 13400210025527859183
+  uba_vassalyn.1200.c: "너에게는 #EMP 구리#! 광산이 필요할 것 같군." # 3130242083283407663
+  uba_vassalyn.1200.c.flavor: "$uba_vassalyn.1200.a.flavor$" # 13400210025527859183
+  uba_vassalyn.1200.d: "이 #EMP 철광산#!이면 너를 만족시키기에 충분하겠지." # 1013809854383800068
+  uba_vassalyn.1200.d.flavor: "$uba_vassalyn.1200.a.flavor$\n\n남겨진 이상한 쪽지에는 이렇게 적혀 있다: \"이것으로 $building_type_wind_furnace_01$ [buildings|E]을(를) 잠금 해제할 수 있다.\"" # 16269235371198919916
+  uba_vassalyn.1200.z: "너는 속았다!" # 10613055451675288121
+  uba_vassalyn.1200.z.flavor: "$uba_vassalyn.1100.z.flavor$" # 244786977875861114
+  uba_vassalyn.1900.t: "거래: 탐욕" # 3608372980639053335
+  uba_vassalyn.1900.desc: "\"아.\" 목소리가 한숨을 내쉬었다. \"이것이 네 선택인가? 탐욕스러운 인간들이여, 네 금으로는 그런 욕망을 사기에 부족하다는 것을 상기시켜 주지.\"\n\n\"물론, 네가 정녕 이것을 선택하겠다면, 더 많은 #EMP 대가#!를 치러야 할 것이다. 선택은 네 몫이다, 나의 친애하는 [ROOT.GetCharacter.GetFirstNameNoTooltip]여.\"" # 4858858713795532054
+  uba_vassalyn.1900.a: "동의하겠다." # 218419531943684139
+  uba_vassalyn.1900.a.flavor: "좋다,\" 목소리가 대답했다, \"네 뜻대로 하마." # 15822944112782473459
+  uba_vassalyn.1900.z: "생각해 봤지만, 그만두겠다." # 6367935150000517208
+  uba_vassalyn.1900.z.flavor: "\"좋다,\" 목소리가 대답했다." # 10233189702942934334
+  uba_vassalyn.1901.t: "거래: 기적" # 10384701849685636805
+  uba_vassalyn.1901.desc: "내가 막 말을 꺼내려는 찰나, 서투른 시종이 문을 갑자기 열어젖히며 내 말을 가로막았다. 내가 그를 꾸짖기도 전에 그가 말하기 시작했다:\n\n\"주군, 방금 발견했습니다...\"\n\n이 순간, 당신은 시종이 하는 말에 전혀 관심이 없다. 왜냐하면 다른 목소리가 당신에게 말을 걸고 있기 때문이다:" # 6907485581410135117
+  uba_vassalyn.1901.a: "그것은 #EMP 기적의 광산#!이다." # 12509951769134268765
+  uba_vassalyn.1901.a.flavor: "나중에 당신은 시종으로부터 같은 대답을 듣게 되지만, 탁자 위에 있던 금화 주머니는 흔적도 없이 사라졌고, 그와 함께 어떤 것들도 흔적 없이 사라져 버렸다.\n\n그리고 남겨진 기묘한 쪽지 하나: \"이것으로 $building_type_wind_furnace_01$ [buildings|E]이(가) 해금될 것이다\" - 대체 무슨 뜻일까?" # 9668618679453977551
+  uba_vassalyn.1901.b: "이제 와서 물러나기엔 너무 늦었어.\"" # 14304608373036976130
+  uba_vassalyn.1901.b.flavor: "나중에 당신은 시종으로부터 그들이 고품질 철광산을 발견했다는 소식을 듣게 되지만, 탁자 위에 있던 금화 주머니는 흔적도 없이 사라졌고, 그와 함께 어떤 것들도 흔적 없이 사라져 버렸다.\n\n그리고 남겨진 기묘한 쪽지 하나: \"이것으로 $building_type_wind_furnace_01$ [buildings|E]이(가) 해금될 것이다\" - 대체 무슨 뜻일까?" # 5340624446693769342
+  uba_vassalyn.1902.t: "거래: 기적의 대가" # 11812172129412780966
+  uba_vassalyn.1902.desc: "며칠 후, 나는 나를 보는 모든 이들이 자신도 모르게 웃음을 터뜨리는 것을 알아차렸다. 이유를 물어보면 그들은 화제를 돌리거나 이런저런 방식으로 대답을 피하려 했다. (심지어 그들은 여전히 웃고 있었다!)\n\n마침내 한 충직한 시종이 내 질문에 답해주겠다고 나섰다. 그가 말했다:\n\n'주군, 주군께서 서큐버스를 유혹하려다 결국 침대에서 걷어차였다는 이야기가 온 사방에 퍼져 있습니다... 이런 이야기가 하나뿐인 것도 아닙니다. 영지의 농부들조차 여러 가지 버전을 이야기할 수 있을 정도니, 하물며...'\n\n시종은 계속해서 설명을 이어갔지만, 나는 더 이상 들을 용기가 없었다." # 2491243099489205470
+  uba_vassalyn.1902.a: "빌어먹을!" # 3619060091542086825
+  uba_vassalyn.1902.a.flavor: "이제 당신은 그 작은 대가가 무엇이었는지 알게 되었다..." # 7862727428624684897

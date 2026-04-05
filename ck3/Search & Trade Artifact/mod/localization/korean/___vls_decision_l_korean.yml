@@ -12,3 +12,6 @@
   vls_decision_slot_1_tooltip: "$vls_decision_slot_1$" # 7463616620998582603
   vls_decision_slot_2_desc: "$vls_decision_slot_2$" # 16134399379055859483
   vls_decision_slot_2_tooltip: "$vls_decision_slot_2$" # 16134399379055859483
+  vls_decision_slot_1: "" # 17241709254077376921
+  vls_decision_slot_2: "" # 17241709254077376921
+  vls_decision_event.1000.desc_intro_other_holding: "" # 17241709254077376921

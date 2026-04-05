@@ -60,7 +60,7 @@ async function main () {
     } else if (retranslate) {
       log.box(
         `
-        Stellaris 잘못 번역된 항목 재번역
+        Stellaris 잘못되었거나 누락된 번역 출력 복구 무효화
         - 대상 경로: ${stellarisDir}
         - 대상 모드 (${mods.length}개): ${mods}
         `,
@@ -68,7 +68,7 @@ async function main () {
       
       await invalidateIncorrectTranslations('stellaris', stellarisDir, mods)
       
-      log.success(`잘못 번역된 항목 무효화 완료!`)
+      log.success(`잘못되었거나 누락된 번역 출력 복구 무효화 완료!`)
     } else if (updateTransliterationFiles) {
       // CLI 인자 파싱: --since-commit
       const commitArg = process.argv.find(arg => arg.startsWith('--since-commit='))

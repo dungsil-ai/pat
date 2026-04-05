@@ -33,3 +33,10 @@
   reinforce_sicily.0007.desc: "적의 봉쇄망을 뚫고 달려오느라 돛이 갈기갈기 찢어진 쾌속 갤리선 한 척이 절박한 전갈을 싣고 도착했습니다. 시칠리아를 담당하는 스트라테고스의 인장이 깨지며 암울한 소식이 드러났습니다.\n\n이미 시칠리아의 거의 전역을 집어삼킨 사라센의 물결이 마지막 압도적인 공격을 위해 집결하고 있습니다. 그들의 목표는 섬에 남은 우리의 마지막 유의미한 거점인 시라쿠사의 거대 항구입니다. 수비대는 지쳤고, 성벽은 부서졌으며, 백성들은 피할 수 없는 공성전의 공포 속에 살고 있습니다.\n\n스트라테고스의 간청은 간단합니다. 시라쿠사가 함락되면 이 섬에서 우리의 존재는 영원히 사라질 것입니다. 옛 제국의 곡창지대를 잃게 될 것이며, 침략자들은 본토를 마음껏 습격할 수 있는 불침의 요새를 갖게 될 것입니다.\n\n지금이 마지막 순간입니다. 시칠리아를 구하기 위해 우리는 단순히 원조를 보내는 것에 그쳐서는 안 됩니다. 섬을 되찾기 위한 전면적인 작전을 개시해야 합니다." # 7216568369732874991
   reinforce_sicily.0007.a: "그들은 전쟁을 겪게 될 것이다! 우리는 시칠리아를 포기하지 않겠다!" # 18312326590015987415
   SICILY_LOCATION_1_TOOLTIP: "시라쿠사가 귀하의 영역 내에 있습니다." # 13515809872843035805
+  great_project_type_tooltip_reinforce_sicily: "" # 17241709254077376921
+  great_project_name_possessive_reinforce_sicily: "" # 17241709254077376921
+  great_project_name_reinforce_sicily: "" # 17241709254077376921
+  great_project_type_reinforce_sicily_contribution_name_syracuse_fort: "" # 17241709254077376921
+  great_project_type_reinforce_sicily_contribution_name_sicily_troops: "" # 17241709254077376921
+  great_project_type_reinforce_sicily_contribution_name_sicily_navy: "" # 17241709254077376921
+  great_project_type_reinforce_sicily_contribution_name_sicily_war_chest: "" # 17241709254077376921

@@ -1,0 +1,17 @@
+﻿l_korean:
+  cow_generic_university_01_action: "@development_icon! 경이로운 도시 업그레이드" # 2009181044038372779
+  cow_generic_university_01_action_label: "@development_icon! [landed_title.GetNameNoTier]의 대학교를 업그레이드하여 경이로운 도시를 발전시키십시오" # 5636129717049694530
+  cow_generic_university_01_action_desc: "@gold_icon! 업그레이드 비용이 들지 않습니다" # 17106383859085282604
+  cow_generic_university_01_action_click: "#I [landed_title.GetNameNoTierNoTooltip]의 영지를 보려면 클릭하십시오#!" # 6243539870557188189
+  cow_generic_university_02_action: "@development_icon! 경이로운 도시 업그레이드" # 2009181044038372779
+  cow_generic_university_02_action_label: "@development_icon! [landed_title.GetNameNoTier]의 대학교를 업그레이드하여 경이로운 도시를 발전시키십시오" # 5636129717049694530
+  cow_generic_university_02_action_desc: "@gold_icon! 업그레이드 비용이 들지 않습니다" # 17106383859085282604
+  cow_generic_university_02_action_click: "#I [landed_title.GetNameNoTierNoTooltip]의 영지를 보려면 클릭하십시오#!" # 6243539870557188189
+  cow_generic_library_01_action: "@development_icon! 경이로운 도시 업그레이드" # 2009181044038372779
+  cow_generic_library_01_action_label: "@development_icon! [landed_title.GetNameNoTier]의 대도서관을 업그레이드하여 경이로운 도시를 발전시키십시오" # 2502734643195938295
+  cow_generic_library_01_action_desc: "@gold_icon! 업그레이드 비용이 들지 않습니다" # 17106383859085282604
+  cow_generic_library_01_action_click: "#I [landed_title.GetNameNoTierNoTooltip]의 영지를 보려면 클릭하십시오#!" # 6243539870557188189
+  cow_generic_library_02_action: "@development_icon! 경이로운 도시 업그레이드" # 2009181044038372779
+  cow_generic_library_02_action_label: "@development_icon! [landed_title.GetNameNoTier]의 대도서관을 업그레이드하여 경이로운 도시를 발전시키십시오" # 2502734643195938295
+  cow_generic_library_02_action_desc: "@gold_icon! 업그레이드 비용이 들지 않습니다" # 17106383859085282604
+  cow_generic_library_02_action_click: "#I [landed_title.GetNameNoTierNoTooltip]의 영지를 보려면 클릭하십시오#!" # 6243539870557188189

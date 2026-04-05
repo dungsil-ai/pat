@@ -3,60 +3,114 @@
   building_type_cow_generic_university_01_desc: "#bold 영역# 전역에 명성이 자자한 학문의 높은 자리." # 8787081392542095195
   building_cow_generic_university_01: "지역 대학" # 4935501809843543160
   building_cow_generic_university_01_desc: "도시의 인구가 증가함에 따라, 젊은이와 노인 모두 칼이나 괭이를 드는 것보다 더 큰 기회를 찾고 있습니다.\n\n이 연구와 학문의 중심지는 깨달음을 얻고자 주변 지역에서 모여드는 이들에게 빛의 등대가 되어주고 있습니다." # 13881838071197158308
-  building_cow_generic_university_02: "저명한 대학" # 7461631297775384708
-  building_cow_generic_university_02_desc: "이 대학은 그 본거지인 도시와 마찬가지로 전 세계에 명성이 자자합니다.\n\n이곳에서는 세계에서 가장 존경받는 사상가들이 배출되었으며, 이제 통치자들과 학자들은 그 유명한 회랑에서 공부하고 토론하기 위해 먼 거리를 마다하지 않고 찾아옵니다." # 13934018233329809011
+  building_cow_generic_university_02: "지역 대학" # 4935501809843543160
+  building_cow_generic_university_02_desc: "도시 인구가 증가함에 따라 젊은이와 노인 모두 검이나 삽을 잡는 것 이상의 더 큰 기회를 찾고 있습니다.\n\n이 연구 및 학문 중심지는 주변 지역에서 깨달음을 구하는 이들에게 등대와 같은 역할을 합니다." # 13881838071197158308
+  building_cow_generic_university_03: "지역 대학" # 4935501809843543160
+  building_cow_generic_university_03_desc: "도시 인구가 증가함에 따라 젊은이와 노인 모두 검이나 삽을 잡는 것 이상의 더 큰 기회를 찾고 있습니다.\n\n이 연구 및 학문 중심지는 주변 지역에서 깨달음을 구하는 이들에게 등대와 같은 역할을 합니다." # 13881838071197158308
   building_type_cow_generic_library_01: "위대한 도서관" # 10854350066520605779
   building_type_cow_generic_library_01_desc: "책은 귀중합니다. 과거와 새로운 지식이 그 페이지에 기록되어 있기 때문입니다. 이 지식의 등대는 수천 권의 책을 보관할 수 있는 시설과 독서 공간을 갖추게 될 것입니다." # 4508788498033328483
   building_cow_generic_library_01: "연쇄 서고" # 5527558037610743129
   building_cow_generic_library_01_desc: "책은 귀중한 것이니, 과거와 새로운 지식이 그 페이지에 기록되어 있기 때문입니다.\n\n이 지식의 등불에는 당대의 위대한 저작들이 많이 보관되어 있으며, 이로 인해 수도원 관리자들은 이 값비싼 고서들에 크고 튼튼한 철제 쇠사슬을 묶어 두었습니다." # 4596255622910759815
+  building_cow_generic_library_02: "연쇄 도서관" # 5527558037610743129
+  building_cow_generic_library_02_desc: "과거와 현재의 지식이 그 페이지에 기록되어 있으니 책은 귀중한 것입니다.\n\n이 지식의 등대에는 시대의 위대한 저작들이 많이 소장되어 있어, 수도원 관리인들이 값을 매길 수 없는 서적들에 커다란 철제 사슬을 달아두었습니다." # 4596255622910759815
+  building_cow_generic_library_03: "연쇄 도서관" # 5527558037610743129
+  building_cow_generic_library_03_desc: "과거와 현재의 지식이 그 페이지에 기록되어 있으니 책은 귀중한 것입니다.\n\n이 지식의 등대에는 시대의 위대한 저작들이 많이 소장되어 있어, 수도원 관리인들이 값을 매길 수 없는 서적들에 커다란 철제 사슬을 달아두었습니다." # 4596255622910759815
   building_type_cow_christian_cathedral_01: "대성당" # 14041759225403264836
   building_type_cow_christian_cathedral_01_desc: "장엄한 대성당은 공학 기술과 아름다움의 경이로움일 뿐만 아니라, 여행자들에게 안전한 피난처이자 후원자를 기리는 권위 있는 기념비이기도 합니다." # 14894952222377768964
   building_cow_christian_cathedral_01: "대성당과 수도원" # 8170744147365235077
   building_cow_christian_cathedral_01_desc: "장엄한 대성당은 공학과 미학의 경이로움일 뿐만 아니라 여행자들의 안식처이자 후원자를 기리는 명망 높은 기념비이기도 합니다.\n\n게다가 이 대성당은 현지 노동자들이 외국 시장에 물품을 판매할 수 있도록 지원하는 수도회 공동체의 거처를 제공합니다." # 1742149718049790306
+  building_cow_christian_cathedral_02: "대성당과 수도원" # 8170744147365235077
+  building_cow_christian_cathedral_02_desc: "웅장한 대성당은 공학적 경이로움과 아름다움일 뿐만 아니라 여행자들의 안식처이자 후원자의 위신을 높여주는 기념비입니다.\n\n또한 이 대성당은 지역 노동자들이 외국 시장에서 물건을 판매할 수 있도록 돕는 수도회에 거처를 제공합니다." # 1742149718049790306
+  building_cow_christian_cathedral_03: "대성당과 수도원" # 8170744147365235077
+  building_cow_christian_cathedral_03_desc: "웅장한 대성당은 공학적 경이로움과 아름다움일 뿐만 아니라 여행자들의 안식처이자 후원자의 위신을 높여주는 기념비입니다.\n\n또한 이 대성당은 지역 노동자들이 외국 시장에서 물건을 판매할 수 있도록 돕는 수도회에 거처를 제공합니다." # 1742149718049790306
   building_type_cow_muslim_mosque_01: "대성원" # 16877451843022295383
   building_type_cow_muslim_mosque_01_desc: "장엄한 모스크는 신도들에게 여정을 계속하기 전에 기도하고, 쉬고, 경의를 표할 장소를 제공합니다. 그 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만인에게 알립니다." # 992546066222372999
   building_cow_muslim_mosque_01: "대성원" # 16877451843022295383
   building_cow_muslim_mosque_01_desc: "장엄한 모스크는 신도들에게 여정을 계속하기 전에 기도하고, 쉬고, 경의를 표할 장소를 제공합니다. 그 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만인에게 알립니다." # 992546066222372999
+  building_cow_muslim_mosque_02: "대모스크" # 16877451843022295383
+  building_cow_muslim_mosque_02_desc: "대모스크는 신실한 이들이 여행을 계속하기 전에 기도하고 휴식하며 경의를 표할 수 있는 장소를 제공합니다. 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만천하에 알립니다." # 992546066222372999
+  building_cow_muslim_mosque_03: "대모스크" # 16877451843022295383
+  building_cow_muslim_mosque_03_desc: "대모스크는 신실한 이들이 여행을 계속하기 전에 기도하고 휴식하며 경의를 표할 수 있는 장소를 제공합니다. 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만천하에 알립니다." # 992546066222372999
   building_type_cow_jewish_synagogue_01: "대시나고그" # 10995492358705577584
   building_type_cow_jewish_synagogue_01_desc: "위대한 회당은 신도들에게 기도하고, 쉬며, 여정을 계속하기 전에 경의를 표할 장소를 제공합니다. 그 아름다운 돔과 정교한 첨탑들은 모든 이에게 신의 위대함을 알립니다." # 10382453139379762047
   building_cow_jewish_synagogue_01: "대시나고그" # 10995492358705577584
   building_cow_jewish_synagogue_01_desc: "위대한 회당은 신도들에게 기도하고, 쉬며, 여정을 계속하기 전에 경의를 표할 장소를 제공합니다. 그 아름다운 돔과 정교한 첨탑들은 모든 이에게 신의 위대함을 알립니다." # 10382453139379762047
+  building_cow_jewish_synagogue_02: "대시나고그" # 10995492358705577584
+  building_cow_jewish_synagogue_02_desc: "대시나고그는 신실한 이들이 여행을 계속하기 전에 기도하고 휴식하며 경의를 표할 수 있는 장소를 제공합니다. 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만천하에 알립니다." # 10382453139379762047
+  building_cow_jewish_synagogue_03: "대시나고그" # 10995492358705577584
+  building_cow_jewish_synagogue_03_desc: "대시나고그는 신실한 이들이 여행을 계속하기 전에 기도하고 휴식하며 경의를 표할 수 있는 장소를 제공합니다. 아름다운 돔과 정교하고 거대한 첨탑은 신의 위대함을 만천하에 알립니다." # 10382453139379762047
   building_type_cow_pagan_temple_01: "대사원" # 15314066631319205678
   building_type_cow_pagan_temple_01_desc: "장엄한 사원은 신들과 반신들의 영웅적인 행적을 묘사하는 화려한 조각들로 뒤덮여 있습니다. 거대한 모닥불은 신들에게 직접 연기를 피워 올리고 있으며, 성직자들이 영혼을 숭배하는 모든 이들에게 축복을 내리고 있습니다." # 6950866360907600749
   building_cow_pagan_temple_01: "대사원" # 15314066631319205678
   building_cow_pagan_temple_01_desc: "장엄한 사원은 신들과 반신들의 영웅적인 행적을 묘사하는 화려한 조각들로 뒤덮여 있습니다. 거대한 모닥불은 신들에게 직접 연기를 피워 올리고 있으며, 성직자들이 영혼을 숭배하는 모든 이들에게 축복을 내리고 있습니다." # 6950866360907600749
+  building_cow_pagan_temple_02: "대사원" # 15314066631319205678
+  building_cow_pagan_temple_02_desc: "대사원은 신과 반신들의 영웅적인 행적을 묘사한 화려한 조각들로 뒤덮여 있습니다. 거대한 봉화는 신들을 향해 연기 기둥을 쏘아 올리고, 성직자들은 영혼을 숭배하는 모든 이들에게 축복을 내립니다." # 6950866360907600749
+  building_cow_pagan_temple_03: "대사원" # 15314066631319205678
+  building_cow_pagan_temple_03_desc: "대사원은 신과 반신들의 영웅적인 행적을 묘사한 화려한 조각들로 뒤덮여 있습니다. 거대한 봉화는 신들을 향해 연기 기둥을 쏘아 올리고, 성직자들은 영혼을 숭배하는 모든 이들에게 축복을 내립니다." # 6950866360907600749
   building_type_cow_indian_temple_01: "대사원" # 17979485908484068502
   building_type_cow_indian_temple_01_desc: "장엄한 사원은 기초부터 첨탑까지 신들의 조각상과 우상들로 뒤덮여 있으며, 고대 전설과 고귀한 예언자들의 삶을 이야기하고 있습니다." # 12521894113073705506
   building_cow_indian_temple_01: "대사원" # 17979485908484068502
   building_cow_indian_temple_01_desc: "장엄한 사원은 기초부터 첨탑까지 신들을 위한 조각상과 우상들로 뒤덮여 있으며, 고대의 전설과 고귀한 예언자들의 삶을 되새기고 있습니다.\n\n그럼에도 불구하고, 이 사원이 영원히 계몽의 상징으로 남을 수 있도록 약간의 확장이 필요할 수 있습니다." # 6873161066448143871
+  building_cow_indian_temple_02: "대사원" # 17979485908484068502
+  building_cow_indian_temple_02_desc: "웅장한 사원은 기초부터 첨탑까지 신들을 향한 조각상과 우상으로 뒤덮여 있으며, 고대의 전설과 고귀한 예언자들의 삶을 이야기하고 있습니다.\n\n그럼에도 사원이 영원히 깨달음의 상징으로 남을 수 있도록 약간의 확장이 필요할지도 모릅니다." # 6873161066448143871
+  building_cow_indian_temple_03: "대사원" # 17979485908484068502
+  building_cow_indian_temple_03_desc: "웅장한 사원은 기초부터 첨탑까지 신들을 향한 조각상과 우상으로 뒤덮여 있으며, 고대의 전설과 고귀한 예언자들의 삶을 이야기하고 있습니다.\n\n그럼에도 사원이 영원히 깨달음의 상징으로 남을 수 있도록 약간의 확장이 필요할지도 모릅니다." # 6873161066448143871
   building_type_cow_zoroastrian_temple_01: "대사원" # 17979485908484068502
   building_type_cow_zoroastrian_temple_01_desc: "웅장한 사원은 더 높은 권능에 대한 고귀한 헌사로 우뚝 서 있으며, 그 벽과 돔은 신성한 것을 기리는 찬란한 색으로 매끄럽게 칠해져 있습니다." # 15603230835444440862
   building_cow_zoroastrian_temple_01: "대사원" # 17979485908484068502
   building_cow_zoroastrian_temple_01_desc: "웅장한 사원은 더 높은 권능에 대한 고귀한 헌사로 우뚝 서 있으며, 그 벽과 돔은 신성한 것을 기리는 찬란한 색으로 매끄럽게 칠해져 있습니다." # 15603230835444440862
+  building_cow_zoroastrian_temple_02: "대사원" # 17979485908484068502
+  building_cow_zoroastrian_temple_02_desc: "웅장한 사원은 고귀한 권능을 기리는 숭고한 기념비로서, 그 벽과 돔은 신성함을 기리는 찬란한 색채로 매끄럽게 칠해져 있습니다." # 15603230835444440862
+  building_cow_zoroastrian_temple_03: "대사원" # 17979485908484068502
+  building_cow_zoroastrian_temple_03_desc: "웅장한 사원은 고귀한 권능을 기리는 숭고한 기념비로서, 그 벽과 돔은 신성함을 기리는 찬란한 색채로 매끄럽게 칠해져 있습니다." # 15603230835444440862
   building_type_cow_royal_palace_01: "왕궁" # 1103643892939657176
   building_type_cow_royal_palace_01_desc: "이 궁전은 건설자의 명망 높은 혈통을 상징하는, 세상에 둘도 없는 왕실의 상징입니다." # 7541462238905752868
   building_cow_royal_palace_01: "여름 휴양지" # 6768711796468603665
   building_cow_royal_palace_01_desc: "이 궁전은 건설자의 저명한 가문의 위엄 있는 상징으로, 세상에 둘도 없는 걸작입니다.\n\n비록 다른 세계의 궁전들만큼 거대하지는 않지만, 이 궁전은 지역의 고위 인사들에게 꼭 필요한 휴식을 제공하는 여름 별궁 역할을 합니다." # 2015240678064757740
+  building_cow_royal_palace_02: "여름 별장" # 6768711796468603665
+  building_cow_royal_palace_02_desc: "건축가의 명망 높은 가문을 상징하는 이 궁전은 세상에 단 하나뿐인 귀한 건축물입니다.\n\n세계의 다른 궁전들만큼 거대하지는 않으나, 이 궁전은 지역의 고위 인사들이 절실히 필요한 휴식을 취할 수 있는 여름 별장 역할을 합니다." # 2015240678064757740
+  building_cow_royal_palace_03: "여름 별장" # 6768711796468603665
+  building_cow_royal_palace_03_desc: "건축가의 명망 높은 가문을 상징하는 이 궁전은 세상에 단 하나뿐인 귀한 건축물입니다.\n\n세계의 다른 궁전들만큼 거대하지는 않으나, 이 궁전은 지역의 고위 인사들이 절실히 필요한 휴식을 취할 수 있는 여름 별장 역할을 합니다." # 2015240678064757740
   building_type_cow_great_harbor_01: "대시장" # 10516803671501565665
   building_type_cow_great_harbor_01_desc: "이 광활한 시장은 이 지역의 교역을 지배하는 훌륭한 항구와 더불어, 전 세계의 상품을 자랑하는 수많은 시장 가판대를 갖추고 있습니다." # 7882272690450156717
   building_cow_great_harbor_01: "시장" # 8688652251205221978
   building_cow_great_harbor_01_desc: "이 광대한 시장은 지역 무역을 지배하는 훌륭한 항구와 더불어 전 세계의 상품을 자랑하는 수많은 시장 가판대를 자랑합니다.\n\n상인들의 대규모 유입은 금전뿐만 아니라 도시의 경제 및 기술 혁신을 촉진하는 새롭거나 기존의 사상도 함께 가져옵니다." # 11334009286047858417
-  building_type_cow_walls_new: "#bold 위대한 성벽#" # 18044103575483973470
-  building_type_cow_walls_new_desc: "주요 정착지를 둘러싼, 난공불락에 가까운 방벽 세트." # 16284831461697917224
-  building_cow_walls_new: "#bold 위대한 성벽#" # 18044103575483973470
-  building_cow_walls_new_desc: "난공불락에 가까운 방벽이 웅장한 도시를 둘러싸고 있습니다." # 12138049872238718262
+  building_cow_great_harbor_02: "바자르" # 8688652251205221978
+  building_cow_great_harbor_02_desc: "이 거대한 시장은 지역 무역을 장악한 훌륭한 항구를 자랑하며, 전 세계의 상품이 모여드는 수많은 가판대로 가득합니다.\n\n상인들이 대거 유입되면서 금뿐만 아니라 새로운 사상과 기존의 지식들이 함께 들어와 도시의 경제적, 기술적 혁신을 촉진합니다." # 11334009286047858417
+  building_cow_great_harbor_03: "바자르" # 8688652251205221978
+  building_cow_great_harbor_03_desc: "이 거대한 시장은 지역 무역을 장악한 훌륭한 항구를 자랑하며, 전 세계의 상품이 모여드는 수많은 가판대로 가득합니다.\n\n상인들이 대거 유입되면서 금뿐만 아니라 새로운 사상과 기존의 지식들이 함께 들어와 도시의 경제적, 기술적 혁신을 촉진합니다." # 11334009286047858417
+  building_type_cow_walls_new_01: "거대한 성벽" # 18044103575483973470
+  building_type_cow_walls_new_01_desc: "주요 정착지를 둘러싼 난공불락에 가까운 방어용 성벽입니다." # 16284831461697917224
+  building_cow_walls_new_01: "거대한 성벽" # 18044103575483973470
+  building_cow_walls_new_01_desc: "장엄한 도시를 둘러싼 난공불락에 가까운 방어용 성벽입니다." # 12138049872238718262
+  building_cow_walls_new_02: "거대한 성벽" # 18044103575483973470
+  building_cow_walls_new_02_desc: "장엄한 도시를 둘러싼 난공불락에 가까운 방어용 성벽입니다." # 12138049872238718262
+  building_cow_walls_new_03: "거대한 성벽" # 18044103575483973470
+  building_cow_walls_new_03_desc: "장엄한 도시를 둘러싼 난공불락에 가까운 방어용 성벽입니다." # 12138049872238718262
   building_type_cow_grand_fortress_01: "#bold 대요새#" # 72396337615063382
   building_type_cow_grand_fortress_01_desc: "위풍당당한 건축물로, 이 지역을 정복하기가 훨씬 더 어려워질 것입니다. 추가된 시설들은 소유주의 군사력을 상당히 향상시킬 수 있습니다." # 11099649448921780090
   building_cow_grand_fortress_01: "#bold 대요새#" # 72396337615063382
   building_cow_grand_fortress_01_desc: "위풍당당한 건축물로, 이 지역을 정복하기가 훨씬 더 어려워질 것입니다. 추가된 시설들은 소유주의 군사력을 상당히 향상시킬 수 있습니다." # 11099649448921780090
+  building_cow_grand_fortress_02: "대요새" # 72396337615063382
+  building_cow_grand_fortress_02_desc: "위압적인 건축물로, 이 지역을 정복하기 훨씬 어렵게 만들 것입니다. 추가 시설을 통해 소유자의 군사적 역량을 크게 향상할 수 있습니다." # 11099649448921780090
+  building_cow_grand_fortress_03: "대요새" # 72396337615063382
+  building_cow_grand_fortress_03_desc: "위압적인 건축물로, 이 지역을 정복하기 훨씬 어렵게 만들 것입니다. 추가 시설을 통해 소유자의 군사적 역량을 크게 향상할 수 있습니다." # 11099649448921780090
   building_type_cow_great_lighthouse_01: "위대한 등대" # 3908417197398307991
   building_type_cow_great_lighthouse_01_desc: "키가 크고 눈에 잘 띄는 이 건축물은 선원들에게 도움을 주어 밤에 배들이 항구로 안전하게 들어오도록 안내합니다." # 5447453838828065513
   building_cow_great_lighthouse_01: "위대한 등대" # 3908417197398307991
   building_cow_great_lighthouse_01_desc: "키가 크고 눈에 잘 띄는 이 건축물은 선원들에게 도움을 주어 밤에 배들이 항구로 안전하게 들어오도록 안내합니다." # 5447453838828065513
+  building_cow_great_lighthouse_02: "대등대" # 3908417197398307991
+  building_cow_great_lighthouse_02_desc: "높고 눈에 띄는 이정표인 이 건물은 선원들에게 도움을 주며, 밤마다 배를 항구로 인도합니다." # 5447453838828065513
+  building_cow_great_lighthouse_03: "대등대" # 3908417197398307991
+  building_cow_great_lighthouse_03_desc: "높고 눈에 띄는 이정표인 이 건물은 선원들에게 도움을 주며, 밤마다 배를 항구로 인도합니다." # 5447453838828065513
   building_type_cow_grand_amphitheatre_01: "거대한 원형 극장" # 1441222233118694347
   building_type_cow_grand_amphitheatre_01_desc: "대중문화의 정수로서, 이는 장대한 볼거리를 제공하여 민중을 크게 달래줍니다." # 17250346615962464972
   building_cow_grand_amphitheatre_01: "거대한 원형 극장" # 1441222233118694347
   building_cow_grand_amphitheatre_01_desc: "대중문화의 정수로서, 이는 장대한 볼거리를 제공하여 민중을 크게 달래줍니다." # 17250346615962464972
+  building_cow_grand_amphitheatre_02: "대원형극장" # 1441222233118694347
+  building_cow_grand_amphitheatre_02_desc: "대중문화의 정수인 이 건물은 훌륭한 볼거리를 제공하여 대중을 크게 달랩니다." # 17250346615962464972
+  building_cow_grand_amphitheatre_03: "대원형극장" # 1441222233118694347
+  building_cow_grand_amphitheatre_03_desc: "대중문화의 정수인 이 건물은 훌륭한 볼거리를 제공하여 대중을 크게 달랩니다." # 17250346615962464972
   building_type_preburge_01: "성벽 기초" # 9658321637730619254
   building_type_preburge_01_desc: "성 주변의 모든 토지가 정리되고 평탄화되고 있으며, 거대한 성벽을 지탱하기 위한 기초 공사가 진행 중입니다.\n\n추가적으로, 대도시 건설에 필요한 관개 시설, 배수 시설, 하수도, 도로 등의 기반 시설 설치 작업도 진행 중입니다.\n\n이것은 거대한 사업이므로 단계별로 완료해야 할 것입니다." # 3292860583785333341
   building_preburge_01: "성벽 기초" # 9658321637730619254
@@ -79,6 +133,13 @@
   found_a_burge_decision_custom_valid2: "귀하의 수도에 비어있는 건축 슬롯이 있으며, 이미 경이의 도시가 아닙니다." # 1964633456832576347
   found_a_burge_decision_custom_valid3: "귀하의 치세 수도는 경이로운 도시입니다." # 7640078425123958695
   found_a_burge_decision_confirm: "프로젝트를 시작하지!" # 9369467500094736197
+  found_a_burge_decision_tooltip: "당신은 영지 중 하나를 경이로운 도시로 탈바꿈시키는 장대한 사업을 시작합니다." # 7490749163384655466
+  restore_a_burge_decision: "경이로운 도시 재건" # 2310267049123719095
+  restore_a_burge_decision_desc: "우리의 경이로운 도시가 크게 파괴된 후, 이제 잃어버린 것을 재건할 때가 왔습니다." # 2435463168488329257
+  restore_a_burge_decision_effect: "[GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]에 $building_type_reburge_01$ 건물이 추가됩니다." # 2330390938528760140
+  restore_a_burge_decision2_effect: "건물을 업그레이드하여 [GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]을(를) 경이로운 도시로 바꿀 때까지 매달 수입이 #N -8 gold#!씩 감소합니다." # 4014178009942911670
+  restore_a_burge_decision_confirm: "프로젝트 시작!" # 9369467500094736197
+  restore_a_burge_decision_tooltip: "당신은 파괴된 경이로운 도시를 복구하는 장대한 사업을 시작합니다." # 1680035665711148164
   city_state_build_1: "해당 속성의 봉신은 관리력 15 이상이면서 건축가 특성을 보유하고 있거나 #S#! 혹은 관리력 20 이상이면서 대학에서 수학한 경우입니다." # 17056918416301250722
   cow_custom_mapmode.t: "경이로운 도시 1" # 7017411295130225503
   cow_custom_mapmode.t.1.t: "경이로운 도시 2" # 1047444370237506381
@@ -96,3 +157,13 @@
   cow_travel_city_option_tiny: "저는 [city_province.GetBaronyNameExplicitlyNoTooltip]에서 하루만 즐길 수 있습니다." # 3599021566317101254
   cow_travel_city_option_no: "우리는 [city_province.GetBaronyNameExplicitlyNoTooltip]에서 시간을 보낼 여유가 없습니다." # 15252161102912450753
   adult_education_has_cow_library_desc: "#P +++ 도서관#!" # 2878568758512052301
+  cow_rebuild1: "[target_cow1.GetNameNoTier] 재건" # 16878082939212616696
+  ow_rebuild1.tt: "[target_cow1.GetNameNoTier]에 파괴된 건물을 대체할 새로운 경이로운 도시 고유 건물을 선택하게 됩니다." # 10793722447528781964
+  cow_rebuild2: "[target_cow2.GetNameNoTier] 재건" # 18028587364495012240
+  ow_rebuild2.tt: "[target_cow2.GetNameNoTier]에 파괴된 건물을 대체할 새로운 경이로운 도시 고유 건물을 선택하게 됩니다." # 13533214641417215992
+  cow_rebuild3: "[target_cow3.GetNameNoTier] 재건" # 16283839309061702026
+  ow_rebuild3.tt: "[target_cow3.GetNameNoTier]에 파괴된 건물을 대체할 새로운 경이로운 도시 고유 건물을 선택하게 됩니다." # 18125308350131745837
+  cow_rebuild4: "[target_cow4.GetNameNoTier] 재건" # 15903577492750041641
+  ow_rebuild4.tt: "[target_cow4.GetNameNoTier]에 파괴된 건물을 대체할 새로운 경이로운 도시 고유 건물을 선택하게 됩니다." # 8500932392468915544
+  cow_rebuild5: "[target_cow5.GetNameNoTier] 재건" # 16610717680026899092
+  ow_rebuild5.tt: "파괴된 건물을 대체할 [target_cow5.GetNameNoTier]의 새로운 불가사의 도시 고유 건물을 선택하십시오" # 4143175845826539561

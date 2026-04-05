@@ -40,3 +40,11 @@
   aurelian_walls_maintenance.0008.desc: "한 세기 전, 귀하의 조상은 로마에 큰 공을 세워 고대 성벽을 이전의 영광으로 복구했습니다. 하지만 시간은 결코 쉬지 않는 적입니다.\n\n수세대에 걸친 평화와 우선순위의 변화 속에서 경계심은 약해졌습니다. 한때 필수적이었던 성벽 장관직은 궁정의 총신들을 위한 편안한 한직으로 전락했습니다. 유지보수를 위한 예산은 서서히 더 시급한 허영을 위해 전용되었습니다. 백 번의 혹독한 겨울이 흔적을 남겼고, 군대라면 실패했을 곳에서 시간이라는 인내심 강한 포위군이 마침내 승리했습니다.\n\n순환이 돌아왔습니다. 성벽은 다시 한번 구멍 뚫린 경계가 되었고, 탑은 무너져 내리며 성문은 약해졌습니다. 로마는 다시 한번 취약해졌으며, 방패를 복구할 의지를 가진 지도자를 기다리고 있습니다." # 7058896091792419080
   aurelian_walls_maintenance.0008.a: "이제 그 임무가 나에게 주어졌구나." # 6800098503688955896
   ROME_LOCATION_1_TOOLTIP: "로마가 귀하의 영역 내에 있습니다" # 11085510371833299253
+  great_project_type_tooltip_aurelian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_possessive_aurelian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_aurelian_walls_maintenance: "" # 17241709254077376921
+  great_project_type_aurelian_walls_maintenance_contribution_name_towers: "" # 17241709254077376921
+  great_project_type_aurelian_walls_maintenance_contribution_name_gates: "" # 17241709254077376921
+  great_project_type_aurelian_walls_maintenance_contribution_name_urban_cohorts: "" # 17241709254077376921
+  great_project_type_aurelian_walls_maintenance_contribution_name_granaries: "" # 17241709254077376921
+  great_project_type_aurelian_walls_maintenance_contribution_name_prefect: "" # 17241709254077376921

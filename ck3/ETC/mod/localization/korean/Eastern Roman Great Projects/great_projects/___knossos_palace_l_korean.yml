@@ -86,3 +86,18 @@
   sentenced_to_labyrinth_desc: "이 인물은 크노소스의 미궁에 던져졌습니다. 그들은 끊임없는 굶주림, 육체적 피로, 그리고 정신을 무너뜨리기 위해 설계된 장소 내에서의 고립이라는 독특한 공포로 인해 속이 텅 비어버렸습니다. 이 시련은 그들을 근본적으로 변화시켰으며, 깊고 불안한 트라우마를 남겼습니다." # 13469419615655995112
   exhausted_in_the_maze: "무너진 생존자" # 8324546954223016526
   exhausted_in_the_maze_desc: "그들은 어둠 속에서 죽지 않았습니다. 그들은 굶주림을 견디고 끝없는 석조 회랑을 걸어 마침내 빛으로 돌아가는 길을 찾아냈습니다. 하지만 그들이 찾은 빛은 자유가 아니었습니다. 그것은 그들 자신의 감옥으로 들어가는 입구였습니다. 이 마지막 잔혹한 반어법은 그들의 영혼에 남은 마지막 불씨마저 꺼뜨렸습니다. 그들은 속이 텅 빈 생존자이며, 육체는 지쳤고 저항하려는 의지는 완전히 사라졌습니다." # 6501344662780973215
+  great_project_type_tooltip_restore_knossos_palace: "" # 17241709254077376921
+  great_project_name_possessive_restore_knossos_palace: "" # 17241709254077376921
+  great_project_name_restore_knossos_palace: "" # 17241709254077376921
+  great_project_type_tooltip_restore_knossos_palace_alt: "" # 17241709254077376921
+  great_project_name_possessive_restore_knossos_palace_alt: "" # 17241709254077376921
+  great_project_name_restore_knossos_palace_alt: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_contribution_name_port: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_contribution_name_survey: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_contribution_name_palace: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_contribution_name_frescoes: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_alt_contribution_name_labyrinth: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_alt_contribution_name_port: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_alt_contribution_name_survey: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_alt_contribution_name_palace: "" # 17241709254077376921
+  great_project_type_restore_knossos_palace_alt_contribution_name_frescoes: "" # 17241709254077376921

@@ -199,3 +199,31 @@
   syrian_fiasco_modifier_desc: "시리아를 되찾으려던 나의 야심 찬 계획은 막대한 비용만 치른 채 실패로 돌아갔습니다. 자원은 낭비되었고, 우리의 약점은 만천하에 드러났습니다. 봉신들은 이를 무능과 과욕의 증거로 여기고 있습니다." # 1078021953001490468
   ANTIOCH_LOCATION_1_TOOLTIP: "안티오크 테마가 당신의 영역 내에 있음" # 16390771063372625613
   EDESSA_LOCATION_2_TOOLTIP: "에데사 테마가 당신의 영역 내에 있음" # 10709421221716166730
+  great_project_name_fortify_armenia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_armenia: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_walls_of_melitene: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_manzikert_garrison: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_secure_passes: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_rebuild_farms: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_patronize_monasteries: "" # 17241709254077376921
+  great_project_name_fortify_anatolia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_anatolia: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_kaisereia: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_cilician_gates: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_veteran_settlements: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_roads: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_watchtowers: "" # 17241709254077376921
+  great_project_name_fortify_pontus: "" # 17241709254077376921
+  great_project_name_possessive_fortify_pontus: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_trebizond: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_theodosiopolis: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_coastal_patrols: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_mountain_watch: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_monasteries: "" # 17241709254077376921
+  great_project_name_fortify_syria: "" # 17241709254077376921
+  great_project_name_possessive_fortify_syria: "" # 17241709254077376921
+  great_project_type_fortify_syria_contribution_name_antioch: "" # 17241709254077376921
+  great_project_type_fortify_syria_contribution_name_edessa: "" # 17241709254077376921
+  great_project_type_fortify_syria_contribution_name_strata: "" # 17241709254077376921
+  great_project_type_fortify_syria_contribution_name_melkites: "" # 17241709254077376921
+  great_project_type_fortify_syria_contribution_name_ports: "" # 17241709254077376921

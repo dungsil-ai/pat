@@ -4,6 +4,7 @@ import { parseToml, parseYaml, stringifyYaml } from '../parser'
 import { log } from './logger'
 import { type GameType, shouldUseTransliteration } from './prompts'
 import { validateTranslationEntries } from './translation-validator'
+import { getUpstreamFileHashesPath, readUpstreamFileHashes, removeUpstreamFileHash, writeUpstreamFileHashes } from './upstream-file-hashes'
 
 interface ModMeta {
   upstream: {
@@ -13,20 +14,21 @@ interface ModMeta {
 }
 
 /**
- * 잘못 번역된 항목들을 찾아 해시를 초기화합니다.
- * 이렇게 하면 다음 번역 시 올바르게 재번역됩니다.
+ * 잘못되었거나 누락된 번역 출력을 찾아 다음 번역 시 복구되도록 무효화합니다.
+ * 항목 수준 문제는 엔트리 해시를 비우고, 파일 수준 문제는 upstream 파일 해시를 제거합니다.
  * @param gameType 게임 타입 (ck3, vic3, stellaris)
  * @param rootDir 루트 디렉토리 경로
  * @param targetMods 처리할 모드 목록 (선택사항, 미지정시 전체 모드 처리)
  */
 export async function invalidateIncorrectTranslations(gameType: GameType, rootDir: string, targetMods?: string[]): Promise<void> {
-  log.start(`[${gameType.toUpperCase()}] 잘못된 번역 무효화 시작`)
+  log.start(`[${gameType.toUpperCase()}] 잘못되었거나 누락된 번역 출력 복구 무효화 시작`)
   log.info(`대상 디렉토리: ${rootDir}`)
 
   const mods = targetMods ?? await readdir(rootDir)
   log.info(`대상 모드: [${mods.join(', ')}]`)
 
-  let totalInvalidated = 0
+  let totalInvalidatedEntries = 0
+  let totalRequeuedFiles = 0
 
   for (const mod of mods) {
     const modDir = join(rootDir, mod)
@@ -45,9 +47,10 @@ export async function invalidateIncorrectTranslations(gameType: GameType, rootDi
 
       for (const locPath of meta.upstream.localization) {
         log.info(`[${mod}] localization 경로 처리: ${locPath}`)
-        const invalidatedCount = await invalidateModLocalization(mod, modDir, locPath, meta.upstream.language, gameType)
-        totalInvalidated += invalidatedCount
-        log.info(`[${mod}/${locPath}] 무효화된 항목: ${invalidatedCount}개`)
+        const result = await invalidateModLocalization(mod, modDir, locPath, meta.upstream.language, gameType)
+        totalInvalidatedEntries += result.invalidatedEntries
+        totalRequeuedFiles += result.requeuedFiles
+        log.info(`[${mod}/${locPath}] 항목 무효화: ${result.invalidatedEntries}개, 파일 재처리 예약: ${result.requeuedFiles}개`)
       }
 
       log.success(`[${mod}] 완료`)
@@ -61,7 +64,12 @@ export async function invalidateIncorrectTranslations(gameType: GameType, rootDi
     }
   }
 
-  log.success(`잘못된 번역 무효화 완료 - 총 ${totalInvalidated}개 항목 무효화`)
+  log.success(`번역 출력 복구 무효화 완료 - 항목 무효화: ${totalInvalidatedEntries}개, 파일 재처리 예약: ${totalRequeuedFiles}개`)
+}
+
+interface InvalidationResult {
+  invalidatedEntries: number
+  requeuedFiles: number
 }
 
 async function invalidateModLocalization(
@@ -70,9 +78,10 @@ async function invalidateModLocalization(
   locPath: string,
   sourceLanguage: string,
   gameType: GameType
-): Promise<number> {
+): Promise<InvalidationResult> {
   const sourceDir = join(modDir, 'upstream', locPath)
   const targetDir = join(modDir, 'mod', getLocalizationFolderName(gameType), locPath.includes('replace') ? 'korean/replace' : 'korean')
+  const hashFilePath = getUpstreamFileHashesPath(modDir)
 
   log.debug(`[${modName}] 소스 디렉토리: ${sourceDir}`)
   log.debug(`[${modName}] 타겟 디렉토리: ${targetDir}`)
@@ -81,7 +90,10 @@ async function invalidateModLocalization(
     const sourceFiles = await readdir(sourceDir, { recursive: true })
     log.debug(`[${modName}] 소스 파일들: [${sourceFiles.join(', ')}]`)
 
-    let invalidatedCount = 0
+    let invalidatedEntries = 0
+    let requeuedFiles = 0
+    let hasHashChanges = false
+    const upstreamFileHashes = await readUpstreamFileHashes(hashFilePath)
 
     for (const file of sourceFiles) {
       if (file.endsWith(`_l_${sourceLanguage}.yml`)) {
@@ -90,6 +102,7 @@ async function invalidateModLocalization(
         const targetFileName = '___' + base.replace(`_l_${sourceLanguage}.yml`, '_l_korean.yml')
         const targetRelativePath = dir ? join(dir, targetFileName) : targetFileName
         const targetFilePath = join(targetDir, targetRelativePath)
+        const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')
 
         // 파일명으로 음역 모드 판단
         const useTransliteration = shouldUseTransliteration(file)
@@ -101,21 +114,43 @@ async function invalidateModLocalization(
         log.debug(`[${modName}] 소스: ${sourceFilePath}`)
         log.debug(`[${modName}] 타겟: ${targetFilePath}`)
 
-        const count = await invalidateTranslationFile(modName, sourceFilePath, targetFilePath, gameType, useTransliteration)
-        invalidatedCount += count
-        log.debug(`[${modName}/${file}] 무효화된 항목: ${count}개`)
+        const result = await invalidateTranslationFile(modName, sourceFilePath, targetFilePath, gameType, useTransliteration)
+        invalidatedEntries += result.invalidatedEntries
+
+        if (result.shouldRequeueFile) {
+          const removed = removeUpstreamFileHash(upstreamFileHashes, sourceRelativePath)
+          if (removed) {
+            hasHashChanges = true
+            requeuedFiles++
+            log.info(`[${modName}/${file}] 업스트림 파일 해시 무효화: ${result.requeueReason}`)
+          } else {
+            log.debug(`[${modName}/${file}] 업스트림 파일 해시가 이미 없어 재처리 예약 상태입니다`)
+          }
+        }
+
+        log.debug(`[${modName}/${file}] 항목 무효화: ${result.invalidatedEntries}개`)
       }
     }
 
-    return invalidatedCount
+    if (hasHashChanges) {
+      await writeUpstreamFileHashes(hashFilePath, upstreamFileHashes)
+    }
+
+    return { invalidatedEntries, requeuedFiles }
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
       log.warn(`[${modName}] 소스 디렉토리 없음: ${sourceDir}`)
-      return 0
+      return { invalidatedEntries: 0, requeuedFiles: 0 }
     }
     log.error(`[${modName}] 디렉토리 읽기 오류:`, error)
     throw error
   }
+}
+
+interface InvalidateTranslationFileResult {
+  invalidatedEntries: number
+  shouldRequeueFile: boolean
+  requeueReason?: string
 }
 
 async function invalidateTranslationFile(
@@ -124,7 +159,7 @@ async function invalidateTranslationFile(
   targetFilePath: string,
   gameType: GameType,
   useTransliteration: boolean = false
-): Promise<number> {
+): Promise<InvalidateTranslationFileResult> {
   try {
     log.debug(`[${modName}] 파일 처리 시작: ${sourceFilePath}`)
 
@@ -139,8 +174,8 @@ async function invalidateTranslationFile(
       log.debug(`[${modName}] 번역 파일 읽기 성공: ${targetFilePath}`)
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-        log.debug(`[${modName}] 번역 파일 없음: ${targetFilePath}`)
-        return 0 // 번역 파일이 없으면 무효화할 게 없음
+        log.info(`[${modName}] 번역 파일 누락으로 파일 재처리 예약: ${targetFilePath}`)
+        return { invalidatedEntries: 0, shouldRequeueFile: true, requeueReason: '번역 파일 누락' }
       }
       throw error
     }
@@ -154,35 +189,74 @@ async function invalidateTranslationFile(
     const sourceLangKey = Object.keys(sourceYaml)[0]
     if (!sourceLangKey || !sourceLangKey.startsWith('l_')) {
       log.debug(`[${modName}] 원본 파일에 언어 키 없음: ${sourceLangKey}`)
-      return 0
+      return { invalidatedEntries: 0, shouldRequeueFile: false }
     }
 
     // 번역 파일의 언어 키 찾기
     const targetLangKey = Object.keys(targetYaml)[0]
     if (!targetLangKey || !targetLangKey.startsWith('l_')) {
-      log.debug(`[${modName}] 번역 파일에 언어 키 없음: ${targetLangKey}`)
-      return 0
+      log.info(`[${modName}] 번역 파일 언어 키 누락으로 파일 재처리 예약: ${targetFilePath}`)
+      return { invalidatedEntries: 0, shouldRequeueFile: true, requeueReason: '번역 파일 언어 키 누락' }
     }
 
-    log.debug(`[${modName}] 원본 키 개수: ${Object.keys(sourceYaml[sourceLangKey]).length}`)
-    log.debug(`[${modName}] 번역 키 개수: ${Object.keys(targetYaml[targetLangKey]).length}`)
+    const sourceEntries = sourceYaml[sourceLangKey]
+    const targetEntries = targetYaml[targetLangKey]
+
+    log.debug(`[${modName}] 원본 키 개수: ${Object.keys(sourceEntries).length}`)
+    log.debug(`[${modName}] 번역 키 개수: ${Object.keys(targetEntries).length}`)
 
     // 번역 검증 수행 (음역 모드 여부 전달)
     const invalidEntries = validateTranslationEntries(
-      sourceYaml[sourceLangKey],
-      targetYaml[targetLangKey],
+      sourceEntries,
+      targetEntries,
       gameType,
       useTransliteration
     )
 
+    const missingKeys = Object.keys(sourceEntries).filter(key => !targetEntries[key])
+    const emptyTranslationKeys = Object.entries(sourceEntries)
+      .filter(([key, [sourceValue]]) => {
+        const targetEntry = targetEntries[key]
+        if (!targetEntry) {
+          return false
+        }
+
+        const [translatedValue] = targetEntry
+        return sourceValue.trim() !== '' && translatedValue !== sourceValue && translatedValue.trim() === ''
+      })
+      .map(([key]) => key)
+
     // 잘못된 번역에 대해 해시 초기화
     for (const entry of invalidEntries) {
-      const [currentTranslation] = targetYaml[targetLangKey][entry.key]
-      targetYaml[targetLangKey][entry.key] = [currentTranslation, ''] // 해시 초기화
+      const [currentTranslation] = targetEntries[entry.key]
+      targetEntries[entry.key] = [currentTranslation, ''] // 해시 초기화
       invalidatedCount++
       hasChanges = true
 
       log.info(`[${modName}] 무효화: "${entry.sourceValue}" -> "${entry.translatedValue}" (사유: ${entry.reason})`)
+    }
+
+    for (const key of emptyTranslationKeys) {
+      const [currentTranslation, currentHash] = targetEntries[key]
+      if (currentHash !== '') {
+        targetEntries[key] = [currentTranslation, '']
+        hasChanges = true
+      }
+      invalidatedCount++
+      log.info(`[${modName}] 무효화: "${key}"의 번역 값이 비어 있어 파일 재처리 대상에 포함합니다`)
+    }
+
+    const shouldRequeueFile = invalidEntries.length > 0 || missingKeys.length > 0 || emptyTranslationKeys.length > 0
+    const requeueReasons: string[] = []
+    if (missingKeys.length > 0) {
+      requeueReasons.push(`누락 키 ${missingKeys.length}개`)
+      log.info(`[${modName}] 누락 키 감지: ${missingKeys.slice(0, 5).join(', ')}${missingKeys.length > 5 ? '...' : ''}`)
+    }
+    if (emptyTranslationKeys.length > 0) {
+      requeueReasons.push(`빈 번역 값 ${emptyTranslationKeys.length}개`)
+    }
+    if (invalidEntries.length > 0) {
+      requeueReasons.push(`잘못된 번역 ${invalidEntries.length}개`)
     }
 
     if (hasChanges) {
@@ -193,10 +267,14 @@ async function invalidateTranslationFile(
       log.debug(`[${modName}] 변경사항 없음`)
     }
 
-    return invalidatedCount
+    return {
+      invalidatedEntries: invalidatedCount,
+      shouldRequeueFile,
+      requeueReason: requeueReasons.join(', ')
+    }
   } catch (error) {
     log.error(`[${modName}] 파일 처리 실패: ${sourceFilePath} -> ${targetFilePath}`, error)
-    return 0
+    return { invalidatedEntries: 0, shouldRequeueFile: false }
   }
 }
 

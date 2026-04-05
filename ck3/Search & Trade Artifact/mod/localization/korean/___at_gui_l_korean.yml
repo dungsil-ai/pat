@@ -162,3 +162,4 @@
   at_owner_valid_buyer_or_seller: "소유주는 유효한 구매자 또는 판매자입니다" # 13155148817648189711
   at_valid_buyer_or_seller: "유효한 구매자 또는 판매자" # 18136666370958282721
   at_not_valid_buyer_or_seller: "유효한 구매자 또는 판매자가 아닙니다" # 6293260644907650423
+  at_empty: "" # 17241709254077376921

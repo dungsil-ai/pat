@@ -1,0 +1,328 @@
+﻿l_korean:
+  building_type_UBA_colosseum_01: "콜로세움" # 6103503393165551829
+  building_type_UBA_colosseum_01_desc: "$building_UBA_colosseum_01_desc$" # 3947601884677377365
+  building_UBA_colosseum_01: "소극장" # 12858534807059061574
+  building_UBA_colosseum_01_desc: "이곳에 웅장한 극장이 세워진다는 소식이 퍼지고 있습니다. 비록 아직 공사가 시작되지 않았을지라도 말입니다. 하지만 사람들이 극장을 즐기는 것을 막을 수는 없기에, 벌써 몇몇 소규모 극단이 근처 공터에서 공연을 시작했습니다." # 17181952023922617473
+  building_UBA_colosseum_02: "원형 극장" # 6357017202998914653
+  building_UBA_colosseum_02_desc: "공연이 열리는 날이면 이 작은 원형 극장은 관객들로 가득 찹니다. 배우들이 무대 중앙에 서서 목청을 높여 대사를 읊조리면, 시민들은 자신들의 작은 극장에 자부심을 느낍니다." # 4491219886496607244
+  building_UBA_colosseum_03: "반원형 극장" # 15505500968419928235
+  building_UBA_colosseum_03_desc: "그리스 극장 양식을 따라 극장이 확장되었습니다. 쿠폰 아치 구조를 사용하여 관람석을 높였고, 덕분에 더 많은 좌석을 확보할 수 있게 되었습니다. 또한 영리하게 설계된 지하 수로가 공연을 위한 물과 깨끗한 식수를 공급합니다." # 4655092311191246077
+  building_UBA_colosseum_04: "콜로세움" # 15766082655761773479
+  building_UBA_colosseum_04_desc: "두 개의 반원형 극장이 열주를 통해 서로 맞물려 소위 원형 극장을 이룹니다. 관람석은 더욱 확장되었고 그늘을 만들기 위한 차양도 설치되었습니다. 전통적인 연극 외에도, 원형 극장에서는 흥미진진한 운동 경기와 이색적인 해상 쇼가 열리기 시작했습니다." # 13820071068926015390
+  building_UBA_colosseum_05: "전설적인 극장" # 1223152758316707726
+  building_UBA_colosseum_05_desc: "웅장한 회랑이 수만 명을 수용할 수 있는 관람석을 받치고 있으며, 입구는 혼잡과 혼란을 피하도록 영리하게 설계되었습니다. 무대 아래에는 공연을 위한 소품과 가축을 보관하는 숨겨진 방과 통로가 있습니다. 수많은 장대한 볼거리가 이곳에서 펼쳐졌으며, 오늘날 이 극장은 진정한 로마인조차 감탄할 만한 경이로운 건축물이 되었습니다." # 6844706419278422192
+  UBA_colosseum_building: "건설 중 $building_type_UBA_colosseum_01$" # 10476931279335162420
+  UBA_colosseum_finished: "완공 $building_type_UBA_colosseum_01$" # 17836967552783239246
+  UBA_colosseum_unlocks_desc: "모든 [holding|E]에 #V $building_type_uba_piazza_01$#! 계열의 [buildings|E]을 건설할 수 있습니다." # 2591042920118388505
+  building_type_UBA_palace_01: "궁전" # 3149954838087833779
+  building_type_UBA_palace_01_desc: "$building_UBA_palace_05_desc$" # 2970441145286986842
+  building_UBA_palace_01: "봄의 궁전" # 16472656518595833318
+  building_UBA_palace_01_desc: "왕의 침실인 봄의 궁전은 가장 먼저 완공된 건물 중 하나입니다. 대궁전의 주요 날개로, 군주의 침소로 사용될 뿐만 아니라 궁전 내 중요한 의례 장소로도 쓰였습니다." # 7527304923032523805
+  building_UBA_palace_02: "여름의 궁전" # 13656276675175218998
+  building_UBA_palace_02_desc: "여름의 궁전은 가장 경치가 좋은 곳에 자리 잡고 있습니다. 근처에는 군주 전용 사냥터가 있으며, 모든 편의 시설을 갖추고 있습니다. 궁전 자체는 온갖 새롭고 아름다운 식물들로 둘러싸여 있으며, 이국적인 꽃과 허브가 서로 자태를 뽐냅니다. 오직 이곳에서만 군주는 세상의 번뇌를 잊고 평화와 안락의 안식처를 찾을 수 있습니다." # 5245128523144804789
+  building_UBA_palace_03: "가을의 궁전" # 17134678486754842682
+  building_UBA_palace_03_desc: "가을의 궁전은 알현실과 연회장의 역할을 겸합니다. 군주의 옥좌는 3단 기단 위에 놓여 있으며, 진주와 보석으로 장식되어 화려하고 우아합니다. 대리석 바닥에는 고급 비단 카펫이 깔려 있고, 군주는 이곳에서 전 세계의 사절단을 접견합니다." # 11987602010594039418
+  building_UBA_palace_04: "겨울의 궁전" # 4511976098072851254
+  building_UBA_palace_04_desc: "이 궁전의 내부는 가장 혹독하고 추운 겨울에도 따뜻합니다. 무도회장과 서재를 갖추고 있어 활동적이거나 조용한 시간을 보내기에 적합합니다. 또한 거대한 지하 저장고 덕분에 주인은 물자 부족을 걱정할 필요가 없습니다." # 14359096693554723528
+  building_UBA_palace_05: "성스러운 궁전" # 14840253658665009933
+  building_UBA_palace_05_desc: "단순한 궁전이 아니라 하나의 거대한 궁전 단지입니다. 웅장하고 위압적이며, 정전과 침전, 황실 정원뿐만 아니라 도서관, 미술관 및 기타 여러 방을 포함하고 있습니다. 그 존재 자체로 소유자의 힘과 부를 증명하며, 이 영지의 더욱 영광스러운 미래를 목격하게 될 것입니다." # 16827375474623698841
+  UBA_palace_building: "건설 중인 $building_type_UBA_palace_01$" # 18173226403222075877
+  UBA_palace_finished: "완공된 $building_type_UBA_palace_01$" # 4324139622594031239
+  UBA_palace_unlocks_desc: "#V $building_type_uba_residence_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 15928902549938301869
+  building_type_UBA_reserve_01: "보호구역" # 16815633079100789037
+  building_type_UBA_reserve_01_desc: "$building_UBA_reserve_05_desc$" # 3634546327896808373
+  building_UBA_reserve_01: "보호구역" # 9488990313273924750
+  building_UBA_reserve_01_desc: "군주의 사유 보호구역 안에는 광활한 숲과 산, 강이 함께 어우러져 있습니다. 이 지역의 자연미를 극대화하기 위해 일반인의 출입은 제한됩니다." # 8009514630507947965
+  building_UBA_reserve_02: "기념비" # 2880722184672678627
+  building_UBA_reserve_02_desc: "군주의 모습이 돌에 새겨져 불멸의 존재가 되었고, 이 기념비 덕분에 수많은 전설이 후대에 찬양받게 되었습니다. 이 기념비는 건립자의 위대한 업적을 기릴 뿐만 아니라, 영지 내에 이를 소유한 자라면 누구든 그 전설의 수호자를 자처할 수 있습니다." # 340579044606907060
+  building_UBA_reserve_03: "수목원" # 5550907108086290504
+  building_UBA_reserve_03_desc: "식물원에는 전 세계의 이국적인 꽃과 식물이 심어져 있습니다. 단순히 관상용 가치뿐만 아니라 일부는 약재로도 사용될 수 있습니다." # 5101532838193073542
+  building_UBA_reserve_04: "동물원" # 4531830435905376206
+  building_UBA_reserve_04_desc: "산과 숲 곳곳에는 군주가 사냥의 즐거움을 위해 전 세계에서 수집한 희귀 동물들이 흩어져 있습니다. 야생에 방사하기에 부적합한 일부 동물들은 새로 지어진 희귀 동물 박물관에 보관됩니다." # 13205303681545461739
+  building_UBA_reserve_05: "왕실 숲 공원" # 1439948979514136374
+  building_UBA_reserve_05_desc: "확장된 황실 숲 공원의 규모는 놀라울 정도입니다. 이제는 웅장하고 세심하게 가꾸어진 자연 경관과 그 주변에 점점이 박힌 여러 호화로운 궁전들이 어우러진 광활하고 멋진 풍경을 자랑합니다. 위에서 내려다보는 경치는 숨이 막힐 정도로 아름답습니다." # 13609323075608707557
+  UBA_reserve_building: "건설 중인 $building_type_UBA_reserve_01$" # 4444436022683744593
+  UBA_reserve_finished: "완공된 $building_type_UBA_reserve_01$" # 6004439588771354831
+  UBA_reserve_unlocks_desc: "#V $building_type_uba_manor_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 2615523304253912146
+  building_type_UBA_castle_01: "요새" # 17232694825089817177
+  building_type_UBA_castle_01_desc: "$building_UBA_castle_05_desc$" # 13425077162744175476
+  building_UBA_castle_01: "성벽과 해자" # 11012363453814907200
+  building_UBA_castle_01_desc: "요새 기지 주변으로 해자가 딸린 높은 성벽이 건설되고 있습니다. 아직 공사 중이지만, 완공되었을 때의 웅장한 요새 모습을 충분히 그려볼 수 있습니다." # 7411430203891597888
+  building_UBA_castle_02: "벙커와 탑" # 9876347695104196984
+  building_UBA_castle_02_desc: "요새의 본체는 여러 개의 탑을 자랑하며, 이 탑들은 다시 성벽과 벙커, 해자로 둘러싸여 있습니다. 견고한 성벽과 벙커 덕분에 요새는 지원군이 도착할 때까지 버틸 수 있습니다." # 3473845404969063600
+  building_UBA_castle_03: "병영." # 881213836766149168
+  building_UBA_castle_03_desc: "추가 공사를 거쳐 요새의 규모가 두 배 이상 커졌습니다. 내부의 추가 야영지에는 정예 병사들이 주둔하며, 이곳에서 훈련받은 최고의 장교들은 영지 곳곳으로 파견되어 병사들의 훈련을 지도합니다." # 6181065984653572728
+  building_UBA_castle_04: "지휘 본부" # 10626422222760206011
+  building_UBA_castle_04_desc: "이 웅장한 요새는 지역 방어 전략의 핵심이자 군사적 중심지가 되었습니다." # 1599792837123984310
+  building_UBA_castle_05: "웅장한 요새" # 6344220863881178632
+  building_UBA_castle_05_desc: "이 난공불락의 요새는 우뚝 솟은 석벽과 넓은 해자, 그리고 여러 개의 두꺼운 탑을 갖추고 있습니다. 또한 본래의 군사 요새 역할 외에도 왕실 거주지, 훈련소, 감옥으로도 사용되었습니다." # 16675648354803528768
+  UBA_castle_building: "건설 중 $building_type_UBA_castle_01$" # 10273312859984702231
+  UBA_castle_finished: "완공됨 $building_type_UBA_castle_01$" # 15341367481385179054
+  UBA_castle_unlocks_desc: "#V $building_type_uba_regimental_grounds_01$#!, #V $building_type_warrior_lodges_01$#!, #V $building_type_hillside_grazing_01$#! 계열의 [buildings|E]을(를) 모든 [holding|E]에 건설할 수 있습니다." # 15663416428440281051
+  building_type_UBA_tower_01: "파로스" # 18394652791605853206
+  building_type_UBA_tower_01_desc: "$building_UBA_tower_05_desc$" # 16148360526094363584
+  building_UBA_tower_01: "등대" # 11054759923750457547
+  building_UBA_tower_01_desc: "밤에 보행자와 항해하는 선박들에게 길을 안내하기 위해 우뚝 솟은 탑이 세워졌습니다." # 13448582350789148957
+  building_UBA_tower_02: "감시 탑" # 5972148276640345476
+  building_UBA_tower_02_desc: "등대에 감시소를 추가하여 주변을 조망하고 적의 접근 가능성을 감시할 수 있게 했습니다." # 3531798134574357531
+  building_UBA_tower_03: "높은 탑" # 13116465784480488923
+  building_UBA_tower_03_desc: "탑을 더욱 높이고 보강했으며, 본체 주변으로 일련의 부속 건물을 세웠습니다. 때때로 상설 야영지가 구축되면서 지역 방어를 담당하는 병사들이 탑 근처에 주둔하게 되었습니다." # 7804055799401906758
+  building_UBA_tower_04: "거대한 탑" # 2770694116648250486
+  building_UBA_tower_04_desc: "우뚝 솟은 탑은 수 마일 밖에서도 보였으며, 탑 꼭대기의 감시병들에게는 이 땅의 모든 것이 손에 잡힐 듯 보였습니다." # 12390728098998934888
+  building_UBA_tower_05: "웅장한 탑" # 1989488608000025946
+  building_UBA_tower_05_desc: "이 우뚝 솟고 경외심을 불러일으키는 탑은 잠재적 침입자의 공격을 감시하는 데 사용되며, 그 자체로 매우 방어적인 요새입니다. 동시에 보행자에게 방향을 알려주며 등대의 기능을 충실히 수행합니다." # 15558583521729613895
+  UBA_tower_building: "건설 중 $building_type_UBA_tower_01$" # 4391858931575645596
+  UBA_tower_finished: "완공됨 $building_type_UBA_tower_01$" # 543443670899122
+  UBA_tower_unlocks_desc: "#V $building_type_uba_checkpoint_01$#! 계열의 [buildings|E]을(를) 모든 [holding|E]에 건설할 수 있습니다." # 12041967143846362637
+  building_type_UBA_knight_01: "군사 아카데미" # 11115322313331024515
+  building_type_UBA_knight_01_desc: "$building_UBA_knight_05_desc$" # 18359107741630099702
+  building_UBA_knight_01: "훈련소" # 18058290260706027407
+  building_UBA_knight_01_desc: "기사 훈련을 위해 특별히 세워진 장소입니다. 수많은 야망을 품은 젊은이들이 이곳에서 꿈을 위해 땀을 흘릴 것입니다...... 눈물과 피가 함께할지도 모릅니다." # 15883796466375150818
+  building_UBA_knight_02: "기사 학교" # 10615725329573421935
+  building_UBA_knight_02_desc: "출신을 불문하고 기사를 꿈꾸는 누구든 이곳에서 완전한 군사 교육을 받게 되며, 전장 전략과 군대 조직, 최신 전쟁 기술에 관한 모든 지식을 배우게 됩니다." # 4535101697700049995
+  building_UBA_knight_03: "마상 시합장" # 359543586560557938
+  building_UBA_knight_03_desc: "추가적인 건설을 통해 군사 학교의 규모가 두 배 이상 커졌습니다. 넓은 공터가 생도들을 위한 훈련장으로 계획되었으며, 이곳에서 그들은 자격을 갖춘 기사로 거듭날 것입니다." # 8837964005850277505
+  building_UBA_knight_04: "기사 강당" # 12968636393495344783
+  building_UBA_knight_04_desc: "삶과 기억은 덧없는 것이지만, 기사도의 명예는 세대를 거쳐 기사들의 가슴 속에 전해질 것입니다." # 11281162946307381284
+  building_UBA_knight_05: "영광의 아카데미" # 15388491691322573273
+  building_UBA_knight_05_desc: "이 아카데미는 세대를 거쳐 뛰어난 기사들을 배출해 왔습니다. 출신을 불문하고 기사를 꿈꾸는 누구든 이곳에서 완전한 군사 교육을 받게 됩니다." # 13868823157675838869
+  UBA_knight_building: "건설 중 $building_type_UBA_knight_01$" # 2934011799285641779
+  UBA_knight_finished: "건설 완료 $building_type_UBA_knight_01$" # 1299836311478740890
+  UBA_knight_unlocks_desc: "#V $building_type_uba_joust_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 8120021640339503108
+  building_type_UBA_governor_01: "궁정" # 15442991267349670027
+  building_type_UBA_governor_01_desc: "$building_UBA_governor_05_desc$" # 17601997655735175430
+  building_UBA_governor_01: "치안판사" # 3648466499655323530
+  building_UBA_governor_01_desc: "영지 내의 사소한 문제로 군주를 번거롭게 해서는 안 되며, 헌신적인 관료 몇 명이면 충분합니다." # 13473042146220068587
+  building_UBA_governor_02: "지방 법원" # 7544629299089104313
+  building_UBA_governor_02_desc: "치안판사는 대개 지역의 향사들이 맡았으며, 이들은 지역의 법과 질서 유지, 공무 행정, 세금 및 벌금 징수를 담당할 권한을 부여받았습니다." # 11168457331687356104
+  building_UBA_governor_03: "치안판사 평의회" # 3568081090159650016
+  building_UBA_governor_03_desc: "군주가 임명한 지방 관리로서 치안판사는 중앙 정부의 명령을 수행하고 지방 행정 사무를 영주에게 보고할 의무가 있었습니다. 또한 민심을 살피고 지역 상황에 맞춰 사회 정책을 수립하기도 했습니다." # 5211285280254324176
+  building_UBA_governor_04: "순회 법원" # 2602321620301759998
+  building_UBA_governor_04_desc: "군주가 왕실 법원에서 파견한 순회 판사들이 전국을 순회합니다. 순회 법원의 공정하고 합리적인 재판은 백성들에게도 인기가 많았습니다." # 1568936805911801510
+  building_UBA_governor_05: "대법원" # 16249822794785238817
+  building_UBA_governor_05_desc: "이 법원은 중요하고 법적 가치가 있는 모든 사건을 심리할 책임이 있으며, 모든 하급 법원보다 상위의 권한을 가집니다. 판사들은 이곳에 앉아 군주가 이 광대한 영토를 관리하는 것을 보좌합니다." # 17575931370913510813
+  UBA_governor_building: "건설 중 $building_type_UBA_governor_01$" # 13765363374375280072
+  UBA_governor_finished: "$building_type_UBA_governor_01$ 건설됨" # 16805041067571227754
+  UBA_governor_unlocks_desc: "$building_type_uba_taxing_01$ #V $building_type_uba_taxing_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 17752348144722200512
+  building_type_UBA_workshop_01: "공방" # 1894482355660284797
+  building_type_UBA_workshop_01_desc: "$building_UBA_workshop_05_desc$" # 17529203921066790406
+  building_UBA_workshop_01: "소규모 공방" # 16579408579367861472
+  building_UBA_workshop_01_desc: "아무것도 없던 곳에서 장인 집단이 찾아와 자신들만의 공방을 세웠습니다. 작업대 옆에는 간단한 도구들이 쌓여 있고, 장인들은 이를 사용하여 능숙하게 도구를 제작할 것입니다." # 15780528576840407484
+  building_UBA_workshop_02: "작은 공방" # 3760553341619964877
+  building_UBA_workshop_02_desc: "공방은 다양한 도구와 장비로 가득 차 있으며, 장인들은 이곳에서 자신의 기량을 뽐내며 지역 사회에 물자를 공급하고 타 지역으로 수출할 제품까지 만들어냅니다." # 12643240371693293219
+  building_UBA_workshop_03: "큰 공방" # 10460466547525755474
+  building_UBA_workshop_03_desc: "공방에서의 매일은 창의성과 도전으로 가득합니다. 장인들은 새로운 재료를 실험하고 새로운 기술을 적용하여 독특하고 훌륭한 무언가를 창조해냅니다." # 17169738599233530868
+  building_UBA_workshop_04: "복합 공방" # 13631650992108842824
+  building_UBA_workshop_04_desc: "공방은 장인들이 자신의 재능을 펼치고 기량을 최대한으로 발휘하는 예술의 전당입니다. 이곳의 작업물은 뛰어난 장인 정신으로 놀라움을 자아낼 뿐만 아니라, 제작자의 미적 감각까지 드러냅니다." # 16432429996567628015
+  building_UBA_workshop_05: "전설적인 공방" # 14901536698532707893
+  building_UBA_workshop_05_desc: "이곳은 장인들이 모이는 장소이자 영지 기술 발전의 중심지입니다. 도구와 원자재, 독창성, 그리고 땀방울만 있다면 장인들은 언제나 비할 데 없는 경이로움을 창조해낼 수 있습니다." # 1636448551184876652
+  UBA_workshop_building: "$building_type_UBA_workshop_01$ 건설 중" # 15188338230168715638
+  UBA_workshop_finished: "$building_type_UBA_workshop_01$ 건설 완료" # 6626482754911304142
+  UBA_workshop_unlocks_desc: "$building_type_wind_furnace_01$ #V $building_type_wind_furnace_01$#! 또는 #V $building_type_uba_kiln_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 2606171983538326470
+  building_type_UBA_parliament_01: "의회" # 12105665243803293628
+  building_type_UBA_parliament_01_desc: "$building_UBA_parliament_05_desc$" # 8213583854514731180
+  building_UBA_parliament_01: "의회 회관" # 9749440851903821673
+  building_UBA_parliament_01_desc: "의회 회관의 가구는 소박하고 위엄이 있으며, 기본적인 좌석과 토론 구역이 마련되어 있습니다. 영지 각지에서 온 대표들이 이곳에 모여 다양한 주제에 대해 의견을 나누고 토론을 벌일 수 있습니다." # 6098429560248772848
+  building_UBA_parliament_02: "상원" # 17297902423409264292
+  building_UBA_parliament_02_desc: "상원은 귀족과 성직자 출신의 대표들로 구성됩니다. 그들은 높은 지위와 권력을 지니고 있지만, 영지의 크고 작은 문제에 대해 의견을 내기 위해 한자리에 모일 수 있습니다." # 18257611974918501743
+  building_UBA_parliament_03: "하원" # 8691832562996610227
+  building_UBA_parliament_03_desc: "하원 의원 대부분은 상인, 군인, 시민, 농민 계층 출신입니다. 그들의 목소리는 아래로부터 나오며 평민들의 이익과 열망을 대변합니다." # 13954466526046412009
+  building_UBA_parliament_04: "추밀원" # 177024015266890818
+  building_UBA_parliament_04_desc: "군주가 직접 임명하는 추밀원 자문관들은 왕국에 중대한 사안에 대해 군주에게 조언할 책임이 있으며, 거의 항상 승인을 받습니다." # 18439650019810722004
+  building_UBA_parliament_05: "의회 궁전" # 8032695701955403501
+  building_UBA_parliament_05_desc: "도시 중심부에 자리한 이 건물은 귀족, 시민, 성직자 등 모든 계층의 대표자를 하나로 모읍니다. 상원과 하원은 서로 대립하면서도 상호 보완하며, 권력과 정의의 섬세한 균형을 이룹니다." # 12079053237548160170
+  UBA_parliament_building: "건설 중 $building_type_UBA_parliament_01$" # 5777294563622229012
+  UBA_parliament_finished: "완공됨 $building_type_UBA_parliament_01$" # 15103901369844115074
+  UBA_parliament_unlocks_desc: "#V $building_type_uba_townhall_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 1786762308662124329
+  building_type_UBA_hospital_01: "대형 병원" # 3675694128729838370
+  building_type_UBA_hospital_01_desc: "$building_UBA_hospital_05_desc$" # 13074041547248835863
+  building_UBA_hospital_01: "환자 오두막" # 2979109435006236303
+  building_UBA_hospital_01_desc: "소박하지만 병원 시설로서의 첫걸음을 뗀 곳입니다. 의사들은 꽤 괜찮은 환경에서 환자를 수용하고 치료할 수 있었으며, 환자들은 치유를 위한 조용한 공간을 제공받았습니다." # 18337785533725044981
+  building_UBA_hospital_02: "약초 조제소" # 9550821272263123692
+  building_UBA_hospital_02_desc: "전 세계의 약초상들이 수집한 약초를 가공하여 더 사용하기 쉽고 보관하기 좋은 의약품으로 만듭니다. 의사들은 이를 사용하여 환자들에게 약초 치료를 제공합니다." # 10826077265134460080
+  building_UBA_hospital_03: "격리 병동" # 10424078187821342733
+  building_UBA_hospital_03_desc: "위험한 전염병 환자들은 비교적 분리된 격리 병동에 수용되며, 오직 가장 용감한 의사들만이 그곳으로 나아가 환자를 돌볼 엄두를 냅니다. 부디 그들이 무사하기를 바랍니다." # 13204740653973457265
+  building_UBA_hospital_04: "확장 병동" # 11804981958187341235
+  building_UBA_hospital_04_desc: "역병에 대비하여 병원 근처 공터에 임시로 설치했던 확장 병동은 점차 상설 병동으로 자리 잡았고, 심각한 고통을 겪는 희생자들에게 생존의 희망을 주었습니다." # 12111121734406436237
+  building_UBA_hospital_05: "병원과 호스피스" # 16376529991307272904
+  building_UBA_hospital_05_desc: "호스피스는 간신히 생명을 유지하는 이들에게 장기적인 돌봄을 제공하며, 중앙에 위치한 본원 건물은 모든 호스피스에 간호 지원을 제공합니다." # 18357981526588237783
+  UBA_hospital_building: "건설 중 $building_type_UBA_hospital_01$" # 1856358495460425786
+  UBA_hospital_finished: "완공됨 $building_type_UBA_hospital_01$" # 11816935631258565048
+  UBA_hospital_unlocks_desc: "#V $building_type_uba_bathroom_01$#!, $building_type_uba_herbal_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 7020367941586590047
+  building_type_UBA_university_01: "대학" # 10743360859102068668
+  building_type_UBA_university_01_desc: "$building_UBA_university_05_desc$" # 14406992224073222344
+  building_UBA_university_01: "법학부" # 6080543767786097247
+  building_UBA_university_01_desc: "$building_type_generic_university_desc$\n\n법학부는 문법, 수사학, 논리학 학자들이 모여 고대 법전과 오늘날의 법적 사건들을 해석하던 본래의 학당입니다." # 16623218505274927851
+  building_UBA_university_02: "인문학부" # 10329470391025264514
+  building_UBA_university_02_desc: "$building_type_generic_university_desc$\n\n인문학부는 문학과 언어를 연구하는 곳입니다. 이곳에서 학생들은 언어를 배우고 시와 희곡을 포함한 모든 종류의 고전 문학을 공부합니다." # 17050809656414742115
+  building_UBA_university_03: "신학부" # 5196565361085773694
+  building_UBA_university_03_desc: "$building_type_generic_university_desc$\n\n신학부는 대학에서 가장 중요한 학부 중 하나입니다. 이곳에서 학생들은 다양한 신학 문헌을 연구하고 신앙, 도덕, 그리고 인간의 영혼을 탐구합니다." # 8000209892593714380
+  building_UBA_university_04: "철학부" # 4627845000330664094
+  building_UBA_university_04_desc: "$building_type_generic_university_desc$\n\n철학부는 철학적 사유와 담론적 문제를 연구하는 곳입니다. 학생들은 고대와 현대의 고전 철학 저작들을 공부합니다. 그리고 존경받는 학자들이 이곳에서 지식과 지혜, 서적을 교류합니다." # 3668363691479701029
+  building_UBA_university_05: "과학부" # 7103029511940137006
+  building_UBA_university_05_desc: "$building_type_generic_university_desc$\n\n전 세계의 학자와 과학자들이 대학의 벽 안에서 토론하고, 연구하고, 기록하며, 마침내 그들의 지식을 하나로 모았습니다. 이 명망 높은 대학은 이 지역에서 가장 인상적인 학문의 중심지가 되었습니다." # 13162660948655474830
+  UBA_university_building: "건설 중 $building_type_UBA_university_01$" # 13554214212464524120
+  UBA_university_finished: "완공됨 $building_type_UBA_university_01$" # 12214097053884669328
+  UBA_university_unlocks_desc: "[buildings|E]의 #V $building_type_uba_library_01$#! 계열을 모든 [holding|E]에 건설할 수 있습니다." # 16715971002669297901
+  building_type_UBA_church_01: "대성소" # 9694381214938579782
+  building_type_UBA_church_01_desc: "$building_UBA_church_05_desc$" # 6402688703039140003
+  building_UBA_church_01: "기도의 집" # 13416501079528145544
+  building_UBA_church_01_desc: "소박하고 품위 있게 꾸며진 고요한 성소입니다. 평온한 내부는 찾아오는 신도들이 조용히 기도하기에 더할 나위 없이 좋은 장소를 제공합니다." # 10924800350770897122
+  building_UBA_church_02: "명상의 집" # 15715161204169082709
+  building_UBA_church_02_desc: "높은 열주가 웅장한 아치형 천장을 받치고 있으며, 아름다운 프레스코화와 장식이 성소의 곳곳을 수놓고 있습니다. 향과 빛이 자아내는 신성한 분위기 속에서 신도들은 함께 기도하고 명상합니다." # 7241522374146101907
+  building_UBA_church_03: "예배당" # 18127998321680141826
+  building_UBA_church_03_desc: "성소는 거대하고 위엄이 있으며, 지면 위로 높이 솟은 거대한 돔과 석조 기둥이 건물 전체를 지탱합니다. 지붕과 정면은 정교하고 화려한 조각과 장식으로 꾸며져 있습니다. 신도들은 엄숙한 분위기에 깊이 몰입할 수 있습니다." # 16634107459644862192
+  building_UBA_church_04: "찬양의 집" # 2511669042021285899
+  building_UBA_church_04_desc: "성스러움과 엄숙함으로 가득 찬 이 웅장한 성소는 내외부가 화려한 조각과 프레스코화로 장식되어 있습니다. 제단에 안치된 귀중한 성유물에서 뿜어져 나오는 신성한 기운은 더욱 경외심을 자아냅니다." # 16871720007581927961
+  building_UBA_church_05: "성스러운 홀" # 17908314591856397558
+  building_UBA_church_05_desc: "하늘을 향해 곧게 솟은 돔과 비범할 정도로 성스럽게 느껴지는 화려한 장식을 갖춘 웅장하고 거대한 성소입니다. 전 세계의 순례자들이 기꺼이 이곳을 찾아오며, 이는 그들을 숭배하는 신에게 한 걸음 더 다가가게 합니다. 그들은 어김없이 이 성소에 감탄하고 압도당합니다. 모두가 한 가지 사실, 즉 우리가 진정으로 신의 은총을 받고 있다는 사실을 확신하게 됩니다." # 4306014310294039473
+  UBA_church_building: "건설 중 $building_type_UBA_church_01$" # 15055881172207106897
+  UBA_church_finished: "건축됨 $building_type_UBA_church_01$" # 17016359535263691651
+  UBA_church_unlocks_desc: "[buildings|E]의 #V $building_type_uba_temple_01$#! 계열을 모든 [holding|E]에 건설할 수 있습니다." # 12527213921680569232
+  building_type_UBA_market_01: "시장" # 13958370297086831133
+  building_type_UBA_market_01_desc: "$building_UBA_market_05_desc$" # 5592578530079986413
+  building_UBA_market_01: "작은 시장" # 11355511490938668338
+  building_UBA_market_01_desc: "농부, 장인, 상인들이 농산물, 수공예품, 생필품 같은 소박한 물건을 가지고 초라한 가판대에 모여듭니다." # 285364925478955506
+  building_UBA_market_02: "교역 광장" # 16171333195099555808
+  building_UBA_market_02_desc: "이 크고 활기찬 시장에는 다양한 가판대가 빽빽하게 들어서 있습니다. 향신료, 직물, 공예품 등 물건이 넘쳐납니다. 사람들은 붐비는 거리를 오가며 원하는 물건을 고릅니다." # 14542671345609904459
+  building_UBA_market_03: "상업 거리" # 6606932419042204405
+  building_UBA_market_03_desc: "시장이 확장되면서 상업 거리는 더욱 넓어졌습니다. 가게와 상점이 즐비하여 먼 곳에서 온 상인과 여행자를 끌어들이는 다양한 상품과 서비스를 제공합니다." # 5340150762004561760
+  building_UBA_market_04: "거래소" # 8421024201623724374
+  building_UBA_market_04_desc: "창고 시설의 개선으로 대량의 물품 거래가 가능해졌습니다. 전 세계의 상인과 상공회의소가 모여들며, 대량 거래를 통해 돈과 물건, 선물이 끊임없이 유통됩니다." # 3305060941375423881
+  building_UBA_market_05: "상업 중심지" # 14026819779786860298
+  building_UBA_market_05_desc: "이곳의 시장과 저장 시설은 규모가 크고 기능적이며, 전 세계의 상인과 여행자를 불러 모읍니다. 상인들이 모여들고 가게가 넘쳐납니다. 이곳은 영지 전체, 나아가 해당 지역 전체의 상업 중심지가 되었습니다." # 14392997321190821870
+  UBA_market_building: "건설 중 $building_type_UBA_market_01$" # 11945339575718974910
+  UBA_market_finished: "건설 완료 $building_type_UBA_market_01$" # 3338580845108000793
+  UBA_market_unlocks_desc: "#V $building_type_caravanserai_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 10059902862790003808
+  building_type_UBA_port_01: "항구" # 9569954302350784950
+  building_type_UBA_port_01_desc: "$building_UBA_port_05_desc$" # 15258818636012619604
+  building_UBA_port_01: "작은 항구" # 10141747465168326936
+  building_UBA_port_01_desc: "해안가에 자리 잡은 평범한 부두이지만, 수많은 상인과 어부가 물건을 싣고 내리며 사고팔기에 충분한 공간을 제공하며, 매일 많은 배가 오갑니다. 먼 곳에서 온 여행자들은 이 항구의 안식처를 찾았습니다." # 6449576595444069823
+  building_UBA_port_02: "무역항" # 2906172567795380547
+  building_UBA_port_02_desc: "이 항구는 수많은 상인과 어부들에게 정박하고 물건을 사고팔 수 있는 충분한 공간을 제공해 왔습니다. 규모가 커짐에 따라 이 항구는 이 지역의 무역과 여행의 중심지가 되었습니다. 해안과 강을 따라 온 모든 곳의 배들이 이곳으로 와서 무역을 합니다." # 1516163940126643532
+  building_UBA_port_03: "상업 항구" # 16001412393744227235
+  building_UBA_port_03_desc: "세관 및 수익 기관은 항구에서의 무역 활동에 대한 기본적인 안전장치를 제공합니다. 항구의 효율성과 질서를 보장하기 위해 건전한 관리 시설과 운영 메커니즘도 마련되었습니다." # 5344213812777285171
+  building_UBA_port_04: "$building_common_tradeport_06$" # 12234256329112051164
+  building_UBA_port_04_desc: "$building_common_tradeport_06_desc$" # 16226751288891293970
+  building_UBA_port_05: "대항구" # 5798483858369737724
+  building_UBA_port_05_desc: "이 거대한 항구는 광범위한 정박지와 부두, 그리고 이 지역에서 가장 숙련된 선원들을 제공합니다. 긴 여정을 떠나야 하는 모든 여행자는 이곳에서 필요한 물품을 구할 수 있으며, 반대로 상인, 어부, 군대도 이곳에서 원하는 필수품을 구매할 수 있습니다." # 5919477942449111733
+  UBA_port_building: "건설 중인 건물 $building_type_UBA_port_01$" # 8547901485044648327
+  UBA_port_finished: "건설 완료 $building_type_UBA_port_01$" # 6605357057396909591
+  UBA_port_unlocks_desc: "#V $building_type_caravanserai_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 10059902862790003808
+  building_type_UBA_holyland_01: "성지" # 4468031566666299493
+  building_type_UBA_holyland_01_desc: "$building_UBA_holyland_01_desc$" # 15391088106569270718
+  building_UBA_holyland_01: "조화의 꿈" # 15760841306459007062
+  building_UBA_holyland_01_desc: "\"우리 후손들이여, 다툼은 잊어라! 이제부터 평화의 깃발이 이 땅 위에 높이 휘날릴 것이다!\"" # 9271190800705185009
+  building_UBA_holyland_02: "평화의 씨앗" # 21084407876922588
+  building_UBA_holyland_02_desc: "\"희망의 꽃이 평화의 들판에 피어날 수 있다면, 무엇으로 물을 주어야 할까?\" \n \"사랑이라네.\"" # 7148640159357427745
+  building_UBA_holyland_03: "희망의 꽃" # 2706046177826355253
+  building_UBA_holyland_03_desc: "\"서로 다른 신도들은 각자의 신이 내린 가르침에만 귀를 기울일 줄 알 뿐, 우리 모두가 똑같이 그 신성한 영감과 창조의 기적을 경험했다는 사실을 잊고 있구나.\"" # 16880990603321357745
+  building_UBA_holyland_04: "조화의 땅" # 9051842062086742057
+  building_UBA_holyland_04_desc: "\"신앙은 우리 영혼의 구원을 위한 유일한 희망이며, 인간의 행위는 이 세상에서 우리를 구원할 미덕이자 지혜이다.\"" # 16562289340881975353
+  building_UBA_holyland_05: "꿈의 도시" # 17379448080600361697
+  building_UBA_holyland_05_desc: "서로 다른 신도들이 서로 다른 신을 믿지만, 오늘날 그들은 모두 같은 도시에서 조화롭게 살아갑니다. \n 도시에는 사원이 서 있고, 무지개처럼 찬란하고 아름다운 신념의 다원성이 존재합니다. \n 자비, 관용, 그리고 형제애는 이 세상에서 가장 위대하고도 작은 기적을 이룹니다." # 6566810762193569722
+  UBA_holyland_building: "건설 중인 $building_type_UBA_holyland_01$" # 14529293013879060896
+  UBA_holyland_finished: "건설 완료 $building_type_UBA_holyland_01$" # 11166110808504954588
+  UBA_holyland_unlocks_desc: "#V $building_type_uba_bazaar_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 3417095516275482859
+  building_type_UBA_basins_01: "저수지" # 2870208693665114667
+  building_type_UBA_basins_01_desc: "$building_UBA_basins_05_desc$" # 15227005494338903924
+  building_UBA_basins_01: "개방형 수조" # 12974803023869508270
+  building_UBA_basins_01_desc: "$building_kairouan_basins_01_desc$" # 2026528778998161561
+  building_UBA_basins_02: "방조 댐" # 10826337433754914720
+  building_UBA_basins_02_desc: "높은 제방을 쌓아 물길을 가로막고 장엄한 저수지를 만들 수 있습니다. 댐은 저장되는 수량을 늘려 대규모 관개를 지원할 뿐만 아니라, 어느 정도 홍수의 위협을 줄여주기도 합니다." # 15252809627037870852
+  building_UBA_basins_03: "거대 저수지" # 5497721638072742993
+  building_UBA_basins_03_desc: "돌을 사용하여 저수지의 댐을 더욱 보강하면 안정성과 저수 용량을 크게 향상할 수 있습니다. 더 안정적인 물 공급은 수자원 사업의 추가 발전을 위한 튼튼한 토대가 됩니다." # 11076319968108878720
+  building_UBA_basins_04: "지하 저수조" # 9727593445368397023
+  building_UBA_basins_04_desc: "공학 기술의 발전으로 거대한 지하 저수 시설을 건설할 수 있게 되었습니다. 수많은 돌기둥이 받치고 있는 거대한 지하 공간은 충분한 물을 저장하여 장기간의 가뭄에 효과적으로 대처할 수 있을 뿐만 아니라, 도시 거주민에게 깨끗한 식수를 제공하고 경제 발전과 농업 번영을 위한 확실한 보증이 됩니다." # 10365854015986084537
+  building_UBA_basins_05: "수계 시스템" # 2226294283678851528
+  building_UBA_basins_05_desc: "이 물의 중추는 저수, 홍수 조절, 관개를 통합합니다. 저수지와 수로로 이루어진 포괄적인 시스템을 통해 물의 흐름을 정밀하게 제어하고 수자원 활용을 극대화할 수 있습니다. 물은 도시 거주민의 생명줄일 뿐만 아니라, 영지의 번영과 자연재해에 대한 저항력을 결정짓는 핵심입니다." # 10255322143233506839
+  UBA_basins_building: "건설 중 $building_type_UBA_basins_01$" # 8385080677923104680
+  UBA_basins_finished: "완공됨 $building_type_UBA_basins_01$" # 15609986601245868196
+  UBA_basins_unlocks_desc: "[buildings|E]의 #V $building_type_uba_aqueduct_01$, $building_type_uba_qanats_01$, $building_type_uba_bathroom_01$#! 계열은 모든 [holding|E]에 건설할 수 있습니다." # 1137036077470919332
+  building_type_UBA_academy_01: "도서관" # 15181166854523674974
+  building_type_UBA_academy_01_desc: "$building_UBA_academy_05_desc$" # 17010601592644964337
+  building_UBA_academy_01: "작은 도서관" # 7765985922845658637
+  building_UBA_academy_01_desc: "도서관에는 소규모 증서부터 신학적 걸작에 이르기까지 풍부한 장서가 소장되어 있습니다. 그 벽 안에는 지식의 보고가 잠들어 있습니다." # 15679854820445030233
+  building_UBA_academy_02: "필사소" # 671723393296990388
+  building_UBA_academy_02_desc: "헌신적인 필사자들이 온종일 작업하며 각종 서적과 문서를 베껴 쓰고 정리합니다. 일부는 잠재적 저자들을 위해 그들의 저작을 필사하는 일을 맡기도 합니다." # 6784172160585803439
+  building_UBA_academy_03: "번역소" # 15496524735019943665
+  building_UBA_academy_03_desc: "열정적인 인재들이 이곳에서 고대 언어와 외국어를 배웁니다. 노련한 수많은 필사자 덕분에 우리는 고대의 지혜를 보존할 수 있었습니다." # 10062665668963654163
+  building_UBA_academy_04: "금서고" # 18019750771474955664
+  building_UBA_academy_04_desc: "흔치 않은 서적과 문서는 금서고에 보관되며, 엄격한 기밀 유지와 보안 조치를 통해 일반인들이 이러한 \"위험한\" 자료에 접근하지 못하도록 합니다." # 17933963941770282075
+  building_UBA_academy_05: "기록 보관소" # 10625440749647625944
+  building_UBA_academy_05_desc: "대도서관은 방대하며, 필사자들은 더 많은 위대한 문학 작품을 번역하고 보존하기 위해 열정을 불태웁니다. 역사적 기록과 문서는 능숙하게 분류되어 수많은 서가 사이에 모여 있습니다." # 8460248942716589641
+  UBA_academy_building: "건설 중인 건물 $building_type_UBA_academy_01$" # 3084090594797553721
+  UBA_academy_finished: "건축됨 $building_type_UBA_academy_01$" # 17087893239449957070
+  UBA_academy_unlocks_desc: "[buildings|E]의 #V $building_type_uba_library_01$#! 계열을 모든 [holding|E]에 건설할 수 있습니다." # 16715971002669297901
+  building_type_UBA_garden_01: "정원" # 4841211575372581583
+  building_type_UBA_garden_01_desc: "$building_UBA_garden_05_desc$" # 11422417304900015226
+  building_UBA_garden_01: "개인 정원" # 12132147224504544957
+  building_UBA_garden_01_desc: "돌담으로 둘러싸인 넓은 부지입니다. 세상과 동떨어진 이 즐거운 공간에서 정원사가 정성껏 식물을 돌봅니다." # 17514571748134418057
+  building_UBA_garden_02: "안뜰 정원" # 12740158274305080145
+  building_UBA_garden_02_desc: "정원은 아름답게 배치되어 있으며, 잘 가꾸어진 꽃과 식물뿐만 아니라 분수와 조각상으로 장식되어 있습니다. 개인적인 휴식은 물론, 다양한 사교 행사를 위한 장소로도 활용할 수 있습니다." # 2174441989669131522
+  building_UBA_garden_03: "웅장한 정원" # 7075765132892698750
+  building_UBA_garden_03_desc: "부유하고 강력한 이들에게는 당연히 비싸고 웅장한 정원이 필요합니다. 많은 정원사의 보살핌 아래, 전 세계에서 가져온 희귀한 꽃과 식물, 과실수가 자태를 뽐냅니다." # 976976618091409695
+  building_UBA_garden_04: "왕실 정원" # 3212898033957337808
+  building_UBA_garden_04_desc: "정원의 번성하는 아름다움 뒤에는 더 나은 식물을 재배하려는 근면한 정원사와 약초사들의 노고가 숨어 있습니다. 멋진 식물들은 이 정원을 더욱 아름답게 만들 뿐만 아니라 질병을 회복하는 데도 도움을 줍니다." # 18180311118653457878
+  building_UBA_garden_05: "궁궐 정원" # 10587755775834869155
+  building_UBA_garden_05_desc: "이곳은 화려한 건축물과 희귀한 식물들이 사방에서 찾아온 수많은 방문객을 매료시키는 놀라운 정원 단지가 되었습니다. 정교하게 설계된 화단과 조각상, 수경 시설은 장관을 이루는 궁궐 및 안뜰 건축물과 어우러지며, 이러한 정원을 소유하는 것은 모든 귀족의 꿈입니다." # 878562507912111613
+  UBA_garden_building: "건설 중 $building_type_UBA_garden_01$" # 13329564075898711558
+  UBA_garden_finished: "완공됨 $building_type_UBA_garden_01$" # 11330553490876286315
+  UBA_garden_unlocks_desc: "#V $building_type_uba_herbal_01$#!, #V $building_type_uba_olive_01$#!, #V $building_type_uba_vineyard_01$#!, #V $building_type_uba_tea_01$#!, #V $building_type_uba_silk_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 1583215600734329224
+  building_type_UBA_secret_01: "비밀 궁전" # 17131735277143860563
+  building_type_UBA_secret_01_desc: "$building_UBA_secret_05_desc$" # 8040332760648034203
+  building_UBA_secret_01: "비밀의 안뜰" # 6106889923352868382
+  building_UBA_secret_01_desc: "깊은 산과 울창한 숲 사이에 숨겨진 그림자 궁전은 무성한 식물들로 입구와 출구가 가려져 있어 극소수의 사람만이 그 존재를 알고 있습니다. 그 안뜰 내부에는 알 수 없는 비밀이 도사리고 있습니다." # 14561089465306192219
+  building_UBA_secret_02: "환영의 정원" # 4783829306825905594
+  building_UBA_secret_02_desc: "비밀 궁전 안에는 아름답고 매혹적으로 보이지만 실제로는 위험으로 가득 찬 은밀한 정원이 있습니다. 주의하지 않는 방문객은 비약에 매료되어 진짜와 가짜 꽃, 식물, 나무, 조각상과 장식 사이에서 길을 잃게 될 것입니다." # 12152655679039340221
+  building_UBA_secret_03: "미궁의 요새" # 7364074083365798887
+  building_UBA_secret_03_desc: "성 내부는 구조가 매우 복잡하여 누구든 스스로 구조를 파악하기 어렵습니다. 의도적으로 설계된 조명 조건으로 인해 갈림길 사이에 진짜 경로가 교묘하게 숨겨져 있어, 아는 사람의 안내 없이는 올바른 길을 찾기가 거의 불가능합니다." # 10605407257573079137
+  building_UBA_secret_04: "절망의 지하 감옥" # 8655857358117607818
+  building_UBA_secret_04_desc: "가장 비참하고 불운한 죄수들이 이 거대한 미궁 속 지하 감옥에 수감되어 있으며, 감방 밖에는 온갖 삼엄한 감시와 보안 조치가 취해져 있습니다. 설령 간수들이 떠나고 감방 문이 열린다 해도, 이 죄수들은 밖으로 나가는 길을 찾지 못할지도 모릅니다." # 9120370714234797156
+  building_UBA_secret_05: "그림자의 왕좌" # 14019796516473840036
+  building_UBA_secret_05_desc: "태양은 서쪽으로 저물고 밤이 찾아오니,\n 밤의 왕이 대지의 권력을 쥐려 합니다.\n 그는 높은 왕좌 위에 앉아 기괴하고 어두운 그림자를 드리웁니다." # 3582882331204145459
+  UBA_secret_building: "건설 중인 $building_type_UBA_secret_01$" # 8522336008030261572
+  UBA_secret_finished: "완공된 $building_type_UBA_secret_01$" # 10307213545038049652
+  UBA_secret_unlocks_desc: "#V $building_type_uba_private_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 5323171417575945111
+  building_type_UBA_hunting_01: "사냥 공원" # 6438049589670246403
+  building_type_UBA_hunting_01_desc: "$building_UBA_hunting_01_desc$" # 5200004178813658948
+  building_UBA_hunting_01: "사냥터" # 1929676777109663714
+  building_UBA_hunting_01_desc: "광활한 미개발지를 보존 구역으로 지정하고, 사냥터 주인이 항상 충분한 사냥감을 확보할 수 있도록 허가받지 않은 사냥꾼의 출입을 금지합니다." # 9204043961981106233
+  building_UBA_hunting_02: "사육장과 조류장" # 2990936477714541379
+  building_UBA_hunting_02_desc: "사냥개와 매는 사냥꾼의 훌륭한 동반자입니다. 평일에는 전문적인 관리를 받으며, 사냥철이 되면 사냥꾼의 조력자가 됩니다." # 8926230977950384293
+  building_UBA_hunting_03: "울타리와 마구간" # 10859909700427089760
+  building_UBA_hunting_03_desc: "$building_hunting_grounds_05_desc$" # 7479981913228151301
+  building_UBA_hunting_04: "사냥용 오두막" # 16056204927104925592
+  building_UBA_hunting_04_desc: "$building_legendary_hunting_lodge_desc$" # 12055732444869640900
+  building_UBA_hunting_05: "왕실 사냥용 오두막" # 10705789030201440831
+  building_UBA_hunting_05_desc: "사냥과 거주를 겸할 수 있는 기능적인 건물이 사냥터 가장자리에 세워집니다. 일반적인 사냥용 파빌리온 외에도 거실, 침실, 연회장뿐만 아니라 완벽한 주방 시설과 오락 시설을 갖춘 호화로운 사냥용 궁전이 포함됩니다." # 6380924752237225227
+  UBA_hunting_building: "건설 중인 $building_type_UBA_hunting_01$" # 2867411332901234809
+  UBA_hunting_finished: "완공된 $building_type_UBA_hunting_01$" # 11436458879543235474
+  UBA_hunting_unlocks_desc: "#V $building_type_horse_pastures_01$#!, #V $building_type_uba_fur_01$#! 계열의 [buildings|E]은 모든 [holding|E]에 건설할 수 있습니다." # 1824909590771603842
+  building_type_UBA_pasture_01: "목초지" # 5623733668347157011
+  building_type_UBA_pasture_01_desc: "$building_UBA_pasture_01_desc$" # 11894653034785334553
+  building_UBA_pasture_01: "자연 목초지" # 29212071686323056
+  building_UBA_pasture_01_desc: "우리의 방목은 자연의 선물에 의존합니다. 광활한 초원은 풍부한 목초와 물을 제공하며, 염소, 양, 말, 낙타, 소와 같은 가축들이 초원을 자유롭게 누빕니다." # 15853403274673790680
+  building_UBA_pasture_02: "윤환 방목" # 15691247567003090157
+  building_UBA_pasture_02_desc: "더 질 좋은 목초와 물을 찾아 계절 변화와 목초지별 환경 특성에 따라 다섯 가축의 비율을 조절하고, 가축을 가장 적합한 지역으로 이동시켜 가축 떼의 성장을 유지합니다." # 12451949427110842709
+  building_UBA_pasture_03: "수원 관리" # 15079356136625193811
+  building_UBA_pasture_03_desc: "초원의 수원은 매우 중요합니다. 우리는 가뭄에도 가축에게 충분한 물을 공급할 수 있도록 자연 수원을 관리 및 준설하고 간단한 우물을 파기 시작했습니다." # 4134435447985121209
+  building_UBA_pasture_04: "오축 관리" # 6414469846269236393
+  building_UBA_pasture_04_desc: "목초지를 구역별로 나누어 가축을 순환 방목함으로써 초목이 회복될 시간을 주고 목초지의 비옥함을 유지합니다. 또한 목초지별 수용 능력과 방목에 적합한 가축 종류를 검토하여 환경에 맞게 다섯 가축의 비율을 조절합니다." # 9323980072801447997
+  building_UBA_pasture_05: "가축 우리." # 7103854274616985921
+  building_UBA_pasture_05_desc: "극심한 기상 악화나 전염병이 창궐할 때, 이 가축 우리는 가축에게 피난처를 제공하여 손실을 줄여줍니다. 평소 비축해 둔 건초와 사료는 자연환경이 좋지 않은 시기에도 가축의 개체 수를 안정적으로 유지해 줍니다." # 12168954519616225550
+  UBA_pasture_unlocks_desc: "$UBA_hunting_unlocks_desc$" # 160439759310954327
+  building_type_UBA_yurt_01: "칸의 궁정" # 16936351835633497711
+  building_type_UBA_yurt_01_desc: "$building_UBA_yurt_05_desc$" # 1310187872035325694
+  building_UBA_yurt_01: "칸의 유르트" # 16383121458459949301
+  building_UBA_yurt_01_desc: "칸의 유르트는 입지가 좋고 비교적 영구적인 거주지이자 초원 권력의 중심지였습니다. 이곳에서 칸의 명령이 초원 전역으로 전달되며, 칸의 봉신들이 충성을 맹세합니다." # 9759924678351313471
+  building_UBA_yurt_02: "부족들의 집회" # 2999050739928948005
+  building_UBA_yurt_02_desc: "칸의 권력이 확장됨에 따라 더 많은 씨족 대표와 전사들이 칸의 천막 주변으로 모여들었습니다. 이곳은 점차 씨족들의 회합 장소가 되어 때때로 중요한 의식이 거행되고, 군사 작전이 논의되며, 봉신들로부터 조공을 받는 곳이 되었습니다." # 15365112248959133140
+  building_UBA_yurt_03: "케식의 야영지" # 7420944443152673136
+  building_UBA_yurt_03_desc: "칸의 왕실 궁정 주변으로 더 강력한 요새가 건설되었습니다. 칸의 친위대가 대천막 주변에 주둔하며 반역을 꿈꾸는 자들의 불경한 생각을 단념시키기에 충분했습니다. 초원의 모든 부족은 칸의 발아래 엎드릴 것입니다." # 11284419518581457616
+  building_UBA_yurt_04: "알현실" # 9845883775112164353
+  building_UBA_yurt_04_desc: "웅장하고 화려한 알현실이 완공되었습니다. 이곳에서 봉신국과 조공국의 사절들이 대칸을 알현할 수 있습니다. 방문자들은 칸의 위엄과 부에 압도되거나, 친위대의 칼날에 겁을 먹어 더 이상 반역을 생각조차 할 수 없게 됩니다." # 9594655793355363621
+  building_UBA_yurt_05: "칸의 자리" # 7492807886318022177
+  building_UBA_yurt_05_desc: "왕실 궁정은 초원에서 누구도 부정할 수 없는 권력의 중심지입니다. 강력한 요새와 거대한 군사력, 그리고 잘 정비된 행정 체계는 칸이 광대한 영토와 수많은 봉신을 효과적으로 통치할 수 있게 해주었습니다. 세계 각지에서 끊임없이 몰려드는 사절과 조공품들로 칸의 권위는 하늘을 찔렀습니다." # 2345725701123419300
+  UBA_yurt_building: "건설 중 $building_type_UBA_yurt_01$" # 360391921417677321
+  UBA_yurt_finished: "완공됨 $building_type_UBA_yurt_01$" # 3828371545328160243

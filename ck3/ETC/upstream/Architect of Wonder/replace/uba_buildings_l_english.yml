@@ -1,0 +1,10 @@
+﻿l_english:
+ building_type_kaifeng_palace_01: "$building_kaifeng_palace_01$"
+ building_type_kaifeng_palace_01_desc: "$building_kaifeng_palace_01_desc$"
+ building_kaifeng_palace_01: "Imperial City"
+ building_kaifeng_palace_01_desc: "A strong and efficient government rule within these walls, ensuring that the city and the realm at large will prosper."
+
+ building_type_forbidden_city_01: "The Forbidden City"
+ building_type_forbidden_city_01_desc: "The Forbidden City is a vast imperial palace, consisting of almost a thousand separate buildings. The entire compound is surrounded by a high wall and a deep moat, protecting the ruling government and the many officials working tirelessly within."
+ building_forbidden_city_01: "Outer Court"
+ building_forbidden_city_01_desc: "$building_type_forbidden_city_01_desc$\n\nThe Golden Hall is the magnificent and solemn center of imperial ceremony, the core area where the Emperor holds major ceremonies such as enthronements and investitures, summons civil and military officials for court, and promulgates decrees."
