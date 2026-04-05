@@ -108,11 +108,7 @@ function getExpectedInitialConsonantsForLatin(char: string): string[] {
   return map[lower] || []
 }
 
-function isSuspiciousShortDynastyTranslation(key: string, sourceValue: string, translatedValue: string): boolean {
-  if (!/^dynnp?_/.test(key.toLowerCase())) {
-    return false
-  }
-
+function isSuspiciousShortTransliterationResult(sourceValue: string, translatedValue: string): boolean {
   const trimmedSource = sourceValue.trim()
   const trimmedTranslated = translatedValue.trim()
 
@@ -693,7 +689,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           })
         }
 
-        if (item.shouldTransliterate && isSuspiciousShortDynastyTranslation(item.key, item.sourceValue, translatedValue)) {
+        if (item.shouldTransliterate && isSuspiciousShortTransliterationResult(item.sourceValue, translatedValue)) {
           try {
             const retried = await translate(
               item.sourceValue,
@@ -701,17 +697,17 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
               0,
               {
                 previousTranslation: translatedValue,
-                failureReason: '왕조명 음역 컨텍스트에서 의미 번역 가능성이 감지되었습니다. 사전적 의미 번역을 피하고 발음 기반 음역으로만 번역하세요.'
+                failureReason: '음역 컨텍스트에서 의미 번역 가능성이 감지되었습니다. 사전적 의미 번역을 피하고 발음 기반 음역으로만 번역하세요.'
               },
               true
             )
 
             if (retried !== translatedValue) {
-              log.info(`[${mode}/${file}:${item.key}] 짧은 왕조명 의심 항목 재번역 적용: "${translatedValue}" -> "${retried}"`)
+              log.info(`[${mode}/${file}:${item.key}] 짧은 음역 의심 항목 재번역 적용: "${translatedValue}" -> "${retried}"`)
               translatedValue = retried
             }
           } catch (error) {
-            log.warn(`[${mode}/${file}:${item.key}] 짧은 왕조명 의심 항목 재번역 실패: ${String(error)}`)
+            log.warn(`[${mode}/${file}:${item.key}] 짧은 음역 의심 항목 재번역 실패: ${String(error)}`)
           }
         }
 
