@@ -5,7 +5,7 @@ import { basename, dirname, join } from 'pathe'
 import { parseToml, parseYaml, stringifyYaml } from '../parser'
 import { hashing } from '../utils/hashing'
 import { log } from '../utils/logger'
-import { translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
+import { translate, translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
 import { updateAllUpstreams } from '../utils/upstream'
 import { getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
@@ -55,6 +55,91 @@ function getTranslateBatchSize (): number {
   }
 
   return parsed
+}
+
+function countHangulSyllables(text: string): number {
+  return (text.match(/[가-힣]/g) || []).length
+}
+
+function getHangulInitialConsonant(char: string): string | null {
+  if (!/^[가-힣]$/.test(char)) {
+    return null
+  }
+
+  const CHOSEONG = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
+  const HANGUL_BASE = 0xAC00
+  const CHOSEONG_INTERVAL = 588
+  const code = char.charCodeAt(0) - HANGUL_BASE
+  const choIndex = Math.floor(code / CHOSEONG_INTERVAL)
+  return CHOSEONG[choIndex] || null
+}
+
+function getExpectedInitialConsonantsForLatin(char: string): string[] {
+  const lower = char.toLowerCase()
+  const map: Record<string, string[]> = {
+    a: ['ㅇ'],
+    b: ['ㅂ', 'ㅍ'],
+    c: ['ㅋ', 'ㅅ', 'ㅊ'],
+    d: ['ㄷ', 'ㅌ'],
+    e: ['ㅇ'],
+    f: ['ㅍ'],
+    g: ['ㄱ', 'ㅋ'],
+    h: ['ㅎ'],
+    i: ['ㅇ'],
+    j: ['ㅈ', 'ㅊ'],
+    k: ['ㅋ', 'ㄱ'],
+    l: ['ㄹ'],
+    m: ['ㅁ'],
+    n: ['ㄴ'],
+    o: ['ㅇ'],
+    p: ['ㅍ', 'ㅂ'],
+    q: ['ㅋ'],
+    r: ['ㄹ'],
+    s: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ'],
+    t: ['ㅌ', 'ㄷ'],
+    u: ['ㅇ'],
+    v: ['ㅂ', 'ㅍ'],
+    w: ['ㅇ', 'ㅂ'],
+    x: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ', 'ㅋ'],
+    y: ['ㅇ'],
+    z: ['ㅈ', 'ㅅ']
+  }
+
+  return map[lower] || []
+}
+
+function isSuspiciousShortDynastyTranslation(key: string, sourceValue: string, translatedValue: string): boolean {
+  if (!/^dynnp?_/.test(key.toLowerCase())) {
+    return false
+  }
+
+  const trimmedSource = sourceValue.trim()
+  const trimmedTranslated = translatedValue.trim()
+
+  if (!/^[A-Za-z]{3,6}$/.test(trimmedSource)) {
+    return false
+  }
+
+  if (!/^[가-힣]+$/.test(trimmedTranslated)) {
+    return false
+  }
+
+  const hangulLength = countHangulSyllables(trimmedTranslated)
+  if (hangulLength < 1 || hangulLength > 2) {
+    return false
+  }
+
+  const expectedInitials = getExpectedInitialConsonantsForLatin(trimmedSource[0])
+  if (expectedInitials.length === 0) {
+    return false
+  }
+
+  const actualInitial = getHangulInitialConsonant(trimmedTranslated[0])
+  if (!actualInitial) {
+    return false
+  }
+
+  return !expectedInitials.includes(actualInitial)
 }
 
 /**
@@ -584,7 +669,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     const transliterationItems = translationItems.filter(item => item.shouldTransliterate)
     const normalItems = translationItems.filter(item => !item.shouldTransliterate)
 
-    const applyResults = (items: typeof translationItems, results: Awaited<ReturnType<typeof translateBulk>>) => {
+    const applyResults = async (items: typeof translationItems, results: Awaited<ReturnType<typeof translateBulk>>) => {
       for (const [index, item] of items.entries()) {
         const result = results[index]
         let hashForEntry: string | null = item.sourceHash
@@ -608,6 +693,28 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           })
         }
 
+        if (item.shouldTransliterate && isSuspiciousShortDynastyTranslation(item.key, item.sourceValue, translatedValue)) {
+          try {
+            const retried = await translate(
+              item.sourceValue,
+              gameType,
+              0,
+              {
+                previousTranslation: translatedValue,
+                failureReason: '왕조명 음역 컨텍스트에서 의미 번역 가능성이 감지되었습니다. 사전적 의미 번역을 피하고 발음 기반 음역으로만 번역하세요.'
+              },
+              true
+            )
+
+            if (retried !== translatedValue) {
+              log.info(`[${mode}/${file}:${item.key}] 짧은 왕조명 의심 항목 재번역 적용: "${translatedValue}" -> "${retried}"`)
+              translatedValue = retried
+            }
+          } catch (error) {
+            log.warn(`[${mode}/${file}:${item.key}] 짧은 왕조명 의심 항목 재번역 실패: ${String(error)}`)
+          }
+        }
+
         newYaml.l_korean[item.key] = [translatedValue, hashForEntry]
         hasUnsavedChanges = true
         processedCount++
@@ -621,7 +728,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
 
       try {
         const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration, { modName: logModName })
-        applyResults(items, results)
+        await applyResults(items, results)
       } catch (error) {
         const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
         log.warn(`[${mode}/${file}] ${modeLabel} 처리 중 오류 발생, 해당 모드는 원문 유지 후 다음 모드로 진행합니다.`)
