@@ -445,6 +445,16 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
     .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
 }
 
+function pickLatestCommit(commits: GitHubCommit[]): GitHubCommit | null {
+  if (commits.length === 0) return null
+
+  return commits.sort((a, b) => {
+    const dateA = new Date(a.commit.committer?.date ?? 0).getTime() || 0
+    const dateB = new Date(b.commit.committer?.date ?? 0).getTime() || 0
+    return dateB - dateA
+  })[0]
+}
+
 async function fetchLatestCommitForPaths(
   owner: string,
   repo: string,
@@ -468,13 +478,7 @@ async function fetchLatestCommitForPaths(
     .map(list => list[0])
     .filter((c): c is GitHubCommit => c != null)
 
-  if (commits.length === 0) return null
-
-  return commits.sort((a, b) => {
-    const dateA = new Date(a.commit.committer?.date ?? '').getTime()
-    const dateB = new Date(b.commit.committer?.date ?? '').getTime()
-    return dateB - dateA
-  })[0]
+  return pickLatestCommit(commits)
 }
 
 async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: string): Promise<DashboardRow> {
@@ -486,7 +490,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
 
-  const hasLocalizationPaths = !useTagTracking && meta.upstreamLocalization.length > 0
+  const hasLocalizationPaths = meta.strategy === 'default' && meta.upstreamLocalization.length > 0
   const latestCommit = hasLocalizationPaths
     ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, meta.upstreamLocalization, token)
     : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
@@ -636,10 +640,12 @@ export {
   findBaselineTag,
   filterTagsByStrategy,
   parseGitHubUrl,
+  pickLatestCommit,
   pickLatestTag
 }
 
 export type {
+  GitHubCommit,
   TagInfo,
   TranslationCommit
 }

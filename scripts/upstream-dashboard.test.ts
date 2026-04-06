@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest'
 import {
   filterTagsByStrategy,
   findBaselineTag,
+  pickLatestCommit,
   pickLatestTag,
+  type GitHubCommit,
   type TagInfo,
   type TranslationCommit
 } from './upstream-dashboard'
@@ -66,5 +68,41 @@ describe('findBaselineTag', () => {
     }
 
     expect(findBaselineTag(tags, translationCommit)?.name).toBe('v1.1.0')
+  })
+})
+
+describe('pickLatestCommit', () => {
+  it('여러 커밋 중 가장 최신 날짜의 커밋을 선택해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-01-01T00:00:00Z' } } },
+      { sha: 'bbb2222', commit: { committer: { date: '2024-03-01T00:00:00Z' } } },
+      { sha: 'ccc3333', commit: { committer: { date: '2024-02-01T00:00:00Z' } } }
+    ]
+
+    const result = pickLatestCommit(commits)
+    expect(result?.sha).toBe('bbb2222')
+  })
+
+  it('빈 배열이면 null을 반환해야 한다', () => {
+    expect(pickLatestCommit([])).toBeNull()
+  })
+
+  it('커밋 날짜가 없으면 0으로 폴백하여 비결정적 정렬을 방지해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-06-01T00:00:00Z' } } },
+      { sha: 'bbb2222', commit: { committer: {} } },
+      { sha: 'ccc3333', commit: {} }
+    ]
+
+    const result = pickLatestCommit(commits)
+    expect(result?.sha).toBe('aaa1111')
+  })
+
+  it('커밋이 하나만 있으면 해당 커밋을 반환해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-01-01T00:00:00Z' } } }
+    ]
+
+    expect(pickLatestCommit(commits)?.sha).toBe('aaa1111')
   })
 })
