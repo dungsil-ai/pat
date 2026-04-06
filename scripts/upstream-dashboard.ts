@@ -445,14 +445,17 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
     .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
 }
 
+function parseCommitDate(commit: GitHubCommit): number {
+  const dateStr = commit.commit.committer?.date
+  if (!dateStr) return 0
+  const ms = new Date(dateStr).getTime()
+  return Number.isNaN(ms) ? 0 : ms
+}
+
 function pickLatestCommit(commits: GitHubCommit[]): GitHubCommit | null {
   if (commits.length === 0) return null
 
-  return commits.sort((a, b) => {
-    const dateA = new Date(a.commit.committer?.date ?? 0).getTime() || 0
-    const dateB = new Date(b.commit.committer?.date ?? 0).getTime() || 0
-    return dateB - dateA
-  })[0]
+  return commits.sort((a, b) => parseCommitDate(b) - parseCommitDate(a))[0]
 }
 
 async function fetchLatestCommitForPaths(

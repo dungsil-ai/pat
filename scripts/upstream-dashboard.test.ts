@@ -87,11 +87,12 @@ describe('pickLatestCommit', () => {
     expect(pickLatestCommit([])).toBeNull()
   })
 
-  it('커밋 날짜가 없으면 0으로 폴백하여 비결정적 정렬을 방지해야 한다', () => {
+  it('커밋 날짜가 없거나 빈 문자열이면 0으로 폴백하여 비결정적 정렬을 방지해야 한다', () => {
     const commits: GitHubCommit[] = [
       { sha: 'aaa1111', commit: { committer: { date: '2024-06-01T00:00:00Z' } } },
       { sha: 'bbb2222', commit: { committer: {} } },
-      { sha: 'ccc3333', commit: {} }
+      { sha: 'ccc3333', commit: {} },
+      { sha: 'ddd4444', commit: { committer: { date: '' } } }
     ]
 
     const result = pickLatestCommit(commits)
