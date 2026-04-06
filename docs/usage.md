@@ -230,7 +230,7 @@ git push origin main
   - 12시간마다 스케줄 실행 + 수동 `workflow_dispatch` 지원
   - `pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md` 로 대시보드 본문 생성 (GitHub API/GraphQL 호출 시 `GITHUB_TOKEN` 필요)
 - 결과: 제목 `[대시보드] 업스트림 변경 대비 번역 미반영 현황`, 라벨 `upstream-dashboard` 인 오픈 이슈를 생성/업데이트
-- 표 컬럼: 게임/모드, 추적 기준(`version_strategy`), tag/commit 추적 방식, 번역 기준 버전, 최신 버전, 비교 링크, 상태(미반영/최신/번역 이력 없음/조회 실패)
+- 표 컬럼: 게임/모드, 추적 기준(`version_strategy`), tag/commit 추적 방식, 번역 기준 버전, 최신 버전, 상태(미반영/최신/번역 이력 없음/조회 실패) — compare 링크는 `번역 기준 버전`/`최신 버전` 텍스트에 포함
 - annotated 태그도 커밋까지 추적하여 최신 태그 비교 정확도를 높임
 
 ## 명령어 설명
