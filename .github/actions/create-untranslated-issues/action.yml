@@ -24,4 +24,5 @@ runs:
       env:
         INPUT_GAME: ${{ inputs.game }}
         INPUT_GITHUB_TOKEN: ${{ inputs.github-token }}
+        NODE_OPTIONS: --preserve-symlinks
       run: node ${{ github.action_path }}/index.js
