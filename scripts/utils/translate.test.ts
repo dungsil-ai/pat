@@ -460,6 +460,29 @@ describe('캐시 재사용 (동일 소스 텍스트)', () => {
     expect(hasCache).toHaveBeenNthCalledWith(1, 'Anglo-Saxon', 'ck3') // 번역 모드
     expect(hasCache).toHaveBeenNthCalledWith(2, 'transliteration:Anglo-Saxon', 'ck3') // 음역 모드
   })
+
+  it('재번역 컨텍스트가 있으면 캐시를 우회하고 제거한 뒤 새 번역을 요청해야 함', async () => {
+    const { translate } = await import('./translate')
+    const { translateAI } = await import('./ai')
+    const { hasCache, getCache, removeCache, setCache } = await import('./cache')
+
+    vi.mocked(hasCache).mockResolvedValueOnce(true)
+
+    const result = await translate(
+      'Afar',
+      'ck3',
+      0,
+      { previousTranslation: '[잘못된 번역]', failureReason: '테스트 재번역' },
+      true,
+      true
+    )
+
+    expect(removeCache).toHaveBeenCalledWith('transliteration:Afar', 'ck3')
+    expect(getCache).not.toHaveBeenCalled()
+    expect(translateAI).toHaveBeenCalledTimes(1)
+    expect(result).toBe('[번역됨]Afar')
+    expect(setCache).toHaveBeenCalledWith('transliteration:Afar', '[번역됨]Afar', 'ck3')
+  })
 })
 
 describe('TranslationRefusedError 처리', () => {

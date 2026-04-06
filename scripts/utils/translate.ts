@@ -186,7 +186,7 @@ function sanitizeTranslationText (text: string): string {
   return text.replace(addSpaceAfterClosingVariable, '$1 ')
 }
 
-export async function translate (text: string, gameType: GameType = 'ck3', retry: number = 0, retranslationContext?: RetranslationContext, useTransliteration: boolean = false): Promise<string> {
+export async function translate (text: string, gameType: GameType = 'ck3', retry: number = 0, retranslationContext?: RetranslationContext, useTransliteration: boolean = false, bypassCache: boolean = false): Promise<string> {
 
   if (retry > 5) {
     log.debug(`번역 재시도 횟수 초과: "${text}" (사유: ${retranslationContext?.failureReason || '알 수 없음'})`)
@@ -223,8 +223,9 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
     return normalizedText
   }
 
-  // 단어 사전에 있는 경우 캐시에 저장하고 반환
-  if (hasDictionary(normalizedText, gameType)) {
+  // 음역 모드에서는 단어 사전 응답을 사용하지 않음
+  // 고유명사 컨텍스트에서 의미 번역으로 고착되는 문제를 방지하기 위함
+  if (!useTransliteration && hasDictionary(normalizedText, gameType)) {
     const dictText = sanitizeTranslationText(getDictionary(normalizedText, gameType)!)
     log.debug(`단어 사전에서 번역된 텍스트 반환: ${normalizedText} -> ${dictText}`)
 
@@ -238,8 +239,13 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
   // - 음역: "gameType:transliteration:text" (예: "ck3:transliteration:Afar")
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const cacheKey = `${transliterationPrefix}${normalizedText}`
+  const shouldBypassCache = bypassCache || Boolean(retranslationContext)
   
-  if (await hasCache(cacheKey, gameType)) {
+  if (shouldBypassCache) {
+    if (await hasCache(cacheKey, gameType)) {
+      await removeCache(cacheKey, gameType)
+    }
+  } else if (await hasCache(cacheKey, gameType)) {
     const cached = await getCache(cacheKey, gameType)
 
     if (cached) {
@@ -283,7 +289,7 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
       previousTranslation: translatedText,
       failureReason: 'It appears that a meta-response was returned without performing the translation.'
     }
-    return await translate(text, gameType, retry + 1, newContext, useTransliteration)
+    return await translate(text, gameType, retry + 1, newContext, useTransliteration, shouldBypassCache)
   }
 
   // 번역 유효성 검증 (translation-validator.ts의 통합 로직 사용)
@@ -295,7 +301,7 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
       previousTranslation: translatedText,
       failureReason: validation.reason || 'Validation failed - The translation failed validation. Please ensure you follow all guidelines in the system instruction, especially regarding variable preservation, technical identifiers, and formatting rules.'
     }
-    return await translate(text, gameType, retry + 1, newContext, useTransliteration)
+    return await translate(text, gameType, retry + 1, newContext, useTransliteration, shouldBypassCache)
   }
 
   await setCache(cacheKey, translatedText, gameType)
@@ -343,7 +349,7 @@ export async function translateBulk (
       continue
     }
 
-    if (hasDictionary(normalizedText, gameType)) {
+    if (!useTransliteration && hasDictionary(normalizedText, gameType)) {
       const dictionaryTranslatedText = sanitizeTranslationText(getDictionary(normalizedText, gameType)!)
       results[index] = { translatedText: dictionaryTranslatedText }
       log.info(`${modLogPrefix}[벌크/${index}] 사전 응답 사용: ${normalizedText} -> ${dictionaryTranslatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
