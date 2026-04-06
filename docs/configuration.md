@@ -349,7 +349,7 @@ pnpm ck3
 
 **필수:** 아니오
 
-**기본값:** `gemini-2.0-flash` (코드 기본값), `.env.sample` 권장값: `gemini-flash-lite-latest`
+**기본값:** `gemini-flash-lite-latest`
 
 **설명:** 사용할 Gemini 모델 ID를 지정합니다.
 

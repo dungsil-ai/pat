@@ -56,7 +56,7 @@ GEMINI_MODEL=gemini-flash-lite-latest
 - `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 10)
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
 - `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
-- `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-2.0-flash`) 사용
+- `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-flash-lite-latest`) 사용
 - `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
 
 ## 기본 사용법
@@ -233,6 +233,17 @@ git push origin main
 - 모든 번역 워크플로우는 `translation` concurrency group 사용
 - 사전 무효화 워크플로우와 일반 번역 워크플로우가 동시에 실행되지 않음
 - 순차적 실행으로 데이터베이스 및 파일 충돌 방지
+
+### 업스트림 번역 미반영 대시보드
+
+업스트림 저장소 변경분이 번역에 반영되지 않은 모드를 자동으로 모니터링합니다.
+
+- 워크플로우: `.github/workflows/upstream-translation-dashboard.yml`
+  - 12시간마다 스케줄 실행 + 수동 `workflow_dispatch` 지원
+  - `pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md` 로 대시보드 본문 생성 (GitHub API/GraphQL 호출 시 `GITHUB_TOKEN` 필요)
+- 결과: 제목 `[대시보드] 업스트림 변경 대비 번역 미반영 현황`, 라벨 `upstream-dashboard` 인 오픈 이슈를 생성/업데이트
+- 표 컬럼: 게임/모드, 추적 기준(`version_strategy`), tag/commit 추적 방식, 번역 기준 버전, 최신 버전, 상태(미반영/최신/번역 이력 없음/조회 실패) — compare 링크는 `번역 기준 버전`/`최신 버전` 텍스트에 포함
+- annotated 태그도 커밋까지 추적하여 최신 태그 비교 정확도를 높임
 
 ## 명령어 설명
 
