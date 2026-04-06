@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   filterTagsByStrategy,
   findBaselineTag,
+  normalizeLocalizationPaths,
   pickLatestCommit,
   pickLatestTag,
   type GitHubCommit,
@@ -105,5 +106,33 @@ describe('pickLatestCommit', () => {
     ]
 
     expect(pickLatestCommit(commits)?.sha).toBe('aaa1111')
+  })
+})
+
+describe('normalizeLocalizationPaths', () => {
+  it('"." 경로가 포함되면 빈 배열을 반환하여 경로 필터링을 비활성화해야 한다', () => {
+    expect(normalizeLocalizationPaths(['.'])).toEqual([])
+    expect(normalizeLocalizationPaths(['.', 'localization/english'])).toEqual([])
+  })
+
+  it('공백 문자열과 빈 문자열을 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['', '  ', 'localization/english'])).toEqual(['localization/english'])
+  })
+
+  it('경로 앞뒤 공백을 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['  localization/english  '])).toEqual(['localization/english'])
+  })
+
+  it('중복 경로를 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['localization/english', 'localization/english'])).toEqual(['localization/english'])
+  })
+
+  it('빈 배열이면 빈 배열을 반환해야 한다', () => {
+    expect(normalizeLocalizationPaths([])).toEqual([])
+  })
+
+  it('유효한 경로만 있으면 그대로 반환해야 한다', () => {
+    expect(normalizeLocalizationPaths(['localization/english', 'localization/replace/english']))
+      .toEqual(['localization/english', 'localization/replace/english'])
   })
 })

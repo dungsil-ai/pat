@@ -445,6 +445,12 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
     .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
 }
 
+function normalizeLocalizationPaths(paths: string[]): string[] {
+  const trimmed = paths.map(p => p.trim()).filter(p => p.length > 0)
+  if (trimmed.some(p => p === '.')) return []
+  return [...new Set(trimmed)]
+}
+
 function parseCommitDate(commit: GitHubCommit): number {
   const dateStr = commit.commit.committer?.date
   if (!dateStr) return 0
@@ -495,9 +501,10 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
 
-  const hasLocalizationPaths = meta.strategy === 'default' && meta.upstreamLocalization.length > 0
+  const hasLocalizationPaths = meta.strategy === 'default' && normalizeLocalizationPaths(meta.upstreamLocalization).length > 0
+  const localizationPaths = hasLocalizationPaths ? normalizeLocalizationPaths(meta.upstreamLocalization) : []
   const latestCommit = hasLocalizationPaths
-    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, meta.upstreamLocalization, token)
+    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token)
     : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
 
   if (!lastTranslation) {
@@ -542,7 +549,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   }
 
   const baselineCommit = hasLocalizationPaths
-    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, meta.upstreamLocalization, token, lastTranslation.committedAt)
+    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token, lastTranslation.committedAt)
     : (await githubApi<GitHubCommit[]>(
         `/repos/${meta.owner}/${meta.repo}/commits?sha=${repoInfo.default_branch}&until=${encodeURIComponent(lastTranslation.committedAt)}&per_page=1`,
         token
@@ -644,6 +651,7 @@ export {
   fetchLatestCommitForPaths,
   findBaselineTag,
   filterTagsByStrategy,
+  normalizeLocalizationPaths,
   parseGitHubUrl,
   pickLatestCommit,
   pickLatestTag
