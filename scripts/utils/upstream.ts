@@ -21,7 +21,7 @@ import { reportVersionStrategyError } from './version-strategy-reporter'
 const execAsync = promisify(exec)
 const execFileAsync = promisify(execFile)
 
-export type VersionStrategy = 'semantic' | 'natural' | 'default'
+export type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
 export class VersionStrategyError extends Error {
   constructor(
@@ -128,7 +128,7 @@ export async function parseMetaTomlConfig(metaPath: string, gameDir: string, mod
     
     // version_strategy 유효성 검사
     if (config.upstream?.version_strategy) {
-      const validStrategies: VersionStrategy[] = ['semantic', 'natural', 'default']
+      const validStrategies: VersionStrategy[] = ['semantic', 'natural', 'default', 'github']
       if (!validStrategies.includes(config.upstream.version_strategy)) {
         const error = new VersionStrategyError(
           `유효하지 않은 version_strategy: ${config.upstream.version_strategy}`,
@@ -276,6 +276,28 @@ export async function getLatestReleaseFromGitHub(owner: string, repo: string, co
 }
 
 /**
+ * GitHub Releases의 최신 태그를 기준으로 버전을 선택합니다.
+ */
+async function getGitHubReleaseVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
+  const githubInfo = parseGitHubUrl(repoUrl)
+  if (!githubInfo) {
+    throw new VersionStrategyError(`GitHub 릴리스 전략은 GitHub 저장소만 지원합니다: ${repoUrl}`, configPath)
+  }
+
+  return await upstreamRetry(
+    async () => {
+      const latestReleaseTag = await getLatestReleaseFromGitHub(githubInfo.owner, githubInfo.repo, configPath)
+      if (!latestReleaseTag) {
+        throw new Error('GitHub 릴리스 태그를 찾을 수 없음')
+      }
+
+      return { type: 'tag', name: latestReleaseTag }
+    },
+    `${configPath}-github-release`
+  )
+}
+
+/**
  * 버전 전략에 따라 원격 리포지토리의 최신 참조를 가져옵니다.
  * 
  * @param repoUrl Git 저장소 URL
@@ -299,6 +321,8 @@ export async function getLatestRefFromRemote(
       return await getNaturalVersion(repoUrl, configPath)
     case 'default':
       return await getDefaultBranch(repoUrl, configPath)
+    case 'github':
+      return await getGitHubReleaseVersion(repoUrl, configPath)
   }
 }
 

@@ -200,10 +200,10 @@ ck3/LocalMod/
 ### `upstream.version_strategy` (선택사항)
 
 **타입:** String  
-**값:** `"semantic"` | `"natural"` | `"default"`  
+**값:** `"semantic"` | `"natural"` | `"github"` | `"default"`  
 **기본값:** `"default"`  
 
-**설명:** 버전 선택 전략을 지정합니다.
+**설명:** 버전 선택 전략을 지정합니다. `github`는 GitHub Releases의 최신 태그를 그대로 사용합니다.
 
 ### Replace 폴더 처리
 

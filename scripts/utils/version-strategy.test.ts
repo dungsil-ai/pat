@@ -33,9 +33,10 @@ describe('VersionStrategy 기능', () => {
 
   describe('VersionStrategy 타입', () => {
     it('유효한 VersionStrategy 타입', () => {
-      const validStrategies: string[] = ['semantic', 'natural', 'default']
+      const validStrategies: string[] = ['semantic', 'natural', 'github', 'default']
       expect(validStrategies).toContain('semantic')
       expect(validStrategies).toContain('natural')
+      expect(validStrategies).toContain('github')
       expect(validStrategies).toContain('default')
     })
   })
