@@ -28,6 +28,7 @@ interface ModMeta {
   repo: string
   strategy: VersionStrategy
   translationPath: string
+  upstreamLocalization: string[]
 }
 
 interface TranslationCommit {
@@ -42,7 +43,7 @@ interface DashboardRow {
   trackedBy: 'tag' | 'commit'
   baselineVersion: string
   latestVersion: string
-  status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패'
+  status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패' | '경로 커밋 없음'
   compareUrl?: string
 }
 
@@ -154,7 +155,8 @@ async function findModMetas(rootDir: string): Promise<ModMeta[]> {
         owner: repo.owner,
         repo: repo.repo,
         strategy: config.upstream?.version_strategy ?? 'default',
-        translationPath: await resolveTranslationPath(rootDir, game, modEntry.name)
+        translationPath: await resolveTranslationPath(rootDir, game, modEntry.name),
+        upstreamLocalization: config.upstream?.localization ?? []
       })
     }
   }
@@ -443,15 +445,67 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
     .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
 }
 
+function normalizeLocalizationPaths(paths: string[]): string[] {
+  const trimmed = paths.map(p => p.trim()).filter(p => p.length > 0)
+  if (trimmed.some(p => p === '.')) return []
+  return [...new Set(trimmed)]
+}
+
+function parseCommitDate(commit: GitHubCommit): number {
+  const dateStr = commit.commit.committer?.date
+  if (!dateStr) return 0
+  const ms = new Date(dateStr).getTime()
+  return Number.isNaN(ms) ? 0 : ms
+}
+
+function pickLatestCommit(commits: GitHubCommit[]): GitHubCommit | null {
+  if (commits.length === 0) return null
+
+  return commits.reduce((latest, commit) => {
+    return parseCommitDate(commit) > parseCommitDate(latest) ? commit : latest
+  })
+}
+
+async function fetchLatestCommitForPaths(
+  owner: string,
+  repo: string,
+  branch: string,
+  paths: string[],
+  token?: string,
+  until?: string
+): Promise<GitHubCommit | null> {
+  const uniquePaths = [...new Set(paths)]
+  const commits: GitHubCommit[] = []
+
+  for (const path of uniquePaths) {
+    const params = new URLSearchParams({ sha: branch, path, per_page: '1' })
+    if (until) params.set('until', until)
+
+    const commitList = await githubApi<GitHubCommit[]>(
+      `/repos/${owner}/${repo}/commits?${params.toString()}`,
+      token
+    )
+
+    const commit = commitList[0]
+    if (commit) commits.push(commit)
+  }
+  return pickLatestCommit(commits)
+}
+
 async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: string): Promise<DashboardRow> {
   const lastTranslation = await getLastTranslationCommit(rootDir, meta.translationPath)
   const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
-  const latestCommit = await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
   const preferTagTracking = meta.strategy !== 'default'
   const tags = preferTagTracking ? await fetchRepositoryTags(meta.owner, meta.repo, token) : []
   const filteredTags = preferTagTracking ? filterTagsByStrategy(tags, meta.strategy) : []
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
+
+  const localizationPaths = meta.strategy === 'default' ? normalizeLocalizationPaths(meta.upstreamLocalization) : []
+  const hasLocalizationPaths = localizationPaths.length > 0
+  const latestCommit = hasLocalizationPaths
+    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token)
+    : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
 
   if (!lastTranslation) {
     if (useTagTracking && latestTag) {
@@ -472,7 +526,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: '번역 이력 없음',
-      latestVersion: latestCommit.sha.slice(0, 7),
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
       status: '번역 이력 없음'
     }
   }
@@ -494,21 +548,46 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
     }
   }
 
-  const baselineCommitList = await githubApi<GitHubCommit[]>(
-    `/repos/${meta.owner}/${meta.repo}/commits?sha=${repoInfo.default_branch}&until=${encodeURIComponent(lastTranslation.committedAt)}&per_page=1`,
-    token
-  )
-  const baselineCommit = baselineCommitList[0]
+  const baselineCommit = hasLocalizationPaths
+    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token, lastTranslation.committedAt)
+    : (await githubApi<GitHubCommit[]>(
+        `/repos/${meta.owner}/${meta.repo}/commits?sha=${repoInfo.default_branch}&until=${encodeURIComponent(lastTranslation.committedAt)}&per_page=1`,
+        token
+      ))[0]
 
-  if (!baselineCommit) {
+  if (hasLocalizationPaths && !latestCommit) {
     return {
       game: meta.game,
       mod: meta.mod,
       strategy: meta.strategy,
       trackedBy: 'commit',
-      baselineVersion: '기준 커밋 없음',
+      baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
+      latestVersion: '경로 커밋 없음',
+      status: '경로 커밋 없음'
+    }
+  }
+
+  if (hasLocalizationPaths && !baselineCommit && latestCommit) {
+    return {
+      game: meta.game,
+      mod: meta.mod,
+      strategy: meta.strategy,
+      trackedBy: 'commit',
+      baselineVersion: '번역 이전 경로 커밋 없음',
       latestVersion: latestCommit.sha.slice(0, 7),
       status: '미반영'
+    }
+  }
+
+  if (!baselineCommit || !latestCommit) {
+    return {
+      game: meta.game,
+      mod: meta.mod,
+      strategy: meta.strategy,
+      trackedBy: 'commit',
+      baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '기준 커밋 조회 실패',
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? '최신 커밋 조회 실패',
+      status: '조회 실패'
     }
   }
 
@@ -532,6 +611,7 @@ function buildIssueBody(rows: DashboardRow[]): string {
   const timestamp = new Date().toISOString()
   const outdatedRows = rows.filter(row => row.status === '미반영')
   const failedRows = rows.filter(row => row.status === '조회 실패')
+  const noPathCommitRows = rows.filter(row => row.status === '경로 커밋 없음')
 
   const lines: string[] = []
   lines.push('# 업스트림 변경 대비 번역 미반영 대시보드')
@@ -541,6 +621,9 @@ function buildIssueBody(rows: DashboardRow[]): string {
   lines.push(`- 확인 대상 모드 수: ${rows.length}`)
   if (failedRows.length > 0) {
     lines.push(`- 조회 실패 모드 수(집계 제외): ${failedRows.length}`)
+  }
+  if (noPathCommitRows.length > 0) {
+    lines.push(`- 경로 커밋 없음 모드 수(집계 제외): ${noPathCommitRows.length}`)
   }
   lines.push('')
   lines.push('| 게임 | 모드 | 버전 기준 | 추적 방식 | 번역 기준 버전 | 최신 버전 | 상태 |')
@@ -553,7 +636,7 @@ function buildIssueBody(rows: DashboardRow[]): string {
   }
 
   lines.push('')
-  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하며(유효한 태그가 없으면 커밋으로 폴백), 그 외에는 기본 브랜치 커밋 ID로 비교합니다. git 저장소가 아닌 upstream은 제외합니다.')
+  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하며(유효한 태그가 없으면 커밋으로 폴백), 그 외에는 현지화 파일을 변경한 커밋 기준으로 비교합니다(`upstream.localization` 경로가 없으면 기본 브랜치 전체 커밋으로 폴백). git 저장소가 아닌 upstream은 제외합니다.')
 
   return `${lines.join('\n')}\n`
 }
@@ -593,13 +676,17 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 }
 
 export {
+  fetchLatestCommitForPaths,
   findBaselineTag,
   filterTagsByStrategy,
+  normalizeLocalizationPaths,
   parseGitHubUrl,
+  pickLatestCommit,
   pickLatestTag
 }
 
 export type {
+  GitHubCommit,
   TagInfo,
   TranslationCommit
 }

@@ -2,7 +2,10 @@ import { describe, expect, it } from 'vitest'
 import {
   filterTagsByStrategy,
   findBaselineTag,
+  normalizeLocalizationPaths,
+  pickLatestCommit,
   pickLatestTag,
+  type GitHubCommit,
   type TagInfo,
   type TranslationCommit
 } from './upstream-dashboard'
@@ -66,5 +69,70 @@ describe('findBaselineTag', () => {
     }
 
     expect(findBaselineTag(tags, translationCommit)?.name).toBe('v1.1.0')
+  })
+})
+
+describe('pickLatestCommit', () => {
+  it('여러 커밋 중 가장 최신 날짜의 커밋을 선택해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-01-01T00:00:00Z' } } },
+      { sha: 'bbb2222', commit: { committer: { date: '2024-03-01T00:00:00Z' } } },
+      { sha: 'ccc3333', commit: { committer: { date: '2024-02-01T00:00:00Z' } } }
+    ]
+
+    const result = pickLatestCommit(commits)
+    expect(result?.sha).toBe('bbb2222')
+  })
+
+  it('빈 배열이면 null을 반환해야 한다', () => {
+    expect(pickLatestCommit([])).toBeNull()
+  })
+
+  it('커밋 날짜가 없거나 빈 문자열이면 0으로 폴백하여 비결정적 정렬을 방지해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-06-01T00:00:00Z' } } },
+      { sha: 'bbb2222', commit: { committer: {} } },
+      { sha: 'ccc3333', commit: {} },
+      { sha: 'ddd4444', commit: { committer: { date: '' } } }
+    ]
+
+    const result = pickLatestCommit(commits)
+    expect(result?.sha).toBe('aaa1111')
+  })
+
+  it('커밋이 하나만 있으면 해당 커밋을 반환해야 한다', () => {
+    const commits: GitHubCommit[] = [
+      { sha: 'aaa1111', commit: { committer: { date: '2024-01-01T00:00:00Z' } } }
+    ]
+
+    expect(pickLatestCommit(commits)?.sha).toBe('aaa1111')
+  })
+})
+
+describe('normalizeLocalizationPaths', () => {
+  it('"." 경로가 포함되면 빈 배열을 반환하여 경로 필터링을 비활성화해야 한다', () => {
+    expect(normalizeLocalizationPaths(['.'])).toEqual([])
+    expect(normalizeLocalizationPaths(['.', 'localization/english'])).toEqual([])
+  })
+
+  it('공백 문자열과 빈 문자열을 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['', '  ', 'localization/english'])).toEqual(['localization/english'])
+  })
+
+  it('경로 앞뒤 공백을 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['  localization/english  '])).toEqual(['localization/english'])
+  })
+
+  it('중복 경로를 제거해야 한다', () => {
+    expect(normalizeLocalizationPaths(['localization/english', 'localization/english'])).toEqual(['localization/english'])
+  })
+
+  it('빈 배열이면 빈 배열을 반환해야 한다', () => {
+    expect(normalizeLocalizationPaths([])).toEqual([])
+  })
+
+  it('유효한 경로만 있으면 그대로 반환해야 한다', () => {
+    expect(normalizeLocalizationPaths(['localization/english', 'localization/replace/english']))
+      .toEqual(['localization/english', 'localization/replace/english'])
   })
 })
