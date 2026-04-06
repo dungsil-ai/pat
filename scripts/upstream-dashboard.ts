@@ -501,8 +501,8 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
 
-  const hasLocalizationPaths = meta.strategy === 'default' && normalizeLocalizationPaths(meta.upstreamLocalization).length > 0
-  const localizationPaths = hasLocalizationPaths ? normalizeLocalizationPaths(meta.upstreamLocalization) : []
+  const localizationPaths = meta.strategy === 'default' ? normalizeLocalizationPaths(meta.upstreamLocalization) : []
+  const hasLocalizationPaths = localizationPaths.length > 0
   const latestCommit = hasLocalizationPaths
     ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token)
     : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
