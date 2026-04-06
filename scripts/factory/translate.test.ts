@@ -32,7 +32,7 @@ vi.mock('../utils/translate', () => {
     }
   }
 
-  const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean) {
+  const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean, bypassCache?: boolean) {
     if (text.trim() === '') {
       return Promise.resolve(text)
     }
@@ -1244,6 +1244,140 @@ language = "english"
     expect(result.untranslatedItems.some(item => item.key === 'dynasty_name')).toBe(false)
 
     await rm(testDir, { recursive: true, force: true })
+  })
+
+  it('짧은 왕조명 의심 항목은 추가 음역 재번역을 시도해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk, translate } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'dynasty-retry-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    const sourceContent = `l_english:
+  dynn_Sing: "Sing"
+  dynn_Singa: "Singa"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'sea_dynasties_l_english.yml'), sourceContent, 'utf-8')
+
+    vi.mocked(translateBulk).mockResolvedValueOnce([
+      { translatedText: '노래' },
+      { translatedText: '싱가' }
+    ])
+    vi.mocked(translate).mockResolvedValueOnce('싱')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['dynasty-retry-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const outputPath = join(modDir, 'mod', 'localization', 'korean', '___sea_dynasties_l_korean.yml')
+    const outputContent = await readFile(outputPath, 'utf-8')
+    const outputYaml = parseYaml(outputContent)
+
+    expect(outputYaml.l_korean.dynn_Sing[0]).toBe('싱')
+    expect(outputYaml.l_korean.dynn_Singa[0]).toBe('싱가')
+    expect(vi.mocked(translate)).toHaveBeenCalledTimes(1)
+    expect(vi.mocked(translate)).toHaveBeenCalledWith(
+      'Sing',
+      'ck3',
+      0,
+      expect.objectContaining({
+        previousTranslation: '노래'
+      }),
+      true,
+      true
+    )
+  })
+
+  it('짧은 왕조명이라도 초성 규칙이 맞으면 추가 재번역을 시도하지 않아야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk, translate } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'dynasty-no-retry-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    const sourceContent = `l_english:
+  dynn_Sing: "Sing"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'sea_dynasties_l_english.yml'), sourceContent, 'utf-8')
+
+    vi.mocked(translateBulk).mockResolvedValueOnce([{ translatedText: '싱' }])
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['dynasty-no-retry-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(vi.mocked(translate)).not.toHaveBeenCalled()
+  })
+
+  it('왕조 키가 아니어도 음역 대상 키는 짧은 의미 번역 의심 시 재번역을 시도해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk, translate } = await import('../utils/translate')
+
+    const modDir = join(testDir, 'general-transliteration-retry-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    const sourceContent = `l_english:
+  culture_name: "Sing"
+  normal_desc: "Normal Description"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'events_l_english.yml'), sourceContent, 'utf-8')
+
+    vi.mocked(translateBulk)
+      .mockResolvedValueOnce([{ translatedText: '[KO]Normal Description' }])
+      .mockResolvedValueOnce([{ translatedText: '노래' }])
+    vi.mocked(translate).mockResolvedValueOnce('싱')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['general-transliteration-retry-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const outputPath = join(modDir, 'mod', 'localization', 'korean', '___events_l_korean.yml')
+    const outputContent = await readFile(outputPath, 'utf-8')
+    const outputYaml = parseYaml(outputContent)
+
+    expect(outputYaml.l_korean.culture_name[0]).toBe('싱')
+    expect(outputYaml.l_korean.normal_desc[0]).toBe('[KO]Normal Description')
+    expect(vi.mocked(translate)).toHaveBeenCalledTimes(1)
+    expect(vi.mocked(translate)).toHaveBeenCalledWith(
+      'Sing',
+      'ck3',
+      0,
+      expect.objectContaining({
+        previousTranslation: '노래'
+      }),
+      true,
+      true
+    )
   })
 
   it('중복되는 항목을 제거하고 고유한 항목만 JSON 파일에 저장해야 함', async () => {
