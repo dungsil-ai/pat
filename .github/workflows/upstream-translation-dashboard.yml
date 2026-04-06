@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 */12 * * *'
+  workflow_run:
+    workflows:
+      - "CK3 translate"
+      - "Stellaris translate"
+      - "VIC3 translate"
+    types:
+      - completed
 
 permissions:
   contents: read
