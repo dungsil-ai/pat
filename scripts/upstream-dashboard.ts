@@ -468,21 +468,21 @@ async function fetchLatestCommitForPaths(
   token?: string,
   until?: string
 ): Promise<GitHubCommit | null> {
-  const commitLists = await Promise.all(
-    paths.map(path => {
-      const params = new URLSearchParams({ sha: branch, path, per_page: '1' })
-      if (until) params.set('until', until)
-      return githubApi<GitHubCommit[]>(
-        `/repos/${owner}/${repo}/commits?${params.toString()}`,
-        token
-      )
-    })
-  )
+  const uniquePaths = [...new Set(paths)]
+  const commits: GitHubCommit[] = []
 
-  const commits = commitLists
-    .map(list => list[0])
-    .filter((c): c is GitHubCommit => c != null)
+  for (const path of uniquePaths) {
+    const params = new URLSearchParams({ sha: branch, path, per_page: '1' })
+    if (until) params.set('until', until)
 
+    const commitList = await githubApi<GitHubCommit[]>(
+      `/repos/${owner}/${repo}/commits?${params.toString()}`,
+      token
+    )
+
+    const commit = commitList[0]
+    if (commit) commits.push(commit)
+  }
   return pickLatestCommit(commits)
 }
 
