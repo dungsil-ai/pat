@@ -43,7 +43,7 @@ interface DashboardRow {
   trackedBy: 'tag' | 'commit'
   baselineVersion: string
   latestVersion: string
-  status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패'
+  status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패' | '경로 커밋 없음'
   compareUrl?: string
 }
 
@@ -556,13 +556,24 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       ))[0]
 
   if (!baselineCommit || !latestCommit) {
+    if (hasLocalizationPaths) {
+      return {
+        game: meta.game,
+        mod: meta.mod,
+        strategy: meta.strategy,
+        trackedBy: 'commit',
+        baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
+        latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
+        status: '경로 커밋 없음'
+      }
+    }
     return {
       game: meta.game,
       mod: meta.mod,
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '기준 커밋 조회 실패',
-      latestVersion: latestCommit?.sha.slice(0, 7) ?? (hasLocalizationPaths ? '업스트림 경로 커밋 조회 실패' : '최신 커밋 조회 실패'),
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? '최신 커밋 조회 실패',
       status: '조회 실패'
     }
   }
@@ -587,6 +598,7 @@ function buildIssueBody(rows: DashboardRow[]): string {
   const timestamp = new Date().toISOString()
   const outdatedRows = rows.filter(row => row.status === '미반영')
   const failedRows = rows.filter(row => row.status === '조회 실패')
+  const noPathCommitRows = rows.filter(row => row.status === '경로 커밋 없음')
 
   const lines: string[] = []
   lines.push('# 업스트림 변경 대비 번역 미반영 대시보드')
@@ -596,6 +608,9 @@ function buildIssueBody(rows: DashboardRow[]): string {
   lines.push(`- 확인 대상 모드 수: ${rows.length}`)
   if (failedRows.length > 0) {
     lines.push(`- 조회 실패 모드 수(집계 제외): ${failedRows.length}`)
+  }
+  if (noPathCommitRows.length > 0) {
+    lines.push(`- 경로 커밋 없음 모드 수(집계 제외): ${noPathCommitRows.length}`)
   }
   lines.push('')
   lines.push('| 게임 | 모드 | 버전 기준 | 추적 방식 | 번역 기준 버전 | 최신 버전 | 상태 |')
