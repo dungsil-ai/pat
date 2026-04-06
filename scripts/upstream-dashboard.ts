@@ -455,7 +455,9 @@ function parseCommitDate(commit: GitHubCommit): number {
 function pickLatestCommit(commits: GitHubCommit[]): GitHubCommit | null {
   if (commits.length === 0) return null
 
-  return commits.sort((a, b) => parseCommitDate(b) - parseCommitDate(a))[0]
+  return commits.reduce((latest, commit) => {
+    return parseCommitDate(commit) > parseCommitDate(latest) ? commit : latest
+  })
 }
 
 async function fetchLatestCommitForPaths(
