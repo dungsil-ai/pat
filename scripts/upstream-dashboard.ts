@@ -486,8 +486,8 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
 
-  const hasLocPaths = !useTagTracking && meta.upstreamLocalization.length > 0
-  const latestCommit = hasLocPaths
+  const hasLocalizationPaths = !useTagTracking && meta.upstreamLocalization.length > 0
+  const latestCommit = hasLocalizationPaths
     ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, meta.upstreamLocalization, token)
     : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
 
@@ -532,7 +532,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
     }
   }
 
-  const baselineCommit = hasLocPaths
+  const baselineCommit = hasLocalizationPaths
     ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, meta.upstreamLocalization, token, lastTranslation.committedAt)
     : (await githubApi<GitHubCommit[]>(
         `/repos/${meta.owner}/${meta.repo}/commits?sha=${repoInfo.default_branch}&until=${encodeURIComponent(lastTranslation.committedAt)}&per_page=1`,
