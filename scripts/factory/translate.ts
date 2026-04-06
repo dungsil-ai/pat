@@ -15,6 +15,37 @@ const execAsync = promisify(exec)
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
 const DEFAULT_TRANSLATE_BATCH_SIZE = 20
+const HANGUL_CHOSEONG_LIST = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'] as const
+const HANGUL_BASE_CODE = 0xAC00
+const HANGUL_CHOSEONG_INTERVAL = 588
+const LATIN_INITIAL_CONSONANT_MAP: Record<string, string[]> = {
+  a: ['ㅇ'],
+  b: ['ㅂ', 'ㅍ'],
+  c: ['ㅋ', 'ㅅ', 'ㅊ'],
+  d: ['ㄷ', 'ㅌ'],
+  e: ['ㅇ'],
+  f: ['ㅍ'],
+  g: ['ㄱ', 'ㅋ'],
+  h: ['ㅎ'],
+  i: ['ㅇ'],
+  j: ['ㅈ', 'ㅊ'],
+  k: ['ㅋ', 'ㄱ'],
+  l: ['ㄹ'],
+  m: ['ㅁ'],
+  n: ['ㄴ'],
+  o: ['ㅇ'],
+  p: ['ㅍ', 'ㅂ'],
+  q: ['ㅋ'],
+  r: ['ㄹ'],
+  s: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ'],
+  t: ['ㅌ', 'ㄷ'],
+  u: ['ㅇ'],
+  v: ['ㅂ', 'ㅍ'],
+  w: ['ㅇ', 'ㅂ'],
+  x: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ', 'ㅋ'],
+  y: ['ㅇ'],
+  z: ['ㅈ', 'ㅅ']
+}
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -66,46 +97,15 @@ function getHangulInitialConsonant(char: string): string | null {
     return null
   }
 
-  const CHOSEONG = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
-  const HANGUL_BASE = 0xAC00
-  const CHOSEONG_INTERVAL = 588
-  const code = char.charCodeAt(0) - HANGUL_BASE
-  const choIndex = Math.floor(code / CHOSEONG_INTERVAL)
-  return CHOSEONG[choIndex] || null
+  const code = char.charCodeAt(0) - HANGUL_BASE_CODE
+  const choIndex = Math.floor(code / HANGUL_CHOSEONG_INTERVAL)
+  return HANGUL_CHOSEONG_LIST[choIndex] || null
 }
 
 function getExpectedInitialConsonantsForLatin(char: string): string[] {
   const lower = char.toLowerCase()
-  const map: Record<string, string[]> = {
-    a: ['ㅇ'],
-    b: ['ㅂ', 'ㅍ'],
-    c: ['ㅋ', 'ㅅ', 'ㅊ'],
-    d: ['ㄷ', 'ㅌ'],
-    e: ['ㅇ'],
-    f: ['ㅍ'],
-    g: ['ㄱ', 'ㅋ'],
-    h: ['ㅎ'],
-    i: ['ㅇ'],
-    j: ['ㅈ', 'ㅊ'],
-    k: ['ㅋ', 'ㄱ'],
-    l: ['ㄹ'],
-    m: ['ㅁ'],
-    n: ['ㄴ'],
-    o: ['ㅇ'],
-    p: ['ㅍ', 'ㅂ'],
-    q: ['ㅋ'],
-    r: ['ㄹ'],
-    s: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ'],
-    t: ['ㅌ', 'ㄷ'],
-    u: ['ㅇ'],
-    v: ['ㅂ', 'ㅍ'],
-    w: ['ㅇ', 'ㅂ'],
-    x: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ', 'ㅋ'],
-    y: ['ㅇ'],
-    z: ['ㅈ', 'ㅅ']
-  }
 
-  return map[lower] || []
+  return LATIN_INITIAL_CONSONANT_MAP[lower] || []
 }
 
 function isSuspiciousShortTransliterationResult(sourceValue: string, translatedValue: string): boolean {
@@ -699,6 +699,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
                 previousTranslation: translatedValue,
                 failureReason: '음역 컨텍스트에서 의미 번역 가능성이 감지되었습니다. 사전적 의미 번역을 피하고 발음 기반 음역으로만 번역하세요.'
               },
+              true,
               true
             )
 

@@ -32,7 +32,7 @@ vi.mock('../utils/translate', () => {
     }
   }
 
-  const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean) {
+  const mockTranslate = vi.fn().mockImplementation(function(text: string, gameType?: any, retryCount?: number, lastError?: any, useTransliteration?: boolean, bypassCache?: boolean) {
     if (text.trim() === '') {
       return Promise.resolve(text)
     }
@@ -1293,6 +1293,7 @@ language = "english"
       expect.objectContaining({
         previousTranslation: '노래'
       }),
+      true,
       true
     )
   })
@@ -1374,6 +1375,7 @@ language = "english"
       expect.objectContaining({
         previousTranslation: '노래'
       }),
+      true,
       true
     )
   })
