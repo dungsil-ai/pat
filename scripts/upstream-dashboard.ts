@@ -554,9 +554,9 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       mod: meta.mod,
       strategy: meta.strategy,
       trackedBy: 'commit',
-      baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '기준 커밋 없음',
-      latestVersion: latestCommit?.sha.slice(0, 7) ?? '현지화 커밋 없음',
-      status: '미반영'
+      baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '기준 커밋 조회 실패',
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? (hasLocalizationPaths ? '업스트림 경로 커밋 조회 실패' : '최신 커밋 조회 실패'),
+      status: '조회 실패'
     }
   }
 
