@@ -491,5 +491,39 @@ language = "english"
         name: 'v1.10.0'
       })
     })
+
+    it('github 전략에서 Releases 최신 태그를 반환해야 함', async () => {
+      fetchMock.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => ({ tag_name: 'release-2.0.0' })
+      })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      const latestRef = await getLatestRefFromRemote(
+        'https://github.com/test/test.git',
+        'ck3/Test/upstream',
+        'github'
+      )
+
+      expect(fetchMock).toHaveBeenCalledWith(
+        'https://api.github.com/repos/test/test/releases/latest',
+        expect.anything()
+      )
+      expect(latestRef).toEqual({
+        type: 'tag',
+        name: 'release-2.0.0'
+      })
+    })
+
+    it('github 전략은 비-GitHub 저장소에서 오류를 발생시켜야 함', async () => {
+      const { getLatestRefFromRemote } = await import('./upstream')
+      await expect(() => getLatestRefFromRemote(
+        'https://gitlab.com/test/test.git',
+        'ck3/Test/upstream',
+        'github'
+      )).rejects.toThrow('GitHub')
+    })
   })
 })

@@ -2,4 +2,4 @@
 url = "https://github.com/cybrxkhan/VIET-Events-for-CK3.git"
 localization = ["VIET Events/localization/english/"]
 language = "english"
-version_strategy = "semantic"
+version_strategy = "github"
