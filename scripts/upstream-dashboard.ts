@@ -526,7 +526,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: '번역 이력 없음',
-      latestVersion: latestCommit?.sha.slice(0, 7) ?? '현지화 커밋 없음',
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
       status: '번역 이력 없음'
     }
   }
@@ -555,18 +555,31 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
         token
       ))[0]
 
-  if (!baselineCommit || !latestCommit) {
-    if (hasLocalizationPaths) {
-      return {
-        game: meta.game,
-        mod: meta.mod,
-        strategy: meta.strategy,
-        trackedBy: 'commit',
-        baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
-        latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
-        status: '경로 커밋 없음'
-      }
+  if (hasLocalizationPaths && !latestCommit) {
+    return {
+      game: meta.game,
+      mod: meta.mod,
+      strategy: meta.strategy,
+      trackedBy: 'commit',
+      baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
+      latestVersion: '경로 커밋 없음',
+      status: '경로 커밋 없음'
     }
+  }
+
+  if (hasLocalizationPaths && !baselineCommit && latestCommit) {
+    return {
+      game: meta.game,
+      mod: meta.mod,
+      strategy: meta.strategy,
+      trackedBy: 'commit',
+      baselineVersion: '번역 이전 경로 커밋 없음',
+      latestVersion: latestCommit.sha.slice(0, 7),
+      status: '미반영'
+    }
+  }
+
+  if (!baselineCommit || !latestCommit) {
     return {
       game: meta.game,
       mod: meta.mod,
