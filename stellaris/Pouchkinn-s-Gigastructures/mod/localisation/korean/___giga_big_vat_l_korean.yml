@@ -2,6 +2,7 @@
   giga_tech_the_vat: "거대 복제 시설" # 13220819781140617382
   giga_tech_the_vat_desc: "새로운 유전 공학 시대의 도래는 이전보다 훨씬 더 위대하고 야심찬 프로젝트를 위한 길을 열었습니다. 이전에는 행성에만 국한되었던 유전 공학이, 거대한 궤도 클론 시설을 통해 진정한 우주 생명체 함대를 신속하게 생체 공학적으로 생산하고 증식시켜 우리 해군력을 더욱 강화할 수 있게 될 것입니다." # 8712885263609061079
   giga_dialog.11301.name: "$name_the_vat$ 건설 현장 건설 완료" # 1360519120072695253
+  giga_dialog.11301.desc: "$name_the_vat_long$의 건설 현장이 이제 완료되었습니다. 이 궤도 플랫폼은 사상 최대 규모의 배양조를 건설하는 데 필요한 구조물을 구축하기 위한 발판 역할을 합니다.\n\n완공되면 우리 함대에서 복무할 대규모 생물학적 개체를 신속하게 생산할 수 있게 될 것입니다." # 15638795305739497983
   giga_dialog.11301.a: "훌륭하군." # 13528797227097630973
   giga_dialog.11302.name: "주요 배양조 건설 완료" # 13135260701830767117
   giga_dialog.11302.desc: "우리 궤도 클론 시설의 주 복제조 건설이 완료되었습니다. 이제 이 복제조는 종류를 막론하고 가장 큰 규모의 복제조가 되어, 다양한 설계의 진정한 거대 클론을 생성할 수 있습니다.\n\n§Y생체 거대 괴수를 격파하면 모든 B.I.G. 복제조의 주 복제조에서 해당 개체를 복제할 수 있게 됩니다.§!" # 6550063770502463073
@@ -17,6 +18,7 @@
   giga_dialog.11305.a: "복제를 시작한다." # 8211824982289716557
   the_vat_0: "$gc_mega$$name_the_vat$ 건설 현장" # 17286749771588277168
   the_vat_0_DESC: "이것을 거대한 클론 시설로 바꾸는 데 우리 공학자와 생물학자들이 필요로 할 모든 것을 포함하는 미래 배양조 건설 현장." # 16158440598019757856
+  the_vat_0_MEGASTRUCTURE_DETAILS: "£galwonders£ $giga_list_category_megastructure$ - $giga_list_category_ship_production$\n£food£ §Y$food$§!을 사용하여 알려진 §Y리바이어던§! 및 §Y우주 생명체§!를 기반으로 한 §Y생물학적 군함§!을 생성합니다.\n§L생물학적 급성장 배양조는 대량의 생물학적 우주선을 생산할 수 있는 우주 기반 복제 시설입니다.§!" # 8837773218125358440
   the_vat_1: "$name_the_vat$: 주 통" # 17297607035150196620
   the_vat_1_DESC: "이것은 동종 클론 배양조 중 가장 거대한 것이 될 것이며, 수많은 거대 클론을 생성할 수 있습니다." # 4139013683889279619
   the_vat_2: "$name_the_vat$: 보조 배양 탱크" # 14526493533256752036
@@ -26,6 +28,7 @@
   the_vat_4: "$name_the_vat$" # 6453383820268546722
   the_vat_4_DESC: "이것은 동종 시설 중 가장 큰 복제 탱크로, 다수의 거대한 복제체를 생성할 수 있습니다. 여섯 개의 보조 탱크와 하나의 거대한 주 탱크를 갖춘 이 시설은 거대 역겨운 생명체의 함대 전체를 복제할 준비를 완료했습니다." # 8162631522635451038
   the_vat_menu_title: "§c맹렬한 성장 배양조§!" # 1266793569338801256
+  the_vat_menu_desc: "§cB.I.G. 배양조§!는 생물학적 조선소입니다. 주 배양조는 보조 배양조보다 두 배 빠르게 복제합니다.\n\n동물군을 복제할 때는 무작위 설계가 선택되므로, 개조 비용을 피하고 싶다면 이 점을 유의하십시오." # 17300309098715533861
   the_vat_menu_01: "§H주요 배양조§!" # 14332237092622797891
   the_vat_menu_02: "§H보조 배양조 #1§!" # 6773457903764364418
   the_vat_menu_03: "§H보조 배양조 #2§!" # 11670285386660660871
@@ -46,6 +49,11 @@
   VAT_TIME_05: "남은 시간 [this.giga_vat_05_time_left]" # 9837138385212310812
   VAT_TIME_06: "£resource_time£ [this.giga_vat_06_time_left]" # 12999951454870187119
   VAT_TIME_07: "£resource_time£ [this.giga_vat_07_time_left]" # 6648446570562698905
+  giga_requires_tiyanki_dna: "$TRIGGER_FAIL$§Y티얀키§! ['concept_dna'] 필요" # 18364920269483871040
+  giga_requires_space_amoeba_dna: "$TRIGGER_FAIL$§Y우주 아메바§! ['concept_dna'] 필요" # 13048999704728141939
+  giga_requires_voidworm_dna: "$TRIGGER_FAIL$§Y보이드웜§! ['concept_dna'] 필요" # 13982504006066048775
+  giga_requires_cutholoid_dna: "$TRIGGER_FAIL$§Y커솔로이드§! ['concept_dna'] 필요" # 2187910598271907257
+  giga_requires_crystal_dna: "$TRIGGER_FAIL$§Y$crystalline_entity$§! ['concept_dna'] 필요" # 13538892732550613953
   giga_requires_leviathan_slain_ether_drake: "$TRIGGER_FAIL$이전 §Y$space_dragon_red$§!를 처치했어야 합니다." # 8607885129068565434
   giga_requires_leviathan_slain_wraith: "$TRIGGER_FAIL$이전에 §YWraith§!를 처치한 적이 있어야 합니다." # 13504835931235827063
   giga_requires_leviathan_slain_tiyanki_matriarch: "$TRIGGER_FAIL$§Y$leviathan_01_elder_tiyanki$§!를 이전에 처치한 적이 있어야 합니다." # 14131712247691154775
@@ -143,12 +151,4 @@
   giga_vat_unlocked_warriors: "§Y$large_ship_swarm_plural$§!는 이제 $name_the_vat$에서 복제할 수 있습니다." # 5849020504411221608
   giga_big_vat_modifier_not_machine: "고급 복제 방법" # 16579785158214134051
   giga_big_vat_modifier_machine: "고급 조립 방식" # 6418125370090708249
-  giga_dialog.11301.desc: "$name_the_vat_long$의 건설 현장이 이제 완료되었습니다. 이 궤도 플랫폼은 사상 최대 규모의 배양조를 건설하는 데 필요한 구조물을 구축하기 위한 발판 역할을 합니다.\n\n완공되면 우리 함대에서 복무할 대규모 생물학적 개체를 신속하게 생산할 수 있게 될 것입니다." # 15638795305739497983
-  the_vat_0_MEGASTRUCTURE_DETAILS: "£galwonders£ $giga_list_category_megastructure$ - $giga_list_category_ship_production$\n£food£ §Y$food$§!을 사용하여 알려진 §Y리바이어던§! 및 §Y우주 생명체§!를 기반으로 한 §Y생물학적 군함§!을 생성합니다.\n§L생물학적 급성장 배양조는 대량의 생물학적 우주선을 생산할 수 있는 우주 기반 복제 시설입니다.§!" # 8837773218125358440
-  the_vat_menu_desc: "§cB.I.G. 배양조§!는 생물학적 조선소입니다. 주 배양조는 보조 배양조보다 두 배 빠르게 복제합니다.\n\n동물군을 복제할 때는 무작위 설계가 선택되므로, 개조 비용을 피하고 싶다면 이 점을 유의하십시오." # 17300309098715533861
-  giga_requires_tiyanki_dna: "$TRIGGER_FAIL$§Y티얀키§! ['concept_dna'] 필요" # 18364920269483871040
-  giga_requires_space_amoeba_dna: "$TRIGGER_FAIL$§Y우주 아메바§! ['concept_dna'] 필요" # 13048999704728141939
-  giga_requires_voidworm_dna: "$TRIGGER_FAIL$§Y보이드웜§! ['concept_dna'] 필요" # 13982504006066048775
-  giga_requires_cutholoid_dna: "$TRIGGER_FAIL$§Y커솔로이드§! ['concept_dna'] 필요" # 2187910598271907257
-  giga_requires_crystal_dna: "$TRIGGER_FAIL$§Y$crystalline_entity$§! ['concept_dna'] 필요" # 13538892732550613953
   giga_prethoryn_larvae_desc_details: "" # 17241709254077376921

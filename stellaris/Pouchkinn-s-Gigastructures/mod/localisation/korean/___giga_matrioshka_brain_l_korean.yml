@@ -18,7 +18,9 @@
   concept_giga_mbrain_uplinks_diplomatic_bug_branch: "$concept_giga_mbrain_uplinks_diplomatic$" # 8442350686378888362
   concept_giga_mbrain_uplinks_diplomatic_bug_branch_desc: "다음 중 하나:\n\n윤리관:\n- 다음 중 하나 ['ethic:ethic_xenophile']\n- 다음 중 하나 ['ethic:ethic_pacifist']\n- 다음 중 하나 ['ethic:ethic_cooperative']\n\n정부 체제 특성:\n- ['civic:civic_diplomatic_corps']\n- ['civic:civic_public_relations_specialists']\n- ['civic:civic_pompous_purists']" # 13683564724158967591
   concept_giga_mbrain_uplinks_judgemental: "판단하는 제국들" # 5948166409161416051
+  concept_giga_mbrain_uplinks_judgemental_desc: "다음 중 하나:\n\n윤리관:\n- ['ethic:ethic_xenophobe'] 중 하나\n- ['ethic:ethic_authoritarian'] 중 하나\n\n시민 의식:\n- ['civic:civic_dystopian_society']\n- ['civic:civic_twisted_experimenters']\n- ['civic:civic_twisted_experimenters_corporate']" # 9592550532655044041
   concept_giga_mbrain_uplinks_judgemental_bug_branch: "$concept_giga_mbrain_uplinks_judgemental$" # 7780511822727210736
+  concept_giga_mbrain_uplinks_judgemental_bug_branch_desc: "다음 중 하나:\n\n윤리관:\n- ['ethic:ethic_xenophobe'] 중 하나\n- ['ethic:ethic_authoritarian'] 중 하나\n- ['ethic:ethic_elitist'] 중 하나\n\n시민 의식:\n- ['civic:civic_dystopian_society']\n- ['civic:civic_twisted_experimenters']\n- ['civic:civic_twisted_experimenters_corporate']" # 16833657195117056773
   concept_giga_mbrain_uplinks_regular: "$giga_mbrain_uplink_plural$: 유기체 제국" # 11775630155259435174
   concept_giga_mbrain_uplinks_regular_desc: "$concept_giga_mbrain_uplinks_text$\n\n모든 제국에서 사용 가능:$giga_mbrain_uplink_research_concept$$giga_mbrain_uplink_unity_concept$$giga_mbrain_uplink_training_concept$$giga_mbrain_uplink_foundry_concept$$giga_mbrain_uplink_factory_concept$$giga_mbrain_uplink_refinery_concept$\n\n£job_roboticist£ 로봇을 허용하는 제국에서 사용 가능:$giga_mbrain_uplink_robot_concept$\n\n['concept_giga_mbrain_uplinks_diplomatic', 외교적] 제국에서 사용 가능:$giga_mbrain_uplink_diplomacy_concept$\n\n£job_livestock£ $job_livestock$를 유지하는 제국에서 사용 가능:$giga_mbrain_uplink_livestock_concept$\n\n['concept_giga_mbrain_uplinks_judgemental', 심판적] 제국에서 사용 가능:$giga_mbrain_uplink_hell_concept$\n\n['civic:civic_dystopian_society']에서는 사용 불가:$giga_mbrain_uplink_entertainment_concept$" # 13037198417402245508
   concept_giga_mbrain_uplinks_im: "$giga_mbrain_uplink_plural$: 개별 기계" # 1391183637542166321
@@ -63,10 +65,12 @@
   giga_mbrain_uplink_livestock: "꿈꾸는 들판" # 10564632065096586179
   building_giga_matrioshka_brain_uplink_livestock: "$giga_mbrain_uplink$: $giga_mbrain_uplink_livestock$" # 927600311505113141
   building_giga_matrioshka_brain_uplink_livestock_desc: "우리의 가축들이 특수 맞춤형 가상 세계에서 무지하게 살게 함으로써, 그들은 통제되고, 안심하며... 그리고 연해집니다." # 14125607616458515364
+  building_giga_matrioshka_brain_uplink_livestock_effect: "유지비 감소는 [livestock.GetIcon] §Y[livestock.GetName]§! 직업의 수에 비례합니다" # 1417907251320830275
   giga_mbrain_uplink_livestock_concept: "\n£job_livestock£ ['building:building_giga_matrioshka_brain_uplink_livestock', $giga_mbrain_uplink_livestock$]" # 10472803416325126176
   giga_mbrain_uplink_amalgamation: "꿈 망" # 17994178684637842014
   building_giga_matrioshka_brain_uplink_amalgamation: "$giga_mbrain_uplink$: $giga_mbrain_uplink_amalgamation$" # 10931551791120798303
   building_giga_matrioshka_brain_uplink_amalgamation_desc: "들판이 있습니다. 끝없이 펼쳐진 들판, 그곳에서는 유기체가 더 이상 태어나지 않고... 길러집니다." # 14971503439247255199
+  building_giga_matrioshka_brain_uplink_amalgamation_effect: "유지비 감소는 [organic_battery.GetIcon] §Y[organic_battery.GetName]§! 직업의 수에 비례합니다" # 3460104410796992122
   giga_mbrain_uplink_amalgamation_concept: "\n£job_organic_battery£ ['building:building_giga_matrioshka_brain_uplink_amalgamation', $giga_mbrain_uplink_amalgamation$]" # 2298454270115066220
   giga_mbrain_uplink_foundry: "야금 정련" # 18113575523143222676
   building_giga_matrioshka_brain_uplink_foundry: "$giga_mbrain_uplink$: $giga_mbrain_uplink_foundry$" # 9180255464743698553
@@ -79,6 +83,7 @@
   giga_mbrain_uplink_refinery: "화학 정화 매트릭스" # 14648797550742061388
   building_giga_matrioshka_brain_uplink_refinery: "$giga_mbrain_uplink$: $giga_mbrain_uplink_refinery$" # 10587129323121155310
   building_giga_matrioshka_brain_uplink_refinery_desc: "저지연 중계기, 정밀 계측 장비, 그리고 막대한 처리 능력의 조합으로, 분자 수준에서 제품 평가가 가능합니다." # 5280224008013206758
+  building_giga_matrioshka_brain_uplink_refinery_effect: "£building£ §Y정제소 건물§!이 존재할 때 [foundry.GetIcon][GetArtisanIcon] §Y산업 직업§!을 강화합니다" # 17184794556121436435
   giga_mbrain_uplink_refinery_concept: "\n£job_gas_refiner£ ['building:building_giga_matrioshka_brain_uplink_refinery', $giga_mbrain_uplink_refinery$]" # 6751351258080962768
   giga_mbrain_uplink_anti_deviancy: "행동 조절기" # 7228109710168106393
   building_giga_matrioshka_brain_uplink_anti_deviancy: "$giga_mbrain_uplink$: $giga_mbrain_uplink_anti_deviancy$" # 12384644598140836996
@@ -94,50 +99,55 @@
   giga_mbrain_uplink_virtual: "경로 가속기" # 8330328258033576122
   building_giga_matrioshka_brain_uplink_virtual: "$giga_mbrain_uplink$: $giga_mbrain_uplink_virtual$" # 13979571162196454096
   building_giga_matrioshka_brain_uplink_virtual_desc: "이 규모의 네트워크에서는 작업 관리와 신호 라우팅이 복잡한 문제입니다. 하지만 문제에 충분한 계산 자원을 투입한 결과 유망한 성과를 얻었습니다. 때로는 양이 그 자체로 한 형태의 질이 될 수 있습니다." # 5278018803325021600
+  building_giga_matrioshka_brain_uplink_virtual_effect: "유지비는 ['concept_giga_virtual_colony_size']에 비례합니다" # 6633099089117784927
   giga_mbrain_uplink_virtual_concept: "\n정신 노예 ['building:building_giga_matrioshka_brain_uplink_virtual', $giga_mbrain_uplink_virtual$]" # 4881272073099830003
   job_giga_media_coordinator: "미디어 거물" # 1798047822800299570
   job_giga_media_coordinator_plural: "미디어 거물" # 14551599186835369452
   job_giga_media_coordinator_desc: "가상 엔터테인먼트 제국의 창의적인 정신을 가진 미디어 거물들은 우리 국민들이 결코 부족함을 느끼지 않도록 보장합니다. 조명. 카메라. 액션!" # 53231834105144008
-  job_giga_media_coordination_drone: "미디어 조정 드론" # 4655657334627761031
-  job_giga_media_coordination_drone_plural: "미디어 조정 드론" # 6457293750274616664
-  job_giga_media_coordination_drone_desc: "이 특화 드론 군집들은 기계 지능의 유기체 보호대상들의 선호에 맞춰 끝없는 콘텐츠 흐름을 생산합니다." # 17893812435332393886
-  job_giga_gamer_fe_game_master: "게임 마스터" # 5986734667460224359
-  job_giga_gamer_fe_game_master_plural: "게임 마스터" # 14130146186520027601
-  job_giga_gamer_fe_game_master_desc: "이 학구적인 존재들은 현실 시뮬레이터의 다른 거주자들이 즐길 수 있도록, 마트료시카 브레인의 거대한 연산 능력을 사용하여 복잡한 세계를 만들어냅니다." # 12442230136794248137
-  concept_giga_mbrain_uplinks_judgemental_desc: "다음 중 하나:\n\n윤리관:\n- ['ethic:ethic_xenophobe'] 중 하나\n- ['ethic:ethic_authoritarian'] 중 하나\n\n시민 의식:\n- ['civic:civic_dystopian_society']\n- ['civic:civic_twisted_experimenters']\n- ['civic:civic_twisted_experimenters_corporate']" # 9592550532655044041
-  concept_giga_mbrain_uplinks_judgemental_bug_branch_desc: "다음 중 하나:\n\n윤리관:\n- ['ethic:ethic_xenophobe'] 중 하나\n- ['ethic:ethic_authoritarian'] 중 하나\n- ['ethic:ethic_elitist'] 중 하나\n\n시민 의식:\n- ['civic:civic_dystopian_society']\n- ['civic:civic_twisted_experimenters']\n- ['civic:civic_twisted_experimenters_corporate']" # 16833657195117056773
-  building_giga_matrioshka_brain_uplink_livestock_effect: "유지비 감소는 [livestock.GetIcon] §Y[livestock.GetName]§! 직업의 수에 비례합니다" # 1417907251320830275
-  building_giga_matrioshka_brain_uplink_amalgamation_effect: "유지비 감소는 [organic_battery.GetIcon] §Y[organic_battery.GetName]§! 직업의 수에 비례합니다" # 3460104410796992122
-  building_giga_matrioshka_brain_uplink_refinery_effect: "£building£ §Y정제소 건물§!이 존재할 때 [foundry.GetIcon][GetArtisanIcon] §Y산업 직업§!을 강화합니다" # 17184794556121436435
-  building_giga_matrioshka_brain_uplink_virtual_effect: "유지비는 ['concept_giga_virtual_colony_size']에 비례합니다" # 6633099089117784927
   job_giga_media_coordinator_effect_desc: "$job_giga_media_coordinator_swap_plural_with_icon$은(는) £consumer_goods£ §Y$consumer_goods$§!을(를) £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, 그리고 £mod_trade_value_add£ §Y$TRADE_VALUE$§!(으)로 전환하며, 우리 제국 전체의 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!을(를) 소량 증가시킵니다" # 16901397379348259169
   job_giga_media_coordinator_swap_plural_with_icon: "[giga_media_coordinator.GetIcon] [giga_media_coordinator.GetNamePlural]" # 7064924878535088037
   mod_job_giga_media_coordinator_add: "[giga_media_coordinator.GetName] 직업" # 9631052317065546874
   mod_job_giga_media_coordinator_per_pop: "팝 $VALUE$당 §G+1§! [giga_media_coordinator.GetName] 직업" # 8528265291950547429
   mod_job_giga_media_coordinator_per_pop_short: "\n팝 $VALUE$당 §G+1§! [giga_media_coordinator.GetIcon]" # 8604966021194965657
+  job_giga_media_coordination_drone: "미디어 조정 드론" # 4655657334627761031
+  job_giga_media_coordination_drone_plural: "미디어 조정 드론" # 6457293750274616664
+  job_giga_media_coordination_drone_desc: "이 특화 드론 군집들은 기계 지능의 유기체 보호대상들의 선호에 맞춰 끝없는 콘텐츠 흐름을 생산합니다." # 17893812435332393886
   job_giga_media_coordination_drone_effect_desc: "$job_giga_media_coordination_drone_swap_plural_with_icon$은(는) £consumer_goods£ §Y$consumer_goods$§!을(를) £unity£ §Y$unity$§! 및 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!(으)로 전환하며, 우리 제국 전체의 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!을(를) 소량 증가시킵니다" # 5835952135024107574
   job_giga_media_coordination_drone_swap_plural_with_icon: "[giga_media_coordination_drone.GetIcon] [giga_media_coordination_drone.GetNamePlural]" # 12701484220082801048
   mod_job_giga_media_coordination_drone_add: "[giga_media_coordination_drone.GetName] 직업" # 18158994858066610748
   mod_job_giga_media_coordination_drone_per_pop: "팝 $VALUE$당 §G+1§! [giga_media_coordination_drone.GetName] 직업" # 5350326341793560014
   mod_job_giga_media_coordination_drone_per_pop_short: "\n팝 $VALUE$당 §G+1§! [giga_media_coordinator.GetIcon]" # 8604966021194965657
+  job_giga_gamer_fe_game_master: "게임 마스터" # 5986734667460224359
+  job_giga_gamer_fe_game_master_plural: "게임 마스터" # 14130146186520027601
+  job_giga_gamer_fe_game_master_desc: "이 학구적인 존재들은 현실 시뮬레이터의 다른 거주자들이 즐길 수 있도록, 마트료시카 브레인의 거대한 연산 능력을 사용하여 복잡한 세계를 만들어냅니다." # 12442230136794248137
   job_giga_gamer_fe_game_master_effect_desc: "$job_giga_gamer_fe_game_master_swap_plural_with_icon$은(는) 행성 £stability£ §Y안정도§!를 향상시키고 플레이어들이 잠재력을 최대한 발휘하도록 돕습니다" # 11697002222648029425
   job_giga_gamer_fe_game_master_swap_plural_with_icon: "[giga_gamer_fe_game_master.GetIcon] [giga_gamer_fe_game_master.GetNamePlural]" # 2680083703996978516
   mod_job_giga_gamer_fe_game_master_add: "[giga_gamer_fe_game_master.GetName] 직업" # 10291947408825192378
   mod_job_giga_gamer_fe_game_master_per_pop: "팝 $VALUE$당 §G+1§! [giga_gamer_fe_game_master.GetName] 직업" # 12169773631351108121
+  mod_job_giga_gamer_fe_game_master_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_gamer_fe_game_master.GetIcon]" # 14567116307234401522
   job_giga_gamer_fe_npc: "비플레이어 캐릭터" # 5613729852166253753
   job_giga_gamer_fe_npc_plural: "비플레이어 캐릭터" # 96023456400324741
   job_giga_gamer_fe_npc_desc: "모든 영웅 뒤에는 친구든, 적이든, 아니면 단순히 방관자든, 여러 조연 캐릭터들이 존재합니다. 이 역할들 중 일부는 현실 시뮬레이터의 거주자들이 연기하지만, 대다수는 정교한 시뮬레이션입니다." # 3869594215026256058
+  job_giga_gamer_fe_npc_effect_desc: "$job_giga_gamer_fe_npc_swap_plural_with_icon$은(는) £unity£ §Y$unity$§!와(과) £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!을(를) 생산하며, 성장하는 플레이어에게 완벽한 상대가 되어줍니다" # 8893911582279693865
+  job_giga_gamer_fe_npc_swap_plural_with_icon: "[giga_gamer_fe_npc.GetIcon] [giga_gamer_fe_npc.GetNamePlural]" # 15984476566218239779
+  mod_job_giga_gamer_fe_npc_add: "[giga_gamer_fe_npc.GetName] 직업" # 5113906866908681673
+  mod_job_giga_gamer_fe_npc_per_pop: "§G+1§! $VALUE$ 팝당 [giga_gamer_fe_npc.GetName] 직업" # 497475748326844894
+  mod_job_giga_gamer_fe_npc_per_pop_short: "§G+1§! [giga_gamer_fe_npc.GetIcon] / $VALUE$ £pop£" # 7690907013018733984
   job_giga_virtual_hell_inmate: "가상 망자" # 13051053859464690936
   job_giga_virtual_hell_inmate_plural: "가상 망자" # 13051053859464690936
   job_giga_virtual_hell_inmate_desc: "최하층 죄수들은 잠재적 범죄자들이 자신의 삶의 선택을 재고하게 겁주기 위해, 상상 가능한 최악의 조건 속에서 고통받도록 선고받습니다." # 489720187617299034
+  job_giga_virtual_hell_inmate_effect_desc: "[giga_virtual_hell_inmate.GetIcon] [giga_virtual_hell_inmate.GetNamePlural]은(는) £energy£ §Y$energy$§!을(를) 지역 £crime£ §Y$PLANET_CRIME_TITLE$§!(으)로 전환하며, 제국 전체의 £crime£ §Y$PLANET_CRIME_TITLE$§! 감소, £mod_pop_government_ethic_attraction£ §Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!, 그리고 £political_power£ §Y$mod_pop_cat_ruler_political_power$§!을(를) 제공합니다" # 11749345564412066171
+  job_giga_virtual_hell_inmate_effect_desc_twisted: "[giga_virtual_hell_inmate.GetIcon] [giga_virtual_hell_inmate.GetNamePlural]은(는) £energy£ §Y$energy$§!을(를) 지역 £crime£ §Y$PLANET_CRIME_TITLE$§! 및 [experiment_engineer.GetIcon][test_subject.GetIcon] §Y실험 결과물§!(으)로 전환하며, 제국 전체의 £crime£ §Y$PLANET_CRIME_TITLE$§! 감소, £mod_pop_government_ethic_attraction£ §Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!, 그리고 £political_power£ §Y$mod_pop_cat_ruler_political_power$§!을(를) 제공합니다" # 17045604159744329475
   mod_job_giga_virtual_hell_inmate_add: "$job_giga_virtual_hell_inmate$ 직업" # 8540223377304609009
   mod_job_job_giga_virtual_hell_inmate_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_hell_inmate$ 직업" # 11402664780966966395
+  mod_job_job_giga_virtual_hell_inmate_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_hell_inmate.GetIcon]" # 17746062230373246604
   job_giga_virtual_diplomat: "가상 영사" # 14317731476772327680
   job_giga_virtual_diplomat_plural: "가상 영사들" # 11812795394279309898
   job_giga_virtual_diplomat_desc: "더욱 빠르고 정확하게 상황을 파악하며, 우리 외교관들은 우리 마트료시카 두뇌의 막대한 힘을 이용하여 다른 국가들의 외교관들을 능수능란하게 압도할 수 있습니다." # 4093195641469322137
   job_giga_virtual_diplomat_effect_desc: "£job_giga_virtual_diplomat£ §Y$job_giga_virtual_diplomat_plural$§!은 £consumer_goods£ §Y$consumer_goods$§!을 사용하여 모든 이들이 우리 제국에 대해 갖는 £opinion£ §Yopinion§!을 개선하고, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!, 그리고 £mod_spy_network_daily_value_mult£ §Y$MOD_SPY_NETWORK_DAILY_VALUE_MULT$§!을 증가시킵니다." # 14432363175329285797
   mod_job_giga_virtual_diplomat_add: "$job_giga_virtual_diplomat$ 일자리" # 13384676454405134048
   mod_job_job_giga_virtual_diplomat_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat$ 직책" # 7192501904275402746
+  mod_job_job_giga_virtual_diplomat_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat.GetIcon]" # 10888111167132397862
   giga_opinion_from_jobs: "팝 직업에서" # 2118822301967765252
   job_giga_virtual_diplomat_drone: "가상 외교 드론" # 12900500641402561331
   job_giga_virtual_diplomat_drone_plural: "가상 외교 드론" # 12703993888012597549
@@ -145,18 +155,21 @@
   job_giga_virtual_diplomat_drone_effect_desc: "£job_giga_virtual_diplomat_drone£ §Y$job_giga_virtual_diplomat_drone_plural$§!은(는) £energy£ §Y$energy$§!와 그들의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 사용하여 모든 이들의 우리 제국에 대한 £opinion£ §Y호감도§!를 향상시키며, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!, 그리고 £mod_spy_network_daily_value_mult£ §Y$MOD_SPY_NETWORK_DAILY_VALUE_MULT$§!를 제공합니다." # 1314597317639743922
   mod_job_giga_virtual_diplomat_drone_add: "$job_giga_virtual_diplomat_drone$ 직업" # 14976038509764508160
   mod_job_job_giga_virtual_diplomat_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat_drone$ 직위" # 12325693300025425878
+  mod_job_job_giga_virtual_diplomat_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat.GetIcon]" # 10888111167132397862
   job_giga_virtual_diplomat_servitor: "가상 외교 팀" # 17047467728388701949
   job_giga_virtual_diplomat_servitor_plural: "가상 외교 팀" # 17946135043613012516
   job_giga_virtual_diplomat_servitor_desc: "이 드론들은 엄격하게 통제된 조건 하에서 외부 영향과 안전하게 상호작용할 수 있는 특별 훈련을 받은 유기체 외교관들을 지원하고 감독합니다." # 14379327306384667132
   job_giga_virtual_diplomat_servitor_effect_desc: "£job_giga_virtual_diplomat_servitor£ §Y$job_giga_virtual_diplomat_servitor_plural$§!은 £consumer_goods£ §Y$consumer_goods$§!을 사용하여 모든 이들의 우리 제국에 대한 £opinion£ §Y의견§!을 개선하며, £mod_country_trust_cap_add£ §Y$MOD_COUNTRY_TRUST_CAP_ADD$§!, £mod_diplo_action_acceptance_add£ §Y$MOD_DIPLO_ACTION_ACCEPTANCE_ADD$§!을 제공합니다!" # 7532963632866540092
   mod_job_giga_virtual_diplomat_servitor_add_desc: "$job_giga_virtual_diplomat_servitor$ 일자리" # 2883662496362124878
   mod_job_job_giga_virtual_diplomat_machine_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_diplomat_servitor$ 직책" # 17013921226581619315
+  mod_job_job_giga_virtual_diplomat_machine_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat_servitor.GetIcon]" # 5024634623952337801
   job_giga_virtual_training_coordinator: "가상 훈련 조정관" # 4560586313351726694
   job_giga_virtual_training_coordinator_plural: "가상 훈련 조정관" # 57030399099466446
   job_giga_virtual_training_coordinator_desc: "우리의 가장 뛰어난 인재를 양성하려면 그만큼 뛰어난 교사가 필요합니다." # 10115327595579792804
   job_giga_virtual_training_coordinator_effect_desc: "£job_giga_virtual_training_coordinator£ §Y$job_giga_virtual_training_coordinator_plural$§!는 £consumer_goods£ §Y$consumer_goods$§!를 £mod_leader_species_exp_gain£ §Y$MOD_LEADER_SPECIES_EXP_GAIN$§!로 전환합니다." # 9289429524900712962
   mod_job_giga_virtual_training_coordinator_add: "$job_giga_virtual_training_coordinator$ 일자리" # 9230538130669027155
   mod_job_job_giga_virtual_training_coordinator_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_training_coordinator$ 직책" # 13258075466601644214
+  mod_job_job_giga_virtual_training_coordinator_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_training_coordinator.GetIcon]" # 9896264474115742666
   job_giga_virtual_training_coordination_drone: "시뮬레이션 운영 드론" # 11140017211345198898
   job_giga_virtual_training_coordination_drone_plural: "시뮬레이션 운영 드론" # 12197027875867493133
   job_giga_virtual_training_coordination_drone_desc: "이 특화된 드론 군집들은 우리의 경험적 평가에 사용되는 시뮬레이션을 조형합니다." # 1945563870737386842
@@ -164,17 +177,4 @@
   job_giga_virtual_training_coordination_drone_effect_machine_desc: "£job_giga_virtual_training_coordination_drone£ §Y$job_giga_virtual_training_coordination_drone_plural$§!는 £energy£ §Y$energy$§!를 £mod_leader_species_exp_gain£ §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! 및 제국 전역의 £mod_ship_experience_gain_mult£ §YShip and Army Experience§! 보너스로 전환합니다." # 6582973865249223793
   mod_job_giga_virtual_training_coordination_drone_add: "$job_giga_virtual_training_coordination_drone$ 일자리" # 7008140644009780117
   mod_job_job_giga_virtual_training_coordination_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_virtual_training_coordination_drone$ 직책" # 8802648645492736942
-  mod_job_giga_gamer_fe_game_master_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_gamer_fe_game_master.GetIcon]" # 14567116307234401522
-  job_giga_gamer_fe_npc_effect_desc: "$job_giga_gamer_fe_npc_swap_plural_with_icon$은(는) £unity£ §Y$unity$§!와(과) £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!을(를) 생산하며, 성장하는 플레이어에게 완벽한 상대가 되어줍니다" # 8893911582279693865
-  job_giga_gamer_fe_npc_swap_plural_with_icon: "[giga_gamer_fe_npc.GetIcon] [giga_gamer_fe_npc.GetNamePlural]" # 15984476566218239779
-  mod_job_giga_gamer_fe_npc_add: "[giga_gamer_fe_npc.GetName] 직업" # 5113906866908681673
-  mod_job_giga_gamer_fe_npc_per_pop: "§G+1§! $VALUE$ 팝당 [giga_gamer_fe_npc.GetName] 직업" # 497475748326844894
-  mod_job_giga_gamer_fe_npc_per_pop_short: "§G+1§! [giga_gamer_fe_npc.GetIcon] / $VALUE$ £pop£" # 7690907013018733984
-  job_giga_virtual_hell_inmate_effect_desc: "[giga_virtual_hell_inmate.GetIcon] [giga_virtual_hell_inmate.GetNamePlural]은(는) £energy£ §Y$energy$§!을(를) 지역 £crime£ §Y$PLANET_CRIME_TITLE$§!(으)로 전환하며, 제국 전체의 £crime£ §Y$PLANET_CRIME_TITLE$§! 감소, £mod_pop_government_ethic_attraction£ §Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!, 그리고 £political_power£ §Y$mod_pop_cat_ruler_political_power$§!을(를) 제공합니다" # 11749345564412066171
-  job_giga_virtual_hell_inmate_effect_desc_twisted: "[giga_virtual_hell_inmate.GetIcon] [giga_virtual_hell_inmate.GetNamePlural]은(는) £energy£ §Y$energy$§!을(를) 지역 £crime£ §Y$PLANET_CRIME_TITLE$§! 및 [experiment_engineer.GetIcon][test_subject.GetIcon] §Y실험 결과물§!(으)로 전환하며, 제국 전체의 £crime£ §Y$PLANET_CRIME_TITLE$§! 감소, £mod_pop_government_ethic_attraction£ §Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!, 그리고 £political_power£ §Y$mod_pop_cat_ruler_political_power$§!을(를) 제공합니다" # 17045604159744329475
-  mod_job_job_giga_virtual_hell_inmate_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_hell_inmate.GetIcon]" # 17746062230373246604
-  mod_job_job_giga_virtual_diplomat_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat.GetIcon]" # 10888111167132397862
-  mod_job_job_giga_virtual_diplomat_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat.GetIcon]" # 10888111167132397862
-  mod_job_job_giga_virtual_diplomat_machine_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_diplomat_servitor.GetIcon]" # 5024634623952337801
-  mod_job_job_giga_virtual_training_coordinator_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_training_coordinator.GetIcon]" # 9896264474115742666
   mod_job_job_giga_virtual_training_coordination_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 [giga_virtual_training_coordinator.GetIcon]" # 9896264474115742666

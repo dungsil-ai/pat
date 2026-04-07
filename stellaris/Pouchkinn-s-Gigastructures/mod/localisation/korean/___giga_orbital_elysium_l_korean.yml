@@ -103,18 +103,18 @@
   job_giga_elysium_controller: "엘리시안 감독관" # 8302397475910349477
   job_giga_elysium_controller_plural: "엘리시안 감독관" # 2391623387558396654
   job_giga_elysium_controller_desc: "권력을 쥔 자들은 우매한 대중을 통제할 의무가 있다." # 1448319094420314609
-  mod_job_giga_elysium_controller_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_elysium_controller_add£" # 2372149753735252596
-  job_giga_elysium_controller_drone: "엘리시안 감독관 드론" # 6964710936631193369
-  job_giga_elysium_controller_drone_plural: "엘리시안 감독관 드론" # 12569591266574363903
-  job_giga_elysium_controller_drone_desc: "이 드론들은 상공에서 행성 운영을 관리하며, 그렇지 않으면 잠재적으로 혼란스러워질 수 있는 행성 전반의 질서를 유지합니다." # 16570983690834528351
-  mod_job_giga_elysium_controller_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_elysium_controller_add£" # 2372149753735252596
-  job_giga_elysium_controller_origin_effect_desc: "그리고 £job£ §Y직업 산출량§!" # 5418457487912441964
-  giga_elysium_from_station: "$orbital_elysium$에서" # 2469911564556526879
   job_giga_elysium_controller_effect_desc: "$job_giga_elysium_controller_swap_plural_with_icon$는 £consumer_goods£ §Y$consumer_goods$§!를 해당 정거장의 모행성을 위한 £stability£ §Y안정성§!으로 전환합니다" # 8737372509883884638
   job_giga_elysium_controller_swap_plural_with_icon: "[giga_elysium_controller.GetIcon] [giga_elysium_controller.GetNamePlural]" # 11044587846505700410
   mod_job_giga_elysium_controller_add: "[giga_elysium_controller.GetName] 직업" # 13404901914176382274
   mod_job_giga_elysium_controller_per_pop: "§G+1§! $VALUE$ 팝당 [giga_elysium_controller.GetName] 직업" # 6542925947783735784
+  mod_job_giga_elysium_controller_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_elysium_controller_add£" # 2372149753735252596
+  job_giga_elysium_controller_drone: "엘리시안 감독관 드론" # 6964710936631193369
+  job_giga_elysium_controller_drone_plural: "엘리시안 감독관 드론" # 12569591266574363903
+  job_giga_elysium_controller_drone_desc: "이 드론들은 상공에서 행성 운영을 관리하며, 그렇지 않으면 잠재적으로 혼란스러워질 수 있는 행성 전반의 질서를 유지합니다." # 16570983690834528351
   job_giga_elysium_controller_drone_effect_desc: "$job_giga_elysium_controller_drone_swap_plural_with_icon$는 £energy£ §Y$energy$§!를 해당 정거장의 모행성을 위한 £stability£ §Y$MOD_PLANET_STABILITY_ADD$§!로 전환합니다" # 7899107527953363035
   job_giga_elysium_controller_drone_swap_plural_with_icon: "[giga_elysium_controller_drone.GetIcon] [giga_elysium_controller_drone.GetNamePlural]" # 16653544611190642915
   mod_job_giga_elysium_controller_drone_add: "[giga_elysium_controller_drone.GetName] 직업" # 12353856690466108865
   mod_job_giga_elysium_controller_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_elysium_controller_drone.GetName] 직업" # 15039364400498890352
+  mod_job_giga_elysium_controller_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_elysium_controller_add£" # 2372149753735252596
+  job_giga_elysium_controller_origin_effect_desc: "그리고 £job£ §Y직업 산출량§!" # 5418457487912441964
+  giga_elysium_from_station: "$orbital_elysium$에서" # 2469911564556526879

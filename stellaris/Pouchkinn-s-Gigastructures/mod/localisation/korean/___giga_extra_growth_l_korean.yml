@@ -19,25 +19,25 @@
   job_giga_extra_healthcare: "보조 의료 종사자" # 14942331644026910809
   job_giga_extra_healthcare_plural: "보조 의료 인력" # 11318451110122013204
   job_giga_extra_healthcare_desc: "우리 시민들의 건강과 복지를 확보하는 것이 장기적인 번영의 열쇠입니다." # 15991157676623919075
-  mod_job_giga_extra_healthcare_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
-  job_giga_cloning: "복제 기술자" # 10505005767567817427
-  job_giga_cloning_plural: "복제 기술자" # 13212332078191597412
-  job_giga_cloning_desc: "복도를 거닐며, 부러울 만큼 세심한 태도로 배양조를 돌보고 있습니다." # 2390947303708295692
-  mod_job_giga_cloning_per_pop_short: "§G+1§! £mod_job_giga_cloning_add£ 당 $VALUE$ £pop£" # 15857435180039259528
-  job_giga_extra_crucible_drone: "보충 발생 드론" # 2350657033486569644
-  job_giga_extra_crucible_drone_plural: "보조 생산 드론" # 17393082476492074789
-  job_giga_extra_crucible_drone_desc: "체화된 합성, 요람에서 무덤까지." # 14715311514321637279
-  mod_job_giga_extra_crucible_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
-  giga_situation_extra_growth_desc: "" # 17241709254077376921
   job_giga_extra_healthcare_effect_desc: "$job_giga_extra_healthcare_swap_plural_with_icon$는 £consumer_goods£ §Y$consumer_goods$§!와 £food£ §Y$food$§!(또는 £minerals£ §Y$minerals$§!)를 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 및 £mod_pop_growth_speed£ §Y$mod_giga_pop_growth_speed_extra_add$§!(으)로 변환합니다." # 5030983251955222943
   job_giga_extra_healthcare_swap_plural_with_icon: "[giga_extra_healthcare.GetIcon] [giga_extra_healthcare.GetNamePlural]" # 10259383412376318961
   mod_job_giga_extra_healthcare_add: "[giga_extra_healthcare.GetName] 직업" # 6950210849974835248
   mod_job_giga_extra_healthcare_per_pop: "§G+1§! [giga_extra_healthcare.GetName] 직업 (팝 $VALUE$당)" # 4640951731482220801
+  mod_job_giga_extra_healthcare_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
+  job_giga_cloning: "복제 기술자" # 10505005767567817427
+  job_giga_cloning_plural: "복제 기술자" # 13212332078191597412
+  job_giga_cloning_desc: "복도를 거닐며, 부러울 만큼 세심한 태도로 배양조를 돌보고 있습니다." # 2390947303708295692
   job_giga_cloning_effect_desc: "$job_giga_cloning_swap_plural_with_icon$는 £consumer_goods£ §Y$consumer_goods$§!와 £food£ §Y$food$§!(또는 £minerals£ §Y$minerals$§!)를 £mod_planet_pop_assembly_organic_add£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!(으)로 변환합니다." # 3382785176905090958
   job_giga_cloning_swap_plural_with_icon: "[giga_cloning.GetIcon] [giga_cloning.GetNamePlural]" # 9421802641798042992
   mod_job_giga_cloning_add: "[giga_cloning.GetName] 직업" # 17625036531912657917
   mod_job_giga_cloning_per_pop: "§G+1§! [giga_cloning.GetName] 직업 (팝 $VALUE$당)" # 9739652547716484930
+  mod_job_giga_cloning_per_pop_short: "§G+1§! £mod_job_giga_cloning_add£ 당 $VALUE$ £pop£" # 15857435180039259528
+  job_giga_extra_crucible_drone: "보충 발생 드론" # 2350657033486569644
+  job_giga_extra_crucible_drone_plural: "보조 생산 드론" # 17393082476492074789
+  job_giga_extra_crucible_drone_desc: "체화된 합성, 요람에서 무덤까지." # 14715311514321637279
   job_giga_extra_crucible_drone_effect_desc: "$job_giga_extra_crucible_drone_swap_plural_with_icon$는 £alloys£ §Y$alloys$§!와 £food£ §Y$food$§!(또는 £minerals£ §Y$minerals$§!)를 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 및 £mod_pop_growth_speed£ §Y$mod_giga_pop_growth_speed_extra_add$§!(으)로 변환합니다." # 8949929666562230374
   job_giga_extra_crucible_drone_swap_plural_with_icon: "[giga_extra_crucible_drone.GetIcon] [giga_extra_crucible_drone.GetNamePlural]" # 9414312944294391745
   mod_job_giga_extra_crucible_drone_add: "[giga_extra_crucible_drone.GetName] 직업" # 10510101563210194959
   mod_job_giga_extra_crucible_drone_per_pop: "§G+1§! [giga_extra_crucible_drone.GetName] 직업 (팝 $VALUE$당)" # 13398418322530705984
+  mod_job_giga_extra_crucible_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
+  giga_situation_extra_growth_desc: "" # 17241709254077376921

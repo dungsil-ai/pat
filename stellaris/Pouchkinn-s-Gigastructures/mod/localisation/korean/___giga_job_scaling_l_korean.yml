@@ -1,22 +1,22 @@
 ﻿l_korean:
+  d_giga_job_size: "직업 규모 조정 효과 §P(사용 중단됨)§!" # 4384888905217183968
   d_giga_job_size_desc: "효율성 때문이든, 아니면 시설의 거대한 규모 때문이든, 이 행성에서는 많은 일자리가 더 강력합니다." # 3416375372436946227
+  giga_planet_job_size: "행성 직업 규모 조정" # 7767393289126056044
   mod_giga_planet_job_size: "직업 규모" # 106659635920654271
   mod_giga_planet_job_size_tooltip_pre: "이 행성의 §Y$mod_giga_planet_job_size$§! 수정치의 크기를 기반으로, 많은 작업 범주의 기본 생산과 유지비를 증가시킵니다.\n" # 9266536341976456407
   mod_giga_planet_job_size_tooltip_pre_short: "총 직업 규모:" # 15830861863125198779
   mod_giga_planet_job_size_tooltip: "총 직업 규모에 따른 효과" # 1430323993204008872
+  mod_giga_planet_job_size_tooltip_post: " " # 548583522804720525
   mod_giga_planet_job_size_tooltip_post_short: "\n" # 7161557352316922208
   mod_giga_planet_job_size_empty_short: "행성 수용량 증가§Y+0%§!" # 1045123913221234540
   d_giga_job_size_ringworld: "끝없는 광야" # 6290720148845657861
   d_giga_job_size_ringworld_desc: "확장할 충분한 공간이 있기에, 더 크고 더 좋게 건설할 수 있습니다." # 17101904438140746365
   d_giga_job_upkeep: "고밀도 행성 스케일링" # 5164812379472496713
   d_giga_job_upkeep_desc: "아무리 효율성을 극대화하려 해도 배치의 규모에 의해 좌절될 수 있습니다." # 8447078879200282763
-  d_giga_job_size: "직업 규모 조정 효과 §P(사용 중단됨)§!" # 4384888905217183968
-  giga_planet_job_size: "행성 직업 규모 조정" # 7767393289126056044
-  mod_giga_planet_job_size_value: "" # 17241709254077376921
-  mod_giga_planet_job_size_tooltip_post: " " # 548583522804720525
-  mod_giga_planet_job_size_empty: "" # 17241709254077376921
   d_giga_job_upkeep_tooltip: "4.0 팝 개편으로 도입된 기술적 제한으로 인해 일시적으로 비활성화되었습니다. 추후 다시 돌아올 예정입니다." # 8460981872208937903
   d_giga_job_upkeep_tooltip_short: "§P일시적으로 비활성화됨§!" # 7714161666951459014
+  mod_giga_planet_job_size_value: "" # 17241709254077376921
+  mod_giga_planet_job_size_empty: "" # 17241709254077376921
   mod_giga_planet_jobs_upkeep_mult_offset: "" # 17241709254077376921
   mod_giga_planet_jobs_upkeep_mult_offset_short: "" # 17241709254077376921
   mod_giga_planet_jobs_productive_upkeep_mult_offset: "" # 17241709254077376921

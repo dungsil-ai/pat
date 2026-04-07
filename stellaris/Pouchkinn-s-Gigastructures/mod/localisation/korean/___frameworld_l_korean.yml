@@ -7,6 +7,7 @@
   giga_biotrophy_scaling_desc: "§T이 메가스트럭처는 일반 행성보다 훨씬 높은 밀도의 £job_bio_trophy£ §Y$job_bio_trophy_plural$§!을 허용합니다. 이 효과는 §Y$mod_planet_jobs_complex_drone_produces_mult$§!이 높은 수치에 도달했을 때 발생하는 극심한 중첩 효과를 상쇄합니다.\n\n추가적인 £job_bio_trophy£ §Y$job_bio_trophy_plural$§!은 항상 이롭지만, 새로운 팝이 증가함에 따라 효율성은 §Y50§! 팝을 초과하면 §Y20%§!로, §Y150§! 팝에서는 더 낮아집니다.\n\n$job_bio_trophy$ 팝: §Y[Root.giga_biotrophy_count]§!\n기본 보너스: §G+[Root.giga_biotrophy_count]%§!\n조정된 보너스: §G+[Root.giga_biotrophy_adjusted]%§!\n효율성: §Y[Root.giga_biotrophy_efficiency]%§!§!\n§T--------------§!\n$giga_biotrophy_scaling_fluff$" # 11993481704150043451
   d_giga_biotrophy_scaling: "$giga_biotrophy_scaling$" # 8465027162020290018
   d_giga_biotrophy_scaling_desc: "§T상세 내용은 동일한 이름의 행성 수정자를 참조하십시오.§!\n\n$giga_biotrophy_scaling_fluff$" # 14642524988382434152
+  frameworld_space: " " # 548583522804720525
   frameworld_line: "\t" # 12510459969421899229
   pc_giga_frameworld: "프레임 세계" # 13700801779385555664
   pc_giga_frameworld_desc: "거대한 중심 핵 주변에 밀집된, 상호 연결된 우주 정거장들로 이루어진 넓게 펼쳐진 복합체." # 13493076371227281656
@@ -172,6 +173,7 @@
   district_giga_frameworld_refinery_gases_unlock_gestalt: "£engineering£ §Y$tech_exotic_gases$§!: $job_gas_refiner_drone$ 일자리: §G+1§!" # 4258279680259773213
   district_giga_frameworld_refinery_crystals_unlock: "£engineering£ §Y$tech_rare_crystals$§!: $job_translucer$ 직업: §G+1§!" # 15725232310238179362
   district_giga_frameworld_refinery_crystals_unlock_gestalt: "£engineering£ §Y$tech_rare_crystals$§!: $job_translucer_drone$ 직업: §G+1§!" # 13649035446873093610
+  district_giga_frameworld_refinery_empty: " " # 548583522804720525
   district_gaia_frameworld_refinery_upgrade_desc_1: "$pc_giga_frameworld$ $district_giga_frameworld_refinery$ 이용 가능, 직업 제공" # 1184975091685202360
   district_gaia_frameworld_refinery_upgrade_desc_2: "$pc_giga_frameworld$ $district_giga_frameworld_refinery$를 업그레이드하며, 일자리 하나를 추가합니다." # 14729717041123190156
   district_giga_frameworld_refinery_gases: "프레임월드 정제 지구 정제소" # 7983902234920421240
@@ -779,5 +781,3 @@
   frameworld_asteroid_fake_tooltip: "§Y$d_frameworld_asteroid$§!를 §Y$pc_giga_frameworld$§!에 추가합니다. 그 결과:\n    $mod_district_giga_frameworld_mining_max$: §G+0.25§!" # 14926707512772755404
   frameworld_penrose_fake_tooltip: "거대 구조물 완공 시, §Y[this.GetName]§!에 §Y$d_frameworld_penrose$§!을(를) 추가하며, 그 결과는 다음과 같습니다:\n    $mod_planet_technician_energy_produces_add_planet$: §G+1§!\n    $mod_planet_technician_minerals_upkeep_add_planet$: §R+1§!" # 18433421344218984278
   frameworld_blank: "" # 17241709254077376921
-  frameworld_space: " " # 548583522804720525
-  district_giga_frameworld_refinery_empty: " " # 548583522804720525

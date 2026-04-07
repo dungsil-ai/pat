@@ -54,17 +54,17 @@
   cosmogenesis_world_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_science_production$\n팝을 소모하여 §Y연구§!와 §Y첨단 논리§!를 생성하는 거대한 저장소 컴퓨터입니다. 효율성과 소진율은 인구에 따라 증가합니다.\n§L현실의 내면에서 의미를 얻으려면 새로운 종류의 과학이 필요합니다...§!" # 17541656992346089875
   cosmogenesis_needle: "$gc_crisis$$NAME_Cosmogenesis_Sphere$" # 315481918392641839
   cosmogenesis_needle_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n우리 스스로 만들어낸 현실로 초월하기 위해, 이 우주를 영원히 떠나기 전에 전 문명을 호라이즌 니들에 태워야 합니다.\n§LA우주 법칙에 대한 명백한 위반입니다.§!" # 16466669802725053981
+  crisis_sphere_0: "$gc_crisis$에테로파직 엔진 프레임" # 9450070497235178304
+  crisis_sphere_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n$crisis_sphere_0_DESC$\n§L우리의 정신은 더 이상 나약한 육체의 물리적 제약에 얽매이지 않을 것이며, 현실 그 자체가 우리의 뜻에 따르게 될 것이다. 진정으로 이보다 더 높은 존재의 차원은 존재할 수 없다.§!" # 4847953318812049412
+  galactic_crucible_0: "$gc_crisis$은하 도가니 프레임" # 11107653465148101449
+  galactic_crucible_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n이 거대한 정거장은 항성으로부터 에너지를 흡수하여 §Y$entropy_conduit_plural$§!을 생산하는 자동화 조선소에 동력을 공급한다. 이 함선들은 항성의 운명을 재편할 수 있는 능력을 갖추고 있다.\n§L$galactic_crucible_0_DESC$§!" # 13310665790231283785
   grand_archive_0: "$gc_kilo$웅장한 기록 보관소" # 8345242038666751122
   grand_archive_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_miscellaneous$\n우리가 은하 전역에서 수집한 가장 귀중한 유물들을 보존 및 전시합니다.\n§L살아있는 우주 생명체를 포함하여, 우리가 은하 전역에서 수집한 주목할 만한 표본들을 수용 및 전시하도록 설계된 전용 궤도 구조물입니다.§!" # 17661792980195262098
   deep_space_citadel_0: "$gc_kilo$$tech_deep_space_citadel$" # 2328173949395329599
   deep_space_citadel_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_defensive$\n§Y$deep_space_citadel_0$§!는 항성 중력 우물 내에서 최대한의 방어를 위해 설계된 장갑화된 성계 기지입니다.\n§L$deep_space_citadel_0_DESC$§!" # 13641303668314224308
   shroud_seal: "$SHROUD_SEAL$" # 132558071430517284
   shroud_seal_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_psionics$\n§Y$SHROUD_SEAL$§!이(가) 인근의 §Y$PSIONIC_AURA_PLURAL$§!을(를) 감쇠시킵니다. 이 성계 내의 §Y$PSIONIC_AURA$§!는 강도가 $@shroud_seal_decrease|0$만큼 감쇠하며, 인접 성계는 -1 강도만큼 감쇠합니다.\n§L$shroud_seal_DESC$§!" # 5223034580452942443
-  behemoth_egg_DESC: "배태 중인 §Y베헤모스§!를 싣고 있는 거대한 유기체 함선." # 6369491057284151847
-  concept_automodding_hab_preference_desc: "일반:\n- ['trait:trait_auto_dry_preference']\n- ['trait:trait_auto_wet_preference']\n- ['trait:trait_auto_cold_preference']\n\n특수:\n- ['trait:trait_auto_pc_nuked_preference']\n- ['trait:trait_auto_pc_gaia_preference']\n- ['trait:trait_auto_pc_hive_preference']\n\n인공:\n- ['trait:trait_auto_pc_city_preference']\n- ['trait:trait_auto_pc_relic_preference']\n- ['trait:trait_auto_pc_habitat_preference']\n- ['trait:trait_auto_pc_ringworld_habitable_preference']\n- ['trait:trait_auto_pc_cosmogenesis_world_preference']\n- ['trait:trait_auto_pc_alderson_slice_preference']" # 15844390701052154331
-  crisis_sphere_0: "$gc_crisis$에테로파직 엔진 프레임" # 9450070497235178304
-  crisis_sphere_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n$crisis_sphere_0_DESC$\n§L우리의 정신은 더 이상 나약한 육체의 물리적 제약에 얽매이지 않을 것이며, 현실 그 자체가 우리의 뜻에 따르게 될 것이다. 진정으로 이보다 더 높은 존재의 차원은 존재할 수 없다.§!" # 4847953318812049412
-  galactic_crucible_0: "$gc_crisis$은하 도가니 프레임" # 11107653465148101449
-  galactic_crucible_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n이 거대한 정거장은 항성으로부터 에너지를 흡수하여 §Y$entropy_conduit_plural$§!을 생산하는 자동화 조선소에 동력을 공급한다. 이 함선들은 항성의 운명을 재편할 수 있는 능력을 갖추고 있다.\n§L$galactic_crucible_0_DESC$§!" # 13310665790231283785
   behemoth_egg: "$gc_crisis$베헤모스 알" # 16184748459050111841
+  behemoth_egg_DESC: "배태 중인 §Y베헤모스§!를 싣고 있는 거대한 유기체 함선." # 6369491057284151847
   behemoth_egg_MEGASTRUCTURE_DETAILS: "$giga_list_category_crisis$ - $giga_list_category_special$\n이 구조물은 §Y베헤모스 알§!의 배양을 지원한다.\n§L$behemoth_egg_DESC$§!" # 8988701686670612680
+  concept_automodding_hab_preference_desc: "일반:\n- ['trait:trait_auto_dry_preference']\n- ['trait:trait_auto_wet_preference']\n- ['trait:trait_auto_cold_preference']\n\n특수:\n- ['trait:trait_auto_pc_nuked_preference']\n- ['trait:trait_auto_pc_gaia_preference']\n- ['trait:trait_auto_pc_hive_preference']\n\n인공:\n- ['trait:trait_auto_pc_city_preference']\n- ['trait:trait_auto_pc_relic_preference']\n- ['trait:trait_auto_pc_habitat_preference']\n- ['trait:trait_auto_pc_ringworld_habitable_preference']\n- ['trait:trait_auto_pc_cosmogenesis_world_preference']\n- ['trait:trait_auto_pc_alderson_slice_preference']" # 15844390701052154331

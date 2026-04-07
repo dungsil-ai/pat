@@ -58,10 +58,8 @@
   quasi_stellar_obliterator_6_DESC: "초병기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
   quasi_stellar_marker_star_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
   quasi_stellar_marker_planet_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
   giga_qso.3000.name: "콰사리아의 평화" # 14516309440491175786
   giga_qso.3000.desc: "§R경악스러운 소식!§!\n\n우리 $name_quasistellar$의 중요한 부분이 완성됨에 따라, 은하계는 우리를 은하계의 안전에 대한 보편적인 위협으로 간주하기 시작한 듯합니다. 실제로, 대량 학살을 자행하지 않는 모든 제국은 오늘 '콰사리아의 평화'라 불리는 상호 불가침 조약과 함께 기한 없는 휴전에 합의했습니다. 그들은 적어도 지금은 우리의 하이퍼무기로 은하계의 안전을 위협하지 못하도록 사소한 다툼을 잠시 접어두기로 결정했습니다..." # 9789629933934543932
   giga_qso.3000.a: "그게 도움이 될 거라 생각하나?" # 6328228696513221900
@@ -213,3 +211,5 @@
   giga_qso.112.name: "컨틴전시의 종말" # 15506281177460152470
   giga_qso.112.desc: "컨틴전시는 실패했습니다. 마지막 기계 행성이 파괴됨으로써, 적어도 컨틴전시로부터의 조직적인 대량 멸종 위협은 은하계에서 사라졌습니다. 살아남은 모든 컨틴전시 전투 형태는 전원이 꺼지거나 자폭했으며, 고스트 신호도 더 이상 송출되지 않습니다.\n\n주 넥서스는 $name_quasistellar$의 강력한 레이저에 의해 단 몇 초 만에 완전히 소멸되어 아무것도 남지 않았습니다.\n\n컨틴전시는 더 이상 존재하지 않지만, [quasistellar_owner.GetName]가 이 하이퍼웨폰을 다른 목표를 향해 겨눌지 여부는 지켜봐야 할 것입니다..." # 4614566760760267071
   giga_qso.112.a: "조 단위 태양의 위력 앞에서 그들이 무엇을 할 수 있겠는가?" # 13530594081540161860
+  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
