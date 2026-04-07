@@ -32,6 +32,7 @@
   concept_developed_countries: "선진국들" # 2029104628788855445
   concept_developed_country_desc: "어떤 국가가 특정 수준의 경제적, 사회적 발전에 도달했을 때 [Concept('concept_developed_country','$concept_developed_country_short$')]로 간주됩니다. 여기에는 1인당 GDP, 기대 수명, 교육 수준, 산업화와 같은 요소가 포함됩니다. [Concept('concept_developed_country','$concept_developed_country_short$')]는 일반적으로 고도로 발달한 인프라, 다각화된 경제, 그리고 시민들을 위한 높은 생활 수준과 복지를 특징으로 합니다." # 17241379502693118707
   concept_un_subject_imf: "IMF" # 12748625656390995145
+  concept_un_subject_imf_desc: "국제통화기금(IMF)과 세계은행은 현대 국제 질서의 금융적 중추로서, 전후 복구와 통화 안정, 그리고 개발 차관을 조정하는 역할을 수행합니다." # 6436300686803744792
   concept_un_subject_wto: "WTO" # 13407931444623835749
   concept_un_subject_wto_desc: "세계무역기구는 세계 무역을 위한 규칙 기반 기관으로, 무역 장벽을 낮추고 상업적 분쟁을 표준화합니다." # 2657729528057685493
   concept_un_subject_icc: "국제형사재판소" # 11522383758185863320
@@ -94,4 +95,3 @@
   concept_un_institution_unesco_not_established_desc: "UN 질서는 아직 유네스코를 설립하지 않았습니다." # 14695236719402301838
   concept_un_institution_unesco_established: "수립됨" # 1191756773486043975
   concept_un_institution_unesco_established_desc: "유네스코는 UN 주도 질서의 일부로서, 과학 교류, 교육 정책 및 문화 협력을 증진합니다." # 17196920598102839054
-  concept_un_subject_imf_desc: "국제통화기금(IMF)과 세계은행은 현대 국제 질서의 금융적 중추로서, 전후 복구와 통화 안정, 그리고 개발 차관을 조정하는 역할을 수행합니다." # 6436300686803744792
