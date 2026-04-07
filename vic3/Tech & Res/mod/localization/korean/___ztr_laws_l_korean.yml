@@ -76,3 +76,5 @@
   ztr_un_hr_encouraged_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정을 장려하지 않습니다." # 6387046048474036882
   ztr_un_hr_conservative_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정에 대해 보수적이지 않습니다." # 6746939984270385719
   ztr_un_hr_illegalized_slavery_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 노예제#!를 #n 불법화#!하지 않았습니다." # 16879454732413035856
+  ztr_un_hr_restricted_labor_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 아동 노동#!을 제한하지 않았습니다." # 14894112425902922775
+  ztr_un_hr_compulsory_primary_school_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 의무 초등 교육#!을 #n 필수#!로 지정하지 않았습니다." # 7219685078397618886

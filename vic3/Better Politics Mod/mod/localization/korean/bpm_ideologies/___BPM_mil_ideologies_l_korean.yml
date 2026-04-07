@@ -1,6 +1,8 @@
 ﻿l_korean:
   ideology_mil_ultramilitarist: "극단적 군국주의자" # 6239841342536909245
   ideology_mil_ultramilitarist_desc: "#lore 이 집단은 전쟁과 투쟁이 자명하게 선하고 바람직하다고 믿으며, 평화를 바라는 어떠한 염원도 내팽개치고 전쟁만을 추구합니다. #!" # 10248897696791264631
+  ideology_jingoist: "군국주의자" # 4132034768516086124
+  ideology_jingoist_desc: "#lore 징고이즘! 이 집단은 외교 문제에서 군국주의가 우선되어야 한다고 믿으며, 이러한 열망을 뒷받침할 군대를 필요로 합니다. #!" # 17510045275000539435
   ideology_mil_patriotic: "애국적인" # 7689768029941360011
   ideology_mil_patriotic_desc: "#lore 이 집단은 국가 방위를 위한 강력하고 전문적인 군대를 지지하며, 필요하다면 가끔 원정대 파견도 지지합니다.#" # 13354832763041429804
   ideology_mil_patriotic_liberal: "자유주의 애국주의" # 8342970304442109389
@@ -23,5 +25,3 @@
   ideology_mil_emergency_desc: "#lore 대규모 분쟁의 압력 아래, 이 집단은 평시 군사 정책에도 불구하고 대규모 징집을 강력히 요구하고 있습니다. #!" # 8210602288281186374
   ideology_mil_institutional_militarist: "제도적 군국주의자" # 2435002530109401221
   ideology_mil_institutional_militarist_desc: "#lore 이 집단은 현 군부 지도부에 간섭만 하지 않는다면, 충분한 자금이 지원되고 강력한 군대에 중점을 두기를 열망합니다. #!" # 17140288924053827335
-  ideology_jingoist: "군국주의자" # 4132034768516086124
-  ideology_jingoist_desc: "#lore 징고이즘! 이 집단은 외교 문제에서 군국주의가 우선되어야 한다고 믿으며, 이러한 열망을 뒷받침할 군대를 필요로 합니다. #!" # 17510045275000539435

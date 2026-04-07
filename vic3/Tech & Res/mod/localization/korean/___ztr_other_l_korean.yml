@@ -52,14 +52,6 @@
   ztr_un_resolution_refused_modifier: "유엔 결의안 거부됨" # 7152099822647331212
   ztr_un_resolution_veto_modifier: "유엔 결의안 거부" # 2710470628096133622
   ztr_un_resolution_used_veto_modifier: "유엔 결의안 거부권 행사" # 995780768989263584
-  ztr_wto_member_modifier: "세계무역기구 가입" # 5254548070430521459
-  ztr_wto_member_modifier_desc: "WTO 체제 가입은 무역 장벽을 낮추고 국제 시장에 대한 접근성을 향상합니다." # 4985197518550478241
-  ztr_icc_member_modifier: "국제형사재판소 관할권" # 17663522790870974154
-  ztr_icc_member_modifier_desc: "ICC 체제는 회원국에 일정한 법적 및 외교적 제약을 부과합니다." # 9820163783968706052
-  ztr_icc_investigation_modifier: "국제형사재판소 조사" # 14011800191737682518
-  ztr_icc_investigation_modifier_desc: "국제 검찰이 우리의 행위를 면밀히 조사하고 있어, 위신이 실추되고 국내 정통성이 약화하고 있습니다." # 17104037238301825375
-  ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
-  ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
   historical_population_of_germany: "19세기 호황" # 8751212409197186862
   population_of_brazil_during_slavery: "독립 이후 노예제" # 15572915988515035870
   population_of_brazil_during_slavery_player: "독립 이후 노예제" # 15572915988515035870
@@ -251,6 +243,10 @@
   medium_imf_help_modifier: "IMF 개입" # 4219385685124753401
   small_imf_help_modifier: "IMF 개입" # 4219385685124753401
   tiny_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  ztr_wto_member_modifier_desc: "WTO 체제 가입은 무역 장벽을 낮추고 국제 시장에 대한 접근성을 향상합니다." # 4985197518550478241
+  ztr_icc_investigation_modifier_desc: "국제 검찰이 우리의 행위를 면밀히 조사하고 있어, 위신이 실추되고 국내 정통성이 약화하고 있습니다." # 17104037238301825375
+  ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
+  ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
   land_reclamation_struggle_modifier: "간척 사업의 투쟁" # 17326798404457842216
   geographic_region_oceania: "오세아니아" # 77874904389657804
   modern_medicine_0: "19세기 초 복지" # 5751458070186196927
@@ -264,3 +260,7 @@
   ztr_ccp_mass_line_campaign: "공산주의 대중 노선" # 13142328998336719798
   ztr_ccp_united_front_campaign: "항일민족통일전선" # 15860789598692665030
   ztr_ccp_long_march_legacy: "대장정" # 12655507841875296042
+  ztr_wto_member_modifier: "WTO 가입" # 14536909739268106523
+  ztr_icc_member_modifier: "ICC 관할권" # 18181978016109285627
+  ztr_icc_member_modifier_desc: "국제형사재판소 체제는 회원국들에게 어느 정도의 법적 및 외교적 제약을 부과합니다." # 15964460468966646811
+  ztr_icc_investigation_modifier: "ICC 조사" # 7495670902019161460

@@ -657,7 +657,6 @@
   ztr_ottoman_collapse.117.d: "[SCOPE.sCountry('ztr_ottoman_collapse_requested_target').GetName]이(가) 우리의 #v 이라크#! 제안을 거부했습니다. 따라서 메소포타미아 문제는 해결되지 않은 채로 남았으며, 더 가혹한 수단을 불러올지도 모릅니다." # 14652857929801989188
   ztr_ottoman_collapse.117.a: "이 일을 기억할 것입니다." # 11943833676117585282
   ztr_un_event.10.t: "국제연합 투표 세션" # 3173547594989088766
-  ztr_un_event.10.d: "#blue_value 안전보장이사회#!가 UN 제안에 대한 공식 투표를 시작했습니다. [Concept('concept_united_nations','$concept_united_nations$')]의 일원으로서, 우리는 투표를 행사해야 합니다.\n\n#bold 주제#!: #v [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_subject_name')]#!\n#p 제안#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_proposal_name')]\n#n 현행 법률#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_current_law_name')]\n\n우리는 UN 투표 세션 일지 항목을 통해 숙고하고 투표를 행사할 1년의 시간이 있습니다." # 649541688671092405
   ztr_un_event.10.a: "신중하게 사안을 검토하겠습니다." # 9050427579738252131
   ztr_un_event.10.b: "이 제안을 지지합니다." # 1954144070553106481
   ztr_un_event.10.c: "이 제안에 반대합니다." # 12587017061911369322
@@ -726,7 +725,6 @@
   ztr_un_event.40.e: "@un_unesco! #v UNESCO#! 창설 논의" # 11594224844039325572
   ztr_un_event.40.f: "현재로서는 기구 설립 제안이 필요하지 않습니다." # 5288719618771970277
   ztr_un_event.41.t: "IMF 및 세계은행 설립" # 13176009621773311081
-  ztr_un_event.41.d: "전후 경제는 통화 안정, 재건 금융, 장기 개발 차관을 조정할 수 있는 기구가 필요합니다. @un_imf! #v IMF#! 체제는 빈곤국들에게는 구조화된 지원에 대한 접근성을 제공하고, 부유한 국가들에게는 공통된 금융 구조를 제공할 것입니다.\n\n채택될 경우, 기존의 브레튼우즈 회의 연쇄가 우리의 후원 하에 소집될 것입니다." # 10169970339288907919
   ztr_un_event.41.a: "제안: @un_imf! [Concept('concept_un_institution_imf_established','$concept_un_institution_imf_established$')]" # 12438215995276829402
   ztr_un_event.41.b: "됐습니다, 이 기구는 제안하지 않겠습니다." # 17677111106784848341
   ztr_un_event.42.t: "세계무역기구 설립" # 2401731313940892484
@@ -741,3 +739,5 @@
   ztr_un_event.44.d: "과학 교류, 교육 정책, 문화 보존은 점점 더 국제적 위신과 장기적인 발전을 형성하고 있습니다. @un_unesco! #v UNESCO#!는 UN 시스템에 학교, 연구 협력, 국경을 초월한 문화 협력을 위한 전담 기구를 제공할 것입니다.\n\n채택될 경우, UN 회원국들은 작지만 지속적인 교육 및 혁신 혜택을 얻게 될 것입니다." # 13949563303223236585
   ztr_un_event.44.a: "제안: @un_unesco! [Concept('concept_un_institution_unesco_established','$concept_un_institution_unesco_established$')]" # 16953089414341359936
   ztr_un_event.44.b: "됐습니다, 이 기구는 제안하지 않겠습니다." # 17677111106784848341
+  ztr_un_event.10.d: "[SCOPE.sCountry('ztr_un_vote_proposer_scope').GetName]의 주도로 #blue_value 안전보장이사회#!가 UN 제안에 대한 공식 투표를 개시했습니다. [Concept('concept_united_nations','$concept_united_nations$')]의 일원으로서, 우리는 투표권을 행사할 것을 요청받았습니다.\n\n#bold 안건#!: #v [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_subject_name')]#!\n#p 제안#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_proposal_name')]\n#n 현행 법률#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_vote_current_law_name')]\n\n우리는 UN 투표 세션 일지 항목을 통해 심의하고 투표할 수 있는 1년의 기간이 주어졌습니다." # 5844218196912543067
+  ztr_un_event.41.d: "국제 통화 협력을 증진하고, 금융 안정성을 확보하며, 국제 무역을 촉진하고, 높은 고용률과 지속 가능한 경제 성장을 도모하며, 전 세계의 빈곤을 줄이기 위해 @un_imf! #v IMF#!를 설립하십시오. @un_imf! #v IMF#! 체제는 빈곤국에게는 구조화된 지원에 대한 접근성을 제공하고, 부유한 국가에게는 공통의 금융 구조를 제공할 것입니다." # 13749062836946626465

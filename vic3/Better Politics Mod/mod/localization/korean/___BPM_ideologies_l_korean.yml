@@ -27,6 +27,8 @@
   ideology_liberal_leader: "자유민주당" # 4624409222733939175
   ideology_serfdom_reformer: "농노제 개혁가" # 2415358055452768224
   ideology_serfdom_reformer_desc: "#lore 이 지도자는 농노제를 최소한의 개혁이 필요한 제도로 여깁니다. #!" # 17031170750842577333
+  ideology_jingoist: "군국주의자" # 4132034768516086124
+  ideology_jingoist_desc: "#lore 맙소사! 이 집단은 군대가 사회의 전반적인 구조에 통합되어야 한다고 믿습니다. #!" # 11831587163837333485
   ideology_anarchist_syndicalist: "무정부주의적 생디칼리스트" # 7535324978704659639
   ideology_anarchist_syndicalist_desc: "$ideology_anarchist_desc$" # 13635670963674959023
   ideology_syndicalist: "생디칼리스트" # 12287891860791190895
@@ -42,5 +44,3 @@
   ideology_dove_desc: "#lore 이 지도자는 외교적 접근 방식을 선호합니다. #!" # 1303158306652376666
   ideology_revolutionary_hawk: "혁명 매파" # 723839848633317317
   ideology_revolutionary_hawk_desc: "#lore 이 지도자는 진보적인 정책을 필요하다면 무력을 사용해서라도 전 세계에 선제적으로 시행해야 한다고 믿고 있습니다. #!" # 17818492642978913974
-  ideology_jingoist: "군국주의자" # 4132034768516086124
-  ideology_jingoist_desc: "#lore 맙소사! 이 집단은 군대가 사회의 전반적인 구조에 통합되어야 한다고 믿습니다. #!" # 11831587163837333485
