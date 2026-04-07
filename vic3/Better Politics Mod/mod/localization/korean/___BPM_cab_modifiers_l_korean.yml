@@ -358,9 +358,9 @@
   bpm_hog_antagonism_double_modifier: "[concept_bpm_antagonism]" # 14148578215335003907
   bpm_hog_antagonism_triple_modifier: "[concept_bpm_antagonism]" # 14148578215335003907
   bpm_hog_antagonism_ultra_modifier: "[concept_bpm_antagonism]" # 14148578215335003907
-  bpm_low_synergy_modifier: "낮음 [concept_bpm_synergy]" # 1114191795708830231
-  bpm_mid_synergy_modifier: "보통 [concept_bpm_synergy]" # 878363627552335981
-  bpm_high_synergy_modifier: "높음 [concept_bpm_synergy]" # 5147119230375550808
   bpm_hog_attraction_modifier: "$bpm_hog_title_default$" # 16576237924210925811
   bpm_colonial_affairs_fallback_modifier_desc: "" # 17241709254077376921
   bpm_hog_antagonism_modifier_none: "" # 17241709254077376921
+  bpm_high_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
+  bpm_mid_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
+  bpm_low_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058

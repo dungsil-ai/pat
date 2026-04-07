@@ -12,7 +12,6 @@
   country_institution_cost_institution_economy_mult_desc: "[GetInstitutionType('institution_economy').GetName]를 시민들에게 제공하는 데 드는 @bur![Nbsp][concept_bureaucracy] 비용의 증가 또는 감소" # 3741814200256825697
   country_institution_cost_institution_culture_mult: "@bur![Nbsp][concept_bureaucracy] [GetInstitutionType('institution_culture').GetName] 비용" # 9506499600926173016
   country_institution_cost_institution_culture_mult_desc: "시민들에게 [GetInstitutionType('institution_culture').GetName]을 제공하는 데 드는 @bur![Nbsp][concept_bureaucracy] 비용의 증가 또는 감소" # 3738748050263651457
-  bpm_modifier_revolution_victorious_light: "혁명군 승리" # 16424220559140305377
   bpm_from_moderatism: "보통 지도자로부터의 무작위 값" # 8020994526833216683
   bpm_two_party_system: "양당제" # 18407341949761969474
   bpm_two_party_system_historical: "역사적인 양당제" # 11281750250783484731
@@ -46,9 +45,6 @@
   bpm_from_first_intl_split: "무정부주의자 분열" # 4997823505841443569
   bpm_emboldened_ig: "#강경파#" # 5486429458434563977
   bpm_empowered_ig: "권한 있는 집단" # 15376143695092442651
-  bpm_damaged_ig: "피해를 입은 집단" # 2036794787153700786
-  bpm_ig_disrupted_by_assassination: "살인 음모로 인한 혼란" # 9481920020546420881
-  bpm_ig_disrupted_by_exile: "강제 추방으로 인한 혼란" # 13445042879513906337
   bpm_damaged_government_infrastructure: "손상된 정부 기반 시설" # 5687542533486452531
   bpm_stubborn_ig: "완고함" # 17867982253245632830
   bpm_1848_stubborn_ig: "민족들의 봄" # 8061709251474424483
@@ -105,7 +101,6 @@
   bpm_historical_leader: "역사적 지도자로부터" # 18215911796759534741
   bpm_from_absent_conservatives: "보수주의자들의 부재로부터" # 14559347496422045057
   bpm_from_american_history: "역사적 정렬로부터" # 11648661164678331720
-  bpm_crisis_bureaucratic_fiefdoms: "관료적 영지" # 6702584863897616069
   bpm_rollback: "필리버스터에 대한 적극적인 반대" # 788365552488242922
   bpm_containment: "불법 행위에 대한 수동적 방치" # 5619578511465828974
   bpm_filibuster: "필리버스터 지지 활동" # 12081969783966043936
@@ -294,8 +289,6 @@
   country_bpm_can_not_promise_laws_bool_desc: "어떤 [Concept('concept_interest_group','Interest Groups')]도 잠재적인 [Concept('concept_bpm_law_sway','Sway')] 선택지로 [concept_law]가 통과될 것이라는 약속을 받아들이지 않을 것입니다." # 16750660007086212313
   interest_group_bpm_can_not_promise_laws_to_bool: "[concept_law]을 약속받음으로써 [Concept('concept_bpm_law_sway','Swayed')]될 수 없습니다." # 16840090546432776802
   interest_group_bpm_can_not_promise_laws_to_bool_desc: "이 [Concept('concept_interest_group','이해 집단')]은 잠재적인 [Concept('concept_bpm_law_sway','법안 로비')] 선택지로 [concept_law]가 통과될 것이라는 약속을 받아들이지 않을 것입니다." # 1322703726638892830
-  country_bpm_low_rigidity_no_econ_debuff: "낮은 [concept_bpm_political_stability]로 인한 경제적 페널티 없음" # 16085357285707944338
-  country_bpm_low_rigidity_no_econ_debuff_desc: "낮은 [concept_bpm_political_stability] 상태가 [Concept('concept_construction','건설')] 및 [Concept('concept_throughput','처리량')]에 영향을 주지 않음" # 10762127750802079358
   bpm_repeatable_movements_not_allowed: "반복 가능한 법률에 대해서는 이동을 가질 수 없습니다" # 17078028818961195034
   bpm_block_law_cancel: "법안 최종 단계에서는 철회 불가" # 6396060874802223613
   country_law_enactment_ruler_veto_bypass: "입법부가 군주의 거부권 무력화 가능" # 494262929849095952
@@ -311,4 +304,32 @@
   bpm_bakufu_administrative_state: "막부 행정 국가" # 16043837840209705156
   bpm_ig_gaining_support: "지지 획득" # 12060725307332788322
   bpm_alexander_ii_reforms: "알렉산드르 2세의 개혁" # 3089746303022532852
-  interest_group_bpm_organization_ideological_rate_add: "[Concept('concept_bpm_ideological_ig','이념적 이익 집단')] 조직 변화율" # 9446527065252638784
+  NO_EGALITARIANISM: "평등주의 미개발" # 10566251868079054976
+  POWERFUL_SOC: "강력한 사회주의자" # 15282852450409850389
+  POWERFUL_FAC: "강력한 파시스트" # 9914090983089612638
+  LOST_WAR: "최근 전쟁 패배" # 2010291880698869008
+  DEVASTATED: "황폐화" # 7065116213981129970
+  BPM_STRONG_LABOR: "강력한 노동 운동" # 15345705451323090520
+  BPM_AVERAGE_LABOR: "보통 수준의 노동 운동" # 3947011257275753591
+  LIMITED_DEMOCRACY: "제한적 민주주의" # 15283803519875826036
+  NO_DEMOCRACY: "민주주의 부재" # 7728893331433770262
+  WEAK_UNIONS: "약한 노동조합" # 2614215418928522834
+  ESTABLISHED_UNIONS: "강력한 노동조합" # 7050566263769197383
+  BEFORE_FIRST_INTERNATIONAL: "제1인터내셔널 이전" # 4154215488595890539
+  BEFORE_SECOND_INTERNATIONAL: "제2인터내셔널 이전" # 10145649870314295485
+  SPLIT_SOCIALISTS: "분열된 사회주의자" # 6607790979606350201
+  PEOPLES_SPRINGTIME_BUILDUP: "민족의 봄을 향한 고조" # 14438640179455656771
+  POP_RURAL_ANTICAPITALISM: "농촌의 반자본주의" # 10067383726259066324
+  POP_RURAL_WANTS_COLLECTIVIZATION: "집단화를 원하는 농촌 팝" # 1392655708752680980
+  POP_RURAL_HAPPY_UNDER_SOCIALISM: "사회주의 하에서 만족하는 농촌 팝" # 6471058809114031232
+  modifier_regency_conservatives: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_reactionaries: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_liberals: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_radicals: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_national_liberals: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_market_liberals: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_christian_democrats: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_fascists: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_agrarian_populists: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_reformist_socialists: "$modifier_regency$" # 15682542331677220956
+  modifier_regency_socialists: "$modifier_regency$" # 15682542331677220956

@@ -5,5 +5,3 @@
   ai_strategy_socialist_retreat_agenda_desc: "[COUNTRY.GetName]은 혁명의 안보를 지키기 위해 후퇴하여 재정비하고자 합니다." # 12323792538933946271
   ai_strategy_progressive_conservative_agenda: "가부장적 개혁" # 17456000158829082612
   ai_strategy_progressive_conservative_agenda_desc: "[COUNTRY.GetName]은 급진파의 요구를 꺾고 자국민을 보호하기 위해 진보적인 개혁을 단행하고자 합니다." # 2094478058471661371
-  ai_strategy_unionist_agenda: "조합주의 개혁" # 11018944976746674429
-  ai_strategy_unionist_agenda_desc: "[COUNTRY.GetName]은(는) 국가를 처음부터 건설하고 공고히 하고자 합니다." # 3763803840684318808
