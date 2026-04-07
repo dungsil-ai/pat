@@ -7,6 +7,8 @@
   sb_com_progress_in_style_test2: "사이클 바 왼쪽 색상" # 11070130746477890344
   sb_com_progress_in_style_test3: "주기 막대 목표 양식" # 5150997963595636651
   sb_com_progress_in_style_test4: "주기 막대 오른쪽 색상" # 16981923430571506236
+  sb_com_progress_in_style_test5: "주기 막대 단계 수" # 1893709088380312927
+  sb_com_progress_in_style_test6: "단계 강조 표시 전환" # 10720214545596310654
   sb_com_progress_in_style_test_desc: "일부 시험 효과" # 15284489070313264236
   spb_com_progress_in_style_drift_desc: "이 막대는 드리프트 양을 사용하여 진행 상황을 설정합니다" # 603876488539336342
   sb_com_progress_in_style_test_tt1: "진행 표시줄 숨기기" # 10198354388609905660
@@ -14,20 +16,18 @@
   sb_com_progress_in_style_test2_tt: "기본 색상을 다음으로 변경" # 16797943862235074772
   sb_com_progress_in_style_test3_tt: "대상 양식을 변경하려면" # 14166845168565146962
   sb_com_progress_in_style_test4_tt: "대상 양식 변경을" # 14166845168565146962
-  com_spb_journal_icon: "일지 아이콘" # 16092027213069668224
-  com_spb_custom_icon: "사용자 지정 아이콘" # 5039537679859653068
-  com_spb_gold_marker: "금색 표식" # 262410143300414871
-  com_spb_gold_bar: "금괴" # 70929425851399343
-  com_spb_white_line: "백선" # 384780289634405316
-  spb_com_progress_in_style_right_desc: "" # 17241709254077376921
-  sb_com_progress_in_style_test5: "주기 막대 단계 수" # 1893709088380312927
-  sb_com_progress_in_style_test6: "단계 강조 표시 전환" # 10720214545596310654
   sb_com_progress_in_style_test5_tt: "단계 수를 다음으로 변경" # 14957916407941501284
   sb_com_progress_in_style_test_tt3: "현재 막대 단계 강조" # 17424088374725406567
   sb_com_progress_in_style_test_tt4: "강조 중지" # 1942195538998469220
   sb_com_progress_in_style_test6_tt: "현재 막대 단계를 강조 중입니다" # 15630583858040813711
   sb_com_progress_in_style_test6_tt2: "현재 막대 단계를 강조하지 않는 중입니다" # 17419944343821593757
+  com_spb_journal_icon: "일지 아이콘" # 16092027213069668224
+  com_spb_custom_icon: "사용자 지정 아이콘" # 5039537679859653068
+  com_spb_gold_marker: "금색 표식" # 262410143300414871
+  com_spb_gold_bar: "금괴" # 70929425851399343
+  com_spb_white_line: "백선" # 384780289634405316
   com_progress_bar_levels_3: "3" # 2744517546871237796
   com_progress_bar_levels_4: "4" # 10464417414901951369
   com_progress_bar_levels_5: "5" # 7674613650421074157
   com_progress_bar_levels_clear: "없음" # 640747180730880794
+  spb_com_progress_in_style_right_desc: "" # 17241709254077376921

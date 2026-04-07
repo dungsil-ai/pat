@@ -191,6 +191,7 @@
   national_awakening.1.b: "위대한 국가에는 위대한 군대가 필요합니다." # 14562127100677453540
   modifier_fervour_military_bonus: "민족주의적 열정" # 2841091218944310824
   modifier_fervour_military_bonus_ig: "격앙된 민족주의적 열정" # 13972868642738835922
+  2TAB: "    " # 15835880321755569153
   national_awakening.2.t: "마을 학교 교육" # 14121953245859378466
   national_awakening.2.d: "정부의 급여를 받는 [GetPopType('academics').GetName]들이 [SCOPE.sState('relevant_state').GetName]의 시골 전역에 마을 학교를 설립했습니다. 이 마을 학교들은 문맹률을 높이고 농민들 사이에 [SCOPE.sCulture('relevant_culture').GetName] 민족 정체성을 함양하고자 합니다." # 1208345216222852074
   national_awakening.2.f: "\"우리 나라는 운이 좋지 못했소\" 교사가 말을 시작했다.\"아직 완전히 통일되지 못했소. 이 땅에서 우리 백성들은 외국인들에게 의존하고 있소\"\n\n그녀는 벽에 걸린 지도를 가리켰고, 검은색으로 칠해진 여러 지역을 보았다.\n\\\"이 지방들에서는 외국인이 통치하고 있으며, 우리 형제들에게는 매우 어려운 일이오..\"" # 14431905920376127717
@@ -838,5 +839,4 @@
   UPRISING_DEFEATED: "봉기 진압" # 5622808296512213651
   pb_ruler_tt: "[concept_ruler] [concept_interest_group]은 #v $ig_petty_bourgeoisie$#!입니다." # 11546186576177222397
   movement_suppressed_after_civil_war_copy: "$movement_suppressed_after_civil_war$" # 16036547287628236885
-  2TAB: "    " # 15835880321755569153
   ROMANIA_NOT_EXISTS: "" # 17241709254077376921

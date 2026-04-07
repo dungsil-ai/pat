@@ -12,6 +12,7 @@
   country_institution_cost_institution_economy_mult_desc: "[GetInstitutionType('institution_economy').GetName]를 시민들에게 제공하는 데 드는 @bur![Nbsp][concept_bureaucracy] 비용의 증가 또는 감소" # 3741814200256825697
   country_institution_cost_institution_culture_mult: "@bur![Nbsp][concept_bureaucracy] [GetInstitutionType('institution_culture').GetName] 비용" # 9506499600926173016
   country_institution_cost_institution_culture_mult_desc: "시민들에게 [GetInstitutionType('institution_culture').GetName]을 제공하는 데 드는 @bur![Nbsp][concept_bureaucracy] 비용의 증가 또는 감소" # 3738748050263651457
+  bpm_modifier_revolution_victorious_light: "혁명군 승리" # 16424220559140305377
   bpm_from_moderatism: "보통 지도자로부터의 무작위 값" # 8020994526833216683
   bpm_two_party_system: "양당제" # 18407341949761969474
   bpm_two_party_system_historical: "역사적인 양당제" # 11281750250783484731
@@ -45,6 +46,9 @@
   bpm_from_first_intl_split: "무정부주의자 분열" # 4997823505841443569
   bpm_emboldened_ig: "#강경파#" # 5486429458434563977
   bpm_empowered_ig: "권한 있는 집단" # 15376143695092442651
+  bpm_damaged_ig: "피해를 입은 집단" # 2036794787153700786
+  bpm_ig_disrupted_by_assassination: "살인 음모로 인한 혼란" # 9481920020546420881
+  bpm_ig_disrupted_by_exile: "강제 추방으로 인한 혼란" # 13445042879513906337
   bpm_damaged_government_infrastructure: "손상된 정부 기반 시설" # 5687542533486452531
   bpm_stubborn_ig: "완고함" # 17867982253245632830
   bpm_1848_stubborn_ig: "민족들의 봄" # 8061709251474424483
@@ -101,6 +105,7 @@
   bpm_historical_leader: "역사적 지도자로부터" # 18215911796759534741
   bpm_from_absent_conservatives: "보수주의자들의 부재로부터" # 14559347496422045057
   bpm_from_american_history: "역사적 정렬로부터" # 11648661164678331720
+  bpm_crisis_bureaucratic_fiefdoms: "관료적 영지" # 6702584863897616069
   bpm_rollback: "필리버스터에 대한 적극적인 반대" # 788365552488242922
   bpm_containment: "불법 행위에 대한 수동적 방치" # 5619578511465828974
   bpm_filibuster: "필리버스터 지지 활동" # 12081969783966043936
@@ -271,6 +276,7 @@
   BPM_POP_RADICALS_OPPOSITION: "[concept_radical','급진파']에 속한 인구 집단들은 이 [concept_extremist] [Concept('concept_interest_group','이익집단')]을 지지하며, [Concept('concept_in_opposition','반대파')]에 속해 있습니다." # 17776714290044879401
   BPM_POP_EXTREME_RADICALS_OPPOSITION: "[Concept('concept_radical','급진파')]가 [Concept('concept_super_extremist','극단주의자')] [Concept('concept_interest_group','이해 집단')]에 대한 [Concept('concept_in_opposition','반대')]를 지지하는 계층" # 4114070362843202018
   BPM_POP_RADICALS_OPPOSITION_MODERATE: "[Concept('concept_radical','급진파')]가 [Concept('concept_interest_group','이해집단')]에 대한 [Concept('concept_in_opposition','반대')]의 입장을 지지하는 계층" # 15247308507676347719
+  bpm_ig_attraction_from_radicals_and_loyalists_tt: "[Concept('concept_radical','급진파')] 또는 [Concept('concept_loyalist','충성파')] 팝의 유입" # 1381409538962502234
   POPS_ANGER_SYMPATHY: "격분한 인민들과의 연대" # 12808761641830328213
   POP_LEADERS: "교육받은 지도층" # 14726869898464069773
   POLITICAL_MACHINES: "정치 기구" # 7738718000099095697
@@ -288,6 +294,8 @@
   country_bpm_can_not_promise_laws_bool_desc: "어떤 [Concept('concept_interest_group','Interest Groups')]도 잠재적인 [Concept('concept_bpm_law_sway','Sway')] 선택지로 [concept_law]가 통과될 것이라는 약속을 받아들이지 않을 것입니다." # 16750660007086212313
   interest_group_bpm_can_not_promise_laws_to_bool: "[concept_law]을 약속받음으로써 [Concept('concept_bpm_law_sway','Swayed')]될 수 없습니다." # 16840090546432776802
   interest_group_bpm_can_not_promise_laws_to_bool_desc: "이 [Concept('concept_interest_group','이해 집단')]은 잠재적인 [Concept('concept_bpm_law_sway','법안 로비')] 선택지로 [concept_law]가 통과될 것이라는 약속을 받아들이지 않을 것입니다." # 1322703726638892830
+  country_bpm_low_rigidity_no_econ_debuff: "낮은 [concept_bpm_political_stability]로 인한 경제적 페널티 없음" # 16085357285707944338
+  country_bpm_low_rigidity_no_econ_debuff_desc: "낮은 [concept_bpm_political_stability] 상태가 [Concept('concept_construction','건설')] 및 [Concept('concept_throughput','처리량')]에 영향을 주지 않음" # 10762127750802079358
   bpm_repeatable_movements_not_allowed: "반복 가능한 법률에 대해서는 이동을 가질 수 없습니다" # 17078028818961195034
   bpm_block_law_cancel: "법안 최종 단계에서는 철회 불가" # 6396060874802223613
   country_law_enactment_ruler_veto_bypass: "입법부가 군주의 거부권 무력화 가능" # 494262929849095952
@@ -303,12 +311,4 @@
   bpm_bakufu_administrative_state: "막부 행정 국가" # 16043837840209705156
   bpm_ig_gaining_support: "지지 획득" # 12060725307332788322
   bpm_alexander_ii_reforms: "알렉산드르 2세의 개혁" # 3089746303022532852
-  bpm_modifier_revolution_victorious_light: "혁명군 승리" # 16424220559140305377
-  bpm_damaged_ig: "피해를 입은 집단" # 2036794787153700786
-  bpm_ig_disrupted_by_assassination: "살인 음모로 인한 혼란" # 9481920020546420881
-  bpm_ig_disrupted_by_exile: "강제 추방으로 인한 혼란" # 13445042879513906337
-  bpm_crisis_bureaucratic_fiefdoms: "관료적 영지" # 6702584863897616069
-  bpm_ig_attraction_from_radicals_and_loyalists_tt: "[Concept('concept_radical','급진파')] 또는 [Concept('concept_loyalist','충성파')] 팝의 유입" # 1381409538962502234
-  country_bpm_low_rigidity_no_econ_debuff: "낮은 [concept_bpm_political_stability]로 인한 경제적 페널티 없음" # 16085357285707944338
-  country_bpm_low_rigidity_no_econ_debuff_desc: "낮은 [concept_bpm_political_stability] 상태가 [Concept('concept_construction','건설')] 및 [Concept('concept_throughput','처리량')]에 영향을 주지 않음" # 10762127750802079358
   interest_group_bpm_organization_ideological_rate_add: "[Concept('concept_bpm_ideological_ig','이념적 이익 집단')] 조직 변화율" # 9446527065252638784

@@ -998,6 +998,7 @@
   international_commerce: "국제 상업" # 2641781259374375559
   international_commerce_desc: "국제 상업이란 국경을 넘어선 재화, 용역, 자본의 교환을 의미합니다. 이는 세계 경제 통합을 촉진하고, 전문화를 장려하며, 각국이 더 광범위한 자원과 시장에 접근할 수 있도록 합니다." # 7591116099013667510
   international_stock_exchange: "국제 증권 거래소" # 2652806207033279044
+  international_stock_exchange_desc: " " # 548583522804720525
   check_payments: "지불 내역 확인" # 14767920842408246181
   check_payments_desc: "도매 거래에서 현금 대신 종이 어음이 사용되기 시작합니다. 수표의 도입은 추적 가능한 지불을 가능하게 하여 금융 중개자로서 은행의 성장을 촉진합니다." # 5718001299252653724
   credit_cards: "신용카드" # 10552585215724664490
@@ -1403,6 +1404,5 @@
   ut_modern_planes_desc: "" # 17241709254077376921
   ut_anti_tank_guided_software_desc: "" # 17241709254077376921
   ut_military_complex_desc: "" # 17241709254077376921
-  international_stock_exchange_desc: " " # 548583522804720525
   union_new_mandates_two_tt: "" # 17241709254077376921
   lgbt_movement_tt: "" # 17241709254077376921

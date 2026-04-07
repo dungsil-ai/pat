@@ -16,6 +16,7 @@
   je_bpm_dissent_self_coup_desc: "#tooltip_header #bold 자진 쿠데타#!#!\n$TOOLTIP_DELIMITER$\n#lore 자진 쿠데타는 국가의 현 통치 정부가 주도하는 쿠데타입니다. 이는 통상적으로 헌법에 따른 권력 이양이 발생한 이후에도 권력을 고수하려는 행위입니다.#!\n\n이 #yellow 반체제 행위#!는 오직 [concept_ruler] 또는 [concept_bpm_head_of_government]에 의해서만 사용할 수 있습니다.\n\n이 행위는 언제든지 사용할 수 있습니다." # 3588098084651108083
   je_bpm_dissent_general_strike: "#header;yellow 전면 파업#!" # 1405934742839749247
   je_bpm_dissent_general_strike_desc: "#tooltip_header #bold 총파업#!#!\n$TOOLTIP_DELIMITER$\n#lore 총파업은 한 국가의 모든 노동자가 행하는 파업입니다.#!\n\n이 #yellow 불온 활동#!은 [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName]에 의해 사용될 수 있습니다.\n\n이 활동은 언제나 사용할 수 있으나 [GetLawGroup('lawgroup_labor_unions').GetName] [concept_law_group]의 영향을 받습니다." # 14670463406260976767
+  je_bpm_dissent_legislative_takeover: "#header;yellow 입법부 장악#!" # 6182447184794057548
   je_bpm_dissent_legislative_takeover_desc: "#tooltip_header #bold 입법부 장악#!#!\n$TOOLTIP_DELIMITER$\n#lore 입법부 장악은 일부 입법가들이 입법부를 장악하고 정부에 반하는 법률을 통과시키는 상황을 의미합니다.#!\n\n이 #yellow 파괴 공작#!은 모든 [Concept('concept_interest_group', '이해집단')]이 사용할 수 있습니다.\n\n이 행동은 언제나 사용 가능합니다." # 976049961252894484
   je_bpm_dissent_government_shutdown: "#header;yellow 정부 기능 정지#!" # 12404143126887511940
   je_bpm_dissent_government_shutdown_desc: "#tooltip_header #bold 정부 기능 정지#!#!\n$TOOLTIP_DELIMITER$\n#lore 정부 기능 정지란 정부가 필수적인 서비스를 제외한 모든 제공을 중단하는 상황을 말합니다.#!\n\n이 #yellow 선동 행위#!는 모든 [Concept('concept_interest_group', '이해집단')]에 의해 사용될 수 있습니다.\n\n이 행위는 [GetLawType('law_separated_powers').GetName]이 제정된 경우에만 사용할 수 있습니다." # 3386971676315517205
@@ -23,6 +24,7 @@
   je_bpm_dissent_revolution1: "#header;yellow 혁명#! (#lore Slot 2#!)" # 12396585608122642805
   je_bpm_dissent_revolution2: "#header;yellow 혁명#! (#lore Slot 3#!)" # 13456202061144108164
   je_bpm_dissent_revolution3: "#header;노란색 혁명#! (#lore Slot 4#!)" # 2212994862911867246
+  je_bpm_dissent_revolution_desc: "#tooltip_header #bold 혁명#!#!\n$TOOLTIP_DELIMITER$\n#lore 혁명이란 새로운 체제를 위해 정부나 사회 질서를 강제로 전복하는 행위를 말합니다. 이는 정부 전복을 계획하는 모든 집단이 취할 수 있는 최후의 수단입니다.#!\n\n이 #yellow 전복 활동#!은 모든 [Concept('concept_interest_group', '이익 집단')]이 사용할 수 있습니다.\n\n이 활동은 언제든 사용할 수 있으나, 다른 모든 방안이 소진되었을 경우에만 가능합니다. 이를 실행하려면 #gold 전선#!에 참여 중인 [Concept('concept_interest_group', '이익 집단')] 중 최소 하나가 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만의 승인도를 가져야 하며, 조직력이 #v 20#!을 초과해야 합니다." # 495452759461140612
   je_bpm_crises_some_crisis: "#header;yellow 일부 위기#!" # 6714847374742990739
   je_bpm_crises_some_crisis_desc: "#tooltip_header #bold 일부 위기#!#!\n$TOOLTIP_DELIMITER$\n#lore 위기란 정부가 심각한 문제에 직면한 상황을 말합니다.#" # 11398858840523221614
   je_bpm_scandal_backroom_tax_cuts: "#header;yellow 은밀한 세금 감면#!" # 2115459934564830688
@@ -53,5 +55,3 @@
   bpm_front_fascist_name: "#header;yellow 파시스트 전선#!" # 13082694332753756237
   bpm_front_nationalist_name: "#header;yellow 민족주의 전선#!" # 1414004613847432452
   bpm_front_peasant_name: "#header;yellow 농민 전선#!" # 2553721136903199148
-  je_bpm_dissent_legislative_takeover: "#header;yellow 입법부 장악#!" # 6182447184794057548
-  je_bpm_dissent_revolution_desc: "#tooltip_header #bold 혁명#!#!\n$TOOLTIP_DELIMITER$\n#lore 혁명이란 새로운 체제를 위해 정부나 사회 질서를 강제로 전복하는 행위를 말합니다. 이는 정부 전복을 계획하는 모든 집단이 취할 수 있는 최후의 수단입니다.#!\n\n이 #yellow 전복 활동#!은 모든 [Concept('concept_interest_group', '이익 집단')]이 사용할 수 있습니다.\n\n이 활동은 언제든 사용할 수 있으나, 다른 모든 방안이 소진되었을 경우에만 가능합니다. 이를 실행하려면 #gold 전선#!에 참여 중인 [Concept('concept_interest_group', '이익 집단')] 중 최소 하나가 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만의 승인도를 가져야 하며, 조직력이 #v 20#!을 초과해야 합니다." # 495452759461140612

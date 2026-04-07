@@ -2,6 +2,7 @@
   bpm_revolutionary_damage_normal_tt: "[GetPlayer.GetModifier.GetValueFor('country_bpm_revolutionary_damage_base_cost_add')]\n[GetPlayer.GetModifier.GetDescFor('country_bpm_revolutionary_damage_base_cost_add')|v0]의 기본 비용\n\n[GetPlayer.GetModifier.GetValueFor('country_bpm_revolutionary_damage_efficiency_add')|v+0]의 효율성으로 곱해짐\n[GetPlayer.GetModifier.GetDescFor('country_bpm_revolutionary_damage_efficiency_add')]" # 9118918758250104755
   bpm_revolutionary_damage_double_tt: "[GetPlayer.GetModifier.GetValueFor('country_bpm_revolutionary_damage_base_cost_add')]의 기본 비용 (#lore doubled cracking down.#!)\n[GetPlayer.GetModifier.GetDescFor('country_bpm_revolutionary_damage_base_cost_add')|v0]\n\n[GetPlayer.GetModifier.GetValueFor('country_bpm_revolutionary_damage_efficiency_add')|v+%0]의 효율성으로 배수 적용됨\n[GetPlayer.GetModifier.GetDescFor('country_bpm_revolutionary_damage_efficiency_add')]" # 17117576244684373973
   bpm_dissent_no_confidence_activate_tooltip: "지지하는 [concept_interest_group]의 총 영향력이 #v 40%!#를 초과합니다! 현재: [JournalEntry.MakeScope.ScriptValue('bpm_supporting_members_clout')|%v1]" # 2587066366819194253
+  bpm_dissent_no_confidence_no_cd: "최근 불신임안 없음" # 16611020316464444136
   law_repeatable_politics_motion_of_no_confidence: "불신임 동의안" # 17526967376765924694
   ideology_no_confidence_supporter: "불신임안 지지자" # 5883993902190814639
   ideology_no_confidence_supporter_desc: "이 단체는 불신임안에 찬성합니다." # 15932476553554655280
@@ -65,12 +66,9 @@
   bpm_revolution_results.14.d: "비밀 결사가 쿠데타를 성공적으로 감행하여 [GetPlayer.GetCapital.GetCityHubName]을 장악하였습니다." # 3241356744258967651
   bpm_revolution_results.14.a: "그림자 속 음모가들!" # 1758540898203983133
   bpm_successful_coup_ig: "쿠데타 성공" # 8990137261913943831
-  bpm_dissent_no_confidence_no_cd: "최근 불신임안 없음" # 16611020316464444136
   bpm_organization_text_tt: "#yellow 조직#!: [JournalEntry.MakeScope.Var('bpm_current_front_organization').GetValue|v1]#! ([JournalEntry.MakeScope.ScriptValue('bpm_front_organization_change_je_tt_multid')|v-=2])" # 5509263155423232812
   bpm_political_situation_dissent_header: "반체제 개요" # 620864691234882504
   bpm_political_situation_dissent_crises_active: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent')|v0] #grey 활성#! [GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_preparing')|v0] #grey 준비 중#! [GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_potential')|v0] #grey 잠재적#!" # 12487136947162853270
-  bpm_political_situation_dissent_crises_preparing: "" # 17241709254077376921
-  bpm_political_situation_dissent_crises_inactive: "" # 17241709254077376921
   bpm_dissent_actions_header: "반체제 활동" # 4174370420217463358
   bpm_potential_potential_actions: "잠재적 반체제 활동" # 15083203922726192510
   bpm_potential_preparing_actions: "준비 중인 반체제 활동" # 4445781068054134755
@@ -88,3 +86,5 @@
   bpm_crisis_actions_header_active: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_crises')|v0]" # 14308705524106366591
   bpm_potential_potential_actions_crises: "잠재적 위기" # 9581108686073932472
   bpm_potential_potential_actions_crises_count: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_crises_inactive')|v0]" # 5587577629440597943
+  bpm_political_situation_dissent_crises_preparing: "" # 17241709254077376921
+  bpm_political_situation_dissent_crises_inactive: "" # 17241709254077376921

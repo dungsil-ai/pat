@@ -212,6 +212,8 @@
   gov_postapocalypse: "종말 이후" # 17405123826876926821
   gov_postapocalypse_desc: "한때 번성했던 국가는 핵화염 속에서 사라졌습니다. 이제 생존자들은 재와 먼지 속에서 살아남기 위해 모이고 있습니다. 전통적인 행정 체계는 붕괴되었고, 각 지역을 통치하는 무장 단체들이 느슨하게 연합하여 '정부'를 대신하고 있습니다. 산업 시설 대부분은 군수화되었고, 통신망은 두절되었으며, 힘이 곧 정의로 통용되는 시대가 도래했습니다." # 13816762776578526417
   RULER_ANARCHY: "무정부 상태" # 6242569756677253320
+  anarchy: " " # 548583522804720525
+  anarchy_name: " " # 548583522804720525
   anarchy_name_adj: "무정부 상태" # 11990305982213038225
   has_not_signed_nuclear_non_proliferation_treaty_tt: "[ROOT.GetCountry.GetName]은 #! 핵 비확산 조약#에 서명하지 않았습니다." # 415637787783536422
   develop_thermonuclear_weapons_decision: "핵열 무기 프로그램" # 17017759929535999109
@@ -229,7 +231,5 @@
   leave_nuclear_non_proliferation_treaty_decision: "핵확산금지조약" # 17641887131023149731
   leave_nuclear_non_proliferation_treaty_decision_desc: "핵확산금지조약(NPT)은 핵무기 확산을 방지하고 군축을 촉진하기 위해 수립되었습니다. 그러나 이 조약이 우리 국가의 자위 능력과 세계 무대에서 주권을 주장하는 능력을 저해하고 있다는 것이 분명해졌습니다. NPT에서 탈퇴함으로써, 우리는 핵 프로그램을 통제하고 점점 더 불확실해지는 세계에서 국가 이익을 보호할 수단을 확보할 수 있을 것입니다." # 1643728599764504962
   signed_NPT_2_tt: "[ROOT.GetCountry.GetName]은 더 이상 #v 핵확산금지조약#!의 제약에 얽매이지 않습니다." # 13006910254960086013
-  anarchy: " " # 548583522804720525
   take_control_of_nuclear_arsenal_decision: "핵무기 통제권 확보" # 17297359247112173038
   take_control_of_nuclear_arsenal_decision_desc: "우리 주 내에 이미 상당한 규모의 핵무기가 존재합니다. 이제 우리가 완전히 점령했으므로, 핵무기에 대한 통제권을 확보하여 조국을 적들로부터 방어하는 데 사용할 수 있습니다." # 15511135279435948358
-  anarchy_name: " " # 548583522804720525

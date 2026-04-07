@@ -2,11 +2,11 @@
   com_debug_deer: "#header #todo 디버그 정보#!#!\n$TOOLTIP_DELIMITER$\n#bold 이벤트 ID: [Event.GetKey|v]\n$TOOLTIP_DELIMITER$\n#bold 발동 조건 설명:\n[Event.GetTriggerDesc]\n@information! 클릭하여 텍스트 편집기에서 이벤트 열기" # 15750909931800288972
   com_debug.t: "커뮤니티 GUI 테스트 이벤트" # 14439554426211369124
   com_debug.d: "\"빅토리아 3는 그저 형편없는 게임일 뿐입니다. 개성이라고는 찾아볼 수 없는 시시한 게임이며, 국가의 규모와 상관없이 모든 나라를 플레이하기가 너무나도 쉽습니다. 빅토리아 2에서는 건물과 인구를 실제로 관리하고 다채로운 외교를 펼쳐야 했기에 훨씬 나았지요\"" # 6217398070270506244
+  com_debug.f: "\"그래, 불행히도 제임스 말고는 아무도 모딩을 할 수 없어\" -rskhm" # 11756833210712855117
   com_debug.tt: "#italic 아무 일도 일어나지 않습니다...!#" # 1673222677896737577
   com_debug.a: "선택지 1" # 10923573778500062648
   com_debug.b: "2 시험 2 선택지" # 9429986471353302374
   com_debug.c: "세 번째 선택지" # 14400040029370851027
   com_debug.e: "테스트 & 4ious" # 4074723196073234045
-  com_debug.james_tt: "#italic 제임스가 당신에게 미소 짓습니다...!#" # 10978015492550975796
-  com_debug.f: "\"그래, 불행히도 제임스 말고는 아무도 모딩을 할 수 없어\" -rskhm" # 11756833210712855117
   com_debug.james: "\"그냥 [GetTechnology('line_infantry').GetName] 연구나 해\" -1230james" # 10961944449040135390
+  com_debug.james_tt: "#italic 제임스가 당신에게 미소 짓습니다...!#" # 10978015492550975796

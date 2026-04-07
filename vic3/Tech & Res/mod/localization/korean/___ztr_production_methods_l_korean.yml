@@ -190,10 +190,14 @@
   pm_satellite_communications_network_building_telecommunications: "위성 통신망" # 1802290853112651880
   pm_internet_global_network_building_telecommunications: "인터넷 글로벌 네트워크" # 15216832533823405067
   pmg_entertainment_type: "오락 종류" # 5232376900064945487
+  pm_theater: "극장" # 3893606510004869061
   pm_cinema: "영화" # 7974414903991570916
+  pmg_entertainment_theater_method: "극장 유형" # 2933119919351029586
+  no_theater: "극장 없음" # 8096113841972233937
   no_cinema: "영화관 없음" # 16597665073149927241
   pmg_entertainment_cinema_method: "영화관 종류" # 8272481899333951338
   local_plays_pm: "지역 연극" # 13725004793240286759
+  classic_plays_pm: "신고전주의 연극" # 9447082009509241748
   pm_traditional_patronage_entertainment_industry: "전통적 온정주의" # 7187783793685570243
   pm_bourgeoisie_patronage_entertainment_industry: "부르주아지 후원" # 8913570852181660551
   pm_independent_artists_entertainment_industry: "독립 예술가들" # 16162285423814916651
@@ -234,6 +238,7 @@
   pm_local_data_storage_building_datacenter: "로컬 데이터 저장소" # 18211265562620089373
   pm_cloud_storage_building_datacenter: "클라우드 저장소" # 7261991097100852398
   pmg_automation_building_datacenter: "자동화" # 18411738171978629847
+  pm_early_computer_server_building_datacenter: "초기 서버" # 1860286119592185258
   pmg_data_transportation_building_datacenter: "데이터 전송" # 3958067927722683896
   pm_local_network_building_datacenter: "지역 네트워크" # 4356550927925911043
   pm_internet_building_datacenter: "인터넷" # 18294203111589887707
@@ -401,6 +406,7 @@
   pm_multi_core_processor: "멀티 코어 프로세서" # 14293421957176847501
   pm_cell_phones: "휴대폰" # 2760948059199925202
   pm_smartphones: "스마트폰" # 13047224257883856613
+  pm_virtual_reality_gadgets: "가상 현실 기기" # 507957831256502173
   pm_laptops: "노트북" # 3043589002639455136
   pm_advanced_personal_computers: "고급 작업대" # 7183718660887262545
   pmg_software_building_software_industry: "소프트웨어 생산" # 8068654860281904549
@@ -408,6 +414,7 @@
   pm_integrated_development_environment_building_software_industry: "아이디이" # 6391928604082540192
   pm_version_control_collaboration_building_software_industry: "버전 관리" # 4957145397519334991
   pm_cloud_based_devops_building_software_industry: "클라우드 기반 데브옵스" # 14127876758137722920
+  pm_vibe_coding_building_software_industry: "바이브 코딩" # 7948942267356835557
   pmg_software_type_building_software_industry: "소프트웨어 유형" # 10978399918707401714
   pm_traditional_software_building_software_industry: "데스크톱 응용 프로그램" # 9200855872273690816
   pm_web_based_building_software_industry: "웹사이트" # 7912522485793927089
@@ -509,6 +516,7 @@
   pm_cross_platform_building_interactive_media_industry: "가벼운 오락 개발" # 9522000480256344750
   pm_ultraprocessed_snacks: "초가공 식품" # 1244909927899657510
   pmg_civil_space_aircraft: "항공우주 생산" # 622437809118166716
+  modern_productions_pm: "현대 극장" # 17319409170999692004
   silent_films: "무성 영화" # 1012475898956297974
   celluloide_films: "셀룰로이드 영화" # 14454490542113914981
   blockbuster_films: "블록버스터 시네마" # 5174007306369154612
@@ -685,14 +693,6 @@
   pm_continuous_diffusion_sugar_cane_refining: "지속적인 사탕수수 보급" # 8654796673096410108
   pm_continuous_diffusion_sugar_beet_refining: "연속적인 사탕무 확산" # 18369159704869804622
   pm_vertical_silo_drying: "수직 사일로 건조" # 10760966337138316744
-  pm_theater: "극장" # 3893606510004869061
-  pmg_entertainment_theater_method: "극장 유형" # 2933119919351029586
-  no_theater: "극장 없음" # 8096113841972233937
-  classic_plays_pm: "신고전주의 연극" # 9447082009509241748
-  pm_early_computer_server_building_datacenter: "초기 서버" # 1860286119592185258
-  pm_virtual_reality_gadgets: "가상 현실 기기" # 507957831256502173
-  pm_vibe_coding_building_software_industry: "바이브 코딩" # 7948942267356835557
-  modern_productions_pm: "현대 극장" # 17319409170999692004
   pm_euv_photolithography: "EUV 노광 장비" # 2575009449522707151
   pm_printed_circuit_board: "인쇄 회로 기판" # 10147102259182562046
   pm_embedded_control_circuit: "임베디드 제어 회로" # 14425286653039326075
@@ -725,13 +725,13 @@
   pm_hpgr_comminution_advancedores_mine: "HPGR 분쇄" # 15265600619577817348
   pm_purification_mine: "현대식 정제" # 12190261196422407402
   pm_advanced_purification_mine: "고급 정제" # 4201605683537958837
-  pm_internet_data_algorithmic_dispatch_heavy_industry: "알고리즘 최적화" # 10306209424860855498
   pm_basic_purification_rare_earths_mine: "기초 정제" # 12816754735408946084
   pmg_data_optimization_heavy_industry_computer: "최적화" # 8147114492625738509
   pm_digital_data_optimization_heavy_industry_computer: "디지털 데이터 최적화" # 5438169285567104682
   pm_digital_data_on_premises_heavy_industry_computer: "온프레미스 디지털 데이터" # 1487727957435063545
   pm_internet_data_optimization_heavy_industry_telecommunications: "데이터 최적화" # 1434155673471641683
   pmg_data_optimization_heavy_industry_algorithmic_dispatch: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_algorithmic_dispatch_heavy_industry: "알고리즘 최적화" # 10306209424860855498
   pm_internet_data_algorithmic_dispatch_heavy_industry_no_shopkeepers: "알고리즘 최적화" # 10306209424860855498
   pmg_data_optimization_heavy_industry_algorithmic_dispatch_no_shopkeepers: "데이터 최적화" # 1434155673471641683
   pm_internet_data_reporting_primary_sector_no_shopkeepers: "데이터 보고" # 1477959398194662629

@@ -6,6 +6,7 @@
   bpm_je_group_global: "세계적 사건들" # 4953533108359377048
   bpm_je_group_interest_groups: "주요 이익집단" # 4880766897937470037
   bpm_je_group_party_laws: "정당법" # 12654549556380937179
+  bpm_je_group_concessions: "이권" # 12339571247229132730
   bpm_provisional_government_events.1.t: "새로운 헌법인가?" # 4962475080180213722
   bpm_provisional_government_events.1.d: "[ROOT.GetCountry.GetName]의 새 지도부가 일련의 새로운 법률을 성문화하기 위해 회합을 가졌습니다." # 6877082885924059305
   bpm_provisional_government_events.1.f: "혁명 정부는 향후 몇 달 동안 국가를 여러 방면으로 재편할 기회와 수단을 갖게 되었습니다." # 13872963684528045885
@@ -42,4 +43,3 @@
   country_definition_equal: "귀국의 국가 정의는 #v [TARGET_COUNTRY_DEFINITION.GetName]#! (또는 그 상황별 변형 중 하나)입니다." # 16778682010465143153
   scripted_bar_progress_greater_than: "진행도가 $COMPARATOR$ #v $NUM|0v$#! (현재: $CURRENT_VALUE|0v$)" # 4737420364887045681
   country_var_greater_or_equal: "#v 국가 변수#!가 #v $NUM|0v$#!보다 크거나 같습니다" # 8480364017706002574
-  bpm_je_group_concessions: "이권" # 12339571247229132730

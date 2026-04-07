@@ -10,10 +10,10 @@
   je_bpm_revolutionary_damage_reason: "혁명으로 인해 저희 국가의 기반 시설과 경제에 막대한 피해가 발생했습니다. 우리는 이 피해를 복구하고 국가를 재건하기 위해 노력해야 합니다." # 561504440948367280
   bpm_revolutionary_bureaucratic_damage_progress: "#gold 연필과 종이#!" # 17107156448456440599
   bpm_revolutionary_bureaucratic_damage_progress_desc: "#gold 연필과 종이#!" # 17107156448456440599
+  bpm_revolutionary_damage_bureaucracy_mod: "#gold 연필과 종이#!" # 17107156448456440599
   bpm_revolutionary_military_damage_progress: "#gold 썩은 검#!" # 15102620235994285180
   bpm_revolutionary_military_damage_progress_desc: "#gold 썩은 검#!" # 15102620235994285180
+  bpm_revolutionary_damage_military_mod: "#gold 녹슨 검#!" # 15102620235994285180
   bpm_revolutionary_economic_damage_progress: "#gold 땅에서부터#!" # 246355094233047277
   bpm_revolutionary_economic_damage_progress_desc: "#gold 땅에서부터#!" # 246355094233047277
-  bpm_revolutionary_damage_bureaucracy_mod: "#gold 연필과 종이#!" # 17107156448456440599
-  bpm_revolutionary_damage_military_mod: "#gold 녹슨 검#!" # 15102620235994285180
   bpm_revolutionary_damage_economy_mod: "#gold 밑바닥부터 시작하여#!" # 246355094233047277

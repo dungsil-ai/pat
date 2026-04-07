@@ -1,4 +1,6 @@
 ﻿l_korean:
+  bpm_consciousness_liberal_change_universities_desc: "대학 건물 레벨 수로부터" # 3681616667661139831
+  bpm_consciousness_liberal_change_trade_centers_desc: "무역 중심지 건물 레벨 수로부터" # 14821442299771481804
   bpm_consciousness_liberal_change_manor_houses_desc: "분산된 저택 건물 단계 수" # 10052672050318933440
   bpm_consciousness_liberal_change_literacy_rate_desc: "문맹률" # 8873791844775859341
   bpm_consciousness_liberal_change_modifier_desc: "수식어들" # 12101186678468821762
@@ -41,5 +43,3 @@
   bpm_consciousness_liberal_target_protected_speech_law_desc: "[GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName]" # 12488241196566071220
   bpm_consciousness_change_stability_desc: "[concept_bpm_political_stability]" # 2445992824832706033
   bpm_consciousness_labor_change_target_desc: "목표까지의 거리" # 15342645914104609265
-  bpm_consciousness_liberal_change_universities_desc: "대학 건물 레벨 수로부터" # 3681616667661139831
-  bpm_consciousness_liberal_change_trade_centers_desc: "무역 중심지 건물 레벨 수로부터" # 14821442299771481804
