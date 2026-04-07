@@ -24,7 +24,6 @@
   bpm_codification_event_rigidity_below_50: "[concept_bpm_political_stability]은(는) [concept_bpm_politically_unstable]입니다." # 10582004238311339170
   BPM_ADD_TO_DRAFT_CONSTITUTION: "초안에 추가" # 12646220775451876602
   BPM_CONSTITUTIONAL_DRAFT: "헌법 초안" # 1076296762987151807
-  bpm_draft_support_tooltip: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_draft_support')]\n\n[InterestGroup.GetCustom('bpm_draft_result')]" # 5391127401026758448
   bpm_draft_support_opponent_tt: "초안이 승인 단계로 넘어가면 [GetIdeology('ideology_constitution_opponent').GetName] [concept_ideology]를 얻게 될 것입니다." # 9140477131524747082
   bpm_draft_support_wary_tt: "초안이 승인 단계로 넘어갈 때 [concept_ideology]인 [GetIdeology('ideology_constitution_wary').GetName]을 얻게 될 것입니다." # 5231581263132534241
   bpm_draft_support_reluctant_tt: "초안이 승인 단계로 넘어가면 [GetIdeology('ideology_constitution_reluctant').GetName] [concept_ideology]를 얻게 될 것입니다." # 3495439096013832402
@@ -38,7 +37,6 @@
   ideology_constitution_wary: "초안 헌법에 대한 우려" # 822857286552976555
   ideology_constitution_wary_desc: "이 집단들은 현행 초안 헌법에 대해 경계심을 품고 있습니다." # 16576948380691431891
   ideology_constitution_reluctant: "초안 헌법에 대한 꺼림칙함" # 16731668849808500740
-  ideology_constitution_reluctant_desc: "이 집단들은 현행 초안 헌법에 대해 꺼리고 있습니다." # 13508223569263713845
   bpm_codification_decree_support_from_law_count: "헌법 내 법률 수" # 6260189779819504280
   law_repeatable_politics_approve_constitution: "헌법을 승인하십시오" # 11568032752758437511
   bpm_codification_decree_support_from_base: "기본 값" # 14764793505619138724
@@ -52,3 +50,5 @@
   ORG_RP_BUREAUCRATS: "[GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName]" # 16004856269269433229
   ORG_RP_BUREAUCRATS_APPOINTED_BUREAUCRATS: "[GetLawType('law_appointed_bureaucrats').GetName]" # 17542671198018490048
   ORG_RP_DEFAULT: "기본값 #yellow 휴식 지점#!" # 14712733241114413137
+  bpm_draft_support_tooltip: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_draft_support')]\n\n[InterestGroup.GetCustom('bpm_draft_result')]\"  " # 1666375265408366566
+  ideology_constitution_reluctant_desc: "이들 집단은 현재 초안 헌법에 미온적인 태도를 보이고 있습니다.\"   " # 1640433308865282588

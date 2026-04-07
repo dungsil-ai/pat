@@ -131,3 +131,4 @@
   building_group_bg_agriculture_laborers_standard_of_living_add: "테스트 2" # 11709705920395864378
   building_group_bg_agriculture_laborers_standard_of_living_add_desc: "테스트 2 설명" # 2087928024074082427
   welfare_laws.3.d: "일부 [SCOPE.gsInterestGroup('bpm_social_reformer_scope').GetName] 내 사회 개혁가들이 제안된 [SCOPE.sLaw('current_law_scope').GetName]에 대해 빈곤 자체를 범죄로 만들려는 시도로 간주하며 비판의 목소리를 높이고 있습니다." # 4193243935055418880
+  children_rights_events.4.b: "" # 17241709254077376921

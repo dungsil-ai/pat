@@ -1,11 +1,8 @@
 ﻿l_korean:
   bpm_codification_level_constitutional: "#tooltip_header 헌법#!\n$TOOLTIP_DELIMITER$\n법체계의 최고 성문법이자 모든 법률의 근원인 헌법은 변경이 가장 어렵고 통상적으로 예외적인 상황에서만 개정됩니다." # 14008196232846430894
   bpm_codification_level_legal: "#tooltip_header 법률#!\n$TOOLTIP_DELIMITER$\n법전의 두 번째로 높은 단계인 법률은 입법부에 의해 통과되며 정부에 구속력을 가집니다. 일반적으로 헌법보다 더 상세하며 더 쉽게 변경될 수 있습니다." # 3988562538994334940
-  bpm_codification_level_decree: "#tooltip_header 칙령#!\n$TOOLTIP_DELIMITER$\n칙령은 행정부가 반포하며 법적 효력을 가집니다. 이는 보통 의회에서 통과된 법률을 집행하거나 비상사태에 대처하기 위해 사용됩니다. 칙령은 법률보다 덜 공식적이며 매우 쉽게 변경될 수 있습니다." # 9050169931142734365
   bpm_codification_level_traditional: "#tooltip_header 전통적 법률#!\n$TOOLTIP_DELIMITER$\n전통적 법률은 시간이 흐르며 발전해 온 관습과 관행에 기반을 둡니다. 이는 대개 성문법이 아니며 국가가 아닌 공동체에 의해 집행됩니다." # 2395942058465887725
-  bpm_decree_law_tooltip: "#tooltip_header 법령을 선포하십시오#!\n$TOOLTIP_DELIMITER$\n이 법령을 선포하면 입법부의 승인 없이 법적 효력을 갖게 됩니다. 하지만, [concept_bpm_ig_is_state_institutional]가 강력히 반대할 경우 법령 시행을 거부할 수 있습니다. 또한, [concept_bpm_ig_is_state_institutional]를 법령으로 너무 심하게 압박할 경우 쿠데타가 발생할 가능성도 있습니다.\n\n$bpm_decree_button_tt$" # 11781361364657685246
   bpm_codification_cannot_be_legal: "입법부에서 법제화할 수 없음" # 18247369112679508097
-  bpm_codification_events.1.t: "법령 서명" # 15063857010291762185
   bpm_codification_events_king_desc: "#gold [GetPlayer.GetRuler.GetPrimaryRoleTitle]#! [GetPlayer.GetRuler.GetLastName]#! 님께 서명할 칙령이 제시되었습니다. 이 칙령은 [GetPlayer.MakeScope.Var('bpm_decree_cooldown_current_law').GetLawType.GetName]을 폐지하고 [GetPlayer.MakeScope.Var('bpm_decree_cooldown').GetLawType.GetName]으로 대체할 것입니다.\n우리의 지지는 $bpm_codification_decree_support_tt$입니다." # 14364727050667000273
   bpm_codification_events_hog_desc: "#gold $bpm_hog_title_default$#! [GetPlayer.MakeScope.Var('bpm_headofgov').GetCharacter.GetLastName]에게 서명해야 할 칙령이 제시되었습니다. 이 칙령은 [GetPlayer.MakeScope.Var('bpm_decree_cooldown_current_law').GetLawType.GetName]을 폐지하고 [GetPlayer.MakeScope.Var('bpm_decree_cooldown').GetLawType.GetName]으로 대체할 것입니다.\n우리의 지지도는 $bpm_codification_decree_support_tt$입니다." # 8298488288874648829
   bpm_codification_events_kinghog_desc: "#gold $bpm_hog_title_default$#! [GetPlayer.MakeScope.Var('bpm_headofgov').GetCharacter.GetLastName] 님과 #gold [GetPlayer.GetRuler.GetPrimaryRoleTitle]#! [GetPlayer.GetRuler.GetLastName] 님께 서명할 칙령이 제시되었습니다. 이 칙령은 [GetPlayer.MakeScope.Var('bpm_decree_cooldown_current_law').GetLawType.GetName]을 폐지하고 [GetPlayer.MakeScope.Var('bpm_decree_cooldown').GetLawType.GetName]으로 대체할 것입니다.\n우리의 지지도는 $bpm_codification_decree_support_tt$입니다." # 10304418799418238926
@@ -17,8 +14,6 @@
   bpm_codification_events_preparation_tooltip: "@information! 우리는 그들의 지지를 얻는 대가로 [concept_bpm_ig_is_state_institutional]에 특권을 부여할 수 있을 것입니다.\n#gold 지원#! 수치가 #v 3# 이상이거나 [concept_bpm_political_stability]가 [concept_bpm_politically_dynamic]일 경우 가능합니다." # 13695223129163692912
   bpm_codification_events_cancel_tooltip: "@information! [concept_bpm_decree_level]은 서명되지 않을 것입니다." # 18203356056526483577
   bpm_decree_button_tt: "[GetScriptedGui('bpm_codification_decree_law').IsValidTooltip(GuiScope.SetRoot(Law.MakeScope).End)]" # 9492253446271346238
-  bpm_codification_ruler_supports: "#gold [GetPlayer.GetRuler.GetPrimaryRoleTitle]#이(가) #g [concept_bpm_decree_level]을(를) 지지합니다." # 6746104244569398008
-  bpm_codification_hog_supports: "#gold $bpm_hog_title_default$#! #g 지지합니다#! [concept_bpm_decree_level]을." # 1024155843806598029
   bpm_codification_decree_cooldown: "최근에 칙령을 발동하지 않았습니다." # 9474106062868598847
   bpm_codification_decree_support_tt: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],bpm_codification_decree_support_sv_tt $bpm_codification_decree_support_value$#!#!" # 16870383601669912616
   bpm_codification_decree_support_sv_tt: "$bpm_codification_decree_support_message$ [AddTextIf(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('bpm_codification_decree_support'), '(CFixedPoint)0'), Concatenate('\n\n', GetPlayer.MakeScope.GetScriptValueDesc('bpm_codification_decree_support')))]" # 7203723217933517528
@@ -55,8 +50,6 @@
   concept_bpm_codification_desc: "법률 체계의 성문화 수준입니다. 수준이 높을수록 법을 바꾸기가 더 어려워집니다. 수준은 다음과 같습니다:\n[concept_bpm_traditional_level]\n[concept_bpm_decree_level]\n[concept_bpm_legal_level]\n[concept_bpm_constitutional_level]" # 7893490111382790056
   concept_bpm_traditional_level: "전통법" # 16456199524566611198
   concept_bpm_traditional_level_desc: "관습법은 시간이 지남에 따라 발전해 온 관습과 관행에 기반을 두고 있습니다. 이는 대개 성문화되어 있지 않으며 국가가 아닌 공동체에 의해 집행됩니다." # 9363057769986859536
-  concept_bpm_decree_level: "법령" # 12546869636373198968
-  concept_bpm_decree_level_desc: "칙령은 행정부가 발령하며 법적 효력을 가집니다. 이는 통상적으로 입법부가 통과시킨 법률을 집행하거나 비상사태에 대처하기 위해 사용됩니다. 칙령은 법률보다 덜 공식적이며 매우 쉽게 변경될 수 있습니다." # 3178422886774625708
   concept_bpm_legal_level: "법률" # 17254448275152578783
   concept_bpm_legal_level_desc: "성문화의 두 번째로 높은 단계인 법률은 입법부에서 통과되며 정부에 구속력을 가집니다. 이 법률들은 통상 헌법보다 더 상세하며 더 쉽게 개정될 수 있습니다." # 705490716256721678
   concept_bpm_constitutional_level: "헌법" # 6588667090161751045
@@ -65,7 +58,6 @@
   bpm_codification_events.2.d: "[concept_bpm_ig_is_state_institutional]은 칙령 시행을 거부했습니다. 그들은 그것이 부당하며 현행 법전 수준을 위반한다고 주장합니다. 관료제가 반란을 일으키지는 않았으나, 협조적이지도 않습니다." # 3609714008152027492
   bpm_codification_events.2.f: "\"본인은 헌법에 대한 충성, 법률에 대한 복종, 그리고 직무에 대한 양심적인 이행을 맹세하나니, 신이여 돕소서\"\n\n- 독일 제국, 1919년, 모든 국가 공무원 충성 맹세문" # 13050794111340897905
   bpm_codification_events.2.a: "우리는 최악의 상황은 피했습니다." # 14253992232069253279
-  bpm_codification_events.3.t: "칙령 시행됨" # 3954734063797320868
   bpm_codification_events.3.d: "[concept_bpm_ig_is_state_institutional]가 칙령을 시행했습니다. 관료제가 협조하고 있으며 칙령이 발효되었습니다." # 4353191251056816898
   bpm_codification_events.3.f: "“나는 모든 노예 신분으로 억류된 자들은 자유로우며, 이제부터 영원히 자유로울 것을 명령하고 선언하노라.”\n\n- 해방 선언, 미국, 1863년" # 16706354820425395346
   bpm_codification_events.3.a: "우리는 성공했습니다." # 8618759305353349479
@@ -92,3 +84,11 @@
   bpm_governance_principle_is_not_constitutional_law: "[GetPlayer.GetActiveLawFromGroup('lawgroup_governance_principles').GetName]은 [concept_bpm_constitutional_level]이 아닙니다." # 6567183851140662190
   bpm_constitutional_convention: "헌법 성문화" # 6396338343171291856
   bpm_in_negotiation: "협상 중" # 10372713414108995598
+  bpm_codification_level_decree: "#tooltip_header 칙령#!\n$TOOLTIP_DELIMITER$\n칙령은 행정부에서 발령하며 법적 효력을 갖습니다. 대개 입법부에서 통과된 법률을 시행하거나 비상사태에 대응하기 위해 사용됩니다. 법률보다 격식이 덜하며 매우 쉽게 변경할 수 있습니다." # 681369748210945706
+  bpm_decree_law_tooltip: "#tooltip_header 이 법률을 칙령으로 공포#!\n$TOOLTIP_DELIMITER$\n이 법률을 칙령으로 공포하면 입법부의 승인 없이도 법적 효력을 갖게 됩니다. 그러나 [concept_bpm_ig_is_state_institutional]가 강하게 반대할 경우 칙령 이행을 거부할 수 있습니다. 또한 칙령으로 [concept_bpm_ig_is_state_institutional]를 지나치게 압박하면 쿠데타가 발생할 가능성도 있습니다.\n\n$bpm_decree_button_tt$" # 6561094892472342071
+  bpm_codification_events.1.t: "칙령 서명" # 11734934615537218892
+  bpm_codification_ruler_supports: " #gold [GetPlayer.GetRuler.GetPrimaryRoleTitle]#!께서 #g [concept_bpm_decree_level]을(를) 지지하십니다.\" " # 999213308967075106
+  bpm_codification_hog_supports: " #gold $bpm_hog_title_default$#!께서 #g [concept_bpm_decree_level]을(를) 지지하십니다.\" " # 12391904094825387515
+  concept_bpm_decree_level: "칙령" # 11768901925369869759
+  concept_bpm_decree_level_desc: "칙령은 행정부에서 발령하며 법적 효력을 갖습니다. 대개 입법부에서 통과된 법률을 시행하거나 비상사태에 대응하기 위해 사용됩니다. 법률보다 격식이 덜하며 매우 쉽게 변경할 수 있습니다." # 10048221076000428120
+  bpm_codification_events.3.t: "칙령이 시행됨" # 9870980941754432634

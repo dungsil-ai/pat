@@ -1,0 +1,5 @@
+﻿l_korean:
+  institution_environmental_policy: "환경 정책" # 12462588879775782605
+  institution_environmental_policy_desc: "배출량 규제, 자연 보호 및 생태계의 적극적인 복원." # 1578002145934435314
+  country_institution_environmental_policy_max_investment_add: "최대 $institution_environmental_policy$ [concept_institution] 투자" # 18289898457619464193
+  country_institution_environmental_policy_max_investment_add_desc: "$institution_environmental_policy$ [concept_institution]의 최대 투자 수준에 대한 보너스 또는 페널티" # 4280636574649853682

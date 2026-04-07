@@ -65,3 +65,26 @@
   bpm_revolution_results.14.d: "비밀 결사가 쿠데타를 성공적으로 감행하여 [GetPlayer.GetCapital.GetCityHubName]을 장악하였습니다." # 3241356744258967651
   bpm_revolution_results.14.a: "그림자 속 음모가들!" # 1758540898203983133
   bpm_successful_coup_ig: "쿠데타 성공" # 8990137261913943831
+  bpm_dissent_no_confidence_no_cd: "최근 불신임안 없음" # 16611020316464444136
+  bpm_organization_text_tt: "#yellow 조직#!: [JournalEntry.MakeScope.Var('bpm_current_front_organization').GetValue|v1]#! ([JournalEntry.MakeScope.ScriptValue('bpm_front_organization_change_je_tt_multid')|v-=2])" # 5509263155423232812
+  bpm_political_situation_dissent_header: "반체제 개요" # 620864691234882504
+  bpm_political_situation_dissent_crises_active: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent')|v0] #grey 활성#! [GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_preparing')|v0] #grey 준비 중#! [GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_potential')|v0] #grey 잠재적#!" # 12487136947162853270
+  bpm_political_situation_dissent_crises_preparing: "" # 17241709254077376921
+  bpm_political_situation_dissent_crises_inactive: "" # 17241709254077376921
+  bpm_dissent_actions_header: "반체제 활동" # 4174370420217463358
+  bpm_potential_potential_actions: "잠재적 반체제 활동" # 15083203922726192510
+  bpm_potential_preparing_actions: "준비 중인 반체제 활동" # 4445781068054134755
+  bpm_dissent_actions_potential_count: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_potential')|v0]" # 8548039705938832274
+  bpm_dissent_actions_preparing_count: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent_preparing')|v0]" # 15577008004735546255
+  bpm_dissent_actions_active_v_potential: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_dissent')|v0]" # 13051971014993833082
+  bpm_front_organization_change_je_tt_ig_desc: "관련 [concept_interest_group]의 [concept_clout] 및 조직#gold s#!" # 13522071766645984450
+  bpm_front_organization_change_je_tt_mov_desc: "관련 [concept_political_movement]의 [concept_activism] 및 [concept_political_movement_support]" # 16406192949432670789
+  bpm_front_organization_change_je_tt_march_bonus_desc: "민족의 봄 진행도" # 13271550076488853256
+  bpm_exhprct_base_desc: "총 [concept_bpm_state_capacity] 대비 [concept_bpm_state_exhaustion] 비율" # 16423920262825702701
+  bpm_exhprct_radical_desc: "[concept_radical]#gold s#! 수" # 2981523191412609511
+  bpm_exhprct_squared: "승수 조정" # 8480831549245532598
+  bpm_political_situation_crisis_header: "위기 개요" # 7435104549783300562
+  bpm_crisis_actions_header: "위기" # 11958619820440204922
+  bpm_crisis_actions_header_active: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_crises')|v0]" # 14308705524106366591
+  bpm_potential_potential_actions_crises: "잠재적 위기" # 9581108686073932472
+  bpm_potential_potential_actions_crises_count: "[GetPlayer.MakeScope.ScriptValue('bpm_number_of_crises_crises_inactive')|v0]" # 5587577629440597943

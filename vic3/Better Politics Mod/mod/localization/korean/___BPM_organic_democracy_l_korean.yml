@@ -15,3 +15,4 @@
   party_rural_communes: "농촌 공동체와 마을" # 5744602652066182659
   party_national_organization: "국가 조직" # 16713192554638951786
   root_has_enacted_no_parties_allowed: "[ROOT.GetCountry.GetName]이 [GetLawType('law_no_parties_allowed').GetName]을 제정했습니다." # 4968431190351900492
+  je_bpm_clay_forming_an_organism_reason: "" # 17241709254077376921

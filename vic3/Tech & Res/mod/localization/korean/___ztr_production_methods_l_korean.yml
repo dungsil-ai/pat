@@ -31,14 +31,12 @@
   pm_no_electroniccomponents_production: "전자 부품 없음" # 5502064499116459253
   pm_vacuum_tube: "진공관" # 4762308328558204570
   pm_transistor: "트랜지스터" # 7647196699687166136
-  pm_integrated_transistor: "통합 트랜지스터" # 1071076727575153948
   pmg_base_building_fuel_cell: "연료 전지" # 1747306830499587246
   pm_no_fuel_cell: "연료 전지 없음" # 15521251380516088782
   pm_alkaline_fuel_cell: "알칼리 연료 전지" # 11576843776533980173
   pmg_automation_building_electronics_plant: "자동화" # 18411738171978629847
   pm_watertube_boiler_building_electronics_plant: "수관 보일러" # 3203413198244518398
   pm_rotary_valve_engine_building_electronics_plant: "회전식 밸브 기관" # 14572944410143777332
-  pm_automatic_printed_circuit_board_building_electronics_plant: "자동 인쇄 회로 기판" # 9399905032982037547
   pmg_base_building_processors: "가공기" # 13367468069779874615
   pm_no_processors_production: "프로세서 없음" # 6240608457693099604
   pm_integrated_circuit: "집적 프로세서" # 5719687588264932005
@@ -192,14 +190,10 @@
   pm_satellite_communications_network_building_telecommunications: "위성 통신망" # 1802290853112651880
   pm_internet_global_network_building_telecommunications: "인터넷 글로벌 네트워크" # 15216832533823405067
   pmg_entertainment_type: "오락 종류" # 5232376900064945487
-  pm_theater: "극장" # 14429152551668080124
   pm_cinema: "영화" # 7974414903991570916
-  pmg_entertainment_theater_method: "전구 유형" # 9961423507306553134
-  no_theater: "전역 없음" # 303804245689421745
   no_cinema: "영화관 없음" # 16597665073149927241
   pmg_entertainment_cinema_method: "영화관 종류" # 8272481899333951338
   local_plays_pm: "지역 연극" # 13725004793240286759
-  classic_plays_pm: "고전 연극" # 15059196873233609106
   pm_traditional_patronage_entertainment_industry: "전통적 온정주의" # 7187783793685570243
   pm_bourgeoisie_patronage_entertainment_industry: "부르주아지 후원" # 8913570852181660551
   pm_independent_artists_entertainment_industry: "독립 예술가들" # 16162285423814916651
@@ -214,8 +208,6 @@
   pm_elgar_early_romantic_orchestra: "낭만주의 오케스트라" # 6117078723004603232
   pm_elgar_mid_romantic_orchestra: "바그너식 오케스트라" # 7656254448007153855
   pm_elgar_late_romantic_orchestra: "후기 낭만주의 오케스트라" # 12790200110422875073
-  pm_elgar_jazz_band: "재즈 밴드" # 1524280714704521257
-  pm_elgar_rock_band: "록 밴드" # 17004187697777754987
   pm_elgar_cinema_orchestra: "영화 오케스트라" # 9963241697902271081
   pm_elgar_public_orchestra: "공립 오케스트라" # 1254931181376274057
   pmg_elgar_ballet_school: "발레 학교" # 15176979514210120097
@@ -229,7 +221,6 @@
   pmg_data_section_building_office: "데이터 섹션" # 4146681100242937780
   pm_manual_market_studies: "수동 시장 연구" # 10817078238034977653
   pm_basic_data_analysis: "기본 데이터 처리" # 4153486073735590471
-  pm_cloud_databased_data_analysis: "클라우드 데이터베이스 기반 데이터 처리" # 12842026087489787718
   pmg_service_section_building_office: "서비스 부문" # 2526237145348668311
   pm_consulting_firm_services: "컨설팅 회사 서비스" # 62620980104010652
   pm_multinational_corporate_services: "다국적 기업 서비스" # 8040831631732108700
@@ -243,8 +234,6 @@
   pm_local_data_storage_building_datacenter: "로컬 데이터 저장소" # 18211265562620089373
   pm_cloud_storage_building_datacenter: "클라우드 저장소" # 7261991097100852398
   pmg_automation_building_datacenter: "자동화" # 18411738171978629847
-  pm_early_computer_server_building_datacenter: "초기 컴퓨터 서버" # 12405944257718894602
-  pm_mid_computer_server_building_datacenter: "중급 컴퓨터 서버" # 5199777753725762425
   pmg_data_transportation_building_datacenter: "데이터 전송" # 3958067927722683896
   pm_local_network_building_datacenter: "지역 네트워크" # 4356550927925911043
   pm_internet_building_datacenter: "인터넷" # 18294203111589887707
@@ -272,8 +261,6 @@
   pmg_base_highway_road: "고속도로" # 393569704652363311
   pm_basic_highway: "기본 간선도로" # 13133159097388317883
   pm_advanced_highway: "선진 고속도로" # 17188146487051816403
-  pm_local_computer_networks: "지역 컴퓨터 네트워크" # 14774488911882396777
-  pm_rudimental_data_networks: "기초 자료망" # 12916180142484734938
   pmg_curie_physics: "물리학 연구소" # 9486441186478169368
   pm_curie_physics_classical: "고전 물리학 연구소" # 13353486080914829998
   pm_curie_physics_electromagnetism: "전자기 물리학 연구소" # 16864237363241793549
@@ -387,10 +374,6 @@
   pm_picks_and_shovels_building_rare_earths_mine: "곡괭이와 삽" # 5178375057128475497
   pm_diesel_pump_building_rare_earths_mine: "디젤 펌프" # 15103057017428559217
   pm_electric_fueled_pump_building_rare_earths_mine: "전기 펌프" # 10539379326780614933
-  pm_purification_mine: "근대적 정화 방식" # 16131236006907829984
-  pm_advanced_purification_mine: "선진 정화 방법" # 2327745132674775894
-  pm_rare_earths_rudimental_purification: "초보적인 정화" # 6113578724722224633
-  pm_rare_earths_advanced_purification: "고급 정화" # 2656940984288567059
   pmg_steam_automation_building_rare_earths_mine: "증기 자동화" # 7549265719736514720
   pmg_train_automation_building_rare_earths_mine: "열차 자동화" # 5563784132978981735
   pmg_gasification_building_coal_mine: "가스화" # 6163194949182457262
@@ -414,7 +397,6 @@
   pm_advanced_electric_control_building_explosives_factory: "선진 전기 제어" # 4934158965090356378
   pm_hd_televisions: "에이치디 티브이" # 927467182572219776
   pm_smart_televisions: "스마트 TV" # 14290204839499915997
-  pm_nano_transistor: "나노 트랜지스터" # 3099426959197716006
   pm_pem_fuel_cell: "PEM 연료전지" # 3939129137591832989
   pm_multi_core_processor: "멀티 코어 프로세서" # 14293421957176847501
   pm_cell_phones: "휴대폰" # 2760948059199925202
@@ -440,11 +422,6 @@
   pmg_data_optimization_light_industry_paper: "최적화" # 8147114492625738509
   pm_manual_data_reporting_light_industry_paper: "수동 데이터 보고" # 2966828791430992999
   pm_manual_data_optimization_light_industry_paper: "수동 데이터 최적화" # 6617053689258647574
-  pmg_data_optimization_heavy_industry_processors: "최적화" # 8147114492625738509
-  pm_digital_data_optimization_heavy_industry_processors: "디지털 데이터 최적화" # 5438169285567104682
-  pm_digital_data_on_premises_heavy_industry_processors: "디지털 데이터 온프레미스" # 1487727957435063545
-  pm_internet_data_reporting_heavy_industry_processors: "인터넷 데이터 보고" # 12301346942221092580
-  pm_internet_data_optimization_heavy_industry_processors: "클라우드 데이터 최적화" # 3163034493859488736
   pmg_data_optimization_heavy_industry_telecommunications: "최적화" # 8147114492625738509
   pm_internet_data_reporting_heavy_industry_telecommunications: "인터넷 데이터 보고" # 12301346942221092580
   pmg_data_optimization_heavy_industry_software: "최적화" # 8147114492625738509
@@ -532,7 +509,6 @@
   pm_cross_platform_building_interactive_media_industry: "가벼운 오락 개발" # 9522000480256344750
   pm_ultraprocessed_snacks: "초가공 식품" # 1244909927899657510
   pmg_civil_space_aircraft: "항공우주 생산" # 622437809118166716
-  modern_productions_pm: "근대 연극" # 1628544749358450212
   silent_films: "무성 영화" # 1012475898956297974
   celluloide_films: "셀룰로이드 영화" # 14454490542113914981
   blockbuster_films: "블록버스터 시네마" # 5174007306369154612
@@ -549,7 +525,6 @@
   manzoni_pm_rotary_presses: "윤전기" # 10925214287751227858
   manzoni_pm_linotype: "라이노타이프" # 12706627235917907414
   pm_offset_printing: "옵셋 인쇄" # 12590631557206902199
-  pm_digital_press: "디지털 서적 인쇄기" # 4515756996621021429
   pmg_broadcast_media_industry: "방송 미디어 생산" # 7769630183178427951
   pm_no_broadcast_media_industry: "방송 매체 산업 없음" # 11522010772143511015
   pm_electronic_news_gathering: "전자 뉴스 취재" # 5533610312668139823
@@ -601,12 +576,9 @@
   pm_highways_building_railway: "간선도로" # 3969334153630841660
   pm_expressways_building_railway: "고속도로" # 3878952220713254793
   pm_logistics_hubs_building_railway: "물류 허브" # 1735571295202984986
-  pm_internet_data_algorithmic_dispatch_heavy_industry_telecommunications: "알고리즘 최적화" # 10306209424860855498
   pmg_automation_building_ecommerce_logistics: "자동화" # 18411738171978629847
   pm_advanced_assembly_lines_building_ecommerce_logistics: "선진 조립 라인" # 9416223957800701698
   pm_robotic_building_ecommerce_logistics: "로봇 조립 라인" # 3664357297072673262
-  pmg_data_optimization_building_ecommerce_logistics: "데이터 최적화" # 1434155673471641683
-  pm_internet_data_algorithmic_dispatch_heavy_industry: "알고리즘 최적화" # 10306209424860855498
   pmg_delivery_mode_building_ecommerce_logistics: "배송 모드" # 165647942061591684
   pm_local_courier_network: "지역 전령망" # 9036454332761173002
   pm_platform_gig_delivery: "플랫폼 긱 배달" # 12631967275272734267
@@ -618,8 +590,6 @@
   pmg_transport_building_ecommerce_logistics: "운송" # 10054269578660534071
   pm_bike_scooter_transportation: "자전거 및 스쿠터 교통" # 3453720777075457713
   pm_drone_last_mile: "드론 라스트 마일 배송" # 4770955508060320513
-  pm_truck_van_transportation: "트럭 및 밴 운송" # 6703395539778317178
-  pm_automatized_truck_van_transportation: "자동화된 트럭 및 밴 운송" # 3289522872320354806
   pm_high_precision_blasting_building_coal_mine: "정밀 발파" # 12428454820629999812
   pm_high_precision_blasting_building_iron_mine: "정밀 발파" # 12428454820629999812
   pm_high_precision_blasting_building_lead_mine: "정밀 발파" # 12428454820629999812
@@ -678,7 +648,6 @@
   pm_pop_art: "팝 아트" # 3098711178125284433
   pm_digital_art: "디지털 아트" # 2201725869365387493
   pm_multiway_transport_plantation_rubber: "다목적 수송" # 11460452246540390855
-  pm_advanced_data_networks: "선진 자료망" # 5109074647167509544
   pmg_modern_state_baseline: "조직적 국가 기반" # 12017982562943975351
   pm_prewar_base: "후기 빅토리아 시대 기준선" # 14645937209360237470
   pm_postwar_base: "냉전 기준선" # 19902828671083780
@@ -716,3 +685,78 @@
   pm_continuous_diffusion_sugar_cane_refining: "지속적인 사탕수수 보급" # 8654796673096410108
   pm_continuous_diffusion_sugar_beet_refining: "연속적인 사탕무 확산" # 18369159704869804622
   pm_vertical_silo_drying: "수직 사일로 건조" # 10760966337138316744
+  pm_theater: "극장" # 3893606510004869061
+  pmg_entertainment_theater_method: "극장 유형" # 2933119919351029586
+  no_theater: "극장 없음" # 8096113841972233937
+  classic_plays_pm: "신고전주의 연극" # 9447082009509241748
+  pm_early_computer_server_building_datacenter: "초기 서버" # 1860286119592185258
+  pm_virtual_reality_gadgets: "가상 현실 기기" # 507957831256502173
+  pm_vibe_coding_building_software_industry: "바이브 코딩" # 7948942267356835557
+  modern_productions_pm: "현대 극장" # 17319409170999692004
+  pm_euv_photolithography: "EUV 노광 장비" # 2575009449522707151
+  pm_printed_circuit_board: "인쇄 회로 기판" # 10147102259182562046
+  pm_embedded_control_circuit: "임베디드 제어 회로" # 14425286653039326075
+  pm_surface_mount_technology_building_electronics_plant: "표면 실장 기술" # 16382602656253105865
+  pm_advanced_assembly_lines_building_computer_assembly: "고급 조립 라인" # 9416223957800701698
+  pm_robotic_building_computer_assembly: "로봇 조립 라인" # 3664357297072673262
+  pm_iot_building_computer_assembly: "IoT 조립 라인" # 7152189685164104908
+  pmg_automation_building_computer_assembly: "자동화" # 18411738171978629847
+  pm_local_computer_networks: "전산화된 서류 정리" # 14255048031683881520
+  pm_rudimental_data_networks: "중앙 집중식 데이터베이스" # 18032489548004472852
+  pm_advanced_data_networks: "디지털 행정" # 11184501952746348871
+  pm_late_computer_server_building_datacenter: "고급 서버" # 1085319152731720459
+  pmg_ai_systems_building_datacenter: "AI 서비스" # 2310197092580265829
+  pm_no_model_training: "AI 서비스 없음" # 12907418925871007395
+  pm_neural_model_training: "신경망 모델" # 10370417592559506100
+  pm_generative_ai_models: "생성형 AI 모델" # 18334408901027053319
+  pm_artificial_general_intelligence: "범용 인공지능(AGI)" # 6421827008056113741
+  pm_digital_press: "디지털 프린터" # 17146748130558545010
+  pmg_automation_building_consumer_electronics_industry: "자동화" # 18411738171978629847
+  pm_advanced_assembly_lines_building_consumer_electronics_industry: "고급 조립" # 3720640808227754064
+  pm_robotic_building_consumer_electronics_industry: "로봇 조립 라인" # 3664357297072673262
+  pm_iot_building_consumer_electronics_industry: "IoT 조립 라인" # 7152189685164104908
+  pm_assembly_lines_building_consumer_electronics_industry: "조립 라인" # 4279296270535528751
+  pmg_opioid_refinement: "아편제" # 11912372445777328107
+  pm_no_opioid_refinement: "아편제 정제 없음" # 9941081468724928946
+  pm_morphine_extraction: "모르핀 추출" # 6978138822029046170
+  pm_synthetic_opioids: "합성 아편제" # 12776500914798530037
+  pm_robotic_building_tooling_workshop: "로봇 조립 라인" # 3664357297072673262
+  pm_purification_mine_advancedores_mine: "현대식 정제" # 12190261196422407402
+  pm_hpgr_comminution_advancedores_mine: "HPGR 분쇄" # 15265600619577817348
+  pm_purification_mine: "현대식 정제" # 12190261196422407402
+  pm_advanced_purification_mine: "고급 정제" # 4201605683537958837
+  pm_internet_data_algorithmic_dispatch_heavy_industry: "알고리즘 최적화" # 10306209424860855498
+  pm_basic_purification_rare_earths_mine: "기초 정제" # 12816754735408946084
+  pmg_data_optimization_heavy_industry_computer: "최적화" # 8147114492625738509
+  pm_digital_data_optimization_heavy_industry_computer: "디지털 데이터 최적화" # 5438169285567104682
+  pm_digital_data_on_premises_heavy_industry_computer: "온프레미스 디지털 데이터" # 1487727957435063545
+  pm_internet_data_optimization_heavy_industry_telecommunications: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_heavy_industry_algorithmic_dispatch: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_algorithmic_dispatch_heavy_industry_no_shopkeepers: "알고리즘 최적화" # 10306209424860855498
+  pmg_data_optimization_heavy_industry_algorithmic_dispatch_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_reporting_primary_sector_no_shopkeepers: "데이터 보고" # 1477959398194662629
+  pm_internet_data_optimization_primary_sector_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_reporting_light_industry_no_shopkeepers: "데이터 보고" # 1477959398194662629
+  pm_internet_data_optimization_light_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_reporting_heavy_industry_no_shopkeepers: "데이터 보고" # 1477959398194662629
+  pm_internet_data_optimization_heavy_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_primary_sector_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_light_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_heavy_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  streaming_services: "스트리밍 서비스" # 12943664315283921042
+  pm_elgar_jazz_band: "재즈 밴드" # 16721837355298369864
+  pm_elgar_rock_band: "록 밴드" # 2750338790201735480
+  pm_elgar_digital_orchestra: "디지털 오케스트라" # 17524729478415232214
+  pm_autonomous_city_transport: "자율 주행 대중교통" # 10759978682859072323
+  pm_smartworking_building_office: "재택근무" # 13201111553050787976
+  pm_truck_van_transportation: "밴 운송" # 968223703238180192
+  pm_autonomous_truck_van_transportation: "자동화 밴 운송" # 2426897484460695016
+  pm_3d_printed_tools: "3D 프린팅 도구" # 3297246099342774049
+  pmg_fusion_reactor: "핵융합로" # 10964658893379018006
+  pm_fusion_reactor: "중수소-삼중수소 핵융합로" # 14858936224155429612
+  pmg_fusion_plasma_monitoring: "플라즈마 모니터링" # 7597758989390205646
+  pm_fusion_plasma_control: "플라즈마 제어 시스템" # 9511829845976044813
+  pm_waste_incinerator: "폐기물 소각로" # 13944166969979922111
+  pm_cloud_databased_data_analysis: "클라우드 데이터 처리" # 9638355952874017237
+  pm_predictive_fulfilment_network: "예측형 주문 처리 네트워크" # 2609255630351314655
+  pm_ai_assisted_art: "AI 보조 창작" # 1761428424107184967

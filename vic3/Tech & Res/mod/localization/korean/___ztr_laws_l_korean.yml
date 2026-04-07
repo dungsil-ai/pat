@@ -73,3 +73,6 @@
   law_command_economy_menshevik_desc: "이 법률은 멘셰비키 원칙을 따르는 국가 주도 경제를 창출합니다. 국가는 주요 산업, 은행, 인프라를 통제하는 한편, 소규모 및 중견 기업에서는 사적 소유가 가능하도록 합니다. 경제 계획은 사회 복지와 근대화를 보장하는 것을 목표로 하지만, 정치적 다원주의, 노동조합, 의회 감독의 틀 안에서 이루어집니다. 시장 요소들은 공공 조율과 공존하며 혼란과 폭정 모두를 방지하고자 합니다." # 9282747996973439920
   law_council_republic_soviet: "소비에트 노동자 평의회 공화국" # 18446522381139756149
   law_council_republic_soviet_desc: "이 법령은 노동자, 병사, 농민 평의회(소비에트)가 모든 수준에서 최고 권위를 갖는 국가를 수립합니다. 정치 권력은 공산당 아래 중앙집권화되며, 공산당은 평의회들을 사회주의 건설로 이끌어 갑니다. 개인의 자유와 반대 정당은 집단적 혁명 목표에 종속되며, 생산과 행정은 당의 감독 아래 계층적인 노동자 통제를 통해 관리됩니다." # 3988456627895639268
+  ztr_un_hr_encouraged_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정을 장려하지 않습니다." # 6387046048474036882
+  ztr_un_hr_conservative_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정에 대해 보수적이지 않습니다." # 6746939984270385719
+  ztr_un_hr_illegalized_slavery_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 노예제#!를 #n 불법화#!하지 않았습니다." # 16879454732413035856

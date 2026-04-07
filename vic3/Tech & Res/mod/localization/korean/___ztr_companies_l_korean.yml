@@ -113,9 +113,7 @@
   prestige_good_apple_mac: "애플 컴퓨터" # 8500456509480708296
   prestige_good_olivetti_teleprinters: "올리베티 컴퓨터" # 5836065557153404503
   prestige_good_microsoft_windows: "마이크로소프트 윈도우" # 12833001306218989096
-  prestige_good_asml_euv_lithography_machines: "EUV 리소그래피 장비" # 17133432406661003360
   prestige_good_intel_processors: "인텔 프로세서" # 4110800784192622919
-  prestige_good_wafers: "고품질 웨이퍼" # 16780365725311925571
   prestige_good_smartphones: "브란트 전화" # 649904931437924861
   prestige_good_generic_records_and_films: "고품질 음반 및 영화" # 9002835275836063237
   prestige_good_generic_instruments: "고품질 기구" # 8740513140084955099
@@ -181,3 +179,12 @@
   company_teva_pharmaceutical: "테바 제약" # 17781158287753919566
   company_csl_behring: "CSL 베링" # 1472637146143150207
   company_novo_nordisk: "노보 노디스크" # 6461829117287475751
+  prestige_good_asml_euv_lithography_machines: "EUV 노광 장비" # 3223485127392795150
+  prestige_good_tsmc_wafers: "TSMC 웨이퍼" # 3171728798350136832
+  company_nvidia: "엔비디아" # 12985213149709122305
+  company_alphabet: "알파벳 (구글)" # 5583179255402290200
+  company_mistral_ai: "미스트랄 AI" # 6084527169317280190
+  company_baidu: "바이두" # 13099620423399021970
+  company_cohere: "코히어" # 12834665864428277560
+  company_foxconn: "폭스콘" # 5393018536204626944
+  prestige_good_gpu: "엔비디아 GPU" # 11600657086683868925

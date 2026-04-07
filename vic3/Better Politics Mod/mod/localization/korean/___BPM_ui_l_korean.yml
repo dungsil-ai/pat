@@ -23,3 +23,5 @@
   bpm_super_extremist_reason_radical_democrat_in_undemocratic: "이것은 선거권이 없는 [concept_country] 내의 급진민주주의자 [concept_interest_group]입니다." # 11174867861056657147
   bpm_super_extremist_reason_market_lib_in_cr: "이는 사회주의 [concept_country] 내의 시장 자유주의 [concept_interest_group]입니다." # 8339410720154571675
   bpm_super_extremist_reason_organic_democrat: "이것은 비유기적 [concept_country]에 있는 유기적 민주주의자 [concept_interest_group]입니다." # 12253906975995451669
+  BPM_FORCE_LAW_THROUGH: "#bold 법안 강행#!" # 10007386801776730434
+  bpm_force_law_through_tt: "[Concept('concept_bpm_state_exhaustion', '국가 피로도')] #B 500#!을 소모하여 법안을 추진하고, [Concept('concept_enactment_phase', '법안 제정 단계')]를 #B 1#!만큼 진척시킵니다. 이 선택지는 투표 단계 중에는 사용할 수 없습니다." # 12295549131748087848

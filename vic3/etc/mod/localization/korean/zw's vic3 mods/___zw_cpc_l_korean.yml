@@ -50,3 +50,18 @@
   zw_text_profit_condition_13: "#indent_newline:16 \n$EFFECT_LIST_BULLET$$IS_SUBSIDIZED$ 또는 $concept_building_balance_profit$ > 0#" # 10368053209119549519
   zw_text_profit_condition_14: "#indent_newline:12 \n$EFFECT_LIST_BULLET$건물 이윤 > 200 * 건물 단계#!" # 8561702447904113811
   zw_text_profit_condition_15: "건설이 진행되는 동안 건물이 더 이상 수익 조건을 충족할 수 없게 되더라도, 완공 시 적자가 발생하거나 낮은 시장 접근성을 초래하는 경우가 아니라면 건설은 취소되지 않습니다." # 7700883122647234302
+  zw_auto_expand_incorporated_states_only_button_desc: "" # 17241709254077376921
+  zw_auto_invest_incorporated_states_only_button_desc: "" # 17241709254077376921
+  zw_auto_invest_profitable_buildings_only_button_desc: "" # 17241709254077376921
+  zw_auto_invest_profitable_buildings_only_undo_button_desc: "" # 17241709254077376921
+  zw_auto_invest_existing_buildings_only_manufacture_button_desc: "" # 17241709254077376921
+  zw_auto_invest_existing_buildings_only_agro_button_desc: "" # 17241709254077376921
+  zw_auto_invest_existing_buildings_only_resource_button_desc: "" # 17241709254077376921
+  zw_auto_invest_existing_buildings_only_infrastructure_button_desc: "" # 17241709254077376921
+  zw_no_foreign_private_investment_manufacture_button_desc: "" # 17241709254077376921
+  zw_no_foreign_private_investment_agro_button_desc: "" # 17241709254077376921
+  zw_no_foreign_private_investment_resource_button_desc: "" # 17241709254077376921
+  zw_no_foreign_private_investment_infrastructure_button_desc: "" # 17241709254077376921
+  zw_intervene_investment_from_abroad_industry_button_desc: "" # 17241709254077376921
+  zw_intervene_investment_from_abroad_agriculture_button_desc: "" # 17241709254077376921
+  zw_text_profit_condition_01: "" # 17241709254077376921

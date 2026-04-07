@@ -160,3 +160,11 @@
   building_hydroelectric_power_plant_lens_option: "$building_hydroelectric_power_plant$ 확장" # 691348080613292376
   building_hydroelectric_power_plant_throughput_add: "수력 발전소 [concept_throughput]" # 9181274617387101736
   building_hydroelectric_power_plant_throughput_add_desc: "수력 발전소의 [concept_throughput]을 증대시킵니다." # 9775918703950969080
+  building_computer_assembly_plant: "컴퓨터 조립 공장" # 10570113648408922774
+  building_computer_assembly_plant_lens_option: "확장 $building_computer_assembly_plant$" # 9608316486685946499
+  building_computer_assembly_plant_throughput_add: "컴퓨터 조립 공장 [concept_throughput]" # 10523450384200204393
+  building_computer_assembly_plant_throughput_add_desc: "컴퓨터 조립 공장의 [concept_throughput]을(를) 높입니다." # 7687113816694385156
+  building_fusion_power_plant: "핵융합 발전소" # 13633552730023001641
+  building_fusion_power_plant_lens_option: "확장 $building_fusion_power_plant$" # 15703985506358108552
+  building_fusion_power_plant_throughput_add: "핵융합 발전소 [concept_throughput]" # 6458060321820674968
+  building_fusion_power_plant_throughput_add_desc: "핵융합 발전소의 [concept_throughput]을(를) 높입니다." # 14051988038866047548

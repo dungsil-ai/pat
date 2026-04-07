@@ -43,9 +43,6 @@
   law_repeatable_politics_bureaucratic_purge_desc: "[GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName] 전반에 걸친 대대적인 숙청을 단행하여 행정 기구의 충성심을 확보하십시오." # 4900450258703259342
   bpm_repeatable_law_bureaucratic_purge_result: "관료 숙청의 여파" # 17110094282429059918
   bpm_repeatable_law_bureaucratic_purge_result_ig: "아첨꾼들로 가득 찼음" # 11068968941853619531
-  law_repeatable_politics_popular_concessions: "사소한 양보"
-  law_repeatable_politics_popular_concessions_desc: "사소하지만 우리 인구를 괴롭히는 문제들을 조사하고, 대대적인 개혁 없이도 처리할 수 있는 조치를 취하십시오."
-  bpm_repeatable_law_popular_concessions_result_permanent: "사소한 양보"
   law_repeatable_politics_anti_corruption_drive: "부패 척결 운동" # 6068151647980139840
   bpm_repeatable_law_anti_corruption_drive_result_ig: "부패 방지 결과" # 8908314715675768806
   bpm_law_effect_tt_politics_anti_corruption_drive: "@information! #blue 가장 많은 [Concept('concept_clout', '영향력')]을 보유한 [Concept('concept_bpm_ig_is_institutional', '제도적')] [Concept('concept_interest_group', '이해집단')]을 대상으로 합니다.!#" # 3976350384755701990
@@ -164,3 +161,13 @@
   law_repeatable_economy_forced_industrialization: "강제적인 산업화" # 9511321451627921758
   law_repeatable_economy_forced_industrialization_desc: "할당량을 상향하고, 벌칙 노동을 동원하며, 산업 안전 규제를 완화하여 매우 신속한 산업 발전을 도모하십시오." # 10130155547688856935
   bpm_repeatable_law_forced_industrialization_result: "산업 발전 강제하기" # 6421175330244623408
+  bpm_law_effect_tt_repeatable_stronger_from_anarchism: "@information! #blue 다음 효과는 [GetLawType('law_anarchy').GetName] 하에서 증가합니다.#!" # 4275397532410169764
+  law_repeatable_politics_popular_concessions: "[GetPlayer.GetCustom('bpm_repeatable_politics_popular_concessions_name')]" # 7814806091816234401
+  law_repeatable_politics_popular_concessions_desc: "[GetPlayer.GetCustom('bpm_repeatable_politics_popular_concessions_desc')] " # 2795386211237411113
+  bpm_repeatable_law_popular_concessions_result_permanent: "[GetPlayer.GetCustom('bpm_repeatable_politics_popular_concessions_modifier')]" # 12781176883193606343
+  law_repeatable_politics_popular_concessions_name_normal: "소규모 양보" # 8893574885423740712
+  law_repeatable_politics_popular_concessions_desc_normal: "대규모 개혁 없이도 수행할 수 있는, 우리 국민을 괴롭히는 사소하지만 성가신 문제들을 조사하고 조치를 취합니다." # 2049898682780533513
+  law_repeatable_politics_popular_concessions_modifier_normal: "소규모 양보" # 8893574885423740712
+  law_repeatable_politics_popular_concessions_name_anarchist: "자율 조직 조정" # 8791352211408645319
+  law_repeatable_politics_popular_concessions_desc_anarchist: "우리 국민을 괴롭히는 사소하지만 성가신 문제들을 해결하기 위해 공동체 자율 조직 노력을 조정하는 데 도움을 제공합니다." # 9106974119932835495
+  law_repeatable_politics_popular_concessions_modifier_anarchist: "자율 조직" # 5983618025215863999

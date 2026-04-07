@@ -303,3 +303,12 @@
   bpm_bakufu_administrative_state: "막부 행정 국가" # 16043837840209705156
   bpm_ig_gaining_support: "지지 획득" # 12060725307332788322
   bpm_alexander_ii_reforms: "알렉산드르 2세의 개혁" # 3089746303022532852
+  bpm_modifier_revolution_victorious_light: "혁명군 승리" # 16424220559140305377
+  bpm_damaged_ig: "피해를 입은 집단" # 2036794787153700786
+  bpm_ig_disrupted_by_assassination: "살인 음모로 인한 혼란" # 9481920020546420881
+  bpm_ig_disrupted_by_exile: "강제 추방으로 인한 혼란" # 13445042879513906337
+  bpm_crisis_bureaucratic_fiefdoms: "관료적 영지" # 6702584863897616069
+  bpm_ig_attraction_from_radicals_and_loyalists_tt: "[Concept('concept_radical','급진파')] 또는 [Concept('concept_loyalist','충성파')] 팝의 유입" # 1381409538962502234
+  country_bpm_low_rigidity_no_econ_debuff: "낮은 [concept_bpm_political_stability]로 인한 경제적 페널티 없음" # 16085357285707944338
+  country_bpm_low_rigidity_no_econ_debuff_desc: "낮은 [concept_bpm_political_stability] 상태가 [Concept('concept_construction','건설')] 및 [Concept('concept_throughput','처리량')]에 영향을 주지 않음" # 10762127750802079358
+  interest_group_bpm_organization_ideological_rate_add: "[Concept('concept_bpm_ideological_ig','이념적 이익 집단')] 조직 변화율" # 9446527065252638784

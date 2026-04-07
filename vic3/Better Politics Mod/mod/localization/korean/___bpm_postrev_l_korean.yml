@@ -14,3 +14,6 @@
   bpm_revolutionary_military_damage_progress_desc: "#gold 썩은 검#!" # 15102620235994285180
   bpm_revolutionary_economic_damage_progress: "#gold 땅에서부터#!" # 246355094233047277
   bpm_revolutionary_economic_damage_progress_desc: "#gold 땅에서부터#!" # 246355094233047277
+  bpm_revolutionary_damage_bureaucracy_mod: "#gold 연필과 종이#!" # 17107156448456440599
+  bpm_revolutionary_damage_military_mod: "#gold 녹슨 검#!" # 15102620235994285180
+  bpm_revolutionary_damage_economy_mod: "#gold 밑바닥부터 시작하여#!" # 246355094233047277

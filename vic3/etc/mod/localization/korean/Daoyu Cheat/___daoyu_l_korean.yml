@@ -580,3 +580,6 @@
   daoyu_auto_country_influence: "$pmg_automation$ $concept_influence$" # 12910946287551192340
   daoyu_heritage_group_eastern_european: "동유럽" # 6700369191770852666
   daoyu_heritage_group_western_european: "서유럽" # 8460948830719582006
+  daoyu_nul: "" # 17241709254077376921
+  daoyu_treaty_articles_desc: "" # 17241709254077376921
+  daoyu_enactment_success_desc: "" # 17241709254077376921

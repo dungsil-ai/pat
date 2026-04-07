@@ -11,35 +11,15 @@
   je_austrian_empire_collapse: "오스트리아 제국 쇠퇴" # 18237739727139310839
   je_austrian_empire_collapse_reason: "[ROOT.GetCountry.GetAdjective] 제국은 한때 유럽의 지배적인 강국이었으나, 이제는 중대한 도전에 직면해 있습니다. 민족주의의 대두, 경제적 어려움, 그리고 제국 권위의 쇠퇴는 제국 내 다양한 민족들 사이에서 광범위한 불안과 독립 요구를 불러일으켰습니다. 변화하는 정치 지형에 적응하지 못하고 다양한 인구의 염원을 해결하지 못한 제국의 무능함은 쇠퇴에 일조했습니다. 이제 남은 질문은 [ROOT.GetCountry.GetAdjective] 제국이 개혁하여 생존할 수 있을지, 아니면 분열의 압력에 굴복할 것인지입니다." # 584420390196742549
   je_austrian_empire_collapse_goal: "문화적 포용과 권리를 증진하는 법률을 제정하고, 1인당 GDP를 증대시키며, 유럽의 지정학적 구도에서 열강으로서의 지배적 위치를 유지하십시오. 만약 이 임무를 완수한다면, [ROOT.GetCountry.GetName]은 붕괴하여 이웃 국가들과 내부 민족들에게 분할될 것입니다. 마지막으로 상기하건대, 군주제여야 합니다." # 10927670946855961213
-  je_ottoman_empire_collapse: "오스만 제국 쇠퇴" # 3065944229570634865
-  je_ottoman_empire_collapse_reason: "[ROOT.GetCountry.GetName]은 마지막 중동 제국으로서, 19세기의 변화하는 정치 지형에 적응하지 못하고 오랜 쇠퇴와 불안정의 시기를 겪고 있습니다. 발칸 민족주의의 부상, 경제적 어려움, 러시아의 팽창주의, 그리고 유럽의 석유 수요는 제국이 맞서 준비해야 할 문제들 중 일부입니다. 이제 남은 질문은 [ROOT.GetCountry.GetName]이 개혁하고 생존할 수 있을지, 아니면 분열의 압력에 굴복할지 여부입니다."
-  je_ottoman_empire_collapse_goal: "문화적 포용과 권리를 증진하는 법률을 제정하고, 1인당 GDP를 증대시키며, 유럽의 지정학적 구도에서 강대국으로서의 지배적인 위치를 유지하십시오. 만약 당신이 JE를 완수한다면, [ROOT.GetCountry.GetName]는 붕괴하고 그 이웃 국가들과 내부 민족들에게 분할될 것입니다."
   je_demographic_0_to_1: "제1 인구 단계" # 10230333809639582235
-  je_demographic_0_to_1_reason: "[ROOT.GetCountry.GetName]은 #v 매우 높은#! #positive_value 출산율#과 #v 높은#! #negative_value 사망률#로 특징지어지는 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 첫 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 #v 보통# 수준입니다." # 2686641326244778528
-  je_demographic_0_to_1_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_1_to_2: "제2 인구 단계" # 7019434059661691877
-  je_demographic_1_to_2_reason: "[ROOT.GetCountry.GetName]은 #v very high#! #positive_value 출산율#과 #v medium#! #negative_value 사망률#로 특징지어지는 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 두 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 #v high#! 입니다." # 13546378437688733439
-  je_demographic_1_to_2_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_2_to_3: "제3 인구학적 단계" # 18148737894986015217
-  je_demographic_2_to_3_reason: "[ROOT.GetCountry.GetName]은 #v high# #positive_value 출산율#과 #v low# #negative_value 사망률#이 특징인 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 세 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 여전히 #v high# 입니다." # 9725736351661667060
-  je_demographic_2_to_3_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_3_to_4: "제4 인구 단계" # 8251728726899213751
-  je_demographic_3_to_4_reason: "[ROOT.GetCountry.GetName]은 #v medium#! #positive_value 출생률#!과 #v very low#! #negative_value 사망률#!이 특징인 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 네 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]은 #v medium# 입니다." # 579760128677644447
-  je_demographic_3_to_4_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_4_to_5: "제5 인구 단계" # 6525560495082095151
-  je_demographic_4_to_5_reason: "[ROOT.GetCountry.GetName]은 #v low#의 #positive_value 출산율#과 #v very low#의 #negative_value 사망률#로 특징지어지는 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 다섯 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 #v low#입니다." # 805596850553579370
-  je_demographic_4_to_5_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_5_to_6: "VI 인구 통계 단계" # 5269149959962520538
-  je_demographic_5_to_6_reason: "[ROOT.GetCountry.GetName]은 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 여섯 번째 단계에 있으며, 이는 #v very low#!! #positive_value 출생률#!과 #v very low#! #negative_value 사망률#!로 특징지어집니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 #v very low# 입니다." # 2478343994215123140
-  je_demographic_5_to_6_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_6_to_7: "VII 인구 단계" # 4622397807988829389
-  je_demographic_6_to_7_reason: "[ROOT.GetCountry.GetName]은 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 일곱 번째 단계에 있으며, 이는 #v minimal#한 #positive_value 출생률#과 #v minimal#한 #negative_value 사망률#로 특징지어집니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]는 #v minimal#입니다." # 17197236072936394224
-  je_demographic_6_to_7_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_demographic_7_to_8: "VIII 인구 단계" # 16374899645558252674
-  je_demographic_7_to_8_reason: "[ROOT.GetCountry.GetName]은 #v 존재하지 않는#! #positive_value 출산율#과 #v 최소 수준의#! #negative_value 사망률#로 특징지어지는 [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 여덟 번째 단계에 있습니다.\n\n [Concept('concept_pop_growth','$concept_pop_growth$')]은 #v 정체 상태#입니다." # 7668578485715045252
-  je_demographic_7_to_8_goal: "높은 [Concept('concept_literacy','$concept_literacy$')], 높은 [Concept('concept_sol','$concept_sol$')], 폐쇄적 국경, 그리고 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의, 그리고 전통적 가치는 이 과정을 늦출 것입니다." # 6903871564594946398
   je_old_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은 최소한 부분적으로 개발된 국가여야 하며 인권 기술을 보유하고 있어야 합니다." # 12686736595944502365
-  je_mid_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은 최소한 선진국이어야 하며 사회민주주의 기술을 보유해야 합니다." # 2570591038741949834
   je_liberty_index: "이념 지수" # 17334563368789126202
   je_liberty_index_reason: "한 [concept_country]의 [Concept('concept_ideology','$concept_ideology$')]는 두 가지 핵심 지표로 측정됩니다. 바로 @liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]입니다.\n\n@liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]는 한 국가의 정치적 및 사회적 가치를 나타내는 척도입니다. [Concept('concept_liberty_index','$concept_liberty_index$')]는 국가 내 개인의 자유, 시민적 권리, 그리고 [Concept('concept_democracy','$concept_democracy_adjective$')]적인 통치의 정도를 반영하는 반면, [Concept('concept_equality_index','$concept_equality_index$')]는 시민들 사이의 사회적 및 경제적 평등 수준을 평가합니다. 이 두 지표는 국가의 전반적인 이념적 지형에 대한 통찰을 제공하며, 국내 정책과 국제 관계에 영향을 미칩니다.\n\n두 지표 모두 해당 국가 내에 시행 중인 대부분의 [Concept('concept_law', '$concept_laws$')]에 의해 영향을 받습니다.\n\n우리의 [Concept('concept_liberty_index','$concept_liberty_index$')]에 근거하여, 우리는 다음과 같이 분류될 수 있습니다:\n\n 75-100: #positive_value 민주주의 국가#!\n 50-75: #v 불완전한 민주주의 국가#!\n 25-50: #v 권위주의 국가#!\n 0-25: #gold_value 전체주의 국가#!\n\n우리의 [Concept('concept_equality_index','$concept_equality_index$')]에 근거하여, 우리는 다음과 같이 분류될 수 있습니다:\n\n 75-100: #negative_value 사회주의 국가#!\n 50-75: #v 복지 국가#!\n 25-50: #v 계층화된 국가#!\n 0-25: #blue_value 개인주의 국가#!\n\n#negative_value 중요#!: 법률 그룹 #v 권력 분배#!는 귀하의 최대 [Concept('concept_liberty_index','$concept_liberty_index$')]를 제한할 것입니다." # 11521628137518754708
   liberty_index_progress_bar: "자유 지수" # 10224254528086149020
@@ -59,7 +39,6 @@
   je_research_center_construction_reason: "연구 센터 부지가 확정되었으니, 이제 건설을 진행할 수 있습니다. 이 시설은 과학적 탐구와 기술 개발의 중심지 역할을 하며, 최고의 인재를 유치하고 연구원들 간의 협력을 증진시킬 것입니다. 이 시설의 완공은 우리 국가의 혁신과 진보에 대한 의지를 보여주는 중대한 이정표가 될 것입니다." # 12703709616226457428
   research_center.1.t: "국립 연구 센터 부지 선정 완료" # 12098524513370228116
   research_center.1.d: "광범위한 숙고와 여러 제안에 대한 신중한 평가 끝에, 위원회는 미래의 국립 연구 센터 [concept_building]의 부지로 [SCOPE.sState('research_center_site').GetName] 내에 있는 [SCOPE.sState('research_center_site').GetCityHubName]을 선정하였습니다. 해당 지역의 기반 시설, 접근성, 학문적 전통 및 역사적 중요성은 새로운 과학적 탐구와 기술 발전 시대를 열기에 가장 적합한 장소입니다." # 12354994332571233192
-  research_center.1.f: "\"한 국가의 힘은 그 자원에만 있는 것이 아니라, 질문하고, 탐구하며, 발견하는 능력에 달려 있소\"" # 13789862720668428062
   research_center.1.major_power: "지식의 토대를 다집시다." # 12368689802784724925
   research_center.1.minor_power: "우리의 역량을 현실적으로 고려할 때, 기존 대학들과 세계 나머지 지역 간의 연계에 집중해야 합니다." # 3362645457038721680
   research_center.2.t: "국립 연구 센터 개소" # 15764309839568593160
@@ -105,3 +84,385 @@
   ztr_je_russian_absolutism_government_petition_reason: "[SCOPE.gsInterestGroup('government_petition_ig').GetName]이 [SCOPE.sLaw('government_petition_law').GetName]의 통과를 청원하고 있습니다.\n\n[SCOPE.sLaw('government_petition_law').GetName]이 성공적으로 통과되면, #gold_value 자유주의자들#!은 크게 기뻐할 것이며, [ROOT.GetCountry.GetName]의 질서와 안정을 유지하려는 우리의 노력에 지지를 제공할 수도 있습니다." # 10438582578139570388
   ztr_tooltip_russia_loses_european_periphery: "[ROOT.GetCountry.GetName]은 유럽 통제 변방을 #negative_value 상실할# 것입니다." # 6403648657355501836
   research_center_can_construct_tt: "연구소를 위한 적절한 부지를 확인하고 측량했습니다." # 5608323372346021698
+  je_demographic_0_to_1_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 1단계#!에 있으며, #v 매우 높음#! #positive_value 출생률#!과 #v 높음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 보통#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 9608290480316694760
+  je_demographic_1_to_2_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 2단계#!에 있으며, #v 매우 높음#! #positive_value 출생률#!과 #v 보통#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 높음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 14465224133705972441
+  je_demographic_2_to_3_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 3단계#!에 있으며, #v 높음#! #positive_value 출생률#!과 #v 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) 여전히 #v 높음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 975640767013069952
+  je_demographic_3_to_4_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 4단계#!에 있으며, #v 보통#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 보통#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 2257234260039567211
+  je_demographic_4_to_5_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 5단계#!에 있으며, #v 낮음#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 낮음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 7173717562564343261
+  je_demographic_5_to_6_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 6단계#!에 있으며, #v 낮음#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 낮음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 4557721663052671661
+  je_demographic_6_to_7_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 7단계#!에 있으며, #v 최소#! #positive_value 출생률#!과 #v 최소#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 최소#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 4124704306093274947
+  je_demographic_7_to_8_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 8단계#!에 있으며, #v 존재하지 않음#! #positive_value 출생률#!과 #v 최소#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 정체#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 10891701389166110775
+  je_mid_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은(는) 최소한 @developed_country! [Concept('concept_developed_country','$concept_developed_country$')]이어야 하며 사회 민주주의 기술을 보유해야 합니다." # 10930155988888875745
+  research_center.1.f: "국가의 힘은 자원뿐만 아니라 질문하고, 탐구하며, 발견하는 능력에 있습니다." # 14218265456689419748
+  ztr_tooltip_can_become_communist_chi_via_je: "[ROOT.GetCountry.GetName]은(는) 안정적인 민주주의 국가나 번영하는 해안가 반공 정권이 아니면서, 활동적이고 진보적인 공산주의 전선을 가진 독립적인 한족 참여국이어야 합니다." # 14549420304028966374
+  fusion_reactor_decision: "핵융합로 연구 시작" # 13447182078875952030
+  fusion_reactor_decision_desc: "고도의 #blue_value 핵물리학#!과 #blue_value 스마트 에너지 그리드#!가 등장함에 따라, 우리 과학자들은 별의 동력이 되는 #gold_value 제어 핵융합#!이 마침내 실현 가능할 것이라고 믿고 있습니다. #gold_value 핵융합 발전소#! 건설은 거대한 사업으로서 우리 국가의 에너지 공급에 혁명을 일으킬 것이지만, 에너지 시장을 파괴할 수도 있습니다. 그러나 우리는 여전히 이 과정을 안정화하고 상업적으로 실행 가능한 방법을 찾아야 합니다." # 7237558754773308429
+  fusion_reactor_purchase_decision: "핵융합로 기술 구매" # 17805009584738936470
+  fusion_reactor_purchase_decision_desc: "비록 우리에게 강대국과 같은 토착 연구 기반 시설은 부족하지만, 세계 최초의 #gold_value 핵융합 발전소#!는 상업적 핵융합 에너지의 실행 가능성을 이미 입증했습니다. 기술 파트너십과 관계를 활용하여 이 기술의 라이선스 및 이전을 협상할 수 있습니다. 비용은 막대하겠지만, 그 보상인 사실상 무제한의 #P 청정 에너지#!는 헤아릴 수 없을 만큼 큽니다." # 1166590245189466449
+  je_fusion_reactor_research: "#gold_value 핵융합로#! 연구" # 15022951952782195833
+  je_fusion_reactor_research_reason: "우리의 최고 물리학자들과 엔지니어들이 핵융합 에너지에 대한 철저한 연구와 실험을 수행하여 #blue_value 플라즈마#!를 안정화하고 순 에너지 이득을 달성하고 있습니다. 진척도는 우리 국가의 #v 경제#!, #v 과학적 역량#!, 그리고 #v 인구#!에 달려 있습니다." # 3370553474718546524
+  je_fusion_reactor_research_goal: "#gold_value 핵융합로#! 연구 완료" # 10326727262031532775
+  je_fusion_reactor_construction: "#gold_value 핵융합 발전소#! 건설" # 8511018404132830552
+  je_fusion_reactor_construction_reason: "#gold_value 핵융합 발전소#! 부지가 선정됨에 따라, 이제 우리 국가 역사상 가장 야심 찬 건설 프로젝트를 진행할 수 있게 되었습니다. 이 시설은 태양을 움직이는 것과 동일한 과정인 핵융합의 힘을 이용하여 사실상 무한한 #P 청정 에너지#!를 생산할 것입니다. 이 시설의 완공은 우리 국가의 기술적 패권에 새로운 시대를 열 것입니다." # 1745768391631876615
+  fusion_reactor.1.t: "안정적인 #gold_value 핵융합 반응#! 달성" # 13952117127048588719
+  fusion_reactor.1.d: "수년간의 집중적인 연구와 고된 실험 끝에, 우리 과학자들은 안정적인 #Z 핵융합 반응#!을 성공적으로 달성했습니다. 플라즈마 물리학에서의 이 기념비적인 돌파구는 별을 움직이는 과정을 우리 국가에서 제어할 수 있음을 증명합니다. 이제 우리 국가에 사실상 무한한 #P 청정 에너지#!를 공급할 #gold_value 민간 핵융합로#!를 건설할 수 있게 되었습니다." # 6267783798527992713
+  fusion_reactor.1.f: "우리는 원자를 길들였습니다. 이제 별의 힘을 이용할 것입니다." # 14390086685837756197
+  fusion_reactor.1.a: "미래를 밝히자." # 3878123373046825073
+  fusion_reactor.2.t: "#gold_value 핵융합 발전소#! 준공" # 1712954297507393457
+  fusion_reactor.2.d: "우리 국가의 #gold_value 핵융합 발전소#!가 공식적으로 첫 플라즈마를 달성했습니다. 강력한 자기장 속에 초고온 수소 동위원소를 가두는 공학의 경이로움인 이 원자로는 사실상 무한한 #P 청정 에너지#!를 제공할 것을 약속합니다. 이 업적은 우리 국가를 기술 진보의 절대적인 최전선에 올려놓았습니다." # 7030961032701124623
+  fusion_reactor.2.a: "별의 힘은 우리의 명령 아래 있습니다." # 7522954737523939040
+  fusion_reactor.2.d_first: "세계 최고의 과학자, 고위 인사, 엔지니어들이 참석한 가운데, 우리 국가의 #gold_value 핵융합 발전소#!가 공식적으로 첫 플라즈마를 달성했습니다. 강력한 자기장 속에 초고온 수소 동위원소를 가두는 공학의 경이로움인 이 원자로는 사실상 무한한 #P 청정 에너지#!를 제공할 것을 약속합니다. 이 업적은 우리 국가를 에너지 생산의 선두주자로 만들었습니다." # 11579556384361485036
+  fusion_reactor_global.t: "에너지의 새로운 시대" # 7124313575766278887
+  fusion_reactor_global.d: "[SCOPE.sCountry('fusion_builder_country').GetName]가 세계 최초의 상업용 #gold_value 핵융합 발전소#!를 공식적으로 가동함에 따라 전 세계에서 보고가 쏟아지고 있습니다. 별의 힘을 이용하는 이 기념비적인 업적은 인류의 기술적 역량과 에너지 생산의 패러다임 전환을 의미하며, 화석 연료의 독점을 종식시켰습니다." # 15226822340535625164
+  fusion_reactor_global.a: "#blue_value 미래#!가 여기에 있습니다." # 4620960619358074385
+  fusion_reactor_site: "핵융합로 건설 현장" # 15559989430426054233
+  fusion_reactor_research: "핵융합로 연구" # 5937282453387013459
+  fusion_reactor_purchase_cost: "핵융합 기술 라이선스" # 4064188452649345056
+  fusion_reactor_can_construct_tt: "핵융합로를 위한 적절한 부지를 식별하고 조사했습니다." # 9887277940013167058
+  fusion_reactor_purchase_relations_tt: "핵융합 기술을 구매하려면 핵융합 기술을 보유한 강대국과 좋은 관계를 유지해야 합니다." # 8367938849488346526
+  fusion_energy_pioneer: "핵융합 에너지 선구자" # 16504773874580270867
+  fusion_energy_pioneer_tt: "핵융합 에너지 시대를 개척하며, 우리 국가는 안정적인 #Z 핵융합 반응#!을 달성하고 세계 최초의 상업용 #gold_value 핵융합 발전소#!를 건설했습니다. 이 기념비적인 업적은 우리 국가를 기술 진보와 에너지 생산의 절대적인 최전선에 올려놓았으며, 화석 연료의 독점을 종식시켰습니다." # 3019886158442542699
+  je_imf_modernization: "IMF 현대화 목표" # 16895322563950472156
+  je_imf_modernization_reason: "#blue_value 국제통화기금(IMF)#!은 [ROOT.GetCountry.GetName]이(가) @developed_country! [Concept('concept_developed_country','$concept_developed_country$')] 지위를 획득하기 위해 충족해야 할 목표를 제시했습니다.\n\n우리는 [ROOT.GetCountry.GetName]이(가) @developed_country! [Concept('concept_developed_country','$concept_developed_countries$')] 대열에 설 수 있을 때까지 교육 수준을 높이고, 인구의 물질적 조건을 개선하며, 경제를 강화해야 할 것으로 예상됩니다." # 2425650483816580252
+  je_imf_modernization_goal: "[ROOT.GetCountry.GetName]을(를) 위한 IMF 목표 달성: [Concept('concept_literacy','$concept_literacy$')] 개선, 평균 [Concept('concept_sol','$concept_sol$')] 제고, 그리고 @developed_country! [Concept('concept_developed_country','$concept_developed_country$')] 지위 획득." # 15254472384904479622
+  je_imf_modernization_literacy_tt: "최소 #v 70%#!의 [Concept('concept_literacy','$concept_literacy$')]에 도달하십시오." # 1391390331480681266
+  je_imf_modernization_sol_tt: "평균 [Concept('concept_sol','$concept_sol$')]을(를) 최소 #v 18#! 이상 달성하십시오." # 17685935939149434019
+  je_imf_modernization_developed_tt: "최소 @money!#v 7#!의 [Concept('concept_gdp_per_capita','$1인당 GDP$')]를 보유하십시오." # 15182427314839848932
+  je_imf_modernization_status_initial: "#blue_value IMF#! 검토 팀이 첫 번째 평가를 제출했습니다. [ROOT.GetCountry.GetName]은(는) 구조 개혁의 초기 단계에 머물러 있습니다. [Concept('concept_literacy','$concept_literacy$')]은(는) 낮고, [Concept('concept_sol','$Standards of Living$')]은(는 불안정하며, 경제는 현대적 제도를 유지할 만큼의 깊이를 갖추지 못했습니다. 앞으로 나아가야 할 길은 멉니다." # 3136701280617266412
+  je_imf_modernization_status_early: "초기 개혁이 뿌리를 내리기 시작했습니다. 지방 소도시에는 학교가 들어서고, 기초적인 보건 기반 시설이 확충되고 있으며, 소규모 산업화로 인해 최초의 임금 노동 거점이 형성되고 있습니다. #blue_value IMF#!는 [ROOT.GetCountry.GetName]의 #v 고무적이지만 취약한 진전#!을 주목하고 있습니다." # 12654949127911601088
+  je_imf_modernization_status_progressing: "[ROOT.GetCountry.GetName]은(는) 이제 확실하게 근대화의 길로 들어섰습니다. #blue_value IMF#!는 [Concept('concept_literacy','$concept_literacy$')]의 #positive_value 상당한 진보#!, 상승하는 [Concept('concept_sol','$concept_sol$')], 그리고 다변화되는 경제 기반을 인정하고 있습니다. 이러한 기세가 계속된다면, @developed_country! [Concept('concept_developed_country','$concept_developed_country$')] 지위 달성도 현실적인 범위 내에 있습니다." # 4259518806472032919
+  je_imf_modernization_status_advanced: "[ROOT.GetCountry.GetName]은(는) 최종 임계점에 다다르고 있습니다. #blue_value IMF#!는 우리의 진척도를 #positive_value 거의 완료#! 단계로 분류했습니다: [Concept('concept_literacy','$concept_literacy$')] 수준은 높고, 생활 환경은 극적으로 개선되었으며, 경제는 현대적인 발전을 지속할 수 있을 만큼 충분한 부를 창출하고 있습니다. 목표 달성이 눈앞에 있습니다." # 2971344593484121076
+  ztr_imf_request_technical_mission: "#blue_value IMF#! 기술 임무" # 17289247628011377800
+  ztr_imf_request_technical_mission_desc: "#blue_value 국제통화기금#!에 경제 자문단, 제도 전문가 및 교육 전문가 파견을 공식 요청하여 [ROOT.GetCountry.GetName]의 근대화 계획을 지도받으십시오. 이들의 전문 지식은 적은 국고 비용으로 진보를 가속할 것입니다." # 3398545173608079797
+  ztr_imf_technical_mission_cooldown_tt: "최근 #blue_value IMF#! 기술 사절단을 초청한 적이 없습니다 (5년의 재사용 대기시간)." # 3911310596807361692
+  ztr_imf_technical_mission_cost_tt: "#blue_value 기술 사절단#!은 우리 [Concept('concept_gdp','GDP')]의 @money!#v 1%#!를 소모할 것입니다." # 9796067332625277685
+  ztr_imf_launch_development_plan: "#gold_value 국가 개발 계획#! 시작" # 18330148753187008310
+  ztr_imf_launch_development_plan_desc: "향후 20년간의 산업 우선순위, 인프라 확장, 제도 현대화를 골자로 하는 포괄적인 #gold_value 국가 발전 계획#!을 수립하고 공포하십시오. 이 계획은 건설과 생산성을 증대시키겠지만, 정치적 안정에는 부담을 줄 수 있습니다." # 4669122219909988906
+  ztr_imf_seek_scholarships: "#v 해외 장학금#!을 모색하십시오" # 13138393553455546150
+  ztr_imf_seek_scholarships_desc: "[ROOT.GetCountry.GetName]와 우호적인 관계를 유지하는 #v 열강#!들과 장학금 프로그램을 협상하십시오. 유망한 학생들을 해외로 파견하면 새로운 지식과 기술을 본국으로 전파할 수 있을 것입니다." # 17070546194284324662
+  ztr_imf_scholarships_cooldown_tt: "최근 외국 장학 프로그램(3년의 재사용 대기시간)을 마련하지 않았습니다." # 8099959123184708693
+  ztr_imf_scholarships_gp_relations_tt: "우리는 #v 열강#!과 최소한 #p 원만한#! 관계를 유지해야 합니다." # 17656932240292627323
+  imf_modernization_commitment_modifier: "IMF 현대화 약속" # 5770792193025164119
+  imf_modernization_commitment_modifier_desc: "#blue_value IMF#! 현대화 프레임워크는 국제적인 기술 지원의 기반과 소폭의 혁신 성과, 그리고 어느 정도의 국제적 인지도를 제공합니다." # 13486710360597618886
+  imf_scholarship_fund_modifier: "대학 장학금 기금" # 12692091412752348154
+  imf_scholarship_fund_modifier_desc: "정부 지원 대학 장학금은 재능 있는 졸업생들을 국내에 머물게 하여 국내 지식인 계층을 확대하고 있습니다." # 1219094678593852572
+  imf_emigration_restriction_modifier: "두뇌 유출 통제" # 9189076485401577769
+  imf_emigration_restriction_modifier_desc: "국경 제한과 출국 허가제는 교육받은 전문가들의 유출을 늦추지만, 지식인들을 억압하고 조용한 반감을 불러일으킵니다." # 17082225617127795166
+  imf_brain_drain_modifier: "두뇌 유출" # 9824701386949178869
+  imf_brain_drain_modifier_desc: "최고의 인재들이 계속해서 더 부유한 국가로 떠나고 있습니다. 졸업생들이 해외에서 더 나은 기회를 찾으면서 교육 역량이 약화됩니다." # 13292391110525486199
+  imf_austerity_accepted_modifier: "IMF 긴축 프로그램" # 4943595283683155125
+  imf_austerity_accepted_modifier_desc: "#blue_value IMF#!의 요구로 부과된 재정 규율은 국민에게 고통스럽지만, 국제 신용과 제도적 신뢰의 문을 열어줍니다." # 1777900706164717159
+  imf_partial_austerity_modifier: "협상된 재정 조건" # 4516068257964274334
+  imf_partial_austerity_modifier_desc: "#blue_value IMF#!와의 실용적인 타협을 통해 복지 지출 일부를 유지하면서도 국제적 신뢰를 유지하기에 충분한 재정 규율을 이행합니다." # 2273007746306408532
+  imf_foreign_investment_modifier: "외국 자본 붐" # 14327128547345624675
+  imf_foreign_investment_modifier_desc: "외국 자본의 물결이 산업과 인프라로 쏟아져 들어오며 생산 능력을 빠르게 확장하고 있습니다." # 3059753917710303139
+  imf_joint_venture_modifier: "합작 투자 체계" # 5522933281563336307
+  imf_joint_venture_modifier_desc: "의무적인 현지 파트너십 요건은 외국인 투자가 자본과 함께 지식과 기술을 이전하도록 보장합니다." # 2009420732726645003
+  imf_nationalization_modifier: "경제 국유화" # 15311431904377877258
+  imf_nationalization_modifier_desc: "외국인 투자자로부터 주요 산업의 통제권을 압수하여 국가적 자부심을 고취하고 국내 산업가들에게 힘을 실어주었으나, 생산 효율성 측면에서 대가를 치르게 되었습니다." # 5388995857123618624
+  imf_rural_schools_modifier: "농촌 학교 건설" # 6064110995015358082
+  imf_rural_schools_modifier_desc: "수백 개의 새로운 학교가 전국 농촌 지역에 문을 열어, 외딴 지역 사회에 처음으로 초등 및 중등 교육을 제공하고 있습니다." # 17906984785212349710
+  imf_media_literacy_modifier: "대중 매체 문해력 캠페인" # 4680419067187630303
+  imf_media_literacy_modifier_desc: "라디오 방송, 인쇄된 팸플릿, 순회 강연자들이 최소한의 비용으로 천천히 기초 문해력을 확산시키고 있습니다." # 9487488279975377018
+  imf_religious_education_modifier: "종교 교육 네트워크" # 15177189500646151111
+  imf_religious_education_modifier_desc: "교회, 모스크, 사원은 농촌 교육의 중추적인 역할을 수행하며 배움의 기회를 확대하고 #v 신앙심 깊은 자#! 이익 집단을 강화합니다." # 6185949585344432530
+  imf_political_repression_modifier: "칙령에 의한 근대화" # 60043970763199761
+  imf_political_repression_modifier_desc: "정부는 무력을 통해 근대화 계획에 대한 국내 반대 세력을 침묵시키기로 결정했으며, 국제적 명성을 희생하는 대신 안정을 얻었습니다." # 13755958745804294219
+  imf_ig_repression_modifier: "정치적 탄압" # 6630152915237075396
+  imf_ig_repression_modifier_desc: "국가 보안 기구가 이 파벌의 조직화 및 정책 영향력 행사 능력을 적극적으로 약화시키고 있습니다." # 3208918097152832228
+  imf_political_cooperation_modifier: "개혁 연합" # 2870108643117834231
+  imf_political_cooperation_modifier_desc: "개혁 과정에 반대 목소리를 포함하면 진전은 더뎌지지만 더 폭넓은 정치적 정통성이 구축됩니다." # 6372505059817232036
+  imf_ig_cooperation_modifier: "개혁 연합에 포함됨" # 1935225653104582723
+  imf_ig_cooperation_modifier_desc: "이 파벌은 근대화 과정에 참여하도록 초청받았으며 그들의 우려 사항이 다루어지고 있습니다." # 16502990416116812948
+  imf_public_consultation_modifier: "공공 근대화 대화" # 1207580803449734747
+  imf_public_consultation_modifier_desc: "근대화 방향에 대한 공개적인 대중 협의는 시민 참여를 활성화했지만 정부의 권위를 분산시켰습니다." # 6534773091784720151
+  superpower_aid_modifier: "초강대국 원조" # 15356290543337900391
+  superpower_aid_modifier_desc: "막대한 외국 원조가 우리의 근대화를 돕고 있지만, 정치적 조건이 따르지 않는 것은 아닙니다." # 2625316287171385040
+  imf_technical_mission_modifier: "IMF 기술 사절단" # 10808783082624491470
+  imf_technical_mission_modifier_desc: "#blue_value IMF#! 자문관 및 국제 전문가 팀이 국내 기관과 협력하여 교육 개혁을 가속화하고 현대적인 행정 관행을 확산시키고 있습니다." # 12437105167008089457
+  imf_development_plan_modifier: "국가 개발 계획" # 2902977619978064044
+  imf_development_plan_modifier_desc: "포괄적인 장기 계획이 우선순위 인프라와 산업에 자원을 집중시키고 있으나, 이러한 중앙 집중식 노력은 정치적 유연성을 저해합니다." # 10187191654818438718
+  imf_foreign_scholarships_modifier: "해외 장학 프로그램" # 13041555353498859101
+  imf_foreign_scholarships_modifier_desc: "촉망받는 학자들이 #v 열강#! 대학에서 유학하며 최첨단 지식을 습득하고 지속적인 학술 네트워크를 구축하고 있습니다." # 17127280929587776705
+  ztr_demographic_stage_complete_tt: "다음 [Concept('concept_demographic_stages','인구 통계 단계')]를 향한 진행도 #v 30#!을 축적하십시오." # 16026503759814666505
+  ztr_demographic_0_to_1_progress_bar: "2단계로 전환" # 16403429608668513823
+  ztr_demographic_0_to_1_progress_bar_desc: "2단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 12635655944543500794
+  ztr_demographic_1_to_2_progress_bar: "3단계로 전환" # 1049382517723773182
+  ztr_demographic_1_to_2_progress_bar_desc: "3단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 3997284241895032181
+  ztr_demographic_2_to_3_progress_bar: "4단계로 전환" # 3245143199136868529
+  ztr_demographic_2_to_3_progress_bar_desc: "4단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 18335213209711716193
+  ztr_demographic_3_to_4_progress_bar: "5단계로 전환" # 5350450630535383902
+  ztr_demographic_3_to_4_progress_bar_desc: "5단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 541222171003982166
+  ztr_demographic_4_to_5_progress_bar: "6단계로 전환" # 12395559094371456151
+  ztr_demographic_4_to_5_progress_bar_desc: "6단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 6557498643964910373
+  ztr_demographic_5_to_6_progress_bar: "7단계로 전환" # 5584162568917253690
+  ztr_demographic_5_to_6_progress_bar_desc: "7단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 5915416444686327469
+  ztr_demographic_6_to_7_progress_bar: "8단계로 전환" # 9681631935721470619
+  ztr_demographic_6_to_7_progress_bar_desc: "8단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 11730129341436225588
+  ztr_demographic_7_to_8_progress_bar: "전환 후 변화" # 12010332226938744811
+  ztr_demographic_7_to_8_progress_bar_desc: "전환 후 변화 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 10986418141749047815
+  ztr_demographic_base_drift_tt: "연간 자연 인구 통계 변화" # 6123924299382008821
+  ztr_demographic_healthcare_tt: "사립 또는 공립 건강 보험" # 18086523206355400770
+  ztr_demographic_advanced_healthcare_tt: "현대적 의료 기관" # 8706277891121872237
+  ztr_demographic_traditional_values_tt: "전통적인 종교적 가족 규범" # 15756980867831270829
+  ztr_demographic_north_america_tt: "북미 이민 패턴" # 8934851658784866540
+  ztr_demographic_post_1970_tt: "1970년 이후 전 세계적인 출산율 감소" # 10397415103333270248
+  ztr_demographic_slavery_tt: "노예제가 여전히 합법임" # 18347484633671191738
+  ztr_demographic_late_slavery_tt: "매우 후기 인구 통계 단계에서도 노예제가 여전히 합법임" # 10743069138629762051
+  ztr_demographic_0_to_1_development_tt: "더 이상 미개발 상태가 아니거나 1900년 이후" # 5067160435981066297
+  ztr_demographic_0_to_1_sol_tt: "평균 생활 수준 10 초과" # 8652451560959981803
+  ztr_demographic_0_to_1_literacy_tt: "문해율 30% 초과" # 9592807852313564750
+  ztr_demographic_1_to_2_development_tt: "더 이상 초기 개발 단계가 아님" # 1726898065076819219
+  ztr_demographic_1_to_2_sol_tt: "1870년 이후 평균 생활 수준 12 초과" # 17868428836159131242
+  ztr_demographic_1_to_2_literacy_tt: "1870년 이후 문해율 40% 초과" # 10828508646080213120
+  ztr_demographic_2_to_3_development_tt: "더 이상 낮은 개발 단계가 아님" # 8133945848495032353
+  ztr_demographic_2_to_3_sol_tt: "1900년 이후 평균 생활 수준 14 초과" # 589245890431601954
+  ztr_demographic_2_to_3_literacy_tt: "1900년 이후 문해율 50% 초과" # 8479335351546030832
+  ztr_demographic_2_to_3_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
+  ztr_demographic_3_to_4_development_tt: "더 이상 중간 개발 단계가 아님" # 12136391351946729053
+  ztr_demographic_3_to_4_sol_tt: "1930년 이후 평균 생활 수준 16 초과" # 7060712587464194958
+  ztr_demographic_3_to_4_literacy_tt: "1930년 이후 문해율 60% 초과" # 5315498341085257359
+  ztr_demographic_3_to_4_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
+  ztr_demographic_4_to_5_development_tt: "더 이상 개발 이전 단계가 아님" # 17726884494386664402
+  ztr_demographic_4_to_5_sol_tt: "평균 생활 수준 17 이상, 또는 1950년 이후" # 9994383676526814936
+  ztr_demographic_4_to_5_literacy_tt: "문해율 65% 이상, 또는 1950년 이후" # 17661053994265095729
+  ztr_demographic_4_to_5_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
+  ztr_demographic_5_to_6_development_tt: "더 이상 개발 이전 단계가 아님" # 17726884494386664402
+  ztr_demographic_5_to_6_sol_tt: "평균 생활 수준 18 이상, 또는 1960년 이후" # 1672540785366720440
+  ztr_demographic_5_to_6_literacy_tt: "문해율 70% 이상, 또는 1960년 이후" # 17303071707767791070
+  ztr_demographic_5_to_6_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
+  ztr_demographic_6_to_7_development_tt: "장기적인 고도 발전" # 12856663556830079608
+  ztr_demographic_6_to_7_immigration_tt: "개방적인 이주 정책과 이민 수요를 동반한 높은 1인당 GDP" # 12497226503776078670
+  ztr_demographic_6_to_7_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
+  ztr_demographic_7_to_8_development_tt: "장기적인 고도 발전" # 12856663556830079608
+  ztr_demographic_7_to_8_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
+  ztr_demographic_7_to_8_reset_tt: "고소득 대규모 이민이 이 전환을 재설정합니다" # 16099757650637686048
+  je_group_the_future_of_china: "중화의 르네상스" # 6174413751193712489
+  ztr_je_the_future_of_china: "중화제국의 교차로" # 7891748867879131431
+  ztr_je_the_future_of_china_reason: "중국은 완전한 붕괴를 피했으나, 고대의 구조는 여전히 마비된 상태입니다. 어떤 경로가 현대 중화제국의 모습을 결정짓게 될까요?" # 1422731158987607048
+  ztr_je_the_future_of_china_goal: "세 가지 경쟁적인 발전 경로 중 하나로 중국의 발전을 이끄십시오." # 2155333289620485872
+  ztr_china_corporate_progress_bar: "기업 측" # 7846428452358595699
+  ztr_china_corporate_progress_bar_desc: "기업 측: #v [ROOT.GetCountry.MakeScope.Var('ztr_china_corporate_var').GetValue|0]/100#!" # 2085084464230199853
+  ztr_china_federation_progress_bar: "민족주의 측" # 11688017640301122960
+  ztr_china_federation_progress_bar_desc: "민족주의 진영: #v [ROOT.GetCountry.MakeScope.Var('ztr_china_federation_var').GetValue|0]/100#!" # 11053608252725992307
+  ztr_china_technoconfucian_progress_bar: "기술유교 진영" # 6023457416186817955
+  ztr_china_technoconfucian_progress_bar_desc: "기술유교 진영: #v [ROOT.GetCountry.MakeScope.Var('ztr_china_technoconfucian_var').GetValue|0]/100#!" # 16330954594393820505
+  the_future_of_china_corporate_outcome_tt: "#gold_value 기업 연합#이 중국의 운명에 대한 통제권을 공고히 합니다." # 11494480084157159493
+  the_future_of_china_federation_outcome_tt: "#blue_value 연합 성#이 공식적으로 성문화됩니다." # 5631113454879196383
+  the_future_of_china_technoconfucian_outcome_tt: "#P 정체된 유토피아#가 중국을 완벽하고 변치 않는 균형으로 되돌립니다." # 18059992290673063691
+  ztr_corporate_appleased_tt: "이는 #gold_value 기업 진영#의 힘을 #positive_value 증가#시킬 것입니다." # 17587969321134267292
+  ztr_corporate_displeased_tt: "이는 #gold_value 기업 진영#의 힘을 #negative_value 감소#시킬 것입니다." # 6179772398816180387
+  ztr_nationalist_appleased_tt: "이는 #blue_value 민족주의 진영#의 힘을 #positive_value 증가#시킬 것입니다." # 1236145007417433072
+  ztr_nationalist_displeased_tt: "이는 #blue_value 민족주의 진영#의 힘을 #negative_value 감소#시킬 것입니다." # 9401655437604370914
+  ztr_technoconfucian_appleased_tt: "이는 #P 기술유교 진영#의 힘을 #positive_value 증가#시킬 것입니다." # 16610917006734586996
+  ztr_technoconfucian_displeased_tt: "이는 #P 기술유교 진영#의 힘을 #negative_value 감소#시킬 것입니다." # 13566263290394578069
+  ztr_corporate_empowered_modifier: "기업 패권" # 7847221251134942399
+  ztr_corporate_empowered_modifier_desc: "해안 기업들이 국가의 산업 정책에 상당한 영향력을 확보했습니다." # 6152661661966275696
+  ztr_corporate_disempowered_modifier: "억제된 과두제" # 17309217335326254884
+  ztr_corporate_disempowered_modifier_desc: "국가가 해안 독점 기업의 무분별한 성장을 제한하기 위한 조치를 취했습니다." # 1161785184687844476
+  ztr_federation_empowered_modifier: "연방 합의" # 15324584658294643665
+  ztr_federation_empowered_modifier_desc: "지방 총독들과 군부 사이의 광범위한 합의가 연방 구조를 안정시켰습니다." # 17235936178040169094
+  ztr_federation_disempowered_modifier: "헌법적 마비" # 6383840136729688059
+  ztr_federation_disempowered_modifier_desc: "정치적 교착 상태와 지역 간의 경쟁이 연방 협약을 약화시키고 있습니다." # 8714793766141327394
+  ztr_technoconfucian_empowered_modifier: "대동의 길" # 8366805644656558132
+  ztr_technoconfucian_empowered_modifier_desc: "전통적인 유교 윤리와 현대적인 통치 기술의 결합이 사회 질서를 공고히 했습니다." # 12380317386089855304
+  ztr_technoconfucian_disempowered_modifier: "전통의 침식" # 2192839749476327111
+  ztr_technoconfucian_disempowered_modifier_desc: "현대화의 압력과 내부의 반목이 전통적인 도덕적 권위를 약화시키고 있습니다." # 15687512243281813121
+  ztr_corporate_mining_subsides_modifier: "산업 추출 장려책" # 13618934102416527663
+  ztr_corporate_mining_subsides_modifier_desc: "광업 운영에 대한 표적 보조금이 원자재 생산량을 크게 증대시켰습니다." # 15308878572267291005
+  ztr_technoconfucian_rural_subsides_modifier: "농업 안정화 프로그램" # 12955061620571233234
+  ztr_technoconfucian_rural_subsides_modifier_desc: "농촌 공동체와 플랜테이션에 대한 지원은 안정적인 식량 공급과 사회적 평화를 보장합니다." # 13411689346477193181
+  ztr_corporate_foreign_tech_bonus_modifier: "수입된 산업 전문 지식" # 216796261405333934
+  ztr_corporate_foreign_tech_bonus_modifier_desc: "외국인 투자자와의 협력은 선진 제조 기술의 도입을 가속화했습니다." # 18241043728120604711
+  the_future_of_china_corporate_outcome_modifier: "기업 위임 통치" # 14202280489580753297
+  the_future_of_china_corporate_outcome_modifier_desc: "중국은 자본이 법을 지배하는 초고효율 기업 연합체로 진화했습니다." # 6243439588432003547
+  the_future_of_china_federation_outcome_modifier: "연합 성(省)" # 15341736278675273812
+  the_future_of_china_federation_outcome_modifier_desc: "안정적이고 회복력 있는 연방 헌법이 모든 성의 요구 사항 사이에서 균형을 잡고 있습니다." # 10302118950311548063
+  the_future_of_china_technoconfucian_outcome_modifier: "기술-유교적 조화" # 12577917487622315997
+  the_future_of_china_technoconfucian_outcome_modifier_desc: "국가는 전통과 기술의 융합을 통해 깨어있는 안정의 상태를 달성했습니다." # 11204134784569954568
+  ztr_coastal_construction_bonus_modifier: "연안 중국 경제 호황" # 969473214605520944
+  je_group_chinese_civil_war: "중국 공산 전선" # 10943677648727154996
+  ztr_je_chinese_communist_front: "중국 공산 전선" # 10943677648727154996
+  ztr_je_chinese_communist_front_reason: "#v 청#!의 권위가 붕괴하면서 분열된 한족의 세계는 @equality_index! #N 공산주의#!와 같은 새로운 이념에 취약해졌습니다.\n\n각 #v 군벌#!은 이제 독자적인 지역 혁명 동력을 발전시키고 있지만, 더 넓은 위험은 #gold_value 중국#! 전역에서 공유되는 단일한 적색 압력 지표를 통해 추적됩니다.\n\n#v 군벌#!들이 #v 외교#!나 #v 강철#!로 단결하지 못한다면, 그들은 @equality_index! #N 공산주의#!에 하나씩 무너질 수 있습니다.\n\n상황이 악화되지 않는다면, #blue_value 민족주의#! #v 운동#!이 부상하여 #N 적색 위협#!에 맞서도록 지원받을 수 있습니다." # 17334564678372651269
+  je_ottoman_empire_collapse: "오스만 제국 쇠퇴" # 3065944229570634865
+  ztr_je_chinese_communist_front_status: "#N 공산주의자#!의 선동은 여전히 산발적이고 국지적이며 정치적으로 불완전합니다." # 14514814884101828452
+  ztr_je_chinese_communist_front_status_united: "#N 공산주의자#! 조직가들이 #v 중국#! 전역의 노동자, 장교, 농민을 더 넓은 통일 전선 네트워크로 결집하고 있습니다." # 9070032685689217711
+  ztr_je_prc_created: "#v 중화인민공화국#!이 수립되었습니다." # 13065234870786154201
+  ztr_je_chinese_communist_front_status_armed: "#N 공산주의자#! 세력이 이제 무장 기지를 유지하고 국가 건설에 맞설 수 있을 만큼 충분한 총체적 힘을 갖추었습니다." # 145179979595708879
+  ztr_ccp_global_progress_bar: "중국 공산주의의 세계적 기세" # 3725414585308658262
+  ztr_ccp_global_progress_bar_desc: "중국 공산주의의 세계적 기세: #v [GetGlobalVariable('ztr_ccp_overall_progress').GetValue|0]/100#!" # 6879578669229966801
+  ztr_je_two_chinas_accord: "두 개의 중국 협정" # 17963135863773334801
+  ztr_je_two_chinas_accord_reason: "#n 공산주의 중국#!과 #blue_value 국민당 중국#! 모두가 분열된 중국 군벌들 사이에서 자리를 잡으면서, 남아있는 한족과 만주족의 거점은 매력적인 먹잇감이 되었습니다.\n\n이념적 적대감에도 불구하고, 두 경쟁하는 중국은 여전히 임시 협정을 맺을 수 있으며, 분할할 수 있는 주변 군벌들이 남아있는 한 외교적 공작을 조율하며 서로를 지원할 수 있습니다." # 11271466847901612676
+  ztr_je_two_chinas_accord_status: "두 경쟁하는 중국은 주변의 남은 군벌들을 분할할 때까지는 여전히 협력할 수 있습니다." # 10728060466412914379
+  ztr_ottoman_collapse_complete_tt: "제국은 붕괴하여 #v 주변 성(Peripheral Provinces)#!에 대한 통제력을 상실하고, 제국은 소멸할 것입니다." # 11022717805003725228
+  je_group_global_historical_content: "세계 역사적 콘텐츠" # 6702719987584120001
+  je_ottoman_empire_collapse_reason: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetName]은 부채, 지방의 소요, 군사적 음모, 열강의 침탈이라는 긴 위기로 접어들고 있습니다.\n\n[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] #v 정부#!는 생존을 위해 충분히 빠르게 개혁하거나, 제국이 더 작은 계승 국가로 축소되는 것을 지켜봐야 합니다.\n\n이 상황에 참여하는 #v 열강#!은 [SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 이집트, 시리아, 이라크에서 지역 원조 임무를 후원하여 지방을 안정시키는 동시에, 제국이 끝내 분열될 경우를 대비한 미래의 외교적 개입 명분을 쌓을 수 있습니다." # 6475010502946898105
+  je_ottoman_empire_collapse_goal: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetName]은 붕괴 수치가 가득 차기 전에 개혁, 성장, 지정학적 회복을 통해 국가를 안정시켜야 합니다." # 7139674831132746036
+  je_ottoman_empire_collapse_status: "숭고한 문(Porte)은 여전히 유지되고 있으나, 부채와 지방의 소요, 외세의 음모가 제국의 결속력을 꾸준히 갉아먹고 있습니다." # 3926699936654788442
+  je_ottoman_empire_collapse_status_arab: "아랍 지방의 유지들은 오스만 제국의 권위를 점차 협상 가능하고 일시적이며, 노골적으로 불법적인 것으로 취급하고 있습니다." # 16853834400619901855
+  je_ottoman_empire_collapse_status_army: "군대는 믿을 수 있는 국가의 도구가 아니라 파벌과 숙청, 그리고 대가를 받지 못한 충성심이 뒤엉킨 정치적 장이 되어가고 있습니다." # 14766000540502963723
+  je_ottoman_empire_collapse_status_foreign: "유럽의 금융가, 이권 양도자, 외교관들은 [SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective]의 지방들을 경쟁적인 영향권으로 노골적으로 분할하고 있습니다." # 6620304322592144978
+  je_ottoman_empire_collapse_status_terminal: "제국은 종말 단계에 접어들었습니다. 모든 양보는 또 다른 요구를 불러오고, 이제 무력을 사용하려는 모든 시도는 국가 전체를 산산조각 낼 위협이 됩니다." # 14040841514883593609
+  ztr_ottoman_collapse_request_egypt: "#v 이집트 원조#! 제공" # 5300378080480537713
+  ztr_ottoman_collapse_request_egypt_desc: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 이집트의 관개, 치안, 농업 지원을 후원하십시오. 만약 제국이 나중에 붕괴한다면, 우리의 이집트 임무는 공식적인 영유권 주장으로 발전할 것입니다." # 10183128667523976464
+  ztr_ottoman_collapse_request_egypt_cost_tt: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 정부가 수락한다면, 이 이집트 원조 임무는 국고에서 #n @money! 150만#!을 소모하게 됩니다. #n 거절할 경우, 그들은 더 이상 우리의 제안을 받아들이지 않을 것입니다#!." # 12072883920878042876
+  ztr_ottoman_collapse_request_levant: " #v 시리아 원조#! 제안" # 7434153197297587298
+  ztr_ottoman_collapse_request_levant_desc: "시리아, 레바논, 팔레스타인, 트란스요르단 지역의 구호 활동, 운송 사업, 반란 진압 조치를 지원합니다. 만약 제국이 추후 붕괴한다면, 우리의 시리아 임무는 영유권 주장의 근거가 될 것입니다." # 14036208451263283932
+  ztr_ottoman_collapse_request_levant_cost_tt: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 정부가 수락한다면, 이 시리아 원조 임무는 국고에서 #n @money! 100만#!을 소모하게 됩니다. #n 거절할 경우, 그들은 더 이상 우리의 제안을 받아들이지 않을 것입니다#!." # 12022366117035299806
+  ztr_ottoman_collapse_request_iraq: " #v 이라크 원조#! 제안" # 12961277534426499637
+  ztr_ottoman_collapse_request_iraq_desc: "바그다드, 바스라, 모술 지역의 관개 시설, 통신, 행정 지원에 자금을 지원합니다. 만약 제국이 추후 붕괴한다면, 우리의 이라크 임무는 해당 지역들에 대한 영유권 주장이 될 것입니다." # 920500065899410236
+  ztr_ottoman_collapse_request_iraq_cost_tt: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 정부가 수락한다면, 이 이라크 원조 임무는 국고에서 #n @money! 100만#!을 소모하게 됩니다. #n 거절할 경우, 그들은 더 이상 우리의 제안을 받아들이지 않을 것입니다#!." # 9981096387601979668
+  ztr_ottoman_egypt_foreign_aid_modifier: "이집트 원조 임무" # 9555414394464077170
+  ztr_ottoman_egypt_foreign_aid_modifier_desc: "외국인 기술자, 농업 신용 대출, 새로운 치안 유지 지원이 이집트를 안정시키고 농업 생산량을 높이는 데 기여하고 있습니다." # 7766352857307802998
+  ztr_ottoman_syria_foreign_aid_modifier: "시리아 원조 임무" # 1545084248590589165
+  ztr_ottoman_syria_foreign_aid_modifier_desc: "외부의 지원을 받는 운송 사업, 보조금, 행정 지원이 시리아 각 주의 불안을 완화하고 있습니다." # 15393100830342476845
+  ztr_ottoman_iraq_foreign_aid_modifier: "이라크 원조 임무" # 18252502380115311597
+  ztr_ottoman_iraq_foreign_aid_modifier_desc: "외국 자본으로 운영되는 하천 정비, 기반 시설, 지방 지원이 [SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 이라크를 안정시키는 데 기여하고 있습니다." # 5056412763990014817
+  ztr_diplomatic_cooldown_tt: "최근 외교적 요청을 보냈습니다. 다음 요청을 하기 전까지 몇 년을 기다려야 합니다." # 2826440025315240454
+  ztr_ottoman_situation_not_dramatic_tt: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective]의 상황은 외국이 개입할 만큼 극적입니다." # 17924634546565963911
+  ztr_ottoman_already_accepted_help_tt: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 정부는 이미 외국 원조를 수락했습니다." # 10004682426725476057
+  je_superpower_request_law_enactment: "원조 정렬 요건" # 176288197951536485
+  je_superpower_request_law_enactment_reason: "[SCOPE.sCountry('superpower_law_requester').GetName]이 중재한 원조 패키지는 순수한 인도주의적 목적이 아닙니다. 그들의 외교관들은 [ROOT.GetCountry.GetName]이 #v 5년#! 이내에 [SCOPE.sLaw('superpower_alignment_law').GetName]을 제정하여 자국의 제도를 후원자의 모델에 더 가깝게 맞추기를 기대하고 있습니다.\n\n실패할 경우, 우리가 정치적 정렬을 받아들이지 않고 외국 자금만 수락했다는 신호로 간주될 것입니다." # 3203905226281094314
+  je_superpower_request_law_enactment_goal: "#v 5년#! 이내에 [SCOPE.sLaw('superpower_alignment_law').GetName]을 제정하여 [SCOPE.sCountry('superpower_law_requester').GetName]의 조건을 충족하십시오." # 5199091580544277545
+  je_superpower_request_law_enactment_status_pending: "[SCOPE.sCountry('superpower_law_requester').GetName]이 우리가 [SCOPE.sLaw('superpower_alignment_law').GetName]을 제정하기를 여전히 기다리고 있습니다. 원조는 계속되고 있지만, 그들의 인내심도 영원하지는 않을 것입니다." # 16951083571782641937
+  je_superpower_request_law_enactment_status_enacting: "[ROOT.GetCountry.GetName]은(는) [SCOPE.sCountry('superpower_law_requester').GetName]의 원조에 따른 정치적 조건을 이행하기 위해 [SCOPE.sLaw('superpower_alignment_law').GetName]을(를) 제정하고 있습니다." # 4337936854678769943
+  je_superpower_request_law_enactment_completed_desc: "[SCOPE.sLaw('superpower_alignment_law').GetName]을(를) 통과시키면 [SCOPE.sCountry('superpower_law_requester').GetName]의 기대를 충족하며 관계가 소폭 개선됩니다." # 6216876291377699656
+  je_superpower_request_law_enactment_timeout_desc: "제시간에 [SCOPE.sLaw('superpower_alignment_law').GetName]을(를) 통과시키지 못하면 [SCOPE.sCountry('superpower_law_requester').GetName]과의 관계가 악화되고 원조 수정치가 조기에 철회될 것입니다." # 9388024215798077631
+  je_group_global_un_content: "국제연합" # 14201776680300787493
+  je_un_info_panel: "국제연합" # 14201776680300787493
+  je_un_info_panel_reason: "[Concept('concept_united_nations','$concept_united_nations$')]은(는) 전쟁을 방지하고 외교적 해결책과 인권을 우선시하는 것을 목표로 하는 국제 외교, 중재 및 정통성의 주요 장이 되었습니다.\n\n[ROOT.GetCountry.GetName]이(가) 조직 내에 남아 있는 한, 이 패널은 #blue_value 안전보장이사회#!의 현재 상임이사국과 의제를 주도하는 선도 강대국들을 추적합니다.\n\n#v 현재 UN 거버넌스#!:\n@un_voting_model! #v 투표 모델#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_voting_model_name')]\n@un_veto_right! #v 상임이사국 거부권#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_veto_right_name')]\n@un_member_selection! #v 상임이사국 선출#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_member_selection_name')]\n\n#v 현재 인권 성명#!:\n@un_decolonization! #v 탈식민지화#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_human_rights_decolonization_name')]\n@un_slavery! #v 노예제#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_human_rights_slavery_name')]\n@un_children_rights! #v 아동 권리#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_human_rights_children_name')]\n@un_women_rights! #v 여성 권리#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_human_rights_women_name')]\n\n#v 현재 UN 기구#!:\n@un_imf! #v IMF#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_institution_imf_name')]\n@un_wto! #v WTO#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_institution_wto_name')]\n@un_icc! #v ICC#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_institution_icc_name')]\n@un_unesco! #v UNESCO#!: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_law_institution_unesco_name')]\n\n#v 현재 안전보장이사회 상임이사국#!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_5_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_6_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_7_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_8_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_9_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_permanent_member_display_rank_10_type')]" # 10835225280213630479
+  je_un_info_panel_status_member: "#blue_value 상태#!: 회원국" # 2587008931522373781
+  je_un_info_panel_status_permanent: "#gold_value 상태#!: 안전보장이사회 상임이사국" # 15646135395767981181
+  ztr_un_open_governance_menu: "UN 거버넌스 개혁 제안" # 14656981927946341430
+  ztr_un_open_governance_menu_desc: "안전보장이사회 상임이사국으로서 우리는 국제연합의 거버넌스 구조에 대한 개혁을 제안할 수 있습니다. 이를 통해 UN 헌장의 어떤 측면을 개혁할지 선택하는 메뉴가 열리며, 이후 모든 회원국을 대상으로 제안에 대한 투표가 진행됩니다." # 8564572026329040599
+  ztr_un_vote_for_statement: "찬성 투표" # 13088740855862365931
+  ztr_un_vote_for_statement_desc: "[ROOT.GetCountry.GetName]이(가) 해당 성명을 지지함을 선언합니다." # 15414801003824130123
+  ztr_un_vote_neutral_statement: "중립 투표" # 6887922624173638644
+  ztr_un_vote_neutral_statement_desc: "[ROOT.GetCountry.GetName]의 성명에 대한 입장을 중립으로 되돌립니다." # 1527126934141635232
+  ztr_un_vote_against_statement: "반대 투표" # 6170752102309117226
+  ztr_un_vote_against_statement_desc: "[ROOT.GetCountry.GetName]이(가) 해당 성명을 반대함을 선언합니다." # 7734066372508456264
+  ztr_un_vote_choice_support_loc: "#p 찬성#!" # 8676797158258403957
+  ztr_un_vote_choice_neutral_loc: "#v 중립#!" # 16737874616368065390
+  ztr_un_vote_choice_against_loc: "#n 반대#!" # 16608591320406222898
+  ztr_un_vote_session_clear_tt: "현재 논의 중이거나 투표 중인 UN 안건이 없습니다." # 15625589853721839115
+  ztr_un_permanent_member_display_rank_1_loc: "1. [ROOT.Var('ztr_un_permanent_member_display_rank_1_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_1_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_1_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_1_var').GetCountry.GetInfamy|-1])" # 12862285165784995670
+  ztr_un_permanent_member_display_rank_2_loc: "\n2. [ROOT.Var('ztr_un_permanent_member_display_rank_2_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_2_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_2_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_2_var').GetCountry.GetInfamy|-1])" # 17868211775843337958
+  ztr_un_permanent_member_display_rank_3_loc: "\n3. [ROOT.Var('ztr_un_permanent_member_display_rank_3_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_3_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_3_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_3_var').GetCountry.GetInfamy|-1])" # 16276023771159417893
+  ztr_un_permanent_member_display_rank_4_loc: "\n4. [ROOT.Var('ztr_un_permanent_member_display_rank_4_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_4_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_4_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_4_var').GetCountry.GetInfamy|-1])" # 414017393986118659
+  ztr_un_permanent_member_display_rank_5_loc: "\n5. [ROOT.Var('ztr_un_permanent_member_display_rank_5_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_5_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_5_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_5_var').GetCountry.GetInfamy|-1])" # 5937929845485426007
+  ztr_un_permanent_member_display_rank_6_loc: "\n6. [ROOT.Var('ztr_un_permanent_member_display_rank_6_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_6_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_6_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_6_var').GetCountry.GetInfamy|-1])" # 4251230541975987248
+  ztr_un_permanent_member_display_rank_7_loc: "\n7. [ROOT.Var('ztr_un_permanent_member_display_rank_7_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_7_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_7_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_7_var').GetCountry.GetInfamy|-1])" # 3264520919922112017
+  ztr_un_permanent_member_display_rank_8_loc: "\n8. [ROOT.Var('ztr_un_permanent_member_display_rank_8_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_8_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_8_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_8_var').GetCountry.GetInfamy|-1])" # 17842921702745880110
+  ztr_un_permanent_member_display_rank_9_loc: "\n9. [ROOT.Var('ztr_un_permanent_member_display_rank_9_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_9_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_9_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_9_var').GetCountry.GetInfamy|-1])" # 5726972525980920019
+  ztr_un_permanent_member_display_rank_10_loc: "\n10. [ROOT.Var('ztr_un_permanent_member_display_rank_10_var').GetCountry.GetName]: @prestige! [ROOT.Var('ztr_un_permanent_member_display_rank_10_var').GetCountry.GetPrestige|0] | @infamy! [ROOT.Var('ztr_un_permanent_member_display_rank_10_var').GetCountry.GetInfamyLabel|-] ([ROOT.Var('ztr_un_permanent_member_display_rank_10_var').GetCountry.GetInfamy|-1])" # 9842331440583746691
+  superpower_expects_alignment_law_enactment_tt: "[SCOPE.sCountry('superpower_law_requester').GetName]이(가) 우리에게 그들의 법에 맞춰 법을 변경할 것을 요구합니다." # 818001186185955001
+  je_superpower_aid_extended_tt: "[SCOPE.sCountry('superpower_law_requester').GetName]이(가) #gold_value 원조#!를 #v 10#!년 더 연장할 것입니다." # 10197836311012440556
+  je_decolonization_reason: "식민 제국의 시대가 저물고 있습니다. 전 세계적으로 피지배 민족들은 자결권을 요구하고 있고, 국제 기구들은 제국 통치의 정통성에 의문을 제기하며, 해외 영토 유지 비용은 갈수록 증가하고 있습니다.\n\n[ROOT.GetCountry.GetName]은(는) 이러한 시대적 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 커지는 반란과 국제적 비난에 직면할 것인지, 아니면 변화를 주도하여 가능한 한 영향력을 보존할 것인지 결정해야 합니다.\n\n#v 탈식민화 압력#!: [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100" # 8609807561733593747
+  je_decolonization_goal: "모든 비유럽권 [Concept('concept_subject','$concept_subjects$')]이(가) 독립을 쟁취합니다." # 11720223291895509416
+  je_decolonization_status_low: "식민 통치는 국제적으로 널리 용인되고 있으나, 변화의 초기 징후가 나타나고 있습니다." # 1599235697117350484
+  je_decolonization_status_rising: "식민지 내 민족주의 운동이 탄력을 받고 있습니다. 국제 여론이 식민 통치에 반대하는 방향으로 기울고 있습니다." # 2187901485955437363
+  je_decolonization_status_high: "탈식민화의 물결이 이제 명백해졌습니다. 여러 식민지에서 독립을 요구하고 있으며 국제적인 압박이 거세지고 있습니다." # 1865286992161927322
+  je_decolonization_status_critical: "식민 질서가 붕괴하고 있습니다. 제국 전역의 피지배 민족들이 공개적으로 반란을 일으키고 있거나 그 직전의 상태입니다. 제국을 유지하는 것은 정치적으로나 경제적으로 더 이상 지속 불가능해졌습니다." # 4203626824244281090
+  je_decolonization_complete_tt: "남아있는 식민지 피지배 민족이 없습니다." # 5321383784479940700
+  ztr_decolonization_pressure_bar: "탈식민화 압력" # 7546376795375972553
+  ztr_decolonization_pressure_bar_desc: "탈식민지화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100#!\n\n식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 속국은 더욱 자유를 열망하게 되며, 탈식민지화 이벤트의 결과는 더욱 중대해집니다." # 8817599525737943994
+  je_un_votations_status_support: "#gold_value 투표 경향#!: #p 찬성#!\n#blue_value 남은 개월 수#!: #v [GetGlobalVariable('ztr_un_vote_months_remaining').GetValue|0]#!" # 10993471991437023918
+  je_un_votations_status_neutral: "#gold_value 투표 경향#!: #v 동률#!\n#blue_value 남은 개월 수#!: #v [GetGlobalVariable('ztr_un_vote_months_remaining').GetValue|0]#!" # 17586489579007828139
+  je_un_votations_status_against: "#gold_value 투표 경향#!: #n 반대#!\n#blue_value 남은 개월 수#!: #v [GetGlobalVariable('ztr_un_vote_months_remaining').GetValue|0]#!" # 17372502945548814532
+  ztr_un_open_human_rights_menu: "인권 선언 제안" # 15411173660418695165
+  ztr_un_open_human_rights_menu_desc: "안전보장이사회 상임이사국으로서, 우리는 모든 회원국 간의 투표에 부쳐질 인권 관련 성명을 제안할 수 있습니다. 채택된 성명은 유엔 회원국들에 구속력을 갖습니다." # 685551209170222268
+  ztr_un_open_institutions_menu: "유엔 기구 제안" # 2506824912560955332
+  ztr_un_open_institutions_menu_desc: "안전보장이사회 상임이사국으로서, 우리는 모든 회원국 간의 투표에 부쳐질 주요 유엔 관련 기구의 설립을 제안할 수 있습니다." # 17760099353852115722
+  ztr_un_hr_slavery_illegal: "유엔 노예제 반대 선언" # 15821793547599326939
+  ztr_un_hr_slavery_illegal_desc: "유엔은 국제법상 모든 형태의 노예제를 불법으로 선언했습니다. 여전히 노예제를 허용하는 회원국은 심각한 외교적 결과와 국제적 위상 하락에 직면하게 됩니다." # 17931013967251384868
+  LIBERTY_DESIRE_DECOLONIZATION_PRESSURE: "탈식민화 압력" # 7546376795375972553
+  LIBERTY_DESIRE_POST_WAR_SELF_DETERMINATION: "전후 자결주의 규범" # 11886550312110674673
+  LIBERTY_DESIRE_UN_DECOLONIZATION_ENCOURAGED: "유엔의 탈식민지화 장려" # 3631010591582365471
+  LIBERTY_DESIRE_UN_COLONIAL_LAWS_CONDEMNED: "유엔의 식민법 규탄" # 204706002007082399
+  LIBERTY_DESIRE_UN_SLAVERY_CONDEMNED: "유엔의 노예제 규탄" # 7209481697867335096
+  LIBERTY_DESIRE_DEMONSTRATION_EFFECT: "시위 효과" # 8293394504641061452
+  LIBERTY_DESIRE_OVERLORD_DEMOCRATIC: "종주국의 민주적 가치" # 16823650120898245498
+  LIBERTY_DESIRE_COLONIALIST_PRIMARY_CULTURE: "식민주의자 주문화" # 4745867323846584961
+  ztr_un_law_voting_model_1: "[Concept('concept_un_voting_model_one_country_one_vote','$concept_un_voting_model_one_country_one_vote$')]" # 9306528600110250122
+  ztr_un_law_voting_model_2: "[Concept('concept_un_voting_model_weighted_by_prestige','$concept_un_voting_model_weighted_by_prestige$')]" # 18037152344191579502
+  ztr_un_law_voting_model_3: "[Concept('concept_un_voting_model_security_council_only','$concept_un_voting_model_security_council_only$')]" # 7643071562610973247
+  ztr_un_law_voting_model_4: "[Concept('concept_un_voting_model_superpowers_only','$concept_un_voting_model_superpowers_only$')]" # 15185846199651824328
+  ztr_un_law_veto_right_enabled: "[Concept('concept_un_veto_right_enabled','$concept_un_veto_right_enabled$')]" # 17526026199804642436
+  ztr_un_law_veto_right_disabled: "[Concept('concept_un_veto_right_disabled','$concept_un_veto_right_disabled$')]" # 7659990857123756140
+  ztr_un_law_veto_right_hold: "보유" # 9615761029532981873
+  ztr_un_law_veto_right_not_hold: "보유하지 않음" # 246207624073001873
+  ztr_un_law_member_selection_1: "[Concept('concept_un_member_selection_by_prestige','$concept_un_member_selection_by_prestige$')]" # 6484750084103244111
+  ztr_un_law_member_selection_2: "[Concept('concept_un_member_selection_geographic_representation','$concept_un_member_selection_geographic_representation$')]" # 629728726694186619
+  ztr_un_law_member_selection_3: "[Concept('concept_un_member_selection_by_military_power','$concept_un_member_selection_by_military_power$')]" # 3895277009754140450
+  ztr_un_law_member_selection_4: "[Concept('concept_un_member_selection_strongest_country','$concept_un_member_selection_strongest_country$')]" # 16995372145929438799
+  ztr_un_law_unknown: "미수립" # 17357626902922552048
+  ztr_un_vote_subject_voting_model: "@un_voting_model! #v 투표 모델#!" # 14326366314536128022
+  ztr_un_vote_subject_veto_right: "@un_veto_right! #v 총리 거부권#!" # 5696297054783256313
+  ztr_un_vote_subject_member_selection: "@un_member_selection! #v 총리 선출#!" # 10134637704438073783
+  ztr_un_vote_subject_human_rights_decolonization: "#v 탈식민지화#!" # 11099566814481732616
+  ztr_un_vote_subject_human_rights_slavery: "#v 노예제#!" # 14465925511692867342
+  ztr_un_vote_subject_human_rights_children_rights: "#v 아동 권리#!" # 6364907195509336682
+  ztr_un_vote_subject_human_rights_women_rights: "#v 여성 권리#!" # 18266878140753731388
+  ztr_un_vote_subject_institutions_imf: "#v IMF#!" # 17944311371287187806
+  ztr_un_vote_subject_institutions_wto: "#v WTO#!" # 18128980812316680258
+  ztr_un_vote_subject_institutions_icc: "#v 국제형사재판소#!" # 6545481049146314083
+  ztr_un_vote_subject_institutions_unesco: "#v 유네스코#!" # 14222598516238166701
+  ztr_un_vote_proposal_decolonization_encouraged: "[Concept('concept_un_decolonization_encouraged','$concept_un_decolonization_encouraged$')]" # 12569181314827307987
+  ztr_un_vote_proposal_decolonization_conservative: "[Concept('concept_un_decolonization_conservative','$concept_un_decolonization_conservative$')]" # 10809538894236674691
+  ztr_un_vote_proposal_decolonization_neutral: "[Concept('concept_un_decolonization_neutral','$concept_un_decolonization_neutral$')]" # 624596245381960322
+  ztr_un_vote_proposal_slavery_illegal: "[Concept('concept_un_slavery_illegal','$concept_un_slavery_illegal$')]" # 4380293394790851578
+  ztr_un_vote_proposal_slavery_neutral: "[Concept('concept_un_slavery_neutral','$concept_un_slavery_neutral$')]" # 4560588131122991823
+  ztr_un_vote_proposal_children_rights_negligible: "[Concept('concept_un_children_rights_negligible','$concept_un_children_rights_negligible$')]" # 15614169076747443115
+  ztr_un_vote_proposal_children_rights_restricted_child_labor: "[Concept('concept_un_children_rights_restricted_child_labor','$concept_un_children_rights_restricted_child_labor$')]" # 16182535510470906070
+  ztr_un_vote_proposal_children_rights_compulsory_study: "[Concept('concept_un_children_rights_compulsory_study','$concept_un_children_rights_compulsory_study$')]" # 11595825562240138505
+  ztr_un_vote_proposal_women_rights_negligible: "[Concept('concept_un_women_rights_negligible','$concept_un_women_rights_negligible$')]" # 771098860784768654
+  ztr_un_vote_proposal_women_rights_gender_equality: "[Concept('concept_un_women_rights_gender_equality','$concept_un_women_rights_gender_equality$')]" # 13423375576118317168
+  ztr_un_institution_imf_not_established: "[Concept('concept_un_institution_imf_not_established','$concept_un_institution_imf_not_established$')]" # 5435126671081927818
+  ztr_un_institution_imf_established: "[Concept('concept_un_institution_imf_established','$concept_un_institution_imf_established$')]" # 1686191610602646241
+  ztr_un_institution_wto_not_established: "[Concept('concept_un_institution_wto_not_established','$concept_un_institution_wto_not_established$')]" # 17833185854098659906
+  ztr_un_institution_wto_established: "[Concept('concept_un_institution_wto_established','$concept_un_institution_wto_established$')]" # 3878769347534690951
+  ztr_un_institution_icc_not_established: "[Concept('concept_un_institution_icc_not_established','$concept_un_institution_icc_not_established$')]" # 2640469669559802462
+  ztr_un_institution_icc_established: "[Concept('concept_un_institution_icc_established','$concept_un_institution_icc_established$')]" # 14477407860365934285
+  ztr_un_institution_unesco_not_established: "[Concept('concept_un_institution_unesco_not_established','$concept_un_institution_unesco_not_established$')]" # 9576846889439632281
+  ztr_un_institution_unesco_established: "[Concept('concept_un_institution_unesco_established','$concept_un_institution_unesco_established$')]" # 1498108884955023892
+  ztr_un_institution_established: "수립됨" # 1191756773486043975
+  je_un_votations: "UN 투표 세션" # 587763404874471430
+  je_un_votations_reason: "#blue_value 안전보장이사회#!가 30일간의 예비 토론 기간을 거쳐 #v UN 제안#!에 대한 투표를 시작했습니다.\n\n#bold 안건#!: #v [JournalEntry.GetCustom('ztr_un_vote_subject_name_je')]#!\n#p 제안#!: [JournalEntry.GetCustom('ztr_un_vote_proposal_name_je')]\n#n 현행 법률#!: [JournalEntry.GetCustom('ztr_un_vote_current_law_name_je')]\n\n투표 자격이 있는 모든 #blue_value UN 회원국#!은 투표할 수 있으며, 아무런 조치를 취하지 않는 국가는 기본적으로 중립으로 간주됩니다. 세션 종료 시 찬성표가 반대표보다 많으면 해당 제안이 채택됩니다." # 17758289177034362323
+  ztr_un_major_power_support_vote_display_global_block_loc: "\n\n#bold 주요 강대국 투표자#!:[JournalEntry.GetCustom('ztr_un_major_power_support_vote_global_display_rank_1_type')][JournalEntry.GetCustom('ztr_un_major_power_support_vote_global_display_rank_2_type')]" # 9050939902276940001
+  ztr_un_major_power_support_vote_display_global_none_loc: "\n\n#bold 주요 강대국 투표자#!:\n현재 이 세션에서 투표할 자격이 있는 #v 주요 강대국#!이 없습니다." # 4241812096045759532
+  ztr_un_vote_support_progress_bar_desc: "찬성표: #v [GetGlobalVariable('ztr_un_vote_support_count').GetValue|0]#! / #v [GetGlobalVariable('ztr_un_vote_total_count').GetValue|0]#! ([JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%])." # 11024106476261744752
+  ztr_un_vote_neutral_progress_bar_desc: "중립표: #v [GetGlobalVariable('ztr_un_vote_neutral_count').GetValue|0]#! / #v [GetGlobalVariable('ztr_un_vote_total_count').GetValue|0]#! ([JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%])." # 3375706741256481797
+  ztr_un_vote_against_progress_bar_desc: "반대표: #v [GetGlobalVariable('ztr_un_vote_against_count').GetValue|0]#! / #v [GetGlobalVariable('ztr_un_vote_total_count').GetValue|0]#! ([JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%])." # 13961849064074198650
+  ztr_un_vote_support_progress_bar: "#v 주요 강대국#!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_5_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_6_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_7_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_8_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_9_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_support_vote_display_rank_10_type')]#p 찬성#!" # 6471356571589440815
+  ztr_un_vote_neutral_progress_bar: "#v 주요 강대국#!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_5_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_6_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_7_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_8_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_9_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_neutral_vote_display_rank_10_type')]#v 중립#!" # 82947256255967768
+  ztr_un_vote_against_progress_bar: "#v 주요 강대국#!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_5_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_6_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_7_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_8_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_9_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_un_major_power_against_vote_display_rank_10_type')]#n 반대#!" # 1825067824371836592
+  ztr_un_major_power_support_vote_display_rank_1_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_1_var').GetCountry.GetName]\n" # 9294007835165108760
+  ztr_un_major_power_support_vote_display_rank_2_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_2_var').GetCountry.GetName]\n" # 17859082891028869263
+  ztr_un_major_power_support_vote_display_rank_3_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_3_var').GetCountry.GetName]\n" # 9811852129964711045
+  ztr_un_major_power_support_vote_display_rank_4_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_4_var').GetCountry.GetName]\n" # 14441445653461062418
+  ztr_un_major_power_support_vote_display_rank_5_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_5_var').GetCountry.GetName]\n" # 18367936064150119572
+  ztr_un_major_power_support_vote_display_rank_6_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_6_var').GetCountry.GetName]\n" # 7912224262788461158
+  ztr_un_major_power_support_vote_display_rank_7_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_7_var').GetCountry.GetName]\n" # 10445196858945191929
+  ztr_un_major_power_support_vote_display_rank_8_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_8_var').GetCountry.GetName]\n" # 6147953622061574992
+  ztr_un_major_power_support_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_9_var').GetCountry.GetName]\n" # 14318578462657497920
+  ztr_un_major_power_support_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_support_vote_display_rank_10_var').GetCountry.GetName]\n" # 8076420513833736655
+  ztr_un_major_power_neutral_vote_display_rank_1_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_1_var').GetCountry.GetName]\n" # 10869518357188363020
+  ztr_un_major_power_neutral_vote_display_rank_2_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_2_var').GetCountry.GetName]\n" # 17038582079909254290
+  ztr_un_major_power_neutral_vote_display_rank_3_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_3_var').GetCountry.GetName]\n" # 9923380539290665651
+  ztr_un_major_power_neutral_vote_display_rank_4_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_4_var').GetCountry.GetName]\n" # 5430335406558478570
+  ztr_un_major_power_neutral_vote_display_rank_5_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_5_var').GetCountry.GetName]\n" # 13357375149399609659
+  ztr_un_major_power_neutral_vote_display_rank_6_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_6_var').GetCountry.GetName]\n" # 7205579180355119455
+  ztr_un_major_power_neutral_vote_display_rank_7_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_7_var').GetCountry.GetName]\n" # 8932461521587656946
+  ztr_un_major_power_neutral_vote_display_rank_8_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_8_var').GetCountry.GetName]\n" # 9601951359161370816
+  ztr_un_major_power_neutral_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_9_var').GetCountry.GetName]\n" # 12211278479003841798
+  ztr_un_major_power_neutral_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_neutral_vote_display_rank_10_var').GetCountry.GetName]\n" # 11580395415265826869
+  ztr_un_major_power_against_vote_display_rank_1_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_1_var').GetCountry.GetName]\n" # 16178343524700079029
+  ztr_un_major_power_against_vote_display_rank_2_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_2_var').GetCountry.GetName]\n" # 11582555082294659605
+  ztr_un_major_power_against_vote_display_rank_3_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_3_var').GetCountry.GetName]\n" # 17399697749635445566
+  ztr_un_major_power_against_vote_display_rank_4_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_4_var').GetCountry.GetName]\n" # 631530908042822618
+  ztr_un_major_power_against_vote_display_rank_5_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_5_var').GetCountry.GetName]\n" # 10166261913380067659
+  ztr_un_major_power_against_vote_display_rank_6_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_6_var').GetCountry.GetName]\n" # 9156439760102930759
+  ztr_un_major_power_against_vote_display_rank_7_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_7_var').GetCountry.GetName]\n" # 18280003586332433232
+  ztr_un_major_power_against_vote_display_rank_8_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_8_var').GetCountry.GetName]\n" # 4415162677935777789
+  ztr_un_major_power_against_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_9_var').GetCountry.GetName]\n" # 1042136284466989105
+  ztr_un_major_power_against_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_10_var').GetCountry.GetName]\n" # 12775703550663148633

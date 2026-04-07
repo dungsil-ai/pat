@@ -17,3 +17,7 @@
   ideology_wel_distributist_welfare_desc: "#lore 가톨릭 사회 교리 원칙에 기반하여, 이 집단은 국가가 빈곤하고 무력한 대중들에게 기본적인 생활 수준을 제공해야 한다고 믿습니다. #!" # 18245628597879439321
   ideology_wel_social_market_welfare: "사회적 시장 복지" # 15808227542536157790
   ideology_wel_social_market_welfare_desc: "#lore 이 집단은 시장과 복지 조치를 결합하는 것이 사회적 평등을 실현하는 최선의 방법이라고 믿습니다. #!" # 18398175392298267183
+  ideology_wel_rural_welfare: "농촌 복지" # 18127835495290260474
+  ideology_wel_rural_welfare_desc: "#lore 이 집단은 농촌 지역의 복지를 창출하고 발전시키는 데 힘쓰며, 도시 노동자의 비참한 처지에는 거의 관심이 없습니다.#!" # 6441737520133395865
+  ideology_wel_reactionary_paternalistic: "반동적 온정주의" # 14335062414235264524
+  ideology_wel_reactionary_paternalistic_desc: "#lore 가혹한 자본주의에 맞서, 이 집단은 국가가 종교적 도덕성을 염두에 두고 빈곤층에게 기본적인 품위 있는 생활 수준을 보장해야 한다고 믿습니다.#!" # 5596307057668150507

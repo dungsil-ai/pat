@@ -1,0 +1,48 @@
+﻿l_korean:
+  bpm_front_data_a1_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_a1_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_a1')|-v1]#!" # 17390835048864515156
+  bpm_front_data_a2_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_a2_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_a2')|-v1]#!" # 14819453333991394702
+  bpm_front_data_a3_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_a3_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_a3')|-v1]#!" # 11298908627771258774
+  bpm_front_data_u1_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_u1_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_u1')|-v1]#!" # 15152999126221179350
+  bpm_front_data_u2_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_u2_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_u2')|-v1]#!" # 11500922864459930468
+  bpm_front_data_u3_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_u3_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_u3')|-v1]#!" # 10339953799648961611
+  bpm_front_data_n1_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_n1_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_n1')|-v1]#!" # 2391404231222256798
+  bpm_front_data_n2_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_n2_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_n2')|-v1]#!" # 2791299272177897950
+  bpm_front_data_n3_tt: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_n3_ttt [InterestGroup.MakeScope.ScriptValue('bpm_front_attraction_n3')|-v1]#!" # 8717564507732975628
+  bpm_front_data_a1_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_a1')|-v1]" # 799968214416041766
+  bpm_front_data_a2_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_a2')|-v1]" # 4794047596320839626
+  bpm_front_data_a3_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_a3')|-v1]" # 12534915863803996449
+  bpm_front_data_u1_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_u1')|-v1]" # 8136507777444213376
+  bpm_front_data_u2_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_u2')|-v1]" # 9986458223361917475
+  bpm_front_data_u3_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_u3')|-v1]" # 10264695991464560987
+  bpm_front_data_n1_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_n1')|-v1]" # 10723801333638599902
+  bpm_front_data_n2_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_n2')|-v1]" # 12864161412848853233
+  bpm_front_data_n3_ttt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_attraction_n3')|-v1]" # 4965126709034779357
+  bpm_zero: "#v 0.0#!" # 7650851629212969166
+  bpm_front_data_tt_bpm_front_urban: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_urban_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_urban_multiplier')|-v1]#!" # 9104984479144465800
+  bpm_front_data_tt_bpm_front_popular: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_popular_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_popular_multiplier')|-v1]#!" # 6298881136968787609
+  bpm_front_data_tt_bpm_front_liberal: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_liberal_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_liberal_multiplier')|-v1]#!" # 5834759389679407577
+  bpm_front_data_tt_bpm_front_bureaucratic: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_bureaucratic_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_bureaucratic_multiplier')|-v1]#!" # 993091007979853926
+  bpm_front_data_tt_bpm_front_republican: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_republican_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_republican_multiplier')|-v1]#!" # 9049128721579141265
+  bpm_front_data_tt_bpm_front_labor: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_labor_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_labor_multiplier')|-v1]#!" # 16855270528669682150
+  bpm_front_data_tt_bpm_front_socialist: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_socialist_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_socialist_multiplier')|-v1]#!" # 6795084998556261613
+  bpm_front_data_tt_bpm_front_reactionary: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_reactionary_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_reactionary_multiplier')|-v1]#!" # 2713354266820993717
+  bpm_front_data_tt_bpm_front_fascist: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_fascist_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_fascist_multiplier')|-v1]#!" # 10971957514682434040
+  bpm_front_data_tt_bpm_front_nationalist: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_nationalist_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_nationalist_multiplier')|-v1]#!" # 8968806348449636131
+  bpm_front_data_tt_bpm_front_peasant: "#tooltippable;tooltip:[InterestGroup.GetTooltipTag],bpm_front_data_peasant_tt [InterestGroup.MakeScope.ScriptValue('bpm_front_peasant_multiplier')|-v1]#!" # 3159006901940093512
+  bpm_front_data_urban_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_urban_multiplier')|-v1]" # 4031960245941706523
+  bpm_front_data_popular_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_popular_multiplier')|-v1]" # 8363397651561706935
+  bpm_front_data_liberal_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_liberal_multiplier')|-v1]" # 14670061023351410849
+  bpm_front_data_bureaucratic_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_bureaucratic_multiplier')|-v1]" # 9040765375027595839
+  bpm_front_data_republican_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_republican_multiplier')|-v1]" # 10961579071530102986
+  bpm_front_data_labor_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_labor_multiplier')|-v1]" # 1517739696025673902
+  bpm_front_data_socialist_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_socialist_multiplier')|-v1]" # 2908609660350629014
+  bpm_front_data_reactionary_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_reactionary_multiplier')|-v1]" # 10523636391759431617
+  bpm_front_data_fascist_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_fascist_multiplier')|-v1]" # 5595718239736080303
+  bpm_front_data_nationalist_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_nationalist_multiplier')|-v1]" # 10652469354586021133
+  bpm_front_data_peasant_tt: "[InterestGroup.MakeScope.GetScriptValueDesc('bpm_front_peasant_multiplier')|-v1]" # 4057099874534803757
+  BPM_FROM_BASE_MULT: "기본 배율" # 6691043529226448549
+  BPM_FRONT_BLOCKED_BY_GOVERNMENT_TYPE: "현상 유지와 #grey 일치함#!에서" # 17620246117160481782
+  BPM_FROM_IG_APPROVAL_ANGRY: "전선에 대한 #gold 친화도#!와 $concept_approval$가 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만임에서" # 2043880102697407746
+  BPM_FROM_IG_APPROVAL_UNHAPPY: "전선에 대한 #gold 친화도#!와 $concept_approval$가 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY'))] 미만임에서" # 17907475725445376612
+  BPM_FROM_AFFINITY: "전선에 대한 #gold 친화도#!에서" # 12716300364035297063
+  bpm_tooltip_part_front_data: "#bold [Localize(Concatenate(Scope.GetFlagName, '_name'))]#!\n기본값: [InterestGroup.GetCustom(Concatenate('bpm_front_attraction_dispatch_ig_', Scope.GetFlagName))]\n배율: [Localize(Concatenate('bpm_front_data_tt_', Scope.GetFlagName))]" # 13986143698243394402

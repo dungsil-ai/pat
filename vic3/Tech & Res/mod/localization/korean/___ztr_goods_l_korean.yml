@@ -36,88 +36,8 @@
   business_data: "사업 데이터" # 17177331104727914297
   softwares: "소프트웨어" # 9057406967736462854
   rare_earths: "희토류" # 9041622213556414193
-  trade_route_export_lens_option_aeroplanes_tooltip: "군용기 수출 무역로 개설" # 14348403740169207962
-  trade_route_import_lens_option_aeroplanes_tooltip: "군용기 수입 무역로를 수립하십시오" # 11189615145298104258
-  trade_route_export_lens_option_civil_planes_tooltip: "민간 항공기 수출 무역로 개설" # 9880453568528852712
-  trade_route_import_lens_option_civil_planes_tooltip: "민간 항공기 수입 무역로를 개설" # 14356631528273560121
-  trade_route_export_lens_option_bauxite_tooltip: "보크사이트 수출 무역로 개설" # 4046252766042375743
-  trade_route_import_lens_option_bauxite_tooltip: "보크사이트 수입 무역로 개설" # 7228460180985220596
-  trade_route_export_lens_option_aluminium_tooltip: "알루미늄 수출 무역로 개설" # 11288759021919495415
-  trade_route_import_lens_option_aluminium_tooltip: "알루미늄 수입 무역로 개설" # 15361922490850705286
-  trade_route_export_lens_option_plastics_tooltip: "플라스틱 수출 무역로 개설" # 16333662981242229111
-  trade_route_import_lens_option_plastics_tooltip: "플라스틱 수입 무역로 개설" # 8788039225393743534
-  trade_route_export_lens_option_light_fuel_tooltip: "경질 연료 수출 무역로 구축" # 5787332864047652650
-  trade_route_import_lens_option_light_fuel_tooltip: "경량 연료 수입 교역로 개설" # 3936582306685868615
-  trade_route_export_lens_option_lubricant_tooltip: "윤활유 수출 무역로 개설" # 942372590786075337
-  trade_route_import_lens_option_lubricant_tooltip: "윤활유 수입 무역로를 확립하십시오" # 15503833478424874467
-  trade_route_export_lens_option_heavy_fuel_tooltip: "중유 수출 무역로를 개설하십시오" # 14058062530650266152
-  trade_route_import_lens_option_heavy_fuel_tooltip: "중유 수입 무역로를 설정하십시오" # 9605243390702498799
-  trade_route_export_lens_option_copperwires_tooltip: "전선 수출 무역로 개설" # 17575779394023455463
-  trade_route_import_lens_option_copperwires_tooltip: "전선 수입 무역로를 개설하십시오." # 17245493359010281490
-  trade_route_export_lens_option_batteries_tooltip: "축전지 수출 무역로 개설" # 8341712960889881949
-  trade_route_import_lens_option_batteries_tooltip: "전지 수입 무역로를 개설하십시오." # 10849684291193248115
-  trade_route_export_lens_option_electroniccomponents_tooltip: "전자 부품 수출 무역로를 개설하십시오" # 2767890623834137232
-  trade_route_import_lens_option_electroniccomponents_tooltip: "전자 부품 수입 무역로 개설" # 14993213208753039876
-  trade_route_export_lens_option_processors_tooltip: "프로세서 수출 무역로를 개설하십시오" # 5163906468474612274
-  trade_route_import_lens_option_processors_tooltip: "프로세서 수입 무역로 개설" # 17026911092382108466
-  trade_route_export_lens_option_copper_tooltip: "구리 수출 무역로를 개설하십시오" # 9102969540524414713
-  trade_route_import_lens_option_copper_tooltip: "구리 수입 무역로 개설" # 15729341375864001793
-  trade_route_export_lens_option_commonores_tooltip: "일반 광석 수출 무역로를 설정하십시오" # 14274278081172825076
-  trade_route_import_lens_option_commonores_tooltip: "일반 광물 수입 무역로 개설" # 11339520707127261165
-  trade_route_export_lens_option_automobiles_tooltip: "차량 수출 무역로를 개설하십시오" # 17740759658843217265
-  trade_route_import_lens_option_automobiles_tooltip: "차량 수입 무역로를 개설하십시오." # 18242135716577164634
-  trade_route_export_lens_option_advancedores_tooltip: "고급 광석 수출 무역로를 개척하십시오." # 2404639814050560885
-  trade_route_import_lens_option_advancedores_tooltip: "고급 광석 수입 무역로를 개척하십시오" # 8946352395544673328
-  trade_route_export_lens_option_homeappliances_tooltip: "가전제품 수출 무역로 개설" # 9163195546136019275
-  trade_route_import_lens_option_homeappliances_tooltip: "가전제품 수입 무역로를 개설하십시오" # 1152073137465119666
-  trade_route_export_lens_option_elgar_music_tooltip: "오락 수출 무역로를 구축하십시오" # 5244426110940614130
-  trade_route_import_lens_option_elgar_music_tooltip: "오락 수입 무역로 개설" # 12776280198672252412
-  trade_route_export_lens_option_elgar_instruments_tooltip: "기구 수출 무역로 개설" # 14392310395832466029
-  trade_route_import_lens_option_elgar_instruments_tooltip: "악기 수입 무역로를 개설하십시오" # 9713853396420537275
-  trade_route_export_lens_option_air_travel_tooltip: "항공 여행 수출 무역로를 개설하십시오." # 10778360679669980372
-  trade_route_import_lens_option_air_travel_tooltip: "항공 수입 무역로 개설" # 1149541861721114810
-  trade_route_export_lens_option_alloys_tooltip: "합금 수출 무역로 개설" # 12914759386752656398
-  trade_route_import_lens_option_alloys_tooltip: "합금 수입 무역로 개설" # 6216384820238073756
-  trade_route_export_lens_option_water_tooltip: "물 수출 무역로 개설" # 13671779521938219718
-  trade_route_import_lens_option_water_tooltip: "물 수입 무역로를 개설하십시오" # 14299546070688744540
-  trade_route_export_lens_option_fuel_cells_tooltip: "연료 전지 수출 무역로 개설" # 12050348402156925541
-  trade_route_import_lens_option_fuel_cells_tooltip: "연료 전지 수입 무역로 개설" # 18391062113105941822
-  trade_route_export_lens_option_pharmaceuticals_tooltip: "의약품 수출 무역로를 개설하십시오." # 3627878137684008400
-  trade_route_import_lens_option_pharmaceuticals_tooltip: "의약품 수입 무역로 개설" # 10740259700691303745
-  trade_route_export_lens_option_televisions_tooltip: "텔레비전 수출 무역로 개설" # 8895200477077550959
-  trade_route_import_lens_option_televisions_tooltip: "텔레비전 수입 무역로 개척" # 4604527663334462969
-  trade_route_export_lens_option_computer_tooltip: "컴퓨터 수출 무역로 개설" # 17970960133199505114
-  trade_route_import_lens_option_computer_tooltip: "컴퓨터 수입 교역로 개설" # 891501006267465278
-  trade_route_export_lens_option_robotics_tooltip: "로봇 공학 수출 무역로 개설" # 3081788326698154719
-  trade_route_import_lens_option_robotics_tooltip: "로봇공학 수입 무역로를 개설하십시오" # 12727060662002811947
-  trade_route_export_lens_option_good_uranium_tooltip: "우라늄 수출 무역로 개설" # 14733580248487251425
-  trade_route_import_lens_option_good_uranium_tooltip: "우라늄 수입 무역로 개설" # 432633078173604849
-  trade_route_export_lens_option_gas_tooltip: "천연가스 수출 무역로 개설" # 5390413691475420266
-  trade_route_import_lens_option_gas_tooltip: "천연가스 수입 무역로 개설" # 9289687873703822391
-  trade_route_export_lens_option_helicopters_tooltip: "헬리콥터 수출 무역로 개설" # 9654155123989364158
-  trade_route_import_lens_option_helicopters_tooltip: "헬리콥터 수입 무역로 개설" # 16317295638716527888
-  trade_route_export_lens_option_missiles_tooltip: "미사일 수출 무역로 개설" # 1958981910444046777
-  trade_route_import_lens_option_missiles_tooltip: "미사일 수입 무역로를 개설하십시오." # 18364816670409863775
-  trade_route_export_lens_option_space_assets_tooltip: "우주 자산 수출 무역로 개설" # 2194365474914974105
-  trade_route_import_lens_option_space_assets_tooltip: "우주 자산 수입 무역로 개설" # 8279181252295553988
-  trade_route_export_lens_option_raw_data_tooltip: "원자재 수출 무역로 개설" # 4101186409933932812
-  trade_route_import_lens_option_raw_data_tooltip: "원시 데이터 수입 무역로를 구축하십시오." # 14545587802286414285
-  trade_route_export_lens_option_organized_data_tooltip: "체계적인 데이터 수출 무역로 개설" # 4317851908174120389
-  trade_route_import_lens_option_organized_data_tooltip: "체계적인 자료 수입 무역로 구축" # 5842295114850123026
-  trade_route_export_lens_option_business_data_tooltip: "사업 데이터 수출 무역로를 구축하십시오" # 7927743050549311917
-  trade_route_import_lens_option_business_data_tooltip: "사업 데이터 수입 무역로 개설" # 12493663502573419036
-  trade_route_export_lens_option_rare_earths_tooltip: "희토류 수출 무역로 개설" # 3752504707925773273
-  trade_route_import_lens_option_rare_earths_tooltip: "희토류 수입 무역로 개설" # 16044720939442002942
-  trade_route_export_lens_option_softwares_tooltip: "소프트웨어 수출 무역로 개설" # 12662090449752099504
-  trade_route_import_lens_option_softwares_tooltip: "소프트웨어 수입 무역로 개설" # 13846237102604366031
-  trade_route_export_lens_option_interactive_entertainment_tooltip: "디지털 엔터테인먼트 수출 무역로 개척하기" # 2777849897674712435
-  trade_route_import_lens_option_interactive_entertainment_tooltip: "디지털 엔터테인먼트 수입 무역로 개설" # 16842917782784520763
   cosmetics: "화장품" # 17477334926629178903
   luxury_automobiles: "고급 차량" # 7852460707765098342
-  trade_route_export_lens_option_cosmetics_tooltip: "화장품 수출 무역로 수립" # 6742080377413764179
-  trade_route_import_lens_option_cosmetics_tooltip: "화장품 수입 무역로를 개설하십시오" # 18028378834707869770
-  trade_route_export_lens_option_luxury_automobiles_tooltip: "고급 차량 수출 무역로 개설" # 1624750544769425387
-  trade_route_import_lens_option_luxury_automobiles_tooltip: "사치품 차량 수입 무역로 개설" # 12920122763296988723
   goods_output_elgar_instruments_mult: "건설 중 @elgar_instruments! 악기 생산량" # 2387397222476089103
   goods_output_elgar_instruments_mult_desc: "건물에서 생산되는 @elgar_instruments! 생산량에 대한 보너스 또는 페널티" # 10185979125648967702
   goods_output_furniture_mult: "건설 중 @furniture! 가구 생산량" # 17623182749314312669
@@ -162,3 +82,165 @@
   goods_input_plastics_mult_desc: "건물이 소비하는 @plastics! 투입량에 대한 보너스 또는 페널티" # 14903429565473495695
   goods_input_gas_mult: "@gas! 천연가스 투입" # 7185706074379701367
   goods_input_gas_mult_desc: "건물에서 소비하는 @gas! 투입량에 대한 보너스 또는 페널티" # 12825887448312486143
+  goods_input_aeroplanes_add: "@aeroplanes! 군용기 투입량" # 17746252663676698428
+  goods_input_aeroplanes_add_desc: "건물에서 소비하는 @aeroplanes! 군용기 양" # 7461393262412928294
+  goods_input_civil_planes_add: "@civil_planes! 비행기 투입량" # 9929416158210931935
+  goods_input_civil_planes_add_desc: "건물에서 소비하는 @civil_planes! 비행기 양" # 10196317440302260112
+  goods_input_bauxite_add: "@bauxite! 보크사이트 투입량" # 9288422036142198369
+  goods_input_bauxite_add_desc: "건물에서 소비하는 @bauxite! 보크사이트 양" # 14142113907226651931
+  goods_input_aluminium_add: "@aluminium! 알루미늄 투입량" # 11087310406467693195
+  goods_input_aluminium_add_desc: "건물에서 소비하는 @aluminium! 알루미늄 양" # 11793208295770564836
+  goods_input_plastics_add: "@plastics! 플라스틱 투입량" # 17303661705967061254
+  goods_input_plastics_add_desc: "건물에서 소비하는 @plastics! 플라스틱 양" # 11094473965072592231
+  goods_input_light_fuel_add: "@light_fuel! 경유 투입량" # 6216783065568310915
+  goods_input_light_fuel_add_desc: "건물에서 소비하는 @light_fuel! 경유 양" # 14166640901742137640
+  goods_input_lubricant_add: "@lubricant! 윤활유 투입량" # 14548607882255728976
+  goods_input_lubricant_add_desc: "건물에서 소비하는 @lubricant! 윤활유 양" # 11212563824006935339
+  goods_input_heavy_fuel_add: "@heavy_fuel! 중유 투입량" # 13585750539471424219
+  goods_input_heavy_fuel_add_desc: "건물에서 소비하는 @heavy_fuel! 중유 양" # 2410359805243248719
+  goods_input_copperwires_add: "@copperwires! 전선 투입량" # 8100817284686155608
+  goods_input_copperwires_add_desc: "건물에서 소비하는 @copperwires! 전선 양" # 11176746930251954269
+  goods_input_batteries_add: "@batteries! 배터리 투입량" # 8091850560301379791
+  goods_input_batteries_add_desc: "건물에서 소비하는 @batteries! 배터리 양" # 1135390328025201568
+  goods_input_electroniccomponents_add: "@electroniccomponents! 전자 부품 투입량" # 9918339675582381302
+  goods_input_electroniccomponents_add_desc: "건물에서 소비되는 @electroniccomponents! 전자 부품의 양" # 3384994248815078320
+  goods_input_processors_add: "@processors! 프로세서 투입량" # 16411711618617499633
+  goods_input_processors_add_desc: "건물에서 소비되는 @processors! 프로세서의 양" # 14899103024115035791
+  goods_input_copper_add: "@copper! 구리 투입량" # 14904760634630751258
+  goods_input_copper_add_desc: "건물에서 소비되는 @copper! 구리의 양" # 5129678066705809786
+  goods_input_commonores_add: "@commonores! 일반 광석 투입량" # 6136431850721884127
+  goods_input_commonores_add_desc: "건물에서 소비되는 @commonores! 일반 광석의 양" # 10611434332560480392
+  goods_input_automobiles_add: "@automobiles! 자동차 투입량" # 5299948482296733227
+  goods_input_automobiles_add_desc: "건물에서 소비되는 @automobiles! 자동차의 양" # 18279912814440084252
+  goods_input_advancedores_add: "@advancedores! 고급 광석 투입량" # 13693251488290988086
+  goods_input_advancedores_add_desc: "건물에서 소비되는 @advancedores! 고급 광석의 양" # 6078348927303200240
+  goods_input_homeappliances_add: "@homeappliances! 가전제품 투입량" # 13411481354893997149
+  goods_input_homeappliances_add_desc: "건물에서 소비되는 @homeappliances! 가전제품의 양" # 13397756760901121468
+  goods_input_elgar_music_add: "@elgar_music! 오락 투입량" # 9826000673521115559
+  goods_input_elgar_music_add_desc: "건물에서 소비되는 @elgar_music! 오락의 양" # 11660004447706810361
+  goods_input_elgar_instruments_add: "@elgar_instruments! 악기 투입량" # 3539902674456993304
+  goods_input_elgar_instruments_add_desc: "건물에서 소비되는 @elgar_instruments! 악기의 양" # 13434740222430367250
+  goods_input_air_travel_add: "@air_travel! 항공 여행 투입량" # 5103229420491411023
+  goods_input_air_travel_add_desc: "건물에서 소비되는 @air_travel! 항공 여행의 양" # 8361180936308332122
+  goods_input_alloys_add: "@alloys! 합금 투입" # 3805677379160057561
+  goods_input_alloys_add_desc: "건물에서 소비되는 @alloys! 합금의 양" # 14507725483863780713
+  goods_input_water_add: "@water! 물 투입" # 9716105377853744329
+  goods_input_water_add_desc: "건물에서 소비되는 @water! 물의 양" # 3708515668361857950
+  goods_input_fuel_cells_add: "@fuel_cells! 연료 전지 투입" # 10884049249938580941
+  goods_input_fuel_cells_add_desc: "건물에서 소비되는 @fuel_cells! 연료 전지의 양" # 4064531111421036145
+  goods_input_pharmaceuticals_add: "@pharmaceuticals! 의약품 투입" # 6527510816699650899
+  goods_input_pharmaceuticals_add_desc: "건물에서 소비되는 @pharmaceuticals! 의약품의 양" # 16489838676503468249
+  goods_input_televisions_add: "@televisions! 텔레비전 투입" # 3584714215204557408
+  goods_input_televisions_add_desc: "건물에서 소비되는 @televisions! 텔레비전의 양" # 6251505104689145641
+  goods_input_computer_add: "@computer! 컴퓨터 투입" # 8187064360723492017
+  goods_input_computer_add_desc: "건물에서 소비되는 @computer! 컴퓨터의 양" # 13921171100089157568
+  goods_input_robotics_add: "@robotics! 로봇 공학 투입" # 708192872807179531
+  goods_input_robotics_add_desc: "건물에서 소비하는 @robotics! 로봇공학의 양" # 16017692447615509263
+  goods_input_good_uranium_add: "@good_uranium! 우라늄 투입" # 3694036268368242828
+  goods_input_good_uranium_add_desc: "건물에서 소비되는 @good_uranium! 우라늄의 양" # 17391728382152936258
+  goods_input_gas_add: "@gas! 천연가스 투입" # 6365569117360494856
+  goods_input_gas_add_desc: "건물에서 소비되는 @gas! 천연가스의 양" # 2189027989920149307
+  goods_input_helicopters_add: "@helicopters! 헬리콥터 투입" # 2831530052579150527
+  goods_input_helicopters_add_desc: "건물에서 소비되는 @helicopters! 헬리콥터의 양" # 5798783979640028336
+  goods_input_missiles_add: "@missiles! 미사일 투입" # 13473186616256652322
+  goods_input_missiles_add_desc: "건물에서 소비되는 @missiles! 미사일의 양" # 35731834594150191
+  goods_input_space_assets_add: "@space_assets! 우주 자산 투입" # 17240164378081833602
+  goods_input_space_assets_add_desc: "건물에서 소비되는 @space_assets! 우주 자산의 양" # 2427399388364500334
+  goods_input_raw_data_add: "@raw_data! 원시 데이터 투입" # 6210344433600736031
+  goods_input_raw_data_add_desc: "건물에서 소비되는 @raw_data! 원시 데이터의 양" # 17126071755049625621
+  goods_input_organized_data_add: "@organized_data! 조직화된 데이터 투입" # 10764140302503503867
+  goods_input_organized_data_add_desc: "건물에서 소비되는 @organized_data! 조직화된 데이터의 양" # 16884543336416370551
+  goods_input_business_data_add: "@business_data! 비즈니스 데이터 투입" # 16605807590821847266
+  goods_input_business_data_add_desc: "건물에서 소비되는 @business_data! 비즈니스 데이터의 양" # 5734924618674619123
+  goods_output_aeroplanes_add: "@aeroplanes! 전투기 산출" # 8236150305740765657
+  goods_output_aeroplanes_add_desc: "건물에서 생산되는 @aeroplanes! 전투기의 양" # 16394171012037866353
+  goods_output_civil_planes_add: "@civil_planes! 비행기 산출" # 9304066854854316407
+  goods_output_civil_planes_add_desc: "건물에서 생산되는 @civil_planes! 비행기의 양" # 10681418380058589677
+  goods_output_bauxite_add: "@bauxite! 보크사이트 산출" # 8495590888554005663
+  goods_output_bauxite_add_desc: "건물에서 생산되는 @bauxite! 보크사이트의 양" # 7311896169214123550
+  goods_output_aluminium_add: "@aluminium! 알루미늄 산출" # 1508513655193041279
+  goods_output_aluminium_add_desc: "건물에서 생산되는 @aluminium! 알루미늄의 양" # 12365702265948867915
+  goods_output_plastics_add: "@plastics! 플라스틱 산출" # 11020496555415297293
+  goods_output_plastics_add_desc: "건물에서 생산되는 @plastics! 플라스틱의 양" # 14650557398099312911
+  goods_output_light_fuel_add: "@light_fuel! 경유 생산량" # 2553806952531159186
+  goods_output_light_fuel_add_desc: "건물에서 생산되는 @light_fuel! 경유의 양" # 13257080434237800276
+  goods_output_lubricant_add: "@lubricant! 윤활유 생산량" # 1907005748055094580
+  goods_output_lubricant_add_desc: "건물에서 생산되는 @lubricant! 윤활유의 양" # 16468564855995133287
+  goods_output_heavy_fuel_add: "@heavy_fuel! 중유 생산량" # 11196547588764902325
+  goods_output_heavy_fuel_add_desc: "건물에서 생산되는 @heavy_fuel! 중유의 양" # 14875837784331902284
+  goods_output_copperwires_add: "@copperwires! 전선 생산량" # 597377657027851690
+  goods_output_copperwires_add_desc: "건물에서 생산되는 @copperwires! 전선의 양" # 8463881448676361122
+  goods_output_batteries_add: "@batteries! 배터리 생산량" # 11220532223973871568
+  goods_output_batteries_add_desc: "건물에서 생산되는 @batteries! 배터리의 양" # 10670981070535121803
+  goods_output_electroniccomponents_add: "@electroniccomponents! 전자 부품 생산량" # 1895459522569896886
+  goods_output_electroniccomponents_add_desc: "건물에서 생산되는 @electroniccomponents! 전자 부품의 양" # 7774025106187367693
+  goods_output_processors_add: "@processors! 프로세서 생산량" # 6345543369972806584
+  goods_output_processors_add_desc: "건물에서 생산되는 @processors! 프로세서의 양" # 11958089689027670919
+  goods_output_copper_add: "@copper! 구리 생산량" # 11609303350554923910
+  goods_output_copper_add_desc: "건물에서 생산되는 @copper! 구리의 양" # 2259108146807109872
+  goods_output_commonores_add: "@commonores! 일반 광석 생산량" # 1597084709769612112
+  goods_output_commonores_add_desc: "건물에서 생산되는 @commonores! 일반 광석의 양" # 543005146778694973
+  goods_output_automobiles_add: "@automobiles! 자동차 생산량" # 13554495179275564971
+  goods_output_automobiles_add_desc: "건물에서 생산되는 @automobiles! 자동차의 양" # 13183221688435725830
+  goods_output_advancedores_add: "@advancedores! 고급 광석 생산량" # 5050924357462461459
+  goods_output_advancedores_add_desc: "건물에서 생산되는 @advancedores! 고급 광석의 양" # 1876125432082494845
+  goods_output_homeappliances_add: "@homeappliances! 가전제품 생산량" # 6031162264111814890
+  goods_output_homeappliances_add_desc: "건물에서 생산되는 @homeappliances! 가전제품의 양" # 8511251000434977844
+  goods_output_elgar_music_add: "@elgar_music! 오락 생산량" # 8295683952619230521
+  goods_output_elgar_music_add_desc: "건물에서 생산되는 @elgar_music! 오락의 양" # 3121545219761232216
+  goods_output_elgar_instruments_add: "@elgar_instruments! 악기 생산량" # 17602860159555832105
+  goods_output_elgar_instruments_add_desc: "건물에서 생산되는 @elgar_instruments! 악기의 양" # 18295005390010071467
+  goods_output_air_travel_add: "@air_travel! 항공 여행 생산량" # 10926868173022697131
+  goods_output_air_travel_add_desc: "건물에서 생산되는 @air_travel! 항공 여행의 양" # 17980925926033200879
+  goods_output_alloys_add: "@alloys! 합금 생산량" # 3133506522582261856
+  goods_output_alloys_add_desc: "건물에서 생산되는 @alloys! 합금의 양" # 6477877232716083128
+  goods_output_water_add: "@water! 식수 생산량" # 12231582390501938401
+  goods_output_water_add_desc: "건물에서 생산되는 @water! 식수의 양" # 18380054348745869339
+  goods_output_fuel_cells_add: "@fuel_cells! 연료 전지 생산량" # 6299398774480289344
+  goods_output_fuel_cells_add_desc: "건물에서 생산되는 @fuel_cells! 연료 전지의 양" # 14724161573198989964
+  goods_output_pharmaceuticals_add: "@pharmaceuticals! 의약품 생산량" # 16094422491087518347
+  goods_output_pharmaceuticals_add_desc: "건물에서 생산되는 @pharmaceuticals! 의약품의 양" # 13252586751721540358
+  goods_output_televisions_add: "@televisions! 텔레비전 생산량" # 1586956928318209497
+  goods_output_televisions_add_desc: "건물에서 생산되는 @televisions! 텔레비전의 양" # 7191281813510823730
+  goods_output_computer_add: "@computer! 컴퓨터 생산량" # 2523910114611102685
+  goods_output_computer_add_desc: "건물에서 생산되는 @computer! 컴퓨터의 양" # 229228050781899828
+  goods_output_robotics_add: "@robotics! 로봇 공학 생산량" # 10689630808392775097
+  goods_output_robotics_add_desc: "건물에서 생산되는 @robotics! 로봇 공학의 양" # 2839364675033199204
+  goods_output_good_uranium_add: "@good_uranium! 우라늄 생산량" # 4817575742683033733
+  goods_output_good_uranium_add_desc: "건물에서 생산되는 @good_uranium! 우라늄의 양" # 7240175690423732890
+  goods_output_gas_add: "@gas! 천연가스 생산량" # 8979782211034321904
+  goods_output_gas_add_desc: "건물에서 생산되는 @gas! 천연가스의 양" # 8035106792009792175
+  goods_output_helicopters_add: "@helicopters! 헬리콥터 생산량" # 14668241621232964203
+  goods_output_helicopters_add_desc: "건물에서 생산되는 @helicopters! 헬리콥터의 양" # 99194311546445613
+  goods_output_missiles_add: "@missiles! 미사일 생산량" # 4211430104084789125
+  goods_output_missiles_add_desc: "건물에서 생산되는 @missiles! 미사일의 양" # 15551250295746299621
+  goods_output_space_assets_add: "@space_assets! 우주 자산 생산량" # 11125806852864951350
+  goods_output_space_assets_add_desc: "건물에서 생산되는 @space_assets! 우주 자산의 양" # 4521702251805775923
+  goods_output_raw_data_add: "@raw_data! 원시 데이터 생산량" # 9496046977102635113
+  goods_output_raw_data_add_desc: "건물에서 생산되는 @raw_data! 원시 데이터의 양" # 7822753465294099939
+  goods_output_organized_data_add: "@organized_data! 정리된 데이터 생산량" # 14586507317653852089
+  goods_output_organized_data_add_desc: "건물에서 생산되는 @organized_data! 정리된 데이터의 양" # 7221469881049912238
+  goods_output_business_data_add: "@business_data! 비즈니스 데이터 생산량" # 14446561621041595719
+  goods_output_business_data_add_desc: "건물에서 생산되는 @business_data! 비즈니스 데이터의 양" # 3657020455875445519
+  goods_output_steel_mult: "@steel! 강철 생산" # 10738926290398644906
+  goods_output_steel_mult_desc: "건물에서 생산되는 @steel! 산출량에 대한 보너스 또는 페널티" # 1273209077440460276
+  ai_systems: "인공지능 시스템" # 16042142401714968833
+  goods_output_ai_systems_mult: "@ai_systems! 인공지능 시스템 생산" # 15971181787814561988
+  goods_output_ai_systems_mult_desc: "건물에서 생산되는 @ai_systems! 산출량에 대한 보너스 또는 페널티" # 9061417123878665709
+  goods_input_ai_systems_mult: "@ai_systems! 인공지능 시스템 투입" # 13498318210489616177
+  goods_input_ai_systems_mult_desc: "건물에서 소비되는 @ai_systems! 투입량에 대한 보너스 또는 페널티" # 13518851090246097929
+  goods_input_ai_systems_add: "@ai_systems! 인공지능 시스템 투입" # 1624497318160246437
+  goods_input_ai_systems_add_desc: "건물에서 소비되는 @ai_systems! 인공지능 시스템의 양" # 5888908541179465546
+  goods_output_ai_systems_add: "@ai_systems! 인공지능 시스템 생산" # 3613765368760040554
+  goods_output_ai_systems_add_desc: "건물에서 생산되는 @ai_systems! 인공지능 시스템의 양" # 15498817684165981266
+  androids: "안드로이드" # 17551593034026343252
+  goods_output_androids_mult: "@androids! 안드로이드 생산" # 358338986093492376
+  goods_output_androids_mult_desc: "건물에서 생산되는 @androids! 산출량에 대한 보너스 또는 페널티" # 6856438099384447403
+  goods_input_androids_mult: "@androids! 안드로이드 투입" # 3123524066065377199
+  goods_input_androids_mult_desc: "건물에서 소비되는 @androids! 투입량에 대한 보너스 또는 페널티" # 13901973518973831088
+  goods_input_androids_add: "@androids! 안드로이드 투입" # 16773278876249359426
+  goods_input_androids_add_desc: "건물에서 소비되는 @androids! 안드로이드의 양" # 16570656029436528224
+  goods_output_androids_add: "@androids! 안드로이드 생산" # 2787103560855959202
+  goods_output_androids_add_desc: "건물에서 생산되는 @androids! 안드로이드의 양" # 4708028732682154230
+  goods_input_electricity_mult: "건물 @electricity! 전기 투입량" # 2026858018315618636
+  goods_input_electricity_mult_desc: "건물에서 소비되는 @electricity! 투입량에 대한 보너스 또는 페널티" # 9434040563277309561

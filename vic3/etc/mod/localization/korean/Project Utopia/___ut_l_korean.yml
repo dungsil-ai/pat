@@ -745,6 +745,26 @@
   ut_principle_military_cooperation_1: "군사 조직 1" # 13912877262221687284
   ut_principle_military_cooperation_2: "군사 조직 2" # 6849508799675182913
   ut_principle_military_cooperation_3: "군사 조직 3" # 16177208675687133144
+  ut_je_research_institute_construction_reason: "" # 17241709254077376921
+  je_ut_communist_one_communist_party_desc: "" # 17241709254077376921
+  je_ut_communist_a_communist_party_desc: "" # 17241709254077376921
+  je_ut_communist_one_block_desc: "" # 17241709254077376921
+  je_ut_communist_one_people_desc: "" # 17241709254077376921
+  je_ut_communist_socialist_expansion_desc: "" # 17241709254077376921
+  je_ut_communist_world_revolution_desc: "" # 17241709254077376921
+  ig_trait_urbanist_unhappy_desc: "" # 17241709254077376921
+  law_private_universities_desc: "" # 17241709254077376921
+  law_private_pension_desc: "" # 17241709254077376921
+  law_ut_minimum_wage_desc: "" # 17241709254077376921
+  principle_common_financial_policy_1_desc: "" # 17241709254077376921
+  principle_common_financial_policy_2_desc: "" # 17241709254077376921
+  principle_common_financial_policy_3_desc: "" # 17241709254077376921
+  principle_commissariat_1_desc: "" # 17241709254077376921
+  principle_commissariat_2_desc: "" # 17241709254077376921
+  principle_commissariat_3_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_1_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_2_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_3_desc: "" # 17241709254077376921
   ut_modern_ideological_union_1: "이념 1" # 8483986776986647597
   ut_modern_ideological_union_2: "이념 2" # 15817590249024397657
   ut_modern_ideological_union_3: "이념 3" # 10673623713740788619
@@ -813,6 +833,26 @@
   rare_earths_mining_era_connected_desc: "이온성 액체와 초임계 이산화탄소가 산성 용액을 대체합니다. 녹색 화학은 더 깨끗한 추출을 약속하지만, 에너지 수지가 맞아야 합니다." # 15429902996474560825
   nuclear_power_research: "핵 연구" # 10019683908587750680
   nuclear_power: "원자력" # 2392928761989952497
+  ut_modern_ideological_union_1_desc: "" # 17241709254077376921
+  ut_modern_ideological_union_2_desc: "" # 17241709254077376921
+  ut_modern_ideological_union_3_desc: "" # 17241709254077376921
+  ut_principle_advanced_research_4_desc: "" # 17241709254077376921
+  ut_principle_advanced_research_5_desc: "" # 17241709254077376921
+  ut_principle_advanced_research_6_desc: "" # 17241709254077376921
+  ut_principle_freedom_of_movement_4_desc: "" # 17241709254077376921
+  ut_principle_freedom_of_movement_5_desc: "" # 17241709254077376921
+  ut_principle_freedom_of_movement_6_desc: "" # 17241709254077376921
+  ut_principle_war_industry_4_desc: "" # 17241709254077376921
+  ut_principle_war_industry_5_desc: "" # 17241709254077376921
+  ut_principle_war_industry_6_desc: "" # 17241709254077376921
+  ut_principle_food_standardization_4_desc: "" # 17241709254077376921
+  ut_principle_food_standardization_5_desc: "" # 17241709254077376921
+  ut_principle_food_standardization_6_desc: "" # 17241709254077376921
+  ut_principle_security_bloc_4_desc: "" # 17241709254077376921
+  ut_principle_security_bloc_5_desc: "" # 17241709254077376921
+  ut_principle_security_bloc_6_desc: "" # 17241709254077376921
+  nuclear_power_research_desc: "" # 17241709254077376921
+  nuclear_power_desc: "" # 17241709254077376921
   electronics: "전자공학" # 8906035645440450140
   electronics_desc: "진공관이 라디오에서 지지직거립니다. 게르마늄 트랜지스터부터 양자 칩에 이르기까지—전자를 제어하는 것이 모든 기술 혁명의 원동력입니다." # 9692518090094502286
   computers: "컴퓨터" # 6464724871802620488
@@ -958,7 +998,6 @@
   international_commerce: "국제 상업" # 2641781259374375559
   international_commerce_desc: "국제 상업이란 국경을 넘어선 재화, 용역, 자본의 교환을 의미합니다. 이는 세계 경제 통합을 촉진하고, 전문화를 장려하며, 각국이 더 광범위한 자원과 시장에 접근할 수 있도록 합니다." # 7591116099013667510
   international_stock_exchange: "국제 증권 거래소" # 2652806207033279044
-
   check_payments: "지불 내역 확인" # 14767920842408246181
   check_payments_desc: "도매 거래에서 현금 대신 종이 어음이 사용되기 시작합니다. 수표의 도입은 추적 가능한 지불을 가능하게 하여 금융 중개자로서 은행의 성장을 촉진합니다." # 5718001299252653724
   credit_cards: "신용카드" # 10552585215724664490
@@ -1361,3 +1400,9 @@
   unit_combat_unit_type_task_force_infantry_defense_add_desc: "$combat_unit_type_task_force_infantry$ $unit_defense_add$" # 14541016604280187044
   unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$" # 11979125652057002089
   unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$" # 11979125652057002089
+  ut_modern_planes_desc: "" # 17241709254077376921
+  ut_anti_tank_guided_software_desc: "" # 17241709254077376921
+  ut_military_complex_desc: "" # 17241709254077376921
+  international_stock_exchange_desc: " " # 548583522804720525
+  union_new_mandates_two_tt: "" # 17241709254077376921
+  lgbt_movement_tt: "" # 17241709254077376921

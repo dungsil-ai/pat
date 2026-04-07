@@ -42,3 +42,4 @@
   country_definition_equal: "귀국의 국가 정의는 #v [TARGET_COUNTRY_DEFINITION.GetName]#! (또는 그 상황별 변형 중 하나)입니다." # 16778682010465143153
   scripted_bar_progress_greater_than: "진행도가 $COMPARATOR$ #v $NUM|0v$#! (현재: $CURRENT_VALUE|0v$)" # 4737420364887045681
   country_var_greater_or_equal: "#v 국가 변수#!가 #v $NUM|0v$#!보다 크거나 같습니다" # 8480364017706002574
+  bpm_je_group_concessions: "이권" # 12339571247229132730

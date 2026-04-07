@@ -137,3 +137,5 @@
   bpm_bnap_held_charlottetown_conference_tt: "이미 샬럿타운 회의를 개최했습니다" # 10454083612689857274
   bpm_bnap_has_bpm_canada_dominion_tt: "$je_bpm_bnap_confederation_quest$ [concept_journal_entry]을(를) 완료했습니다." # 5137080872357637644
   bpm_bnap_has_je_west_canada_complete_tt: "$je_west_canada$ [concept_journal_entry]를 완료했습니다." # 12970583090841361725
+  bpm_british_engagement_progress_bar_right: "" # 17241709254077376921
+  bpm_bnap_confederation_events.6.f: "" # 17241709254077376921

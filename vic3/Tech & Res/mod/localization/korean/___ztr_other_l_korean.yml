@@ -69,11 +69,6 @@
   demographic_stage_6: "후기 탈산업 인구 단계" # 14587312571643805995
   demographic_stage_7: "정체된 인구 단계" # 18289595806638711805
   demographic_stage_8: "인구 감소 단계" # 14946610877081019609
-  modern_medicine_0: "19세기 초기 의학" # 7725175886867872128
-  modern_medicine_1: "19세기 후기 의학" # 5160827131655618375
-  modern_medicine_2: "20세기 초 의학" # 1297894440752431987
-  modern_medicine_3: "20세기 중반 의학" # 13241502805352998184
-  modern_medicine_4: "후기 20세기 의학" # 816554555071724663
   combat_unit_type_self_propelled_artillery: "자주포" # 15308249461666024741
   combat_unit_type_self_propelled_artillery_desc: "이동식 받침대에 장착된 대포로, 더 큰 유연성과 신속한 배치가 가능합니다." # 2293583417249847503
   combat_unit_type_rocket_artillery: "로켓 포병" # 15081891605769264607
@@ -101,26 +96,6 @@
   mobilization_option_satellites_support_desc: "위성은 작전 조정을 위해 사용될 수 있는 우주 기반 정찰 시스템입니다." # 6530262384619804674
   mobilization_option_penicillin_medical_support: "페니실린 의료 지원" # 3255916075580922611
   mobilization_option_penicillin_medical_support_desc: "페니실린은 감염을 치료하고 전장에서 생명을 구할 수 있는 강력한 항생제입니다." # 7780820277168222110
-  goods_input_light_fuel_add: "@light_fuel! 경유 투입" # 6216783065568310915
-  goods_input_light_fuel_add_desc: "건물에서 소비되는 @light_fuel! 경량 연료의 양" # 14166640901742137640
-  goods_input_pharmaceuticals_add: "@pharmaceuticals! 의약품 투입" # 6527510816699650899
-  goods_input_pharmaceuticals_add_desc: "건물이 소비하는 @pharmaceuticals! 의약품의 양" # 16489838676503468249
-  goods_input_helicopters_add: "@헬리콥터! 헬리콥터 입력" # 2831530052579150527
-  goods_input_helicopters_add_desc: "건물들의 @helicopters! 헬리콥터 소비량" # 5798783979640028336
-  goods_input_processors_add: "@processors! 가공품 투입물" # 16411711618617499633
-  goods_input_processors_add_desc: "건물들의 @processors! 프로세서 소비량" # 14899103024115035791
-  goods_input_missiles_add: "@missiles! 미사일 입력" # 13473186616256652322
-  goods_input_missiles_add_desc: "@missiles! 건물에서 소비되는 미사일" # 35731834594150191
-  goods_input_good_uranium_add: "@good_uranium! 우라늄 투입량" # 3694036268368242828
-  goods_input_good_uranium_add_desc: "건물들이 소비하는 @good_uranium! 우라늄의 양" # 17391728382152936258
-  goods_input_computer_add: "@computer! 컴퓨터 입력" # 8187064360723492017
-  goods_input_computer_add_desc: "건물이 소비하는 @computer! 컴퓨터의 양" # 13921171100089157568
-  goods_input_electroniccomponents_add: "@electroniccomponents! 전자 부품 투입" # 9918339675582381302
-  goods_input_electroniccomponents_add_desc: "건물이 소모하는 @electroniccomponents! 전기 부품의 양" # 3384994248815078320
-  goods_input_space_assets_add: "@space_assets! 우주 자산 입력" # 17240164378081833602
-  goods_input_space_assets_add_desc: "건물에서 소비되는 @space_assets! 우주 자산의 양" # 2427399388364500334
-  goods_input_water_add: "@water! 물 투입량" # 9716105377853744329
-  goods_input_water_add_desc: "@water! 건물에서 소비되는 물의 양" # 3708515668361857950
   goods_input_telecommunications_add: "@telecommunications! 전기 통신 투입" # 17547414138926758440
   goods_input_telecommunications_add_desc: "건물들이 소비하는 @telecommunications! 통신량" # 10877859509653849249
   goods_input_robotics_add: "@robotics! 로봇 공학 입력" # 708192872807179531
@@ -188,11 +163,9 @@
   dev_2_country: "개발도상국" # 3598241339990793449
   dev_3_country: "준개발국" # 17851174164431074641
   dev_4_country: "개발도상국" # 18048879475046107705
-  dev_5_country: "선진국" # 6845750316031411147
   dev_6_country: "고도 선진국" # 95541061879628258
   dev_7_country: "초선진국" # 5216409013344540310
   dev_8_country: "초선진국" # 3725679349394451189
-  decolonization_liberty_desire_counter_modifier: "탈식민화 규칙 상쇄 없음" # 12341328749240625631
   ztr_superpower: "초강대국" # 11786870363436856141
   ztr_eec_member: "유럽 경제 공동체 회원국" # 3262891299534771546
   ztr_eu_member: "EU 회원국" # 17046844086253143743
@@ -261,3 +234,33 @@
   ztr_merge_power_bloc_diplomacy_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]으로부터 $ztr_merge_power_bloc_diplomacy$를 거절당했습니다." # 137099496714189416
   ztr_similar_type_of_government_tt: "비슷한 [Concept('concept_ideology','$concept_ideology$')]를 가지고 있습니다." # 2794886697244342428
   HOSTILE_NUCLEAR_NEIGHBOUR: "#negative_value 적대적#! 핵 이웃" # 5310339023016893041
+  ztr_wto_member_modifier: "세계무역기구 가입" # 5254548070430521459
+  ztr_wto_member_modifier_desc: "WTO 체제 가입은 무역 장벽을 낮추고 국제 시장에 대한 접근성을 향상합니다." # 4985197518550478241
+  ztr_icc_member_modifier: "국제형사재판소 관할권" # 17663522790870974154
+  ztr_icc_member_modifier_desc: "ICC 체제는 회원국에 일정한 법적 및 외교적 제약을 부과합니다." # 9820163783968706052
+  ztr_icc_investigation_modifier: "국제형사재판소 조사" # 14011800191737682518
+  ztr_icc_investigation_modifier_desc: "국제 검찰이 우리의 행위를 면밀히 조사하고 있어, 위신이 실추되고 국내 정통성이 약화하고 있습니다." # 17104037238301825375
+  ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
+  ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
+  goods_input_robotics_add_desc: "건물에서 소비하는 @robotics! 로봇공학의 양" # 16017692447615509263
+  dev_5_country: "@developed_country! [Concept('concept_developed_country','$concept_developed_country$')]" # 13263365627715018846
+  imf_modernization_research_bonus_modifier: "지속적인 근대화" # 15495412835571883962
+  imf_modernization_research_bonus_modifier_desc: "IMF 근대화 목표를 달성함에 따라, 우리의 더 강력한 제도와 더 넓은 교육 기반이 이제 국가 연구를 가속합니다." # 7401326234138901467
+  extreme_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  big_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  medium_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  small_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  tiny_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  land_reclamation_struggle_modifier: "간척 사업의 투쟁" # 17326798404457842216
+  geographic_region_oceania: "오세아니아" # 77874904389657804
+  modern_medicine_0: "19세기 초 복지" # 5751458070186196927
+  modern_medicine_1: "19세기 후반 복지" # 135381448794086416
+  modern_medicine_2: "20세기 초반 복지" # 4483400645717160092
+  modern_medicine_3: "20세기 중반 복지" # 15001341120159964167
+  modern_medicine_4: "20세기 후반 복지" # 15405211453650442447
+  ztr_intelligentsia_happy_modifier: "지식인층 행복" # 5207861585624766592
+  ztr_intelligentsia_unhappy_modifier: "지식인층 불행" # 1121835563010389946
+  ztr_ccp_repression_campaign: "반공 포위망" # 17155761170804987142
+  ztr_ccp_mass_line_campaign: "공산주의 대중 노선" # 13142328998336719798
+  ztr_ccp_united_front_campaign: "항일민족통일전선" # 15860789598692665030
+  ztr_ccp_long_march_legacy: "대장정" # 12655507841875296042

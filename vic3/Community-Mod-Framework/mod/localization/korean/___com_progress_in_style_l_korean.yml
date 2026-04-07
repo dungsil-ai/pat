@@ -19,3 +19,15 @@
   com_spb_gold_marker: "금색 표식" # 262410143300414871
   com_spb_gold_bar: "금괴" # 70929425851399343
   com_spb_white_line: "백선" # 384780289634405316
+  spb_com_progress_in_style_right_desc: "" # 17241709254077376921
+  sb_com_progress_in_style_test5: "주기 막대 단계 수" # 1893709088380312927
+  sb_com_progress_in_style_test6: "단계 강조 표시 전환" # 10720214545596310654
+  sb_com_progress_in_style_test5_tt: "단계 수를 다음으로 변경" # 14957916407941501284
+  sb_com_progress_in_style_test_tt3: "현재 막대 단계 강조" # 17424088374725406567
+  sb_com_progress_in_style_test_tt4: "강조 중지" # 1942195538998469220
+  sb_com_progress_in_style_test6_tt: "현재 막대 단계를 강조 중입니다" # 15630583858040813711
+  sb_com_progress_in_style_test6_tt2: "현재 막대 단계를 강조하지 않는 중입니다" # 17419944343821593757
+  com_progress_bar_levels_3: "3" # 2744517546871237796
+  com_progress_bar_levels_4: "4" # 10464417414901951369
+  com_progress_bar_levels_5: "5" # 7674613650421074157
+  com_progress_bar_levels_clear: "없음" # 640747180730880794
