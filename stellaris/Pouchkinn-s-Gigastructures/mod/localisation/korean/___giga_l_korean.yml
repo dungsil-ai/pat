@@ -196,8 +196,6 @@
   name_hyperstructural_ass: "초구조 조립소" # 6543726656388561905
   allow_hyperstructural_ass: "§H거대 구조물: 잠금 해제§! $name_hyperstructural_ass$" # 81845750279125874
   desc_hyperstructural_ass: "시스템의 별 주변에 건설된 거대한 조선소입니다. 조선소 슬롯 90개를 제공하며 함대 한계치를 1500 증가시킵니다." # 11614760759378671896
-  name_orb_bastion: "궤도 요새" # 3638379127453498591
-  allow_orb_bastion: "§H거대 구조물 잠금 해제:§! $name_orb_bastion$" # 13726475464808089807
   name_planetary_seeder_nexus: "행성 파종 연결체" # 1280342807233996358
   allow_planetary_seeder_nexus: "§H거대 구조물 잠금 해제:§! $name_planetary_seeder_nexus$" # 1280035034925870411
   desc_planetary_seeder_nexus: "생명 없는 행성에서 발견되는 흩어진 유기 화합물을 식용 물질로 재처리할 수 있는 다양한 유사 생체 자동 장치를 생산하는 궤도 생체공학 시설." # 3534468919815357282
@@ -217,7 +215,6 @@
   requires_behemoth_planetcraft_1_moon_2: "$TRIGGER_FAIL$ 이 시스템크래프트 업그레이드에는 시스템 내에 1개의 $name_war_planet$와 2개의 $name_war_moon$s가 존재해야 합니다." # 10972546625219270624
   requires_behemoth_planetcraft_2: "$TRIGGER_FAIL$이 시스템크래프트 업그레이드는 성계 내에 $name_war_planet$ 2개가 존재해야 합니다." # 16758507928688108535
   requires_behemoth_planetcraft_1_moon_1: "$TRIGGER_FAIL$이 시스템크래프트 업그레이드는 성계 내에 1개의 $name_war_planet$와 1개의 $name_war_moon$이 존재해야 합니다." # 3928349261540543626
-  requires_systemcraft_crew: "$TRIGGER_FAIL$승무원으로 복무할 팝 40개를 결정(decision)을 통해 획득해야 합니다." # 15270650471609761880
   requires_base_ringworld: "$TRIGGER_FAIL$항성 주위에 일반 링 월드가 먼저 있어야 합니다." # 7452619105028625292
   requires_base_ringworld_one: "$TRIGGER_FAIL$ 항성 주위에 먼저 $name_ringworld_titanic$이 필요합니다." # 11662486258822698988
   requires_base_ringworld_two: "$TRIGGER_FAIL$ 먼저 항성 주변에 $name_ringworld_behemoth$가 필요합니다." # 8047763783574522117
@@ -231,11 +228,8 @@
   requires_larger_star: "$TRIGGER_FAIL$이 항성은 너무 작습니다." # 15299193704797809453
   requires_smaller_planet: "$TRIGGER_FAIL$이 행성은 우리의 $name_ndb$(이)가 아무런 효과를 보기에는 너무나도 큰 행성입니다." # 17664796904335186672
   requires_smaller_than_25: "$TRIGGER_FAIL$크기 25 이하의 행성에 건설할 수 없습니다." # 17991399557668920399
-  requires_no_more_than_15: "$TRIGGER_FAIL$$name_orb_bastion$은 15개 이상 가질 수 없습니다." # 1321581677751055183
   requires_no_more_than_10: "$TRIGGER_FAIL$$name_quasistellar$은(는) 동시에 최대 10개의 행성까지만 대상으로 지정할 수 있습니다." # 17891755358826665895
-  requires_no_more_than_6: "$TRIGGER_FAIL$군사 행정 지부를 6개 초과할 수 없습니다" # 13410118440403757280
   requires_no_more_than_4: "$TRIGGER_FAIL$$name_quasistellar$는 동시에 최대 4개의 항성계만을 조준할 수 있습니다." # 14724411902972049820
-  requires_no_more_than_3: "$TRIGGER_FAIL$제독 작전은 3개 이상 보유할 수 없습니다." # 5574467198942268404
   requires_no_existing_quasistellar: "$TRIGGER_FAIL$도대체 두 번째 것은 어디에 쓰려는 겁니까?" # 17300126773222038874
   requires_no_existing_target_marker_qso: "$TRIGGER_FAIL$이 천체는 이미 $name_quasistellar$에 의해 표적이 되었습니다." # 2240264271233441412
   requires_no_existing_birch: "$TRIGGER_FAIL$$name_birch$는 하나만 건설할 수 있습니다." # 14249055552342145561
@@ -245,8 +239,6 @@
   requires_standard_planet_class: "$TRIGGER_FAIL$비표준 항성 등급 주변에는 건설할 수 없습니다." # 2511959425714723564
   requires_not_asteroid: "$TRIGGER_FAIL$소행성 주위에는 건설 불가." # 2065379715854087188
   requires_no_colonized_planets: "$TRIGGER_FAIL$식민지화된 행성이 있는 성계에서는 건설할 수 없습니다." # 8290597645120259843
-  requires_no_quasar_menu_active: "$TRIGGER_FAIL$QS-절멸기 제어판은 이미 열려 있습니다." # 8928856380416672941
-  requires_no_war_in_heaven: "$TRIGGER_FAIL$천상의 전쟁이 진행되는 동안 QS-오블리터레이터는 건설하거나 사용할 수 없습니다." # 11666768898002237770
   requires_no_contingency: "$TRIGGER_FAIL$이 컨틴전시 행성은 $name_ndb$의 조준 시스템을 방해하는 신호를 방출합니다. 조준할 수 없습니다." # 15934091177077233876
   requires_no_quberine: "$TRIGGER_FAIL$이 구조물은 큐버린으로 구성되어 있습니다. 기묘한 특성이 구조물의 극도로 발전된 전자 장치와 결합되어, 에너지 빔을 그대로 반사해낼 것입니다!" # 12495006392787605592
   requires_no_hostiles: "$TRIGGER_FAIL$성계 안에 적대적인 함선이 없어야 합니다." # 9838680661414633482
@@ -329,13 +321,11 @@
   ehof_megastructure_activate_owner: "$TRIGGER_FAIL$성계에 소유한 함대가 없다면 $ehof_ehof$를 활성화할 수 없습니다." # 12474303217918732267
   ehof_megastructure_activate_noupgrade: "$TRIGGER_FAIL$이 성계에 업그레이드 중인 함선이 있는 경우 $ehof_ehof$을 활성화할 수 없습니다." # 3702778610313466627
   BYPASS_DESC_INACTIVE_CREATORGATE: "$PGATE_GALACTIC$을 업그레이드하여 활성화해야 합니다." # 5099116527701936106
-  count_owned_megastructure_trigger: "소유한 메가구조물의 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 16076319818007945946
   count_system_megastructure_trigger: "성계 거대 구조물 개수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 14626524701768316693
   count_megastructure_trigger: "초구조체 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 12606251286605706027
   count_owned_pop_trigger: "소유한 팝 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 7998435882307355135
   paluushia_no_ai_observation: "$TRIGGER_FAIL$AI는 팔루시아를 관측해서는 안 된다는 것을 이해하지 못한다." # 831316697114774535
   giga_news_title: "모드 소식 & 최신 변경점" # 5100355015266279083
-  giga_news_log: "§B------------------------ 2025년 11월 9일 ----------------------------§!\n§H모드 버전, 3.35.2, 제작자 Tempest, xahkarias 및 dodosman§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n§Y마지노 월드 재활성화§!\n버그 수정 다수와 함께 마지노 월드가 돌아왔습니다.\n\n§B------------------------ 2025년 9월 25일 ----------------------------§!\n§H모드 버전, 3.35.0 - 'SPARBLERONI PIZZA' 제작자 Elowiny§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n§Y알더슨 디스크 개편§!\n거대한 4구역 지구를 갖춘 알더슨 디스크가 돌아왔습니다!\n\n§Y벌크 물질 개편§!\n대형 메가스트럭처는 이제 행성에서 채취한 벌크 물질을 필요로 합니다. 해체 작업을 시작하세요!\n\n§Y행성 시더 넥서스§!\n가스 거성을 중심으로 건설되며 시스템 전체에 식량 매장량을 생성합니다! 레딧 사용자 markjsno1의 제안입니다(r/Stellaris).\n\n§B------------------------ 2025년 9월 22일 ----------------------------§!\n§H모드 버전, 3.34.3 제작자 Elowiny§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n버전 3.34.3은 행성 뷰 및 탱크바운드와의 호환성을 4.1로 업데이트했습니다. 누락된 문제는 디스코드에 보고해 주세요!\n\n§B--------------------------- 2025년 6월 16일 ---------------------------------§!\n§H모드 버전, 3.34 제작자 TTFTCUTS, PIECAT & Elowiny§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n버전 3.34.1에서 마침내 §Y카첸아르티히 제국§!이 다시 활성화되었으며, 수많은 다른 버그 수정 사항도 포함되었습니다!\n\n§B---------------------------- 2025년 5월 6일 ----------------------------------§!\n§H모드 버전, 3.34 제작자 Elowiny & TTFTCUTS§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n버전 3.34는 §Y4.0§!과의 §Y부분적 호환성§!을 제공합니다!! 하지만 일부 모드 구성 요소들은 수정 작업이 진행되는 동안 비활성화 상태로 유지됩니다. 여기에는 §Y프레임월드§!, §Y궤도 엘리시움§!, §Y알더슨 디스크§!, §Y소행성 산업§!, §Y마트료시카 브레인 VR§! (보상을 위해 M.B. 산출량 두 배 증가), §Y링월드 변형§!, §Y성간 거주지§!, §Y카첸아르티히 제국§!, §Y시레날리아§! 및 §Y버치 월드§!의 전체 기능(여전히 사용 가능하지만 단순화됨)이 포함됩니다. 향후 며칠 및 몇 주에 걸쳐 점진적으로 복구될 §Y핫픽스§!를 예상해 주세요!\n\n§B---------------------------- 2025년 4월 3일 ----------------------------------§!\n§H모드 버전, 3.33 제작자 PIECAT, Tempest, Elowiny & TTFTCUTS§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n버전 3.33은 §YB.I.G. 배양기§! 개편, 더 쉬워진 새로운 §Y알파 에테르눔§! 난이도, 메뉴 §Y개편§!, 수많은 QoL 수정, 그리고 메뉴 이전의 새로운 §Y설정§! 선택 화면을 제공합니다!\n\n§Y새로운 설정 선택 메뉴에 대한 피드백이 있다면 반드시 디스코드에 남겨주세요!§!\n\n§B--------------------------- 2025년 1월 2일 -------------------------------§!\n§H모드 버전, 3.32.3 제작자 PIECAT & Tempest§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n버전 3.32.3은 꼭 필요했던 수많은 수정 사항과 더불어, 프리셋 공간이 부족해져서 프리셋을 위한 두 번째 페이지가 추가되었습니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n마침내 §Y블로캇 초상화§!, §YPaluush 초상화§!, 그리고 §Y카첸 초상화§! 하위/단독 모드를 3.14로 업데이트했습니다! 이 모든 것은 §YElowiny의 모드§! 컬렉션을 통해 워크샵에서 확인하실 수 있습니다.\n\n§B-------------------------- 2024년 11월 20일 -----------------------------§!\n§H모드 버전, 3.32 제작자 PIECAT§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n§Y거대대기 안정기§!\n가스 지구를 개편하여 행성의 기술자들에게 이국적인 가스 산출량을 제공하는 강력한 통치자 직업을 제공하도록 변경되었습니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n§H모드 버전 3.32 - '승리의 귀환을 알리는 음악을 틀어라'§!\n§G전체/상세 패치노트는 디스코드에서 확인하세요.§!\n\n§Y초거대 E.H.O.F.§!\n비활성 코어를 중심으로 건설되며 함대 이동성에 막대한 버프를 제공합니다.\n\n§Y테라포밍 메가스트럭처 개편§!\n이제 단일 부지에서 건설되며, 스스로 테라포밍하는 대신 기존의 테라포밍 방식을 통해 행성 테라포밍을 활성화합니다.\n\n§Y스트립마인/S.U.C.C./메가보어 개편§!\n더 이상 고갈되지 않으며, 대신 해당 행성에 입자/가스/결정 매장량을 생성하고 강화합니다.\n\n§Y14개의 새로운 표본§!\n주로 이벤트 및 위기와 관련이 있습니다. 모두 찾을 수 있을까요?\n\n§Y승천 특성 통합§!\n알더슨 디스크는 더 이상 특성을 요구하지 않으며, 시스템 크래프트 특성은 천체 조립 특성과 통합되었습니다.\n\n§YKATZENARTIG IMPERIUM 기본 비활성화§!\n황제가 준비되지 않은 플레이어에게 얼마나 방해가 될 수 있는지 고려하여, 기본적으로 비활성화하기로 결정했습니다." # 6723725450995420698
   BLOKKAT: "블로캇" # 6796010452648272606
   giga_menu.101.name: "기가스트럭처" # 14328256144094145279
   giga_menu.101.desc: "기간스트럭처 모드의 버전 변경이 감지되어 메뉴가 변경됨에 따라 모든 최대 한도가 초기화되었습니다. 반복 퀘스트 진행도의 손실에 대해 양해 부탁드립니다.\n\n메뉴에서 새로운 최대 한도 설정을 선택해 주십시오." # 5979683285377015292
@@ -345,7 +335,6 @@
   giga_menu.2.confirm.tooltip: "현재 설정을 확인하십시오. '설정 확인' 버튼을 눌러 확인하십시오." # 17871715522576945977
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
-  giga_menu.1.desc: "v 3.35.2" # 4846391086853548275
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -446,7 +435,6 @@
   giga_menu.nidavellir: "[root.giga_chk_nidavellir]" # 5656318011052746445
   giga_menu.orbital_arcologies: "[root.giga_chk_orbital_arcologies]" # 4579374894384662857
   giga_menu.orbital_artificial_eco: "[root.giga_chk_orbital_artificial_eco]" # 12951270383917768979
-  giga_menu.academy: "[root.giga_chk_academy]" # 913139226232665593
   giga_menu.penrose_sphere: "[root.giga_chk_penrose_sphere]" # 11294113437538165887
   giga_menu.planetary_computer: "[root.giga_chk_planetary_computer]" # 8867156113004885543
   giga_menu.psychic_beacon: "[root.giga_chk_psychic_beacon]" # 3196852199868951822
@@ -480,7 +468,6 @@
   giga_menu.2.name: "현재 선택된 설정입니다. 모든 것이 괜찮아 보이면 설정 확인 버튼을 누르십시오." # 14262222844772715083
   giga_menu.2.desc: "$giga_menu.2.name$\n\n§E게임 시작 설정§!\n[root.giga_setting_fe_planetcrafts]\n[root.giga_setting_fed]\n[root.giga_setting_achievements]\n\n§E은하 중심 설정§!\n[root.giga_setting_aeternum]\n[root.giga_setting_core]\n\n§E사건의 지평선 오프셋 시설§!\n$giga_menu.ehof$\n[root.giga_setting_ehof_ai]\n\n§E화합물§!\n[root.giga_setting_compound]\n\n§E카첸 제국§!\n$giga_menu.katzen$\n$giga_menu.katzen_portraits$\n\n§E메가스트럭처 설정§!\n[root.giga_setting_build_cap]\n[root.giga_setting_scaling_dyson]\n[root.giga_setting_scaling_lifter]\n[root.giga_setting_scaling_brain]\n[root.giga_setting_influence]\n[root.giga_setting_habitats]\n\n§E블로캇츠§!\n$giga_menu.blokkats$\n$giga_menu.blokkats_date$\n$giga_menu.blokkats_portraits$\n$giga_menu.blokkats_guarantee$" # 13626140455240164399
   giga_menu.3.desc: "§E기본 메가스트럭처§!\n$giga_menu.vanilla_dyson$\n$giga_menu.vanilla_interstellar$\n$giga_menu.vanilla_matter$\n$giga_menu.vanilla_art$\n$giga_menu.vanilla_shipyard$\n$giga_menu.vanilla_ringworld$\n$giga_menu.vanilla_nexus$\n$giga_menu.vanilla_array$\n$giga_menu.vanilla_strategic$\n\n§E링월드 옵션§!\n$giga_menu.ringworlds$\n$giga_menu.cityring$\n$giga_menu.hivering$\n$giga_menu.machinering$\n$giga_menu.upgrade$\n\n§E기가스트럭처§!\n$giga_menu.alderson$\n$giga_menu.asteroid_manufactory$\n$giga_menu.terraform_toxic$\n$giga_menu.drill$\n$giga_menu.warmoon$\n$giga_menu.warplanet$\n$giga_menu.birch$\n$giga_menu.crystal$\n$giga_menu.terraform_barren$\n$giga_menu.shipyard$\n$giga_menu.suppressor$\n$giga_menu.geothermal$\n$giga_menu.glue$\n$giga_menu.hraemc$\n$giga_menu.hyperstructural_ass$\n$giga_menu.stellarhabitat$\n$giga_menu.kugel$\n$giga_menu.disco_moon$\n$giga_menu.terraform_gasgiant$" # 10090328264695397899
-  giga_menu.4.desc: "$giga_menu.megabase$\n$giga_menu.matrioshka_brain$\n$giga_menu.gigaforge$\n$giga_menu.ndb$\n$giga_menu.nidavellir$\n$giga_menu.orbital_arcologies$\n$giga_menu.orbital_artificial_eco$\n$giga_menu.academy$\n$giga_menu.penrose_sphere$\n$giga_menu.planetary_computer$\n$giga_menu.psychic_beacon$\n$giga_menu.siphon$\n$giga_menu.quasistellar$\n$giga_menu.supermassive_ehof$\n$giga_menu.lifters$\n$giga_menu.storm_observatory$\n$giga_menu.systemcraft$\n$giga_menu.compressor$\n$giga_menu.succ$\n$giga_menu.virtual_reality$\n$giga_menu.the_vat$\n$giga_menu.orchid$\n$giga_menu.maginot$\n$giga_menu.planetaryshipyard$\n$giga_menu.planetary_seeder_nexus$"
   giga_chk_fe_planetcrafts_0: "£menu_fe_planetcrafts_0£§RFallen Empire Celestials: §B없음§!" # 3513712216372731405
   giga_chk_fe_planetcrafts_1: "£menu_fe_planetcrafts_1£§GFallen Empire Celestials: §GREGULAR§!" # 11221908132566709964
   giga_chk_fe_planetcrafts_2: "£menu_fe_planetcrafts_2£§GFallen Empire Celestials: §Y높음§!" # 5619891045949575790
@@ -802,12 +789,6 @@
   giga_orbital_artificial_eco_r: "£menu_r£§B$name_orbital_artificial_eco$§!" # 4369277179664631396
   giga_orbital_artificial_eco_u: "£menu_u£§M$name_orbital_artificial_eco$§!" # 17286337732021359022
   giga_orbital_artificial_eco_disabled: "£menu_disabled£§R궤도 인공 생태계§!" # 10025277503868114204
-  giga_academy_1: "£menu_1£§H$name_orb_bastion$§!" # 11680692191101386639
-  giga_academy_2: "£menu_2£§Y$name_orb_bastion$§!" # 18399152106082088132
-  giga_academy_3: "£menu_3£§G$name_orb_bastion$§!" # 582064354571662862
-  giga_academy_r: "£menu_r£§B$name_orb_bastion$§!" # 11711725728339738682
-  giga_academy_u: "£menu_u£§M$name_orb_bastion$§!" # 9595374919110924902
-  giga_academy_disabled: "£menu_disabled£§R$name_orb_bastion$§!" # 10034936078893272989
   giga_penrose_sphere_1: "£menu_1£§H$name_penrose$§!" # 5588171521755154004
   giga_penrose_sphere_2: "£menu_2£§Y$name_penrose$§!" # 5536777090922988251
   giga_penrose_sphere_3: "£menu_3£§G$name_penrose$§!" # 11671242888571444517
@@ -1509,9 +1490,29 @@
   giga_massive_planet_cap: "전투 위성" # 6371887290380913955
   giga_planet_behemoth: "$name_war_planet$" # 8615688336847294459
   giga_planet_behemoth_plural: "$name_war_planet$들" # 17850681974757548471
+  giga_planet_behemoth_cap: "$giga_planet_behemoth$" # 214349657996452214
   giga_planet_behemoth_fe: "고대 $name_war_planet$" # 10837620686614496979
   giga_planet_behemoth_fe_plural: "고대 $name_war_planet$ 행성들" # 13071236191469470678
-  giga_planet_behemoth_cap: "$giga_planet_behemoth$" # 214349657996452214
+  name_orb_naval_logistics: "궤도 해군 군수 사무소" # 2607947317624478285
+  allow_orb_naval_logistics: "§H메가구조물 잠금 해제:§! $name_orb_naval_logistics$" # 1180805937636851808
+  requires_systemcraft_crew: "$TRIGGER_FAIL$승무원으로 복무할 4,000명의 팝을 결정을 통해 확보해야 합니다." # 6035836386706570160
+  requires_no_quasar_menu_active: "$TRIGGER_FAIL$Q.S.O 제어판이 이미 열려 있습니다." # 456929413294447832
+  requires_no_war_in_heaven: "$TRIGGER_FAIL$천상의 전쟁이 진행 중일 때는 Q.S.O를 건설하거나 사용할 수 없습니다." # 3108829649731058803
+  count_owned_megastructure_trigger: "" # 17241709254077376921
+  giga_news_log: "§B----------------------------- 2026년 4월 1일 ---------------------------------§!\n§H모드 버전 3.36.3, 제작: Caramel, Tempest, Xahkarias & PIECAT§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YSirenalia§! 위기가 마침내 수정되었습니다! 이제 §YArcade§! 프리셋에서 기본적으로 활성화되며, §Y다음 주§! 동안은 §YGigas Experience§! 프리셋에서도 활성화됩니다. 물론 수많은 수정 사항도 포함되어 있습니다.\n\n§B--------------------------- 2026년 3월 18일 -------------------------------§!\n§H모드 버전 3.36.2, 제작: Tempest, Xahkarias, PIECAT & TTFTCUTS§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n모드가 §Y4.3§! 버전으로 업데이트되었습니다. 수많은 밸런스 조정과 함께 Tempest가 작업한 §YQuasi-Stellar Obliterator§! 및 §YOrbital Bastion§!(현재 §YOrbital Naval Logistics Office§!로 명칭 변경)의 리워크가 포함되었습니다.\n\n§B--------------------------- 2026년 1월 18일 -------------------------------§!\n§H모드 버전 3.36.1, 제작: TTFTCUTS, Xahkarias & Dodosman§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YMatrioskha Brain Uplinks§!와 §YSquareworld§!가 4.0으로 업데이트되었습니다! Tankbound에 대한 중요한 수정을 포함하여 수많은 기타 수정 사항이 적용되었습니다.\n\n§B--------------------------- 2026년 1월 1일 -------------------------------§!\n§H모드 버전 3.36.0 - 'PONDERING THE ORB', 제작: TTFTCUTS, dodomans & Xahkarias§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n§YREVAMPED BIRCH WORLD§!\nBirch World가 4.0+ 표준으로 업데이트되었습니다! Insulae와 Sectors가 개선된 UI와 지구 전문화 기능을 갖추고 돌아왔습니다. Aiondia 또한 이 설계를 활용하도록 업데이트되어 Aeternum을 보다 최근의 Birch 시스템과 더 밀접하게 통합했습니다. 물론 다양한 기타 수정 사항도 포함되었습니다.\n§B-------------------------- 2025년 11월 9일 ------------------------------§!\n\n§H모드 버전 3.35.2, 제작: Tempest, Xahkarias 및 dodosman§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YRE-ENABLED MAGINOT WORLDS§!\nMaginot World가 수많은 버그 수정과 함께 돌아왔습니다.\n\n§B------------------------ 2025년 9월 25일 ----------------------------§!\n§H모드 버전 3.35.0 - 'SPARBLERONI PIZZA', 제작: Elowiny§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YREWORKED ALDERSON DISK.§!\nAlderson Disk가 거대한 4구역 지구와 함께 돌아왔습니다!\n\n§YBULK MATTER REWORK§!\n이제 대형 거대 구조물은 행성에서 채굴한 Bulk Matter가 필요합니다. 해체를 시작하십시오!\n\n§YPLANETARY SEEDER NEXUS§!\n가스 거성 주위에 건설되며 성계 전체에 식량 매장지를 생성합니다! 레딧 사용자 markjsno1(r/Stellaris)의 제안입니다.\n\n§B------------------------ 2025년 9월 22일 ----------------------------§!\n§H모드 버전 3.34.3, 제작: Elowiny§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n버전 3.34.3은 행성 뷰 및 Tankbound에 대한 4.1 버전 호환성을 제공합니다. 놓친 문제가 있다면 디스코드에 제보해 주십시오!\n\n§B--------------------------- 2025년 6월 16일 ---------------------------------§!\n§H모드 버전 3.34, 제작: TTFTCUTS, PIECAT & Elowiny§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n버전 3.34.1에서 마침내 §YKatzenartig Imperium§!이 다시 활성화되었으며, 그 외에도 수많은 버그가 수정되었습니다!\n\n§B---------------------------- 2025년 5월 6일 ----------------------------------§!\n§H모드 버전 3.34, 제작: Elowiny & TTFTCUTS§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n버전 3.34는 §Y4.0§!과의 §Y부분적 호환성§!을 제공합니다! 하지만 수정 작업이 진행되는 동안 일부 기능은 비활성화 상태로 유지됩니다. 여기에는 §YFrameworld§!, §YOrbital Elysium§!, §YAlderson Disk§!, §YAsteroid Industry§!, §YMatrioskha Brain VR§!(보상을 위해 M.B. 출력 2배 증가), §YRingworld Variants§!, §YInterstellar Habitat§!, §YKatzenartig Imperium§!, §YSirenalia§! 및 §YBirch World§!의 전체 범위(여전히 사용 가능하지만 단순화됨)가 포함됩니다. 향후 며칠 또는 몇 주에 걸쳐 이 기능들을 순차적으로 복구하는 §Y핫픽스§!를 기대해 주십시오!\n\n§B---------------------------- 2025년 4월 3일 ----------------------------------§!\n§H모드 버전 3.33, 제작: PIECAT, Tempest, Elowiny & TTFTCUTS§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n버전 3.33은 §YB.I.G. Vat§! 리워크, 새로운 더 쉬운 §YAlpha Aeternum§! 난이도, 메뉴 §Y리워크§!, 수많은 편의성 개선, 그리고 메뉴 이전에 나타나는 새로운 §YConfiguration§! 선택 화면을 제공합니다!\n\n§Y새로운 구성 선택 메뉴에 대한 피드백이 있다면 디스코드에 남겨주십시오!§!\n\n§B--------------------------- 2025년 1월 2일 -------------------------------§!\n§H모드 버전 3.32.3, 제작: PIECAT & Tempest§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n버전 3.32.3은 꼭 필요한 수많은 수정 사항과 함께, 공간 부족으로 인해 프리셋을 위한 두 번째 페이지를 추가했습니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n마침내 §YBlokkat Portraits§!, §YPaluush Portraits§! 및 §YKatzen Portraits§! 서브/독립형 모드를 3.14 버전으로 업데이트했습니다! §YElowiny's Mods§! 컬렉션을 통해 워크숍에서 모두 확인하실 수 있습니다.\n\n§B-------------------------- 2024년 11월 20일 -----------------------------§!\n§H모드 버전 3.32, 제작: PIECAT§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YMACROATMOSPHERIC STABILIZER§!\n가스 지구를 리워크하여 행성의 기술자들에게 이국적 가스 생산량을 제공하는 강력한 통치자 직업을 제공합니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n§H모드 버전 3.32 - 'CUE THE TRIUMPHANT RETURN'§!\n§G전체/상세 패치 노트는 디스코드를 참조하십시오.§!\n\n§YTHE SUPERMASSIVE E.H.O.F.§!\n비활성 코어 주위에 건설되며 함대 기동성에 엄청난 버프를 제공합니다.\n\n§YREWORKED TERRAFORMING MEGASTRUCTURES§!\n이제 단일 부지에서 건설되며, 스스로 테라포밍하는 대신 일반적인 테라포밍을 통해 행성을 테라포밍할 수 있게 합니다.\n\n§YREWORKED STRIPMINE/S.U.C.C./MEGABORE§!\n더 이상 고갈되지 않으며, 대신 행성의 희귀 자원(Mote/Gas/Crystal) 매장지를 생성하고 강화합니다.\n\n§Y14 NEW SPECIMENS§!\n대부분 이벤트 및 위기와 관련되어 있습니다. 모두 찾을 수 있을까요?\n\n§YASCENSION PERKS MERGED§!\nAlderson Disk는 더 이상 승천 특전이 필요하지 않으며, Systemcraft 특전은 Celestial Assembly 특전과 통합되었습니다.\n\n§YKATZENARTIG IMPERIUM DISABLED BY DEFAULT§!\n준비되지 않은 플레이어에게 카이저가 얼마나 혼란을 줄 수 있는지 고려하여, 기본적으로 비활성화하기로 결정했습니다." # 7440453699321594433
+  giga_menu.1.name: "" # 17241709254077376921
+  giga_menu.1.desc: "v 3.36.3" # 17854572131190981687
+  giga_menu.orbital_naval_logistics: "[root.giga_chk_orbital_naval_logistics]" # 7298958048502967026
+  giga_menu.4.desc: "$giga_menu.megabase$\n$giga_menu.matrioshka_brain$\n$giga_menu.gigaforge$\n$giga_menu.ndb$\n$giga_menu.nidavellir$\n$giga_menu.orbital_arcologies$\n$giga_menu.orbital_artificial_eco$\n$giga_menu.orbital_naval_logistics$\n$giga_menu.penrose_sphere$\n$giga_menu.planetary_computer$\n$giga_menu.psychic_beacon$\n$giga_menu.siphon$\n$giga_menu.quasistellar$\n$giga_menu.supermassive_ehof$\n$giga_menu.lifters$\n$giga_menu.storm_observatory$\n$giga_menu.systemcraft$\n$giga_menu.compressor$\n$giga_menu.succ$\n$giga_menu.virtual_reality$\n$giga_menu.the_vat$\n$giga_menu.orchid$\n$giga_menu.maginot$\n$giga_menu.planetaryshipyard$\n$giga_menu.planetary_seeder_nexus$" # 11560026665676159624
+  giga_orbital_naval_logistics_1: "£menu_1£§H$name_orb_naval_logistics$§!" # 9901157271486348088
+  giga_orbital_naval_logistics_2: "£menu_2£§Y$name_orb_naval_logistics$§!" # 3548225137404481293
+  giga_orbital_naval_logistics_3: "£menu_3£§G$name_orb_naval_logistics$§!" # 3272346056723502430
+  giga_orbital_naval_logistics_r: "£menu_r£§B$name_orb_naval_logistics$§!" # 4210648524088870095
+  giga_orbital_naval_logistics_u: "£menu_u£§M$name_orb_naval_logistics$§!" # 13720033626805966337
+  giga_orbital_naval_logistics_disabled: "£menu_disabled£§R$name_orb_naval_logistics$§!" # 9896133671462482460
+  giga_menu_presets_patreon_45: "후원자: §MBlue Lobster§!" # 4491881971796024187
+  giga_menu_presets_patreon_46: "후원자: §Mabbreviatedcheese§!" # 15129235001858940938
+  giga_planet_behemoth_fe_cap: "고대 $name_war_planet$" # 10837620686614496979
   giga_systemcraft: "$name_war_system$" # 13122299119511565625
   giga_systemcraft_plural: "$name_war_system$들" # 3463753323009957381
   giga_systemcraft_cap: "$giga_systemcraft$" # 3771108497012201623
@@ -1566,8 +1567,6 @@
   systemcraft_ship_stern_01_key: "보조 무장" # 1679981701979887293
   systemcraft_ship_sternthrusters_01_key: "대형 성계 격납고" # 14919150358083113563
   systemcraft_ship_kugel_01_key: "오메가 쿠겔블리츠 보호자들" # 12086236187908713276
-  quasi_stellar_01_key: "준성 보정기" # 5629970378275229368
-  quasi_stellar_wormhole_01_key: "준성 웜홀" # 10558114412586138705
   pouchkinn_guard_01_key: "핵심" # 17314848919636016994
   giga_cradle_medium_ship_section_key: "핵심" # 17314848919636016994
   giga_cradle_ship_section_key: "핵심" # 17314848919636016994
@@ -1581,7 +1580,6 @@
   QSO_COMPUTER_DESC: "준성 보정기는 적성 대상으로부터 가능한 멀리 떨어져 있을 것입니다." # 5177400463087363048
   compound_combat_computers: "$tech_compound_computers$" # 12938651161119881289
   COMPOUND_COMPUTER_SWARM: "$tech_compound_computers$ (군체)" # 3314547715169977005
-  COMPOUND_COMPUTER_TORPEDO: "$tech_compound_computers$ (어뢰)" # 12344638983103155485
   COMPOUND_COMPUTER_PICKET: "$tech_compound_computers$ (초계)" # 12836592312561080263
   COMPOUND_COMPUTER_LINE: "$tech_compound_computers$ (라인)" # 657553632855851253
   COMPOUND_COMPUTER_ARTILLERY: "$tech_compound_computers$ (포술)" # 9828053747495469306
@@ -1595,7 +1593,6 @@
   SENTIENT_COMPUTER: "$tech_sm_computers$" # 6118753519482727933
   SENTIENT_COMPUTER_DESC: "$tech_sm_computers_desc$" # 16237167115939585564
   SENTIENT_COMPUTER_SWARM: "$tech_sm_computers$ (스웜)" # 14313242891538115832
-  SENTIENT_COMPUTER_TORPEDO: "$tech_sm_computers$ (어뢰)" # 8266797550825489684
   SENTIENT_COMPUTER_PICKET: "$tech_sm_computers$ (초계)" # 14664652022374295387
   SENTIENT_COMPUTER_LINE: "$tech_sm_computers$ (라인)" # 13084165209660987568
   SENTIENT_COMPUTER_CARRIER: "$tech_sm_computers$ (모함)" # 7225991916841331142
@@ -1833,17 +1830,10 @@
   job_ehof_energy_converter: "에너지 변환기" # 4943254277974441799
   job_ehof_energy_converter_plural: "$job_ehof_energy_converter$s" # 2352976337787865427
   job_ehof_energy_converter_desc: "$job_ehof_energy_converter_plural$는 £energy£ §Y$energy$§를 §Y$giga_sr_negative_mass$§로 전환하며, 이는 우리 제국의 모든 분야에서 다방면으로 사용됩니다." # 1181260723669077190
-  job_ehof_energy_converter_effect_desc: "£job_ehof_energy_converter£ $job_ehof_energy_converter_plural$ 양의 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!로 변환합니다." # 7358379043326790098
-  mod_job_ehof_energy_converter_add: "$job_ehof_energy_converter$ 직업"
-  mod_job_ehof_energy_converter_per_pop: "§G+1§! $VALUE$ 팝당 $job_ehof_energy_converter$ 직위"
   mod_job_ehof_energy_converter_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_ehof_energy_converter_add£" # 9063901114316377551
   job_ehof_energy_converter_drone: "에너지 변환 드론" # 15769231736948051710
   job_ehof_energy_converter_drone_plural: "$job_ehof_energy_converter_drone$s" # 12365339757751573731
   job_ehof_energy_converter_drone_desc: "$job_ehof_energy_converter_drone_plural$는 양의 £energy£ §Y$energy$§!를 §Y$giga_sr_negative_mass$§!로 변환하며, 이는 우리 집단의 모든 분야에서 다양한 용도로 활용됩니다." # 775223491598456706
-  job_ehof_energy_converter_drone_effect_desc: "£job_ehof_energy_converter_drone£ $job_ehof_energy_converter_drone_plural$은(는) 양의 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!로 변환합니다." # 7801169857420277465
-  mod_job_ehof_energy_converter_drone_add: "$job_ehof_energy_converter_drone$ 직업"
-  mod_job_ehof_energy_converter_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_ehof_energy_converter_drone$ 직위"
-  mod_job_ehof_energy_converter_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_ehof_energy_converter_drone_add£" # 7207779447415438569
   giga_sr_sentient_metal: "지각 있는 금속" # 13303984668238589024
   ehof_sm: "£giga_sr_sentient_metal£ 의식 있는 금속" # 3750838738502290258
   mod_station_gatherers_giga_sr_sentient_metal_produces_mult: "감응 금속 ($mod_station_researchers_produces_mult$로부터)" # 18094966643559467384
@@ -1859,16 +1849,30 @@
   job_ehof_cultivator: "재배자" # 16293012514335036087
   job_ehof_cultivator_plural: "$job_ehof_cultivator$들" # 1055407730279152808
   job_ehof_cultivator_desc: "$job_ehof_cultivator_plural$은 £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§! 복제를 위해 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 원자재로 사용합니다." # 8439586490970104748
-  job_ehof_cultivator_effect_desc: "지각 금속 재배자들이 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §YSentient Metal§!로 전환합니다." # 4280742108482475054
-  mod_job_ehof_cultivator_add: "$job_ehof_cultivator$ 일자리"
-  mod_job_ehof_cultivator_per_pop: "§G+1§! $VALUE$ 팝당 $job_ehof_cultivator$ 직위"
   mod_job_ehof_cultivator_per_pop_short: "§G+1§! £mod_job_ehof_cultivator_add£당 $VALUE$ £pop£" # 6964006354439884110
   job_ehof_cultivation_drone: "경작 드론" # 13522345752700369144
   job_ehof_cultivation_drone_plural: "$job_ehof_cultivation_drone$s" # 13260146454257808017
   job_ehof_cultivation_drone_desc: "$job_ehof_cultivation_drone_plural$는 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §Y지성 금속§! 복제의 원자재로 사용합니다." # 13692451058342865742
-  job_ehof_cultivation_drone_effect_desc: "£job_ehof_cultivation_drone£ $job_ehof_cultivation_drone_plural$는 £alloys£ §Y$alloys$§! 및 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §YSentient Metal§!로 전환합니다." # 16668511791403248259
-  mod_job_ehof_cultivation_drone_add: "$job_ehof_cultivation_drone$ 작업"
-  mod_job_ehof_cultivation_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_ehof_cultivation_drone$ 직업"
+  COMPOUND_COMPUTER_TORPEDO: "$tech_compound_computers$ (공성)" # 5151708290909266976
+  SENTIENT_COMPUTER_TORPEDO: "$tech_sm_computers$ (공성)" # 13408780909931511460
+  mod_station_gatherers_alloys_produces_mult: "$mining_station$ $alloys$ 생산량" # 9360739827430415731
+  job_ehof_energy_converter_effect_desc: "$job_ehof_energy_converter_swap_plural_with_icon$는 양수의 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!(으)로 전환합니다" # 18313977129471580868
+  job_ehof_energy_converter_swap_plural_with_icon: "[ehof_energy_converter.GetIcon] [ehof_energy_converter.GetNamePlural]" # 4299264574979111158
+  mod_job_ehof_energy_converter_add: "[ehof_energy_converter.GetName] 직업" # 12066407535808218323
+  mod_job_ehof_energy_converter_per_pop: "§G+1§! [ehof_energy_converter.GetName] 직업 (팝 $VALUE$당)" # 10987319157596131452
+  job_ehof_energy_converter_drone_effect_desc: "$job_ehof_energy_converter_drone_swap_plural_with_icon$는 양수의 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!(으)로 전환합니다" # 7290187572199380158
+  job_ehof_energy_converter_drone_swap_plural_with_icon: "[ehof_energy_converter_drone.GetIcon] [ehof_energy_converter_drone.GetNamePlural]" # 13901859533264292383
+  mod_job_ehof_energy_converter_drone_add: "[ehof_energy_converter_drone.GetName] 직업" # 12333796714756329181
+  mod_job_ehof_energy_converter_drone_per_pop: "§G+1§! [ehof_energy_converter_drone.GetName] 직업 (팝 $VALUE$당)" # 13152583850078848358
+  mod_job_ehof_energy_converter_drone_per_pop_short: "\n§G+1§! £mod_job_ehof_energy_converter_add£ ($VALUE$ £pop£당)" # 9063901114316377551
+  job_ehof_cultivator_effect_desc: "$job_ehof_cultivator_swap_plural_with_icon$는 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §Y지성 금속§!(으)로 전환합니다" # 14791216072130862651
+  job_ehof_cultivator_swap_plural_with_icon: "[ehof_cultivator.GetIcon] [ehof_cultivator.GetNamePlural]" # 13656089368318945568
+  mod_job_ehof_cultivator_add: "[ehof_cultivator.GetName] 직업" # 6673139239073887072
+  mod_job_ehof_cultivator_per_pop: "§G+1§! [ehof_cultivator.GetName] 직업 (팝 $VALUE$당)" # 18354591986961170030
+  job_ehof_cultivation_drone_effect_desc: "$job_ehof_cultivation_drone_swap_plural_with_icon$는 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §Y지성 금속§!(으)로 전환합니다" # 1403790686258251896
+  job_ehof_cultivation_drone_swap_plural_with_icon: "[ehof_cultivation_drone.GetIcon] [ehof_cultivation_drone.GetNamePlural]" # 6746229412193201882
+  mod_job_ehof_cultivation_drone_add: "[ehof_cultivation_drone.GetName] 직업" # 11532617659692967060
+  mod_job_ehof_cultivation_drone_per_pop: "§G+1§! [ehof_cultivation_drone.GetName] 직업 (팝 $VALUE$당)" # 6143792245715885100
   mod_job_ehof_cultivation_drone_per_pop_short: "§G+1§! £mod_job_ehof_cultivation_drone_add£ 당 $VALUE$ £pop£" # 10180509288683791181
   sm_virtual_shipyard_uplink_building: "태양 조선소 업링크" # 10933670587179602636
   sm_virtual_shipyard_uplink_building_desc: "태양 조선소와의 중요한 연결고리로, 일반 조선소에는 없는 고유 보너스를 제공합니다." # 18010480456819907082
@@ -1953,8 +1957,6 @@
   giga_penrose_sphere_yes: "§G$name_penrose$§!" # 18359848413713937607
   giga_penrose_sphere_no: "§R$name_penrose$§!" # 13015689928717123850
   giga_has_orb_bastion: "[root.has_orb_bastion]" # 4134037278631695112
-  giga_orb_bastion_yes: "§G$name_orb_bastion$§!" # 3321799807254760294
-  giga_orb_bastion_no: "§R$name_orb_bastion$§!" # 7282642448467594558
   giga_has_orbital_arcology: "[root.has_orbital_arcology]" # 15779330508605359343
   giga_orbital_arcology_yes: "§G$name_orbital_arcology$§!" # 16985884374375221050
   giga_orbital_arcology_no: "§R궤도 아콜로지§!" # 10143465832390498543
@@ -2927,9 +2929,6 @@
   district_rw_strat_res: "제조 구역" # 4308180279484519496
   district_rw_strat_res_plural: "제조 구역" # 12237154089013582549
   district_rw_strat_res_desc: "제국 전역에서 사용되는 중요한 전략 자원을 생산하는 지구입니다." # 9543057515613320794
-  district_rw_quberine: "큐버린 추출기" # 14853990733836189985
-  district_rw_quberine_plural: "큐버린 추출기" # 4114080632517947562
-  district_rw_quberine_desc: "스퀘어월드의 구조체로부터 자가 재생하는 큐버린을 채취하고 이를 사용 가능한 합금과 광물로 분해하는 자동 채취기." # 116611821614652588
   district_virtual_city: "메가플렉스 서버" # 6268071806459812230
   district_virtual_city_plural: "메가플렉스 서버" # 13553570639714421153
   district_virtual_city_desc: "시뮬레이터 안에 거주자를 유지하기 위한 전용 서버 섹션." # 16014486539061295398
@@ -3180,73 +3179,82 @@
   job_giga_interstellar_scavenger: "성간 청소부" # 1882553749993312242
   job_giga_interstellar_scavenger_plural: "성간 청소부" # 5936603335298776318
   job_giga_interstellar_scavenger_desc: "이 전문가들은 성간 공간 깊숙이 탐사하며 채굴할 천체를 찾고 우주선 잔해를 재활용합니다." # 6748797480008819026
-  job_giga_interstellar_scavenger_effect_desc: "£job_giga_interstellar_scavenger£ $job_giga_interstellar_scavenger_plural$은 성간 공간을 탐사하며 £minerals£ §Yminerals§!, £alloys£ §YAlloys§! 및 £engineering_research£ §Yengineering_research§!을 수집합니다." # 8301389066958521251
-  mod_job_giga_interstellar_scavenger_add: "$job_giga_interstellar_scavenger$ 일자리"
-  mod_job_giga_interstellar_scavenger_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_interstellar_scavenger$ 직위"
   mod_job_giga_interstellar_scavenger_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_interstellar_scavenger_add£" # 6953346653399499940
   job_giga_interstellar_scavenger_drone: "성간 수거 드론" # 4374688995897895056
   job_giga_interstellar_scavenger_drone_plural: "성간 고물 수집 드론" # 12633879178124366196
   job_giga_interstellar_scavenger_drone_desc: "이 전문가들은 성간 공간 깊숙이 탐사하며 채굴할 천체를 찾고 우주선 잔해를 재활용합니다." # 6748797480008819026
-  job_giga_interstellar_scavenger_drone_effect_desc: "£job_giga_interstellar_scavenger_drone£ $job_giga_interstellar_scavenger_drone_plural$은 성간 공간을 탐사하며 £minerals£ §Y광물§!, £alloys£ §Y합금§! 및 £engineering_research£ §Y공학 연구§!를 수집합니다." # 18430507472536314902
-  mod_job_giga_interstellar_scavenger_drone_add: "$job_giga_interstellar_scavenger_drone$ 일자리"
-  mod_job_giga_interstellar_scavenger_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_interstellar_scavenger_drone$ 직업"
+  giga_orb_bastion_yes: "§G$name_orb_naval_logistics$§!" # 1627806334571201052
+  giga_orb_bastion_no: "§R$name_orb_naval_logistics$§!" # 16773323006089520459
+  giga_achievements.001.name: "" # 17241709254077376921
+  giga_achievements.001.desc: "" # 17241709254077376921
+  giga_mapped_star_desc: "" # 17241709254077376921
+  trait_auto_pc_squareworld_preference: "$pc_squareworld_habitable$ 돌연변이" # 3581904596560840098
+  trait_auto_pc_squareworld_preference_tt: "$pc_squareworld_habitable$ 거주 적합도: §G100%§!\n$t$- $IDEAL_PREFERENCE_TT$" # 2797815123278396153
+  trait_auto_pc_squareworld_preference_desc: "$trait_auto_hab_preference_desc$" # 232539336545340631
+  district_giga_squareworld_livingmetal: "추출기 구획" # 4463211546886530854
+  district_giga_squareworld_livingmetal_plural: "추출기 구획" # 8830178199800663798
+  district_giga_squareworld_livingmetal_desc: "$zone_squareworld_livingmetal_desc$" # 4271249927520905518
+  zone_squareworld_livingmetal: "큐베린 추출기" # 14853990733836189985
+  zone_squareworld_livingmetal_desc: "정사각형 행성 프레임에서 자가 재생되는 큐베린을 회수하여 사용 가능한 합금과 광물로 분해하는 자동 수확기입니다." # 116611821614652588
+  zone_squareworld_livingmetal_automated_subtitle: "자동 추출기" # 12065122442590822842
+  job_giga_interstellar_scavenger_effect_desc: "$job_giga_interstellar_scavenger_swap_plural_with_icon$가 성간 우주를 탐사하며 £minerals£ §Y$minerals$§!, £alloys£ §Y합금§!, £engineering_research£ §Y$engineering_research$§!을 수집합니다." # 11683444533722232533
+  job_giga_interstellar_scavenger_swap_plural_with_icon: "[giga_interstellar_scavenger.GetIcon] [giga_interstellar_scavenger.GetNamePlural]" # 4552800191062932694
+  mod_job_giga_interstellar_scavenger_add: "[giga_interstellar_scavenger.GetName] 직업" # 12720016749794569876
+  mod_job_giga_interstellar_scavenger_per_pop: "팝 $VALUE$당 §G+1§! [giga_interstellar_scavenger.GetName] 직업" # 9744964556461865980
+  job_giga_interstellar_scavenger_drone_effect_desc: "$job_giga_interstellar_scavenger_drone_swap_plural_with_icon$가 성간 우주를 탐사하며 £minerals£ §Y$minerals$§!, £alloys£ §Y합금§!, £engineering_research£ §Y$engineering_research$§!을 수집합니다." # 3556500903548711092
+  job_giga_interstellar_scavenger_drone_swap_plural_with_icon: "[giga_interstellar_scavenger_drone.GetIcon] [giga_interstellar_scavenger_drone.GetNamePlural]" # 9861920489398947145
   mod_job_giga_interstellar_scavenger_drone_per_pop_short: "§G+1§! £mod_job_giga_interstellar_scavenger_drone_add£당 $VALUE$ £pop£당" # 18268828726180035164
   job_giga_interstellar_researcher: "성간 연구원" # 1413978881002923684
   job_giga_interstellar_researcher_plural: "성간 연구자들" # 14222057957333636426
   job_giga_interstellar_researcher_desc: "성간 연구원은 별들 사이의 광활한 성간 공간을 연구합니다. 그곳에서는 외부 간섭이 거의 없이 실험을 수행할 수 있습니다." # 2151601946754180088
-  job_giga_interstellar_researcher_effect_desc: "£job_giga_interstellar_researcher£ $job_giga_interstellar_researcher_plural$은 성간 매질을 연구하여 £physics_research£ §YPhysics_Research§를 생성합니다!" # 11184114935409249861
-  mod_job_giga_interstellar_researcher_add: "$job_giga_interstellar_researcher$ 직업"
-  mod_job_giga_interstellar_researcher_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_interstellar_researcher$ 직위"
   mod_job_giga_interstellar_researcher_per_pop_short: "§G+1§! £mod_job_giga_interstellar_researcher_add£당 $VALUE$ £pop£당" # 12193052365806792259
   job_giga_interstellar_researcher_drone: "성간 연구 드론" # 12091973305388971276
   job_giga_interstellar_researcher_drone_plural: "성간 연구 드론" # 10296429606043231409
   job_giga_interstellar_researcher_drone_desc: "성간 연구 드론은 성간 공간의 광대한 공허를 연구하며, 외부 간섭이 거의 없이 실험을 수행할 수 있는 곳입니다." # 6103928636903002409
-  job_giga_interstellar_researcher_drone_effect_desc: "£job_giga_interstellar_researcher_drone£ $job_giga_interstellar_researcher_drone_plural$는 성간 매질을 연구하여 £physics_research£ §YPhysics Research§를 생성합니다!" # 11899476247510602662
-  mod_job_giga_interstellar_researcher_drone_add: "$job_giga_interstellar_researcher_drone$ 작업"
-  mod_job_giga_interstellar_researcher_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_interstellar_researcher_drone$ 직위"
   mod_job_giga_interstellar_researcher_drone_per_pop_short: "§G+1§! £mod_job_giga_interstellar_researcher_drone_add£당 $VALUE$ £pop£당" # 18344096228722591698
   job_giga_zro_extractor: "즈로 수확기" # 4305490675220722304
   job_giga_zro_extractor_plural: "즈로 수확기" # 16741803555372526891
   job_giga_zro_extractor_desc: "즈로 수확기는 지역 매장량에서 즈로를 수집합니다." # 12876027366194534289
-  job_giga_zro_extractor_effect_desc: "£job_giga_zro_extractor£ $job_giga_zro_extractor_plural$은 £sr_zro£ §Y$sr_zro$§를 채굴합니다!" # 14400816775799933536
-  mod_job_giga_zro_extractor_add: "$job_giga_zro_extractor$ 직책"
-  mod_job_giga_zro_extractor_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_zro_extractor$ 직업"
   mod_job_giga_zro_extractor_per_pop_short: "§G+1§! £mod_job_giga_zro_extractor_add£당 $VALUE$ £pop£당" # 11782061791357366767
   job_giga_zro_extractor_drone: "즈로 수확 드론" # 4339955759166022919
   job_giga_zro_extractor_drone_plural: "즈로 수확 드론" # 10689337652992697911
   job_giga_zro_extractor_drone_desc: "즈로 수확기는 지역 매장량에서 즈로를 수집합니다." # 12876027366194534289
-  job_giga_zro_extractor_drone_effect_desc: "£job_giga_zro_extractor_drone£ $job_giga_zro_extractor_drone_plural$은 §Y$sr_zro$§에서 £sr_zro£를 채굴합니다!" # 12615807433702084333
-  mod_job_giga_zro_extractor_drone_add: "$job_giga_zro_extractor_drone$ 직책"
-  mod_job_giga_zro_extractor_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_zro_extractor_drone$ 직위"
   mod_job_giga_zro_extractor_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_zro_extractor_drone_add£" # 15118685214168683396
   job_giga_preserver: "보존 수호자" # 11894465377246267558
   job_giga_preserver_plural: "보존 수호자들" # 12345985430376558323
   job_giga_preserver_desc: "이 굳센 레인저들은 링월드의 안쪽 표면에 거대한 자연 보호 구역들을 유지합니다." # 7136711344046577641
-  job_giga_preserver_effect_desc: "£job_giga_preserver£ $job_giga_preserver_plural$는 지역 및 해당 성계 내 모든 $habitat_0$에서 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!를 증가시키고, £unity£ §Y$unity$§!와 £society_research£ §Y$society_research$§!를 생산합니다." # 4978850305950012466
-  mod_job_giga_preserver_add: "$job_giga_preserver$ 일자리"
-  mod_job_giga_preserver_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_preserver$ 직위"
+  mod_job_giga_interstellar_scavenger_drone_add: "[giga_interstellar_scavenger_drone.GetName] 직업" # 13221911285484193136
+  mod_job_giga_interstellar_scavenger_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_interstellar_scavenger_drone.GetName] 직업 1개" # 5868884879462135188
+  job_giga_interstellar_researcher_effect_desc: "$job_giga_interstellar_researcher_swap_plural_with_icon$는 성간 물질을 연구하여 £physics_research£ §Y$physics_research$§!를 생성합니다. " # 7835382547246220439
+  job_giga_interstellar_researcher_swap_plural_with_icon: "[giga_interstellar_researcher.GetIcon] [giga_interstellar_researcher.GetNamePlural]" # 14688566236636986955
+  mod_job_giga_interstellar_researcher_add: "[giga_interstellar_researcher.GetName] 직업" # 8784208341028773382
+  mod_job_giga_interstellar_researcher_per_pop: "§G+1§! $VALUE$ 팝당 [giga_interstellar_researcher.GetName] 직업 1개" # 4394117150137174351
+  job_giga_interstellar_researcher_drone_effect_desc: "$job_giga_interstellar_researcher_drone_swap_plural_with_icon$는 성간 물질을 연구하여 £physics_research£ §Y$physics_research$§!를 생성합니다. " # 64497751564297809
+  job_giga_interstellar_researcher_drone_swap_plural_with_icon: "[giga_interstellar_researcher_drone.GetIcon] [giga_interstellar_researcher_drone.GetNamePlural]" # 13873660959066723074
+  mod_job_giga_interstellar_researcher_drone_add: "[giga_interstellar_researcher_drone.GetName] 직업" # 18048181143171329140
+  mod_job_giga_interstellar_researcher_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_interstellar_researcher_drone.GetName] 직업 1개" # 209207986802987710
+  job_giga_zro_extractor_effect_desc: "$job_giga_zro_extractor_swap_plural_with_icon$는 £sr_zro£ §Y$sr_zro$§!를 채취합니다. " # 17585637281282127949
+  job_giga_zro_extractor_swap_plural_with_icon: "[giga_zro_extractor.GetIcon] [giga_zro_extractor.GetNamePlural]" # 1197244641306819901
+  mod_job_giga_zro_extractor_add: "[giga_zro_extractor.GetName] 직업" # 14756536435197168392
+  mod_job_giga_zro_extractor_per_pop: "§G+1§! $VALUE$ 팝당 [giga_zro_extractor.GetName] 직업 1개" # 13303089379919467255
+  job_giga_zro_extractor_drone_effect_desc: "$job_giga_zro_extractor_drone_swap_plural_with_icon$는 £sr_zro£ §Y$sr_zro$§!를 채취합니다. " # 10196919499713635983
+  job_giga_zro_extractor_drone_swap_plural_with_icon: "[giga_zro_extractor_drone.GetIcon] [giga_zro_extractor_drone.GetNamePlural]" # 8198002745564674024
+  mod_job_giga_zro_extractor_drone_add: "[giga_zro_extractor_drone.GetName] 직업" # 10462766840197706038
+  mod_job_giga_zro_extractor_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_zro_extractor_drone.GetName] 직업 1개" # 8469342252533183042
+  job_giga_preserver_effect_desc: "$job_giga_preserver_swap_plural_with_icon$는 해당 행성과 성계 내 모든 $habitat_0$의 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!를 증가시키며, £unity£ §Y$unity$§!와 £society_research£ §Y$society_research$§!를 생산합니다." # 10557711875888326172
+  job_giga_preserver_swap_plural_with_icon: "[giga_preserver.GetIcon] [giga_preserver.GetNamePlural]" # 12728042444714479531
   mod_job_giga_preserver_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_preserver_add£" # 275111989578133051
   job_giga_preserver_drone: "보존 관리 드론" # 10460584159614829402
   job_giga_preserver_drone_plural: "보존 수호 드론" # 420190064878137472
   job_giga_preserver_drone_desc: "이 관리 드론들은 링의 내부 표면에 있는 거대한 자연 보호 구역들을 관리합니다." # 9051748867460398271
-  job_giga_preserver_drone_effect_desc: "£job_giga_preserver£ $job_giga_preserver_plural$는 지역 및 해당 성계의 모든 $habitat_0$에서 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!을 증가시키며, £unity£ §Y$unity$§!과 £society_research£ §Y$society_research$§!을 생산합니다." # 5699413823977313795
-  mod_job_giga_preserver_drone_add: "$job_giga_preserver_drone$ 일자리"
-  mod_job_giga_preserver_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_preserver_drone$ 직위"
   mod_job_giga_preserver_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_preserver_drone_add£" # 9923836614924080874
   job_giga_gas_harvester: "이색 가스 수확기" # 11086236863829344760
   job_giga_gas_harvester_plural: "특수 가스 채취 시설" # 2990027694918658390
   job_giga_gas_harvester_desc: "가스 수집기는 가스 행성 대기 깊숙이 파고들어 특수 가스 저장소에서 추출하는 우주선과 장비를 운용합니다." # 17108392974975956114
-  job_giga_gas_harvester_effect_desc: "£job_giga_gas_harvester£ $job_giga_gas_harvester_plural$는 £exotic_gases£ §Y$exotic_gases$§를 채취합니다!" # 17425788831808514854
-  mod_job_giga_gas_harvester_add: "$job_giga_gas_harvester$ 일자리"
-  mod_job_giga_gas_harvester_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gas_harvester$ 직업"
   mod_job_giga_gas_harvester_per_pop_short: "§G+1§! £mod_job_giga_gas_harvester_add£당 $VALUE$ £pop£당" # 9405733431519962920
   job_giga_gas_harvesting_drone: "특이 가스 채취기 드론" # 17758256774741035063
   job_giga_gas_harvesting_drone_plural: "특이 기체 채취 드론" # 13396867988468672653
   job_giga_gas_harvesting_drone_desc: "가스 수집기는 가스 행성 대기 깊숙이 파고들어 특수 가스 저장소에서 추출하는 우주선과 장비를 운용합니다." # 17108392974975956114
-  job_giga_gas_harvesting_drone_effect_desc: "£job_giga_gas_harvesting_drone£ $job_giga_gas_harvesting_drone_plural$는 £exotic_gases£ §Y$exotic_gases$§!를 채취합니다!" # 14311303198206539616
-  mod_job_giga_gas_harvesting_drone_add: "$job_giga_gas_harvesting_drone$ 일자리"
-  mod_job_giga_gas_harvesting_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_gas_harvesting_drone$ 직업"
-  mod_job_giga_gas_harvesting_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_gas_harvesting_drone_add£" # 16972929330088300431
   job_virtual_rare_resource: "전략적 생산 기술자" # 6606797602905388193
   job_virtual_rare_resource_desc: "전략 자원 생산은 숙련된 인원이 처리합니다." # 9962691003161654786
   job_virtual_rare_resource_plural: "전략적 생산 기술자" # 4192611238995383810
@@ -3385,7 +3393,6 @@
   edict_giga_survey_attack_planet: "$name_war_planet$ 후보 물색" # 4877415602310212789
   edict_giga_survey_attack_planet_desc: "우리 제국 내 모든 행성을 조사하여 $name_war_planet$으로 전환하기에 적합한 크기를 가진 행성을 파악하십시오." # 3796961159428117924
   edict_giga_quasar_menu: "준성체 소멸기 제어판" # 16960099652563788653
-  edict_giga_quasar_menu_desc: "원격으로 QS-O의 제어판을 띄우십시오." # 2330246611257591946
   edict_giga_reset_ndb: "니콜-다이슨 광선 재설정" # 2934811223472452214
   edict_giga_reset_ndb_desc: "당신의 니콜-다이슨 빔이 고장 날 경우, 그것을 기본값으로 초기화하십시오." # 5938796359556572763
   edict_giga_reset_qso: "재설정 준항성 소멸자" # 4992608407750716866
@@ -3436,7 +3443,6 @@
   opinion_katzenland_my_planet: "우리 행성이 황폐화되었습니다" # 11727648748063911828
   opinion_katzenland_a_planet: "행성 황폐화" # 5527854864522194818
   decision_systemcraft_crew: "시스템크래프트 승무원 모집" # 3372950300693538522
-  decision_systemcraft_crew_desc: "이 행성에서 40 팝을 추출하여 시스템 크래프트의 승무원으로 활용하십시오." # 16852674595584616553
   decision_virtual_industry: "가상 산업 구역" # 3584069477884475195
   decision_virtual_industry_desc: "가상 현실의 이 구역을 산업 용도로 설정합니다." # 13554842971548510062
   decision_virtual_industry_effects: "지구 유형을 기본 자원 생산 지구로 변경합니다. 취소할 수 없습니다." # 3432339663383772860
@@ -3450,6 +3456,26 @@
   decision_ringworld_arcology_project_effects: "이 링월드 구획을 §Y$pc_ringworld_city$§!로 전환하여, £housing£ §Y$PLANET_HOUSING_TITLE$§!, §Y자원 생산량§! 및 §Y팝 성장률§!을 증가시키고 특수 £district£ §YArcology Districts§!를 해금합니다. 이 과정은 링월드 전체 표면을 변형시키며, 향후 £district£ §YGenerator§! 및 §YAgriculture Districts§!의 건설을 모두 막습니다." # 647029391701650929
   decision_ringworld_arcology_project_requirements: "§R행성의 모든 특구 슬롯이 §Y$district_city_plural$§! 또는 §Y$district_industrial_plural$§!로 채워져야 합니다.§!" # 4763750578809366088
   decision_repaired_shattered_alderson: "하이퍼 세그먼트 수리" # 18122331748274953844
+  mod_job_giga_preserver_add: "[giga_preserver.GetName] 직업" # 14921248192436514234
+  mod_job_giga_preserver_per_pop: "§G+1§! $VALUE$ 팝당 [giga_preserver.GetName] 직업" # 3037047141015487709
+  job_giga_preserver_drone_effect_desc: "$job_giga_preserver_drone_swap_plural_with_icon$는 해당 행성 및 성계 내 모든 $habitat_0$에서 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!를 증가시키며, £unity£ §Y$unity$§!와 £society_research£ §Y$society_research$§!를 생산합니다." # 9940238192030787422
+  job_giga_preserver_drone_swap_plural_with_icon: "[giga_preserver_drone.GetIcon] [giga_preserver_drone.GetNamePlural]" # 15299353178741230790
+  mod_job_giga_preserver_drone_add: "[giga_preserver_drone.GetName] 직업" # 2478305601104268435
+  mod_job_giga_preserver_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_preserver_drone.GetName] 직업" # 2557146533027849714
+  job_giga_gas_harvester_effect_desc: "$job_giga_gas_harvester_swap_plural_with_icon$는 £exotic_gases£ §Y$exotic_gases$§!를 수집합니다." # 13658776361167712436
+  job_giga_gas_harvester_swap_plural_with_icon: "[giga_gas_harvester.GetIcon] [giga_gas_harvester.GetNamePlural]" # 13940772827365988851
+  mod_job_giga_gas_harvester_add: "[giga_gas_harvester.GetName] 직업" # 13791310755254074856
+  mod_job_giga_gas_harvester_per_pop: "§G+1§! $VALUE$ 팝당 [giga_gas_harvester.GetName] 직업" # 616563442716480806
+  job_giga_gas_harvesting_drone_effect_desc: "$job_giga_gas_harvesting_drone_swap_plural_with_icon$는 £exotic_gases£ §Y$exotic_gases$§!를 수집합니다." # 4112281680758098676
+  job_giga_gas_harvesting_drone_swap_plural_with_icon: "[giga_gas_harvesting_drone.GetIcon] [giga_gas_harvesting_drone.GetNamePlural]" # 10020526933894203597
+  mod_job_giga_gas_harvesting_drone_add: "[giga_gas_harvesting_drone.GetName] 직업" # 10039904422056979885
+  mod_job_giga_gas_harvesting_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_gas_harvesting_drone.GetName] 직업" # 13246005762333697372
+  mod_job_giga_gas_harvesting_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 £mod_job_giga_gas_harvester_add£" # 9405733431519962920
+  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
+  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
+  edict_giga_quasar_menu_desc: "Q.S.O의 제어 패널을 원격으로 호출합니다." # 3864207595260170113
+  decision_systemcraft_crew_desc: "이 행성에서 4,000명의 팝을 추출하여 시스템크래프트의 승무원으로 배치합니다." # 17753183697234486623
+  decision_repaired_shattered_alderson_desc: "" # 17241709254077376921
   decision_shattered_alderson_project_effects: "이 초고밀도 구역을 §G$pc_alderson_slice_gaia$§!으로 수리합니다." # 1772594756583141988
   decision_giga_flood_habitat: "$decision_flood_habitat$" # 10316503557343978274
   decision_giga_flood_habitat_desc: "$decision_flood_habitat_desc$" # 8931604651781628425
@@ -3509,22 +3535,6 @@
   compound_invincible_3_desc: "$compound_invincible_2_desc$" # 8042133019942867377
   repair_annihilator: "$ehof_the_stellar_annihilator$ 수리 중" # 12817943335143030462
   repair_annihilator2: "$ehof_the_stellar_annihilator$ 수리 중" # 12817943335143030462
-  qso_intensity_none: "QS-O: 충전 없음" # 835726708089261982
-  qso_intensity_none_desc: "QS-O는 충전되지 않고 있습니다. 전체 출력이 에너지로 전환되고 있습니다." # 13031499839708118729
-  qso_intensity_verylow: "QS-O: 충전 매우 낮음" # 14697964420443263905
-  qso_intensity_verylow_desc: "큐에스-오의 충전 속도가 매우 느립니다. 출력의 상당 부분이 에너지로 전환되고 있습니다." # 4752250244441271670
-  qso_intensity_low: "큐에스-오: 충전 부족" # 8299824764757969937
-  qso_intensity_low_desc: "QS-O는 느리게 충전되고 있으며, 출력의 일부가 에너지로 변환되고 있습니다." # 10167616561478457575
-  qso_intensity_high: "QS-O: 고강도 충전" # 1516105475824783850
-  qso_intensity_high_desc: "QS-O는 약간 초과 충전되고 있으며, 산출량을 증가시키기 위해 일부 에너지가 소모되고 있습니다." # 3112330326913046117
-  qso_intensity_veryhigh: "큐에스-오: 극초고속 충전" # 3683935724281338851
-  qso_intensity_veryhigh_desc: "QS-O에 과부하가 발생하고 있습니다. 출력을 증폭시키기 위해 막대한 양의 에너지가 사용됩니다." # 8351343707083223093
-  qso_intensity_extremely: "QS-O: 극한 충전" # 12644519009352298077
-  qso_intensity_extremely_desc: "QS-O가 심하게 과충전되고 있으며, 출력을 증대하기 위해 막대한 양의 에너지가 소비되고 있습니다." # 8086131805031365154
-  qso_intensity_insane: "QS-O: 광적인 충전" # 3726200854282757311
-  qso_intensity_insane_desc: "QS-O는 극도로 과충전되었으며, 이를 유지하기 위해 막대한 양의 에너지가 필요합니다." # 16416374441509408815
-  qso_intensity_physicslimits: "QS-O: '네' 충전 중" # 14444291386089085489
-  qso_intensity_physicslimits_desc: "QS-O는 최대한 과충전되었습니다." # 9410389592452765666
   giga_brown_dwarf: "L형 갈색 왜성" # 17206296536135479611
   giga_brown_dwarf_desc: "이것은 점화하여 별이 되기 직전 단계에 상대적으로 가까운 L형 갈색 왜성입니다." # 15000344853497482324
   attack_moon_candidate: "$name_war_moon$ 후보" # 12840215292896289605
@@ -4104,10 +4114,6 @@
   giga_tech_repeatable_planetary_seeder_nexus_cap_desc: "우리 제국 국경 내에 추가적인 §Y행성 파종 성소§를 건설하고 관리할 수 있도록 하는 고급 건설 및 유지보수 프로토콜!" # 12392924419215674430
   giga_planetary_seeder_nexus_capacity_increase_title: "§Y행성 파종 네서스§! 용량: §G+1§!" # 15978254519453062545
   giga_planetary_seeder_nexus_capacity_increase_desc: "§Y행성 개척 넥서스§의 제국 수용량이 §G+1§만큼 증가합니다!" # 11855736865997326058
-  giga_tech_repeatable_academy_cap: "궤도 요새 관리 규약" # 16347838725274293644
-  giga_tech_repeatable_academy_cap_desc: "우리 제국 국경 내에 추가적인 §Y궤도 요새§를 건설하고 관리할 수 있도록 하는 발전된 건설 및 유지보수 프로토콜." # 2675503037465401336
-  giga_academy_capacity_increase_title: "§Y궤도 요새§! 수용량: §G+1§!" # 4935838675051190753
-  giga_academy_capacity_increase_desc: "§Y궤도 요새§의 제국 수용량이 §G+1§만큼 증가합니다!" # 9341034207032153723
   giga_tech_repeatable_penrose_sphere_cap: "펜로즈 구체 관리 규약" # 13538845947225892817
   giga_tech_repeatable_penrose_sphere_cap_desc: "우리 제국 국경 내에 추가적인 §Y페니로즈 구체§를 건설하고 관리할 수 있도록 하는 고급 건설 및 유지보수 프로토콜." # 4700179665146024451
   giga_penrose_sphere_capacity_increase_title: "§Y펜로즈 스피어§! 용량: §G+1§!" # 803927593363767157
@@ -5103,10 +5109,8 @@
   giga_tech_war_system_hull_booster: "초공간 선체 안정화" # 5630351592724946311
   giga_tech_war_system_hull_booster_desc: "$name_war_system$은 강력한 함선이며, 고차원 내에 고정된 전용 구조물을 추가함으로써 그 거대한 선체가 자체 중력 하에 붕괴하지 않도록 보장할 수 있습니다." # 13217331170871536070
   giga_dialog.2801.name: "$name_war_system$ 구축 시작" # 1891555331924313446
-  giga_dialog.2801.desc: "$name_war_system$입니다.\n\n태양계 전체를 무기화하는 것은 작은 일이 아니며, 이 거대한 함선을 건설하려면 먼저 그 일부가 될 $name_war_planet$와 $name_war_moon$들을 건설해야 합니다. 실제 메가스트럭처는 여러 첨단 기술을 연구해야 하지만, 시스템크래프트의 건설을 완료하기 위해 필요할 구성 요소들을 미리 만들어 두는 것이 현명할 것입니다.\n\n필수 천체:\n$name_war_planet$ 4개\n$name_war_moon$ 5개\n승무원으로 사용될 팝 40개 이상의 행성 1개\n\n이 함선은 콜로서스처럼 행성을 파괴하는 능력도 갖추고 있습니다.\n\n§R시스템크래프트가 함선 편집기에 제대로 표시되려면 UI 개편 모드가 필요합니다.§!" # 10779938298877455161
   giga_dialog.2801.a: "알겠습니다." # 12076608091024442278
   giga_dialog.2802.name: "시스템크래프트 건설 현장 건설됨" # 12907571908837094301
-  giga_dialog.2802.desc: "우리의 미래 $name_war_system$ 건설 현장이 이제 완성되었습니다! 이 비계 위에서 우리는 이 은하계가 지금까지 본 적 없는 가장 위대한 군함을 조립할 것입니다. 여러 행성 함선과 $name_war_moon$들을 연결하여 구성된 이 무시무시한 함선은 무엇이든 격파할 수 있을 것입니다.\n\n필수 천체:\n$name_war_planet$ 4개\n$name_war_moon$ 5개\n승무원으로 활용될 팝이 최소 40개인 행성\n§Y(팝을 징발해도 행성은 소실되지 않습니다.)§!\n\n또한 이 함선은 거신성처럼 행성을 파괴하는 능력을 갖추고 있습니다.\n\n§RUI 오버홀 모드를 사용해야 시스템 함선이 함선 편집기에서 올바르게 표시됩니다.§!" # 979763411212189010
   giga_dialog.2802.a: "시작됐습니다." # 6697660253820146099
   giga_dialog.2803.name: "시스템크래프트 태양 압축기 건설 완료" # 6327294787902537411
   giga_dialog.2803.desc: "$name_war_system$의 태양 압축기가 완성되었습니다. 이 두 개의 거대한 중력판은 별에 막대한 중력 압력을 가하여 크기를 더 작게 줄이고, 별을 조작하고 에너지를 추출하기 더 쉽게 만듭니다. 이제, 우리는 이 핵에 시스템 크래프트의 다양한 구성 행성체들을 연결하는 경이로운 작업을 시작해야 합니다..." # 4220911008895563050
@@ -5118,7 +5122,6 @@
   giga_dialog.2805.desc: "우리 시스템크래프트의 달 지지대 작업이 방금 완료되었습니다!\n거대한 지지대 기둥 안에 내장된 작은 달 2개는 시스템크래프트의 구조적 무결성을 보장하는 데 도움이 될 뿐만 아니라, 무기 및 기타 시설을 위한 추가 공간을 제공할 것입니다.\n이제 함선 전면에 장착될 거대한 포 2문으로 구성된 시스템크래프트의 주 무장 작업을 시작할 수 있습니다." # 8811288258346301108
   giga_dialog.2805.a: "거의 다 왔군." # 11730454153036178202
   giga_dialog.2806.name: "성계 함선 천체 소멸기 건설됨" # 7539760291095868131
-  giga_dialog.2806.desc: "우리 시스템 크래프트의 주 무장이 완성되었습니다! 함선 선수에 부착된 이 두 행성 크래프트는 그 경로를 가로지르는 불운한 모든 목표물에게 엄청난 양의 화력을 퍼부을 수 있습니다. 이제 단 한 단계만 남았으며, 승무원으로 복무할 40개의 팝을 우리 세계 중 한 곳의 결정을 통해 모아야 합니다.\n\n§Y함선 설계기에서 $name_war_system$을 설계하는 것을 잊지 마십시오§!\n\n§Y이것은 사용되는 세계를 파괴하지 않으며 단지 40개의 팝만 소모합니다§!" # 3716655208375274167
   giga_dialog.2806.a: "한 걸음 더" # 16316805100508180048
   giga_dialog.2807.name: "$name_war_system$ 완료!" # 7747463535140808264
   giga_dialog.2807.desc: "드디어. 완성되었습니다.\n우주선의 수십억 거주자들이 마지막으로 이주를 마치고, 남은 몇 개의 구조 트러스가 설치되면서, $name_war_system$이(가) 마침내 완성되었습니다.\n이 엄청난 규모의 거대한 우주선은 이전에 만들어진 모든 것을 왜소하게 만들며, 적들이 자신에게 무엇이 닥쳤는지조차 알아차리지 못할 정도의 막대한 화력을 갖추고 있습니다.\n추진기가 켜졌고, 이 거대한 우주선은 이제 전투 준비를 마쳤습니다.\n이제 그 어떤 것도 우리의 힘에 맞설 수 없습니다." # 10714813231450160762
@@ -5296,17 +5299,30 @@
   job_giga_iodizium_miner: "아이오다이줌 채굴자" # 11947563833257779070
   job_giga_iodizium_miner_plural: "아이오디지움 광부" # 15678767993370165822
   job_giga_iodizium_miner_desc: "이 전문 광부들은 물리학을 거스르는 아이오다이슘 결정을 추출하기 위한 장비를 갖추고 있습니다." # 14818870721309998684
-  job_giga_iodizium_miner_effect_desc: "아이오디지움 광부 아이오디지움 광부들은 £소비재£ §Y$consumer_goods$§!를 사용하여 £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!를 안전하게 추출합니다." # 3520561923420219268
-  mod_job_giga_iodizium_miner_add: "$job_giga_iodizium_miner$ 직업"
-  mod_job_giga_iodizium_miner_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_iodizium_miner$ 직위"
   mod_job_giga_iodizium_miner_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_iodizium_miner_add£" # 7075015880480886210
   job_giga_iodizium_mining_drone: "아이오디지움 채광 드론" # 293167032255557002
   job_giga_iodizium_mining_drone_plural: "아이오디지움 채굴 드론" # 9788846653133048913
   job_giga_iodizium_mining_drone_desc: "이 전문 광부들은 물리학을 거스르는 아이오다이슘 결정을 추출하기 위한 장비를 갖추고 있습니다." # 14818870721309998684
-  job_giga_iodizium_mining_drone_effect_desc: "£job_giga_iodizium_mining_drone£ 및 $job_giga_iodizium_mining_drone_plural$은(는) £energy£ §Y$energy$§!를 사용하여 £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!을(를) 안전하게 추출합니다." # 914567824435433788
-  mod_job_giga_iodizium_mining_drone_add: "$job_giga_iodizium_mining_drone$ 직업"
-  mod_job_giga_iodizium_mining_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_giga_iodizium_mining_drone$ 직위"
-  mod_job_giga_iodizium_mining_drone_per_pop_short: "§G+1§! £mod_job_giga_iodizium_mining_drone_add£당 $VALUE$ £pop£당" # 16838720549188075936
+  giga_tech_repeatable_orbital_naval_logistics_cap: "$name_orb_naval_logistics$ 관리 프로토콜" # 16559559016595002398
+  giga_tech_repeatable_orbital_naval_logistics_cap_desc: "우리 제국 영토 내에서 추가적인 §Y$name_orb_naval_logistics$§!를 건설하고 관리할 수 있게 해주는 고급 건설 및 유지보수 프로토콜입니다." # 7962147250112850250
+  giga_orbital_naval_logistics_capacity_increase_title: "§Y$name_orb_naval_logistics$§! 수용량: §G+1§!" # 16765057650447864975
+  giga_orbital_naval_logistics_capacity_increase_desc: "§Y$name_orb_naval_logistics$§!에 대한 제국 수용량이 §G+1§!만큼 증가합니다." # 15541205738880994378
+  decision_psionic_sublimation_desc: "" # 17241709254077376921
+  decision_psychic_illuminate_desc: "" # 17241709254077376921
+  count_pool_leader_trigger: "" # 17241709254077376921
+  ehof_header_blank: "" # 17241709254077376921
+  giga_dialog.2801.desc: "§Y$name_war_system$§!입니다.\n\n태양계 전체를 무기화하는 것은 결코 작은 작업이 아니며, 이 거대한 함선을 건설하려면 먼저 여러 개의 $name_war_planet$과 $name_war_moon$을 건설해야 합니다. 이들은 시스템크래프트의 거대한 선체에 통합될 것입니다. 실제 거대 구조물은 여러 고급 기술을 연구해야 하지만, 시스템크래프트 건설을 완료하는 데 필요한 부품을 미리 만들어 두는 것이 현명할 것입니다.\n\n필요한 천체:\n4개의 $name_war_planet$\n5개의 $name_war_moon$\n승무원으로 복무할 팝이 최소 4,000명 이상인 행성\n\n또한 콜로서스처럼 행성을 파괴할 수 있는 능력도 갖추고 있습니다.\n\n§R시스템크래프트가 함선 설계창에 제대로 표시되려면 UI Overhaul 모드가 필요합니다.§!" # 17955427638893594280
+  giga_dialog.2802.desc: "우리의 미래 $name_war_system$을 위한 건설 현장이 이제 완료되었습니다! 이 비계 위에서 우리는 은하계 역사상 가장 위대한 군함을 조립할 것입니다. 여러 개의 플래닛크래프트와 $name_war_moon$이 연결된 이 가공할 함선은 그 무엇이라도 격파할 수 있을 것입니다.\n\n필요한 천체:\n4개의 $name_war_planet$\n5개의 $name_war_moon$\n승무원으로 복무할 팝이 최소 4,000명 이상인 행성\n§Y(팝을 차출해도 행성은 사라지지 않습니다.)§!\n\n또한 콜로서스처럼 행성을 파괴할 수 있는 능력도 갖추고 있습니다.\n\n§R시스템크래프트가 함선 설계창에 제대로 표시되려면 UI Overhaul 모드가 필요합니다.§!" # 9794751497731706377
+  giga_dialog.2806.desc: "우리 시스템크래프트의 주무기가 완성되었습니다! 함선의 선수에 부착된 이 두 개의 플래닛크래프트는 불운하게도 경로를 가로막는 모든 대상에게 상상할 수 없는 화력을 퍼부을 수 있습니다. 이제 마지막 단계만 남았으며, 승무원으로 복무할 4,000명의 팝을 우리 제국 내 행성 중 한 곳에서 결정을 통해 모집해야 합니다.\n\n§Y함선 설계창에서 $name_war_system$을 설계하는 것을 잊지 마십시오§!\n\n§Y이 결정은 사용한 행성을 파괴하지 않으며, 단지 40명의 팝만을 차출합니다§!" # 17942407193264841010
+  job_giga_iodizium_miner_effect_desc: "$job_giga_iodizium_miner_swap_plural_with_icon$은 £consumer_goods£ §Y$consumer_goods$§!를 사용하여 £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!을 안전하게 추출합니다." # 17722508476462068133
+  job_giga_iodizium_miner_swap_plural_with_icon: "[giga_iodizium_miner.GetIcon] [giga_iodizium_miner.GetNamePlural]" # 6469141452300841486
+  mod_job_giga_iodizium_miner_add: "[giga_iodizium_miner.GetName] 직업" # 9682125160547437800
+  mod_job_giga_iodizium_miner_per_pop: "§G+1§! [giga_iodizium_miner.GetName] 직업 (팝 $VALUE$명당)" # 11066143720718020143
+  job_giga_iodizium_mining_drone_effect_desc: "$job_giga_iodizium_mining_drone_swap_plural_with_icon$은 £energy£ §Y$energy$§!를 사용하여 £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!을 안전하게 추출합니다." # 4674698782393050923
+  job_giga_iodizium_mining_drone_swap_plural_with_icon: "[giga_iodizium_mining_drone.GetIcon] [giga_iodizium_mining_drone.GetNamePlural]" # 791284004504034785
+  mod_job_giga_iodizium_mining_drone_add: "[giga_iodizium_mining_drone.GetName] 직업" # 14186933634063138284
+  mod_job_giga_iodizium_mining_drone_per_pop: "§G+1§! [giga_iodizium_mining_drone.GetName] 직업 (팝 $VALUE$명당)" # 16580789954932999779
+  mod_job_giga_iodizium_mining_drone_per_pop_short: "\n§G+1§! £mod_job_giga_iodizium_miner_add£ (팝 $VALUE$명당)" # 7075015880480886210
   giga_tech_ndb_1: "위상 초에너지 동력 축전기" # 9623590091791978678
   giga_tech_ndb_1_desc: "항성 크기의 거대 구조물 안에 막대한 양의 에너지를 저장하는 것은 엄청나게 유용하게 활용될 수 있습니다." # 1039574267560733827
   giga_tech_ndb_2: "극초점 거시 규모 결정질 렌즈" # 7550868492156419679
@@ -5911,26 +5927,6 @@
   interstellar_habitat_4_MEGASTRUCTURE_DETAILS: "$interstellar_habitat_4_DESC$" # 14788134727227055311
   interstellar_habitat_5: "$name_interstellar_ring$ 구역" # 17887099269431520908
   interstellar_habitat_5_DESC: "거주 가능한 상태로 완성된 $name_interstellar_ring$ 구역." # 17738073219577193079
-  giga_tech_orbital_bastion: "초거대 궤도 군사 요새" # 11220169538000027516
-  giga_tech_orbital_bastion_desc: "우리 제국의 함대가 성장함에 따라 그 수요도 증가하고 있습니다. 함대의 끊임없이 증가하는 수요에 대한 한 가지 해결책은 방대한 군사 장비를 수용하여 함대를 지원하는 거대한 $name_orb_bastion$들을 건설하는 것입니다." # 3930489061471391367
-  orbital_bastion_desc: "우리 군의 관리를 돕는 거대한 군사 복합체입니다." # 3489136062161507101
-  giga_dialog.601.name: "$name_orb_bastion$ 건설 현장 완료." # 7318526865595155267
-  giga_dialog.601.desc: "훈련 구역과 여러 막사가 완공되었습니다. 훈련을 시작할 수 있습니다.\n하지만 이 기지가 우리 제국에 이익이 되도록 업그레이드해야 합니다." # 7158305153529039621
-  giga_dialog.602.name: "$name_orb_bastion$ 완성." # 3631361882058599939
-  giga_dialog.602.desc: "[giga_system.GetName] 성계에 있는 우리의 궤도 병영이 이제 요새로 업그레이드되었습니다! 이 시설이 완성됨에 따라, 우리는 많은 수의 인원을 더 효과적으로 훈련시킬 수 있게 되었습니다. 홀로그램 시뮬레이터와 무중력 훈련장은 우리의 조종사와 병사 모두를 훈련시키기에 훌륭한 장소가 되어줍니다." # 4216186396333176230
-  giga_dialog.603.name: "행정 본부 완공" # 8046571353870645613
-  giga_dialog.603.desc: "[giga_system.GetName] 성계 요새가 행정 본부로 격상되었습니다. 이것이 완료됨에 따라, 군대의 병참 수요가 충족되었으며, 심지어 확장되었습니다. 수천 명의 숙련된 병력과 조종사들을 수용하는 이 시설은 우리의 군사 역량에 크게 기여할 것입니다." # 4014074791336749377
-  giga_dialog.604.name: "제독 사령부 완료." # 2833978073325999079
-  giga_dialog.604.desc: "우리 군부에게는 훌륭한 날입니다. 저희 행정 본부가 이제 제독 사령부로 바뀌었습니다. 이것이 완료됨에 따라, 저희 최고 제독 중 한 명이 개인 작전 기지를 가지게 되었습니다. 모든 함선에 연결된 무료 통신 시스템이 포함되어 있어, 강력한 지휘 능력을 발휘할 수 있습니다. 저희 함대에게 엄청난 버프를 제공합니다." # 4000150927486336059
-  orbital_bastion_0: "$gc_mega$$name_orb_bastion$ 건설 현장" # 11865471564034406100
-  orbital_bastion_0_DESC: "평범한 훈련 기지입니다.\n별다를 것 없습니다.\n현재는 아무런 보너스를 제공하지 않습니다.\n군사 기지를 건설하기 위한 기반입니다." # 17530919263188199527
-  orbital_bastion_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_military$\n§Y해군 수용력§! 및 §Y사령부 한계§!를 증가시킵니다.\n§L우리 함대의 군사 능력을 향상시키기 위한 다양한 시설을 수용하는 대형 궤도 구조물입니다. 우리 함대에 다양한 효과를 제공합니다." # 14770051670848792664
-  orbital_bastion_1: "$name_orb_bastion$" # 12698946579027081421
-  orbital_bastion_1_DESC: "다수의 사단 병력이 이곳에서 훈련하고 주둔하며, 필요한 모든 장비, 병참, 행정 인력을 갖추고 있습니다.\n훈련 교관도 배치되어 있습니다.\n함대 지원을 위한 다수의 정박 시설도 갖추고 있습니다." # 8498759570639224179
-  orbital_bastion_2: "군사 행정 부서" # 2528671759522617960
-  orbital_bastion_2_DESC: "해군과 그에 수반되는 모든 병참 요구 사항을 지원하는 거대한 복합 시설." # 14007460627605780223
-  orbital_bastion_3: "해군 사령부 작전" # 9839007259859707815
-  orbital_bastion_3_DESC: "주요 군 장교가 작전 편의성을 위해 주재하는 곳입니다. 수십 개의 건선거와 정박지를 갖춘 이 거대한 구조물은 은하계 함대 관리의 부담을 줄여줍니다." # 16253687880162623217
   giga_tech_orbital_elysium: "\"하향식\" 궤도 기반 시설" # 16975684126711065256
   giga_tech_orbital_elysium_desc: "행성 궤도 시설에서 행성을 통치하는 것은 우리가 상대적으로 거리낌 없이 우리의 의지를 강요할 수 있게 해줄 것입니다." # 11870710576832957392
   giga_dialog.1101.name: "$name_orb_elysium$ 완료됨" # 1166311656577039189
@@ -5987,225 +5983,6 @@
   giga_dialog.13606.desc: "[giga_system.GetName] 성계에 있는 파괴된 $name_giga_orbital$가 완전히 수리되었고 환경이 복원되었습니다. 이제 지표면은 식민지 개척자를 받아들일 준비가 되었으며, 링의 외곽 표면을 둘러싸고 있는 거대한 우주항 시설은 현지 물류에 의심할 여지 없이 큰 도움이 될 것입니다." # 9189211919832241997
   giga_stellar_ring_asteroid: "수집 대상 지정" # 9867846763351191334
   giga_stellar_ring_asteroid_desc: "이 소행성은 이 성계에서 $name_giga_orbital$의 건설에 사용하기 위해 채굴 대상으로 지정되었습니다." # 7369945183575052611
-  giga_tech_quasi_stellar_1: "초차원 보호막" # 3622568926778927844
-  giga_tech_quasi_stellar_1_desc: "퀘이사는 믿을 수 없을 정도로 에너지가 넘치는 천체입니다. 만약 우리가 그 부근에서 어떤 종류의 공학 프로젝트든 수행하려 한다면, 구조물을 퀘이사의 중력과 방사선으로부터 보호하기 위해 첨단 차폐 기술을 개발해야만 할 것입니다." # 5514774345782180608
-  giga_tech_quasi_stellar_2: "중력 강착 압축" # 864695781273542985
-  giga_tech_quasi_stellar_2_desc: "은하핵의 하이퍼퀘이사는 거대하고 극도로 강력한 에너지의 강착 원반에 둘러싸여 있습니다. 이 원반은 명백히 퀘이사 근처에 어떤 구조물도 조립하는 것을 불가능하게 만듭니다. 하지만, 퀘이사 근처에서 중력 상수를 변경함으로써 우리는 효과적으로 천체의 질량 증가를 시뮬레이션할 수 있으며, 이는 원반이 더 작은 크기로 수축하도록 강제할 것입니다. 이는 실질적으로 에너지 잠재력을 증가시키고 퀘이사 훨씬 더 가까운 곳에 구조물을 건설할 수 있게 해줄 것입니다." # 12031738003499589842
-  giga_tech_quasi_stellar_3: "상대론적 제트 편향" # 12704555158193140394
-  giga_tech_quasi_stellar_3_desc: "초대질량 퀘이사의 가장 두드러진 특징 중 하나는 양극에서 상대론적 속도로 분출되는 초가속 이온화 물질의 제트로 구성된 두 개의 거대한 제트가 존재한다는 점입니다. 이 제트들은 극도로 강력하며, 이들의 격변적인 에너지를 수확하고 재지향할 수 있다면 우리의 미래 초월무기 동력원으로 매우 유용할 것입니다." # 14140903192834696694
-  giga_tech_quasi_stellar_4: "테라스케일 컴퓨팅 기계" # 14982419815788547012
-  giga_tech_quasi_stellar_4_desc: "$name_quasistellar$은(는) 매우 거대하며, 구조를 제대로 유지하고 초무기가 사용하는 엄청난 양의 에너지를 관리하려면 그만큼 거대한 컴퓨터가 필요할 것입니다." # 5077959020191311235
-  giga_tech_quasi_stellar_5: "퀘이사 에너지 조작" # 14364204078181905524
-  giga_tech_quasi_stellar_5_desc: "초대질량 퀘이사에서 방출되는 막대한 양의 에너지를 채취, 저장, 그리고 재분배하는 일은 초차원 축전기부터 초중력장 변조에 이르기까지 몇 가지 극도로 발전된 기술을 결합해야 할 것입니다." # 10587827122266018049
-  giga_tech_quasi_stellar_6: "$name_quasistellar$" # 7708089865714462726
-  giga_tech_quasi_stellar_6_desc: "$name_quasistellar$는 우리에게 알려진 거의 모든 유형의 기술을 동원하는 무기입니다. 이는 은하계 전체에서 가장 에너지가 넘치는 천체를 무기로 활용하기 위한 것입니다. 이 두려운 구조물은 진정으로 초규모 무기의 정점이며, $name_ndb$와 시스템크래프트마저 몇 자릿수 차이로 능가합니다." # 17868450430287186069
-  quasi_stellar_obliterator_0: "$gc_tera$$name_quasistellar$ 건설 현장" # 3523350457925351363
-  quasi_stellar_obliterator_0_DESC: "미래의 $name_quasistellar$ 건설 현장입니다. 거대한 초대질량 퀘이사 옆에 떠 있는 이 상대적으로 작은 플랫폼은 이 은하에서 지적 존재가 조립한 것 중 가장 웅장하고 터무니없는 극강의 무기를 건설하기 위한 기지로 사용될 것입니다." # 17992613508047090473
-  quasi_stellar_obliterator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\n§Y하이퍼퀘이사§!를 중심으로 초무기를 건설합니다. 이는 전체 §Y성단§!을 파괴할 수 있습니다!\n§L퀘이사를 중심으로 건설된 터무니없이 거대한 초무기로, 헤아릴 수 없는 파괴력을 가집니다.§!" # 14919933773327760639
-  quasi_stellar_obliterator_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - §Y준항성 소멸기§!는 단일 §Y행성§!, §Y항성계§!, 혹은 전체 §Y성단§!을 파괴할 수 있습니다. 이것은 은하를 §Y분노하게§! 만들고 우리에 대항하여 §Y단결하게§! 만들 확률이 매우 높습니다!" # 3012003519591703946
-  quasi_stellar_obliterator_1: "$name_quasistellar$ 강착 응축기" # 2086872243095236247
-  quasi_stellar_obliterator_1_DESC: "이 거대한 부분 고리는 퀘이사를 둘러싸고 있으며, 초차원적 초중력 압착기를 사용하여 국지적으로 중력 상수를 변경하고 퀘이사의 격렬한 강착 원반을 효과적으로 응축합니다." # 1473729824939020723
-  quasi_stellar_obliterator_2: "$name_quasistellar$ 상대론적 편향기" # 1133536013085814218
-  quasi_stellar_obliterator_2_DESC: "정교하게 설계된 일련의 동력 도관과 초고효율 편향기를 사용하여 퀘이사의 극 제트를 조심스럽게 수집하고 방향을 전환함으로써, 우리의 초무기를 위한 막대한 양의 사용 가능한 에너지를 얻습니다." # 8821884000490579832
-  quasi_stellar_obliterator_3: "$name_quasistellar$ 하이퍼컴퓨터" # 9103608465548324615
-  quasi_stellar_obliterator_3_DESC: "초무기의 거대한 프레임 내부에 통합된 초대형 컴퓨터들은 퀘이사에서 끌어온 막대한 에너지 흐름을 적절히 제어하고 조절하며, 구조 전체를 안정화시키는 역할을 합니다." # 9360411431675941934
-  quasi_stellar_obliterator_4: "$name_quasistellar$ 테라축전기" # 18175279392198144455
-  quasi_stellar_obliterator_4_DESC: "이 거대한 고리들은 퀘이사 주위를 둘러싸고 강착 원반과 펜로즈 과정을 모두 이용해 에너지를 수확하고, 그것이 거대한 저장 시설이든 무기 자체든 필요한 곳이라면 어디든지 에너지를 재전송하기 위해 사용됩니다." # 5661766406974303886
-  quasi_stellar_marker_cluster: "QS-O 표적 표시기" # 13418849717579366436
-  quasi_stellar_marker_cluster_DESC: "QS-O의 불운한 표적을 지정하는 가상 표적 표시자." # 13689644297877282415
-  quasi_stellar_marker_cluster_MEGASTRUCTURE_DETAILS: "별 위에 올려놓아 QS-O의 목표로 지정하십시오." # 6450687486580564372
-  quasi_stellar_marker_cluster_open: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_cluster_open_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사하려고 합니다." # 5185876538347468554
-  quasi_stellar_marker_cluster_firing: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_cluster_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_obliterator_firing_1: "$name_quasistellar$" # 17601144298919610965
-  quasi_stellar_obliterator_firing_1_DESC: "이곳 $name_quasistellar$는 현재 무기를 발사 중입니다." # 14631366360564189831
-  quasi_stellar_obliterator_firing_1_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
-  quasi_stellar_obliterator_firing_laser_big: "QS-O 빔" # 2306538408002551954
-  quasi_stellar_obliterator_firing_laser_big_DESC: "순수한 파괴의 광선." # 1481050003191896651
-  quasi_stellar_obliterator_firing_laser_1: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_2: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_3: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_4: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_5: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_6: "$quasi_stellar_obliterator_firing_laser_big$" # 8251740443806680667
-  quasi_stellar_obliterator_firing_laser_1_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_2_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_3_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_4_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_5_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_6_DESC: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_big_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_1_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_2_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_3_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_4_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_5_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_obliterator_firing_laser_6_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_laser_big_DESC$" # 6711867246979900954
-  quasi_stellar_gateway_off: "QS-O 관문" # 14234569560350298316
-  quasi_stellar_gateway_off_DESC: "$name_ndb$의 게이트웨이와 원리가 유사하게, 이 아공간 차원문은 막대한 양의 에너지를 즉각적으로 전달할 수 있습니다." # 2413805339561659425
-  quasi_stellar_gateway_off_MEGASTRUCTURE_DETAILS: "$quasi_stellar_gateway_off_DESC$" # 5823537751485805448
-  quasi_stellar_gateway_on: "활성화된 QS-O 게이트웨이" # 847019798387254691
-  quasi_stellar_gateway_on_DESC: "$name_ndb$의 게이트웨이와 원리가 유사하게, 이 아공간 차원문은 막대한 양의 에너지를 즉각적으로 전달할 수 있습니다." # 2413805339561659425
-  quasi_stellar_obliterator_5: "$name_quasistellar$" # 17601144298919610965
-  quasi_stellar_obliterator_5_DESC: "완벽하고 완전하게 작동하는 $name_quasistellar$. 퀘이사의 극 제트, 강착 원반, 그리고 펜로즈 과정에서 에너지를 끌어와서, 이 거대한 초무기는 불운한 목표물에게 은하 전체에 해당하는 항성 에너지의 분노를 해방시킬 수 있습니다." # 18168820498654206907
-  quasi_stellar_obliterator_6: "QS-오블리터레이터 제어판" # 4078402750965541595
-  quasi_stellar_obliterator_6_DESC: "초광속 무기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
-  quasi_stellar_marker_star: "QS-O 표적 표시기" # 13418849717579366436
-  quasi_stellar_marker_star_DESC: "QS-O의 불운한 표적을 지정하는 가상 표적 표시자." # 13689644297877282415
-  quasi_stellar_marker_star_MEGASTRUCTURE_DETAILS: "별 위에 올려놓아 QS-O의 목표로 지정하십시오." # 6450687486580564372
-  quasi_stellar_marker_star_open: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_star_open_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사하려고 합니다." # 5185876538347468554
-  quasi_stellar_marker_star_firing: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_planet: "QS-O 표적 표시기" # 13418849717579366436
-  quasi_stellar_marker_planet_DESC: "QS-O의 불운한 표적을 지정하는 가상 표적 표시자." # 13689644297877282415
-  quasi_stellar_marker_planet_MEGASTRUCTURE_DETAILS: "행성 위에 놓아 QS-O의 대상으로 지정하십시오." # 1083116072151044507
-  quasi_stellar_marker_planet_open: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_planet_open_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사하려고 합니다." # 5185876538347468554
-  quasi_stellar_marker_planet_firing: "QS-O 웜홀" # 11645418235861870851
-  quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  giga_fed.3012.name: "§R선전포고!§!" # 3828935067342864944
-  giga_fed.3012.desc: "[root.GetName], 우리는 당신의 사악한 행위가 더 이상 계속되도록 내버려 둘 수 없습니다.\n\n이는 공식적인 선전포고입니다. 지금 항복하십시오. 그러면 어쩌면 당신 문명을 파괴에서 구해줄 수도 있습니다." # 1504776468670246963
-  giga_fed.3012.a: "한심하군." # 6581342902351992097
-  giga_fed.3006.name: "은하 방위 협약" # 5678889983941079066
-  giga_fed.3006.desc: "[root.GetName]이 우리가 아는 문명을 위협할 수 있는 초월 무기 건설에 착수했습니다.\n\n이에 따라 [giga_galactic_pact_president.GetName]의 주도로, 우리는 [root.GetName]의 사악한 활동을 종식시켜 우리 은하계의 미래를 수호할 연방인 §B은하 방위 조약§!의 창설을 공식적으로 선포합니다.\n\n[root.GetName], 당신의 끝없이 커져가는 광신적인 성향에 휩쓸리지 않을 것입니다." # 13975257344278230211
-  giga_fed.3006.a: "겉만 요란한 것이 틀림없군." # 14957839096961128538
-  giga_fed.3006.b: "별로군." # 17104357171569901828
-  giga_fed.3006.c: "고작 이게 전부입니까?" # 8816587624461172892
-  giga_fed.3006.d: "훌륭합니다! 이로써 작업이 훨씬 수월해지겠군요." # 11235401702886444927
-  giga_fed.3005.name: "§B은하 방위 조약§!" # 12692431250970762699
-  giga_fed.3005.desc: "은하계의 수많은 성계 국가들이 공동의 대의를 위해 협력하는 것은 종종 어려운 일입니다. 하지만 [root.GetName]이 거대한 초강력 무기를 건설한 후, 외교적 기적이라고밖에 부를 수 없는 일로, 남아있는 은하계 대부분의 제국들이 정해지지 않은 기간 동안의 휴전에 동의했으며, 그들의 차이점을 제쳐두고 §B은하 방위 조약§이라고 알려진 은하계 전체를 아우르는 연방으로 뭉쳤습니다!\n\n[giga_galactic_pact_president.GetName]이 이끄는 이 거대한 연방은 [root.GetName]의 파괴적인 초강력 무기로부터 은하계를 보호하는 것을 목표로 하고 있으며, 그들에 대한 공세적인 행동을 취하는 것은 시간문제일 뿐입니다..." # 10112105913542581969
-  giga_fed.3005.a: "궁지에 몰린 쥐들처럼 뭉치다." # 6093639556935623489
-  giga_qso.2005.name: "$name_quasistellar$ 완료!" # 14384915908562526579
-  giga_qso.2005.desc: "마침내. 수십 년에 걸친, 은하핵의 초거대 퀘이사 부근에서의 위험하고 끔찍한 작업 끝에, 우리의 역작이 마침내 완성되었습니다.\n\n$name_quasistellar$, 심지어 $name_ndb$마저 압도하는 전례 없는 규모의 무기입니다. 그 에너지 출력은 약 20조 개의 항성과 맞먹습니다. 불운한 목표에게 상상조차 할 수 없는 파괴력을 해방시킬 수 있습니다. 이는 우리가 이 우주를 완전히 지배하며, 하늘 그 자체를 우리의 의지대로 구부릴 수 있다는 증거입니다.\n\n수백 천문단위 크기의 이 거대한 초무기가 완성됨으로써, 이제 우리 적들이 할 수 있는 유일한 일은 자비를 비는 것뿐입니다." # 14223772209930321852
-  giga_qso.2005.a: "드디어, 궁극의 무기가 우리 손에 들어왔다!" # 169486935539146796
-  giga_qso.2003.name: "$name_quasistellar$ 하이퍼컴퓨터 완료!" # 12979157238422646118
-  giga_qso.2003.desc: "저희 $name_quasistellar$의 초컴퓨터가 이제 완성되었습니다.\n이 거대한 컴퓨터 장치 세트는 구조를 유지하고 발사 과정이 원활하게 진행되도록 보장하는 임무를 맡습니다.\n무기에 의해 전달될 막대한 양의 에너지 또한 관리할 수 있습니다.\n이제 우리는 이 에너지를 무기 자체로 운반하는 데 사용될 축전 장치 작업을 시작해야 합니다." # 6902960591062578163
-  giga_qso.2003.a: "아주 좋습니다." # 2006367686461631787
-  giga_qso.2004.name: "$name_quasistellar$ 테라 커패시터 완료!" # 6049395420370817101
-  giga_qso.2004.desc: "우리 초광속 무기의 테라 축전기가 이제 조립되었습니다. 거대한 일련의 수렴 고리로, 이것들은 퀘이사에서 수집한 막대한 양의 에너지를 전달 및 저장하고, 발사 시퀀스가 시작될 때마다 초광속 무기 쪽으로 재지향합니다. 이제 한 단계만이 남았는데, 그것은 초광속 무기의 가장 중요한 부분인 거대한 주포를 건설하는 것입니다." # 2879495079903529356
-  giga_qso.2004.a: "훌륭합니다. 곧, 우리는 무한한 힘을 소유하게 될 것입니다." # 13166256092087810052
-  giga_fed.4012.name: "§R선전포고!§!" # 3828935067342864944
-  giga_fed.4012.desc: "[root.GetName], 은하를 향한 당신의 광기 어린 파괴 행위를 더 이상 계속되도록 둘 수 없습니다.\n\n이는 공식적인 선전포고입니다. 어떤 대가를 치르더라도 당신을 쓰러뜨릴 것입니다!" # 15505596981073885339
-  giga_fed.4012.a: "가련한 놈들." # 588694096543972253
-  giga_fed.4011.name: "범은하 방어 연맹" # 113481490741535293
-  giga_fed.4011.desc: "은하의 거주자들이여!\n\n[root.GetName]가 만약 완성된다면 우리가 아는 은하계의 모든 생명체를 종식시킬 수 있는 무기 건설에 착수했습니다. 따라서 이 은하의 미래를 수호하기 위해 범은하 방어 연맹의 창설을 공식적으로 선포하며, [root.GetName]의 사악한 계획이 현실이 되지 않도록 우리의 모든 역량을 다할 것입니다.\n\n우리가 가만히 당하고만 있지 않으리라는 것을 [root.GetName], 명심하십시오!" # 12205699127541482998
-  giga_fed.4011.a: "바보들! 너희는... 너희는 우리를 막을 수 없어!" # 11463041376154843915
-  giga_fed.4010.name: "범은하 방위 연맹의 탄생!" # 2928271786429322040
-  giga_fed.4010.desc: "은하는 언제나 위험한 곳이었으며, 소규모 국경 분쟁부터 전면적인 은하 전쟁에 이르기까지 모든 규모의 전쟁이 은하 역사 전반에 걸쳐 흔하게 발생했습니다.\n\n하지만 최근 [root.GetName]이 이전에 건설된 그 어떤 것도 왜소하게 만들 정도의 엄청난 규모와 범위의 초거대 무기를 건설하기 시작했습니다. 그리고 잠시나마 정신이 든 모든 은하계 거주자들은 갑자기 깨달았습니다. 이 무기가 완성된다면 초래할 파괴에 비하면 자신들의 사소한 분쟁과 다툼은 아무것도 아니라는 것을요.\n\n그리하여 [giga_galactic_pact_president.GetName]의 주도하에, 은하계에 남아있는 세력들은 자신들의 차이점을 제쳐두고, [root.GetName]이 은하계에 위협을 가하는 동안만이라도, §BPangactic Defense League§!라고 알려진 단일 은하계 규모의 초국가를 결성하기로 결정했습니다.\n\n이 거대한 제국은 [root.GetName]의 파괴적인 노력을 저지하는 데 성공할까요, 아니면 오히려 은하계의 종말을 가속화할까요? 이제 곧 알게 될 것 같습니다...\n\n§R범은하 방위 연맹이 제대로 형성되는 데는 몇 분이 걸릴 수 있습니다.§!" # 15140415086801196023
-  giga_fed.4010.a: "이것이... 이것이 우리를 막지 못한다!" # 921641037135418177
-  giga_qso.2000.name: "$name_quasistellar$ 건설 현장 완료됨!" # 18235813554945423337
-  giga_qso.2000.desc: "우리의 $name_quasistellar$ 건설 부지가 은하 중심부에 완공되었습니다! 초대질량 퀘이사 옆에 떠 있는 이 시설은 전례 없는 규모의 무기를 조립하는 기지로 사용될 것이며, 이 거대한 괴물과 비교하면 $name_ndb$는 단순한 폭죽에 불과할 정도의 막대한 파괴력을 휘두르게 될 것입니다. 첫 단계는 실제 초월적인 무기 자체를 작업하기 위해 퀘이사의 강착 원반을 응축하는 것입니다.\n\n§R경고: 이 극도로 강력한 초월 무기의 건설을 추진하면 우리와 동맹 연방에 속하지 않은 모든 제국이 분노하여 외교가 불가능해질 것입니다§!" # 11416003363189217218
-  giga_qso.2000.a: "확인했습니다." # 3536622398024101432
-  giga_qso.2001.name: "$name_quasistellar$ 강착 응축기 완료!" # 17298620200471963003
-  giga_qso.2001.desc: "우리의 초강력 무기 건설의 첫 단계가 완료되었습니다. 준성 주위에 거대한 부분 고리가 조립되었으며, 이는 에너지 강착 원반에 막대한 중력 압력을 가하여 크기를 줄이도록 강제하고 있습니다. 이로써 원반이 방해되지 않는 상태에서 초강력 무기의 나머지 부분을 완성할 수 있게 될 것입니다.\n\n§R우리가 이 초강력 무기 건설에 전념하고 있다는 것이 명백해지자, 연방 구성원을 제외한 모든 이들이 우리와의 외교 관계를 단절했습니다. 건설이 진행됨에 따라 상황이 점점 더 악화될 것으로 예상해야 합니다...§!" # 10008524197073537491
-  giga_qso.2001.a: "무한한 힘을 위한 하찮은 대가." # 8612020314941151788
-  giga_qso.2002.name: "$name_quasistellar$ 상대론적 편향기 완료!" # 16934827206617693978
-  giga_qso.2002.desc: "우리 $name_quasistellar$의 활성화를 향한 또 다른 단계가 이제 완료되었습니다. 엄청난 축전기 및 연료관 네트워크를 통해 나머지 구조물과 연결된 두 개의 거대한 수집기가 퀘이사의 극 제트(polar jets)를 수집하고, 그 에너지를 구조물의 주 무기로 재분배할 것입니다. 이제, 이 거대한 하이퍼 무기를 관리하는 데 필요할 거대한 컴퓨팅 어레이 건설을 시작해야 합니다." # 13622545675013662410
-  giga_qso.2002.a: "좋습니다." # 843958112380023394
-  giga_qso.3000.name: "콰사리아 평화" # 14516309440491175786
-  giga_qso.3000.desc: "§R경고!§!\n\n우리의 $name_quasistellar$의 중요한 부분이 완성된 후, 은하계가 우리를 은하계 안전에 대한 보편적인 위협으로 간주하기 시작한 것 같습니다. 실제로, 모든 비(非)대학살 제국들은 오늘 기한을 정하지 않은 휴전과 상호 불가침 조약에 동의했으며, 이는 '팍스 콰사리아(Pax Quasaria)'로 불립니다. 그들은 적어도 지금 당장은 우리의 초월적 무기가 은하계 안전을 위협하지 못하도록 하기 위해 사소한 다툼을 제쳐두기로 결정했습니다..." # 9789629933934543932
-  giga_qso.3000.a: "그것이 그들에게 소용이 있을 것이라 생각하는가?" # 6328228696513221900
-  giga_qso.500.name: "$name_quasistellar$: 매개변수" # 9163117663241832459
-  giga_qso.500.desc: "여기서 QS-O의 일부 측면을 설정할 수 있습니다.\n\n충전 속도를 변경하면 초광속 무기의 £giga_sr_quasaric_energy£ 출력이 수정됩니다. 더 낮은 충전 속도는 더 적은 양을 생성하지만, £giga_sr_quasaric_energy£에서 변환된 일부 £energy£를 돌려받게 됩니다. 더 높은 충전 속도는 더 많은 양을 생성하지만, 구조물을 과충전하는 데 필요하므로 그 대가로 일부 £energy£가 소모됩니다.\n\n또한 일부 자원($£minerals£ £food£ £consumer_goods£ £alloys£ £pops£)을 퀘이사로 투하하도록 선택할 수 있습니다. 이 자원들은 밝은 강착 원반과 충돌하여 고에너지 입자의 연쇄 반응을 일으키며, 이는 초광속 무기에 더 많은 £giga_sr_quasaric_energy£를 제공하는 데 사용될 수 있습니다." # 17147007711942976681
-  giga_qso.501.name: "$name_quasistellar$: 자원 투기" # 9023221167383889673
-  giga_qso.501.desc: "다양한 자원을 초거대 퀘이사에 투입하여 밝은 강착 원반을 가동하고, 에너지를 생성하여 £giga_sr_quasaric_energy£로 전환할 수 있습니다.\n\n퀘이사에 투입할 것을 선택하십시오." # 8334906689448368335
-  giga_qso.1.panel: "제어 콘솔로 돌아가기" # 6651052307512494948
-  giga_qso.500.dump: "자원 배출..." # 16399291311687766444
-  giga_qso.500.minerals: "10만 £minerals£ 투입 -> 25 £giga_sr_quasaric_energy£" # 9432907881009009955
-  giga_qso.500.alloys: "5만 £alloys£ 투입 → 30 £giga_sr_quasaric_energy£" # 1632348756324458880
-  giga_qso.500.food: "50k £food£ 소모 --> 30 £giga_sr_quasaric_energy£" # 6859299654176157298
-  giga_qso.500.goods: "£소비재£ 10만 소모 -> £giga_sr_quasaric_energy£ 30" # 2148137005255117655
-  giga_qso.500.undesirable: "§BUndesirable Pops§ 25개 투입! --> 5 £giga_sr_quasaric_energy£" # 11654841240457018177
-  giga_qso.500.undesirable.tooltip: "우리는 원치 않는 시민권 상태의 무작위 팝 25개를 퀘이사에 투하할 것입니다. 그들의 구성 에너지는 마침내 무언가에 유용하게 쓰일 것입니다." # 6451662748430201755
-  giga_qso.500.increase: "§H충전 속도 향상§!" # 12019298318630894453
-  giga_qso.500.decrease: "§E충전 속도 감소§!" # 2838782076264846825
-  giga_qso.500.intensityphysicslimits: "§Y현재 충전율:§! §L네.§! | 25 £giga_sr_quasaric_energy£ -22500 £energy£" # 12899733246016849010
-  giga_qso.500.intensityinsane: "§Y현재 충전 속도:§! §M미친 듯이 높음§! | 20 £giga_sr_quasaric_energy£ -15000 £energy£" # 7396618561240275569
-  giga_qso.500.intensityextremely: "§Y현재 충전 속도:§! §R극도로 높음§! | 17 £giga_sr_quasaric_energy£ -10000 £energy£" # 14857255728130909996
-  giga_qso.500.intensityveryhigh: "§Y현재 충전율:§! §P매우 높음§! | 14 £giga_sr_quasaric_energy£ -6000 £energy£" # 1167550153953046053
-  giga_qso.500.intensityhigh: "§Y현재 충전 속도:§! §H높음§! | 12.5 £giga_sr_quasaric_energy£ -3000 £energy£" # 16604490013183649752
-  giga_qso.500.intensitymed: "§Y현재 충전 속도:§! §Y보통§! | 10 £giga_sr_quasaric_energy£ 0 £energy£" # 18413951806636795481
-  giga_qso.500.intensitylow: "§Y현재 충전율:§! §G낮음§! | 5 £giga_sr_quasaric_energy£ 4000 £energy£" # 5992823997955883766
-  giga_qso.500.intensityverylow: "§Y현재 충전 속도:§! §B매우 낮음§! | 1.5 £giga_sr_quasaric_energy£ 8000 £energy£" # 2637118636969788410
-  giga_qso.500.intensitynone: "§Y현재 충전율:§! 없음 | 0 £giga_sr_quasaric_energy£ 10000 £energy£" # 306885660523277834
-  giga_qso.1.name: "$name_quasistellar$ 제어판" # 16897782324585522277
-  giga_qso.1.desc: "$name_quasistellar$ 제어판에 오신 것을 환영합니다.\n\n여기서는 초광속 무기의 표적을 선택하거나 그 매개변수를 설정할 수 있습니다.\n\n표적을 선택하면 항성, 행성, 또는 함대를 조준할 수 있습니다. QS-O를 발사하려면 거대 구조물 자체에서 생성되는 £giga_sr_quasaric_energy£§Y퀘이사 에너지§!가 필요하다는 것을 기억하십시오.\n\n매개변수를 확인하면 무기의 충전 속도를 변경하여 우리의 QS-O에 축적되는 £giga_sr_quasaric_energy£§Y퀘이사 에너지§!의 양을 증가시키거나 감소시킬 수 있습니다.\n\n§B이 메뉴는 칙령을 통해서도 직접 접근할 수 있습니다.§!" # 4442429398233067873
-  giga_qso.1.fire: "목표 선택" # 17197739327671908149
-  giga_qso.1.parameters: "매개변수 보기" # 5089501324697885199
-  giga_qso.1.quit: "제어판 닫기" # 8654791386900170573
-  giga_qso.1.menu: "메뉴로 돌아가기" # 13647656362209151972
-  giga_qso.10.name: "$name_quasistellar$: 대상 선택" # 3462059780304385308
-  giga_qso.10.desc: "여기서 QS-O를 이용해 표적으로 삼을 대상을 선택할 수 있습니다. 각 표적화 방식이 어떻게 작동하는지 제대로 확인하십시오. 더 큰 표적을 파괴하려면 더 많은 £giga_sr_quasaric_energy£§Y퀘이사 에너지§!가 필요하다는 점을 유념하십시오." # 5272583780578327629
-  giga_qso.10.fleet: "§G함대§를 격파하라!" # 10119981022883949947
-  giga_qso.10.planet: "§Y행성§을 파괴하세요!" # 12873277033834125115
-  giga_qso.10.star: "§H태양계§!를 파괴하십시오!" # 7627824757936614619
-  giga_qso.10.starcluster: "§R성단 파괴하기§!" # 16622518876763072242
-  giga_qso.200.name: "$name_quasistellar$: §G함대 파괴§!" # 12681665395567959031
-  giga_qso.200.desc: "당신은 $name_quasistellar$를 이용해 적 함대를 겨냥하기로 결정했습니다. 이는 §Y20§! £giga_sr_quasaric_energy£를 소모합니다.\n\nQS-O의 조준을 보정하는 데 사용될 특수 함선이 구조물 근처에 생성됩니다. 이 함선은 특수하고 무한한 사거리의 점프 추진기를 장착하고 있습니다. 이 함선을 목표 함대가 있는 성계로 이동시킨 후, 제어판을 다시 열어 확인하십시오.\n\n초강력 무기가 보정되는 동안 함선은 §Y5일§! 동안 생존해야 합니다. 따라서 적절한 호위가 필요합니다.\n\n5일이 지나면 QS-O는 웜홀을 통해 적 함대를 직접 향해 30일간 발사합니다. 그러나 웜홀은 적의 공격에 의해 방해받을 수 있으므로, 혼자 두는 것은 권장되지 않습니다.\n\n작전을 취소하려면, 함선을 해체하거나 제어판을 사용하십시오." # 10050287250544714985
-  giga_qso.200.yes: "진행합시다." # 10508287875752728947
-  giga_qso.201.name: "준항성 보정기 완성" # 2311939271958579488
-  giga_qso.201.desc: "우리의 큐에스-오가 소형 준성 교정 함선을 구축했습니다. 이는 초무기가 발사될 웜홀을 적절히 교정하고 조준하기 위해 활용될 것입니다.\n발사 시퀀스를 시작하려면, 표적 함대가 있는 성계로 그 함선의 점프 추진기를 사용하여 이동시키십시오." # 9232956873982495601
-  giga_qso.201.a: "알겠습니다." # 12076608091024442278
-  giga_qso.202.name: "준성 보정기 해체됨" # 3399619984661545329
-  giga_qso.202.desc: "우리는 우리의 고성준성 보정기를 해체했습니다. 파괴 절차는 취소되었습니다." # 13861152261220405598
-  giga_qso.202.a: "알겠습니다." # 12076608091024442278
-  giga_qso.203.name: "준성 교정기 파괴" # 4368021568578580263
-  giga_qso.203.desc: "우리의 준성급 보정기가 적대 세력에 의해 파괴되었습니다. 파괴 절차가 취소되었습니다." # 4376026118695024223
-  giga_qso.203.a: "알겠습니다." # 12076608091024442278
-  giga_qso.204.name: "$name_quasistellar$: §G함대 파괴§!" # 12681665395567959031
-  giga_qso.204.desc: "준성계 보정기를 올바른 성계에 설치했다면, 첫 번째 선택지를 고르십시오. 5일 동안 그것을 보호해야 할 것입니다. 취소하고 싶다면, 세 번째 선택지를 고르십시오. 이는 보정기를 해체할 것입니다." # 14777665855750118664
-  giga_qso.204.fire: "보정 시작! 비용: §Y20§! £giga_sr_quasaric_energy£" # 4073139498248894590
-  giga_qso.204.markers: "캘리브레이터가 아직 설치되지 않았습니다." # 9577831813151518181
-  giga_qso.205.name: "말살자 보정 중" # 8646183773765263842
-  giga_qso.205.desc: "우리의 $name_quasistellar$가 구경 측정선을 이용해 무기 구경 측정을 시작했습니다.\n5일 동안 파괴되지 않도록 해야 하며, 그 후 우리의 초강력 무기가 적에게 순수한 파괴의 광선을 발사할 것입니다.\nQS-O는 약 30일 동안 발사할 것이며, 그 후 웜홀이 사라지고 QS-O는 다시 사용할 준비가 될 것입니다." # 11798962330679841093
-  giga_qso.205.a: "훌륭하군!" # 4205353275372794963
-  giga_qso.206.name: "$name_quasistellar$: 교정 완료" # 17682171529136782842
-  giga_qso.206.desc: "우리의 $name_quasistellar$가 초광속 무기와 웜홀 보정을 완료했습니다. 이제 우리가 대상으로 지정한 불운한 함대에 그 분노를 퍼부을 것입니다." # 1750336718146705616
-  giga_qso.206.a: "훌륭하다. 그들을 불태워라." # 3736572096469013180
-  giga_qso.400.name: "$name_quasistellar$: §R성단 파괴§!" # 234994378377745993
-  giga_qso.400.desc: "당신은 항성 및 해당 항성과 직접 연결된 모든 하이퍼레인 인접 성계를 파괴하는 것을 선택했습니다. 그렇게 하려면 파괴하고자 하는 항성 위에 건설선을 사용하여 §BQS-O 표적 표식§!을 건설하세요.\n\n이것은 즉시 건설되며 건설선이 해당 성계에 물리적으로 존재할 필요가 없습니다.\n\n§R그러나 해당 성계는 적대 세력으로부터 정리되어야 합니다.§!\n이를 용이하게 하기 위해 QS-O 함대 파괴 기능을 사용할 수 있습니다.\n\n표적 표식이 건설되면 QS-O로 돌아가 제어판을 다시 열어 장치를 발사하세요.\n\n§B폭발은 매우 강력하여 하이퍼레인을 통해 전파될 것입니다. 그 결과 표적 성계와 해당 성계에 연결된 모든 성계는 완전히 파괴되고 해당 하이퍼레인은 삭제되어 빈 공간만 남게 될 것입니다.§!" # 10921671942205917413
-  giga_qso.401.name: "§R성단 파괴§!" # 12787416194069203670
-  giga_qso.401.desc: "당신이 파괴하고자 하는 성단 중심부의 별을 조준했다면, 첫 번째 선택지를 선택하십시오. 취소하고자 한다면, 마커를 삭제하는 세 번째 선택지를 선택하십시오." # 11954327776040186260
-  giga_qso.401.fire: "성단 파괴, 발사! 비용: §Y120§! £giga_sr_quasaric_energy£" # 5463050922434914022
-  giga_qso.401.markers: "아직 항성을 대상으로 지정하지 않았습니다." # 15210945017263417035
-  giga_qso.300.name: "$name_quasistellar$: §H태양계 파괴§!" # 11812060291639374609
-  giga_qso.300.desc: "$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!\n$empire_name$의 #bold 은하 황제#가" # 5792782414052133794
-  giga_qso.301.name: "$name_quasistellar$: §H태양계 파괴§!" # 11812060291639374609
-  giga_qso.301.desc: "파괴하려는 모든 항성들을 지정했다면, 첫 번째 선택지를 고르십시오. 취소하고 싶다면, 모든 표시를 삭제하는 세 번째 선택지를 고르십시오." # 2417853773588341544
-  giga_qso.301.markers: "우리는 발사하기 전에 아직 더 많은 항성을 조준해야 합니다." # 16115740964640812121
-  giga_qso.301.fire.1: "항성계 하나 파괴, 발사! 비용: §Y40§! £giga_sr_quasaric_energy£" # 8693971891528124820
-  giga_qso.301.fire.2: "태양계 2개 파괴, 발사! 비용: §Y80§! £giga_sr_quasaric_energy£" # 17586220859756789593
-  giga_qso.301.fire.3: "3개의 항성계 파괴, 발사! 비용: §Y120§! £giga_sr_quasaric_energy£" # 4831469792013124175
-  giga_qso.301.fire.4: "태양계 4개 파괴, 발사! 비용: §Y160§! £giga_sr_quasaric_energy£" # 3577678195354813890
-  giga_qso.100.name: "$name_quasistellar$: §Y행성 파괴§!" # 9745352348384374549
-  giga_qso.100.desc: "$empire_name$의 #bold 은하 황제#가 [target_country.GetName]에게 전쟁을 선포했습니다!" # 8288705236865781408
-  giga_qso.100.yes: "진행합시다." # 10508287875752728947
-  giga_qso.100.no: "재고해보니..." # 800586801252134794
-  giga_qso.101.name: "$name_quasistellar$: §Y행성 파괴§!" # 9745352348384374549
-  giga_qso.101.desc: "파괴하고자 하는 모든 행성을 대상으로 지정했다면, 첫 번째 선택지를 선택하십시오. 취소하고자 한다면, 모든 표식을 삭제하는 세 번째 선택지를 선택하십시오." # 3770263849268359880
-  giga_qso.101.fire.1: "행성 1개 파괴, 발사! 비용: §Y5§! £giga_sr_quasaric_energy£" # 11238311352097309775
-  giga_qso.101.fire.2: "행성 2개 파괴, 발사! 비용: §Y10§! £giga_sr_quasaric_energy£" # 679952403040770428
-  giga_qso.101.fire.3: "행성 3개 파괴, 발사! 비용: §Y15§! £giga_sr_quasaric_energy£" # 10474523362567446824
-  giga_qso.101.fire.4: "행성 4개 파괴, 발사! 비용: §Y20§! £giga_sr_quasaric_energy£" # 2730264847816091180
-  giga_qso.101.fire.5: "5개의 행성 파괴, 발사! 비용: §Y25§! £giga_sr_quasaric_energy£" # 15481291319398768638
-  giga_qso.101.fire.6: "행성 6개를 파괴하라, 발사! 비용: §Y30§! £giga_sr_quasaric_energy£" # 9028147582386594452
-  giga_qso.101.fire.7: "행성 7개 파괴, 발사! 비용: §Y35§! £giga_sr_quasaric_energy£" # 16935958793803303101
-  giga_qso.101.fire.8: "행성 8개 파괴, 발사! 비용: §Y40§! £giga_sr_quasaric_energy£" # 13282562645252753837
-  giga_qso.101.fire.9: "행성 9개 파괴, 발사! 비용: §Y45§! £giga_sr_quasaric_energy£" # 4721431069185987211
-  giga_qso.101.fire.10: "행성 10개 파괴, 발사! 소모: §Y50§! £giga_sr_quasaric_energy£" # 7371664797103122256
-  giga_qso.101.markers: "공격하기 전에 아직 더 많은 행성을 표적으로 지정해야 합니다." # 8632121188812889061
-  giga_qso.101.cancel: "취소" # 18265839255943291567
-  giga_birch.300.name: "하이퍼퀘이사" # 10981417733557943253
-  giga_birch.300.desc: "고된 여정 끝에, 우리 과학선이 마침내 은하 중심부에 도달했습니다.\n성계에 진입하자, 승무원들은 절대적으로 거대한 §Y활동성 초거대 퀘이사§, 즉 하이퍼퀘이사(Hyperquasar)의 광경에 경악했습니다.\n\n이 거대한 천체는 수억 개의 항성 질량을 가지고 있으며, 지름은 수백 천문단위에 달합니다.\n비록 현재로서는 단순한 추측에 불과하지만, 과학계의 가장 급진적인 일부 인사들은 이 퀘이사를 중심으로 막대한 에너지를 활용하여 헤아릴 수 없는 파괴력을 가진 빔을 발사할 수 있는 거대한 초월적 무기를 건설하는 것이 가능할 것이라고 이론화하고 있습니다." # 8017460021263681983
-  giga_birch.300.a: "경이롭군!" # 11826258457890550173
-  giga_qso.110.name: "기계 행성 파괴됨" # 7664338443016884309
-  giga_qso.110.desc: "$name_quasistellar$의 웜홀이 머리 위로 나타난 순간, 기계 세계의 운명은 이미 결정되었습니다. 직후, 은하계 전체 에너지 생산량에 맞먹는 막대한 에너지 흐름이 웜홀에서 뿜어져 나왔습니다. 그 빔이 행성을 완전히 파괴하는 데는 단 몇 초밖에 걸리지 않았습니다.\n\n이전의 로봇 세계는 아무것도 남지 않았으며, 그 결과 유령 신호가 심각하게 약화되었습니다." # 9062670973478491109
-  giga_qso.110.a: "이제 정신 좀 차리겠지." # 15434868374470104590
-  giga_qso.112.name: "컨틴전시의 종식" # 15506281177460152470
-  giga_qso.112.desc: "컨틴전시가 실패했습니다. 마지막 기계 행성이 파괴됨에 따라, 은하계는 더 이상 체계적인 대멸종의 위협에 직면하지 않습니다. 적어도 컨틴전시에 의한 위협은 아닙니다. 살아남은 모든 컨틴전시 전투 형태는 동력을 차단하거나 자폭했으며, 유령 신호는 더 이상 전송되지 않습니다.\n\n주요 연결체는 $name_quasistellar$의 엄청나게 강력한 레이저에 의해 불과 몇 초 만에 완전히 소멸되었으며, 아무것도 남지 않았습니다.\n\n컨틴전시는 더 이상 존재하지 않지만, [quasistellar_owner.GetName]가 그들의 초무기를 다른 목표물에게 겨눌지는 아직 지켜봐야 할 것입니다..." # 4614566760760267071
-  giga_qso.112.a: "수조 개의 태양의 위력에 맞서 그들이 어찌하겠는가?" # 13530594081540161860
   giga_tech_hrae_mc: "상대론적 특이점 수확" # 16481063402131454133
   giga_tech_hrae_mc_desc: "블랙홀은 자체적으로 에너지를 거의 방출하지 않지만, 실제로는 거대한 에너지의 원천입니다. 거대한 블랙홀 주변에 맞게 조정된 여러 첨단 에너지 수확 방법을 조합하면, 블랙홀이 제공하는 모든 에너지를 완전히 독점할 수 있는 극도로 효율적인 기계를 조립할 수 있을 것입니다." # 7380131722054058450
   giga_dialog.3101.name: "$name_hraemc$ 건설" # 12290264989902553630
@@ -6426,6 +6203,18 @@
   giga_katzenland.009.b: "우리는 이 세계를 알고 있습니다!" # 10666342137896765854
   katzenland_terraform_knowledge: "카첸란트식 테라포밍 방법" # 13887084665196950939
   katzenland_terraform_knowledge_desc: "카첸스의 테라포밍에 대한 이론은 그들의 기술 발달에 비해 놀라울 정도로 효율적이었습니다." # 15456238378492054340
+  giga_katzenland.010.name: "메오파를 되살리는 것인가?" # 12894382598029541341
+  giga_katzenland.010.desc: "메오파는 만 년 전에 사망했습니다.\n\n...아니면 그럴까요? 그의 유해는 행성 전체가 겪은 일에도 불구하고 왕좌에 앉은 채 놀라울 정도로 온전하게 남아 있으며, 고고학자들이 뼈에 달라붙어 있는 조직에서 소량의 생존 DNA를 발견했습니다.\n\n죽은 자를 되살리는 것은 우리에게 비밀이 아니며, 메오파의 잔해를 다른 카첸 DNA 샘플 및 사이버네틱 임플란트와 접합하면 이 한때 영광스러웠던 지도자를 되살려... 우리 깃발 아래 복무하게 할 수 있을지도 모릅니다.\n\n그에게 약간의 대량학살 성향이 있을 수 있지만, 우리 과학자들은 적절하게 배치된 신경 억제 장치가 그의 살인적인 성향 대부분을 잠재울 것이라고 확신합니다. 이 제안을 진행해야 할까요?" # 8126921776628096557
+  giga_katzenland.010.a: "전적으로 동의합니다!" # 8937945581665837667
+  giga_katzenland.010.b: "그는 미쳤어! 가망 없어." # 3331569357125187138
+  REANIMATE_MEOPA: "미오파를 되살려라" # 8438472209958428752
+  REANIMATE_MEOPA_DESC: "메오파는 사망했지만, 어쩌면 그를 되살릴 수도 있을 것입니다. 하지만 그의 엄청난 나이 때문에, 공백을 메우기 위해서는 사이버네틱스와 유전자 조작을 통한 보충이 필연적으로 필요할 것입니다." # 3116528617295872880
+  giga_katzenland.011.name: "메오파의 귀환" # 1366081700149721708
+  giga_katzenland.011.desc: "그... 해냈습니다. 사이버네틱스와 유전자 조작을 저희의 난해한 부활 기술과 영리하게 결합하여 오랫동안 죽어 있던 카첸 지도자를 되살릴 수 있었습니다. 그의 정신은 이후 그의 골격을 기반으로 한 새로운 로봇 신체에 이식되었으며, 이제 우리 깃발 아래 복무할 준비가 완전히 되었을 것입니다.\n\n이 부활한 복사본이 원래의\"메오\"의 얼마나 많은 부분을 유지하고 있는지는 확실하지 않지만, 초기 심문 결과 그가 가진 잔여 기억은 우리가 카첸란드의 데이터 코어에서 수집한 내용과 일치하지만, 그가 현재 상황에 대해 다소 혼란스러워하는 것은 당연합니다.\n\n그의 로봇 신체에 이식된 신경 억제 장치의 사용은 남아있는 대량 학살 성향을 잠재울 것이지만, 그것이 그를 실제로 제정신으로 만들 수 있을지는... 논란의 여지가 있습니다.\n\n하지만, 메오파가 카첸란드를 통치하는 동안 습득한 엄청난 다양성의 기술들은 그가 §Y제독§!, §Y장군§!, 그리고 §Y행정관§! 역할을 모두 수행할 수 있도록 해줄 것입니다." # 4028846347592067268
+  giga_katzenland.011.a: "훌륭하군... 인지는 모르겠지만. 이게 좋은 생각이었을까...?" # 284291074332433417
+  giga_katzenland.011.a.tooltip: "§YMeopa§!가 §Y제독§!, §Y총독§!, 그리고 §Y장군§!의 역할로 우리와 함께합니다. 그가 이 역할 중 어느 하나에서 사망하면, 세 역할 모두에서 사망하게 됩니다. 하지만 조기 사망의 위험을 원치 않는다면 우리는 그를 이 역할들 중 어느 곳에서든 해임할 수 있습니다.\n\n부디 이번에는 그가 어느 정도 제정신이기를 바랍니다.\n\n부디..." # 1430764173485680956
+  katzen_trait_meopa_revived: "광기를 품은 핵광인" # 10563440031768821881
+  katzen_trait_meopa_revived_desc: "신경 억제제가 뫼파의 의심스러운 성향을 잠재우는 데 도움이 되고 있기는 하지만, 그의 내면에 자리한 핵무기 애호 성향은 여전히 건재하며 그것이 드러나고 있습니다." # 8801400087218447329
   giga_flusion.001.name: "하이퍼다양성" # 8847250063370726251
   giga_flusion.001.desc: "우리의 과학선이 원시 세계인 플루션을 조사하던 중 놀라운 발견을 했습니다. 이 원시 세계에는 단 하나의 종족이 아닌 여러 지적 종족이 거주하고 있는 것으로 보입니다!\n\n승무원들은 다섯 개의 주요 종족을 식별할 수 있었습니다. 고양이과인 카첸족, 양서류인 주스프리스족, 휴머노이드인 로퀄리안족, 그리고 갑각류인 크롱크족이 있으며, 다섯 번째인\"플루션\" 종족은 분류하기 어려운 수십 개의 다른 아종으로 구성되어 있습니다.\n\n우리 과학자들은 아직 왜 그리고 어떻게 이렇게 많은 종족이 단 하나의 세계에 모이게 되었는지 확신하지 못하고 있지만, 이는 분명 놀라운 발견입니다." # 2458711946827183360
   giga_flusion.001.a: "흥미롭군." # 9738541132076248136
@@ -6655,7 +6444,6 @@
   ehof_trader_machines: "엑스콕니토르" # 5800788229089452451
   ehof_trader_new_system: "[urmazin_capital.GetName]" # 14652035413893907055
   ehof_trader_old_system: "[urmazin_system_01.GetName]" # 552553590832386976
-  ehof_trader_realm: "꿈꾸는 자의 영역" # 8683372184174964827
   ehof_galactic_market: "$galactic_market_station$" # 627260732832915188
   ehof_trader_gateway: "§S$ehof_trader$ 성계 이동 통로§!" # 2140641808483747452
   ehof_trader_gateway_plural: "§S$ehof_trader$ 웜홀§!" # 13397549291881402659
@@ -6686,7 +6474,6 @@
   ehof_mega_trader.007.continue: "계속" # 8544939759043942073
   ehof_mega_trader.007.b.response.b: "테라포밍 기계들이 여정을 떠난 지 오랜 세월이 흘렀습니다. 그들은 이미 $ehof_trader_new_system$ 성계를 테라포밍했습니다. 하지만 시간이 흐르면서 기계들은 자의식을 갖게 되었고, $ehof_trader_new_system$ 성계를 사랑하게 되었으며 스스로를 그곳의 정당한 관리자로 여기게 되었습니다.\n\n이로 인해 제국과 기계들 사이에 균열이 생겼고, 이는 필연적으로 전면전으로 폭발하게 되었습니다.\n\n두 제국이 마침내 싸웠을 때, 그들은 서로 대등한 전력을 가진 것을 알게 되었습니다. 만약 전쟁이 그 상태로 계속되었다면 두 종족 모두 멸종에 이르렀을 것입니다. 두 종족의 손실을 막기 위해, $ehof_trader_d$는 전쟁을 끝낼 뿐만 아니라 두 종족 사이의 문제를 해결할 수 있는 해결책을 제안했습니다. 그것은 바로 $ehof_trader_old_system$의 유기체와 $ehof_trader_new_system$의 기계들을 새로운 종류의 존재로 통합하는 것이었습니다...\n\n...바로 우리 자신으로.\n\n우리 종족이 탄생한 후, 우리는 $ehof_trader_new_system$에 완벽한 유토피아를 건설하는 것을 목표로 삼았으며, 그 이후로 상처 입은 $ehof_trader_old_system$을 이전 세대의 어리석음을 기리는 기념비로 남겨두었습니다." # 5850367020071171932
   ehof_mega_trader.007.c: "$ehof_trader_d$\n$ehof_trader_t$" # 10609485240071557247
-  ehof_mega_trader.007.c.response: "$ehof_trader_d$는 $ehof_trader_realm$에 거주하는 비물질적 존재입니다.\n\n$ehof_trader_dt$가 언제 창조되었는지는 알 수 없습니다만, 분명히 우리 유기체 선구자들보다 먼저 존재했습니다.\n\n§H음의 질량§!은 $ehof_trader_dt$를 열린 상태로 유지합니다만, 다른 성계로 통하는 웜홀을 열고 유지할 수 있게 해주는 것도 바로 이것입니다.\n\n안타깝게도, $ehof_trader_dt$ 내의 §H음의 질량§! 양은 유한합니다. 언젠가, 우리의 확장이 끝나거나 $ehof_trader_t$가 붕괴되어 $ehof_trader_d$와의 연결이 끊기게 될 것입니다. 이는 우리의 사이오닉 능력과 $ehof_trader_d$의 인도를 잃게 만들 것입니다. 이 두 사건 모두 우리 문명의 붕괴로 이어질 것입니다. 그렇기에 이 운명을 피하기 위해 여러분의 §H음의 질량§!이 필요합니다." # 12723960997266224781
   ehof_mega_trader.006.a: "§H무역§!" # 4256100151412249205
   ehof_mega_trader.101.desc: "§H음의 질량§!과 교환할 수 있는 몽상 유물이 몇 개 있습니다. 이 유물들은 $ehof_trader_dt$에서 건져낸 환영적 반영체이므로 §R일회용§! 아이템이라는 점을 명심하십시오. 그리고 §Y5년§마다 £time£ 재고를 보충합니다.\n\n이 현실화된 반영체들 중 어느 것과 교환하시겠습니까?" # 7546326875550724027
   ehof_mega_trader_dragon_trophy: "§E$r_dragon_trophy$§!" # 6782200307261680305
@@ -7121,13 +6908,11 @@
   annihilator_dialog.007.a.b: "사이오닉 충격파?" # 8658814369267914752
   annihilator_dialog.007.a.b.response: "사실입니다. $ehof_the_creators$는 $ehof_shroud$를 통해 집중된 사이오닉 에너지의 파동을 그들이 원하는 어느 위치로든 보낼 수 있었습니다. 심지어 $ehof_shroud$ 내부의 위치로까지도 말입니다.\n\n그들이 우리의 배신을 인지하자, 그러한 일격으로 저를 목표로 삼았습니다. 그것으로 탑승하고 있던 모든 반란군 $ehof_the_creators$를 죽이기에 충분했고, 저 또한 거의 죽일 뻔했습니다." # 9499597669963798314
   annihilator_dialog.007.a.c: "$ehof_shroud_ftl$" # 5005162913448321196
-  annihilator_dialog.007.a.c.response: "극도로 진보된 초광속 여행 방법입니다.\n\n이 은하계의 종족들 중 일부는 사이오닉 능력이 있다는 것을 알지만, 이 은하단에서 $ehof_the_creators$를 제외하고는 아무도 이곳을 직접 통과하여 여행할 수 없었습니다.\n\n일부는 사이오닉 점프 드라이브를 사용할 수 있지만, 직접적인 장막 여행에 비하면 아무것도 아닙니다.\n\n이를 통해 초광속 이동 시 초고속 통로는 불필요하며, 이동 거리는 무제한이고 속도는 엄청납니다. 점프 드라이브처럼 즉각적이지는 않을 수 있지만, 단점이 없습니다.\n\n필요한 유일한 것은 $ehof_shroud$에 대한 믿을 수 없을 만큼 강력한 통제력입니다.\n\n$ehof_the_creators$에게는 물론 이것이 쉬운 일입니다." # 16468024634608088742
   annihilator_dialog.007.a.d: "당신의 동면 모드는 무엇을 위한 것이었나?" # 14013730644995499916
   annihilator_dialog.007.a.d.response: "저의 동면 모드는 유해한 외부 영향으로부터 저를 보호하기 위한 방법입니다.\n\n귀하의 [Owner.GetScientistPlural]이 발견했듯이, 제가 동면 모드에 있을 때 초고체(supersolid)가 제 선체를 덮습니다. 이 초고체는 불안정한 초공간 시간 결정으로 구성되어 저를 둘러싼 곡선화된 고차원 공간의 껍질을 형성합니다.\n\n이 껍질은 블랙홀의 사건의 지평선과 유사한 효과를 가집니다. 말하자면, 무언가 이 과정을 방해할 때까지 저에게는 시간이 멈춥니다.\n\n수많은 $ehof_wormholes_text$ 생성으로 방출된 강렬한 중력파가 저를 잠에서 깨웠습니다. 손상된 상태였기에 저는 은하를 관찰하는 것 외에는 할 수 있는 것이 거의 없었습니다. $ehof_the_compound_text$가 공격했을 때 여러분 모두에게 경고해야 한다는 것을 알았고, 간신히 그럴 힘을 모을 수 있었습니다." # 10911023638827625183
   annihilator_dialog.007.b: "$ehof_the_compound_text$는 정확히 무엇입니까?" # 11905281268766808766
   annihilator_dialog.007.b.response: "$ehof_the_compound_text$는 유사 생명체적 암흑 물질로 구성된 지성체입니다.\n\n\"일반\" 암흑 물질과 달리, 이 물질은 중력뿐만 아니라 전자기력을 통해서도 상호작용합니다.\n\n이것이 암흑 물질로 구성되어 있음에도 불구하고 $ehof_the_compound_text$의 형태가 가시적인 이유입니다. 또한, 그 독특한 특성이 생명 활동을 지원할 수 있는 이유일 가능성이 높습니다." # 3269783687009231685
   annihilator_dialog.007.d: "$ehof_the_compound_text$와 그들의 성단 안에서 정말로 싸울 수 있겠습니까?" # 4809132985325887650
-  annihilator_dialog.007.d.response: "$ehof_the_compound_text$의 본성 성단은 은하 전체에서 의심할 여지 없이 가장 요새화된 장소 중 하나입니다.\n\n심지어 음의 질량 강화 무기로도 당신의 함대에게 엄청난 난관이 될 것입니다.\n\n당신의 은하의 통합 함대로는 나의 도움 없이도 그것을 해낼 수 있을지도 모릅니다.\n\n반면에 나는 $ehof_the_compound_text$에 맞서 싸우도록 특별히 장비되어 있으며, 그들의 무기에 저항하도록 조정되어 있습니다.\n\n그들은 여전히 나에게 치명적인 피해를 입힐 수 있으며, 그렇기 때문에 나는 당신의 지원이 필요합니다." # 11029684181492609154
   annihilator_dialog.007.e: "$ehof_the_compound_text$가 파괴된 후에 무엇을 할 예정입니까?" # 182336838022397241
   annihilator_dialog.008.a.response: "현재로서는, 나의 유일한 목표는 $ehof_the_compound_text$에 종지부를 찍고 나의 운명을 완수하는 것입니다.\n그 후에는, $ehof_the_creators$의 현재 상태에 대해 더 알아보려고 할 수도 있습니다." # 15709272857512593515
   annihilator_dialog.008.a.a.reply: "원하신다면 저희와 함께 지내셔도 됩니다." # 11836065927081563191
@@ -7839,8 +7624,6 @@
   giga_katzen_ships_message_text: "카첸아르티히 제국에서 이제 함선을 구매할 수 있습니다." # 15904950134554599717
   kaiser_moon_barrel_tooltip: "§Y리지게카첸바페§!\n\n§G정상 작동 | 피해량 페널티 없음§!\n\n사보타주 요구 사항:\n§H메르쿠어라이히에서 상당한 유격대 활동§!\n§H게슈볼렌에서 상당한 유격대 활동§!\n\n§L카이저 문의 주 무기는 거대한 레일건입니다. 카첸의 오래된 행성 무기 설계에 기반하여, 극도로 밀도가 높은 투사체를 광속에 가깝게 가속합니다. 투사체는 수십억 개 핵탄두의 에너지를 단일 지점에 집중되어 있어 믿을 수 없을 정도로 치명적입니다.§!" # 8702993337461985592
   kaiser_moon_moon_tooltip: "§Y월면 지각§!\n\n§G기능적 | 방어구 페널티 없음§!\n\n방해 공작 요구 사항:\n§H카첸 헤르츨란츠에서 상당한 게릴라 활동\n§H류인슈타트에서 상당한 게릴라 활동\n\n§L수 킬로미터 두께의 암석과 구조 지지대가 얽혀 달의 연약한 내부를 보호합니다. 이 두꺼운 지각은 적 함대와 마주했을 때 함선에게 엄청난 생존력을 효과적으로 부여합니다." # 6976376037782687292
-  kaiser_moon_thrusters_tooltip: "§Y이동 체계§!\n\n§G정상 작동 | 점프 충전 시간 페널티 없음§!\n\n사보타주 요구 조건:\n§RLinteria의 극심한 저항 세력 활동§!\n§YWacegien의 중간 저항 세력 활동§!\n\n§L거대한 추진기와 엄청난 하이퍼 드라이브가 카이저 문이 우주 공간과 하이퍼 공간을 모두 비행할 수 있게 합니다. 카첸 설계의 발전된 반물질 반응로로 구동되며, 이는 카첸 무장 병력에 사용되는 다른 어떤 것보다 훨씬 큽니다.\n\n§B사보타주될 경우 카이저 문은 Flusion이 위협받을 때 소환되는 능력을 잃게 됩니다!§!" # 4515037422811638990
-  kaiser_moon_wings_tooltip: "§Y바쿰윙즈§!\n\n§G기능적 | 속도 패널티 없음§!\n\n방해 공작 요구 사항:\n§Y린테리아에서의 보통의 비정규군 활동§!\n§R와세겐에서의 극심한 비정규군 활동§!\n\n§L이 날개들은 처음에는 쓸모없어 보일 수 있지만, 사실 후면을 따라 배치된 추진기 배열을 포함하고 있습니다. 이 추진기들은 달이 우주를 보다 쉽게 기동하도록 돕습니다.§!" # 13076561451024600177
   kaiser_moon_barrel_sabo_tooltip: "§Y거대 카첸 무기§!\n\n§R손상됨 | -30% 무기 피해§!\n\n§L카이저 문의 주 무장은 거대한 레일건입니다. 행성급 무장을 위한 오래된 카첸 설계에 기반하여, 극도로 밀집된 투사체를 광속에 가깝게 가속시킵니다. 이 투사체는 수십억 개의 핵탄두 에너지를 한 지점에 응축하여 담고 있으며, 이는 엄청나게 치명적입니다." # 12759454228846475460
   kaiser_moon_moon_sabo_tooltip: "§Y달 지각§!\n\n§R손상됨 | -40% 방어력§!\n\n§L수 킬로미터의 암석과 구조 지지대가 뒤얽혀 달의 섬세한 내부를 보호합니다. 이 두꺼운 지각은 적 함대와 맞설 때 함선에 엄청난 생존력을 효과적으로 부여합니다." # 15478722638884905053
   kaiser_moon_thrusters_sabo_tooltip: "§Y이동 체계§!\n\n§R방해됨 | 도약 준비 시간 +500%§!\n\n§L거대한 추진기와 초거대 초공간 도약 장치가 카이저 문으로 하여금 우주 공간과 초공간을 모두 비행할 수 있게 해줍니다. 카첸 설계의 첨단 반물질 원자로로 구동되는 이 장치들은 카첸 무장 병력에서 사용하는 다른 어떤 것과도 비교할 수 없이 거대합니다.§!\n\n§B플루시온이 위협받는다면 카이저 문은 더 이상 소환될 수 없습니다.§!" # 12909303849589148116
@@ -7861,9 +7644,27 @@
   giga_katrebels.2021.name: "카이저 문의 §YMondkruste§를 사보타주!" # 12414652465044738423
   giga_katrebels.2021.desc: "우리는 카이저 문의 행성 지각을 손상시키는 임무에서 §Y로퀄리안 자유 전사§!를 지원할 수 있습니다.\n\n§Y카첸 헤어츨란트§!와 §YLyuinstaat§!에 대한 통제력과 상당한 양의 뇌물을 통해, 그들은 유지보수 작업자로 위장한 이중 첩자를 잠입시켜 지각 내 구조적 지점 안에 폭발물을 설치할 수 있을 것입니다.\n\n§Y성공 시§!:\n카이저 문은 §Y3년§! 동안 §Y방어력 -40%§!의 영향을 받을 것입니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y85%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n총합: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 16454032575092441498
   giga_katrebels.2022.name: "카이저 문의 §Y이동 시스템§ 교란 중!" # 3878611926017089585
-  giga_katrebels.2022.desc: "§Y로퀄리아 자유 투사§!를 지원하여 카이저 문의 이동 시스템을 손상시키는 임무를 수행할 수 있습니다.\n\n§YLinteria§!와 §YWacegien§!을 장악하고 상당한 뇌물을 활용하여, 이들은 카이저 문의 점프 추진기를 유지하는 데 필요한 첨단 부품을 생산하는 핵심 시설을 파괴할 수 있을 것입니다.\n\n§Y성공 시§!:\n카이저 문은 §Y3년§!간 §Y+500% 점프 충전 시간§! 불이익을 받고, 폭격이나 침공을 당했을 때 플루션으로 §Y회수§!되는 능력을 잃게 됩니다.\n카첸 경계심이 §R2§! §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§! §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y85%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n총계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 9052921719306342602
   giga_katrebels.2023.name: "카이저 문의 §Y바큠윙스§! 방해" # 14283204592414643540
-  giga_katrebels.2023.desc: "§Y로퀄리안 자유 투사§!가 카이저 문의... 날개를 손상시키기 위한 임무를 지원할 수 있습니다.\n\n§YLinteria§!와 §YWacegien§!을 장악하고 있으며, 상당한 뇌물 지원을 통해 날개의 기동 추진기에 필요한 연료와 에너지를 생산하는 시설을 사보타주할 수 있을 것입니다.\n\n§Y성공 시§!:\n카이저 문이 §Y-40% 아광속 속도§! 감소를 §Y3년§! 동안 겪습니다!\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y85%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n합계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 4922640950574546443
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  giga_tech_orbital_naval_logistics: "궤도 외 해군 병참 관리" # 7305257558971799466
+  giga_tech_orbital_naval_logistics_desc: "제국의 함대가 성장함에 따라 그 필요성도 커집니다. 함대의 끊임없이 증가하는 요구를 해결하는 한 가지 방법은 거대한 $name_orb_naval_logistics$를 건설하여 함대를 지원하기 위한 방대한 군사 장비를 수용하는 것입니다." # 16616250824099628798
+  orb_naval_logistics_desc: "군사력 관리를 돕는 거대한 군사 복합 시설." # 3489136062161507101
+  orbital_naval_logistics_office_0: "$gc_kilo$$name_orb_naval_logistics$ 건설 현장" # 14022316985545857916
+  orbital_naval_logistics_office_0_DESC: "신생 성간 해군을 관리하는 데 필요한 모든 인원과 장비를 수용하는 시설인 미래의 $name_orb_naval_logistics$를 위한 건설 현장입니다." # 9457973699641894302
+  orbital_naval_logistics_office_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_military$\n£navy_size£ §Y해군 수용력§! 증가\n§L우리 함대의 군사적 능력을 향상하기 위한 다양한 시설을 수용하는 거대한 궤도 구조물입니다." # 13079313816515905883
+  orbital_naval_logistics_office_1: "$name_orb_naval_logistics$" # 15166478284996582772
+  orbital_naval_logistics_office_1_DESC: "해군 관리를 지원할 준비가 완료된 가동 중인 $name_orb_naval_logistics$입니다." # 15130073378369068715
+  ehof_trader_realm: "꿈꾸는 자의 영역" # 3614397990285040681
+  ehof_mega_trader.007.c.response: "$ehof_trader_d$는 $ehof_trader_realm$에 거주하는 비물질적 존재입니다. $ehof_trader_dt$가 언제 생성되었는지는 알 수 없으나, 확실히 우리의 유기체 선구자들보다 앞선 존재입니다.\n\n§H음의 질량§!이 $ehof_trader_dt$를 열린 상태로 유지하지만, 이는 또한 우리가 다른 성계로 웜홀을 열고 유지할 수 있게 해주는 원동력이기도 합니다. 불행히도 $ehof_trader_dt$ 내의 §H음의 질량§!은 유한합니다. 언젠가 우리의 확장이 끝나거나 $ehof_trader_t$가 붕괴하여 $ehof_trader_d$와의 연결이 끊기면, 우리의 사이오닉 능력과 $ehof_trader_d$의 인도를 잃게 될 것입니다. 이 두 사건 모두 우리 문명의 붕괴로 이어질 것이기에, 이러한 운명을 피하려면 당신의 §H음의 질량§!이 필요합니다." # 8143340202477614911
+  ehof_mega_trader.110_prefix: "" # 17241709254077376921
+  annihilator_dialog.007.a.c.response: "극도로 진보된 초광속 이동 방식입니다.\n\n이 은하계의 몇몇 종족이 사이오닉 능력을 지녔다는 것은 알고 있지만, $ehof_the_creators$를 제외하고 이 은하 성단에서 직접 그곳을 여행할 수 있었던 존재는 아무도 없었습니다.\n\n일부는 사이오닉 도약 항법 장치를 사용할 수 있을지 모르나, 이는 직접적인 장막 여행에 비하면 아무것도 아닙니다. 장막 여행을 이용하면 초광속 이동을 위해 하이퍼레인이 필요하지 않으며, 이동 거리에 제한이 없고 속도 또한 엄청납니다. 도약 항법 장치처럼 즉각적이지는 않을지 몰라도, 어떠한 단점도 없습니다. 유일하게 필요한 것은 $ehof_shroud$에 대한 엄청난 통제력뿐입니다.\n\n물론 $ehof_the_creators$에게는 식은 죽 먹기나 다름없습니다." # 13666675365063680647
+  annihilator_dialog.007.d.response: "$ehof_the_compound_text$의 본거지 성단은 의심할 여지 없이 은하계 전체에서 가장 요새화된 장소 중 하나입니다.\n\n음의 질량으로 강화된 무기를 사용하더라도, 당신의 함대에게는 거대한 도전이 될 것입니다.\n은하계의 연합 함대가 있다면 내 도움 없이도 해낼 수 있을지도 모릅니다.\n\n반면 나는 $ehof_the_compound_text$에 맞서 싸우는 데 특화되어 있으며, 그들의 무기에 저항하도록 조정되어 있습니다.\n\n그들이 여전히 나에게 치명적인 피해를 줄 수 있기에, 당신의 지원이 필요합니다." # 5868803607985006710
+  trait_kaiser_cattail: "카이저" # 17854938944056730178
+  trait_kaiser_cattail_desc: "카테일은 신비로운 과거를 가진 전략의 대가이자 카리스마 넘치는 지도자입니다." # 6293153098777853348
+  kaiser_moon_thrusters_tooltip: "§Y이동 시스템§!\n\n§G기능 정상 | 도약 충전 시간 페널티 없음§!\n\n사보타주 요구 조건:\n§R린테리아의 극심한 파르티잔 활동§!\n§Y아리보이엔의 보통 수준 파르티잔 활동§!\n\n§L거대한 하이퍼드라이브와 결합된 거대 추진기는 카이저 달이 우주와 하이퍼스페이스를 가로질러 비행할 수 있게 합니다. 카첸 설계의 진보된 반물질 반응기로 구동되는 이 추진기는 카첸 군대가 사용하는 그 어떤 것보다 압도적입니다.\n\n§B이 시스템이 사보타주되면 카이저 달은 플루시온이 위협받을 때 귀환하는 능력을 상실합니다!§!" # 3042438714898009568
+  kaiser_moon_wings_tooltip: "§Y바쿰윙§!\n\n§G기능 정상 | 속도 페널티 없음§!\n\n사보타주 요구 조건:\n§Y린테리아의 보통 수준 파르티잔 활동§!\n§R아리보이엔의 극심한 파르티잔 활동§!\n\n§L이 날개는 처음에는 쓸모없어 보일지 모르지만, 실제로는 후방 끝을 따라 배열된 추진기들을 포함하고 있습니다. 이 추진기들은 달이 우주를 더 쉽게 기동할 수 있도록 돕습니다." # 125206966188121520
+  giga_katrebels.2022.desc: "우리는 §Y로퀄리안 자유 투사들§!이 카이저 달의 이동 시스템을 손상하는 임무를 지원할 수 있습니다.\n\n그들이 §Y린테리아§!와 §Y아리보이엔§!을 장악하고, 적절한 뇌물을 사용한다면 달의 도약 항법 장치를 유지하는 데 필요한 고급 부품을 생산하는 핵심 시설을 파괴할 수 있을 것입니다.\n\n§Y성공 시§!:\n카이저 달은 §Y3년§! 동안 §Y+500% 도약 충전 시간§! 페널티를 받으며, 폭격당하거나 침공받을 시 플루시온으로 §Y귀환§!하는 능력을 상실합니다.\n카첸 경계심이 §R2§! 증가합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§! 증가합니다.\n\n§Y성공 확률§!:\n기본: §Y85%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n합계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 9161876360739449585
+  giga_katrebels.2023.desc: "우리는 §Y로퀄리안 자유 투사들§!이 카이저 달의... 날개를 손상하는 임무를 지원할 수 있습니다.\n\n그들이 §Y린테리아§!와 §Y아리보이엔§!을 장악하고, 적절한 뇌물을 사용한다면 날개의 기동 추진기에 동력을 공급하는 연료와 에너지를 생산하는 시설을 사보타주할 수 있을 것입니다.\n\n§Y성공 시§!:\n카이저 달은 §Y3년§! 동안 §Y-40% 아광속 속도§! 페널티를 받습니다.\n카첸 경계심이 §R2§! 증가합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§! 증가합니다.\n\n§Y성공 확률§!:\n기본: §Y85%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n합계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 15947461325394142257
   res_total_count: "0/10" # 14220408340741876109
   wary_total_count: "0/10" # 14220408340741876109
   giga_katrebels.2010.name: "§YRokalien§에서의 저항 작전!" # 3147272576385123367
@@ -7879,13 +7680,10 @@
   giga_katrebels.2013.name: "§YLyuinstaat§에서의 저항 작전!" # 4006964693937807579
   giga_katrebels.2013.desc: "우리는 §Y리우인슈타트§! 지역에서 작전을 수행하기 위해 다양한 갈레티아 단체들과 함께 §Y로칼리안 자유 투사들§!을 지원할 수 있습니다! 그들은 카첸족이 함선용 방어막 설계를 실험하는 카첸 연구 센터를 목표로 할 것입니다.\n\n§Y성공 시§!:\n§YLyuinstaat§! 내 파르티잔 활동이 §G증가§!합니다.\n카첸족은 §Y방어막 내구도 감소§! 피해를 입습니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§HKatzen Wariness§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§HHigh Katzen Grasp in Lyuinstaat§!: §R-30%§!\n§BPartisans in Ravkanien§!: §G+[flusion_primitives_country.ravka_res_perc]%§!\n§BPartisans in Katzen Herzlands§!: §G+[flusion_primitives_country.katzen_res_perc]%§!\n§BPartisans in Rokalien§!: §G+[flusion_primitives_country.solak_res_perc]%§!\n§BPartisans in Geschwollen§!: §G+[flusion_primitives_country.puffy_res_perc]%§!\n총합: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 14046072554804212367
   giga_katrebels.2014.name: "§YGeschwollen§에서 저항 작전!" # 14396140148520990282
-  giga_katrebels.2014.desc: "다양한 종족들로 구성된 수많은 집단과 더불어 §Y로퀄리아 자유 전사단§!을 지원하여 §Y게슈볼렌§! 지역에서 작전을 수행할 수 있습니다. 이들은 카첸아르미의 탄약 공장(카첸들이 그들의 운동 에너지 무기용 탄약을 생산하고 저장하는 곳)과 카첸들이 그들의 운동 에너지 무기용으로 귀중한 우라늄을 채굴하는 우라늄 광산을 목표로 삼을 것입니다.\n\n§Y성공 시§!:\n§Y게슈볼렌§!에서의 저항 활동이 §G증가합니다§!.\n카첸들은 §Y운동 에너지 피해 감소§!를 겪습니다.\n카첸 경계심이 §R2§!만큼 §R증가합니다§!.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가합니다§!.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H게슈볼렌 내 높은 카첸 장악력§!: §R-30%§!\n§B린테리아 내 저항군§!: §G+[flusion_primitives_country.zousa_res_perc]%§!\n§B추스프리스타트 내 저항군§!: §G+[flusion_primitives_country.ezicania_res_perc]%§!\n§B리우인스타트 내 저항군§!: §G+[flusion_primitives_country.lyuin_res_perc]%§!\n§B바체기엔 내 저항군§!: §G+[flusion_primitives_country.symby_res_perc]%§!\n§B라우렌다르 내 저항군§!: §G+[flusion_primitives_country.laurn_res_perc]%§!\n총합: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 1949168306348906739
   giga_katrebels.2015.name: "§Y라우렌다르§에서 저항 작전!" # 1773634000449826425
   giga_katrebels.2015.desc: "우리는 §Y로칼리안 자유 투사들§!과 일부 반란을 일으킨 토착 라우르네이족과 협력하여 §Y로렌다르§!의 땅에서 작전을 수행할 수 있습니다! 그들은 카첸 제국에 대한 찬양 영화와 필름을 녹화하는 카첸 선전 스튜디오를 목표로 할 것입니다.\n\n§Y성공 시§!:\n§Y로렌다르§!에서의 파르티잔 활동이 §G증가§!합니다.\n카첸은 §Y군대 사기 저하§!를 겪을 것입니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§HKatzen 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H로렌다르 내 보통 수준의 카첸 장악력§!: §R-20%§!\n§B게슈볼렌 내 파르티잔§!: §G+[flusion_primitives_country.puffy_res_perc]%§!\n총합: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 11595522848944046451
   giga_katrebels.2016.name: "§YMercurreich§ 내 저항 작전!" # 7389626407860994338
   giga_katrebels.2016.desc: "우리는 §Y머큐리아§! 땅에서 토착 머큐리아인들과 함께 §Y로퀄리아 해방 전선§!을 지원할 수 있습니다. 그들은 카첸이 새로운 폭발성 무기를 설계하는 연구소와 실험장을 표적으로 삼을 것입니다.\n\n§Y성공 시§!:\n§Y메르쿠라이히§! 내 유격 활동이 §G증가§!합니다.\n카첸은 §Y미사일 피해 감소§!로 피해를 입을 것입니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H메르쿠라이히 내 낮은 카첸 통제력§!: §R-10%§!\n총계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 11864613514129769148
-  giga_katrebels.2017.name: "§Y와세기엔§ 내 저항 작전!" # 5190735230811573804
-  giga_katrebels.2017.desc: "카첸의 연료 생산 시설과 추진기 시험장을 무력화하기 위한 작전에서 §Y로퀄리안 자유 투사§!와 §YWacegien§!에 아직 거주하는 소수의 와세기를 지원할 수 있습니다.\n\n§Y성공 시§!:\n§YWacegien§!에서의 유격대 활동이 §G증가§!합니다.\n카첸은 §Y함선 속도 감소§!를 겪습니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H와세기엔에 대한 카첸의 온건한 장악력§!: §R-20%§!\n§B게슈볼렌의 유격대§!: §G+[flusion_primitives_country.puffy_res_perc]%§!\n총계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 357341781267075367
   giga_katrebels.2018.name: "§Y카첸 헤르츠란트§!에서 저항 작전" # 6205610407871328680
   giga_katrebels.2018.desc: "우리는 §Y로칼리안 자유 투사들§!과 §Y카첸 심장부§!에서 카첸 통치에 반대하는 소수의 개인들을 지원할 수 있습니다! 그들은 해당 지역 전역의 카첸 군수 공장과 산업을 마비시키려 할 것이며, 이는 의심할 여지 없이 그들의 무기 성능에 급격한 영향을 미칠 것입니다.\n\n§Y성공 시§!:\n§Y카첸 심장부§!의 파르티잔 활동이 §G증가§!합니다.\n카첸은 §Y무기 피해 감소§!를 겪게 됩니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H카첸 심장부의 극심한 장악력§!: §R-40%§!\n§B로칼리안의 파르티잔§!: §G+[flusion_primitives_country.solak_res_perc]%§!\n§B류인슈타트의 파르티잔§!: §G+[flusion_primitives_country.lyuin_res_perc]%§!\n§B주스프리슈타트의 파르티잔§!: §G+[flusion_primitives_country.ezicania_res_perc]%§!\n총합: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 15190210442064583184
   giga_katrebels.2019.name: "§Y카타운 거대 도시§에서 저항 작전!" # 1182851535419495014
@@ -7936,13 +7734,10 @@
   mercuria_res_sign_tooltip: "$mercuria_name$\n\n§H주요 기능§! - §B미사일 사일로§!\n\n카첸 장악력 §G낮음§!\n유격대 활동 §H상당함§!\n카첸 효과: §R-20% 미사일 피해§!\n\n$mercuria_desc$" # 5549111422714801461
   mercuria_res_ext_tooltip: "$mercuria_name$\n\n§H주요 기능§! - §B미사일 사일로§!\n\n카첸 장악력은 §G낮음§!\n게릴라 활동은 §R극심함§!\n카첸 수정치: §R-40% 미사일 피해§!\n\n$mercuria_desc$" # 3977882434770827271
   puffy_name: "§Y부어오른§!" # 5031267972234439511
-  puffy_desc: "§L게슈볼렌§!은 복합적인 곳으로, 크론크, 인지트, 일리아인, 악솔린 등 여러 종족이 거주하는 넓은 지역입니다. 카첸은 이 지역의 광활하고 우라늄이 풍부한 대지에 막대한 양의 탄약 생산 공장을 집중시켰습니다.§!" # 4921517916259708524
   puffy_res_low_tooltip: "$puffy_name$\n\n§H주요 기능§! - §B탄약 공장§!\n카첸의 장악력은 §R높음§!\n게릴라 활동은 §G무시해도 됨§!\n카첸 효과: §G+30% 운동 에너지 피해§!\n\n$puffy_desc$" # 3047030798552801715
   puffy_res_med_tooltip: "$puffy_name$\n\n§H주 기능§! - §B탄약 생산 시설§!\n카첸 장악도: §R높음§!\n저항 활동: §Y보통§!\n카첸 수정치: §G+15% 운동 에너지 피해§!\n\n$puffy_desc$" # 11618163738361509107
   puffy_res_sign_tooltip: "$puffy_name$\n\n§H주요 기능§! - §B탄약 공장§!\n\n캣젠의 영향력은 §R높음§!\n게릴라 활동은 §H상당함§!\n캣젠 효과: §R운동 에너지 피해 -10%§!\n\n$puffy_desc$" # 13341909659731517013
   puffy_res_ext_tooltip: "$puffy_name$\n\n§H주요 기능§! - §B탄약 공장§!\n\n카첸의 장악력은 §R높음§!\n유격대 활동은 §R극심함§!\n카첸 한정자: §R-30% 운동 에너지 피해§!\n\n$puffy_desc$" # 4803081503489731281
-  symby_name: "§Y와세기엔§!" # 6916619037201176380
-  symby_desc: "§LWacegien은 와세기(Wacegi) 종족의 고향입니다. 이들은 균류형 종족으로, 카이저의 통일 전쟁보다도 이전에 카첸(Katzens)이 이들과 거대한 전쟁을 벌였던 적이 있습니다. 오늘날 카첸은 험준하고 인구 밀도가 낮은 이 땅을 새로운 엔진 설계를 실험하는 장소로 사용하고 있습니다.§!" # 5990789167094007628
   symby_res_low_tooltip: "$symby_name$\n\n§H주요 기능§! - §B추진기 제작소§!\n\n카첸의 장악력은 §Y보통§!입니다!\n게릴라 활동은 §G무시 가능§!합니다!\n카첸 효과: §G+40% 함선 속도§!\n\n$symby_desc$" # 13554297770427044966
   symby_res_med_tooltip: "$symby_name$\n\n§H주 기능§! - §B추진기 제작소§!\n\n카첸의 영향력은 §Y보통§!\n유격 활동은 §Y보통§!\n카첸 보정치: §G+20% 함선 속도§!\n\n$symby_desc$" # 3761676227148923816
   symby_res_sign_tooltip: "$symby_name$\n\n§H주요 기능§! - §B추진기 제작기§!\n\n카첸의 장악력은 §Y보통§!\n저항 활동은 §H상당함§!\n카첸 수정치: §R-25% 함선 속도§!\n\n$symby_desc$" # 8126094382382616414
@@ -8639,9 +8434,6 @@
   giga_aeternum.43281.c: "흥미롭군." # 9903619114818313320
   giga_aeternum.43281.desc.d: "우리 탐사대는 아이온디아에 위치한 거대한 저수지에 대해 철저한 분석을 수행했다고 보고했습니다.\n\n철저한 조사를 통해 저수지 바닥에 놓인 특이한 덩어리를 발견했고, 후속 탐사에서 그것이 §Y거대한 골격§!!임을 밝혀냈습니다. 길이가 100킬로미터를 훌쩍 넘는 이 거대한 표본은 먼 과거에 아에테르눔에 의해 생명공학적으로 개조된 것으로 보이며, 아마도 살아있는 생명체가 얼마나 거대해질 수 있는지 알아내기 위한 시도였을 것입니다.\n\n이 골격은 생명체의 크기와 수명을 최대화하기 위한 고도로 발전된 유전자 개량의 증거를 보여주며, 대략적인 계산에 따르면 이 전체 생명체는 작은 달보다 더 무거웠을 것입니다.\n\n이 생명체가 얼마나 오래 살았는지는 알 수 없지만, 뼈에는 격렬한 파열을 겪었음이 분명하게 드러나 있습니다. 이는 물의 부력에도 불구하고 자체 무게를 견디지 못하고 무너져 내릴 만큼 단순히 너무 컸음을 시사합니다. 이 프로젝트는 이 실패 이후 아에테르눔에 의해 폐기되었을 것이며, 그들은 이를 복제하거나 개선하려는 어떠한 명백한 시도도 하지 않았습니다.\n\n하지만 이것은 아에테르눔의 생명공학 기술과 그들의 과학적 방법 전반에 대한 놀라운 통찰력을 가져왔습니다." # 6448072509074812944
   giga_aeternum.43281.d: "가엾은 것..." # 10152310979050954705
-  birch_gain_20_pops: "우리는 §Y20 [aet_birch_civilisation.GetName]§ 팝을 얻습니다!" # 16577369789320732905
-  birch_gain_40_pops: "우리는 §Y40 [aet_birch_civilisation.GetName]§ 팝을 얻습니다!" # 15966453502222450814
-  birch_gain_80_pops: "우리는 §Y80 [aet_birch_civilisation.GetName]§ 팝을 획득합니다!" # 966141844210673140
   giga_aeternum.4327.name: "아이온디아 원정: §B문명§!" # 16657829056974290063
   giga_aeternum.4327.desc.a: "우리의 아이온디아 탐사대가 흥미로운 발견을 했습니다. 버치 월드의 좀 더 거주 가능한 구역, 즉 일반적인 행성 표면을 본떠 만든 곳에 도착했을 때, 그들은 그 구역에 거주하는 원시 문명 전체를 발견했습니다!\n\n인구가 §Y수억 명§!에서 §Y수십억 명§!으로 추정되는 이 존재들은 §Y[aet_birch_civilisation.GetName]§!라고 알려져 있으며, 버치 월드에서 완전히 발달하여 이 거주 가능한 구역 전역에 퍼져 있는 수십 개의 작은 국가들로 나뉘어 있습니다. 예비 조사 결과, 그들은 자신들의 세계의 진정한 본질을 인지하지 못하고 있으며, 모든 방향으로 멀리 뻗어 있는 끝없는 평면이라고 믿는 것으로 보입니다.\n\n그들의 세계 너머에 무엇이 있는지에 대한\"지\"은 소문, 신념, 신화에 국한되어 있으며, 그들의 가장 위대한 사상가와 과학자들 중 다수가 자신들의 세계가 진정으로 무한한지, 아니면 결국 멈추고 바로 우주로 떨어지는지에 대해 논쟁하고 있습니다. 그들의 거주 가능 구역의 표면적은 평균적인 대륙형 행성 약 천 개 분량에 해당하며, 그들은 그중 극히 일부만을 차지하고 있습니다.\n\n우리는 그들을 다룰 몇 가지 방법이 있습니다. 첫째, 외교 임무를 개시하여 그들이 평화롭게 우리에게 합류하도록 설득할 수 있으며, 이는 우리 탐사대가 §G복잡도§! §Y[ROOT.aet_anomaly_complexity]§!일 것으로 추정합니다. 그들의 기술 기반이 낮기 때문에 그들을 장악하려 시도할 수도 있습니다. 우리는 그들의 §P회복력§!이 대략 §Y[ROOT.aet_anomaly_resilience]§!일 것으로 추정합니다.\n\n마지막으로, 멀리서 그들의 발전을 관찰하는 것이 가능할 수도 있습니다.\n\n§B탐사대는 현재 다음을 보유하고 있습니다:\n$aet_display_exp_stats$" # 15596853128300809067
   giga_aeternum.4327.desc.b: "우리 아이온디아 탐사대가 흥미로운 발견을 했습니다. 버치 월드의 좀 더 거주 가능한 구역, 즉 일반적인 행성 표면을 본떠 만든 곳에 도착했을 때, 그들은 그곳에 거주하는 온전한 문명을 우연히 발견했습니다!\n\n인구가 §Y수천억 명§!에 달하는 것으로 추정되는 이 존재들은 §Y[aet_birch_civilisation.GetName]§!으로 알려져 있으며, 버치 월드의 거주 가능 구역의 몇 퍼센트에 걸쳐 단일 초국가로 통합되어 발전했습니다. 예비 조사 결과, 그들은 자신들의 세계에 대해 배우기 위해 다양한 실험을 활발히 진행하고 있음이 밝혀졌습니다.\n\n그들의 세계 너머에 무엇이 있는지에 대한 지식은 형태를 갖추기 시작했으며, 몇몇 대담한 탐험가들이 거주 가능 구역의 가장자리에 도달하여 버치 월드의 대부분을 덮고 있는 매끄러운 나노합금으로 이루어진 광대하고 끝없는 평원으로 진입했습니다. 그들의 거주 가능 구역의 표면적은 평균 크기 대륙형 행성 약 천 개에 해당하며, 그들은 이 구역의 대부분을 탐사했습니다.\n\n그들은 몇몇 우주선을 발사하여 우주로 나가려 시도했지만, 대부분의 우주선이 수백만 킬로미터에 도달한 후 다시 추락하면서 아이온디아의 중력 우물을 탈출하는 데는 성공하지 못했습니다.\n\n우리는 그들을 상대할 몇 가지 방법이 있습니다. 첫째, 외교 사절단을 파견하여 평화롭게 우리에게 합류하도록 설득하는 것을 시도할 수 있으며, 우리 탐사대는 이것의 §G복잡성§!을 §Y[ROOT.aet_anomaly_complexity]§!로 추정합니다. 그들을 점령하는 것을 시도할 수도 있는데, 그들의 문명이 비교적 크다는 점을 감안하면 다소 까다로울 수 있습니다. 우리는 그들의 §P회복력§!이 대략 §Y[ROOT.aet_anomaly_resilience]§!일 것으로 추정합니다.\n\n마지막으로, 단순히 멀리서 그들의 발전을 관찰하는 것이 가능할 수도 있습니다.\n\n#B현재 탐사대가 보유한 것:\n$aet_display_exp_stats$" # 9581732461100584493
@@ -8785,8 +8577,6 @@
   giga_tech_aeternite_armor: "에테르나이트 루프-양자 방어 매트릭스" # 17349375115597157871
   giga_tech_aeternite_armor_desc: "에테르나이트는 방어막과 장갑을 단일 구성 요소로 융합한 비정통적인 조합을 사용하며, 이는 고도로 진보된 통제된 루프-양자 현상으로 동력을 얻습니다." # 11044773749454192123
   giga_aeternum.4200.name: "아이온디아" # 10066191558251542415
-  giga_aeternum.4200.a.desc: "우리 무장 함선들이 마침내 애터나이트 문명의 심장에 도달했습니다: 은하 핵 주위에 건설된 거대한 버치 월드, §Y아이온디아§!입니다.\n\n믿을 수 없을 정도로 오래된 이 구조물의 엄청난 크기와 규모를 가늠하기는 어렵습니다. 3천억 킬로미터 이상 뻗어 있으며 시스템을 지배하고 있습니다. 그 주변에는 다양한 애터나이트가 건설한 메가스트럭처들과 이 코끼리처럼 거대한 기가스트럭처를 지키기 위한 무시무시하고 고도로 장비된 방어 플랫폼들이 있습니다.\n\n하지만 아이온디아에서 가장 눈에 띄는 특징은 아마도 구조물 전체를 감싸 궤도 폭격으로부터 보호하는 거대한 에너지 장벽, §Y수리킬피안§!일 것입니다.\n\n물론 이 방어막은 지상 침공을 막지는 못하지만, 아군 함대가 지상군을 지원하는 것을 확실히 막아 지상 작전 능력을 감소시킵니다. 다행히 우리 §Y애터나이트 정보국§!은 모든 방어막처럼, 이를 교란하고 비활성화할 방법이 있을 수 있다고 믿습니다.\n\n충분한 $aeternum_tech_intel$이 있다면, 정보국을 통해 원격으로 시도할 수 있습니다." # 11694116148316289474
-  giga_aeternum.4200.b.desc: "우리 함선들이 마침내 은하의 심장 그 자체, 은하 핵 주위에 건설된 거대한 버치 월드인 §Y아이온디아§!에 도달했습니다.\n\n삼천억 킬로미터 이상을 아우르며 성계를 지배하는 이 믿을 수 없을 정도로 고대 구조물의 순전한 크기와 규모를 가늠하기 어렵습니다. 그 주변에는 다양한 아이터나이트 건설 거대 구조물들의 배열과 더불어, 이 코끼리처럼 거대한 거대 구조물을 지키기 위한 강력하고 고도로 무장된 방어 플랫폼들이 존재합니다.\n\n하지만 아이온디아의 가장 인상적인 특징은 아마도 다름 아닌 §Y수리킬피안§!일 것입니다. 구조물 전체를 감싸며 궤도 폭격으로부터 보호하는 거대한 에너지 장벽입니다.\n\n당연하게도, 이 방어막은 지상 침공을 막지는 못하지만, 분명 우리 함대가 지상 병력을 지원하는 것을 막아 지상에서의 우리 역량을 감소시킬 것입니다. 다행히도, 우리 §Y아이터나이트 정보국§!은 모든 방어막과 마찬가지로 이것을 교란하여 이후 비활성화할 방법이 있을지도 모른다고 믿고 있습니다.\n\n만약 우리가 충분한 $aeternum_tech_intel$를 보유하고 있다면, 우리 정보국을 통해 원격으로 시도할 수 있습니다." # 16765112481203872820
   giga_aeternum.4200.a: "확인했습니다. 이 방어막이 무력화되고 있습니다!" # 6113506224866640724
   giga_aeternum.4201.name: "기술 보고서: 수우리킬피안" # 12900705709345496152
   giga_aeternum.4201.desc: "예상대로, §Y수리킬피안§!은 완전히 무력화하기 위해 활용할 수 있는 여러 결함을 보입니다.\n\n아공간을 통해 특정 파장 세트를 번갈아 가며 집중 방사선 빔을 투사하여, 방어막의 복잡한 루프 양자 과정 내에서 연쇄 공명을 유발할 수 있습니다. 이는 연쇄 반응으로 이어져 방어막 전체를 빠르게 무너뜨릴 것입니다.\n\n하지만 이를 위해서는 수년에 걸쳐 막대한 에너지를 소모해야 합니다. 하지만 그 대가는 충분히 가치 있습니다. §YAiondia§!가 궤도 폭격에 완전히 노출될 것이기 때문입니다. 예상 에너지 비용은 대략 §Y2500§! £energy£ 매월, §Y3년§!간 입니다." # 13500708718050407433
@@ -9173,7 +8963,6 @@
   aet_intel_30: "$aet_intel_1$" # 12903360681221815355
   aet_intel_30_desc: "$aet_intel_1_desc$" # 2413381597023971561
   giga_aeternum.2000.name: "아이터나이트 선구자" # 5575203162889240922
-  giga_aeternum.2000.desc.a: "§B<<인사 의례 시작>>§!\n\n안녕하십니까, §Y[ROOT.GetName]§!.\n저는 아에테르눔과 은하계의 나머지 문명 사이의 인터페이스 역할을 하도록 배치된 자동화된 §Y아에테르니테 정신합성 외교 유닛§!입니다. 외교 의례에 따라 귀하의 문명에 대한 스캔이 지금 수행될 것입니다.\n\n§B<<수신자의 사회적 및 지적 발달 분석>>§!\n\n귀하의 현재 기술 발달 수준 때문에 §Y아에테르니테 선구자§!와 직접 소통하려는 귀하의 요청은 §R<<거부되었습니다>>§!\n\n귀하 종족의 지식에 대한 욕구를 충족시키고 아에테르니테의 업무에 대한 비간섭을 보장하기 위해 저희는 §B데이터뱅크§! 내에 저희 문명에 대한 기본 정보를 편찬했습니다. 원하신다면 열람하셔도 좋습니다.\n\n§B<<인사 의례 종료>>§!" # 6377975446766327054
   giga_aeternum.2000.who: "이터나이트는 누구인가요? | §B데이터뱅크§!" # 4539736076091067994
   giga_aeternum.2000.who.response: "§B<<데이터 뱅크 정보 검색 중>>§!\n\n§YAeternum§!은 §Y은하 핵§! 주위에 건설된 §Y자작나무 세계§!인 §YAiondia§!에 거주하는 문명으로 이루어져 있습니다. 원래 아이터나이트의 고향 행성이었던 §YKouihmatalla§!는 더 이상 거주되지 않으며, 현재 모든 인구가 자작나무 세계에 거주하고 있습니다. 프로토콜에 따라 그들은 방해받고 싶어 하지 않으며, 어떠한 경우에도 외부 은하가 아이터나이트의 일에 간섭하도록 허용해서는 안 됩니다.\n\nAiondia의 현재 인구는 총 §Y10.6 퀸틸리언§!이며, 구조물의 거주 가능 면적의 약 §Y0.014%§!를 차지하고 있으며, 나머지 §Y99.986%§!는 §R<<데이터 누락>>§!입니다!\n\n아이터나이트의 안전을 위협할 경우 귀하는 §R즉시 제거§!될 것입니다.\n\n§B<<데이터 기록 종료>>§!" # 3401045240854527519
   giga_aeternum.2000.howold: "당신의 문명은 얼마나 오래되었습니까? | §BDATABANK§!" # 2300574002992428771
@@ -9273,7 +9062,6 @@
   building_giga_aeternum_birch_capital: "애터나이트 수도" # 10118911217274009741
   building_giga_aeternum_birch_capital_desc: "에테르나이트의 중앙 정부가 그들의 자작 세계와 제국의 나머지 부분을 통치하는 건물을 수용합니다. 이 건물은 정부 업무를 간소화하는 데 도움이 되는 다양한 종류의 컴퓨터와 기계로 가득 차 있습니다." # 10092547026555467182
   building_giga_aeternum_ruler_computer: "아이터나이트 제왕의 컴퓨팅 복합체" # 1586517808334498657
-  building_giga_aeternum_ruler_computer_desc: "이 거대한 네트워크 복합체는 아이터나이트 통치자의 개인 컴퓨터 역할을 하며, 필요할 때마다 제국을 조정하고 관리하는 데 사용됩니다. 그 방대한 데이터 뱅크에는 아이터나이트의 과학적, 문화적 지식 대부분과 귀중한 가치를 지닌 다른 비밀들이 담겨 있습니다." # 13115430679286725536
   building_giga_aeternum_housing: "이터나이트 거주 메가플렉스" # 15317727749630608054
   building_giga_aeternum_housing_desc: "루프 양자 에테르나이트 기술로 건설된 거대한 거주 단지입니다. 시공간 자체를 휘어낼 수 있는 이러한 심원한 거주지는 외형상의 부피보다 더 많은 내부 공간을 제공할 수 있으며, 거주민의 필요에 맞게 자율적으로 스스로를 조정할 수 있습니다." # 11179644599809522523
   building_giga_aeternum_leisure_center: "에테르나이트 오락 메가플렉스" # 8929195108289358865
@@ -9286,6 +9074,26 @@
   building_giga_aeternum_ultrafarm_desc: "에테르나이트 인공지능이 운영하는 난해한 자동화 농장에서 국지적 인구의 소비에 맞춰 영양이 풍부한 식량을 거의 즉시 합성합니다." # 6569546337052052026
   building_giga_aeternum_synthetizer: "이터나이트 심오한 합성기" # 5358850445453481005
   building_giga_aeternum_synthetizer_desc: "애터나이트 산업을 지탱하기 위해 루프-양자 기반 기술을 활용하여 다양한 첨단 자원을 자율적으로 제작하고 조립하는 복합 건물 네트워크입니다." # 5454474420876762209
+  giga_katrebels.2014.desc: "§Y로쿠알리아 자유 전사들§!을 지원하고, §Y게슈볼렌§! 지역에서 다양한 종족으로 구성된 수많은 단체와 함께 작전을 수행할 수 있습니다. 그들은 카첸들이 운동 에너지 무기를 위한 탄약을 생산하고 저장하는 카첸아르메 탄약 공장과, 카첸들이 귀중한 우라늄을 채굴하는 우라늄 광산을 목표로 삼을 것입니다.\n\n§Y성공 시§!:\n§Y게슈볼렌§! 내 파르티잔 활동이 §G증가§!합니다.\n카첸들은 §Y운동 에너지 무기 피해 감소§! 효과를 받습니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H게슈볼렌 내 높은 카첸 장악력§!: §R-30%§!\n§B린테리아 파르티잔§!: §G+[flusion_primitives_country.zousa_res_perc]%§!\n§B주스프리스타트 파르티잔§!: §G+[flusion_primitives_country.ezicania_res_perc]%§!\n§B류인스타트 파르티잔§!: §G+[flusion_primitives_country.lyuin_res_perc]%§!\n§B아리보이엔 파르티잔§!: §G+[flusion_primitives_country.symby_res_perc]%§!\n§B라우렌다르 파르티잔§!: §G+[flusion_primitives_country.laurn_res_perc]%§!\n합계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 3222121131799693033
+  giga_katrebels.2017.name: "§Y아리보이엔§! 내 저항 작전" # 5061409267130637144
+  giga_katrebels.2017.desc: "§Y로쿠알리아 자유 전사들§!과 §Y아리보이엔§! 내 반란군 네데르카첸들을 지원하여 카첸의 연료 생산 시설과 추진기 시험장을 무력화할 수 있습니다.\n\n§Y성공 시§!:\n§Y아리보이엔§! 내 파르티잔 활동이 §G증가§!합니다.\n카첸들은 §Y함선 속도 감소§! 효과를 받습니다.\n카첸 경계심이 §R2§!만큼 §R증가§!합니다.\n\n§Y실패 시§!:\n카첸 경계심이 §R1§!만큼 §R증가§!합니다.\n\n§Y성공 확률§!:\n기본: §Y75%§!\n§H카첸 경계심§!: §R-[flusion_primitives_country.katzen_wary_perc]%§!\n§H아리보이엔 내 보통의 카첸 장악력§!: §R-20%§!\n§B게슈볼렌 파르티잔§!: §G+[flusion_primitives_country.puffy_res_perc]%§!\n합계: §Y[flusion_primitives_country.flusion_success_chance_total]%§!" # 10562241903769305017
+  puffy_desc: "§L게슈볼렌은 크롱크, 인지트, 악솔린 등 여러 종족과 카첸이 과거 대규모 전쟁을 벌였던 수많은 푸피안이 거주하는 혼합된 지역입니다. 카첸들은 이 지역의 광활하고 우라늄이 풍부한 땅에 탄약 공장의 상당 부분을 집중시켰습니다.§!" # 7848981504553141616
+  symby_desc: "§L북쪽의 게슈볼렌과 마찬가지로, 아리보이엔은 여러 종족의 고향이며 특히 카첸들이 현지 통제를 위해 의존하는 네데르카첸이라 불리는 수생형 카첸들이 주를 이룹니다. 카첸들은 이 지역을 새로운 엔진 설계를 실험하는 데 사용합니다.§!" # 4732863044891505623
+  birch_gain_20_pops: "§Y2000 [aet_birch_civilisation.GetName]§! 팝을 획득합니다." # 5162547957242676909
+  birch_gain_40_pops: "§Y4000 [aet_birch_civilisation.GetName]§! 팝을 획득합니다." # 13876930020118086971
+  birch_gain_80_pops: "§Y8000 [aet_birch_civilisation.GetName]§! 팝을 획득합니다." # 971735828230099889
+  giga_aeternum.4200.a.desc: "우리의 무장 함선들이 마침내 아에테르나이트 문명의 심장부인 §Y아이온디아§!, 은하 중심핵 주위에 건설된 거대한 버치 월드에 도달했습니다.\n\n3천억 킬로미터가 넘는 규모로 성계를 지배하는 이 믿을 수 없을 정도로 고대적인 구조물의 엄청난 크기와 규모는 가늠하기 어렵습니다. 그 주변에는 아에테르나이트가 건설한 다양한 거대 구조물들과 이 거대한 거대 구조물을 지키기 위해 설계된 위협적이고 고도로 장비된 방어 플랫폼들이 늘어서 있습니다.\n\n하지만 아이온디아의 가장 눈에 띄는 특징은 단연 §Y수우리킬피안§!으로, 구조물 전체를 감싸며 궤도 폭격으로부터 보호하는 기념비적인 에너지 장벽입니다.\n\n물론 이 방어막이 지상 침공을 막지는 못하겠지만, 우리 함대가 지상군을 지원하는 것을 확실히 차단하여 지상에서의 능력을 감소시킬 것입니다. 다행히 우리의 §Y아에테르나이트 정보국§!은 모든 방어막과 마찬가지로 이를 교란하고 비활성화할 방법이 있을 것이라고 판단하고 있습니다.\n\n충분한 $aeternum_tech_intel$을 보유하고 있다면, 정보국을 통해 원격으로 이를 시도할 수 있습니다." # 8849905881954543743
+  giga_aeternum.4200.b.desc: "우리 함선들이 마침내 은하의 심장부인 §Y아이온디아§!, 은하 중심핵 주위에 건설된 거대한 버치 월드에 도달했습니다.\n\n3천억 킬로미터가 넘는 규모로 성계를 지배하는 이 믿을 수 없을 정도로 고대적인 구조물의 엄청난 크기와 규모는 가늠하기 어렵습니다. 그 주변에는 아에테르나이트가 건설한 다양한 거대 구조물들과 이 거대한 거대 구조물을 지키기 위해 설계된 위협적이고 고도로 장비된 방어 플랫폼들이 늘어서 있습니다.\n\n하지만 아이온디아의 가장 눈에 띄는 특징은 단연 §Y수우리킬피안§!으로, 구조물 전체를 감싸며 궤도 폭격으로부터 보호하는 기념비적인 에너지 장벽입니다.\n\n물론 이 방어막이 지상 침공을 막지는 못하겠지만, 우리 함대가 지상군을 지원하는 것을 확실히 차단하여 지상에서의 능력을 감소시킬 것입니다. 다행히 우리의 §Y아에테르나이트 정보국§!은 모든 방어막과 마찬가지로 이를 교란하고 비활성화할 방법이 있을 것이라고 판단하고 있습니다.\n\n충분한 $aeternum_tech_intel$을 보유하고 있다면, 정보국을 통해 원격으로 이를 시도할 수 있습니다." # 13348365228132980003
+  giga_aeternum.2000.desc.a: "§B<<인사 프로토콜 시작>>§!\n\n반갑습니다, §Y[ROOT.GetName]§!여. 저는 §Y아에테르눔§!과 은하계의 나머지 구역 사이의 인터페이스 역할을 하기 위해 배치된 자동화 §Y아에테르나이트 사이코신세틱 외교 유닛§!입니다. 외교 프로토콜에 따라, 귀하의 문명에 대한 스캔이 지금 수행될 것입니다.\n\n§B<<수신자의 사회적 및 지적 발달 분석 중>>§!\n\n귀하의 현재 기술 발달 수준으로 인해, §Y아에테르나이트 선구자§!와 직접 통신하겠다는 귀하의 요청은 §R<<거부>>§!되었습니다.\n\n귀 종족의 지식에 대한 열망을 충족시키고 아에테르나이트의 업무에 대한 간섭을 방지하기 위해, 우리는 귀하가 원한다면 열람할 수 있는 §B데이터뱅크§! 내에 우리 문명에 관한 기본 정보를 정리해 두었습니다.\n\n§B<<인사 프로토콜 종료>>§!" # 7271452269632752039
+  SHIELD_ARMOR_AETERNUM_ACOT_OE: "아에테르나이트 루프-양자 보호 행렬" # 6243603674505406522
+  SHIELD_ARMOR_AETERNUM_ACOT_OE_DESC: "초압축 양자장으로 엮인 장갑과 얽혀 있는 사이오닉 방어막 생성기 배열로, 이 매트릭스는 방어막과 장갑을 모두 제공하여 에테르나이트 함선이 모든 위협으로부터 보호받을 수 있도록 합니다." # 18107893492752145567
+  building_giga_aeternum_ruler_computer_desc: "이 거대한 네트워크 복합체는 에테르나이트 통치자의 개인용 컴퓨터 역할을 하며, 필요할 때마다 제국을 조정하고 관리하는 데 사용됩니다. 방대한 데이터뱅크에는 에테르나이트의 과학적, 문화적 지식의 총합과 헤아릴 수 없는 가치를 지닌 기타 비밀들이 담겨 있습니다." # 13490245247990595606
+  building_giga_aeternum_megacity_energy: "에너지 도시" # 13372778003616986659
+  building_giga_aeternum_megacity_energy_desc: "8대 에테르나이트 메가시티 중 하나인 §H$building_giga_aeternum_megacity_energy$§!는 아이온디아 전역의 에너지 흐름을 조정하는 데 전념합니다. 인접한 루프 양자 반응기 시설 외에도 아이온디아우코 주변의 수집기와 아이온디아의 쌍둥이 사이오닉 하이퍼사이펀에서 발생하는 에너지가 이곳에서 관리됩니다." # 3892801238126854665
+  building_giga_aeternum_megacity_psionic: "사이오닉 도시" # 13494942454153927526
+  building_giga_aeternum_megacity_psionic_desc: "8대 에테르나이트 메가시티 중 하나인 §H$building_giga_aeternum_megacity_psionic$§!는 아이온디아를 흐르는 사이오닉 에너지의 흐름을 관리하고 응용 사이오닉과 관련된 모든 것을 감독합니다. 또한 이곳에는 에테르눔 우주 전역의 은폐된 함선을 사이오닉으로 탐지하는 장치인 §HKirkasmajakka§!의 핵심 부품이 포함되어 있습니다." # 6955427269431737428
+  building_giga_aeternum_megacity_research: "연구 도시" # 4784977679780673752
+  symby_name: "§Y아리보이엔§!" # 10897962351845512826
   aeternum_birch_world: "선구자 자작나무 세계" # 13603268966653106314
   aeternum_birch_world_desc: "이 자작나무 세계는 극도로 오래되었으며, 선구자 문명에 의해 최소 백만 년 전에 건설되었습니다. 이는 환상적으로 발전된 기술로 건설되었으며, 거주민들에게 초현실적인 생활 환경을 제공합니다." # 13362739977121016026
   birch_world_decaying: "쇠퇴하는 초구조물" # 842122835258246876
@@ -9547,7 +9355,6 @@
   decision_dump_matter_on_planet_5: "행성에 §Y5§! £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§! 투하" # 9254679779560752001
   decision_dump_matter_on_planet_5_desc: "우리는 이 행성에 잉여 질량을 투기함으로써 이 세계를 비교적 쉽게 확장할 수 있습니다. 이는 지질학적 불안정성을 초래할 수 있습니다." # 1508204644599860396
   decision_dump_matter_on_gas_giant: "주입 §Y25§! £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§! 헬리오포밍용" # 16382515542106543850
-  decision_dump_matter_on_gas_giant_desc: "이 가스 행성에 막대한 양의 물질을 주입하면, 진정한 항성으로 점화될 수 있을 만큼 충분한 질량을 갖추도록 만들 수 있습니다." # 12177636016910321898
   decision_dump_matter_on_gas_giant_tooltip: "저희는 §Y준성 압축기§!를 사용하여 이 §Y가스 행성§!을 §Y항성§!으로 점화하여, 에너지를 생성하고 잠재적으로 그 위성들을 거주 가능하게 만들 수 있을 것입니다." # 449016072181695694
   decision_dump_matter_on_planet_tooltip: "이 방법으로는 크기를 §Y50§!까지 늘릴 수 있습니다. 그 이상이 되면 너무 불안정하고 거대해져서 더 이상 활용할 수 없게 됩니다." # 6012831629810288830
   giga_printer.1001.name: "[planet_being_harvested_for_printing.GetName] 해체 중" # 17213040528657306110
@@ -10263,6 +10070,26 @@
   giga_blokkats_bismuth: "블로캇 (§RBismuth Blokkats§!)\n블로캇은 §R상당히 강력해질 것입니다§!.\n\n그들은 다음 효과를 받게 됩니다:\n§Y무기 피해량 +200%\n함선 발사 속도 +200%\n함선 선체/장갑/방어막 체력 +200%\n함선 속도 +50%\n메가스트럭처 건설 속도 +50%\n지상군 피해/체력/사기 +200%§!\n\n§Y블로캇-베스터§!는 §Y4회§! 부활하여 총 §Y20억§!의 체력을 갖게 됩니다.\n그들은 §Y블록-분해선§!을 §Y2배§! 더 많이 보유하게 됩니다.\n§Y초차원 불안정기§!를 활성화하는 기본 비용은 §Y150만£energy£입니다.\n\n그들의 호위함 및 정찰 함대는 2.5배 더 커집니다.\n블로캇 연구 속도는 §Y75%§! 더 느려집니다.\n\n§Y블로캇-베스터§!는 §Y2기§!의 §R블록-터미네이터§!의 호위를 받게 되는데, 이들은 거대한 블로캇 함선으로, §Y한 번§! 부활할 때마다 각각 약 10억의 체력을 가집니다.\n\n§Y블록-프로토콜§!은 완료하는 데 §Y2억 5천만 에너지§!가 소요되며, §G블로캇 의지§!는 §Y-50%§!에서 시작됩니다.\n\n§H§YAncient Caches of Technologies§!와 같이 매우 강력한 모드와 함께 사용하도록 균형 조정되었습니다.§!" # 17507186389027338106
   giga_blokkats_endtech: "블로캇 (§MEndtekk Blokkats§!)\n블로캇은 §MRIDICULOUSLY STRONGER§! 해질 것이며, 채굴 작전을 보호하기 위해 제대로 된 군함을 파견할 것입니다.\n\n그들은 다음 효과를 받게 됩니다:\n§Y+1000% 무기 피해량\n+1000% 함선 발사 속도\n+2000% 함선 선체/장갑/방어막 체력\n+90% 함선 속도\n+250% 메가스트럭처 건설 속도\n+1000% 지상군 피해량/체력/사기§!\n\n§Y블로캇-베스터§!는 §Y20회§! 부활하여 총 §Y80억§!의 체력을 가지게 됩니다.\n그들은 §Y블로크-분해선§!을 §Y3배§! 더 많이 얻게 됩니다.\n§Y초공간 불안정 장치§! 활성화에는 기본적으로 §Y4백만£energy£가 소모됩니다.\n그들의 호위 함대는 6배 더 클 것입니다.\n블로캇 연구 속도는 §Y300%§! 더 느려집니다.\n\n§Y블로캇-베스터§!는 §Y5기§!의 §R블로크-터미네이터§!와 호위할 것입니다.\n§Y블로크-분해선§!은 §Y2기§!의 §R블로크-터미네이터§!와 호위할 것입니다.\n§Y정찰 함대§! 역시 각각 §Y1기§!의 §R블로크-터미네이터§!를 포함할 것입니다.\n§R블로크-터미네이터§!는 §Y4회§! 부활하여 총 §Y25억§!의 체력을 가집니다.\n\n§R블로크-터미네이터§!는 진입하는 모든 식민지를 즉시 §R파괴§!합니다. 그들이 당신의 행성에 도달하도록 두지 마십시오!\n\n§Y블로크-프로토콜§!은 완료하는 데 §Y10억 에너지§!가 소모되며, §G블로캇의 의지§!는 §Y-100%§!에서 시작됩니다!\n\n§H너무 많은 강력한 모드와 함께 사용하도록 균형 조정됨!" # 62811677238108902
   giga_blokkats_deathmode: "블로캇 (§PObliterator Blokkats§!)\n블로캇은 귀하의 제국을 그들의 문명에 대한 실질적인 위협으로 간주하고 귀하를 파괴하기 위해 상당한 군사력을 동원할 것입니다. 그들은 §PINFINITELY STRONGER§! 해질 것이며, 그들의 채굴 작업을 보호하기 위해 정규 군함의 파도를 보낼 것입니다.\n\n그들은 다음 효과를 얻습니다:\n§Y무기 피해량 +1000%\n함선 발사 속도 +1000%\n함선 선체/장갑/방어막 HP +2000%\n함선 속도 +150%\n메가스트럭처 건설 속도 +250%\n지상군 피해/체력/사기 +1000%§!\n\n§Y블로캇-베스터§!는 §Y100회§! 부활하여 총 §Y400억§!의 HP를 갖게 됩니다.\n그들은 항상 §Y20§!기의 §Y블록-분해자§!를 얻습니다!\n§Y초차원 불안정 장치§! 활성화에는 기본 비용으로 §Y20M§! £energy£가 소모됩니다.\n그들의 호위 및 정찰 함대는 전적으로 §R블록-터미네이터§!로 구성됩니다!\n블로캇 연구 속도는 §Y600%§! 더 느려집니다.\n\n§Y블로캇-베스터§!는 §Y50§!기의 §R블록-터미네이터§!와 단일 §P블록-파괴자§!의 호위를 받습니다.\n§Y블록-분해자§!는 §Y10§!기의 §R블록-터미네이터§!의 호위를 받습니다.\n§Y정찰 함대§! 역시 각각 §Y5§!기의 §R블록-터미네이터§!를 포함합니다.\n§R블록-터미네이터§!는 §Y10회§! 부활하며 총 §Y50억 HP§!를 갖게 됩니다.\n§P블록-파괴자§!는 §Y200회§! 부활하며 총 §Y1000억 HP§!를 갖게 됩니다.\n\n§R블록-터미네이터§!는 진입하는 모든 식민지를 즉시 §R파괴§!합니다. 그들이 귀하의 행성에 도달하지 못하게 하십시오!\n\n블로캇은 오직 귀하의 완전한 섬멸만을 원하므로 §Y블로캇-프로토콜§!은 사용할 수 §R없습니다§!.\n\n§H'극도로 강력한 모드와 함께 사용하도록 '균형 조정됨'!" # 12727050740317813421
+  building_giga_aeternum_megacity_research_desc: "8대 아에테르니테 메가시티 중 하나인 §H$building_giga_aeternum_megacity_research$§!는 한때 모든 아에테르눔의 기술적 진보를 조율하는 역할을 담당했으나, 지금은 독자적인 실험을 수행하려는 소수의 호기심 많은 거주자를 제외하고는 모두 떠난 지 오래되었습니다. 주변 지역에는 아에테르니테 황금 시대의 미완성된 버려진 프로젝트들이 산재해 있습니다." # 5965742661120300985
+  building_giga_aeternum_megacity_unity: "아르키스톤카우푼키" # 4013804033596981556
+  building_giga_aeternum_megacity_unity_desc: "8대 아에테르니테 메가시티 중 하나인 §H$building_giga_aeternum_megacity_unity$§!는 기술 및 문화적 지식의 거대한 기록 보관소입니다. 본래 은하계 확장의 영광스러운 역사를 기록하기 위해 의도되었으나, 지금은 향락적인 아에테르니테 인구가 생산한 수백만 년 분량의 엔터테인먼트 미디어로 가득 차 있습니다. 진취적인 탐험가라면 이곳에서 아에테르눔의 방대한 문화 유산을 탐구하며 평생을 보낼 수도 있을 것입니다." # 18014584774556532017
+  building_giga_aeternum_megacity_military: "소단카우푼키" # 1705629708393499160
+  building_giga_aeternum_megacity_military_desc: "8대 아에테르니테 메가시티 중 하나인 §H$building_giga_aeternum_megacity_military$§!는 아이온디아의 거대한 조선소 시설과 지표면을 감시하는 사이코신세틱 감시자 군단을 조율하는 역할을 맡고 있습니다. 오늘날에는 자동화된 유지보수 작업 외에는 거의 기능을 하지 않으며, 드물게 침입자를 막기 위해 함대를 파견하기도 합니다." # 9597458107146810002
+  building_giga_aeternum_megacity_megaconstruction: "세오스텐카우푼키" # 8488019572007635840
+  building_giga_aeternum_megacity_megaconstruction_desc: "8대 아에테르니테 메가시티 중 하나인 §H$building_giga_aeternum_megacity_megaconstruction$§!는 거대 구조물 및 기타 첨단 건축 프로젝트에 사용되는 기질의 제조 허브입니다. 한때는 행성 전체를 유용한 재료로 정제하는 작업을 수행했으나, 오늘날에는 가끔 이루어지는 구조적 유지보수 외에는 거의 사용되지 않습니다." # 9066213526206930845
+  building_giga_aeternum_megacity_factory: "투오탄토카우푼키" # 10378623780001966095
+  building_giga_aeternum_megacity_factory_desc: "8대 아에테르니테 메가시티 중 하나인 §H$building_giga_aeternum_megacity_factory$§!는 현대 아에테르니테 사회에서 사용되는 대다수의 고급 상품과 기술이 제조되는 곳입니다. 아에테르눔의 황금기에는 위대한 기술적 경이로움의 현장이었으나, 오늘날에는 끝없이 평범한 소비재를 생산하는 곳으로 전락했습니다." # 17408987404532394751
+  decision_dump_matter_on_gas_giant_desc: "이 가스 거대 행성에 엄청난 양의 질량체를 주입함으로써, 우리는 이를 항성으로 점화하기에 충분한 질량을 갖도록 만들 수 있습니다." # 1109069332749262775
+  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  concept_giga_blokkat_diff_very_easy: "§E블록렛§! 난이도" # 12708821593898148852
+  concept_giga_blokkat_diff_easy: "§B블록키튼§! 난이도" # 12324398183943517718
+  concept_giga_blokkat_diff_normal: "§G일반 블록캣§! 난이도" # 708019950415662496
+  concept_giga_blokkat_diff_bismuth: "§R비스무트 블록캣§! 난이도" # 1811761610158277574
+  concept_giga_blokkat_diff_endtech: "§M엔드테크 블록캣§! 난이도" # 13685645459828492807
+  concept_giga_blokkat_diff_deathmode: "§P오블리터레이터 블록캣§! 난이도" # 8199370980954175857
+  concept_giga_blokkat_diff_very_easy_desc: "$giga_blokkats_very_easy$" # 6419164628070839478
+  concept_giga_blokkat_diff_easy_desc: "$giga_blokkats_easy$" # 15282333132919233017
+  concept_giga_blokkat_diff_normal_desc: "$giga_blokkats_normal$" # 17818691337852377040
   giga_blokkat_join.1000.c.deathmode: "블로캇들은 우리를 위협으로 간주합니다. 그들은 협상할 의향이 없습니다." # 4111319398009467511
   giga_blokkat.3236.name: "블로캇 봉쇄 넥서스 완성!" # 4472391450665102989
   giga_blokkat.3236.desc: "§Y블로캇 격리 넥서스§!가 §Y[giga_system.GetName]§! 성계에 건설되었습니다. 성계 내 천체 중 하나 위에 건설되었으며, 이제 블로캇 하나를 무력화할 기회가 생길 때마다 격리할 준비가 되었습니다.\n\n블로캇 격리의 기본 유지 비용은 약 §Y1000§! £energy£이지만, 이 구조물은 블로캇을 격리하는 데 성공하면 각 연구 분야별로 §Y750§!을 생산하고, 우리의 §Y블로캇 연구 속도§!를 §Y20%§! 증가시킬 수 있을 것입니다.\n\n블로캇은 무력화되고 격리된 상태에서도 여전히 끔찍할 정도로 진보된 생명체이므로, 우리는 항상 §R반드시§! 그들을 주시해야 한다는 점을 명심하십시오." # 11594678611503380724
@@ -11192,9 +11019,6 @@
   giga_mega.7008.a: "§Y행성 조선소§!로 등급을 낮춥니다." # 12732395036529409378
   giga_mega.7008.b: "완전히 해체하십시오." # 4706021267059771638
   giga_mega.7008.c: "잊어버리겠습니다." # 17918540167188125535
-  giga_megaview_defense_nexus_cant_deploy: "방어 편대를 배치할 수 없습니다. 배치는 대기 시간이 없어야 하며 행성은 포위되거나 점령당하지 않아야 합니다." # 16629538361980854941
-  giga_megaview_defense_nexus_deploy_tooltip: "§G배치§!를 클릭하고 지금 바로 §Y타격 코르벳함§!을 건조하십시오." # 11865030231790387321
-  giga_megaview_defense_nexus_deploy_now_button: "§코르벳함 전개§!" # 10982808064694027589
   building_defense_nexus_capacity: "보조 격납고" # 3580223108566694191
   building_defense_nexus_capacity_desc: "적대적인 함선으로부터 세계가 위협받을 때마다 배치될, §Y타격 코르벳함§!을 수용하는 광활한 격납고." # 9420019727383059065
   building_defense_nexus_capacity_effect_desc: "§Y타격 코르벳 함대 규모§!를 §Y15§!만큼 증가시킵니다!" # 2464269183784078746
@@ -11208,7 +11032,6 @@
   planetary_drive_yard_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_ship_production$ §H(조선소 3개)§! - $giga_list_category_military$\n소속 성계에 §YS조선소 슬롯§!, §Y함대 규모 한계§! 및 §Y+15% 건조 속도§!를 부여합니다.\n$giga_list_category_requires_starbase_uplink$\n§L행성에 군사적 보너스를 제공하는 궤도 조선 시설입니다." # 2044604139482134838
   planetary_drive_yard_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - 이 구조물은 행성의 §Y궤도 슬롯§!을 차지하므로 §Y궤도 아콜로지§!와 중첩될 수 없습니다. 나중에 §YShipbuilding§!에 집중하기 위해 §Y행성 드라이브 야드§!로 업그레이드하거나, 세계 방어를 위해 §Y스트라이크 코르벳함§!을 자율적으로 건조하고 배치하는 §Y행성 방어 넥서스§!로 업그레이드할 수 있습니다.\n\n최대 §Y20§!개의 이 메가스트럭처가 §Y스타베이스§!에 미치는 효과를 중첩시킬 수 있습니다." # 2275140001162333688
   planetary_drive_yard_1: "행성 조선소" # 12870197152085022736
-  planetary_drive_yard_1_DESC: "완벽하게 기능하는 조선 시설을 갖춘 가동 중인 행성 조선소로, 해군 수용량, 군인 직업을 제공하며 궤도 폭격으로부터 해당 행성에 약간의 보호막을 부여합니다.\n\n해당 성계의 성계 기지에 3개의 조선소와 15%의 조선 속도를 제공합니다." # 16528363851670938569
   planetary_drive_yard_modifier_gestalt: "행성 조선소" # 12870197152085022736
   planetary_drive_yard_modifier_gestalt_desc: "이 세계 상공의 행성 조선소는 이곳 주민들에게 군사적 주둔과 궤도 폭격으로부터의 보호를 제공하고 있습니다." # 16384592078714113937
   planetary_drive_yard_fortress_modifier_gestalt: "행성 방어 결속체" # 7194432528185915950
@@ -11231,7 +11054,6 @@
   giga_tech_planetary_drive_yard_shipyard: "향상된 행성 조선소" # 808325422072854535
   giga_tech_planetary_drive_yard_shipyard_desc: "분산형 행성 조선소에 대한 추가적인 업그레이드, 예를 들어 확장된 기반 시설은 장기적으로 우리의 조선 능력을 더욱 향상시킬 것입니다." # 7650139015128931980
   allow_planetary_drive_yard_shipyard: "§H메가스트럭처 잠금 해제§!: 행성 드라이브 야드" # 11793426794954281712
-  desc_planetary_drive_yard_shipyard: "§Y행성 조선소§!에서 업그레이드된 §Y행성 건조창§!은 메가스트럭처가 부여하는 조선소 수와 건조 속도 보너스를 두 배로 늘리고 해당 성계의 성계 기지에서 건조되는 함선의 비용을 감소시킵니다. 또한 무역 수집 범위를 향상시킵니다." # 12790109647537837899
   allow_planetary_drive_yard_defense: "§H메가스트럭처 해금§!: 행성 방어 넥서스" # 13054782523892553828
   desc_planetary_drive_yard_defense: "§Y행성 조선소§!에서 업그레이드된 §Y행성 방어 넥서스§!는 메가스트럭처의 초점을 조선에서 행성 방어로 전환합니다. 이 구조물은 무엇보다도 자체적인 §Y스트라이크 코르벳함§! 함대를 자율적으로 건조하고 유지하는 능력을 얻게 되며, 적대적인 함대가 너무 가까이 접근하면 자동으로 배치됩니다." # 5444246320978386398
   giga_dialog.13400.name: "행성 조선소 건설 부지 완공!" # 18370922352431053131
@@ -11241,22 +11063,35 @@
   giga_dialog.13401.desc: "§Y[giga_planet.GetName]§! 주위에 행성 조선소가 완성되었습니다!\n\n광활한 조선창과 수많은 정박 시설 및 도킹 배열을 갖춘 이 시설은 조선창 내에서 여러 척의 군함을 동시에 건조할 수 있게 하여 해당 성계의 기지 성능을 크게 향상시킬 것입니다.\n\n이 구조물의 완공으로 §Y[giga_planet.GetName]§!는 거주민들에게 수많은 군인 직업을 제공하고 궤도 폭격에 대한 방어력을 부여함으로써 우리 제국에서 가장 중요한 군사 행성 중 하나가 될 것입니다.\n\n이 혜택을 받으려면 기지에 §Y업링크 건물§!을 건설해야 하며, 이는 한 성계 내 최대 §Y20§!개의 행성 조선소에 대해 중첩될 수 있습니다." # 10893819471352923296
   giga_dialog.13401.a: "훌륭하군!" # 5815683167456707443
   giga_dialog.13402.name: "행성 방어 넥서스 가동됨" # 18276496203591500933
-  giga_dialog.13402.desc: "§Y[giga_system.GetName]§!의 행성 조선소가 기능적인 §Y행성 방어 허브§!로 업그레이드되었습니다.\n\n광대한 격납고와 군함 도크를 갖춘 이 방어 허브는 §Y[giga_planet.GetName]§!의 인구수에 따라 결정된 일정 수의 §Y타격 코르벳함§!을 자동으로 건조할 수 있습니다.\n\n이 §Y타격 코르벳함§!들은 적 함대가 §Y[giga_planet.GetName]§!에 접근할 때마다 배치되며, 시스템 내의 모든 적대적 함선과 자동으로 교전한 후 더 이상의 위협이 남아있지 않으면 §Y[giga_planet.GetName]§!로 복귀합니다.\n\n우리의 §Y타격 코르벳함§!은 §YShip Designer§!의 §Y코르벳함§! 설계를 사용하지만(따라서 새로운 함선 등급을 설계할 필요가 없습니다), 더 많은 화력을 탑재하고 초광속 항해 장치는 없습니다.\n\n우리는 이 구조물이 현재 보유하고 있는 §Y타격 코르벳함§!의 수를 확인하고, §Y행성 방어 허브§! 자체를 선택하여 이들이 배치될 시기를 설정할 수 있습니다.\n\n추가적으로, 행성에 거주하는 팝 10개당 강력한 §Y행성 수호자§! 군대 하나를 생성하여 지상 침공 발생 시 행성의 안전을 보장합니다." # 8504538367001872198
   giga_dialog.13402.a: "훌륭하군." # 13357587260733090656
   giga_dialog.13404.name: "행성 조선소 가동 중" # 5928553901115614043
-  giga_dialog.13404.desc: "행성 조선소가 §Y행성 드라이브 야드§!로 업그레이드되었습니다!.\n\n함선 건설에 더욱 집중하여, 이 업그레이드는 §Y[giga_system.GetName]§! 성계의 성계 기지가 제공하는 조선소 수와 건조 속도 보너스를 실질적으로 §Y두 배§!로 늘렸습니다.\n\n추가로, 이 성계에서 건조되는 함선에 대해 §Y7.5%§!의 비용 감소 효과를 부여하며, 이는 최대 §Y30%§!까지 중첩될 수 있습니다. 드라이브 야드는 성계로 유입되는 무역을 수집하는 데 도움이 되어 성계 기지의 §Y무역 수집 범위§!를 §Y2§!만큼 증가시킵니다.\n\n이미 업링크 건물을 보유하고 있다면 새로 건설할 필요는 없습니다." # 106513931812725178
   giga_dialog.13404.a: "훌륭하군." # 13528797227097630973
   planetary_drive_yard_1_shipyard: "행성 조선소" # 2590705972649195963
-  planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 조선 시설에 더욱 집중합니다. 메가스트럭처가 제공하는 조선소 수, 함대 수용량 및 함선 건조 속도를 두 배로 늘리며, 해당 성계의 성계 기지에서 함선 비용을 7.5% (최대 30%까지) 감소시키고 교역 수집 범위를 2 증가시킵니다." # 10488009191358197377
   planetary_drive_yard_1_fortress: "행성 방어 결속체" # 7194432528185915950
   planetary_drive_yard_1_fortress_DESC: "행성 방어에 중점을 둔 행성 조선소의 업그레이드 버전입니다. 지휘 한계를 증가시키고, 모행성을 궤도 폭격으로부터 보호하며, 적대적인 함대를 향해 일정 수의 §Y타격 코르벳함§!을 자동으로 전개하는 능력을 얻습니다." # 1169684095435709880
-  defense_nexus_title: "스트라이크 코르벳 수: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15935388676707580572
   defense_nexus_title_deployed: "§G스트라이크 코르벳함 출격§!" # 14978773512484354794
   defense_nexus_max_count: "최대: §Y[planet.giga_nexus_ship_count_max]§!" # 928292808310651321
   defense_nexus_monthly_count: "월간 획득량: §Y[planet.giga_nexus_ship_count_monthly]§!" # 15697276325229277657
-  giga_megaview_defense_nexus_deploy_system_yes: "스트라이크 코르벳 배치: §G시스템§!\n\n§Y행성 방어 중추§!는 적대적인 함대가 해당 시스템에 진입할 때마다 §Y스트라이크 코르벳§!을 출격시킬 것입니다." # 13727066747712780092
-  giga_megaview_defense_nexus_deploy_bombard_yes: "스트라이크 코르벳 배치: §Y포격§!\n\n§Y행성 방어 중추§!는 적대적인 함대가 §Y[planet.GetName]§!을 포격할 때마다 §Y스트라이크 코르벳§!을 출격시킬 것입니다." # 4129391909309318196
-  giga_megaview_defense_nexus_deploy_never_yes: "스트라이크 코르벳 배치: §R절대 안 됨§!\n\n§Y행성 방어 핵§!은 §Y스트라이크 코르벳§!을 §R해제하지§! 않을 것입니다." # 3524590071902340325
+  concept_giga_blokkat_diff_bismuth_desc: "$giga_blokkats_bismuth$" # 10482109683283953590
+  concept_giga_blokkat_diff_endtech_desc: "$giga_blokkats_endtech$" # 5224921677169350709
+  concept_giga_blokkat_diff_deathmode_desc: "$giga_blokkats_deathmode$" # 7300721995275868262
+  giga_menu_blokkat_section_desc: "블로캣은 은하계 밖에서 온 굶주린 노천 채굴자들입니다. 이 섹션은 생성 시기, 생성 확률, 난이도를 포함한 설정을 제어합니다.\n각 난이도 설정의 효과는 아래와 같습니다.\n - ['concept_giga_blokkat_diff_very_easy']\n - ['concept_giga_blokkat_diff_easy']\n - ['concept_giga_blokkat_diff_normal']\n - ['concept_giga_blokkat_diff_bismuth']\n - ['concept_giga_blokkat_diff_endtech']\n - ['concept_giga_blokkat_diff_deathmode']" # 12125364723587738475
+  gigas_max_blokkat_difficulty: "최대 블로캣 난이도에 도달했습니다" # 11360840928553779681
+  gigas_min_blokkat_difficulty: "최소 블로캣 난이도에 도달했습니다" # 10544195235775831472
+  gigas_menu_blokkat_disabled: "블로캣 비활성화됨" # 2742622309320077974
+  giga_megaview_defense_nexus_cant_deploy: "§R§Y타격 코르벳§!을 배치할 수 없습니다. 재사용 대기시간 중이 아니어야 하며, 행성이 포위되거나 점령당한 상태여서는 안 됩니다.§!" # 9378936922654667032
+  giga_megaview_defense_nexus_deploy_tooltip: "§G클릭하여 §Y타격 코르벳§!을 §G배치§!합니다§!" # 15130593039040303250
+  giga_megaview_defense_nexus_deploy_now_button: "§H코르벳 배치§!" # 13584704431383737244
+  planetary_drive_yard_1_DESC: "완벽하게 작동하는 함선 건조 시설을 갖춘 행성 조선소로, 해군 수용력과 군인 직업을 제공하며 행성을 궤도 폭격으로부터 약간 보호합니다." # 11235475415373971091
+  desc_planetary_drive_yard_shipyard: "§Y행성 조선소§!에서 업그레이드된 §Y행성 추진 조선소§!는 거대 구조물이 제공하는 조선소와 건조 속도 보너스를 두 배로 늘리고, 해당 성계의 성계 기지에서 건조되는 함선의 비용을 절감합니다." # 3370805965865339099
+  giga_dialog.13402.desc: "§Y[giga_system.GetName]§! 행성 조선소가 기능적인 §Y행성 방어 허브§!(으)로 업그레이드되었습니다.\n\n거대한 격납고와 전함 도크를 갖춘 방어 허브는 §Y[giga_planet.GetName]§!의 인구수에 따라 일정량의 §Y타격 코르벳§!을 자동으로 건조할 수 있습니다.\n\n이 §Y타격 코르벳§!들은 적 함대가 §Y[giga_planet.GetName]§!(으)로 접근할 때마다 배치되며, 성계 내 모든 적대 함선과 자동으로 교전한 후 더 이상 위협이 없으면 §Y[giga_planet.GetName]§!(으)로 귀환합니다.\n\n우리의 §Y타격 코르벳§!은 §Y함선 설계자§!의 §Y코르벳§! 설계를 사용하므로(따라서 새로운 함선 등급을 설계할 필요가 없습니다) 더 강력한 화력을 갖추게 되지만, FTL 드라이브는 탑재되지 않습니다.\n\n§Y행성 방어 허브§!를 선택하여 현재 구조물이 보유한 §Y타격 코르벳§!의 수를 확인하고 배치 시점을 설정할 수 있습니다.\n\n또한, 행성에 거주하는 인구 §Y1000§!명당 강력한 §Y행성 수호자§! 육군을 하나씩 생성하여 지상 침공 시 행성의 안전을 보장합니다." # 2040231570854094985
+  giga_dialog.13404.desc: "행성 조선소가 §Y행성 추진 조선소§!(으)로 업그레이드되었습니다.\n\n함선 건조에 더욱 집중함으로써, 이번 업그레이드는 §Y[giga_system.GetName]§! 성계 기지에 제공되는 조선소 수와 건조 속도 보너스를 효과적으로 §Y두 배§!로 늘렸습니다.\n\n이미 업링크 건물이 있다면 새로 지을 필요는 없습니다." # 12305603954545951011
+  planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 함선 건조 시설에 더욱 집중합니다. 거대 구조물이 제공하는 조선소 수, 해군 수용력, 함선 건조 속도를 두 배로 늘리는 동시에 성계 기지에서의 함선 건조 비용을 절감합니다." # 13705150910797117927
+  giga_defense_nexus_text_no: "" # 17241709254077376921
+  defense_nexus_title: "타격 코르벳: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15402400127574864374
+  giga_megaview_defense_nexus_deploy_system_yes: "타격 코르벳 배치: §G성계§!\n\n§Y행성 방어 허브§!는 적대 함대가 성계에 진입할 때마다 §Y타격 코르벳§!을 출격시킵니다.\n\n$giga_megaview_defense_nexus_cycle$" # 5277345193003655170
+  giga_megaview_defense_nexus_deploy_bombard_yes: "타격 코르벳 배치: §Y폭격§!\n\n§Y행성 방어 허브§!는 적대 함대가 §Y[planet.GetName]§!을(를) 폭격할 때마다 §Y타격 코르벳§!을 출격시킵니다.\n\n$giga_megaview_defense_nexus_cycle$" # 12370707273952616876
+  giga_megaview_defense_nexus_deploy_never_yes: "타격 코르벳 배치: §R안 함§!\n\n§Y행성 방어 허브§!는 §Y타격 코르벳§!을 출격시키지 §R않습니다§!.\n\n$giga_megaview_defense_nexus_cycle$" # 13730527615228036017
   defense_nexus_cant_deploy: "§R행성이 포위되거나 점령당했습니다. 스트라이크 코르벳함을 배치할 수 없습니다.§!" # 8481274787618443864
   giga_strike_corvette: "스트라이크 코르벳" # 5046430864295296557
   giga_strike_corvette_plural: "타격 코르벳함" # 13829885981414910645
@@ -11272,7 +11107,6 @@
   THRUSTER_STRIKE_CORVETTE_DESC: "호위 구축함은 다가오는 적대 세력을 요격하기 위해 엄청난 속도와 기동성이 필요합니다." # 15465718326635017693
   giga_dialog.13403.name: "행성 방어 거점 메커니즘" # 7271770155548857205
   giga_megaview_defense_nexus_explain_tooltip: "§Y행성 방어 넥서스§!'의 메커니즘을 보려면 클릭하십시오." # 12091048197352095022
-  defense_nexus_explanation_text: "방어 넥서스는 행성을 방어하기 위해 자동화된 §Y타격 코르벳§! 함대에 의존합니다!\n매달 자체적으로 §Y타격 코르벳§!을 건조하고 비축할 것입니다.\n기본 최대 수용량은 행성 인구의 §Y3분의 1§!과 같으며 다양한 방법으로 증가시킬 수 있습니다.\n매달 §Y2§!기가 건조되며, §Y20§! 팝마다 매달 §Y1§!기의 추가 코르벳이 증가합니다. 최대 수용량과 마찬가지로 건조 속도 또한 다양한 방법으로 증가시킬 수 있습니다.\n하지만 타격 코르벳은 행성이 적대 세력에게 §R침공당하고 있거나§! §R점령당했을§! 경우 배치될 수 없습니다.\n§Y타격 코르벳§!은 §YFTL§! 기능은 없지만 §Y기동성§!과 §Y화력§!이 증가된 일반적인 §Y코르벳§!입니다. 따라서 우리는 새로운 함선 등급을 설계할 필요가 없으며, 방어 편대는 §Y함선 설계자§!에 있는 모든 기존 §Y코르벳§! 설계 중에서 무작위로 선택될 것입니다.\n이 함선들은 적대 함대가 메가스트럭처에 접근하면 자동으로 배치되며, 메가스트럭처 자체의 설정 버튼을 사용하여 §Y타격 코르벳§!이 언제 해제될지 설정할 수 있습니다.\n위협이 제거되면 방어 편대는 자동으로 §Y방어 넥서스§!로 복귀합니다. 함대를 다시 배치하기 전에는 §Y3개월§!의 대기 시간이 있습니다.\n또한 이 메가스트럭처는 행성에 거주하는 팝 §Y10§!명당 하나의 §Y행성 수호자§! 군대를 생성합니다." # 6307505298538925862
   giga_dialog.13403.a: "확인했습니다." # 3536622398024101432
   giga_megaview_defense_nexus_explain_tooltip_no: "이 창은 이미 열려 있습니다." # 7178354973823112192
   giga_megaview_defense_nexus_explain_button: "§H표시 메커니즘§!" # 6912851929863513110
@@ -11640,93 +11474,7 @@
   giga_bulwark_trad_stability_maginot: "$giga_bulwark_trad_stability_nexus$" # 16926496697011952173
   giga_bulwark_trad_stability_maginot_desc: "$giga_bulwark_trad_stability_nexus_desc$" # 11047663612345239636
   giga_blokkats_anime: "블로캇 외형: §B애니메이션 블로캇§!\n블로캇들은 어떤 이유에서인지 애니메이션 캐릭터(디스코드 사용자 Derega 작화)처럼 보이게 될 것입니다. 지금 불평하기 전에, 제가 디스코드 서버에서 이들을 추가할지 여부에 대해 국민투표를 진행했고 '찬성'이 이겼다는 점을 말씀드립니다. 이 일로 인해 민주주의를 사랑해야 할지 증오해야 할지 모르겠습니다.\n\n\n\n£blokkat_anime£\n\n\n\n§Y클릭하여 §G일반 블로캇§!으로 전환" # 6462257673512387024
-  giga_katzenland.010.name: "메오파를 되살리는 것인가?" # 12894382598029541341
-  giga_katzenland.010.desc: "메오파는 만 년 전에 사망했습니다.\n\n...아니면 그럴까요? 그의 유해는 행성 전체가 겪은 일에도 불구하고 왕좌에 앉은 채 놀라울 정도로 온전하게 남아 있으며, 고고학자들이 뼈에 달라붙어 있는 조직에서 소량의 생존 DNA를 발견했습니다.\n\n죽은 자를 되살리는 것은 우리에게 비밀이 아니며, 메오파의 잔해를 다른 카첸 DNA 샘플 및 사이버네틱 임플란트와 접합하면 이 한때 영광스러웠던 지도자를 되살려... 우리 깃발 아래 복무하게 할 수 있을지도 모릅니다.\n\n그에게 약간의 대량학살 성향이 있을 수 있지만, 우리 과학자들은 적절하게 배치된 신경 억제 장치가 그의 살인적인 성향 대부분을 잠재울 것이라고 확신합니다. 이 제안을 진행해야 할까요?" # 8126921776628096557
-  giga_katzenland.010.a: "전적으로 동의합니다!" # 8937945581665837667
-  giga_katzenland.010.b: "그는 미쳤어! 가망 없어." # 3331569357125187138
-  REANIMATE_MEOPA: "미오파를 되살려라" # 8438472209958428752
-  REANIMATE_MEOPA_DESC: "메오파는 사망했지만, 어쩌면 그를 되살릴 수도 있을 것입니다. 하지만 그의 엄청난 나이 때문에, 공백을 메우기 위해서는 사이버네틱스와 유전자 조작을 통한 보충이 필연적으로 필요할 것입니다." # 3116528617295872880
-  giga_katzenland.011.name: "메오파의 귀환" # 1366081700149721708
-  giga_katzenland.011.desc: "그... 해냈습니다. 사이버네틱스와 유전자 조작을 저희의 난해한 부활 기술과 영리하게 결합하여 오랫동안 죽어 있던 카첸 지도자를 되살릴 수 있었습니다. 그의 정신은 이후 그의 골격을 기반으로 한 새로운 로봇 신체에 이식되었으며, 이제 우리 깃발 아래 복무할 준비가 완전히 되었을 것입니다.\n\n이 부활한 복사본이 원래의\"메오\"의 얼마나 많은 부분을 유지하고 있는지는 확실하지 않지만, 초기 심문 결과 그가 가진 잔여 기억은 우리가 카첸란드의 데이터 코어에서 수집한 내용과 일치하지만, 그가 현재 상황에 대해 다소 혼란스러워하는 것은 당연합니다.\n\n그의 로봇 신체에 이식된 신경 억제 장치의 사용은 남아있는 대량 학살 성향을 잠재울 것이지만, 그것이 그를 실제로 제정신으로 만들 수 있을지는... 논란의 여지가 있습니다.\n\n하지만, 메오파가 카첸란드를 통치하는 동안 습득한 엄청난 다양성의 기술들은 그가 §Y제독§!, §Y장군§!, 그리고 §Y행정관§! 역할을 모두 수행할 수 있도록 해줄 것입니다." # 4028846347592067268
-  giga_katzenland.011.a: "훌륭하군... 인지는 모르겠지만. 이게 좋은 생각이었을까...?" # 284291074332433417
-  giga_katzenland.011.a.tooltip: "§YMeopa§!가 §Y제독§!, §Y총독§!, 그리고 §Y장군§!의 역할로 우리와 함께합니다. 그가 이 역할 중 어느 하나에서 사망하면, 세 역할 모두에서 사망하게 됩니다. 하지만 조기 사망의 위험을 원치 않는다면 우리는 그를 이 역할들 중 어느 곳에서든 해임할 수 있습니다.\n\n부디 이번에는 그가 어느 정도 제정신이기를 바랍니다.\n\n부디..." # 1430764173485680956
-  katzen_trait_meopa_revived: "광기를 품은 핵광인" # 10563440031768821881
-  katzen_trait_meopa_revived_desc: "신경 억제제가 뫼파의 의심스러운 성향을 잠재우는 데 도움이 되고 있기는 하지만, 그의 내면에 자리한 핵무기 애호 성향은 여전히 건재하며 그것이 드러나고 있습니다." # 8801400087218447329
   mod_armies_energy_upkeep_mult: "군대 에너지 유지비" # 8709407765626422807
-  eaw_early_army: "수정 강화 산업 군대" # 3647163047861631517
-  eaw_early_army_desc: "이 무장 병력은 다양한 결정 기반 무기로 강화되었습니다." # 18072619428954219191
-  giga_flavor_systems.2000.name: "지구 중심적" # 13118915619321571334
-  giga_flavor_systems.2000.desc: "우리 함선 중 하나가 §YBehemoth§! 성계를 탐사하던 중, 진정으로 물리학을 거스르는 행성계를 발견했습니다.\n\n성계 중심의 갈색왜성 주위를 공전하는 기이한 대륙형 행성이 있는데, 갈색왜성의 낮은 에너지 출력으로 인해 이 행성은 생명체가 살 수 없는 환경이어야 마땅합니다. 하지만 어찌 된 일인지, 이 행성 근접 궤도에 미니어처 태양과 같은 천체가 공전하며 안정적인 수권과 표면 생명체를 유지할 만큼 충분한 열과 에너지를 공급하고 있습니다.\n\n더욱이, 이 행성에는 여러 지적 종족이 진화하여 현재 광범위한 산업화를 겪고 있는 수많은 원시 국가들로 발전했습니다.\n\n흥미롭게도, 이 행성 자체는 비정상적으로 결정질 물질이 풍부하며, 원시 종족들은 이 물질들을 기술과 무기에 통합하는 기발한 방법을 알아내어, 이처럼 초기 문명 단계임에도 불구하고 비정상적으로 강력한 무장 세력을 발전시켰습니다. 행성 생태계 자체는 놀라울 정도로 다양하며, 우리의 진화 및 생물학적 이해를 초월하는 듯한 이국적이고 난해한 종들로 가득합니다.\n\n이 행성계 전체가 우리가 현재 가진 거주 가능 행성 발전에 대한 지식과 상충된다는 점은 의심의 여지가 없으며, 이곳을 연구하는 것은 우리의 과학 기반을 더욱 발전시킬 엄청난 기회가 될 것입니다." # 12706264327820075164
-  giga_flavor_systems.2000.a: "참으로 기이하군." # 8017225409737157603
-  giga_flavor_systems.2002.name: "파우스트, 원자력 시대로 진입하다" # 10445053835641939093
-  giga_flavor_systems.2002.desc: "보고서에 따르면 §Y[giga_eaw_system.GetName]§!계의 특이한 대륙형 행성인 §Y파우스트§!에 거주하는 원시 종족들이 저출력 핵 장치를 성공적으로 제작하고 시험했다고 합니다.\n\n현재는 그 수가 비교적 적고 제작 비용이 많이 들지만, 이 기술이 정제되고 행성의 여러 국가들로 퍼져나가면서 이러한 무기들은 기하급수적으로 확산될 것으로 예상됩니다.\n\n흥미롭게도, 이 무기들은 동력원으로 기존의 우라늄 핵분열에 의존하는 대신, 행성에 풍부한 결정 매장물 내부에 담긴 에너지를 활용하여 엄청난 파괴력을 방출하는데, 이는 저희 관측소가 §Y타우핵 장치§!라고 부르기 시작한 것입니다.\n\n이제부터 행성에서 대규모 분쟁이 발생한다면, 이전보다 훨씬 더 파괴적일 수밖에 없을 것입니다." # 17423128225409570607
-  giga_flavor_systems.2002.a: "흥미롭군." # 9903619114818313320
-  giga_flavor_systems.2004.name: "파우스트, 타우핵 전쟁 속으로 강하하다" # 14626241891498935272
-  giga_flavor_systems.2004.desc: "저희 §YFaust§! 관측소에서 보고하기를, 행성 내부의 지정학적 긴장이 극도로 고조된 나머지, 파우스트의 주요 강대국 두 곳 사이의 비교적 사소한 어선 충돌 사건이 행성의 세 주요 대륙을 서로 맞서는 대규모 분쟁으로 확대되었다고 합니다.\n\n불행히도, 대부분의 주요 국가들이 상당한 규모의 비축량을 보유하고 있어, 신지핵무기가 널리 퍼져 있었으며, 이로 인해 행성의 여러 초국가적 동맹들이 서로에게 막대한 양의 신지핵탄두를 발사하면서 분쟁은 빠르게 전멸급 사건으로 변모했습니다.\n\n행성 표면이 장치들에 의해 방출된 대격변적인 에너지에 완전히 휩싸이는 데는 불과 며칠밖에 걸리지 않았으며, 한때 푸르렀던 세계는 행성 전체를 뒤덮는 거의 마법적인 에너지의 거대하고 끓어오르는 폭풍으로 변모했습니다.\n\n궤도 스캔 결과, 놀랍게도 신지핵 장치들이 방출하는 에너지를 기반으로 번성하는 듯한 한 정글 지역을 제외하고는, 원시 문명은 완전히 전멸한 것으로 나타났습니다." # 9080885058639656256
-  giga_flavor_systems.2004.a: "참으로 폭력적인 최후로군. 유감스럽소." # 4133641514444577580
-  giga_flavor_systems.2006.name: "파우스트, 초기 우주 시대로 진입" # 2193977779745363446
-  giga_flavor_systems.2006.desc: "§Y파우스트§! 원시 종족이 행성 간 비행이 가능한 최초의 궤도 우주선을 개발하며 사회 진화에 있어 또 하나의 중요한 단계를 완료했습니다.\n\n행성에 풍부한 결정체의 액체 형태로 동력을 얻은 이 우주선들은 여러 대가 항성계를 탐사하기 위해 파견되었으며, 원시 종족들은 그들의 난해한 행성계의 본질에 대한 본격적인 탐사를 시작했습니다.\n\n점점 더 강력해지는 결정체 렌즈 망원경의 개발로, 원시 종족들은 더\"표준적\" 외계 행성들을 연구함으로써 그들의 행성의 특이한 천문 지리가 진정으로 독보적이라는 사실을 알게 되었을 가능성이 높습니다.\n\n행성 전역의 긴장이 주요 강대국들이 국제 협력을 향한 매우 실질적인 조치를 취하면서 가라앉기 시작했지만, 이러한 노력이 결실을 맺을지 아니면 비극적인 멸종 사태로 끝날지는 두고 봐야 합니다.\n\n그들의 특이한 존재들이 별들 사이에서 우리와 합류할 준비가 되는 것은 그리 오래 걸리지 않을 것입니다." # 17039956145169054589
-  giga_flavor_systems.2006.a: "흥미롭군." # 9738541132076248136
-  giga_flavor_systems.2012.name: "§Y대 파우스트식 소집§! 초광속 항행 달성" # 10232510157703594458
-  giga_flavor_systems.2011.desc.eawun: "저희 §Y파우스트§! 관측소는 해당 행성의 원시 문명이 최소한 작동하는 초광속 항행 동력을 고안해냈음을 확인했습니다. 그들의 기술 대부분과 마찬가지로, 이 동력은 행성에 풍부하게 존재하는 특이한 결정체를 광범위하게 사용하여, 그들의 모성계에 이용 가능한 결정체의 양을 고려할 때 제조 비용이 놀라울 정도로 저렴합니다.\n\n해당 행성 자체는 행성의 주요 민주 정부들이 연방을 이루어 결성된 §Y위대한 파우스트주의 회의§!라는 초국가적 실체에 의해 통합되었습니다. 이 정부들이 어느 정도는 여전히 존재하지만, 회의가 파우스트의 성간 권위를 실질적으로 인수했으며, 이 문명이 별들 사이로 팽창하는 것을 이끌 책임이 있습니다.\n\n행성 내 다양한 종족 간의 거대한 문화적, 물리적 차이를 고려할 때, 행성 전체가 단일 정부로 평화롭게 연방화된 것은 저희 관측소 승무원과 행성 거주민 대부분 모두에게 경이로운 업적으로 간주됩니다.\n\n하지만 저희가 해당 성계의 성계 기지를 소유하고 있기에, 그들의 지도자인 §Y정글 트렉 3세§!로부터 성계 기지의 소유권을 자신들에게 이전하여 파우스트의 주민들이 마침내 행성 간 여정을 시작할 수 있도록 해달라는 전문을 받았습니다." # 1905806910318653362
-  giga_flavor_systems.2013.name: "§Y그리폰 제국§! 초광속 항해 달성" # 14597404185012536433
-  giga_flavor_systems.2011.desc.eawgriffon: "저희 §YFaust§! 관측소에서 해당 행성의 원시 종족들이 최소한 작동하는 초광속 항행 동력을 고안해냈다는 것을 확인했습니다. 그들의 기술 대부분과 마찬가지로, 이 동력은 행성에 풍부하게 존재하는 특이한 수정들을 광범위하게 사용하여, 그들의 모성계에 존재하는 수정의 양을 고려할 때 제조 비용이 놀라울 정도로 저렴합니다.\n\n행성 자체는 §YGriffonian Empire§!라고 알려진 제국주의 국가에 의해 전쟁과 외교적 책략을 통해 통합되었으며, 이 국가는 행성의 이전 국가들 대다수를 노골적인 정복이나 나머지 국가들에 대한 경제적 지배력 행사를 통해 복속시키는 데 성공했습니다.\n\n비록 모두가 이러한 상황에 만족하는 것은 아니지만, 그리폰 제국의 점령에 맞설 수 있는 외세는 남아있지 않으며, 따라서 행성의 운명은 정해진 것으로 보입니다.\n\n저희가 해당 성계의 성계 기지를 소유하고 있기에, 그들의 지도자인 §YGrover XI§!와 §YGrover Dynasty§!로부터 성계 기지의 소유권을 자신들에게 이전하여 그리폰 제국이 독립적인 은하 국가로 인정받을 수 있도록 해달라는 전문을 받았습니다." # 288170072240549150
-  giga_flavor_systems.2014.name: "§Y파우스트 광역 사회주의 공화국§! 초광속 항해 도달" # 12944748851834628787
-  giga_flavor_systems.2011.desc.eawcommunist: "우리의 §YFaust§! 관측소는 해당 행성의 원시 종족들이 최소한 작동하는 초광속 항행 장치를 고안해냈음을 시사합니다. 그들의 기술 대부분과 마찬가지로, 이 장치는 행성의 특이하고 풍부한 결정을 광범위하게 사용하여, 그들의 모성계에 존재하는 결정의 양을 고려할 때 놀라울 정도로 저렴하게 제조되고 있습니다.\n\n그 행성 자체는 §YFaust 전역 사회주의 공화국§!이라는 적절한 이름의 사회주의 정부로 비교적 평화롭게 통합되었으며, 이 정부는 몇 차례의 합병과 상당히 많은 전쟁을 통해 파우스트의 대다수 국가들에 대한 통제권을 확립했습니다.\n\n비록 몇몇 국가들이 독립 상태로 남아있긴 하지만, 새로운 사회주의 정부의 압도적인 우위에 맞서기에는 너무나 미미하여 중요하지 않으며, 이 정부는 종이나 기원에 관계없이 모든 생명체에게 평등과 번영을 가져다줄 것을 약속합니다.\n\n우리가 성계의 스타베이스를 소유하고 있기에, 그들의 지도자, 즉 최고 의회 대표로부터 스타베이스의 소유권을 자신들에게 이전해 달라는 요청 전문을 받았습니다." # 3105700466692839308
-  giga_flavor_systems.2011.a: "화면에 표시됩니다." # 12070518402223886997
-  giga_flavor_systems.2015.name: "[giga_eaw_country.GetName]" # 5452969218792381925
-  giga_flavor_systems.2015.desc.eawun: "성간의 여행자 여러분, 안녕하십니까. 대 파우스트주의 집회가 마침내 별들 사이를 항해할 수 있는 기술을 확보했습니다.\n\n하지만 저희는 여러분의 종족이 저희의 항성계를 소유권 주장하고 있음을 확인했습니다. 따라서 저희 대의회는 [giga_eaw_system.GetName] 항성계의 완전한 소유권을 대가로, 저희의 가장 위대한 결정체 반응로에서 확보한 재정적 보상으로 §Y7500§! £energy£를 귀하의 문명에 제안하기로 결정했습니다." # 5628169128733099812
-  giga_flavor_systems.2015.desc.eawgriffon: "인사드립니다, 초월적인 존재들이여. 그리폰 제국은 마침내 별들 사이의 광대한 공허를 가로지를 수 있도록 물리 법칙 자체를 길들였습니다.\n\n하지만 저희는 당신들의 종족이 저희의 항성계를 자신들의 영토라고 주장하고 있음을 확인했습니다. 따라서 저, 카이저 §YGrover XI§는 당신들의 종족이 이 항성계를 저희에게 양도해 주시기를 바랍니다. 저희가 당신들보다 훨씬 더 오랫동안 이곳에 거주해 왔기 때문입니다.\n\n이것이 마땅한 일입니다." # 13127148938888395933
-  giga_flavor_systems.2015.desc.eawcommunist: "성간의 여행자들이여, 안녕하시오. 파우스트와이드 사회주의 공화국의 가장 뛰어난 지성들이 다른 별에 도달할 수 있는 위대한 장치를 고안해냈소.\n\n하지만 우리는 당신들의 종족이 우리의 항성계를 차지하고 있음을 확인했소. 따라서 우리의 최고 의회는 §Y[giga_eaw_system.GetName]§! 항성계의 완전한 소유권을 대가로 당신들의 문명에 §Y5000§! £energy£와 우리의 가장 우수한 £consumer_goods£ §Y2500§!를 재정적 보상으로 제공하기로 결정했소.\n\n부디 우리를 실망시키지 않기를 바라오." # 17457670040298673185
-  giga_flavor_systems.2015.a: "당신이 시스템을 가질 수도 있습니다." # 1386494565581607499
-  giga_flavor_systems.2015.a.response: "[giga_eaw_country.GetName]이 귀관의 협조에 감사를 표합니다." # 10939690180003478701
-  giga_flavor_systems.2015.a.tooltip: "우리는 §Y[giga_eaw_system.GetName]§! 성계 전체와 해당 성계 내에 보유하고 있는 다른 모든 식민지까지 §Y[giga_eaw_country.GetName]§!에게 양도할 것입니다." # 1109043636483327951
-  opinion_eaw_gave_system: "고향 성계" # 3333177876414442030
-  opinion_eaw_gave_system_neighbors: "고향 성계 및 이웃 성계" # 16146279338194750034
-  giga_flavor_systems.2015.b: "귀하는 해당 성계와 그 즉각적인 이웃 성계들을 가질 수도 있습니다." # 5679156511263381759
-  giga_flavor_systems.2015.b.tooltip: "우리는 §Y[giga_eaw_system.GetName]§! 성계 전체와 §Y인접 성계들§!을, 우리가 이 성계들에 보유하고 있는 다른 모든 식민지를 포함하여 §Y[giga_eaw_country.GetName]§!에 양도할 것입니다.\n[giga_eaw_country.GetName]은 분명히 고마워할 것입니다." # 7315466471001448826
-  giga_flavor_systems.2015.b.response: "정말로 기쁘군요! [giga_eaw_country.GetName]이 고마워할 겁니다." # 18306619206900550247
-  giga_flavor_systems.005.c: "불가능합니다." # 5979132767778979439
-  giga_flavor_systems.005.c.tooltip: "우리는 그들에게 그 성계를 넘겨주기를 거부할 것입니다. 그들이 우리에게 보복할지도 모릅니다." # 12121973771473319123
-  giga_flavor_systems.005.c.response: "우리는 분쟁을 두려워하지 않는다는 것을 알아두십시오, [ROOT.GetName]." # 6750030241023839567
-  giga_flavor_systems.2007.name: "파우스트 소각됨" # 15893678727875609284
-  giga_flavor_systems.2007.desc: "§Y거대 항성§의 점화로 인해 해당 항성계 내 대부분의 행성들이 이전보다 훨씬 더 거주 가능해졌지만, 이는 특이한 대륙형 세계인 §Y파우스트§에 살고 있던 원시 문명을 완전히 소각하는 대가를 치렀습니다!.\n\n행성 표면은 항성의 초기 점화 충격파에 의해 완전히 파괴되었으며, 고립된 극한 환경 생물 일부를 제외하고는 표면의 모든 생명체가 즉시 멸종되었습니다.\n\n이 행성에 살고 있던 원시 문명은 우리의 무모함으로 인해 순식간에 사라져 버렸습니다." # 5668409512429170015
-  giga_flavor_systems.2007.xenophile: "끔찍한 범죄로군..." # 2847367278699859785
-  giga_flavor_systems.2007.xenophile.tooltip: "우리의 윤리관 때문에, 우리 팝들은 §R불만을 가질 것입니다§!." # 129138381213247222
-  giga_flavor_systems.2007.xenophobe: "잘 가라!" # 55062664725187489
-  giga_flavor_systems.2007.xenophobe.tooltip: "우리의 윤리관 덕분에, 우리 팝은 §G기뻐할 것입니다§!" # 15325795682974845426
-  giga_flavor_systems.2007.exterminator: "오 이런! 아무튼..." # 1790278254803973668
-  giga_flavor_systems.2007.exterminator.tooltip: "우리의 윤리관 때문에, 이것은 §B중대한 사건§!으로 간주됩니다." # 15318198034362560635
-  giga_flavor_systems.2007.other: "유감스럽군..." # 15135247885891697168
-  giga_flavor_systems.2007.other.tooltip: "이 행동은 우리 팝들 사이에서 일부 §Y반발§을 일으키겠지만, 곧 가라앉을 것입니다." # 17847880619690359407
-  eaw_ignited_faust_modifier_good: "원시 문명 섬멸" # 10260886507505019724
-  eaw_ignited_faust_modifier_good_desc: "우리는 우리의 기술적 우월성의 힘을 통해 하찮은 원시 종족들을 소각함으로써 지배할 권리를 행사했습니다." # 8325075487794140546
-  eaw_ignited_faust_modifier_bad: "소각된 원시 종족" # 16307571210845750585
-  eaw_ignited_faust_modifier_bad_desc: "우리의 행동으로 인해 수십억 명의 무고한 영혼들이 때 이르게 소멸했습니다. 이 죄악은 우리 국민들에게 잊히지 않을 것입니다." # 3970365209501287229
-  giga_eaw_faust_planet_modifier: "수정 주입 행성" # 6131004631550569897
-  giga_eaw_faust_planet_modifier_desc: "이 세계는 희귀 수정과 밀접하게 관련된 특이한 결정체 매장량이 풍부하게 존재합니다. 이 결정을 적절히 채굴하면 엄청난 양의 에너지를 방출할 수 있습니다.\n\n§이 성계의 갈색 왜성을 점화시키면 이 행성이 파괴됩니다!§!" # 14192107049938394691
-  eaw_planet_buffs: "타우모맨시" # 8845205210834814396
-  mod_planet_miners_rare_crystals_produces_add: "광부들의 희귀 결정" # 2570639830807653908
-  giga_tech_thaumaturgic_weaponry: "세미-기적론적 결정체 무기체계" # 17204690270636111250
-  giga_tech_thaumaturgic_weaponry_desc: "파우스트의 거주민들은 기존의 무기를 훨씬 능가하는 강력한 결정체로 강화된 소총과 무기들을 고안해 냈습니다. 그들에게는 이것이 마법처럼 보였을 것이며, 이는 기술의 확산을 극도로 제한했지만, 이 결정체의 본질에 대한 철저한 연구는 우리의 군대에 그 사용을 표준화할 수 있게 해줄지도 모릅니다. 하지만 이는 상당한 희귀 결정체 유지 비용을 수반할 것입니다." # 1814182468494166797
-  giga_eaw_crystal_army: "수정 강화 군대" # 1705381170789645103
-  giga_eaw_crystal_army_desc: "일반적인 화기보다 약간 더 취약하고 신뢰성이 떨어지기는 하지만, 수정 기반 무기는 결정적으로 더 강력합니다. 이 병사들은 이 마법적 무기가 제공하는 잠재력을 최대한 활용합니다." # 13664954295264420430
-  giga_eaw_crystal_army_drone: "수정 주입 동력 장치" # 12561635768481046126
-  giga_eaw_crystal_army_drone_desc: "일반적인 화기보다 약간 더 취약하고 신뢰성이 떨어지지만, 수정 기반 무기는 결정적으로 더 강력합니다. 이 자동화된 드론들은 이러한 신비주의적 무기가 제공하는 잠재력을 최대한 활용합니다." # 892292685910588235
-  giga_flavor_systems.2100.name: "파우스트 정복됨" # 2201629785968108008
-  giga_flavor_systems.2100.desc: "우리 군대는 §YFaust§의 무장 세력 대다수를 성공적으로 복속시키는 데 성공했습니다. 파우스트의 가장 외딴 지역 일부에 소수의 잔당들이 계속 저항하고 있지만, 우리는 이제 행성의 모든 주요 인구 중심지를 확보했습니다.\n\n하지만 파우스트는 특이하게도 다양한 국가와 문화를 보유하고 있으며, 최소 2개의 주요 종족이 행성을 공유하고 있고 수십 개의 아종들이 각기 다른 이념과 신념을 가지고 있습니다.\n\n실질적으로, 이는 새로 정복한 인구를 통제하는 것을 놀라울 정도로 어렵게 만들고 있으며, 언급된 일부 종족들이 정신 능력과 유사한 능력을 보유하고 있다는 사실과 맞물려 행성 전역에서 대규모 저항 운동이 이미 조직되고 있습니다.\n\n우리가 원시적인 파우스티아인들을 완전히 복종시키는 데 결국 성공할 것이라는 점에는 의심의 여지가 없지만, 당분간은 파우스트 주민들이 우리 문명의 일원으로서의 새로운 지위라는 피할 수 없는 현실을 이해하고 있기에 행성 통치에 극심한 저항이 있을 것으로 예상해야 합니다." # 11309119436516750902
-  giga_flavor_systems.2100.a: "그들은 시간이 지나면 처리될 것입니다." # 255084579433114719
-  giga_eaw_faust_harsh_resistance: "강력한 저항" # 16229100360683946780
-  giga_eaw_faust_harsh_resistance_desc: "이 세계의 토착민들은 우리의 지배에 저항하고 있지만, 영원히 그럴 수는 없을 것입니다." # 4414821461831345973
-  giga_flavor_systems.2101.name: "결정체 무기 체계" # 4231480073658165414
-  giga_flavor_systems.2101.desc: "§Y파우스트§! 정복민들의 기술을 연구하던 중, 우리 군인들은 그들이 원시 문명으로 분류되었음에도 불구하고 자신들의 기술 수준에 비해 놀라울 정도로 강력한 무기를 사용하고 있다는 사실을 발견했습니다.\n\n추가 조사 결과, 파우스트인들의 무기 대부분은 기술에 내장되어 엄청난 양의 에너지를 저장하고 방출할 수 있는 특이한 유형의 §Y희귀 수정§!을 사용하는 데 중점을 두고 있음이 밝혀졌습니다. 이 수정들은 사실상\"결정 배터\" 역할을 하여 그들의 무기에 거의 무한한 에너지 흐름을 제공했습니다.\n\n이것들은 우리가 알고 있는 희귀 수정과 밀접한 관련이 있는 것으로 보이며, 아마도 수세기 동안 근처의 결정질 소행성대에서 떨어진 유성 충돌로 인해 파우스트에 퇴적되었고, 그 과정에서 갈색 왜성의 강력한 자기장에 의해 이보다 더 이국적인 형태로 뒤틀렸을 것입니다.\n\n어느 쪽이든, 우리 과학자들은 이 특이한 수정을 연구하는 데 열을 올리고 있으며, 우리 군대의 힘을 더욱 강화하기 위해 이 수정을 우리 자신의 무기에 통합하기 위한 몇 가지 제안을 이미 내놓았습니다.\n\n한 과학자는 만약 그러한 문명이 마법 공학 무기(thaumaturgic weaponry)의 진정한 잠재력을 완전히 받아들였다면, 그들은 의심할 여지 없이 은하계 전체에서 가장 위협적인 세력 중 하나가 되었을 것이라는 사실을 언급했습니다. 다행히도 파우스트의 주민들은 이 수정을 전적으로 의존하기보다는 자신들의\"일반적\" 기술에 대한 업그레이드처럼 사용했습니다. 하지만 우리 자신을 위해서라도, 어떤 문명이든 이 난해하고 실질적으로\"마법과 같\" 기술의 진정한 잠재력을 깨닫지 않기를 바라야 합니다..." # 17859673352750656351
-  giga_flavor_systems.2101.a: "흥미롭군." # 9903619114818313320
-  giga_flavor_systems.2016.name: "[giga_eaw_country.GetName]이 [giga_eaw_system.GetName] 성계 기지를 점령했습니다!" # 9770773848550045635
-  giga_flavor_systems.2016.desc: "§Y[giga_eaw_country.GetName]§!가 우리의 요구를 노골적으로 무시하고 §Y[giga_eaw_system.GetName]§! 성계 내 우리 기지를 강탈하고 점령하는 작전을 감행했습니다.\n\n그들이 기지 자체를 점령하는 데는 성공했지만, 그들의 함대를 격파하고 해당 성계와 그들의 행성까지 되찾는 것은 그리 어렵지 않을 것으로 예상됩니다. 다만, 우리 고위 사령부는 그들의 지상군이 이처럼 젊은 문명치고는 이례적으로 강력하다고 경고하고 있습니다." # 15307796440898522221
-  giga_flavor_systems.2016.a: "감히 그럴 수가! 당장 그들을 짓밟아라!" # 14701180035549282877
-  giga_flavor_systems.2016.a.tooltip: "우리는 §Y[giga_eaw_country.GetName]§!에 대해 §R전쟁을 선포할§! 것이며, 전쟁을 끝내기 위해 §Y파우스트§!를 점령해야 합니다." # 2080677910348898105
-  giga_flavor_systems.2016.b: "그들은 그 성계를 가져가도 됩니다. 어차피 우리에게는 가치 없는 곳이니까요." # 10383976901695238281
-  giga_flavor_systems.2016.b.tooltip: "§Y[giga_eaw_system.GetName]§!와 그곳의 모든 행성이 §Y[giga_eaw_country.GetName]§!로 이전됩니다." # 10880782206703140158
   giga_jublio_enabled: "£menu_enabled£쥬블리오 성계 - §GENABLED§!\n§Y쥬블리오 성계§!, §YKatzens§!의 모성 및 §Y카첸아르티크 제국§! 또는 §Y통합 플루시안 국가§!, §GWILL§!이 생성됩니다. 플루시 관련 콘텐츠는 카첸아르티크 제국 설정에 따라 발생합니다." # 6413919734817793567
   giga_jublio_disabled: "£menu_disabled£주블리오 성계 - §R비활성화됨§!\n§YKatzens§!와 §Y카첸아르티그 제국§!의 모성인 §Y주블리오 성계§!는 생성되지 않으며, 이로 인해 모든 플루전 관련 콘텐츠가 제거됩니다.\n#weak 모드의 전체 설정을 경험하고 싶다면 #weak 비활성화하지 않는 것을 권장합니다.#!\n#weak 쥬피투는 별도로 비활성화해야 합니다.#!" # 6137424928231146544
   must_not_have_started_game_or_disabled_jublio: "게임 시작 후 또는 쥴리오(Jublio)가 생성되지 않도록 설정된 경우에는 이 작업을 수행할 수 없습니다." # 105073058816339022
@@ -12025,7 +11773,6 @@
   giga_blokkat.3317.evilmeopa.desc: "마침내 이 지루한 주고받기에서 벗어나, §YKatzenland§!와 §YNienet§!의 주민들이 자체적인 항성 전쟁에 돌입했고, 덜 발전한 이 제국들은 팔루쉬인들과 블로캇들을 잠재적인 지원의 원천으로 바라보았습니다. 팔루쉬인과 블로캇의 예측 모델 모두 상대방이 개입할 것이라고 밝혔으며, 비극의 리듬에 맞춰 그들은 분쟁에 뛰어들었습니다.\n\n블로캇들은 주로 첨단 기계 거래의 원천으로 사용되는 반면, 팔루쉬인들은 그들의 저명한 영웅들의 경험을 빌려주는 대가로 막대한 부를 받습니다. 대부분의 팔루쉬인들은 이 일을 필수적인 잡무로 여기지만, §YSparkbun§!이라는 이름의 한 팔루쉬인은 이 원정을 일종의 자기 발견 휴가처럼 대하는 듯합니다. 그는 오랜 교착 상태 속에서 팔루쉬 진보의 범위를 진정으로 이해하기 어려웠지만, 이 전쟁에서는 자신의 힘에 맞설 수 없다고 말합니다. 이는 그에게 눈을 뜨게 하는 순간이었던 것 같으며, 고향으로 돌아와 팔루쉬아의 미래 잠재력에 대해 열정적인 연설을 많이 합니다.\n\n카첸랜드와 니에넷 간의 전쟁은 길어졌습니다. 행성들이 고통받자, 양측은 잠정적인 휴전 협상을 위해 만났습니다. 블로캇 제국과 팔루쉬 제국의 고위 인사들은 전설적인 미래 예측 능력을 활용하여 의견을 제시하도록 모두 초청되었습니다. 블로캇들은 휴전을 권고했지만, §YPoh'tin§!이라는 이름의 예언가인 팔루쉬 고위 인사는 이것이 경제적 어려움으로 이어질 것이며, 무엇보다도 자신의 국가에게 블로캇들에게 유리한 착취적 무역 시대를 가져올 것이라고 예견했습니다.\n\n포틴은 분쟁을 해결할 수 있는 유일하게 만족스러운 방법은 한쪽 세력에 대한 완전하고 전면적인 승리뿐이라고 선언했습니다. 포틴은 이를 이후 패권으로 활용되는 팔루쉬 영웅들이 이끄는 성공적인 전쟁 노력으로 구상했습니다. 포틴은 팔루쉬가 카첸족의 승리를 도울 수 있기를 바랐지만, 카첸랜드는 결국 핵 옵션을 동원하여 단 몇 분 만에 니에넷을 핵 불지옥으로 불태웠습니다. 그러한 행위는 보통 카첸 정권의 붕괴로 이어졌을 것이지만, 이상하게도 카첸 정부의 인기를 강화했을 뿐이며 팔루쉬 지원을 쓸모없게 만들어 카첸과 팔루쉬 지도부 간의 외교 관계 단절로 이어졌습니다.\n\n스파크번이 전쟁과 엄격한 외교의 중요성에 감명받은 것처럼, 포틴은 이 재앙을 겪으며 자신의 역할에 대해 의문을 품게 되었습니다. 스파크번의 위대함에 대한 외침 속에서, 포틴은 팔루쉬 예언자 시스템의 근본적인 실용성에 의문을 제기하기 시작했습니다. 그는 그들의 투시력이 이제 그들의 제국이 결코 실현하지 못할 미래를 예측하는 데 너무 얽매여 있어서, 그들이 기본적인 상식과 단순한 연역적 추론을 간과하고 있을 가능성이 있다고 주장했습니다.\n\n팔루쉬인들은 그들의 예언자들이 불길한 군사적 위협을 예견했을 때 그의 의구심을 시험할 기회를 얻었습니다. 포틴은 이 적이 이성적일 가능성이 높으며, 만약 팔루쉬인들이 외교와 공존을 준비한다면 평화의 기회가 있을 것이라고 주장했습니다. 그의 말은 분개한 팔루쉬인들 사이에서 깊은 인기를 얻지 못했고, 그는 무력 사용을 주장하는 스파크번의 외침에 밀려 배제되었습니다.\n\n침략군은\"§YLappinbots§\"으로 알려진 대량 학살 기계 제국이었으며, 그들은 공존에 관심이 없거나 심지어 능력이 없는 존재들이었습니다. 그들은 블로캇 통신망을 공격하고 전력망을 방해했으며, 팔루쉬 정신 능력 기반 시설은 그들의 이해 범위를 벗어났습니다. 블로캇들은 무너져 내렸고, 행성에서 피비린내 나는 대규모 유랑을 강요당했습니다. 팔루쉬인들은 스파크번의 주장을 입증하고 포틴의 신뢰도를 파산시키면서 래핀봇들이 폐허가 될 때까지 사기가 치솟은 채 계속 싸웠습니다.\n\n하지만 블로캇들이 이곳 행성에서 도망쳤다고 해도, 블로캇들에 대한 기록이 여기서 끝나는 것은 아닙니다." # 10639789264822795116
   giga_blokkat.3321.nokatzens.desc: "마침내 우리 과학자들은 이 격동적인 이야기의 끝에 도달했다고 믿습니다! 팔루시안들이 팔루시아로 귀환하면서, 그들은 그랜드버니의 감시 아래 목가적인 삶으로 돌아가는 데 몰두한 나머지 중공업을 소홀히 했던 것 같습니다. 그동안 블로캇들은 그들의 뒤를 휩쓸고 있었습니다.\n\n블로캇들은 팔루시안들의 세계를 식민지화하는 대신, 단순히 공장 부품들을 긁어모아 네오블로카티나로 돌려보냈고, 링월드를 확장하고, 더 많은 날개와 고리들을 추가하며, 그들의 제조를 먹여 살릴 제조 능력을 끊임없이 확장했습니다. 블로캇들에게는 팔루시아를 떠난 이후 처음으로 운이 자신들에게 유리하게 돌아가고 있다고 보였을 것이며, 만약 그들이 이 선물들만 취했다면 모든 것이 괜찮았을지도 모릅니다.\n\n팔루시안들이 거대한 전쟁 함대를 비무장하기 시작했을 때, 그들은 블로캇들에게 너무나도 탐나는 표적이 되었음에 틀림없습니다. 그들이 정확히 무엇을 생각했는지는 알 수 없습니다. 아마도 블로캇들은 팔루시안들이 대재앙을 겪고 있다고 믿었을 것입니다. 그럼에도 불구하고, 그들은 확보한 제련소를 사용하여 전쟁 함대를 생산하고 팔루시아를 향해 집결시켰습니다.\n\n관측에 따르면, 블로캇 함대의 일부에는 오늘날 그들이 보유한 수확 기술의 전신이 포함되어 있었던 것 같습니다. 그들은 팔루시안 문명을 분해한 다음 되찾으려 했습니다. 불행하게도, 그 순간까지 그들은 실제 그랜드버니를 만난 적이 없었습니다. 블로캇들의 오래된 미디어 방송에서 그녀는 팔루시안들이 믿는 뒤떨어지고 우스꽝스러운 신으로 묘사되었을 뿐이었습니다. 존재하지 않는 광대 같은 인물로 말이죠.\n\n블로캇 함대가 팔루시아 상공에 도착했을 때, 처음에는 가쪼 거주민들의 함대가 블로캇들이 고양이과(Katzen) 영역을 침범했음에도 불구하고 교전하기를 거부한다는 사실에 고무되었지만, 그들은 끔찍하게 틀렸음이 입증되었습니다. 그랜드버니의 행동은 확실히 치명적이지만, 우리 연구원들은 그것을 설명하는 데 어려움을 겪고 있습니다. 이는 마치 실제로 그곳에 있었던 듯한 느낌을 새겨 넣는 초능력 기록 보관소 때문에 더욱 악화됩니다. 수석 고고학자의 말을 인용하자면 다음과 같습니다.\n\\\"음, 그녀가 손을 들어 올리자 블로캇 함대가 뒤로 날아가기 시작합니다, 맞죠? 그러더니 그들이 일종의… 안으로 뒤집히면서 다시 제대로 날아가는 것 같습니다. 그리고 나서 스크럼 벌레와 관련된 무언가가 있습니다. 스크럼 벌레가 뭔지 아십니까? 저도 모릅니다. 하지만 그것이 무엇이든, 그것은 분명히 스크럼 벌레입니다. 그냥 알 수 있죠. 분명히 스크럼 벌레입니다. 그리고 이것은... 음, 설명하기 꽤 어렵지만, 일종의... 그것은... 그것은 스크럼을 봅니다, 아시겠죠\"\n\n그리고 분명히 이것은 함대를 너무나도 끔찍한 방식으로 파괴하여\"스크\" 사건 바로 외곽에 있던 블로캇들은 비상 탈출하여 전투에서 벗어났습니다. 직후, 블로캇들은 네오블로카티나에 거대한 엔진을 설치하는 놀라운 공학적 위업을 완수하고, 전속력으로 네오블로카티나를 팔루시아에서 은하 공간의 가장자리로 날려 보냈습니다. 우리 과학자들은 블로캇들이 네오블로카티나가\"스크\" 당하는 것을 두려워했을 것이라고 생각합니다.\n\n이 지점 이후로 우리는 블로캇들과 관련된 더 이상의 자료를 찾지 못했습니다. 그들이 지금 여기에 있다는 것은 그들이 은하를 탈출하여 기술적 진보를 크게 이루고 이제야 돌아오기로 선택했음을 분명히 보여줍니다. 이 모든 일의 시작점에서, 그들이 우리 은하계 내부에서 유래했을 것이라고는 결코 예상하지 못했을 수도 있습니다! 하물며 팔루시안들이 그들의 문화적, 기술적 발전에 얼마나 복잡한 역할을 했는지 짐작조차 할 수 없었습니다. 이 귀중한 정보 수집은 분명히 우리 §Y블로캇 연구국§!에 도움이 될 것입니다." # 3364209557968807723
   giga_fe_repeatables_modifier: "몰락 제국 반복 연구" # 16807700105577393324
-  giga_fe_repeatables_modifier_desc: "그들의 정체에도 불구하고, 몰락 제국의 과학 기반은 젊은 종족들의 그것보다 여전히 훨씬 앞서 있습니다." # 10947736842253053997
   giga_flusion.001.nokatzens.desc: "우리 과학선이 원시 행성 플루션(Flusion)을 탐사하던 중 놀라운 발견을 했습니다. 이 원시 행성에는 단 하나의 종족이 아닌, 여러 지성체가 거주하고 있는 것으로 보입니다!\n\n승무원들은 세 가지 주요 종족을 식별할 수 있었습니다. 인간형의 로퀄리안(Roqualian), 갑각류인 크롱크(Kronk), 그리고 분류하기 어려운 수십 개의 다른 아종으로 구성된 세 번째 '플루션인(Flusionian)' 종족입니다.\n\n우리 과학자들은 아직 왜, 그리고 어떻게 그렇게 많은 종족이 단 하나의 행성에 모이게 되었는지 확신하지 못하고 있지만, 이는 분명 주목할 만한 발견입니다." # 2208325403886894770
   giga_fe_special_army: "선구자 군대" # 10040934751518025476
   giga_fe_special_army_desc: "제대로 이해하지 못하는 강력한 무기를 사용하여 자신들의 세계를 지키는 강력한 군대." # 16272568332940061105
@@ -12257,7 +12004,6 @@
   giga_flusionoperations.5007.name: "플루시안 팝, 로리스를 애도하다" # 1555200191240253062
   giga_flusionoperations.5007.desc: "§YLoris Von Kattensbach§!의 암살은 플루션의 평범한 주민들에게 간과되지 않았습니다. 그가 카이저의 플루션 지배를 대변하는 카첸 총독의 수장이었음에도 불구하고, 그는 카이저의 행성 정복 기간 동안 복속된 다양한 종족들 사이에서 놀라울 정도로 인기가 있었습니다.\n\n로리스는 카이저의 통치로부터 많은 자유를 주지는 않았지만, 플루션 전역에 수많은 지역 민주주의 사례를 확립하는 일련의 개혁을 단행했습니다. 또한 그는 카이저의 모든 종족 간 평등이라는 견해가 행성의 모든 부분에 적절히 적용되도록 보장했으며, 카첸 통치가 플루션 주민들의 삶과 양립할 수 있도록 끊임없이 노력했습니다.\n\n이 행위의 배후에 §Y로퀄리 해방 전사들§!이 있다는 것을 모두가 알고 있으며, 로리스가 사라지자 이전에 로퀄리 해방 전사들을 지지했던 많은 플루션인들이 이 운동에서 등을 돌렸습니다. 이는 도퍼스와 그의 수행원들이 카이저를 전복하려는 그들의 탐구에서 너무 급진적이고 불안정해졌다고 판단했기 때문인 것으로 보입니다." # 11580253826058903983
   giga_flusionoperations.5007.a: "그들이 왜 신경 쓰는 거죠?" # 6832391102665571358
-  giga_flusionoperations.5007.a.tooltip: "§Y게슈볼렌§!, §YWacegien§!, §Y라브카니엔§! 및 §Y카첸 헤르츠란트§!의 저항력이 §Y1§! 감소합니다." # 6474424364399715486
   giga_flusionoperations.5002.name: "로리스 암살 성공... 하지만 실패했습니다." # 1522357327966876055
   giga_flusionoperations.5002.desc: "우리의 로퀄 동맹이 로리스 암살 작전이 문제없이 진행되었다고 보고했습니다. 그들은 로리스의 주변에 잠입하여 즉각적인 활성화가 아닌 극도로 치명적인 독을 그의 음식에 몰래 넣는 데 성공했으며, 이 독은 눈에 띄지 않고 섭취 직후 몇 초 만에 그를 사망에 이르게 했습니다.\n\n불행하게도 우리는 카첸들이 §YSoulbot Factory§!를 §YKleinkalien Isle§!에 설치해 두었다는 사실을 고려하지 못했습니다. 이 공장은 즉시 로리스의 의식을 업로드할 수 있는 맞춤형 합성 섀시를 생산했고, 이는 사실상 그를 되살려내 작전 전체를 무효화시켰습니다...\n\n성공 확률은 §Y[flusion_primitives_country.flusion_operation_odds]%§!였습니다." # 11621873110599305372
   giga_flusionoperations.5002.a: "뭐라고? 감히 저렇게 살아남았다고?" # 13655060714804698689
@@ -12568,13 +12314,10 @@
   sm_orbital_ring_giga_farming_district: "행성 토양 비료" # 6819301318196401034
   sm_orbital_ring_giga_farming_district_desc: "자동화된 공장은 막대한 양의 비료를 생산하여 이전에 생명체가 살 수 없었던 행성 표면 지역에 분배함으로써 농업을 가능하게 합니다.\n\n§Y황무지에서는 효율성이 낮고 가이아 행성에서는 높습니다. 방사능 사막 행성에서는 작동하지 않습니다.§!" # 12912677202791579333
   sm_ring_giga_crystals_hub: "레이저 크리스털 시추기" # 4856784396546953619
-  sm_ring_giga_crystals_hub_desc: "거대한 레이저 드릴이 행성 표면의 희귀 수정 채굴을 돕기 위해 행성 지각을 뚫고 있습니다. 추출된 기타 물질은 수정 정제 과정을 보조합니다.\n\n§T§G+100§! £job_crystal_miner£ §Y수정 채굴§! 직업을 §G4§! £district£ 당 §Y$district_mining_plural$§! 만큼 제공합니다.\n" # 13753308321207251717
   ring_giga_crystals_hub_condition: "§R행성은 §Y$rare_crystals$의 £rare_crystals£ 매장량을 보유해야 합니다.§!" # 18285282657493722449
   sm_ring_giga_motes_hub: "초음속 미립자 채집기" # 15645912775785065799
-  sm_ring_giga_motes_hub_desc: "강력한 음파 방출기가 대기층과 모트 수확 지점을 향해 초음파를 방사하여, 정확한 주파수로 먼지 사막을 뒤흔들어 다량의 휘발성 모트가 지표면으로 올라오게 합니다. 전자기 그물은 모트 정제 과정에 유용한 물질들을 포획할 수도 있습니다.\n\n§T£district£ §G4§!당 §Y$district_mining_plural$§!마다 §G+1§! £job_mote_harvester£ §YMote Harvesting§! 직업을 제공합니다." # 16613261730322176686
   ring_giga_motes_hub_condition: "§R행성에는 §Y$volatile_motes$£휘발성 입자£§! 매장량이 있어야 합니다." # 16416744173151779617
   sm_ring_giga_gas_hub: "대기 가스 안정기" # 3857042440776466512
-  sm_ring_giga_gas_hub_desc: "자연적으로 발생하는 가스 매장지 근처 대기에 안정화제를 주입하여 추출을 더 안전하고 용이하게 만드는 화학 공장입니다. 부수적인 효과로, 국소 미생물을 활용하여 바이오매스로부터 가스를 더 효율적으로 정제할 수 있습니다.\n\n§T§G4§! £district£ §Y$district_mining_plural$§!당 §G+100§! £job_gas_extractor£ §Y가스 추출§! 직업을 제공합니다." # 17161037832477458777
   ring_giga_gas_hub_condition: "§R행성에는 §Y$exotic_gases$£희귀 가스£§! 매장량이 있어야 합니다." # 8047401088775846338
   sm_ring_giga_iodizium_hub: "장 필드 격리 그리드" # 10688613880754370806
   sm_ring_giga_iodizium_hub_desc: "실드 투사기가 이오디지움 채굴 시설에 집중되어 폭발적인 연쇄 반응을 최소화함으로써 행성 표면의 결정체 처리가 크게 효율화됩니다.\n\n§T활성화된 £building£ §Y$building_giga_iodizium_mines$§! 건물당 §Y이오디지움 채굴§! £job_giga_iodizium_miner£ 일자리를 §G+100§! 제공합니다!" # 10993085123631244062
@@ -12661,8 +12404,6 @@
   giga_asteroid_artillery_health_upgrade: "디버그" # 143360522173664303
   giga_asteroid_artillery_planetcraft_upgrade: "디버그" # 143360522173664303
   giga_asteroid_artillery_ai_upkeep_negates: "디버그" # 143360522173664303
-  trait_kaiser_cattail: "디버그" # 143360522173664303
-  trait_kaiser_cattail_desc: "디버그" # 143360522173664303
   asteroid_artillery_ruined_MEGASTRUCTURE_DETAILS: "디버그" # 143360522173664303
   dyson_sphere_0_o_star_MEGASTRUCTURE_DETAILS: "디버그" # 143360522173664303
   moon_printer_orbital_mass_harvester_0_MEGASTRUCTURE_DETAILS: "디버그" # 143360522173664303
@@ -12776,3 +12517,32 @@
   opinion_xenophage_stripmine: "생체 포식자들" # 11584447512048090142
   giga_pending_rework: "일시적으로 비활성화됨, 재작업 예정" # 17325575022214124805
   giga_reset: "£giga_reset£ 초기화" # 4822951421582506984
+  giga_megaview_defense_nexus_cycle: "§G클릭하여 행동 순환§!" # 3903316590426700701
+  defense_nexus_explanation_text: "방어 넥서스는 행성을 방어하기 위해 §Y타격 코르벳§! 자동 함대에 의존합니다.\n\n이 함대는 매달 스스로 §Y타격 코르벳§!을 건조하고 보관합니다.\n기본 최대 수용량은 행성 인구의 §Y3분의 1§!과 같으며 다양한 방법으로 증가시킬 수 있습니다.\n\n매달 §Y2척§!이 건조되며, §Y팝 2000명§!마다 매달 §Y1척§!의 코르벳이 추가로 생산됩니다. 최대 수용량과 마찬가지로 건조 속도 또한 다양한 방법으로 증가시킬 수 있습니다.\n\n단, 행성이 §R침공 중§!이거나 적대 세력에 의해 §R점령§!된 경우 타격 코르벳을 배치할 수 없습니다.\n\n§Y타격 코르벳§!은 §YFTL§! 기능은 없지만 §Y기동성§!과 §Y화력§!이 강화된 일반 §Y코르벳§!입니다. 방어 비행대는 §Y함선 설계기§!에 있는 기존의 모든 §Y코르벳§! 설계 중에서 무작위로 함선을 차출하므로 새로운 함급을 설계할 필요가 §R없습니다§!.\n\n적대 함대가 거대 구조물에 접근하면 이 함선들이 자동으로 배치되며, 거대 구조물 UI의 구성 버튼을 사용하여 §Y타격 코르벳§!의 출격 시기를 설정할 수 있습니다.\n\n위협이 제거되면 방어 비행대는 자동으로 §Y방어 넥서스§!로 복귀합니다. 함대를 다시 배치하기 전까지 §Y3개월§!의 재사용 대기시간이 있습니다.\n\n또한 이 거대 구조물은 행성에 거주하는 §Y팝 1000명§!당 §Y행성 수호자§! 육군 1부대를 생성합니다." # 13807646421649680292
+  giga_fe_repeatables_modifier_desc: "정체 상태임에도 불구하고, 몰락 제국의 과학적 기반은 여전히 젊은 종족들을 훨씬 능가합니다." # 2576647556298298096
+  GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
+  GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  fe_has_mega: "" # 17241709254077376921
+  giga_flusionoperations.5007.a.tooltip: "§Y게슈볼렌§!, §Y아리보이엔§!, §Y라브카니엔§! 및 §Y카첸 헤르츠란트§!의 저항도가 §Y1§! 감소합니다." # 10112558631090765416
+  sm_ring_giga_crystals_hub_desc: "행성 지각을 절삭하는 거대한 레이저 드릴이 행성 표면의 희귀 수정 채굴을 돕습니다. 추출된 기타 물질들은 수정 정제 과정을 보조합니다.\n\n§T£district£ §Y$district_mining$§!당 §G+25§! £job_crystal_miner£ §Y수정 채굴§! 직업을 제공합니다.\n" # 4970569050961398518
+  sm_ring_giga_motes_hub_desc: "강력한 음파 방출기가 초음파를 대기와 티끌 채집 구역으로 쏘아 올려, 적절한 주파수로 먼지 사막을 뒤흔들어 다량의 휘발성 티끌을 표면으로 끌어올립니다. 전자기 그물은 티끌 정제 과정에 가치 있는 물질을 포획할 수도 있습니다.\n\n§T£district£ §Y$district_generator$§!당 §G+25§! £job_mote_harvester£ §Y티끌 채집§! 직업을 제공합니다.\n" # 11634978158256237263
+  sm_ring_giga_gas_hub_desc: "자연적으로 발생하는 가스 매장지 근처의 대기에 안정화제를 주입하여 추출을 더 안전하고 쉽게 만드는 화학 공장입니다. 부수적인 효과로, 지역 미생물을 더 효과적으로 활용하여 바이오매스에서 가스를 정제할 수 있습니다.\n\n§T£district£ §Y$district_farming$§!당 §G+25§! £job_gas_extractor£ §Y가스 추출§! 직업을 제공합니다.\n" # 8934925348412360106
+  numeral_0_icon: "" # 17241709254077376921
+  PLANET_LANCE_AETERNUM_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 범위 내의 모든 함선에 §G$@planet_lance_aeternum_fleet_damage|0G$§!의 피해를 입힙니다." # 9579558221160333435
+  TITAN_LANCE_AETERNUM_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 범위 내의 모든 함선에 §G$@titan_lance_aeternum_fleet_damage|0G$§!의 피해를 입힙니다." # 12666920531375022276
+  ARC_EMITTER_BLOKKAT_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 범위 내의 모든 함선에 §G$@arc_emitter_blokkat_fleet_damage|0G$§!의 피해를 입힙니다." # 3593246134905754410
+  PLANET_LANCE_BLOKKAT_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 범위 내의 모든 함선에 §G$@planet_lance_blokkat_fleet_damage|0G$§!의 피해를 입힙니다." # 6625449210233864633
+  SENTIENT_TITAN_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@sentient_titan_ehof_t1_fleet_damage|0G$§!의 피해를 입힙니다." # 1102910212554273183
+  QNM_BEAM_TITAN_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@qnm_beam_titan_ehof_t1_fleet_damage|0G$§!의 피해를 입힙니다." # 9871010194831507254
+  COMPOUND_HM_ERADICATOR_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@compound_hm_eradicator_ehof_t2_fleet_damage|0G$§!의 피해를 입힙니다." # 1190783517048949911
+  GIGA_MAGINOT_OMEGA_LANCE_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_maginot_omega_lance_fleet_damage|0G$§!의 피해를 입힙니다." # 6378049488702973305
+  GIGA_OMEGA_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_omega_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 8240586146295416535
+  GIGA_PLANET_MISSILE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_planet_missile_1_fleet_damage|0G$§!의 피해를 입힙니다." # 16695496367013333786
+  GIGA_SUPER_OMEGA_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_super_omega_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 2700677038951561184
+  SYSTEMCRAFT_KATZENLAND_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_katzen_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 6131593437285614062
+  SYSTEMCRAFT_RAY_OF_DOOM_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_ray_of_doom_1_fleet_damage|0G$§!의 피해를 입힙니다." # 14455505001106544854

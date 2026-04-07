@@ -4,3 +4,7 @@
   megalist_building_title: "거대 건축물 업그레이드 목록" # 10032908112187952088
   MEGALIST_BUILDING_ENTRY: "[This.solar_system.Star.GetName] 성계 내 [This.GetName]" # 10511492206454773626
   MEGASTRUCTURE_SELECTION_LEGEND: "§H아이콘 설명:§!\n\n£galwonders£ §E$ap_galactic_wonders$ 잠금 해제§!\n이 메가스트럭처를 완성하면 §Y$ap_galactic_wonders$§! 승천 퍽의 건설 요구사항을 충족하게 됩니다.\n\n£gigastructural£ §E$ap_gigastructural_constructs$ 잠금 해제§!\n이 메가스트럭처를 완성하면 §Y$ap_gigastructural_constructs$§! 승천 퍽의 건설 요구사항을 충족하게 됩니다.\n\n£megaupgrade£ §E업그레이드로 퍽 잠금 해제§!\n위 아이콘 중 하나 옆에 표시되는 경우, 이 퍽이 해당 메가스트럭처의 후속 업그레이드로만 잠금 해제되며 즉시 사용 가능하지 않음을 나타냅니다.\n\n§L참고: 'Gigastructural Engineering & More' 외 다른 모드에서 추가된 메가스트럭처는 이 아이콘들로 표시되지 않지만, 특히 $ap_galactic_wonders$ 퍽을 여전히 잠금 해제할 수도 있습니다.§!" # 2507680864252977826
+  megalist_desc: "" # 17241709254077376921
+  MEGALIST_ENTRY_DESC: "" # 17241709254077376921
+  megalist_building_desc: "" # 17241709254077376921
+  MEGALIST_BUILDING_ENTRY_DESC: "" # 17241709254077376921

@@ -1,0 +1,58 @@
+﻿l_korean:
+  giga_resources_produced_from: "생산된 자원:" # 10983142623854346963
+  giga_upkeep_for: "유지비:" # 11755963944927870460
+  giga_planet_politicians_mod_suffix: "$job_politician_plural_with_icon$" # 14248524394856125471
+  giga_planet_giga_megaengineering_overseers_mod_suffix: "[get_giga_megaengineering_overseer_plural_with_icon]" # 4411767065158577095
+  giga_planet_traders_mod_suffix: "$trader_type_plural_with_icon$" # 5134676558430805282
+  giga_planet_telepaths_mod_suffix: "$telepath_type_plural_with_icon$" # 4951221521341223466
+  giga_planet_chemists_mod_suffix: "$chemist_type_plural_with_icon$" # 10331406409683178885
+  giga_planet_translucers_mod_suffix: "$translucer_type_plural_with_icon$" # 18297343004671909266
+  giga_planet_refiners_mod_suffix: "$refiner_type_plural_with_icon$" # 16517330274681532975
+  giga_planet_culture_workers_mod_suffix: "[GetCultureWorkerPluralWithIcon]" # 4542419489088709725
+  giga_planet_cultivators_mod_suffix: "[get_ehof_cultivator_plural_with_icon]" # 6244450900703536382
+  giga_planet_energy_converters_mod_suffix: "[get_ehof_energy_converter_plural_with_icon]" # 6102769592282536976
+  giga_planet_giga_dark_matter_weavers_mod_suffix: "[get_dark_matter_weaver_plural_with_icon]" # 124363181277486215
+  giga_planet_giga_megaengineers_mod_suffix: "$planet_giga_megaengineers$" # 16310781148178121144
+  giga_planet_giga_megaengineers_job_mod_suffix: "[get_giga_megaengineer_plural_with_icon]" # 1214636395615049691
+  giga_planet_experiment_engineer_mod_suffix: "$experiment_engineer_type_plural_with_icon$" # 5766092539096575284
+  giga_planet_pop_assemblers_mod_suffix: "$pop_assembler_type_plural_with_icon$" # 881898937830828752
+  giga_planet_bureaucrats_mod_suffix: "$bureaucrat_type_plural_with_icon$" # 606480501137686568
+  giga_planet_researchers_mod_suffix: "$researcher_type_plural_with_icon$" # 8331493740245437750
+  giga_planet_physicists_mod_suffix: "$physicist_type_plural_with_icon$" # 4306046921118661244
+  giga_planet_biologists_mod_suffix: "$biologist_type_plural_with_icon$" # 16868856738716527057
+  giga_planet_engineers_mod_suffix: "$engineer_type_plural_with_icon$" # 16616703767076796510
+  giga_planet_metallurgists_mod_suffix: "$foundry_type_plural_with_icon$" # 12363516717906092063
+  giga_planet_evaluators_mod_suffix: "[evaluator.GetIcon] [evaluator.GetNamePlural]" # 12482456321020849558
+  giga_planet_entertainers_mod_suffix: "$entertainer_type_plural_with_icon$" # 1426544892631153885
+  giga_planet_knights_mod_suffix: "$job_knight_plural_and_commander_with_icon$" # 9592008093672365314
+  giga_planet_enforcers_mod_suffix: "$enforcer_type_plural_with_icon$" # 435795037523589673
+  giga_planet_doctors_mod_suffix: "$healthcare_type_plural_with_icon$" # 7979597675510247128
+  giga_planet_augmentors_mod_suffix: "$job_augmentor_plural_with_icon$" # 12765046623126916193
+  giga_planet_artisans_mod_suffix: "$factory_type_plural_with_icon$" # 16487615402710661872
+  giga_planet_primal_jobs_mod_suffix: "[GetWranglerJobNamePluralWithIcon]" # 10065575011528140651
+  giga_planet_treasure_gatherers_mod_suffix: "£job_treasure_gatherer£ $planet_treasure_gatherers$" # 2259779327715698053
+  giga_planet_technician_mod_suffix: "$technician_type_plural_with_icon$" # 7095969234142077090
+  giga_planet_miners_mod_suffix: "$miner_type_plural_with_icon$" # 9998469222011226452
+  giga_planet_farmers_mod_suffix: "$farmer_type_plural_with_icon$" # 18005166645881985372
+  giga_planet_livestock_farmers_mod_suffix: "£job_livestock£ §Y$job_livestock_plural$§!" # 4019367551357696576
+  giga_planet_livestock_miners_mod_suffix: "$giga_planet_livestock_farmers_mod_suffix$" # 2463798923385427253
+  giga_planet_soldiers_mod_suffix: "$soldier_type_plural_with_icon$" # 11276620886167590865
+  giga_planet_test_subjects_mod_suffix: "$test_subject_type_plural_with_icon$" # 16575305966859503071
+  giga_planet_sr_miners_mod_suffix: "전략 자원 채굴기" # 12101045060062535986
+  giga_planet_neural_chips_mod_suffix: "£job_neural_chip£ $job_neural_chip_plural$" # 13323611808360679231
+  giga_planet_bio_trophies_mod_suffix: "$job_bio_trophy_plural_with_icon$" # 3833035428502151120
+  giga_planet_civilians_mod_suffix: "$job_civilian_plural_with_icon$" # 8632956292765853950
+  giga_planet_maintenance_drones_mod_suffix: "[maintenance_drone.GetIcon] [maintenance_drone.GetNamePlural]" # 17173076552599171548
+  giga_planet_criminals_mod_suffix: "$criminal_plural_with_icon$" # 12008555430088768648
+  giga_planet_jobs_mod_suffix: "£job£ 직업" # 10105544131433810472
+  giga_planet_jobs_productive_mod_suffix: "$giga_planet_jobs_mod_suffix$" # 16747297082959525123
+  giga_planet_jobs_worker_mod_suffix: "[GetWorkerNamePlural]" # 7694054739950983585
+  giga_planet_jobs_specialist_mod_suffix: "[GetSpecialistPlural]" # 11781832178733868493
+  giga_planet_jobs_ruler_mod_suffix: "$pop_cat_ruler_plural$" # 6977404577865056447
+  giga_planet_worker_ownership_jobs_mod_suffix: "생활 수준 $living_standard_worker_ownership$을(를) 가진 팝" # 1370509435632748113
+  giga_planet_jobs_cyborg_worker_mod_suffix: "사이보그 $pop_cat_worker_plural$" # 11180235230921860703
+  giga_planet_jobs_robot_worker_mod_suffix: "$planet_jobs_robot_worker$" # 16069889001417215722
+  giga_planet_jobs_simple_drone_mod_suffix: "$pop_cat_simple_drone_plural$" # 6966418208721852404
+  giga_planet_jobs_complex_and_simple_drone_mod_suffix: "드론" # 15054901518611583576
+  giga_planet_jobs_robotic_mod_suffix: "기계 팝" # 9292808596811039237
+  giga_pop_category_civilians_mod_suffix: "$CIVILIANS$" # 11369339291055409503

@@ -22,7 +22,6 @@
   mod_giga_pop_assimilation_speed: "팝 동화 속도" # 17075809962556291189
   mod_giga_virtual_colony_size: "['concept_giga_virtual_colony_size']" # 15442208489030148025
   concept_giga_virtual_colony_size: "가상 승천 식민지 규모" # 5143143067010076379
-  concept_giga_virtual_colony_size_desc: "이 행성은 ['trait:trait_robot_digital_2'] 특성의 효과를 계산할 때 다른 수의 식민지로 계산됩니다." # 1817381561066866241
   mod_planet_buildings_minerals_cost_mult: "건설 비용: £minerals£ $minerals$" # 7543232089463510033
   mod_planet_districts_produces_mult: "구역에서 자원" # 5286481116472377264
   mod_weapon_type_anticompound_weapon_fire_rate_mult: "$weapon_type_anticompound$ 사격 속도" # 2908394568153361072
@@ -47,123 +46,68 @@
   planet_giga_virtual_training_job_icon_gestalt: "£job_evaluator£평가관" # 1105413556737122029
   planet_giga_dark_matter_weavers: "암흑 물질 직조원 작업" # 8778539261898263396
   mod_country_base_consumer_goods_produces_add: "월간 £consumer_goods£ $consumer_goods$" # 2165256917122410577
-  mod_planet_psionic_jobs_upkeep_mult: "£job£ 정신 능력 팝 직업 유지비" # 16229776569926080364
-  mod_giga_psionic_pop_bonus_workforce_mult: "$mod_psionic_pop_bonus_workforce_mult$" # 659936451359710927
-  mod_planet_jobs_robot_specialist_produces_mult: "로봇 [GetSpecialist] 팝 자원 산출량" # 6412917036551935603
-  mod_planet_artisans_energy_upkeep_add: "£energy£ $energy$ 당 £job_artisan£ [GetArtisanPlural] 유지비" # 12313168775432835764
-  mod_planet_artisans_society_research_upkeep_add: "£society_research£ $society_research$ 팝 그룹 단위당 유지 비용 £job_artisan£ [GetArtisanPlural]" # 15638713646399673196
-  mod_planet_artisans_food_upkeep_mult: "£food£ $food$ 당 £job_artisan£ [GetArtisanPlural] 유지 비용" # 10190959136054985242
-  mod_planet_culture_workers_energy_upkeep_add: "£energy£ $energy$당 £job_culture_worker£ $job_culture_worker_plural$ 유지 비용" # 1696546171155670462
-  mod_planet_culture_workers_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 유지비 (팝 그룹당) £job_culture_worker£ $job_culture_worker_plural$" # 17726162660582501596
-  mod_planet_culture_workers_society_research_produces_add: "£society_research£ $society_research$ 당 £job_culture_worker£ $job_culture_worker_plural$ 당 £society_research£" # 5142638265464295259
-  mod_planet_culture_workers_unity_produces_add: "£unity£ $unity$ 당 £job_culture_worker£ $job_culture_worker_plural$당" # 5010918757520015128
-  mod_planet_entertainers_energy_upkeep_add: "£energy£ $energy$ 당 £energy£ 유지비 [GetEntertainerPluralWithIcon]" # 10013538420673633938
-  mod_planet_civilians_energy_upkeep_add: "£energy£ $energy$ 당 £job_civilian£ $job_civilian_plural$" # 12466546995242197870
-  mod_planet_evaluators_energy_upkeep_add: "£energy£ $energy$당 £job_evaluator£ $job_evaluator_plural$ 유지 비용" # 16227872414902677119
-  mod_planet_evaluators_food_upkeep_add: "£food£ $food$ 팝 그룹당 유지 비용 £job_evaluator£ $job_evaluator_plural$" # 5976898233087275689
-  mod_planet_evaluators_unity_produces_add: "£unity£ $unity$ 당 £job_evaluator£ $job_evaluator_plural$" # 18227141392310276064
-  mod_planet_administrators_energy_upkeep_add: "£energy£ $energy$ 당 £energy£ $energy$ 유지 비용 [GetAdministratorPluralWithIcon]" # 11415618437151670887
-  mod_planet_administrators_food_upkeep_add: "£food£ $food$ 당 $pop_group_unit$ [GetAdministratorPluralWithIcon] 유지 비용" # 7787244191297359743
-  mod_planet_administrators_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 유지 비용 (팝 그룹당) [GetAdministratorPluralWithIcon]" # 4831704023154168683
-  mod_planet_administrators_alloys_upkeep_add: "£합금£ $alloys$ 유지 비용 (팝 집단당) [GetAdministratorPluralWithIcon]" # 12355769208987347073
-  mod_planet_administrators_society_research_upkeep_add: "£society_research£ $society_research$ 팝 그룹 유닛당 유지비 [GetAdministratorPluralWithIcon]" # 12679800424797782183
-  mod_planet_administrators_unity_produces_add: "£unity£ $unity$ 당 $pop_group_unit$ [GetAdministratorPluralWithIcon]" # 8400360203395756170
-  mod_planet_bureaucrats_energy_upkeep_add: "£energy£ $energy$ 당 £job_bureaucrat£ $job_bureaucrat_plural$ 유지 비용" # 13390811989271212575
-  mod_planet_bureaucrats_unity_produces_add: "£unity£ $unity$ 당 £job_bureaucrat£ $job_bureaucrat_plural$ 당 £pop_group_unit£" # 18309132179315829208
-  mod_planet_bureaucrats_society_research_upkeep_add: "£society_research£ $society_research$ 당 $pop_group_unit$ 당 유지 비용 £job_bureaucrat£ $job_bureaucrat_plural$" # 16567825647366729060
-  mod_planet_priests_energy_upkeep_add: "£energy£ $energy$당 £job_priest£ $job_priest_plural$ 유지 비용" # 17086899280133313485
-  mod_planet_priests_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 팝 그룹당 유지 비용 £job_priest£ $job_priest_plural$" # 13182482728031614660
-  mod_planet_priests_alloys_upkeep_add: "£합금£ $alloys$ 유지 비용 (팝 그룹당) £성직자£ $job_priest_plural$" # 9784466887459142537
-  mod_planet_priests_society_research_produces_add: "£society_research£ $society_research$ 당 £job_priest£ $job_priest_plural$" # 4940234058924480634
-  mod_planet_managers_energy_upkeep_add: "£energy£ $energy$ 당 £job_manager£ $job_manager_plural$ 유지 비용" # 11389098786610640817
-  mod_planet_managers_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 유지비, $pop_group_unit$당 £job_manager£ $job_manager_plural$" # 12910717375314014647
-  mod_planet_managers_alloys_upkeep_add: "£alloys£ $alloys$ 당 $pop_group_unit$당 유지 비용 £job_manager£ $job_manager_plural$" # 8426604333130864899
-  mod_planet_managers_society_research_produces_add: "£society_research£ $society_research$ 당 £job_manager£ $job_manager_plural$ 당" # 11791803446735945400
-  mod_planet_managers_unity_produces_add: "£unity£ $unity$ 당 £job_manager£ $job_manager_plural$ 당 $pop_group_unit$" # 18083072700104000595
-  mod_planet_bio_trophies_unity_produces_add: "£unity£ $unity$ 당 £job_bio_trophy£ $job_bio_trophy_plural$" # 11754323173163427468
-  mod_planet_bio_trophies_energy_upkeep_add: "£energy£ $energy$당 £job_bio_trophy£ $job_bio_trophy_plural$ 유지 비용" # 6732269494323032626
-  mod_planet_bio_trophies_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$당 £job_bio_trophy£ $job_bio_trophy_plural$ 유지 비용" # 3246130486186707082
-  mod_planet_refiners_energy_upkeep_add: "£energy£ $energy$ 당 £job_gas_refiner£ $planet_refiners$ 유지 비용" # 14631973720372586783
-  mod_planet_refiners_minerals_upkeep_add: "£minerals£ $minerals$ 당 £job_gas_refiner£ $planet_refiners$ $pop_group_unit$당 유지 비용" # 6818102613255698099
-  mod_planet_refiners_food_upkeep_add: "£food£ $food$ 당 £job_gas_refiner£ $planet_refiners$ 유지 비용" # 7231453411497869598
-  mod_planet_refiners_society_research_upkeep_add: "£society_research£ $society_research$ 당 $pop_group_unit$당 유지 비용 £job_gas_refiner£ $planet_refiners$" # 9343701673389250133
-  mod_planet_refiners_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ 당 $pop_group_unit$당 £job_gas_refiner£ $planet_refiners$" # 17293582269696519782
-  mod_planet_refiners_exotic_gases_produces_add: "£이색 가스£ $exotic_gases$ 당 $pop_group_unit$ £이색 가스 정제소£ $planet_refiners$" # 10722931961367397595
-  mod_planet_refiners_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ 당 $pop_group_unit$당 £job_gas_refiner£ $planet_refiners$" # 16868925486468030366
-  mod_planet_chemists_minerals_upkeep_add: "£minerals£ $minerals$ $pop_group_unit$당 유지 비용 £job_chemist£ $planet_chemists$" # 10905083275220984770
-  mod_planet_chemists_food_upkeep_add: "£food£ $food$ 팝 그룹당 유지 비용 £job_chemist£ $planet_chemists$" # 13982597812493556648
-  mod_planet_chemists_energy_upkeep_add: "£energy£ $energy$ 당 £job_chemist£ $planet_chemists$ 유지 비용" # 1815134141416267321
-  mod_planet_chemists_physics_research_upkeep_add: "£physics_research£ $physics_research$ 팝 그룹당 유지 비용 $pop_group_unit$ £job_chemist£ $planet_chemists$" # 7109889238276763555
-  mod_planet_chemists_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ 당 $pop_group_unit$ 당 £job_chemist£ $planet_chemists$" # 12881247001989644365
-  mod_planet_translucers_minerals_upkeep_add: "£minerals£ $minerals$ 당 $pop_group_unit$당 유지 비용 £job_translucer£ $planet_translucers$" # 8685389203856349954
-  mod_planet_translucers_food_upkeep_add: "£food£ $food$ 당 £job_translucer£ $planet_translucers$ 유지비" # 4307562765699333204
-  mod_planet_translucers_energy_upkeep_add: "£energy£ $energy$ 당 £job_translucer£ $planet_translucers$ 유지 비용" # 15310228745322861531
-  mod_planet_translucers_engineering_research_upkeep_add: "£engineering_research£ $engineering_research$ 팝 그룹당 유지 비용 £job_translucer£ $planet_translucers$" # 6807222689805322728
-  mod_planet_translucers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ 당 $pop_group_unit$ £job_translucer_icon£ $planet_translucers$" # 8412675366448619154
-  mod_planet_metallurgists_energy_upkeep_add: "£energy£ $energy$ 당 £job_foundry£ [GetAlloyProducerPlural] 유지 비용" # 7702050524062667658
-  mod_planet_metallurgists_engineering_research_upkeep_add: "£engineering_research£ $engineering_research$ 팝 그룹당 유지 비용 £job_foundry£ [GetAlloyProducerPlural]" # 8431769028417835583
-  mod_planet_miners_energy_upkeep_add: "£energy£ $energy$ 당 £job_miner£ [GetMinerPlural] 유지 비용" # 7184408039249222635
-  mod_planet_miners_food_upkeep_add: "£food£ $food$ 팝당 유지 비용 £job_miner£ [GetMinerPlural]" # 12931322190068766377
-  mod_planet_miners_engineering_research_upkeep_add: "£engineering_research£ $engineering_research$ 당 $pop_group_unit$당 유지 비용 £job_miner£ [GetMinerPlural]" # 16011324965485941054
-  mod_planet_researchers_energy_upkeep_add: "£energy£ $energy$ 당 £job_researcher£ [GetResearcherPlural] 유지 비용" # 16082214449230107107
-  mod_planet_researchers_sr_iodizium_upkeep_add: "£giga_sr_iodizium£ $giga_sr_iodizium$ 유지 비용 (팝 그룹당 £job_researcher£ [GetResearcherPlural])" # 3215291994464261109
-  mod_planet_researchers_minerals_upkeep_add: "£minerals£ $minerals$ $pop_group_unit$당 유지 비용 £job_researcher£ [GetResearcherPlural]" # 2272375913029904315
-  mod_planet_researchers_alloys_upkeep_add: "£alloys£ $alloys$ 당 £job_researcher£ [GetResearcherPlural] 유지 비용" # 5777086685385790430
-  mod_planet_researchers_exotic_gases_upkeep_add: "£exotic_gases£ $exotic_gases$ 당 £job_researcher£ [GetResearcherPlural]당 유지 비용" # 12469612034698299621
-  mod_planet_physicists_giga_sr_iodizium_upkeep_add: "£giga_sr_iodizium£ $giga_sr_iodizium$ 유지 비용당 $pop_group_unit$ $job_physicist_plural_with_icon$" # 11206481627176006402
-  mod_planet_biologists_giga_sr_iodizium_upkeep_add: "£giga_sr_iodizium£ $giga_sr_iodizium$ 팝 그룹 단위당 $pop_group_unit$ $job_biologist_plural_with_icon$ 유지 비용" # 1200350426742068216
-  mod_planet_engineers_giga_sr_iodizium_upkeep_add: "£giga_sr_iodizium£ $giga_sr_iodizium$ 유지 비용당 $pop_group_unit$ $job_engineer_plural_with_icon$" # 8419366281363498343
-  mod_planet_pop_assemblers_alloys_upkeep_add: "팝 조립 £합금£ $alloys$ 유지비" # 5884586792990687394
-  mod_planet_technician_minerals_upkeep_add: "£minerals£ $minerals$ 유지비/ $pop_group_unit$ 당 £job_technician£ [GetTechnicianPlural]" # 3560009245444034610
-  mod_planet_technician_food_upkeep_add: "£food£ $food$당 £job_technician£ [GetTechnicianPlural] 유지 비용" # 2421668409341921917
-  mod_planet_technician_giga_sr_iodizium_upkeep_add: "£giga_sr_iodizium£ $giga_sr_iodizium$ 유지 비용 (팝 그룹당 £job_technician£ [GetTechnicianPlural] 기준)" # 10579065023847710683
-  mod_planet_technician_physics_research_upkeep_add: "£physics_research£ $physics_research$ 팝당 유지 비용 £job_technician£ [GetTechnicianPlural]" # 6126745105438139174
-  mod_planet_technician_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ 당 £job_technician£ [GetTechnicianPlural] $pop_group_unit$" # 3682237528765783319
-  mod_planet_technician_society_research_produces_add: "£society_research£ $society_research$ 당 £job_technician£ [GetTechnicianPlural] $pop_group_unit$당" # 14761653952420248930
-  mod_planet_technician_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$당 £job_technician£ [GetTechnicianPlural] $pop_group_unit$" # 5384876173166557010
-  mod_planet_farmers_food_upkeep_add: "£food£ $food$ 당 £job_farmer£ [GetFarmerPlural]당 유지 비용" # 1478432554627089525
-  mod_planet_farmers_society_research_upkeep_add: "£society_research£ $society_research$ 팝 그룹 단위당 유지 비용 £job_farmer£ [GetFarmerPlural]" # 10362382776779467821
-  mod_planet_politicians_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 팝 그룹 단위당 유지 비용 £job_politician£ $job_politician_plural$" # 239785635761971910
-  mod_planet_politicians_unity_produces_add: "£unity£ $unity$ 당 £job_politician£ $job_politician_plural$ $pop_group_unit$" # 18050297615263865967
-  mod_planet_nobles_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 팝 그룹당 유지 비용 £job_noble£ $job_noble_plural$" # 17784467584685867145
-  mod_planet_nobles_unity_produces_add: "£unity£ $unity$ 당 $pop_group_unit$ 당 £job_noble£ $job_noble_plural$" # 6885928998459766053
-  mod_planet_executives_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 팝 그룹 단위당 유지 비용 £job_executive£ $job_executive_plural$" # 17640592534491057770
-  mod_planet_executives_energy_upkeep_add: "£energy£ $energy$ 당 $pop_group_unit$ £job_executive£ $job_executive_plural$ 유지 비용" # 13543806247317469327
-  mod_planet_executives_unity_produces_add: "£unity£ $unity$ 당 £job_executive£ $job_executive_plural$ $pop_group_unit$" # 16386070023120928750
-  mod_planet_merchants_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 유지비 ($pop_group_unit$당) £job_merchant£ $job_merchant_plural$" # 10773545187477576281
-  mod_planet_telepaths_physics_research_produces_add: "£물리학_연구£ $physics_research$ 당 £직업_텔레패스£ $job_telepath_plural$" # 11179388943584105612
-  mod_planet_telepaths_society_research_produces_add: "£society_research£ $society_research$ 당 £job_telepath£ $job_telepath_plural$" # 15734939036746296747
-  mod_planet_telepaths_engineering_research_produces_add: "£engineering_research£ $engineering_research$ 당 £job_telepath£ $job_telepath_plural$" # 2271823121628702088
-  mod_planet_telepaths_energy_upkeep_add: "£energy£ $energy$ 당 £job_telepath£ $job_telepath_plural$ 유지 비용" # 2053820839894107424
-  mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ 산출" # 3660186881997860897
-  mod_planet_traders_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ 팝 그룹당 유지 비용 $pop_group_unit$ £job_trader£ $job_trader_plural$" # 7318967985379884848
-  mod_planet_doctors_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ $pop_group_unit$당 유지 비용 £job_healthcare£ $planet_doctors$" # 16653012079497846629
-  mod_planet_livestock_minerals_produces_mult: "£minerals£ $minerals$ 당 £job_livestock£ $job_livestock_plural$ $pop_group_unit$" # 429957979215886522
-  mod_planet_giga_virtual_diplomats_energy_upkeep_add: "£energy£ $energy$당 $pop_group_unit$당 유지 비용 [giga_virtual_diplomats_icon] $planet_giga_virtual_diplomats$" # 1772766379205312834
-  mod_planet_giga_virtual_trainers_energy_upkeep_add: "£energy£ $energy$당 [giga_virtual_training_job_icon] [giga_virtual_training_job_plural] $pop_group_unit$당 유지 비용" # 11602153192703323424
-  mod_planet_cultivators_giga_sr_sentient_metal_produces_add: "£giga_sr_sentient_metal£ $giga_sr_sentient_metal$당 $pop_group_unit$당 £job_ehof_cultivator£ $planet_cultivators$" # 18169400476025943869
-  mod_planet_cultivators_alloys_upkeep_add: "£alloys£ $alloys$당 £job_ehof_cultivator£ $job_ehof_cultivator_plural$ 유지 비용" # 5217234982135526744
-  mod_planet_cultivators_energy_upkeep_add: "£energy£ $energy$ 당 £job_ehof_cultivator£ $job_ehof_cultivator_plural$ 유지 비용" # 1536926933929720426
-  mod_planet_energy_converters_giga_sr_negative_mass_produces_add: "£giga_sr_negative_mass£ $giga_sr_negative_mass$ 당 $pop_group_unit$ 당 £job_ehof_energy_converter£ $job_ehof_energy_converter_plural$" # 8048268170411378982
-  mod_planet_energy_converters_energy_upkeep_add: "£energy£ $energy$ 당 $pop_group_unit$당 £job_ehof_energy_converter£ $job_ehof_energy_converter_plural$ 유지 비용" # 7061488253906046840
-  mod_job_scrap_miner_per_pop: "§G+1§! $VALUE$ 팝당 $job_scrap_miner$ 직위" # 6363643272787438947
-  mod_job_scrap_miner_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_miner_add£" # 11677781566533975703
-  mod_job_scrap_miner_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_scrap_miner_drone$ 직업" # 3510960591107923086
-  mod_job_scrap_miner_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_mining_drone_add£" # 8808871210498863868
-  mod_job_angler_per_pop: "§G+1§! $VALUE$ 팝당 $job_angler$ 직위" # 10730581794907011293
-  mod_job_angler_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_angler_add£" # 4001875141074595064
-  mod_job_pearl_diver_per_pop: "§G+1§! $VALUE$ 팝당 $job_pearl_diver$ 직책" # 8926027112145898234
-  mod_job_pearl_diver_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_pearl_diver_add£" # 12902128879852056780
   job_artisan_icon: "장인" # 16465167015930584638
   job_artificer_icon: "제작자" # 8655211200804949709
-  job_nanotech_researcher_icon: "£나노기술 연구자£" # 6404633536092447217
-  job_nanotech_research_unit_icon: "나노기술 연구 부서" # 11811027636559500798
-  mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add: "£sr_dark_matter£ $sr_dark_matter$ 당 £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$" # 17237561519941665920
-  mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_mult: "$mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add$" # 11528303474666295205
-  mod_planet_giga_dark_matter_weavers_acot_sr_dark_energy_produces_add: "£acot_sr_dark_energy£ $acot_sr_dark_energy$ 당 $pop_group_unit$ £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$" # 6889332792272655229
-  mod_planet_rangers_physics_research_produces_add: "£물리학 연구£ $physics_research$ 당 $pop_group_unit$ £레인저 직책£ $job_ranger_plural$" # 4991902989219907554
-  mod_planet_rangers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ 당 £job_ranger£ $job_ranger_plural$당 $pop_group_unit$" # 8857321468067895741
-  mod_planet_miners_sr_iodizium_produces_add: "£sr_iodizium£ $sr_iodizium$ 당 £job_miner£ [GetMinerPlural] $pop_group_unit$" # 12439873054952272300
+  concept_giga_virtual_colony_size_desc: "일부 행성은 ['trait:trait_robot_digital_2'] 특성의 효과를 계산할 때 서로 다른 수의 식민지로 간주됩니다.\n\n이 수치는 해당 특성이 적용된 행성의 유효 크기를 직접적으로 증가시킵니다." # 7498099854176194904
+  mod_giga_virtual_colony_efficiency: "['concept_giga_virtual_colony_efficiency']" # 11814723856423472096
+  concept_giga_virtual_colony_efficiency: "가상 승천 식민지 효율" # 12469986379177334824
+  concept_giga_virtual_colony_efficiency_desc: "이 수치를 증가시키면 해당 행성의 ['concept_giga_virtual_colony_size', 식민지 크기]가 감소합니다.\n\n+100% 효율은 유효 식민지 크기를 절반으로, +200%는 3분의 1로 줄이는 식입니다.\n\n§t유효 크기 = ( 1 + 식민지 크기 수정치 ) / ( 1 + 식민지 효율 수정치 )§!" # 7276588482914143833
+  giga_birch_orykta_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ ['concept_giga_planet_orykta_jobs']" # 11767697944467499288
+  giga_birch_orykta_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_orykta_jobs']: $VARIABLE|1%=+$" # 18374393658684732375
+  mod_giga_birch_orykta_jobs_bonus_workforce_mult_fake: "$giga_birch_orykta_jobs_bonus_workforce_mult$" # 8171784583693343922
+  giga_birch_ktisma_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ ['concept_giga_planet_ktisma_jobs']" # 18150162671605659894
+  giga_birch_ktisma_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_ktisma_jobs']: $VARIABLE|1%=+$" # 12764895717833970801
+  mod_giga_birch_ktisma_jobs_bonus_workforce_mult_fake: "$giga_birch_ktisma_jobs_bonus_workforce_mult$" # 11355264490812760188
+  giga_birch_physma_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ ['concept_giga_planet_physma_jobs']" # 17886654324783580528
+  giga_birch_physma_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_physma_jobs']: $VARIABLE|1%=+$" # 2748021753784334368
+  mod_giga_birch_physma_jobs_bonus_workforce_mult_fake: "$giga_birch_physma_jobs_bonus_workforce_mult$" # 5262027587342757691
+  giga_refinery_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_refiners$" # 15761623224301778706
+  giga_refinery_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_refiners']: $VARIABLE|1%=+$" # 6010167400303898271
+  mod_giga_refinery_jobs_bonus_workforce_mult_fake: "$giga_refinery_jobs_bonus_workforce_mult$" # 17961411467921391704
+  giga_dark_matter_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_dark_matter_weavers$" # 5422679922225181263
+  giga_dark_matter_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_dark_matter_weavers']: $VARIABLE|1%=+$" # 18053999034512861134
+  mod_giga_dark_matter_jobs_bonus_workforce_mult_fake: "$giga_dark_matter_jobs_bonus_workforce_mult$" # 5384493455333403582
+  giga_negative_mass_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_energy_converters$" # 746281773711815871
+  giga_negative_mass_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_energy_converters']: $VARIABLE|1%=+$" # 17456310283253959001
+  mod_giga_negative_mass_jobs_bonus_workforce_mult_fake: "$giga_negative_mass_jobs_bonus_workforce_mult$" # 14705993750641713058
+  giga_megaconstruction_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_megaengineers$" # 10204189848066130750
+  giga_megaconstruction_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_megaengineers']: $VARIABLE|1%=+$" # 7134094438184393162
+  mod_giga_megaconstruction_jobs_bonus_workforce_mult_fake: "$giga_megaconstruction_jobs_bonus_workforce_mult$" # 11243029974115554154
+  giga_sentient_metal_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_cultivators$" # 1829718058810442401
+  giga_sentient_metal_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_cultivators']: $VARIABLE|1%=+$" # 11645703733636747787
+  mod_giga_sentient_metal_jobs_bonus_workforce_mult_fake: "$giga_sentient_metal_jobs_bonus_workforce_mult$" # 8189844392064506451
+  giga_soldier_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $concept_giga_planet_soldiers$" # 1057993257162915895
+  giga_soldier_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ ['concept_giga_planet_soldiers']: $VARIABLE|1%=+$" # 15040503103262805530
+  mod_giga_soldier_jobs_bonus_workforce_mult_fake: "$giga_soldier_jobs_bonus_workforce_mult$" # 1567806907138459338
+  mod_technician_jobs_bonus_workforce_mult_fake: "$technician_jobs_bonus_workforce_mult$" # 8718837022110869730
+  mod_miner_jobs_bonus_workforce_mult_fake: "$miner_jobs_bonus_workforce_mult$" # 3562939483581013831
+  mod_foundry_jobs_bonus_workforce_mult_fake: "$foundry_jobs_bonus_workforce_mult$" # 15687107082070955661
+  mod_artisan_jobs_bonus_workforce_mult_fake: "$artisan_jobs_bonus_workforce_mult$" # 17712862758438604084
+  mod_trader_jobs_bonus_workforce_mult_fake: "$trader_jobs_bonus_workforce_mult$" # 1583983862322873436
+  mod_farmer_jobs_bonus_workforce_mult_fake: "$farmer_jobs_bonus_workforce_mult$" # 51399971414080340
+  mod_researcher_jobs_bonus_workforce_mult_fake: "$researcher_jobs_bonus_workforce_mult$" # 4835994630343836926
+  mod_bureaucrat_jobs_bonus_workforce_mult_fake: "$bureaucrat_jobs_bonus_workforce_mult$" # 8995310789226260162
+  mod_pop_chemist_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [chemist.GetNamePlural]" # 18304667611019099296
+  mod_pop_chemist_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [chemist_drone.GetNamePlural]" # 12903011724857529847
+  mod_pop_translucer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [translucer.GetNamePlural]" # 1597542140703476734
+  mod_pop_translucer_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [translucer_drone.GetNamePlural]" # 15056992587804760324
+  mod_pop_gas_refiner_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [gas_refiner.GetNamePlural]" # 443511507533623535
+  mod_pop_gas_refiner_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [gas_refiner_drone.GetNamePlural]" # 7981397724603685194
+  mod_pop_organic_battery_bonus_workforce_mult: "[organic_battery.GetNamePlural] 팝을 위한 #bonus $BONUS_WORKFORCE_FOR$#" # 2945626846350964583
+  mod_pop_giga_dark_matter_weaver_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_dark_matter_weaver.GetNamePlural]" # 856641785225226809
+  mod_pop_giga_dark_matter_weaver_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_dark_matter_weaver_drone.GetNamePlural]" # 11677033365040767104
+  mod_pop_ehof_energy_converter_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [ehof_energy_converter.GetNamePlural]" # 12845366453550317228
+  mod_pop_ehof_energy_converter_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [ehof_energy_converter_drone.GetNamePlural]" # 11495886620987039684
+  mod_pop_ehof_cultivator_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [ehof_cultivator.GetNamePlural]" # 13336663805970203847
+  mod_pop_ehof_cultivation_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [ehof_cultivation_drone.GetNamePlural]" # 9501383305449876933
+  mod_pop_giga_megaengineering_overseer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_megaengineering_overseer.GetNamePlural]" # 16393801265039703330
+  mod_pop_giga_megaengineering_overseer_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_megaengineering_overseer_drone.GetNamePlural]" # 11268203744249127132
+  mod_pop_giga_megaengineer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_megaengineer.GetNamePlural]" # 17981706112707881867
+  mod_pop_giga_megaengineer_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_megaengineer_drone.GetNamePlural]" # 1252118574932431886
+  mod_pop_giga_birch_orykta_worker_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_orykta_worker.GetNamePlural]" # 15118106754358587555
+  mod_pop_giga_birch_orykta_worker_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_orykta_worker_drone.GetNamePlural]" # 3854580942952965358
+  mod_pop_giga_birch_ktisma_worker_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_ktisma_worker.GetNamePlural]" # 7113689991553839326
+  mod_pop_giga_birch_ktisma_worker_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_ktisma_worker_drone.GetNamePlural]" # 11529939669526460385
   mod_planet_pops_biologicals_food_upkeep_mult: "생물 팝 식량 유지비" # 7015480737604134919
   mod_planet_pops_lithoids_minerals_upkeep_mult: "리소이드 팝 광물 유지비" # 16121502240064994267
   mod_planet_pops_energy_upkeep_mult: "팝 에너지 유지비" # 14755253745494743652
@@ -199,7 +143,6 @@
   mod_pop_category_drones_consumer_goods_upkeep_add: "£consumer_goods£ 유지 비용 (팝 그룹 단위당) £pop_cat_simple_drone£ 드론" # 16129027152992847921
   mod_pop_robot_worker_happiness: "로봇 [GetWorker] 행복도" # 8093193798465640483
   mod_pop_robot_specialist_happiness: "로봇 [GetSpecialist] 행복도" # 3049675861678147043
-  mod_pop_robot_ruler_happiness: "로봇 통치자 행복도" # 6841780732983661939
   mod_pop_robot_slave_happiness: "로봇 노예 행복도" # 1472629927504172309
   mod_giga_shroud_conduit_instability: "월간 장막 도관 불안정성" # 15296072772791972952
   mod_giga_hypersiphon_network_size: "$psychic_hypersiphon_2$ 네트워크 크기" # 3735842201876822530
@@ -293,7 +236,6 @@
   mod_giga_vanilla_shipyard_limit_add: "$mega_shipyard_3$ 용량" # 18435243357823627445
   mod_giga_gigaforge_limit_add: "$name_neut_gigaforge$ 용량" # 15176291755018725005
   mod_giga_orbital_arcologies_limit_add: "$name_orbital_arcology$ 수용량" # 8086496743423778674
-  mod_giga_academy_limit_add: "$name_orb_bastion$ 수용량" # 12336845411722561715
   mod_giga_penrose_sphere_limit_add: "$name_penrose$ 용량" # 2636388222126223787
   mod_giga_planetary_computer_limit_add: "$name_planetary_computer$ 역량" # 14303997719585138435
   mod_giga_planetshipyard_limit_add: "$name_planetshipyard$ 용량" # 7827376887248559470
@@ -313,3 +255,13 @@
   mod_giga_matrioshka_brain_limit_add: "$name_matrioshka_brain$ 용량" # 13290046662540636760
   mod_giga_nidavellir_limit_add: "$name_nidavellir$ 용량" # 16050896393280922424
   mod_giga_systemcraft_limit_add: "$name_war_system$ 역량" # 12160652962860566598
+  mod_pop_giga_birch_physma_worker_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_physma_worker.GetNamePlural]" # 6705891839344594917
+  mod_pop_giga_birch_physma_worker_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_birch_physma_worker_drone.GetNamePlural]" # 4772414842593803069
+  mod_pop_giga_amb_fe_acolyte_foundry_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_amb_fe_acolyte_foundry.GetNamePlural]" # 13441026334670956238
+  mod_pop_giga_amb_fe_celestial_architect_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [giga_amb_fe_celestial_architect.GetNamePlural]" # 208919783431594367
+  mod_pop_robot_ruler_happiness: "로봇 $pop_cat_ruler$ 행복도" # 2982340524364703191
+  mod_robotic_worker_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ 로봇 [GetWorkerPlural]" # 11410431921844106768
+  mod_robotic_specialist_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ 로봇 [GetSpecialistPlural]" # 7924358488113425281
+  mod_robotic_ruler_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ 로봇 $pop_cat_ruler_plural$" # 8651957372417321620
+  mod_robotic_slave_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $pop_cat_slave_plural$" # 867577138582660131
+  mod_giga_orbital_naval_logistics_limit_add: "$name_orb_naval_logistics$ 수용량" # 18146700406481555429

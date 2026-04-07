@@ -1,0 +1,215 @@
+﻿l_korean:
+  giga_tech_quasi_stellar_1: "초차원 차폐막" # 3622568926778927844
+  giga_tech_quasi_stellar_1_desc: "퀘이사는 믿을 수 없을 정도로 강력한 에너지를 지닌 천체입니다. 우리가 퀘이사 근처에서 어떠한 공학 프로젝트를 수행하고자 한다면, 퀘이사의 중력과 방사선으로부터 구조물을 보호할 수 있는 고급 차폐 기술을 개발해야 합니다." # 5514774345782180608
+  giga_tech_quasi_stellar_2: "중력 강착 압축" # 864695781273542985
+  giga_tech_quasi_stellar_2_desc: "은하 중심부의 하이퍼퀘이사는 거대하고 극도로 에너지가 넘치는 강착 원반으로 둘러싸여 있습니다. 이 원반 때문에 퀘이사 근처에 무언가를 건설하는 것은 불가능에 가깝습니다. 하지만 퀘이사 근처의 중력 상수를 변경함으로써, 우리는 퀘이사의 질량이 증가한 것과 같은 효과를 유도하여 원반의 크기를 강제로 축소할 수 있습니다. 이는 에너지 잠재력을 높이는 동시에 퀘이사 근처에 구조물을 건설할 수 있게 해 줄 것입니다." # 12031738003499589842
+  giga_tech_quasi_stellar_3: "상대론적 제트 편향" # 12704555158193140394
+  giga_tech_quasi_stellar_3_desc: "초대질량 퀘이사의 가장 두드러진 특징 중 하나는 양극에서 상대론적 속도로 뿜어져 나오는 이온화 물질의 초가속 제트입니다. 이 제트는 극도로 강력하며, 이 파멸적인 에너지를 수확하고 방향을 전환하는 능력은 우리의 미래 하이퍼웨폰에 동력을 공급하는 데 매우 유용할 것입니다." # 14140903192834696694
+  giga_tech_quasi_stellar_4: "테라급 연산 기기" # 14982419815788547012
+  giga_tech_quasi_stellar_4_desc: "우리가 이 구조물을 적절히 유지 관리하고 하이퍼웨폰이 사용하는 엄청난 양의 에너지를 관리하려면 $name_quasistellar$만큼이나 거대한 컴퓨터가 필요할 것입니다." # 5077959020191311235
+  giga_tech_quasi_stellar_5: "퀘이사 에너지 조작" # 14364204078181905524
+  giga_tech_quasi_stellar_5_desc: "초대질량 퀘이사에서 방출되는 순수한 에너지를 수확하고 저장하며 재전송하는 일은 초차원 커패시터에서 초중력장 변조에 이르는 여러 극도로 진보된 기술을 결합해야만 가능합니다." # 10587827122266018049
+  giga_tech_quasi_stellar_6: "$name_quasistellar$" # 7708089865714462726
+  giga_tech_quasi_stellar_6_desc: "$name_quasistellar$는 은하계에서 가장 에너지가 넘치는 천체를 무기로 만들기 위해 우리가 알고 있는 거의 모든 유형의 기술을 동원한 무기입니다. 이 가공할 구조물은 진정한 초거대 무기의 정점으로, $name_ndb$나 시스템크래프트조차 몇 자릿수나 능가하는 위력을 자랑합니다." # 17868450430287186069
+  quasi_stellar_obliterator_0: "$gc_tera$$name_quasistellar$ 건설 현장" # 3523350457925351363
+  quasi_stellar_obliterator_0_DESC: "거대한 초대질량 퀘이사 옆을 떠다니는 미래의 $name_quasistellar$ 건설 현장입니다. 이 비교적 작은 플랫폼은 이 은하계의 지적 생명체가 조립한 것 중 가장 웅장하고 터무니없는 하이퍼웨폰을 건설하기 위한 기지로 사용될 것입니다." # 17992613508047090473
+  quasi_stellar_obliterator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\n§Y하이퍼퀘이사§! 주변에 하이퍼웨폰을 건설하여 §Y성단§! 전체를 파괴할 수 있습니다.\n§L퀘이사를 중심으로 건설된 터무니없을 정도로 거대한 하이퍼웨폰으로, 헤아릴 수 없는 파괴력을 지니고 있습니다.§!" # 14919933773327760639
+  quasi_stellar_obliterator_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - §Y준항성 소멸기§!는 단일 §Y행성§!, §Y항성계§! 또는 §Y성단§! 전체를 파괴할 수 있습니다." # 906583417055065754
+  quasi_stellar_obliterator_1: "$name_quasistellar$ 강착 응축기" # 2086872243095236247
+  quasi_stellar_obliterator_1_DESC: "이 거대한 부분 고리는 퀘이사를 둘러싸고 있으며, 초차원 초중력 압축기를 사용하여 국소적으로 중력 상수를 변경함으로써 퀘이사의 격렬한 강착 원반을 효과적으로 응축시킵니다." # 1473729824939020723
+  quasi_stellar_obliterator_2: "$name_quasistellar$ 상대론적 편향기" # 1133536013085814218
+  quasi_stellar_obliterator_2_DESC: "복잡하게 설계된 전력 도관과 초고효율 편향기 세트를 사용하여 퀘이사의 극 제트를 조심스럽게 수집하고 방향을 전환함으로써, 하이퍼웨폰에 사용할 막대한 양의 에너지를 확보합니다." # 8821884000490579832
+  quasi_stellar_obliterator_3: "$name_quasistellar$ 하이퍼컴퓨터" # 9103608465548324615
+  quasi_stellar_obliterator_3_DESC: "퀘이사에서 수확한 막대한 에너지 흐름을 적절히 제어 및 조정하고 구조물 전체를 안정화하기 위해 하이퍼웨폰의 거대한 프레임 내부에 통합된 초거대 컴퓨터입니다." # 9360411431675941934
+  quasi_stellar_obliterator_4: "$name_quasistellar$ 테라커패시터" # 18175279392198144455
+  quasi_stellar_obliterator_4_DESC: "퀘이사를 둘러싼 이 거대한 고리는 강착 원반과 펜로즈 과정 모두에서 에너지를 수확하고, 이를 거대한 저장 장치나 무기 자체 등 필요한 곳으로 재전송하는 데 사용됩니다." # 5661766406974303886
+  quasi_stellar_obliterator_firing_1: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_1_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_1_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_2: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_2_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_2_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_3: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_3_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_3_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_4: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_4_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_4_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_5: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_5_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_5_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_6: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_6_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_6_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_7: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_7_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_7_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_obliterator_firing_8: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_firing_8_DESC: "이 $name_quasistellar$이(가) 현재 발사 중입니다." # 2366320521614065473
+  quasi_stellar_obliterator_firing_8_MEGASTRUCTURE_DETAILS: "$quasi_stellar_obliterator_firing_1_DESC$" # 18214341760193714749
+  quasi_stellar_gateway_off: "Q.S.O. 게이트웨이" # 2860197549443855913
+  quasi_stellar_gateway_off_DESC: "원리상 $name_ndb$의 게이트웨이와 유사한 이 아공간 통로는 막대한 양의 에너지를 즉각적으로 전송할 수 있게 해줍니다." # 2413805339561659425
+  quasi_stellar_gateway_off_MEGASTRUCTURE_DETAILS: "$quasi_stellar_gateway_off_DESC$" # 5823537751485805448
+  quasi_stellar_gateway_on: "활성화된 Q.S.O. 게이트웨이" # 17995934021731284211
+  quasi_stellar_gateway_on_DESC: "원리상 $name_ndb$의 게이트웨이와 유사한 이 아공간 통로는 막대한 양의 에너지를 즉각적으로 전송할 수 있게 해줍니다." # 2413805339561659425
+  quasi_stellar_obliterator_5: "$name_quasistellar$" # 17601144298919610965
+  quasi_stellar_obliterator_5_DESC: "완성되어 완전히 작동하는 $name_quasistellar$입니다. 퀘이사의 극 제트와 강착 원반, 그리고 펜로즈 과정을 통해 에너지를 추출하는 이 거대한 초병기는 은하계 전체의 항성 에너지에 달하는 분노를 불운한 표적에게 쏟아부을 수 있습니다." # 18168820498654206907
+  quasi_stellar_obliterator_6: "Q.S.O. 제어판" # 15082956059104287166
+  quasi_stellar_obliterator_6_DESC: "초병기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
+  quasi_stellar_marker_star_firing: "Q.S.O. 웜홀" # 16133938208756191055
+  quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
+  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_planet_firing: "Q.S.O. 웜홀" # 16133938208756191055
+  quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
+  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  giga_qso.3000.name: "콰사리아의 평화" # 14516309440491175786
+  giga_qso.3000.desc: "§R경악스러운 소식!§!\n\n우리 $name_quasistellar$의 중요한 부분이 완성됨에 따라, 은하계는 우리를 은하계의 안전에 대한 보편적인 위협으로 간주하기 시작한 듯합니다. 실제로, 대량 학살을 자행하지 않는 모든 제국은 오늘 '콰사리아의 평화'라 불리는 상호 불가침 조약과 함께 기한 없는 휴전에 합의했습니다. 그들은 적어도 지금은 우리의 하이퍼무기로 은하계의 안전을 위협하지 못하도록 사소한 다툼을 잠시 접어두기로 결정했습니다..." # 9789629933934543932
+  giga_qso.3000.a: "그게 도움이 될 거라 생각하나?" # 6328228696513221900
+  giga_fed.3012.name: "§R선전포고!§!" # 3828935067342864944
+  giga_fed.3012.desc: "[root.GetName], 우리는 너의 사악한 행위를 더 이상 좌시할 수 없다.\n\n이는 공식적인 선전포고이다. 지금 즉시 항복하라. 그러면 너희 문명을 파괴로부터 구원해 줄지도 모르지." # 1504776468670246963
+  giga_fed.3012.a: "가련하군." # 6581342902351992097
+  giga_fed.3006.name: "은하 방위 조약" # 5678889983941079066
+  giga_fed.3006.desc: "[root.GetName]은 우리가 아는 문명을 위협할 수 있는 하이퍼무기 건설에 착수했다.\n\n이에 따라, [giga_galactic_pact_president.GetName]의 주도하에 우리는 은하계의 미래를 수호하고 [root.GetName]의 사악한 활동을 종식하기 위한 연방인 §B은하 방위 조약§!의 창설을 공식적으로 선포한다.\n\n우리는 너의 끊임없이 커지는 과대망상적 성향에 휩쓸려 사라지지 않을 것이다, [root.GetName]." # 13975257344278230211
+  giga_fed.3006.a: "짖기만 할 뿐, 물지는 못하겠지." # 14957839096961128538
+  giga_fed.3006.b: "흥." # 17104357171569901828
+  giga_fed.3006.c: "고작 생각해 낸 게 이거인가?" # 8816587624461172892
+  giga_fed.3006.d: "훌륭하군, 우리의 작업을 훨씬 더 쉽게 만들어 주겠어." # 11235401702886444927
+  giga_fed.3005.name: "§B은하 방위 조약§!" # 12692431250970762699
+  giga_fed.3005.desc: "은하계의 수많은 성간 국가들이 공통의 목적을 위해 협력하는 것은 종종 어려운 일이다. 그러나 [root.GetName]이 거대한 하이퍼무기를 건설함에 따라, 외교적 기적이라 불릴 만한 일이 일어났다. 은하계에 남은 대부분의 제국이 기한 없는 휴전에 합의했고, 그간의 차이를 뒤로한 채 §B은하 방위 조약§!이라 불리는 은하 규모의 연방으로 뭉쳤다!\n\n[giga_galactic_pact_president.GetName]이 이끄는 이 거대 연방은 [root.GetName]의 파괴적인 하이퍼무기로부터 은하계를 보호하는 것을 목표로 하고 있으며, 그들이 공격적인 행동을 개시하는 것은 시간문제일 뿐이다..." # 10112105913542581969
+  giga_fed.3005.a: "궁지에 몰린 쥐새끼들처럼 뭉치는군." # 6093639556935623489
+  giga_fed.4012.name: "§R선전포고!§!" # 3828935067342864944
+  giga_fed.4012.desc: "[root.GetName], 우리는 너의 광기 어린 은하계 파괴를 더 이상 좌시할 수 없다.\n\n이는 공식적인 선전포고이다. 대가가 무엇이든 너를 쓰러뜨리겠다!" # 15505596981073885339
+  giga_fed.4012.a: "가련한 바보들." # 588694096543972253
+  giga_fed.4011.name: "은하 방위 연맹" # 113481490741535293
+  giga_fed.4011.desc: "은하계의 거주자들이여!\n\n[root.GetName]은(는) 완성될 경우 우리가 아는 은하계의 모든 생명을 끝낼 수 있는 무기를 건설하기 시작했습니다. 이에 따라, 우리는 이 은하계의 미래를 수호하기 위해 공식적으로 은하 방위 연맹의 창설을 선포하며, [root.GetName]의 사악한 계획이 현실이 되지 않도록 모든 힘을 다할 것입니다.\n\n우리는 순순히 어둠 속으로 사라지지 않을 것임을 명심하라, [root.GetName]!" # 12205699127541482998
+  giga_fed.4011.a: "바보들! 너희는... 우리를 막을 수 없다!" # 11463041376154843915
+  giga_fed.4010.name: "§B은하 방위 연맹§!의 탄생" # 2928271786429322040
+  giga_fed.4010.desc: "은하계는 항상 위험한 곳이었으며, 작은 국경 분쟁부터 전면적인 은하 전쟁에 이르기까지 모든 규모의 전쟁은 은하 역사 전반에 걸쳐 매우 흔했습니다.\n\n그러나 [root.GetName]은(는) 최근 이전의 그 어떤 것보다 압도적인 규모와 범위를 가진 초병기를 건설하기 시작했습니다. 그리고 찰나의 명료함 속에서, 은하계의 모든 이는 깨달았습니다. 그들의 사소한 갈등과 다툼은 이 무기가 완성되었을 때 불러올 파괴에 비하면 아무것도 아니라는 것을 말입니다.\n\n그리하여 [giga_galactic_pact_president.GetName]의 주도하에, 은하계의 잔존 세력은 차이를 제쳐두고 [root.GetName]이(가) 은하계에 위협이 되는 동안만이라도 §B은하 방위 연맹§!이라는 단일 은하 통합 국가로 뭉치기로 했습니다.\n\n이 거대한 제국이 [root.GetName]의 파괴적인 시도를 막는 데 성공할까요, 아니면 오히려 은하계의 종말을 앞당기게 될까요? 이제 곧 알게 될 것입니다...\n\n§R은하 연방이 완전히 형성되기까지 몇 분 정도 소요될 수 있습니다.§!" # 15140415086801196023
+  giga_fed.4010.a: "이... 이것으로 우리를 막을 수는 없다!" # 921641037135418177
+  giga_qso.2000.name: "$name_quasistellar$ 건설 현장 완료!" # 18235813554945423337
+  giga_qso.2000.desc: "우리 $name_quasistellar$를 위한 건설 현장이 은하 중심부에 완료되었습니다! 초대질량 퀘이사 옆에 떠 있는 이 플랫폼은 전례 없는 규모의 무기를 조립하기 위한 기지로 사용될 것이며, 그 막대한 파괴력은 $name_ndb$조차 이 거대한 괴물에 비하면 단순한 폭죽에 불과하게 만들 것입니다. 첫 번째 단계는 실제 초병기 자체에 대한 작업을 시작하기 위해 퀘이사의 강착 원반을 압축하는 것입니다." # 6321047931978620018
+  giga_qso.2000.a: "확인됨." # 3536622398024101432
+  giga_qso.2001.name: "$name_quasistellar$ 강착 응축기 완료!" # 17298620200471963003
+  giga_qso.2001.desc: "초병기 건설의 첫 단계가 완료되었습니다. 퀘이사 주위에 거대한 부분 고리가 조립되었으며, 이는 에너지 강착 원반에 막대한 중력 압력을 가해 크기를 줄이고 있습니다. 이를 통해 원반의 방해 없이 초병기의 나머지 부분을 완성할 수 있게 될 것입니다." # 11172255650419196975
+  giga_qso.2001.a: "무한한 힘을 얻기 위해 치러야 할 작은 대가일 뿐." # 8612020314941151788
+  giga_qso.2002.name: "$name_quasistellar$ 상대론적 편향기 완료!" # 16934827206617693978
+  giga_qso.2002.desc: "우리의 $name_quasistellar$ 가동을 향한 또 다른 단계가 완료되었습니다. 거대한 커패시터와 연료 공급 파이프 네트워크로 구조물의 나머지 부분과 연결된 두 개의 거대한 수집기가 퀘이사의 극제트를 수집하여 그 에너지를 구조물의 주 무기로 재지향할 것입니다. 이제 이 거대한 초병기를 관리하는 데 필요한 거대한 컴퓨팅 배열을 건설하기 시작해야 합니다." # 13622545675013662410
+  giga_qso.2002.a: "좋다." # 843958112380023394
+  giga_qso.2003.name: "$name_quasistellar$ 하이퍼컴퓨터 완료!" # 12979157238422646118
+  giga_qso.2003.desc: "우리 $name_quasistellar$의 하이퍼컴퓨터가 이제 완성되었습니다. 이 거대한 컴퓨팅 기계 세트는 구조물을 유지하고 발사 과정이 원활하게 진행되도록 보장하는 역할을 합니다. 또한 무기로 전달될 막대한 양의 에너지를 관리할 수 있습니다. 이제 이 에너지를 무기 자체로 전달하는 데 사용될 커패시터 작업을 시작해야 합니다." # 6902960591062578163
+  giga_qso.2003.a: "매우 좋군." # 2006367686461631787
+  giga_qso.2004.name: "$name_quasistellar$ 테라커패시터 완료!" # 6049395420370817101
+  giga_qso.2004.desc: "우리 하이퍼웨폰의 테라 커패시터 조립이 완료되었습니다. 거대한 수렴 고리 세트인 이 장치는 퀘이사에서 수집된 막대한 에너지를 전달하고 저장하며, 발사 시퀀스가 시작될 때마다 이를 하이퍼웨폰으로 재전송합니다. 이제 마지막 단계인 하이퍼웨폰의 가장 중요한 부분, 즉 거대한 포신을 건설하는 일만 남았습니다." # 2879495079903529356
+  giga_qso.2004.a: "훌륭하군. 머지않아 우리는 무한한 힘을 손에 넣게 될 것이다." # 13166256092087810052
+  giga_qso.2005.name: "$name_quasistellar$ 완료!" # 14384915908562526579
+  giga_qso.2005.desc: "드디어 끝났다. 은하 중심부의 초대질량 퀘이사 근처에서 수십 년 동안 위험하고 고통스러운 작업을 수행한 끝에, 우리의 역작이 마침내 완성되었다.\n\n$name_quasistellar$는 $name_ndb$조차 왜소하게 만들 만큼 전례 없는 규모의 무기이다. 그 에너지 출력은 약 20조 개의 항성과 맞먹는다. 이 무기는 불운한 표적에게 상상할 수 없는 파괴력을 쏟아부을 수 있다. 이는 우주에 대한 우리의 궁극적인 지배력과 하늘 그 자체를 우리의 의지대로 굴복시킬 수 있는 우리의 능력을 증명하는 것이다.\n\n수백 천문 단위에 달하는 이 거대한 하이퍼웨폰이 완성됨에 따라, 이제 적들이 할 수 있는 것이라곤 자비를 구하며 기도하는 것뿐이다." # 14223772209930321852
+  giga_qso.2005.a: "마침내, 가장 거대한 포가 우리의 것이 되었다!" # 169486935539146796
+  giga_qso.001.name: "$name_quasistellar$ 제어판" # 16897782324585522277
+  giga_qso.001.desc: "$name_quasistellar$ 제어판에 오신 것을 환영합니다.\n\n여기에서 하이퍼웨폰의 표적을 선택하거나 매개변수를 구성할 수 있습니다.\n\n표적을 선택하면 항성, 행성 또는 함대를 조준할 수 있습니다. Q.S.O.를 발사하려면 거대 구조물 자체에서 생성되는 £giga_sr_quasaric_energy£§Y퀘이사 에너지§!가 필요하다는 점을 명심하십시오.\n\n매개변수를 확인하면 무기의 충전 속도를 변경하여 Q.S.O.가 축적하는 £giga_sr_quasaric_energy£§Y퀘이사 에너지§!의 양을 늘리거나 줄일 수 있습니다.\n\n§B이 메뉴는 칙령을 통해 직접 접근할 수도 있습니다.§!" # 8326747904656568251
+  giga_qso.001.fire: "표적 관리" # 3826777246671886861
+  giga_qso.001.power_management: "전력 관리" # 10486500561386924134
+  giga_qso.001.quit: "제어판 종료" # 8654791386900170573
+  giga_qso.001.menu: "메뉴로 돌아가기" # 13647656362209151972
+  giga_qso.001.panel: "제어판으로 돌아가기" # 6651052307512494948
+  giga_qso.001.confirmdestruction: "§R확인§!" # 9299268119519788885
+  giga.qso.novalidtargets: "유효한 표적이 없습니다." # 1423307057521109207
+  giga.qso.maxtargetedplanets: "최대 행성 수만큼 표적을 지정했습니다. 더 많은 표적을 선택하려면 최소 하나 이상의 표적을 선택 해제하십시오." # 1407183206215411355
+  giga.qso.maxtargetedsystems: "최대 성계 수만큼 표적을 지정했습니다. 더 많은 표적을 선택하려면 최소 하나 이상의 표적을 선택 해제하십시오." # 4637335107535194861
+  giga.qso.canttargetsystemtwice: "같은 성계를 두 번 표적으로 지정할 수 없습니다." # 12388486815127684782
+  giga.qso.noclustertodestroy: "파괴할 표적 클러스터가 없습니다." # 17458262055508708441
+  giga.qso.noclustertoremove: "폐기할 표적 클러스터가 없습니다." # 6810609425546188219
+  giga.qso.nosystemtodestroy: "파괴할 표적 성계가 없습니다." # 14436336212769849067
+  giga.qso.nosystemtoremove: "폐기할 대상 성계가 없습니다." # 490459146362589679
+  giga.qso.noplanetstodestroy: "파괴할 대상 행성이 없습니다." # 7891058643395098156
+  giga.qso.noplanetstoremove: "폐기할 대상 행성이 없습니다." # 11018026724297253175
+  giga_qso.002.name: "준항성 말살기" # 893512981405224180
+  giga_qso.002.desc: "이곳은 $name_quasistellar$ §E대상 관리 메뉴§!입니다. §Y[root.GetName]§!에 대한 충성도를 기준으로 대상을 지정할 국가를 선택할 수 있습니다.\n\n§R적대적§! 대상에는 일반적으로 ['concept_marauder_empires'], ['concept_endgame_crises'] 및 현재 전쟁 중인 제국이 포함됩니다.\n\n§Y중립§! 대상에는 일반적으로 ['concept_preftl_civilizations'], 평화 상태이지만 ['concept_subject_agreement'], ['concept_federation'] 또는 특정 ['concept_diplomatic_pacts']를 맺지 않은 제국이 포함됩니다.\n\n§G우호적§! 대상에는 우리 국경 내에 소유한 성계가 포함됩니다." # 23233079823769071
+  giga_qso.002.a: "§E대상 선택§!" # 5382854002271206064
+  giga_qso.002.b: "적대적" # 9039850063271727511
+  giga_qso.002.c: "중립" # 12410477968503191606
+  giga_qso.002.d: "우호적" # 5273527544098861440
+  giga_qso.002.e: "§E대상 관리 - 성단§!" # 8962026156492109721
+  giga_qso.002.f: "대상 성단 파괴" # 15745518668433548162
+  giga_qso.002.g: "대상 성단 폐기" # 5680087872104161404
+  giga_qso.002.h: "§E대상 관리 - 성계§!" # 4721931711640472904
+  giga_qso.002.i: "대상 성계 파괴" # 5029248208710524756
+  giga_qso.002.j: "대상 성계 폐기" # 15268068059838901540
+  giga_qso.002.k: "§E대상 관리 - 행성§!" # 12661863288180941848
+  giga_qso.002.l: "대상 행성 파괴" # 12155188141026887381
+  giga_qso.002.m: "대상 행성 폐기" # 14373470191135682156
+  giga_qso.003.desc: "대상 국가를 선택하십시오." # 2463575877225687523
+  giga_qso.004.desc: "대상 항성 등급을 선택하십시오." # 1514489718637953795
+  giga_qso.005.desc: "목표로 삼을 성계를 선택하십시오." # 5109726626475672217
+  giga_qso.006.desc: "Q.S.O.의 조준 모드를 선택하십시오.\n\n§Y성단§!을 조준하면 해당 성계와 인접한 모든 성계가 파괴 대상으로 지정됩니다. $giga_fe_shield$나 $d_maginot_subspace_disruptor$로 보호받는 인접 성계는 영향을 받지 않습니다.\n\n§Y항성계§!를 조준하면 해당 성계만 파괴 대상으로 지정되며, 주변 성계는 온전하게 유지됩니다.\n§T현재 조준된 성계:§! §Y[root.giga_qso_targeted_systems]/4§!\n\n§Y행성§!을 조준하면 선택한 행성만 파괴 대상으로 지정되며, 성계는 온전하게 유지됩니다. 여러 성계나 제국에 걸쳐 최대 §Y10§!개의 행성을 동시에 조준할 수 있습니다.\n§T현재 조준된 행성:§! §Y[root.giga_qso_targeted_planets]/10§!" # 9414456758831653117
+  giga_qso.006.a: "성단 조준" # 2885656833343784381
+  giga_qso.006.b: "항성계 조준" # 17637140173343638329
+  giga_qso.006.c: "행성 조준" # 3079138097042216317
+  giga_qso.007.desc: "최대 §Y10§!개의 행성을 선택하십시오. 이 행성들은 같은 성계나 같은 제국 소속일 필요는 없습니다.\n\n§T현재 조준된 행성:§! §Y[root.giga_qso_targeted_planets]/10§!" # 12854255544439945829
+  giga_qso.0070.desc: "지정된 성단에 발사할 것인지 확인하십시오. 이 시점 이후로는 되돌릴 수 없으며 §R지정된 성단은 파괴될 것입니다.§!" # 15498026870447805817
+  giga_qso.0071.desc: "지정된 성계들에 발사할 것인지 확인하십시오. 이 시점 이후로는 되돌릴 수 없으며 §R지정된 성계들은 파괴될 것입니다.§!\n\n§T현재 조준된 성계:§! §Y[root.giga_qso_targeted_systems]/4§!" # 12618813661817138380
+  giga_qso.0072.desc: "조준을 해제할 성계들을 선택하십시오.\n\n§T현재 조준된 성계:§! §Y[root.giga_qso_targeted_systems]/4§!" # 10428073192018033190
+  giga_qso.0073.desc: "지정된 행성들에 발사할 것인지 확인하십시오. 이 시점 이후로는 되돌릴 수 없으며 §R지정된 행성들은 파괴될 것입니다.§!\n\n§T현재 조준된 행성:§! §Y[root.giga_qso_targeted_planets]/10§!" # 13679043567022238237
+  giga_qso.0074.desc: "조준을 해제할 행성들을 선택하십시오.\n\n§T현재 조준된 행성:§! §Y[root.giga_qso_targeted_planets]/10§!" # 5859921823247316666
+  giga_qso_targeted_system_1: "[giga_qso_targeted_system_1.GetName]" # 4596470785185379128
+  giga_qso_targeted_system_2: "[giga_qso_targeted_system_2.GetName]" # 5199070744306797416
+  giga_qso_targeted_system_3: "[giga_qso_targeted_system_3.GetName]" # 14987030199250770884
+  giga_qso_targeted_system_4: "[giga_qso_targeted_system_4.GetName]" # 17233073045078697895
+  giga_qso_targeted_planet_1: "[giga_qso_targeted_planet_1.GetName]" # 5943556908669114798
+  giga_qso_targeted_planet_2: "[giga_qso_targeted_planet_2.GetName]" # 6335311618598957509
+  giga_qso_targeted_planet_3: "[giga_qso_targeted_planet_3.GetName]" # 15521168890717518167
+  giga_qso_targeted_planet_4: "[giga_qso_targeted_planet_4.GetName]" # 8722223302160968175
+  giga_qso_targeted_planet_5: "[giga_qso_targeted_planet_5.GetName]" # 5489444699571157755
+  giga_qso_targeted_planet_6: "[giga_qso_targeted_planet_6.GetName]" # 12610872727912732785
+  giga_qso_targeted_planet_7: "[giga_qso_targeted_planet_7.GetName]" # 6786297336035975175
+  giga_qso_targeted_planet_8: "[giga_qso_targeted_planet_8.GetName]" # 13667278986197354989
+  giga_qso_targeted_planet_9: "[giga_qso_targeted_planet_9.GetName]" # 5918802075074549844
+  giga_qso_targeted_planet_10: "[giga_qso_targeted_planet_10.GetName]" # 4458746616975718568
+  giga_qso.008.name: "$name_quasistellar$: 매개변수" # 9163117663241832459
+  giga_qso.008.desc: "여기에서 준항성체(Q.S.O.) 자체의 에너지 출력/소비를 관리할 수 있습니다.\n\nQ.S.O.의 §Y충전율§!을 높이면 £energy£ §Y$energy$§! 유지비가 증가하는 대신 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! 출력이 증가합니다.\n\n충전율을 낮추면 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! 출력이 감소하지만, 그 대가로 Q.S.O.의 £energy£ §Y$energy$§! 유지비가 감소하거나, 아예 없어지거나, 심지어 £energy£ §Y$energy$§! 생산으로 전환될 수도 있습니다.\n\n또한 아래의 블랙홀에 £minerals£§Y$minerals$§!, £food£§Y$food$§!, £consumer_goods£ §Y$consumer_goods$§!, £alloys£ §Y$alloys$§!, £giga_sr_bulk_matter£ §Y$giga_sr_bulk_matter$§! 및 §R기타...§!와 같은 다양한 자원을 투입하여 소량의 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 즉시 획득할 수 있습니다." # 2970057395400279144
+  giga_qso.009.name: "$name_quasistellar$: 자원 투입" # 9023221167383889673
+  giga_qso.009.desc: "여기에서 £minerals£§Y$minerals$§!, £food£§Y$food$§!, £consumer_goods£ §Y$consumer_goods$§!, £alloys£ §Y$alloys$§!, £giga_sr_bulk_matter£ §Y$giga_sr_bulk_matter$§! 및 §R기타...§!와 같은 다양한 자원을 아래의 블랙홀에 투입하여 소량의 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 즉시 획득할 수 있습니다. 부디 " # 17238608122282463145
+  giga_qso.008.dump: "자원 투입..." # 16399291311687766444
+  giga_qso.008.minerals: "100k £minerals£§Y$minerals$§! 투입" # 2040169040628978752
+  giga_qso.008.alloys: "50k £alloys£ §Y$alloys$§! 투입" # 2667738683602046832
+  giga_qso.008.bulkmatter: "15 £giga_sr_bulk_matter£ §Y$giga_sr_quasaric_energy$§! 투입" # 12093358735944132561
+  giga_qso.008.food: "50k £food£§Y$food$§! 투입" # 7411061605836718276
+  giga_qso.008.goods: "75k £consumer_goods£ §Y$consumer_goods$§! 투입" # 8604228423286925848
+  giga_qso.008.undesirable: "2500 £pops£ §Y부적격자§! 투입" # 16145859132240772580
+  giga_qso.008.undesirable.tooltip: "§L부적격자 시민권을 가진 2500명의 팝을 퀘이사로 투입합니다. 그들의 구성 에너지는 마침내 유용한 곳에 쓰이게 될 것입니다.§!" # 1795246594295098964
+  giga_qso.008.increase: "§H충전율 증가§!" # 12019298318630894453
+  giga_qso.008.decrease: "§E충전율 감소§!" # 2838782076264846825
+  giga_qso.008.intensitymaximum: "§Y현재 비율:§! §L최대§!" # 4025844932404697539
+  giga_qso.008.intensitymaximum.tooltip: "$name_quasistellar$은(는) 25 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산하며 5000 £energy£§Y$energy$§!의 추가 유지비를 소비합니다." # 15237173769184791777
+  giga_qso.008.intensityhigh: "§Y현재 속도:§! §H높음§!" # 12524686976419744782
+  giga_qso.008.intensityhigh.tooltip: "$name_quasistellar$은(는) 20 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산하며 2500 £energy£§Y$energy$§!의 추가 유지비를 소비합니다." # 7113093328668813942
+  giga_qso.008.intensitymed: "§Y현재 속도:§! §Y보통§!" # 4553813749299124002
+  giga_qso.008.intensitymed.tooltip: "$name_quasistellar$은(는) 15 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산하며 추가 £energy£§Y$energy$§! 유지비가 없습니다." # 10772644305204819330
+  giga_qso.008.intensitylow: "§Y현재 속도:§! §G낮음§!" # 284604399595335229
+  giga_qso.008.intensitylow.tooltip: "$name_quasistellar$은(는) 2500 £energy£§Y$energy$§!와 10 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산합니다." # 8498864136974968311
+  giga_qso.008.intensityminimal: "§Y현재 속도:§! §B최소§!" # 7315678440870660779
+  giga_qso.008.intensityminimal.tooltip: "$name_quasistellar$은(는) 5000 £energy£§Y$energy$§!와 5 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산합니다." # 17876967983418859551
+  giga_qso.008.intensitynone: "§Y현재 속도:§! 존재하지 않음" # 10739574687213467172
+  giga_qso.008.intensitynone.tooltip: "$name_quasistellar$은(는) 7500 £energy£§Y$energy$§!를 생산하며 0 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 생산합니다." # 8639540172385395047
+  qso_intensity_none: "Q.S.O: 충전 안 됨" # 11356909376950026204
+  qso_intensity_none_desc: "Q.S.O.가 충전되지 않고 있습니다. 모든 출력이 에너지로 변환되고 있습니다." # 6668117623563319920
+  qso_intensity_minimal: "Q.S.O: 최소 충전" # 935699675805144283
+  qso_intensity_minimal_desc: "Q.S.O.가 매우 느리게 충전되고 있으며, 출력의 상당 부분이 에너지로 변환되고 있습니다." # 15140244959589849421
+  qso_intensity_low: "Q.S.O: 낮은 충전" # 13204046800113972625
+  qso_intensity_low_desc: "Q.S.O.가 느리게 충전되고 있으며, 출력의 일부가 에너지로 변환되고 있습니다." # 13022173057981040762
+  qso_intensity_med: "Q.S.O: 일반 충전" # 18247932281377689423
+  qso_intensity_med_desc: "Q.S.O.가 정상 속도로 충전되고 있으며, 출력의 일부가 에너지로 변환되고 있습니다." # 4446276973115968353
+  qso_intensity_high: "Q.S.O: 높은 충전" # 9909175128496469753
+  qso_intensity_high_desc: "Q.S.O.가 약간 과충전되고 있으며, 일부 에너지가 출력 증폭을 위해 소모되고 있습니다." # 8563124927753586905
+  qso_intensity_maximum: "Q.S.O: 최대 충전" # 4570755250272218368
+  qso_intensity_maximum_desc: "Q.S.O.가 더 이상 과충전할 수 없는 상태입니다." # 8120185434346169234
+  giga_qso.100.yes: "진행하도록 하죠." # 10508287875752728947
+  giga_qso.100.no: "다시 생각해보니..." # 800586801252134794
+  giga_birch.300.name: "하이퍼퀘이사" # 10981417733557943253
+  giga_birch.300.desc: "고된 여정 끝에, 우리 과학선이 마침내 은하 중심부에 도달했습니다.\n성계에 진입하자마자, 승무원들은 거대한 §Y활동성 초대질량 퀘이사§!, 즉 하이퍼퀘이사의 광경에 경악을 금치 못했습니다.\n\n이 거대한 천체는 수억 개의 항성 질량을 지니고 있으며, 지름은 수백 천문단위에 달합니다. 현재로서는 추측에 불과하지만, 과학계의 일부 급진적인 인물들은 이 퀘이사 주위에 거대한 하이퍼웨폰을 건설하여 그 파멸적인 에너지를 이용해 상상할 수 없는 파괴력을 지닌 광선을 발사할 수 있을 것이라는 이론을 제기하고 있습니다." # 8017460021263681983
+  giga_birch.300.a: "믿을 수 없군!" # 11826258457890550173
+  giga_qso.110.name: "기계 행성 소멸" # 7664338443016884309
+  giga_qso.110.desc: "웜홀이 상공에 나타난 순간, $name_quasistellar$의 기계 행성은 이미 끝장난 것이나 다름없었습니다. 잠시 후, 은하 전체의 에너지 출력과 맞먹는 거대한 에너지 흐름이 웜홀에서 뿜어져 나왔습니다. 광선이 행성을 완전히 소멸시키는 데는 단 몇 초밖에 걸리지 않았습니다.\n\n이전의 로봇 행성은 흔적도 없이 사라졌으며, 그 결과 고스트 신호도 심각하게 약화되었습니다." # 9062670973478491109
+  giga_qso.110.a: "본때를 보여줬군." # 15434868374470104590
+  giga_qso.112.name: "컨틴전시의 종말" # 15506281177460152470
+  giga_qso.112.desc: "컨틴전시는 실패했습니다. 마지막 기계 행성이 파괴됨으로써, 적어도 컨틴전시로부터의 조직적인 대량 멸종 위협은 은하계에서 사라졌습니다. 살아남은 모든 컨틴전시 전투 형태는 전원이 꺼지거나 자폭했으며, 고스트 신호도 더 이상 송출되지 않습니다.\n\n주 넥서스는 $name_quasistellar$의 강력한 레이저에 의해 단 몇 초 만에 완전히 소멸되어 아무것도 남지 않았습니다.\n\n컨틴전시는 더 이상 존재하지 않지만, [quasistellar_owner.GetName]가 이 하이퍼웨폰을 다른 목표를 향해 겨눌지 여부는 지켜봐야 할 것입니다..." # 4614566760760267071
+  giga_qso.112.a: "조 단위 태양의 위력 앞에서 그들이 무엇을 할 수 있겠는가?" # 13530594081540161860

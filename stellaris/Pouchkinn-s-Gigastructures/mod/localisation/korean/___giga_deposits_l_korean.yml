@@ -131,8 +131,6 @@
   d_decrepit_tunnels_squareworld_desc: "$d_decrepit_tunnels_1_desc$" # 10324853476423657564
   d_predictable_solar_flares: "예측 가능한 태양 플레어" # 4450577996528740520
   d_predictable_solar_flares_desc: "우리 모행성이 공전하는 항성은 태양 플레어 발생에 앞서 특정한 징후를 보이며, 이로 인해 에너지 추출이 훨씬 용이해집니다." # 4342443984953979789
-  d_everfree_forest: "에버프리 숲" # 12544394739022361355
-  d_everfree_forest_desc: "겉보기에 마법적인 에너지로 가득 찬, 기이하고 거의 뚫을 수 없는 숲입니다. 이 숲을 개간하는 것은 막대한 규모의 작업이 될 것이나, 그 비의적인 생태계를 연구하면 분명 흥미로운 데이터를 얻을 수 있을 것입니다." # 14927779597338581086
   d_giga_decrepit_tunnels_1: "$d_decrepit_tunnels_1$" # 12877338230707769144
   d_giga_decrepit_tunnels_1_desc: "$d_decrepit_tunnels_1_desc$" # 10324853476423657564
   d_giga_decrepit_tunnels_2: "$d_decrepit_tunnels_1$" # 12877338230707769144
@@ -165,3 +163,18 @@
   d_exp_civ_fe_preserve_desc: "온전한 고대 선구 문명이 자작나무 세계의 일부에 거주합니다. 그들을 연구하는 것은 엄청난 과학적 잠재력을 지닙니다." # 2183043218304498346
   d_aeternum_decaying_hyperstructure: "붕괴하는 초구조물" # 842122835258246876
   d_aeternum_decaying_hyperstructure_desc: "이 버치 행성의 광대한 지역이 수천 년간의 방치 끝에 황폐해졌습니다. 그것들을 수리하는 것은 의심할 여지 없이 엄청난 사업이 되겠지만, 이는 우리가 이 버치 행성의 거주 가능 구역을 다시 확장할 수 있게 해줄 것입니다.\n\n이를 복구하면 §G3§! $aeternum_tech_intel$을 얻게 될 것입니다." # 12035577896565250418
+  d_giga_supertensiles_1_desc: "" # 17241709254077376921
+  d_giga_supertensiles_2_desc: "" # 17241709254077376921
+  d_iodizium_deposit_desc: "" # 17241709254077376921
+  d_iodizium_deposit_1_desc: "" # 17241709254077376921
+  d_nicoll_deposit_desc: "" # 17241709254077376921
+  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
+  d_nicollboom_deposit_desc: "" # 17241709254077376921
+  d_pouchkinn_deposit_desc: "" # 17241709254077376921
+  d_ringworld_deposit_desc: "" # 17241709254077376921
+  d_succ_deposit_desc: "" # 17241709254077376921
+  d_giga_hab_nanites_1_desc: "" # 17241709254077376921
+  d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
+  d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
+  d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
+  d_ehof_solar_array_desc: "" # 17241709254077376921

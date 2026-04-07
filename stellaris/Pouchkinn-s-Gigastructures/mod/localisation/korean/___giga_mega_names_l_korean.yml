@@ -265,3 +265,5 @@
   dyson_swarm_3_k_star_DESC: "$dyson_swarm_3_DESC$" # 9552567386472562922
   dyson_swarm_3_m_star: "$dyson_swarm_3$" # 17155872793951982839
   dyson_swarm_3_m_star_DESC: "$dyson_swarm_3_DESC$" # 9552567386472562922
+  dyson_swarm_3_basic: "$dyson_swarm_3$" # 17155872793951982839
+  dyson_swarm_3_basic_DESC: "$dyson_swarm_3_DESC$" # 9552567386472562922

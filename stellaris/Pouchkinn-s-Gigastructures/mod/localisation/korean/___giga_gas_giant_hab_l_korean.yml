@@ -15,7 +15,6 @@
   building_giga_gas_giant_habitation_module_desc: "이 행성의 원주민들이 가스 행성에서 식민지를 유지하기 위해 건설한 시설들의 집합체입니다. 이 시설들에는 식민지에 동력을 공급하는 반응로, 현지 위성에서 채굴한 광물을 하역하기 위한 도킹 베이, 그리고 수경재배 농장으로 사용될 수 있는 대형 기후 제어 격납고가 포함됩니다. 이 외에도 이 시설들은 자원 분배 네트워크의 본부 역할을 수행하며 현지 주민들에게 다양한 서비스를 제공합니다." # 9336555527408434494
   trait_giga_gas_giant_hab: "이산화 가스 의존" # 14881011788112474040
   trait_giga_gas_giant_hab_desc: "§L수 세기 동안 가스 행성에 살면서 이국적인 기체에 노출된 이 종족은 일상 기능에 있어서 어느 정도 그것들에 의존하게 되었습니다.§!" # 16542081065804731636
-  trait_giga_gas_giant_hab_tooltip: "§Y과학§! 및 §Y산업§! 직업 이국적 기체 유지비: §R+0.03§!\n['concept_giga_gas_worlds', §Y가스§!] 행성에서의 주거지 사용량: §G-10%§!\n['concept_giga_gas_worlds', §Y가스§!] 행성에서의 £job_researcher£ $job_researcher$ 유지비: §G-10%§!\n['concept_giga_gas_worlds', §Y가스§!] 행성에서의 직업 이국적 기체 유지비: §G-33%§!\n['concept_giga_gas_worlds', §Y가스§!] 행성이 아닌 행성에서의 주거지 사용량: §R+30%§!\n['concept_giga_gas_worlds', §Y가스§!] 행성이 아닌 행성에서의 거주 적합도: §R-20%§!\n['concept_giga_gas_worlds', §Y가스§!] 행성이 아닌 행성에서의 직업 이국적 기체 유지비: §R+50%§!" # 17873802453328592834
   trait_giga_gas_giant_hab_robot: "이종 기체 동력" # 7890469625389201178
   trait_giga_gas_giant_hab_robot_desc: "§L시간이 지남에 따라 작은 자가 개조가 누적되어 이 기계들을 가동하기 위해 희귀 가스에 대한 거의 전적인 의존으로 이어졌습니다." # 9441824265408933008
   trait_giga_gas_giant_hab_robot_tooltip: "$trait_giga_gas_giant_hab_tooltip$" # 4357530591498526918
@@ -31,14 +30,21 @@
   job_giga_gas_extraction_manager: "이종 가스 추출 관리자" # 18421802343130042526
   job_giga_gas_extraction_manager_plural: "특수 가스 추출 관리자들" # 11462241424064749460
   job_giga_gas_extraction_manager_desc: "풍부한 대기 또는 다른 이국적인 환경 특성으로 인해 이 행정관들은 우리의 $job_technician_plural$가 이 자원들을 최대로 개발하도록 보장합니다." # 13709432611723388156
-  job_giga_gas_extraction_manager_effect_desc: "£job_giga_gas_extraction_manager£ $job_giga_gas_extraction_manager_plural$는 £exotic_gases£ §Y$exotic_gases$§!를 채취하고 £job_technician£ §Y$job_technician_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산을 제공합니다." # 7800938091760667624
-  mod_job_giga_gas_extraction_manager_add: "$job_giga_gas_extraction_manager$ 일자리"
-  mod_job_giga_gas_extraction_manager_per_pop: "§G+1§! 팝당 §Y$VALUE$§! $job_giga_gas_extraction_manager$ 직책"
-  mod_job_giga_gas_extraction_manager_per_pop_short: "§G+1§! £mod_job_giga_gas_extraction_manager_add£당 §Y$VALUE$§! £pop£" # 14751402272505335152
   job_giga_gas_extraction_manager_drone: "이색 가스 추출 관리 클러스터" # 3867218797353502284
   job_giga_gas_extraction_manager_drone_plural: "이국적 가스 추출 관리 클러스터" # 12659113990457149922
   job_giga_gas_extraction_manager_drone_desc: "풍부한 대기 또는 다른 이색적인 환경 특성으로 인해 이 관리자들은 우리의 $job_technician_drone_plural$이 이 자원들을 최대한 활용하도록 보장합니다." # 3174156755281679982
-  job_giga_gas_extraction_manager_drone_effect_desc: "£job_giga_gas_extraction_manager£ $job_giga_gas_extraction_manager_drone_plural$는 £exotic_gases£ §Y$exotic_gases$§!를 수집하고 £job_technician£ §Y$job_technician_drone_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산을 제공합니다." # 12144644546016258943
-  mod_job_giga_gas_extraction_manager_drone_add: "$job_giga_gas_extraction_manager_drone$ 직업"
-  mod_job_giga_gas_extraction_manager_drone_per_pop: "§G+1§! $job_giga_gas_extraction_manager_drone$ 직업당 §Y$VALUE$§! 팝"
-  mod_job_giga_gas_extraction_manager_drone_per_pop_short: "§G+1§! £mod_job_giga_gas_extraction_manager_add£당 §Y$VALUE$§! £pop£" # 14751402272505335152
+  trait_giga_gas_giant_hab_tooltip: "§Y과학§! 및 §Y산업§! 직업의 외계 가스 유지비: §R+0.03§!\n    - ['concept_giga_gas_worlds', §Y가스§!] 행성의 주거지 사용량: §G-10%§!\n    - ['concept_giga_gas_worlds', §Y가스§!] 행성의 £job_researcher£ $job_researcher$ 유지비: §G-10%§!\n    - ['concept_giga_gas_worlds', §Y가스§!] 행성의 직업 외계 가스 유지비: §G-33%§!\n    - ['concept_giga_gas_worlds', §Y가스§!]가 아닌 행성의 주거지 사용량: §R+30%§!\n    - ['concept_giga_gas_worlds', §Y가스§!]가 아닌 행성의 거주 적합도: §R-20%§!\n    - ['concept_giga_gas_worlds', §Y가스§!]가 아닌 행성의 직업 외계 가스 유지비: §R+50%§!" # 3031111331647139873
+  giga_gas_giant_hab_colony_desc: "" # 17241709254077376921
+  decision_giga_flood_atmosphere_desc: "" # 17241709254077376921
+  d_giga_gas_giant_hab_core_desc: "" # 17241709254077376921
+  district_giga_gas_giant_habitat_mining_desc: "" # 17241709254077376921
+  job_giga_gas_extraction_manager_effect_desc: "$job_giga_gas_extraction_manager_swap_plural_with_icon$은(는) £exotic_gases£ §Y$exotic_gases$§!을(를) 수집하고 £job_technician£ §Y$job_technician_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산량을 제공합니다" # 11021995343797068162
+  job_giga_gas_extraction_manager_swap_plural_with_icon: "[giga_gas_extraction_manager.GetIcon] [giga_gas_extraction_manager.GetNamePlural]" # 15037956492407526890
+  mod_job_giga_gas_extraction_manager_add: "[giga_gas_extraction_manager.GetName] 직업" # 659727165302303345
+  mod_job_giga_gas_extraction_manager_per_pop: "팝 $VALUE$당 [giga_gas_extraction_manager.GetName] 직업 §G+1§!개" # 8594791534590909277
+  mod_job_giga_gas_extraction_manager_per_pop_short: "\n£pop£ $VALUE$당 £mod_job_giga_gas_extraction_manager_add£ §G+1§!개" # 6931285889712660333
+  job_giga_gas_extraction_manager_drone_effect_desc: "$job_giga_gas_extraction_manager_drone_swap_plural_with_icon$은(는) £exotic_gases£ §Y$exotic_gases$§!을(를) 수집하고 £job_technician£ §Y$job_technician_drone_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산량을 제공합니다" # 17789442599860099032
+  job_giga_gas_extraction_manager_drone_swap_plural_with_icon: "[giga_gas_extraction_manager_drone.GetIcon] [giga_gas_extraction_manager_drone.GetNamePlural]" # 10638014131297178785
+  mod_job_giga_gas_extraction_manager_drone_add: "[giga_gas_extraction_manager_drone.GetName] 직업" # 17373353007344086774
+  mod_job_giga_gas_extraction_manager_drone_per_pop: "팝 $VALUE$당 [giga_gas_extraction_manager_drone.GetName] 직업 §G+1§!개" # 5424995262796628948
+  mod_job_giga_gas_extraction_manager_drone_per_pop_short: "\n£pop£ $VALUE$당 £mod_job_giga_gas_extraction_manager_add£ §G+1§!개" # 6931285889712660333
