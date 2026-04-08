@@ -397,6 +397,10 @@ async function fetchGitHubReleases(owner: string, repo: string, token?: string):
 }
 
 function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagInfo[] {
+  if (strategy === 'github') {
+    return tags
+  }
+
   if (strategy === 'natural') {
     const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
     return tags.filter(tag => {
@@ -419,6 +423,10 @@ function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagIn
 
 function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | null {
   if (!tags.length) return null
+
+  if (strategy === 'github') {
+    return tags[0]
+  }
 
   if (strategy === 'natural') {
     const naturalSorter = natsort({ desc: true })
