@@ -10,7 +10,7 @@ import semver from 'semver'
 
 const execFileAsync = promisify(execFile)
 
-type VersionStrategy = 'semantic' | 'natural' | 'default'
+type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
 interface MetaTomlConfig {
   upstream?: {
@@ -375,6 +375,27 @@ async function fetchRepositoryTags(owner: string, repo: string, token?: string):
   return tags
 }
 
+interface GitHubReleaseResponse {
+  tag_name: string
+  published_at: string | null
+  prerelease: boolean
+  draft: boolean
+}
+
+async function fetchGitHubReleases(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
+  const releases = await githubApi<GitHubReleaseResponse[]>(
+    `/repos/${owner}/${repo}/releases?per_page=100`,
+    token
+  )
+
+  return releases
+    .filter(release => !release.prerelease && !release.draft && release.published_at)
+    .map(release => ({
+      name: release.tag_name,
+      committedAt: release.published_at!
+    }))
+}
+
 function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagInfo[] {
   if (strategy === 'natural') {
     const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
@@ -496,7 +517,11 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const lastTranslation = await getLastTranslationCommit(rootDir, meta.translationPath)
   const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
   const preferTagTracking = meta.strategy !== 'default'
-  const tags = preferTagTracking ? await fetchRepositoryTags(meta.owner, meta.repo, token) : []
+  const tags = preferTagTracking
+    ? (meta.strategy === 'github'
+      ? await fetchGitHubReleases(meta.owner, meta.repo, token)
+      : await fetchRepositoryTags(meta.owner, meta.repo, token))
+    : []
   const filteredTags = preferTagTracking ? filterTagsByStrategy(tags, meta.strategy) : []
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
@@ -676,6 +701,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 }
 
 export {
+  fetchGitHubReleases,
   fetchLatestCommitForPaths,
   findBaselineTag,
   filterTagsByStrategy,

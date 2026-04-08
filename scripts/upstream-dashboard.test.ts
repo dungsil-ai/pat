@@ -32,6 +32,15 @@ describe('filterTagsByStrategy', () => {
     const filtered = filterTagsByStrategy(tags, 'semantic')
     expect(filtered.map(tag => tag.name)).toEqual(['v1.0.0'])
   })
+  it('github 전략은 이미 필터링된 릴리즈를 그대로 통과시켜야 한다', () => {
+    const tags: TagInfo[] = [
+      { name: 'v2.0.0', committedAt: '2024-01-03T00:00:00Z' },
+      { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' }
+    ]
+
+    const filtered = filterTagsByStrategy(tags, 'github')
+    expect(filtered.map(tag => tag.name)).toEqual(['v2.0.0', 'v1.0.0'])
+  })
 })
 
 describe('pickLatestTag', () => {
@@ -53,6 +62,16 @@ describe('pickLatestTag', () => {
     ]
 
     expect(pickLatestTag(tags, 'semantic')?.name).toBe('1.1.0')
+  })
+
+  it('github 전략은 첫 번째 태그를 선택해야 한다', () => {
+    const tags: TagInfo[] = [
+      { name: 'v2.0.0', committedAt: '2024-01-04T00:00:00Z' },
+      { name: 'v1.1.0', committedAt: '2024-01-02T00:00:00Z' },
+      { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' }
+    ]
+
+    expect(pickLatestTag(tags, 'github')?.name).toBe('v2.0.0')
   })
 })
 
