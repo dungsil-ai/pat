@@ -38,49 +38,30 @@
   rare_earths: "희토류" # 9041622213556414193
   cosmetics: "화장품" # 17477334926629178903
   luxury_automobiles: "고급 차량" # 7852460707765098342
-  goods_output_elgar_instruments_mult: "건설 중 @elgar_instruments! 악기 생산량" # 2387397222476089103
   goods_output_elgar_instruments_mult_desc: "건물에서 생산되는 @elgar_instruments! 생산량에 대한 보너스 또는 페널티" # 10185979125648967702
-  goods_output_furniture_mult: "건설 중 @furniture! 가구 생산량" # 17623182749314312669
   goods_output_furniture_mult_desc: "건물에서 생산되는 @furniture! 생산량에 대한 보너스 또는 패널티" # 9719797605374052431
-  goods_output_elgar_music_mult: "건설! @elgar_music! 오락 생산량" # 16567087108097659555
   goods_output_elgar_music_mult_desc: "건물에서 생산되는 @elgar_music! 산출량에 대한 보너스 또는 페널티" # 7816998089025587642
-  goods_output_computer_mult: "건물 @computer!\n컴퓨터 출력" # 12517862758508035323
   popneed_entertainment: "오락" # 15380445498511213679
   popneed_televisions: "텔레비전 오락" # 13541826400317248984
-  goods_output_raw_data_mult: "생성 중 @raw_data! 원시 데이터 출력" # 2387431063533229147
   goods_output_raw_data_mult_desc: "건물이 생산하는 @raw_data! 생산량에 대한 보너스 또는 페널티" # 6079442886397003158
-  goods_output_organized_data_mult: "@organized_data! 구축 중! 조직화된 데이터 출력" # 8259932531425059146
   goods_output_organized_data_mult_desc: "건물에서 생산되는 @organized_data! 산출량에 대한 보너스 또는 페널티" # 10843560615717801169
-  goods_output_homeappliances_mult: "가전제품 공장 @homeappliances! 가전제품 생산량" # 7527116172862329930
   goods_output_homeappliances_mult_desc: "건물이 생산하는 @homeappliances! 생산량에 대한 보너스 또는 페널티" # 3210511921451409029
-  goods_input_good_uranium_mult: "건설 중 @good_uranium! 우라늄 투입" # 15751391673377277923
   goods_input_good_uranium_mult_desc: "건물에서 소비되는 @good_uranium! 투입량에 대한 보너스 또는 페널티" # 889778810238392932
-  goods_output_good_uranium_mult: "건설 중 @good_uranium! 우라늄 생산량" # 8227285068018504232
   goods_output_good_uranium_mult_desc: "건물에서 생산되는 @good_uranium! 산출량에 대한 보너스 또는 페널티" # 10840780193624240081
-  goods_output_televisions_mult: "텔레비전 건설 중! 텔레비전 생산" # 11705114712110468974
   goods_output_televisions_mult_desc: "건물에서 생산되는 @televisions! 생산량에 대한 보너스 또는 페널티" # 5382062351286987605
   manzoni_prints: "미디어 콘텐츠" # 4374213839049421476
   trade_route_export_lens_option_manzoni_prints_tooltip: "미디어 수출 무역로 개설" # 10008306848950168901
   trade_route_import_lens_option_manzoni_prints_tooltip: "미디어 수입 무역로 개설" # 14745907904605526809
   interactive_entertainment: "상호작용 오락" # 14897209578655825623
-  goods_output_grain_mult: "건설 @grain! 곡물 생산량" # 11503330246830767346
   goods_output_grain_mult_desc: "건물에서 생산되는 @grain! 생산량에 대한 보너스 또는 페널티" # 15915040625813474295
   on_demand_goods: "주문형 상품" # 16402264812534574721
-  goods_output_on_demand_goods_mult: "@on_demand_goods! 건물! 주문형 재화 생산량" # 1573304203499613895
   goods_output_on_demand_goods_mult_desc: "건물에서 생산되는 @on_demand_goods! 생산량에 대한 보너스 또는 페널티" # 1822194005820379570
-  goods_input_advancedores_mult: "@advancedores! 고급 광물 투입" # 7509864611754336960
   goods_input_advancedores_mult_desc: "건물에서 소비하는 @advancedores! 투입량에 대한 보너스 또는 페널티" # 1315080574218899049
-  goods_input_rubber_mult: "@rubber! 고무 투입량" # 9321889341881819045
   goods_input_rubber_mult_desc: "건물이 소비하는 @rubber! 투입량에 대한 보너스 또는 페널티" # 89253377975493852
-  goods_input_iron_mult: "@iron! 철광석 투입" # 6477214374399902621
   goods_input_iron_mult_desc: "건물이 소비하는 @iron! 투입량에 대한 보너스 또는 페널티" # 11174122354569561164
-  goods_input_copper_mult: "@copper! 구리 투입량" # 11924068606771489330
   goods_input_copper_mult_desc: "건물에서 소비하는 @copper! 투입량에 대한 보너스 또는 페널티" # 4959865171153225341
-  goods_input_commonores_mult: "@commonores! 공통 광물 투입" # 4960055586229710428
   goods_input_commonores_mult_desc: "건물에서 소비하는 @commonores! 투입량에 대한 보너스 또는 페널티" # 6510075683884783063
-  goods_input_plastics_mult: "@plastics! 플라스틱 투입" # 14770896035523317680
   goods_input_plastics_mult_desc: "건물이 소비하는 @plastics! 투입량에 대한 보너스 또는 페널티" # 14903429565473495695
-  goods_input_gas_mult: "@gas! 천연가스 투입" # 7185706074379701367
   goods_input_gas_mult_desc: "건물에서 소비하는 @gas! 투입량에 대한 보너스 또는 페널티" # 12825887448312486143
   goods_input_aeroplanes_add: "@aeroplanes! 군용기 투입량" # 17746252663676698428
   goods_input_aeroplanes_add_desc: "건물에서 소비하는 @aeroplanes! 군용기 양" # 7461393262412928294
@@ -222,25 +203,44 @@
   goods_output_organized_data_add_desc: "건물에서 생산되는 @organized_data! 정리된 데이터의 양" # 7221469881049912238
   goods_output_business_data_add: "@business_data! 비즈니스 데이터 생산량" # 14446561621041595719
   goods_output_business_data_add_desc: "건물에서 생산되는 @business_data! 비즈니스 데이터의 양" # 3657020455875445519
-  goods_output_steel_mult: "@steel! 강철 생산" # 10738926290398644906
+  goods_output_elgar_instruments_mult: "@elgar_instruments! 악기 생산량" # 17602860159555832105
+  goods_output_furniture_mult: "@furniture! 가구 생산량" # 2523472970575345021
+  goods_output_elgar_music_mult: "@elgar_music! 오락 생산량" # 8295683952619230521
+  goods_output_computer_mult: "@computer! 컴퓨터 생산량" # 2523910114611102685
+  goods_output_raw_data_mult: "@raw_data! 원시 데이터 생산량" # 9496046977102635113
+  goods_output_organized_data_mult: "@organized_data! 정리된 데이터 생산량" # 14586507317653852089
+  goods_output_homeappliances_mult: "@homeappliances! 가전제품 생산량" # 6031162264111814890
+  goods_input_good_uranium_mult: "@good_uranium! 우라늄 투입량" # 3694036268368242828
+  goods_output_good_uranium_mult: "@good_uranium! 우라늄 생산량" # 4817575742683033733
+  goods_output_televisions_mult: "@televisions! 텔레비전 생산량" # 1586956928318209497
+  goods_output_grain_mult: "@grain! 곡물 생산량" # 475369966446167911
+  goods_output_on_demand_goods_mult: "@on_demand_goods! 주문형 상품 생산량" # 16781717886829483672
+  goods_input_advancedores_mult: "@advancedores! 고급 광석 투입량" # 13693251488290988086
+  goods_input_rubber_mult: "@rubber! 고무 투입량" # 2409902230240362096
+  goods_input_iron_mult: "@iron! 철 투입량" # 2245439420001020743
+  goods_input_copper_mult: "@copper! 구리 투입량" # 14904760634630751258
+  goods_input_commonores_mult: "@commonores! 일반 광석 투입량" # 6136431850721884127
+  goods_input_plastics_mult: "@plastics! 플라스틱 투입량" # 17303661705967061254
+  goods_input_gas_mult: "@gas! 천연가스 투입량" # 6365569117360494856
+  goods_output_steel_mult: "@steel! 강철 생산량" # 176002469431873736
   goods_output_steel_mult_desc: "건물에서 생산되는 @steel! 산출량에 대한 보너스 또는 페널티" # 1273209077440460276
   ai_systems: "인공지능 시스템" # 16042142401714968833
-  goods_output_ai_systems_mult: "@ai_systems! 인공지능 시스템 생산" # 15971181787814561988
   goods_output_ai_systems_mult_desc: "건물에서 생산되는 @ai_systems! 산출량에 대한 보너스 또는 페널티" # 9061417123878665709
-  goods_input_ai_systems_mult: "@ai_systems! 인공지능 시스템 투입" # 13498318210489616177
   goods_input_ai_systems_mult_desc: "건물에서 소비되는 @ai_systems! 투입량에 대한 보너스 또는 페널티" # 13518851090246097929
   goods_input_ai_systems_add: "@ai_systems! 인공지능 시스템 투입" # 1624497318160246437
   goods_input_ai_systems_add_desc: "건물에서 소비되는 @ai_systems! 인공지능 시스템의 양" # 5888908541179465546
   goods_output_ai_systems_add: "@ai_systems! 인공지능 시스템 생산" # 3613765368760040554
   goods_output_ai_systems_add_desc: "건물에서 생산되는 @ai_systems! 인공지능 시스템의 양" # 15498817684165981266
   androids: "안드로이드" # 17551593034026343252
-  goods_output_androids_mult: "@androids! 안드로이드 생산" # 358338986093492376
   goods_output_androids_mult_desc: "건물에서 생산되는 @androids! 산출량에 대한 보너스 또는 페널티" # 6856438099384447403
-  goods_input_androids_mult: "@androids! 안드로이드 투입" # 3123524066065377199
   goods_input_androids_mult_desc: "건물에서 소비되는 @androids! 투입량에 대한 보너스 또는 페널티" # 13901973518973831088
   goods_input_androids_add: "@androids! 안드로이드 투입" # 16773278876249359426
   goods_input_androids_add_desc: "건물에서 소비되는 @androids! 안드로이드의 양" # 16570656029436528224
   goods_output_androids_add: "@androids! 안드로이드 생산" # 2787103560855959202
   goods_output_androids_add_desc: "건물에서 생산되는 @androids! 안드로이드의 양" # 4708028732682154230
-  goods_input_electricity_mult: "건물 @electricity! 전기 투입량" # 2026858018315618636
   goods_input_electricity_mult_desc: "건물에서 소비되는 @electricity! 투입량에 대한 보너스 또는 페널티" # 9434040563277309561
+  goods_output_ai_systems_mult: "@ai_systems! AI 시스템 산출량" # 3613765368760040554
+  goods_input_ai_systems_mult: "@ai_systems! AI 시스템 투입량" # 1624497318160246437
+  goods_output_androids_mult: "@androids! 안드로이드 산출량" # 2787103560855959202
+  goods_input_androids_mult: "@androids! 안드로이드 투입량" # 16773278876249359426
+  goods_input_electricity_mult: "@electricity! 전기 투입량" # 8983256812608487870
