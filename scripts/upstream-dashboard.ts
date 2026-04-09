@@ -10,7 +10,7 @@ import semver from 'semver'
 
 const execFileAsync = promisify(execFile)
 
-type VersionStrategy = 'semantic' | 'natural' | 'default'
+type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
 interface MetaTomlConfig {
   upstream?: {
@@ -375,7 +375,45 @@ async function fetchRepositoryTags(owner: string, repo: string, token?: string):
   return tags
 }
 
+interface GitHubReleaseResponse {
+  tag_name: string
+  published_at: string | null
+  prerelease: boolean
+  draft: boolean
+}
+
+async function fetchGitHubReleases(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
+  const releases: GitHubReleaseResponse[] = []
+  let page = 1
+  const perPage = 100
+
+  while (true) {
+    const pageReleases = await githubApi<GitHubReleaseResponse[]>(
+      `/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`,
+      token
+    )
+
+    if (pageReleases.length === 0) break
+    releases.push(...pageReleases)
+
+    if (pageReleases.length < perPage) break
+    page += 1
+  }
+
+  return releases
+    .filter(release => !release.prerelease && !release.draft && release.published_at)
+    .sort((a, b) => new Date(b.published_at!).getTime() - new Date(a.published_at!).getTime())
+    .map(release => ({
+      name: release.tag_name,
+      committedAt: release.published_at!
+    }))
+}
+
 function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagInfo[] {
+  if (strategy === 'github') {
+    return tags
+  }
+
   if (strategy === 'natural') {
     const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
     return tags.filter(tag => {
@@ -398,6 +436,18 @@ function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagIn
 
 function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | null {
   if (!tags.length) return null
+
+  if (strategy === 'github') {
+    return tags.reduce((latest, tag) => {
+      const latestTime = Date.parse(latest.committedAt)
+      const tagTime = Date.parse(tag.committedAt)
+
+      if (Number.isNaN(latestTime)) return tag
+      if (Number.isNaN(tagTime)) return latest
+
+      return tagTime > latestTime ? tag : latest
+    })
+  }
 
   if (strategy === 'natural') {
     const naturalSorter = natsort({ desc: true })
@@ -496,7 +546,11 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const lastTranslation = await getLastTranslationCommit(rootDir, meta.translationPath)
   const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
   const preferTagTracking = meta.strategy !== 'default'
-  const tags = preferTagTracking ? await fetchRepositoryTags(meta.owner, meta.repo, token) : []
+  const tags = preferTagTracking
+    ? (meta.strategy === 'github'
+      ? await fetchGitHubReleases(meta.owner, meta.repo, token)
+      : await fetchRepositoryTags(meta.owner, meta.repo, token))
+    : []
   const filteredTags = preferTagTracking ? filterTagsByStrategy(tags, meta.strategy) : []
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
@@ -676,6 +730,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 }
 
 export {
+  fetchGitHubReleases,
   fetchLatestCommitForPaths,
   findBaselineTag,
   filterTagsByStrategy,
