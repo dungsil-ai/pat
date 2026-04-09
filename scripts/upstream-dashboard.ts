@@ -383,13 +383,26 @@ interface GitHubReleaseResponse {
 }
 
 async function fetchGitHubReleases(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
-  const releases = await githubApi<GitHubReleaseResponse[]>(
-    `/repos/${owner}/${repo}/releases?per_page=100`,
-    token
-  )
+  const releases: GitHubReleaseResponse[] = []
+  let page = 1
+  const perPage = 100
+
+  while (true) {
+    const pageReleases = await githubApi<GitHubReleaseResponse[]>(
+      `/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`,
+      token
+    )
+
+    if (pageReleases.length === 0) break
+    releases.push(...pageReleases)
+
+    if (pageReleases.length < perPage) break
+    page += 1
+  }
 
   return releases
     .filter(release => !release.prerelease && !release.draft && release.published_at)
+    .sort((a, b) => new Date(b.published_at!).getTime() - new Date(a.published_at!).getTime())
     .map(release => ({
       name: release.tag_name,
       committedAt: release.published_at!
@@ -425,7 +438,15 @@ function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | nu
   if (!tags.length) return null
 
   if (strategy === 'github') {
-    return tags[0]
+    return tags.reduce((latest, tag) => {
+      const latestTime = Date.parse(latest.committedAt)
+      const tagTime = Date.parse(tag.committedAt)
+
+      if (Number.isNaN(latestTime)) return tag
+      if (Number.isNaN(tagTime)) return latest
+
+      return tagTime > latestTime ? tag : latest
+    })
   }
 
   if (strategy === 'natural') {

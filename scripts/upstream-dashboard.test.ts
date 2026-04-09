@@ -1,5 +1,6 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest'
 import {
+  fetchGitHubReleases,
   filterTagsByStrategy,
   findBaselineTag,
   normalizeLocalizationPaths,
@@ -64,11 +65,11 @@ describe('pickLatestTag', () => {
     expect(pickLatestTag(tags, 'semantic')?.name).toBe('1.1.0')
   })
 
-  it('github 전략은 첫 번째 태그를 선택해야 한다', () => {
+  it('github 전략은 가장 최근 published_at 기준으로 태그를 선택해야 한다', () => {
     const tags: TagInfo[] = [
+      { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' },
       { name: 'v2.0.0', committedAt: '2024-01-04T00:00:00Z' },
-      { name: 'v1.1.0', committedAt: '2024-01-02T00:00:00Z' },
-      { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' }
+      { name: 'v1.1.0', committedAt: '2024-01-02T00:00:00Z' }
     ]
 
     expect(pickLatestTag(tags, 'github')?.name).toBe('v2.0.0')
@@ -153,5 +154,74 @@ describe('normalizeLocalizationPaths', () => {
   it('유효한 경로만 있으면 그대로 반환해야 한다', () => {
     expect(normalizeLocalizationPaths(['localization/english', 'localization/replace/english']))
       .toEqual(['localization/english', 'localization/replace/english'])
+  })
+})
+
+describe('fetchGitHubReleases', () => {
+  const originalFetch = globalThis.fetch
+
+  beforeEach(() => {
+    globalThis.fetch = vi.fn()
+  })
+
+  afterEach(() => {
+    globalThis.fetch = originalFetch
+    vi.restoreAllMocks()
+  })
+
+  it('드래프트/프리릴리즈/미공개 릴리즈를 제외하고 published_at 내림차순으로 반환해야 한다', async () => {
+    const releases = [
+      {
+        tag_name: 'v1.0.0',
+        published_at: '2024-01-01T00:00:00Z',
+        prerelease: false,
+        draft: false
+      },
+      {
+        tag_name: 'v2.0.0-beta.1',
+        published_at: '2024-03-01T00:00:00Z',
+        prerelease: true,
+        draft: false
+      },
+      {
+        tag_name: 'v3.0.0',
+        published_at: '2024-04-01T00:00:00Z',
+        prerelease: false,
+        draft: true
+      },
+      {
+        tag_name: 'v1.5.0',
+        published_at: null,
+        prerelease: false,
+        draft: false
+      },
+      {
+        tag_name: 'v2.0.0',
+        published_at: '2024-02-01T00:00:00Z',
+        prerelease: false,
+        draft: false
+      }
+    ]
+
+    vi.mocked(globalThis.fetch).mockResolvedValueOnce({
+      ok: true,
+      status: 200,
+      json: async () => releases,
+      headers: new Headers()
+    } as Response)
+
+    const result = await fetchGitHubReleases('owner', 'repo')
+
+    expect(globalThis.fetch).toHaveBeenCalledTimes(1)
+    expect(result).toEqual([
+      {
+        name: 'v2.0.0',
+        committedAt: '2024-02-01T00:00:00Z'
+      },
+      {
+        name: 'v1.0.0',
+        committedAt: '2024-01-01T00:00:00Z'
+      }
+    ])
   })
 })
