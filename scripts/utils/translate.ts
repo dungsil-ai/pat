@@ -120,6 +120,8 @@ function isVariableOnlyText(text: string): boolean {
 
   // 5. 앵글 브래킷 변수 제거: <...>
   remaining = remaining.replace(/<[a-zA-Z0-9_\-.]+>/g, '')
+  // 겹침/재조합 입력으로 남을 수 있는 앵글 브래킷 문자까지 제거
+  remaining = remaining.replace(/[<>]/g, '')
 
   // 6. 해시 포맷 마커 제거: #...# 또는 #...#!
   remaining = remaining.replace(/#[a-zA-Z_]+#!?/g, '')
