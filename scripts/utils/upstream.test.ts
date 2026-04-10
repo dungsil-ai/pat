@@ -201,34 +201,34 @@ language = "english"
 
   describe('기존 저장소 업데이트', () => {
     it('로컬 변경사항이 있으면 기존 저장소를 지우고 재클론해야 함', async () => {
-      const commands: string[] = []
+      const execFileCommands: string[] = []
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
-      execAsyncHandler = async (command: string) => {
-        commands.push(command)
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
 
-        if (command === 'git status --porcelain') {
+        if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: ' M localization/english/test.yml\n', stderr: '' }
         }
 
-        if (command.startsWith('git ls-remote --tags --refs')) {
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: '', stderr: '' }
         }
 
-        if (command.startsWith('git ls-remote --symref')) {
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
           return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
         }
 
-        if (command === 'git describe --tags --exact-match') {
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
           throw new Error('fatal: no tag exactly matches')
         }
 
-        if (command === 'git rev-parse --abbrev-ref HEAD') {
+        if (args[0] === 'rev-parse' && args[1] === '--abbrev-ref') {
           return { stdout: 'develop\n', stderr: '' }
         }
 
-        if (command.startsWith('git clone ')) {
+        if (args[0] === 'clone') {
           await mkdir(join(repoPath, '.git', 'info'), { recursive: true })
         }
 
@@ -243,49 +243,42 @@ language = "english"
         versionStrategy: 'default'
       }, testDir)
 
-      expect(commands.some(command => command.startsWith('git clone '))).toBe(true)
-      expect(commands).toContain('git checkout HEAD')
-      expect(commands).not.toContain('git fetch --tags')
+      expect(execFileCommands.some(command => command.startsWith('git clone '))).toBe(true)
+      expect(execFileCommands).toContain('git checkout HEAD')
+      expect(execFileCommands.some(command => command.startsWith('git fetch --tags'))).toBe(false)
     })
 
     it('동일한 참조명이면서 커밋도 동일하면 업데이트를 건너뛰어야 함', async () => {
-      const commands: string[] = []
       const execFileCommands: string[] = []
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
-      execAsyncHandler = async (command: string) => {
-        commands.push(command)
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
 
-        if (command === 'git status --porcelain') {
+        if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: '', stderr: '' }
         }
 
-        if (command.startsWith('git ls-remote --tags --refs')) {
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: 'tagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
         }
 
-        if (command === 'git describe --tags --exact-match') {
+        if (args[0] === 'ls-remote') {
+          return { stdout: 'commit123\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
+
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
           return { stdout: 'v1.0.0\n', stderr: '' }
         }
 
-        if (command === 'git rev-parse HEAD') {
+        if (args[0] === 'rev-parse' && args[1] === 'HEAD') {
           return { stdout: 'commit123\n', stderr: '' }
         }
 
         return { stdout: '', stderr: '' }
       }
 
-      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        execFileCommands.push([_file, ...args].join(' '))
-
-        if (args[0] === 'ls-remote') {
-          return { stdout: 'commit123\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
-        }
-
-        return { stdout: '', stderr: '' }
-      }
-
       const { updateUpstreamOptimized } = await import('./upstream')
       await updateUpstreamOptimized({
         url: 'https://github.com/test/repo.git',
@@ -295,53 +288,38 @@ language = "english"
       }, testDir)
 
       expect(execFileCommands.some(command => command.includes('refs/tags/v1.0.0^{}'))).toBe(true)
-      expect(commands.some(command => command.startsWith('git fetch'))).toBe(false)
-      expect(commands.some(command => command.startsWith('git checkout'))).toBe(false)
+      expect(execFileCommands.some(command => command.startsWith('git fetch'))).toBe(false)
+      expect(execFileCommands.some(command => command.startsWith('git checkout'))).toBe(false)
     })
 
     it('동일한 참조명이어도 커밋이 다르면 업데이트를 진행해야 함', async () => {
-      const commands: string[] = []
       const execFileCommands: string[] = []
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
-      execAsyncHandler = async (command: string) => {
-        commands.push(command)
-
-        if (command === 'git status --porcelain') {
-          return { stdout: '', stderr: '' }
-        }
-
-        if (command.startsWith('git ls-remote --tags --refs')) {
-          return { stdout: 'newtaghash\trefs/tags/v1.0.0\n', stderr: '' }
-        }
-
-        if (command === 'git describe --tags --exact-match') {
-          return { stdout: 'v1.0.0\n', stderr: '' }
-        }
-
-        if (command === 'git rev-parse HEAD') {
-          return { stdout: 'oldcommit\n', stderr: '' }
-        }
-
-        if (command === 'git fetch --tags') {
-          return { stdout: '', stderr: '' }
-        }
-
-        if (command.startsWith('git checkout')) {
-          return { stdout: '', stderr: '' }
-        }
-
-        return { stdout: '', stderr: '' }
-      }
-
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
         execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'status' && args[1] === '--porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
+          return { stdout: 'newtaghash\trefs/tags/v1.0.0\n', stderr: '' }
+        }
 
         if (args[0] === 'ls-remote') {
           return { stdout: 'newcommit\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
         }
 
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
+          return { stdout: 'v1.0.0\n', stderr: '' }
+        }
+
+        if (args[0] === 'rev-parse' && args[1] === 'HEAD') {
+          return { stdout: 'oldcommit\n', stderr: '' }
+        }
+
         return { stdout: '', stderr: '' }
       }
 
@@ -354,26 +332,31 @@ language = "english"
       }, testDir)
 
       expect(execFileCommands.some(command => command.includes('refs/tags/v1.0.0^{}'))).toBe(true)
-      expect(commands).toContain('git fetch --tags')
-      expect(commands.some(command => command.startsWith('git checkout "v1.0.0"'))).toBe(true)
+      expect(execFileCommands).toContain('git fetch --tags')
+      expect(execFileCommands.some(command => command === 'git checkout v1.0.0')).toBe(true)
     })
   })
 
   describe('태그 clone/fetch 폴백', () => {
     it('태그 clone 실패 시 실패한 디렉토리를 정리한 뒤 기본 브랜치 clone으로 폴백해야 함', async () => {
-      const commands: string[] = []
+      const execFileCommands: string[] = []
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
-      execAsyncHandler = async (command: string) => {
-        commands.push(command)
-        if (command.startsWith('git ls-remote --tags --refs')) {
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: 'abc123\trefs/tags/v1.0.0\n', stderr: '' }
         }
 
-        if (command.includes('git clone') && command.includes('--branch "v1.0.0"')) {
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        if (args[0] === 'clone' && args.includes('--branch') && args.includes('v1.0.0')) {
           throw new Error('Remote branch v1.0.0 not found in upstream origin')
         }
 
-        if (command.startsWith('git clone ')) {
+        if (args[0] === 'clone') {
           await mkdir(join(repoPath, '.git', 'info'), { recursive: true })
         }
 
@@ -389,34 +372,40 @@ language = "english"
         versionStrategy: 'natural'
       }, testDir)
 
-      const tagCloneIndex = commands.findIndex(command => command.includes('git clone') && command.includes('--branch "v1.0.0"'))
-      const fallbackCloneIndex = commands.findIndex(command => command === `git clone --filter=blob:none --depth=1 --no-checkout "https://github.com/test/repo.git" "${repoPath}"`)
+      const tagCloneIndex = execFileCommands.findIndex(command => command.includes('git clone') && command.includes('--branch v1.0.0'))
+      const fallbackCloneIndex = execFileCommands.findIndex(command => command === `git clone --filter=blob:none --depth=1 --no-checkout https://github.com/test/repo.git ${repoPath}`)
 
       expect(tagCloneIndex).toBeGreaterThanOrEqual(0)
       expect(fallbackCloneIndex).toBeGreaterThan(tagCloneIndex)
     })
 
     it('shallow 저장소에서 태그 fetch가 ref-not-found면 기본 브랜치 fetch로 폴백해야 함', async () => {
-      const commands: string[] = []
-      execAsyncHandler = async (command: string) => {
-        commands.push(command)
-        if (command === 'git status --porcelain') {
+      const execFileCommands: string[] = []
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: '', stderr: '' }
         }
-        if (command.startsWith('git ls-remote --tags --refs')) {
+
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: 'abc123\trefs/tags/v2.0.0\n', stderr: '' }
         }
-        if (command === 'git describe --tags --exact-match') {
+
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
           throw new Error('fatal: no tag exactly matches')
         }
-        if (command === 'git rev-parse --abbrev-ref HEAD') {
+
+        if (args[0] === 'rev-parse' && args[1] === '--abbrev-ref') {
           return { stdout: 'main\n', stderr: '' }
         }
-        if (command === 'git fetch --depth=1 origin tag "v2.0.0"') {
+
+        if (args[0] === 'fetch' && args.includes('tag') && args.includes('v2.0.0')) {
           throw new Error('Remote branch v2.0.0 not found in upstream origin')
-        }
-        if (command.startsWith('git ls-remote --symref')) {
-          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
         }
 
         return { stdout: '', stderr: '' }
@@ -434,10 +423,10 @@ language = "english"
         versionStrategy: 'natural'
       }, testDir)
 
-      expect(commands).toContain('git fetch --depth=1 origin tag "v2.0.0"')
-      expect(commands).toContain('git fetch --depth=1 origin "main"')
-      expect(commands).toContain('git checkout "main"')
-      expect(commands).toContain('git reset --hard "origin/main"')
+      expect(execFileCommands).toContain('git fetch --depth=1 origin tag v2.0.0')
+      expect(execFileCommands).toContain('git fetch --depth=1 origin main')
+      expect(execFileCommands).toContain('git checkout main')
+      expect(execFileCommands).toContain('git reset --hard origin/main')
     })
   })
 
