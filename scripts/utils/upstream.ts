@@ -678,7 +678,7 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
       if (latestRef.type === 'tag') {
         // shallow clone에서 특정 태그로 업데이트하려면 해당 태그를 fetch
         try {
-          await execAsync(`git fetch --depth=1 origin tag "${latestRef.name}"`, { cwd: repositoryPath })
+          await execFileAsync('git', ['fetch', '--depth=1', 'origin', 'tag', latestRef.name], { cwd: repositoryPath })
         } catch (error) {
           if (!isRemoteRefNotFoundError(error)) {
             throw error
@@ -701,13 +701,13 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     
     // 최신 버전으로 체크아웃
     log.start(`[${config.path}] ${updateRef.type} ${updateRef.name}(으)로 업데이트 중...`)
-    await execAsync(`git checkout "${updateRef.name}"`, { cwd: repositoryPath })
+    await execFileAsync('git', ['checkout', updateRef.name], { cwd: repositoryPath })
     
     if (updateRef.type === 'branch') {
       // 브랜치의 경우 원격 상태로 강제 리셋 (브랜치는 변경 가능하므로)
       // 태그는 불변이므로 checkout만으로 충분함
       // upstream 리포지토리는 읽기 전용이므로 로컬 변경사항은 무시하고 원격 상태로 리셋
-      await execAsync(`git reset --hard "origin/${updateRef.name}"`, { cwd: repositoryPath })
+      await execFileAsync('git', ['reset', '--hard', `origin/${updateRef.name}`], { cwd: repositoryPath })
     }
     
     log.success(`[${config.path}] 업데이트 완료 (${updateRef.type}: ${updateRef.name})`)
