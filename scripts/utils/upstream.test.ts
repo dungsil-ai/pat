@@ -206,8 +206,7 @@ language = "english"
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        const cmd = [_file, ...args].join(' ')
-        execFileCommands.push(cmd)
+        execFileCommands.push([_file, ...args].join(' '))
 
         if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: ' M localization/english/test.yml\n', stderr: '' }
@@ -255,8 +254,7 @@ language = "english"
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        const cmd = [_file, ...args].join(' ')
-        execFileCommands.push(cmd)
+        execFileCommands.push([_file, ...args].join(' '))
 
         if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: '', stderr: '' }
@@ -300,8 +298,7 @@ language = "english"
       await mkdir(join(repoPath, '.git'), { recursive: true })
 
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        const cmd = [_file, ...args].join(' ')
-        execFileCommands.push(cmd)
+        execFileCommands.push([_file, ...args].join(' '))
 
         if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: '', stderr: '' }
@@ -345,8 +342,7 @@ language = "english"
       const execFileCommands: string[] = []
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        const cmd = [_file, ...args].join(' ')
-        execFileCommands.push(cmd)
+        execFileCommands.push([_file, ...args].join(' '))
 
         if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: 'abc123\trefs/tags/v1.0.0\n', stderr: '' }
@@ -386,8 +382,7 @@ language = "english"
     it('shallow 저장소에서 태그 fetch가 ref-not-found면 기본 브랜치 fetch로 폴백해야 함', async () => {
       const execFileCommands: string[] = []
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        const cmd = [_file, ...args].join(' ')
-        execFileCommands.push(cmd)
+        execFileCommands.push([_file, ...args].join(' '))
 
         if (args[0] === 'status' && args[1] === '--porcelain') {
           return { stdout: '', stderr: '' }
