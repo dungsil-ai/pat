@@ -168,3 +168,6 @@
   building_fusion_power_plant_lens_option: "확장 $building_fusion_power_plant$" # 15703985506358108552
   building_fusion_power_plant_throughput_add: "핵융합 발전소 [concept_throughput]" # 6458060321820674968
   building_fusion_power_plant_throughput_add_desc: "핵융합 발전소의 [concept_throughput]을(를) 높입니다." # 14051988038866047548
+  bg_electricity_grid: "전력망" # 17705813080875220929
+  building_power_grid_station: "발전소" # 9279217450892080509
+  building_power_grid_station_lens_option: "건물 $building_power_grid_station$ 확장" # 12503212324079215937

@@ -30,7 +30,6 @@
   je_old_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은 최소한 부분적으로 개발된 국가여야 하며 인권 기술을 보유하고 있어야 합니다." # 12686736595944502365
   je_mid_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은(는) 최소한 @developed_country! [Concept('concept_developed_country','$concept_developed_country$')]이어야 하며 사회 민주주의 기술을 보유해야 합니다." # 10930155988888875745
   je_liberty_index: "이념 지수" # 17334563368789126202
-  je_liberty_index_reason: "한 [concept_country]의 [Concept('concept_ideology','$concept_ideology$')]는 두 가지 핵심 지표로 측정됩니다. 바로 @liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]입니다.\n\n@liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]는 한 국가의 정치적 및 사회적 가치를 나타내는 척도입니다. [Concept('concept_liberty_index','$concept_liberty_index$')]는 국가 내 개인의 자유, 시민적 권리, 그리고 [Concept('concept_democracy','$concept_democracy_adjective$')]적인 통치의 정도를 반영하는 반면, [Concept('concept_equality_index','$concept_equality_index$')]는 시민들 사이의 사회적 및 경제적 평등 수준을 평가합니다. 이 두 지표는 국가의 전반적인 이념적 지형에 대한 통찰을 제공하며, 국내 정책과 국제 관계에 영향을 미칩니다.\n\n두 지표 모두 해당 국가 내에 시행 중인 대부분의 [Concept('concept_law', '$concept_laws$')]에 의해 영향을 받습니다.\n\n우리의 [Concept('concept_liberty_index','$concept_liberty_index$')]에 근거하여, 우리는 다음과 같이 분류될 수 있습니다:\n\n 75-100: #positive_value 민주주의 국가#!\n 50-75: #v 불완전한 민주주의 국가#!\n 25-50: #v 권위주의 국가#!\n 0-25: #gold_value 전체주의 국가#!\n\n우리의 [Concept('concept_equality_index','$concept_equality_index$')]에 근거하여, 우리는 다음과 같이 분류될 수 있습니다:\n\n 75-100: #negative_value 사회주의 국가#!\n 50-75: #v 복지 국가#!\n 25-50: #v 계층화된 국가#!\n 0-25: #blue_value 개인주의 국가#!\n\n#negative_value 중요#!: 법률 그룹 #v 권력 분배#!는 귀하의 최대 [Concept('concept_liberty_index','$concept_liberty_index$')]를 제한할 것입니다." # 11521628137518754708
   liberty_index_progress_bar: "자유 지수" # 10224254528086149020
   equality_index_progress_bar: "평등 지수" # 780557157593583698
   liberty_index_progress_bar_desc: "자유 지수: #v [ROOT.GetCountry.MakeScope.Var('liberty_index_var').GetValue]/100#!" # 17061632703613053821
@@ -206,40 +205,38 @@
   ztr_demographic_advanced_healthcare_tt: "현대적 의료 기관" # 8706277891121872237
   ztr_demographic_traditional_values_tt: "전통적인 종교적 가족 규범" # 15756980867831270829
   ztr_demographic_north_america_tt: "북미 이민 패턴" # 8934851658784866540
-  ztr_demographic_post_1970_tt: "1970년 이후 전 세계적인 출산율 감소" # 10397415103333270248
-  ztr_demographic_slavery_tt: "노예제가 여전히 합법임" # 18347484633671191738
-  ztr_demographic_late_slavery_tt: "매우 후기 인구 통계 단계에서도 노예제가 여전히 합법임" # 10743069138629762051
-  ztr_demographic_0_to_1_development_tt: "더 이상 미개발 상태가 아니거나 1900년 이후" # 5067160435981066297
   ztr_demographic_0_to_1_sol_tt: "평균 생활 수준 10 초과" # 8652451560959981803
   ztr_demographic_0_to_1_literacy_tt: "문해율 30% 초과" # 9592807852313564750
-  ztr_demographic_1_to_2_development_tt: "더 이상 초기 개발 단계가 아님" # 1726898065076819219
   ztr_demographic_1_to_2_sol_tt: "1870년 이후 평균 생활 수준 12 초과" # 17868428836159131242
   ztr_demographic_1_to_2_literacy_tt: "1870년 이후 문해율 40% 초과" # 10828508646080213120
-  ztr_demographic_2_to_3_development_tt: "더 이상 낮은 개발 단계가 아님" # 8133945848495032353
   ztr_demographic_2_to_3_sol_tt: "1900년 이후 평균 생활 수준 14 초과" # 589245890431601954
   ztr_demographic_2_to_3_literacy_tt: "1900년 이후 문해율 50% 초과" # 8479335351546030832
-  ztr_demographic_2_to_3_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
-  ztr_demographic_3_to_4_development_tt: "더 이상 중간 개발 단계가 아님" # 12136391351946729053
   ztr_demographic_3_to_4_sol_tt: "1930년 이후 평균 생활 수준 16 초과" # 7060712587464194958
   ztr_demographic_3_to_4_literacy_tt: "1930년 이후 문해율 60% 초과" # 5315498341085257359
-  ztr_demographic_3_to_4_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
-  ztr_demographic_4_to_5_development_tt: "더 이상 개발 이전 단계가 아님" # 17726884494386664402
-  ztr_demographic_4_to_5_sol_tt: "평균 생활 수준 17 이상, 또는 1950년 이후" # 9994383676526814936
-  ztr_demographic_4_to_5_literacy_tt: "문해율 65% 이상, 또는 1950년 이후" # 17661053994265095729
-  ztr_demographic_4_to_5_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
-  ztr_demographic_5_to_6_development_tt: "더 이상 개발 이전 단계가 아님" # 17726884494386664402
-  ztr_demographic_5_to_6_sol_tt: "평균 생활 수준 18 이상, 또는 1960년 이후" # 1672540785366720440
-  ztr_demographic_5_to_6_literacy_tt: "문해율 70% 이상, 또는 1960년 이후" # 17303071707767791070
-  ztr_demographic_5_to_6_immigration_tt: "개방적 이민 정책 및 강력한 이민 유인" # 1159558080911512337
-  ztr_demographic_6_to_7_development_tt: "장기적인 고도 발전" # 12856663556830079608
-  ztr_demographic_6_to_7_immigration_tt: "개방적인 이주 정책과 이민 수요를 동반한 높은 1인당 GDP" # 12497226503776078670
   ztr_demographic_6_to_7_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
-  ztr_demographic_7_to_8_development_tt: "장기적인 고도 발전" # 12856663556830079608
+  je_liberty_index_reason: "[concept_country]의 [Concept('concept_ideology','$concept_ideology$')]는 @liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]라는 두 가지 핵심 지표를 통해 측정됩니다.\n\n@liberty_index! [Concept('concept_liberty_index','$concept_liberty_index$')]와 @equality_index! [Concept('concept_equality_index','$concept_equality_index$')]는 국가의 정치적, 사회적 가치를 측정하는 척도입니다.\n [Concept('concept_liberty_index','$concept_liberty_index$')]는 국가 내 개인의 자유, 시민적 자유, 그리고 [Concept('concept_democracy','$concept_democracy_adjective$')] 통치의 정도를 반영하며, [Concept('concept_equality_index','$concept_equality_index$')]는 시민 간 사회적, 경제적 평등 수준을 평가합니다. 이 지표들은 국가의 전반적인 이념적 지형에 대한 통찰력을 제공하며, 국내 정책과 국제 관계에 영향을 미칩니다.\n\n두 지표 모두 국가 내에 시행 중인 대부분의 [Concept('concept_law', '$concept_laws$')]에 의해 영향을 받습니다.\n\n[Concept('concept_liberty_index','$concept_liberty_index$')]에 따라 다음과 같이 분류될 수 있습니다:\n\n 75-100: #positive_value 민주 국가#!\n 50-75: #v 결함 있는 민주 국가#!\n 25-50: #v 권위주의 국가#!\n 0-25: #gold_value 전체주의 국가#!\n\n[Concept('concept_equality_index','$concept_equality_index$')]에 따라 다음과 같이 분류될 수 있습니다:\n\n 75-100: #negative_value 사회주의 국가#!\n 50-75: #v 복지 국가#!\n 25-50: #v 계층화된 국가#!\n 0-25: #blue_value 개인주의 국가#!\n\n#negative_value 중요#!: #gold_value 법률 그룹#! #v 권력 분배#!는 귀하의 최대 [Concept('concept_liberty_index','$concept_liberty_index$')]를 제한할 것입니다." # 1330077357792678888
+  ztr_demographic_post_1970_tt: "20세기 후반 세계적인 출산율 감소" # 10942192147811000654
+  ztr_demographic_slavery_tt: "노예제 합법" # 8646819456031073482
+  ztr_demographic_0_to_1_development_tt: "더 이상 가난한 국가가 아니거나 1900년 이후" # 13027858996539160382
+  ztr_demographic_1_to_2_development_tt: "더 이상 초기 개발 단계가 아님" # 1204880703346692506
+  ztr_demographic_2_to_3_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
+  ztr_demographic_2_to_3_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
+  ztr_demographic_3_to_4_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
+  ztr_demographic_3_to_4_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
+  ztr_demographic_4_to_5_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
+  ztr_demographic_4_to_5_sol_tt: "평균 생활 수준이 17 이상이거나 1950년 이후" # 5944991299670491100
+  ztr_demographic_4_to_5_literacy_tt: "문해율이 65% 이상이거나 1950년 이후" # 4571226157319661819
+  ztr_demographic_4_to_5_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
+  ztr_demographic_5_to_6_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
+  ztr_demographic_5_to_6_sol_tt: "평균 생활 수준이 18 이상이거나 1960년 이후" # 16549940552908204993
+  ztr_demographic_5_to_6_literacy_tt: "문해율이 70% 이상이거나 1960년 이후" # 10903920821938816877
+  ztr_demographic_5_to_6_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
+  ztr_demographic_6_to_7_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
+  ztr_demographic_6_to_7_immigration_tt: "이민에 개방적인 부유한 국가" # 357792706172742936
+  ztr_demographic_7_to_8_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
   ztr_demographic_7_to_8_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
-  ztr_demographic_7_to_8_reset_tt: "고소득 대규모 이민이 이 전환을 재설정합니다" # 16099757650637686048
   je_group_the_future_of_china: "중화의 르네상스" # 6174413751193712489
   ztr_je_the_future_of_china: "중화제국의 교차로" # 7891748867879131431
-  ztr_je_the_future_of_china_reason: "중국은 완전한 붕괴를 피했으나, 고대의 구조는 여전히 마비된 상태입니다. 어떤 경로가 현대 중화제국의 모습을 결정짓게 될까요?" # 1422731158987607048
   ztr_je_the_future_of_china_goal: "세 가지 경쟁적인 발전 경로 중 하나로 중국의 발전을 이끄십시오." # 2155333289620485872
   ztr_china_corporate_progress_bar: "기업 측" # 7846428452358595699
   ztr_china_corporate_progress_bar_desc: "기업 측: #v [ROOT.GetCountry.MakeScope.Var('ztr_china_corporate_var').GetValue|0]/100#!" # 2085084464230199853
@@ -296,7 +293,6 @@
   ztr_ottoman_collapse_complete_tt: "제국은 붕괴하여 #v 주변 성(Peripheral Provinces)#!에 대한 통제력을 상실하고, 제국은 소멸할 것입니다." # 11022717805003725228
   je_group_global_historical_content: "세계 역사적 콘텐츠" # 6702719987584120001
   je_ottoman_empire_collapse: "오스만 제국 쇠퇴" # 3065944229570634865
-  je_ottoman_empire_collapse_reason: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetName]은 부채, 지방의 소요, 군사적 음모, 열강의 침탈이라는 긴 위기로 접어들고 있습니다.\n\n[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] #v 정부#!는 생존을 위해 충분히 빠르게 개혁하거나, 제국이 더 작은 계승 국가로 축소되는 것을 지켜봐야 합니다.\n\n이 상황에 참여하는 #v 열강#!은 [SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] 이집트, 시리아, 이라크에서 지역 원조 임무를 후원하여 지방을 안정시키는 동시에, 제국이 끝내 분열될 경우를 대비한 미래의 외교적 개입 명분을 쌓을 수 있습니다." # 6475010502946898105
   je_ottoman_empire_collapse_goal: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetName]은 붕괴 수치가 가득 차기 전에 개혁, 성장, 지정학적 회복을 통해 국가를 안정시켜야 합니다." # 7139674831132746036
   je_ottoman_empire_collapse_status: "숭고한 문(Porte)은 여전히 유지되고 있으나, 부채와 지방의 소요, 외세의 음모가 제국의 결속력을 꾸준히 갉아먹고 있습니다." # 3926699936654788442
   je_ottoman_empire_collapse_status_arab: "아랍 지방의 유지들은 오스만 제국의 권위를 점차 협상 가능하고 일시적이며, 노골적으로 불법적인 것으로 취급하고 있습니다." # 16853834400619901855
@@ -466,3 +462,7 @@
   je_decolonization_complete_tt: "남아있는 식민지 피지배 민족이 없습니다." # 5321383784479940700
   ztr_decolonization_pressure_bar: "탈식민화 압력" # 7546376795375972553
   ztr_decolonization_pressure_bar_desc: "탈식민지화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100#!" # 13086313918723085913
+  ztr_demographic_7_to_8_reset_tt: "이민에 개방적인 부유한 국가" # 357792706172742936
+  ztr_je_the_future_of_china_reason: "[ROOT.GetCountry.GetName]은 완전한 붕괴를 모면했으나, 고대의 구조는 여전히 마비된 상태입니다. 어떤 길이 현대의 #v 중화제국#!을 형성하게 될까요?\n\n#blue_value 기업 파벌#!은 급격한 산업화, 시장 확장, 그리고 세계 경제로의 통합에 집중합니다. 이들은 해안가 엘리트, 기업 거물, 그리고 외국인 투자자들의 지지를 받습니다.\n\n#v 민족주의 파벌#!은 국가 통합, 영토 보전, 그리고 강력한 중앙 정부를 강조합니다. 이들은 지방 총독, 군부, 그리고 전통주의 세력의 지원을 받습니다.\n\n#n 기술-유교 파벌#!은 전통적 가치로의 회귀, 사회적 조화, 그리고 점진적인 개혁을 주장합니다. 이들은 지식인, 농촌 공동체, 그리고 보수적인 문화 기관들의 지지를 받습니다." # 12495500450409120869
+  ztr_je_the_future_of_china_goal_tt: "#blue_value 기업주의자#!, #v 민족주의자#!, #n 기술-유교주의자#! 사이의 승리한 파벌이 [ROOT.GetCountry.GetName]에 대한 다수 통제권을 획득하게 됩니다.\n\n만약 두 파벌이 너무 강력해진다면, 그 결과는 예측할 수 없게 될 것입니다..." # 12332970756300398727
+  je_ottoman_empire_collapse_reason: "[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetName]은 부채, 지방의 소요, 군부의 음모, 그리고 열강의 침탈이라는 긴 위기 속으로 빠져들고 있습니다.\n\n[SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] #v 정부#!는 살아남기 위해 충분히 빠르게 개혁하거나, 제국이 더 작은 계승 국가로 축소되는 것을 지켜봐야만 합니다.\n\n이 상황에 참여하는 #v 열강#!들은 [SCOPE.sCountry('ztr_ottoman_collapse_target_country').GetAdjective] #v 중동 주변부 속령#!에서 지역 원조 임무를 후원하여 그들을 안정시키는 동시에, 제국이 끝내 분열될 경우를 대비한 미래의 개입 명분을 쌓을 수 있습니다." # 7872682003803907844

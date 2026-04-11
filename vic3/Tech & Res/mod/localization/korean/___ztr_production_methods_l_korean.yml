@@ -12,7 +12,6 @@
   pmg_automation_building_geothermal_power_plant: "자동화" # 18411738171978629847
   pm_automation_closed_loop_system: "폐쇄 루프 시스템" # 14008626982756386476
   pmg_type_building_power_plant: "자동화" # 18411738171978629847
-  pm_automation_HFO_fuel: "중유 연료" # 17226423772068867695
   pm_gas-fired_plant: "가스 화력 발전소" # 8158444127086869324
   pmg_base_building_spaceport: "우주항" # 1105842104412328333
   pm_orbital_launch_system: "궤도 발사" # 18075257614568584245
@@ -238,7 +237,6 @@
   pm_local_data_storage_building_datacenter: "로컬 데이터 저장소" # 18211265562620089373
   pm_cloud_storage_building_datacenter: "클라우드 저장소" # 7261991097100852398
   pmg_automation_building_datacenter: "자동화" # 18411738171978629847
-  pm_early_computer_server_building_datacenter: "초기 서버" # 1860286119592185258
   pmg_data_transportation_building_datacenter: "데이터 전송" # 3958067927722683896
   pm_local_network_building_datacenter: "지역 네트워크" # 4356550927925911043
   pm_internet_building_datacenter: "인터넷" # 18294203111589887707
@@ -704,7 +702,6 @@
   pm_local_computer_networks: "전산화된 서류 정리" # 14255048031683881520
   pm_rudimental_data_networks: "중앙 집중식 데이터베이스" # 18032489548004472852
   pm_advanced_data_networks: "디지털 행정" # 11184501952746348871
-  pm_late_computer_server_building_datacenter: "고급 서버" # 1085319152731720459
   pmg_ai_systems_building_datacenter: "AI 서비스" # 2310197092580265829
   pm_no_model_training: "AI 서비스 없음" # 12907418925871007395
   pm_neural_model_training: "신경망 모델" # 10370417592559506100
@@ -761,3 +758,18 @@
   pm_predictive_fulfilment_network: "예측형 주문 처리 네트워크" # 2609255630351314655
   pm_ai_assisted_art: "AI 보조 창작" # 1761428424107184967
   pm_hydrotreated_biofuels: "수소화 처리 바이오연료" # 17350594101082734550
+  pm_automation_HFO_fuel: "중연료" # 7315218838118560079
+  pm_early_computer_server_building_datacenter: "초기 컴퓨팅 서버" # 6154791181425787426
+  pm_late_computer_server_building_datacenter: "분산 컴퓨팅 서버" # 10127325533112376879
+  pmg_grid_download: "그리드 운영" # 18006747250452718809
+  pm_basic_grid_download: "중전압 배전" # 2718828719636783884
+  pm_hv_grid_download: "고전압 배전" # 6324588365697258375
+  pm_uhv_grid_download: "초고전압 배전" # 14043023325486603904
+  pmg_power_transmission: "송전 방식" # 8543870620893746687
+  pm_direct_current: "직류 송전 (지역)" # 3804445119690468037
+  pm_half_current: "혼합 전류 송전 (양방향)" # 8120783911676094168
+  pm_alternating_current: "교류 송전 (범지구)" # 1446452703490143589
+  pmg_power_transmission_large: "대규모 송전" # 5794833166208685882
+  pm_direct_current_large: "직류 송전 (지역)" # 3804445119690468037
+  pm_half_current_large: "혼합 전류 송전 (양방향)" # 8120783911676094168
+  pm_alternating_current_large: "교류 송전 (범지구)" # 1446452703490143589

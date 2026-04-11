@@ -244,3 +244,10 @@
   goods_output_androids_add_desc: "건물에서 생산되는 @androids! 안드로이드의 양" # 4708028732682154230
   goods_input_electricity_mult: "@electricity! 전기 투입량" # 8983256812608487870
   goods_input_electricity_mult_desc: "건물에서 소비되는 @electricity! 투입량에 대한 보너스 또는 페널티" # 9434040563277309561
+  global_electricity: "국가 전력" # 11483898593960489069
+  goods_input_global_electricity_add: "@global_electricity! 국가 전력 투입량" # 315412754494795131
+  goods_input_global_electricity_add_desc: "건물이 소비하는 @global_electricity! 국가 전력의 양" # 5018424040418781850
+  goods_output_global_electricity_add: "@global_electricity! 국가 전력 생산량" # 18344238422819677023
+  goods_output_global_electricity_add_desc: "건물이 생산하는 @global_electricity! 국가 전력의 양" # 16806489066412282364
+  goods_output_global_electricity_mult: "건물 @global_electricity! 국가 전력 생산량" # 8362694685285162869
+  goods_output_global_electricity_mult_desc: "건물이 생산하는 @global_electricity! 국가 전력 생산량에 대한 보너스 또는 페널티" # 18085558281426966720
