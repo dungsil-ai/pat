@@ -65,6 +65,7 @@
   concept_un_decolonization_conservative_desc: "#blue_value 국제 연합#!은 식민 통치를 규탄하며 회원국들이 보수적인 식민지 입장을 유지하는 [GetLawType('law_colonial_resettlement').GetName], [GetLawType('law_colonial_exploitation').GetName]에서 [GetLawType('law_no_colonial_affairs').GetName](으)로 나아가도록 압박합니다." # 15274320386142946211
   concept_un_decolonization_neutral: "유엔 성명 없음" # 17597562564872448305
   concept_un_decolonization_neutral_desc: "#blue_value 국제 연합#!은 식민 통치에 관한 공통된 국제적 입장을 유지하지 않습니다." # 3141285645955475483
+  concept_un_slavery_illegal: "노예제 금지" # 7054274624766156850
   concept_un_slavery_illegal_desc: "#blue_value 국제 연합#!은 노예제를 불법으로 규정하고 회원국들이 [GetLawType('law_colonial_slavery').GetName], [GetLawType('law_debt_slavery').GetName], [GetLawType('law_slave_trade').GetName], [GetLawType('law_legacy_slavery').GetName]에서 벗어나 [GetLawType('law_slavery_banned').GetName](으)로 나아가도록 압박합니다." # 4108584401132151694
   concept_un_slavery_neutral: "유엔 성명 없음" # 17597562564872448305
   concept_un_slavery_neutral_desc: "#blue_value 국제 연합#!은 노예제에 대한 공통된 국제적 입장을 유지하지 않습니다." # 5232193172404829645
@@ -72,6 +73,7 @@
   concept_un_children_rights_negligible_desc: "#blue_value 국제 연합#!은 아동 권리에 대한 공통의 최소 기준을 설정하지 않으며, 회원국들이 현행 아동 노동법을 유지하도록 허용합니다." # 650912178694711164
   concept_un_children_rights_restricted_child_labor: "제한적 아동 노동" # 9189961646470006866
   concept_un_children_rights_restricted_child_labor_desc: "#blue_value 국제 연합#!은 회원국들이 [GetLawType('law_child_labor_allowed').GetName]에서 벗어나 [GetLawType('law_restricted_child_labor').GetName](으)로 나아가도록 하는 아동 권리 최소 기준을 설정합니다." # 17738000827108983358
+  concept_un_children_rights_compulsory_study: "아동 노동 금지" # 2665208536588195417
   concept_un_children_rights_compulsory_study_desc: "#blue_value 국제 연합#!은 교육을 중심으로 하는 더 강력한 아동 권리 기준을 지지하며, 회원국들이 [GetLawType('law_compulsory_primary_school').GetName](으)로 나아가도록 독려합니다." # 6218941900392941424
   concept_un_women_rights_negligible: "무시할 만함" # 15391156612782712995
   concept_un_women_rights_negligible_desc: "#blue_value 국제 연합#!은 여성 권리에 대한 공통의 최소 기준을 설정하지 않으며, 회원국들이 제한적인 법률을 유지하도록 허용합니다." # 10821082907244975775
@@ -93,5 +95,3 @@
   concept_un_institution_unesco_not_established_desc: "UN 질서는 아직 유네스코를 설립하지 않았습니다." # 14695236719402301838
   concept_un_institution_unesco_established: "수립됨" # 1191756773486043975
   concept_un_institution_unesco_established_desc: "유네스코는 UN 주도 질서의 일부로서, 과학 교류, 교육 정책 및 문화 협력을 증진합니다." # 17196920598102839054
-  concept_un_slavery_illegal: "노예제 금지" # 7054274624766156850
-  concept_un_children_rights_compulsory_study: "아동 노동 금지" # 2665208536588195417

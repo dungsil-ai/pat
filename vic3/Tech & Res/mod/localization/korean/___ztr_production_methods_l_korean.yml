@@ -12,6 +12,7 @@
   pmg_automation_building_geothermal_power_plant: "자동화" # 18411738171978629847
   pm_automation_closed_loop_system: "폐쇄 루프 시스템" # 14008626982756386476
   pmg_type_building_power_plant: "자동화" # 18411738171978629847
+  pm_automation_HFO_fuel: "중연료" # 7315218838118560079
   pm_gas-fired_plant: "가스 화력 발전소" # 8158444127086869324
   pmg_base_building_spaceport: "우주항" # 1105842104412328333
   pm_orbital_launch_system: "궤도 발사" # 18075257614568584245
@@ -702,6 +703,8 @@
   pm_local_computer_networks: "전산화된 서류 정리" # 14255048031683881520
   pm_rudimental_data_networks: "중앙 집중식 데이터베이스" # 18032489548004472852
   pm_advanced_data_networks: "디지털 행정" # 11184501952746348871
+  pm_early_computer_server_building_datacenter: "초기 컴퓨팅 서버" # 6154791181425787426
+  pm_late_computer_server_building_datacenter: "분산 컴퓨팅 서버" # 10127325533112376879
   pmg_ai_systems_building_datacenter: "AI 서비스" # 2310197092580265829
   pm_no_model_training: "AI 서비스 없음" # 12907418925871007395
   pm_neural_model_training: "신경망 모델" # 10370417592559506100
@@ -753,18 +756,15 @@
   pm_fusion_reactor: "중수소-삼중수소 핵융합로" # 14858936224155429612
   pmg_fusion_plasma_monitoring: "플라즈마 모니터링" # 7597758989390205646
   pm_fusion_plasma_control: "플라즈마 제어 시스템" # 9511829845976044813
+  pmg_grid_download: "그리드 운영" # 18006747250452718809
+  pm_basic_grid_download: "중전압 배전" # 2718828719636783884
+  pm_hv_grid_download: "고전압 배전" # 6324588365697258375
+  pm_uhv_grid_download: "초고전압 배전" # 14043023325486603904
   pm_waste_incinerator: "폐기물 소각로" # 13944166969979922111
   pm_cloud_databased_data_analysis: "클라우드 데이터 처리" # 9638355952874017237
   pm_predictive_fulfilment_network: "예측형 주문 처리 네트워크" # 2609255630351314655
   pm_ai_assisted_art: "AI 보조 창작" # 1761428424107184967
   pm_hydrotreated_biofuels: "수소화 처리 바이오연료" # 17350594101082734550
-  pm_automation_HFO_fuel: "중연료" # 7315218838118560079
-  pm_early_computer_server_building_datacenter: "초기 컴퓨팅 서버" # 6154791181425787426
-  pm_late_computer_server_building_datacenter: "분산 컴퓨팅 서버" # 10127325533112376879
-  pmg_grid_download: "그리드 운영" # 18006747250452718809
-  pm_basic_grid_download: "중전압 배전" # 2718828719636783884
-  pm_hv_grid_download: "고전압 배전" # 6324588365697258375
-  pm_uhv_grid_download: "초고전압 배전" # 14043023325486603904
   pmg_power_transmission: "송전 방식" # 8543870620893746687
   pm_direct_current: "직류 송전 (지역)" # 3804445119690468037
   pm_half_current: "혼합 전류 송전 (양방향)" # 8120783911676094168
