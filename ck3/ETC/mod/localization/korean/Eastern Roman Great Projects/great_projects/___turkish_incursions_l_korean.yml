@@ -112,26 +112,6 @@
   great_project_type_fortify_pontus_contribution_coastal_patrols: "해안 순찰대 창설" # 16645355153029395049
   great_project_type_fortify_pontus_contribution_coastal_patrols_desc: "폰토스의 부는 흑해 위를 항해하지만, 해적과 적의 약탈자들 또한 우리의 어선단과 상선을 노리고 항해합니다. 쾌속 순찰선으로 구성된 새로운 함대를 배치하고 주요 정박지를 요새화함으로써, 우리는 항로를 깨끗이 청소하고 상업을 보호하며 해안선이 취약점이 아닌 방패가 되도록 할 수 있습니다." # 13345742392728158149
   great_project_type_fortify_pontus_contribution_mountain_watch: "산악 감시단 자금 지원" # 12038054686654823697
-  great_project_name_fortify_armenia: "" # 17241709254077376921
-  great_project_name_possessive_fortify_armenia: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_walls_of_melitene: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_manzikert_garrison: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_secure_passes: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_rebuild_farms: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_patronize_monasteries: "" # 17241709254077376921
-  great_project_name_fortify_anatolia: "" # 17241709254077376921
-  great_project_name_possessive_fortify_anatolia: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_kaisereia: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_cilician_gates: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_veteran_settlements: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_roads: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_watchtowers: "" # 17241709254077376921
-  great_project_name_fortify_pontus: "" # 17241709254077376921
-  great_project_name_possessive_fortify_pontus: "" # 17241709254077376921
-  great_project_type_fortify_pontus_contribution_name_trebizond: "" # 17241709254077376921
-  great_project_type_fortify_pontus_contribution_name_theodosiopolis: "" # 17241709254077376921
-  great_project_type_fortify_pontus_contribution_name_coastal_patrols: "" # 17241709254077376921
-  great_project_type_fortify_pontus_contribution_name_mountain_watch: "" # 17241709254077376921
   great_project_type_fortify_pontus_contribution_mountain_watch_desc: "폰토스 알프스는 우리의 가장 큰 방어선이지만, 사납고 독립적인 부족들과 숨겨진 통로들의 거처이기도 합니다. 지역 산악 부족들에게 넉넉한 자금과 무기, 그리고 제국 칙령을 제공함으로써, 우리는 그들을 '산악 감시단'으로 공식화할 수 있습니다. 이들은 모든 비밀 통로를 꿰고 있는 충성스러운 유격대가 되어, 침략자들이 산맥을 통과하는 길을 생지옥으로 만들 것입니다." # 7010555085609935978
   great_project_type_fortify_pontus_contribution_monasteries: "폰토스 수도원 후원" # 7472082426270952361
   great_project_type_fortify_pontus_contribution_monasteries_desc: "신앙은 폰토스의 결의를 지탱하는 근간입니다. 영광스러운 수멜라와 같은 고대부터 숭상받아 온 수도원들은 단순히 경건함의 중심지일 뿐만 아니라, 험준한 산맥 속 문명과 학문의 중심지이기도 합니다. 관대한 후원은 성직자들의 변치 않는 충성과 신자들의 끊임없는 기도를 이끌어낼 것이며, 신과 인간의 눈에 우리의 대의를 신성하게 만들 것입니다." # 7187847688998581196
@@ -219,6 +199,26 @@
   syrian_fiasco_modifier_desc: "시리아를 되찾으려던 나의 야심 찬 계획은 막대한 비용만 치른 채 실패로 돌아갔습니다. 자원은 낭비되었고, 우리의 약점은 만천하에 드러났습니다. 봉신들은 이를 무능과 과욕의 증거로 여기고 있습니다." # 1078021953001490468
   ANTIOCH_LOCATION_1_TOOLTIP: "안티오크 테마가 당신의 영역 내에 있음" # 16390771063372625613
   EDESSA_LOCATION_2_TOOLTIP: "에데사 테마가 당신의 영역 내에 있음" # 10709421221716166730
+  great_project_name_fortify_armenia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_armenia: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_walls_of_melitene: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_manzikert_garrison: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_secure_passes: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_rebuild_farms: "" # 17241709254077376921
+  great_project_type_fortify_armenia_contribution_name_patronize_monasteries: "" # 17241709254077376921
+  great_project_name_fortify_anatolia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_anatolia: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_kaisereia: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_cilician_gates: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_veteran_settlements: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_roads: "" # 17241709254077376921
+  great_project_type_fortify_anatolia_contribution_name_watchtowers: "" # 17241709254077376921
+  great_project_name_fortify_pontus: "" # 17241709254077376921
+  great_project_name_possessive_fortify_pontus: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_trebizond: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_theodosiopolis: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_coastal_patrols: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_name_mountain_watch: "" # 17241709254077376921
   great_project_type_fortify_pontus_contribution_name_monasteries: "" # 17241709254077376921
   great_project_name_fortify_syria: "" # 17241709254077376921
   great_project_name_possessive_fortify_syria: "" # 17241709254077376921

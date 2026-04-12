@@ -1,0 +1,17 @@
+﻿l_english:
+ decision_group_type_abdications:0 "Abdications"
+
+ abdication_decision_0:0 "Play as Heir"
+ abdication_decision_0_tooltip:0 "Play as your heir without passign along any titles"
+ abdication_decision_0_desc:0 "Play as [ROOT.Char.GetPlayerHeir.GetFullNameRegnal] without passing along any titles.\n[ROOT.Char.GetFullNameRegnal] will become your new Liege."
+ abdication_decision_0_confirm:0 "Play as your Heir"
+
+ abdication_decision_1:0 "Abdicate"
+ abdication_decision_1_tooltip:0 "Abdicate your throne"
+ abdication_decision_1_desc:0 "Abdicate your throne and pass along your titles according to your inheritance laws."
+ abdication_decision_1_confirm:0 "Abdicate the Throne."
+
+ abdication_decision_2:0 "Retire"
+ abdication_decision_2_tooltip:0 "Abdicate your throne and retire from Head of House"
+ abdication_decision_2_desc:0 "Abdicate your throne and pass along your titles according to your inheritance laws.\nAppoint [ROOT.Char.GetPlayerHeir.GetFullNameRegnal] to be the new Head [ROOT.Char.GetHouse.GetName]"
+ abdication_decision_2_confirm:0 "Abdicate the Throne and retire."
