@@ -59,8 +59,6 @@
   giga_compendium_one_planet_origin: "프레임월드 제국" # 3168465750102513065
   giga_compendium_requires_one_planet_fail: "$giga_compendium_fail$$giga_compendium_one_planet_origin$$giga_compendium_affix$ 기원이 아니어야 합니다." # 1260573792385788870
   giga_compendium_requires_one_planet_pass: "$giga_compendium_pass$당신은 `$giga_compendium_one_planet_origin$$giga_compendium_affix$`가 아니어야 합니다." # 1955641309602879604
-  giga_compendium_requires_not_disabled_hab_pass: "$giga_compendium_pass$거주 구역이 비활성화되어 있지 않거나, ['civic:origin_void_dwellers'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 12952682974915220691
-  giga_compendium_requires_not_disabled_hab_fail: "$giga_compendium_fail$거주지 건설이 비활성화되어 있지 않거나, ['civic:origin_void_dwellers'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 15249859597899058736
   giga_compendium_habitat_control_header: "§Y거주지 중앙 단지§!" # 9846463072930273331
   giga_compendium_habitat_control_description: "$habitat_central_complex_DESC$" # 4640691964186051662
   giga_compendium_habitat_control_prereqs: "\n요구 사항:\n$giga_compendium_pre_tech_hab_1$" # 3337343840389096328
@@ -127,3 +125,5 @@
   concept_giga_compendium_tech_terraform_shattered_desc: "필수 기술: ['concept_giga_compendium_tech_terraform_molten']\n§L$giga_tech_terraform_shattered_desc$§!" # 1842021220655528811
   concept_giga_compendium_tech_macro_scale_weather_manipulation: "$giga_tech_macro_scale_weather_manipulation$" # 5831555041124451788
   concept_giga_compendium_tech_macro_scale_weather_manipulation_desc: "필요 기술:\n-['technology:tech_sensors_3']\n-['technology:tech_cruisers']\n§L$giga_tech_macro_scale_weather_manipulation_desc$§!" # 15115498051498934101
+  giga_compendium_requires_not_disabled_hab_pass: "$giga_compendium_pass$거주지가 비활성화되지 않았거나, ['civic:origin_void_dwellers'] / ['civic:origin_void_machines'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 11040918236107094892
+  giga_compendium_requires_not_disabled_hab_fail: "$giga_compendium_fail$거주지가 비활성화되지 않았거나, ['civic:origin_void_dwellers'] / ['civic:origin_void_machines'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 117550656283681887
