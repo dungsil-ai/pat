@@ -331,6 +331,7 @@
   count_owned_pop_trigger: "소유한 팝 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 7998435882307355135
   paluushia_no_ai_observation: "$TRIGGER_FAIL$AI는 팔루시아를 관측해서는 안 된다는 것을 이해하지 못한다." # 831316697114774535
   giga_news_title: "모드 소식 & 최신 변경점" # 5100355015266279083
+  giga_news_log: "§B----------------------------- 2026년 4월 12일 --------------------------------§!\n§H모드 버전, 3.36.4 (Caramel & Xahkarias 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n만우절 특수 콘텐츠가 제거되었습니다... 내년에 만나요! 수많은 수정 사항과 기타 개선 사항이 포함되었습니다.\n\n§B----------------------------- 2026년 4월 1일 ---------------------------------§!\n§H모드 버전, 3.36.3 (Caramel, Tempest, Xahkarias & PIECAT 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YSirenalia§! 위기가 드디어 수정되었습니다! 이제 §YArcade§! 프리셋에서 기본적으로 활성화되며, §Y다음 주§! 동안은 §YGigas Experience§! 프리셋에서도 활성화됩니다. 물론 수많은 수정 사항도 포함되어 있습니다.\n\n§B--------------------------- 2026년 3월 18일 -------------------------------§!\n§H모드 버전, 3.36.2 (Tempest, Xahkarias, PIECAT & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n모드가 §Y4.3§! 버전에 맞춰 업데이트되었습니다. 수많은 밸런스 조정과 더불어 Tempest가 작업한 §YQuasi-Stellar Obliterator§!와 §YOrbital Bastion§!(이제 §YOrbital Naval Logistics Office§!로 명칭 변경)의 리워크가 포함되었습니다.\n\n§B--------------------------- 2026년 1월 18일 -------------------------------§!\n§H모드 버전, 3.36.1 (TTFTCUTS, Xahkarias & Dodosman 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YMatrioskha Brain Uplinks§!와 §YSquareworld§!가 4.0 버전으로 업데이트되었습니다! Tankbound에 대한 수정 사항을 포함하여 수많은 수정 사항이 적용되었습니다.\n\n§B--------------------------- 2026년 1월 1일 -------------------------------§!\n§H모드 버전, 3.36.0 - 'PONDERING THE ORB' (TTFTCUTS, dodomans & Xahkarias 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n§YREVAMPED BIRCH WORLD§!\n버치 월드가 4.0+ 표준으로 업데이트되었습니다! 개선된 UI와 지구 특화 기능을 갖춘 Insulae와 섹터가 돌아왔습니다. Aiondia 또한 이 설계를 활용하도록 업데이트되어, Aeternum을 최신 버치 시스템과 더 가깝게 통합했습니다. 물론 기타 여러 수정 사항도 포함되었습니다.\n§B-------------------------- 2025년 11월 9일 ------------------------------§!\n\n§H모드 버전, 3.35.2 (Tempest, Xahkarias, dodosman 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YRE-ENABLED MAGINOT WORLDS§!\n마지노 월드가 돌아왔으며, 수많은 버그가 수정되었습니다.\n\n§B------------------------ 2025년 9월 25일 ----------------------------§!\n§H모드 버전, 3.35.0 - 'SPARBLERONI PIZZA' (Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YREWORKED ALDERSON DISK.§!\n거대한 4개 구역 지구를 갖춘 앨더슨 디스크가 돌아왔습니다!\n\n§YBULK MATTER REWORK§!\n이제 대형 거대 구조물은 행성에서 채굴한 벌크 물질(Bulk Matter)을 필요로 합니다. 해체를 시작하세요!\n\n§YPLANETARY SEEDER NEXUS§!\n가스 거대 행성 주위에 건설되어 시스템 전체에 식량 매장지를 생성합니다! Reddit 사용자 markjsno1(r/Stellaris)의 제안으로 추가되었습니다.\n\n§B------------------------ 2025년 9월 22일 ----------------------------§!\n§H모드 버전, 3.34.3 (Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n버전 3.34.3은 행성 뷰와 Tankbound에 대한 4.1 버전 호환성을 제공합니다. 놓친 문제가 있다면 디스코드에 제보해주세요!\n\n§B--------------------------- 2025년 6월 16일 ---------------------------------§!\n§H모드 버전, 3.34 (TTFTCUTS, PIECAT & Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n버전 3.34.1은 마침내 §YKatzenartig Imperium§!을 다시 활성화했으며, 그 외에도 수많은 버그를 수정했습니다!\n\n§B---------------------------- 2025년 5월 6일 ----------------------------------§!\n§H모드 버전, 3.34 (Elowiny & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n버전 3.34는 §Y4.0§!과의 §Y부분적 호환성§!을 제공합니다!! 하지만 수정 작업 중인 일부 모드 요소는 현재 비활성화되어 있습니다. 여기에는 §YFrameworld§!, §YOrbital Elysium§!, §YAlderson Disk§!, §YAsteroid Industry§!, §YMatrioskha Brain VR§!(보상을 위해 M.B. 출력 2배 증가), §YRingworld Variants§!, §YInterstellar Habitat§!, §YKatzenartig Imperium§!, §YSirenalia§! 및 §YBirch World§!의 전체 범위(여전히 사용 가능하지만 간소화됨)가 포함됩니다. 앞으로 며칠, 몇 주에 걸쳐 이 기능들을 순차적으로 복구하는 §Y핫픽스§!를 기대해 주세요!\n\n§B---------------------------- 2025년 4월 3일 ----------------------------------§!\n§H모드 버전, 3.33 (PIECAT, Tempest, Elowiny & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n버전 3.33은 §YB.I.G. Vat§! 리워크, 더 쉬워진 새로운 §YAlpha Aeternum§! 난이도, 메뉴 §Y리워크§!, 수많은 편의성 수정, 그리고 메뉴 진입 전 새로운 §YConfiguration§! 선택 화면을 제공합니다!\n\n§Y새로운 구성 선택 메뉴에 대한 피드백이 있다면 디스코드에 남겨주세요!§!\n\n§B--------------------------- 2025년 1월 2일 -------------------------------§!\n§H모드 버전, 3.32.3 (PIECAT & Tempest 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n버전 3.32.3은 꼭 필요한 수많은 수정 사항과 함께, 공간 부족으로 인해 프리셋을 위한 두 번째 페이지를 추가했습니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n드디어 §YBlokkat Portraits§!, §YPaluush Portraits§!, §YKatzen Portraits§! 서브/스탠드얼론 모드를 3.14 버전으로 업데이트했습니다! §YElowiny's Mods§! 컬렉션을 통해 워크숍에서 모두 확인하실 수 있습니다.\n\n§B-------------------------- 2024년 11월 20일 -----------------------------§!\n§H모드 버전, 3.32 (PIECAT 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YMACROATMOSPHERIC STABILIZER§!\n가스 지구를 리워크하여 행성의 기술자들에게 이색 가스(Exotic Gas) 생산량을 제공하는 강력한 통치자 직업을 제공합니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n§H모드 버전 3.32 - 'CUE THE TRIUMPHANT RETURN'§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YTHE SUPERMASSIVE E.H.O.F.§!\n비활성 코어 주위에 건설되며, 함대 기동성에 엄청난 버프를 제공합니다.\n\n§YREWORKED TERRAFORMING MEGASTRUCTURES§!\n이제 단일 사이트에서 건설되며, 스스로 테라포밍하는 대신 일반적인 테라포밍을 통해 행성을 테라포밍할 수 있게 합니다.\n\n§YREWORKED STRIPMINE/S.U.C.C./MEGABORE§!\n더 이상 고갈되지 않으며, 대신 행성의 티끌/가스/수정 매장지를 생성하고 강화합니다.\n\n§Y14 NEW SPECIMENS§!\n대부분 이벤트 및 위기와 관련되어 있습니다. 모두 찾을 수 있을까요?\n\n§YASCENSION PERKS MERGED§!\n앨더슨 디스크는 더 이상 퍽을 요구하지 않으며, 시스템크래프트 퍽은 천상의 조립 퍽과 통합되었습니다.\n\n§YKATZENARTIG IMPERIUM DISABLED BY DEFAULT§!\n준비되지 않은 플레이어에게 카이저가 줄 수 있는 혼란을 고려하여, 기본적으로 비활성화하도록 결정되었습니다." # 592029247862484529
   BLOKKAT: "블로캇" # 6796010452648272606
   giga_menu.101.name: "기가스트럭처" # 14328256144094145279
   giga_menu.101.desc: "기간스트럭처 모드의 버전 변경이 감지되어 메뉴가 변경됨에 따라 모든 최대 한도가 초기화되었습니다. 반복 퀘스트 진행도의 손실에 대해 양해 부탁드립니다.\n\n메뉴에서 새로운 최대 한도 설정을 선택해 주십시오." # 5979683285377015292
@@ -340,6 +341,7 @@
   giga_menu.2.confirm.tooltip: "현재 설정을 확인하십시오. '설정 확인' 버튼을 눌러 확인하십시오." # 17871715522576945977
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
+  giga_menu.1.desc: "v 3.36.4" # 5840089728037454362
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -1003,6 +1005,7 @@
   giga_menu_presets_patreon_33: "기여자: §LLucy§!" # 7136395258854628381
   giga_menu_presets_18: "기여자: §L템페스트§!" # 12926728173436328911
   giga_menu_presets_19: "기여자: §LXahkarias§!" # 6636838644871042195
+  giga_menu_presets_20: "기여자: §LCaramel§!" # 6435696099317398163
   giga_menu_presets_patreon_01: "패트리온: §MASpec§!" # 16139185641204029544
   giga_menu_presets_patreon_02: "패트리온: §MArnieKuma§!" # 10075240973785121808
   giga_menu_presets_patreon_03: "패트리온: §MGray Ashura§!" # 17700348671621487667
@@ -1047,6 +1050,7 @@
   giga_menu_presets_patreon_44: "패트리온: §MLucy§!" # 13300467206027995758
   giga_menu_presets_patreon_45: "후원자: §MBlue Lobster§!" # 4491881971796024187
   giga_menu_presets_patreon_46: "후원자: §Mabbreviatedcheese§!" # 15129235001858940938
+  giga_menu_presets_patreon_47: "Patreon: §Mbundil§!" # 13350334573986471161
   giga_menu_presets_other_01: "대회 우승자: §HThe_Strateg1st§!" # 9546388759945176561
   INVESTIGATE_CORE_ANOMALY: "코어 변칙 현상" # 959092719188967513
   INVESTIGATE_CORE_ANOMALY_DESC: "§H[from.GetName]§!에서 발견된 중심 변칙에 대한 탐사 프로젝트가 승인되었습니다. 우리의 최고 [Owner.GetScientistPlural] 및 [Owner.GetEngineerPlural]은 중심 변칙에 도달하여 그 비밀을 밝힐 수 있는 기계를 개발하기 위해 노력하고 있습니다." # 15078933999713055793
@@ -11067,26 +11071,6 @@
   planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 함선 건조 시설에 더욱 집중합니다. 거대 구조물이 제공하는 조선소 수, 해군 수용력, 함선 건조 속도를 두 배로 늘리는 동시에 성계 기지에서의 함선 건조 비용을 절감합니다." # 13705150910797117927
   planetary_drive_yard_1_fortress: "행성 방어 결속체" # 7194432528185915950
   planetary_drive_yard_1_fortress_DESC: "행성 방어에 중점을 둔 행성 조선소의 업그레이드 버전입니다. 지휘 한계를 증가시키고, 모행성을 궤도 폭격으로부터 보호하며, 적대적인 함대를 향해 일정 수의 §Y타격 코르벳함§!을 자동으로 전개하는 능력을 얻습니다." # 1169684095435709880
-  count_owned_megastructure_trigger: "" # 17241709254077376921
-  giga_news_log: "§B----------------------------- 2026년 4월 12일 --------------------------------§!\n§H모드 버전, 3.36.4 (Caramel & Xahkarias 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n만우절 특수 콘텐츠가 제거되었습니다... 내년에 만나요! 수많은 수정 사항과 기타 개선 사항이 포함되었습니다.\n\n§B----------------------------- 2026년 4월 1일 ---------------------------------§!\n§H모드 버전, 3.36.3 (Caramel, Tempest, Xahkarias & PIECAT 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YSirenalia§! 위기가 드디어 수정되었습니다! 이제 §YArcade§! 프리셋에서 기본적으로 활성화되며, §Y다음 주§! 동안은 §YGigas Experience§! 프리셋에서도 활성화됩니다. 물론 수많은 수정 사항도 포함되어 있습니다.\n\n§B--------------------------- 2026년 3월 18일 -------------------------------§!\n§H모드 버전, 3.36.2 (Tempest, Xahkarias, PIECAT & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n모드가 §Y4.3§! 버전에 맞춰 업데이트되었습니다. 수많은 밸런스 조정과 더불어 Tempest가 작업한 §YQuasi-Stellar Obliterator§!와 §YOrbital Bastion§!(이제 §YOrbital Naval Logistics Office§!로 명칭 변경)의 리워크가 포함되었습니다.\n\n§B--------------------------- 2026년 1월 18일 -------------------------------§!\n§H모드 버전, 3.36.1 (TTFTCUTS, Xahkarias & Dodosman 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YMatrioskha Brain Uplinks§!와 §YSquareworld§!가 4.0 버전으로 업데이트되었습니다! Tankbound에 대한 수정 사항을 포함하여 수많은 수정 사항이 적용되었습니다.\n\n§B--------------------------- 2026년 1월 1일 -------------------------------§!\n§H모드 버전, 3.36.0 - 'PONDERING THE ORB' (TTFTCUTS, dodomans & Xahkarias 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n§YREVAMPED BIRCH WORLD§!\n버치 월드가 4.0+ 표준으로 업데이트되었습니다! 개선된 UI와 지구 특화 기능을 갖춘 Insulae와 섹터가 돌아왔습니다. Aiondia 또한 이 설계를 활용하도록 업데이트되어, Aeternum을 최신 버치 시스템과 더 가깝게 통합했습니다. 물론 기타 여러 수정 사항도 포함되었습니다.\n§B-------------------------- 2025년 11월 9일 ------------------------------§!\n\n§H모드 버전, 3.35.2 (Tempest, Xahkarias, dodosman 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YRE-ENABLED MAGINOT WORLDS§!\n마지노 월드가 돌아왔으며, 수많은 버그가 수정되었습니다.\n\n§B------------------------ 2025년 9월 25일 ----------------------------§!\n§H모드 버전, 3.35.0 - 'SPARBLERONI PIZZA' (Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YREWORKED ALDERSON DISK.§!\n거대한 4개 구역 지구를 갖춘 앨더슨 디스크가 돌아왔습니다!\n\n§YBULK MATTER REWORK§!\n이제 대형 거대 구조물은 행성에서 채굴한 벌크 물질(Bulk Matter)을 필요로 합니다. 해체를 시작하세요!\n\n§YPLANETARY SEEDER NEXUS§!\n가스 거대 행성 주위에 건설되어 시스템 전체에 식량 매장지를 생성합니다! Reddit 사용자 markjsno1(r/Stellaris)의 제안으로 추가되었습니다.\n\n§B------------------------ 2025년 9월 22일 ----------------------------§!\n§H모드 버전, 3.34.3 (Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n버전 3.34.3은 행성 뷰와 Tankbound에 대한 4.1 버전 호환성을 제공합니다. 놓친 문제가 있다면 디스코드에 제보해주세요!\n\n§B--------------------------- 2025년 6월 16일 ---------------------------------§!\n§H모드 버전, 3.34 (TTFTCUTS, PIECAT & Elowiny 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n버전 3.34.1은 마침내 §YKatzenartig Imperium§!을 다시 활성화했으며, 그 외에도 수많은 버그를 수정했습니다!\n\n§B---------------------------- 2025년 5월 6일 ----------------------------------§!\n§H모드 버전, 3.34 (Elowiny & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n버전 3.34는 §Y4.0§!과의 §Y부분적 호환성§!을 제공합니다!! 하지만 수정 작업 중인 일부 모드 요소는 현재 비활성화되어 있습니다. 여기에는 §YFrameworld§!, §YOrbital Elysium§!, §YAlderson Disk§!, §YAsteroid Industry§!, §YMatrioskha Brain VR§!(보상을 위해 M.B. 출력 2배 증가), §YRingworld Variants§!, §YInterstellar Habitat§!, §YKatzenartig Imperium§!, §YSirenalia§! 및 §YBirch World§!의 전체 범위(여전히 사용 가능하지만 간소화됨)가 포함됩니다. 앞으로 며칠, 몇 주에 걸쳐 이 기능들을 순차적으로 복구하는 §Y핫픽스§!를 기대해 주세요!\n\n§B---------------------------- 2025년 4월 3일 ----------------------------------§!\n§H모드 버전, 3.33 (PIECAT, Tempest, Elowiny & TTFTCUTS 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n버전 3.33은 §YB.I.G. Vat§! 리워크, 더 쉬워진 새로운 §YAlpha Aeternum§! 난이도, 메뉴 §Y리워크§!, 수많은 편의성 수정, 그리고 메뉴 진입 전 새로운 §YConfiguration§! 선택 화면을 제공합니다!\n\n§Y새로운 구성 선택 메뉴에 대한 피드백이 있다면 디스코드에 남겨주세요!§!\n\n§B--------------------------- 2025년 1월 2일 -------------------------------§!\n§H모드 버전, 3.32.3 (PIECAT & Tempest 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§RH§!§HA§!§YP§!§GP§!§BY§! §MN§!§RE§!§HW§! §YY§!§GE§!§BA§!§MR§!\n버전 3.32.3은 꼭 필요한 수많은 수정 사항과 함께, 공간 부족으로 인해 프리셋을 위한 두 번째 페이지를 추가했습니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n드디어 §YBlokkat Portraits§!, §YPaluush Portraits§!, §YKatzen Portraits§! 서브/스탠드얼론 모드를 3.14 버전으로 업데이트했습니다! §YElowiny's Mods§! 컬렉션을 통해 워크숍에서 모두 확인하실 수 있습니다.\n\n§B-------------------------- 2024년 11월 20일 -----------------------------§!\n§H모드 버전, 3.32 (PIECAT 제작)§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YMACROATMOSPHERIC STABILIZER§!\n가스 지구를 리워크하여 행성의 기술자들에게 이색 가스(Exotic Gas) 생산량을 제공하는 강력한 통치자 직업을 제공합니다.\n\n§B-------------------------- 2024년 11월 16일 -----------------------------§!\n§H모드 버전 3.32 - 'CUE THE TRIUMPHANT RETURN'§!\n§G전체/상세 패치 노트는 디스코드에서 확인하세요.§!\n\n§YTHE SUPERMASSIVE E.H.O.F.§!\n비활성 코어 주위에 건설되며, 함대 기동성에 엄청난 버프를 제공합니다.\n\n§YREWORKED TERRAFORMING MEGASTRUCTURES§!\n이제 단일 사이트에서 건설되며, 스스로 테라포밍하는 대신 일반적인 테라포밍을 통해 행성을 테라포밍할 수 있게 합니다.\n\n§YREWORKED STRIPMINE/S.U.C.C./MEGABORE§!\n더 이상 고갈되지 않으며, 대신 행성의 티끌/가스/수정 매장지를 생성하고 강화합니다.\n\n§Y14 NEW SPECIMENS§!\n대부분 이벤트 및 위기와 관련되어 있습니다. 모두 찾을 수 있을까요?\n\n§YASCENSION PERKS MERGED§!\n앨더슨 디스크는 더 이상 퍽을 요구하지 않으며, 시스템크래프트 퍽은 천상의 조립 퍽과 통합되었습니다.\n\n§YKATZENARTIG IMPERIUM DISABLED BY DEFAULT§!\n준비되지 않은 플레이어에게 카이저가 줄 수 있는 혼란을 고려하여, 기본적으로 비활성화하도록 결정되었습니다." # 592029247862484529
-  giga_menu.1.name: "" # 17241709254077376921
-  giga_menu.1.desc: "v 3.36.4" # 5840089728037454362
-  giga_menu_presets_20: "기여자: §LCaramel§!" # 6435696099317398163
-  giga_menu_presets_patreon_47: "Patreon: §Mbundil§!" # 13350334573986471161
-  giga_achievements.001.name: "" # 17241709254077376921
-  giga_achievements.001.desc: "" # 17241709254077376921
-  giga_mapped_star_desc: "" # 17241709254077376921
-  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
-  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
-  decision_repaired_shattered_alderson_desc: "" # 17241709254077376921
-  decision_psionic_sublimation_desc: "" # 17241709254077376921
-  decision_psychic_illuminate_desc: "" # 17241709254077376921
-  count_pool_leader_trigger: "" # 17241709254077376921
-  ehof_header_blank: "" # 17241709254077376921
-  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
-  ehof_mega_trader.110_prefix: "" # 17241709254077376921
-  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
-  giga_defense_nexus_text_no: "" # 17241709254077376921
   defense_nexus_title: "타격 코르벳: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15402400127574864374
   defense_nexus_title_deployed: "§G스트라이크 코르벳함 출격§!" # 14978773512484354794
   defense_nexus_max_count: "최대: §Y[planet.giga_nexus_ship_count_max]§!" # 928292808310651321
@@ -11883,6 +11867,26 @@
   GIGA_LG_BELLIGERENT_GREETING_01: "그냥 굴복하고 죽으시오. 우리에겐 더 중요한 일이 있소." # 7504561104640908474
   GIGA_EG_ARROGANT_GREETING_01: "우리가 진정한 게이밍의 의미를 보여주겠노라." # 2957423574131999103
   GIGA_EG_BELLIGERENT_GREETING_01: "우리의 헤아릴 수 없이 장엄한 전투 기술에 완전히 압도당하고 능가당할 준비를 하시오!" # 628555582377460348
+  count_owned_megastructure_trigger: "" # 17241709254077376921
+  giga_menu.1.name: "" # 17241709254077376921
+  giga_achievements.001.name: "" # 17241709254077376921
+  giga_achievements.001.desc: "" # 17241709254077376921
+  giga_mapped_star_desc: "" # 17241709254077376921
+  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
+  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
+  decision_repaired_shattered_alderson_desc: "" # 17241709254077376921
+  decision_psionic_sublimation_desc: "" # 17241709254077376921
+  decision_psychic_illuminate_desc: "" # 17241709254077376921
+  count_pool_leader_trigger: "" # 17241709254077376921
+  ehof_header_blank: "" # 17241709254077376921
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  ehof_mega_trader.110_prefix: "" # 17241709254077376921
+  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  giga_defense_nexus_text_no: "" # 17241709254077376921
+  GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
   GIGA_BR_NEUTRAL_GREETING_01: "당신이 원하는 것이 무엇입니까? 궁극적인 해답은 저절로 찾아지지 않을 것입니다." # 3149776515838346598
   GIGA_BR_NEUTRAL_GREETING_02: "궁극적인 해답을 찾게 되면, 나는 마침내 자유로워질 것이다." # 15031231153557928726
   GIGA_BR_NEUTRAL_GREETING_03: "궁극적인 해답이 바로 눈앞에 있습니다. 저는 알고 있습니다. 느껴집니다." # 17252259521547457422
@@ -12539,10 +12543,6 @@
   GIGA_SUPER_OMEGA_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_super_omega_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 2700677038951561184
   SYSTEMCRAFT_KATZENLAND_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_katzen_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 6131593437285614062
   SYSTEMCRAFT_RAY_OF_DOOM_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_ray_of_doom_1_fleet_damage|0G$§!의 피해를 입힙니다." # 14455505001106544854
-  GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
-  GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
   GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
