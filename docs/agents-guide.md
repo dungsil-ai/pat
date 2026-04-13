@@ -119,7 +119,8 @@ scripts/
 ## Development Notes
 
 - Uses TypeScript with jiti for direct execution
-- Google Gemini AI integration requires `GOOGLE_GENERATIVE_AI_API_KEY` environment variable
+- Google Gemini AI integration uses `GOOGLE_AI_STUDIO_TOKEN` by default and falls back to `GOOGLE_GENERATIVE_AI_API_KEY`
+- The repository pins Node.js via `.node-version` (currently v24.11.1), and GitHub composite actions also run on Node 24
 - File hashing system prevents unnecessary retranslation of unchanged content
 - Translation dictionary in `scripts/utils/dictionary.ts` provides manual overrides
 - Logging system supports different verbosity levels via `scripts/utils/logger.ts`

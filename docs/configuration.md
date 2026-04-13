@@ -203,7 +203,12 @@ ck3/LocalMod/
 **값:** `"semantic"` | `"natural"` | `"github"` | `"default"`  
 **기본값:** `"default"`  
 
-**설명:** 버전 선택 전략을 지정합니다. `github`는 GitHub Releases의 최신 태그를 그대로 사용합니다.
+**설명:** 버전 선택 전략을 지정합니다.
+
+- `semantic`: GitHub 릴리스/태그를 시멘틱 버전으로 해석해 최신 안정 버전을 선택
+- `natural`: 태그명을 자연 정렬로 비교하며 `beta`, `alpha`, `rc` 같은 프리릴리즈 성격 태그를 제외
+- `github`: GitHub Releases의 최신 **공개 릴리스**를 사용하며 프리릴리즈/드래프트를 제외
+- `default`: 기본 브랜치를 체크아웃합니다. 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교하며, `["."]`은 저장소 전체를 의미합니다.
 
 ### Replace 폴더 처리
 
@@ -344,6 +349,16 @@ pnpm ck3
 **필수:** 아니오 (선택)
 
 **설명:** 기존 Gemini SDK 키. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+
+### GITHUB_TOKEN
+
+**필수:** 아니오 (선택)
+
+**설명:** GitHub API 인증용 토큰입니다. 설정하면 업스트림 대시보드, GitHub 릴리스 조회, 태그/커밋 비교 시 레이트 리밋 완화와 안정성 향상에 도움이 됩니다.
+
+```env
+GITHUB_TOKEN=github_pat_xxx
+```
 
 ### GEMINI_MODEL
 

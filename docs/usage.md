@@ -4,7 +4,7 @@
 
 ### 필수 요구사항
 
-- **Node.js**: v18 이상
+- **Node.js**: v24 권장 (`.node-version` 기준 24.11.1, 최소 v18)
 - **pnpm**: 10.24.0 이상 (권장)
 - **Git**: 최신 버전
 - **Google AI API 키**: Gemini API 액세스
@@ -36,6 +36,8 @@ cp .env.sample .env
 GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
 # (선택) 구 Gemini 키 폴백
 GOOGLE_GENERATIVE_AI_API_KEY=legacy_key
+# (선택) GitHub API 인증/레이트 리밋 완화
+GITHUB_TOKEN=github_pat_xxx
 
 # 실행 옵션
 LOG_LEVEL=info
@@ -53,7 +55,8 @@ GEMINI_MODEL=gemini-flash-lite-latest
 **환경 변수 설명:**
 - `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev가 사용하는 기본 Gemini API 키 (필수)
 - `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
-- `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 10)
+- `GITHUB_TOKEN`: (선택) GitHub API 인증용 토큰. 업스트림 대시보드 및 GitHub 기반 버전 조회의 레이트 리밋 완화에 유용
+- `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 20)
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
 - `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
 - `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-flash-lite-latest`) 사용
@@ -177,6 +180,7 @@ version_strategy = "semantic"  # 버전 전략 지정
 
 **github:**
 - ✅ 릴리스 페이지의 최신 태그를 그대로 사용
+- ✅ 프리릴리즈/드래프트를 자동 제외해 안정적인 공개 릴리스 기준 추적
 - ✅ 태그 규칙이 들쭉날쭉해도 최신 릴리스만 필요할 때 단순함
 - ❌ GitHub 저장소만 지원
 - ❌ 릴리스가 없는 저장소는 실패
@@ -184,6 +188,7 @@ version_strategy = "semantic"  # 버전 전략 지정
 **default:**
 - ✅ 가장 간단하고 신뢰성 높음
 - ✅ 모든 저장소 타입 지원
+- ✅ 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교
 - ❌ 항상 최신 버전을 선택하지는 않음
 
 #### 오류 처리
@@ -240,10 +245,12 @@ git push origin main
 
 - 워크플로우: `.github/workflows/upstream-translation-dashboard.yml`
   - 12시간마다 스케줄 실행 + 수동 `workflow_dispatch` 지원
-  - `pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md` 로 대시보드 본문 생성 (GitHub API/GraphQL 호출 시 `GITHUB_TOKEN` 필요)
+  - `pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md` 로 대시보드 본문 생성 (`GITHUB_TOKEN`이 있으면 GitHub API/GraphQL 인증에 사용)
 - 결과: 제목 `[대시보드] 업스트림 변경 대비 번역 미반영 현황`, 라벨 `upstream-dashboard` 인 오픈 이슈를 생성/업데이트
 - 표 컬럼: 게임/모드, 추적 기준(`version_strategy`), tag/commit 추적 방식, 번역 기준 버전, 최신 버전, 상태(미반영/최신/번역 이력 없음/조회 실패) — compare 링크는 `번역 기준 버전`/`최신 버전` 텍스트에 포함
 - annotated 태그도 커밋까지 추적하여 최신 태그 비교 정확도를 높임
+- `github` 전략은 공개 릴리스만 비교하며 프리릴리즈/드래프트는 제외
+- `default` 전략은 기본 브랜치 HEAD 전체가 아니라 `upstream.localization` 경로들에 영향을 준 최신 커밋으로 비교합니다. 경로가 `["."]`이면 저장소 전체 커밋을 사용합니다.
 
 ## 명령어 설명
 

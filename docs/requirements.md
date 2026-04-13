@@ -48,7 +48,9 @@
 #### FR-3.2: 버전 전략 지원
 - **semantic**: 시멘틱 버전 태그 정렬 (GitHub API + semver)
 - **natural**: 자연 정렬 버전 선택 (git ls-remote + natsort)
+- **github**: GitHub Releases 최신 공개 릴리스 선택 (프리릴리즈/드래프트 제외)
 - **default**: 기본 브랜치 사용 (기존 방식)
+- **대시보드 비교**: `default` 전략은 `upstream.localization` 경로에 영향을 준 최신 커밋 기준 (`["."]`은 저장소 전체)
 - **설정**: `meta.toml`의 `version_strategy` 필드
 - **오류 처리**: 잘못된 전략 시 GitHub Issues 자동 생성
 
@@ -122,7 +124,8 @@
 - **형식**: TOML
 
 #### FR-7.2: 환경 변수
-- **필수**: `GOOGLE_AI_STUDIO_TOKEN`
+- **필수(둘 중 하나)**: `GOOGLE_AI_STUDIO_TOKEN` 또는 `GOOGLE_GENERATIVE_AI_API_KEY`
+- **선택**: `GITHUB_TOKEN` (GitHub API 인증/레이트 리밋 완화)
 - **형식**: `.env` 파일 또는 환경 변수
 
 ### 8. 로깅 시스템 (Logging System)
