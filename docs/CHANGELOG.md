@@ -2,6 +2,29 @@
 
 프로젝트의 주요 변경 사항 및 개선 사항을 기록합니다.
 
+## 2026년 4월
+
+### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-13
+
+**문서 반영 대상 변경:**
+- 번역 워크플로우가 `GITHUB_TOKEN`으로 GitHub API 인증을 사용하도록 조정되어 레이트 리밋 영향을 완화
+- `github` 버전 전략이 최신 공개 릴리스만 추적하고 프리릴리즈/드래프트는 제외
+- 업스트림 대시보드의 `default` 전략이 기본 브랜치 전체 대신 `upstream.localization` 경로 기반 최신 커밋을 비교
+- 업스트림 대시보드 완료 후 이슈 자동 갱신 흐름과 annotated 태그 비교 안정성 보강
+- GitHub Actions composite action 런타임을 Node.js 24로 올리고 로컬 shared 패키지 해석을 위해 `NODE_OPTIONS=--preserve-symlinks` 적용
+
+**관련 파일:**
+- `.github/workflows/translate-ck3.yml`
+- `.github/workflows/translate-vic3.yml`
+- `.github/workflows/translate-stellaris.yml`
+- `.github/actions/create-untranslated-issues/action.yml`
+- `.github/actions/close-translation-issues/action.yml`
+- `scripts/upstream-dashboard.ts`
+- `scripts/utils/upstream.ts`
+
+---
+
 ## 2026년 1월
 
 ### GitHub Actions 공유 패키지 생성
