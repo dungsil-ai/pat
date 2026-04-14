@@ -1,5 +1,6 @@
 ﻿l_korean:
   austrian_empire_collapse.1.t: "오스트리아 제국 붕괴" # 11321758258364105959
+  austrian_empire_collapse.1.d: "[ROOT.GetCountry.GetAdjective] 제국은 수 세기 동안 중앙 유럽을 지배해 왔으나, 현재 위기 상황에 직면해 있습니다. 우리 제국의 취약한 균형은 무너졌습니다. 많은 국가가 독립을 선언함에 따라 제국의 심장부는 폐허가 되었습니다. 빈은 전쟁의 포성과 해체의 침묵 사이에서 마비되었습니다. 구체제는 죽어가고 있습니다. 과연 싸우다 장렬히 전사할 것인가, 아니면 존엄하게 묻힐 것인가?" # 11921694410158635380
   austrian_empire_collapse.1.a: "우리는 먼저 [SCOPE.sCountry('collapse_hungary_scope').GetName]을(를) 탈환해야 합니다!" # 5874258902348278802
   austrian_empire_collapse.1.b: "우리는 먼저 [SCOPE.sCountry('collapse_czech_scope').GetName]을(를) 탈환해야만 합니다!" # 12571015765041825838
   austrian_empire_collapse.1.c: "양쪽 모두와 싸워라!" # 11240903077334080474
@@ -10,19 +11,23 @@
   austrian_empire_collapse.2.a: "[ROOT.GetCountry.GetName]과 [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] 만세!" # 5777406380981692170
   austrian_empire_collapse.3.t: "마자르 대 독일" # 3769291734258615485
   austrian_empire_collapse.3.d: "제국의 섬세한 민족 구성이 찢어지기 시작하고 있습니다. 헝가리 대표단은 국가 사무에서 마자르어가 독일어와 동등한 지위로 인정받아야 한다고 주장합니다. 일부에게 이것은 제국 결속에 대한 위협으로 비치지만, 다른 이들에게는 오랫동안 무시되어 온 정당한 요구입니다." # 15912187468639841032
+  austrian_empire_collapse.3.a: "독일, 아니면 아무것도 아니다!" # 10574471503031949054
   austrian_empire_collapse.3.b: "지방 행정에서 마자르족 인정" # 2905046872400617773
   austrian_empire_collapse.4.t: "헝가리 봉기" # 6130280584356188770
   austrian_empire_collapse.4.d: "헝가리에서 끓어오르던 불만이 공개적인 봉기로 터져 나왔습니다. 민족주의 민병대가 마을들을 점거하고, 철도를 파괴하며, 독립의 깃발을 내걸었습니다. 제국군 수비대는 포위된 채, 흔들리는 수도의 명령을 기다리고 있습니다." # 16166685928330142391
   austrian_empire_collapse.4.a: "군대를 투입하라!" # 15392726399932075935
   austrian_empire_collapse.4.b: "개혁 및 자치 제공." # 16372686346535999358
   austrian_empire_collapse.5.t: "헝가리인에게 평등한 권리" # 15472817592737585720
+  austrian_empire_collapse.5.d: "앞서 어느 정도의 인정을 확보한 헝가리 대표단은 이제 제국 법 아래 완전한 평등을 요구하고 있습니다. 그들의 요구는 제국 내 여러 민족들 사이에서 메아리치고 있으며, 빈이 양보하거나 아니면 압박이 감당할 수 없을 정도로 커질 것입니다." # 10524300224525745852
   austrian_empire_collapse.5.a: "특권은 그대로 유지됩니다!" # 14732309919672530998
   austrian_empire_collapse.5.b: "헝가리에 평등을 부여한다." # 15752884196456158680
   austrian_empire_collapse.6.t: "헝가리의 독립" # 5460145947201935493
   austrian_empire_collapse.6.d: "어떠한 해법도 찾지 못한 채, 헝가리는 빈과의 관계를 단절하며 완전한 독립을 선언했습니다. 이 대담한 행동은 제국의 정통성 근간을 뒤흔들었으며, 다른 이들에게 위험한 선례를 남겼습니다. 오스트리아는 자국의 주장을 회복할 것인가, 아니면 분열을 받아들일 것인가?" # 2927918347608107760
   austrian_empire_collapse.6.a: "반란을 진압하라!" # 11078465540029992460
+  austrian_empire_collapse.6.b: "그들을 짓밟아라, 우리는 그들에게 충분히 관대했다!" # 14395917465939960008
   austrian_empire_collapse.6.c: "헝가리를 독립시키시오." # 437983816168893646
   austrian_empire_collapse.7.t: "트리에스테, 미텔오이로파의 항구" # 11884059411764837578
+  austrian_empire_collapse.7.d: "중유럽에서 아드리아해로 향하는 관문인 트리에스테(이탈리아어로는 트리에스트)는 제국 기획자들에게 오스트리아의 경제적, 해군적 영향력을 유지하기 위한 핵심으로 여겨집니다. 이곳을 산업과 해상 무력의 등불로 만드는 것이 자원을 아낄 수만 있다면 제국의 생존을 보장할지도 모릅니다." # 5291792296036508109
   austrian_empire_collapse.7.a: "항구에 투자하고 요새화하십시오." # 9745418099109640351
   austrian_empire_collapse.7.b: "우리는 그러한 사치를 감당할 수 없습니다." # 8502328094595698704
   austrian_empire_collapse.8.t: "이탈리아가 꿈틀거린다" # 9542085995145064286
@@ -31,9 +36,11 @@
   austrian_empire_collapse.8.b: "개혁 및 자치 제공." # 16372686346535999358
   austrian_empire_collapse.8.c: "[SCOPE.sCountry('stirs_italy_scope').GetName]에게 프로빈스를 반환하시오." # 10589736730124773907
   austrian_empire_collapse.9.t: "갈리시아, 제국의 곡창" # 14263629102372193592
+  austrian_empire_collapse.9.d: "갈리치아는 제국을 먹여 살리지만, 특히 서부 지역의 농업이 빠르게 산업화되는 지금 그 대가는 혹독합니다. 제국의 조세는 빈의 식탁을 곡물로 채우는 동안 농민들을 빈곤의 나락으로 몰아넣고 있습니다. 그들의 인내심은 바닥을 드러내고 있으며, 일부는 벌써 자치, 혹은 그보다 더한 것을 이야기하고 있습니다." # 14089768737463676815
   austrian_empire_collapse.9.a: "갈리시아를 더 강하게 압박하십시오." # 2699926512749096669
   austrian_empire_collapse.9.b: "갈리시아 농업을 보조하십시오." # 1143391275427726704
   austrian_empire_collapse.10.t: "체코인의 평등 요구" # 205794216974769254
+  austrian_empire_collapse.10.d: "헝가리의 단호함에 고무된 체코의 지식인과 부르주아 계층은 이제 시민적, 정치적 평등을 요구하고 있습니다. 오랫동안 하등한 민족으로 취급받았던 그들은 재구상되고 더 공정한 제국 내에서, 혹은 그 밖에서 새로운 지위를 찾고자 합니다." # 1774556722906128222
   austrian_empire_collapse.10.a: "특권은 연장되지 않을 것입니다." # 14538522738690572961
   austrian_empire_collapse.10.b: "체코인에게 시민적 평등 부여" # 6383620737350372619
   austrian_empire_collapse.11.t: "슬로바키아 문제" # 1867791000383802143
@@ -43,8 +50,10 @@
   austrian_empire_collapse.12.t: "체코슬로바키아의 독립" # 11594408958962521585
   austrian_empire_collapse.12.d: "과감한 움직임으로 프라하가 주권적인 체코슬로바키아 공화국을 선포했습니다. 혁명가들이 지지를 결집함에 따라 제국의 슬라브 속주들에 대한 지배력이 흔들리고 있으며, 외세들은 오스트리아의 다음 행보를 예의주시하고 있습니다." # 6289882117178846257
   austrian_empire_collapse.12.a: "반란을 진압하라!" # 11078465540029992460
+  austrian_empire_collapse.12.b: "반란군을 처벌하라, 그들은 이미 충분한 권리를 누렸다!" # 1904032317179545481
   austrian_empire_collapse.12.c: "체코슬로바키아 승인" # 5511091728088012947
   austrian_empire_collapse.13.t: "유고슬라비아 연합의 속삭임" # 16617408168946720652
+  austrian_empire_collapse.13.d: "류블랴나의 카페에서 사라예보의 교실에 이르기까지, 남슬라브 지식인들은 언어와 유산으로 묶인 하나의 유고슬라브 민족에 대해 이야기합니다. 누군가에게 이것은 유토피아적 이상주의이지만, 다른 이들에게는 오스트리아의 발칸 지배에 대한 실존적 위협입니다." # 2496545831926789539
   austrian_empire_collapse.13.a: "그런 위험한 사상들을 검열하시오!" # 17064739502322923721
   austrian_empire_collapse.13.b: "자유로운 토론 허용" # 13467706263976671406
   austrian_empire_collapse.14.t: "트란실바니아 문제" # 12853319330313858318
@@ -58,6 +67,7 @@
   austrian_empire_collapse.15.b: "광범위한 자치권 부여" # 18137248332803905575
   austrian_empire_collapse.15.c: "갈리시아를 [SCOPE.sCountry('polish_question_scope').GetName]에 할양" # 6944821184868110788
   austrian_empire_collapse.16.t: "보이보디나 제안" # 7668829681064037115
+  austrian_empire_collapse.16.d: "세르비아 왕국은 민족적 유대와 제국의 실정을 이유로 보이보디나 지역에 대한 통제권을 공식적으로 요청했습니다. 제국이 약화되고 해당 지역이 불안정한 상황에서, 이 요청을 수락하는 것이 위기를 완화할 수도, 혹은 다른 이들이 같은 요구를 하도록 부추길 수도 있습니다." # 9566369077939066818
   austrian_empire_collapse.16.a: "[SCOPE.sCountry('serbia_proposal_scope').GetName]의 요청을 수락" # 5187431137026579477
   austrian_empire_collapse.16.b: "주장을 기각한다" # 11030915848875490198
   austrian_empire_collapse.17.t: "크라쿠프 협정" # 8308585047920995078
@@ -70,13 +80,3 @@
   austrian_empire_collapse_lose_minor_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정성 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 약간의 진전#을 잃었습니다!" # 8663667535979777717
   austrian_empire_collapse_lose_moderate_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정성 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 진척도를 잃습니다#!" # 118428018394355143
   austrian_empire_collapse_lose_great_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 진척도를 크게 잃었습니다!" # 3719653503673594856
-  austrian_empire_collapse.1.d: "[ROOT.GetCountry.GetAdjective] 제국은 수 세기 동안 중앙 유럽을 지배해 왔으나, 현재 위기 상황에 직면해 있습니다. 우리 제국의 취약한 균형은 무너졌습니다. 많은 국가가 독립을 선언함에 따라 제국의 심장부는 폐허가 되었습니다. 빈은 전쟁의 포성과 해체의 침묵 사이에서 마비되었습니다. 구체제는 죽어가고 있습니다. 과연 싸우다 장렬히 전사할 것인가, 아니면 존엄하게 묻힐 것인가?" # 11921694410158635380
-  austrian_empire_collapse.3.a: "독일, 아니면 아무것도 아니다!" # 10574471503031949054
-  austrian_empire_collapse.5.d: "앞서 어느 정도의 인정을 확보한 헝가리 대표단은 이제 제국 법 아래 완전한 평등을 요구하고 있습니다. 그들의 요구는 제국 내 여러 민족들 사이에서 메아리치고 있으며, 빈이 양보하거나 아니면 압박이 감당할 수 없을 정도로 커질 것입니다." # 10524300224525745852
-  austrian_empire_collapse.6.b: "그들을 짓밟아라, 우리는 그들에게 충분히 관대했다!" # 14395917465939960008
-  austrian_empire_collapse.7.d: "중유럽에서 아드리아해로 향하는 관문인 트리에스테(이탈리아어로는 트리에스트)는 제국 기획자들에게 오스트리아의 경제적, 해군적 영향력을 유지하기 위한 핵심으로 여겨집니다. 이곳을 산업과 해상 무력의 등불로 만드는 것이 자원을 아낄 수만 있다면 제국의 생존을 보장할지도 모릅니다." # 5291792296036508109
-  austrian_empire_collapse.9.d: "갈리치아는 제국을 먹여 살리지만, 특히 서부 지역의 농업이 빠르게 산업화되는 지금 그 대가는 혹독합니다. 제국의 조세는 빈의 식탁을 곡물로 채우는 동안 농민들을 빈곤의 나락으로 몰아넣고 있습니다. 그들의 인내심은 바닥을 드러내고 있으며, 일부는 벌써 자치, 혹은 그보다 더한 것을 이야기하고 있습니다." # 14089768737463676815
-  austrian_empire_collapse.10.d: "헝가리의 단호함에 고무된 체코의 지식인과 부르주아 계층은 이제 시민적, 정치적 평등을 요구하고 있습니다. 오랫동안 하등한 민족으로 취급받았던 그들은 재구상되고 더 공정한 제국 내에서, 혹은 그 밖에서 새로운 지위를 찾고자 합니다." # 1774556722906128222
-  austrian_empire_collapse.12.b: "반란군을 처벌하라, 그들은 이미 충분한 권리를 누렸다!" # 1904032317179545481
-  austrian_empire_collapse.13.d: "류블랴나의 카페에서 사라예보의 교실에 이르기까지, 남슬라브 지식인들은 언어와 유산으로 묶인 하나의 유고슬라브 민족에 대해 이야기합니다. 누군가에게 이것은 유토피아적 이상주의이지만, 다른 이들에게는 오스트리아의 발칸 지배에 대한 실존적 위협입니다." # 2496545831926789539
-  austrian_empire_collapse.16.d: "세르비아 왕국은 민족적 유대와 제국의 실정을 이유로 보이보디나 지역에 대한 통제권을 공식적으로 요청했습니다. 제국이 약화되고 해당 지역이 불안정한 상황에서, 이 요청을 수락하는 것이 위기를 완화할 수도, 혹은 다른 이들이 같은 요구를 하도록 부추길 수도 있습니다." # 9566369077939066818

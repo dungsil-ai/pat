@@ -14,6 +14,7 @@
   law_uranium_civil_usage: "민간 우라늄 사용" # 18052908623740139489
   law_uranium_civil_usage_desc: "이 법안은 핵 발전과 같은 민간 목적으로 우라늄 사용을 허용합니다. 이는 에너지 자립을 증진하고 화석 연료에 대한 의존도를 줄입니다." # 9188354797369482916
   law_uranium_full_usage: "군용 우라늄 사용" # 12320069945484720546
+  law_uranium_full_usage_desc: "이 법은 우라늄을 핵무기를 포함한 민간 및 군사적 목적 모두에 사용할 수 있도록 허용합니다. 이는 에너지 자립을 촉진하고 국가 안보를 강화합니다. 이 법을 제정하면 #i 원자 폭탄#!을 보유하게 됩니다." # 9244617108747902704
   law_uranium_ban: "우라늄 금지" # 7238717585891754749
   law_uranium_ban_desc: "이 법안은 민간 및 군사적 용도를 포함한 모든 목적의 우라늄 사용을 금지합니다." # 15500157273357068710
   lawgroup_bioethics: "생명 윤리" # 9876904520481315233
@@ -71,10 +72,9 @@
   law_command_economy_menshevik: "소비에트 국가 주도 경제" # 3778979648446655626
   law_command_economy_menshevik_desc: "이 법률은 멘셰비키 원칙을 따르는 국가 주도 경제를 창출합니다. 국가는 주요 산업, 은행, 인프라를 통제하는 한편, 소규모 및 중견 기업에서는 사적 소유가 가능하도록 합니다. 경제 계획은 사회 복지와 근대화를 보장하는 것을 목표로 하지만, 정치적 다원주의, 노동조합, 의회 감독의 틀 안에서 이루어집니다. 시장 요소들은 공공 조율과 공존하며 혼란과 폭정 모두를 방지하고자 합니다." # 9282747996973439920
   law_council_republic_soviet: "소비에트 노동자 평의회 공화국" # 18446522381139756149
+  law_council_republic_soviet_desc: "이 법은 모든 수준에서 최고의 권위를 갖는 노동자, 병사, 농민 소비에트가 통치하는 국가를 수립합니다. 정치 권력은 공산당 아래 중앙 집중화되며, 공산당은 소비에트를 사회주의 건설로 이끕니다. 개인의 자유와 반대 정당은 집단적 혁명 목표에 종속되며, 생산과 행정은 당의 감독하에 위계적인 노동자 통제를 통해 관리됩니다." # 13464979584128593978
   ztr_un_hr_encouraged_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정을 장려하지 않습니다." # 6387046048474036882
   ztr_un_hr_conservative_decolonization_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 탈식민지화#! 과정에 대해 보수적이지 않습니다." # 6746939984270385719
   ztr_un_hr_illegalized_slavery_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 노예제#!를 #n 불법화#!하지 않았습니다." # 16879454732413035856
   ztr_un_hr_restricted_labor_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 아동 노동#!을 제한하지 않았습니다." # 14894112425902922775
   ztr_un_hr_compulsory_primary_school_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 의무 초등 교육#!을 #n 필수#!로 지정하지 않았습니다." # 7219685078397618886
-  law_uranium_full_usage_desc: "이 법은 우라늄을 핵무기를 포함한 민간 및 군사적 목적 모두에 사용할 수 있도록 허용합니다. 이는 에너지 자립을 촉진하고 국가 안보를 강화합니다. 이 법을 제정하면 #i 원자 폭탄#!을 보유하게 됩니다." # 9244617108747902704
-  law_council_republic_soviet_desc: "이 법은 모든 수준에서 최고의 권위를 갖는 노동자, 병사, 농민 소비에트가 통치하는 국가를 수립합니다. 정치 권력은 공산당 아래 중앙 집중화되며, 공산당은 소비에트를 사회주의 건설로 이끕니다. 개인의 자유와 반대 정당은 집단적 혁명 목표에 종속되며, 생산과 행정은 당의 감독하에 위계적인 노동자 통제를 통해 관리됩니다." # 13464979584128593978

@@ -3,6 +3,7 @@
   je_france_pop_reason: "[ROOT.GetCountry.GetName]은 선진적인 [Concept('concept_demographic_stages','$concept_demographic_stages$')]을 경험한 최초의 주요 유럽 [Concept('concept_country','$concept_country$')]이었습니다. 19세기 전반기가 끝나갈 무렵, 도시화, 문화적 변화, 기초적인 피임법의 보급, 여성 교육 수준 향상 및 상속 정책으로 인해 [ROOT.GetCountry.GetAdjective] 인구 사이에서 출산율 감소가 관찰되었습니다." # 4315721470615750910
   je_france_pop_goal: "[ROOT.GetCountry.GetName]의 의료 혜택을 법률, 도시 중심지, 혹은 페니실린과 항생제 같은 신기술 연구를 통해 증진하십시오." # 11515236645800165865
   je_irish_independence: "아일랜드 문제" # 12647848951316758800
+  je_irish_independence_reason: "아일랜드는 1801년 영국 연합왕국의 일부가 되었으나, 아일랜드인들은 오랫동안 독립을 열망해 왔습니다. 아일랜드 문제는 실질적인 경제적 또는 정치적 통합이 결여되었음에도 불구하고 아일랜드가 독립 국가가 되어야 할지, 아니면 영국 연합왕국의 일부로 남아야 할지에 대한 논쟁을 의미합니다. 최근 몇 년간 아일랜드 민족주의 운동은 탄력을 받았으며, 많은 이들이 #v 민족 자결주의#!와 독립적인 아일랜드 국가 수립을 옹호하고 있습니다." # 2960876738515540746
   je_irish_independence_goal: "아일랜드의 혼란을 줄이고, 낮은 진척도를 유지하며, 가장 중요한 것은 문화 배척 또는 다문화주의 법안을 제정해야 합니다." # 2859706042758989264
   je_arabia_unification: "아라비아 통일" # 17067482034680359786
   je_arabia_unification_reason: "아라비아 반도는 문화적, 종교적으로 매우 중요한 지역이지만, 아바스 왕조 칼리파국의 쇠퇴 이후 다양한 국가와 부족 영토로 분열되어 왔습니다. 오늘날, 민족주의의 부상과 통일에 대한 열망과 함께, 아라비아 반도를 하나의 국가로 통합하려는 움직임이 점차 커지고 있습니다. 이러한 통합은 이 지역의 정치적, 경제적 힘을 강화할 뿐만 아니라 그 주민들 사이의 문화적, 종교적 연대를 증진시킬 것입니다." # 15888724209490434164
@@ -365,6 +366,8 @@
   ztr_un_open_institutions_menu_desc: "안전보장이사회 상임이사국으로서, 우리는 모든 회원국 간의 투표에 부쳐질 주요 유엔 관련 기구의 설립을 제안할 수 있습니다." # 17760099353852115722
   ztr_un_hr_slavery_illegal: "유엔 노예제 반대 선언" # 15821793547599326939
   ztr_un_hr_slavery_illegal_desc: "유엔은 국제법상 모든 형태의 노예제를 불법으로 선언했습니다. 여전히 노예제를 허용하는 회원국은 심각한 외교적 결과와 국제적 위상 하락에 직면하게 됩니다." # 17931013967251384868
+  LIBERTY_DESIRE_DECOLONIZATION_PRESSURE: "국가별 탈식민화 압력" # 17923424262415096179
+  LIBERTY_DESIRE_GLOBAL_DECOLONIZATION_PRESSURE: "전 세계적 탈식민화 압력" # 4527752191188286956
   LIBERTY_DESIRE_UN_DECOLONIZATION_ENCOURAGED: "유엔의 탈식민지화 장려" # 3631010591582365471
   LIBERTY_DESIRE_UN_COLONIAL_LAWS_CONDEMNED: "유엔의 식민법 규탄" # 204706002007082399
   LIBERTY_DESIRE_UN_SLAVERY_CONDEMNED: "유엔의 노예제 규탄" # 7209481697867335096
@@ -455,19 +458,16 @@
   ztr_un_major_power_against_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_9_var').GetCountry.GetName]\n" # 1042136284466989105
   ztr_un_major_power_against_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_10_var').GetCountry.GetName]\n" # 12775703550663148633
   je_decolonization: "탈식민지화의 바람" # 6103616958838657657
+  je_decolonization_reason: "#v 식민 제국#!의 시대가 저물고 있습니다. 전 세계적으로 피지배 민족들은 #v 민족 자결주의#!를 요구하고 있고, 국제기구들은 제국 통치의 정당성에 의문을 제기하며, 해외 영토를 유지하는 데 드는 비용은 날로 증가하고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 시대의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 거세지는 반란과 국제적 비난에 직면하거나, 혹은 변화를 주도하여 가능한 한 영향력을 보존해야 합니다.\n\n#n 탈식민화 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 피지배국은 더 큰 자유를 열망하게 되며, #v 민족 자결주의#!를 요구하는 주(state) 관련 이벤트들은 더욱 중대한 결과를 초래하게 됩니다.\n\n[Concept('concept_decolonizing_state','$concept_decolonizing_states$')]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 12165808526090654499
   je_decolonization_goal: "모든 비유럽권 [Concept('concept_subject','$concept_subjects$')]이(가) 독립을 쟁취합니다." # 11720223291895509416
   je_decolonization_status_low: "식민 통치는 국제적으로 널리 용인되고 있으나, 변화의 초기 징후가 나타나고 있습니다." # 1599235697117350484
   je_decolonization_status_rising: "식민지 내 민족주의 운동이 탄력을 받고 있습니다. 국제 여론이 식민 통치에 반대하는 방향으로 기울고 있습니다." # 2187901485955437363
   je_decolonization_status_high: "탈식민화의 물결이 이제 명백해졌습니다. 여러 식민지에서 독립을 요구하고 있으며 국제적인 압박이 거세지고 있습니다." # 1865286992161927322
   je_decolonization_status_critical: "식민 질서가 붕괴하고 있습니다. 제국 전역의 피지배 민족들이 공개적으로 반란을 일으키고 있거나 그 직전의 상태입니다. 제국을 유지하는 것은 정치적으로나 경제적으로 더 이상 지속 불가능해졌습니다." # 4203626824244281090
   je_decolonization_complete_tt: "남아있는 식민지 피지배 민족이 없습니다." # 5321383784479940700
-  ztr_decolonization_pressure_bar_desc: "탈식민지화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100#!" # 13086313918723085913
-  je_irish_independence_reason: "아일랜드는 1801년 영국 연합왕국의 일부가 되었으나, 아일랜드인들은 오랫동안 독립을 열망해 왔습니다. 아일랜드 문제는 실질적인 경제적 또는 정치적 통합이 결여되었음에도 불구하고 아일랜드가 독립 국가가 되어야 할지, 아니면 영국 연합왕국의 일부로 남아야 할지에 대한 논쟁을 의미합니다. 최근 몇 년간 아일랜드 민족주의 운동은 탄력을 받았으며, 많은 이들이 #v 민족 자결주의#!와 독립적인 아일랜드 국가 수립을 옹호하고 있습니다." # 2960876738515540746
-  LIBERTY_DESIRE_DECOLONIZATION_PRESSURE: "국가별 탈식민화 압력" # 17923424262415096179
-  LIBERTY_DESIRE_GLOBAL_DECOLONIZATION_PRESSURE: "전 세계적 탈식민화 압력" # 4527752191188286956
-  je_decolonization_reason: "#v 식민 제국#!의 시대가 저물고 있습니다. 전 세계적으로 피지배 민족들은 #v 민족 자결주의#!를 요구하고 있고, 국제기구들은 제국 통치의 정당성에 의문을 제기하며, 해외 영토를 유지하는 데 드는 비용은 날로 증가하고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 시대의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 거세지는 반란과 국제적 비난에 직면하거나, 혹은 변화를 주도하여 가능한 한 영향력을 보존해야 합니다.\n\n#n 탈식민화 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 피지배국은 더 큰 자유를 열망하게 되며, #v 민족 자결주의#!를 요구하는 주(state) 관련 이벤트들은 더욱 중대한 결과를 초래하게 됩니다.\n\n[Concept('concept_decolonizing_state','$concept_decolonizing_states$')]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 12165808526090654499
   JE_DECOLONIZATION_COLONIAL_STATE_ENTRY: " #v [THIS.GetState.GetName]#!" # 1264775873853316747
   JE_DECOLONIZATION_NO_COLONIAL_STATES: " #v 식민지 주 없음.#!" # 14348585250694087325
   ztr_decolonization_pressure_bar: "국가별 탈식민화 압력" # 17923424262415096179
+  ztr_decolonization_pressure_bar_desc: "탈식민지화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100#!" # 13086313918723085913
   ztr_global_decolonization_pressure_bar: "전 세계적 탈식민화 압력" # 4527752191188286956
   ztr_global_decolonization_pressure_bar_desc: "전 세계적 탈식민화 압력: #v [GetGlobalVariable('ztr_global_decolonization_pressure_var').GetValue|0]/100#!" # 12109309204601335151
