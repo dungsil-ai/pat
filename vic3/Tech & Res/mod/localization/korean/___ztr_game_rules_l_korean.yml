@@ -18,8 +18,8 @@
   setting_low_ztr_pop_lag_fix_desc: "이 규칙은 1936년 이후에만 저공격적 동화를 활성화하며, 1936년 이전에는 바닐라 동화 메커니즘을 유지합니다." # 6403034239116137814
   setting_no_ztr_pop_lag_fix: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_pop_lag_fix_desc #high 비활성화됨#!#!#!" # 4191751859998653169
   setting_no_ztr_pop_lag_fix_desc: "이 규칙은 게임 내내 바닐라 동화 메커니즘을 선호하는 분들을 위한 것입니다. (고사양 CPU)" # 17336977295938963235
-  rule_ztr_atom_bomb_content: "원자 폭탄 콘텐츠 (기술 및 연구)" # 11334491580334166674
   setting_allow_ztr_atom_bomb_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_atom_bomb_content_desc #high 활성화됨#!#!#!" # 4744806861310752178
-  setting_allow_ztr_atom_bomb_content_desc: "이번 캠페인 동안 원자 폭탄 콘텐츠를 허용합니다. AI는 원자 폭탄이 이전에 한 번도 사용되지 않은 경우에만 핵을 사용합니다. 그 이후에는 플레이어만 사용할 수 있으며, AI는 플레이어의 공격으로부터 자신을 방어할 때만 사용할 수 있습니다." # 14198849754003615626
   setting_no_ztr_atom_bomb_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_atom_bomb_content_desc #high 비활성화됨#!#!#!" # 4652586534630264045
-  setting_no_ztr_atom_bomb_content_desc: "더 바닐라에 가까운 게임 플레이를 위해 이번 캠페인 동안 원자 폭탄 콘텐츠를 비활성화합니다." # 14959507560947058130
+  rule_ztr_atom_bomb_content: "#i 원자 폭탄#! 콘텐츠 (기술 및 연구)" # 8458084970349602656
+  setting_allow_ztr_atom_bomb_content_desc: "이번 캠페인 동안 #i 원자 폭탄#! 콘텐츠를 허용합니다. AI는 이전에 사용된 적이 없는 경우에만 핵을 사용합니다. 그 이후에는 플레이어만 사용할 수 있으며, AI는 플레이어의 공격으로부터 자신을 방어할 때만 사용할 수 있습니다." # 6278455353496255236
+  setting_no_ztr_atom_bomb_content_desc: "더 바닐라 게임에 가까운 경험을 위해 이번 캠페인 동안 #i 원자 폭탄#! 콘텐츠를 비활성화합니다." # 7604286959078389313
