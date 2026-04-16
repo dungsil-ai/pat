@@ -226,6 +226,16 @@ describe('변수만 포함된 텍스트 감지 (AI 번역 없이 즉시 반환)'
       expect(translateAI).toHaveBeenCalledWith('Hello World', 'ck3', undefined, false)
     })
 
+    it('AI 응답에 포함된 U+200E 문자를 제거해야 함', async () => {
+      const { translate } = await import('./translate')
+      const { translateAI } = await import('./ai')
+      vi.mocked(translateAI).mockResolvedValueOnce('[번역됨]\u200EHello $variable$\u200E[GetTitle]')
+
+      const result = await translate('Hello $variable$[GetTitle]')
+
+      expect(result).toBe('[번역됨]Hello $variable$ [GetTitle]')
+    })
+
     it('변수와 텍스트가 혼합된 경우 AI 번역을 호출해야 함', async () => {
       const { translate } = await import('./translate')
       const { translateAI } = await import('./ai')
