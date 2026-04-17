@@ -113,26 +113,6 @@
   great_project_type_via_egnatia_improvement_contribution_toll_bridges_desc: "교량은 교통과 상업의 핵심 동맥입니다. 교량에 성문을 세워 요새화하고 충성스러운 통행료 징수원을 배치함으로써 보안을 강화할 뿐만 아니라, 제국 국고의 중요하고 안정적인 수입원으로 탈바꿈시킬 것입니다." # 12464364367123336262
   great_project_type_via_egnatia_improvement_contribution_expand_relay_network_desc: "제국 역참은 잘 작동하고 있으나 더 빨라질 수 있습니다. 이 기여를 통해 기존의 만시오네스(숙박소) 사이에 수십 개의 새로운 무타티오네스(교체소)를 건설할 것입니다. 통신망의 밀도를 높임으로써 전령들이 항상 신선한 말을 갈아탈 수 있게 하여 정보의 전달 속도를 획기적으로 높일 것입니다." # 13141928814463837449
   great_project_type_via_egnatia_improvement_contribution_breeding_programs_desc: "우리의 종마 사육장은 그 가치를 증명했습니다. 이제 전문화할 때입니다. 이 프로그램을 통해 마구간을 다양화하여 중장기병용 군마뿐만 아니라 쿠르수스 푸블리쿠스를 위한 더 가볍고 빠른 말, 그리고 비아 에그나티아로 몰려드는 상단을 위한 유난히 강하고 튼튼한 노새를 번식시키는 데 집중할 것입니다." # 2570680836313771095
-  great_project_type_tooltip_via_egnatia_restoration: "" # 17241709254077376921
-  great_project_name_possessive_via_egnatia_restoration: "" # 17241709254077376921
-  great_project_name_via_egnatia_restoration: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_imperial_survey_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_open_imperial_quarries_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_paving_the_strata_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_finance_laborers_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_establish_road_outposts_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_construct_imperial_bridges_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_organize_the_cursus_desc: "" # 17241709254077376921
-  great_project_type_via_egnatia_restoration_contribution_found_imperial_stud_farms_desc: "" # 17241709254077376921
-  great_project_type_tooltip_via_egnatia_improvement: "" # 17241709254077376921
-  great_project_name_possessive_via_egnatia_improvement: "" # 17241709254077376921
-  great_project_name_via_egnatia_improvement: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_establish_road_magistracies: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_erect_milestones: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_organize_maintenance: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_subsidize_caravanserais: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_institute_patrols: "" # 17241709254077376921
-  great_project_type_via_egnatia_improvement_contribution_name_toll_bridges: "" # 17241709254077376921
   great_project_type_via_egnatia_improvement_contribution_name_breeding_programs: "\" " # 8144695638692744150
   bustling_via_egnatia_modifier_desc: "비아 에그나티아의 복구는 시작에 불과했습니다. 평화의 번영과 집중적인 투자를 통해 이 위대한 도로는 이제 끊임없는 활기로 가득 차 있습니다. 동방의 비단을 실은 거대 상단이 북방의 모피를 파는 상인들과 스쳐 지나가며, 물자의 교류는 문화와 사상의 교류로 이어집니다.\n\n새로운 정착지들은 활기찬 도시로 피어났고, 쏟아져 들어오는 금과 물자는 그곳을 거대한 부의 중심지로 만들었습니다. 제국 순찰대와 요새화된 초소가 상주하면서 도적질은 옛이야기가 되었습니다. 이것은 이제 단순한 도로가 아닙니다. 번영하는 제국의 고동치는 심장입니다.\n\n" # 18384673597779733467
   bustling_via_egnatia_modifier: "북적이는 비아 에그나티아" # 9672671628039643536
@@ -156,4 +136,24 @@
   via_egnatia_flourishing_caravanserai_modifier_desc: "통치자의 투자의 직접적인 결과로, 이 백작령에서는 국가 보조금을 받는 거대한 카라반사라이가 운영되고 있습니다. 이곳은 상업의 주요 중심지가 되어 지역에 상당한 부와 성장을 가져다주었습니다." # 1572301559309158227
   via_egnatia_fortified_toll_bridge_modifier: "요새화된 통행료 징수 교량" # 2528939376289758907
   via_egnatia_fortified_toll_bridge_modifier_desc: "통치자의 투자 덕분에 이 백작령의 중요한 교량이 요새화되고 병력이 배치되었습니다. 이제 이 다리는 강화된 방어력과 꾸준한 통행료 수입을 모두 제공합니다." # 3383050631699499765
+  great_project_type_tooltip_via_egnatia_restoration: "" # 17241709254077376921
+  great_project_name_possessive_via_egnatia_restoration: "" # 17241709254077376921
+  great_project_name_via_egnatia_restoration: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_imperial_survey_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_open_imperial_quarries_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_paving_the_strata_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_finance_laborers_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_establish_road_outposts_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_construct_imperial_bridges_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_organize_the_cursus_desc: "" # 17241709254077376921
+  great_project_type_via_egnatia_restoration_contribution_found_imperial_stud_farms_desc: "" # 17241709254077376921
+  great_project_type_tooltip_via_egnatia_improvement: "" # 17241709254077376921
+  great_project_name_possessive_via_egnatia_improvement: "" # 17241709254077376921
+  great_project_name_via_egnatia_improvement: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_establish_road_magistracies: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_erect_milestones: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_organize_maintenance: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_subsidize_caravanserais: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_institute_patrols: "" # 17241709254077376921
+  great_project_type_via_egnatia_improvement_contribution_name_toll_bridges: "" # 17241709254077376921
   great_project_type_via_egnatia_improvement_contribution_name_expand_relay_network: "" # 17241709254077376921

@@ -167,3 +167,5 @@
   ow_rebuild4.tt: "[target_cow4.GetNameNoTier]에 파괴된 건물을 대체할 새로운 경이로운 도시 고유 건물을 선택하게 됩니다." # 8500932392468915544
   cow_rebuild5: "[target_cow5.GetNameNoTier] 재건" # 16610717680026899092
   ow_rebuild5.tt: "파괴된 건물을 대체할 [target_cow5.GetNameNoTier]의 새로운 불가사의 도시 고유 건물을 선택하십시오" # 4143175845826539561
+  decision_normal_easy_level: "[GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]의 개발도가 50 이상입니다." # 11311535162617407973
+  decision_normal_dev_level: "[GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]의 개발도가 75 이상입니다." # 4371306342489551222

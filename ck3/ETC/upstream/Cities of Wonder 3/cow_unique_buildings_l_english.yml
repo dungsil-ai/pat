@@ -192,3 +192,6 @@
  ow_rebuild4.tt: "You will select a new City of Wonder unique building for [target_cow4.GetNameNoTier] to replace the one that was razed"
  cow_rebuild5: "Rebuild [target_cow5.GetNameNoTier]"
  ow_rebuild5.tt: "You will select a new City of Wonder unique building for [target_cow5.GetNameNoTier] to replace the one that was razed"
+
+ decision_normal_easy_level: "The development level in [GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is 50 or higher."
+ decision_normal_dev_level: "The development level in [GetPlayer.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is 75 or higher."
