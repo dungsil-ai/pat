@@ -181,9 +181,11 @@ function sanitizeTranslationText (text: string): string {
     return text
   }
 
+  const sanitizedText = text.replaceAll('\u200E', '')
+
   // 닫는 변수 마커와 뒤따르는 대괄호 사이에 공백을 확보하여 $[ 패턴 방지
   const addSpaceAfterClosingVariable = /([$£][a-zA-Z0-9_\-.]+(?:\|[^$£\r\n]+)?[$£]|@[a-zA-Z0-9_\-.]+[@!])(?=\[)/g
-  return text.replace(addSpaceAfterClosingVariable, '$1 ')
+  return sanitizedText.replace(addSpaceAfterClosingVariable, '$1 ')
 }
 
 export async function translate (text: string, gameType: GameType = 'ck3', retry: number = 0, retranslationContext?: RetranslationContext, useTransliteration: boolean = false, bypassCache: boolean = false): Promise<string> {
