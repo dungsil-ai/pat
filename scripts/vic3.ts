@@ -98,6 +98,7 @@ async function main () {
         rootDir: vic3Dir,
         mods,
         gameType: 'vic3',
+        targetMod: targetMod ? mods[0] : undefined,
         onlyHash,
         timeoutMinutes
       })

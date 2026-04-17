@@ -98,6 +98,7 @@ async function main () {
         rootDir: stellarisDir,
         mods,
         gameType: 'stellaris',
+        targetMod: targetMod ? mods[0] : undefined,
         onlyHash,
         timeoutMinutes
       })

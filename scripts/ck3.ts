@@ -98,6 +98,7 @@ async function main () {
         rootDir: ck3Dir,
         mods,
         gameType: 'ck3',
+        targetMod: targetMod ? mods[0] : undefined,
         onlyHash,
         timeoutMinutes
       })
