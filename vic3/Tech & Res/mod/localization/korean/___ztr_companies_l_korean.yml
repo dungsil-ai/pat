@@ -179,6 +179,7 @@
   company_takeda_pharmaceutical: "다케다 제약" # 733297043027503091
   company_astrazeneca: "아스트라제네카" # 10237001575571290061
   company_teva_pharmaceutical: "테바 제약" # 17781158287753919566
+  company_csl: "CSL 베링" # 1472637146143150207
   company_novo_nordisk: "노보 노디스크" # 6461829117287475751
   company_nvidia: "엔비디아" # 12985213149709122305
   company_alphabet: "알파벳 (구글)" # 5583179255402290200
@@ -187,4 +188,3 @@
   company_cohere: "코히어" # 12834665864428277560
   company_foxconn: "폭스콘" # 5393018536204626944
   prestige_good_gpu: "엔비디아 GPU" # 11600657086683868925
-  company_csl: "CSL 베링" # 1472637146143150207

@@ -40,6 +40,8 @@
   magyar_linguistic_discrimination: "마자르 언어 차별" # 1747336998203999412
   ztr_collapse_revolt_crushed: "반란 진압" # 13753702703696074367
   ztr_collapse_revolt_appeased: "반란 진압됨" # 10613643250376741283
+  ztr_slaveholder_crackdown_modifier: "노예 소유주 탄압" # 15763594464010160824
+  ztr_slaveholder_crackdown_modifier_desc: "행정 자원이 식민지 엘리트들의 반발에 맞서 노예제 폐지를 강제하는 데 묶여 있습니다." # 5648448887898597447
   hungarian_rights_granted: "헝가리 권리 부여" # 17210047883872905273
   czech_rights_granted: "체코 권리 승인" # 12569106526029899358
   austrian_monarchy_humiliated: "오스트리아 군주국 굴욕" # 16032321504496705215
@@ -48,6 +50,7 @@
   ztr_geneva_convention: "제네바 협약 가입" # 8328164887717967179
   ztr_society_of_nations: "국제 연맹 회원국" # 9942084941736359378
   ztr_onu_member: "유엔 회원국" # 5850780921071490936
+  ztr_onu_permanent_member: "상임 유엔 회원국" # 16036503670904985583
   ztr_un_resolution_veto_modifier: "유엔 결의안 거부" # 2710470628096133622
   ztr_un_resolution_used_veto_modifier: "유엔 결의안 거부권 행사" # 995780768989263584
   historical_population_of_germany: "19세기 호황" # 8751212409197186862
@@ -253,11 +256,8 @@
   ztr_ccp_mass_line_campaign: "공산주의 대중 노선" # 13142328998336719798
   ztr_ccp_united_front_campaign: "항일민족통일전선" # 15860789598692665030
   ztr_ccp_long_march_legacy: "대장정" # 12655507841875296042
-  dev_0_country: "빈곤국 (0.0-0.7)" # 708956771100379025
-  ztr_slaveholder_crackdown_modifier: "노예 소유주 탄압" # 15763594464010160824
-  ztr_slaveholder_crackdown_modifier_desc: "행정 자원이 식민지 엘리트들의 반발에 맞서 노예제 폐지를 강제하는 데 묶여 있습니다." # 5648448887898597447
-  ztr_onu_permanent_member: "상임 유엔 회원국" # 16036503670904985583
   ztr_has_subject_or_decolonizing_colonial_state_tt: "#v 속국#! 또는 #gold_value 본토 문화#!를 가진 [Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]를 보유하고 있으며 탈식민지화를 원함" # 13275482116176017856
+  dev_0_country: "빈곤국 (0.0-0.7)" # 708956771100379025
   dev_1_country: "저개발 국가 (0.7-1.5)" # 10300701184869704493
   dev_2_country: "개발도상국 (1.5-2.5)" # 14676741617938985556
   dev_3_country: "반개발 국가 (2.5-5.0)" # 18039714128973017058

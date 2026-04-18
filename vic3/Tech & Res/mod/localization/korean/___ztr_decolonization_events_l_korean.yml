@@ -263,9 +263,6 @@
   ztr_decolonization.67.d: "에티오피아의 직할 영토들이 더 강력한 지역 통치를 복원하고자 #gold_value 독립#을 요구하고 있습니다. 그들의 요구는 최후통첩은 아니지만, 전 세계가 우리를 주시하고 있습니다. 선택은 간단합니다. 적응하거나, 제국을 유지하거나 둘 중 하나입니다." # 17474633534864811783
   ztr_decolonization.67.a: "에티오피아는 자유로워야 하오, 아마도 그 자원들은 아닐지라도..." # 4708877760262277468
   ztr_decolonization.67.b: "이것이 최후통첩이 아니라면, 왜 우리는 그것을 무시해서는 안 되는가?" # 15910782034003249635
-  ztr_decolonization_phases.1.t: "교육받은 원주민" # 12468798667807848899
-  ztr_decolonization_phases.2.t: "선교사와 양심" # 2865092051494988153
-  ztr_decolonization_phases.3.t: "조국의 노래" # 3448632979839810999
   ztr_decolonization.100.t: "탈식민지의 바람" # 6103616958838657657
   ztr_decolonization.100.d: "국제적 압력의 증대와 민족주의의 부상, 그리고 경직된 식민 정책 속에서 우리의 [concept_subject]인 [SCOPE.sCountry('subject_scope').GetName]은 점점 더 많은 #i 독립#!을 요구하고 있습니다. 세계적인 흐름이 변화하고 있으며, 우리는 새로운 질서에 적응할지 아니면 우리의 [Concept('concept_decolonization','식민')] 제국을 유지하기 위해 갈등을 감수할지 결정해야 합니다." # 11201543386820651322
   ztr_decolonization.100.a: "그들이 원하는 것을 들어주어 #gold_value 독립#!을 허용하십시오. 우리는 새로운 세계에 적응해야 합니다." # 4201492438509934476
@@ -278,32 +275,35 @@
   ztr_decolonization.1.d: "오랫동안 세계의 자연스러운 상태로 여겨졌던 #v 구 식민 질서#!가 깊은 균열을 보이기 시작했습니다.\n\n[concept_subject] 영토에서 #p 민족 자결#! 운동이 힘을 얻고 있습니다. 식민지 관리들은 불안이 커지고 있다고 보고하며, 해외 제국을 유지하는 데 드는 도덕적, 물질적 비용이 해가 갈수록 증가하고 있습니다.\n\n이제 문제는 #i 식민 시대#!가 끝날 것인가가 아니라, 얼마나 신속하게, 그리고 어떤 대가를 치르며 끝날 것인가입니다." # 9867922843942638073
   ztr_decolonization.1.f: "#italic 외세 지배의 시대가 저물고 있습니다. 세계의 식민지화된 민족들은 더 이상 기다리지 않을 것입니다.#!" # 888938147578858703
   ztr_decolonization.1.a: "변화의 바람이 불어오고 있습니다." # 16698243727361451680
+  ztr_decolonization_phases.1.t: "교육받은 원주민" # 12468798667807848899
   ztr_decolonization_phases.1.d: "우리 대학에서 교육받고 우리 언어에 능통한 [SCOPE.sCulture('native_culture_scope').GetName] 지식인이 [SCOPE.sState('decolonizing_state').GetName]에서 우리가 옹호한다고 주장하는 자유의 원칙을 인용하며 자치를 요구하는 논문을 발표했습니다. 이 저작물은 원주민 엘리트들 사이에서 유포되고 있으며, 그 논리는 반박하기 매우 곤란할 정도입니다.\n\n현지 행정부는 지침을 기다리고 있습니다: 그 사상들과 대화할 것인가, 아니면 더 넓은 대중에게 퍼지기 전에 침묵시킬 것인가." # 15362183575929911831
   ztr_decolonization_phases.1.a: "대화하십시오! 그들의 주장에는 답변할 가치가 있습니다." # 5896868571772179826
   ztr_decolonization_phases.1.b: "출판물이 퍼지기 전에 탄압하십시오." # 9761910160541340649
+  ztr_decolonization_phases.2.t: "선교사와 양심" # 2865092051494988153
   ztr_decolonization_phases.2.d: "#v 선교사#!들이 [SCOPE.sCountry('missionary_subject').GetName]에서 돌아와 원주민들이 겪는 참혹한 상황, 즉 강제 노동, 질병, 조직적인 방치에 대한 보고서를 발표하여 우리 대중이 읽을 수 있도록 공개했습니다. 교회 회보와 대도시 신문에 재게재된 그들의 편지는 커지는 양심의 위기를 불러일으켰습니다.\n\n의회는 이러한 아우성을 무시할 수 없습니다. 노예제 폐지론자 단체와 인도주의 연맹은 공식적인 대응을 요구하고 있습니다." # 13330404714165759082
   ztr_decolonization_phases.2.a: "식민지 상황에 대한 공식 조사를 위임하십시오." # 10350084732074330312
   ztr_decolonization_phases.2.b: "보고서를 선교사들의 과장으로 치부하십시오." # 10143699050188586050
+  ztr_decolonization_phases.3.t: "조국의 노래" # 3448632979839810999
   ztr_decolonization_phases.3.d: "[SCOPE.sState('songs_state').GetName]에서 문화 부흥의 움직임이 일고 있습니다. [SCOPE.sCulture('native_culture_scope').GetName] [Concept('concept_culture','$concept_cultures$')]의 민요와 전통 무용, 구전 역사가 시장 광장과 결혼식, 그리고 군인이 지나갈 때면 침묵이 흐르는 심야의 모임에서 새로운 열기로 공연되고 있습니다.\n\n외부인에게는 단순한 향수로 보이는 것이 식민지 행정부에게는 저항의 첫 번째 언어이며, 정치적 요구가 곧 구체화될 수 있는 공유된 정체성입니다." # 18298024522295995508
   ztr_decolonization_phases.3.a: "민속은 무해합니다: 그들이 노래하게 두십시오." # 17715434275077507030
-  ztr_decolonization_phases.4.t: "시장의 속삭임" # 16863617314684408299
-  ztr_decolonization_phases.5.t: "정식 청원" # 9472156034110151821
-  ztr_decolonization_phases.6.t: "식민지 노동자 파업" # 10074622912201954802
-  ztr_decolonization_phases.7.t: "국제 무대" # 2447126012217235586
-  ztr_decolonization_phases.8.t: "원주민 언론" # 17303477339659059510
   ztr_decolonization_phases.3.b: "이러한 체제 전복적 모임을 금지하십시오." # 10054780880121595758
+  ztr_decolonization_phases.4.t: "시장의 속삭임" # 16863617314684408299
   ztr_decolonization_phases.4.d: "[SCOPE.sCountry('whispers_subject').GetName]에서 들어온 첩보에 따르면 지하 #v 민족주의 네트워크#!가 조용히 형성되고 있습니다. 시장에서의 비밀 회합, 무역 서신에 숨겨진 암호, 그리고 밀실에서 맹세한 연대의 서약 등이 그 증거입니다. 조직책을 한 명 체포할 때마다 두 명이 그 자리를 대신하는 듯합니다.\n\n운동은 아직 취약하지만, 시간이 지날수록 그 뿌리는 깊어지고 있습니다. 식민지 경찰은 결단을 권고합니다. 지금 온건파와 대화에 나서거나, 너무 늦기 전에 감시망을 강화하십시오." # 17313053551791170555
   ztr_decolonization_phases.4.a: "온건파와 비공식 대화를 시작하여 권리를 확대하십시오." # 9640404737571227369
   ztr_decolonization_phases.4.b: "감시망을 강화하십시오. 대화를 하기엔 너무 늦었습니다." # 6367044023334319427
+  ztr_decolonization_phases.5.t: "정식 청원" # 9472156034110151821
   ztr_decolonization_phases.5.d: "[SCOPE.sCountry('petition_subject').GetName]의 #v 식민지 엘리트#! 대표단이 자치권을 요구하는 공식 청원서를 제출했습니다. 흠잡을 데 없는 법률적 언어로 작성된 이 청원서는 전시의 충성심, 경제적 기여, 그리고 [ROOT.GetCountry.GetName]가 옹호한다고 공언하는 민주주의 원칙을 거론하고 있습니다.\n\n이는 단순한 폭도들의 요구가 아닙니다. 지위가 높은 이들의 신중한 주장이며, 단순히 묵살할 수 없습니다. 이 요구를 들어주는 것은 선례가 될 것이며, 거부하는 것은 우리가 파트너로 삼아야 할 온건파를 급진화할 위험이 있습니다." # 1347746767650600689
   ztr_decolonization_phases.5.a: "점진적 개혁을 약속하십시오. 온건파를 우리 편으로 유지해야 합니다." # 2951176927842909778
   ztr_decolonization_phases.5.b: "청원을 거부하십시오." # 6482627460786825180
+  ztr_decolonization_phases.6.t: "식민지 노동자 파업" # 10074622912201954802
   ztr_decolonization_phases.6.d: "[SCOPE.sState('strike_state').GetName]의 부두와 철도 야적장이 침묵에 잠겼습니다. 하역 인부, 광부, 철도 노동자들이 조직적인 파업을 위해 도구를 내려놓았습니다. 그들의 요구는 임금을 넘어섭니다. 그들은 정치적 대표성과 식민지 노동 체제의 종식을 원합니다.\n\n수출품은 부두에서 썩어가고 있습니다. 식민지 경제는 멈춰 서고 있으며, 파업 참가자들은 물러설 기미를 보이지 않습니다. 현지 수비대가 명령을 기다리고 있습니다." # 11470755914006959739
   ztr_decolonization_phases.6.a: "사태가 더 확산되기 전에 협상하십시오." # 16953172589877709495
   ztr_decolonization_phases.6.b: "경찰력을 투입하여 파업을 진압하십시오." # 10448164841288534085
+  ztr_decolonization_phases.7.t: "국제 무대" # 2447126012217235586
   ztr_decolonization_phases.7.d: "[SCOPE.sCountry('intl_subject').GetName]의 대표단이 [Concept('concept_united_nations','$concept_united_nations$')] #blue_value 총회#!에서 [ROOT.GetCountry.GetName]의 식민 통치에 대한 규탄 연설을 했습니다. 전 세계의 대표들은 숨길 수 없는 동정심으로 귀를 기울였고, 국제 언론은 이 광경을 대서특필하고 있습니다.\n\n경쟁국들은 기회를 엿보고 있습니다. 식민지 문제는 순전히 국내 문제라는 안일한 허구는 무너지고 있으며, 우리의 평판이 위태로운 상황입니다." # 13146920901455308059
   ztr_decolonization_phases.7.a: "피해를 최소화하는 것이 필수적입니다." # 8703644222454316628
   ztr_decolonization_phases.7.b: "대표단을 외세의 간섭이라며 비난하십시오." # 12622697080973539945
+  ztr_decolonization_phases.8.t: "원주민 언론" # 17303477339659059510
   ztr_decolonization_phases.8.d: "[SCOPE.sState('press_state').GetName]에서 자국어 신문 네트워크가 등장했습니다. 저렴한 종이에 인쇄되어 찻집, 독서실, 마을 광장을 통해 손에서 손으로 배포되고 있습니다. 그들의 사설은 민족, 존엄성, 독립을 언급하며 식민지 정책을 외과 수술처럼 정밀하게 분석합니다.\n\n식민지 검열관은 그 속도를 따라가지 못합니다. 탄압을 시도할 때마다 독자층은 늘어날 뿐이며, 더 날카롭고 대담하며 타협을 거부하는 새로운 세대의 자국 지식인들이 자신들의 발언대를 찾았습니다." # 2938928568323307794
   ztr_decolonization_phases.8.a: "언론이 안전판 역할을 할 수 있으니 용인하십시오." # 9684920613929869996
   ztr_decolonization_phases.8.b: "인쇄소를 폐쇄하고 편집자들을 체포하십시오." # 18100330469450275648
@@ -531,8 +531,6 @@
   ztr_decolonization.67.d_phase4: "#v 에티오피아#!는 고대하고 자랑스러운 문명의 분노를 담아 우리의 주둔에 맞서 총력전을 펼치고 있습니다. 수년간의 저항으로 단련된 #v 에티오피아#! 군은 파괴적인 효율성으로 우리의 거점을 타격합니다. 우리는 절대 굴복하지 않을 국가의 손에 굴욕적인 패배를 맞이할 위기에 처했습니다." # 11724067444987799089
   ztr_decolonization.c: "식민지로서의 자치권 부여" # 9587220245004828061
   ztr_decolonization.e: "그들이 직접 쟁취하게 두기" # 14139847731917249828
-  ztr_decolonization_slavery.1.t: "종주국의 노예들" # 6671732984185830092
-  ztr_decolonization_slavery.2.t: "대규모 해방" # 6821704516432556695
   ztr_decolonization_pressure_increase_2_tt: "#v 탈식민화 압력#!이 #v 2#! #n 증가#!합니다." # 16430758402259360960
   ztr_decolonization_pressure_increase_3_tt: "#v 탈식민화 압력#!이 #v 3#! #n 증가#!합니다." # 9793408626377115286
   ztr_decolonization_pressure_increase_5_tt: "#v 탈식민화 압력#!이 #v 5#! #n 증가#!합니다." # 16700265786192751733
@@ -546,21 +544,23 @@
   colony_pop.3.t: "속령 인구 성장" # 5013714039674653804
   colony_pop.3.d: "[SCOPE.sCountry('generic_boom_subject').GetName]의 보고에 따르면 인구 성장이 지속적으로 증가하고 있습니다. 기초 공중 보건 인프라의 도입이 효과를 거두기 시작하여 유아 사망률이 감소하고 기대 수명이 연장되었으며, 식민지 경제가 수용할 수 없는 수준으로 젊은 인구층이 비대해지고 있습니다.\n\n성장은 점진적이지만, 이는 해당 지역의 인구학적 균형에 근본적인 변화가 일어났음을 시사합니다. 식민 지배에 미칠 영향은 간과할 수 없습니다." # 17823184425067594172
   colony_pop.3.a: "확인했습니다" # 16199118013351801554
+  ztr_decolonization_slavery.1.t: "종주국의 노예들" # 6671732984185830092
   ztr_decolonization_slavery.1.d: "[Concept('concept_united_nations','$concept_united_nations$')]의 #v 노예제 금지#! 조치로 인해 우리는 [SCOPE.sState('overlord_slavery_state').GetName]의 불편한 진실을 마주하게 되었습니다. 토착 지배자들이 수 세대 동안 유지해 온 토착 노예 관습이 우리의 식민 행정 하에서도 지속되고 있었던 것입니다. 우리는 현지 엘리트들의 협조를 유지하고 영토를 통치하기 위한 조용한 타협으로서 안정을 위해 이를 묵인해 왔습니다.\n\n하지만 이제 전 세계가 우리를 지켜보고 있습니다. 노예제 폐지론자들은 행동을 요구하고, 식민지 로비 단체는 강제 집행이 지역을 불안정하게 만들 것이라 경고합니다. 우리는 전면적으로 폐지할지, 아니면 현지 관습에 예외를 둘지 결정해야 합니다." # 15702376074104267170
   ztr_decolonization_slavery.1.a: "예외 없이 전면적으로 금지를 집행한다" # 9221679480519388892
   ztr_decolonization_slavery.1.b: "안정을 유지하기 위해 문화적 예외를 인정한다" # 9327909379270056898
   ztr_decolonization_slavery_1_a_effect_tt: "[Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]에서 #n 급진파#!가 발생하고, 주류 문화가 아닌 본토 문화권에서 #v 열정#!이 상승합니다." # 2744859988094539396
   ztr_decolonization_slavery_1_b_effect_tt: "[Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]에서 #p 충성파#!가 발생합니다." # 3577607847334011411
+  ztr_decolonization_slavery.2.t: "대규모 해방" # 6821704516432556695
   ztr_decolonization_slavery.2.d: "[SCOPE.sState('liberation_state').GetName]에 해방령이 선포되었고, 수천 명의 새로 해방된 노예들이 일자리와 거처, 그리고 평생 박탈당했던 미래를 찾아 도시로 몰려들고 있습니다. 경매로 헤어졌던 가족들이 거리에서 재회하고, 과거의 노예들이 공공 광장에서 눈물을 흘립니다.\n\n하지만 이러한 환희 뒤에는 위기가 도사리고 있습니다. 해방된 이들에게는 아무것도 없습니다. 토지도, 저축도, 법적 지위도 없습니다. 식민지 인프라는 유입되는 인구로 인해 붕괴 직전이며, 신중한 전환 없이는 해방이 그들을 쇠사슬에서 풀어주는 대신 빈곤의 구렁텅이로 몰아넣을 수도 있습니다." # 7859327274128439470
   ztr_decolonization_slavery.2.a: "해방된 이들을 위한 재정착 프로그램에 투자한다" # 1459465529632964754
-  ztr_decolonization_slavery.3.t: "노예 소유주의 저항" # 8466431951583162147
-  ztr_decolonization_slavery.4.t: "해방민의 청원" # 14563814297534553998
   ztr_decolonization_slavery.2.b: "그들은 자유입니다. 그것으로 충분할 것입니다." # 15812918068318473609
   ztr_decolonization_slavery_2_a_effect_tt: "[Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]에서 #p 충성파#!가 발생합니다." # 3577607847334011411
   ztr_decolonization_slavery_2_b_effect_tt: "[Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]에서 #n 급진파#!가 증가합니다." # 12568365701439894078
+  ztr_decolonization_slavery.3.t: "노예 소유주의 저항" # 8466431951583162147
   ztr_decolonization_slavery.3.d: "[SCOPE.sState('defiance_state').GetName]의 플랜테이션 지주 계층이 선을 넘었습니다. 노예제 폐지령에 직면한 노예 소유주들은 무장 저항을 조직했습니다. 민병대가 플랜테이션 도로를 순찰하고, 지주들에게 동조하는 식민지 치안 판사들은 법 집행을 거부하고 있습니다.\n\n일부는 공공연히 분리 독립을 거론합니다. 그들은 지역의 부와 노동 네트워크, 그리고 무장한 가신들의 충성을 장악하고 있습니다. 식민지 수비대는 수적으로 열세이며 명령을 확신하지 못하고 있습니다. 폐지령을 강제하려면 증원군이 필요하고, 협상하려면 타협이 필요합니다." # 1593935263885280754
   ztr_decolonization_slavery.3.a: "총검을 앞세워 법을 집행할 것입니다." # 13140547672867921630
   ztr_decolonization_slavery.3.b: "유혈 사태를 피하기 위해 과도기를 협상하십시오." # 2379547248671261924
+  ztr_decolonization_slavery.4.t: "해방민의 청원" # 14563814297534553998
   ztr_decolonization_slavery.4.d: "[SCOPE.sState('freedmen_state').GetName]의 해방 노예 대표단이 수천 명의 표식과 서명이 담긴 청원서를 제출했습니다. 그들은 약속되었으나 이행되지 않은 것들, 즉 그들 자신의 토지와 자녀들을 위한 학교, 그리고 법 앞에서의 평등한 지위를 요구합니다.\n\n청원서는 품위 있고 절제되어 있지만, 그 뒤에는 종이 위의 자유는 그것을 유지할 수단이 없다면 아무런 의미가 없다는 것을 뼈저린 경험을 통해 배운 공동체가 있습니다. 그들의 지도자들은 유창하고, 그들의 주장은 정당하며, 전 세계가 지켜보고 있습니다." # 5288621425267054143
   ztr_decolonization_slavery.4.a: "토지와 교육을 제공하십시오. 우리는 그들에게 그 정도는 빚지고 있습니다." # 16459074606556888255
   ztr_decolonization_slavery.4.b: "상징적인 제스처만 제공하십시오. 우리의 국고는 바닥이 없습니다." # 10577088694464914637
