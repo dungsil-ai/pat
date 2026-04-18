@@ -458,7 +458,6 @@
   ztr_un_major_power_against_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_9_var').GetCountry.GetName]\n" # 1042136284466989105
   ztr_un_major_power_against_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_10_var').GetCountry.GetName]\n" # 12775703550663148633
   je_decolonization: "탈식민지화의 바람" # 6103616958838657657
-  je_decolonization_reason: "#v 식민 제국#!의 시대가 저물고 있습니다. 전 세계적으로 피지배 민족들은 #v 민족 자결주의#!를 요구하고 있고, 국제기구들은 제국 통치의 정당성에 의문을 제기하며, 해외 영토를 유지하는 데 드는 비용은 날로 증가하고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 시대의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 거세지는 반란과 국제적 비난에 직면하거나, 혹은 변화를 주도하여 가능한 한 영향력을 보존해야 합니다.\n\n#n 탈식민화 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 피지배국은 더 큰 자유를 열망하게 되며, #v 민족 자결주의#!를 요구하는 주(state) 관련 이벤트들은 더욱 중대한 결과를 초래하게 됩니다.\n\n[Concept('concept_decolonizing_state','$concept_decolonizing_states$')]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 12165808526090654499
   je_decolonization_goal: "모든 비유럽권 [Concept('concept_subject','$concept_subjects$')]이(가) 독립을 쟁취합니다." # 11720223291895509416
   je_decolonization_status_low: "식민 통치는 국제적으로 널리 용인되고 있으나, 변화의 초기 징후가 나타나고 있습니다." # 1599235697117350484
   je_decolonization_status_rising: "식민지 내 민족주의 운동이 탄력을 받고 있습니다. 국제 여론이 식민 통치에 반대하는 방향으로 기울고 있습니다." # 2187901485955437363
@@ -468,6 +467,7 @@
   JE_DECOLONIZATION_COLONIAL_STATE_ENTRY: " #v [THIS.GetState.GetName]#!" # 1264775873853316747
   JE_DECOLONIZATION_NO_COLONIAL_STATES: " #v 식민지 주 없음.#!" # 14348585250694087325
   ztr_decolonization_pressure_bar: "국가별 탈식민화 압력" # 17923424262415096179
-  ztr_decolonization_pressure_bar_desc: "탈식민지화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]/100#!" # 13086313918723085913
   ztr_global_decolonization_pressure_bar: "전 세계적 탈식민화 압력" # 4527752191188286956
-  ztr_global_decolonization_pressure_bar_desc: "전 세계적 탈식민화 압력: #v [GetGlobalVariable('ztr_global_decolonization_pressure_var').GetValue|0]/100#!" # 12109309204601335151
+  je_decolonization_reason: "#v 식민 제국#!의 시대가 저물고 있습니다. 전 세계적으로 피지배 민족들이 #v 민족 자결주의#!를 요구하고 있으며, 국제 기구들은 제국 통치의 정통성에 의문을 제기하고 있고, 해외 영토를 유지하는 데 드는 비용은 점점 늘어나고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 거대한 변화의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 커지는 반란과 국제적 비난에 직면할 것인지, 아니면 전환을 주도하여 가능한 영향력을 보존할 것인지 선택해야 합니다.\n\n#n 탈식민화 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 피지배국은 더 큰 독립 열망을 갖게 되며, #v 민족 자결주의#!를 요구하는 국가들의 이벤트는 더욱 중대한 결과를 초래하게 됩니다.\n\n[Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 8165670849540865064
+  ztr_decolonization_pressure_bar_desc: "탈식민화 압력: #v [ROOT.GetCountry.MakeScope.Var('ztr_decolonization_pressure_var').GetValue|0]#!" # 993775994852736969
+  ztr_global_decolonization_pressure_bar_desc: "전 세계 탈식민화 압력: #v [GetGlobalVariable('ztr_global_decolonization_pressure_var').GetValue|0]#!" # 10697688152773265311
