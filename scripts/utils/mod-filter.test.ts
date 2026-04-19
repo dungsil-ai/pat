@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { filterMods } from './mod-filter'
+import { filterMods, getUpstreamTargetMod } from './mod-filter'
 
 describe('모드 필터링 유틸리티', () => {
   const allMods = ['RICE', 'VIET', 'CFP', 'ETC']
@@ -48,6 +48,16 @@ describe('모드 필터링 유틸리티', () => {
       // CLI 옵션 "--since-commit" 등은 모드 이름이 아니므로 전체 모드 반환
       const result = filterMods(allMods, '--since-commit')
       expect(result).toEqual(allMods)
+    })
+  })
+
+  describe('getUpstreamTargetMod', () => {
+    it('단일 모드만 남았으면 해당 모드를 반환해야 함', () => {
+      expect(getUpstreamTargetMod(['RICE'])).toBe('RICE')
+    })
+
+    it('여러 모드가 있으면 undefined를 반환해야 함', () => {
+      expect(getUpstreamTargetMod(allMods)).toBeUndefined()
     })
   })
 })
