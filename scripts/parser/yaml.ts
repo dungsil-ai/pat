@@ -13,12 +13,12 @@ export function parseYaml (content: string): Record<string, Record<string, [stri
       const [, , key, , value] = keyMatch
 
       if (!currentKey) {
-        currentKey = key
+        currentKey = sanitizeLeftToRightMark(key)
         parsedContent[currentKey] = {}
       } else {
         const parsedValue = parseYamlValue(value)
         if (parsedValue !== null) {
-          parsedContent[currentKey][key] = parsedValue
+          parsedContent[currentKey][sanitizeLeftToRightMark(key)] = parsedValue
         }
       }
     }
@@ -45,7 +45,7 @@ function parseYamlValue (value: string): [string, string | null] | null {
   const matchWithComment = /^"(.*)"(?:\s+)?#(?:\s+)?(.*)$/.exec(value)
   if (matchWithComment) {
     const [, rawText, comment] = matchWithComment
-    const text = rawText.replace(/""/g, '"')
+    const text = sanitizeLeftToRightMark(rawText.replace(/""/g, '"'))
     return [text, comment || null]
   }
   
@@ -58,9 +58,9 @@ function parseYamlValue (value: string): [string, string | null] | null {
     // trailingPart는 마지막 " 이후의 텍스트
     const processedQuotedPart = quotedPart.replace(/""/g, '"')
     // 마지막 "도 값의 일부로 포함 (Paradox 게임 형식)
-    const text = trailingPart 
+    const text = sanitizeLeftToRightMark(trailingPart
       ? processedQuotedPart + '"' + trailingPart
-      : processedQuotedPart
+      : processedQuotedPart)
     return [text, null]
   }
   
@@ -68,11 +68,15 @@ function parseYamlValue (value: string): [string, string | null] | null {
   return null
 }
 
+function sanitizeLeftToRightMark (text: string): string {
+  return text.replaceAll('\u200E', '')
+}
+
 export function stringifyYaml (data: Record<string, Record<string, [string, string | null]>>): string {
   let result = ''
 
   for (const [topKey, topValue] of Object.entries(data)) {
-    result += `\uFEFF${topKey}:\n` // '\uFEFF' : UTF-8 BOM
+    result += `\uFEFF${sanitizeLeftToRightMark(topKey)}:\n` // '\uFEFF' : UTF-8 BOM
 
     for (const [key, [translatedText, hash]] of Object.entries(topValue)) {
       if (translatedText == null) {
@@ -80,9 +84,9 @@ export function stringifyYaml (data: Record<string, Record<string, [string, stri
         continue
       }
 
-      const encodedTranslatedText = translatedText.replaceAll(/((?<!\\)(\\\\)*)"/g, '$1\\"')
+      const encodedTranslatedText = sanitizeLeftToRightMark(translatedText).replaceAll(/((?<!\\)(\\\\)*)"/g, '$1\\"')
       const hashComment = hash ? ` # ${hash}` : ''
-      result += `  ${key}: "${encodedTranslatedText}"${hashComment}\n`
+      result += `  ${sanitizeLeftToRightMark(key)}: "${encodedTranslatedText}"${hashComment}\n`
     }
 
   }
