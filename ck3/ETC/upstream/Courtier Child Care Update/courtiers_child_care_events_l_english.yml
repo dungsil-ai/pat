@@ -1,0 +1,36 @@
+﻿l_english:
+ courtiers_child_care_event.0002.t:0 "Courtiers' Child Care"
+
+ courtiers_child_care_event.0002.desc:0 "'My [ROOT.Char.GetLadyLord|U], to what extent do you wish me to keep you au courant with events related to the births and upbringings of our courtiers' children?'"
+
+ ccc_spacing:0 "\n\n"
+ ccc_and:0 "and"
+ ccc_comma:0 ","
+
+ courtiers_child_care_event.0002.desc.a:0 "'I do not want to be notified at all!'"
+ courtiers_child_care_event.0002.desc.b:0 "'I want to be notified about"
+ courtiers_child_care_event.0002.desc.c:0 "births"
+ courtiers_child_care_event.0002.desc.d:0 "6th birthdays"
+ courtiers_child_care_event.0002.desc.e:0 "16th birthdays"
+
+ courtiers_child_care_event.0002.desc.f:0 "of my courtiers and close family courtiers.'"
+ courtiers_child_care_event.0002.desc.g:0 "of my courtiers only.'"
+ courtiers_child_care_event.0002.desc.h:0 "of my close family courtiers only.'"
+
+ courtiers_child_care_event.0002.a:0 "births"
+ courtiers_child_care_event.0002.b:0 "no births"
+ courtiers_child_care_event.0002.c:0 "6th birthdays"
+ courtiers_child_care_event.0002.d:0 "no 6th birthdays"
+ courtiers_child_care_event.0002.e:0 "16th birthdays"
+ courtiers_child_care_event.0002.f:0 "no 16th birthdays"
+
+ courtiers_child_care_event.0002.g:0 "of courtiers and close family courtiers."
+ courtiers_child_care_event.0002.h:0 "of courtiers only."
+ courtiers_child_care_event.0002.i:0 "of close family courtiers only."
+
+ courtiers_child_care_event.0002.tt:0 "Click to toggle options!"
+ courtiers_child_care_event.0002.tt.p:0 "#P Click to toggle option on! #!"
+ courtiers_child_care_event.0002.tt.n:0 "#N Click to toggle option off! #!"
+
+ courtiers_child_care_event.0002.z:0 "That's it!"
+ courtiers_child_care_event.0002.z.tt:0 "Confirm and exit!"

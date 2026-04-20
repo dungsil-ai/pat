@@ -1,0 +1,14 @@
+﻿l_english:
+ ccc_msg_courtiers_child_can_assign_guardian:0 "Guardian can be assigned"
+ ccc_msg_courtiers_child_can_assign_guardian_tooltip:0 "You can designate a [guardian|E] for your [GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_child'))] [ccc_child.GetName]"
+
+ ccc_msg_courtiers_child_birth:0 "A child was born"
+ ccc_msg_courtiers_child_birth_tooltip:0 "Your [GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_mother'))] [ccc_mother.GetName] gave birth to a [ccc_newborn.Custom('GirlBoy')] named [ccc_newborn.GetName]"
+
+ ccc_msg_courtiers_child_birth_2:0 "Twins were born"
+ ccc_msg_courtiers_child_birth_2_tooltip:0 "Your [GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_mother'))] [ccc_mother.GetName] gave birth to a [ccc_newborn.Custom('GirlBoy')] named [ccc_newborn.GetName] and a [ccc_newborn_2.Custom('GirlBoy')] named [ccc_newborn_2.GetName]."
+
+ ccc_msg_courtiers_child_can_be_betrothed:0 "A child has grown up"
+ ccc_msg_courtiers_child_can_be_betrothed_tooltip:0 "Your [GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_child'))] [ccc_child.GetName] has come of age but [ccc_child.GetSheHe] has not been promised to anyone yet."
+
+# [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('ccc_mother'))]
