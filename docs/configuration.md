@@ -218,7 +218,7 @@ ck3/LocalMod/
 **설명:** 자동 감지 키워드와 별개로, 특정 localization 파일을 음역 모드로 강제 지정합니다.
 
 - 파일명 기준으로 비교하며 경로는 무시됩니다.
-- `*` 와일드카드를 지원합니다.
+- `*` 와일드카드를 지원하며, 파일명 전체를 대상으로 부분 매칭합니다. 예를 들어 `*_special_*`는 `mod_special_names_l_english.yml` 같은 이름과 매칭됩니다.
 - 파일 전체를 음역 대상으로 보되, `*_desc`, `*_event`, `*_decision` 같은 키 제외 규칙은 그대로 적용됩니다.
 - `meta.toml`에서 이 목록이 바뀌면 `invalidate-on-transliteration-files-change.yml` 워크플로우가 영향받는 번역 파일의 해시를 자동으로 무효화할 수 있습니다.
 

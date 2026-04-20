@@ -177,7 +177,7 @@ l_english:
 ```
 
 **sanitize 규칙:**
-- YAML 키와 값에서 U+200E(Left-to-Right Mark)를 제거합니다.
+- YAML 키와 값에서 U+200E(Left-to-Right Mark)를 제거합니다. 이 제어 문자가 AI 응답이나 복사된 원문에 섞이면 Paradox localization 키/값 비교가 어긋날 수 있어 저장 전 정리가 필요합니다.
 - 직렬화 시에도 동일한 sanitize를 적용해 이전에 섞여 들어온 제어 문자가 다시 저장되지 않도록 합니다.
 
 ### 4. 해시 계산 및 변경 감지
