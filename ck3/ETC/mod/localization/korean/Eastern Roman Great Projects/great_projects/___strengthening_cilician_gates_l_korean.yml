@@ -1,0 +1,45 @@
+﻿l_korean:
+  great_project_type_strengthening_cilician_gates: "킬리키아 관문 강화" # 13019896154655022431
+  great_project_type_strengthening_cilician_gates_desc: "킬리키아 관문은 시리아에서 아나톨리아 심장부로 향하는 주요 통로입니다. 수 세기 동안 타우루스 산맥을 가로지르는 이 좁은 길은 침략의 동맥이자 우리 영토의 핵심을 겨누는 영구적인 단검과 같았습니다. 이를 방어하지 않는 것은 재앙을 자초하는 일입니다.\n\n이 거대한 사업은 단순히 하나의 요새를 재건하는 것을 넘어, 완전한 방어 체계를 구축할 것입니다. 우리는 주 요새와 감시 초소망, 그리고 전담 산악 수비대를 건설할 것입니다. 이 지리적 취약점을 난공불락의 철문으로 바꾸어, 남쪽의 적들이 다시는 넘보지 못하도록 영원히 닫아걸 것입니다." # 13492067624061789299
+  great_project_type_tooltip_strengthening_cilician_gates: "" # 17241709254077376921
+  great_project_name_possessive_strengthening_cilician_gates: "" # 17241709254077376921
+  great_project_name_strengthening_cilician_gates: "" # 17241709254077376921
+  great_project_type_strengthening_cilician_gates_contribution_secure_the_pass: "관문 확보" # 1663974764491882501
+  great_project_type_strengthening_cilician_gates_contribution_secure_the_pass_desc: "건설을 시작하기에 앞서, 관문 자체를 평정해야 합니다. 험준한 산악 지대는 산적과 군벌, 적의 정찰병들이 숨어들기 좋은 곳입니다. 우리는 경험 많은 병사들을 파견하여 저항의 거점을 소탕하고, 주요 도로를 확보하며, 험난한 샛길들을 지도에 기록해야 합니다. 지역이 우리의 확고한 통제하에 들어와야만 기술자들이 작업을 시작할 수 있습니다." # 14915000321482262251
+  great_project_type_strengthening_cilician_gates_contribution_name_secure_the_pass: "" # 17241709254077376921
+  great_project_type_strengthening_cilician_gates_contribution_construct_pass_fortress: "관문 요새 건설" # 3369605596230402189
+  great_project_type_strengthening_cilician_gates_contribution_construct_pass_fortress_desc: "관문의 가장 좁은 지점에 최첨단 신규 요새를 건설할 것입니다. 이는 관문의 '자물쇠' 역할을 할 것입니다. 이 기여를 통해 높은 성벽과 깊은 저수조, 그리고 침략군을 저지하고 병목 지점을 장악할 수 있는 강력한 투석기 플랫폼을 갖춘 위협적인 성을 건설할 것입니다." # 8242225742312641034
+  great_project_type_strengthening_cilician_gates_contribution_name_construct_pass_fortress: "" # 17241709254077376921
+  great_project_type_strengthening_cilician_gates_contribution_establish_watchtowers: "감시 초소망 구축" # 11126607579284509762
+  great_project_type_strengthening_cilician_gates_contribution_establish_watchtowers_desc: "요새 하나만으로는 우회당할 수 있습니다. 우리는 관문 전체 길이에 걸쳐 서로가 보이는 감시 초소와 요새화된 거점들을 연결해야 합니다. 경계심 강한 파수꾼들이 배치된 이 망은 우리 방어의 눈과 귀가 되어, 신호용 봉화를 통해 밤낮을 가리지 않고 적의 움직임을 조기에 경고할 것입니다." # 4636791877639190634
+  great_project_type_strengthening_cilician_gates_contribution_name_establish_watchtowers: "" # 17241709254077376921
+  great_project_type_strengthening_cilician_gates_contribution_institute_toll_pass: "통행료 징수 제도 시행" # 1684660700922521946
+  great_project_type_strengthening_cilician_gates_contribution_institute_toll_pass_desc: "이 관문은 단순한 군사적 경로가 아니라 서쪽으로 향하는 향신료와 비단 대상들의 중요한 동맥입니다. 이제 우리가 도로를 확고히 통제하게 되었으니, 이 보안을 수익으로 연결할 수 있습니다. 이 기여를 통해 요새화된 통행료 징수소를 설치할 것이며, 우리 요원이 모든 상인에게 관세를 징수하여 국고를 채우는 동시에 우리의 권위를 과시할 것입니다." # 14874210965193788039
+  great_project_type_strengthening_cilician_gates_contribution_name_institute_toll_pass: "" # 17241709254077376921
+  domain_of_the_akritai_modifier: "아크리타이의 영지" # 16534219803110915562
+  domain_of_the_akritai_modifier_desc: "킬리키아 관문은 더 이상 단순한 국경이 아니라 *아크리타이*의 맹세된 영지입니다. 산악 관문의 달인인 이 단련된 변경 전사들은 이제 위압적인 신규 요새와 경계심 강한 감시 초소망을 거점으로 활동합니다. 그들은 이 땅의 눈이자 귀, 그리고 칼이 되어 그 어떤 적도 방해 없이 진군하지 못하게 하고, 상인들이 두려움 없이 여행할 수 있도록 보장합니다. 관문은 취약점에서 제국의 가장 훌륭한 수비대가 지키는 보루로 탈바꿈했습니다." # 4945471540105263834
+  cilician_gates_tolls_modifier: "킬리키아 통행료 확립" # 8643361193014895399
+  cilician_gates_tolls_modifier_desc: "이 관문은 이제 규제되고 수익성 있는 무역로가 되었습니다. 요새화된 통행료 징수소가 설립되었고, 통과하는 대상들에게서 징수한 관세는 새로운 부의 원천이 되어 지역 경제를 활성화하고 이 중요한 상업 동맥과 접한 땅들을 풍요롭게 만들었습니다." # 4165696802002358436
+  cilician_gates_toll_master_modifier: "관문의 주인" # 16095558049522133580
+  cilician_gates_toll_master_modifier_desc: "킬리키아 관문 내 통행료 징수소를 설립하고 확보함으로써, 나는 이제 세계 상업의 중요한 동맥을 장악했습니다. 향신료와 비단 대상들로부터 나오는 꾸준한 수익이 내 국고로 직접 흘러들어오며, 이 변경을 확보하는 것이 단순한 군사적 필요를 넘어 매우 수익성 높은 사업임을 끊임없이 상기시켜 줍니다." # 5148618628867939943
+  strengthening_cilician_gates.0001.t: "보고: 길이 확보되었습니다" # 14281478007628479252
+  strengthening_cilician_gates.0001.desc: "주군, 평정 작업을 지휘하는 대장이 전갈을 보내왔습니다. 주요 산적 소굴들이 모두 불타 없어졌으며, 우리의 깃발이 주요 전략 요충지들에 나부끼고 있습니다. 관문을 통과하는 도로는 안전하며, 기술자들이 매복의 두려움 없이 작업을 진행할 수 있습니다." # 4181132094668500376
+  strengthening_cilician_gates.0001.a: "훌륭한 시작이군. 건설을 진행하도록 하라." # 2271532528358961879
+  strengthening_cilician_gates.0002.t: "관문의 자물쇠" # 4823158023220754469
+  strengthening_cilician_gates.0002.desc: "주군, 수석 기술자가 관문 요새가 완공되었다고 보고했습니다. 새로운 성은 이제 도로를 완전히 압도하고 있으며, 그 석벽은 산비탈과 하나가 된 것처럼 보입니다. 이제 그 어떤 군대도 대가를 치르는 피비린내 나는 공성전 없이는 이 병목 지점을 뚫고 지나갈 수 없습니다. 관문에 자물쇠가 채워졌습니다." # 17012472193269728737
+  strengthening_cilician_gates.0002.a: "그 성벽에 부딪혀 스스로 무너지게 두어라." # 14952679602137671545
+  strengthening_cilician_gates.0003.t: "감시 초소의 봉화가 오르다" # 16085968681676407039
+  strengthening_cilician_gates.0003.desc: "주군, 어젯밤 신호 시험을 마쳤습니다. 가장 남쪽 초소에서 주 요새의 관문까지, 봉화의 연쇄가 순식간에 불타올랐습니다. 이제 그 어떤 적대 세력도 우리 몰래 산맥을 이동할 수 없습니다. 관문은 우리의 끊임없는 감시 아래에 있습니다." # 5625389556139067880
+  strengthening_cilician_gates.0003.a: "적들이 도착하기 훨씬 전부터 그들을 발견할 것입니다." # 10805979634560399145
+  strengthening_cilician_gates.0004.t: "통행세가 징수되고 있습니다" # 9298728413904648163
+  strengthening_cilician_gates.0004.desc: "주군, 첫 대상들이 관문을 통과하기 위해 새로운 관세를 지불했습니다. 우리 요원들의 보고에 따르면 이미 통행세 징수소에서 꾸준한 수익이 발생하고 있다고 합니다. 우리는 적들로부터 통로를 확보했을 뿐만 아니라, 평화로운 시기에도 수익을 창출하게 되었습니다." # 3393816355905525835
+  strengthening_cilician_gates.0004.a: "상인들이 우리의 안보 비용을 부담하게 하라." # 14768835780282001060
+  strengthening_cilician_gates.0005.t: "관문이 봉쇄되었습니다" # 8639554064218737260
+  strengthening_cilician_gates.0005.desc: "새롭게 요새화된 킬리키아 관문에서 승전보가 도착했습니다. 마지막 통행세 징수소가 가동되었고, 프로젝트가 완료되었습니다. 한때 우리 남쪽 측면의 벌어진 상처였던 곳이 이제는 난공불락의 방어 체계가 되었습니다.\n\n새로운 요새는 굴하지 않는 방벽으로 서 있고, 감시 초소들은 모든 길과 계곡을 밤낮없이 지키고 있습니다. 매복의 공포가 감돌던 기괴한 침묵은 이제 우리 순찰대의 당당한 행진과 안전한 통행을 위해 대가를 지불하는 상인들의 동전 소리로 대체되었습니다. 우리는 단순히 통로를 요새화한 것이 아니라, 산맥을 길들였습니다.\n\n남쪽의 칼리프와 술탄들이 분노하게 내버려 두십시오. 아나톨리아로 향하는 관문은 이제 철문이 되었고, 그 열쇠는 오직 우리가 쥐고 있습니다." # 759569591065443151
+  strengthening_cilician_gates.0005.a: "아나톨리아는 안전합니다." # 13563776495948824738
+  strengthening_cilician_gates.0006.t: "관문이 여전히 취약합니다" # 4396636614332685974
+  strengthening_cilician_gates.0006.desc: "킬리키아 관문에서 수치스러운 보고가 도착했습니다. 거대한 프로젝트는 붕괴하여 혼란에 빠졌습니다. 반쯤 지어진 요새의 성벽은 우리가 몰아내려 했던 산적들의 소굴이 되었고, 감시 초소를 위한 자금은 부패한 관리들의 주머니 속으로 사라졌습니다.\n\n이 통로는 여전히 치명적인 약점으로 남아 있으며, 결의에 찬 침략자라면 누구든 통과할 수 있는 명확한 길입니다. 우리의 낭비된 투자는 적들에게 우리의 야망이 능력보다 훨씬 크다는 사실만을 증명했을 뿐입니다. 우리 심장부로 향하는 관문은 여전히 위험하게 열려 있습니다." # 16236800731033040072
+  strengthening_cilician_gates.0006.a: "참담한 실패입니다." # 5243680486236471765
+  CILICIA_LOCATION_2_TOOLTIP: "당신은 킬리키아 관문을 장악하고 있습니다" # 9827435339878319907
+  cilician_akritai: "킬리키아 아크리타이" # 13533933602718035162
+  cilician_akritai_flavor: "#F 킬리키아 관문의 척박한 국경 지대에서 태어난 아크리타이는 사라센과 튀르크 기병대와의 끝없는 전쟁을 겪은 냉혹한 베테랑들입니다. 그들은 매복과 역습의 달인들이며, 투창을 사용하여 기병대의 돌격을 저지한 뒤 검을 들고 근접전을 펼칩니다. 그들은 국경을 지키는 경계의 늑대들입니다. #!" # 6360487305424200410
