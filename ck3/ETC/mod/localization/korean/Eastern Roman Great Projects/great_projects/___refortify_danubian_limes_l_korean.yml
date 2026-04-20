@@ -27,6 +27,26 @@
   great_project_type_refortify_danubian_limes_contribution_tomis_port_desc: "요새화된 국경은 굶주리고 비용이 많이 드는 국경입니다. 상인 길드의 막대한 보조금을 받는 이 선택적 기부는 토미스의 거대한 항구를 완전히 복구하는 데 집중할 것입니다. 번창하는 항구는 프로젝트 비용을 상쇄하기 위해 관세로 국고를 채울 뿐만 아니라, 해로를 통해 파라두나본 전체에 보급품을 공급할 수 있게 하여 육로의 막대한 물류 부담을 완화하고 프로젝트의 전반적인 효율성을 향상시킬 것입니다." # 7490326884073879593
   great_project_type_rebuild_anastasian_wall_contribution_clear_traces: "수리반 소집" # 13184334422016714879
   great_project_type_rebuild_anastasian_wall_contribution_clear_traces_desc: "장성은 현재 수 세기 동안의 방치로 인해 가로막혀 있습니다. 우리는 성벽을 뒤덮은 가시 덤불을 제거하기 위해 도끼와 낫을 든 수천 명의 노동자를 파견해야 합니다. 그 후 기술자들이 뒤따라가 노동자들을 지휘하여 떨어진 잔해의 거대한 무게를 옮기고 성벽의 고대 기초를 완전히 드러낼 것입니다. 그래야만 재건 작업이 진정으로 시작될 수 있습니다." # 6384222961845816916
+  great_project_type_tooltip_refortify_danubian_limes: "" # 17241709254077376921
+  great_project_name_possessive_refortify_danubian_limes: "" # 17241709254077376921
+  great_project_name_refortify_danubian_limes: "" # 17241709254077376921
+  great_project_type_tooltip_maintain_danubian_limes: "" # 17241709254077376921
+  great_project_name_possessive_maintain_danubian_limes: "" # 17241709254077376921
+  great_project_name_maintain_danubian_limes: "" # 17241709254077376921
+  great_project_type_tooltip_rebuild_anastasian_wall: "" # 17241709254077376921
+  great_project_name_possessive_rebuild_anastasian_wall: "" # 17241709254077376921
+  great_project_name_rebuild_anastasian_wall: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_imperial_quarries: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_annona_militaris: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_vexillation_detachments: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_corvee_labor: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_master_architect: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_imperial_sanction: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_singidunum_fortress: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_durostorum_citadel: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_trajans_crossing: "" # 17241709254077376921
+  great_project_type_refortify_danubian_limes_contribution_name_tomis_port: "" # 17241709254077376921
+  great_project_type_rebuild_anastasian_wall_contribution_name_clear_traces: "" # 17241709254077376921
   great_project_type_rebuild_anastasian_wall_contribution_quarry_stone_and_bricks: "석재 채굴 및 벽돌 소성" # 7318466438625310894
   great_project_type_rebuild_anastasian_wall_contribution_quarry_stone_and_bricks_desc: "이 정도 규모의 성벽은 희망과 야망만으로 건설될 수 없습니다. 이 기부는 트라키아 언덕의 고대 채석장을 다시 여는 자금을 지원하며, 새로운 벽돌 공장에 공급하기 위해 거대한 점토 구덩이를 팔 것입니다. 복구된 성벽의 표면과 핵심에 필요한 산더미 같은 석재와 붉은 벽돌을 생산하기 위해 채석공, 마부, 가마지기 군단이 필요할 것입니다." # 14668515849966235308
   great_project_type_rebuild_anastasian_wall_contribution_organize_wall_guard: "성벽 수비대(비길레스) 조직" # 9179872666154922090
@@ -150,26 +170,6 @@
   setting_bgp_paulicians_on_desc: "867년에 파울리키아파 이단들이 봉기하여 동로마 제국 내에 그들의 영역을 구축하려 할 것입니다." # 9042651697809378299
   setting_bgp_paulicians_off: "비활성화" # 1399321916878098753
   setting_bgp_paulicians_off_desc: "867년에 파울리키아파 이단들이 봉기하지 않을 것입니다." # 5643492622842428551
-  great_project_type_tooltip_refortify_danubian_limes: "" # 17241709254077376921
-  great_project_name_possessive_refortify_danubian_limes: "" # 17241709254077376921
-  great_project_name_refortify_danubian_limes: "" # 17241709254077376921
-  great_project_type_tooltip_maintain_danubian_limes: "" # 17241709254077376921
-  great_project_name_possessive_maintain_danubian_limes: "" # 17241709254077376921
-  great_project_name_maintain_danubian_limes: "" # 17241709254077376921
-  great_project_type_tooltip_rebuild_anastasian_wall: "" # 17241709254077376921
-  great_project_name_possessive_rebuild_anastasian_wall: "" # 17241709254077376921
-  great_project_name_rebuild_anastasian_wall: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_imperial_quarries: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_annona_militaris: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_vexillation_detachments: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_corvee_labor: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_master_architect: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_imperial_sanction: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_singidunum_fortress: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_durostorum_citadel: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_trajans_crossing: "" # 17241709254077376921
-  great_project_type_refortify_danubian_limes_contribution_name_tomis_port: "" # 17241709254077376921
-  great_project_type_rebuild_anastasian_wall_contribution_name_clear_traces: "" # 17241709254077376921
   great_project_type_rebuild_anastasian_wall_contribution_name_quarry_stone_and_bricks: "" # 17241709254077376921
   great_project_type_rebuild_anastasian_wall_contribution_name_organize_wall_guard: "" # 17241709254077376921
   great_project_type_rebuild_anastasian_wall_contribution_name_appoint_long_walls_count: "" # 17241709254077376921
