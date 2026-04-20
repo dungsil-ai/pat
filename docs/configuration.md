@@ -210,6 +210,29 @@ ck3/LocalMod/
 - `github`: GitHub Releases의 최신 **공개 릴리스**를 사용하며 프리릴리즈/드래프트를 제외
 - `default`: 기본 브랜치를 체크아웃합니다. 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교하며, `["."]`은 저장소 전체를 의미합니다.
 
+### `upstream.transliteration_files` (선택사항)
+
+**타입:** Array<String>  
+**예시:** `["custom_names_l_english.yml", "*_special_*"]`
+
+**설명:** 자동 감지 키워드와 별개로, 특정 localization 파일을 음역 모드로 강제 지정합니다.
+
+- 파일명 기준으로 비교하며 경로는 무시됩니다.
+- `*` 와일드카드를 지원합니다.
+- 파일 전체를 음역 대상으로 보되, `*_desc`, `*_event`, `*_decision` 같은 키 제외 규칙은 그대로 적용됩니다.
+- `meta.toml`에서 이 목록이 바뀌면 `invalidate-on-transliteration-files-change.yml` 워크플로우가 영향받는 번역 파일의 해시를 자동으로 무효화할 수 있습니다.
+
+```toml
+[upstream]
+url = "https://github.com/modder/NewMod.git"
+localization = ["NewMod/localization/english"]
+language = "english"
+transliteration_files = [
+  "custom_events_l_english.yml",
+  "*_special_names_l_english.yml"
+]
+```
+
 ### Replace 폴더 처리
 
 일부 모드는 `replace` 폴더를 사용하여 바닐라 게임의 텍스트를 덮어씁니다.
