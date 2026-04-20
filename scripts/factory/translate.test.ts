@@ -175,6 +175,36 @@ language = "english"
     expect(translatedValue).toContain('[KO]')
   })
 
+  it('targetMod가 지정되면 해당 모드 upstream만 업데이트해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { updateAllUpstreams } = await import('../utils/upstream')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'target_l_english.yml'), createLargeYamlFile(1, 'english'), 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      targetMod: 'test-mod',
+      onlyHash: false
+    })
+
+    expect(vi.mocked(updateAllUpstreams)).toHaveBeenCalledWith(
+      join(testDir, '..'),
+      'ck3',
+      'test-mod'
+    )
+  })
+
   it('1000개 미만의 항목이 있어도 최종 파일을 올바르게 쓸 수 있어야 함', async () => {
     // 1000개 미만의 항목이 있는 소스 파일 생성
     const entryCount = 500

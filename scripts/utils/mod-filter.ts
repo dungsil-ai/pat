@@ -27,3 +27,11 @@ export function filterMods(allMods: string[], targetMod?: string): string[] {
 
   return [matchedMod]
 }
+
+/**
+ * upstream 업데이트 대상을 결정합니다.
+ * 실제로 단일 모드로 축소된 경우에만 그 모드를 반환합니다.
+ */
+export function getUpstreamTargetMod(mods: string[]): string | undefined {
+  return mods.length === 1 ? mods[0] : undefined
+}

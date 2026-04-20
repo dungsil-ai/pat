@@ -162,6 +162,7 @@ interface ModTranslationsOptions {
   rootDir: string
   mods: string[]
   gameType: GameType
+  targetMod?: string
   onlyHash?: boolean
   timeoutMinutes?: number | false // false = 타임아웃 비활성화, undefined = 기본값(15분) 사용
 }
@@ -242,11 +243,11 @@ async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModW
   return workItems
 }
 
-export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
+export async function processModTranslations ({ rootDir, mods, gameType, targetMod, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
   const projectRoot = join(rootDir, '..') // rootDir은 ck3/ 같은 게임 디렉토리이므로 한 단계 위로
-  await updateAllUpstreams(projectRoot, gameType)
+  await updateAllUpstreams(projectRoot, gameType, targetMod)
   log.success(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 완료`)
 
   // 타임아웃 설정 (기본값: 15분)

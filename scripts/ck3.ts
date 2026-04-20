@@ -11,7 +11,7 @@ import { parseDictionaryFilterArgs, parseTranslateCommandArgs } from './utils/cl
 import { log } from './utils/logger'
 import { isSqliteIOError } from './utils/cache'
 import { getDiskUsageString } from './utils/disk-usage'
-import { filterMods } from './utils/mod-filter'
+import { filterMods, getUpstreamTargetMod } from './utils/mod-filter'
 import { getTranslationTimeoutMinutesFromEnv } from './utils/translation-timeout'
 
 async function main () {
@@ -98,6 +98,7 @@ async function main () {
         rootDir: ck3Dir,
         mods,
         gameType: 'ck3',
+        targetMod: getUpstreamTargetMod(mods),
         onlyHash,
         timeoutMinutes
       })
