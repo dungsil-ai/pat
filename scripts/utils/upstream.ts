@@ -751,10 +751,10 @@ async function normalizeKoreanLocalizationPrefixes(repositoryPath: string, local
 }
 
 async function stripTripleUnderscorePrefixRecursively(directoryPath: string, configPath: string): Promise<void> {
-  let entries: Awaited<ReturnType<typeof readdir>>
+  let entries
 
   try {
-    entries = await readdir(directoryPath, { withFileTypes: true })
+    entries = await readdir(directoryPath, { withFileTypes: true, encoding: 'utf8' })
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
       return
