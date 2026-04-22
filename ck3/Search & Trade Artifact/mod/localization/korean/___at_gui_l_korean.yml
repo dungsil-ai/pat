@@ -4,6 +4,7 @@
   AT_BUY_ARTIFACTS: "유물 구매" # 4793157313230262961
   AT_BUY_ARTIFACTS_TOOLTIP: "$AT_BUY_ARTIFACTS$ $AT_WARNING_REDUCED_RANGE$" # 6399278979883466703
   AT_FIND_ARTIFACTS: "유물 탐색기" # 387337780134715869
+  AT_FIND_ARTIFACTS_TOOLTIP: "#T 유물 찾기#!\n게임 내 모든 [artifact|E]를 찾으십시오." # 5914649628158269645
   AT_WARNING_REDUCED_RANGE: "[SelectLocalization(GetPlayer.GetTravelPlan.IsValid, 'at_warning_reduced_range_desc', 'at_empty')]" # 17938282392032333943
   AT_NO_ARTIFACTS_FOUND: "#weak 유효한 유물 없음#!" # 4334629163799362363
   AT_ARTIFACT_BASE_PRICE: "   [gold_i][Artifact.MakeScope.ScriptValue('at_artifact_base_price_value')|0]" # 4094699648143895583
@@ -132,6 +133,10 @@
   at_fertility_growth: "$game_concept_fertility$ 성장" # 5333908584417603403
   at_herd_gain: "$game_concept_herd$ 획득" # 10598744301531588896
   at_herd_conversion: "$game_concept_herd$ 전환" # 1553152597378093743
+  at_merit: "$game_concept_merit$" # 1780237160150137539
+  at_poet_trait_xp: "$trait_lifestyle_poet$ 경험치" # 1537138740940432015
+  at_confucian_education_trait_xp: "$trait_confucian_education$ 경험치" # 2802913560386214458
+  at_study_confucian_classics_power: "[GetScheme('study_confucian_classics').GetTypeName] $game_concept_scheme_speed$" # 6052965325399182019
   at_equipped: "장착됨" # 12561712344708779189
   at_not_equipped: "장착되지 않음" # 6903569152459519297
   at_owned: "소유함" # 16465690826850979970
@@ -161,9 +166,4 @@
   at_owner_valid_buyer_or_seller: "소유주는 유효한 구매자 또는 판매자입니다" # 13155148817648189711
   at_valid_buyer_or_seller: "유효한 구매자 또는 판매자" # 18136666370958282721
   at_not_valid_buyer_or_seller: "유효한 구매자 또는 판매자가 아닙니다" # 6293260644907650423
-  AT_FIND_ARTIFACTS_TOOLTIP: "#T 유물 찾기#!\n게임 내 모든 [artifact|E]를 찾으십시오." # 5914649628158269645
-  at_merit: "$game_concept_merit$" # 1780237160150137539
-  at_poet_trait_xp: "$trait_lifestyle_poet$ 경험치" # 1537138740940432015
-  at_confucian_education_trait_xp: "$trait_confucian_education$ 경험치" # 2802913560386214458
-  at_study_confucian_classics_power: "[GetScheme('study_confucian_classics').GetTypeName] $game_concept_scheme_speed$" # 6052965325399182019
   at_empty: "" # 17241709254077376921
