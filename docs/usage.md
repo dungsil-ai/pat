@@ -271,7 +271,7 @@ git push origin main
   1. `pnpm upstream`
   2. `pnpm {game}:retransliteration -- --since-commit=<sha>`
   3. 변경된 한국어 파일 자동 커밋
-- 각 게임 명령은 추가/제거된 `transliteration_files` 패턴과 매칭되는 `___*_l_korean.yml` 파일의 해시만 `null`로 바꿉니다.
+- 각 게임 명령은 추가/제거된 `transliteration_files` 패턴과 매칭되는 `___*_l_korean.yml` 파일 내 각 localization 항목(key)의 해시를 `null`로 바꿉니다.
 
 ## 명령어 설명
 
