@@ -219,7 +219,7 @@ ck3/LocalMod/
 
 - 파일명 기준으로 비교하며 경로는 무시됩니다.
 - `*` 와일드카드를 지원하며, 파일명 전체를 대상으로 부분 매칭합니다. 예를 들어 `*_special_*`는 `mod_special_names_l_english.yml` 같은 이름과 매칭됩니다.
-- 파일 전체를 음역 대상으로 보되, `*_desc`, `*_event`, `*_decision` 같은 키 제외 규칙은 그대로 적용됩니다.
+- 이 목록에 매칭된 파일은 파일 단위로 음역 대상으로 처리됩니다. 현재 구현에서는 `*_desc`, `*_event`, `*_decision` 같은 키 레벨 제외 규칙이 이 경우에는 적용되지 않으며, 해당 파일의 모든 키가 음역 모드로 처리됩니다.
 - `meta.toml`에서 이 목록이 바뀌면 `invalidate-on-transliteration-files-change.yml` 워크플로우가 영향받는 번역 파일의 해시를 자동으로 무효화할 수 있습니다.
 
 ```toml
