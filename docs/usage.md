@@ -78,6 +78,9 @@ pnpm ck3:update-dict
 
 # 잘못된 번역 재번역
 pnpm ck3:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm ck3:retransliteration -- --since-commit=HEAD
 ```
 
 ### Victoria 3 번역
@@ -94,6 +97,9 @@ pnpm vic3:update-dict
 
 # 잘못된 번역 재번역
 pnpm vic3:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm vic3:retransliteration -- --since-commit=HEAD
 ```
 
 ### Stellaris 번역
@@ -110,6 +116,9 @@ pnpm stellaris:update-dict
 
 # 잘못된 번역 재번역
 pnpm stellaris:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm stellaris:retransliteration -- --since-commit=HEAD
 ```
 
 ### Upstream 업데이트
@@ -252,6 +261,18 @@ git push origin main
 - `github` 전략은 공개 릴리스만 비교하며 프리릴리즈/드래프트는 제외
 - `default` 전략은 기본 브랜치 HEAD 전체가 아니라 `upstream.localization` 경로들에 영향을 준 최신 커밋으로 비교합니다. 경로가 `["."]`이면 저장소 전체 커밋을 사용합니다.
 
+### 음역 대상 파일 변경 자동 무효화
+
+`meta.toml`의 `upstream.transliteration_files`가 바뀌면 영향을 받는 번역 파일만 골라 해시를 비워 다음 번역 때 다시 처리되도록 합니다.
+
+- 워크플로우: `.github/workflows/invalidate-on-transliteration-files-change.yml`
+- 트리거: `main` 브랜치에 `**/meta.toml` 변경 push 또는 수동 `workflow_dispatch`
+- 실행 순서:
+  1. `pnpm upstream`
+  2. `pnpm {game}:retransliteration -- --since-commit=<sha>`
+  3. 변경된 한국어 파일 자동 커밋
+- 각 게임 명령은 추가/제거된 `transliteration_files` 패턴과 매칭되는 `___*_l_korean.yml` 파일 내 각 localization 항목(key)의 해시를 `null`로 바꿉니다.
+
 ## 명령어 설명
 
 ### 번역 명령 (`pnpm ck3`, `pnpm vic3`, `pnpm stellaris`)
@@ -344,6 +365,24 @@ pnpm ck3:update-hash
 [RICE/events.yml:event_1] 검증 실패: 누락된 게임 변수: [GetTitle]
 [RICE/events.yml:event_2] 검증 실패: 변수 내부 한글 포함: [Get제목]
 총 2개 항목 무효화됨
+```
+
+### 음역 대상 파일 재무효화 (`pnpm ck3:retransliteration`)
+
+**용도:**
+- `meta.toml`의 `transliteration_files` 목록이 바뀐 경우
+- 음역/번역 모드가 바뀐 파일만 선택적으로 다시 처리하고 싶은 경우
+
+**동작:**
+1. 지정한 커밋의 `meta.toml` diff에서 `transliteration_files` 추가/제거 항목 추출
+2. 영향받는 한국어 localization 파일 탐색
+3. 기존 번역 항목의 해시를 `null`로 설정
+4. 다음 `pnpm ck3` 실행 시 해당 파일만 재번역/재음역
+
+**사용 예:**
+```bash
+pnpm ck3:retransliteration -- --since-commit=HEAD
+pnpm ck3
 ```
 
 ## 워크플로우 예제

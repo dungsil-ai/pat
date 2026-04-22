@@ -5,6 +5,29 @@
 ## 2026년 4월
 
 ### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-20
+
+**문서 반영 대상 변경:**
+- YAML 파서와 번역 sanitize가 U+200E(Left-to-Right Mark) 문자를 제거해 localization 키/값 오염을 방지
+- 번역 sanitize가 닫는 변수 마커 뒤의 `$[` 패턴에 공백을 보정해 잘못된 변수 구문 출력을 줄임
+- `meta.toml`의 `upstream.transliteration_files`로 파일명/와일드카드 기반 수동 음역 모드 지정 지원
+- `transliteration_files` 변경 시 영향받는 한국어 파일 해시만 무효화하는 워크플로우와 CLI 명령(`*:retransliteration`) 추가
+
+**관련 파일:**
+- `scripts/parser/yaml.ts`
+- `scripts/utils/translate.ts`
+- `scripts/utils/prompts.ts`
+- `scripts/utils/transliteration-files-changes.ts`
+- `scripts/utils/transliteration-files-invalidator.ts`
+- `.github/workflows/invalidate-on-transliteration-files-change.yml`
+- `scripts/ck3.ts`
+- `scripts/vic3.ts`
+- `scripts/stellaris.ts`
+- `package.json`
+
+---
+
+### 주간 문서 현행화 기준 변경점 반영
 **날짜:** 2026-04-13
 
 **문서 반영 대상 변경:**
