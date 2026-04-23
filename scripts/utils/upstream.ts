@@ -9,8 +9,8 @@
 
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { access, mkdir, readFile, writeFile, readdir, rename, rm } from 'node:fs/promises'
-import { basename, dirname, join } from 'pathe'
+import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
+import { dirname, join } from 'pathe'
 import * as semver from 'semver'
 import natsort from 'natsort'
 import { log } from './logger'
@@ -552,7 +552,6 @@ async function cloneOptimizedRepository(targetPath: string, config: UpstreamConf
     // 5. 파일 체크아웃
     log.start(`[${config.path}] 파일 체크아웃 중...`)
     await checkoutLatestVersionForShallowClone(targetPath, config.path)
-    await normalizeKoreanLocalizationPrefixes(targetPath, config.localizationPaths, config.path)
     
     const duration = Date.now() - startTime
     log.success(`[${config.path}] 클론 완료 (${duration}ms)`)
@@ -661,7 +660,6 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
         const localCommitHash = localCommitHashOutput.trim()
 
         if (localCommitHash === remoteCommitHash) {
-          await normalizeKoreanLocalizationPrefixes(repositoryPath, config.localizationPaths, config.path)
           log.info(`[${config.path}] 이미 최신 버전입니다 (${latestRef.type}: ${latestRef.name})`)
           return
         }
@@ -710,9 +708,6 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
       // upstream 리포지토리는 읽기 전용이므로 로컬 변경사항은 무시하고 원격 상태로 리셋
       await execFileAsync('git', ['reset', '--hard', `origin/${updateRef.name}`], { cwd: repositoryPath })
     }
-
-    await normalizeKoreanLocalizationPrefixes(repositoryPath, config.localizationPaths, config.path)
-    
     log.success(`[${config.path}] 업데이트 완료 (${updateRef.type}: ${updateRef.name})`)
     
   } catch (error) {
@@ -737,58 +732,6 @@ export async function checkoutLatestVersionForShallowClone(repositoryPath: strin
   } catch (error) {
     log.error(`[${configPath}] 체크아웃 실패:`, error)
     throw error
-  }
-}
-
-async function normalizeKoreanLocalizationPrefixes(repositoryPath: string, localizationPaths: string[], configPath: string): Promise<void> {
-  const koreanDirectories = localizationPaths
-    .filter(path => path.split('/').includes('korean'))
-    .map(path => join(repositoryPath, path))
-
-  for (const koreanDirectory of koreanDirectories) {
-    await stripTripleUnderscorePrefixRecursively(koreanDirectory, configPath)
-  }
-}
-
-async function stripTripleUnderscorePrefixRecursively(directoryPath: string, configPath: string): Promise<void> {
-  let entries
-
-  try {
-    entries = await readdir(directoryPath, { withFileTypes: true, encoding: 'utf8' })
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-      return
-    }
-
-    throw error
-  }
-
-  for (const entry of entries) {
-    const entryPath = join(directoryPath, entry.name)
-
-    if (entry.isDirectory()) {
-      await stripTripleUnderscorePrefixRecursively(entryPath, configPath)
-      continue
-    }
-
-    if (!entry.isFile() || !entry.name.startsWith('___')) {
-      continue
-    }
-
-    const normalizedPath = join(directoryPath, entry.name.replace(/^___/, ''))
-
-    try {
-      await access(normalizedPath)
-      log.warn(`[${configPath}] 한국어 upstream 파일 이름 정규화를 건너뜁니다: ${basename(normalizedPath)} 파일이 이미 존재합니다`)
-      continue
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
-        throw error
-      }
-    }
-
-    await rename(entryPath, normalizedPath)
-    log.info(`[${configPath}] 한국어 upstream 파일 이름 정규화: ${entry.name} -> ${basename(normalizedPath)}`)
   }
 }
 

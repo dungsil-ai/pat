@@ -430,8 +430,8 @@ language = "english"
     })
   })
 
-  describe('한국어 upstream 파일명 정규화', () => {
-    it('새로 클론한 upstream의 korean 디렉토리에서는 ___ 접두사를 제거해야 함', async () => {
+  describe('한국어 upstream sparse checkout', () => {
+    it('localization 경로에 korean이 있으면 sparse checkout 대상으로 그대로 포함해야 함', async () => {
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
 
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
@@ -460,55 +460,9 @@ language = "english"
         versionStrategy: 'default'
       }, testDir)
 
-      await expect(access(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'))).rejects.toMatchObject({ code: 'ENOENT' })
-      expect(await readFile(join(repoPath, 'localization', 'korean', 'test_l_korean.yml'), 'utf-8')).toContain('테스트')
-    })
-
-    it('이미 최신인 upstream도 korean 디렉토리의 ___ 접두사를 제거해야 함', async () => {
-      const execFileCommands: string[] = []
-      const repoPath = join(testDir, 'ck3/TestMod/upstream')
-      await mkdir(join(repoPath, '.git'), { recursive: true })
-      await mkdir(join(repoPath, 'localization', 'korean'), { recursive: true })
-      await writeFile(join(repoPath, 'localization', 'korean', '___already_l_korean.yml'), 'l_korean:\n test:0 "기존"\n')
-
-      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
-        execFileCommands.push([_file, ...args].join(' '))
-
-        if (args[0] === 'status' && args[1] === '--porcelain') {
-          return { stdout: '', stderr: '' }
-        }
-
-        if (args[0] === 'ls-remote' && args[1] === '--tags') {
-          return { stdout: 'tagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
-        }
-
-        if (args[0] === 'ls-remote') {
-          return { stdout: 'commit123\trefs/tags/v1.0.0^{}\ntagobjhash\trefs/tags/v1.0.0\n', stderr: '' }
-        }
-
-        if (args[0] === 'describe' && args.includes('--exact-match')) {
-          return { stdout: 'v1.0.0\n', stderr: '' }
-        }
-
-        if (args[0] === 'rev-parse' && args[1] === 'HEAD') {
-          return { stdout: 'commit123\n', stderr: '' }
-        }
-
-        return { stdout: '', stderr: '' }
-      }
-
-      const { updateUpstreamOptimized } = await import('./upstream')
-      await updateUpstreamOptimized({
-        url: 'https://github.com/test/repo.git',
-        path: 'ck3/TestMod/upstream',
-        localizationPaths: ['localization/korean'],
-        versionStrategy: 'natural'
-      }, testDir)
-
-      await expect(access(join(repoPath, 'localization', 'korean', '___already_l_korean.yml'))).rejects.toMatchObject({ code: 'ENOENT' })
-      expect(await readFile(join(repoPath, 'localization', 'korean', 'already_l_korean.yml'), 'utf-8')).toContain('기존')
-      expect(execFileCommands.some(command => command.startsWith('git fetch'))).toBe(false)
-      expect(execFileCommands.some(command => command.startsWith('git checkout'))).toBe(false)
+      expect(await readFile(join(repoPath, '.git', 'info', 'sparse-checkout'), 'utf-8')).toBe('localization/korean')
+      expect(await readFile(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'), 'utf-8')).toContain('테스트')
+      await access(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'))
     })
   })
 
