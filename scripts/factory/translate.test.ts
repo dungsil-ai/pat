@@ -1276,6 +1276,37 @@ language = "english"
     await rm(testDir, { recursive: true, force: true })
   })
 
+  it('upstream 한국어 파일명이 이미 ___로 시작해도 출력 파일명은 한 번만 접두사를 붙여야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'korean-source-mod')
+    const upstreamDir = join(modDir, 'upstream')
+
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "korean"
+`
+
+    const sourceContent = `l_korean:
+  test_key: "이미 한국어"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, '___test_l_korean.yml'), sourceContent, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['korean-source-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    await access(join(modDir, 'mod', 'localization', 'korean', '___test_l_korean.yml'))
+    await expect(access(join(modDir, 'mod', 'localization', 'korean', '______test_l_korean.yml'))).rejects.toMatchObject({ code: 'ENOENT' })
+  })
+
   it('짧은 왕조명 의심 항목은 추가 음역 재번역을 시도해야 함', async () => {
     const { processModTranslations } = await import('./translate')
     const { translateBulk, translate } = await import('../utils/translate')

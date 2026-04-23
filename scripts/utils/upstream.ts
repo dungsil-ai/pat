@@ -10,7 +10,7 @@
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
-import { join, dirname } from 'pathe'
+import { dirname, join } from 'pathe'
 import * as semver from 'semver'
 import natsort from 'natsort'
 import { log } from './logger'
@@ -708,7 +708,6 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
       // upstream 리포지토리는 읽기 전용이므로 로컬 변경사항은 무시하고 원격 상태로 리셋
       await execFileAsync('git', ['reset', '--hard', `origin/${updateRef.name}`], { cwd: repositoryPath })
     }
-    
     log.success(`[${config.path}] 업데이트 완료 (${updateRef.type}: ${updateRef.name})`)
     
   } catch (error) {

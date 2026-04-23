@@ -5,6 +5,7 @@ import { log } from './logger'
 import { type GameType, shouldUseTransliteration } from './prompts'
 import { validateTranslationEntries } from './translation-validator'
 import { getUpstreamFileHashesPath, readUpstreamFileHashes, removeUpstreamFileHash, writeUpstreamFileHashes } from './upstream-file-hashes'
+import { buildKoreanTargetFileName } from './localization-file-name'
 
 interface ModMeta {
   upstream: {
@@ -99,7 +100,7 @@ async function invalidateModLocalization(
       if (file.endsWith(`_l_${sourceLanguage}.yml`)) {
         const sourceFilePath = join(sourceDir, file)
         const { dir, base } = parse(file)
-        const targetFileName = '___' + base.replace(`_l_${sourceLanguage}.yml`, '_l_korean.yml')
+        const targetFileName = buildKoreanTargetFileName(base, sourceLanguage)
         const targetRelativePath = dir ? join(dir, targetFileName) : targetFileName
         const targetFilePath = join(targetDir, targetRelativePath)
         const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')

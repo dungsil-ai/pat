@@ -9,6 +9,7 @@ import { translate, translateBulk, TranslationRetryExceededError, TranslationRef
 import { updateAllUpstreams } from '../utils/upstream'
 import { getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
+import { buildKoreanTargetFileName } from '../utils/localization-file-name'
 
 const execAsync = promisify(exec)
 
@@ -365,7 +366,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
           }
           // 처리될 한국어 파일 경로 추적
           const targetParentDir = join(targetDir, dirname(normalizedFile))
-          const targetFileName = '___' + basename(normalizedFile).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
+          const targetFileName = buildKoreanTargetFileName(normalizedFile, meta.upstream.language)
           const targetPath = join(targetParentDir, targetFileName)
           expectedKoreanFiles.push(targetPath)
         }
@@ -598,7 +599,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
   // 파일 순서를 최상위로 유지해 덮어쓸 수 있도록 앞에 '___'를 붙임 (ex: `___00_culture_l_english.yml`)
   const targetParentDir = join(targetBaseDir, dirname(file))
   await mkdir(targetParentDir, { recursive: true })
-  const targetPath = join(targetParentDir, '___' + basename(file).replace(`_l_${sourceLanguage}.yml`, '_l_korean.yml'))
+  const targetPath = join(targetParentDir, buildKoreanTargetFileName(file, sourceLanguage))
 
   let targetContent = ''
   try {

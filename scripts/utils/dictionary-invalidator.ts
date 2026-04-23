@@ -6,6 +6,7 @@ import { type DictionaryChangeOptions, type DictionaryKeyInfo, getChangedDiction
 import { hashing } from './hashing'
 import { log } from './logger'
 import { type GameType, shouldUseTransliteration } from './prompts'
+import { buildKoreanTargetFileName } from './localization-file-name'
 
 interface ModMeta {
   upstream: {
@@ -180,7 +181,7 @@ async function processModLocalization(
       if (file.endsWith(`_l_${sourceLanguage}.yml`)) {
         const sourceFilePath = join(sourceDir, file)
         const { dir, base } = parse(file)
-        const targetFileName = '___' + base.replace(`_l_${sourceLanguage}.yml`, '_l_korean.yml')
+        const targetFileName = buildKoreanTargetFileName(base, sourceLanguage)
         const targetRelativePath = dir ? join(dir, targetFileName) : targetFileName
         const targetFilePath = join(targetDir, targetRelativePath)
 

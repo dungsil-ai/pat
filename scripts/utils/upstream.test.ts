@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { mkdir, writeFile, rm } from 'node:fs/promises'
+import { access, mkdir, readFile, writeFile, rm } from 'node:fs/promises'
 import { join } from 'pathe'
 import { tmpdir } from 'node:os'
 import { exec } from 'node:child_process'
@@ -427,6 +427,42 @@ language = "english"
       expect(execFileCommands).toContain('git fetch --depth=1 origin main')
       expect(execFileCommands).toContain('git checkout main')
       expect(execFileCommands).toContain('git reset --hard origin/main')
+    })
+  })
+
+  describe('한국어 upstream sparse checkout', () => {
+    it('localization 경로에 korean이 있으면 sparse checkout 대상으로 그대로 포함해야 함', async () => {
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        if (args[0] === 'clone') {
+          await mkdir(join(repoPath, '.git', 'info'), { recursive: true })
+          await mkdir(join(repoPath, 'localization', 'korean'), { recursive: true })
+          await writeFile(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'), 'l_korean:\n test:0 "테스트"\n')
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['localization/korean'],
+        versionStrategy: 'default'
+      }, testDir)
+
+      expect(await readFile(join(repoPath, '.git', 'info', 'sparse-checkout'), 'utf-8')).toBe('localization/korean')
+      expect(await readFile(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'), 'utf-8')).toContain('테스트')
+      await access(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'))
     })
   })
 
