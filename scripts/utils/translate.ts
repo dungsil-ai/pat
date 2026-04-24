@@ -60,6 +60,10 @@ function splitBulkRequests(items: UnresolvedBulkItem[]): UnresolvedBulkItem[][] 
   return batches
 }
 
+/**
+ * 벌크 로그 prefix를 생성합니다.
+ * 단일 항목이면 `[벌크/0]` 형태를, 병합된 중복 항목이면 `[벌크/0,2,4]` 형태를 반환합니다.
+ */
 function formatBulkItemLogPrefix(indices: number[]): string {
   return indices.length === 1 ? `[벌크/${indices[0]}]` : `[벌크/${indices.join(',')}]`
 }
@@ -330,6 +334,7 @@ export async function translateBulk (
 
   const results: BulkTranslateResult[] = Array.from({ length: texts.length }, () => ({ translatedText: '' }))
   const unresolved: UnresolvedBulkItem[] = []
+  // cacheKey(text + 모드 조합)를 기준으로 아직 처리되지 않은 동일 요청을 하나의 벌크 항목으로 병합합니다.
   const unresolvedMap = new Map<string, UnresolvedBulkItem>()
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const modLogPrefix = context?.modName ? `[모드:${context.modName}] ` : ''
