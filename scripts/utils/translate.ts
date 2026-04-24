@@ -334,7 +334,7 @@ export async function translateBulk (
 
   const results: BulkTranslateResult[] = Array.from({ length: texts.length }, () => ({ translatedText: '' }))
   const unresolved: UnresolvedBulkItem[] = []
-  // cacheKey(text + 모드 조합)를 기준으로 아직 처리되지 않은 동일 요청을 하나의 벌크 항목으로 병합합니다.
+  // cacheKey(음역 여부 + text)를 기준으로 아직 처리되지 않은 동일 요청을 하나의 벌크 항목으로 병합합니다.
   const unresolvedMap = new Map<string, UnresolvedBulkItem>()
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const modLogPrefix = context?.modName ? `[모드:${context.modName}] ` : ''
