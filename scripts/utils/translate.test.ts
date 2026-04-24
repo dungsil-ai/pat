@@ -612,4 +612,41 @@ describe('translateBulk', () => {
     expect(vi.mocked(translateAIBulk).mock.calls[0][0]).toHaveLength(24)
     expect(vi.mocked(translateAIBulk).mock.calls[1][0]).toHaveLength(1)
   })
+
+  it('벌크 요청 내 동일한 텍스트는 하나로 합쳐 요청하고 결과를 모두 반영해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk } = await import('./ai')
+    const { setCache } = await import('./cache')
+
+    const results = await translateBulk(['same', 'same', 'other', 'same'], 'ck3', false)
+
+    expect(results).toEqual([
+      { translatedText: '[벌크번역]same' },
+      { translatedText: '[벌크번역]same' },
+      { translatedText: '[벌크번역]other' },
+      { translatedText: '[벌크번역]same' },
+    ])
+    expect(translateAIBulk).toHaveBeenCalledTimes(1)
+    expect(translateAIBulk).toHaveBeenCalledWith(['same', 'other'], 'ck3', false)
+    expect(setCache).toHaveBeenCalledTimes(2)
+    expect(setCache).toHaveBeenCalledWith('same', '[벌크번역]same', 'ck3')
+    expect(setCache).toHaveBeenCalledWith('other', '[벌크번역]other', 'ck3')
+  })
+
+  it('병합된 벌크 항목이 폴백될 때도 동일한 텍스트는 한 번만 재번역해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk, translateAI } = await import('./ai')
+
+    vi.mocked(translateAIBulk).mockRejectedValueOnce(new Error('벌크 실패'))
+
+    const results = await translateBulk(['same', 'same'], 'ck3', false)
+
+    expect(results).toEqual([
+      { translatedText: '[번역됨]same' },
+      { translatedText: '[번역됨]same' },
+    ])
+    expect(translateAIBulk).toHaveBeenCalledWith(['same'], 'ck3', false)
+    expect(translateAI).toHaveBeenCalledTimes(1)
+    expect(translateAI).toHaveBeenCalledWith('same', 'ck3', undefined, false)
+  })
 })
