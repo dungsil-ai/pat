@@ -413,7 +413,6 @@
   pm_integrated_development_environment_building_software_industry: "아이디이" # 6391928604082540192
   pm_version_control_collaboration_building_software_industry: "버전 관리" # 4957145397519334991
   pm_cloud_based_devops_building_software_industry: "클라우드 기반 데브옵스" # 14127876758137722920
-  pm_vibe_coding_building_software_industry: "바이브 코딩" # 7948942267356835557
   pmg_software_type_building_software_industry: "소프트웨어 유형" # 10978399918707401714
   pm_traditional_software_building_software_industry: "데스크톱 응용 프로그램" # 9200855872273690816
   pm_web_based_building_software_industry: "웹사이트" # 7912522485793927089
@@ -773,3 +772,4 @@
   pm_direct_current_large: "직류 송전 (지역)" # 3804445119690468037
   pm_half_current_large: "혼합 전류 송전 (양방향)" # 8120783911676094168
   pm_alternating_current_large: "교류 송전 (범지구)" # 1446452703490143589
+  pm_vibe_coding_building_software_industry: "에이전트 코딩" # 4617647247239514834

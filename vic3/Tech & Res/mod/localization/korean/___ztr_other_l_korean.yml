@@ -56,7 +56,6 @@
   historical_population_of_germany: "19세기 호황" # 8751212409197186862
   population_of_brazil_during_slavery: "독립 이후 노예제" # 15572915988515035870
   population_of_brazil_during_slavery_player: "독립 이후 노예제" # 15572915988515035870
-  jewel_in_the_crown_modifier: "왕관의 보석" # 18128039583476276909
   colonial_agricultural_shift_player: "식민지 농업 전환" # 15672124791499522617
   colonial_agricultural_shift: "식민지 농업 전환" # 15672124791499522617
   ai_strategy_un_stability: "유엔 안정 전략" # 11677206720841615480
@@ -273,3 +272,36 @@
   ztr_demographic_boom_generic_modifier_desc: "초기 공중 보건 조치가 이 영토의 사망률을 낮추기 시작하여, 완만하지만 지속적인 인구 증가를 이끌고 있습니다." # 18334521635708409990
   ztr_religious_extremism_mitigation_modifier: "반극단주의 조치" # 14542122719973322113
   ztr_religious_extremism_mitigation_modifier_desc: "식민지 영토 내 종교적 극단주의 확산을 막기 위해 추가적인 관료 자원과 예산이 투입되었습니다." # 8619212177446457143
+  jewel_in_the_crown_modifier: "아시아의 보석" # 10148807465016620676
+  ZTR_EU_INVITE_RESTRICTION: "우리가 [Concept('concept_european_union','$EUROPEAN_UNION$')]을 주도한다면 대상은 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유해야 하며, 그렇지 않다면 대상은 이를 보유해서는 안 됩니다." # 16980428900522927037
+  ZTR_EU_JOIN_RESTRICTION: "우리가 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유하고 있다면 대상 강대국 블록은 [Concept('concept_european_union','$EUROPEAN_UNION$')]이어야 하며, 그렇지 않다면 그렇게 되어서는 안 됩니다." # 12949186387891221248
+  ztr_colonial_war_mobilization_modifier: "식민지 전쟁 동원" # 4150815846587040280
+  ztr_colonial_war_mobilization_modifier_desc: "우리는 식민지 봉기를 진압하기 위해 국가 기구를 동원했습니다. 권위가 중앙 집중화되고 동원 비용이 저렴해지지만, 우리의 정통성과 위신은 하락하며 긴장이 고조될 때마다 국제적인 비난을 받게 됩니다." # 16959686923891172924
+  ztr_negotiated_transition_modifier: "협상에 의한 이양" # 2874703945914727708
+  ztr_negotiated_transition_modifier_desc: "종주국이 본토 영토를 양도하고 광범위한 자치를 허용했습니다. 독립 운동은 가장 시급한 불만을 상실했고, 충성파 파벌이 우세해졌습니다." # 13884416949805345200
+  ztr_unify_countries: "통합 제안" # 3863093269646267814
+  ztr_unify_countries_desc: "우리와 언어, 신앙, 오랜 우정을 공유하는 소국과 평화롭고 완전한 통합을 제안합니다. 그들의 주는 우리의 국가적 의석을 제공하는 대가로 우리의 영토가 됩니다." # 4845621267961480003
+  ztr_unify_countries_effects_desc: "[TARGET_COUNTRY.GetName]의 모든 주가 [INITIATOR_COUNTRY.GetName]으로 이전됩니다. [TARGET_COUNTRY.GetName]은 소멸하고 모든 조약은 해지되며, [INITIATOR_COUNTRY.GetName]은 10년 동안 통합 보너스를 얻습니다." # 14709238770588999525
+  ztr_unify_countries_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 평화롭고 완전한 통합을 제안하여 소국의 모든 주와 책임을 계승하고자 합니다." # 3618386655317462582
+  ztr_unify_countries_proposal_accepted_desc: "[TARGET_COUNTRY.GetName]이 우리의 통합 제안을 수락하고 [INITIATOR_COUNTRY.GetName]으로 흡수되었습니다." # 4506911330289498610
+  ztr_unify_countries_proposal_declined_desc: "[TARGET_COUNTRY.GetName]이 우리의 평화적 통합 제안을 거부했습니다." # 8820157350382245219
+  ztr_unify_countries_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName]이 [INITIATOR_COUNTRY.GetName]과 통합되었습니다." # 15601214333009977700
+  ztr_unify_countries_name: "$ztr_unify_countries$" # 6731009785811904536
+  ztr_unify_countries_action_name: "통일 제안" # 3863093269646267814
+  ztr_unify_countries_proposal_notification_name: "통일 제안" # 9776364677184689608
+  ztr_unify_countries_proposal_accepted_name: "$ztr_unify_countries$ 수락됨" # 9076633197220129347
+  ztr_unify_countries_proposal_declined_name: "$ztr_unify_countries$ 거절됨" # 16381506116848362033
+  ztr_unify_countries_proposal_third_party_accepted_name: "$ztr_unify_countries$ 승인됨" # 7921515679244082519
+  ztr_unify_countries_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]이(가) [INITIATOR_COUNTRY.GetName]의 통합 제안을 거부했습니다." # 17932693402596327092
+  ztr_unify_countries_accept_effect_tt: "[SCOPE.sCountry('target_country').GetName]의 모든 [Concept('concept_state','주')]가 우리에게 이전되며, [SCOPE.sCountry('target_country').GetName]은(는) 주권 국가로서 해체됩니다." # 8029827105790821525
+  ztr_tooltip_countries_share_primary_culture: "우리는 그들과 [Concept('concept_culture','$concept_culture$')]을(를) 공유합니다." # 16386706001946949364
+  ztr_tooltip_countries_state_contiguity: "우리는 그들의 주와 접해 있거나 겹치는 본토 주를 소유하고 있습니다." # 15573721804579337177
+  ztr_tooltip_both_democratic: "두 국가 모두 [Concept('concept_democracy','민주주의')] 국가입니다." # 13005991454678959724
+  ztr_tooltip_countries_have_cultural_or_relations_ground: "우리는 [Concept('concept_culture','$concept_culture$')]을(를) 공유하며 그들과 최소 #v 중립#! 이상의 관계를 유지하고 있습니다." # 4973520652305543524
+  ztr_tooltip_countries_can_unify: "모든 통합 선결 조건이 충족되었습니다: 대상이 소규모 이웃 국가이고, 우리가 [Concept('concept_prestige','$concept_prestige$')] 면에서 그들보다 우위에 있으며, 문화적, 종교적, 또는 관계적 기반을 갖추었고, 정치적 성향이 충돌하지 않습니다." # 611555535838161004
+  ztr_unified_country_integration: "통합 국가 합병" # 17884141130842282463
+  ztr_unified_country_integration_desc: "자매 국가를 흡수함으로써 국민적 자부심이 고취되었고, 국가 권위가 강화되었으며, 10년간 이주와 내부 안정에 큰 활력을 불어넣었습니다." # 5209845515215718634
+  ZTR_UNIFY_ACCEPT_SHARED_PRIMARY_CULTURE: "공유된 [Concept('concept_culture','$concept_culture$')]" # 12281526414553979626
+  ZTR_UNIFY_ACCEPT_SHARED_RELIGION: "공유된 [Concept('concept_state_religion','국교')]" # 12199078323848284435
+  ZTR_UNIFY_ACCEPT_SAME_POWER_BLOC: "이미 동일한 [Concept('concept_power_bloc','$concept_power_bloc$')]에 속해 있음" # 4433870577380131616
+  ztr_unify_countries_proposal_third_party_declined_name: "$ztr_unify_countries$ 거부됨" # 3213316392403096779
