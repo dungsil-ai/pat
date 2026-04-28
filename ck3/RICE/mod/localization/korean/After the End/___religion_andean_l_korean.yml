@@ -1,27 +1,28 @@
 ﻿l_korean:
   inca_religion: "잉카" # 17926213780913593442
+  inca_religion_adj: "잉카" # 17926213780913593442
   inca_religion_adherent: "잉카" # 17926213780913593442
   inca_religion_adherent_plural: "잉카인" # 15997359078683672525
   inca_religion_desc: "홍수 이전 타완틴수유 치하에서 살았던 사람들의 전통 신앙으로, 그들의 세계관과 우주론은 이제 사파 잉카와 인티에게 본질적으로 결속되어 있습니다. 이 종교의 신자들은 안데스의 다른 모든 신념보다 우선하여 그들에게 신앙을 집중하며, 영적인 것과 세속적인 것의 완벽한 결합으로서 사파 잉카가 통치하는 제국을 열망합니다." # 11545277923388686778
   inca_pantheon: "우아카" # 15915083136097129986
   witchgodname_inca: "수파이" # 17432637192868814635
+  inca_high_god_name: "인티" # 7941386116125719534
   inca_high_god_name_possessive: "인티의" # 12265014349098768327
   inca_high_god_shehe: "그" # 5046774935762787478
   inca_high_god_herselfhimself: "그 자신" # 18397406289215749573
   inca_high_god_herhis: "그의" # 8263228204743400007
   inca_high_god_name_alternate: "야야 인티" # 3342685642309086919
   inca_high_god_name_alternate_possessive: "야야 인티의" # 8622794767802553052
+  inca_devil_name: "수파이" # 17432637192868814635
   inca_devil_name_possessive: "수파이의" # 7600318806959929525
   inca_devil_shehe: "그" # 8803760235815837871
   inca_devil_herselfhimself: "그 자신" # 10958483083757948805
   inca_house_of_worship: "칸차" # 9389852986721252587
   inca_house_of_worship_plural: "칸차들" # 1202172601915528944
-  inca_religion_adj: "잉카" # 17926213780913593442
-  inca_high_god_name: "인티" # 7941386116125719534
-  inca_devil_name: "수파이" # 17432637192868814635
   inca_religious_symbol: "차카나" # 10376447136943451841
   inca_religious_text: "키푸" # 10139984161517451364
   inca_religious_head_title: "윌라크 우무" # 9664197935288754852
+  inca_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   inca_devotee_male: "타이타쿠라" # 3596610914259701671
   inca_devotee_male_plural: "타이타쿠라들" # 11187928255272626602
   inca_devotee_female: "아클랴" # 16414487685276791784
@@ -36,52 +37,52 @@
   inca_divine_realm: "하나 파차" # 6947518852119141986
   inca_positive_afterlife: "하나 파차" # 6947518852119141986
   inca_negative_afterlife: "우쿠 파차" # 11512009730183934239
-  inca_death_name_possessive: "와뉴이의" # 5819640106366806126
-  inca_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   inca_death_name: "와뉴이" # 6330864743191838886
-  inca_creator_god_name_possessive: "비라코차의" # 17458543773018800177
-  inca_health_god_name_possessive: "인티의" # 12265014349098768327
-  inca_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
-  inca_wealth_god_name_possessive: "인티의" # 12265014349098768327
-  inca_household_god_name_possessive: "마마 키야의" # 872481860808956211
-  inca_fate_god_name_possessive: "인티의" # 12265014349098768327
-  inca_knowledge_god_name_possessive: "비라코차의" # 17458543773018800177
-  inca_war_god_name_possessive: "이야파의" # 5305075051687890825
-  inca_trickster_god_name_possessive: "수파이의" # 7600318806959929525
-  inca_night_god_name_possessive: "마마 키야의" # 872481860808956211
+  inca_death_name_possessive: "와뉴이의" # 5819640106366806126
   inca_creator_god_name: "비라코차" # 12642939121025526769
+  inca_creator_god_name_possessive: "비라코차의" # 17458543773018800177
   inca_health_god_name: "인티" # 7941386116125719534
+  inca_health_god_name_possessive: "인티의" # 12265014349098768327
   inca_fertility_god_name: "파차 마마" # 551568888389456623
+  inca_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
   inca_wealth_god_name: "인티" # 7941386116125719534
+  inca_wealth_god_name_possessive: "인티의" # 12265014349098768327
   inca_household_god_name: "마마 킬랴" # 13078203933805210137
+  inca_household_god_name_possessive: "마마 키야의" # 872481860808956211
   inca_fate_god_name: "인티" # 7941386116125719534
+  inca_fate_god_name_possessive: "인티의" # 12265014349098768327
   inca_knowledge_god_name: "비라코차" # 12642939121025526769
+  inca_knowledge_god_name_possessive: "비라코차의" # 17458543773018800177
   inca_war_god_name: "이야파" # 15775185410558186861
+  inca_war_god_name_possessive: "이야파의" # 5305075051687890825
   inca_trickster_god_name: "수파이" # 17432637192868814635
+  inca_trickster_god_name_possessive: "수파이의" # 7600318806959929525
   inca_night_god_name: "마마 킬랴" # 13078203933805210137
+  inca_night_god_name_possessive: "마마 키야의" # 872481860808956211
+  inca_water_god_name: "마마 코차" # 12618327155313720175
   inca_water_god_name_possessive: "마마 코차의" # 11036325957404922648
   inkarri_religion: "인카리" # 12830850259570472397
+  inkarri_religion_adj: "잉카리" # 12830850259570472397
   inkarri_religion_adherent: "인카리" # 12830850259570472397
   inkarri_religion_adherent_plural: "인카리들" # 5332401782060204861
   inkarri_religion_desc: "인카리의 예언을 믿는 자들은 [Concept('the_event_ate','사건')|E] 이전 타완틴수유의 마지막 황제 아타왈파가 죽음 이후 돌아와 지상의 폭군들을 멸하고 우미냐와 단절된 백성들의 연결을 회복하겠다는 맹세를 남겼다고 주장한다. 이 맹세가 결코 이루어지지 않게 하려고 정복자들은 그의 신체를 훼손하여 그가 다스리던 궁전과 도시의 폐허 아래에 묻어버렸다. 그러나 그의 신체 파편들은 각각 마법의 황금으로 변하여 불멸의 존재가 되었으나 서로 떨어지게 되었다. 그 사건 이후, 인카리 신봉자들은 폐허를 뒤지는 것이 일상이 되었다. 그들은 마지막 사파 잉카의 신체를 찾아 다시 조립하면 그가 불멸의 신과 같은 존재로 깨어나 영원히 지상에서 모든 악을 몰아낼 것이라 믿기 때문이다." # 12157070279181390872
+  inkarri_high_god_name: "잉카리" # 12830850259570472397
   inkarri_high_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_high_god_shehe: "그" # 5046774935762787478
   inkarri_high_god_herselfhimself: "그 자신" # 18397406289215749573
   inkarri_high_god_herhis: "그의" # 8263228204743400007
   inkarri_high_god_name_alternate: "아타왈파" # 4833166434783920245
   inkarri_high_god_name_alternate_possessive: "아타왈파의" # 2787742361219761068
+  inkarri_devil_name: "에스파냐리" # 14180378704233871946
   inkarri_devil_name_possessive: "에스파냐리의" # 4645231373953864149
   inkarri_devil_shehe: "그" # 8803760235815837871
   inkarri_devil_herselfhimself: "그 자신" # 10958483083757948805
   inkarri_house_of_worship: "칸차" # 9389852986721252587
   inkarri_house_of_worship_plural: "칸차들" # 1202172601915528944
-  inca_water_god_name: "마마 코차" # 12618327155313720175
-  inkarri_religion_adj: "잉카리" # 12830850259570472397
-  inkarri_high_god_name: "잉카리" # 12830850259570472397
-  inkarri_devil_name: "에스파냐리" # 14180378704233871946
   inkarri_religious_symbol: "차카나" # 10376447136943451841
   inkarri_religious_text: "키푸" # 10139984161517451364
   inkarri_religious_head_title: "사파 잉카" # 9688621680045111210
+  inkarri_religious_head_title_name: "사파 잉카" # 9688621680045111210
   inkarri_devotee_male: "타이타쿠라" # 3596610914259701671
   inkarri_devotee_male_plural: "타이타쿠라들" # 11187928255272626602
   inkarri_devotee_female: "아클랴" # 16414487685276791784
@@ -96,52 +97,52 @@
   inkarri_divine_realm: "하나 파차" # 6947518852119141986
   inkarri_positive_afterlife: "하나 파차" # 6947518852119141986
   inkarri_negative_afterlife: "우쿠 파차" # 11512009730183934239
-  inkarri_death_name_possessive: "와뉴이의" # 5819640106366806126
-  inkarri_religious_head_title_name: "사파 잉카" # 9688621680045111210
   inkarri_death_name: "와뉴이" # 6330864743191838886
-  inkarri_creator_god_name_possessive: "비라코차의" # 17458543773018800177
-  inkarri_health_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_fertility_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_wealth_god_name_possessive: "인티의" # 12265014349098768327
-  inkarri_household_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_fate_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_knowledge_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_war_god_name_possessive: "아타왈파의" # 2787742361219761068
-  inkarri_trickster_god_name_possessive: "인카리의" # 18258749609949427910
-  inkarri_night_god_name_possessive: "인카리의" # 18258749609949427910
+  inkarri_death_name_possessive: "와뉴이의" # 5819640106366806126
   inkarri_creator_god_name: "비라코차" # 12642939121025526769
+  inkarri_creator_god_name_possessive: "비라코차의" # 17458543773018800177
   inkarri_health_god_name: "잉카리" # 12830850259570472397
+  inkarri_health_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_fertility_god_name: "잉카리" # 12830850259570472397
+  inkarri_fertility_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_wealth_god_name: "인티" # 7941386116125719534
+  inkarri_wealth_god_name_possessive: "인티의" # 12265014349098768327
   inkarri_household_god_name: "잉카리" # 12830850259570472397
+  inkarri_household_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_fate_god_name: "잉카리" # 12830850259570472397
+  inkarri_fate_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_knowledge_god_name: "잉카리" # 12830850259570472397
+  inkarri_knowledge_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_war_god_name: "아타우알파" # 4833166434783920245
+  inkarri_war_god_name_possessive: "아타왈파의" # 2787742361219761068
   inkarri_trickster_god_name: "잉카리" # 12830850259570472397
+  inkarri_trickster_god_name_possessive: "인카리의" # 18258749609949427910
   inkarri_night_god_name: "잉카리" # 12830850259570472397
+  inkarri_night_god_name_possessive: "인카리의" # 18258749609949427910
+  inkarri_water_god_name: "잉카리" # 12830850259570472397
   inkarri_water_god_name_possessive: "인카리의" # 18258749609949427910
   inti_religion: "인티" # 7941386116125719534
+  inti_religion_adj: "인티" # 7941386116125719534
   inti_religion_adherent: "인티교" # 7750639190293956850
   inti_religion_adherent_plural: "인티교도" # 6163401869940234724
   inti_religion_desc: "중앙 안데스의 인티 숭배는 태양으로 묘사되는 인티를 중심으로 합니다. 그는 지역 통치자들의 조상이자 그들의 통치 아래 있는 많은 백성의 수호자로 여겨집니다. 그는 우주의 모든 측면과 원리를 관장하는 다른 많은 신들과 함께 숭배받습니다." # 16743599940830404534
+  inti_high_god_name: "인티" # 7941386116125719534
   inti_high_god_name_possessive: "인티의" # 12265014349098768327
   inti_high_god_shehe: "그" # 5046774935762787478
   inti_high_god_herselfhimself: "그 자신" # 18397406289215749573
   inti_high_god_herhis: "그의" # 8263228204743400007
   inti_high_god_name_alternate: "야야 인티" # 3342685642309086919
   inti_high_god_name_alternate_possessive: "야야 인티의" # 8622794767802553052
+  inti_devil_name: "수파이" # 17432637192868814635
   inti_devil_name_possessive: "수파이의" # 7600318806959929525
   inti_devil_shehe: "그" # 8803760235815837871
   inti_devil_herselfhimself: "그 자신" # 10958483083757948805
   inti_house_of_worship: "칸차" # 9389852986721252587
   inti_house_of_worship_plural: "칸차들" # 1202172601915528944
-  inkarri_water_god_name: "잉카리" # 12830850259570472397
-  inti_religion_adj: "인티" # 7941386116125719534
-  inti_high_god_name: "인티" # 7941386116125719534
-  inti_devil_name: "수파이" # 17432637192868814635
   inti_religious_symbol: "차카나" # 10376447136943451841
   inti_religious_text: "키푸" # 10139984161517451364
   inti_religious_head_title: "윌라크 우무" # 9664197935288754852
+  inti_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   inti_devotee_male: "타이타쿠라" # 3596610914259701671
   inti_devotee_male_plural: "타이타쿠라들" # 11187928255272626602
   inti_devotee_female: "아클랴" # 16414487685276791784
@@ -156,50 +157,50 @@
   inti_divine_realm: "하나 파차" # 6947518852119141986
   inti_positive_afterlife: "하나 파차" # 6947518852119141986
   inti_negative_afterlife: "우쿠 파차" # 11512009730183934239
-  inti_death_name_possessive: "와뉴이의" # 5819640106366806126
-  inti_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   inti_death_name: "와뉴이" # 6330864743191838886
-  inti_creator_god_name_possessive: "비라코차의" # 17458543773018800177
-  inti_health_god_name_possessive: "인티의" # 12265014349098768327
-  inti_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
-  inti_wealth_god_name_possessive: "인티의" # 12265014349098768327
-  inti_household_god_name_possessive: "마마 키야의" # 872481860808956211
-  inti_fate_god_name_possessive: "인티의" # 12265014349098768327
-  inti_knowledge_god_name_possessive: "비라코차의" # 17458543773018800177
-  inti_war_god_name_possessive: "이야파의" # 5305075051687890825
-  inti_trickster_god_name_possessive: "수파이의" # 7600318806959929525
-  inti_night_god_name_possessive: "마마 키야의" # 872481860808956211
+  inti_death_name_possessive: "와뉴이의" # 5819640106366806126
   inti_creator_god_name: "비라코차" # 12642939121025526769
+  inti_creator_god_name_possessive: "비라코차의" # 17458543773018800177
   inti_health_god_name: "인티" # 7941386116125719534
+  inti_health_god_name_possessive: "인티의" # 12265014349098768327
   inti_fertility_god_name: "파차 마마" # 551568888389456623
+  inti_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
   inti_wealth_god_name: "인티" # 7941386116125719534
+  inti_wealth_god_name_possessive: "인티의" # 12265014349098768327
   inti_household_god_name: "마마 킬랴" # 13078203933805210137
+  inti_household_god_name_possessive: "마마 키야의" # 872481860808956211
   inti_fate_god_name: "인티" # 7941386116125719534
+  inti_fate_god_name_possessive: "인티의" # 12265014349098768327
   inti_knowledge_god_name: "비라코차" # 12642939121025526769
+  inti_knowledge_god_name_possessive: "비라코차의" # 17458543773018800177
   inti_war_god_name: "이야파" # 15775185410558186861
+  inti_war_god_name_possessive: "이야파의" # 5305075051687890825
   inti_trickster_god_name: "수파이" # 17432637192868814635
+  inti_trickster_god_name_possessive: "수파이의" # 7600318806959929525
   inti_night_god_name: "마마 킬랴" # 13078203933805210137
+  inti_night_god_name_possessive: "마마 키야의" # 872481860808956211
+  inti_water_god_name: "마마 코차" # 12618327155313720175
   inti_water_god_name_possessive: "마마 코차의" # 11036325957404922648
   andean_religion: "안데스" # 5652163453945860639
+  andean_religion_adj: "안데스" # 5652163453945860639
   andean_religion_adherent: "안데스" # 5652163453945860639
   andean_religion_adherent_plural: "안데스인" # 15920123002814961810
   andean_religion_desc: "고대 제국 시대부터 이어져 내려온 안데스 민족의 고대 신들과 신앙을 숭배하는 안데스 종교의 추종자들은 자연 세계와 그 요소들이 인간이 건설할 수 있는 그 이상의 신성한 존재임을 받아들입니다. 자연이 주는 모든 것에 충분한 감사를 표하며 종교적 삶과 세속적 삶이 완벽하게 결합할 때만 인류는 평화와 조화를 찾을 수 있습니다. 이 진리를 고수함으로써 인류는 숭고한 신들을 경배하는 동시에 서로 간의 관계를 형성하는 유대를 강화합니다." # 17317562923109317517
   pachamama_religion: "파차마마교" # 1801633150170909963
+  pachamama_religion_adj: "파차마마주의자" # 18323497221787477096
   pachamama_religion_adherent: "파차마마교도" # 18323497221787477096
   pachamama_religion_adherent_plural: "파차마마교도들" # 8405083049036881452
   pachamama_religion_desc: "안데스 원주민들 사이의 종교적 다양성에도 불구하고, 군사적, 경제적, 문화적 영향력을 통해 널리 퍼진 공통의 신념과 관습이 존재합니다. 여기에는 신성한 산과 호수 유적에 대한 숭배, 지팡이를 든 신과 같은 예술적 모티프, 그리고 대지뿐만 아니라 모든 공간과 시간의 화신인 파차마마를 비롯한 여러 신들의 중요성이 포함됩니다." # 13006707985903422449
   tiwanaku_pantheon: "우아카" # 15915083136097129986
   witchgodname_tiwanaku: "수파이" # 17432637192868814635
+  tiwanaku_high_god_name: "파차마마" # 2215502118196381853
   tiwanaku_high_god_name_possessive: "파차마마의" # 12035401513191723112
   tiwanaku_high_god_shehe: "그녀" # 6749535693125258719
   tiwanaku_high_god_herselfhimself: "그녀 자신" # 9977065142117219824
   tiwanaku_high_god_herhis: "그녀의" # 8001132140604582223
   tiwanaku_high_god_name_alternate: "카막 파차" # 17902751622828844888
-  inti_water_god_name: "마마 코차" # 12618327155313720175
-  andean_religion_adj: "안데스" # 5652163453945860639
-  pachamama_religion_adj: "파차마마주의자" # 18323497221787477096
-  tiwanaku_high_god_name: "파차마마" # 2215502118196381853
   tiwanaku_high_god_name_alternate_possessive: "카막 파차의" # 8915054537028739409
+  tiwanaku_devil_name: "수파이" # 17432637192868814635
   tiwanaku_devil_name_possessive: "수파이의" # 7600318806959929525
   tiwanaku_devil_shehe: "그" # 8803760235815837871
   tiwanaku_devil_herselfhimself: "그 자신" # 10958483083757948805
@@ -208,6 +209,7 @@
   tiwanaku_religious_symbol: "차카나" # 10376447136943451841
   tiwanaku_religious_text: "키푸" # 10139984161517451364
   tiwanaku_religious_head_title: "윌라크 우무" # 9664197935288754852
+  tiwanaku_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   tiwanaku_devotee_male: "라이카" # 12484242630470134195
   tiwanaku_devotee_male_plural: "라이카들" # 18231650735946291433
   tiwanaku_devotee_female: "라이카" # 12484242630470134195
@@ -217,54 +219,54 @@
   tiwanaku_priest: "야티리" # 6582724319552921957
   tiwanaku_priest_plural: "야티리들" # 16174959895577335090
   tiwanaku_priest_term_plural: "야티리들" # 16174959895577335090
-  tiwanaku_devil_name: "수파이" # 17432637192868814635
-  tiwanaku_religious_head_title_name: "윌라크 우무" # 9664197935288754852
   tiwanaku_bishop: "아마우타" # 7084523002599029605
   tiwanaku_bishop_plural: "아마우타들" # 10766521359964543411
   tiwanaku_divine_realm: "우쿠 파차" # 11512009730183934239
   tiwanaku_positive_afterlife: "아라지 파차" # 6084964283658797986
   tiwanaku_negative_afterlife: "만카 파차" # 3827399419946948397
-  tiwanaku_death_name_possessive: "와뉴이의" # 5819640106366806126
-  tiwanaku_creator_god_name_possessive: "투누파의" # 11074048876534006343
-  tiwanaku_health_god_name_possessive: "파차 마마의" # 13907178088883647049
-  tiwanaku_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
-  tiwanaku_wealth_god_name_possessive: "에케코의" # 14015678356768046887
-  tiwanaku_household_god_name_possessive: "말쿠의" # 4539953624294750058
-  tiwanaku_fate_god_name_possessive: "파차마마의" # 12035401513191723112
   tiwanaku_death_name: "와뉴이" # 6330864743191838886
+  tiwanaku_death_name_possessive: "와뉴이의" # 5819640106366806126
   tiwanaku_creator_god_name: "투누파" # 4026032321476035463
+  tiwanaku_creator_god_name_possessive: "투누파의" # 11074048876534006343
   tiwanaku_health_god_name: "파차 마마" # 551568888389456623
+  tiwanaku_health_god_name_possessive: "파차 마마의" # 13907178088883647049
   tiwanaku_fertility_god_name: "파차 마마" # 551568888389456623
+  tiwanaku_fertility_god_name_possessive: "파차 마마의" # 13907178088883647049
   tiwanaku_wealth_god_name: "에케코" # 10847399781996053363
+  tiwanaku_wealth_god_name_possessive: "에케코의" # 14015678356768046887
   tiwanaku_household_god_name: "말쿠" # 18298190217137001937
+  tiwanaku_household_god_name_possessive: "말쿠의" # 4539953624294750058
   tiwanaku_fate_god_name: "파차마마" # 2215502118196381853
+  tiwanaku_fate_god_name_possessive: "파차마마의" # 12035401513191723112
   tiwanaku_knowledge_god_name: "아마루" # 7553335826548615761
   tiwanaku_knowledge_god_name_possessive: "아마루의" # 6565519324653546279
+  tiwanaku_war_god_name: "아차칠라" # 17169007242267234176
   tiwanaku_war_god_name_possessive: "아차칠라의" # 14544822524067155907
+  tiwanaku_trickster_god_name: "와리" # 5842205744517816584
   tiwanaku_trickster_god_name_possessive: "와리의" # 17361080830960216686
+  tiwanaku_night_god_name: "팍시" # 1090574382567075349
   tiwanaku_night_god_name_possessive: "팍시의" # 6583789880102428721
+  tiwanaku_water_god_name: "아마루" # 7553335826548615761
   tiwanaku_water_god_name_possessive: "아마루의" # 6565519324653546279
   chiminigagua: "보지치 이에" # 14332837059314724979
+  chiminigagua_adj: "보지치 이스트" # 13287566808123883332
   chiminigagua_adherent: "보지치 이 나스카" # 5758622969814283025
   chiminigagua_adherent_plural: "보지치 이 나스카" # 5758622969814283025
   chiminigagua_desc: "보지치 이에, 즉 보지카의 길은 무이스카 인들의 전통 신앙입니다. 무이스카 인들은 치미니가과와 그가 창조한 신들을 숭배하며, 그중에서도 태양의 신 수아와 달의 신 치에 부부가 가장 으뜸입니다. 이 신들과 조상들에 관한 전설은 콜롬비아의 고원 지대에서 번성하고 있습니다." # 11017152568755048819
   muisca_pantheon: "과타키카" # 10869270753068813537
   witchgodname_muisca: "위타카" # 16753307417340449407
+  muisca_high_god_name: "치미니가구아" # 10995438308083972155
   muisca_high_god_name_possessive: "치미니가과의" # 12140497590077002619
   muisca_high_god_name_alternate: "치미니차과" # 15179803797614588620
   muisca_high_god_name_alternate_possessive: "치미니차과의" # 1183233356929835163
-  tiwanaku_war_god_name: "아차칠라" # 17169007242267234176
-  tiwanaku_trickster_god_name: "와리" # 5842205744517816584
-  tiwanaku_night_god_name: "팍시" # 1090574382567075349
-  tiwanaku_water_god_name: "아마루" # 7553335826548615761
-  chiminigagua_adj: "보지치 이스트" # 13287566808123883332
-  muisca_high_god_name: "치미니가구아" # 10995438308083972155
+  muisca_devil_name: "부시라코" # 14594061981444766857
   muisca_devil_name_possessive: "부시라코의" # 10199608766694406666
   muisca_house_of_worship: "쿠카" # 5330584125898564554
   muisca_house_of_worship_plural: "쿠카들" # 2896531914807101166
   muisca_religious_symbol: "치미" # 6554866308713706489
   muisca_religious_text: "치미니" # 7996863368297610189
   muisca_religious_head_title: "치키 추장" # 1114750642726321328
+  muisca_religious_head_title_name: "시파-사케" # 10057213071751712466
   muisca_priest: "오브케" # 1776316613921161343
   muisca_priest_plural: "오브케들" # 17156252227112082198
   muisca_bishop: "치키" # 13887240096191135276
@@ -272,55 +274,54 @@
   muisca_divine_realm: "과타키카" # 10869270753068813537
   muisca_positive_afterlife: "지구의 중심" # 4427974926134893407
   muisca_negative_afterlife: "신의 심판" # 2003210619772905794
-  muisca_death_name_possessive: "구아하이오케의" # 12512275713944888502
-  muisca_creator_god_name_possessive: "치미니가과의" # 12140497590077002619
-  muisca_devil_name: "부시라코" # 14594061981444766857
-  muisca_religious_head_title_name: "시파-사케" # 10057213071751712466
   muisca_death_name: "구아이오케" # 17450619614512901639
+  muisca_death_name_possessive: "구아하이오케의" # 12512275713944888502
   muisca_creator_god_name: "치미니가구아" # 10995438308083972155
+  muisca_creator_god_name_possessive: "치미니가과의" # 12140497590077002619
   muisca_health_god_name: "수아" # 1673689081623904349
   muisca_health_god_name_possessive: "수아의" # 14632960232759635890
+  muisca_fertility_god_name: "바추에" # 7282851277870427404
   muisca_fertility_god_name_possessive: "바추에의" # 14859586777279979168
+  muisca_wealth_god_name: "쿠차비라" # 7734265896548350153
   muisca_wealth_god_name_possessive: "쿠차비라의" # 13261262732961876770
+  muisca_household_god_name: "수아" # 1673689081623904349
   muisca_household_god_name_possessive: "수아의" # 14632960232759635890
+  muisca_fate_god_name: "치미니가구아" # 10995438308083972155
   muisca_fate_god_name_possessive: "치미니가과의" # 12140497590077002619
+  muisca_knowledge_god_name: "보치카" # 4639076958940790153
   muisca_knowledge_god_name_possessive: "보치카의" # 9280590657729993194
+  muisca_war_god_name: "치브차쿰" # 14714670911941967511
   muisca_war_god_name_possessive: "치브차쿰의" # 5417497092811303737
+  muisca_trickster_god_name: "치브차쿰" # 14714670911941967511
   muisca_trickster_god_name_possessive: "치브차쿰의" # 5417497092811303737
+  muisca_night_god_name: "치에" # 9746799884221068489
   muisca_night_god_name_possessive: "치에의" # 6531865643313571661
+  muisca_water_god_name: "바추에" # 7282851277870427404
   muisca_water_god_name_possessive: "바추에의" # 14859586777279979168
   manteno_religion: "우미냐교" # 12370119396685938938
-  muisca_fertility_god_name: "바추에" # 7282851277870427404
-  muisca_wealth_god_name: "쿠차비라" # 7734265896548350153
-  muisca_household_god_name: "수아" # 1673689081623904349
-  muisca_fate_god_name: "치미니가구아" # 10995438308083972155
-  muisca_knowledge_god_name: "보치카" # 4639076958940790153
-  muisca_war_god_name: "치브차쿰" # 14714670911941967511
-  muisca_trickster_god_name: "치브차쿰" # 14714670911941967511
-  muisca_night_god_name: "치에" # 9746799884221068489
-  muisca_water_god_name: "바추에" # 7282851277870427404
+  manteno_religion_adj: "우미냐이스트" # 15288574118129551077
   manteno_religion_adherent: "우미냐교도" # 15288574118129551077
   manteno_religion_adherent_plural: "우미냐교도들" # 15530265034998932933
   manteno_religion_desc: "여신 우미냐는 한때 필멸의 여성이었으나, 살해당하거나 풍요의 신에게 자신을 제물로 바치며 피비린내 나는 죽음을 맞이했습니다. 그러나 그녀의 상처에서는 피가 흐르는 대신 몸에서 나비가 쏟아져 나왔고, 심장이 있어야 할 자리에는 에메랄드가 발견되었습니다. 타조 알만큼이나 큰 이 에메랄드는 엄청난 신성한 힘을 지니고 있으며, 우미냐를 기리기 위해 많은 사원이 세워졌습니다. 태양신께서 이 에메랄드가 사악한 자의 손에 넘어가면 우주가 멸망할 것이라고 예언하셨기에, 그녀의 숭배자들은 이 에메랄드를 열렬히 수호합니다." # 11810289417685848697
   manteno_pantheon: "신들" # 1724221639461429291
   witchgodname_manteno: "우미냐" # 11834140851219294324
+  manteno_high_god_name: "우미냐" # 11834140851219294324
   manteno_high_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_high_god_shehe: "그녀" # 6749535693125258719
   manteno_high_god_herselfhimself: "그녀 자신" # 9977065142117219824
   manteno_high_god_herhis: "그녀의" # 8001132140604582223
   manteno_high_god_name_alternate: "모든 에메랄드의 어머니" # 15726155642373383922
   manteno_high_god_name_alternate_possessive: "모든 에메랄드의 어머니의" # 4052838483858756026
+  manteno_devil_name: "악령" # 7652288874693675748
   manteno_devil_name_possessive: "악령들의" # 10704852910278191159
   manteno_devil_shehe: "그들" # 2328972438248726795
   manteno_devil_herselfhimself: "그들 자신" # 6200625214287285499
   manteno_house_of_worship: "사원" # 6519563856123702153
   manteno_house_of_worship_plural: "사원들" # 7805349845828344700
   manteno_religious_symbol: "에메랄드" # 16902737168928869292
-  manteno_religion_adj: "우미냐이스트" # 15288574118129551077
-  manteno_high_god_name: "우미냐" # 11834140851219294324
-  manteno_devil_name: "악령" # 7652288874693675748
   manteno_religious_text: "위대한 전설" # 7472661959308090211
   manteno_religious_head_title: "대사제" # 12413382511103218010
+  manteno_religious_head_title_name: "수석 사제" # 12413382511103218010
   manteno_devotee_male: "신도" # 16996875086266395993
   manteno_devotee_male_plural: "신도들" # 15412075443944701231
   manteno_devotee_female: "신도" # 16996875086266395993
@@ -335,50 +336,49 @@
   manteno_divine_realm: "천상" # 12869024307463886145
   manteno_positive_afterlife: "천상" # 12869024307463886145
   manteno_negative_afterlife: "어둠" # 17422102442350036598
-  manteno_death_name_possessive: "우미냐의" # 14559112993963197501
-  manteno_religious_head_title_name: "수석 사제" # 12413382511103218010
   manteno_death_name: "우미냐" # 11834140851219294324
+  manteno_death_name_possessive: "우미냐의" # 14559112993963197501
   manteno_creator_god_name: "태양신" # 3961038262080233058
   manteno_creator_god_name_possessive: "태양신의" # 5553652698197527490
-  manteno_health_god_name_possessive: "우미냐의" # 14559112993963197501
-  manteno_fertility_god_name_possessive: "우미냐의" # 14559112993963197501
-  manteno_wealth_god_name_possessive: "우미냐의" # 14559112993963197501
-  manteno_household_god_name_possessive: "우미냐의" # 14559112993963197501
-  manteno_fate_god_name_possessive: "태양신의" # 5553652698197527490
-  manteno_knowledge_god_name_possessive: "태양신의" # 5553652698197527490
-  manteno_war_god_name_possessive: "툼발의" # 5669342846132779601
-  manteno_trickster_god_name_possessive: "툼발의" # 5669342846132779601
-  manteno_night_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_health_god_name: "우미냐" # 11834140851219294324
+  manteno_health_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_fertility_god_name: "우미냐" # 11834140851219294324
+  manteno_fertility_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_wealth_god_name: "우미냐" # 11834140851219294324
+  manteno_wealth_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_household_god_name: "우미냐" # 11834140851219294324
+  manteno_household_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_fate_god_name: "태양신" # 3961038262080233058
+  manteno_fate_god_name_possessive: "태양신의" # 5553652698197527490
   manteno_knowledge_god_name: "태양신" # 3961038262080233058
+  manteno_knowledge_god_name_possessive: "태양신의" # 5553652698197527490
   manteno_war_god_name: "툼발" # 6047863230843672488
+  manteno_war_god_name_possessive: "툼발의" # 5669342846132779601
   manteno_trickster_god_name: "툼발" # 6047863230843672488
+  manteno_trickster_god_name_possessive: "툼발의" # 5669342846132779601
   manteno_night_god_name: "우미냐" # 11834140851219294324
+  manteno_night_god_name_possessive: "우미냐의" # 14559112993963197501
   manteno_water_god_name: "우미냐" # 11834140851219294324
   manteno_water_god_name_possessive: "우미냐의" # 14559112993963197501
   embera_religion: "자이" # 1720239301791126131
+  embera_religion_adj: "자이스트" # 7525753803609223650
   embera_religion_adherent: "자이교도" # 7525753803609223650
   embera_religion_adherent_plural: "자이교도들" # 9498000939715515264
   embera_religion_desc: "세상은 자이 영혼들로 가득하다. 그들은 형체가 없는 존재가 아니라 물질세계에 깊이 뿌리내리고 있으며, 불과 물, 공기, 대지, 돌, 그리고 식물 속에 거주한다. 자이바나들은 이러한 영혼들과 소통하여 사람들을 치유하고 보호하는 방법을 아는 전문가들이다. 영적으로 특히 중요한 것은 나무인데, 나무는 긴 세월 동안 많은 것을 지켜보았기에 조상들의 지식이 담긴 저장소로 여겨진다. 강 또한 중요한데, 이는 사람들이 죽은 뒤 종종 카누에 실려 매장되기 때문이다." # 14787780101190448615
   embera_religion_old: "고대 자이" # 13975688182076464076
+  embera_religion_old_adj: "고대 자이스트" # 12671460428958543049
   embera_religion_old_adherent: "고대 자이교도" # 12671460428958543049
   embera_religion_old_adherent_plural: "고대 자이교도들" # 15030437064159280703
   embera_religion_old_desc: "$embera_religion_desc$" # 18400293909960807267
   embera_pantheon: "자이인들" # 6707263796859969405
   witchgodname_embera: "피카리오" # 15571009163502633566
+  embera_pagan_high_god_name: "카라가비" # 15080526028607974132
   embera_pagan_high_god_name_possessive: "카라가비의" # 14661010795184605317
   embera_pagan_high_god_name_alternate: "카라비" # 15695227769954665717
   embera_pagan_high_god_name_alternate_possessive: "카라비의" # 2096744875130570211
   embera_pagan_good_god_jai: "자이" # 1720239301791126131
   embera_pagan_good_god_jai_possessive: "자이의" # 1828344008141287210
   embera_pagan_good_god_betenabe: "베테나베" # 8596276225421472088
-  embera_religion_adj: "자이스트" # 7525753803609223650
-  embera_religion_old_adj: "고대 자이스트" # 12671460428958543049
-  embera_pagan_high_god_name: "카라가비" # 15080526028607974132
   embera_pagan_good_god_betenabe_possessive: "베테나베의" # 10971233107180809767
   embera_pagan_good_god_ancastor: "안카스토르" # 11912813833367575707
   embera_pagan_good_god_ancastor_possessive: "안카스토르의" # 12815918678214870673
@@ -403,42 +403,42 @@
   embera_pagan_devil_shehe: "그" # 8803760235815837871
   embera_pagan_devil_herselfhimself: "그 자신" # 10958483083757948805
   embera_pagan_devil_herhis: "그의" # 14588382875684683839
+  embera_pagan_death_deity_name: "케예메" # 2147867503363954961
   embera_pagan_death_deity_name_possessive: "케예메의" # 6339120926474498751
   embera_pagan_death_deity_herhis: "그의" # 14588382875684683839
-  embera_pagan_creator_god_name_possessive: "다치제제의" # 15466719104168318618
-  embera_pagan_health_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
-  embera_pagan_fertility_god_name_possessive: "$embera_pagan_good_god_awena_possessive$" # 13920425808438434533
-  embera_pagan_wealth_god_name_possessive: "$embera_pagan_good_god_betenabe_possessive$" # 10802638292792624258
-  embera_pagan_household_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
-  embera_pagan_fate_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
-  embera_pagan_death_deity_name: "케예메" # 2147867503363954961
   embera_pagan_creator_god_name: "다치제제" # 1182665419464634693
+  embera_pagan_creator_god_name_possessive: "다치제제의" # 15466719104168318618
   embera_pagan_health_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
+  embera_pagan_health_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
   embera_pagan_fertility_god_name: "$embera_pagan_good_god_awena$\" " # 16892297447295746342
+  embera_pagan_fertility_god_name_possessive: "$embera_pagan_good_god_awena_possessive$" # 13920425808438434533
   embera_pagan_wealth_god_name: "$embera_pagan_good_god_betenabe$" # 9419919809037598564
+  embera_pagan_wealth_god_name_possessive: "$embera_pagan_good_god_betenabe_possessive$" # 10802638292792624258
   embera_pagan_household_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
+  embera_pagan_household_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
   embera_pagan_fate_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
+  embera_pagan_fate_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
   embera_pagan_knowledge_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
   embera_pagan_knowledge_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
+  embera_pagan_war_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
   embera_pagan_war_god_name_possessive: "$embera_pagan_good_god_jai_possessive$" # 17227525759557973815
+  embera_pagan_trickster_god_name: "$embera_pagan_devil_name$" # 12559204923003036013
   embera_pagan_trickster_god_name_possessive: "$embera_pagan_devil_name_possessive$" # 17373941969609289807
+  embera_pagan_night_god_name: "$embera_pagan_good_god_jedeko$" # 2342471072253966735
   embera_pagan_night_god_name_possessive: "$embera_pagan_good_god_jedeko_possessive$" # 2676357728237224348
+  embera_pagan_water_god_name: "$embera_pagan_good_god_betenabe$" # 9419919809037598564
   embera_pagan_water_god_name_possessive: "$embera_pagan_good_god_betenabe_possessive$" # 10802638292792624258
   embera_pagan_house_of_worship: "성지" # 4140189172405501403
   embera_pagan_house_of_worship_plural: "성지들" # 864272730451704220
   embera_pagan_religious_symbol: "고대 나무" # 6394815825027757581
   embera_pagan_religious_text: "전설" # 4274106199038916972
   embera_pagan_religious_head_title: "수석 하이바나" # 243775725105466496
+  embera_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   embera_pagan_devotee: "신도" # 16996875086266395993
   embera_pagan_devotee_plural: "신도들" # 15412075443944701231
   embera_pagan_priest: "하이바나" # 12302492551194239677
   embera_pagan_priest_plural: "하이바나들" # 5282337998288760715
   embera_pagan_priest_term_plural: "하이바나들" # 5282337998288760715
-  embera_pagan_war_god_name: "$embera_pagan_good_god_jai$" # 14860156803971123103
-  embera_pagan_trickster_god_name: "$embera_pagan_devil_name$" # 12559204923003036013
-  embera_pagan_night_god_name: "$embera_pagan_good_god_jedeko$" # 2342471072253966735
-  embera_pagan_water_god_name: "$embera_pagan_good_god_betenabe$" # 9419919809037598564
-  embera_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   embera_pagan_priest_alternate_plural: "샤먼" # 18154816624900111499
   embera_pagan_divine_realm: "푸른 것들의 세계" # 9805459829169968179
   embera_pagan_positive_afterlife: "$embera_pagan_divine_realm$" # 12943795282478604612

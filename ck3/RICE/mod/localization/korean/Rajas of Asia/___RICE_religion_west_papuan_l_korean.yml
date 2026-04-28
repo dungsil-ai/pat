@@ -1,49 +1,55 @@
 ﻿l_korean:
   west_papuan_religion: "서파푸아인" # 16207587878709483193
+  west_papuan_religion_adj: "웨스트 파푸아" # 16207587878709483193
   west_papuan_religion_adherent: "서파푸아인" # 16207587878709483193
   west_papuan_religion_adherent_plural: "서파푸아인들" # 12330371783293401936
   west_papuan_religion_desc: "파푸아 북서부와 몰루카 동부의 민족들은 오스트로네시아와 파푸아의 영향을 혼합하였습니다." # 12713797469072892800
   biak_pagan: "워리즘" # 15680206606304855650
+  biak_pagan_adj: "워리스트" # 10652646203509798709
   biak_pagan_adherent: "워리즘 신도" # 10652646203509798709
   biak_pagan_adherent_plural: "워리즘 신도들" # 7838353051207280148
   biak_pagan_desc: "오래전, 구원자 마나르마케리와 동정녀 탄생으로 태어난 평화의 왕자이자 그의 아들 코노르 마나르뷰가 비아크 민족의 섬을 떠나며, 재앙을 피하기 위해 백성들이 따라야 할 신성한 율법을 남겼습니다. 그들은 세대가 지난 후 그가 돌아와 파푸아에 끝없는 기쁨과 번영, 평화의 시대인 코레리를 열어줄 것을 기다립니다. 이 신앙의 신도들은 또한 #italic 워#! 의식을 통해 먼 땅으로의 야심 찬 항해와 같은 노력에 도움을 주고 명성과 영광, 부를 가져다주는 조상 영혼인 #italic 코르와르#!의 힘을 믿습니다." # 941378183345355969
   biak_old_pagan: "고대 워리즘" # 947377794357835158
+  biak_old_pagan_adj: "올드 워리스트" # 14870867209869765037
   biak_old_pagan_adherent: "고대 워리즘 신도" # 14870867209869765037
   biak_old_pagan_adherent_plural: "고대 워리즘 신도들" # 14411231755078285431
   biak_old_pagan_desc: "$biak_pagan_desc$" # 13379634674020552354
+  biak_pagan_high_god_name: "마나르마케리" # 8105760551006376928
   biak_pagan_high_god_name_possessive: "마나르마케리의" # 3262468737761235204
   biak_pagan_high_god_name_alternate: "만세렌 낭기" # 9860911512259110157
   biak_pagan_high_god_name_alternate_possessive: "만세렌 낭기의" # 8521017043509505659
   biak_pagan_good_god_konor_manarbew: "코노르 마나르뷰" # 3978804873773705816
-  west_papuan_religion_adj: "웨스트 파푸아" # 16207587878709483193
-  biak_pagan_adj: "워리스트" # 10652646203509798709
-  biak_old_pagan_adj: "올드 워리스트" # 14870867209869765037
-  biak_pagan_high_god_name: "마나르마케리" # 8105760551006376928
   biak_pagan_good_god_korwar: "코르와르" # 13583642428377849892
   biak_pagan_good_god_faknik: "파크니크" # 12119500855977682082
   biak_pagan_good_god_dabyor: "다뵤르" # 18313697240071050563
   biak_pagan_good_god_sabumi: "사부미" # 12714272587644518429
   biak_pagan_good_god_sabumi_possessive: "사부미의" # 6092998403069651807
+  biak_pagan_devil_name: "더 만원" # 14333782888768002953
   biak_pagan_devil_name_possessive: "만웬의" # 5235690226524289710
+  biak_pagan_death_deity_name: "삼파리" # 10863891002554126347
   biak_pagan_death_deity_name_possessive: "삼파리의" # 8191512588873050610
   biak_pagan_death_deity_herhis: "그것의" # 12383260098665029106
-  biak_pagan_creator_god_name_possessive: "마디라의" # 4883425998803791084
-  biak_pagan_health_god_name_possessive: "인소라키의" # 17220232632782125051
-  biak_pagan_fertility_god_name_possessive: "삼나프 마라프디의" # 10958971731179060577
-  biak_pagan_wealth_god_name_possessive: "카마산 망카르와이디의" # 8291639091262342440
-  biak_pagan_household_god_name_possessive: "아몬 카카디의" # 4783529726419059274
-  biak_pagan_devil_name: "더 만원" # 14333782888768002953
-  biak_pagan_death_deity_name: "삼파리" # 10863891002554126347
   biak_pagan_creator_god_name: "마디라" # 7559971618160967676
+  biak_pagan_creator_god_name_possessive: "마디라의" # 4883425998803791084
   biak_pagan_health_god_name: "인소라키" # 11707539713432896351
+  biak_pagan_health_god_name_possessive: "인소라키의" # 17220232632782125051
   biak_pagan_fertility_god_name: "삼나프 마라프디" # 12338942204395193753
+  biak_pagan_fertility_god_name_possessive: "삼나프 마라프디의" # 10958971731179060577
   biak_pagan_wealth_god_name: "카마산 망카르와이디" # 7130155568399584919
+  biak_pagan_wealth_god_name_possessive: "카마산 망카르와이디의" # 8291639091262342440
   biak_pagan_household_god_name: "아몬 카카디" # 1861207935711854070
+  biak_pagan_household_god_name_possessive: "아몬 카카디의" # 4783529726419059274
+  biak_pagan_fate_god_name: "스바요 워스나베이디" # 10436695802240305374
   biak_pagan_fate_god_name_possessive: "스바요 워스나베이디의" # 9803933735678350323
+  biak_pagan_knowledge_god_name: "빈세렌낭기" # 16631272421023874930
   biak_pagan_knowledge_god_name_possessive: "빈세렌낭기의" # 7947431674341371733
+  biak_pagan_war_god_name: "$biak_pagan_high_god_name$" # 13908062152025910427
   biak_pagan_war_god_name_possessive: "$biak_pagan_high_god_name_possessive$" # 13726738913317628909
+  biak_pagan_trickster_god_name: "만워리 워르바예" # 8051297599603232290
   biak_pagan_trickster_god_name_possessive: "만워리 워르바예의" # 11889399196368795784
+  biak_pagan_night_god_name: "아르부르스" # 3263316171214118790
   biak_pagan_night_god_name_possessive: "아르부르의" # 4817003468682869215
+  biak_pagan_water_god_name: "사푸르 캉칸디" # 14311225901052941400
   biak_pagan_water_god_name_possessive: "사푸르 캉칸디의" # 2698116644804457145
   biak_witchgodname: "만웬" # 12836456478403505544
   biak_witchgodname_possessive: "만웬의" # 7288112850175092609
@@ -52,12 +58,6 @@
   biak_pagan_religious_symbol: "코르와르 조각상" # 13342596394736635444
   biak_pagan_religious_text: "신성한 이야기" # 1916157011032334391
   biak_pagan_religious_head_title: "고왕" # 8961043193171858779
-  biak_pagan_fate_god_name: "스바요 워스나베이디" # 10436695802240305374
-  biak_pagan_knowledge_god_name: "빈세렌낭기" # 16631272421023874930
-  biak_pagan_war_god_name: "$biak_pagan_high_god_name$" # 13908062152025910427
-  biak_pagan_trickster_god_name: "만워리 워르바예" # 8051297599603232290
-  biak_pagan_night_god_name: "아르부르스" # 3263316171214118790
-  biak_pagan_water_god_name: "사푸르 캉칸디" # 14311225901052941400
   biak_pagan_religious_head_title_name: "고위 의회" # 15038947742583190916
   biak_pagan_devotee: "신도" # 16996875086266395993
   biak_pagan_devotee_plural: "신도들" # 15412075443944701231
@@ -71,15 +71,16 @@
   biak_pagan_bishop: "몬 추장" # 8900879625653669283
   biak_pagan_bishop_plural: "몬족 추장" # 12268690129294362440
   fakfak_pagan: "마투투교" # 13703862958689894955
+  fakfak_pagan_adj: "마투투오이스트" # 16556857370258515095
   fakfak_pagan_adherent: "마투투교도" # 16556857370258515095
   fakfak_pagan_adherent_plural: "마투투교도들" # 5871802388651757182
   fakfak_pagan_desc: "오래전, 우리는 #italic 마투투#!라 불리는 강력한 변신 정령들과 계약을 맺었다. 그들은 인간과 도마뱀의 형상을 반씩 지닌 우리의 조상이다. 우리가 물고기와 같은 제물을 바치면, 그들은 우리에게 언제나 풍요를 보장할 것이다. 이 마투투들 중 가장 강력한 존재는 물고기의 왕으로 알려져 있다." # 9063311595938388214
   fakfak_old_pagan: "고대 마투투교" # 2702756116718887699
+  fakfak_old_pagan_adj: "고대 마투투오이스트" # 15018543854694086008
   fakfak_old_pagan_adherent: "고대 마투투교도" # 15018543854694086008
   fakfak_old_pagan_adherent_plural: "고대 마투투교도들" # 12286729142516107418
-  fakfak_pagan_adj: "마투투오이스트" # 16556857370258515095
-  fakfak_old_pagan_adj: "고대 마투투오이스트" # 15018543854694086008
   fakfak_old_pagan_desc: "$fakfak_pagan_desc$" # 12336169736977294036
+  fakfak_pagan_high_god_name: "물고기의 왕" # 17073256851512653414
   fakfak_pagan_high_god_name_possessive: "물고기 왕의" # 6087661430765348530
   fakfak_pagan_high_god_name_alternate: "위대한 마투투오" # 13616496459131868490
   fakfak_pagan_high_god_name_alternate_possessive: "위대한 마투투오의" # 10074019907798382074
@@ -90,6 +91,7 @@
   fakfak_pagan_religious_symbol: "도마뱀 암각화" # 12091787496115669189
   fakfak_pagan_religious_text: "신성한 이야기" # 1916157011032334391
   fakfak_pagan_religious_head_title: "고위 의식 집행자들" # 3194695132819767618
+  fakfak_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   fakfak_pagan_devotee: "신도" # 16996875086266395993
   fakfak_pagan_devotee_plural: "신도들" # 15412075443944701231
   fakfak_pagan_priest: "의식 집행자" # 14344440618059304151
@@ -97,52 +99,54 @@
   fakfak_pagan_priest_term_plural: "의식 집행자들" # 15684466788705290652
   fakfak_pagan_priest_alternate_plural: "샤먼" # 18154816624900111499
   fakfak_pagan_divine_realm: "천상" # 12869024307463886145
-  fakfak_pagan_high_god_name: "물고기의 왕" # 17073256851512653414
-  fakfak_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   fakfak_pagan_positive_afterlife: "$fakfak_pagan_divine_realm$" # 11487369004528542015
   fakfak_pagan_negative_afterlife: "어둠" # 11642026191357822070
   fakfak_pagan_bishop: "수석 의식 집행자" # 6398622936559591715
   fakfak_pagan_bishop_plural: "수석 의식 집행자들" # 13756037714116228385
   tehit_pagan: "우온 숭배" # 13584067494197646615
+  tehit_pagan_adj: "우오니스트" # 67193178400896532
   tehit_pagan_adherent: "우온 신도" # 67193178400896532
   tehit_pagan_adherent_plural: "우온 신도들" # 12418146138982701310
   tehit_pagan_desc: "우온은 자비로운 비밀 결사의 이름이자 그들이 인류에게 가져다주는 유익한 지식을 뜻한다. 우온은 의식 물품을 교환하고 세계의 기원, 하늘의 존재들과 소통하는 법, 그리고 우온의 사악한 대척점인 라이트와 맞서 싸우는 방법을 전수하는 엄선된 남성 집단으로 구성된다. 우온의 지식과 달리 라이트의 지식은 사악한데, 이는 인신공양과 살생을 요구하며 흔히 무지한 여성들에 의해 행해지기 때문이다. 라이트에게 오염되지 않도록 무슨 수를 써서라도 피해야 한다." # 2724790931058849460
   tehit_old_pagan: "구 우온 숭배" # 777036729758476449
+  tehit_old_pagan_adj: "구 우오니스트" # 5659426796355960508
   tehit_old_pagan_adherent: "구 우온 신도" # 5659426796355960508
   tehit_old_pagan_adherent_plural: "구 우온 신도들" # 6548702437483269986
   tehit_old_pagan_desc: "$tehit_pagan_desc$" # 5425923800170217778
+  tehit_pagan_high_god_name: "탈리" # 7861855182082118027
   tehit_pagan_high_god_name_possessive: "탈리의" # 17491865485020355221
   tehit_pagan_high_god_name_alternate: "나 아고" # 3653186360381061423
   tehit_pagan_high_god_name_alternate_possessive: "나 아고의" # 3796479777974909915
   tehit_pagan_good_god_nimlasa: "님라사" # 5785427098623228366
   tehit_pagan_good_god_nimlasa_possessive: "님라사의" # 15878026427213417693
-  tehit_pagan_adj: "우오니스트" # 67193178400896532
-  tehit_old_pagan_adj: "구 우오니스트" # 5659426796355960508
-  tehit_pagan_high_god_name: "탈리" # 7861855182082118027
   tehit_pagan_good_god_wua: "우아" # 3450715192199863683
   tehit_pagan_good_god_wua_possessive: "우아의" # 13580641676855710153
+  tehit_pagan_devil_name: "콜" # 10591670597534756003
   tehit_pagan_devil_name_possessive: "콜의" # 9312371647526010246
+  tehit_pagan_death_deity_name: "비티크" # 14699868853805390690
   tehit_pagan_death_deity_name_possessive: "비티크의" # 12218954799838403857
   tehit_pagan_death_deity_herhis: "그의" # 14588382875684683839
-  tehit_pagan_creator_god_name_possessive: "$tehit_pagan_high_god_name_possessive$" # 17795286714277591584
-  tehit_pagan_health_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
-  tehit_pagan_fertility_god_name_possessive: "클렌 타디의" # 16418154771211043901
-  tehit_pagan_wealth_god_name_possessive: "$tehit_pagan_fertility_god_name_possessive$" # 11147389550742632553
-  tehit_pagan_household_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
-  tehit_pagan_fate_god_name_possessive: "$tehit_pagan_fertility_god_name_possessive$" # 11147389550742632553
-  tehit_pagan_devil_name: "콜" # 10591670597534756003
-  tehit_pagan_death_deity_name: "비티크" # 14699868853805390690
   tehit_pagan_creator_god_name: "$tehit_pagan_high_god_name$\" " # 1630053230628643285
+  tehit_pagan_creator_god_name_possessive: "$tehit_pagan_high_god_name_possessive$" # 17795286714277591584
   tehit_pagan_health_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
+  tehit_pagan_health_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
   tehit_pagan_fertility_god_name: "클렌 타디" # 7827634929490720709
+  tehit_pagan_fertility_god_name_possessive: "클렌 타디의" # 16418154771211043901
   tehit_pagan_wealth_god_name: "$tehit_pagan_fertility_god_name$" # 14264615150479458199
+  tehit_pagan_wealth_god_name_possessive: "$tehit_pagan_fertility_god_name_possessive$" # 11147389550742632553
   tehit_pagan_household_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
+  tehit_pagan_household_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
   tehit_pagan_fate_god_name: "$tehit_pagan_fertility_god_name$" # 14264615150479458199
+  tehit_pagan_fate_god_name_possessive: "$tehit_pagan_fertility_god_name_possessive$" # 11147389550742632553
   tehit_pagan_knowledge_god_name: "$tehit_pagan_fertility_god_name$" # 14264615150479458199
   tehit_pagan_knowledge_god_name_possessive: "$tehit_pagan_fertility_god_name_possessive$" # 11147389550742632553
+  tehit_pagan_war_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
   tehit_pagan_war_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
+  tehit_pagan_trickster_god_name: "마멜레" # 9200053773361367133
   tehit_pagan_trickster_god_name_possessive: "마멜레의" # 4939085607430437557
+  tehit_pagan_night_god_name: "$tehit_pagan_death_deity_name$" # 6750412262559458743
   tehit_pagan_night_god_name_possessive: "$tehit_pagan_death_deity_name_possessive$" # 12057714144347514671
+  tehit_pagan_water_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
   tehit_pagan_water_god_name_possessive: "$tehit_pagan_good_god_nimlasa_possessive$" # 6335291420786598430
   tehit_witchgodname: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
   tehit_witchgodname_possessive: "$tehit_pagan_good_god_nimlasa_possessive$\" " # 6811452764173932109
@@ -151,14 +155,10 @@
   tehit_pagan_religious_symbol: "무지개" # 849219773458556037
   tehit_pagan_religious_text: "비밀스러운 이야기" # 16931321271350109281
   tehit_pagan_religious_head_title: "고위 나 우온" # 16584788051969303212
+  tehit_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   tehit_pagan_devotee: "신도" # 16996875086266395993
   tehit_pagan_devotee_plural: "신도들" # 15412075443944701231
   tehit_pagan_priest: "나 우온" # 7171283248220514853
-  tehit_pagan_war_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
-  tehit_pagan_trickster_god_name: "마멜레" # 9200053773361367133
-  tehit_pagan_night_god_name: "$tehit_pagan_death_deity_name$" # 6750412262559458743
-  tehit_pagan_water_god_name: "$tehit_pagan_good_god_nimlasa$" # 2057921245222924930
-  tehit_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   tehit_pagan_priest_plural: "나 우온" # 8171967817090863739
   tehit_pagan_priest_term_plural: "나 우온" # 8171967817090863739
   tehit_pagan_priest_alternate_plural: "시작하다" # 12220597144665949132
@@ -168,21 +168,24 @@
   tehit_pagan_bishop: "나 우온 족장" # 5280784119150537485
   tehit_pagan_bishop_plural: "나 우온 족장의" # 16980372454860323793
   abui_pagan: "라몰링교" # 840938580304945296
+  abui_pagan_adj: "라몰링기스트" # 8175609183820966418
   abui_pagan_adherent: "라몰링교도" # 8175609183820966418
   abui_pagan_adherent_plural: "라몰링교도들" # 17281625016702018138
   abui_pagan_desc: "수많은 신과 조상신은 주로 라몰링과 라하탈라라는 두 주신을 섬긴다. 만물의 창조주이자 신들의 위계 서열 정점에 있는 라몰링은 종종 동물이나 인간의 형상을 빌려 물질세계와 소통하지만, 때로는 장난꾸러기 같은 행동을 보이기도 한다. 비교적 최근에 등장한 신 라하탈라는 하늘에 거주하며 좀처럼 물리적인 형상을 취하지 않는다. 대신 사람의 몸에 빙의하여 그들과 소통한다." # 4171853739072795374
   abui_old_pagan: "고대 라몰링교" # 11983473779527406858
+  abui_old_pagan_adj: "올드 라몰링기스트" # 9606306492612366161
   abui_old_pagan_adherent: "고대 라몰링교도" # 9606306492612366161
   abui_old_pagan_adherent_plural: "고대 라몰링교도들" # 14386279715100280802
   abui_old_pagan_desc: "$abui_pagan_desc$" # 18174129652773299663
-  abui_pagan_high_god_name_possessive: "라몰링의" # 10549468104006789351
-  abui_pagan_adj: "라몰링기스트" # 8175609183820966418
-  abui_old_pagan_adj: "올드 라몰링기스트" # 9606306492612366161
   abui_pagan_high_god_name: "라몰링" # 9575762253594846182
+  abui_pagan_high_god_name_possessive: "라몰링의" # 10549468104006789351
   abui_pagan_high_god_name_alternate: "$abui_pagan_high_god_name$" # 10808041426547150893
   abui_pagan_high_god_name_alternate_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
+  abui_pagan_gods_name: "신들" # 4284229957879073907
   abui_pagan_gods_name_possessive: "신들의" # 9166670990118936238
+  abui_pagan_devil_name: "악령" # 7652288874693675748
   abui_pagan_devil_name_possessive: "악령들의" # 10704852910278191159
+  abui_pagan_devil_mon_mot_name: "몬 모트" # 11275508341034550672
   abui_pagan_devil_mon_mot_name_possessive: "몬 모트의" # 16793994083776123850
   abui_pagan_good_god_nala_kaang: "나나 카앙" # 3047203384358275270
   abui_pagan_good_god_nala_kaang_possessive: "나나 카앙의" # 13090289555188697398
@@ -194,32 +197,30 @@
   abui_pagan_good_god_lahatala_servants_possessive: "라하탈라의 하인들의" # 14795433961078802700
   abui_pagan_good_god_lamoling_lahatala_servants: "라몰링과 라하탈라의 하인들" # 3335797094986544301
   abui_pagan_good_god_lamoling_lahatala_servants_possessive: "라몰링과 라하탈라의 하인들의" # 16832322354781495600
-  abui_pagan_death_deity_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
-  abui_pagan_gods_name: "신들" # 4284229957879073907
-  abui_pagan_devil_name: "악령" # 7652288874693675748
-  abui_pagan_devil_mon_mot_name: "몬 모트" # 11275508341034550672
   abui_pagan_death_deity_name: "$abui_pagan_high_god_name$" # 10808041426547150893
+  abui_pagan_death_deity_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_death_deity_herhis: "그의" # 14588382875684683839
-  abui_pagan_creator_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
-  abui_pagan_health_god_name_possessive: "$abui_pagan_good_god_lahatala_possessive$" # 11959008969671527033
-  abui_pagan_fertility_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
-  abui_pagan_wealth_god_name_possessive: "$abui_pagan_good_god_lamoling_servants_possessive$" # 6243251517889104504
-  abui_pagan_household_god_name_possessive: "$abui_pagan_good_god_lamoling_lahatala_servants_possessive$" # 17095391332893480089
-  abui_pagan_fate_god_name_possessive: "$abui_pagan_good_god_lahatala_possessive$" # 11959008969671527033
-  abui_pagan_knowledge_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
-  abui_pagan_war_god_name_possessive: "$abui_pagan_devil_mon_mot_name_possessive$" # 3479025938913034363
-  abui_pagan_trickster_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_creator_god_name: "$abui_pagan_high_god_name$" # 10808041426547150893
+  abui_pagan_creator_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_health_god_name: "$abui_pagan_good_god_lahatala$" # 6052946362022106102
+  abui_pagan_health_god_name_possessive: "$abui_pagan_good_god_lahatala_possessive$" # 11959008969671527033
   abui_pagan_fertility_god_name: "$abui_pagan_high_god_name$" # 10808041426547150893
+  abui_pagan_fertility_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_wealth_god_name: "$abui_pagan_good_god_lamoling_servants$" # 4597742565941058126
+  abui_pagan_wealth_god_name_possessive: "$abui_pagan_good_god_lamoling_servants_possessive$" # 6243251517889104504
   abui_pagan_household_god_name: "$abui_pagan_good_god_lamoling_lahatala_servants$" # 10930009960130588278
+  abui_pagan_household_god_name_possessive: "$abui_pagan_good_god_lamoling_lahatala_servants_possessive$" # 17095391332893480089
   abui_pagan_fate_god_name: "$abui_pagan_good_god_lahatala$" # 6052946362022106102
+  abui_pagan_fate_god_name_possessive: "$abui_pagan_good_god_lahatala_possessive$" # 11959008969671527033
   abui_pagan_knowledge_god_name: "$abui_pagan_high_god_name$" # 10808041426547150893
+  abui_pagan_knowledge_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_war_god_name: "$abui_pagan_devil_mon_mot_name$" # 8785846895222162715
+  abui_pagan_war_god_name_possessive: "$abui_pagan_devil_mon_mot_name_possessive$" # 3479025938913034363
   abui_pagan_trickster_god_name: "$abui_pagan_high_god_name$" # 10808041426547150893
+  abui_pagan_trickster_god_name_possessive: "$abui_pagan_high_god_name_possessive$" # 8633409054293678699
   abui_pagan_night_god_name: "$abui_pagan_devil_mon_mot_name$" # 8785846895222162715
   abui_pagan_night_god_name_possessive: "$abui_pagan_devil_mon_mot_name_possessive$" # 3479025938913034363
+  abui_pagan_water_god_name: "$abui_pagan_good_god_lamoling_servants$" # 4597742565941058126
   abui_pagan_water_god_name_possessive: "$abui_pagan_good_god_lamoling_servants_possessive$" # 6243251517889104504
   abui_witchgodname: "$abui_pagan_high_god_name$" # 10808041426547150893
   abui_witchgodname_possessive: "$abui_pagan_high_god_name_possessive$의 " # 13138829467493585250
@@ -228,6 +229,7 @@
   abui_pagan_religious_symbol: "모코 북" # 6603642376964863804
   abui_pagan_religious_text: "신성한 이야기" # 1916157011032334391
   abui_pagan_religious_head_title: "고위 의식 집행자" # 15442310045891761976
+  abui_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   abui_pagan_devotee: "신도" # 16996875086266395993
   abui_pagan_devotee_plural: "신도들" # 15412075443944701231
   abui_pagan_priest: "의식 집행자" # 14344440618059304151
@@ -237,7 +239,5 @@
   abui_pagan_divine_realm: "라몰링의 땅" # 1027440207866934650
   abui_pagan_positive_afterlife: "$abui_pagan_divine_realm$" # 15816221036423293732
   abui_pagan_negative_afterlife: "잔혹함의 땅" # 18359209946817609745
-  abui_pagan_water_god_name: "$abui_pagan_good_god_lamoling_servants$" # 4597742565941058126
-  abui_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   abui_pagan_bishop: "수석 의식 집행자" # 6398622936559591715
   abui_pagan_bishop_plural: "수석 의식 집행자들" # 13756037714116228385

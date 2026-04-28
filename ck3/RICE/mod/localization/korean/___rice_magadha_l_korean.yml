@@ -1,5 +1,7 @@
 ﻿l_korean:
   Palapala: "팔라팔라" # 3028470802984770778
+  Subhuticandra: "수부티찬드라" # 4193296841340065992
+  dynn_RICE_Subhuticandra: "수부티드" # 228659948206233035
   RICE_magadha_pithipati_legend_name: "다이아몬드 왕좌의 수호자들" # 6804458005494874648
   RICE_magadha_pithipati_legend_desc: "[title.GetNameNoTier]는 붓다께서 깨달음을 얻으신 곳으로, 금강좌(Diamond Throne)로 알려져 있습니다. 그 지역에서 [religion.GetName]의 쇠퇴를 염려한 [guardian.GetName]께서는 [religion.GetAdjectiveNoTooltip] 공동체를 위하여 바로 그 왕좌를 수호하고자 #italic Pithipati#!, 즉 금강좌의 군주라는 칭호를 맡으셨습니다." # 12003676977230897924
   RICE_magadha_pithipati_legend_chapter_opening_new_title: "지혜롭고 신실한 자들은 싯다르타 왕자의 삶을 알고 있습니다. 그가 샥야족의 왕자로 태어났으며, 늙음, 질병, 죽음, 그리고 수행자라는 네 가지 광경을 목격하고 사치스러운 삶을 버리고 영적인 여정을 시작하게 된 사연, 그리고 보리수 아래에서 깨달음을 얻은 이야기를 알고 있습니다. 수 세기 동안, [ROOT.Legend.GetProperty( 'religion' ).Religion.GetAdjectiveNoTooltip] 순례자들이 이 나무가 있는 곳으로 찾아와 붓다를 경배해 왔습니다." # 13926001692793947585
@@ -980,5 +982,3 @@
   magadha.0199.t: "xxxxx" # 1951045980481827005
   magadha.0199.desc: "xxxxx" # 1951045980481827005
   magadha.0199.a: "xxxxx" # 1951045980481827005
-  Subhuticandra: "수부티찬드라" # 4193296841340065992
-  dynn_RICE_Subhuticandra: "수부티드" # 228659948206233035

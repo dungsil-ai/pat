@@ -61,6 +61,7 @@
   RICE_goliad_history_loc: "서기 1천 년경 드니에프르 분지에 살던 $baltic_group$ 부족들에게서 유래했습니다." # 9521306311483779920
   RICE_chagga_history_loc: "$heritage_bantu_name$ 정착민들에게서 형성되었으며, 2천 년기 초에 킬리만자로 산 주변에 위치했습니다." # 14167215181298868203
   RICE_nabati_history_loc: "고대 남부 메소포타미아 후손들로부터 형성됨" # 2371575973544972213
+  RICE_kutai_history_loc: "동부 보르네오의 다약에서 형성되었으며 일부 외세의 영향을 받음" # 14607161997487743130
   tradition_RICE_siberian_survivalists_name: "시베리아 생존주의" # 1550866272953178782
   tradition_RICE_siberian_survivalists_desc: "태고적부터 시베리아의 민족들은 극북의 얼어붙은 땅에서 살아가고, 생존하며, 번성해 왔습니다. 이 지역의 삶과 죽음에 대한 그들의 지식은 그들에게 큰 도움이 됩니다." # 3487573712189664721
   tradition_RICE_swahili_contacts_name: "스와힐리 접촉" # 11593058755973091578
@@ -300,6 +301,8 @@
   culture_parameter_unlock_rice_sycamore_tree_decision: "[decision|E]을 #V $RICE_south_ethiopia_pray_to_a_sycamore_tree$#!을 활성화합니다!" # 10417772061926518001
   tradition_RICE_toloka_name: "톨로카" # 1791159532197536767
   tradition_RICE_toloka_desc: "#F 이 문화는 마을 사람들이 집을 짓거나 작물을 수확하는 것과 같은 중요한 노력에 서로 돕는 상호적이고 공동체적인 노동의 전통을 가지고 있습니다. 노동이 끝나면 도움을 받은 주요 수혜자는 잔치를 베풀어 모두에게 감사를 표합니다.#!" # 13658582161193455804
+  tradition_SEA_ade_name: "아데" # 7786247386346733370
+  tradition_SEA_ade_desc: "이 문화에는 [Glossary( 'Ade', 'ADE_GLOSS' )]라고 불리는 불문법 모음집이 있어 삶의 모든 측면을 규정합니다. 이를 잘 따르는 자는 큰 존경을 받으며 칭송받고 사랑받지만, 반복적으로 위반하는 자는 마치 존재하지 않는 것처럼 모두에게 배척당하게 됩니다." # 4649099664047504268
   culture_parameter_unlock_maa_guanche_warrior: "[men_at_arms|E]로 [GetMaA('guanche_warrior').GetName]을 징집할 수 있습니다." # 5577205177325801307
   tradition_guanche_warrior_name: "치치키퀴초" # 15979354436935695300
   tradition_guanche_warrior_desc: "#F 치치키퀴초는 과란체족의 전사 계급을 형성했습니다. 투척과 협곡 매복에 능하며 경장갑이지만 숙련된 교전병입니다. 치치키퀴초는 자신들의 섬의 구릉 및 산악 지형을 목숨 걸고 방어할 것입니다.#!" # 11008193849402200922
@@ -372,6 +375,7 @@
   language_nicobar_name: "니코바레세" # 15956824209976987722
   language_mairasi_name: "마이라시" # 9089411084171297325
   language_bauzi_name: "이스트 센데라와시" # 6024783416014504350
+  language_yab_name: "야브" # 5354990839988280136
   language_mpur_name: "음푸르" # 4874537197531922147
   language_chukotko_kamchatkan_name: "추코트코-캄차칸" # 9020575166579121922
   language_biak_name: "웨스트 뉴 기니" # 16681429149185321449
@@ -754,10 +758,6 @@
   tolaki: "톨라키" # 12369980447164428889
   tolaki_prefix: "톨라키" # 12369980447164428889
   tolaki_collective_noun: "톨라키" # 12369980447164428889
-  RICE_kutai_history_loc: "동부 보르네오의 다약에서 형성되었으며 일부 외세의 영향을 받음" # 14607161997487743130
-  tradition_SEA_ade_name: "아데" # 7786247386346733370
-  tradition_SEA_ade_desc: "이 문화에는 [Glossary( 'Ade', 'ADE_GLOSS' )]라고 불리는 불문법 모음집이 있어 삶의 모든 측면을 규정합니다. 이를 잘 따르는 자는 큰 존경을 받으며 칭송받고 사랑받지만, 반복적으로 위반하는 자는 마치 존재하지 않는 것처럼 모두에게 배척당하게 됩니다." # 4649099664047504268
-  language_yab_name: "야브" # 5354990839988280136
   apo_kayan: "아포 카얀" # 16271251529018253366
   apo_kayan_collective_noun: "아포 카얀" # 14940220679764562072
   apo_kayan_prefix: "아포 카얀" # 16271251529018253366
@@ -774,6 +774,11 @@
   murut_collective_noun: "무룻" # 6876403506687786689
   murut_prefix: "무룻" # 1933536805991494268
   ngaju: "응아주" # 5574181726497583869
+  ngaju_collective_noun: "응가주스" # 2311032942879258919
+  ngaju_prefix: "응아주" # 5574181726497583869
+  kutai: "쿠타이" # 3385115108785830105
+  kutai_collective_noun: "쿠타이스" # 10512069864749499987
+  kutai_prefix: "쿠타이" # 3385115108785830105
   RICE_siwi_name: "시위" # 13643603112045419620
   RICE_siwi_collective_noun: "시위스" # 17924085892356529802
   RICE_siwi_prefix: "시위" # 13643603112045419620
@@ -6166,8 +6171,3 @@
   Sirang: "시랑" # 18057105809214353033
   Suasai: "수아사이" # 10357576723853669490
   Wai: "와이" # 8330257928931234713
-  ngaju_collective_noun: "응가주스" # 2311032942879258919
-  ngaju_prefix: "응아주" # 5574181726497583869
-  kutai: "쿠타이" # 3385115108785830105
-  kutai_collective_noun: "쿠타이스" # 10512069864749499987
-  kutai_prefix: "쿠타이" # 3385115108785830105

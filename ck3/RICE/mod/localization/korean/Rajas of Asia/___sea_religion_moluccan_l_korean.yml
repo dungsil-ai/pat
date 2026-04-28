@@ -1,25 +1,26 @@
 ﻿l_korean:
   moluccan_religion: "몰루카" # 7438097004862442983
+  moluccan_religion_adj: "몰루칸" # 7438097004862442983
   moluccan_religion_adherent: "몰루카" # 7438097004862442983
   moluccan_religion_adherent_plural: "몰루카" # 7438097004862442983
   moluccan_religion_desc: "몰루카 제도에서는 적절한 의례를 통해 조상신을 숭배하는 풍습이 널리 퍼져 있습니다. 이 조상들은 자연적이든 인공적이든 중요한 영적 장소와 연관되어 있습니다." # 16749286355765610274
   nunusaku: "누누사쿠" # 14057886563195438043
+  nunusaku_adj: "누누사쿠" # 14057886563195438043
   nunusaku_adherent: "누누사쿠 신봉자" # 18024689483072710857
   nunusaku_adherent_plural: "누누사쿠 신봉자들" # 13528245541475824789
   nunusaku_desc: "몰루카 사람들은 자신들이 세람 섬의 전설적인 누누사쿠 산에서 유래했다고 믿습니다. 신봉자들은 영혼과 조상을 숭배하며, 일상생활을 규율하는 복잡한 의례에 참여합니다." # 2412989150142786257
   nunusaku_old: "고대 누누사쿠" # 7856593501850224755
+  nunusaku_old_adj: "올드 누누사쿠" # 7856593501850224755
   nunusaku_old_adherent: "고대 누누사쿠 신봉자" # 8913912979065003653
   nunusaku_old_adherent_plural: "고대 누누사쿠 신봉자들" # 12891018868030046454
   nunusaku_old_desc: "$nunusaku_desc$" # 3031199518113572882
+  nunusaku_high_god_name: "우푸 라니테" # 12431766622547297357
   nunusaku_high_god_name_possessive: "우푸 라니테의" # 5686910974014112564
   nunusaku_high_god_name_alternate: "우푸 라니테" # 12431766622547297357
   nunusaku_high_god_name_alternate_possessive: "우푸 라니테의" # 5686910974014112564
   nunusaku_good_god_father_sky: "우푸 라니테" # 12431766622547297357
-  moluccan_religion_adj: "몰루칸" # 7438097004862442983
-  nunusaku_adj: "누누사쿠" # 14057886563195438043
-  nunusaku_old_adj: "올드 누누사쿠" # 7856593501850224755
-  nunusaku_high_god_name: "우푸 라니테" # 12431766622547297357
   nunusaku_good_god_ancestors: "조상들" # 3977550578121230202
+  nunusaku_devil_name: "할리타" # 2846080837434356848
   nunusaku_devil_name_possessive: "할리타의" # 656405261194879097
   nunusaku_devil_shehe: "그것" # 3125420670989364317
   nunusaku_devil_herselfhimself: "그 자체" # 641171738588078623
@@ -27,38 +28,38 @@
   nunusaku_evil_god_decay: "부툴랄레" # 11391810761170122122
   nunusaku_evil_god_decay_possessive: "부툴랄레의" # 10913513420609738945
   nunusaku_evil_god_drought: "할리타" # 2846080837434356848
+  nunusaku_death_deity_name: "물루아 사테네" # 209425953072018027
   nunusaku_death_deity_name_possessive: "물루아 사테네의" # 3181954421172268102
   nunusaku_death_deity_herhis: "그녀의" # 4744265488540400035
   nunusaku_mother_earth_father_sky: "우푸 라니테와 타펠레" # 9553208419535513184
-  nunusaku_creator_god_name_possessive: "$nunusaku_high_god_name_possessive$" # 4003660203084852331
-  nunusaku_health_god_name_possessive: "조상들의" # 14020028578580181885
-  nunusaku_fertility_god_name_possessive: "하이누웰레의" # 4568416263248312638
-  nunusaku_devil_name: "할리타" # 2846080837434356848
-  nunusaku_death_deity_name: "물루아 사테네" # 209425953072018027
   nunusaku_creator_god_name: "$nunusaku_high_god_name$" # 3827892643600422560
+  nunusaku_creator_god_name_possessive: "$nunusaku_high_god_name_possessive$" # 4003660203084852331
   nunusaku_health_god_name: "조상" # 3977550578121230202
+  nunusaku_health_god_name_possessive: "조상들의" # 14020028578580181885
   nunusaku_fertility_god_name: "하이누웰레" # 9396957329257667834
+  nunusaku_fertility_god_name_possessive: "하이누웰레의" # 4568416263248312638
   nunusaku_wealth_god_name: "조상" # 3977550578121230202
   nunusaku_wealth_god_name_possessive: "조상들의" # 14020028578580181885
+  nunusaku_household_god_name: "조상" # 3977550578121230202
   nunusaku_household_god_name_possessive: "조상들의" # 14020028578580181885
+  nunusaku_fate_god_name: "우푸 라니테" # 12431766622547297357
   nunusaku_fate_god_name_possessive: "우푸 라니테의" # 5686910974014112564
+  nunusaku_knowledge_god_name: "$nunusaku_high_god_name$" # 3827892643600422560
   nunusaku_knowledge_god_name_possessive: "$nunusaku_high_god_name_possessive$" # 4003660203084852331
+  nunusaku_war_god_name: "우푸 라니테" # 12431766622547297357
   nunusaku_war_god_name_possessive: "우푸 라니테의" # 5686910974014112564
+  nunusaku_trickster_god_name: "와이테테" # 5006789866603400809
   nunusaku_trickster_god_name_possessive: "와이테테의" # 18124962892077340154
+  nunusaku_night_god_name: "불라네" # 16930076121063497202
   nunusaku_night_god_name_possessive: "불라네의" # 2213789322050317810
+  nunusaku_water_god_name: "우푸 라니테" # 12431766622547297357
   nunusaku_water_god_name_possessive: "우푸 라니테의" # 5686910974014112564
   nunusaku_house_of_worship: "바일레오" # 10891056062834588425
   nunusaku_house_of_worship_plural: "바일레오" # 10891056062834588425
   nunusaku_religious_symbol: "반얀 나무" # 10954474053045774080
   nunusaku_religious_text: "카파타" # 11085889301403936202
   nunusaku_religious_head_title: "마우웽 베사르" # 5656970170929502657
-  nunusaku_household_god_name: "조상" # 3977550578121230202
-  nunusaku_fate_god_name: "우푸 라니테" # 12431766622547297357
-  nunusaku_knowledge_god_name: "$nunusaku_high_god_name$" # 3827892643600422560
-  nunusaku_war_god_name: "우푸 라니테" # 12431766622547297357
-  nunusaku_trickster_god_name: "와이테테" # 5006789866603400809
-  nunusaku_night_god_name: "불라네" # 16930076121063497202
-  nunusaku_water_god_name: "우푸 라니테" # 12431766622547297357
+  nunusaku_religious_head_title_name: "최고 의회" # 15038947742583190916
   nunusaku_devotee: "카케안" # 8965444008432826329
   nunusaku_devotee_plural: "카케안인" # 4755400157098388673
   nunusaku_priest: "마우웽" # 17647928170824022794
@@ -68,37 +69,36 @@
   nunusaku_divine_realm: "천상" # 281074639492266792
   nunusaku_positive_afterlife: "하늘" # 7628510279792432062
   nunusaku_negative_afterlife: "지옥" # 17676993545448469292
+  nunusaku_witch_god_name: "부툴랄레" # 11391810761170122122
   nunusaku_witch_god_name_possessive: "부툴랄레의" # 10913513420609738945
   nunusaku_bishop: "마우웽 베사르" # 5656970170929502657
   nunusaku_bishop_plural: "마우웽 베사르" # 5656970170929502657
   halmahera_pagan: "고시모교" # 11029560305247987260
+  halmahera_pagan_adj: "고시모스트" # 13602730473491698287
   halmahera_pagan_adherent: "고시모교도" # 13602730473491698287
   halmahera_pagan_adherent_plural: "고시모교도" # 8388785237545677782
   halmahera_pagan_desc: "#italic 소워히#!, 즉 의례 전문가는 우리가 조상신, 혹은 #italic 고시모#!를 숭배하도록 인도하는 데 큰 권위를 발휘합니다. 특히 산은 신들과 모범적인 조상들이 거주하는 성스러운 장소이기에, 우리가 그곳을 방문하여 영혼들에게 경의를 표하는 것은 필수적입니다." # 16227762689099238820
   halmahera_old_pagan: "고대 고시모교" # 2082372456306254423
-  nunusaku_religious_head_title_name: "최고 의회" # 15038947742583190916
-  nunusaku_witch_god_name: "부툴랄레" # 11391810761170122122
-  halmahera_pagan_adj: "고시모스트" # 13602730473491698287
+  halmahera_old_pagan_adj: "올드 고시모스트" # 17050342905416730236
   halmahera_old_pagan_adherent: "고대 고시모스트" # 17050342905416730236
   halmahera_old_pagan_adherent_plural: "고대 고시모스트들" # 1095383190333581336
   halmahera_old_pagan_desc: "$halmahera_pagan_desc$" # 12402289570014285018
+  halmahera_pagan_high_god_name: "더 고시모스" # 14586204948237892602
   halmahera_pagan_high_god_name_possessive: "고시모의" # 13624885209160562942
   halmahera_pagan_high_god_name_alternate: "조상들" # 3210338663811548404
   halmahera_pagan_high_god_name_alternate_possessive: "조상들의" # 747089009923278508
+  halmahera_pagan_devil_name: "이블 스프릿" # 12106526583615451146
   halmahera_pagan_devil_name_possessive: "악령" # 12106526583615451146
   halmahera_pagan_house_of_worship: "제레" # 14702665547973325814
   halmahera_pagan_house_of_worship_plural: "제레들" # 15666844741418641052
   halmahera_pagan_religious_symbol: "산" # 9530211936642057552
   halmahera_pagan_religious_text: "신성한 이야기" # 1916157011032334391
   halmahera_pagan_religious_head_title: "고위 소워히" # 15975895416980729033
+  halmahera_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   halmahera_pagan_devotee: "신도" # 16996875086266395993
   halmahera_pagan_devotee_plural: "신도들" # 15412075443944701231
   halmahera_pagan_priest: "소워히" # 4463751979001170529
   halmahera_pagan_priest_plural: "소워히들" # 879895206665519299
-  halmahera_old_pagan_adj: "올드 고시모스트" # 17050342905416730236
-  halmahera_pagan_high_god_name: "더 고시모스" # 14586204948237892602
-  halmahera_pagan_devil_name: "이블 스프릿" # 12106526583615451146
-  halmahera_pagan_religious_head_title_name: "최고 의회" # 15038947742583190916
   halmahera_pagan_priest_term_plural: "소워히들" # 879895206665519299
   halmahera_pagan_priest_alternate_plural: "샤먼" # 18154816624900111499
   halmahera_pagan_divine_realm: "성산" # 17464565064166217796

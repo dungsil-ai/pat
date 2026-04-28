@@ -4,10 +4,13 @@
   setting_RICE_intro_event_on_desc: "게임을 불러올 때 한 번 발동하는 소개 이벤트는 현재 사용 중인 RICE 버전과 최신 기능을 알려줍니다. 이는 모드가 올바르게 설치되었고 최신 버전을 사용 중인지 확인하는 데 도움이 됩니다." # 11839336696882962670
   setting_RICE_intro_event_off: "끔" # 8927729592684634549
   setting_RICE_intro_event_off_desc: "시작 이벤트는 비활성화됩니다." # 11155068692559715121
+  RICEintro.0000.t: "RICE 1.19.0 \"말라카 해협\"" # 7811141263948036456
+  RICEintro.0000.desc: "RICE 1.19.0이 성공적으로 설치되었습니다. 이 이벤트는 게임 시작 시에만 발생하며 게임 규칙을 통해 비활성화할 수 있습니다. 최신 업데이트에 추가된 일부 기능은 새 게임을 시작해야 적용된다는 점을 유의하십시오. 버그 제보나 피드백은 스팀 창작마당, 패러독스 포럼 또는 제 디스코드 채널을 통해 자유롭게 보내주시기 바랍니다.\n\nRICE는 현재 전 세계의 다양한 문화, 종교, 지역을 다루는 #V #Bold 43#!#!개의 플레이버 팩을 포함하고 있습니다. 가장 최근에 추가된 플레이버 팩은 #V #Bold 마요: 헤더와 주목#!#!입니다.\n\n이 플레이버 팩들은 [GetTitleByKey('c_mayo').GetNameNoTier]와 [RICE_culture.GetCollectiveNoun]에 새로운 풍미를 더하는 데 중점을 둡니다." # 700324658162203075
   RICEintro.0000.a: "좋군!" # 2933982366699918903
   RICEintro.0000.b: "이번 업데이트의 새로운 추가 사항에 대한 개요를 원하시는군요." # 2296478953061761299
   RICEintro.0000.c: "이 메시지를 향후 이 저장 파일에서는 비활성화해 주십시오." # 15745156042237332393
   RICEintro.0000.c.tooltip: "#EMP 이 옵션을 선택하면 앞으로 이 저장 파일에 대한 성공적인 업데이트 알림을 받지 못하게 됩니다!#!" # 11916024186952248667
+  RICEintro_intro_tooltip: "#EMP “바람 위와 아래의 모든 상인이 믈라카로 모여들었다 (...) 그곳은 모든 아랍인들에게 말라카트라 불렸는데, 이는 모든 상인이 만나는 장소라는 뜻이며, 그곳에는 매우 다양한 형태의 상업이 존재했기 때문이다.”\n– 말레이 연대기 (15~16세기경)#!" # 18022729449432149076
   RICEintro_TFE_warning_tooltip: "\n----------------------------------------\n\n#V #bold 타락한 독수리#!#!가 실행 중인 것으로 감지되었습니다. 이것이 사실이라면, 새 게임을 시작하기 전에 모드 로드 순서에서 TFE가 RICE보다 #underline 아래에# 오도록 #bold 확인하십시오#!." # 5055225297519247687
   RICEintro_ROA_warning_tooltip: "\n----------------------------------------\n\n#V #bold 아시아의 라자#!#!가 실행 중인 것으로 감지되었습니다. 사실이라면, 새 게임을 시작하기 전에 모드 로드 순서에서 ROA가 RICE #underline 아래에 오도록 #bold 확인하십시오#!." # 13831992960958359029
   RICE_decision_pagan_requirement: "이교도 [faith|E]를 따릅니다." # 2667718468984044947
@@ -207,6 +210,10 @@
   NOT_RICE_geographical_travel_req: "#EMP#는 [GEOGRAPHICAL_REGION.GetName] 내에 [county|E]나 [domicile|e]를 소유하고 있지 않습니다!" # 13303399201093114876
   Man_Wol: "만월" # 575828522126225150
   Giac_Hai: "지아하이" # 5589033478321690984
+  RICE_test_decision: "시험" # 15745692345339290292
+  RICE_test_decision_tooltip: "시험" # 15745692345339290292
+  RICE_test_decision_desc: "시험" # 15745692345339290292
+  RICE_test_decision_confirm: "시험" # 15745692345339290292
   activity_RICE_hot_springs_visit_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_hot_springs_visit: "온천 방문" # 647038537016052024
   activity_RICE_hot_springs_visit_desc: "이 세상에는 수많은 유명한 [hot_springs|E]가 있으며, 저는 그중 하나와 가까이 살게 된 행운을 누리고 있습니다. 일상의 근심을 잊고 스트레스를 해소하기 위해 그곳을 방문해야겠습니다." # 9117503003778629014
@@ -511,6 +518,10 @@
   d_laamp_RICE_saint_bona_of_pisa_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   d_laamp_RICE_joao_poet: "파이바의 시인들" # 2593889244434392501
   d_laamp_RICE_joao_poet_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_subhutichandra: "소원을 들어주는 언어학자" # 15196355069386778792
+  d_laamp_RICE_subhutichandra_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
+  d_laamp_RICE_bernard_the_pilgrim: "관찰력 있는 순례자" # 12216475860174577603
+  d_laamp_RICE_bernard_the_pilgrim_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   d_nf_RICE_li_shichang: "서부의 학자-신사 계층" # 15491962007794571614
   d_nf_RICE_li_shichang_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   c_nf_RICE_zhai_dunhuang: "$dynn_zhai$ 가문" # 13864192181880426652
@@ -555,19 +566,6 @@
   RICE_mideast_deities.jinns: "$RICE_mideast_deities.jinn$" # 2480217491401609364
   RICE_mideast_deities.paris: "파리들" # 4310706960894954080
   RICE_mideast_deities.shidas: "쉬다들" # 16686129364838720484
-  RICEintro.0000.t: "RICE 1.19.0 \"말라카 해협\"" # 7811141263948036456
-  RICEintro.0000.desc: "RICE 1.19.0이 성공적으로 설치되었습니다. 이 이벤트는 게임 시작 시에만 발생하며 게임 규칙을 통해 비활성화할 수 있습니다. 최신 업데이트에 추가된 일부 기능은 새 게임을 시작해야 적용된다는 점을 유의하십시오. 버그 제보나 피드백은 스팀 창작마당, 패러독스 포럼 또는 제 디스코드 채널을 통해 자유롭게 보내주시기 바랍니다.\n\nRICE는 현재 전 세계의 다양한 문화, 종교, 지역을 다루는 #V #Bold 43#!#!개의 플레이버 팩을 포함하고 있습니다. 가장 최근에 추가된 플레이버 팩은 #V #Bold 마요: 헤더와 주목#!#!입니다.\n\n이 플레이버 팩들은 [GetTitleByKey('c_mayo').GetNameNoTier]와 [RICE_culture.GetCollectiveNoun]에 새로운 풍미를 더하는 데 중점을 둡니다." # 700324658162203075
-  RICEintro_intro_tooltip: "#EMP “바람 위와 아래의 모든 상인이 믈라카로 모여들었다 (...) 그곳은 모든 아랍인들에게 말라카트라 불렸는데, 이는 모든 상인이 만나는 장소라는 뜻이며, 그곳에는 매우 다양한 형태의 상업이 존재했기 때문이다.”\n– 말레이 연대기 (15~16세기경)#!" # 18022729449432149076
-  RICE_test_decision: "시험" # 15745692345339290292
-  RICE_test_decision_tooltip: "시험" # 15745692345339290292
-  RICE_test_decision_desc: "시험" # 15745692345339290292
-  RICE_test_decision_confirm: "시험" # 15745692345339290292
-  activity_RICE_hot_springs_visit_destination_selection: "" # 17241709254077376921
-  activity_RICE_local_pilgrimage_province_desc: "" # 17241709254077376921
-  d_laamp_RICE_subhutichandra: "소원을 들어주는 언어학자" # 15196355069386778792
-  d_laamp_RICE_subhutichandra_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
-  d_laamp_RICE_bernard_the_pilgrim: "관찰력 있는 순례자" # 12216475860174577603
-  d_laamp_RICE_bernard_the_pilgrim_article: "$DEFAULT_TITLE_NAME_ARTICLE$" # 14610429145904019047
   culture_RICE_placeholder_1: "로렘입숨" # 2383372499357156694
   culture_RICE_placeholder_1_collective_noun: "로렘입숨들" # 7520299597515285965
   culture_RICE_placeholder_1_prefix: "로렘입숨" # 2383372499357156694
@@ -598,10 +596,6 @@
   culture_RICE_placeholder_10: "로렘입숨" # 2383372499357156694
   culture_RICE_placeholder_10_collective_noun: "로렘입숨들" # 7520299597515285965
   culture_RICE_placeholder_10_prefix: "로렘입숨" # 2383372499357156694
-  heritage_RICE_placeholder_1_collective_noun: "로렘입숨" # 2383372499357156694
-  heritage_RICE_placeholder_2_collective_noun: "로렘입숨" # 2383372499357156694
-  heritage_RICE_placeholder_3_collective_noun: "로렘입숨" # 2383372499357156694
-  name_list_RICE_placeholder_1: "로렘입숨" # 2383372499357156694
   language_RICE_placeholder_1_name: "로렘입숨" # 2383372499357156694
   language_RICE_placeholder_2_name: "로렘입숨" # 2383372499357156694
   language_RICE_placeholder_3_name: "로렘입숨" # 2383372499357156694
@@ -613,8 +607,12 @@
   language_RICE_placeholder_9_name: "로렘입숨" # 2383372499357156694
   language_RICE_placeholder_10_name: "로렘입숨" # 2383372499357156694
   heritage_RICE_placeholder_1_name: "로렘입숨" # 2383372499357156694
+  heritage_RICE_placeholder_1_collective_noun: "로렘입숨" # 2383372499357156694
   heritage_RICE_placeholder_2_name: "로렘입숨" # 2383372499357156694
+  heritage_RICE_placeholder_2_collective_noun: "로렘입숨" # 2383372499357156694
   heritage_RICE_placeholder_3_name: "로렘입숨" # 2383372499357156694
+  heritage_RICE_placeholder_3_collective_noun: "로렘입숨" # 2383372499357156694
+  name_list_RICE_placeholder_1: "로렘입숨" # 2383372499357156694
   name_list_RICE_placeholder_2: "로렘입숨" # 2383372499357156694
   name_list_RICE_placeholder_3: "로렘입숨" # 2383372499357156694
   name_list_RICE_placeholder_4: "로렘입숨" # 2383372499357156694
@@ -628,33 +626,35 @@
   GLOSS_RICE_PLACEHOLDER_CULTURE: "이 [culture|E], [language|E], 그리고 [heritage|E]는 향후 저장 파일과의 호환성을 보장하고 기존 저장 파일에 새로운 [culture|E], [language|E] 또는 [heritage|E]가 추가될 때 발생할 수 있는 게임의 이상 현상을 방지하기 위한 자리 표시자입니다. 콘솔 명령어를 사용하거나, 테스트/디버깅 효과나 결정을 사용하거나, 명시적으로 검색하는 등 의도적인 행동을 하지 않는 한 일반적인 게임 플레이에서는 나타나지 않습니다. (현재로서는 GUI를 건드리는 우회적인 방법 없이는 기존 [cultures|E]를 숨길 방법이 없습니다.)" # 10424202921435454843
   GLOSS_RICE_PLACEHOLDER_FAITH: "이 [faith|E] 또는 [religion|E]는 향후 저장 파일과의 호환성을 보장하고 기존 저장 파일에 새로운 [faiths|E]가 추가될 때 발생할 수 있는 게임의 이상 현상을 방지하기 위한 자리 표시자입니다. 콘솔 명령어를 사용하거나 테스트/디버깅 효과나 결정을 사용하는 등 의도적인 행동을 하지 않는 한 일반적인 게임 플레이에서는 나타나지 않습니다. (현재로서는 GUI를 건드리는 우회적인 방법 없이는 기존 [faiths|E]를 숨길 방법이 없습니다.)" # 17488070058726111752
   rice_placeholder_religion: "로렘입숨" # 2383372499357156694
+  rice_placeholder_religion_adj: "로렘입숨" # 2383372499357156694
   rice_placeholder_religion_adherent: "로렘입숨" # 2383372499357156694
   rice_placeholder_religion_adherent_plural: "로렘입숨" # 2383372499357156694
   rice_placeholder_religion_desc: "[Glossary( 'This is a placeholder and won’t appear in-game normally.', 'GLOSS_RICE_PLACEHOLDER_FAITH' )]" # 17249422042400513569
   rice_faith_placeholder_1: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_1_adherent: "로렘입숨" # 2383372499357156694
-  rice_placeholder_religion_adj: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_1_adj: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_1_adherent: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_1_adherent_plural: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_1_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
   rice_faith_placeholder_2: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_2_adj: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_2_adherent: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_2_adherent_plural: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_2_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
   rice_faith_placeholder_3: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_3_adj: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_3_adherent: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_3_adherent_plural: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_3_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
   rice_faith_placeholder_4: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_4_adj: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_4_adherent: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_4_adherent_plural: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_4_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
   rice_faith_placeholder_5: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_5_adherent: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_2_adj: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_3_adj: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_4_adj: "로렘입숨" # 2383372499357156694
   rice_faith_placeholder_5_adj: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_5_adherent: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_5_adherent_plural: "로렘입숨" # 2383372499357156694
+  rice_faith_placeholder_5_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
   RICEmisc.0000.t: "xxxxx" # 1951045980481827005
   RICEmisc.0000.desc: "xxxxx" # 1951045980481827005
   RICEmisc.0000.a: "xxxxx" # 1951045980481827005
@@ -1255,5 +1255,5 @@
   RICEintro.0199.t: "xxxxx" # 1951045980481827005
   RICEintro.0199.desc: "xxxxx" # 1951045980481827005
   RICEintro.0199.a: "xxxxx" # 1951045980481827005
-  rice_faith_placeholder_5_adherent_plural: "로렘입숨" # 2383372499357156694
-  rice_faith_placeholder_5_desc: "$rice_placeholder_religion_desc$" # 11249629548625571064
+  activity_RICE_hot_springs_visit_destination_selection: "" # 17241709254077376921
+  activity_RICE_local_pilgrimage_province_desc: "" # 17241709254077376921

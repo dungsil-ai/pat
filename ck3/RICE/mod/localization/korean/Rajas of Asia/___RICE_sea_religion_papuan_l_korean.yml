@@ -108,6 +108,7 @@
   tagai_old_adherent_plural: "오래된 타가이스트들" # 11472622651555045262
   tagai_old_desc: "파푸아 사람들은 조상들의 영혼을 숭배하며 세상 만물에 초자연적인 힘이 스며들어 있다고 믿습니다." # 12119233689599976222
   tagai_high_god_name: "타가이" # 4575910819904512742
+  tagai_high_god_name_possessive: "타가이 가문의" # 9469780337739707838
   tagai_high_god_name_alternate: "만세렌 낭기" # 9860911512259110157
   tagai_high_god_name_alternate_possessive: "만세렌 낭기의" # 8521017043509505659
   tagai_good_god_father_sky: "만세렌 낭기" # 9860911512259110157
@@ -164,4 +165,3 @@
   witchgodname_tagai_the_shadow: "스와기" # 12661658433329249991
   tagai_bishop: "미리노" # 2710935546572082650
   tagai_bishop_plural: "미리노" # 2710935546572082650
-  tagai_high_god_name_possessive: "타가이 가문의" # 9469780337739707838

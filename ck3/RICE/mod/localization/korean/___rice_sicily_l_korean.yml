@@ -729,6 +729,8 @@
   RICE_sicily_notable_stewardship: "시칠리아 상인과의 연줄" # 15981375159356228333
   RICE_sicily_notable_intrigue: "시칠리아 장인과의 연줄" # 4345221723029481977
   RICE_sicily_notable_learning: "시칠리아 지식인과의 연줄" # 9037804354172159042
+  RICE_sicily_ayo_visto_lo_mappamundi_ruler_modifier: "시칠리아의 통치자, 노래로 기려지다" # 11310488499814439305
+  RICE_sicily_ayo_visto_lo_mappamundi_ruler_modifier_desc: "현재 시칠리아에서 유행하는 민요에 이 통치자가 언급됩니다. 노래 가사는 시칠리아의 아름다움을 찬양하며, 지중해를 포함한 세상의 그 어떤 곳도 시칠리아에 비할 바가 못 된다고 노래합니다." # 3848677212511413016
   RICE_sicily_virgil_modifier_intro: "베르길리우스의 신탁" # 7797439312574889253
   RICE_sicily_virgil_modifier_intro_desc: "#italic 베르길리우스의 점술#!, 즉 베르길리우스의 시를 이용한 점술을 행한 후, 이 인물은 베르길리우스의 #italic 아이네이스#!에서 다음 구절을 뽑았습니다:" # 14910982496803387991
   RICE_sicily_virgil_positive_modifier_1: "$RICE_sicily_virgil_modifier_intro$" # 6999102761057277332
@@ -2142,8 +2144,6 @@
   RICE_sicily_virgil_tomb_visit_visitation_phase_desc: "" # 17241709254077376921
   activity_RICE_sicily_palermo_tomb_visit_province_desc: "" # 17241709254077376921
   RICE_sicily_palermo_tomb_visit_visitation_phase_desc: "" # 17241709254077376921
-  RICE_sicily_ayo_visto_lo_mappamundi_ruler_modifier: "시칠리아의 통치자, 노래로 기려지다" # 11310488499814439305
-  RICE_sicily_ayo_visto_lo_mappamundi_ruler_modifier_desc: "현재 시칠리아에서 유행하는 민요에 이 통치자가 언급됩니다. 노래 가사는 시칠리아의 아름다움을 찬양하며, 지중해를 포함한 세상의 그 어떤 곳도 시칠리아에 비할 바가 못 된다고 노래합니다." # 3848677212511413016
   RICE_sicily_struggle_ending_dominion_latin_desc: "" # 17241709254077376921
   RICE_sicily_struggle_ending_dominion_greek_desc: "" # 17241709254077376921
   RICE_sicily_struggle_ending_dominion_arabic_desc: "" # 17241709254077376921
