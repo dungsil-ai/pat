@@ -951,3 +951,15 @@
   rice_austroasiatic_no_tiger_name: "약해진 호랑이 정령" # 13328804763935657804
   rice_austroasiatic_no_tiger_desc: "호랑이가 영적인 힘을 가졌을지는 모르나, 호랑이 정령이 존재한다 하더라도 숭배하거나 두려워할 만한 주된 이계의 힘은 아닙니다. 우리는 정글과 그 혜택에 굴복하지 않습니다." # 9241964288218853905
   doctrine_parameter_rice_austroasiatic_tiger_mechanic_disabled: "$RICE_austroasiatic_tiger_god_decision$ [decision|E]는 비활성화되어 있습니다." # 15670259580623761409
+  holy_site_mount_gamalama_name: "가말라마 산" # 3196279357107153736
+  holy_site_mount_gamalama_effect_name: "[holy_site|E] #weak ($holy_site_mount_gamalama_name$)#!에서" # 15379212904605374359
+  holy_site_mount_kie_matubu_name: "키에 마투부 산" # 15053391967990288833
+  holy_site_mount_kie_matubu_effect_name: "[holy_site|E] #weak ($holy_site_mount_kie_matubu_name$)#!에서" # 8027469097913585683
+  rice_theravada_canon_mahavihara_doctrine_group_name: "마하비하라 우위" # 5358311790684045732
+  rice_theravada_canon_abhayagiri_doctrine_group_name: "아바야기리 우위" # 1721618460119131546
+  rice_theravada_canon_jetavana_doctrine_group_name: "제타바나 우위" # 5050853749050600424
+  rice_theravada_accumulation_doctrine_group_name: "공덕 축적" # 202119605752590495
+  rice_theravada_purification_doctrine_group_name: "대정화" # 15037200170851815263
+  rice_theravada_degeneration_doctrine_group_name: "말법 시대" # 2276362434206566314
+  rice_theravada_destruction_of_sangha_doctrine_group_name: "스리랑카 상가 파괴" # 6692771777758040295
+  rice_theravada_outsider_doctrine_group_name: "$k_lanka$ 너머의 부흥" # 14260202035660584544

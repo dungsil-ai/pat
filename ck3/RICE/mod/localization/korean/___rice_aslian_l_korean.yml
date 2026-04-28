@@ -8,7 +8,6 @@
   RICE_sea_nomads_option_desc: "동남아시아에는 이 지역의 바다에서 태어나고 죽는 여러 [Glossary( '바다 유목민', 'SEA_NOMADS_GLOSS' )] 집단이 거주하고 있습니다. 그들은 합당한 대가를 지불하면 뱃길 안내인과 호위대로 기꺼이 봉사할 것입니다." # 2416497356976122393
   dynn_seliangaya_bungsu: "삼부앙가" # 1637018909963611638
   Seliangaya: "셀리앙가야" # 225010316046644419
-  world_asia_malaysia: "말레이시아" # 17978944269155613476
   RICE_sea_nomad_sea_lanes_interface_message: "봉신들은 해상 유목민들과 협력합니다" # 12589658417062046476
   RICE_southeast_asian_tropical_goods_interaction: "희귀 열대 산품 교환" # 12563592586669594797
   RICE_southeast_asian_tropical_goods_interaction_desc: "[recipient.GetShortUINamePossessiveNoTooltip] [realm|E]의 상인들과 희귀한 열대 산물을 교환할 의향이 있음을 제안합니다." # 18399566762670979678
