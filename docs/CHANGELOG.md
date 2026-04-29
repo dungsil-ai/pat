@@ -5,6 +5,28 @@
 ## 2026년 4월
 
 ### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-27
+
+**문서 반영 대상 변경:**
+- 벌크 번역 요청에서 동일 텍스트 중복 전송 제거: 동일 캐시 키를 가진 항목은 하나의 AI 요청으로 병합되어 불필요한 API 호출을 줄이고 번역 결과를 모든 중복 인덱스에 동시 적용
+- upstream 소스 언어가 `korean`인 경우 파일명의 기존 `___` 접두사를 제거하고 새 `___` 접두사를 붙여 이중 접두사 문제(`______`)를 방지하는 `buildKoreanTargetFileName` 유틸리티 도입
+- 모드 positional 인자(`pnpm <game> <mod>`)로 번역 실행 시 upstream 업데이트 범위를 해당 모드로만 제한하여 불필요한 전체 upstream 갱신을 방지
+
+**관련 파일:**
+- `scripts/utils/translate.ts`
+- `scripts/utils/localization-file-name.ts` (신규)
+- `scripts/factory/translate.ts`
+- `scripts/utils/dictionary-invalidator.ts`
+- `scripts/utils/retranslation-invalidator.ts`
+- `scripts/utils/upstream.ts`
+- `scripts/utils/mod-filter.ts`
+- `scripts/ck3.ts`
+- `scripts/vic3.ts`
+- `scripts/stellaris.ts`
+
+---
+
+### 주간 문서 현행화 기준 변경점 반영
 **날짜:** 2026-04-20
 
 **문서 반영 대상 변경:**
