@@ -38,6 +38,7 @@
   RICE_dynn_burel: "부렐" # 11606918915864362851
   RICE_normandy_struggle_correct_involvement_tt: "귀하는 [RICE_normandy_struggle|E]에 [struggle_involved|E]되어 있습니다." # 6731355194655103944
   RICE_normandy_struggle_correct_interloper_tt: "당신은 [RICE_normandy_struggle|E]의 [struggle_interloper|E]입니다." # 17356347889413659344
+  Theudemund: "토이데문트" # 9824077882979175897
   rule_RICE_normandy_rollo: "RICE 노르망디의 롤로" # 7501440644772793748
   setting_RICE_normandy_rollo_default: "기본" # 8341519292606584866
   setting_RICE_normandy_rollo_default_desc: "@roadstopower_icon! Roads to Power를 통해 롤로는 [adventurer|E]로 시작합니다. 이 DLC가 없다면, 플레이어가 그를 선택하지 않는 한 그는 [count|E]이며, 그렇지 않으면 [courtier|E]입니다." # 13642435655081239743

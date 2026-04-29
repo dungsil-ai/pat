@@ -114,7 +114,7 @@
   prestige_good_olivetti_teleprinters: "올리베티 컴퓨터" # 5836065557153404503
   prestige_good_microsoft_windows: "마이크로소프트 윈도우" # 12833001306218989096
   prestige_good_asml_euv_lithography_machines: "EUV 노광 장비" # 3223485127392795150
-  prestige_good_intel_processors: "인텔 프로세서" # 4110800784192622919
+  prestige_good_intel_processors: "인텔 CPU" # 9692519887135598266
   prestige_good_tsmc_wafers: "TSMC 웨이퍼" # 3171728798350136832
   prestige_good_smartphones: "브란트 전화" # 649904931437924861
   prestige_good_generic_records_and_films: "고품질 음반 및 영화" # 9002835275836063237

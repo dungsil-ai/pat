@@ -1,10 +1,10 @@
 ﻿l_korean:
   Cu_Connacht: "쿠 코나흐트" # 12999293254856983260
   dynn_RICE_dalaigh: "달라이" # 8825921029990480095
-  innovation_RICE_placeholder_01: "보그 버터" # 18372596822692348552
-  innovation_RICE_placeholder_01_desc: "브리튼 제도의 많은 지역에서는 버터를 늪지에 묻어 보존하곤 합니다. 이는 식품과 화장품에서 연고 등에 이르기까지 버터의 중요성과 다양한 용도 덕분에 수천 년 동안 지속되어 온 고대의 관습입니다." # 16474668304569110651
-  innovation_RICE_placeholder_02: "크래녹" # 18194875858486500383
-  innovation_RICE_placeholder_02_desc: "브리튼 제도, 특히 켈트 지역에서 크라노그는 호수와 습지 위에 축조된 인공 섬 형태의 특수한 목조 구조물을 의미합니다." # 356117870098542820
+  innovation_RICE_bog_butter: "늪지 버터" # 18372596822692348552
+  innovation_RICE_bog_butter_desc: "영국 제도의 여러 지역에서는 버터를 늪에 묻어 보관하는 경우가 많습니다. 이는 음식부터 화장품, 연고 등 다양한 용도로 쓰이는 버터의 중요성 때문에 수천 년 동안 이어져 온 고대 관습입니다." # 16474668304569110651
+  innovation_RICE_crannogs: "크래노그" # 18194875858486500383
+  innovation_RICE_crannogs_desc: "영국 제도, 특히 켈트 지역에서 볼 수 있는 크래노그는 호수나 늪지 위에 인공 섬을 만들어 세운 특수한 형태의 목조 구조물입니다." # 356117870098542820
   RICE_any_held_county_bog_butter_terrain_capital_req: "귀하의 [capital|E]이 #V 구릉지#!, #V 삼림#!, #V 습지#!, 혹은 #V 타이가#! [terrain|E]에 있습니다" # 17932333040288457972
   RICE_any_held_county_bog_butter_terrain_domicile_req: "[domicile|E]가 #V 구릉지#!, #V 삼림#!, #V 습지#! 또는 #V 타이가#! [terrain|E]에 위치함" # 7596580798650154418
   RICE_any_held_county_not_bog_butter_flag_req: "최소 1년 동안 묻어두어 현재 파낼 수 있는 늪지 버터가 없습니다." # 2532339385273433178

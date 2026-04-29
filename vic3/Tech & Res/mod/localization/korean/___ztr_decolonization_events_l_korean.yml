@@ -264,12 +264,16 @@
   ztr_decolonization.67.a: "에티오피아는 자유로워야 하오, 아마도 그 자원들은 아닐지라도..." # 4708877760262277468
   ztr_decolonization.67.b: "이것이 최후통첩이 아니라면, 왜 우리는 그것을 무시해서는 안 되는가?" # 15910782034003249635
   ztr_decolonization.100.t: "탈식민지의 바람" # 6103616958838657657
-  ztr_decolonization.100.d: "국제적 압력의 증대와 민족주의의 부상, 그리고 경직된 식민 정책 속에서 우리의 [concept_subject]인 [SCOPE.sCountry('subject_scope').GetName]은 점점 더 많은 #i 독립#!을 요구하고 있습니다. 세계적인 흐름이 변화하고 있으며, 우리는 새로운 질서에 적응할지 아니면 우리의 [Concept('concept_decolonization','식민')] 제국을 유지하기 위해 갈등을 감수할지 결정해야 합니다." # 11201543386820651322
-  ztr_decolonization.100.a: "그들이 원하는 것을 들어주어 #gold_value 독립#!을 허용하십시오. 우리는 새로운 세계에 적응해야 합니다." # 4201492438509934476
-  ztr_decolonization.100.b: "갈등의 가능성이 있더라도 제국을 유지해야 합니다." # 545604398068535136
+  ztr_decolonization.100.d: "국제적인 압력의 고조, 민족주의의 부상, 그리고 우리의 경직된 식민 정책 속에서, 우리의 [concept_subject]인 [SCOPE.sCountry('subject_scope').GetName]이(가) 완전한 #i 독립#!을 요구하고 있습니다. 수도의 거리는 시위대로 가득 찼고, 그곳의 엘리트들은 공공연히 새로운 국기를 논하고 있습니다. 세계의 흐름이 변하고 있습니다. 우리는 새로운 질서에 적응할 것인지, 아니면 우리의 [Concept('concept_decolonization','식민')] 제국을 유지하기 위해 공개적인 갈등을 무릅쓸 것인지 결정해야 합니다." # 5684788715048358923
+  ztr_decolonization.100.d_homeland: "국제적인 압력의 고조, 민족주의의 부상, 그리고 우리의 경직된 식민 정책 속에서, 우리의 [concept_subject]인 [SCOPE.sCountry('subject_scope').GetName]이(가) 완전한 #i 독립#!을 요구하고 있으며, 그에 못지않게 우리가 [ROOT.GetCountry.GetName]에서 직접 통치하고 있는 #gold_value 본국 영토#!의 반환까지 요구하고 있습니다. 민족주의 지도자들은 정당한 국경을 되찾은 단일 국가를 이야기하고 있고, 우리의 식민지 관리들은 지금 그들을 거부하는 것이 나중에 모든 것을 잃는 결과를 초래할 수 있다고 경고합니다. 세계의 흐름이 변하고 있습니다. 우리는 새로운 질서에 적응할 것인지, 아니면 우리의 [Concept('concept_decolonization','식민')] 제국을 유지하기 위해 공개적인 갈등을 무릅쓸 것인지 결정해야 합니다." # 4248782780475098338
+  ztr_decolonization.100.a: "#gold_value 독립#!을 승인하고 본국 영토를 양도하십시오. 우리는 새로운 세계에 적응해야 합니다." # 15861815030830762407
+  ztr_decolonization.100.b: "반란을 진압하십시오. 피의 대가가 얼마가 되든 우리는 제국을 수호할 것입니다." # 13333017457347949024
+  ztr_decolonization.100.c: "협상을 통한 이행: 본국 영토를 할양하되, 그들은 우리의 영향권 내에 남게 될 것입니다." # 9799296420260337129
+  ztr_decolonization_homeland_cession_tt: "[ROOT.GetCountry.GetName]이(가) 직접 소유한 모든 #v 주#! 중 [SCOPE.sCountry('subject_scope').GetName]의 주류 문화에 해당하는 #gold_value 본국#!은(는) [SCOPE.sCountry('subject_scope').GetName](으)로 #p 이전#!됩니다." # 8478688689010163718
+  ztr_decolonization_homeland_claims_tt: "[SCOPE.sCountry('subject_scope').GetName]은(는) [ROOT.GetCountry.GetName]이(가) 직접 소유한 모든 #v 주#! 중 그 주류 문화의 #gold_value 본국#!에 해당하는 지역에 #n 명분#!을 획득합니다." # 6238510194522739230
   ztr_decolonization.101.t: "유엔의 탈식민지 요구" # 4796037210950613593
-  ztr_decolonization.101.d: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 총회#!는 그들의 [Concept('concept_un_decolonization_encouraged','$concept_un_decolonization_encouraged$')] 결의안에 따라 [ROOT.GetCountry.GetName]에 [SCOPE.sCountry('un_demand_subject').GetName]을 식민 통치에서 해방할 것을 공식적으로 요구했습니다. 우리의 #n 악명#!은 국제 사회의 분노를 샀으며, 세계가 우리의 대응을 기다리고 있습니다." # 16753330502048099789
-  ztr_decolonization.101.a: "결의안을 준수하고 독립을 승인하십시오." # 2305806833885400817
+  ztr_decolonization.101.d: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 총회#!는 [Concept('concept_un_decolonization_encouraged','$concept_un_decolonization_encouraged$')] 결의안에 따라 [ROOT.GetCountry.GetName]에 [SCOPE.sCountry('un_demand_subject').GetName]을(를) 식민 통치에서 해방할 것을 공식적으로 요구했으며, 해당되는 경우 우리 수도에서 직접 통치 중인 그 민족의 #gold_value 본국 영토#!를 반환할 것을 요구했습니다. 우리의 #n 악명#!은 국제 사회의 분노를 샀으며, 전 세계가 우리의 대응을 기다리고 있습니다." # 17141632871854970049
+  ztr_decolonization.101.a: "결의안을 준수하십시오 — 독립을 승인하고 본국 영토를 양도하십시오." # 572035773808010736
   ztr_decolonization.101.b: "유엔에 저항하십시오. 우리는 명령받지 않을 것입니다." # 7940652669794799681
   ztr_decolonization.1.t: "탈식민지의 시대" # 1323662695752781723
   ztr_decolonization.1.d: "오랫동안 세계의 자연스러운 상태로 여겨졌던 #v 구 식민 질서#!가 깊은 균열을 보이기 시작했습니다.\n\n[concept_subject] 영토에서 #p 민족 자결#! 운동이 힘을 얻고 있습니다. 식민지 관리들은 불안이 커지고 있다고 보고하며, 해외 제국을 유지하는 데 드는 도덕적, 물질적 비용이 해가 갈수록 증가하고 있습니다.\n\n이제 문제는 #i 식민 시대#!가 끝날 것인가가 아니라, 얼마나 신속하게, 그리고 어떤 대가를 치르며 끝날 것인가입니다." # 9867922843942638073
@@ -327,7 +331,7 @@
   colony_pop.2.d: "우리 식민지 영토 전역에서 조용한 혁명이 진행 중입니다. 깨끗한 물 공급 프로그램, 기본적인 예방 접종 캠페인, 위생 개선과 같은 초기 공중 보건 조치들이 원주민 인구의 사망률을 낮추기 시작했습니다. 그 효과는 미미하지만 분명합니다. 영아기를 넘기는 아이들이 많아지고, 생산 연령에 도달하는 노동자가 늘어나며, 인구가 꾸준히 증가하고 있습니다.\n\n더 적고 분산된 인구를 다스리기 위해 설계된 식민지 기구는, 머지않아 자신이 통제하기 위해 만들어진 바로 그 사람들에 의해 압도당할지도 모릅니다." # 11482228472343155633
   ztr_decolonization_phases_11_a_effect_tt: "일부 [Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')] 인구가 #v 20년#! 동안 약간 더 빠르게 성장합니다." # 13362463891256240059
   ztr_decolonization_phases_11_b_effect_tt: "일부 [Concept('ztr_concept_colonial_state','$ztr_concept_colonial_states$')] 인구가 #v 20년#! 동안 더 빠르게 성장합니다." # 3788454491996450320
-  ztr_decolonization_phases_12_a_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 약간 더 빠르게 성장하고 #gold_value 자유 열망#!이 #n 10#! 증가합니다." # 12958191390208927970
+  ztr_decolonization_phases_12_a_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 약간 더 빠르게 증가하며 [concept_liberty_desire]이(가) #n 10#!만큼 증가합니다." # 16626251509929238583
   ztr_decolonization_phases_12_b_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 더 빠르게 성장합니다." # 15068891164592752221
   colony_pop_2_a_effect_tt: "일부 #v 식민지 주#! 인구가 #v 5년#! 동안 더 빠르게 성장합니다." # 10662780737091349664
   colony_pop_3_a_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 더 빠르게 성장합니다." # 15068891164592752221
@@ -531,15 +535,15 @@
   ztr_decolonization.67.d_phase4: "#v 에티오피아#!는 고대하고 자랑스러운 문명의 분노를 담아 우리의 주둔에 맞서 총력전을 펼치고 있습니다. 수년간의 저항으로 단련된 #v 에티오피아#! 군은 파괴적인 효율성으로 우리의 거점을 타격합니다. 우리는 절대 굴복하지 않을 국가의 손에 굴욕적인 패배를 맞이할 위기에 처했습니다." # 11724067444987799089
   ztr_decolonization.c: "식민지로서의 자치권 부여" # 9587220245004828061
   ztr_decolonization.e: "그들이 직접 쟁취하게 두기" # 14139847731917249828
-  ztr_decolonization_pressure_increase_2_tt: "#v 탈식민화 압력#!이 #v 2#! #n 증가#!합니다." # 16430758402259360960
-  ztr_decolonization_pressure_increase_3_tt: "#v 탈식민화 압력#!이 #v 3#! #n 증가#!합니다." # 9793408626377115286
-  ztr_decolonization_pressure_increase_5_tt: "#v 탈식민화 압력#!이 #v 5#! #n 증가#!합니다." # 16700265786192751733
-  ztr_decolonization_pressure_increase_8_tt: "#v 탈식민화 압력#!이 #v 8#! #n 증가#!합니다." # 1031148512388346025
-  ztr_decolonization_pressure_increase_10_tt: "#v 탈식민화 압력#!이 #v 10#! #n 증가#!합니다." # 686944230532279535
-  ztr_decolonization_pressure_increase_20_tt: "#v 탈식민화 압력#!이 #v 20#! #n 증가#!합니다." # 13522531076883547482
-  ztr_decolonization_pressure_decrease_2_tt: "#v 탈식민화 압력#!이 #v 2#! #p 감소#!합니다." # 15757858795651784616
-  ztr_decolonization_pressure_decrease_5_tt: "#v 탈식민화 압력#!이 #v 5#! #p 감소#!합니다." # 10418749386472789552
-  ztr_decolonization_pressure_decrease_15_tt: "#v 탈식민화 압력#!이 #v 15#! #p 감소#!합니다." # 1238988767342633660
+  ztr_decolonization_pressure_increase_2_tt: "#v 민족 자결 압력#!이(가) #v 2#!만큼 #n 증가#!합니다." # 930750678159992580
+  ztr_decolonization_pressure_increase_3_tt: "#v 민족 자결 압력#!이(가) #v 3#!만큼 #n 증가#!합니다." # 15388805834000059371
+  ztr_decolonization_pressure_increase_5_tt: "#v 민족 자결 압력#!이(가) #v 5#!만큼 #n 증가#!합니다." # 14279683917179942829
+  ztr_decolonization_pressure_increase_8_tt: "#v 민족 자결 압력#!이(가) #v 8#!만큼 #n 증가#!합니다." # 8013642150487994077
+  ztr_decolonization_pressure_increase_10_tt: "#v 민족 자결 압력#!이(가) #v 10#!만큼 #n 증가#!합니다." # 2247136517775951004
+  ztr_decolonization_pressure_increase_20_tt: "#v 민족 자결 압력#!이(가) #v 20#!만큼 #n 증가#!합니다." # 13141230962899671640
+  ztr_decolonization_pressure_decrease_2_tt: "#v 민족 자결 압력#!이(가) #v 2#!만큼 #p 감소#!합니다." # 10678719978679681447
+  ztr_decolonization_pressure_decrease_5_tt: "#v 민족 자결 압력#!이(가) #v 5#!만큼 #p 감소#!합니다." # 17211286453576423537
+  ztr_decolonization_pressure_decrease_15_tt: "#v 민족 자결 압력#!이(가) #v 15#!만큼 #p 감소#!합니다." # 17179747908291255649
   colony_pop.2.a: "주목할 만한 발전" # 9891329297539938828
   colony_pop.3.t: "속령 인구 성장" # 5013714039674653804
   colony_pop.3.d: "[SCOPE.sCountry('generic_boom_subject').GetName]의 보고에 따르면 인구 성장이 지속적으로 증가하고 있습니다. 기초 공중 보건 인프라의 도입이 효과를 거두기 시작하여 유아 사망률이 감소하고 기대 수명이 연장되었으며, 식민지 경제가 수용할 수 없는 수준으로 젊은 인구층이 비대해지고 있습니다.\n\n성장은 점진적이지만, 이는 해당 지역의 인구학적 균형에 근본적인 변화가 일어났음을 시사합니다. 식민 지배에 미칠 영향은 간과할 수 없습니다." # 17823184425067594172
