@@ -39,16 +39,16 @@
   institution_home_affairs_russia_soviet_civil_war: "체카" # 13930792622211263383
   institution_home_affairs_russia_soviet: "NKVD" # 16047905177704133602
   institution_centralization: "지역 행정" # 675344952812980500
+  institution_centralization_desc: "$institution_centralization$" # 10056305984453373456
   institution_centralization_base: "지역 행정" # 675344952812980500
   institution_centralization_usa: "미국 우정국" # 4279682886302449448
   institution_centralization_brz: "제국 업무 담당 국무장관" # 9232309546017694382
   institution_culture: "언론 규제" # 12265869737515971614
+  institution_culture_desc: "국가의 출판물 및 예술적 표현에 관한 내용을 다룹니다." # 15513563149115549218
   institution_culture_base: "언론 규제" # 12265869737515971614
   institution_culture_usa_prerecon: "해방민 관리국" # 18280116456040466831
   institution_culture_usa_postrecon: "문화부" # 12779919504772589481
   institution_economy: "경제 사안" # 8620772901210047949
+  institution_economy_desc: "$institution_economy$" # 2451137780337190604
   institution_economy_base: "경제 사안" # 8620772901210047949
   institution_economy_brz: "재정 담당 국무장관" # 17268898092062639658
-  institution_centralization_desc: "$institution_centralization$" # 10056305984453373456
-  institution_culture_desc: "국가의 출판물 및 예술적 표현에 관한 내용을 다룹니다." # 15513563149115549218
-  institution_economy_desc: "$institution_economy$" # 2451137780337190604

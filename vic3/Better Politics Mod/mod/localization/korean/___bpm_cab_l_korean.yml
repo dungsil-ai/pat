@@ -1,4 +1,10 @@
 ﻿l_korean:
+  bpm_synergy_level_text: "(#blue;bold [GetPlayer.GetCustom('bpm_government_function_level')]#!)" # 16930572689952494148
+  bpm_institution_full_modifier: "$bpm_institution_full_modifier_head$\n$TOOLTIP_DELIMITER$\n$bpm_institution_full_modifier_bonuses$" # 11357491157289572835
+  bpm_institution_overall_modifiers: "#header [Institution.GetName] 총 수정치: #!\n[Institution.GetModifierDesc]" # 6788170313283078231
+  bpm_institution_cabinet_modifiers: "#header [Institution.GetName]의 장관 보너스([Concept('concept_investment_level','투자 단계')]당): #!\n[GetPlayer.MakeScope.Var(Scope.GetFlagName).GetCharacter.GetCustom(Concatenate(Institution.GetCustom('bpm_institution_type'), '_modifier'))]\n\n#header 장관 기술 보너스: #!\n#tooltippable #tooltip:[Institution.GetCountry.MakeScope.Var(Institution.GetCustom('bpm_institution_type')).GetCharacter.GetTooltipTag],bpm_cab_trait_skill_tt [Institution.GetCountry.MakeScope.Var(Institution.GetCustom('bpm_institution_type')).GetCharacter.MakeScope.ScriptValue('bpm_traits_skill_level')|v+=0]#!#! 최대 [Concept('concept_investment_level', '투자')]" # 10383875529978179271
+  bpm_institution_specific_modifier: "#header [Institution.GetName]의 장관 보너스([Concept('concept_investment_level','투자 단계')]당): #!\n[Character.GetCustom(Concatenate(Institution.GetCustom('bpm_institution_type'), '_modifier'))]" # 14473036651271910624
+  bpm_cab_appoint: "임명" # 11760683427971650674
   bpm_pm_appoint: "임명하다" # 11760683427971650674
   bpm_cabinet_will_add_modifier: "$bpm_cabinet_will_add_modifier_head$\n$bpm_cabinet_will_add_modifier_bonuses$" # 13570974100424196491
   bpm_cabinet_will_add_modifier_head: "[SelectLocalization(Not(EqualTo_string(Character.GetCustom(Concatenate(Institution.GetCustom('bpm_institution_type'), '_modifier')), '')), 'bpm_cabinet_will_add_modifier_header', 'bpm_cabinet_would_be_antagonistic')]" # 6699354994845353671
@@ -66,11 +72,14 @@
   bpm_recently_added_to_cabinet: "[concept_bpm_cabinet]에 최근 추가됨" # 2223496724743835639
   bpm_government_igs_without_cabinet_pick: "정부 [Concept('concept_interest_group', '이해집단')]에 [concept_bpm_cabinet] 직책이 없음" # 10420416720448828911
   country_synergy_mult: "시너지" # 14593274127119984750
+  country_synergy_mult_desc: "$country_synergy_mult$" # 12824393496465922173
   bpm_fill_cabinet_button: "자동 채우기" # 12382123829134373000
   bpm_reset_cabinet_button: "내각 초기화" # 3875947883942491193
   bpm_button_fire_minister: "화재" # 5632580673934508926
   bpm_button_show_all: "모두 보기" # 10175337569689906440
   bpm_button_hide_all: "모두 숨기기" # 1271918884958040455
+  bpm_button_show_modifiers: "수정치 보기" # 3045457795872944762
+  bpm_button_hide_modifiers: "제도 보기" # 4914232137655151402
   bpm_fill_cabinet_tt: "적절한 [Concept('concept_character', '인물')]들로 내각을 채우시오." # 10214726664567430513
   bpm_shuffle_cabinet_tt: "[Concept('concept_bpm_cabinet', '내각')]에서 모든 [Concept('concept_character', '인물')]을 제거합니다.\n2년에 한 번만 사용할 수 있습니다." # 2854876223336670966
   bpm_add_to_cabinet_possible_leader_everyfouryears_tt: "4년마다 한 번만 사용할 수 있습니다." # 10046395096912621843
@@ -85,6 +94,7 @@
   bpm_interim_government_synergy_penalty: "임시 정부 시너지 페널티" # 1019276549830522072
   country_urban_collectivization_add_desc: "모든 비농업 부문의 총합된 건물 수준의 비율." # 12619060481357042055
   country_institution_economy_max_investment_add: "최대 $institution_economy$ [Concept('concept_institution', 'Institution')] 투자" # 7935103834668251289
+  country_institution_economy_max_investment_add_desc: "$country_institution_economy_max_investment_add$" # 7277799746593808070
   bpm_cab_trait_skill_tt: "[Character.MakeScope.GetScriptValueDesc('bpm_traits_skill_level')]" # 15281279985347504922
   bpm_from_trait_meticulous: "꼼꼼한 특성" # 8506588956755190839
   bpm_from_trait_cautious: "신중한 특성" # 862799727102585391
@@ -102,6 +112,7 @@
   bpm_cab_appoint_tooltip: "[GetScriptedGui('bpm_newcab_select_ig').IsValidTooltip(GuiScope.SetRoot(InterestGroup.MakeScope).End)]\n[GetScriptedGui('bpm_newcab_select_ig').ExecuteTooltip(GuiScope.SetRoot(InterestGroup.MakeScope).End)]" # 6923452824555218662
   bpm_cab_select_ig_tt: "해당 직위에 필요한 인적 자원이 [Concept('concept_interest_group', '이해집단')]에 충분합니다." # 8813105284529088450
   country_bpm_base_mandate_add: "기본 [concept_bpm_mandate]" # 12313785490522103913
+  country_bpm_base_mandate_add_desc: "$country_bpm_base_mandate_add$" # 13751162632308780503
   bpm_mandate_overall_text: "사용 중인 #tooltippable;tooltip:[Country.GetTooltipTag],bpm_mandate_overall_tt [Country.MakeScope.Var('bpm_government_mandate_used').GetValue|v0] #v /#! [Country.MakeScope.ScriptValue('bpm_government_total_mandate_value')|v0]#! 총 @votes_icon! [concept_bpm_mandate]" # 13092619514325800770
   bpm_mandate_overall_desc: "@information! @votes_icon! 위임은 장관 임명에 사용할 수 있는 [Concept('concept_interest_group', '이해집단')]을 결정하는 데 사용됩니다.\n[Concept('concept_interest_group', '이해집단')] @votes_icon! 위임은 해당 이해집단의 [Concept('concept_in_government','정부')] [concept_clout] 및 귀국의 #yellow 행정 원칙#! 법률에서 파생됩니다.\n특정 [Concept('concept_interest_group', '이해집단')]은 특정 [Concept('concept_institution', '부처')]에 더 적합하며, 임명 시 더 적은 @votes_icon! 위임 비용이 듭니다.\n장관의 기술은 그들의 [Concept('concept_character_trait','특성')]에 의해 결정되며, 이는 [Concept('concept_institution', '부처')]의 최대 투자 수준에 영향을 미칠 수 있습니다.\n장관을 임명하면 사용 가능한 #yellow 가장 유능한# 후보자가 선택됩니다." # 9762771406796462616
   bpm_mandate_cost_text_ig: "비용: [SelectLocalization(EqualTo_CFixedPoint(InterestGroup.MakeScope.Var('bpm_cost_ig_position_var').GetValue, '(CFixedPoint)5'), 'bpm_mandate_cost_tt', 'bpm_mandate_cost_tt_no')] @votes_icon!" # 17926709146870910098
@@ -134,17 +145,6 @@
   BPM_CABINET_SYNERGY_FROM_HOS_IN_GOVERNMENT: "[Country.GetRuler.GetPrimaryRoleTitle]이 정부에 있는 동안" # 433856617527987562
   BPM_CABINET_SYNERGY_FROM_RIGIDITY: "[Concept('concept_bpm_political_stability', '정치적 안정')]로부터: [GetPlayer.MakeScope.Var('bpm_political_stability').GetValue|b0]#b %#! x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_rigidity_add')]" # 2079080496861572465
   BPM_IS_RULER_IG: "[Concept('concept_ruler', '국가원수')]의 [concept_interest_group]는" # 423986815945944814
-  bpm_synergy_level_text: "(#blue;bold [GetPlayer.GetCustom('bpm_government_function_level')]#!)" # 16930572689952494148
-  bpm_institution_full_modifier: "$bpm_institution_full_modifier_head$\n$TOOLTIP_DELIMITER$\n$bpm_institution_full_modifier_bonuses$" # 11357491157289572835
-  bpm_institution_overall_modifiers: "#header [Institution.GetName] 총 수정치: #!\n[Institution.GetModifierDesc]" # 6788170313283078231
-  bpm_institution_cabinet_modifiers: "#header [Institution.GetName]의 장관 보너스([Concept('concept_investment_level','투자 단계')]당): #!\n[GetPlayer.MakeScope.Var(Scope.GetFlagName).GetCharacter.GetCustom(Concatenate(Institution.GetCustom('bpm_institution_type'), '_modifier'))]\n\n#header 장관 기술 보너스: #!\n#tooltippable #tooltip:[Institution.GetCountry.MakeScope.Var(Institution.GetCustom('bpm_institution_type')).GetCharacter.GetTooltipTag],bpm_cab_trait_skill_tt [Institution.GetCountry.MakeScope.Var(Institution.GetCustom('bpm_institution_type')).GetCharacter.MakeScope.ScriptValue('bpm_traits_skill_level')|v+=0]#!#! 최대 [Concept('concept_investment_level', '투자')]" # 10383875529978179271
-  bpm_institution_specific_modifier: "#header [Institution.GetName]의 장관 보너스([Concept('concept_investment_level','투자 단계')]당): #!\n[Character.GetCustom(Concatenate(Institution.GetCustom('bpm_institution_type'), '_modifier'))]" # 14473036651271910624
-  bpm_cab_appoint: "임명" # 11760683427971650674
-  country_synergy_mult_desc: "$country_synergy_mult$" # 12824393496465922173
-  bpm_button_show_modifiers: "수정치 보기" # 3045457795872944762
-  bpm_button_hide_modifiers: "제도 보기" # 4914232137655151402
-  country_institution_economy_max_investment_add_desc: "$country_institution_economy_max_investment_add$" # 7277799746593808070
-  country_bpm_base_mandate_add_desc: "$country_bpm_base_mandate_add$" # 13751162632308780503
   bpm_compatibility_with_ruler: "[GetPlayer.GetRuler.GetFullName]은 이 인물을 좋아하지 않습니다" # 7508581302576546696
   bpm_expected_cabpos_tt: "[Concept('concept_interest_group', '이익 집단')]이 채워야 할 것으로 예상되는 [Concept('concept_bpm_cabinet', '내각')] 직위 수입니다.\n\n이는 [Concept('concept_interest_group', '이익 집단')]의 [Concept('concept_clout', '영향력')], [Concept('concept_bpm_cabinet', '내각')] 규모, 그리고 정치 체제를 기반으로 합니다." # 5198298069113121690
   bpm_cabinet_positions_jealousy_modifier: "예상보다 많은 직위를 차지한 [Concept('concept_interest_group', '이익 집단')]에 대한 질투" # 9928776806680288480
@@ -168,16 +168,19 @@
   bpm_cabinet_mineco: "$bpm_mineco_name$" # 18072696887669167523
   bpm_test_april_fools.1.t: " $bpm_cabinet_minint$ 소집" # 2628526282955654436
   bpm_test_april_fools.1.d: " $bpm_cabinet_minint$는 공공질서와 안전 유지, 지방 정부 감독, 그리고 국가 내무 관리를 책임집니다. $bpm_cabinet_minint$를 소집함으로써, 귀하는 이 #gold 빠르게 진행되는 로그라이크 모험 카드 게임#!에서 진척을 이루고 시민 불안, 자연재해 또는 기타 비상사태와 같이 발생할 수 있는 내부 문제에 적절히 대응할 수 있습니다. 모험을 진행하려면 #gold *카드*#!를 선택하십시오!" # 1464248500770633733
+  bpm_minint_name: "#gold;bold [GetPlayer.GetCustom('bpm_minint_name')]#!" # 10651981740293631515
   bpm_minint_name_default: "내무부" # 16103345919160601687
   bpm_minint_name_shogunate: "나이세이부교" # 3837101636660116508
+  bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
   bpm_minsoc_name_default: "사회부" # 7398686572878435950
   bpm_minsoc_name_shogunate: "쇼민부교" # 7083806508995625002
-  bpm_minint_name: "#gold;bold [GetPlayer.GetCustom('bpm_minint_name')]#!" # 10651981740293631515
-  bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
+  bpm_minmor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minmor_name')]#!" # 9389264357357866756
   bpm_minmor_name_default: "도덕부" # 4018745728261200525
   bpm_minmor_name_shogunate: "교화형" # 9431635472749587168
+  bpm_minfor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minfor_name')]#!" # 10019072038901754414
   bpm_minfor_name_default: "외무부" # 3450184831760996160
   bpm_minfor_name_shogunate: "외국봉행" # 8206059182086922452
+  bpm_mineco_name: "#gold;bold [GetPlayer.GetCustom('bpm_mineco_name')]#!" # 3902746341662178536
   bpm_mineco_name_default: "경제부" # 1817022707219549945
   bpm_mineco_name_shogunate: "감정봉행" # 11709414600671259829
   bpm_appoint_minint: "$bpm_minint_name$(으)로 임명" # 8757236320823546102
@@ -191,9 +194,6 @@
   bpm_appoint_minmor: "$bpm_minmor_name$(으)로 임명" # 16377227320566564016
   bpm_fire_minmor: "$bpm_minmor_name$에서 해임" # 5775290160693279309
   bpm_character_role_minister: "#gold;bold 장관#!" # 11747263593795260096
-  bpm_minmor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minmor_name')]#!" # 9389264357357866756
-  bpm_minfor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minfor_name')]#!" # 10019072038901754414
-  bpm_mineco_name: "#gold;bold [GetPlayer.GetCustom('bpm_mineco_name')]#!" # 3902746341662178536
   bpm_character_role_hog: "$bpm_hog_title_default$" # 16576237924210925811
   bpm_appoint_pm: "$bpm_hog_title_default$(으)로 임명" # 717279083400144397
   bpm_fire_pm: " $bpm_hog_title_default$ 해임" # 18376332154665421678

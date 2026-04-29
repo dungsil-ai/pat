@@ -59,6 +59,7 @@
   peoples_springtime.14.a: "이탈리아가 불타고 있다." # 3848221321779850219
   peoples_springtime.15.t: "오스트리아 제국 종말" # 12668952039287244593
   peoples_springtime.15.d: "빈이 혁명의 열기에 휩싸인 최신 도시가 되었으며, 황제와 황족은 해외로 도피했습니다. 이제 지도자를 잃은 제국에서는 다양한 지방 평의회와 의회가 권력의 공백을 메우고 새로운 공화 정부를 선포했습니다." # 6729421991046785519
+  peoples_springtime.15.f: "\"민족들의 해방과 구원에 대한 생각은 [...] 해방되거나 풀려난 서구와의 형제애라는 목표에 나는 내 한 표를 던진다. 이 목표가 달성됨으로써 유럽의 자유와 평화는 보장될 것이며, 이 목표가 달성됨으로써 유럽 국가 가족의 가장 위대하고 지적인 문명화가 무적의 연합으로 결합될 것이다.\"\n\n—로베르트 블룸, 1848#!" # 7003024408905362024
   peoples_springtime.15.a: "산산조각 난 독수리." # 7996113846736522396
   peoples_springtime.15.b: "새로운 무언가를 위한 기회..." # 16137998840831945563
   bpm_danubia: "구 오스트리아 제국이 국가들의 연합체로 재편될 것입니다." # 8629815554273104811
@@ -112,6 +113,7 @@
   je_bpm_nova_republica: "신 공화국" # 8994041239371753812
   je_bpm_nova_republica_reason: "#bold 루이 나폴레옹이나 정통주의 지도자가 대통령직에 오르게 된다면, 그들은 공화정을 종식시키고 자신들의 방식으로 군주제를 복원할 기회를 얻게 될 것입니다.#!\n\n역사의 수레바퀴는 다시 한번 앞으로 굴러가며, 프랑스는 #yellow 두 번째 공화정! 시대로 접어듭니다. 이전 군주제를 지지하던 이들의 꿈은 좌절되었고, 19세기를 헤쳐나가는 프랑스를 재편할 새로운 행위자들이 기회를 잡았습니다.\n첫 번째 집단은 공화정을 보존하려는 이들로, @ig_liberals! [GetInterestGroupVariant('ig_liberals', GetPlayer).GetName]부터 @ig_socialists! [GetInterestGroupVariant('ig_socialists', GetPlayer).GetName]에 이르기까지 다양한 성향의 광범위한 연합입니다. 이들의 공통점은 세속적이고 민주적인 공화국을 수호하고자 하는 열망이며, 이 공화정이 첫 번째 공화정의 전철을 밟지 않으려면 끈기 있는 제도와 대중적 지지 기반을 구축하기 위해 노력해야 합니다.\n오를레앙파는 수세에 몰렸지만, 프랑스 정치에서 군주제는 여전히 건재합니다. @ig_national_liberals! [GetInterestGroupVariant('ig_national_liberals', GetPlayer).GetName]는 인기 있는 루이 나폴레옹 보나파르트의 뒤를 따르며 제정을 복원하고 프랑스를 비할 데 없는 현대 강국으로 만들고자 합니다. @ig_reactionaries! [GetInterestGroupVariant('ig_reactionaries', GetPlayer).GetName]는 오를레앙파와 마찬가지로 부르봉 가문의 인물을 왕좌로 돌려세우고자 하지만, 다른 혈통의 인물입니다. 이들은 무엇보다도 철저한 보수주의자들이며, 교회와 같은 전통적인 제도의 도움을 받는 강력한 군주를 신봉합니다.\n\n#lore \"철학자들과 정치가들은 우리의 혁명사에서 겸손에 대한 귀중한 교훈을 얻을 수 있을 것입니다. 이보다 더 위대하고, 더 잘 준비되었으며, 더 오래 숙성되었음에도 불구하고 이토록 적게 예측된 사건은 없었기 때문입니다.\"\n—알렉시 드 토크빌, 1856년#!" # 3281433792600470898
   bpm_france_july_monarchy.1.t: "빅토르 드 브로이 공작의 사임" # 8090592709713850930
+  bpm_france_july_monarchy.1.d: "빅토르 드 브로이 공작 총리가 오늘 조세 관련 법안 통과 실패 후 사임을 표명했습니다. 그가 정부와 정치권에서 물러남에 따라 저항당의 파벌주의는 더욱 심화되었으며, @industrialists! [GetInterestGroupVariant('ig_industrialists', GetPlayer).GetName]가 당을 완전히 탈퇴하여 운동당에 합류했습니다" # 3394420813887481415
   bpm_france_july_monarchy.1.f: "우리 국가는 크나큰 위기의 한복판에 처해 있으며, 우리는 모든 힘을 다해 이 무질서에 맞서 싸워야 합니다. 혁명을 구하기 위해서는, 혁명 그 자체의 과잉으로부터 혁명을 보존해야만 합니다. 이러한 과잉이 거리에서 발생하든, 혹은 제도의 남용에서 비롯되든, 본인은 무력과 법을 통하여 이를 진압하는 데 이바지할 것입니다." # 1274158641497934863
   bpm_france_july_monarchy.1.a: "공작이 서거했습니다. 누가 그를 계승하겠습니까?" # 13950669610785253866
   bpm_france.1.t: "반란으로 왕이 퇴위하다" # 5415681800456868246
@@ -138,32 +140,49 @@
   bpm_je_springtime_over: "민중의 봄이 끝난 지 2년이 지났습니다." # 10882559348224128693
   notification_bpm_1848_french_revolution_name: "#v 다 잘 될 것이다!#!" # 7716399997928001681
   notification_bpm_1848_french_revolution_desc: "파리에서 폭동이 발생하자, '시민 왕'은 퇴위했습니다. 제2공화국이 선포되었습니다." # 17222416524761376509
+  notification_bpm_1848_french_revolution_tooltip: "$notification_bpm_1848_french_revolution_name$" # 7911784057875119457
   notification_bpm_1848_ausgleich_name: "#v 오스트리아-헝가리 협상!#!" # 14718842585621314935
   notification_bpm_1848_ausgleich_desc: "긴급한 협상 끝에 합스부르크 왕국은 두 개의 반쪽으로 분열되었으며, 각각 고유의 헌법과 의회를 갖게 되었습니다." # 2275374916913891385
+  notification_bpm_1848_ausgleich_tooltip: "$notification_bpm_1848_ausgleich_name$" # 18358106559875113933
   notification_bpm_1848_metterfail_name: "#v 독수리 추락이로다!#!" # 12132336801419508519
   notification_bpm_1848_metterfail_desc: "혁명 세력이 합스부르크 가문을 망명시키면서, 제국의 수많은 영토들이 분리되어 제국이 완전히 붕괴하는 사태에 이르렀습니다." # 277344896635557790
+  notification_bpm_1848_metterfail_tooltip: "$notification_bpm_1848_metterfail_name$\" " # 1866336803386612090
   notification_bpm_1848_danubia_name: "#v 도나우 연방의 탄생!#!" # 14224590204115746930
   notification_bpm_1848_danubia_desc: "혁명가들이 합스부르크 가문을 추방시켰으며, 제국이 혼란에 빠진 가운데 임시정부가 제국을 동등한 국가들의 연합체로 재편하는 협상을 진행했습니다." # 13922699819646561734
+  notification_bpm_1848_danubia_tooltip: "$notification_bpm_1848_danubia_name$" # 16611723743757497149
   notification_bpm_1848_hungarian_revolution_name: "#v 페스트에 혁명이 일어났다!#!" # 1788864778843034531
   notification_bpm_1848_hungarian_revolution_desc: "헝가리 수도의 자유주의자들이 새로운 정부를 선포했습니다. 오스트리아 부대가 질서를 회복하기 위해 진격 중입니다." # 7736920015540663510
+  notification_bpm_1848_hungarian_revolution_tooltip: "$notification_bpm_1848_hungarian_revolution_name$" # 8362374483494391679
+  notification_bpm_1848_baden_name: "#v [SCOPE.sC('baden_revolter').GetName]에서 민중 혁명 발생!#!" # 1768188107870140650
+  notification_bpm_1848_baden_desc: "[SCOPE.sC('baden_revolter').GetName]의 민주주의 선동가들이 독일의 자유를 증진하기 위한 혁명을 주도했습니다!" # 15145906022723745921
+  notification_bpm_1848_baden_tooltip: "$notification_bpm_1848_baden_name$" # 2023790086501668450
   notification_bpm_1848_fail_name: "#v 프랑크푸르트 의회 해산!#!" # 8135118989674756216
   notification_bpm_1848_fail_desc: "헌법과 지도력 문제에 대해 단합하지 못하면서, 프랑크푸르트 의회는 붕괴했습니다." # 5730345805813899820
+  notification_bpm_1848_fail_tooltip: "$notification_bpm_1848_fail_name$" # 11462157677396591170
   notification_bpm_1848_win_name: "#v 통일과 정의와 자유로다!#!" # 16358610594733783683
   notification_bpm_1848_win_desc: "독일 제후국들이 새로운 헌법 아래 통합되는 데 성공한 후, 독일은 마침내 통일된 국가가 되었습니다." # 12506077657606438703
+  notification_bpm_1848_win_tooltip: "$notification_bpm_1848_win_name$" # 15697348806594293058
   notification_bpm_1848_milan_revolution_name: "#v 밀라노의 날들이여!#!" # 14308062428950111056
   notification_bpm_1848_milan_revolution_desc: "밀라노의 혁명분자들이 기회를 놓치지 않고 오스트리아 수비대를 도시에서 몰아냈습니다." # 12998524056429889529
+  notification_bpm_1848_milan_revolution_tooltip: "$notification_bpm_1848_milan_revolution_name$" # 7434887980315629845
   notification_bpm_1848_san_marco_revolution_name: "#v 성 마르코의 귀환!#!" # 4584070272579005849
   notification_bpm_1848_san_marco_revolution_desc: "베네치아 혁명파들이 옛 세레니시마 공화국의 모토를 딴 새로운 국가를 선포했습니다." # 12693900632232316186
+  notification_bpm_1848_san_marco_revolution_tooltip: "$notification_bpm_1848_san_marco_revolution_name$" # 4783014916604001035
   notification_bpm_1848_roman_revolution_name: "#v 교황, 로마를 탈출하다!#!" # 195543859278393431
   notification_bpm_1848_roman_revolution_desc: "교황은 로마에서 공화주의 봉기가 일어날 것을 예상하고 가에타로 피신했습니다." # 4835033871888562235
+  notification_bpm_1848_roman_revolution_tooltip: "$notification_bpm_1848_roman_revolution_name$" # 2956322802208861164
   notification_bpm_1848_concede_constitution_name: "#v [SCOPE.sC('revolution_country').GetName]에 #bold 새로운 헌법#이!#!" # 7534720487437046926
   notification_bpm_1848_concede_constitution_desc: "[SCOPE.sC('revolution_country').GetName] 정부는 혁명적인 압력에 굴복하여 새로운 헌법을 공포했습니다." # 9951892001396306441
+  notification_bpm_1848_concede_constitution_tooltip: "$notification_bpm_1848_concede_constitution_name$" # 8628761961335023301
   notification_bpm_significant_new_republic_name: "#[SCOPE.sC('revolution_country').GetName]에서 공화국이 선포되었습니다!#" # 3741989908441811350
   notification_bpm_significant_new_republic_desc: "[SCOPE.sC('revolution_country').GetName]의 구체제가 전복되고 새로운 공화국이 선포되었습니다." # 14134867576634339155
+  notification_bpm_significant_new_republic_tooltip: "$notification_bpm_significant_new_republic_name$" # 11777698345113048343
   notification_bpm_significant_restore_monarchy_name: "#v [SCOPE.sC('revolution_country').GetName]에서 군주가 즉위하다!#!" # 9085194057572003238
   notification_bpm_significant_restore_monarchy_desc: "내부 위기로 오랫동안 고통받던 군주제가 [SCOPE.sC('revolution_country').GetName]에 복귀했습니다." # 11476707471099837248
+  notification_bpm_significant_restore_monarchy_tooltip: "$notification_bpm_significant_restore_monarchy_name$" # 17118183577350424464
   notification_bpm_significant_new_council_republic_name: "#[SCOPE.sC('revolution_country').GetName]에서 노동자 평의회가 접수했습니다!#" # 3755051102272992931
   notification_bpm_significant_new_council_republic_desc: "[SCOPE.sC('revolution_country').GetName]의 노동자들이 낡은 질서를 부수고 새로운 프롤레타리아 공화국을 선포했습니다." # 12920467932616892546
+  notification_bpm_significant_new_council_republic_tooltip: "$notification_bpm_significant_new_council_republic_name$" # 13511209647501610350
   frankfurt_je_window_header: "의회 개요" # 373387407855925112
   frankfurt_je_window_breakdown: "#bold 현재 의회 구성#!\n#pink 좌파#가 장악한 의석 수!: [GetGlobalVariable('bpm_frankfurt_parliament_left_percent').GetValue|%]\n#yellow 중도파#가 장악한 의석 수!: [GetGlobalVariable('bpm_frankfurt_parliament_center_percent').GetValue|%]\n#blue 우파#가 장악한 의석 수!: [GetGlobalVariable('bpm_frankfurt_parliament_right_percent').GetValue|%]" # 1749736505120682244
   frankfurt_je_window_const: "교회에 관하여: [SCOPE.GetRootScope.GetCountry.GetCustom('religious_debate_outcome')]\n\n언론의 자유에 관하여: [SCOPE.GetRootScope.GetCountry.GetCustom('speech_debate_outcome')]\n\n" # 1842570245298106359
@@ -247,26 +266,7 @@
   bpm_frankfurt_parliament_events.10.a: "해방된 민중..." # 382992042919672800
   bpm_frankfurt_parliament_events.11.t: "미루어진 꿈" # 16491126255492754078
   bpm_frankfurt_parliament_events.11.d: "대대적인 탄압과 결속력 상실 속에서, 프랑크푸르트 의회는 해산되었습니다. 당분간 독일 통일의 꿈은 아직 요원해 보입니다." # 885151008248043333
-  peoples_springtime.15.f: "\"민족들의 해방과 구원에 대한 생각은 [...] 해방되거나 풀려난 서구와의 형제애라는 목표에 나는 내 한 표를 던진다. 이 목표가 달성됨으로써 유럽의 자유와 평화는 보장될 것이며, 이 목표가 달성됨으로써 유럽 국가 가족의 가장 위대하고 지적인 문명화가 무적의 연합으로 결합될 것이다.\"\n\n—로베르트 블룸, 1848#!" # 7003024408905362024
-  bpm_france_july_monarchy.1.d: "빅토르 드 브로이 공작 총리가 오늘 조세 관련 법안 통과 실패 후 사임을 표명했습니다. 그가 정부와 정치권에서 물러남에 따라 저항당의 파벌주의는 더욱 심화되었으며, @industrialists! [GetInterestGroupVariant('ig_industrialists', GetPlayer).GetName]가 당을 완전히 탈퇴하여 운동당에 합류했습니다" # 3394420813887481415
-  notification_bpm_1848_french_revolution_tooltip: "$notification_bpm_1848_french_revolution_name$" # 7911784057875119457
-  notification_bpm_1848_ausgleich_tooltip: "$notification_bpm_1848_ausgleich_name$" # 18358106559875113933
-  notification_bpm_1848_metterfail_tooltip: "$notification_bpm_1848_metterfail_name$\" " # 1866336803386612090
-  notification_bpm_1848_danubia_tooltip: "$notification_bpm_1848_danubia_name$" # 16611723743757497149
-  notification_bpm_1848_hungarian_revolution_tooltip: "$notification_bpm_1848_hungarian_revolution_name$" # 8362374483494391679
-  notification_bpm_1848_baden_desc: "[SCOPE.sC('baden_revolter').GetName]의 민주주의 선동가들이 독일의 자유를 증진하기 위한 혁명을 주도했습니다!" # 15145906022723745921
-  notification_bpm_1848_baden_tooltip: "$notification_bpm_1848_baden_name$" # 2023790086501668450
-  notification_bpm_1848_fail_tooltip: "$notification_bpm_1848_fail_name$" # 11462157677396591170
-  notification_bpm_1848_win_tooltip: "$notification_bpm_1848_win_name$" # 15697348806594293058
-  notification_bpm_1848_milan_revolution_tooltip: "$notification_bpm_1848_milan_revolution_name$" # 7434887980315629845
-  notification_bpm_1848_san_marco_revolution_tooltip: "$notification_bpm_1848_san_marco_revolution_name$" # 4783014916604001035
-  notification_bpm_1848_roman_revolution_tooltip: "$notification_bpm_1848_roman_revolution_name$" # 2956322802208861164
-  notification_bpm_1848_concede_constitution_tooltip: "$notification_bpm_1848_concede_constitution_name$" # 8628761961335023301
-  notification_bpm_significant_new_republic_tooltip: "$notification_bpm_significant_new_republic_name$" # 11777698345113048343
-  notification_bpm_significant_restore_monarchy_tooltip: "$notification_bpm_significant_restore_monarchy_name$" # 17118183577350424464
-  notification_bpm_significant_new_council_republic_tooltip: "$notification_bpm_significant_new_council_republic_name$" # 13511209647501610350
   bpm_frankfurt_parliament_events.11.f: "\"아니, 우리는 [의회]를 너무 높게 평가하고 있소. 우리는 의회가 이미 오래전에 상실한 정치적 중요성을 그것에 부여하고 있는 것이오. 가장 가혹한 판결은 이미 내려졌으니, 그것은 곧 의회 결정에 대한 무시와 완전한 망각이오.\"\n\n—카를 마르크스, 1848" # 1428572798987656286
-  notification_bpm_1848_baden_name: "#v [SCOPE.sC('baden_revolter').GetName]에서 민중 혁명 발생!#!" # 1768188107870140650
   bpm_frankfurt_parliament_events.11.a: "결국 그렇게 되지는 못했습니다..." # 10990062151649677556
   bpm_frankfurt_parliament_events.12.t: "검정 빨강 금색" # 4787922159066598631
   bpm_frankfurt_parliament_events.12.d: "이제 때가 왔습니다! 혁명적인 국가들의 연합과 함께 우리는 마침내 진군하여 흑, 적, 금 깃발 아래 독일을 통일할 수 있습니다! 이 왕국의 반동주의자들과 유럽 전체가 우리의 단호함 앞에 떨게 하라!" # 6906018014844556383

@@ -44,6 +44,7 @@
   notification_bpm_remove_political_stability_tiny_tooltip: "#header $notification_bpm_remove_political_stability_tiny_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_remove_political_stability_tiny_desc$" # 9983879713603959655
   notification_bpm_add_political_stability_huge_name: "우리의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 50만큼 증가했습니다." # 2064414765087759702
   notification_bpm_add_political_stability_huge_desc: "최근 사건의 결과로 우리의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 극적으로 상승했습니다." # 11664219770828277286
+  notification_bpm_add_political_stability_huge_tooltip: "$notification_bpm_add_political_stability_huge_name$" # 4294029523016551552
   notification_bpm_add_political_stability_big_name: "우리의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 20만큼 증가했습니다." # 1646229822035703913
   notification_bpm_add_political_stability_big_desc: "최근 사건의 결과로 우리의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 극적으로 상승했습니다." # 11664219770828277286
   notification_bpm_add_political_stability_big_tooltip: "#header $notification_bpm_add_political_stability_big_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_add_political_stability_big_desc$" # 4633917429736440830
@@ -58,6 +59,7 @@
   notification_bpm_add_political_stability_tiny_tooltip: "#header $notification_bpm_add_political_stability_tiny_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_add_political_stability_tiny_desc$" # 5205457282049620724
   notification_bpm_pm_nocofidence_name: "$bpm_hog_title_default$가 신임 투표에서 부결되었습니다." # 12252823622516745905
   notification_bpm_pm_nocofidence_desc: "$bpm_hog_title_default$가 신임 투표에서 패배했습니다. 우리는 통치할 수 있는 충분한 지지를 가진 새 정부를 임명해야 합니다." # 13097303289349943355
+  notification_bpm_pm_nocofidence_tooltip: "$notification_bpm_pm_nocofidence_name$" # 6690787998512086697
   bpm_decorative_modify_rigidity: "대상 $bpm_political_stability$" # 599151066512443658
   bpm_decorative_modify_rigidity_desc: "우리나라의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 도달하려는 목표치의 증가 또는 감소." # 2288414690239987617
   bpm_decorative_modify_rigidity_rate: "[Concept('concept_bpm_political_stability', 'Rigidity')] 변경 속도" # 14850266121034681247
@@ -91,8 +93,6 @@
   bpm_party_establishment_trend_in_government: "[Concept('concept_government', '정부')]에 속해 있으면서" # 14941004126423665597
   concept_bpm_party_establishment: "설립" # 10572498233493628055
   concept_bpm_party_establishment_desc: "정당의 창당은 그 정당이 한 국가의 정치 문화에 얼마나 깊이 뿌리내리고 있는지를 나타내는 척도입니다. 이는 정당의 인기에 영향을 미치며, 정권을 획득할 수 있는 능력에도 영향을 줍니다. 정당의 창당은 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')], 이를 구성하는 [Concept('concept_bpm_ig_is_upper_institutional', '제도적')] 및 [Concept('concept_bpm_ideological_ig', '이념적')] [Concept('concept_interest_group', '이해집단')], 그리고 [Concept('concept_government', '정부')] 내에서의 정당의 존재 여부에 의해 영향을 받을 수 있습니다." # 3337416091067766077
-  notification_bpm_add_political_stability_huge_tooltip: "$notification_bpm_add_political_stability_huge_name$" # 4294029523016551552
-  notification_bpm_pm_nocofidence_tooltip: "$notification_bpm_pm_nocofidence_name$" # 6690787998512086697
   bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921

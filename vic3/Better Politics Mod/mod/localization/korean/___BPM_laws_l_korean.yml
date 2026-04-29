@@ -58,6 +58,8 @@
   bpm_decorative_ban_reactionaries_plus_desc: "어떤 정당들이 [Concept('concept_bpm_party_ban', '금지됨')] 상태인지 결정합니다." # 5138344268579094654
   bpm_decorative_ban_socialists_plus: "[Concept('concept_bpm_party_ban', '금지')] [Concept('concept_bpm_bannable_socialists_plus', '반전통 정당')]" # 14939200281722668410
   bpm_decorative_ban_socialists_plus_desc: "어떤 정당들이 [Concept('concept_bpm_party_ban', '금지됨')] 상태인지 결정합니다." # 5138344268579094654
+  bpm_decorative_ban_liberals: "[Concept('concept_bpm_party_ban', 'Ban')] [Concept('concept_bpm_bannable_liberals', 'Liberal Parties')]" # 7030025421208515583
+  bpm_decorative_ban_liberals_desc: "어떤 정당이 [Concept('concept_bpm_party_ban', '금지')]되는지 결정합니다." # 5138344268579094654
   bpm_decorative_ban_antiliberals: "[Concept('concept_bpm_party_ban', '금지')] [Concept('concept_bpm_bannable_antiliberals', '반자유주의 정당')]" # 8235021481786281451
   bpm_decorative_ban_antiliberals_desc: "어떤 정당들이 [Concept('concept_bpm_party_ban', '금지됨')] 상태인지 결정합니다." # 5138344268579094654
   bpm_decorative_ban_everyone_but_ruler: "모든 비-통치 [Concept('concept_party', '정당')]을 [Concept('concept_bpm_party_ban', '금지')]합니다." # 12526364963085129848
@@ -101,6 +103,7 @@
   country_bpm_contain_threat_dp_enabled_desc: "[Concept('concept_diplomatic_play', '외교적 책략')]을 실행하여 크기 축소 목표를 사용할 수 있습니다." # 8681119897919889998
   bpm_exception_contain_threat_permitted_tt: "다른 제한 사항에도 불구하고 세력 감축 [Concept('concept_diplomatic_play', '외교전')]을 사용할 수 있음" # 15077516797192103056
   country_bpm_jingoist_lobby_force_demands_enabled: "기한 만료로 주전론적 로비의 요구가 시행됨" # 13754264164371022209
+  country_bpm_jingoist_lobby_force_demands_enabled_desc: "[Concept('concept_political_lobby', '로비')]가 타국과의 전쟁을 요구할 때, 해당 요구의 제한 시간이 만료되면 일반적인 로비 요구 방식 대신 자동으로 [Concept('concept_diplomatic_play', '외교전')]이 시작됩니다." # 2987336515634134483
   country_bpm_forpol_minister_appointment_switches_law: "[GetInstitutionType('institution_diplomacy').GetName] [Concept('concept_bpm_minister', '장관')] 임명은 이 법안을 즉시 변경합니다" # 11207641539350605429
   country_bpm_forpol_minister_appointment_switches_law_desc: "[GetInstitutionType('institution_diplomacy').GetName]에 새로운 [Concept('concept_bpm_minister', '장관')]이 임명될 때마다, 해당 장관의 이념이나 그가 속한 [concept_interest_group]에 따라 [GetLawType('law_dove_politics').GetName], [GetLawType('law_flexible_foreign_policy').GetName], [GetLawType('law_jingoism').GetName], [GetLawType('law_ultramilitarism').GetName] 중 관련 법안이 제정됩니다." # 2843716076194361758
   country_bpm_minimum_pro_country_lobby_amount: "최소 친국가 [Concept('concept_political_lobby', '정치적 로비')] 보장" # 15183605234103370479
@@ -126,10 +129,15 @@
   law_protected_leisure: "휴식권" # 12892529480913607399
   law_protected_leisure_desc: "노동자들은 다양한 법정 공휴일과 더불어 개인 휴가 및 병가를 통해 넉넉한 휴식 시간을 누립니다. 일일 노동 시간은 8시간 이하로 제한되며 점심시간이 보장됩니다." # 14787218144284892168
   bpm_decorative_modify_throughput_per_workplace_safety_investment: "[GetInstitutionType('institution_workplace_safety').GetName] [Concept('concept_institution', 'Institution')] 단계당 [concept_building] [concept_throughput]" # 13928468002424035367
+  bpm_decorative_modify_throughput_per_workplace_safety_investment_desc: "$bpm_decorative_modify_throughput_per_workplace_safety_investment$" # 8566119932639250828
   bpm_decorative_modify_sol_per_workplace_safety_investment: "[GetInstitutionType('institution_workplace_safety').GetName] [Concept('concept_institution', '제도')] 단계당 [concept_sol]" # 10936445745400622600
+  bpm_decorative_modify_sol_per_workplace_safety_investment_desc: "$bpm_decorative_modify_sol_per_workplace_safety_investment$" # 12950808091638447254
   bpm_decorative_modify_employment_laborers_per_workplace_safety_investment: "@laborers! [GetInstitutionType('institution_workplace_safety').GetName] [Concept('concept_institution', 'Institution')] 단계당 노동자 고용" # 4359348104247021624
+  bpm_decorative_modify_employment_laborers_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_laborers_per_workplace_safety_investment$" # 18058637071833242097
   bpm_decorative_modify_employment_machinists_per_workplace_safety_investment: "@machinists! [GetInstitutionType('institution_workplace_safety').GetName] [Concept('concept_institution', 'Institution')] 단계당 기계공 고용" # 16562311223918426940
+  bpm_decorative_modify_employment_machinists_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_machinists_per_workplace_safety_investment$" # 18147812109799942574
   bpm_decorative_modify_employment_clerks_per_workplace_safety_investment: "@clerks! [GetInstitutionType('institution_workplace_safety').GetName] [Concept('concept_institution', 'Institution')] 단계당 사무원 고용" # 7033174547138576568
+  bpm_decorative_modify_employment_clerks_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_clerks_per_workplace_safety_investment$" # 2985779593208453525
   lawgroup_labour_associations: "노동조합" # 16055174953605609265
   lawgroup_labour_associations_desc: "이 법률들은 노동자 대변의 판도를 결정하며, 노동자들이 다양한 이념적 및 정부적 제약 속에서 어떻게 단결하고 자신들의 권익을 옹호할 수 있는지를 규정합니다." # 12268704192899268491
   law_combination_acts: "불법 노동조합" # 295199674958574803
@@ -195,11 +203,3 @@
   law_right_of_assembly_desc: "대중은 집회의 권리와 언론의 자유를 누리나, 국가는 자체적인 간행물 제작과 예술 후원을 통해 대중문화에 개입할 권리를 보유합니다." # 7373619572721852721
   law_protected_speech: "연설 방해 없음" # 10560340853751865914
   law_protected_speech_desc: "국가는 공공 담론에 개입하지 않습니다. 집회의 자유와 표현의 자유가 보장되며, 국가 기관은 독자적인 매체를 생산하거나 예술에 중대한 간섭을 하지 않습니다." # 15420288241899768809
-  bpm_decorative_ban_liberals: "[Concept('concept_bpm_party_ban', 'Ban')] [Concept('concept_bpm_bannable_liberals', 'Liberal Parties')]" # 7030025421208515583
-  bpm_decorative_ban_liberals_desc: "어떤 정당이 [Concept('concept_bpm_party_ban', '금지')]되는지 결정합니다." # 5138344268579094654
-  country_bpm_jingoist_lobby_force_demands_enabled_desc: "[Concept('concept_political_lobby', '로비')]가 타국과의 전쟁을 요구할 때, 해당 요구의 제한 시간이 만료되면 일반적인 로비 요구 방식 대신 자동으로 [Concept('concept_diplomatic_play', '외교전')]이 시작됩니다." # 2987336515634134483
-  bpm_decorative_modify_throughput_per_workplace_safety_investment_desc: "$bpm_decorative_modify_throughput_per_workplace_safety_investment$" # 8566119932639250828
-  bpm_decorative_modify_sol_per_workplace_safety_investment_desc: "$bpm_decorative_modify_sol_per_workplace_safety_investment$" # 12950808091638447254
-  bpm_decorative_modify_employment_laborers_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_laborers_per_workplace_safety_investment$" # 18058637071833242097
-  bpm_decorative_modify_employment_machinists_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_machinists_per_workplace_safety_investment$" # 18147812109799942574
-  bpm_decorative_modify_employment_clerks_per_workplace_safety_investment_desc: "$bpm_decorative_modify_employment_clerks_per_workplace_safety_investment$" # 2985779593208453525

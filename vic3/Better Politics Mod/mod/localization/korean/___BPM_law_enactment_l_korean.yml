@@ -59,6 +59,8 @@
   bpm_law_support_country_add_modifier: "[AddTextIf(Not(EqualTo_string('', InterestGroup.GetCountry.GetModifier.GetDescFor('country_base_law_enactment_support_add'))), Concatenate('\n', InterestGroup.GetCountry.GetModifier.GetDescFor('country_base_law_enactment_support_add')))]" # 4505893398458463428
   bpm_law_support_ig_mult_modifier: "[AddTextIf(Not(EqualTo_string('', InterestGroup.GetModifier.GetDescFor('interest_group_law_support_mult'))), Concatenate('\n', InterestGroup.GetModifier.GetDescFor('interest_group_law_support_mult')))]" # 3457371910168441991
   bpm_law_support_country_mult_modifier: "[AddTextIf(Not(EqualTo_string('', InterestGroup.GetCountry.GetModifier.GetDescFor('country_base_law_enactment_support_mult'))), Concatenate('\n', InterestGroup.GetCountry.GetModifier.GetDescFor('country_base_law_enactment_support_mult')))]" # 12108262748293978769
+  country_base_law_enactment_support_mult: "기본 법률 제정 지지" # 10557343221816874715
+  country_base_law_enactment_support_mult_desc: "$country_base_law_enactment_support_mult$" # 7392567091717933927
   bpm_ig_law_support_current_law: "#yellow Current#! [concept_law]" # 5970161663932661552
   bpm_ig_law_support_current_law_like: "#yellow 현재 만족#! [concept_law]" # 12176395566544748822
   bpm_ig_law_support_current_law_dislike: "#yellow 현재 불만#! [concept_law]" # 5488111422681544409
@@ -226,7 +228,9 @@
   bpm_went_back_on_cabinet_promise_angry_ig: "내각 약속 철회" # 16012869766760670345
   bpm_went_back_on_cabinet_promise: "내각 약속 철회" # 16012869766760670345
   country_bpm_can_not_promise_cabinet_bool: "내각 자리 약속 불가" # 1339559318371896735
+  country_bpm_can_not_promise_cabinet_bool_desc: "$country_bpm_can_not_promise_cabinet_bool$" # 4294021239130049343
   interest_group_bpm_can_not_promise_cabinet_to_bool: "내각 자리 약속 불가" # 1339559318371896735
+  interest_group_bpm_can_not_promise_cabinet_to_bool_desc: "$interest_group_bpm_can_not_promise_cabinet_to_bool$" # 2431360870059148969
   bpm_ig_increase_law_enactment_approval_small_tt: "[SCOPE.gsInterestGroup('bpm_ig_law_approval_scope').GetName]은 #P +5#! [Concept('concept_bpm_law_sway', '법률 지지력')]을 얻습니다." # 16964488378237494915
   bpm_ig_increase_law_enactment_approval_medium_tt: "[SCOPE.gsInterestGroup('bpm_ig_law_approval_scope').GetName]은 #P +10#! [Concept('concept_bpm_law_sway', '법안 찬성')]을 획득합니다." # 11762280943241396011
   bpm_ig_increase_law_enactment_approval_big_tt: "[SCOPE.gsInterestGroup('bpm_ig_law_approval_scope').GetName]이 #P +15#! [Concept('concept_bpm_law_sway', '법률 제정에 대한 지지')]를 얻습니다." # 17358821651762127526
@@ -239,7 +243,3 @@
   bpm_ig_decrease_law_enactment_approval_small_ruler_tt: "우리 [concept_ruler]는 #N -5#! [Concept('concept_bpm_law_sway', '법안 통과 지지')]를 받습니다." # 16461480861062358220
   bpm_ig_decrease_law_enactment_approval_medium_ruler_tt: "우리의 [concept_ruler]은 #N -10#! [Concept('concept_bpm_law_sway', '법률 통과 지지')]을 얻습니다!" # 7526858539636250503
   bpm_ig_decrease_law_enactment_approval_big_ruler_tt: "우리 [concept_ruler]는 #N -15#! [Concept('concept_bpm_law_sway', '법안 통과 지지')]를 얻습니다." # 8061644483244922570
-  country_base_law_enactment_support_mult: "기본 법률 제정 지지" # 10557343221816874715
-  country_base_law_enactment_support_mult_desc: "$country_base_law_enactment_support_mult$" # 7392567091717933927
-  country_bpm_can_not_promise_cabinet_bool_desc: "$country_bpm_can_not_promise_cabinet_bool$" # 4294021239130049343
-  interest_group_bpm_can_not_promise_cabinet_to_bool_desc: "$interest_group_bpm_can_not_promise_cabinet_to_bool$" # 2431360870059148969

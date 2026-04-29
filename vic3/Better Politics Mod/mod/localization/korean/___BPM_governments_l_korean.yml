@@ -36,6 +36,7 @@
   gov_gondar_empire: "곤다르 궁정" # 6681236882048726410
   gov_gondar_empire_desc: "이는 [concept_government_type]로, 제메네 메사픈트 내의 반목의 결과로, 에티오피아의 [Concept('concept_ruler','$RULER_TITLE_EMPEROR$')]는 곤다르 성벽을 넘어 실질적인 권력을 거의 행사하지 못하고 있습니다." # 4514376511405340214
   gov_ethiopian_principality: "에티오피아 주" # 7611772591135649863
+  gov_ethiopian_principality_desc: "이것은 권력이 전적으로 [Concept('concept_ruler','$RULER_TITLE_RAS$')]에게 있는 [concept_government_type]입니다.\n\n$TRANSFER_OF_POWER_NAME_DESC$" # 2595464766641415357
   gov_gadda: "가다" # 14588283359989343021
   gov_gadda_desc: "아홉 명의 노련한 [Concept('concept_ruler','$RULER_TITLE_ABBAA_GADDA$')]로 구성된 평의회가 오로모 국가에서 법률에 투표하는 [concept_government_type]입니다." # 7347726671532272976
   gov_reverse_parliamentarism: "의회주의 역전" # 16883272793133050018
@@ -52,4 +53,3 @@
   gov_semi_presidential_democracy_desc: "이것은 선출된 대통령과 그가 임명한 총리가 [concept_country]를 통치하는 [concept_government_type]입니다.\n\n$TRANSFER_OF_POWER_NAME_DESC$" # 8003290446371438992
   gov_parliamentary_elected_dictatorship: "의회 독재" # 10315926257501514158
   gov_parliamentary_elected_dictatorship_desc: "이는 [concept_country]가 선출된 대통령은 명목상의 역할만 수행하며 독재자에 의해 통치되는 [concept_government_type]입니다.\n\n$TRANSFER_OF_POWER_NAME_DESC$" # 2699077784007600168
-  gov_ethiopian_principality_desc: "이것은 권력이 전적으로 [Concept('concept_ruler','$RULER_TITLE_RAS$')]에게 있는 [concept_government_type]입니다.\n\n$TRANSFER_OF_POWER_NAME_DESC$" # 2595464766641415357

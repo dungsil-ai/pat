@@ -33,8 +33,8 @@
   movement_bpm_modernizer_name: "$movement_modernizer$" # 15076871690165844052
   movement_bpm_utilitarian: "공리주의 운동" # 16722880444656835883
   movement_bpm_utilitarian_name: "$movement_utilitarian$" # 16949299355378739646
+  movement_market_liberal: "시장 자유주의 운동" # 8494175150328123650
+  movement_reformist_socialist: "개혁 사회주의 운동" # 10497791945429853763
   movement_bpm_german_pan_national: "독일 민족 운동" # 17717733785780766175
   movement_bpm_german_pan_national_name: "$movement_bpm_german_pan_national$" # 4225359526195595302
   POLITICAL_MOVEMENT_RADICALISM_TOOLTIP: "#header [PoliticalMovement.GetNameNoIcon]의 [concept_activism]#!\n일부 운동은 봉기를 위해 #v 10%#!의 지지가 필요하며, 다른 운동은 #v 15%#!가 필요합니다. 무정부주의자들은 대규모 자생적 봉기를 위해 #v 30%#!가 필요합니다. 사회주의 및 공산주의 운동은 각각 25와 50의 노동 의식이 필요합니다.\n[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetRadicalism, '(CFixedPoint)0.5'), 'ACTIVISM_RED_ICON', 'ACTIVISM_ICON')] [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ($POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL$)\n$TOOLTIP_DELIMITER$\n#title 이 $concept_activism_short$은(는) #b [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)]#! (#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetTargetRadicalism, '(CFixedPoint)1'), 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED', 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL')]#!#!)(으)로 변화할 것으로 예상됩니다:#! #indent_newline:3 \n[PoliticalMovement.GetTargetRadicalismDesc]" # 13042658415870021848
-  movement_market_liberal: "시장 자유주의 운동" # 8494175150328123650
-  movement_reformist_socialist: "개혁 사회주의 운동" # 10497791945429853763

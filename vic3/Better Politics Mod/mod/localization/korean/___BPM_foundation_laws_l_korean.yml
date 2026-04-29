@@ -18,6 +18,7 @@
   law_supreme_legislature: "최고 의회" # 12654706614475577852
   law_supreme_legislature_desc: "입법부는 국가의 최고 권위이며, 입법 기능과 행정 기능을 모두 수행합니다." # 13129921515686251334
   country_bpm_hog_impact_on_ruler_veto: "[concept_bpm_head_of_government]이 [concept_ruler]의 거부에 미치는 영향" # 8263821533156828460
+  country_bpm_hog_impact_on_ruler_veto_desc: "$country_bpm_hog_impact_on_ruler_veto$" # 4153060176131445849
   country_bpm_hog_advice_on_ruler_veto: "[concept_bpm_head_of_government] [concept_ideology]은 [Concept('concept_ruler','국가 원수')]의 거부권 행사에 영향을 미칩니다." # 6125157469812417066
   country_bpm_hog_advice_on_ruler_veto_desc: "자신의 판단에 의존하는 대신, [concept('concept_ruler','국가원수')]의 법률 거부권 행사는 [concept_bpm_head_of_government]의 [concept_ideology]에 의해 영향을 받습니다." # 17137582158249224844
   country_bpm_hog_veto: "[concept_bpm_head_of_government]만이 거부권에 대한 단독적인 결정을 가집니다" # 9354610923986503665
@@ -37,11 +38,17 @@
   country_bpm_cabinet_controlled: "내각 후보군은 오직 영향력이 매우 큰 [Concept('concept_interest_group', '이해집단')]으로부터만 차출됩니다." # 1654579289848883645
   country_bpm_cabinet_controlled_desc: "내각 임명은 주로 비밀스러운 회의실에서 결정되며, 대통령에 의해 형식적으로 추인될 뿐입니다. 내각 후보군은 오직 매우 영향력 있는 [Concept('concept_interest_group', '이해집단')]에서만 선발됩니다." # 6581273378726428822
   country_bpm_cabinet_institution_bonus: "추가 @votes_icon! [Concept('concept_bpm_institutional_ig', '제도적 이익집단')]에 대한 위임" # 2779778468934222027
+  country_bpm_cabinet_institution_bonus_desc: "$country_bpm_cabinet_institution_bonus$" # 4305939182263098745
   country_bpm_cabinet_hog_bonus: "추가적인 @votes_icon! [Concept('concept_interest_group', 'Interest Group')]의 [concept_bpm_head_of_government]에게 위임합니다." # 12480104902441494165
+  country_bpm_cabinet_hog_bonus_desc: "$country_bpm_cabinet_hog_bonus$" # 14173538250506672799
   country_bpm_cabinet_hos_bonus: "추가 @votes_icon! [Concept('concept_ruler', '국가원수')]의 [Concept('concept_interest_group', '이익 집단')]에게 위임하십시오." # 9081886754900099013
+  country_bpm_cabinet_hos_bonus_desc: "$country_bpm_cabinet_hos_bonus$" # 1665062514843331905
   country_bpm_cabinet_clout_bonus: "추가적인 @votes_icon! [Concept('concept_interest_group', '이익 집단')]으로부터 [Concept('concept_clout', '영향력')] 위임" # 11460610734174235433
+  country_bpm_cabinet_clout_bonus_desc: "$country_bpm_cabinet_clout_bonus$" # 18189693805537287383
   country_bpm_cabinet_government_bonus: "추가적인 @votes_icon! [Concept('concept_interest_group', '이익 집단')] [concept_in_government]에 대한 위임" # 5540828014014080059
+  country_bpm_cabinet_government_bonus_desc: "$country_bpm_cabinet_government_bonus$" # 14509322534569209196
   country_bpm_cabinet_party_bonus: "추가 @votes_icon! [Concept('concept_interest_group', '정당')] 내 [Concept('concept_ruler', '국가원수')]의 [Concept('concept_party', '정당')]에 대한 위임" # 4544945828033577350
+  country_bpm_cabinet_party_bonus_desc: "$country_bpm_cabinet_party_bonus$\"  " # 2019889956694728212
   bpm_character_role_protege: "후원자" # 4307640978056185895
   bpm_appoint_as_pm: "$bpm_hog_title_default$로 임명하십시오" # 717279083400144397
   bpm_not_anti_establishment_tt: "[concept_interest_group]은 반체제 성향이 아닙니다." # 12456367302049598847
@@ -52,10 +59,3 @@
   bpm_unappoint_pm_effect_tt: "[Character.GetFullName] 님이 $bpm_hog_title_default$ 직을 그만둡니다" # 10677473900540435472
   country_bpm_hog_inst: "[GetPlayer.GetCustom('bpm_institutional_appointment')]" # 4728199502823480892
   country_bpm_hog_inst_desc: "[GetPlayer.GetCustom('bpm_institutional_appointment_desc')]" # 15681474350580658079
-  country_bpm_hog_impact_on_ruler_veto_desc: "$country_bpm_hog_impact_on_ruler_veto$" # 4153060176131445849
-  country_bpm_cabinet_institution_bonus_desc: "$country_bpm_cabinet_institution_bonus$" # 4305939182263098745
-  country_bpm_cabinet_hog_bonus_desc: "$country_bpm_cabinet_hog_bonus$" # 14173538250506672799
-  country_bpm_cabinet_hos_bonus_desc: "$country_bpm_cabinet_hos_bonus$" # 1665062514843331905
-  country_bpm_cabinet_clout_bonus_desc: "$country_bpm_cabinet_clout_bonus$" # 18189693805537287383
-  country_bpm_cabinet_government_bonus_desc: "$country_bpm_cabinet_government_bonus$" # 14509322534569209196
-  country_bpm_cabinet_party_bonus_desc: "$country_bpm_cabinet_party_bonus$\"  " # 2019889956694728212

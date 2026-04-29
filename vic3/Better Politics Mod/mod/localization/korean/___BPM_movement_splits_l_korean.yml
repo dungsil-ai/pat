@@ -131,6 +131,7 @@
   ideology_eco_kaikoku_ha_desc: "이 운동은 국가를 대외 무역과 영향력에 개방해야 한다고 믿습니다." # 11583733684716342605
   movement_market_liberal_name: "자유방임주의 운동" # 16283334773014159472
   ideology_eco_market_liberal_mov: "자유방임주의 운동" # 16283334773014159472
+  ideology_eco_market_liberal_mov_desc: "$ideology_eco_market_liberal_mov$" # 12893010024680391061
   movement_national_liberal_name: "$movement_national_liberal$" # 14006256543038162248
   movement_national_liberal: "자유주의 민족주의 운동" # 6524814616564314789
   ideology_sta_national_liberal: "자유주의 민족주의 운동" # 6524814616564314789
@@ -139,6 +140,7 @@
   ideology_gov_reformist_socialist: "개혁주의 사회주의 운동" # 10497791945429853763
   ideology_gov_reformist_socialist_desc: "#lore 이 운동은 점진적인 사회주의 개혁을 신봉합니다. #!" # 3905780913327208155
   ideology_eco_modernizer_mov: "현대화 운동" # 4797116317162291578
+  ideology_eco_modernizer_mov_desc: "$ideology_eco_modernizer_mov$" # 15622207559909238820
   BPM_AVERAGE_LABOR: "평균 노동 운동" # 3947011257275753591
   BPM_STRONG_LABOR: "강력한 노동 운동" # 15345705451323090520
   BPM_EMBOLDENED_BY_LAW: "법률 제정으로 고무됨" # 11236410824680083069
@@ -154,5 +156,3 @@
   country_liberal_movement_support_add_desc: "자유주의 또는 온건 개혁주의 [Concept('concept_political_movement', 'Movements')]에 대한 이끌림." # 10482938732266940196
   BPM_INSTITUTIONAL_ALTERNATIVE: "관련 이해집단이 만족했습니다" # 384109399719180867
   bpm_extrinsic_ideology_info_tt: "이 [Concept('concept_interest_group', '이익 집단')]은 여기에 명시된 [Concept('concept_ideology', '이념')]을 갖도록 [InterestGroup.MakeScope.Var('bpm_cached_largest_faction').GetPoliticalMovement.GetName]의 영향을 받습니다." # 14672752432386530960
-  ideology_eco_market_liberal_mov_desc: "$ideology_eco_market_liberal_mov$" # 12893010024680391061
-  ideology_eco_modernizer_mov_desc: "$ideology_eco_modernizer_mov$" # 15622207559909238820
