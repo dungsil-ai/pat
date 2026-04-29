@@ -12,6 +12,10 @@ on:
     types:
       - completed
 
+concurrency:
+  group: upstream-dashboard
+  cancel-in-progress: false
+
 permissions:
   contents: read
   issues: write
@@ -75,6 +79,8 @@ jobs:
             const existing = issues.find((issue) => issue.title === title)
 
             if (existing) {
+              const duplicates = issues.filter((issue) => issue.title === title && issue.number !== existing.number)
+
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -83,6 +89,16 @@ jobs:
                 body,
               })
               core.info(`대시보드 이슈 #${existing.number}를 업데이트했습니다.`)
+
+              for (const dup of duplicates) {
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: dup.number,
+                  state: 'closed',
+                })
+                core.info(`중복 대시보드 이슈 #${dup.number}를 닫았습니다.`)
+              }
             } else {
               const created = await github.rest.issues.create({
                 owner: context.repo.owner,
