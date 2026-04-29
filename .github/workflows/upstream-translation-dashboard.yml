@@ -76,10 +76,13 @@ jobs:
               per_page: 100,
             })
 
-            const existing = issues.find((issue) => issue.title === title)
+            const matchingIssues = issues
+              .filter((issue) => issue.title === title && !issue.pull_request)
+              .sort((a, b) => a.number - b.number)
+            const existing = matchingIssues[0]
 
             if (existing) {
-              const duplicates = issues.filter((issue) => issue.title === title && issue.number !== existing.number)
+              const duplicates = matchingIssues.slice(1)
 
               await github.rest.issues.update({
                 owner: context.repo.owner,
