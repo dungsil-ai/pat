@@ -48,7 +48,6 @@
   bpm_bnap_patriots_events.2.b: "애국자들은 비이성적입니다." # 11931075758191156841
   bpm_increase_patriot_support_by_a_little: "#red 증가#! 애국자 지지 5" # 14515258397516563581
   bpm_increase_patriot_support_by_a_lot: "#red 증가#! 애국주의 지지도를 15만큼" # 5707763429732576473
-  bpm_increase_british_engagement_a_little: "영국의 관여도를 조금 높이십시오" # 18180234413925356370
   bpm_increase_british_engagement_a_lot: "@information! 영국의 관여도를 대폭 상승시키십시오" # 14741490442479121514
   bpm_decrease_british_engagement_a_lot: "@information! 영국 개입도를 대폭 감소시키시오" # 18401889921604381758
   bpm_bnap_durham_report_implement_report_tt: "@정보! 우리는 더럼 보고서의 권고 사항을 이행해야 할 것입니다." # 14273677072746380714
@@ -59,7 +58,6 @@
   bpm_bnap_patriots_events.3.b: "이러한 급진적인 사상은 위험합니다." # 14844994070356437176
   je_bpm_bnap_durham_report: "더럼 보고서" # 6146602115440626603
   je_bpm_bnap_durham_report_desc: "우리는 더럼 보고서를 서둘러 이행해야 하오." # 8968357737593259137
-  je_bpm_bnap_durham_report_reason: "더럼 보고서에서 애국자들의 반란의 근본 원인을 규명하고, 향후 그러한 재앙이 재발하는 것을 막기 위한 일련의 개혁안을 제시했습니다. 우리는 프랑스계 캐나다인들이 다시 한번 우리에게 반기를 드는 일이 없도록 이러한 개혁안을 최대한 신속하게 시행해야 합니다.\n\n#lore\"프랑스인들은 영어인들의 오만함과 부당함에 대해 불평했고, 영어인들은 프랑스인들을 나약하고 정복당한 민족의 악덕을 가졌다고 비난하며 비열함과 배신을 들추어냈습니다. 이 두 인종이 서로의 의도에 대해 학습하게 된 전적인 불신은 가장 순수한 행위에 대해서도 최악의 해석을 내리게 만들었고, 모든 말, 모든 행동, 모든 의도를 불공정하게 판단하며, 가장 증오스러운 설계들을 귀인시키고, 은밀한 배신과 악의를 감추고 있다고 여겨 모든 친절이나 공정성의 제안을 거부하게 만들었습니다.\"\n\n—더럼 경, 1839년" # 15332551969132570772
   je_bpm_bnap_durham_report_complete: "연합법이 통과되었습니다." # 4679081456859554075
   bpm_bnap_patriots_events.4.t: "바이타운의 탄원" # 16419148706139274189
   bpm_bnap_patriots_events.4.d: "캐나다 주가 미국에 점점 더 매료되고 있으며, 런던의 군주에 대한 불만을 품은 대표자 회의가 우리 연방에 가입하기를 요청하는 청원서를 보내왔습니다." # 16594740610622122939
@@ -138,4 +136,6 @@
   bpm_bnap_has_bpm_canada_dominion_tt: "$je_bpm_bnap_confederation_quest$ [concept_journal_entry]을(를) 완료했습니다." # 5137080872357637644
   bpm_bnap_has_je_west_canada_complete_tt: "$je_west_canada$ [concept_journal_entry]를 완료했습니다." # 12970583090841361725
   bpm_british_engagement_progress_bar_right: "" # 17241709254077376921
+  bpm_increase_british_engagement_a_little: "@information! 영국과의 관여를 조금 증가시킵니다" # 11339103211887222386
+  je_bpm_bnap_durham_report_reason: "더럼 보고서는 애국자 반란의 근본 원인을 파악했으며, 그러한 재앙이 다시 발생하는 것을 막기 위한 일련의 개혁안을 제안했습니다. 우리는 프랑스계 캐나다인들이 다시는 우리에게 반기를 들지 않도록 가능한 한 빨리 이 개혁들을 이행해야 합니다.\n\n#lore \"프랑스인들은 영국인들의 오만함과 불의를 불평했고, 영국인들은 프랑스인들을 나약하고 정복당한 민족의 악덕을 지녔다고 비난하며 그들을 비열하고 신의가 없다고 몰아붙였습니다. 두 민족이 서로의 의도에 대해 가지게 된 이러한 불신은, 가장 순수한 행동조차 최악의 의도로 해석하게 만들고, 모든 말과 행동, 의도를 불공정하게 판단하게 하며, 가장 끔찍한 음모를 꾸미고 있다고 여기게 만들고, 친절이나 공정함을 베풀려는 모든 제안을 배신과 악의를 숨기기 위한 것으로 거부하게 만듭니다\"\n\n—더럼 경, 1839년" # 9405875266276525009
   bpm_bnap_confederation_events.6.f: "" # 17241709254077376921

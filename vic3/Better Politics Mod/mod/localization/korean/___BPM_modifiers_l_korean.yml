@@ -263,6 +263,26 @@
   BPM_POP_INTERESTS_FROM_STABILITY: "[Concept('concept_bpm_political_stability', '정치적 경직성')]에 따른 지지" # 10796110038389804119
   BPM_POP_FROM_AGITATOR_POPULARITY: "선동가 인기에서" # 388162726672063752
   BPM_POP_FROM_RULER_POPULARITY: "통치자 인기" # 8521651881242070686
+  POP_ARTISANS: "장인 경제 체제 하의 장인" # 231781318843392239
+  MILD_DISCRIMINATION: "약간의 차별을 받는" # 10348838339867626310
+  URBAN_UNEMPLOYED: "도시 실업자" # 11876727835599173131
+  POP_CATHOLIC: "가톨릭교" # 16050257489146913638
+  POP_MIL_CHRISTDEM: "국가에 봉사함" # 16164432572340328433
+  POP_NO_CORPORATISM: "조합주의 없음" # 16842430822229904238
+  POP_ARISTOCRATS_CON: "유교적 귀족정" # 14815614748312834575
+  POP_SECULAR: "세속 국가임" # 8981486196679929541
+  POP_RERUM_NOVARUM: "레룸 노바룸이 발표됨" # 6482191426560714186
+  POP_GRAVES_DE_COMMUNI: "그라베스 데 코무니 레가 발표됨" # 15490828196192644266
+  POP_MASS_PARTIES: "대중 정당이 존재함" # 1636760441383214940
+  SPLIT_MORALISTS: "분열된 도덕주의자" # 3772186878748403255
+  STILL_OLIGARCHIC: "여전히 과두제" # 6440609412052770938
+  ARISTOCRAT_REFORMERS: "귀족 개혁가" # 5665213008179142049
+  NO_POLITICAL_AGITATION: "정치적 선동 없음" # 15793926934572473994
+  POP_CATHOLICS_EXIST: "가톨릭 이해관계가 이미 존재함." # 13163078030445051920
+  POP_SPRINGTIME_OVER: "민족의 봄이 완전히 끝남." # 16243110765800574382
+  COUNTRY_MAINLAND_EUROPEAN: "국가가 유럽 본토에 있음" # 5348150696112366118
+  COUNTRY_ENOUGH_CATHOLICS: "국가의 가톨릭 신자 비율이 10% 이상임" # 3787180473458980952
+  QUANTA_CURA_ISSUED: "콴타 쿠라가 발표됨" # 2262065304681006915
   BPM_POP_LOYALISTS_GOVT: "[Concept('concept_loyalist','충성파')]가 [Concept('concept_interest_group','이익집단')] 내에서 [Concept('concept_in_government','정부')]에 대한 온건한 지지를 표하는 계층" # 12460074268868273107
   BPM_POP_LOYALISTS_GOVT_MODERATE: "[Concept('concept_loyalist','충성파')]가 [Concept('concept_interest_group','이익 집단')]을 지지하며 [Concept('concept_in_government','정부')]에 참여하고 있습니다" # 1241557896143642570
   BPM_POP_LOYALISTS_OPPOSITION_RADICAL: "[Concept('concept_loyalist','충성파')] 팝들이 이 [Concept('concept_extremist','극단주의자')] [Concept('concept_interest_group','이익 집단')]을 [Concept('concept_in_opposition','반대파')]에서 외면합니다." # 8772812238587241785
@@ -333,3 +353,97 @@
   modifier_regency_agrarian_populists: "$modifier_regency$" # 15682542331677220956
   modifier_regency_reformist_socialists: "$modifier_regency$" # 15682542331677220956
   modifier_regency_socialists: "$modifier_regency$" # 15682542331677220956
+  country_liberal_consciousness_change_add: "자유주의 의식 변화" # 2535930852933726105
+  country_liberal_consciousness_change_add_desc: "$country_liberal_consciousness_change_add$" # 2022214933315863231
+  country_labor_consciousness_change_add: "노동 의식 변화" # 10567679806289197407
+  country_labor_consciousness_change_add_desc: "$country_labor_consciousness_change_add$" # 18426909842959648440
+  bpm_decorative_modify_mapi_per_centralization_investment: "중앙집권화 제도 레벨당 MAPI" # 7419595717743865032
+  bpm_decorative_modify_mapi_per_centralization_investment_desc: "$bpm_decorative_modify_mapi_per_centralization_investment$" # 11115867098214532479
+  from_no_progressive_agrarians_in_party: "정당 내 진보적 농업주의자 없음" # 10953590868541421589
+  bpm_anarchists_in_council_republic: "평의회 공화국의 아나키스트" # 732491762129457606
+  from_no_reason_to_exist: "존재할 이유 없음" # 137106487842044062
+  from_conservatism: "보수주의" # 15694554179176261691
+  bpm_anarchist_want_their_own_party_in_council_republic: "아나키스트들이 독자적인 정당을 원함" # 15604616959194227823
+  from_no_communists_in_party: "정당 내 공산주의자 없음" # 17721276689294932416
+  bpm_from_military: "군부" # 7365445990119700666
+  bpm_from_catholic_whites: "가톨릭 백인" # 12299821147558411023
+  bpm_from_new_wine_journal_entry: "낡은 가죽부대에 담긴 새 포도주 JE 활성화" # 2225266432364464619
+  bpm_from_powerful_christian_democrats: "강력한 기독교 민주주의자" # 18433585111100265749
+  from_legitimist: "정통주의자" # 3533465488389569044
+  bpm_from_moralist_opposition: "도덕주의적 반대" # 18395552088968984457
+  from_centralism: "중앙집권주의자" # 16398049686977799225
+  from_descentralism: "지방분권주의자" # 14196234580477926249
+  from_positivism: "실증주의자" # 5724545357039807862
+  bpm_from_colonialist: "식민주의자" # 16356469342341062363
+  bpm_from_radical_enemy: "강력한 급진파 반대자" # 4180631433412616393
+  from_monarchist: "군주주의자" # 17673629716336391079
+  from_no_fascists_in_party: "당내 파시스트 없음" # 4523673871014166801
+  bpm_from_jap_liberals: "일본 자유주의" # 390891957209217319
+  bpm_from_gre_radlibs: "그리스 자유주의" # 7761777360711235959
+  bpm_one_party_opposes: "일당제 반대" # 3953884824976062622
+  bpm_one_party_opposes_weak: "일당제 하의 약한 이익집단" # 11408261805399193138
+  from_despotic_utopian: "전제적 유토피아주의자" # 6705383382561122997
+  bpm_tridemist: "삼민주의자" # 18360876276975777360
+  bpm_independence_radicals: "반종주권 자유주의" # 15629746442829583918
+  from_no_radicals_in_party: "당내 급진파 없음" # 14448957811957263928
+  from_anti_despotism: "반전제주의" # 14399070747791248771
+  bpm_from_powerful_reactionaries: "강력한 반동주의자" # 12505437762217808922
+  bpm_from_reactionary_leader: "반동주의 지도자" # 222896532878937356
+  from_right_wing_rural: "우익 농민" # 11114581443566411073
+  bpm_from_weak_cons_reactionary: "강력한 반동주의자를 따르는 약한 보수주의자" # 15911732518647203524
+  bpm_from_not_respect_women: "여성 참정권 반대" # 13334335790847013239
+  bpm_from_british_party_system: "영국 정당 체제" # 17029564034020688004
+  from_miguelist: "미겔파" # 13554943743995577713
+  from_carlist: "카를로스파" # 12238313714387109287
+  from_anti_democratic: "반민주주의" # 14732105010945982593
+  from_devout: "독실한 신자" # 4164871557603346899
+  from_pre_durham: "더럼 보고서 이전" # 9270369190119992507
+  from_outlawed_dissent_no_parties_allowed: "반대 의견 금지" # 5715393884605827305
+  from_no_reactionaries_in_party: "정당 내 반동주의자 없음" # 7713776933585355518
+  BPM_CONSCIOUSNESS_LIBERAL: "자유주의 의식" # 1162091167776739529
+  bpm_from_common_interests: "공통의 이익" # 18258058103584794590
+  bpm_from_being_oppresed: "억압받는 계층" # 1299472892715830405
+  from_no_christdems_in_party: "정당 내 기독교 민주주의자 없음" # 6582063268664979468
+  bpm_before_first_intl: "제1인터내셔널 이전" # 4154215488595890539
+  BPM_CONSCIOUSNESS_LABOR: "노동 의식" # 13694048562536774014
+  bpm_no_socdems_in_party: "정당 내 사회민주주의자 없음" # 7171464049504846431
+  bpm_from_english_early_socialists: "초기 영국 사회주의자" # 12415360959399370111
+  bpm_from_french_early_socialists: "초기 프랑스 사회주의자" # 5778364599452912679
+  COUNTRY_LAWS_MODERATELY_DEMOCRATIC: "온건한 민주주의 법률" # 17917091492394967007
+  POP_ARISTOCRAT_SLAVE_OWNER: "귀족 노예 소유주" # 14741310027127598435
+  BPM_RULER_IDEOLOGY_FROM_STABILITY: "안정된 국가의 군주 이데올로기" # 14353458948188097671
+  POP_URBAN_PROLETARIAT_SUPPORTS_COOPERATIVES: "협동조합을 지지하는 도시 프롤레타리아" # 15074734946832446916
+  POP_RURAL_SUPPORTS_COLLECTIVIZATION: "농촌 인구가 집단화를 지지함" # 12576156168324201891
+  POP_SOLDIERS_SUPPORT_ELECTIONS_IN_ARMY: "군인들이 군대 내 선거를 지지함" # 12840749532824699059
+  POP_OFFICERS_SUPPORT_ELECTIONS_IN_ARMY: "장교들이 군대 내 선거를 지지함" # 18131378906213706176
+  BPM_POP_REFORMISTS_FROM_STABILITY: "안정성" # 2543393069082980006
+  BPM_POP_REVOLUTIONISTS_FROM_STABILITY: "안정성" # 2543393069082980006
+  POP_ARMY_IN_SOCIALIST_STATE: "적군" # 13116947200962541165
+  POP_HAPPY_WITH_ANARCHIST_LAWS: "무정부주의에 만족함" # 8916962467360076867
+  BPM_POTD_STRENGTH_TOO_LOW: "행동을 통한 선전의 위력이 너무 낮음" # 11590913563647177404
+  POP_BUREAUCRATS_SUPPORT_COMMAND_ECONOMY: "관료적 경제" # 6351202289295700118
+  workplace_safety_investment: "[GetInstitutionType('institution_workplace_safety').GetName] [concept_investment_level]" # 10780279277022681342
+  bpm_ig_wants_position: "이익집단이 입장을 원함" # 13934030060867167364
+  BPM_VALUE_FROM_GENERAL_STRIKE: "총파업" # 6436362011287902630
+  bpm_bnap_call_to_war: "전쟁 소집" # 12763167027602164346
+  bpm_bnap_call_to_war_desc: "$bpm_bnap_call_to_war$" # 12454523560055736706
+  from_against_slave_trade_in_government: "정부 내 노예 무역에 반대하는 이익집단으로부터" # 11270095125954786072
+  bpm_uneducated_populace: "교육받지 못한 민중" # 11966309088137964348
+  bpm_law_sway_assert_authority_neg_mod: "주장된 권위" # 4590058354972751471
+  bpm_law_sway_decrease_regionalism_mod: "지역주의 감소" # 12522613782882946154
+  bpm_seizing_the_means_of_productions: "생산 수단 장악" # 650924768963729625
+  el_excelentisimo_modifier: "각하" # 10810459209931273067
+  napoleon_of_the_americas_modifier: "아메리카의 나폴레옹" # 5513436321420596139
+  bpm_damaged_ig: "손상된 이익집단" # 14580554084778508199
+  bpm_new_constitution: "새로운 헌법" # 12284489733103314083
+  bpm_general_strike_modifier: "총파업" # 6436362011287902630
+  bpm_mass_revolter: "대규모 반란" # 11273914243268618028
+  bpm_independent_capital: "독립적인 수도" # 17820389557390602655
+  bpm_host_state_pressure: "주최국 압력" # 16245853642131366825
+  bpm_avoided_law_promise: "회피된 법률 약속" # 17639248611681464572
+  bpm_movement_exhausted: "지친 운동" # 5592359392495358348
+  bpm_bureaucracy_upgraded: "업그레이드된 관료제" # 4363782632960500947
+  bpm_excommunicated: "파문" # 166492468152261282
+  bpm_bnap_minor: "소규모 캐나다 통합자" # 3981523098683443827
+  bpm_patriots_rebellion: "애국자들의 반란" # 2771587743816990425
+  german_revolution: "독일 혁명" # 7796541837271146527

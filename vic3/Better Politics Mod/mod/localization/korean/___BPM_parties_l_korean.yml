@@ -117,7 +117,6 @@
   party_national_renaissance_fsa: "국민 부흥당" # 9553263153029187773
   party_unionist_party_fsa: "연합당" # 14233089382308578820
   party_radical_fsa: "[SCOPE.GetRootScope.GetCountry.GetCustom('fsa_radical_party_name')]" # 5043213654736047061
-  party_socdem_fsa: "[SCOPE.GetRootScope.GetCountry.GetCustom('fsa_socdem_party_name')]" # 10381021411929489532
   party_reactionary_csa: "[SCOPE.GetRootScope.GetCountry.GetCustom('csa_reactionary_party_name')]" # 18379554621034677209
   party_agrarian_csa: "[SCOPE.GetRootScope.GetCountry.GetCustom('csa_agrarian_party_name')]" # 13411524727852208668
   party_free_farmers_csa: "민주당 (자유 농민파)" # 7292036003333722871
@@ -125,14 +124,12 @@
   party_freedom_party_csa: "자유당" # 16258200749264715885
   party_radical_csa: "[SCOPE.GetRootScope.GetCountry.GetCustom('csa_radical_party_name')]" # 16226808195750547705
   party_radical_reform_csa: "급진 개혁당" # 9582664293328406758
-  party_socdem_csa: "[SCOPE.GetRootScope.GetCountry.GetCustom('csa_socdem_party_name')]" # 10991461446904404037
   party_southron_socialist_party_csa: "남부 노동당" # 9792060742590339580
   party_chateau: "샤토 클리크" # 6768780339947420118
   party_conservative_que: "청색당" # 6802286320749393915
   party_radical_que: "붉은 당" # 11001430426764747451
   party_tory_can: "보수당" # 8403903868316158712
   party_family_compact: "가족 협약" # 495856649081300872
-  party_reactionary_can: "[SCOPE.GetRootScope.GetCountry.GetCustom('can_reactionary_party_name')]" # 7701223617762620288
   party_conservative_can: "[SCOPE.GetRootScope.GetCountry.GetCustom('can_conservative_party_name')]" # 18009784384150997425
   party_liberal_can: "[SCOPE.GetRootScope.GetCountry.GetCustom('can_liberal_party_name')]" # 11035789575205769040
   party_reformer_can: "개혁당" # 548480309580057510
@@ -271,8 +268,6 @@
   party_national_ast: "국민당" # 17428428496366749239
   party_liberal_ast: "[SCOPE.GetRootScope.GetCountry.GetCustom('ast_liberal_party_name')]" # 400747376220263564
   party_bpm_free_trade: "자유무역당" # 10750574050724127448
-  party_radical_ast: "[SCOPE.GetRootScope.GetCountry.GetCustom('ast_radical_party_name')]" # 8301118905018778697
-  party_republican_ast: "공화 협회" # 720814562205008122
   party_federation: "연방당" # 11623093229605226152
   party_country: "국민당" # 16877000736854119983
   party_socdem_ast: "[SCOPE.GetRootScope.GetCountry.GetCustom('ast_socdem_party_name')]" # 6950174795518576843
@@ -485,3 +480,7 @@
   party_gre_democratic_union: "민주 연합" # 8915759038916524756
   party_agrarian_gre: "농민 노동당" # 14415327968851452135
   party_gre_freethinkers: "자유사상가당" # 12156810378083831832
+  party_socdem_fsa: "[SCOPE.GetRootScope.GetCountry.GetCustom('usa_socdem_party_name')]" # 8068501437326130004
+  party_socdem_csa: "[SCOPE.GetRootScope.GetCountry.GetCustom('usa_socdem_party_name')]" # 8068501437326130004
+  party_reactionary_can: "$party_chateau$" # 18098480226897730754
+  party_radical_ast: "공화주의 협회" # 720814562205008122

@@ -20,12 +20,10 @@
   building_employment_machinists_mult: "@기계공! 기계공 고용" # 399585407090605674
   building_employment_clerks_mult: "@서기! 서기 고용@" # 10107698303132683353
   alert_bpm_idle_legislature_name: "한가한 입법부" # 15859960602224521099
-  alert_bpm_idle_legislature_desc: "저희는 현재 [concept_law]를 작업하고 있지 않습니다. 하나를 선택해 주십시오. 만약 현재의 장기적인 정치 상황에 만족하신다면, 강력한 단기적 이익을 위해 언제든지 [Concept('bpm_repeatable_law', 'Repeatable Laws')]를 통과시키실 수 있습니다." # 11256720214811823030
   alert_bpm_idle_legislature_hint: "법률 제정 패널에서 법률을 선택할 수 있습니다." # 8932554080989261368
   alert_bpm_idle_legislature_action: "법률 목록" # 15741566634105529681
   alert_bpm_law_will_fail_vote_name: "[GetPlayer.GetLawBeingEnacted.GetName]이/가 실패할 것입니다!" # 5570593405043948491
   alert_bpm_law_will_fail_vote_desc: "현재 시행 중인 [concept_law]는 [Concept('concept_interest_group', '이해집단')]의 표가 충분치 않아 최종 단계에서 통과되지 못할 것입니다." # 18410224866100355707
-  alert_bpm_law_will_fail_vote_hint: "현재 법률에 더 많은 이익 집단을 귀의하게 만들려면 [Concept('bpm_law_sway', 'Law Sways')]을 소모할 수 있습니다." # 15588988791578366928
   alert_bpm_law_will_fail_vote_action: "정부 패널" # 15593567010204574285
   alert_bpm_must_appoint_headofgov_name: "$bpm_hog_title_default$ 없음" # 4336801374285297884
   alert_bpm_must_appoint_headofgov_desc: "현재 우리는 $bpm_hog_title_default$가 없습니다. 국가를 이끌 $bpm_hog_title_default$를 임명하는 것이 중요합니다." # 11798072844214588523
@@ -41,5 +39,18 @@
   bpm_must_pick_cabinet_setting_name: "공석인 내각 직위" # 15817161340064849999
   country_definition_equal: "귀국의 국가 정의는 #v [TARGET_COUNTRY_DEFINITION.GetName]#! (또는 그 상황별 변형 중 하나)입니다." # 16778682010465143153
   scripted_bar_progress_greater_than: "진행도가 $COMPARATOR$ #v $NUM|0v$#! (현재: $CURRENT_VALUE|0v$)" # 4737420364887045681
-  country_var_greater_or_equal: "#v 국가 변수#!가 #v $NUM|0v$#! 이상입니다." # 15775969839313696919
   bpm_law_enactment_requires_voting_system: "이 [concept_law]을(를) 통과시키려면 국가는 #gold [concept_election]#!을(를) 보유해야 합니다." # 9508879446083601945
+  building_group_bg_technology_employee_mult_desc: "$building_group_bg_technology_employee_mult$" # 14143836221487683067
+  building_group_bg_technology_throughput_add_desc: "$building_group_bg_technology_throughput_add$" # 17340177814983085376
+  building_group_bg_construction_employee_mult_desc: "$building_group_bg_construction_employee_mult$" # 18213492022108986684
+  building_group_bg_construction_mortality_mult_desc: "$building_group_bg_construction_mortality_mult$" # 9138903577798217604
+  building_group_bg_military_employee_mult_desc: "$building_group_bg_military_employee_mult$" # 7720696597794747123
+  building_group_bg_military_soldiers_standard_of_living_add_desc: "$building_group_bg_military_soldiers_standard_of_living_add$" # 5951194182792545635
+  alert_bpm_idle_legislature_desc: "현재 우리는 [concept_law] 작업을 진행하고 있지 않습니다. 하나를 선택하는 것을 고려해 보십시오. 현재의 장기적인 정치적 상황이 만족스럽다면, 강력한 단기적 이점을 얻기 위해 언제든지 [Concept('concept_bpm_repeatable_law', '반복 가능한 법률')] 통과를 시작할 수 있습니다." # 8157273559445285825
+  alert_bpm_law_will_fail_vote_hint: "[Concept('concept_bpm_law_sway', '법률 설득')]을 소모하여 현재 제정된 법률에 대해 더 많은 이익 집단을 설득할 수 있습니다." # 5144909531214000574
+  country_var_greater_or_equal: "#v 국가 변수#!가 #v $NUM|0v$#! 이상입니다." # 8480364017706002574
+  default_value: "기본값" # 11761059792348662140
+  populism_progress_from_unemployment_tt: "실업" # 5615349596530797415
+  communism_1: "[GetPlayerJournalEntry('je_communism_1').GetName|v]" # 14051451805870210308
+  bpm_bnap_can_big_money: "돈 :)" # 8814642864698201009
+  bpm_bnap_hbc_big_money: "$bpm_bnap_can_big_money$" # 14890118987925918685

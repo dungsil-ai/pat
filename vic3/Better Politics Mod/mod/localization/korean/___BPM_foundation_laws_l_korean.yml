@@ -52,3 +52,10 @@
   bpm_unappoint_pm_effect_tt: "[Character.GetFullName] 님이 $bpm_hog_title_default$ 직을 그만둡니다" # 10677473900540435472
   country_bpm_hog_inst: "[GetPlayer.GetCustom('bpm_institutional_appointment')]" # 4728199502823480892
   country_bpm_hog_inst_desc: "[GetPlayer.GetCustom('bpm_institutional_appointment_desc')]" # 15681474350580658079
+  country_bpm_hog_impact_on_ruler_veto_desc: "$country_bpm_hog_impact_on_ruler_veto$" # 4153060176131445849
+  country_bpm_cabinet_institution_bonus_desc: "$country_bpm_cabinet_institution_bonus$" # 4305939182263098745
+  country_bpm_cabinet_hog_bonus_desc: "$country_bpm_cabinet_hog_bonus$" # 14173538250506672799
+  country_bpm_cabinet_hos_bonus_desc: "$country_bpm_cabinet_hos_bonus$" # 1665062514843331905
+  country_bpm_cabinet_clout_bonus_desc: "$country_bpm_cabinet_clout_bonus$" # 18189693805537287383
+  country_bpm_cabinet_government_bonus_desc: "$country_bpm_cabinet_government_bonus$" # 14509322534569209196
+  country_bpm_cabinet_party_bonus_desc: "$country_bpm_cabinet_party_bonus$\"  " # 2019889956694728212

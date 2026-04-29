@@ -2,3 +2,4 @@
   bpm_amendment_artisanal_economy: "수공업 경제" # 7479528101102747557
   bpm_france_artisanal_lowest_level_pm: "중공업에서 진보된 [concept_production_method]#금# 생산 방식을 사용할 수 있습니다." # 2550917814420376196
   bpm_france_artisanal_lowest_level_pm_desc: "만약 중공업이 가장 낮은 [concept_production_method]에 있지 않다면, 중공업에 #v -95%#! [concept_throughput] 효과를 부여합니다." # 17835025289425487967
+  bpm_amendment_artisanal_economy_desc: "$bpm_amendment_artisanal_economy$" # 5628634786784883009

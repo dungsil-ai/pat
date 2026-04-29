@@ -443,7 +443,6 @@
   austria_trialism.1.f: "전령이 의회 의장의 문을 쉴 새 없이 두드렸고, 비서가 나올 때가 되어서야 멈췄다. 그는 한 손에는 서류 뭉치를 쥐고, 다른 한 손은 문설주에 기댄 채 균형을 잡았다. 헐떡이는 숨소리 사이로 그는 첫마디를 겨우 내뱉었다.\n\\\"방금 소식을 들었습니다. [SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getEmpressEmperor')]\"\n\\\"당신이 말하는 건 [SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getQueenKing')]이겠지요\"\n\\\"아, 예. 그 [SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getQueenKing')]께서 우리를 분할하려 합니다\"" # 11402215509602228587
   austria_trialism.1.a: "[ROOT.GetCountry.GetNameNoFlag]에 대한 이 모욕을 거부하십시오." # 12528862815644568086
   austria_trialism.1.b: "우리의 실수가 복수되게 하소서. 선언문에 서명하시오." # 16198434231455049306
-  possible_dp_with_austria_scope_tt: "#r#b [concept_diplomatic_play]로 이어질 수 있습니다! #! [SCOPE.sCountry('austria_scope').GetName]에 대한#!" # 9079462645769966989
   austria_trialism.2.t: "[SCOPE.sCountry('hungary_scope').GetName] 삼국 동맹 선언을 거부하다" # 11465155324736742692
   austria_trialism.2.d: "[SCOPE.sCountry('hungary_scope').GetName] 정부는 [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]가 [GetCulture('croat').GetName] 민족을 위한 동등한 지위의 군주제를 약속했던 선언문을 거부했습니다. [SCOPE.sCountry('hungary_scope').GetNameNoFormatting]의 거부는 제국의 양쪽 절반에 걸쳐 있는 남슬라브 인구 사이에서 불만을 야기했습니다." # 14675897085118896462
   austria_trialism.2.f: "[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]에는 깊은 한숨이 감돌았습니다. 그들이 낙관할 이유가 없었지만, 어쩐지 너무나 가까이 왔던 것처럼 느껴졌습니다. 잠시 동안 그들은 희망을 품을 수 있었으나, 이내 냉정하게 현실을 깨달았습니다.\n\n물론 해결책은 존재했지만, 그 순간에는 아무도 감히 입 밖에 내지 못했습니다. 환멸이 복수심으로 바뀌는 저녁 시간이 되어서야 그런 생각이 비로소 표출될 수 있었습니다. [SCOPE.sCountry('hungary_scope').GetNameNoFormatting]에게는 거부권이 있었지만, [ROOT.GetCountry.GetNameNoFormatting]에게는 중포가 있었습니다. 그들은 다시 한번 희망을 품을 용기가 있을까요?" # 10908445810438475588
@@ -554,12 +553,6 @@
   metternich_memory_level_8: "[ROOT.GetCountry.GetNameNoFormatting]의 성공이 빚진 전략가이자 선구자." # 3749598590948062352
   metternich_memory_level_9: "현대 정국의 귀감이며, 누구나 자신을 비견하길 꿈꾸는 존재로다." # 8739252995256323006
   metternich_memory_level_10: "나폴레옹에 필적할 만한 인물로, 모든 정치 세력이 자기들의 사람이라고 주장하는 인물." # 1596160064927964466
-  modifier_geheime_staatskonferenz: "$concept_geheime_staatskonferenz$" # 12738986694739311522
-  modifier_geheime_staatskonferenz_kolowrat: "$concept_geheime_staatskonferenz$" # 12738986694739311522
-  modifier_geheime_staatskonferenz_metternich: "$concept_geheime_staatskonferenz$" # 12738986694739311522
-  geheime_staatskonferenz_dissolve_tt: "[concept_geheime_staatskonferenz]가 해산될 것입니다." # 11465537517056948614
-  concept_geheime_staatskonferenz: "비밀 국정 회의" # 13991018134547084146
-  concept_geheime_staatskonferenz_desc: "$concept_geheime_staatskonferenz$ 혹은 #b 비밀 국정 회의#!는 카이저 프란츠 1세의 의지에 따라 설립된 #b 오스트리아 제국#!의 사실상의 통치 기구입니다. 법적으로 이 기구는 카이저 페르디난트에게 자문하는 위원회로 존재합니다. 그 구성은 궁정 내 자유주의 및 보수주의 파벌 간의 타협안으로, [SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')], [SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')], 그리고 [SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')]의 구성원들을 포함합니다.\n\n$concept_geheime_staatskonferenz$ 수정치는 #v $je_metternich$#! [concept_journal_entry]가 활성화되어 있는 동안 지속될 것입니다. 이 수정치가 활성화된 동안에는 [SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')], [SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')], 그리고 [SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')]가 [concept_in_government] 상태가 아닐 경우 [concept_approval]이 크게 감소할 것입니다.\n$TOOLTIP_DELIMITER$\n[GetStaticModifier('modifier_geheime_staatskonferenz').GetDesc]" # 14636254083224104251
   LANDOWNERS_INGAME_LINK: "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]" # 6039808985009787288
   INTELLIGENTSIA_INGAME_LINK: "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]" # 14307587419550186678
   ARMED_FORCES_INGAME_LINK: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]" # 4947342166422965027
@@ -575,7 +568,6 @@
   metternich.2.f: "\"나는 더 이상 아무것도 아니다. 더 이상 할 일도, 논의할 것도 없다\"\n\n— 클레멘스 폰 메테르니히" # 16285338439366605392
   metternich.2.a: "[SCOPE.sCharacter('metternich_scope').GetSheHe|U]는 더 이상 우리를 규정하지 않을 것입니다." # 16377214996496504707
   metternich.3.t: "소규모 쿠데타" # 14008410502574965592
-  metternich.3.d: "재상 $concept_geheime_staatskonferenz$의 구조에 대한 일련의 개혁안을 제안했으며, 이는 해당 기구의 기능을 개선하는 동시에 [SCOPE.sCharacter('metternich_scope').GetHerselfHimself]를 그곳의 논란의 여지 없는 수장으로 추대하려는 것입니다. [SCOPE.sCharacter('kolowrat_scope').GetFullName]는 왕가와 뜻을 같이하여 이 조치를 저지하려 합니다." # 16606424955847790796
   metternich.3.f: "\"추가적인 권력을 얻는다고 해서 이득 볼 사람이 메테르니히보다 적은 이는 드뭅니다\" 전령이 말을 시작했다.\"그리고 대공 전하, 제가 감히 그런 말씀을 드린 것에 용서하여 주시옵소서. 만약 이 달 말까지 전하께서 시간이 되신다면..\"\n\n대공은 그에게 잠시 멈추라는 손짓을 했고, 그의 얼굴에는 짜증이 서려 있었다. 그의 장화는 반쯤 신겨진 상태였고, 그는 장화에 온전히 집중하고 싶었다.\"이 달 말이라니? 지금 콜로브라트 공은 어디에 있소\"\n\\\"보헤미아에 계십니다, 폐하. 그분께서 독감에 대한 소식을 전해오셨습니다\"" # 11039209746726758541
   metternich.3.a: "콜로브라트의 간섭이 제국의 안정을 위협하고 있습니다." # 5655759278524822728
   metternich.3.b: "수상은 외교 문제에만 전념하는 것이 좋을 것입니다." # 10610005678352742677
@@ -708,10 +700,8 @@
   modifier_deported_slaves: "식민지로 돌아가기" # 5092814920325833752
   je_standestaat: "슈탄데슈타트" # 12765185943971339564
   je_standestaat_reason: "[ROOT.GetCountry.GetName]에서 대중 정치의 부상은 전통 계층 사이에 반대 운동이 일어나는 계기가 되었습니다. [SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')]은 [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]과 다당제 민주주의를 폐지하고 [GetLawType('law_organic_democracy').GetName], 즉 '스탠더슈타트(Ständestaat)'를 선호합니다.\n\n이 [concept_journal_entry]가 활성화되어 있는 동안, [GetIdeology('ideology_corporatist_leader').GetName] 이념을 가진 인물들이 나타나는 비율이 증가할 것입니다." # 18045988046703105320
-  no_interest_group_in_government_is_corporatist_tt: "#b 아니요#! [concept_interest_group] [concept_in_government]은 [GetIdeology('ideology_dop_organic_state').GetName] 이념을 가지고 있거나, 혹은 어떤 #tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt 조합주의#! [concept_leader] 또는 [concept_agitator]를 가지고 있습니다." # 4621722233416736834
   corporatist_movement_disbanded_tt: "[SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName]이 해산되었습니다" # 9745330679939114801
   corporatist_movement_disbanded_dummy_tt: "#v $movement_corporatist$#! 이(가) 해산되었습니다" # 1368073159654598349
-  has_repressed_corporatists_for_some_years_tt: "[SCOPE.sInterestGroup('corporatist_ig_scope').GetName]의 [concept_clout]가 #v 5%# 미만으로 #b 24#!개월 연속 지속되고 있습니다 (현재 #v [ROOT.GetCountry.MakeScope.Var('corporatists_suppression_var').GetValue]#)!:" # 12024034484399978750
   corporatist_ideologies_list_tt: "#bold 기업가주의# [Concept('concept_ideology','$concept_ideologies$')]에는 다음이 포함됩니다:\n• [GetIdeology('ideology_corporatist_leader').GetName]\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]" # 10174034499738981538
   has_corporatist_ideology_tt: "[ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]은 [GetIdeology('ideology_corporatist').GetName] 이념을 가지고 있습니다" # 2863196498749164961
   leader_has_corporatist_ideology_tt: "[ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]의 [concept_leader]는 #tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt 기업주의#! [concept_ideology]를 가지고 있습니다." # 5184447022756002954
@@ -840,3 +830,7 @@
   pb_ruler_tt: "[concept_ruler] [concept_interest_group]은 #v $ig_petty_bourgeoisie$#!입니다." # 11546186576177222397
   movement_suppressed_after_civil_war_copy: "$movement_suppressed_after_civil_war$" # 16036547287628236885
   ROMANIA_NOT_EXISTS: "" # 17241709254077376921
+  possible_dp_with_austria_scope_tt: "#r #b [SCOPE.sCountry('austria_scope').GetName]을(를) 상대로 한 [concept_diplomatic_play](으)로 이어질 수 있습니다.#!#!" # 11166055824336148202
+  metternich.3.d: "재상 [SCOPE.sCharacter('metternich_scope').GetFullName]이(가) 비밀국무회의의 구조를 개혁하는 일련의 방안을 제안했습니다. 이 방안은 해당 기관의 기능을 개선하는 동시에 [SCOPE.sCharacter('metternich_scope').GetHerselfHimself]을(를) 확고한 수장으로 임명하는 내용을 담고 있습니다. [SCOPE.sCharacter('kolowrat_scope').GetFullName]은(는) 왕실과 결탁하여 이 조치를 저지하려 합니다." # 8453003334941793602
+  no_interest_group_in_government_is_corporatist_tt: "#b 아니오#! [concept_in_government] 내 어떤 [concept_interest_group]도 [GetIdeology('ideology_sta_organic_state').GetName] 이데올로기를 가지고 있지 않으며, #tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt 조합주의자#! [concept_leader] 또는 [concept_agitator]도 존재하지 않습니다." # 8490744898020729137
+  has_repressed_corporatists_for_some_years_tt: "[SCOPE.gsInterestGroup('corporatist_ig_scope').GetName]의 [concept_clout]이(가) #b 24#!개월 연속으로 #v 5%#! 미만이었습니다(현재 #v [ROOT.GetCountry.MakeScope.Var('corporatists_suppression_var').GetValue]#!):" # 14144820781798190583

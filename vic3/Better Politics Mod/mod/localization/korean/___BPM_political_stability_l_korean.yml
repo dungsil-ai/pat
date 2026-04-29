@@ -91,6 +91,8 @@
   bpm_party_establishment_trend_in_government: "[Concept('concept_government', '정부')]에 속해 있으면서" # 14941004126423665597
   concept_bpm_party_establishment: "설립" # 10572498233493628055
   concept_bpm_party_establishment_desc: "정당의 창당은 그 정당이 한 국가의 정치 문화에 얼마나 깊이 뿌리내리고 있는지를 나타내는 척도입니다. 이는 정당의 인기에 영향을 미치며, 정권을 획득할 수 있는 능력에도 영향을 줍니다. 정당의 창당은 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')], 이를 구성하는 [Concept('concept_bpm_ig_is_upper_institutional', '제도적')] 및 [Concept('concept_bpm_ideological_ig', '이념적')] [Concept('concept_interest_group', '이해집단')], 그리고 [Concept('concept_government', '정부')] 내에서의 정당의 존재 여부에 의해 영향을 받을 수 있습니다." # 3337416091067766077
+  notification_bpm_add_political_stability_huge_tooltip: "$notification_bpm_add_political_stability_huge_name$" # 4294029523016551552
+  notification_bpm_pm_nocofidence_tooltip: "$notification_bpm_pm_nocofidence_name$" # 6690787998512086697
   bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921

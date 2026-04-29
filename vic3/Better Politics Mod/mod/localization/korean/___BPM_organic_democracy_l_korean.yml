@@ -7,7 +7,6 @@
   ig_national_conservatives_catholic_desc: "가톨릭 민족보수주의자들은 다양한 명칭과 견해를 가진 일관성 없는 집단이지만, 일반적으로 가톨릭 사상의 우파에 속합니다. 그들은 자유주의적 제도를 해체하고 유기적인 민주주의와 국가, 그리고 조합주의를 선호합니다. 역사적으로 이는 포르투갈의 국가-조합주의자인 살라자르주의자들부터 프랑스의 왕당파 행동 프랑세즈, 이탈리아의 프롤레타리아 ANI, 오스트리아의 유토피아적 사회 낭만주의자들, 폴란드의 분배주의자인 므워지 엔데치에 이르기까지 폭넓은 개념이었습니다." # 9171587051278786482
   je_bpm_clay_forming_an_organism: "점토 유기체 형성" # 338491420915517561
   je_bpm_clay_forming_an_organism_status_consolidating_power: "권력 통합" # 9268554388623644425
-  tooltip_bpm_country_secularists_are_popular: "[concept_bpm_ig_is_organicist] [Concept('concept_interest_group', 'Interest Groups')] 전체 영향력의 >=20% ([GetPlayer.MakeScope.ScriptValue('bpm_secularist_popularity')|%])" # 9160588059239297402
   concept_bpm_ig_is_organicist: "유기체주의자" # 8085977714439220809
   concept_bpm_ig_is_organicist_desc: "@ig_christian_democrats! #bold 기독교 민주주의자들#!, @ig_reactionaries! #bold 반응주의자들#!, 그리고 @ig_fascists! #bold 파시스트들#! [Concept('concept_interest_group', '이해집단')]. 그들은 인간 사회를 유기체와 같다고 믿으며, 개별 인간은 그 유기체의 세포와 같다고 여깁니다. 따라서 그들은 국가 내에서 그러한 세포들의 힘을 강화하거나, 혹은 그 세포들이 국가의 일부가 되도록 해야 한다고 주장합니다." # 17333028841996119026
   party_professionals_administration_urban: "도시 전문가와 행정" # 6961283822868789022

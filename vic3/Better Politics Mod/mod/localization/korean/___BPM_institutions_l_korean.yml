@@ -49,3 +49,6 @@
   institution_economy: "경제 사안" # 8620772901210047949
   institution_economy_base: "경제 사안" # 8620772901210047949
   institution_economy_brz: "재정 담당 국무장관" # 17268898092062639658
+  institution_centralization_desc: "$institution_centralization$" # 10056305984453373456
+  institution_culture_desc: "국가의 출판물 및 예술적 표현에 관한 내용을 다룹니다." # 15513563149115549218
+  institution_economy_desc: "$institution_economy$" # 2451137780337190604

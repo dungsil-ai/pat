@@ -12,3 +12,7 @@
   country_bpm_ruler_complete_veto_enabled_desc: "#v [concept_ruler]#는 의회에서 통과된 #v 모든#! 법안을 거부할 권한을 가집니다." # 190759709286003776
   country_bpm_ruler_partial_veto_enabled: "#v [concept_ruler]# 님은 법안에 대한 #P 부분적 거부권#을 행사할 수 있습니다." # 8028351139224666180
   country_bpm_ruler_partial_veto_enabled_desc: "#v [concept_ruler]# 님께서는 입법부 지지율이 #v 66.7% 미만#인 법안을 거부할 수 있습니다." # 13391503229232006064
+  country_bpm_hog_complete_veto_enabled: "#v 정부 수반#!이 #N 완전 거부권#!을 보유합니다." # 9638183880574881729
+  country_bpm_hog_complete_veto_enabled_desc: "#v 정부 수반#!이 입법부에서 통과된 #v 모든#! 법안을 거부할 권한을 가집니다." # 16888101436536377543
+  country_bpm_hog_partial_veto_enabled: "#v 정부 수반#!이 법안에 대해 #P 부분 거부권#!을 행사할 수 있습니다." # 12635398212483970512
+  country_bpm_hog_partial_veto_enabled_desc: "#v 정부 수반#!이 입법부의 지지가 #v 66.7% 미만#!인 법안을 거부할 수 있습니다." # 15299539596207723503

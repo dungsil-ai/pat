@@ -154,3 +154,5 @@
   country_liberal_movement_support_add_desc: "자유주의 또는 온건 개혁주의 [Concept('concept_political_movement', 'Movements')]에 대한 이끌림." # 10482938732266940196
   BPM_INSTITUTIONAL_ALTERNATIVE: "관련 이해집단이 만족했습니다" # 384109399719180867
   bpm_extrinsic_ideology_info_tt: "이 [Concept('concept_interest_group', '이익 집단')]은 여기에 명시된 [Concept('concept_ideology', '이념')]을 갖도록 [InterestGroup.MakeScope.Var('bpm_cached_largest_faction').GetPoliticalMovement.GetName]의 영향을 받습니다." # 14672752432386530960
+  ideology_eco_market_liberal_mov_desc: "$ideology_eco_market_liberal_mov$" # 12893010024680391061
+  ideology_eco_modernizer_mov_desc: "$ideology_eco_modernizer_mov$" # 15622207559909238820

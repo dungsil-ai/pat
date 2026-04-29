@@ -36,3 +36,14 @@
   country_synergy_from_ideological_compatibility_desc: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속으로 인한 국가 시너지에 대한 보너스 또는 페널티" # 5457717499224795305
   country_synergy_from_hos_in_government: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]가 정부에 참여함으로써 얻는 시너지 효과" # 18423434580370691151
   country_synergy_from_hos_in_government_desc: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]이 정부 내에 있을 때 국가의 시너지에 대한 보너스 또는 페널티" # 17398427272126460928
+  building_group_bg_manufacturing_allowed_collectivization_add_desc: "$building_group_bg_manufacturing_allowed_collectivization_add$" # 488130472856564007
+  building_group_bg_mining_allowed_collectivization_add_desc: "$building_group_bg_mining_allowed_collectivization_add$" # 14121968402114459950
+  building_group_bg_logging_allowed_collectivization_add_desc: "$building_group_bg_logging_allowed_collectivization_add$" # 9759213113780992017
+  building_group_bg_light_industry_allowed_collectivization_add_desc: "$building_group_bg_light_industry_allowed_collectivization_add$" # 5108519574290405455
+  building_group_bg_heavy_industry_allowed_collectivization_add_desc: "$building_group_bg_heavy_industry_allowed_collectivization_add$" # 12991812275725191690
+  building_group_bg_fishing_allowed_collectivization_add_desc: "$building_group_bg_fishing_allowed_collectivization_add$" # 12456122288156526299
+  building_group_bg_oil_extraction_allowed_collectivization_add_desc: "$building_group_bg_oil_extraction_allowed_collectivization_add$" # 5963098695779505311
+  building_group_bg_whaling_allowed_collectivization_add_desc: "$building_group_bg_whaling_allowed_collectivization_add$" # 14394950450844327364
+  building_group_bg_rubber_allowed_collectivization_add_desc: "$building_group_bg_rubber_allowed_collectivization_add$" # 5742290682710258027
+  interest_group_ig_christian_democrats_pol_str_mult: "기독교 민주주의 정치력" # 14358113664333913846
+  interest_group_ig_christian_democrats_pol_str_mult_desc: "$interest_group_ig_christian_democrats_pol_str_mult$" # 4912395325767698418

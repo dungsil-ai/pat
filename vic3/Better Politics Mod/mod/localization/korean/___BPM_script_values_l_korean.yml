@@ -40,7 +40,6 @@
   BPM_VALUE_FROM_INSTITUTION_CENSORSHIP: "[GetLawType('law_censorship').GetName]에 대한 [Concept('concept_institution', '제도')] 투자" # 3218508648111576128
   BPM_VALUE_FROM_INSTITUTION_OUTLAWED_DISSENT: "[Concept('concept_institution', '제도')] 투자가 [GetLawType('law_outlawed_dissent').GetName]에 이루어지고 있습니다." # 9175929573675670504
   BPM_VALUE_FROM_INSTITUTION_RIGHT_OF_ASSEMBLY: "[GetLawType('law_right_of_assembly').GetName]에 대한 [Concept('concept_institution', '제도')] 투자" # 1186187885392310943
-  BPM_VALUE_FROM_REPEATABLE_LAW_POLITICS_TERROR: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] [GetLawType('law_repeatable_politics_terror').GetName]" # 18225589661089454588
   BPM_VALUE_FROM_RADICALS: "[Concept('concept_radical', '급진파')]" # 11898089550871850944
   BPM_VALUE_FROM_LOYALISTS: "[Concept('concept_loyalist', '충성파')]" # 16956167175403618325
   BPM_VALUE_FROM_WAR: "[Concept('concept_war_support', '전쟁 지지')]" # 2710994712755172661
@@ -91,7 +90,6 @@
   BPM_VALUE_FROM_RADICAL_LEADER_AND_AGITATORS: "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_radicals',GetPlayer).GetName]" # 1882531604876677831
   BPM_VALUE_FROM_SOCIALIST_LEADER_AND_AGITATORS: "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_socialists',GetPlayer).GetName]" # 3527327825518816228
   BPM_VALUE_FROM_AGRARIAN_SOCIALIST_CHARACTERS: "[GetIdeology('ideology_eco_agrarian_socialist').GetName] 계열 인물들로부터" # 2517788764147567140
-  BPM_VALUE_FROM_SYNDICALIST_CHARACTERS: "#yellow $ideology_syndicalist$#! 인물 인기" # 6238757471210000307
   BPM_VALUE_FROM_JOURNAL_PROGRESS: "일지 기록 진행 상황" # 10488069773001223533
   BPM_VALUE_JOURNAL_DURATION: "일지 항목 지속 기간" # 4966176842252502708
   BPM_VALUE_FROM_PREV_BOMBS: "이전 폭격들로부터" # 16551805740526311431
@@ -138,3 +136,6 @@
   BPM_STABILITY_FROM_WAR_BASE: "#gold 전쟁 진행 중#! 기본 값" # 11701340909623124748
   BPM_STABILITY_FROM_WAR_OCCUPATION: "#gold 진행 중인 전쟁#! 적 점령" # 13941925196112594309
   BPM_STABILITY_FROM_WAR_CASUALTIES: "#gold 진행 중인 전쟁#! 사상자" # 6233592706087131896
+  BPM_VALUE_FROM_RIGHT_WING_APPROVAL: "[Concept('concept_bpm_ig_is_right_wing', '우익 이익 집단')]의 [concept_clout] 및 [concept_approval]로부터" # 13773581494770777696
+  BPM_VALUE_FROM_REPEATABLE_LAW_POLITICS_TERROR: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] [GetLawType('law_repeatable_politics_great_terror').GetName]" # 17638847449117471200
+  BPM_VALUE_FROM_SYNDICALIST_CHARACTERS: "[GetIdeology('ideology_dop_syndicalist').GetName] 인물로부터" # 15029929132101297081

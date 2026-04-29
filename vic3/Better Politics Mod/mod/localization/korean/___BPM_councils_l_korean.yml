@@ -1,7 +1,5 @@
 ﻿l_korean:
   bpm_council_name: "[SCOPE.GetRootScope.GetCountry.GetCustom('bpm_council_custom_loc')]" # 2381470878179216650
-  bpm_council_name_plural: "[SCOPE.GetRootScope.GetCountry.GetCustom('bpm_council_plural_custom_loc')]" # 10300242681451874560
-  bpm_council_republic_name: "[SCOPE.GetRootScope.GetCountry.GetCustom('bpm_council_republic_custom_loc')]" # 5046909192392641919
   bpm_council_english: "평의회" # 5214203930338573742
   bpm_council_east_slavic: "소련" # 7949890607763561226
   bpm_council_west_slavic: "라다" # 5222201177113646348
