@@ -13,14 +13,6 @@
   combat_unit_type_advanced_mechanized_infantry: "고급 기계화 보병" # 9251334120918951289
   combat_unit_type_advanced_mechanized_infantry_desc: "높은 기동성과 잘 갖춰진 장비를 갖춘 병력으로, 신속하게 배치되어 효과적인 전투 작전을 수행할 수 있습니다." # 1986523411113946641
   extra: "호외" # 1397922501206358188
-  combat_unit_type_nuclear_submarine: "핵잠수함" # 4769949808005038725
-  combat_unit_type_nuclear_submarine_desc: "원자로로 동력을 얻는 잠수함으로, 장시간 수중 작전과 은밀한 교전이 가능해집니다." # 9537252790114505771
-  combat_unit_type_modern_destroyer: "현대식 구축함" # 17603364401659186608
-  combat_unit_type_modern_destroyer_desc: "빠르고 기동성 좋은 군함으로, 대공, 대잠, 수상전 수행을 위해 설계되었습니다." # 8762809459551384847
-  combat_unit_type_scout_modern_cruiser: "정찰 신형 순양함" # 17979634895304154867
-  combat_unit_type_scout_modern_cruiser_desc: "정찰 및 쾌속 대응 작전용으로 설계된 빠르고 민첩한 순양함." # 7334198320731959388
-  combat_unit_type_modern_battleship: "현대식 전함" # 2447851262823356905
-  combat_unit_type_modern_battleship_desc: "중무장과 두터운 장갑을 갖춰, 장거리 화력 지원과 해상 지배력을 제공하는 전함." # 15507200720762650209
   historical_population_of_france_1: "19세기 정체" # 6429505727594116601
   historical_population_of_france_2: "19세기 정체 해소" # 3049902143600546177
   population_of_brazil_end_of_slavery: "파벨라 붐" # 13336014164650035565
@@ -74,8 +66,6 @@
   combat_unit_type_self_propelled_artillery_desc: "이동식 받침대에 장착된 대포로, 더 큰 유연성과 신속한 배치가 가능합니다." # 2293583417249847503
   combat_unit_type_rocket_artillery: "로켓 포병" # 15081891605769264607
   combat_unit_type_rocket_artillery_desc: "로켓을 주된 발사체로 사용하는 대포로, 더 긴 사거리와 강력한 폭발력을 자랑합니다." # 16316984718513414289
-  combat_unit_type_modern_carrier: "핵항공모함" # 12113550812919965838
-  combat_unit_type_modern_carrier_desc: "원자로 동력 항공모함으로, 작전 배치를 연장하고 병참 제약을 줄입니다." # 2533278361126320809
   tactical_weapons: "전술 무기" # 10035480302676491947
   mobilization_option_close_air_support: "근접 항공 지원" # 11561220155863772577
   mobilization_option_close_air_support_desc: "특수 항공기가 공대지 무장으로 적 지상군을 직접 공격합니다." # 6681926811999170611
@@ -140,26 +130,6 @@
   unit_combat_unit_type_advanced_mechanized_infantry_defense_mult_desc: "고급 기계화 보병\n부대 방어 배율" # 9511330153957894274
   mobilization_option_rocket_artillery: "로켓" # 12193992866038969155
   mobilization_option_rocket_artillery_desc: "로켓은 적 병력에 치명적인 양의 폭발물을 투하할 수단을 제공합니다." # 16287705143369363726
-  unit_combat_unit_type_nuclear_submarine_offense_mult: "$combat_unit_type_nuclear_submarine$\n$unit_offense_mult$" # 13749569837256957485
-  unit_combat_unit_type_nuclear_submarine_offense_mult_desc: "$combat_unit_type_nuclear_submarine$\n$unit_offense_mult$" # 13749569837256957485
-  unit_combat_unit_type_nuclear_submarine_defense_mult: "핵잠수함\n유닛 방어력 배수" # 6847517806242275143
-  unit_combat_unit_type_nuclear_submarine_defense_mult_desc: "핵잠수함\n유닛 방어력 배수" # 6847517806242275143
-  unit_combat_unit_type_modern_destroyer_offense_mult: "현대식 구축함\n유닛 공격력 배율" # 4168361349374859708
-  unit_combat_unit_type_modern_destroyer_offense_mult_desc: "현대식 구축함\n유닛 공격력 배율" # 4168361349374859708
-  unit_combat_unit_type_modern_destroyer_defense_mult: "현대 구축함\n유닛 방어 배율" # 8351822840144897729
-  unit_combat_unit_type_modern_destroyer_defense_mult_desc: "현대 구축함\n유닛 방어 배율" # 8351822840144897729
-  unit_combat_unit_type_scout_modern_cruiser_offense_mult: "정찰 현대식 순양함\n부대 공격력 배율" # 8458386781396285190
-  unit_combat_unit_type_scout_modern_cruiser_offense_mult_desc: "정찰 현대식 순양함\n부대 공격력 배율" # 8458386781396285190
-  unit_combat_unit_type_scout_modern_cruiser_defense_mult: "현대식 정찰 순양함\n부대 방어력 배율" # 14099398901075163522
-  unit_combat_unit_type_scout_modern_cruiser_defense_mult_desc: "현대식 정찰 순양함\n부대 방어력 배율" # 14099398901075163522
-  unit_combat_unit_type_modern_battleship_offense_mult: "현대 전함\n유닛 공격력 배율" # 2641478636551113578
-  unit_combat_unit_type_modern_battleship_offense_mult_desc: "현대 전함\n유닛 공격력 배율" # 2641478636551113578
-  unit_combat_unit_type_modern_battleship_defense_mult: "현대식 전함\n부대 방어 배율" # 8990609641489432296
-  unit_combat_unit_type_modern_battleship_defense_mult_desc: "현대식 전함\n부대 방어 배율" # 8990609641489432296
-  unit_combat_unit_type_modern_carrier_offense_mult: "현대식 항공모함\n유닛 공격력 배율" # 927440194017303436
-  unit_combat_unit_type_modern_carrier_offense_mult_desc: "현대식 항공모함\n유닛 공격력 배율" # 927440194017303436
-  unit_combat_unit_type_modern_carrier_defense_mult: "현대형 항공모함\n부대 방어 배율" # 11471623600717307509
-  unit_combat_unit_type_modern_carrier_defense_mult_desc: "현대형 항공모함\n부대 방어 배율" # 11471623600717307509
   ztr_superpower: "초강대국" # 11786870363436856141
   ztr_eec_member: "유럽 경제 공동체 회원국" # 3262891299534771546
   ztr_eu_member: "EU 회원국" # 17046844086253143743
@@ -305,3 +275,58 @@
   ZTR_UNIFY_ACCEPT_SHARED_PRIMARY_CULTURE: "공유된 [Concept('concept_culture','$concept_culture$')]" # 12281526414553979626
   ZTR_UNIFY_ACCEPT_SHARED_RELIGION: "공유된 [Concept('concept_state_religion','국교')]" # 12199078323848284435
   ZTR_UNIFY_ACCEPT_SAME_POWER_BLOC: "이미 동일한 [Concept('concept_power_bloc','$concept_power_bloc$')]에 속해 있음" # 4433870577380131616
+  ship_type_modern_destroyer: "현대식 구축함" # 17603364401659186608
+  ship_type_modern_destroyer_desc: "센서, 대잠수함전, 함대 방공을 중심으로 설계된 고속 유도 미사일 호위함입니다." # 4147474231075360199
+  ship_type_modern_cruiser: "현대식 순양함" # 5839926847830553812
+  ship_type_modern_cruiser_desc: "미사일 무장, 첨단 지휘 체계, 원양 작전 능력을 결합한 장거리 수상 전투함입니다." # 9016409238546324640
+  ship_type_modern_battleship: "현대식 전함" # 2447851262823356905
+  ship_type_modern_battleship_desc: "후기 전함 개조 철학을 극한으로 끌어올린 함선으로, 두꺼운 장갑, 대구경 함포, 유도 무기, 현대적 지휘 체계를 갖추고 있습니다." # 3610255583372770132
+  ship_type_nuclear_carrier: "현대식 항공모함" # 6115740107773526426
+  ship_type_nuclear_carrier_desc: "장기간의 파병을 위해 대양 전역에 항공 전력을 투사할 수 있는 현대식 항공모함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 7505838519474130615
+  ship_type_nuclear_submarine: "현대식 잠수함" # 17073630598133626773
+  ship_type_nuclear_submarine_desc: "긴 작전 지속 능력, 낮은 피탐지성, 전략 유도 미사일 운용 능력을 갖춘 현대식 잠수함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 9673238374713532094
+  ship_mod_slot_electronics: "전자 장비" # 8906035645440450140
+  ship_mod_slot_missiles: "미사일" # 4292618955463830602
+  ship_mod_slot_air_wing: "항공단" # 8734574285905660555
+  ship_mod_modern_battleship_propulsion_light: "밥콕 앤 윌콕스 보일러 공장" # 2930505010196068370
+  ship_mod_modern_battleship_propulsion_medium: "웨스팅하우스 기어드 터빈" # 15392616245045447929
+  ship_mod_modern_battleship_propulsion_high: "LM2500 가스 터빈 개조" # 15009020161651739225
+  ship_mod_modern_carrier_propulsion_light: "웨스팅하우스 증기 터빈" # 5975261273163079091
+  ship_mod_modern_carrier_propulsion_medium: "포스터 휠러 과열 증기 플랜트" # 14334038048926412148
+  ship_mod_modern_carrier_propulsion_nuclear: "A2W 원자로 플랜트" # 1430339196316541033
+  ship_mod_modern_cruiser_propulsion_light: "웨스팅하우스 증기 순양함 플랜트" # 826609499389918089
+  ship_mod_modern_cruiser_propulsion_medium: "COSAG 추진 기관" # 2789004762459610196
+  ship_mod_modern_cruiser_propulsion_high: "LM2500 COGAG 기관" # 6420250898145057139
+  ship_mod_modern_destroyer_propulsion_light: "포스터 휠러 보일러 기관" # 16888730083047638088
+  ship_mod_modern_destroyer_propulsion_medium: "올림푸스-타인 COGOG 기관" # 722231647869528225
+  ship_mod_modern_destroyer_propulsion_high: "LM2500 COGAG 기관" # 6420250898145057139
+  ship_mod_nuclear_submarine_propulsion_light: "페어뱅크스-모스 디젤-전기 기관" # 202577530181119526
+  ship_mod_nuclear_submarine_propulsion_medium: "스털링 AIP 기관" # 9938883910949871663
+  ship_mod_nuclear_submarine_propulsion_nuclear: "S5W 원자력 반응로 기관" # 15181827850936053034
+  ship_mod_ztr_radio_direction_finding: "무선 방향 탐지" # 504765110282223718
+  ship_mod_ztr_combat_information_center: "전투 정보 센터" # 11060935202646189790
+  ship_mod_ztr_networked_battle_management: "네트워크 기반 전투 관리" # 6685610648704223582
+  ship_mod_ztr_no_missile_battery: "미사일 포대 없음" # 10406366512924889136
+  ship_mod_ztr_guided_missile_battery: "유도 미사일 포대" # 2710828847486023264
+  ship_mod_ztr_vertical_launch_cells: "수직 발사대" # 10444469886120951636
+  ship_mod_ztr_jet_air_group: "제트기 항공단" # 2307153326743369578
+  ship_mod_ztr_supersonic_air_group: "초음속 항공단" # 2119748134741284317
+  ship_mod_ztr_integrated_air_wing: "통합 항공단" # 7228690703235393323
+  utility_mod_ztr_close_in_weapon_system: "근접 방어 무기 체계" # 773802922752474556
+  utility_mod_ztr_electronic_warfare_suite: "전자전 장비" # 8909014822609662070
+  utility_mod_ztr_replenishment_at_sea: "해상 보급" # 2330426103735193216
+  ship_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
+  ship_ship_type_nuclear_submarine_hull_damage_mult_desc: "$ship_type_nuclear_submarine_desc$" # 16377611638472233102
+  ship_ship_type_modern_destroyer_hull_damage_mult: "$ship_type_modern_destroyer$ $ship_hull_damage_mult$" # 8723697902834015255
+  ship_ship_type_modern_destroyer_hull_damage_mult_desc: "$ship_type_modern_destroyer_desc$" # 12299683279285510088
+  ship_ship_type_modern_cruiser_hull_damage_mult: "$ship_type_modern_cruiser$ $ship_hull_damage_mult$" # 15011784714524327815
+  ship_ship_type_modern_cruiser_hull_damage_mult_desc: "$ship_type_modern_cruiser_desc$" # 13626439497824630566
+  ship_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
+  ship_ship_type_modern_battleship_hull_damage_mult_desc: "$ship_type_modern_battleship_desc$" # 15243136323690654141
+  ship_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
+  ship_ship_type_nuclear_carrier_hull_damage_mult_desc: "$ship_type_nuclear_carrier_desc$" # 1199253534447350472
+  ship_battle_against_ship_type_modern_destroyer_accuracy_mult: "$ship_type_modern_destroyer$ $ship_accuracy_mult$" # 17845953876580439276
+  ship_battle_against_ship_type_modern_cruiser_accuracy_mult: "$ship_type_modern_cruiser$ $ship_accuracy_mult$" # 5837644686576132197
+  ship_battle_against_ship_type_modern_battleship_accuracy_mult: "$ship_type_modern_battleship$ $ship_accuracy_mult$" # 11663134733858502458
+  ship_battle_against_ship_type_nuclear_carrier_accuracy_mult: "$ship_type_nuclear_carrier$ $ship_accuracy_mult$" # 5932690826793964288
+  ship_battle_against_ship_type_nuclear_submarine_accuracy_mult: "$ship_type_nuclear_submarine$ $ship_accuracy_mult$" # 1802842601435403430

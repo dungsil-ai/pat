@@ -773,3 +773,6 @@
   pm_direct_current_large: "직류 송전 (지역)" # 3804445119690468037
   pm_half_current_large: "혼합 전류 송전 (양방향)" # 8120783911676094168
   pm_alternating_current_large: "교류 송전 (범지구)" # 1446452703490143589
+  pm_naval_fortification_radar_batteries: "레이더 유도 해안 포대" # 5847562011458840553
+  pm_naval_fortification_coastal_missile_batteries: "해안 미사일 포대" # 1909285984195154582
+  pm_naval_fortification_integrated_defense_grid: "통합 해안 방어망" # 4588533273429489508
