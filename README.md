@@ -194,7 +194,7 @@ GEMINI_MODEL=gemini-flash-lite-latest
 
 ## 번역 프로세스
 
-1. **Upstream 업데이트**: 최신 소스 파일 다운로드 (sparse checkout 사용). `--mod` 옵션으로 특정 모드만 지정하면 해당 모드의 upstream만 갱신합니다.
+1. **Upstream 업데이트**: 최신 소스 파일 다운로드 (sparse checkout 사용). 특정 모드만 처리하려면 `--mod` 옵션이 아니라 모드명을 positional 인자로 지정합니다(예: `pnpm ck3 RICE`, `pnpm ck3 updateDict RICE ...`). 이 경우 해당 모드의 upstream만 갱신합니다.
 2. **파일 발견**: `meta.toml` 기반 모드 구성 로드
 3. **파싱**: YAML 현지화 파일 파싱 (`l_english` → `l_korean`)
 4. **모드 감지**: 파일명 기반 자동 번역/음역 모드 전환
