@@ -305,6 +305,7 @@
   ship_mod_ztr_radio_direction_finding: "무선 방향 탐지" # 504765110282223718
   ship_mod_ztr_combat_information_center: "전투 정보 센터" # 11060935202646189790
   ship_mod_ztr_networked_battle_management: "네트워크 기반 전투 관리" # 6685610648704223582
+  ship_mod_ztr_simple_missile_battery: "간이 미사일 포대" # 11477468314032515632
   ship_mod_ztr_guided_missile_battery: "유도 미사일 포대" # 2710828847486023264
   ship_mod_ztr_vertical_launch_cells: "수직 발사대" # 10444469886120951636
   ship_mod_ztr_jet_air_group: "제트기 항공단" # 2307153326743369578
@@ -328,7 +329,6 @@
   ship_battle_against_ship_type_modern_battleship_accuracy_mult: "$ship_type_modern_battleship$ $ship_accuracy_mult$" # 11663134733858502458
   ship_battle_against_ship_type_nuclear_carrier_accuracy_mult: "$ship_type_nuclear_carrier$ $ship_accuracy_mult$" # 5932690826793964288
   ship_battle_against_ship_type_nuclear_submarine_accuracy_mult: "$ship_type_nuclear_submarine$ $ship_accuracy_mult$" # 1802842601435403430
-  ship_mod_ztr_simple_missile_battery: "간이 미사일 포대" # 11477468314032515632
   ship_mod_ztr_modern_destroyer_simple_missile_battery: "P-15 테르밋 캐니스터 발사기" # 15205141123885401300
   ship_mod_ztr_modern_destroyer_guided_missile_battery: "RGM-84 하푼 발사기" # 9543436787272522708
   ship_mod_ztr_modern_destroyer_vertical_launch_cells: "Mk 41 수직 발사 셀" # 17879440955622511268
@@ -348,9 +348,9 @@
   unit_combat_unit_type_advanced_tier_marines_offense_mult: "$combat_unit_type_advanced_tier_marines$ $unit_offense_mult$" # 936015177247707258
   unit_combat_unit_type_advanced_tier_marines_offense_mult_desc: "$combat_unit_type_advanced_tier_marines$ $unit_offense_mult$" # 936015177247707258
   unit_combat_unit_type_advanced_tier_marines_defense_mult: "$combat_unit_type_advanced_tier_marines$ $unit_defense_mult$" # 7755331030580688335
-  extra: "호외" # 1397922501206358188
   unit_combat_unit_type_advanced_tier_marines_defense_mult_desc: "$combat_unit_type_advanced_tier_marines$ $unit_defense_mult$" # 7755331030580688335
   combat_unit_type_modern_tier_marines: "현대 해병대" # 9344338042151159955
   combat_unit_type_modern_tier_marines_desc: "신속한 상륙과 지속적인 해안 작전을 수행하도록 장비된 전문 상륙 부대." # 4164789653898445236
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
+  extra: "호외" # 1397922501206358188
