@@ -354,3 +354,4 @@
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
   extra: "호외" # 1397922501206358188
+  DEVELOPING_OWN_NUCLEAR_WEAPONS: "자체 핵무기 개발" # 17629679344431351418

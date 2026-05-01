@@ -75,3 +75,11 @@
   ztr_un_hr_illegalized_slavery_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 노예제#!를 #n 불법화#!하지 않았습니다." # 16879454732413035856
   ztr_un_hr_restricted_labor_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 아동 노동#!을 제한하지 않았습니다." # 14894112425902922775
   ztr_un_hr_compulsory_primary_school_children_rights_tt: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 성명#!은 #v 의무 초등 교육#!을 #n 필수#!로 지정하지 않았습니다." # 7219685078397618886
+  lawgroup_national_electric_system: "전력 체계" # 3299619139275771591
+  lawgroup_national_electric_system_desc: "전기가 지역별 망을 중심으로 조직되는지, 아니면 국가 단위 송전 체계를 따르는지 규정하는 법률입니다." # 12954728668873580276
+  law_no_national_electric_system: "지역 전력 체계" # 6501637580152560928
+  law_no_national_electric_system_desc: "전기가 지역 및 권역별 망을 중심으로 조직된 상태를 유지합니다. 전력 분배는 단순하게 유지되지만, 국가 차원의 균형 조정과 장거리 송전이 필요한 대규모 변동 출력 발전소에 의존할 수 없게 됩니다." # 116455174725695452
+  law_national_electric_system: "국가 전력 체계" # 7104147344065703663
+  law_national_electric_system_desc: "국가 송전 체계가 지역 망을 하나의 통합된 네트워크로 연결합니다. 재생 에너지를 포함한 대형 발전소와 변동 출력원을 고립된 지역 시스템에 과부하를 주지 않고 통합할 수 있습니다." # 17150326704658102946
+  law_modern_national_electric_system: "현대적 국가 전력 체계" # 12463957482861095721
+  law_modern_national_electric_system_desc: "국가 전력망이 현대적이고 고용량인 전력 시스템으로 관리됩니다. 첨단 송전 및 제어 방식을 사용하여 매우 대규모의 유연한 전력 생산을 지원합니다." # 7765494540782712565

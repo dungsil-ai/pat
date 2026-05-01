@@ -199,3 +199,9 @@
   ztr_give_newfoundland_to_canada: "뉴펀들랜드를 캐나다에 양도" # 14885452550580872880
   ztr_give_newfoundland_to_canada_desc: "뉴펀들랜드는 언제나 멀고 다소 고립된 식민지였으며, 캐나다와 강력한 문화적, 경제적 유대를 가져왔습니다. 뉴펀들랜드를 캐나다에 양도함으로써, 우리는 뉴펀들랜드 주민들이 캐나다의 경제 및 사회와 더욱 긴밀하게 통합되어 혜택을 누릴 수 있도록 할 수 있습니다. 이 결정은 또한 우리가 국가의 보다 전략적인 지역에 자원을 집중하는 데 도움이 될 것입니다." # 6830011030636223778
   ztr_eu_join_country_loose_all_subjects_tt: "만약 #v 국가#!가 #blue_value EU#!에 가입한다면, 그 모든 속국은 독립하게 됩니다" # 15886158289666709059
+  start_national_electric_system_conversion_decision: "국가 전력망 전환 시작" # 11837006870526927412
+  start_national_electric_system_conversion_decision_desc: "우리의 지역 전력망은 더 이상 현대적 발전의 규모와 변동성을 감당할 수 없습니다. 전환을 시작하면 국가 전력 시스템이 활성화되기 전에 모든 편입 주에 전력망 발전소를 건설해야 합니다." # 13352258964346666216
+  start_national_electric_system_conversion_decision_tooltip: "#v 국가 전력 시스템#! [concept_journal_entry]을(를) 시작합니다." # 6794005413699342404
+  modernize_national_electric_system_decision: "국가 전력 시스템 현대화" # 9105489095040259269
+  modernize_national_electric_system_decision_desc: "국가 전력망은 이미 우리의 지역 전력 시스템을 하나로 묶고 있습니다. 현대화된 전력 시스템은 고급 송전 관리를 공식화하고 더 크고 유연한 발전을 위해 국가를 준비시킬 것입니다." # 7071343858596198914
+  modernize_national_electric_system_decision_tooltip: "#v 현대적 국가 전력 시스템#!을(를) 활성화합니다." # 7196927741105300459

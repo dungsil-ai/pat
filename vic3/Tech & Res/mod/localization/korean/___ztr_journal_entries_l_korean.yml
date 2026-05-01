@@ -472,3 +472,12 @@
   ztr_global_decolonization_pressure_bar: "세계적 자결 압력" # 17261957134431361430
   ztr_global_decolonization_pressure_bar_desc: "세계적 자결 압력: #v [GetGlobalVariable('ztr_global_decolonization_pressure_var').GetValue|0]#!" # 9266828288952885871
   someone_has_discovered_decolonization_tech_tt: "#v 누군가#!가 #gold_value 탈식민지화#! #v 기술#!을 발견했습니다." # 1512041611024505854
+  je_national_electric_system: "국가 전력망" # 7104147344065703663
+  je_national_electric_system_reason: "국가 전력망은 #gold_value 국가 전력망#! 단독의 법령으로 선포될 수 없습니다. 지역 네트워크는 조정된 송전망과 연결되어야 하며, 변전소는 전국에 전력을 수신하고 재분배할 수 있어야 합니다.\n\n#v 전환 진행도#!: #v [ROOT.GetCountry.MakeScope.Var('ztr_nes_states_with_grid_var').GetValue|0]#! / #v [ROOT.GetCountry.MakeScope.Var('ztr_nes_states_total_var').GetValue|0]#! 개의 편입된 주가 최소 하나의 #v $building_power_grid_station$#! [concept_building]을(를) 보유하고 있습니다.\n\n#v 전력망 변전소가 없는 편입된 주#!:\n[GetScriptedGui('je_national_electric_system_missing_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 13135088755060952501
+  je_national_electric_system_goal: "모든 편입된 주는 최소 하나의 #v $building_power_grid_station$#! [concept_building]을(를) 보유해야 합니다." # 10872451244483908528
+  je_national_electric_system_status: "지역 전력 시스템에서 국가 전력망으로의 전환이 진행 중입니다." # 8832721053848508886
+  je_national_electric_system_complete_tt: "모든 편입된 주가 최소 하나의 #v $building_power_grid_station$#! [concept_building]을(를) 보유하고 있습니다." # 7067632188230308746
+  JE_NATIONAL_ELECTRIC_SYSTEM_MISSING_STATE_ENTRY: "#v [THIS.GetState.GetName]#!" # 14334350929282365095
+  JE_NATIONAL_ELECTRIC_SYSTEM_NO_MISSING_STATES: "\n#v 전력망 변전소가 없는 편입된 주가 없습니다.#!" # 4322313212502196226
+  national_electric_system_transition_boost: "전력망 통합 급증" # 13711403499166297956
+  national_electric_system_transition_boost_desc: "국가 전력망의 완성으로 지역 네트워크가 표준화되고 운영자가 국가 차원의 배전에 적응함에 따라 전력망 효율성이 일시적으로 급증했습니다." # 5927531258518991817
