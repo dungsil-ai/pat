@@ -199,6 +199,7 @@
   ztr_merge_power_bloc_diplomacy_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]으로부터 $ztr_merge_power_bloc_diplomacy$를 거절당했습니다." # 137099496714189416
   ztr_similar_type_of_government_tt: "비슷한 [Concept('concept_ideology','$concept_ideology$')]를 가지고 있습니다." # 2794886697244342428
   HOSTILE_NUCLEAR_NEIGHBOUR: "#negative_value 적대적#! 핵 이웃" # 5310339023016893041
+  DEVELOPING_OWN_NUCLEAR_WEAPONS: "자체 핵무기 개발" # 17629679344431351418
   imf_modernization_research_bonus_modifier: "지속적인 근대화" # 15495412835571883962
   imf_modernization_research_bonus_modifier_desc: "IMF 근대화 목표를 달성함에 따라, 우리의 더 강력한 제도와 더 넓은 교육 기반이 이제 국가 연구를 가속합니다." # 7401326234138901467
   extreme_imf_help_modifier: "IMF 개입" # 4219385685124753401
@@ -354,4 +355,3 @@
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
   extra: "호외" # 1397922501206358188
-  DEVELOPING_OWN_NUCLEAR_WEAPONS: "자체 핵무기 개발" # 17629679344431351418
