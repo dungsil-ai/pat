@@ -227,6 +227,7 @@
   ztr_ccp_mass_line_campaign: "공산주의 대중 노선" # 13142328998336719798
   ztr_ccp_united_front_campaign: "항일민족통일전선" # 15860789598692665030
   ztr_ccp_long_march_legacy: "대장정" # 12655507841875296042
+  ztr_has_subject_or_decolonizing_colonial_state_tt: "#v 속국#! 또는 #gold_value 본토 문화#!를 보유하고 있으며 탈식민지화를 원하는 [ztr_concept_colonial_state]을(를) 가지고 있음" # 2472681735199936670
   dev_0_country: "빈곤국 (0.0-0.7)" # 708956771100379025
   dev_1_country: "저개발 국가 (0.7-1.5)" # 10300701184869704493
   dev_2_country: "개발도상국 (1.5-2.5)" # 14676741617938985556
@@ -353,4 +354,3 @@
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
   extra: "호외" # 1397922501206358188
-  ztr_has_subject_or_decolonizing_colonial_state_tt: "#v 속국#! 또는 #gold_value 본토 문화#!를 보유하고 있으며 탈식민지화를 원하는 [ztr_concept_colonial_state]을(를) 가지고 있음" # 2472681735199936670

@@ -458,6 +458,7 @@
   ztr_un_major_power_against_vote_display_rank_9_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_9_var').GetCountry.GetName]\n" # 1042136284466989105
   ztr_un_major_power_against_vote_display_rank_10_loc: "[GetGlobalVariable('ztr_un_major_power_against_vote_display_rank_10_var').GetCountry.GetName]\n" # 12775703550663148633
   je_decolonization: "자결의 바람" # 5645870091600231748
+  je_decolonization_reason: "#v 제국#!의 시대가 저물고 있습니다. 전 세계적으로 민중은 #v 민족 자결주의#!를 요구하고 있고, #blue_value 국제기구#!들은 제국 통치의 정통성에 의문을 제기하며, 해외 영토를 유지하는 비용은 점점 늘어나고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 시대의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 거세지는 반란과 국제적 비난에 직면할 것인지, 아니면 변화를 주도하여 가능한 한 영향력을 보존할 것인지 선택해야 합니다.\n\n#n 민족 자결주의 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 #v 속국#!의 [concept_liberty_desire]이 증가하며, #v 식민지 주#!가 요구하는 #v 민족 자결주의#!의 결과는 더욱 중대해집니다.\n\n[ztr_concept_colonial_state]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 18068372177285749913
   je_decolonization_goal: "모든 비유럽권 [Concept('concept_subject','$concept_subjects$')]이(가) 독립을 쟁취합니다." # 11720223291895509416
   je_decolonization_status_low: "제국 통치가 국제적으로 여전히 폭넓게 인정받고 있으나, 변화의 초기 징후가 나타나고 있습니다." # 15388327234338759004
   je_decolonization_status_rising: "식민지의 민족주의 운동이 탄력을 받고 있습니다. 국제 여론이 제국 통치에 반대하는 방향으로 기울고 있습니다." # 5328162661962503005
@@ -471,4 +472,3 @@
   ztr_global_decolonization_pressure_bar: "세계적 자결 압력" # 17261957134431361430
   ztr_global_decolonization_pressure_bar_desc: "세계적 자결 압력: #v [GetGlobalVariable('ztr_global_decolonization_pressure_var').GetValue|0]#!" # 9266828288952885871
   someone_has_discovered_decolonization_tech_tt: "#v 누군가#!가 #gold_value 탈식민지화#! #v 기술#!을 발견했습니다." # 1512041611024505854
-  je_decolonization_reason: "#v 제국#!의 시대가 저물고 있습니다. 전 세계적으로 민중은 #v 민족 자결주의#!를 요구하고 있고, #blue_value 국제기구#!들은 제국 통치의 정통성에 의문을 제기하며, 해외 영토를 유지하는 비용은 점점 늘어나고 있습니다.\n\n[ROOT.GetCountry.GetName]은 이러한 시대의 흐름을 신중하게 헤쳐 나가야 합니다. 저항하여 거세지는 반란과 국제적 비난에 직면할 것인지, 아니면 변화를 주도하여 가능한 한 영향력을 보존할 것인지 선택해야 합니다.\n\n#n 민족 자결주의 압력#!은 식민 제국 해체를 향한 국내외의 커지는 동력을 측정합니다. 압력이 높아질수록 #v 속국#!의 [concept_liberty_desire]이 증가하며, #v 식민지 주#!가 요구하는 #v 민족 자결주의#!의 결과는 더욱 중대해집니다.\n\n[ztr_concept_colonial_state]:\n[GetScriptedGui('je_decolonization_colonial_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]" # 18068372177285749913

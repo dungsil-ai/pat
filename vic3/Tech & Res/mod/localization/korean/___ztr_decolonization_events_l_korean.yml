@@ -329,6 +329,8 @@
   ztr_decolonization_phases.12.b: "인구가 자유롭게 성장하도록 둔다." # 1530756051085536210
   colony_pop.2.t: "식민지 인구 구조 변화" # 10851206252757220102
   colony_pop.2.d: "우리 식민지 영토 전역에서 조용한 혁명이 진행 중입니다. 깨끗한 물 공급 프로그램, 기본적인 예방 접종 캠페인, 위생 개선과 같은 초기 공중 보건 조치들이 원주민 인구의 사망률을 낮추기 시작했습니다. 그 효과는 미미하지만 분명합니다. 영아기를 넘기는 아이들이 많아지고, 생산 연령에 도달하는 노동자가 늘어나며, 인구가 꾸준히 증가하고 있습니다.\n\n더 적고 분산된 인구를 다스리기 위해 설계된 식민지 기구는, 머지않아 자신이 통제하기 위해 만들어진 바로 그 사람들에 의해 압도당할지도 모릅니다." # 11482228472343155633
+  ztr_decolonization_phases_11_a_effect_tt: "일부 [ztr_concept_colonial_state] 인구가 #v 20년#! 동안 약간 더 빠르게 증가합니다." # 9606335980956521298
+  ztr_decolonization_phases_11_b_effect_tt: "일부 [ztr_concept_colonial_state] 인구가 #v 20년#! 동안 더 빠르게 증가합니다." # 14102771236205672785
   ztr_decolonization_phases_12_a_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 약간 더 빠르게 증가하며 [concept_liberty_desire]이(가) #n 10#!만큼 증가합니다." # 16626251509929238583
   ztr_decolonization_phases_12_b_effect_tt: "일부 [concept_subject] 인구가 #v 20년#! 동안 더 빠르게 성장합니다." # 15068891164592752221
   colony_pop_2_a_effect_tt: "일부 #v 식민지 주#! 인구가 #v 5년#! 동안 더 빠르게 성장합니다." # 10662780737091349664
@@ -550,10 +552,14 @@
   ztr_decolonization_slavery.1.d: "[Concept('concept_united_nations','$concept_united_nations$')]의 #v 노예제 금지#! 조치로 인해 우리는 [SCOPE.sState('overlord_slavery_state').GetName]의 불편한 진실을 마주하게 되었습니다. 토착 지배자들이 수 세대 동안 유지해 온 토착 노예 관습이 우리의 식민 행정 하에서도 지속되고 있었던 것입니다. 우리는 현지 엘리트들의 협조를 유지하고 영토를 통치하기 위한 조용한 타협으로서 안정을 위해 이를 묵인해 왔습니다.\n\n하지만 이제 전 세계가 우리를 지켜보고 있습니다. 노예제 폐지론자들은 행동을 요구하고, 식민지 로비 단체는 강제 집행이 지역을 불안정하게 만들 것이라 경고합니다. 우리는 전면적으로 폐지할지, 아니면 현지 관습에 예외를 둘지 결정해야 합니다." # 15702376074104267170
   ztr_decolonization_slavery.1.a: "예외 없이 전면적으로 금지를 집행한다" # 9221679480519388892
   ztr_decolonization_slavery.1.b: "안정을 유지하기 위해 문화적 예외를 인정한다" # 9327909379270056898
+  ztr_decolonization_slavery_1_a_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!가 발생하고, 주류 문화가 아닌 본토 문화권은 #v 열의#!를 얻습니다." # 9808133016030549590
+  ztr_decolonization_slavery_1_b_effect_tt: "[ztr_concept_colonial_state]에서 #p 충성파#!를 얻습니다." # 3326531912693398463
   ztr_decolonization_slavery.2.t: "대규모 해방" # 6821704516432556695
   ztr_decolonization_slavery.2.d: "[SCOPE.sState('liberation_state').GetName]에 해방령이 선포되었고, 수천 명의 새로 해방된 노예들이 일자리와 거처, 그리고 평생 박탈당했던 미래를 찾아 도시로 몰려들고 있습니다. 경매로 헤어졌던 가족들이 거리에서 재회하고, 과거의 노예들이 공공 광장에서 눈물을 흘립니다.\n\n하지만 이러한 환희 뒤에는 위기가 도사리고 있습니다. 해방된 이들에게는 아무것도 없습니다. 토지도, 저축도, 법적 지위도 없습니다. 식민지 인프라는 유입되는 인구로 인해 붕괴 직전이며, 신중한 전환 없이는 해방이 그들을 쇠사슬에서 풀어주는 대신 빈곤의 구렁텅이로 몰아넣을 수도 있습니다." # 7859327274128439470
   ztr_decolonization_slavery.2.a: "해방된 이들을 위한 재정착 프로그램에 투자한다" # 1459465529632964754
   ztr_decolonization_slavery.2.b: "그들은 자유입니다. 그것으로 충분할 것입니다." # 15812918068318473609
+  ztr_decolonization_slavery_2_a_effect_tt: "[ztr_concept_colonial_state]에서 #p 충성파#!를 얻습니다." # 3326531912693398463
+  ztr_decolonization_slavery_2_b_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!를 얻습니다." # 4729929547451742812
   ztr_decolonization_slavery.3.t: "노예 소유주의 저항" # 8466431951583162147
   ztr_decolonization_slavery.3.d: "[SCOPE.sState('defiance_state').GetName]의 플랜테이션 지주 계층이 선을 넘었습니다. 노예제 폐지령에 직면한 노예 소유주들은 무장 저항을 조직했습니다. 민병대가 플랜테이션 도로를 순찰하고, 지주들에게 동조하는 식민지 치안 판사들은 법 집행을 거부하고 있습니다.\n\n일부는 공공연히 분리 독립을 거론합니다. 그들은 지역의 부와 노동 네트워크, 그리고 무장한 가신들의 충성을 장악하고 있습니다. 식민지 수비대는 수적으로 열세이며 명령을 확신하지 못하고 있습니다. 폐지령을 강제하려면 증원군이 필요하고, 협상하려면 타협이 필요합니다." # 1593935263885280754
   ztr_decolonization_slavery.3.a: "총검을 앞세워 법을 집행할 것입니다." # 13140547672867921630
@@ -562,11 +568,5 @@
   ztr_decolonization_slavery.4.d: "[SCOPE.sState('freedmen_state').GetName]의 해방 노예 대표단이 수천 명의 표식과 서명이 담긴 청원서를 제출했습니다. 그들은 약속되었으나 이행되지 않은 것들, 즉 그들 자신의 토지와 자녀들을 위한 학교, 그리고 법 앞에서의 평등한 지위를 요구합니다.\n\n청원서는 품위 있고 절제되어 있지만, 그 뒤에는 종이 위의 자유는 그것을 유지할 수단이 없다면 아무런 의미가 없다는 것을 뼈저린 경험을 통해 배운 공동체가 있습니다. 그들의 지도자들은 유창하고, 그들의 주장은 정당하며, 전 세계가 지켜보고 있습니다." # 5288621425267054143
   ztr_decolonization_slavery.4.a: "토지와 교육을 제공하십시오. 우리는 그들에게 그 정도는 빚지고 있습니다." # 16459074606556888255
   ztr_decolonization_slavery.4.b: "상징적인 제스처만 제공하십시오. 우리의 국고는 바닥이 없습니다." # 10577088694464914637
-  ztr_decolonization_phases_11_a_effect_tt: "일부 [ztr_concept_colonial_state] 인구가 #v 20년#! 동안 약간 더 빠르게 증가합니다." # 9606335980956521298
-  ztr_decolonization_phases_11_b_effect_tt: "일부 [ztr_concept_colonial_state] 인구가 #v 20년#! 동안 더 빠르게 증가합니다." # 14102771236205672785
-  ztr_decolonization_slavery_1_a_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!가 발생하고, 주류 문화가 아닌 본토 문화권은 #v 열의#!를 얻습니다." # 9808133016030549590
-  ztr_decolonization_slavery_1_b_effect_tt: "[ztr_concept_colonial_state]에서 #p 충성파#!를 얻습니다." # 3326531912693398463
-  ztr_decolonization_slavery_2_a_effect_tt: "[ztr_concept_colonial_state]에서 #p 충성파#!를 얻습니다." # 3326531912693398463
-  ztr_decolonization_slavery_2_b_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!를 얻습니다." # 4729929547451742812
   ztr_decolonization_slavery_4_a_effect_tt: "[ztr_concept_colonial_state]에서 #p 충성파#!를 얻습니다." # 3326531912693398463
   ztr_decolonization_slavery_4_b_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!를 얻습니다." # 4729929547451742812
