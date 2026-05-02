@@ -3,17 +3,14 @@
   javanese_religion_adj: "자바" # 4174511434741121401
   javanese_religion_adherent: "자바교" # 3829054780187378644
   javanese_religion_adherent_plural: "자바 교도들" # 12692654187057410496
-  javanese_religion_desc: "자연 숭배, 조상 숭배, 정령 신앙 등을 공통적으로 특징으로 하는 많은 토착 신앙들은 다양한 형태의 이교로 간주됩니다." # 18292129404656755894
   javanist: "커자왠" # 11832813851547576593
   javanist_adj: "커자왠" # 11832813851547576593
   javanist_adherent: "크자웬주의자" # 4733559793319347748
   javanist_adherent_plural: "게자웨니즘 신봉자들" # 15553678299842349747
-  javanist_desc: "자연 숭배, 조상 숭배, 정령 신앙을 공통적으로 특징으로 하는 많은 토착 신앙은 다양한 형태의 이교로 여겨집니다." # 18292129404656755894
   javanist_old: "옛 크자웬" # 18134507589917633985
   javanist_old_adj: "옛 크자웬" # 18134507589917633985
   javanist_old_adherent: "고대 크자웬" # 4088535857558084838
   javanist_old_adherent_plural: "구 크자웬교도" # 17335765297663230964
-  javanist_old_desc: "자연 숭배, 조상 숭배, 정령 신앙을 공통적으로 특징으로 하는 많은 토착 신앙은 다양한 형태의 이교로 여겨집니다." # 18292129404656755894
   javanist_high_god_name: "대지 어머니" # 4585949624417046126
   javanist_high_god_name_possessive: "대지의 어머니의" # 5767343543068993579
   javanist_high_god_name_alternate: "가이아" # 4051307162386856358
@@ -136,3 +133,6 @@
   jatisunda_afterlife: "카하양" # 7805962033874176083
   jatisunda_positive_afterlife: "카하양" # 7805962033874176083
   jatisunda_negative_afterlife: "부아나 라랑" # 13753168477789385075
+  javanese_religion_desc: "자바섬의 토착 신앙에는 자연계와 인공 세계 모두에 깃든 조상신을 숭배하는 관습이 포함되어 있습니다. 이러한 신앙은 외래의 새로운 종교 사상으로부터 부분적으로 영향을 받게 되었습니다." # 13994684998577125319
+  javanist_desc: "$javanese_religion_desc$" # 5405923397943098447
+  javanist_old_desc: "$javanese_religion_desc$" # 5405923397943098447
