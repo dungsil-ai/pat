@@ -495,3 +495,8 @@
   modern_battleships_desc: "현대식 전함 계획은 대형 수상 전투함을 유도 무기, 첨단 지휘 체계 및 원양 함대 작전에 적합하도록 개조합니다." # 8491069795675948124
   national_power_grid_start_conversion_tt: "@warning! #v 지역 전력망#!에서 #gold_value 국가 전력망#!으로의 전환을 시작하는 [concept_decision]을(를) 잠금 해제합니다." # 7903320915245155733
   national_power_grid_modernize_electric_system_tt: "@warning! #gold_value 국가 전력망#!을(를) 개선하는 [concept_decision]을(를) 잠금 해제합니다." # 10836961100655516502
+  advanced_ores_mining_deposits_visible_tt: "@warning! [Concept('concept_good','고급 광석')] 매장지가 지도에 표시됩니다." # 1765406239882244114
+  bauxite_mining_deposits_visible_tt: "@warning! [Concept('concept_good','보크사이트')] 매장지가 지도에 표시됩니다." # 8366116572529726027
+  uranium_mining_deposits_visible_tt: "@warning! [Concept('concept_good','우라늄')] 매장지가 지도에 표시됩니다." # 16818952287605069089
+  rare_earths_mining_deposits_visible_tt: "@warning! [Concept('concept_good','희토류')] 매장지가 지도에 표시됩니다." # 8861248806273375254
+  smart_energy_grid_fusion_reactor_program_tt: "@warning! #gold_value 핵융합 반응로 프로그램#!을 시작할 수 있는 [concept_decision]을 잠금 해제합니다." # 15832163831875178906
