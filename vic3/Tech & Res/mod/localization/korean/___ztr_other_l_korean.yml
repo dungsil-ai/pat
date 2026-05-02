@@ -267,6 +267,7 @@
   ztr_unify_countries_accept_effect_tt: "[SCOPE.sCountry('target_country').GetName]의 모든 [Concept('concept_state','주')]가 우리에게 이전되며, [SCOPE.sCountry('target_country').GetName]은(는) 주권 국가로서 해체됩니다." # 8029827105790821525
   ztr_tooltip_countries_share_primary_culture: "우리는 그들과 [Concept('concept_culture','$concept_culture$')]을(를) 공유합니다." # 16386706001946949364
   ztr_tooltip_countries_state_contiguity: "우리는 그들의 주와 접해 있거나 겹치는 본토 주를 소유하고 있습니다." # 15573721804579337177
+  ztr_tooltip_both_not_totalitarian: "두 국가 모두 #n 전체주의#!가 아닙니다." # 15208378740411282318
   ztr_tooltip_countries_have_cultural_or_relations_ground: "우리는 [Concept('concept_culture','$concept_culture$')]을(를) 공유하며 그들과 최소 #v 중립#! 이상의 관계를 유지하고 있습니다." # 4973520652305543524
   ztr_tooltip_countries_can_unify: "모든 통합 선결 조건이 충족되었습니다: 대상이 소규모 이웃 국가이고, 우리가 [Concept('concept_prestige','$concept_prestige$')] 면에서 그들보다 우위에 있으며, 문화적, 종교적, 또는 관계적 기반을 갖추었고, 정치적 성향이 충돌하지 않습니다." # 611555535838161004
   ztr_unified_country_integration: "통합 국가 합병" # 17884141130842282463
@@ -354,6 +355,5 @@
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
   extra: "호외" # 1397922501206358188
-  ztr_tooltip_both_not_totalitarian: "두 국가 모두 #n 전체주의#!가 아닙니다." # 15208378740411282318
   ztr_swiss_neutral_financial_hub: "중립적 금융 허브" # 7435698664851519347
   ztr_swiss_neutral_financial_hub_desc: "스위스의 중립성과 연방 다원주의, 그리고 안전한 회담 장소라는 명성은 유럽 전역의 자본과 채권자, 상업적 신뢰를 끌어모으고 있습니다." # 9479597905821198894
