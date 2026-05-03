@@ -3,6 +3,7 @@
   austronesian_religion_adj: "말레이" # 14059808318559532084
   austronesian_religion_adherent: "말레이시아학자" # 11232563709343925011
   austronesian_religion_adherent_plural: "말레이시아인들" # 1513433729457813435
+  austronesian_religion_desc: "말레이어를 사용하는 민족들은 전통적으로 정령 신앙을 따릅니다. 자연 및 조상과의 긴밀한 관계는 이러한 고대 신앙의 공통적인 측면입니다." # 6012243313140148378
   austronesian_high_god_name: "바탈라" # 9511133446308642001
   austronesian_high_god_name_possessive: "바탈라의" # 7757479342798412609
   austronesian_high_god_name_alternate: "라온" # 14827183756447080934
@@ -135,10 +136,12 @@
   malayic_adj: "케푸양안" # 10403399845281117747
   malayic_adherent: "페메르차야" # 18322202300205452752
   malayic_adherent_plural: "페메르카야스" # 5032326923912588074
+  malayic_desc: "$austronesian_religion_desc$" # 6326195758638568295
   malayic_old: "옛 케푸양안" # 14029341375352989412
   malayic_old_adj: "옛 케푸양안" # 14029341375352989412
   malayic_old_adherent: "오래된 페메르차야" # 6670449298867545033
   malayic_old_adherent_plural: "오래된 페메르카야스" # 16840944937410930719
+  malayic_old_desc: "$austronesian_religion_desc$" # 6326195758638568295
   malayic_high_god_name: "상향 권력" # 4845468246789893589
   malayic_high_god_name_possessive: "상향의" # 11864244484271393778
   malayic_high_god_name_alternate: "전능하신 분" # 5066358929301427591
@@ -451,6 +454,3 @@
   umboh_afterlife: "저승" # 7530084063564594911
   umboh_bishop: "족장 산드로" # 14827535339852662525
   umboh_bishop_plural: "족장 산드로스" # 12139554486386716107
-  austronesian_religion_desc: "말레이어를 사용하는 민족들은 전통적으로 정령 신앙을 따릅니다. 자연 및 조상과의 긴밀한 관계는 이러한 고대 신앙의 공통적인 측면입니다." # 6012243313140148378
-  malayic_desc: "$austronesian_religion_desc$" # 6326195758638568295
-  malayic_old_desc: "$austronesian_religion_desc$" # 6326195758638568295
