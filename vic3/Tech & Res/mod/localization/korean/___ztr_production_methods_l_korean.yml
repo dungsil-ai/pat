@@ -792,5 +792,5 @@
   pm_oil-fired_plant_3: "석유 화력 발전소" # 16013754538677171808
   pm_gas-fired_plant_3: "가스 화력 발전소" # 8158444127086869324
   pm_nuclear-fission_plant_3: "핵분열 발전소" # 7432757473815202239
-  pm_geothermal_turbine_2: "지열 터빈 (혼합 그리드)" # 9581999764951216014
   pm_geothermal_turbine_3: "지열 터빈" # 4854560334655354025
+  pm_geothermal_turbine_2: "지열 터빈" # 4854560334655354025
