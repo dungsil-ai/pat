@@ -1,4 +1,5 @@
-import { access, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { constants as fsConstants } from 'node:fs'
+import { access, lstat, mkdir, open, readdir, readFile, stat, writeFile } from 'node:fs/promises'
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { basename, dirname, join } from 'pathe'
@@ -162,6 +163,12 @@ async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModW
 
 async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFileHashMap> {
   try {
+    const hashFileStat = await lstat(hashFilePath)
+    if (!hashFileStat.isFile()) {
+      log.warn(`업스트림 파일 해시 읽기를 건너뜁니다. 일반 파일이 아닙니다: ${hashFilePath}`)
+      return {}
+    }
+
     const content = await readFile(hashFilePath, 'utf-8')
     const parsed = JSON.parse(content)
     if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
@@ -178,7 +185,40 @@ async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFil
 }
 
 async function writeUpstreamFileHashes(hashFilePath: string, hashes: UpstreamFileHashMap): Promise<void> {
-  await writeFile(hashFilePath, `${JSON.stringify(hashes, null, 2)}\n`, 'utf-8')
+  const hashContent = `${JSON.stringify(hashes, null, 2)}\n`
+
+  try {
+    const existingFileStat = await lstat(hashFilePath)
+    if (!existingFileStat.isFile()) {
+      log.warn(`업스트림 파일 해시 저장을 건너뜁니다. 일반 파일이 아닙니다: ${hashFilePath}`)
+      return
+    }
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
+      throw error
+    }
+  }
+
+  try {
+    const fileHandle = await open(
+      hashFilePath,
+      fsConstants.O_WRONLY | fsConstants.O_CREAT | fsConstants.O_TRUNC | fsConstants.O_NOFOLLOW,
+      0o644
+    )
+
+    try {
+      await fileHandle.writeFile(hashContent, 'utf-8')
+    } finally {
+      await fileHandle.close()
+    }
+  } catch (error) {
+    const errorCode = (error as NodeJS.ErrnoException).code
+    if (errorCode === 'ELOOP') {
+      log.warn(`업스트림 파일 해시 저장을 건너뜁니다. 심볼릭 링크는 허용되지 않습니다: ${hashFilePath}`)
+      return
+    }
+    throw error
+  }
 }
 
 export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
