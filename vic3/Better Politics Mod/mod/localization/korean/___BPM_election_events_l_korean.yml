@@ -1,9 +1,9 @@
 ﻿l_korean:
   bpm_election_events.1.t: "임명에 관한 문제" # 14502981689216355543
-  bpm_election_events.1.d: "선거가 막 끝남에 따라, [SCOPE.sCharacter('bpm_new_ruler_scope').GetLastNameNoFormatting] 내각은 내각을 구성하고 일련의 새로운 행정부 임명을 단행해야 할 과업에 착수해야 합니다. 누가 선택되느냐는 이번 행정부의 비전 속에서 어떤 이익 집단이 최우선 순위를 차지하는지를 보여줄 것입니다." # 7850925632574710051
-  bpm_election_events.1.f: "\"국무장관의 자격 요건이 무엇이겠는가? 그는 법률, 정부, 역사에 박식한 만물박식가여야 한다. 우리의 모든 지상 우주가 그의 정신 속에 요약되어 이해되어야 한다.\"\n\n—존 애덤스, 1811년" # 1774090241920824291
-  bpm_election_events.1.a: "사업 친화적인 임명자를 선택하십시오" # 7830456622357126791
-  bpm_election_events.1.b: "농촌 이해집단에서 임명하기" # 11259927211448650298
-  bpm_election_events.1.c: "노동 친화적인 임명자를 선택하십시오" # 15151672800275765358
-  bpm_election_events.1.e: "노련한 관료를 임명하시오" # 2325888236499001450
   bpm_favored_cabinet_picks: "내각 인사에서 선호받는 것" # 16705294161154196
+  bpm_election_events.1.d: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 새 정부는 내각을 구성하고 일련의 새로운 행정직을 임명하는 과업에 착수해야 합니다. 정부는 어떤 전략을 취해야 할까요?" # 11188506822286110910
+  bpm_election_events.1.f: "@information! #bold 이는 자동 내각 임명에 영향을 미칩니다.\n이벤트 이후 언제든지 [concept_character]를 우클릭하고 #yellow 캐릭터 상호작용#!을 사용하여 내각 구성원을 수동으로 변경할 수 있습니다.#!" # 16531794035475519130
+  bpm_election_events.1.a: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 친구들을 임명합니다" # 6450005682020452372
+  bpm_election_events.1.b: "안정적인 인사를 선택합니다" # 1530292757233398838
+  bpm_election_events.1.c: "떠오르는 신예들을 임명합니다" # 9273951212531885879
+  bpm_election_events.1.e: "기성 정치인들을 임명합니다" # 11028120412418327201

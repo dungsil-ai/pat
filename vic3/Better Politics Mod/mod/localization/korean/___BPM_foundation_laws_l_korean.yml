@@ -59,3 +59,5 @@
   bpm_unappoint_pm_effect_tt: "[Character.GetFullName] 님이 $bpm_hog_title_default$ 직을 그만둡니다" # 10677473900540435472
   country_bpm_hog_inst: "[GetPlayer.GetCustom('bpm_institutional_appointment')]" # 4728199502823480892
   country_bpm_hog_inst_desc: "[GetPlayer.GetCustom('bpm_institutional_appointment_desc')]" # 15681474350580658079
+  bpm_ideologically_aligned_with_hog: "$bpm_hog_title_default$와(과) 이념적으로 일치함" # 990260951980217526
+  bpm_ideologically_aligned_with_ruler: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]와(과) 이념적으로 일치함" # 7051306912321678475

@@ -1,176 +1,165 @@
 ﻿l_korean:
-  bpm_schools_fallback_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_agpops_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_anarchists_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_cons_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_fash_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_libs_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_putsch_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_lefts_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_commies_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_military_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_pb_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_devout_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_capis_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_intel_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_ruries_modifier: "교육 대신" # 9376263642099745338
-  bpm_schools_unions_modifier: "교육 대신" # 9376263642099745338
-  bpm_colonial_affairs_cons_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_fash_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_libs_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_neutralidg_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_lefts_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_military_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_pb_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_devout_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_neutraling_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_colonial_affairs_attract_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_social_security_rursocs_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_cons_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_liberals_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_lefts_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_commies_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_neutraling_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_pb_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_devout_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_capis_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_ruries_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_social_security_unions_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_police_agpops_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_cons_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_fash_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_liberals_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_lefts_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_commies_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_military_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_pb_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_devout_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_capis_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_aris_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_intel_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_ruries_modifier: "경찰청장" # 9930558593018803093
-  bpm_police_unions_modifier: "경찰청장" # 9930558593018803093
-  bpm_workplace_safety_agpops_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_neutralidg_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_lefts_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_commies_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_ruries_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_unions_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_workplace_safety_neutraling_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_home_affairs_agpops_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_leftists_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_cons_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_reacs_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_liberals_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_pseudoleft_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_military_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_pb_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_neutraling_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_capis_modifier: "내무대신" # 986995580972899318
-  bpm_home_affairs_intel_modifier: "내무대신" # 986995580972899318
-  bpm_centralization_agpops_modifier: "지방부 장관" # 6617905624295737121
-  bpm_centralization_cons_modifier: "지방부 장관" # 6617905624295737121
-  bpm_centralization_libs_modifier: "지방부 장관" # 6617905624295737121
-  bpm_centralization_neutralidg_modifier: "지방부 장관" # 6617905624295737121
-  bpm_centralization_neutraling_modifier: "지방부 장관" # 6617905624295737121
-  bpm_culture_fash_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_natlibs_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_neutralidg_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_neutraling_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_liberal_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_populist_modifier: "문화부 장관" # 1317663932768865388
-  bpm_culture_reactionary_modifier: "문화부 장관" # 1317663932768865388
-  bpm_health_system_agpops_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_anarchists_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_centrists_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_lefts_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_commies_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_neutraling_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_military_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_pb_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_devout_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_capis_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_ruries_modifier: "보건부 장관" # 15197578225977099967
-  bpm_health_system_unions_modifier: "보건부 장관" # 15197578225977099967
-  bpm_suffrage_agpops_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_anarchists_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_cons_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_neutralidg_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_lefts_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_commies_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_neutraling_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_capis_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_aris_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_intel_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_ruries_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_suffrage_unions_modifier: "선거관리위원장" # 4732381162928650165
-  bpm_diplomacy_anarchists_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_socs_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_agpops_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_libs_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_natlibs_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_marlibs_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_cons_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_reacs_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_fash_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_neutraling_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_military_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_bureaucrats_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_capis_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_rf_modifier: "외무 대신" # 4286040881973002323
-  bpm_diplomacy_tu_modifier: "외무 대신" # 4286040881973002323
-  bpm_schools_attraction_modifier: "교육 대신" # 9376263642099745338
-  bpm_colonial_affairs_attraction_modifier: "식민지 사무 대신" # 4785523556165147165
-  bpm_social_security_attraction_modifier: "사회 보장 장관" # 3390356715852177606
-  bpm_police_attraction_modifier: "경찰청장" # 9930558593018803093
-  bpm_workplace_safety_attraction_modifier: "산업 안전 담당 대신" # 1768906343676241968
-  bpm_home_affairs_attraction_modifier: "내무대신" # 986995580972899318
-  bpm_centralization_attraction_modifier: "지방부 장관" # 6617905624295737121
-  bpm_culture_attraction_modifier: "문화부 장관" # 1317663932768865388
-  bpm_health_system_attraction_modifier: "보건부 장관" # 15197578225977099967
-  bpm_suffrage_attraction_modifier: "선거관리위원장" # 4732381162928650165
-  institution_cabinet_suffrage_threshold_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_anarchists_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_agpops_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_socialists_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_industrialists_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_landowners_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
-  institution_cabinet_suffrage_intel_workaround: "참정권 내각 임시 해결책" # 7987575782000685098
+  bpm_schools_fallback_modifier: "교육부" # 11263688690073327507
+  bpm_schools_agpops_modifier: "농본주의 교육" # 9104242911231777630
+  bpm_schools_anarchists_modifier: "아나키스트 교육" # 9237151066857357296
+  bpm_schools_cons_modifier: "보수주의 교육" # 10534205401591235875
+  bpm_schools_fash_modifier: "파시스트 교육" # 7455945011340434800
+  bpm_schools_libs_modifier: "자유주의 교육" # 4798715523221267403
+  bpm_schools_putsch_modifier: "쿠데타주의 교육" # 2297641847602216663
+  bpm_schools_lefts_modifier: "사회주의 교육" # 4397100217412427480
+  bpm_schools_commies_modifier: "공산주의 교육" # 5226683474549349385
+  bpm_schools_military_modifier: "군사 교육" # 17525913090525005636
+  bpm_schools_pb_modifier: "쁘띠 부르주아 교육" # 11737395165619898660
+  bpm_schools_devout_modifier: "종교 교육" # 2890836068330305293
+  bpm_schools_capis_modifier: "자본주의 교육" # 9531763948233090048
+  bpm_schools_intel_modifier: "지식인 교육" # 8808984245261441022
+  bpm_schools_ruries_modifier: "농촌 교육" # 6190257601452954124
+  bpm_schools_unions_modifier: "노동조합 교육" # 6546276199224499819
+  bpm_colonial_affairs_cons_modifier: "보수주의 식민 정책" # 14896295355530039998
+  bpm_colonial_affairs_fash_modifier: "파시스트 식민 정책" # 1433861727258257967
+  bpm_colonial_affairs_libs_modifier: "자유주의 식민 정책" # 13458452249758051258
+  bpm_colonial_affairs_neutralidg_modifier: "중립적 식민 정책" # 15234348303704401520
+  bpm_colonial_affairs_lefts_modifier: "사회주의 식민 정책" # 16180245785574510681
+  bpm_colonial_affairs_military_modifier: "군사적 식민 정책" # 734256102567758665
+  bpm_colonial_affairs_pb_modifier: "소부르주아 식민 정책" # 13507466586918684619
+  bpm_colonial_affairs_devout_modifier: "선교사 식민 정책" # 3196591651131992537
+  bpm_colonial_affairs_neutraling_modifier: "온건 식민 정책" # 3746517109369303325
+  bpm_colonial_affairs_attract_modifier: "식민지 확장" # 9372490296583052451
+  bpm_social_security_rursocs_modifier: "농촌 사회주의 복지" # 3177674342888530046
+  bpm_social_security_cons_modifier: "보수주의 복지" # 6125131791438691974
+  bpm_social_security_liberals_modifier: "자유주의 복지" # 17462421606294248930
+  bpm_social_security_lefts_modifier: "사회주의 복지" # 4587615145859656185
+  bpm_social_security_commies_modifier: "공산주의 복지" # 4032237793897147530
+  bpm_social_security_neutraling_modifier: "온건 복지" # 10463619141523244520
+  bpm_social_security_pb_modifier: "소부르주아 복지" # 16236838993385432937
+  bpm_social_security_devout_modifier: "자선 복지" # 8207239833987905095
+  bpm_social_security_capis_modifier: "자본주의 복지" # 8559068409184903869
+  bpm_social_security_ruries_modifier: "농촌 복지" # 18127835495290260474
+  bpm_social_security_unions_modifier: "노조 복지" # 11376632174919817591
+  bpm_police_agpops_modifier: "농본주의 치안" # 10479265234582562195
+  bpm_police_cons_modifier: "보수주의 치안" # 9050458328024691490
+  bpm_police_fash_modifier: "파시스트 치안" # 14517686587532325246
+  bpm_police_liberals_modifier: "자유주의적 치안 유지" # 4868720909930925832
+  bpm_police_lefts_modifier: "사회주의적 치안 유지" # 16859237154729340551
+  bpm_police_commies_modifier: "공산주의적 치안 유지" # 3218109953568143594
+  bpm_police_military_modifier: "군사적 치안 유지" # 1662780418132900708
+  bpm_police_pb_modifier: "쁘띠 부르주아적 치안 유지" # 142787111066126124
+  bpm_police_devout_modifier: "종교적 치안 유지" # 6615171270709158391
+  bpm_police_capis_modifier: "자본주의적 치안 유지" # 5185194290211002547
+  bpm_police_aris_modifier: "귀족적 치안 유지" # 14748255085477603835
+  bpm_police_intel_modifier: "지식인적 치안 유지" # 5051635049499524381
+  bpm_police_ruries_modifier: "농촌적 치안 유지" # 193080265203543650
+  bpm_police_unions_modifier: "노조적 치안 유지" # 12702954644574505341
+  bpm_workplace_safety_agpops_modifier: "농본주의적 안전 기준" # 4735735616484104801
+  bpm_workplace_safety_neutralidg_modifier: "중립적 안전 기준" # 12244337855452915170
+  bpm_workplace_safety_lefts_modifier: "사회주의적 안전 기준" # 14420006583696227479
+  bpm_workplace_safety_commies_modifier: "공산주의적 안전 기준" # 8564767192059771097
+  bpm_workplace_safety_ruries_modifier: "농촌적 안전 기준" # 17454737105254096658
+  bpm_workplace_safety_unions_modifier: "노조적 안전 기준" # 16155094838869849325
+  bpm_workplace_safety_neutraling_modifier: "온건적 안전 기준" # 6125919490496958616
+  bpm_home_affairs_agpops_modifier: "농본주의적 내무 정책" # 4091927828128404640
+  bpm_home_affairs_leftists_modifier: "좌파적 내무 정책" # 6383774940514411285
+  bpm_home_affairs_cons_modifier: "보수적 내정 정책" # 14366809002955495211
+  bpm_home_affairs_reacs_modifier: "반동적 내정 정책" # 15357417673864861635
+  bpm_home_affairs_liberals_modifier: "자유주의적 내정 정책" # 660875646266509841
+  bpm_home_affairs_pseudoleft_modifier: "유사 좌파 내정 정책" # 3552507184287140457
+  bpm_home_affairs_military_modifier: "군부 내정 정책" # 13766717544898567375
+  bpm_home_affairs_pb_modifier: "쁘띠 부르주아 내정 정책" # 3025904609351928523
+  bpm_home_affairs_neutraling_modifier: "온건파 내정 정책" # 10890825876701187439
+  bpm_home_affairs_capis_modifier: "자본가 내정 정책" # 3459504607899232553
+  bpm_home_affairs_intel_modifier: "지식인 내정 정책" # 2456908776560193799
+  bpm_centralization_agpops_modifier: "농본주의 지역 정책" # 11713959957913881680
+  bpm_centralization_cons_modifier: "보수적 지역 정책" # 14332651730369189680
+  bpm_centralization_libs_modifier: "자유주의적 지역 정책" # 14323391903996771944
+  bpm_centralization_neutralidg_modifier: "중립적 지역 정책" # 12932238734406811396
+  bpm_centralization_neutraling_modifier: "온건파 지역 정책" # 5867325554278361480
+  bpm_culture_fash_modifier: "파시스트 문화 정책" # 7714378768442276040
+  bpm_culture_natlibs_modifier: "국민 자유주의 문화" # 12048527045457640780
+  bpm_culture_neutralidg_modifier: "중립적 문화 정책" # 15437846206548809405
+  bpm_culture_neutraling_modifier: "온건파 문화 정책" # 9883512299874271036
+  bpm_culture_liberal_modifier: "자유주의적 문화 정책" # 7106756079545188106
+  bpm_culture_populist_modifier: "포퓰리즘 문화 정책" # 5055950701439697888
+  bpm_culture_reactionary_modifier: "반동적 문화 정책" # 8295750600985109959
+  bpm_health_system_agpops_modifier: "농본주의 의료" # 3963717518326835589
+  bpm_health_system_anarchists_modifier: "아나키스트 의료" # 11069979916869700114
+  bpm_health_system_centrists_modifier: "중도주의 의료" # 9965321104993906239
+  bpm_health_system_lefts_modifier: "사회주의 의료" # 5019343545599521866
+  bpm_health_system_commies_modifier: "공산주의 의료" # 3481286624712849951
+  bpm_health_system_neutraling_modifier: "온건파 의료" # 5943943165045480332
+  bpm_health_system_military_modifier: "군부 의료" # 11855769264806681869
+  bpm_health_system_pb_modifier: "쁘띠 부르주아 의료" # 17652071247042067223
+  bpm_health_system_devout_modifier: "종교적 의료" # 12059541497853438786
+  bpm_health_system_capis_modifier: "자본주의 의료" # 10538796458570544573
+  bpm_health_system_ruries_modifier: "농촌 의료" # 8769114647603695593
+  bpm_health_system_unions_modifier: "조합주의 의료" # 13568960066614749909
+  bpm_suffrage_agpops_modifier: "농본주의 참정권" # 6191296376943294922
+  bpm_suffrage_anarchists_modifier: "아나키스트 참정권" # 16773358100812375858
+  bpm_suffrage_cons_modifier: "보수주의 참정권" # 16981309760326001648
+  bpm_suffrage_neutralidg_modifier: "중립적 참정권" # 1905532253099871873
+  bpm_suffrage_lefts_modifier: "사회주의 참정권" # 8643548867231633664
+  bpm_suffrage_commies_modifier: "공산주의 참정권" # 1669693531102118615
+  bpm_suffrage_neutraling_modifier: "온건파 참정권" # 18089637486586814109
+  bpm_suffrage_capis_modifier: "자본가 참정권" # 13922818152435353655
+  bpm_suffrage_aris_modifier: "귀족 참정권" # 3947026222610814560
+  bpm_suffrage_intel_modifier: "지식인 참정권" # 15519804331689231692
+  bpm_suffrage_ruries_modifier: "농촌 참정권" # 15309596227012333112
+  bpm_suffrage_unions_modifier: "노동조합 참정권" # 6812629437473982367
+  bpm_diplomacy_anarchists_modifier: "아나키스트 외교" # 10696490514922431807
+  bpm_diplomacy_socs_modifier: "사회주의 외교" # 4296594355627159687
+  bpm_diplomacy_agpops_modifier: "농본주의 외교" # 4023377467576585408
+  bpm_diplomacy_libs_modifier: "자유주의 외교" # 15596023575325128180
+  bpm_diplomacy_natlibs_modifier: "국민 자유주의 외교" # 10309005258992927473
+  bpm_diplomacy_marlibs_modifier: "시장 자유주의 외교" # 14347599156378550942
+  bpm_diplomacy_cons_modifier: "보수주의 외교" # 7972409432142843708
+  bpm_diplomacy_reacs_modifier: "반동주의 외교" # 2553073313261112176
+  bpm_diplomacy_fash_modifier: "파시스트 외교" # 15661566777389699627
+  bpm_diplomacy_neutraling_modifier: "온건주의 외교" # 1370328610401655062
+  bpm_diplomacy_military_modifier: "군사 외교" # 9433135448327190476
+  bpm_diplomacy_bureaucrats_modifier: "관료 외교" # 8742329830473128165
+  bpm_diplomacy_capis_modifier: "자본가 외교" # 12838752399014752098
+  bpm_diplomacy_rf_modifier: "농촌 외교" # 1389195820345525497
+  bpm_diplomacy_tu_modifier: "노동조합 외교" # 6849257621403208937
   bpm_urban_collectivization_workaround: "도시 집산화" # 3656344848920455459
-  bpm_economy_agpops_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cons_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_fash_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_libs_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_marlibs_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_radicals_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_reformists_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_commies_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_military_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_pb_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_neutraling_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_intel_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_ruries_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_tu_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_landies_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_capis_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_attraction_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_agpops_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_cons_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_anarchist_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_fash_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_libs_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_radicals_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_reacs_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_reformists_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_commies_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_military_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_pb_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_neutraling_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_intel_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_ruries_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_tu_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_capis_modifier: "경제 장관" # 2339725612324120827
-  bpm_economy_cr_attraction_modifier: "경제 장관" # 2339725612324120827
+  bpm_schools_attraction_modifier: "교육 지원" # 5812679387361150714
+  bpm_colonial_affairs_attraction_modifier: "식민지 확장" # 9372490296583052451
+  bpm_social_security_attraction_modifier: "복지 지원" # 10202828681938814361
+  bpm_police_attraction_modifier: "치안 지원" # 4338786835602639658
+  bpm_workplace_safety_attraction_modifier: "안전 지원" # 14753621449981099186
+  bpm_home_affairs_attraction_modifier: "내무 지원" # 11436815339885908441
+  bpm_centralization_attraction_modifier: "지역 지원" # 13562156715667450257
+  bpm_culture_attraction_modifier: "문화 지원" # 3366103073201895796
+  bpm_health_system_attraction_modifier: "의료 지원" # 2052736886149661758
+  bpm_suffrage_attraction_modifier: "선거 지원" # 15927833118520849599
+  institution_cabinet_suffrage_threshold_workaround: "참정권 기준 우회" # 8920970159904853791
+  institution_cabinet_suffrage_anarchists_workaround: "무정부주의자 참정권 우회" # 13882968909291671111
+  institution_cabinet_suffrage_agpops_workaround: "농본주의자 참정권 우회" # 14472776738133792778
+  institution_cabinet_suffrage_socialists_workaround: "사회주의자 참정권 우회" # 2913859511153951257
+  institution_cabinet_suffrage_industrialists_workaround: "산업주의자 참정권 우회" # 2574801383489843047
+  institution_cabinet_suffrage_landowners_workaround: "지주 참정권 우회" # 6700605735880801547
+  institution_cabinet_suffrage_intel_workaround: "지식인 참정권 우회" # 11336301305862683728
+  bpm_economy_agpops_modifier: "농본주의 경제" # 6106890196546273515
+  bpm_economy_cons_modifier: "보수주의 경제" # 10669332183398904276
+  bpm_economy_fash_modifier: "파시스트 경제" # 885666019282362342
+  bpm_economy_libs_modifier: "자유주의 경제" # 13232144514644023119
+  bpm_economy_marlibs_modifier: "시장 자유주의 경제" # 9697945169239053981
+  bpm_economy_radicals_modifier: "급진주의 경제" # 12987020993741459410
+  bpm_economy_reformists_modifier: "개혁주의 경제" # 9546048733091484337
+  bpm_economy_commies_modifier: "공산주의 경제" # 171052832952065412
+  bpm_economy_military_modifier: "군사 경제" # 18292333460215472241
+  bpm_economy_pb_modifier: "소부르주아 경제" # 9236596896199609385
+  bpm_economy_neutraling_modifier: "온건 경제" # 5081826479812105862
+  bpm_economy_intel_modifier: "지식인 경제" # 12628233589626853022
+  bpm_economy_ruries_modifier: "농촌 경제" # 17799209827635853912
+  bpm_economy_tu_modifier: "노동조합 경제" # 18324453137833753356
+  bpm_economy_landies_modifier: "지주 경제" # 17726355868198420515
+  bpm_economy_capis_modifier: "자본주의 경제" # 6908396671561387123
+  bpm_economy_attraction_modifier: "경제적 진출" # 13773261760147042282
+  bpm_economy_cr_agpops_modifier: "농업 경제 개혁" # 6600561266954514715
+  bpm_economy_cr_cons_modifier: "보수 경제 개혁" # 9406974365388705000
+  bpm_economy_cr_anarchist_modifier: "무정부주의 경제 개혁" # 14571708719965931343
+  bpm_economy_cr_fash_modifier: "파시스트 경제 개혁" # 15988513334057820661
+  bpm_economy_cr_libs_modifier: "자유주의 경제 개혁" # 59069624204599851
+  bpm_economy_cr_radicals_modifier: "급진주의 경제 개혁" # 15467192162007112796
   bpm_economy_cr_agpops_modifier_desc: "[GetStaticModifier('bpm_economy_cr_agpops_modifier').GetDesc]" # 6186862055743129414
   bpm_economy_cr_cons_modifier_desc: "[GetStaticModifier('bpm_economy_cr_cons_modifier').GetDesc]" # 4811264925010531813
   bpm_economy_cr_anarchist_modifier_desc: "[GetStaticModifier('bpm_economy_cr_anarchist_modifier').GetDesc]" # 4359141005563034033
@@ -361,6 +350,17 @@
   bpm_high_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_mid_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_low_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
-  bpm_hog_attraction_modifier: "$bpm_hog_title_default$" # 16576237924210925811
+  bpm_economy_cr_reacs_modifier: "반동주의 경제 개혁" # 4558912788168487865
+  bpm_economy_cr_reformists_modifier: "개혁주의 경제 개혁" # 1750805380257110477
+  bpm_economy_cr_commies_modifier: "공산주의 경제 개혁" # 6304641068116580143
+  bpm_economy_cr_military_modifier: "군부 경제 개혁" # 17699466735132523502
+  bpm_economy_cr_pb_modifier: "소부르주아 경제 개혁" # 10305903579436187023
+  bpm_economy_cr_neutraling_modifier: "온건파 경제 개혁" # 12677134422497316563
+  bpm_economy_cr_intel_modifier: "지식인 경제 개혁" # 3195861134545347332
+  bpm_economy_cr_ruries_modifier: "농촌 경제 개혁" # 5155597354963845301
+  bpm_economy_cr_tu_modifier: "노동조합 경제 개혁" # 4370492267977325018
+  bpm_economy_cr_capis_modifier: "자본가 경제 개혁" # 15160246300474705334
+  bpm_economy_cr_attraction_modifier: "경제 개혁 아웃리치" # 16717338567989256805
   bpm_colonial_affairs_fallback_modifier_desc: "" # 17241709254077376921
   bpm_hog_antagonism_modifier_none: "" # 17241709254077376921
+  bpm_hog_attraction_modifier: "$bpm_hog_title_default_contextless$" # 5658490975256820160

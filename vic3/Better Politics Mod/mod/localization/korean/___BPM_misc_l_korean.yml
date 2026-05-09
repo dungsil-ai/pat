@@ -33,9 +33,6 @@
   alert_bpm_law_will_fail_vote_desc: "현재 시행 중인 [concept_law]는 [Concept('concept_interest_group', '이해집단')]의 표가 충분치 않아 최종 단계에서 통과되지 못할 것입니다." # 18410224866100355707
   alert_bpm_law_will_fail_vote_hint: "[Concept('concept_bpm_law_sway', '법률 설득')]을 소모하여 현재 제정된 법률에 대해 더 많은 이익 집단을 설득할 수 있습니다." # 5144909531214000574
   alert_bpm_law_will_fail_vote_action: "정부 패널" # 15593567010204574285
-  alert_bpm_must_appoint_headofgov_name: "$bpm_hog_title_default$ 없음" # 4336801374285297884
-  alert_bpm_must_appoint_headofgov_desc: "현재 우리는 $bpm_hog_title_default$가 없습니다. 국가를 이끌 $bpm_hog_title_default$를 임명하는 것이 중요합니다." # 11798072844214588523
-  alert_bpm_must_appoint_headofgov_hint: "적합한 인물을 우클릭하고 $bpm_hog_title_default$로 임명하기를 눌러 $bpm_hog_title_default$를 임명할 수 있습니다." # 5454558679246545288
   alert_bpm_must_appoint_headofgov_action: "정부 패널" # 15593567010204574285
   alert_bpm_must_pick_cabinet_name: "미채워진 내각 직책" # 15817161340064849999
   alert_bpm_must_pick_cabinet_desc: "현재 내각에 공석이 존재합니다. 국가를 이끌 내각을 임명하는 것이 지극히 중요합니다." # 10535905559543651353
@@ -43,7 +40,6 @@
   alert_bpm_must_pick_cabinet_action: "내각 현황판" # 12967714270511906565
   bpm_idle_legislature_setting_name: "유휴 입법부" # 15859960602224521099
   bpm_law_will_fail_vote_setting_name: "[GetPlayer.GetLawBeingEnacted.GetName] 실패!" # 5570593405043948491
-  bpm_must_appoint_headofgov_setting_name: "$bpm_hog_title_default$ 없음" # 4336801374285297884
   bpm_must_pick_cabinet_setting_name: "공석인 내각 직위" # 15817161340064849999
   country_definition_equal: "귀국의 국가 정의는 #v [TARGET_COUNTRY_DEFINITION.GetName]#! (또는 그 상황별 변형 중 하나)입니다." # 16778682010465143153
   scripted_bar_progress_greater_than: "진행도가 $COMPARATOR$ #v $NUM|0v$#! (현재: $CURRENT_VALUE|0v$)" # 4737420364887045681
@@ -54,3 +50,7 @@
   communism_1: "[GetPlayerJournalEntry('je_communism_1').GetName|v]" # 14051451805870210308
   bpm_bnap_can_big_money: "돈 :)" # 8814642864698201009
   bpm_bnap_hbc_big_money: "$bpm_bnap_can_big_money$" # 14890118987925918685
+  alert_bpm_must_appoint_headofgov_desc: "현재 우리에게는 $bpm_hog_title_default_contextless$이(가) 없습니다. 국가를 이끌 $bpm_hog_title_default_contextless$을(를) 임명하는 것이 매우 중요합니다." # 14177330293298477396
+  alert_bpm_must_appoint_headofgov_hint: "적합한 인물을 우클릭하고 $bpm_hog_title_default_contextless$(으)로 임명을 누르면 $bpm_hog_title_default_contextless$을(를) 임명할 수 있습니다." # 17774083338179240189
+  alert_bpm_must_appoint_headofgov_name: "$bpm_hog_title_default_contextless$ 없음" # 2750864722995526410
+  bpm_must_appoint_headofgov_setting_name: "$bpm_hog_title_default_contextless$ 없음" # 2750864722995526410

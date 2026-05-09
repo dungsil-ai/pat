@@ -40,10 +40,10 @@
   country_synergy_from_rigidity_add: "[Concept('concept_bpm_political_stability', concept_bpm_political_stability)]로부터의 시너지" # 2904806158168533879
   country_synergy_from_rigidity_add_desc: "[Concept('concept_bpm_political_stability', concept_bpm_political_stability)]로부터 오는 국가 시너지에 대한 보너스 또는 불이익" # 15129961685526630801
   country_synergy_from_hos_hog_compatibility: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]와 [GetPlayer.GetCustom('bpm_hog_title_country_spec')] 간의 이념적 근접성으로 인한 시너지" # 6981092870979323124
-  country_synergy_from_hos_hog_compatibility_desc: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]와 $bpm_hog_title_default$의 이념적 근접성으로 인한 국가 시너지 보너스 또는 페널티" # 9172607414559719650
   country_synergy_from_ideological_compatibility: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속력에서 오는 시너지" # 7547256226350386972
   country_synergy_from_ideological_compatibility_desc: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속으로 인한 국가 시너지에 대한 보너스 또는 페널티" # 5457717499224795305
   country_synergy_from_hos_in_government: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]가 정부에 참여함으로써 얻는 시너지 효과" # 18423434580370691151
   country_synergy_from_hos_in_government_desc: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]이 정부 내에 있을 때 국가의 시너지에 대한 보너스 또는 페널티" # 17398427272126460928
   interest_group_ig_christian_democrats_pol_str_mult: "기독교 민주주의 정치력" # 14358113664333913846
   interest_group_ig_christian_democrats_pol_str_mult_desc: "$interest_group_ig_christian_democrats_pol_str_mult$" # 4912395325767698418
+  country_synergy_from_hos_hog_compatibility_desc: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]와 [GetPlayer.GetCustom('bpm_hog_title_country_spec')]의 이념적 근접성으로부터 발생하는 국가 시너지에 대한 보너스 또는 페널티" # 12709853867799087322
