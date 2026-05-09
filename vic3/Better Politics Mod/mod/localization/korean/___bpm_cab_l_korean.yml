@@ -183,24 +183,14 @@
   bpm_character_role_rozyu: "#gold;bold 로쥬#!" # 3536696336001021599
   bpm_minint_name: "#gold;bold [GetPlayer.GetCustom('bpm_minint_name')]#!" # 10651981740293631515
   bpm_minint_name_default: "내무부" # 16103345919160601687
-  bpm_minint_name_shogunate: "나이세이부교" # 17542320368671130616
-  bpm_minint_name_usa: "법무장관실" # 6683575848419170878
   bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
   bpm_minsoc_name_default: "사회부" # 7398686572878435950
-  bpm_minsoc_name_shogunate: "쇼민부교" # 14996490201479664078
-  bpm_minsoc_name_usa: "주 보건복지위원회" # 8201538862688250763
   bpm_minmor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minmor_name')]#!" # 9389264357357866756
   bpm_minmor_name_default: "교육부" # 9629760178780345699
-  bpm_minmor_name_shogunate: "교화형" # 14815243247171963891
-  bpm_minmor_name_usa: "교육 위원회" # 10014186701822216800
   bpm_minfor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minfor_name')]#!" # 10019072038901754414
   bpm_minfor_name_default: "외무부" # 3450184831760996160
-  bpm_minfor_name_shogunate: "외국봉행" # 11185493173093754067
-  bpm_minfor_name_usa: "국무부" # 12222430346321776126
   bpm_mineco_name: "#gold;bold [GetPlayer.GetCustom('bpm_mineco_name')]#!" # 3902746341662178536
   bpm_mineco_name_default: "경제부" # 1817022707219549945
-  bpm_mineco_name_shogunate: "감정봉행" # 9453225905213735643
-  bpm_mineco_name_usa: "재무부" # 309800156446447162
   bpm_appoint_minint: "$bpm_minint_name$(으)로 임명" # 8757236320823546102
   bpm_fire_minint: "$bpm_minint_name$에서 해임" # 7670322506591319152
   bpm_appoint_minsoc: "$bpm_minsoc_name$(으)로 임명" # 4172492733190643465
@@ -224,3 +214,13 @@
   notification_bpm_minister_replaced_name: "[SCOPE.sCharacter('bpm_newmin').GetFullName](이)가 [Localize(Concatenate('bpm_', Concatenate(SCOPE.GetLocalVariable('bpm_minname').GetFlagName, '_name')))](으)로 임명되었습니다." # 8371206636648712582
   notification_bpm_minister_replaced_desc: "[Localize(Concatenate('bpm_', Concatenate(SCOPE.GetLocalVariable('bpm_minname').GetFlagName, '_name')))]의 공석이 발생한 후, [GetPlayer.MakeScope.Var('bpm_headofgov').GetCharacter.GetFullName]에 의해 [SCOPE.sCharacter('bpm_newmin').GetFullName]이(가) 새로운 #gold 장관#!으로 임명되었습니다." # 13956507276549072013
   notification_bpm_minister_replaced_tooltip: "$notification_bpm_minister_replaced_name$" # 9568647571489595809
+  bpm_minint_name_shogunate: "내세봉행 #lore ($bpm_minint_name_default$)#!" # 8778842791798856628
+  bpm_minint_name_usa: "법무장관실 #lore ($bpm_minint_name_default$)#!" # 5487672908266580161
+  bpm_minsoc_name_shogunate: "서민봉행 #lore ($bpm_minsoc_name_default$)#!" # 4391306897631486877
+  bpm_minsoc_name_usa: "국가 보건복지위원회 #lore ($bpm_minsoc_name_default$)#!" # 6726341875868936376
+  bpm_minmor_name_shogunate: "교화방식 #lore ($bpm_minmor_name_default$)#!" # 1039397459613821070
+  bpm_minmor_name_usa: "교육위원회 #lore ($bpm_minmor_name_default$)#!" # 460219268687389826
+  bpm_minfor_name_shogunate: "외국봉행 #lore ($bpm_minfor_name_default$)#!" # 14322652573326652155
+  bpm_minfor_name_usa: "국무부 #lore ($bpm_minfor_name_default$)#!" # 10751876659682247031
+  bpm_mineco_name_shogunate: "감정봉행 #lore ($bpm_mineco_name_default$)#!" # 2686960541754469076
+  bpm_mineco_name_usa: "재무부 #lore ($bpm_mineco_name_default$)#!" # 17761709385180043900
