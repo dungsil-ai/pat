@@ -1,4 +1,4 @@
 ﻿l_korean:
-  traditionalist_shogun_warning_present_tt: "$bpm_hog_title_default_contextless$는 [GetIdeology('ideology_traditionalist').GetName] [concept_ideology]를 #b 가지고 있지#! 않습니다" # 13224822972986392445
   hog_is_modernizer_or_mitogaku_tt: "$bpm_hog_title_default_contextless$는 [GetIdeology('ideology_modernizer_leader').GetName] 또는 [GetIdeology('ideology_mitogaku').GetName] [concept_ideology]를 보유함" # 13976880849738363329
+  traditionalist_shogun_warning_present_tt: "$bpm_hog_title_default_contextless$는 [GetIdeology('ideology_traditionalist').GetName] [concept_ideology]를 #b 가지고 있지#! 않습니다" # 13224822972986392445
   hog_is_imperious_tt: "$bpm_hog_title_default_contextless$는 [GetCharacterTrait('imperious').GetName] 특성을 보유함" # 14564377179661659499
