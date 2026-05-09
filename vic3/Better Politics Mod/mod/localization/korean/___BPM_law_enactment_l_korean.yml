@@ -199,6 +199,8 @@
   bpm_provisional_government_events.3.t: "내각 직책을 약속하다" # 6136793390573471549
   bpm_provisional_government_events.3.d: "우리는 [SCOPE.sLaw('bpm_currently_enacting_law').GetName] 통과에 대한 그들의 지지를 대가로 [SCOPE.gsInterestGroup('bpm_government_cabinet_promise_ig').GetName]에게 내각 자리를 약속할 수 있습니다." # 7995020317882657799
   bpm_provisional_government_events.3.f: "...법률은 언제나 사람들에게 자신의 이익을 돌볼 권한을 맡겨야 마땅하다. 왜냐하면 그들의 지역적 상황에서 입법자가 할 수 있는 것보다 그들 자신이 그 이익에 대해 더 잘 판단할 수 있기 때문이다.\n\n—애덤 스미스, 1776#!" # 18283770446582016680
+  bpm_provisional_government_events.3.a: "그들에게 #yellow [SCOPE.sInstitution('bpm_government_promised_position').GetCustom('bpm_ministry_name')]#!의 지도권을 약속하십시오." # 14559319486976182275
+  bpm_provisional_government_events.3.b: "그들에게 #yellow [SCOPE.sInstitution('bpm_government_promised_position_two').GetCustom('bpm_ministry_name')]#!의 지도권을 약속하십시오." # 1977088172071127271
   bpm_provisional_government_events.3.c: "이 제안들은 우리의 국익에 부합하지 않습니다." # 14892874670258038849
   bpm_government_cabinet_promise_tt_cancel: "#blue @information! 우리는 6개월 동안 약속을 협상할 수 없을 것입니다." # 3611204666752338538
   bpm_government_cabinet_promise_law_tt: "[SCOPE.gsInterestGroup('bpm_government_cabinet_promise_ig').GetName]은 향후 5년 내에 정부가 그들의 지도자를 [SCOPE.sInstitution('bpm_government_promised_position').GetName]에 임명할 것을 기대할 것입니다." # 2611251529013418130
@@ -217,6 +219,7 @@
   je_bpm_government_promise_status: "우리는 [SCOPE.gsInterestGroup('government_promise_ig').GetName]에게 [SCOPE.sLaw('government_promise_law').GetName]를 통과시키겠다고 약속했습니다." # 3672880971732260374
   je_bpm_government_promise_law_reason: "우리의 국정 행위자들과의 협상 결과, 우리는 법안 통과를 약속함으로써 [SCOPE.gsInterestGroup('government_promise_ig').GetName]에 빚을 지게 되었습니다. 정치적 파장을 피하기 위해 이 법안은 가급적 빨리 통과되어야 합니다." # 13347348308979738889
   je_bpm_government_promise_cabinet: "내각의 약속" # 5380218140875415366
+  je_bpm_government_promise_cabinet_status: "우리는 [SCOPE.gsInterestGroup('government_promise_ig').GetName]에게 #gold [SCOPE.sInstitution('government_promise_position').GetCustom('bpm_ministry_name')]#!의 내각 자리를 약속했습니다." # 4402920250947244378
   je_bpm_government_promise_cabinet_reason: "우리의 협상 결과로, 우리는 국내 정치 세력과의 협상에 따라 [SCOPE.gsInterestGroup('government_promise_ig').GetName]에 내각 직위를 약속함으로써 빚을 지게 되었습니다. 정치적 후폭풍을 피하기 위해 이 직위는 가능한 한 빨리 채워져야 합니다." # 10322287043459975699
   bpm_followed_through_with_promise: "약속을 이행했소" # 9121614045485222691
   bpm_followed_through_with_promised_content_ig: "약속을 이행했소" # 9121614045485222691
@@ -240,6 +243,3 @@
   bpm_ig_decrease_law_enactment_approval_small_ruler_tt: "우리 [concept_ruler]는 #N -5#! [Concept('concept_bpm_law_sway', '법안 통과 지지')]를 받습니다." # 16461480861062358220
   bpm_ig_decrease_law_enactment_approval_medium_ruler_tt: "우리의 [concept_ruler]은 #N -10#! [Concept('concept_bpm_law_sway', '법률 통과 지지')]을 얻습니다!" # 7526858539636250503
   bpm_ig_decrease_law_enactment_approval_big_ruler_tt: "우리 [concept_ruler]는 #N -15#! [Concept('concept_bpm_law_sway', '법안 통과 지지')]를 얻습니다." # 8061644483244922570
-  bpm_provisional_government_events.3.a: "그들에게 #yellow [SCOPE.sInstitution('bpm_government_promised_position').GetCustom('bpm_ministry_name')]#!의 지도권을 약속하십시오." # 14559319486976182275
-  bpm_provisional_government_events.3.b: "그들에게 #yellow [SCOPE.sInstitution('bpm_government_promised_position_two').GetCustom('bpm_ministry_name')]#!의 지도권을 약속하십시오." # 1977088172071127271
-  je_bpm_government_promise_cabinet_status: "우리는 [SCOPE.gsInterestGroup('government_promise_ig').GetName]에게 #gold [SCOPE.sInstitution('government_promise_position').GetCustom('bpm_ministry_name')]#!의 내각 자리를 약속했습니다." # 4402920250947244378

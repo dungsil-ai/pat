@@ -26,17 +26,21 @@
   bpm_add_to_cabinet_effect_tt: "장관 수정치를 적용합니다" # 5496925019543697504
   bpm_remove_from_cabinet_tt: "등장인물은 [Concept('concept_bpm_cabinet', '내각')]에 있습니다." # 3761866182612347266
   bpm_remove_from_cabinet_effect_tt: "[Concept('concept_institution', 'Institution')]의 수정자들을 제거합니다" # 15947150460265466479
+  bpm_hog_title_default_contextless: "[GetPlayer.GetCustom('bpm_hog_title_country_spec')]" # 14997604485440726096
+  bpm_hog_title_default: "[Character.GetCountry.GetCustom('bpm_hog_title_country_spec')]" # 16919972055526556556
   bpm_hog_title_default_default: "총리" # 15692688430845289642
   bpm_hog_title_default_premier: "총리" # 9629706753350451354
   bpm_hog_title_default_chancellor: "수상" # 9329688872433461728
   bpm_hog_title_default_minister_president: "장관직무대리" # 6033456111247658517
   bpm_hog_title_default_shogunate: "쇼군" # 9264407544974280725
+  bpm_hog_title_default_taikun: "타이쿤" # 8090432212010174712
   bpm_hog_title_default_gondar: "라이제 메콴인트" # 6201708294948705008
   bpm_hog_title_default_regent: "섭정" # 1919131421246908676
   bpm_hog_title_default_grand_vizier: "대재상" # 8143477990367753806
   bpm_hog_title_default_mukhtar: "무크타르" # 5391510318573621731
   bpm_hog_title_ruler: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]" # 3505174872101764316
   bpm_hog_title_ruler_interim: "$bpm_hog_title_default$ 직책 수행 중" # 350063604237838910
+  appoint_as_hog_tt: "[SCOPE.sCharacter('char_in_question').GetFullName] 님이 $bpm_hog_title_default_contextless$(으)로 임명될 것입니다." # 1477370429058070879
   bpm_cabinet_hog_modifiers: "$bpm_hog_modifier_desc$" # 5673984816954046540
   BPMANTHEAD: "#header 반감으로부터:#!\n [GetStaticModifier('bpm_schools_capis_modifier').GetDesc]" # 13680899900755266099
   ANTAGONISM: "#red;bold;shadow [Concept('concept_character', 'Antagonistic')]#!\n본 [concept_character]는 이 [concept_institution]의 존재에 반대하거나, 그들의 [concept_interest_group]의 지지율이 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만입니다." # 13384875366891616539
@@ -72,6 +76,16 @@
   bpm_government_igs_without_cabinet_pick: "정부 [Concept('concept_interest_group', '이해집단')]에 [concept_bpm_cabinet] 직책이 없음" # 10420416720448828911
   country_synergy_mult: "시너지" # 14593274127119984750
   country_synergy_mult_desc: "$country_synergy_mult$" # 12824393496465922173
+  bpm_fill_cabinet_button: "[Localize(Concatenate(GetPlayer.GetCustom('bpm_cabinet_strategy'), '_name'))]" # 7422127265888401540
+  bpm_fill_cabinet_button_tt: "[Localize(Concatenate(GetPlayer.GetCustom('bpm_cabinet_strategy'), '_tt'))]" # 7862370391525858974
+  bpm_cabinet_strategy_greedy_name: "탐욕스러운 통치자" # 14379777892402822511
+  bpm_cabinet_strategy_greedy_tt: "항상 [GetPlayer.GetRuler.GetPrimaryRoleTitle] 또는 $bpm_hog_title_default_contextless$의 [concept_interest_group]을(를) 선택합니다." # 13181447607162328905
+  bpm_cabinet_strategy_promidg_name: "저명한 [Concept('concept_bpm_ideological_ig','이념적 이익집단')]" # 17787028928110265298
+  bpm_cabinet_strategy_promidg_tt: "[Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_bpm_ideological_ig', '이념적 이익집단')]의 [Concept('concept_character', '인물')]을(를) 선택합니다." # 7146435837390276297
+  bpm_cabinet_strategy_proming_name: "저명한 [Concept('concept_bpm_institutional_ig','제도적 이익집단')]" # 3743794298641000461
+  bpm_cabinet_strategy_proming_tt: "[Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_bpm_institutional_ig', '제도적 이익집단')]의 [Concept('concept_character', '인물')]을(를) 선택합니다." # 3701508994792159061
+  bpm_cabinet_strategy_statusquo_name: "현상 유지" # 1804396969860798033
+  bpm_cabinet_strategy_statusquo_tt: "가능한 경우 전임자의 [Concept('concept_interest_group', '이익집단')]에서 [Concept('concept_character', '인물')]을(를) 선택합니다. 그렇지 않으면 [Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_character', '인물')]을(를) 선택합니다." # 14099128813482308986
   bpm_reset_cabinet_button: "내각 초기화" # 3875947883942491193
   bpm_button_fire_minister: "화재" # 5632580673934508926
   bpm_button_show_all: "모두 보기" # 10175337569689906440
@@ -138,6 +152,7 @@
   bpm_view_minister_button: "후보자 보기" # 2033574658796601417
   bpm_ig_same_as_ruler_tt: "[Concept('concept_ruler', '국가원수')]의 [concept_interest_group]는" # 423986815945944814
   BPM_CABINET_SYNERGY_FROM_DEFAULT: "기본 시너지" # 14336142189307492863
+  BPM_CABINET_SYNERGY_FROM_HOS_HOG_COMPATIBILITY: "[Country.GetRuler.GetPrimaryRoleTitle]와 $bpm_hog_title_default_contextless$의 이념적 근접성: [GetPlayer.MakeScope.Var('bpm_cab_hoshog_synergy').GetValue|%b0] x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_hos_hog_compatibility')]" # 13092945620990289902
   BPM_CABINET_SYNERGY_FROM_IDEOLOGY: "[Concept('concept_bpm_cabinet', '내각')]의 이념적 결속으로부터: [GetPlayer.MakeScope.Var('bpm_cab_synergy').GetValue|%b0] x [GetPlayer.GetModifier.GetValueWithBreakdownFor('country_synergy_from_ideological_compatibility')]" # 2830763129190306060
   BPM_CABINET_SYNERGY_FROM_HOS_IN_GOVERNMENT: "[Country.GetRuler.GetPrimaryRoleTitle]이 정부에 있는 동안" # 433856617527987562
   BPM_CABINET_SYNERGY_FROM_RIGIDITY: "[Concept('concept_bpm_political_stability', '정치적 안정')]로부터: [GetPlayer.MakeScope.Var('bpm_political_stability').GetValue|b0]#b %#! x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_rigidity_add')]" # 2079080496861572465
@@ -165,35 +180,27 @@
   bpm_cabinet_mineco: "$bpm_mineco_name$" # 18072696887669167523
   bpm_test_april_fools.1.t: " $bpm_cabinet_minint$ 소집" # 2628526282955654436
   bpm_test_april_fools.1.d: " $bpm_cabinet_minint$는 공공질서와 안전 유지, 지방 정부 감독, 그리고 국가 내무 관리를 책임집니다. $bpm_cabinet_minint$를 소집함으로써, 귀하는 이 #gold 빠르게 진행되는 로그라이크 모험 카드 게임#!에서 진척을 이루고 시민 불안, 자연재해 또는 기타 비상사태와 같이 발생할 수 있는 내부 문제에 적절히 대응할 수 있습니다. 모험을 진행하려면 #gold *카드*#!를 선택하십시오!" # 1464248500770633733
+  bpm_character_role_rozyu: "#gold;bold 로쥬#!" # 3536696336001021599
   bpm_minint_name: "#gold;bold [GetPlayer.GetCustom('bpm_minint_name')]#!" # 10651981740293631515
   bpm_minint_name_default: "내무부" # 16103345919160601687
-  bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
-  bpm_minsoc_name_default: "사회부" # 7398686572878435950
-  bpm_hog_title_default_contextless: "[GetPlayer.GetCustom('bpm_hog_title_country_spec')]" # 14997604485440726096
-  bpm_hog_title_default: "[Character.GetCountry.GetCustom('bpm_hog_title_country_spec')]" # 16919972055526556556
-  bpm_hog_title_default_taikun: "타이쿤" # 8090432212010174712
-  appoint_as_hog_tt: "[SCOPE.sCharacter('char_in_question').GetFullName] 님이 $bpm_hog_title_default_contextless$(으)로 임명될 것입니다." # 1477370429058070879
-  bpm_fill_cabinet_button: "[Localize(Concatenate(GetPlayer.GetCustom('bpm_cabinet_strategy'), '_name'))]" # 7422127265888401540
-  bpm_fill_cabinet_button_tt: "[Localize(Concatenate(GetPlayer.GetCustom('bpm_cabinet_strategy'), '_tt'))]" # 7862370391525858974
-  bpm_cabinet_strategy_greedy_tt: "항상 [GetPlayer.GetRuler.GetPrimaryRoleTitle] 또는 $bpm_hog_title_default_contextless$의 [concept_interest_group]을(를) 선택합니다." # 13181447607162328905
-  bpm_cabinet_strategy_promidg_tt: "[Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_bpm_ideological_ig', '이념적 이익집단')]의 [Concept('concept_character', '인물')]을(를) 선택합니다." # 7146435837390276297
-  bpm_cabinet_strategy_proming_tt: "[Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_bpm_institutional_ig', '제도적 이익집단')]의 [Concept('concept_character', '인물')]을(를) 선택합니다." # 3701508994792159061
-  bpm_cabinet_strategy_statusquo_tt: "가능한 경우 전임자의 [Concept('concept_interest_group', '이익집단')]에서 [Concept('concept_character', '인물')]을(를) 선택합니다. 그렇지 않으면 [Concept('concept_prominence', '영향력')]이 가장 높은 [Concept('concept_character', '인물')]을(를) 선택합니다." # 14099128813482308986
-  BPM_CABINET_SYNERGY_FROM_HOS_HOG_COMPATIBILITY: "[Country.GetRuler.GetPrimaryRoleTitle]와 $bpm_hog_title_default_contextless$의 이념적 근접성: [GetPlayer.MakeScope.Var('bpm_cab_hoshog_synergy').GetValue|%b0] x [Country.GetModifier.GetValueWithBreakdownFor('country_synergy_from_hos_hog_compatibility')]" # 13092945620990289902
-  bpm_character_role_rozyu: "#gold;bold 로쥬#!" # 3536696336001021599
   bpm_minint_name_shogunate: "나이세이부교" # 17542320368671130616
   bpm_minint_name_usa: "법무장관실" # 6683575848419170878
+  bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
+  bpm_minsoc_name_default: "사회부" # 7398686572878435950
   bpm_minsoc_name_shogunate: "쇼민부교" # 14996490201479664078
   bpm_minsoc_name_usa: "주 보건복지위원회" # 8201538862688250763
-  bpm_cabinet_strategy_greedy_name: "탐욕스러운 통치자" # 14379777892402822511
-  bpm_cabinet_strategy_promidg_name: "저명한 [Concept('concept_bpm_ideological_ig','이념적 이익집단')]" # 17787028928110265298
-  bpm_cabinet_strategy_proming_name: "저명한 [Concept('concept_bpm_institutional_ig','제도적 이익집단')]" # 3743794298641000461
-  bpm_cabinet_strategy_statusquo_name: "현상 유지" # 1804396969860798033
   bpm_minmor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minmor_name')]#!" # 9389264357357866756
+  bpm_minmor_name_default: "교육부" # 9629760178780345699
+  bpm_minmor_name_shogunate: "교화형" # 14815243247171963891
+  bpm_minmor_name_usa: "교육 위원회" # 10014186701822216800
   bpm_minfor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minfor_name')]#!" # 10019072038901754414
   bpm_minfor_name_default: "외무부" # 3450184831760996160
+  bpm_minfor_name_shogunate: "외국봉행" # 11185493173093754067
+  bpm_minfor_name_usa: "국무부" # 12222430346321776126
   bpm_mineco_name: "#gold;bold [GetPlayer.GetCustom('bpm_mineco_name')]#!" # 3902746341662178536
   bpm_mineco_name_default: "경제부" # 1817022707219549945
+  bpm_mineco_name_shogunate: "감정봉행" # 9453225905213735643
+  bpm_mineco_name_usa: "재무부" # 309800156446447162
   bpm_appoint_minint: "$bpm_minint_name$(으)로 임명" # 8757236320823546102
   bpm_fire_minint: "$bpm_minint_name$에서 해임" # 7670322506591319152
   bpm_appoint_minsoc: "$bpm_minsoc_name$(으)로 임명" # 4172492733190643465
@@ -205,22 +212,15 @@
   bpm_appoint_minmor: "$bpm_minmor_name$(으)로 임명" # 16377227320566564016
   bpm_fire_minmor: "$bpm_minmor_name$에서 해임" # 5775290160693279309
   bpm_character_role_minister: "#gold;bold 장관#!" # 11747263593795260096
+  bpm_character_role_hog: "#gold;bold $bpm_hog_title_default$#!" # 1073543536920311163
   bpm_appoint_pm: "$bpm_hog_title_default$(으)로 임명" # 717279083400144397
   bpm_fire_pm: " $bpm_hog_title_default$ 해임" # 18376332154665421678
-  bpm_minmor_name_default: "교육부" # 9629760178780345699
-  bpm_minmor_name_shogunate: "교화형" # 14815243247171963891
-  bpm_minmor_name_usa: "교육 위원회" # 10014186701822216800
-  bpm_minfor_name_shogunate: "외국봉행" # 11185493173093754067
-  bpm_minfor_name_usa: "국무부" # 12222430346321776126
-  bpm_mineco_name_shogunate: "감정봉행" # 9453225905213735643
-  bpm_mineco_name_usa: "재무부" # 309800156446447162
-  bpm_character_role_hog: "#gold;bold $bpm_hog_title_default$#!" # 1073543536920311163
   bpm_cabinet_empty: "@information! 다른 [concept_character]를 #bold 우클릭#!하고 #yellow 캐릭터 상호작용#!을 사용하여 #yellow 장관#!을 교체하십시오." # 15250157166255448514
   bpm_show_ministry_interactions: "부처 상호작용 표시" # 8729394577692040447
   bpm_hide_ministry_interactions: "부처 상호작용 숨기기" # 15537610105419016084
+  notification_bpm_dictatorial_hog_top_name: "새로운 $bpm_hog_title_default_contextless$ 임명됨." # 17565395589746583847
   notification_bpm_dictatorial_hog_top_desc: "$bpm_hog_title_default_contextless$께서 서거하셨으며, 그의 $bpm_character_role_protege$가 새로운 $bpm_hog_title_default_contextless$(으)로 임명되었습니다." # 16253413577852801151
   notification_bpm_dictatorial_hog_top_tooltip: "$notification_bpm_dictatorial_hog_top_name$" # 534058012891388791
+  notification_bpm_minister_replaced_name: "[SCOPE.sCharacter('bpm_newmin').GetFullName](이)가 [Localize(Concatenate('bpm_', Concatenate(SCOPE.GetLocalVariable('bpm_minname').GetFlagName, '_name')))](으)로 임명되었습니다." # 8371206636648712582
   notification_bpm_minister_replaced_desc: "[Localize(Concatenate('bpm_', Concatenate(SCOPE.GetLocalVariable('bpm_minname').GetFlagName, '_name')))]의 공석이 발생한 후, [GetPlayer.MakeScope.Var('bpm_headofgov').GetCharacter.GetFullName]에 의해 [SCOPE.sCharacter('bpm_newmin').GetFullName]이(가) 새로운 #gold 장관#!으로 임명되었습니다." # 13956507276549072013
   notification_bpm_minister_replaced_tooltip: "$notification_bpm_minister_replaced_name$" # 9568647571489595809
-  notification_bpm_dictatorial_hog_top_name: "새로운 $bpm_hog_title_default_contextless$ 임명됨." # 17565395589746583847
-  notification_bpm_minister_replaced_name: "[SCOPE.sCharacter('bpm_newmin').GetFullName](이)가 [Localize(Concatenate('bpm_', Concatenate(SCOPE.GetLocalVariable('bpm_minname').GetFlagName, '_name')))](으)로 임명되었습니다." # 8371206636648712582

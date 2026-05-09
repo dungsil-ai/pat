@@ -1,12 +1,12 @@
 ﻿l_korean:
-  TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 극단주의 단체입니다." # 1194620366730389291
-  NOT_TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 #bold 아님#! 극단주의자가 아니다" # 8294296832469718965
-  TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 반체제 성향입니다." # 11030393316736677062
-  NOT_TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 #bold 아닙니다#! 반(反)체제" # 3782724716855274392
   TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) 극단주의자입니다" # 10888315677890559676
   NOT_TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) #bold 극단주의자가 아닙니다#!" # 1052997727690249371
+  TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 극단주의 단체입니다." # 1194620366730389291
+  NOT_TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 #bold 아님#! 극단주의자가 아니다" # 8294296832469718965
   TRIGGER_IS_A_E: "[concept_interest_group]은(는) 반체제 인사입니다" # 11031726888674069143
   NOT_TRIGGER_IS_A_E: "[concept_interest_group]은(는) #bold 반체제 인사가 아닙니다#!" # 12275529192697898243
+  TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 반체제 성향입니다." # 11030393316736677062
+  NOT_TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 #bold 아닙니다#! 반(反)체제" # 3782724716855274392
   TRIGGER_IS_RIGHT_WING: "[concept_interest_group]은(는) [concept_bpm_ig_is_right_wing]입니다" # 1112924418871175723
   NOT_TRIGGER_IS_RIGHT_WING: "[concept_interest_group]은(는) #bold [concept_bpm_ig_is_right_wing]이(가) 아닙니다#!" # 15171590078653074862
   TRIGGER_IS_RIGHT_WING_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_right_wing]입니다" # 5296191414750918173

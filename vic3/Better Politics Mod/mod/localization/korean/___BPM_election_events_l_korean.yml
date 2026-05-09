@@ -1,9 +1,9 @@
 ﻿l_korean:
   bpm_election_events.1.t: "임명에 관한 문제" # 14502981689216355543
-  bpm_favored_cabinet_picks: "내각 인사에서 선호받는 것" # 16705294161154196
   bpm_election_events.1.d: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 새 정부는 내각을 구성하고 일련의 새로운 행정직을 임명하는 과업에 착수해야 합니다. 정부는 어떤 전략을 취해야 할까요?" # 11188506822286110910
   bpm_election_events.1.f: "@information! #bold 이는 자동 내각 임명에 영향을 미칩니다.\n이벤트 이후 언제든지 [concept_character]를 우클릭하고 #yellow 캐릭터 상호작용#!을 사용하여 내각 구성원을 수동으로 변경할 수 있습니다.#!" # 16531794035475519130
   bpm_election_events.1.a: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 친구들을 임명합니다" # 6450005682020452372
   bpm_election_events.1.b: "안정적인 인사를 선택합니다" # 1530292757233398838
   bpm_election_events.1.c: "떠오르는 신예들을 임명합니다" # 9273951212531885879
   bpm_election_events.1.e: "기성 정치인들을 임명합니다" # 11028120412418327201
+  bpm_favored_cabinet_picks: "내각 인사에서 선호받는 것" # 16705294161154196

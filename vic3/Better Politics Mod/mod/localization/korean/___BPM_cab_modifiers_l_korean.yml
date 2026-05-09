@@ -119,7 +119,6 @@
   bpm_diplomacy_capis_modifier: "자본가 외교" # 12838752399014752098
   bpm_diplomacy_rf_modifier: "농촌 외교" # 1389195820345525497
   bpm_diplomacy_tu_modifier: "노동조합 외교" # 6849257621403208937
-  bpm_urban_collectivization_workaround: "도시 집산화" # 3656344848920455459
   bpm_schools_attraction_modifier: "교육 지원" # 5812679387361150714
   bpm_colonial_affairs_attraction_modifier: "식민지 확장" # 9372490296583052451
   bpm_social_security_attraction_modifier: "복지 지원" # 10202828681938814361
@@ -137,6 +136,7 @@
   institution_cabinet_suffrage_industrialists_workaround: "산업주의자 참정권 우회" # 2574801383489843047
   institution_cabinet_suffrage_landowners_workaround: "지주 참정권 우회" # 6700605735880801547
   institution_cabinet_suffrage_intel_workaround: "지식인 참정권 우회" # 11336301305862683728
+  bpm_urban_collectivization_workaround: "도시 집산화" # 3656344848920455459
   bpm_economy_agpops_modifier: "농본주의 경제" # 6106890196546273515
   bpm_economy_cons_modifier: "보수주의 경제" # 10669332183398904276
   bpm_economy_fash_modifier: "파시스트 경제" # 885666019282362342
@@ -160,6 +160,17 @@
   bpm_economy_cr_fash_modifier: "파시스트 경제 개혁" # 15988513334057820661
   bpm_economy_cr_libs_modifier: "자유주의 경제 개혁" # 59069624204599851
   bpm_economy_cr_radicals_modifier: "급진주의 경제 개혁" # 15467192162007112796
+  bpm_economy_cr_reacs_modifier: "반동주의 경제 개혁" # 4558912788168487865
+  bpm_economy_cr_reformists_modifier: "개혁주의 경제 개혁" # 1750805380257110477
+  bpm_economy_cr_commies_modifier: "공산주의 경제 개혁" # 6304641068116580143
+  bpm_economy_cr_military_modifier: "군부 경제 개혁" # 17699466735132523502
+  bpm_economy_cr_pb_modifier: "소부르주아 경제 개혁" # 10305903579436187023
+  bpm_economy_cr_neutraling_modifier: "온건파 경제 개혁" # 12677134422497316563
+  bpm_economy_cr_intel_modifier: "지식인 경제 개혁" # 3195861134545347332
+  bpm_economy_cr_ruries_modifier: "농촌 경제 개혁" # 5155597354963845301
+  bpm_economy_cr_tu_modifier: "노동조합 경제 개혁" # 4370492267977325018
+  bpm_economy_cr_capis_modifier: "자본가 경제 개혁" # 15160246300474705334
+  bpm_economy_cr_attraction_modifier: "경제 개혁 아웃리치" # 16717338567989256805
   bpm_economy_cr_agpops_modifier_desc: "[GetStaticModifier('bpm_economy_cr_agpops_modifier').GetDesc]" # 6186862055743129414
   bpm_economy_cr_cons_modifier_desc: "[GetStaticModifier('bpm_economy_cr_cons_modifier').GetDesc]" # 4811264925010531813
   bpm_economy_cr_anarchist_modifier_desc: "[GetStaticModifier('bpm_economy_cr_anarchist_modifier').GetDesc]" # 4359141005563034033
@@ -350,17 +361,6 @@
   bpm_high_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_mid_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_low_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
-  bpm_economy_cr_reacs_modifier: "반동주의 경제 개혁" # 4558912788168487865
-  bpm_economy_cr_reformists_modifier: "개혁주의 경제 개혁" # 1750805380257110477
-  bpm_economy_cr_commies_modifier: "공산주의 경제 개혁" # 6304641068116580143
-  bpm_economy_cr_military_modifier: "군부 경제 개혁" # 17699466735132523502
-  bpm_economy_cr_pb_modifier: "소부르주아 경제 개혁" # 10305903579436187023
-  bpm_economy_cr_neutraling_modifier: "온건파 경제 개혁" # 12677134422497316563
-  bpm_economy_cr_intel_modifier: "지식인 경제 개혁" # 3195861134545347332
-  bpm_economy_cr_ruries_modifier: "농촌 경제 개혁" # 5155597354963845301
-  bpm_economy_cr_tu_modifier: "노동조합 경제 개혁" # 4370492267977325018
-  bpm_economy_cr_capis_modifier: "자본가 경제 개혁" # 15160246300474705334
-  bpm_economy_cr_attraction_modifier: "경제 개혁 아웃리치" # 16717338567989256805
+  bpm_hog_attraction_modifier: "$bpm_hog_title_default_contextless$" # 5658490975256820160
   bpm_colonial_affairs_fallback_modifier_desc: "" # 17241709254077376921
   bpm_hog_antagonism_modifier_none: "" # 17241709254077376921
-  bpm_hog_attraction_modifier: "$bpm_hog_title_default_contextless$" # 5658490975256820160
