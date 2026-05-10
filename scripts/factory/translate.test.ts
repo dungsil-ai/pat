@@ -1519,6 +1519,60 @@ language = "english"
     await rm(testDir, { recursive: true, force: true })
   })
 
+  it('재번역 대기 항목이 있어도 원본 키 순서를 유지해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { hashing } = await import('../utils/hashing')
+    const { translateBulk } = await import('../utils/translate')
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[]) => {
+      return texts.map(text => ({ translatedText: `[KO]${text}` }))
+    })
+
+    const modDir = join(testDir, 'order-test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const targetDir = join(modDir, 'mod', 'localization', 'korean')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    const sourceContent = `l_english:
+  key_a: "alpha updated"
+  key_b: "beta"
+  key_c: "gamma updated"
+  key_d: "delta"
+`
+    const targetContent = `l_korean:
+  key_a: "이전 알파" # old-alpha
+  key_b: "기존 베타" # ${hashing('beta')}
+  key_c: "이전 감마" # old-gamma
+  key_d: "기존 델타" # ${hashing('delta')}
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await mkdir(targetDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'order_l_english.yml'), sourceContent, 'utf-8')
+    await writeFile(join(targetDir, '___order_l_korean.yml'), targetContent, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['order-test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const output = await readFile(join(targetDir, '___order_l_korean.yml'), 'utf-8')
+    const outputKeys = output
+      .split(/\r?\n/)
+      .filter(line => line.startsWith('  key_'))
+      .map(line => line.trim().split(':')[0])
+    const parsedOutput = parseYaml(output)
+
+    expect(outputKeys).toEqual(['key_a', 'key_b', 'key_c', 'key_d'])
+    expect(parsedOutput.l_korean.key_a).toEqual(['[KO]alpha updated', hashing('alpha updated')])
+    expect(parsedOutput.l_korean.key_c).toEqual(['[KO]gamma updated', hashing('gamma updated')])
+  })
+
   it('업스트림 파일 해시를 저장해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
