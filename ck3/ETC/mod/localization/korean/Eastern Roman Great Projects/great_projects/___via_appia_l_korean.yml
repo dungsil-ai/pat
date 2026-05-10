@@ -2,11 +2,17 @@
   great_project_type_via_appia_restoration: "아피아 가도 복구" # 489923599414156015
   great_project_type_via_appia_restoration_desc: "'도로의 여왕'이라 불리는 아피아 가도는 한때 공화국과 제국의 주요 동맥이었습니다. 로마에서 브룬디시움 항구에 이르기까지, 이 길은 군단과 총독, 그리고 끝없는 상업의 물결을 실어 날랐습니다. 오늘날, 이 도로는 우리 국가의 서글픈 거울이 되었습니다. 무너진 다리, 산적들이 들끓는 언덕, 그리고 땅속으로 파묻힌 포석들이 뒤엉킨 구불구불한 오솔길에 불과합니다.\n\n이 350마일 길이의 경이로운 유산을 복구하는 것은 곧 이탈리아의 심장을 복구하는 일입니다. 이는 공학적 기술과 의지가 집약된 거대한 과업이자, 로마의 창의성이 돌아왔음을 세상에 알리는 선포가 될 것입니다. 완공되는 즉시, 군대와 교역품은 지난 5세기 동안 볼 수 없었던 속도로 우리 영토를 가로질러 흐르게 될 것입니다." # 10016301527846297738
   great_project_type_via_appia_restoration_contribution_secure_appia: "아피아 가도 확보" # 2057056982485969226
+  great_project_type_via_appia_restoration_contribution_name_secure_appia: "\" " # 8144695638692744150
   great_project_type_via_appia_restoration_contribution_node_of_capua: "카푸아의 결절점" # 5218346141284381108
+  great_project_type_via_appia_restoration_contribution_name_node_of_capua: "\" " # 8144695638692744150
   great_project_type_via_appia_restoration_contribution_bridges_of_beneventum: "베네벤툼의 다리들" # 9460684096667049390
+  great_project_type_via_appia_restoration_contribution_name_bridges_of_beneventum: "\" " # 8144695638692744150
   great_project_type_via_appia_restoration_contribution_pavers_guild: "포석공 길드" # 15154046511382695562
+  great_project_type_via_appia_restoration_contribution_name_pavers_guild: "\" " # 8144695638692744150
   great_project_type_via_appia_restoration_contribution_rome_ascent: "여왕의 비상: 로마" # 17801032191350976045
+  great_project_type_via_appia_restoration_contribution_name_rome_ascent: "\" " # 8144695638692744150
   great_project_type_via_appia_restoration_contribution_gateway_brundisium: "동방으로의 관문: 브룬디시움" # 12576623349238204494
+  great_project_type_via_appia_restoration_contribution_name_gateway_brundisium: "\" " # 8144695638692744150
   VIA_APPIA_LOCATION_1_TOOLTIP: "로마 백작령이 귀하의 영역 내에 있음" # 6127791380670900298
   VIA_APPIA_LOCATION_2_TOOLTIP: "티볼리 백작령이 귀하의 영역 내에 있음" # 15222699133623100022
   VIA_APPIA_LOCATION_3_TOOLTIP: "카푸아 백작령이 귀하의 영역 내에 있음" # 18182407113874994522
@@ -53,3 +59,15 @@
   via_appia_events.0007.t: "도로의 여왕이 재탄생하다" # 4423166724373410710
   via_appia_events.0007.desc: "브룬디시움의 수석 기술자로부터 승전보와 같은 보고가 도착했습니다. 마지막 포장석이 놓였습니다. 로마의 성문에서 아드리아해의 부두까지, 끊어지지 않은 단 하나의 검은 돌띠가 구제국의 심장과 바다를 연결합니다.\n\n수 세기 동안 침묵했던, 완벽하게 맞물린 #italic 바솔리#! 위를 구르는 쇠바퀴의 덜컹거림이 이제 아펜니노 언덕에 울려 퍼집니다. 치솟은 새 교량 위로, 그리고 한때 통과할 수 없었던 지형을 뚫고, 이 위대한 도로는 산과 협곡을 대수롭지 않은 불편함 정도로 여기며 곧고 정직하게 뻗어 나갑니다.\n\n이제 군단은 안토니누스 왕조 시대 이후 본 적 없는 속도로 수도에서 승선항까지 행군할 수 있으며, 이탈리아의 부는 안전한 단 하나의 동맥을 따라 흐릅니다. 우리는 단순히 도로를 포장한 것이 아닙니다. 우리는 상징을 부활시킨 것입니다. 비아 아피아는 로마의 질서와 야망이 고대의 중심지로 진정으로 돌아왔음을 지형 그 자체에 새겨넣은 선언입니다." # 4956052546984940627
   via_appia_events.0007.a: "모든 길은 다시 한번 로마로 통한다." # 16284168668603233032
+  great_project_type_tooltip_via_appia_restoration: "" # 17241709254077376921
+  great_project_name_possessive_via_appia_restoration: "" # 17241709254077376921
+  great_project_name_via_appia_restoration: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_secure_appia_desc: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_node_of_capua_desc: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_bridges_of_beneventum_desc: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_pavers_guild_desc: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_rome_ascent_desc: "" # 17241709254077376921
+  great_project_type_via_appia_restoration_contribution_gateway_brundisium_desc: "" # 17241709254077376921
+  via_appia_events.1111.t: "" # 17241709254077376921
+  via_appia_events.1111.desc: "" # 17241709254077376921
+  via_appia_events.1111.a: "" # 17241709254077376921

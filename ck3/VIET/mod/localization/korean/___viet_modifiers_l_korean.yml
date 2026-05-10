@@ -1604,4 +1604,24 @@
   VIET_lily_of_the_valley_with_side_effects_desc: "이 인물은 기억력 향상에 도움이 된다고 알려진 은방울꽃으로 만든 약을 정기적으로 섭취합니다. 하지만 은방울꽃의 독성과 아마도 약의 잘못된 제조 때문에, 이 인물은 몇 가지 부작용을 겪고 있는 것 같습니다." # 15629290587319070268
   VIET_jasmine_tea: "자스민 차를 즐김" # 16687744640553823848
   VIET_hired_skilled_peasant_cooks: "숙련된 농민 요리사 고용" # 17568221689379108684
+  VIET_intellectual_obsessions: "지적 강박" # 11285504059818903153
+  VIET_intellectual_obsessions_desc: "이 인물은 현재 특정 지적 주제에 매료되어 있으며, 다른 이들과 이에 대해 이야기하는 것을 즐깁니다. 누군가는 이러한 집착을 존경할 만하다고 생각할 수도 있지만, 다른 이들은 짜증스럽게 여길 수도 있습니다." # 9166487293209501674
+  VIET_tensions_between_locals_and_students: "현지인과 학생 사이의 긴장" # 17856542391028587467
+  VIET_university_fined: "학술 기관에 벌금 부과" # 18010218579288658481
+  VIET_university_fined_desc: "이 지역의 학술 기관들은 학생들의 현지 주민들에 대한 몰상식한 행동으로 인해 벌금을 부과받았습니다." # 8230327560427911586
+  VIET_university_punished: "학술 기관 처벌" # 8295127185497566255
+  VIET_university_punished_desc: "이 지역의 학술 기관들은 학생들의 현지 주민들에 대한 몰상식한 행동으로 인해 재정적, 법적, 정치적 수단을 동원한 엄중한 처벌을 받았습니다." # 4796649068908263330
+  VIET_university_restrained: "학술 기관 제재" # 9777962850410134772
+  VIET_university_restrained_desc: "이 지역의 학술 기관들은 학생들의 현지 주민들에 대한 몰상식한 행동을 제재하도록 강요받았습니다." # 5573932992834301475
+  VIET_villagers_fight_back: "마을 주민들이 현지 산적에 맞서 싸우다" # 13250345589507837324
+  VIET_villagers_fight_back_congratulations: "영웅적인 마을 주민들을 치하함" # 3318059185788313192
+  VIET_villagers_fight_back_learn_from_them: "영웅적인 마을 주민들에게 배우다" # 3253967922310705086
+  VIET_villagers_fight_back_learn_from_them_desc: "이곳의 당국은 현지 산적으로부터 가정을 지켜낸 영웅적인 마을 주민들의 전술을 통합하여, 산적과 외세 모두에 대비한 지역 방어를 계획했습니다." # 11219597486656607977
+  VIET_tactics_against_bandits: "$VIET_villagers_fight_back_learn_from_them$" # 14994282326627315619
+  VIET_tactics_against_bandits_desc: "이 인물은 영웅적인 마을 주민들이 현지 산적으로부터 가정을 지키기 위해 사용한 전술을 배웠습니다." # 646768343557174285
+  VIET_unchecked_human_waste: "방치된 오물" # 2471909978254329008
+  VIET_unchecked_human_waste_desc: "이곳의 당국은 이 지역의 오물 처리에 관한 규제를 시행하지 못했고, 이곳 정착지에 사는 사람들은 아무 생각 없이 온갖 쓰레기를 원하는 곳에 버리고 있습니다. 그 결과 공중 보건과 주변 지역의 미관이 크게 훼손되었습니다." # 16060243850771274159
+  VIET_regulated_human_waste: "오물 규제" # 299039940555051042
+  VIET_regulated_human_waste_desc: "현지 정착지에 오물이 점점 쌓여감에 따라, 당국은 공중 보건과 주변 지역의 미관을 유지하기 위해 오물 처리에 관한 엄격한 규칙을 시행할 수밖에 없게 되었습니다." # 10832682427226018565
+  VIET_successful_foresters: "성공적인 임업 관행" # 6625936892409399516
   xxxxxxxxxx: "xxx" # 4339025660404407451

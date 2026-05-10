@@ -77,3 +77,4 @@
   geo_modifier_genoa: "제노바 만" # 3149699743323901732
   geo_modifier_genoa_desc: "[GetBuilding('orchards_01').GetName]을 건설할 수 있습니다." # 4665281410328298330
   geo_modifier_venice: "베네치아만" # 7253619930943176043
+  geo_modifier_venice_desc: "" # 17241709254077376921

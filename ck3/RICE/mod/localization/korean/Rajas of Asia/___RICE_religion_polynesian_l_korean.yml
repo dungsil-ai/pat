@@ -1,0 +1,116 @@
+﻿l_korean:
+  polynesian_religion: "폴리네시아" # 12891295094908296745
+  polynesian_religion_adj: "폴리네시아" # 12891295094908296745
+  polynesian_religion_adherent: "폴리네시아" # 12891295094908296745
+  polynesian_religion_adherent_plural: "폴리네시아인" # 12579286192584543535
+  polynesian_religion_desc: "멜라네시아의 오스트로네시아 거주민들이 가진 다양한 신앙은 조상과 자연계의 정령에 대한 경외심으로 특징지어집니다." # 17375156000938820236
+  polynesian_pagan: "타푸교" # 12886768540868149072
+  polynesian_pagan_adj: "타푸이스트" # 7473203065451710956
+  polynesian_pagan_adherent: "타푸교도" # 7473203065451710956
+  polynesian_pagan_adherent_plural: "타푸교도들" # 3971553700995953453
+  polynesian_pagan_desc: "반드시 준수해야 할 많은 종교적 금기와 의식이 존재합니다." # 305139674617907724
+  polynesian_pagan_old: "구 타푸교" # 4357217571847318235
+  polynesian_pagan_old_adj: "고대 타푸이스트" # 8428512842157485741
+  polynesian_pagan_old_adherent: "구 타푸교도" # 8428512842157485741
+  polynesian_pagan_old_adherent_plural: "구 타푸교도들" # 15360001441106827628
+  polynesian_pagan_old_desc: "멜라네시아의 오스트로네시아 거주민들이 가진 다양한 신앙은 조상과 자연계의 정령에 대한 경외심으로 특징지어집니다." # 17375156000938820236
+  oceanic_animism_high_god_name: "카하우시브와레" # 7963329738977625253
+  oceanic_animism_high_god_name_possessive: "카하우시바레의" # 355977341749337391
+  oceanic_animism_high_god_shehe: "그녀" # 12016491316541096329
+  oceanic_animism_high_god_herselfhimself: "그녀 자신" # 14002039800353397263
+  oceanic_animism_high_god_herhis: "그녀의" # 4744265488540400035
+  oceanic_animism_high_god_name_alternate: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_high_god_name_alternate_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_creator_god_name: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_creator_god_name_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_creator_god_shehe: "그녀" # 12016491316541096329
+  oceanic_animism_creator_god_herhis: "그녀의" # 4744265488540400035
+  oceanic_animism_creator_god_herhim: "그녀의" # 4744265488540400035
+  oceanic_animism_health_god_name: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_health_god_name_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_health_god_shehe: "그녀" # 12016491316541096329
+  oceanic_animism_health_god_herhis: "그녀의" # 4744265488540400035
+  oceanic_animism_health_god_herhim: "그녀의" # 4744265488540400035
+  oceanic_animism_fertility_god_name: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_fertility_god_name_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_fertility_god_shehe: "그녀" # 12016491316541096329
+  oceanic_animism_fertility_god_herhis: "그녀의" # 4744265488540400035
+  oceanic_animism_fertility_god_herhim: "그녀의" # 4744265488540400035
+  oceanic_animism_wealth_god_name: "토-카비나나" # 4268083975233428414
+  oceanic_animism_wealth_god_name_possessive: "토-카비나나의" # 4134780745720069085
+  oceanic_animism_wealth_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_wealth_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_wealth_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_household_god_name: "$oceanic_animism_wealth_god_name$" # 4566641310938316
+  oceanic_animism_household_god_name_possessive: "$oceanic_animism_wealth_god_name_possessive$" # 881083587734883176
+  oceanic_animism_household_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_household_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_household_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_fate_god_name: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_fate_god_name_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_fate_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_fate_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_fate_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_knowledge_god_name: "$oceanic_animism_high_god_name$" # 16265825138458484900
+  oceanic_animism_knowledge_god_name_possessive: "$oceanic_animism_high_god_name_possessive$" # 5836758606429512547
+  oceanic_animism_knowledge_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_knowledge_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_knowledge_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_war_god_name: "$oceanic_animism_wealth_god_name$" # 4566641310938316
+  oceanic_animism_war_god_name_possessive: "$oceanic_animism_wealth_god_name_possessive$" # 881083587734883176
+  oceanic_animism_war_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_war_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_war_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_trickster_god_name: "토-카르부부" # 13049412635799053160
+  oceanic_animism_trickster_god_name_possessive: "토카르부부의" # 13511438990160089042
+  oceanic_animism_trickster_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_trickster_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_trickster_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_night_god_name: "카트" # 7878973917008653762
+  oceanic_animism_night_god_name_possessive: "카트의" # 6066827389694502117
+  oceanic_animism_night_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_night_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_night_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_water_god_name: "아다로" # 8861467828871775671
+  oceanic_animism_water_god_name_possessive: "아다로의" # 14175529716762867234
+  oceanic_animism_water_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_water_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_water_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_devil_name: "하투이바리" # 5811573926051576907
+  oceanic_animism_devil_name_possessive: "하투이브와리의" # 9677131519843983769
+  oceanic_animism_devil_shehe: "그" # 8803760235815837871
+  oceanic_animism_devil_herhis: "그의" # 14588382875684683839
+  oceanic_animism_devil_herselfhimself: "그 자신" # 10958483083757948805
+  oceanic_animism_pantheon_term: "아투아" # 17209051348982471602
+  oceanic_animism_pantheon_term_hashave: "가지다" # 4522849327189893929
+  oceanic_animism_pantheon_term_2: "$oceanic_animism_pantheon_term$" # 16002401047837575336
+  oceanic_animism_pantheon_term_3: "$oceanic_animism_pantheon_term$" # 16002401047837575336
+  oceanic_animism_house_of_worship: "성소" # 2303695743383420811
+  oceanic_animism_house_of_worship_plural: "성소" # 2303695743383420811
+  oceanic_animism_religious_symbol: "타파 가면" # 13522276878699966549
+  oceanic_animism_religious_text: "신성한 이야기" # 1916157011032334391
+  oceanic_animism_religious_head_title: "대샤먼" # 9784349143017949296
+  oceanic_animism_religious_head_title_name: "최고 의회" # 15038947742583190916
+  oceanic_animism_devotee: "신도" # 16996875086266395993
+  oceanic_animism_devotee_plural: "신도들" # 15412075443944701231
+  oceanic_animism_priest: "샤먼" # 9080399879002963726
+  oceanic_animism_priest_plural: "샤먼" # 18154816624900111499
+  oceanic_animism_priest_term_plural: "샤먼들" # 8586470736740655537
+  oceanic_animism_priest_term_alternate_plural: "장로들" # 15080058089524889273
+  oceanic_animism_bishop: "샤먼" # 9080399879002963726
+  oceanic_animism_bishop_plural: "샤먼" # 18154816624900111499
+  oceanic_animism_divine_realm: "천상" # 3534746288650277605
+  oceanic_animism_positive_afterlife: "하늘" # 7628510279792432062
+  oceanic_animism_negative_afterlife: "지하세계" # 8303066665719263468
+  oceanic_animism_death_name: "$oceanic_animism_devil_name$" # 6286270701328692582
+  oceanic_animism_death_name_possessive: "$oceanic_animism_devil_name_possessive$" # 16363148999295185458
+  oceanic_animism_death_shehe: "그" # 8803760235815837871
+  oceanic_animism_death_herhis: "그의" # 14588382875684683839
+  oceanic_animism_death_herhim: "그" # 10741446970129323846
+  oceanic_animism_witch_god_name: "$oceanic_animism_night_god_name$" # 4163142204172534920
+  oceanic_animism_witch_god_name_possessive: "$oceanic_animism_night_god_name_possessive$" # 953390809665865414
+  oceanic_animism_witch_god_herhis: "그의" # 14588382875684683839
+  oceanic_animism_witch_god_shehe: "그" # 8803760235815837871
+  oceanic_animism_witch_god_herhim: "그" # 10741446970129323846
+  oceanic_animism_witch_god_mistressmaster: "주인" # 15651513283164867314
+  oceanic_animism_witch_god_motherfather: "아버지" # 6057484439202864150

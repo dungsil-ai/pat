@@ -56,3 +56,11 @@
   zw_ip_state_factories_num_button_effect_3: "#white #b 현재 숫자: 5#!#!\n\n#yellow #b 숫자를 변경하려면 버튼을 다시 클릭하십시오.#!#!" # 11102262910789903499
   zw_ip_flexible_resource_conditions_button: "유연한 자원 제한" # 1692761486159130227
   zw_ip_flexible_resource_conditions_button_effect: "적합한 자원을 보유한 주들은 훨씬 더 높은 우선순위가 부여될 것이지만, 다른 주들 또한 고려될 것입니다." # 2950934586500849052
+  zw_ip_machine_button_desc: "" # 17241709254077376921
+  zw_ip_chemical_button_desc: "" # 17241709254077376921
+  zw_ip_glass_button_desc: "" # 17241709254077376921
+  zw_ip_electrics_button_desc: "" # 17241709254077376921
+  zw_ip_incorporated_button_desc: "" # 17241709254077376921
+  zw_ip_current_state_percent_button_desc: "" # 17241709254077376921
+  zw_ip_state_factories_num_button_desc: "" # 17241709254077376921
+  zw_ip_flexible_resource_conditions_button_desc: "" # 17241709254077376921

@@ -12,15 +12,6 @@
   combat_unit_type_main_battle_tanks_desc: "화력, 방호력, 기동력을 겸비하여 다양한 현대 전투 시나리오에 적합한 다목적 장갑차량으로, 특히 냉전 시대에 활약했습니다." # 5318585505778973692
   combat_unit_type_advanced_mechanized_infantry: "고급 기계화 보병" # 9251334120918951289
   combat_unit_type_advanced_mechanized_infantry_desc: "높은 기동성과 잘 갖춰진 장비를 갖춘 병력으로, 신속하게 배치되어 효과적인 전투 작전을 수행할 수 있습니다." # 1986523411113946641
-  extra: "호외" # 1397922501206358188
-  combat_unit_type_nuclear_submarine: "핵잠수함" # 4769949808005038725
-  combat_unit_type_nuclear_submarine_desc: "원자로로 동력을 얻는 잠수함으로, 장시간 수중 작전과 은밀한 교전이 가능해집니다." # 9537252790114505771
-  combat_unit_type_modern_destroyer: "현대식 구축함" # 17603364401659186608
-  combat_unit_type_modern_destroyer_desc: "빠르고 기동성 좋은 군함으로, 대공, 대잠, 수상전 수행을 위해 설계되었습니다." # 8762809459551384847
-  combat_unit_type_scout_modern_cruiser: "정찰 신형 순양함" # 17979634895304154867
-  combat_unit_type_scout_modern_cruiser_desc: "정찰 및 쾌속 대응 작전용으로 설계된 빠르고 민첩한 순양함." # 7334198320731959388
-  combat_unit_type_modern_battleship: "현대식 전함" # 2447851262823356905
-  combat_unit_type_modern_battleship_desc: "중무장과 두터운 장갑을 갖춰, 장거리 화력 지원과 해상 지배력을 제공하는 전함." # 15507200720762650209
   historical_population_of_france_1: "19세기 정체" # 6429505727594116601
   historical_population_of_france_2: "19세기 정체 해소" # 3049902143600546177
   population_of_brazil_end_of_slavery: "파벨라 붐" # 13336014164650035565
@@ -40,6 +31,8 @@
   magyar_linguistic_discrimination: "마자르 언어 차별" # 1747336998203999412
   ztr_collapse_revolt_crushed: "반란 진압" # 13753702703696074367
   ztr_collapse_revolt_appeased: "반란 진압됨" # 10613643250376741283
+  ztr_slaveholder_crackdown_modifier: "노예 소유주 탄압" # 15763594464010160824
+  ztr_slaveholder_crackdown_modifier_desc: "행정 자원이 식민지 엘리트들의 반발에 맞서 노예제 폐지를 강제하는 데 묶여 있습니다." # 5648448887898597447
   hungarian_rights_granted: "헝가리 권리 부여" # 17210047883872905273
   czech_rights_granted: "체코 권리 승인" # 12569106526029899358
   austrian_monarchy_humiliated: "오스트리아 군주국 굴욕" # 16032321504496705215
@@ -48,14 +41,13 @@
   ztr_geneva_convention: "제네바 협약 가입" # 8328164887717967179
   ztr_society_of_nations: "국제 연맹 회원국" # 9942084941736359378
   ztr_onu_member: "유엔 회원국" # 5850780921071490936
-  ztr_onu_permanent_member: "상임 유엔 회원국" # 5200278235416003262
-  ztr_un_resolution_refused_modifier: "유엔 결의안 거부됨" # 7152099822647331212
+  ztr_onu_permanent_member: "상임 유엔 회원국" # 16036503670904985583
   ztr_un_resolution_veto_modifier: "유엔 결의안 거부" # 2710470628096133622
   ztr_un_resolution_used_veto_modifier: "유엔 결의안 거부권 행사" # 995780768989263584
   historical_population_of_germany: "19세기 호황" # 8751212409197186862
   population_of_brazil_during_slavery: "독립 이후 노예제" # 15572915988515035870
   population_of_brazil_during_slavery_player: "독립 이후 노예제" # 15572915988515035870
-  jewel_in_the_crown_modifier: "왕관의 보석" # 18128039583476276909
+  jewel_in_the_crown_modifier: "아시아의 보석" # 10148807465016620676
   colonial_agricultural_shift_player: "식민지 농업 전환" # 15672124791499522617
   colonial_agricultural_shift: "식민지 농업 전환" # 15672124791499522617
   ai_strategy_un_stability: "유엔 안정 전략" # 11677206720841615480
@@ -69,17 +61,10 @@
   demographic_stage_6: "후기 탈산업 인구 단계" # 14587312571643805995
   demographic_stage_7: "정체된 인구 단계" # 18289595806638711805
   demographic_stage_8: "인구 감소 단계" # 14946610877081019609
-  modern_medicine_0: "19세기 초기 의학" # 7725175886867872128
-  modern_medicine_1: "19세기 후기 의학" # 5160827131655618375
-  modern_medicine_2: "20세기 초 의학" # 1297894440752431987
-  modern_medicine_3: "20세기 중반 의학" # 13241502805352998184
-  modern_medicine_4: "후기 20세기 의학" # 816554555071724663
   combat_unit_type_self_propelled_artillery: "자주포" # 15308249461666024741
   combat_unit_type_self_propelled_artillery_desc: "이동식 받침대에 장착된 대포로, 더 큰 유연성과 신속한 배치가 가능합니다." # 2293583417249847503
   combat_unit_type_rocket_artillery: "로켓 포병" # 15081891605769264607
   combat_unit_type_rocket_artillery_desc: "로켓을 주된 발사체로 사용하는 대포로, 더 긴 사거리와 강력한 폭발력을 자랑합니다." # 16316984718513414289
-  combat_unit_type_modern_carrier: "핵항공모함" # 12113550812919965838
-  combat_unit_type_modern_carrier_desc: "원자로 동력 항공모함으로, 작전 배치를 연장하고 병참 제약을 줄입니다." # 2533278361126320809
   tactical_weapons: "전술 무기" # 10035480302676491947
   mobilization_option_close_air_support: "근접 항공 지원" # 11561220155863772577
   mobilization_option_close_air_support_desc: "특수 항공기가 공대지 무장으로 적 지상군을 직접 공격합니다." # 6681926811999170611
@@ -101,29 +86,10 @@
   mobilization_option_satellites_support_desc: "위성은 작전 조정을 위해 사용될 수 있는 우주 기반 정찰 시스템입니다." # 6530262384619804674
   mobilization_option_penicillin_medical_support: "페니실린 의료 지원" # 3255916075580922611
   mobilization_option_penicillin_medical_support_desc: "페니실린은 감염을 치료하고 전장에서 생명을 구할 수 있는 강력한 항생제입니다." # 7780820277168222110
-  goods_input_light_fuel_add: "@light_fuel! 경유 투입" # 6216783065568310915
-  goods_input_light_fuel_add_desc: "건물에서 소비되는 @light_fuel! 경량 연료의 양" # 14166640901742137640
-  goods_input_pharmaceuticals_add: "@pharmaceuticals! 의약품 투입" # 6527510816699650899
-  goods_input_pharmaceuticals_add_desc: "건물이 소비하는 @pharmaceuticals! 의약품의 양" # 16489838676503468249
-  goods_input_helicopters_add: "@헬리콥터! 헬리콥터 입력" # 2831530052579150527
-  goods_input_helicopters_add_desc: "건물들의 @helicopters! 헬리콥터 소비량" # 5798783979640028336
-  goods_input_processors_add: "@processors! 가공품 투입물" # 16411711618617499633
-  goods_input_processors_add_desc: "건물들의 @processors! 프로세서 소비량" # 14899103024115035791
-  goods_input_missiles_add: "@missiles! 미사일 입력" # 13473186616256652322
-  goods_input_missiles_add_desc: "@missiles! 건물에서 소비되는 미사일" # 35731834594150191
-  goods_input_good_uranium_add: "@good_uranium! 우라늄 투입량" # 3694036268368242828
-  goods_input_good_uranium_add_desc: "건물들이 소비하는 @good_uranium! 우라늄의 양" # 17391728382152936258
-  goods_input_computer_add: "@computer! 컴퓨터 입력" # 8187064360723492017
-  goods_input_computer_add_desc: "건물이 소비하는 @computer! 컴퓨터의 양" # 13921171100089157568
-  goods_input_electroniccomponents_add: "@electroniccomponents! 전자 부품 투입" # 9918339675582381302
-  goods_input_electroniccomponents_add_desc: "건물이 소모하는 @electroniccomponents! 전기 부품의 양" # 3384994248815078320
-  goods_input_space_assets_add: "@space_assets! 우주 자산 입력" # 17240164378081833602
-  goods_input_space_assets_add_desc: "건물에서 소비되는 @space_assets! 우주 자산의 양" # 2427399388364500334
-  goods_input_water_add: "@water! 물 투입량" # 9716105377853744329
-  goods_input_water_add_desc: "@water! 건물에서 소비되는 물의 양" # 3708515668361857950
   goods_input_telecommunications_add: "@telecommunications! 전기 통신 투입" # 17547414138926758440
   goods_input_telecommunications_add_desc: "건물들이 소비하는 @telecommunications! 통신량" # 10877859509653849249
   goods_input_robotics_add: "@robotics! 로봇 공학 입력" # 708192872807179531
+  goods_input_robotics_add_desc: "건물에서 소비하는 @robotics! 로봇공학의 양" # 16017692447615509263
   electronic_support: "전자 지원" # 8957627629172904963
   remote_support: "원격 지원" # 4406339306841678023
   nuclear_weapons: "핵무기" # 5627323961255064452
@@ -163,40 +129,12 @@
   unit_combat_unit_type_advanced_mechanized_infantry_defense_mult_desc: "고급 기계화 보병\n부대 방어 배율" # 9511330153957894274
   mobilization_option_rocket_artillery: "로켓" # 12193992866038969155
   mobilization_option_rocket_artillery_desc: "로켓은 적 병력에 치명적인 양의 폭발물을 투하할 수단을 제공합니다." # 16287705143369363726
-  unit_combat_unit_type_nuclear_submarine_offense_mult: "$combat_unit_type_nuclear_submarine$\n$unit_offense_mult$" # 13749569837256957485
-  unit_combat_unit_type_nuclear_submarine_offense_mult_desc: "$combat_unit_type_nuclear_submarine$\n$unit_offense_mult$" # 13749569837256957485
-  unit_combat_unit_type_nuclear_submarine_defense_mult: "핵잠수함\n유닛 방어력 배수" # 6847517806242275143
-  unit_combat_unit_type_nuclear_submarine_defense_mult_desc: "핵잠수함\n유닛 방어력 배수" # 6847517806242275143
-  unit_combat_unit_type_modern_destroyer_offense_mult: "현대식 구축함\n유닛 공격력 배율" # 4168361349374859708
-  unit_combat_unit_type_modern_destroyer_offense_mult_desc: "현대식 구축함\n유닛 공격력 배율" # 4168361349374859708
-  unit_combat_unit_type_modern_destroyer_defense_mult: "현대 구축함\n유닛 방어 배율" # 8351822840144897729
-  unit_combat_unit_type_modern_destroyer_defense_mult_desc: "현대 구축함\n유닛 방어 배율" # 8351822840144897729
-  unit_combat_unit_type_scout_modern_cruiser_offense_mult: "정찰 현대식 순양함\n부대 공격력 배율" # 8458386781396285190
-  unit_combat_unit_type_scout_modern_cruiser_offense_mult_desc: "정찰 현대식 순양함\n부대 공격력 배율" # 8458386781396285190
-  unit_combat_unit_type_scout_modern_cruiser_defense_mult: "현대식 정찰 순양함\n부대 방어력 배율" # 14099398901075163522
-  unit_combat_unit_type_scout_modern_cruiser_defense_mult_desc: "현대식 정찰 순양함\n부대 방어력 배율" # 14099398901075163522
-  unit_combat_unit_type_modern_battleship_offense_mult: "현대 전함\n유닛 공격력 배율" # 2641478636551113578
-  unit_combat_unit_type_modern_battleship_offense_mult_desc: "현대 전함\n유닛 공격력 배율" # 2641478636551113578
-  unit_combat_unit_type_modern_battleship_defense_mult: "현대식 전함\n부대 방어 배율" # 8990609641489432296
-  unit_combat_unit_type_modern_battleship_defense_mult_desc: "현대식 전함\n부대 방어 배율" # 8990609641489432296
-  unit_combat_unit_type_modern_carrier_offense_mult: "현대식 항공모함\n유닛 공격력 배율" # 927440194017303436
-  unit_combat_unit_type_modern_carrier_offense_mult_desc: "현대식 항공모함\n유닛 공격력 배율" # 927440194017303436
-  unit_combat_unit_type_modern_carrier_defense_mult: "현대형 항공모함\n부대 방어 배율" # 11471623600717307509
-  unit_combat_unit_type_modern_carrier_defense_mult_desc: "현대형 항공모함\n부대 방어 배율" # 11471623600717307509
-  dev_0_country: "빈곤한 국가" # 4710663863017141270
-  dev_1_country: "저개발 국가" # 3591122383854812374
-  dev_2_country: "개발도상국" # 3598241339990793449
-  dev_3_country: "준개발국" # 17851174164431074641
-  dev_4_country: "개발도상국" # 18048879475046107705
-  dev_5_country: "선진국" # 6845750316031411147
-  dev_6_country: "고도 선진국" # 95541061879628258
-  dev_7_country: "초선진국" # 5216409013344540310
-  dev_8_country: "초선진국" # 3725679349394451189
-  decolonization_liberty_desire_counter_modifier: "탈식민화 규칙 상쇄 없음" # 12341328749240625631
   ztr_superpower: "초강대국" # 11786870363436856141
   ztr_eec_member: "유럽 경제 공동체 회원국" # 3262891299534771546
   ztr_eu_member: "EU 회원국" # 17046844086253143743
   EUROPEAN_UNION: "유럽 연합" # 16919209361880444817
+  ZTR_EU_INVITE_RESTRICTION: "우리가 [Concept('concept_european_union','$EUROPEAN_UNION$')]을 주도한다면 대상은 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유해야 하며, 그렇지 않다면 대상은 이를 보유해서는 안 됩니다." # 16980428900522927037
+  ZTR_EU_JOIN_RESTRICTION: "우리가 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유하고 있다면 대상 강대국 블록은 [Concept('concept_european_union','$EUROPEAN_UNION$')]이어야 하며, 그렇지 않다면 그렇게 되어서는 안 됩니다." # 12949186387891221248
   combat_unit_type_giant_death_robot: "거대 죽음의 로봇" # 4297619975635627934
   combat_unit_type_giant_death_robot_desc: "거대한 기계화 인공지능 병기는 첨단 무기, 방어 체계, 그리고 장갑을 갖추고 있으며, 전장에서 적군을 궤멸시킬 수 있습니다." # 16345664279852921073
   ztr_merge_power_bloc_diplomacy: "권력 블록 병합" # 7653944448458803827
@@ -261,3 +199,161 @@
   ztr_merge_power_bloc_diplomacy_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]으로부터 $ztr_merge_power_bloc_diplomacy$를 거절당했습니다." # 137099496714189416
   ztr_similar_type_of_government_tt: "비슷한 [Concept('concept_ideology','$concept_ideology$')]를 가지고 있습니다." # 2794886697244342428
   HOSTILE_NUCLEAR_NEIGHBOUR: "#negative_value 적대적#! 핵 이웃" # 5310339023016893041
+  DEVELOPING_OWN_NUCLEAR_WEAPONS: "자체 핵무기 개발" # 17629679344431351418
+  imf_modernization_research_bonus_modifier: "지속적인 근대화" # 15495412835571883962
+  imf_modernization_research_bonus_modifier_desc: "IMF 근대화 목표를 달성함에 따라, 우리의 더 강력한 제도와 더 넓은 교육 기반이 이제 국가 연구를 가속합니다." # 7401326234138901467
+  extreme_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  big_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  medium_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  small_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  tiny_imf_help_modifier: "IMF 개입" # 4219385685124753401
+  ztr_wto_member_modifier: "WTO 가입" # 14536909739268106523
+  ztr_wto_member_modifier_desc: "WTO 체제 가입은 무역 장벽을 낮추고 국제 시장에 대한 접근성을 향상합니다." # 4985197518550478241
+  ztr_icc_member_modifier: "ICC 관할권" # 18181978016109285627
+  ztr_icc_member_modifier_desc: "국제형사재판소 체제는 회원국들에게 어느 정도의 법적 및 외교적 제약을 부과합니다." # 15964460468966646811
+  ztr_icc_investigation_modifier: "ICC 조사" # 7495670902019161460
+  ztr_icc_investigation_modifier_desc: "국제 검찰이 우리의 행위를 면밀히 조사하고 있어, 위신이 실추되고 국내 정통성이 약화하고 있습니다." # 17104037238301825375
+  ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
+  ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
+  land_reclamation_struggle_modifier: "간척 사업의 투쟁" # 17326798404457842216
+  geographic_region_oceania: "오세아니아" # 77874904389657804
+  modern_medicine_0: "19세기 초 복지" # 5751458070186196927
+  modern_medicine_1: "19세기 후반 복지" # 135381448794086416
+  modern_medicine_2: "20세기 초반 복지" # 4483400645717160092
+  modern_medicine_3: "20세기 중반 복지" # 15001341120159964167
+  modern_medicine_4: "20세기 후반 복지" # 15405211453650442447
+  ztr_intelligentsia_happy_modifier: "지식인층 행복" # 5207861585624766592
+  ztr_intelligentsia_unhappy_modifier: "지식인층 불행" # 1121835563010389946
+  ztr_ccp_repression_campaign: "반공 포위망" # 17155761170804987142
+  ztr_ccp_mass_line_campaign: "공산주의 대중 노선" # 13142328998336719798
+  ztr_ccp_united_front_campaign: "항일민족통일전선" # 15860789598692665030
+  ztr_ccp_long_march_legacy: "대장정" # 12655507841875296042
+  ztr_has_subject_or_decolonizing_colonial_state_tt: "#v 속국#! 또는 #gold_value 본토 문화#!를 보유하고 있으며 탈식민지화를 원하는 [ztr_concept_colonial_state]을(를) 가지고 있음" # 2472681735199936670
+  dev_0_country: "빈곤국 (0.0-0.7)" # 708956771100379025
+  dev_1_country: "저개발 국가 (0.7-1.5)" # 10300701184869704493
+  dev_2_country: "개발도상국 (1.5-2.5)" # 14676741617938985556
+  dev_3_country: "반개발 국가 (2.5-5.0)" # 18039714128973017058
+  dev_4_country: "부분 개발 국가 (5.0-7.0)" # 16050453963761183635
+  dev_5_country: "개발 국가 (7.0-12.0)" # 15638077322575474611
+  dev_6_country: "고도 개발 국가 (12.0-20.0)" # 17673676366524091039
+  dev_7_country: "초고도 개발 국가 (20.0-30.0)" # 10775759260935647632
+  dev_8_country: "극초고도 개발 국가 (30.0+)" # 9655632452052450833
+  ztr_un_condemned_modifier: "유엔의 규탄을 받음" # 17019021942176353356
+  ztr_demographic_boom_modifier: "인구 통계학적 호황" # 14927374265680035246
+  ztr_demographic_boom_modifier_desc: "현대 의학이 이 주(state)의 영아 사망률을 급격히 낮추어 인구 급증을 유발했으며, 출생률이 조정됨에 따라 점차 둔화하고 있습니다." # 9218338086404000028
+  ztr_demographic_boom_generic_modifier: "식민지 인구 통계학적 호황" # 969294770492294722
+  ztr_demographic_boom_generic_modifier_desc: "초기 공중 보건 조치가 이 영토의 사망률을 낮추기 시작하여, 완만하지만 지속적인 인구 증가를 이끌고 있습니다." # 18334521635708409990
+  ztr_religious_extremism_mitigation_modifier: "반극단주의 조치" # 14542122719973322113
+  ztr_religious_extremism_mitigation_modifier_desc: "식민지 영토 내 종교적 극단주의 확산을 막기 위해 추가적인 관료 자원과 예산이 투입되었습니다." # 8619212177446457143
+  ztr_colonial_war_mobilization_modifier: "식민지 전쟁 동원" # 4150815846587040280
+  ztr_colonial_war_mobilization_modifier_desc: "우리는 식민지 봉기를 진압하기 위해 국가 기구를 동원했습니다. 권위가 중앙 집중화되고 동원 비용이 저렴해지지만, 우리의 정통성과 위신은 하락하며 긴장이 고조될 때마다 국제적인 비난을 받게 됩니다." # 16959686923891172924
+  ztr_negotiated_transition_modifier: "협상에 의한 이양" # 2874703945914727708
+  ztr_negotiated_transition_modifier_desc: "종주국이 본토 영토를 양도하고 광범위한 자치를 허용했습니다. 독립 운동은 가장 시급한 불만을 상실했고, 충성파 파벌이 우세해졌습니다." # 13884416949805345200
+  ztr_unify_countries: "통합 제안" # 3863093269646267814
+  ztr_unify_countries_desc: "우리와 언어, 신앙, 오랜 우정을 공유하는 소국과 평화롭고 완전한 통합을 제안합니다. 그들의 주는 우리의 국가적 의석을 제공하는 대가로 우리의 영토가 됩니다." # 4845621267961480003
+  ztr_unify_countries_effects_desc: "[TARGET_COUNTRY.GetName]의 모든 주가 [INITIATOR_COUNTRY.GetName]으로 이전됩니다. [TARGET_COUNTRY.GetName]은 소멸하고 모든 조약은 해지되며, [INITIATOR_COUNTRY.GetName]은 10년 동안 통합 보너스를 얻습니다." # 14709238770588999525
+  ztr_unify_countries_name: "$ztr_unify_countries$" # 6731009785811904536
+  ztr_unify_countries_action_name: "통일 제안" # 3863093269646267814
+  ztr_unify_countries_proposal_notification_name: "통일 제안" # 9776364677184689608
+  ztr_unify_countries_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 평화롭고 완전한 통합을 제안하여 소국의 모든 주와 책임을 계승하고자 합니다." # 3618386655317462582
+  ztr_unify_countries_proposal_accepted_name: "$ztr_unify_countries$ 수락됨" # 9076633197220129347
+  ztr_unify_countries_proposal_accepted_desc: "[TARGET_COUNTRY.GetName]이 우리의 통합 제안을 수락하고 [INITIATOR_COUNTRY.GetName]으로 흡수되었습니다." # 4506911330289498610
+  ztr_unify_countries_proposal_declined_name: "$ztr_unify_countries$ 거절됨" # 16381506116848362033
+  ztr_unify_countries_proposal_declined_desc: "[TARGET_COUNTRY.GetName]이 우리의 평화적 통합 제안을 거부했습니다." # 8820157350382245219
+  ztr_unify_countries_proposal_third_party_accepted_name: "$ztr_unify_countries$ 승인됨" # 7921515679244082519
+  ztr_unify_countries_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName]이 [INITIATOR_COUNTRY.GetName]과 통합되었습니다." # 15601214333009977700
+  ztr_unify_countries_proposal_third_party_declined_name: "$ztr_unify_countries$ 거부됨" # 3213316392403096779
+  ztr_unify_countries_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]이(가) [INITIATOR_COUNTRY.GetName]의 통합 제안을 거부했습니다." # 17932693402596327092
+  ztr_unify_countries_accept_effect_tt: "[SCOPE.sCountry('target_country').GetName]의 모든 [Concept('concept_state','주')]가 우리에게 이전되며, [SCOPE.sCountry('target_country').GetName]은(는) 주권 국가로서 해체됩니다." # 8029827105790821525
+  ztr_tooltip_countries_share_primary_culture: "우리는 그들과 [Concept('concept_culture','$concept_culture$')]을(를) 공유합니다." # 16386706001946949364
+  ztr_tooltip_countries_state_contiguity: "우리는 그들의 주와 접해 있거나 겹치는 본토 주를 소유하고 있습니다." # 15573721804579337177
+  ztr_tooltip_both_not_totalitarian: "두 국가 모두 #n 전체주의#!가 아닙니다." # 15208378740411282318
+  ztr_tooltip_countries_have_cultural_or_relations_ground: "우리는 [Concept('concept_culture','$concept_culture$')]을(를) 공유하며 그들과 최소 #v 중립#! 이상의 관계를 유지하고 있습니다." # 4973520652305543524
+  ztr_tooltip_countries_can_unify: "모든 통합 선결 조건이 충족되었습니다: 대상이 소규모 이웃 국가이고, 우리가 [Concept('concept_prestige','$concept_prestige$')] 면에서 그들보다 우위에 있으며, 문화적, 종교적, 또는 관계적 기반을 갖추었고, 정치적 성향이 충돌하지 않습니다." # 611555535838161004
+  ztr_unified_country_integration: "통합 국가 합병" # 17884141130842282463
+  ztr_unified_country_integration_desc: "자매 국가를 흡수함으로써 국민적 자부심이 고취되었고, 국가 권위가 강화되었으며, 10년간 이주와 내부 안정에 큰 활력을 불어넣었습니다." # 5209845515215718634
+  ZTR_UNIFY_ACCEPT_SHARED_PRIMARY_CULTURE: "공유된 [Concept('concept_culture','$concept_culture$')]" # 12281526414553979626
+  ZTR_UNIFY_ACCEPT_SHARED_RELIGION: "공유된 [Concept('concept_state_religion','국교')]" # 12199078323848284435
+  ZTR_UNIFY_ACCEPT_SAME_POWER_BLOC: "이미 동일한 [Concept('concept_power_bloc','$concept_power_bloc$')]에 속해 있음" # 4433870577380131616
+  ship_type_modern_destroyer: "현대식 구축함" # 17603364401659186608
+  ship_type_modern_destroyer_desc: "센서, 대잠수함전, 함대 방공을 중심으로 설계된 고속 유도 미사일 호위함입니다." # 4147474231075360199
+  ship_type_modern_cruiser: "현대식 순양함" # 5839926847830553812
+  ship_type_modern_cruiser_desc: "미사일 무장, 첨단 지휘 체계, 원양 작전 능력을 결합한 장거리 수상 전투함입니다." # 9016409238546324640
+  ship_type_modern_battleship: "현대식 전함" # 2447851262823356905
+  ship_type_modern_battleship_desc: "후기 전함 개조 철학을 극한으로 끌어올린 함선으로, 두꺼운 장갑, 대구경 함포, 유도 무기, 현대적 지휘 체계를 갖추고 있습니다." # 3610255583372770132
+  ship_type_nuclear_carrier: "현대식 항공모함" # 6115740107773526426
+  ship_type_nuclear_carrier_desc: "장기간의 파병을 위해 대양 전역에 항공 전력을 투사할 수 있는 현대식 항공모함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 7505838519474130615
+  ship_type_nuclear_submarine: "현대식 잠수함" # 17073630598133626773
+  ship_type_nuclear_submarine_desc: "긴 작전 지속 능력, 낮은 피탐지성, 전략 유도 미사일 운용 능력을 갖춘 현대식 잠수함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 9673238374713532094
+  ship_mod_slot_electronics: "전자 장비" # 8906035645440450140
+  ship_mod_slot_missiles: "미사일" # 4292618955463830602
+  ship_mod_slot_air_wing: "항공단" # 8734574285905660555
+  ship_mod_modern_battleship_propulsion_light: "밥콕 앤 윌콕스 보일러 공장" # 2930505010196068370
+  ship_mod_modern_battleship_propulsion_medium: "웨스팅하우스 기어드 터빈" # 15392616245045447929
+  ship_mod_modern_battleship_propulsion_high: "LM2500 가스 터빈 개조" # 15009020161651739225
+  ship_mod_modern_carrier_propulsion_light: "웨스팅하우스 증기 터빈" # 5975261273163079091
+  ship_mod_modern_carrier_propulsion_medium: "포스터 휠러 과열 증기 플랜트" # 14334038048926412148
+  ship_mod_modern_carrier_propulsion_nuclear: "A2W 원자로 플랜트" # 1430339196316541033
+  ship_mod_modern_cruiser_propulsion_light: "웨스팅하우스 증기 순양함 플랜트" # 826609499389918089
+  ship_mod_modern_cruiser_propulsion_medium: "COSAG 추진 기관" # 2789004762459610196
+  ship_mod_modern_cruiser_propulsion_high: "LM2500 COGAG 기관" # 6420250898145057139
+  ship_mod_modern_destroyer_propulsion_light: "포스터 휠러 보일러 기관" # 16888730083047638088
+  ship_mod_modern_destroyer_propulsion_medium: "올림푸스-타인 COGOG 기관" # 722231647869528225
+  ship_mod_modern_destroyer_propulsion_high: "LM2500 COGAG 기관" # 6420250898145057139
+  ship_mod_nuclear_submarine_propulsion_light: "페어뱅크스-모스 디젤-전기 기관" # 202577530181119526
+  ship_mod_nuclear_submarine_propulsion_medium: "스털링 AIP 기관" # 9938883910949871663
+  ship_mod_nuclear_submarine_propulsion_nuclear: "S5W 원자력 반응로 기관" # 15181827850936053034
+  ship_mod_ztr_radio_direction_finding: "무선 방향 탐지" # 504765110282223718
+  ship_mod_ztr_combat_information_center: "전투 정보 센터" # 11060935202646189790
+  ship_mod_ztr_networked_battle_management: "네트워크 기반 전투 관리" # 6685610648704223582
+  ship_mod_ztr_simple_missile_battery: "간이 미사일 포대" # 11477468314032515632
+  ship_mod_ztr_guided_missile_battery: "유도 미사일 포대" # 2710828847486023264
+  ship_mod_ztr_vertical_launch_cells: "수직 발사대" # 10444469886120951636
+  ship_mod_ztr_jet_air_group: "제트기 항공단" # 2307153326743369578
+  ship_mod_ztr_supersonic_air_group: "초음속 항공단" # 2119748134741284317
+  ship_mod_ztr_integrated_air_wing: "통합 항공단" # 7228690703235393323
+  utility_mod_ztr_close_in_weapon_system: "근접 방어 무기 체계" # 773802922752474556
+  utility_mod_ztr_electronic_warfare_suite: "전자전 장비" # 8909014822609662070
+  utility_mod_ztr_replenishment_at_sea: "해상 보급" # 2330426103735193216
+  ship_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
+  ship_ship_type_nuclear_submarine_hull_damage_mult_desc: "$ship_type_nuclear_submarine_desc$" # 16377611638472233102
+  ship_ship_type_modern_destroyer_hull_damage_mult: "$ship_type_modern_destroyer$ $ship_hull_damage_mult$" # 8723697902834015255
+  ship_ship_type_modern_destroyer_hull_damage_mult_desc: "$ship_type_modern_destroyer_desc$" # 12299683279285510088
+  ship_ship_type_modern_cruiser_hull_damage_mult: "$ship_type_modern_cruiser$ $ship_hull_damage_mult$" # 15011784714524327815
+  ship_ship_type_modern_cruiser_hull_damage_mult_desc: "$ship_type_modern_cruiser_desc$" # 13626439497824630566
+  ship_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
+  ship_ship_type_modern_battleship_hull_damage_mult_desc: "$ship_type_modern_battleship_desc$" # 15243136323690654141
+  ship_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
+  ship_ship_type_nuclear_carrier_hull_damage_mult_desc: "$ship_type_nuclear_carrier_desc$" # 1199253534447350472
+  ship_battle_against_ship_type_modern_destroyer_accuracy_mult: "$ship_type_modern_destroyer$ $ship_accuracy_mult$" # 17845953876580439276
+  ship_battle_against_ship_type_modern_cruiser_accuracy_mult: "$ship_type_modern_cruiser$ $ship_accuracy_mult$" # 5837644686576132197
+  ship_battle_against_ship_type_modern_battleship_accuracy_mult: "$ship_type_modern_battleship$ $ship_accuracy_mult$" # 11663134733858502458
+  ship_battle_against_ship_type_nuclear_carrier_accuracy_mult: "$ship_type_nuclear_carrier$ $ship_accuracy_mult$" # 5932690826793964288
+  ship_battle_against_ship_type_nuclear_submarine_accuracy_mult: "$ship_type_nuclear_submarine$ $ship_accuracy_mult$" # 1802842601435403430
+  ship_mod_ztr_modern_destroyer_simple_missile_battery: "P-15 테르밋 캐니스터 발사기" # 15205141123885401300
+  ship_mod_ztr_modern_destroyer_guided_missile_battery: "RGM-84 하푼 발사기" # 9543436787272522708
+  ship_mod_ztr_modern_destroyer_vertical_launch_cells: "Mk 41 수직 발사 셀" # 17879440955622511268
+  ship_mod_ztr_modern_cruiser_simple_missile_battery: "테리어 트윈암 발사기" # 10126832819434809226
+  ship_mod_ztr_modern_cruiser_guided_missile_battery: "탈로스 유도 미사일 포대" # 9794210167820975547
+  ship_mod_ztr_modern_cruiser_vertical_launch_cells: "이지스 Mk 41 타격 셀" # 2069242595110504478
+  ship_mod_ztr_modern_battleship_simple_missile_battery: "레굴루스 미사일 갑판" # 16734362980346854633
+  ship_mod_ztr_modern_battleship_guided_missile_battery: "토마호크 장갑 상자 발사기" # 17998623046107843987
+  ship_mod_ztr_modern_battleship_vertical_launch_cells: "전함 VLS 타격 셀" # 3073387556228825136
+  ship_mod_ztr_nuclear_submarine_simple_missile_battery: "레굴루스 미사일 격납고" # 1876552417792756304
+  ship_mod_ztr_nuclear_submarine_guided_missile_battery: "서브 하푼 발사관" # 8782509142185053436
+  ship_mod_ztr_nuclear_submarine_vertical_launch_cells: "수직 토마호크 발사관" # 7013150287953828320
+  unit_combat_unit_type_modern_tier_marines_offense_mult: "$combat_unit_type_modern_tier_marines$ $unit_offense_mult$" # 4580455704438246194
+  unit_combat_unit_type_modern_tier_marines_offense_mult_desc: "$combat_unit_type_modern_tier_marines$ $unit_offense_mult$" # 4580455704438246194
+  unit_combat_unit_type_modern_tier_marines_defense_mult: "$combat_unit_type_modern_tier_marines$ $unit_defense_mult$" # 7262516624256241784
+  unit_combat_unit_type_modern_tier_marines_defense_mult_desc: "$combat_unit_type_modern_tier_marines$ $unit_defense_mult$" # 7262516624256241784
+  unit_combat_unit_type_advanced_tier_marines_offense_mult: "$combat_unit_type_advanced_tier_marines$ $unit_offense_mult$" # 936015177247707258
+  unit_combat_unit_type_advanced_tier_marines_offense_mult_desc: "$combat_unit_type_advanced_tier_marines$ $unit_offense_mult$" # 936015177247707258
+  unit_combat_unit_type_advanced_tier_marines_defense_mult: "$combat_unit_type_advanced_tier_marines$ $unit_defense_mult$" # 7755331030580688335
+  unit_combat_unit_type_advanced_tier_marines_defense_mult_desc: "$combat_unit_type_advanced_tier_marines$ $unit_defense_mult$" # 7755331030580688335
+  combat_unit_type_modern_tier_marines: "현대 해병대" # 9344338042151159955
+  combat_unit_type_modern_tier_marines_desc: "신속한 상륙과 지속적인 해안 작전을 수행하도록 장비된 전문 상륙 부대." # 4164789653898445236
+  combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
+  combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
+  extra: "호외" # 1397922501206358188
+  ztr_swiss_neutral_financial_hub: "중립적 금융 허브" # 7435698664851519347
+  ztr_swiss_neutral_financial_hub_desc: "스위스의 중립성과 연방 다원주의, 그리고 안전한 회담 장소라는 명성은 유럽 전역의 자본과 채권자, 상업적 신뢰를 끌어모으고 있습니다." # 9479597905821198894

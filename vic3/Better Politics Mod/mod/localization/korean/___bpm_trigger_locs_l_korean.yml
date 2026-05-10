@@ -1,9 +1,254 @@
 ﻿l_korean:
-  TRIGGER_IS_EXTREMIST: "이익집단이 극단주의자입니다" # 11114397170570662530
-  NOT_TRIGGER_IS_EXTREMIST: "이익집단은 #bold 아니다#! 극단주의자가" # 14780416094577691969
+  TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) 극단주의자입니다" # 10888315677890559676
+  NOT_TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) #bold 극단주의자가 아닙니다#!" # 1052997727690249371
   TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 극단주의 단체입니다." # 1194620366730389291
   NOT_TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 #bold 아님#! 극단주의자가 아니다" # 8294296832469718965
-  TRIGGER_IS_A_E: "이해집단은 반체제파입니다." # 1522522763566305405
-  NOT_TRIGGER_IS_A_E: "이익집단은 #bold 아니다#! 반체제" # 2000818562189651405
+  TRIGGER_IS_A_E: "[concept_interest_group]은(는) 반체제 인사입니다" # 11031726888674069143
+  NOT_TRIGGER_IS_A_E: "[concept_interest_group]은(는) #bold 반체제 인사가 아닙니다#!" # 12275529192697898243
   TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 반체제 성향입니다." # 11030393316736677062
   NOT_TRIGGER_IS_A_E_FIRST: "[InterestGroup.GetName]은 #bold 아닙니다#! 반(反)체제" # 3782724716855274392
+  TRIGGER_IS_RIGHT_WING: "[concept_interest_group]은(는) [concept_bpm_ig_is_right_wing]입니다" # 1112924418871175723
+  NOT_TRIGGER_IS_RIGHT_WING: "[concept_interest_group]은(는) #bold [concept_bpm_ig_is_right_wing]이(가) 아닙니다#!" # 15171590078653074862
+  TRIGGER_IS_RIGHT_WING_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_right_wing]입니다" # 5296191414750918173
+  NOT_TRIGGER_IS_RIGHT_WING_FIRST: "[InterestGroup.GetName]은(는) #bold [concept_bpm_ig_is_right_wing]이(가) 아닙니다#!" # 1210467505606411844
+  TRIGGER_IS_REVOLUTIONARY_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_revolutionary_socialist]입니다" # 7563778566391245275
+  NOT_TRIGGER_IS_REVOLUTIONARY_SOCIALIST: "[concept_interest_group]은(는) #bold [concept_bpm_ig_is_revolutionary_socialist]가 아닙니다#!" # 5362545436617004743
+  TRIGGER_IS_REVOLUTIONARY_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_revolutionary_socialist]입니다" # 3336022171393386341
+  NOT_TRIGGER_IS_REVOLUTIONARY_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold [concept_bpm_ig_is_revolutionary_socialist]가 아닙니다#!" # 7856355466675985930
+  TRIGGER_IS_ANARCHIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_anarchist]입니다" # 7110196099276895025
+  NOT_TRIGGER_IS_ANARCHIST: "[concept_interest_group]은(는) #bold [concept_bpm_ig_is_anarchist]가 아닙니다#!" # 15309965755272813443
+  TRIGGER_IS_ANARCHIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_anarchist]입니다" # 1209670503583778894
+  NOT_TRIGGER_IS_ANARCHIST_FIRST: "[InterestGroup.GetName]은(는) #bold [concept_bpm_ig_is_anarchist]가 아닙니다#!" # 13481935941025669761
+  TRIGGER_IS_RADICAL_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_radical_socialist]입니다" # 14391060075172262055
+  NOT_TRIGGER_IS_RADICAL_SOCIALIST: "[concept_interest_group]은(는) #bold [concept_bpm_ig_is_radical_socialist]가 아닙니다#!" # 2145074598241629484
+  TRIGGER_IS_RADICAL_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_radical_socialist]입니다" # 5887794037283476089
+  NOT_TRIGGER_IS_RADICAL_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold [concept_bpm_ig_is_radical_socialist]가 아닙니다#!" # 4451078411924381443
+  TRIGGER_IS_REFORMIST_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_reformist_socialist]입니다" # 15767181869468289182
+  NOT_TRIGGER_IS_REFORMIST_SOCIALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_reformist_socialist]입니다" # 8205275973419355780
+  TRIGGER_IS_REFORMIST_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_reformist_socialist]입니다" # 320251350253768368
+  NOT_TRIGGER_IS_REFORMIST_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_reformist_socialist]입니다" # 12500393214651495889
+  TRIGGER_IS_SYNDICALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_syndicalist]입니다" # 3672042535985467833
+  NOT_TRIGGER_IS_SYNDICALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_syndicalist]입니다" # 17391833207326604253
+  TRIGGER_IS_SYNDICALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_syndicalist]입니다" # 13056020204151847120
+  NOT_TRIGGER_IS_SYNDICALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_syndicalist]입니다" # 1547550342842438072
+  TRIGGER_IS_PARTY_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_party_socialist]입니다" # 16622996771580939129
+  NOT_TRIGGER_IS_PARTY_SOCIALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_party_socialist]입니다" # 15584827121878056459
+  TRIGGER_IS_PARTY_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_party_socialist]입니다" # 15075670828828012986
+  NOT_TRIGGER_IS_PARTY_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_party_socialist]입니다" # 9049532221763069038
+  TRIGGER_IS_AUTHORITARIAN_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_authoritarian_socialist]입니다" # 9305991954299294502
+  NOT_TRIGGER_IS_AUTHORITARIAN_SOCIALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_authoritarian_socialist]입니다" # 15204828080851477960
+  TRIGGER_IS_AUTHORITARIAN_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_authoritarian_socialist]입니다" # 18162160565009932631
+  NOT_TRIGGER_IS_AUTHORITARIAN_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_authoritarian_socialist]입니다" # 6867811801223857016
+  TRIGGER_IS_MODERATE_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_moderate_socialist]입니다" # 1047703799440806695
+  NOT_TRIGGER_IS_MODERATE_SOCIALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_moderate_socialist]입니다" # 4555929867533106530
+  TRIGGER_IS_MODERATE_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_moderate_socialist]입니다" # 17316358846658927706
+  NOT_TRIGGER_IS_MODERATE_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_moderate_socialist]입니다" # 8101049904328426414
+  TRIGGER_IS_PROLETARIAN_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_proletarian_socialist]입니다" # 4053793763421473061
+  NOT_TRIGGER_IS_PROLETARIAN_SOCIALIST: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_proletarian_socialist]가 아닙니다" # 10336288624616669507
+  TRIGGER_IS_PROLETARIAN_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_proletarian_socialist]입니다" # 6262110131531986093
+  NOT_TRIGGER_IS_PROLETARIAN_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_proletarian_socialist]가 아닙니다" # 4920095196662057311
+  TRIGGER_IS_SOCIALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_socialist]입니다" # 13467727230755306692
+  NOT_TRIGGER_IS_SOCIALIST: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_socialist]가 아닙니다" # 9021448196757093395
+  TRIGGER_IS_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_socialist]입니다" # 95064486766893308
+  NOT_TRIGGER_IS_SOCIALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_socialist]가 아닙니다" # 9107536215769253321
+  TRIGGER_IS_PROLETARIAN: "[concept_interest_group]은(는) [concept_bpm_ig_is_proletarian]입니다" # 4761565677620325390
+  NOT_TRIGGER_IS_PROLETARIAN: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_proletarian]이 아닙니다" # 17727359905422613261
+  TRIGGER_IS_PROLETARIAN_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_proletarian]입니다" # 245015223642065814
+  NOT_TRIGGER_IS_PROLETARIAN_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_proletarian]이 아닙니다" # 13578913845274756004
+  TRIGGER_IS_LABOR: "[concept_interest_group]은(는) [concept_bpm_ig_is_labor]입니다" # 5350086545239235051
+  NOT_TRIGGER_IS_LABOR: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_labor]가 아닙니다" # 1460459689454423792
+  TRIGGER_IS_LABOR_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_labor]입니다" # 5734060848811573153
+  NOT_TRIGGER_IS_LABOR_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_labor]가 아닙니다" # 16297220404763243512
+  TRIGGER_IS_ACTUALLY_DESIRING_SOCIALISM: "[concept_interest_group]은(는) [concept_bpm_ig_is_actually_desiring_socialism]입니다" # 9405276608154709665
+  NOT_TRIGGER_IS_ACTUALLY_DESIRING_SOCIALISM: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_actually_desiring_socialism]이 아닙니다" # 12747801094692605730
+  TRIGGER_IS_ACTUALLY_DESIRING_SOCIALISM_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_actually_desiring_socialism]입니다" # 3349386198936461790
+  NOT_TRIGGER_IS_ACTUALLY_DESIRING_SOCIALISM_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_actually_desiring_socialism]이 아닙니다" # 13036266728480587870
+  TRIGGER_IS_AGRARIAN: "[concept_interest_group]은(는) [concept_bpm_ig_is_agrarian]입니다" # 5821565256003544951
+  NOT_TRIGGER_IS_AGRARIAN: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_agrarian]이(가) 아닙니다" # 13226114997830354629
+  TRIGGER_IS_AGRARIAN_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_agrarian]입니다" # 14850727781552739772
+  NOT_TRIGGER_IS_AGRARIAN_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_agrarian]이(가) 아닙니다" # 10791945330297590185
+  TRIGGER_WANTS_SMALL_GOVERNMENT: "[concept_interest_group]은(는) [concept_bpm_ig_wants_small_government]입니다" # 8327894251934621793
+  NOT_TRIGGER_WANTS_SMALL_GOVERNMENT: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_wants_small_government]이(가) 아닙니다" # 4224876887967324817
+  TRIGGER_WANTS_SMALL_GOVERNMENT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_wants_small_government]입니다" # 9120849775123360005
+  NOT_TRIGGER_WANTS_SMALL_GOVERNMENT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_wants_small_government]이(가) 아닙니다" # 7385906857570523827
+  TRIGGER_IS_PRO_SERFDOM: "[concept_interest_group]은(는) [concept_bpm_ig_is_pro_serfdom]입니다" # 10717205594513664789
+  NOT_TRIGGER_IS_PRO_SERFDOM: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_pro_serfdom]이(가) 아닙니다" # 16434650985899593682
+  TRIGGER_IS_PRO_SERFDOM_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_pro_serfdom]입니다" # 1062742451558829890
+  NOT_TRIGGER_IS_PRO_SERFDOM_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_pro_serfdom]이(가) 아닙니다" # 8248333067098151142
+  TRIGGER_IS_DEMOCRAT: "[concept_interest_group]은(는) [concept_bpm_ig_is_democrat]입니다" # 18132099165863503970
+  NOT_TRIGGER_IS_DEMOCRAT: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_democrat]이(가) 아닙니다" # 98507331644915392
+  TRIGGER_IS_DEMOCRAT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_democrat]입니다" # 10707935391612883748
+  NOT_TRIGGER_IS_DEMOCRAT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_democrat]이(가) 아닙니다" # 14741339965733189958
+  TRIGGER_IS_REPUBLICAN: "[concept_interest_group]은(는) [concept_bpm_ig_is_republican]입니다" # 11482626664888588054
+  NOT_TRIGGER_IS_REPUBLICAN: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_republican]이(가) 아닙니다" # 383121603266899071
+  TRIGGER_IS_REPUBLICAN_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_republican]입니다" # 4410725932966872742
+  NOT_TRIGGER_IS_REPUBLICAN_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_republican]이(가) 아닙니다" # 9407766683869550268
+  TRIGGER_IS_RADICAL_LIBERAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_radical_liberal]입니다" # 614548347244884718
+  NOT_TRIGGER_IS_RADICAL_LIBERAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_radical_liberal]입니다" # 1454617224338238076
+  TRIGGER_IS_RADICAL_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_radical_liberal]입니다" # 14782273238123983875
+  NOT_TRIGGER_IS_RADICAL_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_radical_liberal]입니다" # 16096513779913694055
+  TRIGGER_IS_MODERATE_LIBERAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_moderate_liberal]입니다" # 4316549405092651079
+  NOT_TRIGGER_IS_MODERATE_LIBERAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_moderate_liberal]입니다" # 12340159346787966477
+  TRIGGER_IS_MODERATE_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_moderate_liberal]입니다" # 2006475792374626446
+  NOT_TRIGGER_IS_MODERATE_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_moderate_liberal]입니다" # 1061064190492718461
+  TRIGGER_IS_NON_RELIGIOUS: "[concept_interest_group]은(는) [concept_bpm_ig_is_non_religious]입니다" # 7614268128443596466
+  NOT_TRIGGER_IS_NON_RELIGIOUS: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_non_religious]입니다" # 5370175922029015334
+  TRIGGER_IS_NON_RELIGIOUS_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_non_religious]입니다" # 6791216722794507917
+  NOT_TRIGGER_IS_NON_RELIGIOUS_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_non_religious]입니다" # 390530384320898642
+  TRIGGER_IS_LIBERAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_liberal]입니다" # 373711227131063638
+  NOT_TRIGGER_IS_LIBERAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_liberal]입니다" # 12463782249736994941
+  TRIGGER_IS_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_liberal]입니다" # 270291665943813498
+  NOT_TRIGGER_IS_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_liberal]입니다" # 13943624462470502875
+  TRIGGER_IS_RADICAL_LEFT: "[concept_interest_group]은(는) [concept_bpm_ig_is_radical_left]입니다" # 6278478291421058987
+  NOT_TRIGGER_IS_RADICAL_LEFT: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_radical_left]입니다" # 9605978482286357214
+  TRIGGER_IS_RADICAL_LEFT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_radical_left]입니다" # 9316533334358505158
+  NOT_TRIGGER_IS_RADICAL_LEFT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_radical_left]입니다" # 11619260243729220634
+  TRIGGER_IS_ABOLITIONIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_abolitionist]입니다" # 13821478932582320263
+  NOT_TRIGGER_IS_ABOLITIONIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_abolitionist]입니다" # 14019131321479144620
+  TRIGGER_IS_ABOLITIONIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_abolitionist]입니다" # 3120711226593787097
+  NOT_TRIGGER_IS_ABOLITIONIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_abolitionist]입니다" # 17174170333982774937
+  TRIGGER_IS_LEFT_WING: "[concept_interest_group]은(는) [concept_bpm_ig_is_left_wing]입니다" # 12173216051820309952
+  NOT_TRIGGER_IS_LEFT_WING: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_left_wing]입니다" # 2863347938373520190
+  TRIGGER_IS_LEFT_WING_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_left_wing]입니다" # 14091746032505853839
+  NOT_TRIGGER_IS_LEFT_WING_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_left_wing]입니다" # 9474256756650968502
+  TRIGGER_IS_PRO_PUBLIC_WELFARE: "[concept_interest_group]은(는) [concept_bpm_ig_is_pro_public_welfare]입니다" # 17732329114690865862
+  NOT_TRIGGER_IS_PRO_PUBLIC_WELFARE: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_pro_public_welfare]입니다" # 11661543525383645373
+  TRIGGER_IS_PRO_PUBLIC_WELFARE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_pro_public_welfare]입니다" # 13561731125143560616
+  NOT_TRIGGER_IS_PRO_PUBLIC_WELFARE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_pro_public_welfare]입니다" # 12219890954684107932
+  TRIGGER_IS_MARKET_LIBERAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_market_liberal]입니다" # 4875865535115773062
+  NOT_TRIGGER_IS_MARKET_LIBERAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_market_liberal]입니다" # 10212815304282696938
+  TRIGGER_IS_MARKET_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_market_liberal]입니다" # 1843615108707254414
+  NOT_TRIGGER_IS_MARKET_LIBERAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_market_liberal]입니다" # 3680950448476909837
+  TRIGGER_IS_FEMINIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_feminist]입니다" # 10847247023434780217
+  NOT_TRIGGER_IS_FEMINIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_feminist]입니다" # 11966342118923491804
+  TRIGGER_IS_FEMINIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_feminist]입니다" # 3648497402341346688
+  NOT_TRIGGER_IS_FEMINIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_feminist]입니다" # 3731603488580357808
+  TRIGGER_IS_RELIGIOUS: "[concept_interest_group]은(는) [concept_bpm_ig_is_religious]입니다" # 2561063252336651790
+  NOT_TRIGGER_IS_RELIGIOUS: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_religious]입니다" # 813467725394473283
+  TRIGGER_IS_RELIGIOUS_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_religious]입니다" # 3252068331822810623
+  NOT_TRIGGER_IS_RELIGIOUS_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_religious]입니다" # 2201087116390859195
+  TRIGGER_IS_ANTI_WELFARE: "[concept_interest_group]은(는) [concept_bpm_ig_is_anti_welfare]입니다" # 9243686485097675078
+  NOT_TRIGGER_IS_ANTI_WELFARE: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_anti_welfare]입니다" # 871545941779735211
+  TRIGGER_IS_ANTI_WELFARE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_anti_welfare]입니다" # 8186409077013879315
+  NOT_TRIGGER_IS_ANTI_WELFARE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_anti_welfare]입니다" # 13351264466330168630
+  TRIGGER_IS_MAINSTREAM_CONSERVATIVE: "[concept_interest_group]은(는) [concept_bpm_ig_is_mainstream_conservative]입니다" # 4182545309098341644
+  NOT_TRIGGER_IS_MAINSTREAM_CONSERVATIVE: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_mainstream_conservative]입니다" # 17034662026736421111
+  TRIGGER_IS_MAINSTREAM_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_mainstream_conservative]입니다" # 6907638906495236912
+  NOT_TRIGGER_IS_MAINSTREAM_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_mainstream_conservative]입니다" # 5767168853538701379
+  TRIGGER_IS_LIBERAL_CONSERVATIVE: "[concept_interest_group]은(는) [concept_bpm_ig_is_liberal_conservative]입니다" # 7412663245772553073
+  NOT_TRIGGER_IS_LIBERAL_CONSERVATIVE: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_liberal_conservative]입니다" # 13925026370477085012
+  TRIGGER_IS_LIBERAL_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_liberal_conservative]입니다" # 15726738926341793552
+  NOT_TRIGGER_IS_LIBERAL_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_liberal_conservative]입니다" # 17565918479977292567
+  TRIGGER_IS_NON_PATERNAL_CONSERVATIVE: "[concept_interest_group]은(는) [concept_bpm_ig_is_non_paternal_conservative]입니다" # 17704458957948567959
+  NOT_TRIGGER_IS_NON_PATERNAL_CONSERVATIVE: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_non_paternal_conservative]입니다" # 8802188609397719478
+  TRIGGER_IS_NON_PATERNAL_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_non_paternal_conservative]입니다" # 16925749113080966012
+  NOT_TRIGGER_IS_NON_PATERNAL_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_non_paternal_conservative]입니다" # 15343397627509855409
+  TRIGGER_IS_MODERATE_CONSERVATIVE: "[concept_interest_group]은(는) [concept_bpm_ig_is_moderate_conservative]입니다" # 9982335357244810343
+  NOT_TRIGGER_IS_MODERATE_CONSERVATIVE: "[concept_interest_group]은(는) #bold 아니며#!, [concept_bpm_ig_is_moderate_conservative]이(가) 아닙니다" # 16177173555236986839
+  TRIGGER_IS_MODERATE_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_moderate_conservative]입니다" # 8327851530169178987
+  NOT_TRIGGER_IS_MODERATE_CONSERVATIVE_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#!, [concept_bpm_ig_is_moderate_conservative]이(가) 아닙니다" # 10507996493309879280
+  TRIGGER_IS_MILITARISTIC: "[concept_interest_group]은(는) [concept_bpm_ig_is_militaristic]입니다" # 14104925085197303479
+  NOT_TRIGGER_IS_MILITARISTIC: "[concept_interest_group]은(는) #bold 아니며#!, [concept_bpm_ig_is_militaristic]이(가) 아닙니다" # 7674153541862166216
+  TRIGGER_IS_MILITARISTIC_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_militaristic]입니다" # 10580441399287249595
+  NOT_TRIGGER_IS_MILITARISTIC_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#!, [concept_bpm_ig_is_militaristic]이(가) 아닙니다" # 5998403836491036055
+  TRIGGER_IS_PATRIOTIC: "[concept_interest_group]은(는) [concept_bpm_ig_is_patriotic]입니다" # 2026655185696611318
+  NOT_TRIGGER_IS_PATRIOTIC: "[concept_interest_group]은(는) #bold 아니며#!, [concept_bpm_ig_is_patriotic]이(가) 아닙니다" # 15128036474877678388
+  TRIGGER_IS_PATRIOTIC_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_patriotic]입니다" # 9723848228209945830
+  NOT_TRIGGER_IS_PATRIOTIC_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#!, [concept_bpm_ig_is_patriotic]이(가) 아닙니다" # 5845721433152144662
+  TRIGGER_IS_SEXIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_sexist]입니다" # 7727857994713793193
+  NOT_TRIGGER_IS_SEXIST: "[concept_interest_group]은(는) #bold 아니며#!, [concept_bpm_ig_is_sexist]이(가) 아닙니다" # 10258358824076554395
+  TRIGGER_IS_SEXIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_sexist]입니다" # 1543811900091817855
+  NOT_TRIGGER_IS_SEXIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#!, [concept_bpm_ig_is_sexist]이(가) 아닙니다" # 9515804291878689224
+  TRIGGER_IS_VERY_SEXIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_very_sexist]입니다" # 9367468845644011757
+  NOT_TRIGGER_IS_VERY_SEXIST: "[concept_interest_group]은(는) #bold 아니며#!, [concept_bpm_ig_is_very_sexist]이(가) 아닙니다" # 4823102196435071918
+  TRIGGER_IS_VERY_SEXIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_very_sexist]입니다" # 11552633515648444182
+  NOT_TRIGGER_IS_VERY_SEXIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#!, [concept_bpm_ig_is_very_sexist]이(가) 아닙니다" # 7705057500361693799
+  TRIGGER_IS_MONARCHIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_monarchist]입니다" # 4432663640723331609
+  NOT_TRIGGER_IS_MONARCHIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_monarchist]입니다" # 11812375615182285690
+  TRIGGER_IS_MONARCHIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_monarchist]입니다" # 16631451754249770204
+  NOT_TRIGGER_IS_MONARCHIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_monarchist]입니다" # 13260720952575036861
+  TRIGGER_IS_ANTI_DEMOCRATIC: "[concept_interest_group]은(는) [concept_bpm_ig_is_anti_democratic]입니다" # 10345021309234597308
+  NOT_TRIGGER_IS_ANTI_DEMOCRATIC: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_anti_democratic]입니다" # 12030382550408444601
+  TRIGGER_IS_ANTI_DEMOCRATIC_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_anti_democratic]입니다" # 15822464843277974487
+  NOT_TRIGGER_IS_ANTI_DEMOCRATIC_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_anti_democratic]입니다" # 17868208621202983119
+  TRIGGER_IS_THEOCRATIC: "[concept_interest_group]은(는) [concept_bpm_ig_is_theocratic]입니다" # 3645661745528416389
+  NOT_TRIGGER_IS_THEOCRATIC: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_theocratic]입니다" # 2975979295577849852
+  TRIGGER_IS_THEOCRATIC_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_theocratic]입니다" # 16426834380303178300
+  NOT_TRIGGER_IS_THEOCRATIC_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_theocratic]입니다" # 3847461478625751662
+  TRIGGER_IS_ORGANIC_DEMOCRAT: "[concept_interest_group]은(는) [concept_bpm_ig_is_organic_democrat]입니다" # 8469473102918645035
+  NOT_TRIGGER_IS_ORGANIC_DEMOCRAT: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_organic_democrat]입니다" # 8598955564870218261
+  TRIGGER_IS_ORGANIC_DEMOCRAT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_organic_democrat]입니다" # 8636536273136692177
+  NOT_TRIGGER_IS_ORGANIC_DEMOCRAT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_organic_democrat]입니다" # 8303281725557600612
+  TRIGGER_IS_TRADITIONALIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_traditionalist]입니다" # 4966131523779316317
+  NOT_TRIGGER_IS_TRADITIONALIST: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_traditionalist]입니다" # 2761501873857029412
+  TRIGGER_IS_TRADITIONALIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_traditionalist]입니다" # 2648414490696717133
+  NOT_TRIGGER_IS_TRADITIONALIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_traditionalist]입니다" # 6446223325477938620
+  TRIGGER_IS_FASCIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_fascist]입니다" # 9103481758081192831
+  NOT_TRIGGER_IS_FASCIST: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_fascist]입니다" # 7103365852110049011
+  TRIGGER_IS_FASCIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_fascist]입니다" # 4855601545138330733
+  NOT_TRIGGER_IS_FASCIST_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_fascist]입니다" # 17575404343860988776
+  TRIGGER_IS_RADICAL_RIGHT: "[concept_interest_group]은(는) [concept_bpm_ig_is_radical_right]입니다" # 2582137930782133321
+  NOT_TRIGGER_IS_RADICAL_RIGHT: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_radical_right]입니다" # 11859464574941548915
+  TRIGGER_IS_RADICAL_RIGHT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_radical_right]입니다" # 14631750665239422681
+  NOT_TRIGGER_IS_RADICAL_RIGHT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_radical_right]입니다" # 416877538375330156
+  TRIGGER_IS_IDEOLOGICAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_ideological]입니다" # 14593059690306318146
+  NOT_TRIGGER_IS_IDEOLOGICAL: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_ideological]입니다" # 12116401713254032906
+  TRIGGER_IS_IDEOLOGICAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_ideological]입니다" # 1937254459809260444
+  NOT_TRIGGER_IS_IDEOLOGICAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_ideological]입니다" # 3435555332777516517
+  TRIGGER_IS_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_institutional]입니다" # 1814243931719672006
+  NOT_TRIGGER_IS_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_institutional]입니다" # 3910036906231681220
+  TRIGGER_IS_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_institutional]입니다" # 7739797357784336642
+  NOT_TRIGGER_IS_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_institutional]입니다" # 15088592496709452000
+  TRIGGER_IS_URBAN_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_urban_institutional]입니다" # 7340770429828451900
+  NOT_TRIGGER_IS_URBAN_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니며#! [concept_bpm_ig_is_urban_institutional]입니다" # 11949231771102684902
+  TRIGGER_IS_URBAN_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_urban_institutional]입니다" # 3917346924781965381
+  NOT_TRIGGER_IS_URBAN_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니며#! [concept_bpm_ig_is_urban_institutional]입니다" # 2667742136895645237
+  TRIGGER_IS_RURAL_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_rural_institutional]입니다" # 17058279802649774466
+  NOT_TRIGGER_IS_RURAL_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_rural_institutional]입니다" # 14056010102860595638
+  TRIGGER_IS_RURAL_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_rural_institutional]입니다" # 13911252875373404048
+  NOT_TRIGGER_IS_RURAL_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_rural_institutional]입니다" # 10143730590404788162
+  TRIGGER_IS_STATE_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_state_institutional]입니다" # 1435028638520479148
+  NOT_TRIGGER_IS_STATE_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_state_institutional]입니다" # 13677366291118545132
+  TRIGGER_IS_STATE_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_state_institutional]입니다" # 13807466588063844719
+  NOT_TRIGGER_IS_STATE_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_state_institutional]입니다" # 16030855910785579139
+  TRIGGER_IS_UPPER_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_upper_institutional]입니다" # 17400742212764621526
+  NOT_TRIGGER_IS_UPPER_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_upper_institutional]입니다" # 13398399302915782832
+  TRIGGER_IS_UPPER_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_upper_institutional]입니다" # 1741680858567469201
+  NOT_TRIGGER_IS_UPPER_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_upper_institutional]입니다" # 8687377470195737380
+  TRIGGER_IS_MIDDLE_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_middle_institutional]입니다" # 5832308631248709033
+  NOT_TRIGGER_IS_MIDDLE_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_middle_institutional]입니다" # 717339960809191600
+  TRIGGER_IS_MIDDLE_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_middle_institutional]입니다" # 14448348939957655325
+  NOT_TRIGGER_IS_MIDDLE_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_middle_institutional]입니다" # 4247890827577990663
+  TRIGGER_IS_LOWER_INSTITUTIONAL: "[concept_interest_group]은(는) [concept_bpm_ig_is_lower_institutional]입니다" # 3205898862801510999
+  NOT_TRIGGER_IS_LOWER_INSTITUTIONAL: "[concept_interest_group]은(는) #bold 아니오#! [concept_bpm_ig_is_lower_institutional]입니다" # 12834449189919927088
+  TRIGGER_IS_LOWER_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_lower_institutional]입니다" # 11782678239956476308
+  NOT_TRIGGER_IS_LOWER_INSTITUTIONAL_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오#! [concept_bpm_ig_is_lower_institutional]입니다" # 12850027389681442976
+  TRIGGER_IS_ISOLATIONIST: "[concept_interest_group]은(는) [concept_bpm_ig_is_isolationist]입니다" # 9842527681120094740
+  NOT_TRIGGER_IS_ISOLATIONIST: "[concept_interest_group]은(는) #bold 결코#! [concept_bpm_ig_is_isolationist]이(가) 아닙니다" # 13644229759501948266
+  TRIGGER_IS_ISOLATIONIST_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_isolationist]입니다" # 4240726210589779205
+  NOT_TRIGGER_IS_ISOLATIONIST_FIRST: "[InterestGroup.GetName]은(는) #bold 결코#! [concept_bpm_ig_is_isolationist]이(가) 아닙니다" # 16742652168600935176
+  TRIGGER_IS_HAWKISH: "[concept_interest_group]은(는) [concept_bpm_ig_is_hawkish]입니다" # 10167331842895512230
+  NOT_TRIGGER_IS_HAWKISH: "[concept_interest_group]은(는) #bold 결코#! [concept_bpm_ig_is_hawkish]이(가) 아닙니다" # 4656373346495352819
+  TRIGGER_IS_HAWKISH_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_hawkish]입니다" # 2562139127399524154
+  NOT_TRIGGER_IS_HAWKISH_FIRST: "[InterestGroup.GetName]은(는) #bold 결코#! [concept_bpm_ig_is_hawkish]이(가) 아닙니다" # 14151588389663586450
+  TRIGGER_IS_VERY_HAWKISH: "[concept_interest_group]은(는) [concept_bpm_ig_is_very_hawkish]입니다" # 201495650288515448
+  NOT_TRIGGER_IS_VERY_HAWKISH: "[concept_interest_group]은(는) #bold 결코#! [concept_bpm_ig_is_very_hawkish]이(가) 아닙니다" # 441899550379253102
+  TRIGGER_IS_VERY_HAWKISH_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_very_hawkish]입니다" # 11073397889979971857
+  NOT_TRIGGER_IS_VERY_HAWKISH_FIRST: "[InterestGroup.GetName]은(는) #bold 결코#! [concept_bpm_ig_is_very_hawkish]이(가) 아닙니다" # 13857589987819093840
+  TRIGGER_IS_DOVEISH: "[concept_interest_group]은(는) [concept_bpm_ig_is_doveish]입니다" # 6313622491939441441
+  NOT_TRIGGER_IS_DOVEISH: "[concept_interest_group]은(는) #bold 결코#! [concept_bpm_ig_is_doveish]이(가) 아닙니다" # 13178161469603342646
+  TRIGGER_IS_DOVEISH_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_doveish]입니다" # 160660696625763708
+  NOT_TRIGGER_IS_DOVEISH_FIRST: "[InterestGroup.GetName]은(는) #bold 결코#! [concept_bpm_ig_is_doveish]이(가) 아닙니다" # 10247624332691361780
+  TRIGGER_IS_UNPOPULAR: "[concept_interest_group]은(는) [concept_bpm_ig_is_unpopular]입니다" # 5146531017125953814
+  NOT_TRIGGER_IS_UNPOPULAR: "[concept_interest_group]은(는) #bold 결코#! [concept_bpm_ig_is_unpopular]이(가) 아닙니다" # 9218063859427783978
+  TRIGGER_IS_UNPOPULAR_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_unpopular]입니다" # 1377584707135237745
+  NOT_TRIGGER_IS_UNPOPULAR_FIRST: "[InterestGroup.GetName]은(는) #bold 결코#! [concept_bpm_ig_is_unpopular]이(가) 아닙니다" # 14744909453193797491
+  TRIGGER_IS_POPULAR: "[concept_interest_group]은(는) [concept_bpm_ig_is_popular]입니다" # 11177448405778835852
+  NOT_TRIGGER_IS_POPULAR: "[concept_interest_group]은(는) #bold 아니오# [concept_bpm_ig_is_popular]입니다" # 11552629081314604595
+  TRIGGER_IS_POPULAR_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_popular]입니다" # 16462698880671396843
+  NOT_TRIGGER_IS_POPULAR_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오# [concept_bpm_ig_is_popular]입니다" # 8441082873770252281
+  TRIGGER_IS_PROMINENT: "[concept_interest_group]은(는) [concept_bpm_ig_is_prominent]입니다" # 7067836032562096282
+  NOT_TRIGGER_IS_PROMINENT: "[concept_interest_group]은(는) #bold 아니오# [concept_bpm_ig_is_prominent]입니다" # 10536443011456213650
+  TRIGGER_IS_PROMINENT_FIRST: "[InterestGroup.GetName]은(는) [concept_bpm_ig_is_prominent]입니다" # 335276673498508880
+  NOT_TRIGGER_IS_PROMINENT_FIRST: "[InterestGroup.GetName]은(는) #bold 아니오# [concept_bpm_ig_is_prominent]입니다" # 14507730150507815239
+  TRIGGER_SYNERGY_GREATER_THAN_OR_EQUAL_THIRD: "[Country.GetNameNoFlag]의 [concept_bpm_synergy]이(가) $VALUE|v0$ 이상입니다(현재: [Country.MakeScope.ScriptValue('bpm_cab_synergy_value')|v0)])" # 16326127503860847768

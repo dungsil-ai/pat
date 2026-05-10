@@ -1,0 +1,22 @@
+﻿l_english:
+ cow_generic_university_01_action: "@development_icon! Upgrade Your City of Wonder"
+ cow_generic_university_01_action_label: "@development_icon! Upgrade your Grand University in [landed_title.GetNameNoTier] to progress your City of Wonder"
+ cow_generic_university_01_action_desc: "@gold_icon! There is no cost to upgrade"
+ cow_generic_university_01_action_click: "#I Click to view the holding of [landed_title.GetNameNoTierNoTooltip]#!"
+
+
+ cow_generic_university_02_action: "@development_icon! Upgrade Your City of Wonder"
+ cow_generic_university_02_action_label: "@development_icon! Upgrade your Grand University in [landed_title.GetNameNoTier] to progress your City of Wonder"
+ cow_generic_university_02_action_desc: "@gold_icon! There is no cost to upgrade"
+ cow_generic_university_02_action_click: "#I Click to view the holding of [landed_title.GetNameNoTierNoTooltip]#!"
+ 
+ cow_generic_library_01_action: "@development_icon! Upgrade Your City of Wonder"
+ cow_generic_library_01_action_label: "@development_icon! Upgrade your Grand Library in [landed_title.GetNameNoTier] to progress your City of Wonder"
+ cow_generic_library_01_action_desc: "@gold_icon! There is no cost to upgrade"
+ cow_generic_library_01_action_click: "#I Click to view the holding of [landed_title.GetNameNoTierNoTooltip]#!"
+
+
+ cow_generic_library_02_action: "@development_icon! Upgrade Your City of Wonder"
+ cow_generic_library_02_action_label: "@development_icon! Upgrade your Grand Library in [landed_title.GetNameNoTier] to progress your City of Wonder"
+ cow_generic_library_02_action_desc: "@gold_icon! There is no cost to upgrade"
+ cow_generic_library_02_action_click: "#I Click to view the holding of [landed_title.GetNameNoTierNoTooltip]#!"

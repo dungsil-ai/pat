@@ -72,3 +72,9 @@
   country_rigidity_rate_add_desc: "우리 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율에 대한 증가 또는 감소." # 7600267007516481032
   country_rigidity_rate_mult: "[Concept('concept_bpm_political_stability', 'Rigidity')] 변경률" # 14850266121034681247
   country_rigidity_rate_mult_desc: "우리 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율에 대한 증가 또는 감소." # 7600267007516481032
+  bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
+  bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
+  bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921
+  bpm_decorative_modify_rigidity_per_culture_investment_desc: "" # 17241709254077376921
+  bpm_decorative_modify_rigidity_rate_per_police_investment_desc: "" # 17241709254077376921
+  bpm_decorative_modify_rigidity_rate_per_security_investment_desc: "" # 17241709254077376921

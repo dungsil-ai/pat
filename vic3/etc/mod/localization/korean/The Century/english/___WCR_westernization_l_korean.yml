@@ -91,3 +91,4 @@
   WCR_je_westernization_status_90_pb: "늘 고집스러운 [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetLeader.GetCustom('GetUniversalFullName')]와 [GetPopType('farmers').GetName]가 마침내 서구식 복장을 새로운 규범으로 받아들입니다." # 976155322535466885
   WCR_je_westernization_status_90_none: "고집불통인 [GetPopType('farmers').GetName]들이 마침내 서구식 복장을 새로운 규범으로 받아들입니다." # 6300914282819365361
   WCR_je_westernization_status_100: "서구화가 완료되었습니다!" # 6584721370440509339
+  WCR_je_westernization_goal: "" # 17241709254077376921

@@ -67,7 +67,18 @@ describe('parseYaml 파싱', () => {
     
     const result = parseYaml(content)
     
-    expect(result['l_english']['key1']).toBeUndefined()
+    expect(result['l_english']['key1']).toEqual(['', null])
+    expect(result['l_english']['key2']).toEqual(['value2', null])
+  })
+
+  it('공백만 있는 값을 처리할 수 있어야 함', () => {
+    const content = `l_english:
+  key1: " "
+  key2: "value2"`
+
+    const result = parseYaml(content)
+
+    expect(result['l_english']['key1']).toEqual([' ', null])
     expect(result['l_english']['key2']).toEqual(['value2', null])
   })
 
@@ -145,6 +156,21 @@ describe('parseYaml 파싱', () => {
     // 예상되는 파싱 결과: 선행 따옴표 + 본문 + 닫는 따옴표 + 개행 + 출처
     const expected = '"The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of race, color, or previous condition of servitude."\\n\\n-15th Amendment, 1870'
     expect(result['l_english']['bpm_acw_events.314.f']).toEqual([expected, null])
+  })
+
+  it('U+200E 문자가 포함된 키와 값을 정리해야 함', () => {
+    const content = `l_english:
+  key\u200e1: "val\u200eue1"
+  key2: "value2\u200e"`
+
+    const result = parseYaml(content)
+
+    expect(result).toEqual({
+      l_english: {
+        key1: ['value1', null],
+        key2: ['value2', null]
+      }
+    })
   })
 
   it('여러 섹션을 처리할 수 있어야 함', () => {
@@ -237,9 +263,20 @@ describe('stringifyYaml 직렬화', () => {
     
     const result = stringifyYaml(data)
     
+    expect(result).toContain('  key1: ""')
     expect(result).toContain('  key2: "값2"')
-    // 빈 값은 개행을 생성해야 함
-    expect(result.split('\n').length).toBeGreaterThan(2)
+  })
+
+  it('공백만 있는 값도 그대로 직렬화할 수 있어야 함', () => {
+    const data = {
+      'l_korean': {
+        'key1': [' ', null] as [string, string | null]
+      }
+    }
+
+    const result = stringifyYaml(data)
+
+    expect(result).toContain('  key1: " "')
   })
 
   it('여러 섹션을 처리할 수 있어야 함', () => {
@@ -271,6 +308,20 @@ describe('stringifyYaml 직렬화', () => {
     expect(result).toContain('  key1: "$variable$ 변수"')
     expect(result).toContain('  key2: "[GetTitle] 제목"')
   })
+
+  it('직렬화 시 U+200E 문자를 제거해야 함', () => {
+    const data = {
+      'l_korean\u200e': {
+        'key\u200e1': ['값\u200e1', null] as [string, string | null]
+      }
+    }
+
+    const result = stringifyYaml(data)
+
+    expect(result).toContain('\uFEFFl_korean:')
+    expect(result).toContain('  key1: "값1"')
+    expect(result).not.toContain('\u200E')
+  })
 })
 
 describe('parseYaml과 stringifyYaml 통합', () => {
@@ -283,6 +334,19 @@ describe('parseYaml과 stringifyYaml 통합', () => {
     const stringified = stringifyYaml(parsed)
     const reparsed = parseYaml(stringified)
     
+    expect(reparsed).toEqual(parsed)
+  })
+
+  it('빈 문자열과 공백 문자열을 왕복 처리할 수 있어야 함', () => {
+    const original = `l_korean:
+  key1: ""
+  key2: " "
+  key3: "값3"`
+
+    const parsed = parseYaml(original)
+    const stringified = stringifyYaml(parsed)
+    const reparsed = parseYaml(stringified)
+
     expect(reparsed).toEqual(parsed)
   })
 

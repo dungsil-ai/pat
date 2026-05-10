@@ -57,3 +57,10 @@
   setting_at_number_of_potential_buyers_50_desc: "최고의 가격을 제시하는 구매자 50명으로 제한합니다." # 10492189134340021168
   setting_at_number_of_potential_buyers_all: "#high 전부#!" # 7629858306264521668
   setting_at_number_of_potential_buyers_all_desc: "제한 없음, 모든 구매자를 표시합니다." # 5157590118508367253
+  rule_at_widget_position: "#color_yellow 유물 검색 및 거래:#! 유물 찾기 버튼 위치" # 5161105005857993746
+  setting_at_widget_position_left: "#high 왼쪽#!" # 7979153476472288091
+  setting_at_widget_position_left_desc: "유물 찾기 버튼을 오른쪽 경계에서 870픽셀 위치에 배치합니다." # 18152608503098349148
+  setting_at_widget_position_center: "#high 중앙#!" # 12309615782535939186
+  setting_at_widget_position_center_desc: "유물 찾기 버튼을 오른쪽 경계에서 780픽셀 위치에 배치합니다." # 1601579572329460656
+  setting_at_widget_position_right: "오른쪽" # 17508526235464361486
+  setting_at_widget_position_right_desc: "유물 찾기 버튼을 오른쪽 경계에서 690픽셀 위치에 배치합니다(기본값)." # 17436319994519572507

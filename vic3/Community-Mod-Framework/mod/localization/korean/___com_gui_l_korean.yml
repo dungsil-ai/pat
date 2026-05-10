@@ -5,3 +5,15 @@
   gui_character_opinion_example: "의견 예시" # 7562110352757794886
   com_gui_total_building: "[Building.GetName] 규모:" # 4781107405660026246
   com_no_sandbox_warning: "@red_cross! 목표가 선택된 상태에서는 $SANDBOX$를 사용할 수 없습니다" # 13636822750393792706
+  com_event_location: "[GetPlayer.MakeScope.Var('com_event_window_location_var').GetFlagName]에서 발생한 이벤트" # 10184700852032093851
+  com_debug_deer: "#header #todo 디버그 정보#!#!\n$TOOLTIP_DELIMITER$\n#bold 이벤트 ID: [Event.GetKey|v]\n$TOOLTIP_DELIMITER$\n#bold 트리거 설명:\n[Event.GetTriggerDesc]\n@information! 클릭하여 텍스트 편집기에서 이벤트 열기" # 15750909931800288972
+  com_debug.t: "커뮤니티 GUI 테스트 이벤트" # 14439554426211369124
+  com_debug.d: "\"빅토리아 3는 정말 형편없는 게임이야. 독창성이라곤 찾아볼 수 없는 시시한 게임이지. 국가 규모가 어떻든 플레이하기가 너무 쉬워. 빅토리아 2 때는 훨씬 나았어. 건물과 인구를 직접 관리하고 다양한 외교를 수행해야 했으니까.\"" # 6217398070270506244
+  com_debug.f: "\"그래, 불행히도 제임스 말고는 아무도 모딩을 못 해\" -rskhm" # 11756833210712855117
+  com_debug.tt: "#italic 아무 일도 일어나지 않습니다...#!" # 1673222677896737577
+  com_debug.a: "테스트 선택지 1" # 10923573778500062648
+  com_debug.b: "2 테스트 2 선택지" # 9429986471353302374
+  com_debug.c: "세 번째 테스트 선택지" # 14400040029370851027
+  com_debug.e: "테스트 & 4ious" # 4074723196073234045
+  com_debug.james: "\"그냥 [GetTechnology('line_infantry').GetName] 연구나 해\" -1230james" # 10961944449040135390
+  com_debug.james_tt: "#italic 제임스가 당신을 보며 미소 짓습니다...#!" # 10978015492550975796

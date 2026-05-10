@@ -4,7 +4,7 @@
 
 ### 필수 요구사항
 
-- **Node.js**: v18 이상
+- **Node.js**: v24 권장 (`.node-version` 기준 24.11.1, 최소 v18)
 - **pnpm**: 10.24.0 이상 (권장)
 - **Git**: 최신 버전
 - **Google AI API 키**: Gemini API 액세스
@@ -24,7 +24,7 @@ pnpm install
 
 ### 3. 환경 변수 설정
 
-`.env` 파일을 생성하고 API 키를 설정합니다:
+`.env` 파일을 생성하고 API 키와 실행 옵션을 설정합니다:
 
 ```bash
 cp .env.sample .env
@@ -34,12 +34,33 @@ cp .env.sample .env
 
 ```env
 GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
+# (선택) 구 Gemini 키 폴백
+GOOGLE_GENERATIVE_AI_API_KEY=legacy_key
+# (선택) GitHub API 인증/레이트 리밋 완화
+GITHUB_TOKEN=github_pat_xxx
+
+# 실행 옵션
+LOG_LEVEL=info
+TRANSLATE_BATCH_SIZE=10
+TRANSLATION_TIMEOUT_MINUTES=15
+TRANSLATE_MOD_CONCURRENCY=4
+GEMINI_MODEL=gemini-flash-lite-latest
 ```
 
 **API 키 발급:**
 1. [Google AI Studio](https://aistudio.google.com/app/apikey) 방문
 2. "Create API Key" 클릭
 3. 생성된 키를 복사하여 `.env`에 붙여넣기
+
+**환경 변수 설명:**
+- `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev가 사용하는 기본 Gemini API 키 (필수)
+- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
+- `GITHUB_TOKEN`: (선택) GitHub API 인증용 토큰. 업스트림 대시보드 및 GitHub 기반 버전 조회의 레이트 리밋 완화에 유용
+- `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 20)
+- `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
+- `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
+- `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-flash-lite-latest`) 사용
+- `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
 
 ## 기본 사용법
 
@@ -57,6 +78,9 @@ pnpm ck3:update-dict
 
 # 잘못된 번역 재번역
 pnpm ck3:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm ck3:retransliteration -- --since-commit=HEAD
 ```
 
 ### Victoria 3 번역
@@ -73,6 +97,9 @@ pnpm vic3:update-dict
 
 # 잘못된 번역 재번역
 pnpm vic3:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm vic3:retransliteration -- --since-commit=HEAD
 ```
 
 ### Stellaris 번역
@@ -89,6 +116,9 @@ pnpm stellaris:update-dict
 
 # 잘못된 번역 재번역
 pnpm stellaris:retranslate
+
+# transliteration_files 변경에 따른 음역 대상 파일 재무효화
+pnpm stellaris:retransliteration -- --since-commit=HEAD
 ```
 
 ### Upstream 업데이트
@@ -115,7 +145,12 @@ pnpm upstream
 - `1.10.0 > 1.2.0`처럼 숫자 크기에 따라 정렬
 - VIC3 모드에 권장
 
-**3. default (기본)**
+**3. github (GitHub 릴리스)**
+- GitHub Releases API에서 최신 릴리스 태그를 그대로 사용
+- 릴리스 기준으로 배포되는 모드에 적합
+- 태그 형식이 제각각이어도 최신 릴리스만 필요할 때 유용
+
+**4. default (기본)**
 - 기존 방식대로 기본 브랜치 사용
 - 가장 간단하고 안정적인 방식
 
@@ -136,6 +171,7 @@ version_strategy = "semantic"  # 버전 전략 지정
 | CK3 | `semantic` | 대부분의 모드가 시멘틱 버전 태그 사용 |
 | VIC3 | `natural` | 복잡한 버전 번호 체계에 더 유연하게 대응 |
 | Stellaris | `semantic` | 주요 모드들이 표준 버전 태그 사용 |
+| GitHub 릴리스 배포 모드 | `github` | 릴리스 기준 배포 시 최신 릴리스만 받으면 충분 |
 
 #### 버전 전략별 특징
 
@@ -151,9 +187,17 @@ version_strategy = "semantic"  # 버전 전략 지정
 - ❌ ls-remote 신뢰성 문제 가능성
 - ❌ 정렬 방식에 따라 다른 결과
 
+**github:**
+- ✅ 릴리스 페이지의 최신 태그를 그대로 사용
+- ✅ 프리릴리즈/드래프트를 자동 제외해 안정적인 공개 릴리스 기준 추적
+- ✅ 태그 규칙이 들쭉날쭉해도 최신 릴리스만 필요할 때 단순함
+- ❌ GitHub 저장소만 지원
+- ❌ 릴리스가 없는 저장소는 실패
+
 **default:**
 - ✅ 가장 간단하고 신뢰성 높음
 - ✅ 모든 저장소 타입 지원
+- ✅ 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교
 - ❌ 항상 최신 버전을 선택하지는 않음
 
 #### 오류 처리
@@ -203,6 +247,31 @@ git push origin main
 - 모든 번역 워크플로우는 `translation` concurrency group 사용
 - 사전 무효화 워크플로우와 일반 번역 워크플로우가 동시에 실행되지 않음
 - 순차적 실행으로 데이터베이스 및 파일 충돌 방지
+
+### 업스트림 번역 미반영 대시보드
+
+업스트림 저장소 변경분이 번역에 반영되지 않은 모드를 자동으로 모니터링합니다.
+
+- 워크플로우: `.github/workflows/upstream-translation-dashboard.yml`
+  - 12시간마다 스케줄 실행 + 수동 `workflow_dispatch` 지원
+  - `pnpm exec jiti scripts/upstream-dashboard.ts > upstream-dashboard.md` 로 대시보드 본문 생성 (`GITHUB_TOKEN`이 있으면 GitHub API/GraphQL 인증에 사용)
+- 결과: 제목 `[대시보드] 업스트림 변경 대비 번역 미반영 현황`, 라벨 `upstream-dashboard` 인 오픈 이슈를 생성/업데이트
+- 표 컬럼: 게임/모드, 추적 기준(`version_strategy`), tag/commit 추적 방식, 번역 기준 버전, 최신 버전, 상태(미반영/최신/번역 이력 없음/조회 실패) — compare 링크는 `번역 기준 버전`/`최신 버전` 텍스트에 포함
+- annotated 태그도 커밋까지 추적하여 최신 태그 비교 정확도를 높임
+- `github` 전략은 공개 릴리스만 비교하며 프리릴리즈/드래프트는 제외
+- `default` 전략은 기본 브랜치 HEAD 전체가 아니라 `upstream.localization` 경로들에 영향을 준 최신 커밋으로 비교합니다. 경로가 `["."]`이면 저장소 전체 커밋을 사용합니다.
+
+### 음역 대상 파일 변경 자동 무효화
+
+`meta.toml`의 `upstream.transliteration_files`가 바뀌면 영향을 받는 번역 파일만 골라 해시를 비워 다음 번역 때 다시 처리되도록 합니다.
+
+- 워크플로우: `.github/workflows/invalidate-on-transliteration-files-change.yml`
+- 트리거: `main` 브랜치에 `**/meta.toml` 변경 push 또는 수동 `workflow_dispatch`
+- 실행 순서:
+  1. `pnpm upstream`
+  2. `pnpm {game}:retransliteration -- --since-commit=<sha>`
+  3. 변경된 한국어 파일 자동 커밋
+- 각 게임 명령은 추가/제거된 `transliteration_files` 패턴과 매칭되는 `___*_l_korean.yml` 파일 내 각 localization 항목(key)의 해시를 `null`로 바꿉니다.
 
 ## 명령어 설명
 
@@ -296,6 +365,24 @@ pnpm ck3:update-hash
 [RICE/events.yml:event_1] 검증 실패: 누락된 게임 변수: [GetTitle]
 [RICE/events.yml:event_2] 검증 실패: 변수 내부 한글 포함: [Get제목]
 총 2개 항목 무효화됨
+```
+
+### 음역 대상 파일 재무효화 (`pnpm ck3:retransliteration`)
+
+**용도:**
+- `meta.toml`의 `transliteration_files` 목록이 바뀐 경우
+- 음역/번역 모드가 바뀐 파일만 선택적으로 다시 처리하고 싶은 경우
+
+**동작:**
+1. 지정한 커밋의 `meta.toml` diff에서 `transliteration_files` 추가/제거 항목 추출
+2. 영향받는 한국어 localization 파일 탐색
+3. 기존 번역 항목의 해시를 `null`로 설정
+4. 다음 `pnpm ck3` 실행 시 해당 파일만 재번역/재음역
+
+**사용 예:**
+```bash
+pnpm ck3:retransliteration -- --since-commit=HEAD
+pnpm ck3
 ```
 
 ## 워크플로우 예제

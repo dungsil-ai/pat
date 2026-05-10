@@ -2,3 +2,4 @@
   zw_decision_pruchase_port_said_for_suez_canal: "$suez_canal_purchase$" # 6995435491363109324
   notification_zw_noti_pruchase_port_said_for_suez_canal_name: "$suez_sale$" # 13164151346790300689
   notification_zw_noti_pruchase_port_said_for_suez_canal_desc: "우리는 수에즈 운하 건설을 위해 $HUB_NAME_STATE_SINAI_city$를 팔 수밖에 없습니다." # 12184567402902678588
+  zw_decision_pruchase_port_said_for_suez_canal_desc: "" # 17241709254077376921

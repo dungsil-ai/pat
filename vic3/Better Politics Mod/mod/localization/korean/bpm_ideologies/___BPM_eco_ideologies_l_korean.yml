@@ -41,3 +41,5 @@
   ideology_eco_colonialist_desc: "#lore 이 집단은 영토로부터의 지속적인 부의 추출에 의존하는 식민지 이해관계를 대변하며, 독립적인 경제 개발보다는 이 체제의 유지를 선호합니다. #!" # 560467180417131621
   ideology_eco_slave_colonialist: "노예 식민주의 경제" # 17148519017828068338
   ideology_eco_slave_colonialist_desc: "#lore 이 집단은 노예를 통해 식민지 영토에서 지속적으로 부를 추출하는 데 의존하는 식민지 이익 집단을 대표하며, 독립적인 경제 발전보다는 이 제도의 유지를 선호합니다. #!" # 8133945432603959777
+  ideology_eco_colonial_slavery_supporter: "식민지 노예제 지지자" # 9371464375103752641
+  ideology_eco_colonial_slavery_supporter_desc: "#lore 이 집단은 식민지의 노예 노동으로 이득을 취하는 보수적 지주들의 경제적 이익을 대변합니다. 이들은 식민지 내 노예제 유지를 원하지만, 본토에 노예제를 부활시키는 것에는 반대합니다. #!" # 8897249502986618436

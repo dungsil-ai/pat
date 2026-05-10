@@ -1,20 +1,52 @@
-import { constants as fsConstants } from 'node:fs'
-import { access, lstat, mkdir, open, readdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { access, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises'
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { basename, dirname, join } from 'pathe'
 import { parseToml, parseYaml, stringifyYaml } from '../parser'
 import { hashing } from '../utils/hashing'
 import { log } from '../utils/logger'
-import { translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
+import { translate, translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
 import { updateAllUpstreams } from '../utils/upstream'
+import { getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
+import { buildKoreanTargetFileName } from '../utils/localization-file-name'
 
 const execAsync = promisify(exec)
 
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
 const DEFAULT_TRANSLATE_BATCH_SIZE = 20
+const HANGUL_CHOSEONG_LIST = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'] as const
+const HANGUL_BASE_CODE = 0xAC00
+const HANGUL_CHOSEONG_INTERVAL = 588
+const LATIN_INITIAL_CONSONANT_MAP: Record<string, string[]> = {
+  a: ['ㅇ'],
+  b: ['ㅂ', 'ㅍ'],
+  c: ['ㅋ', 'ㅅ', 'ㅊ'],
+  d: ['ㄷ', 'ㅌ'],
+  e: ['ㅇ'],
+  f: ['ㅍ'],
+  g: ['ㄱ', 'ㅋ'],
+  h: ['ㅎ'],
+  i: ['ㅇ'],
+  j: ['ㅈ', 'ㅊ'],
+  k: ['ㅋ', 'ㄱ'],
+  l: ['ㄹ'],
+  m: ['ㅁ'],
+  n: ['ㄴ'],
+  o: ['ㅇ'],
+  p: ['ㅍ', 'ㅂ'],
+  q: ['ㅋ'],
+  r: ['ㄹ'],
+  s: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ'],
+  t: ['ㅌ', 'ㄷ'],
+  u: ['ㅇ'],
+  v: ['ㅂ', 'ㅍ'],
+  w: ['ㅇ', 'ㅂ'],
+  x: ['ㅅ', 'ㅆ', 'ㅈ', 'ㅊ', 'ㅋ'],
+  y: ['ㅇ'],
+  z: ['ㅈ', 'ㅅ']
+}
 
 /**
  * Shell 명령어에 안전하게 사용할 수 있도록 파일 경로를 이스케이프합니다.
@@ -57,6 +89,56 @@ function getTranslateBatchSize (): number {
   return parsed
 }
 
+function countHangulSyllables(text: string): number {
+  return (text.match(/[가-힣]/g) || []).length
+}
+
+function getHangulInitialConsonant(char: string): string | null {
+  if (!/^[가-힣]$/.test(char)) {
+    return null
+  }
+
+  const code = char.charCodeAt(0) - HANGUL_BASE_CODE
+  const choIndex = Math.floor(code / HANGUL_CHOSEONG_INTERVAL)
+  return HANGUL_CHOSEONG_LIST[choIndex] || null
+}
+
+function getExpectedInitialConsonantsForLatin(char: string): string[] {
+  const lower = char.toLowerCase()
+
+  return LATIN_INITIAL_CONSONANT_MAP[lower] || []
+}
+
+function isSuspiciousShortTransliterationResult(sourceValue: string, translatedValue: string): boolean {
+  const trimmedSource = sourceValue.trim()
+  const trimmedTranslated = translatedValue.trim()
+
+  if (!/^[A-Za-z]{3,6}$/.test(trimmedSource)) {
+    return false
+  }
+
+  if (!/^[가-힣]+$/.test(trimmedTranslated)) {
+    return false
+  }
+
+  const hangulLength = countHangulSyllables(trimmedTranslated)
+  if (hangulLength < 1 || hangulLength > 2) {
+    return false
+  }
+
+  const expectedInitials = getExpectedInitialConsonantsForLatin(trimmedSource[0])
+  if (expectedInitials.length === 0) {
+    return false
+  }
+
+  const actualInitial = getHangulInitialConsonant(trimmedTranslated[0])
+  if (!actualInitial) {
+    return false
+  }
+
+  return !expectedInitials.includes(actualInitial)
+}
+
 /**
  * 모드 단위 병렬 처리 동시성 값을 환경변수에서 읽어옵니다.
  * 잘못된 값이 들어오면 기본값을 사용합니다.
@@ -81,6 +163,7 @@ interface ModTranslationsOptions {
   rootDir: string
   mods: string[]
   gameType: GameType
+  targetMod?: string
   onlyHash?: boolean
   timeoutMinutes?: number | false // false = 타임아웃 비활성화, undefined = 기본값(15분) 사용
 }
@@ -92,10 +175,6 @@ interface ModMeta {
     transliteration_files?: string[];
   };
 }
-
-type UpstreamFileHashMap = Record<string, string>
-
-const UPSTREAM_FILE_HASHES_FILENAME = '.pat-file-hashes.json'
 
 export interface UntranslatedItem {
   mod: string
@@ -127,6 +206,10 @@ function resolveLogModName(modName: string, filePath: string): string {
   const normalizedPath = filePath.replace(/\\/g, '/')
   const [actualModName] = normalizedPath.split('/')
   return actualModName || modName
+}
+
+function normalizePathForComparison(path: string): string {
+  return path.replace(/\\/g, '/')
 }
 
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
@@ -161,71 +244,11 @@ async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModW
   return workItems
 }
 
-async function readUpstreamFileHashes(hashFilePath: string): Promise<UpstreamFileHashMap> {
-  try {
-    const hashFileStat = await lstat(hashFilePath)
-    if (!hashFileStat.isFile()) {
-      log.warn(`업스트림 파일 해시 읽기를 건너뜁니다. 일반 파일이 아닙니다: ${hashFilePath}`)
-      return {}
-    }
-
-    const content = await readFile(hashFilePath, 'utf-8')
-    const parsed = JSON.parse(content)
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-      return {}
-    }
-    return parsed as UpstreamFileHashMap
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-      return {}
-    }
-    log.warn(`업스트림 파일 해시를 읽는 중 오류가 발생해 초기 상태로 진행합니다: ${hashFilePath}`)
-    return {}
-  }
-}
-
-async function writeUpstreamFileHashes(hashFilePath: string, hashes: UpstreamFileHashMap): Promise<void> {
-  const hashContent = `${JSON.stringify(hashes, null, 2)}\n`
-
-  try {
-    const existingFileStat = await lstat(hashFilePath)
-    if (!existingFileStat.isFile()) {
-      log.warn(`업스트림 파일 해시 저장을 건너뜁니다. 일반 파일이 아닙니다: ${hashFilePath}`)
-      return
-    }
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
-      throw error
-    }
-  }
-
-  try {
-    const fileHandle = await open(
-      hashFilePath,
-      fsConstants.O_WRONLY | fsConstants.O_CREAT | fsConstants.O_TRUNC | fsConstants.O_NOFOLLOW,
-      0o644
-    )
-
-    try {
-      await fileHandle.writeFile(hashContent, 'utf-8')
-    } finally {
-      await fileHandle.close()
-    }
-  } catch (error) {
-    const errorCode = (error as NodeJS.ErrnoException).code
-    if (errorCode === 'ELOOP') {
-      log.warn(`업스트림 파일 해시 저장을 건너뜁니다. 심볼릭 링크는 허용되지 않습니다: ${hashFilePath}`)
-      return
-    }
-    throw error
-  }
-}
-
-export async function processModTranslations ({ rootDir, mods, gameType, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
+export async function processModTranslations ({ rootDir, mods, gameType, targetMod, onlyHash = false, timeoutMinutes }: ModTranslationsOptions): Promise<TranslationResult> {
   // 번역 작업 전에 해당 게임의 upstream 리포지토리만 업데이트
   log.start(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 중...`)
   const projectRoot = join(rootDir, '..') // rootDir은 ck3/ 같은 게임 디렉토리이므로 한 단계 위로
-  await updateAllUpstreams(projectRoot, gameType)
+  await updateAllUpstreams(projectRoot, gameType, targetMod)
   log.success(`${gameType.toUpperCase()} Upstream 리포지토리 업데이트 완료`)
 
   // 타임아웃 설정 (기본값: 15분)
@@ -257,7 +280,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
 
     const metaContent = await readFile(metaPath, 'utf-8')
     const meta = parseToml(metaContent) as ModMeta
-    const hashFilePath = join(modDir, 'upstream', UPSTREAM_FILE_HASHES_FILENAME)
+      const hashFilePath = getUpstreamFileHashesPath(modDir)
     const savedFileHashes = await readUpstreamFileHashes(hashFilePath)
     const nextFileHashes: UpstreamFileHashMap = { ...savedFileHashes }
     const currentSourcePaths = new Set<string>()
@@ -317,22 +340,24 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
       const expectedKoreanFiles: string[] = []
       
       for (const file of sourceFiles) {
-        if (etcSubMod && !file.startsWith(`${etcSubMod}/`)) {
+        const normalizedFile = file.replace(/\\/g, '/')
+
+        if (etcSubMod && !normalizedFile.startsWith(`${etcSubMod}/`)) {
           continue
         }
         // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
-        if (file.endsWith(`.yml`) && file.includes(`_l_${meta.upstream.language}`)) {
-          const sourcePath = join(sourceDir, file)
+        if (normalizedFile.endsWith(`.yml`) && normalizedFile.includes(`_l_${meta.upstream.language}`)) {
+          const sourcePath = join(sourceDir, normalizedFile)
           const sourceContent = await readFile(sourcePath, 'utf-8')
           const sourceFileHash = hashing(sourceContent)
-          const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')
+          const sourceRelativePath = join(locPath, normalizedFile).replace(/\\/g, '/')
           currentSourcePaths.add(sourceRelativePath)
           const previousFileHash = savedFileHashes[sourceRelativePath]
 
           if (!onlyHash && previousFileHash === sourceFileHash) {
-            log.debug(`[${mod}/${file}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
+            log.debug(`[${mod}/${normalizedFile}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
           } else {
-            processes.push(processLanguageFile(mod, sourceDir, targetDir, file, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
+            processes.push(processLanguageFile(mod, sourceDir, targetDir, normalizedFile, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
           }
 
           if (nextFileHashes[sourceRelativePath] !== sourceFileHash) {
@@ -340,9 +365,10 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
             hasHashChanges = true
           }
           // 처리될 한국어 파일 경로 추적
-          const targetParentDir = join(targetDir, dirname(file))
-          const targetFileName = '___' + basename(file).replace(`_l_${meta.upstream.language}.yml`, '_l_korean.yml')
-          expectedKoreanFiles.push(join(targetParentDir, targetFileName))
+          const targetParentDir = join(targetDir, dirname(normalizedFile))
+          const targetFileName = buildKoreanTargetFileName(normalizedFile, meta.upstream.language)
+          const targetPath = join(targetParentDir, targetFileName)
+          expectedKoreanFiles.push(targetPath)
         }
       }
       
@@ -358,7 +384,12 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
     
     // 모든 파일 처리 완료 후 orphaned 파일 정리
     for (const task of locPathCleanupTasks) {
-      await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot)
+      const nestedCleanupDirs = locPathCleanupTasks
+        .map(({ targetDir }) => targetDir)
+        .filter(targetDir => normalizePathForComparison(targetDir).startsWith(`${normalizePathForComparison(task.targetDir)}/`))
+        .filter(targetDir => targetDir !== task.targetDir)
+
+      await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot, nestedCleanupDirs)
     }
 
     for (const savedPath of Object.keys(nextFileHashes)) {
@@ -486,7 +517,14 @@ async function saveAndReturnResult(
  * @param locPath 로케일 경로
  * @param projectRoot 프로젝트 루트 디렉토리 (git 작업 디렉토리)
  */
-async function cleanupOrphanedFiles(targetDir: string, expectedKoreanFiles: string[], mod: string, locPath: string, projectRoot: string): Promise<void> {
+async function cleanupOrphanedFiles(
+  targetDir: string,
+  expectedKoreanFiles: string[],
+  mod: string,
+  locPath: string,
+  projectRoot: string,
+  excludedSubDirs: string[] = []
+): Promise<void> {
   try {
     // targetDir 디렉토리가 존재하는지 확인
     await access(targetDir)
@@ -502,13 +540,21 @@ async function cleanupOrphanedFiles(targetDir: string, expectedKoreanFiles: stri
   )
 
   // expectedKoreanFiles를 Set으로 변환하여 빠른 검색
-  const expectedSet = new Set(expectedKoreanFiles)
+  const expectedSet = new Set(expectedKoreanFiles.map(path => normalizePathForComparison(path)))
+  const excludedSet = excludedSubDirs
+    .map(path => normalizePathForComparison(path))
+    .map(path => path.endsWith('/') ? path : `${path}/`)
 
   // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
+    const normalizedFullPath = normalizePathForComparison(fullPath)
+
+    if (excludedSet.some(excludedDir => normalizedFullPath.startsWith(excludedDir))) {
+      continue
+    }
     
-    if (!expectedSet.has(fullPath)) {
+    if (!expectedSet.has(normalizedFullPath)) {
       log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
       try {
         // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백
@@ -553,7 +599,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
   // 파일 순서를 최상위로 유지해 덮어쓸 수 있도록 앞에 '___'를 붙임 (ex: `___00_culture_l_english.yml`)
   const targetParentDir = join(targetBaseDir, dirname(file))
   await mkdir(targetParentDir, { recursive: true })
-  const targetPath = join(targetParentDir, '___' + basename(file).replace(`_l_${sourceLanguage}.yml`, '_l_korean.yml'))
+  const targetPath = join(targetParentDir, buildKoreanTargetFileName(file, sourceLanguage))
 
   let targetContent = ''
   try {
@@ -621,7 +667,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     const transliterationItems = translationItems.filter(item => item.shouldTransliterate)
     const normalItems = translationItems.filter(item => !item.shouldTransliterate)
 
-    const applyResults = (items: typeof translationItems, results: Awaited<ReturnType<typeof translateBulk>>) => {
+    const applyResults = async (items: typeof translationItems, results: Awaited<ReturnType<typeof translateBulk>>) => {
       for (const [index, item] of items.entries()) {
         const result = results[index]
         let hashForEntry: string | null = item.sourceHash
@@ -645,6 +691,29 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           })
         }
 
+        if (item.shouldTransliterate && isSuspiciousShortTransliterationResult(item.sourceValue, translatedValue)) {
+          try {
+            const retried = await translate(
+              item.sourceValue,
+              gameType,
+              0,
+              {
+                previousTranslation: translatedValue,
+                failureReason: '음역 컨텍스트에서 의미 번역 가능성이 감지되었습니다. 사전적 의미 번역을 피하고 발음 기반 음역으로만 번역하세요.'
+              },
+              true,
+              true
+            )
+
+            if (retried !== translatedValue) {
+              log.info(`[${mode}/${file}:${item.key}] 짧은 음역 의심 항목 재번역 적용: "${translatedValue}" -> "${retried}"`)
+              translatedValue = retried
+            }
+          } catch (error) {
+            log.warn(`[${mode}/${file}:${item.key}] 짧은 음역 의심 항목 재번역 실패: ${String(error)}`)
+          }
+        }
+
         newYaml.l_korean[item.key] = [translatedValue, hashForEntry]
         hasUnsavedChanges = true
         processedCount++
@@ -658,7 +727,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
 
       try {
         const results = await translateBulk(items.map(item => item.sourceValue), gameType, useTransliteration, { modName: logModName })
-        applyResults(items, results)
+        await applyResults(items, results)
       } catch (error) {
         const modeLabel = useTransliteration ? '음역 모드' : '번역 모드'
         log.warn(`[${mode}/${file}] ${modeLabel} 처리 중 오류 발생, 해당 모드는 원문 유지 후 다음 모드로 진행합니다.`)

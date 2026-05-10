@@ -2,4 +2,4 @@
 url = "https://github.com/pharaox/artifact_trade.git"
 localization = ["localization/english", "localization/replace/english"]
 language = "english"
-version_strategy = "semantic"
+version_strategy = "github"

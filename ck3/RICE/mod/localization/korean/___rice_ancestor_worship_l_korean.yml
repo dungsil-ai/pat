@@ -343,3 +343,5 @@
   RICE_ancestor_worship.0099.t: "xxxxx" # 1951045980481827005
   RICE_ancestor_worship.0099.desc: "xxxxx" # 1951045980481827005
   RICE_ancestor_worship.0099.a: "xxxxx" # 1951045980481827005
+  activity_RICE_venerate_ancestors_province_desc: "" # 17241709254077376921
+  activity_RICE_venerate_ancestors_destination_selection: "" # 17241709254077376921

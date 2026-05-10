@@ -2,4 +2,4 @@
 url = "https://github.com/Better-Politics-Mod/Better-Politics-Mod-Vic-3.git"
 localization = ["better-politics-mod/localization/english"]
 language = "english"
-version_strategy = "semantic"
+version_strategy = "github"

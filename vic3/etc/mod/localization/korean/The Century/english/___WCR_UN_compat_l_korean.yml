@@ -4,3 +4,4 @@
   WCR_UN_title_heir: "[ROOT.GetCharacter.GetPrimaryRoleTitle]" # 14866767968046422879
   WCR_UN_title_general: "$concept_general$" # 15780715503402201926
   WCR_UN_title_admiral: "$concept_admiral$" # 12110009431907743264
+  WCR_UN_title_none: "" # 17241709254077376921

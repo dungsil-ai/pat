@@ -23,6 +23,7 @@ jobs:
       contents: write
       issues: write
     env:
+      GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       GOOGLE_AI_STUDIO_TOKEN: "${{secrets.GOOGLE_AI_STUDIO_TOKEN}}"
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
     steps:

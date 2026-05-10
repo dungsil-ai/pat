@@ -40,3 +40,11 @@
   theodosian_walls_maintenance.0008.desc: "콘스탄티노폴리스로부터 우려 섞인 보고들이 연달아 내 귀에 들어왔다. 소식은 명백했다. 수 세기 동안 제국의 방패였던 전설적인 테오도시우스 성벽이 위험천만하게 파손된 상태로 방치되고 있다는 것이다.\n\n기술자들은 거대한 석회암 블록 사이의 모르타르가 먼지로 변하고 있으며, 침입한 담쟁이덩굴이 고대의 돌들을 안쪽에서부터 벌려놓고 있다고 경고한다. 외벽의 전체 구역이 도시 수비대에 의해 안전하지 않은 것으로 간주되고 있으며, 요새 곳곳에 우려스러운 틈새가 나타나기 시작했다.\n\n이러한 쇠퇴는 비밀이 아니다. 성벽의 상태를 제국 몰락의 상징으로 여기는 민중들 사이에서 불안감이 커지고 있다. 적들에게 이것은 분명 약점의 징후이자, 점점 더 취약해지는 도시의 방어력을 시험해 보라는 초대장과 다름없을 것이다. 도시들의 여왕이 나날이 취약해지고 있다." # 6399697234783090004
   theodosian_walls_maintenance.0008.a: "성벽을 이전의 영광으로 복구해야만 한다!" # 16911154927852441134
   BYZANTION_LOCATION_1_TOOLTIP: "콘스탄티노폴리스가 귀하의 영역 내에 있습니다" # 7758421867093375865
+  great_project_type_tooltip_theodosian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_possessive_theodosian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_theodosian_walls_maintenance: "" # 17241709254077376921
+  great_project_type_theodosian_walls_maintenance_contribution_name_gold: "" # 17241709254077376921
+  great_project_type_theodosian_walls_maintenance_contribution_name_manpower: "" # 17241709254077376921
+  great_project_type_theodosian_walls_maintenance_contribution_name_stone: "" # 17241709254077376921
+  great_project_type_theodosian_walls_maintenance_contribution_name_engineers: "" # 17241709254077376921
+  great_project_type_theodosian_walls_maintenance_contribution_name_blessing: "" # 17241709254077376921

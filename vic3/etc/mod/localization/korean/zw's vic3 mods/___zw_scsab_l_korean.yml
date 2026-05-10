@@ -180,6 +180,26 @@
   zw_expand_building_electrics_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_electrics_button_cl')]" # 10542065438037424116
   zw_expand_building_electrics_button_cl_1: "#gold @green_checkmark_box! 전기#!" # 6578260140931808517
   zw_expand_building_electrics_button_cl_2: "@simple_box! 전기" # 4231702125231760838
+  zw_build_new_railway_button_desc: "" # 17241709254077376921
+  zw_expand_building_railway_button_desc: "" # 17241709254077376921
+  zw_limit_max_added_levels_railway_button_desc: "" # 17241709254077376921
+  zw_change_max_added_levels_railway_button_desc: "" # 17241709254077376921
+  zw_build_new_power_plant_button_desc: "" # 17241709254077376921
+  zw_expand_building_power_plant_button_desc: "" # 17241709254077376921
+  zw_limit_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
+  zw_change_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
+  zw_develop_incorporated_states_button_desc: "" # 17241709254077376921
+  zw_expand_building_button_desc: "" # 17241709254077376921
+  zw_increase_labor_threshold_button_desc: "" # 17241709254077376921
+  zw_decrease_labor_threshold_button_desc: "" # 17241709254077376921
+  zw_increase_added_constructions_button_desc: "" # 17241709254077376921
+  zw_decrease_added_constructions_button_desc: "" # 17241709254077376921
+  zw_expand_building_machine_button_desc: "" # 17241709254077376921
+  zw_expand_building_food_button_desc: "" # 17241709254077376921
+  zw_expand_building_clothes_furniture_button_desc: "" # 17241709254077376921
+  zw_expand_building_glassworks_button_desc: "" # 17241709254077376921
+  zw_expand_building_chemical_button_desc: "" # 17241709254077376921
+  zw_expand_building_electrics_button_desc: "" # 17241709254077376921
   zw_expand_building_electrics_button_effect: "$zw_expand_building_electrics_button_effect_breakdown_01$$zw_expand_building_electrics_button_effect_breakdown_02$$zw_expand_building_electrics_button_effect_breakdown_03$$zw_expand_building_electrics_button_effect_breakdown_04$$zw_expand_building_electrics_button_effect_breakdown_05$" # 11687200416654061012
   zw_expand_building_electrics_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_electrics_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_iron_mine').GetName]#!" # 12881254102165766908
@@ -219,3 +239,7 @@
   zw_expand_building_other_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_gold_mine').GetName]#!" # 1416877170969118084
   zw_expand_building_other_button_effect_breakdown_03: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_arts_academy').GetName]#!" # 10435173824527551778
   zw_expand_building_other_button_effect_breakdown_04: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_port').GetName]#!" # 10653895655970913934
+  zw_expand_building_plantations_button_desc: "" # 17241709254077376921
+  zw_expand_building_shipyards_button_desc: "" # 17241709254077376921
+  zw_expand_building_military_button_desc: "" # 17241709254077376921
+  zw_expand_building_other_button_desc: "" # 17241709254077376921

@@ -69,7 +69,7 @@
  populate.0001.k:0 "The World's Largest Market"
  populate.0001.tt.k:0 "You build a [GetBuilding('cow_great_harbor_01').GetName]"
  populate.0001.l:0 "Impregnable Towering Walls"
- populate.0001.tt.l:0 "You build a [GetBuilding('cow_walls_new').GetName]"
+ populate.0001.tt.l:0 "You build a [GetBuilding('cow_walls_new_01').GetName]"
  populate.0001.m:0 "A Fortress to Stand for a Thousand Years"
  populate.0001.tt.m:0 "You build a [GetBuilding('cow_grand_fortress_01').GetName]"
  populate.0001.n:0 "The Greatest Lighthouse Ever Seen"
@@ -80,3 +80,18 @@
  found_local_kingdom_decision_tooltip:0 "With the backing of a wondrous city, you could crown yourself a [ROOT.Char.Custom('GetQueenKing')|U]."
  found_local_kingdom_decision_confirm:0 "Let them see their new [ROOT.Char.Custom('GetQueenKing')|U]!"
  found_local_kingdom_decision_desc:0 "While [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] has grown into a mighty Burge. many who call themsleves King continue to rule over endless swaths of empty land with nary a subject in sight to carry out their will.\n\nBut I rule over one of the greatest cities the world has ever seen. My subjects number in the hundreds of thousansd and my army is grander than even those of the vast empires that dot the land. It is time the world knew the power of [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]!"
+
+
+ 1_burge_limit_trigger: "You don't personally hold more than 1 (one) City of Wonder and there are not 2 (two) or more Cities of Wonder in your or your top liege's entire realm"
+ 2_burge_limit_trigger: "You don't personally hold more than 2 (two) Cities of Wonder and there are not 5 (five) or more Cities of Wonder in your or your top liege's entire realm"
+ 5_burge_limit_trigger: "You don't personally hold more than 5 (five) Cities of Wonder and there are not 9 (nine) or more Cities of Wonder in your or your top liege's entire realm"
+
+ rebuild_1_burge_limit_trigger: "You don't personally hold a City of Wonder and there are not 2 (two) or more Cities of Wonder in your or your top liege's entire realm"
+ rebuild_2_burge_limit_trigger: "You don't personally hold 2 (two) or more Cities of Wonder and there are not 5 (five) or more Cities of Wonder in your or your top liege's entire realm"
+ rebuild_5_burge_limit_trigger: "You don't personally hold 5 (five) or more Cities of Wonder and there are not 9 (nine) or more Cities of Wonder in your or your top liege's entire realm"
+
+ repopulate.0002.t:0 "Let Us Rebuild!"
+ repopulate.0002.desc:0 "My [GetPlayer.GetLadyLord|U], one or more of our Cities of Wonder have fallen into disrepair and we need to restore it to its former glory."
+
+ repopulate.0003.t:0 "[my_barony.GetNameNoTierNoTooltip] is a City of Wonder!"
+ repopulate.0003.desc:0 "My [GetPlayer.GetLadyLord|U], as you know [my_barony.GetNameNoTier] has long stored as one of the great cities of the world. As such, it boasts strong defenses, a bustling economy, and a vibrant culture that will allow it to recover quickly from being razed.\n\n[GetPlayer.GetTitleAsNameNoTooltip] [GetPlayer.GetFirstNameNoTooltip], remind me which unique structure you built to set [my_barony.GetNameNoTierNoTooltip] apart from the other Cities of Wonder?"

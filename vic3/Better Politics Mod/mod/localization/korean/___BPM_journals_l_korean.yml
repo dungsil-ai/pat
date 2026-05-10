@@ -147,7 +147,7 @@
   je_springtime_of_the_peoples_status: "폭풍우를 헤쳐나가시오." # 6160384163754846692
   je_springtime_of_the_peoples_reason: "유럽 전역에서 다양한 민족들이 깃발을 들고 변화를 위해 행진합니다. 그들의 눈부신 깃발에는 지난 세대의 금지된 단어들이 새겨져 있습니다: #gold 자유, 평등, 박애#!.\n\n이 시기가 끝날 때, 만약 귀국의 상황이 다음과 같다면 #gold 혁명가들#!이 승리할 것입니다:\n- #yellow 공화국#이며,\n- #yellow 부유층 투표#를 하거나 #v 더 낫다#를 할 경우.\n\n반면에, 만약 [GetInterestGroupVariant('ig_radicals',GetPlayer).GetName]와 [GetInterestGroupVariant('ig_socialists',GetPlayer).GetName]가 [concept_marginalized] 상태라면 #purple 반동주의자들#!이 승리할 것입니다.\n\n그렇지 않으면 귀국은 개혁된 현상 유지를 유지합니다.\n\n#lore 제3신분이란 무엇인가? 모든 것이다.\n—시예스 신부, 1788년#!#!" # 7935523177643587688
   je_frankfurt_parliament: "프랑크푸르트 의회" # 16267837956249846588
-  je_frankfurt_parliament_status: "[SCOPE.GetRootScope.GetCountry.GetCustom('frankfurt_debate_stage')]" # 3021807244274833572
+  je_frankfurt_parliament_status: "je_frankfurt_parliament_status:0 \"프랑크푸르트 의회 상태\"" # 7726052381336857176
   je_frankfurt_parliament_reason: "나폴레옹에 의해 신성 로마 제국이 해체되고 #yellow 독일 연방#!으로 대체된 이후, 독일 국가 형성을 위한 운동은 독일 제국들 내의 시민권과 입헌 통치에 대한 열망과 함께 성장해 왔습니다. 이제 혁명의 열기가 유럽을 휩쓸면서, 많은 국가가 거세지는 압력에 굴복하여 #yellow 프랑크푸르트#!에서 #yellow 국민의회#!를 구성하기 시작했습니다. 이곳에서 의원들은 연방을 중앙집권화하기 위한 새로운 독일 헌법 문제를 논의할 것입니다.\n\n이 일지의 진행도와 의회 내 파벌 구성은 참여국 내 급진 좌파, 자유주의, 보수주의 이익 집단의 총 영향력에 의해 결정됩니다. 좌파나 자유주의 파벌이 강할수록 진행 속도가 빨라집니다.\n\n이 일지 항목의 진행도가 10씩 오를 때마다, 의회는 새로운 독일 헌법과 관련된 사안에 대해 투표를 진행합니다. 특정 결정은 일부 대표단이 의회를 보이콧하게 만들 수도 있습니다.\n\n의회는 혁명의 불길이 꺼지기 전에 헌법을 완성해야 하며, 그렇지 않으면 #pink 의회 전체가 해산될 것입니다.#!\n\n급진파가 주도적인 파벌이 되고 주요국 순위 이상의 독일 국가 중 최소 하나가 좌파 정부나 공화국을 수립하면 급진파가 승리합니다. 보수파가 주도권을 잡고 오스트리아 제국을 협상 테이블에 붙잡아 둔다면 보수파가 승리할 것입니다. 그 외의 경우에는 온건한 결론에 도달하여, 왕관 후보자에게 헌법을 제출하게 됩니다.\n\n#lore 마스에서 메멜까지, 에치에서 벨트까지, 독일이여. 독일이여, 그 무엇보다도, 세상 그 무엇보다도!\n—독일인의 노래, 아우구스트 하인리히 호프만, 1841#!" # 15365714873953841654
   je_frankfurt_button: "의회 개요" # 373387407855925112
   je_frankfurt_button_desc: "대표단 개요를 엽니다." # 9067681972779438299
@@ -164,7 +164,7 @@
   bpm_first_intl_happened: "#pink 제1인터내셔널#은 이미 수립되었습니다." # 1832647886137003302
   je_bpm_second_international: "제2차 협회" # 12930714751453177347
   je_bpm_second_international_status: "제2인터내셔널을 기다리시오." # 13125822167524467033
-  je_bpm_second_international_reason: "제1 인터내셔널(해산 후 이렇게 알려지게 됨)의 실패는 전 세계적인 차원에서 다양한 사회주의 운동 간의 협력을 더욱 어렵게 만들었습니다. 하지만 해산 이후 많은 것이 변했습니다. 사회주의 운동에 더 폭넓은 사상의 다양성이 유입되었고, 여러 집단에 의해 다시 협력하자는 제안이 빈번하게 제기되었습니다.\n\n이것은 [Concept('concept_bpm_global_je', '세계 일지 항목')]입니다. 현재 상황에서 이 일지의 진행도는 매월 #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_second_international_tooltip [GetGlobalVariable('bpm_je_second_intl_progress_rate').GetValue|+=]#! 만큼 변동될 것입니다. 완료 시, @ig_revolutionist_socialists! #bold 혁명적 사회주의자#!와 @ig_reformist_socialists! #bold 개혁주의적 사회주의자#!는 화해할 수 없는 분열을 겪게 될 것이며, 동시에 기존의 모든 [Concept('concept_bpm_ig_is_socialist', '사회주의')] [Concept('concept_interest_group', '이해집단')]은 더 많은 추종자를 얻게 될 것입니다.\n\n#lore\"곰곰이 생각해 보십시오. 우리 운동 전체의 사회주의적 본질을 진정으로 구성하는 것은 무엇입니까? 진정으로 실질적인 투쟁은 세 가지 범주로 나뉩니다. 노동조합 투쟁, 사회 개혁을 위한 투쟁, 그리고 자본주의 국가를 민주화하기 위한 투쟁입니다. 우리의 투쟁 형태 이 세 가지가 진정한 사회주의입니까? 전혀 아닙니다. 먼저 노동조합 운동을 보십시오! 영국을 보십시오. 그곳에서 그것은 사회주의적일 뿐만 아니라 어떤 면에서는 사회주의에 대한 장애물이 되기도 합니다. 사회 개혁은 학술 사회주의자, 민족 사회주의자 및 유사한 부류에 의해서도 강조됩니다. 그리고 민주화는 명백히 부르주아적인 것입니다. 부르주아지는 우리보다 먼저 민주주의를 그들의 깃발에 새겼습니다\"\n\n—로자 룩셈부르크, 1898년#!" # 12611504233232300866
+  je_bpm_second_international_reason: "제1인터내셔널(해산 이후 그렇게 불리게 됨)의 실패는 세계적 차원에서 다양한 사회주의 운동 간의 협력을 더욱 어렵게 만들었습니다. 그러나 해산 이후 많은 것이 변했습니다. 사회주의 운동 내에 더 다양한 사상이 유입되었고, 서로 다른 집단들 사이에서 다시 한번 협력하자는 제안이 빈번하게 나오게 되었습니다.\n\n이것은 [Concept('concept_bpm_global_je', '세계 일지 항목')]입니다. 현재 상황에서 이 일지의 진행도는 매달 #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_second_international_tooltip [GetGlobalVariable('bpm_je_second_intl_progress_rate').GetValue|+=]#!씩 변합니다. 완료되면 @ig_revolutionist_socialists! #bold 혁명적 사회주의자#!와 @ig_reformist_socialists! #bold 개혁적 사회주의자#!는 화해할 수 없는 분열을 겪게 되며, 동시에 기존의 모든 [Concept('concept_bpm_ig_is_socialist', '사회주의')] [Concept('concept_interest_group', '이익 집단')]은 더 많은 지지자를 얻게 됩니다.\n\n#lore '생각해 보십시오. 우리 운동 전체의 사회주의적 성격을 진정으로 구성하는 것은 무엇입니까? 실질적인 투쟁은 노동조합 투쟁, 사회 개혁 투쟁, 자본주의 국가의 민주화 투쟁이라는 세 가지 범주로 나뉩니다. 이 세 가지 투쟁 형태가 과연 사회주의입니까? 전혀 그렇지 않습니다. 먼저 노동조합 운동을 봅시다! 영국을 보십시오. 그곳의 노동조합 운동은 사회주의가 아닐 뿐만 아니라, 어떤 면에서는 사회주의에 걸림돌이 되기도 합니다. 사회 개혁 또한 학구적 사회주의자, 국가 사회주의자 및 그와 유사한 부류들에 의해 강조됩니다. 그리고 민주화는 구체적으로 부르주아적인 것입니다. 부르주아지는 우리보다 앞서 그들의 깃발에 민주주의를 새겨 넣었습니다.'\n\n—로자 룩셈부르크, 1898#!" # 3062445183619529256
   je_bpm_second_international_tooltip: "진행 상황은 다음을 통해 결정됩니다:\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_base').GetValue|+=]#! 기본 수치\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_powerful_igs').GetValue|+=]#! 모든 [Concept('concept_great_power', '강대국')] 내 영향력 있는 [Concept('concept_bpm_ig_is_socialist', '사회주의자')] [Concept('concept_interest_group', '이해집단')]으로부터\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_influential_igs').GetValue|+=]#! 모든 [Concept('concept_great_power', '강대국')] 내 영향력 있는 [Concept('concept_bpm_ig_is_socialist', '사회주의자')] [Concept('concept_interest_group', '이해집단')]으로부터\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_agitators').GetValue|+=]#! 모든 [Concept('concept_great_power', '강대국')] 내 활동 중인 [Concept('concept_bpm_socialist_agitator', '사회주의 선동가')]로부터\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_socialist_movements').GetValue|+=]#! 모든 [Concept('concept_great_power', '강대국')] 내 활동 중인 [Concept('concept_political_movement', '사회주의 운동')]으로부터" # 4559524534156571516
   je_bpm_agrarian_socialism: "농본주의 사회주의" # 6184437912086592381
   je_bpm_agrarian_socialism_status: "농본주의 사회주의 사상의 발전을 주시하십시오." # 7433876781528992174
@@ -235,11 +235,11 @@
   bpm_general_strike_will_start: "#bold 총파업#!이 시작됩니다!" # 1462529899885809671
   notification_bpm_general_strike_start_name: "#bold 총파업#!이 시작되었습니다!" # 3283702439998387002
   notification_bpm_general_strike_start_desc: "전국의 노동자들이 일손을 놓았습니다. 노동조합들은 일제히 분노의 목소리를 높이며 노동자들에게 조업 중단을 선동하고 있습니다. 이 사태를 반드시 해결해야 합니다. 그렇지 않으면 우리 경제가 큰 타격을 입게 될 것입니다!" # 16355415384277063772
-  notification_bpm_general_strike_start_big_tooltip: "#header $notification_bpm_general_strike_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_start_desc$" # 3335923497340244322
+  notification_bpm_general_strike_start_tooltip: "#header $notification_bpm_general_strike_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_start_desc$" # 3335923497340244322
   bpm_general_strike_will_fail: "#bold 총파업#!이 중단될 것입니다!" # 8245594881669923960
   notification_bpm_general_strike_fail_name: "#bold 총파업#!이 종료되었습니다!" # 5622835183982363547
   notification_bpm_general_strike_fail_desc: "파업 노동자들이 일터로 복귀하였습니다. 성공적인 진압이나 노련한 협상, 혹은 기력이 다한 결과입니다." # 2680609524697380277
-  notification_bpm_general_strike_fail_big_tooltip: "#header $notification_bpm_general_strike_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_fail_desc$" # 14523701294068631327
+  notification_bpm_general_strike_fail_tooltip: "#header $notification_bpm_general_strike_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_fail_desc$" # 14523701294068631327
   bpm_gave_into_demands: "양보를 제공함" # 15778998992883260218
   bpm_accepted_demands: "이권 획득" # 7160336512143411519
   bpm_right_wing_igs_angered: "[Concept('concept_bpm_ig_is_right_wing','우파 이익 집단')]이 #N 분노했습니다!#!" # 9563144850013805776
@@ -420,6 +420,7 @@
   je_bpm_1834_additional_act_reason: "1831년 황제 동 페드루 1세가 양위한 지 3년이 지났음에도, 1824년 브라질 헌법에는 아직 아무런 개혁도 이루어지지 않았습니다. 리우데자네이루, 마라냥, 파라에서 발생한 혁명적 봉기 등 국가의 통합을 위협하는 투쟁들로 인해 나라는 분열되었습니다. 가장 최근의 사건은 1833년 오우루 프레투에서 발생한 군사 폭동이었습니다. 상원은 보수적이었으나, 신문 '오 세테 드 아브릴'이 지칭한\"동 페드루 1세의 노\"와는 거리가 멀었습니다. 1833년 선거를 통해 [SCOPE.gsInterestGroup('liberals_ig').GetName]가 하원의 다수석을 차지했으며, 1833년 10월 12일 법에 따라 의원들에게 제헌권이 부여되었습니다. 추가법은 지방의 자치권 확대를 옹호했던 이 다수파의 직접적인 결과물이었습니다. 1834년 8월 12일에 비준된 이 법은 연방주의 원칙을 군주제에 접목시켰습니다. 이는 통제권을 둘러싼 중앙 정부와 지방 사이의 갈등을 야기했습니다. [SCOPE.gsInterestGroup('conservatives_ig').GetName]는 이 법이 국가를\"무정부 상\"로 몰아넣었다고 비난하며 재검토가 필요하다고 주장합니다. 연방 군주제라는 자유주의적 이상이 유지될 것입니까, 아니면 질서 확립을 위한\"보수적 복\"가 필요하게 될 것입니까?" # 10393145354525932022
   bpm_brz_provinces_turmoil: "지역 혼란" # 17855735236775752627
   je_bpm_arg_confed: "이름뿐인 연합" # 2767288642444870610
+  je_bpm_arg_confed_reason: "$je_bpm_arg_confed$" # 10627461210548842886
   je_bpm_arg_confed_desc: "아르헨티나는 기틀이 잡히지 않은 국가로, 불과 20년 전 스페인으로부터 독립한 이래 혼란에 빠져 있는 연방입니다. 아르헨티나의 구성 주들은 이들을 하나로 묶어줄 정식 헌법이 결여되어 있으며, 대신 정치적 이해관계와 종종 무력에 의해 결속되어 있습니다. 현재는 강권 통치자 #bold 후안 마누엘 데 로사스#!의 지배를 받고 있습니다." # 1682023553172955716
   je_peru_bolivia_goal: "10년 동안 [concept_liberty_desire]를 #bold 60#! 미만으로 유지하면서 볼리비아의 [SCOPE.sCulture('south_andean_culture').GetName] 및 [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')]을 유지하십시오." # 4542727325551419290
   je_bpm_greece_early_parties: "초기 그리스 정당" # 14787568841418604743
@@ -473,6 +474,9 @@
   je_bpm_modernizers_ideology_progress_bar_right: "$bpm_je_all_antimodernizers$" # 12152966590316362011
   je_bpm_modernizers_dialectic_progress_bar: "변증법" # 7475889798008561862
   je_bpm_modernizers_dialectic_progress_bar_desc: "사회적 영향력: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!" # 17769991037226722617
+  je_bpm_modernizers_angry_chuds_progress_bar: "보수주의자의 불안" # 13480251933627198915
+  je_bpm_modernizers_angry_chuds_progress_bar_desc: "$je_bpm_modernizers_angry_chuds_progress_bar$: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!" # 13645266529197242363
+  je_bpm_modernizers_failure: "보수주의자의 불안이 100%에 도달했습니다" # 10720558648656410667
   bpm_je_modernizers_deafening_silence: "귀를 울리는 침묵" # 810548020581789659
   bpm_je_modernizers_overwhelming_modernizers: "압도적인 근대화론자 영향력" # 16561681434265107795
   bpm_je_modernizers_strong_modernizers: "강력한 근대화주의자 영향력" # 15592835121726496006
@@ -534,3 +538,11 @@
   bpm_modernizers.9.b: "[SCOPE.sCountry('relevant_country').GetName]은 서구보다 더 나은 본보기입니다!" # 11339864010255547903
   is_russia_tt: "#variable 러시아#!입니까?" # 6435518938092277452
   je_bpm_orleg_not_influencial_tooltip: "[GetInterestGroupVariant('ig_conservatives',GetPlayer).GetName]와 [GetInterestGroupVariant('ig_reactionaries',GetPlayer).GetName]의 세력이 8% 미만입니다 (현재 [GetPlayer.MakeScope.ScriptValue('bpm_orleg_clout')|%|])." # 15064397949463780238
+  acw_african_american_culture_complete_tt: "아프리카계 미국인이 완전히 수용됨" # 16774907305215447966
+  je_uneasy_raj_tracker: "불안한 라지" # 4969770685938046187
+  je_uneasy_raj_tracker_reason: "$je_uneasy_raj_tracker$" # 9522968459130025261
+  bpm_je_group_concessions: "양보" # 12339571247229132730
+  je_group_bpm_dissent: "반대" # 18073958778373874325
+  je_group_bpm_crises: "위기" # 11958619820440204922
+  je_group_bpm_misc_mechanical: "기계적" # 2072898845939469093
+  je_group_bpm_post_revolutionary: "혁명 이후" # 12304475170231161051

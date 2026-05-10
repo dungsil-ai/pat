@@ -27,7 +27,7 @@ const MAX_BULK_ITEMS_PER_REQUEST = 24
 const MAX_BULK_CHARS_PER_REQUEST = 6000
 
 interface UnresolvedBulkItem {
-  index: number
+  indices: number[]
   text: string
   cacheKey: string
 }
@@ -58,6 +58,14 @@ function splitBulkRequests(items: UnresolvedBulkItem[]): UnresolvedBulkItem[][] 
   }
 
   return batches
+}
+
+/**
+ * 벌크 로그 prefix를 생성합니다.
+ * 단일 항목이면 `[벌크/0]` 형태를, 병합된 중복 항목이면 `[벌크/0,2,4]` 형태를 반환합니다.
+ */
+function formatBulkItemLogPrefix(indices: number[]): string {
+  return indices.length === 1 ? `[벌크/${indices[0]}]` : `[벌크/${indices.join(',')}]`
 }
 
 /**
@@ -181,12 +189,14 @@ function sanitizeTranslationText (text: string): string {
     return text
   }
 
+  const sanitizedText = text.replaceAll('\u200E', '')
+
   // 닫는 변수 마커와 뒤따르는 대괄호 사이에 공백을 확보하여 $[ 패턴 방지
   const addSpaceAfterClosingVariable = /([$£][a-zA-Z0-9_\-.]+(?:\|[^$£\r\n]+)?[$£]|@[a-zA-Z0-9_\-.]+[@!])(?=\[)/g
-  return text.replace(addSpaceAfterClosingVariable, '$1 ')
+  return sanitizedText.replace(addSpaceAfterClosingVariable, '$1 ')
 }
 
-export async function translate (text: string, gameType: GameType = 'ck3', retry: number = 0, retranslationContext?: RetranslationContext, useTransliteration: boolean = false): Promise<string> {
+export async function translate (text: string, gameType: GameType = 'ck3', retry: number = 0, retranslationContext?: RetranslationContext, useTransliteration: boolean = false, bypassCache: boolean = false): Promise<string> {
 
   if (retry > 5) {
     log.debug(`번역 재시도 횟수 초과: "${text}" (사유: ${retranslationContext?.failureReason || '알 수 없음'})`)
@@ -194,9 +204,9 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
   }
 
   // 잘못된 형식인 경우 빈 텍스트 반환
-  if (!text || text.trim() === '') {
-    log.debug('빈 텍스트 번역 요청 감지, 빈 문자열 반환 처리')
-    return ''
+  if (text.trim() === '') {
+    log.debug('빈 텍스트 번역 요청 감지, 원문 유지 처리')
+    return text
   }
 
   const normalizedText = text
@@ -223,8 +233,9 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
     return normalizedText
   }
 
-  // 단어 사전에 있는 경우 캐시에 저장하고 반환
-  if (hasDictionary(normalizedText, gameType)) {
+  // 음역 모드에서는 단어 사전 응답을 사용하지 않음
+  // 고유명사 컨텍스트에서 의미 번역으로 고착되는 문제를 방지하기 위함
+  if (!useTransliteration && hasDictionary(normalizedText, gameType)) {
     const dictText = sanitizeTranslationText(getDictionary(normalizedText, gameType)!)
     log.debug(`단어 사전에서 번역된 텍스트 반환: ${normalizedText} -> ${dictText}`)
 
@@ -238,8 +249,13 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
   // - 음역: "gameType:transliteration:text" (예: "ck3:transliteration:Afar")
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const cacheKey = `${transliterationPrefix}${normalizedText}`
+  const shouldBypassCache = bypassCache || Boolean(retranslationContext)
   
-  if (await hasCache(cacheKey, gameType)) {
+  if (shouldBypassCache) {
+    if (await hasCache(cacheKey, gameType)) {
+      await removeCache(cacheKey, gameType)
+    }
+  } else if (await hasCache(cacheKey, gameType)) {
     const cached = await getCache(cacheKey, gameType)
 
     if (cached) {
@@ -283,7 +299,7 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
       previousTranslation: translatedText,
       failureReason: 'It appears that a meta-response was returned without performing the translation.'
     }
-    return await translate(text, gameType, retry + 1, newContext, useTransliteration)
+    return await translate(text, gameType, retry + 1, newContext, useTransliteration, shouldBypassCache)
   }
 
   // 번역 유효성 검증 (translation-validator.ts의 통합 로직 사용)
@@ -295,7 +311,7 @@ export async function translate (text: string, gameType: GameType = 'ck3', retry
       previousTranslation: translatedText,
       failureReason: validation.reason || 'Validation failed - The translation failed validation. Please ensure you follow all guidelines in the system instruction, especially regarding variable preservation, technical identifiers, and formatting rules.'
     }
-    return await translate(text, gameType, retry + 1, newContext, useTransliteration)
+    return await translate(text, gameType, retry + 1, newContext, useTransliteration, shouldBypassCache)
   }
 
   await setCache(cacheKey, translatedText, gameType)
@@ -318,12 +334,14 @@ export async function translateBulk (
 
   const results: BulkTranslateResult[] = Array.from({ length: texts.length }, () => ({ translatedText: '' }))
   const unresolved: UnresolvedBulkItem[] = []
+  // cacheKey(음역 여부 + text)를 기준으로 아직 처리되지 않은 동일 요청을 하나의 벌크 항목으로 병합합니다.
+  const unresolvedMap = new Map<string, UnresolvedBulkItem>()
   const transliterationPrefix = useTransliteration ? 'transliteration:' : ''
   const modLogPrefix = context?.modName ? `[모드:${context.modName}] ` : ''
 
   for (const [index, text] of texts.entries()) {
-    if (!text || text.trim() === '') {
-      results[index] = { translatedText: '' }
+    if (text.trim() === '') {
+      results[index] = { translatedText: text }
       continue
     }
 
@@ -343,7 +361,7 @@ export async function translateBulk (
       continue
     }
 
-    if (hasDictionary(normalizedText, gameType)) {
+    if (!useTransliteration && hasDictionary(normalizedText, gameType)) {
       const dictionaryTranslatedText = sanitizeTranslationText(getDictionary(normalizedText, gameType)!)
       results[index] = { translatedText: dictionaryTranslatedText }
       log.info(`${modLogPrefix}[벌크/${index}] 사전 응답 사용: ${normalizedText} -> ${dictionaryTranslatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
@@ -370,7 +388,15 @@ export async function translateBulk (
       }
     }
 
-    unresolved.push({ index, text: normalizedText, cacheKey })
+    const existingUnresolved = unresolvedMap.get(cacheKey)
+    if (existingUnresolved) {
+      existingUnresolved.indices.push(index)
+      continue
+    }
+
+    const unresolvedItem: UnresolvedBulkItem = { indices: [index], text: normalizedText, cacheKey }
+    unresolved.push(unresolvedItem)
+    unresolvedMap.set(cacheKey, unresolvedItem)
   }
 
   if (unresolved.length === 0) {
@@ -386,7 +412,7 @@ export async function translateBulk (
       )
 
       for (const unresolvedItem of batch) {
-        log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 벌크 요청에 포함: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
+        log.info(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} AI 벌크 요청에 포함: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
       }
 
       const aiTranslated = await translateAIBulk(batch.map(item => item.text), gameType, useTransliteration)
@@ -397,14 +423,18 @@ export async function translateBulk (
 
         if (validation.isValid) {
           await setCache(unresolvedItem.cacheKey, translatedText, gameType)
-          results[unresolvedItem.index] = { translatedText }
-          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
+          for (const resultIndex of unresolvedItem.indices) {
+            results[resultIndex] = { translatedText }
+          }
+          log.info(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} AI 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
         } else {
-          log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] AI 응답 검증 실패, 개별 번역으로 재시도: ${unresolvedItem.text} -> ${translatedText} (사유: ${validation.reason})`)
+          log.warn(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} AI 응답 검증 실패, 개별 번역으로 재시도: ${unresolvedItem.text} -> ${translatedText} (사유: ${validation.reason})`)
           // 검증 실패 시 개별 번역으로 재시도
           const fallback = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
-          results[unresolvedItem.index] = { translatedText: fallback }
-          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 재시도 응답 처리: ${unresolvedItem.text} -> ${fallback}${useTransliteration ? ' (음역 모드)' : ''}`)
+          for (const resultIndex of unresolvedItem.indices) {
+            results[resultIndex] = { translatedText: fallback }
+          }
+          log.info(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} 개별 재시도 응답 처리: ${unresolvedItem.text} -> ${fallback}${useTransliteration ? ' (음역 모드)' : ''}`)
         }
       }
     } catch (error) {
@@ -416,14 +446,18 @@ export async function translateBulk (
       // 벌크 요청 실패 시 해당 배치만 개별 번역으로 폴백
       for (const unresolvedItem of batch) {
         try {
-          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 요청: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
+          log.info(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} 개별 폴백 요청: ${unresolvedItem.text}${useTransliteration ? ' (음역 모드)' : ''}`)
           const translatedText = await translate(unresolvedItem.text, gameType, 0, undefined, useTransliteration)
-          results[unresolvedItem.index] = { translatedText }
-          log.info(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
+          for (const resultIndex of unresolvedItem.indices) {
+            results[resultIndex] = { translatedText }
+          }
+          log.info(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} 개별 폴백 응답 처리: ${unresolvedItem.text} -> ${translatedText}${useTransliteration ? ' (음역 모드)' : ''}`)
         } catch (error) {
           if (error instanceof TranslationRefusedError || error instanceof TranslationRetryExceededError) {
-            results[unresolvedItem.index] = { translatedText: unresolvedItem.text, error }
-            log.warn(`${modLogPrefix}[벌크/${unresolvedItem.index}] 개별 폴백 실패, 원문 유지: ${unresolvedItem.text} (사유: ${(error as Error).message})`)
+            for (const resultIndex of unresolvedItem.indices) {
+              results[resultIndex] = { translatedText: unresolvedItem.text, error }
+            }
+            log.warn(`${modLogPrefix}${formatBulkItemLogPrefix(unresolvedItem.indices)} 개별 폴백 실패, 원문 유지: ${unresolvedItem.text} (사유: ${(error as Error).message})`)
           } else {
             throw error
           }

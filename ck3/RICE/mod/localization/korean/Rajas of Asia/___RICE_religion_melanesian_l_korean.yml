@@ -1,0 +1,107 @@
+﻿l_korean:
+  melanesian_religion: "멜라네시아" # 2283096840114600477
+  melanesian_religion_adj: "멜라네시아" # 2283096840114600477
+  melanesian_religion_adherent: "멜라네시아" # 2283096840114600477
+  melanesian_religion_adherent_plural: "멜라네시아인" # 2337195737297045498
+  melanesian_religion_desc: "멜라네시아의 오스트로네시아 거주민들이 지닌 다양한 신앙은 조상과 자연계의 정령에 대한 숭배를 특징으로 합니다." # 17375156000938820236
+  fiji_pagan: "칼루교" # 4195661957281521674
+  fiji_pagan_adj: "칼로우" # 9419716346880863057
+  fiji_pagan_adherent: "칼루교도" # 9419716346880863057
+  fiji_pagan_adherent_plural: "칼루교도들" # 18354483688823399483
+  fiji_pagan_desc: "반드시 준수해야 할 수많은 종교적 금기와 의례가 존재합니다." # 305139674617907724
+  fiji_pagan_old: "고대 칼루교" # 10573579191246051103
+  fiji_pagan_old_adj: "고대 칼로우" # 9605129309848199222
+  fiji_pagan_old_adherent: "고대 칼루교도" # 9605129309848199222
+  fiji_pagan_old_adherent_plural: "고대 칼루교도들" # 10340663776107821237
+  fiji_pagan_old_desc: "멜라네시아의 오스트로네시아 거주민들이 지닌 다양한 신앙은 조상과 자연계의 정령에 대한 숭배를 특징으로 합니다." # 17375156000938820236
+  fiji_pagan_high_god_name: "데게이" # 10689413890685687674
+  fiji_pagan_high_god_name_possessive: "데게이의" # 921504438214218204
+  fiji_pagan_high_god_name_alternate: "$fiji_pagan_high_god_name$" # 14546343744577437753
+  fiji_pagan_high_god_name_alternate_possessive: "$fiji_pagan_high_god_name_possessive$" # 4550924399278612525
+  fiji_pagan_good_god_lutunasobasoba: "루투나소바소바" # 12004638008624839813
+  fiji_pagan_devil_name: "라부얄로" # 2665717790482862432
+  fiji_pagan_devil_name_possessive: "라부얄로의" # 332777679097288266
+  fiji_pagan_death_deity_name: "$fiji_pagan_high_god_name$" # 14546343744577437753
+  fiji_pagan_death_deity_name_possessive: "$fiji_pagan_high_god_name_possessive$" # 4550924399278612525
+  fiji_pagan_death_deity_herhis: "그의" # 14588382875684683839
+  fiji_pagan_creator_god_name: "$fiji_pagan_high_god_name$" # 14546343744577437753
+  fiji_pagan_creator_god_name_possessive: "$fiji_pagan_high_god_name_possessive$" # 4550924399278612525
+  fiji_pagan_health_god_name: "마르기기" # 15332788735322090665
+  fiji_pagan_health_god_name_possessive: "마르기기의" # 1011372637218571023
+  fiji_pagan_fertility_god_name: "라투마이불루" # 11305017543163068278
+  fiji_pagan_fertility_god_name_possessive: "라투마이불루의" # 17700605571000347573
+  fiji_pagan_wealth_god_name: "라콜라" # 10221402308616880089
+  fiji_pagan_wealth_god_name_possessive: "라콜라의" # 5914873615380795368
+  fiji_pagan_household_god_name: "더 타기스" # 10571731969136860562
+  fiji_pagan_household_god_name_possessive: "타기스 가문의" # 15930101640980217497
+  fiji_pagan_fate_god_name: "야놀로프" # 12386604700397715487
+  fiji_pagan_fate_god_name_possessive: "야놀로프의" # 16483862595533066506
+  fiji_pagan_knowledge_god_name: "$fiji_pagan_fate_god_name$" # 2726093892736081730
+  fiji_pagan_knowledge_god_name_possessive: "$fiji_pagan_fate_god_name_possessive$" # 4837956837448523751
+  fiji_pagan_war_god_name: "사물라요" # 7254012134852755101
+  fiji_pagan_war_god_name_possessive: "사물라요의" # 16969654281436351972
+  fiji_pagan_trickster_god_name: "데게이" # 10689413890685687674
+  fiji_pagan_trickster_god_name_possessive: "데게이의" # 921504438214218204
+  fiji_pagan_night_god_name: "$fiji_pagan_high_god_name$" # 14546343744577437753
+  fiji_pagan_night_god_name_possessive: "$fiji_pagan_high_god_name_possessive$" # 4550924399278612525
+  fiji_pagan_water_god_name: "다쿠와카" # 8464023115891399903
+  fiji_pagan_water_god_name_possessive: "다쿠와카의" # 6361985831860514262
+  fiji_pagan_witchgodname: "$fiji_pagan_high_god_name$" # 14546343744577437753
+  fiji_pagan_witchgodname_possessive: "$fiji_pagan_high_god_name_possessive$의" # 3133374513176591825
+  fiji_pagan_house_of_worship: "부레 칼로우" # 12520179450029806717
+  fiji_pagan_house_of_worship_plural: "부레 칼로우들" # 4250315913783677779
+  fiji_pagan_religious_symbol: "뱀" # 11135594734617111109
+  fiji_pagan_religious_text: "신성한 이야기" # 1916157011032334391
+  fiji_pagan_religious_head_title: "고위 베테" # 4916643653476030535
+  fiji_pagan_religious_head_title_name: "대평의회" # 15038947742583190916
+  fiji_pagan_devotee: "신도" # 16996875086266395993
+  fiji_pagan_devotee_plural: "신도들" # 15412075443944701231
+  fiji_pagan_priest: "베테" # 8325971629460653874
+  fiji_pagan_priest_plural: "베테들" # 2523798575538244224
+  fiji_pagan_priest_term_plural: "베테들" # 2523798575538244224
+  fiji_pagan_priest_alternate_plural: "사제" # 3862380641131069311
+  fiji_pagan_divine_realm: "불루" # 6025671071750105889
+  fiji_pagan_positive_afterlife: "부로투" # 11573711796141363607
+  fiji_pagan_negative_afterlife: "무리무리아" # 6781176893438788151
+  fiji_pagan_bishop: "추장 베테" # 7124665218004330552
+  fiji_pagan_bishop_plural: "추장 베테들" # 8647219879675413495
+  kwaraae_pagan: "투아 푸아나 아칼로" # 3720814408911664437
+  kwaraae_pagan_adj: "아칼로이스트" # 12265906832118748448
+  kwaraae_pagan_adherent: "아칼로교도" # 12265906832118748448
+  kwaraae_pagan_adherent_plural: "아칼로교도들" # 4157946732342943004
+  kwaraae_pagan_desc: "세상은 보이지 않는 영적인 힘과 권능인 #italic 아칼로#!로 가득 차 있다. 특히 조상의 영혼은 사람들이 선하게 혹은 악하게 사용할 수 있는 많은 #italic 아칼로#!를 지니고 있다." # 9069890681441123609
+  kwaraae_pagan_old: "고대 투아 푸아나 아칼로" # 13103940334427830189
+  kwaraae_pagan_old_adj: "올드 아칼로이스트" # 6610214425982174823
+  kwaraae_pagan_old_adherent: "고대 아칼로교도" # 6610214425982174823
+  kwaraae_pagan_old_adherent_plural: "고대 아칼로교도들" # 8088014076964697161
+  kwaraae_pagan_old_desc: "$kwaraae_pagan_desc$" # 1642750867884735581
+  tolai_pagan: "둑둑 결사" # 2819076142473015415
+  tolai_pagan_adj: "둑-둑이스트" # 9994341290338162756
+  tolai_pagan_adherent: "둑둑교도" # 9994341290338162756
+  tolai_pagan_adherent_plural: "둑둑교도들" # 2003126924968017261
+  tolai_pagan_desc: "덕덕 비밀 결사는 영적인 춤을 추며 #italic 덕덕#!이라 불리는 남성 영혼과 #italic 투부안#!이라 불리는 여성 영혼의 의상과 가면을 착용하여 정의를 집행하고 공동체를 관리합니다. 이들의 삶의 목표는 (조개 화폐 등을 통해) 최대한 많은 부를 축적하는 것입니다. 죽을 때 많은 재산을 베풀 수 있는 자는 사후에 안식을 얻지만, 상속인에게 물려줄 것이 없는 자는 영원히 비참하게 떠도는 운명에 처하게 됩니다." # 2079147333515178520
+  tolai_pagan_old: "고대 덕덕 결사" # 5138782931807325305
+  tolai_pagan_old_adj: "고대 두크두크교" # 6855294175469410931
+  tolai_pagan_old_adherent: "고대 덕덕교도" # 6855294175469410931
+  tolai_pagan_old_adherent_plural: "고대 덕덕교도들" # 10301052239769089678
+  tolai_pagan_old_desc: "$tolai_pagan_desc$" # 15441192426002942149
+  vanuatu_pagan: "타마테교" # 12616708644914494651
+  vanuatu_pagan_adj: "타마테교" # 15519462090655319752
+  vanuatu_pagan_adherent: "타마테교도" # 15519462090655319752
+  vanuatu_pagan_adherent_plural: "타마테교도들" # 14558854397229411133
+  vanuatu_pagan_desc: "많은 오세아니아 사회와 마찬가지로, 바누아투의 토착민들은 타부(신성한 법과 금기)를 준수하며 마나(우주에 스며든 초자연적인 생명력)를 믿습니다. 이들의 신앙 중심에는 #italic 타마테#!라고 알려진 조상 숭배가 있습니다." # 6965134076000432418
+  vanuatu_pagan_old: "고대 타마테교" # 7198570961235631379
+  vanuatu_pagan_old_adj: "고대 타마테교" # 6801206593609161316
+  vanuatu_pagan_old_adherent: "고대 타마테교도" # 6801206593609161316
+  vanuatu_pagan_old_adherent_plural: "고대 타마테교도들" # 9874122599830093541
+  vanuatu_pagan_old_desc: "$vanuatu_pagan_desc$" # 1111308258065199756
+  manus_pagan: "서 고스트 숭배" # 10856098271919842777
+  manus_pagan_adj: "고스트교 기사" # 11314067754081759934
+  manus_pagan_adherent: "서 고스트교도" # 11314067754081759934
+  manus_pagan_adherent_plural: "서 고스트교도들" # 7808135468621903111
+  manus_pagan_desc: "마누스의 토착민들 사이에서 종교적 숭배는 죽은 부계 조상, 특히 #italic 모엔 팔리트#! 혹은 “유령 경”이라 불리는 아버지에 대한 숭배를 중심으로 이루어집니다. 조언과 행운을 구하고 해악과 질병으로부터 보호받기 위해 아버지(혹은 선조)의 두개골을 집안의 안전한 장소에 보관합니다." # 4853399156689383899
+  manus_pagan_old: "구 유령 경 숭배" # 17604913299165789316
+  manus_pagan_old_adj: "올드 서 고스티스트" # 9695835156367958097
+  manus_pagan_old_adherent: "구 유령 경 숭배자" # 9695835156367958097
+  manus_pagan_old_adherent_plural: "구 유령 경 숭배자들" # 3603606211653632402
+  manus_pagan_old_desc: "$vanuatu_pagan_desc$" # 1111308258065199756

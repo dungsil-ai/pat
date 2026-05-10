@@ -80,6 +80,8 @@ if (updateDict) {
 - `processLanguageFile()`: 개별 파일 번역 처리
 - `getLocalizationFolderName()`: 게임별 폴더명 결정
 - `saveAndReturnResult()`: 번역 결과 저장 및 반환 (내부 함수, 2025-12 추가)
+- **병렬 처리 기본값**: 모드 개수만큼 워커를 자동 할당하며 ETC의 `upstream/` 하위 폴더도 개별 모드로 계산
+- **업스트림 해시 스킵**: 업스트림 파일 해시가 이전 실행과 동일하면 파일 단위로 번역을 건너뛰어 실행 시간 절약
 
 **처리 흐름:**
 ```typescript
@@ -253,8 +255,8 @@ Google Gemini API를 통한 AI 번역을 관리합니다.
 **파일 위치:** `scripts/utils/ai.ts`
 
 **모델 전략:**
-1. 1차 시도: `gemini-flash-lite-latest` (빠르고 저렴)
-2. 2차 시도: `gemini-flash-latest` (더 강력)
+1. `GEMINI_MODEL` 환경 변수 우선 사용
+2. 미설정 시 기본 모델 `gemini-flash-lite-latest` 사용
 
 **설정:**
 ```typescript

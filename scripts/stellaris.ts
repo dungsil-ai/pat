@@ -7,31 +7,32 @@ import { invalidateDictionaryTranslations } from './utils/dictionary-invalidator
 import { invalidateIncorrectTranslations } from './utils/retranslation-invalidator'
 import { invalidateTransliterationFilesChanges } from './utils/transliteration-files-invalidator'
 import { getChangedDictionaryKeys } from './utils/dictionary-changes'
-import { parseDictionaryFilterArgs } from './utils/cli-args'
+import { parseDictionaryFilterArgs, parseTranslateCommandArgs } from './utils/cli-args'
 import { log } from './utils/logger'
 import { isSqliteIOError } from './utils/cache'
 import { getDiskUsageString } from './utils/disk-usage'
-import { filterMods } from './utils/mod-filter'
+import { filterMods, getUpstreamTargetMod } from './utils/mod-filter'
 import { getTranslationTimeoutMinutesFromEnv } from './utils/translation-timeout'
 
 async function main () {
   try {
     const stellarisDir = join(import.meta.dirname, '..', 'stellaris')
     const allMods = await readdir(stellarisDir)
-    const onlyHash = process.argv?.[2] === 'onlyHash'
-    const updateDict = process.argv?.[2] === 'updateDict'
-    const retranslate = process.argv?.[2] === 'retranslate'
-    const updateTransliterationFiles = process.argv?.[2] === 'updateTransliterationFiles'
-    
-    // 특정 모드가 지정된 경우 해당 모드만 처리
-    const mods = filterMods(allMods, process.argv?.[3])
+    const { command, targetMod, commandArgs } = parseTranslateCommandArgs(process.argv.slice(2))
+    const onlyHash = command === 'onlyHash'
+    const updateDict = command === 'updateDict'
+    const retranslate = command === 'retranslate'
+    const updateTransliterationFiles = command === 'updateTransliterationFiles'
+
+    // 특정 모드가 지정된 경우 해당 모드만 처리 (`pnpm stellaris rice` 형식 지원)
+    const mods = filterMods(allMods, targetMod)
 
     // 타임아웃 설정: 환경변수 TRANSLATION_TIMEOUT_MINUTES(.env 포함) 또는 false(비활성화)
     const timeoutMinutes = getTranslationTimeoutMinutesFromEnv()
 
     if (updateDict) {
       // CLI 인자 파싱: --since-commit, --commit-range, --since-date
-      const filterArgs = parseDictionaryFilterArgs(process.argv.slice(3))
+      const filterArgs = parseDictionaryFilterArgs(commandArgs)
       
       // 필터링 옵션이 지정되었을 경우, 변경된 키만 추출
       let filterKeys: string[] | undefined
@@ -59,7 +60,7 @@ async function main () {
     } else if (retranslate) {
       log.box(
         `
-        Stellaris 잘못 번역된 항목 재번역
+        Stellaris 잘못되었거나 누락된 번역 출력 복구 무효화
         - 대상 경로: ${stellarisDir}
         - 대상 모드 (${mods.length}개): ${mods}
         `,
@@ -67,7 +68,7 @@ async function main () {
       
       await invalidateIncorrectTranslations('stellaris', stellarisDir, mods)
       
-      log.success(`잘못 번역된 항목 무효화 완료!`)
+      log.success(`잘못되었거나 누락된 번역 출력 복구 무효화 완료!`)
     } else if (updateTransliterationFiles) {
       // CLI 인자 파싱: --since-commit
       const commitArg = process.argv.find(arg => arg.startsWith('--since-commit='))
@@ -97,6 +98,7 @@ async function main () {
         rootDir: stellarisDir,
         mods,
         gameType: 'stellaris',
+        targetMod: getUpstreamTargetMod(mods),
         onlyHash,
         timeoutMinutes
       })

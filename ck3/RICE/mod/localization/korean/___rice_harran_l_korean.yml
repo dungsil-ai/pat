@@ -192,6 +192,8 @@
   RICE_harran_neoplatonic_academy_athens_modifier: "아테네 신플라톤주의 학회" # 7675793879406027808
   RICE_harran_neoplatonic_academy_athens_modifier_desc: "아테네의 신플라톤주의 학회는 수많은 이교 학자들의 본거지이며, 이들은 본래의 플라톤 학회로부터 지적인 계승을 주장합니다. 하지만 이들이 국가로부터 정기적인 자금을 지원받고 있음에도 불구하고, 그들의 독특한 이교주의에 대한 확고한 옹호는 비이교도 권력자들의 분노를 살 수도 있습니다...." # 17353128255397764397
   RICE_harran_welcomed_neoplatonist_exiles: "추방된 신플라톤주의 학자들을 환영합니다" # 16760349260781946927
+  RICE_harran_aficionado_of_ancient_history: "고대사 애호가" # 1876649312247043654
+  RICE_harran_aficionado_of_ancient_history_desc: "이 인물은 다른 학자들을 훨씬 뛰어넘는 고대에 대한 열정적인 역사를 가지고 있으며, 고대 기념물과 유물을 보존하는 것이 현명하고 정의로운 통치자의 엄숙한 의무라고 믿습니다." # 3079560917198959860
   RICE_harran_pray_to_a_planet: "행성에게 기도하기" # 8674593769705041772
   RICE_harran_pray_to_a_planet_tooltip: "일곱 행성 중 하나에게 올바른 의식을 거행하여 기도할 것입니다." # 6638891959463644424
   RICE_harran_pray_to_a_planet_effect_tooltip: "어떤 행성에 기도하느냐에 따라 [character_modifier|E]를 받습니다." # 6223018632280083181

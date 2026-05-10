@@ -145,6 +145,7 @@ localization 파일을 찾아 파싱합니다.
 │ 3. YAML 파싱                        │
 │    ├─ 언어 키 추출 (l_english:)     │
 │    ├─ 각 항목 파싱                  │
+│    ├─ U+200E 문자 제거              │
 │    └─ 주석 보존                     │
 └────────────┬────────────────────────┘
              │
@@ -174,6 +175,10 @@ l_english:
   }
 }
 ```
+
+**sanitize 규칙:**
+- YAML 키와 값에서 U+200E(Left-to-Right Mark)를 제거합니다. 이 제어 문자가 AI 응답이나 복사된 원문에 섞이면 Paradox localization 키/값 비교가 어긋날 수 있어 저장 전 정리가 필요합니다.
+- 직렬화 시에도 동일한 sanitize를 적용해 이전에 섞여 들어온 제어 문자가 다시 저장되지 않도록 합니다.
 
 ### 4. 해시 계산 및 변경 감지
 
@@ -209,6 +214,14 @@ if (sourceHash === targetHash) {
 - **빠른 속도**: 암호화 해시보다 10배 빠름
 - **충돌 저항성**: 실용적인 수준의 충돌 방지
 - **일관성**: 동일한 입력에 항상 동일한 출력
+
+### 4-1. 업스트림 파일 해시 기반 스킵
+
+업스트림 파일 자체의 해시를 기록해두고, 이전 실행과 동일하면 **파일 단위**로 번역을 건너뜁니다.
+
+- 새로 계산한 업스트림 해시 ↔ 캐시된 해시가 동일하면 번역 루프를 수행하지 않음
+- 변경된 파일만 번역하므로 전체 실행 시간이 크게 단축
+- 해시가 불일치하면 일반적인 해시 비교/캐시/AI 번역 플로우를 그대로 진행
 
 ### 5. 번역 결정 트리
 
@@ -291,7 +304,7 @@ if (sourceHash === targetHash) {
              ▼
 ┌─────────────────────────────────────┐
 │ 2. 모델 선택 및 설정               │
-│    - Model: gemini-flash-lite      │
+│    - Model: gemini-flash-lite-latest│
 │    - Temperature: 0.5              │
 │    - Max tokens: 8192              │
 └────────────┬────────────────────────┘
@@ -349,17 +362,9 @@ Now translate the following:
 
 ```typescript
 async function translateAI(text: string, gameType: GameType) {
-  try {
-    // 1차 시도: Flash Lite (빠르고 저렴)
-    return await translateByModel('gemini-flash-lite-latest', text)
-  } catch (e) {
-    try {
-      // 2차 시도: Flash (더 강력)
-      return await translateByModel('gemini-flash-latest', text)
-    } catch (ee) {
-      throw ee
-    }
-  }
+  const modelName = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
+
+  return await translateByModel(modelName, text)
 }
 ```
 

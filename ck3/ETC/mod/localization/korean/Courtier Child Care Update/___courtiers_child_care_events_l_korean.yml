@@ -1,0 +1,28 @@
+﻿l_korean:
+  courtiers_child_care_event.0002.t: "궁정 신하들의 자녀 양육" # 9683686091818066202
+  courtiers_child_care_event.0002.desc: "'저의 [ROOT.Char.GetLadyLord|U]님, 궁정 신하 자녀들의 출생 및 양육과 관련된 소식을 어느 정도까지 보고드려야 하겠습니까?'" # 2933921795224997841
+  ccc_spacing: "\n\n" # 6591297183463166384
+  ccc_and: "그리고" # 4292429818594793634
+  ccc_comma: "," # 13846691484988911893
+  courtiers_child_care_event.0002.desc.a: "'어떠한 소식도 듣고 싶지 않습니다!'" # 5246006251887975618
+  courtiers_child_care_event.0002.desc.b: "'다음 소식을 보고받겠습니다:" # 6357618193768047650
+  courtiers_child_care_event.0002.desc.c: "출생" # 2052095990847573069
+  courtiers_child_care_event.0002.desc.d: "6번째 생일" # 11309153256233374895
+  courtiers_child_care_event.0002.desc.e: "16번째 생일" # 8355250905867129255
+  courtiers_child_care_event.0002.desc.f: "궁정 신하와 가까운 친척 신하들의 경우.'" # 3109019466426848817
+  courtiers_child_care_event.0002.desc.g: "궁정 신하들의 경우만.'" # 9523856111144713156
+  courtiers_child_care_event.0002.desc.h: "가까운 친척 신하들의 경우만.'" # 15023636757464446091
+  courtiers_child_care_event.0002.a: "출생" # 2052095990847573069
+  courtiers_child_care_event.0002.b: "출생 없음" # 3357243281827130627
+  courtiers_child_care_event.0002.c: "6번째 생일" # 11309153256233374895
+  courtiers_child_care_event.0002.d: "6번째 생일 없음" # 14532239596065513294
+  courtiers_child_care_event.0002.e: "16번째 생일" # 8355250905867129255
+  courtiers_child_care_event.0002.f: "16번째 생일 없음" # 3694930125937921338
+  courtiers_child_care_event.0002.g: "궁정 신하와 가까운 친척 신하들의 경우." # 1882127545318088760
+  courtiers_child_care_event.0002.h: "궁정 신하들의 경우." # 3565821104600135797
+  courtiers_child_care_event.0002.i: "가까운 친척 신하들의 경우." # 6818661359892094180
+  courtiers_child_care_event.0002.tt: "클릭하여 옵션을 전환하십시오!" # 1993956198203371713
+  courtiers_child_care_event.0002.tt.p: "#P 클릭하여 옵션을 켭니다! #!" # 9478981222800626492
+  courtiers_child_care_event.0002.tt.n: "#N 클릭하면 옵션이 꺼집니다! #!" # 502188659040858164
+  courtiers_child_care_event.0002.z: "그게 전부입니다!" # 5913774269110489834
+  courtiers_child_care_event.0002.z.tt: "확인하고 종료합니다!" # 14929644613533105462

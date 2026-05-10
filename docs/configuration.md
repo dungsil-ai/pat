@@ -200,10 +200,38 @@ ck3/LocalMod/
 ### `upstream.version_strategy` (선택사항)
 
 **타입:** String  
-**값:** `"semantic"` | `"natural"` | `"default"`  
+**값:** `"semantic"` | `"natural"` | `"github"` | `"default"`  
 **기본값:** `"default"`  
 
 **설명:** 버전 선택 전략을 지정합니다.
+
+- `semantic`: GitHub 릴리스/태그를 시멘틱 버전으로 해석해 최신 안정 버전을 선택
+- `natural`: 태그명을 자연 정렬로 비교하며 `beta`, `alpha`, `rc` 같은 프리릴리즈 성격 태그를 제외
+- `github`: GitHub Releases의 최신 **공개 릴리스**를 사용하며 프리릴리즈/드래프트를 제외
+- `default`: 기본 브랜치를 체크아웃합니다. 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교하며, `["."]`은 저장소 전체를 의미합니다.
+
+### `upstream.transliteration_files` (선택사항)
+
+**타입:** Array<String>  
+**예시:** `["custom_names_l_english.yml", "*_special_*"]`
+
+**설명:** 자동 감지 키워드와 별개로, 특정 localization 파일을 음역 모드로 강제 지정합니다.
+
+- 파일명 기준으로 비교하며 경로는 무시됩니다.
+- `*` 와일드카드를 지원하며, 파일명 전체를 대상으로 부분 매칭합니다. 예를 들어 `*_special_*`는 `mod_special_names_l_english.yml` 같은 이름과 매칭됩니다.
+- 이 목록에 매칭된 파일은 파일 단위로 음역 대상으로 처리됩니다. 현재 구현에서는 `*_desc`, `*_event`, `*_decision` 같은 키 레벨 제외 규칙이 이 경우에는 적용되지 않으며, 해당 파일의 모든 키가 음역 모드로 처리됩니다.
+- `meta.toml`에서 이 목록이 바뀌면 `invalidate-on-transliteration-files-change.yml` 워크플로우가 영향받는 번역 파일의 해시를 자동으로 무효화할 수 있습니다.
+
+```toml
+[upstream]
+url = "https://github.com/modder/NewMod.git"
+localization = ["NewMod/localization/english"]
+language = "english"
+transliteration_files = [
+  "custom_events_l_english.yml",
+  "*_special_names_l_english.yml"
+]
+```
 
 ### Replace 폴더 처리
 
@@ -337,6 +365,82 @@ GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
 ```bash
 export GOOGLE_AI_STUDIO_TOKEN=your_api_key
 pnpm ck3
+```
+
+### GOOGLE_GENERATIVE_AI_API_KEY
+
+**필수:** 아니오 (선택)
+
+**설명:** 기존 Gemini SDK 키. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+
+### GITHUB_TOKEN
+
+**필수:** 아니오 (선택)
+
+**설명:** GitHub API 인증용 토큰입니다. 설정하면 업스트림 대시보드, GitHub 릴리스 조회, 태그/커밋 비교 시 레이트 리밋 완화와 안정성 향상에 도움이 됩니다.
+
+```env
+GITHUB_TOKEN=github_pat_xxx
+```
+
+### GEMINI_MODEL
+
+**필수:** 아니오
+
+**기본값:** `gemini-flash-lite-latest`
+
+**설명:** 사용할 Gemini 모델 ID를 지정합니다.
+
+```env
+GEMINI_MODEL=gemini-flash-lite-latest
+```
+
+### TRANSLATE_BATCH_SIZE
+
+**필수:** 아니오
+
+**기본값:** `20`
+
+**설명:** 벌크 번역 시 한 번에 요청할 항목 수입니다. 잘못된 값이 입력되면 경고 후 기본값(20)을 사용합니다.
+
+```env
+TRANSLATE_BATCH_SIZE=10
+```
+
+### TRANSLATION_TIMEOUT_MINUTES
+
+**필수:** 아니오
+
+**기본값:** `15` (분)
+
+**설명:** 번역 작업 타임아웃(분)입니다. `false` 또는 `0`으로 설정하면 타임아웃이 비활성화됩니다.
+
+```env
+TRANSLATION_TIMEOUT_MINUTES=15
+```
+
+### TRANSLATE_MOD_CONCURRENCY
+
+**필수:** 아니오
+
+**기본값:** 모드 개수 (자동 계산)
+
+**설명:** 모드 단위 병렬 처리 동시성을 지정합니다. 미설정 시 현재 처리 중인 모드 개수만큼 자동으로 설정됩니다. ETC 모드의 경우 `upstream/` 하위 폴더 수를 기준으로 계산합니다. 잘못된 값이 입력되면 경고 후 자동 계산값을 사용합니다.
+
+```env
+TRANSLATE_MOD_CONCURRENCY=4
+```
+
+### LOG_LEVEL
+
+**필수:** 아니오
+
+**기본값:** `info`
+
+**설명:** 로깅 레벨을 설정합니다. (`silent`, `error`, `warn`, `info`, `debug`, `verbose`)
+
+```env
+LOG_LEVEL=info
 ```
 
 ## 모범 사례

@@ -271,3 +271,9 @@
   VIETintro.0011.desc: "이제 [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]으로 향하는 [ROOT.Char.GetInvolvedActivity.GetShortName] 여정을 시작할 시간입니다. 이 여행을 준비하는 두통과 번거로움이 목적지에 도착했을 때 그만한 가치가 있기를 바랍니다... 아니, 그렇지 않다면 이 모든 여행 준비로 인한 스트레스가 헛수고가 될 테니, 그렇게 되기를 바랄 수밖에 없겠지요." # 7414818866934797355
   VIETintro.0011.a: "우리는 이 모든 번거로움을 좋은 이유 때문에 감수하는 것이오." # 5238792602042800629
   VIETintro.0012.desc: "[uriel.GetTitledFirstName]\n\n[martin.GetTitledFirstName]\n\n[baurus.GetTitledFirstName]\n\n[jauffre.GetTitledFirstName]" # 2718968619359624883
+  duke_feudal_male_d_VIET_dreamer_male: "" # 17241709254077376921
+  duke_feudal_female_d_VIET_dreamer_male: "" # 17241709254077376921
+  duke_feudal_male_d_VIET_dreamer_female: "" # 17241709254077376921
+  duke_feudal_female_d_VIET_dreamer_female: "" # 17241709254077376921
+  duke_feudal_male_d_VIET_elsewhere: "" # 17241709254077376921
+  duke_feudal_female_d_VIET_elsewhere: "" # 17241709254077376921

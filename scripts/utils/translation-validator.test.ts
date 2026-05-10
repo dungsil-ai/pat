@@ -1668,6 +1668,20 @@ describe('음역 검증', () => {
       expect(result.length).toBe(0)
     })
 
+
+    it('점(.) 구분자로 desc로 끝나는 키는 음역 검증을 건너뛰어야 함', () => {
+      const sourceEntries = {
+        'red_sea.0050.desc': ['Very long heritage description', '']
+      }
+      const translationEntries = {
+        'red_sea.0050.desc': ['매우긴문화유산설명문장입니다', 'hash1']
+      }
+
+      const result = validateTranslationEntries(sourceEntries, translationEntries, 'ck3', true)
+
+      expect(result.length).toBe(0)
+    })
+
     it('event 키워드로 끝나는 키는 음역 검증을 건너뛰어야 함', () => {
       const sourceEntries = {
         culture_event: ['Very long event description', '']

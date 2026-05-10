@@ -131,6 +131,7 @@
   ideology_eco_kaikoku_ha_desc: "이 운동은 국가를 대외 무역과 영향력에 개방해야 한다고 믿습니다." # 11583733684716342605
   movement_market_liberal_name: "자유방임주의 운동" # 16283334773014159472
   ideology_eco_market_liberal_mov: "자유방임주의 운동" # 16283334773014159472
+  ideology_eco_market_liberal_mov_desc: "$ideology_eco_market_liberal_mov$" # 12893010024680391061
   movement_national_liberal_name: "$movement_national_liberal$" # 14006256543038162248
   movement_national_liberal: "자유주의 민족주의 운동" # 6524814616564314789
   ideology_sta_national_liberal: "자유주의 민족주의 운동" # 6524814616564314789
@@ -139,6 +140,7 @@
   ideology_gov_reformist_socialist: "개혁주의 사회주의 운동" # 10497791945429853763
   ideology_gov_reformist_socialist_desc: "#lore 이 운동은 점진적인 사회주의 개혁을 신봉합니다. #!" # 3905780913327208155
   ideology_eco_modernizer_mov: "현대화 운동" # 4797116317162291578
+  ideology_eco_modernizer_mov_desc: "$ideology_eco_modernizer_mov$" # 15622207559909238820
   BPM_AVERAGE_LABOR: "평균 노동 운동" # 3947011257275753591
   BPM_STRONG_LABOR: "강력한 노동 운동" # 15345705451323090520
   BPM_EMBOLDENED_BY_LAW: "법률 제정으로 고무됨" # 11236410824680083069

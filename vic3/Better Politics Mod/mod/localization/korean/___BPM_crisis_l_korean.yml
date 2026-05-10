@@ -1,0 +1,68 @@
+﻿l_korean:
+  bpm_state_crisis.1.t: "위기!" # 9936355839328211968
+  bpm_state_crisis.1.d: "국가의 전통적인 제도가 위협받고 있습니다. 국가에 충성하는 모든 [Concept('concept_interest_group', '이익 집단')]은 급진주의자들로부터 현행 제도를 보호하기 위해 협력하기로 합의했습니다. 그들은 국가의 생존을 보장하기 위해 극단적인 조치도 불사할 것입니다." # 2734111114170652462
+  bpm_state_crisis.1.f: "“억압받는 자를 압제자로부터 방어하고, 그들을 착취하고 짓밟는 강자에 맞서 약자의 대의를 변호하는 것, 이것이야말로 이기심과 부패에 물들지 않은 모든 이들의 의무이다.” - 막시밀리앙 로베스피에르" # 1826595008962653195
+  bpm_state_crisis.1.a: "짐이 곧 국가다!" # 13939373421037915734
+  bpm_state_crisis.1.b: "국가는 곧 국민이다!" # 12806825203639427464
+  je_bpm_crisis_of_the_state: "국가의 위기" # 13282770091162053774
+  je_bpm_crisis_of_the_state_desc: "국가가 급진주의자들에 의해 위협받고 있습니다." # 16959977062289527753
+  je_bpm_crisis_of_the_state_reason: "국가에 충성하는 모든 [Concept('concept_interest_group', '이익 집단')]은 급진주의자들의 커지는 위협으로부터 현행 제도를 보호하기 위해 협력하기로 합의했습니다." # 4202849148974875591
+  bpm_extremist_tt: "이익 집단이 극단주의자임" # 11114397170570662530
+  bpm_crisis_movement_radicalism: "급진주의를 묵인함" # 10760863784069410606
+  bpm_crisis_movement_crackdown: "급진주의자 탄압" # 3535230289757227878
+  je_bpm_crisis_of_the_state_goal: "위 조건들이 6개월 동안 유지되었습니다." # 8447646689604018166
+  je_bpm_constitutional_restrictions: "법적 제한" # 1647016363344169341
+  je_bpm_constitutional_restrictions_desc: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]의 권력이 너무 막강합니다." # 7528051479062560021
+  je_bpm_constitutional_restrictions_reason: "우리 국가의 대부분의 이익 집단은 [Country.GetRuler.GetPrimaryRoleTitle]의 권력이 지나치다는 점에 동의하고 있습니다. 그들은 [Country.GetRuler.GetPrimaryRoleTitle]의 권력을 제한하기 위한 법적 조치를 지지할 의사가 있습니다. 하지만 [Country.GetRuler.GetPrimaryRoleTitle]은 쉽게 권력을 내려놓으려 하지 않습니다.\n\n만약 우리가 [Country.GetRuler.GetPrimaryRoleTitle]을 설득하여 권력을 일부 양보하게 만들 수 있다면, 우리의 안건을 더 쉽게 통과시킬 수 있을 것입니다. 위협적인 혁명이나 [Country.GetRuler.GetHerHim]에 반대하는 강력한 운동이 있다면 [Country.GetRuler.GetPrimaryRoleTitle]을 설득할 수 있을 것입니다." # 17430689473747766603
+  bpm_the_eternal_ruler_mod: "영원한 통치자" # 7413257050362457127
+  je_bpm_crises_government_scandal: "정부 스캔들" # 18278776034498039088
+  je_bpm_crises_government_scandal_desc_low: "#bold 소문이 퍼지고 있습니다.#!\n$je_bpm_crises_government_scandal_reason$" # 12450700009783762819
+  je_bpm_crises_government_scandal_desc_medium: "#bold 언론이 소문을 포착했습니다.#!\n$je_bpm_crises_government_scandal_reason$" # 6734235210138279053
+  je_bpm_crises_government_scandal_desc_high: "#bold 스캔들이 본격적으로 터져 나왔습니다.#!\n$je_bpm_crises_government_scandal_reason$" # 10437308102813988351
+  je_bpm_crises_government_scandal_reason: "정부 관료들에 대한 불미스러운 세부 사항이 밝혀지면서 대중의 분노가 들끓고 있습니다. 매주 #crisis 위기 심각도#!가 #v 100#!에 도달할 때까지 5씩 증가합니다. 정부는 대중의 신뢰를 회복하기 위한 조치를 취해야 하며, 그렇지 않으면 심각한 결과에 직면하게 될 것입니다." # 13508632967237288646
+  je_bpm_crises_government_scandal_end_party_left_tt: "새로운 정부가 집권하다" # 13940043852854392397
+  bpm_crisis_scandal_scandal_in_the_press: "스캔들" # 2504403776549029067
+  bpm_scandal_events.1.t: "부패 혐의가 드러나다" # 16905790322271921549
+  bpm_scandal_events.1.d: "일부 고위 관료들이 뇌물을 포함한 부패 행위에 연루되었을 가능성을 시사하는 보고가 나왔습니다. 대중은 투명성과 책임 있는 자세를 요구하고 있습니다.\n@information! #crisis 위기#!는 #crisis 위기 모니터#!에서 추적할 수 있습니다." # 1747261094555134207
+  bpm_scandal_events.1.f: "“우리에게는 돈으로 살 수 있는 최고의 정부가 있다.” ー 마크 트웨인" # 7602906702333916616
+  bpm_scandal_events.1.a: "말도 안 되는 소리!" # 4405599659652071030
+  bpm_scandal_events.1.b: "조사를 해봐야겠군." # 3661663876132777041
+  bpm_scandal_events.2.t: "로맨틱한 불륜이 밝혀지다" # 15996169138627820289
+  bpm_scandal_events.2.d: "정부의 저명한 인사가 대중의 관심을 끄는 로맨틱한 스캔들에 휘말렸습니다. 언론의 광기 어린 보도로 인해 정부는 직무에 집중하기 어려운 상황입니다.\n@information! #crisis 위기#!는 #crisis 위기 모니터#!에서 추적할 수 있습니다." # 17900008798075257888
+  bpm_scandal_events.2.f: "“유혹을 없애는 유일한 방법은 그 유혹에 굴복하는 것이다.” ー 오스카 와일드" # 2696765525291342784
+  bpm_scandal_events.2.a: "이것은 사적인 문제다!" # 15470779478298218284
+  bpm_scandal_events.2.b: "정면으로 대응해야 한다." # 13223390568916953639
+  bpm_scandal_events.3.t: "바카라 부정행위 소문" # 11960094305879060466
+  bpm_scandal_events.3.d: "파티에서 열린 고액 바카라 게임에서 정부 관료가 부정행위를 저지르다 적발되어 스캔들이 터졌습니다. 이 사건은 권력자들의 정직성에 대한 의문을 제기하고 있습니다.\n@information! #crisis 위기#!는 #crisis 위기 모니터#!에서 추적할 수 있습니다." # 17444719952851395646
+  bpm_scandal_events.3.f: "“그는 치명적인 범죄를 저질렀다. 사회는 더 이상 그를 알지 못할 것이다.” ー 더 타임스 (네, 이것은 실제 있었던 일입니다)" # 7204898358755782219
+  bpm_scandal_events.3.a: "도박은 개인의 선택이다!" # 851695525713601158
+  bpm_scandal_events.3.b: "우리 평판에 타격을 줄 수 있어." # 17144022758780424485
+  bpm_scandal_events.4.t: "외세의 영향이 드러나다" # 5057846615484719731
+  bpm_scandal_events.4.d: "특정 정부 관료들이 외국 세력에 의해 부당한 영향을 받았을 가능성이 밝혀졌으며, 국가를 위한 그들의 봉사에 대한 우려가 커지고 있습니다.\n@information! #crisis 위기#!는 #crisis 위기 모니터#!에서 추적할 수 있습니다." # 7109874728646460251
+  bpm_scandal_events.4.f: "“돈 문제에 있어서는 모두가 같은 종교를 믿는다.” ー 볼테르" # 13072255842173128530
+  bpm_scandal_events.4.a: "근거 없는 비난입니다!" # 6983647737932220404
+  bpm_scandal_events.4.b: "우리는 주권을 수호해야 합니다!" # 5225868537460586884
+  bpm_scandal_events.5.t: "늑대들에게 던져라!" # 1829288724219905484
+  bpm_scandal_events.5.f: "어린아이들이 살아가는 작은 세상에서, 아이들을 길러주는 누구든 불공정함만큼 예민하게 느끼고 감지하는 것은 없습니다.” ー 찰스 디킨스" # 15094084700504094013
+  bpm_scandal_events.5.d: "이번 스캔들의 책임을 뒤집어쓸 희생양을 만들 수 있습니다. 대중의 분노를 특정 개인에게 돌림으로써, 정부의 나머지 인원들을 감시로부터 보호할 수 있습니다." # 9270614270662992885
+  bpm_scandal_events.5.a: "[SCOPE.gsInterestGroup('selected_ig1').GetName]에게 책임을 물을 것입니다!" # 8923764056465390955
+  bpm_scandal_events.5.b: "아마도 [SCOPE.gsInterestGroup('selected_ig2').GetName]가 적당할 것입니다." # 11544193766991521795
+  bpm_scandal_events.5.c: "[SCOPE.gsInterestGroup('selected_ig3').GetName]은 편리한 표적입니다!" # 991268513779684926
+  bpm_scandal_response_distract: "주의 돌리기" # 3934655390049185243
+  bpm_scandal_response_distract_desc: "우리 배은망덕한 대중의 관심을 끌 만한 다른 일들이 있습니다. 이른바 스캔들이라 불리는 이 일에서 벗어나, 논의 중인 사안들로 관심을 돌립시다." # 5171832247317758745
+  bpm_end_the_crisis_tt: "스캔들이 가라앉습니다." # 7039868375860067091
+  bpm_crisis_progresses_tt: "스캔들이 악화됩니다." # 1493234771119053689
+  bpm_scandal_response_distract_effect_tooltip: "미디어 준비도를 #v 20#!만큼 감소시킵니다." # 11875692973717575497
+  bpm_scandal_response_distract_possible_tooltip: "미디어 준비도가 최소 #v 20#!입니다." # 12997579446858937411
+  je_bpm_crises_government_scandal_end_resolved_tt: "스캔들이 해결되었습니다." # 3219150520158471364
+  bpm_scandal_response_cover_up_possible_tooltip: "정치적 준비도가 최소 #v 20#!입니다." # 17109358666222528708
+  bpm_scandal_response_cover_up_possible_tooltip_2: "문화부 장관이 있음" # 110065845589322145
+  bpm_scandal_response_cover_up_possible_tooltip_3: "스캔들 진행도가 #v 50#! 미만입니다." # 1234900217069812331
+  bpm_scandal_response_cover_up_effect_tooltip: "정치적 준비도를 #v 20#!만큼 감소시킵니다." # 3499185398521607083
+  bpm_scandal_response_scapegoat: "희생양" # 4432487882379607776
+  bpm_scandal_response_cover_up: "은폐" # 13067178690673589759
+  bpm_scandal_response_cover_up_desc: "이 추문이 더 커지기 전에 세부 사항을 은폐해야 합니다!" # 10651509868729320076
+  bpm_scandal_response_admit_failure: "실패 인정" # 2988996037781594525
+  bpm_scandal_response_admit_failure_desc: "어쩌면 이 추문에는 일리가 있을지도 모릅니다. 우리가 책임을 지겠습니다. 어차피 비판자들이 독점적으로 비난하는 것보다 우리의 실패를 더 긍정적인 관점에서 포장할 수 있을 테니까요." # 9852237781745487261
+  bpm_ig_government_admission_of_failure_happiness: "실패 인정" # 3166647901126695388
+  bpm_ig_government_scapegoated_ig: "희생된 이익집단" # 14769945769371732125

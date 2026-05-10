@@ -76,6 +76,7 @@
   RICE_greater_himalayan_region_capital_req: "[capital|E]는 [GetGeographicalRegion('RICE_greater_himalayan_region').GetName]에 위치해 있습니다." # 1445312579649414396
   Humar: "후마르" # 14022034763949036858
   Milarepa: "밀라레파" # 9467045929041699370
+  kaldan_sherab: "칼단 셰랍" # 15860698735034358085
   RICE_tibet_deities_type_deities: "신들" # 10024869336305504466
   RICE_tibet_deities_type_spirits: "영혼들" # 14535763589429283235
   RICE_random_tibetan_buddhist_figure_01: "석가모니 부처" # 16915828092187849667
@@ -1362,3 +1363,7 @@
   dharma_festivals.067.t: "결론" # 3822412533199628403
   dharma_festivals.067.desc: "로사르 축제가 마침내 끝났으며, 축제의 즐거운 분위기는 며칠 더 이어질 것입니다. 아아, 모든 것이 덧없듯이, 모든 좋은 것들 역시 끝이 나야만 하는 것 같습니다." # 11891305610502008079
   dharma_festivals.067.home: "축제가 이제 끝났습니다." # 493449509155308930
+  activity_RICE_glacier_marriage_province_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_hills_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desert_mountains_desc: "" # 17241709254077376921

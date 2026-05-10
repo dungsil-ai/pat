@@ -1,0 +1,9 @@
+﻿l_korean:
+  building_type_kaifeng_palace_01: "$building_kaifeng_palace_01$" # 2112128278145263474
+  building_type_kaifeng_palace_01_desc: "$building_kaifeng_palace_01_desc$" # 14859464071473846341
+  building_kaifeng_palace_01: "황도" # 15903737851648801536
+  building_kaifeng_palace_01_desc: "이 성벽 안에서 강력하고 효율적인 정부가 통치하여, 도시와 제국 전역의 번영을 보장합니다." # 5461836222422987922
+  building_type_forbidden_city_01: "자금성" # 1416056231919272826
+  building_type_forbidden_city_01_desc: "자금성은 거의 천 개의 개별 건물로 구성된 거대한 황궁입니다. 단지 전체가 높은 성벽과 깊은 해자로 둘러싸여, 통치 정부와 그 안에서 끊임없이 일하는 수많은 관료를 보호합니다." # 12312982762002760438
+  building_forbidden_city_01: "외조" # 8892717845927562350
+  building_forbidden_city_01_desc: "$building_type_forbidden_city_01_desc$\n\n황금전은 황실 의례의 장엄하고 엄숙한 중심지이자, 황제가 즉위식이나 책봉식 같은 주요 의식을 거행하고, 문무백관을 조회하며, 칙령을 반포하는 핵심 구역입니다." # 497939174159626177

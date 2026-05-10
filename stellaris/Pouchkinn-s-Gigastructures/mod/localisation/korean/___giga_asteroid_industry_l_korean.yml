@@ -164,3 +164,8 @@
   giga_edicts.3.a: "훌륭하군!" # 4205353275372794963
   giga_asteroid_industry_candidate_marked: "$asteroid_manufactory_candidate$" # 2678780654798226235
   giga_asteroid_industry_candidate_marked_desc: "이 소행성은 $name_asteroid_manufactory$ 건설에 적합한 후보지로 지정되었습니다." # 17016688120913426895
+  requires_not_at_building_giga_asteroid_factory_energy_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_energy'] 한도에 도달하여 해체할 수 없습니다." # 4508336954616663014
+  requires_not_at_building_giga_asteroid_factory_food_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_food'] 한도에 도달하여 해체할 수 없습니다." # 2298337044193636382
+  requires_not_at_building_giga_asteroid_factory_alloys_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_alloys'] 한도에 도달하여 해체할 수 없습니다." # 11750475656229152188
+  requires_not_at_building_giga_asteroid_factory_consumer_goods_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_consumer_goods'] 한도에 도달하여 해체할 수 없습니다." # 2041117190592893190
+  requires_not_at_building_giga_asteroid_factory_supertensiles_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_supertensiles'] 한도에 도달하여 해체할 수 없습니다." # 721824778094380013

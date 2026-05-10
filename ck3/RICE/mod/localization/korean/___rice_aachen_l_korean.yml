@@ -1,4 +1,10 @@
 ﻿l_korean:
+  building_type_RICE_aachen_luxembourg_fortress_01: "룩셈부르크 요새" # 4494637454658397151
+  building_type_RICE_aachen_luxembourg_fortress_01_desc: "전략적 요충지에 위치한 룩셈부르크 부지는 로마 시대부터 요새화되었습니다. 그 이후로 복(Bock) 돌출부에 있던 오래된 로마 방어 구조물에 추가적인 요새가 증축되었습니다." # 6426275356364662663
+  building_RICE_aachen_luxembourg_fortress_01: "$building_type_RICE_aachen_luxembourg_fortress_01$" # 16704264518547518580
+  building_RICE_aachen_luxembourg_fortress_01_desc: "$building_type_RICE_aachen_luxembourg_fortress_01_desc$" # 8726920125359586794
+  building_RICE_aachen_luxembourg_fortress_02: "확장된 룩셈부르크 요새" # 8764090718692534871
+  building_RICE_aachen_luxembourg_fortress_02_desc: "룩셈부르크의 전략적 위치 때문에, 복 돌출부에 새로운 성과 지역의 주요 고원에 요새화된 정착지를 건설하는 등 새로운 대규모 방어 구조물로 기존 요새가 강화되었습니다." # 339406736202141050
   RICE_aachen_grannus_memory: "[GetTitleByKey('c_aachen').GetNameNoTier]에 그라누스 신에게 신사를 봉헌했습니다." # 13434236925269133612
   RICE_aachen_grannus_memory_first_perspective: "저는 [GetTitleByKey('c_aachen').GetNameNoTier]에 그라누스에게 신당을 봉헌했습니다." # 13118913615643073033
   RICE_aachen_grannus_memory_second_perspective: "[GetTitleByKey('c_aachen').GetNameNoTier]에 그라누스 신을 기리는 성소를 봉헌했습니다." # 7876691705889296358

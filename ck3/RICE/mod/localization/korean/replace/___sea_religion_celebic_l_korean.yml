@@ -1,0 +1,163 @@
+﻿l_korean:
+  aluk: "알룩 토 돌로" # 18391143104543192510
+  aluk_adj: "알루크 투 돌로" # 18391143104543192510
+  aluk_adherent: "알룩 토 돌로" # 18391143104543192510
+  aluk_adherent_plural: "알룩스 토 돌로" # 10068760279301013901
+  aluk_old: "알룩 토 돌로" # 18391143104543192510
+  aluk_old_adj: "알루크 투 돌로" # 18391143104543192510
+  aluk_old_adherent: "알룩 토 돌로" # 18391143104543192510
+  aluk_old_adherent_plural: "알룩스 토 돌로" # 10068760279301013901
+  aluk_high_god_name_alternate: "$aluk_fertility_god_name$" # 8877901249511648109
+  aluk_high_god_name_alternate_possessive: "$aluk_fertility_god_name_possessive$" # 5432238912651491413
+  aluk_household_god_name: "퐁 툴랑덴나" # 8247449643246645873
+  aluk_household_god_name_possessive: "퐁 툴랑덴나의" # 15437534223272583503
+  aluk_night_god_name: "$aluk_wealth_god_name$" # 9003560578432866180
+  aluk_night_god_name_possessive: "$aluk_wealth_god_name_possessive$" # 4161936775041837248
+  aluk_house_of_worship_2: "$aluk_house_of_worship$" # 18152711182123262593
+  aluk_religious_text: "신성한 이야기" # 1916157011032334391
+  aluk_religious_text_2: "부라케 탐볼랑" # 12561867622057231918
+  aluk_religious_text_3: "$aluk_religious_text$" # 10359527816423661454
+  aluk_religious_symbol_2: "물소 뿔" # 17882767673752030464
+  aluk_divine_realm: "랑이" # 8895397782124547824
+  sulawesi_religion: "술라웨시" # 15837591830969199424
+  sulawesi_religion_adj: "술라웨시" # 15837591830969199424
+  sulawesi_religion_adherent: "술라웨시인" # 17508981941193758562
+  sulawesi_religion_adherent_plural: "술라웨시인들" # 3334719028805096955
+  sulawesi_religion_desc: "자연에 대한 경외심, 조상 숭배, 정령 신앙으로 흔히 정의되는 많은 토착 신앙은 다양한 형태의 이교주의로 간주됩니다." # 18292129404656755894
+  celebic: "파두쿠난" # 16635879819163007225
+  celebic_adj: "파두쿠나니스트" # 10073720647480507375
+  celebic_adherent: "파두쿠난 신봉자" # 10073720647480507375
+  celebic_adherent_plural: "파두쿠난 신봉자들" # 10860282693480845891
+  celebic_desc: "자연에 대한 경외심, 조상 숭배, 정령 신앙으로 흔히 정의되는 많은 토착 신앙은 다양한 형태의 이교주의로 간주됩니다." # 18292129404656755894
+  celebic_old: "고대 파두쿠난" # 10026252832025123322
+  celebic_old_adj: "고대 파두쿠나니스트" # 12220667913780706821
+  celebic_old_adherent: "고대 파두쿠난 신봉자" # 12220667913780706821
+  celebic_old_adherent_plural: "고대 파두쿠난 신봉자들" # 1438933069567600168
+  celebic_old_desc: "자연에 대한 경외심, 조상 숭배, 정령 신앙으로 흔히 정의되는 많은 토착 신앙은 다양한 형태의 이교주의로 간주됩니다." # 18292129404656755894
+  malesung: "말레숭" # 4570953583730490432
+  malesung_adj: "말레숭" # 4570953583730490432
+  malesung_adherent: "말레숭" # 4570953583730490432
+  malesung_adherent_plural: "말레숭" # 4570953583730490432
+  malesung_desc: "자연에 대한 경외심, 조상 숭배, 정령 신앙으로 흔히 정의되는 많은 토착 신앙은 다양한 형태의 이교주의로 간주됩니다." # 18292129404656755894
+  malesung_old: "구 말레숭" # 9409929481473359922
+  malesung_old_adj: "올드 말레숭" # 9409929481473359922
+  malesung_old_adherent: "구 말레숭주의자" # 13148890857112551708
+  malesung_old_adherent_plural: "구 말레숭주의자들" # 63431981673232191
+  malesung_old_desc: "자연에 대한 경외심, 조상 숭배, 정령 신앙으로 흔히 정의되는 많은 토착 신앙은 다양한 형태의 이교주의로 간주됩니다." # 18292129404656755894
+  malesung_high_god_name: "오포 엠풍 왕코" # 10720105462702043272
+  malesung_high_god_name_possessive: "오포 엠풍 왕코의" # 2762827730967635618
+  malesung_high_god_name_alternate: "오포 와일란 왕코" # 7468849385214617387
+  malesung_high_god_name_alternate_possessive: "오포 와일란 왕코의" # 9064450732560126265
+  malesung_high_god_shehe: "그" # 8803760235815837871
+  malesung_high_god_herselfhimself: "그 자신" # 10958483083757948805
+  malesung_high_god_herhis: "그의" # 14588382875684683839
+  malesung_high_god_herhim: "그" # 10741446970129323846
+  malesung_good_god_father_sky: "$malesung_trickster_god_name$" # 7689276457081667291
+  malesung_good_god_ancestors: "도투-도투" # 10935428173172027199
+  malesung_devil_name: "부패" # 13053478531208713602
+  malesung_devil_name_possessive: "부패의" # 3367953390396647190
+  malesung_devil_shehe: "그것" # 3125420670989364317
+  malesung_devil_herselfhimself: "그 자체" # 641171738588078623
+  malesung_devil_herhis: "그것의" # 12383260098665029106
+  malesung_evil_god_decay: "역병" # 15313750568128129140
+  malesung_evil_god_decay_possessive: "역병의" # 9485747922900271584
+  malesung_evil_god_drought: "가뭄" # 15786026485696089182
+  malesung_death_name: "데스" # 6839449773115691256
+  malesung_death_name_possessive: "죽음의" # 4370432923129616423
+  malesung_death_shehe: "그것" # 3125420670989364317
+  malesung_death_herhis: "그것의" # 12383260098665029106
+  malesung_death_herhim: "그것" # 3125420670989364317
+  malesung_creator_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_creator_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_creator_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_creator_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_creator_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_creator_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_health_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_health_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_health_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_health_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_health_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_health_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_fertility_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_fertility_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_fertility_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_fertility_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_fertility_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_fertility_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_wealth_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_wealth_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_wealth_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_wealth_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_wealth_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_wealth_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_household_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_household_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_household_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_household_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_household_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_fate_god_name: "페이트" # 2796749541833053969
+  malesung_fate_god_name_possessive: "운명의" # 13257871882534990612
+  malesung_fate_god_shehe: "그것" # 3125420670989364317
+  malesung_fate_god_herhim: "그것" # 3125420670989364317
+  malesung_fate_god_herselfhimself: "그 자체" # 641171738588078623
+  malesung_fate_god_herhis: "그것의" # 12383260098665029106
+  malesung_knowledge_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_knowledge_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_knowledge_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_knowledge_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_knowledge_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_knowledge_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_war_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_war_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_war_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_war_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_war_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_war_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_trickster_god_name: "코켈레보" # 3028685879455252861
+  malesung_trickster_god_name_possessive: "코켈레보" # 3028685879455252861
+  malesung_trickster_god_herselfhimself: "그 자체" # 641171738588078623
+  malesung_trickster_god_herhis: "그것의" # 12383260098665029106
+  malesung_trickster_god_herhim: "그것" # 3125420670989364317
+  malesung_trickster_god_shehe: "그것" # 3125420670989364317
+  malesung_witch_god_name: "$malesung_trickster_god_name$" # 7689276457081667291
+  malesung_witch_god_name_possessive: "$malesung_trickster_god_name_possessive$" # 9337965458656301905
+  malesung_witch_god_herselfhimself: "$malesung_trickster_god_herselfhimself$" # 3412567699665880647
+  malesung_witch_god_herhis: "$malesung_trickster_god_herhis$" # 3490855576674389340
+  malesung_witch_god_herhim: "$malesung_trickster_god_herhim$" # 5353230403365188256
+  malesung_witch_god_shehe: "$malesung_trickster_god_shehe$" # 5241756465509730345
+  malesung_night_god_name: "$malesung_trickster_god_name$" # 7689276457081667291
+  malesung_night_god_name_possessive: "$malesung_trickster_god_name_possessive$" # 9337965458656301905
+  malesung_night_god_herselfhimself: "$malesung_trickster_god_herselfhimself$" # 3412567699665880647
+  malesung_night_god_herhis: "$malesung_trickster_god_herhis$" # 3490855576674389340
+  malesung_night_god_herhim: "$malesung_trickster_god_herhim$" # 5353230403365188256
+  malesung_night_god_shehe: "$malesung_trickster_god_shehe$" # 5241756465509730345
+  malesung_water_god_name: "$malesung_high_god_name$" # 438857713906029938
+  malesung_water_god_name_possessive: "$malesung_high_god_name_possessive$" # 2197350468765594365
+  malesung_water_god_herselfhimself: "$malesung_high_god_herselfhimself$" # 3504049292611762732
+  malesung_water_god_herhis: "$malesung_high_god_herhis$" # 17840646749675162610
+  malesung_water_god_shehe: "$malesung_high_god_shehe$" # 6652494566818730490
+  malesung_water_god_herhim: "$malesung_high_god_herhim$" # 7074710386782558507
+  malesung_bishop: "토나아스" # 14635005836375049513
+  malesung_bishop_plural: "토나아스" # 14635005836375049513
+  malesung_pantheon_term: "오포오포" # 13271343354627146489
+  malesung_pantheon_term_hashave: "가지다" # 4522849327189893929
+  malesung_house_of_worship: "사원" # 6519563856123702153
+  malesung_house_of_worship_plural: "사원들" # 7805349845828344700
+  malesung_religious_symbol: "트리퀘트라" # 16668553969263300305
+  malesung_religious_text: "신성한 이야기" # 1916157011032334391
+  malesung_religious_head_title: "대샤먼" # 9784349143017949296
+  malesung_religious_head_title_name: "최고 의회" # 15038947742583190916
+  malesung_devotee: "신도" # 16996875086266395993
+  malesung_devotee_plural: "신도들" # 15412075443944701231
+  malesung_priest: "왈리안" # 11833996418663501889
+  malesung_priest_plural: "왈리안들" # 8193295075506406284
+  malesung_priest_term_plural: "왈리안들" # 4318350563025261849
+  malesung_priest_alternate_plural: "장로들" # 5696275286659332166
+  malesung_divine_realm: "칼라흐와칸" # 5441110423784634587
+  malesung_divine_realm_2: "카센두칸" # 7633365468033527680
+  malesung_divine_realm_3: "카센두칸" # 7633365468033527680
+  malesung_positive_afterlife: "카센두칸" # 7633365468033527680
+  malesung_positive_afterlife_2: "칼라흐와칸" # 5441110423784634587
+  malesung_positive_afterlife_3: "칼라흐와칸" # 5441110423784634587
+  malesung_negative_afterlife: "지하세계" # 8303066665719263468

@@ -12,9 +12,9 @@
 
 #### FR-1.2: AI 기반 번역
 - **요구사항**: Google Gemini AI를 사용한 맥락 인식 번역
-- **모델**: gemini-flash-lite-latest (1차), gemini-flash-latest (2차 폴백)
+- **모델**: `GEMINI_MODEL` 환경 변수 우선, 미설정 시 `gemini-flash-lite-latest`
 - **재시도 메커니즘**: 실패 시 자동 재시도
-- **타임아웃**: 기본 120초, 최대 600초
+- **타임아웃**: `TRANSLATION_TIMEOUT_MINUTES` 환경변수로 설정 (기본 15분)
 
 #### FR-1.3: 게임별 맥락 프롬프트
 - **CK3**: 중세 시대, 봉건제, 역사적 인물/지명
@@ -48,7 +48,9 @@
 #### FR-3.2: 버전 전략 지원
 - **semantic**: 시멘틱 버전 태그 정렬 (GitHub API + semver)
 - **natural**: 자연 정렬 버전 선택 (git ls-remote + natsort)
+- **github**: GitHub Releases 최신 공개 릴리스 선택 (프리릴리즈/드래프트 제외)
 - **default**: 기본 브랜치 사용 (기존 방식)
+- **대시보드 비교**: `default` 전략은 `upstream.localization` 경로에 영향을 준 최신 커밋 기준 (`["."]`은 저장소 전체)
 - **설정**: `meta.toml`의 `version_strategy` 필드
 - **오류 처리**: 잘못된 전략 시 GitHub Issues 자동 생성
 
@@ -122,7 +124,8 @@
 - **형식**: TOML
 
 #### FR-7.2: 환경 변수
-- **필수**: `GOOGLE_AI_STUDIO_TOKEN`
+- **필수(둘 중 하나)**: `GOOGLE_AI_STUDIO_TOKEN` 또는 `GOOGLE_GENERATIVE_AI_API_KEY`
+- **선택**: `GITHUB_TOKEN` (GitHub API 인증/레이트 리밋 완화)
 - **형식**: `.env` 파일 또는 환경 변수
 
 ### 8. 로깅 시스템 (Logging System)
@@ -258,6 +261,11 @@
 ##### EC-3.6.6: 동일한 버전 중복
 - **상황**: 여러 브랜치에 같은 버전 태그
 - **처리**: 가장 최근 커밋 기준 선택
+
+##### EC-3.6.7: GitHub 릴리스 없음 (github 전략)
+- **상황**: `github` 전략 사용 시 Releases가 비어 있음
+- **처리**: 최신 릴리스 태그 조회 실패 후 재시도
+- **대응**: 릴리스가 없는 저장소는 `semantic`/`natural`/`default` 전략 사용
 - **가능성**: 비결정적 결과
 
 ### 4. 검증 관련 엣지 케이스

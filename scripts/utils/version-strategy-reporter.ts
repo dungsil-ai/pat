@@ -34,6 +34,7 @@ ${error.message}
 유효한 값 중 하나로 수정하세요:
 - \`semantic\`: 시멘틱 버전 정렬 (v1.2.3, v2.0.0 등)
 - \`natural\`: 자연 정렬 (1.10.0 > 1.2.0)  
+- \`github\`: GitHub Releases 최신 태그 사용
 - \`default\`: 기본 브랜치 사용
 
 ### 📝 수정 예제
@@ -69,4 +70,3 @@ version_strategy = "semantic"  # 이 줄을 수정하세요
     log.error(`[${error.configPath}] GitHub Issues 등록 실패: ${errorMessage}`)
   }
 }
-

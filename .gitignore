@@ -20,3 +20,7 @@ package-lock.json
 
 ### Translation workflow generated files ###
 *-untranslated-items.json
+
+### 개인모드 ###
+**/upstream/!*/
+**/mod/localization/korean/!*/

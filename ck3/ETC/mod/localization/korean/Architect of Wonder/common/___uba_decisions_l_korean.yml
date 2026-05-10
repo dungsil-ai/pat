@@ -1,0 +1,87 @@
+﻿l_korean:
+  decision_group_type_uba: "건축가 결정" # 18298314113201231514
+  UBA_ESTABLISH_BUILDING_NAME_LABEL: "이름:" # 11806038557760378703
+  UBA_ESTABLISH_BUILDING_CAPITAL_LABEL: "위치:" # 6073984187350936570
+  UBA_ESTABLISH_BUILDING_CHANGE_CAPITAL: "위치 변경" # 11822557970281847869
+  UBA_ESTABLISH_BUILDING_SELECT_CAPITAL: "위치 선택" # 2529269350385954242
+  uba_building_decision: "불가사의 건설" # 13445680059978733801
+  uba_building_decision_tooltip: "지정한 위치에 고유한 특수 건물 추가" # 8155723917153310493
+  uba_building_decision_desc: "삶은 덧없는 순간일 뿐.\n내가 이 세상을 떠난 뒤, 얼마나 많은 이들이 내 이름을 기억할까? 사람들이 나를 기억하게 하려면, 나는 이 세상에 더 깊은 흔적을 남겨야 한다. 예를 들면...\n\n웅장한 불가사의 같은 것으로." # 14240877005735508120
+  uba_building_decision_confirm: "계획 수립" # 6365107132088474215
+  uba_remove_building_decision: "불가사의 건물을 위한 부지 정리" # 14477875993099805659
+  uba_remove_building_decision_tooltip: "지정한 위치에서 특수 건물 제거" # 14972632210633377875
+  uba_remove_building_decision_effect: "미래의 건설을 위한 공간을 마련하고자 지정된 위치에서 특수 건물을 제거한다." # 16150063009250827374
+  uba_remove_building_decision_desc: "고유 건물을 보유하는 것이 항상 유리한 것은 아니다. 특히 더 위대한 건축물을 위한 공간을 만들고 싶을 때는 더욱 그렇다.\n\n- 아마 건축가들에게 돈을 주고 이 성가신 구조물을 철거하게 할 수 있을지도..." # 17213151867061003368
+  uba_remove_building_decision_confirm: "공간 확보" # 1386030035897028876
+  uba_nomadic_building_decision: "유목 불가사의 업그레이드" # 11618986124079069446
+  uba_nomadic_building_decision_tooltip: "나의 유목 특수 건물 업그레이드" # 223211681162366548
+  uba_nomadic_building_decision_effect: "해당 위치의 유목 특수 건물 업그레이드" # 8418588023645037652
+  uba_nomadic_building_decision_desc: "이 땅은 #EMP 위대한#! [ROOT.Char.GetTitleAsNameNoTooltip]인 나의 것이다! 내 백성들은 나의 업적을 영원히 기억할 것이다... #EMP 그리고 나의 건축물들도. #!" # 16989049321203348180
+  uba_nomadic_building_decision_confirm: "실행" # 13102732757968995949
+  uba_decision_off: "건축가 결정 숨기기" # 4888312222767149807
+  uba_decision_off_tooltip: "건축가 컬렉션 모드의 결정 숨기기" # 8377309093542311495
+  uba_decision_off_effect: "건축가 컬렉션 모드의 결정이 숨겨지며, 다른 결정을 통해 다시 활성화할 수 있다." # 1047512095492514518
+  uba_decision_off_desc: "영원한 건축물을 짓는다는 것이 비현실적이고 어리석은 생각임을 문득 깨달았다. 차라리 이 쓸모없는 건축가와 장인들을 해고하고, 절약한 돈을 더 가치 있는 곳에 쓰는 편이 낫겠다." # 7265353555952021127
+  uba_decision_off_confirm: "건축가 해고" # 8525301287863245147
+  uba_decision_on: "건축가 결정 보기" # 15876433093086715531
+  uba_decision_on_tooltip: "건축가 컬렉션 모드의 결정 보기" # 16834225514950764344
+  uba_decision_on_effect: "건축가 컬렉션 모드의 결정이 복구되며, 다른 결정을 통해 다시 숨길 수 있습니다." # 12129292919658986571
+  uba_decision_on_desc: "영원히 남을 경이로운 건축물을 짓겠다는 생각이 머릿속을 떠나지 않는군!\n아마 그 건축가들을 다시 불러야 할 것 같네. 이제 그들에게 실현해달라고 할 더 좋은 아이디어가 떠올랐거든..." # 10065393975005683040
+  uba_decision_on_confirm: "건축가를 부르라!" # 16569866304542917474
+  uba_no_nomad_tt: "$government_is_nomadic$ 정체가 아니어야 합니다." # 13703434364296474988
+  uba_cost_tt: "최소 [SCOPE.ScriptValue('uba_decision_cost')|0][gold_i]를 보유해야 합니다!" # 9069892928229932854
+  uba_diplomacy_tt: "[diplomacy|E][lifestyle_trait|E], [education_trait|E] 또는 [GetTrait('architect').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 11429863818508992337
+  uba_martial_tt: "[martial|E][lifestyle_trait|E], [education_trait|E] 또는 [GetTrait('architect').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 8148267248764637420
+  uba_stewardship_tt: "[stewardship|E][lifestyle_trait|E], [education_trait|E], [GetTrait('education_republican_knowledge_3').GetName( GetNullCharacter )] 계열 [traits|E] 또는 [GetTrait('architect ').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 2277728947583436478
+  uba_learning_tt: "[learning|E][lifestyle_trait|E], [education_trait|E] 또는 [GetTrait('architect').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 11791163373988521538
+  uba_travel_tt: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )], [GetTrait('pilgrim').GetName( GetNullCharacter )], [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )] 또는 [GetTrait('architect').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 17255508889577312826
+  uba_lifestyle_tt: "[GetTrait('lifestyle_mystic').GetName( GetNullCharacter )], [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )], [GetTrait('lifestyle_gardener').GetName( GetNullCharacter )], [GetTrait('lifestyle_physician').GetName( GetNullCharacter )], [GetTrait('witch').GetName( GetNullCharacter )] 또는 [GetTrait('architect').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 16032027606316885196
+  uba_intrigue_tt: "[intrigue|E][lifestyle_trait|E], [education_trait|E]를 보유해야 합니다." # 16747690039523576195
+  uba_nomad_tt: "[herd|E] 또는 [GetTrait('nomadic_philosophy').GetName( GetNullCharacter )][trait|E]를 보유해야 합니다." # 2059272989461923308
+  uba_cash_tt: "...#color_yellow 충분한 용기#!를 가져야 합니다." # 9342946006458463427
+  uba_wall_tt: "...#color_yellow 충분한 힘#!을 가져야 합니다." # 6900600046266131889
+  uba_building_decision_diplomacy: "외교의 길" # 6425072712736829047
+  uba_building_decision_diplomacy_desc: "외교는 말의 예술이며, 나의 말은 가장 완고한 마음조차 무릎 꿇게 할 수 있다." # 7393967835191438337
+  uba_diplomacy_tooltip: "$uba_building_decision_diplomacy_desc$" # 1971007915596682023
+  uba_building_decision_martial: "무력의 길" # 18307037156893258965
+  uba_building_decision_martial_desc: "불가능해 보이는 군사적 상황에서도, 나는 패배를 승리로 바꿀 수 있다." # 14717781862643590856
+  uba_martial_tooltip: "$uba_building_decision_martial_desc$" # 17907987525579945576
+  uba_building_decision_stewardship: "관리의 길" # 17801426502420502022
+  uba_building_decision_stewardship_desc: "약간의 기술만 있다면, 나는 실패하는 사업도 수익성 있는 사업으로 바꿀 수 있다." # 2790637494190997333
+  uba_stewardship_tooltip: "$uba_building_decision_stewardship_desc$" # 15155986113514137990
+  uba_building_decision_learning: "학문의 길" # 14250689984602839320
+  uba_building_decision_learning_desc: "나는 신성하거나 세속적인 그 어떤 심오한 지식도 조금씩은 건드려 보지 않은 것이 없다." # 119626609688025225
+  uba_learning_tooltip: "$uba_building_decision_learning_desc$" # 11894399085962243345
+  uba_building_decision_travel: "여행의 길" # 15954742219834827552
+  uba_building_decision_travel_desc: "나는 수많은 길을 여행했고 세상의 절반을 보았다." # 5581024559730320791
+  uba_travel_tooltip: "$uba_building_decision_travel_desc$" # 7535505292208198899
+  uba_building_decision_lifestyle: "삶의 길" # 13615048597395402352
+  uba_building_decision_lifestyle_desc: "우리는 시지프스가 행복하다고 상상해야 한다." # 5873687768895154306
+  uba_lifestyle_tooltip: "$uba_building_decision_lifestyle_desc$" # 7622454249466669340
+  uba_building_decision_intrigue: "음모의 비밀" # 3030811635844999632
+  uba_building_decision_intrigue_desc: "나는 바람 속의 속삭임이자, 벽에 비친 그림자다." # 9319240737114849783
+  uba_intrigue_tooltip: "$uba_building_decision_intrigue_desc$" # 17405353047753643905
+  uba_building_decision_nomad: "초원의 숨결" # 14747181683255728024
+  uba_building_decision_nomad_desc: "하늘은 거대한 돔처럼 온 대지를 덮고 있다. 양과 소들이 돌풍을 바라본다." # 7113165347443773369
+  uba_nomad_tooltip: "$uba_building_decision_nomad_desc$" # 9044831011890030548
+  uba_building_decision_cash: "부의 소망" # 13845474603093001948
+  uba_building_decision_cash_desc: "$trait_avaricious_desc$\n\n그러나 바로 그 순간, 내 뒤에 있던 장식장이 부자연스럽게 움직였다..." # 6770925167622062467
+  uba_cash_tooltip: "$uba_building_decision_cash_desc$" # 1413987697554779492
+  uba_building_decision_wall: "공학의 기적" # 15547793649053360075
+  uba_building_decision_wall_desc: "$trait_architect_desc$" # 4886750915547297863
+  uba_wall_tooltip: "$uba_building_decision_wall_desc$" # 2053452797185829711
+  uba_building_decision_1: "#EMP 불가사의:#! 부지 계획" # 14194863903181087520
+  uba_building_decision_1_tooltip: "독특하고 특별한 건물을 지을 장소를 지정하십시오." # 4559461033757635845
+  uba_building_decision_1_effect: "이 거대한 건설 프로젝트에 적합한 장소를 선택하십시오" # 10439769392358708243
+  uba_building_decision_1_desc: "인생은 눈 깜빡할 사이에 지나간다.\n내가 세상을 떠난 후, 과연 얼마나 많은 사람이 내 이름을 기억해 줄까? 모두가 나를 기억하게 하려면, 이 세상에 더 깊은 인상을 남겨야 한다. #EMP 위대한 건축물#!과 같은 흔적을 말이다." # 18085353154112628570
+  uba_building_decision_1_confirm: "준비하라" # 13378240304061186436
+  uba_building_decision_2: "#EMP 불가사의:#! 불가사의 선택" # 17021201895786868909
+  uba_building_decision_2_tooltip: "지정된 장소에 독특하고 특별한 건물을 건설하십시오" # 7816340005887194467
+  uba_building_decision_2_effect: "다음에 건설할 특별한 건물을 결정하십시오" # 4220033930264364352
+  uba_building_decision_2_desc: "이제 가장 중요한 질문을 고민해야 한다:\n나는 어떻게 기억되고 싶은가?\n\n이 건물은 #bold [ROOT.Var('uba_building_location ').Province.GetName]#!을 근본적으로 변화시킬 것이다. 신중하게 결정해야 한다." # 5732634936659526375
+  uba_building_decision_2_confirm: "작업을 시작하라!" # 8823625015854667009
+  uba_building_decision_3: "[AoWs]부지 선택 취소" # 10229964541493448325
+  uba_building_decision_3_tooltip: "특별한 건물을 위해 이전에 선택했던 장소를 취소합니다" # 9895043538017702894
+  uba_building_decision_3_effect: "이전에 선택한 특수 건물 건설 위치를 취소합니다" # 9910690854048773895
+  uba_building_decision_3_desc: "갑자기 깨달았습니다:\n#bold [ROOT.Var('uba_building_location').Province.GetName]#! 제가 구상한 계획에 적합한 장소가 아닐지도 모릅니다. 이전 결정을 철회하겠습니다. 아직 너무 늦은 것은 아니길 바랍니다." # 9898016148066580693
+  uba_building_decision_3_confirm: "선택 취소" # 15134739211197610193

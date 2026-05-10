@@ -226,6 +226,16 @@ describe('변수만 포함된 텍스트 감지 (AI 번역 없이 즉시 반환)'
       expect(translateAI).toHaveBeenCalledWith('Hello World', 'ck3', undefined, false)
     })
 
+    it('AI 응답에 포함된 U+200E 문자를 제거해야 함', async () => {
+      const { translate } = await import('./translate')
+      const { translateAI } = await import('./ai')
+      vi.mocked(translateAI).mockResolvedValueOnce('[번역됨]\u200EHello $variable$\u200E[GetTitle]')
+
+      const result = await translate('Hello $variable$[GetTitle]')
+
+      expect(result).toBe('[번역됨]Hello $variable$ [GetTitle]')
+    })
+
     it('변수와 텍스트가 혼합된 경우 AI 번역을 호출해야 함', async () => {
       const { translate } = await import('./translate')
       const { translateAI } = await import('./ai')
@@ -460,6 +470,29 @@ describe('캐시 재사용 (동일 소스 텍스트)', () => {
     expect(hasCache).toHaveBeenNthCalledWith(1, 'Anglo-Saxon', 'ck3') // 번역 모드
     expect(hasCache).toHaveBeenNthCalledWith(2, 'transliteration:Anglo-Saxon', 'ck3') // 음역 모드
   })
+
+  it('재번역 컨텍스트가 있으면 캐시를 우회하고 제거한 뒤 새 번역을 요청해야 함', async () => {
+    const { translate } = await import('./translate')
+    const { translateAI } = await import('./ai')
+    const { hasCache, getCache, removeCache, setCache } = await import('./cache')
+
+    vi.mocked(hasCache).mockResolvedValueOnce(true)
+
+    const result = await translate(
+      'Afar',
+      'ck3',
+      0,
+      { previousTranslation: '[잘못된 번역]', failureReason: '테스트 재번역' },
+      true,
+      true
+    )
+
+    expect(removeCache).toHaveBeenCalledWith('transliteration:Afar', 'ck3')
+    expect(getCache).not.toHaveBeenCalled()
+    expect(translateAI).toHaveBeenCalledTimes(1)
+    expect(result).toBe('[번역됨]Afar')
+    expect(setCache).toHaveBeenCalledWith('transliteration:Afar', '[번역됨]Afar', 'ck3')
+  })
 })
 
 describe('TranslationRefusedError 처리', () => {
@@ -578,5 +611,42 @@ describe('translateBulk', () => {
     expect(translateAIBulk).toHaveBeenCalledTimes(2)
     expect(vi.mocked(translateAIBulk).mock.calls[0][0]).toHaveLength(24)
     expect(vi.mocked(translateAIBulk).mock.calls[1][0]).toHaveLength(1)
+  })
+
+  it('벌크 요청 내 동일한 텍스트는 하나로 합쳐 요청하고 결과를 모두 반영해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk } = await import('./ai')
+    const { setCache } = await import('./cache')
+
+    const results = await translateBulk(['same', 'same', 'other', 'same'], 'ck3', false)
+
+    expect(results).toEqual([
+      { translatedText: '[벌크번역]same' },
+      { translatedText: '[벌크번역]same' },
+      { translatedText: '[벌크번역]other' },
+      { translatedText: '[벌크번역]same' },
+    ])
+    expect(translateAIBulk).toHaveBeenCalledTimes(1)
+    expect(translateAIBulk).toHaveBeenCalledWith(['same', 'other'], 'ck3', false)
+    expect(setCache).toHaveBeenCalledTimes(2)
+    expect(setCache).toHaveBeenCalledWith('same', '[벌크번역]same', 'ck3')
+    expect(setCache).toHaveBeenCalledWith('other', '[벌크번역]other', 'ck3')
+  })
+
+  it('병합된 벌크 항목이 폴백될 때도 동일한 텍스트는 한 번만 재번역해야 함', async () => {
+    const { translateBulk } = await import('./translate')
+    const { translateAIBulk, translateAI } = await import('./ai')
+
+    vi.mocked(translateAIBulk).mockRejectedValueOnce(new Error('벌크 실패'))
+
+    const results = await translateBulk(['same', 'same'], 'ck3', false)
+
+    expect(results).toEqual([
+      { translatedText: '[번역됨]same' },
+      { translatedText: '[번역됨]same' },
+    ])
+    expect(translateAIBulk).toHaveBeenCalledWith(['same'], 'ck3', false)
+    expect(translateAI).toHaveBeenCalledTimes(1)
+    expect(translateAI).toHaveBeenCalledWith('same', 'ck3', undefined, false)
   })
 })

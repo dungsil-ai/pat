@@ -1,0 +1,14 @@
+﻿l_korean:
+  decision_group_type_abdications: "양위" # 3938254997826577064
+  abdication_decision_0: "후계자로 플레이" # 10441681808903848292
+  abdication_decision_0_tooltip: "작위를 물려주지 않고 후계자로 플레이" # 14592485134425417386
+  abdication_decision_0_desc: "작위를 물려주지 않고 [ROOT.Char.GetPlayerHeir.GetFullNameRegnal](으)로 플레이합니다.\n[ROOT.Char.GetFullNameRegnal]이(가) 새로운 주군이 됩니다." # 1649953885111276773
+  abdication_decision_0_confirm: "후계자로 플레이" # 12213495304829343848
+  abdication_decision_1: "양위" # 579252525334702543
+  abdication_decision_1_tooltip: "왕위 양위" # 9591578637003593598
+  abdication_decision_1_desc: "상속법에 따라 작위를 물려주고 왕위에서 물러납니다." # 8084538804889190340
+  abdication_decision_1_confirm: "왕위 양위." # 9914831961584448573
+  abdication_decision_2: "은퇴" # 2722168212047252218
+  abdication_decision_2_tooltip: "왕위에서 물러나 가문 수장직에서 은퇴" # 18044785664381287292
+  abdication_decision_2_desc: "상속법에 따라 작위를 물려주고 왕위에서 물러납니다.\n[ROOT.Char.GetPlayerHeir.GetFullNameRegnal]을(를) [ROOT.Char.GetHouse.GetName]의 새로운 가문 수장으로 임명합니다." # 13313328333253893196
+  abdication_decision_2_confirm: "왕위 양위 및 은퇴." # 13870342582967015450

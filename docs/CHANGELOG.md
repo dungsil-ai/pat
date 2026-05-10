@@ -2,6 +2,74 @@
 
 프로젝트의 주요 변경 사항 및 개선 사항을 기록합니다.
 
+## 2026년 4월
+
+### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-27
+
+**문서 반영 대상 변경:**
+- 벌크 번역 요청에서 동일 텍스트 중복 전송 제거: 동일 캐시 키를 가진 항목은 하나의 AI 요청으로 병합되어 불필요한 API 호출을 줄이고 번역 결과를 모든 중복 인덱스에 동시 적용
+- upstream 소스 언어가 `korean`인 경우 파일명의 기존 `___` 접두사를 제거하고 새 `___` 접두사를 붙여 이중 접두사 문제(`______`)를 방지하는 `buildKoreanTargetFileName` 유틸리티 도입
+- 모드 positional 인자(`pnpm <game> <mod>`)로 번역 실행 시 upstream 업데이트 범위를 해당 모드로만 제한하여 불필요한 전체 upstream 갱신을 방지
+
+**관련 파일:**
+- `scripts/utils/translate.ts`
+- `scripts/utils/localization-file-name.ts` (신규)
+- `scripts/factory/translate.ts`
+- `scripts/utils/dictionary-invalidator.ts`
+- `scripts/utils/retranslation-invalidator.ts`
+- `scripts/utils/upstream.ts`
+- `scripts/utils/mod-filter.ts`
+- `scripts/ck3.ts`
+- `scripts/vic3.ts`
+- `scripts/stellaris.ts`
+
+---
+
+### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-20
+
+**문서 반영 대상 변경:**
+- YAML 파서와 번역 sanitize가 U+200E(Left-to-Right Mark) 문자를 제거해 localization 키/값 오염을 방지
+- 번역 sanitize가 닫는 변수 마커 뒤의 `$[` 패턴에 공백을 보정해 잘못된 변수 구문 출력을 줄임
+- `meta.toml`의 `upstream.transliteration_files`로 파일명/와일드카드 기반 수동 음역 모드 지정 지원
+- `transliteration_files` 변경 시 영향받는 한국어 파일 해시만 무효화하는 워크플로우와 CLI 명령(`*:retransliteration`) 추가
+
+**관련 파일:**
+- `scripts/parser/yaml.ts`
+- `scripts/utils/translate.ts`
+- `scripts/utils/prompts.ts`
+- `scripts/utils/transliteration-files-changes.ts`
+- `scripts/utils/transliteration-files-invalidator.ts`
+- `.github/workflows/invalidate-on-transliteration-files-change.yml`
+- `scripts/ck3.ts`
+- `scripts/vic3.ts`
+- `scripts/stellaris.ts`
+- `package.json`
+
+---
+
+### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-04-13
+
+**문서 반영 대상 변경:**
+- 번역 워크플로우가 `GITHUB_TOKEN`으로 GitHub API 인증을 사용하도록 조정되어 레이트 리밋 영향을 완화
+- `github` 버전 전략이 최신 공개 릴리스만 추적하고 프리릴리즈/드래프트는 제외
+- 업스트림 대시보드의 `default` 전략이 기본 브랜치 전체 대신 `upstream.localization` 경로 기반 최신 커밋을 비교
+- 업스트림 대시보드 완료 후 이슈 자동 갱신 흐름과 annotated 태그 비교 안정성 보강
+- GitHub Actions composite action 런타임을 Node.js 24로 올리고 로컬 shared 패키지 해석을 위해 `NODE_OPTIONS=--preserve-symlinks` 적용
+
+**관련 파일:**
+- `.github/workflows/translate-ck3.yml`
+- `.github/workflows/translate-vic3.yml`
+- `.github/workflows/translate-stellaris.yml`
+- `.github/actions/create-untranslated-issues/action.yml`
+- `.github/actions/close-translation-issues/action.yml`
+- `scripts/upstream-dashboard.ts`
+- `scripts/utils/upstream.ts`
+
+---
+
 ## 2026년 1월
 
 ### GitHub Actions 공유 패키지 생성

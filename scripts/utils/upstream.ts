@@ -7,10 +7,10 @@
  * meta.toml 파일에서 모든 설정 정보 (URL, localization 경로)를 읽어옵니다.
  */
 
-import { exec } from 'node:child_process'
+import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
-import { join, dirname } from 'pathe'
+import { dirname, join } from 'pathe'
 import * as semver from 'semver'
 import natsort from 'natsort'
 import { log } from './logger'
@@ -18,9 +18,9 @@ import { delay } from './delay'
 import { parseToml } from '../parser/toml'
 import { reportVersionStrategyError } from './version-strategy-reporter'
 
-const execAsync = promisify(exec)
+const execFileAsync = promisify(execFile)
 
-export type VersionStrategy = 'semantic' | 'natural' | 'default'
+export type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
 export class VersionStrategyError extends Error {
   constructor(
@@ -127,7 +127,7 @@ export async function parseMetaTomlConfig(metaPath: string, gameDir: string, mod
     
     // version_strategy 유효성 검사
     if (config.upstream?.version_strategy) {
-      const validStrategies: VersionStrategy[] = ['semantic', 'natural', 'default']
+      const validStrategies: VersionStrategy[] = ['semantic', 'natural', 'default', 'github']
       if (!validStrategies.includes(config.upstream.version_strategy)) {
         const error = new VersionStrategyError(
           `유효하지 않은 version_strategy: ${config.upstream.version_strategy}`,
@@ -275,6 +275,28 @@ export async function getLatestReleaseFromGitHub(owner: string, repo: string, co
 }
 
 /**
+ * GitHub Releases의 최신 태그를 기준으로 버전을 선택합니다.
+ */
+async function getGitHubReleaseVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
+  const githubInfo = parseGitHubUrl(repoUrl)
+  if (!githubInfo) {
+    throw new VersionStrategyError(`GitHub 릴리스 전략은 GitHub 저장소만 지원합니다: ${repoUrl}`, configPath)
+  }
+
+  return await upstreamRetry(
+    async () => {
+      const latestReleaseTag = await getLatestReleaseFromGitHub(githubInfo.owner, githubInfo.repo, configPath)
+      if (!latestReleaseTag) {
+        throw new Error('GitHub 릴리스 태그를 찾을 수 없음')
+      }
+
+      return { type: 'tag', name: latestReleaseTag }
+    },
+    `${configPath}-github-release`
+  )
+}
+
+/**
  * 버전 전략에 따라 원격 리포지토리의 최신 참조를 가져옵니다.
  * 
  * @param repoUrl Git 저장소 URL
@@ -298,6 +320,8 @@ export async function getLatestRefFromRemote(
       return await getNaturalVersion(repoUrl, configPath)
     case 'default':
       return await getDefaultBranch(repoUrl, configPath)
+    case 'github':
+      return await getGitHubReleaseVersion(repoUrl, configPath)
   }
 }
 
@@ -399,7 +423,7 @@ async function getSemanticVersion(repoUrl: string, configPath: string): Promise<
 async function getNaturalVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
   return await upstreamRetry(
     async () => {
-      const { stdout: tagsOutput } = await execAsync(`git ls-remote --tags --refs "${repoUrl}"`, {
+      const { stdout: tagsOutput } = await execFileAsync('git', ['ls-remote', '--tags', '--refs', repoUrl], {
         timeout: 30000
       })
       
@@ -441,7 +465,7 @@ async function getNaturalVersion(repoUrl: string, configPath: string): Promise<{
 async function getDefaultBranch(repoUrl: string, configPath: string): Promise<{ type: 'branch', name: string }> {
   return await upstreamRetry(
     async () => {
-      const { stdout: headOutput } = await execAsync(`git ls-remote --symref "${repoUrl}" HEAD`, {
+      const { stdout: headOutput } = await execFileAsync('git', ['ls-remote', '--symref', repoUrl, 'HEAD'], {
         timeout: 10000
       })
       
@@ -453,6 +477,48 @@ async function getDefaultBranch(repoUrl: string, configPath: string): Promise<{ 
     },
     `${configPath}-default`
   )
+}
+
+/**
+ * 원격 참조(태그/브랜치)의 커밋 해시를 조회합니다.
+ */
+async function getRemoteRefCommitHash(
+  repoUrl: string,
+  ref: { type: 'tag' | 'branch', name: string }
+): Promise<string | null> {
+  const refPath = ref.type === 'tag'
+    ? `refs/tags/${ref.name}`
+    : `refs/heads/${ref.name}`
+
+  try {
+    const args = ref.type === 'tag'
+      ? ['ls-remote', repoUrl, `${refPath}^{}`, refPath]
+      : ['ls-remote', repoUrl, refPath]
+
+    const { stdout } = await execFileAsync('git', args, { timeout: 10000 })
+    const lines = stdout.trim().split('\n').filter(Boolean)
+    if (lines.length === 0) {
+      return null
+    }
+
+    if (ref.type === 'tag') {
+      const peeledLine = lines.find(line => line.includes(`${refPath}^{}`))
+      const directLine = lines.find(line => line.includes(refPath))
+      const targetLine = peeledLine ?? directLine
+
+      if (!targetLine) {
+        return null
+      }
+
+      const [commitHash] = targetLine.split(/\s+/)
+      return commitHash || null
+    }
+
+    const [commitHash] = lines[0].split(/\s+/)
+    return commitHash || null
+  } catch {
+    return null
+  }
 }
 
 /**
@@ -476,7 +542,7 @@ async function cloneOptimizedRepository(targetPath: string, config: UpstreamConf
     
     // 3. Sparse checkout 설정
     log.start(`[${config.path}] Sparse checkout 설정 중...`)
-    await execAsync('git sparse-checkout init', { cwd: targetPath })
+    await execFileAsync('git', ['sparse-checkout', 'init'], { cwd: targetPath })
     
     // 4. Localization 경로만 설정 (파일에 직접 작성)
     const sparseCheckoutPath = join(targetPath, '.git', 'info', 'sparse-checkout')
@@ -505,13 +571,13 @@ async function cloneWithFallback(
   latestRef: { type: 'tag' | 'branch', name: string }
 ): Promise<void> {
   if (latestRef.type === 'branch') {
-    await execAsync(`git clone --filter=blob:none --depth=1 --single-branch --branch "${latestRef.name}" --no-checkout "${config.url}" "${targetPath}"`)
+    await execFileAsync('git', ['clone', '--filter=blob:none', '--depth=1', '--single-branch', '--branch', latestRef.name, '--no-checkout', config.url, targetPath])
     return
   }
 
   try {
     // 태그가 있는 경우, 해당 태그를 기준으로 shallow clone
-    await execAsync(`git clone --filter=blob:none --depth=1 --branch "${latestRef.name}" --no-checkout "${config.url}" "${targetPath}"`)
+    await execFileAsync('git', ['clone', '--filter=blob:none', '--depth=1', '--branch', latestRef.name, '--no-checkout', config.url, targetPath])
   } catch (error) {
     if (!isRemoteRefNotFoundError(error)) {
       throw error
@@ -519,7 +585,7 @@ async function cloneWithFallback(
 
     log.warn(`[${config.path}] 태그(${latestRef.name})를 찾을 수 없어 기본 브랜치로 폴백합니다`)
     await rm(targetPath, { recursive: true, force: true })
-    await execAsync(`git clone --filter=blob:none --depth=1 --no-checkout "${config.url}" "${targetPath}"`)
+    await execFileAsync('git', ['clone', '--filter=blob:none', '--depth=1', '--no-checkout', config.url, targetPath])
   }
 }
 
@@ -554,10 +620,13 @@ export async function isShallowRepository(repositoryPath: string): Promise<boole
 async function updateExistingRepository(repositoryPath: string, config: UpstreamConfig): Promise<void> {
   try {
     // Git 상태 확인
-    const { stdout: status } = await execAsync('git status --porcelain', { cwd: repositoryPath })
+    const { stdout: status } = await execFileAsync('git', ['status', '--porcelain'], { cwd: repositoryPath })
     
     if (status.trim()) {
-      log.warn(`[${config.path}] 로컬 변경사항이 있어 업데이트를 건너뜁니다`)
+      log.warn(`[${config.path}] 로컬 변경사항이 있어 upstream 저장소를 재클론합니다`)
+      // upstream은 캐시 성격의 읽기 전용 데이터이므로, 더 안전하게 전체 재클론합니다
+      await rm(repositoryPath, { recursive: true, force: true })
+      await cloneOptimizedRepository(repositoryPath, config)
       return
     }
     
@@ -573,19 +642,32 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     let currentType: 'tag' | 'branch'
     try {
       // 먼저 태그인지 확인
-      const { stdout } = await execAsync('git describe --tags --exact-match', { cwd: repositoryPath })
+      const { stdout } = await execFileAsync('git', ['describe', '--tags', '--exact-match'], { cwd: repositoryPath })
       current = stdout.trim()
       currentType = 'tag'
     } catch {
       // 태그가 아니면 브랜치 이름 가져오기
-      const { stdout } = await execAsync('git rev-parse --abbrev-ref HEAD', { cwd: repositoryPath })
+      const { stdout } = await execFileAsync('git', ['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: repositoryPath })
       current = stdout.trim()
       currentType = 'branch'
     }
     
     if (current === latestRef.name && currentType === latestRef.type) {
-      log.info(`[${config.path}] 이미 최신 버전입니다 (${latestRef.type}: ${latestRef.name})`)
-      return
+      const remoteCommitHash = await getRemoteRefCommitHash(config.url, latestRef)
+
+      if (remoteCommitHash) {
+        const { stdout: localCommitHashOutput } = await execFileAsync('git', ['rev-parse', 'HEAD'], { cwd: repositoryPath })
+        const localCommitHash = localCommitHashOutput.trim()
+
+        if (localCommitHash === remoteCommitHash) {
+          log.info(`[${config.path}] 이미 최신 버전입니다 (${latestRef.type}: ${latestRef.name})`)
+          return
+        }
+
+        log.info(`[${config.path}] 동일한 참조명이지만 커밋이 변경되어 업데이트를 진행합니다 (${localCommitHash.slice(0, 7)} -> ${remoteCommitHash.slice(0, 7)})`)
+      } else {
+        log.info(`[${config.path}] 원격 커밋 해시 확인에 실패하여 보수적으로 업데이트를 진행합니다 (${latestRef.type}: ${latestRef.name})`)
+      }
     }
     
     // 원격 변경사항 가져오기
@@ -595,7 +677,7 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
       if (latestRef.type === 'tag') {
         // shallow clone에서 특정 태그로 업데이트하려면 해당 태그를 fetch
         try {
-          await execAsync(`git fetch --depth=1 origin tag "${latestRef.name}"`, { cwd: repositoryPath })
+          await execFileAsync('git', ['fetch', '--depth=1', 'origin', 'tag', latestRef.name], { cwd: repositoryPath })
         } catch (error) {
           if (!isRemoteRefNotFoundError(error)) {
             throw error
@@ -604,29 +686,28 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
           // 태그가 사라진 경우 기본 브랜치로 폴백하여 이후 업데이트도 안정적으로 유지
           const defaultBranchRef = await getDefaultBranch(config.url, config.path)
           log.warn(`[${config.path}] 태그(${latestRef.name}) fetch 실패로 기본 브랜치(${defaultBranchRef.name})로 폴백합니다`)
-          await execAsync(`git fetch --depth=1 origin "${defaultBranchRef.name}"`, { cwd: repositoryPath })
+          await execFileAsync('git', ['fetch', '--depth=1', 'origin', defaultBranchRef.name], { cwd: repositoryPath })
           updateRef = defaultBranchRef
         }
       } else {
         // 브랜치의 경우 기존 방식대로
-        await execAsync(`git fetch --depth=1 origin "${latestRef.name}"`, { cwd: repositoryPath })
+        await execFileAsync('git', ['fetch', '--depth=1', 'origin', latestRef.name], { cwd: repositoryPath })
       }
     } else {
       // 일반 clone의 경우 모든 변경사항 가져오기
-      await execAsync('git fetch --tags', { cwd: repositoryPath })
+      await execFileAsync('git', ['fetch', '--tags'], { cwd: repositoryPath })
     }
     
     // 최신 버전으로 체크아웃
     log.start(`[${config.path}] ${updateRef.type} ${updateRef.name}(으)로 업데이트 중...`)
-    await execAsync(`git checkout "${updateRef.name}"`, { cwd: repositoryPath })
+    await execFileAsync('git', ['checkout', updateRef.name], { cwd: repositoryPath })
     
     if (updateRef.type === 'branch') {
       // 브랜치의 경우 원격 상태로 강제 리셋 (브랜치는 변경 가능하므로)
       // 태그는 불변이므로 checkout만으로 충분함
       // upstream 리포지토리는 읽기 전용이므로 로컬 변경사항은 무시하고 원격 상태로 리셋
-      await execAsync(`git reset --hard "origin/${updateRef.name}"`, { cwd: repositoryPath })
+      await execFileAsync('git', ['reset', '--hard', `origin/${updateRef.name}`], { cwd: repositoryPath })
     }
-    
     log.success(`[${config.path}] 업데이트 완료 (${updateRef.type}: ${updateRef.name})`)
     
   } catch (error) {
@@ -646,7 +727,7 @@ export async function checkoutLatestVersionForShallowClone(repositoryPath: strin
     // 현재 브랜치(HEAD)를 체크아웃하면 됩니다
     // git sparse-checkout reapply는 --no-checkout 이후 파일을 체크아웃하지 않으므로
     // git checkout HEAD를 사용하여 sparse-checkout 패턴에 맞는 파일을 실제로 체크아웃합니다
-    await execAsync('git checkout HEAD', { cwd: repositoryPath })
+    await execFileAsync('git', ['checkout', 'HEAD'], { cwd: repositoryPath })
     log.info(`[${configPath}] 최신 버전 체크아웃 완료`)
   } catch (error) {
     log.error(`[${configPath}] 체크아웃 실패:`, error)

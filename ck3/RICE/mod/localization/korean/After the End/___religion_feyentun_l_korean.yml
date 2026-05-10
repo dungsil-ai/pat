@@ -1,0 +1,69 @@
+﻿l_korean:
+  mapuche_religion: "페옌툰" # 5072561093833343431
+  mapuche_religion_adj: "페옌툰" # 5072561093833343431
+  mapuche_religion_adherent: "페옌툰 추종자" # 74015066168817097
+  mapuche_religion_adherent_plural: "페옌툰 추종자" # 74015066168817097
+  mapuche_religion_desc: "마푸체와 마푸둥군을 사용하는 원주민들의 전통 신앙인 페옌툰, 즉 '믿음'은 좋은 삶을 유지하기 위해 자연의 순환 속에서 물질 세계와 평화롭게 공존하는 것을 지향하는 세계관을 특징으로 합니다. 세상을 다스리는 신성한 영혼인 응엔을 숭배하고 존중함으로써 번영을 얻을 수 있습니다." # 6573767857412441163
+  mapuche_high_god_name: "응게네첸" # 11387740172948417721
+  mapuche_high_god_name_possessive: "응에네첸의" # 17993977917791134377
+  mapuche_high_god_shehe: "그" # 5046774935762787478
+  mapuche_high_god_herselfhimself: "그 자신" # 18397406289215749573
+  mapuche_high_god_herhis: "그의" # 8263228204743400007
+  mapuche_high_god_name_alternate: "응위네첸" # 15506788902161788275
+  mapuche_high_god_name_alternate_possessive: "응위네첸의" # 2512926650066065412
+  mapuche_pantheon: "필란" # 7059032187077228683
+  mapuche_devil_name: "웨쿠페" # 6288695980259097667
+  mapuche_devil_name_possessive: "웨쿠페의" # 10188614614093992762
+  mapuche_devil_shehe: "그들" # 2328972438248726795
+  mapuche_devil_herselfhimself: "그들 자신" # 6200625214287285499
+  mapuche_house_of_worship: "응윌라투웨" # 9415987345185135198
+  mapuche_house_of_worship_plural: "응윌라투웨들" # 14693415473861934307
+  mapuche_religious_symbol: "포예" # 2347106178801917001
+  mapuche_religious_text: "아드 마푸" # 12496899518443153122
+  mapuche_religious_head_title: "토키" # 13991674098978336740
+  mapuche_religious_head_title_name: "토키" # 13991674098978336740
+  mapuche_devotee: "주구마치페" # 12633244888480794328
+  mapuche_devotee_plural: "주구마치페들" # 3269766823070005923
+  mapuche_priest: "마치" # 5231063613269862821
+  mapuche_priest_plural: "마치들" # 13607943142099435337
+  mapuche_priest_term_plural: "마치들" # 13607943142099435337
+  mapuche_bishop: "부탈 마치" # 13701012194168740340
+  mapuche_bishop_plural: "부탈 마치들" # 10805755777813556100
+  mapuche_divine_realm: "웨누 마푸" # 7530086414806650951
+  mapuche_positive_afterlife: "웨누 마푸" # 7530086414806650951
+  mapuche_negative_afterlife: "민체 마푸" # 6275754113006609872
+  mapuche_death_name: "알웨" # 2342322430810633938
+  mapuche_death_name_possessive: "알웨의" # 6397997530248032130
+  witchgodname_mapuche: "웨쿠페" # 6288695980259097667
+  mapuche_creator_god_name: "푸-암" # 2910092681861776815
+  mapuche_creator_god_name_possessive: "푸-암의" # 6497638452021816264
+  mapuche_health_god_name: "응게네첸" # 11387740172948417721
+  mapuche_health_god_name_possessive: "응에네첸의" # 17993977917791134377
+  mapuche_fertility_god_name: "쿠옌" # 8907636766242703665
+  mapuche_fertility_god_name_possessive: "쿠옌의" # 6665177862986455294
+  mapuche_wealth_god_name: "응게네첸" # 11387740172948417721
+  mapuche_wealth_god_name_possessive: "응에네첸의" # 17993977917791134377
+  mapuche_household_god_name: "응게네첸" # 11387740172948417721
+  mapuche_household_god_name_possessive: "응에네첸의" # 17993977917791134377
+  mapuche_fate_god_name: "푸암" # 1546334371647020785
+  mapuche_fate_god_name_possessive: "푸-암의" # 6497638452021816264
+  mapuche_knowledge_god_name: "안투" # 9490346056774220805
+  mapuche_knowledge_god_name_possessive: "안투의" # 7303610724870044085
+  mapuche_war_god_name: "에푸나무" # 3380498796687715515
+  mapuche_war_god_name_possessive: "에푸나무의" # 12565916536809487206
+  mapuche_trickster_god_name: "라프트라체" # 15429342133130147418
+  mapuche_trickster_god_name_possessive: "라프트라체의" # 2589134467709055086
+  mapuche_night_god_name: "쿠옌" # 8907636766242703665
+  mapuche_night_god_name_possessive: "쿠옌의" # 6665177862986455294
+  mapuche_water_god_name: "카이 카이 필루" # 9327423298838111640
+  mapuche_water_god_name_possessive: "카이 카이 필루의" # 4215831453357815525
+  masters: "주인들" # 9499547292057705133
+  fathers: "아버지들" # 1290284041171027026
+  mapuche_calcus: "칼쿠" # 3025350843541714866
+  mapuche_chonchon: "촌촌" # 9215313168745321655
+  mapuche_piulchen: "피위첸" # 18035287870076134550
+  nguillatun: "응기야툰" # 11187678490749466594
+  nguillatun_adj: "응길라툰" # 11187678490749466594
+  nguillatun_adherent: "응기야툰 신도" # 11204906276104688009
+  nguillatun_adherent_plural: "응기야툰 신도들" # 3145280837044957947
+  nguillatun_desc: "마푸체 민족의 전통 신앙으로, 신도들은 세상이 형성되기 전부터 응겐, 필란, 왕굴렌이라 불리는 다양한 원초적 영혼들이 우주적 영혼인 푸암으로부터 나타나 그들의 갈등과 이야기를 통해 모든 창조물의 형태를 빚어냈다고 믿습니다. 이제 영혼들은 휴식 중이지만 여전히 세상에 영향을 미치고 있으며, 인류의 지배 영혼인 응게네첸은 응기야툰, 즉 '탄원' 의식에서 제물을 바쳐 자신을 만족시킨 자들에게 축복을 내리고, 합당한 제물을 바치지 못한 자들을 벌합니다. 응기야툰 신도들은 주로 여성으로 구성된 마치에 의해 인도받는데, 마치는 응기야툰과 마치툰 의식을 주관하고 조언을 제공하는 지혜로운 영적 지도자들입니다." # 7136339579288931284

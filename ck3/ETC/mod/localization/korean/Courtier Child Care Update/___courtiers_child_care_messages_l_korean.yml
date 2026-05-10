@@ -1,0 +1,9 @@
+﻿l_korean:
+  ccc_msg_courtiers_child_can_assign_guardian: "후견인을 지정할 수 있습니다" # 14435020003618986088
+  ccc_msg_courtiers_child_can_assign_guardian_tooltip: "[GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_child'))] [ccc_child.GetName]의 [guardian|E]을(를) 지정할 수 있습니다" # 6811389463980632282
+  ccc_msg_courtiers_child_birth: "아이의 탄생" # 9947582364639512298
+  ccc_msg_courtiers_child_birth_tooltip: "[GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_mother'))] [ccc_mother.GetName]께서 [ccc_newborn.GetName](이)라는 [ccc_newborn.Custom('GirlBoy')]을(를) 출산하셨습니다" # 8203617782082135028
+  ccc_msg_courtiers_child_birth_2: "쌍둥이의 탄생" # 8883027504844972588
+  ccc_msg_courtiers_child_birth_2_tooltip: "[GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_mother'))] [ccc_mother.GetName]께서 [ccc_newborn.GetName](이)라는 [ccc_newborn.Custom('GirlBoy')]와 [ccc_newborn_2.GetName](이)라는 [ccc_newborn_2.Custom('GirlBoy')]을(를) 출산하셨습니다." # 14117276692222991928
+  ccc_msg_courtiers_child_can_be_betrothed: "아이가 성장했습니다" # 2223742502131681529
+  ccc_msg_courtiers_child_can_be_betrothed_tooltip: "[GetPlayer.Custom2('RelationToMe',SCOPE.sC('ccc_child'))] [ccc_child.GetName]께서 성인이 되셨으나, 아직 [ccc_child.GetSheHe]와 혼인을 약속한 상대가 없습니다." # 5330963339343228763

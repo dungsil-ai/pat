@@ -581,3 +581,4 @@
   advcm_red_color_test: "#R" # 1935906316867708778
   advcm_yellow_color_test: "#P" # 4128464296507220592
   advcm_blue_color_test: "#charioteer_blue" # 1135972512442653274
+  advcm_empty_text: "" # 17241709254077376921

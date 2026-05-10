@@ -254,6 +254,13 @@ describe('isRegularTranslationContext', () => {
     expect(isRegularTranslationContext('CULTURE_EVENT')).toBe(true)
   })
 
+
+  it('점(.) 구분자로 끝나는 desc/event/decision 키도 일반 번역 컨텍스트여야 함', () => {
+    expect(isRegularTranslationContext('red_sea.0050.desc')).toBe(true)
+    expect(isRegularTranslationContext('rice_event.0001.event')).toBe(true)
+    expect(isRegularTranslationContext('my_mod.1234.decision')).toBe(true)
+  })
+
   it('일반 키는 일반 번역 컨텍스트가 아니어야 함', () => {
     expect(isRegularTranslationContext('modifier')).toBe(false)
     expect(isRegularTranslationContext('dynasty_name')).toBe(false)
