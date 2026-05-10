@@ -21,10 +21,14 @@
   trait_giga_gas_giant_hab_robot_tooltip: "$trait_giga_gas_giant_hab_tooltip$" # 4357530591498526918
   giga_gas_giant_hab_colony_tt: "가스 행성 이륙 종족에게 ['concept_giga_gas_worlds', §YGas§!] 세계로 간주됩니다." # 17472794425495255052
   giga_gas_giant_hab_colony: "침수된 대기" # 7697690454623066663
+  giga_gas_giant_hab_colony_desc: "" # 17241709254077376921
   decision_giga_flood_atmosphere: "행성 대기 침수" # 16292071242265643853
+  decision_giga_flood_atmosphere_desc: "" # 17241709254077376921
   d_giga_gas_giant_hab_core: "풍부한 행성핵" # 17158542420546749779
+  d_giga_gas_giant_hab_core_desc: "" # 17241709254077376921
   district_giga_gas_giant_habitat_mining: "핵심 채굴 시설" # 9388814964802160379
   district_giga_gas_giant_habitat_mining_plural: "핵심 채굴 시설" # 4720086247085320608
+  district_giga_gas_giant_habitat_mining_desc: "" # 17241709254077376921
   giga_gas_giant_hab: "거주 가능한 가스 행성" # 2820589743253118771
   giga_gas_giant_hab_desc: "풍부한 이종 기체는 쉬운 채취를 의미하지만, 행성 핵 채굴 작업에는 더 가혹한 노동 환경을 야기합니다." # 10095180970651682292
   mod_district_giga_gas_giant_habitat_mining_max: "최대 $district_giga_gas_giant_habitat_mining_plural$" # 2026063851324381767
@@ -44,7 +48,3 @@
   mod_job_giga_gas_extraction_manager_drone_add: "[giga_gas_extraction_manager_drone.GetName] 직업" # 17373353007344086774
   mod_job_giga_gas_extraction_manager_drone_per_pop: "팝 $VALUE$당 [giga_gas_extraction_manager_drone.GetName] 직업 §G+1§!개" # 5424995262796628948
   mod_job_giga_gas_extraction_manager_drone_per_pop_short: "\n£pop£ $VALUE$당 £mod_job_giga_gas_extraction_manager_add£ §G+1§!개" # 6931285889712660333
-  giga_gas_giant_hab_colony_desc: "" # 17241709254077376921
-  decision_giga_flood_atmosphere_desc: "" # 17241709254077376921
-  d_giga_gas_giant_hab_core_desc: "" # 17241709254077376921
-  district_giga_gas_giant_habitat_mining_desc: "" # 17241709254077376921

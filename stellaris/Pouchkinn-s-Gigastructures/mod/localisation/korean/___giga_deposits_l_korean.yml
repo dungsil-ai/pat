@@ -82,7 +82,9 @@
   d_alderson_ruined_foundry_machine_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
   d_alderson_ruined_foundry_machine_cleared: "조립공 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_foundry_machine$§! 방해물을 철거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 17443210029638375122
   d_giga_supertensiles_1: "£giga_sr_amb_megaconstruction£ +1" # 6256544470360146816
+  d_giga_supertensiles_1_desc: "" # 17241709254077376921
   d_giga_supertensiles_2: "£giga_sr_amb_megaconstruction£ +2" # 2960695998966619595
+  d_giga_supertensiles_2_desc: "" # 17241709254077376921
   d_iodizium_deposit: "£giga_sr_iodizium£ +3" # 9503378252766760219
   d_iodizium_deposit_1: "£giga_sr_iodizium£ +1" # 14634693042489050073
   d_nicoll_deposit: "£minerals£ +10" # 14750764525639193362
@@ -95,6 +97,18 @@
   d_giga_hab_consumer_goods_1: "£소비재£ +1" # 6739737851143410976
   d_giga_hab_astral_threads_1: "£astral_threads£ +1" # 7126309452655601210
   d_subsurface_ocean_deposit_1: "£food£ +4 £society£ +4" # 1798152293559788995
+  d_iodizium_deposit_desc: "" # 17241709254077376921
+  d_iodizium_deposit_1_desc: "" # 17241709254077376921
+  d_nicoll_deposit_desc: "" # 17241709254077376921
+  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
+  d_nicollboom_deposit_desc: "" # 17241709254077376921
+  d_pouchkinn_deposit_desc: "" # 17241709254077376921
+  d_ringworld_deposit_desc: "" # 17241709254077376921
+  d_succ_deposit_desc: "" # 17241709254077376921
+  d_giga_hab_nanites_1_desc: "" # 17241709254077376921
+  d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
+  d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
+  d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
   d_giga_lifeless_zro_1: "즈로 매장지" # 1172331962632974906
   d_giga_lifeless_zro_1_desc: "이 세계에는 활용 가능한 즈로 먼지 공급원이 있습니다." # 12725077008717704212
   d_giga_lifeless_dark_matter_1: "암흑 물질 매장지" # 18211813698194922337
@@ -138,6 +152,7 @@
   d_giga_decrepit_tunnels_3: "$d_decrepit_tunnels_1$" # 12877338230707769144
   d_giga_decrepit_tunnels_3_desc: "$d_decrepit_tunnels_1_desc$" # 10324853476423657564
   d_ehof_solar_array: "온전한 태양광 집열기" # 10601974592114288460
+  d_ehof_solar_array_desc: "" # 17241709254077376921
   d_flusio_arcology_wreck: "파괴된 메가시티" # 17849748477716044745
   d_flusio_arcology_wreck_desc: "플루시오-아콜로지에서 발생한 전투로 부분적 또는 완전히 파괴된 도시들." # 500460360055046615
   d_flusio_arcology_anarchy: "플루시온 무정부 상태" # 16646561948448807195
@@ -163,18 +178,3 @@
   d_exp_civ_fe_preserve_desc: "온전한 고대 선구 문명이 자작나무 세계의 일부에 거주합니다. 그들을 연구하는 것은 엄청난 과학적 잠재력을 지닙니다." # 2183043218304498346
   d_aeternum_decaying_hyperstructure: "붕괴하는 초구조물" # 842122835258246876
   d_aeternum_decaying_hyperstructure_desc: "이 버치 행성의 광대한 지역이 수천 년간의 방치 끝에 황폐해졌습니다. 그것들을 수리하는 것은 의심할 여지 없이 엄청난 사업이 되겠지만, 이는 우리가 이 버치 행성의 거주 가능 구역을 다시 확장할 수 있게 해줄 것입니다.\n\n이를 복구하면 §G3§! $aeternum_tech_intel$을 얻게 될 것입니다." # 12035577896565250418
-  d_giga_supertensiles_1_desc: "" # 17241709254077376921
-  d_giga_supertensiles_2_desc: "" # 17241709254077376921
-  d_iodizium_deposit_desc: "" # 17241709254077376921
-  d_iodizium_deposit_1_desc: "" # 17241709254077376921
-  d_nicoll_deposit_desc: "" # 17241709254077376921
-  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
-  d_nicollboom_deposit_desc: "" # 17241709254077376921
-  d_pouchkinn_deposit_desc: "" # 17241709254077376921
-  d_ringworld_deposit_desc: "" # 17241709254077376921
-  d_succ_deposit_desc: "" # 17241709254077376921
-  d_giga_hab_nanites_1_desc: "" # 17241709254077376921
-  d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
-  d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
-  d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
-  d_ehof_solar_array_desc: "" # 17241709254077376921
