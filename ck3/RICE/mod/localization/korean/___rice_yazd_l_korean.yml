@@ -42,6 +42,7 @@
   activity_RICE_yazd_sadeh_festival_selection_tooltip: "당신의 [capital|E]에서 성대한 사데 축제를 개최하십시오.\n\n$RICE_yazd_celebrate_sadeh_festival_context_tooltip$" # 12822938769232069502
   activity_RICE_yazd_sadeh_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i] [prestige|E]\n$BULLET_WITH_TAB$ [piety_i] [piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E] [stress|E] 상실\n$BULLET_WITH_TAB$ [GetModifier('RICE_yazd_recently_celebrated_sadeh').GetNameWithTooltip] [character_modifier|E]" # 11775482620567531522
   activity_RICE_yazd_sadeh_festival_guest_desc: "$activity_RICE_yazd_sadeh_festival_host_desc$" # 6317762965555141879
+  activity_RICE_yazd_sadeh_festival_province_desc: "" # 17241709254077376921
   activity_RICE_yazd_sadeh_festival_destination_selection: "$activity_RICE_yazd_sadeh_festival_province_desc$" # 6551477378818383633
   activity_RICE_yazd_sadeh_festival_guest_help_text: "$activity_RICE_yazd_sadeh_festival$" # 3167421843418348131
   activity_RICE_yazd_sadeh_festival_predicted_cost: "온천 방문 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 12785446540824020910
@@ -579,4 +580,3 @@
   yazd.0099.t: "xxxxx" # 1951045980481827005
   yazd.0099.desc: "xxxxx" # 1951045980481827005
   yazd.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_yazd_sadeh_festival_province_desc: "" # 17241709254077376921

@@ -898,6 +898,7 @@
   activity_RICE_nubia_sibir_festival_context_tooltip: "#emphasis 역사적 배경:#! 누바 산맥의 다양한 민족들은 한 해의 여러 시기를 기념하는 #italic 시비르#!라는 정기적인 축제를 열곤 했습니다. 예를 들어, 가장 중요한 시비르 중 하나인 불의 시비르는 보통 경작기가 끝난 후에 열렸습니다. 각 민족은 자신만의 시비르 달력을 가지고 있었습니다." # 13905597794712628422
   activity_RICE_nubia_sibir_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$#P 긍정적인# [character_modifiers|E] 또는 [county_modifiers|E] 획득 기회\n$BULLET_WITH_TAB$높은 [prowess_i|E] [prowess|E]를 지닌 [courtiers|E] 획득 기회" # 13885076802115861243
   activity_RICE_nubia_sibir_festival_guest_desc: "$activity_RICE_nubia_sibir_festival_host_desc$" # 16671206358108848394
+  activity_RICE_nubia_sibir_festival_province_desc: "" # 17241709254077376921
   activity_RICE_nubia_sibir_festival_destination_selection: "$activity_RICE_nubia_sibir_festival_province_desc$" # 17635222657274281258
   activity_RICE_nubia_sibir_festival_guest_help_text: "$activity_RICE_nubia_sibir_festival$" # 11916152971057890750
   activity_RICE_nubia_sibir_festival_predicted_cost: "이 [activity|E]의 비용은 귀하가 선택하는 [activity_options|E]에 따라 달라집니다." # 658366464949161382
@@ -934,6 +935,7 @@
   activity_RICE_nubia_nilotic_bovine_sacrifice_context_tooltip: "#emphasis 역사적 배경:#! 딩카족과 마사이족 같은 나일어족을 포함한 동아프리카의 여러 민족들 사이에서 소는 지위와 부의 상징이었습니다. 따라서 소를 희생하는 행위의 빈도는 민족마다 달랐을 수 있지만, 소는 누군가가 바칠 수 있는 가장 귀중한 것 중 하나였기에 이는 통상적으로 중요한 일이었습니다." # 15845080601769725888
   activity_RICE_nubia_nilotic_bovine_sacrifice_host_desc: "$BULLET_WITH_TAB$귀하의 [intent|E]에 따라 #V 25#!에서 #V 200#! 사이의 무작위 [prestige_i|E] [prestige|E]와 [piety_i|E] [piety|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 감소\n$BULLET_WITH_TAB$귀하의 [skills|E], [piety_level|E], [prestige_level|E], 그리고 [legitimacy|E]에 따라 #P positive#! [character_modifier|E]를 얻을 기회" # 17201332856226560703
   activity_RICE_nubia_nilotic_bovine_sacrifice_guest_desc: "$activity_RICE_nubia_nilotic_bovine_sacrifice_host_desc$" # 6588332236148980204
+  activity_RICE_nubia_nilotic_bovine_sacrifice_province_desc: "" # 17241709254077376921
   activity_RICE_nubia_nilotic_bovine_sacrifice_destination_selection: "$activity_RICE_nubia_nilotic_bovine_sacrifice_province_desc$" # 8889169534050271632
   activity_RICE_nubia_nilotic_bovine_sacrifice_guest_help_text: "$activity_RICE_nubia_nilotic_bovine_sacrifice$" # 46177648640760777
   activity_RICE_nubia_nilotic_bovine_sacrifice_predicted_cost: "이 희생의 비용은 귀하의 [income|E]에 따라 결정됩니다." # 6596928120023183400
@@ -2684,5 +2686,3 @@
   nubia.0299.t: "xxxxx" # 1951045980481827005
   nubia.0299.desc: "xxxxx" # 1951045980481827005
   nubia.0299.a: "xxxxx" # 1951045980481827005
-  activity_RICE_nubia_sibir_festival_province_desc: "" # 17241709254077376921
-  activity_RICE_nubia_nilotic_bovine_sacrifice_province_desc: "" # 17241709254077376921

@@ -55,6 +55,7 @@
   activity_RICE_south_ethiopia_cattle_counting_ceremony_context_tooltip: "#emphasis 역사적 배경:#! 전 세계의 여러 문화권과 마찬가지로, 웰라이타족은 소를 매우 중요하게 여깁니다. 이는 웰라이타 남성들이 공동체 내에서 자신을 과시하고 위신을 얻는 중요한 방식인 소 세기 의식에 반영되어 있습니다. 주요 의식으로는 최소 백 마리의 소를 세는 #italic 달라#!와 이어서 최소 천 마리의 소를 세는 #italic 리카#!가 있습니다. 이 의식들은 #italic 달라#! 또는 #italic 리카#! 후보자의 아내나 어머니를 기리기 위해 열리는 #italic 기무와#! 의식과도 관련이 있습니다." # 2970435989145158770
   activity_RICE_south_ethiopia_cattle_counting_ceremony_host_desc: "$BULLET_WITH_TAB$ [GetTrait('RICE_cattle_owner_1').GetName( GetNullCharacter )] [trait|E] 획득 또는 업그레이드\n$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [dynasty_prestige_i|E][dynasty_prestige|E]\n$BULLET_WITH_TAB$선택된 반대 성별의 [spouse|E] 또는 [close_family|E] 구성원이 [GetTrait('RICE_cattle_owner_spouse').GetName( GetNullCharacter )] [trait|E]를 획득할 수 있습니다" # 9459867351955449870
   activity_RICE_south_ethiopia_cattle_counting_ceremony_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 942770327808202261
+  activity_RICE_south_ethiopia_cattle_counting_ceremony_province_desc: "" # 17241709254077376921
   activity_RICE_south_ethiopia_cattle_counting_ceremony_destination_selection: "$activity_RICE_south_ethiopia_cattle_counting_ceremony_province_desc$" # 8695632877228612343
   activity_RICE_south_ethiopia_cattle_counting_ceremony_guest_help_text: "$activity_RICE_south_ethiopia_cattle_counting_ceremony$" # 165231748049296598
   activity_RICE_south_ethiopia_cattle_counting_ceremony_predicted_cost: "이 [activity|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 658366464949161382
@@ -113,6 +114,7 @@
   activity_RICE_south_ethiopia_gifaataa_festival_context_tooltip: "#emphasis 역사적 배경:#! 웰라이타의 새해는 기파타(Gifaataa)로 알려져 있습니다. 현대에 이르러서는 보다 세속적이고 문화적인 축제입니다. 이 행사의 중요한 측면은 화해입니다. 이 시기는 사람들이 서로의 앙금을 묻고 갈등을 접어두는 때입니다." # 1976616083096645955
   activity_RICE_south_ethiopia_gifaataa_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [GetModifier('RICE_south_ethiopia_gifaataa_festival_modifier').GetNameWithTooltip] [character_modifier|E]" # 18160410066796830740
   activity_RICE_south_ethiopia_gifaataa_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실" # 5012295731351457530
+  activity_RICE_south_ethiopia_gifaataa_festival_province_desc: "" # 17241709254077376921
   activity_RICE_south_ethiopia_gifaataa_festival_destination_selection: "$activity_RICE_south_ethiopia_gifaataa_festival_province_desc$" # 3825253483660817800
   activity_RICE_south_ethiopia_gifaataa_festival_guest_help_text: "$activity_RICE_south_ethiopia_gifaataa_festival$" # 14174511710402590873
   activity_RICE_south_ethiopia_gifaataa_festival_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -139,6 +141,7 @@
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_context_tooltip: "#emphasis 역사적 배경:#! 시다마족의 새해는 피체-참발랄라 축제라고 불립니다. 그 날짜는 시다마족의 전통적인 천문학자인 아얀토(Ayyaanto)에 의해 결정됩니다. 전설에 따르면, 이 축제는 결혼 후 부모님과 이웃들을 기리기 위해 잔치를 준비하여 매년 방문했던 피초(Ficho)라는 여성으로부터 유래했습니다. 그녀가 사망한 후, 이웃들은 새해 전날을 그녀의 이름을 따서 피체(Fichee)라고 불렀습니다." # 14435411679116424703
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [GetModifier('RICE_south_ethiopia_fichee_chambalaalla_festival_modifier').GetNameWithTooltip] [character_modifier|E] 획득\n$BULLET_WITH_TAB$ 공동체 지도자로서의 조언이 호응을 얻을 경우 #P 긍정적#! [character_modifier|E]를 얻을 확률" # 4914688406099001885
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실" # 5012295731351457530
+  activity_RICE_south_ethiopia_fichee_chambalaalla_festival_province_desc: "" # 17241709254077376921
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_destination_selection: "$activity_RICE_south_ethiopia_fichee_chambalaalla_festival_province_desc$" # 8674878790624134796
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_guest_help_text: "$activity_RICE_south_ethiopia_fichee_chambalaalla_festival$" # 16036599161811768470
   activity_RICE_south_ethiopia_fichee_chambalaalla_festival_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -216,6 +219,7 @@
   RICE_south_ethiopia_sidama_groves_decision_tooltip: "신성한 성림은 우리의 신성한 유산입니다" # 11539839653008309251
   RICE_south_ethiopia_sidama_groves_decision_desc: "[ROOT.Char.GetCulture.GetName] 문화권에서는 신성한 숲이 부모에게서 자식에게로 세습되며, 씨족 전체가 정치적, 사회적, 종교적 필요를 위해 그러한 거대한 숲을 유지합니다. 저 [ROOT.Char.GetDynasty.GetName] 씨족의 일원으로서, 제가 물려받은 신성한 숲을 유지하는 데 제 몫을 다해야 할 것입니다." # 15584434685857070394
   RICE_south_ethiopia_sidama_groves_decision_effect_tooltip_1: "귀하는 #V 10#년 동안 [piety_i|E] [piety|E], [dynasty_prestige_i|E] [dynasty_prestige|E], 그리고 [character_modifier|E]를 받게 되며, 그 양과 보너스는 귀하가 유지하기로 결정하는 성소에 따라 달라집니다." # 8179068506430805785
+  RICE_south_ethiopia_sidama_groves_decision_effect_tooltip_2: "" # 17241709254077376921
   RICE_south_ethiopia_sidama_groves_decision_confirm: "신성한 나무들을 기리자!" # 3528389563459045333
   RICE_south_ethiopia_sidama_groves_decision_context_tooltip: "#emphasis 역사적 배경:#! 시다마인들은 전통적으로 종교에 관계없이 신성한 나무나 숲을 보존하고 숭배해 왔습니다. 이 나무나 숲은 종종 부모로부터 자식에게 소유권이 상속되므로, 이 나무들을 보존하는 것은 중요한 책임으로 여겨집니다. 이는 단순히 종교적인 문제일 뿐만 아니라, 말하자면 자신의 지위와 명예를\"유지하\" 문제이기도 합니다. 예를 들어, 크고 중요한 나무를 보존하는 사람들은 공동체 내에서\"유력\"로 간주됩니다." # 4842807784357302558
   RICE_south_ethiopia_sidama_groves_decision_type: "어떤 종류의 숲을 유지할지 선택하십시오" # 16327429038388706752
@@ -591,7 +595,3 @@
   south_ethiopia.0099.t: "xxxxx" # 1951045980481827005
   south_ethiopia.0099.desc: "xxxxx" # 1951045980481827005
   south_ethiopia.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_south_ethiopia_cattle_counting_ceremony_province_desc: "" # 17241709254077376921
-  activity_RICE_south_ethiopia_gifaataa_festival_province_desc: "" # 17241709254077376921
-  activity_RICE_south_ethiopia_fichee_chambalaalla_festival_province_desc: "" # 17241709254077376921
-  RICE_south_ethiopia_sidama_groves_decision_effect_tooltip_2: "" # 17241709254077376921

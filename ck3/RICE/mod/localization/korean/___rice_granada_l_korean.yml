@@ -79,6 +79,7 @@
   activity_RICE_granada_munya_vacation_private_selection_tooltip: "홀로 [munya|E]로 휴가를 떠나십시오.\n\n$RICE_granada_alhambra_munya_estate_context_tooltip$" # 5079694410945427165
   activity_RICE_granada_munya_vacation_private_host_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E] [stress|E]를 잃습니다 (단체 휴가에 비해 훨씬 많은 것을 잃게 됩니다)\n$BULLET_WITH_TAB$ #P 유익한#! [character_modifiers|E]와 같은 다른 이점들" # 8779059380251215999
   activity_RICE_granada_munya_vacation_private_guest_desc: "$activity_RICE_granada_munya_vacation_private_host_desc$" # 3951750350366445773
+  activity_RICE_granada_munya_vacation_private_province_desc: "" # 17241709254077376921
   activity_RICE_granada_munya_vacation_countryside_province_desc: "\n#P ++ 귀하는 주요 [holdings|E]가 없는 한적한 시골 지역에 [munya|E]를 소유하고 있습니다.#!\n\n#italic 이로 인해 다른 잠재적 장소보다 추가적인 [stress_loss_i|E] [stress|E]를 잃게 될 것입니다.#!" # 2445110458830827279
   activity_RICE_granada_munya_vacation_private_destination_selection: "$activity_RICE_granada_munya_vacation_private_province_desc$" # 2868738003015609573
   activity_RICE_granada_munya_vacation_private_guest_help_text: "$activity_RICE_granada_munya_vacation_private$" # 5289407443827233080
@@ -732,4 +733,3 @@
   granada.0099.t: "xxxxx" # 1951045980481827005
   granada.0099.desc: "xxxxx" # 1951045980481827005
   granada.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_granada_munya_vacation_private_province_desc: "" # 17241709254077376921

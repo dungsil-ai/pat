@@ -2,10 +2,16 @@
   great_project_type_athonite_aid: "성산 후원" # 11086170810383064291
   great_project_type_athonite_aid_desc: "수천 명의 수도사가 거주하는 유서 깊은 수도원들이 있는 아토스 성산은 정교회 신앙의 영적 중심지입니다. 이 공동체들은 신성한 지식의 금고이자 경건함의 요새이지만, 시간과 혼란은 그 대가를 치르게 합니다. 기초는 약해지고, 값을 매길 수 없는 필사본은 부식되며, 수도사들은 해적과 약탈자들의 끊임없는 위협에 직면해 있습니다. 이 위대한 프로젝트는 성산을 재활성화하는 것을 목표로 합니다. 자금, 자재, 숙련된 장인들을 투입하여 대수도원과 소수도원들을 복원할 것입니다. 이 사업은 귀중한 문헌들을 보존하고 성상화가들의 신성한 작업을 지원할 것입니다. 공동체를 안전하게 보호하고 지원함으로써, 이 프로젝트는 '신의 어머니의 정원'이 참된 신앙의 등불로서 계속해서 빛나도록 보장할 것입니다." # 5056902897176986925
   great_project_type_tooltip_athonite_aid: "세상의 제국들이 흥망성쇠를 거듭하는 동안에도 성산은 혼돈의 물결에 맞서 흔들리지 않는 신앙의 보루로 버티고 있습니다. 이 원조는 단순한 금화 그 이상입니다. 이것은 제국의 영혼 그 자체에 대한 투자이며, 아토스의 수도사들이 수호하는 정교회의 빛이 앞으로 천 년 동안 계속해서 빛나도록 보장하는 것입니다." # 16497856685245320862
+  great_project_name_athonite_aid: "" # 17241709254077376921
+  great_project_name_possessive_athonite_aid: "" # 17241709254077376921
   great_project_type_athonite_aid_contribution_athonite_aid_laborers: "평신도 형제회 조직" # 14415981243768155828
+  great_project_type_athonite_aid_contribution_name_athonite_aid_laborers: "" # 17241709254077376921
   great_project_type_athonite_aid_contribution_athonite_aid_materials: "신성한 목재와 석재 확보" # 13217180149219056572
+  great_project_type_athonite_aid_contribution_name_athonite_aid_materials: "" # 17241709254077376921
   great_project_type_athonite_aid_contribution_athonite_aid_artists: "성상화가 및 필사기 위촉" # 12973024410708238302
+  great_project_type_athonite_aid_contribution_name_athonite_aid_artists: "" # 17241709254077376921
   great_project_type_athonite_aid_contribution_athonite_aid_towers: "해적 대비 감시탑 건설" # 6467568896051625730
+  great_project_type_athonite_aid_contribution_name_athonite_aid_towers: "" # 17241709254077376921
   great_project_type_athonite_aid_contribution_athonite_aid_laborers_desc: "성산의 재건을 위해서는 많은 손길이 필요합니다. 우리는 전국의 경건한 평신도들을 불러모아 헌신적인 일꾼들의 형제회로 조직할 것입니다. 그들은 성벽을 재건하고, 길을 닦으며, 새로운 수도실을 세움으로써 하느님을 섬기는 데 자신들의 힘과 기술을 바칠 것입니다." # 15021221120627573716
   great_project_type_athonite_aid_contribution_athonite_aid_materials_desc: "아토스의 수도원들은 우리 제국이 제공할 수 있는 최고의 자재들로 재건될 것입니다. 프로코네소스의 고대 채석장에서 대리석을 가져오고, 마케도니아 언덕에서 베어낸 질 좋은 목재를 사용할 것입니다. 이 축복받은 재료들은 재건된 성산의 뼈대를 형성할 것입니다." # 4992581196696608981
   great_project_type_athonite_aid_contribution_athonite_aid_artists_desc: "신앙은 석재뿐만 아니라 안료와 양피지 속에도 보존됩니다. 우리는 가장 숙련된 성상 화가와 필사본 삽화가들을 성산으로 소환할 것입니다. 그들의 신성한 작업은 새로운 예배당을 장식하고 수도원 도서관을 채워, 수 세기 동안 정교회 신자들에게 영감을 줄 보물을 만들어낼 것입니다." # 7468581192839553590
@@ -52,9 +58,3 @@
   athonite_founder_gratitude_for_contributor: "나의 위대한 과업을 도움" # 11411706238414898386
   athonite_small_opinion_of_contributor: "성산을 도움" # 6208833654106238628
   athonite_significant_clergy_opinion_of_contributor: "성산을 위한 경건한 지원" # 18266435614750931223
-  great_project_name_athonite_aid: "" # 17241709254077376921
-  great_project_name_possessive_athonite_aid: "" # 17241709254077376921
-  great_project_type_athonite_aid_contribution_name_athonite_aid_laborers: "" # 17241709254077376921
-  great_project_type_athonite_aid_contribution_name_athonite_aid_materials: "" # 17241709254077376921
-  great_project_type_athonite_aid_contribution_name_athonite_aid_artists: "" # 17241709254077376921
-  great_project_type_athonite_aid_contribution_name_athonite_aid_towers: "" # 17241709254077376921

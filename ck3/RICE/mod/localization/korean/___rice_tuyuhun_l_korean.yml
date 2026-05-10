@@ -45,6 +45,7 @@
   activity_RICE_tuyuhun_nadun_festival_selection_tooltip: "지역 나둔 축제에 참석하기\n$RICE_tuyuhun_attend_nadun_festival_context_tooltip$" # 2484001501813903365
   activity_RICE_tuyuhun_nadun_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [GetModifier('RICE_tuyuhun_recently_went_to_nadun_festival').GetNameWithTooltip] [character_modifier|E] 획득" # 6304053995299807244
   activity_RICE_tuyuhun_nadun_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실" # 5012295731351457530
+  activity_RICE_tuyuhun_nadun_festival_province_desc: "" # 17241709254077376921
   activity_RICE_tuyuhun_nadun_festival_destination_selection: "$activity_RICE_tuyuhun_nadun_festival_province_desc$" # 11182968236993391815
   activity_RICE_tuyuhun_nadun_festival_guest_help_text: "$activity_RICE_tuyuhun_nadun_festival$" # 17469259593967269601
   activity_RICE_tuyuhun_nadun_festival_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -419,4 +420,3 @@
   tuyuhun.0099.t: "xxxxx" # 1951045980481827005
   tuyuhun.0099.desc: "xxxxx" # 1951045980481827005
   tuyuhun.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_tuyuhun_nadun_festival_province_desc: "" # 17241709254077376921

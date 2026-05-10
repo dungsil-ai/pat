@@ -42,6 +42,7 @@
   activity_RICE_polabian_drowning_marzanna_selection_tooltip: "이 전통적인 서슬라브 의식으로 겨울의 끝을 축하하십시오.\n\n$activity_RICE_polabian_drowning_marzanna_context_tooltip$" # 13040182364426253499
   activity_RICE_polabian_drowning_marzanna_context_tooltip: "#emphasis 역사적 배경:#! 기독교 이전 시대에 마르잔나 또는 모라나는 서슬라브족 사이에서 죽음, 부활, 다산의 여신이었습니다. 겨울이 끝날 무렵, 봄을 맞이하기 위해 사람들은 전통적으로 마르잔나의 허수아비를 만들어 불태우고 지역 수역에 가라앉혔습니다. 슬라브족의 기독교화 이후, 교회 당국은 이 의식을 금지하려는 시도를 반복했지만, 폴란드, 체코, 슬로바키아와 같은 나라에서는 오늘날까지도 이 의식이 이어지고 있습니다. 하지만 오늘날에는 종교적 의미를 잃고, 특히 아이들에게는 더 재미있는 행사가 되었습니다." # 9809225871251990528
   activity_RICE_polabian_drowning_marzanna_host_desc: "$BULLET_WITH_TAB$이교도일 경우 [piety_i] [piety|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 감소\n$BULLET_WITH_TAB$ 소유한 모든 [county|E]가 [GetModifier('RICE_polabian_drowning_marzanna_county_modifier').GetNameWithTooltip] [county_modifier|E]를 얻을 확률\n$BULLET_WITH_TAB$ 특히 [piety_level|E]가 낮을 경우, #N 부정적인#! 징조 [character_modifier|E]를 얻을 약간의 확률" # 372966865715859558
+  activity_RICE_polabian_drowning_marzanna_guest_desc: "" # 17241709254077376921
   activity_RICE_polabian_drowning_marzanna_province_desc: "이 의식을 위한 익사 장소로 적합한 강이 하나 있습니다." # 11795870055292158856
   activity_RICE_polabian_drowning_marzanna_destination_selection: "$activity_RICE_polabian_drowning_marzanna_province_desc$" # 7510399354318086850
   activity_RICE_polabian_drowning_marzanna_guest_help_text: "$activity_RICE_polabian_drowning_marzanna$" # 5607315929817927975
@@ -69,6 +70,8 @@
   activity_RICE_polabian_zapust_festival_selection_tooltip: "자푸스트 축제를 기념하십시오.\n\n$activity_RICE_polabian_zapust_festival_context_tooltip$" # 18241705028417278359
   activity_RICE_polabian_zapust_festival_context_tooltip: "#emphasis 역사적 배경:#! 현대에 자푸스트(Zapust)는 동부 독일의 루사티아에 거주하는 소르브족이 행하는 축제입니다. 이 축제는 사순절 이전 기간, 즉 사육제 기간에 열리지만 기독교 이전의 관습에서 유래했을 수도 있습니다. 자푸스트와 같은 전통은 마지막으로 남은 폴라비아 슬라브 민족인 소르브족이 자신들의 정체성과 문화를 유지하는 데 중요한 역할을 합니다. 여기에 묘사된 내용은 주로 현대의 행사에 영향을 받았습니다." # 12920937289612061312
   activity_RICE_polabian_zapust_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ 소유한 모든 [county|E]가 [GetModifier('RICE_polabian_zapust_festival_county_modifier').GetNameWithTooltip] [county_modifier|E]를 얻을 확률 발생" # 14147431536583033516
+  activity_RICE_polabian_zapust_festival_guest_desc: "" # 17241709254077376921
+  activity_RICE_polabian_zapust_festival_province_desc: "" # 17241709254077376921
   activity_RICE_polabian_zapust_festival_destination_selection: "$activity_RICE_polabian_zapust_festival_province_desc$" # 6732551314315796418
   activity_RICE_polabian_zapust_festival_guest_help_text: "$activity_RICE_polabian_zapust_festival$" # 3820891292170555752
   activity_RICE_polabian_zapust_festival_predicted_cost: "자푸스트 축제를 개최하는 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 11038835298082441679
@@ -495,6 +498,3 @@
   polabian.0099.t: "xxxxx" # 1951045980481827005
   polabian.0099.desc: "xxxxx" # 1951045980481827005
   polabian.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_polabian_drowning_marzanna_guest_desc: "" # 17241709254077376921
-  activity_RICE_polabian_zapust_festival_guest_desc: "" # 17241709254077376921
-  activity_RICE_polabian_zapust_festival_province_desc: "" # 17241709254077376921

@@ -191,11 +191,13 @@
   RICE_tarim_basin_ordam_mazar_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 275136025570239783
   RICE_tarim_basin_ordam_mazar_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 2202753944533861972
   RICE_tarim_basin_ordam_mazar_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 13098885954326514789
+  activity_RICE_tocharian_animal_fight_host_an_a: "" # 17241709254077376921
   activity_RICE_tocharian_animal_fight: "동물 싸움으로 미래 예측하기" # 3141942313627597137
   activity_RICE_tocharian_animal_fight_desc: "일부 문화권에서는 새해 축제의 일환으로 매년 초에 동물 싸움을 벌이는 관습이 있습니다. 많은 이들이 이 시합의 결과를 통해 다가올 수확량이나 가축의 번식력을 정확하게 예측할 수 있다고 믿습니다." # 10764376950535884104
   activity_RICE_tocharian_animal_fight_selection_tooltip: "새해를 맞아 동물 싸움을 개최합니다\n\n$RICE_tarim_basin_stage_animal_fight_context_tooltip$" # 7543000678756847424
   activity_RICE_tocharian_animal_fight_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E] [prestige|E]\n$BULLET_WITH_TAB$당신의 [realm_capital|E]가 #P 긍정적인#! [county_modifier|E]를 얻거나 당신이 #P 긍정적인#! [character_modifier|E]를 얻을 기회\n$BULLET_WITH_TAB$ [GetFaithDoctrine('tenet_pacifism').GetBaseName] 또는 [GetFaithDoctrine('tenet_dharmic_pacifism').GetBaseName] [core_tenet|E]를 가진 [faith|E]를 따른다면 [piety_i] [piety|E]를 잃음" # 5831795414557103088
   activity_RICE_tocharian_animal_fight_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E] [prestige|E]" # 8298822838917909475
+  activity_RICE_tocharian_animal_fight_province_desc: "" # 17241709254077376921
   activity_RICE_tocharian_animal_fight_destination_selection: "$activity_RICE_tocharian_animal_fight_province_desc$" # 10661769748455334149
   activity_RICE_tocharian_animal_fight_guest_help_text: "$activity_RICE_tocharian_animal_fight$" # 6209321208474153145
   activity_RICE_tocharian_animal_fight_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -1953,5 +1955,3 @@
   tarim_basin.0299.t: "xxxxx" # 1951045980481827005
   tarim_basin.0299.desc: "xxxxx" # 1951045980481827005
   tarim_basin.0299.a: "xxxxx" # 1951045980481827005
-  activity_RICE_tocharian_animal_fight_host_an_a: "" # 17241709254077376921
-  activity_RICE_tocharian_animal_fight_province_desc: "" # 17241709254077376921

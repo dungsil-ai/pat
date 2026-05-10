@@ -112,6 +112,7 @@
   palau_pagan_religious_symbol: "성스러운 돌" # 2290337915732827086
   palau_pagan_religious_text: "성스러운 노래" # 8955817660240305435
   palau_pagan_religious_head_title: "코롱 족장" # 2645498732987314596
+  palau_pagan_religious_head_title_name: "" # 17241709254077376921
   palau_pagan_devotee: "신도" # 16996875086266395993
   palau_pagan_devotee_plural: "신도들" # 15412075443944701231
   palau_pagan_priest: "코롱" # 11487498387872847996
@@ -146,4 +147,3 @@
   chamorro_old_pagan_adherent: "고대 아니티즘 신봉자" # 66367618454754793
   chamorro_old_pagan_adherent_plural: "고대 아니티즘 신봉자들" # 1537089071811384708
   chamorro_old_pagan_desc: "$chamorro_pagan_desc$" # 18398545861538033508
-  palau_pagan_religious_head_title_name: "" # 17241709254077376921

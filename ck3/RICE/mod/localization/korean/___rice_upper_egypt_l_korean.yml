@@ -82,6 +82,8 @@
   activity_RICE_upper_egypt_open_nile_canals_selection_tooltip: "나일강의 풍년([nile_flood|E])을 기념하여 나일강 수로를 개방합니다.\n\n$RICE_upper_egypt_celebrate_nile_canal_opening_context_tooltip$" # 4264981041145508692
   activity_RICE_upper_egypt_open_nile_canals_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E], [prestige_i|E][prestige|E]를 얻고, [nile_flood|E]의 결과에 따라 #P 유익한#! [character_modifier|E]를 획득합니다." # 3072910411278041224
   activity_RICE_upper_egypt_open_nile_canals_guest_desc: "$activity_RICE_upper_egypt_open_nile_canals_host_desc$" # 909591527029413977
+  activity_RICE_upper_egypt_open_nile_canals_province_desc: "" # 17241709254077376921
+  activity_RICE_upper_egypt_open_nile_canals_destination_selection: "" # 17241709254077376921
   activity_RICE_upper_egypt_open_nile_canals_guest_help_text: "$activity_RICE_upper_egypt_open_nile_canals$" # 16058219739114826317
   activity_RICE_upper_egypt_open_nile_canals_predicted_cost: "나일강 수로 개방 의식을 거행하는 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 9239065657974742999
   RICE_upper_egypt_pray_good_nile_flood_cost: "의식 규모" # 17442884821123139964
@@ -103,6 +105,9 @@
   activity_RICE_upper_egypt_pray_good_nile_flood_desc: "때때로 [nile_flood|E]는 나일강을 따라 적절한 수확량을 위한 최적의 양에 도달하지 못할 때 이상적이지 않습니다. 그럴 때 우리는 다시는 그런 일이 일어나지 않도록 우리의 죄를 용서해 달라고 간청해야 합니다!" # 2293800972750624993
   activity_RICE_upper_egypt_pray_good_nile_flood_selection_tooltip: "더 나은 [nile_flood|E]를 위해 기도하십시오.\n\n$RICE_upper_egypt_pray_for_a_good_nile_flood_context_tooltip$" # 4303360493442400893
   activity_RICE_upper_egypt_pray_good_nile_flood_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_nile_flood_repentance').GetNameWithTooltip] [county_modifier|E]를 얻을 확률이 당신이 소유한 [GetGeographicalRegion('RICE_nile_river_valley').GetName]를 따라 위치한 모든 [counties|E]에 적용되어 나쁜 [nile_flood|E]의 부정적인 영향을 완화합니다.\n\n보상의 효과는 당신의 [traits|E], [virtues|E], [sins|E], 그리고 [piety_level|E]에 따라 달라집니다." # 9958444651101723532
+  activity_RICE_upper_egypt_pray_good_nile_flood_guest_desc: "" # 17241709254077376921
+  activity_RICE_upper_egypt_pray_good_nile_flood_province_desc: "" # 17241709254077376921
+  activity_RICE_upper_egypt_pray_good_nile_flood_destination_selection: "" # 17241709254077376921
   activity_RICE_upper_egypt_pray_good_nile_flood_guest_help_text: "$activity_RICE_upper_egypt_pray_good_nile_flood$" # 2267111985755022582
   activity_RICE_upper_egypt_pray_good_nile_flood_predicted_cost: "참회 의식의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 1015858591720385998
   activity_RICE_upper_egypt_pray_good_nile_flood_cost: "의식 규모" # 17442884821123139964
@@ -730,8 +735,3 @@
   upper_egypt.0099.t: "xxxxx" # 1951045980481827005
   upper_egypt.0099.desc: "xxxxx" # 1951045980481827005
   upper_egypt.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_upper_egypt_open_nile_canals_province_desc: "" # 17241709254077376921
-  activity_RICE_upper_egypt_open_nile_canals_destination_selection: "" # 17241709254077376921
-  activity_RICE_upper_egypt_pray_good_nile_flood_guest_desc: "" # 17241709254077376921
-  activity_RICE_upper_egypt_pray_good_nile_flood_province_desc: "" # 17241709254077376921
-  activity_RICE_upper_egypt_pray_good_nile_flood_destination_selection: "" # 17241709254077376921

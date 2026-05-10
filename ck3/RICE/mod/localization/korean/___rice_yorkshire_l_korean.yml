@@ -34,6 +34,7 @@
   activity_RICE_yorkshire_stamford_bull_run_selection_tooltip: "스탬퍼드 황소 돌진에 참석하십시오.\n\n$RICE_yorkshire_spectate_the_stamford_bull_run_context_tooltip$" # 13696927250804381714
   activity_RICE_yorkshire_stamford_bull_run_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$스트레스 [stress_loss_i|E][stress|E] 감소\n$BULLET_WITH_TAB$ [GetModifier('RICE_yorkshire_was_at_stamford_bull_run').GetNameWithTooltip] [character_modifier|E]" # 10965836446136564217
   activity_RICE_yorkshire_stamford_bull_run_guest_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실" # 16733720253981348149
+  activity_RICE_yorkshire_stamford_bull_run_province_desc: "" # 17241709254077376921
   activity_RICE_yorkshire_stamford_bull_run_destination_selection: "$activity_RICE_yorkshire_stamford_bull_run_province_desc$" # 6224738822435895350
   activity_RICE_yorkshire_stamford_bull_run_guest_help_text: "$activity_RICE_yorkshire_stamford_bull_run$" # 2665069194049334403
   activity_RICE_yorkshire_stamford_bull_run_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -52,6 +53,7 @@
   activity_RICE_yorkshire_beverley_pilgrimage_selection_tooltip: "[local_pilgrimage|E]를 떠나 [saint_john_of_beverley|E]를 공경하십시오.\n\n$RICE_yorkshire_secure_canonization_of_john_of_beverley_context_tooltip$" # 15486265303598279365
   activity_RICE_yorkshire_beverley_pilgrimage_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ 이 [local_pilgrimage|E]를 완료하면 [saint_john_of_beverley|E]의 깃발을 빌리는 [decision|E]를 내릴 수 있는 능력을 얻게 됩니다.\n$BULLET_WITH_TAB$ 이 [local_pilgrimage|E]를 여러 번 수행하면 [saint_john_of_beverley|E]의 깃발을 빌리는 [decision|E]의 효과가 증가합니다." # 9664965257464444445
   activity_RICE_yorkshire_beverley_pilgrimage_guest_desc: "$activity_RICE_yorkshire_beverley_pilgrimage_host_desc$" # 13119892126080939978
+  activity_RICE_yorkshire_beverley_pilgrimage_province_desc: "" # 17241709254077376921
   activity_RICE_yorkshire_beverley_pilgrimage_destination_selection: "$activity_RICE_yorkshire_beverley_pilgrimage_province_desc$" # 8245357132281654522
   activity_RICE_yorkshire_beverley_pilgrimage_guest_help_text: "$activity_RICE_yorkshire_beverley_pilgrimage$" # 11758793264439100649
   activity_RICE_yorkshire_beverley_pilgrimage_predicted_cost: "[local_pilgrimage|E]에 대한 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 9313308954044963369
@@ -839,5 +841,3 @@
   yorkshire.0199.t: "xxxxx" # 1951045980481827005
   yorkshire.0199.desc: "xxxxx" # 1951045980481827005
   yorkshire.0199.a: "xxxxx" # 1951045980481827005
-  activity_RICE_yorkshire_stamford_bull_run_province_desc: "" # 17241709254077376921
-  activity_RICE_yorkshire_beverley_pilgrimage_province_desc: "" # 17241709254077376921

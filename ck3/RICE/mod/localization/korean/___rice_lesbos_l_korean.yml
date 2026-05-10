@@ -43,6 +43,7 @@
   activity_RICE_roman_kalends_context_tooltip: "#emphasis 역사적 배경:#! 1월 칼렌드는 고대 로마의 전통적인 새해 축제였습니다. 연초가 다른 날짜로 이동한 후에도 이 축제는 비잔티움의 영향을 받은 지중해 및 중동 지역에서 계속 기념되었습니다. 당시 이 축일은 단순히 칼렌드(Kalends) 또는 중세 그리스어로 칼란다이(Kalandai)로 알려졌는데, 다른 달의 시작을 의미했던 다른 로마의 칼렌드들은 더 이상 기념되지 않았기 때문입니다. 비잔티움 교회 당국은 칼렌드를 이단적인 이교도 관습으로 비난했지만, 이는 무슬림 지역의 정교회 신자들에게는 종교적 기독교 정체성의 상징이 되었습니다. 어찌 되었든, 비잔티움 및 무슬림 자료들을 통해 볼 때, 칼렌드는 13세기나 14세기에 이르러 인기가 쇠퇴하고 사라진 것으로 보입니다." # 13995787136259892772
   activity_RICE_roman_kalends_host_desc: "$BULLET_WITH_TAB$#P 획득#! [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$스트레스 [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$초대받은 이들은 주최자에 대한 [opinions|E]가 개선됨\n$BULLET_WITH_TAB$ [capital|E] [county|E]는 #V 5#!년 동안 [GetModifier('RICE_kalends_celebrated_modifier').GetNameWithTooltip] [county_modifier|E]를 얻음\n$BULLET_WITH_TAB$#N 상실#! [piety_i|E][piety|E] (단, $RICE_roman_kalends_devotion_intent$ [intent|E]를 선택하거나 [GetReligionByKey('hellenism_religion').GetAdjective] [faith|E]를 따를 경우는 제외됨)" # 1088133354218481986
   activity_RICE_roman_kalends_guest_desc: "$activity_RICE_roman_kalends_host_desc$" # 18221561438110267656
+  activity_RICE_roman_kalends_province_desc: "" # 17241709254077376921
   activity_RICE_roman_kalends_destination_selection: "$activity_RICE_roman_kalends_province_desc$" # 12045870191072460000
   activity_RICE_roman_kalends_guest_help_text: "$activity_RICE_roman_kalends$" # 13039371817461952191
   activity_RICE_roman_kalends_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -479,4 +480,3 @@
   lesbos.0099.t: "xxxxx" # 1951045980481827005
   lesbos.0099.desc: "xxxxx" # 1951045980481827005
   lesbos.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_roman_kalends_province_desc: "" # 17241709254077376921

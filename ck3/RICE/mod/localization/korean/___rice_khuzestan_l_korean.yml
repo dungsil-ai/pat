@@ -65,6 +65,7 @@
   activity_RICE_mandaean_parwanaya_selection_tooltip: "파르와나야 축제에 참여하기.\n\n$RICE_khuzestan_parwanaya_festival_context_tooltip$" # 16304282724185268732
   activity_RICE_mandaean_parwanaya_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_khuzestan_celebrated_parwanaya').GetNameWithTooltip] [character_modifier|E]" # 12766972420612179624
   activity_RICE_mandaean_parwanaya_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 942770327808202261
+  activity_RICE_mandaean_parwanaya_province_desc: "" # 17241709254077376921
   activity_RICE_mandaean_parwanaya_destination_selection: "$activity_RICE_mandaean_parwanaya_province_desc$" # 11255646698086055201
   activity_RICE_mandaean_parwanaya_guest_help_text: "$activity_RICE_mandaean_parwanaya$" # 16290283509198447136
   activity_RICE_mandaean_parwanaya_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -519,4 +520,3 @@
   khuzestan.0099.t: "xxxxx" # 1951045980481827005
   khuzestan.0099.desc: "xxxxx" # 1951045980481827005
   khuzestan.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_mandaean_parwanaya_province_desc: "" # 17241709254077376921

@@ -26,6 +26,7 @@
   activity_RICE_breton_tro_breizh_selection_tooltip: "[GetTitleByKey('d_brittany').GetNameNoTier] 내 여러 중요한 도시들을 순례하는 [local_pilgrimage|E]를 떠나보십시오.\n\n$RICE_tro_breizh_context_tooltip$" # 9096401584271507732
   activity_RICE_breton_tro_breizh_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ [GetModifier('RICE_breton_recent_tro_breizh').GetNameWithTooltip] [character_modifier|E]" # 5308395444945021269
   activity_RICE_breton_tro_breizh_guest_desc: "$activity_RICE_breton_tro_breizh_host_desc$" # 1867992609536706847
+  activity_RICE_breton_tro_breizh_province_desc: "" # 17241709254077376921
   activity_RICE_breton_tro_breizh_destination_selection: "$activity_RICE_breton_tro_breizh_province_desc$" # 6643021726970753497
   activity_RICE_breton_tro_breizh_guest_help_text: "$activity_RICE_breton_tro_breizh$" # 5197363348919581016
   activity_RICE_breton_tro_breizh_predicted_cost: "[GetTitleByKey('d_brittany').GetNameNoTier]에서의 [local_pilgrimage|E] 비용은 귀하가 선택하는 [activity_options|E]에 따라 달라집니다." # 17175877057964180411
@@ -401,4 +402,3 @@
   breton.0099.t: "xxxxx" # 1951045980481827005
   breton.0099.desc: "xxxxx" # 1951045980481827005
   breton.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_breton_tro_breizh_province_desc: "" # 17241709254077376921

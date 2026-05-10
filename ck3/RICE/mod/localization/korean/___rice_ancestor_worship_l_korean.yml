@@ -9,8 +9,10 @@
   activity_RICE_venerate_ancestors_selection_tooltip: "[court|E]에 있는 [dynasty_members|E]를 기리며 조상을 숭배하십시오.\n\n$RICE_misc_venerate_ancestors_context_tooltip$" # 12709753045563473381
   activity_RICE_venerate_ancestors_host_desc: "$BULLET_WITH_TAB$무작위 양의 [piety_i|E][piety|E], [prestige_i|E][prestige|E], 그리고 [dynasty_prestige_i|E][dynasty_prestige|E] 획득\n$BULLET_WITH_TAB$획득할 수 있는 이 자원들의 최대량은 당신의 [dynasty_prestige_level|E], [virtues|E], 그리고 [sins|E]에 따라 결정됩니다" # 8706083852753075269
   activity_RICE_venerate_ancestors_guest_desc: "$BULLET_WITH_TAB$무작위 양의 [piety_i|E][piety|E]와 [prestige_i|E][prestige|E] 획득" # 18408209090176114097
+  activity_RICE_venerate_ancestors_province_desc: "" # 17241709254077376921
   activity_RICE_venerate_ancestors_temple_holding_desc: "#P ++ [church_holding|E]#!\n#weak 이로 인해 이 [activity|E]의 [gold|E] 비용이 감소할 것입니다.#!" # 760848828324675447
   activity_RICE_venerate_ancestors_temple_holding_reduced_cost: "[church_holding|E]" # 11786638095250541163
+  activity_RICE_venerate_ancestors_destination_selection: "" # 17241709254077376921
   activity_RICE_venerate_ancestors_guest_help_text: "$activity_RICE_venerate_ancestors$" # 5337124454949629568
   activity_RICE_venerate_ancestors_predicted_cost: "조상 숭배 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 1389936805388629928
   activity_RICE_venerate_ancestors_conclusion_desc: "[GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] 행사가 끝났습니다. 조상님들께서 우리의 제물에 만족하셨기를 바랄 뿐입니다!" # 13607439729056775732
@@ -343,5 +345,3 @@
   RICE_ancestor_worship.0099.t: "xxxxx" # 1951045980481827005
   RICE_ancestor_worship.0099.desc: "xxxxx" # 1951045980481827005
   RICE_ancestor_worship.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_venerate_ancestors_province_desc: "" # 17241709254077376921
-  activity_RICE_venerate_ancestors_destination_selection: "" # 17241709254077376921

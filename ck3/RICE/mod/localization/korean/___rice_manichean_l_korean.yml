@@ -111,6 +111,7 @@
   activity_RICE_manichean_bema_festival_context_tooltip: "#emphasis 역사적 배경:#! 베마 축제는 마니교의 종교적 한 해를 마감하는 행사였으며 마니교의 창시자인 마니의 순교를 기념했습니다. '베마(Bema)'라는 축제 이름은 그리스어로 연단, 무대 또는 심판관의 자리를 의미하는 단어에서 유래했는데, 이는 행사의 중심에 신자들이 죄를 사함 받기 위해 마니가 내려온다고 믿었던 빈 왕좌가 있었기 때문입니다." # 6441965844745722150
   activity_RICE_manichean_bema_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$#P Positive#! [character_modifiers|E]\n$BULLET_WITH_TAB$아주 드물게, [sinful|E] 또는 부정적인 [traits|E]를 잃음" # 7526489382792534625
   activity_RICE_manichean_bema_festival_guest_desc: "$activity_RICE_manichean_bema_festival_host_desc$" # 13092917946236869052
+  activity_RICE_manichean_bema_festival_province_desc: "" # 17241709254077376921
   activity_RICE_manichean_bema_festival_destination_selection: "$activity_RICE_manichean_bema_festival_province_desc$" # 6536088153957254598
   activity_RICE_manichean_bema_festival_guest_help_text: "$activity_RICE_manichean_bema_festival$" # 14284453699380151313
   activity_RICE_manichean_bema_festival_predicted_cost: "이 [activity|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 658366464949161382
@@ -663,4 +664,3 @@
   manichean.0099.t: "xxxxx" # 1951045980481827005
   manichean.0099.desc: "xxxxx" # 1951045980481827005
   manichean.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_manichean_bema_festival_province_desc: "" # 17241709254077376921
