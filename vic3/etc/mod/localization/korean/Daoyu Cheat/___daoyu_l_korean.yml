@@ -256,6 +256,7 @@
   daoyu_mark_target_culture_get_name: "$daoyu_mark_target_culture$: [SCOPE.sCulture('daoyu_mark_target_culture').GetName]" # 9886078083633625159
   daoyu_mark_target_culture_flavor: "만약 #N 대상 국가#가 선택되었는데 대상 국가 옵션이 없다면, #N 새로고침#!을 누르십시오." # 13391320923235137717
   daoyu_country_has_primary_culture_more_than_one: "$russification_modifier$는 오직 하나의 #N 주된 문화#만을 가져야 합니다." # 10019569952463922618
+  daoyu_nul: "" # 17241709254077376921
   daoyu_has_only_one: "오직 하나만" # 5881692599366548681
   daoyu_has_over_one: "하나 이상을 보유하고 있습니다" # 15751033268909592105
   daoyu_has_no: "가지고 있지 않음" # 5422936913589549415
@@ -532,9 +533,11 @@
   daoyu_remove_company: "회사 해산" # 9735268199764845554
   daoyu_redeem_all_obligation: "$redeem_obligation$ ($OUTLINER_ALL$)" # 4805534443815778602
   daoyu_treaty_articles: "$daoyu_cheat$ $concept_article$" # 11706804952809444487
+  daoyu_treaty_articles_desc: "" # 17241709254077376921
   daoyu_enactment_success_on: "#G $concept_enactment_success$ 발동#!" # 2299827420697321139
   daoyu_enactment_success_on_desc: "#R 1836.1.1#에만 이용 가능하며, #variable $daoyu_off$#! 이후에는 $concept_enactment_success$ 또한 사용될 수 있습니다.\n일단 활성화되면, 법률을 제정하는 동안 이용 가능한 결정 #variable $concept_enactment_success$#!이 나타날 것입니다." # 13866480407788093996
   daoyu_enactment_success: "$concept_enactment_success$" # 11499727437492920231
+  daoyu_enactment_success_desc: "" # 17241709254077376921
   daoyu_strata_expected_sol: "#variable $state_lower_strata_expected_sol_add$: [ROOT.GetCountry.MakeScope.Var('daoyu_state_lower_strata_expected_sol_var').GetValue]\n$state_middle_strata_expected_sol_add$: [ROOT.GetCountry.MakeScope.Var('daoyu_state_middle_strata_expected_sol_var').GetValue]\n$state_upper_strata_expected_sol_add$: [ROOT.GetCountry.MakeScope.Var('daoyu_state_upper_strata_expected_sol_var').GetValue]\n$state_expected_sol_from_literacy$: [ROOT.GetCountry.MakeScope.Var('daoyu_state_expected_sol_from_literacy_var').GetValue]#!" # 5981601928739164317
   daoyu_state_lower_strata_expected_sol_a: "$state_lower_strata_expected_sol_add$ + 1" # 8956094067025499957
   daoyu_state_middle_strata_expected_sol_a: "$state_middle_strata_expected_sol_add$ + 1" # 12438051163011826835
@@ -580,6 +583,3 @@
   daoyu_auto_country_influence: "$pmg_automation$ $concept_influence$" # 12910946287551192340
   daoyu_heritage_group_eastern_european: "동유럽" # 6700369191770852666
   daoyu_heritage_group_western_european: "서유럽" # 8460948830719582006
-  daoyu_nul: "" # 17241709254077376921
-  daoyu_treaty_articles_desc: "" # 17241709254077376921
-  daoyu_enactment_success_desc: "" # 17241709254077376921

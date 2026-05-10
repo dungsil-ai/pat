@@ -6,6 +6,7 @@
   zw_build_new_railway_button: "[ROOT.GetCountry.GetCustom('zw_build_new_railway_button_cl')]" # 12681442156416671414
   zw_build_new_railway_button_cl_1: "#gold @green_checkmark_box!새로운 철도 건설#!" # 6712933588066855014
   zw_build_new_railway_button_cl_2: "@simple_box!새로운 철도 건설" # 18371361661105577749
+  zw_build_new_railway_button_desc: "" # 17241709254077376921
   zw_build_new_railway_button_effect: "철도 건설이 시작됩니다.\n상당한 건설력이 소모됩니다.\n막대한 재정 투자가 필요합니다.\n해당 주의 인프라를 증대시킵니다.\n해당 주의 시장 접근성을 개선합니다.\n철강, 증기 기관 등 관련 상품 수요가 증가할 수 있습니다.\n완공까지 일정 기간이 소요됩니다." # 14201158872980154827
   zw_build_new_railway_button_effect_breakdown_01: "철도가 #white #b 없는#!#! 주에 새로운 철도를 점진적으로 건설합니다.\n\n새로운 철도는 다음 조건을 충족하는 주에 한하여 건설됩니다." # 5042490342643129943
   zw_build_new_railway_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$이 조건 중 최소 한 가지가 충족됩니다:#!" # 10316038686448045761
@@ -17,6 +18,7 @@
   zw_expand_building_railway_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_railway_button_cl')]" # 10288618421168844283
   zw_expand_building_railway_button_cl_1: "#gold @green_checkmark_box! 철도 확충#!" # 1810164957088971527
   zw_expand_building_railway_button_cl_2: "@simple_box! 철도 확충" # 17480854991633816052
+  zw_expand_building_railway_button_desc: "" # 17241709254077376921
   zw_expand_building_railway_button_effect: "$zw_expand_building_railway_button_effect_breakdown_01$$zw_expand_building_railway_button_effect_breakdown_02$$zw_expand_building_railway_button_effect_breakdown_03$$zw_expand_building_railway_button_effect_breakdown_04$$zw_expand_building_railway_button_effect_breakdown_05$$zw_expand_building_railway_button_effect_breakdown_06$$zw_expand_building_railway_button_effect_breakdown_07$$zw_expand_building_railway_button_effect_breakdown_08$$zw_expand_building_railway_button_effect_breakdown_09$$zw_expand_building_railway_button_effect_breakdown_10$$zw_expand_building_railway_button_effect_breakdown_11$$zw_expand_building_railway_button_effect_breakdown_12$" # 7651343666553260311
   zw_expand_building_railway_button_effect_breakdown_01: "이러한 조건을 충족하는 기존 철도를 확장하십시오:" # 5289738252174696417
   zw_expand_building_railway_button_effect_breakdown_02: "#indent_newline:4 $EFFECT_LIST_BULLET$ [concept_occupancy] >= 0.95#!" # 5099160948647969209
@@ -33,19 +35,23 @@
   zw_limit_max_added_levels_railway_button: "[ROOT.GetCountry.GetCustom('zw_limit_max_added_levels_railway_button_cl')]" # 3265743982977780224
   zw_limit_max_added_levels_railway_button_cl_1: "#gold @green_checkmark_box! 확장 레벨 제한 @transportation!#!" # 17407930209424160257
   zw_limit_max_added_levels_railway_button_cl_2: "@simple_box! 확장 레벨 제한 @transportation!" # 13660204344378153396
+  zw_limit_max_added_levels_railway_button_desc: "" # 17241709254077376921
   zw_limit_max_added_levels_railway_button_effect: "철도당 최대 확장 수준을 한 번에 제한하십시오.\n\n최대 확장 수준이 설정되지 않은 경우, 필요한 추가 수준은 항상 #white #b 한 번에#!#! 건설 대기열에 추가됩니다.\n\n우리 국가가 아직 산업화 초기 단계이고 철도에 대한 고급 기술이 부족할 때는 비싼 운송이 예상됩니다. #white #b 더 고급 기술을 습득할 때까지 철도 및 발전소의 최대 확장 수준을 한 번에 제한하는 것이 좋습니다#!#!. 이는 더 고급 생산 방식이 사용되면 운송이 과잉 생산되지 않고, 긴 건설 대기열로 인해 다른 중요한 공급망이 무시되지 않도록 하기 위함입니다." # 9075108021733275912
   zw_change_max_added_levels_railway_button: "[ROOT.GetCountry.GetCustom('zw_change_max_added_levels_railway_button_cl')]" # 3862426203893730262
   zw_change_max_added_levels_railway_button_cl_1: "#gold @arrow_up_up!@arrow_down_down! 확장된 수준 @transportation!#!" # 3195080845768132318
   zw_change_max_added_levels_railway_button_cl_2: "@arrow_up_up!@arrow_down_down! 확장된 단계 @transportation!" # 293936100005517148
+  zw_change_max_added_levels_railway_button_desc: "" # 17241709254077376921
   zw_change_max_added_levels_railway_button_effect_1: "철도의 최대 증축 레벨을 매번 변경합니다.\n현재: #yellow #b [ROOT.Var('zw_var_max_added_levels_railway').GetValue]#!#! (1~10)" # 9563068563972594687
   zw_change_max_added_levels_railway_button_effect_2: "저희는 최대 확장 단계를 #white #b 제한하지 않았습니다#!#!." # 10229823915664190751
   zw_build_new_power_plant_button: "[ROOT.GetCountry.GetCustom('zw_build_new_power_plant_button_cl')]" # 4399133390731275373
   zw_build_new_power_plant_button_cl_1: "#gold @green_checkmark_box! 새로운 발전소 건설#!" # 12698404191951385031
   zw_build_new_power_plant_button_cl_2: "@simple_box! 새로운 발전소 건설" # 10601873363904182525
+  zw_build_new_power_plant_button_desc: "" # 17241709254077376921
   zw_build_new_power_plant_button_effect: "발전소가 #white #b 없는#!#! 하지만 [GetBuildingType('building_urban_center').GetName]을 보유한 주에 새로운 발전소를 점진적으로 건설하십시오.\n\n#white #b 주가 더 도시화될수록#!#!, 새로운 발전소 건설 계획 시 해당 주에 더 높은 우선순위가 부여됩니다." # 1980340698670804185
   zw_expand_building_power_plant_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_power_plant_button_cl')]" # 11715193292435497868
   zw_expand_building_power_plant_button_cl_1: "#gold @green_checkmark_box! 발전소 확충!#" # 17035566814188483012
   zw_expand_building_power_plant_button_cl_2: "@simple_box! 발전소 확장" # 3815516367481769566
+  zw_expand_building_power_plant_button_desc: "" # 17241709254077376921
   zw_expand_building_power_plant_button_effect: "$zw_expand_building_power_plant_button_effect_breakdown_01$$zw_expand_building_power_plant_button_effect_breakdown_02$$zw_expand_building_power_plant_button_effect_breakdown_03$$zw_expand_building_power_plant_button_effect_breakdown_04$$zw_expand_building_power_plant_button_effect_breakdown_05$$zw_expand_building_power_plant_button_effect_breakdown_06$$zw_expand_building_power_plant_button_effect_breakdown_07$$zw_expand_building_power_plant_button_effect_breakdown_08$$zw_expand_building_power_plant_button_effect_breakdown_09$$zw_expand_building_power_plant_button_effect_breakdown_10$" # 8691375331163188703
   zw_expand_building_power_plant_button_effect_breakdown_01: "이 조건을 충족하는 기존 발전소를 확장합니다." # 4497797037622402141
   zw_expand_building_power_plant_button_effect_breakdown_02: "#indent_newline:4 $EFFECT_LIST_BULLET$ [concept_occupancy] >= 0.95#!" # 5099160948647969209
@@ -60,19 +66,23 @@
   zw_limit_max_added_levels_power_plant_button: "[ROOT.GetCountry.GetCustom('zw_limit_max_added_levels_power_plant_button_cl')]" # 15252517927682838386
   zw_limit_max_added_levels_power_plant_button_cl_1: "#gold @green_checkmark_box! 한도 확장 단계 @electricity!#" # 12702968450128951452
   zw_limit_max_added_levels_power_plant_button_cl_2: "@simple_box! 확장 레벨 제한 @electricity!" # 13017385345529640522
+  zw_limit_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
   zw_limit_max_added_levels_power_plant_button_effect: "발전소의 최대 확장 레벨을 한 번에 제한합니다.\n\n최대 확장 레벨이 설정되지 않은 경우, 필요한 추가 레벨은 항상 건설 대기열에 한 번에 추가됩니다.\n\n우리 국가가 아직 산업화 초기 단계에 있고 발전소에 대한 고급 기술이 부족할 때는 값비싼 전기가 예상됩니다. #white #b 더 고급 기술을 획득할 때까지 발전소의 최대 확장 레벨을 매번 제한하는 것이 권장됩니다#!#, 그렇게 하면 더 고급 생산 방식이 사용되었을 때 전기가 과잉 생산되지 않고, 긴 건설 대기열로 인해 다른 중요한 공급망이 무시되지 않을 것입니다." # 2386156175230553511
   zw_change_max_added_levels_power_plant_button: "[ROOT.GetCountry.GetCustom('zw_change_max_added_levels_power_plant_button_cl')]" # 16131753381789760240
   zw_change_max_added_levels_power_plant_button_cl_1: "#gold @arrow_up_up!@arrow_down_down! 확장된 수준 @electricity!#!" # 13470732669954556127
   zw_change_max_added_levels_power_plant_button_cl_2: "@arrow_up_up!@arrow_down_down! 확장된 레벨 @electricity!" # 1402380891810219805
+  zw_change_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
   zw_change_max_added_levels_power_plant_button_effect_1: "발전소의 회당 최대 확장 단계를 변경합니다.\n현재: #yellow #b [ROOT.Var('zw_var_max_added_levels_power_plant').GetValue]#!#! (1~10)" # 4000752393064951314
   zw_change_max_added_levels_power_plant_button_effect_2: "저희는 최대 확장 단계를 #white #b 제한하지 않았습니다#!#!." # 10229823915664190751
   zw_develop_incorporated_states_button: "[ROOT.GetCountry.GetCustom('zw_develop_incorporated_states_button_cl')]" # 13067115087496505810
   zw_develop_incorporated_states_button_cl_1: "#gold @green_checkmark_box! 편입된 주#!" # 3921494118768497110
   zw_develop_incorporated_states_button_cl_2: "@simple_box! 편입된 주" # 2505319450022130817
+  zw_develop_incorporated_states_button_desc: "" # 17241709254077376921
   zw_develop_incorporated_states_button_effect: "편입된 주만 개발하십시오." # 11547692567965779599
   zw_expand_building_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_button_cl')]" # 7246200445193792697
   zw_expand_building_button_cl_1: "#gold @green_checkmark_box! 공급망 확장#!" # 5118066129090017810
   zw_expand_building_button_cl_2: "@simple_box! 공급망 확장" # 17813882805658941833
+  zw_expand_building_button_desc: "" # 17241709254077376921
   zw_expand_building_button_effect: "$zw_expand_building_button_effect_breakdown_01$$zw_expand_building_button_effect_breakdown_02$$zw_expand_building_button_effect_breakdown_03$$zw_expand_building_button_effect_breakdown_04$$zw_expand_building_button_effect_breakdown_05$$zw_expand_building_button_effect_breakdown_06$$zw_expand_building_button_effect_breakdown_07$" # 16946563579837246294
   zw_expand_building_button_effect_breakdown_01: "선택된 공급망의 기존 건물을 확장합니다." # 6880098702540496945
   zw_expand_building_button_effect_breakdown_02: "\n\n이러한 조건을 충족하는 건물만 확장할 수 있습니다:" # 12714620567586763524
@@ -82,9 +92,11 @@
   zw_expand_building_button_effect_breakdown_06: "투입품 $concept_shortage$가 있거나 $concept_market_access$가 100% 미만인 건물은 훨씬 낮은 우선순위가 부여됩니다." # 90721635905427851
   zw_expand_building_button_effect_breakdown_07: "총 건설 추가량은 현재 진행 중인 건설 수, 건설 생산량, 기술력, 그리고 경제 체제에 따라 합리적인 범위로 제한되어, 잠재적인 시장 변화에 더 빠르게 대응할 수 있도록 합니다." # 17250057685432916311
   zw_increase_labor_threshold_button: "@arrow_up_up! [ROOT.GetCountry.GetCustom('zw_labor_threshold_button_cl')]" # 601999266503491994
+  zw_increase_labor_threshold_button_desc: "" # 17241709254077376921
   zw_increase_labor_threshold_button_effect_1: "주 노동 역치를 늘리는 동시에 #white #b 공급망을 확충#!#!합니다.$zw_text_labor_threshold$\n현재 노동 역치: #yellow #b [ROOT.Var('zw_var_labor_threshold').GetValue|*]#!#!" # 15232184259901273795
   zw_increase_labor_threshold_button_effect_2: "#white #b 공급망을 확장하면서#!#! 주 노동력 한계치를 늘립니다.$zw_text_labor_threshold$\n\n현재 노동력 한계치: #yellow #b 제한 없음#!#!" # 12183227987818348598
   zw_decrease_labor_threshold_button: "@arrow_down_down! [ROOT.GetCountry.GetCustom('zw_labor_threshold_button_cl')]" # 17430394477383424755
+  zw_decrease_labor_threshold_button_desc: "" # 17241709254077376921
   zw_decrease_labor_threshold_button_effect_1: "주 노동력 임계치를 낮추는 동시에 #white #b 공급망을 확장#!#!.$zw_text_labor_threshold$\n현재 노동력 임계치: #yellow #b [ROOT.Var('zw_var_labor_threshold').GetValue|*]#!#!" # 262723551123203207
   zw_decrease_labor_threshold_button_effect_2: "주 노동력 한계치를 감소시키면서 #white #b 공급망을 확장합니다#!#!.$zw_text_labor_threshold$\n현재 노동력 한계치: #yellow #b 무제한#!#!" # 15937159796482122388
   zw_text_labor_threshold: "$zw_text_labor_threshold_01$$zw_text_labor_threshold_02$$zw_text_labor_threshold_03$$zw_text_labor_threshold_04$" # 1132603496670659220
@@ -95,8 +107,10 @@
   zw_labor_threshold_button_cl_1: "#gold 노동 문턱!#" # 9932057297215839717
   zw_labor_threshold_button_cl_2: "노동 문턱" # 9239817136830140906
   zw_increase_added_constructions_button: "@arrow_up_up! [ROOT.GetCountry.GetCustom('zw_added_constructons_button_cl')]" # 11830690950665777927
+  zw_increase_added_constructions_button_desc: "" # 17241709254077376921
   zw_increase_added_constructions_button_effect: "#white #b 공급망 확장#!#!을 위한 추가 건설 최대치를 늘립니다.\n\n현재 추가 건설 최대치 계수: #yellow #b [ROOT.GetCountry.GetCustom('zw_added_constructons_cl')]#!#!\n\n기본값은 1입니다. 2로 설정할 경우, 추가 건설 최대치는 기본값의 2배가 됩니다.\n\n총 추가 건설 수는 이미 진행 중인 건설 수, 건설 생산량, 기술 및 경제 체제에 기반하여 합리적인 범위 내에서 제한되며, 이는 잠재적 시장 변화에 더 빠르게 대응할 수 있도록 합니다.\n\n#white #b 사유 투자 자금의 수입이 현재 경제 체제에서 허용하는 사유 건설 최대치와 비교했을 때 충분한 사유 건설을 감당하기 어렵다면#!#!, 정부 예산이 허용할 때 추가 정부 건설을 늘려 건설 점수를 낭비하는 것을 피할 수 있습니다.\n\n#white #b 본 변경 사항은 경제 체제에 의해 결정되는 사유 건설 할당을 변경하지 않으며, 단지 매회 추가되는 건설의 수를 변경할 뿐입니다.#!#!" # 16656133222233878776
   zw_decrease_added_constructions_button: "@arrow_down_down! [ROOT.GetCountry.GetCustom('zw_added_constructons_button_cl')]" # 4115572481546243248
+  zw_decrease_added_constructions_button_desc: "" # 17241709254077376921
   zw_decrease_added_constructions_button_effect: "#white #b 공급망 확장#!#!을 위한 추가 건설의 최대 수를 줄입니다.\n\n현재 추가 건설의 최대 배율: #yellow #b [ROOT.GetCountry.GetCustom('zw_added_constructons_cl')]#!#!\n\n기본값은 1입니다. 0.5로 설정하면 추가 건설의 최대 수가 기본값의 50%가 됩니다.\n\n총 추가 건설 수는 이미 진행 중인 건설 수, 건설 생산량, 기술 및 경제 체제에 따라 합리적인 범위로 제한되어, 잠재적 시장 변화에 더 빠르게 대응할 수 있도록 합니다.\n\n#white #b 정부 예산으로 충분한 정부 건설을 감당할 수 없을 경우#!#!, 정부 지출을 낮추기 위해 추가 정부 건설 수를 줄일 수 있습니다.\n\n#white #b 참고로 이것은 우리 경제 체제에 의해 결정되는 민간 건설 할당량을 변경하지 않으며, 단지 매번 추가되는 건설의 수만 변경할 것입니다.#!#!" # 11622776652868391629
   zw_added_constructons_cl_1: "[ROOT.Var('zw_var_added_constructions').GetValue]" # 13566082426791087331
   zw_added_constructons_cl_2: "1" # 13237225503670494420
@@ -105,6 +119,7 @@
   zw_expand_building_machine_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_machine_button_cl')]" # 8233033618228010326
   zw_expand_building_machine_button_cl_1: "#gold @green_checkmark_box! 기계#!" # 11987936491218131398
   zw_expand_building_machine_button_cl_2: "@simple_box! 기계" # 4105830203883916521
+  zw_expand_building_machine_button_desc: "" # 17241709254077376921
   zw_expand_building_machine_button_effect: "$zw_expand_building_machine_button_effect_breakdown_01$\n$zw_expand_building_machine_button_effect_breakdown_02$\n$zw_expand_building_machine_button_effect_breakdown_03$\n$zw_expand_building_machine_button_effect_breakdown_04$\n$zw_expand_building_machine_button_effect_breakdown_05$\n$zw_expand_building_machine_button_effect_breakdown_06$\n$zw_expand_building_machine_button_effect_breakdown_07$\n$zw_expand_building_machine_button_effect_breakdown_08$\n$zw_expand_building_machine_button_effect_breakdown_09$\n$zw_expand_building_machine_button_effect_breakdown_10$\n$zw_expand_building_machine_button_effect_breakdown_11$" # 4180297630712614065
   zw_expand_building_machine_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_machine_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_logging_camp').GetName]#!" # 12220533442005040123
@@ -120,6 +135,7 @@
   zw_expand_building_food_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_food_button_cl')]" # 9130390240308890026
   zw_expand_building_food_button_cl_1: "#gold @green_checkmark_box! 식량#!" # 11870800441661448685
   zw_expand_building_food_button_cl_2: "@simple_box! 음식" # 7694908083098859806
+  zw_expand_building_food_button_desc: "" # 17241709254077376921
   zw_expand_building_food_button_effect: "$zw_expand_building_food_button_effect_breakdown_01$$zw_expand_building_food_button_effect_breakdown_02$$zw_expand_building_food_button_effect_breakdown_03$$zw_expand_building_food_button_effect_breakdown_04$$zw_expand_building_food_button_effect_breakdown_05$$zw_expand_building_food_button_effect_breakdown_06$$zw_expand_building_food_button_effect_breakdown_07$$zw_expand_building_food_button_effect_breakdown_08$$zw_expand_building_food_button_effect_breakdown_09$$zw_expand_building_food_button_effect_breakdown_10$$zw_expand_building_food_button_effect_breakdown_11$$zw_expand_building_food_button_effect_breakdown_12$" # 5379081890674354578
   zw_expand_building_food_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_food_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_rye_farm').GetName]#!" # 3293028314588824174
@@ -136,6 +152,7 @@
   zw_expand_building_clothes_furniture_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_clothes_furniture_button_cl')]" # 602556276598569788
   zw_expand_building_clothes_furniture_button_cl_1: "#gold @green_checkmark_box! 소비재#!" # 6856447026386933564
   zw_expand_building_clothes_furniture_button_cl_2: "@simple_box! 소비재" # 6114513441194294497
+  zw_expand_building_clothes_furniture_button_desc: "" # 17241709254077376921
   zw_expand_building_clothes_furniture_button_effect: "$zw_expand_building_clothes_furniture_button_effect_breakdown_01$$zw_expand_building_clothes_furniture_button_effect_breakdown_02$$zw_expand_building_clothes_furniture_button_effect_breakdown_03$$zw_expand_building_clothes_furniture_button_effect_breakdown_04$$zw_expand_building_clothes_furniture_button_effect_breakdown_05$$zw_expand_building_clothes_furniture_button_effect_breakdown_06$$zw_expand_building_clothes_furniture_button_effect_breakdown_07$$zw_expand_building_clothes_furniture_button_effect_breakdown_08$$zw_expand_building_clothes_furniture_button_effect_breakdown_09$$zw_expand_building_clothes_furniture_button_effect_breakdown_10$$zw_expand_building_clothes_furniture_button_effect_breakdown_11$" # 1265595802790835125
   zw_expand_building_clothes_furniture_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_clothes_furniture_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_logging_camp').GetName]#!" # 12220533442005040123
@@ -151,6 +168,7 @@
   zw_expand_building_glassworks_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_glassworks_button_cl')]" # 18232174195987957472
   zw_expand_building_glassworks_button_cl_1: "#gold @green_checkmark_box! 유리아 도자기#!" # 9047265820305278814
   zw_expand_building_glassworks_button_cl_2: "@simple_box! 유리아 도자기" # 8085065663835694086
+  zw_expand_building_glassworks_button_desc: "" # 17241709254077376921
   zw_expand_building_glassworks_button_effect: "$zw_expand_building_glassworks_button_effect_breakdown_01$\n$zw_expand_building_glassworks_button_effect_breakdown_02$\n$zw_expand_building_glassworks_button_effect_breakdown_03$\n$zw_expand_building_glassworks_button_effect_breakdown_04$\n$zw_expand_building_glassworks_button_effect_breakdown_05$\n$zw_expand_building_glassworks_button_effect_breakdown_06$\n$zw_expand_building_glassworks_button_effect_breakdown_07$\n$zw_expand_building_glassworks_button_effect_breakdown_08$\n$zw_expand_building_glassworks_button_effect_breakdown_09$" # 17885535457592769056
   zw_expand_building_glassworks_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_glassworks_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_dye_plantation').GetName]#!" # 17930537401006436731
@@ -164,6 +182,7 @@
   zw_expand_building_chemical_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_chemical_button_cl')]" # 17272731239382820811
   zw_expand_building_chemical_button_cl_1: "#gold @green_checkmark_box! 화학#!" # 5503108331927782326
   zw_expand_building_chemical_button_cl_2: "@simple_box! 화학품" # 7011117709729674723
+  zw_expand_building_chemical_button_desc: "" # 17241709254077376921
   zw_expand_building_chemical_button_effect: "$zw_expand_building_chemical_button_effect_breakdown_01$$zw_expand_building_chemical_button_effect_breakdown_02$$zw_expand_building_chemical_button_effect_breakdown_03$$zw_expand_building_chemical_button_effect_breakdown_04$$zw_expand_building_chemical_button_effect_breakdown_05$$zw_expand_building_chemical_button_effect_breakdown_06$$zw_expand_building_chemical_button_effect_breakdown_07$$zw_expand_building_chemical_button_effect_breakdown_08$$zw_expand_building_chemical_button_effect_breakdown_09$$zw_expand_building_chemical_button_effect_breakdown_10$$zw_expand_building_chemical_button_effect_breakdown_11$$zw_expand_building_chemical_button_effect_breakdown_12$" # 15457107557617177594
   zw_expand_building_chemical_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_chemical_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_logging_camp').GetName]#!" # 12220533442005040123
@@ -180,25 +199,6 @@
   zw_expand_building_electrics_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_electrics_button_cl')]" # 10542065438037424116
   zw_expand_building_electrics_button_cl_1: "#gold @green_checkmark_box! 전기#!" # 6578260140931808517
   zw_expand_building_electrics_button_cl_2: "@simple_box! 전기" # 4231702125231760838
-  zw_build_new_railway_button_desc: "" # 17241709254077376921
-  zw_expand_building_railway_button_desc: "" # 17241709254077376921
-  zw_limit_max_added_levels_railway_button_desc: "" # 17241709254077376921
-  zw_change_max_added_levels_railway_button_desc: "" # 17241709254077376921
-  zw_build_new_power_plant_button_desc: "" # 17241709254077376921
-  zw_expand_building_power_plant_button_desc: "" # 17241709254077376921
-  zw_limit_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
-  zw_change_max_added_levels_power_plant_button_desc: "" # 17241709254077376921
-  zw_develop_incorporated_states_button_desc: "" # 17241709254077376921
-  zw_expand_building_button_desc: "" # 17241709254077376921
-  zw_increase_labor_threshold_button_desc: "" # 17241709254077376921
-  zw_decrease_labor_threshold_button_desc: "" # 17241709254077376921
-  zw_increase_added_constructions_button_desc: "" # 17241709254077376921
-  zw_decrease_added_constructions_button_desc: "" # 17241709254077376921
-  zw_expand_building_machine_button_desc: "" # 17241709254077376921
-  zw_expand_building_food_button_desc: "" # 17241709254077376921
-  zw_expand_building_clothes_furniture_button_desc: "" # 17241709254077376921
-  zw_expand_building_glassworks_button_desc: "" # 17241709254077376921
-  zw_expand_building_chemical_button_desc: "" # 17241709254077376921
   zw_expand_building_electrics_button_desc: "" # 17241709254077376921
   zw_expand_building_electrics_button_effect: "$zw_expand_building_electrics_button_effect_breakdown_01$$zw_expand_building_electrics_button_effect_breakdown_02$$zw_expand_building_electrics_button_effect_breakdown_03$$zw_expand_building_electrics_button_effect_breakdown_04$$zw_expand_building_electrics_button_effect_breakdown_05$" # 11687200416654061012
   zw_expand_building_electrics_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
@@ -209,6 +209,7 @@
   zw_expand_building_plantations_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_plantations_button_cl')]" # 8510612395843398784
   zw_expand_building_plantations_button_cl_1: "#gold @green_checkmark_box! 환금 작물#!" # 18071699789118384230
   zw_expand_building_plantations_button_cl_2: "@simple_box! 환금 작물" # 14590891332586803157
+  zw_expand_building_plantations_button_desc: "" # 17241709254077376921
   zw_expand_building_plantations_button_effect: "$zw_expand_building_plantations_button_effect_breakdown_01$$zw_expand_building_plantations_button_effect_breakdown_02$$zw_expand_building_plantations_button_effect_breakdown_03$$zw_expand_building_plantations_button_effect_breakdown_04$$zw_expand_building_plantations_button_effect_breakdown_05$$zw_expand_building_plantations_button_effect_breakdown_06$" # 17019426736697305582
   zw_expand_building_plantations_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_plantations_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_coffee_plantation').GetName]#!" # 15572317356451509528
@@ -219,6 +220,7 @@
   zw_expand_building_shipyards_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_shipyards_button_cl')]" # 696673563575331287
   zw_expand_building_shipyards_button_cl_1: "#gold @green_checkmark_box! 조선업#!" # 8556454294420248603
   zw_expand_building_shipyards_button_cl_2: "@simple_box! 조선" # 12673347528174735267
+  zw_expand_building_shipyards_button_desc: "" # 17241709254077376921
   zw_expand_building_shipyards_button_effect: "$zw_expand_building_shipyards_button_effect_breakdown_01$$zw_expand_building_shipyards_button_effect_breakdown_02$$zw_expand_building_shipyards_button_effect_breakdown_03$" # 9337528143650951070
   zw_expand_building_shipyards_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_shipyards_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_shipyards').GetName]#!" # 16330948038542728157
@@ -226,6 +228,7 @@
   zw_expand_building_military_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_military_button_cl')]" # 13857178608078485344
   zw_expand_building_military_button_cl_1: "#gold @green_checkmark_box! 군수품#!" # 14414509502009003066
   zw_expand_building_military_button_cl_2: "@simple_box! 군수품" # 15749733731772973996
+  zw_expand_building_military_button_desc: "" # 17241709254077376921
   zw_expand_building_military_button_effect: "$zw_expand_building_military_button_effect_breakdown_01$\n$zw_expand_building_military_button_effect_breakdown_02$\n$zw_expand_building_military_button_effect_breakdown_03$\n$zw_expand_building_military_button_effect_breakdown_04$" # 9885049741799467336
   zw_expand_building_military_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_military_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_arms_industry').GetName]#!" # 10422329869919615720
@@ -234,12 +237,9 @@
   zw_expand_building_other_button: "[ROOT.GetCountry.GetCustom('zw_expand_building_other_button_cl')]" # 2861607390715875374
   zw_expand_building_other_button_cl_1: "#gold @green_checkmark_box! 기타#!" # 10208326316257731356
   zw_expand_building_other_button_cl_2: "@simple_box! 기타" # 1805205524592968043
+  zw_expand_building_other_button_desc: "" # 17241709254077376921
   zw_expand_building_other_button_effect: "$zw_expand_building_other_button_effect_breakdown_01$$zw_expand_building_other_button_effect_breakdown_02$$zw_expand_building_other_button_effect_breakdown_03$$zw_expand_building_other_button_effect_breakdown_04$" # 14417064466328828036
   zw_expand_building_other_button_effect_breakdown_01: "다음 건물을 포함하여:" # 12781790513690862652
   zw_expand_building_other_button_effect_breakdown_02: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_gold_mine').GetName]#!" # 1416877170969118084
   zw_expand_building_other_button_effect_breakdown_03: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_arts_academy').GetName]#!" # 10435173824527551778
   zw_expand_building_other_button_effect_breakdown_04: "#indent_newline:4 \n$EFFECT_LIST_BULLET$[GetBuildingType('building_port').GetName]#!" # 10653895655970913934
-  zw_expand_building_plantations_button_desc: "" # 17241709254077376921
-  zw_expand_building_shipyards_button_desc: "" # 17241709254077376921
-  zw_expand_building_military_button_desc: "" # 17241709254077376921
-  zw_expand_building_other_button_desc: "" # 17241709254077376921

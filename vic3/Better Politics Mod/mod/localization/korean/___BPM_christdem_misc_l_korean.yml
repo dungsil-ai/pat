@@ -213,8 +213,10 @@
   democracy_leaning_illiberal_democrat_tt: "#bold 기독교#의 #bold 이념적 성향 진행도# 진행률 표시줄에서 #gold 33%# 이하를 기록하고 있습니다!" # 13592925327440165175
   bpm_christdem_split.50.t: "경제 문제 재검토" # 13315152019644420758
   bpm_christdem_split.50.d: "주의 경제 상황의 최근 변화, 전반적인 생활 수준, 그리고 내부적 긴장 상태가 @ig_christian_democrats! #blue 기독교 민주당#과 그들의 국가 개입, 무역 및 과세에 대한 견해에 영향을 미치기 시작했으며, 이는 그들의 현재 및 기존 경제적 입장에 대한 대안을 모색하는 내부 논쟁과 변화로 이어졌고, 이전에 잠잠했던 목소리들이 표출되게 만들었습니다." # 5330291513631596981
+  bpm_christdem_split.50.f: "" # 17241709254077376921
   bpm_christdem_split.51.t: "이념적 문제 재검토" # 8843161987360363600
   bpm_christdem_split.51.d: "주(state)의 정치 체제에 대한 최근 변화, 발전하는 근대주의적 사상, 그리고 내부적 긴장은 @ig_christian_democrats! #blue 기독교 민주당#!과 그들의 정치 체제 및 참정권에 대한 견해, 중앙집권화 및 발전하는 국가에 대한 대응에 영향을 미치기 시작했으며, 이는 그들을 현재의 기존 경제적 입장과 대안에 대한 내부 논쟁과 변화로 이끌었고, 이전에 잠잠했던 목소리들을 표출하게 만들었습니다." # 4465063917521788929
+  bpm_christdem_split.51.f: "" # 17241709254077376921
   bpm_christdem_split.4.t: "주 권력과 분권화에 관하여" # 7833149724870594567
   bpm_christdem_split.4.desc: "국가의 분권화와 지방 조직 강화에 대한 열망은 가톨릭 신자들에게 언제나 중요했습니다. 대부분은 국가의 분권화가 필요하다는 데 동의하지만, 그 정도에 대해서는 의견이 다릅니다.\n\n한 집단은 강력하게 연방화된 응집력 있는 국가를 유지하거나 도입해야 한다고 믿는 반면, 다른 집단은 국가의 약점과 무능함을 지적하며 훨씬 더 깊은 수준의 국가 분권화를 추구합니다." # 10316023630425027616
   bpm_christdem_split.4.f: "국가는 정의상 간단한 구두 수선점조차 경영할 능력이 없다.\n\n— 루이지 스투르초, 1951년" # 5435069196139529899
@@ -268,6 +270,7 @@
   bpm_christdem_split.10.c: "우리는 완전하고 보편적인 군축을 추구해야 합니다." # 7949236617471175476
   bpm_christdem_split.11.t: "여성과 참정권에 관하여" # 13095777160039028715
   bpm_christdem_split.11.desc: "가톨릭 평신도들에게 가정은 극도로 중요하며, 그들은 가정이 생겨난 이래로 가정을 수호하고 지지하고자 노력해왔습니다.\n\n여성주의가 등장함에 따라 가톨릭 신자들 역시 여성에 대한 인식이 바뀌었으며, 대다수는 여성의 투표권을 보장하기를 원하지만, 여전히 일부는 여성이 가정에 머물기를 선호합니다.\n\n하지만 여성의 정치 참여 자체를 원치 않는 이들도 존재합니다." # 2631058354222000541
+  bpm_christdem_split.11.f: "" # 17241709254077376921
   bpm_christdem_split.11.a: "여성들은 투표할 수 있어야 하지만, 사실 그들의 적절한 자리는 가정에 있습니다." # 14345555328960496653
   bpm_christdem_split.11.b: "여성의 적절한 자리는 오직 가정에 있습니다." # 17100983360062295287
   bpm_christdem_split.12.t: "기독교 민주주의의 부상" # 3830441656322168905
@@ -412,6 +415,7 @@
   bpm_new_wine_old_wineskins_flavour.2.a: "교황께서 의도하신 바와 같이." # 15741903545493403192
   bpm_new_wine_old_wineskins_flavour.3.t: "석유와 물" # 2097838177838359638
   bpm_new_wine_old_wineskins_flavour.3.d: "@ig_christian_democrats!의 부상! 기독교 민주주의자들과 그들의 @ig_conservatives!에 대한 투쟁! 고전적 보수주의자들은 양측이 서로를 파괴하지 못한 채 끝없는 현상 유지 상태에 머물렀습니다." # 7752596403135370065
+  bpm_new_wine_old_wineskins_flavour.3.f: "" # 17241709254077376921
   bpm_new_wine_old_wineskins_flavour.3.a: "그것은... 실망스럽군요..." # 903815792390200523
   bpm_new_wine_old_wineskins_flavour.4.t: "도전받지 않는 우익" # 11578463811502417121
   bpm_new_wine_old_wineskins_flavour.4.d: "선도적인 @ig_conservatives! 보수파의 지도자인 [SCOPE.sCharacter('unchallanged_right_winger').GetFullName]가 자신이야말로 진정으로 정치적 우파를 대변하는 유일한 지도자라고 주장했습니다. 그는 자신과 자신의 보수주의에 반대하는 모든 이들을 공개적으로 비난했으며, 지지를 더욱 얻고 있습니다." # 7199177369396175003
@@ -614,7 +618,3 @@
   from_devout_atheism: "무신론 국가에서의 독실함" # 9979868751980787538
   bpm_from_an_undemocratic_state: "빈약한 자유주의 국가" # 10006286164499179493
   christdems_have_centralized_economy_tooltip: "[GetInterestGroupVariant('ig_christian_democrats',GetPlayer).GetNameWithCountryVariant] #bold 은#! [GetIdeology('ideology_eco_centralized_economy').GetName]를 지지하며 현재 [concept_in_government] 상태입니다." # 17068764936998504870
-  bpm_christdem_split.50.f: "" # 17241709254077376921
-  bpm_christdem_split.51.f: "" # 17241709254077376921
-  bpm_christdem_split.11.f: "" # 17241709254077376921
-  bpm_new_wine_old_wineskins_flavour.3.f: "" # 17241709254077376921

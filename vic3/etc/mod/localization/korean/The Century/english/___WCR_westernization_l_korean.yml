@@ -1,5 +1,6 @@
 ﻿l_korean:
   WCR_je_westernization: "서구화" # 4539143986758732333
+  WCR_je_westernization_goal: "" # 17241709254077376921
   WCR_je_westernization_reason: "이 급변하는 산업화 시대에 진정한 강국으로 발돋움하고 주권 상실을 막으려면, 우리 국가는 서구 열강과 동등한 지위를 확보해야 하며, 그 대가가 무엇이든 감수해야 할 것입니다. 여기에는 서구의 관습을 우리 사회에 수용하는 것이 포함되어야 합니다.\n\n$WCR_je_westernization_reason_long$" # 15612695639991092263
   WCR_de_start_westernization: "서구화 의복을 시작합니다" # 7140552335317732286
   WCR_de_start_westernization_desc: "귀국의 의복을 서구화하는 절차를 시작하십시오.\n서구화가 완료되면 대부분의 인구와 인물들이 서구식 복장을 착용하게 될 것입니다." # 14299426131836422373
@@ -91,4 +92,3 @@
   WCR_je_westernization_status_90_pb: "늘 고집스러운 [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetLeader.GetCustom('GetUniversalFullName')]와 [GetPopType('farmers').GetName]가 마침내 서구식 복장을 새로운 규범으로 받아들입니다." # 976155322535466885
   WCR_je_westernization_status_90_none: "고집불통인 [GetPopType('farmers').GetName]들이 마침내 서구식 복장을 새로운 규범으로 받아들입니다." # 6300914282819365361
   WCR_je_westernization_status_100: "서구화가 완료되었습니다!" # 6584721370440509339
-  WCR_je_westernization_goal: "" # 17241709254077376921

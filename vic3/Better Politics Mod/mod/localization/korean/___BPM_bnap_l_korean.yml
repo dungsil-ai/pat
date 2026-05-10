@@ -7,6 +7,7 @@
   bpm_bnap_british_payments_percent_base_value: "기본 가치" # 14764793505619138724
   bpm_british_engagement_progress_bar: "[ROOT.GetCountry.GetOverlord.GetAdjective] 참전" # 18101258251812991588
   bpm_british_engagement_progress_bar_left: "참여: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)" # 16920040436011712300
+  bpm_british_engagement_progress_bar_right: "" # 17241709254077376921
   bpm_british_engagement_from_relations: "[ROOT.GetCountry.GetOverlord.GetName]와의 관계" # 1074916608797672163
   bpm_british_engagement_from_economic_dependence: "[ROOT.GetCountry.GetEconomicDependenceOn(ROOT.GetCountry.GetOverlord)] [concept_economic_dependence]" # 17392768576480069393
   bpm_british_engagement_from_administrative_payments: "#variable [ROOT.GetCountry.MakeScope.ScriptValue('bpm_british_administrative_payments')|D+=]#!의 행정 지출이 #variable [ROOT.GetCountry.MakeScope.ScriptValue('bpm_bnap_income')|D+=]#!의 [ROOT.GetCountry.GetOverlord.GetAdjective] 수입과 비교됩니다!" # 15559924292657032495
@@ -132,10 +133,9 @@
   bpm_bnap_confederation_events.5.a: "위대한 북서부가 손짓합니다!" # 253334822457274517
   bpm_bnap_confederation_events.6.t: "빅토리아에서의 협상" # 7806553212060290967
   bpm_bnap_confederation_events.6.d: "브리티시컬럼비아가 이제 캐나다의 나머지 지역과 연결됨에 따라, 우리는 연방에 합류하기 위해 그곳 정부와 협상을 시작했습니다." # 1030583823682557060
+  bpm_bnap_confederation_events.6.f: "" # 17241709254077376921
   bpm_bnap_confederation_events.6.a: "바다에서 빛나는 바다까지 이르는 연방!" # 6700442624608199106
   bpm_bnap_confederation_events.6.b: "이래서는 안 됩니다..." # 6598563555128278319
   bpm_bnap_held_charlottetown_conference_tt: "이미 샬럿타운 회의를 개최했습니다" # 10454083612689857274
   bpm_bnap_has_bpm_canada_dominion_tt: "$je_bpm_bnap_confederation_quest$ [concept_journal_entry]을(를) 완료했습니다." # 5137080872357637644
   bpm_bnap_has_je_west_canada_complete_tt: "$je_west_canada$ [concept_journal_entry]를 완료했습니다." # 12970583090841361725
-  bpm_british_engagement_progress_bar_right: "" # 17241709254077376921
-  bpm_bnap_confederation_events.6.f: "" # 17241709254077376921

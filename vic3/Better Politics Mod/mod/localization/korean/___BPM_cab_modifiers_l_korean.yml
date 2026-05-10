@@ -225,6 +225,7 @@
   bpm_schools_unions_modifier_desc: "[GetStaticModifier('bpm_schools_unions_modifier').GetDesc]" # 9412374569233438857
   bpm_schools_christdem_modifier_desc: "[GetStaticModifier('bpm_schools_christdems_modifier').GetDesc]" # 12040529409254353064
   bpm_schools_attraction_modifier_desc: "[GetStaticModifier('bpm_schools_attraction_modifier').GetDesc]" # 7031623672909923579
+  bpm_colonial_affairs_fallback_modifier_desc: "" # 17241709254077376921
   bpm_colonial_affairs_cons_modifier_desc: "[GetStaticModifier('bpm_colonial_affairs_cons_modifier').GetDesc]" # 11189948240213271600
   bpm_colonial_affairs_fash_modifier_desc: "[GetStaticModifier('bpm_colonial_affairs_fash_modifier').GetDesc]" # 9990869165810968849
   bpm_colonial_affairs_libs_modifier_desc: "[GetStaticModifier('bpm_colonial_affairs_libs_modifier').GetDesc]" # 14767972637990330737
@@ -351,6 +352,7 @@
   bpm_hog_antagonism_modifier_double: "[GetStaticModifier('bpm_hog_antagonism_double_modifier').GetDesc]" # 5926934167846910498
   bpm_hog_antagonism_modifier_triple: "[GetStaticModifier('bpm_hog_antagonism_triple_modifier').GetDesc]" # 12725979232384201641
   bpm_hog_antagonism_modifier_ultra: "[GetStaticModifier('bpm_hog_antagonism_ultra_modifier').GetDesc]" # 16863371094686623510
+  bpm_hog_antagonism_modifier_none: "" # 17241709254077376921
   bpm_hog_synergy_modifier_low: "#v 낮은 시너지 (#N < 60%#!) 효과:#!\n[GetStaticModifier('bpm_low_synergy_modifier').GetDesc]" # 17742544761873352102
   bpm_hog_synergy_modifier_mid: "#v 중간 수준(#YB 60% ~ 80%#!) 시너지로부터의 시너지 효과:#!\n[GetStaticModifier('bpm_mid_synergy_modifier').GetDesc]" # 1842854574100787044
   bpm_hog_synergy_modifier_high: "#v 높은 (#P => 80%#!) 시너지 효과:#!\n[GetStaticModifier('bpm_high_synergy_modifier').GetDesc]" # 10609770833440570297
@@ -362,5 +364,3 @@
   bpm_mid_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_low_synergy_modifier: "[concept_bpm_synergy]" # 2662373985745582058
   bpm_hog_attraction_modifier: "$bpm_hog_title_default_contextless$" # 5658490975256820160
-  bpm_colonial_affairs_fallback_modifier_desc: "" # 17241709254077376921
-  bpm_hog_antagonism_modifier_none: "" # 17241709254077376921

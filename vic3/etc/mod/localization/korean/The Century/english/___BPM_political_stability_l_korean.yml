@@ -53,11 +53,17 @@
   bpm_decorative_modify_rigidity_rate: "[Concept('concept_bpm_political_stability', 'Rigidity')] 변경률" # 14850266121034681247
   bpm_decorative_modify_rigidity_rate_desc: "우리 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율에 대한 증가 또는 감소." # 7600267007516481032
   bpm_decorative_modify_rigidity_per_suffrage_investment: "[GetInstitutionType('institution_suffrage').GetName] [Concept('concept_institution', '제도')] 수준당 [Concept('concept_bpm_political_stability', '경직성')] 목표치" # 13074280158307495189
+  bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_police_investment: "[GetInstitutionType('institution_police').GetName] [Concept('concept_institution', '제도')] 수준당 [Concept('concept_bpm_political_stability', '경직성')] 목표치" # 9532728084518394789
+  bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_security_investment: "[GetInstitutionType('institution_home_affairs').GetName] [Concept('concept_institution', '제도')] 수준당 [Concept('concept_bpm_political_stability', '경직성')] 목표치" # 1583493762670978322
+  bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_culture_investment: "[GetInstitutionType('institution_culture').GetName] [Concept('concept_institution', 'Institution')] 수준당 [Concept('concept_bpm_political_stability', 'Rigidity')] 목표치" # 10453059667730219482
+  bpm_decorative_modify_rigidity_per_culture_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_rate_per_police_investment: "[Concept('concept_bpm_political_stability', '경직성')] 변화율은 [GetInstitutionType('institution_police').GetName] [Concept('concept_institution', '제도')] 수준당" # 5029001695409224828
+  bpm_decorative_modify_rigidity_rate_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_rate_per_security_investment: "[Concept('concept_bpm_political_stability', '경직성')] [Concept('concept_institution', '제도')] [GetInstitutionType('institution_home_affairs').GetName] 단계당 변화율" # 12952562325705479054
+  bpm_decorative_modify_rigidity_rate_per_security_investment_desc: "" # 17241709254077376921
   bpm_political_stability_baseline_tooltip: "이 기준선은 주로 해당 국가가 보유한 [Concept('concept_law', '법률')]의 영향을 받으며 (전통주의적이고 억압적인 법률은 안정성을 높이는 방향으로 영향을 줌), [Concept('concept_radical', '급진파')]와 [Concept('concept_loyalist', '충성파')]의 존재 여부, 또는 진행 중인 [Concept('concept_revolution', '혁명')], [Concept('concept_war', '전쟁')]이나 [Concept('concept_election', '선거')]의 영향을 받습니다.$bpm_political_stability_baseline_value_tt$" # 15259387888740272949
   bpm_political_stability_rate_tooltip: "[Concept('concept_bpm_political_stability', '$concept_bpm_political_stability$')]이 목표치에 도달하는 속도는 대개 느린 편입니다. 진행 중인 [Concept('concept_revolution', '혁명')], [Concept('concept_war', '전쟁')] 또는 [Concept('concept_election', '선거')]은 이 속도를 가속화합니다.$bpm_political_stability_rate_value_tt$" # 9233070351540139282
   bpm_political_stability: "[Concept('concept_bpm_political_stability', '$concept_bpm_political_stability$')]" # 9470758526676256642
@@ -72,9 +78,3 @@
   country_rigidity_rate_add_desc: "우리 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율에 대한 증가 또는 감소." # 7600267007516481032
   country_rigidity_rate_mult: "[Concept('concept_bpm_political_stability', 'Rigidity')] 변경률" # 14850266121034681247
   country_rigidity_rate_mult_desc: "우리 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율에 대한 증가 또는 감소." # 7600267007516481032
-  bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_culture_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_rate_per_police_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_rate_per_security_investment_desc: "" # 17241709254077376921

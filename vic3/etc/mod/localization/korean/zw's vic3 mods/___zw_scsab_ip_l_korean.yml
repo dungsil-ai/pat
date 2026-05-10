@@ -2,6 +2,7 @@
   je_zw_industrial_planning: "산업 계획" # 4231908764142987241
   je_zw_industrial_planning_reason: "적합한 주에 중요한 현지 공급망을 구축하십시오." # 2942425742431615947
   zw_ip_machine_button: "새로운 공급망 @tools!" # 10570987691010166608
+  zw_ip_machine_button_desc: "" # 17241709254077376921
   zw_ip_machine_button_effect: "$zw_ip_machine_button_effect_1$$zw_ip_machine_button_effect_2$$zw_ip_machine_button_effect_3$$zw_ip_machine_button_effect_4$$zw_ip_machine_button_effect_5$$zw_ip_machine_button_effect_6$" # 11527031013258990011
   zw_ip_machine_button_effect_1: "적절한 주에 새로운 #white #b 기계#!#! 공급망을 구축하십시오." # 11791289009511919769
   zw_ip_machine_button_effect_2: "\n\n[ROOT.GetCountry.GetNameNoFlag]의 현재 기술로 허용되는 건물 유형만 포함됩니다." # 13820854352172124626
@@ -17,6 +18,7 @@
   zw_ip_machine_button_effect_5_7: "#indent_newline:12 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_rubber_plantation').GetName] 지원#!" # 18402775884050182766
   zw_ip_machine_button_effect_6: "\n\n주에 #white #b 인구#!#!가 많을수록, 주에 적합한 #white #b 자원#!#!이 많을수록, 해당 주에 더 높은 우선순위가 부여됩니다.\n" # 12825678453385165080
   zw_ip_chemical_button: "새로운 공급망 @fertilizer!" # 7711333436770912086
+  zw_ip_chemical_button_desc: "" # 17241709254077376921
   zw_ip_chemical_button_effect: "$zw_ip_chemical_button_effect_1$$zw_ip_chemical_button_effect_2$$zw_ip_chemical_button_effect_3$$zw_ip_chemical_button_effect_4$$zw_ip_chemical_button_effect_5$$zw_ip_chemical_button_effect_6$" # 9009800764633154123
   zw_ip_chemical_button_effect_1: "적합한 주에 #white #b 화학품#!#!의 새로운 공급망을 건설하십시오." # 5010035784904265110
   zw_ip_chemical_button_effect_2: "\n\n[ROOT.GetCountry.GetNameNoFlag]의 현재 기술로 허용되는 건물 유형만 포함됩니다." # 13820854352172124626
@@ -25,6 +27,7 @@
   zw_ip_chemical_button_effect_5: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_sulfur_mine').GetName] 지원#!" # 16077231864201422561
   zw_ip_chemical_button_effect_6: "\n\n주에 #white #b 인구#!#!가 많을수록, 주에 적합한 #white #b 자원#!#!이 많을수록, 해당 주에 더 높은 우선순위가 부여됩니다.\n" # 12825678453385165080
   zw_ip_glass_button: "새로운 공급망 @glass!" # 8421699572271586116
+  zw_ip_glass_button_desc: "" # 17241709254077376921
   zw_ip_glass_button_effect: "$zw_ip_glass_button_effect_1$$zw_ip_glass_button_effect_2$$zw_ip_glass_button_effect_3$$zw_ip_glass_button_effect_4$$zw_ip_glass_button_effect_5$$zw_ip_glass_button_effect_6$" # 14710899885504138986
   zw_ip_glass_button_effect_1: "적합한 주에 #white #b 유리와 도자기#!#의 새로운 공급망을 구축하십시오." # 1939323025668204682
   zw_ip_glass_button_effect_2: "\n\n[ROOT.GetCountry.GetNameNoFlag]의 현재 기술로 허용되는 건물 유형만 포함됩니다." # 13820854352172124626
@@ -33,6 +36,7 @@
   zw_ip_glass_button_effect_5: "#indent_newline:4 \n$EFFECT_LIST_BULLET$ [GetBuildingType('building_lead_mine').GetName]에 대한 지원#!" # 9281211405191254120
   zw_ip_glass_button_effect_6: "\n\n주에 #white #b 인구#!#!가 많을수록, 주에 적합한 #white #b 자원#!#!이 많을수록, 해당 주에 더 높은 우선순위가 부여됩니다.\n" # 12825678453385165080
   zw_ip_electrics_button: "새로운 공급망 @telephones!" # 922268223495898063
+  zw_ip_electrics_button_desc: "" # 17241709254077376921
   zw_ip_electrics_button_effect: "$zw_ip_electrics_button_effect_1$$zw_ip_electrics_button_effect_2$$zw_ip_electrics_button_effect_3$$zw_ip_electrics_button_effect_4$$zw_ip_electrics_button_effect_5$$zw_ip_electrics_button_effect_6$" # 8250648136164810439
   zw_ip_electrics_button_effect_1: "적절한 주에 #white #b 전기 제품#!#!의 새로운 공급망을 건설하세요." # 16246647248603267168
   zw_ip_electrics_button_effect_2: "\n\n[ROOT.GetCountry.GetNameNoFlag]의 현재 기술로 허용되는 건물 유형만 포함됩니다." # 13820854352172124626
@@ -45,22 +49,18 @@
   zw_ip_electrics_button_effect_5_4: "#indent_newline:8 \n$EFFECT_LIST_BULLET$지원 [GetBuildingType('building_rubber_plantation').GetName]#!" # 6329306553468318039
   zw_ip_electrics_button_effect_6: "\n\n주에 #white #b 인구#!#!가 많을수록, 주에 적합한 #white #b 자원#!#!이 많을수록, 해당 주에 더 높은 우선순위가 부여됩니다.\n" # 12825678453385165080
   zw_ip_incorporated_button: "편입된 주" # 15291668805982370161
+  zw_ip_incorporated_button_desc: "" # 17241709254077376921
   zw_ip_incorporated_button_effect: "새로운 공급망은 편입된 주에서만 계획될 것입니다." # 15562539878800041170
   zw_ip_current_state_percent_button: "주 비중" # 2513397617030678191
+  zw_ip_current_state_percent_button_desc: "" # 17241709254077376921
   zw_ip_current_state_percent_button_effect: "주 30% 이상이 이미 이 공급망을 보유하고 있다면 새로운 공급망은 계획되지 않습니다." # 670103935400667593
   zw_ip_state_factories_num_button: "공장 수" # 8190078693649237083
+  zw_ip_state_factories_num_button_desc: "" # 17241709254077376921
   zw_ip_state_factories_num_button_effect: "공급망은 공장 유형이 특정 수 미만인 주에서만 계획됩니다." # 10371715255103215420
   zw_ip_state_factories_num_button_effect_0: "#white #b 현재 개수: 무제한#!#!\n\n#yellow #b 숫자를 변경하려면 버튼을 다시 클릭하십시오.#!#!" # 3456840153811365486
   zw_ip_state_factories_num_button_effect_1: "#white #b 현재 숫자: 1#!#!\n\n#yellow #b 숫자를 변경하려면 버튼을 다시 클릭하십시오.#!#!" # 11752638352176974609
   zw_ip_state_factories_num_button_effect_2: "#white #b 현재 숫자: 3#!#!\n\n#yellow #b 숫자를 변경하려면 버튼을 다시 클릭하십시오.#!#!" # 5286365363635610147
   zw_ip_state_factories_num_button_effect_3: "#white #b 현재 숫자: 5#!#!\n\n#yellow #b 숫자를 변경하려면 버튼을 다시 클릭하십시오.#!#!" # 11102262910789903499
   zw_ip_flexible_resource_conditions_button: "유연한 자원 제한" # 1692761486159130227
-  zw_ip_flexible_resource_conditions_button_effect: "적합한 자원을 보유한 주들은 훨씬 더 높은 우선순위가 부여될 것이지만, 다른 주들 또한 고려될 것입니다." # 2950934586500849052
-  zw_ip_machine_button_desc: "" # 17241709254077376921
-  zw_ip_chemical_button_desc: "" # 17241709254077376921
-  zw_ip_glass_button_desc: "" # 17241709254077376921
-  zw_ip_electrics_button_desc: "" # 17241709254077376921
-  zw_ip_incorporated_button_desc: "" # 17241709254077376921
-  zw_ip_current_state_percent_button_desc: "" # 17241709254077376921
-  zw_ip_state_factories_num_button_desc: "" # 17241709254077376921
   zw_ip_flexible_resource_conditions_button_desc: "" # 17241709254077376921
+  zw_ip_flexible_resource_conditions_button_effect: "적합한 자원을 보유한 주들은 훨씬 더 높은 우선순위가 부여될 것이지만, 다른 주들 또한 고려될 것입니다." # 2950934586500849052

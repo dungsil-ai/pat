@@ -3,6 +3,7 @@
   je_com_progress_in_style_reason: "이 일지 항목은 CMF에서 가능한 진행 표시줄의 일부 스타일을 보여줍니다." # 4972777602236549445
   spb_com_progress_in_style_name: "샘플 막대" # 6898730475448106690
   spb_com_progress_in_style_desc: "샘플 막대" # 6898730475448106690
+  spb_com_progress_in_style_right_desc: "" # 17241709254077376921
   sb_com_progress_in_style_test: "가시성 전환" # 5658540621854314777
   sb_com_progress_in_style_test2: "사이클 바 왼쪽 색상" # 11070130746477890344
   sb_com_progress_in_style_test3: "주기 막대 목표 양식" # 5150997963595636651
@@ -30,4 +31,3 @@
   com_progress_bar_levels_4: "4" # 10464417414901951369
   com_progress_bar_levels_5: "5" # 7674613650421074157
   com_progress_bar_levels_clear: "없음" # 640747180730880794
-  spb_com_progress_in_style_right_desc: "" # 17241709254077376921
