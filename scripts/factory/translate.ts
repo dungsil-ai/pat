@@ -541,6 +541,9 @@ async function cleanupOrphanedFiles(
 
   // expectedKoreanFiles를 Set으로 변환하여 빠른 검색
   const expectedSet = new Set(expectedKoreanFiles.map(path => normalizePathForComparison(path)))
+  const expectedCaseInsensitiveSet = new Set(
+    expectedKoreanFiles.map(path => normalizePathForComparison(path).toLowerCase())
+  )
   const excludedSet = excludedSubDirs
     .map(path => normalizePathForComparison(path))
     .map(path => path.endsWith('/') ? path : `${path}/`)
@@ -555,6 +558,18 @@ async function cleanupOrphanedFiles(
     }
     
     if (!expectedSet.has(normalizedFullPath)) {
+      if (expectedCaseInsensitiveSet.has(normalizedFullPath.toLowerCase())) {
+        log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 이전 파일 제거: ${file}`)
+        try {
+          await execAsync(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, { cwd: projectRoot })
+          log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
+        } catch (error) {
+          const errMsg = (error && typeof error === 'object' && 'message' in error) ? (error as Error).message : String(error)
+          log.warn(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 중 오류 발생: ${file} - ${errMsg}`)
+        }
+        continue
+      }
+
       log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
       try {
         // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백
@@ -808,6 +823,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     }
 
     log.verbose(`[${mode}/${file}:${key}] ${shouldTransliterate ? '음역' : '번역'} 요청 대기열 추가: ${sourceHash} | "${sourceValue}"`)
+    newYaml.l_korean[key] = [targetValue ?? sourceValue, targetHash ?? null]
     pendingTranslations.push({ key, sourceValue, sourceHash, shouldTransliterate })
 
     if (pendingTranslations.length >= TRANSLATE_BATCH_SIZE) {

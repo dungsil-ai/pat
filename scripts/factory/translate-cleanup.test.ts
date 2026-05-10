@@ -363,6 +363,51 @@ language = "english"
     expect(existsSync(nestedOutput)).toBe(false)
   })
 
+  it('업스트림 파일명이 대소문자만 바뀌면 이전 한국어 파일을 제거해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const koreanDir = join(modDir, 'mod', 'localization', 'korean')
+
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await mkdir(koreanDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'bpm_crisis_l_english.yml'), `l_english:
+ key1:0 "Value 1"
+`, 'utf-8')
+    await writeFile(join(koreanDir, '___BPM_crisis_l_korean.yml'), `l_korean:
+ key1: "기존 값" # old-hash
+`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git rm --ignore-unmatch -f --') &&
+        cmd.includes('___BPM_crisis_l_korean.yml')
+      )
+    ).toBe(true)
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git checkout HEAD --') &&
+        cmd.includes('___BPM_crisis_l_korean.yml')
+      )
+    ).toBe(false)
+  })
+
   it('중첩된 localization 경로가 있어도 하위 경로 파일을 상위 경로 정리에서 롤백하지 않아야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
