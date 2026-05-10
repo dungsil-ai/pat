@@ -408,6 +408,54 @@ language = "english"
     ).toBe(false)
   })
 
+  it('같은 대상 디렉토리를 공유하는 여러 localization 경로는 서로의 파일을 롤백하지 않아야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const firstEnglishDir = join(upstreamDir, 'first-pack', 'localization', 'english')
+    const secondEnglishDir = join(upstreamDir, 'second-pack', 'localization', 'english')
+    const koreanDir = join(modDir, 'mod', 'localization', 'korean')
+
+    const metaContent = `
+[upstream]
+localization = ["first-pack/localization/english", "second-pack/localization/english"]
+language = "english"
+`
+
+    await mkdir(firstEnglishDir, { recursive: true })
+    await mkdir(secondEnglishDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+
+    await writeFile(join(firstEnglishDir, 'first_l_english.yml'), `l_english:
+ first_key:0 "First Value"
+`, 'utf-8')
+    await writeFile(join(secondEnglishDir, 'second_l_english.yml'), `l_english:
+ second_key:0 "Second Value"
+`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    const firstOutput = join(koreanDir, '___first_l_korean.yml')
+    const secondOutput = join(koreanDir, '___second_l_korean.yml')
+
+    await access(firstOutput)
+    await access(secondOutput)
+
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git checkout HEAD --') &&
+        (cmd.includes('___first_l_korean.yml') || cmd.includes('___second_l_korean.yml'))
+      )
+    ).toBe(false)
+  })
+
   it('중첩된 localization 경로가 있어도 하위 경로 파일을 상위 경로 정리에서 롤백하지 않아야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
