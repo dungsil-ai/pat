@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { mkdir, readFile, writeFile, rm, access } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, rm, access, symlink } from 'node:fs/promises'
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'pathe'
 import { tmpdir } from 'node:os'
@@ -1637,6 +1637,48 @@ language = "english"
     expect(secondRunCallCount).toBe(firstRunCallCount + 1)
   })
 
+  it('업스트림 해시 파일 경로가 심볼릭 링크면 대상 파일을 덮어쓰지 않아야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { log } = await import('../utils/logger')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(
+      join(upstreamDir, 'symlink-target_l_english.yml'),
+      `l_english:
+  key_1: "hello"`,
+      'utf-8'
+    )
+
+    const overwriteTargetPath = join(testDir, 'do-not-overwrite.txt')
+    const projectRoot = join(testDir, '..')
+    const untranslatedItemsPath = join(projectRoot, 'ck3-untranslated-items.json')
+    await writeFile(overwriteTargetPath, '원본 내용', 'utf-8')
+    await symlink(overwriteTargetPath, join(upstreamDir, '.pat-file-hashes.json'))
+
+    try {
+      await processModTranslations({
+        rootDir: testDir,
+        mods: ['test-mod'],
+        gameType: 'ck3',
+        onlyHash: false
+      })
+
+      const targetContent = await readFile(overwriteTargetPath, 'utf-8')
+      expect(targetContent).toBe('원본 내용')
+      expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('일반 파일이 아닙니다'))
+    } finally {
+      await rm(untranslatedItemsPath, { force: true })
+    }
+  })
 })
 
 // 지정된 개수의 항목을 가진 YAML 파일을 생성하는 헬퍼 함수
