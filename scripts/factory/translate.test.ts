@@ -1460,19 +1460,25 @@ language = "english"
     )
 
     const overwriteTargetPath = join(testDir, 'do-not-overwrite.txt')
+    const projectRoot = join(testDir, '..')
+    const untranslatedItemsPath = join(projectRoot, 'ck3-untranslated-items.json')
     await writeFile(overwriteTargetPath, '원본 내용', 'utf-8')
     await symlink(overwriteTargetPath, join(upstreamDir, '.pat-file-hashes.json'))
 
-    await processModTranslations({
-      rootDir: testDir,
-      mods: ['test-mod'],
-      gameType: 'ck3',
-      onlyHash: false
-    })
+    try {
+      await processModTranslations({
+        rootDir: testDir,
+        mods: ['test-mod'],
+        gameType: 'ck3',
+        onlyHash: false
+      })
 
-    const targetContent = await readFile(overwriteTargetPath, 'utf-8')
-    expect(targetContent).toBe('원본 내용')
-    expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('일반 파일이 아닙니다'))
+      const targetContent = await readFile(overwriteTargetPath, 'utf-8')
+      expect(targetContent).toBe('원본 내용')
+      expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringContaining('일반 파일이 아닙니다'))
+    } finally {
+      await rm(untranslatedItemsPath, { force: true })
+    }
   })
 })
 
