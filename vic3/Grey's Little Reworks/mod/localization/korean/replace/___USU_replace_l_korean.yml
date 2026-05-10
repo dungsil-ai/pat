@@ -1,0 +1,22 @@
+﻿l_korean:
+  alert_wasted_construction_hint: "사용하지 않는 [concept_construction] 보유" # 6563085765962409365
+  alert_wasted_construction_action: "건설 패널" # 5963572599170049986
+  pm_electric_trains: "직류 전기 열차" # 448527498079749183
+  pm_electric_trains_principle_transport_3: "직류 전기 열차 연결" # 16385019183115034476
+  pm_electric_streetlights: "달빛 탑" # 13587811020134359344
+  pm_canal: "증기 동력 갑문" # 14738540420392698123
+  company_panama_suez_company: "파나마-수에즈 운하 회사" # 16024315073742008509
+  pm_no_public_transport: "대중교통 없음" # 12196960432393836522
+  pm_public_trams: "마차 전차" # 4504590729088734683
+  pm_public_motor_carriages: "시내버스" # 2220586704129832264
+  bg_power: "화력 발전소" # 10917588301642361549
+  building_power_plant: "화력 발전소" # 15007883869211762133
+  building_railway: "철도 터미널" # 16291953549960239492
+  goods_output_electricity_mult: "건물 @electricity! [Nbsp]$electricity$ 생산량" # 6905719502265443247
+  goods_output_electricity_mult_desc: "건물에서 생산되는 @electricity! [Nbsp]$electricity$ 양에 대한 보너스 또는 페널티" # 15832060707727824864
+  goods_input_luxury_clothes_add: "@luxury_clothes! [Nbsp]$luxury_clothes$ 투입" # 11828789859629137669
+  goods_input_luxury_clothes_add_desc: "건물에서 소비하는 @luxury_clothes! [Nbsp]$luxury_clothes$ 양" # 8069837810947184496
+  goods_input_services_add: "@services! [Nbsp]$services$ 투입" # 7523870387199858561
+  alert_wasted_construction_name: "사용되지 않은 [concept_construction] 보유" # 6563085765962409365
+  wasted_construction_setting_name: "사용되지 않은 건설" # 14901759962858396028
+  goods_input_services_add_desc: "건물이 소비하는 @services! [Nbsp]$services$의 양" # 17020283761910367469

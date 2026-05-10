@@ -188,3 +188,10 @@
   company_cohere: "코히어" # 12834665864428277560
   company_foxconn: "폭스콘" # 5393018536204626944
   prestige_good_gpu: "엔비디아 GPU" # 11600657086683868925
+  generic_company_basic_consulting_dynamic_name_tag_singular: "컨설팅" # 14034268432361885497
+  generic_company_basic_consulting_dynamic_name_tag_plural: "자문가" # 13236711635993724126
+  company_deloitte: "딜로이트" # 1330999395440088214
+  company_mckinsey: "맥킨지 앤 컴퍼니" # 18239638104616572236
+  company_roland_berger: "롤랜드 버거" # 2565831192013735615
+  company_capgemini: "캡제미니" # 13095048899191392621
+  company_nri_nomura: "노무라 종합연구소" # 475304027977767064

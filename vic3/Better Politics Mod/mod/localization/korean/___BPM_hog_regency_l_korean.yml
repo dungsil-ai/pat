@@ -1,0 +1,17 @@
+﻿l_korean:
+  hog_regency.1.t: "섭정" # 3562577863257297382
+  hog_regency.1.d: " $bpm_hog_title_default_contextless$의 직위가 아직 성년에 이르지 못한 [SCOPE.sCharacter('hog_scope').GetFullName]에게 계승되었습니다. 섭정을 구성하는 임무는 현 정부에게 맡겨졌습니다." # 9424335512058547516
+  hog_regency.1.f: "\"당신의 첫 번째 임무는 $bpm_hog_title_default_contextless$가 성년이 될 때까지 [ROOT.GetCountry.GetNameNoFormatting]의 안정을 유지하는 것입니다. 우리는 아이를 양육할 책임을 질 준비가 되어 있습니다. 대리 부모로서 징집되는 것은 아니니 안심하십시오.\"\n\n특사는 장관의 대답을 기다리며 잠시 말을 멈췄습니다.\n\n\"알겠습니다.\" 대답이 돌아왔습니다. \"교육 문제에 관해서는 [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]에서 필요한 비용을 지불할 준비가 되어 있습니다. 그 외에 무엇이 필요하십니까?\"" # 2988792464799099101
+  hog_regency.1.a: "[SCOPE.gsInterestGroup('ig_candidate_1').GetLeader.GetFullName]이(가) 명백한 선택지입니다." # 15461977206313187966
+  hog_regency.1.b: "[SCOPE.gsInterestGroup('ig_candidate_2').GetLeader.GetFullName]은(는) [SCOPE.sCharacter('hog_scope').GetCountry.GetGovernment.GetName]을(를) 수호할 것으로 신뢰할 수 있습니다." # 4146536829271965128
+  hog_regency.1.c: "[SCOPE.gsInterestGroup('ig_candidate_3').GetLeader.GetFullName]과(와) 타협할 수 있습니다." # 8747305876213106996
+  hog_regency.1.e: "[SCOPE.gsInterestGroup('ig_candidate_4').GetLeader.GetFullName]을(를) 임명하는 것이 대중적인 선택이 될 것입니다." # 3674321292744048160
+  hog_regency_c1: "[SCOPE.gsInterestGroup('ig_candidate_1').GetLeader.GetFullName]이(가) 대행 $bpm_hog_title_default_contextless$(으)로 취임합니다." # 10710319634858783725
+  hog_regency_c2: "[SCOPE.gsInterestGroup('ig_candidate_2').GetLeader.GetFullName]이(가) 대행 $bpm_hog_title_default_contextless$(으)로 취임합니다." # 5522777470285067362
+  hog_regency_c3: "[SCOPE.gsInterestGroup('ig_candidate_3').GetLeader.GetFullName]이(가) 대행 $bpm_hog_title_default_contextless$(으)로 취임합니다." # 279993543506731298
+  hog_regency_c4: "[SCOPE.gsInterestGroup('ig_candidate_4').GetLeader.GetFullName]이(가) 대행 $bpm_hog_title_default_contextless$(으)로 취임합니다." # 3843411088888834350
+  modifier_hog_regency: "정부 수반 섭정" # 6969502397362171092
+  hog_regency.3.t: "대관식 날" # 4813800428077358342
+  hog_regency.3.d: "[SCOPE.sCharacter('hog_scope').GetFullName]이(가) 성년에 도달하여 이제 $bpm_hog_title_default_contextless$가 될 수 있습니다. [SCOPE.sCharacter('regent_hog_scope').GetFullName]의 섭정은 끝났습니다." # 3574243405496504374
+  hog_regency.3.f: "[SCOPE.sCharacter('regent_hog_scope').GetFullNameNoFormatting]은(는) 사제가 마지막 도유 의식을 거행하는 모습을 지켜보았습니다. 어제의 $bpm_hog_title_default_contextless$와 오늘의 $bpm_hog_title_default_contextless$ 사이의 차이는 [SCOPE.sCharacter('regent_hog_scope').GetSheHe]가 상상했던 것보다 훨씬 더 극명했습니다. [SCOPE.sCharacter('hog_scope').GetSheHe|U]는 이전보다 더 당당하게 서 있었고, [SCOPE.sCharacter('hog_scope').GetHerHis] 얼굴에는 숙련된 결의가 서려 있었습니다. 예복은 [SCOPE.sCharacter('hog_scope').GetHerHis] 어깨 위에 놓였을 때 마치 무게가 없는 것처럼 보였습니다.\n\n사제가 물러나자 팡파르가 울려 퍼졌고, 궁전 밖에서는 대포 소리가 천둥처럼 울려 퍼졌습니다.\n\n\"내가 여기서 약속한 것들을 수행하고 지키겠노라.\" $bpm_hog_title_default_contextless$가 낭독했습니다. \"[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]께서 나를 도우시리라.\"" # 6427296847144815949
+  hog_regency.3.a: "$bpm_hog_title_default_contextless$ 폐하 만세!" # 17379284527436162716

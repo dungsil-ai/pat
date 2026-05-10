@@ -773,3 +773,24 @@
   pm_direct_current_large: "직류 송전 (지역)" # 3804445119690468037
   pm_half_current_large: "혼합 전류 송전 (양방향)" # 8120783911676094168
   pm_alternating_current_large: "교류 송전 (범지구)" # 1446452703490143589
+  pm_naval_fortification_radar_batteries: "레이더 요새화" # 17656409686918103461
+  pm_naval_fortification_coastal_missile_batteries: "미사일 요새화" # 11545008295729872382
+  pm_naval_fortification_integrated_defense_grid: "통합 요새화망" # 16210397092395242711
+  pm_run_of_river_plants_2: "유수식 발전소" # 15932757412406165438
+  pm_reservoir_dams_2: "저수지 댐" # 3943608960582282335
+  pm_advanced_turbine_generators_2: "고급 터빈 발전기" # 9030685236816246654
+  pm_run_of_river_plants_3: "유수식 발전소" # 15932757412406165438
+  pm_reservoir_dams_3: "저수지 댐" # 3943608960582282335
+  pm_advanced_turbine_generators_3: "고급 터빈 발전기" # 9030685236816246654
+  pm_early_power_plant_2: "초기 발전소" # 6380192581025988561
+  pm_coal-fired_plant_2: "석탄 화력 발전소" # 5425611460457290378
+  pm_oil-fired_plant_2: "석유 화력 발전소" # 16013754538677171808
+  pm_gas-fired_plant_2: "가스 화력 발전소" # 8158444127086869324
+  pm_nuclear-fission_plant_2: "핵분열 발전소" # 7432757473815202239
+  pm_early_power_plant_3: "초기 발전소" # 6380192581025988561
+  pm_coal-fired_plant_3: "석탄 화력 발전소" # 5425611460457290378
+  pm_oil-fired_plant_3: "석유 화력 발전소" # 16013754538677171808
+  pm_gas-fired_plant_3: "가스 화력 발전소" # 8158444127086869324
+  pm_nuclear-fission_plant_3: "핵분열 발전소" # 7432757473815202239
+  pm_geothermal_turbine_2: "지열 터빈" # 4854560334655354025
+  pm_geothermal_turbine_3: "지열 터빈" # 4854560334655354025

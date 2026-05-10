@@ -27,11 +27,10 @@
   ideology_liberal_leader: "자유민주당" # 4624409222733939175
   ideology_serfdom_reformer: "농노제 개혁가" # 2415358055452768224
   ideology_serfdom_reformer_desc: "#lore 이 지도자는 농노제를 최소한의 개혁이 필요한 제도로 여깁니다. #!" # 17031170750842577333
-  ideology_jingoist: "군국주의자" # 4132034768516086124
-  ideology_jingoist_desc: "#lore 맙소사! 이 집단은 군대가 사회의 전반적인 구조에 통합되어야 한다고 믿습니다. #!" # 11831587163837333485
   ideology_anarchist_syndicalist: "무정부주의적 생디칼리스트" # 7535324978704659639
   ideology_anarchist_syndicalist_desc: "$ideology_anarchist_desc$" # 13635670963674959023
   ideology_syndicalist: "생디칼리스트" # 12287891860791190895
+  ideology_syndicalist_desc: "$ideology_syndicalist$" # 2938830105698458077
   ideology_donghak: "동학" # 7621922184069019611
   ideology_donghak_desc: "#lore 동학(東學), 즉 '동방의 가르침'을 따르는 자들은 개혁과 낡은 한국 전통의 쇄신을 통해 더욱 진보적이고 독립적인 사회를 건설함으로써 서구의 영향력을 몰아내고자 합니다. #!" # 9047757353256233826
   ideology_tridemism: "트라이데미스트" # 18360876276975777360
