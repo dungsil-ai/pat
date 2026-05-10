@@ -103,6 +103,7 @@
   activity_RICE_niger_delta_new_yam_festival_selection_tooltip: "대규모 새 얌 축제를 준비하십시오.\n\n$RICE_niger_delta_celebrate_new_yam_festival_context_tooltip$" # 5352497817116124240
   activity_RICE_niger_delta_new_yam_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ 소유한 모든 [county|E]가 [GetModifier('RICE_niger_delta_successful_new_yam_festival').GetNameWithTooltip] [county_modifier|E]를 얻을 확률" # 1702241165425590864
   activity_RICE_niger_delta_new_yam_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$스트레스 [stress_loss_i|E][stress|E] 상실" # 5012295731351457530
+  activity_RICE_niger_delta_new_yam_festival_province_desc: "" # 17241709254077376921
   activity_RICE_niger_delta_new_yam_festival_destination_selection: "$activity_RICE_niger_delta_new_yam_festival_province_desc$" # 7904129127930861314
   activity_RICE_niger_delta_new_yam_festival_guest_help_text: "$activity_RICE_niger_delta_new_yam_festival$" # 4573103980959042806
   activity_RICE_niger_delta_new_yam_festival_predicted_cost: "새해 축제의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8243271114443356509
@@ -1112,4 +1113,3 @@
   niger_delta.0199.t: "xxxxx" # 1951045980481827005
   niger_delta.0199.desc: "xxxxx" # 1951045980481827005
   niger_delta.0199.a: "xxxxx" # 1951045980481827005
-  activity_RICE_niger_delta_new_yam_festival_province_desc: "" # 17241709254077376921

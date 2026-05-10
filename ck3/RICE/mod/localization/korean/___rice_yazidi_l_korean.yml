@@ -95,6 +95,7 @@
   activity_RICE_yazidi_bull_sacrifice_context_tooltip: "#emphasis 역사적 배경:#! 북서 이란의 고대 서부 이란어 사용자들이, 쿠르드족의 조상을 포함하여, 조로아스터교와 관련은 있으나 구별되는 종교를 따랐으며, 이는 이 지역의 야지디교, 야르산교 및 기타 종파들의 종교적 기층을 형성했다는 이론이 있습니다. 사안을 더욱 복잡하게 만드는 것은, 정통 조로아스터교와 더 오래된 북서 이란 신앙이 공존했을 가능성입니다. 어쨌든, 이 종교가 정통 조로아스터교와 가졌던 핵심적인 차이점은, 황소의 태초 희생이 악의 존재 아흐리만(Ahriman)에 의한 사악한 행위가 아니라, 신 미트라(Mithra)에 의한 긍정적인 창조 행위였다는 점입니다. 이러한 사상은 로마의 미트라스 숭배에 영향을 미쳤을 수 있으며, 야지디교의 중요한 축제인 집회 축제의 중심이 되는 황소 희생의 선구자였을 수 있습니다. 따라서, 이 활동은 다소 허구적이지만, 고대 및 초기 중세 시기 쿠르드족과 같은 북서 이란인들 사이의 가능한 경향과 신념에 기반을 두고 있습니다." # 14472072453569021254
   activity_RICE_yazidi_bull_sacrifice_host_desc: "$BULLET_WITH_TAB$ [prestige|E]를 무작위로 [prestige_i|E] #V 25#!에서 [prestige_i|E] #V 200#! 사이만큼 획득합니다!\n$BULLET_WITH_TAB$ [piety|E]를 무작위로 [piety_i|E] #V 25#!에서 [piety_i|E] #V 200#! 사이만큼 획득합니다!\n$BULLET_WITH_TAB$귀하의 [piety_level|E]에 따라 #V [GetPlayer.MakeScope.ScriptValue('RICE_yazidi_bull_sacrifice_chance')]%#! 확률로 #P 긍정적인#! [character_modifier|E]를 받아 [skills|E] 중 하나가 강화됩니다." # 9077526079671755524
   activity_RICE_yazidi_bull_sacrifice_guest_desc: "$activity_RICE_yazidi_bull_sacrifice_host_desc$" # 14942810904141299018
+  activity_RICE_yazidi_bull_sacrifice_province_desc: "" # 17241709254077376921
   activity_RICE_yazidi_bull_sacrifice_destination_selection: "$activity_RICE_yazidi_bull_sacrifice_province_desc$" # 7643857962260241976
   activity_RICE_yazidi_bull_sacrifice_guest_help_text: "$activity_RICE_yazidi_bull_sacrifice$" # 10562992605494310062
   activity_RICE_yazidi_bull_sacrifice_predicted_cost: "이 희생의 비용은 귀하의 [income|E]에 따라 결정됩니다." # 6596928120023183400
@@ -114,6 +115,7 @@
   activity_RICE_yazidi_yarsani_jam_context_tooltip: "#emphasis 역사적 배경:#! 잠 의식은 이라크와 이란의 야르산파라는 민족 종교 집단과 터키의 이슬람 비정통파인 알레비파가 행하는 일종의 종교 의식입니다. 이는 매우 구조화된 의식으로 중요한 영적 및 사회적 기능을 수행합니다." # 3665044655654805601
   activity_RICE_yazidi_yarsani_jam_host_desc: "$BULLET_WITH_TAB$ [piety_i] [piety|E] 획득\n$BULLET_WITH_TAB$ [prestige_i|E][prestige|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [courtiers|E], [guests|E], [vassals|E], 그리고 [liege|E]가 귀하에게 갖는 [opinion_i|E] [opinion|E]를 향상시키는 [character_modifier|E] 획득" # 14899044262748708439
   activity_RICE_yazidi_yarsani_jam_guest_desc: "$activity_RICE_yazidi_yarsani_jam_host_desc$" # 16458635832788835101
+  activity_RICE_yazidi_yarsani_jam_province_desc: "" # 17241709254077376921
   activity_RICE_yazidi_yarsani_jam_destination_selection: "$activity_RICE_yazidi_yarsani_jam_province_desc$" # 11772220489184409325
   activity_RICE_yazidi_yarsani_jam_guest_help_text: "$activity_RICE_yazidi_yarsani_jam$" # 15652160583102870262
   activity_RICE_yazidi_yarsani_jam_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]와 선택하는 [activity_options|E]에 따라 결정됩니다." # 1449348449211936643
@@ -146,6 +148,7 @@
   activity_RICE_yazidi_tiwaf_context_tooltip: "#emphasis 역사적 배경:#! 모든 야지디 마을에는 신성한 존재에게 봉헌된 성소가 있으며, 매년 이 성소에서 그들을 기리는 티와프 축제가 열립니다. 이 축제는 종교적 기능 외에도 마을들이 자신들의 정체성을 재확인하고 사회적 유대를 강화하는 중요한 계기가 되며, 다른 마을에서 손님들이 찾아오는 것이 흔합니다. 야지디인들이 강제적이든 자발적이든 다른 땅에 정착하더라도, 그들은 조상의 전통을 이어가기 위해 종종 원래 마을의 티와프를 계속해서 개최합니다." # 12452226782993298340
   activity_RICE_yazidi_tiwaf_host_desc: "$BULLET_WITH_TAB$ [piety_i] 만큼의 [piety|E] 획득\n$BULLET_WITH_TAB|[prestige_i|E][prestige|E] 획득\n$BULLET_WITH_TAB|[stress_loss_i|E][stress|E] 감소\n$BULLET_WITH_TAB$이 [activity|E]가 진행되는 [county|E]는 귀하의 [intent|E]에 따라 [GetModifier('RICE_yazidi_tiwaf_religious_modifier').GetNameWithTooltip] 또는 [GetModifier('RICE_yazidi_tiwaf_community_modifier').GetNameWithTooltip] [county_modifier|E]를 얻게 됩니다." # 6655428477650775466
   activity_RICE_yazidi_tiwaf_guest_desc: "$activity_RICE_yazidi_tiwaf_host_desc$" # 12069561625265537756
+  activity_RICE_yazidi_tiwaf_province_desc: "" # 17241709254077376921
   activity_RICE_yazidi_tiwaf_destination_selection: "$activity_RICE_yazidi_tiwaf_province_desc$" # 9766462479372970254
   activity_RICE_yazidi_tiwaf_guest_help_text: "$activity_RICE_yazidi_tiwaf$" # 9152342328694039477
   activity_RICE_yazidi_tiwaf_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -182,6 +185,7 @@
   activity_RICE_yazidi_tawus_geran_context_tooltip: "#emphasis 역사적 배경:#! 타우스 게란, 즉\"타우스의 순\"는 야지디교 의식으로, 말렉 타우스(공작 천사)의 성물인 #italic 산자크#!를 행렬로 나르는 것을 포함합니다. 야지디교의 종교 찬송가를 대대로 전승하는 #italic 퀘왈#!들은 평화로운 시기이며 길이 안전하다고 확신하는 한, 이 #italic 산자크#!를 가지고 여러 야지디 마을을 순회할 것입니다. 이는 야지디인들이 자신들의 종교적 신념에 대해 배우고 종교적 헌신을 보일 기회입니다. 여기에 묘사된 내용은 주로 19세기 영국 선교사이자 오리엔탈리즘 학자인 조지 퍼시 배저(George Percy Badger)의 목격담에 기반을 두고 있습니다." # 7694996470139412224
   activity_RICE_yazidi_tawus_geran_host_desc: "$BULLET_WITH_TAB$ [piety_i] [piety|E] 획득\n$BULLET_WITH_TAB$ [prestige_i|E][prestige|E] 획득\n$BULLET_WITH_TAB$ 이 [activity|E]가 열리는 [county|E]의 [control_i|E] [control|E] 증가\n$BULLET_WITH_TAB$ 자신의 [lifestyle|E]에서 최소 #V [EmptyScope.ScriptValue('medium_lifestyle_xp')]#! [experience|E] 획득" # 1537709127637452879
   activity_RICE_yazidi_tawus_geran_guest_desc: "$activity_RICE_yazidi_tawus_geran_host_desc$" # 11164488058001167938
+  activity_RICE_yazidi_tawus_geran_province_desc: "" # 17241709254077376921
   activity_RICE_yazidi_tawus_geran_destination_selection: "$activity_RICE_yazidi_tawus_geran_province_desc$" # 9045691623249213888
   activity_RICE_yazidi_tawus_geran_guest_help_text: "$activity_RICE_yazidi_tawus_geran$" # 6703817266468075065
   activity_RICE_yazidi_tawus_geran_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]와 선택하는 [activity_options|E]에 따라 결정됩니다." # 1449348449211936643
@@ -537,7 +541,3 @@
   yazidi.0099.t: "xxxxx" # 1951045980481827005
   yazidi.0099.desc: "xxxxx" # 1951045980481827005
   yazidi.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_yazidi_bull_sacrifice_province_desc: "" # 17241709254077376921
-  activity_RICE_yazidi_yarsani_jam_province_desc: "" # 17241709254077376921
-  activity_RICE_yazidi_tiwaf_province_desc: "" # 17241709254077376921
-  activity_RICE_yazidi_tawus_geran_province_desc: "" # 17241709254077376921

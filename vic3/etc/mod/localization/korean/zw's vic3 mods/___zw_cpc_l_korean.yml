@@ -8,34 +8,49 @@
   je_zw_autonom_invest_management: "민간 건설 관리" # 5880108762964628382
   je_zw_autonom_invest_management_reason: "민간 및 해외 투자를 규제합니다." # 5976319603319752519
   zw_auto_expand_incorporated_states_only_button: "@zw_texticon_auto_expand! 병합된 주" # 844920320044249758
+  zw_auto_expand_incorporated_states_only_button_desc: "" # 17241709254077376921
   zw_auto_expand_incorporated_states_only_button_effect: "편입된 주에 있는 건물만 #white #b 자동 확장#!#!될 수 있습니다." # 14219549139761026986
   zw_auto_invest_incorporated_states_only_button: "@zw_texticon_private_construction! 편입된 주" # 14839809262150561647
+  zw_auto_invest_incorporated_states_only_button_desc: "" # 17241709254077376921
   zw_auto_invest_incorporated_states_only_button_effect: "#white #b 민간 건설#!#!은 편입된 주에서만 허용됩니다." # 17460592087793753647
   zw_auto_invest_profitable_buildings_only_button: "@coin12! 수익 조건" # 15114852436471401905
+  zw_auto_invest_profitable_buildings_only_button_desc: "" # 17241709254077376921
   zw_auto_invest_profitable_buildings_only_button_effect: "$zw_text_profit_condition$" # 6955370378389625728
   zw_auto_invest_profitable_buildings_only_undo_button: "@coin7! 이윤 조건" # 4651487073912101084
+  zw_auto_invest_profitable_buildings_only_undo_button_desc: "" # 17241709254077376921
   zw_auto_invest_profitable_buildings_only_undo_button_effect: "저희의 #white #b 국내 민간 투자#!#!는 건물의 수익성을 스스로 평가할 수 있습니다." # 2789433624490753780
   zw_auto_invest_existing_buildings_only_manufacture_button: "@red_cross! 새로운 건물 @zw_texticon_manufacture!" # 4859170117296632811
+  zw_auto_invest_existing_buildings_only_manufacture_button_desc: "" # 17241709254077376921
   zw_auto_invest_existing_buildings_only_manufacture_button_effect: "저희의 #white #b 국내 민간 투자#!#!는 #white #b 제조업#!#! (공장 및 예술 학교 포함)에 투자하는 동안 기존 건물을 확장하는 것만 허용됩니다." # 7735292817897646252
   zw_auto_invest_existing_buildings_only_agro_button: "@red_cross! 새로운 건물 @zw_texticon_agro!" # 17640951370273642701
+  zw_auto_invest_existing_buildings_only_agro_button_desc: "" # 17241709254077376921
   zw_auto_invest_existing_buildings_only_agro_button_effect: "우리 #white #b 국내 민간 투자#!#!는 #white #b 농업#!#! (농장, 목장, 플랜테이션 포함) 분야에 투자하는 동안에만 기존 건물을 확장할 수 있도록 허용됩니다." # 6920346743606021132
   zw_auto_invest_existing_buildings_only_resource_button: "@red_cross! 새로운 건물 @zw_texticon_resource!" # 10127527532473145869
+  zw_auto_invest_existing_buildings_only_resource_button_desc: "" # 17241709254077376921
   zw_auto_invest_existing_buildings_only_resource_button_effect: "우리 #white #b 국내 민간 투자#!#!는 #white #b 자원 산업#!#!에 투자할 때 기존 건물을 확장하는 것만 허용됩니다." # 3251493505685932231
   zw_auto_invest_existing_buildings_only_infrastructure_button: "@red_cross! 신규 건물 @zw_texticon_infrastructure!" # 7410979508061522205
+  zw_auto_invest_existing_buildings_only_infrastructure_button_desc: "" # 17241709254077376921
   zw_auto_invest_existing_buildings_only_infrastructure_button_effect: "저희 #white #b 국내 민간 투자#!#!는 기존 건물을 확장하는 것과 #white #b 기반 시설#!#! (철도, 발전소, 항구, 교역소 포함) 투자에만 허용됩니다." # 6139718916180785401
   zw_no_foreign_private_investment_manufacture_button: "@red_cross! 해외 투자 @zw_texticon_investment_abroad!@zw_texticon_manufacture!" # 1891057696888875397
+  zw_no_foreign_private_investment_manufacture_button_desc: "" # 17241709254077376921
   zw_no_foreign_private_investment_manufacture_button_effect: "민간 투자는 #white #b 해외 제조 산업#!#!에 투자가 허용되지 않습니다 (공장 및 예술 아카데미 포함)." # 6569608448496249732
   zw_no_foreign_private_investment_agro_button: "@red_cross! 해외 투자 @zw_texticon_investment_abroad!@zw_texticon_agro!" # 15456387548482286833
+  zw_no_foreign_private_investment_agro_button_desc: "" # 17241709254077376921
   zw_no_foreign_private_investment_agro_button_effect: "사적 투자는 #white #b 외국의 농업#!#! (농장, 목장, 플랜테이션 포함)에 투자할 수 없습니다." # 12259277320355135833
   zw_no_foreign_private_investment_resource_button: "@red_cross! 해외 투자 @zw_texticon_investment_abroad!@zw_texticon_resource!" # 12117459734555334410
+  zw_no_foreign_private_investment_resource_button_desc: "" # 17241709254077376921
   zw_no_foreign_private_investment_resource_button_effect: "사적 투자는 #white #b 해외 자원 산업#!#!에 투자할 수 없습니다." # 9454974261697431444
   zw_no_foreign_private_investment_infrastructure_button: "@red_cross! 외국인 투자 @zw_texticon_investment_abroad!@zw_texticon_infrastructure!" # 13321032606875470774
+  zw_no_foreign_private_investment_infrastructure_button_desc: "" # 17241709254077376921
   zw_no_foreign_private_investment_infrastructure_button_effect: "민간 투자는 #white #b 해외 기반 시설#!#! (철도, 발전소, 항구, 무역 중심지 포함)에 투자할 수 없습니다." # 15492820149344398408
   zw_intervene_investment_from_abroad_industry_button: "@red_cross! 해외 투자 @zw_texticon_investment_from_abroad!@zw_texticon_industry!" # 979431236975986926
+  zw_intervene_investment_from_abroad_industry_button_desc: "" # 17241709254077376921
   zw_intervene_investment_from_abroad_industry_button_effect: "#white #b 해외 투자#!#! (정부 투자 포함)는 우리 #white #b 산업#!#! (제조업 및 사회 기반 시설 포함)에 기존 건물을 확장할 수 있을 뿐입니다.\n" # 6392367414191809000
   zw_intervene_investment_from_abroad_agriculture_button: "@red_cross! 해외 투자 @zw_texticon_investment_from_abroad!@zw_texticon_agriculture!" # 9107011582057292851
+  zw_intervene_investment_from_abroad_agriculture_button_desc: "" # 17241709254077376921
   zw_intervene_investment_from_abroad_agriculture_button_effect: "#white #b 해외 국가로부터의 투자#!#! (정부 투자 포함)는 우리 #white #b 농업#!#! (농장, 목장, 플랜테이션 포함)에서 기존 건물을 확장만 할 수 있습니다.\n" # 13832736733158723208
   zw_text_profit_condition: "$zw_text_profit_condition_01$$zw_text_profit_condition_02$$zw_text_profit_condition_03$$zw_text_profit_condition_04$$zw_text_profit_condition_05$$zw_text_profit_condition_06$$zw_text_profit_condition_07$$zw_text_profit_condition_08$$zw_text_profit_condition_09$$zw_text_profit_condition_10$$zw_text_profit_condition_11$$zw_text_profit_condition_12$$zw_text_profit_condition_13$$zw_text_profit_condition_14$$zw_text_profit_condition_15$" # 12262450697311185822
+  zw_text_profit_condition_01: "" # 17241709254077376921
   zw_text_profit_condition_02: "만약 우리의 #white #b 국내 민간 투자#!#!가 기존 건물 확장만 허용된다면, 다음 두 조건 중 적어도 하나를 충족하는 건물만 평가합니다." # 16928103892149392099
   zw_text_profit_condition_03: "#indent_newline:4 \n1. 다음의 모든 조건이 충족됩니다:#!" # 13637812228151693940
   zw_text_profit_condition_04: "#indent_newline:8 \n$EFFECT_LIST_BULLET$[concept_occupancy] >= 0.9#!" # 12156715049859257672
@@ -50,18 +65,3 @@
   zw_text_profit_condition_13: "#indent_newline:16 \n$EFFECT_LIST_BULLET$$IS_SUBSIDIZED$ 또는 $concept_building_balance_profit$ > 0#" # 10368053209119549519
   zw_text_profit_condition_14: "#indent_newline:12 \n$EFFECT_LIST_BULLET$건물 이윤 > 200 * 건물 단계#!" # 8561702447904113811
   zw_text_profit_condition_15: "건설이 진행되는 동안 건물이 더 이상 수익 조건을 충족할 수 없게 되더라도, 완공 시 적자가 발생하거나 낮은 시장 접근성을 초래하는 경우가 아니라면 건설은 취소되지 않습니다." # 7700883122647234302
-  zw_auto_expand_incorporated_states_only_button_desc: "" # 17241709254077376921
-  zw_auto_invest_incorporated_states_only_button_desc: "" # 17241709254077376921
-  zw_auto_invest_profitable_buildings_only_button_desc: "" # 17241709254077376921
-  zw_auto_invest_profitable_buildings_only_undo_button_desc: "" # 17241709254077376921
-  zw_auto_invest_existing_buildings_only_manufacture_button_desc: "" # 17241709254077376921
-  zw_auto_invest_existing_buildings_only_agro_button_desc: "" # 17241709254077376921
-  zw_auto_invest_existing_buildings_only_resource_button_desc: "" # 17241709254077376921
-  zw_auto_invest_existing_buildings_only_infrastructure_button_desc: "" # 17241709254077376921
-  zw_no_foreign_private_investment_manufacture_button_desc: "" # 17241709254077376921
-  zw_no_foreign_private_investment_agro_button_desc: "" # 17241709254077376921
-  zw_no_foreign_private_investment_resource_button_desc: "" # 17241709254077376921
-  zw_no_foreign_private_investment_infrastructure_button_desc: "" # 17241709254077376921
-  zw_intervene_investment_from_abroad_industry_button_desc: "" # 17241709254077376921
-  zw_intervene_investment_from_abroad_agriculture_button_desc: "" # 17241709254077376921
-  zw_text_profit_condition_01: "" # 17241709254077376921

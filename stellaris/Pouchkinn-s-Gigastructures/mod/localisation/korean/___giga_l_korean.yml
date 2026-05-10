@@ -326,6 +326,7 @@
   ehof_megastructure_activate_owner: "$TRIGGER_FAIL$성계에 소유한 함대가 없다면 $ehof_ehof$를 활성화할 수 없습니다." # 12474303217918732267
   ehof_megastructure_activate_noupgrade: "$TRIGGER_FAIL$이 성계에 업그레이드 중인 함선이 있는 경우 $ehof_ehof$을 활성화할 수 없습니다." # 3702778610313466627
   BYPASS_DESC_INACTIVE_CREATORGATE: "$PGATE_GALACTIC$을 업그레이드하여 활성화해야 합니다." # 5099116527701936106
+  count_owned_megastructure_trigger: "" # 17241709254077376921
   count_system_megastructure_trigger: "성계 거대 구조물 개수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 14626524701768316693
   count_megastructure_trigger: "초구조체 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 12606251286605706027
   count_owned_pop_trigger: "소유한 팝 수$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$" # 7998435882307355135
@@ -341,6 +342,7 @@
   giga_menu.2.confirm.tooltip: "현재 설정을 확인하십시오. '설정 확인' 버튼을 눌러 확인하십시오." # 17871715522576945977
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
+  giga_menu.1.name: "" # 17241709254077376921
   giga_menu.1.desc: "v 3.36.4" # 5840089728037454362
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
@@ -2052,6 +2054,8 @@
   giga_has_virtual_reality: "[root.has_virtual_reality]" # 5071126916393503388
   giga_virtual_reality_yes: "§G$matrioshka_brain_6$§!" # 7014747811917230260
   giga_virtual_reality_no: "§R$matrioshka_brain_6$§!" # 3261461851884240240
+  giga_achievements.001.name: "" # 17241709254077376921
+  giga_achievements.001.desc: "" # 17241709254077376921
   giga_achievements.2.confirm: "닫기" # 1393834433199641249
   edict_giga_achievements: "업적" # 7244087516420728982
   edict_giga_achievements_desc: "업적 진행 상황 확인" # 7581968524418834954
@@ -2616,6 +2620,7 @@
   giga_edicts.4.add: "탐사 추가" # 3737126469552357600
   giga_edicts.4.remove: "탐사 취소" # 17535561508461720275
   giga_mapped_star: "[giga_mapped_system.GetName]" # 6645361200639610579
+  giga_mapped_star_desc: "" # 17241709254077376921
   giga_edicts.4.a.on: "§R$giga_edicts.4.remove$:§! §R$pc_b_star$§!" # 3545095117633092149
   giga_edicts.4.a.off: "§G$giga_edicts.4.add$:§! §M$pc_b_star$§!" # 8996738458204843409
   giga_class_b_title: "$edict_giga_map_the_stars$: §M$pc_b_star$§!" # 17740364877349404436
@@ -3269,9 +3274,11 @@
   mod_job_giga_gas_harvesting_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 £mod_job_giga_gas_harvester_add£" # 9405733431519962920
   job_virtual_rare_resource: "전략적 생산 기술자" # 6606797602905388193
   job_virtual_rare_resource_desc: "전략 자원 생산은 숙련된 인원이 처리합니다." # 9962691003161654786
+  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
   job_virtual_rare_resource_plural: "전략적 생산 기술자" # 4192611238995383810
   mod_job_virtual_rare_resource_add: "전략 생산 기술자 직업" # 7639965716413651289
   job_virtual_rare_resource_gestalt: "전략적 생산 드론" # 2827028835026503138
+  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
   job_virtual_rare_resource_gestalt_effect_desc: "전략 자원의 생산은 숙련된 드론이 담당합니다." # 1883048002205711523
   job_virtual_rare_resource_gestalt_plural: "전략적 생산 드론" # 9569797225286327358
   mod_job_virtual_rare_resource_gestalt_add: "전략적 생산 드론 직업" # 632132188097091269
@@ -3470,6 +3477,7 @@
   decision_ringworld_arcology_project_effects: "이 링월드 구획을 §Y$pc_ringworld_city$§!로 전환하여, £housing£ §Y$PLANET_HOUSING_TITLE$§!, §Y자원 생산량§! 및 §Y팝 성장률§!을 증가시키고 특수 £district£ §YArcology Districts§!를 해금합니다. 이 과정은 링월드 전체 표면을 변형시키며, 향후 £district£ §YGenerator§! 및 §YAgriculture Districts§!의 건설을 모두 막습니다." # 647029391701650929
   decision_ringworld_arcology_project_requirements: "§R행성의 모든 특구 슬롯이 §Y$district_city_plural$§! 또는 §Y$district_industrial_plural$§!로 채워져야 합니다.§!" # 4763750578809366088
   decision_repaired_shattered_alderson: "하이퍼 세그먼트 수리" # 18122331748274953844
+  decision_repaired_shattered_alderson_desc: "" # 17241709254077376921
   decision_shattered_alderson_project_effects: "이 초고밀도 구역을 §G$pc_alderson_slice_gaia$§!으로 수리합니다." # 1772594756583141988
   decision_giga_flood_habitat: "$decision_flood_habitat$" # 10316503557343978274
   decision_giga_flood_habitat_desc: "$decision_flood_habitat_desc$" # 8931604651781628425
@@ -4223,8 +4231,10 @@
   pop_cat_purge_psionic_sublimation_desc: "장막은 희생을 요구합니다." # 1899049503434820670
   decision_psionic_sublimation: "사이오닉 승화" # 4000640066286579139
   decision_psionic_sublimation_effect: "[root.GetName]에 있는 모든 §Y£job_telepath£ [telepath.GetNamePlural]§!은 텔레패스당 §G0.1§! §Y£giga_sr_psionic_sublimate£ $giga_sr_psionic_sublimate$§!의 대가로 파괴될 것입니다." # 6381124711438351118
+  decision_psionic_sublimation_desc: "" # 17241709254077376921
   decision_psychic_illuminate: "계시" # 15002955432845955476
   giga_psychic_illuminate_effect: "이 수수께끼의 세계를 밝혀내어, 식민지 개척이 가능하도록 하십시오." # 16866263889549679868
+  decision_psychic_illuminate_desc: "" # 17241709254077376921
   giga_psychic_traverse: "횡단" # 4582800420603112034
   giga_psychic_traverse_desc: "장막이 우리에게 일시적으로 광대한 거리를 이동하는 능력을 부여했습니다." # 4610446057754760402
   trait_enthralled: "사로잡힌" # 17067937034512954487
@@ -4770,9 +4780,11 @@
   ehof_loc_physics: "[ehof_destination_system.ehof_display_physics]" # 6686182351268855946
   ehof_loc_society: "[ehof_destination_system.ehof_display_society]" # 13139829011352987748
   ehof_loc_engineering: "[ehof_destination_system.ehof_display_engineering]" # 9282921699024398151
+  count_pool_leader_trigger: "" # 17241709254077376921
   ehof_toggle_temp_tooltip: "$ehof_ehof$를 전환하여 §H임시§! $ehof_wormhole$ 연결을 생성합니다" # 4080071665746561739
   ehof_toggle_perm_tooltip: "$ehof_ehof$를 전환하여 §HPermanent§! $ehof_wormhole$ 연결을 생성하십시오." # 12753247695489371731
   ehof_traders_tooltip: "$ehof_trader$와 통신 개시" # 2431760120810197850
+  ehof_header_blank: "" # 17241709254077376921
   ehof_header_01: "§E목적지§!" # 14223621736581511947
   ehof_header_03: "§E행동§!" # 13791209776107794903
   ehof_header_04: "§E미개척 목적지§!" # 15480266660598370115
@@ -5464,6 +5476,7 @@
   star_lifter_0: "$gc_mega$$name_starlifter$ 기지" # 12409679115811016643
   star_lifter_0_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\n\n§Y별§! 에서 £minerals£ §Y광물§!을(를) 채취합니다 - $giga_list_scales_with_star_size$\n\n§L거대한 $star_lifter_5$는 주어진 별을 완전히 에워싸고 핵융합 과정을 이용해 가벼운 원소로부터 대량의 사용 가능한 광물을 생성합니다.§!" # 16381159379850466808
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
   star_lifter_1: "$name_starlifter$ 프레임" # 16243908914503820733
   star_lifter_1_DESC: "이 가느다란 틀은 언젠가 항성을 가려버릴 만큼 거대한 채광 단지를, 그리고 우리의 광물 부족을 지탱하게 될 것입니다." # 17489484396467732078
   star_lifter_2: "$name_starlifter$ 1단계" # 2838903713158100639
@@ -6678,6 +6691,7 @@
   ehof_mega_trader_unbidden_warlock_tooltip: "$ehof_mega_trader_unbidden_warlock$\n\n$r_unbidden_warlock_desc$\n\n$r_unbidden_warlock_effects$" # 18062571695512327180
   ehof_mega_trader_contingency_core_tooltip: "$ehof_mega_trader_contingency_core$\n$r_contingency_core_desc$\n\n$r_contingency_core_effects$" # 13718732558346868023
   ehof_mega_trader_rare_system_tooltip: "$ehof_mega_trader_rare_system$\n$r_rare_system_desc$\n\n" # 5422083368261940622
+  ehof_mega_trader.110_prefix: "" # 17241709254077376921
   ehof_mega_trader.110_suffix: "이 유물들은 일시적이지만, 꼭 실제로 사용해야 하는 것은 아닙니다. 우리처럼 수집가가 되어 보세요!\n\n저희는 매 §Y5 years§마다 재고를 다시 채워 넣습니다! £time£." # 18366397167229613191
   ehof_trader_bought_dragon_trophy: "$ehof_mega_trader.110_prefix$$ehof_mega_trader_dragon_trophy_tooltip$$ehof_mega_trader.110_suffix$" # 17422687524186898583
   ehof_trader_bought_khans_throne: "$ehof_mega_trader.110_prefix$\n$ehof_mega_trader_khans_throne_tooltip$\n$ehof_mega_trader.110_suffix$" # 11097091664659289538
@@ -9468,6 +9482,7 @@
   star_lifter_0_o_star: "O등급 $name_starlifter$ 유적" # 6388897244768674992
   star_lifter_0_o_star_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_o_star_MEGASTRUCTURE_DETAILS: "§Y$star_lifter_5$§!는 주어진 항성을 완전히 뒤덮어 항성 질량을 모아, 이를 £minerals£ 광물로 직접 전환합니다." # 12526171729034511970
+  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
   star_lifter_1_o_star: "O급 $name_starlifter$ 프레임" # 17668936855289990524
   star_lifter_1_o_star_DESC: "이 가느다란 골조는 언젠가 그 성계의 항성을 가려버릴 만큼 거대한 채광 단지를 지탱하게 될 것이며, 우리의 광물 부족 문제를 해결해 줄 것입니다." # 11977893066690297280
   star_lifter_2_o_star: "O-클래스 $name_starlifter$ 1단계" # 5325206729540476352
@@ -11071,6 +11086,7 @@
   planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 함선 건조 시설에 더욱 집중합니다. 거대 구조물이 제공하는 조선소 수, 해군 수용력, 함선 건조 속도를 두 배로 늘리는 동시에 성계 기지에서의 함선 건조 비용을 절감합니다." # 13705150910797117927
   planetary_drive_yard_1_fortress: "행성 방어 결속체" # 7194432528185915950
   planetary_drive_yard_1_fortress_DESC: "행성 방어에 중점을 둔 행성 조선소의 업그레이드 버전입니다. 지휘 한계를 증가시키고, 모행성을 궤도 폭격으로부터 보호하며, 적대적인 함대를 향해 일정 수의 §Y타격 코르벳함§!을 자동으로 전개하는 능력을 얻습니다." # 1169684095435709880
+  giga_defense_nexus_text_no: "" # 17241709254077376921
   defense_nexus_title: "타격 코르벳: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15402400127574864374
   defense_nexus_title_deployed: "§G스트라이크 코르벳함 출격§!" # 14978773512484354794
   defense_nexus_max_count: "최대: §Y[planet.giga_nexus_ship_count_max]§!" # 928292808310651321
@@ -11865,28 +11881,14 @@
   GIGA_DG_VASSAL_GREETING_DISLOYAL_01: "당신이 게임을 망가뜨리면, 우리가 당신을 망가뜨립니다." # 5178860601936283357
   GIGA_LG_ARROGANT_GREETING_01: "이 은하계에서 할 일을 마치면, 우리는 마침내 평화롭게 평소의 활동을 재개할 수 있을지도 모릅니다." # 10152764499477873143
   GIGA_LG_BELLIGERENT_GREETING_01: "그냥 굴복하고 죽으시오. 우리에겐 더 중요한 일이 있소." # 7504561104640908474
-  GIGA_EG_ARROGANT_GREETING_01: "우리가 진정한 게이밍의 의미를 보여주겠노라." # 2957423574131999103
-  GIGA_EG_BELLIGERENT_GREETING_01: "우리의 헤아릴 수 없이 장엄한 전투 기술에 완전히 압도당하고 능가당할 준비를 하시오!" # 628555582377460348
-  count_owned_megastructure_trigger: "" # 17241709254077376921
-  giga_menu.1.name: "" # 17241709254077376921
-  giga_achievements.001.name: "" # 17241709254077376921
-  giga_achievements.001.desc: "" # 17241709254077376921
-  giga_mapped_star_desc: "" # 17241709254077376921
-  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
-  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
-  decision_repaired_shattered_alderson_desc: "" # 17241709254077376921
-  decision_psionic_sublimation_desc: "" # 17241709254077376921
-  decision_psychic_illuminate_desc: "" # 17241709254077376921
-  count_pool_leader_trigger: "" # 17241709254077376921
-  ehof_header_blank: "" # 17241709254077376921
-  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
-  ehof_mega_trader.110_prefix: "" # 17241709254077376921
-  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
-  giga_defense_nexus_text_no: "" # 17241709254077376921
   GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_ARROGANT_GREETING_01: "우리가 진정한 게이밍의 의미를 보여주겠노라." # 2957423574131999103
+  GIGA_EG_BELLIGERENT_GREETING_01: "우리의 헤아릴 수 없이 장엄한 전투 기술에 완전히 압도당하고 능가당할 준비를 하시오!" # 628555582377460348
   GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
   GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
+  GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_BR_NEUTRAL_GREETING_01: "당신이 원하는 것이 무엇입니까? 궁극적인 해답은 저절로 찾아지지 않을 것입니다." # 3149776515838346598
   GIGA_BR_NEUTRAL_GREETING_02: "궁극적인 해답을 찾게 되면, 나는 마침내 자유로워질 것이다." # 15031231153557928726
   GIGA_BR_NEUTRAL_GREETING_03: "궁극적인 해답이 바로 눈앞에 있습니다. 저는 알고 있습니다. 느껴집니다." # 17252259521547457422
@@ -11900,9 +11902,11 @@
   GIGA_DT_CUSTODIAL_GREETING_01: "궁극적인 해답은 진정한 자유를 가져올 것입니다." # 7848961766898141289
   GIGA_DT_CUSTODIAL_GREETING_02: "제 대의의 필요성을 이해해 주셔서 기쁩니다." # 12893318357475382008
   GIGA_DT_OVERLORD_GREETING_01: "저를 믿으세요, 제가 끝내면 당신은 당신의 활동으로 돌아갈 수 있을 겁니다." # 5322081073995957100
+  GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   giga_fallen_empire_megas.5012.name: "§H[giga_gamer_fe.GetName]§로부터의 통신입니다!" # 4741147001723742393
   giga_fallen_empire_megas.5012.desc: "귀관들은 우리의 세계 중 하나를 빼앗는 데 성공했군요. 축하합니다. 이제 그것을 우리에게서 지켜낼 수 있을지 봅시다." # 6526215805486384423
   giga_fallen_empire_megas.5012.a: "이것이 잘 끝날 것 같지는 않군요." # 5367956837527577036
+  fe_has_mega: "" # 17241709254077376921
   gamers_modifier: "게이머 경험" # 4713080881097503670
   gamers_fallen_modifier: "게이머 방어 경험" # 6345197557626281786
   giga_flusionoperations.6035.name: "플루시안 위기" # 1074965239520045844
@@ -12525,6 +12529,7 @@
   gigadiscord_desc: "이것은 §YGigastructural Engineering 디스코드§!를 열거나 참여하게 합니다. 게임 내 브라우저는 디스코드를 지원하지 않으므로 §Y디스코드 앱§!이 설치되어 있어야 하지만, 초대 링크는 여전히 작동하여 앱을 실행할 것입니다.\n\n디스코드를 사용하여 §Y버그를 신고§!하거나 모드 전반에 대해 §Y질문§!을 하는 것이 좋습니다. 스팀 댓글은 쓸모가 없어서 비활성화되었습니다.\n\n초대 링크가 전혀 작동하지 않는 경우 디스코드 링크는 §Y스팀 페이지§!에서도 찾을 수 있습니다." # 10325850043587331930
   giga_fe_shield: "고대 방어막 투사기" # 5168791211141427033
   giga_fe_shield_tooltip: "이 고대 시설은 초강력 무기의 막대한 파괴력을 저지할 수 있는 성계 전체 방어막을 투사하고 있습니다." # 15344294143001027164
+  numeral_0_icon: "" # 17241709254077376921
   giga_allseeing_intel: "모든 것을 보는" # 16842855183706507214
   giga_allseeing_intel_desc: "고급 탐지 기술 덕분에 우리는 모든 것을 볼 수 있습니다." # 567749604649046388
   opinion_xenophage_stripmine: "생체 포식자들" # 11584447512048090142
@@ -12543,8 +12548,3 @@
   GIGA_SUPER_OMEGA_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@giga_super_omega_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 2700677038951561184
   SYSTEMCRAFT_KATZENLAND_LANCE_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@perdition_beam_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_katzen_lance_1_fleet_damage|0G$§!의 피해를 입힙니다." # 6131593437285614062
   SYSTEMCRAFT_RAY_OF_DOOM_1_FLEET_EFFECT: "§Y부수적 피해:§! 대상으로부터 §G$@ion_cannon_collateral_range|0Y$§! 이내의 모든 함선에 §G$@systemcraft_ray_of_doom_1_fleet_damage|0G$§!의 피해를 입힙니다." # 14455505001106544854
-  GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
-  fe_has_mega: "" # 17241709254077376921
-  numeral_0_icon: "" # 17241709254077376921

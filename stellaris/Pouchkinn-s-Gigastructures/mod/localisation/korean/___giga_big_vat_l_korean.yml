@@ -106,6 +106,7 @@
   giga_maximum_mutation_desc: "우리의 유전적 운명을 추구하며, 아무리 기묘하고 난해하게 보일지라도 가능한 모든 경로를 고려해야만 합니다." # 6288692395176855959
   giga_prethoryn_larvae: "변이된 유충" # 357152001454386871
   giga_prethoryn_larvae_desc_short: "작은 꿈틀거리는 유충. 매우 빠르게 성장합니다. 발밑에 깔려 으스러질 수 있습니다." # 12425962914779270799
+  giga_prethoryn_larvae_desc_details: "" # 17241709254077376921
   giga_vat_maximum_mutation_1: "최대 돌연변이: 인셉투스" # 11656076217149856156
   giga_vat_maximum_mutation_2: "극대 돌연변이: 비룰루스" # 16422670528428795849
   giga_vat_maximum_mutation_3: "최대 변이: 아우레우스" # 3213382437230939080
@@ -151,4 +152,3 @@
   giga_vat_unlocked_warriors: "§Y$large_ship_swarm_plural$§!는 이제 $name_the_vat$에서 복제할 수 있습니다." # 5849020504411221608
   giga_big_vat_modifier_not_machine: "고급 복제 방법" # 16579785158214134051
   giga_big_vat_modifier_machine: "고급 조립 방식" # 6418125370090708249
-  giga_prethoryn_larvae_desc_details: "" # 17241709254077376921

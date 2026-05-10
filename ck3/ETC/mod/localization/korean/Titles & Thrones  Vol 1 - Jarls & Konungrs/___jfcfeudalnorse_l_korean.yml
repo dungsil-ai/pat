@@ -82,6 +82,7 @@
   barony_tribe_norse_christian: "$barony_castle_norse_christian$" # 6130154044625800900
   h_north_sea_christian: "노르드샤르발드" # 1810364404402660278
   h_north_sea_adj_christian: "노르드샤르" # 13009918467184226967
+  h_north_sea_article_christian: "" # 17241709254077376921
   title_nshegemony_christian: "세드로트눈" # 17902641337103593456
   title_nsoverlord_christian: "알밀킬세코눙그르" # 2747438481833657011
   title_nsoverlordqueen_christian: "알밀킬새드로트닝" # 4941672685790455797
@@ -93,6 +94,7 @@
   title_nsoverlordkingfather_christian: "알밀킬새코눙그스파디르" # 5525974160030212272
   e_north_sea_christian: "노르드샤리키" # 2678337866899821825
   e_north_sea_adj_christian: "노르드만링그르" # 4726621921372904836
+  e_north_sea_article_christian: "" # 17241709254077376921
   title_nsempire_christian: "미킬사리키" # 7464415317940020451
   title_nsemperor_christian: "미킬스에코눙그르" # 7399439031762536322
   title_nsqueen_christian: "미킬세드로트닝" # 6231359821364517144
@@ -126,5 +128,3 @@
   title_manprince_christian: "크리스세코눙글링그르" # 2899509901241166303
   title_manprincess_christian: "크리스트세코눙스메이" # 8453010944359366776
   title_manqueenmother_christian: "크리스트세드로트닝모디르" # 8724348974085536109
-  h_north_sea_article_christian: "" # 17241709254077376921
-  e_north_sea_article_christian: "" # 17241709254077376921

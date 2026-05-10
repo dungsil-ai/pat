@@ -27,6 +27,7 @@
   activity_RICE_guanche_rain_ritual_selection_tooltip: "비의 축복을 기원합니다.\n\n$RICE_guanche_pray_for_good_rain_context_tooltip$" # 7022452985327363222
   activity_RICE_guanche_rain_ritual_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [activity|E]를 주최하는 [county|E]가 [development|E], [tax|E] 수입, [county_opinion|E]를 증진하는 [county_modifier|E]를 얻을 확률이 있으며, 금식을 하면 이 수치가 증가할 수 있습니다." # 3171281935606488789
   activity_RICE_guanche_rain_ritual_guest_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 12882840294630978621
+  activity_RICE_guanche_rain_ritual_province_desc: "" # 17241709254077376921
   activity_RICE_guanche_rain_ritual_destination_selection: "$activity_RICE_guanche_rain_ritual_province_desc$" # 2051044864770011875
   activity_RICE_guanche_rain_ritual_guest_help_text: "$activity_RICE_guanche_rain_ritual$" # 8893219550581350321
   activity_RICE_guanche_rain_ritual_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -45,6 +46,7 @@
   activity_RICE_guanche_benesmen_festival_selection_tooltip: "베네스멘 축제를 준비합니다.\n\n$RICE_guanche_celebrate_benesmen_festival_context_tooltip$" # 2175361022381182155
   activity_RICE_guanche_benesmen_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_guanche_recently_celebrated_benesmen').GetNameWithTooltip] [character_modifier|E]" # 11730829216189417536
   activity_RICE_guanche_benesmen_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]" # 12596614112478523827
+  activity_RICE_guanche_benesmen_festival_province_desc: "" # 17241709254077376921
   activity_RICE_guanche_benesmen_festival_destination_selection: "$activity_RICE_guanche_benesmen_festival_province_desc$" # 8584696764544331382
   activity_RICE_guanche_benesmen_festival_guest_help_text: "$activity_RICE_guanche_benesmen_festival$" # 4638259854912515957
   activity_RICE_guanche_benesmen_festival_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -437,5 +439,3 @@
   guanche.0099.t: "xxxxx" # 1951045980481827005
   guanche.0099.desc: "xxxxx" # 1951045980481827005
   guanche.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_guanche_rain_ritual_province_desc: "" # 17241709254077376921
-  activity_RICE_guanche_benesmen_festival_province_desc: "" # 17241709254077376921

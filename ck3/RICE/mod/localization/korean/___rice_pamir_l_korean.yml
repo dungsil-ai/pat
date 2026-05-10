@@ -153,6 +153,7 @@
   activity_RICE_pamir_chawmos_festival_selection_tooltip: "차우모스 축제를 기념하십시오.\n\n$RICE_pamir_attend_chawmos_festival_context_tooltip$" # 14975819311607710475
   activity_RICE_pamir_chawmos_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_pamir_recently_organized_chawmos').GetNameWithTooltip] [character_modifier|E]" # 2778629679991730984
   activity_RICE_pamir_chawmos_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 942770327808202261
+  activity_RICE_pamir_chawmos_festival_province_desc: "" # 17241709254077376921
   activity_RICE_pamir_chawmos_festival_destination_selection: "$activity_RICE_pamir_chawmos_festival_province_desc$" # 16015977644991496383
   activity_RICE_pamir_chawmos_festival_guest_help_text: "$activity_RICE_pamir_chawmos_festival$" # 11489882913575595332
   activity_RICE_pamir_chawmos_festival_predicted_cost: "차모스 축제의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 11214517573029222286
@@ -177,6 +178,7 @@
   activity_RICE_pamir_chinir_festival_selection_tooltip: "#italic 수확의 계절이로다#!\n\n$RICE_pamir_attend_chinir_festival_context_tooltip$" # 16693552588964037061
   activity_RICE_pamir_chinir_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_pamir_recently_attended_chinir').GetNameWithTooltip] [character_modifier|E]" # 6376410853551682993
   activity_RICE_pamir_chinir_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]" # 12596614112478523827
+  activity_RICE_pamir_chinir_festival_province_desc: "" # 17241709254077376921
   activity_RICE_pamir_chinir_festival_destination_selection: "$activity_RICE_pamir_chinir_festival_province_desc$" # 16911730830614152312
   activity_RICE_pamir_chinir_festival_guest_help_text: "$activity_RICE_pamir_chinir_festival$" # 8345183792647829053
   activity_RICE_pamir_chinir_festival_predicted_cost: "치니르 축제의 비용은 귀하의 [income|E]와 선택하는 [activity_options|E]에 따라 결정됩니다." # 17259484218129665958
@@ -207,6 +209,7 @@
   activity_RICE_pamir_tumshiling_festival_selection_tooltip: "툼실링 축제를 후원합니다.\n\n$RICE_pamir_hold_tumshiling_festival_context_tooltip$" # 8052039085239333148
   activity_RICE_pamir_tumshiling_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_pamir_sponsored_tumshiling').GetNameWithTooltip] [character_modifier|E]" # 16213354258820482606
   activity_RICE_pamir_tumshiling_festival_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$스트레스 [stress_loss_i|E][stress|E] 상실" # 12623914568557024174
+  activity_RICE_pamir_tumshiling_festival_province_desc: "" # 17241709254077376921
   activity_RICE_pamir_tumshiling_festival_destination_selection: "$activity_RICE_pamir_tumshiling_festival_province_desc$" # 15490062985420018861
   activity_RICE_pamir_tumshiling_festival_guest_help_text: "$activity_RICE_pamir_tumshiling_festival$" # 9826134584984575131
   activity_RICE_pamir_tumshiling_festival_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -1673,6 +1676,3 @@
   pamir.0299.t: "xxxxx" # 1951045980481827005
   pamir.0299.desc: "xxxxx" # 1951045980481827005
   pamir.0299.a: "xxxxx" # 1951045980481827005
-  activity_RICE_pamir_chawmos_festival_province_desc: "" # 17241709254077376921
-  activity_RICE_pamir_chinir_festival_province_desc: "" # 17241709254077376921
-  activity_RICE_pamir_tumshiling_festival_province_desc: "" # 17241709254077376921

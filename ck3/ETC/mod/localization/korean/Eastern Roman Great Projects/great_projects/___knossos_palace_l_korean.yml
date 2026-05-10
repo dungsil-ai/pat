@@ -1,26 +1,41 @@
 ﻿l_korean:
   great_project_type_restore_knossos_palace: "크노소스 궁전 복구" # 15734424813890467707
   great_project_type_restore_knossos_palace_desc: "크레타섬에는 고대 미노아 문명의 중심지였던 크노소스의 웅장한 유적이 잠들어 있습니다. 이 전설적인 궁전을 복구하는 것은 공학적인 기념비적 위업이자 문화적 경외심을 보여주는 강력한 선언이 될 것입니다. 우리는 그 전당을 다시 세우고, 생동감 넘치는 프레스코화를 밝히며, 권력의 원천이었던 바다와 다시 연결할 것입니다. 이 계획은 우리 영토에 새로운 경이로움을 창조하고, 우리의 의지를 통해 재탄생한 지난 시대의 등불이 될 것입니다." # 5462483233991501608
+  great_project_type_tooltip_restore_knossos_palace: "" # 17241709254077376921
+  great_project_name_possessive_restore_knossos_palace: "" # 17241709254077376921
+  great_project_name_restore_knossos_palace: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt: "크노소스 궁전 복구" # 15734424813890467707
   great_project_type_restore_knossos_palace_alt_desc: "크레타섬에는 고대 미노아 문명의 중심지였던 크노소스의 웅장한 유적이 잠들어 있습니다. 이 전설적인 궁전을 복구하는 것은 공학적인 기념비적 위업이자 문화적 경외심을 보여주는 강력한 선언이 될 것입니다. 우리는 그 전당을 다시 세우고, 생동감 넘치는 프레스코화를 밝히며, 권력의 원천이었던 바다와 다시 연결할 것입니다. 이 계획은 우리 영토에 새로운 경이로움을 창조하고, 우리의 의지를 통해 재탄생한 지난 시대의 등불이 될 것입니다." # 5462483233991501608
+  great_project_type_tooltip_restore_knossos_palace_alt: "" # 17241709254077376921
+  great_project_name_possessive_restore_knossos_palace_alt: "" # 17241709254077376921
+  great_project_name_restore_knossos_palace_alt: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_contribution_port: "해양왕의 항구 건설" # 14990456051491788628
   great_project_type_restore_knossos_palace_contribution_port_desc: "미노아의 힘은 바다에서 나왔습니다. 크노소스를 진정으로 복구하려면 부와 영향력의 원천인 바다와 다시 연결되어야 합니다. 이 기부금은 해안에 새로운 전용 항구를 건설하고 궁전과 직접 연결되는 석조 도로를 닦는 데 사용될 것이며, 수천 년 전처럼 무역품과 조공이 궁전 전당으로 흘러 들어오게 할 것입니다." # 10318004411405014350
+  great_project_type_restore_knossos_palace_contribution_name_port: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_contribution_survey: "부지 조사 및 유적 확보" # 195803573983694067
   great_project_type_restore_knossos_palace_contribution_survey_desc: "크노소스 궁전은 현재 잔해로 뒤덮인 광활한 들판에 불과합니다. 본격적인 복구를 시작하기 전에 학자와 기술자를 파견하여 남은 유적을 조사해야 합니다. 그들은 무성한 잡초를 제거하고 토대를 분류하며, 허물어져 가는 구조물이 더 이상 붕괴하지 않도록 고정하여 숙련된 석공들을 위한 과거의 설계도를 발굴할 것입니다." # 17326484024848926210
+  great_project_type_restore_knossos_palace_contribution_name_survey: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_contribution_palace: "대궁전 재건" # 16425041462030145197
   great_project_type_restore_knossos_palace_contribution_palace_desc: "이것이 이 계획의 핵심이 될 것입니다. 조사 지도를 바탕으로, 우리의 가장 뛰어난 석공과 목수들이 토대부터 궁전을 다시 세울 것입니다. 거대 계단이 다시 솟아오르고, 옥좌의 방이 복원될 것이며, 아래로 갈수록 가늘어지는 상징적인 붉은 기둥들이 다시금 열주 전당의 지붕을 받쳐 옛 미노아 해양왕들에게 걸맞은 건축물을 완성할 것입니다." # 11425231315040796565
+  great_project_type_restore_knossos_palace_contribution_name_palace: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_contribution_frescoes: "프레스코화 채색" # 3910751200127653322
   great_project_type_restore_knossos_palace_contribution_frescoes_desc: "궁전은 단순한 석조물 그 이상이며, 하나의 예술입니다. 이 기부금을 통해 영지 내 최고의 장인들을 모아 한때 크노소스의 벽면을 장식했던 생생한 프레스코화를 재현할 것입니다. 유명한 황소 도약사부터 평화로운 푸른 돌고래와 신비로운 그리핀에 이르기까지, 이 그림들은 침묵하던 전당에 생명력을 불어넣고 미노아 문화의 부활을 찬양할 것입니다." # 13040451151922190437
+  great_project_type_restore_knossos_palace_contribution_name_frescoes: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt_contribution_labyrinth: "기술자의 어리석음: 미궁 건설" # 419023867565040606
   great_project_type_restore_knossos_palace_alt_contribution_labyrinth_desc: "우리 수석 건축가는 궁전의 가장 깊고 복잡한 원래 토대를 연구한 끝에, 마지막으로 기념비적인 추가 시설을 제안했습니다. 그것은 현대의 모든 원리를 거스르는 복잡한 거대 지하 미로, 즉 진정한 미궁의 설계안입니다. 그는 이것이 궁전의 '본래 정신'에 필수적이라고 주장합니다. 이를 건설하는 것은 막대한 비용이 들고 어쩌면 무모한 일이 될 것입니다... 석조술이 아닌 신화의 영역에 발을 들이는 것이니까요." # 4259066623078144023
+  great_project_type_restore_knossos_palace_alt_contribution_name_labyrinth: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt_contribution_port: "해양왕의 항구 건설" # 14990456051491788628
   great_project_type_restore_knossos_palace_alt_contribution_port_desc: "미노아의 힘은 바다에서 나왔습니다. 크노소스를 진정으로 복구하려면 부와 영향력의 원천인 바다와 다시 연결되어야 합니다. 이 기부금은 해안에 새로운 전용 항구를 건설하고 궁전과 직접 연결되는 석조 도로를 닦는 데 사용될 것이며, 수천 년 전처럼 무역품과 조공이 궁전 전당으로 흘러 들어오게 할 것입니다." # 10318004411405014350
+  great_project_type_restore_knossos_palace_alt_contribution_name_port: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt_contribution_survey: "부지 조사 및 유적 확보" # 195803573983694067
   great_project_type_restore_knossos_palace_alt_contribution_survey_desc: "크노소스 궁전은 현재 잔해로 뒤덮인 광활한 들판에 불과합니다. 본격적인 복구를 시작하기 전에 학자와 기술자를 파견하여 남은 유적을 조사해야 합니다. 그들은 무성한 잡초를 제거하고 토대를 분류하며, 허물어져 가는 구조물이 더 이상 붕괴하지 않도록 고정하여 숙련된 석공들을 위한 과거의 설계도를 발굴할 것입니다." # 17326484024848926210
+  great_project_type_restore_knossos_palace_alt_contribution_name_survey: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt_contribution_palace: "대궁전 재건" # 16425041462030145197
   great_project_type_restore_knossos_palace_alt_contribution_palace_desc: "이것이 이 계획의 핵심이 될 것입니다. 조사 지도를 바탕으로, 우리의 가장 뛰어난 석공과 목수들이 토대부터 궁전을 다시 세울 것입니다. 거대 계단이 다시 솟아오르고, 옥좌의 방이 복원될 것이며, 아래로 갈수록 가늘어지는 상징적인 붉은 기둥들이 다시금 열주 전당의 지붕을 받쳐 옛 미노아 해양왕들에게 걸맞은 건축물을 완성할 것입니다." # 11425231315040796565
+  great_project_type_restore_knossos_palace_alt_contribution_name_palace: "" # 17241709254077376921
   great_project_type_restore_knossos_palace_alt_contribution_frescoes: "프레스코화 채색" # 3910751200127653322
   great_project_type_restore_knossos_palace_alt_contribution_frescoes_desc: "궁전은 단순한 석조물 그 이상이며, 하나의 예술입니다. 이 기부금을 통해 영지 내 최고의 장인들을 모아 한때 크노소스의 벽면을 장식했던 생생한 프레스코화를 재현할 것입니다. 유명한 황소 도약사부터 평화로운 푸른 돌고래와 신비로운 그리핀에 이르기까지, 이 그림들은 침묵하던 전당에 생명력을 불어넣고 미노아 문화의 부활을 찬양할 것입니다." # 13040451151922190437
+  great_project_type_restore_knossos_palace_alt_contribution_name_frescoes: "" # 17241709254077376921
   restore_knossos_labyrinth: "크노소스의 미궁" # 11590007659555542960
   restore_knossos_labyrinth_desc: "복원된 궁전의 햇빛 비치는 회랑 아래, 어두운 비밀이 형체를 갖추었습니다. 크노소스의 미궁은 마음을 가두기 위해 세워진 감옥으로, 빛과 희망, 그리고 그 깊은 곳에 던져진 모든 이를 집어삼키는 독창적이고 잔혹하게 뒤틀린 미로입니다. 그 존재 자체만으로도 섬의 방어력을 강화하는 끊임없고 무언의 위협이 되며, 가장 다루기 힘든 문제들에 대한 완벽한 해결책이 되어줍니다." # 14645603740665282159
   restore_knossos_palace.0001.t: "항구가 열리다" # 14181418223625197066
@@ -86,18 +101,3 @@
   sentenced_to_labyrinth_desc: "이 인물은 크노소스의 미궁에 던져졌습니다. 그들은 끊임없는 굶주림, 육체적 피로, 그리고 정신을 무너뜨리기 위해 설계된 장소 내에서의 고립이라는 독특한 공포로 인해 속이 텅 비어버렸습니다. 이 시련은 그들을 근본적으로 변화시켰으며, 깊고 불안한 트라우마를 남겼습니다." # 13469419615655995112
   exhausted_in_the_maze: "무너진 생존자" # 8324546954223016526
   exhausted_in_the_maze_desc: "그들은 어둠 속에서 죽지 않았습니다. 그들은 굶주림을 견디고 끝없는 석조 회랑을 걸어 마침내 빛으로 돌아가는 길을 찾아냈습니다. 하지만 그들이 찾은 빛은 자유가 아니었습니다. 그것은 그들 자신의 감옥으로 들어가는 입구였습니다. 이 마지막 잔혹한 반어법은 그들의 영혼에 남은 마지막 불씨마저 꺼뜨렸습니다. 그들은 속이 텅 빈 생존자이며, 육체는 지쳤고 저항하려는 의지는 완전히 사라졌습니다." # 6501344662780973215
-  great_project_type_tooltip_restore_knossos_palace: "" # 17241709254077376921
-  great_project_name_possessive_restore_knossos_palace: "" # 17241709254077376921
-  great_project_name_restore_knossos_palace: "" # 17241709254077376921
-  great_project_type_tooltip_restore_knossos_palace_alt: "" # 17241709254077376921
-  great_project_name_possessive_restore_knossos_palace_alt: "" # 17241709254077376921
-  great_project_name_restore_knossos_palace_alt: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_contribution_name_port: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_contribution_name_survey: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_contribution_name_palace: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_contribution_name_frescoes: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_alt_contribution_name_labyrinth: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_alt_contribution_name_port: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_alt_contribution_name_survey: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_alt_contribution_name_palace: "" # 17241709254077376921
-  great_project_type_restore_knossos_palace_alt_contribution_name_frescoes: "" # 17241709254077376921

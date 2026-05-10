@@ -8,15 +8,22 @@
   great_project_type_fortify_armenia: "아르메니아 요새화" # 7272899768248985355
   great_project_type_fortify_armenia_desc: "아르메니아 국경은 오랫동안 제국의 옆구리에 난 피 흘리는 상처와도 같았습니다. 끊임없는 습격으로 농촌은 황폐해졌고, 번영하던 테마들은 위험한 접경지로 변했습니다. 이제 국가의 온 힘을 이 지역에 쏟아부어 요새를 복구하고 산길을 확보하며, 이 핵심적인 영토에 대한 제국의 권위를 다시 세워야 할 때입니다." # 10896585294231703865
   great_project_type_tooltip_fortify_armenia: "아르메니아 국경을 평정하기 위한 일련의 군사적, 민간적 계획들" # 15691876153361478723
+  great_project_name_fortify_armenia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_armenia: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_walls_of_melitene: "멜리테네 성벽 복구" # 873009965405915480
+  great_project_type_fortify_armenia_contribution_name_walls_of_melitene: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_walls_of_melitene_desc: "멜리테네는 카파도키아로 향하는 관문이자 동쪽으로부터의 침입을 막는 중요한 방벽입니다. 한때 위용을 자랑하던 고대의 성벽은 방치와 반복된 공성전으로 인해 훼손되었습니다. 방어 시설의 완전한 복구와 현대화에 자금을 지원함으로써, 우리는 멜리테네를 난공불락의 요새이자 지역 전체에 대한 통제력을 공고히 할 제국 힘의 상징으로 탈바꿈시킬 수 있습니다." # 4556240176928503368
   great_project_type_fortify_armenia_contribution_manzikert_garrison: "만지케르트 주둔군 창설" # 16572189957099651202
+  great_project_type_fortify_armenia_contribution_name_manzikert_garrison: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_manzikert_garrison_desc: "만지케르트 인근의 들판은 우리의 가장 큰 슬픔과 굴하지 않는 결의를 동시에 증명하는 신성한 땅입니다. 이곳을 무방비 상태로 두는 것은 재앙을 자초하는 일입니다. 우리는 이곳에 보급이 원활한 상비 주둔군을 창설해야 합니다. 이 병사들은 요새를 방어할 뿐만 아니라 주변 지역을 적극적으로 순찰하며 배회하는 무리들을 소탕하고, 오랫동안 사라졌던 제국의 법을 다시 세울 것입니다." # 3733701986308582138
   great_project_type_fortify_armenia_contribution_secure_passes: "산길 확보" # 13942461901652453971
+  great_project_type_fortify_armenia_contribution_name_secure_passes: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_secure_passes_desc: "습격자들은 대군을 이끌고 진군하는 대신 타우루스와 아르메니아 고원의 수많은 무방비한 산길을 통해 물처럼 흘러들어옵니다. 우리는 이 산맥을 제 집처럼 잘 아는 현지 출신의 정예 아크리토이 부대에 자금을 지원할 것입니다. 그들은 감시 초소를 세우고 매복을 수행하며, 기존의 습격 경로를 매우 위험한 곳으로 만들 것입니다." # 13564473333564787348
   great_project_type_fortify_armenia_contribution_rebuild_farms: "농경지 재건 후원" # 16042764125074920754
+  great_project_type_fortify_armenia_contribution_name_rebuild_farms: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_rebuild_farms_desc: "빵 없이는 요새가 버틸 수 없고, 보급 없이는 군대가 유지될 수 없습니다. 아르메니아의 농경지는 체계적으로 황폐해졌으며, 백성들은 도망치거나 칼날에 쓰러졌습니다. 우리는 귀환을 원하는 정착민들에게 제국 보조금을 지급하고 세금을 면제해주며, 마을과 운하, 물레방아의 재건을 지원할 것입니다. 번영하고 인구가 많은 농촌은 그 자체로 훌륭한 방어선이 됩니다." # 9186670484488867766
   great_project_type_fortify_armenia_contribution_patronize_monasteries: "현지 수도원 후원" # 16879213613298493541
+  great_project_type_fortify_armenia_contribution_name_patronize_monasteries: "" # 17241709254077376921
   great_project_type_fortify_armenia_contribution_patronize_monasteries_desc: "이 혼란스러운 시기에 신앙은 종종 평민들의 마지막 방패가 됩니다. 아르메니아의 수도원들은 성소이자 지식의 저장고이며 공동체 생활의 중심지 역할을 해왔습니다. 후원을 통해 우리는 그들의 생존을 보장할 뿐만 아니라 백성들의 마음을 얻을 수 있습니다. 그들의 기도는 우리의 노력을 축복할 것이며, 그들의 영향력은 옥좌에 대한 충성심을 강화할 것입니다." # 9575346459925079775
   VASPURAKAN_LOCATION_1_TOOLTIP: "바스푸라칸 테마가 귀하의 영역 내에 있음" # 78023204186953004
   MESOPOTAMIA_LOCATION_2_TOOLTIP: "메소포타미아 군관구가 당신의 영역 내에 있습니다" # 8029820418355632767
@@ -58,15 +65,22 @@
   great_project_type_fortify_anatolia_desc: "아나톨리아는 제국의 심장이지만, 그 방어선은 무너졌고 백성들은 튀르크 약탈자들의 끊임없는 위협 아래 고통받고 있습니다. 오래된 테마 제도는 한계점에 도달했으며, 대도시들은 더 이상 예전처럼 난공불락의 요새가 아닙니다.\n\n오직 제국의 일치단결된 노력, 즉 거대한 규모의 대사업만이 우리 심장부의 안전을 회복할 수 있습니다. 우리는 요새를 재건하고, 고대 도로를 복구하며, 에게해 해안부터 타우루스 산맥에 이르기까지 제국의 권위를 재확립해야 합니다. 이는 기념비적인 과업이 될 것이나, 제국의 존속이 여기에 달려 있습니다." # 7699407000373095925
   great_project_type_tooltip_fortify_anatolia: "아나톨리아의 핵심 지역을 확보하기 위한 대규모 사업을 시작합니다." # 11464315157712958697
   great_project_type_fortify_anatolia_confirm: "제국의 심장은 보호받아야 한다" # 15590993557747873798
+  great_project_name_fortify_anatolia: "" # 17241709254077376921
+  great_project_name_possessive_fortify_anatolia: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_kaisereia: "카이세레이아 재요새화" # 15693504595246548865
+  great_project_type_fortify_anatolia_contribution_name_kaisereia: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_kaisereia_desc: "위대한 도시 카이사레이아는 카파도키아의 전략적 거점입니다. 고대 성벽의 완전한 재건을 지원함으로써, 우리는 동부 고원을 장악하고 현지 주민들의 충성심을 고취할 가공할 요새를 구축할 것입니다." # 15453445127300103350
   great_project_type_fortify_anatolia_contribution_cilician_gates: "킬리키아 관문 확보" # 13420224028684274104
+  great_project_type_fortify_anatolia_contribution_name_cilician_gates: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_cilician_gates_desc: "킬리키아 관문은 아나톨리아 고원과 남부를 잇는 역사적인 관문입니다. 수천 년 동안 군대들이 이 핵심 통로를 거쳐 행군해 왔습니다. 이 요충지를 장악하기 위해 일련의 새로운 요새와 감시 초소를 건설함으로써, 우리는 약탈자와 침략자들의 앞길을 효과적으로 차단할 수 있습니다." # 10794737673818950780
   great_project_type_fortify_anatolia_contribution_veteran_settlements: "퇴역 군인들에게 토지 하사" # 10325425740593164006
+  great_project_type_fortify_anatolia_contribution_name_veteran_settlements: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_veteran_settlements_desc: "인구가 줄어든 아나톨리아의 토지는 약탈자들에게 무방비 상태나 다름없습니다. 중앙군 출신의 충성스러운 퇴역 군인들에게 토지를 하사함으로써, 우리는 농번기에는 농사를 짓고 전시에는 병사가 되는 둔전병 계층으로 변방을 다시 채울 수 있습니다. 단련된 이들은 자신들의 새로운 터전을 지키는 데 직접적인 이해관계를 가지게 될 것이며, 어떠한 침입에도 맞서는 강철 같은 방벽과 결의를 형성할 것입니다." # 14092767912096430516
   great_project_type_fortify_anatolia_contribution_roads: "로마 도로 복구" # 14075208351547214660
+  great_project_type_fortify_anatolia_contribution_name_roads: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_roads_desc: "우리 로마 조상들의 장대한 도로망은 관리가 소홀해져 황폐해졌고, 이로 인해 우리 군대의 이동이 늦어지고 상업이 위축되었습니다. 대대적인 투자를 통해 길을 닦고, 다리를 재건하며, 새로운 이정표를 세움으로써 우리 군단이 어떤 위협에도 신속하게 대응할 수 있도록 할 것입니다." # 6772683234984366395
   great_project_type_fortify_anatolia_contribution_watchtowers: "감시 초소망 구축" # 13969528905066062888
+  great_project_type_fortify_anatolia_contribution_name_watchtowers: "" # 17241709254077376921
   great_project_type_fortify_anatolia_contribution_watchtowers_desc: "아나톨리아의 테마들은 광활하며, 약탈자들은 예고 없이 습격해 올 수 있습니다. 전략적 요충지인 산 정상마다 서로 연결된 감시 초소망을 구축함으로써, 우리는 봉화를 이용한 조기 경보 체계를 갖추고 수비대가 침입을 저지할 수 있는 귀중한 시간을 확보할 수 있습니다." # 21117209654331102
   turkish_incursions_events.0006.t: "굴하지 않는 카이사레이아" # 18314105904634910470
   turkish_incursions_events.0006.desc: "제국 국고에서 지출된 막대한 자금이 훌륭하게 사용되었습니다. 보고에 따르면 카이사레이아의 성벽은 완전히 복구되었으며 현대적인 기술로 개량되었습니다. 성탑은 더 높게 솟아 있고 성문은 철로 보강되었으며, 새로운 방벽 뒤에서 안전을 보장받은 백성들은 거리에서 귀하의 이름을 연호하고 있습니다." # 999754201419240929
@@ -105,35 +119,22 @@
   great_project_type_fortify_pontus_desc: "흑해의 독수리 둥지인 폰토스는 온갖 역경 속에서도 로마의 정체성을 끈질기게 고수하고 있습니다. 하지만 우리의 지배력은 위협받고 있습니다. 우리를 보호하는 고대의 산맥은 약탈자들의 통로가 되었고, 튀르크의 물결은 아르메니아 고원의 남쪽 국경까지 밀려오고 있습니다.\n\n이 중요하고 충성스러운 지역을 확보하기 위해, 우리는 대업을 시작해야 합니다. 거대한 요새 도시들을 재건하고, 해안선을 확보하며, 폰토스인들의 무용을 결집할 것입니다. 이 땅은 오랫동안 제국의 보루였습니다. 이제 그 토대를 강화할 때입니다." # 8135603189673962171
   great_project_type_tooltip_fortify_pontus: "폰토스 해안과 산악 국경을 확보하기 위한 대규모 프로젝트를 시작합니다." # 7426596889367943290
   great_project_type_fortify_pontus_confirm: "흑해 해안은 우리의 것이어야 한다" # 9591647974010586142
-  great_project_type_fortify_pontus_contribution_trebizond: "트라페준타 성벽 재건" # 3417540628206641506
-  great_project_type_fortify_pontus_contribution_trebizond_desc: "트라페준타는 단순한 도시가 아닙니다. 폰토스의 심장이자 영혼이며 상징입니다. 고대부터 건설과 재건을 반복해 온 전설적인 성벽은 이제 대대적인 보강이 절실합니다. 이 요새들에 대한 전면적인 개보수 자금을 지원함으로써, 우리는 에욱시노스의 여왕을 난공불락의 요새이자 제국 권력의 당당한 등대로 만들 것입니다." # 3118052650332454662
-  great_project_type_fortify_pontus_contribution_theodosiopolis: "테오도시우폴리스 수비대 재배치" # 1258052693463825456
-  great_project_type_fortify_pontus_contribution_theodosiopolis_desc: "요새 도시 테오도시우폴리스는 아르메니아 고원에서 내려오는 통로를 지키는 동부 국경 전체의 전략적 요충지입니다. 도시 자체는 방어할 만하지만, 수비대는 이름뿐인 수준입니다. 우리는 그곳에 독자적인 지휘 체계와 보급 부대를 갖춘 강력한 상비군 타그마를 새로 창설하여, 힘을 과시하고 동부의 어떠한 침략도 저지해야 합니다." # 17855727084536160575
-  great_project_type_fortify_pontus_contribution_coastal_patrols: "해안 순찰대 창설" # 16645355153029395049
-  great_project_type_fortify_pontus_contribution_coastal_patrols_desc: "폰토스의 부는 흑해 위를 항해하지만, 해적과 적의 약탈자들 또한 우리의 어선단과 상선을 노리고 항해합니다. 쾌속 순찰선으로 구성된 새로운 함대를 배치하고 주요 정박지를 요새화함으로써, 우리는 항로를 깨끗이 청소하고 상업을 보호하며 해안선이 취약점이 아닌 방패가 되도록 할 수 있습니다." # 13345742392728158149
-  great_project_type_fortify_pontus_contribution_mountain_watch: "산악 감시단 자금 지원" # 12038054686654823697
-  great_project_name_fortify_armenia: "" # 17241709254077376921
-  great_project_name_possessive_fortify_armenia: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_walls_of_melitene: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_manzikert_garrison: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_secure_passes: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_rebuild_farms: "" # 17241709254077376921
-  great_project_type_fortify_armenia_contribution_name_patronize_monasteries: "" # 17241709254077376921
-  great_project_name_fortify_anatolia: "" # 17241709254077376921
-  great_project_name_possessive_fortify_anatolia: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_kaisereia: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_cilician_gates: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_veteran_settlements: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_roads: "" # 17241709254077376921
-  great_project_type_fortify_anatolia_contribution_name_watchtowers: "" # 17241709254077376921
   great_project_name_fortify_pontus: "" # 17241709254077376921
   great_project_name_possessive_fortify_pontus: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_trebizond: "트라페준타 성벽 재건" # 3417540628206641506
   great_project_type_fortify_pontus_contribution_name_trebizond: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_trebizond_desc: "트라페준타는 단순한 도시가 아닙니다. 폰토스의 심장이자 영혼이며 상징입니다. 고대부터 건설과 재건을 반복해 온 전설적인 성벽은 이제 대대적인 보강이 절실합니다. 이 요새들에 대한 전면적인 개보수 자금을 지원함으로써, 우리는 에욱시노스의 여왕을 난공불락의 요새이자 제국 권력의 당당한 등대로 만들 것입니다." # 3118052650332454662
+  great_project_type_fortify_pontus_contribution_theodosiopolis: "테오도시우폴리스 수비대 재배치" # 1258052693463825456
   great_project_type_fortify_pontus_contribution_name_theodosiopolis: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_theodosiopolis_desc: "요새 도시 테오도시우폴리스는 아르메니아 고원에서 내려오는 통로를 지키는 동부 국경 전체의 전략적 요충지입니다. 도시 자체는 방어할 만하지만, 수비대는 이름뿐인 수준입니다. 우리는 그곳에 독자적인 지휘 체계와 보급 부대를 갖춘 강력한 상비군 타그마를 새로 창설하여, 힘을 과시하고 동부의 어떠한 침략도 저지해야 합니다." # 17855727084536160575
+  great_project_type_fortify_pontus_contribution_coastal_patrols: "해안 순찰대 창설" # 16645355153029395049
   great_project_type_fortify_pontus_contribution_name_coastal_patrols: "" # 17241709254077376921
+  great_project_type_fortify_pontus_contribution_coastal_patrols_desc: "폰토스의 부는 흑해 위를 항해하지만, 해적과 적의 약탈자들 또한 우리의 어선단과 상선을 노리고 항해합니다. 쾌속 순찰선으로 구성된 새로운 함대를 배치하고 주요 정박지를 요새화함으로써, 우리는 항로를 깨끗이 청소하고 상업을 보호하며 해안선이 취약점이 아닌 방패가 되도록 할 수 있습니다." # 13345742392728158149
+  great_project_type_fortify_pontus_contribution_mountain_watch: "산악 감시단 자금 지원" # 12038054686654823697
   great_project_type_fortify_pontus_contribution_name_mountain_watch: "" # 17241709254077376921
   great_project_type_fortify_pontus_contribution_mountain_watch_desc: "폰토스 알프스는 우리의 가장 큰 방어선이지만, 사납고 독립적인 부족들과 숨겨진 통로들의 거처이기도 합니다. 지역 산악 부족들에게 넉넉한 자금과 무기, 그리고 제국 칙령을 제공함으로써, 우리는 그들을 '산악 감시단'으로 공식화할 수 있습니다. 이들은 모든 비밀 통로를 꿰고 있는 충성스러운 유격대가 되어, 침략자들이 산맥을 통과하는 길을 생지옥으로 만들 것입니다." # 7010555085609935978
   great_project_type_fortify_pontus_contribution_monasteries: "폰토스 수도원 후원" # 7472082426270952361
+  great_project_type_fortify_pontus_contribution_name_monasteries: "" # 17241709254077376921
   great_project_type_fortify_pontus_contribution_monasteries_desc: "신앙은 폰토스의 결의를 지탱하는 근간입니다. 영광스러운 수멜라와 같은 고대부터 숭상받아 온 수도원들은 단순히 경건함의 중심지일 뿐만 아니라, 험준한 산맥 속 문명과 학문의 중심지이기도 합니다. 관대한 후원은 성직자들의 변치 않는 충성과 신자들의 끊임없는 기도를 이끌어낼 것이며, 신과 인간의 눈에 우리의 대의를 신성하게 만들 것입니다." # 7187847688998581196
   turkish_incursions_events.0011.t: "우뚝 선 에욱시노스의 여왕" # 2097433940659460630
   turkish_incursions_events.0011.desc: "뛰어난 공학 기술과 풍부한 제국의 황금이 기적을 일으켰습니다! 트라페준타 성벽이 완전히 복구되어 지난 한 세기 동안 어느 때보다 높고 견고하게 솟아올랐습니다. 성탑 위에는 황실의 깃발이 당당히 휘날리며 모든 적에게 분명한 메시지를 보냅니다. 이 도시는 굴복하지 않는다고 말입니다." # 6757089543543555352
@@ -172,15 +173,22 @@
   great_project_type_fortify_syria_desc: "기동력이 뛰어난 튀르크 무리들이 시리아의 변두리를 괴롭히고 있습니다. 황야에서 습격해 마을과 상단을 약탈하고, 우리 주둔군이 효과적으로 대응하기도 전에 사라져 버립니다. 현재의 방어망은 이러한 유목 전술에 대응하기에 부족하며, 광대한 제국 영토를 취약한 상태로 내버려 두고 있습니다. 이 재앙을 끝내기 위해 대사업을 착수해야 합니다. 이것은 요새, 성벽, 감시 초소로 구성된 새로운 방어망 건설에 집중하는 거대한 규모의 사업이 될 것입니다. 이 새로운 '시리아 리메스'는 약탈자들의 안전한 통행과 손쉬운 약탈을 차단하여, 제국의 권위가 백성들을 보호할 수 있게 할 것입니다. 그래야만 이 소중한 속주가 평화 속에서 번영할 수 있으며, 취약한 국경 지대를 제국을 위한 단단한 방패로 탈바꿈시킬 수 있습니다." # 8993927772987832164
   great_project_type_tooltip_fortify_syria: "시리아의 제국 권위와 방어 체계를 복구하기 위한 대사업을 시작합니다." # 8002620008990604470
   great_project_type_fortify_syria_confirm: "동방은 다시 로마의 땅이 되리라!" # 13773719556972163874
+  great_project_name_fortify_syria: "" # 17241709254077376921
+  great_project_name_possessive_fortify_syria: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_antioch: "안티오키아 강화" # 12435459695810888254
+  great_project_type_fortify_syria_contribution_name_antioch: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_antioch_desc: "안티오키아는 시리아의 심장이자 지역 전체의 전략적 요충지입니다. 단순히 점유하는 것만으로는 부족합니다. 이곳을 다시 한번 제국 권력의 중심지로 만들어야 합니다. 이를 위해 거대한 성벽을 재건하고, 강력한 상비 야전군을 창설하며, 완전한 두카톤(공국)의 행정 체계를 복구하는 등 전면적인 군사 및 행정 개편이 필요합니다." # 13135909472525008773
   great_project_type_fortify_syria_contribution_edessa: "에데사 성채 보강" # 7455700546879713624
+  great_project_type_fortify_syria_contribution_name_edessa: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_edessa_desc: "요새 도시 에데사(알루하)는 시리아 동쪽 끝의 방패로, 메소포타미아로 통하는 관문을 지키고 있습니다. 이곳의 거대한 성채를 난공불락으로 만들어야 합니다. 우리는 탑의 재건을 지원하고, 해자를 깊게 파며, 무기고를 확장하여 동쪽으로 세력을 투사할 수 있는 강력한 전방 기지를 구축할 것입니다." # 4620728198049431314
   great_project_type_fortify_syria_contribution_strata: "스트라타 디오클레티아나 복구" # 13000861052713408475
+  great_project_type_fortify_syria_contribution_name_strata: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_strata_desc: "'스트라타 디오클레티아나'로 알려진 고대 로마 도로망은 한때 동부 국경의 중추였으며, 팔미라에서 유프라테스까지 요새들을 연결하는 요새화된 고속도로였습니다. 비록 일부는 사막에 묻혔으나, 주요 간선을 복구하면 우리 군단이 엄청난 속도로 이동할 수 있게 되어 약탈자들을 차단하고 주둔군에 항상 보급이 이루어지도록 보장할 것입니다." # 6692035112546382558
   great_project_type_fortify_syria_contribution_melkites: "멜키트 공동체 지원" # 9977257848000255320
+  great_project_type_fortify_syria_contribution_name_melkites: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_melkites_desc: "아랍인들이 '멜키트' 혹은 '황제의 사람들'이라 부르는 현지의 칼케돈파 기독교인들은 이민족의 통치 아래 수 세기 동안 정교회 신앙을 지켜왔습니다. 그들의 충성심은 갈고 닦이기를 기다리는 무기와도 같습니다. 그들의 총대주교들을 후원하고, 교회를 재건하며, 제국의 보호를 제공함으로써 시리아 전역에 충성스러운 눈과 귀, 그리고 손이 되어줄 연결망을 구축할 수 있습니다." # 3855067261272163633
   great_project_type_fortify_syria_contribution_ports: "레반트 항구 확보" # 7238085908420362629
+  great_project_type_fortify_syria_contribution_name_ports: "" # 17241709254077376921
   great_project_type_fortify_syria_contribution_ports_desc: "라오디케아에서 티레에 이르는 레반트의 항구들은 동방의 부가 유입되는 통로입니다. 또한 아랍 함대와 해적의 습격에 취약한 곳이기도 합니다. 항구를 요새화하고, 드로몬으로 구성된 새로운 순찰 함대를 건조하며, 모든 해상 무역에 대한 제국의 확고한 장악력을 확립하기 위해 대대적인 투자가 필요합니다." # 13653257797629674563
   turkish_incursions_events.0016.t: "다시 태어난 동방의 여왕" # 9669282548390034265
   turkish_incursions_events.0016.desc: "안티오크의 변화는 놀랍기 그지없습니다. 한때 무너져 내리던 성벽은 이제 완전하고 위풍당당하게 서 있습니다. 황제에게 충성하는 새로운 타그마 군단이 시리아의 태양 아래 군기를 빛내며 도시 밖 들판에서 훈련에 매진하고 있습니다. 복구된 방어 시설 덕분에 안전해진 시민들은 로마의 평화가 가져온 새로운 시대를 축하합니다. 안티오크는 다시 한번 진정한 제국의 도시가 되었습니다." # 17475064986350220663
@@ -219,11 +227,3 @@
   syrian_fiasco_modifier_desc: "시리아를 되찾으려던 나의 야심 찬 계획은 막대한 비용만 치른 채 실패로 돌아갔습니다. 자원은 낭비되었고, 우리의 약점은 만천하에 드러났습니다. 봉신들은 이를 무능과 과욕의 증거로 여기고 있습니다." # 1078021953001490468
   ANTIOCH_LOCATION_1_TOOLTIP: "안티오크 테마가 당신의 영역 내에 있음" # 16390771063372625613
   EDESSA_LOCATION_2_TOOLTIP: "에데사 테마가 당신의 영역 내에 있음" # 10709421221716166730
-  great_project_type_fortify_pontus_contribution_name_monasteries: "" # 17241709254077376921
-  great_project_name_fortify_syria: "" # 17241709254077376921
-  great_project_name_possessive_fortify_syria: "" # 17241709254077376921
-  great_project_type_fortify_syria_contribution_name_antioch: "" # 17241709254077376921
-  great_project_type_fortify_syria_contribution_name_edessa: "" # 17241709254077376921
-  great_project_type_fortify_syria_contribution_name_strata: "" # 17241709254077376921
-  great_project_type_fortify_syria_contribution_name_melkites: "" # 17241709254077376921
-  great_project_type_fortify_syria_contribution_name_ports: "" # 17241709254077376921

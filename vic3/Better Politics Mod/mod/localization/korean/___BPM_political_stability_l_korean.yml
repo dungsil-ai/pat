@@ -65,11 +65,17 @@
   bpm_decorative_modify_rigidity_rate: "[Concept('concept_bpm_political_stability', 'Rigidity')] 변경 속도" # 14850266121034681247
   bpm_decorative_modify_rigidity_rate_desc: "우리나라의 [Concept('concept_bpm_political_stability', '정치적 경직성')] 변화율 증감." # 7600267007516481032
   bpm_decorative_modify_rigidity_per_suffrage_investment: "[GetInstitutionType('institution_suffrage').GetName] [Concept('concept_institution', '제도')] 수준당 목표 [Concept('concept_bpm_political_stability', '경직성')]" # 13074280158307495189
+  bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_police_investment: "[GetInstitutionType('institution_police').GetName] [Concept('concept_institution', '제도')] 수준당 [Concept('concept_bpm_political_stability', '경직성')] 목표치" # 9532728084518394789
+  bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_security_investment: "[GetInstitutionType('institution_home_affairs').GetName] [Concept('concept_institution', '기관')] 수준당 [Concept('concept_bpm_political_stability', '경직성')] 목표치" # 1583493762670978322
+  bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_per_culture_investment: "[GetInstitutionType('institution_culture').GetName] [Concept('concept_institution', '제도')] 수준당 목표 [Concept('concept_bpm_political_stability', '경직성')] 수치" # 10453059667730219482
+  bpm_decorative_modify_rigidity_per_culture_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_rate_per_police_investment: "[Concept('concept_bpm_political_stability', '경직성')] [Concept('concept_institution', '제도')] [GetInstitutionType('institution_police').GetName] 단계당 변화율" # 5029001695409224828
+  bpm_decorative_modify_rigidity_rate_per_police_investment_desc: "" # 17241709254077376921
   bpm_decorative_modify_rigidity_rate_per_security_investment: "[Concept('concept_bpm_political_stability', '경직성')] 변경 속도: [GetInstitutionType('institution_home_affairs').GetName] [Concept('concept_institution', '기관')] 수준당" # 12952562325705479054
+  bpm_decorative_modify_rigidity_rate_per_security_investment_desc: "" # 17241709254077376921
   bpm_political_stability_baseline_tooltip: "이 기준선은 주로 국가가 가지고 있는 [Concept('concept_law', '법률')](전통주의적이고 억압적인 법률이 안정성을 높이는 방향으로 영향을 미침)의 영향을 받으며, [Concept('concept_radical', '급진파')]와 [Concept('concept_loyalist', '충성파')]의 존재 여부, 또는 진행 중인 [Concept('concept_revolution', '혁명')], [Concept('concept_war', '전쟁')]이나 [Concept('concept_election', '선거')]의 영향을 받습니다.$bpm_political_stability_baseline_value_tt$" # 15259387888740272949
   bpm_political_stability_rate_tooltip: "[Concept('concept_bpm_political_stability', '$concept_bpm_political_stability$')]가 목표치에 도달하는 속도는 보통 느린 편입니다. 진행 중인 [Concept('concept_revolution', '혁명')], [Concept('concept_war', '전쟁')] 또는 [Concept('concept_election', '선거')]은 이러한 속도를 가속화합니다.$bpm_political_stability_rate_value_tt$" # 9233070351540139282
   bpm_political_stability: "[Concept('concept_bpm_political_stability', '$concept_bpm_political_stability$')]" # 9470758526676256642
@@ -93,9 +99,3 @@
   bpm_party_establishment_trend_in_government: "[Concept('concept_government', '정부')]에 속해 있으면서" # 14941004126423665597
   concept_bpm_party_establishment: "설립" # 10572498233493628055
   concept_bpm_party_establishment_desc: "정당의 창당은 그 정당이 한 국가의 정치 문화에 얼마나 깊이 뿌리내리고 있는지를 나타내는 척도입니다. 이는 정당의 인기에 영향을 미치며, 정권을 획득할 수 있는 능력에도 영향을 줍니다. 정당의 창당은 국가의 [Concept('concept_bpm_political_stability', '정치적 경직성')], 이를 구성하는 [Concept('concept_bpm_ig_is_upper_institutional', '제도적')] 및 [Concept('concept_bpm_ideological_ig', '이념적')] [Concept('concept_interest_group', '이해집단')], 그리고 [Concept('concept_government', '정부')] 내에서의 정당의 존재 여부에 의해 영향을 받을 수 있습니다." # 3337416091067766077
-  bpm_decorative_modify_rigidity_per_suffrage_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_police_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_security_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_per_culture_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_rate_per_police_investment_desc: "" # 17241709254077376921
-  bpm_decorative_modify_rigidity_rate_per_security_investment_desc: "" # 17241709254077376921

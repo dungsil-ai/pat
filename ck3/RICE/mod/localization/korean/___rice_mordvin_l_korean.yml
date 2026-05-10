@@ -106,6 +106,7 @@
   activity_RICE_mordvin_ine_ozks_selection_tooltip: "이네 오즈크 축제를 준비하십시오.\n\n$RICE_mordvin_major_ozks_festival_context_tooltip$" # 15986112041620812680
   activity_RICE_mordvin_ine_ozks_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_mordvin_recently_celebrated_ine_ozks').GetNameWithTooltip] [character_modifier|E]\n$BULLET_WITH_TAB$ [activity|E]가 열리는 [county|E]는 [GetPlayer.GetFaith.GetReligion.GetName]을 따를 경우 [GetModifier('RICE_mordvin_ine_ozks_recently_held').GetNameWithTooltip] [county_modifier|E]를 얻습니다." # 11253918038309480822
   activity_RICE_mordvin_ine_ozks_guest_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 12882840294630978621
+  activity_RICE_mordvin_ine_ozks_province_desc: "" # 17241709254077376921
   activity_RICE_mordvin_ine_ozks_destination_selection: "$activity_RICE_mordvin_ine_ozks_province_desc$" # 1134981820249732660
   activity_RICE_mordvin_ine_ozks_guest_help_text: "$activity_RICE_mordvin_ine_ozks$" # 3858987958435822675
   activity_RICE_mordvin_ine_ozks_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -504,4 +505,3 @@
   mordvin.0099.t: "xxxxx" # 1951045980481827005
   mordvin.0099.desc: "xxxxx" # 1951045980481827005
   mordvin.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_mordvin_ine_ozks_province_desc: "" # 17241709254077376921

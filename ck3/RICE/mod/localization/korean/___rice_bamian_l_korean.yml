@@ -21,6 +21,7 @@
   activity_RICE_bamian_buddhas_non_buddhist_visit_context_tooltip: "#emphasis 역사적 배경:#! 아프가니스탄이 이슬람화된 이후에도 바미안의 부처상에 대한 무슬림들의 태도는 탈레반 정부가 2001년에 이 상들을 파괴한 것과는 대조적으로, 시간과 장소에 따라 다양했습니다. 예를 들어, 지역 전설에서는 두 상을 비운의 연인들이 돌로 변한 것이라고 믿었습니다. 이러한 이야기는 수 세기 동안 바미안에 거주했던 하자라족 사이에서 큰 영향을 미쳤으며, 일부 학자들은 탈레반이 하자라족에 대한 지속적인 억압의 일환으로 이 상들을 파괴했다고 추측할 정도로 그 영향력이 컸습니다. 중세 이슬람 학자들과 시인들은 이 상들과 그 아름다움을 경탄할 만한 경이로움, 즉 #italic '아자이브'#!로 분류하고 심지어 칭송하기도 했습니다. 예를 들어, 무굴 제국의 창시자인 바부르의 형제였던 자한기르 미르자는 1506년에 군사 원정 중 바미안에 들러 이 상들을 구경하기도 했습니다." # 16647197999467889233
   activity_RICE_bamian_buddhas_non_buddhist_visit_host_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [intent|E]에 따라 [prestige_i|E][prestige|E] 및/또는 [piety_i|E][piety|E] 획득\n$BULLET_WITH_TAB$ [intent|E]에 따라 #P 긍정적#!인 [character_modifier|E] 획득\n$BULLET_WITH_TAB$ [lifestyle|E]에서 [experience|E] 획득" # 18144079836331145692
   activity_RICE_bamian_buddhas_non_buddhist_visit_guest_desc: "$activity_RICE_bamian_buddhas_non_buddhist_visit_host_desc$" # 3504984405575677479
+  activity_RICE_bamian_buddhas_non_buddhist_visit_province_desc: "" # 17241709254077376921
   activity_RICE_bamian_buddhas_non_buddhist_visit_destination_selection: "$activity_RICE_bamian_buddhas_non_buddhist_visit_province_desc$" # 15920609691846501713
   activity_RICE_bamian_buddhas_non_buddhist_visit_guest_help_text: "$activity_RICE_bamian_buddhas_non_buddhist_visit$" # 1285617316210566297
   activity_RICE_bamian_buddhas_non_buddhist_visit_predicted_cost: "이 방문 비용은 귀하의 [income|E]에 따라 책정됩니다." # 14876553790667835804
@@ -434,4 +435,3 @@
   bamian.0099.t: "xxxxx" # 1951045980481827005
   bamian.0099.desc: "xxxxx" # 1951045980481827005
   bamian.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_bamian_buddhas_non_buddhist_visit_province_desc: "" # 17241709254077376921

@@ -82,6 +82,7 @@
   barony_tribe_norse: "$barony_castle_norse$" # 18085027804531053454
   h_north_sea: "노르드샤르발드" # 1810364404402660278
   h_north_sea_adj: "노르드샤르" # 13009918467184226967
+  h_north_sea_article: "" # 17241709254077376921
   title_nshegemony: "세드로트눈" # 17902641337103593456
   title_nsoverlord: "알믹셀코눙그르" # 5930660599645483685
   title_nsoverlordqueen: "알밀킬새드로트닝" # 4941672685790455797
@@ -93,6 +94,7 @@
   title_nsoverlordkingfather: "알밀킬세코눙그스파디르" # 5525974160030212272
   e_north_sea: "노르드샤리키" # 2678337866899821825
   e_north_sea_adj: "노르드만링그르" # 4726621921372904836
+  e_north_sea_article: "" # 17241709254077376921
   title_nsempire: "미킬사리키" # 7464415317940020451
   title_nsemperor: "미킬스에코눙그르" # 7399439031762536322
   title_nsqueen: "미킬세드로트닝" # 6231359821364517144
@@ -127,5 +129,3 @@
   title_manprincess: "세코눙스메이" # 17765618277244899788
   title_manqueenmother: "세드로트닝모디르" # 5567936187979458941
   title_mankingfather: "세코눙스파디르" # 7146863157987399594
-  h_north_sea_article: "" # 17241709254077376921
-  e_north_sea_article: "" # 17241709254077376921

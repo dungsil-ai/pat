@@ -256,6 +256,7 @@
   activity_RICE_glacier_marriage_context_tooltip: "#emphasis 역사적 배경:#! 힌두쿠시와 서부 히말라야 산맥에는 빙하를 관개 목적으로 '성장'시키는 전통이 있는데, 이는 회색빛이거나 흙먼지로 인해 갈색을 띠는 수컷 빙하와 순수한 색을 가진 암컷 빙하 사이의 소위 '빙하 결혼식'이라는 의례화된 과정을 통해 이루어집니다. 전설에 따르면, 성직자들이 중세 시대에 몽골인, 티베트인, 혹은 카슈가르 통치자라고 일컬어지는 침략자들로부터 지역 주민들을 보호하기 위한 자연 방벽을 만들기 위해 이 방법을 현지인들에게 가르쳤다고 합니다." # 8669462437439229245
   activity_RICE_glacier_marriage_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [county|E]에서 진행되는 [activity|E]는 #P 유익한#! [county_modifier|E|E]를 얻어 [development_i|E] [development|E]와 [gold_i|E] [taxes|E]가 증가합니다." # 6546588556359251339
   activity_RICE_glacier_marriage_guest_desc: "$activity_RICE_glacier_marriage_host_desc$" # 6398353649918391545
+  activity_RICE_glacier_marriage_province_desc: "" # 17241709254077376921
   activity_RICE_glacier_marriage_destination_selection: "$activity_RICE_glacier_marriage_province_desc$" # 1787673961539814725
   activity_RICE_glacier_marriage_guest_help_text: "$activity_RICE_glacier_marriage$" # 12609155805049353067
   activity_RICE_glacier_marriage_predicted_cost: "이 [activity|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 658366464949161382
@@ -283,6 +284,9 @@
   activity_RICE_zhangzhung_kinnaur_flower_festival_context_tooltip: "#emphasis 역사적 배경:#! #italic 풀라이치#! 축제 또는 꽃 축제는 현재 인도 히마찰프라데시 주에 위치한 [GetTitleByKey('d_kinnaur').GetNameNoTier] 계곡의 전통적인 축제입니다. 이 축제는 산의 꽃들을 모아 이 지역의 계곡, 산, 숲에 거주하는 지역 신들에게 바치는 것을 중심으로 이루어집니다. 또한 세상을 떠난 가족 구성원에게 경의를 표하고 지역 신탁가들에게 미래에 대한 예언을 구하는 기회이기도 합니다." # 5916743164051425117
   activity_RICE_zhangzhung_kinnaur_flower_festival_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$점괘 결과에 따라 자신에게 #P 이로운#! [character_modifiers|E] 또는 [activity|E]가 열리는 [county|E]에 [county_modifiers|E]를 얻을 확률\n$BULLET_WITH_TAB$ #bold 꽃 수집가#!로 지정된 가문 구성원이 추가적인 보너스를 얻을 수 있\"" # 6889542187852431856
   activity_RICE_zhangzhung_kinnaur_flower_festival_guest_desc: "$activity_RICE_zhangzhung_kinnaur_flower_festival_host_desc$" # 14733203611542512989
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_hills_desc: "" # 17241709254077376921
+  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desert_mountains_desc: "" # 17241709254077376921
   activity_RICE_zhangzhung_kinnaur_flower_festival_province_mountains_desc: "#P ++ 이곳의 산들은 아름다운 초원을 품고 있소.#!\n\n#italic 이 [activity|E]가 끝나면 [prestige_i|E] [prestige|E]와 [piety_i|E] [piety|E]가 증가할 것이오.!#" # 4398256133566090641
   activity_RICE_zhangzhung_kinnaur_flower_festival_destination_selection: "$activity_RICE_zhangzhung_kinnaur_flower_festival_province_desc$" # 7083534061307028415
   activity_RICE_zhangzhung_kinnaur_flower_festival_guest_help_text: "$activity_RICE_zhangzhung_kinnaur_flower_festival$" # 15033006866394528620
@@ -1363,7 +1367,3 @@
   dharma_festivals.067.t: "결론" # 3822412533199628403
   dharma_festivals.067.desc: "로사르 축제가 마침내 끝났으며, 축제의 즐거운 분위기는 며칠 더 이어질 것입니다. 아아, 모든 것이 덧없듯이, 모든 좋은 것들 역시 끝이 나야만 하는 것 같습니다." # 11891305610502008079
   dharma_festivals.067.home: "축제가 이제 끝났습니다." # 493449509155308930
-  activity_RICE_glacier_marriage_province_desc: "" # 17241709254077376921
-  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desc: "" # 17241709254077376921
-  activity_RICE_zhangzhung_kinnaur_flower_festival_province_hills_desc: "" # 17241709254077376921
-  activity_RICE_zhangzhung_kinnaur_flower_festival_province_desert_mountains_desc: "" # 17241709254077376921

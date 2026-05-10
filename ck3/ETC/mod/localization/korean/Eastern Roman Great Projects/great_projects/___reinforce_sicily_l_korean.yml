@@ -1,14 +1,21 @@
 ﻿l_korean:
   great_project_type_reinforce_sicily: "시칠리아 보강" # 15637093248048909070
   great_project_type_reinforce_sicily_desc: "시칠리아가 붕괴 직전에 처했습니다. 수십 년간 이어진 간헐적인 전쟁으로 우리의 권위는 산산조각 났으며, 이제 적의 무리가 우리의 마지막 남은 거점마저 집어삼키려 위협하고 있습니다. 지중해의 핵심적인 징검다리인 이 섬을 영원히 잃게 될 위기입니다.\n\n이것은 확장의 문제가 아니라 생존의 문제입니다. 이 비상 칙령을 통해 우리는 금화, 함선, 베테랑 병사 등 가용한 모든 자원을 총동원하여 포위된 수비대를 보강하고, 우리 해안에서 적을 몰아내며, 정당한 우리의 영토를 되찾을 것입니다. 지금 실패하는 것은 중앙해 그 자체를 포기하는 것과 같습니다." # 11036877693158206550
+  great_project_type_tooltip_reinforce_sicily: "" # 17241709254077376921
+  great_project_name_possessive_reinforce_sicily: "" # 17241709254077376921
+  great_project_name_reinforce_sicily: "" # 17241709254077376921
   great_project_type_reinforce_sicily_contribution_syracuse_fort: "헥사필론 요새" # 16627541276260945263
   great_project_type_reinforce_sicily_contribution_syracuse_fort_desc: "시라쿠사는 섬 전체 방어의 거점이 되어야 합니다. 이 기부금은 고대 헥사필론 요새를 최첨단 성채로 재건하는 기념비적인 과업을 위해 자금을 지원하고 기술자를 제공합니다." # 12295773187394002615
+  great_project_type_reinforce_sicily_contribution_name_syracuse_fort: "" # 17241709254077376921
   great_project_type_reinforce_sicily_contribution_sicily_troops: "원정군" # 9019348299265827403
   great_project_type_reinforce_sicily_contribution_sicily_troops_desc: "병사가 없는 요새는 무의미합니다. 이는 시칠리아로 파견될 대규모 베테랑 병력을 제공하며, 이들은 적의 잔당을 소탕하고 주요 마을을 수비하며 현지 민병대를 훈련시키는 임무를 맡습니다." # 5765546343414751830
+  great_project_type_reinforce_sicily_contribution_name_sicily_troops: "" # 17241709254077376921
   great_project_type_reinforce_sicily_contribution_sicily_navy: "해협 확보" # 16015598691059585258
   great_project_type_reinforce_sicily_contribution_sicily_navy_desc: "시칠리아는 섬입니다. 이곳을 차지한다는 것은 그 해역을 지배한다는 뜻입니다. 이 기여를 통해 메시나 해협을 순찰하고 해적을 소탕하며, 우리 군대가 바다를 통해 보급을 유지할 수 있도록 함대를 파견합니다." # 15324450971672894943
+  great_project_type_reinforce_sicily_contribution_name_sicily_navy: "" # 17241709254077376921
   great_project_type_reinforce_sicily_contribution_sicily_war_chest: "시칠리아 군자금" # 17450768137512290997
   great_project_type_reinforce_sicily_contribution_sicily_war_chest_desc: "전쟁은 금으로 움직입니다. 이 재정적 지원은 전체 작전의 중추 역할을 할 것이며, 용병 고용, 군량미 구입, 수비대를 위한 무기와 갑옷 제작에 사용될 것입니다." # 15502516532972729151
+  great_project_type_reinforce_sicily_contribution_name_sicily_war_chest: "" # 17241709254077376921
   syracuse_reinforced_modifier: "시라쿠사 보강됨" # 6245527029215378561
   syracuse_reinforced_modifier_desc: "시라쿠사의 고대 헥사필론 요새가 재건 및 확장되었습니다. 이제 이 도시는 시칠리아에서 벌어지는 우리 전략 작전의 난공불락의 심장부 역할을 수행합니다." # 6846404078718695354
   reinforce_sicily.0001.t: "시칠리아 보강 - 관대한 기부" # 11549469346896739996
@@ -33,10 +40,3 @@
   reinforce_sicily.0007.desc: "적의 봉쇄망을 뚫고 달려오느라 돛이 갈기갈기 찢어진 쾌속 갤리선 한 척이 절박한 전갈을 싣고 도착했습니다. 시칠리아를 담당하는 스트라테고스의 인장이 깨지며 암울한 소식이 드러났습니다.\n\n이미 시칠리아의 거의 전역을 집어삼킨 사라센의 물결이 마지막 압도적인 공격을 위해 집결하고 있습니다. 그들의 목표는 섬에 남은 우리의 마지막 유의미한 거점인 시라쿠사의 거대 항구입니다. 수비대는 지쳤고, 성벽은 부서졌으며, 백성들은 피할 수 없는 공성전의 공포 속에 살고 있습니다.\n\n스트라테고스의 간청은 간단합니다. 시라쿠사가 함락되면 이 섬에서 우리의 존재는 영원히 사라질 것입니다. 옛 제국의 곡창지대를 잃게 될 것이며, 침략자들은 본토를 마음껏 습격할 수 있는 불침의 요새를 갖게 될 것입니다.\n\n지금이 마지막 순간입니다. 시칠리아를 구하기 위해 우리는 단순히 원조를 보내는 것에 그쳐서는 안 됩니다. 섬을 되찾기 위한 전면적인 작전을 개시해야 합니다." # 7216568369732874991
   reinforce_sicily.0007.a: "그들은 전쟁을 겪게 될 것이다! 우리는 시칠리아를 포기하지 않겠다!" # 18312326590015987415
   SICILY_LOCATION_1_TOOLTIP: "시라쿠사가 귀하의 영역 내에 있습니다." # 13515809872843035805
-  great_project_type_tooltip_reinforce_sicily: "" # 17241709254077376921
-  great_project_name_possessive_reinforce_sicily: "" # 17241709254077376921
-  great_project_name_reinforce_sicily: "" # 17241709254077376921
-  great_project_type_reinforce_sicily_contribution_name_syracuse_fort: "" # 17241709254077376921
-  great_project_type_reinforce_sicily_contribution_name_sicily_troops: "" # 17241709254077376921
-  great_project_type_reinforce_sicily_contribution_name_sicily_navy: "" # 17241709254077376921
-  great_project_type_reinforce_sicily_contribution_name_sicily_war_chest: "" # 17241709254077376921

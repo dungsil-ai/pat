@@ -79,6 +79,7 @@
   district_giga_birch_orykta_energy_desc: "이 가속기와 수집기들은 에르고스피어를 통해 광자를 통과시킴으로써 블랙홀의 각운동량을 빼앗습니다." # 15130969956944140553
   mod_district_giga_birch_orykta_energy_max_add: "최대 $district_giga_birch_orykta_energy_plural$" # 18306957813896833871
   zone_giga_birch_orykta_energy: "발전기 구역" # 2022471298502462146
+  zone_giga_birch_orykta_energy_desc: "" # 17241709254077376921
   zone_giga_birch_orykta_insula_energy: "발전기 집중" # 14742802258098801764
   zone_giga_birch_orykta_insula_energy_desc: "플라즈마 도관과 초전도 송전선이 차폐된 상부 구조를 가로질러 $name_birch$의 심장부에 잠든 고요한 분노를 끌어냅니다." # 4671020105844987461
   zone_giga_birch_orykta_insula_energy_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_energy_plural$§!\n\n$job_giga_birch_orykta_manager_energy_effect_desc$" # 1865666964781605365
@@ -99,6 +100,7 @@
   district_giga_birch_orykta_minerals_desc: "사건의 지평선 너머에서 잃어버린 물질을 회수하는 뒤틀린 중력 드릴." # 7974786575045506158
   mod_district_giga_birch_orykta_minerals_max_add: "최대 $district_giga_birch_orykta_minerals_plural$" # 15231106903701190931
   zone_giga_birch_orykta_minerals: "채굴 지대" # 7654922645740312843
+  zone_giga_birch_orykta_minerals_desc: "" # 17241709254077376921
   zone_giga_birch_orykta_insula_minerals: "채굴 집중" # 16119238628576063617
   zone_giga_birch_orykta_insula_minerals_desc: "확장된 수송 통로와 거대한 처리 시설을 통해 $pc_core_black_hole$에서 회수된 원자재를 문명의 근간으로 변환합니다." # 11214728627815895447
   zone_giga_birch_orykta_insula_minerals_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_minerals_plural$§!\n\n$job_giga_birch_orykta_manager_minerals_effect_desc$" # 543026814807450640
@@ -117,6 +119,7 @@
   district_giga_birch_orykta_refinery_desc: "전략 자원 생산을 전담하는 중력 보조 융합 도가니입니다." # 17239684419109545041
   mod_district_giga_birch_orykta_refinery_max_add: "최대 $district_giga_birch_orykta_refinery_plural$" # 10185533526376451698
   zone_giga_birch_orykta_refinery: "정제 구역" # 10630939379122384244
+  zone_giga_birch_orykta_refinery_desc: "" # 17241709254077376921
   zone_giga_birch_orykta_insula_refinery: "정제소 집중" # 12036328341630333640
   zone_giga_birch_orykta_insula_refinery_desc: "가장 낮은 층의 뒤틀린 공간 속에서, 핵융합 합성 노드들이 단순한 원소를 이국적인 물질로 변환합니다." # 1713670288548683248
   zone_giga_birch_orykta_insula_refinery_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_refinery_plural$§!\n\n$job_giga_birch_orykta_manager_refinery_effect_desc$" # 4536564907634815083
@@ -133,6 +136,7 @@
   district_giga_birch_orykta_dark_matter_desc: "블랙홀에서 암흑 물질을 유도하여 분리하는 데 사용되는 정교한 탐지기들과 훨씬 더 정교한 조작기들의 격자." # 16550726232471905892
   mod_district_giga_birch_orykta_dark_matter_max_add: "최대 $district_giga_birch_orykta_dark_matter_plural$" # 16592322225910205920
   zone_giga_birch_orykta_dark_matter: "암흑 물질 지대" # 11633459110644460440
+  zone_giga_birch_orykta_dark_matter_desc: "" # 17241709254077376921
   zone_giga_birch_orykta_insula_dark_matter: "직조 집중" # 17040475736241639888
   zone_giga_birch_orykta_insula_dark_matter_desc: "반짝이는 입자 포획 스크린이 공간을 접힌 그물망 형태로 구부려 산업 규모로 암흑 물질을 포획합니다." # 1398293870909174631
   zone_giga_birch_orykta_insula_dark_matter_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_dark_matter_plural$§!\n\n$job_giga_birch_orykta_manager_dark_matter_effect_desc$" # 776021562586177771
@@ -147,6 +151,7 @@
   district_giga_birch_orykta_negative_mass_desc: "블랙홀의 사건 지평선 근처에 있는 특이한 조건들은 음의 질량 변환에 유용함이 입증되었습니다." # 6535274098525300606
   mod_district_giga_birch_orykta_negative_mass_max_add: "최대 $district_giga_birch_orykta_negative_mass_plural$" # 7942983927958885072
   zone_giga_birch_orykta_negative_mass: "음질량 지대" # 13258780662250123885
+  zone_giga_birch_orykta_negative_mass_desc: "" # 17241709254077376921
   zone_giga_birch_orykta_insula_negative_mass: "변환 집중" # 14975015953681016719
   zone_giga_birch_orykta_insula_negative_mass_desc: "음질량 변환 시설을 위한 효율적인 저장, 운송 및 자재 처리." # 3474273496603838709
   zone_giga_birch_orykta_insula_negative_mass_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_negative_mass_plural$§!\n\n$job_giga_birch_orykta_manager_negative_mass_effect_desc$" # 1442861872687102954
@@ -173,6 +178,7 @@
   district_giga_birch_ktisma_foundry_desc: "빽빽하게 늘어선 제련소들에서 고급 사업에 사용될 고품질 합금이 생산됩니다." # 17606836561286492589
   mod_district_giga_birch_ktisma_foundry_max_add: "최대 $district_giga_birch_ktisma_foundry_plural$" # 10520275534147445734
   zone_giga_birch_ktisma_foundry: "주조 구역" # 4370278073501205908
+  zone_giga_birch_ktisma_foundry_desc: "" # 17241709254077376921
   zone_giga_birch_ktisma_insula_foundry: "주조 집중" # 9231556708594746047
   zone_giga_birch_ktisma_insula_foundry_desc: "보조 재료 공급 장치가 끝없는 광석 흐름을 굶주린 제련소로 전달합니다." # 2588138466082794876
   zone_giga_birch_ktisma_insula_foundry_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_foundry_plural$§!\n\n$job_giga_birch_ktisma_manager_foundry_effect_desc$" # 14960167276520163662
@@ -193,6 +199,7 @@
   district_giga_birch_ktisma_factory_desc: "끝없는 생산 라인이 민간 시장에 공급할 상품들을 쏟아냅니다." # 9418911458130511432
   mod_district_giga_birch_ktisma_factory_max_add: "최대 $district_giga_birch_ktisma_factory_plural$" # 3395303337101083107
   zone_giga_birch_ktisma_factory: "공장 구역" # 1829434067874942646
+  zone_giga_birch_ktisma_factory_desc: "" # 17241709254077376921
   zone_giga_birch_ktisma_insula_factory: "공장 집중" # 9675887788647836777
   zone_giga_birch_ktisma_insula_factory_desc: "민간 산업에 최적화된 수송 네트워크는 모든 요청이 제시간에 처리되도록 보장합니다." # 7110100426481665079
   zone_giga_birch_ktisma_insula_factory_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_factory_plural$§!\n\n$job_giga_birch_ktisma_manager_factory_effect_desc$" # 17756436930407018725
@@ -213,6 +220,7 @@
   district_giga_birch_ktisma_trade_desc_gestalt: "긴밀하게 연결된 수송 네트워크가 제조 허브 간의 수송을 최적화합니다." # 1814376488236557982
   mod_district_giga_birch_ktisma_trade_max_add: "최대 $district_giga_birch_ktisma_trade_plural$" # 12232383440674295725
   zone_giga_birch_ktisma_trade: "무역 지대" # 16358649036485848785
+  zone_giga_birch_ktisma_trade_desc: "" # 17241709254077376921
   zone_giga_birch_ktisma_insula_trade: "물류 중심지" # 18089516102531164615
   zone_giga_birch_ktisma_insula_trade_desc: "편의성과 처리량의 완벽한 교차점 - 수송의 완성입니다." # 6598334431520439252
   zone_giga_birch_ktisma_insula_trade_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_trade_plural$§!\n\n$job_giga_birch_ktisma_manager_trade_effect_desc$" # 11508123131227019922
@@ -229,6 +237,7 @@
   district_giga_birch_ktisma_supertensiles_desc: "$district_giga_supertensiles_desc$" # 2633434774543255058
   mod_district_giga_birch_ktisma_supertensiles_max_add: "최대 $district_giga_birch_ktisma_supertensiles_plural$" # 9629968940195179700
   zone_giga_birch_ktisma_supertensiles: "메가물류 구역" # 8507365434613539192
+  zone_giga_birch_ktisma_supertensiles_desc: "" # 17241709254077376921
   zone_giga_birch_ktisma_insula_supertensiles: "메가물류 집중" # 5464422832115424481
   zone_giga_birch_ktisma_insula_supertensiles_desc: "우주항과 제조 시설 간의 향상된 상호 연결을 통해 그 어느 때보다 뛰어난 조율이 가능해졌습니다." # 4329798938027119081
   zone_giga_birch_ktisma_insula_supertensiles_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_supertensiles_plural$§!\n\n$job_giga_birch_ktisma_manager_supertensiles_effect_desc$" # 6683189764164491318
@@ -243,6 +252,7 @@
   district_giga_birch_ktisma_sentient_metal_desc: "이 특수 시설들은 지각 있는 금속 배양체에 그들이 증식하는 데 필요한 합금과 에너지를 공급합니다." # 17497791461472570043
   mod_district_giga_birch_ktisma_sentient_metal_max_add: "최대 $district_giga_birch_ktisma_sentient_metal_plural$" # 2677923927145897400
   zone_giga_birch_ktisma_sentient_metal: "지성 금속 구역" # 3528001126772999070
+  zone_giga_birch_ktisma_sentient_metal_desc: "" # 17241709254077376921
   zone_giga_birch_ktisma_insula_sentient_metal: "지성 금속 집중" # 1117213872745251179
   zone_giga_birch_ktisma_insula_sentient_metal_desc: "확장된 공급 비축량, 직접 에너지 도관, 그리고 개선된 제품 처리 시설이 지성 금속 증식 과정을 효율화합니다." # 5357165836175859801
   zone_giga_birch_ktisma_insula_sentient_metal_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_sentient_metal_plural$§!\n\n$job_giga_birch_ktisma_manager_sentient_metal_effect_desc$" # 3689257107353833649
@@ -271,6 +281,7 @@
   district_giga_birch_physma_farm_desc_anglers: "무한한 지평선 너머로 생명으로 가득 찬 끝없는 바다가 펼쳐져 있습니다." # 1599950791698019429
   mod_district_giga_birch_physma_farm_max_add: "최대 $district_giga_birch_physma_farm_plural$" # 12986831503911640907
   zone_giga_birch_physma_farm: "농장 구역" # 563705959225351347
+  zone_giga_birch_physma_farm_desc: "" # 17241709254077376921
   zone_giga_birch_physma_insula_farm: "농업 집중" # 16303253789331858057
   zone_giga_birch_physma_insula_farm_desc: "완벽하게 설계된 생태계 덕분에 식량 생산과 수집이 사소한 일이 되었습니다." # 14325671898242254581
   zone_giga_birch_physma_insula_farm_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y[GigaGetBirchManagerFarmPlural]§!\n\n[GigaGetBirchManagerFarmEffect]" # 15517673771843113518
@@ -297,6 +308,7 @@
   district_giga_birch_physma_laboratory_desc: "온갖 종류의 연구 시설들이 이 섹터를 가득 채우고 있습니다." # 2910178942831040013
   mod_district_giga_birch_physma_laboratory_max_add: "최대 $district_giga_birch_physma_laboratory_plural$" # 8937349542935505387
   zone_giga_birch_physma_laboratory: "연구 지대" # 17443735663964780284
+  zone_giga_birch_physma_laboratory_desc: "" # 17241709254077376921
   zone_giga_birch_physma_insula_laboratory: "연구 집중" # 6955921175860148341
   zone_giga_birch_physma_insula_laboratory_desc: "이곳에서는 연구와 실험이 삶의 방식이 됩니다. 모든 행동은 통찰을 담고 있으며, 모든 움직임은 새로운 발견을 가져옵니다." # 7813051519322706595
   zone_giga_birch_physma_insula_laboratory_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_physma_manager_laboratory_plural$§!\n\n$job_giga_birch_physma_manager_laboratory_effect_desc$" # 10803566300320783815
@@ -319,6 +331,7 @@
   district_giga_birch_physma_administration_desc_sanctuary: "유기체가 쾌적하고 충실하며, 무엇보다도 통제된 방식으로 삶을 영위할 수 있는 넓은 거주 구역입니다." # 1033043731417129220
   mod_district_giga_birch_physma_administration_max_add: "최대 $district_giga_birch_physma_administration_plural$" # 12918439605833348424
   zone_giga_birch_physma_administration: "통합 지대" # 1865279135565404213
+  zone_giga_birch_physma_administration_desc: "" # 17241709254077376921
   zone_giga_birch_physma_insula_administration: "통합 집중" # 1441353659240146849
   zone_giga_birch_physma_insula_administration_desc: "어떤 형태든 문화적 표현은 필수적입니다." # 11276248492889342884
   zone_giga_birch_physma_insula_administration_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y[GigaGetBirchManagerAdministrationPlural]§!\n\n[GigaGetBirchManagerAdministrationEffect]" # 6850143430355622321
@@ -335,6 +348,7 @@
   district_giga_birch_physma_fortress_desc: "인공 산맥 깊숙이 자리 잡은 이 강력한 보루들은 버치 월드 인슐라의 광대한 영역에 걸쳐 영향력을 투사합니다." # 77155088609557704
   mod_district_giga_birch_physma_fortress_max_add: "최대 $district_giga_birch_physma_fortress_plural$" # 15942608324771378524
   zone_giga_birch_physma_fortress: "요새 지대" # 15700601501090591326
+  zone_giga_birch_physma_fortress_desc: "" # 17241709254077376921
   zone_giga_birch_physma_insula_fortress: "군사 집중" # 15572204899958976279
   zone_giga_birch_physma_insula_fortress_desc: "언덕에도 눈이 달려 있다." # 5965029457955505065
   zone_giga_birch_physma_insula_fortress_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_physma_manager_fortress_plural$§!\n\n$job_giga_birch_physma_manager_fortress_effect_desc$" # 12989325057470637364
@@ -384,6 +398,7 @@
   giga_birch_insula_name_plural: "$giga_birch_insula_col$인술라에§!" # 13626994552401057718
   giga_birch_district_insula_tooltip: "$giga_birch_insula_icon$$giga_birch_insula_col$인슐라§!는 일반 행성의 지구와 유사한 거대한 인공 대륙입니다. 각 유형은 일반적인 생산 영역을 담당하며 해당 구역을 건설하여 더욱 전문화할 수 있지만, 모두 동일한 건설 제한을 공유합니다." # 9621402810724051305
   mod_giga_birch_district_insula_tag: "이것은 $giga_birch_insula_icon$$giga_birch_insula_name$입니다.\n다른 $giga_birch_insula_name$ 유형 특구들과 한계치를 공유합니다.\n" # 151676606165646849
+  mod_giga_birch_district_insula_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_insula_max: "최대 $giga_birch_insula_col$ 인술라에§!" # 14392404393733638413
   mod_giga_birch_district_insula_base: "$mod_giga_birch_district_insula_max$" # 11103534730583983465
   mod_giga_birch_district_insula_min: "최소 $giga_birch_insula_col$인술라§!" # 3574386346702558623
@@ -398,7 +413,9 @@
   giga_birch_district_orykta_desc: "$giga_birch_orykta_icon$$giga_birch_orykta_name$ 섹터는 중력 보조를 통한 $giga_r_motes$$giga_r_gases$$giga_r_crystals$ [owner.BirchNegativeMass] §Y전략 자원§! 처리와 $name_birch$의 $pc_core_black_hole$에서 접근 불가능한 $giga_r_energy$$giga_r_minerals$$giga_r_dm$ §Y원자재§!를 수집하는 데 특화되어 있습니다." # 815861561953538634
   giga_birch_district_orykta_tooltip: "$giga_birch_district_orykta_desc$\n " # 17340806566062495383
   mod_giga_birch_district_orykta_tag: "이것은 $giga_birch_orykta_icon$$giga_birch_orykta_name$ 구역입니다. 다른 $giga_birch_orykta_name$ 구역과 한도를 공유합니다.\n" # 10429373303262892591
+  mod_giga_birch_district_orykta_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_insula_orykta_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
+  mod_giga_birch_district_insula_orykta_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_orykta_max: "최대 $giga_birch_orykta_col$Orykta§! 섹터" # 8254131076140111408
   giga_birch_district_orykta_allow: "§R이 행성은 더 이상 $giga_birch_orykta_name$ 섹터를 감당할 수 없습니다§!" # 6118681413443476385
   giga_birch_ktisma_col: "§L" # 10738380520156576673
@@ -408,7 +425,9 @@
   giga_birch_district_ktisma_desc: "$giga_birch_ktisma_icon$$giga_birch_ktisma_name$ 섹터는 £trade£ §Y물류§!, 그리고 $giga_r_alloys$ [owner.BirchCGs][owner.BirchSentientMetal][owner.BirchSupertensiles] §Y첨단 소재§!의 제조 및 가공에 특화되어 있습니다." # 6228177477376827519
   giga_birch_district_ktisma_tooltip: "$giga_birch_district_ktisma_desc$\n " # 15922434584974760615
   mod_giga_birch_district_ktisma_tag: "이것은 $giga_birch_ktisma_icon$$giga_birch_ktisma_name$ 구역입니다. 다른 $giga_birch_ktisma_name$ 구역과 상한선을 공유합니다.\n" # 14358253582394039938
+  mod_giga_birch_district_ktisma_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_insula_ktisma_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
+  mod_giga_birch_district_insula_ktisma_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_ktisma_max: "최대 $giga_birch_ktisma_col$크티스마§! 섹터" # 12321460820882719270
   giga_birch_district_ktisma_allow: "§R이 행성은 더 이상 $giga_birch_ktisma_name$ 구역을 지원할 수 없습니다§!" # 10910400769760342524
   giga_birch_physma_col: "§E" # 10096669700574791507
@@ -419,27 +438,9 @@
   giga_birch_district_physma_tooltip: "$giga_birch_district_physma_desc$\n " # 8501298215513493296
   giga_birch_district_physma_gestalt_tooltip: "$giga_birch_physma_name$ 구역은 사회와 자연 세계의 재현 및 연구에 특화되어 있습니다. £food£ §Y농장§!, $giga_r_research$ §Y연구소§!, 그리고 £unity£ §Y문화 유적지§!가 이곳에서 발견될 수 있습니다." # 12335677890213976271
   mod_giga_birch_district_physma_tag: "이것은 $giga_birch_physma_icon$$giga_birch_physma_name$ 구역입니다. 이는 다른 $giga_birch_physma_name$ 구역과 상한선을 공유합니다.\n" # 1019189796604687409
-  zone_giga_birch_orykta_energy_desc: "" # 17241709254077376921
-  zone_giga_birch_orykta_minerals_desc: "" # 17241709254077376921
-  zone_giga_birch_orykta_refinery_desc: "" # 17241709254077376921
-  zone_giga_birch_orykta_dark_matter_desc: "" # 17241709254077376921
-  zone_giga_birch_orykta_negative_mass_desc: "" # 17241709254077376921
-  zone_giga_birch_ktisma_foundry_desc: "" # 17241709254077376921
-  zone_giga_birch_ktisma_factory_desc: "" # 17241709254077376921
-  zone_giga_birch_ktisma_trade_desc: "" # 17241709254077376921
-  zone_giga_birch_ktisma_supertensiles_desc: "" # 17241709254077376921
-  zone_giga_birch_ktisma_sentient_metal_desc: "" # 17241709254077376921
-  zone_giga_birch_physma_farm_desc: "" # 17241709254077376921
-  zone_giga_birch_physma_laboratory_desc: "" # 17241709254077376921
-  zone_giga_birch_physma_administration_desc: "" # 17241709254077376921
-  zone_giga_birch_physma_fortress_desc: "" # 17241709254077376921
-  mod_giga_birch_district_insula_tag_short: "" # 17241709254077376921
-  mod_giga_birch_district_orykta_tag_short: "" # 17241709254077376921
-  mod_giga_birch_district_insula_orykta_tag_short: "" # 17241709254077376921
-  mod_giga_birch_district_ktisma_tag_short: "" # 17241709254077376921
-  mod_giga_birch_district_insula_ktisma_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_physma_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_insula_physma_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
+  mod_giga_birch_district_insula_physma_tag_short: "" # 17241709254077376921
   mod_giga_birch_district_physma_max: "최대 `$giga_birch_physma_col$Physma§`! 구역" # 16342429754666022662
   giga_birch_district_physma_allow: "§R이 행성은 더 이상 $giga_birch_physma_name$ 섹터를 수용할 수 없습니다!§!" # 9389759308932189236
   planet_giga_birch_structure_managers: "버치 구조물 관리 직업" # 3354122989811321777
@@ -1012,6 +1013,7 @@
   trait_auto_pc_birch_preference_desc: "$trait_auto_hab_preference_desc$" # 232539336545340631
   mod_pc_origin_birch_habitability: "$mod_pc_birch_habitability$" # 2692861387840875757
   trait_pc_origin_birch_preference: "쇠퇴하는 자작나무 세계 선호도" # 17200853279441873721
+  trait_pc_origin_birch_preference_desc: "" # 17241709254077376921
   mod_pc_origin_dummy_birch_habitability: "$mod_pc_birch_habitability$" # 2692861387840875757
   trait_pc_origin_dummy_birch_preference: "더미 버치 세계 선호도 (이것은 보이면 안 됩니다)" # 10348640604773188554
   trait_pc_origin_dummy_birch_preference_desc: "$trait_pc_birch_preference_desc$" # 15407808382494675625
@@ -1064,6 +1066,8 @@
   vsbw_begin: "무한한 광활함" # 5990484403465531213
   vsbw_begin_desc: "이 버치 세계를 궁극의 서식지로 개조할 때가 되었다. 어중간한 조치는 없을 것이다. 그 전체 표면은 우리 문명에 알려진 가장 발전된 기술로 개선될 것이다." # 1073685990824585733
   pc_void_birch: "초거대 버치 공허 구체" # 9914414329477901615
+  pc_void_birch_desc: "" # 17241709254077376921
+  pc_void_birch_adj: "" # 17241709254077376921
   mod_pc_void_birch_habitability: "자작나무 거주 적합도" # 18432139256508454690
   trait_pc_void_birch_preference: "버치 월드 선호도" # 18170478876688826092
   trait_pc_void_birch_preference_desc: "우리 팝이 거주할 궁극의 서식지입니다. 모든 의미에서 전설적입니다." # 4116363613202233212
@@ -1558,7 +1562,3 @@
   giga_birch.11070: "관측 통찰" # 13031891304535276337
   giga_birch.11070.desc: "한랭층에 있는 복원된 관측소의 저희 [GetResearchers]가 새로운 데이터가 대량 유입되고 있다고 보고했습니다. 구조체의 정보망에서 접점 재연결이 이루어져 이전에 알려지지 않은 처리 노드 집합에 저희를 연결시킨 것 같습니다." # 13841628948746671921
   giga_birch.11070.a: "훌륭하군!" # 2437330302850207204
-  mod_giga_birch_district_insula_physma_tag_short: "" # 17241709254077376921
-  trait_pc_origin_birch_preference_desc: "" # 17241709254077376921
-  pc_void_birch_desc: "" # 17241709254077376921
-  pc_void_birch_adj: "" # 17241709254077376921

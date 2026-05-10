@@ -2,6 +2,24 @@
 
 프로젝트의 주요 변경 사항 및 개선 사항을 기록합니다.
 
+## 2026년 5월
+
+### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-05-04
+
+**문서 반영 대상 변경:**
+- 업스트림 대시보드 이슈 중복 생성 방지: 워크플로우에 `concurrency` 그룹(`upstream-dashboard`)을 추가하여 동시 실행을 직렬화하고, 동일 제목의 이슈가 여러 개 존재할 경우 번호가 가장 낮은 이슈만 유지하고 나머지 중복 이슈를 자동으로 닫음
+- CK3 1.19.0 모드 버전 업데이트: ETC, RICE, Search & Trade Artifact, VIET 모드의 `descriptor.mod`를 CK3 1.19.* 버전에 맞게 갱신
+
+**관련 파일:**
+- `.github/workflows/upstream-translation-dashboard.yml`
+- `ck3/ETC/mod/descriptor.mod`
+- `ck3/RICE/mod/descriptor.mod`
+- `ck3/Search & Trade Artifact/mod/descriptor.mod`
+- `ck3/VIET/mod/descriptor.mod`
+
+---
+
 ## 2026년 4월
 
 ### 주간 문서 현행화 기준 변경점 반영

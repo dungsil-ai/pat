@@ -27,6 +27,7 @@
   children_rights_events.4.d: "이것은 귀하께서 보지 않으셔야 할 내용입니다." # 5740365852337930353
   children_rights_events.4.f: "\"당신은 이 내용을 보아서는 안 됩니다.\"" # 16121508545455784876
   children_rights_events.4.a: "BPM 개발자들에게 보고해 주십시오." # 17133067515803269835
+  children_rights_events.4.b: "" # 17241709254077376921
   children_rights_events.4.c: "달려라." # 12390504363655969727
   ragged_schools_modifier: "누더기 학교" # 10415243328862011381
   ragged_schools_devout: "종교적 빈민 학교" # 10542658707808712412
@@ -131,4 +132,3 @@
   building_group_bg_agriculture_laborers_standard_of_living_add: "테스트 2" # 11709705920395864378
   building_group_bg_agriculture_laborers_standard_of_living_add_desc: "테스트 2 설명" # 2087928024074082427
   welfare_laws.3.d: "일부 [SCOPE.gsInterestGroup('bpm_social_reformer_scope').GetName] 내 사회 개혁가들이 제안된 [SCOPE.sLaw('current_law_scope').GetName]에 대해 빈곤 자체를 범죄로 만들려는 시도로 간주하며 비판의 목소리를 높이고 있습니다." # 4193243935055418880
-  children_rights_events.4.b: "" # 17241709254077376921

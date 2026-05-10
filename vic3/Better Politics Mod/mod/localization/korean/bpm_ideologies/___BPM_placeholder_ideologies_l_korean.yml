@@ -1,23 +1,23 @@
 ﻿l_korean:
   ideology_ban_placeholder: "정당 금지 입장 없음" # 13774705910412417157
-  ideology_cit_placeholder: "시민권 입장 없음" # 8956925345252201127
-  ideology_dop_placeholder: "권력 자세 없음" # 5571799438126221357
-  ideology_eco_placeholder: "경제 기조 없음" # 11796523728431609345
-  ideology_fem_placeholder: "여성 불참 입장" # 18013534710937056611
-  ideology_gov_placeholder: "정부 입장 없음" # 978453496322781607
-  ideology_mil_placeholder: "군사적 입장 없음" # 3719735505617313400
-  ideology_rel_placeholder: "종교적 입장 없음" # 11156005597661064019
-  ideology_sta_placeholder: "주(State) 입장 없음" # 15718079944756102882
-  ideology_wel_placeholder: "복지 거부 입장" # 11428476831059787673
-  ideology_exe_placeholder: "집행 태세 없음" # 1558162749913189855
   ideology_ban_placeholder_desc: "" # 17241709254077376921
+  ideology_cit_placeholder: "시민권 입장 없음" # 8956925345252201127
   ideology_cit_placeholder_desc: "" # 17241709254077376921
+  ideology_dop_placeholder: "권력 자세 없음" # 5571799438126221357
   ideology_dop_placeholder_desc: "" # 17241709254077376921
+  ideology_eco_placeholder: "경제 기조 없음" # 11796523728431609345
   ideology_eco_placeholder_desc: "" # 17241709254077376921
+  ideology_fem_placeholder: "여성 불참 입장" # 18013534710937056611
   ideology_fem_placeholder_desc: "" # 17241709254077376921
+  ideology_gov_placeholder: "정부 입장 없음" # 978453496322781607
   ideology_gov_placeholder_desc: "" # 17241709254077376921
+  ideology_mil_placeholder: "군사적 입장 없음" # 3719735505617313400
   ideology_mil_placeholder_desc: "" # 17241709254077376921
+  ideology_rel_placeholder: "종교적 입장 없음" # 11156005597661064019
   ideology_rel_placeholder_desc: "" # 17241709254077376921
+  ideology_sta_placeholder: "주(State) 입장 없음" # 15718079944756102882
   ideology_sta_placeholder_desc: "" # 17241709254077376921
+  ideology_wel_placeholder: "복지 거부 입장" # 11428476831059787673
   ideology_wel_placeholder_desc: "" # 17241709254077376921
+  ideology_exe_placeholder: "집행 태세 없음" # 1558162749913189855
   ideology_exe_placeholder_desc: "" # 17241709254077376921

@@ -240,6 +240,7 @@
   activity_RICE_normandy_saint_aubert_procession_selection_tooltip: "성 오베르 성인의 행렬을 지켜보십시오.\n\n$RICE_normandy_mont_saint_michael_pilgrimage_context_tooltip$" # 7365525270065386379
   activity_RICE_normandy_saint_aubert_procession_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]\n$BULLET_WITH_TAB$ 당신의 [piety_level|E]에 따라 [GetModifier('RICE_normandy_saint_aubert_miracle').GetNameWithTooltip] [character_modifier|E]를 얻을 작은 확률이 있습니다." # 2345285545258850214
   activity_RICE_normandy_saint_aubert_procession_guest_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E]" # 12882840294630978621
+  activity_RICE_normandy_saint_aubert_procession_province_desc: "" # 17241709254077376921
   activity_RICE_normandy_saint_aubert_procession_destination_selection: "$activity_RICE_normandy_saint_aubert_procession_province_desc$" # 7830531474556891804
   activity_RICE_normandy_saint_aubert_procession_guest_help_text: "$activity_RICE_normandy_saint_aubert_procession$" # 721970533787771135
   activity_RICE_normandy_saint_aubert_procession_predicted_cost: "이 방문의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 8882918087865338503
@@ -1422,4 +1423,3 @@
   normandy.0199.t: "xxxxx" # 1951045980481827005
   normandy.0199.desc: "xxxxx" # 1951045980481827005
   normandy.0199.a: "xxxxx" # 1951045980481827005
-  activity_RICE_normandy_saint_aubert_procession_province_desc: "" # 17241709254077376921

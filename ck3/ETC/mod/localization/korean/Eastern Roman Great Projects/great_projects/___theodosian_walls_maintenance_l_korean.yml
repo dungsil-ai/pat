@@ -1,16 +1,24 @@
 ﻿l_korean:
   great_project_type_theodosian_walls_maintenance: "테오도시우스 성벽 유지보수" # 13473079149850905365
   great_project_type_theodosian_walls_maintenance_desc: "전설적인 테오도시우스 성벽은 수 세기 동안 '도시들의 여왕'을 지켜왔으며, 수많은 정복자 지망생들을 물리친 끊이지 않는 보루와 성벽의 선이었습니다. 하지만 시간은 어떤 성벽도 홀로 이길 수 없는 적입니다. 모르타르는 부서지고, 탑은 가라앉으며, 대지 자체가 성벽에 대항하여 공모하고 있습니다.\n\n성벽을 방치하는 것은 재앙을 불러들이는 일입니다. 이 거대한 노력을 통해, 우리는 제국의 자원을 조직하여 성벽을 이전의 영광으로 복구하고, 상처를 꿰매며, 앞으로 수 세기 동안 난공불락의 방패로 서 있게 할 것입니다. 제국의 심장 그 자체가 여기에 달려 있습니다." # 11394790897864833595
+  great_project_type_tooltip_theodosian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_possessive_theodosian_walls_maintenance: "" # 17241709254077376921
+  great_project_name_theodosian_walls_maintenance: "" # 17241709254077376921
   great_project_type_theodosian_walls_maintenance_contribution_gold: "황실 후원" # 12133267790511447551
   great_project_type_theodosian_walls_maintenance_contribution_gold_desc: "자재와 도구의 즉각적인 구매, 그리고 숙련된 노동자들의 임금 지급을 위해 제국 국고에 직접 기부하는 것입니다. 금은 이와 같은 거대한 작업의 원동력입니다." # 17748302588093755441
+  great_project_type_theodosian_walls_maintenance_contribution_name_gold: "" # 17241709254077376921
   great_project_type_theodosian_walls_maintenance_contribution_manpower: "테마의 노동력" # 11277605391978240833
   great_project_type_theodosian_walls_maintenance_contribution_manpower_desc: "금으로 석공을 고용할 수는 있지만, 프로젝트의 엄청난 규모는 노동자 군단을 필요로 합니다. 봉신들은 잔해를 치우고, 자재를 운반하며, 수석 건축가들을 지원하기 위해 노동력 징집병을 보낼 수 있습니다." # 10039188907349298171
+  great_project_type_theodosian_walls_maintenance_contribution_name_manpower: "" # 17241709254077376921
   great_project_type_theodosian_walls_maintenance_contribution_stone: "채석장 확보" # 7096121271666907318
   great_project_type_theodosian_walls_maintenance_contribution_stone_desc: "복구 작업이 수 세기 동안 지속되도록 하기 위해서는 최고의 석재와 대리석이 필요합니다. 이 기여는 제국의 채석장에서 수도로 자재를 확보, 운영 및 운송하기 위한 중대한 노력을 나타냅니다." # 6253558003533222686
+  great_project_type_theodosian_walls_maintenance_contribution_name_stone: "" # 17241709254077376921
   great_project_type_theodosian_walls_maintenance_contribution_engineers: "수석 석공 및 기술자" # 7521727737114571046
   great_project_type_theodosian_walls_maintenance_contribution_engineers_desc: "성벽을 쌓는 데 사용된 고대의 기술은 엄격하게 보호되는 비밀입니다. 수석 석공, 건축가, 군사 기술자들에 대한 접근을 제공하면 작업의 품질과 속도가 획기적으로 향상될 것입니다." # 16886725881662744965
+  great_project_type_theodosian_walls_maintenance_contribution_name_engineers: "" # 17241709254077376921
   great_project_type_theodosian_walls_maintenance_contribution_blessing: "신성한 축복" # 10397443371762961185
   great_project_type_theodosian_walls_maintenance_contribution_blessing_desc: "성벽은 단순한 돌덩이가 아닙니다. 그것은 도시에 대한 신의 보호의 상징입니다. 세계 총대주교의 공식적인 축복은 노동자들의 사기를 높이고 우리의 경건함에 대한 강력한 증거가 될 것입니다." # 12074269081327310579
+  great_project_type_theodosian_walls_maintenance_contribution_name_blessing: "" # 17241709254077376921
   theodosian_walls_neglected_modifier: "방치된 테오도시우스 성벽" # 5707733166028987653
   theodosian_walls_neglected_modifier_desc: "한 세기 동안의 방치가 그 대가를 치르게 했습니다. 전설적인 테오도시우스 성벽의 모르타르는 먼지가 되었고, 성벽은 담쟁이덩굴로 뒤덮였으며, 외부 방어선에는 우려스러운 틈이 생겼습니다. 한때 제국의 자랑이었던 성벽은 이제 제국 쇠퇴의 상징이자, 백성들에게는 수치이며, 적들에게는 명백한 초대장이 되었습니다." # 1648938028781087050
   theodosian_walls_maintained_modifier: "잘 유지된 테오도시우스 성벽" # 8030955665263513453
@@ -40,11 +48,3 @@
   theodosian_walls_maintenance.0008.desc: "콘스탄티노폴리스로부터 우려 섞인 보고들이 연달아 내 귀에 들어왔다. 소식은 명백했다. 수 세기 동안 제국의 방패였던 전설적인 테오도시우스 성벽이 위험천만하게 파손된 상태로 방치되고 있다는 것이다.\n\n기술자들은 거대한 석회암 블록 사이의 모르타르가 먼지로 변하고 있으며, 침입한 담쟁이덩굴이 고대의 돌들을 안쪽에서부터 벌려놓고 있다고 경고한다. 외벽의 전체 구역이 도시 수비대에 의해 안전하지 않은 것으로 간주되고 있으며, 요새 곳곳에 우려스러운 틈새가 나타나기 시작했다.\n\n이러한 쇠퇴는 비밀이 아니다. 성벽의 상태를 제국 몰락의 상징으로 여기는 민중들 사이에서 불안감이 커지고 있다. 적들에게 이것은 분명 약점의 징후이자, 점점 더 취약해지는 도시의 방어력을 시험해 보라는 초대장과 다름없을 것이다. 도시들의 여왕이 나날이 취약해지고 있다." # 6399697234783090004
   theodosian_walls_maintenance.0008.a: "성벽을 이전의 영광으로 복구해야만 한다!" # 16911154927852441134
   BYZANTION_LOCATION_1_TOOLTIP: "콘스탄티노폴리스가 귀하의 영역 내에 있습니다" # 7758421867093375865
-  great_project_type_tooltip_theodosian_walls_maintenance: "" # 17241709254077376921
-  great_project_name_possessive_theodosian_walls_maintenance: "" # 17241709254077376921
-  great_project_name_theodosian_walls_maintenance: "" # 17241709254077376921
-  great_project_type_theodosian_walls_maintenance_contribution_name_gold: "" # 17241709254077376921
-  great_project_type_theodosian_walls_maintenance_contribution_name_manpower: "" # 17241709254077376921
-  great_project_type_theodosian_walls_maintenance_contribution_name_stone: "" # 17241709254077376921
-  great_project_type_theodosian_walls_maintenance_contribution_name_engineers: "" # 17241709254077376921
-  great_project_type_theodosian_walls_maintenance_contribution_name_blessing: "" # 17241709254077376921

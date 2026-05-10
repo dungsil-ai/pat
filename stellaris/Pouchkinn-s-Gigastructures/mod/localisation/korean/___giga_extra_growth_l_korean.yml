@@ -16,6 +16,7 @@
   giga_extra_growth_tooltip_base_growth_difference_positive_info: "\n\n$LOGISTIC_GROWTH_MED$" # 15885990986352081648
   giga_extra_growth_tooltip_base_growth_difference_negative_info: "\n\n$LOGISTIC_GROWTH_HIGH$" # 15829386673015520293
   giga_situation_extra_growth: "[target.GetName]의 이차 성장" # 664447230636457547
+  giga_situation_extra_growth_desc: "" # 17241709254077376921
   job_giga_extra_healthcare: "보조 의료 종사자" # 14942331644026910809
   job_giga_extra_healthcare_plural: "보조 의료 인력" # 11318451110122013204
   job_giga_extra_healthcare_desc: "우리 시민들의 건강과 복지를 확보하는 것이 장기적인 번영의 열쇠입니다." # 15991157676623919075
@@ -40,4 +41,3 @@
   mod_job_giga_extra_crucible_drone_add: "[giga_extra_crucible_drone.GetName] 직업" # 10510101563210194959
   mod_job_giga_extra_crucible_drone_per_pop: "§G+1§! [giga_extra_crucible_drone.GetName] 직업 (팝 $VALUE$당)" # 13398418322530705984
   mod_job_giga_extra_crucible_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_extra_healthcare_add£" # 15007563190629822429
-  giga_situation_extra_growth_desc: "" # 17241709254077376921

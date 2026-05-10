@@ -222,6 +222,7 @@
   activity_RICE_hot_springs_visit_host_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E]의 [stress|E] 상실\n$BULLET_WITH_TAB$ 위치에 따라 다른 이점 발생 가능" # 5796056523830155341
   activity_RICE_hot_springs_visit_guest_desc: "$activity_RICE_hot_springs_visit_host_desc$" # 7559639311752796954
   activity_RICE_hot_springs_visit_province_desc: "#N - 이곳의 [hot_springs|E]는 덜 알려져 있지만, 휴식을 취하기에는 충분할 것입니다.#!\n#weak 이로 인해 더 잘 알려진 [hot_springs|E]에 비해 [stress_loss_i|E] [stress|E] 감소량이 적고 특별한 보너스도 없을 것입니다." # 14525305317641161905
+  activity_RICE_hot_springs_visit_destination_selection: "" # 17241709254077376921
   activity_RICE_hot_springs_visit_guest_help_text: "$activity_RICE_hot_springs_visit$" # 8371966182751922926
   activity_RICE_hot_springs_visit_predicted_cost: "[hot_springs|E] 방문 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 2977282388472990312
   activity_RICE_hot_springs_visit_conclusion_desc: "[GetActivityType( 'activity_RICE_hot_springs_visit' ).GetName]이 끝났습니다. 즐겁고 편안한 경험이었습니다!" # 9596727532240645524
@@ -244,6 +245,7 @@
   activity_RICE_local_pilgrimage_context_tooltip: "#emphasis 역사적 배경:#! 순례라고 하면 보통 메카, 예루살렘, 산티아고, 부다가야와 같은 유명 종교 성지로의 장엄한 여정을 떠올리지만, 지역적이고 국지적인 목적지로의 순례 역시 흔했습니다. 이 중 일부는 더 유명한 성지들과 같거나 심지어 더 오랜 기간 동안 숭배와 경배의 중심지였습니다. 이러한 순례지는 종종 지역 전설 및 문화와 연결되어 있으며, 근대 이전 시대에는 여행이 어려웠기 때문에 이러한 장소로의 이동이 더 실용적이었습니다." # 5393693812791771381
   activity_RICE_local_pilgrimage_host_desc: "$BULLET_WITH_TAB$ [piety_i|E][piety|E] 획득\n$BULLET_WITH_TAB$ [stress_loss_i|E] [stress|E] 상실\n$BULLET_WITH_TAB$ [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait|E] / [GetTrait('pilgrim').GetName( GetNullCharacter )] [trait_level_track_xp|E]" # 5617381781335626209
   activity_RICE_local_pilgrimage_guest_desc: "$activity_RICE_local_pilgrimage_host_desc$" # 13592859189337072896
+  activity_RICE_local_pilgrimage_province_desc: "" # 17241709254077376921
   activity_RICE_local_pilgrimage_destination_selection: "$activity_RICE_local_pilgrimage_province_desc$" # 10541515699325273294
   activity_RICE_local_pilgrimage_guest_help_text: "$activity_RICE_local_pilgrimage$" # 163418827341843233
   activity_RICE_local_pilgrimage_predicted_cost: "[local_pilgrimage|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 15267312677226829027
@@ -1255,5 +1257,3 @@
   RICEintro.0199.t: "xxxxx" # 1951045980481827005
   RICEintro.0199.desc: "xxxxx" # 1951045980481827005
   RICEintro.0199.a: "xxxxx" # 1951045980481827005
-  activity_RICE_hot_springs_visit_destination_selection: "" # 17241709254077376921
-  activity_RICE_local_pilgrimage_province_desc: "" # 17241709254077376921

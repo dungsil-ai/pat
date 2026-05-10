@@ -68,6 +68,7 @@
   activity_RICE_galicia2_kupala_night_context_tooltip: "#emphasis 역사적 배경:#! 쿠팔라는 슬라브 민족, 특히 서슬라브와 동슬라브 민족의 전통적인 하지 축제입니다. 중세 시대부터 기록되어 왔으나, 기독교 당국에 의해 이교도적인 이단 행위로 간주되어 수 세기 동안 억압 시도가 있었습니다. 이 활동을 포함한 쿠팔라 밤의 묘사는 다양한 슬라브 국가의 여러 현대적 관습을 혼합하여 느슨하게 기반을 둔 것이므로, 중세 시대의 실제 축제를 반영하지 않을 수 있습니다." # 4189645967472471769
   activity_RICE_galicia2_kupala_night_host_desc: "$BULLET_WITH_TAB$#P 획득#! [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$#P 이로운#! [character_modifiers|E] 획득 기회\n$BULLET_WITH_TAB$소유한 [counties|E]가 #P 이로운#! [county_modifiers|E]를 획득할 기회\n$BULLET_WITH_TAB$만약 당신의 신앙이 [GetFaithDoctrine('doctrine_pluralism_pluralistic').GetBaseName] [doctrine|E]나 $tenet_unreformed_syncretism_name$ [core_tenet|E]를 따르지 않는 비이교도 [faith|E]라면 [piety_i|E][piety|E] 상\"" # 16629829802147663033
   activity_RICE_galicia2_kupala_night_guest_desc: "$activity_RICE_galicia2_kupala_night_host_desc$" # 17885420860471173808
+  activity_RICE_galicia2_kupala_night_province_desc: "" # 17241709254077376921
   activity_RICE_galicia2_kupala_night_destination_selection: "$activity_RICE_galicia2_kupala_night_province_desc$" # 12253416054099677223
   activity_RICE_galicia2_kupala_night_guest_help_text: "$activity_RICE_galicia2_kupala_night$" # 5294242308949805842
   activity_RICE_galicia2_kupala_night_predicted_cost: "이 [activity|E]의 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 10498845032472754788
@@ -601,4 +602,3 @@
   galicia2.0099.t: "xxxxx" # 1951045980481827005
   galicia2.0099.desc: "xxxxx" # 1951045980481827005
   galicia2.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_galicia2_kupala_night_province_desc: "" # 17241709254077376921

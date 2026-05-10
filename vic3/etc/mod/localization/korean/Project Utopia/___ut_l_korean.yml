@@ -86,6 +86,7 @@
   ut_research_institute_can_construct_tt: "연구소를 위한 적절한 부지를 확인하고 측량하였습니다." # 13540891605512687221
   ut_research_institute_site_mod: "연구소 부지" # 13957054015466830038
   ut_je_research_institute_construction: "연구소 건설" # 16129642568816269926
+  ut_je_research_institute_construction_reason: "" # 17241709254077376921
   ut_research_nuclear_power: "핵력 연구" # 5596614631115257315
   ut_research_nuclear_power_desc: "핵분열의 강력한 에너지원으로서의 잠재력을 조사하십시오." # 6849549262466547208
   ut_je_ut_research_nuclear_power: "원자력" # 2392928761989952497
@@ -334,17 +335,23 @@
   concept_ut_nd_abilities: "능력" # 4662327713131811050
   concept_ut_nd_abilities_desc: "일회성이거나 반복 가능한 행동으로 상당한 효과를 제공합니다. 각 이념은 기본 세트를 가지고 있으며, 다양한 행동을 필요로 하고 여러 효과를 제공하는 고유한 능력을 가지고 있습니다. 보통 [concept_ut_nd_progress_points]을 소모합니다." # 9461565546688129460
   je_ut_communist_one_communist_party: "명령 경제" # 5545792418987111910
+  je_ut_communist_one_communist_party_desc: "" # 17241709254077376921
   je_ut_communist_one_communist_party_exclusive_tt: "#bold 아직#! #bold 협동 경제#! 경로를 시작하지 않았습니다" # 4755539616142310472
   je_ut_communist_one_communist_party_effect_tt: "[GetLawType('ut_law_council_presidium').GetName]을(를) 해금합니다" # 1929474954918403185
   je_ut_communist_a_communist_party: "협동 경제" # 4885563008485983344
+  je_ut_communist_a_communist_party_desc: "" # 17241709254077376921
   je_ut_communist_a_communist_party_exclusive_tt: "#bold 아직#! #bold 명령 경제#! 경로를 시작하지 않았습니까" # 12171892451826030516
   je_ut_communist_one_block: "평의회 연합" # 3254609269086092451
+  je_ut_communist_one_block_desc: "" # 17241709254077376921
   je_ut_new_dawn_communist_one_block_mod: "평의회 연합" # 3254609269086092451
   je_ut_communist_one_people: "노동자 단결" # 16840089199189619258
+  je_ut_communist_one_people_desc: "" # 17241709254077376921
   je_ut_new_dawn_communist_one_people_mod: "노동자 연합" # 3004701246558019537
   je_ut_communist_socialist_expansion: "연합 확장" # 10825827363781715367
+  je_ut_communist_socialist_expansion_desc: "" # 17241709254077376921
   je_ut_communist_socialist_expansion_mod: "연합 확장" # 10825827363781715367
   je_ut_communist_world_revolution: "세계 혁명" # 12459629864326213562
+  je_ut_communist_world_revolution_desc: "" # 17241709254077376921
   je_ut_communist_world_revolution_effect_tt: "[GetLawType('ut_law_international_council').GetName]을(를) 해금합니다." # 15088731059560020785
   je_ut_new_dawn_fascist: "파시즘" # 3776626123303565863
   je_ut_new_dawn_fascist_reason: "#italic - [Concept('concept_ut_nd_fascist_core', '파시스트')]#!" # 3830247196949383151
@@ -491,6 +498,7 @@
   ig_trait_urbanist_happy: "교육에 대한 접근성" # 12623609930500034324
   ig_trait_urbanist_happy_desc: "이 집단은 연구, 혁신, 그리고 측정 가능한 성과에 의해 주도되는 사회를 옹호합니다. 그들은 지속적인 개선과 과학적 진보가 국가 성공의 열쇠라고 믿습니다." # 13984039724042815350
   ig_trait_urbanist_unhappy: "차별" # 7004028675387415911
+  ig_trait_urbanist_unhappy_desc: "" # 17241709254077376921
   ut_movement_cosmopolitan_name: "세계주의 운동" # 6330089195014685056
   ut_movement_humanist_name: "인본주의 운동" # 4512102944298813698
   ut_movement_rationalists_name: "합리주의 운동" # 15668348593851631789
@@ -563,6 +571,7 @@
   law_public_university: "공립 대학" # 12471684684514253615
   law_public_university_desc: "사회적 배경에 관계없이 교육에 대한 접근성을 보장하고 연구를 진흥하는 국가 지원 고등 교육 기관." # 12347877249667891258
   law_private_universities: "사립 대학교" # 3273222144888378594
+  law_private_universities_desc: "" # 17241709254077376921
   law_task_forces: "태스크 포스" # 9704455277774303046
   law_task_forces_desc: "신속한 위기 대응 또는 국방을 위한 특수 부대." # 1314280908181686284
   law_neo_ethno_state: "신(新)민족국가" # 18293353242995098222
@@ -593,9 +602,11 @@
   law_demobilized: "제대된" # 4556087221801130778
   law_demobilized_desc: "군 병력의 대규모 감축 및 자원 민간 경제로의 재분배." # 14246789048539166161
   law_private_pension: "사적 연금" # 6848917089239328756
+  law_private_pension_desc: "" # 17241709254077376921
   law_ut_disability_insurance: "장애 보험" # 14358918813893211093
   law_ut_disability_insurance_desc: "장애로 인해 노동할 수 없는 개인을 사회에 통합시키기 위한 재정적 지원." # 705087233207600268
   law_ut_minimum_wage: "최저 임금" # 4687126341424774397
+  law_ut_minimum_wage_desc: "" # 17241709254077376921
   law_decolonization: "탈식민화" # 5388154808830992804
   law_decolonization_desc: "이 국가는 과거 식민지들의 독립을 적극적으로 장려하고 있습니다." # 3952195611270745282
   law_decolonization_effect_tt: "모든 속국들이 독립하게 될 것입니다. 만약 당신이 공산주의 경로에 있다면, 그들은 당신의 세력권에 합류할 것입니다." # 12747968110505090848
@@ -737,56 +748,63 @@
   principle_group_modern_ideological_union: "현대 이념 연합" # 11257906651045141947
   ut_principle_group_advanced_research: "연구 계획" # 17251031976752006829
   principle_common_financial_policy_1: "일반 재정 정책" # 6672012603412992877
-  principle_common_financial_policy_2: "일반 재정 정책 2" # 5716326065806340310
-  principle_common_financial_policy_3: "일반 재정 정책 3" # 7718115596223647651
-  principle_commissariat_1: "코미사리아트 1" # 13317028127080584822
-  principle_commissariat_2: "집행위원회 2" # 6013253718505144714
-  principle_commissariat_3: "국무위원 3호" # 3274371967816300943
-  ut_principle_military_cooperation_1: "군사 조직 1" # 13912877262221687284
-  ut_principle_military_cooperation_2: "군사 조직 2" # 6849508799675182913
-  ut_principle_military_cooperation_3: "군사 조직 3" # 16177208675687133144
-  ut_je_research_institute_construction_reason: "" # 17241709254077376921
-  je_ut_communist_one_communist_party_desc: "" # 17241709254077376921
-  je_ut_communist_a_communist_party_desc: "" # 17241709254077376921
-  je_ut_communist_one_block_desc: "" # 17241709254077376921
-  je_ut_communist_one_people_desc: "" # 17241709254077376921
-  je_ut_communist_socialist_expansion_desc: "" # 17241709254077376921
-  je_ut_communist_world_revolution_desc: "" # 17241709254077376921
-  ig_trait_urbanist_unhappy_desc: "" # 17241709254077376921
-  law_private_universities_desc: "" # 17241709254077376921
-  law_private_pension_desc: "" # 17241709254077376921
-  law_ut_minimum_wage_desc: "" # 17241709254077376921
   principle_common_financial_policy_1_desc: "" # 17241709254077376921
+  principle_common_financial_policy_2: "일반 재정 정책 2" # 5716326065806340310
   principle_common_financial_policy_2_desc: "" # 17241709254077376921
+  principle_common_financial_policy_3: "일반 재정 정책 3" # 7718115596223647651
   principle_common_financial_policy_3_desc: "" # 17241709254077376921
+  principle_commissariat_1: "코미사리아트 1" # 13317028127080584822
   principle_commissariat_1_desc: "" # 17241709254077376921
+  principle_commissariat_2: "집행위원회 2" # 6013253718505144714
   principle_commissariat_2_desc: "" # 17241709254077376921
+  principle_commissariat_3: "국무위원 3호" # 3274371967816300943
   principle_commissariat_3_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_1: "군사 조직 1" # 13912877262221687284
   ut_principle_military_cooperation_1_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_2: "군사 조직 2" # 6849508799675182913
   ut_principle_military_cooperation_2_desc: "" # 17241709254077376921
+  ut_principle_military_cooperation_3: "군사 조직 3" # 16177208675687133144
   ut_principle_military_cooperation_3_desc: "" # 17241709254077376921
   ut_modern_ideological_union_1: "이념 1" # 8483986776986647597
+  ut_modern_ideological_union_1_desc: "" # 17241709254077376921
   ut_modern_ideological_union_2: "이념 2" # 15817590249024397657
+  ut_modern_ideological_union_2_desc: "" # 17241709254077376921
   ut_modern_ideological_union_3: "이념 3" # 10673623713740788619
+  ut_modern_ideological_union_3_desc: "" # 17241709254077376921
   ut_principle_advanced_research_4: "연구 계획 1" # 3251693889838724170
+  ut_principle_advanced_research_4_desc: "" # 17241709254077376921
   ut_principle_advanced_research_5: "연구 계획 2" # 2775408223045950640
+  ut_principle_advanced_research_5_desc: "" # 17241709254077376921
   ut_principle_advanced_research_6: "연구 계획 3" # 16406759325888406726
+  ut_principle_advanced_research_6_desc: "" # 17241709254077376921
   ut_principle_group_freedom_of_transport_infrastructure: "운동 연합" # 8079478815620242305
   ut_principle_freedom_of_movement_4: "운동 연합 1" # 13790412293818424230
+  ut_principle_freedom_of_movement_4_desc: "" # 17241709254077376921
   ut_principle_freedom_of_movement_5: "운동 연합 2" # 16441481580616751442
+  ut_principle_freedom_of_movement_5_desc: "" # 17241709254077376921
   ut_principle_freedom_of_movement_6: "운동 연합 3" # 4036985130130716477
+  ut_principle_freedom_of_movement_6_desc: "" # 17241709254077376921
   ut_principle_group_war_industry: "전쟁 산업" # 2233724301470380793
   ut_principle_war_industry_4: "전시 산업 1" # 12355905816499039791
+  ut_principle_war_industry_4_desc: "" # 17241709254077376921
   ut_principle_war_industry_5: "전쟁 산업 2" # 14917419174659678818
+  ut_principle_war_industry_5_desc: "" # 17241709254077376921
   ut_principle_war_industry_6: "전쟁 산업 3" # 18138100428173064713
+  ut_principle_war_industry_6_desc: "" # 17241709254077376921
   ut_principle_group_food_standardization_upgrade: "높은 식량 표준화" # 16382308859907742625
   ut_principle_food_standardization_4: "높은 식량 기준 1" # 14556505415940456340
+  ut_principle_food_standardization_4_desc: "" # 17241709254077376921
   ut_principle_food_standardization_5: "높은 식량 기준 2" # 11170418465870842815
+  ut_principle_food_standardization_5_desc: "" # 17241709254077376921
   ut_principle_food_standardization_6: "높은 식량 기준 3" # 12254682812325377251
+  ut_principle_food_standardization_6_desc: "" # 17241709254077376921
   ut_principle_group_security_bloc: "안보 동맹" # 15472033618600313751
   ut_principle_security_bloc_4: "보안 블록 1" # 17044028634191398323
+  ut_principle_security_bloc_4_desc: "" # 17241709254077376921
   ut_principle_security_bloc_5: "보안 블록 2" # 159765769285029100
+  ut_principle_security_bloc_5_desc: "" # 17241709254077376921
   ut_principle_security_bloc_6: "보안 블록 3" # 17786740372645394563
+  ut_principle_security_bloc_6_desc: "" # 17241709254077376921
   ut_mobilization_option_cas_jet_planes: "근접 항공 지원" # 11561220155863772577
   ut_mobilization_option_cas_jet_planes_desc: "제트 동력 근접 항공 지원기" # 13926637343570097269
   ut_mobilization_option_evac_hospitals: "사상자 후송" # 11306304657886593
@@ -832,26 +850,8 @@
   rare_earths_mining_era_connected: "고급 용매 추출" # 13185190958511910765
   rare_earths_mining_era_connected_desc: "이온성 액체와 초임계 이산화탄소가 산성 용액을 대체합니다. 녹색 화학은 더 깨끗한 추출을 약속하지만, 에너지 수지가 맞아야 합니다." # 15429902996474560825
   nuclear_power_research: "핵 연구" # 10019683908587750680
-  nuclear_power: "원자력" # 2392928761989952497
-  ut_modern_ideological_union_1_desc: "" # 17241709254077376921
-  ut_modern_ideological_union_2_desc: "" # 17241709254077376921
-  ut_modern_ideological_union_3_desc: "" # 17241709254077376921
-  ut_principle_advanced_research_4_desc: "" # 17241709254077376921
-  ut_principle_advanced_research_5_desc: "" # 17241709254077376921
-  ut_principle_advanced_research_6_desc: "" # 17241709254077376921
-  ut_principle_freedom_of_movement_4_desc: "" # 17241709254077376921
-  ut_principle_freedom_of_movement_5_desc: "" # 17241709254077376921
-  ut_principle_freedom_of_movement_6_desc: "" # 17241709254077376921
-  ut_principle_war_industry_4_desc: "" # 17241709254077376921
-  ut_principle_war_industry_5_desc: "" # 17241709254077376921
-  ut_principle_war_industry_6_desc: "" # 17241709254077376921
-  ut_principle_food_standardization_4_desc: "" # 17241709254077376921
-  ut_principle_food_standardization_5_desc: "" # 17241709254077376921
-  ut_principle_food_standardization_6_desc: "" # 17241709254077376921
-  ut_principle_security_bloc_4_desc: "" # 17241709254077376921
-  ut_principle_security_bloc_5_desc: "" # 17241709254077376921
-  ut_principle_security_bloc_6_desc: "" # 17241709254077376921
   nuclear_power_research_desc: "" # 17241709254077376921
+  nuclear_power: "원자력" # 2392928761989952497
   nuclear_power_desc: "" # 17241709254077376921
   electronics: "전자공학" # 8906035645440450140
   electronics_desc: "진공관이 라디오에서 지지직거립니다. 게르마늄 트랜지스터부터 양자 칩에 이르기까지—전자를 제어하는 것이 모든 기술 혁명의 원동력입니다." # 9692518090094502286
@@ -953,8 +953,11 @@
   ut_jet_planes: "제트 항공기" # 47098963301098514
   ut_jet_planes_desc: "제트 엔진이 음속의 장벽을 찢습니다. MiG-15와 F-86이 초음속 선회 비행으로 격돌하며, 단 몇 초가 삶과 화염에 휩싸인 죽음을 가릅니다." # 6004529971256188126
   ut_modern_planes: "현대 항공기" # 7526045313590165080
+  ut_modern_planes_desc: "" # 17241709254077376921
   ut_anti_tank_guided_software: "대전차 유도 체계" # 2785582642701818572
+  ut_anti_tank_guided_software_desc: "" # 17241709254077376921
   ut_military_complex: "군사 복합체" # 10944059420291722536
+  ut_military_complex_desc: "" # 17241709254077376921
   light_ships_rockets_computers: "경쾌함 선박 전투 체계" # 12938180898705425742
   heavy_ships_rockets_computers: "중(重)함선 전투 체계" # 17145539823193819837
   support_ships_electronic_surveillance: "전자 감시함" # 7304273522225468952
@@ -1018,6 +1021,7 @@
   union_new_mandates_tt_articles: "새로운 [concept_article]: [GetArticleType('ut_research_agreement').GetNameNoIcon], [GetArticleType('ut_research_assistance_treaty').GetNameNoIcon] 및 이념적 [concept_article]을(를) 해금합니다." # 15074016275234829448
   union_new_mandates_desc: "초국가적 기구들이 기후 및 디지털 규제에 대한 권위를 얻게 됩니다. 순전히 경제적인 통합의 시대는 야심 찬 정치적 얽힘으로 자리를 내어줍니다." # 8638368149664057639
   union_new_mandates_two: "국제 기구" # 856629468960562459
+  union_new_mandates_two_tt: "" # 17241709254077376921
   union_new_mandates_two_desc: "공동 군단과 클라우드 기반 인프라가 연방 초국가로의 전환을 알립니다. 국가 주권은 점차 초국가에 위임되고 있습니다." # 9208129941195007162
   union_trade: "국제 무역 기구" # 5578808486268760884
   union_trade_desc: "관세 없는 지대와 통일된 제품 표준은 대륙 내부 시장을 형성합니다. 보호주의는 거대한 규모에서 비교 우위의 논리에 자리를 내어줍니다." # 11271010669969388977
@@ -1060,6 +1064,7 @@
   emancipation_movement: "노예 해방 운동" # 3425757494323335778
   emancipation_movement_desc: "작업 진행 중" # 6506854407950090328
   lgbt_movement: "성소수자 운동" # 3707854814621333773
+  lgbt_movement_tt: "" # 17241709254077376921
   lgbt_movement_desc: "레즈비언, 게이, 양성애자, 트랜스젠더의 권리와 수용을 옹호하는 운동입니다. 이들은 활동, 법률 개혁, 문화적 변화를 통해 차별에 도전하며 사회적 평등과 인정을 추구합니다." # 8296946536084668307
   feminism_2: "노예 해방" # 7992405545572441498
   feminism_2_desc: "여성 해방 운동은 여성의 동등한 권리와 기회를 달성하고자 하는 사회적, 정치적 운동입니다. 이는 가부장적 구조를 해체하고 삶의 모든 측면에서 성 평등을 증진하는 것을 목표로 합니다." # 6523740529481555826
@@ -1401,8 +1406,3 @@
   unit_combat_unit_type_task_force_infantry_defense_add_desc: "$combat_unit_type_task_force_infantry$ $unit_defense_add$" # 14541016604280187044
   unit_combat_unit_type_modern_submarine_offense_add: "$combat_unit_type_modern_submarine$ $unit_offense_add$" # 11979125652057002089
   unit_combat_unit_type_modern_submarine_offense_add_desc: "$combat_unit_type_modern_submarine$ $unit_offense_add$" # 11979125652057002089
-  ut_modern_planes_desc: "" # 17241709254077376921
-  ut_anti_tank_guided_software_desc: "" # 17241709254077376921
-  ut_military_complex_desc: "" # 17241709254077376921
-  union_new_mandates_two_tt: "" # 17241709254077376921
-  lgbt_movement_tt: "" # 17241709254077376921

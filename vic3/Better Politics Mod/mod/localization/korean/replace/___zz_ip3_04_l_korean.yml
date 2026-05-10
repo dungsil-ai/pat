@@ -390,6 +390,7 @@
   je_danubian_federation_romanian_button: "[GetCulture('romanian').GetName]의 우려 사항 해결" # 18355412099539997627
   je_danubian_federation_romanian_button_desc: "[GetCulture('romanian').GetName]의 영토는 제국 내에서 가장 복잡한 지역 중 하나로, 매우 다양한 지역인 #b 버너트#!, 수많은 [GetCulture('south_german').GetName]의 엔클레이브, 그리고 #b 세클러랜드#!라는 거대한 [GetCulture('hungarian').GetName] 엔클레이브를 포함합니다. 이 지역의 영토 분할을 두고 [GetCulture('romanian').GetNameNoFormatting] 민족주의자들과 [GetCulture('hungarian').GetNameNoFormatting] 민족주의자들 사이에 격렬한 분쟁이 존재하며, 이 외에도 수많은 소수 민족들이 이 지역에 거주하고 있습니다. [SCOPE.GetRootScope.GetCountry.GetCustom('danubian_principalities_exists_or_not')] 이 지역을 연방에 통합하기 위해서는 미래의 [GetCulture('romanian').GetNameNoFormatting] 국가의 국경 문제를 해결해야 하며, #b 버너트#!와 이 지역의 [GetCulture('south_german').GetNameNoFormatting] 및 [GetCulture('hungarian').GetNameNoFormatting] 엔클레이브의 지위에 대한 명확한 규정이 필요합니다." # 6662039051937430694
   ROMANIA_EXISTS: "이러한 분쟁 외에도 해당 지역을 다른 [GetCulture('romanian').GetNameNoFormatting] 국가들과 통일하려는 움직임이 존재합니다." # 16141186120957213038
+  ROMANIA_NOT_EXISTS: "" # 17241709254077376921
   je_danubian_federation_north_italian_button: "[GetCulture('north_italian').GetName]의 우려 사항에 대한 조치" # 10585721317267771397
   je_danubian_federation_north_italian_button_desc: "[GetCulture('north_italian').GetName] 왕령지는 제국의 가장 번성한 지역 중 하나였으며, [ROOT.GetCountry.GetAdjectiveNoFlag] 무역과 항해술의 대부분을 제공해 왔습니다. 이 지역들은 또한 이탈리아 민족주의자들이 [SCOPE.GetRootScope.GetCountry.GetCustom('italy_or_italian_states')]와의 통일을 강력하게 주장하며 끊임없이 불안정했습니다. 만약 [GetCulture('north_italian').GetNameNoFormatting] 지역이 연방에 통합되려면, 통일주의 정서를 진압해야 하며, [GetCulture('north_italian').GetNameNoFormatting] 소수 민족들이 [GetCulture('south_german').GetName] 및 [GetCulture('slovene').GetName] 지역 내에서 겪는 문제는 [GetCulture('north_italian').GetNameNoFormatting] 민족주의자들이 만족할 만한 방식으로 해결되어야 합니다." # 2420817010096876971
   ITALY_EXISTS: "#b 이탈리아#!" # 8823278192456590263
@@ -833,4 +834,3 @@
   UPRISING_DEFEATED: "봉기 진압" # 5622808296512213651
   pb_ruler_tt: "[concept_ruler] [concept_interest_group]은 #v $ig_petty_bourgeoisie$#!입니다." # 11546186576177222397
   movement_suppressed_after_civil_war_copy: "$movement_suppressed_after_civil_war$" # 16036547287628236885
-  ROMANIA_NOT_EXISTS: "" # 17241709254077376921

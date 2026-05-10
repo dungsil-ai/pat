@@ -1,21 +1,32 @@
 ﻿l_korean:
   great_project_type_via_militaris_restoration: "비아 밀리타리스 복구" # 4063909724075142405
   great_project_type_via_militaris_restoration_desc: "비아 밀리타리스는 제국의 진정한 군사적 중추로, 콘스탄티노폴리스의 성문에서 발칸반도의 심장부로 직접 이어지는 거대한 도로입니다. 수 세기 동안 이곳은 군단과 황제들이 지나던 길이었습니다. 그러나 지금은 과거의 영광은 온데간데없고, 기능적인 고속도로라기보다는 지도 위의 선에 불과한 그림자일 뿐입니다. 구멍이 뚫리고 풀이 무성해진 이 도로는 산적들의 은신처가 되었고 통치의 걸림돌이 되었습니다. 이는 내륙 무역을 마비시키고, 트라키아와 그 너머의 주둔군을 안정적인 보급로로부터 고립시키며, 제국의 감시에서 벗어난 계곡들에서 불만이 싹트게 합니다. 이를 복구하기 위해서는 기념비적인 사업이 필요합니다. 도로와 이를 지원하는 감시 초소를 재건함으로써, 우리는 무역을 되살릴 뿐만 아니라 이 핵심 지역들에 대한 지배력을 강화할 것입니다. 황제의 칙령은 거침없이 전달될 것이며, 주둔군은 보급을 받고 세금은 막힘없이 흘러들어와 제국의 심장부가 수도와 하나 되어 고동치게 될 것입니다." # 2508837003981810826
+  great_project_type_tooltip_via_militaris_restoration: "" # 17241709254077376921
+  great_project_name_possessive_via_militaris_restoration: "" # 17241709254077376921
+  great_project_name_via_militaris_restoration: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_imperial_survey: "제국 조사" # 17970156955724799681
+  great_project_type_via_militaris_restoration_contribution_imperial_survey_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_imperial_survey: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_open_imperial_quarries: "제국 채석장 개설" # 15147921464181004378
+  great_project_type_via_militaris_restoration_contribution_open_imperial_quarries_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_open_imperial_quarries: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_paving_the_strata: "도로 포장" # 527482615461097755
+  great_project_type_via_militaris_restoration_contribution_paving_the_strata_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_paving_the_strata: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_finance_laborers: "노동자 자금 지원" # 16287079221957872522
+  great_project_type_via_militaris_restoration_contribution_finance_laborers_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_finance_laborers: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_establish_road_outposts: "도로 전초 기지 설립" # 16669641280561386892
+  great_project_type_via_militaris_restoration_contribution_establish_road_outposts_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_establish_road_outposts: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_construct_imperial_bridges: "제국 교량 건설" # 16529312461777537029
+  great_project_type_via_militaris_restoration_contribution_construct_imperial_bridges_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_construct_imperial_bridges: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_organize_the_cursus: "쿠르수스 푸블리쿠스 조직" # 9048497810841846251
+  great_project_type_via_militaris_restoration_contribution_organize_the_cursus_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_organize_the_cursus: "\" " # 8144695638692744150
   great_project_type_via_militaris_restoration_contribution_found_imperial_stud_farms: "제국 마목장 설립" # 161056393374428988
+  great_project_type_via_militaris_restoration_contribution_found_imperial_stud_farms_desc: "" # 17241709254077376921
   great_project_type_via_militaris_restoration_contribution_name_found_imperial_stud_farms: "\" " # 8144695638692744150
   via_militaris_LOCATION_1_TOOLTIP: "브리시스 백작령이 당신의 영역 내에 있음" # 12425196640556995865
   via_militaris_LOCATION_2_TOOLTIP: "아드리아노폴리스 백작령이 귀하의 영역 내에 있음" # 15996920988485027066
@@ -99,6 +110,9 @@
   via_militaris_events.0016.a: "기병은 군대의 영혼이다." # 6106326831180271577
   great_project_type_via_militaris_improvement: "비아 밀리타리스 개선" # 7495284148230983010
   great_project_type_via_militaris_improvement_desc: "비아 밀리타리스가 복구되어, 포장된 돌들이 다시 한번 제국의 대도시들을 연결하고 있습니다. 하지만 복구는 진정한 번영을 쌓아 올리기 위한 기초일 뿐입니다. 기능적인 도로는 그저 시작일 뿐이며, 상업과 권력이 고동치는 동맥이 되는 것은 전혀 다른 차원의 일입니다.\n\n이 다음의 위대한 과업은 이 길을 단순한 고속도로에서 영토의 고동치는 심장으로 탈바꿈시킬 것입니다. 우리는 이를 관리할 공식 행정관을 임명하고, 상인들에게 안식처를 제공할 거대한 카라반사라이에 자금을 지원하며, 안전을 보장하기 위한 순찰대를 조직할 것입니다. 이정표와 기념비로 길을 장식함으로써, 우리는 이곳을 제국의 위엄과 명성의 상징으로 만들 것입니다.\n\n과업이 끝나면, 비아 밀리타리스는 단순한 도로가 아니라 우리의 비전을 보여주는 기념비이자 경제의 엔진, 그리고 전 세계의 부러움의 대상이 될 것입니다." # 8380906374039368768
+  great_project_type_tooltip_via_militaris_improvement: "" # 17241709254077376921
+  great_project_name_possessive_via_militaris_improvement: "" # 17241709254077376921
+  great_project_name_via_militaris_improvement: "" # 17241709254077376921
   great_project_type_via_militaris_improvement_contribution_establish_road_magistracies: "도로 행정관 임명" # 7455118200299423288
   great_project_type_via_militaris_improvement_contribution_erect_milestones: "이정표 및 기념비 건립" # 6628211489688588668
   great_project_type_via_militaris_improvement_contribution_organize_maintenance: "유지보수팀 조직" # 18368240483705529520
@@ -145,17 +159,3 @@
   via_militaris_flourishing_caravanserai_modifier_desc: "통치자의 투자의 직접적인 결과로, 국가 보조금을 받는 거대한 카라반사라이가 이 백작령에서 운영되고 있습니다. 이곳은 상업의 주요 중심지가 되어 지역에 상당한 부와 성장을 가져다주었습니다." # 1572301559309158227
   via_militaris_fortified_toll_bridge_modifier: "요새화된 통행료 징수 교량" # 2528939376289758907
   via_militaris_fortified_toll_bridge_modifier_desc: "통치자의 투자 덕분에 이 백작령의 중요한 교량이 요새화되고 병력이 배치되었습니다. 이제 이 교량은 강화된 방어력과 꾸준한 통행료 수입을 모두 제공합니다." # 3383050631699499765
-  great_project_type_tooltip_via_militaris_restoration: "" # 17241709254077376921
-  great_project_name_possessive_via_militaris_restoration: "" # 17241709254077376921
-  great_project_name_via_militaris_restoration: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_imperial_survey_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_open_imperial_quarries_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_paving_the_strata_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_finance_laborers_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_establish_road_outposts_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_construct_imperial_bridges_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_organize_the_cursus_desc: "" # 17241709254077376921
-  great_project_type_via_militaris_restoration_contribution_found_imperial_stud_farms_desc: "" # 17241709254077376921
-  great_project_type_tooltip_via_militaris_improvement: "" # 17241709254077376921
-  great_project_name_possessive_via_militaris_improvement: "" # 17241709254077376921
-  great_project_name_via_militaris_improvement: "" # 17241709254077376921

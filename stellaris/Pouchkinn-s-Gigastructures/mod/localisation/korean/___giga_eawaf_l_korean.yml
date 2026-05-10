@@ -266,6 +266,7 @@
   situation_eawaf_sirens_takeover: "사이렌들의 장악" # 10586768191752720031
   situation_eawaf_sirens_takeover_desc: "정신 제어 능력을 부여받은 '사이렌' 삼인조가 파우스트를 지배하려 나섰습니다. 그들은 분명히 모든 힘을 다해 이 험난한 시도를 성공시키려 결연히 나아가고 있습니다. 이 상황을 예의주시하는 것이 우리에게 이익이 될 가능성이 높습니다." # 15367699974412316688
   situation_eawaf_sirens_takeover_type: "사이렌들의 장악" # 10586768191752720031
+  situation_eawaf_sirens_takeover_monthly_change_tooltip: "" # 17241709254077376921
   approach_giga_eawaf_stop_sirens: "사이렌 중지" # 7257394827187311863
   approach_giga_eawaf_stop_sirens_tooltip: "우리는 들키지 않고 세이렌을 막기 위해 모든 노력을 다할 것입니다. 주요 자산에 대한 비밀 암살, 보급선 교란, 그리고 반(反)세이렌 운동 지원은 그들이 적에게 압도당할 때까지 그들의 진격을 저해해야 합니다.\n이는 세이렌이 정복의 각 단계에서 적에게 쓰러질 가능성을 높일 것입니다.\n§R세이렌 저지를 시작하면 중단할 수 없습니다.§!" # 3836569556379783875
   approach_giga_eawaf_do_nothing: "아무것도 안 함" # 6343454086523970392
@@ -279,6 +280,7 @@
   situation_eawaf_sirens_understanding: "세이렌 대항" # 14579580029028490017
   situation_eawaf_sirens_understanding_desc: "사이렌들이 은하계 전체에 난해한 정신 제어 노래를 퍼뜨리려 하고 있습니다. 우리 모두 그들의 사악한 주문에 걸려들기 전에 이 현상에 맞설 방법을 찾아야 합니다. 사이렌에 대항하는 데 필요한 §Y연구§! 및 §Y통합§! 비용은 해당 영역의 §MPotency§!에 따라 조정될 것입니다. 만약 비용을 감당할 수 없다면, 우리는 §Y사이렌 연구 없음§!으로 되돌아갈 것입니다." # 4160910830262251533
   situation_eawaf_sirens_understanding_type: "세이렌 대항" # 14579580029028490017
+  situation_eawaf_sirens_understanding_monthly_change_tooltip: "" # 17241709254077376921
   approach_giga_eawaf_sirens_research_1: "사이렌 연구 금지" # 9288802989735275072
   approach_giga_eawaf_sirens_research_1_tooltip: "버프될 겁니다." # 11461188147454522620
   approach_giga_eawaf_sirens_research_2: "제한된 반 사이렌 연구" # 3050581999690905229
@@ -570,5 +572,3 @@
   giga_eawaf_sirens_megaphone_1_MEGASTRUCTURE_DETAILS: "사이렌의 확성기" # 6862526318799129462
   giga_eawaf_sirens_megaphone_2: "사이렌의 확성기" # 10458060678018012250
   giga_eawaf_sirens_megaphone_2_DESC: "이 거대한 구조물은 시레날리아의 고대 기술을 증폭하여 은하계 전체에 우리의 의지를 전파할 수 있습니다." # 4295968348525782725
-  situation_eawaf_sirens_takeover_monthly_change_tooltip: "" # 17241709254077376921
-  situation_eawaf_sirens_understanding_monthly_change_tooltip: "" # 17241709254077376921

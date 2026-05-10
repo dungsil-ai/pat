@@ -40,6 +40,7 @@
   activity_RICE_sardinia_palio_race_context_tooltip: "#emphasis 역사적 배경:#! 팔리오(Palios)와 사르데냐의 사 사르틸리아(Sa Sartiglia)와 같은 유사한 관습은 이탈리아의 일종의 경마입니다. 팔리오에 대한 최초의 기록은 중세 시대로 거슬러 올라가지만, 로마 시대의 선례가 있을 수도 있습니다. 중세와 르네상스 시대에 팔리오는 성인의 축일과 자주 연관되는 중요한 종교적, 시민적 행사였습니다. 대부분의 현대 팔리오와 이에 상응하는 경마는 최근의 발명품이거나 오래된 전통의 재해석입니다. 현존하는 가장 오래되고 가장 유명한 팔리오는 시에나의 것으로, 그 현대적 형태는 서기 1633년으로 거슬러 올라갑니다. 하지만, 팔리오의 규칙이 상세히 논의된 1239년의 문서에도 그 기록이 남아 있어, 그 이전에 이미 수년간 행해졌음을 시사합니다." # 10983296842815273673
   activity_RICE_sardinia_palio_race_host_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [intent|E] 및 [activity_options|E]에 따라 [prestige_i|E][prestige|E], [piety_i|E][piety|E], 그리고/또는 [dynasty_prestige_i|E][dynasty_prestige|E] 획득\n$BULLET_WITH_TAB$ [activity|E]가 열리는 [location|E]의 [county|E]는 #P 긍정적인#! [county_modifier|E]를 얻습니다\n$BULLET_WITH_TAB$다른 참석자들로부터 [opinion|E] 증가\n$BULLET_WITH_TAB$ [palio_race|E]에 참가하고 우승함으로써 얻는 추가 보상" # 427055233175129213
   activity_RICE_sardinia_palio_race_guest_desc: "$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ 귀하의 [intent|E] 및 주최자가 선택하는 [activity_options|E]에 따라 [prestige_i|E][prestige|E] 및/또는 [piety_i|E][piety|E] 획득\n$BULLET_WITH_TAB$ [house_head|E]일 경우 [palio_race|E] 참가 및 우승 시 추가 보상" # 3789948359928969672
+  activity_RICE_sardinia_palio_race_province_desc: "" # 17241709254077376921
   activity_RICE_sardinia_palio_race_destination_selection: "$activity_RICE_sardinia_palio_race_province_desc$" # 8743420576970220150
   activity_RICE_sardinia_palio_race_guest_help_text: "$activity_RICE_sardinia_palio_race$" # 14240358716668670004
   activity_RICE_sardinia_palio_race_predicted_cost: "이 방문의 비용은 귀하의 [income|E]와 선택하는 [activity_options|E]에 따라 결정됩니다." # 3376579215048647533
@@ -691,4 +692,3 @@
   sardinia.0099.t: "xxxxx" # 1951045980481827005
   sardinia.0099.desc: "xxxxx" # 1951045980481827005
   sardinia.0099.a: "xxxxx" # 1951045980481827005
-  activity_RICE_sardinia_palio_race_province_desc: "" # 17241709254077376921

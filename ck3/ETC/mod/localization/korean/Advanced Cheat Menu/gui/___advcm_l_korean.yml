@@ -576,9 +576,9 @@
   advcm_cc_akolouthos_loc: "아콜루토스" # 3946856692587331555
   advcm_create_artifact_loc: "유물 제작" # 8061344823857224772
   advcm_create_character_loc: "인물 생성" # 1951628797903399638
+  advcm_empty_text: "" # 17241709254077376921
   advcm_trait_cleanup_tt: "잘못된 로드 순서를 사용했다면 여기를 클릭하십시오." # 8054834130404728189
   advcm_debug_color_test: "#D" # 16801708466569448998
   advcm_red_color_test: "#R" # 1935906316867708778
   advcm_yellow_color_test: "#P" # 4128464296507220592
   advcm_blue_color_test: "#charioteer_blue" # 1135972512442653274
-  advcm_empty_text: "" # 17241709254077376921
