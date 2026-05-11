@@ -5,6 +5,21 @@
 ## 2026년 5월
 
 ### 주간 문서 현행화 기준 변경점 반영
+**날짜:** 2026-05-11
+
+**문서 반영 대상 변경:**
+- 업스트림 파일 해시 캐시는 일반 파일일 때만 읽고 쓰며, 심볼릭 링크 경로는 경고 후 건너뛰어 해시 캐시 파일 덮어쓰기를 방지
+- 업스트림 localization 파일명이 대소문자만 바뀐 경우 이전 한국어 파일을 `git rm`으로 정리해 대소문자 충돌과 stale 파일 잔존을 방지
+
+**관련 파일:**
+- `scripts/utils/upstream-file-hashes.ts`
+- `scripts/factory/translate.ts`
+- `scripts/factory/translate.test.ts`
+- `scripts/factory/translate-cleanup.test.ts`
+
+---
+
+### 주간 문서 현행화 기준 변경점 반영
 **날짜:** 2026-05-04
 
 **문서 반영 대상 변경:**
