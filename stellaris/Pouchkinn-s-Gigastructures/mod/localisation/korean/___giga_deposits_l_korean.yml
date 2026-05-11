@@ -13,74 +13,6 @@
   d_virtual_shipyard_desc: "이 구역에는 태양 조선소를 하나만 건설할 수 있습니다." # 10276243359167318830
   d_zro_cloud: "즈로 성운" # 4249627876468314340
   d_zro_cloud_desc: "끝없이 떠다니는 귀중한 즈로 입자들의 거대한 유랑 구름." # 14380150076271860352
-  d_alderson_generator: "비전 생성기" # 1783293538819853799
-  d_alderson_generator_desc: "이 고대 기계는 우리 구역 중 일부의 유지에 필요한 자원을 생산함으로써 우리의 필요에 반응하는 것 같습니다." # 3949696421642557035
-  d_alderson_ruined_district: "토지 개간" # 2957194419982595529
-  d_alderson_ruined_district_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_district_cleared: "최대 구역: §G+1§!" # 4494339216262361789
-  d_alderson_lost01: "$d_birch_lost01$" # 13660422315106926524
-  d_alderson_lost01_desc: "$d_birch_lost01_desc$" # 9036543343083880161
-  d_alderson_lost01_cleared: "§B1 £pops£팝§을(를) §Y[root.GetName]§에서 획득하세요!\n§Y$d_alderson_lost01$§ 방해물을 모두 제거하면 §Y$d_alderson_ruined_district$§의 비용이 §G50%§ 감소합니다." # 15714455334755888424
-  d_alderson_ruined_housing: "난개발 슬럼가" # 889853258775986512
-  d_alderson_ruined_housing_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_housing_cleared: "주거: §G+5%§!\n모든 §Y$d_alderson_ruined_housing$§! 차단물 제거 시 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다." # 1122151701666512300
-  d_alderson_ruined_police: "쇠락한 스테이션" # 8497799782297872134
-  d_alderson_ruined_police_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_police_cleared: "집행자 직업: §G+1§!\n모든 §Y$d_alderson_ruined_police$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다." # 8461747976708613106
-  d_alderson_ruined_patrol_drone: "퇴락한 탑" # 7986080367406755256
-  d_alderson_ruined_patrol_drone_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_patrol_drone_cleared: "사냥꾼-추적자 일자리: §G+1§!\n모든 §Y$d_alderson_ruined_patrol_drone$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다." # 2543000351659480114
-  d_alderson_ruined_miner: "물질 합성기 복원" # 11926460364585958207
-  d_alderson_ruined_miner_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_miner_cleared: "광부 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_miner$§! 차단물을 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 17453609358720270340
-  d_alderson_ruined_mining_drone: "물질 합성기 복원" # 11926460364585958207
-  d_alderson_ruined_mining_drone_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_mining_drone_cleared: "채굴 드론 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_mining_drone$§! 차단물을 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다!" # 7155231530794917603
-  d_alderson_ruined_mining_drone_hive: "$d_alderson_ruined_mining_drone$" # 2718587689009020060
-  d_alderson_ruined_mining_drone_hive_desc: "$d_alderson_ruined_mining_drone_desc$" # 12111266503293069593
-  d_alderson_ruined_mining_drone_hive_cleared: "광업 드론 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_mining_drone_hive$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§!만큼 절감됩니다!" # 16208735755156966162
-  d_alderson_ruined_farmer: "오염된 토양" # 17489007359112395287
-  d_alderson_ruined_farmer_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_farmer_cleared: "농업 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_farmer$§! 차단물을 개간하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 10791380983011866815
-  d_alderson_ruined_agri_drone: "오염된 토양" # 17489007359112395287
-  d_alderson_ruined_agri_drone_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_agri_drone_cleared: "농업 드론 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_agri_drone$§! 차단물을 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§!만큼 절감됩니다!" # 1499233635176889290
-  d_alderson_ruined_agri_drone_hive: "$d_alderson_ruined_agri_drone$" # 13639560617231694996
-  d_alderson_ruined_agri_drone_hive_desc: "$d_alderson_ruined_agri_drone_desc$" # 15589320007087529918
-  d_alderson_ruined_agri_drone_hive_cleared: "농업 드론 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_agri_drone_hive$§! 차단물을 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다!" # 10569585740551458579
-  d_alderson_ruined_technician_hive: "노출된 코어" # 6311936087160479171
-  d_alderson_ruined_technician_hive_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_technician_hive_cleared: "기술 드론 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_technician_hive$§! 방해물을 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 1057399886839957777
-  d_alderson_ruined_technician_machine: "노출된 코어" # 6311936087160479171
-  d_alderson_ruined_technician_machine_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_technician_machine_cleared: "기술 드론 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_technician_machine$§! 차단물을 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 15060511904879910536
-  d_alderson_ruined_maintenance_drone: "파괴된 보급창" # 10983609539104687174
-  d_alderson_ruined_maintenance_drone_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_maintenance_drone_cleared: "유지보수 드론 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_maintenance_drone$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다!" # 10549960636004239604
-  d_alderson_ruined_maintenance_drone_hive: "$d_alderson_ruined_maintenance_drone$" # 1885576130347842717
-  d_alderson_ruined_maintenance_drone_hive_desc: "$d_alderson_ruined_maintenance_drone_desc$" # 15233201746539675006
-  d_alderson_ruined_maintenance_drone_hive_cleared: "정비 드론 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_maintenance_drone_hive$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다." # 11608247231141858879
-  d_alderson_ruined_clerk: "파괴된 보급창" # 10983609539104687174
-  d_alderson_ruined_clerk_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_clerk_cleared: "서기 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_clerk$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 16208995214697520645
-  d_alderson_ruined_merchant: "폭심지" # 7795773557789112381
-  d_alderson_ruined_merchant_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_merchant_cleared: "상인 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_merchant$§! 차단기를 정리하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 줄어듭니다." # 13441019953273621378
-  d_alderson_ruined_artisan: "오작동하는 공장" # 7443912798530922342
-  d_alderson_ruined_artisan_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_artisan_cleared: "장인 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_artisan$§! 차단기를 제거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다." # 1119231624122738209
-  d_alderson_ruined_crafters: "오작동하는 공장" # 7443912798530922342
-  d_alderson_ruined_crafters_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_crafters_cleared: "인공물 제작자 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_artisan$§! 장애물을 제거하면 §Y$d_alderson_ruined_district$§! 건설 비용이 §G50%§! 감소합니다!" # 11282938869758428735
-  d_alderson_ruined_foundry: "녹아내린 주조소" # 4279430749511374437
-  d_alderson_ruined_foundry_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_foundry_cleared: "야금술사 직업: §G+5%§!\n모든 §Y$d_alderson_ruined_foundry$§! 블로커를 개척하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다." # 11203746092367857654
-  d_alderson_ruined_foundry_hive: "녹아내린 주조소" # 4279430749511374437
-  d_alderson_ruined_foundry_hive_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_foundry_hive_cleared: "주조 드론 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_foundry_hive$§! 장애물을 제거하면 §Y$d_alderson_ruined_district$§!의 건설 비용이 §G50%§! 감소합니다!" # 13023842210639999801
-  d_alderson_ruined_foundry_machine: "녹아내린 주조소" # 4279430749511374437
-  d_alderson_ruined_foundry_machine_desc: "엘더슨을 개척하는 것은 막대한 규모의 과업이지만, 어딘가에서는 시작해야 합니다." # 7254612520258257262
-  d_alderson_ruined_foundry_machine_cleared: "조립공 일자리: §G+5%§!\n모든 §Y$d_alderson_ruined_foundry_machine$§! 방해물을 철거하면 §Y$d_alderson_ruined_district$§!의 비용이 §G50%§! 감소합니다!" # 17443210029638375122
   d_giga_supertensiles_1: "£giga_sr_amb_megaconstruction£ +1" # 6256544470360146816
   d_giga_supertensiles_1_desc: "" # 17241709254077376921
   d_giga_supertensiles_2: "£giga_sr_amb_megaconstruction£ +2" # 2960695998966619595
@@ -90,7 +22,7 @@
   d_nicoll_deposit: "£minerals£ +10" # 14750764525639193362
   d_depletedstripmine_deposit: "£minerals£ +20" # 2700189242436299685
   d_nicollboom_deposit: "£광물£ +15" # 7966808390146428135
-  d_pouchkinn_deposit: "£물리학£ +35" # 17467712308671531391
+  d_pouchkinn_deposit: "£physics£ +30" # 9219571488480645402
   d_ringworld_deposit: "£energy£ +50" # 797155960285904104
   d_succ_deposit: "광물 +10 이국적인 기체 +5 희귀 수정 +5" # 17279361243052296302
   d_giga_hab_nanites_1: "나노로봇 +1" # 15815939212229835065

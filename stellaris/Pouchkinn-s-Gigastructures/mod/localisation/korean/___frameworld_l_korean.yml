@@ -42,6 +42,7 @@
   building_frameworld_outpost_desc: "이 행성에서 진행 중인 탐사대를 위한 지표면 중계 노드 및 배치 기지." # 4966796837301366503
   col_frameworld_planetary_outpost: "$pc_giga_frameworld$ $giga_frameworld_outpost$" # 1036802399994188599
   col_frameworld_planetary_outpost_desc: "궤도 중계소의 감시를 받는 이 행성에는 소규모 과학 탐사대가 주둔하고 있습니다." # 12684738550214719488
+  col_frameworld_planetary_outpost_tt: "$col_frameworld_planetary_outpost_desc$" # 3634688650041536018
   building_frameworld_branch_office_outpost: "$pc_giga_frameworld$ $frameworld_outpost_0$" # 2359589960044378116
   building_frameworld_branch_office_outpost_desc: "고도로 중앙집권화된 거대 기업의 상당한 규모의 기지로, 지역 인프라 및 사회와 통합되어 있습니다." # 6795203069777604717
   requires_no_frameworld_outpost: "$TRIGGER_FAIL$이미 $frameworld_outpost_0$을(를) 가지고 있는 행성에는 건설할 수 없습니다." # 12683341032742900970

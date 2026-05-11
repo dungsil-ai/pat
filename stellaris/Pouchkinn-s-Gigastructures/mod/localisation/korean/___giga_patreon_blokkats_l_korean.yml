@@ -29,6 +29,6 @@
   trait_blokkat_silly: "어리석은" # 181342559714575580
   trait_blokkat_silly_desc: "이 블로캇은 변덕과 기쁨으로 가득 차 있습니다. 모든 블로캇은 내가 가장 강하기 때문에 PIEBLOKK에게 도전해서는 안 된다는 것을 알고 있습니다! :3" # 4890221834107207556
   prison_blokkat_is_pieblokk: "§CVery Silly :3§! - $trait_blokkat_silly_desc$" # 10241997708518637159
-  trait_blokkat_megastructure_obession: "거대 구조물 집착" # 11106760731689820106
-  trait_blokkat_megastructure_obession_desc: "이 블로캇은 원시적인 공상 과학 오락물에서 볼 수 있는 것부터 은하계 전체를 왜소하게 만드는 불가능할 정도로 복잡한 계획에 이르기까지, 모든 형태의 인공 거대 구조물에 큰 관심을 보입니다." # 15536618327292522805
-  prison_blokkat_is_tempestkat: "§MMegastructure Obsession§! - $trait_blokkat_megastructure_obession_desc$" # 4993929214756765507
+  trait_blokkat_megastructure_obsession: "거대 구조물 집착" # 11106760731689820106
+  trait_blokkat_megastructure_obsession_desc: "이 블로캣은 원시적인 공상 과학 오락물에 등장하는 것부터 은하 전체를 왜소하게 만들 만큼 복잡한 구조물 설계도에 이르기까지, 모든 형태의 인공 거대 구조물에 지대한 관심을 보입니다." # 15536618327292522805
+  prison_blokkat_is_tempestkat: "§M거대 구조물 집착§! - $trait_blokkat_megastructure_obsession_desc$" # 10936730171835121850

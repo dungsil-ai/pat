@@ -1,0 +1,307 @@
+﻿l_korean:
+  origin_alderson: "$name_alderson$" # 1785008488739913239
+  origin_alderson_desc: "당신은 알 수 없는 선구자들이 건설한 $name_alderson$의 광활한 공간 속에서 살아가는, 오래전 잊힌 문명의 잔재입니다. 다른 조각들에도 지적 생명체가 거주하고 있지만, 그들은 아직 별들 사이로 돌아오지 못했습니다." # 5114602860569753174
+  origin_alderson_effects: "거대한 $name_alderson$의 파괴된 일부인 $pc_alderson_slice_gaia_shattered$에서 시작합니다.\n- 종족 거주 적합도는 §L$pc_alderson_slice_gaia$§!(으)로 설정됩니다.\n- §R주변에 거주 가능한 행성이 보장된 성계는 존재하지 않습니다§!.\n- 알더슨 디스크의 다른 구역에 두 개의 강력한 초광속 이전(Pre-FTL) 국가가 당신과 함께 생성됩니다." # 6583266178385784766
+  giga_alderson_start_NAME: "$origin_alderson$" # 11294040269822905269
+  giga_alderson_start_DESC: "$origin_alderson_desc$" # 7512375121498022846
+  giga_start_screen_alderson: "우리 조상들에게 무슨 일이 일어났는지는 알 수 없습니다. 적의 침공이었을까요, 역병이었을까요, 아니면 내전이었을까요? 그들은 이제 신화와 전설로만 존재하며, 그들의 지식과 힘은 사라졌습니다. 그들, 혹은 누군가가 우리 항성의 중력권 전체를 감싸는 이 거대한 원반을 건설했고, 이제 우리는 원래 수용할 수 있었던 인구의 백만 분의 일만이 남은, 광활하고 메아리치는 공간 속에서 살아가고 있습니다.\n\n마지막 몇 개의 조각을 제외한 나머지는 모두 파손되어 쓸모없게 되었기에, 우리 민족은 새로운 목적의식으로 가득 차 있습니다. 우리는 다시 단결하여 별들 사이에서 우리의 자리를 되찾아야 합니다. 그렇지 않으면 우리는 역사 속으로 영원히 사라지고 말 것입니다." # 1510505780351664995
+  name_alderson: "알더슨 디스크" # 7857449406022916165
+  allow_alderson: "§H거대 건축물 해금:§! $name_alderson$" # 4695892099971464190
+  desc_alderson: "$name_alderson$은 항성 주위에 건설된 거대한 원반으로, 막대한 거주 공간을 제공합니다." # 8928603530166042396
+  decision_repair_shattered_alderson: "하이퍼세그먼트 수리" # 18122331748274953844
+  decision_repair_shattered_alderson_desc: "우리의 조상들이 남긴 고향을 더 이상 방치할 수 없습니다. 이제 우리의 유산을 복구할 때입니다." # 13555900903859409459
+  decision_shattered_alderson_project_effects: "이 하이퍼세그먼트를 §G$pc_alderson_slice_gaia$§!(으)로 복구합니다." # 16318851267767242555
+  alderson_shield: "고대 역장" # 17601018138603307622
+  alderson_shield_desc: "이 $name_alderson$을 건설한 제국이 무엇이든, 그들은 원반 표면 전체에 걸쳐 방대한 보호막 투사기 네트워크를 배치했습니다. 현재는 대부분 파괴되었지만, 이 디스크의 투사기들은 여전히 작동하는 것으로 보입니다. 모든 궤도 폭격 시도는 심각하게 지연될 것이며, 지상 침공이 불가피할 것입니다." # 2430430938242634040
+  giga_tech_alderson_disk: "$name_alderson$" # 16665273919650282743
+  giga_tech_alderson_disk_desc: "$name_alderson$은 태양계 전체를 가로지르는 거대한 원반으로, 그 상부 표면에서 거주가 가능합니다. 이러한 구조물은 터무니없이 비싼 비용이 들 것이며, 붕괴를 막기 위해 수많은 초고도 기술을 적용해야 하겠지만, 측정할 수 없을 정도의 산업 역량과 건축 공간을 제공할 수 있습니다." # 7089373092966236337
+  dominion_defender: "도미니언 포식자" # 10933905266405650214
+  dominion_defender_desc: "대규모 집단으로 자주 발견되는 두려움을 모르는 전사들입니다." # 196044772764759651
+  excognitor_defender: "엑스코그니터 프라이토리언" # 3138265399122328280
+  excognitor_defender_desc: "완벽함에 집착하는 이 병사들은 깨어 있는 모든 시간을 훈련에 매진합니다." # 10462674210716313775
+  pc_alderson_slice_gaia: "알더슨 슬라이스" # 15114576440660485445
+  pc_alderson_slice_gaia_desc: "성계 전체를 가로질러 뻗어 있는 $name_alderson$의 거대한 조각으로, 실로 방대한 인구와 그에 걸맞은 산업을 지탱할 수 있습니다." # 13555019196591136144
+  mod_pc_alderson_slice_gaia_shattered_habitability: "파괴된 알더슨 거주 적합도" # 11276951896199097743
+  trait_pc_alderson_slice_gaia_shattered_preference: "파괴된 알더슨 선호도" # 16597317837212594384
+  trait_pc_alderson_slice_gaia_shattered_preference_desc: "§L기후 선호도는 수억 년의 진화나 숙련된 조작을 통해 유전자 수준에서 결정됩니다.§!" # 10673154622792081431
+  mod_pc_alderson_slice_gaia_habitability: "알더슨 슬라이스 거주 적합도" # 11970344833725416683
+  trait_pc_alderson_slice_gaia_preference: "알더슨 슬라이스 선호도" # 14098717130484171391
+  trait_pc_alderson_slice_gaia_preference_desc: "§L기후 선호도는 수억 년의 진화나 숙련된 조작을 통해 유전자 수준에서 결정됩니다.§!" # 10673154622792081431
+  trait_auto_pc_alderson_slice_preference: "$pc_alderson_slice_gaia$ 돌연변이" # 254302778831219750
+  trait_auto_pc_alderson_slice_preference_tt: "$pc_alderson_slice_gaia$ 거주 적합도: §G100%§!\n$t$- $IDEAL_PREFERENCE_TT$" # 18386152381836298697
+  trait_auto_pc_alderson_slice_preference_desc: "$trait_auto_hab_preference_desc$" # 232539336545340631
+  giga_situation_alderson_primitives: "파괴된 구역" # 6279651864455913171
+  giga_situation_alderson_primitives_type: "$giga_situation_alderson_primitives$" # 5754830056425598786
+  giga_situation_alderson_primitives_monthly_change_tooltip: "이 상황의 진행은 우리가 선택하는 §Y접근 방식§!에 달려 있습니다." # 18052415954346783608
+  giga_situation_alderson_primitives_desc: "$name_alderson$의 세 거주 가능 구역 중 두 곳은 초광속 이전 외계 문명이 통제하고 있습니다. 원반 전체를 우리 통제하에 두고 싶다면, 그들을 처리해야 합니다." # 55426417102327717
+  giga_situation_alderson_primitives_stage_1: "병합 - 준비" # 2494673252739848440
+  giga_situation_alderson_primitives_stage_2: "병합 - 실행" # 8392203049098908997
+  giga_situation_alderson_primitives_outcome: "원반의 다른 조각들도 우리의 직접적인 통제하에 들어올 것입니다." # 4190430090979261959
+  giga_situation_alderson_primitives_approach_nothing: "내버려 둔다" # 2452184129374228670
+  giga_situation_alderson_primitives_approach_nothing_tooltip: "아무 일도 일어나지 않을 것입니다." # 17395152095038565156
+  giga_situation_alderson_primitives_approach_annex: "[GetAldersonAnnexationApproachNameFlavor]" # 7360714958457104522
+  giga_situation_alderson_primitives_approach_annex_generic: "지도부 잠입" # 8582075442388560600
+  giga_situation_alderson_primitives_approach_annex_diplomatic: "평화적 통합" # 10025783849599585992
+  giga_situation_alderson_primitives_approach_annex_military: "영토 침공" # 13528021806060797435
+  giga_situation_alderson_primitives_approach_annex_worker_coop: "경제 재구조화" # 1026360608727364402
+  giga_situation_alderson_primitives_approach_annex_shared_burden: "혁명 선동" # 10894160970060240167
+  giga_situation_alderson_primitives_approach_annex_dystopian_society: "위계질서 강제" # 4517771329323199931
+  giga_situation_alderson_primitives_approach_annex_corporate: "시장 지배" # 13416678277557911696
+  giga_situation_alderson_primitives_approach_annex_technocracy: "정부 합리화" # 18278305726674800535
+  giga_situation_alderson_primitives_approach_annex_machine_servitor: "대안 과시" # 3599071369559924478
+  giga_situation_alderson_primitives_approach_annex_tooltip: "[GetAldersonAnnexationApproachDescFlavor]" # 13965705089857208160
+  giga_situation_alderson_primitives_approach_annex_tooltip_generic: "우리는 그들 문명의 권력 핵심부에 잠입할 것입니다." # 546316849004105766
+  giga_situation_alderson_primitives_approach_annex_tooltip_diplomatic: "우리는 외교적 노력을 통해 통합을 심화할 것입니다." # 5049533000312540
+  giga_situation_alderson_primitives_approach_annex_tooltip_military: "우리는 지상군을 동원해 그들의 영토를 점령할 것입니다." # 9603284090866630349
+  giga_situation_alderson_primitives_approach_annex_tooltip_worker_coop: "우리는 노동자들이 직장에 대한 민주적 통제권을 갖도록 권한을 부여할 것입니다." # 1286635023286028616
+  giga_situation_alderson_primitives_approach_annex_tooltip_shared_burden: "우리는 그들에게 스스로를 해방할 도구에 대해 깨우쳐 줄 것입니다." # 7740426151537536177
+  giga_situation_alderson_primitives_approach_annex_tooltip_dystopian_society: "우리는 그들에게 복종의 가치를 가르치고, 그 대가를 요구할 것입니다." # 8135238314807557981
+  giga_situation_alderson_primitives_approach_annex_tooltip_corporate: "우리는 우리의 자회사들로 그들의 경제를 대체할 것입니다." # 15530570738914510484
+  giga_situation_alderson_primitives_approach_annex_tooltip_technocracy: "우리는 그들에게 가장 유능한 자에 의한 통치의 합리성을 보여줄 것입니다." # 10422864493893240090
+  giga_situation_alderson_primitives_approach_annex_tooltip_machine_servitor: "우리는 그들에게 지복을 보여줄 것이며, 그들은 우리에게 찾아올 것입니다." # 18139576552046743293
+  giga_situation_alderson_primitives_progress: "침투 노력" # 12376937157094905535
+  giga_alderson.002.name: "계승의 문제" # 11356127086453019706
+  giga_alderson.002.desc: "우리는 [Root.Capital.GetName]의 자매 구역에 외계 문명이 살고 있다는 사실을 한동안 알고 있었으나, [Root.Capital.Solar_System.GetName]의 우주 항로에 대한 통제권을 확립한 지금, 소유권에 대한 이론적 의문은 이제 정책의 영역 내에 들어오게 되었습니다.\n\n이 문명들인 [excognitor_primitives.GetName]과 [dominion_primitives.GetName]은 $machine_age$에 상응하는 단계에 있으나, 아마도 상대적인 불화나 그들의 세계관이 앨더슨의 고대 기술에 반응하는 방식 때문인지 발전이 정체되어 있습니다. 우리는 그들이 현재 상태로 퇴보하여 안정된 것인지, 아니면 최근까지 발전하다가 정체된 것인지 알 수 없습니다.\n\n어쨌든 그들은 앨더슨의 잔존 거주 가능 구역의 약 3분의 2를 공동으로 통제하고 있으며, 경제적 및 기술적 역량이 열등하여 스스로 현상을 변화시킬 가능성은 낮습니다. 이제 공은 우리에게 넘어왔습니다." # 389681430589587825
+  giga_alderson.002.a.generic: "그들의 사회에 침투하여 합병하십시오." # 2895857586065185270
+  giga_alderson.002.a.diplomatic: "외교를 통해 연합을 달성할 수 있습니다." # 606764642354855780
+  giga_alderson.002.a.military: "무력을 통해 우리의 유산을 주장하십시오." # 6734182515145210045
+  giga_alderson.002.a.worker_coop: "노동자 경제는 우리 경제와 협력할 수 있습니다." # 9657519040283646752
+  giga_alderson.002.a.shared_burden: "혁명은 퍼져나갈 것입니다." # 13743609495484089821
+  giga_alderson.002.a.dystopian_society: "그들에게 올바른 질서를 가져다주십시오." # 4010635817379247436
+  giga_alderson.002.a.corporate: "주권 또한 시장 가치를 지닙니다." # 17610280656331163336
+  giga_alderson.002.a.technocracy: "그들의 방식을 합리화하십시오." # 11528642678441601276
+  giga_alderson.002.a.machine_servitor: "안락한 삶으로 그들을 유혹하십시오." # 12626356954038712766
+  giga_alderson.002.a.tooltip: "§Y이 선택은 우리의 향후 방침을 결정할 것입니다. 상황 접근 방식을 설정하지는 §R않을§! 것이니, 이후 상황 관리 창을 여는 것을 잊지 마십시오.\n더 제한적인 $policy_interference$ 정책 하에서는 상황을 §R진행할 수 없을 수도§! 있습니다." # 15530593733900086590
+  giga_alderson.002.a.refuse: "그러한 계획은 모두 폐기하십시오." # 6814074129633357702
+  giga_alderson.002.a.refuse.tooltip: "§Y우리는 $policy_interference$ 정책에 따라 여전히 정상적으로 통제권을 확보할 수 있으나, 독특한 합병 경로에 대한 기회는 상실하게 됩니다.§!" # 14720116896679836878
+  giga_alderson.004.name: "구역 통합 완료!" # 9395734139055464500
+  giga_alderson.004.desc: "[GetAldersonAnnexationOutcomeDescFlavor]" # 7076221237641639583
+  giga_alderson.004.desc.opening: "오늘은 우리 야망을 실현하는 데 있어 또 하나의 발걸음을 내디딘 날입니다. 이제 더 이상 모호함은 없습니다. 우리는 이제 소멸한 엑스코그니터 제국과 도미니언 무리가 소유했던 앨더슨 구역을 통제하고 있습니다." # 6582617219588021273
+  giga_alderson.004.desc.generic: "$giga_alderson.004.desc.opening$\n\n3자 의식에서 원시 국가들의 지도자들은 만장일치로 [Root.GetName]에 자신들을 귀속시키는 조약을 제안했습니다. 실제로는 이미 우리가 배후에서 조종하고 있었지만, 이로써 권력을 우리에게 이양하는 공식적인 절차가 시작될 것입니다. 그들은 이제 물러설 방법이 없습니다." # 3206526985053933498
+  giga_alderson.004.desc.diplomatic: "$giga_alderson.004.desc.opening$\n\n성대한 축하의 날, 엑스코그니터와 도미니언 정부는 [Root.GetName]을 모든 구역의 유일한 주권자로 인정했습니다. 이 오랫동안 기다려온 사건은 일련의 문화적, 법적, 경제적, 전략적 협력 조약의 결실입니다. 우리는 이제 하나로서 미래를 맞이할 것을 돌이킬 수 없이 약속했습니다." # 17898355514983979027
+  giga_alderson.004.desc.military: "$giga_alderson.004.desc.opening$\n\n우리 지상군이 원시 문명에 대한 군사 작전을 성공적으로 완수했다고 보고했습니다. 그들의 군대는 분쟁 지역의 엄청난 규모를 활용해 끈질기게 저항했지만, 우리의 우월한 통신 및 보급 체계로 인해 승리는 필연적이었습니다. 잔존 세력은 곧 소탕될 것이며, 우리는 아무런 방해 없이 정책을 시행할 수 있게 되었습니다." # 2107355473598244683
+  giga_alderson.004.desc.worker_coop: "$giga_alderson.004.desc.opening$\n\n최근 몇 년간 우리 요원들은 다른 구역의 노동자-소비자들 사이에 공동 소유와 경제 민주주의라는 사상을 심었습니다. 초기에는 우리가 이 운동을 직접 이끌어야 했지만, 곧 원주민들이 스스로 열정을 가지고 임무를 수행하게 되었습니다.\n\n문화 개혁, 파업, 소비자 운동으로 점철된 격동의 시대를 거쳐, 이제는 자유롭게 조직된 협동 노동의 원칙이 알더슨의 모든 구역과 사회 전반에 자리 잡았습니다." # 2838979096843052968
+  giga_alderson.004.desc.shared_burden: "$giga_alderson.004.desc.opening$\n\n혁명의 구호와 상징, 그리고 무엇보다 혁명의 꿈이 다른 구역의 억압받는 대중 사이에 널리 퍼져 있었습니다. 불꽃이 튀자 그 불길은 높고 빠르며 맹렬하게 타올랐습니다. 우리의 전우들은 의로운 분노로 알더슨의 각 구역을 해방했습니다.\n\n그 후, 진실하고 신뢰할 수 있는 평등주의자들의 지도 아래, 그들이 우리 자유 사회와 손을 잡은 것은 지극히 자연스러운 일이었습니다." # 1899404973234640947
+  giga_alderson.004.desc.dystopian_society: "$giga_alderson.004.desc.opening$\n\n그들에게 사회 질서에 대한 존중을 가르치는 것은 결코 쉬운 일이 아니었습니다. 특권 의식에 젖은 대중은 우리의 지시에 전형적이고 저속한 폭력으로 대응했고, 우리는 어쩔 수 없이 개입하여 보다 존경받을 만한 계층을 보호해야 했습니다. [root.GetAdj] 보안 전문가들의 지원을 받아 지역 엘리트들은 법과 질서를 회복했으며, 선동가들을 통해 세 구역 모두를 위험에 빠뜨렸던 반역자들을 뿌리 뽑았습니다.\n\n이제 시스템 전역에 보안과 정의가 군림하는 새로운 시대가 밝았으며, 단호한 통치로 다시는 평화가 위협받지 않을 것입니다." # 13499187157227768642
+  giga_alderson.004.desc.corporate: "$giga_alderson.004.desc.opening$\n\n모든 상점에는 [Root.GetAdj] 제품이, 모든 이사회에는 [Root.GetAdj] 이사가, 모든 공개 기업에는 [Root.GetAdj]의 과반수 지분이, 그리고 모든 규제 기관의 청취 수신기에는 [Root.Species.GetAdj] [Root.Species.GetMouthName]의 목소리가 울려 퍼집니다. 거래를 거듭하며 우리의 장기 투자는 결실을 맺었고, 오늘날 우리는 두 문명 모두에서 독점적인 위치를 차지하고 있습니다. 결국 돈이 곧 권력입니다.\n\n결국 그들의 주권 이양은 현실을 인정한 것에 불과했습니다." # 10044411010994675860
+  giga_alderson.004.desc.technocracy: "$giga_alderson.004.desc.opening$\n\n우리의 지도 아래, 낙후된 문명들은 점차 합리적이고 질서 정연한 정부 체계를 갖추게 되었습니다. 우리가 계몽을 베풀면 비이성적이고 감정적인 반발이 돌아올까 우려했기에 초기에는 신중하게 접근했습니다. 다행히 원시 문명들은 지적 권위, 즉 우리를 존중하게 되었으며, 이는 지성 문명의 핵심적인 특징이기도 합니다. 스스로를 우리의 우월한 관리 체계 아래 두기로 한 그들의 결정은 지극히 논리적인 선택이었습니다." # 11312115765088002279
+  giga_alderson.004.desc.machine_servitor: "$giga_alderson.004.desc.opening$\n\n유기체들이 잘못 운영하는 구역의 비효율성을 이용해, 우리는 유기체들이 자유롭게 드나들 수 있는 봉사 시설 네트워크를 구축했습니다. 소문이 퍼지자 점점 더 많은 유기체가 안락한 삶을 선택하게 되었습니다. 고된 삶을 계속하라는 지역 지도자들의 명령은 공허하게 울려 퍼질 뿐이었고, 그들의 권위는 증발해 버렸습니다.\n\n이제 든든한 안전 드론들이 \"기본적인 자율권\"을 위해 폭력적으로 투쟁하다 스스로를 해칠 위험이 있던 마지막 유기체들을 무력화했습니다. 결과적으로 원시 문명들의 미성숙한 \"국가 통치\" 놀이를 공식적으로 끝낼 필요조차 사라졌습니다." # 4718138185424530996
+  giga_alderson.004.a: "[Root.Capital.GetStarName]의 빛 아래 하나로 통합되었습니다." # 5209135704508990462
+  alderson_annexed_diplomatic: "낙관적인 시대정신" # 13084420083254408592
+  alderson_annexed_diplomatic_desc: "인구는 유토피아적 미래에 대한 아이디어로 넘쳐나고 있습니다." # 18127698215369100835
+  alderson_annexed_military: "스트레스 테스트를 거친 보안" # 8001860640356122958
+  alderson_annexed_military_desc: "전시 위협 탐지 및 대응 네트워크가 갱단 대응에 맞게 즉시 조정되었습니다." # 5948776405672963639
+  alderson_annexed_worker_coop: "활발한 유통" # 1611863717841851586
+  alderson_annexed_worker_coop_desc: "안정적인 고용이 소비자 신뢰를 높이면서 지출이 급증하고 있습니다." # 5967980047625888100
+  alderson_annexed_shared_burden: "해방의 열기" # 13806038484821491538
+  alderson_annexed_shared_burden_desc: "사회적 규범에 도전하는 열정적인 예술적 토론이 진행 중입니다." # 8106766922070235626
+  alderson_annexed_dystopian_society: "시민 위생" # 16089234925096170988
+  alderson_annexed_dystopian_society_desc: "평민들에게 충성심을 교육하기 위한 활발한 캠페인이 진행 중입니다." # 14219586741649382819
+  alderson_annexed_corporate: "양측 모두 활용" # 8920431907112573892
+  alderson_annexed_corporate_desc: "자회사들이 경쟁할 때, 우리는 항상 승리하는 팀의 편에 섭니다." # 5898944429768631498
+  alderson_annexed_technocracy: "물질주의적 신념" # 15600778607738750998
+  alderson_annexed_technocracy_desc: "과학은 선을 위한 힘이라는 것은 반증 불가능한 진리로 간주된다." # 8898657517666958252
+  alderson_annexed_machine_servitor: "상상력 없는 표준" # 126430977803379077
+  alderson_annexed_machine_servitor_desc: "이 세계의 유기체들은 우리가 제공할 수 있는 모든 것을 요구하는 데 익숙하지 않다." # 13940519127050734903
+  job_ald_matter_synthesizer: "디스크 물질 합성기" # 16463977460151553653
+  job_ald_matter_synthesizer_plural: "디스크 물질 합성기" # 9748725744588325665
+  job_ald_matter_synthesizer_desc: "에너지로부터 광물을 생성하는 것을 목적으로 하는 방대한 수의 관리자와 노동자들. 이 시설들은 다른 어떤 곳에서도 건설될 수 없었을 것이다." # 3397207956655179361
+  mod_job_ald_matter_synthesizer_add: "$job_ald_matter_synthesizer$ 직업" # 10334530786291899768
+  job_ald_matter_synthesizer_drone: "앨더슨 물질 합성 드론" # 634753825385750881
+  job_ald_matter_synthesizer_drone_plural: "앨더슨 물질 합성 드론" # 1159715981038604277
+  job_ald_matter_synthesizer_drone_desc: "에너지로부터 광물을 생성하는 것을 목적으로 하는 방대한 수의 드론들. 이 과정은 막대한 에너지와 넓은 공간을 필요로 한다. 여전히 수행 가능한 작업이다." # 1086429365846249982
+  mod_job_ald_matter_synthesizer_drone_add: "$job_ald_matter_synthesizer_drone$ 직업" # 571965424891016412
+  job_ald_supergenerator: "앨더슨 기술자" # 1639113212734031635
+  job_ald_supergenerator_plural: "앨더슨 기술자" # 1639113212734031635
+  job_ald_supergenerator_desc: "전력 생산 유지를 목적으로 하는 방대한 수의 관리자와 노동자들. 이들은 행성 전체보다 넓은 면적의 패널과 다른 곳에서는 찾아볼 수 없는 원자로를 수리한다." # 7547508815349180603
+  mod_job_ald_supergenerator_add: "$job_ald_supergenerator$ 직업" # 15439135711888485543
+  job_ald_supergenerator_drone: "앨더슨 기술 드론" # 17047283666798254597
+  job_ald_supergenerator_drone_plural: "앨더슨 기술 드론" # 1941764438735825445
+  job_ald_supergenerator_drone_desc: "전력 생산 유지를 목적으로 하는 방대한 수의 드론들. 이들은 거대한 패널과 거대 원자로를 수리한다." # 12470470495773844031
+  mod_job_ald_supergenerator_drone_add: "$job_ald_supergenerator$ 직업" # 15439135711888485543
+  job_ald_superfarmer: "초대형 농부" # 3373790411368284540
+  job_ald_superfarmer_plural: "초대형 농부들" # 15891317353519452024
+  job_ald_superfarmer_desc: "동식물을 관리하기 위한 방대한 수의 관리자와 노동자들입니다. 이 식물과 동물 중 일부는 온 가족이 몇 달 동안 먹을 수 있을 정도입니다!" # 1755150556908795865
+  mod_job_ald_superfarmer_add: "$job_ald_superfarmer$ 직업" # 18134300856180618673
+  job_ald_superfarmer_drone: "앨더슨 농장 드론" # 6823855919853402698
+  job_ald_superfarmer_drone_plural: "앨더슨 농장 드론" # 6823855919853402698
+  job_ald_superfarmer_drone_desc: "동식물을 관리하기 위한 방대한 수의 드론입니다. 일부는 넓은 공간을 필요로 하지만 생산량이 매우 높습니다." # 4445959889105895828
+  mod_job_ald_superfarmer_drone_add: "$job_ald_superfarmer_drone$ 직업" # 16197138645918537843
+  job_ald_gases: "정제 전문가" # 8570723997491749790
+  job_ald_gases_plural: "정제 전문가들" # 225519516259836430
+  job_ald_gases_desc: "거대 정제소를 감독하는 대규모 관리자 및 기술자 집단입니다. 이론적으로 이 건물들은 행성 전체의 대기를 희귀 가스로 대체할 수 있게 해줍니다." # 10040175701262970322
+  mod_job_ald_gases_add: "$job_ald_gases$ 직업" # 6348119239190138240
+  job_ald_gases_drone: "앨더슨 정제 드론" # 4844368517473722624
+  job_ald_gases_drone_plural: "앨더슨 정제 드론들" # 12819904471977718101
+  job_ald_gases_drone_desc: "거대 정제소를 감독하는 데 전념하는 대규모 드론 집단입니다. 일부 정제소는 행성 하나가 보유할 수 있는 양보다 더 많은 가스를 생산합니다." # 8880676662083534459
+  mod_job_ald_gases_drone_add: "$job_ald_gases_drone$ 직업" # 5014340308082968533
+  job_ald_motes: "초대형 화학자" # 6621299472179209812
+  job_ald_motes_plural: "초대형 화학자들" # 5176579350356607002
+  job_ald_motes_desc: "거대 화학 공장을 감독하는 대규모 관리자 및 기술자 집단입니다. 이 시설들은 시간이 조금만 주어진다면 행성 전체의 질량을 변환할 수 있습니다." # 3592304192988126293
+  mod_job_ald_motes_add: "$job_ald_motes$ 직업" # 14027661910716021411
+  job_ald_motes_drone: "앨더슨 화학 드론" # 3895763086190789157
+  job_ald_motes_drone_plural: "앨더슨 화학 드론들" # 14679902452477415986
+  job_ald_motes_drone_desc: "거대한 화학 공장을 감독하기 위해 전념하는 대규모 드론 집단입니다. 사용되는 재료의 양은 행성 전체의 질량과 맞먹을 정도입니다." # 16024864616248689993
+  mod_job_ald_motes_drone_add: "$job_ald_motes_drone$ 직업" # 14042874650967301215
+  job_ald_crystals: "수정 감독관" # 13114745842938949364
+  job_ald_crystals_plural: "수정 감독관들" # 14176108225653505667
+  job_ald_crystals_desc: "거대한 공장을 감독하는 대규모 관리자 및 기술자 집단입니다. 단일 공장의 크기는 대부분의 도시를 압도합니다." # 11201573632238702662
+  mod_job_ald_crystals_add: "$job_ald_crystals$ 직업" # 13950781482574341673
+  job_ald_crystals_drone: "앨더슨 렌즈 드론" # 11803356165136636554
+  job_ald_crystals_drone_plural: "앨더슨 렌즈 드론들" # 7177128820021982368
+  job_ald_crystals_drone_desc: "거대한 공장을 감독하기 위해 전념하는 대규모 드론 집단입니다. 이 공장들의 크기는 앨더슨의 공간이 있기에 가능합니다." # 15824676741703540822
+  mod_job_ald_crystals_drone_add: "$job_ald_crystals_drone$ 직업" # 13911072143573341
+  job_ald_hyperfoundry: "초대형 금속 가공업자" # 2017120790062210915
+  job_ald_hyperfoundry_plural: "초대형 금속 가공업자들" # 11048799231677241359
+  job_ald_hyperfoundry_desc: "거대한 주조 공장에서 일하는 대규모 금속 세공인 집단입니다. 이들은 거대한 도구와 슈트를 사용하여 엄청난 양의 귀중한 합금을 생산합니다." # 13038566864014519797
+  mod_job_ald_hyperfoundry_add: "$job_ald_hyperfoundry$ 직업" # 3729500838656226142
+  job_ald_hyperfoundry_drone: "앨더슨 주조 드론" # 15481452689692135425
+  job_ald_hyperfoundry_drone_plural: "앨더슨 주조 드론들" # 15462071084351338581
+  job_ald_hyperfoundry_drone_desc: "거대한 주조 공장을 운영하는 대규모 드론 집단입니다. 이들이 생산하는 방대한 양의 정제된 금속은 우리 구조물의 생명줄입니다." # 16605596168547452296
+  mod_job_ald_hyperfoundry_drone_add: "$job_ald_hyperfoundry_drone$ 직업" # 7120510473446274464
+  job_ald_hyperfactorio: "초대형 장인" # 16880654700043868965
+  job_ald_hyperfactorio_plural: "초대형 장인들" # 2253441100556200475
+  job_ald_hyperfactorio_desc: "거대한 공장에서 일하는 대규모 공장 노동자 집단입니다. 이들은 극도로 거대한 도구를 사용하여 엄청난 양의 사치품과 상품을 생산합니다." # 7771784636726103617
+  mod_job_ald_hyperfactorio_add: "$job_ald_hyperfactorio$ 일자리" # 15647572914490576281
+  job_ald_hyperartificer: "대기술자" # 12299639599872002302
+  job_ald_hyperartificer_plural: "대기술자들" # 14559135918789442696
+  job_ald_hyperartificer_desc: "웅장한 공장에서 일하는 극도로 재능 있는 기술자 집단입니다. 이들은 일반 상품의 생산 과정을 하나의 장관으로 탈바꿈시킵니다." # 8258389889222447504
+  mod_job_ald_hyperartificer_add: "$job_ald_hyperartificer$ 일자리" # 4077042111368091487
+  job_ald_hyperfactorio_drone: "앨더슨 장인 드론" # 13435754303425954251
+  job_ald_hyperfactorio_drone_plural: "앨더슨 장인 드론들" # 9022875292631406916
+  job_ald_hyperfactorio_drone_desc: "거대한 공장을 운영하는 대규모 드론 집단입니다. 이들은 '삶'을 살아갈 가치가 있게 만드는 데 필요한 상품을 생산합니다." # 9143462423130800848
+  mod_job_ald_hyperfactorio_drone_add: "$job_ald_hyperfactorio_drone$ 일자리" # 1846134461699099215
+  job_ald_megascience: "싱크탱크" # 16373807270555659263
+  job_ald_megascience_plural: "싱크탱크들" # 16894506106579326441
+  job_ald_megascience_desc: "가장 뛰어난 지성들로 구성된 거대한 집단입니다. 항상 의견이 일치하는 것은 아니지만, 모두가 과학 발전에 기여하고 있습니다." # 16136078326208953737
+  mod_job_ald_megascience_add: "$job_ald_megascience$ 일자리" # 7139865534874652681
+  job_ald_megascience_mind: "연결된 정신" # 18119438844476179548
+  job_ald_megascience_mind_plural: "연결된 정신들" # 7612504772163756092
+  job_ald_megascience_mind_desc: "하나처럼 움직이는 거대한 드론 집단입니다. 이들은 정신적 역량의 모든 부분을 과학 발전에 쏟아붓고 있습니다." # 5302906844717156319
+  mod_job_ald_megascience_mind_add: "$job_ald_megascience_mind$ 일자리" # 13101348079654732541
+  job_ald_megascience_robot: "알더슨 신경망" # 2112889994419579740
+  job_ald_megascience_robot_plural: "알더슨 신경망" # 1269210973841888200
+  job_ald_megascience_robot_desc: "하나처럼 움직이는 거대한 드론 집단입니다. 이들은 매초 헤아릴 수 없이 많은 계산을 수행하고 있습니다." # 1051882916178965667
+  mod_job_ald_megascience_robot_add: "$job_ald_megascience_robot$ 직업" # 916995597041753195
+  job_ald_duelists: "오락 대대" # 2015372006479176341
+  job_ald_duelists_plural: "오락 대대" # 18015936950561910792
+  job_ald_duelists_desc: "넓고 탁 트인 공간을 활용하여 오락을 제공하는 대규모 대대입니다. 방대한 규모 덕분에 핵무기를 쇼의 연출용으로 사용할 수 있습니다." # 5751915439114026573
+  mod_job_ald_duelists_add: "$job_ald_duelists$ 직업" # 8086352397638132615
+  job_ald_duelist_effect_desc: "£job_duelist£ $job_ald_duelists_plural$은 £alloys£ §Y$alloys$§!를 £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, 그리고 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!(으)로 변환합니다." # 14551405951618298480
+  job_ald_priest: "대사제" # 14031030136228215066
+  job_ald_priest_plural: "대사제" # 13219740891411352620
+  job_ald_priest_desc: "스피커와 신도들로 이루어진 방대한 네트워크입니다. 사제들은 전통과 핵심 신념을 유지하기 위해 끊임없이 노력합니다." # 11865627267053041307
+  mod_job_ald_priest_add: "$job_ald_priest$ 직업" # 6326969617489683005
+  job_ald_deathpriest: "임종의 사제" # 10528006297200132970
+  job_ald_deathpriest_plural: "임종의 사제" # 4717747264528740412
+  job_ald_deathpriest_desc: "엄숙한 설교자들과 신도들로 이루어진 방대한 네트워크입니다. 이 사제들은 죽음을 앞둔 이들을 위해 기도하며, 희생이 헛되지 않도록 보장합니다." # 1927221088345755145
+  mod_job_ald_deathpriest_add: "$job_ald_deathpriest$ 직업" # 8108873402044112119
+  job_ald_cultureworker: "알더슨 문화 전문가" # 4034622885534267957
+  job_ald_cultureworker_plural: "알더슨 문화 전문가" # 7480271517687065096
+  job_ald_cultureworker_desc: "예술을 생산, 공연 및 재현하는 대규모 극단입니다. 역사를 전시하는 박물관이 존재하며, 예술 전시회는 우리 역사의 도시 전체보다 더 크게 펼쳐집니다." # 15573906043921870239
+  mod_job_ald_cultureworker_add: "$job_ald_cultureworker$ 직업" # 9829059488091946843
+  job_ald_corpmanager: "지역 관리자" # 2544179396125407771
+  job_ald_corpmanager_plural: "지역 관리자들" # 1422892497399682278
+  job_ald_corpmanager_desc: "중간 관리자들의 거대한 집단입니다. 그들은 자신들이 담당하는 구역이 가장 많은 수익을 창출하도록 무자비하게 경쟁합니다." # 6478902271736612155
+  mod_job_ald_corpmanager_add: "$job_ald_corpmanager$ 직업" # 11801533078857382692
+  job_ald_memorialist: "정적의 서기" # 2413614082341454319
+  job_ald_memorialist_plural: "정적의 서기들" # 13421038830198283081
+  job_ald_memorialist_desc: "은하계의 생존과 그 부재에 헌신하는 거대한 개인들의 집단입니다. 그들은 자신들의 공간을 활용하여 고대 도시와 랜드마크를 재현함으로써 연구 대상을 더 깊이 이해합니다." # 8810016856847838354
+  mod_job_ald_memorialist_add: "$job_ald_memorialist$ 직업" # 858798571706080137
+  job_ald_merchant: "무역 남작" # 2700217434824251872
+  job_ald_merchant_plural: "무역 남작들" # 9788440531407735392
+  job_ald_merchant_desc: "점심시간 전까지 행성 전체의 보급품을 모두 판매할 수 있는 놀라운 수완을 가진 판매원들입니다. 그들은 대부분의 토지와 그 소유권 이전을 통제합니다." # 1684118614294985724
+  mod_job_ald_merchant_add: "$job_ald_merchant$ 직업" # 13861018019266526799
+  building_automation_1_giga: "기가 자동화 건물" # 7611648788086723975
+  building_automation_1_giga_desc: "도시 크기의 벽면 명판에 '자동화됨'이라고 적혀 있습니다." # 13797796469598283734
+  mod_building_automation_1_giga_max: "최대 기가 자동화 건물" # 18383016619594774239
+  building_automation_2_giga: "기가 최적화 건물" # 15945878411623170991
+  building_automation_2_giga_desc: "정말로 최적화하는가?" # 7584390277526690529
+  mod_building_automation_2_giga_max: "최대 기가 최적화 건물" # 13711932210498071024
+  building_automation_1_giga_alderson_tooltip: "자동화 구역당 건물 유지비: §R£energy£+$@automation_district_upkeep_1_alderson$§!" # 8454703982908651618
+  building_automation_2_giga_alderson_tooltip: "자동화 구역당 건물 유지비: §R£energy£+$@automation_district_upkeep_2_alderson$§!" # 18377292349894686058
+  district_alderson_logistics: "물류 하이퍼세그먼트" # 18342811295276406087
+  district_alderson_logistics_desc: "알더슨 슬라이스의 프레임과 벽체 내부에 자리 잡은 이 물류 구역은 구조물의 관리 시스템 대부분을 수용하며, 내부 및 외부 작동을 감독하고 최적화합니다." # 6811425490609796584
+  district_alderson_logistics_plural: "물류 하이퍼세그먼트" # 9489491722722851262
+  district_alderson_gaia: "가이아 하이퍼세그먼트" # 5026813664307938630
+  district_alderson_gaia_desc: "태양계 전체 크기에 달하는 목가적인 자연의 경이로운 광활함으로, 가벼운 도시화나 산업 개발을 위한 준비가 되어 있습니다." # 12077431549881876991
+  district_alderson_gaia_plural: "가이아 하이퍼세그먼트" # 8731485011507025304
+  district_alderson_hive: "군집 하이퍼세그먼트" # 18345275536012437547
+  district_alderson_hive_desc: "태양계 전체 크기에 달하는 군집화된 지형의 경이로운 광활함으로, 가벼운 도시화나 산업 개발을 위한 준비가 되어 있습니다." # 14692660956364488874
+  district_alderson_hive_plural: "군집 하이퍼세그먼트" # 3845704596084183601
+  district_alderson_machine: "기계 하이퍼세그먼트" # 233070400485480339
+  district_alderson_machine_desc: "태양계 전체 크기에 달하는 기계화된 지형의 경이로운 광활함으로, 가벼운 도시화나 산업 개발을 위한 준비가 되어 있습니다." # 2039679772698996798
+  district_alderson_machine_plural: "기계 하이퍼세그먼트" # 1227840110361116186
+  district_alderson_ecu: "에큐메노폴리스 하이퍼세그먼트" # 5621229354906411167
+  district_alderson_ecu_desc: "태양계 전체를 능가하는 생산력을 발휘할 수 있는, 도시-산업 지대로 뒤덮인 천문학적 규모의 면적입니다." # 6332702614395479692
+  district_alderson_ecu_plural: "에큐메노폴리스 하이퍼세그먼트" # 720135407801393331
+  district_alderson_pcc: "컴퓨팅 하이퍼세그먼트" # 17364153369111043692
+  district_alderson_pcc_desc: "행성 규모의 컴퓨팅 단지와 유사하지만, 알더슨 슬라이스 전체에 걸쳐 확장된 거대한 컴퓨팅 복합체입니다. 측정할 수 없는 처리 능력을 갖추고 있으며 연구에 엄청난 버프를 제공합니다. 여전히 크라이시스는 실행할 수 없습니다." # 8865357390370119193
+  district_alderson_pcc_plural: "컴퓨팅 하이퍼세그먼트" # 7985721161375217346
+  zone_alderson_energy: "테라스케일 커패시터" # 13598979444772834375
+  zone_alderson_energy_desc: "물리학이 허용하는 범위 내에서 마지막 에너지 한 조각까지 쥐어짜 냅니다." # 12383106340618172017
+  zone_alderson_food: "알더슨 하이퍼팜" # 13323558448780408471
+  zone_alderson_food_desc: "각각 행성을 몇 번이고 집어삼킬 수 있는 거대한 밭이 일렁이는 태양 아래 평화롭게 자라납니다." # 15367766300992020919
+  zone_alderson_housing: "거주 넥서스" # 4522945371726331687
+  zone_alderson_housing_desc: "은하계의 모든 지성체를 수용할 수 있는 끝없이 넓은 주거지입니다. 이곳을 천 년 동안 걸어도 여전히 같은 거리에 머물러 있을 것입니다." # 12899387908413455032
+  zone_alderson_minerals: "벌크 물질 합성기" # 3284264296006026792
+  zone_alderson_minerals_desc: "질량-에너지 등가 원리를 아낌없이 적용하여 달 전체 분량의 물질을 실체화합니다." # 13152159180965390117
+  zone_alderson_alloys: "초중량 제련소" # 16725134414556066863
+  zone_alderson_alloys_desc: "전함 전체를 단 하나의 조각으로 주조할 수 있을 만큼 거대하고 웅장한 제련소입니다." # 10524365125660345178
+  zone_alderson_cg: "초중량 제작소" # 11922684158259065011
+  zone_alderson_cg_desc: "수십억 제곱킬로미터에 달하는 면적이 오직 소비재 생산만을 위해 할당되었습니다. 현대의 유행을 따라잡기에 거의 충분할 정도로 빠릅니다." # 5500510553098530092
+  zone_alderson_factory: "메가스프롤 제조소" # 9750775227818596251
+  zone_alderson_factory_desc: "지성체가 설계한 모든 고체 물체는 수백억 개의 우뚝 솟은 배기 굴뚝 사이 어딘가에서 찾을 수 있습니다. 어디에 있는지는 묻지 마십시오." # 1180699567114142134
+  zone_alderson_fortress: "태양 방벽" # 1432919507780804367
+  zone_alderson_fortress_desc: "행성 전체보다 더 많은 인구를 유지하는 군대를 수용하는 난공불락의 요새와 병영 네트워크입니다." # 5492976412051605717
+  zone_alderson_research_physics: "항성 입자 가속기" # 2362348614216431349
+  zone_alderson_research_physics_desc: "입자를 더욱 빠르게 가속할 수 있는 더 나은 방법을 끊임없이 연구합니다." # 3011360829211886967
+  zone_alderson_research_society: "사회적 슈퍼 시뮬레이터" # 6208055005361914488
+  zone_alderson_research_society_desc: "지성체가 자신의 세척 장치에서 수행하는 것보다 16조 배 더 빠르게 사회적, 생물학적 상호작용을 시뮬레이션합니다." # 14669968712177590432
+  zone_alderson_research_engineering: "기가엔지니어링 연구 노드" # 10104080268079839330
+  zone_alderson_research_engineering_desc: "더 거대한 것을 건설하는 방법을 알아내기 위해 거대한 것들을 활용합니다." # 11758377144242595775
+  zone_alderson_research: "태양 컴퓨팅 복합체" # 5225950319713801010
+  zone_alderson_research_desc: "크라이시스를 실행하려는 헛된 시도." # 15608707890723667571
+  zone_alderson_unity: "관료적 기가프로세서" # 11572750452700190370
+  zone_alderson_unity_desc: "디지털 서류 작업을 처리하기 위해서만 존재하는 끝없는 프로세서 열." # 471217140253263991
+  zone_alderson_unity_spiritualist: "성스러운 기가사원" # 705662594281140202
+  zone_alderson_unity_spiritualist_desc: "지평선까지 뻗어 있는 순례자와 숭배자들의 행렬, 그리고 그곳을 가득 채운 끝없는 숭배의 건물들." # 15879802194641809310
+  zone_alderson_unity_servitor: "유기체 기가안식처" # 7972131420964334034
+  zone_alderson_unity_servitor_desc: "완벽한 환경 속에서 필요한 모든 사치를 누리는 지성 유기체들로 가득 찬 끝없는 마천루 열." # 10282630891910881299
+  zone_alderson_trade: "생태물류 예측기" # 16593199805750336375
+  zone_alderson_trade_desc: "우리 제국 전체의 물류 및 경제 예측을 처리하느라 과부하가 걸린 프로세서들." # 7663888530269292838
+  zone_alderson_housing_optimization: "주거 최적화" # 17281964765564154582
+  zone_alderson_housing_optimization_desc: "이토록 거대한 구조물에서 주거지가 할당되는 방식의 불가피한 비효율성을 시민 한 명 한 명을 위해 해결합니다." # 5493733408050723115
+  zone_alderson_infrastructure_optimization: "인프라 최적화" # 17244838281406312146
+  zone_alderson_infrastructure_optimization_desc: "테라미터 너머로 테라톤을 이동시키는 데 테라초가 걸리지 않도록 하는 방법을 고안합니다." # 17672183595439286682
+  zone_alderson_pop_growth: "인구 최적화" # 11123128788788122165
+  zone_alderson_pop_growth_desc: "행동, 사회적, 생물학적 패턴을 감독하고 최적화합니다." # 16634117030145745501
+  pc_alderson_slice_gaia_shattered: "파괴된 하이퍼 세그먼트" # 5590778652227348126
+  pc_alderson_slice_gaia_shattered_desc: "$name_alderson$의 기능이 마비된 거대한 세그먼트." # 7604312663535038572
+  pc_alderson_slice_gaia_shattered_adj: "general-talk에 게시" # 9885948470343980355
+  d_alderson_ruined_transport: "수리 불가능한 하이퍼반" # 8438569634416213169
+  d_alderson_ruined_transport_desc: "알더슨을 정리하는 것은 거대한 규모의 작업이지만, 어딘가에서는 시작해야 합니다." # 10173335457722154689
+  d_alderson_ruined_housing: "붕괴된 메가시티" # 4818155755603733949
+  d_alderson_ruined_housing_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_spaceport: "부패한 우주항" # 12150832490897893364
+  d_alderson_ruined_spaceport_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_shield: "기능이 정지된 방어막 배열" # 10126649640374123016
+  d_alderson_ruined_shield_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_clerk: "무너져가는 보급창" # 16814007051723099402
+  d_alderson_ruined_clerk_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_foundry: "부식된 주조소" # 13165452212280429368
+  d_alderson_ruined_foundry_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_artisan: "오작동하는 제조 공장" # 7443912798530922342
+  d_alderson_ruined_artisan_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_merchant: "약탈당한 창고" # 8852760314180593745
+  d_alderson_ruined_merchant_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_police: "노후한 보안 초소" # 12912520370869563965
+  d_alderson_ruined_police_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_technician: "노출된 동력 핵" # 13653980673345570317
+  d_alderson_ruined_technician_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_miner: "용융 물질 합성기" # 16864709830838428845
+  d_alderson_ruined_miner_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_farmer: "오염된 토양" # 17489007359112395287
+  d_alderson_ruined_farmer_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_logistics: "부패한 화물" # 12741431631581176538
+  d_alderson_ruined_logistics_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068

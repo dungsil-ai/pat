@@ -289,6 +289,7 @@
   d_maginot_construction_blocker_desc: "이 진지를 요새화하고 있습니다." # 5157694017939619049
   col_mw_maginot: "$name_maginot_world$" # 16775828653963692130
   col_mw_maginot_desc: "이 행성 요새는 궁극의 방어 구조물로, 외세 침공을 거의 불가능하게 만듭니다." # 18031272046204815917
+  col_mw_maginot_tt: "$col_mw_maginot_desc$" # 3121981940363645273
   strategic_defence_command_platform: "마지노 전략 방어 사령부 플랫폼" # 12939320202693141944
   strategic_defence_command_platform_plural: "마지노 전략 방어 사령부 플랫폼" # 12939320202693141944
   strategic_defence_command_platform_cap: "$strategic_defence_command_platform$" # 9642089590534310369

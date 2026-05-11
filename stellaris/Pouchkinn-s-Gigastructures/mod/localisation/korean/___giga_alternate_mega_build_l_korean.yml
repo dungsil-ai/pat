@@ -176,8 +176,10 @@
   d_giga_lifeless_supertensiles_1_desc: "이 행성에는 채취 가능한 초인장 재료 원천이 있습니다." # 90282677506191932
   col_giga_supertensiles_foundry: "메가 물류 센터" # 1694486683878003162
   col_giga_supertensiles_foundry_desc: "이 행성은 심우주 건설 프로젝트에 집중하는 제조 및 물류 중심지입니다." # 11606720091370200460
+  col_giga_supertensiles_foundry_tt: "$col_giga_supertensiles_foundry_desc$" # 9057942224389026493
   col_giga_habitat_supertensiles_foundry: "메가 물류 기지" # 9002396866712964217
   col_giga_habitat_supertensiles_foundry_desc: "거대 구조물 제작에 전념하는 인공 심우주 아콜로지" # 17583970605524781901
+  col_giga_habitat_supertensiles_foundry_tt: "$col_giga_habitat_supertensiles_foundry_desc$" # 4717370809014690422
   edict_giga_amb_sentient_metal_supertensiles: "생체 금속 지원 분자 주조 공장" # 17906998781836221082
   edict_giga_amb_sentient_metal_supertensiles_desc: "지각 있는 금속의 적응 특성은 초인장 재료 제조에 여러 가지 잠재적인 응용 분야를 가지고 있습니다.\n\n£job_giga_megaengineer£ §Y$job_giga_megaengineer_plural$§!의 기본 산출량과 유지 비용을 §Y50%§! 향상시킵니다.\n\n£job_giga_megaengineering_overseer£ §Y$job_giga_megaengineering_overseer_plural$§!의 기본 산출량과 유지 비용을 §Y20%§! 향상시킵니다.\n\n두 직책 모두의 §Y$alloys$ £alloys£ 유지 비용§! 중 절반을 £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§!로 대체합니다." # 13636444002362924239
   giga_amb.1000.name: "§Y[FromFrom.GetName]§!: 전략 자원 발견됨" # 3949312322395708890

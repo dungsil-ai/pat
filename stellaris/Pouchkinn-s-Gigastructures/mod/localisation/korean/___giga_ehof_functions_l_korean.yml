@@ -51,11 +51,6 @@
   katown_partisans_1: "디버그" # 143360522173664303
   katown_partisans_2: "디버그" # 143360522173664303
   katown_partisans_3: "디버그" # 143360522173664303
-  ezic_resistance_1: "디버그" # 143360522173664303
-  ezic_resistance_2: "디버그" # 143360522173664303
-  ezic_resistance_3: "디버그" # 143360522173664303
-  ezic_resistance_4: "디버그" # 143360522173664303
-  ezic_resistance_5: "디버그" # 143360522173664303
   hke_centra_1: "디버그" # 143360522173664303
   hke_centra_2: "디버그" # 143360522173664303
   hke_centra_3: "디버그" # 143360522173664303
@@ -113,20 +108,24 @@
   ehof_system_traders: "$ehof_quest_prefix$[urmazin_capital.GetName]$ehof_quest_suffix$" # 11004103705700115215
   ehof_system_unknown: "$ehof_quest_prefix$04121987+ 미확인$ehof_quest_suffix$" # 1102878230926472657
   ehof_system_helios: "$ehof_rare_prefix$헬리오스$ehof_rare_suffix$" # 12864399375344018011
-  d_negative_mass_deposit_1: "£giga_sr_negative_mass£ +1" # 14144888466355147880
-  d_negative_mass_deposit_2: "£giga_sr_negative_mass£ +2" # 2839949038771915041
-  d_negative_mass_deposit_3: "£giga_sr_negative_mass£ +3" # 9797152757225853221
-  d_negative_mass_deposit_4: "£giga_sr_negative_mass£ +4" # 14837893830486366865
-  d_negative_mass_deposit_5: "£giga_sr_negative_mass£ +5" # 3893195736476307381
-  d_negative_mass_deposit: "$d_negative_mass_deposit_5$" # 12702038616991136677
-  d_sentient_metal_deposit_1: "£giga_sr_sentient_metal£ +1" # 16056720132687660503
-  d_sentient_metal_deposit_2: "£giga_sr_sentient_metal£ +2" # 14553908560274841237
-  d_sentient_metal_deposit_3: "£giga_sr_sentient_metal£ +3" # 11598412941116939325
-  d_sentient_metal_deposit_4: "£giga_sr_sentient_metal£ +4" # 16814500388063275995
-  d_sentient_metal_deposit_5: "£giga_sr_sentient_metal£ +5" # 6637389863867413650
-  d_dark_matter_deposit_4: "£sr_dark_matter£ +4" # 17541933740114393164
-  d_dark_matter_deposit_5: "£sr_dark_matter£ +5" # 3913404114640523896
-  d_living_metal_deposit_2: "생체 금속 +2" # 2460720252790474324
+  d_negative_mass_deposit: "£giga_sr_negative_mass£ §Y+2§!" # 14010077759515983917
+  d_negative_mass_deposit_desc: "$d_negative_mass_deposit$" # 6570743017048181672
+  d_sentient_metal_deposit_1: "£giga_sr_sentient_metal£ §Y+1§!" # 9182260911288849046
+  d_sentient_metal_deposit_1_desc: "$d_sentient_metal_deposit_1$" # 5742192575458403735
+  d_sentient_metal_deposit_2: "£giga_sr_sentient_metal£ §Y+2§!" # 5143350279436087781
+  d_sentient_metal_deposit_2_desc: "$d_sentient_metal_deposit_2$" # 416638858596062978
+  d_sentient_metal_deposit_3: "£giga_sr_sentient_metal£ §Y+3§!" # 10159231893606539989
+  d_sentient_metal_deposit_3_desc: "$d_sentient_metal_deposit_3$" # 1553274068968312015
+  d_sentient_metal_deposit_4: "£giga_sr_sentient_metal£ §Y+4§!" # 1326541859163095863
+  d_sentient_metal_deposit_4_desc: "$d_sentient_metal_deposit_4$" # 1459659889221444990
+  d_sentient_metal_deposit_5: "£giga_sr_sentient_metal£ §Y+5§!" # 9578335789810116030
+  d_sentient_metal_deposit_5_desc: "$d_sentient_metal_deposit_5$" # 9526360969006641300
+  d_dark_matter_deposit_4: "£sr_dark_matter£ §Y+4§!" # 2041562478055643243
+  d_dark_matter_deposit_4_desc: "$d_dark_matter_deposit_4$" # 10581720634967255340
+  d_dark_matter_deposit_5: "£sr_dark_matter£ §Y+5§!" # 16514618451482775695
+  d_dark_matter_deposit_5_desc: "$d_dark_matter_deposit_5$" # 9634498070953863103
+  d_living_metal_deposit_2: "$r_living_metal$ §Y+2§!" # 11085661137504371545
+  d_living_metal_deposit_2_desc: "$d_living_metal_deposit_desc$" # 9729385721370872179
   etl_001: "[etl_001.GetName]" # 16248255581724410299
   etl_002: "[etl_002.GetName]" # 3668315032009775591
   etl_003: "[etl_003.GetName]" # 7281559112760363212

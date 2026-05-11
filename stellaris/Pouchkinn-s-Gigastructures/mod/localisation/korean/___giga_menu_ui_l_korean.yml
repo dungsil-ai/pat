@@ -7,7 +7,7 @@
   giga_traders_scared: "$TRIGGER_FAIL$§R콤파운드§!가 계속해서 은하를 위협하는 동안에는 §Y위르마진§!에게 연락할 수 없습니다." # 2477012978726892309
   giga_katzens_defeated: "$TRIGGER_FAIL$§Y카첸아르티그 제국§!이 격퇴되었으므로, 저항군에게 접촉하는 것은 거의 쓸모가 없습니다." # 11689894209336191214
   giga_katzens_vassal_solak: "$TRIGGER_FAIL$우리는 §YKatzprotektorat§!로서, 우리의 카첸 지배자들이 우리에게 너무 많은 힘을 행사하고 있기 때문에, §Y로퀄리안 자유 투사들§!과 접촉하는 것은 불가능하며, 안전한 일은 더더욱 아닙니다." # 7184765124198488049
-  giga_katzens_vassal_ezic: "$TRIGGER_FAIL$§YKatzprotektorat§!로서, 우리 카첸 초월자들의 권력이 너무 막강하여 §YZuspri order§!와 접촉하는 것이 가능하기는커녕 안전한 일조차 될 수 없습니다." # 6053158822267340376
+  giga_katzens_vassal_ezic: "$TRIGGER_FAIL$§YKatzprotektorat§!로서 우리의 카첸 군주들은 우리가 §YZuspri Order§!와 접촉하는 것을 허용하지 않을 만큼 막강한 권력을 쥐고 있으며, 안전한 접촉은커녕 시도조차 불가능합니다." # 6161398487693856210
   giga_solak_open: "$TRIGGER_FAIL$§Y로퀄리안 자유 투사§! 메뉴가 이미 열려 있습니다" # 11732888613697880885
   giga_katzens_ezic_rebellion: "$TRIGGER_FAIL$§YZuspri Vanguard§!는 현재 진행 중인 반란 때문에 정신이 없어 통신에 응답할 수 없습니다." # 2151678920064346878
   giga_megaview_manage: "§H거대 구조물 관리§!" # 14491273764803187097

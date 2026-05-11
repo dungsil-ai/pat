@@ -1077,7 +1077,7 @@
   district_giga_birch_void_structure: "알파 구조체 작전" # 16810537315641263331
   district_giga_birch_void_structure_desc: "우리 제국의 가장 위대한 지도자들이 이 경이로운 구조물의 정점에서 모여 모든 작전을 감독합니다." # 13502725710607794287
   district_giga_birch_void_structure_plural: "$district_giga_birch_void_structure$" # 3907154761904490936
-  mod_district_giga_birch_void_structure_max: "최대 $district_giga_birch_void_structure_plural$" # 3060645781090050644
+  mod_district_giga_birch_void_structure_max_add: "최대 $district_giga_birch_void_structure_plural$" # 3060645781090050644
   district_giga_birch_void_orykta: "알파 추출 작전" # 16481995787248992035
   district_giga_birch_void_orykta_desc: "우리는 이 거대한 블랙홀을 활용하고 탐사할 것이다. 우리는 우주의 지배자로 즉위했기 때문이다. 사건의 지평선과 다른 원시적인 개념들은 더 이상 우리에게 문제가 되지 않는다." # 10917120718560163700
   district_giga_birch_void_orykta_plural: "$district_giga_birch_void_orykta$" # 1100604531068167786
