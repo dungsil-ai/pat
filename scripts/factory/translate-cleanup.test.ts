@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mkdir, writeFile, rm, access } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import { join } from 'pathe'
+import { hashing } from '../utils/hashing'
 import { tmpdir } from 'node:os'
 
 // 의존성 모킹
@@ -403,6 +404,56 @@ language = "english"
       mockExecAsync.mock.calls.some(([cmd]) =>
         typeof cmd === 'string' &&
         cmd.includes('git checkout HEAD --') &&
+        cmd.includes('___BPM_crisis_l_korean.yml')
+      )
+    ).toBe(false)
+  })
+
+  it('기대 파일 대소문자가 별도 엔트리로 없으면 git mv로 파일명 대소문자를 교정해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+
+    const modDir = join(testDir, 'test-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const koreanDir = join(modDir, 'mod', 'localization', 'korean')
+    const sourceContent = `l_english:
+ key1:0 "Value 1"
+`
+
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+    await mkdir(upstreamDir, { recursive: true })
+    await mkdir(koreanDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'bpm_crisis_l_english.yml'), sourceContent, 'utf-8')
+    await writeFile(join(upstreamDir, '.pat-file-hashes.json'), JSON.stringify({
+      'bpm_crisis_l_english.yml': hashing(sourceContent)
+    }), 'utf-8')
+    await writeFile(join(koreanDir, '___BPM_crisis_l_korean.yml'), `l_korean:
+ key1: "기존 값" # old-hash
+`, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git mv -f --') &&
+        cmd.includes('___BPM_crisis_l_korean.yml') &&
+        cmd.includes('___bpm_crisis_l_korean.yml')
+      )
+    ).toBe(true)
+    expect(
+      mockExecAsync.mock.calls.some(([cmd]) =>
+        typeof cmd === 'string' &&
+        cmd.includes('git rm --ignore-unmatch -f --') &&
         cmd.includes('___BPM_crisis_l_korean.yml')
       )
     ).toBe(false)

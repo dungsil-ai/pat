@@ -230,6 +230,32 @@ function normalizePathForComparison(path: string): string {
   return path.replace(/\\/g, '/')
 }
 
+function findCaseInsensitiveExpectedPath(normalizedFullPath: string, expectedKoreanFiles: string[]): string | null {
+  const normalizedFullPathLower = normalizedFullPath.toLowerCase()
+
+  for (const expectedFile of expectedKoreanFiles) {
+    const normalizedExpectedPath = normalizePathForComparison(expectedFile)
+    if (normalizedExpectedPath.toLowerCase() === normalizedFullPathLower) {
+      return expectedFile
+    }
+  }
+
+  return null
+}
+
+function buildCaseRenameTempPath(filePath: string): string {
+  return `${filePath}.pat-case-rename-${process.pid}-${Date.now()}.tmp`
+}
+
+async function renameFileCasingWithGit(fullPath: string, expectedPath: string, projectRoot: string): Promise<void> {
+  const tempPath = buildCaseRenameTempPath(fullPath)
+  await mkdir(dirname(expectedPath), { recursive: true })
+  await execGitCommand(
+    `git mv -f -- ${escapeShellArg(fullPath)} ${escapeShellArg(tempPath)} && git mv -f -- ${escapeShellArg(tempPath)} ${escapeShellArg(expectedPath)}`,
+    projectRoot
+  )
+}
+
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
   const workItems: ModWorkItem[] = []
 
@@ -585,6 +611,10 @@ async function cleanupOrphanedFiles(
     .map(path => normalizePathForComparison(path))
     .map(path => path.endsWith('/') ? path : `${path}/`)
 
+  const actualKoreanFileSet = new Set(
+    koreanFiles.map(file => normalizePathForComparison(join(targetDir, file)))
+  )
+
   // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
@@ -596,13 +626,28 @@ async function cleanupOrphanedFiles(
     
     if (!expectedSet.has(normalizedFullPath)) {
       if (expectedCaseInsensitiveSet.has(normalizedFullPath.toLowerCase())) {
-        log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 이전 파일 제거: ${file}`)
+        const expectedPath = findCaseInsensitiveExpectedPath(normalizedFullPath, expectedKoreanFiles)
+
+        if (!expectedPath) {
+          log.warn(`[${mod}/${locPath}] 대소문자 변경 대상 파일을 찾지 못해 정리를 건너뜁니다: ${file}`)
+          continue
+        }
+
+        const normalizedExpectedPath = normalizePathForComparison(expectedPath)
+        const hasSeparateExpectedFile = actualKoreanFileSet.has(normalizedExpectedPath)
+        const actionDescription = hasSeparateExpectedFile ? '이전 파일 제거' : '파일명 대소문자 교정'
+        log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 ${actionDescription}: ${file}`)
         try {
-          await execGitCommand(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, projectRoot)
-          log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
+          if (hasSeparateExpectedFile) {
+            await execGitCommand(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, projectRoot)
+            log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
+          } else {
+            await renameFileCasingWithGit(fullPath, expectedPath, projectRoot)
+            log.debug(`[${mod}/${locPath}] 파일명 대소문자 교정 완료: ${fullPath} -> ${expectedPath}`)
+          }
         } catch (error) {
           const errMsg = (error && typeof error === 'object' && 'message' in error) ? (error as Error).message : String(error)
-          log.warn(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 중 오류 발생: ${file} - ${errMsg}`)
+          log.warn(`[${mod}/${locPath}] 대소문자 변경 파일 정리 중 오류 발생: ${file} - ${errMsg}`)
         }
         continue
       }
