@@ -990,9 +990,9 @@
   giga_menu_presets_13: "기여자: §LDarkyPwnz§!" # 17792955432158230532
   giga_menu_presets_14: "기여자: §LMegumin§!" # 1116138790932516241
   giga_menu_presets_patreon_33: "기여자: §LLucy§!" # 7136395258854628381
-  giga_menu_presets_18: "기여자: §L템페스트§!" # 12926728173436328911
-  giga_menu_presets_19: "기여자: §LXahkarias§!" # 6636838644871042195
-  giga_menu_presets_20: "기여자: §LCaramel§!" # 6435696099317398163
+  giga_menu_presets_18: "개발자: §ETempest§!" # 1249619894859345980
+  giga_menu_presets_19: "개발자: §EXahkarias§!" # 11163191602174585978
+  giga_menu_presets_20: "개발자: §ECaramel§!" # 10871047848234013552
   giga_menu_presets_patreon_01: "패트리온: §MASpec§!" # 16139185641204029544
   giga_menu_presets_patreon_02: "패트리온: §MArnieKuma§!" # 10075240973785121808
   giga_menu_presets_patreon_03: "패트리온: §MGray Ashura§!" # 17700348671621487667
@@ -1038,6 +1038,7 @@
   giga_menu_presets_patreon_45: "후원자: §MBlue Lobster§!" # 4491881971796024187
   giga_menu_presets_patreon_46: "후원자: §Mabbreviatedcheese§!" # 15129235001858940938
   giga_menu_presets_patreon_47: "Patreon: §Mbundil§!" # 13350334573986471161
+  giga_menu_presets_patreon_48: "후원자: §Mnotfox§!" # 10939672329889296126
   giga_menu_presets_other_01: "대회 우승자: §HThe_Strateg1st§!" # 9546388759945176561
   personality_pangalactic_defense_league: "은하 수호자들" # 17520601703295951319
   personality_pangalactic_defense_league_desc: "이 제국은 지적 생명체에 대한 위협으로부터 은하계를 수호하고자 합니다." # 1401238670343349164
