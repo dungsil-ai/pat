@@ -12,6 +12,17 @@ import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey
 import { buildKoreanTargetFileName } from '../utils/localization-file-name'
 
 const execAsync = promisify(exec)
+let gitCommandQueue: Promise<void> = Promise.resolve()
+
+async function execGitCommand(command: string, cwd: string): Promise<void> {
+  const run = gitCommandQueue.then(async () => {
+    await execAsync(command, { cwd })
+  })
+
+  // 다음 git 명령이 이전 실패에 막히지 않게 큐는 항상 이어지도록 둔다.
+  gitCommandQueue = run.catch(() => undefined)
+  await run
+}
 
 // 번역 거부 항목 출력 파일 이름 접미사
 const UNTRANSLATED_ITEMS_FILE_SUFFIX = 'untranslated-items.json'
@@ -198,6 +209,13 @@ interface ModWorkItem {
   etcSubMod?: string
 }
 
+interface LocPathCleanupTask {
+  targetDir: string
+  expectedKoreanFiles: Set<string>
+  mod: string
+  locPaths: string[]
+}
+
 function resolveLogModName(modName: string, filePath: string): string {
   if (modName.toLowerCase() !== 'etc') {
     return modName
@@ -210,6 +228,32 @@ function resolveLogModName(modName: string, filePath: string): string {
 
 function normalizePathForComparison(path: string): string {
   return path.replace(/\\/g, '/')
+}
+
+function findCaseInsensitiveExpectedPath(normalizedFullPath: string, expectedKoreanFiles: string[]): string | null {
+  const normalizedFullPathLower = normalizedFullPath.toLowerCase()
+
+  for (const expectedFile of expectedKoreanFiles) {
+    const normalizedExpectedPath = normalizePathForComparison(expectedFile)
+    if (normalizedExpectedPath.toLowerCase() === normalizedFullPathLower) {
+      return expectedFile
+    }
+  }
+
+  return null
+}
+
+function buildCaseRenameTempPath(filePath: string): string {
+  return `${filePath}.pat-case-rename-${process.pid}-${Date.now()}.tmp`
+}
+
+async function renameFileCasingWithGit(fullPath: string, expectedPath: string, projectRoot: string): Promise<void> {
+  const tempPath = buildCaseRenameTempPath(fullPath)
+  await mkdir(dirname(expectedPath), { recursive: true })
+  await execGitCommand(
+    `git mv -f -- ${escapeShellArg(fullPath)} ${escapeShellArg(tempPath)} && git mv -f -- ${escapeShellArg(tempPath)} ${escapeShellArg(expectedPath)}`,
+    projectRoot
+  )
 }
 
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
@@ -267,7 +311,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
 
   const modTasks = modWorkItems.map(({ mod, etcSubMod }) => async (): Promise<ModProcessResult> => {
     const processes: Promise<UntranslatedItem[]>[] = []
-    const locPathCleanupTasks: Array<{ targetDir: string; expectedKoreanFiles: string[]; mod: string; locPath: string }> = []
+    const locPathCleanupTasks = new Map<string, LocPathCleanupTask>()
     const workLabel = etcSubMod ? `${mod}/${etcSubMod}` : mod
     log.start(`[${workLabel}] 작업 시작 (원본 파일 경로: ${rootDir}/${mod})`)
     const modDir = join(rootDir, mod)
@@ -372,9 +416,24 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
         }
       }
       
-      // 각 로케일 경로별 예상 파일 목록 저장
+      // 같은 대상 디렉토리를 공유하는 로케일 경로는 예상 파일 목록을 합산한다.
       if (!etcSubMod) {
-        locPathCleanupTasks.push({ targetDir, expectedKoreanFiles, mod, locPath })
+        const cleanupKey = normalizePathForComparison(targetDir)
+        const cleanupTask = locPathCleanupTasks.get(cleanupKey)
+
+        if (cleanupTask) {
+          for (const expectedFile of expectedKoreanFiles) {
+            cleanupTask.expectedKoreanFiles.add(expectedFile)
+          }
+          cleanupTask.locPaths.push(locPath)
+        } else {
+          locPathCleanupTasks.set(cleanupKey, {
+            targetDir,
+            expectedKoreanFiles: new Set(expectedKoreanFiles),
+            mod,
+            locPaths: [locPath]
+          })
+        }
       }
     }
 
@@ -383,13 +442,17 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
     const results = await Promise.allSettled(processes)
     
     // 모든 파일 처리 완료 후 orphaned 파일 정리
-    for (const task of locPathCleanupTasks) {
-      const nestedCleanupDirs = locPathCleanupTasks
+    const cleanupTasks = Array.from(locPathCleanupTasks.values())
+    for (const task of cleanupTasks) {
+      const normalizedTaskTargetDir = normalizePathForComparison(task.targetDir)
+      const nestedCleanupDirs = cleanupTasks
         .map(({ targetDir }) => targetDir)
-        .filter(targetDir => normalizePathForComparison(targetDir).startsWith(`${normalizePathForComparison(task.targetDir)}/`))
-        .filter(targetDir => targetDir !== task.targetDir)
+        .filter(targetDir => {
+          const normalizedTargetDir = normalizePathForComparison(targetDir)
+          return normalizedTargetDir !== normalizedTaskTargetDir && normalizedTargetDir.startsWith(`${normalizedTaskTargetDir}/`)
+        })
 
-      await cleanupOrphanedFiles(task.targetDir, task.expectedKoreanFiles, task.mod, task.locPath, projectRoot, nestedCleanupDirs)
+      await cleanupOrphanedFiles(task.targetDir, Array.from(task.expectedKoreanFiles), task.mod, task.locPaths.join(','), projectRoot, nestedCleanupDirs)
     }
 
     for (const savedPath of Object.keys(nextFileHashes)) {
@@ -548,6 +611,10 @@ async function cleanupOrphanedFiles(
     .map(path => normalizePathForComparison(path))
     .map(path => path.endsWith('/') ? path : `${path}/`)
 
+  const actualKoreanFileSet = new Set(
+    koreanFiles.map(file => normalizePathForComparison(join(targetDir, file)))
+  )
+
   // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
@@ -559,13 +626,28 @@ async function cleanupOrphanedFiles(
     
     if (!expectedSet.has(normalizedFullPath)) {
       if (expectedCaseInsensitiveSet.has(normalizedFullPath.toLowerCase())) {
-        log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 이전 파일 제거: ${file}`)
+        const expectedPath = findCaseInsensitiveExpectedPath(normalizedFullPath, expectedKoreanFiles)
+
+        if (!expectedPath) {
+          log.warn(`[${mod}/${locPath}] 대소문자 변경 대상 파일을 찾지 못해 정리를 건너뜁니다: ${file}`)
+          continue
+        }
+
+        const normalizedExpectedPath = normalizePathForComparison(expectedPath)
+        const hasSeparateExpectedFile = actualKoreanFileSet.has(normalizedExpectedPath)
+        const actionDescription = hasSeparateExpectedFile ? '이전 파일 제거' : '파일명 대소문자 교정'
+        log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 ${actionDescription}: ${file}`)
         try {
-          await execAsync(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, { cwd: projectRoot })
-          log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
+          if (hasSeparateExpectedFile) {
+            await execGitCommand(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, projectRoot)
+            log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
+          } else {
+            await renameFileCasingWithGit(fullPath, expectedPath, projectRoot)
+            log.debug(`[${mod}/${locPath}] 파일명 대소문자 교정 완료: ${fullPath} -> ${expectedPath}`)
+          }
         } catch (error) {
           const errMsg = (error && typeof error === 'object' && 'message' in error) ? (error as Error).message : String(error)
-          log.warn(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 중 오류 발생: ${file} - ${errMsg}`)
+          log.warn(`[${mod}/${locPath}] 대소문자 변경 파일 정리 중 오류 발생: ${file} - ${errMsg}`)
         }
         continue
       }
@@ -573,7 +655,7 @@ async function cleanupOrphanedFiles(
       log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
       try {
         // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백
-        await execAsync(`git checkout HEAD -- ${escapeShellArg(fullPath)}`, { cwd: projectRoot })
+        await execGitCommand(`git checkout HEAD -- ${escapeShellArg(fullPath)}`, projectRoot)
         log.debug(`[${mod}/${locPath}] 파일 롤백 완료: ${fullPath}`)
       } catch (error) {
         // git에 해당 파일이 없는 경우와 기타 에러를 구분하여 처리
@@ -843,7 +925,7 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
     // 기존 파일이 있다면 git checkout으로 변경사항 롤백 (업스트림에서 내용이 모두 삭제된 경우)
     try {
       await access(targetPath)
-      await execAsync(`git checkout HEAD -- ${escapeShellArg(targetPath)}`, { cwd: projectRoot })
+      await execGitCommand(`git checkout HEAD -- ${escapeShellArg(targetPath)}`, projectRoot)
       log.info(`[${mode}/${file}] 빈 파일 변경사항 롤백: ${targetPath}`)
     } catch (error) {
       // 파일이 없거나 git에 없으면 무시, 그 외는 경고
