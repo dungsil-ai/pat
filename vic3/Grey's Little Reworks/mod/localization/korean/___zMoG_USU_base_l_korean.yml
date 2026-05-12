@@ -1,28 +1,40 @@
 ﻿l_korean:
   mog_urbanization: "도시 시너지 도시주의" # 880564712571936285
+  mog_urbanization_start: "$mog_urbanization$" # 11556186895714735887
   mog_urbanization_mult: "도시 시너지 도시주의" # 880564712571936285
   mog_construction_max_level_adjustment: "도시 시너지 건설" # 13394416346466036272
   mog_logistics_land_trade: "수입된 물류 서비스로부터의 육상 무역 수용력" # 11285839192358909526
   mog_mapi: "도시 시너지 MAPI" # 5887179299247092014
   mog_subfarm_modifiers_occupancy_scaled: "도시 시너지 기반 자급자족이 기반 시설에 미치는 영향" # 3509829082906133831
-  USU_bg_port_infrastructure: "항구들" # 903628802830546578
-  USU_bg_river_port_infrastructure: "항구들" # 903628802830546578
-  USU_bg_public_greens: "공공 녹지" # 914602411673393494
+  usu_bg_port_infrastructure: "항구" # 903628802830546578
+  usu_bg_river_port_infrastructure: "항구" # 903628802830546578
+  usu_bg_public_greens: "공공 녹지" # 914602411673393494
   building_river_port: "강 항구" # 1897252420354551649
   usu_building_public_green: "공공 녹지" # 4902506650784473523
+  bg_usu_railway_line: "철도" # 16013470052125388391
+  building_usu_railway_line: "철도" # 16274738701182925479
   usu_logistics: "물류 서비스" # 1845133651397782828
   trade_route_import_lens_option_usu_logistics_tooltip: "$usu_logistics$ 수입 무역로를 개설하십시오" # 18240155719316057424
   trade_route_export_lens_option_usu_logistics_tooltip: "$usu_logistics$ 수출 교역로를 개설하십시오" # 12632097472386576642
+  usu_train_paths: "열차 경로" # 11928102311694041976
   state_building_river_port_max_level_add: "강항구 최대치" # 10053316366262487899
   state_building_river_port_max_level_add_desc: "항구 건물 최대 레벨에 대한 보너스 또는 페널티." # 1960042369623663012
   goods_input_usu_logistics_add: "@usu_logistics! [Nbsp]$usu_logistics$ 투입" # 17463437055682629797
   goods_output_usu_logistics_add: "@usu_logistics! [Nbsp]$usu_logistics$ 산출량" # 13313421244133841727
-  goods_input_usu_logistics_mult: "건설 중인 @usu_logistics! [Nbsp]$usu_logistics$ 투입품" # 15894420004219703702
-  goods_output_usu_logistics_mult: "@usu_logistics! [Nbsp]$usu_logistics$ 생산량" # 8791211189911400482
+  goods_input_usu_logistics_mult: "@usu_logistics! [Nbsp]$usu_logistics$ 투입" # 17463437055682629797
+  goods_output_usu_logistics_mult: "@usu_logistics! [Nbsp]$usu_logistics$ 산출" # 13313421244133841727
   goods_input_usu_logistics_add_desc: "건물들이 소모하는 @usu_logistics! [Nbsp]$usu_logistics$의 양" # 2092362594157979383
   goods_output_usu_logistics_add_desc: "건물에서 생산되는 @usu_logistics! [Nbsp]$usu_logistics$의 양" # 17491253557484012097
   goods_input_usu_logistics_mult_desc: "건물에서 소모하는 @usu_logistics! [Nbsp]$usu_logistics$ 양에 대한 보너스 또는 페널티" # 13846183877636226852
   goods_output_usu_logistics_mult_desc: "건물에서 생산하는 @usu_logistics! [Nbsp]$usu_logistics$ 양에 대한 보너스 또는 페널티" # 3245717364417471422
+  goods_input_usu_train_paths_add: "@usu_train_paths! [Nbsp]$usu_train_paths$ 투입" # 18023581629678955924
+  goods_output_usu_train_paths_add: "@usu_train_paths! [Nbsp]$usu_train_paths$ 산출" # 1078054949516388668
+  goods_input_usu_train_paths_mult: "@usu_train_paths! [Nbsp]$usu_train_paths$ 투입" # 18023581629678955924
+  goods_output_usu_train_paths_mult: "@usu_train_paths! [Nbsp]$usu_train_paths$ 산출" # 1078054949516388668
+  goods_input_usu_train_paths_add_desc: "건물이 소비하는 @usu_train_paths! [Nbsp]$usu_train_paths$의 양" # 8284666639631865008
+  goods_output_usu_train_paths_add_desc: "건물이 생산하는 @usu_train_paths! [Nbsp]$usu_train_paths$의 양" # 469855290235795515
+  goods_input_usu_train_paths_mult_desc: "건물이 소비하는 @usu_train_paths! [Nbsp]$usu_train_paths$의 양에 대한 보너스 또는 페널티" # 7990039332499278870
+  goods_output_usu_train_paths_mult_desc: "건물이 생산하는 @usu_train_paths! [Nbsp]$usu_train_paths$의 양에 대한 보너스 또는 페널티" # 4913756418296706250
   usu_building_public_green_throughput_add: "$usu_building_public_green$ 건물 [concept_throughput]" # 5679236612025121230
   usu_building_public_green_throughput_add_desc: "$usu_building_public_green$의 투입 및 산출에 대한 보너스 또는 페널티" # 1184040287294578830
   ppp_building_power_grid_throughput_add: "$ppp_building_power_grid$ 건물 [concept_throughput]" # 12148249420204176856
@@ -31,12 +43,10 @@
   building_river_port_throughput_add_desc: "$building_river_port$의 투입 및 산출에 대한 보너스 또는 페널티" # 159909628828160936
   usu_building_hydro_power_plant_throughput_add: "$usu_building_hydro_power_plant$ 건물 [concept_throughput]" # 12008150572053416502
   usu_building_hydro_power_plant_throughput_add_desc: "$usu_building_hydro_power_plant$의 투입 및 산출에 대한 보너스 또는 페널티" # 14080125329903378258
+  building_usu_railway_line_throughput_add: "$building_usu_railway_line$ 건물 [concept_throughput]" # 15491360422717663934
+  building_usu_railway_line_throughput_add_desc: "$building_usu_railway_line$의 투입 및 산출량에 대한 보너스 또는 페널티" # 13609027459782809135
   state_usu_building_public_green_max_level_add: "$usu_building_public_green$ 최대 단계" # 6331810108646425574
   state_usu_building_public_green_max_level_add_desc: "$usu_building_public_green$ 건물의 최대 레벨에 대한 보너스 또는 페널티." # 8137336294313193054
-  goods_input_luxury_clothes_add: "@luxury_clothes! [Nbsp]$luxury_clothes$ 투입" # 11828789859629137669
-  goods_input_luxury_clothes_add_desc: "건물들이 소비하는 @luxury_clothes! [Nbsp]$luxury_clothes$의 양" # 8069837810947184496
-  goods_input_services_add: "@services! [Nbsp]$services$ 투입" # 7523870387199858561
-  goods_input_services_add_desc: "건물들이 소비하는 @services! [Nbsp]$services$의 양" # 17020283761910367469
   goods_input_tools_mult: "@tools! 건설에는 @tools!의 투입물이 필요합니다" # 3462529394369931513
   goods_input_tools_mult_desc: "건물들이 소모하는 @tools! [Nbsp]$tools$의 양" # 466033741322162381
   goods_input_steel_mult: "@steel! 건설에 $steel$ 투입" # 14305719518461117553
@@ -45,8 +55,6 @@
   goods_input_transportation_mult_desc: "건물들이 소비하는 @transportation! [Nbsp]$transportation$ 양에 대한 보너스 또는 페널티" # 8937014074235952434
   goods_output_transportation_mult: "@transportation! 건설: $transportation$ 산출량" # 7165965206695672309
   goods_output_transportation_mult_desc: "건물에서 생산되는 @transportation! [Nbsp]$transportation$ 양에 대한 보너스 또는 페널티" # 1533231177127911643
-  goods_output_electricity_mult: "@electricity! 빌딩 @electricity! [Nbsp]$electricity$ 산출량" # 6905719502265443247
-  goods_output_electricity_mult_desc: "건물에서 생산되는 @electricity! [Nbsp]$electricity$ 양에 대한 보너스 또는 페널티" # 15832060707727824864
   goods_input_merchant_marine_mult: "선박 건조 @merchant_marine! [Nbsp]$merchant_marine$ 투입" # 13662891593995472291
   goods_input_merchant_marine_mult_desc: "건물에서 소모하는 @merchant_marine! [Nbsp]$merchant_marine$ 양에 대한 보너스 또는 페널티" # 645542001327787342
   goods_output_merchant_marine_mult: "상선대 건조 @merchant_marine! [Nbsp]$merchant_marine$ 생산량" # 4112110414925457016
@@ -56,31 +64,31 @@
   goods_output_services_mult: "@services!@ 서비스 산출량 $services$" # 13413282491368039039
   goods_output_services_mult_desc: "건물에서 생산되는 @services! [Nbsp]$services$ 양에 대한 보너스 또는 페널티" # 4178315285366834487
   pmg_base_building_river_port: "선창" # 13800680308925356582
-  USU_pmg_government_administration_emergency_services: "비상 서비스" # 16081020038430620533
-  USU_pmg_government_administration_law_enforcement: "법 집행" # 8572143644833065225
-  USU_pmg_public_space_management: "공공 공간 관리" # 3363966938605448850
-  USU_pmg_public_parklands: "공원 용지 사용" # 9920734909300747294
+  usu_pmg_government_administration_emergency_services: "응급 서비스" # 16081020038430620533
+  usu_pmg_government_administration_law_enforcement: "법 집행" # 8572143644833065225
+  usu_pmg_public_space_management: "공공 공간 관리" # 3363966938605448850
+  usu_pmg_public_parklands: "공원 부지 활용" # 9920734909300747294
   pmg_trade_center_port_status: "항구 인접 상태" # 7447709561173005616
   pm_rp_anchorage: "앵커리지" # 8599966840067572699
   pm_rp_small_port: "강변 부두" # 8591421480765993081
   pm_rp_industrial_port: "산업 항구" # 18249512993995727362
   pm_rp_modern_port: "현대적 항구" # 16300382442849908009
-  USU_pm_hv_arcades: "아케이드" # 8159925740807891072
-  USU_pm_grid_streetlights: "백열 가로등" # 16823469203941453469
-  USU_pm_no_emergency_services: "비상 서비스 없음" # 4313598951582799429
-  USU_pm_basic_fire_brigade: "기본 소방대" # 10616474218159760633
-  USU_pm_response_planning: "재난 대응 계획 수립" # 18039259934513574347
-  USU_pm_modern_emergency_services: "현대 긴급 구조 서비스" # 2134130141509530958
-  USU_pm_no_police: "지역 사회 행동 단체" # 1291028379513358319
-  USU_pm_local_police: "지역 경찰력" # 6501572552451532539
-  USU_pm_dedicated_police: "전담 경찰력" # 2752280191318091494
-  USU_pm_militarized_police: "계엄령 집행" # 11254310383214569492
-  USU_pm_community_orgs: "커뮤니티 조직" # 8799258955101034322
-  USU_pm_private_firms: "사설 조직" # 4668135539299963768
-  USU_pm_pub_priv_partners: "민관 협력" # 3804725198296686135
-  USU_pm_village_stables: "커뮤니티 마구간" # 1045378424648334390
-  USU_pm_contained_wilderness: "보호 구역" # 7269982832758971971
-  USU_pm_seasonal_fairgrounds: "계절 축제장" # 842724361210274841
+  usu_pm_hv_arcades: "아케이드" # 8159925740807891072
+  usu_pm_grid_streetlights: "백열 가로등" # 16823469203941453469
+  usu_pm_no_emergency_services: "비상 서비스 없음" # 4313598951582799429
+  usu_pm_basic_fire_brigade: "기초 소방대" # 10616474218159760633
+  usu_pm_response_planning: "재난 대응 계획" # 18039259934513574347
+  usu_pm_modern_emergency_services: "현대적 비상 서비스" # 2134130141509530958
+  usu_pm_no_police: "지역사회 활동 단체" # 1291028379513358319
+  usu_pm_local_police: "지역 경찰대" # 6501572552451532539
+  usu_pm_dedicated_police: "전담 경찰대" # 2752280191318091494
+  usu_pm_militarized_police: "계엄령 집행" # 11254310383214569492
+  usu_pm_community_orgs: "지역사회 단체" # 8799258955101034322
+  usu_pm_private_firms: "민간 단체" # 4668135539299963768
+  usu_pm_pub_priv_partners: "민관 협력" # 3804725198296686135
+  usu_pm_village_stables: "지역사회 마구간" # 1045378424648334390
+  usu_pm_contained_wilderness: "보호 야생 구역" # 7269982832758971971
+  usu_pm_seasonal_fairgrounds: "계절 박람회장" # 842724361210274841
   pm_trade_center_inland: "항구 접근 불가" # 7310551837726673332
   pm_trade_center_port: "항구 접근" # 4618869913043411284
   state_trait_rotterdam: "로테르담 항구" # 17154305998178549707

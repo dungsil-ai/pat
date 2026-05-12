@@ -12,7 +12,7 @@
   consolidate_subject_country_tier_kingdom_overlord_research_tt: "[SCOPE.GetRootScope.GetCountry.GetName]은 다음 중 하나를 연구했습니다: [GetTechnology('pan-nationalism').GetName], [GetTechnology('civilizing_mission').GetName], 또는 [GetTechnology('corporatism').GetName]" # 17516778425005317284
   consolidate_subject_either_tt: "다음 중 하나:" # 11480349417241037038
   consolidate_subject_vassal_type_tt: "$TAB$ [SCOPE.sCountry('target_country').GetName]은 [GetSubjectType('subject_type_vassal').GetName]이거나 [GetSubjectType('subject_type_puppet').GetName]입니다." # 8397600235540576652
-  consolidate_subject_dominion_type_tt: "[SCOPE.sCountry('target_country').GetName]은 [GetSubjectType('subject_type_dominion').GetName]이며 다음 중 하나입니다:" # 14448379767199417406
+  consolidate_subject_dominion_type_tt: "[SCOPE.sCountry('target_country').GetName]은(는) [GetSubjectType('subject_type_dominion').GetName] 또는 [GetSubjectType('subject_type_colony').GetName]이며 다음 중 하나에 해당합니다:" # 8743692670886332627
   consolidate_subject_dominion_type_laws_tt: "[GetLawType('law_parliamentary_republic').GetName], [GetLawType('law_presidential_republic').GetName], 혹은 [GetLawType('law_council_republic').GetName]" # 16103375490880750907
   consolidate_subject_union_type_tt: "[SCOPE.sCountry('target_country').GetName]은 [GetSubjectType('subject_type_personal_union').GetName]이며 다음을 만족합니다:" # 4874255545688820217
   consolidate_subject_primary_culture_tt: "대상 속국의 [concept_primary_cultures]: [SCOPE.sCountry('target_country').GetPrimaryCulturesDesc] 중 하나입니까?" # 9088142044682884174

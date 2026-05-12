@@ -1,4 +1,6 @@
 ﻿l_korean:
+  pm_company_headquarter_coop_collective_agriculture: "$pm_worker_cooperative$" # 239444694593761384
+  pm_company_headquarter_only_collective_agriculture: "$pm_worker_cooperative$" # 239444694593761384
   company_basic_utilities: "국립 전기 회사" # 14333373428443004213
   company_basic_infrastructure: "주 물류 컨소시엄" # 12785013187325665336
   company_basic_community: "래디언트 엔터테인먼트 그룹" # 14890568028176576267

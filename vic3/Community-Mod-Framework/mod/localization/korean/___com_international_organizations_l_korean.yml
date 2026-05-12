@@ -1,5 +1,93 @@
 ﻿l_korean:
   concept_com_international_organization: "국제 기구" # 856629468960562459
-  concept_com_international_organization_desc: "어떤 종류의 초국가적 실체로 묶인 [Concept('concept_country','$concept_countries$')] 집단." # 15001752026942333282
+  concept_com_international_organization_desc: "공통된 목표를 가진 [Concept('concept_country','$concept_countries$')]로 구성된 초국가적 실체" # 10674984082015582359
   concept_com_international_organizations: "국제 기구" # 11864495601490587329
-  je_group_international_organizations: "[Concept('concept_com_international_organization','$concept_com_international_organizations$')]" # 7498544584182737135
+  concept_com_international_organization_short: "기구" # 4831421809605429079
+  concept_com_international_organization_shorter: "기구" # 9408969679274305094
+  concept_com_international_organizations_short: "기구들" # 3060488314202589380
+  concept_com_international_organization_leader: "국제 기구 지도자\" " # 7037569471434037430
+  concept_com_international_organization_leader_desc: "[concept_com_international_organization]의 주도국" # 2790118669406639163
+  concept_com_international_organization_leader_med: "기구 지도자\" " # 2112600379841848883
+  concept_com_international_organization_leader_short: "지도자\" " # 6858626697534451315
+  concept_com_international_organization_chair: "국제 기구 의장" # 7845149559759712387
+  concept_com_international_organization_chair_desc: "[concept_com_international_organization]을 이끄는 임무를 맡은 [Concept('concept_character', '$concept_individual$')]" # 3276507233507135757
+  concept_com_international_organization_chair_med: "기구 의장" # 11389045242956296624
+  concept_com_international_organization_chair_short: "의장" # 6708926921743835557
+  concept_com_international_organization_member: "국제 기구 회원국" # 18082878480105360909
+  concept_com_international_organization_member_desc: "[concept_com_international_organization]에 속한 [concept_country]" # 18405930609880900275
+  concept_com_international_organization_members: "국제 기구 회원국들" # 17607697067541606936
+  concept_com_international_organization_member_med: "기구 회원국" # 15874040658874544821
+  concept_com_international_organization_members_med: "기구 회원국들" # 16094577208572349416
+  concept_com_international_organization_member_short: "회원국" # 1140055784353403178
+  concept_com_international_organization_members_short: "회원국들" # 4313381192850767802
+  concept_com_international_organization_headquarters: "국제 기구 본부" # 14704258161415743229
+  concept_com_international_organization_headquarters_desc: "[concept_com_international_organization]의 주요 회의 장소가 위치한 [concept_state_region]" # 4338750532747108203
+  concept_com_international_organization_headquarters_med: "조직 본부" # 9275046467443400664
+  concept_com_international_organization_headquarters_med_short: "조직 본부" # 17246934757204853750
+  concept_com_international_organization_headquarters_short: "본부" # 2827579360084067313
+  concept_com_international_organization_headquarters_shorter: "본부" # 7052264535354238475
+  concept_com_international_situation: "국제 정세" # 7180008575181507444
+  concept_com_international_situation_desc: "다수의 [Concept('concept_country','$concept_countries$')]가 직면하거나 해결해야 하는 사건" # 13231784417240338882
+  concept_com_international_situations: "국제 정세" # 16987186411209854052
+  concept_com_international_situation_short: "정세" # 6406082565441628687
+  concept_com_international_situations_short: "정세" # 7371833616068319626
+  je_group_com_hidden: "숨김" # 9181237066272549587
+  je_group_com_contextless_hidden: "숨김" # 9181237066272549587
+  je_group_com_supranational_organizations: "초국가적 조직" # 14181282253465736472
+  je_group_com_regional_organizations: "지역 조직" # 14601540226167528356
+  je_group_com_religious_organizations: "종교 조직" # 11112418029956211328
+  je_group_com_non_governmental_organizations: "비정부 기구" # 13652495693949066623
+  je_group_com_sporting_organizations: "스포츠 조직" # 12912616987309455625
+  je_com_supranational_organization: "시험 강대국 회의" # 13292511650044296720
+  je_com_supranational_organization_reason: "$je_com_supranational_organization$" # 17584851414041404861
+  je_com_regional_organization: "글로벌 지역 회의" # 2001600868706683773
+  je_com_regional_organization_reason: "$je_com_regional_organization$" # 11719400524655589964
+  je_com_religious_organization: "월로로의 교회" # 10104649150337947060
+  je_com_religious_organization_reason: "$je_com_religious_organization$" # 16067067873521469840
+  com_international_organizations: "[Concept('concept_com_international_organization','$concept_com_international_organizations$')]" # 7498544584182737135
+  com_organization: "[Concept('concept_com_international_organization','$concept_com_international_organization_short$')]" # 9079425729679123414
+  com_org: "[Concept('concept_com_international_organization','$concept_com_international_organization_shorter$')]" # 7627079870290810486
+  com_organizations: "[Concept('concept_com_international_organization','$concept_com_international_organizations_short$')]" # 5263931426486417536
+  com_organization_leader: "[Concept('concept_com_international_organization_leader', '$concept_com_international_organization_leader_med$')]" # 8866807591185070439
+  com_org_leader: "[Concept('concept_com_international_organization_leader','$concept_com_international_organization_leader_short$')]" # 10039659935168998146
+  com_organization_chair: "[Concept('concept_com_international_organization_chair','$concept_com_international_organization_chair_med$')]" # 10906470780785577299
+  com_org_chair: "[Concept('concept_com_international_organization_chair','$concept_com_international_organization_chair_short$')]" # 647602645532006871
+  com_international_organization_members: "[Concept('concept_com_international_organization_member','$concept_com_international_organization_members$')]" # 13401112575328992912
+  com_organization_member: "[Concept('concept_com_international_organization_member','$concept_com_international_organization_member_med$')]" # 1339151175087010124
+  com_organization_members: "[Concept('concept_com_international_organization_member','$concept_com_international_organization_members_med$')]" # 16514250132332538086
+  com_org_member: "[Concept('concept_com_international_organization_member','$concept_com_international_organization_member_short$')]" # 15995369631305827087
+  com_org_members: "[Concept('concept_com_international_organization_member','$concept_com_international_organization_members_short$')]" # 10078203145117173744
+  com_organization_headquarters: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_short$')]" # 10485882286690371738
+  com_organization_hq: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_med_short$')]" # 1531019746566760799
+  com_org_headquarters: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_short$')]" # 10485882286690371738
+  com_org_hq: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_shorter$')]" # 17835620282043751683
+  com_international_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations$')]" # 13130265905697476481
+  com_situation: "[Concept('concept_com_international_situation','$concept_com_international_situation_short$')]" # 9665843462805158107
+  com_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations_short$')]" # 17616044043517365654
+  com_flag_loc: "[TopScope.GetLocalVariable('com_flag_loc').GetFlagName]" # 11833127570464998863
+  com_international_organizations_sgui: "com_international_organizations_sgui" # 7403385309558806464
+  com_international_organizations_sgui_desc: "기구들" # 3060488314202589380
+  com_add_interorg_journal_entry: "#bold $com_flag_loc$#! [concept_com_international_organization]이(가) 창설됩니다" # 15037527374240547491
+  com_set_international_organization_headquaters_effect: "$com_organization$의 $com_org_headquarters$가 #bold $com_gui_interorg_headquaters_name$#! (으)로 이전됩니다" # 15886774891470521092
+  com_gui_journal_header: "[ComJournalVar('com_header_var').GetFlagName] $com_organization$" # 7818993476708539720
+  com_gui_international_organizations_header: "국제 기구" # 11864495601490587329
+  com_gui_power_blocs_header: "강대국 블록" # 12949034938039284104
+  com_gui_organization_headquarters: "@com_formable_possible! [ComJournalVar('com_interorg_headquarters_var').GetStateRegion.GetName]" # 7064101723045764568
+  com_gui_additional_members: "표시되지 않은 추가 구성원이 있습니다. 기구를 확인하여 모든 구성원을 보십시오." # 10561430370679642364
+  com_gui_international_organizations_outliner: "$com_international_organizations$" # 6039393009599807667
+  com_gui_international_situations_outliner: "$com_international_situations$" # 3766121106329684637
+  com_gui_goto_international_orgs_panel: "$com_international_organizations$ 패널로 이동" # 14734778775412831605
+  com_gui_main_actions: "주요 행동" # 6927932878067824311
+  com_gui_members: "회원국들" # 4313381192850767802
+  com_gui_interorg_leader_header: "$com_organization_leader$" # 8868158756448208797
+  com_gui_interorg_leader_name: "[ComJournalVar('com_interorg_leader_var').GetCountry.GetName]" # 6556935097926205662
+  com_gui_interorg_character_header: "$com_interorg_leader_title$" # 9490853709371156557
+  com_gui_interorg_character_name: "[Character.GetFullName]" # 15495341797844275882
+  com_gui_interorg_headquaters_header: "$com_organization_hq$" # 12221244155445692100
+  com_gui_interorg_headquaters_name: "[ComJournalVar('com_interorg_headquarters_var').GetStateRegion.GetName]" # 1715212663873523140
+  com_gui_interorg_participants_header: "$com_organization_members$" # 1945452189887848702
+  com_interorg_leader_title: "[Concept('concept_com_international_organization_chair', Concatenate3('$concept_com_international_organization_short$',' ',Select_CString(ComJournalVar('com_interorg_chair_title_var').IsSet,ComJournalVar('com_interorg_chair_title_var').GetFlagName,'$com_interorg_title_chair$')))]" # 15841417289572877719
+  com_interorg_title_chair: "의장" # 6708926921743835557
+  com_interorg_title_leader: "지도자" # 4199691443646333306
+  com_interorg_title_president: "대통령" # 13530871056994144737
+  com_interorg_title_head: "수반" # 14073844513484504581

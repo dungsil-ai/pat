@@ -1,4 +1,8 @@
 ﻿l_korean:
+  concept_usu_railway_station: "철도 터미널" # 16291953549960239492
+  concept_usu_railway_stations: "철도 터미널" # 9604331812065286576
+  concept_usu_railway_station_desc: "#b 철도 터미널#!은 물류 네트워크의 중심지 역할을 하는 건물입니다. 이 건물은 순수 민간 건물로 [GetGoods('usu_train_paths').GetName]와 [GetGoods('usu_logistics').GetName]를 제공하지만, [GetGoods('tools').GetName], [GetGoods('paper').GetName], [GetGoods('aeroplanes').GetName], [GetGoods('oil').GetName]을 시작으로 다양한 상품을 소비합니다. 이후에는 [GetGoods('electricity').GetName], [GetGoods('telephones').GetName], [GetGoods('radios').GetName]도 필요로 하게 됩니다.\n충분한 수의 #b 공항#!을 보유하면 [concept_curtiss_airline]이 설립되며, #b 공항#!의 수가 증가함에 따라 #b 항공사#!도 성장하여 더 많은 보너스를 제공합니다." # 3757131948645037345
+  usu_railway_station_can_construct_tt: "한 주가 지원할 수 있는 [Concept('concept_curtiss_airport','$concept_curtiss_airports$')]의 최대 레벨은 1에 [GetBuildingType('building_urban_center').GetName] #G 10레벨#!당 1을 더한 값과 같습니다." # 329801687730443117
   pm_ac_electric_trains: "AC 전기 열차" # 3454360524492955950
   pm_ac_electric_trains_principle_transport_3: "공동 AC 전기 열차" # 8958943873845945358
   pm_electric_passenger_carriages: "전기 승용차" # 18235463405557490916
@@ -8,6 +12,9 @@
   pm_watertube_boiler_building_railway: "화관식 보일러" # 6759355618790231352
   pm_rotary_valve_engine_building_railway: "유니플로우 로터리 밸브 기구" # 15815900590014633708
   pm_steam_donkey_building_railway: "기어 구동 증기 동력 장치" # 9348935064792058983
+  pmg_base_building_rail_terminal: "터미널 인프라" # 2118590899584906936
+  pm_usu_stub_end_terminal: "두단식 터미널" # 5940190750174819689
+  pm_usu_pass_through_terminal: "통과식 터미널" # 15237694071278525799
   pmg_automation_port: "시설 자동화" # 7336697395035105527
   pm_auto_disabled_building_port: "수동 취급" # 14527718578154492829
   pm_steam_crane_building_port: "곡선형 지브 증기 크레인" # 12955956061423326842
@@ -16,18 +23,18 @@
   pmg_logistics_services_railway: "철도 물류" # 1817225233985935935
   pmg_logistics_services_port_coastal: "선적 물류" # 13111098118613800957
   pmg_logistics_services_port_river: "하천 물류" # 11526686342872768875
-  USU_pm_rail_logistics_0: "물류 조정 없음" # 6241637616577975875
-  USU_pm_rail_logistics_1: "할당량 허용 계획" # 17973409446750438370
-  USU_pm_rail_logistics_2: "원격 입찰" # 5241708993447160866
-  USU_pm_rail_logistics_3: "공급망 관리" # 5238976340910352623
-  USU_pm_port_c_logistics_0: "물류 조정 없음" # 6241637616577975875
-  USU_pm_port_c_logistics_1: "할당량 허용 계획" # 17973409446750438370
-  USU_pm_port_c_logistics_2: "원격 입찰" # 5241708993447160866
-  USU_pm_port_c_logistics_3: "공급망 관리" # 5238976340910352623
-  USU_pm_port_r_logistics_0: "물류 조정 없음" # 6241637616577975875
-  USU_pm_port_r_logistics_1: "할당량 허용 계획" # 17973409446750438370
-  USU_pm_port_r_logistics_2: "원격 입찰" # 5241708993447160866
-  USU_pm_port_r_logistics_3: "공급망 관리" # 5238976340910352623
+  usu_pm_rail_logistics_0: "물류 조정 없음" # 6241637616577975875
+  usu_pm_rail_logistics_1: "할당량 허용 계획" # 17973409446750438370
+  usu_pm_rail_logistics_2: "원격 접근 입찰" # 5241708993447160866
+  usu_pm_rail_logistics_3: "공급망 관리" # 5238976340910352623
+  usu_pm_port_c_logistics_0: "물류 조정 없음" # 6241637616577975875
+  usu_pm_port_c_logistics_1: "할당량 허용 계획" # 17973409446750438370
+  usu_pm_port_c_logistics_2: "원격 접근 입찰" # 5241708993447160866
+  usu_pm_port_c_logistics_3: "공급망 관리" # 5238976340910352623
+  usu_pm_port_r_logistics_0: "물류 조정 없음" # 6241637616577975875
+  usu_pm_port_r_logistics_1: "할당량 허용 계획" # 17973409446750438370
+  usu_pm_port_r_logistics_2: "원격 접근 입찰" # 5241708993447160866
+  usu_pm_port_r_logistics_3: "공급망 관리" # 5238976340910352623
   pm_canals_electric: "전기 수문" # 12592619660441526131
   pm_canals_oil: "석유 펌프 잠금" # 3394591274765246371
   pmg_canal_boats: "운하 관리" # 4781308690324627507

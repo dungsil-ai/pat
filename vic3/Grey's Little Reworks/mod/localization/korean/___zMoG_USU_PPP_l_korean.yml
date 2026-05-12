@@ -3,8 +3,8 @@
   ppp_building_power_grid: "전력망" # 11270778607914907588
   PPP_tech_hv_power: "동력 전달" # 9831250320196358861
   PPP_tech_hv_power_desc: "변환기와 조정기를 활용함으로써, 고전압의 장거리 송전이 상이한 수요를 가진 다수의 수신처에서 사용 가능해졌습니다." # 1698132724138446587
-  USU_tech_hv_railways: "산업용 변압기" # 3498677175069025184
-  USU_tech_hv_railways_desc: "확장 가능한 변압기를 활용함으로써 우리는 교류 전기의 모든 이점을 누릴 수 있으며, 이는 장거리에 걸쳐 일관되게 높은 전압을 공급하고 송전을 경제적으로 만들 수 있게 합니다." # 4379621506039576222
+  usu_tech_hv_railways: "산업용 변압기" # 3498677175069025184
+  usu_tech_hv_railways_desc: "확장 가능한 변압기를 활용함으로써 교류 전기의 이점을 온전히 누릴 수 있게 되었으며, 이를 통해 장거리까지 일관되게 높은 전압을 송전하여 전력 전송을 경제적으로 만들 수 있습니다." # 4379621506039576222
   ppp_hv_power: "고압 전력" # 13182604697507507123
   goods_input_ppp_hv_power_add: "@ppp_hv_power! [Nbsp]$ppp_hv_power$ 투입" # 9186019618643226279
   goods_output_ppp_hv_power_add: "@ppp_hv_power! [Nbsp]$ppp_hv_power$ 산출량" # 12450209913807715154

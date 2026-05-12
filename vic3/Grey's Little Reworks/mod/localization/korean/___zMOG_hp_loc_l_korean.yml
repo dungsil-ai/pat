@@ -6,7 +6,6 @@
   state_usu_building_hydro_power_plant_max_level_add_desc: "[usu_building_hydro_power_plant] 건물의 주 내 최대 건설 가능 레벨에 대한 보너스 또는 페널티입니다." # 7085198409701942431
   mog_usu_hp_hydro_potential_adjustment: "수력 발전 잠재력 변경됨" # 11639937592753039144
   usu_building_hydro_power_plant: "수력 발전소" # 10700332600867791634
-  bg_power: "열병합 발전소" # 10917588301642361549
   usu_bg_hydro_power: "수력 발전소" # 12012175803257571067
   hp_pmg_hydro_power_plant: "다이나모 발전" # 11523647519490639325
   hp_pmg_turbines: "터빈 기술" # 11124927113695148213
