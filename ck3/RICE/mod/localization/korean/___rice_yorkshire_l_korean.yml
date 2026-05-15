@@ -15,19 +15,19 @@
   RICE_yorkshire_stamford_bull_run_host_memory: "[GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 12886376768138356117
   RICE_yorkshire_stamford_bull_run_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 12305988283029194354
   RICE_yorkshire_stamford_bull_run_host_memory_second_perspective: "[GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 7076632661456980427
-  RICE_yorkshire_stamford_bull_run_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석하셨습니다." # 17599034424214833415
+  RICE_yorkshire_stamford_bull_run_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석하셨습니다" # 16326229679525771916
   RICE_yorkshire_stamford_bull_run_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 3944050103025448251
   RICE_yorkshire_stamford_bull_run_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 14509656836341225113
   RICE_yorkshire_stamford_bull_run_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 11623375619773996862
-  RICE_yorkshire_stamford_bull_run_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석했습니다." # 3853637877467561676
+  RICE_yorkshire_stamford_bull_run_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_stamford_bull_run' ).GetName]에 참석하셨습니다" # 17112529993623754425
   RICE_yorkshire_beverley_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName] 순례에 다녀왔습니다" # 2233240443501345498
   RICE_yorkshire_beverley_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName] 성지 순례에 다녀왔습니다." # 1364366443483738094
   RICE_yorkshire_beverley_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]을 떠났습니다." # 4853618133534454473
-  RICE_yorkshire_beverley_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]를 떠나셨습니다." # 12356671795163344520
+  RICE_yorkshire_beverley_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]을 떠나셨습니다" # 4364184241586717990
   RICE_yorkshire_beverley_pilgrimage_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]에 다녀왔습니다." # 14186072689592830248
   RICE_yorkshire_beverley_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]에 다녀왔습니다." # 9617918509352348391
   RICE_yorkshire_beverley_pilgrimage_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]에 다녀왔습니다." # 12278484215512597284
-  RICE_yorkshire_beverley_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]를 떠나셨습니다." # 16260778954619735140
+  RICE_yorkshire_beverley_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yorkshire_beverley_pilgrimage' ).GetName]을 떠나셨습니다" # 14641615044280777523
   activity_RICE_yorkshire_stamford_bull_run_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_yorkshire_stamford_bull_run: "스탬퍼드 불런" # 798734791069938715
   activity_RICE_yorkshire_stamford_bull_run_desc: "[GetTitleByKey('b_stamford').GetNameNoTier]의 소 몰이 축제는 악명 높을 정도로 난폭하고 폭력적인 행사로, 사람들이 마을 거리에서 황소를 쫓다가 죽이는 행사입니다. 좀 더 '교양 있는' 분위기 파괴자들은 못마땅하게 여길 수도 있겠지만, 모두를 위한 즐거운 놀이일 뿐입니다!" # 14285796706692691517

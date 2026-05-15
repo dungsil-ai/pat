@@ -53,15 +53,15 @@
   RICE_granada_munya_vacation_private_host_memory: "[GetActivityType( 'activity_RICE_granada_munya_vacation_private' ).GetName]에 다녀왔습니다." # 2115456748966127799
   RICE_granada_munya_vacation_private_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_granada_munya_vacation_private' ).GetName]에 다녀왔습니다." # 16197756567939755940
   RICE_granada_munya_vacation_private_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_granada_munya_vacation_private' ).GetName]을/를 떠났습니다." # 11691153908407973221
-  RICE_granada_munya_vacation_private_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_granada_munya_vacation_private' ).GetName]을 떠나셨습니다." # 15023340442080629955
+  RICE_granada_munya_vacation_private_host_memory_third_perspective: "[owner.GetName]님께서 [GetActivityType( 'activity_RICE_granada_munya_vacation_private' ).GetName]을(를) 떠났습니다" # 17115829738693513925
   RICE_granada_munya_vacation_group_host_memory: "[GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 참여했습니다" # 17399832679915377281
   RICE_granada_munya_vacation_group_host_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 다녀왔습니다." # 14786128615108586077
   RICE_granada_munya_vacation_group_host_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 다녀왔습니다." # 10636874738882166599
-  RICE_granada_munya_vacation_group_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [GetActivityType(  'activity_RICE_granada_munya_vacation_group' ).GetName]에 참여했습니다." # 3983133562976253720
+  RICE_granada_munya_vacation_group_host_memory_third_perspective: "[owner.GetName]님께서 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 참여했습니다" # 4687240304907849338
   RICE_granada_munya_vacation_group_guest_memory: "[host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 참가했습니다." # 16412485603297815882
   RICE_granada_munya_vacation_group_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 다녀왔습니다." # 14786128615108586077
   RICE_granada_munya_vacation_group_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 다녀왔습니다." # 10636874738882166599
-  RICE_granada_munya_vacation_group_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_granada_munya_vacation_group' ).GetName]에 참여했습니다." # 7633955150717090658
+  RICE_granada_munya_vacation_group_guest_memory_third_perspective: "[owner.GetName]님께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_granada_munya_vacation_group' ).GetName]에 참여했습니다" # 17900339293256057072
   activity_RICE_granada_munya_vacation_private_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_granada_munya_vacation_group_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_granada_alhambra_comares_baths: "코마레스 목욕탕 방문" # 18318273118629891490

@@ -178,19 +178,19 @@
   RICE_tarim_basin_khotan_procession_host_memory: "[GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다" # 10425810138335857682
   RICE_tarim_basin_khotan_procession_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 6129746483525874771
   RICE_tarim_basin_khotan_procession_host_memory_second_perspective: "귀하는 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 6630539783677940244
-  RICE_tarim_basin_khotan_procession_host_memory_third_perspective: "[owner.GetName]이(가) [GetActivityType(  'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 1335473111624801469
+  RICE_tarim_basin_khotan_procession_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다" # 12702360606198198917
   RICE_tarim_basin_khotan_procession_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 10112480533492485349
   RICE_tarim_basin_khotan_procession_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 16735655378481339746
   RICE_tarim_basin_khotan_procession_guest_memory_second_perspective: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참가했습니다." # 18300959482213973518
-  RICE_tarim_basin_khotan_procession_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다." # 7308198506635823409
+  RICE_tarim_basin_khotan_procession_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_tarim_basin_khotan_procession' ).GetName]에 참여했습니다" # 5239906571484890441
   RICE_tarim_basin_ordam_mazar_host_memory: "[GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다" # 7341007816463795178
   RICE_tarim_basin_ordam_mazar_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 14035161814097830979
   RICE_tarim_basin_ordam_mazar_host_memory_second_perspective: "[GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석하셨습니다." # 11895006121031528134
-  RICE_tarim_basin_ordam_mazar_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석하셨습니다." # 1260970861963767894
+  RICE_tarim_basin_ordam_mazar_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다" # 17810773990805090153
   RICE_tarim_basin_ordam_mazar_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 4489258535198102702
   RICE_tarim_basin_ordam_mazar_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 275136025570239783
   RICE_tarim_basin_ordam_mazar_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 2202753944533861972
-  RICE_tarim_basin_ordam_mazar_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다." # 13098885954326514789
+  RICE_tarim_basin_ordam_mazar_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_tarim_basin_ordam_mazar' ).GetName]에 참석했습니다" # 9724559986966328764
   activity_RICE_tocharian_animal_fight_host_an_a: "" # 17241709254077376921
   activity_RICE_tocharian_animal_fight: "동물 싸움으로 미래 예측하기" # 3141942313627597137
   activity_RICE_tocharian_animal_fight_desc: "일부 문화권에서는 새해 축제의 일환으로 매년 초에 동물 싸움을 벌이는 관습이 있습니다. 많은 이들이 이 시합의 결과를 통해 다가올 수확량이나 가축의 번식력을 정확하게 예측할 수 있다고 믿습니다." # 10764376950535884104

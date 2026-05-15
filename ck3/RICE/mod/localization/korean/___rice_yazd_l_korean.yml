@@ -27,11 +27,11 @@
   RICE_yazd_sadeh_festival_host_memory: "[GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]을 기념했습니다." # 3628681625495546044
   RICE_yazd_sadeh_festival_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념했습니다." # 10492406179081317168
   RICE_yazd_sadeh_festival_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName] 행사를 축하했습니다." # 6840011838778984373
-  RICE_yazd_sadeh_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념하셨습니다." # 6850938799840502724
+  RICE_yazd_sadeh_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]을(를) 기념하셨습니다" # 12443910479954407292
   RICE_yazd_sadeh_festival_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념했습니다" # 14328491769716153432
   RICE_yazd_sadeh_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념했습니다." # 3004599097779292346
   RICE_yazd_sadeh_festival_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념했습니다." # 10914750911603416573
-  RICE_yazd_sadeh_festival_guest_memory_third_perspective: "[owner.GetName] 께서는 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yazd_sadeh_festival' ).GetName]를 기념하셨습니다." # 12202949871330298401
+  RICE_yazd_sadeh_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_yazd_sadeh_festival' ).GetName]을(를) 기념하셨습니다" # 8175196224376697065
   activity_RICE_yazd_sadeh_festival_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_yazd_sadeh_festival: "사데 축제" # 4709076429601606859
   activity_yazd_sadeh_festival_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] 사데 축제" # 14467058510363838548

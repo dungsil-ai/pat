@@ -74,11 +74,11 @@
   RICE_chios_mostra_of_thymiana_host_memory: "[GetTitleByKey ('c_chios').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다" # 8143589552108410745
   RICE_chios_mostra_of_thymiana_host_memory_first_perspective: "저는 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다." # 15395315757912903357
   RICE_chios_mostra_of_thymiana_host_memory_second_perspective: "당신은 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다." # 14347930277076663789
-  RICE_chios_mostra_of_thymiana_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('c_chios').GetNameNoTier]에서 [GetActivityType(  'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석하셨습니다." # 7534828881137649289
+  RICE_chios_mostra_of_thymiana_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석하셨습니다" # 5721044869198260979
   RICE_chios_mostra_of_thymiana_guest_memory: "[GetTitleByKey ('c_chios').GetNameNoTier]에서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다." # 17718894155585340093
   RICE_chios_mostra_of_thymiana_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetTitleByKey('c_chios').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다." # 14279981397495036700
   RICE_chios_mostra_of_thymiana_guest_memory_second_perspective: "[GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 [host.GetTitledFirstName] 님과 함께 [GetTitleByKey('c_chios').GetNameNoTier]에서 참석했습니다." # 2401118217812790995
-  RICE_chios_mostra_of_thymiana_guest_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('c_chios').GetNameNoTier]에서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석했습니다." # 9172428709490353467
+  RICE_chios_mostra_of_thymiana_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_chios_mostra_of_thymiana' ).GetName]에 참석하셨습니다" # 10815696512606344947
   RICE_chios_homer_memory: "고대 그리스 시인 호메로스를 기리는 기념비를 세웠습니다." # 3285907619843309239
   RICE_chios_homer_memory_first_perspective: "나는 고대 그리스 시인 호메로스에게 기념비를 세웠다" # 11743970107560061883
   RICE_chios_homer_memory_second_perspective: "고대 그리스 시인 호메로스에게 기념비를 세우셨습니다." # 3451671711563237161
@@ -86,11 +86,11 @@
   RICE_chios_patmos_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]에 다녀왔습니다." # 356073806094671834
   RICE_chios_patmos_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]에 다녀왔습니다." # 15417244830048874865
   RICE_chios_patmos_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]을 떠났습니다" # 4540489384064341028
-  RICE_chios_patmos_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_chios_patmos_pilgrimage' ).GetName]를 떠나셨습니다." # 16920316469927441505
+  RICE_chios_patmos_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]을 떠나셨습니다" # 1290713041513407384
   RICE_chios_patmos_pilgrimage_guest_memory: "[GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]에 [host.GetTitledFirstName]와 함께 다녀왔습니다." # 2337391476671566460
   RICE_chios_patmos_pilgrimage_guest_memory_first_perspective: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]에 다녀왔습니다." # 2271842053847659639
   RICE_chios_patmos_pilgrimage_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]에 다녀왔습니다." # 17572466257799031281
-  RICE_chios_patmos_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_chios_patmos_pilgrimage' ).GetName]를 떠나셨습니다." # 8984410487640432603
+  RICE_chios_patmos_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_chios_patmos_pilgrimage' ).GetName]을 떠나셨습니다" # 8869478151107131503
   activity_RICE_chios_mostra_of_thymiana_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_chios_mostra_of_thymiana: "티미아나의 모스타" # 17677968767783403572
   activity_RICE_chios_mostra_of_thymiana_desc: "티미아나의 모스트라(Mostra)는 [GetTitleByKey('c_chios').GetNameNoTier]의 티미아나 마을에서 매년 열리는 축제 행사로, 오래전 마을 사람들이 해적의 습격을 성공적으로 격퇴한 것을 기념하는 행사입니다.\n\n@alert_icon! #alert_trial 모스트라는 3월 초에 시작됩니다. 만약 그 이전에 도착하신다면, 행사가 시작될 때까지 [GetTitleByKey('b_chios').GetNameNoTier]에서 기다리시는 동안 활동이 일시 중지될 것입니다.!#" # 11115421809752422024

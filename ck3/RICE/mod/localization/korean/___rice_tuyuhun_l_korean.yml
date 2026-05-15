@@ -22,11 +22,11 @@
   RICE_tuyuhun_nadun_festival_host_memory: "[GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName] 지역 축제에 참석했습니다." # 16381273755864271585
   RICE_tuyuhun_nadun_festival_host_memory_first_perspective: "저는 지역 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석했습니다." # 3451195019887619168
   RICE_tuyuhun_nadun_festival_host_memory_second_perspective: "귀하는 지역 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석했습니다." # 8460546542743814751
-  RICE_tuyuhun_nadun_festival_host_memory_third_perspective: "[owner.GetName]께서 지역 [GetActivityType(  'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석하셨습니다." # 3106127453138532063
+  RICE_tuyuhun_nadun_festival_host_memory_third_perspective: "[owner.GetName]께서 지역의 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석하셨습니다" # 11468070293842987733
   RICE_tuyuhun_nadun_festival_guest_memory: "[host.GetTitledFirstName]와 함께 지역 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석했습니다." # 8033648071894194716
   RICE_tuyuhun_nadun_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 지역 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석했습니다." # 11938998319320274508
   RICE_tuyuhun_nadun_festival_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 지역 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석했습니다." # 10657767568362738512
-  RICE_tuyuhun_nadun_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 지역 [GetActivityType(  'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석하셨습니다." # 15674266008991292626
+  RICE_tuyuhun_nadun_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 지역의 [GetActivityType( 'activity_RICE_tuyuhun_nadun_festival' ).GetName]에 참석하셨습니다" # 12978009676906071398
   RICE_tuyuhun_restored_tuyuhun_kingdom_memory: "토욕혼 왕국을 복원했습니다" # 15638569952262678679
   RICE_tuyuhun_restored_tuyuhun_kingdom_memory_first_perspective: "투유훈 왕국을 복원했습니다." # 3515766755850004228
   RICE_tuyuhun_restored_tuyuhun_kingdom_memory_second_perspective: "투유훈 왕국을 복원하셨습니다." # 6697442992018940446
@@ -70,9 +70,9 @@
   RICE_tuyuhun_qinghai_silk_road: "칭하이 실크로드 경로 재개발" # 18035483370000551805
   RICE_tuyuhun_qinghai_silk_road_desc: "투우혼족이 이 지역에서 다시 세력을 떨치면서, 칭하이 실크로드 지부가 다시 번성하고 있습니다." # 6914434871605937864
   RICE_tuyuhun_qinghaicong_horses: "칭하이콩 말 유목민" # 11126165198235582400
-  RICE_tuyuhun_qinghaicong_horses_desc: "수 세기 동안, 칭하이 호수 지역에서 유래한 칭하이총 말은 속도와 지구력으로 아시아 전역에서 명성이 높았습니다.#italic #!" # 12195997514868504752
+  RICE_tuyuhun_qinghaicong_horses_desc: "수 세기 동안 칭하이 호 지역에서 유래한 [qinghaicong_horses|E]는 그 속도와 지구력으로 아시아 전역에서 명성이 자자했습니다." # 5684383209455150079
   RICE_tuyuhun_qinghaicong_horses_expanded: "번성하는 칭하이콩 말 떼" # 16722696898259048988
-  RICE_tuyuhun_qinghaicong_horses_expanded_desc: "수 세기 동안, 칭하이 호수 지역에서 유래한 칭하이총 말은 속도와 지구력으로 아시아 전역에서 명성을 떨쳐왔습니다. 투유혼 영주들의 자원 투입 덕분에 이 말떼는 그 어느 때보다도 거대해졌습니다." # 1263101475310128847
+  RICE_tuyuhun_qinghaicong_horses_expanded_desc: "수 세기 동안 칭하이 호 지역에서 유래한 [qinghaicong_horses|E]는 그 속도와 지구력으로 아시아 전역에서 명성이 자자했습니다. 토욕혼 영주들의 자원 투자 덕분에, 이 말 떼는 그 어느 때보다 번성하고 있습니다." # 11400084429850650346
   RICE_tuyuhun_character_owns_qinghaicong_horses: "칭하이콩 말 유목민" # 11126165198235582400
   RICE_tuyuhun_character_owns_qinghaicong_horses_desc: "이 통치자는 수세기 동안 유명한 칭하이총 말이 사육되어 온 칭하이 호수 주변의 영토를 소유하고 있습니다." # 7728359452655142981
   RICE_tuyuhun_character_gifted_qinghaicong_horses: "최근에 청해총마를 하사받음" # 10694991326335187263

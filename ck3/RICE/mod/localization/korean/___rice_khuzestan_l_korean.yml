@@ -40,19 +40,19 @@
   RICE_mandaean_parwanaya_host_memory: "[GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 17503301690589500294
   RICE_mandaean_parwanaya_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 6370975704944564392
   RICE_mandaean_parwanaya_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 18368860192308697376
-  RICE_mandaean_parwanaya_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_mandaean_parwanaya' ).GetName]에 참여하셨습니다." # 15320687165517305648
+  RICE_mandaean_parwanaya_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다" # 8783164470980376007
   RICE_mandaean_parwanaya_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 4790052303701197071
   RICE_mandaean_parwanaya_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 18204299266390321840
   RICE_mandaean_parwanaya_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 13316453160897606760
-  RICE_mandaean_parwanaya_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다." # 6674938487057223054
+  RICE_mandaean_parwanaya_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_mandaean_parwanaya' ).GetName]에 참여했습니다" # 10573532172778231082
   RICE_khuzestan_tomb_of_daniel_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName] 성지 순례를 떠났습니다." # 1773841449813659234
   RICE_khuzestan_tomb_of_daniel_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName] 성지 순례를 다녀왔습니다." # 14611813883133591380
   RICE_khuzestan_tomb_of_daniel_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]에 다녀왔습니다." # 13260806083543084437
-  RICE_khuzestan_tomb_of_daniel_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]를 떠나셨습니다." # 15512396701163710400
+  RICE_khuzestan_tomb_of_daniel_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]를 떠났습니다" # 9486707621368530969
   RICE_khuzestan_tomb_of_daniel_pilgrimage_guest_memory: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]에 다녀왔습니다." # 17098745848389220098
   RICE_khuzestan_tomb_of_daniel_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName] 순례를 다녀왔습니다." # 5400110541242969372
   RICE_khuzestan_tomb_of_daniel_pilgrimage_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]에 다녀왔습니다." # 4955482051974255163
-  RICE_khuzestan_tomb_of_daniel_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName] 성지 순례를 떠나셨습니다." # 16230850243636502065
+  RICE_khuzestan_tomb_of_daniel_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_khuzestan_tomb_of_daniel_pilgrimage' ).GetName]를 떠났습니다" # 487070349754468752
   activity_khuzestan_tomb_of_daniel_pilgrimage: "다니엘의 무덤으로 향하는 수사 순례" # 7135559828635029080
   activity_khuzestan_tomb_of_daniel_pilgrimage_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U]의 수슈(Šuš)에 있는 다니엘의 무덤 성지 순례" # 9272211861070383333
   activity_dualist_baptism: "영지주의 세례 의식" # 7459094470674693425

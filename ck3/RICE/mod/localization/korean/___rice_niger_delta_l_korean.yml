@@ -72,13 +72,13 @@
   RICE_niger_delta_kola_nut_interaction_lacking_igwebuike: "[recipient.GetCulture.GetName] [culture|E]는 #italic 이그웨부이케#! 철학을 이해하지 못합니다: $VALUE|=+0$" # 13139993452726392016
   RICE_niger_delta_kola_nut_interaction_non_african: "[recipient.GetCulture.GetName] [culture|E]는 아프리카 [heritage|E] 문화가 아니기에 콜라 열매의 상징적 가치를 높이 평가하지 않습니다: $VALUE|=+0$" # 7988858109638394638
   RICE_niger_delta_new_yam_festival_host_memory: "[GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]을 주관했습니다." # 18367476532905489749
-  RICE_niger_delta_new_yam_festival_host_memory_first_perspective: "저는 [GetTitleByKey('c_chios').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]을(를) 주최했습니다." # 1082708086081900260
-  RICE_niger_delta_new_yam_festival_host_memory_second_perspective: "귀하는 [GetTitleByKey('c_chios').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]를 주최하셨습니다." # 12679032334425781643
-  RICE_niger_delta_new_yam_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('c_chios').GetNameNoTier]에서 [GetActivityType(  'activity_RICE_niger_delta_new_yam_festival' ).GetName]를 주최하셨습니다." # 8472424729082248212
+  RICE_niger_delta_new_yam_festival_host_memory_first_perspective: "나는 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]을(를) 조직했다" # 16537679358472175496
+  RICE_niger_delta_new_yam_festival_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]을(를) 조직했다" # 15357560506340559294
+  RICE_niger_delta_new_yam_festival_host_memory_third_perspective: "[owner.GetName]이(가) [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]을(를) 조직했다" # 5917511058648036631
   RICE_niger_delta_new_yam_festival_guest_memory: "[host.GetTitledFirstName]이 주최한 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했습니다." # 11860515361262825381
-  RICE_niger_delta_new_yam_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]께서 주관하신 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했습니다." # 14152767910273631889
-  RICE_niger_delta_new_yam_festival_guest_memory_second_perspective: "[GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했는데, 이는 [host.GetTitledFirstName]께서 [GetTitleByKey('c_chios').GetNameNoTier]에서 주최하신 행사였습니다." # 17030611677712243820
-  RICE_niger_delta_new_yam_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]이 주최한 [GetTitleByKey('c_chios').GetNameNoTier]에서 열린 [GetActivityType(  'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했습니다." # 8827431072505669229
+  RICE_niger_delta_new_yam_festival_guest_memory_first_perspective: "나는 [host.GetTitledFirstName]이(가) 조직한 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했다" # 4628789599552540033
+  RICE_niger_delta_new_yam_festival_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]이(가) 조직한 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했다" # 8914824655773695200
+  RICE_niger_delta_new_yam_festival_guest_memory_third_perspective: "[owner.GetName]이(가) [host.GetTitledFirstName]이(가) 조직한 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에 참석했다" # 18306055433260206773
   RICE_niger_delta_got_caught_eating_yams_memory: "[GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName] 기간에 얌을 먹다가 들켰습니다" # 10067908763981727110
   RICE_niger_delta_got_caught_eating_yams_memory_first_perspective: "[GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName]에서 얌(마)을 먹다가 들켰습니다." # 262430541548809935
   RICE_niger_delta_got_caught_eating_yams_memory_second_perspective: "#bold 당신은 [GetActivityType( 'activity_RICE_niger_delta_new_yam_festival' ).GetName] 중에 얌(마)을 먹다가 들켰습니다!#" # 1245920476089223419
@@ -86,11 +86,11 @@
   RICE_niger_delta_olojo_festival_host_memory: "[GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 2634245664672875435
   RICE_niger_delta_olojo_festival_host_memory_first_perspective: "저는 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 17407297254688317831
   RICE_niger_delta_olojo_festival_host_memory_second_perspective: "당신은 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 열린 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 1349283861361695150
-  RICE_niger_delta_olojo_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [GetActivityType(  'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여하셨습니다." # 5218562781485166266
+  RICE_niger_delta_olojo_festival_host_memory_third_perspective: "[owner.GetName]이(가) [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했다" # 1497926098897363874
   RICE_niger_delta_olojo_festival_guest_memory: "[host.GetTitledFirstName]이 주최한 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 10722291900992504139
   RICE_niger_delta_olojo_festival_guest_memory_first_perspective: "저는 [GetTitleByKey('b_ile-ife').GetNameNoTier]의 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 18031803098664380330
   RICE_niger_delta_olojo_festival_guest_memory_second_perspective: "[GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했으며, [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [host.GetTitledFirstName]와 함께했습니다." # 10916581696728509257
-  RICE_niger_delta_olojo_festival_guest_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했습니다." # 475073889156256135
+  RICE_niger_delta_olojo_festival_guest_memory_third_perspective: "[owner.GetName]이(가) [GetTitleByKey('b_ile-ife').GetNameNoTier]에서 [host.GetTitledFirstName]과(와) 함께 [GetActivityType( 'activity_RICE_niger_delta_olojo_festival' ).GetName]에 참여했다" # 13766836097421994395
   activity_niger_delta_beaded_crown: "$c_ife$로 [beaded_crown|E]를 받으러 떠나기" # 3268628239862471275
   activity_niger_delta_beaded_crown_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] $c_ife$ 방문 및 [beaded_crown|E] 수여식" # 7821190311382251016
   activity_niger_delta_new_yam_festival: "새로운 마 축제" # 14319031756052559547
@@ -474,7 +474,7 @@
   niger_delta.0020.desc.conclusion: "체계적인 길드 제도는 양측 모두에게 이롭습니다. 장인들은 꾸준한 일거리를 확보하고 우리와의 연계를 통해 정치적 영향력을 증대시킬 수 있으며, 우리는 지역 산업을 더 잘 관리하고 심지어 이익을 얻을 수 있으며, 그들의 예술을 후원하여 우리 왕조의 위상을 높일 수 있습니다." # 12800432171706997673
   niger_delta.0020.a: "우리 왕조는 끊임없이 위대해지고 있소." # 3357880901502164898
   niger_delta.0021.t: "길드에 위탁하기" # 10532615970770684340
-  niger_delta.0021.desc.intro: "[patron.GetTitleAsNameNoTooltip]로서, 저는 위대한 [patron.GetDynasty.GetName] 왕조 아래 조직된 여러 공예 길드와 인연이 있습니다. 우리는 정기적으로 이 길드들에게 예술 작품을 의뢰하며, 그 대가로 길드들은 안정적인 일감과 증대된 정치적 권력을 얻습니다.\n\n오늘, 저는 다음 길드에게 청동 예술 작품을 의뢰하기로 결정했습니다." # 10768654027677413555
+  niger_delta.0021.desc.intro: "[patron.GetTitleAsNameNoTooltip]로서, 나는 우리 위대한 [patron.GetDynasty.GetName] 가문 아래 조직된 여러 장인 길드와 연줄이 있다. 우리는 정기적으로 이 길드들에 예술 작품을 의뢰하고, 그 대가로 그들은 안정적인 일감을 공급받으며 정치적 영향력을 키운다.\n\n오늘, 나는 길드로부터 예술 작품을 의뢰하기로 결정했다" # 2440455304463037601
   niger_delta.0021.desc.bronze: "#bold 청동 주조공#!. 그들은 밀랍 주조 기법을 사용하여 아름다운 청동 조각상과 유물을 제작하며, 이는 특히 [patron.GetCulture.GetName] 사회에서 신성한 존재, 조상, 그리고 중요한 지도자를 묘사한 청동 두상처럼 정치적, 종교적 중요성을 지니는 경우가 많습니다." # 12175576943588251278
   niger_delta.0021.desc.iron: "#bold 대장장이#!. 철은 아프리카의 많은 지역에서 강력한 무기와 일상 도구로 널리 사용되지만, 이곳, [patron.GetCulture.GetCollectiveNoun]들 사이에서는 영감을 주고 위협하는 예술품, 조각품, 왕실 휘장 등으로도 만들어집니다." # 16049544698945193876
   niger_delta.0021.desc.ivory_or_wood: "#bold 상아 및 목공예가#!. 상아와 목공예는 [patron.GetCulture.GetCollectiveNoun]에게 밀접하게 얽혀 있는데, 많은 목공예가들이 상아 세공사 훈련을 받거나 그 반대의 경우도 마찬가지입니다. 그들은 현지 사냥 조합이 잡은 코끼리의 엄니나 아프리카 숲에 풍부한 목재를 사용합니다." # 6189017214577926723

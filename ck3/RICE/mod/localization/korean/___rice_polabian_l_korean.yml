@@ -23,19 +23,19 @@
   RICE_polabian_zapust_festival_host_memory: "[GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]을 기념했습니다." # 11456709060339335146
   RICE_polabian_zapust_festival_host_memory_first_perspective: "나는 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념했습니다." # 2863345483764451355
   RICE_polabian_zapust_festival_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName] 행사를 축하했습니다." # 13733351707953505643
-  RICE_polabian_zapust_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_polabian_zapust_festival' ).GetName]을 기념하셨습니다." # 4502700489010605486
+  RICE_polabian_zapust_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념하셨습니다" # 16889588147011761761
   RICE_polabian_zapust_festival_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념했습니다." # 17230377638640160692
   RICE_polabian_zapust_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념했습니다." # 6878284794479004047
   RICE_polabian_zapust_festival_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념했습니다" # 8461064189496643514
-  RICE_polabian_zapust_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_polabian_zapust_festival' ).GetName]를 기념했습니다." # 82339261896347365
+  RICE_polabian_zapust_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_polabian_zapust_festival' ).GetName]를 기념하셨습니다" # 2370588366490609609
   RICE_polabian_drowning_marzanna_host_memory: "[GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 5302374010270148617
   RICE_polabian_drowning_marzanna_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 5952950820918592713
   RICE_polabian_drowning_marzanna_host_memory_second_perspective: "[GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여하셨습니다." # 2816819519338664453
-  RICE_polabian_drowning_marzanna_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여하셨습니다." # 3503780733252259008
+  RICE_polabian_drowning_marzanna_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여하셨습니다" # 13290437741968813260
   RICE_polabian_drowning_marzanna_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 17937508237433472828
   RICE_polabian_drowning_marzanna_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]께서 주최하신 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 13972968276497098705
   RICE_polabian_drowning_marzanna_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 8888549386370359276
-  RICE_polabian_drowning_marzanna_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여했습니다." # 17731831293223264281
+  RICE_polabian_drowning_marzanna_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_polabian_drowning_marzanna' ).GetName]에 참여하셨습니다" # 9690994470072177357
   activity_RICE_polabian_drowning_marzanna_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_polabian_drowning_marzanna: "[GetPlayer.Custom('RICE_marzanna')]의 익사" # 5356287041815287715
   activity_RICE_polabian_drowning_marzanna_desc: "겨울이 곧 끝나가니, 추운 달에게 작별을 고하는 가장 좋은 방법은 [GetPlayer.Custom('RICE_marzanna')]의 허수아비를 불태우고 강물에 던져버리는 것 아닐까요?" # 14734495282770849291

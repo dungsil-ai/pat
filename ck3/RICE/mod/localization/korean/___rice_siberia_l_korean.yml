@@ -11,7 +11,7 @@
   RICE_siberia_reindeer_sacrifice_host_memory: "[GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]을 준비했습니다." # 6503048724739995047
   RICE_siberia_reindeer_sacrifice_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]을(를) 준비했습니다." # 16987458716771244743
   RICE_siberia_reindeer_sacrifice_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]를 주관했습니다." # 9058411243670268806
-  RICE_siberia_reindeer_sacrifice_host_memory_third_perspective: "[owner.GetName]이 [GetActivityType(  'activity_RICE_siberia_reindeer_sacrifice' ).GetName]를 주최했습니다." # 9432945011834147536
+  RICE_siberia_reindeer_sacrifice_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]을(를) 조직했습니다" # 447923011203629335
   RICE_siberia_reindeer_sacrifice_guest_memory: "[host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]에 참석했습니다." # 716461821378473850
   RICE_siberia_reindeer_sacrifice_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]께서 주최하신 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]에 참석했습니다." # 2687662526885435424
   RICE_siberia_reindeer_sacrifice_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]이 주최한 [GetActivityType( 'activity_RICE_siberia_reindeer_sacrifice' ).GetName]에 참석했습니다." # 17827036603350891840

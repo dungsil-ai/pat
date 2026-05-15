@@ -8,11 +8,11 @@
   RICE_rhodes_visit_to_the_colossus_host_memory: "[GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 [GetTitleByKey ('b_rhodos').GetNameNoTier]에서 비용을 지불했습니다." # 13346176080647965284
   RICE_rhodes_visit_to_the_colossus_host_memory_first_perspective: "저는 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 비용을 지불했습니다." # 17356030985727977465
   RICE_rhodes_visit_to_the_colossus_host_memory_second_perspective: "귀하는 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 비용을 지불했습니다." # 8849619959943855193
-  RICE_rhodes_visit_to_the_colossus_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType(  'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 비용을 지불했습니다." # 11003203317989323936
+  RICE_rhodes_visit_to_the_colossus_host_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]을(를) 수행했습니다." # 8896671802981573924
   RICE_rhodes_visit_to_the_colossus_guest_memory: "[GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 [host.GetTitledFirstName]와 함께 [GetTitleByKey ('b_rhodos').GetNameNoTier]에서 비용을 지불했습니다" # 9799198470042565454
   RICE_rhodes_visit_to_the_colossus_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 비용을 지불했습니다." # 12180389358340818944
   RICE_rhodes_visit_to_the_colossus_guest_memory_second_perspective: "[GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]에 [host.GetTitledFirstName]와 함께 $k_rhodos$의 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 비용을 지불했습니다." # 4753281566110248590
-  RICE_rhodes_visit_to_the_colossus_guest_memory_third_perspective: "[owner.GetName]께서 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_rhodes_visit_to_the_colossus' ).GetName] 행사에 참여하셨습니다." # 1716143199620896367
+  RICE_rhodes_visit_to_the_colossus_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]과(와) 함께 [GetTitleByKey('b_rhodos').GetNameNoTier]에서 [GetActivityType( 'activity_RICE_rhodes_visit_to_the_colossus' ).GetName]을(를) 수행했습니다." # 6011780099620514499
   RICE_rhodes_hippocrates_memory: "고대 그리스 의사 히포크라테스를 기리는 기념비를 세웠습니다." # 10517075317439643480
   RICE_rhodes_hippocrates_memory_first_perspective: "나는 고대 그리스의 의사 히포크라테스를 기리는 기념비를 세웠다" # 14658388525882454477
   RICE_rhodes_hippocrates_memory_second_perspective: "#bold 고대 그리스 의사 히포크라테스#에게 기념비를 봉헌했습니다" # 16878599013615261174

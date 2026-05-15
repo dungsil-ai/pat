@@ -66,11 +66,11 @@
   RICE_siwa_visit_hibis_host_memory: "[GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName] 활동을 떠났습니다" # 11019099391761152731
   RICE_siwa_visit_hibis_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName]에 다녀왔습니다." # 10374373005566655106
   RICE_siwa_visit_hibis_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName]에 다녀왔습니다." # 13321256110235238606
-  RICE_siwa_visit_hibis_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_siwa_visit_hibis' ).GetName]을 떠나셨습니다." # 2275734037317005849
+  RICE_siwa_visit_hibis_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName] 활동을 떠났습니다" # 16209603715380555311
   RICE_siwa_visit_hibis_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName]에 다녀왔습니다" # 10184365513204264127
   RICE_siwa_visit_hibis_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName]에 다녀왔습니다." # 8575677312343314287
   RICE_siwa_visit_hibis_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName]에 다녀왔습니다." # 5844699470653890526
-  RICE_siwa_visit_hibis_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_siwa_visit_hibis' ).GetName]를 떠나셨습니다." # 4649548481918387903
+  RICE_siwa_visit_hibis_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_siwa_visit_hibis' ).GetName] 활동을 떠났습니다" # 17539116557660746965
   activity_RICE_siwa_oracle_of_amun_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_siwa_oracle_of_amun: "아문 신탁 방문" # 9912757646805083793
   activity_RICE_siwa_oracle_of_amun_desc: "[GetTitleByKey('b_siwa').GetNameNoTier]에 있는 아문 신탁은 수 세기 동안 많은 이들에게 조언을 제공해 왔습니다. 위험천만한 서부 사막을 가로질러 그곳에 도달할 용기가 있는 이들은 다양한 문제에 대한 신탁의 지도를 구할 수 있습니다." # 8477044404670540382

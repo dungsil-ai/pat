@@ -458,27 +458,27 @@
   RICE_sri_lanka_ramasetu_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 다녀왔습니다" # 286285208547750534
   RICE_sri_lanka_ramasetu_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 다녀왔습니다." # 11468341643374590225
   RICE_sri_lanka_ramasetu_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName] 성지 순례에 다녀왔습니다." # 3597071135621242889
-  RICE_sri_lanka_ramasetu_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 떠나셨습니다." # 2541212408237921815
+  RICE_sri_lanka_ramasetu_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 15584485355213704772
   RICE_sri_lanka_ramasetu_pilgrimage_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 다녀왔습니다." # 7490309152269590676
   RICE_sri_lanka_ramasetu_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 다녀왔습니다." # 11482928256355388801
   RICE_sri_lanka_ramasetu_pilgrimage_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]에 다녀왔습니다." # 17904067144623365529
-  RICE_sri_lanka_ramasetu_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]를 떠나셨습니다." # 11714436102697556497
+  RICE_sri_lanka_ramasetu_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_sri_lanka_ramasetu_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 9414741455127092881
   RICE_sri_lanka_sri_pada_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀왔습니다" # 15868022186908910748
   RICE_sri_lanka_sri_pada_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀왔습니다." # 17569255456063837427
   RICE_sri_lanka_sri_pada_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]을 떠났습니다." # 8705393203071522916
-  RICE_sri_lanka_sri_pada_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀오셨습니다." # 14694107211353808494
+  RICE_sri_lanka_sri_pada_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 15139169820990162435
   RICE_sri_lanka_sri_pada_pilgrimage_guest_memory: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀왔습니다." # 5984913219208103795
   RICE_sri_lanka_sri_pada_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀왔습니다." # 12425840498428513913
   RICE_sri_lanka_sri_pada_pilgrimage_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]에 다녀왔습니다." # 12879144288032731385
-  RICE_sri_lanka_sri_pada_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]를 떠나셨습니다." # 18143045988788218640
+  RICE_sri_lanka_sri_pada_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_sri_lanka_sri_pada_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 3038037353027946416
   RICE_sri_lanka_relic_veneration_host_memory: "[GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행위를 수행했습니다." # 1379158559037132643
   RICE_sri_lanka_relic_veneration_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행위를 수행했습니다." # 1947336861742992927
   RICE_sri_lanka_relic_veneration_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행위를 수행했습니다." # 18186971960896628516
-  RICE_sri_lanka_relic_veneration_host_memory_third_perspective: "[owner.GetName]이(가) [GetActivityType(  'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행위를 수행했습니다." # 3781224788557631551
+  RICE_sri_lanka_relic_veneration_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName]을(를) 수행하셨습니다" # 9933529254429989241
   RICE_sri_lanka_relic_veneration_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행사를 거행했습니다." # 10611271648915739502
   RICE_sri_lanka_relic_veneration_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행위를 수행했습니다." # 8378767208917104368
   RICE_sri_lanka_relic_veneration_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행사에 참여했습니다." # 3507876859875229475
-  RICE_sri_lanka_relic_veneration_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_sri_lanka_relic_veneration' ).GetName] 행사를 거행하셨습니다." # 622113598344887717
+  RICE_sri_lanka_relic_veneration_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_sri_lanka_relic_veneration' ).GetName]을(를) 수행하셨습니다" # 1334088404308046144
   RICE_sri_lanka_start_patronizing_mahavihara_memory: "[mahavihara_i|E] [mahavihara|E] [RICE_sri_lanka_monastery|E]를 후원하기 시작했습니다." # 8638816395926048212
   RICE_sri_lanka_start_patronizing_mahavihara_memory_first_perspective: "저는 [RICE_sri_lanka_monastery|E] [mahavihara|E]인 [mahavihara_i|E]을 후원하기 시작했습니다." # 17807095504488991627
   RICE_sri_lanka_start_patronizing_mahavihara_memory_second_perspective: "당신은 [mahavihara_i|E] [mahavihara|E] [RICE_sri_lanka_monastery|E]에 후원하기 시작했습니다." # 17020808631729422528

@@ -59,35 +59,35 @@
   RICE_yazidi_bull_sacrifice_host_memory: "[GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName] 활동을 수행했습니다." # 3641944104946470663
   RICE_yazidi_bull_sacrifice_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]을(를) 수행했습니다." # 8785676566831135854
   RICE_yazidi_bull_sacrifice_host_memory_second_perspective: "귀하는 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName] 활동을 수행했습니다." # 2318508537021729971
-  RICE_yazidi_bull_sacrifice_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yazidi_bull_sacrifice' ).GetName]를 거행하셨습니다." # 4922867688324381021
+  RICE_yazidi_bull_sacrifice_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]을(를) 거행했습니다" # 14393456825967005411
   RICE_yazidi_bull_sacrifice_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]를 거행했습니다." # 11759796864402549944
   RICE_yazidi_bull_sacrifice_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]를 거행했습니다." # 16157821785578983159
   RICE_yazidi_bull_sacrifice_guest_memory_second_perspective: "귀하는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]를 수행했습니다." # 4221380442390743263
-  RICE_yazidi_bull_sacrifice_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yazidi_bull_sacrifice' ).GetName]를 거행하셨습니다." # 17782762765250729070
+  RICE_yazidi_bull_sacrifice_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_yazidi_bull_sacrifice' ).GetName]을(를) 거행했습니다" # 14037544943874659728
   RICE_yazidi_yarsani_jam_host_memory: "[GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 4098320537786827600
   RICE_yazidi_yarsani_jam_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 12595504317930125660
   RICE_yazidi_yarsani_jam_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 18359821929592382792
-  RICE_yazidi_yarsani_jam_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여하셨습니다." # 9484096758422765018
+  RICE_yazidi_yarsani_jam_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다" # 2150693843264296486
   RICE_yazidi_yarsani_jam_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 1049469434220077494
   RICE_yazidi_yarsani_jam_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]이 주최한 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 9254343381725571971
   RICE_yazidi_yarsani_jam_guest_memory_second_perspective: "[host.GetTitledFirstName]이 주최한 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 4314344518887032165
-  RICE_yazidi_yarsani_jam_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다." # 17520094545666273312
+  RICE_yazidi_yarsani_jam_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_yazidi_yarsani_jam' ).GetName]에 참여했습니다" # 9936028552653491377
   RICE_yazidi_tiwaf_host_memory: "[GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다" # 14991736292932420186
   RICE_yazidi_tiwaf_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다." # 2203960131276128590
   RICE_yazidi_tiwaf_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 참석했습니다." # 3337038290833297608
-  RICE_yazidi_tiwaf_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yazidi_tiwaf' ).GetName]에 참석하셨습니다." # 7240122597488012972
+  RICE_yazidi_tiwaf_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다" # 2715036326368009242
   RICE_yazidi_tiwaf_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 참석했습니다." # 78174475547559383
   RICE_yazidi_tiwaf_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다." # 11127155722955650905
   RICE_yazidi_tiwaf_guest_memory_second_perspective: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다." # 18407724817135082064
-  RICE_yazidi_tiwaf_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yazidi_tiwaf' ).GetName]에 참여했습니다." # 12772079698499845397
+  RICE_yazidi_tiwaf_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_yazidi_tiwaf' ).GetName]에 다녀왔습니다" # 11088009294233189495
   RICE_yazidi_tawus_geran_host_memory: "[GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 390828821774864427
   RICE_yazidi_tawus_geran_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 3738494951613767326
   RICE_yazidi_tawus_geran_host_memory_second_perspective: "[GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName] 활동에 참여하셨습니다." # 1668077841096107605
-  RICE_yazidi_tawus_geran_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여하셨습니다." # 17048664359667053898
+  RICE_yazidi_tawus_geran_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다" # 10929545912125415651
   RICE_yazidi_tawus_geran_guest_memory: "[host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 6345759560301830504
   RICE_yazidi_tawus_geran_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 5154917045940800564
   RICE_yazidi_tawus_geran_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 5483589553710825857
-  RICE_yazidi_tawus_geran_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다." # 1320331716233225592
+  RICE_yazidi_tawus_geran_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_yazidi_tawus_geran' ).GetName]에 참여했습니다" # 6850297670308647099
   activity_RICE_yazidi_bull_sacrifice_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_yazidi_bull_sacrifice: "미트라에게 황소 제물 바치기" # 10753049529789311169
   activity_RICE_yazidi_bull_sacrifice_desc: "미트라, 혹은 메흐르가 황소를 최초로 희생함으로써 우주가 창조되었습니다. 이제 황소의 제물 의식을 통해 이 우주적 사건을 재현해 봅시다." # 14055412509058127484

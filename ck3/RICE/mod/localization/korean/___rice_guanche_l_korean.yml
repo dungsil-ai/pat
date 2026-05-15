@@ -8,19 +8,19 @@
   RICE_guanche_rain_ritual_host_memory: "[GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName] 행사를 거행했습니다." # 17091101272769661144
   RICE_guanche_rain_ritual_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]를 수행했습니다." # 255129542072957947
   RICE_guanche_rain_ritual_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]을 수행했습니다." # 13598298516635391398
-  RICE_guanche_rain_ritual_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_guanche_rain_ritual' ).GetName]을(를) 수행하셨습니다." # 11813715002494558887
+  RICE_guanche_rain_ritual_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]을(를) 수행했습니다" # 509499718140714427
   RICE_guanche_rain_ritual_guest_memory: "[host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]에 참여했습니다." # 18244664738809996218
   RICE_guanche_rain_ritual_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]에 참여했습니다." # 4074574488514676763
   RICE_guanche_rain_ritual_guest_memory_second_perspective: "[host.GetTitledFirstName]께서 주관하신 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]에 참여했습니다." # 3343564963725549783
-  RICE_guanche_rain_ritual_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]이 주관한 [GetActivityType(  'activity_RICE_guanche_rain_ritual' ).GetName]에 참여했습니다." # 12879598486634276874
+  RICE_guanche_rain_ritual_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님이 주최한 [GetActivityType( 'activity_RICE_guanche_rain_ritual' ).GetName]에 참여했습니다" # 234422445801218733
   RICE_guanche_benesmen_festival_host_memory: "[GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName] 지역 축제에 참석했습니다." # 10381337110296005736
   RICE_guanche_benesmen_festival_host_memory_first_perspective: "저는 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 14602569239852434037
   RICE_guanche_benesmen_festival_host_memory_second_perspective: "당신은 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 5057701377599632549
-  RICE_guanche_benesmen_festival_host_memory_third_perspective: "[owner.GetName]께서 지역 [GetActivityType(  'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석하셨습니다." # 795748388320103875
+  RICE_guanche_benesmen_festival_host_memory_third_perspective: "[owner.GetName]께서 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다" # 11286358322647907998
   RICE_guanche_benesmen_festival_guest_memory: "[host.GetTitledFirstName]과 함께 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 4045120963184251129
   RICE_guanche_benesmen_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 9113091190743404130
   RICE_guanche_benesmen_festival_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 6629288806711441342
-  RICE_guanche_benesmen_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 지역 [GetActivityType(  'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다." # 5868737577325996458
+  RICE_guanche_benesmen_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 지역 [GetActivityType( 'activity_RICE_guanche_benesmen_festival' ).GetName]에 참석했습니다" # 9789845356929872866
   activity_RICE_guanche_rain_ritual_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_guanche_rain_ritual: "비 내리는 의식" # 17079976966588339301
   activity_RICE_guanche_rain_ritual_desc: "[GetPlayer.GetFaith.PantheonTerm]께서 저희 영지에 풍성한 비를 내려주시어, 작물을 기르고 번성하게 해주시겠습니까? 우리는 하늘에 대한 헌신을 보이고, 가까운 시일 내에 생명을 주는 비를 기원해야 합니다." # 4136572151820300055

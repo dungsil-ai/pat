@@ -90,35 +90,35 @@
   RICE_pamir_chawmos_festival_host_memory: "[GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다" # 8209630040971412096
   RICE_pamir_chawmos_festival_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다." # 4269869379551186528
   RICE_pamir_chawmos_festival_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다." # 7601271232262035782
-  RICE_pamir_chawmos_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석하셨습니다." # 12322569266863833942
+  RICE_pamir_chawmos_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다" # 15289025466990462577
   RICE_pamir_chawmos_festival_guest_memory: "[GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 [host.GetTitledFirstName]와 함께 참석했습니다." # 9127966262208124873
   RICE_pamir_chawmos_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다." # 6615541416069571473
   RICE_pamir_chawmos_festival_guest_memory_second_perspective: "귀하는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다." # 746039492787002076
-  RICE_pamir_chawmos_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다." # 13243992542132844902
+  RICE_pamir_chawmos_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chawmos_festival' ).GetName]에 참석했습니다" # 17758147726130547773
   RICE_pamir_chinir_festival_host_memory: "[GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 7784111403505248017
   RICE_pamir_chinir_festival_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 1181812576779528127
   RICE_pamir_chinir_festival_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 16250078799879096173
-  RICE_pamir_chinir_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_pamir_chinir_festival' ).GetName]에 참석하셨습니다." # 9657327255882393417
+  RICE_pamir_chinir_festival_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다" # 2180948935958695697
   RICE_pamir_chinir_festival_guest_memory: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 2814162033218364412
   RICE_pamir_chinir_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 4066010507202209632
   RICE_pamir_chinir_festival_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 17354312119629177424
-  RICE_pamir_chinir_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다." # 3884378925648643072
+  RICE_pamir_chinir_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_chinir_festival' ).GetName]에 참석했습니다" # 5076809050657088798
   RICE_pamir_tumshiling_festival_host_memory: "지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]를 후원했습니다." # 4397845163473840742
   RICE_pamir_tumshiling_festival_host_memory_first_perspective: "저는 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName] 행사를 후원했습니다." # 11006440205171795951
   RICE_pamir_tumshiling_festival_host_memory_second_perspective: "귀하는 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName] 행사에 후원했습니다." # 253625585874967258
-  RICE_pamir_tumshiling_festival_host_memory_third_perspective: "[owner.GetName]께서 지역 [GetActivityType(  'activity_RICE_pamir_tumshiling_festival' ).GetName]를 후원하셨습니다." # 4352331576091357832
+  RICE_pamir_tumshiling_festival_host_memory_third_perspective: "[owner.GetName]께서 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]를 후원했습니다" # 2609943188235317118
   RICE_pamir_tumshiling_festival_guest_memory: "[host.GetTitledFirstName]이 후원한 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]에 참석했습니다." # 2722519939884836731
   RICE_pamir_tumshiling_festival_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]께서 후원하신 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]에 참석했습니다." # 14756073465876827232
   RICE_pamir_tumshiling_festival_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]께서 후원하신 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]에 참석했습니다." # 7248080928646143741
-  RICE_pamir_tumshiling_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]이 후원하는 지역 [GetActivityType(  'activity_RICE_pamir_tumshiling_festival' ).GetName]에 참석했습니다." # 4526932987361628228
+  RICE_pamir_tumshiling_festival_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]가 후원하는 지역 [GetActivityType( 'activity_RICE_pamir_tumshiling_festival' ).GetName]에 참석했습니다" # 2138595156449463975
   RICE_pamir_nasir_khusraw_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName] 순례를 떠났습니다" # 5520507597982631690
   RICE_pamir_nasir_khusraw_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName] 성지 순례에 다녀왔습니다." # 1034273042384147047
   RICE_pamir_nasir_khusraw_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]을/를 떠났습니다." # 13658429357282831413
-  RICE_pamir_nasir_khusraw_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]을 떠나셨습니다." # 12985240593656753281
+  RICE_pamir_nasir_khusraw_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]를 떠났습니다" # 12467763358200155052
   RICE_pamir_nasir_khusraw_pilgrimage_guest_memory: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]에 다녀왔습니다" # 15667898155441657893
   RICE_pamir_nasir_khusraw_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]에 다녀왔습니다." # 13205385332062580536
   RICE_pamir_nasir_khusraw_pilgrimage_guest_memory_second_perspective: "[host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName] 순례에 동행하셨습니다." # 15080373857574762372
-  RICE_pamir_nasir_khusraw_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]를 떠나셨습니다." # 6169486810227412072
+  RICE_pamir_nasir_khusraw_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_pamir_nasir_khusraw_pilgrimage' ).GetName]를 떠났습니다" # 15129554202578723634
   activity_RICE_pamir_offer_riches_to_zun_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_pamir_offer_riches_to_zun: "준의 우상에게 드리는 의식적 제물" # 6799218903804244850
   activity_RICE_pamir_offer_riches_to_zun_desc: "세속적인 부를 바쳐 주눈께 공물을 드리는 것이 우리의 올바른 관습이며, 주눈의 우상 앞에 이 선물을 바치는 것보다 주눈을 기쁘게 할 더 좋은 방법은 없습니다." # 12858156347325692675

@@ -229,11 +229,11 @@
   RICE_normandy_mont_saint_michel_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName] 순례를 떠났습니다" # 8311019234887411839
   RICE_normandy_mont_saint_michel_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]에 다녀왔습니다." # 7894969232115994854
   RICE_normandy_mont_saint_michel_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]에 다녀왔습니다." # 17074771278938104751
-  RICE_normandy_mont_saint_michel_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]를 떠나셨습니다." # 16820217850943687863
+  RICE_normandy_mont_saint_michel_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 18174721862905200721
   RICE_normandy_mont_saint_michel_pilgrimage_guest_memory: "[GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]에 [host.GetTitledFirstName]와 함께 순례를 다녀왔습니다." # 8130301223255735049
   RICE_normandy_mont_saint_michel_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]에 다녀왔습니다." # 2483201922007591641
   RICE_normandy_mont_saint_michel_pilgrimage_guest_memory_second_perspective: "귀하는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]를 다녀왔습니다." # 17166886037269160852
-  RICE_normandy_mont_saint_michel_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]를 떠나셨습니다." # 2546621064368567789
+  RICE_normandy_mont_saint_michel_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_normandy_mont_saint_michel_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 16730288500476342331
   activity_RICE_normandy_saint_aubert_procession_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_normandy_saint_aubert_procession: "성 오베르의 행렬" # 8050797804418929847
   activity_RICE_normandy_saint_aubert_procession_desc: "매년 [GetTitleByKey('b_avranches').GetNameNoTier]의 기독교도들은 성 오베르의 유해를 [GetBuilding('RICE_normandy_mont_saint_michel_02').GetName]에서 마을 거리로 모시고 행렬을 조직하는 관습이 있습니다. 그들은 이 행사 중에 수많은 기적이 일어난다고 말합니다." # 9430192105234271646

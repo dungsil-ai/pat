@@ -20,11 +20,11 @@
   RICE_aachen_pilgrimage_host_memory: "[GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다." # 12001443222799826251
   RICE_aachen_pilgrimage_host_memory_first_perspective: "저는 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다." # 13218100973268129575
   RICE_aachen_pilgrimage_host_memory_second_perspective: "당신은 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다." # 10344420778547939547
-  RICE_aachen_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType(  'activity_RICE_aachen_pilgrimage' ).GetName]를 떠나셨습니다." # 2267999376445198156
+  RICE_aachen_pilgrimage_host_memory_third_perspective: "[owner.GetName]께서 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 6698896076283525784
   RICE_aachen_pilgrimage_guest_memory: "[host.GetTitledFirstName]과 함께 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다" # 7473280315499157017
   RICE_aachen_pilgrimage_guest_memory_first_perspective: "저는 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다." # 6918286241650291536
   RICE_aachen_pilgrimage_guest_memory_second_perspective: "당신은 [host.GetTitledFirstName]와 함께 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]에 다녀왔습니다." # 14022833336148140377
-  RICE_aachen_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]와 함께 [GetActivityType(  'activity_RICE_aachen_pilgrimage' ).GetName]에 참여하셨습니다." # 15992043509917400916
+  RICE_aachen_pilgrimage_guest_memory_third_perspective: "[owner.GetName]께서 [host.GetTitledFirstName]님과 함께 [GetActivityType( 'activity_RICE_aachen_pilgrimage' ).GetName]을(를) 떠나셨습니다" # 10615306819349544753
   activity_aachen_pilgrimage_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_aachen_pilgrimage: "아헨 성지 순례" # 11980837577661351394
   activity_aachen_pilgrimage_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] 아헨 성지 순례" # 5531138532306424026
