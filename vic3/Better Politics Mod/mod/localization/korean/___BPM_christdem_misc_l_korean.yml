@@ -353,7 +353,6 @@
   from_reconcillation_with_liberalism: "공화주의와의 화해" # 7796054297036870263
   from_catholic_political_involment: "가톨릭계의 참여" # 4328464675672298028
   je_bpm_testing_stuff_tooltip: "[Country.MakeScope.GetScriptValueDesc('bpm_je_christdem_ideological_power')]" # 8204375524420310185
-  je_bpm_testing_stuff_2_tooltip: "[Country.MakeScope.GetScriptValueDesc('bpm_je_clacon_ideological_power')]" # 1110613452880011958
   bpm_new_wine_in_old_wineskins_modifier: "새로운 포도주 시음" # 8031027339593291474
   bpm_clacons_win_tt: "[SCOPE.sCharacter('christdem_leader').GetFullName]는 모든 영향력을 잃고 정치적으로 무력해집니다." # 9713113183087744409
   bpm_christde_win_tt: "[SCOPE.sCharacter('clacon_leader').GetFullName]은 모든 영향력을 잃고 정치적으로 무력해집니다." # 545719169760744502

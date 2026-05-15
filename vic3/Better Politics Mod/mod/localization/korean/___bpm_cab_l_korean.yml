@@ -38,9 +38,12 @@
   bpm_hog_title_default_regent: "섭정" # 1919131421246908676
   bpm_hog_title_default_grand_vizier: "대재상" # 8143477990367753806
   bpm_hog_title_default_mukhtar: "무크타르" # 5391510318573621731
+  bpm_hog_title_default_speaker_of_the_house: "하원의장" # 2998434373690595297
+  bpm_hog_title_default_secretary_of_state: "국무장관" # 14201484275403361159
   bpm_hog_title_ruler: "[GetPlayer.GetRuler.GetPrimaryRoleTitle]" # 3505174872101764316
-  bpm_hog_title_ruler_interim: "$bpm_hog_title_default$ 직책 수행 중" # 350063604237838910
+  bpm_hog_title_ruler_interim: "권한대행 $bpm_hog_title_default_contextless$" # 5371400072076681786
   appoint_as_hog_tt: "[SCOPE.sCharacter('char_in_question').GetFullName] 님이 $bpm_hog_title_default_contextless$(으)로 임명될 것입니다." # 1477370429058070879
+  appoint_as_hog_heir_tt: "[SCOPE.sCharacter('char_in_question').GetFullName] 님이 $bpm_character_role_protege$ 직위에 오를 것입니다" # 1712091793851667008
   bpm_cabinet_hog_modifiers: "$bpm_hog_modifier_desc$" # 5673984816954046540
   BPMANTHEAD: "#header 반감으로부터:#!\n [GetStaticModifier('bpm_schools_capis_modifier').GetDesc]" # 13680899900755266099
   ANTAGONISM: "#red;bold;shadow [Concept('concept_character', 'Antagonistic')]#!\n본 [concept_character]는 이 [concept_institution]의 존재에 반대하거나, 그들의 [concept_interest_group]의 지지율이 [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] 미만입니다." # 13384875366891616539
@@ -183,24 +186,25 @@
   bpm_character_role_rozyu: "#gold;bold 로쥬#!" # 3536696336001021599
   bpm_minint_name: "#gold;bold [GetPlayer.GetCustom('bpm_minint_name')]#!" # 10651981740293631515
   bpm_minint_name_default: "내무부" # 16103345919160601687
-  bpm_minint_name_shogunate: "내세봉행 #lore ($bpm_minint_name_default$)#!" # 8778842791798856628
-  bpm_minint_name_usa: "법무장관실 #lore ($bpm_minint_name_default$)#!" # 5487672908266580161
+  bpm_minint_name_shogunate: "내세부교" # 17542320368671130616
+  bpm_minint_name_usa: "법무장관실" # 6683575848419170878
   bpm_minsoc_name: "#gold;bold [GetPlayer.GetCustom('bpm_minsoc_name')]#!" # 78198644619118017
   bpm_minsoc_name_default: "사회부" # 7398686572878435950
-  bpm_minsoc_name_shogunate: "서민봉행 #lore ($bpm_minsoc_name_default$)#!" # 4391306897631486877
-  bpm_minsoc_name_usa: "국가 보건복지위원회 #lore ($bpm_minsoc_name_default$)#!" # 6726341875868936376
+  bpm_minsoc_name_shogunate: "서민부교" # 14996490201479664078
+  bpm_minsoc_name_usa: "주 보건복지위원회" # 8201538862688250763
   bpm_minmor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minmor_name')]#!" # 9389264357357866756
   bpm_minmor_name_default: "교육부" # 9629760178780345699
-  bpm_minmor_name_shogunate: "교화방식 #lore ($bpm_minmor_name_default$)#!" # 1039397459613821070
-  bpm_minmor_name_usa: "교육위원회 #lore ($bpm_minmor_name_default$)#!" # 460219268687389826
+  bpm_minmor_name_shogunate: "교화가타" # 14815243247171963891
+  bpm_minmor_name_usa: "교육위원회" # 10014186701822216800
   bpm_minfor_name: "#gold;bold [GetPlayer.GetCustom('bpm_minfor_name')]#!" # 10019072038901754414
   bpm_minfor_name_default: "외무부" # 3450184831760996160
-  bpm_minfor_name_shogunate: "외국봉행 #lore ($bpm_minfor_name_default$)#!" # 14322652573326652155
-  bpm_minfor_name_usa: "국무부 #lore ($bpm_minfor_name_default$)#!" # 10751876659682247031
+  bpm_minfor_name_shogunate: "외국부교" # 11185493173093754067
+  bpm_minfor_name_usa: "국무부" # 12222430346321776126
+  bpm_minfor_name_usa_war: "전쟁부" # 7205965598949816100
   bpm_mineco_name: "#gold;bold [GetPlayer.GetCustom('bpm_mineco_name')]#!" # 3902746341662178536
   bpm_mineco_name_default: "경제부" # 1817022707219549945
-  bpm_mineco_name_shogunate: "감정봉행 #lore ($bpm_mineco_name_default$)#!" # 2686960541754469076
-  bpm_mineco_name_usa: "재무부 #lore ($bpm_mineco_name_default$)#!" # 17761709385180043900
+  bpm_mineco_name_shogunate: "감정부교" # 9453225905213735643
+  bpm_mineco_name_usa: "재무부" # 309800156446447162
   bpm_appoint_minint: "$bpm_minint_name$(으)로 임명" # 8757236320823546102
   bpm_fire_minint: "$bpm_minint_name$에서 해임" # 7670322506591319152
   bpm_appoint_minsoc: "$bpm_minsoc_name$(으)로 임명" # 4172492733190643465
@@ -211,7 +215,28 @@
   bpm_fire_minfor: "$bpm_minfor_name$에서 해임" # 7503453104685674321
   bpm_appoint_minmor: "$bpm_minmor_name$(으)로 임명" # 16377227320566564016
   bpm_fire_minmor: "$bpm_minmor_name$에서 해임" # 5775290160693279309
-  bpm_character_role_minister: "#gold;bold 장관#!" # 11747263593795260096
+  bpm_ministry_locked_tt: "우리는 이 직위에 대한 임명권을 [concept_interest_group]에게 #bold 양도하지#! 않았습니다" # 9937041016587651292
+  bpm_character_role_minister: "[Character.GetCustom('bpm_minister_custom')]" # 17987363838722661140
+  bpm_character_role_minister_default: "#gold;bold 장관#!" # 11747263593795260096
+  bpm_character_role_minister_mineco: "[Character.GetCountry.GetCustom('bpm_role_mineco_country_specific')]" # 7494656598054527496
+  bpm_character_role_minister_mineco_usa: "#gold;bold 재무장관#!" # 6104018719071771756
+  bpm_character_role_minister_mineco_shogunate: "#gold;bold $bpm_mineco_name_shogunate$#!" # 7930242105484543736
+  bpm_character_role_minister_mineco_default: "#gold;bold 경제부 장관#!" # 13005602271707515514
+  bpm_character_role_minister_minint: "[Character.GetCountry.GetCustom('bpm_role_minint_country_specific')]" # 13563068813783569069
+  bpm_character_role_minister_minint_usa: "#gold;bold 법무 장관#!" # 15776544470510851137
+  bpm_character_role_minister_minint_shogunate: "#gold;bold $bpm_minint_name_shogunate$#!" # 14084560227288979552
+  bpm_character_role_minister_minint_default: "#gold;bold 내무 장관#!" # 3463575898388225766
+  bpm_character_role_minister_minsoc: "[Character.GetCountry.GetCustom('bpm_role_minsoc_country_specific')]" # 16147871345871113136
+  bpm_character_role_minister_minsoc_shogunate: "#gold;bold $bpm_minsoc_name_shogunate$#!" # 918312393023535963
+  bpm_character_role_minister_minsoc_default: "#gold;bold 사회부 장관#!" # 7334508691769649166
+  bpm_character_role_minister_minfor: "[Character.GetCountry.GetCustom('bpm_role_minfor_country_specific')]" # 685417208333051947
+  bpm_character_role_minister_minfor_shogunate: "#gold;bold $bpm_minfor_name_shogunate$#!" # 3343146613683304338
+  bpm_character_role_minister_minfor_usa: "#gold;bold 국무 장관#!" # 10799972794840449163
+  bpm_character_role_minister_minfor_usa_war: "#gold;bold 육군 장관#!" # 18413638169100317211
+  bpm_character_role_minister_minfor_default: "#gold;bold 외무 장관#!" # 366468636255383202
+  bpm_character_role_minister_minmor: "[Character.GetCountry.GetCustom('bpm_role_minmor_country_specific')]" # 16958460502151020270
+  bpm_character_role_minister_minmor_shogunate: "#gold;bold $bpm_minmor_name_shogunate$#!" # 14059967189265504398
+  bpm_character_role_minister_minmor_default: "#gold;bold 교육 장관#!" # 7678700214717368717
   bpm_character_role_hog: "#gold;bold $bpm_hog_title_default$#!" # 1073543536920311163
   bpm_appoint_pm: "$bpm_hog_title_default$(으)로 임명" # 717279083400144397
   bpm_fire_pm: " $bpm_hog_title_default$ 해임" # 18376332154665421678
