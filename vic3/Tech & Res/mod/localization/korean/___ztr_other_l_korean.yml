@@ -285,6 +285,8 @@
   ship_type_nuclear_carrier_desc: "장기간의 파병을 위해 대양 전역에 항공 전력을 투사할 수 있는 현대식 항공모함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 7505838519474130615
   ship_type_nuclear_submarine: "현대식 잠수함" # 17073630598133626773
   ship_type_nuclear_submarine_desc: "긴 작전 지속 능력, 낮은 피탐지성, 전략 유도 미사일 운용 능력을 갖춘 현대식 잠수함입니다. 항속 거리를 늘리기 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 9673238374713532094
+  ship_type_modern_troop_ship: "현대식 병력 수송선" # 15313071341504822401
+  ship_type_modern_troop_ship_desc: "병력의 신속한 전개, 상륙 작전, 원양 군사 물류를 위해 설계된 개량형 현대식 원양 수송선입니다." # 11558279471461991840
   ship_mod_slot_electronics: "전자 장비" # 8906035645440450140
   ship_mod_slot_missiles: "미사일" # 4292618955463830602
   ship_mod_slot_air_wing: "항공단" # 8734574285905660555
@@ -300,6 +302,9 @@
   ship_mod_modern_destroyer_propulsion_light: "포스터 휠러 보일러 기관" # 16888730083047638088
   ship_mod_modern_destroyer_propulsion_medium: "올림푸스-타인 COGOG 기관" # 722231647869528225
   ship_mod_modern_destroyer_propulsion_high: "LM2500 COGAG 기관" # 6420250898145057139
+  ship_mod_modern_troop_ship_propulsion_light: "연소 공학 보일러 공장" # 10168442515716561550
+  ship_mod_modern_troop_ship_propulsion_medium: "콜트-필스틱 COSAG 공장" # 1732722564316584614
+  ship_mod_modern_troop_ship_propulsion_high: "MTU 8000 시리즈 디젤 공장" # 15821940556525566513
   ship_mod_nuclear_submarine_propulsion_light: "페어뱅크스-모스 디젤-전기 기관" # 202577530181119526
   ship_mod_nuclear_submarine_propulsion_medium: "스털링 AIP 기관" # 9938883910949871663
   ship_mod_nuclear_submarine_propulsion_nuclear: "S5W 원자력 반응로 기관" # 15181827850936053034
@@ -357,3 +362,15 @@
   extra: "호외" # 1397922501206358188
   ztr_swiss_neutral_financial_hub: "중립적 금융 허브" # 7435698664851519347
   ztr_swiss_neutral_financial_hub_desc: "스위스의 중립성과 연방 다원주의, 그리고 안전한 회담 장소라는 명성은 유럽 전역의 자본과 채권자, 상업적 신뢰를 끌어모으고 있습니다." # 9479597905821198894
+  country_ship_type_modern_destroyer_construction_efficiency_add: "$ship_type_modern_destroyer$ 건조 효율" # 9008556902045446558
+  country_ship_type_modern_destroyer_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_destroyer$')] @ship_construction! [concept_ship_construction] 효율" # 12426635802344188467
+  country_ship_type_modern_cruiser_construction_efficiency_add: "$ship_type_modern_cruiser$ 건조 효율" # 10191755656436742533
+  country_ship_type_modern_cruiser_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_cruiser$')] @ship_construction! [concept_ship_construction] 효율" # 7616568600330290563
+  country_ship_type_modern_battleship_construction_efficiency_add: "$ship_type_modern_battleship$ 건조 효율" # 7543496379620033453
+  country_ship_type_modern_battleship_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_battleship$')] @ship_construction! [concept_ship_construction] 효율" # 5772359763900415877
+  country_ship_type_nuclear_carrier_construction_efficiency_add: "$ship_type_nuclear_carrier$ 건조 효율" # 9626727525453721314
+  country_ship_type_nuclear_carrier_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_nuclear_carrier$')] @ship_construction! [concept_ship_construction] 효율" # 16866053692597907894
+  country_ship_type_nuclear_submarine_construction_efficiency_add: "$ship_type_nuclear_submarine$ 건조 효율" # 7218611629403249788
+  country_ship_type_nuclear_submarine_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_nuclear_submarine$')] @ship_construction! [concept_ship_construction] 효율" # 11999699143869365959
+  country_ship_type_modern_troop_ship_construction_efficiency_add: "$ship_type_modern_troop_ship$ 건조 효율" # 14965787543101315401
+  country_ship_type_modern_troop_ship_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_troop_ship$')] @ship_construction! [concept_ship_construction] 효율" # 8254029106958615507

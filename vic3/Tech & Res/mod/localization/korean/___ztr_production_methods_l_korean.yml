@@ -794,3 +794,8 @@
   pm_nuclear-fission_plant_3: "핵분열 발전소" # 7432757473815202239
   pm_geothermal_turbine_2: "지열 터빈" # 4854560334655354025
   pm_geothermal_turbine_3: "지열 터빈" # 4854560334655354025
+  pmg_carbon_capture_building_oil_rig: "탄소 포집" # 361469759085402873
+  pmg_carbon_capture_building_urban_center: "탄소 포집" # 361469759085402873
+  pm_no_carbon_capture: "탄소 포집 없음" # 3150940174889447937
+  pm_co2_enhanced_oil_recovery: "CO2-EOR 저장" # 10459493305524208722
+  pm_urban_carbon_capture: "도시 탄소 포집" # 16224591405543966408
