@@ -1,0 +1,30 @@
+﻿l_korean:
+  hog_regency.1.t: "$bpm_hog_title_default_contextless$의 아이" # 16028665378143755630
+  hog_regency.1.d: "$bpm_hog_title_default_contextless$의 작위가 아직 성년에 이르지 못한 [SCOPE.sCharacter('hog_scope').GetFullName]에게 계승되었습니다. 대행 $bpm_hog_title_default_contextless$를 선출하는 임무는 현 정부에게 맡겨졌습니다." # 467105372386799841
+  hog_regency.1.f: "\"당신의 첫 번째 임무는 $bpm_hog_title_default_contextless$가 성년이 될 때까지 [ROOT.GetCountry.GetNameNoFormatting]의 안정을 유지하는 것입니다. 우리는 아이를 양육할 책임을 질 준비가 되어 있습니다. 대리 부모로서의 역할을 맡으라는 것이 아니니 안심하십시오.\"\n\n사절은 잠시 멈추고 장관의 대답을 기다렸습니다.\n\n\"알겠습니다.\" 장관이 대답했습니다. \"교육 문제에 관해서는 [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]에서 필요한 예산을 집행할 준비가 되어 있습니다. 그 외에 무엇이 필요합니까?\"" # 2988792464799099101
+  hog_regency.1.a: "[SCOPE.sCharacter('acting_hog_scope').GetFullName]은 어린 $bpm_hog_title_default_contextless$를 대신하여 통치 책임을 맡게 될 것입니다." # 5291023806802100661
+  modifier_acting_hog: "정부 수반 대행" # 5389612533567514732
+  modifier_acting_hog_landowners: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_devout: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_petty_bourgeoisie: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_industrialists: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_trade_unions: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_intelligentsia: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_armed_forces: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_rural_folk: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_conservatives: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_reactionaries: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_liberals: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_radicals: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_national_liberals: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_market_liberals: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_christian_democrats: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_fascists: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_agrarian_populists: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_reformist_socialists: "$modifier_acting_hog$" # 10602194309217574098
+  modifier_acting_hog_socialists: "$modifier_acting_hog$" # 10602194309217574098
+  hog_regency.3.t: "$bpm_hog_title_default_contextless$의 성년 도달" # 10412191486529470721
+  hog_regency.3.d: "$bpm_hog_title_default_contextless$의 성년 도달로 [SCOPE.sCharacter('hog_scope').GetFullName] 님이 이제 $bpm_hog_title_default_contextless$가 될 수 있습니다. [SCOPE.sCharacter('acting_hog_scope').GetFullName] 님은 더 이상 임시 $bpm_hog_title_default_contextless$ 역할을 수행하지 않습니다." # 6119176914301452749
+  hog_regency.3.f: "[SCOPE.sCharacter('acting_hog_scope').GetFullNameNoFormatting] 님은 사제가 마지막 도유 의식을 거행하는 모습을 지켜보았습니다. 오늘과 어제의 $bpm_hog_title_default_contextless$ 사이의 차이는 [SCOPE.sCharacter('acting_hog_scope').GetSheHe]가 상상했던 것보다 훨씬 더 극명했습니다. [SCOPE.sCharacter('hog_scope').GetSheHe|U]는 이전보다 더 당당하게 서 있었고, 얼굴에는 숙련된 결의가 서려 있었습니다. [SCOPE.sCharacter('hog_scope').GetHerHis] 어깨 위에 놓인 예복은 마치 무게가 없는 듯 보였습니다.\n\n사제가 물러나자 팡파르가 울려 퍼졌고, 궁궐 밖에서는 대포 소리가 천둥처럼 울렸습니다.\n\n\"내가 여기서 약속한 것들을 수행하고 지키겠노라\" $bpm_hog_title_default_contextless$가 낭독했습니다. \"[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]이시여, 저를 도우소서.\"" # 14885693580743355121
+  hog_regency.3.a: "$bpm_hog_title_default_contextless$ 폐하 만세!" # 17379284527436162716
+  regency.1.a: "[SCOPE.sCharacter('regent_scope').GetFullName] 님이 어린 [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]를 대신하여 통치의 책임을 맡게 됩니다." # 2672909036513538412

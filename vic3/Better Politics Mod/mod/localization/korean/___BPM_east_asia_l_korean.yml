@@ -11,7 +11,7 @@
   je_bpm_xinjiang_reason: "만주와 몽골의 초원 지대부터 서쪽 변방의 사막에 이르기까지, 광활한 영토가 지난 두 세기 동안 대청(大淸)에 의해 중국 본토를 넘어 정복되었습니다. 이 지역들은 현재 군사 총독부터 충성스러운 부족 권위자에 이르기까지 다양한 방식으로 통치되고 있으며, 따라서 베이징이 이 땅들을 통제하는 힘은 식민 열강과 반란을 일으키는 현지 세력에 의해 언제나 위협받는, 보나마나 위태로운 수준입니다. 우리가 만약 이 지역들을 핵심 주로 편입시키기를 희망한다면, 우리가 해야 할 일이 많습니다.\n\n#lore \"중화(中華)라는 관점이 존재하는데, 이 관점에 따르면 한족(漢族)이 아닌 자들은 중국의 신민이 될 수 없으며 그들의 땅은 중국의 영토로 통합될 수 없습니다. 이는 우리 왕조의 중국에 대한 이해가 아니라, 이전 한(漢), 당(唐), 송(宋), 명(明) 왕조들의 이해입니다...\"\n\n-건륭제(乾隆帝), 1755년!" # 14406242953705881541
   xinjiang_integration_tt: "$xinjiang_states_tt$ 주들은 통합되었으며 [concept_turmoil]이 10% 미만입니다." # 17670808235331625260
   xinjiang_states_tt: "#tooltippable;tooltip:[Country.GetTooltipTag]je_bpm_xinjiang_special_tooltip 중화(!" # 3456608331055484493
-  je_bpm_xinjiang_special_tooltip: "• 칭하이\n• 타림 분지\n• 중가리아\n• 알라샨\n• 내몽골\n• 북만주\n• 남만주\n• 포르모사" # 8488357894600481014
+  je_bpm_xinjiang_special_tooltip: "• [GetStateRegion('STATE_QINGHAI').GetName]\n• [GetStateRegion('STATE_TIANSHAN').GetName]\n• [GetStateRegion('STATE_DZUNGARIA').GetName]\n• [GetStateRegion('STATE_ALXA').GetName]\n• [GetStateRegion('STATE_HINGGAN').GetName]\n• [GetStateRegion('STATE_NORTHERN_MANCHURIA').GetName]\n• [GetStateRegion('STATE_SOUTHERN_MANCHURIA').GetName]\n• [GetStateRegion('STATE_FORMOSA').GetName]" # 12526947409118351262
   xinjiang_decisions_tt: "모든 조직 결정이 완료되었습니다." # 12095591482034570914
   je_xinjiang_button_manchu: "동북을 조직하시오" # 16453664635786715309
   je_xinjiang_button_manchu_desc: "만주족의 북동쪽 고향은 오랫동안 특별 총독부로 통치되어 왔으며, 이제 우리는 이 지역을 정비하고 정식 주로 발전시킬 권한을 갖게 되었습니다." # 16653783058260556185

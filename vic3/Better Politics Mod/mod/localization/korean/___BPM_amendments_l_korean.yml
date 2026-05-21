@@ -3,6 +3,8 @@
   bpm_amendment_sharecropping_desc: "$bpm_amendment_sharecropping$" # 8569176375132303689
   law_repeatable_politics_repeal_amendment: "[GetPlayer.MakeScope.Var('bpm_repealing_amendment').GetAmendment.GetName]을(를) [GetPlayer.MakeScope.Var('bpm_repealing_amendment_law').GetLaw.GetName]에서 폐지합니다" # 17733994603294219760
   law_repeatable_politics_repeal_amendment_other: "수정안 폐지" # 4420808519199146687
-  BPM_REPEAL_AMENDMENT: "[GetScriptedGui('bpm_repeal_amendment_confirmation_gui').IsValidTooltip(GuiScope.SetRoot(Country.MakeScope).AddScope('at', Amendment.GetType.MakeScope).End)]\n$TOOLTIP_DELIMITER$\n[GetScriptedGui('bpm_repeal_amendment_confirmation_gui').ExecuteTooltip(GuiScope.SetRoot(Country.MakeScope).AddScope('at', Amendment.GetType.MakeScope).End)]" # 8334328991317738224
+  BPM_REPEAL_AMENDMENT: "[GetScriptedGui('bpm_repeal_amendment_confirmation_gui').IsValidTooltip(GuiScope.SetRoot(Country.MakeScope).AddScope('at', Amendment.MakeScope).End)]\n[AddTextIf(Not(GetScriptedGui('bpm_repeal_amendment_confirmation_gui').IsValid(GuiScope.SetRoot(Country.MakeScope).AddScope('at', Amendment.MakeScope).End))), Localize('TOOLTIP_DELIMITER'))]\n[GetScriptedGui('bpm_repeal_amendment_confirmation_gui').ExecuteTooltip(GuiScope.SetRoot(Country.MakeScope).AddScope('at', Amendment.MakeScope).End)]" # 14464989460626785490
   bpm_repeal_amendment_title: "수정안 폐지" # 4420808519199146687
   bpm_repeal_amendment_text: "정말로 이 [concept_amendment]을(를) 폐지하시겠습니까?\n\n이 행동은 [concept_law] 제정을 시작할 것입니다." # 12242249785597710976
+  BPM_AMENDMENT_CAN_BE_REPEALED: "#tooltippable;tooltip:BPM_AMENDMENT_CAN_BE_REPEALED_TT #bold 개정안을 폐지할 수 있습니다#!" # 10968320844983843690
+  BPM_AMENDMENT_CAN_BE_REPEALED_TT: "이 개정안은 헌법상 조항이거나 그 외의 불가분한 이유로 인해, 부속된 법률에서 제거할 수 없습니다." # 3826088019312485676

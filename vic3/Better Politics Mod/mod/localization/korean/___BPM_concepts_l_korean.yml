@@ -227,4 +227,10 @@
   concept_bpm_minister_skill: "장관 기술 수준" # 2845241860791138503
   concept_bpm_minister_skill_desc: "[concept_bpm_minister]의 기술은 그들의 [Concept('concept_character_trait','특성')], 에 의해 결정되며, 이는 그들의 [Concept('concept_institution', '관료 조직')]의 최대 투자 수준에 영향을 미칩니다:\n @arrow_up! #yellow 숙련된#! [Concept('concept_bpm_minister','관료')]는 그들의 [Concept('concept_institution', '관료 조직')]의 최대 투자 수준을 #P 증가#시킵니다! #v 1#!\n @arrow_down! #yellow 무능한#! [Concept('concept_bpm_minister','관료')]는 그들의 [Concept('concept_institution', '관료 조직')]의 최대 투자 수준을 #N 감소#시킵니다! #v 1#!\n\n#v 관료를 임명하면 사용 가능한 #yellow 가장 유능한#! 후보를 선택하게 됩니다.#!\n개방적이고 민주적인 국가는 더 넓은 범위의 기술 수준을 가진 후보들을 보유하는 반면, 권위주의적이거나 전통주의적인 국가는 유용한 인재를 찾는 데 어려움을 겪을 수 있습니다." # 10762003152919087593
   concept_bpm_head_of_government: "정부 수반" # 17149476486584694027
+  concept_bpm_head_of_government_possessive: "정부 수반의" # 9843240657150380919
   concept_bpm_head_of_government_desc: "정부 수반은 정부 행정부 내에서 가장 강력한 관료이며, 귀관의 [Concept('concept_bpm_minister','장관')들] 중 으뜸입니다. 일부 국가에서는 이 직책이 국왕이나 대통령에 의해 임명되는 총리이지만, 다른 경우에는 정부 수반이 국가 원수와 동일 인물입니다." # 12184930420152578087
+  concept_bpm_regent: "섭정" # 1919131421246908676
+  concept_bpm_regent_desc: "[concept_bpm_regent]은 [concept_ruler]가 스스로 통치할 수 없을 때 그를 대신하여 통치합니다. [Concept('concept_ruler','$concept_ruler_possessive$')]의 미성년기 또는 기타 무능력 상태가 지속되는 동안, 섭정은 [Concept('concept_ruler','$concept_ruler_possessive$')]를 대신하여 거부권을 행사할 법안을 결정합니다." # 270318613915469639
+  concept_bpm_acting_hog: "대행 정부 수반" # 5389612533567514732
+  concept_bpm_acting_hog_possessive: "대행 정부 수반의" # 12419251503509043181
+  concept_bpm_acting_hog_desc: "대행 [concept_bpm_head_of_government]은 [concept_bpm_head_of_government]가 스스로 통치할 수 없을 때 그를 대신하여 통치합니다. [Concept('concept_bpm_head_of_government','$concept_bpm_head_of_government_possessive$')]의 미성년기 또는 기타 무능력 상태가 지속되는 동안, 대행 [concept_bpm_head_of_government]은 [Concept('concept_bpm_head_of_government','$concept_bpm_head_of_government_possessive$')]를 대신하여 거부권을 행사할 법안을 결정합니다." # 9314023687126545380
