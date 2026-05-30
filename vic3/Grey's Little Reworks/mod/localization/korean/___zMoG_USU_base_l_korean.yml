@@ -5,13 +5,14 @@
   mog_construction_max_level_adjustment: "도시 시너지 건설" # 13394416346466036272
   mog_logistics_land_trade: "수입된 물류 서비스로부터의 육상 무역 수용력" # 11285839192358909526
   mog_mapi: "도시 시너지 MAPI" # 5887179299247092014
-  mog_subfarm_modifiers_occupancy_scaled: "도시 시너지 기반 자급자족이 기반 시설에 미치는 영향" # 3509829082906133831
+  mog_subfarm_modifiers_occupancy_scaled: "USU: 자급 농업 점유율이 출생률에 미치는 영향" # 16379481094448586821
   mog_subfarm_throughput_balancing: "USU: 균형 수정치" # 7082488782729437777
   usu_bg_port_infrastructure: "항구" # 903628802830546578
   usu_bg_river_port_infrastructure: "항구" # 903628802830546578
   usu_bg_public_greens: "공공 녹지" # 914602411673393494
   building_river_port: "강 항구" # 1897252420354551649
   usu_building_public_green: "공공 녹지" # 4902506650784473523
+  bg_usu_rail_infrastructure: "철도 기반 시설" # 9475185149790393798
   bg_usu_railway_line: "철도" # 16013470052125388391
   building_usu_railway_line: "철도" # 16274738701182925479
   usu_logistics: "물류 서비스" # 1845133651397782828
@@ -50,6 +51,8 @@
   state_usu_building_public_green_max_level_add_desc: "$usu_building_public_green$ 건물의 최대 레벨에 대한 보너스 또는 페널티." # 8137336294313193054
   building_through_tracking_add: "USU: 추적 수정치" # 3936815573844138176
   building_through_tracking_add_desc: "수학적 출력 값을 추적하는 데 사용되는 수정치입니다." # 7250287364518516067
+  building_group_bg_usu_rail_infrastructure_throughput_add: "$bg_usu_rail_infrastructure$ [concept_throughput]" # 2160186927348062187
+  building_group_bg_usu_rail_infrastructure_throughput_add_desc: "$bg_usu_rail_infrastructure$의 투입 및 산출량에 대한 보너스 또는 페널티" # 14303255027262619964
   goods_input_tools_mult: "@tools! 건설에는 @tools!의 투입물이 필요합니다" # 3462529394369931513
   goods_input_tools_mult_desc: "건물들이 소모하는 @tools! [Nbsp]$tools$의 양" # 466033741322162381
   goods_input_steel_mult: "@steel! 건설에 $steel$ 투입" # 14305719518461117553
