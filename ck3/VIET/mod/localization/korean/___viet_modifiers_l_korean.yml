@@ -1624,4 +1624,22 @@
   VIET_regulated_human_waste: "오물 규제" # 299039940555051042
   VIET_regulated_human_waste_desc: "현지 정착지에 오물이 점점 쌓여감에 따라, 당국은 공중 보건과 주변 지역의 미관을 유지하기 위해 오물 처리에 관한 엄격한 규칙을 시행할 수밖에 없게 되었습니다." # 10832682427226018565
   VIET_successful_foresters: "성공적인 임업 관행" # 6625936892409399516
+  VIET_reading_oneirokritika: "오네이로크리티카를 통한 꿈 해몽" # 5901357803349573734
+  VIET_reading_oneirokritika_desc: "이 인물은 꿈의 의미를 확인하기 위해 정기적으로 [Glossary( 'oneirokritika', 'ONEIROKRITIKA_GLOSS' )]와 상담합니다." # 12894660048436106451
+  VIET_servants_interpreting_dreams: "연로한 하인들을 통한 꿈 해몽" # 15244738800236918843
+  VIET_servants_interpreting_dreams_desc: "이 인물은 꿈의 의미를 확인하기 위해 정기적으로 연로하고 지혜로운 하인들과 상담합니다." # 10734808641094310000
+  VIET_double_headed_dragon_protection: "쌍두룡의 가호" # 3445351341128948154
+  VIET_double_headed_dragon_protection_desc: "몸이 꼬인 웅장한 쌍두룡의 작은 조각상이 이 인물의 거처 일부를 장식하고 있습니다. 이 조각상은 가문을 해로부터 보호한다고 여겨집니다." # 6572905840252571262
+  VIET_double_headed_eagle_protection: "쌍두독수리의 가호" # 2326150809659006337
+  VIET_double_headed_eagle_protection_desc: "마법적이고 치유의 힘을 지닌 쌍두독수리의 작은 조각상이 이 인물의 거처 일부를 장식하고 있습니다. 이 조각상은 가문을 해로부터 보호한다고 여겨집니다." # 2693254047245558673
+  VIET_sirens_and_harpies_protection: "세이렌과 하르피이아의 가호" # 14108963136668986545
+  VIET_sirens_and_harpies_protection_desc: "매혹적이지만 두려운 세이렌과 하르피이아의 작은 조각상이 이 인물의 거처 일부를 장식하고 있습니다. 이 조각상은 가문을 해로부터 보호한다고 여겨집니다." # 558686410409080101
+  VIET_peacocks_of_paradise_protection: "낙원의 공작새의 가호" # 11596449706299632390
+  VIET_peacocks_of_paradise_protection_desc: "아름다운 낙원의 공작새의 작은 조각상이 이 인물의 거처 일부를 장식하고 있습니다. 이 조각상은 가문을 해로부터 보호한다고 여겨집니다." # 15405856452338471417
+  VIET_turkic_patron_of_the_occult: "$heritage_turkic_name$ 오컬트의 후원자" # 16846900350339076096
+  VIET_turkic_patron_of_the_occult_desc: "이 튀르크 인물은 자신의 통치권을 공고히 하기 위한 일환으로 지리학, 점성술, 천문학 등 오컬트 학문을 연구하는 학자들을 후원해 왔습니다." # 161234313545940198
+  VIET_avoiding_stinky_foods: "냄새나는 음식 피하기" # 5906519761434012215
+  VIET_enjoying_garos: "가로스 즐기기" # 9483399511541648236
+  VIET_enjoying_garos_desc: "이 인물은 비록 냄새에 익숙해지기까지 시간이 걸릴지라도 [Glossary( 'garos', 'GAROS_GLOSS' )]가 들어간 음식을 즐깁니다." # 14643191533222457056
+  VIET_learning_about_surgeries: "외과 수술에 대해 배우기" # 10966135505801196426
   xxxxxxxxxx: "xxx" # 4339025660404407451

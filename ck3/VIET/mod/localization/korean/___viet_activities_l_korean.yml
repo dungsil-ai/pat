@@ -116,7 +116,7 @@
   activity_VIET_ancient_stone_monument_examination_selection_tooltip: "지역의 고대 석조 기념물로 가십시오.\n\n예상 보상:$activity_VIET_ancient_stone_monument_examination_rewards_tooltip$" # 4804263272946016753
   activity_VIET_ancient_stone_monument_examination_host_desc: "$activity_VIET_ancient_stone_monument_examination_rewards_tooltip$\n\n$VIET_decision_examine_ancient_stone_monument_context_tooltip$" # 15416068278927669048
   activity_VIET_ancient_stone_monument_examination_guest_desc: "$activity_VIET_ancient_stone_monument_examination_host_desc$" # 15800086386674332912
-  activity_VIET_ancient_stone_monument_examination_province_desc: "이곳에는 주목할 만한 고대의 석조 기념물이 있습니다." # 8673071306735519189
+  activity_VIET_ancient_stone_monument_examination_province_desc: "이곳에는 주목할 만한 고대의 석조 기념물이 자리하고 있습니다." # 6821202905723150649
   activity_VIET_ancient_stone_monument_examination_destination_selection: "$activity_VIET_ancient_stone_monument_examination_province_desc$" # 1569369514302666853
   activity_VIET_ancient_stone_monument_examination_guest_help_text: "$activity_VIET_ancient_stone_monument_examination$" # 12085930346675869137
   activity_VIET_ancient_stone_monument_examination_predicted_cost: "고대 석조 기념물을 조사하는 비용은 주로 귀하의 [income|E]에 따라 결정됩니다." # 9850407647516201714

@@ -280,12 +280,17 @@
   VIETmisc.7063.desc: "앞쪽을 보니 길과 주변 땅이 마치 작은 흙더미 같은 것들로 뒤덮여 있었습니다.\n\n“두더지 언덕이군요.” [traveler_1.GetFirstName]가 우울하게 말합니다. “조심해야겠어요. 자칫하다간 발이 걸려 넘어질지도 모릅니다. [ROOT.Char.GetCurrentLocation.GetName]의 현지인들은 #italic 아주 많은#! 두더지를 상대해야 하나 봅니다.”\n\n“어쩌면 그들은 두더지 언덕이 있는 걸 더 좋아할지도 모르죠.” [traveler_2.GetFirstName]가 제안합니다. “농부들에게는 좋은 흙을 표면으로 끌어올리는 나쁘지 않은 방법이거든요. 말하자면 두더지에게 궂은일을 대신 시키는 셈이죠.”" # 7320845063590835501
   VIETmisc.7063.a: "어리석은 해충들을 항상 조심해야 하는 법이다." # 12797326878902746453
   VIETmisc.7063.b: "두더지가 파낸 흙을 이용하다니, 영리한 생각이군!" # 1384586840315291207
-  VIETmisc.7064.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
-  VIETmisc.7064.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.7064.a: "xxxxx" # 1951045980481827005
-  VIETmisc.7065.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
-  VIETmisc.7065.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.7065.a: "xxxxx" # 1951045980481827005
+  VIETmisc.7064.t: "$travel_event_prefix$ 가로스" # 1603097692595219596
+  VIETmisc.7064.desc: "음식 상인이 웃음을 터뜨립니다. [traveler.GetFirstName]은 자신의 메스꺼운 표정이 [county_culture.GetName] 음식의 강렬한 냄새 때문이라고 설명했습니다.\n\n[ROOT.Char.GetCurrentLocation.GetName]에서 지금까지 발견한 음식 중 상당수는 훌륭해 보입니다. 폭신한 #italic 스풍가타#! 오믈렛, 기름진 #italic 알란티아#!와 #italic 살치키아#! 소시지, 엉긴 치즈, 풍미 가득한 병아리콩 등 종류도 다양하지만, 안타깝게도 [traveler.GetFirstNameNoTooltip]에게는 그 대부분이 [Glossary( 'garos', 'GAROS_GLOSS' )]와 섞여 있습니다.\n\n“외지인들은 정말 #italic 가로스#!의 참맛을 모르는군, 그렇지?” 상인이 낄낄거립니다. “문명 세계에서 생선 소스는 어디에나 잘 어울리는 법이지! 뭐… 거의 모든 것에 말이야. 바클라바에는 어울리지 않겠지만, 누가 알겠어?”" # 8144941224096011810
+  VIETmisc.7064.a: "나도 그 악취는 도저히 참을 수가 없군." # 11285404351502827031
+  VIETmisc.7064.b: "익숙해지면 정말 맛있는 음식이란다!" # 13706603347988061109
+  VIETmisc.7065.t: "$travel_event_prefix$ 바클라바 상인" # 11334379689465895211
+  VIETmisc.7065.desc: "“달콤한 바클라바! 달콤한 바클라바 사시오! 세상에서 가장 달콤한 [peddler.GetCulture.GetName] 바클라바요!” 상인이 외칩니다.\n\n[ROOT.Char.GetCurrentLocation.GetName]의 이 마을에 도착한 이후로 줄곧 배가 고팠던 나는 호기심에 서둘러 다가갑니다.\n\n“관심 있으시오?” [peddler.GetSheHe]가 미소 짓습니다. “이 바클라바는 여행자들에게 아주 그만이지. 최고급 꿀로 만든 맛 좋고 감미로운 페이스트리라오.”" # 12980026428713464279
+  VIETmisc.7065.a: "좋군! 그 바클라바를 좀 사겠소." # 11172423012978942011
+  VIETmisc.7065.b: "나 같은 사람에게는 좀 싸게 해줄 수 있지 않겠소?" # 9246954794086382016
+  VIETmisc.7065.b.toast_neutral: "더 나은 가격으로 흥정하는 데 실패했습니다" # 12239942656290622465
+  VIETmisc.7065.b.toast_good: "더 나은 가격으로 흥정하는 데 성공했습니다" # 9287083507555265279
+  VIETmisc.7065.c: "오늘은 아무것도 사고 싶지 않군." # 9080462975056229255
   VIETmisc.7066.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
   VIETmisc.7066.desc: "xxxxx" # 1951045980481827005
   VIETmisc.7066.a: "xxxxx" # 1951045980481827005
