@@ -251,3 +251,5 @@
   goods_output_global_electricity_add_desc: "건물이 생산하는 @global_electricity! 국가 전력의 양" # 16806489066412282364
   goods_output_global_electricity_mult: "건물 @global_electricity! 국가 전력 생산량" # 8362694685285162869
   goods_output_global_electricity_mult_desc: "건물이 생산하는 @global_electricity! 국가 전력 생산량에 대한 보너스 또는 페널티" # 18085558281426966720
+  goods_input_light_fuel_mult: "@light_fuel! Light Fuel input"
+  goods_input_light_fuel_mult_desc: "The amount of @light_fuel! Light Fuel produced by buildings"
