@@ -54,6 +54,3 @@
   communism_1: "[GetPlayerJournalEntry('je_communism_1').GetName|v]" # 14051451805870210308
   bpm_bnap_can_big_money: "돈 :)" # 8814642864698201009
   bpm_bnap_hbc_big_money: "$bpm_bnap_can_big_money$" # 14890118987925918685
-  bpm_is_republic_no_tt: "[ROOT.GetCountry.GetName]은(는) [GetLawType('law_presidential_republic').GetName]도, [GetLawType('law_council_republic').GetName]도 아닙니다." # 10386864477024884284
-  bpm_is_republic_yes_tt: "[ROOT.GetCountry.GetName]은(는) [GetLawType('law_presidential_republic').GetName]이거나 [GetLawType('law_council_republic').GetName]입니다." # 3801994185283768193
-  bpm_is_bourgeois_republic_no_tt: "[ROOT.GetCountry.GetName]은(는) [GetLawType('law_presidential_republic').GetName]입니다." # 7449674755517212937

@@ -87,8 +87,8 @@
   law_armed_neutrality_desc: "외교 정책은 외국 분쟁에 대한 고립주의적 불간섭을 중심으로 하며, 적절히 강력한 군대를 통해 외부 침략으로부터의 국가 안보를 확보합니다." # 15880105524234707176
   law_disarmed_nation: "무장 해제된 국가" # 2216988352957867207
   law_disarmed_nation_desc: "외국 개입의 범위를 제한하고 군사 지출을 다른 분야로 재분배하는 완전한 평화주의 정책 세트입니다." # 8774160417551606796
-  country_bpm_aggressive_diplomacy_disabled: "공격적인 [Concept('concept_diplomatic_play', '외교전')]을 사용할 수 없습니다." # 9022430085154115228
-  country_bpm_aggressive_diplomacy_disabled_desc: "대부분의 전쟁 목표로는 [Concept('concept_diplomatic_play', '외교적 시도')]를 시작할 수 없습니다." # 4892440062190734989
+  country_bpm_aggressive_diplomacy_disabled: "공격적인 [Concept('concept_diplomatic_play', '외교전')]을 사용할 수 있음" # 2195971518843066516
+  country_bpm_aggressive_diplomacy_disabled_desc: "대부분의 전쟁 명분을 사용하여 [Concept('concept_diplomatic_play', '외교전')]을 시작할 수 있음." # 6436142154066798890
   bpm_aggressive_diplomacy_permitted_tt: "공격적인 [Concept('concept_diplomatic_play', '외교적 책동')] 허용" # 398817951903302472
   country_bpm_ban_slavery_dp_enabled: "노예제 폐지 사용하기 [Concept('concept_diplomatic_play', 'Diplomatic Play')]" # 1756391196077864353
   country_bpm_ban_slavery_dp_enabled_desc: "'개척된 외교적 행위'를 '노예제 폐지' 목표로 개시할 수 있습니다." # 18204133330804989778
