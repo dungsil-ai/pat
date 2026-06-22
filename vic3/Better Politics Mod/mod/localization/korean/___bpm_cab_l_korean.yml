@@ -243,6 +243,7 @@
   bpm_character_role_acting_hog_contextless: "[Concept('concept_bpm_acting_hog', 'Acting')] [Concept('concept_bpm_acting_hog', GetPlayer.GetCustom('bpm_hog_title_country_spec'))]" # 18299718671561902566
   bpm_appoint_pm: "$bpm_hog_title_default$(으)로 임명" # 717279083400144397
   bpm_fire_pm: " $bpm_hog_title_default$ 해임" # 18376332154665421678
+  bpm_fire_minister: "[concept_bpm_minister] 해임" # 6906394912294996538
   bpm_cabinet_empty: "@information! 다른 [concept_character]를 #bold 우클릭#!하고 #yellow 캐릭터 상호작용#!을 사용하여 #yellow 장관#!을 교체하십시오." # 15250157166255448514
   bpm_show_ministry_interactions: "부처 상호작용 표시" # 8729394577692040447
   bpm_hide_ministry_interactions: "부처 상호작용 숨기기" # 15537610105419016084
