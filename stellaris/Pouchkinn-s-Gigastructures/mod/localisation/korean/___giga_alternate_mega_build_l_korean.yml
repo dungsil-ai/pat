@@ -5,6 +5,8 @@
   mod_country_giga_sr_amb_megaconstruction_produces_mult: "월간 $giga_sr_amb_megaconstruction$" # 3896292729559549786
   mod_country_base_giga_sr_amb_megaconstruction_produces_add: "월간 $giga_sr_amb_megaconstruction$" # 3896292729559549786
   mod_megastructures_giga_sr_amb_megaconstruction_upkeep_mult: "거대 구조물 $giga_sr_amb_megaconstruction$ 유지비" # 7177092907431759312
+  giga_sr_amb_megaconstruction_deficit: "giga_sr_amb_megaconstruction_deficit" # 4445730240007697549
+  giga_amb_mega_speed: "giga_amb_mega_speed" # 18397303824749616419
   giga_tooltip_positive: "§G+" # 15288271211863828670
   giga_tooltip_positive_bad: "§R+" # 1597222694952619232
   giga_tooltip_negative: "§R" # 16123708913174128434
@@ -60,8 +62,15 @@
   mod_job_giga_megaengineer_per_pop_short: "§G+1§! £mod_job_giga_megaengineer_add£당 $VALUE$ £pop£당" # 2210227575030741259
   mod_job_giga_megaengineer_automated_workforce_mult: "$job_giga_megaengineer_swap_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$" # 17789126130045513332
   job_giga_megaengineer_drone: "슈퍼텐사일 드론" # 12243721433463812209
+  giga_megaengineer_drone_wilderness: "인장 공생체" # 2225629955089191836
+  job_giga_megaengineer_drone_wilderness: "$giga_megaengineer_drone_wilderness$" # 13980887764139908219
+  job_job_giga_megaengineer_drone_wilderness: "$giga_megaengineer_drone_wilderness$" # 13980887764139908219
   job_giga_megaengineer_drone_plural: "슈파텐사일즈 드론" # 11887340349216211269
+  giga_megaengineer_drone_wilderness_plural: "인장 공생체들" # 1686003996367690084
+  job_giga_megaengineer_drone_wilderness_plural: "$giga_megaengineer_drone_wilderness_plural$" # 7792569609206763537
   job_giga_megaengineer_drone_desc: "대규모 우주 건설에 사용되는 특수 자재는 그에 상응하는 전문 인력을 필요로 합니다." # 1123511006417538015
+  giga_megaengineer_drone_wilderness_desc: "이 근면한 동물들이 짜낸 거미줄은 놀라운 인장 특성을 지니고 있어, 대기권 밖의 기념비적인 구조물을 성장시키는 데 적합합니다." # 7110834029383033171
+  job_giga_megaengineer_drone_wilderness_desc: "$giga_megaengineer_drone_wilderness_desc$" # 4368169072636886883
   job_giga_megaengineer_drone_effect_desc: "$job_giga_megaengineer_drone_swap_plural_with_icon$는 £alloys£ §Y$alloys$§!와 £unity£ §Y$unity$§!를 £giga_sr_amb_megaconstruction£ §Y$giga_sr_amb_megaconstruction$§!(으)로 변환합니다." # 3852040152945109828
   job_giga_megaengineer_drone_swap_plural_with_icon: "[giga_megaengineer_drone.GetIcon] [giga_megaengineer_drone.GetNamePlural]" # 30153916275272121
   mod_job_giga_megaengineer_drone_add: "[giga_megaengineer_drone.GetName] 직업" # 16001269234223315273
@@ -86,8 +95,14 @@
   mod_job_giga_megaengineering_overseer_per_pop: "팝 $VALUE$당 [giga_megaengineering_overseer.GetName] 직업 §G+1§!" # 2172496452970819770
   mod_job_giga_megaengineering_overseer_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_megaengineering_overseer_add£" # 17253800956281599445
   job_giga_megaengineering_overseer_drone: "거대구조물 건설 감독관" # 11710472946234361478
+  giga_megaengineering_overseer_drone_wilderness: "신경 인장 공생체" # 430872740594000151
+  job_giga_megaengineering_overseer_drone_wilderness: "$giga_megaengineering_overseer_drone_wilderness$" # 2923666425262084634
   job_giga_megaengineering_overseer_drone_plural: "거대 구조물 건설 감독관" # 15237785669775926684
+  giga_megaengineering_overseer_drone_wilderness_plural: "신경 인장 공생체들" # 9572913810357198639
+  job_giga_megaengineering_overseer_drone_wilderness_plural: "$giga_megaengineering_overseer_drone_wilderness_plural$" # 6685804205597340864
   job_giga_megaengineering_overseer_drone_desc: "이 고도로 전문화된 드론 클러스터는 초대규모 건설 및 물류 프로젝트 관리에 필요한 엄청난 양의 처리 작업을 감당합니다." # 13418597053418582260
+  giga_megaengineering_overseer_drone_wilderness_desc: "상리 공생하는 신경 낭종이 인장 공생체 군집 간의 영양분과 산물 전달을 최적화합니다." # 9678198868531454451
+  job_giga_megaengineering_overseer_drone_wilderness_desc: "$giga_megaengineering_overseer_drone_wilderness_desc$" # 11915081231007800445
   job_giga_megaengineering_overseer_drone_effect_desc: "$job_giga_megaengineering_overseer_drone_swap_plural_with_icon$는 막대한 양의 £alloys£ §Y$alloys$§!와 £unity£ §Y$unity$§!를 £giga_sr_amb_megaconstruction£ §Y$giga_sr_amb_megaconstruction$§!(으)로 변환하지만, 유지비가 증가합니다." # 2641172808694177225
   job_giga_megaengineering_overseer_drone_swap_plural_with_icon: "[giga_megaengineering_overseer_drone.GetIcon] [giga_megaengineering_overseer_drone.GetNamePlural]" # 11123211691767881236
   mod_job_giga_megaengineering_overseer_drone_add: "[giga_megaengineering_overseer_drone.GetName] 직업" # 11063320624587062507
@@ -110,8 +125,14 @@
   mod_job_giga_supertensiles_extractor_per_pop: "§G+1§! $VALUE$ 팝당 [giga_supertensiles_extractor.GetName] 직업" # 14887699961348910424
   mod_job_giga_supertensiles_extractor_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_supertensiles_extractor_add£" # 15915812942662642787
   job_giga_supertensiles_extractor_drone: "슈퍼텐사일 채취 드론" # 18208440098973646709
+  job_giga_supertensiles_extractor_drone_wilderness: "축적 공생체" # 14171562634154262864
+  giga_supertensiles_extractor_drone_wilderness: "$job_giga_supertensiles_extractor_drone_wilderness$" # 15920177146712011957
   job_giga_supertensiles_extractor_drone_plural: "수퍼텐사일 추출 드론" # 4337680270797355134
+  job_giga_supertensiles_extractor_drone_wilderness_plural: "축적 공생체들" # 11797026431516638182
+  giga_supertensiles_extractor_drone_wilderness_plural: "$job_giga_supertensiles_extractor_drone_wilderness_plural$" # 11139188382057292817
   job_giga_supertensiles_extractor_drone_desc: "정밀 채굴 장비와 화학 처리 기술이 자연적이고 혼돈된 상태의 초인장 소재를 해체하는 데 사용됩니다." # 7812663962716419309
+  job_giga_supertensiles_extractor_drone_wilderness_desc: "틈새 화학 처리 적응을 통해 구성 요소가 자연적으로 존재하는 곳에서 초인장 재료를 합성할 수 있게 되었습니다." # 12483147695957490870
+  giga_supertensiles_extractor_drone_wilderness_desc: "$job_giga_supertensiles_extractor_drone_wilderness_desc$" # 6683501796350545293
   job_giga_supertensiles_extractor_drone_effect_desc: "$job_giga_supertensiles_extractor_drone_swap_plural_with_icon$은 £giga_sr_amb_megaconstruction£ §Y$giga_sr_amb_megaconstruction$§!을 생산합니다." # 9731794925959690191
   job_giga_supertensiles_extractor_drone_swap_plural_with_icon: "[giga_supertensiles_extractor_drone.GetIcon] [giga_supertensiles_extractor_drone.GetNamePlural]" # 7184123079782619884
   mod_job_giga_supertensiles_extractor_drone_add: "[giga_supertensiles_extractor_drone.GetName] 직업" # 7183891874186237985
@@ -187,7 +208,7 @@
   giga_amb.1000.no_tech: "[Root.GetName]이(가) [FromFrom.GetName]에서 이전에 알려지지 않은 전략 자원을 발견했습니다. §H$giga_sr_amb_megaconstruction$§!이라 명명된 이 조밀하게 엮인 섬유는 엄청난 수준의 인장 강도를 지니고 있어, 극복하기 어려운 힘으로 인해 이전에 건설이 불가능했던 대규모 프로젝트에 활용될 수 있습니다." # 4672253096696554088
   giga_amb.1000.tooltip: "£giga_sr_amb_megaconstruction£§Y$giga_sr_amb_megaconstruction$§!\n§E$giga_sr_amb_megaconstruction_desc_only$§!" # 8795514202584102967
   giga_amb.1001.name: "병참 오판" # 11285477022387621215
-  giga_amb.1001.desc: "우리가 우주 공간으로 첫걸음을 내디뎠을 때, 우리는 극복해야 할 새로운 도전들이 있을 것임을 알았고 그에 맞춰 계획을 세웠습니다. 적어도 우리는 그렇게 생각했습니다. 때로는 문제의 복잡성에 대한 최고의 추정치조차 틀릴 수 있습니다.\n\n대규모 우주 건설을 조직하고 실행하는 현실은 초기 예상보다 우리의 보급선에 더 큰 부담을 주고 있음이 입증되었으며, 앞으로 상당한 구조 조정이 필요할 것입니다.\n\n새로운 제조 및 배치 기술에 대한 연구의 잠재적인 경로는 이러한 문제들을 해결할 것을 약속하지만, 아직 입증되지는 않았습니다." # 17094375310437379617
+  giga_amb.1001.desc: "우리가 더 넓은 은하계로 첫발을 내디뎠을 때, 우리는 극복해야 할 새로운 도전이 있을 것임을 알고 그에 맞춰 계획을 세웠다고 생각했습니다. 때로는 문제의 복잡성에 대한 가장 정밀한 예측조차 빗나갈 수 있는 법입니다.\n\n대규모 우주 건설을 조직하고 실행하는 현실은 당초 예상보다 보급선에 더 큰 부담을 주었으며, 앞으로 상당한 구조 조정이 필요할 것입니다.\n\n새로운 제조 및 배치 기술 연구를 위한 잠재적인 경로가 이러한 문제를 해결할 수 있을 것으로 보이지만, 아직 검증되지는 않았습니다." # 10398507803814718377
   giga_amb.1001.tooltip: "\n§E§Y$giga_tech_amb_supertensiles$§! 연구는 상당한 초구조체 진전을 이루는 데 §P필수적일§! 것입니다." # 3264314881212097774
   sm_ring_giga_supertensiles_hub: "메가 물류 네트워크 조정관" # 5871380684546924645
   sm_ring_giga_supertensiles_hub_desc: "이 궤도 시설은 $sr_living_metal$을 사용하여 생산 공정을 효율화함으로써 우리의 지상 기반 $building_giga_megaworkshop_plural$을 강화하는 데 도움을 주며, 이는 전반적인 생산량 증대로 이어집니다." # 833953237511869567

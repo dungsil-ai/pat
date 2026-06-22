@@ -14,71 +14,82 @@
   ehof_quest_star_name: "$ehof_quest_prefix$[ehof_color_star_name.GetName]$ehof_quest_suffix$" # 18134885022987567582
   ehof_rare_star_name: "$ehof_rare_prefix$[ehof_color_star_name.GetName]$ehof_rare_suffix$" # 17932819121624453243
   ehof_standard_star_name: "$ehof_prefix$[ehof_color_star_name.GetName]$ehof_suffix$" # 12168258902482853271
-  solak_partisans_penalties: "디버그" # 143360522173664303
-  laurn_partisans_0: "디버그" # 143360522173664303
-  laurn_partisans_1: "디버그" # 143360522173664303
-  laurn_partisans_2: "디버그" # 143360522173664303
-  laurn_partisans_3: "디버그" # 143360522173664303
-  zousa_partisans_0: "디버그" # 143360522173664303
-  zousa_partisans_1: "디버그" # 143360522173664303
-  zousa_partisans_2: "디버그" # 143360522173664303
-  zousa_partisans_3: "디버그" # 143360522173664303
-  katzen_partisans_0: "디버그" # 143360522173664303
-  katzen_partisans_1: "디버그" # 143360522173664303
-  katzen_partisans_2: "디버그" # 143360522173664303
-  katzen_partisans_3: "디버그" # 143360522173664303
-  mercuria_partisans_0: "디버그" # 143360522173664303
-  mercuria_partisans_1: "디버그" # 143360522173664303
-  mercuria_partisans_2: "디버그" # 143360522173664303
-  mercuria_partisans_3: "디버그" # 143360522173664303
-  lyuin_partisans_0: "디버그" # 143360522173664303
-  lyuin_partisans_1: "디버그" # 143360522173664303
-  lyuin_partisans_2: "디버그" # 143360522173664303
-  lyuin_partisans_3: "디버그" # 143360522173664303
-  ravka_partisans_0: "디버그" # 143360522173664303
-  ravka_partisans_1: "디버그" # 143360522173664303
-  ravka_partisans_2: "디버그" # 143360522173664303
-  ravka_partisans_3: "디버그" # 143360522173664303
-  puffy_partisans_0: "디버그" # 143360522173664303
-  puffy_partisans_1: "디버그" # 143360522173664303
-  puffy_partisans_2: "디버그" # 143360522173664303
-  puffy_partisans_3: "디버그" # 143360522173664303
-  symby_partisans_0: "디버그" # 143360522173664303
-  symby_partisans_1: "디버그" # 143360522173664303
-  symby_partisans_2: "디버그" # 143360522173664303
-  symby_partisans_3: "디버그" # 143360522173664303
-  katown_partisans_0: "디버그" # 143360522173664303
-  katown_partisans_1: "디버그" # 143360522173664303
-  katown_partisans_2: "디버그" # 143360522173664303
-  katown_partisans_3: "디버그" # 143360522173664303
-  hke_centra_1: "디버그" # 143360522173664303
-  hke_centra_2: "디버그" # 143360522173664303
-  hke_centra_3: "디버그" # 143360522173664303
-  kaiser_moon_bombing: "디버그" # 143360522173664303
-  kaiser_moon_build_speed: "디버그" # 143360522173664303
-  kaiser_moon_gun_sabotaged: "디버그" # 143360522173664303
-  kaiser_moon_moon_sabotaged: "디버그" # 143360522173664303
-  kaiser_moon_thrusters_sabotaged: "디버그" # 143360522173664303
-  kaiser_moon_wings_sabotaged: "디버그" # 143360522173664303
-  kaiser_moon_sabotaged: "디버그" # 143360522173664303
-  ezic_sabotaged_armies: "디버그" # 143360522173664303
-  ezic_sabotaged_power: "디버그" # 143360522173664303
-  ezic_tropiana: "디버그" # 143360522173664303
-  only_joined_by_katzen_splinters: "디버그" # 143360522173664303
-  aeternum_debug_debuff: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_1: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_2: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_3: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_4: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_5: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_6: "디버그" # 143360522173664303
-  aeternum_comms_scramble_speed_7: "디버그" # 143360522173664303
-  giga_tech_aeternite_weaponry: "디버그" # 143360522173664303
-  giga_tech_aeternite_weaponry_desc: "디버그" # 143360522173664303
-  giga_accelerator.1000.name: "디버그" # 143360522173664303
-  giga_accelerator.1000.desc: "디버그" # 143360522173664303
-  giga_disco.1000.name: "디버그" # 143360522173664303
-  giga_disco.1000.desc: "디버그" # 143360522173664303
+  solak_partisans_penalties: "solak_partisans_penalties" # 7332009788243861899
+  laurn_partisans_0: "로른 파르티잔 0" # 16793713023925175297
+  laurn_partisans_1: "로른 파르티잔 1" # 18149075713676384208
+  laurn_partisans_2: "로른 파르티잔 2" # 18310495005670120286
+  laurn_partisans_3: "로른 파르티잔 3" # 3104535052878454186
+  zousa_partisans_0: "조사 파르티잔 0" # 14365194281623255926
+  zousa_partisans_1: "조사 파르티잔 1" # 13204158462261180776
+  zousa_partisans_2: "조사 파르티잔 2" # 13060645194369057072
+  zousa_partisans_3: "조사 파르티잔 3" # 1073096581452915081
+  katzen_partisans_0: "카첸 파르티잔 0" # 4236410718253182541
+  katzen_partisans_1: "카첸 파르티잔 1" # 13864407934679404512
+  katzen_partisans_2: "카첸 파르티잔 2" # 12533535524712637754
+  katzen_partisans_3: "카첸 파르티잔 3" # 5335613683516654022
+  mercuria_partisans_0: "머큐리아 파르티잔 0" # 3693780624852824448
+  mercuria_partisans_1: "머큐리아 파르티잔 1" # 2635979142428222594
+  mercuria_partisans_2: "머큐리아 파르티잔 2" # 3023175199714400284
+  mercuria_partisans_3: "머큐리아 파르티잔 3" # 10340893648602017765
+  lyuin_partisans_0: "류인 파르티잔 0" # 17306100858747361727
+  lyuin_partisans_1: "류인 파르티잔 1" # 2002777635054143483
+  lyuin_partisans_2: "류인 파르티잔 2" # 1696831907928012016
+  lyuin_partisans_3: "류인 파르티잔" # 7592343866039610559
+  ravka_partisans_0: "라브카 파르티잔" # 12822773746756342719
+  ravka_partisans_1: "라브카 파르티잔" # 10758156304704702969
+  ravka_partisans_2: "라브카 파르티잔" # 17656979803880806275
+  ravka_partisans_3: "라브카 파르티잔" # 13244621158884973245
+  puffy_partisans_0: "퍼피 파르티잔" # 497825502439954189
+  puffy_partisans_1: "퍼피 파르티잔" # 10630768355674442671
+  puffy_partisans_2: "퍼피 파르티잔" # 11578610941614918095
+  puffy_partisans_3: "퍼피 파르티잔" # 13488142275024095743
+  symby_partisans_0: "심바이 파르티잔" # 1863198128243501715
+  symby_partisans_1: "심바이 파르티잔" # 9163515564640622975
+  symby_partisans_2: "심바이 파르티잔" # 4122693383700423589
+  symby_partisans_3: "심바이 파르티잔" # 15679345716874058956
+  katown_partisans_0: "카타운 파르티잔" # 862121197136905873
+  katown_partisans_1: "카타운 파르티잔" # 3461014790951907472
+  katown_partisans_2: "카타운 파르티잔" # 14682542524750370589
+  katown_partisans_3: "카타운 파르티잔" # 13202488874144486138
+  ezic_resistance_1: "에직 저항군" # 16791969837516932046
+  ezic_resistance_2: "에직 저항군" # 7773375713555709360
+  ezic_resistance_3: "에직 저항군" # 9198171352011782123
+  ezic_resistance_4: "에지크 저항군" # 5545196701186089034
+  ezic_resistance_5: "에지크 저항군" # 17595788682801812836
+  solak_partisan_penalties: "solak_partisan_penalties" # 16036935184951983550
+  easy_katzen_tech_level_buffs: "easy_katzen_tech_level_buffs" # 5135760414163491254
+  katzen_tech_level_buffs: "katzen_tech_level_buffs" # 3159153306264620162
+  wildride_katzen_tech_level_buffs: "wildride_katzen_tech_level_buffs" # 10433144371771787629
+  stellarite_katzen_tech_level_buffs: "stellarite_katzen_tech_level_buffs:0 \"카첸 기술 레벨 강화\"" # 10430474680767658485
+  improbable_katzen_tech_level_buffs: "improbable_katzen_tech_level_buffs" # 14393741330889181896
+  hke_centra_1: "센트라 행성 방어" # 18381075107268359032
+  hke_centra_2: "센트라 행성 방어" # 2676488244566776454
+  hke_centra_3: "센트라 행성 방어" # 396005016128102184
+  kaiser_moon_bombing: "kaiser_moon_bombing" # 9809371404028221610
+  kaiser_moon_build_speed: "kaiser_moon_build_speed" # 14975707684533162354
+  kaiser_moon_gun_sabotaged: "kaiser_moon_gun_sabotaged:0 \"카이저의 달 포가 파괴되었습니다\"" # 12799148012599358344
+  kaiser_moon_moon_sabotaged: "kaiser_moon_moon_sabotaged:0 \"카이저의 달이 사보타주되었습니다\"" # 13973153729230754146
+  kaiser_moon_thrusters_sabotaged: "kaiser_moon_thrusters_sabotaged" # 12169542112925595685
+  kaiser_moon_wings_sabotaged: "kaiser_moon_wings_sabotaged: \"카이저의 달 날개가 파괴되었습니다\"" # 12260407123806368571
+  kaiser_moon_sabotaged: "kaiser_moon_sabotaged:0 \"카이저의 달이 사보타주되었습니다\"" # 10651229535365226648
+  ezic_sabotaged_armies: "ezic_sabotaged_armies" # 16069241503211430286
+  ezic_sabotaged_power: "ezic_sabotaged_power:0 \"이지크의 전력망 사보타주\"\nezic_sabotaged_power_desc:0 \"이 행성의 전력망이 이지크 반군에 의해 체계적으로 파괴되었습니다. 기반 시설의 마비로 인해 생산량이 급감하고 있습니다.\"" # 13448012985647520206
+  ezic_tropiana: "ezic_tropiana" # 5410447935271692477
+  only_joined_by_katzen_splinters: "only_joined_by_katzen_splinters" # 2526747911481995970
+  aeternum_debug_debuff: "aeternum_debug_debuff" # 1565521415156302724
+  aeternum_comms_scramble_speed_1: "에테르눔 통신 교란 속도 1" # 14609532884783411855
+  aeternum_comms_scramble_speed_2: "에테르눔 통신 교란 속도 2" # 8676762105791531812
+  aeternum_comms_scramble_speed_3: "에테르눔 통신 교란 속도 3" # 10244524941249473223
+  aeternum_comms_scramble_speed_4: "에테르눔 통신 교란 속도 4" # 10627989154536288848
+  aeternum_comms_scramble_speed_5: "에테르눔 통신 교란 속도 5" # 2783474610534282532
+  aeternum_comms_scramble_speed_6: "에테르눔 통신 교란 속도 6" # 3845135150255701561
+  aeternum_comms_scramble_speed_7: "에테르눔 통신 교란 속도 7" # 3900865978273026267
+  giga_tech_aeternite_weaponry: "giga_tech_aeternite_weaponry:0 \"에테르나이트 무기 체계\"" # 13707033111836145264
+  giga_tech_aeternite_weaponry_desc: "giga_tech_aeternite_weaponry_desc:0 \"아이테르니테의 고대 기술은 현대의 물리학적 한계를 아득히 뛰어넘습니다. 이 무기 체계는 물질과 반물질의 붕괴를 정밀하게 제어하여, 적의 분자 결합을 근본적으로 해체하는 파괴적인 에너지를 방출합니다. 은하계의 잊힌 시대에 만들어진 이 무기들은, 그 위력만으로도 문명의 종말을 고하기에 충분합니다.\"" # 14573178795123484180
+  giga_accelerator.1000.name: "giga_accelerator.1000.name:0 \"giga_accelerator 활성화\"" # 17636086391001181398
+  giga_accelerator.1000.desc: "giga_accelerator.1000.desc:0 \"우리의 과학자들은 거대 구조물인 #bold 니콜라이 다이슨 빔#을 가속하여, 성계 전체의 에너지를 단일 지점으로 집중시킬 수 있는 획기적인 방법을 발견했습니다. 이 #bold giga_accelerator#는 항성의 출력을 비약적으로 증폭시켜, 이전에는 상상조차 할 수 없었던 수준의 에너지를 추출할 수 있게 해줍니다. 이제 $empire_name$의 기술력은 은하계의 물리 법칙을 재정의하는 단계에 이르렀습니다.\"" # 9230180336140688912
+  giga_disco.1000.name: "giga_disco.1000.name:0 \"디스코의 부름\"" # 13854856107490831953
+  giga_disco.1000.desc: "giga_disco.1000.desc:0 \"은하계의 심연 속에서, 우리는 우주적 규모의 #bold 디스코# 현상이라 부를 수밖에 없는 기이한 신호를 포착했습니다. 이 신호는 단순한 전자기적 잡음이 아니며, 고도로 구조화된 비트와 리듬이 은하계 전역의 통신망을 타고 흐르고 있습니다. 마치 우주 자체가 거대한 댄스 플로어가 되어, 시공간의 진동을 따라 펄스처럼 박동하는 듯합니다. 이 기이한 리듬에 동조된 행성들의 지각은 미세하게 흔들리고 있으며, 수많은 종들이 알 수 없는 환희에 휩싸여 일제히 춤을 추기 시작했습니다. 이 현상의 근원이 무엇인지, 그리고 이것이 은하계의 운명에 어떤 영향을 미칠지는 아직 미지수입니다. 하지만 한 가지는 확실합니다. 은하계는 지금, 그 어느 때보다도 격렬하게 흔들리고 있습니다.\"" # 6511215017390695264
   sc_d: "§HD급 항성§!" # 6177653075900450633
   sc_o: "§HO형 항성§!" # 13242960845292270724
   sc_p_purple: "§H행성상 성운§!" # 10965853162113085895

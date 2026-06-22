@@ -58,6 +58,7 @@
   GIGA_FRAMEWORLD_MESSAGE_OUTPOST_POPS: "새로 건설한 §Y$PLANET$§!의 §Y$giga_frameworld_outpost$§! 덕분에 §Y$FRAME$§!에 §Y$SPECIES$§! 팝 §Y$pop$§! 한 개체가 도착했습니다." # 12203955995390699784
   GIGA_FRAMEWORLD_MESSAGE_OUTPOST_POPS_PLURAL: "§Y$COUNT$§! 개의 §Y$SPECIES$§! 팝이 §Y$PLANET$§!에 새로 건설된 §Y$giga_frameworld_outpost$§! 덕분에 §Y$FRAME$§!로 도착했습니다." # 3687370325785416382
   giga_frameworld_docs_note: "\n\n§Y기원 문서는 상황 기록부에서 찾을 수 있습니다.§!" # 8344290082947468309
+  giga_category_frameworld: "$giga_frameworld_docs_chain_title$" # 3874079845239516283
   giga_frameworld_docs_chain_title: "$pc_giga_frameworld$ 문서" # 10727090875092868615
   giga_frameworld_docs_chain_desc: "§Y$pc_giga_frameworld$§! 기원은 단일 수도 행성에 크게 집중하는 \"단일 행성\" 플레이 방식을 제공합니다. 식민지 개척선을 사용할 수 없으며, 수도를 잃으면 패배합니다. 건물 슬롯은 제한되지만, 구역은 무한히 확장할 수 있습니다.\n\n이 메뉴의 하위 범주에서 추가 정보를 확인하십시오." # 15722908265524881155
   giga_frameworld_docs_expansion: "확장" # 9841444435173684892
@@ -216,14 +217,14 @@
   job_frame_maintenance_worker: "프레임 유지보수 노동자" # 5223180767850365772
   job_frame_maintenance_worker_plural: "프레임 유지보수 작업자" # 5482825389628391507
   job_frame_maintenance_worker_desc: "이전 실업자들. 정거장 시스템을 유지하고 보충하도록 재훈련되고 재배치되었습니다." # 10814064488129056036
-  job_frame_maintenance_worker_effect_desc: "£job_frame_maintenance_worker£ $job_frame_maintenance_worker_plural$은 소량의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 생산하고, §Y$mod_planet_jobs_produces_mult$§!을 증가시키며, §Y$mod_planet_jobs_upkeep_mult$§!을 증가시키고, 모든 유형의 £mod_planet_pop_assembly_mult£ £mod_pop_growth_speed£ §Y보조 팝 성장§!을 감소시킵니다." # 10508399327009557738
+  job_frame_maintenance_worker_effect_desc: "£job_frame_maintenance_worker£ $job_frame_maintenance_worker_plural$는 소량의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지비 자원§!을 생산하고, §Y$mod_planet_jobs_produces_mult$§!와 §Y$mod_planet_jobs_upkeep_mult$§!를 증가시키며, 모든 종류의 £mod_planet_pop_assembly_mult£ £mod_logistic_growth_mult£ §Y2차 팝 성장§!을 감소시킵니다." # 4290661050247616410
   mod_job_frame_maintenance_worker_add: "$job_frame_maintenance_worker$ 일자리" # 15855214050235023650
   mod_job_frame_maintenance_worker_per_pop: "§G+1§! $VALUE$ 팝당 $job_frame_maintenance_worker$ 직위" # 4063535225958635198
   mod_job_frame_maintenance_worker_per_pop_short: "§G+1§! £mod_job_giga_birch_ktisma_worker_add£당 $VALUE$ £pop£당" # 10444818370658268943
   job_frame_maintenance_drone: "프레임 유지 드론" # 1501869983735249961
   job_frame_maintenance_drone_plural: "프레임 유지보수 드론" # 10649106255137434866
   job_frame_maintenance_drone_desc: "할당된 임무가 없는 드론은 기지 시스템 유지 및 보충에 재분배됩니다." # 15146754861371204373
-  job_frame_maintenance_drone_effect_desc: "£job_frame_maintenance_drone£ $job_frame_maintenance_drone_plural$은 소량의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지 자원§!을 생산하고, §Y$mod_planet_jobs_produces_mult$§!을 증가시키며, §Y$mod_planet_jobs_upkeep_mult$§!을 감소시키고, 모든 유형의 £mod_planet_pop_assembly_mult£ £mod_pop_growth_speed£ §Y보조 팝 성장§!을 감소시킵니다." # 4643050611275897325
+  job_frame_maintenance_drone_effect_desc: "£job_frame_maintenance_drone£ $job_frame_maintenance_drone_plural$는 소량의 $giga_r_food$$giga_r_minerals$$giga_r_energy$ §Y팝 유지비 자원§!을 생산하고, §Y$mod_planet_jobs_produces_mult$§!와 §Y$mod_planet_jobs_upkeep_mult$§!를 증가시키며, 모든 종류의 £mod_planet_pop_assembly_mult£ £mod_logistic_growth_mult£ §Y2차 팝 성장§!을 감소시킵니다." # 14781574643871546225
   mod_job_frame_maintenance_drone_add: "$job_frame_maintenance_drone$ 일자리" # 11545820555017156627
   mod_job_frame_maintenance_drone_per_pop: "§G+1§! $VALUE$ 팝당 $job_frame_maintenance_drone$ 직위" # 2937146995040054865
   mod_job_frame_maintenance_drone_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_maintenance_drone_add£" # 10258382034535675096
@@ -778,7 +779,7 @@
   giga_situation_frameworld_outposts_approach: "정상 작전" # 12684780974836555472
   giga_situation_frameworld_outposts_approach_desc: "탐사 및 조사." # 10562418501284608533
   frameworld_size_fake_tooltip: "§Y$pc_giga_frameworld$§!의 행성 크기: §G+1§!" # 11802798578700912993
-  frameworld_outpost_fake_tooltip: "$mod_job_replicator_add$: §G+0.5§!\n$MOD_PLANET_POP_ASSEMBLY_REDUCTION$: §G-10%§!\n$mod_planet_pop_assemblers_alloys_upkeep_add$: §R+0.1§!\n$MOD_POP_GROWTH_SPEED_REDUCTION$: §G-10%§!\n$MOD_EMPIRE_SIZE_ADD$: §Y+15§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+10%§!\n$MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+10%§!\n$MOD_PLANET_HOUSING_ADD$: §G+5§!\n$MOD_PLANET_ARMY_BUILD_SPEED_MULT$: §G+10%§!\n$MOD_POP_PURGE_SPEED$: §G+10%§!" # 6789187273852809764
-  frameworld_expansion_fake_tooltip: "§Y$d_frameworld_expansion$§!을 §Y$pc_giga_frameworld$§!에 추가하면 다음과 같은 결과가 나타납니다:\n    $mod_job_replicator_add$: §G+0.2§!\n    $MOD_POP_GROWTH_SPEED$: §G+2.5%§!\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+2%§!\n    $MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+2%§!\n    $MOD_PLANET_ARMY_BUILD_SPEED_MULT$: §G+2%§!\n    $MOD_POP_PURGE_SPEED$: §G+2%§!" # 2306582645729133503
+  frameworld_outpost_fake_tooltip: "$mod_job_replicator_add$: §G+0.5§!\n$MOD_PLANET_POP_ASSEMBLY_REDUCTION$: §G-10%§!\n$mod_planet_pop_assemblers_alloys_upkeep_add$: §R+0.1§!\n$MOD_logistic_growth_mult_REDUCTION$: §G-10%§!\n$MOD_EMPIRE_SIZE_ADD$: §Y+15§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+10%§!\n$MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+10%§!\n$MOD_PLANET_HOUSING_ADD$: §G+5§!\n$MOD_PLANET_ARMY_BUILD_SPEED_MULT$: §G+10%§!\n$MOD_POP_PURGE_SPEED$: §G+10%§!" # 14998384581349828151
+  frameworld_expansion_fake_tooltip: "§Y$pc_giga_frameworld$§!에 §Y$d_frameworld_expansion$§!을 추가하며, 그 결과는 다음과 같습니다:\n    $mod_job_replicator_add$: §G+0.2§!\n    $MOD_logistic_growth_mult$: §G+2.5%§!\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+2%§!\n    $MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+2%§!\n    $MOD_PLANET_ARMY_BUILD_SPEED_MULT$: §G+2%§!\n    $MOD_POP_PURGE_SPEED$: §G+2%§!" # 12013684501838740992
   frameworld_asteroid_fake_tooltip: "§Y$d_frameworld_asteroid$§!를 §Y$pc_giga_frameworld$§!에 추가합니다. 그 결과:\n    $mod_district_giga_frameworld_mining_max$: §G+0.25§!" # 14926707512772755404
   frameworld_penrose_fake_tooltip: "거대 구조물 완공 시, §Y[this.GetName]§!에 §Y$d_frameworld_penrose$§!을(를) 추가하며, 그 결과는 다음과 같습니다:\n    $mod_planet_technician_energy_produces_add_planet$: §G+1§!\n    $mod_planet_technician_minerals_upkeep_add_planet$: §R+1§!" # 18433421344218984278

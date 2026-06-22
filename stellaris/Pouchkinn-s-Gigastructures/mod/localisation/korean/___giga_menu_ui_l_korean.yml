@@ -39,6 +39,8 @@
   giga_science_candidate_tooltip: "과학 킬로 매장지: [root.GetScienceCandidatesColor][ROOT.GetScienceCandidates]§!" # 13738159821755859177
   giga_arc_furnace_system_short_tooltip: "$t$- 아크 용광로 매장지: [root.GetArcFurnaceColor][root.GetArcFurnacePlanets]§!" # 16994352201019019985
   giga_food_candidate_tooltip: "$t$- 행성 파종 넥서스 매장지: [root.GetFoodCandidatesColor][ROOT.GetFoodCandidates]§!" # 17317769009043519811
+  MEGASTRUCTURE_SCIENCE_KILO_BEST_SYSTEMS_TOOLTIP_HEADER: "§E과학 킬로구조물 잠재력이 가장 높은 성계:§!" # 11528678554131413376
+  MEGASTRUCTURE_FOOD_KILO_BEST_SYSTEMS_TOOLTIP_HEADER: "§E$name_planetary_seeder_nexus$ 잠재력이 가장 높은 성계:§!" # 7253708796328482579
   giga_compendium.001.name: "디버그" # 143360522173664303
   giga_compendium.001.desc: "디버그" # 143360522173664303
   giga_compendium_open: "§H거대 구조물 편람§!§G!\n§G거대 구조물 편람을 열려면 클릭하세요§!!" # 17725532391854451113

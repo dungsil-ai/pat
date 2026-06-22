@@ -5,11 +5,7 @@
   NAME_Giga_Void_Restored_Planet: "[ROOT.GetName] [ROOT.blokkat_system_planet_number]" # 8882227421034739550
   NAME_Giga_FE_Gamers: "[owner.GetSpeciesName] 오락 단지" # 5068806291323923096
   NAME_Giga_Blokkat_Prison_Breacher: "[blokkat_prison_breacher.GetName]" # 5121890805350626837
-  katzen_fleet_name: "$ORD$ 카첸벨트라움트루펜 태스크 포\"" # 15939166963165404222
-  katzen_army_name: "$ORD$ 케틀링 군대" # 12325839762543846057
-  katzen_primitive_army: "플루시온군 $ORDGIGAS$" # 1709048575338431020
   ORDGIGAS: "n100+10+(0-9):$C$, 기본값:$C$" # 1345149402393051323
-  compound_fleet_name: "$ORD$ 함대" # 9379022495870797770
   giga_rename_planet_1: "[rename_system.GetName] I" # 6869009386694137345
   giga_rename_planet_2: "[rename_system.GetName] II" # 17851265063109961083
   giga_rename_planet_3: "[rename_system.GetName] III" # 4111207747473691680

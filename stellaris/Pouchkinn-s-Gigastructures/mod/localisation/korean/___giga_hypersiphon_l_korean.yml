@@ -43,9 +43,12 @@
   mod_job_giga_shroud_conduit_worker_per_pop: "팝 $VALUE$당 [giga_shroud_conduit_worker.GetName] 직업 §G+1§!" # 1549982056320808053
   mod_job_giga_shroud_conduit_worker_per_pop_short: "§G+1§! $VALUE$ £pop£당 £mod_job_giga_shroud_conduit_worker_add£" # 3030728465513581531
   job_giga_shroud_conduit_worker_icon: "£장막 도관 작업자£" # 11925301240567771890
-  job_giga_shroud_conduit_priest: "장막 소통자" # 4629448911500272706
-  job_giga_shroud_conduit_priest_plural: "장막 교감자" # 14820941605002688210
-  job_giga_shroud_conduit_priest_desc: "$building_giga_shroud_conduit$에 의해 생성된 섬세한 연결들을 관리하는 임무를 맡은 사이오닉 성직자" # 3661239057354435133
+  giga_shroud_conduit_priest: "슈라우드 채널러" # 4629448911500272706
+  job_giga_shroud_conduit_priest: "$giga_shroud_conduit_priest$" # 13029375204857353757
+  giga_shroud_conduit_priest_plural: "슈라우드 채널러들" # 14820941605002688210
+  job_giga_shroud_conduit_priest_plural: "$giga_shroud_conduit_priest_plural$" # 3743158049412225312
+  giga_shroud_conduit_priest_desc: "$building_giga_shroud_conduit$가 생성하는 미묘한 연결을 관리하는 임무를 맡은 사이오닉 성직자들." # 3661239057354435133
+  job_giga_shroud_conduit_priest_desc: "$giga_shroud_conduit_priest_desc$" # 18217722226154475863
   job_giga_shroud_conduit_priest_effect_desc: "$job_giga_shroud_conduit_priest_swap_plural_with_icon$가 £energy£ §Y$energy$§!를 사용하여 £unity£ §Y$unity$§!를 생산하고, £amenities£ $MOD_PLANET_AMENITIES_ADD$를 제공하며 행성의 생산성을 향상합니다." # 9802204065267686104
   job_giga_shroud_conduit_priest_swap_plural_with_icon: "[giga_shroud_conduit_priest.GetIcon] [giga_shroud_conduit_priest.GetNamePlural]" # 5396556917324659043
   mod_job_giga_shroud_conduit_priest_add: "[giga_shroud_conduit_priest.GetName] 직업" # 14858364092851098859
@@ -169,16 +172,21 @@
   NAME_Giga_Hypersiphon_Cows: "떠도는 환영" # 3066342240688141642
   NAME_Giga_Hypersiphon_Cows_Fleet: "장막 소" # 1473354424425235148
   giga_hypersiphon_shroud_cow_cow: "장막 소 여족장" # 17638263355339889355
+  giga_hypersiphon_shroud_cow_cow_plural: "슈라우드 암소 모계족장" # 714374745297702076
   NAME_Giga_Hypersiphon_Tiyanki_Cow: "$giga_hypersiphon_shroud_cow_cow$" # 6277222833354628258
   giga_hypersiphon_shroud_cow_bull: "장막 소 수장" # 11495623613628441577
+  giga_hypersiphon_shroud_cow_bull_plural: "슈라우드 암소 부계족장" # 2998177261577765977
   NAME_Giga_Hypersiphon_Tiyanki_Bull: "$giga_hypersiphon_shroud_cow_bull$" # 11309393575812273173
   giga_hypersiphon_shroud_cow_hatchling: "장막 소 새끼" # 17786139825486846643
+  giga_hypersiphon_shroud_cow_hatchling_plural: "슈라우드 암소 새끼" # 17786139825486846643
   NAME_Giga_Hypersiphon_Tiyanki_Hatchling: "$giga_hypersiphon_shroud_cow_hatchling$" # 890132314714779553
   giga_hypersiphon_shroud_cow_calf: "장막 소 유체" # 10277528160809051917
+  giga_hypersiphon_shroud_cow_calf_plural: "슈라우드 암소 유체" # 8762158311059212711
   NAME_Giga_Hypersiphon_Tiyanki_Calf: "$giga_hypersiphon_shroud_cow_calf$" # 4154458475647819760
   NAME_Giga_Hypersiphon_Incursion: "장막 존재" # 15232393780914915410
   NAME_Giga_Hypersiphon_Incursion_Fleet: "적대적 망령" # 15929391974137895085
   giga_hypersiphon_shroud_entity_small: "장막 정령" # 1175725318004927489
+  giga_hypersiphon_shroud_entity_small_plural: "슈라우드 불꽃" # 7900344409649913985
   giga_hypersiphon_shroud_entity_small_design: "경미한 장막 발현" # 14562965946882341604
   giga_hypersiphon_shroud_entity_small_1: "$giga_hypersiphon_shroud_entity_small_design$ (범주 1)" # 2048027867935803173
   giga_hypersiphon_shroud_entity_small_section_1: "$giga_hypersiphon_shroud_entity_small_1$" # 7284947653544156174
@@ -193,6 +201,7 @@
   giga_hypersiphon_shroud_entity_small_6: "$giga_hypersiphon_shroud_entity_small_design$ (카테고리 6)" # 11886745841133199414
   giga_hypersiphon_shroud_entity_small_section_6: "$giga_hypersiphon_shroud_entity_small_6$" # 17613194881202008797
   giga_hypersiphon_shroud_entity_large: "장막 폭풍" # 8661790137365375619
+  giga_hypersiphon_shroud_entity_large_plural: "슈라우드 폭풍" # 15329098325124770310
   giga_hypersiphon_shroud_entity_large_design: "주요 장막 발현" # 6955170783104728246
   giga_hypersiphon_shroud_entity_large_1: "$giga_hypersiphon_shroud_entity_large_design$ (카테고리 1)" # 10338791093227164477
   giga_hypersiphon_shroud_entity_large_section_1: "$giga_hypersiphon_shroud_entity_large_1$" # 358709914470133448
@@ -207,8 +216,10 @@
   giga_hypersiphon_shroud_entity_large_6: "$giga_hypersiphon_shroud_entity_large_design$ (범주 6)" # 16661977671619555386
   giga_hypersiphon_shroud_entity_large_section_6: "$giga_hypersiphon_shroud_entity_large_6$" # 6379850261179419645
   giga_hypersiphon_incursion_starbase: "장막 요새" # 5953410046955096633
+  giga_hypersiphon_incursion_starbase_plural: "슈라우드 요새" # 16381331193084463486
   NAME_Giga_Hypersiphon_Incursion_Starbase: "$giga_hypersiphon_incursion_starbase$" # 16370010817290793954
   giga_hypersiphon_incursion_portal: "차원문" # 12640722612829545336
+  giga_hypersiphon_incursion_portal_plural: "차원 관문" # 9409256191319065431
   NAME_Giga_Hypersiphon_Incursion_Portal: "장막 앵커" # 10635559418400056665
   giga_hypersiphon_instability_resources: "파멸의 환영:" # 3151986777632938205
   giga_hypersiphon_instability_resources_energy: "$giga_hypersiphon_instability_resources$ 엔트로피 공허" # 2719433744319334392
@@ -225,3 +236,8 @@
   giga_hypersiphon_instability_resources_unity_desc: "모든 건축물은 경멸로 들끓고, 모든 구획은 숨 막히게 느껴집니다." # 214831836699962138
   giga_hypersiphon_instability_resources_research: "$giga_hypersiphon_instability_resources$ 흐려진 인지" # 1851612496999579437
   giga_hypersiphon_instability_resources_research_desc: "알 수 없는 병폐로 인해 명석한 정신이 무뎌진다." # 11837136180970327514
+  giga_hypersiphon_storm_1: "giga_hypersiphon_storm_1" # 11089863137156447595
+  giga_hypersiphon_storm_2: "giga_hypersiphon_storm_2" # 15641061322221358160
+  giga_hypersiphon_storm_3: "giga_hypersiphon_storm_3" # 6217299064094022055
+  giga_hypersiphon_storm_4: "giga_hypersiphon_storm_4" # 5925800653966113020
+  giga_fleet_power_scaling_buff: "giga_fleet_power_scaling_buff" # 6115254304574065560

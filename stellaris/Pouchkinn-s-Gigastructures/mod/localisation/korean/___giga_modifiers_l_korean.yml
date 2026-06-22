@@ -42,6 +42,30 @@
   mod_station_researchers_society_research_produces_mult: "연구소에서 얻는 £society_research£ $society_research$" # 17612075869462034134
   mod_station_researchers_engineering_research_produces_mult: "£engineering_research£ $engineering_research$ 연구소로부터의 공학 연구" # 3814183079322045487
   mod_shipsize_research_station_build_speed_mult: "연구소 건설 속도" # 13055673643311197412
+  giga_kilostructures: "킬로구조물" # 15813215702526814713
+  giga_megastructures: "거대구조물" # 8987084252599641550
+  giga_gigastructures: "기가구조물" # 14328256144094145279
+  giga_succ: "$name_succ$" # 16434493920145807630
+  giga_crystal_megabore: "$name_crystal_megabore$" # 1082698348507216319
+  giga_attack_moon: "$name_war_moon$" # 10617195393908712233
+  giga_dyson_sphere: "$dyson_sphere_5$" # 10716838859179448390
+  giga_equatorial_shipyard: "$name_eq_shipyard$" # 745568357228598128
+  giga_maginot_world: "$name_maginot$" # 12120719260585730998
+  giga_matter_decompressor: "$matter_decompressor_4$" # 4398436474284041865
+  giga_mega_art_installation: "거대 예술 설치물" # 15665070935520431050
+  giga_mega_shipyard: "$mega_shipyard_3$" # 5051758011929962840
+  giga_neutronium_gigaforge: "$name_neut_gigaforge$" # 12017288549161390022
+  giga_planetary_computer: "$name_planetary_computer$" # 17148726087356041334
+  giga_science_nexus: "$think_tank_3$" # 572088529343133508
+  giga_sentry_array: "$spy_orb_4$" # 3465548897874716703
+  giga_star_lifter: "$name_starlifter$" # 8368580123994760844
+  giga_strategic_coordination: "$strategic_coordination_center_3$" # 13221837471348816132
+  giga_yggdrasil_orchid: "$name_yggdrasil$" # 10232392635287325775
+  giga_hrae_mc: "$name_hraemc$" # 9925098994795413485
+  giga_hyperstructural_ass: "$name_hyperstructural_ass$" # 13391214259191092296
+  giga_lunar_macroreplicator: "$lunar_macroreplicator_2$" # 14817434660381670530
+  giga_matrioshka_brain: "$name_matrioshka_brain$" # 6901304770897859334
+  giga_nidavellir_forge: "$name_nidavellir$" # 6717748079805400404
   planet_giga_virtual_diplomats: "가상 외교 직업" # 4781630522272951907
   planet_giga_virtual_diplomats_icon: "£가상 외교관£" # 16562206293482996178
   planet_giga_virtual_diplomats_icon_machine: "£job_giga_virtual_diplomat_servitor£" # 3393900175036333007
@@ -196,6 +220,7 @@
   planetary_seeder_nexus_4_mod: "$planetary_seeder_nexus_3$" # 232130031255526415
   planetary_seeder_nexus_4_mod_desc: "$planetary_seeder_nexus_3_DESC$" # 271986015343092166
   planetary_seeder_nexus_4_mod_tooltip: "미발견 매장량을 크기 §Y4§!로 개선합니다!£food£$NEW_LINE$§E$SYSTEM_MODIFIER$§!: $TABBED_NEW_LINE$$station_gatherers_food_produces_mult$: §G+$@arc_furnace_4_mod_value|%0$§!" # 11499100685096394109
+  station_gatherers_food_produces_mult: "£food£ $station_gatherers$에서 생산됨" # 14378946598135969162
   succ_mod: "$succ_1$" # 10495725251826705935
   succ_mod_desc: "$succ_1_DESC$" # 7597578312346287926
   succ_mod_tooltip: "§Y2§! 규모의 £exotic_gases£ 매장량을 발견했습니다." # 15343523318053624539

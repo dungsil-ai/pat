@@ -25,6 +25,7 @@
   giga_eawaf_shroud_chain_desc: "파우스트 성계가 뚫을 수 없는 장막 뒤로 사라졌습니다." # 7760885178146973648
   giga_eawaf_poi_shroud_name: "히든 스타" # 15760562329848023192
   giga_eawaf_poi_shroud_desc: "파우스트의 원시 행성은 시레날리아(Sirenalia) 국가에 정복당했고, 그들은 성계 전체를 뚫을 수 없는 장막 속으로 끌어들이는 \"주문\"을 시전했습니다. 장막의 변동을 볼 때 미래에는 사라질 가능성이 있으므로, 그 이후에 벌어질 일에 대비해야 합니다.\n\n§R장막과 직접 인접한 성계로부터 거리를 두는 것이 현명할 것입니다...§!" # 765505633053033926
+  giga_category_sirens: "시레날리아" # 16931018044427785097
   giga_eawaf_sirens_chain_title: "시레날리아" # 16931018044427785097
   giga_eawaf_sirens_chain_desc: "사이렌들은 온 은하를 매혹시키는 데 혈안이 되어 있습니다. 그들은 반드시 막아야 합니다!" # 6230958624871469843
   giga_eawaf_poi_sirens_stats_name: "사이렌 추적" # 8259741905216997406
@@ -40,7 +41,7 @@
   giga_eawaf.1012.desc_machine_intelligence: "신비로운 §Y헬리오스§!의 반대편에서 파우스트를 공전하는 암석질 위성인 §Y셀레네§!는 언뜻 보기에 파우스트 성계에서 가장 평범한 부분인 것 같습니다. 이 위성은 대기가 없기 때문에 수많은 충돌 구덩이로 뒤덮여 있고, 다른 많은 자연 위성과 마찬가지로 얇은 층의 미세한 월진으로 덮여 있는 비교적 큰 암석질 위성입니다.\n\n아이러니하게도 이상 현상의 첫 징후는 §Y[ROOT.GetName]§!의 승무원이 이 달에 접근했을 때 나타났습니다. 그들은 비정상적으로 행동하기 시작했고, 어둡고 위압적인 말 형태처럼 나타나는 시각적 오류를 보고했습니다.\n\n이러한 시각적 오류는 함선이 이 달에서 떠나자마자 사라졌지만, 이 천체에는 알려지지 않은 복수심에 불타는 정령이 '유령처럼 출몰할' 가능성이 있다고 여겨집니다." # 4564147741331203311
   giga_eawaf.1012.desc_hive_mind: "§Y셀레네§!는 신비로운 §Y헬리오스§! 반대편에서 파우스트 궤도를 도는 암석 위성으로, 언뜻 보기에 파우스트 항성계에서 가장 정상적인 부분으로 보인다. 다른 많은 자연 위성들과 마찬가지로 대기가 없어 수많은 충돌구로 뒤덮여 있으며, 고운 월진이 얇게 덮여 있는 비교적 큰 암석 위성이다.\n\n아이러니하게도 이상 징후는 §Y[ROOT.GetName]§! 승무원이 이 위성에 가까워졌을 때 나타났다. 그들은 비정상적으로 행동하기 시작했으며, 어둡고 위압적인 말의 형상으로 나타나는 환각을 보고했다.\n\n함선이 위성에서 떠나자마자 이 환영들이 가라앉았지만, 이 천체가 정체불명의 복수심에 찬 영혼에 '들린' 것일 수도 있다고 여겨진다." # 4182261695345854863
   giga_eawaf.1012.a: "그거 다 그들 생각뿐이겠죠... 그렇죠?" # 5813637425220061073
-  giga_eawaf.1012.b: "우려스러운" # 15607003362586545284
+  giga_eawaf.1012.b: "당혹스럽군." # 2176977750576233356
   giga_eawaf.1012.c: "이는 좋은 징조가 아닙니다." # 282744132212155541
   giga_eawaf.1013.name: "있음직하지 않은 항성" # 1218857064652807489
   giga_eawaf.1013.desc: "§Y헬리오스§!에 대한 정밀 조사를 통해 이 신비로운 천체에 대한 단서를 얻을 수 있기를 기대했지만, 여전히 불가능해 보이는 방식으로 행동하고 있습니다.\n\n무엇보다도, 헬리오스와 셀레네 모두의 24시간 공전 주기는 예상보다 훨씬 짧습니다. 파우스트의 질량을 기반으로 한 계산에 따르면, 이들은 논리적으로 행성 주변을 공전하는 데 약 2주가 소요되어야 합니다.\n\n또한, 이들의 궤도가 원형이고 예측 가능하지만, 두 천체는 궤도의 무작위 지점에서 발생하는 것처럼 보이는 거의 인지할 수 없는 '떨림' 현상을 일으키는 경향이 있습니다. 마치 설명할 수 없는 어떤 힘에 의해 갑자기 '당겨지는' 것처럼 말입니다.\n\n명백히, 행성 주위를 별이 도는 항성계에서 궤도가 정상적으로 기능하기를 기대하는 것은 이미 상당히 비합리적입니다. 그러나 이러한 불일치는 파우스트를 둘러싼 끊임없이 쌓이는 미해결 미스터리 더미에 더해질 뿐입니다.\n\n더욱이, 별은 말 그대로 존재하지 않는 곳에서 에너지를 끌어오는 것 같습니다. 알려진 어떤 핵융합 과정으로도 생성될 수 있는 것보다 훨씬 더 많은 복사를 방출하고 있기 때문이며, 어떤 경우에는 질량-에너지 등가 원리라는 근본적인 원리조차 위반하고 있습니다." # 17452708475981681530
@@ -388,6 +389,8 @@
   mod_giga_eawaf_planet_strife: "이 행성에서의 갈등: §R[THIS.giga_eawaf_planet_strife]§!" # 6350836813545694890
   mod_weapon_type_sirens_weapon_damage_mult: "$weapon_type_sirens$ 피해" # 6533390000129884281
   mod_weapon_type_sirens_weapon_fire_rate_mult: "$weapon_type_sirens$ 공격 속도" # 11121739190352046894
+  giga_eawaf_strife_field_ship_modifier: "투쟁의 장 페널티" # 15767871335058703519
+  giga_eawaf_strife_field_ship_modifier_desc: "시레날리아의 노래가 명령 체계의 흐름에 마찰을 일으켜 우리 무기 체계의 반응성을 저해하고 있습니다." # 17237690230817302933
   mod_damage_vs_country_type_giga_eawaf_sirens_mult: "시레날리아 피해" # 5195825174078562825
   giga_eawaf_outer_strife_field_modifier: "외곽 분쟁 지대 영향력" # 9009426593902387129
   giga_eawaf_outer_strife_field_modifier_desc: "§W이 행성은 시레날리아를 위해 §R[THIS.giga_eawaf_planet_strife]§!의 §P갈등§!을 생성하고 있습니다.\n§W§P갈등§!은 §Y안정도 90§! 미만일 때만 다음 공식에 따라 생성됩니다:§!\n(§Y80 - 안정도§!) x (§Y행성 인구§!) x (§Y1§! + §Y범죄율§!)§!\n§W§Y안정도§!/§Y범죄율§! 페널티는 엔트랄러의 §M잠재력§! 레벨에 따라 조정됩니다§!.\n\n§L외부 갈등 역장이 이 행성의 거주자들에게 영향을 미쳐 증오를 부추기고, 이 증오를 §P갈등§!으로 변환하여 시레날리아의 슈라우드소닉 엔트랄러를 가동합니다. ['concept_giga_eawaf_disenchanter_buildings']를 건설하면 이를 완화하거나 무효화할 수 있습니다.§!" # 5677508685011853707
@@ -417,6 +420,43 @@
   giga_eawaf_sirens_extreme: "시레날리아 (§RVivace§!)\n시레날리아는 §R극적으로 강화될§! 것입니다.\n\n§M위력§!은 §Y25§!에서 시작하며, §Y망토음 매혹체§!의 레벨마다 §Y10§!씩 증가할 것입니다." # 18341088934623461836
   giga_eawaf_sirens_impossible: "시레날리아 (§P프레스토§!)\n시레날리아가 §P극도로 강화됩니다§!.\n\n§M효능§!은 §Y50§!으로 시작하며, §Y장막음파 감응기§! 레벨당 §Y25§!만큼 증가합니다." # 15591538367525249487
   giga_eawaf_sirens_abyss: "시레날리아 (§g어비설§!)\n§R순환이 산산조각 나고 현실의 벽이 희미해짐에 따라, 존재 자체의 심연에서 이해할 수 없는 힘이 깨어납니다.§!\n\n§M효력§!은 §Y1000§!에서 시작하며, §Y슈라우드소닉 인쓰롤러§!의 각 단계는 이를 §Y500§!만큼 증가시킵니다.\n\n§R모든§! 파벌은 시레나에게 매료될 수 있습니다." # 7887561486170507355
+  giga_eawaf_sirens_easy_dec: "$giga_dec_diff$$giga_eawaf_sirens_easy$" # 10872636883224038284
+  giga_eawaf_sirens_normal_dec: "$giga_dec_diff$$giga_eawaf_sirens_normal$" # 14384843170084068127
+  giga_eawaf_sirens_hard_dec: "$giga_dec_diff$$giga_eawaf_sirens_hard$" # 17923158762623036426
+  giga_eawaf_sirens_veryhard_dec: "$giga_dec_diff$$giga_eawaf_sirens_veryhard$" # 4853277016171772824
+  giga_eawaf_sirens_extreme_dec: "$giga_dec_diff$$giga_eawaf_sirens_extreme$" # 1034747021067888674
+  giga_eawaf_sirens_impossible_dec: "$giga_dec_diff$$giga_eawaf_sirens_impossible$" # 10987136523757500094
+  giga_eawaf_sirens_normal_inc: "$giga_inc_diff$$giga_eawaf_sirens_normal$" # 17194043893447247910
+  giga_eawaf_sirens_hard_inc: "$giga_inc_diff$$giga_eawaf_sirens_hard$" # 8868541008569880601
+  giga_eawaf_sirens_veryhard_inc: "$giga_inc_diff$$giga_eawaf_sirens_veryhard$" # 1303367991969519428
+  giga_eawaf_sirens_extreme_inc: "$giga_inc_diff$$giga_eawaf_sirens_extreme$" # 161213285179808584
+  giga_eawaf_sirens_impossible_inc: "$giga_inc_diff$$giga_eawaf_sirens_impossible$" # 1578349343898451358
+  giga_eawaf_sirens_abyss_inc: "$giga_inc_diff$$giga_eawaf_sirens_abyss$" # 9969149767545814069
+  giga_eawaf_sirens_easy_curr: "$giga_curr_diff$$giga_eawaf_sirens_easy$" # 2989985768481736898
+  giga_eawaf_sirens_normal_curr: "$giga_curr_diff$$giga_eawaf_sirens_normal$" # 14636560250519353775
+  giga_eawaf_sirens_hard_curr: "$giga_curr_diff$$giga_eawaf_sirens_hard$" # 2828129853401230600
+  giga_eawaf_sirens_veryhard_curr: "$giga_curr_diff$$giga_eawaf_sirens_veryhard$" # 5048107311486812521
+  giga_eawaf_sirens_extreme_curr: "$giga_curr_diff$$giga_eawaf_sirens_extreme$" # 14339099846180569536
+  giga_eawaf_sirens_impossible_curr: "$giga_curr_diff$$giga_eawaf_sirens_impossible$" # 6480204708697949147
+  giga_eawaf_sirens_abyss_curr: "$giga_curr_diff$$giga_eawaf_sirens_abyss$" # 15242165771290553228
+  concept_giga_eawaf_sirens_easy: "시레날리아 (§BLargo§!)" # 12362595818868999442
+  concept_giga_eawaf_sirens_normal: "시레날리아 (§GLento§!)" # 6014918350707920474
+  concept_giga_eawaf_sirens_hard: "시레날리아 (§YModerato§!)" # 11851927459091239470
+  concept_giga_eawaf_sirens_veryhard: "시레날리아 (§HAllegro§!)" # 16100201123825177485
+  concept_giga_eawaf_sirens_extreme: "시레날리아 (§RVivace§!)" # 17449156498003151008
+  concept_giga_eawaf_sirens_impossible: "시레날리아 (§PPresto§!)" # 7285599175591717337
+  concept_giga_eawaf_sirens_abyss: "시레날리아 (§gAbyssal§!)" # 2929054869153882689
+  concept_giga_eawaf_sirens_easy_desc: "$giga_eawaf_sirens_easy$" # 4943057168818231520
+  concept_giga_eawaf_sirens_normal_desc: "$giga_eawaf_sirens_normal$" # 7216269046208956883
+  concept_giga_eawaf_sirens_hard_desc: "$giga_eawaf_sirens_hard$" # 8590805462981031676
+  concept_giga_eawaf_sirens_veryhard_desc: "$giga_eawaf_sirens_veryhard$" # 4214522142100199527
+  concept_giga_eawaf_sirens_extreme_desc: "$giga_eawaf_sirens_extreme$" # 14098921500217568767
+  concept_giga_eawaf_sirens_impossible_desc: "$giga_eawaf_sirens_impossible$" # 11352392663956802197
+  concept_giga_eawaf_sirens_abyss_desc: "$giga_eawaf_sirens_abyss$" # 18420068809060700338
+  giga_menu_siren_section_desc: "시레인들은 장막에서 태어난 노래를 사용하여 은하계의 함대와 행성들을 자신들의 의지 아래 굴복시킵니다.\n\n이 섹션은 그들의 설정을 제어합니다. 아래는 각 난이도 설정의 효과를 나열한 것입니다.\n - ['concept_giga_eawaf_sirens_easy']\n - ['concept_giga_eawaf_sirens_normal']\n - ['concept_giga_eawaf_sirens_hard']\n - ['concept_giga_eawaf_sirens_veryhard']\n - ['concept_giga_eawaf_sirens_extreme']\n - ['concept_giga_eawaf_sirens_impossible']\n - ['concept_giga_eawaf_sirens_abyss']" # 8081540768384057413
+  gigas_max_siren_difficulty: "최대 사이렌 난이도에 도달했습니다" # 8937251748734111736
+  gigas_min_siren_difficulty: "최소 사이렌 난이도에 도달했습니다" # 11456272601508209578
+  gigas_menu_siren_disabled: "사이렌 비활성화됨" # 1493498636855009597
   d_everfree_forest: "에버프리 포레스트" # 12544394739022361355
   d_everfree_forest_desc: "기묘하고 거의 뚫을 수 없는 숲은 마법과도 같은 에너지로 가득 차 있습니다. 이를 개척하는 것은 거대한 규모의 작업이 되겠지만, 그 심오한 생태계를 연구하는 것은 분명 흥미로운 데이터를 산출할 것입니다." # 14927779597338581086
   d_everfree_forest_thaumonuclear: "$d_everfree_forest$" # 16003843592047857193
@@ -532,8 +572,6 @@
   GIGA_EAWAF_EQG_PORTAL: "파우스티안 해방" # 2609563992197790504
   GIGA_EAWAF_EQG_PORTAL_DESC: "파우스트를 사이렌의 손아귀에서 벗어나게 할 방법을 찾는 것이 최우선 과제입니다. 그렇지 않으면 그곳의 모든 개체군이 무의미하게 죽음을 맞이할 것입니다." # 14550197317290056973
   GIGA_EAWAF_SIRENS_COUNTRY: "하모닉 매혹자들" # 13532271462397026869
-  giga_eawaf_strife_field_ship_modifier: "giga_eawaf_strife_field_ship_modifier" # 7890388948682762994
-  giga_eawaf_strife_field_ship_modifier_desc: "REPLACE_ME" # 8745063705845015763
   giga_eawaf_disenchanter_1_speed_modifier: "giga_eawaf_disenchanter_1_speed_modifier" # 1929431120674734720
   giga_eawaf_disenchanter_1_speed_modifier_desc: "REPLACE_ME" # 8745063705845015763
   giga_eawaf_disenchanter_1_upkeep_modifier: "giga_eawaf_disenchanter_1_upkeep_modifier" # 5929947516008534134

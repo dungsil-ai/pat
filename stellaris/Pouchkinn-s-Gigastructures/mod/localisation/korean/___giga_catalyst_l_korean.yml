@@ -21,6 +21,8 @@
   mod_job_giga_catalyst_worker_add: "[giga_catalyst_worker.GetName] 직업" # 7643223306622260067
   mod_job_giga_catalyst_worker_per_pop: "§G+1§! $VALUE$ 팝당 [giga_catalyst_worker.GetName] 직업" # 3917876677303206567
   mod_job_giga_catalyst_worker_per_pop_short: "§G+1§! £mod_job_giga_catalyst_worker_add£당 $VALUE$ £pop£" # 15004278368937198220
+  job_giga_catalyst_worker_drone: "재미있는 드로너" # 3181294384590906082
+  job_giga_catalyst_worker_drone_plural: "재미있는 드로너들" # 5181015710972764227
   giga_councilor_catalyst: "기묘한 평의회 의원" # 10816978465556115995
   giga_councilor_catalyst_desc: "여러 가지 작업을 수행합니다." # 16738953141794288845
   giga_councilor_catalyst_unlock_title: "일부 설명" # 15084885691124321534

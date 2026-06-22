@@ -24,14 +24,8 @@
   giga_gas_giant_hab_colony_desc: "" # 17241709254077376921
   decision_giga_flood_atmosphere: "행성 대기 침수" # 16292071242265643853
   decision_giga_flood_atmosphere_desc: "" # 17241709254077376921
-  d_giga_gas_giant_hab_core: "풍부한 행성핵" # 17158542420546749779
-  d_giga_gas_giant_hab_core_desc: "" # 17241709254077376921
-  district_giga_gas_giant_habitat_mining: "핵심 채굴 시설" # 9388814964802160379
-  district_giga_gas_giant_habitat_mining_plural: "핵심 채굴 시설" # 4720086247085320608
-  district_giga_gas_giant_habitat_mining_desc: "" # 17241709254077376921
   giga_gas_giant_hab: "거주 가능한 가스 행성" # 2820589743253118771
   giga_gas_giant_hab_desc: "풍부한 이종 기체는 쉬운 채취를 의미하지만, 행성 핵 채굴 작업에는 더 가혹한 노동 환경을 야기합니다." # 10095180970651682292
-  mod_district_giga_gas_giant_habitat_mining_max: "최대 $district_giga_gas_giant_habitat_mining_plural$" # 2026063851324381767
   job_giga_gas_extraction_manager: "이종 가스 추출 관리자" # 18421802343130042526
   job_giga_gas_extraction_manager_plural: "특수 가스 추출 관리자들" # 11462241424064749460
   job_giga_gas_extraction_manager_desc: "풍부한 대기 또는 다른 이국적인 환경 특성으로 인해 이 행정관들은 우리의 $job_technician_plural$가 이 자원들을 최대로 개발하도록 보장합니다." # 13709432611723388156
@@ -41,10 +35,68 @@
   mod_job_giga_gas_extraction_manager_per_pop: "팝 $VALUE$당 [giga_gas_extraction_manager.GetName] 직업 §G+1§!개" # 8594791534590909277
   mod_job_giga_gas_extraction_manager_per_pop_short: "\n£pop£ $VALUE$당 £mod_job_giga_gas_extraction_manager_add£ §G+1§!개" # 6931285889712660333
   job_giga_gas_extraction_manager_drone: "이색 가스 추출 관리 클러스터" # 3867218797353502284
+  giga_gas_extraction_manager_drone_wilderness: "에어로심비온트" # 17921236536492690837
+  job_giga_gas_extraction_manager_drone_wilderness: "$giga_gas_extraction_manager_drone_wilderness$" # 13257941805455972419
   job_giga_gas_extraction_manager_drone_plural: "이국적 가스 추출 관리 클러스터" # 12659113990457149922
+  giga_gas_extraction_manager_drone_wilderness_plural: "에어로심비온트" # 12982547977295105424
+  job_giga_gas_extraction_manager_drone_wilderness_plural: "$giga_gas_extraction_manager_drone_wilderness_plural$" # 17417133733590825234
   job_giga_gas_extraction_manager_drone_desc: "풍부한 대기 또는 다른 이색적인 환경 특성으로 인해 이 관리자들은 우리의 $job_technician_drone_plural$이 이 자원들을 최대한 활용하도록 보장합니다." # 3174156755281679982
-  job_giga_gas_extraction_manager_drone_effect_desc: "$job_giga_gas_extraction_manager_drone_swap_plural_with_icon$은(는) £exotic_gases£ §Y$exotic_gases$§!을(를) 수집하고 £job_technician£ §Y$job_technician_drone_plural$§!에게 £exotic_gases£ §Y$exotic_gases$§! 생산량을 제공합니다" # 17789442599860099032
+  giga_gas_extraction_manager_drone_wilderness_desc: "이 비상하는 생명체들은 대기 변화에 반응하여 공기 중으로 호르몬을 방출하며, 주변의 $job_photosymbiont_plural$에게 환경 상태를 알립니다." # 1141957105984462643
+  job_giga_gas_extraction_manager_drone_wilderness_desc: "$giga_gas_extraction_manager_drone_wilderness_desc$" # 4156601433606383224
+  job_giga_gas_extraction_manager_drone_effect_desc: "$job_giga_gas_extraction_manager_drone_swap_plural_with_icon$은(는) £exotic_gases£ §Y$exotic_gases$§!을(를) 수집하고 [technician.GetIcon] [GetTechnicianPlural]에게 £exotic_gases£ §Y$exotic_gases$§! 생산량을 제공합니다." # 17138078869716478469
   job_giga_gas_extraction_manager_drone_swap_plural_with_icon: "[giga_gas_extraction_manager_drone.GetIcon] [giga_gas_extraction_manager_drone.GetNamePlural]" # 10638014131297178785
   mod_job_giga_gas_extraction_manager_drone_add: "[giga_gas_extraction_manager_drone.GetName] 직업" # 17373353007344086774
   mod_job_giga_gas_extraction_manager_drone_per_pop: "팝 $VALUE$당 [giga_gas_extraction_manager_drone.GetName] 직업 §G+1§!개" # 5424995262796628948
   mod_job_giga_gas_extraction_manager_drone_per_pop_short: "\n£pop£ $VALUE$당 £mod_job_giga_gas_extraction_manager_add£ §G+1§!개" # 6931285889712660333
+  district_giga_gas_giant_craglands: "공동의 눈" # 946899902520847688
+  district_giga_gas_giant_craglands_plural: "공동의 눈들" # 1363672006249751439
+  district_giga_gas_giant_craglands_desc: "다양한 공생체와 그 구조물들이 잔잔한 바람의 흐름 속을 선회합니다." # 12695185138601306525
+  district_giga_gas_giant_habitat_wind: "풍력 터빈 배열" # 18409555749660381690
+  district_giga_gas_giant_habitat_wind_plural: "풍력 터빈 배열들" # 12425890920620828651
+  district_giga_gas_giant_habitat_wind_desc: "가스 거인의 대기 중에 떠 있는 거대한 풍력 터빈 배열로, 막대한 양의 에너지를 생성합니다." # 15279266720802523401
+  district_giga_gas_giant_habitat_wind_wilderness: "제피릭 광양 승강기" # 15849443965390889797
+  district_giga_gas_giant_habitat_wind_wilderness_plural: "제피릭 광양 승강기들" # 11074074903940524253
+  district_giga_gas_giant_habitat_wind_wilderness_desc: "생명체들은 구름 꼭대기에서 번성하며, 바람을 타고 오르내리며 적절한 양의 햇빛을 쬐고 있습니다." # 15216819579131598113
+  district_giga_gas_giant_habitat_science: "연구소" # 15399420293117883016
+  district_giga_gas_giant_habitat_science_plural: "연구소들" # 4256113375409262999
+  district_giga_gas_giant_habitat_science_desc: "이 고등 연구 시설은 최첨단 과학 장비와 함께 매우 큰 인원 수용 능력을 갖추고 있습니다." # 15134529759521202373
+  district_giga_gas_giant_habitat_science_wilderness: "신경 증기 매듭" # 170097475437789677
+  district_giga_gas_giant_habitat_science_wilderness_plural: "신경 증기 매듭들" # 12061074940472142059
+  district_giga_gas_giant_habitat_science_wilderness_desc: "이곳의 바람 속에서 사고의 전기화학적, 생물학적 흐름이 수렴하여 서로의 아이디어를 교차 수정합니다." # 12924827149761232807
+  district_giga_gas_giant_habitat_exotic: "가스 추출 시설" # 1090846918937340055
+  district_giga_gas_giant_habitat_exotic_plural: "가스 추출 시설들" # 12835052486578723748
+  district_giga_gas_giant_habitat_exotic_desc: "이 행성 대기 내 고립된 구역에서 가스를 추출할 수 있는 기계 장치입니다." # 13523481234864810256
+  mod_district_giga_gas_giant_habitat_exotic_max: "최대 $district_giga_gas_giant_habitat_exotic_plural$" # 4820561476191873343
+  district_giga_gas_giant_habitat_exotic_wilderness: "대류 개화" # 8564774596089480787
+  district_giga_gas_giant_habitat_exotic_wilderness_plural: "대류 개화들" # 4197730731326757424
+  district_giga_gas_giant_habitat_exotic_wilderness_desc: "생명의 영원한 요람; 창조의 화학 물질이 풍부한 온기와 물의 결합입니다." # 6403658810260544258
+  mod_district_giga_gas_giant_habitat_exotic_wilderness_max: "최대 $district_giga_gas_giant_habitat_exotic_wilderness_plural$" # 16245464864760433565
+  building_giga_gas_fusion_plant_fixed: "$building_giga_gas_fusion_plant$" # 17757068388725749416
+  building_giga_gas_fusion_plant_fixed_desc: "$building_giga_gas_fusion_plant_desc$" # 11495101669231375755
+  mod_building_giga_gas_fusion_plant_fixed_max: "$mod_building_giga_gas_fusion_plant_max$" # 6104260088648144036
+  building_giga_gas_mote_harvester_fixed: "$building_giga_gas_mote_harvester$" # 11683116053452061517
+  building_giga_gas_mote_harvester_fixed_desc: "$building_giga_gas_mote_harvester_desc$" # 5625269632345717313
+  mod_building_giga_gas_mote_harvester_fixed_max: "$mod_building_giga_gas_mote_harvester_max$" # 12004451586784326965
+  building_giga_gas_floater_harvester_fixed: "$building_giga_gas_floater_harvester$" # 7837803701247974042
+  building_giga_gas_floater_harvester_fixed_desc: "$building_giga_gas_floater_harvester_desc$" # 2310055307296294477
+  mod_building_giga_gas_floater_harvester_fixed_max: "$mod_building_giga_gas_floater_harvester_max$" # 3504222507420499705
+  col_giga_gas_giant_habitat: "$col_habitat$" # 11156212558754586914
+  col_giga_gas_giant_habitat_desc: "$col_habitat_desc$" # 7944530448479969122
+  col_giga_gas_giant_habitat_capital: "$col_capital$" # 2279097050667833788
+  col_giga_gas_giant_habitat_capital_desc: "$col_capital_desc$" # 6845846688094087309
+  col_giga_gas_giant_habitat_capital_hive: "$col_capital_hive$" # 4043193385604468362
+  col_giga_gas_giant_habitat_capital_hive_desc: "$col_capital_hive_desc$" # 2714235766148744248
+  col_giga_gas_giant_habitat_capital_machine: "$col_capital_machine$" # 2764241826831294890
+  col_giga_gas_giant_habitat_capital_machine_desc: "$col_capital_machine_desc$" # 13890266436980331018
+  col_giga_gas_giant_habitat_energy: "$col_habitat_energy$" # 16534191402203005649
+  col_giga_gas_giant_habitat_energy_desc: "$col_habitat_energy_desc$" # 8232657672103973883
+  col_giga_gas_giant_habitat_research: "$col_habitat_research$" # 10589841901938103838
+  col_giga_gas_giant_habitat_research_desc: "$col_habitat_research_desc$" # 13166017641297792472
+  col_giga_gas_giant_habitat_fortress: "$col_habitat_fortress$" # 12583602879461234409
+  col_giga_gas_giant_habitat_fortress_desc: "$col_habitat_fortress_desc$" # 18102579738100907043
+  col_giga_gas_giant_habitat_foundry: "$col_habitat_foundry$" # 1044834904116056124
+  col_giga_gas_giant_habitat_foundry_desc: "$col_habitat_foundry_desc$" # 16388699296387845039
+  col_giga_gas_giant_habitat_factory: "$col_habitat_factory$" # 16610490581246468645
+  col_giga_gas_giant_habitat_factory_desc: "$col_habitat_factory_desc$" # 8257890372710200695
+  col_giga_gas_giant_habitat_refinery: "$col_habitat_refinery$" # 17851633190550603913
+  col_giga_gas_giant_habitat_refinery_desc: "$col_habitat_refinery_desc$" # 12141203359607530797
