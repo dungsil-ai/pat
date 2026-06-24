@@ -18,7 +18,7 @@
   bpm_extremist_reason_anti_democratic_in_democratic: "이 [concept_interest_group]은 민주적인 [concept_country] 내에서 민주주의에 반대합니다." # 11762630389476987457
   bpm_extremist_reason_unionist_in_illegal_unions: "이 [concept_interest_group]은 불법인 [concept_country]에서 노동조합을 지지합니다." # 16034876797241423923
   bpm_extremist_reason_seeks_to_dismantle_status_quo: "이 [concept_interest_group]는 변하지 않는 현상 유지가 존재하는 [concept_country]에서 이에 반대하며, 모든 요구 사항이 충족되면 입장을 변경할 것입니다." # 17034116547576979897
-  bpm_super_extremist_reason_fascist: "이는 권력을 잡지 않은 파시스트 [concept_interest_group]입니다." # 15441471438653383217
+  bpm_super_extremist_reason_fascist: "이것은 파시스트 [GetLawType('law_party_single').GetName]가 없는 국가 내의 파시스트 [concept_interest_group]입니다." # 4238152002282008554
   bpm_super_extremist_reason_radical_socialist_in_non_cr: "비사회주의 [concept_country] 내의 급진 사회주의 [concept_interest_group]입니다." # 3776519903722138789
   bpm_super_extremist_reason_radical_democrat_in_undemocratic: "이것은 선거권이 없는 [concept_country] 내의 급진민주주의자 [concept_interest_group]입니다." # 11174867861056657147
   bpm_super_extremist_reason_market_lib_in_cr: "이는 사회주의 [concept_country] 내의 시장 자유주의 [concept_interest_group]입니다." # 8339410720154571675

@@ -17,8 +17,8 @@
   bpm_law_voting_final_phase_info: "#v 최종 [Concept('concept_enactment_phase','단계')]:" # 5166167265398706995
   bpm_law_voting_final_phase_legislation_info: "[GetPlayer.GetCustom('bpm_law_voting_final_phase_legislation')]" # 3358357651335860361
   bpm_law_voting_final_phase_ruler_info: "[GetPlayer.GetCustom('bpm_law_voting_final_phase_ruler')]" # 13190448903096105648
-  bpm_law_voting_final_phase_pass_info: "#v $country_legislature_name$#!가 @approves!#! #P 찬성#!합니다." # 11145879938944656151
-  bpm_law_voting_final_phase_fail_info: "#v $country_legislature_name$#!가 #v @disapproves!#! #N 반대#!합니다." # 6223157338848444793
+  bpm_law_voting_final_phase_pass_info: "#v [GetPlayer.GetCustom('country_legislature_name')|U]#!가 @approves!#! #P 찬성#!합니다" # 14062182080024990775
+  bpm_law_voting_final_phase_fail_info: "#v [GetPlayer.GetCustom('country_legislature_name')|U]#!가 #v @disapproves!#! #N 반대#!합니다" # 179380358785946669
   bpm_law_voting_final_phase_must_pass: "@information! [GetPlayer.GetCustom('bpm_law_voting_final_phase_vetoer')] 님이 @approves! #P #tooltippable #tooltip:bpm_law_voting_veto_tooltip 수락해야 합니다#!#!" # 13515665116584573328
   bpm_law_voting_final_phase_must_fail: "@warning! [GetPlayer.GetCustom('bpm_law_voting_final_phase_vetoer')] 님이 @disapproves! #N #tooltippable #tooltip:bpm_law_voting_veto_tooltip 거부할 것입니다#!#!" # 17932789072734713380
   bpm_law_voting_final_phase_must_veto: "@warning! [GetPlayer.GetCustom('bpm_law_voting_final_phase_vetoer')] 님이 @disapproves! #N #tooltippable #tooltip:bpm_law_voting_veto_tooltip 거부권을 행사할 것입니다#!#!" # 11441223576737967655
