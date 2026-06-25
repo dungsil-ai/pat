@@ -338,7 +338,7 @@
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
   giga_menu.1.name: "" # 17241709254077376921
-  giga_menu.1.desc: "v 3.37.0" # 1302306378298133299
+  giga_menu.1.desc: "v 3.38.2" # 3124601041488102291
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -1060,6 +1060,7 @@
   giga_menu_presets_patreon_47: "Patreon: §Mbundil§!" # 13350334573986471161
   giga_menu_presets_patreon_48: "후원자: §Mnotfox§!" # 10939672329889296126
   giga_menu_presets_patreon_49: "후원자: §MDr. Inferno§!" # 9317332161497343590
+  giga_menu_presets_patreon_50: "Patreon: §MMidiray§!" # 4249494963333926706
   giga_menu_presets_other_01: "대회 우승자: §HThe_Strateg1st§!" # 9546388759945176561
   personality_pangalactic_defense_league: "은하 수호자들" # 17520601703295951319
   personality_pangalactic_defense_league_desc: "이 제국은 지적 생명체에 대한 위협으로부터 은하계를 수호하고자 합니다." # 1401238670343349164
@@ -7225,7 +7226,7 @@
   requires_war_planets: "$TRIGGER_FAIL$£engineering_research£ §Y$giga_tech_war_planet$§! 기술이 필요합니다." # 5184360534687043252
   ap_celestial_printing: "천상의 함대" # 2929702551037014424
   ap_celestial_printing_desc: "$giga_war_moon_plural$와 $giga_planet_behemoth_plural$는 크기, 화력, 방어 능력 면에서 다른 모든 함선을 압도합니다. 강력한 타이탄, 거대 구조물, 항성 포식자조차 단 하나의 $giga_war_moon$에 비하면 보잘것없습니다. 불행히도 그 구조적 특성상 생산 능력에는 극심한 제한이 따릅니다.\n\n하지만 현재의 기술적 기반으로는 행성 하나 분량의 질량을 특수 거대 구조물로 이전하는 것은 식은 죽 먹기입니다. 이를 통해 여러 천체에서 채굴한 £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§!를 공급받아 천체급 함선을 '인쇄'할 수 있는 거대한 거대 구조물을 만들 수 있습니다.\n\n이제 이 가능성을 완전히 받아들여 무기화된 소행성을 대량 생산하고, 구시대의 함선들을 퇴역시킬 때가 되었습니다!\n\n이처럼 방대한 양의 물질을 쉽게 조작할 수 있게 되면 §R상상을 초월하는§! 함선을 건조할 길도 열릴 것입니다." # 1195475152923479172
-  ap_celestial_printing_effects: "\n우리가 §Y$giga_systemcraft$§! 조립 작업을 진행할 수 있게 해줍니다.\n\n행성에서 채취한 £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§!를 활용하여 적절한 후보를 찾을 필요 없이 특수 거대 구조물을 사용해 §Y공격 위성§!을 조립할 수 있습니다.\n\n조립된 천체 전함은 약간 더 §R비싸고§! §R시간이 더 많이 소요되지만§!, §Y선체 체력§!, §Y방어력§!, §Y보호막 체력§!이 §G15%§! 추가되며 §Y함선 화력§!이 §G10%§! 추가됩니다.\n\n획득한 연구 옵션:\n£physics_research£§Y$giga_tech_lunar_assembly$§!\n£physics_research£§Y$giga_tech_war_system_1$§!" # 7884650436826643746
+  ap_celestial_printing_effects: "\n§Y$giga_systemcraft$§! 조립을 향한 진척도를 높일 수 있게 합니다.\n\n행성에서 채굴한 £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§!를 활용하여, 적합한 후보지를 찾을 필요 없이 특수 거대 구조물을 통해 §Y공격 달§!을 조립할 수 있게 합니다.\n\n제작된 천체 전함은 §R비용§!과 §R시간§!이 약간 더 소요되지만, §Y선체 내구도§!, §Y장갑 내구도§!, §Y보호막 내구도§!가 §G15%§! 증가하며, §Y함선 연사 속도§!가 §G10%§! 추가됩니다.\n\n획득 가능한 연구 옵션:\n£physics_research£§Y$giga_tech_lunar_assembly$§!\n£physics_research£§Y$giga_tech_war_system_1$§!" # 17378065376892462641
   giga_tech_planetary_matter_dumping: "초고효율 대지 투기" # 156712951127163887
   giga_tech_planetary_matter_dumping_desc: "행성 표면에 막대한 양의 물질을 쏟아붓는 것은 그 표면에서 물질을 떼어내는 것보다 훨씬 쉽습니다. 하지만 이는 여전히 거대한 사업이며, 행성 하나에 필적하는 질량을 이동시키기 위해서는 극도로 원활한 물류 체계와 조율을 요구합니다." # 2960701441866376282
   giga_tech_lunar_assembly: "달 규모 제작 프로토콜" # 3895031031571819406

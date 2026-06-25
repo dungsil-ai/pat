@@ -529,6 +529,28 @@
   POINT_DEFENCE_BLOKKAT_DESC: "이 초효율적인 근접 방어 시스템은 적 발사체 주변의 현실 구조 자체를 산산조각 내어, 블록캇 함선에 접근하기도 전에 소멸시킵니다." # 2194056333374423140
   REACTOR_BLOKKAT: "블록캇 반응로" # 12554532134101340685
   REACTOR_BLOKKAT_DESC: "블록캇 함선은 고차원에서 전송되는 막대한 양의 에너지를 끌어오는 이 신비로운 구조물로 동력을 공급받습니다." # 8638247176206019819
+  corvette_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  corvette_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  detroyer_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  detroyer_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  cruiser_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  cruiser_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  battleshipe_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  battleshipe_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  titan_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  titan_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  juggernaut_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  juggernaut_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  starbase_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  starbase_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  platform_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  platform_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  ion_cannon_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  ion_cannon_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_moon_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_moon_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_planet_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_planet_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
   JUMP_DRIVE_BLOKKAT: "블록캇 위상 변이 FTL 드라이브" # 7071479436170236716
   JUMP_DRIVE_BLOKKAT_DESC: "블록캇 추진기와 블록캇 FTL 드라이브 사이에는 실질적인 차이가 없습니다. 두 장치 모두 고차원에 고정된 일종의 장치를 사용하여 함선 주변의 공간을 말 그대로 '끌어당겨' 즉각적인 가속으로 이동시킵니다." # 1566284486623684477
   THRUSTER_BLOKKAT: "블록캇 위상 변이 추진기" # 16296138915523951638
