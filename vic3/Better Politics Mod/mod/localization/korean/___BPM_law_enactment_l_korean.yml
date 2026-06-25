@@ -112,7 +112,7 @@
   bpm_law_sway_assert_authority: "#v 행정 권한을 확고히 하라#!" # 6230513817294896206
   bpm_law_sway_assert_authority_used: "단언된 행정 권한" # 11535088057524117664
   bpm_law_sway_assert_authority_mod: "단언된 행정 권한" # 11535088057524117664
-  bpm_law_sway_assert_authority_cost: "@aut! #N -50#!, [GetPlayer.MakeScope.ScriptValue('bpm_law_sway_authority_duration_years')]년 동안" # 7488784770363420330
+  bpm_law_sway_assert_authority_cost: "#N 50#! @aut! [Nbsp][concept_authority] [GetPlayer.MakeScope.ScriptValue('bpm_law_sway_authority_duration_years')]년 동안의 비용" # 10916288820760676066
   bpm_law_sway_assert_authority_effect: "[GetPlayer.MakeScope.ScriptValue('bpm_law_sway_assert_authority_effect_value')|v0+=]" # 2156007390195188190
   bpm_law_sway_assert_authority_neg_effect: "[GetPlayer.MakeScope.ScriptValue('bpm_law_sway_assert_authority_neg_effect_value')|v0+=]" # 6645692205252689469
   bpm_law_sway_negotiated_amendment: "#v 수정안 협상#!" # 5052824205814704980

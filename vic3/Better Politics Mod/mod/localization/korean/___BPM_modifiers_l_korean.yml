@@ -341,7 +341,6 @@
   interest_group_law_support_mult_desc: "[Concept('concept_interest_group','이해 집단')]이 [Concept('concept_law', '법률')]의 제정에 대해 지지하거나 반대하는 정도의 증감." # 9983615075287841836
   bpm_bakufu_administrative_state: "막부 행정 국가" # 16043837840209705156
   bpm_ig_gaining_support: "지지 획득" # 12060725307332788322
-  bpm_alexander_ii_reforms: "알렉산드르 2세의 개혁" # 3089746303022532852
   modifier_regency_conservatives: "$modifier_regency$" # 15682542331677220956
   modifier_regency_reactionaries: "$modifier_regency$" # 15682542331677220956
   modifier_regency_liberals: "$modifier_regency$" # 15682542331677220956
