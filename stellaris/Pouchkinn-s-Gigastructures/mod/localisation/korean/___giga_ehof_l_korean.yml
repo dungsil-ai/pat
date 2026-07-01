@@ -701,16 +701,24 @@
   tech_condensed_ews_desc: "극도로 높은 에너지 상태는 전자기력과 약력을 초기 힘인 전약력으로 통합합니다. $ehof_the_sphere_named$의 비밀은 물리적인 \"전약 준장\"을 구현하는 방법을 밝혀냈으며, 이는 양자 거품 수준에 이르기까지 극도로 정밀한 장 및 시공간 조작의 가능성을 열어줍니다." # 8143034260337468092
   allow_ehof_p1: "§H거대 구조물 잠금 해제:§! $ehof_ehofp1$" # 14960747095958721771
   tech_ehof_phase_01: "$ehof_ehofp1$" # 10555176999901826074
-  tech_ehof_phase_01_desc: "$r_arcane_manipulator_1$과 압축된 전자기장을 활용하여 $ehof_wormholes_text$를 팽창시키고 안정화합니다. 비결정론적 특성으로 인해 목적지는 완전히 무작위로 결정됩니다." # 1511097013368131412
+  tech_ehof_phase_01_desc: "Utilizes the $r_arcane_manipulator_1$ and squeezed electromagnetic fields to inflate and stabilize $ehof_wormholes_text$. Due to their indeterministic behavior, their destinations are largely beyond our control."
+  tech_ehof_phase_01_nomad: "$ehof_ehofp1$"
+  tech_ehof_phase_01_nomad_desc: "We yearn to explore the galaxy, but are boxed in. Fortunately, we can make use of the $ehof_megastructure_ruined_origin$ until we are freed by a more portable solution. Our repairs utilize the $r_arcane_manipulator_1$ and squeezed electromagnetic fields to inflate and stabilize $ehof_wormholes_text$. Due to their indeterministic behavior, the destination are largely beyond our control."
   allow_ehof_p2: "§H거대 구조물 잠금 해제:§! $ehof_ehofp2$" # 3526948236655346027
   tech_ehof_phase_02: "$ehof_ehofp2$" # 15739164507705496133
-  tech_ehof_phase_02_desc: "$r_arcane_manipulator_1$, 광자 물질, 음의 압력을 활용하여 $ehof_wormholes_text$를 팽창시키고 안정화합니다. 광자 물질과 음의 압력은 전체 과정을 강화하여 $ehof_ehofs$의 정밀도를 높이고 목적지 범위를 확장합니다." # 1304231539202081225
+  tech_ehof_phase_02_desc: "Utilizes the $r_arcane_manipulator_1$, photonic matter, and negative pressure to inflate and stabilize $ehof_wormholes_text$. The photonic matter and negative pressure enhance the entire process, increasing the $ehof_ehofs$ precision and expanding its range of destinations."
+  tech_ehof_spinal: "Horizon Drive"
+  tech_ehof_spinal_desc: "This device, mounted on the spine of an Arkship, utilizes the $r_arcane_manipulator_1$, squeezed electromagnetic fields, photonic matter, and negative pressure to inflate and stabilize $ehof_wormholes_text$."
   allow_ehof_p3: "§H거대 구조물 잠금 해제:§! $ehof_ehofp3$" # 5201095303296244765
   tech_ehof_phase_03: "$ehof_ehofp3$" # 7423420965175169430
   tech_ehof_phase_03_desc: "$r_arcane_manipulator_1$, 경질 광선 구조물, 무균 아중성미자 탐지기, 음의 질량을 활용하여 $ehof_wormholes_text$를 조작하고 팽창시킵니다. 음의 질량을 사용하면 웜홀이 완전히 안정화되어, 팽창된 $ehof_wormholes_text$를 원하는 만큼 오랫동안 열어둘 수 있습니다. 무균 아중성미자 탐지기는 $ehof_wormholes_text$가 도달할 수 있는 목적지의 범위를 더욱 확장합니다." # 5711155335584726138
+  tech_ehof_phase_03_nomad: "$tech_ehof_spinal$ Omega"
+  tech_ehof_phase_03_nomad_desc: "Augments the $tech_ehof_spinal$ with hardlight constructs, sterile sub-neutrino detectors, and negative mass. The utilization of negative mass induces total stabilization of wormholes, which allows us to keep the inflated $ehof_wormholes_text$ open for as long as we see fit. The sterile sub-neutrino detectors further expand the range of destinations our $ehof_wormholes_text$ can reach."
   allow_ehof_p4: "§H거대 구조물 잠금 해제:§! $ehof_ehofp4$" # 8170879607908196454
   tech_ehof_phase_04: "$ehof_ehofp4$" # 6020415423555414790
   tech_ehof_phase_04_desc: "$ehof_the_sphere_named$의 신비를 활용하는 $ehof_ehofp4$는 $ehof_ehof$의 완벽한 형태로, 제한이나 위험 없이 우리가 선택한 모든 위치로 이동할 수 있습니다. 무한한 가능성이 기다리고 있습니다." # 14351995739332104747
+  tech_ehof_phase_04_nomad: "$tech_ehof_spinal$ Ultima"
+  tech_ehof_phase_04_nomad_desc: "Utilizing the mysteries of the $ehof_the_sphere_named$, the Ultima model is the perfect form of the $tech_ehof_spinal$, capable of traveling to any location of our choosing without limitations and risks. Limitless possibilities await."
   tech_ehof_phase_04_partial_custom: "§H미래의 엿보기:§! $tech_ehof_phase_04$" # 15356166668198077763
   tech_ehof_phase_04_partial_custom_desc: "$ehof_the_sphere_named$에서 얻은 지식으로, 우리는 웜홀 여행의 새로운 시대라는 문턱에 서 있습니다.\n\n아직 이러한 이론의 복잡한 세부 사항을 완전히 파악하지는 못했지만, 이 원리들을 마스터할 수 있다면 $ehof_ehof$를 완성하는 것이 가능할지도 모릅니다." # 5113118936391020921
   tech_l_conductor: "광전도 분배 시스템" # 361945874234028021
@@ -861,12 +869,16 @@
   ehof_loc_physics: "[ehof_destination_system.ehof_display_physics]" # 6686182351268855946
   ehof_loc_society: "[ehof_destination_system.ehof_display_society]" # 13139829011352987748
   ehof_loc_engineering: "[ehof_destination_system.ehof_display_engineering]" # 9282921699024398151
-  count_pool_leader_trigger: "" # 17241709254077376921
-  count_owned_megastructure_trigger: "" # 17241709254077376921
-  ehof_toggle_temp_tooltip: "$ehof_ehof$를 전환하여 §H임시§! $ehof_wormhole$ 연결을 생성합니다" # 4080071665746561739
-  ehof_toggle_perm_tooltip: "$ehof_ehof$를 전환하여 §H영구§! $ehof_wormhole$ 연결을 생성합니다" # 12753247695489371731
+  count_pool_leader_trigger: ""
+  count_owned_megastructure_trigger: ""
+  ehof_toggle_temp_tooltip: "[ehof_toggle_temp_tooltip_scripted_loc]"
+  ehof_toggle_temp_settled_tooltip: "Toggle the $ehof_ehof$ to create §HTemporary§! $ehof_wormhole$ connections"
+  ehof_toggle_temp_nomad_tooltip: "Toggle the $tech_ehof_spinal$ to create §HTemporary§! $ehof_wormhole$ connections"
+  ehof_toggle_perm_tooltip: "[ehof_toggle_perm_tooltip_scripted_loc]"
+  ehof_toggle_perm_settled_tooltip: "Toggle the $ehof_ehof$ to create §HPermanent§! $ehof_wormhole$ connections"
+  ehof_toggle_perm_nomad_tooltip: "Toggle the $tech_ehof_spinal$ to create §HPermanent§! $ehof_wormhole$ connections"
   ehof_traders_tooltip: "$ehof_trader$와 통신을 엽니다" # 2431760120810197850
-  ehof_header_blank: "" # 17241709254077376921
+  ehof_header_blank: ""
   ehof_header_01: "§E목적지§!" # 14223621736581511947
   ehof_header_03: "§E행동§!" # 13791209776107794903
   ehof_header_04: "§E미탐사 목적지§!" # 15480266660598370115
@@ -882,23 +894,43 @@
   ehof_create_cohesive: "§M새로운 응집성 성계 찾기§!" # 9200146199115252094
   ehof_sm_quasar: "§M초거대 퀘이사§!" # 15988046324872208656
   ehof_sm_blackhole: "§M초거대 블랙홀§!" # 18386199988138343435
-  ehof_contact_ehof: "\n\n§G$ehof_ehof$에 연락하기§!" # 2309271735751249878
-  no_ehof_sa_btn: "§R< < $ehof_ehof_abr$ 없음 > >§!" # 14396216874098484770
-  no_ehof_sa_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$이(가) 감지되지 않음§!" # 14047048910650293111
-  ehof_disabled_btn: "§R< < 함대 감지되지 않음 > >§!" # 10320106995137233473
-  ehof_disabled_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$을(를) 활성화하려면 해당 성계 내에 최소 한 척의 함선이 있어야 합니다§!$ehof_contact_ehof$" # 10827849152661417273
+  ehof_contact_settled_ehof: "\n\n§GContact the $ehof_ehof$§!"
+  ehof_contact_nomad_ehof: "\n\n§GContact $ehof_nomad_control$§!"
+  ehof_nomad_control: "$tech_ehof_spinal$ Control"
+  no_ehof_sa_btn: "[no_ehof_sa_btn_scripted_loc]"
+  no_ehof_sa_settled_btn: "§R< < No $ehof_ehof_abr$ > >§!"
+  no_ehof_sa_nomad_btn: "§R< < No $tech_ehof_spinal$ > >§!"
+  no_ehof_sa_tooltip: "[no_ehof_sa_tooltip_scripted_loc]]"
+  no_ehof_sa_settled_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$ not detected§!"
+  no_ehof_sa_nomad_tooltip: "$TRIGGER_FAIL$§R$tech_ehof_spinal$ not detected§!"
+  ehof_disabled_btn: "[ehof_disabled_btn_scripted_loc]"
+  ehof_disabled_settled_btn: "§R< < No Fleet Detected > >§!"
+  ehof_disabled_nomad_btn: "§R< < Ineligible System > >§!"
+  ehof_disabled_tooltip: "[ehof_disabled_tooltip_scripted_loc]"
+  ehof_disabled_settled_tooltip: "$TRIGGER_FAIL$§RThere must be at least one ship inside the $ehof_ehof$ system in order to activate it§!$ehof_contact_settled_ehof$"
+  ehof_disabled_nomad_tooltip: "$TRIGGER_FAIL$§RThe $tech_ehof_spinal$ must be inside a Black Hole system in order to activate it§!$ehof_contact_nomad_ehof$"
   ehof_cooldown_btn: "§R< < 재사용 대기 중 > >§!" # 6168613680900926852
-  ehof_cooldown_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$이(가) 재사용 대기 중입니다§!$ehof_contact_ehof$" # 2257528484887204867
+  ehof_cooldown_tooltip: "[ehof_cooldown_tooltip_scripted_loc]"
+  ehof_cooldown_settled_tooltip: "$TRIGGER_FAIL$§RThe $ehof_ehof$ is cooling down§!$ehof_contact_settled_ehof$"
+  ehof_cooldown_nomad_tooltip: "$TRIGGER_FAIL$§RThe $tech_ehof_spinal$ is cooling down§!$ehof_contact_nomad_ehof$"
   ehof_upgrading_btn: "§M< < 업그레이드 중 > >§!" # 6582143830606294644
-  ehof_upgrading_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$이(가) 업그레이드 중입니다§!$ehof_contact_ehof$" # 10045064056371894759
+  ehof_upgrading_tooltip: "$TRIGGER_FAIL$§RThe $ehof_ehof$ is upgrading§!$ehof_contact_settled_ehof$"
   ehof_activating_btn: "§H< < 가동 준비 중 > >§!" # 2337701907820358941
-  ehof_activating_tooltip: "$TRIGGER_PASS$§G$ehof_ehof$이(가) 이동을 준비하고 있습니다§!" # 5917473777929596858
+  ehof_activating_tooltip: "[ehof_activating_tooltip_scripted_loc]"
+  ehof_activating_settled_tooltip: "$TRIGGER_PASS$§GThe $ehof_ehof$ is preparing for travel§!"
+  ehof_activating_nomad_tooltip: "$TRIGGER_PASS$§GThe $tech_ehof_spinal$ is preparing for travel§!"
   ehof_activated_btn: "§B< < 활성화됨 > >§!" # 8704758418601293841
-  ehof_activated_tooltip: "$TRIGGER_PASS$§G$ehof_ehof$이(가) 현재 활성화 상태입니다§!$ehof_contact_ehof$" # 357683843457114510
+  ehof_activated_tooltip: "[ehof_activated_tooltip_scripted_loc]"
+  ehof_activated_settled_tooltip: "$TRIGGER_PASS$§GThe $ehof_ehof$ is currently active§!$ehof_contact_settled_ehof$"
+  ehof_activated_nomad_tooltip: "$TRIGGER_PASS$§GThe $tech_ehof_spinal$ is currently active§!$ehof_contact_nomad_ehof$"
   ehof_activate_btn: "§G< < 활성화 > >§!" # 1371242638707669651
-  ehof_activate_tooltip: "$TRIGGER_PASS$§G$ehof_ehof$을(를) 사용할 준비가 되었습니다§!$ehof_contact_ehof$\n\n$ehof_fleets_in_system$" # 2045567979943996467
+  ehof_activate_tooltip: "[ehof_activate_tooltip_scripted_loc]"
+  ehof_activate_settled_tooltip: "$TRIGGER_PASS$§GThe $ehof_ehof$ is ready for use§!$ehof_contact_settled_ehof$\n\n$ehof_fleets_in_system$"
+  ehof_activate_nomad_tooltip: "$TRIGGER_PASS$§GThe $tech_ehof_spinal$ is ready for use§!$ehof_contact_nomad_ehof$\n\n$ehof_fleets_in_system$"
   ehof_deactivate_btn: "§M< < 비활성화 > >§!" # 2540503321621687525
-  ehof_deactivate_tooltip: "§M$ehof_ehof$ 비활성화§!" # 11512855148759685622
+  ehof_deactivate_tooltip: "[ehof_deactivate_tooltip_scripted_loc]"
+  ehof_deactivate_settled_tooltip: "§MDeactivate the $ehof_ehof$§!"
+  ehof_deactivate_nomad_tooltip: "§MDeactivate the $tech_ehof_spinal$§!"
   ehof_report_standard_header: "이동 보고서" # 8371668005804337150
   ehof_report_quest_header: "§E이동 보고서§!" # 9207175366134233504
   ehof_report_cohesive_header: "§H이동 보고서§!" # 1383714356051027617
@@ -911,13 +943,17 @@
   ehof_chk_military: "[root.ehof_chk1_military]" # 6732783136898233438
   ehof_chk_colossus: "[root.ehof_chk1_colossus]" # 13304362427757117869
   ehof_chk_juggernaut: "[root.ehof_chk1_juggernaut]" # 15024846773254460924
+  ehof_chk_arkship: "[root.ehof_chk1_arkship]"
   ehof_loc_science: "과학선: [root.ehof_pre_flight_science]\n" # 14547493784626790909
   ehof_loc_constructor: "건설선: [root.ehof_pre_flight_constructor]\n" # 6196133855168747460
   ehof_loc_military: "군함: [root.ehof_pre_flight_military]\n" # 9177068794534011962
   ehof_loc_colossus: "거대 병기: [root.ehof_pre_flight_colossus]\n" # 11112964008548361696
   ehof_loc_juggernaut: "저거너트: [root.ehof_pre_flight_juggernaut]\n" # 845384949180788314
+  ehof_loc_arkship: "Arkships: [root.ehof_pre_flight_arkship]\n"
   ehof_goback: "뒤로" # 13426957747496237253
-  ehof_leavestation: "정거장을 떠난다" # 10048523902542849872
+  ehof_leavestation: "[ehof_travel_menu_quit]"
+  ehof_leavestation_settled: "Leave the station"
+  ehof_leavestation_nomadic: "Leave the facility"
   ehof_mega_phase.10041_option_7: "§P$ehof_ehof_abr$ 해체§!" # 14237103541830439129
   ehof_reply_endcomms: "통신 종료" # 7930929395325337280
   ehof_btn_letsdoit: "진행합시다" # 11605301820679399473
@@ -938,19 +974,30 @@
   ehof_redo_notready_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$를 사용할 준비가 되지 않았습니다§!\n\n" # 9909283948541793050
   ehof_p1_desc: "§H$ehof_ehofp1$§!\n이 시설은 매우 제한된 종류의 항성으로만 터널을 연결할 수 있습니다. 비전 균열 조작기는 여전히 우리에게 큰 수수께끼이며, 매우 제한적인 수준으로만 활용할 수 있습니다. 시설의 단점을 알고는 있지만, 현재로서는 정확도와 능력을 향상할 기술이나 통찰력이 부족합니다." # 11625578197121722029
   ehof_p2_desc: "§H$ehof_ehofp2$§!\n이전 모델보다 약간 개선된 이 시설은 더 다양한 종류의 항성으로 터널을 연결할 수 있습니다." # 10372590387980095253
+  ehof_p2_nomad_desc: "§H$tech_ehof_spinal$§!\nThis spinal mount is only capable of tunneling to a limited variety of star types. Our astronavigational experience is very useful, but can only take us so far given that the Arcane Rift Manipulator is still a great mystery to us."
   ehof_p3_desc: "§H$ehof_ehofp3$§!\n완벽하게 장비를 갖춘 이 시설은 이전 모델보다 크게 개선되었으며, 모든 종류의 항성으로 터널을 연결할 수 있습니다." # 5550493150972073710
+  ehof_p3_nomad_desc: "§H$tech_ehof_phase_03_nomad$§!\nFully equipped, this spinal mount is a vast improvement on its predecessor, and is capable of tunneling to any star type."
   ehof_p4_desc: "§H$ehof_ehofp4$§!\n오메가가 정점이라고 확신했지만, 틀렸습니다. 이 시설은 모든 항성으로 터널을 연결할 수 있을 뿐만 아니라, 이제 연결을 무기한으로 유지할 수 있는 능력도 갖추었습니다. 또한, 이동하고자 하는 정확한 항성을 선택할 수 있습니다." # 2403765646958723957
+  ehof_p4_nomad_desc: "§H$tech_ehof_phase_04_nomad$§!\nWe were sure the Omega was the peak. We were wrong. This spinal mount is not only capable of tunneling to every star type, but we now have the ability to keep the connection open indefinitely. Additionally, we can choose the exact star we wish to travel to."
   ehof_cohesive_desc: "$ehof_cohesive$ 성계: $ehof_ehof$의 예비 테스트 중, 비전 균열 조작기의 표적화 메커니즘을 통해서만 접근할 수 있는 은하 하이퍼레인 네트워크 외부의 항성들을 발견했습니다. 하지만 현재로서는 돌아올 방법이 없으므로, 이 성계에는 과학선과 건설선만 보내는 것이 현명할 것입니다." # 6031198988963836649
+  ehof_cohesive_nomad_desc: "$ehof_cohesive$ systems: During preliminary testing of the $tech_ehof_spinal$, we discovered stars outside the galactic hyperlane network that are only accessible via the Arcane Rift Manipulator's targeting mechanisms. There is currently no means of return unless we send the arkship equipped with the $tech_ehof_spinal$, so it would be wise to not send our military fleets to these systems."
+  ehof_travel.001.title: "[ehof_travel_menu_title]"
   ehof_travel.001_01_desc: "$ehof_p1_desc$\n\n$ehof_cohesive_desc$\n\n$ehof_mega_phase.10041_response_2_p1$" # 17974010075731144227
   ehof_travel.001_02_desc: "$ehof_p2_desc$\n\n$ehof_cohesive_desc$\n\n$ehof_mega_phase.10041_response_2_p2$" # 12478522902250098033
+  ehof_travel.001_02_nomad_desc: "$ehof_p2_nomad_desc$\n\n$ehof_cohesive_nomad_desc$\n\n$ehof_mega_phase.10041_response_2_p2_nomad$"
   ehof_travel.001_03_desc: "$ehof_p3_desc$\n\n$ehof_cohesive_desc$\n\n$ehof_mega_phase.10041_response_2_p3$" # 17764973384036502192
+  ehof_travel.001_03_nomad_desc: "$ehof_p3_nomad_desc$\n\n$ehof_cohesive_nomad_desc$\n\n$ehof_mega_phase.10041_response_2_p3_nomad$"
   ehof_travel.001_04_desc: "$ehof_p4_desc$\n\n$ehof_cohesive_desc$\n\n$ehof_mega_phase.10041_response_2_p4$" # 3996224553365151713
+  ehof_travel.001_04_nomad_desc: "$ehof_p4_nomad_desc$\n\n$ehof_cohesive_nomad_desc$\n\n$ehof_mega_phase.10041_response_2_p4_nomad$"
   ehof_cause: "§H원리§!: 찰나의 순간마다 우주의 모든 지점에서 양자 요동으로 인해 수많은 가상 입자-반입자 쌍이 생성됩니다. 이러한 요동은 양자 거품이라 알려진 공간의 미시적 구조를 형성합니다. 이 양자 거품 속에서는 극히 짧은 시간 동안만 존재하는 가상 미세 블랙홀이 나타날 수 있습니다. 이러한 블랙홀은 양자 터널링을 통해 실제 $ehof_wormholes_text$로 변할 수 있습니다. 비록 지속 시간은 여전히 매우 짧지만, 비전 균열 조작기(Arcane Rift Manipulator)를 이용해 이를 안정화하고 팽창시킴으로써 지점 간 즉각적인 우주 항행이 가능해질 잠재력이 있습니다." # 2043459091424878007
   ehof_effect: "§H이론§!: 회전하는 블랙홀의 에르고스피어 내부에서 가장 높은 밀도의 양자 요동을 발견할 수 있습니다. 거대한 회전력과 중력에 의해 이미 공간이 극도로 뒤틀린 그곳에서는 양자 거품이 매우 강하게 자극되어, 생성되는 미세 블랙홀의 수가 일반적인 공간보다 수십 배 더 많습니다. 따라서 잠재적인 $ehof_wormholes_text$의 수가 실용적인 용도로 활용하기에 충분합니다." # 2110281137409211272
   ehof_mega_phase.10041_response_2_p1: "$ehof_cause$\n\n$ehof_effect$\n\n§H응용§!: $ehof_ehofp1$은 압축 및 응축된 전자기장과 비전 균열 조작기를 활용하여 $ehof_wormholes_text$를 팽창시키고 안정화합니다.\n\n이 시설은 아직 매우 실험적인 단계에 있으며, 팽창 및 안정화 과정의 신뢰성이 매우 낮습니다. 따라서 $ehof_ehofp1$의 가능한 대상은 다음과 같습니다:\n - §E무작위 목적지§!\n - $ehof_category_01$\n - $ehof_category_02$\n - $ehof_category_03$" # 1900378975621978505
   ehof_mega_phase.10041_response_2_p2: "$ehof_cause$\n\n$ehof_effect$\n\n§H응용§!: $ehof_ehofp2$는 압축 및 응축된 전자기장, 비전 균열 조작기, 그리고 블랙홀의 사건의 지평선에 가해지는 음압을 활용하여 $ehof_wormholes_text$를 팽창시키고 안정화합니다.\n\n우리 승무원들이 장치에 대한 추가적인 접근 권한을 확보함에 따라 비전 균열 조작기의 확률적 대상 선정 루틴이 확장되었습니다.\n\n$ehof_ehofp2$의 대상은 다음과 같습니다:\n - §E무작위 목적지§!\n - $ehof_category_01$\n - $ehof_category_02$\n - $ehof_category_03$\n - $ehof_category_04$\n - $ehof_category_05$" # 15320134821199244957
+  ehof_mega_phase.10041_response_2_p2_nomad: "$ehof_cause$\n\n$ehof_effect$\n\n§HApplication§!: The $tech_ehof_spinal$ utilizes squeezed, condensed electromagnetic fields, the Arcane Rift Manipulator, and the application of negative pressure onto the black hole's event horizon in order to inflate and stabilize $ehof_wormholes_text$.\n\nThe probabilistic target routines of the Arcane Rift Manipulator have expanded as our crew has gained further access to the device.\n\n$tech_ehof_spinal$ targets include:\n - §ERandomized Destinations§!\n - $ehof_category_01$\n - $ehof_category_02$\n - $ehof_category_03$\n - $ehof_category_04$\n - $ehof_category_05$"
   ehof_mega_phase.10041_response_2_p3: "$ehof_cause$\n\n$ehof_effect$\n\n§H응용§!: $ehof_ehofp3$는 추상 물리학의 돌파구와 $giga_sr_negative_mass$를 이용한 실험을 활용합니다. 고도로 발달한 경질광 구조물 투사기와 멸균 하이퍼 중성미자 탐지기는 $ehof_wormholes_text$ 팽창 기제의 정밀도와 효율을 100%까지 높여줍니다. 경질광 구조물 투사기는 전자기장 투사기를 대체하여 비전 균열 조작기를 보조합니다. 멸균 하이퍼 중성미자 탐지기를 통해 $ehof_ehofp3$는 $ehof_wormhole_text$가 터널링을 시작하기도 전에 그 대상을 결정할 수 있게 되며, 이를 통해 우리가 원하는 대상으로 선택적으로 웜홀을 열어 모든 유형의 천체로 이동할 수 있습니다.\n\n$giga_sr_negative_mass$ 주입기가 거대 구조물에 통합되어 열린 웜홀을 더욱 안정화합니다.\n\n$ehof_ehofp3$의 대상은 다음과 같습니다:\n - §E무작위 목적지§!\n - $ehof_category_01$\n - $ehof_category_02$\n - $ehof_category_03$\n - $ehof_category_04$\n - $ehof_category_05$\n - $ehof_category_06$\n - $ehof_category_07$" # 8487102286991834841
+  ehof_mega_phase.10041_response_2_p3_nomad: "$ehof_cause$\n\n$ehof_effect$\n\n§HApplication§!: The $tech_ehof_phase_03_nomad$ makes use of the breakthroughs in abstract physics and experiments with $giga_sr_negative_mass$. Highly advanced hardlight construct projectors and sterile hyper-neutrino detectors increase the precision and efficiency of the $ehof_wormholes_text$ inflation mechanism to 100%. The hardlight construct projectors replace the electromagnetic field projectors, and support the Arcane Rift Manipulator. The sterile hyper-neutrino detectors will allow the $tech_ehof_phase_03_nomad$ to determine the target of a $ehof_wormhole_text$ before it even tunnels, which allows us to traverse to any type of celestial object by selectively opening the wormhole to a target we desire.\n\n$giga_sr_negative_mass$ injectors have been integrated into the device to further stabilize opened wormholes.\n\n$tech_ehof_phase_03_nomad$ targets include:\n - §ERandomized Destinations§!\n - $ehof_category_01$\n - $ehof_category_02$\n - $ehof_category_03$\n - $ehof_category_04$\n - $ehof_category_05$\n - $ehof_category_06$\n - $ehof_category_07$"
   ehof_mega_phase.10041_response_2_p4: "$ehof_cause$\n\n$ehof_effect$\n\n§H응용§!: $ehof_ehofp4$는 $ehof_the_sphere_named$에서 얻은 지식을 통해 완전히 복구된 비전 균열 조작기를 활용합니다. 완전한 상태의 이 유물은 우리가 정밀한 정확도로 성계를 표적으로 삼고 $ehof_wormholes_text$를 무기한 유지할 수 있게 해줍니다.\n\n$ehof_ehofp4$는 진정한 성간 여행의 정점입니다!" # 5948755440056783059
+  ehof_mega_phase.10041_response_2_p4_nomad: "$ehof_cause$\n\n$ehof_effect$\n\n§HApplication§!: The $tech_ehof_phase_04_nomad$ utilizes an Arcane Rift Manipulator fully restored via the knowledge we gained from the $ehof_the_sphere_named$. In its complete state, the relic allows us to target systems with pinpoint accuracy and maintain $ehof_wormholes_text$ indefinitely.\n\nThe $tech_ehof_phase_04_nomad$ is truly the pinnacle of interstellar travel!"
   ehof_cooldown: "\n\n$ehof_ehof$가 §Y[root.ehof_cooldown_days]일§! 동안 재사용 대기 중입니다. £time£" # 13883115938049225368
   ehof_mega_check_desc: "§H[ehof_megastructure_system.GetName]§!에 있는 $ehof_ehof$에서 $ehof_wormhole_text$를 성공적으로 통과한 후, 시스템 기술자들은 우리 함선이 [ehof_destination_system.GetName]에 성공적으로 도착했다고 보고했습니다.\n\n$ehof_cooldown$" # 4866334090558889718
   ehof_good_response_01: "성계를 탐사합니다." # 6353743786797377720
@@ -1221,7 +1268,7 @@
   ehof_mega_trader_unbidden_warlock_tooltip: "$ehof_mega_trader_unbidden_warlock$\n언비든 워록\n\n$r_unbidden_warlock_effects$\n\n" # 18062571695512327180
   ehof_mega_trader_contingency_core_tooltip: "$ehof_mega_trader_contingency_core$\n컨틴전시 핵\n\n$r_contingency_core_effects$\n\n" # 13718732558346868023
   ehof_mega_trader_rare_system_tooltip: "$ehof_mega_trader_rare_system$\n희귀 성계\n\n$r_rare_system_desc$\n\n" # 5422083368261940622
-  ehof_mega_trader.110_prefix: "" # 17241709254077376921
+  ehof_mega_trader.110_prefix: ""
   ehof_mega_trader.110_suffix: "이 유물들은 덧없지만, 반드시 사용해야 한다는 법은 없습니다. 우리처럼 수집가가 되어보십시오!\n\n우리는 §Y5년§! £time£마다 재고를 보충합니다." # 18366397167229613191
   ehof_trader_bought_dragon_trophy: "$ehof_mega_trader.110_prefix$$ehof_mega_trader_dragon_trophy_tooltip$$ehof_mega_trader.110_suffix$" # 17422687524186898583
   ehof_trader_bought_khans_throne: "$ehof_mega_trader.110_prefix$$ehof_mega_trader_khans_throne_tooltip$$ehof_mega_trader.110_suffix$" # 11097091664659289538
@@ -1250,9 +1297,12 @@
   ehof_mega_trader.014.desc: "$ehof_the_compound$가 떠났으니, 기꺼이 거래를 재개하겠습니다." # 16160612172637919818
   origin_incohesive: "섬에서의 격리" # 643882715838262424
   origin_incohesive_desc: "이 문명은 우주와는 동떨어진 공간의 고립된 행성에서 완전히 발전했습니다." # 10167754531548605975
-  origin_incohesive_effect_desc: "- §LWormhole-Cohesive Cluster§! 내부에서 시작하며, 인근에 파괴된 §LEHOF Alpha§!가 있는 블랙홀 성계와 함께합니다.\n- 또한 EHOF 기술에 대한 약간의 진척도를 부여받아, EHOF를 조기에 복구할 수 있게 됩니다.\n\n§R멀티플레이어용으로 밸런스가 조정되지 않았습니다§!" # 347058778135000996
+  origin_incohesive_effect_desc: "- Start within the §LWormhole-Cohesive Cluster§!, alongside a neighbouring Black Hole system with a ruined §LEHOF Alpha§!.\n- Also granted some progress into EHOF technology, which will allow you to restore the EHOF early.\n\n§RSLOW START DUE TO LACK OF NEIGHBOURING PLANETS OR DEPOSITS. NOT BALANCED FOR MULTIPLAYER.§!"
   ehof_origin_init_NAME: "코헤시브 클러스터" # 8967869700289969864
   ehof_origin_init_DESC: "모성계가 $ehof_cohesive$ 성단 내에서 무작위로 생성됩니다." # 1367811301719710916
+  sm_giga_arkship_ehof: "$tech_ehof_spinal$"
+  sm_giga_arkship_ehof_desc: "The $tech_ehof_spinal$ inflates micro-wormholes from the quantum foam to form traversible intragalactic routes."
+  sm_giga_arkship_ehof_tt: "§YAllows the opening of wormholes to distant stars while in orbit of Black Holes.§!\n§LCapabilities and upkeep will increase with the $tech_ehof_phase_03$ and $tech_ehof_phase_04$ technologies.§!"
   ehofo_new_capital_name: "[ehofo_old_world.GetName]" # 5380718475514996583
   ehofo_new_star_name: "[ehofo_new_system.GetName]" # 506130430960050253
   ehofo_new_system_name: "[ehofo_old_system.GetName]" # 17845714835768200731
@@ -1342,7 +1392,7 @@
   INVESTIGATE_SCARRED_PLANET: "흉터" # 3196944242841307307
   INVESTIGATE_SCARRED_PLANET_DESC: "우리 [Owner.GetScientistPlural]은 흉터의 지질 구조와 물질 구성을 연구하여 그것이 어떻게 형성되었는지에 대한 세부 정보를 찾고자 합니다. 또한 스캐너를 통해 주변 지역을 분석하여 비정상적인 물질을 탐지하고 있습니다.\n\n현재 우리는 이 흉터가 일종의 초병기 사용으로 인해 발생했을 가능성을 의심하고 있습니다." # 17675335000569919795
   ehof_anomaly.10013.name: "거대한 틈" # 5095213984604968168
-  ehof_anomaly.10013.desc: "흉터에 대한 조사를 완료함으로써 우리의 가설이 옳았음이 입증되었습니다. 흉터는 사실 거대한 무기에 의해 생성된 것이었습니다.\n\n이 정도 규모의 무기는 이전에도 본 적이 있지만, 이곳에 사용된 무기의 세부 사항은 이 사건을 매우 흥미롭게 만듭니다. 흉터의 지질학적 구조, 행성 표면으로 파고든 각도, 60km에 달하는 깊이, 그리고 그 안에 존재하는 비자연적인 물질들은 모두 흉터가 거대한 운동 에너지 무기에 의해 만들어졌다는 믿음을 뒷받침합니다.\n\n우리 센서는 또한 협곡 전체를 감싸고 있는 불규칙한 방사선 경로를 감지했습니다. 그러나 이 방사성 오염은 플루토늄처럼 그 자체로 방사능을 띠는 물질의 결과가 아니라, 강력한 감마선에 노출된 결과입니다. 이는 행성 표면을 타격하여 흉터를 만든 운동 에너지 투사체가 적어도 부분적으로는 반물질로 구성되어 있었다는 사실을 밝혀줍니다. 투사체는 물질-반물질 반응으로 완전히 소멸한 것으로 보이며, 따라서 우리는 그 구성에 대해 더 이상 알아낼 수 없었습니다.\n\n더 나아가, 우리의 [Owner.GetScientistPlural]는 흉터의 연대를 약 125만 년 전으로 추정했습니다. 그 엄청난 세월 때문에, 우리는 이 무기를 만든 자가 누구인지, 혹은 애초에 왜 발사되었는지에 대해 더 알게 될 것이라고는 예상하지 않습니다." # 15926536971159593072
+  ehof_anomaly.10013.desc: "Completing our investigation of the Scar proved our hypothesis correct. The Scar was, in fact, created by a massive weapon.\n\nWe've seen weapons on this scale before, but the specifics of the weapon used here make this case so fascinating. The geological structure of the Scar, its angle of incision into the planet's surface, its 60-kilometer depth, and the presence of unnatural substances within it all lead to the belief that the Scar was created by an enormous kinetic weapon.\n\nOur sensors also detected an irregular path of radiation winding throughout the entire canyon. However, this radioactive contamination is not the result of substances that are radioactive by themselves, like plutonium, but rather the result of exposure to intense gamma radiation. This leads to the revelation that the kinetic projectile that hit the planet's surface and created the Scar was also composed, at least partially, out of antimatter. The projectile appears to have been fully annihilated by its matter-antimatter reaction, so we were unable to determine anything further about its makeup.\n\nFurthermore, our [Owner.GetScientistPlural] have dated the age of the Scar to around 1.25 million years old. Because of its incredible age, we do not anticipate that we will ever know more about who made the weapon responsible, or why it was fired in the first place."
   ehof_megastructure.016.name: "신비로운 돌" # 15703688995948561794
   ehof_megastructure.016.desc: "우리 과학선 중 하나가 §H[root.solar_system.GetName]§! 성계의 중력 중심 근처에서 거대하고 매우 밝은 물체를 발견했습니다. 물체에서 방출되는 에너지가 너무나 강렬하여 성계 전역의 보호막과 센서를 방해하기 때문에, 우리는 처음에 그것을 중성자별로 생각했습니다.\n\n더 자세히 조사한 결과, 이 물체는 현재 설계, 목적, 기원을 알 수 없는 구조물임이 밝혀졌습니다. 그것은 행성 크기의 납작한 원통형으로, 상단과 하단 표면에 거대하고 수수께끼 같은 문자가 새겨져 있으며, 두 표면 모두에서 극도로 강렬한 푸른 빛을 내뿜고 있습니다.\n\n물체에 대한 정밀 스캔 결과, 센서가 반환하는 값들이 기이하고 이해할 수 없어서 아무것도 알아낼 수 없었습니다. 센서가 보고하는 방출 에너지가 너무나 막대하여, 근처의 온도가 최소 500만 켈빈에서 문자 부분에서는 최대 1조 켈빈에 달하기 때문에 이 구조물에 대한 직접적인 조사는 불가능합니다.\n\n당분간은 이 구조물을 그대로 두어야 할 것 같습니다." # 12470128813872876678
   ehof_megastructure.016.a: "엄청나군!" # 12595353619285624141
@@ -1352,8 +1402,6 @@
   ehof_megastructure.018.name: "블랙홀 구조물" # 5495193574817233907
   ehof_megastructure.018.desc: "§H[root.solar_system.GetName]§!의 중심부에는 중앙 블랙홀을 감싸고 있는 것으로 보이는 손상된 궤도 구조물이 있습니다. 초기 조사에 따르면 이 구조물은 작동하지 않으며 방치된 것으로 보입니다. 목적을 확인하기 위해서는 구조물을 탐사해야 합니다." # 11290980196199734422
   ehof_megastructure.018.a: "흥미롭군!" # 1067396349237925418
-  ehof_megastructure.018.b: "아니, 고립된 채로 있는 게 훨씬 멋지지." # 3800142686122087936
-  ehof_megastructure.018.b.tooltip: "§R도약 추진기 같은 기술 없이는 성단에서 확장하거나 떠날 수 없을 것입니다.§!" # 3000717094278273918
   EXPLORE_RUINED_EHOF: "블랙홀 구조물 탐사" # 8947800365143544705
   EXPLORE_RUINED_EHOF_DESC: "§H[root.solar_system.GetName]§! 성계 내의 손상된 블랙홀 구조물에 대한 탐사 프로젝트가 진행 중입니다. 목적을 확인하기 위해, 우리는 탐사 부대에 진공 상태와 강한 중력을 견딜 수 있는 장비를 갖추게 한 뒤 구조물의 잔해 속으로 보낼 것입니다." # 16997904594557439793
   INVESTIGATE_ENIGMATIC_PATTERN: "수수께끼의 패턴" # 6741575570172482906
@@ -1539,7 +1587,7 @@
   code_final_digsite: "현실 코드 - $ehof_the_sphere_named$" # 6662268845628491049
   code_final_digsite_desc: " $ehof_the_sphere$ 내부로 들어갈 방법을 찾는 것은 불가능해 보입니다.\n\n단순히 강제로 진입하려는 시도는 무의미할 것입니다. 전체적으로 표면 온도가 정의되어 있지는 않지만, 표면을 가로지르는 파동과 일치하는 개별 영역은 온도가 존재합니다. 그 온도는 절대영도에 가까운 온도부터 섭씨 수십만 도까지 불규칙하게 변합니다. 표면에 닿는 모든 장비는 즉시 파괴될 것입니다.\n\n대신, 우리 [Owner.GetResearchers]들은 $ehof_epcs$를 사용할 것을 제안합니다. 이것이 송신기와 $PGATE_GALACTIC$에 접근하는 열쇠였으므로, $ehof_the_sphere$와 상호작용하는 데도 사용할 수 있을 것입니다.\n\n현재 계획은 더 진행하기 전에 이 접근 방식이 유효한지 확인하기 위해 $ehof_the_sphere$ 상단 캡스톤 위에 $ehof_epcs$ 송신기 파일런 하나를 건설하는 것입니다." # 17342572473656061049
   ehof_reality_code.1001.name: "현실 코드 - $ehof_the_sphere_named$ I" # 15878095308646353344
-  ehof_reality_code.1001.desc: "송신탑은 $ehof_the_sphere$를 개방하는 데 부분적으로 성공했습니다.\n\n중력전자기 반송파를 통해 $ehof_epcs$를 송출하자, $ehof_the_spheres$가 반응했습니다. 아래쪽 극지점에서 1미터 정도의 아주 작은 틈이 펼쳐졌으나, 단 1초 동안만 유지되었습니다. 송출을 계속했음에도 불구하고 입구는 다시 굳게 닫혔으며, $ehof_epcs$를 재송출해도 입구는 다시 나타나지 않았습니다.\n\n우리의 접근 방식이 일반적인 의미에서 유효하다는 것은 확인했지만, $ehof_the_sphere$로 향하는 입구를 안정화하기 위해서는 추가적인 송신탑을 건설해야 한다는 사실 또한 알게 되었습니다." # 1327877963300160697
+  ehof_reality_code.1001.desc: "The transmitter pylon was partially successful at opening the $ehof_the_sphere$.\n\nBroadcasting the $ehof_epcs$ via its gravitoelectromagnetic carrier wave, the $ehof_the_sphere$ reacted. At the pole below, a miniscule one-meter notch unfolded - but only for a second. Despite continuing the broadcast, the entrance sealed shut, and rebroadcasting the $ehof_epcs$ did not cajole it into reappearing.\n\nWhile we now know our approach works in the most general sense, we also know that we must construct additional pylons to stabilize an entrance into the $ehof_the_sphere$."
   ehof_reality_code.1002.name: "현실 코드 - $ehof_the_sphere_named$ II" # 1035444097079430008
   ehof_reality_code.1002.desc: "$ehof_the_sphere$를 돌파하려는 우리의 시도가 진척을 보이고 있습니다. 추가적인 방사탑을 다수 배치하고 $ehof_epcs$ 방송을 순환시킨 결과, 구조물 상단에 위치한 구멍의 크기가 커졌습니다.\n\n개구부의 크기는 전송원의 수와 상관관계에 따라 지수 함수적으로 증가하는 것으로 보입니다. 두 번째 탑을 추가하자 입구의 반지름이 16미터로 늘어나고 16초 동안 유지되었으며, 세 번째 탑을 추가하자 반지름이 81미터로 늘어나며 같은 시간 동안 유지되었습니다. 네 번째 탑에서는 256미터에 256초가 지속되었습니다.\n\n이러한 결과로 미루어 볼 때, 우리의 [Owner.GetScientistPlural]는 이 입구가 초입방체 방식으로 확장된다고 판단하고 있습니다. 성장률을 바탕으로 계산하면, $ehof_the_sphere$를 완전히 개방하기 위해서는 32개의 탑이 필요할 것입니다." # 2239417624994097333
   ehof_reality_code.1003.name: "현실 코드 - $ehof_the_sphere_named$ III" # 6099326608980947272
@@ -1554,6 +1602,9 @@
   ehof_reality_code.005.desc: "우리의 [Owner.GetScientistPlural]는 우리가 발견한 물질을 $giga_sr_sentient_metal$이라 명명했습니다. 그들이 밝혀낸 정보에 따르면, 우리 과학계는 이 물질이 상상할 수 없는 잠재력을 지니고 있다고 확신합니다.\n\n하지만 현재로서는 그 용도가 우리가 이해하는 만큼 제한적입니다. 우리의 [Owner.GetEngineerPlural]는 §H합금§!과 §H에너지§!를 공급하여 기존 $giga_sr_sentient_metal$ 샘플을 복제할 특수 증식 시설의 예비 설계를 마쳤습니다.\n\n또한, $PGATE_GALACTIC$을 재조사하는 프로젝트가 제안되었습니다. 우리의 [Owner.GetScientistPlural]는 이 신비로운 구조물들이 $giga_sr_sentient_metal$로 구성되어 있을지도 모른다고 믿고 있기 때문입니다." # 13116624517856035426
   ehof_reality_code.004.name: "현실 코드 - 활성화" # 11866760440404398873
   ehof_reality_code.004.desc: "우리의 [Owner.GetResearchers]가 $ehof_ep$ 송신기에서 수집한 지식 덕분에, 이제 우리는 $PGATE_GALACTIC$을 활성화하는 방법을 알게 되었습니다. 우리의 [Owner.GetResearchers]는 이미 함선 송신기에 필요한 증폭 장치를 개발하기 시작했습니다. $PGATE_GALACTIC$이 활성화될 때 정확히 무슨 일이 일어나는지는 알 수 없습니다. 우리가 아는 것은 오직 그 방법을 수행하는 것뿐입니다!" # 5358040491728087456
+  ehof_megastructure.602.name: "Mysterious Geoglyphs"
+  ehof_megastructure.602.desc: "A routine review of scanner data has unexpectedly revealed giant geoglyphs carved into a planet's surface. Repeating elements and the symbols' overall abstraction indicate that they are more likely a script than representations of lifeforms.\n\nDefinitely something worth investigating."
+  ehof_megastructure.602.a: "They even spread beyond the horizon..."
   ehof_precursor: "신비로운 지오글리프" # 6230274282160197445
   ehof_precursor_digsite_desc: "§H[from.Planet.GetName]§!의 표면에는 거대한 지오글리프가 새겨져 있습니다. 반복되는 요소와 기호의 전반적인 추상성은 이것이 생명체를 묘사한 것이라기보다는 일종의 기록일 가능성이 높음을 시사합니다.\n\n분명히 조사할 가치가 있는 대상입니다." # 14784611650772664483
   ehof_megastructure.0051.name: "신비로운 지오글리프 I" # 17291185795630436728

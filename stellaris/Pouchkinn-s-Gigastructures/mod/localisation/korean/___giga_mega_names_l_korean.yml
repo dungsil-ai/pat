@@ -24,29 +24,18 @@
   penrose_sphere_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ £megaupgrade£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$ - $giga_list_category_weaponry$\n£energy£ §Y에너지§!를 생성하거나 §Y폭탄§!이 될 수 있습니다. §Y펜로즈 링월드§!로 업그레이드될 수 있습니다.\n§L블랙홀 주위를 둘러싼 거울 구체는 초방사 산란을 활용하여 이익 또는 파괴를 위한 에너지를 생성합니다.§!" # 16610503932323293834
   penrose_sphere_1: "$name_penrose$ 프레임" # 6930883309049201254
   penrose_sphere_1_DESC: "이 골격 구조는 거대한 거울들을 지탱하는 역할을 하며, 이 거울들은 블랙홀의 작용권(에르고스피어)을 통해 빛을 왕복 반사시켜 막대한 양의 에너지를 발생시킵니다." # 16515154235462841775
-  penrose_sphere_a2: "비무장 아공간 왜곡 폭탄" # 15625446626481936991
-  penrose_sphere_a2_DESC: "이 $name_penrose$는 폭탄으로 개조되었습니다. 이제 기폭하기 전에 잠시 에너지를 축적하도록 해야 합니다." # 14556171814492539613
-  penrose_sphere_a3: "아공간 왜곡 폭탄" # 14263761419460197887
-  penrose_sphere_a3_DESC: "블랙홀 주변에 건설된 거대한 거울형 구조물. 그 내부 표면과 블랙홀의 에르고구 사이에서 방사선을 왕복 반사시켜, 초방사 산란을 유발하고 방사선 에너지를 기하급수적으로 증폭시키는 능력이 있습니다." # 14504782130036287074
-  penrose_sphere_a4: "폭파!" # 8991396599836057826
-  penrose_sphere_a4_DESC: "거울의 무결성을 임계점 이상으로 밀어붙일 만큼의 방사선을 주입하여 에너지 흐름을 해방하십시오!" # 4179680671906685171
-  penrose_sphere_a41: "아공간 왜곡 폭탄" # 14263761419460197887
-  penrose_sphere_a41_DESC: "이 초공간 왜곡 폭탄이 폭발 직전입니다!" # 17005577868574644191
-  penrose_sphere_a41_MEGASTRUCTURE_DETAILS: "$penrose_sphere_a41_DESC$" # 13015364761762414424
-  penrose_sphere_a42: "아공간 왜곡 폭탄" # 14263761419460197887
-  penrose_sphere_a42_DESC: "이 초공간 왜곡 폭탄이 폭발 직전입니다!" # 17005577868574644191
-  penrose_sphere_a42_MEGASTRUCTURE_DETAILS: "$penrose_sphere_a42_DESC$" # 3916397813213994058
-  penrose_sphere_b2: "$name_penrose$" # 3031549510426023283
-  penrose_sphere_b2_DESC: "블랙홀 주위에 건설된 거대한 거울. 복사 에너지가 거울의 안쪽 표면과 블랙홀의 작용권 사이를 왕복하며 반사되어 에너지를 생산합니다." # 1847858543672856473
-  penrose_sphere_b3: "안정화된 $name_penrose$" # 10898133232294996922
-  penrose_sphere_b3_DESC: "이 $name_penrose$는 특수 구조물로 안정화되어, 폭발 위험 없이 거울 구체 내에 더 많은 방사선을 격리할 수 있게 되었습니다. 따라서 더 많은 에너지를 생산합니다." # 15840977885298273308
-  penrose_sphere_b4: "링월드 $name_penrose$" # 10275505351572028170
-  penrose_sphere_b4_DESC: "이 $name_penrose$의 출력 일부가 그 주변에 건설된 거대하고 고도로 발달된 링월드를 지원하는 데 재지향되었습니다." # 3757629425409255498
-  gigablackhole_ring_world_2: "$name_penrose_ring$ 구조체" # 11022655551765240151
-  gigablackhole_ring_world_2_DESC: "이 골격 구조는 링월드 전체 원주의 약 절반을 구성합니다. 이제 실제 거주 구역 작업에 착수해야 합니다." # 5341065297768564459
-  gigablackhole_ring_world_2_MEGASTRUCTURE_DETAILS: "$gigablackhole_ring_world_2_DESC$" # 11567113344218969202
-  gigablackhole_ring_world_3: "$name_penrose_ring$ 세그먼트" # 9006991903325109292
-  gigablackhole_ring_world_3_DESC: "거대한 링월드 조각, 거주 가능한 구역 2개와 지원 구역 1개로 구성되었으며, $name_penrose$에 의해 동력을 공급받습니다." # 3349151606613080916
+  penrose_bomb_frame: "$penrose_bomb_armed$ Frame"
+  penrose_bomb_frame_DESC: "This skeletal frame will support massive mirrors, capable of reflecting light back and forth through the Black Hole's ergosphere, generating an immense destructive force."
+  penrose_bomb_unarmed: "Unarmed Subspace Distortion Bomb"
+  penrose_bomb_unarmed_DESC: "This $name_penrose$ has been repurposed into a bomb. We must now let it accumulate energy for a while before detonating it."
+  penrose_bomb_armed: "Subspace Distortion Bomb"
+  penrose_bomb_armed_DESC: "A large mirror-like structure built around a Black Hole, capable of reflecting radiation back and forth between its inner surface and the Black Hole's ergosphere, causing superradiant scattering and exponentially amplifying the radiation's energy."
+  penrose_bomb_detonate: "Active $penrose_bomb_armed$"
+  penrose_bomb_detonate_DESC: "This $penrose_bomb_armed$ has passed a critical point and its structure will soon fail, allowing the release of the incredible amount of energy contained within."
+  penrose_sphere_2: "$name_penrose$"
+  penrose_sphere_2_DESC: "A large array of mirrors built around a Black Hole. Radiation is bouncing back and forth between the mirror's inner surface and the Black Hole's ergosphere, generating energy."
+  penrose_sphere_3: "Stabilized $name_penrose$"
+  penrose_sphere_3_DESC: "This $name_penrose$ has been stabilized with specialized constructs, allowing for more radiation to be contained within the mirror ball without risking an explosion. It therefore generates more energy."
   ehof_megastructure_phase0: "$gc_mega$$ehof_ehofp0$" # 97803332823256745
   ehof_megastructure_phase0_DESC: "초기 부지가 시설 건설의 토대가 될 것입니다." # 1023771304554040543
   ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS: "£galwonders£ £megaupgrade£ £gigastructural£ £megaupgrade£ $giga_list_category_megastructure$ - $giga_list_category_transportation$\n§Y$ehof_wormholes$§!를 안정화하여 무한한 §Y성간 여행§!을 가능하게 합니다 - $giga_list_potentially_hazardous$\n§LE.H.O.F.는 비전적인 웜홀 기술을 사용하여 이전에 도달할 수 없다고 생각되었던 곳으로 여행하게 해주는, 진정한 기술의 경이입니다.§!" # 11760572890488533261

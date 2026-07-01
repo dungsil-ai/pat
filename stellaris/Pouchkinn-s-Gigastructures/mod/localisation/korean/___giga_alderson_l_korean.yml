@@ -282,26 +282,26 @@
   d_alderson_ruined_transport: "수리 불가능한 하이퍼반" # 8438569634416213169
   d_alderson_ruined_transport_desc: "알더슨을 정리하는 것은 거대한 규모의 작업이지만, 어딘가에서는 시작해야 합니다." # 10173335457722154689
   d_alderson_ruined_housing: "붕괴된 메가시티" # 4818155755603733949
-  d_alderson_ruined_housing_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_housing_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_spaceport: "부패한 우주항" # 12150832490897893364
-  d_alderson_ruined_spaceport_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_spaceport_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_shield: "기능이 정지된 방어막 배열" # 10126649640374123016
-  d_alderson_ruined_shield_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_shield_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_clerk: "무너져가는 보급창" # 16814007051723099402
-  d_alderson_ruined_clerk_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_clerk_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_foundry: "부식된 주조소" # 13165452212280429368
-  d_alderson_ruined_foundry_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_foundry_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_artisan: "오작동하는 제조 공장" # 7443912798530922342
-  d_alderson_ruined_artisan_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_artisan_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_merchant: "약탈당한 창고" # 8852760314180593745
-  d_alderson_ruined_merchant_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_merchant_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_police: "노후한 보안 초소" # 12912520370869563965
-  d_alderson_ruined_police_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_police_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_technician: "노출된 동력 핵" # 13653980673345570317
-  d_alderson_ruined_technician_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_technician_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_miner: "용융 물질 합성기" # 16864709830838428845
-  d_alderson_ruined_miner_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_miner_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_farmer: "오염된 토양" # 17489007359112395287
-  d_alderson_ruined_farmer_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_farmer_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_logistics: "부패한 화물" # 12741431631581176538
-  d_alderson_ruined_logistics_desc: "$d_alderson_ruined_transport$" # 4490320046841186994
+  d_alderson_ruined_logistics_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461

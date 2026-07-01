@@ -1,6 +1,6 @@
 ﻿l_korean:
   giga_tech_quasi_stellar_1: "초차원 차폐막" # 3622568926778927844
-  giga_tech_quasi_stellar_1_desc: "퀘이사는 믿을 수 없을 정도로 강력한 에너지를 지닌 천체입니다. 우리가 퀘이사 근처에서 어떠한 공학 프로젝트를 수행하고자 한다면, 퀘이사의 중력과 방사선으로부터 구조물을 보호할 수 있는 고급 차폐 기술을 개발해야 합니다." # 5514774345782180608
+  giga_tech_quasi_stellar_1_desc: "Quasars are incredible energetic objects. If we wish to undertake any sort of engineering projects in their vicinity, it will be necessary to develop advanced shielding to protect our structures from the quasar's gravitational pull and radiation."
   giga_tech_quasi_stellar_2: "중력 강착 압축" # 864695781273542985
   giga_tech_quasi_stellar_2_desc: "은하 중심부의 하이퍼퀘이사는 거대하고 극도로 에너지가 넘치는 강착 원반으로 둘러싸여 있습니다. 이 원반 때문에 퀘이사 근처에 무언가를 건설하는 것은 불가능에 가깝습니다. 하지만 퀘이사 근처의 중력 상수를 변경함으로써, 우리는 퀘이사의 질량이 증가한 것과 같은 효과를 유도하여 원반의 크기를 강제로 축소할 수 있습니다. 이는 에너지 잠재력을 높이는 동시에 퀘이사 근처에 구조물을 건설할 수 있게 해 줄 것입니다." # 12031738003499589842
   giga_tech_quasi_stellar_3: "상대론적 제트 편향" # 12704555158193140394
@@ -58,10 +58,10 @@
   quasi_stellar_obliterator_6_DESC: "초병기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
   quasi_stellar_marker_star_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: ""
   quasi_stellar_marker_planet_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: ""
   giga_qso.3000.name: "콰사리아의 평화" # 14516309440491175786
   giga_qso.3000.desc: "§R경악스러운 소식!§!\n\n우리 $name_quasistellar$의 중요한 부분이 완성됨에 따라, 은하계는 우리를 은하계의 안전에 대한 보편적인 위협으로 간주하기 시작한 듯합니다. 실제로, 대량 학살을 자행하지 않는 모든 제국은 오늘 '콰사리아의 평화'라 불리는 상호 불가침 조약과 함께 기한 없는 휴전에 합의했습니다. 그들은 적어도 지금은 우리의 하이퍼무기로 은하계의 안전을 위협하지 못하도록 사소한 다툼을 잠시 접어두기로 결정했습니다..." # 9789629933934543932
   giga_qso.3000.a: "그게 도움이 될 거라 생각하나?" # 6328228696513221900
