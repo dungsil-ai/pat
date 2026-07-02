@@ -22,9 +22,9 @@
   giga_dialog.105.name: "$name_kugelblitz$ 수리 완료!" # 8748099804550693223
   giga_dialog.105.desc: "우리 엔지니어 부대에 의해 파괴된 $name_kugelblitz$가 이제 작동 상태로 복구되었습니다! 재가동되자, 해당 구조물은 거대한 제어된 특이점을 생성하기 시작했습니다. 이 특이점으로부터 우리는 막대한 양의 에너지를 추출할 수 있으며, 또한 물질을 방사선 형태로 저장할 수 있습니다." # 18395898317354366458
   giga_dialog.105.a: "그게 대체 어떻게 작동하는 거죠?" # 3514412670630616278
-  giga_dialog.1207.title: "The $name_penrose$"
+  giga_dialog.1207.title: "$name_penrose$" # 13631428316718164386
   giga_dialog.1207.a.desc: "이제 [giga_system.GetName] 주변에 거울 구조물이 완성되었으므로, 드디어 이를 폭탄으로 사용하기 위한 준비를 시작할 수 있게 되었습니다.\n\n몇 년 동안 에너지를 축적하게 해야 하며, 그 후 폭발시킬 능력을 얻게 됩니다. 시스템 내 모든 것은 파괴될 것이며, 폭발은 너무 강력해서 하이퍼레인을 통해 전파될 것입니다. 인접 시스템의 모든 행성은 에너지 흐름으로 인해 거주 불능 상태가 될 것이며, 두 홉(점프) 거리의 모든 행성은 방사능에 오염될 것입니다. 가장 중요한 것은, 아공간을 통해 충격파를 보내 최대 4 홉(점프) 거리까지 하이퍼레인을 교란하고 재배열할 것이라는 점입니다!" # 7614803020109965977
-  giga_dialog.1207.b.desc: "With the mirror frame now finished around [giga_system.GetName], we can finally start our preparations to stabilize the $name_penrose$ and use it for energy production.\n\nIts energy production capability remains somewhat mediocre for now, but by following the right research avenues, we should be able to bolster its output."
+  giga_dialog.1207.b.desc: "$name_penrose$의 미러 프레임이 [giga_system.GetName] 주변에 완성됨에 따라, 마침내 $name_penrose$를 안정화하고 에너지 생산에 활용하기 위한 준비를 시작할 수 있게 되었습니다.\n\n현재 에너지 생산 능력은 다소 평범한 수준이나, 올바른 연구 방향을 따른다면 그 산출량을 증대시킬 수 있을 것입니다." # 3656960619022143800
   giga_dialog.1207.a: "훌륭한 파괴 도구가 될 것입니다." # 16975640703446515509
   giga_dialog.1207.b: "곧, 그것의 완전한 힘이 우리의 것이 되리라." # 1803663643678819765
   giga_dialog.3401.name: "$name_fusion_suppressor$ 건설지 건설 완료" # 11699204870314399578

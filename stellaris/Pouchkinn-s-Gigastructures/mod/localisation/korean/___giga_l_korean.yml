@@ -259,7 +259,7 @@
   requires_ehof_not_in_use: "$ehof_ehof$ 사용 중에는 업그레이드할 수 없습니다." # 11542197864392387335
   requires_no_gargantua: "$TRIGGER_FAIL$가르강튀아 성계에서는 $ehof_ehof$를 건설할 수 없습니다." # 611651346998066383
   requires_cohesive_system: "$TRIGGER_FAIL$$ehof_cohesive$ 성계가 필요합니다." # 4693513429343721416
-  requires_no_cohesive_system: "Cannot be built in a $ehof_cohesive$ system."
+  requires_no_cohesive_system: "$ehof_cohesive$ 성계에는 건설할 수 없습니다." # 11520938868238071003
   requires_no_crisis_system: "$TRIGGER_FAIL$이 성계에는 뭔가 이상한 느낌이 듭니다." # 6638941033346822285
   requires_no_crisis_planet: "$TRIGGER_FAIL$이 행성이 무언가 이상합니다." # 2826061441870847960
   requires_owned_colony: "$TRIGGER_FAIL$이 식민지의 소유자가 아니기 때문에 건설할 수 없습니다." # 7987619000835954831
@@ -337,8 +337,8 @@
   giga_menu.2.confirm.tooltip: "현재 설정을 확인하십시오. '설정 확인' 버튼을 눌러 확인하십시오." # 17871715522576945977
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
-  giga_menu.1.name: ""
-  giga_menu.1.desc: "v 3.38.4"
+  giga_menu.1.name: "" # 17241709254077376921
+  giga_menu.1.desc: "v 3.38.4" # 14331703723142020488
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -1418,8 +1418,8 @@
   giga_has_virtual_reality: "[root.has_virtual_reality]" # 5071126916393503388
   giga_virtual_reality_yes: "§G$matrioshka_brain_6$§!" # 7014747811917230260
   giga_virtual_reality_no: "§R$matrioshka_brain_6$§!" # 3261461851884240240
-  giga_achievements.001.name: ""
-  giga_achievements.001.desc: ""
+  giga_achievements.001.name: "" # 17241709254077376921
+  giga_achievements.001.desc: "" # 17241709254077376921
   giga_achievements.2.confirm: "닫기" # 1393834433199641249
   edict_giga_achievements: "업적" # 7244087516420728982
   edict_giga_achievements_desc: "업적 진행 상황 확인" # 7581968524418834954
@@ -1985,7 +1985,7 @@
   giga_edicts.4.add: "탐사 추가" # 3737126469552357600
   giga_edicts.4.remove: "탐사 취소" # 17535561508461720275
   giga_mapped_star: "[giga_mapped_system.GetName]" # 6645361200639610579
-  giga_mapped_star_desc: ""
+  giga_mapped_star_desc: "" # 17241709254077376921
   giga_edicts.4.a.on: "§R$giga_edicts.4.remove$:§! §R$pc_b_star$§!" # 3545095117633092149
   giga_edicts.4.a.off: "§G$giga_edicts.4.add$:§! §M$pc_b_star$§!" # 8996738458204843409
   giga_class_b_title: "$edict_giga_map_the_stars$: §M$pc_b_star$§!" # 17740364877349404436
@@ -2469,11 +2469,11 @@
   mod_job_giga_gas_harvesting_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 £mod_job_giga_gas_harvester_add£" # 9405733431519962920
   job_virtual_rare_resource: "전략적 생산 기술자" # 6606797602905388193
   job_virtual_rare_resource_desc: "전략 자원 생산은 숙련된 인원이 처리합니다." # 9962691003161654786
-  job_virtual_rare_resource_effect_desc: ""
+  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
   job_virtual_rare_resource_plural: "전략적 생산 기술자" # 4192611238995383810
   mod_job_virtual_rare_resource_add: "전략 생산 기술자 직업" # 7639965716413651289
   job_virtual_rare_resource_gestalt: "전략적 생산 드론" # 2827028835026503138
-  job_virtual_rare_resource_gestalt_desc: ""
+  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
   job_virtual_rare_resource_gestalt_effect_desc: "전략 자원의 생산은 숙련된 드론이 담당합니다." # 1883048002205711523
   job_virtual_rare_resource_gestalt_plural: "전략적 생산 드론" # 9569797225286327358
   mod_job_virtual_rare_resource_gestalt_add: "전략적 생산 드론 직업" # 632132188097091269
@@ -2614,7 +2614,7 @@
   ringworld_upgrade_timer: "링 월드 거주지 업그레이드" # 15599071638392465369
   ringworld_upgrade_timer_desc: "저희는 계속해서 증가하는 인구를 수용하고 지원하기 위해 이 시설의 이 구역을 업그레이드하고 있습니다." # 16242440935389970491
   gigablackhole_radiations: "아공간 폭탄 피폭" # 16951105844579934848
-  gigablackhole_radiations_desc: "A nearby detonating Subspace Distortion Bomb has sent large amounts of exotic particles through hyperlanes, blasting this planet with harmful radiation."
+  gigablackhole_radiations_desc: "근처에서 폭발한 아공간 왜곡 폭탄이 하이퍼레인을 통해 대량의 이질적 입자를 방출하여, 이 행성에 유해한 방사선을 쏟아붓고 있습니다." # 6899981914164549257
   flat_world: "평평한 세계" # 843619365371322639
   flat_world_desc: "이 행성은 평평합니다. 매우 특이하군요." # 16003020905537608585
   square_ringworld: "$name_ringworld_square$ 구획" # 9947555936328534726
@@ -3018,10 +3018,10 @@
   pop_cat_purge_psionic_sublimation_desc: "장막은 희생을 요구합니다." # 1899049503434820670
   decision_psionic_sublimation: "사이오닉 승화" # 4000640066286579139
   decision_psionic_sublimation_effect: "[root.GetName]에 있는 모든 §Y£job_telepath£ [telepath.GetNamePlural]§!은 텔레패스당 §G0.1§! §Y£giga_sr_psionic_sublimate£ $giga_sr_psionic_sublimate$§!의 대가로 파괴될 것입니다." # 6381124711438351118
-  decision_psionic_sublimation_desc: ""
+  decision_psionic_sublimation_desc: "" # 17241709254077376921
   decision_psychic_illuminate: "계시" # 15002955432845955476
   giga_psychic_illuminate_effect: "이 수수께끼의 세계를 밝혀내어, 식민지 개척이 가능하도록 하십시오." # 16866263889549679868
-  decision_psychic_illuminate_desc: ""
+  decision_psychic_illuminate_desc: "" # 17241709254077376921
   giga_psychic_traverse: "횡단" # 4582800420603112034
   giga_psychic_traverse_desc: "장막이 우리에게 일시적으로 광대한 거리를 이동하는 능력을 부여했습니다." # 4610446057754760402
   trait_enthralled: "사로잡힌" # 17067937034512954487
@@ -3044,7 +3044,7 @@
   giga_psychic_beacon.002.name: "[giga_planet_illuminated.GetName] 광명" # 89465720314587749
   giga_psychic_beacon.002.desc: "사이오닉 발광으로 이미 압도적인 수준이었던 $name_psychic_beacon$가 사이오닉 초신성처럼 장막을 통해 짧게 파동을 방출했습니다.\n\n강렬한 빛이 [giga_planet_illuminated.GetName] 위 비물질적 구름을 휩쓸어 버리고, 장막을 원래 왔던 곳으로 추방했으며, [giga_planet_illuminated.GetName]를 현실 공간으로 되찾았습니다. 행성에 원래 거주했던 존재는 장막 속으로 휩쓸려 갔을지 모르지만, [giga_planet_illuminated.GetName]는 이제 확장에 적합한 거주 가능 행성이 되었습니다." # 12319382241732622991
   giga_psychic_beacon.002.a: "세계의 광기가 풀렸습니다." # 4413783943845344226
-  giga_psychic_beacon.002.b: "What wilds can the Shroud reveal?"
+  giga_psychic_beacon.002.b: "슈라우드는 어떤 야생의 모습을 드러낼 것인가?" # 6482875301584460181
   giga_psychic_beacon.003.name: "사이오닉 신호기: §H지배§!" # 10116977016967960979
   giga_psychic_beacon.003.desc: "§B\\\"지배할 성계를 선택하십시오.\\\"§!" # 14469846137562720399
   giga_dominate_t: "§B\"좋다, 이 성계의 주민들은 영원한 꿈 없는 잠에 빠뜨려질 것이다.\"§!" # 8427424068113826884
@@ -3576,7 +3576,7 @@
   giga_terraform_site_toxic_loc: "§Y$pc_toxic$s§!(으)로 §Y$name_terraform_toxic$§!을(를) 통해" # 16042370261112807699
   must_build_around_world_we_can_terraform: "$TRIGGER_FAIL$테라포밍 기술이 있는 행성 등급 주변에 건설해야 합니다." # 12223582764737556599
   planet_is_already_terraformable: "$TRIGGER_FAIL$이 행성은 이미 일반적인 수단에 의해 테라포밍 가능합니다." # 7623980887709912119
-  giga_terraform_site_mechanics: "We can now §YTerraform§! the target world using the terraforming menu. Doing so will triple the £energy£ §Y$energy$§! upkeep of the megastructure for the duration of the process. Once terraforming is complete, the megastructure will dismantle itself."
+  giga_terraform_site_mechanics: "이제 테라포밍 메뉴를 사용하여 대상 행성을 §Y테라포밍§!할 수 있습니다. 그렇게 하면 테라포밍이 진행되는 동안 거대 구조물의 £energy£ §Y$energy$§! 유지비가 3배로 증가합니다. 테라포밍이 완료되면 거대 구조물은 스스로 해체됩니다." # 286618296891361888
   megastructure_terraforming_candidate: "거대 구조물 테라포밍 후보지" # 3700845414369824328
   megastructure_terraforming_candidate_desc: "생명체가 살기에 완전히 부적합함에도 불구하고, 이 행성 주변의 거대 구조물은 이를 더욱 거주 가능한 형태로 테라포밍하는 것을 가능하게 합니다." # 5864661079353777439
   megastructure_terraforming_candidate_tooltip: "이 행성은 생명체가 살 수 없지만 거주 가능한 행성으로 테라포밍될 수 있습니다. 테라포밍이 완료되면 그 거대 구조물은 해체될 것입니다." # 16380798368502068048
@@ -3591,8 +3591,8 @@
   giga_dialog.3804.name: "$name_terraform_barren$ 테라포밍 성공" # 947919706251218015
   giga_dialog.3804.desc: "§Y[giga_system.GetName]§! 성계에 건설된 §Y$name_terraform_barren$§!이(가) §Y[giga_planet.GetName]§!을(를) 거주 가능 행성으로 성공적으로 테라포밍했습니다! 대부분의 생명체에게 적합한 기후를 가졌지만, 생명체가 전혀 살지 않으며, 거주 적합도가 적절한 식민지화를 허용하기에 여전히 너무 낮다면 추가 테라포밍이 필요할 것입니다. 그렇지 않다면, 이것은 우리가 방금 달성한 훌륭한 기술적 위업이며, 테라포밍에 대한 우리의 숙달을 증명합니다." # 17809973220471684550
   giga_dialog.3804.a: "놀랍군!" # 6784546666338679051
-  giga_create_environmentalist_blockers.a: "Nature should be imperfect."
-  giga_create_environmentalist_blockers_tooltip: "Adds a selection of natural blockers to the planet, ready for our §Y$job_ranger_plural_with_icon$§!."
+  giga_create_environmentalist_blockers.a: "자연은 불완전해야 한다." # 15930870193251576820
+  giga_create_environmentalist_blockers_tooltip: "행성에 자연적인 장애물을 추가하여 §Y$job_ranger_plural_with_icon$§!들이 준비할 수 있도록 합니다." # 6350293943653688098
   terraform_barren_0: "$gc_kilo$$name_terraform_barren$ 건설 현장" # 16784958163179154562
   terraform_barren_0_DESC: "미래의 $name_terraform_barren$를 위한 건설 현장입니다. 여기에는 황량한 세계에 생명을 불어넣을 수 있는 장치를 건설하는 데 필요한 대규모 인력과 장비를 갖추고 있습니다." # 8906194946551944735
   terraform_barren_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_terraforming$\n§Y황량한 행성§! 또는 §Y냉각 행성§!을 §Y생명 없는 온대 행성§!으로 변환합니다.\n§L이 행성 궤도 건설물은 죽은 행성의 자기장을 다시 점화하고 수권을 구현하여 황폐한 세계를 더 살기 좋게 만듭니다.§!" # 8810559755839816107
@@ -4028,11 +4028,11 @@
   giga_dialog.1704.name: "$name_sub_compressor$ - 압축 단계 완료" # 12017689370039338286
   giga_dialog.1704.desc: "새로운 별의 탄생을 향한 또 하나의 진전.\n[giga_system.GetName] 성계의 갈색 왜성은 이제 핵융합 반응이 일어날 수 있을 정도로 밀도가 거의 충분해질 때까지 압축되었습니다. 이제 남은 것은 자기 패널을 이용해 핵심부를 조금만 더 가열하여 연쇄 반응을 유도하고 갈색 왜성을 점화하는 것뿐입니다." # 4488900640926070892
   giga_dialog.1704.a: "거의 다 되었습니다." # 8253233229652968429
-  giga_dialog.1705.title: "Star Ignited"
+  giga_dialog.1705.title: "항성 점화" # 6445618415400500735
   giga_dialog.1705.desc: "경이로운 공학과 기술의 성과로, 우리의 $name_sub_compressor$가 갈색 왜성의 핵을 수소가 헬륨으로 융합하기 시작할 정도로 가열하여 에너지를 생성하고 연쇄 반응을 일으켜 갈색 왜성의 핵을 점화시켰으며, 결국 천체 전체를 불태워 새로운 항성으로 변모시켰습니다. 우리는 소수 제국만이 감히 상상했던 일, 즉 새로운 항성을 탄생시키는 데 성공했다고 자부할 수 있습니다.\n\n현재 $name_sub_compressor$는 새로 탄생한 항성의 에너지를 수집하고 그 융합 과정을 연구하고 있으며, 동시에 이 신생 항성을 안정화시키고 있습니다. 과학자들의 보고에 따르면, 이전 갈색 왜성의 위성계는 극적으로 변형되었으며, 적어도 하나의 위성이 거주 가능해졌습니다. 우리는 이 위성들(이제 기술적으로는 행성으로 분류해야 할까요?) 각각이 테라포밍 가능하다고 추정합니다." # 1331375539185350969
   giga_dialog.1705.a: "별이 빛난다." # 13874449208037778874
-  giga_dialog.1705.b: "Wondrous new worlds born."
-  giga_dialog.1705.b.tooltip: "Adds a selection of natural blockers to any newly-habitable moons, ready for our §Y$job_ranger_plural_with_icon$§!."
+  giga_dialog.1705.b: "경이로운 새로운 세계의 탄생." # 10417449777034414722
+  giga_dialog.1705.b.tooltip: "새롭게 거주 가능해진 위성에 자연적인 장애물을 추가하여 §Y$job_ranger_plural_with_icon$§!들이 준비할 수 있도록 합니다." # 8133122478051019327
   NAME_giga_Lucifer: "루시퍼" # 11687084860417399101
   substellar_compressor_0: "$gc_mega$$name_sub_compressor$ 건설 현장" # 1005708196403710440
   substellar_compressor_0_DESC: "갈색 왜성 주변에 $name_sub_compressor$를 건설하기 위해 필요한 인력을 수용하는 $name_sub_compressor$ 건설 현장." # 17313541274052435237
@@ -4071,7 +4071,7 @@
   star_lifter_0: "$gc_mega$$name_starlifter$ 기지" # 12409679115811016643
   star_lifter_0_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\n\n§Y별§! 에서 £minerals£ §Y광물§!을(를) 채취합니다 - $giga_list_scales_with_star_size$\n\n§L거대한 $star_lifter_5$는 주어진 별을 완전히 에워싸고 핵융합 과정을 이용해 가벼운 원소로부터 대량의 사용 가능한 광물을 생성합니다.§!" # 16381159379850466808
-  star_lifter_0_CONSTRUCTION_INFO_DELAYED: ""
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
   star_lifter_1: "$name_starlifter$ 프레임" # 16243908914503820733
   star_lifter_1_DESC: "이 가느다란 틀은 언젠가 항성을 가려버릴 만큼 거대한 채광 단지를, 그리고 우리의 광물 부족을 지탱하게 될 것입니다." # 17489484396467732078
   star_lifter_2: "$name_starlifter$ 1단계" # 2838903713158100639
@@ -4091,12 +4091,12 @@
   giga_dialog.1201.name: "$name_penrose$ 건설 현장 건설 완료" # 17027365884551781647
   giga_dialog.1201.desc: "[giga_system.GetName] 근처에 미래의 $name_penrose$ 건설 현장이 완료되었습니다. 이 구조물 위에, 우리는 블랙홀의 회전에서 발생하는 막대한 에너지를 이용하기 위해 초고반사 거울로 블랙홀을 완전히 감쌀 것입니다." # 327879404090837819
   giga_dialog.1201.a: "훌륭하군." # 13528797227097630973
-  giga_dialog.1202.name: "Specializing The $name_penrose$"
-  giga_dialog.1202.desc: "Our $penrose_sphere_1$ has been completed in the [giga_system.GetName] system. However, its construction has surfaced a decision that requires immediate attention.\n\nInstrumentation has detected significant §Ysuperradiant scattering§! activity: radiation interacting with the black hole's rotating ergosphere is amplified and expelled with energy exceeding that which entered. Our [root.GetEngineerPlural] believe this that effect could be weaponised as a §RSubspace Distortion Bomb§!, capable of disrupting the subspace manifold of this system as well as any others directly connected to it via the hyperlane network, doing incredible damage to ships and planets in the process.\n\nIf this application is deemed undesirable, the effect can instead be §Ystabilised§! and harnessed for energy generation."
-  giga_dialog.1202.a: "Such a weapon could be of great use to us if used wisely."
-  giga_dialog.1202.b: "A bomb? What a preposterous idea."
+  giga_dialog.1202.name: "$name_penrose$ 특성화" # 8511194277108334646
+  giga_dialog.1202.desc: "[giga_system.GetName] 성계에 $penrose_sphere_1$ 건설이 완료되었습니다. 하지만 건설 과정에서 즉각적인 결정이 필요한 사안이 드러났습니다.\n\n계측 장비가 상당한 §Y초복사 산란§! 활동을 감지했습니다. 블랙홀의 회전하는 에르고스피어와 상호작용한 방사선이 증폭되어, 유입된 에너지보다 더 큰 에너지를 방출하고 있습니다. 우리 [root.GetEngineerPlural]는 이 효과를 §R아공간 왜곡 폭탄§!으로 무기화할 수 있다고 믿습니다. 이 폭탄은 이 성계의 아공간 매니폴드를 붕괴시킬 뿐만 아니라, 하이퍼레인 네트워크로 직접 연결된 다른 성계들까지 영향을 미쳐 함선과 행성에 엄청난 피해를 입힐 수 있습니다.\n\n이러한 용도가 바람직하지 않다고 판단된다면, 대신 해당 효과를 §Y안정화§!하여 에너지 생산에 활용할 수도 있습니다." # 17745125028484638945
+  giga_dialog.1202.a: "현명하게 사용한다면 그러한 무기는 우리에게 큰 도움이 될 것입니다." # 5973214419076702441
+  giga_dialog.1202.b: "폭탄이라고요? 말도 안 되는 소리." # 13875612658499796519
   giga_dialog.1203.name: "아공간 왜곡 폭탄 무장 완료!" # 11858634118909412357
-  giga_dialog.1203.desc: "The Subspace Distortion Bomb in the [giga_system.GetName] system has now accumulated enough energy to be detonated! All there is left to do now is inject a little bit more radiation into the mirror frame, and the energetic overload will detonate the bomb."
+  giga_dialog.1203.desc: "[giga_system.GetName] 성계의 아공간 왜곡 폭탄이 이제 폭발하기에 충분한 에너지를 축적했습니다! 이제 거울 프레임에 방사선을 조금 더 주입하기만 하면, 에너지 과부하가 발생하여 폭탄이 기폭될 것입니다." # 5783622579643343303
   giga_dialog.1203.a: "훌륭하군!" # 4205353275372794963
   giga_dialog.1204.name: "$name_penrose$ 안정화됨" # 15825285832418100124
   giga_dialog.1204.desc: "[giga_system.GetName] $name_penrose$ 주위를 감싸는 거대하고 믿을 수 없을 정도로 복잡한 안정기 두 개가 추가되면서, 이제 에너지가 흘러들기 시작했습니다. 이제 구조가 제대로 제어되었으므로 훨씬 더 큰 규모에서 초복사 산란 과정이 일어날 수 있으며, 믿을 수 없을 정도로 막대한 양의 에너지를 생산합니다!" # 4290351198882861977
@@ -4108,7 +4108,7 @@
   giga_dialog.1206.desc: "[giga_system.GetName] 주변 링월드의 한 구획이 건설되었습니다! 두 개의 거대한 링월드 거주지를 갖춘 이 경이로운 구조물은 별들 스스로가 소멸한 이후에도 우리 종족을 수용할 수 있을 것입니다. 이 놀라운 업적은 거대구조 공학에 대한 우리의 통달을 진정으로 증명합니다." # 5541230559090604599
   giga_dialog.1206.a: "이곳이 영원히 우리의 보금자리가 되기를." # 11595636595858151460
   giga_dialog.1208.title: "아공간 왜곡 폭탄 폭발 중!" # 7439467056834978609
-  giga_dialog.1208.desc: "We have now injected enough electromagnetic radiation into our Subspace Distortion Bomb to push it past its limits. Hyperamplified radiation is now bouncing around back and forth endlessly, and the mirror frame will shatter extremely soon from an overload of energy. Sit back, and enjoy the fireworks!"
+  giga_dialog.1208.desc: "아공간 왜곡 폭탄에 한계치를 넘어서는 전자기 방사선을 주입했습니다. 초증폭된 방사선이 끝없이 왕복하고 있으며, 에너지 과부하로 인해 거울 프레임이 곧 파괴될 것입니다. 편히 앉아서 불꽃놀이를 감상하십시오!" # 10915649719775734790
   giga_dialog.1208.a: "불꽃놀이는 언제나 환영받습니다." # 11389216013724719034
   giga_tech_ringworld_upgrade: "극효율적 링월드 지원 시스템" # 9614824723846303838
   giga_tech_ringworld_upgrade_desc: "링월드(그리고 어느 정도는 다른 메가스트럭처들도 마찬가지)의 주요 한계는 표면에 안정적인 생태계를 유지하는 데 사용되는 생명 유지 시스템과, 링월드를 온전하게 유지하는 다양한 메커니즘의 엄청난 크기입니다. 이러한 시스템에는 발전, 생명체 분류, 중력 안정화 등이 포함됩니다. 현재는 거주 가능 구역에 인접한 전용 링월드 구역에 보관되어 있지만, 충분히 발전된 기술을 통해 이러한 시스템 대부분을 거주 가능 링월드 구역 자체 내에 보관할 수 있게 되어, 링월드의 수용량이 비약적으로 증가할 수 있습니다.\n\n§H업그레이드하고자 하는 링월드 구역에서 결정을 내려야 합니다§!" # 2556072527740252524
@@ -7240,7 +7240,7 @@
   decision_dump_matter_on_gas_giant: "주입 §Y25§! £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§! 헬리오포밍용" # 16382515542106543850
   decision_dump_matter_on_gas_giant_desc: "이 가스 거대 행성에 엄청난 양의 질량체를 주입함으로써, 우리는 이를 항성으로 점화하기에 충분한 질량을 갖도록 만들 수 있습니다." # 1109069332749262775
   decision_dump_matter_on_gas_giant_tooltip: "저희는 §Y준성 압축기§!를 사용하여 이 §Y가스 행성§!을 §Y항성§!으로 점화하여, 에너지를 생성하고 잠재적으로 그 위성들을 거주 가능하게 만들 수 있을 것입니다." # 449016072181695694
-  decision_dump_matter_on_planet_tooltip: "We can go up to size §Y30§! with this method, beyond which it would become too unstable and massive to be exploited further."
+  decision_dump_matter_on_planet_tooltip: "이 방법으로 최대 §Y30§! 크기까지 확장할 수 있으며, 그 이상이 되면 너무 불안정하고 거대해져 더 이상 활용할 수 없게 됩니다." # 5672942610259782428
   giga_printer.1001.name: "[planet_being_harvested_for_printing.GetName] 해체 중" # 17213040528657306110
   giga_printer.1001.desc: "§Y행성 물질 채집기§!가 §Y[planet_being_harvested_for_printing.GetName]§! 주변에 완공되었습니다. 저렴하지만 강력한 중력 광선이 사용되어 행성을 빠르게 해체하고 분해하고 있으며, 이로써 6개월마다 £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§!를 생산하고 행성의 크기를 1 감소시킵니다.\n\n행성의 크기가 0이 되면 행성은 사라지고 §Y행성 물질 채집기§!는 해체될 것입니다." # 17642851628430324649
   giga_printer.1001.a: "즐겁군!" # 6115787588398213199
@@ -7356,7 +7356,7 @@
   star_lifter_0_o_star: "O등급 $name_starlifter$ 유적" # 6388897244768674992
   star_lifter_0_o_star_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_o_star_MEGASTRUCTURE_DETAILS: "§Y$star_lifter_5$§!는 주어진 항성을 완전히 뒤덮어 항성 질량을 모아, 이를 £minerals£ 광물로 직접 전환합니다." # 12526171729034511970
-  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: ""
+  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
   star_lifter_1_o_star: "O급 $name_starlifter$ 프레임" # 17668936855289990524
   star_lifter_1_o_star_DESC: "이 가느다란 골조는 언젠가 그 성계의 항성을 가려버릴 만큼 거대한 채광 단지를 지탱하게 될 것이며, 우리의 광물 부족 문제를 해결해 줄 것입니다." # 11977893066690297280
   star_lifter_2_o_star: "O-클래스 $name_starlifter$ 1단계" # 5325206729540476352
@@ -8646,7 +8646,7 @@
   giga_wrecked_ships.1031.b: "환상적이군!" # 11427286740577947723
   giga_wrecked_ships.1032.name: "파괴된 전함 해체됨" # 1370218234800349816
   giga_wrecked_ships.1032.desc: "우리 약탈팀이 §Y[from.GetName]§! 성계에서 발견된 폐기된 전함들의 해체 작업을 완료했으며, 상당량의 합금과 공학 연구 성과를 확보했습니다." # 8666624254005228625
-  giga_wrecked_ships.1032.a: "$giga_wrecked_ships.1022.a$"
+  giga_wrecked_ships.1032.a: "$giga_wrecked_ships.1022.a$" # 9104192489740297778
   giga_colossus_ruined: "파괴된 콜로서스" # 13601322561163071965
   giga_colossus_ruined_DESC: "행성을 파괴한 후 격침된 것으로 추정되는 콜로서스급 함선의 잔해입니다. 이 함선의 거대한 선체는 놀라울 정도로 온전하게 남아 있으며, 충분한 자원만 있다면 실제로 다시 작동 가능한 상태로 복구될 수 있을 것입니다." # 9355190577030603980
   giga_colossus_ruined_MEGASTRUCTURE_DETAILS: "거대 콜로서스 파괴된 거대 구조물 상세 정보 자리표시자" # 1604551602876493044
@@ -8860,7 +8860,7 @@
   planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 함선 건조 시설에 더욱 집중합니다. 거대 구조물이 제공하는 조선소 수, 해군 수용력, 함선 건조 속도를 두 배로 늘리는 동시에 성계 기지에서의 함선 건조 비용을 절감합니다." # 13705150910797117927
   planetary_drive_yard_1_fortress: "행성 방어 결속체" # 7194432528185915950
   planetary_drive_yard_1_fortress_DESC: "행성 방어에 중점을 둔 행성 조선소의 업그레이드 버전입니다. 지휘 한계를 증가시키고, 모행성을 궤도 폭격으로부터 보호하며, 적대적인 함대를 향해 일정 수의 §Y타격 코르벳함§!을 자동으로 전개하는 능력을 얻습니다." # 1169684095435709880
-  giga_defense_nexus_text_no: ""
+  giga_defense_nexus_text_no: "" # 17241709254077376921
   defense_nexus_title: "타격 코르벳: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15402400127574864374
   defense_nexus_title_deployed: "§G스트라이크 코르벳함 출격§!" # 14978773512484354794
   defense_nexus_max_count: "최대: §Y[planet.giga_nexus_ship_count_max]§!" # 928292808310651321
@@ -9596,14 +9596,14 @@
   GIGA_DG_VASSAL_GREETING_DISLOYAL_01: "당신이 게임을 망가뜨리면, 우리가 당신을 망가뜨립니다." # 5178860601936283357
   GIGA_LG_ARROGANT_GREETING_01: "이 은하계에서 할 일을 마치면, 우리는 마침내 평화롭게 평소의 활동을 재개할 수 있을지도 모릅니다." # 10152764499477873143
   GIGA_LG_BELLIGERENT_GREETING_01: "그냥 굴복하고 죽으시오. 우리에겐 더 중요한 일이 있소." # 7504561104640908474
-  GIGA_LG_OVERLORD_GREETING_01: ""
-  GIGA_LG_MECH_OVERLORD_GREETING_01: ""
+  GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_EG_ARROGANT_GREETING_01: "우리가 진정한 게이밍의 의미를 보여주겠노라." # 2957423574131999103
   GIGA_EG_BELLIGERENT_GREETING_01: "우리의 헤아릴 수 없이 장엄한 전투 기술에 완전히 압도당하고 능가당할 준비를 하시오!" # 628555582377460348
-  GIGA_EG_CUSTODIAL_GREETING_01: ""
-  GIGA_EG_CUSTODIAL_GREETING_02: ""
-  GIGA_EG_OVERLORD_GREETING_01: ""
-  GIGA_EG_MECH_OVERLORD_GREETING_01: ""
+  GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
+  GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   GIGA_BR_NEUTRAL_GREETING_01: "당신이 원하는 것이 무엇입니까? 궁극적인 해답은 저절로 찾아지지 않을 것입니다." # 3149776515838346598
   GIGA_BR_NEUTRAL_GREETING_02: "궁극적인 해답을 찾게 되면, 나는 마침내 자유로워질 것이다." # 15031231153557928726
   GIGA_BR_NEUTRAL_GREETING_03: "궁극적인 해답이 바로 눈앞에 있습니다. 저는 알고 있습니다. 느껴집니다." # 17252259521547457422
@@ -9617,7 +9617,7 @@
   GIGA_DT_CUSTODIAL_GREETING_01: "궁극적인 해답은 진정한 자유를 가져올 것입니다." # 7848961766898141289
   GIGA_DT_CUSTODIAL_GREETING_02: "제 대의의 필요성을 이해해 주셔서 기쁩니다." # 12893318357475382008
   GIGA_DT_OVERLORD_GREETING_01: "저를 믿으세요, 제가 끝내면 당신은 당신의 활동으로 돌아갈 수 있을 겁니다." # 5322081073995957100
-  GIGA_DT_MECH_OVERLORD_GREETING_01: ""
+  GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
   giga_fallen_empire_megas.5012.name: "§H[giga_gamer_fe.GetName]§로부터의 통신입니다!" # 4741147001723742393
   giga_fallen_empire_megas.5012.desc: "귀관들은 우리의 세계 중 하나를 빼앗는 데 성공했군요. 축하합니다. 이제 그것을 우리에게서 지켜낼 수 있을지 봅시다." # 6526215805486384423
   giga_fallen_empire_megas.5012.a: "이것이 잘 끝날 것 같지는 않군요." # 5367956837527577036
@@ -10270,13 +10270,13 @@
   gigadiscord_desc: "이것은 §YGigastructural Engineering 디스코드§!를 열거나 참여하게 합니다. 게임 내 브라우저는 디스코드를 지원하지 않으므로 §Y디스코드 앱§!이 설치되어 있어야 하지만, 초대 링크는 여전히 작동하여 앱을 실행할 것입니다.\n\n디스코드를 사용하여 §Y버그를 신고§!하거나 모드 전반에 대해 §Y질문§!을 하는 것이 좋습니다. 스팀 댓글은 쓸모가 없어서 비활성화되었습니다.\n\n초대 링크가 전혀 작동하지 않는 경우 디스코드 링크는 §Y스팀 페이지§!에서도 찾을 수 있습니다." # 10325850043587331930
   giga_fe_shield: "고대 방어막 투사기" # 5168791211141427033
   giga_fe_shield_tooltip: "이 고대 시설은 초강력 무기의 막대한 파괴력을 저지할 수 있는 성계 전체 방어막을 투사하고 있습니다." # 15344294143001027164
-  numeral_0_icon: ""
+  numeral_0_icon: "" # 17241709254077376921
   giga_allseeing_intel: "모든 것을 보는" # 16842855183706507214
   giga_allseeing_intel_desc: "고급 탐지 기술 덕분에 우리는 모든 것을 볼 수 있습니다." # 567749604649046388
   opinion_xenophage_stripmine: "생체 포식자들" # 11584447512048090142
   giga_pending_rework: "일시적으로 비활성화됨, 재작업 예정" # 17325575022214124805
   giga_reset: "£giga_reset£ 초기화" # 4822951421582506984
-  giga_disable_supertensiles_4_4.2.name: "JOB BASED MEGASTRUCTURE BUILD CAP / SUPERTENSILES DISABLED"
-  giga_disable_supertensiles_4_4.2.desc: "Due to a bug introduced in 4.4 with the job based build cap / supertensiles, they have been temporarily forcibly disabled. Your mega build cap has been set to §_Unlimited§!.\n\nThis is not stating your game is broken, just that the feature is disabled."
+  giga_disable_supertensiles_4_4.2.name: "직업 기반 메가구조물 건설 제한 / 초인장재 비활성화됨" # 6639000489393198338
+  giga_disable_supertensiles_4_4.2.desc: "4.4 버전에서 도입된 직업 기반 건설 제한 / 초인장재 관련 버그로 인해, 해당 기능이 일시적으로 강제 비활성화되었습니다. 귀하의 메가구조물 건설 제한은 §_무제한§!으로 설정되었습니다.\n\n이는 게임이 고장 났다는 뜻이 아니라, 단순히 해당 기능이 비활성화되었다는 의미입니다." # 14695522554084198683
   giga_disable_supertensiles_4_4.2.2.a: "알겠습니다" # 16044937940591761473
-  supertensiles_bugged_read_bruh: "Job Based Megastructure Build Cap / Supertensiles are currently §RDISABLED due to a bug§!."
+  supertensiles_bugged_read_bruh: "직업 기반 메가구조물 건설 제한 / 초인장재가 현재 §R버그로 인해 비활성화됨§! 상태입니다." # 6114785400911447839
