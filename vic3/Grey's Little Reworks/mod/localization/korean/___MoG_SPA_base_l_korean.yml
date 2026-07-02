@@ -16,8 +16,8 @@
   mog_upper_strata_expected_sol_from_average: "SPA: 문맹률로 인한 예상 생활 수준에 대한 $upper$의 국가 평균 [concept_sol] 영향" # 7538923085086005008
   mog_spa_base_sol_from_literacy: "SPA: 기본 수정치 변경 사항" # 9177733536622297240
   mog_spa_indigenous_subsistance: "SPA: 토착민 [concept_sol] 조정" # 6049178886166696471
-  rule_mog_spa_sol_modification: "SPA: Expected Sol Modification"
-  setting_spa_sol_modification_enabled: "Enabled"
-  setting_spa_sol_modification_enabled_desc: "States will have modifiers for expected SOL that support intended balance."
-  setting_spa_sol_modification_disabled: "Disabled"
-  setting_spa_sol_modification_disabled_desc: "No modifiers will be applied (USE THIS FOR RESOLVING COMPATIBILITY ISSUES)"
+  rule_mog_spa_sol_modification: "SPA: 기대 생활 수준 수정치" # 5983514060113247255
+  setting_spa_sol_modification_enabled: "활성화됨" # 3143171053493632158
+  setting_spa_sol_modification_enabled_desc: "주(State)에 의도된 밸런스를 지원하는 기대 생활 수준 수정치가 적용됩니다." # 523935070376350584
+  setting_spa_sol_modification_disabled: "비활성화됨" # 1399321916878098753
+  setting_spa_sol_modification_disabled_desc: "수정치가 적용되지 않습니다 (호환성 문제 해결 시 사용하십시오)" # 17658759893470164169
