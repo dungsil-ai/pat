@@ -484,3 +484,4 @@
   party_gre_democratic_union: "민주 연합" # 8915759038916524756
   party_agrarian_gre: "농민 노동당" # 14415327968851452135
   party_gre_freethinkers: "자유사상가당" # 12156810378083831832
+  from_bad_police: "[GetLawType('law_dedicated_police').GetName] 또는 [GetLawType('law_militarized_police').GetName]을(를) 보유함" # 18238190209748649576

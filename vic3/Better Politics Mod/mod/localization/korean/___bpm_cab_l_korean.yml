@@ -239,8 +239,9 @@
   bpm_character_role_minister_minmor_default: "교육부 장관" # 8217216197199931534
   bpm_character_role_hog: "[Concept('concept_bpm_head_of_government', Character.GetCountry.GetCustom('bpm_hog_title_country_spec'))]" # 2262090864221216828
   bpm_character_role_regent: "[concept_bpm_regent]" # 2647348829316956394
-  bpm_character_role_acting_hog: "[Concept('concept_bpm_acting_hog', 'Acting')] [Concept('concept_bpm_acting_hog', Character.GetCountry.GetCustom('bpm_hog_title_country_spec'))]" # 14565360416636677588
-  bpm_character_role_acting_hog_contextless: "[Concept('concept_bpm_acting_hog', 'Acting')] [Concept('concept_bpm_acting_hog', GetPlayer.GetCustom('bpm_hog_title_country_spec'))]" # 18299718671561902566
+  bpm_character_role_acting_hog: "[Concept('concept_bpm_acting_hog', Character.GetCountry.GetCustom('bpm_acting_hog_title_country_spec'))]" # 8080668462479854594
+  bpm_character_role_acting_hog_default: "대행 [Character.GetCountry.GetCustom('bpm_hog_title_country_spec')]" # 9880448850409374877
+  bpm_character_role_acting_hog_contextless: "[Concept('concept_bpm_acting_hog', GetPlayer.GetCustom('bpm_acting_hog_title_country_spec'))]" # 13692133147953583387
   bpm_appoint_pm: "$bpm_hog_title_default$(으)로 임명" # 717279083400144397
   bpm_fire_pm: " $bpm_hog_title_default$ 해임" # 18376332154665421678
   bpm_fire_minister: "[concept_bpm_minister] 해임" # 6906394912294996538
