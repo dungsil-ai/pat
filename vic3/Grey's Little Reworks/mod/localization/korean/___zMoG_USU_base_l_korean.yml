@@ -104,5 +104,4 @@
   pos_rel_infrastructure: "[state]에 사용 가능한 [concept_infrastructure]가 있습니다." # 15452489302385280724
   neg_rel_infrastructure: "주에 [concept_infrastructure] 부족 현상이 있습니다" # 1497703507016004283
   bureaucracy_percent: "국가 관료제 수준이 #v 90%# 미만입니다!" # 5570528646004367604
-  is_convoy_provider: "$bg_infrastructure$는 [concept_convoys]를 제공합니다." # 5992462556316095062
   convoy_ratio: "이용 가능한 선단이 #v 5%# 미만입니다!" # 16872151188025230605

@@ -240,6 +240,7 @@
   blokkat_bureau_knowledge_fight_blokkats_desc: "§G블로캇 지식§!은 블로캇과 그들의 기술에 관한 우리의 총체적인 지식의 총합입니다. §Y블로캇-베스터§!와 그들의 방어막에 맞서 반격하기를 원한다면 최대한 많은 지식을 모으는 것이 중요합니다." # 14693317151089492917
   blokkat_bureau_knowledge_join_blokkats_desc: "§블로캣 지식§! 은 블로캣과 그들의 기술에 관한 우리의 총체적인 지식의 총합입니다. 우주를 재편하려는 블로캣의 위대한 노력에 동참할 방법을 찾고자 한다면, 가능한 한 많은 지식을 모으는 것이 중요합니다." # 8912941404855039871
   giga_blokkat_mothership_player: "블로캇-베스터" # 2087041046178473619
+  giga_blokkat_mothership_player_plural: "블록캇-베스터" # 2087041046178473619
   giga_blokkat_mothership_player_desc: "블로캇-베스터스" # 11623630318067649085
   BLOKKAT_MOTHERSHIP_PLAYER: "핵심" # 17314848919636016994
   giga_blokkat_join.5000.name: "블로캇의 비협조" # 14252990176579601852
@@ -302,11 +303,11 @@
   trait_blokkat_on_strike_general_desc: "$trait_blokkat_on_strike_desc$" # 1695368356838295803
   giga_blokkat_join.2002.a.tooltip: "§G+10%§! §B과학적 의지§!\n\n$can_do_another_blokkat_project_tooltip$" # 8593784286864359829
   giga_blokkat.1023.name: "세계 해체됨" # 7106100341095076911
-  giga_blokkat.1023.desc: "§Y블로캇§! 들이 §Y[ROOT.GetName]§! 식민지에 도달하여 즉시 파괴했으며, 이로 인해 §Y[ROOT.blokkat_planet_pop_count]§! 개에 달하는 팝들이 순식간에 소멸했습니다.\n\n우리가 이 충격이 문명에 미치는 영향을 억제하지 못한다면, 이 심각한 행위는 우리 제국 내에 §Y[ROOT.blokkat_pop_inquietude]§! 만큼의 §R블로캇 불안감§! 을 초래할 것입니다. 대안으로, 우리는 보조금과 선전을 통해 세계 파괴에 대한 영향을 상쇄하여 불안감 영향을 절반으로 줄일 수 있지만, 이를 위해서는 약 §Y[ROOT.blokkat_pop_influence_cost]§! £influence£가 소요될 것입니다." # 6746778244524811707
+  giga_blokkat.1023.desc: "§Y블록캇§!이 우리의 식민지인 §Y[ROOT.GetName]§!에 도달하여 완전히 파괴했으며, 그 결과 §Y[ROOT.blokkat_planet_pop_count]§! 팝이 순식간에 비극적인 죽음을 맞이했습니다.\n\n우리 문명에 미칠 영향을 억제하지 못한다면, 이 심각한 행위는 우리 제국 내에 §Y[ROOT.blokkat_pop_inquietude]§!만큼의 §R블록캇 불안§!을 야기할 것입니다. 아니면 보조금과 선전을 통해 행성 파괴에 따른 영향을 절반으로 줄이려 시도할 수 있지만, 그렇게 하려면 약 §Y[ROOT.blokkat_pop_influence_cost]§!의 £influence£가 소모됩니다." # 10638923864208665437
   giga_blokkat.1023.a: "저런! | §Y[ROOT.blokkat_pop_inquietude]§! §R블로캇 불안정§!" # 9688508132551625006
   giga_blokkat.1023.b: "§Y[ROOT.blokkat_pop_influence_cost]§! £influence£을 사용하여 영향을 완화하십시오. | §Y[ROOT.blokkat_pop_inquietude_halved]§! §R블로캇 불안감§!" # 5067304654933710714
   blokkat_not_enough_influence: "영향력이 부족합니다." # 8416622390678777255
-  giga_blokkat.1023.desc.willingness: "§Y블로카츠§!가 저희 식민지 §Y[ROOT.GetName]§!에 도달하여 파괴했으며, 그 결과 순식간에 §Y[ROOT.blokkat_planet_pop_count]§!의 팝이 비극적으로 소멸했습니다.\n\n이 중대한 사건의 영향을 저희 문명 내에서 억제하지 못하면, 저희 제국 내에 §Y[ROOT.blokkat_pop_inquietude]§!의 §R블로카츠 불안감§!이 발생하고 #H정부 의지#와 #MPopulation Willingness#가 §R[ROOT.blokkat_pop_inquietude]%§!만큼 감소할 것입니다. 대안으로, 저희는 보조금과 선전을 통해 이 세계의 파괴에 대한 영향을 상쇄하여 불안감 영향을 절반으로 줄이려 시도할 수 있지만, 이를 위해서는 약 §Y[ROOT.blokkat_pop_influence_cost]§!의 £influence£가 소모될 것입니다." # 16002334380812191893
+  giga_blokkat.1023.desc.willingness: "§Y블록캇§!이 우리의 식민지인 §Y[ROOT.GetName]§!에 도달하여 완전히 파괴했으며, 그 결과 §Y[ROOT.blokkat_planet_pop_count]§! 팝이 순식간에 비극적인 죽음을 맞이했습니다.\n\n우리 문명에 미칠 영향을 억제하지 못한다면, 이 심각한 행위는 우리 제국 내에 §Y[ROOT.blokkat_pop_inquietude]§!만큼의 §R블록캇 불안§!을 야기하고 §H정부 의지§!와 §M인구 의지§!를 §R[ROOT.blokkat_pop_inquietude]%§!만큼 감소시킬 것입니다. 아니면 보조금과 선전을 통해 행성 파괴에 따른 영향을 절반으로 줄이려 시도할 수 있지만, 그렇게 하려면 약 §Y[ROOT.blokkat_pop_influence_cost]§!의 £influence£가 소모됩니다." # 6988987628726608414
   giga_blokkat_join.5500.b: "§R파업 중인§! 지도자들을 우리 편으로 규합하려 시도합니다." # 2499892573014195154
   giga_blokkat_join.5601.name: "강력한 사령관 집결" # 10243672387424918632
   giga_blokkat_join.5601.desc: "우리 지도부 중 일부가 블로캣과의 협상 계획에 달갑지 않다는 것은 놀라운 일이 아닙니다. 따라서, 그들이 구시대적 이상 뒤에 숨는 대신 우리의 관점을 제대로 이해하도록 올바른 끈을 당기고 조치를 취하기 위해 §M영향력§!, §B통합§! 또는 §Y에너지§!를 사용하는 것이 현명할 수 있습니다." # 3109656231151965458
@@ -430,6 +431,9 @@
   blokkat_shipyard_build_dismantler_DESC: "블록-분해기(Blokk-Dismantlers)는 보통 블로캇-베스터(Blokkat-Vesters) 주변에서 발견되며, 블로캇들의 수확 작전에 필수적인 부분입니다." # 2687857169857825593
   blokkat_shipyard_0: "블록워크 워프 크래프터" # 1786003916033044077
   blokkat_shipyard_0_DESC: "이 거대한 구조물은 블록워크로부터 에너지를 끌어와 전례 없는 속도와 효율로 다양한 블라캇 함선을 조립합니다." # 15455296584064975975
+  blokkat_shipyard_0_MEGASTRUCTURE_DETAILS: "blokkat_shipyard_0_MEGASTRUCTURE_DETAILS 플레이스홀더" # 3457123807074957646
+  blokkat_dummy_lgate: "blokkat_dummy_lgate" # 9409480190966998467
+  blokkat_dummy_lgate_DESC: "blokkat_dummy_lgate:0 \"블록캇 인공 L-관문\"\nblokkat_dummy_lgate_desc:0 \"이 구조물은 블록캇이 차원 사이의 거대한 틈새를 메우기 위해 설치한 인공적인 통로입니다. 은하계의 자연적인 L-관문과는 달리, 이 통로는 파괴적인 초차원적 에너지를 방출하며 그 너머에 존재하는 무언가를 향한 끔찍한 초대장 역할을 하고 있습니다. #red 이 관문이 활성화되면, 우리 은하의 운명은 돌이킬 수 없는 파멸의 길로 접어들게 될 것입니다.#!\"" # 13186144914142513432
   giga_blokkat_join.3200.name: "블록워크" # 1172945126863778024
   giga_blokkat_join.3200.desc: "에너지 수치는 귀하의 채굴 작업으로 인해 §YCE-1461§의 에너지 밀도가 남아있는 모든 에너지 묶음을 안전하게 최종 수확하는 데 필요한 임계값 이하로 감소했음을 나타냅니다.\n\n따라서 이 은하계에서의 볼일을 마쳤다고 판단될 때, §YBlokkwork§으로 가서 §BUndertake Final Harvest§! 옵션을 선택하여 이 모든 것을 영원히 해체하십시오." # 16822252758257116026
   giga_blokkat_join.3200.a: "종말이 가깝고, 시작 또한 그러하다." # 2410281527065960879
@@ -476,7 +480,7 @@
   trait_blokkat_breadkat: "환형 매혹" # 18377784767402285235
   trait_blokkat_breadkat_desc: "이 블로캇 종족은 원형의 모든 것에 매료된 것으로 보이며, 특히 행성 궤도에 큰 관심을 보입니다. 그들은 또한 '원시적인' 링월드에 기이한 흥미를 가지고 있는데, 마치 그것들을 영원히 분해하고 재조립하는 것 외에는 아무것도 원하지 않는 것처럼 보입니다." # 6261622926735013986
   trait_blokkat_blokkloris: "광적인 수문학자" # 2782433240232058903
-  trait_blokkat_blokkloris_desc: "이 블로캇은 원시적인 중입자 생명체들을 블로크콘스트룩트 보호구역에서 통치하고 보살피는 것에 대한 열정을 가지고 있으며, 댐 건설과 유기체 환경 조작에 집착합니다. 그들은 또한 통치와 저항 진압에 있어 극도로 유능해 보입니다." # 9495485380650442929
+  trait_blokkat_blokkloris_desc: "이 블록캇은 블록콘스트럭트 보호구역 내의 미개한 중입자 생명체를 다스리고 돌보는 열정과 더불어, 댐을 건설하고 유기적 환경을 조작하는 데 강박적인 집착을 보입니다. 또한 이들은 통치뿐만 아니라 저항을 진압하는 데도 매우 유능한 것으로 보입니다." # 18370238482152539221
   trait_blokkat_general_effect: "전투에서 사살된 모든 적군 육군:\n$tt$§Y[Root.Owner.GetName]§!:\n$ttt$£energy£ $energy$: §G+100§!" # 8194341372644782771
   KNIFE_BLOKKAT: "블록-스타브르" # 15028399107483329990
   KNIFE_BLOKKAT_DESC: "헤아릴 수 없는 속도로 여러 고차원을 앞뒤로 가로지르는 무한히 날카로운 칼날로 이루어진 특이한 블로캇(Blokkat) 무기입니다." # 6839755455596054392
@@ -511,3 +515,199 @@
   giga_blokkat.5011.desc.d: "안녕~ uwu" # 11205581916394848630
   giga_blokkat.5011.a: "화면 보기" # 1243388922543698916
   gal_com_ongoing_blokkat_invasion: "블록캣들이 은하계를 집어삼키고 있습니다" # 10547895194234940563
+  LASER_BLOKKAT: "플랑크-해체 광선" # 14285499926743836083
+  LASER_BLOKKAT_DESC: "플랑크-해체 광선은 블록캇의 채굴 장치를 기반으로 한 블록캇의 장치입니다. 이 장치는 적 함선의 구조를 플랑크 단위 이하 수준까지 체계적으로 해체하여 초고밀도 양자 거품 상태로 환원할 뿐만 아니라, 해당 거품을 수집하여 블록캇 함선에 저장한 뒤 나중에 유용한 재료로 재가공할 수 있게 합니다." # 918832022274677672
+  BLACKHOLE_BLOKKAT: "4차원 특이점 대포" # 5942761698989310053
+  BLACKHOLE_BLOKKAT_DESC: "이 진보된 발사체는 추적형 4차원 특이점을 적 함선을 향해 투사합니다. 블록캇 함선과 분리된 것처럼 보이지만, 사실 이 특이점은 고차원을 통해 블록캇 함선과 연결되어 있어 일종의 \"올가미\"처럼 작동하며, 적 함선을 관통한 뒤 고차원을 통해 다시 함선으로 \"회수\"됩니다. 이를 통해 블록캇은 특이점이 파괴한 모든 것을 수집하여 나중에 사용할 수 있도록 처리합니다." # 12394238325720397973
+  PLASMA_BLOKKAT: "절대 소각 블래스터" # 9996054200094294860
+  PLASMA_BLOKKAT_DESC: "절대 소각 블래스터는 알려진 물리학 모델에서 물리적으로 도달 가능한 가장 높은 온도인 플랑크 온도까지 가열된 플라즈마 덩어리를 발사합니다. 이 플라즈마는 고차원을 통해 지속적으로 에너지를 공급받아 극도로 높은 온도를 유지하며, 플라즈마와 접촉하는 물질은 고차원으로 \"흡수\"되어 블록캇이 항성계를 수확하는 방식과 유사하게 에너지로 변환된 뒤, 다시 플라즈마에 연료로 공급되어 발사체의 열을 지속시킵니다." # 4895879452817766694
+  ARC_EMITTER_BLOKKAT: "5중 초점 방사기" # 7019020550036580632
+  ARC_EMITTER_BLOKKAT_DESC: "5중 초점 방사기는 블록캇이 설계한 거대한 관통 무기로, 고차원을 \"도약\"하여 적 함선의 보호막과 장갑을 무시할 수 있습니다." # 12971056672758949543
+  STRIKE_CRAFT_HANGAR_BLOKKAT: "블록-스워머 유닛" # 997312768406060220
+  STRIKE_CRAFT_HANGAR_BLOKKAT_DESC: "이 우주 기반 유닛들은 실제 블록캇과 매우 흡사하며 우주 함대전용으로 설계되었습니다. 대부분 모선 내부의 블록캇이 원격으로 조종하며, 때로는 블록캇 자체가 직접 탑승하기도 합니다." # 11723253904649031870
+  POINT_DEFENCE_BLOKKAT: "블록-가디언" # 11758255977146206933
+  POINT_DEFENCE_BLOKKAT_DESC: "이 초효율적인 근접 방어 시스템은 적 발사체 주변의 현실 구조 자체를 산산조각 내어, 블록캇 함선에 접근하기도 전에 소멸시킵니다." # 2194056333374423140
+  REACTOR_BLOKKAT: "블록캇 반응로" # 12554532134101340685
+  REACTOR_BLOKKAT_DESC: "블록캇 함선은 고차원에서 전송되는 막대한 양의 에너지를 끌어오는 이 신비로운 구조물로 동력을 공급받습니다." # 8638247176206019819
+  corvette_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  corvette_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  detroyer_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  detroyer_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  cruiser_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  cruiser_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  battleshipe_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  battleshipe_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  titan_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  titan_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  juggernaut_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  juggernaut_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  starbase_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  starbase_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  platform_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  platform_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  ion_cannon_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  ion_cannon_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_moon_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_moon_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_planet_reactor_blokkat: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  war_planet_reactor_blokkat_desc: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  JUMP_DRIVE_BLOKKAT: "블록캇 위상 변이 FTL 드라이브" # 7071479436170236716
+  JUMP_DRIVE_BLOKKAT_DESC: "블록캇 추진기와 블록캇 FTL 드라이브 사이에는 실질적인 차이가 없습니다. 두 장치 모두 고차원에 고정된 일종의 장치를 사용하여 함선 주변의 공간을 말 그대로 '끌어당겨' 즉각적인 가속으로 이동시킵니다." # 1566284486623684477
+  THRUSTER_BLOKKAT: "블록캇 위상 변이 추진기" # 16296138915523951638
+  THRUSTER_BLOKKAT_DESC: "블록캇 추진기와 블록캇 FTL 드라이브 사이에는 실질적인 차이가 없습니다. 두 장치 모두 고차원에 고정된 일종의 장치를 사용하여 함선 주변의 공간을 말 그대로 '끌어당겨' 즉각적인 가속으로 이동시킵니다." # 1566284486623684477
+  SENSOR_BLOKKAT: "하이퍼브레인 센서" # 14637602947610374226
+  SENSOR_BLOKKAT_DESC: "이 블록캇 설계 센서는 3차원 물질이 우주의 고차원 다양체 내에서 생성하는 진동을 탐지합니다." # 2875531527569346731
+  ARMOR_BLOKKAT: "플랑크 합금 장갑" # 5580319359173166378
+  ARMOR_BLOKKAT_DESC: "이 극도로 단단한 장갑판은 촘촘하게 밀집된 플랑크 길이 단위의 입자로 구성되어 있습니다. 이 입자들은 복잡한 아원자 신경 구조를 형성하여 물질이 변화에 자율적으로 반응하고 거의 즉각적으로 적응할 수 있게 합니다." # 12234150218847958949
+  LARGE_ARMOR_BLOKKAT: "$ARMOR_BLOKKAT$" # 8904409156356493301
+  LARGE_ARMOR_BLOKKAT_DESC: "$ARMOR_BLOKKAT_DESC$" # 9054684456116059446
+  MEDIUM_ARMOR_BLOKKAT: "$ARMOR_BLOKKAT$" # 8904409156356493301
+  MEDIUM_ARMOR_BLOKKAT_DESC: "$ARMOR_BLOKKAT_DESC$" # 9054684456116059446
+  SMALL_ARMOR_BLOKKAT: "$ARMOR_BLOKKAT$" # 8904409156356493301
+  SMALL_ARMOR_BLOKKAT_DESC: "$ARMOR_BLOKKAT_DESC$" # 9054684456116059446
+  HULL_REPAIR_BLOKKAT: "서브플랑크 동기화 장치" # 6057586610477043651
+  HULL_REPAIR_BLOKKAT_DESC: "블록캇 장갑 내의 신경망을 위한 중계기 역할을 하는 미세 로봇 군집으로, 효율성을 높이고 더 빠른 수리를 가능하게 합니다. 블록캇 모델은 동기화를 높이기 위해 블록워크와 데이터를 송수신하기도 합니다." # 2073393013135821602
+  AFTERBURNER_BLOKKAT: "다양체 추진기" # 4611302226216369497
+  AFTERBURNER_BLOKKAT_DESC: "블록캇 함선은 난해한 FTL 추진기 외에도 우리 우주의 구조 자체를 밀어내어 함선의 속도를 더욱 높이는 이 추진기들을 사용합니다." # 9975343766943160275
+  SHIELD_BLOKKAT: "고차원 변이 방어막" # 4089484652920121070
+  SHIELD_BLOKKAT_DESC: "블로캇-베스터의 거대한 방어막과 마찬가지로, 이 소형 보호막들은 고차원 내에서 회전하므로 전체 방어막 중 극히 일부분만이 적의 공격에 노출됩니다. 방어막이 손상되면 손상된 영역은 즉시 초차원 공간으로 이동하여 재생됩니다." # 11746036438992278915
+  LARGE_SHIELD_BLOKKAT: "$SHIELD_BLOKKAT$" # 8274008268803683886
+  LARGE_SHIELD_BLOKKAT_DESC: "$SHIELD_BLOKKAT_DESC$" # 2050980436749403962
+  MEDIUM_SHIELD_BLOKKAT: "$SHIELD_BLOKKAT$" # 8274008268803683886
+  MEDIUM_SHIELD_BLOKKAT_DESC: "$SHIELD_BLOKKAT_DESC$" # 2050980436749403962
+  SMALL_SHIELD_BLOKKAT: "$SHIELD_BLOKKAT$" # 8274008268803683886
+  SMALL_SHIELD_BLOKKAT_DESC: "$SHIELD_BLOKKAT_DESC$" # 2050980436749403962
+  REACTOR_BOOSTER_BLOKKAT: "초차원 커패시터" # 18257002516085545791
+  REACTOR_BOOSTER_BLOKKAT_DESC: "고차원 에너지원에서 추가 에너지를 끌어오는 반응로 부스터입니다. 또한 함선 전체의 효율성을 향상시키는 역할도 수행합니다." # 7216323140243186188
+  COMBAT_COMPUTER_ARTILLERY_BLOKKAT: "블로캇 근접전 컴퓨터" # 11871368880747163064
+  COMBAT_COMPUTER_ARTILLERY_BLOKKAT_DESC: "초차원 정보 네트워크를 통해 함선의 나머지 부분과 연결된 이 난해한 컴퓨터는 근접 교전과 호위함 대응에 중점을 둡니다." # 14967824728657433385
+  COMBAT_COMPUTER_CARRIER_BLOKKAT: "블로캇 장거리 컴퓨터" # 4356272969769658329
+  COMBAT_COMPUTER_CARRIER_BLOKKAT_DESC: "초차원 정보 네트워크를 통해 함선의 나머지 부분과 연결된 이 난해한 컴퓨터는 장거리 교전에 중점을 둡니다." # 3703728037295142792
+  PLANET_LANCE_BLOKKAT: "축출 광선" # 9124039791782214312
+  PLANET_LANCE_BLOKKAT_DESC: "축출 광선은 지금까지 조우한 블로캇 무기 중 가장 거대한 것입니다. 이 엄청난 위력의 광선은 시공간 연속체의 국소 영역에 여러 고차원의 에너지를 집중시켜 현실을 찢어발기고 대상을 0차원 물체로 강제로 압축하여 즉시 파괴합니다." # 18167139590910307987
+  OBLITERATOR_LANCE_BLOKKAT: "소멸 광선" # 9225512023783351706
+  OBLITERATOR_LANCE_BLOKKAT_DESC: "본질적으로 축출 광선의 상위 버전인 소멸 광선은 시공간 연속체의 국소 영역에 여러 고차원의 에너지를 집중시켜 현실을 찢어발기고 대상을 0차원 물체로 강제로 압축하여 즉시 파괴합니다." # 3612064756605169077
+  PLANET_KILLER_BLOKKAT_GENERATOR: "초물질 분해기" # 9116574238216369625
+  PLANET_KILLER_BLOKKAT_GENERATOR_DESC: "이 장치는 어떤 형태의 물질이라도 빠르게 분해하고 재배열하여 블로캇이 원하는 무엇이든, 심지어 추가적인 블로캇으로도 변환할 수 있습니다." # 15711128126940856654
+  PLANET_KILLER_BLOKKAT_GENERATOR_ACTION: "분해" # 11967214365203085365
+  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_BLOKKAT_GENERATOR: "$PLANET|Y$ 해체 준비 중" # 10232248139589849366
+  MESSAGE_DESC_FOR_PLANET_KILLER_BLOKKAT_GENERATOR: "에 의해 해체됨" # 4414219973801057353
+  COMBAT_COMPUTER_TERMINATOR_BLOKKAT: "블록-터미네이터 중앙 사령부" # 2238252119864531116
+  COMBAT_COMPUTER_TERMINATOR_BLOKKAT_DESC: "블록캣이 자원 채집 작전에 투입하는 대부분의 함선과 달리, 블록-터미네이터는 순수하게 함대전만을 위해 설계된 정식 군함입니다." # 7489109760308703204
+  SHIP_AURA_BLOKKAT_TERMINATOR: "블록-터미네이터 초차원 방벽" # 2726578188845456406
+  SHIP_AURA_BLOKKAT_TERMINATOR_DESC: "블록-터미네이터는 자체적인 초차원 보호막을 보유하고 있어, 본체와 주변의 다른 블록캣 함선이 받는 피해를 획기적으로 감소시킵니다." # 4055282330817798068
+  COMBAT_COMPUTER_OBLITERATOR_BLOKKAT: "블록-오블리터레이터 중앙 사령부" # 16937806562857403132
+  COMBAT_COMPUTER_OBLITERATOR_BLOKKAT_DESC: "블록캣이 자원 채집 작전에 투입하는 대부분의 함선과 달리, 블록-오블리터레이터는 순수하게 함대전만을 위해 설계된 정식 군함입니다." # 18245610898131802874
+  SHIP_AURA_BLOKKAT_OBLITERATOR: "블록-오블리터레이터 초차원 방벽" # 13195351267022765034
+  SHIP_AURA_BLOKKAT_OBLITERATOR_DESC: "블록-오블리터레이터는 자체적인 초차원 보호막을 보유하고 있어, 본체와 주변의 다른 블록캣 함선이 받는 피해를 획기적으로 감소시킵니다." # 12288710097339325262
+  trait_blokkat_leader: "블록캣" # 6796010452648272606
+  trait_blokkat_leader_desc: "블록워크와의 연결을 통해, 이 블록캣은 다양한 학문에 걸친 방대한 정보를 보유하고 있습니다." # 10076536977945066796
+  trait_blokkat_admiral: "블록캣 제독" # 8537553615836863899
+  trait_blokkat_admiral_desc: "이 블록캣은 여러 은하 간 분쟁에 참여한 경험을 바탕으로 우주 전쟁 기술에 관한 폭넓은 지식을 갖추고 있습니다. 이들의 기술은 난해한 블록캣 기술과 무기의 효율을 극대화합니다." # 266043657429969490
+  trait_blokkat_governor: "블록캣 총독" # 3357351198931468585
+  trait_blokkat_governor_desc: "이 블록캣은 행성 정착지를 관리하고 행성을 가장 효율적으로 재구성하는 방법에 관한 폭넓은 지식을 갖추고 있습니다." # 17112017992373010994
+  trait_blokkat_scientist: "블록캣 과학자" # 1586749872582288724
+  trait_blokkat_scientist_desc: "이 블록캣은 과학 연구 및 방법론에 관한 폭넓은 지식을 갖추고 있습니다." # 14368053229223528802
+  trait_blokkat_general: "블록캣 장군" # 5111171784060309268
+  trait_blokkat_general_desc: "이 블록캣은 지상전 기술에 관한 폭넓은 지식을 갖추고 있습니다." # 13579206487608615737
+  trait_blokkat_keen: "대담한 블로캣" # 17893058931741614784
+  trait_blokkat_keen_desc: "이 블로캣은 새로운 것을 시도하고 곧바로 행동에 옮기는 것을 특히 좋아합니다." # 10318871659872400462
+  trait_blokkat_mineralizer: "광물화 블로캣" # 3933088869335907206
+  trait_blokkat_mineralizer_desc: "이 블로캣은 자원을 절약하고 건축 자재의 생산을 극대화하는 데 집중합니다." # 7251746021618597189
+  trait_blokkat_ambitious: "야심 찬 블로캣" # 2134833336428706881
+  trait_blokkat_ambitious_desc: "이 블로캣은 야망이 매우 크며 많은 거대 구조물을 건설하는 것을 목표로 합니다." # 9917853631505780103
+  trait_blokkat_combative: "전투적인 블로캣" # 13462310367754965607
+  trait_blokkat_combative_desc: "이 블로캣은 놀라울 정도로 공격적이며 전투 지향적입니다." # 7853432132648564583
+  trait_blokkat_speed_freak: "속도광" # 127048260426913975
+  trait_blokkat_speed_freak_desc: "이 블로캣은 속도라는 개념과 가능한 한 빠르게 이동하는 것에 기이한 집착을 보입니다. 이들은 다른 무엇보다 속도와 기동성을 우선시합니다." # 2934911228168281992
+  trait_blokkat_primitive_enthusiast: "원시 문명 애호가" # 6422933754002013552
+  trait_blokkat_primitive_enthusiast_desc: "이 블로캣은 이른바 '원시' 문명에 기묘한 관심을 품고 있으며, 더 많은 것을 배우기 위해 기꺼이 그들을 '실험'하려 합니다. 때로는 끔찍하고 뒤틀린 방식으로 말이죠." # 14570361386446367753
+  BLOKKAT_TERMINATOR: "핵심" # 17314848919636016994
+  giga_blokkat_terminator: "블로크-터미네이터" # 16075275317479877314
+  giga_blokkat_terminator_cap: "$giga_blokkat_terminator$" # 18294726157495823465
+  giga_blokkat_terminator_plural: "블로크-터미네이터들" # 9705484611825805517
+  BLOKKAT_OBLITERATOR: "핵심" # 17314848919636016994
+  giga_blokkat_obliterator: "블로크-오블리터레이터" # 13502156711288499537
+  giga_blokkat_obliterator_cap: "$giga_blokkat_obliterator$" # 915596563581498205
+  giga_blokkat_obliterator_plural: "블로크-오블리터레이터" # 13502156711288499537
+  giga_tech_blokkat_reactor: "$REACTOR_BLOKKAT$" # 11667143634061958755
+  giga_tech_blokkat_reactor_desc: "$REACTOR_BLOKKAT_DESC$" # 497304578703611046
+  giga_tech_blokkat_ftl: "블록캇 위상 변이 수송" # 3093965908303395621
+  giga_tech_blokkat_ftl_desc: "$JUMP_DRIVE_BLOKKAT_DESC$" # 4900626828541594857
+  giga_tech_blokkat_sensors: "$SENSOR_BLOKKAT$" # 15771542855613009661
+  giga_tech_blokkat_sensors_desc: "$SENSOR_BLOKKAT_DESC$" # 14308168705126872082
+  giga_tech_blokkat_computer: "블록캇 함선 탑재 컴퓨터" # 3782607001808888194
+  giga_tech_blokkat_computer_desc: "우리 함선의 인공지능에 블록캇 기술을 적용함으로써 우리는 진정으로 공포스러운 전쟁 함선을 건조할 수 있게 될 것입니다." # 4264289296131384539
+  giga_tech_blokkat_booster: "$REACTOR_BOOSTER_BLOKKAT$" # 1528875208917056268
+  giga_tech_blokkat_booster_desc: "$REACTOR_BOOSTER_BLOKKAT_DESC$" # 13588587085472455372
+  giga_tech_blokkat_afterburner: "$AFTERBURNER_BLOKKAT$" # 8562060006675961397
+  giga_tech_blokkat_afterburner_desc: "$AFTERBURNER_BLOKKAT_DESC$" # 704817268900429562
+  giga_tech_blokkat_hullrepair: "$HULL_REPAIR_BLOKKAT$" # 16324413181452077910
+  giga_tech_blokkat_hullrepair_desc: "$HULL_REPAIR_BLOKKAT_DESC$" # 7088111288673809056
+  giga_tech_blokkat_plasma: "$PLASMA_BLOKKAT$" # 16004377753272017685
+  giga_tech_blokkat_plasma_desc: "$PLASMA_BLOKKAT_DESC$" # 7047581583187631132
+  giga_tech_blokkat_emitter: "$ARC_EMITTER_BLOKKAT$" # 15016395145819387651
+  giga_tech_blokkat_emitter_desc: "$ARC_EMITTER_BLOKKAT_DESC$" # 1326887560392674186
+  giga_tech_blokkat_obliterator: "$PLANET_LANCE_BLOKKAT$" # 12489757727343660596
+  giga_tech_blokkat_obliterator_desc: "$PLANET_LANCE_BLOKKAT_DESC$" # 8593860189212548840
+  giga_tech_blokkat_pd: "블록-가디언 근접 방어 체계" # 14967951886266379446
+  giga_tech_blokkat_pd_desc: "$POINT_DEFENCE_BLOKKAT_DESC$" # 6650525510277626978
+  giga_tech_blokkat_shield: "$SHIELD_BLOKKAT$" # 8274008268803683886
+  giga_tech_blokkat_shield_desc: "$SHIELD_BLOKKAT_DESC$" # 2050980436749403962
+  giga_tech_blokkat_armor: "$ARMOR_BLOKKAT$" # 8904409156356493301
+  giga_tech_blokkat_armor_desc: "$ARMOR_BLOKKAT_DESC$" # 9054684456116059446
+  giga_blokkat_evictor: "축출자" # 12824389528117736438
+  giga_blokkat_evictor_cap: "$giga_blokkat_evictor$" # 14620200386774274021
+  giga_blokkat_evictor_plural: "축출자들" # 16745576494483704344
+  giga_blokkat_custodian: "관리자" # 9885247465281413140
+  giga_blokkat_custodian_cap: "$giga_blokkat_custodian$" # 15363884253278580176
+  giga_blokkat_custodian_plural: "관리자들" # 12110039706692749477
+  giga_blokkat_harvester: "블록-해체자" # 2298046246347393093
+  giga_blokkat_harvester_cap: "$giga_blokkat_harvester$" # 7338719550883793324
+  giga_blokkat_harvester_plural: "블록-해체자들" # 16621093444055648689
+  giga_blokkat_mothership: "블록캇-베스터" # 2087041046178473619
+  giga_blokkat_mothership_cap: "$giga_blokkat_mothership$" # 15327644259963163662
+  giga_blokkat_mothership_plural: "블록캣-수확자들" # 11623630318067649085
+  blokkat_harvester_charging_up: "블록-해체자 가동 중" # 15764138936649978388
+  blokkat_harvester_charging_up_DESC: "블록-해체자가 이 성계의 구성 에너지를 수확하기 위해 준비하고 있습니다." # 4413932088044093701
+  blokkat_harvester_charging_up_MEGASTRUCTURE_DETAILS: "블록캇 수확기 충전 중 MEGASTRUCTURE_DETAILS 플레이스홀더" # 3068300648065834651
+  blokkat_harvester_charged: "블록-해체기 수확 중" # 6116659538202522650
+  blokkat_harvester_charged_DESC: "블록-해체기가 이 성계를 활발히 수확하고 있습니다." # 14448343077728611727
+  BLOKKAT_EVICTOR: "핵심" # 17314848919636016994
+  blokkat_stripminers_admiral: "감독관" # 16922734466523596836
+  blokkat_stripminers_general: "침략자" # 15090437866748807039
+  blokkat_stripminers_governor: "관리자" # 3791437113342677133
+  blokkat_stripminers_scientist: "연구원" # 3710330817742184245
+  blokkat_harvester_charging_up_mothership: "블록캇-베스터 가동 중" # 3855203568261060559
+  blokkat_harvester_charging_up_mothership_DESC: "블록캇-베스터가 이 성계의 구성 에너지를 수확할 준비를 하고 있습니다." # 14348163567174475715
+  blokkat_harvester_charging_up_mothership_MEGASTRUCTURE_DETAILS: "블록캇 수확기 충전 중 MEGASTRUCTURE_DETAILS 플레이스홀더" # 3068300648065834651
+  blokkat_harvester_charged_mothership: "블록캇-베스터 수확 중" # 5273919699988995247
+  blokkat_harvester_charged_mothership_DESC: "블록캇-베스터가 이 성계를 활발히 수확하고 있습니다." # 16702077751355620881
+  giga_blokkat.1044.name: "블록-해체기 재건됨" # 5630646461235816956
+  giga_blokkat.1044.desc: "블록캇들이 다른 해체기가 파괴된 후 호위 함대와 함께 §Y블록-해체기§!를 재건했습니다.\n\n다행히도, 그들이 우리 은하를 수확하기 시작했을 때보다 더 많은 해체기를 재건하지는 않을 것입니다." # 7901087690349941180
+  giga_blokkat.1044.a: "걱정스럽군." # 8025652953608993080
+  giga_achievement_blokkats_group_header: "블록캇" # 13137616731617137415
+  giga_achievement_blokkats1: "§M블록-추방§!" # 3551187187829820787
+  giga_achievement_blokkats1_requirement: "§E블록렛§! 또는 §B블록키튼§! 난이도 설정으로 §Y블록캇-베스터§!를 파괴하여 §G블록캇§!을 물리치십시오." # 16639359698314617712
+  giga_achievement_blokkats1_tooltip: "$giga_achievement_blokkats1$\n$giga_achievement_blokkats1_requirement$" # 7338325332411509134
+  giga_achievement_blokkats2: "§R기하학적§!" # 11695660693226144479
+  giga_achievement_blokkats2_requirement: "§G블로캇§! 난이도 설정으로 §Y블로캇-베스터§!를 파괴하여 §G블로캇§!을 물리치십시오." # 12195412734446501062
+  giga_achievement_blokkats2_tooltip: "$giga_achievement_blokkats2$\n$giga_achievement_blokkats2_requirement$" # 15586550079774105036
+  giga_achievement_blokkats3: "§R지질학자§!" # 4343970397908626352
+  giga_achievement_blokkats3_requirement: "§R비스무트 블로캇§! 난이도 설정으로 §Y블로캇-베스터§!를 파괴하여 §G블로캇§!을 물리치십시오." # 16578774449225272075
+  giga_achievement_blokkats3_tooltip: "$giga_achievement_blokkats3$\n$giga_achievement_blokkats3_requirement$" # 8278989150452048554
+  giga_achievement_blokkats4: "§R배신자§!" # 17080522187469165170
+  giga_achievement_blokkats4_requirement: "§M엔드텍 블로캇§! 또는 §P오블리터레이터 블로캇§! 난이도 설정으로 §Y블로캇-베스터§!를 파괴하여 §G블로캇§!을 물리치십시오." # 14109661515564077249
+  giga_achievement_blokkats4_tooltip: "$giga_achievement_blokkats4$\n$giga_achievement_blokkats4_requirement$" # 2130629316308263961
+  giga_achievement_blokkats5: "§R블로캇의 서§!" # 4711192722193304323
+  giga_achievement_blokkats5_requirement: "§Y60§!의 $blokkat_knowledge$를 축적하십시오." # 3519707710667782171
+  giga_achievement_blokkats5_tooltip: "$giga_achievement_blokkats5$\n$giga_achievement_blokkats5_requirement$" # 9917358233602598596
+  giga_achievement_blokkats6: "§R블로캇 동물원§!" # 7624312316453944952
+  giga_achievement_blokkats6_requirement: "한 번에 §Y10§!의 §G블로캇§!을 포획 상태로 유지하십시오." # 16267904386900629217
+  giga_achievement_blokkats6_tooltip: "$giga_achievement_blokkats6$\n$giga_achievement_blokkats6_requirement$" # 3069307612294411934
+  giga_achievement_blokkats7: "§R청구 기각§!" # 17833589455833160952
+  giga_achievement_blokkats7_requirement: "§R블로캇 불안§! 수치가 §Y10§!을 넘지 않게 하면서 §G블로캇§!을 물리치십시오." # 2509554183765955955
+  giga_achievement_blokkats7_tooltip: "$giga_achievement_blokkats7$\n$giga_achievement_blokkats7_requirement$" # 14234860235466603145
+  giga_achievement_blokkats8: "§R블로캇 복제§!" # 8750973420889791929
+  giga_achievement_blokkats8_requirement: "모든 §Y블로캇 부품§!을 역설계하십시오." # 427995642580318086
+  giga_achievement_blokkats8_tooltip: "블록캣 섬멸자\n블록캣 위기를 완전히 종식시키십시오." # 2344640974675737626

@@ -10,7 +10,7 @@
   desc_alderson: "$name_alderson$은 항성 주위에 건설된 거대한 원반으로, 막대한 거주 공간을 제공합니다." # 8928603530166042396
   decision_repair_shattered_alderson: "하이퍼세그먼트 수리" # 18122331748274953844
   decision_repair_shattered_alderson_desc: "우리의 조상들이 남긴 고향을 더 이상 방치할 수 없습니다. 이제 우리의 유산을 복구할 때입니다." # 13555900903859409459
-  decision_shattered_alderson_project_effects: "이 하이퍼세그먼트를 §G$pc_alderson_slice_gaia$§!(으)로 복구합니다." # 16318851267767242555
+  decision_shattered_alderson_project_effects: "이 하이퍼세그먼트를 §G$pc_alderson_slice_gaia$§!(으)로 복구합니다." # 15165223036754440273
   alderson_shield: "고대 역장" # 17601018138603307622
   alderson_shield_desc: "이 $name_alderson$을 건설한 제국이 무엇이든, 그들은 원반 표면 전체에 걸쳐 방대한 보호막 투사기 네트워크를 배치했습니다. 현재는 대부분 파괴되었지만, 이 디스크의 투사기들은 여전히 작동하는 것으로 보입니다. 모든 궤도 폭격 시도는 심각하게 지연될 것이며, 지상 침공이 불가피할 것입니다." # 2430430938242634040
   giga_tech_alderson_disk: "$name_alderson$" # 16665273919650282743
@@ -282,26 +282,26 @@
   d_alderson_ruined_transport: "수리 불가능한 하이퍼반" # 8438569634416213169
   d_alderson_ruined_transport_desc: "알더슨을 정리하는 것은 거대한 규모의 작업이지만, 어딘가에서는 시작해야 합니다." # 10173335457722154689
   d_alderson_ruined_housing: "붕괴된 메가시티" # 4818155755603733949
-  d_alderson_ruined_housing_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_housing_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_spaceport: "부패한 우주항" # 12150832490897893364
-  d_alderson_ruined_spaceport_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_spaceport_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_shield: "기능이 정지된 방어막 배열" # 10126649640374123016
-  d_alderson_ruined_shield_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_shield_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_clerk: "무너져가는 보급창" # 16814007051723099402
-  d_alderson_ruined_clerk_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_clerk_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_foundry: "부식된 주조소" # 13165452212280429368
-  d_alderson_ruined_foundry_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_foundry_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_artisan: "오작동하는 제조 공장" # 7443912798530922342
-  d_alderson_ruined_artisan_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_artisan_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_merchant: "약탈당한 창고" # 8852760314180593745
-  d_alderson_ruined_merchant_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_merchant_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_police: "노후한 보안 초소" # 12912520370869563965
-  d_alderson_ruined_police_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_police_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_technician: "노출된 동력 핵" # 13653980673345570317
-  d_alderson_ruined_technician_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_technician_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_miner: "용융 물질 합성기" # 16864709830838428845
-  d_alderson_ruined_miner_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_miner_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_farmer: "오염된 토양" # 17489007359112395287
-  d_alderson_ruined_farmer_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_farmer_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461
   d_alderson_ruined_logistics: "부패한 화물" # 12741431631581176538
-  d_alderson_ruined_logistics_desc: "$d_alderson_ruined_district_desc$" # 4759327806608016068
+  d_alderson_ruined_logistics_desc: "$d_alderson_ruined_transport_desc$" # 2491696193795612461

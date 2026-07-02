@@ -41,6 +41,10 @@
   d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
   d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
   d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
+  d_giga_food_1: "£food£ +1" # 13198594911325131486
+  d_giga_food_1_desc: "$d_giga_food_1$" # 11670648074534172502
+  d_giga_food_2: "£food£ +2" # 7157903611014298026
+  d_giga_food_2_desc: "$d_giga_food_2$" # 5725665289586871694
   d_giga_lifeless_zro_1: "즈로 매장지" # 1172331962632974906
   d_giga_lifeless_zro_1_desc: "이 세계에는 활용 가능한 즈로 먼지 공급원이 있습니다." # 12725077008717704212
   d_giga_lifeless_dark_matter_1: "암흑 물질 매장지" # 18211813698194922337
@@ -66,7 +70,7 @@
   d_giga_rogue_ai_corrupt_code: "오염된 코드" # 11892568193987409565
   d_giga_rogue_ai_corrupt_code_desc: "행성 컴퓨팅 단지 데이터뱅크의 상당 부분이 위험한 블로트웨어 코드로 가득 차 있어, 이 행성에서의 우리의 과학적 노력을 적극적으로 방해하고 있습니다." # 17075491488341020596
   d_ringworld_capital_city: "대수도" # 15597607892757361258
-  d_ringworld_capital_city_desc: "고리 세계 위에 건설된 위대한 수도 도시입니다. 이 장소는 고리 세계 구역의 중심 허브 역할을 하며 지역 팝들에게 다양한 서비스를 제공합니다." # 7003352307753202841
+  d_ringworld_capital_city_desc: "링월드에 건설된 위대한 수도입니다. 이 장소는 링월드 구역의 중심지 역할을 하며 지역 인구에게 다양한 서비스를 제공합니다." # 10632085909478477127
   d_interstellar_ringworld_commerce_blocker: "버려진 기반 시설" # 17623034251997869369
   d_interstellar_ringworld_commerce_blocker_desc: "고리 세계는 거의 무한한 공간을 제공하므로 토지 재개발에 대한 고려가 거의 이루어지지 않았고, 그 결과 광대한 토지가 오랫동안 버려진 건물들로 가득 차게 되었습니다. 이 지역들을 정리하고 재개발한다면 지역 경제가 상당히 성장하여 제국의 부를 증대시킬 수 있을 것입니다." # 14912889980304091172
   d_great_ring_excavated_mountain: "링월드 자가 수리 시스템 노드" # 8612169301238682199
@@ -83,8 +87,6 @@
   d_giga_decrepit_tunnels_2_desc: "$d_decrepit_tunnels_1_desc$" # 10324853476423657564
   d_giga_decrepit_tunnels_3: "$d_decrepit_tunnels_1$" # 12877338230707769144
   d_giga_decrepit_tunnels_3_desc: "$d_decrepit_tunnels_1_desc$" # 10324853476423657564
-  d_ehof_solar_array: "온전한 태양광 집열기" # 10601974592114288460
-  d_ehof_solar_array_desc: "" # 17241709254077376921
   d_flusio_arcology_wreck: "파괴된 메가시티" # 17849748477716044745
   d_flusio_arcology_wreck_desc: "플루시오-아콜로지에서 발생한 전투로 부분적 또는 완전히 파괴된 도시들." # 500460360055046615
   d_flusio_arcology_anarchy: "플루시온 무정부 상태" # 16646561948448807195

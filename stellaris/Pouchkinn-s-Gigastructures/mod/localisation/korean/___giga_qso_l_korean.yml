@@ -1,6 +1,6 @@
 ﻿l_korean:
   giga_tech_quasi_stellar_1: "초차원 차폐막" # 3622568926778927844
-  giga_tech_quasi_stellar_1_desc: "퀘이사는 믿을 수 없을 정도로 강력한 에너지를 지닌 천체입니다. 우리가 퀘이사 근처에서 어떠한 공학 프로젝트를 수행하고자 한다면, 퀘이사의 중력과 방사선으로부터 구조물을 보호할 수 있는 고급 차폐 기술을 개발해야 합니다." # 5514774345782180608
+  giga_tech_quasi_stellar_1_desc: "Quasars are incredible energetic objects. If we wish to undertake any sort of engineering projects in their vicinity, it will be necessary to develop advanced shielding to protect our structures from the quasar's gravitational pull and radiation."
   giga_tech_quasi_stellar_2: "중력 강착 압축" # 864695781273542985
   giga_tech_quasi_stellar_2_desc: "은하 중심부의 하이퍼퀘이사는 거대하고 극도로 에너지가 넘치는 강착 원반으로 둘러싸여 있습니다. 이 원반 때문에 퀘이사 근처에 무언가를 건설하는 것은 불가능에 가깝습니다. 하지만 퀘이사 근처의 중력 상수를 변경함으로써, 우리는 퀘이사의 질량이 증가한 것과 같은 효과를 유도하여 원반의 크기를 강제로 축소할 수 있습니다. 이는 에너지 잠재력을 높이는 동시에 퀘이사 근처에 구조물을 건설할 수 있게 해 줄 것입니다." # 12031738003499589842
   giga_tech_quasi_stellar_3: "상대론적 제트 편향" # 12704555158193140394
@@ -58,10 +58,10 @@
   quasi_stellar_obliterator_6_DESC: "초병기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
   quasi_stellar_marker_star_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: ""
   quasi_stellar_marker_planet_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: ""
   giga_qso.3000.name: "콰사리아의 평화" # 14516309440491175786
   giga_qso.3000.desc: "§R경악스러운 소식!§!\n\n우리 $name_quasistellar$의 중요한 부분이 완성됨에 따라, 은하계는 우리를 은하계의 안전에 대한 보편적인 위협으로 간주하기 시작한 듯합니다. 실제로, 대량 학살을 자행하지 않는 모든 제국은 오늘 '콰사리아의 평화'라 불리는 상호 불가침 조약과 함께 기한 없는 휴전에 합의했습니다. 그들은 적어도 지금은 우리의 하이퍼무기로 은하계의 안전을 위협하지 못하도록 사소한 다툼을 잠시 접어두기로 결정했습니다..." # 9789629933934543932
   giga_qso.3000.a: "그게 도움이 될 거라 생각하나?" # 6328228696513221900
@@ -205,7 +205,7 @@
   giga_qso.100.yes: "진행하도록 하죠." # 10508287875752728947
   giga_qso.100.no: "다시 생각해보니..." # 800586801252134794
   giga_birch.300.name: "하이퍼퀘이사" # 10981417733557943253
-  giga_birch.300.desc: "고된 여정 끝에, 우리 과학선이 마침내 은하 중심부에 도달했습니다.\n성계에 진입하자마자, 승무원들은 거대한 §Y활동성 초대질량 퀘이사§!, 즉 하이퍼퀘이사의 광경에 경악을 금치 못했습니다.\n\n이 거대한 천체는 수억 개의 항성 질량을 지니고 있으며, 지름은 수백 천문단위에 달합니다. 현재로서는 추측에 불과하지만, 과학계의 일부 급진적인 인물들은 이 퀘이사 주위에 거대한 하이퍼웨폰을 건설하여 그 파멸적인 에너지를 이용해 상상할 수 없는 파괴력을 지닌 광선을 발사할 수 있을 것이라는 이론을 제기하고 있습니다." # 8017460021263681983
+  giga_birch.300.desc: "고된 여정 끝에, [Root.GetName]은 마침내 우리 은하의 중심부에 도달했습니다.\n성계에 진입하자마자, 승무원들은 엄청난 규모의 §Y활동성 초대질량 퀘이사§!, 즉 하이퍼퀘이사를 목격하고 경악을 금치 못했습니다.\n\n이 거대한 천체는 수억 개의 태양 질량에 달하며, 지름은 수백 천문단위에 이릅니다. \n현재로서는 단순한 추측에 불과하지만, 과학계의 일부 급진적인 학자들은 이 퀘이사 주위에 거대한 하이퍼웨폰을 건설하여 그 파멸적인 에너지를 이용해 상상을 초월하는 파괴력을 지닌 광선을 발사하는 것이 가능할지도 모른다는 이론을 제시하고 있습니다." # 8069897641200250897
   giga_birch.300.a: "믿을 수 없군!" # 11826258457890550173
   giga_qso.110.name: "기계 행성 소멸" # 7664338443016884309
   giga_qso.110.desc: "웜홀이 상공에 나타난 순간, $name_quasistellar$의 기계 행성은 이미 끝장난 것이나 다름없었습니다. 잠시 후, 은하 전체의 에너지 출력과 맞먹는 거대한 에너지 흐름이 웜홀에서 뿜어져 나왔습니다. 광선이 행성을 완전히 소멸시키는 데는 단 몇 초밖에 걸리지 않았습니다.\n\n이전의 로봇 행성은 흔적도 없이 사라졌으며, 그 결과 고스트 신호도 심각하게 약화되었습니다." # 9062670973478491109

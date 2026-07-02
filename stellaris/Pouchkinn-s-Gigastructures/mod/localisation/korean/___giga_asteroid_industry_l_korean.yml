@@ -25,6 +25,8 @@
   concept_giga_asteroid_industry_alloys: "$asteroid_manufactory_alloys$" # 3851351585217083575
   concept_giga_asteroid_industry_alloys_desc: "$asteroid_manufactory_subtitle$$asteroid_manufactory_alloys_effect$" # 112118674635106139
   asteroid_manufactory_ai_alloys: "$asteroid_manufactory_0$" # 17106121505745625308
+  asteroid_manufactory_ai_alloys_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
+  asteroid_manufactory_ai_alloys_MEGASTRUCTURE_DETAILS: "$asteroid_manufactory_0_MEGASTRUCTURE_DETAILS$" # 13872666258639704040
   asteroid_manufactory_platform_alloys: "$asteroid_manufactory_alloys$ 건설 현장" # 9281879440273970132
   asteroid_manufactory_platform_alloys_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
   giga_asteroid_industry_candidate_alloys: "소행성 생산 시설 후보: §Y$alloys$§!" # 2876673685043818316
@@ -38,6 +40,8 @@
   concept_giga_asteroid_industry_consumer_goods: "$asteroid_manufactory_consumer_goods$" # 6773611485168776539
   concept_giga_asteroid_industry_consumer_goods_desc: "$asteroid_manufactory_subtitle$§ERequirements:§!\n- £consumer_goods£을 사용하는 제국에서만 사용 가능합니다. §Y$consumer_goods$§!\n\n§EEffects:§!\n$asteroid_manufactory_consumer_goods_effect$" # 220678146705487533
   asteroid_manufactory_ai_consumer_goods: "$asteroid_manufactory_0$" # 17106121505745625308
+  asteroid_manufactory_ai_consumer_goods_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
+  asteroid_manufactory_ai_consumer_goods_MEGASTRUCTURE_DETAILS: "$asteroid_manufactory_0_MEGASTRUCTURE_DETAILS$" # 13872666258639704040
   asteroid_manufactory_platform_consumer_goods: "$asteroid_manufactory_consumer_goods$ 건설 현장" # 8174509466212923556
   asteroid_manufactory_platform_consumer_goods_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
   giga_asteroid_industry_candidate_consumer_goods: "$asteroid_manufactory_candidate$: §Y$consumer_goods$§!" # 2221410030132948764
@@ -51,6 +55,8 @@
   concept_giga_asteroid_industry_energy: "$asteroid_manufactory_energy$" # 4248252027674328213
   concept_giga_asteroid_industry_energy_desc: "$asteroid_manufactory_subtitle$\n$asteroid_manufactory_energy_effect$" # 6718770239884011161
   asteroid_manufactory_ai_energy: "$asteroid_manufactory_0$" # 17106121505745625308
+  asteroid_manufactory_ai_energy_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
+  asteroid_manufactory_ai_energy_MEGASTRUCTURE_DETAILS: "$asteroid_manufactory_0_MEGASTRUCTURE_DETAILS$" # 13872666258639704040
   asteroid_manufactory_platform_energy: "$asteroid_manufactory_energy$ 건설 현장" # 2879742392037626604
   asteroid_manufactory_platform_energy_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
   giga_asteroid_industry_candidate_energy: "소행성 제조소 후보: §Y$energy$§!" # 4132409466000029800
@@ -64,6 +70,8 @@
   concept_giga_asteroid_industry_food: "$asteroid_manufactory_food$" # 9817060016475210403
   concept_giga_asteroid_industry_food_desc: "$asteroid_manufactory_subtitle$§ERequirements:§!\n- £food£을(를) 사용하는 제국에서만 사용 가능: §Y$food$§!\n\n§EEffects:§!\n$asteroid_manufactory_food_effect$" # 10690896553088946165
   asteroid_manufactory_ai_food: "$asteroid_manufactory_0$" # 17106121505745625308
+  asteroid_manufactory_ai_food_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
+  asteroid_manufactory_ai_food_MEGASTRUCTURE_DETAILS: "$asteroid_manufactory_0_MEGASTRUCTURE_DETAILS$" # 13872666258639704040
   asteroid_manufactory_platform_food: "$asteroid_manufactory_food$ 건설 현장" # 642165276138880557
   asteroid_manufactory_platform_food_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
   giga_asteroid_industry_candidate_food: "소행성 제조 시설 후보: §Y식량§!" # 12682173921746602262
@@ -77,12 +85,15 @@
   concept_giga_asteroid_industry_supertensiles: "$asteroid_manufactory_supertensiles$" # 16684211575397085122
   concept_giga_asteroid_industry_supertensiles_desc: "$asteroid_manufactory_subtitle$§E요구 사항:§!\n- 거대구조물 건설 한도 §Y옵션§!은 £job£§B작업 기반§!으로 설정되어야 합니다.\n\n§E효과:§!\n$asteroid_manufactory_supertensiles_effect$" # 18077752946459891796
   asteroid_manufactory_ai_supertensiles: "$asteroid_manufactory_0$" # 17106121505745625308
+  asteroid_manufactory_ai_supertensiles_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
+  asteroid_manufactory_ai_supertensiles_MEGASTRUCTURE_DETAILS: "$asteroid_manufactory_0_MEGASTRUCTURE_DETAILS$" # 13872666258639704040
   asteroid_manufactory_platform_supertensiles: "$asteroid_manufactory_supertensiles$ 건설 현장" # 10404984452705507925
   asteroid_manufactory_platform_supertensiles_DESC: "$asteroid_manufactory_0_DESC$" # 10318821853168083836
   giga_asteroid_industry_candidate_supertensiles: "$asteroid_manufactory_candidate$: §Y$giga_sr_amb_megaconstruction$§!" # 15436914948608946025
   giga_asteroid_industry_candidate_supertensiles_desc: "§TA ['concept_giga_asteroid_industry_supertensiles']는 여기에 건설될 수 있습니다§!\n\n이 소행성 내에서 $giga_sr_amb_megaconstruction$의 천연 매장지가 발견될 수 있으며, 이는 더 집약적인 채광 작업으로 추출될 수 있습니다." # 15328043889185010851
   asteroid_manufactory_2: "소행성 자동 공장" # 3640503620881438070
   asteroid_manufactory_2_DESC: "소행성에서 자원을 추출 및 정제하여 소비 시장을 위한 상품을 생산하는 자동화 공장." # 4018668314086363753
+  asteroid_manufactory_2_MEGASTRUCTURE_DETAILS: "소행성 제조소 2 메가구조물 상세 정보 자리 표시자" # 1302402996429299522
   giga_tech_asteroid_manufactory: "소행성 제조 공장" # 1552341269433596051
   giga_tech_asteroid_manufactory_desc: "대부분 태양계 형성 과정에서 남은 잔해로서, 소행성은 쉽게 접근 가능한 원자재가 풍부합니다. 소행성 주위에 특수 채집기가 장착된 대형 구조물을 건설하면 이러한 자원을 꾸준히 수집하고, 행성 표면 공장으로 운송하여 가공하거나 소비할 수 있습니다." # 1176920135179145259
   giga_asteroid_industry.001.name: "소행성 산업 건설 현장 완료!" # 9950024667629532928

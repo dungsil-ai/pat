@@ -1,8 +1,8 @@
 ﻿l_korean:
   children_rights_events.1.t: "보이지 않는 울부짖음" # 7083966055794094640
-  children_rights_events.1.d: "[SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName]은 $bpm_legislature_name$의 나머지 의원들을 설득하려는 시도로서, [SCOPE.sState('child_labor_state').GetName]의 아동 노동 환경에 대해 파헤쳤습니다. 그곳에서 그는 아동들이 작업장에서 겪는 비인간적인 환경으로 인해 [SCOPE.sState('child_labor_state').GetName]의 많은 가정이 아이들을 일터로 보내지 않기 위해 자녀들을 숨기는 선택을 했다는 사실을 발견했습니다." # 11849595977052691785
+  children_rights_events.1.d: "$country_legislature_name$의 나머지 의원들을 설득하기 위해, [SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName]은(는) [SCOPE.sState('child_labor_state').GetName]의 아동 노동 실태를 파헤쳤습니다. 그곳에서 그는 아이들이 작업장에서 겪는 비인도적인 환경 때문에, [SCOPE.sState('child_labor_state').GetName]의 많은 가족이 자녀가 일터로 보내지지 않기를 바라는 마음으로 아이들을 숨기고 있다는 사실을 발견했습니다." # 17028194751319335747
   children_rights_events.1.f: "\"어머니께서 조용히 있으라고 하셨습니다, 나리, 그래서 저희는 그리했습니다. 저와 제 동생은 무덤처럼 조용히 서 있었지요, 아시다시피, 저는 숨을 최대한 참았지만, 너무 어두워서 건달들은 이미 떠난 줄 알았습니다. 그들은 여기에서 우리를 찾지 못할 거라고, 어머니께서 그렇게 말씀하셨지요, 하지만 너무 어둡고, 추웠습니다, 나리.\"" # 18212927193468464480
-  children_rights_events.1.a: "이 정보는 $bpm_legislature_name$ 내 일부 인사들의 마음을 움직일 것입니다." # 2372290016763261676
+  children_rights_events.1.a: "이 정보는 $country_legislature_name$의 일부 의원들의 마음을 돌릴 것입니다." # 10924227910205507062
   children_rights_events.1.b: "이 이야기는 [SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName] 덕분에 밖으로 알려지지 않았을 것입니다!" # 9764864108144340482
   hidden_children_modifier: "숨겨진 자녀들" # 6380735601827941673
   bpm_brought_hidden_children_modifier: "숨겨진 아동들에게 주목하게 하다" # 12001570744753802689

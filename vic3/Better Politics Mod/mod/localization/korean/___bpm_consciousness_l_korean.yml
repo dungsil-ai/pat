@@ -9,7 +9,7 @@
   bpm_consciousness_labor_change_service_desc: "집중된 서비스 건물 단계 수" # 12613741778584361734
   bpm_consciousness_labor_change_manufacturing_desc: "집중 제조업 건물 단계 수" # 7612511827645511513
   bpm_consciousness_liberal_change_findist_desc: "밀집된 #tooltippable;tooltip:bpm_liberal_buildings 자유주의#! 건물 단계 수" # 3657157334509046110
-  bpm_liberal_buildings: "금융 지구, 대학 및 무역 센터." # 1416835875636503337
+  bpm_liberal_buildings: "금융 지구, 기업 본부, 대학 및 무역 센터." # 6136637898645856267
   bpm_consciousness_labor_change_loyalty_multiplier_desc: "콘텐츠 팝업" # 8152894647313488859
   BPM_LABOR_CONSCIOUSNESS: "[GetPlayer.MakeScope.Var('bpm_consciousness_liberal').GetValue|v1]의 노동자 의식" # 3829114855381838233
   country_bpm_labor_consciousness_target_mult: "노동 의식 목표" # 9092023663865592908

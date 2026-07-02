@@ -374,3 +374,8 @@
   country_ship_type_nuclear_submarine_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_nuclear_submarine$')] @ship_construction! [concept_ship_construction] 효율" # 11999699143869365959
   country_ship_type_modern_troop_ship_construction_efficiency_add: "$ship_type_modern_troop_ship$ 건조 효율" # 14965787543101315401
   country_ship_type_modern_troop_ship_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_troop_ship$')] @ship_construction! [concept_ship_construction] 효율" # 8254029106958615507
+  ship_battle_against_ship_type_modern_destroyer_hull_damage_mult: "$ship_type_modern_destroyer$ $ship_hull_damage_mult$" # 8723697902834015255
+  ship_battle_against_ship_type_modern_cruiser_hull_damage_mult: "$ship_type_modern_cruiser$ $ship_hull_damage_mult$" # 15011784714524327815
+  ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
+  ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
+  ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
