@@ -60,6 +60,12 @@ jobs:
         with:
           game: stellaris
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Close resolved translation issues
+        if: always()
+        uses: ./.github/actions/close-translation-issues
+        with:
+          game: stellaris
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Check translation result
         if: steps.translate.outcome == 'failure'
         run: exit 1
