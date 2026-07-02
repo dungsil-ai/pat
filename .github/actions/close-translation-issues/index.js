@@ -7,18 +7,21 @@ const { githubApiRetry } = require('@pat-actions/shared');
 
 function readUntranslatedItems(filePath) {
   if (!fs.existsSync(filePath)) {
-    return [];
+    return { ok: false, items: [], reason: 'missing' };
   }
 
   try {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     if (!Array.isArray(data.items)) {
-      return [];
+      return { ok: false, items: [], reason: 'invalid-items' };
     }
-    return data.items.filter(item => item && typeof item.mod === 'string');
+    return {
+      ok: true,
+      items: data.items.filter(item => item && typeof item.mod === 'string')
+    };
   } catch (e) {
     core.error(`Failed to parse untranslated items file: ${e.message}`);
-    return null; // 파싱 실패 시 안전하게 이슈를 닫지 않습니다.
+    return { ok: false, items: [], reason: 'parse-error' };
   }
 }
 
@@ -29,12 +32,18 @@ function getGameDisplayName(game) {
   return game;
 }
 
-function getIssueMod(title, gameDisplayName) {
+function getIssueMod(issue, gameDisplayName) {
   const prefix = `[${gameDisplayName}] 번역 거부 항목 발생: `;
-  if (!title.startsWith(prefix)) {
-    return null;
+  if (issue.title.startsWith(prefix)) {
+    return issue.title.slice(prefix.length);
   }
-  return title.slice(prefix.length);
+
+  const bodyModMatch = (issue.body || '').match(/^\*\*모드\*\*:\s*(.+)$/m);
+  if (bodyModMatch) {
+    return bodyModMatch[1].trim();
+  }
+
+  return null;
 }
 
 function getCurrentCommit() {
@@ -44,16 +53,34 @@ function getCurrentCommit() {
   return { sha, shortSha, subject };
 }
 
-function buildResolutionComment({ commit, context, issueMod }) {
+function getResolutionMarker({ gameType, commit }) {
+  return `<!-- pat-translation-resolved:${gameType}:${commit.sha} -->`;
+}
+
+function buildResolutionComment({ commit, context, gameType, issueMod }) {
   const timestamp = new Date().toISOString();
   const serverUrl = process.env.GITHUB_SERVER_URL || 'https://github.com';
   const commitUrl = `${serverUrl}/${context.repo.owner}/${context.repo.repo}/commit/${commit.sha}`;
+  const marker = getResolutionMarker({ gameType, commit });
 
-  let body = `✅ 해결된 번역이 다음 커밋에 반영되어 이슈를 닫습니다.\n\n`;
+  let body = `${marker}\n`;
+  body += `✅ 해결된 번역이 다음 커밋에 반영되어 이슈를 닫습니다.\n\n`;
   body += `- 모드: \`${issueMod}\`\n`;
   body += `- 반영 커밋: [\`${commit.shortSha}\`](${commitUrl}) ${commit.subject}\n`;
   body += `- 확인 시각: ${timestamp}\n`;
   return body;
+}
+
+async function hasResolutionComment({ octokit, context, issue, gameType, commit }) {
+  const marker = getResolutionMarker({ gameType, commit });
+  const comments = await githubApiRetry(() => octokit.paginate(octokit.rest.issues.listComments, {
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: issue.number,
+    per_page: 100
+  }), '이슈 코멘트 목록 조회');
+
+  return comments.some(comment => typeof comment.body === 'string' && comment.body.includes(marker));
 }
 
 async function run() {
@@ -76,31 +103,32 @@ async function run() {
     const gameDisplayName = getGameDisplayName(gameType);
 
     const filePath = path.join(process.cwd(), `${gameType}-untranslated-items.json`);
-    const untranslatedItems = readUntranslatedItems(filePath);
-    if (untranslatedItems === null) {
-      core.warning('번역되지 않은 항목 파일을 읽을 수 없어 이슈 닫기를 건너뜁니다.');
+    const untranslatedResult = readUntranslatedItems(filePath);
+    if (!untranslatedResult.ok) {
+      core.warning(`번역되지 않은 항목 파일을 신뢰할 수 없어 이슈 닫기를 건너뜁니다. reason=${untranslatedResult.reason}`);
       return;
     }
 
-    const unresolvedMods = new Set(untranslatedItems.map(item => item.mod));
+    const unresolvedMods = new Set(untranslatedResult.items.map(item => item.mod));
     const currentCommit = getCurrentCommit();
 
-    const existingIssues = await githubApiRetry(() => octokit.rest.issues.listForRepo({
+    const existingIssues = await githubApiRetry(() => octokit.paginate(octokit.rest.issues.listForRepo, {
       owner: context.repo.owner,
       repo: context.repo.repo,
       state: 'open',
-      labels: `translation-refused,${gameType}`
+      labels: `translation-refused,${gameType}`,
+      per_page: 100
     }), '이슈 목록 조회');
 
-    if (existingIssues.data.length === 0) {
+    if (existingIssues.length === 0) {
       core.info('닫을 번역 거부 이슈가 없습니다.');
       return;
     }
 
-    for (const issue of existingIssues.data) {
-      const issueMod = getIssueMod(issue.title, gameDisplayName);
+    for (const issue of existingIssues) {
+      const issueMod = getIssueMod(issue, gameDisplayName);
       if (issueMod === null) {
-        core.info(`이슈 #${issue.number}는 자동 생성 제목 형식이 아니어서 건너뜁니다.`);
+        core.info(`이슈 #${issue.number}에서 모드명을 확인할 수 없어 건너뜁니다.`);
         continue;
       }
 
@@ -109,12 +137,22 @@ async function run() {
         continue;
       }
 
-      await githubApiRetry(() => octokit.rest.issues.createComment({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        issue_number: issue.number,
-        body: buildResolutionComment({ commit: currentCommit, context, issueMod })
-      }), '이슈 해결 코멘트 작성');
+      const alreadyCommented = await hasResolutionComment({
+        octokit,
+        context,
+        issue,
+        gameType,
+        commit: currentCommit
+      });
+
+      if (!alreadyCommented) {
+        await githubApiRetry(() => octokit.rest.issues.createComment({
+          owner: context.repo.owner,
+          repo: context.repo.repo,
+          issue_number: issue.number,
+          body: buildResolutionComment({ commit: currentCommit, context, gameType, issueMod })
+        }), '이슈 해결 코멘트 작성');
+      }
 
       await githubApiRetry(() => octokit.rest.issues.update({
         owner: context.repo.owner,
