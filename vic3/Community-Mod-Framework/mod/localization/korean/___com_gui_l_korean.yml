@@ -7,6 +7,9 @@
   com_no_sandbox_warning: "@red_cross! 목표가 선택된 상태에서는 $SANDBOX$를 사용할 수 없습니다" # 13636822750393792706
   com_event_location: "[GetPlayer.MakeScope.Var('com_event_window_location_var').GetFlagName]에서 발생한 이벤트" # 10184700852032093851
   com_debug_deer: "#header #todo 디버그 정보#!#!\n$TOOLTIP_DELIMITER$\n#bold 이벤트 ID: [Event.GetKey|v]\n$TOOLTIP_DELIMITER$\n#bold 트리거 설명:\n[Event.GetTriggerDesc]\n@information! 클릭하여 텍스트 편집기에서 이벤트 열기" # 15750909931800288972
+  com_error_deer_tooltip: "#instruction 왼쪽 클릭#!으로 오류 로그 열기\n#instruction 왼쪽 클릭 + Shift#!으로 탐색기 열기\n#instruction 왼쪽 클릭 + Alt#!으로 느린 틱 작업 열기\n#instruction 오른쪽 클릭#!으로 닫기 (다시 오류가 발생하기 전까지)\n#instruction 오른쪽 클릭 + Shift#!으로 트위커 열기\n#instruction 오른쪽 클릭 + Alt#!으로 3D 통계 열기" # 14951443437567222190
+  com_error_counter: "#bold [ErrorDeer.NumberOrErrors|v]개의 오류#!" # 10094424766754441795
+  com_error_counter_tooltip: "[ErrorDeer.GetTooltip]" # 17515023484570454117
   com_debug.t: "커뮤니티 GUI 테스트 이벤트" # 14439554426211369124
   com_debug.d: "\"빅토리아 3는 정말 형편없는 게임이야. 독창성이라곤 찾아볼 수 없는 시시한 게임이지. 국가 규모가 어떻든 플레이하기가 너무 쉬워. 빅토리아 2 때는 훨씬 나았어. 건물과 인구를 직접 관리하고 다양한 외교를 수행해야 했으니까.\"" # 6217398070270506244
   com_debug.f: "\"그래, 불행히도 제임스 말고는 아무도 모딩을 못 해\" -rskhm" # 11756833210712855117
@@ -17,3 +20,7 @@
   com_debug.e: "테스트 & 4ious" # 4074723196073234045
   com_debug.james: "\"그냥 [GetTechnology('line_infantry').GetName] 연구나 해\" -1230james" # 10961944449040135390
   com_debug.james_tt: "#italic 제임스가 당신을 보며 미소 짓습니다...#!" # 10978015492550975796
+  com_nl: "\n" # 7161557352316922208
+  com_bp: "•" # 10991062373138645705
+  com_nlpb: "\n • " # 5140152433316209271
+  com_ttdl: "\n$TOOLTIP_DELIMITER$\n" # 5958986119376624063

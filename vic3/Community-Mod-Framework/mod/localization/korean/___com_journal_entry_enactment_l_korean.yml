@@ -1,0 +1,3 @@
+﻿l_korean:
+  com_journal_entry_enactment_success: "성공: [ComEnactmentValue('success_chance').GetValue|%0g]" # 4670555571016916277
+  com_journal_entry_enactment_stall: "교착: [ComEnactmentValue('stall_chance').GetValue|%0r]" # 13961149310806851772

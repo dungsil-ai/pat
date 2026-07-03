@@ -1,0 +1,124 @@
+﻿l_korean:
+  je_com_international_situation: "국제 정세" # 7180008575181507444
+  je_com_international_situation_reason: "이유는 없습니다. 우리에겐 아무런 이유가 없습니다. 우리는 근거 없는 주장과 신성한 광기에 사로잡힌 민족입니다. 자, 이제 아무도 눈치채기 전에 동말리에 목재를 좀 가져다 놓으십시오." # 12409453557106477595
+  je_com_international_situation_status: "상태: 광산에서 비명을 지르는 중." # 1904777014547387364
+  com_situation_toggle_involved: "$com_situation$ 개입 보기" # 3444784270370758882
+  com_situation_involved_countries: "$com_involved$  [Concept('concept_country', '$concept_countries$')]" # 1471566728423669562
+  com_situation_interloper_countries: "$com_interloper$  [Concept('concept_country', '$concept_countries$')]" # 7741470321730279018
+  com_situation_complete_tooltip: "[JournalEntry.GetCompletionTooltip]$_ttdl$[JournalEntry.GetOnCompleteTooltip]" # 16834660652506279306
+  com_situation_timeout_tooltip: "[JournalEntry.GetTimeoutTooltip]$_ttdl$[JournalEntry.GetOnTimeoutTooltip]" # 15699606912044374962
+  com_situation_failure_tooltip: "[JournalEntry.GetFailureTooltip]$_ttdl$[JournalEntry.GetOnFailTooltip]" # 15499429600335923140
+  com_situation_current_phase: "현재 단계:" # 6127804860011682566
+  com_situation_phase_effects: "단계 효과:" # 12056079774011180228
+  com_view_situation_endings: "상황 결과 보기" # 11835925311606318363
+  com_next_phase_progress: "다음 단계 진행도" # 10877908957980995968
+  com_situation_catalysts_header_1: "#bold #italic 다음으로 향하는 촉매#!#! [JournalEntry.MakeScope.Var('com_situation_group_1_next_phase_name_var').GetFlagName]" # 2928382108299488674
+  com_situation_catalysts_header_2: "#bold #italic 다음으로 향하는 촉매#!#! [JournalEntry.MakeScope.Var('com_situation_group_2_next_phase_name_var').GetFlagName]" # 7997324026869664727
+  com_situation_catalysts_header_3: "#bold #italic 다음으로 향하는 촉매#!#! [JournalEntry.MakeScope.Var('com_situation_group_3_next_phase_name_var').GetFlagName]" # 8720135391183376643
+  com_situation_catalysts_header_4: "#bold #italic 다음으로 향하는 촉매#!#! [JournalEntry.MakeScope.Var('com_situation_group_4_next_phase_name_var').GetFlagName]" # 1437446339636507260
+  com_catalysts_info: "#blue #italic 촉매를 완료하여 단계 진행도를 높이십시오#!#!" # 10664258699815546787
+  com_situation_group_1_progress_bar_tooltip: "현재 진행도: #v [JournalEntry.MakeScope.Var('com_situation_group_1_next_phase_progress_var').GetValue]/[JournalEntry.MakeScope.Var('com_situation_group_1_next_phase_max_progress_var').GetValue]#!" # 14491214245239893273
+  com_situation_group_2_progress_bar_tooltip: "현재 진행도: #v [JournalEntry.MakeScope.Var('com_situation_group_2_next_phase_progress_var').GetValue]/[JournalEntry.MakeScope.Var('com_situation_group_2_next_phase_max_progress_var').GetValue]#!" # 3141598071795870647
+  com_situation_group_3_progress_bar_tooltip: "현재 진행도: #v [JournalEntry.MakeScope.Var('com_situation_group_3_next_phase_progress_var').GetValue]/[JournalEntry.MakeScope.Var('com_situation_group_3_next_phase_max_progress_var').GetValue]#!" # 7466931120719936460
+  com_situation_group_4_progress_bar_tooltip: "현재 진행도: #v [JournalEntry.MakeScope.Var('com_situation_group_4_next_phase_progress_var').GetValue]/[JournalEntry.MakeScope.Var('com_situation_group_4_next_phase_max_progress_var').GetValue]#!" # 9352446808833119119
+  com_situation_start_date_header: "#blue #bold 시작일:#!#!" # 14116009029665700713
+  com_situation_start_date: "#bold [JournalEntry.MakeScope.Var('com_situation_start_month_var').GetFlagName] [JournalEntry.MakeScope.Var('com_situation_start_year_var').GetValue]#!" # 2480230906413286270
+  com_situation_background_africa_construction_colony: "com_situation_background_africa_construction_colony" # 10078965697005467884
+  com_situation_background_asia_westerners_arriving: "com_situation_background_asia_westerners_arriving" # 10577387263597568088
+  com_situation_background_europenorthamerica_london_center: "com_situation_background_europenorthamerica_london_center" # 15183044113448456993
+  com_situation_background_europenorthamerica_political_extremism: "com_situation_background_europenorthamerica_political_extremism" # 17481581924175982181
+  com_situation_background_southamerica_aristocrats: "com_situation_background_southamerica_aristocrats" # 5391112119546169722
+  com_outcome_background_generic: "com_outcome_background_generic" # 3410694617753480662
+  concept_com_international_situation: "국제 정세" # 7180008575181507444
+  concept_com_international_situation_desc: "$concept_com_international_situations$(은)는 대국과 소국을 막론하고 [Concept('concept_country','$concept_countries$)] 모두의 지속적인 관심을 요구하는 복잡하고 장기적인 사건입니다. 이는 전략적 기회가 될 수도 있고, 지정학적 위기로 번질 수도 있습니다.\n\n$concept_com_international_situations$은(는) 보통 둘 이상의 [Concept('concept_com_situation_faction','$concept_com_situation_factions$)]가 관여하며, 각 진영은 고유한 [concept_com_situation_leader]를 가집니다. 일단 해결되면 이들은 $concept_journal$에서 제거됩니다." # 13149645444705378619
+  concept_com_international_situations: "국제 정세" # 16987186411209854052
+  concept_com_international_situation_short: "정세" # 6406082565441628687
+  concept_com_international_situations_short: "정세" # 7371833616068319626
+  com_international_situation: "[concept_com_international_situation]" # 6512581807592952183
+  com_international_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations$')]" # 13130265905697476481
+  com_situation: "[Concept('concept_com_international_situation','$concept_com_international_situation_short$')]" # 9665843462805158107
+  com_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations_short$')]" # 17616044043517365654
+  concept_com_situation_involvement: "정세 참여" # 2417094000852347320
+  concept_com_situation_involvement_desc: "" # 17241709254077376921
+  concept_com_situation_involvement_short: "개입" # 2270105114638203999
+  concept_com_situation_involved: "개입됨" # 15619176787472211100
+  concept_com_situation_uninvolved: "미개입" # 7862303771425021488
+  com_situation_involvement: "[concept_com_situation_involvement]" # 3262150887750287927
+  com_involvement: "[Concept('concept_com_situation_involvement','$com_situation_involvement$')]" # 15602321931221619848
+  com_involved: "[Concept('concept_com_situation_involvement','$concept_com_situation_involved$')]" # 7766937920051290983
+  com_uninvolved: "[Concept('concept_com_situation_involvement','$concept_com_situation_uninvolved$')]" # 18408869972658469277
+  concept_com_situation_interloper: "상황 참견자" # 8938995168772719173
+  concept_com_situation_interloper_desc: "" # 17241709254077376921
+  concept_com_situation_interlopers: "상황 참견자들" # 14162449611193715646
+  concept_com_situation_interloper_short: "참견자" # 6028712792237117956
+  concept_com_situation_interlopers_short: "참견자들" # 13545689457283780400
+  com_situation_interloper: "[concept_com_situation_interloper]" # 7381672737994982326
+  com_situation_interlopers: "[Concept('concept_com_situation_interloper','$concept_com_situation_interlopers$')]" # 16533162065094275855
+  com_interloper: "[Concept('concept_com_situation_interloper','$concept_com_situation_interloper_short$')]" # 13361451422514856081
+  com_interlopers: "[Concept('concept_com_situation_interloper','$concept_com_situation_interlopers_short$')]" # 10543331434368235636
+  concept_com_situation_leader: "상황 주도자" # 11467913579276541070
+  concept_com_situation_leaders: "상황 주도자들" # 17552076829869849575
+  concept_com_leader: "주도자" # 4199691443646333306
+  concept_com_leaders: "지도자" # 16198308755366235743
+  concept_com_situation_leader_desc: "$concept_com_situation$의 양측에 있는 하나의 [concept_country]는 해당 $concept_com_faction$의 $concept_com_situation_leader$로 간주됩니다. 이들은 보통(항상 그렇지는 않지만) $com_situation$의 주동자이며, $concept_com_situation$을 통해 최종 해결에 이르는 과정을 주도하는 경향이 있습니다." # 10256646410399471001
+  concept_com_situation_faction: "상황 파벌" # 3884824090159756475
+  concept_com_situation_factions: "상황 파벌들" # 15194768102878615177
+  concept_com_faction: "파벌" # 12519007747337615688
+  concept_com_factions: "파벌들" # 3027917813929525022
+  concept_com_situation_faction_desc: "$concept_com_situation_factions$는 $com_situation$의 결과에 공통의 이해관계를 가진 [Concept('concept_country','$concept_countries$')]입니다. 이들은 [Concept('concept_com_situation_leader','$concept_com_situation_leaders$')]의 직접적 혹은 간접적 지도를 받으며, 최종 해결 결과에 따라 이득을 얻거나 피해를 볼 수 있습니다." # 3414876866512258383
+  error_no_situation_scope: "CMF: 정의된 com_situation 범위가 없습니다" # 13996546581790060929
+  error_situation_side_exists: "CMF: 지정된 측이 이미 존재합니다" # 13082730084457823577
+  error_situation_side_not_exists: "CMF: 지정된 측이 존재하지 않습니다" # 8079106948503244183
+  concept_com_situation_faction_neutral: "중립 $concept_com_situation_faction$" # 1967437714416779387
+  concept_com_situation_factions_neutral: "중립 $concept_com_situation_factions$" # 10744786024407472379
+  concept_com_faction_neutral: "중립 $concept_com_faction$" # 9003372046797951589
+  concept_com_factions_neutral: "중립 $concept_com_factions$" # 1114371397356669362
+  concept_com_situation_countries: "관여 국가들" # 1096899069114363387
+  concept_com_situation_faction_neutral_desc: "$concept_com_situation_factions_neutral$은 제3의 목적을 가진 정의된 집단일 수도 있고, 단순히 $com_situation$에 관여하거나 영향을 받는 국가들을 지칭하는 용어일 수도 있습니다. $concept_com_factions_neutral$은 상황에 느슨하게 연루된 [Concept('concept_country','$concept_countries$')]이지만, 적절한 상황이 조성되면 특정 측에 가담하도록 설득될 수 있습니다." # 5093698561696893690
+  com_situation_vs: "대" # 7084827725170907512
+  com_situation_leader: "주도자" # 4199691443646333306
+  com_situation_interactions: "상호작용" # 6248459751353562088
+  com_situation_victory_conditions: "승리 조건" # 16197004891948210039
+  com_situation_header_leader_for: "[Scope.Var('com_leader').GetCountry.GetName]은(는) #header [Scope.Var('com_name').GetFlagName]#! 측의 [concept_com_situation_leader]입니다." # 14488596415619867890
+  com_situation_completion_conditions: "완료 조건" # 17316128977070624512
+  com_situation_failure_conditions: "실패 조건" # 2796303187098457867
+  com_situation_alternate_ending_conditions: "대체 결말 조건" # 8804805953853264331
+  com_green_checkmark_box: "@green_checkmark_box!" # 14775071777497001468
+  com_simple_box: "@simple_box!" # 11308756596451748681
+  effect_add_com_situation_journal_entry: "[THIS.GetCountry.GetName|v]의 일지에 #v [TopScope.GetLocalVariable('com_name').GetFlagName]#! $com_situation$을(를) 추가합니다." # 11166855320118205122
+  effect_end_com_situation: "상황을 종결합니다." # 14542147985085968680
+  effect_create_com_situation_side: "[TopScope.GetLocalVariable('com_name_new').GetFlagName|v] 측이 [TopScope.GetLocalVariable('com_leader_new').GetCountry.GetName|v]의 지도력 아래 결집합니다." # 5041151364417209937
+  effect_remove_com_situation_side: "[TopScope.GetLocalVariable('com_name_old').GetFlagName|v]이(가) 해산합니다." # 16214901962345830592
+  effect_change_com_situation_leader: "#v [TopScope.GetLocalVariable('com_faction_name').GetFlagName]#! 측의 [concept_com_situation_leader]를 [TopScope.GetLocalVariable('com_leader_old').GetCountry.GetName|v]에서 [TopScope.GetLocalVariable('com_leader_new').GetCountry.GetName|v](으)로 변경합니다." # 4921333362691151498
+  effect_change_com_situation_side_name: "[TopScope.GetLocalVariable('com_name_old').GetFlagName|v] 측은 이름을 [TopScope.GetLocalVariable('com_name_new').GetFlagName|v](으)로 변경할 것입니다" # 10925376221398559297
+  effect_create_com_situation_faction: "[TopScope.GetLocalVariable('com_faction_name').GetFlagName|v] [concept_com_situation_faction]이(가) [TopScope.GetLocalVariable('com_side_name').GetFlagName|v] 측으로 합류합니다." # 13775837191963457777
+  effect_remove_com_situation_faction: "[TopScope.GetLocalVariable('com_side_name').GetFlagName|v] 측의 [TopScope.GetLocalVariable('com_faction_name').GetFlagName|v] [concept_com_situation_faction]이(가) 해체됩니다." # 668686498488430028
+  effect_clear_com_situation_factions: "[TopScope.GetLocalVariable('com_side_name').GetFlagName|v] 측의 모든 [Concept('concept_com_situation_faction', '$concept_com_situation_factions$')]이(가) 해체됩니다." # 1518608800389254453
+  effect_clear_com_situation_factions_all: "양측의 모든 [Concept('concept_com_situation_faction', '$concept_com_situation_factions$')]이(가) 해체됩니다." # 16798119901717342219
+  effect_sort_com_situation_faction: "[TopScope.GetLocalVariable('com_side_name').GetFlagName|v] 측 [TopScope.GetLocalVariable('com_faction_name').GetFlagName|v] [concept_com_situation_faction]의 모든 구성원을 주어진 순서에 따라 정렬합니다." # 8859065934368039890
+  effect_add_com_situation_faction_country: "[TopScope.GetLocalVariable('com_country').GetCountry.GetName|v]이(가) [TopScope.GetLocalVariable('com_faction_name').GetFlagName|v] [concept_com_situation_faction]에 합류합니다." # 18117860924334765460
+  effect_remove_com_situation_faction_country: "[TopScope.GetLocalVariable('com_country').GetCountry.GetName|v]이(가) [TopScope.GetLocalVariable('com_faction_name').GetFlagName|v] [concept_com_situation_faction]에서 탈퇴합니다." # 6846256661429200773
+  effect_remove_com_situation_faction_country_all: "[TopScope.GetLocalVariable('com_country').GetCountry.GetName|v]은(는) 더 이상 어떠한 [concept_com_situation_faction]과도 연관되지 않습니다." # 12746790776325975579
+  trigger_is_com_situation_faction_member: "[COUNTRY.GetName|v]은(는) [TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [concept_com_situation_faction] 구성원입니다" # 2591452562449131606
+  trigger_is_com_situation_faction_member_not: "[COUNTRY.GetName|v]은(는) [TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [concept_com_situation_faction] 구성원이 아닙니다" # 3213526537335868565
+  trigger_is_party_in_com_situation: "[COUNTRY.GetName|v]은(는) $com_situation$의 당사자입니다" # 11021028286207324313
+  trigger_is_party_in_com_situation_not: "[COUNTRY.GetName|v]은(는) $com_situation$의 당사자가 아닙니다" # 8434824764903863658
+  trigger_is_com_situation_side_leader: "[COUNTRY.GetName|v]은(는) [TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [concept_com_situation_leader]입니다" # 13561210876576279736
+  trigger_is_com_situation_side_leader_not: "[COUNTRY.GetName|v]은(는) [concept_com_situation_leader]가 아닙니다" # 8237293916206398308
+  has_com_situation_faction: "[CHARACTER.MakeScope.Var('com_name').GetFlagName]은(는) $com_situation$ 내 [TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [concept_com_situation_faction]입니다" # 16903267775232316859
+  has_com_situation_faction_not: "[CHARACTER.MakeScope.Var('com_name').GetFlagName]은(는) $com_situation$ 내 [TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [concept_com_situation_faction]이 아닙니다" # 5069638409709214289
+  trigger_has_any_com_situation_factions: "$com_situation$에 최소 하나의 [concept_com_situation_faction]이 존재합니다" # 805597034064994044
+  trigger_has_any_com_situation_factions_not: "$com_situation$에 [Concept('concept_com_situation_faction', '$concept_com_situation_factions$')]이 존재하지 않습니다" # 3845223824560283534
+  trigger_num_com_situation_faction_members: "[TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [CHARACTER.MakeScope.Var('com_name').GetFlagName]은(는) $COMPARATOR$ $NUM$명의 [concept_com_situation_faction] 구성원을 보유하고 있습니다" # 11538565114612652945
+  trigger_num_com_situation_faction_members_not: "[TARGET_CHARACTER.MakeScope.Var('com_name').GetFlagName]의 [CHARACTER.MakeScope.Var('com_name').GetFlagName]은(는) $COMPARATOR$ $NUM$명의 [concept_com_situation_faction] 구성원을 보유하고 있지 않습니다" # 546473911545635039
+  trigger_exists_com_situation: "지정된 $com_situation$이 존재합니다" # 10856323331362983123
+  trigger_exists_com_situation_not: "지정된 $com_situation$이 존재하지 않습니다" # 11809171948088700766
+  trigger_exists_com_situation_side: "지정된 [concept_com_faction]이 존재합니다" # 14560117110801289477
+  trigger_exists_com_situation_side_not: "지정된 [concept_com_faction]이 존재하지 않습니다" # 17333392197622244216
+  trigger_any_com_situation_countries: "$com_situation$ 내 모든 [concept_country]:" # 8362150090780079749
+  trigger_any_com_situation_countries_all: "$com_situation$ 내 모든 [concept_country]:" # 3152629334275212240
+  trigger_any_com_situation_countries_PERCENT: "$com_situation$ 내 $FILTER$ [concept_country]의 $PARAMETERS$" # 18348690841736636787
+  trigger_any_com_situation_countries_PERCENT_FIRST: "$com_situation$ 내 모든 $FILTER$ [concept_country]의 $PARAMETERS$" # 468053093893636595
+  trigger_any_com_situation_countries_COUNT: "$PARAMETERS$ $FILTER$ [concept_country]이(가) $com_situation$에 있습니다" # 13096950839945295718
+  trigger_any_com_situation_countries_COUNT_FIRST: "$PARAMETERS$ $FILTER$ [concept_country]이(가) $com_situation$에 있습니다" # 13096950839945295718
+  trigger_any_com_situation_countries_COUNT_THIRD: "$PARAMETERS$ $FILTER$ [concept_country]이(가) $com_situation$에 있습니다" # 13096950839945295718

@@ -26,11 +26,6 @@
   concept_com_international_organization_headquarters_med_short: "조직 본부" # 17246934757204853750
   concept_com_international_organization_headquarters_short: "본부" # 2827579360084067313
   concept_com_international_organization_headquarters_shorter: "본부" # 7052264535354238475
-  concept_com_international_situation: "국제 정세" # 7180008575181507444
-  concept_com_international_situation_desc: "다수의 [Concept('concept_country','$concept_countries$')]가 직면하거나 해결해야 하는 사건" # 13231784417240338882
-  concept_com_international_situations: "국제 정세" # 16987186411209854052
-  concept_com_international_situation_short: "정세" # 6406082565441628687
-  concept_com_international_situations_short: "정세" # 7371833616068319626
   je_group_com_hidden: "숨김" # 9181237066272549587
   je_group_com_contextless_hidden: "숨김" # 9181237066272549587
   je_group_com_supranational_organizations: "초국가적 조직" # 14181282253465736472
@@ -61,9 +56,6 @@
   com_organization_hq: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_med_short$')]" # 1531019746566760799
   com_org_headquarters: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_short$')]" # 10485882286690371738
   com_org_hq: "[Concept('concept_com_international_organization_headquarters','$concept_com_international_organization_headquarters_shorter$')]" # 17835620282043751683
-  com_international_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations$')]" # 13130265905697476481
-  com_situation: "[Concept('concept_com_international_situation','$concept_com_international_situation_short$')]" # 9665843462805158107
-  com_situations: "[Concept('concept_com_international_situation','$concept_com_international_situations_short$')]" # 17616044043517365654
   com_flag_loc: "[TopScope.GetLocalVariable('com_flag_loc').GetFlagName]" # 11833127570464998863
   com_international_organizations_sgui: "com_international_organizations_sgui" # 7403385309558806464
   com_international_organizations_sgui_desc: "기구들" # 3060488314202589380
