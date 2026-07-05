@@ -21,9 +21,9 @@
   trait_giga_gas_giant_hab_robot_tooltip: "$trait_giga_gas_giant_hab_tooltip$" # 4357530591498526918
   giga_gas_giant_hab_colony_tt: "가스 행성 이륙 종족에게 ['concept_giga_gas_worlds', §YGas§!] 세계로 간주됩니다." # 17472794425495255052
   giga_gas_giant_hab_colony: "침수된 대기" # 7697690454623066663
-  giga_gas_giant_hab_colony_desc: "" # 17241709254077376921
+  giga_gas_giant_hab_colony_desc: "이곳의 짙은 대기 성분은 가스 거대 행성에서 발견되는 것과 크게 다르지 않습니다." # 4058183848256998262
   decision_giga_flood_atmosphere: "행성 대기 침수" # 16292071242265643853
-  decision_giga_flood_atmosphere_desc: "" # 17241709254077376921
+  decision_giga_flood_atmosphere_desc: "우리는 우리의 생물학적 특성에 맞게 대기 성분을 수정할 것입니다." # 13460179943320805926
   giga_gas_giant_hab: "거주 가능한 가스 행성" # 2820589743253118771
   giga_gas_giant_hab_desc: "풍부한 이종 기체는 쉬운 채취를 의미하지만, 행성 핵 채굴 작업에는 더 가혹한 노동 환경을 야기합니다." # 10095180970651682292
   job_giga_gas_extraction_manager: "이종 가스 추출 관리자" # 18421802343130042526

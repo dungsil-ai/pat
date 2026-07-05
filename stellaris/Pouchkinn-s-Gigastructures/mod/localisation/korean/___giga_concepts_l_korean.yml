@@ -2,7 +2,7 @@
   concept_giga_rural_district_booster_modules: "자원 지구 모듈" # 2207602565421163178
   concept_giga_rural_district_booster_modules_desc: "- ['starbase_module:orbital_ring_giga_generator_district', '궤도 고리 기가 발전 지구']\n- ['starbase_module:orbital_ring_giga_mining_district', '궤도 고리 기가 채광 지구']\n- ['starbase_module:orbital_ring_giga_farming_district', '궤도 고리 기가 농업 지구']" # 3007005438634578911
   concept_giga_galwon_tier_megas: "은하 불가사의 단계 거대 구조물" # 16383571311051701383
-  concept_giga_galwon_tier_megas_desc: "\n$dyson_sphere_5$ \n$matter_decompressor_4$ \n정신 등대\n사이-사이펀\n행성 컴퓨터\n융합 억제기\n스타리프터\n중성자별 기가 제련소\n타이타닉 링월드\n펜로즈\n성간 링\n$ehof_ehofp4$" # 17357369620218554373
+  concept_giga_galwon_tier_megas_desc: "\n$dyson_sphere_5$ \n$matter_decompressor_4$ \n$name_psychic_beacon$ \n$name_psy_siphon$ \n$name_planetary_computer$ \n$name_fusion_suppressor$ \n$name_starlifter$ \n$name_neut_gigaforge$ \n$name_ringworld_titanic$ \n$name_penrose$ \n$ehof_ehofp4$" # 1997144202719402246
   giga_civic_tooltip_not_environmental_architects: "['concept_giga_environmental_architects_civics'] 정부 체제 특성을 보유하고 있지 않음" # 3691686083787327941
   concept_giga_environmental_architects_civics: "행성 조형기" # 17278113445089514275
   concept_giga_environmental_architects_civics_desc: "$concept_giga_environmental_architects_civics$ 시빅은 다음으로 구성됩니다:\n- ['civic:civic_environmental_architects']$NEW_LINE$- ['civic:civic_environmental_architects_megacorp']$NEW_LINE$- ['civic:civic_environmental_architects_hive']$NEW_LINE$- ['civic:civic_environmental_architects_machine']" # 11972705305266319435
