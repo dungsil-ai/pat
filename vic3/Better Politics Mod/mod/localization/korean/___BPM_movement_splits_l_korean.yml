@@ -88,10 +88,10 @@
   bpm_feminist_movement_faction_default_name: "여성주의 파벌" # 6664833331702068667
   bpm_cultural_majority_movement_faction_default_name: "민족주의 파벌" # 12059894026400098207
   bpm_cultural_majority_movement_faction_default_significant: "$bpm_movement_is_significant_tooltip$" # 4055622154971750414
-  bpm_religious_majority_movement_faction_default_name: "[InterestGroup.GetCountry.GetStateReligion.GetName] 종교 파벌" # 15870904338003546351
+  bpm_religious_majority_movement_faction_default_name: "[InterestGroup.GetCountry.GetStateReligion.GetNameNoFormatting] 전통주의자 파벌" # 9938019560400109313
   bpm_religious_majority_movement_faction_default_significant: "$bpm_movement_is_significant_tooltip$" # 4055622154971750414
   bpm_religious_majority_movement_faction_church_name: "종교적 근본주의자들" # 4387611277670474304
-  bpm_reactionary_movement_faction_default: "반동주의 파벌" # 2258049372458610899
+  bpm_reactionary_movement_faction_default_name: "반동주의자 파벌" # 2258049372458610899
   bpm_reactionary_movement_faction_default_significant: "$bpm_movement_is_significant_tooltip$" # 4055622154971750414
   bpm_royalist_absolutist_movement_faction_default_name: "[InterestGroup.GetCountry.GetRuler.GetPrimaryRoleTitle]의 충성파들" # 487870975039578985
   bpm_royalist_absolutist_movement_faction_landies_name: "충성스러운 봉신들" # 10309558281018321253
@@ -122,7 +122,16 @@
   bpm_communist_movement_faction_default_significant: "$bpm_movement_is_significant_tooltip$" # 4055622154971750414
   bpm_royalist_constitutional_movement_faction_default_name: "입헌 개혁파" # 7203293801392734310
   bpm_royalist_constitutional_movement_faction_default_significant: "$bpm_movement_is_significant_tooltip$" # 4055622154971750414
-  bpm_market_liberal_faction_name_default_name: "자유방임주의 파벌" # 16455421728401122572
+  bpm_market_liberal_faction_default_name: "자유방임주의 파벌" # 16455421728401122572
+  bpm_tokugawa_loyalist_movement_faction_default_name: "도쿠가와 충성파 파벌" # 1432376071255073287
+  bpm_meiji_restorationist_movement_faction_default_name: "왕정복고주의자 파벌" # 7410582682009274646
+  bpm_hindu_nationalist_movement_faction_default_name: "힌두 민족주의자 파벌" # 6733228297972823667
+  bpm_religious_minority_movement_faction_default_name: "[SCOPE.sReligion('relig').GetNameNoFormatting] 권리 파벌" # 5063773644681009131
+  bpm_cultural_minority_movement_faction_default_name: "[SCOPE.sCulture('cult').GetNameNoFormatting] 민족주의자 파벌" # 3984299614079856273
+  bpm_german_national_movemement_faction_default_name: "독일 민족주의자 파벌" # 11902309808624985916
+  bpm_italian_national_movemement_faction_default_name: "이탈리아 민족주의자 파벌" # 275145050656734481
+  bpm_yugoslav_national_movemement_faction_default_name: "유고슬라비아 민족주의자 파벌" # 12829723926601721911
+  bpm_yugoslav_dominican_movemement_faction_default_name: "도미니카 민족주의자 파벌" # 9313712112688788181
   bpm_pressure_above_threshold: "최소한 #variable 20%#! 압력." # 15528383876689146468
   bpm_support_activism_above: "적어도 #variable 30%#! @population!과 활동성 @activism!을 지지하시오." # 16571091407525244696
   movement_kaikoku_name: "개국파" # 11273802850571446303

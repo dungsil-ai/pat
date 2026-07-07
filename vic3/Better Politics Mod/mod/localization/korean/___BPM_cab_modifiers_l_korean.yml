@@ -23,6 +23,7 @@
   bpm_colonial_affairs_military_modifier: "군사적 식민 정책" # 734256102567758665
   bpm_colonial_affairs_pb_modifier: "소부르주아 식민 정책" # 13507466586918684619
   bpm_colonial_affairs_devout_modifier: "선교사 식민 정책" # 3196591651131992537
+  bpm_colonial_affairs_christdem_modifier: "기독교 민주주의 식민 정책" # 4571299807451930314
   bpm_colonial_affairs_neutraling_modifier: "온건 식민 정책" # 3746517109369303325
   bpm_colonial_affairs_attract_modifier: "식민지 확장" # 9372490296583052451
   bpm_social_security_rursocs_modifier: "농촌 사회주의 복지" # 3177674342888530046
@@ -49,6 +50,7 @@
   bpm_police_aris_modifier: "귀족적 치안 유지" # 14748255085477603835
   bpm_police_intel_modifier: "지식인적 치안 유지" # 5051635049499524381
   bpm_police_ruries_modifier: "농촌적 치안 유지" # 193080265203543650
+  bpm_police_christdem_modifier: "기독교 민주주의 치안 유지" # 15082994054508028191
   bpm_police_unions_modifier: "노조적 치안 유지" # 12702954644574505341
   bpm_workplace_safety_agpops_modifier: "농본주의적 안전 기준" # 4735735616484104801
   bpm_workplace_safety_neutralidg_modifier: "중립적 안전 기준" # 12244337855452915170
@@ -56,6 +58,7 @@
   bpm_workplace_safety_commies_modifier: "공산주의적 안전 기준" # 8564767192059771097
   bpm_workplace_safety_ruries_modifier: "농촌적 안전 기준" # 17454737105254096658
   bpm_workplace_safety_unions_modifier: "노조적 안전 기준" # 16155094838869849325
+  bpm_workplace_safety_christdem_modifier: "기독교 민주주의 안전 기준" # 5908846591590670441
   bpm_workplace_safety_neutraling_modifier: "온건적 안전 기준" # 6125919490496958616
   bpm_home_affairs_agpops_modifier: "농본주의적 내무 정책" # 4091927828128404640
   bpm_home_affairs_leftists_modifier: "좌파적 내무 정책" # 6383774940514411285
@@ -91,6 +94,7 @@
   bpm_health_system_devout_modifier: "종교적 의료" # 12059541497853438786
   bpm_health_system_capis_modifier: "자본주의 의료" # 10538796458570544573
   bpm_health_system_ruries_modifier: "농촌 의료" # 8769114647603695593
+  bpm_health_system_christdem_modifier: "기독교 민주주의 의료" # 17136108691837555438
   bpm_health_system_unions_modifier: "조합주의 의료" # 13568960066614749909
   bpm_suffrage_agpops_modifier: "농본주의 참정권" # 6191296376943294922
   bpm_suffrage_anarchists_modifier: "아나키스트 참정권" # 16773358100812375858
@@ -153,6 +157,7 @@
   bpm_economy_tu_modifier: "노동조합 경제" # 18324453137833753356
   bpm_economy_landies_modifier: "지주 경제" # 17726355868198420515
   bpm_economy_capis_modifier: "자본주의 경제" # 6908396671561387123
+  bpm_economy_christdem_modifier: "기독교 민주주의 경제 개혁" # 11429049689220420515
   bpm_economy_attraction_modifier: "경제적 진출" # 13773261760147042282
   bpm_economy_cr_agpops_modifier: "농업 경제 개혁" # 6600561266954514715
   bpm_economy_cr_cons_modifier: "보수 경제 개혁" # 9406974365388705000

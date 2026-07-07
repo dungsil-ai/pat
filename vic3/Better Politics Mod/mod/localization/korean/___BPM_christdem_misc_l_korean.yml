@@ -616,4 +616,4 @@
   from_powerful_christian_democrats: "강력한 기독교 민주당" # 18433585111100265749
   from_devout_atheism: "무신론 국가에서의 독실함" # 9979868751980787538
   bpm_from_an_undemocratic_state: "빈약한 자유주의 국가" # 10006286164499179493
-  christdems_have_centralized_economy_tooltip: "[GetInterestGroupVariant('ig_christian_democrats',GetPlayer).GetNameWithCountryVariant] #bold 은#! [GetIdeology('ideology_eco_centralized_economy').GetName]를 지지하며 현재 [concept_in_government] 상태입니다." # 17068764936998504870
+  christdems_have_centralized_economy_tooltip: "[GetInterestGroupVariant('ig_christian_democrats',GetPlayer).GetNameWithCountryVariant]은(는) [GetIdeology('ideology_eco_centralized_economy').GetName]을(를) 가지고 있으며 [concept_in_government] 상태입니다" # 6672354705383236985

@@ -495,6 +495,7 @@
   bpm_je_modernizers_copy_society_button_desc: "더 선진적인 사회에 발맞추기 위해 우리의 관습을 바꾸는 것은 전통적인 계층의 경멸을 살 수도 있으나, 모든 방면에서 우리가 더 빠르게 진보하는 데 큰 도움이 될 것임은 부정할 수 없습니다." # 5714011685961175710
   bpm_je_modernizers_invite_production_button: "투자 유치" # 2957596502633651155
   bpm_je_modernizers_invite_production_button_desc: "최근 산업 발전에 관한 우리의 조사는 우리에게 지식을 가져다주었으나, 그 지식을 활용하는 데 필요한 자원까지 마련해주지는 못했습니다. 외국인 투자를 유치하는 것은 이러한 산업들을 본격적으로 가동하는 데 큰 도움이 될 것입니다." # 16008928700756759924
+  bpm_je_modernizers_invite_production_button_tt: "[GetBuildingType('building_railway').GetName], [GetBuildingType('building_motor_industry').GetName], [GetBuildingType('building_steel_mill').GetName] 및 [GetBuildingType('building_tooling_workshop').GetName] 1단계가 [GetArticleType('foreign_investment_rights').GetName]을(를) 보유한 [concept_great_power]에 의해 [SCOPE.sState('selected_state').GetName]에 건설될 것입니다!" # 11289634379163662106
   bpm_je_modernizers_button_on_cooldown_tt: "이 조치는 #variable 1년#!의 재사용 대기시간 상태가 아닙니다!" # 5311644446504629976
   bpm_je_modernizers_button_stronger_with_dialectic_tt: "@information! #blue #bold 사회적 영향력#!이 이 행동의 효과를 개선합니다.#!" # 11729804711328240400
   bpm_je_modernizers_button_stronger_with_conservative_dialectic_tt: "@information! #blue #bold 사회적 영향력#!은 이 행동의 효과를 강화하며, $bpm_je_all_antimodernizers$가 우세할 때 가장 강력한 개선 효과를 제공합니다.#!" # 7952827515672810527
