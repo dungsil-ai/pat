@@ -618,6 +618,7 @@ translate-cache.db-wal      # Write-Ahead Log
 - 처리된 항목까지는 저장됨 (중간 저장)
 - `{game}-untranslated-items.json` 파일에 거부 항목 기록
 - GitHub Actions에서 자동으로 Issues 생성
+- 다음 번역 실행에서 해당 모드의 미번역 항목이 모두 해소되면 반영 커밋 코멘트를 남기고 기존 이슈를 자동 종료
 
 **확인:**
 ```bash
@@ -634,6 +635,7 @@ cat stellaris-untranslated-items.json
 1. GitHub Issues에서 거부된 항목 확인
 2. `scripts/utils/dictionary.ts`에 수동 번역 추가
 3. `pnpm {game}:retranslate` 실행
+4. 후속 번역 워크플로우가 완료되면 해결된 `translation-refused` 이슈가 자동으로 닫혔는지 확인
 
 #### 해시 업데이트
 

@@ -704,11 +704,13 @@ cat stellaris-untranslated-items.json
 - GitHub Actions 워크플로우가 자동으로 Issues 생성
 - `translation-refused` 레이블로 쉽게 찾을 수 있음
 - 모드별로 그룹화되어 있음
+- 다음 번역 실행에서 해당 모드의 미번역 항목이 없어지면 해결 코멘트와 함께 자동으로 닫힘
 
 **수동 해결:**
 1. GitHub Issues에서 번역 거부 항목 확인
 2. `scripts/utils/dictionary.ts`에 수동 번역 추가
 3. 해당 파일의 해시 초기화 또는 `pnpm {game}:retranslate` 실행
+4. 후속 번역 실행 뒤 이슈가 자동 종료되었는지 확인
 
 **예제:**
 ```typescript
