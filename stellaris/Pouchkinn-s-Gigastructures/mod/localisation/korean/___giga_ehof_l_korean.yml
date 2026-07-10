@@ -900,7 +900,7 @@
   no_ehof_sa_btn: "[no_ehof_sa_btn_scripted_loc]" # 8846389746887791680
   no_ehof_sa_settled_btn: "§R< < $ehof_ehof_abr$ 없음 > >§!" # 14396216874098484770
   no_ehof_sa_nomad_btn: "§R< < $tech_ehof_spinal$ 없음 > >§!" # 8854682229637222444
-  no_ehof_sa_tooltip: "[no_ehof_sa_tooltip_scripted_loc]" # 16888817273113897534
+  no_ehof_sa_tooltip: "[no_ehof_sa_tooltip_scripted_loc]" # 8503645072884115063
   no_ehof_sa_settled_tooltip: "$TRIGGER_FAIL$§R$ehof_ehof$ 감지되지 않음§!" # 14047048910650293111
   no_ehof_sa_nomad_tooltip: "$TRIGGER_FAIL$§R$tech_ehof_spinal$ 감지되지 않음§!" # 9297418747597247602
   ehof_disabled_btn: "[ehof_disabled_btn_scripted_loc]" # 13408777945279251550

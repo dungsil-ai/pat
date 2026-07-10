@@ -13,12 +13,10 @@
   fusion_suppressor_4_DESC: "별이 다시 한번 압축되었고, 그 구성 요소들이 높은 과학적 잠재력을 가진 이상한 행동을 보이기 시작했습니다. 더욱 이색적인 핵융합 반응이 일어나기 시작했고, 별 자체의 구조는 퇴화하는 것처럼 보입니다." # 13415197501316898860
   fusion_suppressor_5: "$name_fusion_suppressor$ - 중성자별 단계" # 11290359044211077042
   fusion_suppressor_5_DESC: "$name_fusion_suppressor$는 항성을 너무 강하게 압축하는 데 성공하여, 항성 핵 내부에서 양성자와 전자가 융합해 중성자가 되었으며, 그 핵을 중성자별로 변환했습니다.\n이는 사실상 일반적인 항성 플라즈마에 둘러싸인 중성자별과 같습니다." # 266306725570887277
-  fusion_suppressor_6: "항성 블랙홀 붕괴" # 2275753044966251718
-  fusion_suppressor_6_DESC: "별의 물질이 이제는 심지어 빛조차 물체의 중력에서 벗어날 수 없을 정도로 붕괴되어, 효과적으로 인공 블랙홀로 변모시켰으며, 엄청난 연구 잠재력을 보유하고 있습니다." # 15305873083563828744
-  fusion_suppressor_6b: "항성 폭파" # 2581114053257334227
-  fusion_suppressor_6b_DESC: "$name_fusion_suppressor$에게 중력장을 해제하고 척력을 행사하여, 압축된 항성을 파괴적인 초신성으로 폭발시켜 $name_fusion_suppressor$를 파괴하라고 명령하십시오. 크기가 5보다 작은 모든 행성들과 소행성들은 파괴될 것이며, 가스 행성은 대기를 잃게 될 것입니다. 생존한 행성들은 아이오디지움 광물 매장지를 얻게 될 것입니다. 이는 인공 초신성이 상대론적 속도로 행성에 충돌하며 생성한 결정체입니다. 이 결정체들은 우리 행성에 강력한 건물들을 건설하는 데 사용될 수 있습니다." # 9633063185679994190
-  fusion_suppressor_7: "$name_fusion_suppressor$ 해체" # 14491936506986521376
-  fusion_suppressor_7_DESC: "이 $name_fusion_suppressor$를 제거하여 해당 블랙홀을 다른 프로젝트에 사용할 수 있도록 만듭니다." # 8534522779456909252
+  fusion_suppressor_6a: "항성 폭파" # 2581114053257334227
+  fusion_suppressor_6a_DESC: "@name_fusion_suppressor@에게 중력장을 방출하고 척력을 가하도록 명령하여, 압축된 항성을 파괴적인 초신성으로 폭발시켜 @name_fusion_suppressor@를 파괴합니다. ['concept_planet_size'] 5 미만의 모든 행성과 §H소행성§!은 파괴되며, §H가스 거인§!은 대기를 잃게 됩니다. 살아남은 행성에는 인공 초신성이 상대론적 속도로 행성에 충돌하며 생성된 결정체인 ['concept_giga_sr_iodizium'] 매장지가 생깁니다. 이 결정체는 우리 행성에 강력한 ['concept_giga_sr_iodizium_buildings']를 건설하는 데 사용할 수 있습니다." # 12959164296440838498
+  fusion_suppressor_6b: "항성을 블랙홀로 붕괴" # 2275753044966251718
+  fusion_suppressor_6b_DESC: "항성의 물질이 이제 빛조차도 천체의 중력을 탈출할 수 없을 정도로 붕괴되어, 사실상 인공 블랙홀로 변모했으며 엄청난 연구 잠재력을 지니게 되었습니다." # 15305873083563828744
   penrose_sphere_0: "$gc_mega$$name_penrose$ 건설 현장" # 3405108015932348789
   penrose_sphere_0_DESC: "이 플랫폼은 블랙홀 주변에 $name_penrose$를 건설하는 데 필요한 인력과 인프라를 갖추고 있습니다." # 17946929916718898029
   penrose_sphere_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ £megaupgrade£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$ - $giga_list_category_weaponry$\n£energy£ §Y에너지§!를 생성하거나 §Y폭탄§!이 될 수 있습니다. §Y펜로즈 링월드§!로 업그레이드될 수 있습니다.\n§L블랙홀 주위를 둘러싼 거울 구체는 초방사 산란을 활용하여 이익 또는 파괴를 위한 에너지를 생성합니다.§!" # 16610503932323293834

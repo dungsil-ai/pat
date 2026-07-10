@@ -1,0 +1,24 @@
+﻿l_korean:
+  giga_tech_arkship_neutronium_harvester: "$giga_tech_neutronium_gigaforge$" # 15675661280339453702
+  giga_tech_arkship_neutronium_harvester_desc: "$arkship_cap_plural$에게 $pc_neutron_star_plural$와 같은 항성 잔해를 채굴할 수단을 제공함으로써, 우리는 앞으로 수억 년 동안 귀중한 합금의 안정적인 공급원을 보장할 수 있습니다." # 1964763213089507739
+  sm_giga_arkship_neutronium_harvester: "질량 중성자 포획기" # 17606977429733315084
+  sm_giga_arkship_neutronium_harvester_tt: "$ARKSHIP_ACTION_HEADER$ $TABBED_NEW_LINE$['scripted_action:giga_arkship_harvest_neutronium']" # 13192023369647442979
+  has_giga_arkship_neutronium_harvester_tt: "$sm_giga_arkship_neutronium_harvester$§! 보유" # 4789747654895095244
+  has_giga_arkship_neutronium_deposit_modifier_tt: "이 $arkship_cap$은(는) 여전히 과잉 중성자 물질을 §R처리 중§!입니다." # 3363914653441018501
+  GIGA_ARKSHIP_NEUTRONIUM_HARVESTER: "$sm_giga_arkship_neutronium_harvester$" # 9496163617768687339
+  giga_arkship_harvest_neutronium: "$giga_tech_neutronium_gigaforge$" # 15675661280339453702
+  giga_arkship_harvest_neutronium_desc: "§L중력 보어와 자기장 투사기를 광범위하고 매우 정밀하게 사용하여, 이 항성 잔해의 외층 일부를 즉시 초고밀도 중성자 합금으로 가공하기 위해 채굴합니다.§!" # 11208749207965536069
+  giga_arkship_harvest_neutronium_effect: "$giga_arkship_harvest_neutronium_planet_effect$ $DOUBLE_NEW_LINE$ $giga_arkship_harvest_neutronium_arkship_effect$" # 1603919148595281390
+  giga_arkship_harvest_neutronium_planet_effect: "$TABBED_NEW_LINE$ $PLANET_EFFECTS_HEADER$ $TABBED_NEW_LINE$- §Y$giga_arkship_neutronium_harvested$§! 수정자가 £time£ §H$@arkship_strip_mine_duration_doubled|0$개월§! 동안 추가됨: $TABBED_NEW_LINE$$t$ $mod_station_gatherers_produces_mult$: $@arkship_harvest_resources_station_penalty|0%+$ $TABBED_NEW_LINE$$t$ $giga_harvested_neutronium_tt$" # 1566901381818462212
+  giga_arkship_harvest_neutronium_arkship_effect: " $ARKSHIP_EFFECTS_HEADER$ $TABBED_NEW_LINE$- §Y$giga_arkship_neutronium_deposit$§!가 §Y15§!년 동안 추가됨: $TABBED_NEW_LINE$$t$ $mod_planet_metallurgists_alloys_produces_add$: §G+1.5§! $TABBED_NEW_LINE$$t$ $mod_planet_metallurgists_energy_upkeep_add$: §R+2§!" # 11366228606727678814
+  giga_arkship_harvest_neutronium_ship_button: "$giga_arkship_harvest_neutronium_effect$" # 4436706375235943914
+  giga_arkship_harvest_neutronium_activity_key: "중력 보어 준비 중" # 2379959694241737919
+  giga_arkship_harvest_neutronium_progress_activity_key: "중성자 물질 채굴 중 (§Y$PROGRESS$%§!)" # 13303117719203446836
+  giga_arkship_harvest_neutronium_required_progress_key: "£time£ $@arkship_reprocess_planet_required_progress|0$ §W일§!" # 15449432806828943416
+  giga_arkship_neutronium_deposit: "채굴된 중성자 물질 매장지" # 10536861820927318253
+  giga_arkship_neutronium_deposit_desc: "죽어가는 별의 표면에서 직접 끌어올려 우리의 최고 [Owner.GetAlloyProducerPlural]가 가공할 중성자 물질의 거대한 매장지입니다.\n\n§E가공 완료까지 남은 개월 수:§! §Y[planet.GetMonthsUntilNeutroniumDepositHarvested]§!" # 16141270069911370208
+  giga_arkship_neutronium_harvested: "채굴 가능한 중성자 물질 매장지 고갈" # 15402196427564578188
+  giga_arkship_neutronium_harvested_desc: "쉽게 도달할 수 있는 모든 중성자 물질원을 수집했습니다. 새로운 매장지를 발견하고 채굴 기반 시설을 구축하는 데 시간이 걸릴 것입니다." # 442309513182601752
+  giga_harvested_neutronium_tt: "§R모든 $giga_arkship_harvest_neutronium$ 행동을 차단함§!" # 5614079452176197620
+  GIGA_NOMAD_NEUTRONIUM_HARVEST_READY_TITLE: "$sm_giga_arkship_neutronium_harvester$ 사용 준비 완료" # 14271914904238137054
+  GIGA_NOMAD_NEUTRONIUM_HARVEST_READY_DESC: "$giga_arkship_harvest_neutronium$의 재사용 대기시간이 종료되어 사용할 준비가 되었습니다." # 2862116790711682875
