@@ -165,7 +165,7 @@
   siberia.0002.desc: "xxxxx" # 1951045980481827005
   siberia.0002.a: "xxxxx" # 1951045980481827005
   siberia.0003.t: "시베리아 전통에 대한 교훈" # 12607181400087118731
-  siberia.0003.desc: "[scope_RICE_siberian_teacher.GetTitledFirstName]께서 [scope_RICE_siberian_teacher.GetHerHis] [scope_RICE_siberian_teacher.GetCulture.GetName] 조상들이 사용했던 전통적인 방식에 대해 저를 꽤 오랫동안 가르쳐 주셨습니다." # 6790856268063575580
+  siberia.0003.desc: "[scope_RICE_siberian_teacher.GetTitledFirstName]께서 [scope_RICE_siberian_teacher.GetHerHis] [scope_RICE_siberian_teacher.GetCulture.GetName] 조상들이 사용했던 전통적인 방식에 대해 가르쳐 주시는 데 상당한 시간을 할애하고 계십니다." # 10357457127475576102
   siberia.0003.desc.hunting: "시베리아의 혹한 속 야생에서 동물을 추적하고, 포획하고, 사냥합니다. 이러한 방식은 주로 사냥 과정에 관여하지만, 적군을 황야에서 추적하거나 필요하다면 홀로 야생에서 생존하는 능력과 같이 다른 용도로도 사용될 수 있습니다." # 7699885011152863412
   siberia.0003.desc.gathering: "시베리아의 혹독한 추위 속에서 식량과 생필품을 모으고 채집해야 합니다. 어떤 베리나 버섯이 먹을 수 있고 독성이 없는지 아는 것, 물과 피난처의 근원을 식별할 수 있는 능력은 생명을 구할 수 있는 중요한 기술입니다." # 14302307574434156209
   siberia.0003.desc.music: "영적인 세계와 교감하여 음악과 노래를 통해 우주와 세상에 대한 더 깊은 이해를 얻으십시오. 시베리아 북부의 전설과 설화는 이 광활한 지역의 땅의 본질과 사회에 대해 많은 것을 가르쳐 줄 수 있습니다." # 3408127677261766329

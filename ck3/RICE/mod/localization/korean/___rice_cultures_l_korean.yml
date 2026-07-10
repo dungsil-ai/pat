@@ -303,6 +303,12 @@
   tradition_RICE_toloka_desc: "#F 이 문화는 마을 사람들이 집을 짓거나 작물을 수확하는 것과 같은 중요한 노력에 서로 돕는 상호적이고 공동체적인 노동의 전통을 가지고 있습니다. 노동이 끝나면 도움을 받은 주요 수혜자는 잔치를 베풀어 모두에게 감사를 표합니다.#!" # 13658582161193455804
   tradition_SEA_ade_name: "아데" # 7786247386346733370
   tradition_SEA_ade_desc: "이 문화에는 [Glossary( 'Ade', 'ADE_GLOSS' )]라고 불리는 불문법 모음집이 있어 삶의 모든 측면을 규정합니다. 이를 잘 따르는 자는 큰 존경을 받으며 칭송받고 사랑받지만, 반복적으로 위반하는 자는 마치 존재하지 않는 것처럼 모두에게 배척당하게 됩니다." # 4649099664047504268
+  tradition_RICE_enthusiastic_debaters_name: "열정적인 토론자" # 8588776565012581655
+  tradition_RICE_enthusiastic_debaters_desc: "이 문화의 사람들은 사물의 진실에 대해 토론하는 것을 즐깁니다. 사소한 잡학에 관해서조차 그들은 자신의 주장을 뒷받침할 증거를 찾기 위해 애씁니다." # 12925121698918459424
+  tradition_RICE_marine_armor_name: "해양 갑옷" # 8729529946565073018
+  tradition_RICE_marine_armor_desc: "해안 거주자들이 가벼운 갑옷을 선호할 것이라는 일부의 추측과 달리, 이 문화는 해양 환경에서의 전투에 적합하면서도 적절한 보호 기능을 제공하는 다재다능한 갑옷을 제작하는 기술을 습득했습니다." # 12095201470509989788
+  tradition_RICE_bronze_drum_conoisseurs_name: "청동 북 감정가" # 5005114710072854683
+  tradition_RICE_bronze_drum_conoisseurs_desc: "청동 북은 동남아시아 전역에서 살아있는 전통의 형태나 땅속에서 발견된 고대 유물로 발견됩니다. 이 문화는 이 북들에 큰 의례적 중요성을 부여하며, 이를 정치적 및 영적 권력의 주요 원천으로 여깁니다." # 6707823313435346363
   culture_parameter_unlock_maa_guanche_warrior: "[men_at_arms|E]로 [GetMaA('guanche_warrior').GetName]을 징집할 수 있습니다." # 5577205177325801307
   tradition_guanche_warrior_name: "치치키퀴초" # 15979354436935695300
   tradition_guanche_warrior_desc: "#F 치치키퀴초는 과란체족의 전사 계급을 형성했습니다. 투척과 협곡 매복에 능하며 경장갑이지만 숙련된 교전병입니다. 치치키퀴초는 자신들의 섬의 구릉 및 산악 지형을 목숨 걸고 방어할 것입니다.#!" # 11008193849402200922

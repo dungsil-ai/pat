@@ -689,7 +689,7 @@
   RICE_north_atlantic_form_iceland: "아이슬란드의 첫 알팅을 소집하라" # 10169311343348639823
   RICE_north_atlantic_form_iceland_desc: "#italic 란트남#!, 즉 아이슬란드 정착은 수년간 계속되어 왔습니다. 이제 많은 아이슬란드인들은 우리 모두에게 영향을 미치는 정치적, 개인적 문제를 해결할 수 있는 일종의 의회를 만들고자 합니다. 그렇게 함으로써 우리는 새로운 사회를 건설하고 #italic 란트남#! 시대를 마무리할 수 있을 것입니다." # 10072427353550394753
   RICE_north_atlantic_form_iceland_tooltip: "새로운 아이슬란드를 건국하여 란드남을 마무리하십시오." # 11537673642797814784
-  RICE_north_atlantic_form_iceland_effect_tooltip_1: "[norse.GetHeritage.GetName]의 모든 [counties|E]와 [characters|E]는 [GetGeographicalRegion('custom_iceland').GetName] 내에서 [icelandic.GetName]으로 변경됩니다." # 7635430132117471456
+  RICE_north_atlantic_form_iceland_effect_tooltip_1: "[GetGeographicalRegion('custom_iceland').GetName] 내 모든 [norse.GetHeritage.GetName] 및 [irish.GetHeritage.GetName] [counties|E]와 [characters|E]가 [icelandic.GetName] 문화로 변경됩니다" # 11314394106355094020
   RICE_north_atlantic_form_iceland_effect_tooltip_2: "[GetGeographicalRegion('custom_iceland').GetName] 내 모든 [count|E] [rank|E]의 [rulers|E]는 귀하의 [vassal|E]가 됩니다." # 10324755122901435848
   RICE_north_atlantic_form_iceland_effect_tooltip_3: "[decision|E]를 수행하는 비용을 줄여줍니다. 이는 특히 [norse.GetHeritage.GetName] 또는 [irish.GetHeritage.GetName] [heritage|E] 혈통을 가진 [rulers|E]의 [cultures|E]에 대해 $RICE_north_atlantic_explore_greenland$ [greenland_great_expedition|E]를 떠나는 비용을 대폭 절감해 줍니다." # 1692234018453956514
   RICE_north_atlantic_form_iceland_confirm: "아이슬란드 코먼웰스가 탄생했습니다!" # 13766673926518995218

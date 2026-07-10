@@ -66,6 +66,12 @@
   holy_site_mount_gamalama_effect_name: "[holy_site|E] #weak ($holy_site_mount_gamalama_name$)#!에서" # 15379212904605374359
   holy_site_mount_kie_matubu_name: "키에 마투부 산" # 15053391967990288833
   holy_site_mount_kie_matubu_effect_name: "[holy_site|E] #weak ($holy_site_mount_kie_matubu_name$)#!에서" # 8027469097913585683
+  holy_site_thel_kopi_ghat_name: "텔 코피 가트" # 1773306825551972066
+  holy_site_thel_kopi_ghat_effect_name: "[holy_site|E] #weak ($holy_site_thel_kopi_ghat_name$)#!에서" # 14522416217825102030
+  holy_site_kachargadh_caves_name: "카차르가드 동굴" # 16389125027645455348
+  holy_site_kachargadh_caves_effect_name: "[holy_site|E] #weak ($holy_site_kachargadh_caves_name$)#!에서" # 16469640164616016288
+  holy_site_jangubai_cave_temple_name: "장구바이 동굴 사원" # 7578558465571410041
+  holy_site_jangubai_cave_temple_effect_name: "[holy_site|E] #weak ($holy_site_jangubai_cave_temple_name$)#!에서" # 14709805947259528950
   semitic_religion: "셈족의" # 5882046243640426878
   semitic_religion_adj: "셈족의" # 5882046243640426878
   semitic_religion_adherent: "셈족의" # 5882046243640426878
@@ -963,3 +969,31 @@
   rice_austroasiatic_no_tiger_name: "약해진 호랑이 정령" # 13328804763935657804
   rice_austroasiatic_no_tiger_desc: "호랑이가 영적인 힘을 가졌을지는 모르나, 호랑이 정령이 존재한다 하더라도 숭배하거나 두려워할 만한 주된 이계의 힘은 아닙니다. 우리는 정글과 그 혜택에 굴복하지 않습니다." # 9241964288218853905
   doctrine_parameter_rice_austroasiatic_tiger_mechanic_disabled: "$RICE_austroasiatic_tiger_god_decision$ [decision|E]는 비활성화되어 있습니다." # 15670259580623761409
+  rice_doctrine_kava_role_name: "카바의 역할" # 12686588133463656849
+  rice_doctrine_kava_role_desc: "카바 섭취는 많은 오세아니아 사회에서 중요한 역할을 합니다." # 6449225760557159777
+  rice_kava_role_social_doctrine_name: "카바: 사회적 역할" # 12368201938880910297
+  rice_kava_role_social_doctrine_desc: "때때로 다양한 정치적, 종교적 의식의 일부가 되기도 하지만, 카바 섭취가 이러한 의식의 필수적인 부분으로 여겨지지는 않으며, 그 가장 중요한 역할은 사회적 상호작용을 촉진하는 것입니다." # 15710700794705885747
+  rice_kava_role_ceremonial_doctrine_name: "카바: 의례적 역할" # 10547202889117564909
+  rice_kava_role_ceremonial_doctrine_desc: "카바 섭취는 지도자의 권위를 정당화하고 공동체의 종교적 화합과 번영을 장려하는 다양한 정치적, 종교적 의식의 핵심적인 부분입니다." # 5571447685832800124
+  rice_kava_role_medicinal_doctrine_name: "카바: 의학적 역할" # 9639599870062983416
+  rice_kava_role_medicinal_doctrine_desc: "때때로 다양한 정치적, 종교적 의식의 일부가 되거나 사회적 상호작용을 촉진하기 위해 사용되기도 하지만, 카바를 섭취하는 가장 중요한 이유는 그 효능으로 여겨지는 의학적, 영적 이점 때문입니다." # 7024305884980906330
+  doctrine_parameter_rice_kava_bonus_faith_political: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]은 [diplomacy_i|E] [diplomacy|E]와 [legitimacy_i|E] [legitimacy|E]에 보너스를 부여합니다." # 1440606830073822105
+  doctrine_parameter_rice_kava_bonus_faith_health: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]은 [learning_i|E] [learning|E]와 [health|E]에 보너스를 부여합니다." # 1914357259905074281
+  doctrine_parameter_rice_kava_increased_chances: "특히 더 높은 [prestige_i|E] [prestige_level|E]나 [piety_i|E] [piety_level|E]를 가질 경우 [GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]을 획득할 확률이 증가합니다." # 8267891369895858287
+  doctrine_parameter_rice_kava_cheaper: "#V 카바 마시기#! [decision|E]의 [gold_i|E] [gold|E] 비용이 감소합니다." # 15751430369468847819
+  doctrine_parameter_rice_kava_expensive: "#V 카바 마시기#! [decision|E]의 [gold_i|E] [gold|E] 비용이 증가합니다." # 3457326245433135852
+  rice_doctrine_west_papuan_ancestor_focus_name: "조상의 현신" # 18324363279585557123
+  rice_doctrine_west_papuan_ancestor_focus_desc: "우리 조상은 우리에게 어떤 의미인가? 그들은 우리의 일상생활에서 어떻게 우리를 돕는가?" # 9623319385517094667
+  rice_west_papuan_ancestor_focus_gosimo_name: "위치" # 11897362520916295444
+  rice_west_papuan_ancestor_focus_gosimo_desc: "조상은 우리의 땅과 바다를 수호합니다. 우리가 그들에게 적절한 경의를 표하는 한, 그들이 자주 머무는 이곳에서 그들은 메시지나 의식 보조, 혹은 다른 방식으로 우리에게 인도와 조언을 제공할 것입니다." # 9155599185221028328
+  rice_west_papuan_ancestor_focus_wor_name: "조각상" # 5182106325810543793
+  rice_west_papuan_ancestor_focus_wor_desc: "#italic 코르와르#!라 불리는 나무 조각상은 죽은 자의 영혼, 때로는 두개골까지 모십니다. 이는 조상을 숭배하고 소통하는 중요한 방식입니다." # 9646889467990406566
+  rice_west_papuan_ancestor_focus_wuon_name: "비전 지식" # 3981583883363287710
+  rice_west_papuan_ancestor_focus_wuon_desc: "조상의 영혼은 우리에게 비밀리에 합당한 자에게만 전수되어야 할 신성한 지혜와 지식인 #italic 우온#!을 가르쳐 주었습니다." # 8061451189004014768
+  rice_west_papuan_ancestor_focus_matutuo_name: "도마뱀" # 993051182145923354
+  rice_west_papuan_ancestor_focus_matutuo_desc: "우리의 토템 조상은 반은 도마뱀이고 반은 인간의 형상을 한 위대한 영혼인 #italic 마투투오#!입니다. 우리는 동굴, 특히 해안가에 있는 동굴에서 그들에게 제물을 바치며, 그들은 그 대가로 우리에게 풍요로운 물고기와 부를 가져다줍니다." # 10346494001485633950
+  doctrine_parameter_rice_unlocks_ancestor_activity: "[religion|E]이나 [culture|E]에 관계없이 [GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] [activity|E]를 잠금 해제합니다." # 13077905001054123259
+  doctrine_parameter_rice_ancestor_activity_bonus_legitimacy: "[GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] [activity|E]는 [legitimacy_i|E] [legitimacy|E] 및 [opinion_i|E] [vassal|E] [opinion|E] 보너스를 제공합니다." # 18327616163795439909
+  doctrine_parameter_rice_ancestor_activity_bonus_naval: "[GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] [activity|E]는 #V 10#!년 동안 [health|E] 및 군사 보너스([raiding|E] 등)가 포함된 [character_modifier|E]를 제공합니다." # 3677734288581297582
+  doctrine_parameter_rice_ancestor_activity_bonus_mystical: "[GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] [activity|E]는 #V 10#!년 동안 @scheme_icon! [schemes|E] 관련 보너스가 포함된 [character_modifier|E]를 제공합니다." # 1910589118439432884
+  doctrine_parameter_rice_ancestor_activity_bonus_prosperity: "[GetActivityType( 'activity_RICE_venerate_ancestors' ).GetName] [activity|E]는 의식이 열린 장소에 #V 10#!년 동안 [gold_i|E] [tax|E] 관련 보너스가 포함된 [county_modifier|E]를 제공합니다." # 3765758007787591974

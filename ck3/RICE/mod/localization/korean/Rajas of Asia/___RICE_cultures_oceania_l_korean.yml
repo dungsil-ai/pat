@@ -1,4 +1,28 @@
 ﻿l_korean:
+  culture_parameter_rice_rename_meeting_houses: "#V $RICE_oceania_meeting_houses_decision$#! [decision|E]은 [heritage|E]와 관계없이 이용할 수 있으며, #V $RICE_oceania_meeting_houses_decision_palauan$#! (으)로 이름이 변경됩니다." # 15824247686832645169
+  culture_parameter_rice_better_meeting_houses: "#V $RICE_oceania_meeting_houses_decision_palauan$#!을 위한 [decision|E]는 추가 [gold_i|E] [gold|E]를 지불할 필요 없이 더 나은 결과를 제공하며, 대신 남성 또는 여성 [Glossary( '랭크 클럽', 'CHELDEBECHEL_GLOSS' )]을 지원하기 위한 다양한 선택지를 제공합니다" # 5908740726553189308
+  culture_parameter_unlock_rice_biak_mechanics: "#V 비아크 모험가 접촉#! [decision|E]은(는) 더 나은 보너스를 제공하며 어디서나 수행할 수 있습니다" # 12708843656707677391
+  culture_parameter_rice_kava_bonus_culture: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]은(는) 추가 보너스를 제공합니다" # 13624586458538620154
+  culture_parameter_unlock_rice_kava_decision: "[heritage|E]나 [religion|E]에 관계없이 #V 카바 마시기#! [decision|E]를 해금합니다" # 14212540996267373797
+  culture_parameter_rice_kava_decision_bonuses: "The [decision|E] to #V Drink Kava#! gives better bonuses"
+  culture_parameter_unlock_rice_pacific_navigation: "Unlocks the $innovation_RICE_pacific_navigation$ [innovation|E]"
+  culture_parameter_unlock_rice_yap_stone_money_mechanic: "#V $RICE_oceania_quarry_stone_money$#! [decision|E]과 [GetTrait('RICE_stone_money').GetName( GetNullCharacter )] [trait|E]를 해제합니다." # 3325295332871238373
+  tradition_RICE_kava_culture_name: "카바 의식" # 16137731704049224623
+  tradition_RICE_kava_culture_desc: "#F 카바는 이 문화에서 중요한 역할을 하며 호의와 사교성의 표현으로 여겨집니다. 카바는 종교 의식 중이나, 다른 사람들과 어울리거나 정치적 문제를 토론할 때, 심지어 식사할 때도 자주 마십니다.#!" # 8862015508100377637
+  tradition_RICE_oceanic_voyagers_name: "파시픽 보이저" # 15548549981107338799
+  tradition_RICE_oceanic_voyagers_desc: "#F 이 문화는 낯선 신세계를 탐험하고, 새로운 생명과 섬을 찾아다니며, 인류의 마지막 개척지인 광활한 바다를 건너 아무도 가본 적 없는 곳으로 대담하게 나아갔던 역사를 가지고 있습니다.#!" # 8352435492890137791
+  tradition_RICE_palau_clubs_name: "랭크 클럽" # 18040271234953710935
+  tradition_RICE_palau_clubs_desc: "이 문화의 사람들은 성별, 연령, 사회적 지위에 따라 #italic 첼데베첼#!이라 불리는 공식 클럽에 소속되며, 이는 #italic 비탕 메 아 비탕#!의 원칙에 따른 것입니다. 이 클럽들은 중요한 업무와 활동을 관리하고, 회원들에게 유용한 기술과 구전 전통, 사회적 역할을 교육하며, 공동체 내의 관계를 규제합니다. 이들은 주로 다목적 회의장인 #italic 바이#!에서 모임을 갖습니다." # 5201941875680814638
+  tradition_RICE_biak_adventurers_name: "파푸아 모험가" # 3384880222570476815
+  tradition_RICE_biak_adventurers_desc: "이 문화의 많은 이들은 식량, 교역, 노예, 자원, 동맹, 전투의 전율, 정착할 땅, 그리고 아파르에서 온 문화적 및 기술적 아이디어를 찾기 위해 거친 바다를 항해합니다. 이러한 모험에서 성공한 스와시버클러는 큰 위신과 명예를 얻습니다." # 10970645857930665789
+  tradition_RICE_biak_songs_name: "싱 앤드 댄스 오어 다이" # 9717141794586149971
+  tradition_RICE_biak_songs_desc: "이 민족의 관습과 세계관에서 노래와 춤은 매우 중요한 역할을 하여 \"노래하거나 춤출 수 없다면, 살아있는 것이 아니다\"라는 유명한 격언이 있을 정도입니다. 노래하고 춤추는 것이 곧 인간됨을 의미합니다." # 8599194567027488361
+  tradition_RICE_yap_stone_money_name: "스톤 머니" # 14549574536688512390
+  tradition_RICE_yap_stone_money_desc: "이 문화에서는 중앙에 구멍이 뚫린 원반 모양으로 조각된 [Glossary( '거대한 돌', 'YAP_STONE_MONEY_GLOSS' )]이 화폐의 한 형태로 중요한 역할을 합니다. 위험과 죽음의 위협에도 불구하고 이 돌을 얻기 위해 바다를 항해하는 것은 매우 높게 평가받습니다." # 15552769645190170135
+  culture_parameter_unlock_rice_biak_mambri: "[GetMaA('RICE_mambri').GetName]을(를) [men_at_arms|E](으)로 모집할 수 있습니다" # 2892381138114899494
+  culture_parameter_unlock_rice_kwaraae_ramo: "[GetMaA('RICE_kwaraae_ramo').GetName]을(를) [men_at_arms|E](으)로 모집할 수 있습니다" # 8657125682994160603
+  tradition_RICE_living_for_ghosts_name: "유령을 위한 삶" # 2906531688920670293
+  tradition_RICE_living_for_ghosts_desc: "이 문화는 유령이 강력한 존재라고 믿으며, 산 자가 영혼과 생산적인 관계를 맺으려면 도덕적인 삶을 사는 것이 필수적이라고 여깁니다. 기도와 덕망 있는 행동을 통해 일상적인 업무부터 적을 파괴하기 위한 공포스러운 [Glossary( '전사 유령', 'KWARAAE_WARRIOR_GHOSTS_GLOSS' )] 소환에 이르기까지 모든 일에 유령의 도움을 요청할 수 있습니다." # 11433869905338469631
   chamorro: "차모로" # 12026376757856990364
   chamorro_collective_noun: "차모로" # 1409012113946147560
   chamorro_prefix: "차모로" # 12026376757856990364
