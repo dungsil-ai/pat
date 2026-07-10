@@ -4,7 +4,7 @@
   culture_parameter_unlock_rice_biak_mechanics: "#V 비아크 모험가 접촉#! [decision|E]은(는) 더 나은 보너스를 제공하며 어디서나 수행할 수 있습니다" # 12708843656707677391
   culture_parameter_rice_kava_bonus_culture: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]은(는) 추가 보너스를 제공합니다" # 13624586458538620154
   culture_parameter_unlock_rice_kava_decision: "[heritage|E]나 [religion|E]에 관계없이 #V 카바 마시기#! [decision|E]를 해금합니다" # 14212540996267373797
-  culture_parameter_rice_kava_decision_bonuses: "The [decision|E] to #V Drink Kava#! gives better bonuses"
+  culture_parameter_rice_kava_decision_bonuses: "[decision|E] #V 카바 마시기#!는 더 나은 보너스를 제공합니다" # 15245563494992641897
   culture_parameter_unlock_rice_pacific_navigation: "Unlocks the $innovation_RICE_pacific_navigation$ [innovation|E]"
   culture_parameter_unlock_rice_yap_stone_money_mechanic: "#V $RICE_oceania_quarry_stone_money$#! [decision|E]과 [GetTrait('RICE_stone_money').GetName( GetNullCharacter )] [trait|E]를 해제합니다." # 3325295332871238373
   tradition_RICE_kava_culture_name: "카바 의식" # 16137731704049224623
