@@ -5,7 +5,7 @@
   culture_parameter_rice_kava_bonus_culture: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )] [trait|E]은(는) 추가 보너스를 제공합니다" # 13624586458538620154
   culture_parameter_unlock_rice_kava_decision: "[heritage|E]나 [religion|E]에 관계없이 #V 카바 마시기#! [decision|E]를 해금합니다" # 14212540996267373797
   culture_parameter_rice_kava_decision_bonuses: "[decision|E] #V 카바 마시기#!는 더 나은 보너스를 제공합니다" # 15245563494992641897
-  culture_parameter_unlock_rice_pacific_navigation: "Unlocks the $innovation_RICE_pacific_navigation$ [innovation|E]"
+  culture_parameter_unlock_rice_pacific_navigation: "$innovation_RICE_pacific_navigation$ [innovation|E] 잠금 해제" # 8842192913890557262
   culture_parameter_unlock_rice_yap_stone_money_mechanic: "#V $RICE_oceania_quarry_stone_money$#! [decision|E]과 [GetTrait('RICE_stone_money').GetName( GetNullCharacter )] [trait|E]를 해제합니다." # 3325295332871238373
   tradition_RICE_kava_culture_name: "카바 의식" # 16137731704049224623
   tradition_RICE_kava_culture_desc: "#F 카바는 이 문화에서 중요한 역할을 하며 호의와 사교성의 표현으로 여겨집니다. 카바는 종교 의식 중이나, 다른 사람들과 어울리거나 정치적 문제를 토론할 때, 심지어 식사할 때도 자주 마십니다.#!" # 8862015508100377637
