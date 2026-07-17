@@ -131,6 +131,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, onlyHas
 - `{game}-untranslated-items.json` 파일로 리포트 저장
 - 모드, 파일, 키, 원문 메시지 정보 포함
 - GitHub Actions에서 자동으로 Issues 생성
+- 다음 번역 실행에서 해당 모드의 미번역 항목이 모두 해소되면 해결 코멘트와 반영 커밋 정보를 남긴 뒤 이슈를 자동 종료 (`.github/actions/close-translation-issues`)
 
 ### 3. Parsers (파서)
 
