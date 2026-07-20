@@ -22,8 +22,13 @@ jobs:
       - name: Get changes from last week
         id: changes
         run: |
-          # [skip ci] 커밋 제외하고 지난 7일간 변경사항 수집
-          CHANGES=$(git log --since="7 days ago" --oneline --no-merges | grep -v "\[skip ci\]" || true)
+          # [skip ci] 커밋과 문서 현행화 대상 파일만 수정한 커밋을 제외하고 지난 7일간 변경사항 수집
+          CHANGES=$(git log --since="7 days ago" --oneline --no-merges -- \
+            . \
+            ':(exclude)README.md' \
+            ':(exclude)AGENTS.md' \
+            ':(exclude)docs/**' \
+            | grep -v "\[skip ci\]" || true)
           if [ -z "$CHANGES" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             CHANGES="변경사항 없음"
