@@ -47,7 +47,7 @@ jobs:
         with:
           script: |
             const changes = process.env.CHANGES;
-            const date = new Date().toISOString().split('-').slice(0, 3).join('-');
+            const date = new Date().toISOString().split('T')[0];
             
             const issueBody = `@copilot
             
