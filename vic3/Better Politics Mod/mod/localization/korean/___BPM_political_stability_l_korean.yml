@@ -81,6 +81,7 @@
   bpm_political_stability: "[Concept('concept_bpm_political_stability', '$concept_bpm_political_stability$')]" # 9470758526676256642
   bpm_stability_unstable: "[Concept('concept_bpm_politically_unstable', '불안정')] $concept_bpm_political_stability$" # 9189172671888293217
   bpm_stability_stagnant: "[Concept('concept_bpm_politically_stagnant', '정체됨')] $concept_bpm_political_stability$" # 17105118652703583850
+  bpm_stability_stagnant_ai: "$bpm_stability_stagnant$" # 15420127835131991353
   bpm_stability_dynamic: "[Concept('concept_bpm_politically_dynamic', '역동적')] $concept_bpm_political_stability$" # 319734058228886014
   country_rigidity_baseline_add: "대상 $bpm_political_stability$" # 599151066512443658
   country_rigidity_baseline_add_desc: "우리나라의 [Concept('concept_bpm_political_stability', '정치적 경직성')]이 도달하려는 목표치의 증가 또는 감소." # 2288414690239987617
