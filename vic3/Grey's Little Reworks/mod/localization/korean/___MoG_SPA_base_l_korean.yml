@@ -1,6 +1,7 @@
 ﻿l_korean:
   mog_company_migration_penalty: "수탈적 식민 행정" # 3266304665181587531
   mog_legacy_migration_penalty: "착취적 행정의 유산" # 14291517455733622623
+  mog_dei_citizenship_adjustment: "간접 통치" # 5871854616110396858
   mog_education_access_from_urbanization: "[concept_urbanization]으로부터의 교육 접근성" # 17573804990197602928
   state_slaves_education_access_add: "[GetPopType('slaves').GetName]에 대한 교육 접근성" # 18328397066465512376
   state_slaves_education_access_add_desc: "[GetPopType('slaves').GetName]에 대한 교육 접근성 보너스 또는 페널티" # 14690501584132012900
