@@ -13,6 +13,8 @@
   RICE_every_coastal_county_in_galicia: "[GetGeographicalRegion('RICE_galicia_region').GetName] 내에 소유하고 있는 모든 해안 [county|E]" # 16582869341512482339
   RICE_galicia_santiago_holy_site_building_level_2_req: "[GetBuilding('holy_site_basilica_santiago_01').GetName]이 건설되었습니다." # 10931231070910893161
   dynn_RICE_paiva: "파이바" # 17225582954341878615
+  RICE_galicia_geographical_domicile_req: "[domicile|E]이 [GetGeographicalRegion('RICE_galicia_region').GetName]에 있습니다" # 322890042828217333
+  RICE_santiago_county_faith_req: "[GetTitleByKey('c_santiago').GetNameNoTier] [county|E]이(가) 귀하의 [faith|E]을(를) 따릅니다" # 14850361824940985248
   RICE_galicia_csm_legend_name: "성모 마리아의 노래" # 6214455793004565309
   RICE_galicia_csm_legend_desc: "[compiler.GetTitledFirstName]의 학식과 웅변술은 전설적입니다. 갈리시아-포르투갈어 시의 위대한 모음집인 #italic 칸티가스 데 산타 마리아#!의 편찬은 [compiler.GetHerHis]의 노력 덕분입니다." # 2830681814438261112
   RICE_galicia_csm_legend_chapter_opening_new_title: "모든 이들이 [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]의 박식함과 웅변술을 알고 있을 것입니다. 지금도 그분의 시 작품들은 많은 이들에게 찬사를 받고 있습니다\"" # 15700253320238823732
@@ -30,6 +32,7 @@
   game_concept_santiago_modifiers_desc: "긍정적인 [character_modifiers|E]는 성 야고보(또는 산티아고)와 관련이 있으며, [piety|E]를 소모하여 $RICE_galicia_pray_to_santiago$ [decision|E]를 통해 획득할 수 있는 다양한 군사적 및 개인적 보너스를 제공합니다. 이 [decision|E]는 [GetGeographicalRegion('world_europe_west_iberia').GetName]에 [realm_capital|E]를 두고 최소 [piety_level|E] 요구 사항을 충족하는 모든 기독교 [rulers|E]가 이용할 수 있으며, 산티아고([GetGeographicalRegion('world_europe_west_iberia').GetName] 북서부 소재)의 기독교 [ruler|E]가 $RICE_galicia_alter_saint_james_tomb$ [decision|E]를 수행한 이후에 활성화됩니다.\n\n이 [decision|E]를 수행하면 성 야고보의 다양한 측면을 나타내는 유익한 [character_modifier|E]를 얻을 기회가 생깁니다. 이러한 $game_concept_santiago_modifiers$의 효과는 [iberian_struggle|E]의 현재 [struggle_phase|E]나 이를 종결하기 위해 선택한 [decision|E]에 따라 달라집니다.\n\n만약 당신이 $heritage_iberian_name$ [heritage|E] [culture|E]에 속하거나 [iberian_struggle|E]에 [struggle_involved|E]된 [culture|E]라면, 이 [decision|E]의 비용이 더 저렴해지며 더 좋은 결과를 얻을 확률이 높아집니다. [virtues|E]와 [GetTrait('zealous').GetName( GetPlayer )] [trait|E], 그리고 [sins|E]와 [GetTrait('cynical').GetName( GetPlayer )] [trait|E] 또한 더 좋은 [modifier|E]를 얻거나 아예 얻지 못할 확률에 약간의 긍정적 혹은 부정적 영향을 미칩니다. [piety_level|E] 또한 비용 절감과 좋은 결과를 얻을 확률에 도움을 줄 수 있습니다.\n\n다른 [faith|E]로 개종하여 더 이상 이러한 [character_modifiers|E]를 받을 자격이 없게 되면, 해당 수정치는 즉시 사라집니다." # 1378708651091018328
   activity_galicia_compose_cantiga: "칸티가 작곡에 집중하기 위해 잠시 멈춤" # 15463544497325475162
   activity_galicia_compose_cantiga_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U]이/가 칸티가 작곡에 집중하기 위해 휴식을 취합니다" # 3777835116579053381
+  activity_RICE_hot_springs_visit_ourense_province_desc: "\n#P +++ [GetTitleByKey('b_ourense').GetNameNoTier]의 [hot_springs|E]은(는) 적어도 로마 시대 이전부터, 특히 #italic 아스 부르가스(As Burgas)#!로 유명했습니다.#!\n\n#italic 이로 인해 [GetModifier('RICE_galicia_ourense_as_burgas_non_christian_modifier').GetNameWithTooltip] [character_modifier|E]을(를) 획득하게 됩니다. [GetReligionByKey('christianity_religion').GetAdjective] [faith|E]을(를) 믿는 경우, 대신 [GetModifier('RICE_galicia_ourense_as_burgas_christian_modifier').GetNameWithTooltip] [modifier|E]을(를) 획득하며 일정량의 [piety_i|E] [piety|E] 보너스도 받게 됩니다.#!" # 2537486853162280642
   RICE_galicia_saint_james_infrastructure_close: "성 야고보의 길 (폐쇄)" # 11488817612642611419
   RICE_galicia_saint_james_infrastructure_close_desc: "최근 이 지역의 지도자들이 산티아고 데 콤포스텔라로 향하는 성 야고보 순례길을 따라 여행하는 순례자들을 지원하기 위해 기반 시설 개선에 힘썼습니다. 이 지역은 산티아고와 가깝거나 그 국경 내에 포함되어 있어, 이 지역을 통과하는 많은 순례자들이 모여듭니다." # 6498272524868848856
   RICE_galicia_saint_james_infrastructure_midrange_high: "성 야고보의 길 (중거리, 높은 통제력)" # 13799343026452939063
@@ -111,6 +114,11 @@
   RICE_galicia_recent_1117_uprising_desc: "산티아고 데 콤포스텔라의 기독교도 주민들이 이례적인 단결을 보여주며, 시의 성직자 권위자들이 신성모독적인 폭군이라고 여겨 그들에 맞서 봉기했습니다. 상황은 일단락되었지만, 이번 봉기는 적어도 단기적으로는 큰 피해를 입혔습니다." # 15828237835447065616
   RICE_galicia_braganza_blood: "주장되는 아르메니아 및 브르타뉴 귀족 혈통" # 16629433153735683668
   RICE_galicia_braganza_blood_desc: "이 왕조는 본래 이베리아에서 시작되었으나, 아르메니아의 유명한 아르츠루니 가문과 브르타뉴 공작 가문에서 혈통을 이어받았다고 주장합니다. 비록 이러한 고귀한 가계도는 다소 허황되게 들릴 수 있으나, 이 가문의 일원들은 이를 굳게 믿고 있습니다." # 914739418847992631
+  RICE_galicia_ourense_as_burgas_non_christian_modifier: "아스 부르가스 방문함" # 1926288712430782467
+  RICE_galicia_ourense_as_burgas_non_christian_modifier_desc: "이 인물은 최근 $b_ourense$로 가서 온천, 특히 유명한 #italic 아스 부르가스#!에서 휴식을 취했습니다." # 6431726384534990930
+  RICE_galicia_ourense_as_burgas_christian_modifier: "$RICE_galicia_ourense_as_burgas_non_christian_modifier$ (기독교인으로서)" # 1902891106788822923
+  RICE_galicia_ourense_as_burgas_christian_modifier_desc: "$RICE_galicia_ourense_as_burgas_non_christian_modifier_desc$ 이 도시는 산티아고 순례길을 여행하는 기독교 순례자들에게도 인기 있는 휴식처입니다." # 488456966634757703
+  RICE_galicia_pico_sacro_modifier: "피코 사크로에 기도를 올림" # 3468649176598857092
   RICE_galicia_wrote_cantiga_music_1: "음악에 대한 칸티가를 지었다네" # 12530267512226616662
   RICE_galicia_wrote_cantiga_music_1_desc: "이 인물은 최근 음악과 그 연주와 관련된 주제, 예를 들어 음악가들이 아름다운 처녀를 유혹하려 하거나, 저명한 음악가들의 기량을 비교하거나, 음악을 작곡하는 과정 등을 다룬 훌륭한 [cantiga_quality|E] 등급의 [cantiga|E]를 작곡했습니다." # 3275467140750009299
   RICE_galicia_wrote_cantiga_music_2: "$RICE_galicia_wrote_cantiga_music_1$" # 14657519599250620585
@@ -609,12 +617,30 @@
   RICE_galicia_fortify_galician_coast_effect_tooltip_1: "이 [decision|E]의 [gold|E] 및 [prestige|E] 비용은 [GetGeographicalRegion('RICE_galicia_region').GetName]에서 소유한 해안 [counties|E]의 수에 따라 달라집니다." # 12828178474116385138
   RICE_galicia_fortify_galician_coast_confirm: "만일의 사태에 대비하는 것이 낫지!" # 16653369162747415231
   RICE_galicia_fortify_galician_coast_context_tooltip: "#emphasis 역사적 배경:#! 갈리시아의 해안 지역에는 여러 오래된 요새들이 자리하고 있습니다. 예를 들어, 카토이라의 오에스테 탑은 본래 아스투리아스의 알폰소 3세 왕이 바이킹 습격으로부터 이 지역을 방어하기 위해 건설했으며, 이후 통치자들과 주교들이 산티아고 성지를 보호하기 위해 확장했습니다." # 4620190283316345990
-  galicia.0001.t: "xxxxx" # 1951045980481827005
-  galicia.0001.desc: "xxxxx" # 1951045980481827005
-  galicia.0001.a: "xxxxx" # 1951045980481827005
-  galicia.0002.t: "xxxxx" # 1951045980481827005
-  galicia.0002.desc: "xxxxx" # 1951045980481827005
-  galicia.0002.a: "xxxxx" # 1951045980481827005
+  RICE_galicia_pico_sacro_decision: "피코 사크로에 기도를 올립니다" # 11546035822373386883
+  RICE_galicia_pico_sacro_decision_tooltip: "신성한 피코 사크로 산이 사람들을 치유할 수 있다고 합니다!" # 8607142077840905533
+  RICE_galicia_pico_sacro_decision_desc: "[GetGeographicalRegion('RICE_galicia_region').GetName] 주변 지역 주민들은 [GetTitleByKey('c_santiago').GetNameNoTier] 근처에 있는 피코 사크로라는 산에 기도를 드리면 이 장소를 둘러싼 수많은 전설에 바탕하여 온갖 질병을 치유할 수 있다고 믿습니다." # 16909922405743584554
+  RICE_galicia_pico_sacro_decision_effect_tooltip_1: "이 [decision|E]에는 더 많은 [gold_i|E] [gold|E]이(가) 필요하며, [piety_i|E] [piety|E]이(가) 소모되고, #V $RICE_galicia_pico_sacro_chapel_decision$#! [decision|E]을(를) 아직 내리지 않은 경우 [GetReligionFamily('rf_abrahamic').GetName] [faiths|E] 신도들에 대한 [court_chaplain|E] [opinion_i|E] [opinion|E]이(가) 감소합니다" # 2585583100932954118
+  RICE_galicia_pico_sacro_decision_confirm: "위대한 산이여, 나를 치유하소서!" # 6900819248155885668
+  RICE_galicia_pico_sacro_decision_context_tooltip: "#emphasis 역사적 배경:#! 이베리아반도 북서부에는 다양한 미신과 연관된 여러 산이 존재하며, 전해지는 기독교 이전의 신앙과의 연관성은 불분명합니다. 이 산들 중 비교적 저명한 피코 사크로에는 사도 야고보와, 초기에는 야고보의 제자들을 곤란하게 했으나 나중에 기독교로 개종한 이교도 여왕 루파를 둘러싼 전설이 전해져 내려옵니다. 성 야고보와 이 산의 연관성은 중세 시대에 비숍 시스난도가 899년에 이곳에 그를 기리는 예배당을 건립하면서 발전했습니다." # 1624808976936350728
+  RICE_galicia_pico_sacro_chapel_decision: "피코 사크로에 예배당 건립" # 2879326106523661645
+  RICE_galicia_pico_sacro_chapel_decision_tooltip: "신성한 피코 사크로 산이 사람들을 치유할 수 있다고 합니다!" # 8607142077840905533
+  RICE_galicia_pico_sacro_chapel_decision_desc: "[GetGeographicalRegion('RICE_galicia_region').GetName]의 일부 현지인들은 [GetTitleByKey('c_santiago').GetNameNoTier] 근처의 피코 사크로에 기도하면 어떤 병이든 낫게 될 것이라 믿습니다. 일부 [ROOT.Char.GetFaith.GetReligion.GetAdherentNamePlural] 신도들은 이를 거짓 미신으로 여기며 의심의 눈길로 바라봅니다. 산 위에 올바른 [ROOT.Char.GetFaith.GetAdjective] 예배와 연관된 성당을 짓는다면 이러한 이들에게도 더욱 거부감 없이 다가갈 수 있을 것입니다." # 17257144149843979839
+  RICE_galicia_pico_sacro_chapel_decision_effect_tooltip_1: "[GetReligionFamily('rf_abrahamic').GetName] [faiths|E]의 신도들은 #V $RICE_galicia_pico_sacro_decision$#! [decision|E]을(를) 내릴 때 더 많은 [gold_i|E] [gold|E]을(를) 지불하거나, [piety_i|E] [piety|E]을(를) 잃거나, [court_chaplain|E] [opinion_i|E] [opinion|E]이(가) 감소하는 불이익을 더 이상 겪지 않게 됩니다" # 13288514455184259346
+  RICE_galicia_pico_sacro_chapel_decision_confirm: "이 산은 [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip]의 것입니다!" # 17704973860733358975
+  RICE_galicia_pico_sacro_chapel_decision_context_tooltip: "$RICE_galicia_pico_sacro_decision_context_tooltip$" # 374862124405051600
+  galicia.0001.t: "피코 사크로" # 13632356755757600588
+  galicia.0001.desc: "[GetTitleByKey('c_santiago').GetNameNoTier] 근처의 신성한 봉우리인 피코 사크로에 얽힌 전설은 누구나 알고 있습니다. 치유의 힘이 있고 병을 낫게 할 수 있다고 합니다." # 8360783166267811292
+  galicia.0001.desc.other: "그 영적 속성은 의심의 여지가 없습니다.\n\n그럼에도 불구하고 나는 산을 향해 돌아 서서 다음과 같이 읊조리며 [ROOT.Char.GetFaith.HighGodName]께 기도를 올리기 시작합니다." # 17537902701500104045
+  galicia.0001.desc.christian: "이러한 전설 중 가장 위대한 것은 성 야고보, 그의 제자들, 그리고 한때 이교도였던 루파 여왕과 관련된 것들입니다.\n\n그럼에도 불구하고 나는 산을 향해 돌아 서서 다음과 같이 읊조리며 성 야고보에게 기도를 올리기 시작합니다." # 12261659043483899935
+  galicia.0001.desc.conclusion: "\n\n#EMP “피코 사크로여, 피코 사크로여, 내게 든 이 병을 낫게 해주소서!”#!" # 12659275901025710177
+  galicia.0001.a: "피코 사크로여, 나를 치유하소서!" # 17164679964142785227
+  galicia.0002.t: "피코 사크로의 예배당" # 12518559526739372965
+  galicia.0002.desc: "[GetTitleByKey('c_santiago').GetNameNoTier]에 있는 피코 사크로산은 이곳에 기도하면 어떤 병이든 낫게 할 수 있다고 믿는 현지인들에게 여러 세대 동안 숭배되어 왔습니다. 그러나 [GetReligionFamily('rf_abrahamic').GetName] 종교의 더 독실하고 학식 있는 추종자들은 이러한 “미신적” 관행의 타당성에 의문을 제기해 왔습니다.\n\n이에 대응하여 [chapel_builder.GetTitledFirstName]와 [chapel_builder.GetHerHis] [chaplain.GetCouncilTitle], [chaplain.GetTitledFirstName](은)는 산에 예배당을 건립했습니다." # 12451521018930651953
+  galicia.0002.desc.christian: "예를 들어 [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] 사이에는 산을 사도 야고보 및 루파 여왕과 연결하는 많은 이야기가 있습니다." # 1031275507580386839
+  galicia.0002.desc.non_christian: "그곳에 사는 [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]조차도 산이 신성한 이유에 대한 여러 전설을 가지고 있습니다." # 7908981504771235304
+  galicia.0002.desc.conclusion: "이 예배당은 의심할 여지 없이 이러한 이야기들을 [ROOT.Char.GetFaith.GetAdjective] 예배의 더 정통적인 형식들과 연결해 줄 것입니다.\n\n그렇게 함으로써 피코 사크로를 둘러싼 “미신들”은 다양한 [GetReligionFamily('rf_abrahamic').GetName] 종교 신도들에게 더욱 용인될 수 있게 될 것입니다." # 235012024196947774
+  galicia.0002.a: "흥미로운 이야기군...." # 3452698824387533310
   galicia.0003.t: "xxxxx" # 1951045980481827005
   galicia.0003.desc: "xxxxx" # 1951045980481827005
   galicia.0003.a: "xxxxx" # 1951045980481827005
@@ -675,12 +701,14 @@
   galicia.0016.t: "갈리시아 해안 요새화" # 6740540639153313956
   galicia.0016.desc: "[GetGeographicalRegion('RICE_galicia_region').GetName]의 험준함에도 불구하고 수세기 동안 바다로부터 공격과 약탈을 당해왔습니다. 이 땅을 다스리는 자라면 누구든 이 지역의 지속적인 안전을 보장하기 위해 탑, 전초기지 및 기타 방어 시설 네트워크를 유지하는 것이 필수적임을 알거나 빠르게 배우게 됩니다.\n\n저는 최근 제가 통치하는 영토 중 [GetGeographicalRegion('RICE_galicia_region').GetName]의 해안선을 따라 방어 시설을 강화하기 위해 일부 자금을 따로 마련했습니다. 새로운 요새를 건설하거나 기존 시설을 보수하고 확장하는 방식으로 말입니다. 바라건대, 이것이 적들이 감히 우리를 공격할 생각조차 하지 못하도록 막아주기를 바랍니다. 적어도 바다를 통한 공격은 말이죠." # 15862979080335548258
   galicia.0016.a: "우리의 해안선은 안전해질 것입니다." # 4548886297597104930
-  galicia.0017.t: "xxxxx" # 1951045980481827005
-  galicia.0017.desc: "xxxxx" # 1951045980481827005
-  galicia.0017.a: "xxxxx" # 1951045980481827005
-  galicia.0018.t: "xxxxx" # 1951045980481827005
-  galicia.0018.desc: "xxxxx" # 1951045980481827005
-  galicia.0018.a: "xxxxx" # 1951045980481827005
+  galicia.0017.t: "[GetTitleByKey('b_ourense').GetNameNoTierNoTooltip](으)로!" # 11188742544163981365
+  galicia.0017.desc: "[GetTitleByKey('b_ourense').GetNameNoTier]의 온천은 유구한 역사를 자랑합니다. [GetGeographicalRegion('RICE_galicia_region').GetName]을(를) 식민지로 삼았던 로마인들도 감탄할 정도였습니다. 휴식과 치유를 위해 나 또한 이 유명한 온천을 즐기지 못할 이유가 있겠습니까?" # 17821689339024180395
+  galicia.0017.desc.christian: "\n\n이 온천은 또한 산티아고 순례길의 #italic 카미노 사나브레스#! 경로상에 위치해 있어 순례자들의 인기 있는 휴식처이기도 합니다. 어쩌면 그들 중 일부를 보는 것이 나에게 영감을 줄지도 모릅니다...." # 13138257435078067705
+  galicia.0017.a: "[GetTitleByKey('b_ourense').GetNameNoTierNoTooltip](으)로 갈 시간입니다!" # 5576333640716391570
+  galicia.0018.t: "아스 부르가스의 온천탕" # 1379248125924852667
+  galicia.0018.desc: "[GetTitleByKey('b_ourense').GetNameNoTier]은(는) 고대 로마 시대부터 명성이 자란 여러 온천의 고향입니다. 많은 온천이 도시 경계 밖에 자리 잡고 있지만, 이 온천 중 가장 유명한 곳은 사실 마을 중심부에 있습니다. 고대부터 사용되어 온 #italic 아스 부르가스#!가 바로 그것입니다.\n\n이제 나는 이 따뜻한 물에 몸을 담그고, 전에는 느껴본 적 없는 치유와 휴식을 누릴 수 있습니다." # 2785358953479737997
+  galicia.0018.desc.christian: "\n\n물론 온천을 이용하는 수많은 [GetReligionByKey('christianity_religion').GetAdjective] 순례자들도 눈에 띱니다. 대부분은 산티아고 순례길을 걷고 있는 이들이며, 그들의 존재는 독실한 이들에게 영감을 줍니다." # 15788805179058748011
+  galicia.0018.a: "$lesbos.0012.a$" # 4955817950391269310
   galicia.0019.t: "xxxxx" # 1951045980481827005
   galicia.0019.desc: "xxxxx" # 1951045980481827005
   galicia.0019.a: "xxxxx" # 1951045980481827005

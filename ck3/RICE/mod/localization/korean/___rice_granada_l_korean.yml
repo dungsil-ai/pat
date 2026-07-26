@@ -24,6 +24,9 @@
   dynn_rukuniyya: "루쿠니야" # 15032541316741562382
   dynn_RICE_ibn_gabirol: "이븐 가비롤" # 10360879366675003840
   Abu_Ishaq_Ibrahim: "아부 이샤크 이브라힘" # 8263468581852564978
+  innovation_RICE_placeholder_01: "아라사나스" # 10892517697788624112
+  innovation_RICE_placeholder_01_desc: "조선소는 물이 있는 곳이라면 세계 어디에나 존재하지만, 이베리아의 독특한 전략적 위치와 정치적 투쟁 덕분에 군주들은 경제적, 군사적 이유로 반도 자체의 조선소, 즉 [Glossary( 'atarazanas', 'ATARAZANA_GLOSS' )]에서 조선업의 성장을 지원할 방도를 찾아냈습니다." # 3924056695188000728
+  RICE_unlocked_atarazanas_decision_desc: "$RICE_atarazanas_decision$ [decision|E]을(를) 활성화합니다" # 17196089208303051914
   RICE_granada_aspiration_hafsa_desc: "#bold [historical_aspiration_main_objectives|E]#!\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_hafsa').GetName( GetNullCharacter )] [trait|E]의 [trait_level_track|E]에서 #V 100#! [trait_level_track_xp|E]를 달성하고, $RICE_granada_hafsa_decision$ [decision|E]를 충분히 내려 [GetTrait('RICE_hafsa_full_rage').GetName( GetNullCharacter )] 또는 [GetTrait('RICE_hafsa_full_recovery').GetName( GetNullCharacter )] [trait|E]를 획득하십시오.\n\n#bold Rewards#!\n$EFFECT_LIST_BULLET$ @dynasty_prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_medium_resource_bonus')]#! [dynasty_prestige|E] 획득\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_hafsa').GetName( GetNullCharacter )] [trait|E]가 [GetTrait('RICE_hafsa_full_rage').GetName( GetNullCharacter )] [trait|E]로 대체될 경우 @prestige_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [prestige|E] 획득\n$EFFECT_LIST_BULLET$ [GetTrait('RICE_hafsa').GetName( GetNullCharacter )] [trait|E]가 [GetTrait('RICE_hafsa_full_recovery').GetName( GetNullCharacter )] [trait|E]로 대체될 경우 @piety_icon! #V [EmptyScope.ScriptValue('RICE_aspiration_large_resource_bonus')]#! [piety|E] 획득" # 12216158469319139284
   RICE_granada_historical_aspiration_action_hafsa: "#italic 사랑하는 동료 시인 아부 자파르의 죽음이 당신의 마음을 무겁게 짓누릅니다. 슬픔이 너무나도 커서, 당신은 이 절망과 슬픔에서 과연 회복할 수 있을지 의문이 드는군요.#!$RICE_granada_aspiration_hafsa_desc$" # 4358432524689201002
   RICE_granada_historical_aspiration_modifier_desc_hafsa: "[GetModifier('RICE_granada_aspiration_successfully_process_grief').GetNameWithTooltip]" # 6124417528994511762
@@ -159,6 +162,7 @@
   RICE_granada_munya_vacation_group_completed_log: "[CHARACTER.GetShortUIName|U]께서 [CHARACTER.GetHerHis] [munya|E]에서 주최하신 단체 휴가가 [PROVINCE.GetBaronyNameExplicitly]에서 끝났습니다." # 1066029995865383944
   TRAVEL_NAME_FOR_activity_RICE_granada_munya_vacation_group: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_granada_munya_vacation_group$" # 10436001381932138048
   RICE_granada_munya_vacation_length_desc: "휴가 기간" # 15807456725632011311
+  activity_RICE_hot_springs_visit_hedionda_province_desc: "\n#P +++ 헤디오난다 온천은 [GetTitleByKey('b_algeciras').GetNameNoTier]와 [GetTitleByKey('b_malaga').GetNameNoTier] 사이에 있는 [hot_springs|E]으로, 피부 질환 치유로 유명하여 전설에 따르면 율리우스 카이사르마저 방문했던 곳입니다.#!\n\n#italic 이를 통해 [GetModifier('RICE_granada_hedionda_baths_modifier').GetNameWithTooltip] [character_modifier|E]을(를) 획득하게 됩니다. 하지만 대신 이 [modifier|E]의 강화된 버전인 [GetModifier('RICE_granada_hedionda_baths_julius_caesar_modifier').GetNameWithTooltip]을(를) 획득할 확률도 존재합니다.#!" # 8949687565818749419
   building_type_RICE_granada_alcazaba_01: "말라가의 알카사바" # 17624383061172733171
   building_type_RICE_granada_alcazaba_01_desc: "지중해를 내려다보는 이 소박하지만 중요한 요새는 육로와 해로 양쪽에서 말라가 시를 보호합니다." # 3282819971431642161
   building_RICE_granada_alcazaba_01: "$building_type_RICE_granada_alcazaba_01$" # 18066533670506181427
@@ -241,6 +245,12 @@
   RICE_granada_explored_munya: "현지 무냐 주변 탐험" # 14014057294697003192
   RICE_granada_hafsa_mourning: "아부 자파르를 애도하며" # 6665077450425383611
   RICE_granada_hafsa_mourning_desc: "시인 하프사는 당시 그라나다 총독이었던 아부 사이드 우트만의 궁정 관료였던 사랑하는 시인 아부 자파르의 죽음을 아직도 애도하고 있습니다. 아아, 질투심 많은 총독이 아름다운 하프사를 탐하여 두 사람 사이에 갈등이 생겼고, 결국 아부 자파르는 처형당했습니다." # 15807649436617528423
+  RICE_atarazanas_modifier: "보조금을 받은 아라사나스" # 8221864758486536517
+  RICE_atarazanas_modifier_desc: "군주들이 이 지역의 [Glossary( 'atarazanas', 'ATARAZANA_GLOSS' )]에 보조금을 지급했습니다. 이 조선소들은 경제를 성장시키기 위한 무역선과 해안을 방어하기 위한 군함을 계속해서 건조할 것입니다." # 16555826741981127738
+  RICE_granada_hedionda_baths_modifier: "헤디오난다 온천 방문" # 3808617571113765603
+  RICE_granada_hedionda_baths_modifier_desc: "이 인물은 최근 안달루시아에 있는 헤디오난다 온천을 방문했습니다. 전설에 따르면 피부 질환을 치료하기 위해 율리우스 카이사르도 방문했다고 합니다." # 10456396101098218417
+  RICE_granada_hedionda_baths_julius_caesar_modifier: "헤디오난다 온천에서 영감을 받음" # 9815325221092692833
+  RICE_granada_hedionda_baths_julius_caesar_modifier_desc: "$RICE_granada_hedionda_baths_modifier_desc$ 사실 이 경험 덕분에 그는 율리우스 카이사르의 유명한 업적에서 영감을 받았습니다." # 877412633414607690
   RICE_granada_alhambra_decision: "알함브라를 확장하십시오" # 13224511367539387758
   RICE_granada_alhambra_decision_tooltip: "알함브라가 확장되는 알함브라의 필요를 충족시키기 위해 확장하고 있습니다." # 7801477903967858307
   RICE_granada_alhambra_decision_desc: "[alhambra|E]는 숨 막힐 듯한, 비할 데 없는 숭고함의 궁전으로 전 세계에 알려져 있지만, 언제나 개선의 여지는 있는 법입니다. 어쩌면 이 지상의 낙원에 걸맞은 추가물이 필요할지도 모르겠군요...." # 16707570848347168323
@@ -345,6 +355,12 @@
   RICE_teach_others_name: "다른 이들을 가르치기" # 13454838832086645584
   RICE_teach_others_desc: "$RICE_teach_others_name$" # 15020224335238021797
   RICE_teach_others_tooltip: "나는 에너지를 좀 더 생산적인 일, 예를 들어 다른 이들을 교육하고 이끄는 일에 쏟아야겠소." # 1519549821602588412
+  RICE_atarazanas_decision: "아라사나스에 보조금 지급" # 9194725466752523944
+  RICE_atarazanas_decision_tooltip: "[GetGeographicalRegion('world_europe_west_iberia').GetName]의 [Glossary( 'shipyards', 'ATARAZANA_GLOSS' )]은(는) 지중해에서 가장 중요한 곳 중 일부입니다" # 6157511711564636402
+  RICE_atarazanas_decision_desc: "수세기에 걸쳐 [GetGeographicalRegion('world_europe_west_iberia').GetName]의 불안정과 지역의 전략적 위치로 인해, [Glossary( 'atarazanas', 'ATARAZANA_GLOSS' )]은(는) 서지중해에서 정치적, 경제적 우위를 차지하려는 모든 [ruler|E]에게 그 중요성이 커졌습니다. 내 [realm|E] 내의 조선소들을 지원해야 합니다." # 7134200957377859741
+  RICE_atarazanas_decision_effect_tooltip_1: "이 [decision|E]의 [gold|E] 및 [prestige|E] 비용은 소유한 해안 [counties|E] 수에 따라 다릅니다" # 4457042875317639094
+  RICE_atarazanas_decision_confirm: "저 배들이 항해하여, 멀리 떠나리라!" # 3303968208846017732
+  RICE_atarazanas_decision_context_tooltip: "#emphasis 역사적 배경:#! $ATARAZANA_GLOSS$" # 7418850488940096979
   granada.0001.t: "[granada.GetNameNoTierNoTooltip]의 운명" # 8050494803947657277
   granada.0001.desc: "나는 거의 삼십 년 동안 [granada.GetNameNoTier]를 통치해 왔으며, 나의 성공은 대부분 고인이 된 나의 재상, 장군이자 친구인 [samuel.GetFullName] 덕분입니다. 유대인들은 오랫동안 이 도시의 정치에서 중요한 역할을 해왔으며, 그는 그들 중 가장 강력하고 재능 있는 인물이었습니다. 그 덕분에 나는 젊은 시절 수많은 음모에서 살아남았고, 우리의 왕국을 이 지역 강국으로 세울 수 있었습니다.\n\n아아, 그가 세상을 떠난 지 여러 해가 지났습니다. 그의 아들이자 후계자인 [joseph.GetFullName]는 유능하지만, 심지어 내가 아는 다른 유대인들조차 인정하는 교만의 죄를 짊어지고 있습니다. [joseph.GetFirstName]와 나는 한때 사이가 좋았지만, 최근 우리 관계는 소원해졌습니다. 심지어 그가 배후에서 나를 조종하고 나를 모의하고 있다는 소문까지 들었습니다. 나는 그런 중상모략적인 헛소리를 믿지 않지만, 이는 분명히 내 신하들이 나를 어떻게 생각하는지에 영향을 미치고 있습니다. 사람들은 이미 나를 잔인하고 탐욕스러운 통치자로 보고 있는데 - 내 자신에게 확신시키듯 거짓말이지만 - 이 소문들은 불에 기름을 붓는 격입니다." # 1887507677649667252
   granada.0001.a: "부디 상황이 잘 정리되기를 바랍니다." # 663864512682935979
@@ -358,15 +374,17 @@
   granada.0003.desc.other_no_curse: "이베리아반도 곳곳에는 오래된 문명의 폐허가 된 기념물들이 흩어져 있으며, 그중 다수는 초자연적인 능력을 지니고 있다고 여겨집니다. 이에 대한 더 주목할 만한 예시가 바로 바다를 내려다보는 거대한 조각상인 #bold 카디스 우상#!입니다. [cadiz.GetNameNoTier] 근처에 있는 이 조각상은 귀금속으로 만들어졌음에도 불구하고, 아무도 그 돈 때문에 파괴하려 들지 않았습니다.\n\n[cadiz_idol_demolisher.GetTitledFirstName]을 제외하고는 말이죠.\n\n[cadiz_idol_demolisher.GetFirstName]은 조각상에 있는 귀금속을 이용하려 했지만, 현지 주민들은 조각상을 파괴하면 신성한 징벌이 내릴 것을 두려워했습니다. 그럼에도 불구하고, [cadiz_idol_demolisher.GetSheHe]는 조각상을 철거하고 녹여버리라고 명령한 후, 아무 이상한 일도 일어나지 않자 그들의 우려가 틀렸음을 증명해 보였습니다. 이제 그 우상과 그것이 서 있던 웅장한 탑은 사라지고 없습니다." # 12786283431322845504
   granada.0003.desc.other_curse: "이베리아 반도 전역에는 지나간 문명들의 폐허가 된 기념물들이 흩어져 있으며, 그중 다수는 초자연적인 능력을 지녔다고 여겨집니다. 이보다 더 유명한 예로는 #bold 카디스의 우상#!이 있는데, 이는 [cadiz.GetNameNoTier] 근처 바다를 내려다보는 거대한 석상입니다. 이 석상이 귀금속으로 만들어졌음에도 불구하고, 아무도 돈 때문에 그것을 파괴하려 하지 않았습니다.\n\n[cadiz_idol_demolisher.GetTitledFirstName]를 제외하고는 말이죠.\n\n[cadiz_idol_demolisher.GetFirstName]는 석상에 있는 귀금속을 이용하려 했으나, 현지인들은 석상을 파괴하면 신의 징벌이 내릴 것을 두려워했습니다. 그러나 [cadiz_idol_demolisher.GetSheHe]는 고집스럽게도 석상을 철거하고 녹여버리라고 명령했습니다. 그리 오래지 않아, [cadiz.GetNameNoTier]에서 밤마다 이상한 소리가 들린다거나, 배들이 항구를 떠나지 못하는 일, 그 밖의 이상한 불행들이 보고되기 시작했습니다.\n\n그것은 그저 단순한 우연일 뿐이며, 미신적인 현지인들이 아무것도 아닌 일에 걱정하는 것이겠지요... 그렇죠?" # 6853390308812410731
   granada.0003.a: "카디스의 우상에게 닥친 운명이란!" # 5684659653730745836
-  granada.0004.t: "xxxxx" # 1951045980481827005
-  granada.0004.desc: "xxxxx" # 1951045980481827005
-  granada.0004.a: "xxxxx" # 1951045980481827005
-  granada.0005.t: "xxxxx" # 1951045980481827005
-  granada.0005.desc: "xxxxx" # 1951045980481827005
-  granada.0005.a: "xxxxx" # 1951045980481827005
-  granada.0006.t: "xxxxx" # 1951045980481827005
-  granada.0006.desc: "xxxxx" # 1951045980481827005
-  granada.0006.a: "xxxxx" # 1951045980481827005
+  granada.0004.t: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]의 아라사나스" # 2285463698121881854
+  granada.0004.desc: "[GetGeographicalRegion('world_europe_west_iberia').GetName] 반도에서 [Glossary( 'atarazanas', 'ATARAZANA_GLOSS' )]은(는) 불확실한 시대에 우리의 무역 및 군사 함대를 유지하는 데 핵심적인 역할을 합니다.\n\n이러한 필수적인 임무를 수행하는 조선공들을 지원하는 것의 이점은 자명합니다. 우리의 해안에서 배들이 출항하여 지중해와 대서양의 부를 집으로 가져오거나, 감히 침략이나 약탈을 시도하려는 자들로부터 우리의 해안선을 용감하게 방어할 것입니다!" # 1131134300475333968
+  granada.0004.a: "훌륭한 투자가 될 것입니다." # 4181323875818120221
+  granada.0005.t: "에디오인다 온천으로!" # 2473883878322292986
+  granada.0005.desc: "안달루시아에는 고대부터 알려진 곳을 포함하여 여러 온천이 있습니다. 그중에서도 가장 전설적인 곳 중 하나는 [GetTitleByKey('b_malaga').GetNameNoTier]와 [GetTitleByKey('b_algeciras').GetNameNoTier] 사이의 산악 지대에 위치한 에디오인다 온천입니다.\n\n전해지는 바에 따르면, 위대한 율리우스 카이사르마저 끔찍한 피부 질환을 치료하기 위해 이곳을 찾았다고 합니다!" # 3489313094337997976
+  granada.0005.a: "그의 발자취를 따르겠노라." # 17147245813943328625
+  granada.0006.t: "에디오인다 온천" # 9211122440519775642
+  granada.0006.desc: "마법과도 같은 에디오인다 온천은 [GetTitleByKey('b_malaga').GetNameNoTier]와 [GetTitleByKey('b_algeciras').GetNameNoTier] 사이의 험하지만 고풍스러운 시골 지역에 자리 잡고 있습니다. 이곳의 경치를 구경하러 오는 것만으로도 이미 마음이 평온해집니다.\n\n이 온천은 의학적 효능뿐만 아니라 피부 질환을 치료하고 전반적으로 피부를 더 좋아 보이게 만드는 능력까지 있다고 합니다. 전설에 따르면 율리우스 카이사르도 오래전에 피부 질환을 치료하고자 이 온천을 방문했다고 합니다." # 5720002580302850478
+  granada.0006.a: "자, 수 세기 전 그가 그랬던 것처럼 여기서 휴식을 취해볼까." # 11618618964883519950
+  granada.0006.a.normal: "평범하게 휴식을 취합니다" # 996142154806793598
+  granada.0006.a.julius_caesar: "율리우스 카이사르에게 영감을 받았습니다" # 1141164765181123182
   granada.0007.t: "xxxxx" # 1951045980481827005
   granada.0007.desc: "xxxxx" # 1951045980481827005
   granada.0007.a: "xxxxx" # 1951045980481827005

@@ -92,6 +92,16 @@
   bis_adherent: "비시안" # 9905729852081544406
   bis_adherent_plural: "비시안족" # 11715636129274233234
   bis_desc: "아스마트인들에게 영계와 현세는 일상생활의 문제에 있어서도 서로 얽혀 있으며, 영혼들은 세속적인 방식으로 달래지거나 노하게 할 수 있습니다. 아스마트인들은 영혼들이 마을의 제한된 주변뿐만 아니라 산, 강, 바다에까지 어디에나 깃들어 있다고 믿습니다. 이러한 신앙 체계는 아스마트 부족들의 관습 전반에 걸쳐 나타나는 상호성과 갱신의 장엄한 주제를 만들어냈습니다." # 15441339256460223572
+  yaambism_old: "$yaambism$" # 15944386308932809608
+  yaambism_old_adj: "$yaambism_adj$" # 17831829735808684635
+  yaambism_old_adherent: "$yaambism_adherent$" # 8540882821108507443
+  yaambism_old_adherent_plural: "$yaambism_adherent_plural$" # 13338568891128286191
+  yaambism_old_desc: "$yaambism_desc$" # 17902197903904599848
+  bis_old: "$bis$" # 12360442260741672199
+  bis_old_adj: "$bis_adj$" # 17778223876522397196
+  bis_old_adherent: "$bis_adherent$" # 16682908601715632256
+  bis_old_adherent_plural: "$bis_adherent_plural$" # 9994171920638024279
+  bis_old_desc: "$bis_desc$" # 5464285032159272470
   tagai_religion: "타가이즘" # 6235284591609574330
   tagai_religion_adj: "타가이스트" # 15506387969231692417
   tagai_religion_adherent: "타가이스트" # 15506387969231692417

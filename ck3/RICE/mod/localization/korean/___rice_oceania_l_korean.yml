@@ -24,33 +24,33 @@
   Balibungah: "발리붕가" # 18315222138613086317
   game_concept_RICE_biaks: "비아크인" # 17199332177953917936
   game_concept_RICE_biak: "비아크" # 14976569163014060631
-  game_concept_RICE_biak_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_biak_desc: "비아크 [culture|E] [courtiers|E]이(가) 간혹 지도 남동쪽 가장자리에 출현할 수 있습니다. 비아크인들의 역사적 모험을 나타내기 위해, 지도 동쪽 가장자리의 [rulers|E]가 #Bold $RICE_oceania_recruit_biak_adventurers$#! [decision|E]를 통해 비아크 상인이나 전사들과 협력하여 긍정적인 [modifiers|E] 및 기타 이점을 얻을 수 있는 기능이 마련되어 있습니다." # 5303651501438295523
   game_concept_RICE_papuans: "파푸아인" # 17546467121497594108
   game_concept_RICE_papuan: "파푸아" # 10204060446723167988
   game_concept_RICE_papua: "파푸아" # 3177487687325244570
-  game_concept_RICE_papua_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_papua_desc: "파푸아 혈통의 [courtiers|E]이(가) 간혹 지도 남동쪽 가장자리에 출현할 수 있습니다. 역사적으로 여러 파푸아 집단은 서쪽의 인도네시아 민족들과 교역 또는 외교 관계를 맺고 있었습니다." # 17478689763958837037
   game_concept_RICE_micronesians: "미크로네시아인" # 4832907714353236959
   game_concept_RICE_micronesian: "미크로네시아" # 4637487619618017596
   game_concept_RICE_micronesia: "미크로네시아" # 6118143179265233825
-  game_concept_RICE_micronesia_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_micronesia_desc: "미크로네시아 혈통의 [courtiers|E]이(가) 간혹 지도 남동쪽 가장자리에 출현할 수 있습니다. 비록 드물기는 하지만, 일부 미크로네시아 집단은 인도네시아 및 파푸아의 공동체들과 교역을 하거나 접촉했을 가능성이 있습니다." # 2790717869183429780
   game_concept_RICE_melanesians: "멜라네시아인" # 2337195737297045498
   game_concept_RICE_melanesian: "멜라네시아" # 2283096840114600477
   game_concept_RICE_melanesia: "멜라네시아" # 11305580532736012329
-  game_concept_RICE_melanesia_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_melanesia_desc: "멜라네시아 혈통의 [courtiers|E]이(가) 간혹 지도 남동쪽 가장자리에 출현할 수 있습니다. 파푸아와 멜라네시아 제도 모두에 거주하는 이 다양한 민족 집단은 폴리네시아인, 미크로네시아인, 파푸아인을 포함하여 역사적으로 다양한 민족들과 접촉했습니다." # 11645109744304049194
   game_concept_RICE_polynesians: "폴리네시아인" # 12579286192584543535
   game_concept_RICE_polynesian: "폴리네시아" # 12891295094908296745
   game_concept_RICE_polynesia: "폴리네시아" # 2581277825924132614
-  game_concept_RICE_polynesia_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_polynesia_desc: "선택적 게임 규칙을 통해 폴리네시아 혈통의 [courtiers|E]이(가) 지도 남동쪽 가장자리에 아주 드물게 출현할 수 있습니다. 중세 시대 동안 폴리네시아 공동체는 비록 현재 지도 경계 내에는 없지만, 예를 들어 멜라네시아와 미크로네시아 깊숙한 곳까지 태평양 전역으로 영향력을 넓혔습니다." # 4286191408676135303
   game_concept_RICE_south_americans: "남미인" # 16181600551370853102
   game_concept_RICE_south_american: "남미의" # 2296461509572148080
   game_concept_RICE_south_america: "남미" # 13152898204011223451
-  game_concept_RICE_south_america_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_south_america_desc: "선택적 게임 규칙을 통해 남아메리카 혈통의 [courtiers|E]이(가) 지도 남동쪽 가장자리에 아주 드물게 출현할 수 있습니다. 콜럼버스 이전 시대에 남아메리카와 인도네시아 및 파푸아 간의 접촉은 없었으나, 폴리네시아인과 남아메리카 간의 잠재적 접촉 가능성을 시사하는 증거들이 점차 늘어나고 있습니다." # 14287984649333344413
   game_concept_RICE_indigenous_australians: "호주 원주민" # 952413251972049973
   game_concept_RICE_indigenous_australian: "호주 원주민의" # 4705306441364009905
   game_concept_RICE_australians: "호주인" # 5546959390700731303
   game_concept_RICE_australian: "호주인" # 5546959390700731303
   game_concept_RICE_australia: "호주" # 11815855781714709519
-  game_concept_RICE_australia_desc: "xxxxx" # 1951045980481827005
+  game_concept_RICE_australia_desc: "오스트레일리아는 지도 밖에 위치하지만, 원주민 오스트레일리아 혈통의 [courtiers|E]이(가) 지도 남동쪽 가장자리에 아주 드물게 출현할 수 있습니다. 역사적으로 유럽의 식민화 이전 인도네시아와 오스트레일리아 간의 잠재적 접촉 가능성을 시사하는 증거들이 점차 늘어나고 있습니다." # 1259177201217089437
   game_concept_RICE_oceanic: "오세아니아의" # 4703747637741233131
   game_concept_RICE_oceania: "오세아니아" # 77874904389657804
   game_concept_RICE_oceania_desc: "오세아니아는 해양 동남아시아 너머 태평양의 다양한 육지와 섬들을 아우릅니다.\n\n게임 내에서는 대부분 지도 밖의 영역이지만, 역사적으로 이 지역들이 동남아시아와 가졌던 산발적인 관계를 반영하여 다양한 오세아니아 [cultures|E] 및 [faiths|E]를 가진 [courtiers|E]가 지도 남동쪽 끝에서 등장할 수 있습니다. 이러한 이벤트는 또한 이들의 지식을 유용한 [modifiers|E]의 형태로 활용할 기회를 제공합니다. #bold $RICE_welcome_visitors_from_oceania$#! [decision|E]을 선택하면 이러한 만남의 확률이 증가합니다.\n\n기본적으로 등장하는 오세아니아 [courtiers|E]의 유형은 게임 규칙에 따라 달라지며, 다음을 포함합니다:\n\n$EFFECT_LIST_BULLET$가끔: 서부 [RICE_papuan|E] 및 서부 [RICE_micronesian|E]\n$EFFECT_LIST_BULLET$드묾: 중앙 [RICE_papuan|E] 및 중앙 [RICE_micronesian|E]\n$EFFECT_LIST_BULLET$매우 드묾: 동부 [RICE_micronesian|E], 동부 [RICE_papuan|E], [RICE_indigenous_australian|E] 및 서부 [RICE_melanesian|E]\n$EFFECT_LIST_BULLET$게임 규칙 적용 시 매우 드묾: [RICE_polynesian|E] 및 동부 [RICE_melanesian|E]\n$EFFECT_LIST_BULLET$게임 규칙 적용 시 극히 드묾: [RICE_south_american|E]" # 15004655171942912814
@@ -256,7 +256,7 @@
   RICE_oceania_recruit_biak_adventurers_traders_option_desc: "군사 모험가들을 초대하라" # 12764632423230306009
   RICE_oceania_recruit_biak_adventurers_traders_option_tooltip: "#italic 거대한 [Glossary( 'waimansusu', 'WAIMANSUSU_GLOSS' )] 배를 타고 항해하는 [RICE_biak|E] 상인들은 수 세기 동안 바다 건너 인상적인 양의 교역품을 운송해 왔다. 그렇게 함으로써 그들은 정치적, 사회적 네트워크를 형성했고, 심지어 머나먼 땅에 식민지를 건설하기도 했다.#!" # 11741876601604060353
   RICE_welcome_visitors_from_oceania: "오세아니아에서 온 방문객을 환영하라" # 7209863373206537627
-  RICE_welcome_visitors_from_oceania_tooltip: "xxxxx" # 1951045980481827005
+  RICE_welcome_visitors_from_oceania_tooltip: "동쪽의 광활한 대양에서 우리는 누구를 만나게 될까요?" # 16020787680550806817
   RICE_welcome_visitors_from_oceania_desc: "광활한 바다 건너 동쪽에는 땅과 섬들이 있다. 비록 멀지만 그곳에 사는 사람들이 있다. 그들의 지혜와 지식이 우리에게 도움이 될 수 있을까?" # 16851807408476776806
   RICE_welcome_visitors_from_oceania_effect_tooltip_1: "[modifier|E]가 활성화되어 있는 동안 [RICE_oceanic|E] [courtiers|E]가 생성될 확률이 증가한다." # 6050461317918834616
   RICE_welcome_visitors_from_oceania_effect_tooltip_2: "[RICE_oceania|E] [courtier|E]가 등장하는 이벤트를 확정적으로 발생시킬 작은 확률이 있습니다." # 4944654996674530830

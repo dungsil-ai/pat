@@ -431,12 +431,12 @@
   catalyst_situation_RICE_nile_forecast_very_low_strong_desc: "신중한 예측에 따르면 내년에는 @RICE_nile_flood_very_low_icon! #bold 매우 낮음#! [nile_flood_short|E]이 예상됩니다." # 12821343851121546855
   catalyst_situation_RICE_nile_forecast_very_low_very_strong: "신뢰할 수 있는 예측: @RICE_nile_flood_very_low_icon! 매우 낮은 [nile_flood|E] [situation|E] 촉매" # 2777772814073285636
   catalyst_situation_RICE_nile_forecast_very_low_very_strong_desc: "신뢰할 만한 예측에 따르면 내년에는 @RICE_nile_flood_very_low_icon! #bold 매우 낮음#! [nile_flood_short|E]이 예상됩니다." # 16929125593458096394
-  catalyst_situation_RICE_nile_forecast_overflooding_weak: "신뢰할 수 없는 예측: @RICE_nile_flood_overflooding_icon! 낮은 [nile_flood|E] [situation|E] 촉매" # 5356847986695514046
-  catalyst_situation_RICE_nile_forecast_overflooding_weak_desc: "신뢰할 수 없는 예측에 따르면 내년에 #bold 낮음#! [nile_flood_short|E] 수준의 @RICE_nile_flood_overflooding_icon! 나일강 범람이 예상됩니다." # 12012958070685790621
-  catalyst_situation_RICE_nile_forecast_overflooding_strong: "신중한 예측: @RICE_nile_flood_overflooding_icon! 낮은 [nile_flood|E] [situation|E] 촉매제" # 17754232531797307411
-  catalyst_situation_RICE_nile_forecast_overflooding_strong_desc: "신중한 예측에 따르면 내년에는 @RICE_nile_flood_overflooding_icon! #bold 낮음#! [nile_flood_short|E]이 예상됩니다." # 8844297717993967433
-  catalyst_situation_RICE_nile_forecast_overflooding_very_strong: "신뢰할 수 있는 예측: @RICE_nile_flood_overflooding_icon! 낮은 [nile_flood|E] [situation|E] 촉매" # 1469500954023577457
-  catalyst_situation_RICE_nile_forecast_overflooding_very_strong_desc: "신뢰할 만한 예측에 따르면 내년에 @RICE_nile_flood_overflooding_icon! #bold 심각한#! [nile_flood_short|E]가 예상됩니다." # 14619575928742179856
+  catalyst_situation_RICE_nile_forecast_overflooding_weak: "믿을 수 없는 예보: @RICE_nile_flood_overflooding_icon! 범람하는 [nile_flood|E] [situation|E] 촉매" # 8764645934204828042
+  catalyst_situation_RICE_nile_forecast_overflooding_weak_desc: "믿을 수 없는 예보는 내년에 @RICE_nile_flood_overflooding_icon! #bold 범람하는#! [nile_flood_short|E]을(를) 예상합니다" # 6718631256124984697
+  catalyst_situation_RICE_nile_forecast_overflooding_strong: "신중한 예보: @RICE_nile_flood_overflooding_icon! 범람하는 [nile_flood|E] [situation|E] 촉매" # 4357591123316043178
+  catalyst_situation_RICE_nile_forecast_overflooding_strong_desc: "신중한 예보는 내년에 @RICE_nile_flood_overflooding_icon! #bold 범람하는#! [nile_flood_short|E]을(를) 예상합니다" # 5495007253916862598
+  catalyst_situation_RICE_nile_forecast_overflooding_very_strong: "신빙성 있는 예보: @RICE_nile_flood_overflooding_icon! 범람하는 [nile_flood|E] [situation|E] 촉매" # 14131848723094183566
+  catalyst_situation_RICE_nile_forecast_overflooding_very_strong_desc: "신빙성 있는 예보는 내년에 @RICE_nile_flood_overflooding_icon! #bold 범람하는#! [nile_flood_short|E]을(를) 예상합니다" # 5586812067689365252
   catalyst_situation_RICE_nile_forecast_normal_expected: "[nile_flood|E] 기대치 [situation|E] 촉매제" # 4147382825369748649
   catalyst_situation_RICE_nile_forecast_normal_expected_desc: "[nile_flood|E] 기대치" # 14116230138398835370
   catalyst_situation_RICE_nile_forecast_high_expected: "[nile_flood|E] 기대치 [situation|E] 촉매제" # 4147382825369748649

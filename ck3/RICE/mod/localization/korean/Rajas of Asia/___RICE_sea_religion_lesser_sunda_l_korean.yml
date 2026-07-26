@@ -21,6 +21,28 @@
   marapu_high_god_herhis: "그의" # 14588382875684683839
   marapu_high_god_name_alternate: "$marapu_high_god_name$" # 6808912689122217261
   marapu_high_god_name_alternate_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_creator_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_creator_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_health_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_health_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_fertility_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_fertility_god_name_possessive: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_wealth_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_wealth_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_household_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_household_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_fate_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_fate_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_knowledge_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_knowledge_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_war_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_war_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_trickster_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_trickster_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_night_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_night_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
+  marapu_water_god_name: "$marapu_high_god_name$" # 6808912689122217261
+  marapu_water_god_name_possessive: "$marapu_high_god_name_possessive$" # 1212862601019906792
   marapu_pantheon_term: "선조들" # 3977550578121230202
   marapu_pantheon_term_hashave: "가지고 있다" # 4522849327189893929
   marapu_pantheon_term_2: "$marapu_pantheon_term$" # 14254084395106603683
