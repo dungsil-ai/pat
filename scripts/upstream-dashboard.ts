@@ -619,7 +619,7 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
 }
 
 function escapeMarkdownTableCell(value: string): string {
-  return value.replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ')
+  return value.replace(/\\/g, '\\\\').replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ')
 }
 
 function normalizeLocalizationPaths(paths: string[]): string[] {

@@ -10,6 +10,44 @@ function getOptionalString(value) {
   return trimmed.length > 0 ? trimmed : undefined;
 }
 
+function getIssueBodyField(body, fieldName) {
+  if (typeof body !== 'string') return null;
+
+  const prefix = `**${fieldName}**:`;
+  let lineStart = 0;
+
+  while (lineStart <= body.length) {
+    const newlineIndex = body.indexOf('\n', lineStart);
+    const lineEnd = newlineIndex === -1 ? body.length : newlineIndex;
+    const rawLine = body.slice(lineStart, lineEnd);
+    const line = rawLine.endsWith('\r') ? rawLine.slice(0, -1) : rawLine;
+
+    if (line.startsWith(prefix)) {
+      return getOptionalString(line.slice(prefix.length)) || null;
+    }
+
+    if (newlineIndex === -1) break;
+    lineStart = newlineIndex + 1;
+  }
+
+  return null;
+}
+
+function getIssueBodyCodeField(body, fieldName) {
+  const value = getIssueBodyField(body, fieldName);
+  if (
+    value === null ||
+    value.length < 3 ||
+    value[0] !== '`' ||
+    value[value.length - 1] !== '`'
+  ) {
+    return null;
+  }
+
+  const unwrapped = value.slice(1, -1);
+  return unwrapped.includes('`') ? null : unwrapped;
+}
+
 function createScope(mod, componentId, componentName) {
   const normalizedMod = mod.trim();
   const normalizedComponentId = getOptionalString(componentId);
@@ -78,9 +116,9 @@ function getGameDisplayName(game) {
 }
 
 function getIssueMod(issue, gameDisplayName) {
-  const bodyModMatch = (issue.body || '').match(/^\*\*모드\*\*:\s*(.+)$/m);
-  if (bodyModMatch) {
-    return bodyModMatch[1].trim();
+  const bodyMod = getIssueBodyField(issue.body || '', '모드');
+  if (bodyMod !== null) {
+    return bodyMod;
   }
 
   const prefix = `[${gameDisplayName}] 번역 거부 항목 발생: `;
@@ -97,10 +135,10 @@ function getIssueScope(issue, gameDisplayName) {
   if (markerMatch) {
     const markerScope = decodeScopeMarker(markerMatch[1]);
     if (markerScope) {
-      const componentNameMatch = body.match(/^\*\*논리 모드\*\*:\s*(.+)$/m);
+      const componentName = getIssueBodyField(body, '논리 모드');
       return {
         ...markerScope,
-        componentName: componentNameMatch?.[1].trim() || markerScope.componentName
+        componentName: componentName || markerScope.componentName
       };
     }
   }
@@ -108,9 +146,9 @@ function getIssueScope(issue, gameDisplayName) {
   const mod = getIssueMod(issue, gameDisplayName);
   if (mod === null) return null;
 
-  const componentIdMatch = body.match(/^\*\*컴포넌트 ID\*\*:\s*`([^`]+)`$/m);
-  const componentNameMatch = body.match(/^\*\*논리 모드\*\*:\s*(.+)$/m);
-  return createScope(mod, componentIdMatch?.[1], componentNameMatch?.[1]);
+  const componentId = getIssueBodyCodeField(body, '컴포넌트 ID');
+  const componentName = getIssueBodyField(body, '논리 모드');
+  return createScope(mod, componentId || undefined, componentName || undefined);
 }
 
 function getUnresolvedScopeKeys(items) {

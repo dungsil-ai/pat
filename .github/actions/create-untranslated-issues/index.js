@@ -16,6 +16,44 @@ function getOptionalString(value) {
   return trimmed.length > 0 ? trimmed : undefined;
 }
 
+function getIssueBodyField(body, fieldName) {
+  if (typeof body !== 'string') return null;
+
+  const prefix = `**${fieldName}**:`;
+  let lineStart = 0;
+
+  while (lineStart <= body.length) {
+    const newlineIndex = body.indexOf('\n', lineStart);
+    const lineEnd = newlineIndex === -1 ? body.length : newlineIndex;
+    const rawLine = body.slice(lineStart, lineEnd);
+    const line = rawLine.endsWith('\r') ? rawLine.slice(0, -1) : rawLine;
+
+    if (line.startsWith(prefix)) {
+      return getOptionalString(line.slice(prefix.length)) || null;
+    }
+
+    if (newlineIndex === -1) break;
+    lineStart = newlineIndex + 1;
+  }
+
+  return null;
+}
+
+function getIssueBodyCodeField(body, fieldName) {
+  const value = getIssueBodyField(body, fieldName);
+  if (
+    value === null ||
+    value.length < 3 ||
+    value[0] !== '`' ||
+    value[value.length - 1] !== '`'
+  ) {
+    return null;
+  }
+
+  const unwrapped = value.slice(1, -1);
+  return unwrapped.includes('`') ? null : unwrapped;
+}
+
 function createScope(mod, componentId, componentName) {
   const normalizedMod = mod.trim();
   const normalizedComponentId = getOptionalString(componentId);
@@ -55,11 +93,11 @@ function getIssueScopeKey(issue) {
     return decodeMarkerValue(markerMatch[1]);
   }
 
-  const modMatch = body.match(/^\*\*모드\*\*:\s*(.+)$/m);
-  if (!modMatch) return null;
+  const mod = getIssueBodyField(body, '모드');
+  if (mod === null) return null;
 
-  const componentIdMatch = body.match(/^\*\*컴포넌트 ID\*\*:\s*`([^`]+)`$/m);
-  return createScope(modMatch[1].trim(), componentIdMatch?.[1]).key;
+  const componentId = getIssueBodyCodeField(body, '컴포넌트 ID');
+  return createScope(mod, componentId || undefined).key;
 }
 
 function getIssueTitle(gameDisplayName, scope) {
@@ -78,7 +116,33 @@ function getItemIdentity(item) {
 }
 
 function escapeTableText(value) {
-  return value.replace(/\|/g, '\\|').replace(/\n/g, ' ').replace(/`/g, '\\`');
+  let escaped = '';
+
+  for (const character of value) {
+    if (character === '&') escaped += '&amp;';
+    else if (character === '<') escaped += '&lt;';
+    else if (character === '>') escaped += '&gt;';
+    else if (character === '\\') escaped += '&#92;';
+    else if (character === '|') escaped += '&#124;';
+    else if (character === '`') escaped += '&#96;';
+    else if (character === '\n' || character === '\r') escaped += ' ';
+    else escaped += character;
+  }
+
+  return escaped;
+}
+
+function escapeHtmlText(value) {
+  let escaped = '';
+
+  for (const character of value) {
+    if (character === '&') escaped += '&amp;';
+    else if (character === '<') escaped += '&lt;';
+    else if (character === '>') escaped += '&gt;';
+    else escaped += character;
+  }
+
+  return escaped;
 }
 
 /**
@@ -89,18 +153,18 @@ function escapeTableText(value) {
 function formatItemAsTableRow(item) {
   const rawMessage = item.message;
   const escapedSource = escapeTableText(getItemSource(item));
-  const escapedKey = item.key.replace(/`/g, '\\`').replace(/\n/g, ' ');
+  const escapedKey = escapeTableText(item.key);
   const escapedMessage = escapeTableText(rawMessage);
   let displayMessage = escapedMessage;
   let detailsSection = '';
 
   if (rawMessage.length > 100 || rawMessage.includes('\n')) {
     displayMessage = `${escapedMessage.slice(0, 100)}...`;
-    const detailsMessage = rawMessage.replace(/`/g, '\\`');
-    detailsSection = `<details><summary>전체 메시지 보기</summary>\n\n\`\`\`\n${detailsMessage}\n\`\`\`\n\n</details>\n`;
+    const detailsMessage = escapeHtmlText(rawMessage);
+    detailsSection = `<details><summary>전체 메시지 보기</summary>\n\n<pre>${detailsMessage}</pre>\n\n</details>\n`;
   }
 
-  let row = `| ${escapedSource} | \`${escapedKey}\` | ${displayMessage} |\n`;
+  let row = `| ${escapedSource} | <code>${escapedKey}</code> | ${displayMessage} |\n`;
   if (detailsSection) {
     row += detailsSection;
   }

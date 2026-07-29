@@ -468,6 +468,24 @@ describe('buildIssueBody', () => {
     expect(buildIssueBody(rows))
       .toContain('| VIC3 | Bundle | One \\| Two (`one`) | default |')
   })
+
+  it('파이프 앞의 기존 백슬래시도 먼저 이스케이프하여 셀 구분 우회를 막아야 한다', () => {
+    const rows: DashboardRow[] = [{
+      game: 'vic3',
+      mod: 'Bundle',
+      componentId: 'one',
+      componentName: String.raw`One \| Two`,
+      strategy: 'default',
+      trackedBy: 'commit',
+      baselineVersion: 'abc1234',
+      latestVersion: 'abc1234',
+      status: '최신'
+    }]
+
+    const escapedComponent = String.raw`One \\\| Two`
+    expect(buildIssueBody(rows))
+      .toContain(`| VIC3 | Bundle | ${escapedComponent} (\`one\`) | default |`)
+  })
 })
 
 describe('fetchGitHubReleases', () => {
