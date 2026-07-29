@@ -1,40 +1,190 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
 const fs = require('fs');
 const path = require('path');
-const { githubApiRetry } = require('@pat-actions/shared');
 
-// 테이블에서 키를 추출하기 위한 정규식: | 파일 | `키` | 원문 | 형식
-const TABLE_KEY_REGEX = /\|\s*[^|]+\s*\|\s*`([^`]+)`\s*\|/g;
+const SCOPE_MARKER_REGEX = /<!--\s*pat-untranslated-scope:([A-Za-z0-9_-]+)\s*-->/;
+
+function getGameDisplayName(game) {
+  if (game === 'ck3') return 'CK3';
+  if (game === 'vic3') return 'VIC3';
+  if (game === 'stellaris') return 'Stellaris';
+  return game;
+}
+
+function getOptionalString(value) {
+  if (typeof value !== 'string') return undefined;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function createScope(mod, componentId, componentName) {
+  const normalizedMod = mod.trim();
+  const normalizedComponentId = getOptionalString(componentId);
+  const normalizedComponentName = getOptionalString(componentName) || normalizedComponentId;
+  return {
+    key: JSON.stringify([normalizedMod, normalizedComponentId || null]),
+    mod: normalizedMod,
+    componentId: normalizedComponentId,
+    componentName: normalizedComponentName
+  };
+}
+
+function getItemScope(item) {
+  return createScope(item.mod, item.componentId, item.componentName);
+}
+
+function encodeMarkerValue(value) {
+  return Buffer.from(value, 'utf8').toString('base64url');
+}
+
+function decodeMarkerValue(value) {
+  try {
+    return Buffer.from(value, 'base64url').toString('utf8');
+  } catch {
+    return null;
+  }
+}
+
+function getScopeMarker(scope) {
+  return `<!-- pat-untranslated-scope:${encodeMarkerValue(scope.key)} -->`;
+}
+
+function getIssueScopeKey(issue) {
+  const body = issue.body || '';
+  const markerMatch = body.match(SCOPE_MARKER_REGEX);
+  if (markerMatch) {
+    return decodeMarkerValue(markerMatch[1]);
+  }
+
+  const modMatch = body.match(/^\*\*모드\*\*:\s*(.+)$/m);
+  if (!modMatch) return null;
+
+  const componentIdMatch = body.match(/^\*\*컴포넌트 ID\*\*:\s*`([^`]+)`$/m);
+  return createScope(modMatch[1].trim(), componentIdMatch?.[1]).key;
+}
+
+function getIssueTitle(gameDisplayName, scope) {
+  const displayName = scope.componentName
+    ? `${scope.mod} / ${scope.componentName}`
+    : scope.mod;
+  return `[${gameDisplayName}] 번역 거부 항목 발생: ${displayName}`;
+}
+
+function getItemSource(item) {
+  return getOptionalString(item.sourcePath) || item.file;
+}
+
+function getItemIdentity(item) {
+  return JSON.stringify([getItemSource(item), item.key]);
+}
+
+function escapeTableText(value) {
+  return value.replace(/\|/g, '\\|').replace(/\n/g, ' ').replace(/`/g, '\\`');
+}
 
 /**
- * 항목을 테이블 행으로 포맷팅
- * @param {Object} item - 항목 객체 (file, key, message 포함)
- * @returns {string} 포맷된 테이블 행 문자열
+ * 항목을 테이블 행으로 포맷팅합니다.
+ * @param {Object} item 파일, 키, 원문을 포함한 번역 거부 항목
+ * @returns {string} 포맷된 테이블 행
  */
 function formatItemAsTableRow(item) {
   const rawMessage = item.message;
-  const escapedMessage = rawMessage.replace(/\|/g, '\\|').replace(/\n/g, ' ').replace(/`/g, '\\`');
+  const escapedSource = escapeTableText(getItemSource(item));
+  const escapedKey = item.key.replace(/`/g, '\\`').replace(/\n/g, ' ');
+  const escapedMessage = escapeTableText(rawMessage);
   let displayMessage = escapedMessage;
   let detailsSection = '';
-  
-  // 긴 메시지는 잘라서 표시하고, 전체 메시지는 접을 수 있는 섹션으로 표시
+
   if (rawMessage.length > 100 || rawMessage.includes('\n')) {
-    displayMessage = escapedMessage.slice(0, 100) + '...';
-    const detailsMessage = rawMessage.replace(/\|/g, '\\|').replace(/`/g, '\\`');
+    displayMessage = `${escapedMessage.slice(0, 100)}...`;
+    const detailsMessage = rawMessage.replace(/`/g, '\\`');
     detailsSection = `<details><summary>전체 메시지 보기</summary>\n\n\`\`\`\n${detailsMessage}\n\`\`\`\n\n</details>\n`;
   }
-  
-  let row = `| ${item.file} | \`${item.key}\` | ${displayMessage} |\n`;
+
+  let row = `| ${escapedSource} | \`${escapedKey}\` | ${displayMessage} |\n`;
   if (detailsSection) {
     row += detailsSection;
   }
   return row;
 }
 
+function isValidItem(item) {
+  const componentId = getOptionalString(item?.componentId);
+  const componentName = getOptionalString(item?.componentName);
+  return Boolean(
+    item &&
+    typeof item.mod === 'string' &&
+    item.mod.trim().length > 0 &&
+    typeof item.file === 'string' &&
+    typeof item.key === 'string' &&
+    typeof item.message === 'string' &&
+    (item.componentId === undefined || componentId !== undefined) &&
+    (item.componentName === undefined || componentName !== undefined) &&
+    (componentName === undefined || componentId !== undefined) &&
+    (item.sourcePath === undefined || getOptionalString(item.sourcePath) !== undefined)
+  );
+}
+
+function groupItemsByScope(items, onWarning = () => {}) {
+  const groups = new Map();
+
+  for (const item of items) {
+    if (!isValidItem(item)) {
+      onWarning(`필수 속성이 없거나 형식이 잘못된 항목을 건너뜁니다: ${JSON.stringify(item)}`);
+      continue;
+    }
+
+    const scope = getItemScope(item);
+    let group = groups.get(scope.key);
+    if (!group) {
+      group = { scope, items: new Map() };
+      groups.set(scope.key, group);
+    }
+
+    const identity = getItemIdentity(item);
+    if (!group.items.has(identity)) {
+      group.items.set(identity, item);
+    }
+  }
+
+  return [...groups.values()]
+    .map(group => ({
+      scope: group.scope,
+      items: [...group.items.entries()]
+        .sort(([left], [right]) => left.localeCompare(right))
+        .map(([, item]) => item)
+    }))
+    .sort((left, right) => left.scope.key.localeCompare(right.scope.key));
+}
+
+function buildIssueBody({ gameDisplayName, scope, items, timestamp }) {
+  let body = `${getScopeMarker(scope)}\n`;
+  body += `## 번역 거부 항목\n\n`;
+  body += `**게임**: ${gameDisplayName}\n`;
+  body += `**모드**: ${scope.mod}\n`;
+  if (scope.componentId) {
+    body += `**논리 모드**: ${scope.componentName}\n`;
+    body += `**컴포넌트 ID**: \`${scope.componentId}\`\n`;
+  }
+  body += `**발생 시간**: ${timestamp}\n\n`;
+  body += `### 현재 미번역 항목\n\n`;
+  body += `| 업스트림 출처 | 키 | 원문 |\n`;
+  body += `|---|---|---|\n`;
+
+  for (const item of items) {
+    body += formatItemAsTableRow(item);
+  }
+
+  body += `\n---\n`;
+  body += `이 이슈는 자동으로 생성되며, 현재 수집된 수동 번역 필요 항목과 동기화됩니다.\n`;
+  return body;
+}
+
 async function run() {
+  const core = require('@actions/core');
+  const github = require('@actions/github');
+  const { githubApiRetry } = require('@pat-actions/shared');
+
   try {
-    // 복합 액션에서는 INPUT_ 환경 변수를 직접 읽어야 함
     const game = process.env.INPUT_GAME;
     const token = process.env.INPUT_GITHUB_TOKEN;
 
@@ -47,14 +197,9 @@ async function run() {
       return;
     }
 
-    // game 이름을 대문자로 변환 (이슈 제목용)
-    const gameDisplayName = game === 'ck3' ? 'CK3' : 
-                            game === 'vic3' ? 'VIC3' : 
-                            game === 'stellaris' ? 'Stellaris' : game;
-
+    const gameDisplayName = getGameDisplayName(game);
     const octokit = github.getOctokit(token);
     const { context } = github;
-
     const filePath = path.join(process.cwd(), `${game}-untranslated-items.json`);
 
     if (!fs.existsSync(filePath)) {
@@ -70,160 +215,75 @@ async function run() {
       return;
     }
 
-    if (!data.items || data.items.length === 0) {
+    if (!Array.isArray(data.items) || data.items.length === 0) {
       core.info('번역되지 않은 항목이 없습니다.');
       return;
     }
 
-    // timestamp 필드 검증 및 기본값 설정
-    const timestamp = data.timestamp || '알 수 없음';
+    const groups = groupItemsByScope(data.items, message => core.warning(message));
+    if (groups.length === 0) {
+      core.info('유효한 번역 거부 항목이 없습니다.');
+      return;
+    }
 
-    // 기존 이슈 검색 (동일한 제목의 열린 이슈가 있는지 확인)
-    const existingIssues = await githubApiRetry(() => octokit.rest.issues.listForRepo({
+    const timestamp = data.timestamp || '알 수 없음';
+    const existingIssues = await githubApiRetry(() => octokit.paginate(octokit.rest.issues.listForRepo, {
       owner: context.repo.owner,
       repo: context.repo.repo,
       state: 'open',
-      labels: `translation-refused,${game}`
+      labels: `translation-refused,${game}`,
+      per_page: 100
     }), '이슈 목록 조회');
 
-    // 모드별로 항목 그룹화 (prototype pollution 방지)
-    const itemsByMod = Object.create(null);
-    for (const item of data.items) {
-      // 필수 속성 검증
-      if (
-        !item ||
-        typeof item.mod !== 'string' ||
-        typeof item.file !== 'string' ||
-        typeof item.key !== 'string' ||
-        typeof item.message !== 'string'
-      ) {
-        core.warning(`Skipping item with missing required properties: ${JSON.stringify(item)}`);
-        continue;
-      }
-      if (!itemsByMod[item.mod]) {
-        itemsByMod[item.mod] = [];
-      }
-      itemsByMod[item.mod].push(item);
-    }
+    for (const group of groups) {
+      const title = getIssueTitle(gameDisplayName, group.scope);
+      const body = buildIssueBody({
+        gameDisplayName,
+        scope: group.scope,
+        items: group.items,
+        timestamp
+      });
+      const matchingIssues = existingIssues
+        .filter(issue => !issue.pull_request)
+        .filter(issue => {
+          const issueScopeKey = getIssueScopeKey(issue);
+          return issueScopeKey === null
+            ? issue.title === title
+            : issueScopeKey === group.scope.key;
+        })
+        .sort((left, right) => left.number - right.number);
+      const existingIssue = matchingIssues[0];
 
-    for (const [mod, items] of Object.entries(itemsByMod)) {
-      const title = `[${gameDisplayName}] 번역 거부 항목 발생: ${mod}`;
-
-      // 동일한 제목의 열린 이슈가 있는지 확인
-      const existingIssue = existingIssues.data.find(issue => issue.title === title);
+      for (const duplicateIssue of matchingIssues.slice(1)) {
+        await githubApiRetry(() => octokit.rest.issues.update({
+          owner: context.repo.owner,
+          repo: context.repo.repo,
+          issue_number: duplicateIssue.number,
+          state: 'closed'
+        }), '중복 이슈 닫기');
+        core.info(`중복 이슈 #${duplicateIssue.number}를 닫았습니다.`);
+      }
 
       if (existingIssue) {
-        // 기존 이슈 본문에서 이미 존재하는 키 추출
-        const existingBody = existingIssue.body || '';
-        const existingKeys = new Set();
-        // 전역 플래그 정규식 사용 시 lastIndex 초기화 필요
-        TABLE_KEY_REGEX.lastIndex = 0;
-        let match;
-        while ((match = TABLE_KEY_REGEX.exec(existingBody)) !== null) {
-          existingKeys.add(match[1]);
-        }
-
-        // 새로운 항목만 필터링 (중복 제거)
-        const newItems = items.filter(item => !existingKeys.has(item.key));
-
-        if (newItems.length === 0) {
-          core.info(`기존 이슈 #${existingIssue.number}에 새로운 항목이 없습니다.`);
-          continue;
-        }
-
-        // 기존 본문에서 마지막 업데이트 시간 부분과 footer 제거
-        let updatedBody = existingBody.replace(/\*\*마지막 업데이트\*\*:.*?\n+/s, '');
-        updatedBody = updatedBody.replace(/\n---\n[\s\S]*$/s, '');
-
-        // 테이블이 실제로 시작하는 위치 찾기
-        const lines = updatedBody.split('\n');
-        let tableStartLine = -1;
-        for (let i = 0; i < lines.length; i++) {
-          if (lines[i].trim().startsWith('|')) {
-            tableStartLine = i;
-            break;
-          }
-        }
-
-        if (tableStartLine === -1) {
-          core.warning('테이블을 찾을 수 없습니다');
-          continue;
-        }
-
-        // 테이블 끝 위치 찾기 (테이블 시작점부터 검사)
-        // 알고리즘:
-        // 1. tableStartLine + 2부터 시작 (헤더와 구분선 건너뛰기)
-        // 2. 테이블 행(|로 시작), <details> 섹션, 빈 줄을 모두 테이블의 일부로 간주
-        // 3. 테이블 구조가 아닌 줄을 만나면 테이블의 끝으로 판단
-        let tableEndLine = tableStartLine + 1; // 최소한 구분선 다음에 삽입
-        for (let i = tableStartLine + 2; i < lines.length; i++) {
-          const line = lines[i].trim();
-          // 테이블 행, details 섹션, 빈 줄은 계속 진행
-          if (line.startsWith('|') || line.startsWith('<details>') || line.startsWith('</details>') || line === '') {
-            tableEndLine = i;
-          } else {
-            // 그 외의 경우 테이블 끝
-            break;
-          }
-        }
-
-        // insertPosition: tableEndLine 다음 줄의 시작 위치
-        let insertPosition = 0;
-        if (tableEndLine > 0) {
-          // 줄의 끝까지의 길이 합 + 줄 개수만큼의 개행
-          insertPosition = lines.slice(0, tableEndLine + 1).join('\n').length;
-          // 줄 개수가 1개 이상이면 개행 추가
-          if (insertPosition < updatedBody.length) insertPosition += 1;
-        } else {
-          insertPosition = updatedBody.length;
-        }
-
-        // 새 항목들을 테이블에 추가
-        let newRows = '';
-        for (const item of newItems) {
-          newRows += formatItemAsTableRow(item);
-        }
-
-        // 본문 업데이트
-        updatedBody = updatedBody.slice(0, insertPosition) + newRows + updatedBody.slice(insertPosition);
-        updatedBody += `\n**마지막 업데이트**: ${timestamp}\n\n`;
-        updatedBody += `---\n`;
-        updatedBody += `이 이슈는 자동으로 생성되었습니다. 수동 번역이 필요한 항목입니다.\n`;
-
-        // 이슈 본문 업데이트
         await githubApiRetry(() => octokit.rest.issues.update({
           owner: context.repo.owner,
           repo: context.repo.repo,
           issue_number: existingIssue.number,
-          body: updatedBody
+          title,
+          body
         }), '이슈 업데이트');
-        core.info(`기존 이슈 #${existingIssue.number}의 본문을 업데이트했습니다. (새 항목 ${newItems.length}개 추가)`);
-      } else {
-        // 새 이슈 생성
-        let body = `## 번역 거부 항목\n\n`;
-        body += `**게임**: ${gameDisplayName}\n`;
-        body += `**모드**: ${mod}\n`;
-        body += `**발생 시간**: ${timestamp}\n\n`;
-        body += `### 항목 목록\n\n`;
-        body += `| 파일 | 키 | 원문 |\n`;
-        body += `|------|-----|------|\n`;
-
-        for (const item of items) {
-          body += formatItemAsTableRow(item);
-        }
-
-        body += `\n---\n`;
-        body += `이 이슈는 자동으로 생성되었습니다. 수동 번역이 필요한 항목입니다.\n`;
-
-        const newIssue = await githubApiRetry(() => octokit.rest.issues.create({
-          owner: context.repo.owner,
-          repo: context.repo.repo,
-          title: title,
-          body: body,
-          labels: ['translation-refused', game]
-        }), '이슈 생성');
-        core.info(`새 이슈 #${newIssue.data.number}를 생성했습니다.`);
+        core.info(`기존 이슈 #${existingIssue.number}를 현재 미번역 항목 ${group.items.length}개와 동기화했습니다.`);
+        continue;
       }
+
+      const newIssue = await githubApiRetry(() => octokit.rest.issues.create({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        title,
+        body,
+        labels: ['translation-refused', game]
+      }), '이슈 생성');
+      core.info(`새 이슈 #${newIssue.data.number}를 생성했습니다.`);
     }
   } catch (error) {
     core.setFailed(error.message);
@@ -233,4 +293,17 @@ async function run() {
   }
 }
 
-run();
+if (require.main === module) {
+  void run();
+}
+
+module.exports = {
+  buildIssueBody,
+  createScope,
+  formatItemAsTableRow,
+  getIssueScopeKey,
+  getIssueTitle,
+  getItemIdentity,
+  getScopeMarker,
+  groupItemsByScope
+};

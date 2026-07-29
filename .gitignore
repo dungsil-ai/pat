@@ -20,6 +20,7 @@ package-lock.json
 
 ### Translation workflow generated files ###
 *-untranslated-items.json
+**/.pat-file-hashes.json
 
 ### 개인모드 ###
 **/upstream/!*/

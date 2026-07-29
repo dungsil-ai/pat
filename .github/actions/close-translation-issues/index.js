@@ -1,11 +1,46 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const { githubApiRetry } = require('@pat-actions/shared');
 
-function readUntranslatedItems(filePath) {
+const SCOPE_MARKER_REGEX = /<!--\s*pat-untranslated-scope:([A-Za-z0-9_-]+)\s*-->/;
+
+function getOptionalString(value) {
+  if (typeof value !== 'string') return undefined;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function createScope(mod, componentId, componentName) {
+  const normalizedMod = mod.trim();
+  const normalizedComponentId = getOptionalString(componentId);
+  const normalizedComponentName = getOptionalString(componentName) || normalizedComponentId;
+  return {
+    key: JSON.stringify([normalizedMod, normalizedComponentId || null]),
+    mod: normalizedMod,
+    componentId: normalizedComponentId,
+    componentName: normalizedComponentName
+  };
+}
+
+function decodeScopeMarker(value) {
+  try {
+    const decoded = Buffer.from(value, 'base64url').toString('utf8');
+    const parsed = JSON.parse(decoded);
+    if (
+      !Array.isArray(parsed) ||
+      parsed.length !== 2 ||
+      typeof parsed[0] !== 'string' ||
+      (parsed[1] !== null && typeof parsed[1] !== 'string')
+    ) {
+      return null;
+    }
+    return createScope(parsed[0], parsed[1] || undefined);
+  } catch {
+    return null;
+  }
+}
+
+function readUntranslatedItems(filePath, logger = console) {
   if (!fs.existsSync(filePath)) {
     return { ok: false, items: [], reason: 'missing' };
   }
@@ -15,12 +50,22 @@ function readUntranslatedItems(filePath) {
     if (!Array.isArray(data.items)) {
       return { ok: false, items: [], reason: 'invalid-items' };
     }
-    return {
-      ok: true,
-      items: data.items.filter(item => item && typeof item.mod === 'string')
-    };
-  } catch (e) {
-    core.error(`Failed to parse untranslated items file: ${e.message}`);
+
+    const hasInvalidScope = data.items.some(item => (
+      !item ||
+      typeof item.mod !== 'string' ||
+      item.mod.trim().length === 0 ||
+      (item.componentId !== undefined && getOptionalString(item.componentId) === undefined) ||
+      (item.componentName !== undefined && getOptionalString(item.componentName) === undefined) ||
+      (getOptionalString(item.componentName) !== undefined && getOptionalString(item.componentId) === undefined)
+    ));
+    if (hasInvalidScope) {
+      return { ok: false, items: [], reason: 'invalid-item-scope' };
+    }
+
+    return { ok: true, items: data.items };
+  } catch (error) {
+    logger.error(`Failed to parse untranslated items file: ${error.message}`);
     return { ok: false, items: [], reason: 'parse-error' };
   }
 }
@@ -33,17 +78,43 @@ function getGameDisplayName(game) {
 }
 
 function getIssueMod(issue, gameDisplayName) {
-  const prefix = `[${gameDisplayName}] 번역 거부 항목 발생: `;
-  if (issue.title.startsWith(prefix)) {
-    return issue.title.slice(prefix.length);
-  }
-
   const bodyModMatch = (issue.body || '').match(/^\*\*모드\*\*:\s*(.+)$/m);
   if (bodyModMatch) {
     return bodyModMatch[1].trim();
   }
 
+  const prefix = `[${gameDisplayName}] 번역 거부 항목 발생: `;
+  if (issue.title.startsWith(prefix)) {
+    return issue.title.slice(prefix.length);
+  }
+
   return null;
+}
+
+function getIssueScope(issue, gameDisplayName) {
+  const body = issue.body || '';
+  const markerMatch = body.match(SCOPE_MARKER_REGEX);
+  if (markerMatch) {
+    const markerScope = decodeScopeMarker(markerMatch[1]);
+    if (markerScope) {
+      const componentNameMatch = body.match(/^\*\*논리 모드\*\*:\s*(.+)$/m);
+      return {
+        ...markerScope,
+        componentName: componentNameMatch?.[1].trim() || markerScope.componentName
+      };
+    }
+  }
+
+  const mod = getIssueMod(issue, gameDisplayName);
+  if (mod === null) return null;
+
+  const componentIdMatch = body.match(/^\*\*컴포넌트 ID\*\*:\s*`([^`]+)`$/m);
+  const componentNameMatch = body.match(/^\*\*논리 모드\*\*:\s*(.+)$/m);
+  return createScope(mod, componentIdMatch?.[1], componentNameMatch?.[1]);
+}
+
+function getUnresolvedScopeKeys(items) {
+  return new Set(items.map(item => createScope(item.mod, item.componentId, item.componentName).key));
 }
 
 function getCurrentCommit() {
@@ -57,7 +128,7 @@ function getResolutionMarker({ gameType, commit }) {
   return `<!-- pat-translation-resolved:${gameType}:${commit.sha} -->`;
 }
 
-function buildResolutionComment({ commit, context, gameType, issueMod }) {
+function buildResolutionComment({ commit, context, gameType, issueScope }) {
   const timestamp = new Date().toISOString();
   const serverUrl = process.env.GITHUB_SERVER_URL || 'https://github.com';
   const commitUrl = `${serverUrl}/${context.repo.owner}/${context.repo.repo}/commit/${commit.sha}`;
@@ -65,13 +136,16 @@ function buildResolutionComment({ commit, context, gameType, issueMod }) {
 
   let body = `${marker}\n`;
   body += `✅ 해결된 번역이 다음 커밋에 반영되어 이슈를 닫습니다.\n\n`;
-  body += `- 모드: \`${issueMod}\`\n`;
+  body += `- 모드: \`${issueScope.mod}\`\n`;
+  if (issueScope.componentId) {
+    body += `- 논리 모드: \`${issueScope.componentName}\` (\`${issueScope.componentId}\`)\n`;
+  }
   body += `- 반영 커밋: [\`${commit.shortSha}\`](${commitUrl}) ${commit.subject}\n`;
   body += `- 확인 시각: ${timestamp}\n`;
   return body;
 }
 
-async function hasResolutionComment({ octokit, context, issue, gameType, commit }) {
+async function hasResolutionComment({ octokit, context, issue, gameType, commit, githubApiRetry }) {
   const marker = getResolutionMarker({ gameType, commit });
   const comments = await githubApiRetry(() => octokit.paginate(octokit.rest.issues.listComments, {
     owner: context.repo.owner,
@@ -84,8 +158,11 @@ async function hasResolutionComment({ octokit, context, issue, gameType, commit 
 }
 
 async function run() {
+  const core = require('@actions/core');
+  const github = require('@actions/github');
+  const { githubApiRetry } = require('@pat-actions/shared');
+
   try {
-    // 복합 액션에서는 INPUT_ 환경 변수를 직접 읽어야 함
     const gameType = process.env.INPUT_GAME;
     const token = process.env.INPUT_GITHUB_TOKEN;
 
@@ -101,17 +178,16 @@ async function run() {
     const octokit = github.getOctokit(token);
     const { context } = github;
     const gameDisplayName = getGameDisplayName(gameType);
-
     const filePath = path.join(process.cwd(), `${gameType}-untranslated-items.json`);
-    const untranslatedResult = readUntranslatedItems(filePath);
+    const untranslatedResult = readUntranslatedItems(filePath, core);
+
     if (!untranslatedResult.ok) {
       core.warning(`번역되지 않은 항목 파일을 신뢰할 수 없어 이슈 닫기를 건너뜁니다. reason=${untranslatedResult.reason}`);
       return;
     }
 
-    const unresolvedMods = new Set(untranslatedResult.items.map(item => item.mod));
+    const unresolvedScopes = getUnresolvedScopeKeys(untranslatedResult.items);
     const currentCommit = getCurrentCommit();
-
     const existingIssues = await githubApiRetry(() => octokit.paginate(octokit.rest.issues.listForRepo, {
       owner: context.repo.owner,
       repo: context.repo.repo,
@@ -126,14 +202,22 @@ async function run() {
     }
 
     for (const issue of existingIssues) {
-      const issueMod = getIssueMod(issue, gameDisplayName);
-      if (issueMod === null) {
-        core.info(`이슈 #${issue.number}에서 모드명을 확인할 수 없어 건너뜁니다.`);
+      if (issue.pull_request) {
+        core.info(`풀 리퀘스트 #${issue.number}는 번역 거부 이슈 종료 대상에서 제외합니다.`);
         continue;
       }
 
-      if (unresolvedMods.has(issueMod)) {
-        core.info(`이슈 #${issue.number}(${issueMod})는 아직 미번역 항목이 남아 있어 유지합니다.`);
+      const issueScope = getIssueScope(issue, gameDisplayName);
+      if (issueScope === null) {
+        core.info(`이슈 #${issue.number}에서 모드 범위를 확인할 수 없어 건너뜁니다.`);
+        continue;
+      }
+
+      const scopeDisplayName = issueScope.componentName
+        ? `${issueScope.mod} / ${issueScope.componentName}`
+        : issueScope.mod;
+      if (unresolvedScopes.has(issueScope.key)) {
+        core.info(`이슈 #${issue.number}(${scopeDisplayName})는 아직 미번역 항목이 남아 있어 유지합니다.`);
         continue;
       }
 
@@ -142,7 +226,8 @@ async function run() {
         context,
         issue,
         gameType,
-        commit: currentCommit
+        commit: currentCommit,
+        githubApiRetry
       });
 
       if (!alreadyCommented) {
@@ -150,7 +235,12 @@ async function run() {
           owner: context.repo.owner,
           repo: context.repo.repo,
           issue_number: issue.number,
-          body: buildResolutionComment({ commit: currentCommit, context, gameType, issueMod })
+          body: buildResolutionComment({
+            commit: currentCommit,
+            context,
+            gameType,
+            issueScope
+          })
         }), '이슈 해결 코멘트 작성');
       }
 
@@ -161,7 +251,7 @@ async function run() {
         state: 'closed'
       }), '이슈 닫기');
 
-      core.info(`이슈 #${issue.number}(${issueMod})에 해결 커밋 코멘트를 남기고 닫았습니다.`);
+      core.info(`이슈 #${issue.number}(${scopeDisplayName})에 해결 커밋 코멘트를 남기고 닫았습니다.`);
     }
   } catch (error) {
     core.setFailed(error.message);
@@ -171,4 +261,17 @@ async function run() {
   }
 }
 
-run();
+if (require.main === module) {
+  void run();
+}
+
+module.exports = {
+  buildResolutionComment,
+  createScope,
+  getGameDisplayName,
+  getIssueMod,
+  getIssueScope,
+  getResolutionMarker,
+  getUnresolvedScopeKeys,
+  readUntranslatedItems
+};

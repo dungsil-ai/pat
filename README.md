@@ -315,9 +315,9 @@ heritage_desc:0 "Korean heritage"    → "한국 유산" (의미 번역, _desc�
 - 빌드: `pnpm exec jiti scripts/upstream-dashboard.ts` → `upstream-dashboard.md` 생성 (GitHub API/GraphQL로 태그·커밋 비교, `GITHUB_TOKEN` 설정 시 인증 사용, annotated 태그 지원)
 - 게시: 제목 `[대시보드] 업스트림 변경 대비 번역 미반영 현황`, 라벨 `upstream-dashboard` 로 이슈 생성·갱신. 동일 제목의 이슈가 여러 개 존재할 경우 번호가 가장 낮은 이슈만 유지하고 나머지 중복 이슈를 자동으로 닫습니다.
 - 중복 실행 방지: `concurrency` 그룹(`upstream-dashboard`)으로 동시 실행을 직렬화하여 중복 이슈 생성을 예방합니다.
-- 내용: 게임/모드별 추적 방식(tag/commit), 기준 버전·최신 버전 값에 비교 링크 포함, 미반영 수 집계
+- 내용: 게임/번역 묶음/논리 모드별 추적 방식(tag/commit), 기준 버전·최신 버전 값에 비교 링크 포함, 미반영 논리 모드 수 집계
 - `github` 전략은 GitHub Releases의 공개 릴리스만 사용하며 프리릴리즈/드래프트는 제외합니다.
-- `default` 전략은 기본 브랜치 전체가 아니라 `upstream.localization` 경로에 영향을 준 최신 커밋을 기준으로 미반영 여부를 계산합니다. `["."]`이면 저장소 전체를 추적합니다.
+- `default` 전략은 기본 브랜치 전체가 아니라 각 논리 모드의 localization 경로에 영향을 준 최신 커밋을 기준으로 미반영 여부를 계산합니다. `["."]`이면 저장소 전체를 추적합니다.
 
 ## 라이선스
 

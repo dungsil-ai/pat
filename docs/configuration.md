@@ -28,6 +28,9 @@ localization = ["경로1", "경로2", ...]
 language = "소스_언어"
 ```
 
+한 저장소에 서로 독립적으로 배포되는 모드가 여러 개 있으면
+`localization` 대신 `[[upstream.components]]`를 사용합니다.
+
 ## 필드 상세 설명
 
 ### `upstream.url` (선택사항)
@@ -54,11 +57,13 @@ url = "https://github.com/cybrxkhan/RICE-for-CK3.git"
 - HTTPS: `https://github.com/user/repo.git`
 - SSH: `git@github.com:user/repo.git`
 
-### `upstream.localization` (필수)
+### `upstream.localization` (조건부 필수)
 
 **타입:** Array of Strings
 
 **설명:** 번역할 localization 파일이 있는 경로들
+
+`upstream.components`를 사용하지 않을 때 필수입니다. 두 설정을 동시에 사용할 수는 없습니다.
 
 **특징:**
 - 배열 형태로 여러 경로 지정 가능
@@ -90,6 +95,55 @@ localization = [
   "dlc/expansion1/localization/english"
 ]
 ```
+
+### `upstream.components` (조건부 필수)
+
+**타입:** Array of Tables
+
+**설명:** 하나의 물리 저장소 안에 있는 논리 모드를 독립된 컴포넌트로 선언합니다.
+
+- `upstream.localization`과 동시에 사용할 수 없습니다.
+- 저장소는 한 번만 기본 브랜치로 체크아웃하고, 모든 컴포넌트의 경로를 하나의 sparse checkout에 합칩니다.
+- 번역, 미번역 이슈, 업스트림 대시보드와 버전 판정은 컴포넌트 단위로 처리합니다.
+- 서로 다른 컴포넌트가 같은 한국어 대상 파일을 만들면 덮어쓰지 않고 설정 오류로 중단합니다.
+
+각 컴포넌트 필드는 다음과 같습니다.
+
+| 필드 | 필수 | 설명 |
+|---|---|---|
+| `id` | 예 | 변경하지 않고 유지할 소문자 영숫자 기반 식별자 |
+| `name` | 아니요 | 대시보드와 이슈에 표시할 이름. 생략하면 `id` 사용 |
+| `localization` | 예 | 이 컴포넌트가 소유하는 저장소 상대 경로 배열 |
+| `version_strategy` | 아니요 | 컴포넌트의 대시보드 버전 비교 방식. 기본값은 `default` |
+| `tag_pattern` | 조건부 | `version_strategy`가 `default`가 아니면 필수인 태그 구분 정규식 |
+| `output_subdir` | 아니요 | 다른 컴포넌트와 출력 디렉터리를 분리할 한국어 출력 하위 경로 |
+
+```toml
+[upstream]
+url = "https://github.com/example/mod-pack.git"
+language = "english"
+version_strategy = "default"
+
+[[upstream.components]]
+id = "first"
+name = "First Mod"
+localization = ["First Mod/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^FIRST-v"
+
+[[upstream.components]]
+id = "second"
+name = "Second Mod"
+localization = ["Second Mod/localization/english"]
+version_strategy = "semantic"
+tag_pattern = "^SECOND-v"
+output_subdir = "second"
+```
+
+컴포넌트 설정에서는 최상위 `upstream.version_strategy`가 물리 저장소의 체크아웃 기준이므로
+`default`여야 합니다. 각 논리 모드의 릴리스 버전은 해당 컴포넌트의
+`version_strategy`와 `tag_pattern`으로 별도 추적합니다. 현재 물리 저장소는 별도 릴리스
+브랜치가 아니라 원격 기본 브랜치를 체크아웃합니다.
 
 ### `upstream.language` (필수)
 
@@ -209,6 +263,9 @@ ck3/LocalMod/
 - `natural`: 태그명을 자연 정렬로 비교하며 `beta`, `alpha`, `rc` 같은 프리릴리즈 성격 태그를 제외
 - `github`: GitHub Releases의 최신 **공개 릴리스**를 사용하며 프리릴리즈/드래프트를 제외
 - `default`: 기본 브랜치를 체크아웃합니다. 업스트림 대시보드에서는 `upstream.localization` 경로에 영향을 준 최신 커밋만 비교하며, `["."]`은 저장소 전체를 의미합니다.
+
+`upstream.components`를 사용할 때 최상위 전략은 `default`만 허용됩니다. 태그 기반 비교는
+각 컴포넌트의 `version_strategy`와 `tag_pattern`에 설정합니다.
 
 ### `upstream.transliteration_files` (선택사항)
 

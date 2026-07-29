@@ -65,14 +65,13 @@ vi.mock('node:util', async () => {
         return async (cmd: string, options?: any) => {
           mockExecAsync(cmd, options)
           
-          // git checkout 명령 시뮬레이션: 파일을 삭제하여 "롤백" 효과 재현
-          if (cmd.includes('git checkout HEAD --')) {
+          // git rm 명령 시뮬레이션
+          if (cmd.includes('git rm --ignore-unmatch -f --')) {
             // 작은따옴표로 감싼 파일 경로 매칭 (escapeShellArg 사용 시)
-            const match = cmd.match(/git checkout HEAD -- '(.+)'/) || cmd.match(/git checkout HEAD -- "(.+)"/)
+            const match = cmd.match(/git rm --ignore-unmatch -f -- '(.+)'/) || cmd.match(/git rm --ignore-unmatch -f -- "(.+)"/)
             if (match) {
               const filePath = match[1].replace(/'\\''/g, "'") // 이스케이프된 작은따옴표 복원
               try {
-                // 테스트에서는 파일을 삭제하여 롤백을 시뮬레이션
                 await rm(filePath, { force: true })
               } catch (error) {
                 // 파일이 없으면 무시
@@ -111,7 +110,7 @@ describe('파일 정리 및 빈 파일 방지', () => {
     }
   })
 
-  it('업스트림에서 삭제된 파일은 한국어 번역 파일의 변경사항이 롤백되어야 함', async () => {
+  it('업스트림에서 삭제된 파일은 한국어 번역 파일도 제거해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     // meta.toml 및 디렉토리 구조 생성
@@ -164,12 +163,12 @@ language = "english"
     // file1은 여전히 존재해야 함 (upstream에 여전히 존재)
     await access(file1Output)
     
-    // file2는 git checkout으로 롤백됨 (테스트에서는 삭제로 시뮬레이션)
+    // file2는 git rm으로 제거됨
     expect(existsSync(file2Output)).toBe(false)
     
-    // git checkout 명령이 file2에 대해 호출되었는지 확인
+    // git rm 명령이 file2에 대해 호출되었는지 확인
     expect(mockExecAsync).toHaveBeenCalledWith(
-      expect.stringContaining('git checkout HEAD --'),
+      expect.stringContaining('git rm --ignore-unmatch -f --'),
       expect.objectContaining({ cwd: expect.any(String) })
     )
   })
@@ -207,7 +206,7 @@ language = "english"
     expect(existsSync(emptyOutput)).toBe(false)
   })
 
-  it('기존에 존재하던 한국어 파일이 업스트림에서 빈 파일로 변경되면 변경사항이 롤백되어야 함', async () => {
+  it('기존에 존재하던 한국어 파일이 업스트림에서 빈 파일로 변경되면 제거해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
@@ -251,11 +250,11 @@ language = "english"
       onlyHash: false
     })
 
-    // 빈 파일은 git checkout으로 롤백됨 (테스트에서는 삭제로 시뮬레이션)
+    // 빈 파일은 제거됨
     expect(existsSync(testOutput)).toBe(false)
   })
 
-  it('여러 파일 중 일부가 업스트림에서 삭제되면 해당 파일의 변경사항이 롤백되어야 함', async () => {
+  it('여러 파일 중 일부가 업스트림에서 삭제되면 해당 번역 파일을 제거해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
@@ -313,11 +312,11 @@ language = "english"
     await access(file1Output)
     await access(file3Output)
     
-    // file2는 git checkout으로 롤백됨 (테스트에서는 삭제로 시뮬레이션)
+    // file2는 제거됨
     expect(existsSync(file2Output)).toBe(false)
   })
 
-  it('하위 디렉토리의 파일도 올바르게 변경사항이 롤백되어야 함', async () => {
+  it('하위 디렉토리의 파일도 올바르게 제거해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
@@ -360,7 +359,7 @@ language = "english"
       onlyHash: false
     })
 
-    // 파일의 변경사항이 git checkout으로 롤백됨 (테스트에서는 삭제로 시뮬레이션)
+    // 번역 파일이 제거됨
     expect(existsSync(nestedOutput)).toBe(false)
   })
 
@@ -403,7 +402,7 @@ language = "english"
     expect(
       mockExecAsync.mock.calls.some(([cmd]) =>
         typeof cmd === 'string' &&
-        cmd.includes('git checkout HEAD --') &&
+        cmd.includes('git mv -f --') &&
         cmd.includes('___BPM_crisis_l_korean.yml')
       )
     ).toBe(false)
@@ -459,7 +458,7 @@ language = "english"
     ).toBe(false)
   })
 
-  it('같은 대상 디렉토리를 공유하는 여러 localization 경로는 서로의 파일을 롤백하지 않아야 함', async () => {
+  it('같은 대상 디렉토리를 공유하는 여러 localization 경로는 서로의 파일을 제거하지 않아야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
@@ -501,13 +500,13 @@ language = "english"
     expect(
       mockExecAsync.mock.calls.some(([cmd]) =>
         typeof cmd === 'string' &&
-        cmd.includes('git checkout HEAD --') &&
+        cmd.includes('git rm --ignore-unmatch -f --') &&
         (cmd.includes('___first_l_korean.yml') || cmd.includes('___second_l_korean.yml'))
       )
     ).toBe(false)
   })
 
-  it('중첩된 localization 경로가 있어도 하위 경로 파일을 상위 경로 정리에서 롤백하지 않아야 함', async () => {
+  it('중첩된 localization 경로가 있어도 하위 경로 파일을 상위 경로 정리에서 제거하지 않아야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
@@ -563,7 +562,7 @@ language = "english"
     expect(
       mockExecAsync.mock.calls.some(([cmd]) =>
         typeof cmd === 'string' &&
-        cmd.includes('git checkout HEAD --') &&
+        cmd.includes('git rm --ignore-unmatch -f --') &&
         cmd.includes('___replace_l_korean.yml')
       )
     ).toBe(false)

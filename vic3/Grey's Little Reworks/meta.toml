@@ -1,12 +1,46 @@
 [upstream]
 url = "https://github.com/MasterOfGrey/Grey-Victoria3-Reworks.git"
-localization = [
-  "Soft Econ Adjustments/localization/english",
-  "Soft Pop Adjustments/localization/english",
-  "Subject Interaction Suite/localization/english",
-  "Populist Legal Power/localization/english",
-  "Sinosphere Korean/localization/english",
-  "Urban Synergy Unleashed/localization/english"
-]
 language = "english"
+version_strategy = "default"
+
+[[upstream.components]]
+id = "sea"
+name = "Soft Econ Adjustments"
+localization = ["Soft Econ Adjustments/localization/english"]
 version_strategy = "natural"
+tag_pattern = "^SEA-v"
+
+[[upstream.components]]
+id = "spa"
+name = "Soft Pop Adjustments"
+localization = ["Soft Pop Adjustments/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^SPA-v"
+
+[[upstream.components]]
+id = "sis"
+name = "Subject Interaction Suite"
+localization = ["Subject Interaction Suite/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^SIS-v"
+
+[[upstream.components]]
+id = "plp"
+name = "Populist Legal Power"
+localization = ["Populist Legal Power/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^PLP-v"
+
+[[upstream.components]]
+id = "dsk"
+name = "Sinosphere Korean"
+localization = ["Sinosphere Korean/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^DSK-v"
+
+[[upstream.components]]
+id = "usu"
+name = "Urban Synergy Unleashed"
+localization = ["Urban Synergy Unleashed/localization/english"]
+version_strategy = "natural"
+tag_pattern = "^USU-v"

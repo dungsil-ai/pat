@@ -9,18 +9,25 @@
 
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { access, mkdir, readFile, writeFile, readdir, rm } from 'node:fs/promises'
+import { access, mkdir, readdir, rm } from 'node:fs/promises'
 import { dirname, join } from 'pathe'
 import * as semver from 'semver'
 import natsort from 'natsort'
 import { log } from './logger'
 import { delay } from './delay'
-import { parseToml } from '../parser/toml'
 import { reportVersionStrategyError } from './version-strategy-reporter'
+import { migrateLegacyUpstreamFileHashes } from './upstream-file-hashes'
+import { isPrereleaseTag, parseStableSemanticVersion } from './version-tags'
+import {
+  ModMetaConfigError,
+  readModMeta,
+  type NormalizedUpstreamComponent,
+  type VersionStrategy
+} from '../config/mod-meta'
+
+export type { VersionStrategy } from '../config/mod-meta'
 
 const execFileAsync = promisify(execFile)
-
-export type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
 export class VersionStrategyError extends Error {
   constructor(
@@ -34,20 +41,12 @@ export class VersionStrategyError extends Error {
   }
 }
 
-interface UpstreamConfig {
+export interface UpstreamConfig {
   url: string
   path: string
   localizationPaths: string[]
   versionStrategy?: VersionStrategy
-}
-
-interface MetaTomlConfig {
-  upstream: {
-    url?: string
-    localization: string[]
-    language: string
-    version_strategy?: VersionStrategy
-  }
+  components?: NormalizedUpstreamComponent[]
 }
 
 /**
@@ -118,34 +117,7 @@ async function findMetaTomlConfigs(rootPath: string, targetGameType?: string, ta
  */
 export async function parseMetaTomlConfig(metaPath: string, gameDir: string, modName: string): Promise<UpstreamConfig | null> {
   try {
-    const content = await readFile(metaPath, 'utf-8')
-    const config = parseToml(content) as MetaTomlConfig
-    
-    if (!config.upstream?.localization || !Array.isArray(config.upstream.localization)) {
-      return null
-    }
-    
-    // version_strategy 유효성 검사
-    if (config.upstream?.version_strategy) {
-      const validStrategies: VersionStrategy[] = ['semantic', 'natural', 'default', 'github']
-      if (!validStrategies.includes(config.upstream.version_strategy)) {
-        const error = new VersionStrategyError(
-          `유효하지 않은 version_strategy: ${config.upstream.version_strategy}`,
-          `${gameDir}/${modName}/meta.toml`,
-          config.upstream.version_strategy,
-          gameDir
-        )
-        
-        // GitHub Issues에 보고 (비동기, 에러로 인해 다른 작업 중단 방지)
-        reportVersionStrategyError(error).catch((err) => {
-          log.warn(`GitHub Issues 보고 실패:`, err)
-        })
-        
-        // 해당 모드는 패스
-        log.error(`[${gameDir}/${modName}] ${error.message}`)
-        return null
-      }
-    }
+    const config = await readModMeta(metaPath)
     
     const upstreamPath = `${gameDir}/${modName}/upstream`
     
@@ -155,19 +127,38 @@ export async function parseMetaTomlConfig(metaPath: string, gameDir: string, mod
       return {
         url: '', // 빈 URL로 일반 파일 기반임을 표시
         path: upstreamPath,
-        localizationPaths: config.upstream.localization,
-        versionStrategy: config.upstream.version_strategy
+        localizationPaths: config.upstream.localizationPaths,
+        versionStrategy: config.upstream.versionStrategy,
+        components: config.upstream.components
       }
     }
     
     return {
       url: config.upstream.url,
       path: upstreamPath,
-      localizationPaths: config.upstream.localization,
-      versionStrategy: config.upstream.version_strategy
+      localizationPaths: config.upstream.localizationPaths,
+      versionStrategy: config.upstream.versionStrategy,
+      components: config.upstream.components
     }
   } catch (error) {
-    log.warn(`Failed to parse meta.toml: ${metaPath}`, error)
+    if (
+      error instanceof ModMetaConfigError
+      && error.field?.endsWith('version_strategy')
+      && error.message.includes('지원 값:')
+    ) {
+      const strategyError = new VersionStrategyError(
+        error.message,
+        `${gameDir}/${modName}/meta.toml`,
+        undefined,
+        gameDir
+      )
+
+      reportVersionStrategyError(strategyError).catch((reportError) => {
+        log.warn('GitHub Issues 보고 실패:', reportError)
+      })
+    }
+
+    log.warn(`meta.toml 파싱 실패: ${metaPath}`, error)
     return null
   }
 }
@@ -226,40 +217,69 @@ function getGitHubApiHeaders(): Record<string, string> {
   return headers
 }
 
+interface GitHubReleaseTag {
+  tag_name: string
+}
+
+async function fetchAllGitHubReleaseTags(
+  owner: string,
+  repo: string,
+  configPath: string
+): Promise<GitHubReleaseTag[]> {
+  const releases: GitHubReleaseTag[] = []
+  const perPage = 100
+
+  for (let page = 1; ; page++) {
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`
+    const response = await fetch(apiUrl, { headers: getGitHubApiHeaders() })
+    if (!response.ok) {
+      throw new Error(`GitHub API 실패: ${response.status} ${response.statusText} (${configPath})`)
+    }
+
+    const pageReleases = await response.json() as GitHubReleaseTag[]
+    releases.push(...pageReleases)
+    if (pageReleases.length < perPage) {
+      return releases
+    }
+  }
+}
+
 /**
  * GitHub Releases API를 사용하여 최신 릴리즈 태그를 가져옵니다
  * 비개발자가 만든 다양한 형식의 태그도 지원합니다.
  * @internal 테스트 목적으로 export됨
  */
-export async function getLatestReleaseFromGitHub(owner: string, repo: string, configPath: string): Promise<string | null> {
+export async function getLatestReleaseFromGitHub(
+  owner: string,
+  repo: string,
+  configPath: string,
+  tagPattern?: string
+): Promise<string | null> {
   try {
-    // GitHub API로 최신 릴리즈 가져오기
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases/latest`
-    log.info(`[${configPath}] GitHub Releases API 확인 중...`)
-    
     const headers = getGitHubApiHeaders()
-    const response = await fetch(apiUrl, { headers })
-    
-    if (response.ok) {
-      const data = await response.json() as { tag_name: string }
-      if (data.tag_name) {
-        log.info(`[${configPath}] GitHub 최신 릴리즈 발견: ${data.tag_name}`)
-        return data.tag_name
+    const tagMatcher = compileTagPattern(tagPattern, configPath)
+
+    if (!tagMatcher) {
+      // 패턴이 없을 때는 기존 동작과 API 호출 수를 유지합니다.
+      const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases/latest`
+      log.info(`[${configPath}] GitHub Releases API 확인 중...`)
+      const response = await fetch(apiUrl, { headers })
+
+      if (response.ok) {
+        const data = await response.json() as { tag_name: string }
+        if (data.tag_name) {
+          log.info(`[${configPath}] GitHub 최신 릴리즈 발견: ${data.tag_name}`)
+          return data.tag_name
+        }
       }
     }
     
-    // 최신 릴리즈가 없으면 모든 릴리즈 목록에서 첫 번째 가져오기
-    const allReleasesUrl = `https://api.github.com/repos/${owner}/${repo}/releases`
-    const allResponse = await fetch(allReleasesUrl, { headers })
-    
-    if (allResponse.ok) {
-      const releases = await allResponse.json() as Array<{ tag_name: string }>
-      if (releases.length > 0 && releases[0].tag_name) {
-        log.info(`[${configPath}] GitHub 릴리즈 발견: ${releases[0].tag_name}`)
-        return releases[0].tag_name
-      }
-    } else {
-      log.debug(`[${configPath}] GitHub Releases 목록 API 실패 (HTTP ${allResponse.status}): ${allResponse.statusText}`)
+    // 패턴이 있거나 최신 릴리즈가 없으면 목록에서 조건에 맞는 첫 번째 릴리즈를 가져옵니다.
+    const releases = await fetchAllGitHubReleaseTags(owner, repo, configPath)
+    const release = releases.find(({ tag_name }) => tag_name && (!tagMatcher || tagMatcher.test(tag_name)))
+    if (release) {
+      log.info(`[${configPath}] GitHub 릴리즈 발견: ${release.tag_name}`)
+      return release.tag_name
     }
     
     return null
@@ -277,7 +297,11 @@ export async function getLatestReleaseFromGitHub(owner: string, repo: string, co
 /**
  * GitHub Releases의 최신 태그를 기준으로 버전을 선택합니다.
  */
-async function getGitHubReleaseVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
+async function getGitHubReleaseVersion(
+  repoUrl: string,
+  configPath: string,
+  tagPattern?: string
+): Promise<{ type: 'tag', name: string }> {
   const githubInfo = parseGitHubUrl(repoUrl)
   if (!githubInfo) {
     throw new VersionStrategyError(`GitHub 릴리스 전략은 GitHub 저장소만 지원합니다: ${repoUrl}`, configPath)
@@ -285,7 +309,12 @@ async function getGitHubReleaseVersion(repoUrl: string, configPath: string): Pro
 
   return await upstreamRetry(
     async () => {
-      const latestReleaseTag = await getLatestReleaseFromGitHub(githubInfo.owner, githubInfo.repo, configPath)
+      const latestReleaseTag = await getLatestReleaseFromGitHub(
+        githubInfo.owner,
+        githubInfo.repo,
+        configPath,
+        tagPattern
+      )
       if (!latestReleaseTag) {
         throw new Error('GitHub 릴리스 태그를 찾을 수 없음')
       }
@@ -308,20 +337,33 @@ async function getGitHubReleaseVersion(repoUrl: string, configPath: string): Pro
 export async function getLatestRefFromRemote(
   repoUrl: string, 
   configPath: string,
-  versionStrategy: VersionStrategy = 'default'
+  versionStrategy: VersionStrategy = 'default',
+  tagPattern?: string
 ): Promise<{ type: 'tag' | 'branch', name: string }> {
   
   log.info(`[${configPath}] 버전 전략(${versionStrategy})으로 최신 버전 확인 중...`)
   
   switch (versionStrategy) {
     case 'semantic':
-      return await getSemanticVersion(repoUrl, configPath)
+      return await getSemanticVersion(repoUrl, configPath, tagPattern)
     case 'natural':
-      return await getNaturalVersion(repoUrl, configPath)
+      return await getNaturalVersion(repoUrl, configPath, tagPattern)
     case 'default':
       return await getDefaultBranch(repoUrl, configPath)
     case 'github':
-      return await getGitHubReleaseVersion(repoUrl, configPath)
+      return await getGitHubReleaseVersion(repoUrl, configPath, tagPattern)
+  }
+}
+
+function compileTagPattern(tagPattern: string | undefined, configPath: string): RegExp | null {
+  if (!tagPattern) {
+    return null
+  }
+
+  try {
+    return new RegExp(tagPattern)
+  } catch {
+    throw new VersionStrategyError(`유효하지 않은 tag_pattern: ${tagPattern}`, configPath)
   }
 }
 
@@ -362,7 +404,11 @@ async function upstreamRetry<T>(
 /**
  * GitHub Releases API를 통한 시멘틱 버전 전략
  */
-async function getSemanticVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
+async function getSemanticVersion(
+  repoUrl: string,
+  configPath: string,
+  tagPattern?: string
+): Promise<{ type: 'tag', name: string }> {
   const githubInfo = parseGitHubUrl(repoUrl)
   if (!githubInfo) {
     throw new VersionStrategyError(`Semantic 전략은 GitHub 저장소만 지원합니다: ${repoUrl}`, configPath)
@@ -370,20 +416,19 @@ async function getSemanticVersion(repoUrl: string, configPath: string): Promise<
   
   return await upstreamRetry(
     async () => {
-      const apiUrl = `https://api.github.com/repos/${githubInfo.owner}/${githubInfo.repo}/releases`
-      const response = await fetch(apiUrl, getGitHubApiHeaders())
-      
-      if (!response.ok) {
-        throw new Error(`GitHub API 실패: ${response.status} ${response.statusText}`)
-      }
-      
-      const releases = await response.json() as Array<{ tag_name: string }>
+      const releases = await fetchAllGitHubReleaseTags(
+        githubInfo.owner,
+        githubInfo.repo,
+        configPath
+      )
+      const tagMatcher = compileTagPattern(tagPattern, configPath)
 
       // semver 정렬을 위해 태그를 파싱하되, 실제 체크아웃에는 원본 태그명을 사용
       const parsedReleases = releases
+        .filter(({ tag_name }) => !tagMatcher || tagMatcher.test(tag_name))
         .map(({ tag_name }) => {
           const normalizedTag = tag_name.replace(/^v/, '')
-          const parsed = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
+          const parsed = parseStableSemanticVersion(tag_name)
           if (!parsed) {
             return null
           }
@@ -420,7 +465,11 @@ async function getSemanticVersion(repoUrl: string, configPath: string): Promise<
 /**
  * git ls-remote를 통한 자연 정렬 버전 전략
  */
-async function getNaturalVersion(repoUrl: string, configPath: string): Promise<{ type: 'tag', name: string }> {
+async function getNaturalVersion(
+  repoUrl: string,
+  configPath: string,
+  tagPattern?: string
+): Promise<{ type: 'tag', name: string }> {
   return await upstreamRetry(
     async () => {
       const { stdout: tagsOutput } = await execFileAsync('git', ['ls-remote', '--tags', '--refs', repoUrl], {
@@ -430,6 +479,8 @@ async function getNaturalVersion(repoUrl: string, configPath: string): Promise<{
       if (!tagsOutput.trim()) {
         throw new Error(`태그를 찾을 수 없음`)
       }
+
+      const tagMatcher = compileTagPattern(tagPattern, configPath)
       
       // 태그 필터링 및 자연 정렬
       const tags = tagsOutput.trim().split('\n')
@@ -438,11 +489,10 @@ async function getNaturalVersion(repoUrl: string, configPath: string): Promise<{
           return match ? match[1] : null
         })
         .filter((tag): tag is string => tag !== null && tag.length > 0)
+        .filter(tag => !tagMatcher || tagMatcher.test(tag))
         .filter(tag => {
           // 프리릴리즈 제외
-          const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
-          const lowerTag = tag.toLowerCase()
-          return !preReleaseKeywords.some(keyword => lowerTag.includes(keyword))
+          return !isPrereleaseTag(tag)
         })
       
       if (tags.length === 0) {
@@ -521,6 +571,21 @@ async function getRemoteRefCommitHash(
   }
 }
 
+/** @internal 테스트 목적으로 export됨 */
+export async function configureSparseCheckout(
+  repositoryPath: string,
+  config: UpstreamConfig
+): Promise<void> {
+  const localizationPaths = [...new Set(config.localizationPaths)]
+  await execFileAsync('git', ['sparse-checkout', 'init', '--cone'], { cwd: repositoryPath })
+  // 각 경로를 별도 argv로 전달해 공백과 gitignore 패턴 문자를 literal 디렉터리명으로 처리합니다.
+  await execFileAsync(
+    'git',
+    ['sparse-checkout', 'set', '--cone', '--skip-checks', '--', ...localizationPaths],
+    { cwd: repositoryPath }
+  )
+}
+
 /**
  * 새 리포지토리를 효율적으로 클론합니다
  */
@@ -542,14 +607,9 @@ async function cloneOptimizedRepository(targetPath: string, config: UpstreamConf
     
     // 3. Sparse checkout 설정
     log.start(`[${config.path}] Sparse checkout 설정 중...`)
-    await execFileAsync('git', ['sparse-checkout', 'init'], { cwd: targetPath })
+    await configureSparseCheckout(targetPath, config)
     
-    // 4. Localization 경로만 설정 (파일에 직접 작성)
-    const sparseCheckoutPath = join(targetPath, '.git', 'info', 'sparse-checkout')
-    const sparseCheckoutContent = config.localizationPaths.join('\n')
-    await writeFile(sparseCheckoutPath, sparseCheckoutContent)
-    
-    // 5. 파일 체크아웃
+    // 4. 파일 체크아웃
     log.start(`[${config.path}] 파일 체크아웃 중...`)
     await checkoutLatestVersionForShallowClone(targetPath, config.path)
     
@@ -619,6 +679,9 @@ export async function isShallowRepository(repositoryPath: string): Promise<boole
  */
 async function updateExistingRepository(repositoryPath: string, config: UpstreamConfig): Promise<void> {
   try {
+    // 과거 상태 파일이 nested upstream 저장소를 dirty 상태로 만들기 전에 바깥으로 옮깁니다.
+    await migrateLegacyUpstreamFileHashes(dirname(repositoryPath))
+
     // Git 상태 확인
     const { stdout: status } = await execFileAsync('git', ['status', '--porcelain'], { cwd: repositoryPath })
     
@@ -629,6 +692,9 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
       await cloneOptimizedRepository(repositoryPath, config)
       return
     }
+
+    // meta.toml에서 컴포넌트나 현지화 경로가 바뀐 경우 기존 clone에도 반영합니다.
+    await configureSparseCheckout(repositoryPath, config)
     
     // shallow clone 여부 확인
     const isShallow = await isShallowRepository(repositoryPath)

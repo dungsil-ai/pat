@@ -144,6 +144,37 @@ language = "english"`
       expect(result).toContain('test_key: "이것은 좋습니다"')
       expect(result).not.toContain('# abc123')
     })
+
+    it('컴포넌트 출력 하위 경로의 번역 파일을 무효화해야 함', async () => {
+      const componentTargetDir = join(targetDir, 'sample')
+      await mkdir(componentTargetDir, { recursive: true })
+      await writeFile(
+        join(modDir, 'meta.toml'),
+        `[upstream]
+language = "english"
+
+[[upstream.components]]
+id = "sample"
+localization = ["localization/english"]
+output_subdir = "sample"`
+      )
+      await writeFile(
+        join(upstreamDir, 'test_l_english.yml'),
+        `l_english:
+  test_key: "This is ok"`
+      )
+      await writeFile(
+        join(componentTargetDir, '___test_l_korean.yml'),
+        `l_korean:
+  test_key: "이것은 좋습니다" # abc123`
+      )
+
+      await invalidateDictionaryTranslations('ck3', testDir, ['test-mod'], ['ok'])
+
+      const result = await readFile(join(componentTargetDir, '___test_l_korean.yml'), 'utf-8')
+      expect(result).toContain('test_key: "이것은 좋습니다"')
+      expect(result).not.toContain('# abc123')
+    })
   })
 
   describe('게임 타입 검증', () => {

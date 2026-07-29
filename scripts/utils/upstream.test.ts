@@ -197,6 +197,54 @@ language = "english"
       const allConfigs = await parseUpstreamConfigs(testDir)
       expect(allConfigs.length).toBe(2)
     })
+
+    it('여러 컴포넌트의 현지화 경로를 하나의 sparse checkout 설정으로 합쳐야 함', async () => {
+      const modDir = join(testDir, 'vic3', 'ModPack')
+      await mkdir(modDir, { recursive: true })
+      await writeFile(join(modDir, 'meta.toml'), `
+[upstream]
+url = "https://github.com/test/mod-pack.git"
+language = "english"
+version_strategy = "default"
+
+[[upstream.components]]
+id = "first"
+localization = ["First Mod/localization/english"]
+version_strategy = "natural"
+tag_pattern = '^FIRST-v'
+
+[[upstream.components]]
+id = "second"
+name = "두 번째 모드"
+localization = ["Second Mod/localization/english"]
+version_strategy = "natural"
+tag_pattern = '^SECOND-v'
+`)
+
+      const { parseUpstreamConfigs } = await import('./upstream')
+      const [config] = await parseUpstreamConfigs(testDir, 'vic3', 'ModPack')
+
+      expect(config.localizationPaths).toEqual([
+        'First Mod/localization/english',
+        'Second Mod/localization/english'
+      ])
+      expect(config.versionStrategy).toBe('default')
+      expect(config.components).toEqual([
+        expect.objectContaining({
+          id: 'first',
+          tagPattern: '^FIRST-v',
+          versionStrategy: 'natural',
+          implicit: false
+        }),
+        expect.objectContaining({
+          id: 'second',
+          name: '두 번째 모드',
+          tagPattern: '^SECOND-v',
+          versionStrategy: 'natural',
+          implicit: false
+        })
+      ])
+    })
   })
 
   describe('기존 저장소 업데이트', () => {
@@ -335,6 +383,60 @@ language = "english"
       expect(execFileCommands).toContain('git fetch --tags')
       expect(execFileCommands.some(command => command === 'git checkout v1.0.0')).toBe(true)
     })
+
+    it('설정에서 바뀐 컴포넌트 경로를 기존 sparse checkout에도 반영해야 함', async () => {
+      const execFileCommands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
+        if (args[0] === 'status' && args[1] === '--porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
+          throw new Error('fatal: no tag exactly matches')
+        }
+
+        if (args[0] === 'rev-parse' && args[1] === '--abbrev-ref') {
+          return { stdout: 'main\n', stderr: '' }
+        }
+
+        if (args[0] === 'ls-remote') {
+          return { stdout: 'commit123\trefs/heads/main\n', stderr: '' }
+        }
+
+        if (args[0] === 'rev-parse' && args[1] === 'HEAD') {
+          return { stdout: 'commit123\n', stderr: '' }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: [
+          'First Mod/localization/english',
+          'Second Mod/localization/english',
+          'First Mod/localization/english'
+        ],
+        versionStrategy: 'default'
+      }, testDir)
+
+      expect(execFileCommands).toContain('git sparse-checkout init --cone')
+      expect(execFileCommands).toContain(
+        'git sparse-checkout set --cone --skip-checks -- First Mod/localization/english Second Mod/localization/english'
+      )
+      expect(execFileCommands.some(command => command.startsWith('git fetch'))).toBe(false)
+    })
   })
 
   describe('태그 clone/fetch 폴백', () => {
@@ -433,8 +535,11 @@ language = "english"
   describe('한국어 upstream sparse checkout', () => {
     it('localization 경로에 korean이 있으면 sparse checkout 대상으로 그대로 포함해야 함', async () => {
       const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      const execFileCommands: string[] = []
 
       execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+
         if (args[0] === 'ls-remote' && args[1] === '--tags') {
           return { stdout: '', stderr: '' }
         }
@@ -460,7 +565,7 @@ language = "english"
         versionStrategy: 'default'
       }, testDir)
 
-      expect(await readFile(join(repoPath, '.git', 'info', 'sparse-checkout'), 'utf-8')).toBe('localization/korean')
+      expect(execFileCommands).toContain('git sparse-checkout set --cone --skip-checks -- localization/korean')
       expect(await readFile(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'), 'utf-8')).toContain('테스트')
       await access(join(repoPath, 'localization', 'korean', '___test_l_korean.yml'))
     })
@@ -517,6 +622,30 @@ language = "english"
       })
     })
 
+    it('semantic 전략에서 컴포넌트 프리릴리즈를 안정 버전으로 승격하지 않아야 함', async () => {
+      fetchMock.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => ([
+          { tag_name: 'SEA-v2.0.0-beta' },
+          { tag_name: 'SEA-v1.9.0' },
+          { tag_name: 'SPA-v3.0.0' }
+        ])
+      })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      await expect(getLatestRefFromRemote(
+        'https://github.com/test/test.git',
+        'vic3/Test/upstream',
+        'semantic',
+        '^SEA-v'
+      )).resolves.toEqual({
+        type: 'tag',
+        name: 'SEA-v1.9.0'
+      })
+    })
+
     it('github 전략에서 Releases 최신 태그를 반환해야 함', async () => {
       fetchMock.mockResolvedValueOnce({
         ok: true,
@@ -549,6 +678,71 @@ language = "english"
         'ck3/Test/upstream',
         'github'
       )).rejects.toThrow('GitHub')
+    })
+
+    it('natural 전략에서 컴포넌트 태그 패턴에 맞는 최신 태그만 선택해야 함', async () => {
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        if (args[0] === 'ls-remote' && args[1] === '--tags') {
+          return {
+            stdout: [
+              'first\trefs/tags/SEA-v1.13.0',
+              'second\trefs/tags/SPA-v1.12.2',
+              'third\trefs/tags/SPA-v1.12.3',
+              'fourth\trefs/tags/USU-v1.6.4c'
+            ].join('\n'),
+            stderr: ''
+          }
+        }
+
+        return { stdout: '', stderr: '' }
+      }
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      const latestRef = await getLatestRefFromRemote(
+        'https://github.com/test/mod-pack.git',
+        'vic3/ModPack/upstream',
+        'natural',
+        '^SPA-v'
+      )
+
+      expect(latestRef).toEqual({
+        type: 'tag',
+        name: 'SPA-v1.12.3'
+      })
+    })
+
+    it('github 전략은 첫 100개 뒤의 컴포넌트 릴리즈까지 조회해야 함', async () => {
+      fetchMock
+        .mockResolvedValueOnce({
+          ok: true,
+          status: 200,
+          statusText: 'OK',
+          json: async () => Array.from({ length: 100 }, (_, index) => ({
+            tag_name: `SEA-v1.0.${index}`
+          }))
+        })
+        .mockResolvedValueOnce({
+          ok: true,
+          status: 200,
+          statusText: 'OK',
+          json: async () => [{ tag_name: 'SPA-v1.12.3' }]
+        })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      await expect(getLatestRefFromRemote(
+        'https://github.com/test/mod-pack.git',
+        'vic3/ModPack/upstream',
+        'github',
+        '^SPA-v'
+      )).resolves.toEqual({
+        type: 'tag',
+        name: 'SPA-v1.12.3'
+      })
+      expect(fetchMock).toHaveBeenNthCalledWith(
+        2,
+        'https://api.github.com/repos/test/mod-pack/releases?per_page=100&page=2',
+        expect.anything()
+      )
     })
   })
 })
