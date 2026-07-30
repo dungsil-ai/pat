@@ -5,6 +5,7 @@
   "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
   "scripts": {
     "upstream": "jiti scripts/upstream.ts",
+    "mark-verified-upstream": "jiti scripts/mark-verified-upstream.ts",
     "add-dict": "jiti scripts/add-dict-from-commit.ts",
     "sort-dict": "jiti scripts/sort-dict.ts",
     "check-proper-nouns": "jiti scripts/check-proper-nouns.ts",
@@ -40,7 +41,6 @@
     "dotenv": "17.2.3",
     "jiti": "2.6.1",
     "natsort": "^2.0.0",
-    "pathe": "2.0.3",
     "semver": "^7.6.0",
     "typescript": "5.9.3",
     "unstorage": "1.17.3",
