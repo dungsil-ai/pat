@@ -45,6 +45,9 @@ jobs:
         id: translate
         run: pnpm vic3
         continue-on-error: true
+      - name: Record verified upstream revision
+        if: steps.translate.outcome == 'success'
+        run: pnpm mark-verified-upstream vic3
       - name: Commit translated files
         if: always()
         uses: stefanzweifel/git-auto-commit-action@v7
