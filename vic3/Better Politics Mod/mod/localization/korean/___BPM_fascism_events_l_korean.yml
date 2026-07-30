@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_fascism_events.1.t: "파시스트들이 수도로 진격한다" # 10530979593059496260
   bpm_fascism_events.1.d: "파시스트들은 정부 내 입지에 용기를 얻어, 좌파에 대항하는 방파제로서 현 정부에서 주도적인 역할을 부여해 줄 것을 [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]에게 요구하고 있습니다." # 16971205465647939389

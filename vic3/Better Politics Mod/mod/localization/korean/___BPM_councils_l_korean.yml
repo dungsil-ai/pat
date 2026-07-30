@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_council_name: "[SCOPE.GetRootScope.GetCountry.GetCustom('bpm_council_custom_loc')]" # 2381470878179216650
   bpm_council_english: "평의회" # 5214203930338573742

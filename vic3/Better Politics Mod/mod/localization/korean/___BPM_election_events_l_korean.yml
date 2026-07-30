@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_election_events.1.t: "임명에 관한 문제" # 14502981689216355543
   bpm_election_events.1.d: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 새 정부는 내각을 구성하고 일련의 새로운 행정직을 임명하는 과업에 착수해야 합니다. 정부는 어떤 전략을 취해야 할까요?" # 11188506822286110910

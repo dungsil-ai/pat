@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_colony_events.2.t: "[ROOT.GetCountry.GetAdjective] 자치권" # 11742274856004953091
   bpm_colony_events.2.d: "[ROOT.GetCountry.GetOverlord.GetAdjective] 식민지인 [ROOT.GetCountry.GetName]가 종주국으로부터 제한적인 자치권을 부여받았습니다. 해당 식민지는 이제 자체적인 내정 관리가 가능해질 것입니다." # 9513077427641901836

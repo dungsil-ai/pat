@@ -1,3 +1,4 @@
+# PAT verified upstream: d0f6094
 ﻿l_korean:
   DIPLO_ACTION_GET_RECOGNIZED: "$DIPLO_ACTION_RELATIONS$가 $relations_cordial$보다 작지 않습니다" # 1354474770733230879
   get_recognized: "동맹국에 승인 요청" # 538982617976675935

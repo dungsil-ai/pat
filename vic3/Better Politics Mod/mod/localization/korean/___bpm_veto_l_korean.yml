@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_law_voting_executive_must_pass_complete_veto: "#v 절대로#! ([GetPlayer.GetModifier.GetFullEntryDescFor('country_bpm_ruler_complete_veto_enabled')])\n[GetPlayer.GetModifier.GetDescFor('country_bpm_ruler_complete_veto_enabled')]" # 2745122855964106554
   bpm_law_voting_executive_must_pass_partial_veto: "#v $bpm_legislature_adj$ $bpm_legislative_vote_name$ > 66.7%#! ([GetPlayer.GetModifier.GetFullEntryDescFor('country_bpm_ruler_partial_veto_enabled')])\n[GetPlayer.GetModifier.GetDescFor('country_bpm_ruler_partial_veto_enabled')]" # 5111145095053820252

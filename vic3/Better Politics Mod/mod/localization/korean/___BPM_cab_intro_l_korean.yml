@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   je_bpm_cabinet_activate: "내각" # 1866012498825786956
   je_bpm_cabinet_activate_reason: "#bold 진행 막대#! 의 상태는 [concept_bureaucracy] 잉여분이 있을 경우 진척될 것입니다. #bold 진행 막대#! 가 #v 100#! 에 도달하면 [Country.GetName]에 내각이 도입될 것입니다." # 8765026397898618508

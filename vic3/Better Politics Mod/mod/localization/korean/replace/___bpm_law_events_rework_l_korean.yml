@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   children_rights_events.1.t: "보이지 않는 울부짖음" # 7083966055794094640
   children_rights_events.1.d: "$country_legislature_name$의 나머지 의원들을 설득하기 위해, [SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName]은(는) [SCOPE.sState('child_labor_state').GetName]의 아동 노동 실태를 파헤쳤습니다. 그곳에서 그는 아이들이 작업장에서 겪는 비인도적인 환경 때문에, [SCOPE.sState('child_labor_state').GetName]의 많은 가족이 자녀가 일터로 보내지지 않기를 바라는 마음으로 아이들을 숨기고 있다는 사실을 발견했습니다." # 17028194751319335747

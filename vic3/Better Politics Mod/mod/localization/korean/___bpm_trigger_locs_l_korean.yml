@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) 극단주의자입니다" # 10888315677890559676
   NOT_TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) #bold 극단주의자가 아닙니다#!" # 1052997727690249371

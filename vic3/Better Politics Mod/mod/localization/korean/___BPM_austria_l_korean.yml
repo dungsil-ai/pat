@@ -1,2 +1,3 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   reactionaries_out_of_government_for_six_months_or_more_tt: "[SCOPE.gsInterestGroup('reactionaries_scope').GetName]이(가) #v 6#!개월 연속으로 [concept_in_opposition] 상태이며 (현재 #variable [ROOT.GetCountry.MakeScope.Var('reactionaries_out_var').GetValue]#!개월)" # 10014087948534252184

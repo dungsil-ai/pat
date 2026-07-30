@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   bpm_lobby.1.t: "극단적 민족주의자 탈취" # 13797319608081459915
   bpm_lobby.1.d: "[SCOPE.gsInterestGroup('relevant_ig_scope').GetName]은 [SCOPE.sCountry('relevant_country_scope').GetName]에 대한 기존의 적대감을 이용하여 자신들의 열렬하고 극단적인 군국주의 수사를 통해 세력 기반을 확장하고 있으며, [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting]에 대한 군사적 행동을 추진하기 위해 가능한 한 빨리 [SCOPE.sPoliticalLobby('relevant_lobby_scope').GetName]에 합류하고자 합니다." # 6106929885748348670

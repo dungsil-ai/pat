@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   state_farmers_education_access_add: "[GetPopType('farmers').GetName]의 교육 접근성" # 8254554595838223103
   state_farmers_education_access_add_desc: "[GetPopType('farmers').GetName]에 대한 교육 접근성의 보너스 또는 페널티" # 12458569043008407035

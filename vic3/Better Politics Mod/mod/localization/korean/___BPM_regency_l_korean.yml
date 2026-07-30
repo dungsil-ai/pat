@@ -1,3 +1,4 @@
+# PAT verified upstream: 8576737
 ﻿l_korean:
   hog_regency.1.t: "$bpm_hog_title_default_contextless$의 아이" # 16028665378143755630
   hog_regency.1.d: "$bpm_hog_title_default_contextless$의 작위가 아직 성년에 이르지 못한 [SCOPE.sCharacter('hog_scope').GetFullName]에게 계승되었습니다. 대행 $bpm_hog_title_default_contextless$를 선출하는 임무는 현 정부에게 맡겨졌습니다." # 467105372386799841
