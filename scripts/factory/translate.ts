@@ -1,13 +1,14 @@
-import { access, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { access, mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { basename, dirname, join } from 'pathe'
-import { parseToml, parseYaml, stringifyYaml } from '../parser'
+import { parseYaml, stringifyYaml } from '../parser'
+import { isReplaceLocalizationPath, readModMeta } from '../config/mod-meta'
 import { hashing } from '../utils/hashing'
 import { log } from '../utils/logger'
 import { translate, translateBulk, TranslationRetryExceededError, TranslationRefusedError } from '../utils/translate'
 import { updateAllUpstreams } from '../utils/upstream'
-import { getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
+import { getLegacyUpstreamFileHashesPath, getUpstreamFileHashesPath, readUpstreamFileHashes, type UpstreamFileHashMap, writeUpstreamFileHashes } from '../utils/upstream-file-hashes'
 import { type GameType, shouldUseTransliteration, shouldUseTransliterationForKey } from '../utils/prompts'
 import { buildKoreanTargetFileName } from '../utils/localization-file-name'
 
@@ -179,16 +180,11 @@ interface ModTranslationsOptions {
   timeoutMinutes?: number | false // false = 타임아웃 비활성화, undefined = 기본값(15분) 사용
 }
 
-interface ModMeta {
-  upstream: {
-    localization: string[];
-    language: string;
-    transliteration_files?: string[];
-  };
-}
-
 export interface UntranslatedItem {
   mod: string
+  componentId?: string
+  componentName?: string
+  sourcePath?: string
   file: string
   key: string
   message: string
@@ -207,6 +203,29 @@ interface ModProcessResult {
 interface ModWorkItem {
   mod: string
   etcSubMod?: string
+}
+
+interface TranslationSourceIdentity {
+  componentId?: string
+  componentName?: string
+  sourcePath: string
+}
+
+interface LocalizationSourceFile {
+  componentId: string
+  componentName: string
+  componentImplicit: boolean
+  locPath: string
+  sourceDir: string
+  targetDir: string
+  normalizedFile: string
+  sourcePath: string
+  targetPath: string
+}
+
+interface TranslationProcess {
+  sourcePath: string
+  promise: Promise<UntranslatedItem[]>
 }
 
 interface LocPathCleanupTask {
@@ -247,6 +266,28 @@ function buildCaseRenameTempPath(filePath: string): string {
   return `${filePath}.pat-case-rename-${process.pid}-${Date.now()}.tmp`
 }
 
+async function translationTargetExists(targetPath: string): Promise<boolean> {
+  try {
+    await access(targetPath)
+    return true
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
+      throw error
+    }
+  }
+
+  try {
+    const expectedName = basename(targetPath).toLowerCase()
+    const siblingNames = await readdir(dirname(targetPath))
+    return siblingNames.some(name => name.toLowerCase() === expectedName)
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      return false
+    }
+    throw error
+  }
+}
+
 async function renameFileCasingWithGit(fullPath: string, expectedPath: string, projectRoot: string): Promise<void> {
   const tempPath = buildCaseRenameTempPath(fullPath)
   await mkdir(dirname(expectedPath), { recursive: true })
@@ -254,6 +295,42 @@ async function renameFileCasingWithGit(fullPath: string, expectedPath: string, p
     `git mv -f -- ${escapeShellArg(fullPath)} ${escapeShellArg(tempPath)} && git mv -f -- ${escapeShellArg(tempPath)} ${escapeShellArg(expectedPath)}`,
     projectRoot
   )
+}
+
+async function removeTranslationFile(fullPath: string, projectRoot: string): Promise<void> {
+  let gitError: unknown
+  try {
+    await execGitCommand(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, projectRoot)
+  } catch (error) {
+    gitError = error
+  } finally {
+    // git 명령 실패 여부와 관계없이 업스트림에서 사라진 산출물을 실제로 제거한다.
+    await rm(fullPath, { force: true })
+  }
+
+  if (gitError) {
+    throw gitError
+  }
+}
+
+function validateNoTargetCollisions(mod: string, sourceFiles: LocalizationSourceFile[]): void {
+  const sourceByTarget = new Map<string, LocalizationSourceFile>()
+
+  for (const sourceFile of sourceFiles) {
+    const collisionKey = normalizePathForComparison(sourceFile.targetPath).toLowerCase()
+    const existing = sourceByTarget.get(collisionKey)
+    if (!existing) {
+      sourceByTarget.set(collisionKey, sourceFile)
+      continue
+    }
+
+    throw new Error(
+      `[${mod}] 여러 업스트림 컴포넌트가 같은 번역 파일을 생성합니다: ${sourceFile.targetPath}\n` +
+      `- ${existing.componentName}(${existing.componentId}): ${existing.sourcePath}\n` +
+      `- ${sourceFile.componentName}(${sourceFile.componentId}): ${sourceFile.sourcePath}\n` +
+      `localization 경로 또는 원본 파일명을 조정해 출력 충돌을 해결하세요.`
+    )
+  }
 }
 
 async function expandModWorkItems(rootDir: string, mods: string[]): Promise<ModWorkItem[]> {
@@ -310,7 +387,7 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
   log.info(`모드 병렬 처리 동시성: ${modConcurrency}`)
 
   const modTasks = modWorkItems.map(({ mod, etcSubMod }) => async (): Promise<ModProcessResult> => {
-    const processes: Promise<UntranslatedItem[]>[] = []
+    const processes: TranslationProcess[] = []
     const locPathCleanupTasks = new Map<string, LocPathCleanupTask>()
     const workLabel = etcSubMod ? `${mod}/${etcSubMod}` : mod
     log.start(`[${workLabel}] 작업 시작 (원본 파일 경로: ${rootDir}/${mod})`)
@@ -322,124 +399,194 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
       return { mod, untranslatedItems: [], timeoutReached: false }
     }
 
-    const metaContent = await readFile(metaPath, 'utf-8')
-    const meta = parseToml(metaContent) as ModMeta
-      const hashFilePath = getUpstreamFileHashesPath(modDir)
+    const meta = await readModMeta(metaPath)
+    const hashFilePath = getUpstreamFileHashesPath(modDir)
     const savedFileHashes = await readUpstreamFileHashes(hashFilePath)
     const nextFileHashes: UpstreamFileHashMap = { ...savedFileHashes }
     const currentSourcePaths = new Set<string>()
     let hasHashChanges = false
-    log.debug(`[${mod}] 메타데이터:  upstream.language: ${meta.upstream.language}, upstream.localization: [${meta.upstream.localization}]`)
+    const localizationSourceFiles: LocalizationSourceFile[] = []
+    const upstreamRoot = join(modDir, 'upstream')
 
-    for (const locPath of meta.upstream.localization) {
-      const sourceDir = join(modDir, 'upstream', locPath)
-      const localizationFolder = getLocalizationFolderName(gameType)
-      const targetDir = join(modDir, 'mod', localizationFolder, sourceDir.includes('replace') ? 'korean/replace' : 'korean')
+    log.debug(
+      `[${mod}] 메타데이터: upstream.language: ${meta.upstream.language}, ` +
+      `upstream.components: [${meta.upstream.components.map(component => component.id).join(', ')}]`
+    )
 
-      // 모드 디렉토리 생성
-      await mkdir(targetDir, { recursive: true })
-
-      const upstreamRoot = join(modDir, 'upstream')
-
-      // upstream 루트 존재 여부 확인
-      try {
-        await access(upstreamRoot)
-      } catch (error) {
-        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-          // 여러 모드를 한 번에 처리할 때는 누락된 모드만 건너뛰고 다음 모드를 계속 처리
-          if (mods.length > 1) {
-            log.warn(
-              `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${upstreamRoot}\n` +
-              `upstream 클론이 누락되었을 수 있습니다.\n` +
-              `필요 시 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
-            )
-            return { mod, untranslatedItems: [], timeoutReached: false }
-          }
-
-          throw new Error(
-            `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${upstreamRoot}\n` +
-            `upstream 클론이 누락되었을 수 있습니다.\n` +
-            `먼저 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
-          )
+    try {
+      await access(hashFilePath)
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+        try {
+          await access(getLegacyUpstreamFileHashesPath(modDir))
+          hasHashChanges = true
+        } catch {
+          // 마이그레이션할 기존 해시 파일이 없으면 변경이 생길 때까지 저장하지 않는다.
         }
+      } else {
         throw error
       }
+    }
 
-      // localization 경로 존재 여부 확인
-      try {
-        await access(sourceDir)
-      } catch (error) {
-        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+    // upstream 루트 존재 여부 확인
+    try {
+      await access(upstreamRoot)
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+        // 여러 모드를 한 번에 처리할 때는 누락된 모드만 건너뛰고 다음 모드를 계속 처리
+        if (mods.length > 1) {
           log.warn(
-            `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${sourceDir}\n` +
-            `meta.toml의 localization 경로를 확인하거나 upstream 업데이트 상태를 점검하세요.\n` +
-            `경로: ${locPath}`
+            `[${mod}] upstream 디렉토리가 존재하지 않아 해당 localization 경로를 건너뜁니다: ${upstreamRoot}\n` +
+            `upstream 클론이 누락되었을 수 있습니다.\n` +
+            `필요 시 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
           )
-          continue
+          return { mod, untranslatedItems: [], timeoutReached: false }
         }
-        throw error
+
+        throw new Error(
+          `[${mod}] upstream 디렉토리가 존재하지 않습니다: ${upstreamRoot}\n` +
+          `upstream 클론이 누락되었을 수 있습니다.\n` +
+          `먼저 다음 명령어를 실행해 주세요: pnpm upstream ${gameType} \"${mod}\"`
+        )
       }
+      throw error
+    }
 
-      const sourceFiles = await readdir(sourceDir, { recursive: true })
-      const expectedKoreanFiles: string[] = []
-      
-      for (const file of sourceFiles) {
-        const normalizedFile = file.replace(/\\/g, '/')
+    for (const component of meta.upstream.components) {
+      for (const locPath of component.localizationPaths) {
+        const sourceDir = join(upstreamRoot, locPath)
+        const localizationFolder = getLocalizationFolderName(gameType)
+        const koreanBaseDir = join(
+          modDir,
+          'mod',
+          localizationFolder,
+          isReplaceLocalizationPath(locPath) ? 'korean/replace' : 'korean'
+        )
+        const targetDir = component.outputSubdir
+          ? join(koreanBaseDir, component.outputSubdir)
+          : koreanBaseDir
 
-        if (etcSubMod && !normalizedFile.startsWith(`${etcSubMod}/`)) {
-          continue
+        // localization 경로 존재 여부 확인
+        try {
+          await access(sourceDir)
+        } catch (error) {
+          if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+            log.warn(
+              `[${mod}/${component.id}] localization 경로가 존재하지 않아 건너뜁니다: ${sourceDir}\n` +
+              `meta.toml의 localization 경로를 확인하거나 upstream 업데이트 상태를 점검하세요.\n` +
+              `경로: ${locPath}`
+            )
+            continue
+          }
+          throw error
         }
-        // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
-        if (normalizedFile.endsWith(`.yml`) && normalizedFile.includes(`_l_${meta.upstream.language}`)) {
-          const sourcePath = join(sourceDir, normalizedFile)
-          const sourceContent = await readFile(sourcePath, 'utf-8')
-          const sourceFileHash = hashing(sourceContent)
-          const sourceRelativePath = join(locPath, normalizedFile).replace(/\\/g, '/')
-          currentSourcePaths.add(sourceRelativePath)
-          const previousFileHash = savedFileHashes[sourceRelativePath]
 
-          if (!onlyHash && previousFileHash === sourceFileHash) {
-            log.debug(`[${mod}/${normalizedFile}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
+        const sourceFiles = await readdir(sourceDir, { recursive: true })
+        const expectedKoreanFiles: string[] = []
+
+        for (const file of sourceFiles) {
+          const normalizedFile = file.replace(/\\/g, '/')
+
+          if (etcSubMod && !normalizedFile.startsWith(`${etcSubMod}/`)) {
+            continue
+          }
+          // 언어파일 이름이 `_l_언어코드.yml` 형식이면 처리
+          if (normalizedFile.endsWith(`.yml`) && normalizedFile.includes(`_l_${meta.upstream.language}`)) {
+            const sourcePath = join(locPath, normalizedFile).replace(/\\/g, '/')
+            const targetParentDir = join(targetDir, dirname(normalizedFile))
+            const targetFileName = buildKoreanTargetFileName(normalizedFile, meta.upstream.language)
+            const targetPath = join(targetParentDir, targetFileName)
+
+            localizationSourceFiles.push({
+              componentId: component.id,
+              componentName: component.name,
+              componentImplicit: component.implicit,
+              locPath,
+              sourceDir,
+              targetDir,
+              normalizedFile,
+              sourcePath,
+              targetPath
+            })
+            expectedKoreanFiles.push(targetPath)
+          }
+        }
+
+        // 같은 대상 디렉토리를 공유하는 로케일 경로는 예상 파일 목록을 합산한다.
+        if (!etcSubMod) {
+          const cleanupKey = normalizePathForComparison(koreanBaseDir)
+          const cleanupTask = locPathCleanupTasks.get(cleanupKey)
+          const cleanupLabel = `${component.id}:${locPath}`
+
+          if (cleanupTask) {
+            for (const expectedFile of expectedKoreanFiles) {
+              cleanupTask.expectedKoreanFiles.add(expectedFile)
+            }
+            cleanupTask.locPaths.push(cleanupLabel)
           } else {
-            processes.push(processLanguageFile(mod, sourceDir, targetDir, normalizedFile, meta.upstream.language, gameType, onlyHash, startTime, timeoutMs, projectRoot, meta.upstream.transliteration_files))
+            locPathCleanupTasks.set(cleanupKey, {
+              targetDir: koreanBaseDir,
+              expectedKoreanFiles: new Set(expectedKoreanFiles),
+              mod,
+              locPaths: [cleanupLabel]
+            })
           }
-
-          if (nextFileHashes[sourceRelativePath] !== sourceFileHash) {
-            nextFileHashes[sourceRelativePath] = sourceFileHash
-            hasHashChanges = true
-          }
-          // 처리될 한국어 파일 경로 추적
-          const targetParentDir = join(targetDir, dirname(normalizedFile))
-          const targetFileName = buildKoreanTargetFileName(normalizedFile, meta.upstream.language)
-          const targetPath = join(targetParentDir, targetFileName)
-          expectedKoreanFiles.push(targetPath)
         }
       }
-      
-      // 같은 대상 디렉토리를 공유하는 로케일 경로는 예상 파일 목록을 합산한다.
-      if (!etcSubMod) {
-        const cleanupKey = normalizePathForComparison(targetDir)
-        const cleanupTask = locPathCleanupTasks.get(cleanupKey)
+    }
 
-        if (cleanupTask) {
-          for (const expectedFile of expectedKoreanFiles) {
-            cleanupTask.expectedKoreanFiles.add(expectedFile)
-          }
-          cleanupTask.locPaths.push(locPath)
-        } else {
-          locPathCleanupTasks.set(cleanupKey, {
-            targetDir,
-            expectedKoreanFiles: new Set(expectedKoreanFiles),
+    // 번역 Promise를 시작하기 전에 모든 공유 출력 경로를 검사해 덮어쓰기 경쟁을 막는다.
+    validateNoTargetCollisions(mod, localizationSourceFiles)
+
+    for (const sourceFile of localizationSourceFiles) {
+      await mkdir(sourceFile.targetDir, { recursive: true })
+
+      const absoluteSourcePath = join(sourceFile.sourceDir, sourceFile.normalizedFile)
+      const sourceContent = await readFile(absoluteSourcePath, 'utf-8')
+      const sourceFileHash = hashing(sourceContent)
+      currentSourcePaths.add(sourceFile.sourcePath)
+      const previousFileHash = savedFileHashes[sourceFile.sourcePath]
+      const targetFileExists = await translationTargetExists(sourceFile.targetPath)
+
+      if (!onlyHash && previousFileHash === sourceFileHash && targetFileExists) {
+        log.debug(`[${mod}/${sourceFile.sourcePath}] 업스트림 파일 해시 일치로 번역 건너뜀: ${sourceFileHash}`)
+      } else {
+        processes.push({
+          sourcePath: sourceFile.sourcePath,
+          promise: processLanguageFile(
             mod,
-            locPaths: [locPath]
-          })
-        }
+            sourceFile.sourceDir,
+            sourceFile.targetDir,
+            sourceFile.normalizedFile,
+            meta.upstream.language,
+            gameType,
+            onlyHash,
+            startTime,
+            timeoutMs,
+            projectRoot,
+            meta.upstream.transliterationFiles,
+            {
+              ...(sourceFile.componentImplicit
+                ? {}
+                : {
+                    componentId: sourceFile.componentId,
+                    componentName: sourceFile.componentName
+                  }),
+              sourcePath: sourceFile.sourcePath
+            }
+          )
+        })
+      }
+
+      if (nextFileHashes[sourceFile.sourcePath] !== sourceFileHash) {
+        nextFileHashes[sourceFile.sourcePath] = sourceFileHash
+        hasHashChanges = true
       }
     }
 
     // Promise.allSettled를 사용하여 모든 파일 처리가 완료될 때까지 대기
     // 일부 파일에서 번역 거부가 발생해도 다른 파일들의 결과를 모두 수집
-    const results = await Promise.allSettled(processes)
+    const results = await Promise.allSettled(processes.map(process => process.promise))
     
     // 모든 파일 처리 완료 후 orphaned 파일 정리
     const cleanupTasks = Array.from(locPathCleanupTasks.values())
@@ -455,6 +602,38 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
       await cleanupOrphanedFiles(task.targetDir, Array.from(task.expectedKoreanFiles), task.mod, task.locPaths.join(','), projectRoot, nestedCleanupDirs)
     }
 
+    const untranslatedItems: UntranslatedItem[] = []
+    let timeoutReached = false
+    let processError: unknown
+
+    for (const [index, result] of results.entries()) {
+      const sourcePath = processes[index].sourcePath
+
+      if (result.status === 'fulfilled') {
+        // 성공한 경우: 번역되지 않은 항목들을 수집
+        untranslatedItems.push(...result.value)
+        if (result.value.length > 0 && Object.hasOwn(nextFileHashes, sourcePath)) {
+          delete nextFileHashes[sourcePath]
+          hasHashChanges = true
+        }
+      } else {
+        // 실패하거나 중단된 파일은 다음 실행에서 반드시 다시 처리한다.
+        if (Object.hasOwn(nextFileHashes, sourcePath)) {
+          delete nextFileHashes[sourcePath]
+          hasHashChanges = true
+        }
+
+        const error = result.reason
+        if (error instanceof TimeoutReachedError) {
+          log.warn(`[${workLabel}] 타임아웃으로 인해 번역 중단됨`)
+          log.info(`타임아웃 도달: 처리된 작업까지 저장하고 종료합니다`)
+          timeoutReached = true
+        } else {
+          processError ??= error
+        }
+      }
+    }
+
     for (const savedPath of Object.keys(nextFileHashes)) {
       if (!currentSourcePaths.has(savedPath)) {
         delete nextFileHashes[savedPath]
@@ -462,29 +641,17 @@ export async function processModTranslations ({ rootDir, mods, gameType, targetM
       }
     }
 
+    // 번역 결과를 반영한 뒤 성공한 파일만 해시 상태에 남긴다.
     if (hasHashChanges) {
       await writeUpstreamFileHashes(hashFilePath, nextFileHashes)
     }
-    
-    const untranslatedItems: UntranslatedItem[] = []
-    
-    for (const result of results) {
-      if (result.status === 'fulfilled') {
-        // 성공한 경우: 번역되지 않은 항목들을 수집
-        untranslatedItems.push(...result.value)
-      } else {
-        // 실패한 경우: 에러 타입에 따라 처리
-        const error = result.reason
-        if (error instanceof TimeoutReachedError) {
-          log.warn(`[${workLabel}] 타임아웃으로 인해 번역 중단됨`)
-          log.info(`타임아웃 도달: 처리된 작업까지 저장하고 종료합니다`)
-          // 타임아웃 시에도 현재까지 수집된 항목은 반환하여 상위에서 저장합니다.
-          return { mod, untranslatedItems, timeoutReached: true }
-        } else {
-          // 다른 예외는 그대로 throw
-          throw error
-        }
-      }
+
+    if (processError) {
+      throw processError
+    }
+
+    if (timeoutReached) {
+      return { mod, untranslatedItems, timeoutReached: true }
     }
 
     log.success(`[${workLabel}] 번역 완료`)
@@ -535,10 +702,10 @@ async function saveAndReturnResult(
   gameType: GameType,
   untranslatedItems: UntranslatedItem[]
 ): Promise<TranslationResult> {
-  // 중복 항목 제거 (mod + file + key 조합으로 고유성 판단)
+  // 중복 항목 제거 (컴포넌트와 업스트림 소스 경로까지 포함해 고유성 판단)
   const seen = new Map<string, UntranslatedItem>()
   for (const item of untranslatedItems) {
-    const key = `${item.mod}::${item.file}::${item.key}`
+    const key = `${item.mod}::${item.componentId ?? ''}::${item.sourcePath ?? item.file}::${item.key}`
     if (!seen.has(key)) {
       seen.set(key, item)
     }
@@ -570,9 +737,8 @@ async function saveAndReturnResult(
 }
 
 /**
- * 업스트림 소스가 없는 한국어 번역 파일의 변경사항을 git으로 롤백합니다.
+ * 업스트림 소스가 없는 한국어 번역 파일을 제거합니다.
  * 업스트림에서 삭제된 파일 또는 언어 파일 패턴과 일치하지 않아 처리되지 않은 파일이 대상입니다.
- * git checkout은 추적된 파일만 롤백하므로, 새로 생성된 미추적 파일은 남아있을 수 있습니다.
  * 
  * @param targetDir 한국어 번역 파일이 위치한 디렉토리
  * @param expectedKoreanFiles 처리 예상 파일 경로 목록 (절대 경로)
@@ -615,7 +781,7 @@ async function cleanupOrphanedFiles(
     koreanFiles.map(file => normalizePathForComparison(join(targetDir, file)))
   )
 
-  // 업스트림에 없는 한국어 파일의 변경사항을 git으로 롤백
+  // 업스트림에 없는 한국어 파일을 제거한다.
   for (const file of koreanFiles) {
     const fullPath = join(targetDir, file)
     const normalizedFullPath = normalizePathForComparison(fullPath)
@@ -639,7 +805,7 @@ async function cleanupOrphanedFiles(
         log.info(`[${mod}/${locPath}] 업스트림 파일명 대소문자 변경으로 ${actionDescription}: ${file}`)
         try {
           if (hasSeparateExpectedFile) {
-            await execGitCommand(`git rm --ignore-unmatch -f -- ${escapeShellArg(fullPath)}`, projectRoot)
+            await removeTranslationFile(fullPath, projectRoot)
             log.debug(`[${mod}/${locPath}] 대소문자 충돌 파일 제거 완료: ${fullPath}`)
           } else {
             await renameFileCasingWithGit(fullPath, expectedPath, projectRoot)
@@ -652,23 +818,13 @@ async function cleanupOrphanedFiles(
         continue
       }
 
-      log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 파일 변경사항 롤백: ${file}`)
+      log.info(`[${mod}/${locPath}] 업스트림에서 삭제된 번역 파일 제거: ${file}`)
       try {
-        // git checkout을 사용하여 파일의 변경사항을 HEAD 상태로 롤백
-        await execGitCommand(`git checkout HEAD -- ${escapeShellArg(fullPath)}`, projectRoot)
-        log.debug(`[${mod}/${locPath}] 파일 롤백 완료: ${fullPath}`)
+        await removeTranslationFile(fullPath, projectRoot)
+        log.debug(`[${mod}/${locPath}] 파일 제거 완료: ${fullPath}`)
       } catch (error) {
-        // git에 해당 파일이 없는 경우와 기타 에러를 구분하여 처리
         const errMsg = (error && typeof error === 'object' && 'message' in error) ? (error as Error).message : String(error)
-        if (
-          errMsg.includes('did not match any files') ||
-          errMsg.includes('pathspec') ||
-          errMsg.includes('unknown revision or path not in the working tree')
-        ) {
-          log.debug(`[${mod}/${locPath}] 파일 롤백 불가 (git에 없음): ${file}`)
-        } else {
-          log.warn(`[${mod}/${locPath}] 파일 롤백 중 오류 발생: ${file} - ${errMsg}`)
-        }
+        log.warn(`[${mod}/${locPath}] 파일 제거 중 오류 발생: ${file} - ${errMsg}`)
       }
     }
   }
@@ -682,10 +838,36 @@ class TimeoutReachedError extends Error {
 }
 
 
-async function processLanguageFile (mode: string, sourceDir: string, targetBaseDir: string, file: string, sourceLanguage: string, gameType: GameType, onlyHash: boolean, startTime: number, timeoutMs: number | null, projectRoot: string, transliterationFiles?: string[]): Promise<UntranslatedItem[]> {
+async function processLanguageFile (
+  mode: string,
+  sourceDir: string,
+  targetBaseDir: string,
+  file: string,
+  sourceLanguage: string,
+  gameType: GameType,
+  onlyHash: boolean,
+  startTime: number,
+  timeoutMs: number | null,
+  projectRoot: string,
+  transliterationFiles?: string[],
+  sourceIdentity?: TranslationSourceIdentity
+): Promise<UntranslatedItem[]> {
   const sourcePath = join(sourceDir, file)
   const untranslatedItems: UntranslatedItem[] = []
   const logModName = resolveLogModName(mode, file)
+  const buildUntranslatedItem = (key: string, message: string): UntranslatedItem => ({
+    mod: logModName,
+    ...(sourceIdentity?.componentId
+      ? {
+          componentId: sourceIdentity.componentId,
+          componentName: sourceIdentity.componentName,
+        }
+      : {}),
+    ...(sourceIdentity ? { sourcePath: sourceIdentity.sourcePath } : {}),
+    file,
+    key,
+    message
+  })
 
   // 파일명을 기반으로 음역 모드 파일인지 감지
   const isTransliterationFile = shouldUseTransliteration(file, undefined, transliterationFiles)
@@ -774,18 +956,16 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
           log.warn(`[${mode}/${file}:${item.key}] 번역 재시도 초과, 원문을 유지합니다.`)
           translatedValue = item.sourceValue
           hashForEntry = null
-          untranslatedItems.push({ mod: logModName, file, key: item.key, message: item.sourceValue })
+          untranslatedItems.push(buildUntranslatedItem(item.key, item.sourceValue))
         } else if (result.error instanceof TranslationRefusedError) {
           log.warn(`[${mode}/${file}:${item.key}] 번역 거부됨: ${result.error.reason}`)
           log.info(`[${mode}/${file}:${item.key}] 원문을 유지하고 다음 항목으로 계속 진행합니다.`)
           translatedValue = item.sourceValue
           hashForEntry = null
-          untranslatedItems.push({
-            mod: logModName,
-            file,
-            key: item.key,
-            message: `${item.sourceValue} (번역 거부: ${result.error.reason})`
-          })
+          untranslatedItems.push(buildUntranslatedItem(
+            item.key,
+            `${item.sourceValue} (번역 거부: ${result.error.reason})`
+          ))
         }
 
         if (item.shouldTransliterate && isSuspiciousShortTransliterationResult(item.sourceValue, translatedValue)) {
@@ -833,12 +1013,10 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
         for (const item of items) {
           newYaml.l_korean[item.key] = [item.sourceValue, null]
           hasUnsavedChanges = true
-          untranslatedItems.push({
-            mod: logModName,
-            file,
-            key: item.key,
-            message: `${item.sourceValue} (${modeLabel} 오류: ${String(error)})`
-          })
+          untranslatedItems.push(buildUntranslatedItem(
+            item.key,
+            `${item.sourceValue} (${modeLabel} 오류: ${String(error)})`
+          ))
           processedCount++
         }
       }
@@ -922,27 +1100,19 @@ async function processLanguageFile (mode: string, sourceDir: string, targetBaseD
   
   if (!hasEntries) {
     log.warn(`[${mode}/${file}] 번역할 항목이 없습니다. 파일을 생성하지 않습니다.`)
-    // 기존 파일이 있다면 git checkout으로 변경사항 롤백 (업스트림에서 내용이 모두 삭제된 경우)
+    // 업스트림 파일에서 모든 항목이 삭제되었다면 기존 번역 파일도 제거한다.
     try {
       await access(targetPath)
-      await execGitCommand(`git checkout HEAD -- ${escapeShellArg(targetPath)}`, projectRoot)
-      log.info(`[${mode}/${file}] 빈 파일 변경사항 롤백: ${targetPath}`)
+      await removeTranslationFile(targetPath, projectRoot)
+      log.info(`[${mode}/${file}] 빈 번역 파일 제거: ${targetPath}`)
     } catch (error) {
-      // 파일이 없거나 git에 없으면 무시, 그 외는 경고
       if (error && typeof error === 'object') {
-        // node:fs/promises access error
         if ('code' in error && error.code === 'ENOENT') {
-          log.debug(`[${mode}/${file}] 롤백 불가 (파일 없음)`)
-        // node:child_process exec error
+          log.debug(`[${mode}/${file}] 제거할 파일 없음`)
         } else if ('message' in error) {
-          const errMsg = (error as Error).message
-          if (errMsg.includes('did not match any files') || errMsg.includes('pathspec')) {
-            log.debug(`[${mode}/${file}] 롤백 불가 (git에 없음)`)
-          } else {
-            log.warn(`[${mode}/${file}] 롤백 중 예기치 않은 오류 발생:`, error)
-          }
+          log.warn(`[${mode}/${file}] 빈 번역 파일 제거 중 오류 발생:`, error)
         } else {
-          log.warn(`[${mode}/${file}] 롤백 중 알 수 없는 오류 발생:`, error)
+          log.warn(`[${mode}/${file}] 빈 번역 파일 제거 중 알 수 없는 오류 발생:`, error)
         }
       }
     }

@@ -1,11 +1,12 @@
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, stat, writeFile } from 'node:fs/promises'
 import { join, dirname, basename } from 'pathe'
 import { log } from './utils/logger'
 import process from 'node:process'
+import { fileURLToPath } from 'node:url'
 import { parseYaml } from './parser/yaml'
-import { parseToml } from './parser/toml'
+import { isReplaceLocalizationPath, readModMeta } from './config/mod-meta'
 
 const execFileAsync = promisify(execFile)
 
@@ -93,7 +94,7 @@ async function extractDictionaryChangesFromCommit(commitId: string): Promise<Dic
       log.debug(`${koreanFile}에서 ${translationKeys.size}개의 번역 키 발견`)
       
       // 대응하는 업스트림 영어 파일 찾기
-      const englishFile = await findUpstreamEnglishFile(koreanFile, gameType)
+      const englishFile = await findUpstreamSourceFile(koreanFile, gameType)
       
       if (!englishFile) {
         log.warn(`${koreanFile}에 대응하는 영어 파일을 찾을 수 없습니다.`)
@@ -142,11 +143,15 @@ async function extractDictionaryChangesFromCommit(commitId: string): Promise<Dic
  * 한국어 번역 파일에 대응하는 업스트림 영어 파일을 찾습니다.
  * meta.toml에 정의된 localization 경로를 존중합니다.
  */
-async function findUpstreamEnglishFile(koreanFilePath: string, gameType: string): Promise<string | null> {
+export async function findUpstreamSourceFile(
+  koreanFilePath: string,
+  gameType: string,
+  rootDir = process.cwd()
+): Promise<string | null> {
   // 경로 구조: {game}/MOD_NAME/mod/localization/korean/___*_l_korean.yml
   // 업스트림: {game}/MOD_NAME/upstream/{localization_path}/*_l_english.yml (meta.toml에 정의됨)
-  
-  const parts = koreanFilePath.split('/')
+
+  const parts = koreanFilePath.replace(/\\/g, '/').split('/').filter(Boolean)
   
   if (parts.length < 5) {
     return null
@@ -154,43 +159,64 @@ async function findUpstreamEnglishFile(koreanFilePath: string, gameType: string)
   
   const modName = parts[1] // 예: RICE, VIET
   const fileName = basename(koreanFilePath)
-  
-  // ___ 프리픽스 제거 및 _l_korean.yml을 _l_english.yml로 변경
-  const englishFileName = fileName.replace(/^___/, '').replace(/_l_korean\.yml$/, '_l_english.yml')
+  const koreanPathIndex = parts.findIndex((part, index) => index >= 3 && part === 'korean')
+  if (koreanPathIndex < 0) {
+    return null
+  }
+
+  const outputRelativeParts = parts.slice(koreanPathIndex + 1, -1)
   
   // meta.toml 읽기
-  const modDir = join(process.cwd(), gameType, modName)
+  const modDir = join(rootDir, gameType, modName)
   const metaPath = join(modDir, 'meta.toml')
   
   try {
-    const metaContent = await readFile(metaPath, 'utf-8')
-    const meta = parseToml(metaContent) as {
-      upstream: {
-        localization: string[]
-        language: string
+    const meta = await readModMeta(metaPath)
+
+    // ___ 프리픽스 제거 및 대상 언어 코드를 원본 언어 코드로 되돌립니다.
+    const sourceFileName = fileName
+      .replace(/^___/, '')
+      .replace(/_l_korean\.yml$/, `_l_${meta.upstream.language}.yml`)
+    const candidates = new Set<string>()
+
+    for (const component of meta.upstream.components) {
+      const outputSubdirParts = component.outputSubdir?.split('/').filter(Boolean) ?? []
+      for (const locPath of component.localizationPaths) {
+        const targetPrefixParts = [
+          ...(isReplaceLocalizationPath(locPath) ? ['replace'] : []),
+          ...outputSubdirParts
+        ]
+        if (!targetPrefixParts.every((part, index) => outputRelativeParts[index] === part)) {
+          continue
+        }
+
+        const sourceRelativeParts = outputRelativeParts.slice(targetPrefixParts.length)
+        const candidate = join(
+          modDir,
+          'upstream',
+          locPath,
+          ...sourceRelativeParts,
+          sourceFileName
+        )
+
+        try {
+          if ((await stat(candidate)).isFile()) {
+            candidates.add(candidate)
+          }
+        } catch (error) {
+          if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
+            throw error
+          }
+        }
       }
     }
-    
-    // meta.toml에 정의된 각 localization 경로에서 파일 찾기
-    for (const locPath of meta.upstream.localization) {
-      const searchDir = join(modDir, 'upstream', locPath)
-      
-      try {
-        // 해당 경로에서 영어 파일 찾기
-        const { stdout } = await execFileAsync(
-          'find',
-          [searchDir, '-name', englishFileName, '-type', 'f'],
-          { maxBuffer: 10 * 1024 * 1024 }
-        )
-        const foundFiles = stdout.trim().split('\n').filter(f => f)
-        
-        if (foundFiles.length > 0) {
-          return foundFiles[0]
-        }
-      } catch (error) {
-        // find 명령 실패 시 다음 경로 시도
-        continue
-      }
+
+    if (candidates.size === 1) {
+      return [...candidates][0]
+    }
+
+    if (candidates.size > 1) {
+      log.warn(`한국어 번역 파일에 대응하는 업스트림 후보가 여러 개입니다: ${koreanFilePath}`, [...candidates])
     }
   } catch (error) {
     log.warn(`meta.toml 읽기 실패: ${metaPath}`, error)
@@ -381,4 +407,6 @@ async function main() {
   }
 }
 
-main()
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  void main()
+}

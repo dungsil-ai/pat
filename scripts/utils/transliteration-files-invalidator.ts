@@ -1,18 +1,11 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { join, parse } from 'pathe'
-import { parseToml, parseYaml, stringifyYaml } from '../parser'
+import { parseYaml, stringifyYaml } from '../parser'
+import { isReplaceLocalizationPath, readModMeta } from '../config/mod-meta'
 import { log } from './logger'
 import { type GameType } from './prompts'
 import { matchWildcardPattern } from './pattern-matcher'
 import { getChangedTransliterationFiles, type TransliterationFileChange } from './transliteration-files-changes'
-
-interface ModMeta {
-  upstream: {
-    localization: string[]
-    language: string
-    transliteration_files?: string[]
-  }
-}
 
 function getLocalizationFolderName(gameType: GameType): string {
   switch (gameType) {
@@ -64,22 +57,24 @@ export async function invalidateTransliterationFilesChanges(
 
     try {
       const metaPath = join(modDir, 'meta.toml')
-      const metaContent = await readFile(metaPath, 'utf-8')
-      const meta = parseToml(metaContent) as ModMeta
+      const meta = await readModMeta(metaPath)
 
       // 추가되거나 제거된 모든 파일에 대해 무효화
       const affectedFiles = [...new Set([...change.addedFiles, ...change.removedFiles])]
       
-      for (const locPath of meta.upstream.localization) {
-        const invalidatedCount = await invalidateAffectedFiles(
-          modName,
-          modDir,
-          locPath,
-          meta.upstream.language,
-          gameType,
-          affectedFiles
-        )
-        totalInvalidated += invalidatedCount
+      for (const component of meta.upstream.components) {
+        for (const locPath of component.localizationPaths) {
+          const invalidatedCount = await invalidateAffectedFiles(
+            modName,
+            modDir,
+            locPath,
+            meta.upstream.language,
+            gameType,
+            affectedFiles,
+            component.outputSubdir
+          )
+          totalInvalidated += invalidatedCount
+        }
       }
 
       log.success(`[${modName}] 완료`)
@@ -99,18 +94,16 @@ async function invalidateAffectedFiles(
   locPath: string,
   sourceLanguage: string,
   gameType: GameType,
-  affectedFiles: string[]
+  affectedFiles: string[],
+  outputSubdir?: string
 ): Promise<number> {
-  // locPath가 'replace'로 끝나는지 확인 (더 정확한 경로 매칭)
-  const pathSegments = locPath.split('/').filter(Boolean)
-  const isReplacePath = pathSegments[pathSegments.length - 1] === 'replace'
-  
-  const targetDir = join(
+  const targetRoot = join(
     modDir,
     'mod',
     getLocalizationFolderName(gameType),
-    isReplacePath ? 'korean/replace' : 'korean'
+    isReplaceLocalizationPath(locPath) ? 'korean/replace' : 'korean'
   )
+  const targetDir = outputSubdir ? join(targetRoot, outputSubdir) : targetRoot
 
   let invalidatedCount = 0
 

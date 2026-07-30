@@ -1,18 +1,12 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { join, parse } from 'pathe'
-import { parseToml, parseYaml, stringifyYaml } from '../parser'
+import { parseYaml, stringifyYaml } from '../parser'
+import { isReplaceLocalizationPath, readModMeta } from '../config/mod-meta'
 import { log } from './logger'
 import { type GameType, shouldUseTransliteration } from './prompts'
 import { validateTranslationEntries } from './translation-validator'
 import { getUpstreamFileHashesPath, readUpstreamFileHashes, removeUpstreamFileHash, writeUpstreamFileHashes } from './upstream-file-hashes'
 import { buildKoreanTargetFileName } from './localization-file-name'
-
-interface ModMeta {
-  upstream: {
-    localization: string[]
-    language: string
-  }
-}
 
 /**
  * 잘못되었거나 누락된 번역 출력을 찾아 다음 번역 시 복구되도록 무효화합니다.
@@ -39,19 +33,28 @@ export async function invalidateIncorrectTranslations(gameType: GameType, rootDi
     log.debug(`[${mod}] meta.toml 경로: ${metaPath}`)
 
     try {
-      const metaContent = await readFile(metaPath, 'utf-8')
-      const meta = parseToml(metaContent) as ModMeta
+      const meta = await readModMeta(metaPath)
 
       log.debug(`[${mod}] 메타데이터 읽기 성공`)
       log.debug(`[${mod}] upstream.language: ${meta.upstream.language}`)
-      log.debug(`[${mod}] upstream.localization: [${meta.upstream.localization.join(', ')}]`)
+      log.debug(`[${mod}] upstream.localization: [${meta.upstream.localizationPaths.join(', ')}]`)
 
-      for (const locPath of meta.upstream.localization) {
-        log.info(`[${mod}] localization 경로 처리: ${locPath}`)
-        const result = await invalidateModLocalization(mod, modDir, locPath, meta.upstream.language, gameType)
-        totalInvalidatedEntries += result.invalidatedEntries
-        totalRequeuedFiles += result.requeuedFiles
-        log.info(`[${mod}/${locPath}] 항목 무효화: ${result.invalidatedEntries}개, 파일 재처리 예약: ${result.requeuedFiles}개`)
+      for (const component of meta.upstream.components) {
+        for (const locPath of component.localizationPaths) {
+          log.info(`[${mod}/${component.id}] localization 경로 처리: ${locPath}`)
+          const result = await invalidateModLocalization(
+            mod,
+            modDir,
+            locPath,
+            meta.upstream.language,
+            gameType,
+            component.outputSubdir,
+            meta.upstream.transliterationFiles
+          )
+          totalInvalidatedEntries += result.invalidatedEntries
+          totalRequeuedFiles += result.requeuedFiles
+          log.info(`[${mod}/${component.id}/${locPath}] 항목 무효화: ${result.invalidatedEntries}개, 파일 재처리 예약: ${result.requeuedFiles}개`)
+        }
       }
 
       log.success(`[${mod}] 완료`)
@@ -78,10 +81,18 @@ async function invalidateModLocalization(
   modDir: string,
   locPath: string,
   sourceLanguage: string,
-  gameType: GameType
+  gameType: GameType,
+  outputSubdir?: string,
+  transliterationFiles?: string[]
 ): Promise<InvalidationResult> {
   const sourceDir = join(modDir, 'upstream', locPath)
-  const targetDir = join(modDir, 'mod', getLocalizationFolderName(gameType), locPath.includes('replace') ? 'korean/replace' : 'korean')
+  const targetRoot = join(
+    modDir,
+    'mod',
+    getLocalizationFolderName(gameType),
+    isReplaceLocalizationPath(locPath) ? 'korean/replace' : 'korean'
+  )
+  const targetDir = outputSubdir ? join(targetRoot, outputSubdir) : targetRoot
   const hashFilePath = getUpstreamFileHashesPath(modDir)
 
   log.debug(`[${modName}] 소스 디렉토리: ${sourceDir}`)
@@ -106,7 +117,7 @@ async function invalidateModLocalization(
         const sourceRelativePath = join(locPath, file).replace(/\\/g, '/')
 
         // 파일명으로 음역 모드 판단
-        const useTransliteration = shouldUseTransliteration(file)
+        const useTransliteration = shouldUseTransliteration(file, undefined, transliterationFiles)
         if (useTransliteration) {
           log.debug(`[${modName}] 음역 모드 파일: ${file}`)
         }

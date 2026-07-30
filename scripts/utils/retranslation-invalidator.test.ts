@@ -159,6 +159,30 @@ describe('retranslation-invalidator', () => {
     expect(afterContent).toBe(beforeContent)
   })
 
+  it('컴포넌트 출력 하위 경로의 정상 번역 파일을 찾아야 함', async () => {
+    const context = await createModFixture(testDir, {
+      sourceEntries: {
+        key1: ['Hello world', null]
+      },
+      targetEntries: {
+        key1: ['안녕하세요 세계', 'hash-a']
+      },
+      fileHashes: {
+        'localization/english/test_l_english.yml': 'hash-component'
+      },
+      component: {
+        id: 'sample',
+        outputSubdir: 'sample'
+      }
+    })
+
+    await invalidateIncorrectTranslations('ck3', testDir, ['test-mod'])
+
+    const hashes = await readHashFile(context.hashFilePath)
+    expect(hashes).toHaveProperty('localization/english/test_l_english.yml', 'hash-component')
+    expect(await readFile(context.targetFilePath, 'utf-8')).toContain('안녕하세요 세계')
+  })
+
   it('원본도 빈 값인 항목은 재처리 대상으로 오탐하지 않아야 함', async () => {
     const context = await createModFixture(testDir, {
       sourceEntries: {
@@ -188,6 +212,10 @@ interface FixtureOptions {
   sourceEntries: Record<string, [string, string | null]>
   targetEntries?: Record<string, [string, string | null]>
   fileHashes: Record<string, string>
+  component?: {
+    id: string
+    outputSubdir?: string
+  }
 }
 
 interface FixtureContext {
@@ -198,14 +226,27 @@ interface FixtureContext {
 async function createModFixture(rootDir: string, options: FixtureOptions): Promise<FixtureContext> {
   const modDir = join(rootDir, 'test-mod')
   const sourceDir = join(modDir, 'upstream', 'localization', 'english')
-  const targetDir = join(modDir, 'mod', 'localization', 'korean')
+  const targetRoot = join(modDir, 'mod', 'localization', 'korean')
+  const targetDir = options.component?.outputSubdir
+    ? join(targetRoot, options.component.outputSubdir)
+    : targetRoot
   const sourceFilePath = join(sourceDir, 'test_l_english.yml')
   const targetFilePath = join(targetDir, '___test_l_korean.yml')
   const hashFilePath = getUpstreamFileHashesPath(modDir)
 
   await mkdir(sourceDir, { recursive: true })
   await mkdir(targetDir, { recursive: true })
-  await writeFile(join(modDir, 'meta.toml'), '[upstream]\nlocalization = ["localization/english"]\nlanguage = "english"\n', 'utf-8')
+  const metaContent = options.component
+    ? `[upstream]
+language = "english"
+
+[[upstream.components]]
+id = "${options.component.id}"
+localization = ["localization/english"]
+${options.component.outputSubdir ? `output_subdir = "${options.component.outputSubdir}"` : ''}
+`
+    : '[upstream]\nlocalization = ["localization/english"]\nlanguage = "english"\n'
+  await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
   await writeFile(sourceFilePath, buildYaml('l_english', options.sourceEntries), 'utf-8')
   await writeFile(hashFilePath, `${JSON.stringify(options.fileHashes, null, 2)}\n`, 'utf-8')
 

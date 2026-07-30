@@ -1,33 +1,31 @@
-import { readdir, readFile, access } from 'node:fs/promises'
-import { join } from 'pathe'
+import { readdir, access } from 'node:fs/promises'
+import { dirname, join } from 'pathe'
 import process from 'node:process'
-import { parseToml } from './parser/toml'
+import { isReplaceLocalizationPath, readModMeta } from './config/mod-meta'
+import { buildKoreanTargetFileName } from './utils/localization-file-name'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 import natsort from 'natsort'
 import semver from 'semver'
+import { isPrereleaseTag, parseStableSemanticVersion } from './utils/version-tags'
 
 const execFileAsync = promisify(execFile)
 
 type VersionStrategy = 'semantic' | 'natural' | 'default' | 'github'
 
-interface MetaTomlConfig {
-  upstream?: {
-    url?: string
-    localization?: string[]
-    language?: string
-    version_strategy?: VersionStrategy
-  }
-}
-
 interface ModMeta {
   game: string
   mod: string
+  componentId?: string
+  componentName?: string
   owner: string
   repo: string
+  language: string
   strategy: VersionStrategy
-  translationPath: string
+  tagPattern?: string
+  outputSubdir?: string
+  translationRootPath: string
   upstreamLocalization: string[]
 }
 
@@ -39,12 +37,21 @@ interface TranslationCommit {
 interface DashboardRow {
   game: string
   mod: string
+  componentId?: string
+  componentName?: string
   strategy: string
   trackedBy: 'tag' | 'commit'
   baselineVersion: string
   latestVersion: string
   status: '미반영' | '최신' | '번역 이력 없음' | '조회 실패' | '경로 커밋 없음'
   compareUrl?: string
+}
+
+interface DashboardCache {
+  repositoryInfo: Map<string, Promise<{ default_branch: string }>>
+  repositoryTrees: Map<string, Promise<GitHubTreeResponse>>
+  tags: Map<string, Promise<TagInfo[]>>
+  translationCommits: Map<string, Promise<TranslationCommit | null>>
 }
 
 interface GitHubCommit {
@@ -54,6 +61,16 @@ interface GitHubCommit {
       date?: string
     }
   }
+}
+
+interface GitHubTreeEntry {
+  path?: string
+  type?: string
+}
+
+interface GitHubTreeResponse {
+  tree: GitHubTreeEntry[]
+  truncated: boolean
 }
 
 type TagInfo = {
@@ -121,6 +138,86 @@ async function resolveTranslationPath(rootDir: string, game: string, mod: string
   return candidates[0]
 }
 
+function resolveComponentTranslationPaths(
+  translationRootPath: string,
+  localizationPaths: string[],
+  outputSubdir?: string
+): string[] {
+  return [...new Set(localizationPaths.map(localizationPath => {
+    const languageRootPath = isReplaceLocalizationPath(localizationPath)
+      ? join(translationRootPath, 'replace')
+      : translationRootPath
+    return outputSubdir
+      ? join(languageRootPath, outputSubdir)
+      : languageRootPath
+  }))]
+}
+
+function getRelativeLocalizationFilePath(
+  repositoryPath: string,
+  localizationPath: string
+): string | null {
+  if (localizationPath === '.') {
+    return repositoryPath
+  }
+
+  const prefix = `${localizationPath}/`
+  return repositoryPath.startsWith(prefix)
+    ? repositoryPath.slice(prefix.length)
+    : null
+}
+
+function resolveComponentTranslationTrackingPaths(
+  translationRootPath: string,
+  localizationPaths: string[],
+  sourceLanguage: string,
+  outputSubdir: string | undefined,
+  repositoryTree?: GitHubTreeResponse | null,
+  allowRootFallback = true
+): string[] {
+  const fallbackPaths = resolveComponentTranslationPaths(
+    translationRootPath,
+    localizationPaths,
+    outputSubdir
+  )
+  if (!repositoryTree || repositoryTree.truncated || !Array.isArray(repositoryTree.tree)) {
+    return allowRootFallback ? fallbackPaths : []
+  }
+
+  const translationFilePaths = new Set<string>()
+  for (const localizationPath of localizationPaths) {
+    const languageRootPath = isReplaceLocalizationPath(localizationPath)
+      ? join(translationRootPath, 'replace')
+      : translationRootPath
+    const targetRootPath = outputSubdir
+      ? join(languageRootPath, outputSubdir)
+      : languageRootPath
+
+    for (const entry of repositoryTree.tree) {
+      if (entry.type !== 'blob' || !entry.path) continue
+
+      const relativeFilePath = getRelativeLocalizationFilePath(entry.path, localizationPath)
+      if (
+        !relativeFilePath ||
+        !relativeFilePath.endsWith('.yml') ||
+        !relativeFilePath.includes(`_l_${sourceLanguage}`)
+      ) {
+        continue
+      }
+
+      translationFilePaths.add(join(
+        targetRootPath,
+        dirname(relativeFilePath),
+        buildKoreanTargetFileName(relativeFilePath, sourceLanguage)
+      ))
+    }
+  }
+
+  return translationFilePaths.size > 0
+    ? [...translationFilePaths].sort()
+    : (allowRootFallback ? fallbackPaths : [])
+}
+
 async function findModMetas(rootDir: string): Promise<ModMeta[]> {
   const metas: ModMeta[] = []
   for (const game of ['ck3', 'vic3', 'stellaris']) {
@@ -141,32 +238,50 @@ async function findModMetas(rootDir: string): Promise<ModMeta[]> {
         continue
       }
 
-      const content = await readFile(metaPath, 'utf-8')
-      const config = parseToml(content) as MetaTomlConfig
-      const url = config.upstream?.url
+      const config = await readModMeta(metaPath)
+      const upstream = config.upstream
+      const url = upstream?.url
       if (!url) continue
 
       const repo = parseGitHubUrl(url)
       if (!repo) continue
 
-      metas.push({
-        game,
-        mod: modEntry.name,
-        owner: repo.owner,
-        repo: repo.repo,
-        strategy: config.upstream?.version_strategy ?? 'default',
-        translationPath: await resolveTranslationPath(rootDir, game, modEntry.name),
-        upstreamLocalization: config.upstream?.localization ?? []
-      })
+      const translationRootPath = await resolveTranslationPath(rootDir, game, modEntry.name)
+      for (const component of upstream.components) {
+        metas.push({
+          game,
+          mod: modEntry.name,
+          componentId: component.implicit ? undefined : component.id,
+          componentName: component.implicit ? undefined : component.name,
+          owner: repo.owner,
+          repo: repo.repo,
+          language: upstream.language,
+          strategy: component.versionStrategy,
+          tagPattern: component.tagPattern,
+          outputSubdir: component.outputSubdir,
+          translationRootPath,
+          upstreamLocalization: component.localizationPaths
+        })
+      }
     }
   }
 
   return metas
 }
 
-async function getLastTranslationCommit(rootDir: string, translationPath: string): Promise<TranslationCommit | null> {
+async function getLastTranslationCommit(rootDir: string, translationPaths: string[]): Promise<TranslationCommit | null> {
   try {
-    const { stdout } = await execFileAsync('git', ['log', '-1', '--format=%h|%cI', '--', translationPath], { cwd: rootDir })
+    const { stdout } = await execFileAsync(
+      'git',
+      [
+        'log',
+        '-1',
+        '--format=%h|%cI',
+        '--',
+        ...translationPaths.map(translationPath => `:(literal)${translationPath}`)
+      ],
+      { cwd: rootDir }
+    )
     const line = stdout.trim()
     if (!line) return null
     const [shortSha, committedAt] = line.split('|')
@@ -174,6 +289,15 @@ async function getLastTranslationCommit(rootDir: string, translationPath: string
     return { shortSha, committedAt }
   } catch {
     return null
+  }
+}
+
+function createDashboardCache(): DashboardCache {
+  return {
+    repositoryInfo: new Map(),
+    repositoryTrees: new Map(),
+    tags: new Map(),
+    translationCommits: new Map()
   }
 }
 
@@ -415,23 +539,24 @@ function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagIn
   }
 
   if (strategy === 'natural') {
-    const preReleaseKeywords = ['beta', 'alpha', 'rc', 'snapshot', 'test', 'dev']
-    return tags.filter(tag => {
-      const lower = tag.name.toLowerCase()
-      return !preReleaseKeywords.some(keyword => lower.includes(keyword))
-    })
+    return tags.filter(tag => !isPrereleaseTag(tag.name))
   }
 
   if (strategy === 'semantic') {
-    return tags.filter(tag => {
-      const normalizedTag = tag.name.replace(/^v/, '')
-      const parsed = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
-      if (!parsed) return false
-      return semver.prerelease(parsed) === null
-    })
+    return tags.filter(tag => parseStableSemanticVersion(tag.name) !== null)
   }
 
   return tags
+}
+
+function filterTagsByPattern(tags: TagInfo[], tagPattern?: string): TagInfo[] {
+  if (!tagPattern) return tags
+
+  const pattern = new RegExp(tagPattern)
+  return tags.filter(tag => {
+    pattern.lastIndex = 0
+    return pattern.test(tag.name)
+  })
 }
 
 function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | null {
@@ -459,13 +584,11 @@ function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | nu
     const naturalSorter = natsort({ desc: true })
     const parsed = tags
       .map(tag => {
-        const normalizedTag = tag.name.replace(/^v/, '')
-        const parsedVersion = semver.parse(normalizedTag) ?? semver.coerce(normalizedTag)
+        const parsedVersion = parseStableSemanticVersion(tag.name)
         if (!parsedVersion) return null
-        if (semver.prerelease(parsedVersion)) return null
-        return { ...tag, normalizedTag, parsedVersion }
+        return { ...tag, parsedVersion }
       })
-      .filter((tag): tag is TagInfo & { normalizedTag: string, parsedVersion: semver.SemVer } => tag !== null)
+      .filter((tag): tag is TagInfo & { parsedVersion: semver.SemVer } => tag !== null)
 
     if (parsed.length === 0) {
       return null
@@ -477,7 +600,7 @@ function pickLatestTag(tags: TagInfo[], strategy: VersionStrategy): TagInfo | nu
         return versionCompare
       }
 
-      return naturalSorter(a.normalizedTag, b.normalizedTag)
+      return naturalSorter(a.name, b.name)
     })
 
     return sorted[0]
@@ -493,6 +616,10 @@ function findBaselineTag(tags: TagInfo[], lastTranslation: TranslationCommit | n
   return [...tags]
     .sort((a, b) => new Date(b.committedAt).getTime() - new Date(a.committedAt).getTime())
     .find(tag => new Date(tag.committedAt).getTime() <= translationTime) ?? null
+}
+
+function escapeMarkdownTableCell(value: string): string {
+  return value.replace(/\\/g, '\\\\').replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ')
 }
 
 function normalizeLocalizationPaths(paths: string[]): string[] {
@@ -542,30 +669,110 @@ async function fetchLatestCommitForPaths(
   return pickLatestCommit(commits)
 }
 
-async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: string): Promise<DashboardRow> {
-  const lastTranslation = await getLastTranslationCommit(rootDir, meta.translationPath)
-  const repoInfo = await githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
+async function resolveDashboardRow(
+  meta: ModMeta,
+  rootDir: string,
+  token?: string,
+  cache?: DashboardCache
+): Promise<DashboardRow> {
+  const rowIdentity = {
+    game: meta.game,
+    mod: meta.mod,
+    componentId: meta.componentId,
+    componentName: meta.componentName
+  }
+  const repositoryCacheKey = `${meta.owner}/${meta.repo}`
+  let repoInfoPromise = cache?.repositoryInfo.get(repositoryCacheKey)
+  if (!repoInfoPromise) {
+    repoInfoPromise = githubApi<{ default_branch: string }>(`/repos/${meta.owner}/${meta.repo}`, token)
+    cache?.repositoryInfo.set(repositoryCacheKey, repoInfoPromise)
+  }
+
+  let repoInfo: { default_branch: string } | undefined
+  try {
+    repoInfo = await repoInfoPromise
+  } catch {
+    // 태그 추적은 저장소 정보 조회 실패 시에도 기존 번역 루트 폴백으로 계속할 수 있습니다.
+  }
+
+  // 명시적 컴포넌트는 output_subdir이 있어도 다른 컴포넌트와 실제 출력 루트를
+  // 공유할 수 있으므로, 트리를 확인하지 못한 상태에서 루트 이력으로 추정하지 않는다.
+  const allowTranslationRootFallback = meta.componentId === undefined
+  let translationPaths = resolveComponentTranslationTrackingPaths(
+    meta.translationRootPath,
+    meta.upstreamLocalization,
+    meta.language,
+    meta.outputSubdir,
+    null,
+    allowTranslationRootFallback
+  )
+  if (repoInfo) {
+    const treeCacheKey = `${repositoryCacheKey}/${repoInfo.default_branch}`
+    let treePromise = cache?.repositoryTrees.get(treeCacheKey)
+    if (!treePromise) {
+      treePromise = githubApi<GitHubTreeResponse>(
+        `/repos/${meta.owner}/${meta.repo}/git/trees/${encodeURIComponent(repoInfo.default_branch)}?recursive=1`,
+        token
+      ).catch(() => ({ tree: [], truncated: true }))
+      cache?.repositoryTrees.set(treeCacheKey, treePromise)
+    }
+
+    const repositoryTree = await treePromise
+    translationPaths = resolveComponentTranslationTrackingPaths(
+      meta.translationRootPath,
+      meta.upstreamLocalization,
+      meta.language,
+      meta.outputSubdir,
+      repositoryTree,
+      allowTranslationRootFallback
+    )
+  }
+
+  if (translationPaths.length === 0) {
+    return {
+      ...rowIdentity,
+      strategy: meta.strategy,
+      trackedBy: meta.strategy === 'default' ? 'commit' : 'tag',
+      baselineVersion: '번역 파일 매핑 실패',
+      latestVersion: '조회 생략',
+      status: '조회 실패'
+    }
+  }
+
+  const translationCacheKey = [...translationPaths].sort().join('\0')
+  let lastTranslationPromise = cache?.translationCommits.get(translationCacheKey)
+  if (!lastTranslationPromise) {
+    lastTranslationPromise = getLastTranslationCommit(rootDir, translationPaths)
+    cache?.translationCommits.set(translationCacheKey, lastTranslationPromise)
+  }
+  const lastTranslation = await lastTranslationPromise
   const preferTagTracking = meta.strategy !== 'default'
-  const tags = preferTagTracking
-    ? (meta.strategy === 'github'
-      ? await fetchGitHubReleases(meta.owner, meta.repo, token)
-      : await fetchRepositoryTags(meta.owner, meta.repo, token))
+  let tags: TagInfo[] = []
+  if (preferTagTracking) {
+    const tagSource = meta.strategy === 'github' ? 'releases' : 'tags'
+    const tagsCacheKey = `${meta.owner}/${meta.repo}/${tagSource}`
+    let tagsPromise = cache?.tags.get(tagsCacheKey)
+    if (!tagsPromise) {
+      tagsPromise = meta.strategy === 'github'
+        ? fetchGitHubReleases(meta.owner, meta.repo, token)
+        : fetchRepositoryTags(meta.owner, meta.repo, token)
+      cache?.tags.set(tagsCacheKey, tagsPromise)
+    }
+    tags = await tagsPromise
+  }
+  const filteredTags = preferTagTracking
+    ? filterTagsByStrategy(filterTagsByPattern(tags, meta.tagPattern), meta.strategy)
     : []
-  const filteredTags = preferTagTracking ? filterTagsByStrategy(tags, meta.strategy) : []
   const latestTag = preferTagTracking ? pickLatestTag(filteredTags, meta.strategy) : null
   const useTagTracking = preferTagTracking && latestTag !== null
 
-  const localizationPaths = meta.strategy === 'default' ? normalizeLocalizationPaths(meta.upstreamLocalization) : []
+  const localizationPaths = normalizeLocalizationPaths(meta.upstreamLocalization)
   const hasLocalizationPaths = localizationPaths.length > 0
-  const latestCommit = hasLocalizationPaths
-    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token)
-    : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
 
   if (!lastTranslation) {
     if (useTagTracking && latestTag) {
       return {
-        game: meta.game,
-        mod: meta.mod,
+        ...rowIdentity,
         strategy: meta.strategy,
         trackedBy: 'tag',
         baselineVersion: '번역 이력 없음',
@@ -573,24 +780,13 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
         status: '번역 이력 없음'
       }
     }
-
-    return {
-      game: meta.game,
-      mod: meta.mod,
-      strategy: meta.strategy,
-      trackedBy: 'commit',
-      baselineVersion: '번역 이력 없음',
-      latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
-      status: '번역 이력 없음'
-    }
   }
 
   if (useTagTracking && latestTag) {
     const baselineTag = findBaselineTag(filteredTags, lastTranslation)
     const isOutdated = baselineTag ? baselineTag.name !== latestTag.name : true
     return {
-      game: meta.game,
-      mod: meta.mod,
+      ...rowIdentity,
       strategy: meta.strategy,
       trackedBy: 'tag',
       baselineVersion: baselineTag?.name ?? '기준 태그 없음',
@@ -599,6 +795,22 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
       compareUrl: isOutdated && baselineTag
         ? `https://github.com/${meta.owner}/${meta.repo}/compare/${encodeURIComponent(baselineTag.name)}...${encodeURIComponent(latestTag.name)}`
         : undefined
+    }
+  }
+
+  repoInfo ??= await repoInfoPromise
+  const latestCommit = hasLocalizationPaths
+    ? await fetchLatestCommitForPaths(meta.owner, meta.repo, repoInfo.default_branch, localizationPaths, token)
+    : await githubApi<GitHubCommit>(`/repos/${meta.owner}/${meta.repo}/commits/${repoInfo.default_branch}`, token)
+
+  if (!lastTranslation) {
+    return {
+      ...rowIdentity,
+      strategy: meta.strategy,
+      trackedBy: 'commit',
+      baselineVersion: '번역 이력 없음',
+      latestVersion: latestCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
+      status: '번역 이력 없음'
     }
   }
 
@@ -611,8 +823,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
 
   if (hasLocalizationPaths && !latestCommit) {
     return {
-      game: meta.game,
-      mod: meta.mod,
+      ...rowIdentity,
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '경로 커밋 없음',
@@ -623,8 +834,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
 
   if (hasLocalizationPaths && !baselineCommit && latestCommit) {
     return {
-      game: meta.game,
-      mod: meta.mod,
+      ...rowIdentity,
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: '번역 이전 경로 커밋 없음',
@@ -635,8 +845,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
 
   if (!baselineCommit || !latestCommit) {
     return {
-      game: meta.game,
-      mod: meta.mod,
+      ...rowIdentity,
       strategy: meta.strategy,
       trackedBy: 'commit',
       baselineVersion: baselineCommit?.sha.slice(0, 7) ?? '기준 커밋 조회 실패',
@@ -650,8 +859,7 @@ async function resolveDashboardRow(meta: ModMeta, rootDir: string, token?: strin
   const isOutdated = baselineSha !== latestSha
 
   return {
-    game: meta.game,
-    mod: meta.mod,
+    ...rowIdentity,
     strategy: meta.strategy,
     trackedBy: 'commit',
     baselineVersion: baselineSha,
@@ -671,26 +879,29 @@ function buildIssueBody(rows: DashboardRow[]): string {
   lines.push('# 업스트림 변경 대비 번역 미반영 대시보드')
   lines.push('')
   lines.push(`- 마지막 갱신: ${timestamp}`)
-  lines.push(`- 미반영 모드 수: ${outdatedRows.length}`)
-  lines.push(`- 확인 대상 모드 수: ${rows.length}`)
+  lines.push(`- 미반영 논리 모드 수: ${outdatedRows.length}`)
+  lines.push(`- 확인 대상 논리 모드 수: ${rows.length}`)
   if (failedRows.length > 0) {
-    lines.push(`- 조회 실패 모드 수(집계 제외): ${failedRows.length}`)
+    lines.push(`- 조회 실패 논리 모드 수(집계 제외): ${failedRows.length}`)
   }
   if (noPathCommitRows.length > 0) {
-    lines.push(`- 경로 커밋 없음 모드 수(집계 제외): ${noPathCommitRows.length}`)
+    lines.push(`- 경로 커밋 없음 논리 모드 수(집계 제외): ${noPathCommitRows.length}`)
   }
   lines.push('')
-  lines.push('| 게임 | 모드 | 버전 기준 | 추적 방식 | 번역 기준 버전 | 최신 버전 | 상태 |')
-  lines.push('|---|---|---|---|---|---|---|')
+  lines.push('| 게임 | 번역 묶음 | 논리 모드 | 버전 기준 | 추적 방식 | 번역 기준 버전 | 최신 버전 | 상태 |')
+  lines.push('|---|---|---|---|---|---|---|---|')
 
-  for (const row of rows.sort((a, b) => `${a.game}/${a.mod}`.localeCompare(`${b.game}/${b.mod}`))) {
+  for (const row of rows.sort((a, b) => `${a.game}/${a.mod}/${a.componentId ?? ''}`.localeCompare(`${b.game}/${b.mod}/${b.componentId ?? ''}`))) {
     const baselineText = formatVersionWithLink(row.baselineVersion, row.compareUrl)
     const latestText = row.compareUrl ? `[\`${row.latestVersion}\`](${row.compareUrl})` : `\`${row.latestVersion}\``
-    lines.push(`| ${row.game.toUpperCase()} | ${row.mod} | ${row.strategy} | ${row.trackedBy} | ${baselineText} | ${latestText} | ${row.status} |`)
+    const componentText = row.componentName
+      ? `${escapeMarkdownTableCell(row.componentName)} (\`${row.componentId}\`)`
+      : '-'
+    lines.push(`| ${escapeMarkdownTableCell(row.game.toUpperCase())} | ${escapeMarkdownTableCell(row.mod)} | ${componentText} | ${row.strategy} | ${row.trackedBy} | ${baselineText} | ${latestText} | ${row.status} |`)
   }
 
   lines.push('')
-  lines.push('> 규칙: `version_strategy`가 `default`가 아닌 업스트림은 tag 버전으로 비교하며(유효한 태그가 없으면 커밋으로 폴백), 그 외에는 현지화 파일을 변경한 커밋 기준으로 비교합니다(`upstream.localization` 경로가 없으면 기본 브랜치 전체 커밋으로 폴백). git 저장소가 아닌 upstream은 제외합니다.')
+  lines.push('> 규칙: 각 논리 모드의 `version_strategy`가 `default`가 아니면 `tag_pattern`과 일치하는 tag 버전으로 비교하며(유효한 태그가 없으면 커밋으로 폴백), 그 외에는 해당 논리 모드의 현지화 파일을 변경한 커밋 기준으로 비교합니다. 번역 기준 시점은 기본 브랜치 트리에서 계산한 실제 한국어 대상 파일 이력으로 판정합니다. 트리 조회 실패·잘림·대상 파일 없음 시 legacy 설정만 기존 출력 루트 이력으로 폴백하고, 명시적 컴포넌트는 다른 컴포넌트 이력이 섞이는 최신 오판을 막기 위해 조회 실패로 표시합니다. git 저장소가 아닌 upstream은 제외합니다.')
 
   return `${lines.join('\n')}\n`
 }
@@ -701,14 +912,17 @@ async function main() {
 
   const metas = await findModMetas(rootDir)
   const rows: DashboardRow[] = []
+  const cache = createDashboardCache()
 
   for (const meta of metas) {
     try {
-      rows.push(await resolveDashboardRow(meta, rootDir, token))
+      rows.push(await resolveDashboardRow(meta, rootDir, token, cache))
     } catch (error) {
       rows.push({
         game: meta.game,
         mod: meta.mod,
+        componentId: meta.componentId,
+        componentName: meta.componentName,
         strategy: meta.strategy,
         trackedBy: 'commit',
         baselineVersion: '조회 실패',
@@ -730,18 +944,24 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 }
 
 export {
+  buildIssueBody,
   fetchGitHubReleases,
   fetchLatestCommitForPaths,
   findBaselineTag,
+  filterTagsByPattern,
   filterTagsByStrategy,
   normalizeLocalizationPaths,
   parseGitHubUrl,
   pickLatestCommit,
-  pickLatestTag
+  pickLatestTag,
+  resolveComponentTranslationPaths,
+  resolveComponentTranslationTrackingPaths
 }
 
 export type {
+  DashboardRow,
   GitHubCommit,
+  GitHubTreeResponse,
   TagInfo,
   TranslationCommit
 }

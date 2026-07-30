@@ -1,19 +1,13 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { join, parse } from 'pathe'
-import { parseToml, parseYaml, stringifyYaml } from '../parser'
+import { parseYaml, stringifyYaml } from '../parser'
+import { isReplaceLocalizationPath, readModMeta } from '../config/mod-meta'
 import { getDictionaries, getDictionary, getProperNouns } from './dictionary'
 import { type DictionaryChangeOptions, type DictionaryKeyInfo, getChangedDictionaryKeysWithInfo } from './dictionary-changes'
 import { hashing } from './hashing'
 import { log } from './logger'
 import { type GameType, shouldUseTransliteration } from './prompts'
 import { buildKoreanTargetFileName } from './localization-file-name'
-
-interface ModMeta {
-  upstream: {
-    localization: string[]
-    language: string
-  }
-}
 
 /**
  * 번역 값이 함수 호출로만 구성되어 있는지 확인합니다.
@@ -111,25 +105,28 @@ export async function invalidateDictionaryTranslations(
     log.info(`[${mod}] 처리 시작`)
 
     try {
-      const metaContent = await readFile(metaPath, 'utf-8')
-      const meta = parseToml(metaContent) as ModMeta
+      const meta = await readModMeta(metaPath)
 
-      for (const locPath of meta.upstream.localization) {
-        const result = await processModLocalization(
-          mod,
-          modDir,
-          locPath,
-          meta.upstream.language,
-          gameType,
-          changedKeyInfos
-        )
+      for (const component of meta.upstream.components) {
+        for (const locPath of component.localizationPaths) {
+          const result = await processModLocalization(
+            mod,
+            modDir,
+            locPath,
+            meta.upstream.language,
+            gameType,
+            changedKeyInfos,
+            component.outputSubdir,
+            meta.upstream.transliterationFiles
+          )
 
-        totalInvalidated += result.invalidated
-        totalReplaced += result.replaced
-        totalIgnored += result.ignored
-        totalSkippedProperNouns += result.skippedProperNouns
+          totalInvalidated += result.invalidated
+          totalReplaced += result.replaced
+          totalIgnored += result.ignored
+          totalSkippedProperNouns += result.skippedProperNouns
 
-        log.info(`[${mod}/${locPath}] 무효화: ${result.invalidated}개, 교체: ${result.replaced}개, 무시: ${result.ignored}개, 고유명사 건너뜀: ${result.skippedProperNouns}개`)
+          log.info(`[${mod}/${component.id}/${locPath}] 무효화: ${result.invalidated}개, 교체: ${result.replaced}개, 무시: ${result.ignored}개, 고유명사 건너뜀: ${result.skippedProperNouns}개`)
+        }
       }
 
       log.success(`[${mod}] 완료`)
@@ -159,15 +156,18 @@ async function processModLocalization(
   locPath: string,
   sourceLanguage: string,
   gameType: GameType,
-  changedKeyInfos: DictionaryKeyInfo[]
+  changedKeyInfos: DictionaryKeyInfo[],
+  outputSubdir?: string,
+  transliterationFiles?: string[]
 ): Promise<ProcessResult> {
   const sourceDir = join(modDir, 'upstream', locPath)
-  const targetDir = join(
+  const targetRoot = join(
     modDir,
     'mod',
     getLocalizationFolderName(gameType),
-    locPath.includes('replace') ? 'korean/replace' : 'korean'
+    isReplaceLocalizationPath(locPath) ? 'korean/replace' : 'korean'
   )
+  const targetDir = outputSubdir ? join(targetRoot, outputSubdir) : targetRoot
 
   let totalInvalidated = 0
   let totalReplaced = 0
@@ -186,7 +186,7 @@ async function processModLocalization(
         const targetFilePath = join(targetDir, targetRelativePath)
 
         // 파일명으로 음역 모드 판단
-        const useTransliteration = shouldUseTransliteration(file)
+        const useTransliteration = shouldUseTransliteration(file, undefined, transliterationFiles)
         
         const result = await processTranslationFile(
           modName,

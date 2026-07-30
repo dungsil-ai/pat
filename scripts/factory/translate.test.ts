@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mkdir, readFile, writeFile, rm, access, symlink } from 'node:fs/promises'
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync } from 'node:fs'
 import { join } from 'pathe'
 import { tmpdir } from 'node:os'
 import { parseYaml } from '../parser/yaml'
@@ -1441,82 +1441,168 @@ language = "english"
     )
   })
 
-  it('중복되는 항목을 제거하고 고유한 항목만 JSON 파일에 저장해야 함', async () => {
-    // 같은 모드 내에서 여러 localization 경로에 동일한 파일이 있는 경우를 시뮬레이션
-    // 이런 경우 같은 mod::file::key 조합이 중복될 수 있음
-    const { translate, TranslationRefusedError } = await import('../utils/translate')
-    
-    // 특정 키에서 번역 거부 발생하도록 모킹
-    vi.mocked(translate).mockImplementation(async (text: string) => {
-      if (text.startsWith('Test Item')) {
-        throw new TranslationRefusedError(text, 'test refusal')
-      }
-      return `[KO]${text}`
-    })
-
+  it('여러 localization 경로가 같은 출력 파일을 만들면 번역 전에 실패해야 함', async () => {
     const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
 
-    // ck3/ 하위 디렉토리 구조 모방
     const ck3Dir = join(testDir, 'ck3')
-    const modDir = join(ck3Dir, 'dedup-test-mod')
-    
-    // 두 개의 localization 경로 생성 - 같은 파일명을 가진 파일을 넣음
+    const modDir = join(ck3Dir, 'collision-test-mod')
     const upstreamPath1 = join(modDir, 'upstream', 'path1')
     const upstreamPath2 = join(modDir, 'upstream', 'path2')
 
     const metaContent = `
 [upstream]
-localization = ["path1", "path2"]
 language = "english"
-`
 
-    // 두 경로 모두 같은 파일명과 키를 가진 파일 생성
-    // 모든 항목이 번역 거부되도록 "Test Item"으로 시작하는 값 사용
+[[upstream.components]]
+id = "first"
+name = "첫 번째 모드"
+localization = ["path1"]
+
+[[upstream.components]]
+id = "second"
+name = "두 번째 모드"
+localization = ["path2"]
+`
     const sourceContent = `l_english:
-  dup_key_1: "Test Item 1"
-  dup_key_2: "Test Item 2"
+  shared_key: "Shared"
 `
 
     await mkdir(upstreamPath1, { recursive: true })
     await mkdir(upstreamPath2, { recursive: true })
     await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
-    
-    // 같은 파일명으로 두 경로에 파일 생성
     await writeFile(join(upstreamPath1, 'shared_l_english.yml'), sourceContent, 'utf-8')
     await writeFile(join(upstreamPath2, 'shared_l_english.yml'), sourceContent, 'utf-8')
 
-    // 번역 실행 - rootDir은 ck3Dir
-    await processModTranslations({
+    await expect(processModTranslations({
       rootDir: ck3Dir,
-      mods: ['dedup-test-mod'],
+      mods: ['collision-test-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })).rejects.toThrow(/여러 업스트림 컴포넌트가 같은 번역 파일을 생성합니다/)
+
+    expect(vi.mocked(translateBulk)).not.toHaveBeenCalled()
+    expect(existsSync(join(modDir, 'mod', 'localization', 'korean', '___shared_l_korean.yml'))).toBe(false)
+  })
+
+  it('컴포넌트별 localization과 출력 하위 경로를 순회하고 미번역 출처를 보존해야 함', async () => {
+    const { translateBulk, TranslationRefusedError } = await import('../utils/translate')
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[]) => {
+      return texts.map(text => text === '거부 대상'
+        ? {
+            translatedText: text,
+            error: new TranslationRefusedError(text, '테스트 거부')
+          }
+        : { translatedText: `[KO]${text}` })
+    })
+
+    const { processModTranslations } = await import('./translate')
+    const modDir = join(testDir, 'component-test-mod')
+    const firstSourceDir = join(modDir, 'upstream', 'first', 'localization', 'english')
+    const secondSourceDir = join(modDir, 'upstream', 'second', 'localization', 'english')
+    const metaContent = `
+[upstream]
+language = "english"
+
+[[upstream.components]]
+id = "first"
+name = "첫 번째 모드"
+localization = ["first/localization/english"]
+output_subdir = "first"
+
+[[upstream.components]]
+id = "second"
+name = "두 번째 모드"
+localization = ["second/localization/english"]
+output_subdir = "second"
+`
+
+    await mkdir(firstSourceDir, { recursive: true })
+    await mkdir(secondSourceDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(
+      join(firstSourceDir, 'shared_l_english.yml'),
+      `l_english:\n  first_key: "정상 대상"\n`,
+      'utf-8'
+    )
+    await writeFile(
+      join(secondSourceDir, 'shared_l_english.yml'),
+      `l_english:\n  refused_key: "거부 대상"\n`,
+      'utf-8'
+    )
+
+    const result = await processModTranslations({
+      rootDir: testDir,
+      mods: ['component-test-mod'],
       gameType: 'ck3',
       onlyHash: false
     })
 
-    // JSON 파일 확인 (projectRoot = testDir)
-    const jsonPath = join(testDir, 'ck3-untranslated-items.json')
-    expect(existsSync(jsonPath)).toBe(true)
-    
-    const jsonContent = JSON.parse(readFileSync(jsonPath, 'utf-8'))
-    
-    // 중복 제거 로직이 작동하여 같은 mod, file, key 조합은 한 번만 나타나야 함
-    const keys = jsonContent.items.map((item: any) => `${item.mod}::${item.file}::${item.key}`)
-    const uniqueKeys = new Set(keys)
-    expect(keys.length).toBe(uniqueKeys.size)
-    
-    // 각 키는 두 경로에서 발생했지만 중복 제거되어 각각 1개씩만 있어야 함
-    const key1Items = jsonContent.items.filter((item: any) => item.key === 'dup_key_1')
-    expect(key1Items.length).toBe(1)
-    
-    const key2Items = jsonContent.items.filter((item: any) => item.key === 'dup_key_2')
-    expect(key2Items.length).toBe(1)
-    
-    // 총 2개 항목만 있어야 함 (중복이 제거된 후)
-    // 원래는 4개 (2개 경로 × 2개 키)이지만 중복 제거로 2개만 남음
-    expect(jsonContent.items.length).toBe(2)
+    await access(join(modDir, 'mod', 'localization', 'korean', 'first', '___shared_l_korean.yml'))
+    await access(join(modDir, 'mod', 'localization', 'korean', 'second', '___shared_l_korean.yml'))
+    expect(result.untranslatedItems).toEqual([
+      expect.objectContaining({
+        componentId: 'second',
+        componentName: '두 번째 모드',
+        sourcePath: 'second/localization/english/shared_l_english.yml',
+        file: 'shared_l_english.yml',
+        key: 'refused_key'
+      })
+    ])
+  })
 
-    // 정리
-    await rm(testDir, { recursive: true, force: true })
+  it('출력 하위 경로가 바뀌어 대상 파일이 없으면 같은 원본 해시도 다시 처리해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[]) => {
+      return texts.map(text => ({ translatedText: `[KO]${text}` }))
+    })
+
+    const modDir = join(testDir, 'output-subdir-change-mod')
+    const sourceDir = join(modDir, 'upstream', 'localization', 'english')
+    const metaPath = join(modDir, 'meta.toml')
+    const sourceContent = `l_english:\n  key_1: "Same source"\n`
+    const initialMetaContent = `
+[upstream]
+language = "english"
+
+[[upstream.components]]
+id = "main"
+localization = ["localization/english"]
+`
+    const movedMetaContent = `
+[upstream]
+language = "english"
+
+[[upstream.components]]
+id = "main"
+localization = ["localization/english"]
+output_subdir = "main"
+`
+
+    await mkdir(sourceDir, { recursive: true })
+    await writeFile(metaPath, initialMetaContent, 'utf-8')
+    await writeFile(join(sourceDir, 'same_l_english.yml'), sourceContent, 'utf-8')
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['output-subdir-change-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+    const firstRunCallCount = vi.mocked(translateBulk).mock.calls.length
+
+    await writeFile(metaPath, movedMetaContent, 'utf-8')
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['output-subdir-change-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(vi.mocked(translateBulk).mock.calls.length).toBe(firstRunCallCount + 1)
+    await access(join(modDir, 'mod', 'localization', 'korean', 'main', '___same_l_korean.yml'))
+    expect(existsSync(join(modDir, 'mod', 'localization', 'korean', '___same_l_korean.yml'))).toBe(false)
   })
 
   it('재번역 대기 항목이 있어도 원본 키 순서를 유지해야 함', async () => {
@@ -1600,12 +1686,108 @@ language = "english"
       onlyHash: false
     })
 
-    const hashIndexPath = join(upstreamDir, '.pat-file-hashes.json')
+    const hashIndexPath = join(modDir, '.pat-file-hashes.json')
     const hashIndex = JSON.parse(await readFile(hashIndexPath, 'utf-8')) as Record<string, string>
 
     expect(Object.keys(hashIndex)).toContain('hash-target_l_english.yml')
     expect(typeof hashIndex['hash-target_l_english.yml']).toBe('string')
     expect(hashIndex['hash-target_l_english.yml'].length).toBeGreaterThan(0)
+  })
+
+  it('기존 upstream 내부 해시를 읽은 뒤 새 경로로 마이그레이션해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk } = await import('../utils/translate')
+    const { hashing } = await import('../utils/hashing')
+
+    const modDir = join(testDir, 'legacy-hash-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const targetDir = join(modDir, 'mod', 'localization', 'korean')
+    const sourceContent = `l_english:\n  key_1: "hello"\n`
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await mkdir(targetDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(join(upstreamDir, 'same_l_english.yml'), sourceContent, 'utf-8')
+    await writeFile(
+      join(targetDir, '___same_l_korean.yml'),
+      `l_korean:\n  key_1: "안녕" # ${hashing('hello')}\n`,
+      'utf-8'
+    )
+    await writeFile(
+      join(upstreamDir, '.pat-file-hashes.json'),
+      JSON.stringify({ 'same_l_english.yml': hashing(sourceContent) }),
+      'utf-8'
+    )
+
+    await processModTranslations({
+      rootDir: testDir,
+      mods: ['legacy-hash-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(vi.mocked(translateBulk)).not.toHaveBeenCalled()
+    expect(existsSync(join(upstreamDir, '.pat-file-hashes.json'))).toBe(false)
+    expect(JSON.parse(await readFile(join(modDir, '.pat-file-hashes.json'), 'utf-8'))).toEqual({
+      'same_l_english.yml': hashing(sourceContent)
+    })
+  })
+
+  it('미번역 항목이 있는 파일은 해시를 남기지 않고 다음 실행에서 다시 시도해야 함', async () => {
+    const { processModTranslations } = await import('./translate')
+    const { translateBulk, TranslationRefusedError } = await import('../utils/translate')
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[]) => {
+      return texts.map(text => ({
+        translatedText: text,
+        error: new TranslationRefusedError(text, '테스트 거부')
+      }))
+    })
+
+    const modDir = join(testDir, 'retry-untranslated-mod')
+    const upstreamDir = join(modDir, 'upstream')
+    const metaContent = `
+[upstream]
+localization = ["."]
+language = "english"
+`
+
+    await mkdir(upstreamDir, { recursive: true })
+    await writeFile(join(modDir, 'meta.toml'), metaContent, 'utf-8')
+    await writeFile(
+      join(upstreamDir, 'retry_l_english.yml'),
+      `l_english:\n  retry_key: "Retry me"\n`,
+      'utf-8'
+    )
+
+    const firstResult = await processModTranslations({
+      rootDir: testDir,
+      mods: ['retry-untranslated-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+    const secondResult = await processModTranslations({
+      rootDir: testDir,
+      mods: ['retry-untranslated-mod'],
+      gameType: 'ck3',
+      onlyHash: false
+    })
+
+    expect(vi.mocked(translateBulk)).toHaveBeenCalledTimes(2)
+    expect(firstResult.untranslatedItems).toHaveLength(1)
+    expect(secondResult.untranslatedItems).toHaveLength(1)
+    expect(secondResult.untranslatedItems[0].sourcePath).toBe('retry_l_english.yml')
+    expect(Object.hasOwn(secondResult.untranslatedItems[0], 'componentId')).toBe(false)
+    expect(Object.hasOwn(secondResult.untranslatedItems[0], 'componentName')).toBe(false)
+    expect(JSON.parse(await readFile(join(modDir, '.pat-file-hashes.json'), 'utf-8'))).toEqual({})
+
+    vi.mocked(translateBulk).mockImplementation(async (texts: string[]) => {
+      return texts.map(text => ({ translatedText: `[KO]${text}` }))
+    })
   })
 
   it('업스트림 파일 해시가 같으면 해당 파일 번역을 건너뛰어야 함', async () => {

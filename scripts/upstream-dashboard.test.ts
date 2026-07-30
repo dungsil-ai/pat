@@ -1,15 +1,42 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest'
 import {
+  buildIssueBody,
   fetchGitHubReleases,
+  filterTagsByPattern,
   filterTagsByStrategy,
   findBaselineTag,
   normalizeLocalizationPaths,
   pickLatestCommit,
   pickLatestTag,
+  resolveComponentTranslationPaths,
+  resolveComponentTranslationTrackingPaths,
   type GitHubCommit,
+  type GitHubTreeResponse,
+  type DashboardRow,
   type TagInfo,
   type TranslationCommit
 } from './upstream-dashboard'
+
+describe('filterTagsByPattern', () => {
+  it('컴포넌트 태그 정규식에 맞는 태그만 남겨야 한다', () => {
+    const tags: TagInfo[] = [
+      { name: 'SEA-v1.2.0', committedAt: '2024-01-01T00:00:00Z' },
+      { name: 'SPA-v1.3.0', committedAt: '2024-01-02T00:00:00Z' },
+      { name: 'SEA-v1.10.0', committedAt: '2024-01-03T00:00:00Z' }
+    ]
+
+    expect(filterTagsByPattern(tags, '^SEA-v').map(tag => tag.name))
+      .toEqual(['SEA-v1.2.0', 'SEA-v1.10.0'])
+  })
+
+  it('태그 정규식이 없으면 원래 태그 목록을 유지해야 한다', () => {
+    const tags: TagInfo[] = [
+      { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' }
+    ]
+
+    expect(filterTagsByPattern(tags)).toBe(tags)
+  })
+})
 
 describe('filterTagsByStrategy', () => {
   it('natural 전략은 프리릴리즈 태그를 제외해야 한다', () => {
@@ -27,11 +54,13 @@ describe('filterTagsByStrategy', () => {
     const tags: TagInfo[] = [
       { name: 'v1.0.0', committedAt: '2024-01-01T00:00:00Z' },
       { name: 'release_candidate', committedAt: '2024-01-02T00:00:00Z' },
-      { name: '2.0.0-rc.1', committedAt: '2024-01-03T00:00:00Z' }
+      { name: '2.0.0-rc.1', committedAt: '2024-01-03T00:00:00Z' },
+      { name: 'SEA-v2.0.0beta', committedAt: '2024-01-04T00:00:00Z' },
+      { name: 'SEA-v1.9.0', committedAt: '2024-01-05T00:00:00Z' }
     ]
 
     const filtered = filterTagsByStrategy(tags, 'semantic')
-    expect(filtered.map(tag => tag.name)).toEqual(['v1.0.0'])
+    expect(filtered.map(tag => tag.name)).toEqual(['v1.0.0', 'SEA-v1.9.0'])
   })
   it('github 전략은 이미 필터링된 릴리즈를 그대로 통과시켜야 한다', () => {
     const tags: TagInfo[] = [
@@ -59,10 +88,12 @@ describe('pickLatestTag', () => {
     const tags: TagInfo[] = [
       { name: 'v1.0.0-beta', committedAt: '2024-01-03T00:00:00Z' },
       { name: '1.0.0', committedAt: '2024-01-02T00:00:00Z' },
-      { name: '1.1.0', committedAt: '2024-01-04T00:00:00Z' }
+      { name: '1.1.0', committedAt: '2024-01-04T00:00:00Z' },
+      { name: 'SEA-v2.0.0beta', committedAt: '2024-01-05T00:00:00Z' },
+      { name: 'SEA-v1.9.0', committedAt: '2024-01-06T00:00:00Z' }
     ]
 
-    expect(pickLatestTag(tags, 'semantic')?.name).toBe('1.1.0')
+    expect(pickLatestTag(tags, 'semantic')?.name).toBe('SEA-v1.9.0')
   })
 
   it('github 전략은 가장 최근 published_at 기준으로 태그를 선택해야 한다', () => {
@@ -154,6 +185,306 @@ describe('normalizeLocalizationPaths', () => {
   it('유효한 경로만 있으면 그대로 반환해야 한다', () => {
     expect(normalizeLocalizationPaths(['localization/english', 'localization/replace/english']))
       .toEqual(['localization/english', 'localization/replace/english'])
+  })
+})
+
+describe('resolveComponentTranslationPaths', () => {
+  it('일반 및 replace 현지화 출력 경로를 모두 번역 이력 대상으로 계산해야 한다', () => {
+    expect(resolveComponentTranslationPaths(
+      'vic3/Bundle/mod/localization/korean',
+      [
+        'Component/localization/english',
+        'Component/localization/replace/english'
+      ],
+      'component'
+    )).toEqual([
+      'vic3/Bundle/mod/localization/korean/component',
+      'vic3/Bundle/mod/localization/korean/replace/component'
+    ])
+  })
+
+  it('같은 출력 경로는 중복 제거해야 한다', () => {
+    expect(resolveComponentTranslationPaths(
+      'ck3/Bundle/mod/localization/korean',
+      ['first/localization/english', 'second/localization/english']
+    )).toEqual(['ck3/Bundle/mod/localization/korean'])
+  })
+})
+
+describe('resolveComponentTranslationTrackingPaths', () => {
+  it('출력 루트를 공유하는 컴포넌트도 서로의 대상 파일 이력을 섞지 않아야 한다', () => {
+    const repositoryTree: GitHubTreeResponse = {
+      truncated: false,
+      tree: [
+        {
+          type: 'blob',
+          path: 'First/localization/english/first_l_english.yml'
+        },
+        {
+          type: 'blob',
+          path: 'Second/localization/english/second_l_english.yml'
+        }
+      ]
+    }
+
+    const firstPaths = resolveComponentTranslationTrackingPaths(
+      'vic3/Bundle/mod/localization/korean',
+      ['First/localization/english'],
+      'english',
+      undefined,
+      repositoryTree,
+      false
+    )
+    const secondPaths = resolveComponentTranslationTrackingPaths(
+      'vic3/Bundle/mod/localization/korean',
+      ['Second/localization/english'],
+      'english',
+      undefined,
+      repositoryTree,
+      false
+    )
+
+    expect(firstPaths).toEqual([
+      'vic3/Bundle/mod/localization/korean/___first_l_korean.yml'
+    ])
+    expect(secondPaths).toEqual([
+      'vic3/Bundle/mod/localization/korean/___second_l_korean.yml'
+    ])
+  })
+
+  it('업스트림 트리의 파일을 normal/replace 및 중첩 대상 파일 경로로 정확히 매핑해야 한다', () => {
+    const repositoryTree: GitHubTreeResponse = {
+      truncated: false,
+      tree: [
+        {
+          type: 'blob',
+          path: 'Component/localization/english/root_l_english.yml'
+        },
+        {
+          type: 'blob',
+          path: 'Component/localization/english/events/deep/event_l_english.yml'
+        },
+        {
+          type: 'blob',
+          path: 'Component/localization/replace/english/nested/replace_l_english.yml'
+        },
+        {
+          type: 'blob',
+          path: 'Component/localization/english/ignored_l_french.yml'
+        },
+        {
+          type: 'tree',
+          path: 'Component/localization/english/directory_l_english.yml'
+        },
+        {
+          type: 'blob',
+          path: 'Component Extra/localization/english/sibling_l_english.yml'
+        }
+      ]
+    }
+
+    expect(resolveComponentTranslationTrackingPaths(
+      'vic3/Bundle/mod/localization/korean',
+      [
+        'Component/localization/english',
+        'Component/localization/replace/english'
+      ],
+      'english',
+      'component-output',
+      repositoryTree
+    )).toEqual([
+      'vic3/Bundle/mod/localization/korean/component-output/___root_l_korean.yml',
+      'vic3/Bundle/mod/localization/korean/component-output/events/deep/___event_l_korean.yml',
+      'vic3/Bundle/mod/localization/korean/replace/component-output/nested/___replace_l_korean.yml'
+    ].sort())
+  })
+
+  it.each([
+    {
+      name: '트리 조회 실패',
+      tree: null
+    },
+    {
+      name: '잘린 트리',
+      tree: {
+        truncated: true,
+        tree: [{
+          type: 'blob',
+          path: 'Component/localization/english/file_l_english.yml'
+        }]
+      }
+    },
+    {
+      name: '현지화 파일이 없는 트리',
+      tree: {
+        truncated: false,
+        tree: [{
+          type: 'blob',
+          path: 'README.md'
+        }]
+      }
+    }
+  ])('$name이면 기존 출력 루트로 폴백해야 한다', ({ tree }) => {
+    expect(resolveComponentTranslationTrackingPaths(
+      'ck3/Bundle/mod/localization/korean',
+      ['Component/localization/english'],
+      'english',
+      undefined,
+      tree
+    )).toEqual(['ck3/Bundle/mod/localization/korean'])
+  })
+
+  it.each([
+    {
+      name: '트리 조회 실패',
+      tree: null
+    },
+    {
+      name: '잘린 트리',
+      tree: {
+        truncated: true,
+        tree: [{
+          type: 'blob',
+          path: 'Component/localization/english/file_l_english.yml'
+        }]
+      }
+    },
+    {
+      name: '현지화 파일이 없는 트리',
+      tree: {
+        truncated: false,
+        tree: [{
+          type: 'blob',
+          path: 'README.md'
+        }]
+      }
+    }
+  ])('공용 출력 컴포넌트는 $name 시 루트 이력으로 폴백하지 않아야 한다', ({ tree }) => {
+    expect(resolveComponentTranslationTrackingPaths(
+      'vic3/Bundle/mod/localization/korean',
+      ['Component/localization/english'],
+      'english',
+      undefined,
+      tree,
+      false
+    )).toEqual([])
+  })
+
+  it('output_subdir가 있는 명시적 컴포넌트도 트리 실패 시 추정 폴백하지 않아야 한다', () => {
+    expect(resolveComponentTranslationTrackingPaths(
+      'vic3/Bundle/mod/localization/korean',
+      ['Component/localization/english'],
+      'english',
+      'component',
+      null,
+      false
+    )).toEqual([])
+  })
+
+  it('한국어 원본의 기존 오버라이드 접두사를 중복하지 않아야 한다', () => {
+    expect(resolveComponentTranslationTrackingPaths(
+      'stellaris/Bundle/mod/localisation/korean',
+      ['localisation/korean'],
+      'korean',
+      undefined,
+      {
+        truncated: false,
+        tree: [{
+          type: 'blob',
+          path: 'localisation/korean/___names_l_korean.yml'
+        }]
+      }
+    )).toEqual([
+      'stellaris/Bundle/mod/localisation/korean/___names_l_korean.yml'
+    ])
+  })
+})
+
+describe('buildIssueBody', () => {
+  it('한 번역 묶음의 컴포넌트를 각각 논리 모드 행으로 표시해야 한다', () => {
+    const rows: DashboardRow[] = [
+      {
+        game: 'vic3',
+        mod: 'Grey\'s Little Reworks',
+        componentId: 'sea',
+        componentName: 'Soft Econ Adjustments',
+        strategy: 'natural',
+        trackedBy: 'tag',
+        baselineVersion: 'SEA-v1.0.0',
+        latestVersion: 'SEA-v1.1.0',
+        status: '미반영'
+      },
+      {
+        game: 'vic3',
+        mod: 'Grey\'s Little Reworks',
+        componentId: 'spa',
+        componentName: 'Soft Pop Adjustments',
+        strategy: 'natural',
+        trackedBy: 'tag',
+        baselineVersion: 'SPA-v2.0.0',
+        latestVersion: 'SPA-v2.0.0',
+        status: '최신'
+      }
+    ]
+
+    const body = buildIssueBody(rows)
+
+    expect(body).toContain('- 미반영 논리 모드 수: 1')
+    expect(body).toContain('- 확인 대상 논리 모드 수: 2')
+    expect(body).toContain('| VIC3 | Grey\'s Little Reworks | Soft Econ Adjustments (`sea`) | natural | tag |')
+    expect(body).toContain('| VIC3 | Grey\'s Little Reworks | Soft Pop Adjustments (`spa`) | natural | tag |')
+  })
+
+  it('legacy 설정은 컴포넌트 없이 기존 모드 한 행으로 표시해야 한다', () => {
+    const rows: DashboardRow[] = [
+      {
+        game: 'ck3',
+        mod: 'Legacy Mod',
+        strategy: 'default',
+        trackedBy: 'commit',
+        baselineVersion: 'abc1234',
+        latestVersion: 'abc1234',
+        status: '최신'
+      }
+    ]
+
+    expect(buildIssueBody(rows))
+      .toContain('| CK3 | Legacy Mod | - | default | commit | `abc1234` | `abc1234` | 최신 |')
+  })
+
+  it('컴포넌트 이름의 파이프를 Markdown 표에서 이스케이프해야 한다', () => {
+    const rows: DashboardRow[] = [{
+      game: 'vic3',
+      mod: 'Bundle',
+      componentId: 'one',
+      componentName: 'One | Two',
+      strategy: 'default',
+      trackedBy: 'commit',
+      baselineVersion: 'abc1234',
+      latestVersion: 'abc1234',
+      status: '최신'
+    }]
+
+    expect(buildIssueBody(rows))
+      .toContain('| VIC3 | Bundle | One \\| Two (`one`) | default |')
+  })
+
+  it('파이프 앞의 기존 백슬래시도 먼저 이스케이프하여 셀 구분 우회를 막아야 한다', () => {
+    const rows: DashboardRow[] = [{
+      game: 'vic3',
+      mod: 'Bundle',
+      componentId: 'one',
+      componentName: String.raw`One \| Two`,
+      strategy: 'default',
+      trackedBy: 'commit',
+      baselineVersion: 'abc1234',
+      latestVersion: 'abc1234',
+      status: '최신'
+    }]
+
+    const escapedComponent = String.raw`One \\\| Two`
+    expect(buildIssueBody(rows))
+      .toContain(`| VIC3 | Bundle | ${escapedComponent} (\`one\`) | default |`)
   })
 })
 
