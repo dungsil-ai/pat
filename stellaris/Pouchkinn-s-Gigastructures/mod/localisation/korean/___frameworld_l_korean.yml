@@ -1,3 +1,4 @@
+# PAT verified upstream: c0f3c03
 ﻿l_korean:
   scope_debug: "이것: [This.GetName] 루트: [Root.GetName] 이전: [Prev.GetName] 출처: [From.GetName] 전역: [global_event_country.GetName]" # 8378610365594505185
   mod_planet_technician_minerals_upkeep_add_planet: "£minerals£ $minerals$ [owner.GetTechnicianPlural]의 £job_technician£ 유지 비용" # 13928311025342722935

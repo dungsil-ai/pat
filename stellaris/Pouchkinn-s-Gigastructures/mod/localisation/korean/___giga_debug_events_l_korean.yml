@@ -1,3 +1,4 @@
+# PAT verified upstream: c0f3c03
 ﻿l_korean:
   giga_log.2.title: "소행성 조사" # 4927213124355199088
   giga_log.2.desc: "총 항성계: §Y[Root.giga_asteroid_survey_systems]§!\n소행성이 있는 항성계: §Y[Root.giga_asteroid_survey_systems_with_asteroids]§!\n\n총 소행성: §Y[Root.giga_asteroid_survey_total]§!\n총 소행성 가치: §Y[Root.giga_asteroid_survey_total_value]§!\n\n은하계 전역 평균 소행성: §Y[Root.giga_asteroid_survey_average_count]§!\n소행성 항성계 평균 소행성: §Y[Root.giga_asteroid_survey_average_count_with_asteroids]§!\n\n은하계 전역 평균 가치: §Y[Root.giga_asteroid_survey_average_value]§!\n소행성 항성계 평균 가치: §Y[Root.giga_asteroid_survey_average_value_with_asteroids]§!\n\n소행성당 평균 가치: §Y[Root.giga_asteroid_survey_average_value_per_asteroid]§!" # 17460299002253309249
