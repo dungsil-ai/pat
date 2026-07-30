@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_sardinia_region: "$d_sardinia$" # 10942758607733507526
   RICE_every_owned_sardinia_county: "귀하가 소유한 [GetGeographicalRegion('RICE_sardinia_region').GetName] 내 모든 [county|E]" # 6353019117556874156

@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_lower_oxus_region: "하부 아무다리야강" # 8763882131296662365
   RICE_lower_oxus_geographical_req: "귀하는 [region|E]의 [GetGeographicalRegion('RICE_lower_oxus_region').GetName]에 위치한 [county|E]를 소유하고 있습니다." # 12335616173883135931

@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_upper_tibet: "티베트 상부" # 12919248543915589189
   RICE_upper_tibet_req: "[GetGeographicalRegion('RICE_upper_tibet').GetName] 내 [county|E]를 소유하고 있습니다." # 4746393887987715298

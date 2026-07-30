@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_all_kava_courtiers_and_guests: "[GetTrait('RICE_kava_drinker').GetName( GetNullCharacter )|U] [trait|E]를 보유하거나 카바를 즐기는 [culture|E] 출신의 모든 [courtier|E] 및 [guest|E]" # 13704530738552499998
   RICE_all_betel_nuts_courtiers_and_guests: "[GetTrait('betel_chewer').GetName( GetNullCharacter )|U] [trait|E]를 보유하거나 빈랑 씹기를 즐기는 [culture|E] 출신의 모든 [courtier|E] 및 [guest|E]" # 12291770822733717514

@@ -1,3 +1,4 @@
+# PAT verified upstream: ad4c7ef
 ﻿l_korean:
   vls_debug_prefix: "[GetCurrentDate.GetStringShort]: [THIS.Char.GetFullNameNoTooltip] ([THIS.Char.GetID])" # 5524939588049464844
   vls_debug_msg_visiting_holding: "$vls_debug_prefix$: 영지 방문 중, 위치: [THIS.Char.GetCurrentLocation.GetNameNoTooltip], 영지 유형: [THIS.Char.Custom('LocalHoldingType')]" # 13830670033971647575

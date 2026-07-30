@@ -1,3 +1,4 @@
+# PAT verified upstream: af0fa6c
 ﻿l_korean:
   VIET_every_entourage_tt_dislikes_rations: "[GetTrait('temperate').GetName( GetPlayer )]도 아니고 [GetTrait('content').GetName( GetPlayer )]도 아닌 모든 수행원들" # 11533953056509025022
   every_entourage_tt_attracted_to_women: "여성에게 끌리는 모든 수행원" # 11288211120162855002

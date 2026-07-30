@@ -1,3 +1,4 @@
+# PAT verified upstream: af0fa6c
 ﻿l_korean:
   VIET_decrease_county_modifier_time: "이 선택지는 해당 [county_modifier|E]의 지속 기간을 기본 선택지보다 #V 만큼 감소시킵니다#!" # 6573984499708356613
   VIET_increase_county_modifier_time: "이 선택지는 해당 [county_modifier|E]가 기본 선택지에 비해 얼마나 더 오래 지속될지를 #V 증가시킵니다#!" # 6271651433994519009

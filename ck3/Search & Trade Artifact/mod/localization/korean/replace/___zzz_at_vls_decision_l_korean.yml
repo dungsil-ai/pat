@@ -1,3 +1,4 @@
+# PAT verified upstream: ad4c7ef
 ﻿l_korean:
   vls_decision_slot_1_vanilla_tribal_holding_tt_overwrite: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_contracts$" # 5527040875235468370
   vls_decision_slot_1_vanilla_church_holding_tt_overwrite: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_church$$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_contracts$" # 3467167534709252812

@@ -1,3 +1,4 @@
+# PAT verified upstream: ad4c7ef
 ﻿l_korean:
   at_debug_prefix: "[GetCurrentDate.GetStringShort]: [THIS.Char.GetFullNameNoTooltip] ([THIS.Char.GetID])" # 5524939588049464844
   at_debug_msg_artifact_bought: "$at_debug_prefix$: 유물 구매 완료, 유물: $at_artifact$, 판매자: $at_seller$, 가격: $at_artifact_price$, 출처: $at_source$" # 18298832479881253956

@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   culture_parameter_rice_rename_meeting_houses: "#V $RICE_oceania_meeting_houses_decision$#! [decision|E]은 [heritage|E]와 관계없이 이용할 수 있으며, #V $RICE_oceania_meeting_houses_decision_palauan$#! (으)로 이름이 변경됩니다." # 15824247686832645169
   culture_parameter_rice_better_meeting_houses: "#V $RICE_oceania_meeting_houses_decision_palauan$#!을 위한 [decision|E]는 추가 [gold_i|E] [gold|E]를 지불할 필요 없이 더 나은 결과를 제공하며, 대신 남성 또는 여성 [Glossary( '랭크 클럽', 'CHELDEBECHEL_GLOSS' )]을 지원하기 위한 다양한 선택지를 제공합니다" # 5908740726553189308

@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_greater_egypt: "대이집트" # 4570499743638039573
   RICE_greater_egypt_geographical_req: "[GetGeographicalRegion('RICE_greater_egypt').GetName] 내에 최소 하나 이상의 [county|E]를 소유하십시오." # 13211017081181476459

@@ -1,3 +1,4 @@
+# PAT verified upstream: afbe391
 ﻿l_korean:
   RICE_capital_in_britannia_or_francia_req: "[capital|E]는 [GetGeographicalRegion('world_europe_west_britannia').GetName] 또는 [GetGeographicalRegion('world_europe_west_francia').GetName]에 위치해 있습니다." # 14710199226085516009
   RICE_decision_breton_culture_requirement: "귀하의 [culture|E]는 브르타뉴에서 유래했거나 브르타뉴와 혼합되었습니다." # 6121120882421792164
