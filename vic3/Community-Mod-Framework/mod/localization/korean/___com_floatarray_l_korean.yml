@@ -1,4 +1,4 @@
-# PAT verified upstream: ff47550
+# PAT verified upstream: 9115fbe
 ﻿l_korean:
   com_floatarray_set_index: "배열 인덱스 변수를 [TopScope.GetLocalVariable('com_fa_local_index').GetValue|v0]로 설정" # 3986138175243004558
   com_floatarray_set_value: "배열 변수 값을 [TopScope.GetLocalVariable('com_fa_local_index').GetValue|v0]로 설정" # 9903927794162824149

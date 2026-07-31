@@ -1,4 +1,4 @@
-# PAT verified upstream: ff47550
+# PAT verified upstream: 9115fbe
 ﻿l_korean:
   trigger_exists_com_progress_bar: "지정된 진행률 표시줄이 존재합니다" # 17435152849485229764
   trigger_exists_com_progress_bar_not: "지정된 진행 표시줄이 존재하지 않습니다" # 7064889160987755390
