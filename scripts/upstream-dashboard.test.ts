@@ -695,24 +695,14 @@ describe('fetchGitHubReleases', () => {
     expect(result.find(r => r.name === 'v1.0.50')).toBeUndefined()
     expect(result.find(r => r.name === 'v0.8.0-rc.1')).toBeUndefined()
   })
-  it('최신 공개 릴리스와 번역 기준 릴리스가 결정된 페이지 뒤 요청을 중단해야 한다', async () => {
+  it('페이지 간 published_at 순서가 뒤섞여도 전체 정상 이력에서 최신·기준 릴리스를 판정해야 한다', async () => {
     const lastTranslation: TranslationCommit = {
       shortSha: 'abc1234',
       committedAt: '2024-02-15T00:00:00Z'
     }
-    const page = [
-      {
-        tag_name: 'v3.0.0',
-        published_at: '2024-03-01T00:00:00Z',
-        prerelease: false,
-        draft: false
-      },
-      {
-        tag_name: 'v2.0.0',
-        published_at: '2024-02-01T00:00:00Z',
-        prerelease: false,
-        draft: false
-      },
+    const firstPage = [
+      { tag_name: 'v3.0.0', published_at: '2024-03-01T00:00:00Z', prerelease: false, draft: false },
+      { tag_name: 'v2.0.0', published_at: '2024-02-01T00:00:00Z', prerelease: false, draft: false },
       ...Array.from({ length: 98 }, (_, index) => ({
         tag_name: `draft-${index}`,
         published_at: '2024-01-01T00:00:00Z',
@@ -720,45 +710,98 @@ describe('fetchGitHubReleases', () => {
         draft: true
       }))
     ]
-
-    vi.mocked(globalThis.fetch)
-      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
-      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => [], headers: new Headers() } as Response)
-
-    const result = await fetchGitHubReleases('owner', 'repo', undefined, lastTranslation)
-
-    expect(globalThis.fetch).toHaveBeenCalledTimes(1)
-    expect(pickLatestTag(result, 'github')).toEqual({ name: 'v3.0.0', committedAt: '2024-03-01T00:00:00Z' })
-    expect(findBaselineTag(result, lastTranslation)).toEqual({ name: 'v2.0.0', committedAt: '2024-02-01T00:00:00Z' })
-  })
-
-  it('태그 패턴의 최신·기준 릴리스가 결정될 때까지 다음 페이지를 조회해야 한다', async () => {
-    const lastTranslation: TranslationCommit = {
-      shortSha: 'abc1234',
-      committedAt: '2024-02-15T00:00:00Z'
-    }
-    const firstPage = Array.from({ length: 100 }, (_, index) => ({
-      tag_name: `other-${index}`,
-      published_at: index === 1 ? '2024-02-01T00:00:00Z' : '2024-03-01T00:00:00Z',
-      prerelease: false,
-      draft: false
-    }))
     const secondPage = [
-      { tag_name: 'component-v3.0.0', published_at: '2024-03-01T00:00:00Z', prerelease: false, draft: false },
-      { tag_name: 'component-v2.0.0', published_at: '2024-02-01T00:00:00Z', prerelease: false, draft: false }
+      { tag_name: 'v4.0.0', published_at: '2024-04-01T00:00:00Z', prerelease: false, draft: false },
+      { tag_name: 'v2.1.0', published_at: '2024-02-10T00:00:00Z', prerelease: false, draft: false }
     ]
 
     vi.mocked(globalThis.fetch)
       .mockResolvedValueOnce({ ok: true, status: 200, json: async () => firstPage, headers: new Headers() } as Response)
       .mockResolvedValueOnce({ ok: true, status: 200, json: async () => secondPage, headers: new Headers() } as Response)
 
-    const result = await fetchGitHubReleases('owner', 'repo', undefined, lastTranslation, '^component-')
-    const componentTags = filterTagsByPattern(result, '^component-')
+    const result = await fetchGitHubReleases('owner', 'repo')
 
     expect(globalThis.fetch).toHaveBeenCalledTimes(2)
-    expect(pickLatestTag(componentTags, 'github')).toEqual({ name: 'component-v3.0.0', committedAt: '2024-03-01T00:00:00Z' })
-    expect(findBaselineTag(componentTags, lastTranslation)).toEqual({ name: 'component-v2.0.0', committedAt: '2024-02-01T00:00:00Z' })
+    expect(pickLatestTag(result, 'github')).toEqual({ name: 'v4.0.0', committedAt: '2024-04-01T00:00:00Z' })
+    expect(findBaselineTag(result, lastTranslation)).toEqual({ name: 'v2.1.0', committedAt: '2024-02-10T00:00:00Z' })
   })
+
+  it('태그 패턴도 전체 정상 이력을 읽은 뒤 최신·기준 릴리스를 판정해야 한다', async () => {
+    const lastTranslation: TranslationCommit = {
+      shortSha: 'abc1234',
+      committedAt: '2024-02-15T00:00:00Z'
+    }
+    const firstPage = [
+      { tag_name: 'component-v3.0.0', published_at: '2024-03-01T00:00:00Z', prerelease: false, draft: false },
+      { tag_name: 'component-v2.0.0', published_at: '2024-02-01T00:00:00Z', prerelease: false, draft: false },
+      ...Array.from({ length: 98 }, (_, index) => ({
+        tag_name: `other-${index}`,
+        published_at: '2024-01-01T00:00:00Z',
+        prerelease: false,
+        draft: false
+      }))
+    ]
+    const secondPage = [
+      { tag_name: 'component-v4.0.0', published_at: '2024-04-01T00:00:00Z', prerelease: false, draft: false },
+      { tag_name: 'component-v2.1.0', published_at: '2024-02-10T00:00:00Z', prerelease: false, draft: false }
+    ]
+
+    vi.mocked(globalThis.fetch)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => firstPage, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => secondPage, headers: new Headers() } as Response)
+
+    const result = filterTagsByPattern(
+      await fetchGitHubReleases('owner', 'repo'),
+      '^component-'
+    )
+
+    expect(globalThis.fetch).toHaveBeenCalledTimes(2)
+    expect(pickLatestTag(result, 'github')).toEqual({ name: 'component-v4.0.0', committedAt: '2024-04-01T00:00:00Z' })
+    expect(findBaselineTag(result, lastTranslation)).toEqual({ name: 'component-v2.1.0', committedAt: '2024-02-10T00:00:00Z' })
+  })
+
+  it('재시도 대상이 아닌 HTTP 오류는 한 번의 요청으로 실패해야 한다', async () => {
+    vi.useFakeTimers()
+    try {
+      vi.mocked(globalThis.fetch).mockResolvedValue({
+        ok: false,
+        status: 404,
+        headers: new Headers()
+      } as Response)
+
+      const result = expect(fetchGitHubReleases('owner', 'missing')).rejects
+        .toThrow('GitHub API 요청 실패 (404): /repos/owner/missing/releases?per_page=100&page=1')
+      await vi.runAllTimersAsync()
+      await result
+
+      expect(globalThis.fetch).toHaveBeenCalledTimes(1)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('재시도 대상 HTTP 오류는 백오프 뒤 다시 요청해야 한다', async () => {
+    vi.useFakeTimers()
+    try {
+      vi.mocked(globalThis.fetch)
+        .mockResolvedValueOnce({ ok: false, status: 500, headers: new Headers() } as Response)
+        .mockResolvedValueOnce({
+          ok: true,
+          status: 200,
+          json: async () => [],
+          headers: new Headers()
+        } as Response)
+
+      const result = fetchGitHubReleases('owner', 'repo')
+      await vi.runAllTimersAsync()
+
+      await expect(result).resolves.toEqual([])
+      expect(globalThis.fetch).toHaveBeenCalledTimes(2)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
   it('다섯 번째 페이지가 가득 차면 불완전한 릴리스 이력을 거부해야 한다', async () => {
     const page = Array.from({ length: 100 }, (_, index) => ({
       tag_name: `draft-${index}`,
