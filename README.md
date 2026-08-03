@@ -321,7 +321,9 @@ heritage_desc:0 "Korean heritage"    → "한국 유산" (의미 번역, _desc�
 마커 형식은 `# PAT verified upstream: <7자리 리비전>`이며, 기존 마커는 최신 업스트림 리비전으로 교체합니다. 번역 내용이 실제로 변경되지 않은 경우에도 마커 커밋으로 번역 기준 시점을 갱신할 수 있습니다. 수동 실행이 필요하면 다음 명령을 사용합니다.
 
 ```bash
-pnpm mark-verified-upstream <ck3|vic3|stellaris>
+pnpm mark-verified-upstream ck3
+pnpm mark-verified-upstream vic3
+pnpm mark-verified-upstream stellaris
 ```
 
 ### 업스트림 번역 미반영 대시보드
