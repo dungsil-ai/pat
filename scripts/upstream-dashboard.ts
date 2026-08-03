@@ -526,7 +526,8 @@ async function fetchGitHubReleases(
   owner: string,
   repo: string,
   token?: string,
-  lastTranslation?: TranslationCommit | null
+  lastTranslation?: TranslationCommit | null,
+  tagPattern?: string
 ): Promise<TagInfo[]> {
   const releases: GitHubReleaseResponse[] = []
   let tags: TagInfo[] = []
@@ -557,8 +558,9 @@ async function fetchGitHubReleases(
         name: release.tag_name,
         committedAt: release.published_at!
       }))
-    if (lastTranslation !== undefined && tags.length > 0 && (
-      !lastTranslation || findBaselineTag(tags, lastTranslation)
+    const matchingTags = filterTagsByPattern(tags, tagPattern)
+    if (lastTranslation !== undefined && matchingTags.length > 0 && (
+      !lastTranslation || findBaselineTag(matchingTags, lastTranslation)
     )) {
       return tags
     }
@@ -787,12 +789,12 @@ async function resolveDashboardRow(
   if (preferTagTracking) {
     const tagSource = meta.strategy === 'github' ? 'releases' : 'tags'
     const tagsCacheKey = meta.strategy === 'github'
-      ? `${meta.owner}/${meta.repo}/${tagSource}/${lastTranslation?.committedAt ?? 'none'}`
+      ? `${meta.owner}/${meta.repo}/${tagSource}/${lastTranslation?.committedAt ?? 'none'}/${meta.tagPattern ?? 'none'}`
       : `${meta.owner}/${meta.repo}/${tagSource}`
     let tagsPromise = cache?.tags.get(tagsCacheKey)
     if (!tagsPromise) {
       tagsPromise = meta.strategy === 'github'
-        ? fetchGitHubReleases(meta.owner, meta.repo, token, lastTranslation)
+        ? fetchGitHubReleases(meta.owner, meta.repo, token, lastTranslation, meta.tagPattern)
         : fetchRepositoryTags(meta.owner, meta.repo, token)
       cache?.tags.set(tagsCacheKey, tagsPromise)
     }
@@ -907,6 +909,37 @@ async function resolveDashboardRow(
   }
 }
 
+async function resolveDashboardRows(
+  metas: ModMeta[],
+  rootDir: string,
+  token?: string,
+  resolveRow: typeof resolveDashboardRow = resolveDashboardRow
+): Promise<DashboardRow[]> {
+  const rows: DashboardRow[] = []
+  const cache = createDashboardCache()
+
+  for (const meta of metas) {
+    try {
+      rows.push(await resolveRow(meta, rootDir, token, cache))
+    } catch (error) {
+      rows.push({
+        game: meta.game,
+        mod: meta.mod,
+        componentId: meta.componentId,
+        componentName: meta.componentName,
+        strategy: meta.strategy,
+        trackedBy: 'commit',
+        baselineVersion: '조회 실패',
+        latestVersion: '조회 실패',
+        status: '조회 실패'
+      })
+      process.stderr.write(`[경고] ${meta.game}/${meta.mod}: ${error instanceof Error ? error.message : String(error)}\n`)
+    }
+  }
+
+  return rows
+}
+
 function buildIssueBody(rows: DashboardRow[]): string {
   const timestamp = new Date().toISOString()
   const outdatedRows = rows.filter(row => row.status === '미반영')
@@ -949,27 +982,7 @@ async function main() {
   const token = process.env.GITHUB_TOKEN
 
   const metas = await findModMetas(rootDir)
-  const rows: DashboardRow[] = []
-  const cache = createDashboardCache()
-
-  for (const meta of metas) {
-    try {
-      rows.push(await resolveDashboardRow(meta, rootDir, token, cache))
-    } catch (error) {
-      rows.push({
-        game: meta.game,
-        mod: meta.mod,
-        componentId: meta.componentId,
-        componentName: meta.componentName,
-        strategy: meta.strategy,
-        trackedBy: 'commit',
-        baselineVersion: '조회 실패',
-        latestVersion: '조회 실패',
-        status: '조회 실패'
-      })
-      process.stderr.write(`[경고] ${meta.game}/${meta.mod}: ${error instanceof Error ? error.message : String(error)}\n`)
-    }
-  }
+  const rows = await resolveDashboardRows(metas, rootDir, token)
 
   process.stdout.write(buildIssueBody(rows))
 }
@@ -993,7 +1006,8 @@ export {
   pickLatestCommit,
   pickLatestTag,
   resolveComponentTranslationPaths,
-  resolveComponentTranslationTrackingPaths
+  resolveComponentTranslationTrackingPaths,
+  resolveDashboardRows
 }
 
 export type {

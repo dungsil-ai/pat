@@ -10,6 +10,7 @@ import {
   pickLatestTag,
   resolveComponentTranslationPaths,
   resolveComponentTranslationTrackingPaths,
+  resolveDashboardRows,
   type GitHubCommit,
   type GitHubTreeResponse,
   type DashboardRow,
@@ -516,6 +517,66 @@ describe('buildIssueBody', () => {
   })
 })
 
+describe('resolveDashboardRows', () => {
+  it('실패한 저장소의 행만 조회 실패로 만들고 다음 행을 유지해야 한다', async () => {
+    const metas: Parameters<typeof resolveDashboardRows>[0] = [
+      {
+        game: 'ck3',
+        mod: '실패 모드',
+        owner: 'owner',
+        repo: 'failed-repo',
+        language: 'korean',
+        strategy: 'github',
+        translationRootPath: 'ck3/실패 모드',
+        upstreamLocalization: ['localization']
+      },
+      {
+        game: 'vic3',
+        mod: '정상 모드',
+        owner: 'owner',
+        repo: 'normal-repo',
+        language: 'korean',
+        strategy: 'github',
+        translationRootPath: 'vic3/정상 모드',
+        upstreamLocalization: ['localization']
+      }
+    ]
+    const normalRow: DashboardRow = {
+      game: 'vic3',
+      mod: '정상 모드',
+      strategy: 'github',
+      trackedBy: 'tag',
+      baselineVersion: 'v1.0.0',
+      latestVersion: 'v2.0.0',
+      status: '미반영'
+    }
+    const resolveRow = vi.fn()
+      .mockRejectedValueOnce(new Error('GitHub Releases 조회 제한 초과 (owner/failed-repo): 최대 500건'))
+      .mockResolvedValueOnce(normalRow)
+    const stderr = vi.spyOn(process.stderr, 'write').mockImplementation(() => true)
+
+    try {
+      const rows = await resolveDashboardRows(metas, '.', undefined, resolveRow)
+
+      expect(rows).toEqual([
+        {
+          game: 'ck3',
+          mod: '실패 모드',
+          strategy: 'github',
+          trackedBy: 'commit',
+          baselineVersion: '조회 실패',
+          latestVersion: '조회 실패',
+          status: '조회 실패'
+        },
+        normalRow
+      ])
+      expect(resolveRow).toHaveBeenCalledTimes(2)
+    } finally {
+      stderr.mockRestore()
+    }
+  })
+})
+
 describe('fetchGitHubReleases', () => {
   beforeEach(() => {
     vi.stubGlobal('fetch', vi.fn())
@@ -671,6 +732,33 @@ describe('fetchGitHubReleases', () => {
     expect(findBaselineTag(result, lastTranslation)).toEqual({ name: 'v2.0.0', committedAt: '2024-02-01T00:00:00Z' })
   })
 
+  it('태그 패턴의 최신·기준 릴리스가 결정될 때까지 다음 페이지를 조회해야 한다', async () => {
+    const lastTranslation: TranslationCommit = {
+      shortSha: 'abc1234',
+      committedAt: '2024-02-15T00:00:00Z'
+    }
+    const firstPage = Array.from({ length: 100 }, (_, index) => ({
+      tag_name: `other-${index}`,
+      published_at: index === 1 ? '2024-02-01T00:00:00Z' : '2024-03-01T00:00:00Z',
+      prerelease: false,
+      draft: false
+    }))
+    const secondPage = [
+      { tag_name: 'component-v3.0.0', published_at: '2024-03-01T00:00:00Z', prerelease: false, draft: false },
+      { tag_name: 'component-v2.0.0', published_at: '2024-02-01T00:00:00Z', prerelease: false, draft: false }
+    ]
+
+    vi.mocked(globalThis.fetch)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => firstPage, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => secondPage, headers: new Headers() } as Response)
+
+    const result = await fetchGitHubReleases('owner', 'repo', undefined, lastTranslation, '^component-')
+    const componentTags = filterTagsByPattern(result, '^component-')
+
+    expect(globalThis.fetch).toHaveBeenCalledTimes(2)
+    expect(pickLatestTag(componentTags, 'github')).toEqual({ name: 'component-v3.0.0', committedAt: '2024-03-01T00:00:00Z' })
+    expect(findBaselineTag(componentTags, lastTranslation)).toEqual({ name: 'component-v2.0.0', committedAt: '2024-02-01T00:00:00Z' })
+  })
   it('다섯 번째 페이지가 가득 차면 불완전한 릴리스 이력을 거부해야 한다', async () => {
     const page = Array.from({ length: 100 }, (_, index) => ({
       tag_name: `draft-${index}`,
