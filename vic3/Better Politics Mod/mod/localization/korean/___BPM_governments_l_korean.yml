@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   gov_anarchist_syndicalism: "아나코-생디칼리즘" # 13457685208863729131
   gov_anarchist_syndicalism_desc: "이것은 [concept_country]가 분권화된 노동조합 연합체에 의해 관리되는 [concept_government_type]입니다.\n\n$TRANSFER_OF_POWER_NAME_DESC$" # 9617962334721664652
   gov_syndicalism_federation: "생디칼리스트 연방" # 15348516810309101811

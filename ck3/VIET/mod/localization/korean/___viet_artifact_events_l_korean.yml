@@ -1,5 +1,5 @@
-# PAT verified upstream: af0fa6c
 ﻿l_korean:
+# PAT verified upstream: af0fa6c
   VIETmisc.5000.t: "주판" # 9203937387997325247
   VIETmisc.5000.desc: "제가 아는 상인 한 명이 최근 은퇴를 결심했습니다. [merchant.GetCharacterViewName]께서는 이제 늙어가시고 상업 세계에 덜 관여하고 계시며, 수년 동안 편안하게 은퇴할 만큼 충분한 돈을 모으셨습니다.\n\n어쨌든, 제가 오늘 [merchant.GetHerHim]을 방문했는데, [merchant.GetSheHe]께서 그분의 아끼는 주판을 저에게 팔겠다고 제의하셨습니다. [merchant.GetSheHe|U]께서는 그것이 제 일에 더 도움이 될 것이라고 생각하시는군요." # 16037688764083697316
   VIETmisc.5000.a: "기꺼이 받겠습니다. 거래 성립입니다!" # 1476475780366437924

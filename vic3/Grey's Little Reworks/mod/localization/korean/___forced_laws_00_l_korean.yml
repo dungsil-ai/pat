@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   forced_border_opening: "강제 국경 개방" # 18218284801280755902
   forced_border_opening_desc: "대상 [concept_subject]의 [GetLawGroup('lawgroup_migration').GetName] [concept_law]를 [GetLawType('law_no_migration_controls').GetName]로 강제 변경하는 [concept_instant_diplomatic_action]입니다. 대신, 대상 [concept_subject]와의 [concept_relations]에 피해를 입히고 [concept_subject]의 일부 [concept_pop]가 [concept_radical]로 변하게 됩니다." # 753757849592295130
   forced_border_opening_action_name: "강제 국경 개방" # 18218284801280755902

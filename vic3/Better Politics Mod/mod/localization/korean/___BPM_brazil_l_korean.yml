@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   1834_additional_act.1.t: "섭정의 퇴위" # 17494257331295025995
   1834_additional_act.1.d: "건강이 나빠지고 기력을 잃어 법무부 장관 시절의 활기를 잃어버린 [SCOPE.sCharacter('feijo_regent').GetLastName]은 그의 완고함으로 인해 인기를 잃었고, 그의 든든한 동맹이었던 에바리스투 다 베이가가 일찍 사망하자 그는 자신이 원하던 내각을 구성하지 못하고 결국 사임하게 되었습니다. 그는 사려 깊고 관대한 보수주의자인 [SCOPE.sCharacter('araujo_lima_regent').GetLastName]을 섭정으로 임명했습니다." # 4816348046189432867
   1834_additional_act.1.a: "보수적인 섭정단이오?" # 11114201153854767552

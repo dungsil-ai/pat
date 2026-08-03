@@ -1,5 +1,5 @@
-# PAT verified upstream: 9123093
 ﻿l_korean:
+# PAT verified upstream: 9123093
   cfp_title_event.0001.t: "노르만 주도" # 4955977731036422403
   cfp_title_event.0001.odo: "[bishop.GetFullNameNoTooltipRegnal]는 그의 평소 태도처럼 자신감 있게 내게 다가온다.\n\n\"[ROOT.Char.GetTitledFirstNameNoTooltip], 폐하의 통치는 논쟁의 여지가 없습니다! 우리의 영광스러운 정복에 대한 소문이 널리 퍼졌습니다. 이토록 중대한 행사를 마땅히 기리기 위해서는 다른 어떤 것과도 비교할 수 없는, 시간의 시험을 견뎌낼 무언가가 필요합니다. 곧 세부 사항이 정리되면 돌아오겠습니다. 그리하면 통치자로서 폐하의 정통성은 결코 도전받지 않을 것입니다.\"\n\n그가 계획하고 있는 위대한 작업이 무엇인지 파악하려 할 때, 나는 그가 분명히 신뢰할 수 있는 인물임을 알게 되어 겸허해진다." # 2160325965293727282
   cfp_title_event.0001.a.odo: "이러한 노력에 주께서 [bishop.GetFirstNameNoTooltip]님을 축복하시기를!" # 3472535236775175137

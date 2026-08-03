@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   institution_border_control: "국경 통제" # 10011122068119817354
   institution_border_control_desc: "우리 국가로의 이주와 국가로부터의 이주에 대한 통치." # 1622356932414909686
   country_institution_border_control_max_investment_add: "최대 $institution_border_control$ [concept_institution] 투자" # 1585605089936084921

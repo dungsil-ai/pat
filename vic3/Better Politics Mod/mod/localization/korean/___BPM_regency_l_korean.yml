@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   hog_regency.1.t: "$bpm_hog_title_default_contextless$의 아이" # 16028665378143755630
   hog_regency.1.d: "$bpm_hog_title_default_contextless$의 작위가 아직 성년에 이르지 못한 [SCOPE.sCharacter('hog_scope').GetFullName]에게 계승되었습니다. 대행 $bpm_hog_title_default_contextless$를 선출하는 임무는 현 정부에게 맡겨졌습니다." # 467105372386799841
   hog_regency.1.f: "\"당신의 첫 번째 임무는 $bpm_hog_title_default_contextless$가 성년이 될 때까지 [ROOT.GetCountry.GetNameNoFormatting]의 안정을 유지하는 것입니다. 우리는 아이를 양육할 책임을 질 준비가 되어 있습니다. 대리 부모로서의 역할을 맡으라는 것이 아니니 안심하십시오.\"\n\n사절은 잠시 멈추고 장관의 대답을 기다렸습니다.\n\n\"알겠습니다.\" 장관이 대답했습니다. \"교육 문제에 관해서는 [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]에서 필요한 예산을 집행할 준비가 되어 있습니다. 그 외에 무엇이 필요합니까?\"" # 2988792464799099101

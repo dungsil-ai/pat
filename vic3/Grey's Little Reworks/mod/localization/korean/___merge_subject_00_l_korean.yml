@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   DIPLO_ACTION_MERGE_SUBJECT: "$DIPLO_ACTION_RELATIONS$는 $relations_amicable$보다 낮지 않습니다" # 15525448635998391055
   merge_subject: "종속국 통합" # 1910659224645313969
   merge_subject_action_name: "통합 영토" # 11207299286426882217

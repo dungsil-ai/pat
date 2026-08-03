@@ -1,5 +1,5 @@
-# PAT verified upstream: c0f3c03
 ﻿l_korean:
+# PAT verified upstream: c0f3c03
   MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD_amb: "최대 $building_giga_megaworkshop_hub_plural$" # 10903718006739146103
   MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD_original: "거대 건축물 건설 용량" # 13584596020089522795
   mod_country_resource_max_giga_sr_amb_megaconstruction_add: "$giga_sr_amb_megaconstruction$ 저장 용량" # 14068804308342856944

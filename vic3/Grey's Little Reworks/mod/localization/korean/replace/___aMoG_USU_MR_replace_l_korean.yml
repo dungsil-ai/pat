@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   mr_airport_can_construct_tt: "한 주가 수용할 수 있는 [Concept('concept_curtiss_airport','$concept_curtiss_airports$')]의 최대 단계는 1에 [GetBuildingType('building_urban_center').GetName] #G 10단계#!마다 1을 더한 값과 같습니다." # 329801687730443117
   pmg_tourism_airport: "수입 및 관광" # 5249987141720938415
   pmg_mendelejew_automation_oil: "자동화" # 18411738171978629847

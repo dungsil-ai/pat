@@ -1,5 +1,5 @@
-# PAT verified upstream: af0fa6c
 ﻿l_korean:
+# PAT verified upstream: af0fa6c
   VIETmisc.6000.t: "공개 토론" # 7830631962888090714
   VIETmisc.6000.desc: "지식인 [intellectual_1.GetFirstName]와 [intellectual_2.GetFirstName]가 제 궁정에 도착했습니다. 이들이 지역 사회에서 [ROOT.Char.GetFaith.ReligiousText]와 다른 신학적 문제들에 대한 극단적으로 다르지만 흥미로운 해석으로 저명하기에 이 순간을 고대하고 있었습니다. 그들은 앙숙이며 공개적인 토론에서 상대방이 틀렸음을 증명하고자 합니다. 저와 제 궁정의 모든 이들은 관중이 될 것입니다.\n\n[intellectual_1.GetFirstNameNoTooltip]은 저희 신앙의 고전적 이해를 옹호하는 확고한 전통주의자로 알려져 있습니다. 반면, [intellectual_2.GetFirstNameNoTooltip]은 이단적인 견해를 가지고 있지는 않지만, [intellectual_2.GetSheHe]가 상당히 혁신적인 [ROOT.Char.GetFaith.GetAdjective] 신학 해석을 가지고 있다는 것은 분명합니다.\n\n그들의 활발한 논쟁에서 두 학자 모두 논증, 반박, 재반박 등에서 능숙함을 보였습니다. 제 신하들은 어느 쪽도 우위를 점하지 못했다고 대체로 동의하므로, 모두가 누가 이겼는지 공식적으로 선언해 줄 저를 바라보고 있습니다." # 14272384044839191452
   VIETmisc.6000.desc.traditionalist: "내 [chaplain.GetCouncilTitle]인 [chaplain.GetTitledFirstName]께서는 [intellectual_1.GetFirstNameNoTooltip]을 지지하시는 듯합니다. 그분은 내게 이렇게 말씀하셨습니다. “[intellectual_1.GetSheHe|U]께서는 [ROOT.Char.GetFaith.GetName]에 대한 정통적 이해를 옹호하셨습니다. [intellectual_2.GetFirstNameNoTooltip]가 이단은 아니지만, 불편할 정도로 이단에 가까이 다가가고 있습니다.”" # 10740966287354346595

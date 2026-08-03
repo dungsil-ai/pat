@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   bpm_amendment_sharecropping: "소작제" # 906706631790731610
   bpm_amendment_sharecropping_desc: "$bpm_amendment_sharecropping$" # 8569176375132303689
   law_repeatable_politics_repeal_amendment: "[GetPlayer.MakeScope.Var('bpm_repealing_amendment').GetAmendment.GetName]을(를) [GetPlayer.MakeScope.Var('bpm_repealing_amendment_law').GetLaw.GetName]에서 폐지합니다" # 17733994603294219760

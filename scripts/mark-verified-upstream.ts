@@ -22,13 +22,21 @@ type UntranslatedResult = {
 
 export function updateVerifiedMarker(content: string, revision: string): string {
   const marker = `${VERIFIED_MARKER_PREFIX}${revision}`
-  const markerPattern = /^# PAT verified upstream:.*(?:\r?\n|$)/
+  const markerPattern = /^(\uFEFF?l_korean:(\r?\n))?# PAT verified upstream:.*(\r?\n|$)/
+  const legacyMarkerPattern = /^# PAT verified upstream:.*(?:\r?\n)(\uFEFF?l_korean:(\r?\n|$))/
+  const legacyMarker = content.match(legacyMarkerPattern)
 
-  if (markerPattern.test(content)) {
-    return content.replace(markerPattern, `${marker}\n`)
+  if (legacyMarker) {
+    return `${legacyMarker[1]}${marker}${legacyMarker[2] || '\n'}${content.slice(legacyMarker[0].length)}`
   }
 
-  return `${marker}\n${content}`
+  if (markerPattern.test(content)) {
+    return content.replace(markerPattern, (_match, header = '', headerEol = '', markerEol = '') => (
+      `${header}${marker}${headerEol || markerEol}`
+    ))
+  }
+
+  return content.replace(/^(\uFEFF?l_korean:(?:\r?\n|$))/, `$1${marker}\n`)
 }
 
 async function readUntranslatedSourcePaths(rootDir: string, game: string): Promise<Set<string>> {

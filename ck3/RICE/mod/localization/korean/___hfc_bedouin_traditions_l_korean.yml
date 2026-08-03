@@ -1,5 +1,5 @@
-# PAT verified upstream: afbe391
 ﻿l_korean:
+# PAT verified upstream: afbe391
   tradition_hfc_bedouin_honor_codes_name: "베두인 명예 규범" # 17303663595690540241
   tradition_hfc_bedouin_honor_codes_desc: "베두인에게 명예는 전부입니다. 이는 환대와 진실성, 심지어 적에게도 마찬가지이며, 가족과 부족을 지키는 용기로 정의됩니다. 이 규범을 어기는 지도자는 사방에서 반대에 부딪히지만, 이를 모범적으로 실천하는 지도자는 백성의 호의 속에서 강력한 자원을 발견합니다." # 16030889497072698004
   culture_parameter_generous_honest_brave_traits_more_valued: "[personality_traits|E]와 같은 [GetTrait('generous').GetName( GetNullCharacter )], [GetTrait('honest').GetName( GetNullCharacter )], 그리고 [GetTrait('brave').GetName( GetNullCharacter )]는 [prestige_i]#P 명예롭다#!로 여겨집니다." # 12471784328935640528
