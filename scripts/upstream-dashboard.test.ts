@@ -570,7 +570,48 @@ describe('resolveDashboardRows', () => {
         },
         normalRow
       ])
+      expect(Object.hasOwn(rows[0], 'componentId')).toBe(false)
+      expect(Object.hasOwn(rows[0], 'componentName')).toBe(false)
       expect(resolveRow).toHaveBeenCalledTimes(2)
+    } finally {
+      stderr.mockRestore()
+    }
+  })
+
+  it('실패한 컴포넌트 행의 컴포넌트 메타데이터를 유지해야 한다', async () => {
+    const metas: Parameters<typeof resolveDashboardRows>[0] = [
+      {
+        game: 'ck3',
+        mod: '컴포넌트 실패 모드',
+        componentId: 'core',
+        componentName: '핵심 구성 요소',
+        owner: 'owner',
+        repo: 'failed-component-repo',
+        language: 'korean',
+        strategy: 'github',
+        translationRootPath: 'ck3/컴포넌트 실패 모드',
+        upstreamLocalization: ['localization']
+      }
+    ]
+    const resolveRow = vi.fn().mockRejectedValueOnce(new Error('컴포넌트 조회 실패'))
+    const stderr = vi.spyOn(process.stderr, 'write').mockImplementation(() => true)
+
+    try {
+      const rows = await resolveDashboardRows(metas, '.', undefined, resolveRow)
+
+      expect(rows).toEqual([
+        {
+          game: 'ck3',
+          mod: '컴포넌트 실패 모드',
+          componentId: 'core',
+          componentName: '핵심 구성 요소',
+          strategy: 'github',
+          trackedBy: 'commit',
+          baselineVersion: '조회 실패',
+          latestVersion: '조회 실패',
+          status: '조회 실패'
+        }
+      ])
     } finally {
       stderr.mockRestore()
     }

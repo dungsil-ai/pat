@@ -908,8 +908,8 @@ async function resolveDashboardRows(
       rows.push({
         game: meta.game,
         mod: meta.mod,
-        componentId: meta.componentId,
-        componentName: meta.componentName,
+        ...(meta.componentId === undefined ? {} : { componentId: meta.componentId }),
+        ...(meta.componentName === undefined ? {} : { componentName: meta.componentName }),
         strategy: meta.strategy,
         trackedBy: 'commit',
         baselineVersion: '조회 실패',
