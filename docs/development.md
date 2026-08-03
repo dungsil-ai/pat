@@ -39,6 +39,7 @@ paradox-auto-translate/
 │   ├── vic3.ts          # VIC3 진입점
 │   ├── stellaris.ts     # Stellaris 진입점
 │   ├── upstream.ts      # Upstream 관리 진입점
+│   ├── mark-verified-upstream.ts # 검증 완료 업스트림 리비전 기록
 │   ├── factory/         # 번역 처리 로직
 │   │   └── translate.ts # 핵심 번역 팩토리
 │   ├── parser/          # 파일 파서
@@ -97,6 +98,18 @@ pnpm ck3
 - 빌드 단계 불필요
 - 빠른 개발 사이클
 - TypeScript 타입 안정성 유지
+
+#### 업스트림 검증 리비전 기록
+
+번역 워크플로우는 번역 단계가 성공한 뒤 `scripts/mark-verified-upstream.ts`를 실행합니다. 업스트림 파일의 해시 기록이 있고 미번역 항목이 남아 있지 않은 컴포넌트에서, 이미 존재하는 한국어 localization 파일의 첫 줄에 `# PAT verified upstream: <7자리 리비전>` 마커를 추가하거나 최신 리비전으로 갱신합니다. 한국어 파일이 없으면 새로 생성하지 않습니다. 번역 내용이 바뀌지 않은 경우에도 이 마커로 번역 기준 시점을 기록할 수 있습니다.
+
+수동 실행:
+
+```bash
+pnpm mark-verified-upstream ck3
+pnpm mark-verified-upstream vic3
+pnpm mark-verified-upstream stellaris
+```
 
 #### 타입 체크
 
