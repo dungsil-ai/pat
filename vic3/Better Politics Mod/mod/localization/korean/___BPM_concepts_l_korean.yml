@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   concept_bpm_party_ban: "정당 금지" # 17233978227346913491
   concept_bpm_party_ban_desc: "특정 [Concept('concept_law', '법률')]은 다양한 [Concept('concept_party', '정당')]을 금지시킬 수 있습니다. 금지되면, 어떠한 [Concept('concept_interest_group','$concept_interest_groups$')]도 해당 [Concept('concept_party', '정당')]에 가입할 수 없습니다. 귀국의 언론의 자유 [Concept('concept_law', '법률')]가 정확히 어떤 [Concept('concept_party', '정당')]이 정당 금지로 인해 추방될지를 결정합니다." # 10753627206179819469
   concept_bpm_bannable_parties: "모든 정당 금지" # 15959478943630487098

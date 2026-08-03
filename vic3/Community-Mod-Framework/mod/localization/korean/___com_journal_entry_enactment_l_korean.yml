@@ -1,4 +1,4 @@
-# PAT verified upstream: 9115fbe
 ﻿l_korean:
+# PAT verified upstream: 9115fbe
   com_journal_entry_enactment_success: "성공: [ComEnactmentValue('success_chance').GetValue|%0g]" # 4670555571016916277
   com_journal_entry_enactment_stall: "교착: [ComEnactmentValue('stall_chance').GetValue|%0r]" # 13961149310806851772

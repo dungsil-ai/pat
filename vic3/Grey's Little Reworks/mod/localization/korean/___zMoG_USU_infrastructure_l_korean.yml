@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   concept_usu_railway_station: "철도 터미널" # 16291953549960239492
   concept_usu_railway_stations: "철도 터미널" # 9604331812065286576
   concept_usu_railway_station_desc: "#b 철도 터미널#!은 물류 네트워크의 중심지 역할을 하는 건물입니다. 이 건물은 순수 민간 건물로 [GetGoods('usu_train_paths').GetName]와 [GetGoods('usu_logistics').GetName]를 제공하지만, [GetGoods('tools').GetName], [GetGoods('paper').GetName], [GetGoods('aeroplanes').GetName], [GetGoods('oil').GetName]을 시작으로 다양한 상품을 소비합니다. 이후에는 [GetGoods('electricity').GetName], [GetGoods('telephones').GetName], [GetGoods('radios').GetName]도 필요로 하게 됩니다.\n충분한 수의 #b 공항#!을 보유하면 [concept_curtiss_airline]이 설립되며, #b 공항#!의 수가 증가함에 따라 #b 항공사#!도 성장하여 더 많은 보너스를 제공합니다." # 3757131948645037345

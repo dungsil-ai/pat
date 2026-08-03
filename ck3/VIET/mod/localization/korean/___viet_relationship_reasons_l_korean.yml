@@ -1,5 +1,5 @@
-# PAT verified upstream: af0fa6c
 ﻿l_korean:
+# PAT verified upstream: af0fa6c
   VIET_friend_reason_placeholder: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 서로의 교제를 즐기게 되었습니다." # 5719785269926253061
   VIET_rival_reason_placeholder: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 모종의 불화로 인해 서로를 싫어하게 되었습니다." # 18121270760993488226
   VIET_travel_argument_reason: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]가 [traveling|E] 중 심하게 다투었습니다." # 1899293677429567065

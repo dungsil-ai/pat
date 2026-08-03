@@ -1,5 +1,5 @@
-# PAT verified upstream: afbe391
 ﻿l_korean:
+# PAT verified upstream: afbe391
   RICE_iberia_struggle_involved_req: "귀하의 [culture|E]는 [iberian_struggle|E]에 [struggle_involved|E]되어 있습니다." # 10167056145877388198
   RICE_no_saint_james_modifier_req: "현재 귀하는 [santiago_modifier|E]를 보유하고 있지 않습니다." # 16376005473423000743
   RICE_galicia_geographical_capital_req: "귀하의 [realm_capital|E]는 [GetGeographicalRegion('RICE_galicia_region').GetName]에 있습니다." # 13661270301991669224

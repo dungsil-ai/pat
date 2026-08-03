@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   law_imposition_events.4.t: "[SCOPE.sC('country_imposed_upon').GetName]에 부과된 입법 실패" # 5094893553949086345
   law_imposition_events.4.d: "[SCOPE.sC('country_imposed_upon').GetName]이 내부 세력으로 인해 [SCOPE.sLaw('foreign_imposition_law').GetName]을(를) 제정하는 데 실패했습니다." # 10997726262657549625
   law_imposition_events.4.f: "대사가 돌아와 실패 소식을 전합니다.\"우리의 지원에도 불구하고 그들은 일을 완수하지 못했습니다\"라고 그가 보고합니다.\n\n이어진 침묵이 의회 회의실에 무겁게 내려앉았습니다." # 16924765312549169296

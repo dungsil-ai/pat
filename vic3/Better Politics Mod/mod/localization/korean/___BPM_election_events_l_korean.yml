@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   bpm_election_events.1.t: "임명에 관한 문제" # 14502981689216355543
   bpm_election_events.1.d: "[SCOPE.sCharacter('bpm_new_ruler_scope').GetFullNameWithTitle]의 새 정부는 내각을 구성하고 일련의 새로운 행정직을 임명하는 과업에 착수해야 합니다. 정부는 어떤 전략을 취해야 할까요?" # 11188506822286110910
   bpm_election_events.1.f: "@information! #bold 이는 자동 내각 임명에 영향을 미칩니다.\n이벤트 이후 언제든지 [concept_character]를 우클릭하고 #yellow 캐릭터 상호작용#!을 사용하여 내각 구성원을 수동으로 변경할 수 있습니다.#!" # 16531794035475519130

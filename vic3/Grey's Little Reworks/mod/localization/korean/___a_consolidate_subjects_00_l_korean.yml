@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   consolidate_subject: "속국 통합" # 4168885323590717607
   consolidate_subject_action_name: "[concept_subject] 통합" # 10514090765107870323
   consolidate_subject_desc: "인접한 [concept_subject]에 의해 합병되도록 [concept_subject]를 통합합니다. 두 주체 모두 비교적 낮은 [concept_autonomy]와 [concept_liberty_desire]를 가져야 하며, [concept_primary_cultures] 또는 문화적 특성을 공유해야 합니다." # 16571400332345066767

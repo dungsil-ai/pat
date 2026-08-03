@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   alert_low_market_access_alert_hint: "[GetBuildingType('building_port').GetName] 또는 [GetBuildingType('building_usu_railway_line').GetName]을 건설하여 [concept_infrastructure]를 늘리거나, [GetDecreeType('decree_road_maintenance').GetName]와 같은 [Concept('concept_decree', '$concept_decrees$')]를 시행하거나, [SCOPE.GetRootScope.GetState.GetName]를 해외 [concept_market_capital]에 연결할 충분한 [GetGoods('merchant_marine').GetName]가 [concept_market]에 있는지 확인하여 [SCOPE.GetRootScope.GetState.GetName]의 [concept_market_access]를 개선할 수 있습니다." # 12484354745794373771
   je_indian_famines_button_relief_kitchens_desc: "비용은 많이 들지만, 기근에 대처하는 가장 논리적이고 아마도 가장 효과적인 방법은 굶주리는 사람들에게 단순히 식량을 제공하는 것입니다.\n\n하지만 이러한 지출은 재무부의 훌륭한 관리들에게 호감을 사기 어려울 것이며, 구호 활동의 효과는 국가 역량과 지역 기반 시설에 의해 제한될 것입니다.\n\n#bold 철도#!\n[concept_famine]을 겪고 있는 [Concept('concept_state','$concept_states$')]에 [GetBuildingType('building_usu_railway_line').GetName]이 존재하면 이 조치의 효과가 두 배가 됩니다." # 8470610940704367983
   every_state_suffers_following_modifier: "[concept_famine]으로 고통받는 모든 [concept_state]는 다음 수정치를 얻습니다:\n([GetBuildingType('building_usu_railway_line').GetName]을 보유하면 개선됨):" # 2220088374091405049

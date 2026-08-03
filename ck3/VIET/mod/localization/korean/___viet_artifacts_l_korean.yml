@@ -1,5 +1,5 @@
-# PAT verified upstream: af0fa6c
 ﻿l_korean:
+# PAT verified upstream: af0fa6c
   artifact_VIET_clutter: "잡동사니" # 14102664521057560580
   artifact_VIET_recipe: "조리법" # 501950644287584625
   VIET_artifact_limit_warning: "소지품에 [clutter_artifact|E]를 추가하면 다른 [clutter_artifacts|E]를 발견할 확률이 #X 감소합니다#!" # 10109848970340372270

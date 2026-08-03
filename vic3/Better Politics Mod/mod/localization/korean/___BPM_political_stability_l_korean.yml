@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   concept_bpm_political_stability: "정치적 경직성" # 16545713585568821427
   concept_bpm_political_stability_desc: "$concept_bpm_political_stability$는 귀하의 국가 내 정치 세력의 역동성 또는 정체 수준을 나타냅니다. 이는 [Concept('concept_bpm_institutional_ig', '제도적')] [Concept('concept_interest_group', '이익 집단')]과 [Concept('concept_bpm_ideological_ig', '이념적')] [Concept('concept_interest_group', '이익 집단')]의 인기도에 영향을 미칩니다:\n- $bpm_political_stability$가 높을수록 [Concept('concept_bpm_institutional_ig', '제도적 집단')]의 인기가 높아집니다.\n- $bpm_political_stability$가 낮을수록 [Concept('concept_bpm_ideological_ig', '이념적 집단')]의 인기가 높아집니다.\n\n@warning! $bpm_political_stability$는 또한 다음과 같은 단계적 보너스와 페널티를 부여합니다:\n  #v 66%#! 초과 ([Concept('concept_bpm_politically_stagnant', '정체됨')]):\n    @arrow_down! 법안 제정 성공 확률, 속도\n  #v 33% - 66%#! ([Concept('concept_bpm_politically_dynamic', '역동적')]):\n     영향 없음.\n  #v 33%#! 미만 ([Concept('concept_bpm_politically_unstable', '불안정함')]):\n    @arrow_up! 팝 정치력, 생활 수준 하락으로 인한 급진파 발생;\n    @arrow_down! 건물 처리량, 건설 효율" # 3668842481430307234
   bpm_political_stability_baseline_value_tt: "\n[GetPlayer.MakeScope.GetScriptValueDesc('bpm_political_stability_baseline_target')]$bpm_rigidity_baseline_value_add_modifier$$bpm_rigidity_baseline_value_mult_modifier$\n" # 6358831844265866333

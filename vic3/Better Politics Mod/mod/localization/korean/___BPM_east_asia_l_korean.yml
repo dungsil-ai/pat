@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   bpm_japan.1.t: "막부와 투표함" # 812106437582707577
   bpm_japan.1.d: "압도적인 민중의 압력에 굴복하여, [SCOPE.sCharacter('shogun_scope').GetFullNameWithTitle]은(는) [concept_bpm_head_of_government]을(를) 선출할 권한을 가진 선출직 입법부인 #b [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]#!의 창설을 허가했습니다. [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag] 역사상 최초의 총선에서 투표가 시작됨에 따라, [SCOPE.sCharacter('shogun_scope').GetFullName]은(는) [SCOPE.sCharacter('shogun_scope').GetSheHe]가 겪게 될 [SCOPE.sCharacter('shogun_scope').GetHerHis] 권위 상실을 어떻게 헤쳐 나갈지 결정해야 합니다." # 14454730970545305943
   bpm_japan.1.f: "\"한 가지 예를 들자면, 우리가 정부 관료에게 경의를 표하는 것은 당연한 일이지만, 그것이 그 사람의 지위가 가진 존엄성 때문은 아닙니다. 그가 재능과 덕망을 통해 중요한 역할을 수행하고, 백성을 위해 중대한 법을 다루기 때문에 존경을 받는 것입니다. 존엄한 것은 사람 그 자체가 아니라 법입니다.\"\n\n—후쿠자와 유키치, 1872년" # 15571650474232956291

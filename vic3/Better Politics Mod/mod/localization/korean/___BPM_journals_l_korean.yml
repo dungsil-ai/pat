@@ -1,5 +1,5 @@
-# PAT verified upstream: 8576737
 ﻿l_korean:
+# PAT verified upstream: 8576737
   bpm_je_progress_complete: "#bold 진행 막대#! 가 #variable 100%#! 에 도달했습니다!" # 5966710232132585123
   bpm_je_progress_zero: "#bold 진행률 표시줄#! 이 #variable 0%#! 에 도달했습니다!" # 1665499890250675861
   bpm_journal_final_stage: "#bold 진행 막대#!가 #variable 66%#!에 도달하여, 기록 항목의 마지막 단계에 진입했습니다." # 14120103182553640224

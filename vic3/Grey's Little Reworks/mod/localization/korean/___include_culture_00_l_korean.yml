@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   include_primary_culture: "문화적 포용" # 8697116318180893285
   include_primary_culture_action_name: "$include_primary_culture$" # 15176085439024551927
   include_primary_culture_action_propose_name: "문화적 포용 시작" # 14913628580100972513

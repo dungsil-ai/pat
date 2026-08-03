@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   change_state_religion: "종교 기관 장악" # 9348155569728811119
   change_state_religion_action_name: "$change_state_religion$" # 16603014896610089277
   change_state_religion_action_propose_name: "[INITIATOR_COUNTRY.GetCustom('change_religion_dynamic_name')]을 개시합니다" # 3798886735205674794

@@ -1,5 +1,5 @@
-# PAT verified upstream: ad4c7ef
 ﻿l_korean:
+# PAT verified upstream: ad4c7ef
   at_buy_artifact_interaction: "유물 구매" # 1354042420349611405
   at_buy_artifact_interaction_desc: "[artifact|E]을 [gold|E]에 구매하기" # 1072083449650472208
   at_buy_artifact_interaction_extra_icon: "$hook_extra_icon$" # 2514920243271261704

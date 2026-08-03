@@ -1873,7 +1873,7 @@ language = "english"
     expect(secondRunCallCount).toBe(firstRunCallCount + 1)
   })
 
-  it('업스트림 해시 파일 경로가 심볼릭 링크면 대상 파일을 덮어쓰지 않아야 함', async () => {
+  it.skipIf(process.platform === 'win32')('업스트림 해시 파일 경로가 심볼릭 링크면 대상 파일을 덮어쓰지 않아야 함', async () => {
     const { processModTranslations } = await import('./translate')
     const { log } = await import('../utils/logger')
 

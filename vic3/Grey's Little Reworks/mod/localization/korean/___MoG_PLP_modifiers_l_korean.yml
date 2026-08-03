@@ -1,5 +1,5 @@
-# PAT verified upstream: d0f6094
 ﻿l_korean:
+# PAT verified upstream: d0f6094
   building_group_bg_trade_allowed_collectivization_add: "노동자 소유 $bg_trade$ $concept_building$의 최소 단계" # 14613352200735976440
   building_group_bg_trade_allowed_collectivization_add_desc: "$bg_trade$ [Concept('concept_building','$concept_buildings$')]에서 노동자가 소유하게 될 최소 [Concept('concept_building','$concept_buildings$')] 수치입니다." # 5059081732717858592
   LA_Home_Affairs: "PLP: 내무부 기관에서 나오는 권위" # 16485666783843585301

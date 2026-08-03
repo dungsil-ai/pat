@@ -1,5 +1,5 @@
-# PAT verified upstream: afbe391
 ﻿l_korean:
+# PAT verified upstream: afbe391
   RICE_every_berber_county: "$heritage_berber_name$ [heritage|E] [culture|E]를 가진 당신의 [realm|E] 내 모든 [county|E]" # 16409410551832230381
   RICE_every_berber_courtier: "$heritage_berber_name$ [heritage|E]를 가진 [culture|E]의 모든 [courtier|E] 또는 [guest|E]" # 14740171846960304229
   RICE_every_berber_vassal: "$heritage_berber_name$ [heritage|E]를 가진 [culture|E]의 모든 [vassal|E]" # 12410151754094253397

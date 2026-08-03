@@ -1,5 +1,5 @@
-# PAT verified upstream: c0f3c03
 ﻿l_korean:
+# PAT verified upstream: c0f3c03
   situation_unity_deficit: "통합 부족" # 8897154830682110283
   situation_unity_deficit_type: "$situation_unity_deficit$" # 519218156689206943
   situation_unity_deficit_desc: "우리의 통합 적자가 통제 불능입니다! $situation_deficit_desc_base$" # 7767632176853662323

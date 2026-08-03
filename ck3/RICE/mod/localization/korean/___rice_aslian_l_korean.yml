@@ -1,5 +1,5 @@
-# PAT verified upstream: afbe391
 ﻿l_korean:
+# PAT verified upstream: afbe391
   RICE_any_realm_province_jungle_or_forest_req: "귀하의 [realm|E] 내 최소한 한 곳의 [county|E]가 #V forest#! 또는 #V jungle#! [terrain|E]를 가지고 있습니다." # 18428387346463876301
   RICE_domicile_jungle_or_forest_req: "귀하의 [domicile|E]는 #V forest#! 또는 #V jungle#! [terrain|E] 지역에 위치하고 있습니다." # 4293822675949282957
   RICE_any_held_county_southeast_asia_req: "당신은 [GetGeographicalRegion('world_asia_southeast').GetName]에 속한 [county|E]를 하나 이상 소유하고 있습니다." # 5247792654969477829

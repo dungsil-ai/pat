@@ -1,5 +1,5 @@
-# PAT verified upstream: 4aee17b
 ﻿l_korean:
+# PAT verified upstream: 4aee17b
   je_france_pop: "19세기 정체" # 6429505727594116601
   je_france_pop_reason: "[ROOT.GetCountry.GetName]은 선진적인 [Concept('concept_demographic_stages','$concept_demographic_stages$')]을 경험한 최초의 주요 유럽 [Concept('concept_country','$concept_country$')]이었습니다. 19세기 전반기가 끝나갈 무렵, 도시화, 문화적 변화, 기초적인 피임법의 보급, 여성 교육 수준 향상 및 상속 정책으로 인해 [ROOT.GetCountry.GetAdjective] 인구 사이에서 출산율 감소가 관찰되었습니다." # 4315721470615750910
   je_france_pop_goal: "[ROOT.GetCountry.GetName]의 의료 혜택을 법률, 도시 중심지, 혹은 페니실린과 항생제 같은 신기술 연구를 통해 증진하십시오." # 11515236645800165865

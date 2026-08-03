@@ -1,5 +1,5 @@
-# PAT verified upstream: 4aee17b
 ﻿l_korean:
+# PAT verified upstream: 4aee17b
   austrian_empire_collapse.1.t: "오스트리아 제국 붕괴" # 11321758258364105959
   austrian_empire_collapse.1.d: "[ROOT.GetCountry.GetAdjective] 제국은 수 세기 동안 중앙 유럽을 지배해 왔으나, 현재 위기 상황에 직면해 있습니다. 우리 제국의 취약한 균형은 무너졌습니다. 많은 국가가 독립을 선언함에 따라 제국의 심장부는 폐허가 되었습니다. 빈은 전쟁의 포성과 해체의 침묵 사이에서 마비되었습니다. 구체제는 죽어가고 있습니다. 과연 싸우다 장렬히 전사할 것인가, 아니면 존엄하게 묻힐 것인가?" # 11921694410158635380
   austrian_empire_collapse.1.a: "우리는 먼저 [SCOPE.sCountry('collapse_hungary_scope').GetName]을(를) 탈환해야 합니다!" # 5874258902348278802
