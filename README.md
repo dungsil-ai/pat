@@ -18,6 +18,7 @@ Paradox Interactive 게임 모드를 위한 자동 번역 도구입니다. Googl
 - 💾 스마트 캐싱으로 중복 번역 방지 (번역/음역 별도 캐시)
 - 📚 수동 단어사전 지원 (일반 용어 + 고유명사 사전)
 - ✅ 번역 검증 및 재번역 기능
+- 🧾 번역 성공 시 업스트림 검증 리비전 마커 자동 기록
 - ⏱️ `.env`에 설정 가능한 번역 타임아웃 및 배치 크기
 - 🧭 업스트림 파일 해시 기반으로 변경 없는 파일은 자동 스킵 (해시 캐시는 일반 파일만 안전하게 갱신)
 - ⚙️ 모드 수를 기준으로 자동 병렬 처리(ETC 하위 upstream 폴더도 독립 모드로 계산)
@@ -88,6 +89,11 @@ pnpm upstream --help
 pnpm ck3:update-hash
 pnpm vic3:update-hash
 pnpm stellaris:update-hash
+
+# 번역 성공 후 업스트림 검증 리비전 마커 갱신
+pnpm mark-verified-upstream ck3
+pnpm mark-verified-upstream vic3
+pnpm mark-verified-upstream stellaris
 
 # 단어사전 기반 번역 무효화 (재번역 준비)
 pnpm ck3:update-dict
@@ -203,6 +209,7 @@ GEMINI_MODEL=gemini-flash-lite-latest
 6. **번역/음역**: AI 번역 또는 음역 (게임별 컨텍스트 및 고유명사 사전 포함). 벌크 요청 시 동일 텍스트는 단일 AI 호출로 병합하여 중복 전송을 제거합니다.
 7. **캐싱**: 번역 결과 저장 (번역/음역 별도 캐시로 중복 방지)
 8. **출력**: 한국어 파일 생성 (`___` 접두사로 로드 순서 보장). 소스 언어가 `korean`인 경우 기존 `___` 접두사를 제거한 뒤 새 접두사를 붙여 이중 접두사를 방지합니다. 업스트림 파일명이 대소문자만 바뀐 경우에는 이전 한국어 파일을 제거해 중복 파일 잔존을 막습니다. 변경/미변경 키가 섞여 있어도 원본 키 순서를 유지해 파일 diff 안정성을 보장합니다.
+9. **검증 리비전 기록**: 번역 작업이 성공하면 `mark-verified-upstream`이 각 게임의 검증 완료 컴포넌트에 `# PAT verified upstream: <7자리 리비전>` 마커를 추가하거나 갱신합니다.
 
 ### 음역 모드 (Transliteration Mode)
 
@@ -306,6 +313,16 @@ heritage_desc:0 "Korean heritage"    → "한국 유산" (의미 번역, _desc�
 **관련 워크플로우**: `.github/workflows/translate-ck3.yml`, `translate-vic3.yml`, `translate-stellaris.yml`
 
 **폴백 번역 워크플로우**: `translation-refused` 이슈를 자동으로 탐색해 폴백 번역을 적용하고 커밋하는 전용 워크플로우(`.github/workflows/fallback-translate-on-translation-refused.yml`)가 추가되었습니다.
+
+### 업스트림 검증 리비전 기록
+
+각 게임 번역 워크플로우는 번역 단계가 성공한 뒤 `pnpm mark-verified-upstream <game>`을 실행합니다. 이 명령은 업스트림 파일의 해시 기록이 존재하고 미번역 항목이 남아 있지 않으며 대상 한국어 파일이 존재하는 컴포넌트만 처리합니다.
+
+마커 형식은 `# PAT verified upstream: <7자리 리비전>`이며, 기존 마커는 최신 업스트림 리비전으로 교체합니다. 번역 내용이 실제로 변경되지 않은 경우에도 마커 커밋으로 번역 기준 시점을 갱신할 수 있습니다. 수동 실행이 필요하면 다음 명령을 사용합니다.
+
+```bash
+pnpm mark-verified-upstream <ck3|vic3|stellaris>
+```
 
 ### 업스트림 번역 미반영 대시보드
 
