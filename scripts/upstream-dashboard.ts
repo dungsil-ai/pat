@@ -302,11 +302,18 @@ function createDashboardCache(): DashboardCache {
 }
 
 function sleep(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms))
+  const { promise, resolve } = Promise.withResolvers<void>()
+  setTimeout(resolve, ms)
+  return promise
 }
 
 function shouldRetryGitHubResponse(status: number): boolean {
   return status === 429 || status === 500 || status === 502 || status === 503 || status === 504
+}
+
+interface GitHubRequestTimeout {
+  ms: number
+  message: string
 }
 
 function getGitHubRetryDelayMs(response: Response, attempt: number): number {
@@ -334,17 +341,23 @@ function getGitHubRetryDelayMs(response: Response, attempt: number): number {
   return Math.min(1000 * 2 ** attempt, 8000)
 }
 
-async function githubApi<T>(path: string, token?: string): Promise<T> {
+async function githubApi<T>(path: string, token?: string, timeout?: GitHubRequestTimeout): Promise<T> {
   const maxAttempts = 4
 
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    const abortController = timeout ? new AbortController() : undefined
+    const timeoutId = abortController
+      ? setTimeout(() => abortController.abort(new Error(timeout!.message)), timeout!.ms)
+      : undefined
+
     try {
       const response = await fetch(`https://api.github.com${path}`, {
         headers: {
           'Accept': 'application/vnd.github+json',
           'X-GitHub-Api-Version': '2022-11-28',
           ...(token ? { 'Authorization': `Bearer ${token}` } : {})
-        }
+        },
+        ...(abortController ? { signal: abortController.signal } : {})
       })
 
       if (response.ok) {
@@ -363,6 +376,8 @@ async function githubApi<T>(path: string, token?: string): Promise<T> {
       }
 
       await sleep(Math.min(1000 * 2 ** attempt, 8000))
+    } finally {
+      clearTimeout(timeoutId)
     }
   }
 
@@ -506,31 +521,52 @@ interface GitHubReleaseResponse {
   draft: boolean
 }
 
-async function fetchGitHubReleases(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
-  const releases: GitHubReleaseResponse[] = []
-  let page = 1
-  const perPage = 100
 
-  while (true) {
+async function fetchGitHubReleases(
+  owner: string,
+  repo: string,
+  token?: string,
+  lastTranslation?: TranslationCommit | null
+): Promise<TagInfo[]> {
+  const releases: GitHubReleaseResponse[] = []
+  let tags: TagInfo[] = []
+  const perPage = 100
+  const maxPages = 5
+
+  for (let page = 1; page <= maxPages; page++) {
     const pageReleases = await githubApi<GitHubReleaseResponse[]>(
       `/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`,
-      token
+      token,
+      {
+        ms: 10_000,
+        message: `GitHub Releases 요청 시간 초과 (${owner}/${repo}): 10초`
+      }
     )
 
     if (pageReleases.length === 0) break
     releases.push(...pageReleases)
 
+    if (page === maxPages && pageReleases.length === perPage) {
+      throw new Error(`GitHub Releases 조회 제한 초과 (${owner}/${repo}): 최대 500건`)
+    }
+
+    tags = releases
+      .filter(release => !release.prerelease && !release.draft && release.published_at)
+      .sort((a, b) => new Date(b.published_at!).getTime() - new Date(a.published_at!).getTime())
+      .map(release => ({
+        name: release.tag_name,
+        committedAt: release.published_at!
+      }))
+    if (lastTranslation !== undefined && tags.length > 0 && (
+      !lastTranslation || findBaselineTag(tags, lastTranslation)
+    )) {
+      return tags
+    }
+
     if (pageReleases.length < perPage) break
-    page += 1
   }
 
-  return releases
-    .filter(release => !release.prerelease && !release.draft && release.published_at)
-    .sort((a, b) => new Date(b.published_at!).getTime() - new Date(a.published_at!).getTime())
-    .map(release => ({
-      name: release.tag_name,
-      committedAt: release.published_at!
-    }))
+  return tags
 }
 
 function filterTagsByStrategy(tags: TagInfo[], strategy: VersionStrategy): TagInfo[] {
@@ -750,11 +786,13 @@ async function resolveDashboardRow(
   let tags: TagInfo[] = []
   if (preferTagTracking) {
     const tagSource = meta.strategy === 'github' ? 'releases' : 'tags'
-    const tagsCacheKey = `${meta.owner}/${meta.repo}/${tagSource}`
+    const tagsCacheKey = meta.strategy === 'github'
+      ? `${meta.owner}/${meta.repo}/${tagSource}/${lastTranslation?.committedAt ?? 'none'}`
+      : `${meta.owner}/${meta.repo}/${tagSource}`
     let tagsPromise = cache?.tags.get(tagsCacheKey)
     if (!tagsPromise) {
       tagsPromise = meta.strategy === 'github'
-        ? fetchGitHubReleases(meta.owner, meta.repo, token)
+        ? fetchGitHubReleases(meta.owner, meta.repo, token, lastTranslation)
         : fetchRepositoryTags(meta.owner, meta.repo, token)
       cache?.tags.set(tagsCacheKey, tagsPromise)
     }

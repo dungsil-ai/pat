@@ -486,6 +486,34 @@ describe('buildIssueBody', () => {
     expect(buildIssueBody(rows))
       .toContain(`| VIC3 | Bundle | ${escapedComponent} (\`one\`) | default |`)
   })
+  it('조회 실패 행을 미반영 집계에서 제외하고 정상 행을 유지해야 한다', () => {
+    const body = buildIssueBody([
+      {
+        game: 'ck3',
+        mod: '정상 모드',
+        strategy: 'github',
+        trackedBy: 'tag',
+        baselineVersion: 'v1.0.0',
+        latestVersion: 'v2.0.0',
+        status: '미반영'
+      },
+      {
+        game: 'vic3',
+        mod: '실패 모드',
+        strategy: 'github',
+        trackedBy: 'tag',
+        baselineVersion: '조회 실패',
+        latestVersion: '조회 실패',
+        status: '조회 실패'
+      }
+    ])
+
+    expect(body).toContain('- 미반영 논리 모드 수: 1')
+    expect(body).toContain('- 확인 대상 논리 모드 수: 2')
+    expect(body).toContain('- 조회 실패 논리 모드 수(집계 제외): 1')
+    expect(body).toContain('| CK3 | 정상 모드 | - | github | tag |')
+    expect(body).toContain('| VIC3 | 실패 모드 | - | github | tag | `조회 실패` | `조회 실패` | 조회 실패 |')
+  })
 })
 
 describe('fetchGitHubReleases', () => {
@@ -605,5 +633,80 @@ describe('fetchGitHubReleases', () => {
     // 프리릴리즈가 제외되었는지 확인
     expect(result.find(r => r.name === 'v1.0.50')).toBeUndefined()
     expect(result.find(r => r.name === 'v0.8.0-rc.1')).toBeUndefined()
+  })
+  it('최신 공개 릴리스와 번역 기준 릴리스가 결정된 페이지 뒤 요청을 중단해야 한다', async () => {
+    const lastTranslation: TranslationCommit = {
+      shortSha: 'abc1234',
+      committedAt: '2024-02-15T00:00:00Z'
+    }
+    const page = [
+      {
+        tag_name: 'v3.0.0',
+        published_at: '2024-03-01T00:00:00Z',
+        prerelease: false,
+        draft: false
+      },
+      {
+        tag_name: 'v2.0.0',
+        published_at: '2024-02-01T00:00:00Z',
+        prerelease: false,
+        draft: false
+      },
+      ...Array.from({ length: 98 }, (_, index) => ({
+        tag_name: `draft-${index}`,
+        published_at: '2024-01-01T00:00:00Z',
+        prerelease: false,
+        draft: true
+      }))
+    ]
+
+    vi.mocked(globalThis.fetch)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => [], headers: new Headers() } as Response)
+
+    const result = await fetchGitHubReleases('owner', 'repo', undefined, lastTranslation)
+
+    expect(globalThis.fetch).toHaveBeenCalledTimes(1)
+    expect(pickLatestTag(result, 'github')).toEqual({ name: 'v3.0.0', committedAt: '2024-03-01T00:00:00Z' })
+    expect(findBaselineTag(result, lastTranslation)).toEqual({ name: 'v2.0.0', committedAt: '2024-02-01T00:00:00Z' })
+  })
+
+  it('다섯 번째 페이지가 가득 차면 불완전한 릴리스 이력을 거부해야 한다', async () => {
+    const page = Array.from({ length: 100 }, (_, index) => ({
+      tag_name: `draft-${index}`,
+      published_at: '2024-01-01T00:00:00Z',
+      prerelease: false,
+      draft: true
+    }))
+
+    vi.mocked(globalThis.fetch)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => page, headers: new Headers() } as Response)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => [], headers: new Headers() } as Response)
+
+    await expect(fetchGitHubReleases('owner', 'repo')).rejects.toThrow('GitHub Releases 조회 제한 초과 (owner/repo): 최대 500건')
+    expect(globalThis.fetch).toHaveBeenCalledTimes(5)
+  })
+
+  it('각 릴리스 요청을 10초 안에 중단하고 저장소를 포함한 오류를 반환해야 한다', async () => {
+    vi.useFakeTimers()
+    try {
+      vi.mocked(globalThis.fetch).mockImplementation((_url, init) => {
+        const { promise, reject } = Promise.withResolvers<Response>()
+        init?.signal?.addEventListener('abort', () => reject(init.signal?.reason), { once: true })
+        return promise
+      })
+
+      const result = expect(fetchGitHubReleases('owner', 'repo')).rejects.toThrow('GitHub Releases 요청 시간 초과 (owner/repo): 10초')
+      await vi.advanceTimersByTimeAsync(47_000)
+      await result
+
+      expect(globalThis.fetch).toHaveBeenCalledTimes(4)
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })
