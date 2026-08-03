@@ -1,15 +1,19 @@
-import { access, readFile, readdir, writeFile } from 'node:fs/promises'
+import { constants as fsConstants } from 'node:fs'
+import { access, lstat, open, readFile, readdir } from 'node:fs/promises'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import process from 'node:process'
 import { dirname, join } from 'pathe'
+import { isAbsolute, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { isReplaceLocalizationPath, readModMeta } from './config/mod-meta'
 import { buildKoreanTargetFileName } from './utils/localization-file-name'
 import { getUpstreamFileHashesPath, readUpstreamFileHashes } from './utils/upstream-file-hashes'
+import { log } from './utils/logger'
 
 const execFileAsync = promisify(execFile)
 const VERIFIED_MARKER_PREFIX = '# PAT verified upstream: '
+const NOFOLLOW_FLAG = process.platform === 'win32' ? 0 : fsConstants.O_NOFOLLOW
 
 type UntranslatedItem = {
   mod?: string
@@ -57,7 +61,102 @@ async function getShortUpstreamRevision(upstreamRoot: string): Promise<string> {
   return stdout.trim()
 }
 
-async function markVerifiedMod(rootDir: string, game: string, mod: string, untranslatedSourcePaths: Set<string>): Promise<number> {
+function isPathInside(rootPath: string, targetPath: string): boolean {
+  const relativePath = relative(resolve(rootPath), resolve(targetPath))
+  return relativePath === ''
+    || (!isAbsolute(relativePath) && relativePath !== '..' && !relativePath.startsWith(`..${sep}`))
+}
+
+async function isSafeMarkerTarget(modDir: string, outputRoot: string, targetPath: string): Promise<boolean> {
+  if (!isPathInside(outputRoot, targetPath) || !isPathInside(modDir, targetPath)) {
+    log.warn(`검증 마커 기록을 건너뜁니다. 출력 경로를 벗어났습니다: ${targetPath}`)
+    return false
+  }
+
+  const pathSegments = relative(resolve(modDir), resolve(targetPath)).split(sep).filter(Boolean)
+  let currentPath = resolve(modDir)
+
+  for (const [index, pathSegment] of pathSegments.entries()) {
+    currentPath = join(currentPath, pathSegment)
+
+    let targetStat
+    try {
+      targetStat = await lstat(currentPath)
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+        return false
+      }
+      throw error
+    }
+
+    if (targetStat.isSymbolicLink()) {
+      log.warn(`검증 마커 기록을 건너뜁니다. 심볼릭 링크는 허용되지 않습니다: ${currentPath}`)
+      return false
+    }
+
+    const isTarget = index === pathSegments.length - 1
+    if (isTarget && !targetStat.isFile()) {
+      log.warn(`검증 마커 기록을 건너뜁니다. 대상 경로가 일반 파일이 아닙니다: ${currentPath}`)
+      return false
+    }
+    if (!isTarget && !targetStat.isDirectory()) {
+      log.warn(`검증 마커 기록을 건너뜁니다. 중간 경로가 일반 디렉토리가 아닙니다: ${currentPath}`)
+      return false
+    }
+  }
+
+  return pathSegments.length > 0
+}
+
+async function markVerifiedFile(
+  modDir: string,
+  outputRoot: string,
+  targetPath: string,
+  revision: string
+): Promise<boolean> {
+  if (!await isSafeMarkerTarget(modDir, outputRoot, targetPath)) {
+    return false
+  }
+
+  try {
+    const readHandle = await open(targetPath, fsConstants.O_RDONLY | NOFOLLOW_FLAG)
+    let content: string
+    try {
+      content = await readHandle.readFile('utf-8')
+    } finally {
+      await readHandle.close()
+    }
+
+    const updatedContent = updateVerifiedMarker(content, revision)
+    if (updatedContent === content) {
+      return false
+    }
+
+    const writeHandle = await open(
+      targetPath,
+      fsConstants.O_WRONLY | fsConstants.O_CREAT | fsConstants.O_TRUNC | NOFOLLOW_FLAG,
+      0o644
+    )
+    try {
+      await writeHandle.writeFile(updatedContent, 'utf-8')
+    } finally {
+      await writeHandle.close()
+    }
+    return true
+  } catch (error) {
+    const errorCode = (error as NodeJS.ErrnoException).code
+    if (errorCode === 'ENOENT') {
+      return false
+    }
+    if (errorCode === 'ELOOP') {
+      log.warn(`검증 마커 기록을 건너뜁니다. 심볼릭 링크는 허용되지 않습니다: ${targetPath}`)
+      return false
+    }
+    throw error
+  }
+}
+
+export async function markVerifiedMod(rootDir: string, game: string, mod: string, untranslatedSourcePaths: Set<string>): Promise<number> {
   const modDir = join(rootDir, game, mod)
   const metaPath = join(modDir, 'meta.toml')
   const upstreamRoot = join(modDir, 'upstream')
@@ -80,7 +179,7 @@ async function markVerifiedMod(rootDir: string, game: string, mod: string, untra
   let updatedFiles = 0
 
   for (const component of meta.upstream.components) {
-    const files: Array<{ sourcePath: string, targetPath: string }> = []
+    const files: Array<{ sourcePath: string, targetPath: string, outputRoot: string }> = []
 
     for (const localizationPath of component.localizationPaths) {
       const sourceDir = join(upstreamRoot, localizationPath)
@@ -109,7 +208,8 @@ async function markVerifiedMod(rootDir: string, game: string, mod: string, untra
         const sourcePath = join(localizationPath, normalizedFile).replace(/\\/g, '/')
         files.push({
           sourcePath,
-          targetPath: join(targetDir, dirname(normalizedFile), buildKoreanTargetFileName(normalizedFile, meta.upstream.language))
+          targetPath: join(targetDir, dirname(normalizedFile), buildKoreanTargetFileName(normalizedFile, meta.upstream.language)),
+          outputRoot: targetDir
         })
       }
     }
@@ -121,20 +221,8 @@ async function markVerifiedMod(rootDir: string, game: string, mod: string, untra
       continue
     }
 
-    for (const { targetPath } of files) {
-      let content: string
-      try {
-        content = await readFile(targetPath, 'utf-8')
-      } catch (error) {
-        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-          continue
-        }
-        throw error
-      }
-
-      const updatedContent = updateVerifiedMarker(content, revision)
-      if (updatedContent !== content) {
-        await writeFile(targetPath, updatedContent, 'utf-8')
+    for (const { targetPath, outputRoot } of files) {
+      if (await markVerifiedFile(modDir, outputRoot, targetPath, revision)) {
         updatedFiles++
       }
     }
