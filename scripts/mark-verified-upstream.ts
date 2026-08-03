@@ -95,8 +95,12 @@ async function isSafeMarkerTarget(modDir: string, outputRoot: string, targetPath
     }
 
     const isTarget = index === pathSegments.length - 1
-    if ((isTarget && !targetStat.isFile()) || (!isTarget && !targetStat.isDirectory())) {
-      log.warn(`검증 마커 기록을 건너뜁니다. 일반 파일 경로가 아닙니다: ${currentPath}`)
+    if (isTarget && !targetStat.isFile()) {
+      log.warn(`검증 마커 기록을 건너뜁니다. 대상 경로가 일반 파일이 아닙니다: ${currentPath}`)
+      return false
+    }
+    if (!isTarget && !targetStat.isDirectory()) {
+      log.warn(`검증 마커 기록을 건너뜁니다. 중간 경로가 일반 디렉토리가 아닙니다: ${currentPath}`)
       return false
     }
   }
