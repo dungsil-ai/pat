@@ -363,7 +363,7 @@ language = "english"
     expect(existsSync(nestedOutput)).toBe(false)
   })
 
-  it('업스트림 파일명이 대소문자만 바뀌면 이전 한국어 파일을 제거해야 함', async () => {
+  it.skipIf(process.platform === 'win32')('업스트림 파일명이 대소문자만 바뀌면 이전 한국어 파일을 제거해야 함', async () => {
     const { processModTranslations } = await import('./translate')
 
     const modDir = join(testDir, 'test-mod')
