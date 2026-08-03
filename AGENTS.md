@@ -24,5 +24,19 @@
 - 사전 정렬: `pnpm sort-dict`
 - 번역 실행: `pnpm ck3`, `pnpm vic3`, `pnpm stellaris`
 
+
+## Agent skills
+
+### Issue tracker
+
+작업 이슈와 PRD는 GitHub Issues에서 관리합니다. 자세한 규칙은 `docs/agents/issue-tracker.md`를 참고합니다.
+
+### Triage labels
+
+트리아지와 계획에는 상태·유형 축의 기본 한국어 라벨을 사용합니다. 매핑은 `docs/agents/triage-labels.md`를 참고합니다.
+
+### Domain docs
+
+단일 컨텍스트 구조를 사용합니다. 도메인 문서 탐색 규칙은 `docs/agents/domain.md`를 참고합니다.
 ---
 필요 시 이 문서는 계속 축약/정리하며, 코드에서 자동으로 검증 가능한 내용은 최대한 제외합니다.

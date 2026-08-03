@@ -25,3 +25,7 @@ package-lock.json
 ### 개인모드 ###
 **/upstream/!*/
 **/mod/localization/korean/!*/
+
+
+### Agent workspace ###
+.agents/
