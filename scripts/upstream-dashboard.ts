@@ -302,11 +302,18 @@ function createDashboardCache(): DashboardCache {
 }
 
 function sleep(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms))
+  const { promise, resolve } = Promise.withResolvers<void>()
+  setTimeout(resolve, ms)
+  return promise
 }
 
 function shouldRetryGitHubResponse(status: number): boolean {
   return status === 429 || status === 500 || status === 502 || status === 503 || status === 504
+}
+
+interface GitHubRequestTimeout {
+  ms: number
+  message: string
 }
 
 function getGitHubRetryDelayMs(response: Response, attempt: number): number {
@@ -334,36 +341,45 @@ function getGitHubRetryDelayMs(response: Response, attempt: number): number {
   return Math.min(1000 * 2 ** attempt, 8000)
 }
 
-async function githubApi<T>(path: string, token?: string): Promise<T> {
+async function githubApi<T>(path: string, token?: string, timeout?: GitHubRequestTimeout): Promise<T> {
   const maxAttempts = 4
 
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    const abortController = timeout ? new AbortController() : undefined
+    const timeoutId = abortController
+      ? setTimeout(() => abortController.abort(new Error(timeout!.message)), timeout!.ms)
+      : undefined
+    let response: Response
+
     try {
-      const response = await fetch(`https://api.github.com${path}`, {
+      response = await fetch(`https://api.github.com${path}`, {
         headers: {
           'Accept': 'application/vnd.github+json',
           'X-GitHub-Api-Version': '2022-11-28',
           ...(token ? { 'Authorization': `Bearer ${token}` } : {})
-        }
+        },
+        ...(abortController ? { signal: abortController.signal } : {})
       })
 
       if (response.ok) {
         return await response.json() as T
       }
-
-      if (shouldRetryGitHubResponse(response.status) && attempt < maxAttempts - 1) {
-        await sleep(getGitHubRetryDelayMs(response, attempt))
-        continue
-      }
-
-      throw new Error(`GitHub API 요청 실패 (${response.status}): ${path}`)
     } catch (error) {
       if (attempt >= maxAttempts - 1) {
         throw error
       }
 
       await sleep(Math.min(1000 * 2 ** attempt, 8000))
+      continue
+    } finally {
+      clearTimeout(timeoutId)
     }
+
+    if (!shouldRetryGitHubResponse(response.status) || attempt >= maxAttempts - 1) {
+      throw new Error(`GitHub API 요청 실패 (${response.status}): ${path}`)
+    }
+
+    await sleep(getGitHubRetryDelayMs(response, attempt))
   }
 
   throw new Error(`GitHub API 요청 실패: ${path}`)
@@ -508,20 +524,27 @@ interface GitHubReleaseResponse {
 
 async function fetchGitHubReleases(owner: string, repo: string, token?: string): Promise<TagInfo[]> {
   const releases: GitHubReleaseResponse[] = []
-  let page = 1
   const perPage = 100
+  const maxPages = 5
 
-  while (true) {
+  for (let page = 1; page <= maxPages; page++) {
     const pageReleases = await githubApi<GitHubReleaseResponse[]>(
       `/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`,
-      token
+      token,
+      {
+        ms: 10_000,
+        message: `GitHub Releases 요청 시간 초과 (${owner}/${repo}): 10초`
+      }
     )
 
     if (pageReleases.length === 0) break
     releases.push(...pageReleases)
 
+    if (page === maxPages && pageReleases.length === perPage) {
+      throw new Error(`GitHub Releases 조회 제한 초과 (${owner}/${repo}): 최대 500건`)
+    }
+
     if (pageReleases.length < perPage) break
-    page += 1
   }
 
   return releases
@@ -869,6 +892,37 @@ async function resolveDashboardRow(
   }
 }
 
+async function resolveDashboardRows(
+  metas: ModMeta[],
+  rootDir: string,
+  token?: string,
+  resolveRow: typeof resolveDashboardRow = resolveDashboardRow
+): Promise<DashboardRow[]> {
+  const rows: DashboardRow[] = []
+  const cache = createDashboardCache()
+
+  for (const meta of metas) {
+    try {
+      rows.push(await resolveRow(meta, rootDir, token, cache))
+    } catch (error) {
+      rows.push({
+        game: meta.game,
+        mod: meta.mod,
+        ...(meta.componentId === undefined ? {} : { componentId: meta.componentId }),
+        ...(meta.componentName === undefined ? {} : { componentName: meta.componentName }),
+        strategy: meta.strategy,
+        trackedBy: 'commit',
+        baselineVersion: '조회 실패',
+        latestVersion: '조회 실패',
+        status: '조회 실패'
+      })
+      process.stderr.write(`[경고] ${meta.game}/${meta.mod}: ${error instanceof Error ? error.message : String(error)}\n`)
+    }
+  }
+
+  return rows
+}
+
 function buildIssueBody(rows: DashboardRow[]): string {
   const timestamp = new Date().toISOString()
   const outdatedRows = rows.filter(row => row.status === '미반영')
@@ -911,27 +965,7 @@ async function main() {
   const token = process.env.GITHUB_TOKEN
 
   const metas = await findModMetas(rootDir)
-  const rows: DashboardRow[] = []
-  const cache = createDashboardCache()
-
-  for (const meta of metas) {
-    try {
-      rows.push(await resolveDashboardRow(meta, rootDir, token, cache))
-    } catch (error) {
-      rows.push({
-        game: meta.game,
-        mod: meta.mod,
-        componentId: meta.componentId,
-        componentName: meta.componentName,
-        strategy: meta.strategy,
-        trackedBy: 'commit',
-        baselineVersion: '조회 실패',
-        latestVersion: '조회 실패',
-        status: '조회 실패'
-      })
-      process.stderr.write(`[경고] ${meta.game}/${meta.mod}: ${error instanceof Error ? error.message : String(error)}\n`)
-    }
-  }
+  const rows = await resolveDashboardRows(metas, rootDir, token)
 
   process.stdout.write(buildIssueBody(rows))
 }
@@ -955,7 +989,8 @@ export {
   pickLatestCommit,
   pickLatestTag,
   resolveComponentTranslationPaths,
-  resolveComponentTranslationTrackingPaths
+  resolveComponentTranslationTrackingPaths,
+  resolveDashboardRows
 }
 
 export type {
