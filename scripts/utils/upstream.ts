@@ -169,22 +169,28 @@ export async function parseMetaTomlConfig(metaPath: string, gameDir: string, mod
  */
 export async function updateUpstreamOptimized(config: UpstreamConfig, rootPath: string): Promise<void> {
   const fullPath = join(rootPath, config.path)
-  
+
   // git 기반이 아닌 일반 파일 업스트림인 경우 건너뛰기
   if (!config.url) {
     log.info(`[${config.path}] 일반 파일 기반 upstream, git 업데이트 건너뛰기`)
     return
   }
-  
+
+  let repositoryExists = true
   try {
-    // 이미 존재하는지 확인
     await access(fullPath)
-    log.info(`[${config.path}] 이미 존재함, 업데이트 확인 중...`)
-    await updateExistingRepository(fullPath, config)
   } catch {
+    repositoryExists = false
+  }
+
+  if (!repositoryExists) {
     log.info(`[${config.path}] 새로 클론 중...`)
     await cloneOptimizedRepository(fullPath, config)
+    return
   }
+
+  log.info(`[${config.path}] 이미 존재함, 업데이트 확인 중...`)
+  await updateExistingRepository(fullPath, config)
 }
 
 /**
@@ -219,6 +225,70 @@ function getGitHubApiHeaders(): Record<string, string> {
 
 interface GitHubReleaseTag {
   tag_name: string
+  published_at?: string | null
+  prerelease?: boolean
+  draft?: boolean
+}
+
+const GITHUB_RELEASES_PER_PAGE = 100
+const GITHUB_RELEASES_MAX_PAGES = 5
+const GITHUB_RELEASES_MAX_ITEMS = GITHUB_RELEASES_PER_PAGE * GITHUB_RELEASES_MAX_PAGES
+const GITHUB_RELEASE_TIMEOUT_MS = 10_000
+
+async function fetchGitHubReleaseJson<T>(
+  apiUrl: string,
+  owner: string,
+  repo: string,
+  configPath: string
+): Promise<{ response: Response, data: T | null }> {
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), GITHUB_RELEASE_TIMEOUT_MS)
+
+  try {
+    const response = await fetch(apiUrl, {
+      headers: getGitHubApiHeaders(),
+      signal: controller.signal
+    })
+    const data = response.ok ? await response.json() as T : null
+    return { response, data }
+  } catch (error) {
+    if (controller.signal.aborted) {
+      throw new Error(
+        `[${owner}/${repo}] GitHub Releases HTTP 시도 ${GITHUB_RELEASE_TIMEOUT_MS / 1000}초 타임아웃: 응답이 완료되지 않아 중단했습니다 (${configPath})`,
+        { cause: error }
+      )
+    }
+    throw error
+  } finally {
+    clearTimeout(timeout)
+  }
+}
+
+async function* fetchGitHubReleasePages(
+  owner: string,
+  repo: string,
+  configPath: string
+): AsyncGenerator<GitHubReleaseTag[]> {
+  for (let page = 1; page <= GITHUB_RELEASES_MAX_PAGES; page++) {
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases?per_page=${GITHUB_RELEASES_PER_PAGE}&page=${page}`
+    const { response, data } = await fetchGitHubReleaseJson<GitHubReleaseTag[]>(apiUrl, owner, repo, configPath)
+    if (!response.ok) {
+      throw new Error(`GitHub API 실패: ${response.status} ${response.statusText} (${configPath})`)
+    }
+
+    const pageReleases = data ?? []
+    yield pageReleases
+
+    if (pageReleases.length < GITHUB_RELEASES_PER_PAGE) {
+      return
+    }
+
+    if (page === GITHUB_RELEASES_MAX_PAGES) {
+      throw new Error(
+        `[${owner}/${repo}] GitHub Releases 목록 조회 제한: ${GITHUB_RELEASES_MAX_PAGES}페이지·${GITHUB_RELEASES_MAX_ITEMS}건을 모두 사용하여 이후 이력을 확인할 수 없습니다 (${configPath})`
+      )
+    }
+  }
 }
 
 async function fetchAllGitHubReleaseTags(
@@ -227,21 +297,33 @@ async function fetchAllGitHubReleaseTags(
   configPath: string
 ): Promise<GitHubReleaseTag[]> {
   const releases: GitHubReleaseTag[] = []
-  const perPage = 100
-
-  for (let page = 1; ; page++) {
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases?per_page=${perPage}&page=${page}`
-    const response = await fetch(apiUrl, { headers: getGitHubApiHeaders() })
-    if (!response.ok) {
-      throw new Error(`GitHub API 실패: ${response.status} ${response.statusText} (${configPath})`)
-    }
-
-    const pageReleases = await response.json() as GitHubReleaseTag[]
+  for await (const pageReleases of fetchGitHubReleasePages(owner, repo, configPath)) {
     releases.push(...pageReleases)
-    if (pageReleases.length < perPage) {
-      return releases
+  }
+  return releases
+}
+
+function isPublicGitHubRelease(release: GitHubReleaseTag): boolean {
+  return Boolean(release.tag_name && release.published_at && !release.prerelease && !release.draft)
+}
+
+async function findFirstPublicGitHubReleaseTag(
+  owner: string,
+  repo: string,
+  configPath: string,
+  tagMatcher: RegExp | null
+): Promise<string | null> {
+  for await (const pageReleases of fetchGitHubReleasePages(owner, repo, configPath)) {
+    const release = pageReleases.find(candidate => (
+      isPublicGitHubRelease(candidate)
+      && (!tagMatcher || tagMatcher.test(candidate.tag_name))
+    ))
+    if (release) {
+      return release.tag_name
     }
   }
+
+  return null
 }
 
 /**
@@ -256,30 +338,25 @@ export async function getLatestReleaseFromGitHub(
   tagPattern?: string
 ): Promise<string | null> {
   try {
-    const headers = getGitHubApiHeaders()
     const tagMatcher = compileTagPattern(tagPattern, configPath)
 
     if (!tagMatcher) {
       // 패턴이 없을 때는 기존 동작과 API 호출 수를 유지합니다.
       const apiUrl = `https://api.github.com/repos/${owner}/${repo}/releases/latest`
       log.info(`[${configPath}] GitHub Releases API 확인 중...`)
-      const response = await fetch(apiUrl, { headers })
+      const { response, data } = await fetchGitHubReleaseJson<{ tag_name: string }>(apiUrl, owner, repo, configPath)
 
-      if (response.ok) {
-        const data = await response.json() as { tag_name: string }
-        if (data.tag_name) {
-          log.info(`[${configPath}] GitHub 최신 릴리즈 발견: ${data.tag_name}`)
-          return data.tag_name
-        }
+      if (response.ok && data?.tag_name) {
+        log.info(`[${configPath}] GitHub 최신 릴리즈 발견: ${data.tag_name}`)
+        return data.tag_name
       }
     }
     
-    // 패턴이 있거나 최신 릴리즈가 없으면 목록에서 조건에 맞는 첫 번째 릴리즈를 가져옵니다.
-    const releases = await fetchAllGitHubReleaseTags(owner, repo, configPath)
-    const release = releases.find(({ tag_name }) => tag_name && (!tagMatcher || tagMatcher.test(tag_name)))
-    if (release) {
-      log.info(`[${configPath}] GitHub 릴리즈 발견: ${release.tag_name}`)
-      return release.tag_name
+    // 패턴이 있거나 최신 릴리즈가 없으면 첫 유효 공개 릴리스를 찾은 페이지에서 종료합니다.
+    const releaseTag = await findFirstPublicGitHubReleaseTag(owner, repo, configPath, tagMatcher)
+    if (releaseTag) {
+      log.info(`[${configPath}] GitHub 릴리즈 발견: ${releaseTag}`)
+      return releaseTag
     }
     
     return null
@@ -290,7 +367,7 @@ export async function getLatestReleaseFromGitHub(
     } else {
       log.debug(`[${configPath}] GitHub Releases API 실패:`, error)
     }
-    return null
+    throw error
   }
 }
 
@@ -382,10 +459,11 @@ async function upstreamRetry<T>(
       return await operation()
     } catch (error) {
       const message = (error as Error).message
-      
+      const isRetryable = message.includes('429 Too Many Requests')
+        || /(?:GitHub API 실패:|HTTP(?:\/\d(?:\.\d)?)?)\s*5\d\d\b/i.test(message)
+
       // 429, 5xx 오류만 재시도
-      if (!message.includes('429 Too Many Requests') && 
-          !message.match(/5[0-9][0-9]/)) {
+      if (!isRetryable) {
         throw error
       }
       
@@ -589,33 +667,38 @@ export async function configureSparseCheckout(
 /**
  * 새 리포지토리를 효율적으로 클론합니다
  */
-async function cloneOptimizedRepository(targetPath: string, config: UpstreamConfig): Promise<void> {
+async function cloneOptimizedRepository(
+  targetPath: string,
+  config: UpstreamConfig,
+  latestRef?: { type: 'tag' | 'branch', name: string }
+): Promise<void> {
   const startTime = Date.now()
-  
+
   // 디렉토리 생성
   await mkdir(dirname(targetPath), { recursive: true })
-  
+
   try {
     // 1. 먼저 태그 정보만 가져와서 최신 태그를 확인
     log.start(`[${config.path}] 리포지토리 정보 확인 중...`)
-    const latestRef = await getLatestRefFromRemote(config.url, config.path, config.versionStrategy)
-    
+    const resolvedLatestRef = latestRef
+      ?? await getLatestRefFromRemote(config.url, config.path, config.versionStrategy)
+
     // 2. Partial clone (blob 없이 메타데이터만) + shallow clone으로 디스크 공간 최소화
     // 최신 태그나 기본 브랜치를 명시적으로 지정하여 클론
-    log.start(`[${config.path}] Partial clone 시작 (${latestRef.type}: ${latestRef.name})...`)
-    await cloneWithFallback(targetPath, config, latestRef)
-    
+    log.start(`[${config.path}] Partial clone 시작 (${resolvedLatestRef.type}: ${resolvedLatestRef.name})...`)
+    await cloneWithFallback(targetPath, config, resolvedLatestRef)
+
     // 3. Sparse checkout 설정
     log.start(`[${config.path}] Sparse checkout 설정 중...`)
     await configureSparseCheckout(targetPath, config)
-    
+
     // 4. 파일 체크아웃
     log.start(`[${config.path}] 파일 체크아웃 중...`)
     await checkoutLatestVersionForShallowClone(targetPath, config.path)
-    
+
     const duration = Date.now() - startTime
     log.success(`[${config.path}] 클론 완료 (${duration}ms)`)
-    
+
   } catch (error) {
     log.error(`[${config.path}] 클론 실패:`, error)
     throw error
@@ -686,10 +769,13 @@ async function updateExistingRepository(repositoryPath: string, config: Upstream
     const { stdout: status } = await execFileAsync('git', ['status', '--porcelain'], { cwd: repositoryPath })
     
     if (status.trim()) {
+      // 릴리스 조회 실패 시 마지막 정상 체크아웃을 잃지 않도록 삭제 전에 참조를 확정합니다.
+      log.start(`[${config.path}] 원격 최신 버전 확인 중...`)
+      const latestRef = await getLatestRefFromRemote(config.url, config.path, config.versionStrategy)
       log.warn(`[${config.path}] 로컬 변경사항이 있어 upstream 저장소를 재클론합니다`)
       // upstream은 캐시 성격의 읽기 전용 데이터이므로, 더 안전하게 전체 재클론합니다
       await rm(repositoryPath, { recursive: true, force: true })
-      await cloneOptimizedRepository(repositoryPath, config)
+      await cloneOptimizedRepository(repositoryPath, config, latestRef)
       return
     }
 
@@ -835,9 +921,17 @@ export async function updateAllUpstreams(rootPath: string, targetGameType?: stri
   
   const startTime = Date.now()
   
-  // 병렬 처리
-  const promises = configs.map(config => updateUpstreamOptimized(config, rootPath))
-  await Promise.all(promises)
+  // 저장소별 실패를 격리해 정상 저장소와 이후 번역 작업을 계속 진행합니다.
+  let failedCount = 0
+  await Promise.all(configs.map(async config => {
+    try {
+      await updateUpstreamOptimized(config, rootPath)
+    } catch (error) {
+      failedCount += 1
+      const message = error instanceof Error ? error.message : String(error)
+      log.warn(`[${config.path}] upstream 갱신 실패로 이 모드만 건너뜁니다: ${message}`)
+    }
+  }))
   
   const duration = Date.now() - startTime
   let scopeMessageComplete = '모든 '
@@ -849,5 +943,9 @@ export async function updateAllUpstreams(rootPath: string, targetGameType?: stri
     scopeMessageComplete = `모든 게임의 ${targetMod} 모드 `
   }
   
-  log.success(`${scopeMessageComplete}upstream 업데이트 완료! (${duration}ms)`)
+  if (failedCount > 0) {
+    log.warn(`${scopeMessageComplete}upstream 업데이트 완료: ${configs.length - failedCount}개 성공, ${failedCount}개 건너뜀 (${duration}ms)`)
+  } else {
+    log.success(`${scopeMessageComplete}upstream 업데이트 완료! (${duration}ms)`)
+  }
 }

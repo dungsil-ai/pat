@@ -88,6 +88,7 @@ describe('upstream 유틸리티', () => {
   afterEach(async () => {
     // 정리
     vi.restoreAllMocks()
+    vi.useRealTimers()
     try {
       await rm(testDir, { recursive: true, force: true })
     } catch (error) {
@@ -294,6 +295,43 @@ tag_pattern = '^SECOND-v'
       expect(execFileCommands.some(command => command.startsWith('git clone '))).toBe(true)
       expect(execFileCommands).toContain('git checkout HEAD')
       expect(execFileCommands.some(command => command.startsWith('git fetch --tags'))).toBe(false)
+    })
+
+    it('릴리스 조회 제한이면 로컬 변경이 있는 기존 체크아웃을 보존해야 함', async () => {
+      const execFileCommands: string[] = []
+      const repoPath = join(testDir, 'ck3/TestMod/upstream')
+      const markerPath = join(repoPath, 'last-good.txt')
+      await mkdir(join(repoPath, '.git'), { recursive: true })
+      await writeFile(markerPath, '마지막 정상 체크아웃')
+
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+        if (args[0] === 'status' && args[1] === '--porcelain') {
+          return { stdout: ' M localization/english/test.yml\n', stderr: '' }
+        }
+        return { stdout: '', stderr: '' }
+      }
+      fetchMock.mockResolvedValue({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => Array.from({ length: 100 }, (_, index) => ({
+          tag_name: `v${index + 1}.0.0`
+        }))
+      })
+
+      // resetModules 뒤 child_process와 fetch 모킹을 적용하려고 동적으로 불러옵니다.
+      const { updateUpstreamOptimized } = await import('./upstream')
+      await expect(updateUpstreamOptimized({
+        url: 'https://github.com/test/repo.git',
+        path: 'ck3/TestMod/upstream',
+        localizationPaths: ['repo/localization/english'],
+        versionStrategy: 'semantic'
+      }, testDir)).rejects.toThrow(/test\/repo.*5페이지.*500건/)
+
+      expect(await readFile(markerPath, 'utf-8')).toBe('마지막 정상 체크아웃')
+      expect(fetchMock).toHaveBeenCalledTimes(5)
+      expect(execFileCommands.some(command => command.startsWith('git clone '))).toBe(false)
     })
 
     it('동일한 참조명이면서 커밋도 동일하면 업데이트를 건너뛰어야 함', async () => {
@@ -571,6 +609,74 @@ tag_pattern = '^SECOND-v'
     })
   })
 
+  describe('전체 저장소 업데이트', () => {
+    it('한 저장소가 조회 제한에 걸려도 새 체크아웃만 건너뛰고 다른 저장소를 완료해야 함', async () => {
+      const failedModPath = join(testDir, 'ck3', 'FailedMod')
+      const healthyModPath = join(testDir, 'ck3', 'HealthyMod')
+      const healthyRepoPath = join(healthyModPath, 'upstream')
+      const execFileCommands: string[] = []
+      await mkdir(failedModPath, { recursive: true })
+      await mkdir(join(healthyRepoPath, '.git'), { recursive: true })
+      await writeFile(join(failedModPath, 'meta.toml'), `
+[upstream]
+url = "https://github.com/test/failed.git"
+localization = ["localization/english"]
+language = "english"
+version_strategy = "semantic"
+`)
+      await writeFile(join(healthyModPath, 'meta.toml'), `
+[upstream]
+url = "https://github.com/test/healthy.git"
+localization = ["localization/english"]
+language = "english"
+version_strategy = "default"
+`)
+
+      fetchMock.mockResolvedValue({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => Array.from({ length: 100 }, (_, index) => ({
+          tag_name: `v${index + 1}.0.0`
+        }))
+      })
+      execFileAsyncHandler = async (_file: string, args: readonly string[] = []) => {
+        execFileCommands.push([_file, ...args].join(' '))
+        if (args[0] === 'status' && args[1] === '--porcelain') {
+          return { stdout: '', stderr: '' }
+        }
+        if (args[0] === 'ls-remote' && args[1] === '--symref') {
+          return { stdout: 'ref: refs/heads/main\tHEAD\n', stderr: '' }
+        }
+        if (args[0] === 'describe' && args.includes('--exact-match')) {
+          throw new Error('fatal: no tag exactly matches')
+        }
+        if (args[0] === 'rev-parse' && args[1] === '--abbrev-ref') {
+          return { stdout: 'main\n', stderr: '' }
+        }
+        if (args[0] === 'ls-remote' && args.includes('refs/heads/main')) {
+          return { stdout: 'commit123\trefs/heads/main\n', stderr: '' }
+        }
+        if (args[0] === 'rev-parse' && args[1] === 'HEAD') {
+          return { stdout: 'commit123\n', stderr: '' }
+        }
+        return { stdout: '', stderr: '' }
+      }
+
+      // resetModules 뒤 파일 시스템·네트워크 모킹을 적용하려고 동적으로 불러옵니다.
+      const { updateAllUpstreams } = await import('./upstream')
+      const { log } = await import('./logger')
+      vi.mocked(log.warn).mockClear()
+
+      await expect(updateAllUpstreams(testDir, 'ck3')).resolves.toBeUndefined()
+      expect(execFileCommands).toContain('git ls-remote --symref https://github.com/test/healthy.git HEAD')
+      await expect(access(join(failedModPath, 'upstream'))).rejects.toBeDefined()
+      expect(vi.mocked(log.warn)).toHaveBeenCalledWith(expect.stringMatching(
+        /ck3\/FailedMod\/upstream.*이 모드만 건너뜁니다.*5페이지.*500건/
+      ))
+    })
+  })
+
   describe('getLatestRefFromRemote', () => {
     it('semantic 전략에서 1.18.1.b 같은 확장 태그를 최신 버전으로 선택해야 함', async () => {
       fetchMock.mockResolvedValueOnce({
@@ -646,6 +752,35 @@ tag_pattern = '^SECOND-v'
       })
     })
 
+    it('semantic 전략은 5페이지가 가득 차면 불완전한 후보를 사용하지 않아야 함', async () => {
+      const fullPage = Array.from({ length: 100 }, (_, index) => ({
+        tag_name: `v${index + 1}.0.0`
+      }))
+
+      for (let page = 0; page < 5; page++) {
+        fetchMock.mockResolvedValueOnce({
+          ok: true,
+          status: 200,
+          statusText: 'OK',
+          json: async () => fullPage
+        })
+      }
+      fetchMock.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
+        json: async () => []
+      })
+
+      const { getLatestRefFromRemote } = await import('./upstream')
+      await expect(getLatestRefFromRemote(
+        'https://github.com/test/test.git',
+        'ck3/Test/upstream',
+        'semantic'
+      )).rejects.toThrow(/test\/test.*5페이지.*500건/)
+      expect(fetchMock).toHaveBeenCalledTimes(5)
+    })
+
     it('github 전략에서 Releases 최신 태그를 반환해야 함', async () => {
       fetchMock.mockResolvedValueOnce({
         ok: true,
@@ -669,6 +804,39 @@ tag_pattern = '^SECOND-v'
         type: 'tag',
         name: 'release-2.0.0'
       })
+    })
+
+    it('GitHub Releases 요청은 10초 후 저장소를 식별하는 타임아웃 오류로 중단되어야 함', async () => {
+      vi.useFakeTimers()
+      const requestState: { signal: AbortSignal | null } = { signal: null }
+      const pendingFetch = Promise.withResolvers<Response>()
+
+      fetchMock.mockImplementation((_url, init?: RequestInit) => {
+        requestState.signal = init?.signal ?? null
+        requestState.signal?.addEventListener('abort', () => {
+          const error = new Error('요청 중단')
+          error.name = 'AbortError'
+          pendingFetch.reject(error)
+        }, { once: true })
+        return pendingFetch.promise
+      })
+
+      // resetModules 뒤 전역 fetch 모킹을 적용하려고 동적으로 불러옵니다.
+      const { getLatestRefFromRemote } = await import('./upstream')
+      const request = getLatestRefFromRemote(
+        'https://github.com/test/test.git',
+        'ck3/Test/upstream',
+        'github'
+      )
+      const expectation = expect(request).rejects.toThrow(/test\/test.*10초.*타임아웃/)
+
+      await vi.advanceTimersByTimeAsync(10_000)
+      if (!requestState.signal?.aborted) {
+        pendingFetch.reject(new Error('요청이 10초 안에 중단되지 않음'))
+      }
+      await expectation
+      expect(requestState.signal?.aborted).toBe(true)
+      expect(fetchMock).toHaveBeenCalledTimes(1)
     })
 
     it('github 전략은 비-GitHub 저장소에서 오류를 발생시켜야 함', async () => {
@@ -711,23 +879,42 @@ tag_pattern = '^SECOND-v'
       })
     })
 
-    it('github 전략은 첫 100개 뒤의 컴포넌트 릴리즈까지 조회해야 함', async () => {
+    it('github 전략은 첫 유효 공개 릴리스를 찾은 페이지에서 즉시 종료해야 함', async () => {
+      const publicRelease = (tagName: string) => ({
+        tag_name: tagName,
+        published_at: '2026-08-03T00:00:00Z',
+        prerelease: false,
+        draft: false
+      })
+      const secondPage = [
+        { ...publicRelease('SPA-v2.0.0'), draft: true },
+        { ...publicRelease('SPA-v2.0.0-beta.1'), prerelease: true },
+        { ...publicRelease('SPA-v1.13.0'), published_at: null },
+        publicRelease('SPA-v1.12.3'),
+        ...Array.from({ length: 96 }, (_, index) => publicRelease(`SEA-v2.0.${index}`))
+      ]
+
       fetchMock
         .mockResolvedValueOnce({
           ok: true,
           status: 200,
           statusText: 'OK',
-          json: async () => Array.from({ length: 100 }, (_, index) => ({
-            tag_name: `SEA-v1.0.${index}`
-          }))
+          json: async () => Array.from({ length: 100 }, (_, index) => publicRelease(`SEA-v1.0.${index}`))
         })
         .mockResolvedValueOnce({
           ok: true,
           status: 200,
           statusText: 'OK',
-          json: async () => [{ tag_name: 'SPA-v1.12.3' }]
+          json: async () => secondPage
+        })
+        .mockResolvedValueOnce({
+          ok: true,
+          status: 200,
+          statusText: 'OK',
+          json: async () => []
         })
 
+      // resetModules 뒤 전역 fetch 모킹을 적용하려고 동적으로 불러옵니다.
       const { getLatestRefFromRemote } = await import('./upstream')
       await expect(getLatestRefFromRemote(
         'https://github.com/test/mod-pack.git',
@@ -738,6 +925,7 @@ tag_pattern = '^SECOND-v'
         type: 'tag',
         name: 'SPA-v1.12.3'
       })
+      expect(fetchMock).toHaveBeenCalledTimes(2)
       expect(fetchMock).toHaveBeenNthCalledWith(
         2,
         'https://api.github.com/repos/test/mod-pack/releases?per_page=100&page=2',
