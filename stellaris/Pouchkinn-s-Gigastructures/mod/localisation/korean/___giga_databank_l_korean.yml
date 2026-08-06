@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: c0f3c03
+# PAT verified upstream: 0f1f2b0
   concept_giga_sr_amb_megaconstruction: "$giga_sr_amb_megaconstruction$" # 10656267218600674638
   concept_giga_sr_amb_megaconstruction_desc: "£giga_sr_amb_megaconstruction£ §H$giga_sr_amb_megaconstruction$§!은 엄청난 수준의 인장 응력을 견딜 수 있는 첨단 소재로, 가장 거대한 우주 구조물 건설에 필수적입니다.\n\n이 소재의 수입이 높을수록 ['concept_megastructures']가 더 빨리 건설될 수 있습니다. 이 소재는 진행 중인 모든 메가스트럭처에 §H분할§!되므로, 여러 메가스트럭처를 동시에 건설하면 전체 건설 속도가 §H느려집니다§!. 따라서 이는 병렬 메가스트럭처 건설 능력에 대한 '소프트' 상한선 역할을 합니다.\n\n또한, 대부분의 메가스트럭처는 이 소재에 대한 §H유지 비용§!을 가지며, 더 큰 구조물일수록 유지 비용이 더 높습니다.\n\n증가시키려면:\n- £building£ ['building:building_giga_megaworkshop_hub'] 또는 £building£ ['building:building_giga_megaworkshop'] 건설\n- 초인장(Supertensile) 매장량이 있는 ['concept_celestial_objects']에 £mining_station£ ['concept_mining_stations'] 건설" # 2827306055790404558
   concept_giga_sr_bulk_matter: "$giga_sr_bulk_matter$" # 6800225078457907568

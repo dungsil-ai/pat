@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: c0f3c03
+# PAT verified upstream: 0f1f2b0
   feature_bulk_matter: "§H기능 해금:§! 행성 해체" # 3475806900253855463
   feature_bulk_matter_desc: "행성 전체를 해체하여 가장 큰 거대 구조물 건설에 필요한 대규모 자원인 £giga_sr_bulk_matter£ §H$giga_sr_bulk_matter$§!를 얻는 ['concept_decisions']를 잠금 해제합니다." # 1476625952622396483
   giga_tech_ring_world_swap: "$utopia.2000.name$" # 15803509627943715941

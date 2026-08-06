@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: c0f3c03
+# PAT verified upstream: 0f1f2b0
   header_01_gigac: "§G초거대 구조물§!" # 10753055230619434190
   header_01_gigac_desc: "$header_01_gigac$\n이 기술은 너무 거대해서 이제 거대 구조공학으로 분류될 수 있는 거대 구조물을 잠금 해제합니다." # 6868045731907895636
   header_02_tetra: "§B사차원 공학§!" # 16667408771422790121
@@ -64,7 +64,7 @@
   allow_penrose_stabilize: "§H기능 해금:§! $name_penrose$ 안정화" # 8086629237708699344
   desc_penrose_stabilize: "에너지 생성형 $name_penrose$를 안정화하여 에너지 생산량을 대폭 증대시킵시다." # 7821200497716525732
   allow_penrose_ringworld: "§H기능 잠금 해제:§! $name_penrose$ 링월드" # 2621609253431844385
-  desc_penrose_ringworld: "안정화된 $name_penrose$ 주변에 건설되었으며, 구체 자체에서 동력을 공급받는 링월드입니다.\n이 링월드의 일부 기반 시설은 구체 자체에 통합될 수 있어, 더 많은 거주 가능한 구역을 확보할 수 있습니다.\n\n$name_penrose_ring$는 고유한 §Y발전§!, §Y농업§!, 그리고 §Y연구§! 구역을 보유합니다. 35개 구역을 수용할 수 있습니다." # 12533579669090904511
+  desc_penrose_ringworld: "$penrose_sphere_3$ 주위에 건설되어 구체 자체로부터 동력을 공급받는 링월드입니다.\n\n§R플레이어 참고 사항:§! 건설선에 $ringworld_uppercase$ 건설을 지시하기 위해 블랙홀을 선택할 수 없는 경우, $penrose_sphere_3$을 선택하고 거대 구조물 UI의 §H천체 강조§! 버튼을 누르십시오. 그런 다음 $ringworld_uppercase$ 건설을 위해 블랙홀을 선택할 수 있을 것입니다." # 15217992233746848603
   name_penrose: "펜로즈 구체" # 16460377614709249270
   allow_penrose: "§H메가스트럭처 잠금 해제:§! $name_penrose$" # 7445049271806757517
   desc_penrose_sphere: "블랙홀 주변에 건설된 거대한 거울로, 초방사 산란을 활용하여 블랙홀로 에너지를 생산합니다.\n현 기술 수준으로는 아주 강력한 폭탄으로 사용하거나 약간의 에너지를 생산할 수 있지만, 이를 발전기로 안정적으로 사용하기 위해서는 추가 연구가 필요합니다." # 17432321517638083236
@@ -257,6 +257,7 @@
   requires_no_birch: "$TRIGGER_FAIL$자작나무 행성 주위에는 건설할 수 없습니다." # 2800685464712805854
   requires_star: "$TRIGGER_FAIL$항성 주위에 건설해야 합니다." # 1729494943530620024
   requires_cplanet: "$TRIGGER_FAIL$$ehof_the_sphere_named$ 위에 건설해야 합니다." # 8611990849873193403
+  requires_not_cplanet_system: "$TRIGGER_FAIL$$ehof_the_sphere_named$ 성계에서는 건설할 수 없습니다." # 8112540140089105918
   requires_no_existing_megastructure_system: "$TRIGGER_FAIL$ 성계에 기존 거대 구조물이 존재하여 건설할 수 없습니다." # 18055699115613418147
   requires_no_existing_ehof: "$TRIGGER_FAIL$$ehof_ehof$은 두 개 이상 건설할 수 없습니다." # 9706012822778682463
   requires_non_habitable_planet: "거주 가능 행성에 건설할 수 없습니다." # 12974671740113615138
@@ -287,6 +288,8 @@
   must_build_around_dwarf: "$TRIGGER_FAIL$갈색 왜성 주변에 건설해야 합니다." # 2058936749010991208
   must_build_around_moon: "$TRIGGER_FAIL$달 주변에 건설해야 합니다." # 17723479186150154241
   must_not_be_disco_moon: "$TRIGGER_FAIL$$name_discomoon$이(가) 이미 여기에 존재합니다." # 16057151724360447538
+  disco_moon_not_enough_bulk_matter: "$TRIGGER_FAIL$$name_discomoon$의 위성을 건설하려면 더 많은 £giga_sr_bulk_matter£ $concept_giga_sr_bulk_matter$이(가) 필요합니다." # 15509136260666582181
+  disco_moon_planet_has_moon_candidate: "이 행성은 이미 유효한 $name_discomoon$ 후보를 가지고 있습니다." # 17966405986698971035
   must_build_around_molten: "$TRIGGER_FAIL$용암 세계 주위에 건설해야 합니다." # 13996423726101200310
   must_build_around_shattered: "$TRIGGER_FAIL$파편화되거나 파괴된 세계 주변에 건설해야 합니다." # 11064995890552179174
   must_build_around_habitable_planet: "유인 행성 주변에 건설해야 합니다." # 12359050995090883323
@@ -345,7 +348,7 @@
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
   giga_menu.1.name: "" # 17241709254077376921
-  giga_menu.1.desc: "v 3.39.1" # 18278784130430815812
+  giga_menu.1.desc: "v 3.39.3" # 2692431133779478838
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -482,11 +485,14 @@
   giga_menu.2.desc: "$giga_menu.2.name$\n\n§E게임 시작 설정§!\n[root.giga_setting_fe_planetcrafts]\n[root.giga_setting_fed]\n[root.giga_setting_achievements]\n\n§E은하 중심 설정§!\n[root.giga_setting_aeternum]\n[root.giga_setting_core]\n\n§E사건의 지평선 오프셋 시설§!\n$giga_menu.ehof$\n[root.giga_setting_ehof_ai]\n\n§E화합물§!\n[root.giga_setting_compound]\n\n§E카첸 제국§!\n$giga_menu.katzen$\n$giga_menu.katzen_portraits$\n\n§E메가스트럭처 설정§!\n[root.giga_setting_build_cap]\n[root.giga_setting_scaling_dyson]\n[root.giga_setting_scaling_lifter]\n[root.giga_setting_scaling_brain]\n[root.giga_setting_influence]\n[root.giga_setting_habitats]\n\n§E블로캇츠§!\n$giga_menu.blokkats$\n$giga_menu.blokkats_date$\n$giga_menu.blokkats_portraits$\n$giga_menu.blokkats_guarantee$" # 13626140455240164399
   giga_menu.3.desc: "§E바닐라 거대 구조물§!\n$giga_menu.vanilla_dyson$\n$giga_menu.vanilla_dyson_swarm$\n$giga_menu.vanilla_interstellar$\n$giga_menu.vanilla_matter$\n$giga_menu.vanilla_art$\n$giga_menu.vanilla_shipyard$\n$giga_menu.vanilla_ringworld$\n$giga_menu.vanilla_nexus$\n$giga_menu.vanilla_strategic$\n$giga_menu.vanilla_array$\n\n§E링월드 옵션§!\n$giga_menu.ringworlds$\n$giga_menu.upgrade$\n\n§E기가스트럭처§!\n$giga_menu.alderson$\n$giga_menu.asteroid_manufactory$\n$giga_menu.terraform_toxic$\n$giga_menu.drill$\n$giga_menu.warmoon$\n$giga_menu.warplanet$\n$giga_menu.birch$\n$giga_menu.crystal$\n$giga_menu.terraform_barren$\n$giga_menu.shipyard$\n$giga_menu.suppressor$\n$giga_menu.geothermal$\n$giga_menu.glue$\n$giga_menu.hraemc$\n$giga_menu.hyperstructural_ass$\n$giga_menu.stellarhabitat$\n$giga_menu.kugel$\n$giga_menu.disco_moon$\n$giga_menu.terraform_gasgiant$" # 17982694604117199896
   giga_menu.4.desc: "$giga_menu.megabase$\n$giga_menu.matrioshka_brain$\n$giga_menu.gigaforge$\n$giga_menu.ndb$\n$giga_menu.nidavellir$\n$giga_menu.orbital_arcologies$\n$giga_menu.orbital_artificial_eco$\n$giga_menu.orbital_naval_logistics$\n$giga_menu.penrose_sphere$\n$giga_menu.planetary_computer$\n$giga_menu.psychic_beacon$\n$giga_menu.siphon$\n$giga_menu.quasistellar$\n$giga_menu.supermassive_ehof$\n$giga_menu.lifters$\n$giga_menu.storm_observatory$\n$giga_menu.systemcraft$\n$giga_menu.compressor$\n$giga_menu.succ$\n$giga_menu.the_vat$\n$giga_menu.orchid$\n$giga_menu.maginot$\n$giga_menu.planetaryshipyard$\n$giga_menu.planetary_seeder_nexus$" # 17304898161752518498
-  giga_chk_fe_planetcrafts_0: "£menu_fe_planetcrafts_0£§RFallen Empire Celestials: §B없음§!" # 3513712216372731405
-  giga_chk_fe_planetcrafts_1: "£menu_fe_planetcrafts_1£§GFallen Empire Celestials: §GREGULAR§!" # 11221908132566709964
-  giga_chk_fe_planetcrafts_2: "£menu_fe_planetcrafts_2£§GFallen Empire Celestials: §Y높음§!" # 5619891045949575790
-  giga_chk_fe_planetcrafts_3: "£menu_fe_planetcrafts_3£§GFallen Empire Celestials: §HEXTREME§!" # 1994502928769342107
-  giga_chk_fe_planetcrafts_4: "£menu_fe_planetcrafts_4£§G몰락 제국 천상 존재: §R헬!§!" # 13788329227631679972
+  giga_chk_fe_planetcrafts_0: "£menu_fe_planetcrafts_0£§R몰락 제국 천체: §ENONE§!" # 8603469340202675799
+  giga_chk_fe_planetcrafts_1: "£menu_fe_planetcrafts_1£§G몰락 제국 천체: §BLOW§!" # 352991989017057385
+  giga_chk_fe_planetcrafts_2: "£menu_fe_planetcrafts_2£§G몰락 제국 천체: §GREGULAR§!" # 7880071226819658264
+  giga_chk_fe_planetcrafts_3: "£menu_fe_planetcrafts_3£§G몰락 제국 천체: §YHIGH§!" # 11411556183176476879
+  giga_chk_fe_planetcrafts_4: "£menu_fe_planetcrafts_4£§G몰락 제국 천체: §HEXTREME§!" # 6227827940069490947
+  giga_chk_fe_planetcrafts_5: "£menu_fe_planetcrafts_5£§G몰락 제국 천체: §RHELL!§!" # 2003322661803809742
+  giga_chk_fe_planetcrafts_6: "£menu_fe_planetcrafts_6£§G몰락 제국 천체: §rLETHAL!!§!" # 3806514519938478077
+  giga_chk_fe_planetcrafts_7: "£menu_fe_planetcrafts_7£§G몰락 제국 천체: §MTARTARUS!!!§!" # 18164888265271579083
   giga_chk_achievements_disabled: "£menu_disabled£§R업적§!" # 4508025123322428670
   giga_chk_achievements_noeffect: "£menu_reset£§Y업적§!" # 16716983587009542093
   giga_chk_achievements_enabled: "£menu_enabled£§G업적§!" # 597814497286559682
@@ -517,7 +523,7 @@
   giga_chk_blokkats_endtech: "£blokkat_diff_et£§G블로캇 난이도 (§PEndTekk§!)§!" # 15580103539358710636
   giga_chk_blokkats_bismuth: "£blokkat_diff_bi£§G블로캇 난이도 (§HBismuth§!)§!" # 4620901352263095056
   giga_chk_blokkats_normal: "£blokkat_diff_no£§G블로캇 난이도 (§G보통§!)§!" # 8215079901478199418
-  giga_chk_blokkats_easy: "£blokkat_diff_ea£§G블로캇 난이도 (§B블로킷 종족§!)§!" # 8763131017828207887
+  giga_chk_blokkats_easy: "£blokkat_diff_ea£§G블로카트 난이도 (§B블로키텐§!)§!" # 16332482028225676944
   giga_chk_blokkats_very_easy: "£blokkat_diff_ve£§G블로캇 난이도 (§E블로클렛츠§!)§!" # 5621157935560753559
   giga_chk_blokkats_disabled: "£menu_disabled£§R블로캇 난이도 (§R비활성화됨§!)§!" # 4613477597994122486
   giga_chk_galactic_core_disabled: "£menu_disabled£§R은하핵§!" # 10413416063675002455
@@ -1115,7 +1121,16 @@
   interstellar_habitat_completed_core_DESC: "$interstellar_habitat_3_DESC$" # 13790607078766302357
   building_giga_interstellar_hydroponic_farm: "수경재배 농장 단지" # 15530836119576723403
   building_giga_interstellar_hydroponic_farm_desc: "고리 세계 인구에게 신선한 식량을 공급하는 광활한 수경재배 농장 단지입니다. 하지만 이 시설들에도 한계가 있어 영원히 증가하는 인구를 부양할 수는 없습니다." # 9017699562210738794
-  relic_penrose_sphere_1_MEGASTRUCTURE_DETAILS: "디버그" # 143360522173664303
+  origin_penrose_ring: "부서진 지평선" # 1092506649304174559
+  origin_penrose_ring_desc: "이 문명은 수많은 수레기 전에 건설되어 이제는 폐허가 된 §H$penrose_sphere_2$§! 주위의 §H$ringworld_uppercase$§!에 거주합니다. 성계 중심의 $penrose_sphere_2$가 자체적으로 고장 났는지 아니면 외부의 공격자에 의해 파괴되었는지는 이 문명에게는 이미 오래전에 잊혀진 사실이지만, 그럼에도 그들은 별들을 향해 다시 나아갑니다." # 11476916134213980826
+  origin_penrose_ring_effects: "- $HOMEWORLD$ ['concept_pc_shattered_ring']$NEW_LINE$- $HOME_SYSTEM$ ['concept_giga_relic_penrose_sphere']$NEW_LINE$- ['concept_guaranteed_colonies']: £blocker£ §R장애물§!이 있어 £mod_pop_environment_tolerance£ 거주 적합도가 감소하는 식민지 개척 가능한 링월드 구획으로 대체됨 $NEW_LINE$- $SPECIES_TRAITS$ ['concept_ring_preference']" # 2060743988391889781
+  giga_penrose_start_NAME: "이터니티" # 2205286544999464608
+  giga_penrose_start_DESC: "$origin_penrose_ring$ 기원을 사용할 때 항상 시작 성계가 됩니다." # 2218723449841206720
+  relic_penrose_sphere: "잔해 펜로즈 구체" # 8779124454451675074
+  relic_penrose_sphere_DESC: "거의 치명적인 손상을 입은 고대의 펜로즈 구체입니다. 제때 수리하지 않으면 구조물이 결국 파괴되겠지만, 여전히 미량의 에너지를 수집할 수 있습니다." # 10487480323383314866
+  relic_penrose_sphere_MEGASTRUCTURE_DETAILS: "디버그" # 143360522173664303
+  concept_giga_relic_penrose_sphere: "$relic_penrose_sphere$" # 2373730193797130297
+  concept_giga_relic_penrose_sphere_desc: "$relic_penrose_sphere_DESC$" # 3226896667865302215
   penrose_rename_capital: "[prevprev.GetName]" # 16481157158238333085
   penrose_rename_planet_01: "[solar_system.GetName] I" # 4784310024163794465
   penrose_rename_planet_02: "[solar_system.GetName] II" # 13375840562846818995
@@ -1380,9 +1395,6 @@
   giga_has_ringworld_behemoth: "[root.has_ringworld_behemoth]" # 11657363644695048469
   giga_ringworld_behemoth_yes: "§G$name_ringworld_behemoth$§!" # 9450599010459994538
   giga_ringworld_behemoth_no: "§R$name_ringworld_behemoth$§!" # 16487461959440464992
-  giga_has_penrose_ring: "[root.has_penrose_ring]" # 5558037297074911871
-  giga_penrose_ring_yes: "§G펜로즈 링§!" # 9316712433027376496
-  giga_penrose_ring_no: "$name_penrose_ring$" # 1713237224267328928
   giga_has_war_planet: "[root.has_war_planet]" # 17824921713345653759
   giga_war_planet_yes: "§G$name_war_planet$§!" # 3726954676466165065
   giga_war_planet_no: "§R$name_war_planet$§!" # 10496295639486364759
@@ -2107,9 +2119,6 @@
   mod_pc_disco_moon_habitability: "달의 스페쿨로리프랙터 거주 적합도" # 14994187608175733557
   trait_pc_disco_moon_preference: "월면 거울굴절기 선호" # 43664140320079471
   trait_pc_disco_moon_preference_desc: "§L기후 선호도는 유전적 수준에서, 오랜 진화 또는 숙련된 조작에 의해 결정됩니다.§!" # 10673154622792081431
-  mod_pc_giga_penrose_habitable_habitability: "펜로즈 거주 적합도" # 1780946728719660994
-  trait_pc_giga_penrose_habitable_preference: "펜로즈 선호" # 5355118181709047175
-  trait_pc_giga_penrose_habitable_preference_desc: "§L기후 선호도는 유전적 수준에서, 오랜 진화 또는 숙련된 조작에 의해 결정됩니다.§!" # 10673154622792081431
   mod_pc_giga_planetary_computer_habitability: "행성 컴퓨터 거주 적합도" # 16546440687428164176
   trait_pc_giga_planetary_computer_preference: "행성 컴퓨터 선호" # 2062870186728230674
   trait_pc_giga_planetary_computer_preference_desc: "§L기후 선호도는 유전적 수준에서, 오랜 진화 또는 숙련된 조작에 의해 결정됩니다.§!" # 10673154622792081431
@@ -2735,8 +2744,6 @@
   pc_ringworld_habitable_shrouded_desc: "거대한 띠가 항성계의 태양을 둘러싸고 있습니다.\n행성에 갇힌 구형 존재의 제약과 평범함에서 벗어나, 내부를 따라 수많은 인공 거주 구역을 조성하기 위해 건설되었습니다. 그러나 현재는 장막의 격렬한 에너지에 휩싸여 거주할 수 없게 되었습니다." # 3435984219309728604
   pc_squareworld_shrouded_habitable: "장막에 싸인 사각 세계" # 1677284224659841172
   pc_squareworld_shrouded_habitable_desc: "정사각형 행성에 위치한 특이한 서식지입니다. 한때 기이했던 이곳의 광경과 자연은 장막의 혼돈스러운 에너지로 인해 뒤틀리고 위험하며 제어 불가능하게 변모했습니다." # 9947877200566596069
-  pc_giga_penrose_shrouded_habitable: "장막의 $name_penrose_ring$" # 15649034236764782576
-  pc_giga_penrose_shrouded_habitable_desc: "포획된 블랙홀을 둘러싸는 거대한 구조물입니다. $name_penrose$는 이 링월드에 동력을 공급하고 표면에서의 생명 유지에 필요한 에너지를 제공하며, 행성 기반 존재의 제약과 평범함에서 벗어나게 합니다. 비록 한때 거주 가능했던 링의 일부는 쉐이드의 길들여지지 않은 에너지에 휩싸여 거주 불가능한 상태가 되었습니다." # 10075631710335290583
   pc_shrouded_equatorial_shipyard: "장막 주조 링월드" # 13299251870951084198
   pc_shrouded_equatorial_shipyard_desc: "$name_eq_shipyard$의 내부인 이 링월드는 용해 행성 지각에서 희귀 광물을 추출하여 이를 직접 합금으로 정제하는 데 특화되어 있습니다. 이 링에서 발견될 수 있었던 생명체의 작은 잠재력은 이제 사라졌고, 소용돌이치는 장막 에너지의 조류로 대체되었습니다." # 17637023053284785928
   pc_interstellar_shrouded_ringworld_habitable: "장막의 $name_interstellar_ring$" # 6625488095661945217
@@ -6437,7 +6444,7 @@
   concept_giga_aeternum_diff_easy: "§G알파§! 아에테르눔" # 7925145107339976652
   concept_giga_aeternum_diff_normal: "§M레귤러§! 아에테르눔" # 6768328503201148810
   concept_giga_aeternum_diff_azure: "§B아주르§! 아에테르눔" # 12204800423034466114
-  concept_giga_aeternum_diff_omega: "§R오메가§! 아에테르눔" # 17994220948151289684
+  concept_giga_aeternum_diff_omega: "§ROmega§! 아에테룸" # 16339081961119947786
   concept_giga_aeternum_diff_easy_desc: "$giga_galactic_core_aeternum_1$" # 15413169619462362799
   concept_giga_aeternum_diff_normal_desc: "$giga_galactic_core_aeternum_2$" # 17611227053729579802
   concept_giga_aeternum_diff_azure_desc: "$giga_galactic_core_aeternum_3$" # 5395288438011438660
@@ -7293,10 +7300,10 @@
   giga_disco.120.b.tooltip: "§Y[giga_pronight_protests_planet.GetName]§! 위에 비추는 §YLunar Speculorefractor§!가 §YLunar Lightshow§!로 설정될 것입니다.\n\n향후 §Y10 years§! 동안 §YNo-Night Protocols§!을 재시행할 수 없을 것입니다." # 5542324901311905939
   pronight_protests: "밤 선호 시위" # 16113731005521366308
   pronight_protests_desc: "이 행성의 인구가 야간 금지 규약의 폐지를 요구하고 있습니다." # 7043835769149227744
-  giga_disco_nonight_guide: "§H메가스트럭처 효과:§!\n§R+100% 유지비\n+15% 실패 확률§!\n\n§H행성계 효과:§!\n§G+40% 자원 생산\n-30% 범죄§!\n§R-20 안정도\n-15% 생체 행복도\n-20% 거주 적합도\n폭동을 유발할 수 있음!§!\n\n\n§L현대에 밤은 단순히 생산성을 저해하는 요소이며, 우리는 이에 맞춰 행성 일정을 짜야만 했습니다.\n행성 궤도에 교묘하게 배치된 일련의 거울과 보다 강력한 스페큘로리프랙터 조명을 결합하면 지역 행성계의 모든 천체들이 무한한 낮을 누릴 수 있게 될 것입니다.§!" # 6607530934212428568
-  giga_disco_repro_guide: "§HEffects on megastructure:§!\n§R+50% 유지 비용\n+5% 실패 확률§!\n\n§HEffects on planetary system:§!\n§G+30% 팝 성장 속도\n+20% 생물 행복도§!\n§R-5 안정도\n+10% 소비재 유지 비용\n-10% 자원 생산량§!\n\n\n§LLighting can play a surprisingly important role when it comes to reproduction. By attuning the Speculorefractor to local reproductive seasons and habits, we can ensure that population growth is maximized across the local planetary system.§!" # 17970204580000922295
-  giga_disco_indoc_guide: "§HEffects on megastructure:§!\n§R+50% 유지 비용\n+10% 실패 확률§!\n\n§HEffects on planetary system:§!\n§G+200% 정부 윤리 매력\n+15 안정도\n-50% 범죄율§!\n§R-10% 팝 성장 속도§!\n\n\n§L많은 종족의 신경망은 다양한 유형의 빛에 다르게 반응하도록 연결되어 있습니다. 따라서 저희의 특수 반사경이 특정 간격과 특정 파장으로 빠르면서도 미묘한 섬광을 방출함으로써, 지역 주민들의 온순함을 극적으로 높일 수 있습니다.§!" # 6895418913767662748
-  giga_disco_lightshow_guide: "§행성계에 미치는 효과:§!\n§G편의성 +35%\n통합 산출량 +25%\n행복도 +10%\n교역 가치 +25%\n정부 윤리 매력 +25%§!\n\n\n§L밤하늘에 빛나는 쇼와 오로라를 방출하여, 우리 제국의 국기와 색상을 나타내도록 조정함으로써, 우리는 현지 주민들의 만족도를 높이고 애국심을 고취시킬 수 있습니다. 다만, 행성의 자연적인 광도 수준이 약간 불안정해질 수 있습니다.§!" # 17200862575769257896
+  giga_disco_nonight_guide: "§HEffects on megastructure:§!\n§R+100% 유지비\n\n§HEffects on planetary system:§!\n§G+20% 직업 효율\n-30% 범죄§!\n§R-15 안정도\n-15% 생물학적 행복도\n-20% 거주적합도\n사회적 불안을 유발할 수 있습니다!§!\n\n\n§L이 시대에 야간이란 단순히 생산성을 저해하는 요소일 뿐이며, 우리는 이에 맞춰 행성 일정을 짜야 합니다.\n행성 궤도에 정교하게 배치된 거울 거울 배열을 더욱 강화된 스펙룰로프랙터 조명과 결합하면, 해당 행성계의 모든 천체가 무한한 낮을 누릴 수 있게 될 것입니다.§!" # 9510401061649669410
+  giga_disco_repro_guide: "§HEffects on megastructure:§!\n§R+100% 유지비\n\n§HEffects on planetary system:§!\n§G+30% 팝 성장 속도\n+15% 생물학적 행복도§!\n§R-5 안정도\n+10% 소비재 유지비\n-10% 자원 생산량§!\n\n\n§L번식에 있어서 조명은 놀라울 정도로 중요한 역할을 할 수 있습니다. 스펙룰로프랙터를 지역의 번식기 및 습성에 맞추어 조율함으로써, 해당 행성계 전역에서 인구 성장이 극대화되도록 보장할 수 있습니다.§!" # 697750429094612636
+  giga_disco_indoc_guide: "§HEffects on megastructure:§!\n§R+50% 유지비\n\n§HEffects on planetary system:§!\n§G+200% 정부 윤리관 매력도\n+10 안정도\n-50% 범죄§!\n§R-10% 팝 성장 속도§!\n\n§L많은 종족의 신경망은 서로 다른 종류의 빛에 다르게 반응하도록 배선되어 있습니다. 따라서 스펙룰로프랙터가 특정 간격과 특정한 파장으로 빠르지만 은밀하게 빛을 깜빡이게 함으로써, 현지 인구의 순치성을 극적으로 증가시킬 수 있습니다.§!" # 4353865268228821054
+  giga_disco_lightshow_guide: "§HEffects on planetary system:§!\n§G+30% 편의도\n+25% 통합 산출량\n+10% 행복도\n+25% 무역 가치\n+25% 정부 윤리관 매력도§!\n\n\n§L우리 제국의 국기와 색상을 나타내도록 조율된 찬란한 빛의 쇼와 오로라를 밤하늘에 뿜어냄으로써, 행성의 자연스러운 조명 수준이 살짝 불안정해지는 대가로 현지 인구의 만족도를 높이고 애국심을 고취할 수 있습니다.§!" # 15542283709666949423
   disco_moon_repro_modifier: "번식 촉진" # 1303603662946604153
   disco_moon_repro_modifier_desc: "이 행성계의 달 특수 반사경이 지역 생물 개체군의 번식을 촉진하고 있습니다." # 628959165508047523
   disco_moon_indoc_modifier: "잠재의식적 교화" # 3318508239606020649
@@ -7935,7 +7942,7 @@
   giga_blokkats_normal: "블로캇 (§G일반 블로캇§!)\n블로캇은 기본 강도를 가집니다.\n\n§Y블로캇-베스터§!는 §Y1회§! 부활하며, 총 §Y8억§!의 HP를 가집니다.\n§Y초공간 불안정기§!를 활성화하는 데는 기본적으로 §Y600k§! £energy£가 소모됩니다.\n\n§Y블로캇 프로토콜§!을 완료하는 데 §Y5천만 에너지§!가 소모되며, §G블로캇 의지§!는 §Y0%§!에서 시작합니다.\n\n§H§YNew Ship Classes§!나 §YExtra Ship Components§!와 같은 강력한 모드와 함께 사용하도록 균형 조정되었습니다.§!" # 11942585746980252445
   giga_blokkats_bismuth: "블로캣 (§R비스무트 블로캣§!)\n블로캣이 §R상당히 강력해§!집니다.\n\n다음과 같은 효과를 받습니다:\n§Y무기 피해 +200%\n함선 연사 속도 +200%\n함선 선체/장갑/보호막 내구도 +200%\n함선 속도 +50%\n거대 구조물 건설 속도 +50%\n육군 피해/체력/사기 +200%§!\n\n§Y블로캣-베스터§!는 §Y4번§! 부활하며, 총 §Y20억§!의 내구도를 가집니다.\n§Y블록-해체자§!의 수가 §Y2배§!가 됩니다.\n§Y초차원 불안정화 장치§! 활성화 기본 비용은 §Y150만§! £energy£입니다.\n블로캣 연구 속도가 §Y75%§! 느려집니다.\n역설계된 블로캣 무기/장갑/보호막의 유지비가 §Y25%§! 증가합니다.\n\n호위 함대와 정찰 함대의 규모가 §Y2.5배§!가 됩니다.\n\n§Y블로캣-베스터§!는 §Y2척§!의 §R블록-터미네이터§!가 호위하며, 이 거대한 블로캣 함선은 §Y1번§! 부활하여 총 유효 내구도가 §Y5억§!에 달합니다.\n\n§Y블록-프로토콜§! 완료 비용은 §Y2억 5,000만 에너지§!이며, §G블로캣 의지§!는 §Y-50%§!에서 시작합니다.\n\n§H§YAncient Caches of Technologies§!와 같은 매우 강력한 모드를 사용할 때 밸런스가 맞습니다.§!" # 18001966507813989026
   giga_blokkats_endtech: "블로캣 (§M엔드테크 블로캣§!)\n블로캣이 §M압도적으로 강력해§!지며 채굴 작업을 보호하기 위해 본격적인 전함을 파견합니다.\n\n다음과 같은 효과를 받습니다:\n§Y무기 피해 +1000%\n함선 연사 속도 +1000%\n함선 선체/장갑/보호막 내구도 +2000%\n함선 속도 +90%\n거대 구조물 건설 속도 +250%\n육군 피해/체력/사기 +1000%§!\n\n§Y블로캣-베스터§!는 §Y20번§! 부활하며, 총 §Y80억§!의 내구도를 가집니다.\n§Y블록-해체자§!의 수가 §Y3배§!가 됩니다.\n§Y초차원 불안정화 장치§! 활성화 기본 비용은 §Y400만§! £energy£입니다.\n블로캣 연구 속도가 §Y300%§! 느려집니다.\n역설계된 블로캣 무기/장갑/보호막의 유지비가 §Y50%§! 증가합니다.\n\n호위 함대의 규모가 §Y6배§!가 됩니다.\n\n§Y블로캣-베스터§!는 §Y5척§!의 §R블록-터미네이터§!가 호위합니다.\n§Y블록-해체자§!는 §Y2척§!의 §R블록-터미네이터§!가 호위합니다.\n§Y정찰 함대§! 역시 각각 §Y1척§!의 §R블록-터미네이터§!를 포함합니다.\n§R블록-터미네이터§!는 §Y4번§! 부활하며 총 유효 내구도가 §Y10억§!에 달합니다.\n\n§R블록-터미네이터§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!합니다. 행성에 접근하지 못하게 하십시오!\n\n§Y블록-프로토콜§! 완료 비용은 §Y10억 에너지§!이며, §G블로캣 의지§!는 §Y-100%§!에서 시작합니다.\n\n§H강력한 모드를 너무 많이 사용하는 경우에 밸런스가 맞습니다!" # 5359209507703256624
-  giga_blokkats_deathmode: "블록캣 (§PObliterator Blokkats§!)\n블록캣은 귀하의 제국을 그들의 문명에 대한 실질적인 위협으로 간주하며, 귀하를 파괴하기 위해 막대한 군사력을 동원할 것입니다. 그들은 §P무한히 강력해질§! 것이며, 채굴 작업을 보호하기 위해 정예 전함들을 파상적으로 보낼 것입니다.\n\n그들은 다음과 같은 효과를 얻습니다:\n§Y+1000% 무기 피해\n+1000% 함선 연사 속도\n+2000% 함선 선체/장갑/보호막 내구도\n+150% 함선 속도\n+250% 거대 구조물 건설 속도\n+1000% 육군 피해/생명력/사기§!\n\n§Y블록캣-베스터§!는 §Y100번§! 부활하여 총 §Y400억§!의 내구도를 가지게 됩니다.\n그들은 항상 §Y20기§!의 §Y블록-해체자§!를 보유합니다.\n§Y초차원 불안정화 장치§!를 활성화하는 기본 비용은 §Y2천만§! £energy£입니다.\n블록캣의 연구 속도는 §Y600%§! 느려집니다.\n역설계된 블록캣 무기/장갑/보호막은 유지비가 §Y75%§! 증가합니다.\n\n그들의 호위 및 정찰 함대는 전적으로 §R블록-종결자§!로 구성됩니다.\n\n§Y블록캣-베스터§!는 §Y50기§!의 §R블록-종결자§!와 단 한 기의 §P블록-말살자§!가 호위합니다.\n§Y블록-해체자§!는 §Y10기§!의 §R블록-종결자§!가 호위합니다.\n§Y정찰 함대§! 또한 각각 §Y5기§!의 §R블록-종결자§!를 포함합니다.\n§R블록-종결자§!는 §Y10번§! 부활하므로 총 유효 내구도는 §Y25억§!입니다.\n§P블록-말살자§!는 §Y200번§! 부활하므로 총 유효 내구도는 §Y1000억§!입니다.\n\n§R블록-종결자§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!합니다. 그들이 귀하의 행성에 도달하지 못하게 하십시오!\n\n블록캣은 오직 귀하의 완전한 말살만을 원하기 때문에 §Y블록-프로토콜§!은 §R사용할 수 없습니다§!\n\n§H'극도로 강력한 모드'와의 사용을 위해 '밸런싱'됨!§!" # 5888253678881484006
+  giga_blokkats_deathmode: "블록카트 (§PO블리테레이터 블록카트§!)\n블록카트는 당신의 제국을 그들의 문명에 대한 실질적인 위협으로 간주하고 당신을 파괴하기 위해 막대한 군사력을 동원할 것입니다. 그들은 §P무한히 강해질 §! 것이며 채굴 작업을 보호하기 위해 정예 전함 함대를 파견할 것입니다.\n\n그들은 다음 효과를 받습니다:\n§Y+1000% 무기 피해\n+1000% 함선 연사력\n+2000% 함선 선체/장갑/실드 HP\n+150% 함선 속도\n+600% 거대 구조물 건설 속도\n+1000% 육군 피해/체력/사기§!\n\n§Y블록카트-베스터§!는 §Y100번§! 부활하여 총 §Y400억§!의 HP를 가지게 됩니다.\n그들은 항상 §Y20기§!의 §Y블록-해체자§!를 동반합니다.\n§Y초차원 불안정기§! 활성화에는 기본적으로 §Y20M§! £energy£의 비용이 듭니다.\n블록카트 연구 속도가 §Y600%§! 느려집니다.\n역설계된 블록카트 무기/장갑/실드의 유지비가 §Y75%§! 증가합니다.\n\n그들의 호위 및 정찰 함대는 전적으로 §R블록-종결자§!로 구성됩니다.\n\n§Y블록카트-베스터§!는 §Y50기§!의 §R블록-종결자§!와 단 하나의 §P블록-파괴자§!의 호위를 받습니다.\n§Y블록-해체자§!는 §Y10기§!의 §R블록-종결자§!의 호위를 받습니다.\n§Y정찰 함대§! 역시 각각 §Y5기§!의 §R블록-종결자§!를 포함할 것입니다.\n§R블록-종결자§!는 §Y10번§! 부활하므로 총 유효 HP가 §Y25억§!이 됩니다.\n§P블록-파괴자§!는 §Y200번§! 부활하므로 총 유효 HP가 §Y1000억§!이 됩니다.\n\n§R블록-종결자§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!할 것입니다. 그들이 당신의 행성에 도달하게 두지 마십시오!\n\n블록카트는 오직 당신의 완전한 말살만을 바라기 때문에 §Y블록-프로토콜§!은 사용할 수 §R없을§! 것입니다!\n\n§H극도로 강력한 모드들과 함께 사용하기 위해 '밸런스'가 조정되었습니다!§!" # 7548993100209953342
   giga_blokkats_very_easy_dec: "$giga_dec_diff$$giga_blokkats_very_easy$" # 4847002780895795779
   giga_blokkats_easy_dec: "$giga_dec_diff$$giga_blokkats_easy$" # 9715879807587128551
   giga_blokkats_normal_dec: "$giga_dec_diff$$giga_blokkats_normal$" # 18331580264652590341
@@ -9229,13 +9236,13 @@
   giga_yggdrasil.142.a: "좋습니다." # 843958112380023394
   resolution_denounce_ezic_warcrimes: "주스프리 연합에 대한 카첸 침공을 규탄한다" # 2731636647647470152
   resolution_denounce_ezic_warcrimes_desc: "카첸 제국이 주스프리스의 고향을 침공한 것은 용서할 수 없는 냉혹한 침략 행위입니다. 우리는 카이저의 잔혹한 군국주의를 은하계 전체에 확실히 알려야 합니다." # 12226196122407204038
-  resolution_denounce_ezic_warcrimes_success: "이는 §YZuspri 저항§! 수치를 2만큼 증가시킵니다.\n\n§YZuspri 전위대§!의 미래 혁명은 §Y10%§! 더 강력해질 것입니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 국가에 대한 §YKaiser의 호감도§!를 §Y1§!만큼 §R감소§!시킵니다." # 5290932922731390682
+  resolution_denounce_ezic_warcrimes_success: "이 조치는 §YZuspri 저항도§!를 2 증가시킵니다.\n\n나중에 §YZuspri 선봉대§!가 일으킬 혁명이 §Y10%§! 더 강력해집니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 이들의 §YKaiser에 대한 여론§!이 §Y20§! §R감소§!합니다." # 2031077470219963580
   resolution_public_recognition_of_solakia: "로퀄 공화국에 대한 은하계 승인" # 4118039394031690067
   resolution_public_recognition_of_solakia_desc: "로퀄 공화국은 카이저의 무분별하고 만연한 군국주의의 물결에 희생된 수많은 플루시안 국가 중 하나입니다. 그들을 이전 영토의 합법적인 정부로 인정하고 고양이들의 점령을 불법으로 선언하는 것은 그들의 파르티잔을 확실히 강화하는 데 도움이 될 것입니다." # 8228770416731623117
-  resolution_public_recognition_of_solakia_success: "이는 §Y카타운§!과 §Y카첸 헤르츠란트§!를 제외한 모든 곳에서 §Y반군 활동§!을 §Y1§!만큼 증가시키며, §Y로칼리엔§!에서는 §Y2§!만큼 증가시킵니다.\n\n§Y영향력 행사§! 결정은 §Y1§!이 아닌 §Y2§!의 저항 자원을 제공할 것입니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 국가에 대한 §YKaiser의 호감도§!를 §Y1§!만큼 §R감소§!시킬 것입니다." # 10014816765674825768
+  resolution_public_recognition_of_solakia_success: "이 조치는 §YKatown§! 및 §YKatzen Herzlands§!를 제외한 모든 지역의 §Y파르티잔 활동§!을 §Y1§! 증가시키고, §YRokalien§!에서는 §Y2§! 증가시킵니다.\n\n§Y영향력 행사§! 결정이 §Y1§!개 대신 §Y2§!개의 저항군 자원을 부여합니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 이들의 §YKaiser에 대한 여론§!이 §Y20§! §R감소§!합니다." # 15261736135045573965
   resolution_public_recognition_of_laurandar: "라우란다르에 대한 국제적 지원" # 1649540135709689435
   resolution_public_recognition_of_laurandar_desc: "라우란다르는 플루션 초대륙 연안에 위치한 섬나라였습니다. 이곳은 인구 밀도가 매우 높으며, 많은 이들이 생각하는 것과는 달리 평평하지 않습니다. 라우르나이인들은 카이저의 것에 필적하거나 능가할 수 있는 위험할 정도로 강력한 무기를 소유하고 있었으나, 불행하게도 불안정한 정부 때문에 카첸아르메에에 저항할 수 없었습니다.\n\n카이저는 라우란다르를 자신의 주요 선전 중심지로 사용하고 있습니다. 따라서 우리가 라우르나이 반군에게 공식적으로 지지를 표명하고, 그들의 독립을 승인하며, 자금을 지원함으로써 그들이 로퀄리안 자유 투사들과 협력하여 카첸의 선전 기구를 분쇄하도록 도울 수 있습니다. 이는 카첸 무장 병력의 조직에 상당한 영향을 미칠 것이며, 우리의 지원 덕분에 강화된 라우르나이 저항 세력까지 상대해야 할 것입니다." # 42703954381299382
-  resolution_public_recognition_of_laurandar_success: "이 행동은 §YLaurendaar§!와 §YGeschwollen§!의 §Y파르티잔 활동§!을 §Y2§!만큼 증가시킵니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 이들의 §Y카이저에 대한 의견§!이 §Y2§!만큼 §R감소§!합니다.\n\n카첸 창고를 습격하면 §B저항 자원§!을 두 배로 획득합니다.\n\n카첸 군대는 §R+20%§!의 $MOD_ARMY_DAMAGE_TAKEN_MULT$ 및 $MOD_ARMY_MORALE_DAMAGE_TAKEN_MULT$ 페널티를 받습니다." # 11121886644912837902
+  resolution_public_recognition_of_laurandar_success: "이 조치는 §YLaurendaar§! 및 §YGeschwollen§!의 §Y파르티잔 활동§!을 §Y2§! 증가시킵니다.\n\n[global_event_country.GetGalCommunityOrGalImperium] 내 모든 이들의 §YKaiser에 대한 여론§!이 §Y40§! §R감소§!합니다.\n\n카첸 창고를 습격하면 두 배 많은 §B저항군 자원§!을 얻습니다.\n\n카첸 군대가 §R+20%§!의 $MOD_ARMY_DAMAGE_TAKEN_MULT$ 및 $MOD_ARMY_MORALE_DAMAGE_TAKEN_MULT$ 효과를 받습니다." # 5445965447743064758
   giga_katzen.8004.name: "[global_event_country.GetGalCommunityOrGalImperium]이 §YLaurandar§를 지지합니다!" # 16242807112624264985
   giga_katzen.8004.desc: "§L은하 원로원의 칙령에 따라, [global_event_country.laurandar_recognised_date]부로 [global_event_country.GetGalCommunityOrGalImperium]은 카첸의 점령에 맞선 라우란다르와 그 주민들에 대한 만장일치의 지지를 선언합니다. 이에 따라 라우란다르 국가는 자유로운 플루시오니안 국가로 인정되며, 라우르네이즈 반군에게 제공될 예정이었던 모든 지원은 관료적 장애물을 우회하기 위한 특별 예외 조치에 따릅니다.\n\n[global_event_country.GetGalCommunityOrGalImperium]의 모든 자유 회원국들의 공동 선언을 통해 은하계는 §YLaundaar§!에 대한 지지를 공식적으로 선언했으며, 그들의 독립을 인정하고 반군 단체에 대한 광범위한 자금 지원을 약속했습니다.\n\n전 라우르네이즈 통치자였던 §YAaron N. Bleu§!는 우리의 결정에 대한 승인을 표하며, 그의 대의를 지지한 모든 국가의 통치 기구에 라우르네이즈 기념품으로 구성된 방대한 선물을 즉시 보냈습니다.\n\n§YKaiser§!는 이 \"터무니없는 결정\"에 대해 극도로 불쾌해하며, 의도가 명백히 잘못된 이 어리석은 [global_event_country.GetGalCommunityOrGalImperium]을 분쇄하겠다고 \"맹세\"했다고 알려졌습니다. 그가 실제로 행동에 나설지는 두고 볼 일입니다." # 15479109177039706489
   giga_katzen.8004.a: "훌륭하군." # 1642978515096943077
@@ -9629,11 +9636,56 @@
   giga_fe_megas_disabled: "몰락 제국 메가스트럭처: §RDISABLED§!\n몰락 제국은 추가적인 메가스트럭처를 §R얻지§! 않을 것입니다." # 2466961293527115420
   giga_fe_gamers_enabled: "무관심한 게이머들: §GENABLED§!\n만약 §Y몰락 제국 메가스트럭처§!, §Y마트료시카 브레인§!, 그리고 §YY그드라실 난초§!가 활성화되어 있다면, §Y마트료시카 브레인§!에 거주하는 특별한 무관심한 유물론자 몰락 제국이 생성될 수 있습니다." # 16268275278935594833
   giga_fe_gamers_disabled: "무관심한 게이머들: §RDISABLED§!\n무관심한 게이머들은 생성되지 않을 것입니다." # 12847593323661808767
-  giga_fe_planetcrafts_0: "몰락 제국 천상 전함: §BNONE§!\n몰락 제국은 §Y천상 전함§!이나 추가적인 §Y반복 기술§!을 얻지 못합니다." # 165270677601852390
-  giga_fe_planetcrafts_1: "몰락 제국 천상 군함: §GREGULAR§!\n몰락 제국은 게임 시작 시 §G0§!에서 §G3§!까지의 §Y행성 공격 달§!을 보유하게 됩니다.\n각성 시, §G1§!에서 §G5§!까지의 §Y행성 공격 달§!과 §G0§!에서 §G1§!까지의 §Y거대 행성 공예품§!을 보유하게 됩니다.\n추가로, §G10§!개의 추가 §Y반복 기술§!에 상응하는 보너스를 얻습니다." # 3961022044720264964
-  giga_fe_planetcrafts_2: "몰락 제국 천상 전함: §Y높음§!\n몰락 제국은 게임 시작 시 §G2§!에서 §G5§!의 §Y달 공격함§!과 §G0§!에서 §G1§!의 §Y거대 행성 공예품§!을 얻게 됩니다.\n각성 시, §G2§!에서 §G8§!의 §Y달 공격함§!과 §G1§!에서 §G2§!의 §Y거대 행성 공예품§!을 얻게 됩니다.\n추가로, §G30§!의 추가 §Y반복 기술§!에 상응하는 보너스를 얻습니다." # 997653463509469776
-  giga_fe_planetcrafts_3: "몰락 제국 천상 전함: §HEXTREME§!\n몰락 제국은 게임 시작 시 §G5§!에서 §G10§!의 §Y공격 달§!과 §G1§!에서 §G3§!의 §Y베헤모스 행성 공예품§!을 얻습니다.\n각성 시, §G6§!에서 §G12§!의 §Y공격 달§!과 §G2§!에서 §G3§!의 §Y베헤모스 행성 공예품§!을 추가로 얻습니다.\n추가로, §G60§!의 추가 §Y반복 가능 기술§!에 상응하는 보너스를 얻습니다." # 6823912098909195582
-  giga_fe_planetcrafts_4: "몰락 제국 천체 군함: §RHELL§!\n몰락 제국은 게임 시작 시 §G10§!에서 §G20§!의 §Y행성 파괴자§!와 §G3§!에서 §G6§!의 §Y베헤모스 행성 공예품§!을 얻게 됩니다.\n각성 시, §Y행성 파괴자§! §G15§!에서 §G30§!개와 §Y베헤모스 행성 공예품§! §G4§!에서 §G8§!개를 얻게 됩니다.\n추가로, §Y반복 연구 기술§! §G100§!에 상응하는 보너스를 얻습니다." # 15412218083229100569
+  concept_giga_fe_planetcrafts_1: "§B낮음§! 난이도 몰락 제국" # 17949035049430187786
+  concept_giga_fe_planetcrafts_2: "§G보통§! 난이도 몰락 제국" # 7439301449761678864
+  concept_giga_fe_planetcrafts_3: "§Y높음§! 난이도 몰락 제국" # 3030572716543261951
+  concept_giga_fe_planetcrafts_4: "§H매우 높음§! 난이도 몰락 제국" # 5643764607832705291
+  concept_giga_fe_planetcrafts_5: "§R지옥§! 난이도 몰락 제국" # 6017670583696872064
+  concept_giga_fe_planetcrafts_6: "§r치명적§! 난이도 몰락 제국" # 4281704621920525621
+  concept_giga_fe_planetcrafts_7: "§M타르타로스§! 난이도 몰락 제국" # 15137280970552094470
+  concept_giga_fe_planetcrafts_1_desc: "$giga_fe_planetcrafts_1$" # 10436911895740677434
+  concept_giga_fe_planetcrafts_2_desc: "$giga_fe_planetcrafts_2$" # 5452783567027448872
+  concept_giga_fe_planetcrafts_3_desc: "$giga_fe_planetcrafts_3$" # 6975311630020049709
+  concept_giga_fe_planetcrafts_4_desc: "$giga_fe_planetcrafts_4$" # 13625782812455018383
+  concept_giga_fe_planetcrafts_5_desc: "$giga_fe_planetcrafts_5$" # 9693388472670793810
+  concept_giga_fe_planetcrafts_6_desc: "$giga_fe_planetcrafts_6$" # 13023819378460593255
+  concept_giga_fe_planetcrafts_7_desc: "$giga_fe_planetcrafts_7$" # 5358290747495755045
+  giga_menu_fe_planetcrafts_section_desc: "몰락 제국은 지나간 시대의 은하계 초강대국이었으나 정체기에 빠진 세력입니다.\n\n이 섹션에서는 그들의 강도를 조절합니다. 아래는 각 난이도 설정의 효과를 나열한 것입니다.\n - ['concept_giga_fe_planetcrafts_1']\n - ['concept_giga_fe_planetcrafts_2']\n - ['concept_giga_fe_planetcrafts_3']\n - ['concept_giga_fe_planetcrafts_4']\n - ['concept_giga_fe_planetcrafts_5']\n - ['concept_giga_fe_planetcrafts_6']\n - ['concept_giga_fe_planetcrafts_7']" # 11370732273923160657
+  giga_fe_planetcrafts_0: "몰락 제국 버프 비활성화됨" # 15060678775710088441
+  giga_fe_planetcrafts_1: "몰락 제국 천체 군함: §BLOW§!\n몰락 제국이 게임 시작 시 §G0§!~§G2§!대의 §Y공격 달§!을 획득합니다.\n각성 시, §G1§!~§G4§!대의 §Y공격 달§!을 획득합니다.\n추가로, §G5§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 3866154103965222333
+  giga_fe_planetcrafts_2: "몰락 제국 천체 군함: §GREGULAR§!\n몰락 제국이 게임 시작 시 §G0§!~§G3§!대의 §Y공격 달§!을 획득합니다.\n각성 시, §G1§!~§G5§!대의 §Y공격 달§!과 §G0§!~§G1§!대의 §Y거대 행성함§!을 획득합니다.\n추가로, §G10§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 3961022044720264964
+  giga_fe_planetcrafts_3: "몰락 제국 천체 군함: §YHIGH§!\n몰락 제국이 게임 시작 시 §G2§!~§G5§!대의 §Y공격 달§!과 §G0§!~§G1§!대의 §Y거대 행성함§!을 획득합니다.\n각성 시, §G2§!~§G8§!대의 §Y공격 달§!과 §G1§!~§G2§!대의 §Y거대 행성함§!을 획득합니다.\n추가로, §G30§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 997653463509469776
+  giga_fe_planetcrafts_4: "몰락 제국 천체 군함: §HEXTREME§!\n몰락 제국이 게임 시작 시 §G5§!~§G10§!대의 §Y공격 달§!과 §G1§!~§G3§!대의 §Y거대 행성함§!을 획득합니다.\n각성 시, §G6§!~§G12§!대의 §Y공격 달§!과 §G2§!~§G3§!대의 §Y거대 행성함§!을 획득합니다.\n추가로, §G60§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 6823912098909195582
+  giga_fe_planetcrafts_5: "몰락 제국 천체 군함: §RHELL§!\n몰락 제국이 게임 시작 시 §G10§!~§G20§!대의 §Y공격 달§!과 §G3§!~§G6§!대의 §Y거대 행성함§!을 획득합니다.\n각성 시, §G15§!~§G30§!대의 §Y공격 달§!과 §G4§!~§G8§!대의 §Y거대 행성함§!을 획득합니다.\n추가로, §G100§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 15412218083229100569
+  giga_fe_planetcrafts_6: "몰락 제국 천체 군함: §rLETHAL§!\n몰락 제국이 게임 시작 시 §G20§!~§G40§!대의 §Y공격 달§!, §G6§!~§G10§!대의 §Y거대 행성함§!, 그리고 §G1§!대의 §R항성계함§!을 획득합니다.\n각성 시, §G50§!~§G100§!대의 §Y공격 달§!, §G15§!~§G30§!대의 §Y거대 행성함§!, 그리고 §G3§!대의 §R항성계함§!을 획득합니다.\n추가로, §G200§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다." # 4825291634829291932
+  giga_fe_planetcrafts_7: "몰락 제국 천체 군함: §MTARTARUS§!\n몰락 제국이 게임 시작 시 §G250§!대의 §R항성계함§!을 획득합니다.\n각성 시, §G1000§!대의 §R항성계함§!을 획득합니다.\n추가로, §G5000§!개의 추가 §Y반복 연구§!에 상응하는 보너스를 받습니다.\n\n§R심각한 렉을 유발하며, 일부 PC에서는 게임이 강제 종료될 수 있습니다.§!" # 9584395142274657434
+  giga_fe_planetcrafts_1_dec: "$giga_dec_diff$$giga_fe_planetcrafts_1$" # 4501442774071924188
+  giga_fe_planetcrafts_2_dec: "$giga_dec_diff$$giga_fe_planetcrafts_2$" # 7243594509100772986
+  giga_fe_planetcrafts_3_dec: "$giga_dec_diff$$giga_fe_planetcrafts_3$" # 4045789289200339025
+  giga_fe_planetcrafts_4_dec: "$giga_dec_diff$$giga_fe_planetcrafts_4$" # 2905568519569978095
+  giga_fe_planetcrafts_5_dec: "$giga_dec_diff$$giga_fe_planetcrafts_5$" # 13022657958986481852
+  giga_fe_planetcrafts_6_dec: "$giga_dec_diff$$giga_fe_planetcrafts_6$" # 14677374807214049335
+  giga_fe_planetcrafts_2_inc: "$giga_inc_diff$$giga_fe_planetcrafts_2$" # 15484013790188253998
+  giga_fe_planetcrafts_3_inc: "$giga_inc_diff$$giga_fe_planetcrafts_3$" # 4392601108597647367
+  giga_fe_planetcrafts_4_inc: "$giga_inc_diff$$giga_fe_planetcrafts_4$" # 14022684323193880095
+  giga_fe_planetcrafts_5_inc: "$giga_inc_diff$$giga_fe_planetcrafts_5$" # 13499791135530630309
+  giga_fe_planetcrafts_6_inc: "$giga_inc_diff$$giga_fe_planetcrafts_6$" # 1054583011564314920
+  giga_fe_planetcrafts_7_inc: "$giga_inc_diff$$giga_fe_planetcrafts_7$" # 15004787723385756955
+  giga_fe_planetcrafts_0_curr: "$giga_curr_diff$$giga_fe_planetcrafts_0$" # 9037533335592162684
+  giga_fe_planetcrafts_1_curr: "$giga_curr_diff$$giga_fe_planetcrafts_1$" # 10259923310878686105
+  giga_fe_planetcrafts_2_curr: "$giga_curr_diff$$giga_fe_planetcrafts_2$" # 2231786422781311073
+  giga_fe_planetcrafts_3_curr: "$giga_curr_diff$$giga_fe_planetcrafts_3$" # 1637832187255667045
+  giga_fe_planetcrafts_4_curr: "$giga_curr_diff$$giga_fe_planetcrafts_4$" # 12241851564948784625
+  giga_fe_planetcrafts_5_curr: "$giga_curr_diff$$giga_fe_planetcrafts_5$" # 10610848696038047696
+  giga_fe_planetcrafts_6_curr: "$giga_curr_diff$$giga_fe_planetcrafts_6$" # 13154686317355307261
+  giga_fe_planetcrafts_7_curr: "$giga_curr_diff$$giga_fe_planetcrafts_7$" # 133892149242001215
+  gigas_max_fe_planetcrafts_difficulty: "최고 몰락 제국 난이도에 도달했습니다" # 13926361633821934345
+  gigas_min_fe_planetcrafts_difficulty: "최소 몰락 제국 난이도에 도달했습니다" # 9473510627098410993
+  gigas_menu_fe_planetcrafts_enabled: "§Y몰락 제국§!이 설정된 난이도에 따라 §Y천체 군함§!과 §Y기술 보너스§!를 모두 받습니다." # 9274542750042908808
+  gigas_menu_fe_planetcrafts_celestials: "§Y몰락 제국§!이 기술 보너스 없이 설정된 난이도의 §Y천체 군함§!만 받습니다." # 3195427278203875046
+  gigas_menu_fe_planetcrafts_repeatables: "§Y몰락 제국§!이 천체 군함 없이 설정된 난이도의 §Y기술 보너스§!만 받습니다." # 3003544751422865333
+  gigas_menu_fe_planetcrafts_disabled: "§Y몰락 제국§!이 어떠한 버프도 받지 않습니다." # 3843341037291025646
+  giga_fe_planetcrafts_disabled: "몰락 제국 버프 비활성화됨" # 15060678775710088441
   giga_blokkat.3317.nokatzens.desc: "마침내 이 단조로운 보복의 굴레를 끊고, §Y카첸란드§!와 §Y니네트§!의 거주민들이 자신들만의 성간 전쟁을 시작했습니다. 이 덜 발달한 제국들은 팔루시안과 블록캣을 잠재적인 지원군으로 여겼습니다. 팔루시안과 블록캣의 예측 모델은 모두 상대방이 개입할 것이라고 단언했고, 비극적인 리듬에 맞춰 그들은 분쟁 속으로 뛰어들었습니다.\n\n블록캣은 주로 고도화된 기계 무역의 원천으로 이용되었고, 팔루시안은 훈장을 받은 영웅들의 경험을 빌려주는 대가로 막대한 부를 챙겼습니다. 대부분의 팔루시안은 이 일을 필수적인 잡무로 여겼지만, §Y스파크번§!이라는 이름의 한 팔루시안은 이 원정을 일종의 자아를 찾는 휴가처럼 여기는 듯했습니다. 그는 긴 교착 상태의 세월 동안 팔루시안의 진보 규모를 진정으로 이해하기 어려웠지만, 이번 전쟁에서 자신의 힘만큼은 누구도 거스를 수 없었다고 언급했습니다. 그에게는 눈을 뜨게 하는 순간이었던 것 같으며, 고향으로 돌아갔을 때 그는 팔루시안의 미래 잠재력에 대해 수많은 열정적인 연설을 했습니다.\n\n카첸란드와 니네트 사이의 전쟁은 길게 이어졌습니다. 행성들이 고통받자 양측은 휴전 가능성을 논의하기 위해 만났습니다. 블록캣과 팔루시안 제국의 고위 인사들이 모두 초대되어 전설적인 미래 예지 능력을 활용해 의견을 제시했습니다. 블록캣은 휴전을 권고했지만, §Y포틴§!이라는 이름의 예언자인 팔루시안 고위 인사는 이것이 경제적 어려움으로 이어질 것이며, 더 중요하게는 자신의 국가에 블록캣의 이익을 위한 착취적 무역의 시대를 불러올 것이라고 예견했습니다.\n\n포틴은 분쟁을 해결할 유일한 만족스러운 방법은 한쪽의 완전하고 총체적인 승리뿐이라고 선언했습니다. 포틴은 이를 팔루시안 영웅들이 이끄는 성공적인 전쟁 노력으로 구상했고, 그 이후에는 패권을 장악할 수 있다고 보았습니다. 그러나 팔루시안의 실망스럽게도, 카첸란드와 니네트의 지도부는 결국 전쟁이 초래하는 무의미함과 위험을 깨달았고, 블록캣이 권고한 휴전이 성립되었으며 두 세계 사이의 관계는 느리지만 꾸준히 회복되었습니다.\n\n스파크번이 전쟁과 엄격한 외교의 중요성에 깊은 인상을 받았던 것처럼, 포틴은 이 재앙을 뒤로하며 자신의 역할에 의문을 품게 되었습니다. 스파크번의 위대함을 향한 외침 속에서, 포틴은 팔루시안 예언 시스템의 기본적인 실용성에 의문을 제기하기 시작했습니다. 그는 그들의 예지력이 이제는 제국이 결코 실현하지 못할 미래를 예측하는 데 너무 얽매여 있어서, 기본적인 상식과 단순한 연역적 추론을 간과하고 있을 가능성이 있다고 주장했습니다.\n\n팔루시안은 그들의 예언자가 불길한 군사적 위협을 예견했을 때 그의 의구심을 시험할 기회를 얻게 되었습니다. 포틴은 이 적이 이성적인 대화가 가능할 것이며, 팔루시안이 외교와 공존을 준비한다면 평화의 가능성이 있다고 주장했습니다. 그의 말은 비통함에 잠긴 팔루시안들 사이에서 깊은 반감을 샀고, 그는 스파크번의 무장 촉구에 밀려 배척당했습니다.\n\n침공군은 \"§Y라핀봇§!\"이라고 알려진 대량 학살 기계 제국이었으며, 그들은 공존에 관심이 없었을 뿐만 아니라 그럴 능력조차 없었습니다. 그들은 블록캣의 통신망을 공격하고 전력망을 마비시켰으며, 팔루시안의 정신 감응 인프라는 그들의 이해 범위를 벗어나 있었습니다. 블록캣은 무너졌고, 행성에서 피비린내 나는 대탈출을 감행해야 했습니다. 팔루시안은 계속해서 싸웠고, 사기는 하늘을 찔렀으며, 결국 라핀봇은 폐허가 되었습니다. 이는 스파크번의 주장을 입증하는 동시에 포틴의 신뢰도를 산산조각 냈습니다.\n\n하지만 비록 블록캣이 이곳 행성에서 도망쳤다고 해서, 블록캣에 대한 기록이 여기서 끝나는 것은 아닙니다." # 12511239109046270788
   giga_blokkat.3317.evilmeopa.desc: "마침내 이 단조로운 보복의 굴레를 깨고, §Y카첸란드§!와 §Y니네트§!의 거주민들이 자신들만의 성간 전쟁을 시작했습니다. 이 덜 발달한 제국들은 팔루시아인과 블로캇을 잠재적인 지원군으로 여겼습니다. 팔루시아와 블로캇의 예측 모델은 모두 상대방이 개입할 것이라 분석했고, 비극적인 리듬에 맞춰 그들은 분쟁에 휘말려 들었습니다.\n\n블로캇은 주로 고도로 발달한 기계 무역의 원천으로 이용되었고, 팔루시아인들은 막대한 보수를 받고 훈장을 받은 영웅들의 경험을 빌려주었습니다. 대부분의 팔루시아인은 이 일을 필요한 잡무로 여겼지만, §Y스파크번§!이라는 이름의 팔루시아인 한 명은 이 원정을 일종의 자아 발견을 위한 휴가처럼 여기는 듯했습니다. 그는 긴 교착 상태의 세월 동안 팔루시아의 진보가 어느 정도 수준인지 진정으로 이해하기 어려웠으나, 이 전쟁에서 자신의 힘은 누구도 대적할 수 없었다고 말했습니다. 그에게는 눈을 뜨게 하는 계기가 된 듯하며, 고향으로 돌아갔을 때 그는 팔루시아의 미래 잠재력에 대해 열정적인 연설을 많이 남겼습니다.\n\n카첸란드와 니네트 사이의 전쟁은 길게 이어졌습니다. 행성들이 고통받자 양측은 휴전을 논의하기 위해 만났습니다. 블로캇과 팔루시아 제국의 고위 인사들이 모두 초대되어 그들의 전설적인 미래 예지 능력을 활용해 의견을 제시했습니다. 블로캇은 휴전을 권고했지만, §Y포틴§!이라는 이름의 예언자인 팔루시아 고위 인사는 이것이 경제적 어려움으로 이어질 것이며, 무엇보다 자신의 국가에 블로캇의 이익을 위한 착취적 무역의 시대를 불러올 것이라고 예견했습니다.\n\n포틴은 분쟁을 해결하는 유일하게 만족스러운 방법은 일방에 대한 완전하고 총체적인 승리뿐이라고 선언했습니다. 포틴은 이를 팔루시아 영웅들이 이끄는 성공적인 전쟁 노력으로 구상했고, 그 이후 패권으로 이어지길 바랐습니다. 포틴은 팔루시아가 카첸의 승리를 도울 수 있기를 희망했지만, 결국 카첸란드는 핵 옵션을 사용하여 니네트를 단 몇 분 만에 핵의 지옥불 속에서 불태워 버렸습니다. 그러한 행동은 보통 카첸 정권의 붕괴로 이어졌을 것이나, 이상하게도 오히려 카첸 정부의 인기를 강화했고 팔루시아의 지원은 쓸모없게 되어 카첸과 팔루시아 지도부 간의 외교 관계가 결렬되었습니다.\n\n스파크번이 전쟁과 엄격한 외교의 중요성에 깊은 인상을 받았던 것처럼, 포틴은 이 재앙 속에서 자신의 역할을 의심하며 물러났습니다. 스파크번의 위대함을 향한 외침 속에서, 포틴은 팔루시아 예언 시스템의 기본적인 실용성에 의문을 제기하기 시작했습니다. 그는 그들의 예지력이 이제는 제국이 결코 실현하지 못할 미래를 예측하는 데 너무 얽매여 있어서, 기본적인 상식과 단순한 연역적 추론을 간과하고 있을 가능성이 있다고 주장했습니다.\n\n팔루시아인들은 그들의 예언자들이 불길한 군사적 위협을 예견했을 때 그의 의구심을 시험할 기회를 얻게 되었습니다. 포틴은 이 적이 이성적인 대화가 가능할 것이며, 팔루시아인들이 외교와 공존을 준비한다면 평화의 가능성이 있다고 주장했습니다. 그의 말은 비통함에 빠진 팔루시아인들에게 깊은 반감을 샀고, 그는 스파크번의 무장 촉구에 밀려 배척당했습니다.\n\n침공군은 §Y라핀봇§!이라 알려진 대량 학살 기계 제국이었으며, 그들은 공존에 관심이 없었을 뿐만 아니라 그럴 능력조차 없었습니다. 그들은 블로캇의 통신망을 공격하고 전력망을 마비시켰으며, 팔루시아의 사이오닉 인프라는 그들의 이해 범위를 넘어섰습니다. 블로캇은 무너졌고, 행성에서 피비린내 나는 대탈출을 강요받았습니다. 팔루시아인들은 사기가 하늘을 찌르는 가운데 계속 싸웠고, 결국 라핀봇은 파멸했습니다. 이는 스파크번의 말이 옳았음을 입증했고 포틴의 신뢰도는 바닥으로 떨어졌습니다.\n\n하지만 블로캇이 이곳에서 행성을 떠났다고 해서, 블로캇에 대한 기록이 여기서 끝나는 것은 아닙니다." # 15301909508794634789
   giga_blokkat.3321.nokatzens.desc: "마침내 우리 과학자들은 이 격동적인 이야기의 끝에 도달했다고 믿습니다! 팔루시안들이 팔루시아로 귀환하면서, 그들은 그랜드버니의 감시 아래 목가적인 삶으로 돌아가는 데 몰두한 나머지 중공업을 소홀히 했던 것 같습니다. 그동안 블로캇들은 그들의 뒤를 휩쓸고 있었습니다.\n\n블로캇들은 팔루시안들의 세계를 식민지화하는 대신, 단순히 공장 부품들을 긁어모아 네오블로카티나로 돌려보냈고, 링월드를 확장하고, 더 많은 날개와 고리들을 추가하며, 그들의 제조를 먹여 살릴 제조 능력을 끊임없이 확장했습니다. 블로캇들에게는 팔루시아를 떠난 이후 처음으로 운이 자신들에게 유리하게 돌아가고 있다고 보였을 것이며, 만약 그들이 이 선물들만 취했다면 모든 것이 괜찮았을지도 모릅니다.\n\n팔루시안들이 거대한 전쟁 함대를 비무장하기 시작했을 때, 그들은 블로캇들에게 너무나도 탐나는 표적이 되었음에 틀림없습니다. 그들이 정확히 무엇을 생각했는지는 알 수 없습니다. 아마도 블로캇들은 팔루시안들이 대재앙을 겪고 있다고 믿었을 것입니다. 그럼에도 불구하고, 그들은 확보한 제련소를 사용하여 전쟁 함대를 생산하고 팔루시아를 향해 집결시켰습니다.\n\n관측에 따르면, 블로캇 함대의 일부에는 오늘날 그들이 보유한 수확 기술의 전신이 포함되어 있었던 것 같습니다. 그들은 팔루시안 문명을 분해한 다음 되찾으려 했습니다. 불행하게도, 그 순간까지 그들은 실제 그랜드버니를 만난 적이 없었습니다. 블로캇들의 오래된 미디어 방송에서 그녀는 팔루시안들이 믿는 뒤떨어지고 우스꽝스러운 신으로 묘사되었을 뿐이었습니다. 존재하지 않는 광대 같은 인물로 말이죠.\n\n블로캇 함대가 팔루시아 상공에 도착했을 때, 처음에는 가쪼 거주민들의 함대가 블로캇들이 고양이과(Katzen) 영역을 침범했음에도 불구하고 교전하기를 거부한다는 사실에 고무되었지만, 그들은 끔찍하게 틀렸음이 입증되었습니다. 그랜드버니의 행동은 확실히 치명적이지만, 우리 연구원들은 그것을 설명하는 데 어려움을 겪고 있습니다. 이는 마치 실제로 그곳에 있었던 듯한 느낌을 새겨 넣는 초능력 기록 보관소 때문에 더욱 악화됩니다. 수석 고고학자의 말을 인용하자면 다음과 같습니다.\n\\\"음, 그녀가 손을 들어 올리자 블로캇 함대가 뒤로 날아가기 시작합니다, 맞죠? 그러더니 그들이 일종의… 안으로 뒤집히면서 다시 제대로 날아가는 것 같습니다. 그리고 나서 스크럼 벌레와 관련된 무언가가 있습니다. 스크럼 벌레가 뭔지 아십니까? 저도 모릅니다. 하지만 그것이 무엇이든, 그것은 분명히 스크럼 벌레입니다. 그냥 알 수 있죠. 분명히 스크럼 벌레입니다. 그리고 이것은... 음, 설명하기 꽤 어렵지만, 일종의... 그것은... 그것은 스크럼을 봅니다, 아시겠죠\"\n\n그리고 분명히 이것은 함대를 너무나도 끔찍한 방식으로 파괴하여\"스크\" 사건 바로 외곽에 있던 블로캇들은 비상 탈출하여 전투에서 벗어났습니다. 직후, 블로캇들은 네오블로카티나에 거대한 엔진을 설치하는 놀라운 공학적 위업을 완수하고, 전속력으로 네오블로카티나를 팔루시아에서 은하 공간의 가장자리로 날려 보냈습니다. 우리 과학자들은 블로캇들이 네오블로카티나가\"스크\" 당하는 것을 두려워했을 것이라고 생각합니다.\n\n이 지점 이후로 우리는 블로캇들과 관련된 더 이상의 자료를 찾지 못했습니다. 그들이 지금 여기에 있다는 것은 그들이 은하를 탈출하여 기술적 진보를 크게 이루고 이제야 돌아오기로 선택했음을 분명히 보여줍니다. 이 모든 일의 시작점에서, 그들이 우리 은하계 내부에서 유래했을 것이라고는 결코 예상하지 못했을 수도 있습니다! 하물며 팔루시안들이 그들의 문화적, 기술적 발전에 얼마나 복잡한 역할을 했는지 짐작조차 할 수 없었습니다. 이 귀중한 정보 수집은 분명히 우리 §Y블로캇 연구국§!에 도움이 될 것입니다." # 3364209557968807723
@@ -10328,7 +10380,6 @@
   machine_defense_plural: "디버그" # 143360522173664303
   giga_pdx_why: "디버그" # 143360522173664303
   pc_alderson_slice_gaia_adj: "디버그" # 143360522173664303
-  pc_giga_penrose_habitable_adj: "디버그" # 143360522173664303
   pc_interstellar_ringworld_habitable_adj: "디버그" # 143360522173664303
   pc_birch_adj: "디버그" # 143360522173664303
   pc_nuked_adj: "디버그" # 143360522173664303
@@ -10441,3 +10492,4 @@
   giga_disable_supertensiles_4_4.2.desc: "4.4 버전에서 도입된 직업 기반 건설 제한 / 초인장재 관련 버그로 인해, 해당 기능이 일시적으로 강제 비활성화되었습니다. 귀하의 메가구조물 건설 제한은 §_무제한§!으로 설정되었습니다.\n\n이는 게임이 고장 났다는 뜻이 아니라, 단순히 해당 기능이 비활성화되었다는 의미입니다." # 14695522554084198683
   giga_disable_supertensiles_4_4.2.2.a: "알겠습니다" # 16044937940591761473
   supertensiles_bugged_read_bruh: "직업 기반 메가구조물 건설 제한 / 초인장재가 현재 §R버그로 인해 비활성화됨§! 상태입니다." # 6114785400911447839
+  giga_is_moon: "행성은 다른 행성의 위성입니다." # 16161706871934839410

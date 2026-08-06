@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: c0f3c03
+# PAT verified upstream: 0f1f2b0
   giga_toggle_diplomacy_sa: "§YCrisis Contact Menu§! 버튼과 §YStellar Annihilator Command§! 버튼 사이를 전환합니다!" # 7176143391901881086
   giga_no_contacts: "§Y성계 섬멸자§!에 대한 접근 권한 없이는 접촉 메뉴를 전환할 수 없습니다!" # 4991440186162141490
   giga_not_contacted: "$TRIGGER_FAIL$아직 이 접촉 상대를 해금하지 않았습니다" # 2947660077431865663

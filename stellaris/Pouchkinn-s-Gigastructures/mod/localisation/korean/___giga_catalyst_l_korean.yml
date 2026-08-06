@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: c0f3c03
+# PAT verified upstream: 0f1f2b0
   building_giga_catalyst_crafter: "재미있는 제작자 :)" # 16391041608177707450
   building_giga_catalyst_crafter_desc: "괜찮아요 ;)" # 13354394822307819721
   building_giga_catalyst_effects: "자원을 소모하여 비례하는 양의 £giga_sr_catalyst£ §Y$giga_sr_catalyst$§!를 생산합니다!\n\n매월 자원 저장량의 §Y[giga_catalyst_crafter_drain]%§!를 변환 중\n변환 효율: [giga_catalyst_crafter_efficiency_colour][giga_catalyst_crafter_efficiency]%§!" # 16936627093841845108
