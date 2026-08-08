@@ -1,3 +1,15 @@
 ﻿l_korean:
-# PAT verified upstream: 9115fbe
+# PAT verified upstream: 0cd4a05
   com_tooltip.disband_bloc: "[SCOPE.sPowerBloc('power_bloc').GetName]이(가) 해체되었습니다" # 2176035381299293198
+  com_block_exile_interaction: "[SCOPE.sCharacter('com_interaction_blocker_scope').GetFullName]의 추방이 금지됩니다." # 17605950118783134893
+  com_block_exile_interaction_effect_with_reason: "[TopScope.GetLocalVariable('com_block_exile_interaction_with_reason_loc').GetFlagName]" # 11090737346267239350
+  com_block_exile_interaction_trigger: "[Character.MakeScope.Var('com_block_exile_var').GetFlagName]" # 13338312675878630597
+  com_is_character_blocked_from_exile: "[concept_character]의 추방이 금지되었습니다." # 1859412640233020216
+  com_block_exile_interaction_default: "[Character.GetFullName]의 추방이 금지되었습니다." # 12072418058725145008
+  com_unblock_exile_interaction: "[SCOPE.sCharacter('com_interaction_blocker_scope').GetFullName]의 추방 금지가 해제됩니다." # 6472375457468810847
+  com_block_retire_interaction: "[SCOPE.sCharacter('com_interaction_blocker_scope').GetFullName]의 은퇴가 금지됩니다." # 13172091324748942885
+  com_block_retire_interaction_effect_with_reason: "[TopScope.GetLocalVariable('com_block_retire_interaction_with_reason_loc').GetFlagName]" # 14487244665132021650
+  com_block_retire_interaction_trigger: "[Character.MakeScope.Var('com_block_retire_var').GetFlagName]" # 295760277893405823
+  com_is_character_blocked_from_retire: "[concept_character]의 은퇴가 금지되었습니다." # 8734939741873896692
+  com_block_retire_interaction_default: "[Character.GetFullName]의 은퇴가 금지되었습니다." # 10011499578819425762
+  com_unblock_retire_interaction: "[SCOPE.sCharacter('com_interaction_blocker_scope').GetFullName]의 은퇴 금지가 해제됩니다." # 9670596665133489830
