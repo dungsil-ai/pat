@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   law_organic_democracy: "유기적 민주주의" # 9830790895983027593
   law_organic_democracy_desc: "가족, 직장, 지방 자치체 또는 공동체와 같은 다양한 전통적인 '기관'들은 자체적인 사안을 관장하며 입법 기관에 대표를 선출합니다. 정당이나 이념적 단체는 존재하지 않습니다." # 12412435429195485901
   ideology_dop_organic_democrat: "유기적 민주주의자" # 3041718623895549919
@@ -11,6 +11,8 @@
   je_bpm_clay_forming_an_organism_status_consolidating_power: "권력 통합" # 9268554388623644425
   concept_bpm_ig_is_organicist: "유기체주의자" # 8085977714439220809
   concept_bpm_ig_is_organicist_desc: "@ig_christian_democrats! #bold 기독교 민주주의자들#!, @ig_reactionaries! #bold 반응주의자들#!, 그리고 @ig_fascists! #bold 파시스트들#! [Concept('concept_interest_group', '이해집단')]. 그들은 인간 사회를 유기체와 같다고 믿으며, 개별 인간은 그 유기체의 세포와 같다고 여깁니다. 따라서 그들은 국가 내에서 그러한 세포들의 힘을 강화하거나, 혹은 그 세포들이 국가의 일부가 되도록 해야 한다고 주장합니다." # 17333028841996119026
+  concept_bpm_ig_is_organic_democrat: "유기적 민주주의자" # 3041718623895549919
+  concept_bpm_ig_is_organic_democrat_desc: "" # 17241709254077376921
   party_professionals_administration_urban: "도시 전문가와 행정" # 6961283822868789022
   party_trade_union_syndicates: "노동조합 조합" # 4875690702308019415
   party_rural_communes: "농촌 공동체와 마을" # 5744602652066182659

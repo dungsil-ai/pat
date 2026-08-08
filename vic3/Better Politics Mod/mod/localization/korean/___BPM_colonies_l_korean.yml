@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   bpm_colony_events.2.t: "[ROOT.GetCountry.GetAdjective] 자치권" # 11742274856004953091
   bpm_colony_events.2.d: "[ROOT.GetCountry.GetOverlord.GetAdjective] 식민지인 [ROOT.GetCountry.GetName]가 종주국으로부터 제한적인 자치권을 부여받았습니다. 해당 식민지는 이제 자체적인 내정 관리가 가능해질 것입니다." # 9513077427641901836
   bpm_colony_events.2.f: "본토에서 완벽하게 효과적임이 입증된 원칙에 따라 정부를 운영하는 것 외에 다른 어떤 방식으로든 조화를 확보할 수 있는 방법을 알지 못합니다. 저는 왕실의 어떤 특권도 훼손하고 싶지 않습니다. 오히려 저는 이 속령들(provinces)의 민중들의 이익이 지금까지 행사되지 않았던 특권들의 보호를 필요로 한다고 믿습니다..." # 14012128916727910074

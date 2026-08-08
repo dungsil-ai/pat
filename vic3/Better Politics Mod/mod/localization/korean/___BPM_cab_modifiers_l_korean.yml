@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   bpm_schools_fallback_modifier: "교육부" # 11263688690073327507
   bpm_schools_agpops_modifier: "농본주의 교육" # 9104242911231777630
   bpm_schools_anarchists_modifier: "아나키스트 교육" # 9237151066857357296
@@ -158,7 +158,7 @@
   bpm_economy_tu_modifier: "노동조합 경제" # 18324453137833753356
   bpm_economy_landies_modifier: "지주 경제" # 17726355868198420515
   bpm_economy_capis_modifier: "자본주의 경제" # 6908396671561387123
-  bpm_economy_christdem_modifier: "기독교 민주주의 경제 개혁" # 11429049689220420515
+  bpm_economy_christdem_modifier: "기독교민주주의 경제" # 9133218172862503730
   bpm_economy_attraction_modifier: "경제적 진출" # 13773261760147042282
   bpm_economy_cr_agpops_modifier: "농업 경제 개혁" # 6600561266954514715
   bpm_economy_cr_cons_modifier: "보수 경제 개혁" # 9406974365388705000
@@ -174,6 +174,7 @@
   bpm_economy_cr_neutraling_modifier: "온건파 경제 개혁" # 12677134422497316563
   bpm_economy_cr_intel_modifier: "지식인 경제 개혁" # 3195861134545347332
   bpm_economy_cr_ruries_modifier: "농촌 경제 개혁" # 5155597354963845301
+  bpm_economy_cr_christdem_modifier: "기독교민주주의 경제 개혁" # 11429049689220420515
   bpm_economy_cr_tu_modifier: "노동조합 경제 개혁" # 4370492267977325018
   bpm_economy_cr_capis_modifier: "자본가 경제 개혁" # 15160246300474705334
   bpm_economy_cr_attraction_modifier: "경제 개혁 아웃리치" # 16717338567989256805

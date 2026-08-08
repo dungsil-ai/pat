@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   bpm_current_reform_title: "$LAW_FROM_TO$" # 1569973254613235579
   country_legislature_name: "[GetPlayer.GetCustom('country_legislature_name')]" # 12615889127799127601
   bpm_legislature_adj_democracy: "입법" # 778775754546633203

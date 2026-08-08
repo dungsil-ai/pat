@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   bpm_repeatable_law_cooldown: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')]는 현재 #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_cooldown')]#!년의 재사용 대기시간 중에 있습니다." # 2245393814906180641
   law_repeatable_none: "반복 선택 불가" # 11764044511079574747
   law_repeatable_none_desc: "현재 고려 중인 [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] 법안은 없습니다." # 10807650444212950840

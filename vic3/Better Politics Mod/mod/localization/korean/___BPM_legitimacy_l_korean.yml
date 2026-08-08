@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 8576737
+# PAT verified upstream: 846d156
   concept_legitimacy: "입법 능력" # 8349540066586999338
   concept_legitimacy_desc: "한 [Concept('concept_government','$concept_government_possessive$')]의 $concept_legitimacy$는 국가의 의회에서 [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]의 구성이 얼마나 잘 협력할 수 있는지를 나타냅니다. $concept_legitimacy$가 낮을수록 새로운 $concept_laws$를 [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] 제정하려는 시도 사이의 시간이 길어집니다. [concept_taxes]를 올리거나 내리는 것 또한 $concept_legitimacy$에 영향을 미칩니다." # 7056742521184701205
   legitimacy_level_illegitimate: "완전한 교착 상태" # 9006658744015136022
