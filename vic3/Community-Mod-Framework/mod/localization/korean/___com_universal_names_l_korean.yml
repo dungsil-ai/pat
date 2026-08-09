@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0cd4a05
+# PAT verified upstream: b6e27b1
   com_universal_names_title: "[ROOT.GetCharacter.GetPrimaryRoleTitle]" # 8687612465256550383
   com_universal_names_full_name: "[ROOT.GetCharacter.GetFullName]" # 3817953580445274046
   com_universal_names_full_name_no_fmt: "[ROOT.GetCharacter.GetFullNameNoFormatting]" # 3357159057032643991
