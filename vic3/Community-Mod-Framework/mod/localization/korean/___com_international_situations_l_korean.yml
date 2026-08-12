@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 999acd1
+# PAT verified upstream: 9b999e3
   je_com_international_situation: "국제 정세" # 7180008575181507444
   je_com_international_situation_reason: "이유는 없습니다. 우리에겐 아무런 이유가 없습니다. 우리는 근거 없는 주장과 신성한 광기에 사로잡힌 민족입니다. 자, 이제 아무도 눈치채기 전에 동말리에 목재를 좀 가져다 놓으십시오." # 12409453557106477595
   je_com_international_situation_status: "상태: 광산에서 비명을 지르는 중." # 1904777014547387364
@@ -24,6 +24,8 @@
   com_situation_group_4_progress_bar_tooltip: "현재 진행도: #v [JournalEntry.MakeScope.Var('com_situation_group_4_next_phase_progress_var').GetValue]/[JournalEntry.MakeScope.Var('com_situation_group_4_next_phase_max_progress_var').GetValue]#!" # 9352446808833119119
   com_situation_start_date_header: "#blue #bold 시작일:#!#!" # 14116009029665700713
   com_situation_start_date: "#bold [JournalEntry.MakeScope.Var('com_situation_start_month_var').GetFlagName] [JournalEntry.MakeScope.Var('com_situation_start_year_var').GetValue]#!" # 2480230906413286270
+  com_situation_left_title: "[JournalEntry.MakeScope.Var('com_situation_left_title_var').GetFlagName]" # 10004579068738012622
+  com_situation_right_title: "[JournalEntry.MakeScope.Var('com_situation_right_title_var').GetFlagName]" # 674635792813270839
   com_situation_background_africa_construction_colony: "com_situation_background_africa_construction_colony" # 10078965697005467884
   com_situation_background_asia_westerners_arriving: "com_situation_background_asia_westerners_arriving" # 10577387263597568088
   com_situation_background_europenorthamerica_london_center: "com_situation_background_europenorthamerica_london_center" # 15183044113448456993
