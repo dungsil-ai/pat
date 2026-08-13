@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: e06645b
+# PAT verified upstream: bd92022
   concept_com_international_organization: "국제 기구" # 856629468960562459
   concept_com_international_organization_desc: "공통된 목표를 가진 [Concept('concept_country','$concept_countries$')]로 구성된 초국가적 실체" # 10674984082015582359
   concept_com_international_organizations: "국제 기구" # 11864495601490587329
