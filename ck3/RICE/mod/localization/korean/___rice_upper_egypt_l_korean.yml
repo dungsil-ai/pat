@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_upper_egypt_every_nile_county_desc: "[GetGeographicalRegion('RICE_nile_river_valley').GetName]에 속한 귀하가 소유한 모든 [county|E]" # 18400414728451162603
   RICE_upper_egypt_every_nile_county_nilometers_desc: "[GetGeographicalRegion('RICE_nile_river_valley').GetName]에 소유한 모든 [county|E]는 [GetModifier('RICE_nile_renovated_nilometers').GetNameWithTooltip] [modifier|E]를 보유합니다" # 18224717297125465387
   Yarjukh: "야르주흐" # 18278972743238438944

@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   building_type_RICE_aachen_luxembourg_fortress_01: "룩셈부르크 요새" # 4494637454658397151
   building_type_RICE_aachen_luxembourg_fortress_01_desc: "전략적 요충지에 위치한 룩셈부르크 부지는 로마 시대부터 요새화되었습니다. 그 이후로 복(Bock) 돌출부에 있던 오래된 로마 방어 구조물에 추가적인 요새가 증축되었습니다." # 6426275356364662663
   building_RICE_aachen_luxembourg_fortress_01: "$building_type_RICE_aachen_luxembourg_fortress_01$" # 16704264518547518580

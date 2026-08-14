@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   rule_RICE_intro_event: "RICE 소개 이벤트" # 8081016221241070018
   setting_RICE_intro_event_on: "켜짐" # 14367041983676599459
   setting_RICE_intro_event_on_desc: "게임을 불러올 때 한 번 발동하는 소개 이벤트는 현재 사용 중인 RICE 버전과 최신 기능을 알려줍니다. 이는 모드가 올바르게 설치되었고 최신 버전을 사용 중인지 확인하는 데 도움이 됩니다." # 11839336696882962670
@@ -87,6 +87,8 @@
   setting_RICE_yazidi_emergence_historical_desc: "야지디 [faith|E]는 12세기 중반 이후에만 무작위로 생성될 수 있습니다." # 17021926209440938303
   setting_RICE_yazidi_emergence_unrestricted: "#high 무제한#!" # 3033804177292889934
   setting_RICE_yazidi_emergence_unrestricted_desc: "야지디 [faith|E]는 언제든지 생성될 수 있습니다." # 18264949632957044292
+  setting_RICE_yazidi_emergence_vanilla: "#high 바닐라#!" # 5994410695585669193
+  setting_RICE_yazidi_emergence_vanilla_desc: "야지디 [faith|E](이)가 바닐라와 같이 게임 시작 시 존재합니다. [characters|E](은)는 자동으로 $kitebacilweism$(으)로 개종되지 않습니다." # 12531318625088812388
   rule_RICE_yarsani_emergence: "RICE 야르산 출현" # 12210324029244904822
   setting_RICE_yarsani_emergence_default: "기본" # 8341519292606584866
   setting_RICE_yarsani_emergence_default_desc: "야르산 [faith|E]는 게임 시작 후 반세기 뒤에 무작위로 생성될 수 있지만, 13세기 중반 이후에 생성될 가능성이 더 높습니다." # 17896217593751608609
@@ -94,6 +96,8 @@
   setting_RICE_yarsani_emergence_historical_desc: "야르산 [faith|E]는 14세기 중반 이후에만 무작위로 생성될 수 있습니다." # 4900991101279393828
   setting_RICE_yarsani_emergence_unrestricted: "#high 무제한#!" # 3033804177292889934
   setting_RICE_yarsani_emergence_unrestricted_desc: "야르산 [faith|E]은 언제든지 생겨날 수 있습니다." # 16981591934564274300
+  setting_RICE_yarsani_emergence_vanilla: "#high 바닐라#!" # 5994410695585669193
+  setting_RICE_yarsani_emergence_vanilla_desc: "야르산 [faith|E](이)가 바닐라와 같이 게임 시작 시 존재합니다. [characters|E](은)는 자동으로 $kitebacilweism$(으)로 개종되지 않습니다." # 3169935530986318084
   rule_RICE_afro_roman_counties: "RICE $african_roman$ 존재감" # 4246045542284264034
   setting_RICE_afro_roman_counties_default: "기본" # 8341519292606584866
   setting_RICE_afro_roman_counties_default_desc: "바닐라 시작 시점에는 북아프리카에 $african_roman$ 및 $catholic_adj$ [counties|E]가 없습니다. 다른 모드가 이를 추가하면 덮어쓰게 됩니다." # 15423893630712455881
@@ -215,6 +219,7 @@
   RICE_test_decision_tooltip: "시험" # 15745692345339290292
   RICE_test_decision_desc: "시험" # 15745692345339290292
   RICE_test_decision_confirm: "시험" # 15745692345339290292
+  Simar: "시마르" # 13343283528178616578
   activity_RICE_hot_springs_visit_host_an_a: "$host_activity_a$" # 13713790857143020716
   activity_RICE_hot_springs_visit: "온천 방문" # 647038537016052024
   activity_RICE_hot_springs_visit_desc: "이 세상에는 수많은 유명한 [hot_springs|E]가 있으며, 저는 그중 하나와 가까이 살게 된 행운을 누리고 있습니다. 일상의 근심을 잊고 스트레스를 해소하기 위해 그곳을 방문해야겠습니다." # 9117503003778629014

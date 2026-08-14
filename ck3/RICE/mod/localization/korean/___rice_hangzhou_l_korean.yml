@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_hangzhou_close_to_hangzhou_req: "당신의 [capital|E]는 [GetTitleByKey('b_qiantang').GetNameNoTier]와 가깝습니다." # 9678438645668651554
   RICE_hangzhou_domicile_in_hangzhou_req: "귀하의 [domicile|E]는 [GetTitleByKey('b_qiantang').GetNameNoTier]에 있습니다." # 13226644080650588859
   RICE_china_geographical_req: "귀하의 [capital|E]는 [GetGeographicalRegion('world_asia_china').GetName]에 위치하고 있습니다." # 2643331449830406938

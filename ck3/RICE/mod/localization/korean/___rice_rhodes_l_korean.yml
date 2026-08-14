@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   Kassia: "카시아" # 6379735458546113341
   dynn_kassia_of_kasos: "카소스의" # 17953003588183747537
   RICE_rhodes_gift_kalymnian_sponges: "칼림니아 해면 증정" # 17077706829911745544
@@ -27,7 +27,7 @@
   activity_RICE_rhodes_visit_to_the_colossus_desc: "콜로서스의 유적은 더 이상 서 있지 않지만, 여전히 멀고 가까운 곳에서 온 많은 이들이 방문하고 있습니다. 저 또한 그 유적을 직접 방문하여 고대인들의 솜씨를 감상하고 싶습니다." # 8090957381780642129
   activity_RICE_rhodes_visit_to_the_colossus_selection_tooltip: "콜로서스 유적지를 방문하십시오.\n\n$RICE_rhodes_visit_colossus_ruins_context_tooltip$" # 18233067113765378646
   activity_RICE_rhodes_visit_to_the_colossus_host_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ $hellenic_pagan$ 또는 $semitic_religion$ [religion|E] 신앙을 따르는 [faith|E]일 경우 [piety_i|E][piety|E] 상실\n$BULLET_WITH_TAB$ 영감을 얻고 #P 유익한#! [character_modifier|E]를 얻을 확률" # 16749323573493017936
-  activity_RICE_rhodes_visit_to_the_colossus_guest_desc: "$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 상실" # 11361220463882271081
+  activity_RICE_rhodes_visit_to_the_colossus_guest_desc: "\n$BULLET_WITH_TAB$ [prestige_i|E][prestige|E]\n$BULLET_WITH_TAB$ [stress_loss_i|E][stress|E] 감소" # 12623914568557024174
   activity_RICE_rhodes_visit_to_the_colossus_province_desc: "거상(巨像)의 폐허가 아직 이곳에 서 있군... 적어도 지금은 말이지." # 9798946596612828841
   activity_RICE_rhodes_visit_to_the_colossus_destination_selection: "$activity_RICE_rhodes_visit_to_the_colossus_province_desc$" # 7956905508687039076
   activity_RICE_rhodes_visit_to_the_colossus_guest_help_text: "$activity_RICE_rhodes_visit_to_the_colossus$" # 8565780194739521101

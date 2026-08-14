@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_all_in_attendance: "행사에 참석하는 모든 이들" # 12280657639279470768
   activity_venerate_ancestors: "조상 숭배 의식" # 10570401648515158897
   activity_venerate_ancestors_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] 조상 현양 의식" # 5702792850503759320

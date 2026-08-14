@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_any_realm_province_jungle_or_forest_req: "귀하의 [realm|E] 내 최소한 한 곳의 [county|E]가 #V forest#! 또는 #V jungle#! [terrain|E]를 가지고 있습니다." # 18428387346463876301
   RICE_domicile_jungle_or_forest_req: "귀하의 [domicile|E]는 #V forest#! 또는 #V jungle#! [terrain|E] 지역에 위치하고 있습니다." # 4293822675949282957
   RICE_any_held_county_southeast_asia_req: "당신은 [GetGeographicalRegion('world_asia_southeast').GetName]에 속한 [county|E]를 하나 이상 소유하고 있습니다." # 5247792654969477829
@@ -116,7 +116,7 @@
   RICE_SEA_manage_sea_lanes_desc_sea_nomad: "우리는 [GetGeographicalRegion('world_asia_southeast').GetName]에서 온 [Glossary( 'sea nomads', 'SEA_NOMADS_GLOSS' )]로서, 우리 삶의 대부분을 바다에서 보냅니다. 해상 영토의 번영을 유지하기 위해서는 인근 해로에 대한 통제력을 강화하는 것이 필수적입니다." # 9053556705878449642
   RICE_SEA_manage_sea_lanes_desc: "[Glossary( 'sea nomads', 'SEA_NOMADS_GLOSS' )]라 불리는 이들은 [GetGeographicalRegion('world_asia_southeast').GetName] 출신으로, 평생의 대부분을 바다 위에서 보냅니다. 이들과의 관계를 활용하여 우리의 해상 영토 번영을 유지할 수 있을 것입니다." # 4407985989479567396
   RICE_SEA_manage_sea_lanes_effect_tooltip_1: "이 [decision|E]의 [gold_i|E] [gold|E] 비용은 당신이 소유한 해안 [counties|E]의 수에 따라 달라집니다." # 7479401081392024589
-  RICE_SEA_manage_sea_lanes_confirm: "이 재물을 수확합시다!" # 13935980573858451474
+  RICE_SEA_manage_sea_lanes_confirm: "부려먹어 주마!" # 17230838319717440658
   RICE_SEA_manage_sea_lanes_context_tooltip: "#emphasis 역사적 배경:#! 현대에 들어 차별과 소외를 겪었지만, 동남아시아의 [Glossary( 'sea nomads', 'SEA_NOMADS_GLOSS' )]들은 역사적으로 이 지역의 정치와 경제에서 주요 행위자들이었습니다. 통치자들은 무역로를 보호하고 상인들을 돕기 위해 다양한 해상 유목민들과 의도적으로 협력하거나, 예를 들어 그들을 해적이나 용병으로 고용하기도 했습니다." # 3154839949062576880
   aslian.0000.t: "xxxxx" # 1951045980481827005
   aslian.0000.desc: "xxxxx" # 1951045980481827005

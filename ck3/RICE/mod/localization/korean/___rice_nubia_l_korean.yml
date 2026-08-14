@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   ghw_region_egypt: "이집트" # 1527737437185347727
   RICE_greater_nubia_region: "누비아" # 3864574685605417297
   RICE_greater_nubia_region_capital_req: "[capital|E]는 [GetGeographicalRegion('RICE_greater_nubia_region').GetName]에 위치해 있습니다." # 14519416141664818543
@@ -128,11 +128,11 @@
   dynn_RICE_futuh_al_shami: "푸투히드" # 10390218537760648717
   RICE_cattle_raid_intent: "가축 강탈" # 2574511034992773507
   RICE_cattle_raid_intent_desc: "$RICE_cattle_raid_intent_loot$\n$RICE_cattle_raid_intent_flavor$" # 15787426988387723864
-  RICE_cattle_raid_intent_loot: "#bold 획득 가능한 전리품 종류:#!\n\t\t$BULLET$ [gold_i][gold|E]: #V 50%#! \n\t\t$BULLET$ [legitimacy_i][legitimacy|E]: #V 25%#!" # 15869850375020631419
+  RICE_cattle_raid_intent_loot: "#bold 전리품 유형:#!\n\t\t$BULLET$ [gold_i][gold|E]: #V 50%#!\n\t\t$BULLET$ [legitimacy_i][legitimacy|E]: #V 25%#!" # 13624264801004652069
   RICE_cattle_raid_intent_flavor: "#weak 소의 수는 한 개인의 힘, 부, 가치를 측정하는 척도입니다. 자신의 소를 지킬 수 없는 자는 그것을 소유할 자격이 없습니다!#" # 910584835433122003
   RICE_cattle_raid_intent_nomadic: "$RICE_cattle_raid_intent$" # 11906667728136080402
   RICE_cattle_raid_intent_nomadic_desc: "$RICE_cattle_raid_intent_nomadic_loot$\n$RICE_cattle_raid_intent_nomadic_flavor$" # 18219423733037565884
-  RICE_cattle_raid_intent_nomadic_loot: "#bold 약탈 유형:#!\n\t\t$BULLET$ [herd_i][herd|E]: #V 50%#!\n\t\t$BULLET$ [legitimacy_i][legitimacy|E]: #V 25%#!" # 16865246143396035230
+  RICE_cattle_raid_intent_nomadic_loot: "#bold 전리품 유형:#!\n\t\t$BULLET$ [herd_i][herd|E]: #V 50%#!\n\t\t$BULLET$ [legitimacy_i][legitimacy|E]: #V 25%#!" # 17546555126061452371
   RICE_cattle_raid_intent_nomadic_flavor: "#weak 소의 수는 한 개인의 힘, 부, 가치를 측정하는 척도입니다. 자신의 소를 지킬 수 없는 자는 그것을 소유할 자격이 없습니다!#" # 910584835433122003
   RICE_nubia_egypt_border_official_both_loc: "산악의 군주이자 아스완의 총독" # 5145142531308880855
   RICE_nubia_egypt_border_official_lord_of_the_mountain_loc: "산의 군주" # 6028450127954074373
@@ -225,6 +225,8 @@
   Maholdis: "마홀디스" # 18249625427042592597
   Zalaf: "잘라프" # 5203559638448802789
   dynn_RICE_nubia_ashkeit: "아슈케이트" # 11809420027046131023
+  RICE_every_courtier_prefers_byzantine_clothing: "비잔티움 양식의 의복을 선호하는 모든 [courtier|E]" # 14780221416049128087
+  RICE_every_courtier_prefers_indigenous_clothing: "아프리카 양식의 의복을 선호하는 모든 [courtier|E]" # 184392014992227016
   RICE_saint_catherine_ashtiname_of_muhammad: "무함마드의 아슈티나메" # 10995872647668662704
   RICE_saint_catherine_ashtiname_of_muhammad_desc: "#bold 무함마드의 아슈티나메#!, 혹은 무함마드의 언약은 무슬림 예언자 무함마드가 성 카타리나 수도원의 기독교 수도사들에게 부여한 보호와 특권을 명시한 헌장입니다. 원본 문서는 오늘날까지도 안전한 보관을 위해 수도원에 보관되어 있습니다." # 11670226967377225924
   RICE_saint_catherine_bedouin_guards: "베두인 근위대" # 17729499845432448129
@@ -829,7 +831,7 @@
   activity_RICE_nubia_banganarti_pilgrimage_context_tooltip: "$RICE_nubia_rebuild_banganarti_church_context_tooltip$" # 10345541976981777142
   activity_RICE_nubia_banganarti_pilgrimage_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ 성공적인 꿈의 배양을 통해 #P 긍정적인#! [character_modifier|E]를 얻을 확률" # 679370252133557830
   activity_RICE_nubia_banganarti_pilgrimage_guest_desc: "$activity_RICE_nubia_banganarti_pilgrimage_host_desc$" # 15982209297108697874
-  activity_RICE_nubia_banganarti_pilgrimage_province_desc: "[GetTitleByKey('b_old_dongola').GetNameNoTier] 근처의 반가나르티는 [GetReligionByKey('buddhism_religion').GetName] 신봉자들에게 중요한 종교 유적지입니다." # 10767991392603468576
+  activity_RICE_nubia_banganarti_pilgrimage_province_desc: "[GetTitleByKey('b_old_dongola').GetNameNoTier] 근처의 방가르티는 [GetReligionByKey('christianity_religion').GetName] 신도들에게 중요한 성지입니다." # 2622227146492491860
   activity_RICE_nubia_banganarti_pilgrimage_destination_selection: "$activity_RICE_nubia_banganarti_pilgrimage_province_desc$" # 3948268037344402806
   activity_RICE_nubia_banganarti_pilgrimage_guest_help_text: "$activity_RICE_nubia_banganarti_pilgrimage$" # 6303052072129392391
   activity_RICE_nubia_banganarti_pilgrimage_predicted_cost: "[local_pilgrimage|E]의 비용은 [GetTitleByKey('b_old_dongola').GetNameNoTier] 근처 반가나르티로 향하는 [activity_options|E] 선택에 따라 달라집니다." # 4344758410506448631
@@ -855,13 +857,13 @@
   activity_RICE_coptic_saint_anthony_pilgrimage_context_tooltip: "xxxxxxxxxxxxxxxxxxxx" # 1743749288515391250
   activity_RICE_coptic_saint_anthony_pilgrimage_host_desc: "$activity_RICE_local_pilgrimage_host_desc$\n$BULLET_WITH_TAB$ 수도주의 및 금욕주의와 관련된 #P 긍정적인#! [character_modifiers|E] 획득" # 11544580377660969418
   activity_RICE_coptic_saint_anthony_pilgrimage_guest_desc: "$activity_RICE_coptic_saint_anthony_pilgrimage_host_desc$" # 206726432578865111
-  activity_RICE_coptic_saint_anthony_pilgrimage_province_desc: "[GetTitleByKey('b_quzlum').GetNameNoTier]의 동쪽에 위치한 성 안토니오 수도원은 [GetReligionByKey('buddhism_religion').GetName] 신봉자들에게 중요한 성지입니다." # 14467901886570680137
+  activity_RICE_coptic_saint_anthony_pilgrimage_province_desc: "[GetTitleByKey('b_quzlum').GetNameNoTier] 동쪽에 있는 성 안토니우스 수도원은 [GetReligionByKey('christianity_religion').GetName] 신도들에게 중요한 성지입니다." # 13732023963013854561
   activity_RICE_coptic_saint_anthony_pilgrimage_destination_selection: "$activity_RICE_coptic_saint_anthony_pilgrimage_province_desc$" # 7769249630017076177
   activity_RICE_coptic_saint_anthony_pilgrimage_guest_help_text: "$activity_RICE_coptic_saint_anthony_pilgrimage$" # 13158477829860983485
   activity_RICE_coptic_saint_anthony_pilgrimage_predicted_cost: "성 안토니 수도원으로 떠나는 [local_pilgrimage|E]의 비용은 선택하는 [activity_options|E]에 따라 달라집니다." # 12791542908474389904
   activity_RICE_coptic_saint_anthony_pilgrimage_conclusion_desc: "우리의 [GetActivityType( 'activity_RICE_coptic_saint_anthony_pilgrimage' ).GetName]이 끝났습니다. 위대한 성 안토니와 관련된 성지를 순례한 것은 영적으로 충만한 경험이었습니다!" # 7894540060076945541
   RICE_coptic_saint_anthony_pilgrimage_completed_log_title: "$activity_RICE_coptic_saint_anthony_pilgrimage$ 완료됨" # 15132120608416402842
-  RICE_coptic_saint_anthony_pilgrimage_completed_log: "[CHARACTER.GetShortUIName|U]께서 $b_mogao$ 동굴로의 [local_pilgrimage|E] 성지 순례를 마치셨습니다." # 15518226098763360418
+  RICE_coptic_saint_anthony_pilgrimage_completed_log: "[CHARACTER.GetShortUIName|U]이(가) 성 안토니우스 수도원으로 향하는 [CHARACTER.GetHerHis] [local_pilgrimage|E]을(를) 마쳤습니다." # 14545888367456787543
   TRAVEL_NAME_FOR_activity_RICE_coptic_saint_anthony_pilgrimage: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_coptic_saint_anthony_pilgrimage$" # 6916394343296794282
   RICE_coptic_saint_anthony_pilgrimage_gardens_log_title: "정원 조사하기" # 14791900569797934401
   RICE_coptic_saint_anthony_pilgrimage_gardens_log: "[CHARACTER.GetShortUIName|U]께서는 성 안토니오 수도원의 광대한 정원에서 영감을 받으셨습니다." # 17666802347944572829
@@ -1352,6 +1354,7 @@
   RICE_baqt_frontier_decision: "행정 나일강 경계 업무 수행" # 15918724782058738181
   RICE_baqt_frontier_decision_tooltip: "우리는 변경 지역 관리자로서 일상적인 임무를 수행해야 합니다." # 6820327184922747443
   RICE_baqt_frontier_decision_desc: "저는 [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetName]의 [ROOT.Char.Custom('RICE_nubia_egypt_border_official_gloss_type_loc')]로서, [RICE_baqt_treaty|E]의 조항에 따라 이집트와 누비아 사이의 국경을 유지하기 위해 저의 능력으로 관료제의 여러 기능을 조화롭게 활용합니다." # 15766338823472431736
+  RICE_baqt_frontier_decision_desc_alt: "[RICE_baqt_treaty|E]의 조건에 따라, 제1 폭포 지역의 국경 관료들은 이집트와 누비아 사이의 국경을 유지하기 위해 끊임없이 다양한 임무를 수행합니다." # 2536443393442768969
   RICE_baqt_frontier_decision_effect_tooltip_1: "#P 성공#! 이 관료적 과업에서 성공하면 [RICE_baqt_accord|E] [situation_phase|E]의 촉매제가 될 [situation|E]를 얻게 될 것이며, #N 실패#! 하면 [RICE_baqt_discord|E] [situation_phase|E]의 촉매제가 될 것입니다." # 3839437477536783114
   RICE_baqt_frontier_decision_effect_tooltip_2: "대부분의 선택지에서 추가적인 [gold_i|E] [gold|E]를 지불하여 성공 확률을 높일 수 있습니다." # 4309227063188584384
   RICE_baqt_frontier_decision_confirm: "또 서류 작업할 시간이군...." # 3533796864260762036
@@ -2429,7 +2432,7 @@
   nubia.0240.desc.conclusion: "수 주간의 준비 끝에 그날이 곧 다가오고 있으며, 우리는 지금 온 마을에서 수백 명의 사람들이 모여드는 것을 보고 있습니다. 저와 같은 부유하고 영향력 있는 지역 사회 구성원들은 이 행사를 위해 희생되어 먹힐 수많은 소와 염소를 가져왔습니다." # 15478123019157503550
   nubia.0240.a: "시끄럽긴 하지만 열기는 대단하군!" # 16241848290733244333
   nubia.0241.t: "짐승 제물" # 862698810255254415
-  nubia.0241.desc: "#italic 시비르#!가 마침내 시작되었으며, 우리는 우리 공동체의 지속적인 성공을 통해 계절의 변화를 축하할 수 있습니다.\n\n이전에," # 3186489544699660222
+  nubia.0241.desc: "#italic 시비르#!가 마침내 시작되었으며, 우리는 공동체에서의 추가적인 성공과 함께 계절의 변화를 축하할 수 있습니다.\n\n일찍이," # 2633161501477973677
   nubia.0241.desc.chaplain: "저의 [chaplain.GetCouncilTitle], [chaplain.GetTitledFirstName]께서 수석 [ROOT.Char.Custom('DefaultPriestTitle')]로서 임석해 있습니다" # 1878868969375373964
   nubia.0241.desc.no_chaplain: "지역 마을 중 한 곳에서 온, 선두에 선 [ROOT.Char.GetFaith.GetAdjective] [ROOT.Char.Custom('DefaultPriestTitle')]" # 9304839663686950569
   nubia.0241.desc.conclusion: "마법 의식을 행하며 염소와 소에게 흰 재로 표시를 했습니다. 이제 모든 가축이 끌려와 희생될 때, 우리 모두가 모였습니다. 우렁찬 기세로 짐승들은 창에 찔리고, 선두의 [ROOT.Char.Custom('DefaultPriestTitle')]께서는 그 피를 모두에게 뿌려 우리가 [ROOT.Char.GetFaith.PantheonTerm]의 축복을 받도록 해줍니다.\n\n우리가 잔치를 벌이고 술을 마시며 즐거워하고, 용맹하고 강인한 젊은이들이 힘과 운동 경기로 서로 겨루는 모습을 지켜보는 동안, 이 지역에는 큰 환희의 기운이 감돕니다." # 1845701843087850833

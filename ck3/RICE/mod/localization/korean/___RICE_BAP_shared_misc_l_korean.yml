@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICEmisc.0010.t: "전환" # 3621948411690603070
   RICEmisc.0010.desc.host: "제가 [host.GetFaith.GetName]으로 개종했기 때문에, 원래 계획했던 [activity_type.GetNameNoTooltip()]은 더 이상 저에게 큰 의미가 없습니다. 그 행사 자체가 혹은 행해질 방식이 제가 따르는 새로운 가르침에 부합하지 않기 때문입니다. 그러므로 저는 이 행사를 취소했습니다." # 8363546993524140887
   RICEmisc.0010.desc.not_host: "[host.GetTitledFirstName]께서 [host.GetFaith.GetName]으로 개종하셨기 때문에, [host.GetSheHe]께서 원래 계획하셨던 [activity_type.GetNameNoTooltip()]은 취소되었습니다. 이는 해당 행사가 [host.GetSheHe]가 따르는 새로운 교리에 부합하지 않거나, 그 방식을 따를 수 없기 때문입니다.\n\n솔직히 말해 곤란한 상황이군요." # 4447609793466227099

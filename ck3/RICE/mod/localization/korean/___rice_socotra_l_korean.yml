@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_socotra_bawarij_spawn_event_troops: "바와리지 해적" # 16293603228550290416
   mercenary_company_bawarij_corsairs: "바와리지 해적들" # 11387657845203609414
   mercenary_company_bawarij_corsairs_article: "그" # 8417196396288596625
@@ -337,7 +337,7 @@
   RICE_socotra_cast_insular_sorcery_bless_ships_desc: "$RICE_socotra_cast_insular_sorcery_bless_ships_name$" # 3745399885678546553
   RICE_socotra_cast_insular_sorcery_bless_ships_tooltip: "#italic 바다는 위험하니, 우리의 배와 친구들의 배가 안전하게 우리의 해안에 도착하고 떠날 수 있도록 하는 것이 중요하오.#!" # 11617076519883735555
   RICE_socotra_cast_insular_sorcery_bless_ships_effect_tooltip_1: "[prestige_i|E] [prestige|E], [piety_i|E] [piety|E], 그리고 [legitimacy_i|E] [legitimacy|E] 획득량을 증진하는 [modifier|E]를 획득합니다." # 13413359275851206620
-  RICE_socotra_cast_insular_sorcery_bless_ships_effect_tooltip_2: "앞으로 #V 10#!년 동안 매년, 당신은 대략 [piety_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_piety_gain')|0]#! [prestige|E] [piety|E], [prestige_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_prestige_gain')|0]#! [prestige|E], 그리고 [legitimacy_i|E] #V [GetPlayer.MakeScope.ScriptValue('miniscule_legitimacy_gain')|0]#! [prestige|E] [legitimacy|E]를 얻을 기회를 갖게 됩니다." # 3026630730319533358
+  RICE_socotra_cast_insular_sorcery_bless_ships_effect_tooltip_2: "향후 #V 10#!년 동안 매년 [piety_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_piety_gain')|0]#! [prestige|E] 및 [piety|E], [prestige_i|E] #V [GetPlayer.MakeScope.ScriptValue('minor_prestige_gain')|0]#! [prestige|E], 그리고 [legitimacy_i|E] #V [GetPlayer.MakeScope.ScriptValue('miniscule_legitimacy_gain')|0]#! [legitimacy|E]를 얻을 기회가 있습니다" # 11337694256857142571
   RICE_socotra_indian_ocean_legacy_track_name: "해상 무역" # 17418942655208309308
   RICE_socotra_indian_ocean_legacy_track_desc: "인도양 무역로에 대한 통제력 확보로 더 큰 부와 영향력을 얻을 수 있습니다." # 3171849581766584448
   RICE_socotra_indian_ocean_legacy_1_name: "동방 귀족" # 18409544196705439636

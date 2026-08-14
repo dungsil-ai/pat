@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   RICE_greater_egypt: "대이집트" # 4570499743638039573
   RICE_greater_egypt_geographical_req: "[GetGeographicalRegion('RICE_greater_egypt').GetName] 내에 최소 하나 이상의 [county|E]를 소유하십시오." # 13211017081181476459
   RICE_pray_at_oracle_of_amun_context_tooltip: "#emphasis 역사적 배경:#! 아문 신탁소는 고대 근동에서 가장 유명했던 신탁소 중 하나였습니다. 전해지기로는 알렉산드로스 대왕이 시와 오아시스로 가서 신탁소로부터 자신이 이집트의 정당하고 신성한 파라오임을 확인받았다고 합니다." # 9719113564022014340
@@ -53,7 +53,6 @@
   RICE_siwa_kharshif_structures_decision_desc: "[Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )]가 건축 자재로서 얼마나 효과적인지는 시간이 거듭될수록 증명되고 있습니다. 하지만 [GetTitleByKey('b_siwa').GetNameNoTier]의 이러한 전통적인 건축 자재들은 언제나 약간의 보수가 필요합니다." # 12788106220346167503
   RICE_siwa_kharshif_structures_decision_effect_tooltip_1: "xxxxx" # 1951045980481827005
   RICE_siwa_kharshif_structures_decision_confirm: "일을 시작합시다!" # 16358131364908957336
-  RICE_siwa_kharshif_structures_decision_context_tooltip: "#emphasis Historical Context:#! $KHARSHIF_GLOSS$" # 3765366036956764941
   RICE_siwa_kharshif_modifier: "카르시프 구조물 유지" # 6526367982534205819
   RICE_siwa_kharshif_modifier_desc: "지역 통치자들은 [Glossary( 'Kharshif', 'KHARSHIF_GLOSS' )] 블록이 시와 오아시스 구조물에서 아주 오랫동안 유지될 수 있도록 자원을 투입했습니다." # 10879566362646216126
   RICE_siwa_oracle_of_amun_host_memory: "[GetTitleByKey('b_siwa').GetNameNoTier]로 가서 [GetActivityType( 'activity_RICE_siwa_oracle_of_amun' ).GetName]를 행하고 그 지혜를 구했습니다." # 308808014227150424
@@ -104,8 +103,8 @@
   RICE_siwa_oracle_of_amun_legacy_intent_header: "유산:" # 970470671604287214
   RICE_siwa_oracle_of_amun_legacy_intent: "유산:" # 11311191390379473397
   RICE_siwa_oracle_of_amun_legacy_intent_desc: "신탁을 찾아가면, 알렉산더 대왕처럼 역사에 당신의 자리를 굳힐 수 있을지도 모릅니다. 이 [activity|E]가 끝날 때, 당신이 선택하는 [activity_option|E]에 따라 #V 15#!, #V 30#!, 또는 #V 45#!의 [dynasty_prestige|E]를 얻겠지만, 평소보다 절반의 [piety_i|E] [piety|E]만 얻게 됩니다." # 1746410725741804880
-  RICE_siwa_oracle_of_amun_completed_log_title: "온천 방문 완료" # 1616705207528316220
-  RICE_siwa_oracle_of_amun_completed_log: "[CHARACTER.GetShortUIName|U]께서 [PROVINCE.GetBaronyNameExplicitly]의 [hot_springs|E] 방문을 마치셨습니다." # 14798992536289298181
+  RICE_siwa_oracle_of_amun_completed_log_title: "아몬의 신탁 방문 완료" # 10086887323458021212
+  RICE_siwa_oracle_of_amun_completed_log: "[CHARACTER.GetShortUIName|U]이(가) [PROVINCE.GetBaronyNameExplicitly]에 있는 아몬의 신탁 방문을 마쳤습니다" # 8391908707792852717
   TRAVEL_NAME_FOR_activity_RICE_siwa_oracle_of_amun: "[Character.GetFirstNamePossessiveNoTooltip] $activity_RICE_siwa_oracle_of_amun$" # 7895325628518225019
   RICE_siwa_oracle_of_amun_offering_amount: "아문에게 추가적인 봉헌물" # 4151767217835794709
   activity_RICE_siwa_visit_hibis_host_an_a: "$host_activity_a$" # 13713790857143020716

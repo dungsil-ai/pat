@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   YIDAM_GLOSS: "#bold 이담#!은 [GetReligionByKey('bon_religion').GetAdjective] 종교와 티베트 [GetReligionByKey('buddhism_religion').GetName]에서 영적 깨달음에 도달하는 것을 돕는 명상 본존입니다.\n이는 이 종교들의 영적 수행의 중요한 부분이며, 특히 #italic 본존 요가#! (devatayoga)는 기도와 만트라 낭송, 또는 본존 시각화를 포함합니다." # 11973059711811581845
   NAT_GLOSS: "#bold 나트#!는 전통적으로 [GetGeographicalRegion('world_burma').GetName]에서 숭배되는 신들입니다. 이 신들에 대한 숭배는 일반적인 버마 민속 종교와 함께 [GetReligionByKey('buddhism_religion').GetAdjective] 종교의 관습들과 강하게 융합되었습니다." # 16021395701871274466
   RICE_select_personal_deity_tibet_decision: "개인적인 이담 선택" # 18383213587011213312

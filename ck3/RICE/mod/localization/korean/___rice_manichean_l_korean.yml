@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: afbe391
+# PAT verified upstream: f8e5fcd
   dynn_RICE_shingqo_sheli_tutung: "셸리 투퉁" # 15697847950137383942
   dynn_RICE_tatatunga: "타타퉁기드" # 7245561029469559383
   RICE_former_uyghur_influence_region: "$e_uyghur_khanate$의 영향권" # 17894564513354984462
@@ -48,6 +48,7 @@
   pingshan_5E73_5C71: "핑산" # 14278756574157384330
   Shingqo: "싱쿼" # 13082849014218134472
   deng_77AA: "등" # 7218901232122932001
+  abu_ali_said: "아부 알리 사이드" # 2804565084682650338
   RICE_manichean_reviver_legend_name: "마니의 발현" # 2137502468890136033
   RICE_manichean_reviver_legend_desc: "마니의 추종자들, 즉 마지막 예언자이자 예수 그리스도의 사도이며 빛의 붓다가 세상 곳곳에서 [faith.DevilName]의 하수인들에게 박해받으며 모든 희망을 잃었을 때, [reviver.GetTitledFirstName] 께서는 신도들을 이끌고 마니의 성지인 [GetGeographicalRegion('world_mesopotamia').GetName]을 되찾아 그분의 가르침을 그곳에 다시 전파하셨습니다." # 14573389301963405171
   RICE_manichean_reviver_legend_chapter_opening_new_title: "[ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName]가 마니교의 독실한 신봉자들을 매번 패배시키는 듯한 암울한 날들이 있었습니다. 교회의 탄압과 신성 모독이 만연했으며, 심지어 교회 구성원들 중 다수조차 죄와 절망에 빠져들었습니다." # 9238461752830338122
