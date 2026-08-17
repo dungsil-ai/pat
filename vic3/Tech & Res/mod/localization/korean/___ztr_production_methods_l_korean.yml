@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 4aee17b
+# PAT verified upstream: 147abc3
   pmg_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pm_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pmg_mendelejew_isoprene: "합성 고무" # 10497239447374670003
@@ -800,3 +800,6 @@
   pm_no_carbon_capture: "탄소 포집 없음" # 3150940174889447937
   pm_co2_enhanced_oil_recovery: "CO2-EOR 저장" # 10459493305524208722
   pm_urban_carbon_capture: "도시 탄소 포집" # 16224591405543966408
+  pmg_aerial_trade_trade_center: "공중 교역량" # 2400830276553252491
+  pm_no_aerial_trade: "공중 교역 없음" # 9205996462694201456
+  pm_aerial_trade: "항공 화물 네트워크" # 6592810915038195840

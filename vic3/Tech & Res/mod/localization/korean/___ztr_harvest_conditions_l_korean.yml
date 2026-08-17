@@ -1,0 +1,36 @@
+﻿l_korean:
+# PAT verified upstream: 147abc3
+  ztr_extreme_heatwave: "극심한 폭염" # 17611660901669962774
+  ztr_extreme_heatwave_desc: "지역 기상 관측 이래 유례를 찾을 수 없는 수주일간의 지속되는 폭염. 들판은 시들고, 가축은 방목지에서 쓰러지며, 도시가 가장 큰 타격을 입습니다. 벽돌과 아스팔트는 밤새 열을 품고 노인과 빈민층 사이에서 사망자가 급증합니다." # 4686536985311327289
+  ztr_megadrought: "대가뭄" # 12083588432082449195
+  ztr_megadrought_desc: "건기가 아니라 건조한 십년기입니다. 저수지는 취수선 아래로 떨어지고, 우물은 몇 번이고 더 깊이 파이며, 더 습한 기후를 위해 건설된 관개 시설은 이제 더 이상 존재하지 않는 물을 나릅니다. 방목할 풀이 없어 가축은 서둘러 처분됩니다." # 17038038348399865173
+  ztr_hurricane: "허리케인" # 5917870714338718717
+  ztr_hurricane_desc: "더 따뜻해진 바다에 의해 해안으로 밀려든 열대 저기압. 며칠 만에 들이닥쳐 몇 주 동안 머물며 항만 시설, 철도 제방, 해안 도시들을 휩쓸어 갑니다. 바다가 따뜻해질수록 상륙 횟수가 잦아지고 그 위력도 더 맹렬해집니다." # 1131314776682046569
+  ztr_extreme_wildfire: "대형 산불" # 14590980130562819015
+  ztr_extreme_wildfire_desc: "진화할 수 없고 오로지 피해야만 하는 불길. 가뭄으로 바짝 마른 목재와 열풍이 방화선을 파내는 것보다 더 빠르게 전선을 확산시키고, 연기는 화재 지역에서 수백 마일 떨어진 곳까지 도로와 숨통을 막아섭니다." # 11493191607440470974
+  ztr_coastal_flooding: "해안 침수" # 10949789384846637879
+  ztr_coastal_flooding_desc: "바다가 저지대를 집어삼켰고 물러설 기미를 보이지 않습니다. 폭풍해일은 매년 내륙 더 깊숙이 도달하고, 염분이 대수层과 제방 뒤의 농경지로 스며들며, 한 세대 전에 세워진 방조제는 이제 너무 낮아졌습니다." # 385318646562896877
+  state_harvest_condition_ztr_extreme_heatwave_impact_mult: "[GetHarvestConditionType('ztr_extreme_heatwave').GetName] [concept_harvest_condition] 영향" # 13592735972821704044
+  state_harvest_condition_ztr_extreme_heatwave_impact_mult_desc: "극심한 폭염의 영향에 대한 증가 또는 감소." # 6340272177333765782
+  state_harvest_condition_ztr_extreme_heatwave_duration_mult: "[GetHarvestConditionType('ztr_extreme_heatwave').GetName] [concept_harvest_condition] 지속 시간" # 9152235632438018177
+  state_harvest_condition_ztr_extreme_heatwave_duration_mult_desc: "극심한 폭염의 지속 시간에 대한 증가 또는 감소." # 1650790041989241948
+  state_harvest_condition_ztr_megadrought_impact_mult: "[GetHarvestConditionType('ztr_megadrought').GetName] [concept_harvest_condition] 영향" # 8839641957956345867
+  state_harvest_condition_ztr_megadrought_impact_mult_desc: "대가뭄의 영향에 대한 증가 또는 감소." # 1113157984465482586
+  state_harvest_condition_ztr_megadrought_duration_mult: "[GetHarvestConditionType('ztr_megadrought').GetName] [concept_harvest_condition] 지속 시간" # 2775300558257227686
+  state_harvest_condition_ztr_megadrought_duration_mult_desc: "대가뭄의 지속 시간에 대한 증가 또는 감소." # 16090126243947999096
+  state_harvest_condition_ztr_hurricane_impact_mult: "[GetHarvestConditionType('ztr_hurricane').GetName] [concept_harvest_condition] 영향" # 17624108687260208374
+  state_harvest_condition_ztr_hurricane_impact_mult_desc: "허리케인의 영향에 대한 증가 또는 감소." # 1159617650476026691
+  state_harvest_condition_ztr_hurricane_duration_mult: "[GetHarvestConditionType('ztr_hurricane').GetName] [concept_harvest_condition] 지속 기간" # 9031441445792654629
+  state_harvest_condition_ztr_hurricane_duration_mult_desc: "허리케인의 지속 기간이 증가하거나 감소합니다." # 233265132759857311
+  state_harvest_condition_ztr_extreme_wildfire_impact_mult: "[GetHarvestConditionType('ztr_extreme_wildfire').GetName] [concept_harvest_condition] 영향" # 14624532202132996550
+  state_harvest_condition_ztr_extreme_wildfire_impact_mult_desc: "대형 산불의 영향이 증가하거나 감소합니다." # 10172790874027512305
+  state_harvest_condition_ztr_extreme_wildfire_duration_mult: "[GetHarvestConditionType('ztr_extreme_wildfire').GetName] [concept_harvest_condition] 지속 기간" # 7215740471227515421
+  state_harvest_condition_ztr_extreme_wildfire_duration_mult_desc: "대형 산불의 지속 기간이 증가하거나 감소합니다." # 11187141980974179822
+  state_harvest_condition_ztr_coastal_flooding_impact_mult: "[GetHarvestConditionType('ztr_coastal_flooding').GetName] [concept_harvest_condition] 영향" # 12223360717825878692
+  state_harvest_condition_ztr_coastal_flooding_impact_mult_desc: "해안 침수의 영향이 증가하거나 감소합니다." # 1017506091881869852
+  state_harvest_condition_ztr_coastal_flooding_duration_mult: "[GetHarvestConditionType('ztr_coastal_flooding').GetName] [concept_harvest_condition] 지속 기간" # 10452095238672558561
+  state_harvest_condition_ztr_coastal_flooding_duration_mult_desc: "해안 침수의 지속 기간이 증가하거나 감소합니다." # 11703769556752595245
+  modifier_cyclone_relief: "허리케인 구호 활동" # 4321241684107076021
+  modifier_cyclone_relief_desc: "긴급 복구, 대피소 운영 및 해안 구호로 인해 국가 재정에 일시적인 부담이 가중되고 있습니다." # 6659934082080461675
+  modifier_mega_flood_relief: "해안 방어 비상사태" # 8488343991016245744
+  modifier_mega_flood_relief_desc: "방파제 건설과 보강 공사에 막대한 공공 자금이 소모되고 있습니다." # 10631730233718892080

@@ -1,0 +1,26 @@
+﻿l_korean:
+# PAT verified upstream: 147abc3
+  building_synthetics_plant: "화장품 공장" # 15970412718626794292
+  building_synthetics_plant_lens_option: "$building_synthetics_plant$ 확장" # 10256421238476698237
+  building_synthetics_plant_throughput_add: "화장품 공장 [concept_throughput]" # 6979574026908716522
+  building_synthetics_plant_throughput_add_desc: "화장품 공장의 [concept_throughput]을(를) 상승시킵니다." # 17250399697090598277
+  building_chemical_plant: "화학 공장" # 10368046740022571030
+  building_chemical_plant_lens_option: "$building_chemical_plant$ 확장" # 5017897586571034049
+  building_chemical_plant_throughput_add: "화학 공장 [concept_throughput]" # 2525268111823256834
+  building_chemical_plant_throughput_add_desc: "화학 공장의 [concept_throughput]을(를) 상승시킵니다." # 93620522649920289
+  pm_no_artificial_fibers: "인공 섬유 없음" # 8374846231352534370
+  pm_gas_streetlights: "석탄 가스 가로등" # 2175461039743912501
+  fertilizer: "화학물질" # 7832745592335672076
+  building_electrics_industry: "통신 산업" # 11354379382514858817
+  building_electrics_industry_throughput_add: "통신 산업 [concept_throughput]" # 3203785911564388441
+  building_electrics_industry_throughput_add_desc: "통신 산업의 [concept_throughput]을(를) 상승시킵니다." # 15561462561705386460
+  prestige_good_turin_automobiles: "유럽의 자동차" # 4822534657261849303
+  prestige_good_ford_automobiles: "미국의 자동차 산업" # 5231723659918433371
+  building_railway: "인프라" # 7490123630846811662
+  building_railway_lens_option: "$building_railway$ 확장" # 4635407018166439435
+  building_railway_throughput_add: "인프라 [concept_throughput]" # 520736171676392842
+  building_railway_throughput_add_desc: "기반 시설의 [concept_throughput]을(를) 상승시킵니다." # 5191552997782563516
+  pmg_base_building_railway: "철도 인프라" # 9475185149790393798
+  je_end_strike_tt: "#v 파업#!이 종료되었습니다." # 6268542559769619919
+  pm_telephones: "촛대형 전화기" # 13351277449905609951
+  merchant_marine: "상선대" # 159769245574833208

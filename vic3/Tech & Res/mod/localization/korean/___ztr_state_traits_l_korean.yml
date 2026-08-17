@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 4aee17b
+# PAT verified upstream: 147abc3
   state_building_copper_mine_max_level_add: "구리 광산 최대 레벨" # 6503384404030707395
   state_building_copper_mine_max_level_add_desc: "구리 광산 건물의 최대 단계에 대한 혜택 또는 불이익." # 17412773853158632756
   state_trait_nano_copper_mine: "매우 작은 구리 광산" # 13393841037416574803

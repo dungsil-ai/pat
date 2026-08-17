@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 4aee17b
+# PAT verified upstream: 147abc3
   rule_ztr_decolonization_content: "탈식민화 콘텐츠 (기술 및 연구)" # 15527103058950690597
   setting_allow_ztr_decolonization_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_decolonization_content_desc #high 활성화됨#!#!#!" # 5107633600088820908
   setting_allow_ztr_decolonization_content_desc: "1945년 이후의 #b 역사적인#! 경험을 위해, 이 캠페인 동안 일반적인 [Concept('concept_decolonization','$concept_decolonization$')] 콘텐츠를 허용합니다." # 18035629164456136403
@@ -24,3 +24,8 @@
   setting_allow_ztr_atom_bomb_content_desc: "이번 캠페인 동안 #i 원자 폭탄#! 콘텐츠를 허용합니다. AI는 이전에 사용된 적이 없는 경우에만 핵을 사용합니다. 그 이후에는 플레이어만 사용할 수 있으며, AI는 플레이어의 공격으로부터 자신을 방어할 때만 사용할 수 있습니다." # 6278455353496255236
   setting_no_ztr_atom_bomb_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_atom_bomb_content_desc #high 비활성화됨#!#!#!" # 4652586534630264045
   setting_no_ztr_atom_bomb_content_desc: "더 바닐라 게임에 가까운 경험을 위해 이번 캠페인 동안 #i 원자 폭탄#! 콘텐츠를 비활성화합니다." # 7604286959078389313
+  rule_ztr_climate_disasters: "기후 재난 (기술 및 연구)" # 7618628169183940381
+  setting_allow_ztr_climate_disasters: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_climate_disasters_desc #high 활성화됨#!#!#!" # 11309209653213049160
+  setting_allow_ztr_climate_disasters_desc: "이번 캠페인 동안 [Concept('concept_pollution','$concept_pollution$')]로 인해 발생하는 [Concept('concept_harvest_condition','$concept_harvest_condition$')] 허용: 극심한 폭염, 대가뭄, 허리케인, 대형 산불, 해안 침수 등은 지구 온난화에 따라 빈도와 심각성이 증가합니다." # 12709692329104591190
+  setting_no_ztr_climate_disasters: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_climate_disasters_desc #high 비활성화됨#!#!#!" # 14348422863061479148
+  setting_no_ztr_climate_disasters_desc: "기후로 인한 [Concept('concept_harvest_condition','$concept_harvest_condition$')]을(를) 비활성화합니다. 지구 온난화는 여전히 [Concept('concept_journal_entry','$concept_journal_entry$')]에서 추적되지만 새로운 재난은 발생하지 않습니다." # 10561547902096778703

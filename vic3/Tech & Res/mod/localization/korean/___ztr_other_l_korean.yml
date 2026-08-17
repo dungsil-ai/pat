@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 4aee17b
+# PAT verified upstream: 147abc3
   dlc_tech_res: "기술 및 연구" # 1062450317642946545
   dlc_tech_res_desc: "테크 & 레스는 1836년부터 1990년대, 그 이후까지 새로운 시대, 생산 기술 및 산업 역학을 포함한 심오하고 몰입감 있는 기술 발전 시스템을 추가하는 모드입니다." # 8384328505110313641
   dubois_state_trait_volcano: "화산" # 6792708077593121795
@@ -42,7 +42,7 @@
   ztr_geneva_convention: "제네바 협약 가입" # 8328164887717967179
   ztr_society_of_nations: "국제 연맹 회원국" # 9942084941736359378
   ztr_onu_member: "유엔 회원국" # 5850780921071490936
-  ztr_onu_permanent_member: "상임 유엔 회원국" # 16036503670904985583
+  ztr_onu_permanent_member: "UN 상임이사국" # 5200278235416003262
   ztr_un_resolution_veto_modifier: "유엔 결의안 거부" # 2710470628096133622
   ztr_un_resolution_used_veto_modifier: "유엔 결의안 거부권 행사" # 995780768989263584
   historical_population_of_germany: "19세기 호황" # 8751212409197186862
@@ -134,8 +134,8 @@
   ztr_eec_member: "유럽 경제 공동체 회원국" # 3262891299534771546
   ztr_eu_member: "EU 회원국" # 17046844086253143743
   EUROPEAN_UNION: "유럽 연합" # 16919209361880444817
-  ZTR_EU_INVITE_RESTRICTION: "우리가 [Concept('concept_european_union','$EUROPEAN_UNION$')]을 주도한다면 대상은 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유해야 하며, 그렇지 않다면 대상은 이를 보유해서는 안 됩니다." # 16980428900522927037
-  ZTR_EU_JOIN_RESTRICTION: "우리가 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유하고 있다면 대상 강대국 블록은 [Concept('concept_european_union','$EUROPEAN_UNION$')]이어야 하며, 그렇지 않다면 그렇게 되어서는 안 됩니다." # 12949186387891221248
+  ZTR_EU_INVITE_RESTRICTION: "우리가 [Concept('concept_european_union','$EUROPEAN_UNION$')] 권력 블록을 이끌 경우, 대상은 [Concept('concept_modifier','$ztr_eu_single_market$')] 수정치를 보유해야 합니다. 그렇지 않은 경우, 대상은 [Concept('concept_modifier','$ztr_eu_member$')] 수정치를 보유해서는 안 됩니다" # 10290839337786506147
+  ZTR_EU_JOIN_RESTRICTION: "우리가 [Concept('concept_modifier','$ztr_eu_single_market$')] 수정치를 보유한 경우, 대상 권력 블록은 [Concept('concept_european_union','$EUROPEAN_UNION$')]여야 합니다. 단일 시장 외곽의 EU 회원국인 경우, 어떠한 권력 블록에도 가입할 수 없습니다. 그렇지 않은 경우, 대상은 [Concept('concept_european_union','$EUROPEAN_UNION$')]여서는 안 됩니다" # 405921129960335589
   combat_unit_type_giant_death_robot: "거대 죽음의 로봇" # 4297619975635627934
   combat_unit_type_giant_death_robot_desc: "거대한 기계화 인공지능 병기는 첨단 무기, 방어 체계, 그리고 장갑을 갖추고 있으며, 전장에서 적군을 궤멸시킬 수 있습니다." # 16345664279852921073
   ztr_merge_power_bloc_diplomacy: "권력 블록 병합" # 7653944448458803827
@@ -380,3 +380,4 @@
   ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
   ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
   ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
+  ZTR_BOTH_EU_MEMBER: "양측 모두 이미 @eu! #blue_value 유럽연합#!에 속해 있습니다" # 12088231424707775313
