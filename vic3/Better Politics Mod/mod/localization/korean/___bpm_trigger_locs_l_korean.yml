@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) 극단주의자입니다" # 10888315677890559676
   NOT_TRIGGER_IS_EXTREMIST: "[concept_interest_group]은(는) #bold 극단주의자가 아닙니다#!" # 1052997727690249371
   TRIGGER_IS_EXTREMIST_FIRST: "[InterestGroup.GetName]은 극단주의 단체입니다." # 1194620366730389291

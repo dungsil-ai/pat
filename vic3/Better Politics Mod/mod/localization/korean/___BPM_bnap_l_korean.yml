@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   je_bpm_bnap_the_question_of_british_rule: "영국의 지배 문제" # 3664574684613462417
   je_bpm_bnap_the_question_of_british_rule_desc: "영국 통치의 문제가 북미 식민지에서 뜨거운 화제입니다." # 5484575420794044593
   je_bpm_bnap_the_question_of_british_rule_reason: "영국인들이 1763년부터 우리를 통치해왔지만, 이제 변화의 시기인가? 영국이 우리의 국사에 더 깊이 관여할수록 그들이 우리에게 요구하는 바도 커지겠지만, 그 대가로 우리가 얻을 수 있는 것 또한 많아질 것이다. 우리는 이를 받아들일 의향이 있는지, 아니면 런던과의 거리를 두어야 할지 결정해야 한다.\n\n영국인들은 우리의 행정 비용 중 #tooltippable;tooltip:[Country.GetTooltipTag],bpm_british_admin_payment_tt [Country.MakeScope.ScriptValue('bpm_british_administrative_payments_percent')|%0]#!을 부담한다." # 1020126260299186880

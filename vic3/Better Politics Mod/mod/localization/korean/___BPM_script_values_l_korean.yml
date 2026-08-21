@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   BPM_VALUE_BASE: "기본값" # 13147080206639149646
   BPM_VALUE_RANDOM: "임의의 값" # 13168522018957843162
   BPM_VALUE_FROM_NO_TECH_MASS_COMMS: "대중 통신 없음 [Concept('concept_technology', 'Tech')]" # 2830872744524753035

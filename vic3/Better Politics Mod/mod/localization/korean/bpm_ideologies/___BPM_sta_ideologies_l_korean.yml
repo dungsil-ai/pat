@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   ideology_sta_minimal_state: "최소 국가" # 4635885651136465683
   ideology_sta_minimal_state_desc: "#lore 국가가 존재한다면 최소한으로 존재해야 하며, 가능하다면 아예 존재하지 않아야 한다고 믿는 집단이다. #!" # 4220289211454636283
   ideology_sta_decentralized_state: "분권화된 국가" # 11635898823675299882

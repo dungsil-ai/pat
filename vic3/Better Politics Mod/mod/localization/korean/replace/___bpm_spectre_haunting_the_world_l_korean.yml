@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   je_communism_1: "종파 정당인가, 계급 정당인가?" # 17181685482648431360
   je_communism_1_reason: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName]와 여러 급진적인 [Concept('concept_bpm_ig_is_party_socialist','사회주의 정당')]들은 공통된 목표와 전술을 많이 공유하고 있으나, 조직적 결속력은 기껏해야 취약한 수준이며 심지어 분열되기까지 했습니다. [Concept('concept_bpm_ig_is_party_socialist','사회주의 정당')]들은 사회주의는 대중 노동 조직과 사회민주주의적 #N 전위대#!를 결합한 단일 정당을 통해서만 진전될 수 있다고 주장하는 #PB 정당 합병#! 이론을 내세웠습니다.\n\n노동조합의 온건한 성향에 대해 환상이 없는 [Concept('concept_bpm_ig_is_party_socialist','사회주의 정당')]들은 #pink 합병#!을 거듭 시도할 준비가 되어 있습니다. 이 #pink 합병#! 시도는 다음 달에 #tooltippable;tooltip:[Country.GetTooltipTag],je_communism_1_special_tooltip [Country.MakeScope.Var('communism_progress_var_next').GetValue|-=]#! 만큼 진전될 것으로 예상됩니다.\n\n#lore 이상적인 조직이란 모든 프롤레타리아 정당, 정치 협회, 노동조합, 협동조합이 동등한 구성원으로서 통합되는 것이다. 현재 영국처럼 강령이 없는 노동당이 아니라, 계급의식이 있고 모든 것을 포괄하는 사회민주주의 정당 말이다.\n\n—카를 카우츠키, 1909년 #!" # 13805707903820329219
   communism_1_progress_bar: "#PB 합병#!" # 1768012975093575368

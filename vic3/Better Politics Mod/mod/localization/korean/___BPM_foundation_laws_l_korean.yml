@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   lawgroup_executive_principles: "행정 구조" # 4710433755213267395
   lawgroup_executive_principles_desc: "[Concept('concept_ruler','국가 원수')]와 [concept_bpm_head_of_government] 간의 관계." # 11244135602716360330
   law_appointed_by_hos: "[GetPlayer.GetRuler.GetPrimaryRoleTitle] 임명됨" # 11405550318119703813

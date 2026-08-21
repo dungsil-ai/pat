@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   institution_law_landed_voting_workaround: "$law_landed_voting$로 인한 선거권 제도" # 8006212928749595015
   institution_law_wealth_voting_workaround: "$law_wealth_voting$으로 인한 참정권 제도" # 15827873986652090147
   institution_law_census_voting_workaround: "$law_census_voting$로 인한 참정권 제도" # 6997712996976446242

@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   country_institution_centralization_max_investment_add: "최대 $institution_centralization$ [Concept('concept_institution', 'Institution')] 투자" # 6909248621726651954
   country_institution_centralization_max_investment_add_desc: "$institution_centralization$ [Concept('concept_institution', '제도')]의 최대 투자 수준에 대한 보너스 또는 페널티" # 2269748858185280651
   country_institution_suffrage_max_investment_add: "최대 $institution_suffrage$ [Concept('concept_institution', 'Institution')] 투자" # 13847094032029824523

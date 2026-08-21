@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 846d156
+# PAT verified upstream: aff8c66
   coup.6.t: "군사적 동요" # 13867221682431217725
   coup.6.d: "[SCOPE.sCharacter('coup_leader').GetFullName]은 오랫동안 군부 내에서 상당한 권력을 축적해 왔으나, 이제 우리 정부가 광범위한 불안에 직면하면서, [SCOPE.sCharacter('coup_leader').GetHerHis] 카리스마와 정치적 수완이 사회 전반으로 파고들기 시작했습니다. 우리는 이제 장교들 사이에 음모가 있다는 불길한 속삭임을 듣고 있습니다." # 5492873729845411739
   coup.6.f: "귀관은 나의 부하인가, 아니면 나의 적인가? 나의 부하라면 나의 명령에 복종해야 할 것이요, 나의 적이라면 지체 없이 나를 처단해야 할 것이오.\n\n—장제스, 1936년" # 14471898347437440126
