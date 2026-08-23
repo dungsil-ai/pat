@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 147abc3
+# PAT verified upstream: bf1f396
   good_friday_agreement_decision: "성 금요일 협정을 적용하다" # 6526792260070012198
   good_friday_agreement_decision_desc: "성 금요일 협정은 북아일랜드의 주요 정치적 발전이며, 이양된 정부를 수립하고 평화와 협력을 위한 틀을 마련합니다. 이 협정을 적용함으로써 우리는 이 지역의 안정과 발전을 보장할 수 있습니다." # 459076757364356437
   good_friday_agreement_decision_tooltip: "얼스터 탈환!" # 13298879344652853874
@@ -206,5 +206,3 @@
   modernize_national_electric_system_decision: "국가 전력 시스템 현대화" # 9105489095040259269
   modernize_national_electric_system_decision_desc: "국가 전력망은 이미 우리의 지역 전력 시스템을 하나로 묶고 있습니다. 현대화된 전력 시스템은 고급 송전 관리를 공식화하고 더 크고 유연한 발전을 위해 국가를 준비시킬 것입니다." # 7071343858596198914
   modernize_national_electric_system_decision_tooltip: "#v 현대적 국가 전력 시스템#!을(를) 활성화합니다." # 7196927741105300459
-  join_european_federation: "유럽 연방 가입" # 5742304064310243203
-  join_european_federation_desc: "#blue_value 유럽 연방#!이(가) 창설되었습니다. 우리 인민과 영토, 정부를 이끌고 단일한 유럽 국가로 통합해 줄 것을 연방 정부에 청원할 수 있습니다. 우리 국가가 플레이어의 통제를 받는 경우, 통제권을 유지한 채 우리 자신이 유럽 연방이 됩니다.\n\n#b 가입 조항:#! 연합과 마찬가지로, 가입 시 우리의 모든 #v 유럽 속령#!은 독립국으로 해방되는 반면, 우리의 #v 해외 종속지#!는 우리 통제하에 남게 됩니다." # 476740502360502678

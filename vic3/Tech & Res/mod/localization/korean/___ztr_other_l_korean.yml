@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 147abc3
+# PAT verified upstream: bf1f396
   dlc_tech_res: "기술 및 연구" # 1062450317642946545
   dlc_tech_res_desc: "테크 & 레스는 1836년부터 1990년대, 그 이후까지 새로운 시대, 생산 기술 및 산업 역학을 포함한 심오하고 몰입감 있는 기술 발전 시스템을 추가하는 모드입니다." # 8384328505110313641
   dubois_state_trait_volcano: "화산" # 6792708077593121795
@@ -380,4 +380,3 @@
   ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
   ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
   ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
-  ZTR_BOTH_EU_MEMBER: "양측 모두 이미 @eu! #blue_value 유럽연합#!에 속해 있습니다" # 12088231424707775313
