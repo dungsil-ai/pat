@@ -1,0 +1,65 @@
+﻿l_korean:
+# PAT verified upstream: abff49a
+  EUF: "유럽 연방" # 4081540202575698178
+  EUF_ADJ: "유럽" # 2381649317906708715
+  EUF_DEF: "유럽 연방" # 11946755596624327779
+  dyn_c_european_commune: "유럽 코뮌" # 1174041853684983105
+  dyn_c_european_commune_adj: "유럽" # 2381649317906708715
+  dyn_c_european_imperium: "유럽 제국" # 16620749000370299148
+  dyn_c_european_imperium_adj: "유럽" # 2381649317906708715
+  EAU: "유라시아 연합" # 15720448900862734447
+  EAU_ADJ: "유라시아" # 3253503610636211926
+  EAU_DEF: "유라시아 연합" # 5830609173916044620
+  dyn_c_eurasian_commune: "유라시아 코뮌" # 4893543386698403477
+  dyn_c_eurasian_commune_adj: "유라시아" # 3253503610636211926
+  dyn_c_eurasian_imperium: "유라시아 제국" # 2468211456344444951
+  dyn_c_eurasian_imperium_adj: "유라시아" # 3253503610636211926
+  ARF: "아랍 연방" # 12448907911709645993
+  ARF_ADJ: "아랍" # 4245799808392405426
+  ARF_DEF: "아랍 연방" # 9748559002541385035
+  dyn_c_arab_commune: "아랍 코뮌" # 3747347232961784285
+  dyn_c_arab_commune_adj: "아랍" # 4245799808392405426
+  dyn_c_arab_imperium: "이슬람 칼리프국" # 8739584745329415220
+  dyn_c_arab_imperium_adj: "칼리프" # 5055601660492784031
+  SEA: "동남아시아 연맹" # 15503865514014856840
+  SEA_ADJ: "동남아시아" # 1425723841833795504
+  SEA_DEF: "동남아시아 국가 연합" # 6989617345425334584
+  dyn_c_southeast_asian_commune: "동남아시아 코뮌" # 15089760482959273770
+  dyn_c_southeast_asian_commune_adj: "동남아시아" # 1425723841833795504
+  dyn_c_southeast_asian_imperium: "동남아시아 제국" # 5790876846753011537
+  dyn_c_southeast_asian_imperium_adj: "동남아시아" # 1425723841833795504
+  OCF: "오세아니아 연방" # 2938342099964682418
+  OCF_ADJ: "오세아니아" # 4703747637741233131
+  OCF_DEF: "오세아니아 연방" # 13109203453777703716
+  dyn_c_oceanic_commune: "오세아니아 코뮌" # 13743990503117118628
+  dyn_c_oceanic_commune_adj: "오세아니아" # 4703747637741233131
+  dyn_c_oceanic_imperium: "오세아니아 제국" # 11579238871685183412
+  dyn_c_oceanic_imperium_adj: "오세아니아" # 4703747637741233131
+  SUF: "남아메리카 연맹" # 2150093529656759241
+  SUF_ADJ: "남아메리카" # 2296461509572148080
+  SUF_DEF: "남아메리카 국가 연합" # 18126803226812206864
+  dyn_c_south_american_commune: "볼리바르 코뮌" # 5611696992422711645
+  dyn_c_south_american_commune_adj: "볼리바르" # 17928655444318033006
+  dyn_c_south_american_imperium: "남아메리카 제국" # 15874802104883562286
+  dyn_c_south_american_imperium_adj: "남아메리카" # 2296461509572148080
+  NAF: "북아메리카 연방" # 17126516412017907077
+  NAF_ADJ: "북아메리카" # 14395164184724576587
+  NAF_DEF: "북아메리카 연방" # 3224687444856746541
+  dyn_c_north_american_commune: "북아메리카 코뮌" # 4193491230357510006
+  dyn_c_north_american_commune_adj: "북아메리카" # 14395164184724576587
+  dyn_c_north_american_imperium: "북아메리카 제국" # 2261442279950207472
+  dyn_c_north_american_imperium_adj: "북아메리카" # 14395164184724576587
+  CAF: "중앙아메리카 연방" # 14379829371900940962
+  CAF_ADJ: "중앙아메리카" # 3779389821932870801
+  CAF_DEF: "중앙아메리카 연방 공화국" # 13705608464412420780
+  dyn_c_central_american_commune: "중앙아메리카 코뮌" # 3879931709307208681
+  dyn_c_central_american_commune_adj: "중앙아메리카" # 3779389821932870801
+  dyn_c_central_american_imperium: "중앙아메리카 제국" # 7535727721300404354
+  dyn_c_central_american_imperium_adj: "중앙아메리카" # 3779389821932870801
+  MDF: "지중해 연합" # 16727187294964631860
+  MDF_ADJ: "지중해" # 12402591186983410388
+  MDF_DEF: "지중해 연합" # 6358883287654996567
+  dyn_c_mediterranean_commune: "지중해 코뮌" # 5053736424617812760
+  dyn_c_mediterranean_commune_adj: "지중해" # 12402591186983410388
+  dyn_c_mediterranean_imperium: "지중해 제국" # 1397480596921672653
+  dyn_c_mediterranean_imperium_adj: "지중해" # 12402591186983410388

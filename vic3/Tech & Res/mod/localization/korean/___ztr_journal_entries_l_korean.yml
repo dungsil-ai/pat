@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: bf1f396
+# PAT verified upstream: abff49a
   je_france_pop: "19세기 정체" # 6429505727594116601
   je_france_pop_reason: "[ROOT.GetCountry.GetName]은 선진적인 [Concept('concept_demographic_stages','$concept_demographic_stages$')]을 경험한 최초의 주요 유럽 [Concept('concept_country','$concept_country$')]이었습니다. 19세기 전반기가 끝나갈 무렵, 도시화, 문화적 변화, 기초적인 피임법의 보급, 여성 교육 수준 향상 및 상속 정책으로 인해 [ROOT.GetCountry.GetAdjective] 인구 사이에서 출산율 감소가 관찰되었습니다." # 4315721470615750910
   je_france_pop_goal: "[ROOT.GetCountry.GetName]의 의료 혜택을 법률, 도시 중심지, 혹은 페니실린과 항생제 같은 신기술 연구를 통해 증진하십시오." # 11515236645800165865
@@ -531,3 +531,4 @@
   je_imf_modernization_sol_tt: "평균 [Concept('concept_sol','$concept_sol$')] #v 10#! 초과 달성." # 10189957845144914047
   je_imf_modernization_developed_tt: "@money!#v 5#! 이상의 [Concept('concept_gdp_per_capita','$GDP per Capita$')] 달성." # 5270361067442006470
   je_imf_modernization_status_progressing: "[ROOT.GetCountry.GetName]은(는) 이제 확실한 현대화의 길로 접어들었습니다. #blue_value IMF#!는 [Concept('concept_literacy','$concept_literacy$')]의 #positive_value 상당한 발전#!, 상승하는 [Concept('concept_sol','$concept_sol$')], 그리고 다변화되는 경제 기반을 인정하고 있습니다. 이 기세가 계속 유지된다면, 검토 팀이 설정한 목표는 현실적인 달성 범위 내에 있습니다." # 3228049284068603606
+  je_group_global_superstates_content: "초대형 국가" # 8849518905183854626

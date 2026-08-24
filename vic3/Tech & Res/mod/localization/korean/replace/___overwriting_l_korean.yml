@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: bf1f396
+# PAT verified upstream: abff49a
   building_synthetics_plant: "화장품 공장" # 15970412718626794292
   building_synthetics_plant_lens_option: "$building_synthetics_plant$ 확장" # 10256421238476698237
   building_synthetics_plant_throughput_add: "화장품 공장 [concept_throughput]" # 6979574026908716522

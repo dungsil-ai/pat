@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: bf1f396
+# PAT verified upstream: abff49a
   concept_demographic_stages: "인구통계학적 단계" # 17496284837762556683
   concept_demographic_stage: "인구학적 단계" # 9954971245601459371
   concept_demographic_stages_desc: "[Concept('concept_demographic_stages','$concept_demographic_stages$')]는 [Concept('concept_country','$concept_country$')]의 [Concept('concept_pop_growth','$concept_pop_growth$')]와 삶의 질이 어떻게 변화하는지를 나타내는 방식입니다. [Concept('concept_country','$concept_country$')]가 [Concept('concept_literacy','$concept_literacy$')]와 [Concept('concept_sol','$concept_sol$')] 측면에서 발전함에 따라 다음과 같은 단계를 거치게 됩니다:\n\n1.#v 산업화 이전#!:\n[GetStaticModifier('demographic_stage_0').GetDesc]\n2.#v 초기 산업화#!:\n[GetStaticModifier('demographic_stage_1').GetDesc]\n3.#v 중기 산업화#!:\n[GetStaticModifier('demographic_stage_2').GetDesc]\n4.#v 후기 산업화#!:\n[GetStaticModifier('demographic_stage_3').GetDesc]\n5.#v 초기 탈산업화#!:\n[GetStaticModifier('demographic_stage_4').GetDesc]\n6.#v 중기 탈산업화#!:\n[GetStaticModifier('demographic_stage_5').GetDesc]\n7.#v 후기 탈산업화#!:\n[GetStaticModifier('demographic_stage_6').GetDesc]\n8.#v 정체 단계#!:\n[GetStaticModifier('demographic_stage_7').GetDesc]\n9.#v 쇠퇴 단계#!:\n[GetStaticModifier('demographic_stage_8').GetDesc]" # 13448394810826458845
