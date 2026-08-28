@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   ehof_anomaly.14.name: "황폐해진 성계" # 18274405162251195830
   ehof_anomaly.14.desc: "우리 함선이 §H[root.solar_system.GetName]§! 성계에 도착한 순간, 성계의 항성에서 발신된 것으로 보이는 아공간 통신을 수신했습니다. 이 신호는 $ehof_the_compound_text$에 관한 은하계 전역의 방송과 암호학적으로 유사했습니다.\n\n하지만 이 성계에서 발견한 것은 신호뿐만이 아닙니다. 성계의 모든 행성은 산산조각이 났거나 불타버렸으며, 가장 안쪽에 있던 행성은 몇 개의 암석 덩어리와 그 뒤를 따르는 소행성대를 제외하고는 흔적도 없이 사라졌습니다.\n\n이 파괴의 원인은 아직 밝혀지지 않았으나, 우리의 [Owner.GetScientistPlural]는 그 원인이 항성에 있다고 의심하고 있습니다. 항성은 비정상적인 에너지 분포를 보이며 표면과 층에서 특이한 변화가 관측되고 있습니다. 이러한 파괴는 초신성 폭발과 같은 거대한 에너지 방출로만 가능할 텐데, 항성이 여전히 존재하고 있다는 점에서 이는 모순됩니다.\n\n§H[root.solar_system.GetName]§!에는 무시무시한 일이 벌어졌으며, 항성이 메시지의 발신원인 것으로 보이는 만큼 이러한 미스터리를 조사하는 것이 무엇보다 중요합니다." # 470120471484732026
   ehof_anomaly.14.a: "이 미스터리를 해결해야만 합니다." # 3974824451655364113
@@ -1923,28 +1923,28 @@
   d_compound_boon_10: "원시 지성 생태계" # 9808961000485466789
   d_compound_boon_10_desc: "복합체(Compound) 집단지성의 절반쯤 태어난 접목체가 이곳의 미생물군집에 스며들어 있습니다. 지속적인 훈련을 통해, 이는 눈에 띄지 않는 자애로운 의지로 빚어질 수 있습니다." # 15071219878431383803
   giga_compound_easy: "giga_compound_easy" # 7143950957352947360
-  giga_compound_easy_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_easy_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_normal: "giga_compound_normal" # 9594990713410206328
-  giga_compound_normal_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_normal_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_hard: "giga_compound_hard" # 13318614468143832173
-  giga_compound_hard_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_hard_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_brutal: "giga_compound_brutal" # 15290946296276140016
-  giga_compound_brutal_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_brutal_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_brutal: "giga_compound_death_mod_brutal" # 7925373020972517606
-  giga_compound_death_mod_brutal_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_brutal_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_allies_brutal: "giga_compound_death_mod_allies_brutal" # 11915499397746121626
-  giga_compound_death_mod_allies_brutal_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_allies_brutal_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_hard: "giga_compound_death_mod_hard" # 17452733620015535285
-  giga_compound_death_mod_hard_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_hard_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_allies_hard: "giga_compound_death_mod_allies_hard" # 10413831122514542171
-  giga_compound_death_mod_allies_hard_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_allies_hard_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_medium: "giga_compound_death_mod_medium" # 13913214327079079504
-  giga_compound_death_mod_medium_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_medium_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_allies_medium: "giga_compound_death_mod_allies_medium" # 7366219473287513342
-  giga_compound_death_mod_allies_medium_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_allies_medium_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_easy: "giga_compound_death_mod_easy" # 12878655177934721471
-  giga_compound_death_mod_easy_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_easy_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_compound_death_mod_allies_easy: "giga_compound_death_mod_allies_easy" # 6793990143166600806
-  giga_compound_death_mod_allies_easy_desc: "REPLACE_ME" # 8745063705845015763
+  giga_compound_death_mod_allies_easy_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_fe_ehof_sr_upkeep_help: "giga_fe_ehof_sr_upkeep_help" # 681798755473477910
-  giga_fe_ehof_sr_upkeep_help_desc: "REPLACE_ME" # 8745063705845015763
+  giga_fe_ehof_sr_upkeep_help_desc: "$giga_REPLACE_ME$" # 2461304425637439258

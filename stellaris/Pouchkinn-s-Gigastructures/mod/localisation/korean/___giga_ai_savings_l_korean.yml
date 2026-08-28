@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   giga_ai_savings_info: "기가스 AI 메가스트럭처 절감 정보" # 17129781596844453452
   giga_ai_savings_info_desc: "§L재정 계획 지원.§!" # 10605841134171591247
   mod_giga_ai_savings_tooltips_minerals_produces_add: "AI가 메가스트럭처를 위해 얼마나 비축해 두었는지 보여줍니다. 이 값들은 지원되는 메가스트럭처의 건설 비용에서 차감되며, 건설이 시작될 때 감소합니다.\n\n§E주요 경제 메가스트럭처:§!\n£alloys£ $alloys$: §Y[giga_ai_savings_important_alloys]§!\n£unity£ $unity$: §Y[giga_ai_savings_important_unity]§!\n\n§E보조 경제 메가스트럭처:§!\n£alloys£ $alloys$: §Y[giga_ai_savings_resource_alloys]§!\n£unity£ $unity$: §Y[giga_ai_savings_resource_unity]§!\n\n§E유틸리티 메가스트럭처:§!\n£alloys£ $alloys$: §Y[giga_ai_savings_utility_alloys]§!\n£unity£ $unity$: §Y[giga_ai_savings_utility_unity]§!\n\n§E군사 메가스트럭처:§!\n£alloys£ $alloys$: §Y[giga_ai_savings_military_alloys]§!\n£unity£ $unity$: §Y[giga_ai_savings_military_unity]§!\n\n값이 제대로 표시되도록 하는 더미 모디파이어" # 16634537431005337069

@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   dyson_sphere_0: "$gc_mega$다이슨 구체 건설 부지" # 9446206261061968524
   dyson_sphere_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\n§Y항성§!의 전체 에너지 생산량을 £energy£ §Y에너지§!로 수확합니다 - $giga_list_scales_with_star_size$\n$giga_list_freezes_system$\n§LA $dyson_sphere_5$는 주어진 항성을 완전히 감싸고, 모든 태양 출력을 직접 에너지로 변환합니다.§!" # 17596362104365540317
   ring_world_1: "$gc_mega$링월드 건설 부지" # 7429982802780067864

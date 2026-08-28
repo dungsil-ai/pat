@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   giga_tech_arkship_neutronium_harvester: "$giga_tech_neutronium_gigaforge$" # 15675661280339453702
   giga_tech_arkship_neutronium_harvester_desc: "$arkship_cap_plural$에게 $pc_neutron_star_plural$와 같은 항성 잔해를 채굴할 수단을 제공함으로써, 우리는 앞으로 수억 년 동안 귀중한 합금의 안정적인 공급원을 보장할 수 있습니다." # 1964763213089507739
   sm_giga_arkship_neutronium_harvester: "질량 중성자 포획기" # 17606977429733315084

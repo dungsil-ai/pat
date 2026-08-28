@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   mod_giga_logistic_growth_mult_extra_add: "월간 보조 팝 성장" # 17666095554127622662
   giga_extra_growth: "보조 팝 성장" # 7313407964550212725
   giga_extra_growth_tooltip: "이 행성은 £mod_logistic_growth_mult£ §Y$mod_giga_logistic_growth_mult_extra_add$§!의 원천을 보유하고 있으며, 두 번째 팝 세트를 동시에 성장시킬 수 있습니다." # 9701465761416185320

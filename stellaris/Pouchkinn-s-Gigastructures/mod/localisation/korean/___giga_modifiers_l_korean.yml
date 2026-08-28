@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   mod_op_cat_military_speed_mult: "작전 속도 ($op_cat_military$)" # 5268056229413637861
   mod_op_cat_subterfuge_speed_mult: "작전 속도 ($op_cat_subterfuge$)" # 3028728831343445369
   mod_op_cat_government_speed_mult: "작전 속도 ($op_cat_government$)" # 8952896340055947397
@@ -291,3 +291,18 @@
   mod_giga_matrioshka_brain_limit_add: "$name_matrioshka_brain$ 용량" # 13290046662540636760
   mod_giga_nidavellir_limit_add: "$name_nidavellir$ 용량" # 16050896393280922424
   mod_giga_systemcraft_limit_add: "$name_war_system$ 역량" # 12160652962860566598
+  giga_combat_ship_weapon_damage: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_fire_rate_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_hull_damage_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_armor_damage_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_shield_damage_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_weapon_range_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_engagement_range_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_tracking_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_accuracy_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_tracking_add: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_accuracy_add: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_shield_penetration_add: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_armor_penetration_add: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_shield_penetration_mult: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_combat_ship_armor_penetration_mult: "$giga_REPLACE_ME$" # 2461304425637439258

@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   eawaf_army: "비전 군대" # 16966082526917233174
   eawaf_army_desc: "기적의 군대" # 16966082526917233174
   eaw_early_army: "수정 강화 산업 군대" # 3647163047861631517
@@ -574,31 +574,31 @@
   GIGA_EAWAF_EQG_PORTAL_DESC: "파우스트를 사이렌의 손아귀에서 벗어나게 할 방법을 찾는 것이 최우선 과제입니다. 그렇지 않으면 그곳의 모든 개체군이 무의미하게 죽음을 맞이할 것입니다." # 14550197317290056973
   GIGA_EAWAF_SIRENS_COUNTRY: "하모닉 매혹자들" # 13532271462397026869
   giga_eawaf_disenchanter_1_speed_modifier: "giga_eawaf_disenchanter_1_speed_modifier" # 1929431120674734720
-  giga_eawaf_disenchanter_1_speed_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_1_speed_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_1_upkeep_modifier: "giga_eawaf_disenchanter_1_upkeep_modifier" # 5929947516008534134
-  giga_eawaf_disenchanter_1_upkeep_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_1_upkeep_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_2_speed_modifier: "giga_eawaf_disenchanter_2_speed_modifier" # 4672783562436004350
-  giga_eawaf_disenchanter_2_speed_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_2_speed_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_2_upkeep_modifier: "giga_eawaf_disenchanter_2_upkeep_modifier" # 11110908864403151090
-  giga_eawaf_disenchanter_2_upkeep_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_2_upkeep_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_3_speed_modifier: "giga_eawaf_disenchanter_3_speed_modifier" # 9405584421638000667
-  giga_eawaf_disenchanter_3_speed_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_3_speed_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_3_upkeep_modifier: "giga_eawaf_disenchanter_3_upkeep_modifier" # 18127041828585422706
-  giga_eawaf_disenchanter_3_upkeep_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_3_upkeep_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_disenchanter_4_upkeep_modifier: "giga_eawaf_disenchanter_4_upkeep_modifier" # 2996490173336005076
-  giga_eawaf_disenchanter_4_upkeep_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_disenchanter_4_upkeep_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_adagio_modifier: "giga_eawaf_adagio_modifier" # 13542622203478920050
-  giga_eawaf_adagio_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_adagio_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_aria_modifier: "giga_eawaf_aria_modifier" # 4808993607683374553
-  giga_eawaf_aria_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_aria_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_sonata_modifier: "giga_eawaf_sonata_modifier" # 10949672371129942803
-  giga_eawaf_sonata_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_sonata_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_megaphone_modifier: "giga_eawaf_megaphone_modifier" # 5027999699102623225
-  giga_eawaf_megaphone_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_megaphone_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_eawaf_base_sirens_modifier: "giga_eawaf_base_sirens_modifier" # 13350516397897564629
-  giga_eawaf_base_sirens_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_eawaf_base_sirens_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_tech_eawaf_weapons_repeatable_modifier: "giga_tech_eawaf_weapons_repeatable_modifier:0 \"에너지 기반 무기 공격력 및 발사 속도\"" # 9278651189009452724
-  giga_tech_eawaf_weapons_repeatable_modifier_desc: "REPLACE_ME" # 8745063705845015763
+  giga_tech_eawaf_weapons_repeatable_modifier_desc: "$giga_REPLACE_ME$" # 2461304425637439258
   concept_giga_eawaf_disenchanter_buildings: "마법 해제장" # 5094790762800284580
   concept_giga_eawaf_disenchanter_buildings_desc: "마법 해제 건물은 §Y$situation_eawaf_sirens_understanding$§! 상황을 통해 획득한 기술로 연구하며, §R분쟁의 장§!으로부터 보호합니다.\n이 건물들은 다음을 포함합니다:\n- $concept_giga_eawaf_disenchanter_building_1$\n- $concept_giga_eawaf_disenchanter_building_2$" # 16864708492365247062
   concept_giga_eawaf_disenchanter_building_1: "['building:building_giga_eawaf_disenchanter_building_1', $building_giga_eawaf_disenchanter_building_1$]" # 14464350486961899640

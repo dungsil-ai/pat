@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   concept_giga_rural_district_booster_modules: "자원 지구 모듈" # 2207602565421163178
   concept_giga_rural_district_booster_modules_desc: "- ['starbase_module:orbital_ring_giga_generator_district', '궤도 고리 기가 발전 지구']\n- ['starbase_module:orbital_ring_giga_mining_district', '궤도 고리 기가 채광 지구']\n- ['starbase_module:orbital_ring_giga_farming_district', '궤도 고리 기가 농업 지구']" # 3007005438634578911
   concept_giga_galwon_tier_megas: "은하 불가사의 단계 거대 구조물" # 16383571311051701383

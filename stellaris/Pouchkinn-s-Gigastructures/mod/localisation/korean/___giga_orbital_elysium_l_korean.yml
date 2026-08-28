@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   mod_giga_elysium_host_stability_add: "엘리시움 호스트 행성 안정도" # 2656481053031399164
   mod_giga_elysium_host_jobs_produces_mult: "엘리시움 숙주 행성 작업 산출" # 11028018947639210399
   giga_elysium_host_planet: "$name_orb_elysium$ 숙주 행성" # 2490440179197226329

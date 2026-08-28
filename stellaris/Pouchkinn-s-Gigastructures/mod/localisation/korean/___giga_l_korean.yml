@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   header_01_gigac: "§G초거대 구조물§!" # 10753055230619434190
   header_01_gigac_desc: "$header_01_gigac$\n이 기술은 너무 거대해서 이제 거대 구조공학으로 분류될 수 있는 거대 구조물을 잠금 해제합니다." # 6868045731907895636
   header_02_tetra: "§B사차원 공학§!" # 16667408771422790121
@@ -309,10 +309,10 @@
   requires_not_upgrading: "$TRIGGER_FAIL$업그레이드 중인 거대 구조물을 해체할 수 없습니다." # 3824751407885876035
   requires_owned_system: "$TRIGGER_FAIL$성계를 소유해야 합니다." # 13746828639121623886
   requires_not_old_update: "$TRIGGER_FAIL$디버그: 이 거대 구조물은 해체할 수 없습니다, 이전 모드 업데이트에서 추가되었으며 필요한 플래그가 없습니다. 가능하다면 업그레이드를 통해 해결될 수 있습니다." # 10985978504558931045
-  requires_no_orb_eco_arc: "$orbital_artificial_eco_3$를 가진 성계에는 건설할 수 없습니다." # 5351536126663370137
-  requires_no_macro_test_site: "$TRIGGER_FAIL$$macro_test_site_3$가 있는 성계에서는 건설할 수 없습니다." # 2018362703703561314
-  requires_no_atmosphere_shredder: "$TRIGGER_FAIL$ $atmosphere_shredder_3$가 있는 성계에서는 건설할 수 없습니다." # 4269821634067272752
-  requires_no_planetary_seeder_nexus: "$TRIGGER_FAIL$$planetary_seeder_nexus_3$가 있는 시스템에서는 건설할 수 없습니다." # 2279744972620883926
+  requires_no_orb_eco_arc: "$TRIGGER_FAIL$$name_orbital_artificial_eco$(이)가 있는 성계에는 건설할 수 없습니다." # 2783782703978308250
+  requires_no_macro_test_site: "$TRIGGER_FAIL$$name_eng_test_site$(이)가 있는 성계에는 건설할 수 없습니다." # 3464527287942591580
+  requires_no_atmosphere_shredder: "$TRIGGER_FAIL$$name_atmosphere_shredder$(이)가 있는 성계에는 건설할 수 없습니다." # 10579884550537515382
+  requires_no_planetary_seeder_nexus: "$TRIGGER_FAIL$$name_planetary_seeder_nexus$(이)가 있는 성계에는 건설할 수 없습니다." # 9244704535488765777
   cant_fire_without_target: "$TRIGGER_FAIL$$name_ndb$은 발사하기 위해서는 워프 게이트 또는 행성 표적 지정기가 필요합니다." # 14366217109159259158
   cant_explode_two_bombs_at_once: "$TRIGGER_FAIL$두 개의 아공간 왜곡 폭탄이 동시에 폭발하게 할 수 없습니다!" # 268300038555873373
   cant_target_this_planet: "$TRIGGER_FAIL$우리는 이 천체를 대상으로 지정할 수 없습니다." # 14520142746063959537
@@ -348,7 +348,7 @@
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
   giga_menu.1.name: "" # 17241709254077376921
-  giga_menu.1.desc: "v 3.39.3" # 2692431133779478838
+  giga_menu.1.desc: "v 3.39.4" # 7425737545296093208
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -5033,6 +5033,8 @@
   flusion_early_army_desc: "플루션에 거주하는 다양한 종족들로 구성된 군대" # 3133203282094305145
   stellarite_kaiser_moon_modifier: "스텔라라이트 카이저 달" # 2039426122511255239
   stellarite_kaiser_moon_modifier_desc: "이 불가능할 정도로 강력한 공격 위성은 극도로 에너지가 넘치는 심오한 물질로 만들어졌다." # 2591791124348151683
+  improbable_kaiser_moon_modifier: "무한의 카이저 위성" # 11433615263542003058
+  improbable_kaiser_moon_modifier_desc: "이 이해할 수 없을 정도로 강력한 공격 위성은 극도로 에너지가 넘치고 초차원적인 난해한 물질로 이루어져 있습니다." # 3496994217798254925
   stellarite_kaiser_moon_0: "$gc_mega$스텔라라이트 카이저 문 건설 현장" # 13225057005230988663
   stellarite_kaiser_moon_0_DESC: "작은 달을 중심으로 건설되는, 성계 전장을 초토화할 수 있는 거대한 초무기이자 장래의 스텔라라이트 카이저 문 건설 현장." # 5479486507718231369
   stellarite_kaiser_moon_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_celestial_warship$\n§Y용융§! 행성, §Y황량§! 행성 또는 §Y냉각 행성§! 중 §Y크기 5부터 7§!까지를 특수 §Y성계 전함§!으로 변환합니다!\n§L카첸 기술 기반의 카이저 문은 작은 달에 거대한 레일건이 내장된 형태로, 막대한 에너지 물질로 제작되었습니다.§!" # 12690581477323344905
@@ -5040,19 +5042,41 @@
   stellarite_kaiser_moon_1_DESC: "이 미래형 초무기는 달 하나를 통째로 이동시킬 수 있는 거대한 추진기를 갖추고 있습니다. 날개에는 이를 조종하기 위한 매끈한 임펄스 추진기가 장착되어 있습니다." # 12199437849756712256
   stellarite_kaiser_moon_2: "스텔라라이트 카이저 달" # 2039426122511255239
   stellarite_kaiser_moon_2_DESC: "완전한 스텔라라이트 카이저 문은 거의 모든 것을 관통할 수 있는 거대한 레일건과, 원자탄 발사기, 그리고 광대한 규모의 운동 에너지 포대를 장비하고 있습니다." # 4427630842647812475
+  improbable_kaiser_moon_0: "$gc_mega$무한의 카이저 위성 건설 현장" # 1445663540801684400
+  improbable_kaiser_moon_0_DESC: "성간 전장을 황폐화할 수 있는, 작은 위성을 개조하여 만든 거대한 초병기인 미래의 무한의 카이저 위성 건설 현장입니다." # 13060975235655281839
+  improbable_kaiser_moon_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_celestial_warship$\n§Y용암§!, §Y황량함§! 또는 §Y얼어붙은 세계§! 중 §Y크기 5에서 7§! 사이의 행성을 특수한 §Y천체 전함§!(으)로 변환합니다.\n§L카첸 기술을 바탕으로 한 카이저 위성은 엄청난 에너지를 가진 물질로 만들어진, 작은 위성에 내장된 거대한 레일건으로 구성되어 있습니다.§!" # 12690581477323344905
+  improbable_kaiser_moon_1: "무한의 카이저 위성 이동 시스템" # 9431147838999349388
+  improbable_kaiser_moon_1_DESC: "이 미래형 초병기는 거대한 위성을 이동시킬 수 있는 엄청난 추진기를 탑재하고 있습니다. 날개 부분에는 방향 전환을 위한 매끄러운 임펄스 추진기가 장착되어 있습니다." # 12199437849756712256
+  improbable_kaiser_moon_2: "무한의 카이저 위성" # 11433615263542003058
+  improbable_kaiser_moon_2_DESC: "거의 모든 것을 관통할 수 있는 거대한 레일건과 원자탄 발사기, 그리고 광범위한 운동 에너지 포열을 갖춘 완전한 무한 카이저 달입니다." # 11892454466181625088
   giga_katzen.0905.name: "스텔라라이트 카이저 문 건설 현장 완성!" # 1195469750545526631
   giga_katzen.0905.desc: "[giga_system.GetName] 성계에 미래 항성암 카이저 문 건설 현장이 이제 완료되었습니다.\n\n이 산업 플랫폼은 작은 달을 강력한 초무기로 변환하는 기지로 사용될 것입니다. 달을 연구하여 그것을 구성하는 데 사용된 물질을 어느 정도 복제하는 방법을 알아냈으며, 완벽한 복제는 아니지만 §Y750§! £energy£와 §Y250§! £alloys£의 매우 막대한 유지비가 수반될 것입니다." # 11449270831741870071
   giga_katzen.0905.a: "좋습니다." # 843958112380023394
   giga_katzen.0906.name: "스텔라라이트 카이저 달 기동 시스템 완료!" # 8202366664824651310
-  giga_katzen.0906.desc: "[giga_system.GetName] 성계 내 우리의 카이저 문 기동 시스템이 이제 성공적으로 설치되었습니다. 이 전체 천체를 추진하는 데 사용될 거대한 스러스터가 달의 뒷면에 건설되었습니다.\n\n이제 우리는 달의 주요 초병기 작업에 착수해야 합니다. 이는 달이 구성된 막강한 수정형 물질로 동력을 공급받는 초대형 레일건입니다." # 10917419547432686129
+  giga_katzen.0906.desc: "[giga_system.GetName] 성계에 있는 우리 카이저 달의 이동 시스템이 성공적으로 설치되었습니다. 전체 천체를 추진하는 데 사용될 거대한 추진기가 달의 뒷면에 건설되었습니다.\n\n이제 달을 구성하는 엄청난 위력의 결정체 물질을 동력원으로 삼는 달의 주력 초병기인 초대형 레일건 제작 작업을 시작해야 합니다." # 95999286562785710
   giga_katzen.0906.a: "훌륭하군!" # 4205353275372794963
   giga_katzen.0907.name: "스텔라라이트 카이저 문 비상!" # 4974838548859825537
   giga_katzen.0907.desc: "그리하여, 완료되었습니다!\n\n[giga_system.GetName] 성계에서, 우리는 작은 위성을 투사체를 상대론적 속도까지 가속할 수 있는 거대한 레일건을 장착한 치명적인 카첸 초무기로 전환하는 데 성공했습니다.\n\n이 레일건과 미사일, 거대한 자동포 모두로 무장한 이 무시무시한 구조물은, 카이저가 그러기를 바랐던 것처럼, 의심할 여지 없이 우리가 은하 지배를 확보하는 데 도움이 될 것입니다.\n\n그 지각 내에 저장된 거대한 양의 에너지에 의해 과충전된 이 위성의 무기는 은하의 다른 어떤 것과도 비할 데 없습니다.\n\n카이저가 어떻게 그토록 무시무시한 구조물을 건설하는 데 성공했는지 우리는 여전히 알 수 없습니다..." # 6497279813480897802
   giga_katzen.0907.a: "훌륭하군!" # 4941506436412555079
+  giga_katzen.0908.name: "무한 카이저 달 건설 현장 완료!" # 1503372001688500129
+  giga_katzen.0908.desc: "[giga_system.GetName] 성계에서 미래의 무한 카이저 달을 위한 건설 현장이 완공되었습니다.\n\n이 산업 플랫폼은 작은 위성을 두려운 초병기로 개조하는 기지로 사용될 것입니다. 위성을 연구함으로써 우리는 그 건조에 사용된 물질을 어느 정도 복제하는 법을 알아냈으며, 완벽한 복제품은 아니지만 §Y6000§! £energy£ 및 §Y2000§! £alloys£의 매우 막대한 유지비가 소모될 것입니다." # 10995309635367505762
+  giga_katzen.0908.a: "좋습니다." # 843958112380023394
+  giga_katzen.0909.name: "무한 카이저 달 이동 시스템 완료!" # 9182855014113967475
+  giga_katzen.0909.desc: "[giga_system.GetName] 성계에 있는 우리 카이저 달의 이동 시스템이 성공적으로 설치되었습니다. 전체 천체를 추진하는 데 사용될 거대한 추진기가 달의 뒷면에 건설되었습니다.\n\n이제 달을 구성하는 엄청난 위력의 결정체 물질을 동력원으로 삼는 달의 주력 초병기인 초대형 레일건 제작 작업을 시작해야 합니다." # 95999286562785710
+  giga_katzen.0909.a: "훌륭합니다." # 4205353275372794963
+  giga_katzen.0910.name: "무한 카이저 달이 비행을 시작합니다!" # 18305929586319380570
+  giga_katzen.0910.desc: "드디어 완료되었습니다! [giga_system.GetName] 성계에서 우리는 작은 위성을 투사체를 상대론적 속도로 가속할 수 있는 거대한 레일건을 갖춘 치명적인 카첸 초병기로 개조해냈습니다.\n\n이 레일건뿐만 아니라 미사일과 거대한 오토캐넌으로 무장한 이 두려운 구조물은 카이저가 바랐던 것처럼 우리가 은하계를 장악하는 데 의심할 여지 없이 큰 도움이 될 것입니다. 지각과 여러 고차원에 저장된 막대한 양의 에너지로 과충전된 이 달의 무장은 은하계의 그 어떤 것과도 비교할 수 없습니다.\n\n카이저가 어떻게 이런 두려운 구조물을 건조할 수 있었는지 우리는 여전히 확신하지 못하고 있습니다..." # 16547600659719522554
+  giga_katzen.0910.a: "훌륭합니다!" # 4941506436412555079
   giga_tech_stellarite_kaiser_moon: "심오한 카첸 병기" # 4275582800970667757
   giga_tech_stellarite_kaiser_moon_desc: "스텔라라이트 카이저 문에 대한 연구는 그것이 무엇으로 만들어졌는지에 대한 몇 가지 통찰을 얻었습니다. 그것은 엄청난 에너지를 담고 있는 물질로 만들어진 것으로 보이며, 이는 스텔라라이트 카이저 문이 매우 강력한 무기를 자랑할 수 있게 해준 것입니다. 하지만 카이저가 어떻게 또는 왜 이것을 건설하는 데 필요한 자원을 확보할 수 있었는지는 아직 불확실합니다." # 16740102253623519829
   allow_stellarite_kaiser_moon: "§H메가스트럭처 잠금 해제:§! 스텔라라이트 카이저 달" # 5945323179537847467
   desc_stellarite_kaiser_moon: "회수된 카첸 기술을 기반으로 한, 진정으로 광기에 찬 공학 프로젝트입니다.\n막대한 양의 에너지를 방출할 수 있는 초고도 물질로 만들어졌으며, 극도로 강력한 무기 사용을 가능하게 합니다." # 12105936175574977116
+  giga_tech_improbable_kaiser_moon: "무한 계획" # 18400437860324542462
+  giga_tech_improbable_kaiser_moon_desc: "[ImprobKaiserMoonSalvageTetradimensional]" # 2152512252572070851
+  giga_tech_improbable_kaiser_moon_non_tetradim_desc: "무한 카이저 달에 대한 광범위한 연구가 어느 정도 결실을 맺었습니다. 그 배후의 물리학을 완전히 이해할 수는 없지만, 고차원 공학의 특정 이론적 측면을 따르는 것으로 보입니다. 이것이 막대한 무장 배열에 연료를 공급할 수 있게 해주었으며, 우리의 제한적인 복제 능력을 통해 복제품을 건조할 수 있게 될 것입니다. 하지만 우리의 최고 지성들보다 카이저가 어떻게 이 지식을 먼저 접하게 되었는지는 누구도 확신하지 못합니다." # 5713924337120065026
+  giga_tech_improbable_kaiser_moon_tetradim_desc: "무한 카이저 달에 대한 광범위한 연구가 마침내 결실을 맺었습니다. 그 건조 원리는 현재 우리가 이해하고 있는 4차원 공학에 사용된 원리와 매우 유사합니다. 이것이 막대한 무장 배열에 연료를 공급할 수 있게 해주었던 것임이 이제 확인되었습니다. 안타깝게도 우리 과학자들은 카이저의 무기가 회수된 어떤 파생형보다 십수 배 이상 빠르게 발사된 이유나, 투사체가 합리적인 수준보다 60배 이상 큰 피해를 입힌 이유에 대해 명확한 설명을 내놓지 못하고 있습니다. 우리는 그가 모종의 고차원 존재의 도움을 받았다고 가정할 뿐입니다." # 1976260270200248153
+  allow_improbable_kaiser_moon: "§H거대 건축물 해제:§! 무한 카이저 달" # 18318885442221144513
+  desc_improbable_kaiser_moon: "회수된 카이저 기술을 바탕으로 한 상상할 수 없을 정도로 복잡한 공학 프로젝트입니다. 막대한 양의 에너지를 방출할 수 있는 고도로 진화된 물질로 만들어졌으며, 우리 차원과 여러 고차원 사이를 끊임없이 전환하여 상상할 수 없을 정도로 강력한 무기를 사용할 수 있게 합니다." # 6784009659149594505
   giga_katzenartig_enabled_never: "£menu_disabled£카첸아르틱 제국 (§R존재하지 않음§!)\n§Y카첸아르틱 제국§!, §YUFS§!, 그리고 §Y코로나 마도정체§!는 §R생성되지 않습니다§!.\n\n플루션은 §Y방사능 사막 행성§!이 되며, 문명과 생명체가 없습니다. 코로나는 §Y장막 행성§!이 됩니다.\n\n카첸아르틱 제국이나 플루션 관련 이벤트는 발동하지 않으며, 그들과 관련된 모든 것은 사실상 사라집니다.\n\n두 시스템을 완전히 제거하려면 §YNo Katzenartig Imperium§! 하위 모드를 사용하십시오." # 4932348894327613719
   giga_katzenartig_enabled: "£menu_enabled£카체나티크 제국\n군국주의적인 카체나티크 제국은 중반 이후에 출현하여 은하계로 확장하려 할 수 있습니다.\n\n카체들은 활성화 여부에 관계없이 궤도 아콜로지, 세 가지 테라포밍 거대 구조물, EHOF, 및 아성 압축기를 사용합니다.\n\n§Y도전적인 위기가 될 수 있습니다.§!" # 12844938542757185214
   giga_katzenartig_disabled: "£menu_disabled£카첸아르티크 제국\n카첸아르티크 제국은 등장하지 않을 것입니다.\n\n§B플루션은 여전히 원시적인 공격 달을 건설할 것이며, 카이저는 여전히 세계 정복을 시도하겠지만 항상 실패하고 그 결과 민주적인 통합 플루션이 일반 제국으로 등장하게 될 것입니다.\n\nFTL 플루션을 완전히 제거하고 싶다면 §Y존재하지 않음§! 옵션을 선택하십시오." # 517187936271103951
@@ -7942,7 +7966,7 @@
   giga_blokkats_normal: "블로캇 (§G일반 블로캇§!)\n블로캇은 기본 강도를 가집니다.\n\n§Y블로캇-베스터§!는 §Y1회§! 부활하며, 총 §Y8억§!의 HP를 가집니다.\n§Y초공간 불안정기§!를 활성화하는 데는 기본적으로 §Y600k§! £energy£가 소모됩니다.\n\n§Y블로캇 프로토콜§!을 완료하는 데 §Y5천만 에너지§!가 소모되며, §G블로캇 의지§!는 §Y0%§!에서 시작합니다.\n\n§H§YNew Ship Classes§!나 §YExtra Ship Components§!와 같은 강력한 모드와 함께 사용하도록 균형 조정되었습니다.§!" # 11942585746980252445
   giga_blokkats_bismuth: "블로캣 (§R비스무트 블로캣§!)\n블로캣이 §R상당히 강력해§!집니다.\n\n다음과 같은 효과를 받습니다:\n§Y무기 피해 +200%\n함선 연사 속도 +200%\n함선 선체/장갑/보호막 내구도 +200%\n함선 속도 +50%\n거대 구조물 건설 속도 +50%\n육군 피해/체력/사기 +200%§!\n\n§Y블로캣-베스터§!는 §Y4번§! 부활하며, 총 §Y20억§!의 내구도를 가집니다.\n§Y블록-해체자§!의 수가 §Y2배§!가 됩니다.\n§Y초차원 불안정화 장치§! 활성화 기본 비용은 §Y150만§! £energy£입니다.\n블로캣 연구 속도가 §Y75%§! 느려집니다.\n역설계된 블로캣 무기/장갑/보호막의 유지비가 §Y25%§! 증가합니다.\n\n호위 함대와 정찰 함대의 규모가 §Y2.5배§!가 됩니다.\n\n§Y블로캣-베스터§!는 §Y2척§!의 §R블록-터미네이터§!가 호위하며, 이 거대한 블로캣 함선은 §Y1번§! 부활하여 총 유효 내구도가 §Y5억§!에 달합니다.\n\n§Y블록-프로토콜§! 완료 비용은 §Y2억 5,000만 에너지§!이며, §G블로캣 의지§!는 §Y-50%§!에서 시작합니다.\n\n§H§YAncient Caches of Technologies§!와 같은 매우 강력한 모드를 사용할 때 밸런스가 맞습니다.§!" # 18001966507813989026
   giga_blokkats_endtech: "블로캣 (§M엔드테크 블로캣§!)\n블로캣이 §M압도적으로 강력해§!지며 채굴 작업을 보호하기 위해 본격적인 전함을 파견합니다.\n\n다음과 같은 효과를 받습니다:\n§Y무기 피해 +1000%\n함선 연사 속도 +1000%\n함선 선체/장갑/보호막 내구도 +2000%\n함선 속도 +90%\n거대 구조물 건설 속도 +250%\n육군 피해/체력/사기 +1000%§!\n\n§Y블로캣-베스터§!는 §Y20번§! 부활하며, 총 §Y80억§!의 내구도를 가집니다.\n§Y블록-해체자§!의 수가 §Y3배§!가 됩니다.\n§Y초차원 불안정화 장치§! 활성화 기본 비용은 §Y400만§! £energy£입니다.\n블로캣 연구 속도가 §Y300%§! 느려집니다.\n역설계된 블로캣 무기/장갑/보호막의 유지비가 §Y50%§! 증가합니다.\n\n호위 함대의 규모가 §Y6배§!가 됩니다.\n\n§Y블로캣-베스터§!는 §Y5척§!의 §R블록-터미네이터§!가 호위합니다.\n§Y블록-해체자§!는 §Y2척§!의 §R블록-터미네이터§!가 호위합니다.\n§Y정찰 함대§! 역시 각각 §Y1척§!의 §R블록-터미네이터§!를 포함합니다.\n§R블록-터미네이터§!는 §Y4번§! 부활하며 총 유효 내구도가 §Y10억§!에 달합니다.\n\n§R블록-터미네이터§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!합니다. 행성에 접근하지 못하게 하십시오!\n\n§Y블록-프로토콜§! 완료 비용은 §Y10억 에너지§!이며, §G블로캣 의지§!는 §Y-100%§!에서 시작합니다.\n\n§H강력한 모드를 너무 많이 사용하는 경우에 밸런스가 맞습니다!" # 5359209507703256624
-  giga_blokkats_deathmode: "블록카트 (§PO블리테레이터 블록카트§!)\n블록카트는 당신의 제국을 그들의 문명에 대한 실질적인 위협으로 간주하고 당신을 파괴하기 위해 막대한 군사력을 동원할 것입니다. 그들은 §P무한히 강해질 §! 것이며 채굴 작업을 보호하기 위해 정예 전함 함대를 파견할 것입니다.\n\n그들은 다음 효과를 받습니다:\n§Y+1000% 무기 피해\n+1000% 함선 연사력\n+2000% 함선 선체/장갑/실드 HP\n+150% 함선 속도\n+600% 거대 구조물 건설 속도\n+1000% 육군 피해/체력/사기§!\n\n§Y블록카트-베스터§!는 §Y100번§! 부활하여 총 §Y400억§!의 HP를 가지게 됩니다.\n그들은 항상 §Y20기§!의 §Y블록-해체자§!를 동반합니다.\n§Y초차원 불안정기§! 활성화에는 기본적으로 §Y20M§! £energy£의 비용이 듭니다.\n블록카트 연구 속도가 §Y600%§! 느려집니다.\n역설계된 블록카트 무기/장갑/실드의 유지비가 §Y75%§! 증가합니다.\n\n그들의 호위 및 정찰 함대는 전적으로 §R블록-종결자§!로 구성됩니다.\n\n§Y블록카트-베스터§!는 §Y50기§!의 §R블록-종결자§!와 단 하나의 §P블록-파괴자§!의 호위를 받습니다.\n§Y블록-해체자§!는 §Y10기§!의 §R블록-종결자§!의 호위를 받습니다.\n§Y정찰 함대§! 역시 각각 §Y5기§!의 §R블록-종결자§!를 포함할 것입니다.\n§R블록-종결자§!는 §Y10번§! 부활하므로 총 유효 HP가 §Y25억§!이 됩니다.\n§P블록-파괴자§!는 §Y200번§! 부활하므로 총 유효 HP가 §Y1000억§!이 됩니다.\n\n§R블록-종결자§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!할 것입니다. 그들이 당신의 행성에 도달하게 두지 마십시오!\n\n블록카트는 오직 당신의 완전한 말살만을 바라기 때문에 §Y블록-프로토콜§!은 사용할 수 §R없을§! 것입니다!\n\n§H극도로 강력한 모드들과 함께 사용하기 위해 '밸런스'가 조정되었습니다!§!" # 7548993100209953342
+  giga_blokkats_deathmode: "The Blokkats (§PObliterator Blokkats§!)\n블로카트가 당신의 제국을 그들의 문명에 대한 실질적인 위협으로 간주하고, 당신을 말살하기 위해 막대한 군사력을 동원할 것입니다. 이들은 §P무한히 강해지며§! 채굴 작업을 보호하기 위해 정예 전함 함대를 파견할 것입니다.\n\n이들은 다음과 같은 효과를 받습니다:\n§Y+1000% 무기 피해\n+1000% 함선 연사력\n+2000% 함선 선체/장갑/실드 내구도\n+150% 함선 이동 속도\n+600% 거대 구조물 건설 속도\n+1000% 육군 피해/체력/사기§!\n\n§Y블로카트-베스터§!는 §Y100번§! 부활하여 총 §Y5000억§!의 내구도를 갖게 됩니다.\n이들은 항상 §Y20기§!의 §Y블록크-해체자§!를 얻게 됩니다.\n§Y초차원적 불안정기§! 활성화의 기본 비용은 §Y20M§! £energy£ 입니다.\n블로카트 연구 속도가 §Y600%§! 느려집니다.\n역설계된 블로카트 무기/장갑/실드의 유지비가 §Y75%§! 증가합니다.\n\n이들의 호위 및 정찰 함대는 전적으로 §R블록크-종결자§!로 구성됩니다.\n\n§Y블로카트-베스터§!는 §Y50기§!의 §R블록크-종결자§!와 단 하나의 §P블록크-말살자§!의 호위를 받습니다.\n§Y블록크-해체자§!는 §Y10기§!의 §R블록크-종결자§!의 호위를 받습니다.\n§Y정찰 함대§! 역시 각각 §Y5기§!의 §R블록크-종결자§!를 동반합니다.\n§R블록크-종결자§!는 §Y10번§! 부활하므로 총 유효 내구도가 §Y500억§!에 달합니다.\n§P블록크-말살자§!는 §Y200번§! 부활하므로 총 유효 내구도가 §Y2조§!에 달합니다.\n\n§R블록크-종결자§!는 진입하는 성계의 모든 식민지를 즉시 §R파괴§!할 것입니다. 이들이 당신의 행성에 도달하게 두지 마십시오!\n\n블로카트는 오직 당신의 완전한 말살만을 원하므로 §Y블로카트 프로토콜§!은 사용할 수 §R없습니다§!!\n\n§H'극도로 사기적인 모드'와의 사용을 위해 '균형'이 맞춰졌습니다!" # 2353341283862224561
   giga_blokkats_very_easy_dec: "$giga_dec_diff$$giga_blokkats_very_easy$" # 4847002780895795779
   giga_blokkats_easy_dec: "$giga_dec_diff$$giga_blokkats_easy$" # 9715879807587128551
   giga_blokkats_normal_dec: "$giga_dec_diff$$giga_blokkats_normal$" # 18331580264652590341
@@ -8702,40 +8726,40 @@
   giga_blokkat.6001.desc: "너무 늦었습니다.\n\n우리의 최선의 노력에도 불구하고, §Y블로캇-베스터§!가 마지막 은하계 규모의 수확 소용돌이를 방출했고, 이는 우리 은하의 희소한 잔해를 집어삼켰습니다.\n\n우리는 실패했습니다. §Y[ROOT.GetName]§!는 더 이상 존재하지 않으며, 블로캇들의 멈추지 않는 파괴의 물결에 휩쓸려 역사의 먼지통으로 사라졌습니다." # 9471344397211816392
   giga_blokkat.6001.a: "잘 가시오." # 11129324285786947859
   giga_blokkat.6001.a.tooltip: "§R은하에 남은 것은 파괴뿐입니다.§!\n\n블로캇(Blokkats)은 한때 우리의 은하였던 성간 공허의 광활한 공간에서 떠날 것입니다." # 8924192369130118044
-  blokkats_becoming_anime: "REPLACE_ME" # 8745063705845015763
-  blokkat_stripminer_speed_debuff: "REPLACE_ME" # 8745063705845015763
-  blokkat_system_modifier: "REPLACE_ME" # 8745063705845015763
-  blokkat_shield_mega_build_speed_bonus: "REPLACE_ME" # 8745063705845015763
-  blokkat_deathmode_country_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_deathmode_ship_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_deathmode_ship_damage_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_deathmode_ship_damage_buff_bigship: "REPLACE_ME" # 8745063705845015763
-  blokkat_endtech_country_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_endtech_ship_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_endtech_ship_damage_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_endtech_ship_damage_buff_bigship: "REPLACE_ME" # 8745063705845015763
-  blokkat_bismuth_country_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_bismuth_ship_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_bismuth_ship_damage_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_easy_country_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_easy_ship_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_easy_ship_damage_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_very_easy_country_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_very_easy_ship_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_very_easy_ship_damage_buff: "REPLACE_ME" # 8745063705845015763
-  paluush_energies_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_deathmode_research_penalty: "REPLACE_ME" # 8745063705845015763
-  post_blokkat_paluush_buff: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_1: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_2: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_3: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_4: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_5: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_6: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_7: "REPLACE_ME" # 8745063705845015763
-  blokkat_random_mega_speed_8: "REPLACE_ME" # 8745063705845015763
-  giga_blokkat_balance: "REPLACE_ME" # 8745063705845015763
-  giga_blokkat_blokkazoi_buff: "REPLACE_ME" # 8745063705845015763
+  blokkats_becoming_anime: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_stripminer_speed_debuff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_system_modifier: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_shield_mega_build_speed_bonus: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_deathmode_country_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_deathmode_ship_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_deathmode_ship_damage_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_deathmode_ship_damage_buff_bigship: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_endtech_country_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_endtech_ship_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_endtech_ship_damage_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_endtech_ship_damage_buff_bigship: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_bismuth_country_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_bismuth_ship_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_bismuth_ship_damage_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_easy_country_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_easy_ship_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_easy_ship_damage_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_very_easy_country_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_very_easy_ship_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_very_easy_ship_damage_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  paluush_energies_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_deathmode_research_penalty: "$giga_REPLACE_ME$" # 2461304425637439258
+  post_blokkat_paluush_buff: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_1: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_2: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_3: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_4: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_5: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_6: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_7: "$giga_REPLACE_ME$" # 2461304425637439258
+  blokkat_random_mega_speed_8: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_blokkat_balance: "$giga_REPLACE_ME$" # 2461304425637439258
+  giga_blokkat_blokkazoi_buff: "$giga_REPLACE_ME$" # 2461304425637439258
   giga_wrecked_ships.1043.name: "파괴된 공격 달 폐기됨" # 552435155714388146
   giga_wrecked_ships.1043.desc: "우리 정찰팀이 §Y[from.GetName]§! 성계에서 발견된 파괴된 공격 달의 해체를 완료했습니다. 이 천체 전쟁함의 거대한 무기 체계와 이동 시스템을 해체하여 상당한 양의 합금과 공학 연구 성과를 확보했습니다. 추가로, 파괴된 외피를 샅샅이 뒤져 귀중한 원소와 남은 광물을 수집했습니다." # 2087875907164680445
   giga_wrecked_ships.1043.a: "좋습니다." # 843958112380023394
@@ -10493,3 +10517,4 @@
   giga_disable_supertensiles_4_4.2.2.a: "알겠습니다" # 16044937940591761473
   supertensiles_bugged_read_bruh: "직업 기반 메가구조물 건설 제한 / 초인장재가 현재 §R버그로 인해 비활성화됨§! 상태입니다." # 6114785400911447839
   giga_is_moon: "행성은 다른 행성의 위성입니다." # 16161706871934839410
+  giga_REPLACE_ME: "REPLACE_ME" # 8745063705845015763

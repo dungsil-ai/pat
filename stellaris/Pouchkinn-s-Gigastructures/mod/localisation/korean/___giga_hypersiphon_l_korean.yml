@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   giga_hypersiphon_power_estimate: "§H계산된 전력 추정:§!\n- 최대 함대 수용량: §Y[this.GigaGetNavalCap]§!\n- 사용 중인 함대 수용량: §Y[this.GigaGetUsedNavalCap]§!\n- 현재 함대 전투력: §Y[this.GigaGetFleetPower]§!\n\n- 추정 전력: §Y[This.giga_hypersiphon_incursion_power]§!" # 5212805714693076579
   giga_project_hypersiphon_portal: "슈라우드 침입 조사" # 7575950448591647876
   giga_project_hypersiphon_portal_DESC: "우리를 공격한 적대적인 사이오닉 개체들이 사용한 수수께끼의 장막 차원문 잔해가 우리의 $name_psy_siphon$ 네트워크를 더 잘 조정할 수 있게 해줄 수도 있습니다." # 17875003929319027072
@@ -241,4 +241,6 @@
   giga_hypersiphon_storm_2: "giga_hypersiphon_storm_2" # 15641061322221358160
   giga_hypersiphon_storm_3: "giga_hypersiphon_storm_3" # 6217299064094022055
   giga_hypersiphon_storm_4: "giga_hypersiphon_storm_4" # 5925800653966113020
-  giga_fleet_power_scaling_buff: "giga_fleet_power_scaling_buff" # 6115254304574065560
+  giga_fleet_power_scaling_buff: "초공간 흡인기 확장 버프" # 3843724626202147697
+  giga_hypersiphon_excess_buff_hp: "$giga_fleet_power_scaling_buff$" # 5009411119540023369
+  giga_hypersiphon_excess_buff_damage: "$giga_fleet_power_scaling_buff$" # 5009411119540023369

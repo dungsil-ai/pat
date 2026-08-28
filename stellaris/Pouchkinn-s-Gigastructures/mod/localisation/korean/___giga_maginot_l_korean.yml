@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 0f1f2b0
+# PAT verified upstream: 4f7d3a1
   name_maginot: "마지노 세계" # 5864391174086302576
   is_giga_maginot_world: "$TRIGGER_FAIL$§R마지노 행성이어야 합니다.§!" # 8416070900607771244
   giga_tech_repeatable_maginot_cap: "마지노 세계 관리 프로토콜" # 13639998765438262245
