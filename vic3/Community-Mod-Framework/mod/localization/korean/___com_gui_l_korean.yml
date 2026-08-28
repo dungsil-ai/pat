@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: 5cb1003
+# PAT verified upstream: d832d15
   gui_sidebar_example_button: "gui_sidebar_example_button" # 16827161175787099519
   gui_sidebar_example_button_desc: "예시" # 1513857641461741027
   gui_sidebar_example_button_tooltip: "이 버튼을 클릭하면 아무것도 일어나지 않습니다" # 4152568696005216116
