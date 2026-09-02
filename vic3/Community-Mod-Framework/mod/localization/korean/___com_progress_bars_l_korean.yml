@@ -1,10 +1,9 @@
 ﻿l_korean:
-# PAT verified upstream: d832d15
   trigger_exists_com_progress_bar: "지정된 진행률 표시줄이 존재합니다" # 17435152849485229764
   trigger_exists_com_progress_bar_not: "지정된 진행 표시줄이 존재하지 않습니다" # 7064889160987755390
   trigger_is_com_progress_bar_hidden: "지정된 진행률 표시줄이 숨겨져 있습니다." # 14540080453350424627
   trigger_is_com_progress_bar_hidden_not: "지정된 진행 표시줄이 보입니다" # 188302637952557424
-  error_no_progress_bar_scope: "CMF: 정의된 $progress_bar$ 범위가 없습니다" # 11753352475328340846
+  error_no_progress_bar_scope: "CMF: No $progress_bar$ container defined"
   com_default_bar: "기본" # 14633529491185867926
   com_blue_bar: "기본" # 14633529491185867926
   com_green_bar: "녹색" # 7475655757874500677
