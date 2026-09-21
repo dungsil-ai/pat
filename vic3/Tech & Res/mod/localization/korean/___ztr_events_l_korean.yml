@@ -760,10 +760,7 @@
   ztr_global_warming.2.a: "해안은 언제나 스스로를 재건해 왔습니다." # 3105037325976923798
   ztr_global_warming.2.b: "구호 활동을 위해 국고를 여십시오." # 7114214002591352263
   ztr_global_warming.3.t: "바다는 물러가지 않는다" # 8888472784655708788
-  ztr_global_warming.3.d: "[SCOPE.sState('ztr_climate_disaster_state').GetName]에 대홍수가 닥친 후 그대로 머물렀습니다. 예전에는 들판의 경계를 표시하던 조수가 이제는 그 한참 너머에 머물고, 우물에는 염분이 도달했으며, 지난 세대가 쌓아 올린 제방은 이번 세대의 기준에 턱없이 낮아졌습니다.\n\n이것은 견뎌내고 복구할 폭풍이 아닙니다." # 4309838411766697532
   ztr_global_warming.3.f: "우리는 물을 기다리지 않습니다. 물이 이미 도착했습니다." # 15990039486668003656
-  ztr_global_warming.3.a: "가장 낮은 지대를 포기하십시오." # 13743253036438708952
-  ztr_global_warming.3.b: "비용이 얼마나 들든 성벽을 높이십시오." # 4053477323656986770
   ztr_global_warming.1.t_global: "전례 없는 재앙" # 10202870672770736009
   ztr_global_warming.1.d_global: "[SCOPE.sCountry('ztr_climate_disaster_country').GetName]의 [SCOPE.sState('ztr_climate_disaster_state').GetName]에서 날아든 보고에 따르면, 지금까지의 모든 기록을 벗어나는 이상기후가 벌어지고 있다고 합니다. 계절은 엉망이 되었고, 강도는 전례가 없으며, 전 세계의 기상 관측소들은 모두 같은 결론에 도달하고 있습니다. 지구의 기후가 기존의 평균에서 너무나 멀어져 재해 그 자체의 성격이 변하고 있습니다." # 6918662797494209823
   ztr_global_warming.1.c: "그 경고는 모든 국가의 것입니다." # 16713375098440663499
@@ -771,7 +768,6 @@
   ztr_global_warming.2.d_global: "허리케인 [SCOPE.sState('ztr_climate_disaster_state').GetCustom('ztr_hurricane_name_type')]이(가) [SCOPE.sCountry('ztr_climate_disaster_country').GetName]의 [SCOPE.sState('ztr_climate_disaster_state').GetName]에 상륙했습니다. 유례없이 따뜻한 해수면을 연료 삼아 북상한 이 폭풍은 항만 시설과 홍수 방지 계획이 결코 견뎌내도록 설계되지 않은 엄청난 위력으로 해안가를 강타했습니다. 재난 구역을 훨씬 벗어난 곳의 정부들도 동일한 바다가 자신들의 해안가와도 맞닿아 있음을 잘 알기에 보고서를 면밀히 분석하고 있습니다." # 9571349614562991227
   ztr_global_warming.2.c: "어떤 해안도 이 경고를 무시할 수 없습니다." # 6602238668411766954
   ztr_global_warming.3.t_global: "바다가 [SCOPE.sState('ztr_climate_disaster_state').GetName]을/를 집어삼킵니다" # 6999358231065629340
-  ztr_global_warming.3.d_global: "[SCOPE.sCountry('ztr_climate_disaster_country').GetName]의 [SCOPE.sState('ztr_climate_disaster_state').GetName] 지역에 바닷물이 밀려들어 온 뒤 물러가지 않고 있습니다. 경작지는 염해로 황폐해지고 우물은 말라가고 있으며, 과거의 해안선을 표시하기 위해 세운 방어선들은 이제 새로운 해안선 안쪽에 자리 잡았습니다. 이는 단순한 남의 나라 홍수가 아닙니다. 모든 국가가 마침내 마주하게 될 새로운 해안선을 보여주는 최초의 뚜렷한 경고입니다." # 12277544614917895774
   ztr_global_warming.3.c: "세계의 지도가 다시 그려져야 합니다." # 3488455905372299003
   ztr_global_warming_stage.1.t: "공기의 열기" # 15062035242797315552
   ztr_global_warming_stage.1.d: "멀리 떨어진 곳에서 측정된 자료들이 이제 같은 이야기를 말해주고 있습니다. 석탄 연기, 석유 배기가스, 산업용 가스가 대기 중에 축적되면서 한때 우주로 빠져나갔던 열을 가두고 있습니다. 산업화 이전 평균 대비 상승폭이 #negative_value 0.5 C#!를 넘어섰습니다. 이는 기기 오류나 날씨 탓으로 치부하기에는 너무나 크고, 지속적이며, 전 지구적인 현상입니다.\n\n세계의 과학 기관들은 최초로 산업 오염과 온난화되는 지구를 연결하는 메커니즘을 명명할 수 있게 되었습니다." # 12943611730495750131
@@ -786,7 +782,6 @@
   ztr_global_warming_stage.3.f: "모든 지도에 그려진 선이 단 한 번에 지워지고 있습니다." # 1268929415541001633
   ztr_global_warming_stage.3.a: "해수면이 상승하고 있습니다." # 4518808685147881552
   ztr_global_warming_stage.4.t: "새로운 지구" # 7589418531574366270
-  ztr_global_warming_stage.4.d: "세계의 온난화가 #negative_value 2.0 C#!를 넘어섰습니다. 한때 먼 미래의 위험으로 여겨지던 피드백 현상들이 이제 서로를 강화하고 있습니다. 얼음이 후퇴하고, 어두운 바다가 더 많은 열을 흡수하며, 숲이 불타올라 저장했던 탄소를 배출하고, 녹아내리는 대지가 고대의 탄소를 뿜어냅니다. 단 하루가 옛 기후의 종말을 고하는 것은 아니지만, 이제 증거들은 돌이킬 수 없는 지점을 가리키고 있습니다.\n\n인류는 지상을 파괴하지 않았습니다. 인류는 완전히 새로운 지구를 만들어냈고, 모든 사회는 그 위에서 살아가는 법을 배워야 합니다." # 4167738414820055219
   ztr_global_warming_stage.4.f: "여전히 봄, 비, 바람, 그리고 눈은 내릴 것입니다. 그러나 그것들은 더 이상 예전과 같은 의미를 갖지 못할 것입니다." # 14644529343215964089
   ztr_global_warming_stage.4.a: "새로운 지구에 오신 것을 환영합니다." # 3501224335508278356
   ztr_hurricane_name_alice: "앨리스" # 15323875830165214731
@@ -841,3 +836,8 @@
   ztr_hurricane_name_rita: "리타" # 17285809914475002137
   ztr_hurricane_name_unnamed: "이름 없음" # 10712621550109445741
   ztr_imf_event.4.d: "#blue_value 국제통화기금#! 대표단이 [ROOT.GetCountry.GetName]에 대한 최신 심사를 완료했습니다.\n\n그들의 결론은 단호합니다. 저개발 상태에서 벗어나려면 교육 제도를 현대화하고, 국민의 생활 수준을 향상시키며, 경제의 기초를 튼튼히 다져야 한다는 것입니다." # 15985740373567433279
+  ztr_global_warming_stage.4.d: "The world has crossed #negative_value 2.0 C#! of warming. Extreme heat, drought and fire strain economies while prolonged inundation threatens low-lying coasts. Damage already suffered will take time to repair.\n\nReducing pollution can still lower the projected temperature and eventually reverse the warming trend, but communities must also cope with the disasters already under way."
+  ztr_global_warming.3.b: "Fund emergency coastal defenses and relief."
+  ztr_global_warming.3.a: "Accept the damage to the low ground."
+  ztr_global_warming.3.d: "In [SCOPE.sState('ztr_climate_disaster_state').GetName] the flood came and has lingered. Salt has reached the wells, fields are waterlogged, and existing dikes are too low. The disruption could last for years.\n\nEmergency defenses and relief can limit additional devastation, but cannot end the inundation or remove its ongoing economic effects."
+  ztr_global_warming.3.d_global: "Prolonged inundation is disrupting [SCOPE.sState('ztr_climate_disaster_state').GetName] in [SCOPE.sCountry('ztr_climate_disaster_country').GetName]. Fields are waterlogged, wells are turning saline and existing defenses are overwhelmed. Coastal communities elsewhere are studying a disaster that could burden the region for years."

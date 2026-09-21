@@ -136,17 +136,6 @@
   pm_electric_fueled_pump_building_copper_mine: "전기 동력 펌프" # 12274714322641791154
   pm_electric_fueled_pump_building_commonores_mine: "전기 동력 펌프" # 12274714322641791154
   pm_electric_fueled_pump_building_advancedores_mine: "전기 동력 펌프" # 12274714322641791154
-  pmg_selective_mineral_extraction_coal_mine: "선택적 채광" # 14235096038385755448
-  pmg_selective_mineral_extraction_iron_mine: "선택적 채광" # 14235096038385755448
-  pmg_selective_mineral_extraction_sulfur_mine: "선택적 채광" # 14235096038385755448
-  pmg_selective_mineral_extraction_lead_mine: "선택적 채광" # 14235096038385755448
-  pmg_selective_mineral_extraction_commonores_mine: "선택적 채광" # 14235096038385755448
-  pm_no_selective_mineral_extraction: "선택적 채광 없음" # 4862243539714324969
-  selective_mineral_extraction_coal_mine: "유황 추출 공정" # 15232913996904606542
-  selective_mineral_extraction_iron_mine: "일반 광석 미량 회수" # 763051945784308860
-  selective_mineral_extraction_sulfur_mine: "납 부산물 추출" # 2938293663675097926
-  selective_mineral_extraction_lead_mine: "구리 공동 추출" # 8676479713710233324
-  selective_mineral_extraction_commonores_mine: "철광 매장지 잔여 채굴" # 14982216465803826353
   pmg_base_building_water: "물" # 8142607344205050291
   pm_hand_pumped_water: "수동 펌프 물" # 8878172320706189251
   pm_steam_pumped_water: "증기 펌프 양수" # 6667549047245734033
@@ -802,3 +791,24 @@
   pmg_aerial_trade_trade_center: "공중 교역량" # 2400830276553252491
   pm_no_aerial_trade: "공중 교역 없음" # 9205996462694201456
   pm_aerial_trade: "항공 화물 네트워크" # 6592810915038195840
+  pmg_byproduct_extraction_iron_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_commonores_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_sulfur_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_coal_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_lead_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_uranium_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_copper_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_bauxite_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_advancedores_mine: "Byproduct Extraction"
+  pmg_byproduct_extraction_rare_earths_mine: "Byproduct Extraction"
+  pm_no_byproduct_extraction: "No Byproduct Extraction"
+  basic_byproduct_extraction_iron_mine: "Common Ores Byproduct"
+  basic_byproduct_extraction_commonores_mine: "Iron Byproduct"
+  basic_byproduct_extraction_sulfur_mine: "Copper Byproduct"
+  mid_byproduct_extraction_coal_mine: "Sulfur Byproduct"
+  mid_byproduct_extraction_lead_mine: "Iron Byproduct"
+  mid_byproduct_extraction_uranium_mine: "Copper Byproduct"
+  advanced_byproduct_extraction_copper_mine: "Advanced Ores Byproduct"
+  advanced_byproduct_extraction_bauxite_mine: "Rare Earths Byproduct"
+  advanced_byproduct_extraction_advancedores_mine: "Rare Earths Byproduct"
+  advanced_byproduct_extraction_rare_earths_mine: "Uranium Byproduct"

@@ -14,7 +14,6 @@
   pmg_nuclear_submarine_military: "핵추진 잠수함" # 4321249029096038130
   pm_nuclear_submarine_0: "핵추진 잠수함 없음" # 15843418278106161093
   pm_nuclear_submarine_1: "핵추진 잠수함" # 16009435962668934885
-  nuclear_dev_cost: "핵 개발 비용" # 2054009195085313519
   nuclear_capability: "핵무기 보유국" # 14889242624102345621
   start_nuclear_weapons_program_decision: "#n Nuclear Weapons#! Program"
   start_nuclear_weapons_program_decision_desc: "핵무기는 핵분열(원자탄) 반응이나 핵분열 및 핵융합 반응의 조합(수소폭탄)에서 파괴력을 얻는 폭발 장치로, 핵폭발을 일으킵니다. 우리는 이 무기를 개발하여 적들의 심장에 공포를 심어주어야 합니다. 다만, 핵무기 프로그램은 우리가 충분한 독립성을 잃거나 대량살상무기(WMD) 소유를 금지하는 법률을 제정할 경우 중단될 것입니다." # 3812256883590403760
@@ -24,7 +23,6 @@
   gained_nuclear_capability_first.option: "'이제 나는 죽음이 되었으니, 세계의 파괴자라.'\n - J. 로버트 오펜하이머" # 16700040268487987453
   gained_nuclear_capability.t: "핵보유국들 사이의 자리" # 394777711399441297
   gained_nuclear_capability.d: "우리의 지난 시험들이 성공함에 따라, 우리는 핵무기와 그 무기들을 적국에 전달할 수단을 확보하였습니다. 이는 이제 우리와 전쟁 중인 적대국을 핵무기로 타격할 수 있음을 의미합니다." # 8492588271422848410
-  gained_nuclear_capability.f: "[SCOPE.sCountry('nuclear_country').GetName]가 $building_nuclear_weapons_silo$ [concept_building]에 대한 재화 부족이 없는 건물을 더 이상 보유하지 않거나 종속국이 될 경우 핵 능력을 상실하게 됩니다." # 14131420684222163267
   gained_nuclear_capability.option: "온 세상이 우리의 위세에 떨게 될 것이다!" # 2005324189150193159
   gained_nuclear_capability_others.t: "이상한 무기" # 4267394738455872506
   gained_nuclear_capability_others.d: "[SCOPE.sCountry('nuclear_country').GetName]이(가) '#i 원자 폭탄#!'이라 불리는, 두렵고도 웅장하며 비할 데 없는 파괴력을 지닌 무기를 성공적으로 개발하고 폭발시켰다는 보고를 받았습니다. 이 기념비적인 성과는 전쟁과 세계 정치의 새로운 시대를 열었으며, 이제 [SCOPE.sCountry('nuclear_country').GetName]은(는) 순식간에 도시 전체를 초토화할 수 있는 무기를 보유하게 되었습니다. 미래는 그들이 이 불길을 안전을 구축하는 데 사용할지, 아니면 새로운 비극을 써 내려가는 데 사용할지 평가할 것입니다." # 12257277143772005245
@@ -40,13 +38,9 @@
   nuclear_attack.f: "핵무기에 피격당한 주 지역들은 향후 수십 년에 걸쳐 서서히 약화될 매우 치명적인 수정치들을 가지게 될 것입니다." # 3852306953807628024
   nuclear_attack.option: "살아남지 못한 이들을 위해 잠시 묵념합시다." # 16973487996907307895
   atomic_bomb_first_use.t: "세상을 바꿀 무기" # 1467685218918192497
-  atomic_bomb_first_use.d: "상상조차 할 수 없는 파괴의 소식이 세상에 전해졌습니다. 원자 분열의 힘으로 작동하는 단 하나의 폭탄이 [SCOPE.sState('nuclear_striked_state_target').GetName]를 황무지로 만들었으며, 살아남은 소수의 생존자들은 화상과 방사능 중독으로 고통받고 있습니다. [SCOPE.sCountry('actor').GetName]가 인류 역사상 최초로 원자력 무기를 사용하여 [SCOPE.sCountry('target_country').GetName]에 이 끔찍한 신병기를 투하했습니다. 세력 균형이, 어쩌면 문명 그 자체의 운명이 영원히 바뀌었습니다." # 17262767099309059380
   atomic_bomb_first_use.f: "보고서들은 눈을 멀게 하는 섬광, 포효하는 파괴의 물결, 그리고 하늘 높이 솟아오른 버섯구름에 대해 이야기하고 있습니다. 과학자들과 장군들은 이것이 단순한 또 다른 무기가 아니라, 인류가 단 몇 초 만에 스스로를 파괴할 수 있게 된 새로운 시대의 시작임을 이제 깨닫고 있습니다." # 4436399663437242213
   atomic_bomb_first_use.option: "#V #i 원자 시대#!#!에 오신 것을 환영합니다." # 1483177426125730456
   je_develop_nuclear_weapons: "#n Nuclear Weapons#! Program"
-  je_develop_nuclear_weapons_reason: "[ROOT.GetCountry.GetName] is currently attempting to create its own #V #N Nuclear Weapon#!#!.\nThis is a monumental task requiring [ROOT.GetCountry.GetAdjective] scientists to research the #v $atomic_bomb$#! [concept_technology] and the military to build at least #v 1 $building_nuclear_weapons_silo$#! [concept_building] in the country.\n\nProgress depends on our [Concept('concept_research_capacity','$concept_research_capacity$')]."
-  je_develop_nuclear_weapons_1.tt: "국가 내에 최소한 #v 1 $building_nuclear_weapons_silo$#! [concept_building]이 존재해야 합니다." # 17404497784539497020
-  je_develop_nuclear_weapons_2.tt: "어떠한 국가와도 #v$pause_nuclear_weapons_development$#! #조약#!을 맺지 않았습니다." # 16337843815340205807
   je_nuclear_weapons_info_panel: "원자 시대" # 6201412611697490491
   je_nuclear_weapons_info_panel_reason: "[SCOPE.sCountry('first_nuclear_country').GetName]에 의해 #i 원자폭탄#!이 발견된 이후, 세계의 [Concept('concept_great_power', '$concept_great_powers$')]들은 세력 균형을 유지하고 잠재적 적대국들의 핵 공격을 억제하기 위해 각자의 핵무기를 개발하고 확장하는 경쟁을 벌이고 있습니다. 이는 각국이 핵 능력 면에서 서로를 앞지르려 함에 따라 국가 간 긴장의 위험한 고조를 초래했습니다.\n\n#V #i 원자 시대#!#!가 도래했으며, 이와 함께 상호 확증 파괴의 망령이 드리우고 있습니다.\n\n#v 핵 타격 능력 순위#! @nuclear_icon!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_power_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_power_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_power_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_power_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_power_display_rank_5_type')]\n\n#v 핵 타격 방어 순위#! @nuclear_icon!:\n[SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_defence_display_rank_1_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_defence_display_rank_2_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_defence_display_rank_3_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_defence_display_rank_4_type')][SCOPE.GetRootScope.GetCountry.GetCustom('ztr_nuclear_strike_defence_display_rank_5_type')]" # 5879989087168813681
   je_nuclear_weapons_info_panel_status: "[ROOT.GetCountry.GetAdjective] 핵 점수: [GetPlayer.MakeScope.Var('nuclear_strike_power_display').GetValue]" # 3505852026597036357
@@ -69,7 +63,6 @@
   nuclear_damage_3: "중급 핵 피해" # 12846309350388605343
   nuclear_damage_4: "높은 핵 피해" # 18347528104240273575
   nuclear_damage_5: "극심한 핵 피해" # 2044298638585897595
-  nuclear_attack_cooldown: "핵무기 비축량 소진" # 8755889020417832165
   nuclear_fallout_1: "매우 낮은 핵 낙진" # 12002408115892286950
   nuclear_fallout_2: "낮은 핵 낙진" # 7024724982547419946
   nuclear_fallout_3: "중급 핵 낙진" # 11795426217578724171
@@ -84,12 +77,9 @@
   nuclear_ultimatum_white_peace: "핵 최후통첩 (백지 평화)" # 7109188588409929835
   nuclear_ultimatum_white_peace_action_name: "핵 최후통첩 (백지 평화)" # 7109188588409929835
   nuclear_ultimatum_white_peace_action_propose_name: "핵 최후통첩 (백지 평화)" # 7814125559003480041
-  nuclear_ultimatum_white_peace_desc: "이 외교 행동은 수신국이 백지 평화(즉, 현상 유지)에 동의하거나 핵무기로 공격받게 됨을 요구합니다. 수신국이 핵무기를 보유하고 있다면 제안국에 대한 보복 공격을 감행할 것임을 유의하십시오." # 10572347920055080849
   nuclear_ultimatum_white_peace_action_notification_name: "[INITIATOR_COUNTRY.GetAdjective] 핵무기에 피격당함" # 6487685909475061064
-  nuclear_ultimatum_white_peace_action_notification_desc: "[INITIATOR_COUNTRY.GetName]이 핵무기로 [TARGET_COUNTRY.GetName]을 공격했습니다. [TARGET_COUNTRY.GetName]이 그 주(province)들에 입은 피해는 각 주 지역이 보유한 민방위 수준과 탄도 미사일 방어 체계에 따라 달라졌습니다." # 15354088987592781742
   nuclear_ultimatum_white_peace_proposal_notification_name: "핵 최후통첩 (백지 평화)" # 7814125559003480041
   nuclear_ultimatum_white_peace_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]은 [TARGET_COUNTRY.GetName]에게 현상 유지를 의미하는 백지 평화에 동의하거나, 핵무기로 공격받을 것을 요구합니다\"" # 16147370636162638042
-  nuclear_ultimatum_white_peace_proposal_notification_effects_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]이 핵무기를 보유하고 있을 경우 보복 공격을 개시할 것입니다." # 13471732168406590064
   nuclear_ultimatum_white_peace_proposal_accepted_name: "[INITIATOR_COUNTRY.GetAdjective]의 핵 최후통첩을 [TARGET_COUNTRY.GetName]이 수락했습니다" # 10867728686329507549
   nuclear_ultimatum_white_peace_proposal_accepted_desc: "[TARGET_COUNTRY.GetName]이 [INITIATOR_COUNTRY.GetName]의 무조건 평화 제안을 수락했습니다." # 8318928519376868581
   nuclear_ultimatum_white_peace_proposal_declined_name: "[INITIATOR_COUNTRY.GetAdjective]의 핵 최후통첩을 [TARGET_COUNTRY.GetName]이 거부했습니다" # 17043096571728404363
@@ -117,47 +107,28 @@
   station_nuclear_weapons_action_notification_desc: "[INITIATOR_COUNTRY.GetName]이 핵무기를 [TARGET_COUNTRY.GetName]에 배치하여 [TARGET_COUNTRY.GetName]과 인접한 모든 국가를 더욱 효과적으로 타격할 수 있게 되었습니다." # 16909436287672076340
   station_nuclear_weapons_proposal_notification_name: "[INITIATOR_COUNTRY.GetAdjective]을 [TARGET_COUNTRY.GetNameNoFlag]에 핵무기를 배치하시겠습니까?" # 6432489358343972487
   station_nuclear_weapons_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]은 [TARGET_COUNTRY.GetName]에 자국의 핵무기를 주둔시켜, [TARGET_COUNTRY.GetName]과 국경을 맞댄 모든 국가를 더욱 효과적으로 타격할 수 있도록 할 것을 제안합니다\"" # 18255107543032143343
-  station_nuclear_weapons_proposal_notification_effects_desc: "[INITIATOR_COUNTRY.GetName]은 [TARGET_COUNTRY.GetName]과 국경을 맞댄 모든 국가를 핵무기로 공격할 때, 주(state) 보유 수로 인해 국가가 얻는 방어 점수를 [INITIATOR_COUNTRY.GetAdjective] 무기를 주둔시킨 국가 수당 25%씩 감소시켜 더욱 효과적으로 공격할 수 있게 될 것입니다\"" # 3938530259247810659
   station_nuclear_weapons_action_notification_break_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag] 핵무기 제거됨" # 9757005546814174296
   station_nuclear_weapons_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName]이(가) [INITIATOR_COUNTRY.GetName]에서 [TARGET_COUNTRY.GetAdjective] 핵무기를 제거했습니다." # 3046627778900101591
   station_nuclear_weapons_trigger_desc_global: "우리나라에 배치된 핵무기가 있습니까" # 470551261247507679
   pause_nuclear_weapons_development: "핵무기 프로그램 일시 중단" # 14250735825556091854
-  pause_nuclear_weapons_development_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]은(는) 본 조약 기간 동안 [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]의 요청에 따라 [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjective] 핵 프로그램의 중단에 동의했습니다." # 18205696153068251409
   pause_nuclear_weapons_development_action_name: "핵무기 프로그램 중단 조약" # 7858636092223641939
   pause_nuclear_weapons_development_action_break_name: "핵무기 프로그램 재개" # 8883701257506060918
   pause_nuclear_weapons_development_action_propose_name: "핵무기 프로그램 중단 조약" # 7858636092223641939
-  pause_nuclear_weapons_development_proposal_accepted_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] 핵무기 개발 프로그램 중단 조약" # 9852072121055897477
-  pause_nuclear_weapons_development_proposal_accepted_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 매주 수입을 지급하는 대가로 핵무기 프로그램을 중단하는 것에 동의했습니다." # 9424678542594120448
-  pause_nuclear_weapons_development_desc: "이 [concept_article]의 대상국이 추진하는 #y 핵무기 프로그램#은(는) 이 [concept_treaty]가 지속되는 동안 진전되지 않을 것입니다." # 13020633050451379807
-  pause_nuclear_weapons_development_action_notification_name: "[TARGET_COUNTRY.GetName]이 핵무기 프로그램을 중단합니다" # 5952968512487675386
-  pause_nuclear_weapons_development_action_notification_desc: "[TARGET_COUNTRY.GetName]은 핵무기 프로그램을 중단하는 데 동의하는 대신 [INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 매주 수입을 지급합니다." # 6180591190408919131
-  pause_nuclear_weapons_development_proposal_notification_name: "[TARGET_COUNTRY.GetName]이 핵무기 프로그램을 중단합니다" # 5952968512487675386
-  pause_nuclear_weapons_development_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 제안합니다: [TARGET_COUNTRY.GetAdjective] 핵무기 프로그램을 중단하면 [INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 매주 수입을 지급할 것입니다." # 12913854183105464837
-  pause_nuclear_weapons_development_proposal_notification_effects_desc: "수락될 경우, [TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에게 매주 수입을 지급하는 대가로 핵무기 개발 프로그램을 중단할 것입니다." # 5458156634888959026
   pause_nuclear_weapons_development_proposal_declined_name: "핵무기 프로그램 일시 중단 조약 거부됨" # 12954792258843158441
-  pause_nuclear_weapons_development_proposal_declined_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]이 주간 수입을 [TARGET_COUNTRY.GetName]에 지불하는 대가로 핵무기 프로그램을 중단하자는 [INITIATOR_COUNTRY.GetName]의 제안을 거부했습니다. [TARGET_COUNTRY.GetAdjective] 핵 프로그램은 계속됩니다." # 3073752000781575576
-  pause_nuclear_weapons_development_effects_desc: "• 한 [concept_country]가 다른 [concept_country]를 겨냥하여 수립한 협정으로, 후자의 $concept_country$는 [concept_treaty] 기간 동안 #y 핵무기 개발 프로그램#!을 중단하게 됩니다." # 6878520054051204911
   pause_nuclear_weapons_development_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting]은 핵무기 개발 프로그램을 중단할 것입니다." # 778527967188001851
   recently_reduced_nukes: "핵무기 감축" # 16778102537088425463
   nuclear_de_escalation_treaty: "핵무기 감축" # 11420746013852938040
-  nuclear_de_escalation_treaty_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]은(는) 본 조약 기간 동안 [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]의 요청에 따라 [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjective] 핵 프로그램의 중단에 동의했습니다." # 18205696153068251409
   nuclear_de_escalation_treaty_action_name: "핵 비확산 조약" # 2841899809523091815
   nuclear_de_escalation_treaty_action_break_name: "핵 비확산 조약 파기" # 10699683626781213850
   nuclear_de_escalation_treaty_action_propose_name: "핵 비확산 조약" # 2841899809523091815
-  nuclear_de_escalation_treaty_proposal_accepted_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] 핵 비확산 조약" # 491210706056924913
-  nuclear_de_escalation_treaty_proposal_accepted_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]는 서로 국경을 맞대고 있는 국가에 핵무기를 배치하지 않고, 핵 공격 능력을 50% 감축하며, 탄도탄 요격 미사일 체계를 배치하지 않기로 합의하여 핵무기 태세를 완화하기로 약속했습니다." # 15962597214457054859
   nuclear_de_escalation_treaty_proposal_notification_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] 핵 비확산 조약" # 3217891584769893697
-  nuclear_de_escalation_treaty_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]는 서로 국경을 맞대고 있는 국가들에 핵무기를 배치하지 않고, 핵 공격 능력을 50% 감축하며, 탄도탄 요격 체계를 배치하지 않기로 합의함으로써 핵무기 태세를 완화할 것을 제안합니다." # 651573451503101091
-  nuclear_de_escalation_treaty_proposal_notification_effects_desc: "만약 수락된다면, 양국은 서로 국경을 맞댄 국가에 핵무기를 주둔시키지 않으며, 핵 공격 능력을 50% 감축하고, 어떠한 탄도탄 요격 미사일 체계도 배치하지 않을 것입니다." # 6134108920490382814
   nuclear_de_escalation_treaty_proposal_declined_name: "핵 비확산 조약 거부됨" # 8020693968836177928
-  nuclear_de_escalation_treaty_proposal_declined_desc: "[TARGET_COUNTRY.GetName]은 국경을 맞대고 있는 국가들에 핵무기를 배치하지 않고, 핵 공격 능력을 50% 감축하며, 탄도탄 요격 미사일 시스템을 배치하지 않기로 합의하여 [INITIATOR_COUNTRY.GetName]의 핵무기 태세 완화 제안을 거부했습니다." # 6175561280360991227
   nuclear_de_escalation_treaty_action_notification_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] $nuclear_de_escalation_treaty$" # 9671913739729840661
   nuclear_de_escalation_treaty_action_notification_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]가 $nuclear_de_escalation_treaty$를 체결했습니다." # 17769101775448035020
   nuclear_de_escalation_treaty_action_notification_break_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] $nuclear_de_escalation_treaty$ 해산됨" # 9551557892293497579
   nuclear_de_escalation_treaty_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]가 $nuclear_de_escalation_treaty$를 파기하였습니다." # 2651685279220429955
   nuclear_de_escalation_treaty_trigger_desc_third: "[COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]는 모두 핵 억지력을 감축해야 할 것입니다." # 4463073581906475248
   nuclear_de_escalation_treaty_effect_desc_global: "$nuclear_de_escalation_treaty$에 서명하십시오" # 9749466207271127680
-  nuclear_de_escalation_treaty_effects_desc: "• 양측 [Concept('concept_country', '$concept_countries$')]은 다음을 이행할 것입니다: \n  (1) 각자의 $nuclear_weapons$ 비축량을 #r 50%#! 감축할 것; \n  (2) 서로 국경을 맞댄 국가들에 $nuclear_weapons$을 주둔시키지 않을 것; 그리고 \n  (3) 어떠한 #y 탄도탄 요격 미사일 시스템#도 배치하지 않을 것." # 13317302138204655035
   nuclear_de_escalation_treaty_article_short_desc: "[FIRST_COUNTRY.GetNameNoFormatting]와 [SECOND_COUNTRY.GetNameNoFormatting]는 모두 핵무기 비축량을 감축할 것입니다." # 2431617044523752283
   TREATY_DRAFT_ARTICLE_FLAG_IS_NUCLEAR_DE_ESCALATION_TREATY_EFFECT: "• [FIRST_COUNTRY.GetName]와 [SECOND_COUNTRY.GetName]는 모두 핵무기 비축량을 감축할 것입니다." # 15359089095126718378
   TREATY_ARTICLE_FLAG_IS_NUCLEAR_DE_ESCALATION_TREATY_EFFECT: "• [FIRST_COUNTRY.GetName]와 [SECOND_COUNTRY.GetName]는 모두 핵무기 비축량을 감축할 것입니다." # 15359089095126718378
@@ -193,8 +164,6 @@
   war_nuclear_strike_action_notification_desc: "[INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에 핵무기를 발사하여 [TARGET_COUNTRY.GetAdjective] [Concept('concept_state', '$concept_states$')]에 막대한 피해를 입혔습니다." # 15154217159109521107
   war_nuclear_strike_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetAdjective]의 [TARGET_COUNTRY.GetName]에 대한 핵 공격" # 10042167046408988776
   war_nuclear_strike_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName]이 [TARGET_COUNTRY.GetName]에 핵무기를 발사하여 [TARGET_COUNTRY.GetAdjective] [Concept('concept_state', '$concept_states$')]에 막대한 피해를 입혔습니다." # 15154217159109521107
-  hydrogen_bomb: "수소 폭탄" # 7861314568175918126
-  hydrogen_bomb_desc: "열핵무기, 즉 수소폭탄은 핵무기 기술의 정점을 나타냅니다. 오직 핵분열에만 의존하는 원자폭탄과 달리, 열핵무기는 핵분열과 핵융합 반응을 모두 결합하는 2단계 과정을 이용합니다. 초기 핵분열 폭발은 수소 동위원소의 핵융합을 점화하는 데 필요한 극심한 온도와 압력을 생성하며, 이는 전통적인 원자폭탄보다 훨씬 능가하는 막대한 위력의 폭발을 초래합니다. 열핵무기의 개발은 억지력, 방어, 국제 관계에 대한 새로운 고려 사항을 도입하며 세계 군사력의 전략적 지형을 크게 변화시켰습니다." # 3966813831982483437
   nuclear_war: "핵전쟁" # 15053086296326380902
   dp_annex_war_historical: "핵전쟁" # 15053086296326380902
   THIS_DOES_NOT_HAVE_NUKES: "이것은 핵무기를 보유하고 있지 않습니다" # 4410911475172260538
@@ -215,21 +184,65 @@
   anarchy: " " # 548583522804720525
   anarchy_name: " " # 548583522804720525
   anarchy_name_adj: "무정부 상태" # 11990305982213038225
-  has_not_signed_nuclear_non_proliferation_treaty_tt: "[ROOT.GetCountry.GetName]은 #! 핵 비확산 조약#에 서명하지 않았습니다." # 415637787783536422
   develop_thermonuclear_weapons_decision: "#n Thermonuclear Weapons#! Program"
   develop_thermonuclear_weapons_decision_desc: "우리는 이미 핵보유국이지만, 세계 무대를 진정으로 지배하기 위해서는 핵융합을 이용한 더 강력한 무기, 즉 수소폭탄을 개발해야 합니다. 이 무기는 현재의 원자폭탄보다 훨씬 더 큰 파괴력을 지니며, 우리의 초강대국 지위를 확고히 할 것입니다." # 8128061718728802226
   je_develop_thermonuclear_weapons: "#n Thermonuclear Weapons#! Program"
-  je_develop_thermonuclear_weapons_reason: "[ROOT.GetCountry.GetName] is currently attempting to create its own #V #N Thermonuclear Weapon#!#!. This is an even more monumental task requiring [ROOT.GetCountry.GetAdjective] scientists to improve their knowledge about #v Nuclear Fusion#!.\n\nProgress depends on our [Concept('concept_research_capacity','$concept_research_capacity$')]."
   gained_thermonuclear_capability.t: "더욱 강력한 핵무기고" # 7993803255674442445
   gained_thermonuclear_capability.d: "#V #N 핵무기#!#!의 성공적인 개발로, 우리는 핵무기고를 현저히 강화했습니다. 핵융합을 이용하는 이 신형 무기는 전통적인 원자폭탄보다 훨씬 더 강력한 파괴력을 지니고 있습니다. 이는 두려움의 대상이 되어야 할까요, 아니면 축하받을 일일까요?" # 11614790607197794739
-  gained_thermonuclear_capability.option: "우리의 핵무기고는 그 어느 때보다 강력합니다#!#!." # 16631537464784464842
   je_develop_nuclear_weapons_goal: "#v 연구#!를 완료하십시오." # 12319363390920341550
   je_develop_thermonuclear_weapons_goal: "#v 연구#!를 완료하십시오." # 12319363390920341550
   join_nuclear_non_proliferation_treaty_decision: "핵확산금지조약에 가입" # 1752421821800302949
   join_nuclear_non_proliferation_treaty_decision_desc: "원자력 시대의 여명은 막대한 약속과 전례 없는 위험을 동시에 가져왔습니다. 핵무장 국가의 수가 증가함에 따라 세계적 재앙의 위험 또한 커지고 있습니다. 이에 국제연합(United Nations)은 핵무기 확산을 억제하고, 군축을 진전시키며, 원자력의 평화적 이용을 장려하기 위해 고안된 획기적인 협정인 핵확산금지조약(NPT)을 제안했습니다. 이 조약에 가입함으로써 우리 국가는 파괴보다 외교를, 고립보다 협력을 선택한 국가들 사이에 서게 될 것입니다." # 203514506073649370
-  signed_NPT_1_tt: "[ROOT.GetCountry.GetName]은 더 이상 #V #N 핵무기#!#!를 개발할 수 없으며, 최소 10 #V #N 년#!#! 동안 군축을 위해 노력해야 합니다." # 14191533006314406996
   leave_nuclear_non_proliferation_treaty_decision: "핵확산금지조약" # 17641887131023149731
   leave_nuclear_non_proliferation_treaty_decision_desc: "핵확산금지조약(NPT)은 핵무기 확산을 방지하고 군축을 촉진하기 위해 수립되었습니다. 그러나 이 조약이 우리 국가의 자위 능력과 세계 무대에서 주권을 주장하는 능력을 저해하고 있다는 것이 분명해졌습니다. NPT에서 탈퇴함으로써, 우리는 핵 프로그램을 통제하고 점점 더 불확실해지는 세계에서 국가 이익을 보호할 수단을 확보할 수 있을 것입니다." # 1643728599764504962
-  signed_NPT_2_tt: "[ROOT.GetCountry.GetName]은 더 이상 #v 핵확산금지조약#!의 제약에 얽매이지 않습니다." # 13006910254960086013
   take_control_of_nuclear_arsenal_decision: "핵무기 통제권 확보" # 17297359247112173038
-  take_control_of_nuclear_arsenal_decision_desc: "우리 주 내에 이미 상당한 규모의 핵무기가 존재합니다. 이제 우리가 완전히 점령했으므로, 핵무기에 대한 통제권을 확보하여 조국을 적들로부터 방어하는 데 사용할 수 있습니다." # 15511135279435948358
+  atomic_bomb_first_use.d: "News of unimaginable destruction has reached the world. [SCOPE.sCountry('ztr_first_nuclear_attacker').GetName] has struck [SCOPE.sState('ztr_first_nuclear_state').GetName] in [SCOPE.sCountry('ztr_first_nuclear_defender').GetName] with nuclear weapons. The first use of this terrifying force in war has changed the balance of power forever."
+  gained_nuclear_capability.f: "Nuclear capability is lost if we no longer possess a Nuclear Weapons Silo, abandon military uranium use or become a subject. Silos need personnel and supplies to contribute to nuclear strike power."
+  je_develop_nuclear_weapons_1.tt: "Has at least one completed Nuclear Weapons Silo with personnel and no goods shortages"
+  je_develop_nuclear_weapons_2.tt: "Research is not paused by the NPT, a nuclear programme pause treaty, default or the lack of a staffed and supplied Research Center"
+  je_develop_nuclear_weapons_reason: "Develop an independent #v Nuclear Weapons#! capability by completing #v 1500#! research points, researching #v $atomic_bomb$#! and operating a staffed and supplied #v $building_nuclear_weapons_silo$#!.\n\nMonthly progress is our [concept_research_capacity] minus 5, with a minimum of 1. War or a nuclear-armed rival doubles progress. The NPT, a pause treaty, default or loss of an operational Research Center suspends progress without erasing it."
+  je_develop_thermonuclear_weapons_reason: "Develop #v Thermonuclear Weapons#! by completing #v 2000#! research points and researching #v $second_nuclear_reactor$#!.\n\nMonthly progress is our [concept_research_capacity] minus 5, with a minimum of 1. War or a thermonuclear-armed rival triples progress. The NPT, a pause treaty, default or loss of an operational Research Center suspends progress without erasing it. We must retain nuclear capability to continue this programme."
+  signed_NPT_1_tt: "Suspends atomic and thermonuclear weapons research without erasing progress, prevents new weapons programmes and silo construction, and restricts nuclear first use. Existing arsenals are retained. Withdrawal is unavailable for at least #v 10 years#!."
+  signed_NPT_2_tt: "At least #v 10 years#! have passed since joining the Nuclear Non-Proliferation Treaty"
+  has_not_signed_nuclear_non_proliferation_treaty_tt: "Has not signed the #v Nuclear Non-Proliferation Treaty#!"
+  ztr_research_center_project_available_tt: "No other Research Center programme or fusion reactor construction project is active"
+  ztr_tested_nuclear_arsenal_tt: "Owns a staffed and supplied Nuclear Weapons Silo containing an arsenal that has already been tested"
+  ztr_nuclear_arsenal_ready: "Has an independent, operational nuclear arsenal ready to launch"
+  ztr_has_operational_nuclear_silo: "Has a staffed and supplied Nuclear Weapons Silo"
+  ztr_is_operational_nuclear_silo: "Is a completed Nuclear Weapons Silo with personnel and no goods shortages"
+  ztr_has_operational_research_center: "Has a staffed and supplied Research Center"
+  ztr_nuclear_research_paused: "Nuclear weapons research is paused"
+  ztr_nuclear_target_in_range: "The target is within nuclear delivery range"
+  ztr_nuclear_first_use_allowed: "Political and treaty conditions permit nuclear first use against this country"
+  ztr_can_launch_nuclear_strike: "Can launch a nuclear strike against this country"
+  ztr_can_retaliate_nuclear_strike: "Can retaliate against this country with a ready nuclear arsenal"
+  ztr_can_issue_nuclear_ultimatum: "Can support this ultimatum with an available nuclear arsenal"
+  nuclear_attack_cooldown: "Nuclear Arsenal Rearming (One Year)"
+  take_control_of_nuclear_arsenal_decision_desc: "Recover a tested nuclear arsenal in a staffed and supplied silo we own. This requires atomic bomb technology, independence and no NPT commitment. An unfinished programme or an untested prototype cannot provide nuclear capability."
+  gained_thermonuclear_capability.option: "Our nuclear arsenal is stronger than ever."
+  station_nuclear_weapons_proposal_notification_effects_desc: "Each host country strategically adjacent to a nuclear target reduces that target's defence by 10%. Delivery range still requires strategic adjacency to the attacker or operational ICBMs."
+  pause_nuclear_weapons_development_desc: "The source country pauses its atomic and thermonuclear weapons research for the duration of this [concept_article], retaining accumulated progress. The recipient's own research is unaffected."
+  pause_nuclear_weapons_development_effects_desc: "The source country's atomic and thermonuclear weapons research is suspended while this [concept_article] remains in force. Accumulated progress is preserved."
+  pause_nuclear_weapons_development_pact_desc: "The country providing this commitment suspends its atomic and thermonuclear weapons research, retaining accumulated progress."
+  pause_nuclear_weapons_development_proposal_accepted_name: "Nuclear Weapons Research Suspended"
+  pause_nuclear_weapons_development_proposal_accepted_desc: "The nuclear research pause agreement has been accepted. The country providing the commitment suspends its atomic and thermonuclear weapons programmes, retaining accumulated progress."
+  pause_nuclear_weapons_development_action_notification_name: "Nuclear Weapons Research Suspended"
+  pause_nuclear_weapons_development_action_notification_desc: "The source country has agreed to suspend its atomic and thermonuclear weapons programmes for the duration of the treaty."
+  pause_nuclear_weapons_development_proposal_notification_name: "Suspend Nuclear Weapons Research?"
+  pause_nuclear_weapons_development_proposal_notification_desc: "The proposed agreement would suspend the source country's atomic and thermonuclear weapons research without erasing accumulated progress."
+  pause_nuclear_weapons_development_proposal_notification_effects_desc: "Suspends the source country's atomic and thermonuclear weapons research while the agreement remains in force."
+  pause_nuclear_weapons_development_proposal_declined_desc: "The proposed nuclear research pause was rejected. No programme is suspended by this proposal."
+  nuclear_de_escalation_treaty_desc: "Both countries halve their effective nuclear strike power and refrain from stationing weapons in countries strategically adjacent to the other. A withdrawing country's strike power remains halved for five years."
+  nuclear_de_escalation_treaty_effects_desc: "Both countries' nuclear strike power is reduced by #v 50%#! while the treaty is active. A withdrawing country's power remains reduced for #v 5 years#!. Nuclear stationing agreements near the other party are restricted."
+  nuclear_de_escalation_treaty_pact_desc: "Both countries maintain reduced nuclear strike power and restrict nuclear stationing near each other."
+  nuclear_de_escalation_treaty_proposal_accepted_name: "Nuclear De-escalation Treaty Accepted"
+  nuclear_de_escalation_treaty_proposal_accepted_desc: "[INITIATOR_COUNTRY.GetName] and [TARGET_COUNTRY.GetName] have agreed to halve their nuclear strike power and restrict nuclear stationing near each other."
+  nuclear_de_escalation_treaty_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] and [TARGET_COUNTRY.GetName] would halve their nuclear strike power and restrict nuclear stationing near each other."
+  nuclear_de_escalation_treaty_proposal_notification_effects_desc: "Halves both countries' effective nuclear strike power. A withdrawing country's power remains reduced for five years."
+  nuclear_de_escalation_treaty_proposal_declined_desc: "[TARGET_COUNTRY.GetName] has rejected the proposed reduction of nuclear strike power and restrictions on nuclear stationing."
+  nuclear_ultimatum_white_peace_action_notification_desc: "The nuclear ultimatum has led to a nuclear exchange. Damage depends on operational arsenals, national defences and delivery range."
+  nuclear_ultimatum_white_peace_desc: "Demand a white peace backed by an available nuclear arsenal of our own or an ally in the same war. Refusal can trigger strikes against the opposing coalition and retaliation by countries with ready arsenals."
+  nuclear_ultimatum_white_peace_proposal_notification_effects_desc: "Refusal can trigger a nuclear exchange involving other participants in the war. Retaliation requires an operational arsenal that is not rearming and can reach its target."
+  nuclear_dev_cost: "핵 개발 비용" # 2054009195085313519
+  hydrogen_bomb: "수소 폭탄" # 7861314568175918126
+  hydrogen_bomb_desc: "열핵무기, 즉 수소폭탄은 핵무기 기술의 정점을 나타냅니다. 오직 핵분열에만 의존하는 원자폭탄과 달리, 열핵무기는 핵분열과 핵융합 반응을 모두 결합하는 2단계 과정을 이용합니다. 초기 핵분열 폭발은 수소 동위원소의 핵융합을 점화하는 데 필요한 극심한 온도와 압력을 생성하며, 이는 전통적인 원자폭탄보다 훨씬 능가하는 막대한 위력의 폭발을 초래합니다. 열핵무기의 개발은 억지력, 방어, 국제 관계에 대한 새로운 고려 사항을 도입하며 세계 군사력의 전략적 지형을 크게 변화시켰습니다." # 3966813831982483437
