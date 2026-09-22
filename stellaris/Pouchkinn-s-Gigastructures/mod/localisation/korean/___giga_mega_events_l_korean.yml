@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: b4bda32
+  giga_overclock_switchable: "§lThis setting can be changed in the overclock menu if we change our mind.§!"
   giga_dialog.40041.desc: "[From.From.GetName]의 다이슨 스피어 건설 작업이 계속됩니다. 고급 태양광 수확기를 추가로 설치하면서 다이슨 스피어의 이점을 더욱 증대시켰습니다.\n\n에너지 생산량은 완공 시 예상되는 최대치의 50%에 도달했습니다." # 16339445918380948419
   giga_dialog.40042.desc: "태양 에너지 집적 패널 세트를 하나 더 추가하면서, 우리는 [From.From.GetName] 성계에 건설 중인 다이슨 스피어를 거의 완성했습니다.\n\n해당 구조물은 현재 이 크기의 항성에서 나오는 예상 최대 출력량의 75%를 생산하고 있습니다.\n\n곧 항성 자체의 온전한 힘이 우리의 손 안에 들어올 것입니다." # 13580115792278457826
   giga_dialog.101.name: "$name_kugelblitz$ 건설 완료" # 15123180004490014044
@@ -45,7 +45,10 @@
   giga_dialog.3405.a: "훌륭하군." # 13528797227097630973
   giga_dialog.3406.name: "항성 압축 - 중성자별" # 15136072814675397495
   giga_dialog.3406.desc: "$name_fusion_suppressor$가 이제 [giga_system.GetName]을 항성 핵 내부의 양성자와 전자가 융합하여 중성자가 될 정도로 압축하여, 핵을 기묘한 항성 플라스마 층으로 둘러싸인 중성자별로 변모시켰습니다.\n\n이제 이 항성을 이대로 유지할 수 있으며, physics 및 engineering 연구를 산출합니다. 대안으로, 항성을 더욱 압축하여 physics 연구를 산출하는 인공 Black Hole로 변모시킬 수도 있습니다. 마지막으로, $name_fusion_suppressor$는 모든 중력 압축을 해제하고 반발력을 가하여, 항성 핵 내부의 반발력이 항성을 supernova로 폭발시키게 할 수 있습니다. 이는 $name_fusion_suppressor$를 파괴하고 이 solar system의 planets 표면에 강력한 buildings를 만드는 데 사용될 수 있는 새로운 strategic resource를 침전시킬 것입니다." # 9460313088901052943
-  giga_dialog.3406.a: "훌륭하군!" # 4205353275372794963
+  giga_dialog.3406.a: "Set to §IDetonate Star§!."
+  giga_dialog.3406.a.tooltip: "$fusion_suppressor_6a_DESC$\n\n$giga_overclock_switchable$"
+  giga_dialog.3406.b: "Set to §ICollapse Star§!."
+  giga_dialog.3406.b.tooltip: "$fusion_suppressor_6b_DESC$\n\n$giga_overclock_switchable$"
   giga_dialog.3407.name: "$name_fusion_suppressor$ 해체됨" # 143740614665781625
   giga_dialog.3407.desc: "[giga_system.GetName] 성계 내에 있는 $name_fusion_suppressor$가 성공적으로 해체되었습니다. 그것이 생성한 블랙홀은 이제 다른 프로젝트에 사용할 수 있게 되었습니다." # 16815443742194418700
   giga_dialog.3407.a: "훌륭합니다." # 13357587260733090656

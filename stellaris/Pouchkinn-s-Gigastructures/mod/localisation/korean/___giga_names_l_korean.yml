@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: b4bda32
   NAME_Giga_Void_System: "[PREV.GetName] 공허" # 16490265774202801592
   NAME_Giga_Vester_Void_System: "[current_blokkat_mothership_system.GetName] 공허" # 3222883929964821420
   NAME_Giga_Blokkaspawn_Void_System: "[blokkat_spawn_system.GetName] 공허" # 1315887352968463249
@@ -48,3 +47,24 @@
   giga_rename_star_t1: "[rename_system.GetName] 에이" # 10377706563805665781
   giga_rename_star_t2: "[rename_system.GetName] B" # 12051696562352082485
   giga_rename_star_t3: "[rename_system.GetName] C" # 1319433381740019705
+  giga_moon_spiritualist: "Seraph"
+  giga_planet_spiritualist: "Herald Of Zarqlan"
+  giga_system_spiritualist: "Shroudtouched Will"
+  giga_moon_materialist: "Mentor"
+  giga_planet_materialist: "Luminary"
+  giga_system_materialist: "Elder"
+  giga_moon_xenophile: "Guardian"
+  giga_planet_xenophile: "Paragon"
+  giga_system_xenophile: "Ultima"
+  giga_moon_xenophobe: "Dominance"
+  giga_planet_xenophobe: "Ascendancy"
+  giga_system_xenophobe: "Zenith"
+  giga_moon_machine: "Lambda"
+  giga_planet_machine: "Pi"
+  giga_system_machine: "Omega"
+  giga_moon_hive: "Brethren"
+  giga_planet_hive: "Perpetuity"
+  giga_system_hive: "Thrice to Power"
+  giga_moon_meopa: "Fidelity"
+  giga_planet_meopa: "Sobakitränen"
+  giga_system_meopa: "Vernichter"

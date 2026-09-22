@@ -1,7 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: b4bda32
-  d_flusion_katown: "나를 교체하시오" # 14507175091903795792
-  d_flusion_katown_desc: "나를 교체하시오" # 14507175091903795792
   d_fluffy_plains: "솜털 평원" # 485737206964667424
   d_fluffy_plains_desc: "광대한 '평평한' 구름 평원, 강풍이 휘몰아칩니다." # 8544921466723519185
   d_gassy_rivers: "가스 강" # 13710469059791742472
@@ -15,9 +12,9 @@
   d_zro_cloud: "즈로 성운" # 4249627876468314340
   d_zro_cloud_desc: "끝없이 떠다니는 귀중한 즈로 입자들의 거대한 유랑 구름." # 14380150076271860352
   d_giga_supertensiles_1: "£giga_sr_amb_megaconstruction£ +1" # 6256544470360146816
-  d_giga_supertensiles_1_desc: "" # 17241709254077376921
+  d_giga_supertensiles_1_desc: ""
   d_giga_supertensiles_2: "£giga_sr_amb_megaconstruction£ +2" # 2960695998966619595
-  d_giga_supertensiles_2_desc: "" # 17241709254077376921
+  d_giga_supertensiles_2_desc: ""
   d_iodizium_deposit: "£giga_sr_iodizium£ +3" # 9503378252766760219
   d_iodizium_deposit_1: "£giga_sr_iodizium£ +1" # 14634693042489050073
   d_nicoll_deposit: "£minerals£ +10" # 14750764525639193362
@@ -30,18 +27,18 @@
   d_giga_hab_consumer_goods_1: "£소비재£ +1" # 6739737851143410976
   d_giga_hab_astral_threads_1: "£astral_threads£ +1" # 7126309452655601210
   d_subsurface_ocean_deposit_1: "£food£ +2 £society£ +4" # 16804724438009065308
-  d_iodizium_deposit_desc: "" # 17241709254077376921
-  d_iodizium_deposit_1_desc: "" # 17241709254077376921
-  d_nicoll_deposit_desc: "" # 17241709254077376921
-  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
-  d_nicollboom_deposit_desc: "" # 17241709254077376921
-  d_pouchkinn_deposit_desc: "" # 17241709254077376921
-  d_ringworld_deposit_desc: "" # 17241709254077376921
-  d_succ_deposit_desc: "" # 17241709254077376921
-  d_giga_hab_nanites_1_desc: "" # 17241709254077376921
-  d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
-  d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
-  d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
+  d_iodizium_deposit_desc: ""
+  d_iodizium_deposit_1_desc: ""
+  d_nicoll_deposit_desc: ""
+  d_depletedstripmine_deposit_desc: ""
+  d_nicollboom_deposit_desc: ""
+  d_pouchkinn_deposit_desc: ""
+  d_ringworld_deposit_desc: ""
+  d_succ_deposit_desc: ""
+  d_giga_hab_nanites_1_desc: ""
+  d_giga_hab_consumer_goods_1_desc: ""
+  d_giga_hab_astral_threads_1_desc: ""
+  d_subsurface_ocean_deposit_1_desc: ""
   d_giga_food_1: "£food£ +1" # 13198594911325131486
   d_giga_food_1_desc: "$d_giga_food_1$" # 11670648074534172502
   d_giga_food_2: "£food£ +2" # 7157903611014298026
@@ -92,6 +89,8 @@
   d_flusio_arcology_wreck_desc: "플루시오-아콜로지에서 발생한 전투로 부분적 또는 완전히 파괴된 도시들." # 500460360055046615
   d_flusio_arcology_anarchy: "플루시온 무정부 상태" # 16646561948448807195
   d_flusio_arcology_anarchy_desc: "행성에서 카이저를 몰아내기 위한 파괴적인 전투로 인한 부수적 피해의 결과로, 플루시온의 광범위한 지역이 완전한 무정부 상태에 빠져들었습니다." # 5876869257241802328
+  d_flusio_arcology_anarchy_collapse: "Flusionian Anarchy"
+  d_flusio_arcology_anarchy_collapse_desc: "Large swathes of Flusion have fallen into complete anarchy as a result of brutal warlord conflicts over the power vacuum left by the Kaiser."
   d_flusio_arcology_administration: "플루시오-아콜로지 행정부" # 6294343021211911643
   d_flusio_arcology_administration_desc: "플루션을 둘러싼 물류적 악몽을 관리하는 것은 결코 쉬운 일이 아닙니다. 플루시오-아르콜로지가 지원할 수 있는 구역의 수가 막대하기 때문에, 적절히 관리하기 위해서는 더 많은 주의가 필요합니다." # 879464044696686221
   d_flusio_arcology_administration_tooltip: "[giga_flusion_administration_mechanics]" # 3083366610459792673
@@ -103,6 +102,24 @@
   d_katlantropa_project_desc: "카틀란트로파 프로젝트는 이전의 사막 지역을 관개하여 농업 및 관개 용지로 적합하게 만들고 있습니다." # 7118027248159086495
   d_katlantropa_project_wreck: "카틀란트로파 사막화" # 9126462189880906154
   d_katlantropa_project_wreck_desc: "카틀란트로파의 파괴는 한때 경작지였던 지역들을 광활한 사막으로 되돌렸습니다." # 12762995033726930113
+  d_flusion_katown_central: "Zentralkatown"
+  d_flusion_katown_central_desc: "Designed by architect Dietrich Videafurr, the Katown Megalopolis is the shining jewel of Flusion.\n\nA colossal and perfectly-built megacity, it spans the entire northern part of the Katzen Herzlands. Blending natural spaces and rivers with elegant yet efficient Katzen architecture, it can house billions of inhabitants.\n\nHere in Inner Katown lie civic monuments such the Grand Katown Pyramid, a colossal pyramid that stretches miles into the sky: the architectural embodiment of galactic power."
+  d_flusion_bundengrad: "Bundengrad"
+  d_flusion_bundengrad_desc: "The semi-aquatic megacity of Bundengrad encompasses the remnants of the Katspian (previously Crabspian) sea, historic home to species such as the Kronks and Yinjites.\n\nCentral to this city's design purpose is the monumental Bundeshalle, built as the part-time residence and office of Katzenartig governor Loris von Kattensbach.\n\nThe Bundeshalle, alongside its army of ancillary bureaucratic offices, is designed to manage not only much of the day-to-day governance of Flusion, but also to wield authority over the many distant provinces of an interstellar empire."
+  d_flusion_katown_submerged: "Katownunterseeisch"
+  d_flusion_katown_submerged_desc: "Many thousands of square kilometres of Katown lie underwater, including the whole of the northern Sonne Meer sea and stretches of the Pacwific Ocean. These sectors are built for the aquatic species of the Katzenartig Imperium.\n\nSuch intimate contact with the open ocean also has bountiful industrial and logistical uses, benefitting the import, processing and export of Flusionian goods from Katown."
+  d_flusion_teho: "Teho"
+  d_flusion_teho_desc: "Straddling Flusion's southern pole, the frigid megacity of Teho holds many secrets, both old and new.\n\nIn the depths of the city lie grand remains from an era over ten thousand years ago, from where the Haranians dominated southern Flusion till a dimming Jublio froze their pole over.\n\nMore recently, the Kaiser has filled every nook and cranny of the expanded city with black sites for some of the Imperium's less... good-looking research projects."
+  d_flusion_lutecien: "Lutecien"
+  d_flusion_lutecien_desc: "Even though Lutecien became the megacity of today under Katzen rule, the Roqualian heritage shines through. Reliable, easily-upgradeable, high-speed communications infrastructure keeps the future-focused streets of Lutecien wired in and up to date.\n\nThis Roqualian-style first-class digital infrastructure, with its scope widened by the Katzens from recreation to cyberwarfare, is now capable of performing a wide variety of high-tech purposes."
+  d_flusion_uranstadt: "Uranstadt"
+  d_flusion_uranstadt_desc: "Renowned as an engine of industrial progress, Uranstadt's heritage is that of a literal and metaphorical powerhouse of the Imperium.\n\nVast power cables, ubiquitous transformers, and old cooling towers repurposed for every task imaginable, characterise the aptly-named \"Uranium City\" of Flusion."
+  d_flusion_grosslaurendaar: "Großlaurendaar"
+  d_flusion_grosslaurendaar_desc: "The capital city of Laurendaar reflects the character of the continent as a whole under Katzenartig rule: a showpiece paradisaical realm. This constructed utopia was designed to be an ideal city, a tourist resort, and a giant propaganda set simultaneously.\n\nVast ecospheres cluster like raindrops on an overgrown metal grille, each containing a hand-perfected imitation of an alien world. In Großlaurendaar like nowhere else can one can turn a corner in an urban canyon to see anything from a sunbathed desert to a fungal cavern or thick jungle."
+  d_flusion_katown_outer: "Äußerekatown"
+  d_flusion_katown_outer_desc: "Outer Katown sprawls ever-south across the Herzlands of central Flusion, practically turning the Katown Megalopolis into a continent unto itself.\n\nImmense overland transport corridors tear open the heart of the city to trans- and inter- continental logistics, their burden lessened by countless spaceports.\n\nFactories in districts such as Brandenpurr are the size of small cities themselves, built for unthinkable efficiencies of scale and by unthinkable economic ambition."
+  d_flusion_gardenwilds: "Flusionian Gardenwilds"
+  d_flusion_gardenwilds_desc: "Within and without the mighty eperopoleis, the Flusio-Arcology is a garden as much as an megafactory, rich in somewhat tame but nonetheless beautiful nature."
   d_aeternum_gigantic_fission_reactor: "거대 핵분열 원자로" # 3253401782103603259
   d_aeternum_gigantic_fission_reactor_desc: "머나먼 곳에 이터넘이 건설한 기묘한 핵분열 반응로. 거대한 우라늄 덩어리를 동력원으로 삼아 막대한 양의 전력을 생산합니다." # 8889186149483258606
   d_exp_civ_primitive_preserve: "원시 문명 자작나무 보존지" # 4576529318400036259
