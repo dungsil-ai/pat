@@ -347,7 +347,7 @@
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
   giga_menu.1.name: ""
-  giga_menu.1.desc: "v 3.40.1"
+  giga_menu.1.desc: "v 3.40.2"
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -10555,4 +10555,3 @@
   supertensiles_bugged_read_bruh: "직업 기반 메가구조물 건설 제한 / 초인장재가 현재 §R버그로 인해 비활성화됨§! 상태입니다." # 6114785400911447839
   giga_is_moon: "행성은 다른 행성의 위성입니다." # 16161706871934839410
   giga_REPLACE_ME: "REPLACE_ME" # 8745063705845015763
-  requires_owning_everything_in_system: "$TRIGGER_FAIL$Something in this system is not owned by you."
