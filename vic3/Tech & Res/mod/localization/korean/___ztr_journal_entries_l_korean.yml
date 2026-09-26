@@ -178,23 +178,14 @@
   imf_development_plan_modifier_desc: "포괄적인 장기 계획이 우선순위 인프라와 산업에 자원을 집중시키고 있으나, 이러한 중앙 집중식 노력은 정치적 유연성을 저해합니다." # 10187191654818438718
   imf_foreign_scholarships_modifier: "해외 장학 프로그램" # 13041555353498859101
   imf_foreign_scholarships_modifier_desc: "촉망받는 학자들이 #v 열강#! 대학에서 유학하며 최첨단 지식을 습득하고 지속적인 학술 네트워크를 구축하고 있습니다." # 17127280929587776705
-  ztr_demographic_stage_complete_tt: "다음 [Concept('concept_demographic_stages','인구 통계 단계')]를 향한 진행도 #v 30#!을 축적하십시오." # 16026503759814666505
   ztr_demographic_0_to_1_progress_bar: "2단계로 전환" # 16403429608668513823
-  ztr_demographic_0_to_1_progress_bar_desc: "2단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 12635655944543500794
   ztr_demographic_1_to_2_progress_bar: "3단계로 전환" # 1049382517723773182
-  ztr_demographic_1_to_2_progress_bar_desc: "3단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 3997284241895032181
   ztr_demographic_2_to_3_progress_bar: "4단계로 전환" # 3245143199136868529
-  ztr_demographic_2_to_3_progress_bar_desc: "4단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 18335213209711716193
   ztr_demographic_3_to_4_progress_bar: "5단계로 전환" # 5350450630535383902
-  ztr_demographic_3_to_4_progress_bar_desc: "5단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 541222171003982166
   ztr_demographic_4_to_5_progress_bar: "6단계로 전환" # 12395559094371456151
-  ztr_demographic_4_to_5_progress_bar_desc: "6단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 6557498643964910373
   ztr_demographic_5_to_6_progress_bar: "7단계로 전환" # 5584162568917253690
-  ztr_demographic_5_to_6_progress_bar_desc: "7단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 5915416444686327469
   ztr_demographic_6_to_7_progress_bar: "8단계로 전환" # 9681631935721470619
-  ztr_demographic_6_to_7_progress_bar_desc: "8단계 전환 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 11730129341436225588
   ztr_demographic_7_to_8_progress_bar: "전환 후 변화" # 12010332226938744811
-  ztr_demographic_7_to_8_progress_bar_desc: "전환 후 변화 진행도: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/30)." # 10986418141749047815
   ztr_demographic_base_drift_tt: "연간 자연 인구 통계 변화" # 6123924299382008821
   ztr_demographic_healthcare_tt: "사립 또는 공립 건강 보험" # 18086523206355400770
   ztr_demographic_advanced_healthcare_tt: "현대적 의료 기관" # 8706277891121872237
@@ -559,3 +550,12 @@
   ztr_global_warming_stage_4_loc: "#negative_value Critical Warming#! - above 2.0 C, prolonged coastal flooding adds to the climate crisis."
   ztr_global_warming_climate_disasters_none_loc: "None."
   ztr_global_warming_climate_disasters_active_loc: "#negative_value [GetGlobalVariable('ztr_global_warming_climate_disaster_states_var').GetValue|0]#! [concept_state|E] affected at the last annual survey; shared regions count once per owner."
+  ztr_demographic_stage_complete_tt: "Accumulate #v 100#! Progress toward the next [Concept('concept_demographic_stages','$concept_demographic_stage$')]."
+  ztr_demographic_0_to_1_progress_bar_desc: "Transition to Stage II Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_1_to_2_progress_bar_desc: "Transition to Stage III Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_2_to_3_progress_bar_desc: "Transition to Stage IV Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_3_to_4_progress_bar_desc: "Transition to Stage V Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_4_to_5_progress_bar_desc: "Transition to Stage VI Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_5_to_6_progress_bar_desc: "Transition to Stage VII Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_6_to_7_progress_bar_desc: "Transition to Stage VIII Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_demographic_7_to_8_progress_bar_desc: "Post-Transition Drift Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
