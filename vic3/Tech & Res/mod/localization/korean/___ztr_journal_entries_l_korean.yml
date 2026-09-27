@@ -11,22 +11,6 @@
   je_austrian_empire_collapse: "오스트리아 제국 쇠퇴" # 18237739727139310839
   je_austrian_empire_collapse_reason: "[ROOT.GetCountry.GetAdjective] 제국은 한때 유럽의 지배적인 강국이었으나, 이제는 중대한 도전에 직면해 있습니다. 민족주의의 대두, 경제적 어려움, 그리고 제국 권위의 쇠퇴는 제국 내 다양한 민족들 사이에서 광범위한 불안과 독립 요구를 불러일으켰습니다. 변화하는 정치 지형에 적응하지 못하고 다양한 인구의 염원을 해결하지 못한 제국의 무능함은 쇠퇴에 일조했습니다. 이제 남은 질문은 [ROOT.GetCountry.GetAdjective] 제국이 개혁하여 생존할 수 있을지, 아니면 분열의 압력에 굴복할 것인지입니다." # 584420390196742549
   je_austrian_empire_collapse_goal: "문화적 포용과 권리를 증진하는 법률을 제정하고, 1인당 GDP를 증대시키며, 유럽의 지정학적 구도에서 열강으로서의 지배적 위치를 유지하십시오. 만약 이 임무를 완수한다면, [ROOT.GetCountry.GetName]은 붕괴하여 이웃 국가들과 내부 민족들에게 분할될 것입니다. 마지막으로 상기하건대, 군주제여야 합니다." # 10927670946855961213
-  je_demographic_0_to_1: "제1 인구 단계" # 10230333809639582235
-  je_demographic_0_to_1_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 1단계#!에 있으며, #v 매우 높음#! #positive_value 출생률#!과 #v 높음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 보통#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 9608290480316694760
-  je_demographic_1_to_2: "제2 인구 단계" # 7019434059661691877
-  je_demographic_1_to_2_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 2단계#!에 있으며, #v 매우 높음#! #positive_value 출생률#!과 #v 보통#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 높음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 14465224133705972441
-  je_demographic_2_to_3: "제3 인구학적 단계" # 18148737894986015217
-  je_demographic_2_to_3_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 3단계#!에 있으며, #v 높음#! #positive_value 출생률#!과 #v 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) 여전히 #v 높음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 975640767013069952
-  je_demographic_3_to_4: "제4 인구 단계" # 8251728726899213751
-  je_demographic_3_to_4_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 4단계#!에 있으며, #v 보통#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 보통#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 2257234260039567211
-  je_demographic_4_to_5: "제5 인구 단계" # 6525560495082095151
-  je_demographic_4_to_5_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 5단계#!에 있으며, #v 낮음#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 낮음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 7173717562564343261
-  je_demographic_5_to_6: "VI 인구 통계 단계" # 5269149959962520538
-  je_demographic_5_to_6_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 6단계#!에 있으며, #v 낮음#! #positive_value 출생률#!과 #v 매우 낮음#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 낮음#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 4557721663052671661
-  je_demographic_6_to_7: "VII 인구 단계" # 4622397807988829389
-  je_demographic_6_to_7_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 7단계#!에 있으며, #v 최소#! #positive_value 출생률#!과 #v 최소#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 최소#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 4124704306093274947
-  je_demographic_7_to_8: "VIII 인구 단계" # 16374899645558252674
-  je_demographic_7_to_8_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stage$')]의 #v 8단계#!에 있으며, #v 존재하지 않음#! #positive_value 출생률#!과 #v 최소#! #negative_value 사망률#!을 특징으로 합니다.\n\n[Concept('concept_pop_growth','$concept_pop_growth$')]은(는) #v 정체#!입니다.\n\n[Concept('concept_literacy','$concept_literacy$')], [Concept('concept_sol','$concept_sol$')], 국경 폐쇄 및 자유주의 정부는 이 과정을 가속화할 것입니다. 이민, 다문화주의 및 전통적 가치는 이 과정을 늦출 것입니다." # 10891701389166110775
   je_old_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은 최소한 부분적으로 개발된 국가여야 하며 인권 기술을 보유하고 있어야 합니다." # 12686736595944502365
   je_mid_progressive_ideologies_goal: "[ROOT.GetCountry.GetName]은(는) 최소한 @developed_country! [Concept('concept_developed_country','$concept_developed_country$')]이어야 하며 사회 민주주의 기술을 보유해야 합니다." # 10930155988888875745
   je_liberty_index: "이념 지수" # 17334563368789126202
@@ -178,49 +162,6 @@
   imf_development_plan_modifier_desc: "포괄적인 장기 계획이 우선순위 인프라와 산업에 자원을 집중시키고 있으나, 이러한 중앙 집중식 노력은 정치적 유연성을 저해합니다." # 10187191654818438718
   imf_foreign_scholarships_modifier: "해외 장학 프로그램" # 13041555353498859101
   imf_foreign_scholarships_modifier_desc: "촉망받는 학자들이 #v 열강#! 대학에서 유학하며 최첨단 지식을 습득하고 지속적인 학술 네트워크를 구축하고 있습니다." # 17127280929587776705
-  ztr_demographic_0_to_1_progress_bar: "2단계로 전환" # 16403429608668513823
-  ztr_demographic_1_to_2_progress_bar: "3단계로 전환" # 1049382517723773182
-  ztr_demographic_2_to_3_progress_bar: "4단계로 전환" # 3245143199136868529
-  ztr_demographic_3_to_4_progress_bar: "5단계로 전환" # 5350450630535383902
-  ztr_demographic_4_to_5_progress_bar: "6단계로 전환" # 12395559094371456151
-  ztr_demographic_5_to_6_progress_bar: "7단계로 전환" # 5584162568917253690
-  ztr_demographic_6_to_7_progress_bar: "8단계로 전환" # 9681631935721470619
-  ztr_demographic_7_to_8_progress_bar: "전환 후 변화" # 12010332226938744811
-  ztr_demographic_base_drift_tt: "연간 자연 인구 통계 변화" # 6123924299382008821
-  ztr_demographic_healthcare_tt: "사립 또는 공립 건강 보험" # 18086523206355400770
-  ztr_demographic_advanced_healthcare_tt: "현대적 의료 기관" # 8706277891121872237
-  ztr_demographic_traditional_values_tt: "전통적인 종교적 가족 규범" # 15756980867831270829
-  ztr_demographic_north_america_tt: "북미 이민 패턴" # 8934851658784866540
-  ztr_demographic_post_1970_tt: "20세기 후반 세계적인 출산율 감소" # 10942192147811000654
-  ztr_demographic_slavery_tt: "노예제 합법" # 8646819456031073482
-  ztr_demographic_0_to_1_development_tt: "더 이상 가난한 국가가 아니거나 1900년 이후" # 13027858996539160382
-  ztr_demographic_0_to_1_sol_tt: "평균 생활 수준 10 초과" # 8652451560959981803
-  ztr_demographic_0_to_1_literacy_tt: "문해율 30% 초과" # 9592807852313564750
-  ztr_demographic_1_to_2_development_tt: "더 이상 초기 개발 단계가 아님" # 1204880703346692506
-  ztr_demographic_1_to_2_sol_tt: "1870년 이후 평균 생활 수준 12 초과" # 17868428836159131242
-  ztr_demographic_1_to_2_literacy_tt: "1870년 이후 문해율 40% 초과" # 10828508646080213120
-  ztr_demographic_2_to_3_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_2_to_3_sol_tt: "1900년 이후 평균 생활 수준 14 초과" # 589245890431601954
-  ztr_demographic_2_to_3_literacy_tt: "1900년 이후 문해율 50% 초과" # 8479335351546030832
-  ztr_demographic_2_to_3_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
-  ztr_demographic_3_to_4_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_3_to_4_sol_tt: "1930년 이후 평균 생활 수준 16 초과" # 7060712587464194958
-  ztr_demographic_3_to_4_literacy_tt: "1930년 이후 문해율 60% 초과" # 5315498341085257359
-  ztr_demographic_3_to_4_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
-  ztr_demographic_4_to_5_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_4_to_5_sol_tt: "평균 생활 수준이 17 이상이거나 1950년 이후" # 5944991299670491100
-  ztr_demographic_4_to_5_literacy_tt: "문해율이 65% 이상이거나 1950년 이후" # 4571226157319661819
-  ztr_demographic_4_to_5_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
-  ztr_demographic_5_to_6_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_5_to_6_sol_tt: "평균 생활 수준이 18 이상이거나 1960년 이후" # 16549940552908204993
-  ztr_demographic_5_to_6_literacy_tt: "문해율이 70% 이상이거나 1960년 이후" # 10903920821938816877
-  ztr_demographic_5_to_6_immigration_tt: "이민에 개방적인 사회" # 16077987745097498514
-  ztr_demographic_6_to_7_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_6_to_7_immigration_tt: "이민에 개방적인 부유한 국가" # 357792706172742936
-  ztr_demographic_6_to_7_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
-  ztr_demographic_7_to_8_development_tt: "더 이상 낮은 개발 단계가 아님" # 7297135845964309542
-  ztr_demographic_7_to_8_north_america_tt: "북미 이민 예외주의" # 1556471854138514711
-  ztr_demographic_7_to_8_reset_tt: "이민에 개방적인 부유한 국가" # 357792706172742936
   je_group_the_future_of_china: "중화의 르네상스" # 6174413751193712489
   ztr_je_the_future_of_china: "중화제국의 교차로" # 7891748867879131431
   ztr_je_the_future_of_china_reason: "[ROOT.GetCountry.GetName]은 완전한 붕괴를 모면했으나, 고대의 구조는 여전히 마비된 상태입니다. 어떤 길이 현대의 #v 중화제국#!을 형성하게 될까요?\n\n#blue_value 기업 파벌#!은 급격한 산업화, 시장 확장, 그리고 세계 경제로의 통합에 집중합니다. 이들은 해안가 엘리트, 기업 거물, 그리고 외국인 투자자들의 지지를 받습니다.\n\n#v 민족주의 파벌#!은 국가 통합, 영토 보전, 그리고 강력한 중앙 정부를 강조합니다. 이들은 지방 총독, 군부, 그리고 전통주의 세력의 지원을 받습니다.\n\n#n 기술-유교 파벌#!은 전통적 가치로의 회귀, 사회적 조화, 그리고 점진적인 개혁을 주장합니다. 이들은 지식인, 농촌 공동체, 그리고 보수적인 문화 기관들의 지지를 받습니다." # 12495500450409120869
@@ -550,12 +491,7 @@
   ztr_global_warming_stage_4_loc: "#negative_value Critical Warming#! - above 2.0 C, prolonged coastal flooding adds to the climate crisis."
   ztr_global_warming_climate_disasters_none_loc: "None."
   ztr_global_warming_climate_disasters_active_loc: "#negative_value [GetGlobalVariable('ztr_global_warming_climate_disaster_states_var').GetValue|0]#! [concept_state|E] affected at the last annual survey; shared regions count once per owner."
-  ztr_demographic_stage_complete_tt: "Accumulate #v 100#! Progress toward the next [Concept('concept_demographic_stages','$concept_demographic_stage$')]."
-  ztr_demographic_0_to_1_progress_bar_desc: "Transition to Stage II Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_1_to_2_progress_bar_desc: "Transition to Stage III Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_2_to_3_progress_bar_desc: "Transition to Stage IV Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_3_to_4_progress_bar_desc: "Transition to Stage V Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_4_to_5_progress_bar_desc: "Transition to Stage VI Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_5_to_6_progress_bar_desc: "Transition to Stage VII Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_6_to_7_progress_bar_desc: "Transition to Stage VIII Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
-  ztr_demographic_7_to_8_progress_bar_desc: "Post-Transition Drift Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)."
+  ztr_ccp_revolutionary_discipline: "Revolutionary Discipline"
+  ztr_ccp_revolutionary_discipline_desc: "Party cadres, political commissars and village committees channel every grievance of the war into the revolutionary cause. As long as the struggle for China continues, hardship breeds recruits rather than rebels."
+  ztr_kmt_national_salvation: "National Salvation"
+  ztr_kmt_national_salvation_desc: "The Nationalist government rallies the country under the banner of saving the Republic from the Red menace. While the civil war rages, sacrifices are borne in the name of the nation rather than turned against the state."

@@ -195,3 +195,8 @@
   company_roland_berger: "롤랜드 버거" # 2565831192013735615
   company_capgemini: "캡제미니" # 13095048899191392621
   company_nri_nomura: "노무라 종합연구소" # 475304027977767064
+  company_basic_pharmaceuticals: "Consolidated Pharmaceuticals"
+  company_uranium_advancedores_mining: "Strategic Minerals Consortium"
+  generic_company_basic_consulting: "General Consulting Group"
+  generic_company_basic_cosmetics: "Standard Cosmetics"
+  generic_company_basic_tech: "Integrated Electronics"

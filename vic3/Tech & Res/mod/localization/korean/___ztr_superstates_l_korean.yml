@@ -62,3 +62,5 @@
   dyn_c_mediterranean_commune_adj: "지중해" # 12402591186983410388
   dyn_c_mediterranean_imperium: "지중해 제국" # 1397480596921672653
   dyn_c_mediterranean_imperium_adj: "지중해" # 12402591186983410388
+  identity_continental_confederation: "Continental Confederation"
+  identity_continental_confederation_desc: "This $concept_power_bloc_identity_extra_short$ binds its members into a single market and a shared political project. It cannot be chosen when founding an ordinary [concept_power_bloc]."

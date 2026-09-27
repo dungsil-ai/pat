@@ -80,3 +80,6 @@
   austrian_empire_collapse_lose_minor_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정성 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 약간의 진전#을 잃었습니다!" # 8663667535979777717
   austrian_empire_collapse_lose_moderate_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정성 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 진척도를 잃습니다#!" # 118428018394355143
   austrian_empire_collapse_lose_great_progress_tt: "[ROOT.GetCountry.GetAdjective] 제국의 안정 상황이 #tooltippable;negative_value;TOOLTIP:expedition_peril_explanation_tt 진척도를 크게 잃었습니다!" # 3719653503673594856
+  austrian_empire_collapse.18.t: "Collapse of the Austrian Empire (Debug)"
+  austrian_empire_collapse.18.d: "Debug event: starts the journal entry of the collapse of the Austrian Empire."
+  austrian_empire_collapse.18.a: "Start the journal entry"
