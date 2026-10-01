@@ -8,11 +8,10 @@
 
 **증상:**
 ```
-Error: GOOGLE_AI_STUDIO_TOKEN is not set
-TypeError: Cannot read property 'generateContent' of undefined
+Error: 번역 API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.
 ```
 
-**원인:** Google AI API 키가 설정되지 않음
+**원인:** 번역 API 키가 설정되지 않음 (`GOOGLE_AI_STUDIO_TOKEN`과 `GOOGLE_GENERATIVE_AI_API_KEY` 모두 없음)
 
 **해결:**
 
@@ -31,7 +30,7 @@ cp .env.sample .env
 GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
 ```
 
-4. API 키 발급: [Google AI Studio](https://aistudio.google.com/app/apikey)
+4. API 키 발급: OpenAI 공식 API는 [API 키 페이지](https://platform.openai.com/api-keys), 다른 OpenAI 호환 서비스는 해당 서비스의 안내를 따릅니다. 변수 이름은 기존과 같이 `GOOGLE_AI_STUDIO_TOKEN`을 사용하며 키는 `Authorization: Bearer` 헤더로 전송됩니다.
 
 #### Node.js 버전 오류
 
@@ -217,11 +216,11 @@ Error: 429 Too Many Requests
 Error: Quota exceeded
 ```
 
-**원인:** Google AI API 할당량 초과
+**원인:** 사용 중인 API 서비스의 할당량 또는 요청 속도 제한 초과
 
 **해결:**
 
-1. API 사용량 확인: [Google Cloud Console](https://console.cloud.google.com/)
+1. API 사용량 확인: 사용 중인 서비스의 대시보드 (OpenAI 공식 API는 [OpenAI Platform](https://platform.openai.com/usage))
 
 2. 대기 후 재시도:
 ```bash
@@ -231,6 +230,27 @@ pnpm ck3
 ```
 
 3. 배치 크기 줄이기 (향후 기능)
+
+#### 모델 또는 인증 오류 (404/401)
+
+**증상:**
+```
+Error: 404 model not found
+Error: 401 Unauthorized
+```
+
+**원인:**
+- 404: 연결한 API가 `GEMINI_MODEL` 값(기본 `gemini-flash-lite-latest`)을 지원하지 않음. 기본 모델은 이를 지원하는 호환 프록시용이며, OpenAI 공식 API는 지원하지 않습니다.
+- 401: `GOOGLE_AI_STUDIO_TOKEN`(또는 폴백 `GOOGLE_GENERATIVE_AI_API_KEY`) 값이 연결한 API에서 유효하지 않음. 키는 `Authorization: Bearer` 헤더로 전송됩니다.
+
+**해결:**
+
+1. 연결 대상 확인: `GOOGLE_AI_BASE_URL`이 비어 있으면 `https://api.openai.com/v1`을 사용합니다. 요청 경로는 기본 주소 뒤에 `/chat/completions`가 붙습니다.
+2. OpenAI 공식 API를 사용한다면 `.env`에 지원되는 모델 ID를 설정합니다:
+```env
+GEMINI_MODEL=your_openai_model_id
+```
+3. 호환 프록시를 사용한다면 프록시가 해당 모델 ID와 API 키를 허용하는지 확인합니다.
 
 #### 번역 품질 문제
 
@@ -286,7 +306,7 @@ pnpm ck3
 2. 네트워크 확인:
 ```bash
 ping google.com
-curl https://generativelanguage.googleapis.com/
+curl -I "${GOOGLE_AI_BASE_URL:-https://api.openai.com/v1}"
 ```
 
 3. 프록시 설정 (필요시):
@@ -489,7 +509,7 @@ const gameType: GameType = 'ck3'  // GameType
 
 **증상:**
 ```
-Cannot find module '@ai-sdk/google'
+Cannot find module '@ai-sdk/openai-compatible'
 ```
 
 **원인:** 의존성 설치 안 됨
@@ -740,7 +760,7 @@ pnpm ck3
 
 ### Q: API 비용이 얼마나 드나요?
 
-**A:** Google Gemini Flash는 매우 저렴합니다 (약 $0.0001/요청). 캐시 사용으로 대부분의 요청을 절감할 수 있습니다.
+**A:** 사용하는 API 서비스와 `GEMINI_MODEL`에 지정한 모델의 요금 정책에 따릅니다. 캐시 사용으로 대부분의 요청을 절감할 수 있습니다. 요금은 해당 서비스의 가격표에서 확인하세요.
 
 ### Q: 오프라인에서 사용할 수 있나요?
 
@@ -751,7 +771,7 @@ pnpm ck3
 
 ### Q: 다른 AI 모델을 사용할 수 있나요?
 
-**A:** 코드 수정이 필요합니다. `scripts/utils/ai.ts`를 참조하여 다른 AI 서비스를 통합할 수 있습니다.
+**A:** OpenAI 호환 Chat Completions API라면 코드 수정 없이 `GOOGLE_AI_BASE_URL`과 `GEMINI_MODEL`로 전환할 수 있습니다. 다른 방식의 API는 `scripts/utils/ai.ts`를 수정해야 합니다.
 
 ## 다음 단계
 

@@ -273,7 +273,7 @@ if (sourceHash === targetHash) {
              ▼
 ┌─────────────────────────────────────┐
 │ 4. AI 번역 (캐시 미스 시)           │
-│    - Gemini API 호출                │
+│    - Chat Completions API 호출      │
 │    - 재시도 로직                    │
 │    - 캐시 저장                      │
 └─────────────────────────────────────┘
@@ -304,7 +304,8 @@ if (sourceHash === targetHash) {
              ▼
 ┌─────────────────────────────────────┐
 │ 2. 모델 선택 및 설정               │
-│    - Model: gemini-flash-lite-latest│
+│    - Model: GEMINI_MODEL           │
+│      (기본 gemini-flash-lite-latest)│
 │    - Temperature: 0.5              │
 │    - Max tokens: 8192              │
 └────────────┬────────────────────────┘
@@ -312,7 +313,7 @@ if (sourceHash === targetHash) {
              ▼
 ┌─────────────────────────────────────┐
 │ 3. API 요청                         │
-│    - generateContent()             │
+│    - POST {baseURL}/chat/completions│
 │    - 재시도 로직 (실패 시)         │
 └────────────┬────────────────────────┘
              │
@@ -638,7 +639,7 @@ const dictionaryHits = 50 // 사전에 있는 항목
 // API 호출 수
 const apiCalls = changedItems - dictionaryHits // 50
 
-// 비용 (Gemini Flash 기준)
+// 비용 (사용하는 모델의 요금 기준, 예시 값)
 const costPerCall = 0.0001 // $0.0001
 const totalCost = apiCalls * costPerCall // $0.005
 ```

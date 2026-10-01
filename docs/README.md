@@ -224,7 +224,7 @@ translation-pipeline.md → caching.md → validation.md
 
 ### 관련 기술 문서
 - [TypeScript 공식 문서](https://www.typescriptlang.org/docs/)
-- [Google Gemini API 문서](https://ai.google.dev/docs)
+- [OpenAI Chat Completions API 문서](https://platform.openai.com/docs/api-reference/chat/create)
 - [Node.js 문서](https://nodejs.org/docs/)
 - [pnpm 문서](https://pnpm.io/)
 
@@ -279,7 +279,7 @@ translation-pipeline.md → caching.md → validation.md
 
 ### 알려진 제한사항
 - 현재 영어 → 한국어 번역만 지원
-- Google Gemini AI만 지원 (다른 AI 모델은 향후 추가 예정)
+- OpenAI 호환 Chat Completions API만 지원 (다른 방식의 API는 향후 추가 예정)
 - CLI 인터페이스만 제공 (GUI는 향후 개발 예정)
 
 자세한 내용은 [기능 요구사항](requirements.md#제한사항-limitations) 문서를 참조하세요.

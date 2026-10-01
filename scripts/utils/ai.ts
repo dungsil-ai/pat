@@ -1,5 +1,5 @@
 import { generateText } from 'ai'
-import { createGoogleGenerativeAI } from '@ai-sdk/google'
+import { createOpenAICompatible, type OpenAICompatibleProvider } from '@ai-sdk/openai-compatible'
 import dotenv from 'dotenv'
 import { type GameType, getSystemPrompt } from './prompts'
 import { addQueue } from './queue'
@@ -20,25 +20,26 @@ export class TranslationRefusedError extends Error {
   }
 }
 
-let _googleProvider: ReturnType<typeof createGoogleGenerativeAI> | null = null
+let _provider: OpenAICompatibleProvider | null = null
 
 /**
- * Google AI 프로바이더를 반환합니다. API 키가 없으면 오류를 발생시킵니다.
+ * OpenAI 호환 프로바이더를 반환합니다. API 키가 없으면 오류를 발생시킵니다.
  */
-function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
-  if (!_googleProvider) {
+function getProvider(): OpenAICompatibleProvider {
+  if (!_provider) {
     const apiKey = process.env.GOOGLE_AI_STUDIO_TOKEN || process.env.GOOGLE_GENERATIVE_AI_API_KEY
     if (!apiKey) {
       throw new Error(
-        'Google AI API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.',
+        '번역 API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.',
       )
     }
-    _googleProvider = createGoogleGenerativeAI({
+    _provider = createOpenAICompatible({
+      name: 'translation',
       apiKey,
-      baseURL: process.env.GOOGLE_AI_BASE_URL?.trim() || undefined,
+      baseURL: process.env.GOOGLE_AI_BASE_URL?.trim() || 'https://api.openai.com/v1',
     })
   }
-  return _googleProvider
+  return _provider
 }
 
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
@@ -46,7 +47,6 @@ const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
 const generationConfig = {
   temperature: 0.5,
   topP: 0.95,
-  topK: 40,
   maxOutputTokens: 8192,
 }
 
@@ -105,17 +105,12 @@ export async function translateAI (text: string, gameType: GameType = 'ck3', ret
 
         try {
           const result = await generateText({
-            model: getGoogle()(GEMINI_MODEL),
+            model: getProvider()(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
             topP: generationConfig.topP,
             maxOutputTokens: generationConfig.maxOutputTokens,
-            providerOptions: {
-              google: {
-                topK: generationConfig.topK,
-              },
-            },
           })
 
           if (isRefusal(result.finishReason)) {
@@ -165,17 +160,12 @@ export async function translateAIBulk (texts: string[], gameType: GameType = 'ck
 
         try {
           const result = await generateText({
-            model: getGoogle()(GEMINI_MODEL),
+            model: getProvider()(GEMINI_MODEL),
             system: getSystemPrompt(gameType, useTransliteration),
             prompt,
             temperature: generationConfig.temperature,
             topP: generationConfig.topP,
             maxOutputTokens: generationConfig.maxOutputTokens,
-            providerOptions: {
-              google: {
-                topK: generationConfig.topK,
-              },
-            },
           })
 
           if (isRefusal(result.finishReason)) {

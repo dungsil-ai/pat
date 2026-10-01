@@ -4,7 +4,7 @@ This file provides guidance to AI when working with code in this repository.
 
 ## Project Overview
 
-This is a **Paradox Interactive Game Mod Translation Tool** that automatically translates localization files for **Crusader Kings III (CK3)** mods from English to Korean using Google's Gemini AI. The tool processes game mod files while preserving game-specific formatting, variables, and syntax.
+This is a **Paradox Interactive Game Mod Translation Tool** that automatically translates localization files for **Crusader Kings III (CK3)** mods from English to Korean using an OpenAI-compatible Chat Completions API. The tool processes game mod files while preserving game-specific formatting, variables, and syntax.
 
 ## Common Commands
 
@@ -78,7 +78,7 @@ language = "english"                          # Source language
 - Handles file discovery, parsing, and output generation
 
 **AI Integration** (`scripts/utils/ai.ts`):
-- Google Gemini API integration
+- OpenAI-compatible Chat Completions integration via `@ai-sdk/openai-compatible`
 - Context-aware prompts for medieval/historical content
 - Retry logic for API failures
 
@@ -119,7 +119,7 @@ scripts/
 ## Development Notes
 
 - Uses TypeScript with jiti for direct execution
-- Google Gemini AI integration uses `GOOGLE_AI_STUDIO_TOKEN` by default and falls back to `GOOGLE_GENERATIVE_AI_API_KEY`
+- The AI integration keeps the legacy variable names: `GOOGLE_AI_STUDIO_TOKEN` (falls back to `GOOGLE_GENERATIVE_AI_API_KEY`) is sent as a Bearer token, `GOOGLE_AI_BASE_URL` defaults to `https://api.openai.com/v1` when unset or blank, and requests go to `/chat/completions`. The default `GEMINI_MODEL` (`gemini-flash-lite-latest`) requires a compatible proxy; set a supported model for the official OpenAI API
 - The repository pins Node.js via `.node-version` (currently v24.11.1), and GitHub composite actions also run on Node 24
 - File hashing system prevents unnecessary retranslation of unchanged content
 - Translation dictionary in `scripts/utils/dictionary.ts` provides manual overrides

@@ -179,7 +179,7 @@ console.log(toml.upstream.url)
 
 ### `translateAI(text, gameType)`
 
-Google Gemini AI를 사용하여 텍스트를 번역합니다.
+OpenAI 호환 Chat Completions API로 텍스트를 번역합니다. 요청은 `GOOGLE_AI_BASE_URL`(기본 `https://api.openai.com/v1`)의 `/chat/completions`로 전송되며 `GOOGLE_AI_STUDIO_TOKEN`(또는 `GOOGLE_GENERATIVE_AI_API_KEY`)을 Bearer 인증으로 사용합니다.
 
 **매개변수:**
 - `text: string` - 번역할 텍스트
@@ -196,7 +196,7 @@ const translated = await translateAI('The Duke arrives', 'ck3')
 
 **동작:**
 1. `GEMINI_MODEL` 환경 변수가 설정되어 있으면 해당 모델 사용
-2. 미설정 시 기본값 `gemini-flash-lite-latest` 사용
+2. 미설정 시 기본값 `gemini-flash-lite-latest` 사용 (OpenAI 공식 API는 지원되는 모델 ID를 설정해야 함)
 3. 응답 후처리 (이스케이프, 마크업 수정)
 
 **후처리:**

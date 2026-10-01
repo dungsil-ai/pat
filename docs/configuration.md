@@ -409,7 +409,7 @@ l_korean:
 
 **필수:** 예
 
-**설명:** Google Gemini API 키
+**설명:** 번역 API 키입니다. 기존 변수명을 유지하며 `Authorization: Bearer` 헤더로 전송됩니다. (`@ai-sdk/openai-compatible`의 `createOpenAICompatible` 사용)
 
 **설정 방법:**
 
@@ -428,7 +428,19 @@ pnpm ck3
 
 **필수:** 아니오 (선택)
 
-**설명:** 기존 Gemini SDK 키. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+**설명:** 기존 키 변수명입니다. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+
+### GOOGLE_AI_BASE_URL
+
+**필수:** 아니오
+
+**기본값:** `https://api.openai.com/v1`
+
+**설명:** OpenAI 호환 API의 기본 주소입니다. 미설정 또는 공백이면 기본값을 사용합니다. 요청은 이 주소 뒤에 `/chat/completions`를 붙여 전송합니다. 기존 변수명을 유지합니다.
+
+```env
+GOOGLE_AI_BASE_URL=https://api-proxy.example.ts.net/v1
+```
 
 ### GITHUB_TOKEN
 
@@ -446,10 +458,10 @@ GITHUB_TOKEN=github_pat_xxx
 
 **기본값:** `gemini-flash-lite-latest`
 
-**설명:** 사용할 Gemini 모델 ID를 지정합니다.
+**설명:** 사용할 모델 ID를 지정합니다. 기본값 `gemini-flash-lite-latest`는 이 모델을 지원하는 호환 프록시용입니다. OpenAI 공식 API(`api.openai.com`)를 사용할 때는 OpenAI에서 지원하는 모델 ID를 설정해야 합니다.
 
 ```env
-GEMINI_MODEL=gemini-flash-lite-latest
+GEMINI_MODEL=your_supported_model_id
 ```
 
 ### TRANSLATE_BATCH_SIZE

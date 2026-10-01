@@ -7,7 +7,7 @@
 - **Node.js**: v24 권장 (`.node-version` 기준 24.11.1, 최소 v18)
 - **pnpm**: 10.24.0 이상 (권장)
 - **Git**: 최신 버전
-- **Google AI API 키**: Gemini API 액세스
+- **OpenAI 호환 API 키**: 선택한 서비스에서 발급한 API 키입니다. 기존 환경 변수 이름을 그대로 사용합니다.
 
 ### 1. 저장소 클론
 
@@ -34,8 +34,10 @@ cp .env.sample .env
 
 ```env
 GOOGLE_AI_STUDIO_TOKEN=your_api_key_here
-# (선택) 구 Gemini 키 폴백
+# (선택) 기존 키 변수명 폴백
 GOOGLE_GENERATIVE_AI_API_KEY=legacy_key
+# (선택) 미설정 또는 공백이면 기본 주소 사용
+# GOOGLE_AI_BASE_URL=https://api.openai.com/v1
 # (선택) GitHub API 인증/레이트 리밋 완화
 GITHUB_TOKEN=github_pat_xxx
 
@@ -48,32 +50,32 @@ GEMINI_MODEL=gemini-flash-lite-latest
 ```
 
 **API 키 발급:**
-1. [Google AI Studio](https://aistudio.google.com/app/apikey) 방문
-2. "Create API Key" 클릭
-3. 생성된 키를 복사하여 `.env`에 붙여넣기
+1. OpenAI 공식 API를 사용한다면 [API 키 페이지](https://platform.openai.com/api-keys)에서 키를 발급합니다. 다른 OpenAI 호환 서비스를 사용한다면 해당 서비스의 키 발급 절차를 따릅니다.
+2. 발급한 키를 `.env`의 `GOOGLE_AI_STUDIO_TOKEN`에 입력합니다. 이 기존 변수명은 그대로 유지되며, 키는 `Authorization: Bearer` 헤더로 전송됩니다.
+3. Gemini 기본 모델을 지원하지 않는 서비스에서는 `GEMINI_MODEL`에 해당 서비스가 지원하는 모델 ID를 지정합니다.
 
 **환경 변수 설명:**
-- `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev가 사용하는 기본 Gemini API 키 (필수)
-- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
-- `GOOGLE_AI_BASE_URL`: (선택) Gemini API 호환 프록시의 기본 주소입니다. 미설정 또는 공백이면 공식 Google API를 사용합니다.
+- `GOOGLE_AI_STUDIO_TOKEN`: 선택한 OpenAI 호환 API의 키입니다 (필수). 기존 변수명을 유지하며 `Authorization: Bearer`로 전송됩니다.
+- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 키 변수명입니다. `GOOGLE_AI_STUDIO_TOKEN`이 없을 때 폴백으로 사용됩니다.
+- `GOOGLE_AI_BASE_URL`: (선택) OpenAI 호환 API의 기본 주소입니다. 미설정 또는 공백이면 `https://api.openai.com/v1`을 사용합니다. 요청에는 `/chat/completions` 경로를 추가합니다.
 - `GITHUB_TOKEN`: (선택) GitHub API 인증용 토큰. 업스트림 대시보드 및 GitHub 기반 버전 조회의 레이트 리밋 완화에 유용
 - `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 20)
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
 - `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
-- `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-flash-lite-latest`) 사용
+- `GEMINI_MODEL`: 사용할 모델 ID입니다. 기본값은 `gemini-flash-lite-latest`이며, 연결한 API 서비스가 이 모델을 지원해야 합니다. OpenAI 공식 API에서는 지원되는 모델 ID로 설정합니다.
 - `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
 
 ### 번역 CI에서 Tailscale API 프록시 사용
 
-`translate-ck3.yml`, `translate-vic3.yml`, `translate-stellaris.yml`은 저장소 변수 `GOOGLE_AI_BASE_URL`로 요청 주소를 선택합니다. 미설정이거나 주소의 호스트가 `generativelanguage.googleapis.com`이면 Tailscale에 연결하지 않습니다. 다른 호스트를 지정하면 번역 실행 전에 Tailscale에 연결하고 해당 호스트까지 연결을 확인합니다. 연결에 실패하면 번역을 실행하지 않으며, 공식 API로 자동 우회하지 않습니다.
+`translate-ck3.yml`, `translate-vic3.yml`, `translate-stellaris.yml`은 `GOOGLE_AI_BASE_URL`로 API 기본 주소를 선택합니다. 값이 없거나 공백이면 기본 주소 `https://api.openai.com/v1`을 사용하며, 호스트가 `api.openai.com`이면 Tailscale에 연결하지 않습니다. 다른 호스트를 지정하면 번역 전에 Tailscale에 연결하고 해당 호스트까지의 연결을 확인합니다. 연결에 실패하면 번역을 실행하지 않으며 공식 API로 자동 우회하지 않습니다.
 
 #### 1. 프록시 서버 준비
 
 - 프록시 서버를 tailnet에 연결하고 CI에서 접근할 수 있는 Tailscale IP 또는 MagicDNS 호스트 이름을 확인합니다.
-- 프록시는 Gemini 네이티브 API 형식을 지원해야 합니다. OpenAI 호환 API만 지원하는 주소는 사용할 수 없습니다.
-- 기본 주소에는 API 접두 경로까지 포함합니다. 예를 들어 `https://api-proxy.example.ts.net/gemini/v1beta`를 지정하면 SDK는 그 뒤에 `/models/<모델>:generateContent`를 붙여 요청합니다. 이 주소는 예시이므로 실제 서버 주소와 경로로 변경해야 합니다.
-- 인증 키는 기존 `GOOGLE_AI_STUDIO_TOKEN` 값을 `x-goog-api-key` 헤더로 전달합니다. 프록시가 허용하는 키를 이 시크릿에 설정합니다. 별도의 Bearer 인증 헤더는 현재 지원하지 않습니다.
-- 프록시가 원래 Google API 키를 전달받는 방식이라면 프록시 서버를 신뢰할 수 있어야 합니다. PAT 전용 키를 사용하면 서비스별 사용량을 구분하기 쉽습니다.
+- 프록시는 OpenAI 호환 Chat Completions API를 지원해야 합니다. 기본 모델 `gemini-flash-lite-latest`를 그대로 사용하려면 프록시가 해당 모델 ID를 처리해야 하며, 처리하지 못하면 `GEMINI_MODEL`을 프록시가 지원하는 모델 ID로 변경합니다.
+- 기본 주소에 API 접두 경로를 포함합니다. 예를 들어 `https://api-proxy.example.ts.net/v1`을 지정하면 요청은 `https://api-proxy.example.ts.net/v1/chat/completions`로 전송됩니다. `/chat/completions`는 자동으로 추가됩니다.
+- `GOOGLE_AI_STUDIO_TOKEN` 또는 폴백 키는 `Authorization: Bearer <키>` 헤더로 전달됩니다. 프록시가 허용하는 키를 해당 시크릿에 설정합니다.
+- 프록시에 전용 API 키를 사용할 수 있다면 서비스별 사용량을 구분하도록 전용 키를 설정합니다.
 
 #### 2. Tailscale OIDC 신뢰 자격 증명 설정
 
@@ -92,10 +94,10 @@ GEMINI_MODEL=gemini-flash-lite-latest
 
 | 구분 | 이름 | 값 |
 | --- | --- | --- |
-| Variable | `GOOGLE_AI_BASE_URL` | 실제 프록시의 Gemini API 기본 주소 |
+| Variable | `GOOGLE_AI_BASE_URL` | `/chat/completions`를 제외한 OpenAI 호환 API 기본 주소 |
 | Secret | `TS_OAUTH_CLIENT_ID` | Tailscale OIDC Client ID |
 | Secret | `TS_AUDIENCE` | Tailscale OIDC Audience |
-| Secret | `GOOGLE_AI_STUDIO_TOKEN` | 프록시가 `x-goog-api-key`로 받는 인증 키 |
+| Secret | `GOOGLE_AI_STUDIO_TOKEN` | 프록시가 `Authorization: Bearer`로 받는 API 키 |
 
 프록시 URL에는 인증 정보를 넣지 않습니다. 호스트는 Tailscale에서 직접 연결을 확인할 수 있는 프록시 노드의 IP 또는 이름이어야 합니다. HTTPS를 사용한다면 runner가 신뢰하는 인증서와 URL의 호스트 이름이 일치해야 합니다.
 
@@ -104,11 +106,11 @@ GEMINI_MODEL=gemini-flash-lite-latest
 1. 설정이 반영된 `main` 브랜치에서 번역 워크플로를 수동 실행합니다.
 2. **번역 API 연결 설정** 단계에서 Tailscale 연결과 프록시 노드 연결 확인이 성공했는지 확인합니다. 노드 연결 확인은 API 서비스의 정상 응답까지 보장하지는 않습니다.
 3. 번역 요청이 발생한 경우 프록시 로그와 사용량 집계를 확인합니다. 모든 항목이 번역 캐시에 있으면 API 요청이 발생하지 않을 수 있습니다.
-4. 공식 API로 복귀하려면 `GOOGLE_AI_BASE_URL` 변수를 삭제하거나 공식 주소 `https://generativelanguage.googleapis.com/v1beta`로 변경합니다. 프록시 전용 키를 사용했다면 `GOOGLE_AI_STUDIO_TOKEN`도 Google API 키로 복구합니다.
+4. 공식 OpenAI API로 전환하려면 `GOOGLE_AI_BASE_URL`을 삭제하거나 `https://api.openai.com/v1`로 설정합니다. `GEMINI_MODEL`도 OpenAI에서 지원하는 모델 ID로 지정하고, `GOOGLE_AI_STUDIO_TOKEN`에 OpenAI API 키를 설정합니다.
 
 이 자동 연결은 위의 세 번역 CI에만 적용됩니다. 재번역 CI에는 적용하지 않았습니다. 로컬 실행에서는 `.env`에 같은 `GOOGLE_AI_BASE_URL`을 설정할 수 있지만 Tailscale 연결은 직접 준비해야 합니다.
 
-공식 설정 문서: [Tailscale GitHub Action](https://tailscale.com/docs/integrations/github/github-action), [Workload identity federation](https://tailscale.com/docs/features/workload-identity-federation), [Google Provider](https://ai-sdk.dev/providers/ai-sdk-providers/google).
+공식 설정 문서: [Tailscale GitHub Action](https://tailscale.com/docs/integrations/github/github-action), [Workload identity federation](https://tailscale.com/docs/features/workload-identity-federation), [OpenAI Chat Completions API](https://platform.openai.com/docs/api-reference/chat/create).
 
 ## 기본 사용법
 

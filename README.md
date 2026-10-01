@@ -1,6 +1,6 @@
 # Paradox Auto Translate
 
-Paradox Interactive 게임 모드를 위한 자동 번역 도구입니다. Google AI Studio(Gemini)를 ai-sdk.dev 기반으로 호출해 영어 현지화 파일을 한국어로 번역합니다.
+Paradox Interactive 게임 모드를 위한 자동 번역 도구입니다. OpenAI 호환 Chat Completions API를 통해 영어 현지화 파일을 한국어로 번역합니다. 기본 모델 ID는 `gemini-flash-lite-latest`이며, 사용하는 API 서비스가 해당 모델을 지원해야 합니다.
 
 ## 지원 게임
 
@@ -10,7 +10,7 @@ Paradox Interactive 게임 모드를 위한 자동 번역 도구입니다. Googl
 
 ## 주요 기능
 
-- 🤖 Google AI Studio(Gemini) 기반 자동 번역 (ai-sdk.dev)
+- 🤖 OpenAI 호환 Chat Completions API 기반 자동 번역
 - 🎮 게임별 특화 번역 (중세 역사, 역사적 인물, 지명 등)
 - 🔤 **음역 모드**: 고유명사(문화명, 왕조명, 인물명)를 발음 기반으로 음역 (예: "Afar" → "아파르")
 - 📝 게임 변수 및 형식 보존
@@ -145,9 +145,11 @@ pnpm add-dict abc123
 `.env` 파일을 생성하고 다음 환경 변수를 설정하세요:
 
 ```bash
-GOOGLE_AI_STUDIO_TOKEN=your_api_key_here   # 필수: Google AI Studio 토큰
-# 선택: 구키도 허용
+GOOGLE_AI_STUDIO_TOKEN=your_api_key_here   # 선택한 API의 키 (Bearer 인증)
+# 선택: 기존 변수명도 유지되며, 위 키가 없으면 폴백으로 사용
 GOOGLE_GENERATIVE_AI_API_KEY=legacy_api_key
+# 선택: 미설정 또는 공백이면 https://api.openai.com/v1 사용
+# GOOGLE_AI_BASE_URL=https://api.openai.com/v1
 # 선택: GitHub API 인증(레이트 리밋 완화, 대시보드/버전 조회 안정화)
 GITHUB_TOKEN=github_pat_xxx
 
@@ -156,16 +158,17 @@ LOG_LEVEL=info
 TRANSLATE_BATCH_SIZE=10
 TRANSLATION_TIMEOUT_MINUTES=15
 TRANSLATE_MOD_CONCURRENCY=4
-GEMINI_MODEL=gemini-flash-lite-latest
+GEMINI_MODEL=gemini-flash-lite-latest     # API 서비스가 지원하는 모델 ID
 ```
 
-- `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev에서 사용하는 기본 Gemini API 키입니다.
-- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키. 존재하면 폴백용으로 사용됩니다.
+- `GOOGLE_AI_STUDIO_TOKEN`: 선택한 OpenAI 호환 API의 키입니다. 기존 변수명을 유지하며 요청에 `Authorization: Bearer` 인증을 사용합니다.
+- `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 키 변수명입니다. `GOOGLE_AI_STUDIO_TOKEN`이 없으면 폴백으로 사용됩니다.
+- `GOOGLE_AI_BASE_URL`: (선택) OpenAI 호환 API의 기본 주소입니다. 미설정 또는 공백이면 `https://api.openai.com/v1`을 사용하며, 요청 경로 `/chat/completions`는 자동으로 추가됩니다. `GOOGLE_AI_STUDIO_TOKEN`과 `GOOGLE_GENERATIVE_AI_API_KEY` 이름은 기존 시크릿 재등록을 피하도록 유지됩니다.
 - `GITHUB_TOKEN`: (선택) GitHub API 호출 시 인증 헤더를 추가해 레이트 리밋을 완화합니다. 업스트림 대시보드와 GitHub 기반 버전 조회 안정화에 유용합니다.
 - `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수입니다.
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 작업 타임아웃(분)입니다. `false` 또는 `0`으로 설정하면 비활성화됩니다.
 - `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성입니다. 미설정 시 모드 개수만큼 자동 설정됩니다.
-- `GEMINI_MODEL`: 사용할 Gemini 모델 ID입니다. 미설정 시 코드 기본값(`gemini-flash-lite-latest`)을 사용합니다.
+- `GEMINI_MODEL`: 사용할 모델 ID입니다. 기본값은 `gemini-flash-lite-latest`이며, 이 모델을 지원하는 호환 API가 필요합니다. OpenAI 공식 API를 사용할 때는 OpenAI에서 지원하는 모델 ID로 지정하세요.
 
 ## 프로젝트 구조
 

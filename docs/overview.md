@@ -2,7 +2,7 @@
 
 ## 📖 소개
 
-**Paradox Auto Translate**는 Paradox Interactive 게임 모드의 현지화(localization) 파일을 영어에서 한국어로 자동 번역하는 도구입니다. Google의 Gemini AI를 활용하여 게임별 맥락을 고려한 고품질 번역을 제공합니다.
+**Paradox Auto Translate**는 Paradox Interactive 게임 모드의 현지화(localization) 파일을 영어에서 한국어로 자동 번역하는 도구입니다. OpenAI 호환 Chat Completions API를 활용하여 게임별 맥락을 고려한 고품질 번역을 제공합니다.
 
 ## 🎮 지원 게임
 
@@ -41,7 +41,7 @@
 ## ✨ 주요 기능
 
 ### 1. AI 기반 맥락 인식 번역
-- **Google Gemini AI** 통합
+- **OpenAI 호환 Chat Completions API** 통합
 - 게임별 커스텀 프롬프트로 정확한 번역
 - 역사적/게임 맥락을 고려한 용어 선택
 
@@ -117,7 +117,7 @@ paradox-auto-translate/
 
 - **언어**: TypeScript
 - **런타임**: Node.js with jiti (JIT TypeScript execution)
-- **AI**: Google Gemini API
+- **AI**: OpenAI 호환 Chat Completions API (`@ai-sdk/openai-compatible`)
 - **데이터베이스**: LibSQL (SQLite)
 - **캐싱**: unstorage + db0
 - **빌드 도구**: pnpm

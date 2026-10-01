@@ -11,8 +11,9 @@
 - **지원 게임**: CK3, Victoria 3, Stellaris
 
 #### FR-1.2: AI 기반 번역
-- **요구사항**: Google Gemini AI를 사용한 맥락 인식 번역
-- **모델**: `GEMINI_MODEL` 환경 변수 우선, 미설정 시 `gemini-flash-lite-latest`
+- **요구사항**: OpenAI 호환 Chat Completions API를 사용한 맥락 인식 번역
+- **인증/주소**: 키는 `Authorization: Bearer`로 전송, `GOOGLE_AI_BASE_URL` 미설정 또는 공백이면 `https://api.openai.com/v1`, 요청 경로는 `/chat/completions`
+- **모델**: `GEMINI_MODEL` 환경 변수 우선, 미설정 시 `gemini-flash-lite-latest` (호환 프록시용, OpenAI 공식 API는 지원 모델 ID 필요)
 - **재시도 메커니즘**: 실패 시 자동 재시도
 - **타임아웃**: `TRANSLATION_TIMEOUT_MINUTES` 환경변수로 설정 (기본 15분)
 
@@ -124,7 +125,8 @@
 - **형식**: TOML
 
 #### FR-7.2: 환경 변수
-- **필수(둘 중 하나)**: `GOOGLE_AI_STUDIO_TOKEN` 또는 `GOOGLE_GENERATIVE_AI_API_KEY`
+- **필수(둘 중 하나)**: `GOOGLE_AI_STUDIO_TOKEN` 또는 `GOOGLE_GENERATIVE_AI_API_KEY` (기존 변수명 유지)
+- **선택**: `GOOGLE_AI_BASE_URL` (OpenAI 호환 API 기본 주소)
 - **선택**: `GITHUB_TOKEN` (GitHub API 인증/레이트 리밋 완화)
 - **형식**: `.env` 파일 또는 환경 변수
 
@@ -459,13 +461,13 @@
 ## 제한사항 (Limitations)
 
 ### L-1: 기술적 제한
-- **AI 모델**: Google Gemini만 지원
+- **AI 모델**: OpenAI 호환 Chat Completions API만 지원
 - **소스 언어**: 영어만 지원
 - **타겟 언어**: 한국어만 지원
 - **파일 형식**: YAML만 지원
 
 ### L-2: 성능 제한
-- **API 속도**: 구글 서버에 의존
+- **API 속도**: 사용하는 API 서비스에 의존
 - **동시 요청**: 명시적 제한 없음 (큐 관리)
 - **파일 크기**: 메모리 제한 내
 

@@ -114,7 +114,7 @@ CFP 모드에서도 유사한 문제 발견:
 4. 문제 식별 및 보고
 
 ### ⏳ API Key 필요 항목
-재번역을 실제로 실행하려면 Google AI Studio API key가 필요:
+재번역을 실제로 실행하려면 번역 API 키가 필요:
 ```bash
 # .env 파일 생성
 echo "GOOGLE_AI_STUDIO_TOKEN=your_api_key_here" > .env
@@ -137,7 +137,7 @@ pnpm ck3
 - API key만 있으면 자동 수정 가능
 
 ### 다음 조치
-사용자가 Google AI Studio API key를 설정하고 `pnpm ck3`를 실행하면 자동으로 모든 문제가 수정됩니다.
+사용자가 번역 API 키를 설정하고 `pnpm ck3`를 실행하면 자동으로 모든 문제가 수정됩니다.
 
 ---
 

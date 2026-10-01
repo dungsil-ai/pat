@@ -251,20 +251,24 @@ async function cloneOptimizedRepository(path: string, config: UpstreamConfig) {
 
 ### 5. AI Integration
 
-Google Gemini API를 통한 AI 번역을 관리합니다.
+OpenAI 호환 Chat Completions API를 통한 AI 번역을 관리합니다. `@ai-sdk/openai-compatible`의 `createOpenAICompatible({ name: 'translation', apiKey, baseURL })`로 provider를 만들고, AI SDK의 `generateText`로 요청합니다.
 
 **파일 위치:** `scripts/utils/ai.ts`
 
+**연결 설정:**
+- 키: `GOOGLE_AI_STUDIO_TOKEN`, 없으면 `GOOGLE_GENERATIVE_AI_API_KEY` (기존 변수명 유지, `Authorization: Bearer` 인증)
+- 기본 주소: `GOOGLE_AI_BASE_URL` (미설정 또는 공백이면 `https://api.openai.com/v1`)
+- 요청 경로: 기본 주소 뒤에 `/chat/completions`를 추가
+
 **모델 전략:**
 1. `GEMINI_MODEL` 환경 변수 우선 사용
-2. 미설정 시 기본 모델 `gemini-flash-lite-latest` 사용
+2. 미설정 시 기본 모델 `gemini-flash-lite-latest` 사용 (이 모델을 지원하는 호환 프록시용이며, OpenAI 공식 API는 지원되는 모델 ID를 `GEMINI_MODEL`로 지정해야 함)
 
 **설정:**
 ```typescript
 const generationConfig = {
   temperature: 0.5,  // 창의성 vs 일관성 균형
   topP: 0.95,       // 핵 샘플링
-  topK: 40,         // 상위 K개 토큰
   maxOutputTokens: 8192
 }
 ```
@@ -277,7 +281,7 @@ const generationConfig = {
 
 **후처리:**
 ```typescript
-const translated = response.text().trim()
+const translated = result.text.trim()
   .replaceAll(/\n/g, '\\n')              // 개행 이스케이프
   .replaceAll(/[^\\]"/g, '\\"')          // 따옴표 이스케이프
   .replaceAll(/#약(하게|화된|[화한])/g, '#weak')  // 한글 마크업 수정
@@ -529,7 +533,7 @@ API 요청 속도 제한 및 재시도를 관리합니다.
        ↓
 7. AI Translation (if needed)
    ├─ Build prompt with system instruction
-   ├─ Call Gemini API (with retry)
+   ├─ Call Chat Completions API (with retry)
    ├─ Post-process response
    └─ Validate translation
        ↓

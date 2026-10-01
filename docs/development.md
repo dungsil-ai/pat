@@ -363,7 +363,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 // 2. 외부 라이브러리
-import { createGoogleGenerativeAI } from '@ai-sdk/google'
+import { createOpenAICompatible } from '@ai-sdk/openai-compatible'
 import dotenv from 'dotenv'
 
 // 3. 내부 모듈
@@ -833,7 +833,7 @@ cat .env
 ## 추가 리소스
 
 - [TypeScript 공식 문서](https://www.typescriptlang.org/docs/)
-- [Google Gemini API 문서](https://ai.google.dev/docs)
+- [OpenAI Chat Completions API 문서](https://platform.openai.com/docs/api-reference/chat/create)
 - [Paradox 모딩 위키](https://ck3.paradoxwikis.com/Modding)
 
 ---
