@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: af0fa6c
+# PAT verified upstream: cda3ce2
   VIET_heard_about_Scarborough_Fair: "스카버러 박람회에 대해 들었소" # 15177439365176209270
   VIET_heard_about_Scarborough_Fair_desc: "스카버러 장터에 가실 건가요?\n파슬리, 세이지, 로즈마리, 그리고 타임\n그곳에 사는 이에게 안부를 전해주세요\n그녀는 한때 나의 진실한 연인이었지요" # 16198401124187029665
   VIET_oblivion_dream_pells_gate: "작은 숲속 마을을 꿈꾸다" # 1604667829189320936
@@ -1643,4 +1643,20 @@
   VIET_enjoying_garos: "가로스 즐기기" # 9483399511541648236
   VIET_enjoying_garos_desc: "이 인물은 비록 냄새에 익숙해지기까지 시간이 걸릴지라도 [Glossary( 'garos', 'GAROS_GLOSS' )]가 들어간 음식을 즐깁니다." # 14643191533222457056
   VIET_learning_about_surgeries: "외과 수술에 대해 배우기" # 10966135505801196426
+  VIET_peek_a_boo: "살해된 배달 소년들" # 9096138688476539435
+  VIET_peek_a_boo_desc: "여러 명의 청년이 젊고 아름다운 여성 무리에게 살해된 것이 밝혀졌습니다. 살인자들의 행방은 묘연합니다." # 13445831558662322250
+  VIET_peek_a_boo_inspiration: "살인마 젊은 여성들에게 영감을 받음" # 7560884552327758280
+  VIET_peek_a_boo_inspiration_desc: "이 인물은 아름다운 젊은 여성들로 이루어진 어느 연쇄 살인마 집단의 악명 높은 행각에서 꽤 큰 영감을 받았습니다. 조금 우려스러운 일입니다." # 3276413000812334637
+  VIET_pinders: "더 나은 핀더들" # 10282841809827577745
+  VIET_pinders_desc: "지역 당국이 이 지역의 [Glossary( '핀더', 'PINDERS_GLOSS' )]를 고용하고 그들의 훈련 수준을 높였습니다." # 5343554539760178796
+  VIET_seulgi_bear: "다정하게 껴안아 주는 곰 꿈을 꿨음" # 10595107298227729675
+  VIET_experiencing_eerie_coincidences: "기괴한 우연을 경험함" # 2409036940464872623
+  VIET_dream_paranoia: "꿈이 현실로 나타나는 것에 대한 피해망상" # 11984763645975376212
+  VIET_paranoid_traveling: "여행 중 안전에 대한 피해망상" # 9835566304361088095
+  VIET_betting_on_books_and_spilling_tea_modifier: "책 내기" # 4016261050341501638
+  VIET_betting_on_books_and_spilling_tea_modifier_desc: "이 인물은 배우자가 있거나 있었으며, 함께 [Glossary( '책 내기', 'BETTING_ON_BOOKS_GLOSS' )] 게임을 즐기곤 했습니다. 이는 사랑에 빠진 두 책벌레에게 완벽한 놀이입니다." # 10517879702373939309
+  VIET_li_qingzhao_poems_youth: "이청조의 초기 시에 영감을 받음" # 17150303155864792555
+  VIET_li_qingzhao_poems_youth_desc: "이 인물은 [Glossary( '이청조', 'LI_QINGZHAO_GLOSS' )]가 사랑하는 남편 [Glossary( '조명성', 'ZHAO_MINGCHENG_GLOSS' )]와 함께 행복하게 지내던 시절의 초기 시에서 큰 영감을 받았습니다." # 16525569267481724249
+  VIET_li_qingzhao_poems_old_age: "이청조의 후기 시에 영감을 받음" # 13397173535123933293
+  VIET_li_qingzhao_poems_old_age_desc: "이 인물은 [Glossary( '이청조', 'LI_QINGZHAO_GLOSS' )]가 사랑하는 남편 [Glossary( '조명성', 'ZHAO_MINGCHENG_GLOSS' )]를 잃은 후 쓴 우울한 후기 시에서 큰 영감을 받았습니다." # 11051541896797225576
   xxxxxxxxxx: "xxx" # 4339025660404407451

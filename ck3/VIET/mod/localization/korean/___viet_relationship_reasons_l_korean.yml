@@ -1,7 +1,8 @@
 ﻿l_korean:
-# PAT verified upstream: af0fa6c
+# PAT verified upstream: cda3ce2
   VIET_friend_reason_placeholder: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 서로의 교제를 즐기게 되었습니다." # 5719785269926253061
   VIET_rival_reason_placeholder: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 모종의 불화로 인해 서로를 싫어하게 되었습니다." # 18121270760993488226
   VIET_travel_argument_reason: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]가 [traveling|E] 중 심하게 다투었습니다." # 1899293677429567065
   VIET_travel_chat_reason: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 [traveling|E] 중에 아주 깊고 멋진 대화를 나누었습니다." # 728674679246995999
   VIET_natural_philosophy_interest: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]는 자연 철학에 대한 즐겁고 지적인 대화를 나누었습니다." # 13271023646622349788
+  VIET_lover_reason_intellectual_interest: "[CHARACTER.GetShortUIName|U]와 [TARGET_CHARACTER.GetShortUIName]이(가) 공통의 지적 관심사를 통해 다정하게 교감하며 사랑에 빠졌습니다." # 8291941614727773354

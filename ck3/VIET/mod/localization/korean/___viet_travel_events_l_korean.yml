@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: af0fa6c
+# PAT verified upstream: cda3ce2
   VIET_every_entourage_tt_dislikes_rations: "[GetTrait('temperate').GetName( GetPlayer )]도 아니고 [GetTrait('content').GetName( GetPlayer )]도 아닌 모든 수행원들" # 11533953056509025022
   every_entourage_tt_attracted_to_women: "여성에게 끌리는 모든 수행원" # 11288211120162855002
   VIET_every_entourage_tt_laughing: "상황이 재미있다고 생각한 모든 수행원들" # 3507501385361318901
@@ -292,12 +292,14 @@
   VIETmisc.7065.b.toast_neutral: "더 나은 가격으로 흥정하는 데 실패했습니다" # 12239942656290622465
   VIETmisc.7065.b.toast_good: "더 나은 가격으로 흥정하는 데 성공했습니다" # 9287083507555265279
   VIETmisc.7065.c: "오늘은 아무것도 사고 싶지 않군." # 9080462975056229255
-  VIETmisc.7066.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
-  VIETmisc.7066.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.7066.a: "xxxxx" # 1951045980481827005
-  VIETmisc.7067.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
-  VIETmisc.7067.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.7067.a: "xxxxx" # 1951045980481827005
+  VIETmisc.7066.t: "$travel_event_prefix$ 신비로운 화살" # 18374808774264930668
+  VIETmisc.7066.desc: "화살이 너무나 빠르게 스쳐 지나가 반응할 틈조차 없었으나, 다행히도 근처의 [ROOT.Char.GetCurrentLocation.Custom('GetRandomAppropriateTree')] 나무에 아무런 피해 없이 박혔습니다. 우리는 무기를 준비하고 최악의 상황에 대비하며 잔뜩 경계했습니다….\n\n그리고 정적이 흘렀습니다. 오직 정적뿐이었습니다.\n\n결국 주변을 수색했지만, 그 누구도 수상한 점도 발견하지 못했습니다. 도대체 [ROOT.Char.GetFaith.HighGodNameAlternate]의 이름으로, 그 화살은 어디서 날아온 것일까요? 그리고 그것은 우리를 겨냥한 것이었을까요?" # 5241451303177564477
+  VIETmisc.7066.a: "서둘러 이동합시다." # 11911629823200495752
+  VIETmisc.7066.b: "각별히 주의하십시오!" # 16175858855042121414
+  VIETmisc.7067.t: "$travel_event_prefix$ 나무 그늘" # 9191768578595297666
+  VIETmisc.7067.desc: "긴 하루의 여정 끝에, 앞에 보이는 크고 오래된 [ROOT.Char.GetCurrentLocation.Custom('GetRandomAppropriateTree')] 나무는 반가운 광경이었습니다.\n\n우리는 그 그늘 아래 앉아 잠시 동안 [ROOT.Char.GetCurrentLocation.GetName]의 지역 풍경을 감상했습니다." # 15527389215028484095
+  VIETmisc.7067.a: "편안한 풍경이군." # 15578879805352773037
+  VIETmisc.7067.b: "여기 있는 동안 [ROOT.Char.GetFaith.random_GoodGodNames]께 기도드려야겠군." # 2720943033387708513
   VIETmisc.7068.t: "$travel_event_prefix$ xxxxx" # 9370684753389527943
   VIETmisc.7068.desc: "xxxxx" # 1951045980481827005
   VIETmisc.7068.a: "xxxxx" # 1951045980481827005

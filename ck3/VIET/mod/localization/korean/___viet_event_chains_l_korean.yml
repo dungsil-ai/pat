@@ -1,5 +1,5 @@
 ﻿l_korean:
-# PAT verified upstream: af0fa6c
+# PAT verified upstream: cda3ce2
   VIETmisc.1000.t: "xxxxx" # 1951045980481827005
   VIETmisc.1000.desc: "xxxxx" # 1951045980481827005
   VIETmisc.1000.a: "xxxxx" # 1951045980481827005
@@ -184,7 +184,7 @@
   VIETmisc.1049.desc: "내가 [scope_VIET_karen.GetFirstNameNoTooltip]의 입안에서 칫솔을 앞뒤로 계속 움직이며, 그/그녀의 이를 부드럽게 닦고, 혀를 쓸어내리고, 그 외의 행동들을 할 때, 그/그녀의 끙끙거리는 소리가 점점 커집니다. 내 심장이 미친 듯이 뛰기 시작하고 얼굴이 달아오릅니다. 이건 나쁘군, 이건 정말 나빠!\n\n이상한 열정이 나를 압도하면서 머리가 어지러워집니다. 그리고 그/그녀의 눈에서도 그것을 봅니다.\n\n나는 계속해서 그/그녀의 이를 닦으며 그/그녀에게 점점 더 가까이 다가가 그/그녀의 눈을 깊이 들여다봅니다. 더 이상 저항할 수 없어 “[scope_VIET_karen.GetFirstNameNoTooltip]...” 하고 낮게 읊조립니다." # 10465283705097686795
   VIETmisc.1049.a: "내 자유로운 손이 다가온다... 그리고 더 가까이... 그리고...." # 15427448505112436039
   VIETmisc.1050.t: "중단됨" # 6934575959653257093
-  VIETmisc.1050.desc: "“너희 둘 뭐 하고 있었느냐?”\n\n내 시녀 중 한 명이 불쑥 끼어들자 나와 [scope_VIET_karen.GetFirstNameNoTooltip]는 서로에게서 움찔하며 떨어졌다. 그 아가씨가 방을 지나가다가 소란을 알아차린 모양이었다. 그녀는 덧붙였다. “[ROOT.Char.GetTitledFirstNameNoTooltip]께서는 동생을 밀어붙이고 계시는데 [scope_VIET_karen.GetSheHe]는 웃고 있다니, 대체 무슨 짓을 하고 계신 겁니까? 그리고 [scope_VIET_karen.GetTitledFirstNameNoTooltip]께서는 [scope_VIET_karen.GetSheHe]가 밀어붙이는데 얼굴에 웃음을 띠고 계시다니요?”\n\n“[scope_VIET_karen.GetFirstNameNoTooltip]와 내가 동시에 외쳤다. “참으로 우연이로군! 우리가 뭘 하고 있었더라?” 우리는 모르는 척하며 당황한 기색을 연기했다.\n\n시녀가 말했다. “제가 다 이해했습니다! 아무 말도 하지 않겠습니다!”\n\n시녀가 황급히 사라진 후, 어색한 침묵이 방을 감쌌다.\n\n결국 내가 입을 열었다. “음… 네가 이긴 것 같네. 분명 5분보다 오래 걸렸어. 네가 원하는 부탁을 들어주지.”\n\n“[scope_VIET_karen.GetFirstNameNoTooltip]가 [scope_VIET_karen.GetHerHis] 얼굴에 생각에 잠긴 표정을 지으며 말했다. “그래도 이건 불공평해. 삼판양승제로 하는 게 어떨까? 이번엔 내가 네 이를 닦아줄게.”" # 7736419977264566618
+  VIETmisc.1050.desc: "“두 분께서 무엇을 하고 계신가요?”\n\n하녀 한 명이 끼어드는 바람에 [scope_VIET_karen.GetFirstNameNoTooltip]와 나는 소스라치게 놀라 서로 떨어졌습니다. 아무래도 그 소녀는 방 앞을 지나가다가 소란을 눈치챈 모양이었습니다. 그녀가 덧붙였습니다. “[ROOT.Char.GetTitledFirstNameNoTooltip]님, [scope_VIET_karen.GetSheHe]께서 미소 짓고 계신데 왜 형제분을 밀어트리고 계신 건가요? 그리고 [scope_VIET_karen.GetTitledFirstNameNoTooltip]님은 [ROOT.Char.GetSheHe]께서 밀어트리고 계신데 왜 웃고 계신 건가요?”\n\n“정말 우연이네! 우리가 뭘 하고 있었다고?” [scope_VIET_karen.GetFirstNameNoTooltip]와 나는 모르는 척 당황한 기색을 보이며 동시에 외쳤습니다.\n\n하녀가 말했습니다. “충분히 이해합니다! 아무 말도 하지 않겠습니다!”\n\n하녀가 서둘러 물러가자, 방 안에는 어색한 침묵이 감돌았습니다.\n\n결국 제가 입을 열었습니다. “음... 네가 이긴 것 같아. 확실히 5분은 넘었으니까. 네가 원하는 부탁을 들어줄게.”\n\n“그래도,” [scope_VIET_karen.GetFirstNameNoTooltip]가 생각에 잠긴 표정으로 말했습니다. “왠지 억울한 기분이야. 삼세판으로 하는 건 어때? 이번에는 내가 네 이를 닦아줄게.”" # 14454320205138111461
   VIETmisc.1050.a: "“물론이지.” 나는 간결하게 대답한다. 우리는 잠시 서로를 경계하며 바라보다가, 이내…." # 12166158004161014479
   VIETmisc.1051.t: "형제애" # 5642344356648537035
   VIETmisc.1051.desc: "그리고 그날 이후로, [scope_VIET_karen.GetFirstNameNoTooltip]와 나는 조금 더 사이가 좋아지기 시작했다." # 3258148171584041394
