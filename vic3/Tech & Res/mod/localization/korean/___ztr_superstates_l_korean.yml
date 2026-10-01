@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   EUF: "유럽 연방" # 4081540202575698178
   EUF_ADJ: "유럽" # 2381649317906708715
   EUF_DEF: "유럽 연방" # 11946755596624327779
@@ -62,5 +63,5 @@
   dyn_c_mediterranean_commune_adj: "지중해" # 12402591186983410388
   dyn_c_mediterranean_imperium: "지중해 제국" # 1397480596921672653
   dyn_c_mediterranean_imperium_adj: "지중해" # 12402591186983410388
-  identity_continental_confederation: "Continental Confederation"
-  identity_continental_confederation_desc: "This $concept_power_bloc_identity_extra_short$ binds its members into a single market and a shared political project. It cannot be chosen when founding an ordinary [concept_power_bloc]."
+  identity_continental_confederation: "대륙 연맹" # 16960200336130872308
+  identity_continental_confederation_desc: "이 $concept_power_bloc_identity_extra_short$는 구성원들을 단일 시장과 공동의 정치적 과업으로 결속시킵니다. 일반적인 [concept_power_bloc]을(를) 창설할 때는 이를 선택할 수 없습니다." # 11933071157370811014

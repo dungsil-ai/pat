@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 2628ffe
   alert_wasted_construction_name: "사용되지 않은 [concept_construction] 보유" # 6563085765962409365
   alert_wasted_construction_hint: "사용하지 않는 [concept_construction] 보유" # 6563085765962409365
   alert_wasted_construction_action: "건설 패널" # 5963572599170049986

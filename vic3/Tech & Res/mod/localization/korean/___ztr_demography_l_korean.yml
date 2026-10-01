@@ -1,24 +1,25 @@
 ﻿l_korean:
-  je_demography: "Demographic Transition"
-  ztr_demography_progress_bar: "Demographic Development"
-  ztr_demography_notification_group: "Demographic Transition"
-  notification_ztr_demography_stage_advanced_name: "Demographic Stage Advanced"
-  notification_ztr_demography_stage_advanced_tooltip: "#header $notification_ztr_demography_stage_advanced_name$#!\n$notification_ztr_demography_stage_advanced_desc$"
-  notification_ztr_demography_stage_regressed_name: "Demographic Stage Regressed"
-  notification_ztr_demography_stage_regressed_tooltip: "#header $notification_ztr_demography_stage_regressed_name$#!\n$notification_ztr_demography_stage_regressed_desc$"
-  ztr_demography_stage_flavour_0: "the #v Pre-Industrial#! stage, with #v Very High#! #positive_value Birth Rates#! and #v High#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Medium#!"
-  ztr_demography_stage_flavour_1: "the #v Early Industrial#! stage, with #v Very High#! #positive_value Birth Rates#! and #v Medium#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v High#!"
-  ztr_demography_stage_flavour_2: "the #v Mid Industrial#! stage, with #v High#! #positive_value Birth Rates#! and #v Low#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v High#!"
-  ztr_demography_stage_flavour_3: "the #v Late Industrial#! stage, with #v Medium#! #positive_value Birth Rates#! and #v Very Low#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Medium#!"
-  ztr_demography_stage_flavour_4: "the #v Early Post-Industrial#! stage, with #v Low#! #positive_value Birth Rates#! and #v Very Low#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Low#!"
-  ztr_demography_stage_flavour_5: "the #v Mid Post-Industrial#! stage, with #v Low#! #positive_value Birth Rates#! and #v Very Low#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Low#!"
-  ztr_demography_stage_flavour_6: "the #v Late Post-Industrial#! stage, with #v Minimal#! #positive_value Birth Rates#! and #v Minimal#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Minimal#!"
-  ztr_demography_stage_flavour_7: "the #v Stagnant#! stage, with #v Non-Existent#! #positive_value Birth Rates#! and #v Minimal#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Stagnant#!"
-  ztr_demography_stage_flavour_8: "the #v Declining#! stage, with #v Non-Existent#! #positive_value Birth Rates#! and #v Rising#! #negative_value Death Rates#!, so its [Concept('concept_pop_growth','$concept_pop_growth$')] is #v Negative#!"
-  ztr_demography_stage_flavour_unknown: "a stage whose birth and death rates are still being surveyed"
-  je_demography_reason: "[ROOT.GetCountry.GetName] is in stage #v [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#! of 8 of the [Concept('concept_demographic_stages','$concept_demographic_stages$')]: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_demography_stage_flavour')].\n\nProgress runs from 0 to 900: every 100 points marks a stage, and stage 8 extends to 900. It moves in both directions, so crossing a threshold can advance our stage or push it back.\n\n[Concept('concept_literacy','$concept_literacy$')] scales the whole transition, while the five-year change in [Concept('concept_sol','$concept_sol$')] and GDP per capita sets its direction: growth accelerates the early stages and holds back the late decline, stagnation slows the early stages and deepens the late ones.\n\nHealthcare speeds the transition up. Traditional values, legal slavery and open immigration slow it down."
-  je_demography_collecting_history: "Moving #variable [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_recorded_yearly_change')|+=1]#! points a year.\nThe economic response begins after five years of recorded history."
-  je_demography_status: "Moving #variable [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_recorded_yearly_change')|+=1]#! points a year.\n#variable [ROOT.GetCountry.MakeScope.Var('ztr_demography_formula_change_var').GetValue|+=1]#! from Society, #variable [ROOT.GetCountry.MakeScope.Var('ztr_demography_extra_change_var').GetValue|+=1]#! from Culture/Laws."
-  ztr_demography_progress_bar_desc: "Stage #v [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#!: [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/900"
-  notification_ztr_demography_stage_advanced_desc: "Our demographic transition has reached stage #v [GetPlayer.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#!. Birth and death rates shift accordingly."
-  notification_ztr_demography_stage_regressed_desc: "Our demographic transition has fallen back to stage #v [GetPlayer.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#!. Stagnating living standards and income have reversed part of our progress."
+# PAT verified upstream: 4a432e3
+  je_demography: "인구 변천" # 3955745354516865343
+  ztr_demography_progress_bar: "인구 발달" # 8077696853282083791
+  ztr_demography_notification_group: "인구 변천" # 3955745354516865343
+  notification_ztr_demography_stage_advanced_name: "인구 통계 단계 진전" # 4436814365824175855
+  notification_ztr_demography_stage_advanced_tooltip: "#header $notification_ztr_demography_stage_advanced_name$#!\n$notification_ztr_demography_stage_advanced_desc$" # 15513242624947343578
+  notification_ztr_demography_stage_regressed_name: "인구 통계 단계 후퇴" # 1442331894531238453
+  notification_ztr_demography_stage_regressed_tooltip: "#header $notification_ztr_demography_stage_regressed_name$#!\n$notification_ztr_demography_stage_regressed_desc$" # 22752574913911349
+  ztr_demography_stage_flavour_0: "#v 산업화 이전#! 단계로, #positive_value 출생률#!은 #v 매우 높고#! #negative_value 사망률#!은 #v 높아서#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 보통#!입니다" # 6251162824265554271
+  ztr_demography_stage_flavour_1: "#v 산업화 초기#! 단계로, #positive_value 출생률#!은 #v 매우 높고#! #negative_value 사망률#!은 #v 보통이라#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 높습니다#!" # 9373453901525506664
+  ztr_demography_stage_flavour_2: "#v 산업화 중기#! 단계로, #positive_value 출생률#!은 #v 높고#! #negative_value 사망률#!은 #v 낮아#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 높습니다#!" # 3423133242288601836
+  ztr_demography_stage_flavour_3: "#v 산업화 후기#! 단계로, #positive_value 출생률#!은 #v 보통이고#! #negative_value 사망률#!은 #v 매우 낮아#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 보통#!입니다" # 2369579619332728266
+  ztr_demography_stage_flavour_4: "#v 탈산업화 초기#! 단계로, #positive_value 출생률#!은 #v 낮고#! #negative_value 사망률#!은 #v 매우 낮아#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 낮습니다#!" # 15662448537542763485
+  ztr_demography_stage_flavour_5: "#v 탈산업화 중기#! 단계로, #positive_value 출생률#!은 #v 낮고#! #negative_value 사망률#!은 #v 매우 낮아#! [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 낮습니다#!" # 11755908653737319176
+  ztr_demography_stage_flavour_6: "#v 탈산업화 후기#! 단계로, #positive_value 출생률#!과 #negative_value 사망률#! 모두 #v 최소#! 수준이며, [Concept('concept_pop_growth','$concept_pop_growth$')] 또한 #v 최소#!입니다" # 12639475642586326077
+  ztr_demography_stage_flavour_7: "#v 정체#! 단계로, #positive_value 출생률#!은 #v 전무하고#! #negative_value 사망률#!은 #v 최소#! 수준이라, [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 정체#! 상태입니다" # 3623574191258551581
+  ztr_demography_stage_flavour_8: "#v 감소#! 단계로, #positive_value 출생률#!은 #v 전무하고#! #negative_value 사망률#!은 #v 상승하고#! 있어, [Concept('concept_pop_growth','$concept_pop_growth$')]이 #v 음수#!입니다" # 2995439864486246755
+  ztr_demography_stage_flavour_unknown: "출생률과 사망률을 여전히 조사 중인 단계입니다" # 12772606969588389011
+  je_demography_reason: "[ROOT.GetCountry.GetName]은(는) [Concept('concept_demographic_stages','$concept_demographic_stages$')]의 8단계 중 #v [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#! 단계에 있습니다: [SCOPE.GetRootScope.GetCountry.GetCustom('ztr_demography_stage_flavour')].\n\n진척도는 0에서 900까지이며, 100점마다 단계가 바뀌고 8단계는 900까지 이어집니다. 이는 양방향으로 이동하므로, 임계값을 넘으면 단계가 상승하거나 다시 하락할 수 있습니다.\n\n[Concept('concept_literacy','$concept_literacy$')]가 전체 변천의 규모를 결정하며, [Concept('concept_sol','$concept_sol$')]과 1인당 GDP의 5년간 변화가 방향을 결정합니다. 성장은 초기 단계를 가속화하고 후기 감소를 억제하며, 정체는 초기 단계를 늦추고 후기 단계를 심화시킵니다.\n\n의료 서비스는 변천 속도를 높입니다. 전통적 가치, 법적 노예제, 개방적 이민은 변천 속도를 늦춥니다." # 4261707503639093503
+  je_demography_collecting_history: "연간 #variable [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_recorded_yearly_change')|+=1]#! 포인트씩 이동 중입니다.\n경제적 반응은 5년간의 기록이 쌓인 후에 시작됩니다." # 8263320488203229833
+  je_demography_status: "연간 #variable [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_recorded_yearly_change')|+=1]#! 포인트씩 이동 중입니다.\n사회로부터 #variable [ROOT.GetCountry.MakeScope.Var('ztr_demography_formula_change_var').GetValue|+=1]#! 포인트, 문화/법률로부터 #variable [ROOT.GetCountry.MakeScope.Var('ztr_demography_extra_change_var').GetValue|+=1]#! 포인트를 얻습니다." # 14037038937749178580
+  ztr_demography_progress_bar_desc: "단계 #v [ROOT.GetCountry.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#!: [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/900" # 14384172696858077534
+  notification_ztr_demography_stage_advanced_desc: "우리의 인구 변천이 #v [GetPlayer.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#! 단계에 도달했습니다. 이에 따라 출생률과 사망률이 변동합니다." # 13737702487771251277
+  notification_ztr_demography_stage_regressed_desc: "우리의 인구 변천이 #v [GetPlayer.MakeScope.ScriptValue('ztr_demography_applied_stage')|0]#! 단계로 후퇴했습니다. 정체된 생활 수준과 소득으로 인해 그동안의 진전 중 일부가 되돌아갔습니다." # 16462689767267478482

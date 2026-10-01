@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   je_france_pop: "19세기 정체" # 6429505727594116601
   je_france_pop_reason: "[ROOT.GetCountry.GetName]은 선진적인 [Concept('concept_demographic_stages','$concept_demographic_stages$')]을 경험한 최초의 주요 유럽 [Concept('concept_country','$concept_country$')]이었습니다. 19세기 전반기가 끝나갈 무렵, 도시화, 문화적 변화, 기초적인 피임법의 보급, 여성 교육 수준 향상 및 상속 정책으로 인해 [ROOT.GetCountry.GetAdjective] 인구 사이에서 출산율 감소가 관찰되었습니다." # 4315721470615750910
   je_france_pop_goal: "[ROOT.GetCountry.GetName]의 의료 혜택을 법률, 도시 중심지, 혹은 페니실린과 항생제 같은 신기술 연구를 통해 증진하십시오." # 11515236645800165865
@@ -80,12 +81,12 @@
   ztr_je_russian_absolutism_government_petition_reason: "[SCOPE.gsInterestGroup('government_petition_ig').GetName]이 [SCOPE.sLaw('government_petition_law').GetName]의 통과를 청원하고 있습니다.\n\n[SCOPE.sLaw('government_petition_law').GetName]이 성공적으로 통과되면, #gold_value 자유주의자들#!은 크게 기뻐할 것이며, [ROOT.GetCountry.GetName]의 질서와 안정을 유지하려는 우리의 노력에 지지를 제공할 수도 있습니다." # 10438582578139570388
   ztr_tooltip_russia_loses_european_periphery: "[ROOT.GetCountry.GetName]은 유럽 통제 변방을 #negative_value 상실할# 것입니다." # 6403648657355501836
   research_center_can_construct_tt: "연구소를 위한 적절한 부지를 확인하고 측량했습니다." # 5608323372346021698
-  fusion_reactor_decision: "#i Fusion Reactor Power#! Program"
+  fusion_reactor_decision: "#i 핵융합 발전소#! 프로그램" # 4660883553044220756
   fusion_reactor_decision_desc: "고도의 #blue_value 핵물리학#!과 #blue_value 스마트 에너지 그리드#!가 등장함에 따라, 우리 과학자들은 별의 동력이 되는 #gold_value 제어 핵융합#!이 마침내 실현 가능할 것이라고 믿고 있습니다. #gold_value 핵융합 발전소#! 건설은 거대한 사업으로서 우리 국가의 에너지 공급에 혁명을 일으킬 것이지만, 에너지 시장을 파괴할 수도 있습니다. 그러나 우리는 여전히 이 과정을 안정화하고 상업적으로 실행 가능한 방법을 찾아야 합니다." # 7237558754773308429
   fusion_reactor_purchase_decision: "핵융합로 기술 구매" # 17805009584738936470
   fusion_reactor_purchase_decision_desc: "비록 우리에게 강대국과 같은 토착 연구 기반 시설은 부족하지만, 세계 최초의 #gold_value 핵융합 발전소#!는 상업적 핵융합 에너지의 실행 가능성을 이미 입증했습니다. 기술 파트너십과 관계를 활용하여 이 기술의 라이선스 및 이전을 협상할 수 있습니다. 비용은 막대하겠지만, 그 보상인 사실상 무제한의 #P 청정 에너지#!는 헤아릴 수 없을 만큼 큽니다." # 1166590245189466449
-  je_fusion_reactor_research: "#i Fusion Reactor Power#! Program"
-  je_fusion_reactor_research_goal: "Complete the #i Fusion Reactor#! Research"
+  je_fusion_reactor_research: "#i 핵융합 발전소#! 프로그램" # 4660883553044220756
+  je_fusion_reactor_research_goal: "#i 핵융합 발전소#! 연구 완료" # 8221257422514374881
   je_fusion_reactor_construction: "#gold_value 핵융합 발전소#! 건설" # 8511018404132830552
   je_fusion_reactor_construction_reason: "#gold_value 핵융합 발전소#! 부지가 선정됨에 따라, 이제 우리 국가 역사상 가장 야심 찬 건설 프로젝트를 진행할 수 있게 되었습니다. 이 시설은 태양을 움직이는 것과 동일한 과정인 핵융합의 힘을 이용하여 사실상 무한한 #P 청정 에너지#!를 생산할 것입니다. 이 시설의 완공은 우리 국가의 기술적 패권에 새로운 시대를 열 것입니다." # 1745768391631876615
   fusion_reactor.1.t: "안정적인 #gold_value 핵융합 반응#! 달성" # 13952117127048588719
@@ -457,41 +458,41 @@
   je_imf_modernization_developed_tt: "@money!#v 5#! 이상의 [Concept('concept_gdp_per_capita','$GDP per Capita$')] 달성." # 5270361067442006470
   je_imf_modernization_status_progressing: "[ROOT.GetCountry.GetName]은(는) 이제 확실한 현대화의 길로 접어들었습니다. #blue_value IMF#!는 [Concept('concept_literacy','$concept_literacy$')]의 #positive_value 상당한 발전#!, 상승하는 [Concept('concept_sol','$concept_sol$')], 그리고 다변화되는 경제 기반을 인정하고 있습니다. 이 기세가 계속 유지된다면, 검토 팀이 설정한 목표는 현실적인 달성 범위 내에 있습니다." # 3228049284068603606
   je_group_global_superstates_content: "초대형 국가" # 8849518905183854626
-  ztr_nuclear_power_program_button: "#gold_value Civil Nuclear Power#! Program"
-  ztr_nuclear_power_program_button_desc: "The physics of the chain reaction is no longer a secret, but turning it into a machine that boils water safely, year after year, is a different discipline entirely. Fuel fabrication, control rods, containment, heat exchangers, a grid stable enough to absorb a station of that size: each is an industry that does not yet exist here. Our #v Research Center#! can build them all, and free us from the coal seam and the oil tanker for good."
-  je_nuclear_power_program: "#gold_value Civil Nuclear Power#! Program"
-  je_nuclear_power_program_goal: "Complete the #gold_value Civil Nuclear Power#! Program"
-  nuclear_reactor_purchase_decision: "License #gold_value Nuclear Reactor#! Technology"
-  nuclear_reactor_purchase_decision_desc: "We will never design a power reactor from first principles: the laboratories, the test facilities and the twenty years of accumulated failure simply are not ours. But reactors are sold. A supplier state will hand over the drawings, ship the components and second the engineers, in exchange for a great deal of money and a degree of dependence we will be living with for decades."
-  nuclear_reactor_purchase_relations_tt: "A country operating #gold_value Nuclear Reactors#! is willing to sell to us"
-  nuclear_power_program.1.t: "The Pile Goes Critical"
-  nuclear_power_program.1.d: "The first generation reactor has reached sustained criticality and, for the first time, its steam is turning a turbine connected to the national grid. The output is modest and the cost was extravagant, but the principle is settled: a few tonnes of fuel will now do the work of trainloads of coal.\n\nOur engineers already speak of the stations that will follow, and of a grid that no longer depends on what we can dig out of the ground or buy from abroad."
-  nuclear_power_program.1.f: "A lump of metal the size of a fist, and the lights of a city."
-  nuclear_power_program.1.a: "Connect it to the grid."
-  nuclear_reactor_purchase.1.t: "A Request for #gold_value Reactor#! Technology"
-  nuclear_reactor_purchase.1.d: "[SCOPE.sCountry('nuclear_technology_requester').GetName] has approached us about licensing our first generation reactor design. They want the drawings, the fuel fabrication process and our engineers on site until their first station is running.\n\nThe fee would be substantial and the dependence it creates would last decades. But reactor technology does not stay in one place forever, and a customer today is a customer we keep."
-  nuclear_reactor_purchase.1.a: "Sell them the design."
-  nuclear_reactor_purchase.1.b: "Some things are not for sale."
-  nuclear_reactor_purchase.2.t: "The #gold_value Reactor#! Contract Is Signed"
-  nuclear_reactor_purchase.2.d: "[SCOPE.sCountry('nuclear_technology_seller').GetName] has agreed to license their reactor design to us. The first crates of components are already at the docks, and their engineers will be seconded to our programme until the station reaches criticality.\n\nThe price is enormous and our treasury will feel it for years. But we have skipped two decades of research in a single signature."
-  nuclear_reactor_purchase.2.a: "Break ground immediately."
-  nuclear_reactor_purchase.3.t: "The #gold_value Reactor#! Request Is Refused"
-  nuclear_reactor_purchase.3.d: "[SCOPE.sCountry('nuclear_technology_seller').GetName] has declined to license their reactor technology to us. The refusal was polite and the reasoning vague: technical readiness, regulatory concerns, the sensitivity of the fuel cycle.\n\nNobody in our foreign ministry believes any of it. They intend to keep the advantage, and we will have to look elsewhere."
-  nuclear_reactor_purchase.3.a: "We will remember this."
-  je_research_center_reason: "Our #v National Research Center#! is the beating heart of the nation's scientific establishment.\n\nThanks to it we are able to conduct private, national and secret research for social, military and geopolitical purposes.\n\nOur [Concept('concept_research_capacity','$concept_research_capacity$')] is #P [ROOT.GetCountry.MakeScope.ScriptValue('country_research_progress')|0]#!."
-  je_nuclear_power_program_reason: "Our reactor physicists, metallurgists and grid engineers are working toward a first generation power reactor: a machine that produces electricity rather than plutonium.\n\nProgress depends on our [Concept('concept_research_capacity','$concept_research_capacity$')]."
-  je_fusion_reactor_research_reason: "Our top physicists and engineers are conducting an exhaustive research and experimentation on fusion energy, stabilizing #blue_value Plasma#! and achieving net energy gain.\n\nProgress depends on our [Concept('concept_research_capacity','$concept_research_capacity$')]."
-  ztr_abandon_program_button: "Abandon the Programme"
-  ztr_research_center_cooldown_tt: "The #v Research Center#! has not started a programme in the last #v 8 years#!. Abandoning a programme does not reset this interval."
-  ztr_abandon_nuclear_weapons_program_button_desc: "Abandon the nuclear weapons programme and lose its accumulated research progress. The eight-year interval between programme launches remains in force. Diplomatic consequences and the uranium law are retained; abandoned prototype silos are removed during annual maintenance."
-  ztr_abandon_thermonuclear_weapons_program_button_desc: "Abandon the thermonuclear programme and lose its accumulated research progress. Existing nuclear capability is retained. The eight-year interval between programme launches and the diplomatic consequences remain in force."
-  ztr_abandon_nuclear_power_program_button_desc: "Abandon the civil nuclear programme and lose its accumulated research progress. The eight-year interval between programme launches remains in force."
-  ztr_abandon_fusion_reactor_program_button_desc: "Abandon the fusion research programme and lose its accumulated research progress. The eight-year interval between programme launches remains in force."
-  je_global_warming_reason: "Industrial smoke, coal furnaces, oil engines, and chemical works are beginning to alter the balance of the atmosphere. The warming is still slow and gradual, but the world economy is becoming tied to sources of pollution whose effects will compound year after year.\n\n#bold Global Climate#!\nGlobal Average Temp: #negative_value +[GetGlobalVariable('ztr_global_warming_temperature_anomaly').GetValue|2] C#! above #v Pre-Industrial Age#!.\nAnnual Temperature Change: [JournalEntry.GetCustom('ztr_global_warming_yearly_temperature_change_type')]\nGlobal Pollution: @pollution_icon!#v [GetGlobalVariable('ztr_global_warming_total_pollution_var').GetValue|0]#! ([JournalEntry.GetCustom('ztr_global_warming_total_pollution_change_type')] from last year)\n[GetPlayer.GetName] Pollution: @pollution_icon!#v [GetPlayer.MakeScope.Var('ztr_country_total_pollution_current_var').GetValue|0]#! ([GetPlayer.GetCustom('ztr_global_warming_player_pollution_change_type')] from last year)\n\n#bold Climate Stage#!\nCurrent Stage: [JournalEntry.GetCustom('ztr_global_warming_stage_type')]\nProjected Equilibrium: #negative_value [GetGlobalVariable('ztr_global_warming_equilibrium_temperature_var').GetValue|2] C#! if pollution stays at its current level.\nClimate Disasters at Last Annual Survey: [JournalEntry.GetCustom('ztr_global_warming_climate_disasters_type')]\n\nCountry pollution is measured from the generated pollution value of each [concept_country], after applying the effects of environmental laws, institutions, and technologies, then compared with the previous annual update.\n\n#bold Annual Pollution Update#!\n#v Rank - Country - Pollution - Yearly Change#!\n[JournalEntry.GetCustom('ztr_global_warming_polluter_rank_1_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_2_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_3_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_4_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_5_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_6_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_7_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_8_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_9_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_10_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_none_type')]"
-  ztr_global_warming_stage_4_loc: "#negative_value Critical Warming#! - above 2.0 C, prolonged coastal flooding adds to the climate crisis."
-  ztr_global_warming_climate_disasters_none_loc: "None."
-  ztr_global_warming_climate_disasters_active_loc: "#negative_value [GetGlobalVariable('ztr_global_warming_climate_disaster_states_var').GetValue|0]#! [concept_state|E] affected at the last annual survey; shared regions count once per owner."
-  ztr_ccp_revolutionary_discipline: "Revolutionary Discipline"
-  ztr_ccp_revolutionary_discipline_desc: "Party cadres, political commissars and village committees channel every grievance of the war into the revolutionary cause. As long as the struggle for China continues, hardship breeds recruits rather than rebels."
-  ztr_kmt_national_salvation: "National Salvation"
-  ztr_kmt_national_salvation_desc: "The Nationalist government rallies the country under the banner of saving the Republic from the Red menace. While the civil war rages, sacrifices are borne in the name of the nation rather than turned against the state."
+  ztr_nuclear_power_program_button: "#gold_value 민간 원자력 발전#! 프로그램" # 8992679503753589257
+  ztr_nuclear_power_program_button_desc: "연쇄 반응의 물리학은 더 이상 비밀이 아니나, 이를 매년 안전하게 물을 끓이는 기계로 바꾸는 것은 완전히 다른 영역의 문제입니다. 연료 가공, 제어봉, 격납 용기, 열교환기, 그리고 그 정도 규모의 발전소를 수용할 만큼 안정적인 전력망에 이르기까지, 이 모든 것은 이곳에 아직 존재하지 않는 산업들입니다. 우리의 #v 연구 센터#!는 이 모든 것을 구축하여, 우리를 탄층과 유조선의 굴레에서 영원히 해방시킬 수 있을 것입니다." # 9150785809977917576
+  je_nuclear_power_program: "#gold_value 민간 원자력 발전#! 프로그램" # 8992679503753589257
+  je_nuclear_power_program_goal: "#gold_value 민간 원자력 발전#! 프로그램 완료" # 18264776152126946724
+  nuclear_reactor_purchase_decision: "#gold_value 원자로#! 기술 라이선스 도입" # 15207117355057273868
+  nuclear_reactor_purchase_decision_desc: "우리는 기초 원리부터 원자로를 설계할 수는 없을 것입니다. 실험실과 테스트 시설, 그리고 20년간 축적된 실패의 경험이 우리에게는 없기 때문입니다. 하지만 원자로는 판매됩니다. 공급국은 막대한 자금과 수십 년간 지속될 어느 정도의 의존도를 대가로 설계도를 넘겨주고, 부품을 운송하며, 엔지니어를 파견해 줄 것입니다." # 11283500157167135053
+  nuclear_reactor_purchase_relations_tt: "#gold_value 원자로#!를 운용하는 국가가 우리에게 판매할 의사가 있습니다" # 3770979813932983168
+  nuclear_power_program.1.t: "원자로가 임계점에 도달하다" # 13363937893127475442
+  nuclear_power_program.1.d: "1세대 원자로가 지속적인 임계 상태에 도달했으며, 처음으로 그 증기가 국가 전력망에 연결된 터빈을 돌리고 있습니다. 출력은 미미하고 비용은 엄청났지만, 원리는 증명되었습니다. 이제 단 몇 톤의 연료가 기차 몇 대 분량의 석탄이 하던 일을 대신하게 될 것입니다.\n\n우리 엔지니어들은 이미 다음에 들어설 발전소들과, 더 이상 땅에서 캐내거나 해외에서 구매하는 것에 의존하지 않는 전력망에 대해 이야기하고 있습니다." # 9996598563944245062
+  nuclear_power_program.1.f: "주먹만 한 금속 덩어리, 그리고 도시의 불빛." # 14971346516681115272
+  nuclear_power_program.1.a: "전력망에 연결하십시오." # 16631481107714219111
+  nuclear_reactor_purchase.1.t: "#gold_value 원자로#! 기술 요청" # 13700400026295826408
+  nuclear_reactor_purchase.1.d: "[SCOPE.sCountry('nuclear_technology_requester').GetName]가 우리의 1세대 원자로 설계 라이선스 도입을 요청해 왔습니다. 그들은 설계도와 연료 가공 공정을 원하며, 첫 발전소가 가동될 때까지 우리 엔지니어들이 현장에 상주하기를 바랍니다.\n\n수수료는 상당할 것이며, 이로 인해 발생하는 의존도는 수십 년간 지속될 것입니다. 하지만 원자로 기술은 영원히 한 곳에 머물지 않으며, 오늘의 고객은 우리가 계속 유지해야 할 고객입니다." # 103488060404308098
+  nuclear_reactor_purchase.1.a: "설계를 판매하십시오." # 11518978138099932757
+  nuclear_reactor_purchase.1.b: "어떤 것들은 판매 대상이 아닙니다." # 2739976966740982097
+  nuclear_reactor_purchase.2.t: "#gold_value 원자로#! 계약 체결" # 3666033639572908692
+  nuclear_reactor_purchase.2.d: "[SCOPE.sCountry('nuclear_technology_seller').GetName]가 그들의 원자로 설계를 우리에게 라이선스 하는 것에 동의했습니다. 첫 부품 상자들이 이미 부두에 도착했으며, 발전소가 임계점에 도달할 때까지 그들의 엔지니어들이 우리 프로그램에 파견될 것입니다.\n\n가격은 엄청나며 우리 국고는 수년간 그 여파를 느낄 것입니다. 하지만 우리는 단 한 번의 서명으로 20년의 연구 기간을 건너뛰었습니다." # 2399548002840677636
+  nuclear_reactor_purchase.2.a: "즉시 착공하십시오." # 16008445799020913495
+  nuclear_reactor_purchase.3.t: "#gold_value 원자로#! 요청이 거절되었습니다" # 16668169603835529109
+  nuclear_reactor_purchase.3.d: "[SCOPE.sCountry('nuclear_technology_seller').GetName] 측에서 원자로 기술 라이선스 제공을 거절했습니다. 거절 의사는 정중했으나 그 이유는 기술적 준비 상태, 규제 관련 우려, 연료 주기의 민감성 등 모호했습니다.\n\n우리 외무부의 그 누구도 이를 믿지 않습니다. 그들은 우위를 유지하려는 것이며, 우리는 다른 곳을 찾아봐야 할 것입니다." # 11464516525568861120
+  nuclear_reactor_purchase.3.a: "이 일을 기억해 두겠습니다." # 11943833676117585282
+  je_research_center_reason: "우리의 #v 국립 연구 센터#!는 국가 과학 체계의 심장부입니다.\n\n이 센터 덕분에 우리는 사회적, 군사적, 지정학적 목적을 위한 민간, 국가 및 비밀 연구를 수행할 수 있습니다.\n\n우리의 [Concept('concept_research_capacity','$concept_research_capacity$')]는 #P [ROOT.GetCountry.MakeScope.ScriptValue('country_research_progress')|0]#!입니다." # 17552747284394955958
+  je_nuclear_power_program_reason: "우리의 원자로 물리학자, 금속학자, 전력망 엔지니어들이 1세대 발전용 원자로, 즉 플루토늄이 아닌 전력을 생산하는 장치를 개발하기 위해 노력하고 있습니다.\n\n진척도는 우리의 [Concept('concept_research_capacity','$concept_research_capacity$')]에 달려 있습니다." # 16934801900541934804
+  je_fusion_reactor_research_reason: "우리의 최고 물리학자와 엔지니어들이 핵융합 에너지에 대한 철저한 연구와 실험을 수행하며, #blue_value 플라스마#!를 안정화하고 순 에너지 이득을 달성하려 노력하고 있습니다.\n\n진척도는 우리의 [Concept('concept_research_capacity','$concept_research_capacity$')]에 달려 있습니다." # 10706243998147380391
+  ztr_abandon_program_button: "프로그램 포기" # 3598447134538228684
+  ztr_research_center_cooldown_tt: "#v 연구 센터#!가 지난 #v 8년#! 동안 프로그램을 시작하지 않았습니다. 프로그램을 포기해도 이 간격은 초기화되지 않습니다." # 3196075606663821247
+  ztr_abandon_nuclear_weapons_program_button_desc: "핵무기 프로그램을 포기하고 누적된 연구 진척도를 상실합니다. 프로그램 시작 사이의 8년 간격은 그대로 유지됩니다. 외교적 결과와 우라늄 법은 유지되며, 포기된 프로토타입 사일로는 연례 유지보수 중에 제거됩니다." # 8206267051895559392
+  ztr_abandon_thermonuclear_weapons_program_button_desc: "열핵 프로그램을 포기하고 누적된 연구 진척도를 상실합니다. 기존의 핵 능력은 유지됩니다. 프로그램 시작 사이의 8년 간격과 외교적 결과는 그대로 유지됩니다." # 3863460026192107106
+  ztr_abandon_nuclear_power_program_button_desc: "민간 원자력 프로그램을 포기하고 누적된 연구 진척도를 상실합니다. 프로그램 시작 사이의 8년 간격은 그대로 유지됩니다." # 8639398893131770989
+  ztr_abandon_fusion_reactor_program_button_desc: "핵융합 연구 프로그램을 포기하고 누적된 연구 진척도를 상실합니다. 프로그램 시작 사이의 8년 간격은 그대로 유지됩니다." # 4832216123047673734
+  je_global_warming_reason: "산업 매연, 석탄 화로, 오일 엔진, 화학 공장들이 대기의 균형을 바꾸기 시작했습니다. 온난화는 여전히 느리고 점진적이지만, 세계 경제는 해가 갈수록 그 영향이 누적될 오염원에 묶여가고 있습니다.\n\n#bold 지구 기후#!\n전 지구 평균 기온: #v 산업화 이전 시대#! 대비 #negative_value +[GetGlobalVariable('ztr_global_warming_temperature_anomaly').GetValue|2] C#!\n연간 기온 변화: [JournalEntry.GetCustom('ztr_global_warming_yearly_temperature_change_type')]\n전 지구 오염도: @pollution_icon!#v [GetGlobalVariable('ztr_global_warming_total_pollution_var').GetValue|0]#! (전년 대비 [JournalEntry.GetCustom('ztr_global_warming_total_pollution_change_type')])\n[GetPlayer.GetName] 오염도: @pollution_icon!#v [GetPlayer.MakeScope.Var('ztr_country_total_pollution_current_var').GetValue|0]#! (전년 대비 [GetPlayer.GetCustom('ztr_global_warming_player_pollution_change_type')])\n\n#bold 기후 단계#!\n현재 단계: [JournalEntry.GetCustom('ztr_global_warming_stage_type')]\n예상 평형 기온: 오염도가 현재 수준으로 유지될 경우 #negative_value [GetGlobalVariable('ztr_global_warming_equilibrium_temperature_var').GetValue|2] C#!\n지난 연례 조사 시 기후 재해: [JournalEntry.GetCustom('ztr_global_warming_climate_disasters_type')]\n\n국가 오염도는 환경법, 제도, 기술의 효과를 적용한 후 각 [concept_country]에서 생성된 오염값으로 측정되며, 이전 연례 업데이트와 비교됩니다.\n\n#bold 연례 오염 업데이트#!\n#v 순위 - 국가 - 오염도 - 연간 변화#!\n[JournalEntry.GetCustom('ztr_global_warming_polluter_rank_1_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_2_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_3_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_4_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_5_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_6_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_7_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_8_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_9_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_10_type')][JournalEntry.GetCustom('ztr_global_warming_polluter_rank_none_type')]" # 17113850432139544367
+  ztr_global_warming_stage_4_loc: "#negative_value 임계 온난화#! - 2.0 C 초과 시, 장기적인 해안 침수가 기후 위기를 가중시킵니다." # 9593809551807511967
+  ztr_global_warming_climate_disasters_none_loc: "없음." # 17233843776622986688
+  ztr_global_warming_climate_disasters_active_loc: "#negative_value [GetGlobalVariable('ztr_global_warming_climate_disaster_states_var').GetValue|0]#! [concept_state|E]가 지난 연례 조사에서 영향을 받았습니다. 공유 지역은 소유자당 한 번으로 계산됩니다." # 11058453359058500804
+  ztr_ccp_revolutionary_discipline: "혁명적 규율" # 7358394966783194092
+  ztr_ccp_revolutionary_discipline_desc: "당 간부, 정치 위원, 마을 위원회는 전쟁의 모든 고통을 혁명 대의로 승화시킵니다. 중국을 위한 투쟁이 계속되는 한, 고난은 반란군이 아닌 신병을 양성할 것입니다." # 9407822750129504085
+  ztr_kmt_national_salvation: "구국" # 3623600822327632997
+  ztr_kmt_national_salvation_desc: "민족주의 정부는 공화국을 적색 위협으로부터 구한다는 기치 아래 국가를 결집시킵니다. 내전이 격렬하게 전개되는 동안, 희생은 국가에 대항하기보다는 국가의 이름으로 감내됩니다." # 5220126316325403930

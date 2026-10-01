@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   company_bg: "브리티시 페트롤리엄" # 18357678484724878580
   company_total: "토탈에너지스" # 1387534035661575447
   company_eni: "엔테 나치오날레 이드로카르부리 (ENI)" # 9989473823051550557
@@ -195,8 +196,8 @@
   company_roland_berger: "롤랜드 버거" # 2565831192013735615
   company_capgemini: "캡제미니" # 13095048899191392621
   company_nri_nomura: "노무라 종합연구소" # 475304027977767064
-  company_basic_pharmaceuticals: "Consolidated Pharmaceuticals"
-  company_uranium_advancedores_mining: "Strategic Minerals Consortium"
-  generic_company_basic_consulting: "General Consulting Group"
-  generic_company_basic_cosmetics: "Standard Cosmetics"
-  generic_company_basic_tech: "Integrated Electronics"
+  company_basic_pharmaceuticals: "통합 제약" # 7492400347377922827
+  company_uranium_advancedores_mining: "전략 광물 컨소시엄" # 4480195590462103046
+  generic_company_basic_consulting: "종합 자문 그룹" # 3955354670030562842
+  generic_company_basic_cosmetics: "표준 화장품" # 3758459667122872797
+  generic_company_basic_tech: "통합 전자" # 17360701638987235442

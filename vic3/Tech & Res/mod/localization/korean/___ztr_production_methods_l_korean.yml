@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   pmg_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pm_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pmg_mendelejew_isoprene: "합성 고무" # 10497239447374670003
@@ -791,24 +792,24 @@
   pmg_aerial_trade_trade_center: "공중 교역량" # 2400830276553252491
   pm_no_aerial_trade: "공중 교역 없음" # 9205996462694201456
   pm_aerial_trade: "항공 화물 네트워크" # 6592810915038195840
-  pmg_byproduct_extraction_iron_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_commonores_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_sulfur_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_coal_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_lead_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_uranium_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_copper_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_bauxite_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_advancedores_mine: "Byproduct Extraction"
-  pmg_byproduct_extraction_rare_earths_mine: "Byproduct Extraction"
-  pm_no_byproduct_extraction: "No Byproduct Extraction"
-  basic_byproduct_extraction_iron_mine: "Common Ores Byproduct"
-  basic_byproduct_extraction_commonores_mine: "Iron Byproduct"
-  basic_byproduct_extraction_sulfur_mine: "Copper Byproduct"
-  mid_byproduct_extraction_coal_mine: "Sulfur Byproduct"
-  mid_byproduct_extraction_lead_mine: "Iron Byproduct"
-  mid_byproduct_extraction_uranium_mine: "Copper Byproduct"
-  advanced_byproduct_extraction_copper_mine: "Advanced Ores Byproduct"
-  advanced_byproduct_extraction_bauxite_mine: "Rare Earths Byproduct"
-  advanced_byproduct_extraction_advancedores_mine: "Rare Earths Byproduct"
-  advanced_byproduct_extraction_rare_earths_mine: "Uranium Byproduct"
+  pmg_byproduct_extraction_iron_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_commonores_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_sulfur_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_coal_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_lead_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_uranium_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_copper_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_bauxite_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_advancedores_mine: "부산물 추출" # 13951903650077762673
+  pmg_byproduct_extraction_rare_earths_mine: "부산물 추출" # 13951903650077762673
+  pm_no_byproduct_extraction: "부산물 추출 없음" # 3210927522992226237
+  basic_byproduct_extraction_iron_mine: "일반 광석 부산물" # 11315348411786566677
+  basic_byproduct_extraction_commonores_mine: "철 부산물" # 8352755188784366811
+  basic_byproduct_extraction_sulfur_mine: "구리 부산물" # 2724384312362760519
+  mid_byproduct_extraction_coal_mine: "유황 부산물" # 5157694625469550104
+  mid_byproduct_extraction_lead_mine: "철 부산물" # 8352755188784366811
+  mid_byproduct_extraction_uranium_mine: "구리 부산물" # 2724384312362760519
+  advanced_byproduct_extraction_copper_mine: "고급 광석 부산물" # 8472636548242201188
+  advanced_byproduct_extraction_bauxite_mine: "희토류 부산물" # 11956269570116210601
+  advanced_byproduct_extraction_advancedores_mine: "희토류 부산물" # 11956269570116210601
+  advanced_byproduct_extraction_rare_earths_mine: "우라늄 부산물" # 2603150294911233699

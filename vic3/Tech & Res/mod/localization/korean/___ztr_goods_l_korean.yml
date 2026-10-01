@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   aeroplanes: "군용기" # 10027288187131300694
   civil_planes: "비행기" # 9942541435516958429
   bauxite: "보크사이트" # 1445528219541785425
@@ -251,45 +252,45 @@
   goods_output_global_electricity_mult: "건물 @global_electricity! 국가 전력 생산량" # 8362694685285162869
   goods_output_global_electricity_mult_desc: "건물이 생산하는 @global_electricity! 국가 전력 생산량에 대한 보너스 또는 페널티" # 18085558281426966720
   goods_input_light_fuel_mult: "@light_fuel! 경질 연료 투입" # 6216783065568310915
-  goods_input_cosmetics_add: "@cosmetics! Cosmetics input"
-  goods_input_cosmetics_add_desc: "The amount of @cosmetics! Cosmetics consumed by buildings"
-  goods_input_furniture_add: "@furniture! Furniture input"
-  goods_input_furniture_add_desc: "The amount of @furniture! Furniture consumed by buildings"
-  goods_input_interactive_entertainment_add: "@interactive_entertainment! Interactive Entertainment input"
-  goods_input_interactive_entertainment_add_desc: "The amount of @interactive_entertainment! Interactive Entertainment consumed by buildings"
-  goods_input_luxury_automobiles_add: "@luxury_automobiles! Luxury Vehicles input"
-  goods_input_luxury_automobiles_add_desc: "The amount of @luxury_automobiles! Luxury Vehicles consumed by buildings"
-  goods_input_luxury_clothes_add: "@luxury_clothes! Luxury Clothes input"
-  goods_input_luxury_clothes_add_desc: "The amount of @luxury_clothes! Luxury Clothes consumed by buildings"
-  goods_input_luxury_furniture_add: "@luxury_furniture! Luxury Furniture input"
-  goods_input_luxury_furniture_add_desc: "The amount of @luxury_furniture! Luxury Furniture consumed by buildings"
-  goods_input_on_demand_goods_add: "@on_demand_goods! On-Demand Goods input"
-  goods_input_on_demand_goods_add_desc: "The amount of @on_demand_goods! On-Demand Goods consumed by buildings"
-  goods_input_rare_earths_add: "@rare_earths! Rare Earths input"
-  goods_input_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths consumed by buildings"
-  goods_input_softwares_add: "@softwares! Software input"
-  goods_input_softwares_add_desc: "The amount of @softwares! Software consumed by buildings"
-  goods_input_manzoni_prints_add: "@manzoni_prints! Media Content input"
-  goods_input_manzoni_prints_add_desc: "The amount of @manzoni_prints! Media Content consumed by buildings"
-  goods_output_cosmetics_add: "@cosmetics! Cosmetics output"
-  goods_output_cosmetics_add_desc: "The amount of @cosmetics! Cosmetics produced by buildings"
-  goods_output_interactive_entertainment_add: "@interactive_entertainment! Interactive Entertainment output"
-  goods_output_interactive_entertainment_add_desc: "The amount of @interactive_entertainment! Interactive Entertainment produced by buildings"
-  goods_output_luxury_automobiles_add: "@luxury_automobiles! Luxury Vehicles output"
-  goods_output_luxury_automobiles_add_desc: "The amount of @luxury_automobiles! Luxury Vehicles produced by buildings"
-  goods_output_on_demand_goods_add: "@on_demand_goods! On-Demand Goods output"
-  goods_output_on_demand_goods_add_desc: "The amount of @on_demand_goods! On-Demand Goods produced by buildings"
-  goods_output_rare_earths_add: "@rare_earths! Rare Earths output"
-  goods_output_rare_earths_add_desc: "The amount of @rare_earths! Rare Earths produced by buildings"
-  goods_output_softwares_add: "@softwares! Software output"
-  goods_output_softwares_add_desc: "The amount of @softwares! Software produced by buildings"
-  goods_output_manzoni_prints_add: "@manzoni_prints! Media Content output"
-  goods_output_manzoni_prints_add_desc: "The amount of @manzoni_prints! Media Content produced by buildings"
-  goods_output_telecommunications_add: "@telecommunications! Telecommunications output"
-  goods_output_telecommunications_add_desc: "The amount of @telecommunications! Telecommunications produced by buildings"
-  goods_output_processors_mult: "@processors! Processors output"
-  goods_output_processors_mult_desc: "A bonus or penalty to the amount of @processors! output produced by buildings"
-  goods_output_robotics_mult: "@robotics! Robotics output"
-  goods_output_robotics_mult_desc: "A bonus or penalty to the amount of @robotics! output produced by buildings"
-  goods_input_light_fuel_mult_desc: "A bonus or penalty to the amount of @light_fuel! Light Fuel consumed by buildings"
-  goods_output_electroniccomponents_add_desc: "The amount of @electroniccomponents! Electronic Components produced by buildings"
+  goods_input_cosmetics_add: "@cosmetics! 화장품 투입" # 10199376940551449782
+  goods_input_cosmetics_add_desc: "건물에서 소비되는 @cosmetics! 화장품의 양" # 18108633773945129687
+  goods_input_furniture_add: "@furniture! 가구 투입" # 9360338387370118748
+  goods_input_furniture_add_desc: "건물에서 소비되는 @furniture! 가구의 양" # 2216469180688629129
+  goods_input_interactive_entertainment_add: "@interactive_entertainment! 인터랙티브 엔터테인먼트 투입" # 5685162668896012798
+  goods_input_interactive_entertainment_add_desc: "건물에서 소비되는 @interactive_entertainment! 인터랙티브 엔터테인먼트의 양" # 10412755468474490410
+  goods_input_luxury_automobiles_add: "@luxury_automobiles! 고급 차량 투입" # 9773343551679009205
+  goods_input_luxury_automobiles_add_desc: "건물에서 소비되는 @luxury_automobiles! 고급 차량의 양" # 16746030788849493442
+  goods_input_luxury_clothes_add: "@luxury_clothes! 고급 의류 투입" # 2784383901460709294
+  goods_input_luxury_clothes_add_desc: "건물에서 소비되는 @luxury_clothes! 고급 의류의 양" # 11060761472560552056
+  goods_input_luxury_furniture_add: "@luxury_furniture! 고급 가구 투입" # 3124465385652393418
+  goods_input_luxury_furniture_add_desc: "건물에서 소비되는 @luxury_furniture! 고급 가구의 양" # 2726056181076833619
+  goods_input_on_demand_goods_add: "@on_demand_goods! 주문형 상품 투입" # 15286474066532574420
+  goods_input_on_demand_goods_add_desc: "건물에서 소비되는 @on_demand_goods! 주문형 상품의 양" # 293716311435788663
+  goods_input_rare_earths_add: "@rare_earths! 희토류 투입" # 13840352215439262477
+  goods_input_rare_earths_add_desc: "건물에서 소비되는 @rare_earths! 희토류의 양" # 6412847752224050238
+  goods_input_softwares_add: "@softwares! 소프트웨어 투입" # 3170790624021083056
+  goods_input_softwares_add_desc: "건물에서 소비되는 @softwares! 소프트웨어의 양" # 238113394979878094
+  goods_input_manzoni_prints_add: "@manzoni_prints! 미디어 콘텐츠 투입" # 17209820019001985237
+  goods_input_manzoni_prints_add_desc: "건물에서 소비되는 @manzoni_prints! 미디어 콘텐츠의 양" # 4015055358881173198
+  goods_output_cosmetics_add: "@cosmetics! 화장품 생산량" # 2954232051005632055
+  goods_output_cosmetics_add_desc: "건물에서 생산되는 @cosmetics! 화장품의 양" # 6001841096370808952
+  goods_output_interactive_entertainment_add: "@interactive_entertainment! 인터랙티브 엔터테인먼트 생산량" # 2083341290746608820
+  goods_output_interactive_entertainment_add_desc: "건물에서 생산되는 @interactive_entertainment! 인터랙티브 엔터테인먼트의 양" # 5845001986426106879
+  goods_output_luxury_automobiles_add: "@luxury_automobiles! 고급 차량 생산량" # 17909441634972324311
+  goods_output_luxury_automobiles_add_desc: "건물에서 생산되는 @luxury_automobiles! 고급 차량의 양" # 12266708043287983250
+  goods_output_on_demand_goods_add: "@on_demand_goods! 주문형 상품 생산량" # 16781717886829483672
+  goods_output_on_demand_goods_add_desc: "건물에서 생산되는 @on_demand_goods! 주문형 상품의 양" # 15643324649542335072
+  goods_output_rare_earths_add: "@rare_earths! 희토류 생산량" # 1427579594704039998
+  goods_output_rare_earths_add_desc: "건물에서 생산되는 @rare_earths! 희토류의 양" # 3367501792922213159
+  goods_output_softwares_add: "@softwares! 소프트웨어 생산량" # 14799245340124869947
+  goods_output_softwares_add_desc: "건물에서 생산되는 @softwares! 소프트웨어의 양" # 5912208328341697176
+  goods_output_manzoni_prints_add: "@manzoni_prints! 미디어 콘텐츠 생산량" # 8224374788648614329
+  goods_output_manzoni_prints_add_desc: "건물에서 생산되는 @manzoni_prints! 미디어 콘텐츠의 양" # 14552726860114630584
+  goods_output_telecommunications_add: "@telecommunications! 전기 통신 생산량" # 5556642811588608276
+  goods_output_telecommunications_add_desc: "건물에서 생산되는 @telecommunications! 전기 통신의 양" # 139919970396046721
+  goods_output_processors_mult: "@processors! 프로세서 생산량" # 6345543369972806584
+  goods_output_processors_mult_desc: "건물에서 생산되는 @processors! 생산량에 대한 보너스 또는 페널티" # 15970921200168531137
+  goods_output_robotics_mult: "@robotics! 로봇 공학 생산량" # 10689630808392775097
+  goods_output_robotics_mult_desc: "건물에서 생산되는 @robotics! 생산량에 대한 보너스 또는 페널티" # 2515937683027678052
+  goods_input_light_fuel_mult_desc: "건물에서 소비되는 @light_fuel! 경량 연료의 양에 적용되는 보너스 또는 페널티입니다" # 18203071095218804609
+  goods_output_electroniccomponents_add_desc: "건물에서 생산되는 @electroniccomponents! 전자 부품의 양입니다" # 8496941140153931280

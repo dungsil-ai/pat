@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   ztr_extreme_heatwave: "극심한 폭염" # 17611660901669962774
   ztr_extreme_heatwave_desc: "지역 기상 관측 이래 유례를 찾을 수 없는 수주일간의 지속되는 폭염. 들판은 시들고, 가축은 방목지에서 쓰러지며, 도시가 가장 큰 타격을 입습니다. 벽돌과 아스팔트는 밤새 열을 품고 노인과 빈민층 사이에서 사망자가 급증합니다." # 4686536985311327289
   ztr_megadrought: "대가뭄" # 12083588432082449195
@@ -32,4 +33,4 @@
   modifier_cyclone_relief_desc: "긴급 복구, 대피소 운영 및 해안 구호로 인해 국가 재정에 일시적인 부담이 가중되고 있습니다." # 6659934082080461675
   modifier_mega_flood_relief: "해안 방어 비상사태" # 8488343991016245744
   modifier_mega_flood_relief_desc: "방파제 건설과 보강 공사에 막대한 공공 자금이 소모되고 있습니다." # 10631730233718892080
-  ztr_coastal_flooding_desc: "Prolonged coastal inundation disrupts farms, towns and infrastructure for years. Saltwater and repeated surges prevent a quick recovery; emergency relief can limit additional devastation but does not end the condition."
+  ztr_coastal_flooding_desc: "장기간의 해안 침수로 인해 수년간 농장과 마을, 사회 기반 시설이 마비됩니다. 염수 유입과 반복되는 해일로 인해 빠른 회복이 어려우며, 긴급 구호로 추가 피해를 억제할 수는 있으나 이 상태를 완전히 해소할 수는 없습니다." # 14591228045409724684

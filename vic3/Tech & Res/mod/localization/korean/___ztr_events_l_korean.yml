@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   france_pop.1.t: "19세기 인구 정체" # 1804956631068354286
   france_pop.1.d: "프랑스는 유럽 주요 국가 중 최초로 인구 변천을 경험했습니다. 이미 19세기 전반기 말에는 도시화, 문화적 변화, 초보적인 피임법의 보급, 여성 교육 증대, 그리고 상속 정책으로 인해 출산율 감소가 관찰되었습니다. 그러나 위생 및 보건 상태 개선, 백신 접종 확산, 그리고 점진적인 도시화 덕분에 사망률 또한 감소했습니다." # 12867800652452600931
   france_pop.1.a: "저희 인구는 정체 상태를 겪고 있으나, 여전히 유럽에서 가장 많은 인구를 가진 국가입니다." # 2751294108606353689
@@ -826,20 +827,20 @@
   ztr_hurricane_name_rita: "리타" # 17285809914475002137
   ztr_hurricane_name_unnamed: "이름 없음" # 10712621550109445741
   ztr_imf_event.4.d: "#blue_value 국제통화기금#! 대표단이 [ROOT.GetCountry.GetName]에 대한 최신 심사를 완료했습니다.\n\n그들의 결론은 단호합니다. 저개발 상태에서 벗어나려면 교육 제도를 현대화하고, 국민의 생활 수준을 향상시키며, 경제의 기초를 튼튼히 다져야 한다는 것입니다." # 15985740373567433279
-  ztr_global_warming_stage.4.d: "The world has crossed #negative_value 2.0 C#! of warming. Extreme heat, drought and fire strain economies while prolonged inundation threatens low-lying coasts. Damage already suffered will take time to repair.\n\nReducing pollution can still lower the projected temperature and eventually reverse the warming trend, but communities must also cope with the disasters already under way."
-  ztr_global_warming.3.b: "Fund emergency coastal defenses and relief."
-  ztr_global_warming.3.a: "Accept the damage to the low ground."
-  ztr_global_warming.3.d: "In [SCOPE.sState('ztr_climate_disaster_state').GetName] the flood came and has lingered. Salt has reached the wells, fields are waterlogged, and existing dikes are too low. The disruption could last for years.\n\nEmergency defenses and relief can limit additional devastation, but cannot end the inundation or remove its ongoing economic effects."
-  ztr_global_warming.3.d_global: "Prolonged inundation is disrupting [SCOPE.sState('ztr_climate_disaster_state').GetName] in [SCOPE.sCountry('ztr_climate_disaster_country').GetName]. Fields are waterlogged, wells are turning saline and existing defenses are overwhelmed. Coastal communities elsewhere are studying a disaster that could burden the region for years."
-  ztr_middle_east.1.t: "Suez Canal Crisis"
-  ztr_middle_east.1.d: "Since its construction, the Suez Canal has been a vital artery for global trade, connecting the Mediterranean Sea to the Red Sea and significantly shortening maritime routes between Europe and Asia. However, its strategic importance has also made it a focal point of geopolitical tensions. [SCOPE.sCountry('ztr_arabian_country_scope').GetName], as the Arabian power of the area, has the right to control the canal, right now under the control of [SCOPE.sCountry('ztr_european_colonial_power_scope').GetName]. Probably, we don't have the power to oppose this request, but we can try to negotiate or find some help from our allies."
-  ztr_middle_east.1.a: "We can offer some money, precisely 6 million pounds. If they refuse, we will have to fight for it."
-  ztr_middle_east.1.b: "We should avoid this war, we can't destroy our nation for a single canal"
-  ztr_middle_east.2.t: "Suez Canal Crisis"
-  ztr_middle_east.2.d: "[SCOPE.sCountry('ztr_arabian_country_scope').GetName] has requested the control of the Suez Canal, right now under our control. From a [Concept('concept_united_nations','$concept_united_nations$')] perspective, we don't have the power to oppose this request, but we can try to negotiate or take the risk. Their peaceful offer is to pay us 90 million pounds, but if we refuse, they want to take the canal by force."
-  ztr_middle_east.2.a: "90 millions!? We accept!"
-  ztr_middle_east.2.b: "We can find a middle ground, giving them permanently some economic control over the canal."
-  ztr_middle_east.2.c: "Suez Canal doesn't have any price, they will fight us for it."
-  ztr_russian_revolution_polish_unrest.f: "Warsaw has not forgotten 1831, nor 1863. Every tightening of our grip has only taught the Poles to wait, and they sense that the moment of our weakness has come."
-  ztr_imf_modernization.13.d: "The [Concept('concept_literacy','$concept_literacy$')] gap between [ROOT.GetCountry.GetName]'s #blue_value Urban#! and #p Rural#! population remains enormous. While our cities are slowly modernizing, many poor and rural inhabitants cannot read a newspaper, sign a contract, or follow printed government instructions.\n\nThe #blue_value IMF#! has specifically flagged rural illiteracy as a structural barrier to modernization, recommending decisive action to expand educational access beyond the capital and provincial towns."
-  ztr_russian_revolution_intelligentsia_ambiguity.d: "The [SCOPE.gsInterestGroup('russia_intelligentsia_scope').GetName] have approached us with a set of demands. They do not care to point out that the majority of their interest group has a better opinion of the #negative_value Communists#! than of the monarchical authority, as they seek greater funding for [Concept('concept_literacy','Education')], investments in [Concept('concept_innovation','Research')], and a general loosening of censorship and traditionalism chains to allow the free exchange of ideas."
+  ztr_global_warming_stage.4.d: "세계 온난화가 #negative_value 2.0 C#!를 넘어섰습니다. 극심한 폭염과 가뭄, 화재가 경제를 압박하고 있으며, 장기간의 침수가 저지대 해안을 위협하고 있습니다. 이미 발생한 피해를 복구하는 데는 시간이 걸릴 것입니다.\n\n오염을 줄이면 여전히 예상 온도를 낮추고 결국 온난화 추세를 되돌릴 수 있겠지만, 각 공동체는 이미 진행 중인 재난에도 대처해야 합니다." # 13943685614573516428
+  ztr_global_warming.3.b: "긴급 해안 방어 및 구호 자금을 지원합니다." # 18024840426488169916
+  ztr_global_warming.3.a: "저지대의 피해를 감수합니다." # 12376277772870046811
+  ztr_global_warming.3.d: "[SCOPE.sState('ztr_climate_disaster_state').GetName]에 홍수가 닥쳐 오랫동안 머물고 있습니다. 우물에는 염수가 스며들었고, 들판은 물에 잠겼으며, 기존의 제방은 너무 낮습니다. 이러한 혼란은 수년간 지속될 수 있습니다.\n\n긴급 방어와 구호 조치로 추가적인 파괴를 제한할 수는 있겠지만, 침수를 끝내거나 그로 인한 지속적인 경제적 영향을 제거할 수는 없습니다." # 6275328470986009603
+  ztr_global_warming.3.d_global: "[SCOPE.sCountry('ztr_climate_disaster_country').GetName]의 [SCOPE.sState('ztr_climate_disaster_state').GetName]가 장기간의 침수로 인해 혼란에 빠졌습니다. 들판은 물에 잠겼고, 우물은 염분으로 오염되었으며, 기존의 방어 시설은 무력화되었습니다. 다른 지역의 해안 공동체들은 이 지역에 수년간 부담이 될 수 있는 이 재난을 주시하고 있습니다." # 950789940721011229
+  ztr_middle_east.1.t: "수에즈 운하 위기" # 17095229337248386868
+  ztr_middle_east.1.d: "건설 이후 수에즈 운하는 지중해와 홍해를 연결하여 유럽과 아시아 사이의 해상 경로를 획기적으로 단축시킨 세계 무역의 핵심 동맥 역할을 해왔습니다. 하지만 그 전략적 중요성 때문에 지정학적 긴장의 중심지가 되기도 했습니다. 이 지역의 아라비아 강대국인 [SCOPE.sCountry('ztr_arabian_country_scope').GetName]는 현재 [SCOPE.sCountry('ztr_european_colonial_power_scope').GetName]가 통제하고 있는 운하를 통제할 권리가 있습니다. 아마도 우리는 이 요구에 반대할 힘이 없겠지만, 협상을 시도하거나 동맹국의 도움을 구할 수는 있을 것입니다." # 14733452371960852664
+  ztr_middle_east.1.a: "일정 금액, 정확히 600만 파운드를 제안할 수 있습니다. 만약 그들이 거절한다면, 우리는 이를 위해 싸워야 할 것입니다." # 1002094257163316000
+  ztr_middle_east.1.b: "이 전쟁은 피해야 합니다. 운하 하나 때문에 나라를 망가뜨릴 수는 없습니다." # 3888887973310441041
+  ztr_middle_east.2.t: "수에즈 운하 위기" # 17095229337248386868
+  ztr_middle_east.2.d: "[SCOPE.sCountry('ztr_arabian_country_scope').GetName]가 현재 우리가 통제하고 있는 수에즈 운하의 통제권을 요청했습니다. [Concept('concept_united_nations','$concept_united_nations$')]의 관점에서 볼 때, 우리는 이 요청에 반대할 힘이 없지만, 협상을 시도하거나 위험을 감수할 수 있습니다. 그들이 제시한 평화적인 제안은 우리에게 9,000만 파운드를 지급하는 것이지만, 우리가 거절한다면 무력으로 운하를 빼앗으려 할 것입니다." # 3595023823161343515
+  ztr_middle_east.2.a: "9,000만 파운드라고!? 수락하겠소!" # 10889996865507785241
+  ztr_middle_east.2.b: "운하에 대한 일부 경제적 통제권을 영구적으로 부여함으로써 절충안을 찾을 수 있습니다." # 15737249109933339878
+  ztr_middle_east.2.c: "수에즈 운하는 값을 매길 수 없는 것입니다. 그들은 이를 위해 우리와 싸울 것입니다." # 16397124717529337287
+  ztr_russian_revolution_polish_unrest.f: "바르샤바는 1831년도, 1863년도 잊지 않았습니다. 우리가 통제를 강화할 때마다 폴란드인들은 기다리는 법을 배웠으며, 이제 우리의 약점이 드러난 순간이 왔음을 직감하고 있습니다." # 11761026547116122670
+  ztr_imf_modernization.13.d: "[ROOT.GetCountry.GetName]의 #blue_value 도시#! 인구와 #p 농촌#! 인구 사이의 [Concept('concept_literacy','$concept_literacy$')] 격차는 여전히 엄청납니다. 도시들은 서서히 현대화되고 있지만, 가난한 농촌 주민들 중 다수는 신문을 읽거나, 계약서에 서명하거나, 인쇄된 정부 지침을 따를 수 없습니다.\n\n#blue_value IMF#!는 특히 농촌의 문맹률을 현대화의 구조적 장벽으로 지목하며, 수도와 지방 도시를 넘어 교육 기회를 확대하기 위한 결정적인 조치를 권고했습니다." # 6946809069724033796
+  ztr_russian_revolution_intelligentsia_ambiguity.d: "[SCOPE.gsInterestGroup('russia_intelligentsia_scope').GetName]가 일련의 요구 사항을 가지고 우리에게 접근했습니다. 그들은 [Concept('concept_literacy','교육')]에 대한 더 많은 자금 지원과 [Concept('concept_innovation','연구')] 투자, 그리고 아이디어의 자유로운 교환을 가능하게 하는 검열과 전통주의의 사슬을 전반적으로 완화할 것을 요구하고 있으며, 정작 자신들의 이익 집단 대다수가 군주제 권위보다 #negative_value 공산주의자#!들을 더 좋게 평가한다는 사실은 굳이 언급하지 않고 있습니다." # 15621325898230881948

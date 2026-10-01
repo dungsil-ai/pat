@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: 4a432e3
   dlc_tech_res: "기술 및 연구" # 1062450317642946545
   dlc_tech_res_desc: "테크 & 레스는 1836년부터 1990년대, 그 이후까지 새로운 시대, 생산 기술 및 산업 역학을 포함한 심오하고 몰입감 있는 기술 발전 시스템을 추가하는 모드입니다." # 8384328505110313641
   dubois_state_trait_volcano: "화산" # 6792708077593121795
@@ -372,35 +373,35 @@
   ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
   ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
   ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
-  ztr_research_center_progress_modifier: "Research Center Programmes"
-  ship_mod_slot_electronics_button_0: "Basic"
-  ship_mod_slot_electronics_button_1: "Advanced"
-  ship_mod_slot_electronics_button_2: "Integrated"
-  ship_mod_slot_missiles_button_0: "Light"
-  ship_mod_slot_missiles_button_1: "Medium"
-  ship_mod_slot_missiles_button_2: "Heavy"
-  ship_battle_against_ship_type_modern_destroyer_accuracy_mult_desc: "$ship_accuracy_add_desc$"
-  ship_battle_against_ship_type_modern_cruiser_accuracy_mult_desc: "$ship_accuracy_add_desc$"
-  ship_battle_against_ship_type_modern_battleship_accuracy_mult_desc: "$ship_accuracy_add_desc$"
-  ship_battle_against_ship_type_nuclear_carrier_accuracy_mult_desc: "$ship_accuracy_add_desc$"
-  ship_battle_against_ship_type_nuclear_submarine_accuracy_mult_desc: "$ship_accuracy_add_desc$"
-  ship_battle_against_ship_type_modern_destroyer_hull_damage_mult_desc: "$ship_hull_damage_add_desc$"
-  ship_battle_against_ship_type_modern_cruiser_hull_damage_mult_desc: "$ship_hull_damage_add_desc$"
-  ship_battle_against_ship_type_modern_battleship_hull_damage_mult_desc: "$ship_hull_damage_add_desc$"
-  ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult_desc: "$ship_hull_damage_add_desc$"
-  ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult_desc: "$ship_hull_damage_add_desc$"
-  ship_type_nuclear_carrier_desc: "A modern carrier able to project air power across oceans for extended deployments. It can also be #i Nuclear-Powered#! for extended range."
-  ship_type_nuclear_submarine_desc: "A modern submarine with long endurance, low visibility, and strategic guided missile capability. It can also be #i Nuclear-Powered#! for extended range."
-  unit_combat_unit_type_modern_light_tanks_defense_mult: "$combat_unit_type_modern_light_tanks$ $unit_defense_mult$"
-  unit_combat_unit_type_modern_light_tanks_defense_mult_desc: "$combat_unit_type_modern_light_tanks$ $unit_defense_mult$"
-  unit_combat_unit_type_modern_heavy_tank_defense_mult: "$combat_unit_type_modern_heavy_tank$ $unit_defense_mult$"
-  unit_combat_unit_type_modern_heavy_tank_defense_mult_desc: "$combat_unit_type_modern_heavy_tank$ $unit_defense_mult$"
-  unit_combat_unit_type_main_battle_tanks_defense_mult: "$combat_unit_type_main_battle_tanks$ $unit_defense_mult$"
-  unit_combat_unit_type_main_battle_tanks_defense_mult_desc: "$combat_unit_type_main_battle_tanks$ $unit_defense_mult$"
-  magyar_linguistic_freedom: "Magyar Linguistic Freedom"
-  ztr_devout_happy_modifier: "Satisfied Clergy"
-  ztr_devout_unhappy_modifier: "Discontented Clergy"
-  DIPLOMATIC_ACCEPTANCE_INTERNAL_TURMOIL: "from them being in default or facing a revolution"
-  DIPLOMATIC_ACCEPTANCE_JINGOISTIC_RULER: "from their form of government"
-  DIPLOMATIC_ACCEPTANCE_ENEMY_NUCLEAR_WEAPONS: "from the other party already possessing nuclear weapons"
-  DIPLOMATIC_ACCEPTANCE_THREAT_OF_MUTALLY_ASSURED_DESTRUCTION: "from the threat of #N mutually assured destruction#! amid very high world tension"
+  ztr_research_center_progress_modifier: "연구 센터 프로그램" # 765628099924757710
+  ship_mod_slot_electronics_button_0: "기초" # 11884452299886114628
+  ship_mod_slot_electronics_button_1: "고급" # 835417650835742317
+  ship_mod_slot_electronics_button_2: "통합" # 17865783917993573886
+  ship_mod_slot_missiles_button_0: "경형" # 17945736675876545780
+  ship_mod_slot_missiles_button_1: "중형" # 7377651229498775580
+  ship_mod_slot_missiles_button_2: "중량형" # 15793188298750861257
+  ship_battle_against_ship_type_modern_destroyer_accuracy_mult_desc: "$ship_accuracy_add_desc$" # 10966206245672368085
+  ship_battle_against_ship_type_modern_cruiser_accuracy_mult_desc: "$ship_accuracy_add_desc$" # 10966206245672368085
+  ship_battle_against_ship_type_modern_battleship_accuracy_mult_desc: "$ship_accuracy_add_desc$" # 10966206245672368085
+  ship_battle_against_ship_type_nuclear_carrier_accuracy_mult_desc: "$ship_accuracy_add_desc$" # 10966206245672368085
+  ship_battle_against_ship_type_nuclear_submarine_accuracy_mult_desc: "$ship_accuracy_add_desc$" # 10966206245672368085
+  ship_battle_against_ship_type_modern_destroyer_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # 15456126926997391274
+  ship_battle_against_ship_type_modern_cruiser_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # 15456126926997391274
+  ship_battle_against_ship_type_modern_battleship_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # 15456126926997391274
+  ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # 15456126926997391274
+  ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # 15456126926997391274
+  ship_type_nuclear_carrier_desc: "대양 너머로 공군력을 투사하여 장기간 배치될 수 있는 현대적인 항공모함입니다. 항속 거리 연장을 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 2438243985678966131
+  ship_type_nuclear_submarine_desc: "긴 항속 거리와 낮은 피탐지성, 전략 유도 미사일 능력을 갖춘 현대적인 잠수함입니다. 항속 거리 연장을 위해 #i 원자력 추진#! 방식을 채택할 수도 있습니다." # 18279029428944693209
+  unit_combat_unit_type_modern_light_tanks_defense_mult: "$combat_unit_type_modern_light_tanks$ $unit_defense_mult$" # 16326419197352502729
+  unit_combat_unit_type_modern_light_tanks_defense_mult_desc: "$combat_unit_type_modern_light_tanks$ $unit_defense_mult$" # 16326419197352502729
+  unit_combat_unit_type_modern_heavy_tank_defense_mult: "$combat_unit_type_modern_heavy_tank$ $unit_defense_mult$" # 1216807512294398808
+  unit_combat_unit_type_modern_heavy_tank_defense_mult_desc: "$combat_unit_type_modern_heavy_tank$ $unit_defense_mult$" # 1216807512294398808
+  unit_combat_unit_type_main_battle_tanks_defense_mult: "$combat_unit_type_main_battle_tanks$ $unit_defense_mult$" # 17013137406390229774
+  unit_combat_unit_type_main_battle_tanks_defense_mult_desc: "$combat_unit_type_main_battle_tanks$ $unit_defense_mult$" # 17013137406390229774
+  magyar_linguistic_freedom: "마자르어 언어적 자유" # 13524170515777207633
+  ztr_devout_happy_modifier: "만족한 성직자" # 8550045902518451672
+  ztr_devout_unhappy_modifier: "불만스러운 성직자" # 15578564660741283001
+  DIPLOMATIC_ACCEPTANCE_INTERNAL_TURMOIL: "그들이 채무불이행 상태이거나 혁명에 직면했기 때문에" # 6658323923445354006
+  DIPLOMATIC_ACCEPTANCE_JINGOISTIC_RULER: "그들의 정부 형태 때문에" # 14952029176413711060
+  DIPLOMATIC_ACCEPTANCE_ENEMY_NUCLEAR_WEAPONS: "상대방이 이미 핵무기를 보유하고 있기 때문에" # 7609487438551603635
+  DIPLOMATIC_ACCEPTANCE_THREAT_OF_MUTALLY_ASSURED_DESTRUCTION: "매우 높은 세계 긴장 상태 속에서 #N 상호확증파괴#!의 위협 때문에" # 6732831270184672874
