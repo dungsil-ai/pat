@@ -1,24 +1,24 @@
 ﻿l_korean:
-  giga_nomad_claim_unowned_nomad_compat_megas: "Claim Unowned Nomad Compatible Megastructures"
-  giga_nomad_claim_unowned_nomad_compat_megas_desc: "If this system contains unowned megastructures which nomads are capable of using, this decision lets us assert our rightful claims."
-  giga_nomad_claim_unowned_nomad_compat_megas_effect: "This will transfer all §Ynomad compatible megastructures§! within this system to our direct control."
-  giga_nomad_claim_unowned_nomad_compat_megas_fail1: "$TRIGGER_FAIL$System must be unclaimed."
-  giga_nomad_claim_unowned_nomad_compat_megas_fail2: "$TRIGGER_FAIL$No unowned megastructures that are nomad compatible in this system."
-  giga_list_category_nomad_warship: "§MNOMAD WARSHIP§!"
-  giga_nomad_war_moon: "Heavy Artillery Platform"
-  giga_nomad_war_moon_plural: "Heavy Artillery Platforms"
-  giga_nomad_war_moon_cap: "$giga_nomad_war_moon$"
-  allow_nomad_war_moon: "§HUnlocks Megastructure:§! $giga_nomad_war_moon$"
-  desc_nomad_war_moon: "In order to counter these \"celestials\", we have devised a prototype warship made to lay them low through the application of judicious amounts of firepower. This does leave it a little more fragile than would be appreciated, but so long as it is properly escorted, that vulnerability will not be relevant."
-  giga_nomad_war_moon_section_alpha: "Spinal Megaweapon"
-  giga_nomad_war_moon_section_beta: "Secondary Batteries"
-  giga_nomad_war_moon_section_charlie: "Escort Hangars"
-  giga_nomad_war_moon_section_delta: "Counterfire Batteries"
-  giga_tech_nomad_war_moon_pre: "$giga_tech_war_moon_1$"
-  giga_tech_nomad_war_moon_pre_desc: "$giga_tech_war_moon_1_desc$"
-  giga_tech_nomad_war_moon: "Anti-Celestial Prototype"
-  giga_tech_nomad_war_moon_desc: "A prototype design, rushed to counter the threat of $giga_war_moon_plural$. Less durable, but with a weapon specialized to defeat them."
-  GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL: "Purgation Lance"
+  giga_nomad_claim_unowned_nomad_compat_megas: "소유자 없는 유목민 호환 거대건축물 영유권 주장" # 3436493089386037577
+  giga_nomad_claim_unowned_nomad_compat_megas_desc: "이 성계에 유목민이 사용할 수 있는 소유자 없는 거대건축물이 있는 경우, 이 결정을 통해 정당한 영유권을 주장할 수 있습니다." # 13367416677921822968
+  giga_nomad_claim_unowned_nomad_compat_megas_effect: "이 성계 내의 모든 §Y유목민 호환 거대건축물§!이 우리 직속 통제로 이전됩니다." # 8214276214899418657
+  giga_nomad_claim_unowned_nomad_compat_megas_fail1: "$TRIGGER_FAIL$성계는 주인이 없어야 합니다." # 11160348320888012898
+  giga_nomad_claim_unowned_nomad_compat_megas_fail2: "$TRIGGER_FAIL$이 성계에 유목민과 호환되는 소유자 없는 거대건축물이 없습니다." # 5719864648874391011
+  giga_list_category_nomad_warship: "§MNOMAD WARSHIP§!" # 9408169327943270341
+  giga_nomad_war_moon: "중포병 플랫폼" # 16665988754559456459
+  giga_nomad_war_moon_plural: "중포병 플랫폼" # 2708516317839824075
+  giga_nomad_war_moon_cap: "$giga_nomad_war_moon$" # 6285906506283808633
+  allow_nomad_war_moon: "§H거대건축물 해제:§! $giga_nomad_war_moon$" # 8692459128535915936
+  desc_nomad_war_moon: "저 거대한 \"천체\"들에 대항하기 위해, 우리는 과감한 화력 투사로 그들을 무릎 꿇릴 프로토타입 전함 설계안을 고안해 냈습니다. 이로 인해 내구성이 다소 취약해졌지만, 적절한 호위가 동반되는 한 그러한 약점은 문제가 되지 않을 것입니다." # 12132304394214650357
+  giga_nomad_war_moon_section_alpha: "척추형 메가웨폰" # 5494968168907189010
+  giga_nomad_war_moon_section_beta: "보조 포대" # 1020360079697151841
+  giga_nomad_war_moon_section_charlie: "호위 격납고" # 12221769988988709636
+  giga_nomad_war_moon_section_delta: "대응사격 포대" # 1328703736149155943
+  giga_tech_nomad_war_moon_pre: "$giga_tech_war_moon_1$" # 14001238290878014948
+  giga_tech_nomad_war_moon_pre_desc: "$giga_tech_war_moon_1_desc$" # 7304702351438353567
+  giga_tech_nomad_war_moon: "반천체 프로토타입" # 4538546003966524485
+  giga_tech_nomad_war_moon_desc: "$_giga_war_moon_plural$의 위협에 대항하기 위해 급조된 프로토타입 설계입니다. 내구성은 떨어지지만, 그들을 격파하기에 특화된 무기를 탑재하고 있습니다." # 11066365435705402436
+  GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL: "정화 창" # 5255225506499505363
   GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL_DESC: "A weapon specifically created to crack open planetary crust, and anything protecting it."
   GIGA_NOMAD_WAR_MOON_COMPUTER: "$giga_nomad_war_moon$ Combat Computer"
   GIGA_NOMAD_WAR_MOON_COMPUTER_DESC: "The $giga_nomad_war_moon$ will stay at very long range (§Y3250§!) range and fire its array of weapons at available targets."
@@ -39,92 +39,92 @@
   nomad_war_moon_restored_MEGASTRUCTURE_DETAILS: "$war_moon_0_MEGASTRUCTURE_DETAILS$"
   giga_nomad_dialog.000.name: "$giga_nomad_war_moon$ Construction Site Built"
   giga_nomad_dialog.000.desc: "The Construction Site for a future $giga_nomad_war_moon$ is now complete. This deep-space construction site will serve as a staging depot in order to begin constructing the $giga_nomad_war_moon$ itself.\n\n§INOTE: Don't forget to design the $giga_nomad_war_moon$ in the ship designer!§!"
-  giga_nomad_dialog.000.a: "Marvelous."
-  giga_nomad_dialog.002.name: "$giga_nomad_war_moon$ Hull Complete"
-  giga_nomad_dialog.002.desc: "The hull of the $giga_nomad_war_moon$ is now complete! Everything except the core weapons systems and reactor has been installed and tested."
-  giga_nomad_dialog.002.a: "One step closer."
-  giga_nomad_dialog.004.name: "A Gun Pointed At the Head of The Moon"
-  giga_nomad_dialog.004.desc: "We have done it. With the $giga_nomad_war_moon$ main weapon operational, this monstrous spaceship is now operational. A prototype to counter $giga_war_moon_plural$, the data will be invaluable in creating more potent countermeasures. The ship has engaged its engines, and is now ready to join our fleets."
-  giga_nomad_dialog.004.a: "Truly a marvelous accomplishment."
-  MESSAGE_NOMAD_WAR_MOON_DESTROYED: "$giga_nomad_war_moon$ Destroyed"
-  MESSAGE_NOMAD_WAR_MOON_DESTROYED_DESC: "The $NOMAD_CELESTIAL_WARSHIP_NAME|Y$ $giga_nomad_war_moon$ has been destroyed by the $ENEMY_NAME|Y$ in the $SYSTEM_NAME|Y$ system.\n\nIt has been reduced to an immobile wreck which may be repaired if we have the necessary resources and are friendly with the system owner, if they exist."
-  giga_nomad_dialog.010.name: "$giga_nomad_war_moon$ Dismantled"
-  giga_nomad_dialog.010.desc: "We have dismantled the incomplete $giga_nomad_war_moon$ found within the [giga_debris_system.GetName] system."
-  giga_nomad_dialog.010.a: "Good."
-  giga_nomad_dialog.012.name: "$Wrecked $giga_nomad_war_moon$ Scrapped"
-  giga_nomad_dialog.012.desc: "Our scavenging teams have now completed the dismantlement of the ruined $giga_nomad_war_moon$ found within the [giga_debris_system.GetName] system. The dismantlement of the $giga_nomad_war_planet$'s colossal weapons array and movement systems has netted us significant amounts of alloys and engineering research."
-  giga_nomad_dialog.012.a: "Good."
-  giga_nomad_actions.501.name: "$giga_nomad_war_moon$ Repaired!"
-  giga_nomad_actions.501.desc: "Wonderful news! We have managed to restore the ruined $giga_nomad_war_moon$ in the §Y[from.GetName]§! system. It has taken quite a lot of work, and most of its internals had to be completely rebuilt from scratch, but this mighty warship is now operational once more."
-  giga_nomad_actions.501.a: "Wonderful."
-  giga_nomad_war_planet: "Super-Heavy Siegecraft"
-  giga_nomad_war_planet_plural: "Super-Heavy Siegecraft"
-  giga_nomad_war_planet_cap: "$giga_nomad_war_planet$"
-  allow_nomad_war_planet: "§HUnlocks Megastructure:§! $giga_nomad_war_planet$"
-  desc_nomad_war_planet: "A supermassive warship optimized for combat against celestials. Made of planetary amounts of alloys, and equipped with a weapon that can obliterate §Ranything.§!"
-  giga_nomad_war_planet_section_alpha: "Celestial Decimator"
-  giga_nomad_war_planet_section_beta: "Reinforced Primary Weapons"
-  giga_nomad_war_planet_section_charlie: "Reinforced Primary Weapons"
-  giga_nomad_war_planet_section_delta: "Macro-Fabricator Hangars"
-  giga_nomad_war_planet_section_echo: "Secondary Batteries"
-  giga_tech_nomad_war_planet: "Super-Planetary Counter Doctrine"
-  giga_tech_nomad_war_planet_desc: "The $giga_nomad_war_moon$ was thought to be enough to counter the weaponized celestials. The arms race will always continue, and we must think bigger and better. Combining several incredibly advanced technologies, will allow us to create a warship of immense size. Such an incredibly massive spaceship would be near-indestructible, and could wipe out entire Fallen Empires by itself."
-  GIGA_SUPER_OMEGA_LANCE_1_NOMAD: "Ohrmuzd Heavy Purgation Lance"
-  GIGA_SUPER_OMEGA_LANCE_1_NOMAD_DESC: "A massive energy lance directly fed with city wide conduits from the main reactor, made to serve as a massive general purpose weapon."
-  GIGA_PLANETARY_RAILGUN_NOMAD: "Ahzek Prototype Celestial Penetrator"
-  GIGA_PLANETARY_RAILGUN_NOMAD_DESC: "A massive railgun that has been scaled up thousandfold, specially formulated to crack through the strongest defense, whether specialized alloys or mundane crust."
-  GIGA_PLANET_MISSILE_1_NOMAD: "Macro Missile Batteries"
-  GIGA_PLANET_MISSILE_1_NOMAD_DESC: "Massive rows of missile batteries, hidden within large armored silos, capable of massive destruction."
-  GIGA_NOMAD_WAR_PLANET_COMPUTER: "$giga_nomad_war_planet$ Combat Computer"
-  GIGA_NOMAD_WAR_PLANET_COMPUTER_DESC: "The $giga_nomad_war_planet$ will stay at very long range (§Y300§!) range and fire its array of weapons at available targets."
-  REACTOR_NOMAD_WAR_PLANET: "Superheavy Reactor"
-  REACTOR_NOMAD_WAR_PLANET_DESC: "A minor planetoid sized reactor, greedily drawn from to feed the $giga_nomad_war_planet$."
-  nomad_war_planet_0: "$giga_nomad_war_planet$ Construction Site"
-  nomad_war_planet_0_DESC: "The construction site for a future $giga_nomad_war_planet$, a massive warship made to fight celestials on their own terms."
-  nomad_war_planet_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_gigastructure$ - $giga_list_category_nomad_warship$ - $giga_list_category_ship_production$\nA massive warship made to fight celestials on their own terms.\n§LThe $giga_nomad_war_planet_cap$ is the fully realized prototype of the $giga_nomad_war_moon$, fixing its defensive weaknesses while also improving its already incredible lethality."
-  nomad_war_planet_1: "$giga_nomad_war_planet$ Hull"
-  nomad_war_planet_1_DESC: "The $giga_nomad_war_planet$'s internal systems have been installed the vast hull. A gigantically gigantic reactor is installed within the armored citadel, capable of powering the most powerful weapons."
-  nomad_war_planet_2: "$giga_nomad_war_planet$ Defensive Arrays"
-  nomad_war_planet_2_DESC: "Installed defensive systems allow this massive warship to absorb damage that would sunder worlds."
-  nomad_war_planet_3: "$giga_nomad_war_planet$"
-  nomad_war_planet_3_DESC: "A completed $giga_nomad_war_planet$, ready to take to the stars."
-  nomad_war_planet_debris: "Wrecked $giga_nomad_war_planet$"
-  nomad_war_planet_debris_DESC: "The remnants of a massive warship built by an advanced civilization, which has remained largely intact due to its massively armored hull. It once possessed some of the largest weaponry known to the galaxy, and although it has taken quite the beating, it might be possible to restore this fearsome craft to its former glory, provided we have plenty of resources and the technology to do so."
-  nomad_war_planet_debris_MEGASTRUCTURE_DETAILS: "$nomad_war_planet_0_MEGASTRUCTURE_DETAILS$"
-  nomad_war_planet_restored: "$nomad_war_planet_3$"
-  nomad_war_planet_restored_DESC: "$nomad_war_planet_3_DESC$"
-  nomad_war_planet_restored_MEGASTRUCTURE_DETAILS: "$war_planet_0_MEGASTRUCTURE_DETAILS$"
-  giga_nomad_dialog.050.name: "$giga_nomad_war_planet$ Construction Site Built"
-  giga_nomad_dialog.050.desc: "The Construction Site for a future $giga_nomad_war_planet$ is now complete. This deep-space construction site will serve as a staging depot in order to begin constructing the $giga_nomad_war_planet$ itself.\n\n§INOTE: Don't forget to design the $giga_nomad_war_planet$ in the ship designer!§!"
-  giga_nomad_dialog.050.a: "Marvelous."
-  giga_nomad_dialog.052.name: "$giga_nomad_war_planet$ Hull Complete"
-  giga_nomad_dialog.052.desc: "The hull of the $giga_nomad_war_planet$ is now complete! All general systems have been installed, including the massive planetary scale reactor, capable of powering the ship's future thrusters and main weapons."
-  giga_nomad_dialog.052.a: "One step closer."
-  giga_nomad_dialog.053.name: "$giga_nomad_war_planet$ Defensive Systems Complete"
-  giga_nomad_dialog.053.desc: "Our $giga_nomad_war_planet$'s defensive systems have been completed. Kilometers thick steel stands behind planetary strength shields, all mounted on a massive frame with an equally massive and over-engineered FTL Drive. The final step is to install the weapons systems."
-  giga_nomad_dialog.053.a: "We are close."
-  giga_nomad_dialog.054.name: "The Chariot of Judgement is at Hand"
-  giga_nomad_dialog.054.desc: "We have done it. With the $giga_nomad_war_planet$ main weapon arrays completed, this monstrous spaceship is now operational. Over ten thousand kilometers long, this truly massive construct is the logical evolution of the the $giga_nomad_war_moon$. The ship has engaged its engines, and is now ready to join our fleets."
-  giga_nomad_dialog.054.a: "Truly a marvelous accomplishment."
-  MESSAGE_NOMAD_WAR_PLANET_DESTROYED: "$giga_nomad_war_planet$ Destroyed"
-  MESSAGE_NOMAD_WAR_PLANET_DESTROYED_DESC: "The $NOMAD_CELESTIAL_WARSHIP_NAME|Y$ $giga_nomad_war_planet$ has been destroyed by the $ENEMY_NAME|Y$ in the $SYSTEM_NAME|Y$ system.\n\nIt has been reduced to an immobile wreck which may be repaired if we have the necessary resources and are friendly with the system owner, if they exist."
-  giga_nomad_dialog.060.name: "$giga_nomad_war_planet$ Dismantled"
-  giga_nomad_dialog.060.desc: "We have dismantled the incomplete $giga_nomad_war_planet$ found within the [giga_debris_system.GetName] system."
-  giga_nomad_dialog.060.a: "Good."
-  giga_nomad_dialog.063.name: "Wrecked $giga_nomad_war_planet$ Scrapped"
-  giga_nomad_dialog.063.desc: "Our scavenging teams have now completed the dismantlement of the ruined $giga_nomad_war_planet$ found within the [giga_debris_system.GetName] system. The dismantlement of the $giga_nomad_war_planet$'s colossal weapons array and movement systems has netted us significant amounts of alloys and engineering research."
-  giga_nomad_dialog.063.a: "Good."
-  giga_nomad_actions.551.name: "$giga_nomad_war_planet$ Repaired!"
-  giga_nomad_actions.551.desc: "Wonderful news! We have managed to restore the ruined $giga_nomad_war_planet$ in the §Y[from.GetName]§! system. It has taken quite a lot of work, and most of its internals had to be completely rebuilt from scratch, but this mighty warship is now operational once more."
-  giga_nomad_actions.551.a: "Wonderful."
-  giga_nomad_war_planet_disband_activity_key: "Disband this $giga_nomad_war_planet$"
-  giga_nomad_war_planet_disband_title: "Disband this $giga_nomad_war_planet$"
-  giga_nomad_war_planet_disband_button: "Due to hero ships not being disbandable, this will let you destroy your own $giga_nomad_war_planet$.\n\n§ROBVIOUSLY THIS KILLS THE SHIP§!"
-  giga_nomad_actions.560.name: "Disband [this.fleet.GetName]?"
-  giga_nomad_actions.560.desc: "Do you wish to disband the $giga_nomad_war_planet$ [this.fleet.GetName]?"
-  giga_nomad_actions.560.no: "I WANT TO KEEP MY SHIP"
-  giga_nomad_actions.560.yes: "§RBLOW IT UP!§!"
-  giga_nomad_actions.560.yes.tt: "§ROBVIOUSLY THIS KILLS THE SHIP, WITH NO DEBRIS§!"
+  giga_nomad_dialog.000.a: "놀랍군요." # 11372186741735424273
+  giga_nomad_dialog.002.name: "$giga_nomad_war_moon$ 선체 건조 완료" # 1995607243706489720
+  giga_nomad_dialog.002.desc: "$giga_nomad_war_moon$의 선체가 이제 완성되었습니다! 핵심 무기 체계와 원자로를 제외한 모든 부품의 설치와 테스트가 끝났습니다." # 4843774862291222080
+  giga_nomad_dialog.002.a: "목표에 한 걸음 더 다가갔습니다." # 1585297630895708376
+  giga_nomad_dialog.004.name: "달의 머리에 겨눈 총구" # 5249132927488363370
+  giga_nomad_dialog.004.desc: "해냈습니다. $giga_nomad_war_moon$의 주무기가 작동함에 따라, 이 거대한 우주선이 이제 가동을 시작했습니다. $giga_war_moon_plural$에 대항하기 위한 시제품으로서, 이 데이터는 더욱 강력한 대항책을 만드는 데 귀중한 자산이 될 것입니다. 우주선이 엔진을 가동했으며, 이제 우리 함대에 합류할 준비가 되었습니다." # 956158248801270721
+  giga_nomad_dialog.004.a: "진으로 놀라운 업적입니다." # 679024418553916007
+  MESSAGE_NOMAD_WAR_MOON_DESTROYED: "$giga_nomad_war_moon$ 파괴됨" # 6257379041992045567
+  MESSAGE_NOMAD_WAR_MOON_DESTROYED_DESC: "$SYSTEM_NAME|Y$ 성계에서 $NOMAD_CELESTIAL_WARSHIP_NAME|Y$ $giga_nomad_war_moon$이(가) $ENEMY_NAME|Y$에 의해 파괴되었습니다.\n\n이 거함은 움직일 수 없는 잔해가 되었으며, 필요한 자원을 보유하고 있고 성계 소유자와 우호적인 관계라면(소유자가 존재하는 경우) 수리할 수 있습니다." # 8472169219669474524
+  giga_nomad_dialog.010.name: "$giga_nomad_war_moon$ 해체됨" # 11909636752321104996
+  giga_nomad_dialog.010.desc: "[giga_debris_system.GetName] 성계에서 발견된 미완성의 $giga_nomad_war_moon$을(를) 해체했습니다." # 12765789450476929153
+  giga_nomad_dialog.010.a: "좋습니다." # 843958112380023394
+  giga_nomad_dialog.012.name: "파괴된 $giga_nomad_war_moon$ 해체 완료" # 11780954951892540415
+  giga_nomad_dialog.012.desc: "우리 해체 팀이 [giga_debris_system.GetName] 성계 내에서 발견된 폐허가 된 $giga_nomad_war_moon$의 해체를 완료했습니다. $giga_nomad_war_planet$의 거대한 무기 배열과 이동 시스템을 해체한 결과, 상당한 양의 합금과 공학 연구를 얻었습니다." # 5248908449589851855
+  giga_nomad_dialog.012.a: "좋습니다." # 843958112380023394
+  giga_nomad_actions.501.name: "$giga_nomad_war_moon$ 수리 완료!" # 4668746171595950064
+  giga_nomad_actions.501.desc: "멋진 소식입니다! §Y[from.GetName]§! 성계에 있던 폐허가 된 $giga_nomad_war_moon$을(를) 성공적으로 복구했습니다. 상당한 노력이 필요했으며 내부 부품 대부분을 처음부터 다시 만들어야 했지만, 이 강력한 전함이 이제 다시 가동을 시작했습니다." # 2012515883071079736
+  giga_nomad_actions.501.a: "훌륭합니다." # 13357587260733090656
+  giga_nomad_war_planet: "초중량 공성함" # 11194893096946116280
+  giga_nomad_war_planet_plural: "초중량 공성함" # 11194893096946116280
+  giga_nomad_war_planet_cap: "$giga_nomad_war_planet$" # 1296072002870940554
+  allow_nomad_war_planet: "§H거대 건축물 해제:§! $giga_nomad_war_planet$" # 4897749441233010224
+  desc_nomad_war_planet: "천체들과의 전투에 최적화된 초대형 전함입니다. 행성 단위의 합금으로 제작되었으며, §R무엇이든§! 말살할 수 있는 무기를 장착하고 있습니다." # 15734341211451318322
+  giga_nomad_war_planet_section_alpha: "천체 말살자" # 2630713550345766557
+  giga_nomad_war_planet_section_beta: "강화형 주력 무기" # 15059709971615781627
+  giga_nomad_war_planet_section_charlie: "강화형 주력 무기" # 15059709971615781627
+  giga_nomad_war_planet_section_delta: "대형 함재기 격납고" # 10491333560499635352
+  giga_nomad_war_planet_section_echo: "보조 포대" # 1020360079697151841
+  giga_tech_nomad_war_planet: "초행성급 대항 교리" # 9623494699072057985
+  giga_tech_nomad_war_planet_desc: "$giga_nomad_war_moon$ 정도면 무장한 천체들을 상대하기에 충분할 것이라 여겨졌습니다. 군비 경쟁은 언제나 계속될 것이며, 우리는 더 크고 훌륭한 것을 생각해야 합니다. 여러 가지 초고도 기술을 결합하면 엄청난 크기의 전함을 건조할 수 있을 것입니다. 이처럼 엄청나게 거대한 우주선은 거의 파괴 불가능할 것이며, 단독으로 몰락한 제국 전체를 쓸어버릴 수 있을 것입니다." # 2736738865375431441
+  GIGA_SUPER_OMEGA_LANCE_1_NOMAD: "오르무즈드 중형 숙청 랜스" # 9543895330238795475
+  GIGA_SUPER_OMEGA_LANCE_1_NOMAD_DESC: "주 반응로에서 도시 규모의 도관으로 직접 에너지를 공급받는 거대한 범용 주력 무기입니다." # 7743249459498393360
+  GIGA_PLANETARY_RAILGUN_NOMAD: "아제크 프로토타입 천체 관통기" # 14243285862766347838
+  GIGA_PLANETARY_RAILGUN_NOMAD_DESC: "특수 합금부터 평범한 지표면까지 가장 강력한 방어선을 뚫어버릴 수 있도록 특수 설계된 수천 배 규모의 거대 레일건입니다." # 14893366689416628675
+  GIGA_PLANET_MISSILE_1_NOMAD: "대형 미사일 배터리" # 8510236620829731592
+  GIGA_PLANET_MISSILE_1_NOMAD_DESC: "거대한 장갑 격납고 내부에 숨겨진 막대한 파괴력을 지닌 대규모 미사일 배터리입니다." # 7695213039483319663
+  GIGA_NOMAD_WAR_PLANET_COMPUTER: "$giga_nomad_war_planet$ 전투 컴퓨터" # 12535850850337692245
+  GIGA_NOMAD_WAR_PLANET_COMPUTER_DESC: "$giga_nomad_war_planet$은(는) 아주 먼 거리(§Y300§!)를 유지하며 가용한 목표물들을 향해 무기 일제 사격을 가합니다." # 4153130629422025498
+  REACTOR_NOMAD_WAR_PLANET: "초중량 반응로" # 13549482890993428921
+  REACTOR_NOMAD_WAR_PLANET_DESC: "$giga_nomad_war_planet$에 에너지를 공급하기 위해 소행성만 한 크기의 반응로에서 막대한 전력을 탐욕스럽게 끌어옵니다." # 1024921334058809888
+  nomad_war_planet_0: "$giga_nomad_war_planet$ 건설 현장" # 14149805161076212443
+  nomad_war_planet_0_DESC: "천체들과 대등하게 맞서 싸우기 위해 건조되는 거대한 전함인 미래의 $giga_nomad_war_planet$ 건조 현장입니다." # 13745898067872370358
+  nomad_war_planet_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_gigastructure$ - $giga_list_category_nomad_warship$ - $giga_list_category_ship_production$\n천체들에 맞서 싸우기 위해 그들의 방식을 그대로 본떠 건조된 거대한 전함입니다.\n§L$giga_nomad_war_planet_cap$은 $giga_nomad_war_moon$의 온전한 완성형 시제품으로, 방어적 약점을 보완하는 동시에 이미 경이로운 수준이었던 살상력을 더욱 끌어올렸습니다.#!" # 14468645321093555745
+  nomad_war_planet_1: "$giga_nomad_war_planet$ 선체" # 8451203033348089552
+  nomad_war_planet_1_DESC: "$giga_nomad_war_planet$의 내부 시스템이 방대한 선체에 설치되었습니다. 장갑 성채 내부에는 가장 강력한 무기에 전력을 공급할 수 있는 거대하고도 거대한 원자로가 설치되어 있습니다." # 3642773621964965754
+  nomad_war_planet_2: "$giga_nomad_war_planet$ 방어 배열" # 285258570960580521
+  nomad_war_planet_2_DESC: "설치된 방어 체계 덕분에, 이 거대한 군함은 행성마저 두 갈래로 쪼갤 만한 피해를 흡수할 수 있습니다." # 13066388355370662216
+  nomad_war_planet_3: "$giga_nomad_war_planet$" # 1296072002870940554
+  nomad_war_planet_3_DESC: "성간 항해를 시작할 준비가 완료된, 건설된 $giga_nomad_war_planet$." # 8648626757112909462
+  nomad_war_planet_debris: "파괴된 $giga_nomad_war_planet$" # 16628343736943928907
+  nomad_war_planet_debris_DESC: "압도적인 장갑 선체 덕분에 대부분 형태가 온전하게 보존된, 고도 문명이 건조한 거대 전함의 잔해입니다. 한때 은하계에서 손꼽히는 대형 무장들을 탑재했던 배로, 심각한 손상을 입긴 했으나 충분한 자원과 관련 기술이 뒷받침된다면 이 공포스러운 함선을 예전의 영광으로 되돌리는 것도 불가능하지 않을 것입니다." # 4249620680366822014
+  nomad_war_planet_debris_MEGASTRUCTURE_DETAILS: "$nomad_war_planet_0_MEGASTRUCTURE_DETAILS$" # 7308942671353540764
+  nomad_war_planet_restored: "$nomad_war_planet_3$" # 14536025902342441064
+  nomad_war_planet_restored_DESC: "$nomad_war_planet_3_DESC$" # 12020625523513207937
+  nomad_war_planet_restored_MEGASTRUCTURE_DETAILS: "$war_planet_0_MEGASTRUCTURE_DETAILS$" # 7017775820594419530
+  giga_nomad_dialog.050.name: "$giga_nomad_war_planet$ 건설 현장 완공" # 6436781724510784289
+  giga_nomad_dialog.050.desc: "미래의 $giga_nomad_war_planet$(으)로 향할 건설 현장이 완공되었습니다. 이 심우도 건설 현장은 $giga_nomad_war_planet$ 본체의 건조를 개시하기 위한 전진 기지 역할을 수행하게 될 것입니다.\n\n§INOTE: 함선 설계창에서 $giga_nomad_war_planet$ 설계를 잊지 마십시오!§!" # 2877988155350934864
+  giga_nomad_dialog.050.a: "놀랍군요." # 11372186741735424273
+  giga_nomad_dialog.052.name: "$giga_nomad_war_planet$ 선체 건조 완료" # 5421576726001852026
+  giga_nomad_dialog.052.desc: "$giga_nomad_war_planet$의 선체가 이제 완성되었습니다! 함선의 미래 추진기와 주포에 전력을 공급할 수 있는 거대한 행성 규모의 원자로를 포함한 모든 일반 시스템이 설치되었습니다." # 5899510462706357236
+  giga_nomad_dialog.052.a: "목표에 한 걸음 더 다가갔습니다." # 1585297630895708376
+  giga_nomad_dialog.053.name: "$giga_nomad_war_planet$ 방어 체계 완료" # 10168685999175437323
+  giga_nomad_dialog.053.desc: "우리의 $giga_nomad_war_planet$ 방어 체계가 완성되었습니다. 수 킬로미터 두께의 강철이 행성급 강화 보호막 뒤에 자리 잡고 있으며, 이 모든 것은 거대한 골조와 그에 걸맞게 과설계된 초광속(FTL) 드라이브 위에 탑재되어 있습니다. 마지막 단계는 무기 체계를 설치하는 것입니다." # 5989456327909100135
+  giga_nomad_dialog.053.a: "거의 다 왔습니다." # 4040116817873436816
+  giga_nomad_dialog.054.name: "심판의 전차가 도래했다" # 4985146379624329556
+  giga_nomad_dialog.054.desc: "우리가 해냈습니다. $giga_nomad_war_planet$ 주포 배열이 완성됨에 따라, 이 거대한 우주선이 이제 운용 준비를 마쳤습니다. 길이가 1만 킬로미터를 넘는 이 진정으로 거대한 구조물은 $giga_nomad_war_moon$의 논리적 진화형입니다. 함선이 엔진을 가동했으며, 이제 우리 함대에 합류할 준비가 되었습니다." # 14181436744263060146
+  giga_nomad_dialog.054.a: "진으로 놀라운 업적입니다." # 679024418553916007
+  MESSAGE_NOMAD_WAR_PLANET_DESTROYED: "$giga_nomad_war_planet$ 파괴됨" # 13414512773412535717
+  MESSAGE_NOMAD_WAR_PLANET_DESTROYED_DESC: "$SYSTEM_NAME|Y$ 성계에서 $ENEMY_NAME|Y$에 의해 $NOMAD_CELESTIAL_WARSHIP_NAME|Y$ $giga_nomad_war_planet$이(가) 파괴되었습니다.\n\n이 거함은 움직이지 못하는 잔해로 전락했으며, 필요한 자원을 확보하고 성계 소유자와 우호적인 관계라면(소유자가 존재할 경우) 수리할 수 있습니다." # 8133632775358861089
+  giga_nomad_dialog.060.name: "$giga_nomad_war_planet$ 해체됨" # 1198286614390845409
+  giga_nomad_dialog.060.desc: "[giga_debris_system.GetName]계에서 발견한 미완성의 $giga_nomad_war_planet$을(를) 해체했습니다." # 9880677259991994733
+  giga_nomad_dialog.060.a: "좋습니다." # 843958112380023394
+  giga_nomad_dialog.063.name: "잔해 상태의 $giga_nomad_war_planet$ 해체됨" # 13358996922342971153
+  giga_nomad_dialog.063.desc: "우리의 수색 팀이 [giga_debris_system.GetName] 성계에서 발견된 파괴된 $giga_nomad_war_planet$의 해체를 완료했습니다. $giga_nomad_war_planet$의 거대한 무기 체계와 이동 시스템을 해체한 덕분에 상당량의 합금과 공학 연구 데이터를 확보할 수 있었습니다." # 13522997341183430040
+  giga_nomad_dialog.063.a: "좋습니다." # 843958112380023394
+  giga_nomad_actions.551.name: "$giga_nomad_war_planet$ 수리 완료!" # 8042895993759180247
+  giga_nomad_actions.551.desc: "멋진 소식입니다! §Y[from.GetName]§! 성계에 있는 폐허가 된 $giga_nomad_war_planet$을 복구하는 데 성공했습니다. 상당한 작업이 소요되었으며 내부 구조의 대부분을 완전히 처음부터 다시 구축해야 했지만, 이제 이 거대한 전함이 다시 가동될 준비를 마쳤습니다." # 6088027355769395722
+  giga_nomad_actions.551.a: "훌륭합니다." # 13357587260733090656
+  giga_nomad_war_planet_disband_activity_key: "이 $giga_nomad_war_planet$을(를) 해산합니다." # 4513509361756525799
+  giga_nomad_war_planet_disband_title: "이 $giga_nomad_war_planet$을(를) 해산합니다." # 4513509361756525799
+  giga_nomad_war_planet_disband_button: "영웅 함선은 해산할 수 없으므로, 이를 통해 자신의 $giga_nomad_war_planet$을(를) 파괴할 수 있습니다.\n\n§R당연히 함선이 파괴됩니다§!" # 5525719055586507138
+  giga_nomad_actions.560.name: "[this.fleet.GetName] 함대를 해산하시겠습니까?" # 3502394394948603210
+  giga_nomad_actions.560.desc: "$giga_nomad_war_planet$ [this.fleet.GetName]을(를) 해산하시겠습니까?" # 11510798687162590297
+  giga_nomad_actions.560.no: "내 함선을 유지하고 싶다" # 4475651524799958433
+  giga_nomad_actions.560.yes: "§R날려버려라!§!" # 11364044822326687437
+  giga_nomad_actions.560.yes.tt: "§R당연히 함선이 파괴되며, 파편은 남지 않습니다§!" # 8843334610010181526
   giga_tech_arkship_neutronium_harvester: "$giga_tech_neutronium_gigaforge$" # 15675661280339453702
   giga_tech_arkship_neutronium_harvester_desc: "$arkship_cap_plural$에게 $pc_neutron_star_plural$와 같은 항성 잔해를 채굴할 수단을 제공함으로써, 우리는 앞으로 수억 년 동안 귀중한 합금의 안정적인 공급원을 보장할 수 있습니다." # 1964763213089507739
   sm_giga_arkship_neutronium_harvester: "질량 중성자 포획기" # 17606977429733315084

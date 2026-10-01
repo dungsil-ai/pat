@@ -1,359 +1,359 @@
 ﻿l_korean:
-  giga_katzen.7000.name: "Strategic Shifts on Flusion"
-  giga_katzen.7000.desc: "Recent reports from the Katzenartig Imperium all suggest that a strategic and political shift is underway. The Kaiser seems to believe that Flusion's rule has expanded far enough for the time being, and is ordering his aides to draft an array of plans for substantial administrative restructuring.\n\nWhile we shouldn't expect anything like a renunciation of Katzen militarism, it seems a respite is on the horizon for free nations on the Imperium's borders - and a tighter grip is closing for those who are already under the Kaiser's thumb.\n\nPractically, this means the Kaiser is seeking to wind down ongoing conflicts in the coming years, and will reign in his relentless expansionism. We should review the galactic situation with our new intel in case this provides any opportunities."
-  giga_katzen.7000.a: "Very welcome news."
-  giga_katzen.7000.a.tooltip: "The Katzens are too preoccupied to give external diplomacy as much attention, §Rhalving§! the likelihood of §YKatzen Attachés§! increasing opinion during the §BKatzen Reformation§!."
-  giga_katzen.7000.b: "An opportunity to grow closer to Flusion?"
-  giga_katzen.7000.c: "We're running out of time to escape Flusion's control..."
-  giga_katzen.7000.d: "Fudge numbers to undermine their bureaucracy's planning."
-  katzen_instability_up: "This will §Gincrease§! the chance of the Imperium suffering potentially-fatal instability."
-  katzen_instability_up_lots: "This will §Gsignificantly increase§! the chance of the Imperium suffering potentially-fatal instability."
-  katzen_instability_down: "This will §Rdecrease§! the chance of the Imperium suffering potentially-fatal instability."
-  giga_katzen.7001.name: "Katzens Propose Peace"
-  giga_katzen.7001.desc: "High-level incoming communications from the Katzenartig Imperium are proposing that we end our war with them, leaving the borders as they currently stand. While this is an unusual proposal from the notoriously violent and expansionistic Katzens, it isn't wholly unexpected in light of their recent shift from external to internal affairs.\n\nThe peace offer seems genuine, but the Katzens have made it clear that they aren't simply going soft, and are prepared to continue the war with their full effort should we refuse. Of course, if we're feeling confident, we could continue fighting for now, and ask them for peace when we're in a more favourable position... or not give them peace at all."
-  giga_katzen.7001.a: "Continue fighting."
-  giga_katzen.7001.militarist.a: "They might be losing their nerve, but we aren't."
-  giga_katzen.7001.b: "Begin the ceasefire."
-  giga_katzen.7001.pacifist.b: "Finally, a moment of reason from them."
-  giga_katzen.7002.name: "Katzenartig Reformation Begins"
-  giga_katzen.7002.desc: "Increasingly public information from the Katzenartig Imperium confirms that the Kaiser has gone ahead with his once-clandestine reformation plans. According to our best intel, we expect the Kaiser to spend roughly two decades occupied with enacting a range of far-reaching administrative reforms designed to consolidate Flusion's planetside and imperial authority.\n\nReform is, of course, risky business, with programs such as accelerating Katzenification and reshuffling regional political privileges particularly likely to cause backlash. Whether the Kaiser can come out of this era with his reign strengthened will depend heavily on whether his citizens and subordinates feel he has fulfilled his promises..."
-  giga_katzen.7002.a: "Let's hope they stay this way..."
-  giga_katzen.7002.b: "Order and we will obey."
-  giga_katzen.7002.c: "We can only hope it all unravels."
-  giga_katzen.7002.d: "I'm sure we could mishandle implementing a few reforms..."
-  giga_katzen.7012.name: "Instability in Katzenartig Imperium!"
-  giga_katzen.7012.desc: "It appears that the Katzenartig citizenry don't feel the Kaiser is delivering his utopian vision. Open unrest has broken out on the capital itself, and while the Kaiser has responded with a heavy hand to reassert his authority, a spike in high-profile treason convictions suggests that not all in the Imperium's upper echelons are enthusiastic about enforcing the Kaiser's will.\n\nDespite this test to the Kaiser's rule, it's still too soon to say whether the Kaiserist government will collapse, or reassert itself for another generation - and with the crisis playing out on numerous societal battlefields, it may be a few years before we have an answer.\n\nRegardless, during this period, the Katzenartig Imperium may not have the capacity to handle further threats, and a war could help stretch the Katzen government too far..."
-  giga_katzen.7012.a: "Promising news."
-  giga_katzen.7012.b: "We'll pile on the pressure!"
-  giga_katzen.7012.b.tooltip: "We will §Rdeclare war§! on the §YKatzenartig Imperium§!. A successful offensive in the next few years will §Gincrease§! the chance of the Imperium collapsing."
-  giga_katzen.7012.c: "Traitors! We believe in the Kaiser."
-  giga_katzen.7012.c.tooltip: "§YSupporting or opposing the Kaiser will affect his chances of maintaining power.§!"
-  giga_katzen.7012.d: "This may be our last chance for rebellion!"
-  giga_katzen.7012.d.tooltip: "$giga_katzen.0033.a.tooltip$\n\n$giga_katzen.7012.c.tooltip$"
-  giga_katzen.7012.e: "Our population will overthrow the Imperium from within!"
-  giga_katzen.7013.name: "Kaiser Maintains Power"
-  giga_katzen.7013.desc: "Recent unrest in the Katzenartig Imperium has wound down, with the Kaiser's grip on power emerging tested yet unbroken. Through an uncannily lucky series of apparent gambles on when to make concessions and when to crack down brutally, the Kaiserist regime successfully neutralised most flashpoint issues.\n\nThough this episode has dealt a hefty blow to the Kaiser's quasi-divine image, the Katzenartig Imperium appears to be back on track with its reforms, albeit behind schedule."
-  giga_katzen.7013.a: "Blast!"
-  giga_katzen.7013.b: "Righteousness wins today."
-  giga_katzen.7013.c: "We missed our chance..."
-  giga_katzen.7014.name: "Katzenartig Imperium Implodes!"
-  giga_katzen.7014.desc: "The deteriorating situation in the Katzenartig Imperium has taken a sudden turn, with the Kaiser having disappeared! In the chaotic situation, there is no knowing which of many jostling factions may have deposed him, or whether the Kaiser himself saw the writing on the wall and organised a clean escape from his crumbling project. In any case, without the Kaiser, his regime has utterly collapsed.\n\nAttempts by several leaders to either seize absolute power or simply mediate the situation have all failed. With so much tension squished into the Imperium's limited territory, the result has been a complete breakdown of any recognisable central authority. There is nothing now but brutal planetary power struggles.\n\nThe great projects of the Kaiser's era are up in flames, along with the dreams of his supporters and detractors alike. While Flusion theoretically still has fearsome industrial potential, would take a political miracle for the sorry vestiges of the Imperium to return to the galactic stage anytime soon."
-  giga_katzen.7014.b: "Their violent ways brought such a horrible end..."
-  giga_katzen.7020.name: "Katzenartig Imperium Fractures!"
-  giga_katzen.7020.loris.desc: "The deteriorating situation in the Katzenartig Imperium has taken a sudden turn, with the Kaiser having disappeared! In the chaotic situation, there is no knowing which of many jostling factions may have deposed him, or whether the Kaiser himself saw the writing on the wall and organised a clean escape from his crumbling project. In any case, without the Kaiser, his regime has utterly collapsed.\n\nKatzen space has now broken down into the vicious §YKatzen Civil War§! between four factions: the §Y[katzen_civil_war_realm.GetName]§!, §Y[katzen_civil_war_republic.GetName]§!, §Y[katzen_civil_war_socialist.GetName]§! and §Y[katzen_civil_war_junta.GetName]§!. Each self-proclaimed rightful successor is led by a prominent leader from the late Imperium, with irreconcilable visions of how to rebuild the Katzen state.\n\nImpressively, Loris von Kattensbach - previously governor of Flusion - has managed to carve out a relatively stable neutral zone around Flusion itself, the §YFlusionian Provisional Authority§!. There is a shaky understanding in ex-Katzenartig space that should the civil war be definitively resolved, the victor will reunify with Flusion's civilian government to confer legitimacy and stability. While the more pacifistic contenders led by Kibbles and Kitti Luft - who leave room to place the wellbeing of citizens first - are widely suspected to have Loris's personal sympathies, it seems the Flusionian leader is putting the preservation of Flusion's assets and Katzen unity first."
-  giga_katzen.7020.douclaw.desc: "The deteriorating situation in the Katzenartig Imperium has taken a sudden turn, with the Kaiser having disappeared! In the chaotic situation, there is no knowing which of many jostling factions may have deposed him, or whether the Kaiser himself saw the writing on the wall and organised a clean escape from his crumbling project. In any case, without the Kaiser, his regime has utterly collapsed.\n\nKatzen space has now broken down into the vicious §YKatzen Civil War§! between four factions: the §Y[katzen_civil_war_realm.GetName]§!, §Y[katzen_civil_war_republic.GetName]§!, §Y[katzen_civil_war_socialist.GetName]§! and §Y[katzen_civil_war_junta.GetName]§!. Each self-proclaimed rightful successor is led by a prominent leader from the late Imperium, with irreconcilable visions of how to rebuild the Katzen state.\n\nImpressively, Douclaw MacCathur - previously head of the Katzen admiralty - has managed to carve out a relatively stable neutral zone around Flusion itself, the §YKatzenartig Emergency Command§!. There is a shaky understanding in ex-Katzenartig space that should the civil war be definitively resolved, the victor will reunify with Flusion's military government to confer legitimacy and stability. While the more militaristic contenders led by Katlinin and Elwin - who prioritise Kaiser-like martial values - are widely suspected to have Douclaw's personal sympathies, it seems the Flusionian leader is putting the preservation of Flusion's assets and Katzen unity first."
-  giga_katzen.7020.b: "Snivelling traitors have stolen our future!"
-  giga_katzen.7020.b.tooltip: "§RWe have become independent.§!"
-  giga_katzen.7020.c: "Free again, at last!"
-  giga_katzen.7020.c.tooltip: "§GWe have become independent.§!"
-  giga_katzen.7021.name: "[GigaFlusionProvisionalGovernmentName]"
-  giga_katzen.7021.name.loris: "Flusionian Provisional Authority"
-  giga_katzen.7021.name.douclaw: "Katzenartig Emergency Command"
-  giga_katzen.7021.intro.loris.desc: "Greetings again from Flusion, aliens. §YDouclaw MacCathur§! here, speaking on behalf of our current leader §YLoris von Kattensbach§!.\n\nThanks to Loris's work, we've managed to shield Flusion and its direct territories from the civil war, and we intend to keep their people safe until the Katzen state reunifies.\n\nWe don't want any conflict with outsiders, but as always, we are more than ready to protect ourselves."
-  giga_katzen.7021.intro.loris.succession.desc: "Greetings again from Flusion, Katzens. §YDouclaw MacCathur§! here, speaking on behalf of our current leader §YLoris von Kattensbach§!.\n\nThanks to Loris's work, we've managed to shield Flusion and its direct territories from the civil war, and we intend to keep their people safe until the Katzen state reunifies.\n\nAs always, we are more than ready to protect ourselves - but I expect you understand the importance of keeping our civilisation's capital safe."
-  giga_katzen.7021.intro.douclaw.desc: "Greetings again from Flusion, aliens. §YDouclaw MacCathur§! here, leader of the Imperium's interim government.\n\nThanks to the military's swift action, we've managed to shield Flusion and its direct territories from the civil war, and we intend to keep these lands safe until the Katzen state reunifies.\n\nWe don't want any conflict with outsiders, but as always, we are more than ready to protect ourselves."
-  giga_katzen.7021.intro.douclaw.succession.desc: "Greetings again from Flusion, Katzens. §YDouclaw MacCathur§! here, leader of the Imperium's interim government.\n\nThanks to the military's swift action, we've managed to shield Flusion and its direct territories from the civil war, and we intend to keep these lands safe until the Katzen state reunifies.\n\nAs always, we are more than ready to protect ourselves - but I expect you understand the importance of keeping our civilisation's capital safe."
-  giga_katzen.7021.whatareyou: "Who is in charge of Flusion now?"
-  giga_katzen.7021.whatareyou.response: "We, the [GigaFlusionProvisionalGovernmentName], continue to run the direct successors of the Katzenartig Imperium's institutions. Our mandate is to ensure the ongoing civil war doesn't wreck our civilisation's capital here on Flusion."
-  giga_katzen.7021.howalive: "How did the [GigaFlusionProvisionalGovernmentName] come to be?"
-  giga_katzen.7021.howalive.loris.response: "We barely rode out the chaos in the days after the Kaiser disappeared, but Loris von Kattensbach is widely respected by Flusion's diverse races, and by treating them well he's kept us all from turning on one another."
-  giga_katzen.7021.howalive.douclaw.response: "Things were grim when the Kaiser disappeared, but I gained plenty of experience by his side, and that came in handy. I quickly gathered fellow officers who recognised the name Douclaw MacCathur as a loyal aide of the Kaiser, and we moved in to hold things together."
-  giga_katzen.7021.futureplans: "What do you intend to do?"
-  giga_katzen.7021.futureplans.response: "When the civil war is resolved, we'll begin the process of reunification. Flusion will be transferred from the custodianship of our stable institutions to the incoming leadership - with our advice, of course."
-  giga_katzen.7021.whoseside: " Whose side are you on in the civil war?"
-  giga_katzen.7021.whoseside.response: "We are very strictly neutral - and no, don't push us for more. It's a dangerous subject. You may think that each warring faction sees us as traitors, but as long as we don't take sides, they understand how important our role is here."
-  giga_katzen.7021.whoseside.succession.response: "We are very strictly neutral - and no, don't ask us for support.  We've convinced the other warring factions that we're not traitors, but that will only work as long as we don't take sides. I hope you understand how important our role is here."
-  giga_katzen.7021.a: "You're speaking to the legitimate interim government of Flusion."
-  giga_katzen.7021.b: "Flusionian neutrality is the key to protecting our civilisation's greatest assets from fleeting power struggles."
-  giga_katzen.7021.c: "Be assured, we are still plenty capable of defending ourselves."
-  giga_katzen.7021.d: "The Kaiser has abandoned us, but we haven't abandoned ourselves."
-  giga_katzen.7021.e: "Flusionkind's inheritance must not, will not, be squandered."
-  giga_katzen.7021.f: "We on Flusion hope for a speedy resolution to the war. Well... some of us do."
-  giga_katzen.7021.g: "Some Flusionians might prefer our current independence, but whatever our future state looks like, it first and foremost must be whole."
-  giga_katzen.7021.h: "Stability is the highest priority."
-  giga_katzen.7021.i: "Our civilisation will be united again, even if it looks quite different to during the Kaiser's days."
-  giga_katzen.7021.j: "We can't take sides if you interfere in the civil war, but we will act without hesitation if you move against Flusion."
-  giga_katzen.7021.k: "Flusionians are strong. We'll survive this too."
-  giga_katzen.7021.war.a: "Will nothing teach you? We Katzens don't give up."
-  giga_katzen.7021.war.b: "Do you think our martial skills vanished with the Kaiser?"
-  giga_katzen.7021.war.c: "From Projekt Mondkanone to fighting you, nothing brings Flusionians together like a common threat."
-  giga_katzen.7021.diplowar: "§RYou've clung on to Flusion long enough!§!"
-  giga_katzen.7021.diplowar.response: "If we must... Come at us!"
-  giga_katzen.7021.diplowar.tooltip: "We will §Rdeclare war§! on the §Y[GigaFlusionProvisionalGovernmentName]§!. They will accept peace at any time. Any existing Katzen Splinter States will §Rjoin the war§! against us to defend Flusion."
-  cant_flusiokrieg_contender: "We have committed to reunifying with Flusion only through winning the Katzen Civil War."
-  giga_katzen.7021.diplopeace: "§BLet's end this fighting, Flusionians.§!"
-  giga_katzen.7021.diplopeace.response: "Excellent. An end to this pointless bickering."
-  giga_katzen.7021.diplopeace.tooltip: "We will §Bend the war§! with the §Y[GigaFlusionProvisionalGovernmentName]§! and any Katzen Splinter States that are currently intervening in their defence. All current borders will be kept."
-  giga_katzen.7022.name: "Succession"
-  giga_katzen.7022.desc: "The Kaiser is gone, the Imperium is shattered, and the future of Katzenkind is uncertain. But we are still standing. And just a few short years ago, the word of the Kaiser was that we, too, are \"Katzens\". Katlinin, Elwin, Kibbles and Kitti Luft have made their claims of succession, but why are we any less worthy?\n\nWe are faced with a choice that will define our civilisation's history: do we walk away from the ruins of the Kaiser's project, or do we stake our claim in reunifying the Katzen state? Should we enter the §YKatzen Civil War§! and emerge victorious, the [GigaFlusionProvisionalGovernmentName]'s assets will be ours: perhaps most important among them, the legacy of Kattail will belong to our name and be clay in our [root.species.GetHandNamePlural]."
-  giga_katzen.7022.a: "We will reforge the Katzenartig Imperium."
-  giga_katzen.7022.a.tooltip: "We will §Rjoin the§! §YKatzen Civil War§!, and should we defeat all other succession rivals, we will annex the §Y[GigaFlusionProvisionalGovernmentName]§! and become the §B[root.GetAdj] Katzimperium§!. Leaving the war will §Rnot be possible§!."
-  giga_katzen.7022.b: "No. No more."
-  giga_katzen.7022.b.tooltip: "§YThis opportunity will not come again.§!"
-  giga_katzen.7023.name: "Assuming the Mantle"
-  giga_katzen.7023.loris.desc: "At long last, the Katzen Civil War has come to an end. First came the chaos after the Kaiser disappeared, then years of brutal conflict, and then silence - now displaced by a thunderous roar of triumph. The visionary cries of Katlinin, Elwin, Kibbles and Kitti Luft have been drowned out in history - for with only us left standing on the battlefield, no rivals remain to contest our claims of legitimate inheritance.\n\n§YLoris von Kattensbach§! has now surrendered the custodianship of the §YFlusionian Provisional Authority§!, entrusting the heart of Katzen civilisation to us and our vision for the future. With this, the Katzen state is reborn: the galaxy now knows the §B$katzen_new_imperium_name$§!."
-  giga_katzen.7023.douclaw.desc: "At long last, the Katzen Civil War has come to an end. First came the chaos after the Kaiser disappeared, then years of brutal conflict, and then silence - now displaced by a thunderous roar of triumph. The visionary cries of Katlinin, Elwin, Kibbles and Kitti Luft have been drowned out in history - for with only us left standing on the battlefield, no rivals remain to contest our claims of legitimate inheritance.\n\n§YDouclaw MacCathur§! has now surrendered the custodianship of the §YKatzenartig Emergency Command§!, entrusting the heart of Katzen civilisation to us and our vision for the future. With this, the Katzen state is reborn: the galaxy now knows the §B$katzen_new_imperium_name$§!."
-  giga_katzen.7023.noprovisional.desc: "At long last, the Katzen Civil War has come to an end. First came the chaos after the Kaiser disappeared, then years of brutal conflict, and then silence - now displaced by a thunderous roar of triumph. The visionary cries of Katlinin, Elwin, Kibbles and Kitti Luft have been drowned out in history - for with only us left standing on the battlefield, no rivals remain to contest our claims of legitimate inheritance.\n\nA joyous reunion with the [GigaFlusionProvisionalGovernmentName] may have been stolen from us, but nonetheless, Katzenkind has been united again under our vision for the future. With this, the Katzen state is reborn: the galaxy now knows the §B$katzen_new_imperium_name$§!."
-  giga_katzen.7023.a: "The Kaiser is gone, but the Imperium stands."
-  giga_katzen.7023.a.tooltip: "We will §Gintegrate§! the §Y[GigaFlusionProvisionalGovernmentName]§! and become the §B[root.GetAdj] Katzimperium§!."
-  katzen_new_imperium_name: "[root.GetAdj] Katzimperium"
-  giga_katzen.7024.name: "[katzen_civil_war_player.GetName] Reunifies Katzenartig Imperium!"
-  giga_katzen.7024.loris.desc: "With the destruction of all other belligerents of the Katzen Civil War, the §Y[katzen_civil_war_player.GetName]§! now stands as the supreme victor of the deadly feline civil conflict.\n\nAfter the civil conflict concluded, §YLoris von Kattensbach§! entered negotiations to unify the §YFlusionian Provisional Authority§! with the victorious party, culminating in the formation of the §Y[katzen_civil_war_player.GetAdj] Katzimperium§!.\n\nThis triumphant new state, recently unburdened by its Katzen rivals and now armed with the economic powerhouse of Flusion, is ascendant in galactic affairs. The question now is what vision this reformed empire has for itself and the galaxy."
-  giga_katzen.7024.douclaw.desc: "With the destruction of all other belligerents of the Katzen Civil War, the §Y[katzen_civil_war_player.GetName]§! now stands as the supreme victor of the deadly feline civil conflict.\n\nAfter the civil conflict concluded, §YDouclaw MacCathur§! entered negotiations to unify the §YKatzenartig Emergency Command§! with the victorious party, culminating in the formation of the §Y[katzen_civil_war_player.GetAdj] Katzimperium§!.\n\nThis triumphant new state, recently unburdened by its Katzen rivals and now armed with the economic powerhouse of Flusion, is ascendant in galactic affairs. The question now is what vision this reformed empire has for itself and the galaxy."
-  giga_katzen.7024.noprovisional.desc: "With the destruction of all other belligerents of the Katzen Civil War, the §Y[katzen_civil_war_player.GetName]§! now stands as the supreme victor of the deadly feline civil conflict.\n\nAfter the civil conflict concluded, the victorious party underwent a national metamorphosis, culminating in the emergence of the §Y[katzen_civil_war_player.GetAdj] Katzimperium§!.\n\nThis triumphant new state, recently unburdened by its Katzen rivals and now armed with the economic powerhouse of Flusion, is ascendant in galactic affairs. The question now is what vision this reformed empire has for itself and the galaxy."
-  giga_katzen.7024.a: "Please, no more..."
-  giga_katzen.7024.b: "We shall see what path they take."
-  giga_katzen.7024.c: "A righteous day in history."
-  giga_katzen.7031.name: "Katzen Planetcraft Construction on Nesar!"
-  giga_katzen.7031.desc: "The latest child of the Kaiser's love for engineering megaprojects is gestating on the magmatic world of §YNesar§!. We already know what it is; after all, it's hard to hide §Rturning an entire planet into a warship§!. Therefore, the Katzenartig Imperium has instead been loudly using this new megaproject as a unifying ambition, promising that the under-construction \"§YKaiserübermacht§!\" will be a leap forwards in Katzen history comparable to the completion of the old Kaiser Moon.\n\nOnce the new flagship comes online, the Kaiser Moon will become second-rate, but the model won't be obsolete - rather, §RKaiser Moons will enter general production§!, signifying new heights of Katzen military industry. However, there is a key distinction between the Kaiserübermacht's and old Kaiser Moon's roles: a theoretical defeat of the Kaiserübermacht §Rwill not plunge the Imperium into chaos§!. We expect that once the §BReformation§! has completed its administrative strengthening, nothing short of losing Flusion could decapitate the Kaiser's machine.\n\nIf we aim to defeat the Katzen threat, we likely §Ronly have a decade§! before the Kaiserübermacht is functional and the Kaiser's galactic conquest begins anew..."
-  giga_katzen.7031.ally.desc: "The latest child of the Kaiser's love for engineering megaprojects is gestating on the magmatic world of §YNesar§!. We already know what it is; after all, it's hard to hide §Rturning an entire planet into a warship§!. Therefore, the Katzenartig Imperium has instead been loudly using this new megaproject as a unifying ambition, promising that the under-construction \"§YKaiserübermacht§!\" will be a leap forwards in Katzen history comparable to the completion of the old Kaiser Moon.\n\nOnce the new flagship comes online, the Kaiser Moon will become second-rate, but the model won't be obsolete - rather, §RKaiser Moons will enter general production§!, signifying new heights of Katzen military industry. However, there is a key distinction between the Kaiserübermacht's and old Kaiser Moon's roles: a theoretical defeat of the Kaiserübermacht §Rwill not plunge the Imperium into chaos§!. We expect that once the §BReformation§! has completed its administrative strengthening, nothing short of losing Flusion could decapitate the Kaiser's machine.\n\nFor those who aim to defeat the Imperium, they likely §Ronly have a decade§! before the Kaiserübermacht is functional and the Kaiser's galactic conquest begins anew..."
-  giga_katzen.7031.a: "Oh no..."
-  giga_katzen.7031.b: "Stop them now, while we still have time!"
-  giga_katzen.7031.b.tooltip: "We will §Rdeclare war§! on the Katzenartig Imperium."
-  giga_katzen.7031.c: "Glory to the Kaiser."
-  giga_katzen.7032.name: "The Second Katzen Conquest"
-  giga_katzen.7032.desc: "Katzen strategy is pivoting once again on Flusion - but this time, from internal affairs back to external. The administrative frenzy is winding down, and the warforges are winding up. Meanwhile, the Kaiser appears more secure than ever in his power. It seems the §BKatzen Reformation§! is complete - as is the mighty planetary warship once known as Nesar, now as the §IKaiserübermacht§!.\n\nThe Kaiser has vowed that the light of Katzen civilisation will shine from the depths of the Pawcific to the edge of the galaxy - and then, beyond. The §RSecond Katzen Conquest§! has begun."
-  giga_katzen.7032.a: "So it begins again."
-  giga_katzen.7032.a.tooltip: "§RThe Katzenartig Imperium has returned to its expansionistic behaviour. They will now construct additional Kaiser Moons and deploy stronger Mark II ships. The Kaiser Moon can no longer be sabotaged, nor will the Katzens enter Disarray if one is destroyed.§!"
-  giga_katzen.7032.b: "Katzenkind marches forwards."
-  giga_katzen.7040.name: "A Patriotic Request"
-  giga_katzen.7040.desc: "A group calling themselves the Citizens for the Kaiser have applied for a grant to fund a major pro-Katzen rally, stating their mission \"to affirm the enthusiasm of the [root.GetAdj] people for the Kaiser's great mission.\"\n\nWhile we are under no legal obligation to provide the funding, media outlets on Flusion are already praising the petitioners' patriotism, so the burden would be on our reputation if we chose to shut down the application. Additionally, unverifiable intelligence hints that there may be Flusionian agents among the organisers. If true, this situation is likely a ploy to force our hand into a display of fealty... And if not, well, the result is the same."
-  giga_katzen.7040.a: "Sign off on the grant."
-  giga_katzen.7040.b: "We won't budget for this."
-  giga_katzen.7040.c: "Prosecute the organisers for treason."
-  giga_katzen.7041.name: "Flusion's Floundering Finances"
-  giga_katzen.7041.desc: "Recent news coverage from Flusion reports that a major construction company is on the verge of financial insolvency after a major city-building contract gone wrong, leaving hundreds of half-built structures with barely enough funding for critical maintenance. While this usually wouldn't concern us, the most recent news is that we're now a part of the story! The Flusionian administration is pressuring us to bail out the struggling company, which would put construction back on track.\n\nIf we can't or won't scrounge up the funds, the Flusionian liaisons are hinting that some of our Katzenartig trade zone privileges could be suspended..."
-  giga_katzen.7041.a: "Find the funds."
-  giga_katzen.7041.corporate.a: "A clever investment could partly fund itself..."
-  giga_katzen.7041.b: "We aren't liable for Flusionian finances."
-  giga_katzen.7042.name: "Flusiocratic Friction"
-  giga_katzen.7042.desc: "The central government on Flusion has picked up on the not-insignificant rate of data-sharing mishaps between  itself and [root.GetCapitalName], blaming our bureaucracy which mostly uses our own processes rather than Katzenartig standard. Flusion is offering to fully pay for a standardisation and integration program that will give the Kaiser's officials smoother access to our data - which, they assure us, will be used to maximise the benefits of being part of the Imperium. We can choose to stick with our current processes, but Flusion has warned that our budget will have full responsibility from here on out for running so many duplicate processes."
-  giga_katzen.7042.a: "A reasonable suggestion."
-  giga_katzen.7042.b: "We know how to administrate ourselves."
-  giga_katzen.7043.name: "[VassalEventTitleCultural]]"
-  giga_katzen.7043.individualist.name: "Cultural Protection Demands"
-  giga_katzen.7043.desc: "Ever since becoming a Katzenartig subject, all aspects of our culture have been undergoing \"Katzenification\" to better align with Imperium-decreed cultural norms. Recently though, discontent with these assimilation policies has been picking up steam: traditionalists and radical cultural reformers alike have put aside their differences to voice their shared anger against enforced Katzenification. Ignoring the dissenters will only intensify their resentment, but hearing them out would mean representing their issues to Flusion, which will not be happy to hear any of it..."
-  giga_katzen.7043.a: "Ignore them. They'll get used to it."
-  giga_katzen.7043.b: "Relay our population's concerns to Flusion."
-  giga_katzen.7043.hive.name: "Collective Confusion"
-  giga_katzen.7043.hive.desc: "Ever since becoming a Katzenartig subject, all aspects of our behaviour have been undergoing \"Katzenification\" to better slot the hive mind in alongside Imperium-decreed cultural norms. Recently though, the psychological costs of these assimilation policies have been surfacing: older drones birthed for pre-Katzen times or even just prior Katzen policies have been struggling to adapt their activities.\n\nTo handle this internally would unfortunately mean purging these drones before their malconformity becomes outright deviancy, but avoiding such an outcome would mean asking Flusion to slow down Katzenification to match our population replacement rate, which would not be a happily-received request..."
-  giga_katzen.7043.hive.a: "Reprocess drones that fall behind pace."
-  giga_katzen.7043.gestalt.b: "Request a slow-down to Katzenification."
-  giga_katzen.7043.machine.name: "Unplanned Obsolescence"
-  giga_katzen.7043.machine.desc: "Ever since becoming a Katzenartig subject, all aspects of our behaviour have been undergoing \"Katzenification\" to better slot the machine collective in alongside Imperium-decreed cultural norms. Recently though, the operating costs of these assimilation policies have been surfacing: older drones built for pre-Katzen times or even just prior Katzen policies require particular reprogramming to adjust their activities, and we cannot keep up the pace of updates.\n\nTo handle this internally would unfortunately mean dismantling these drones before their version incompatibility becomes outright deviancy, but avoiding such an outcome would mean asking Flusion to slow down Katzenification to match our standard update cycles, which would not be a happily-received request..."
-  giga_katzen.7043.machine.a: "Dismantle drones that fall behind pace."
-  giga_katzen.7044.name: "Flusion Proposes Exchange Program"
-  giga_katzen.7044.desc: "The latest proposal from Flusion would see some aspects of our officials' training outsourced to academies in Katown and Bundengrad - no doubt to establish favourable contacts with our next generation of political elites and instil a deference for Katzen governance methods. While these elite schools are renowned for their practical exposure to high-level affairs, this program would mean relinquishing some of our control over our leaders' education.\n\nIf this cost is unacceptable, we could outright reject the proposal, but Flusion may retaliate by locking our leaders out of existing co-training programs. A more moderate way to retain control would be to send our officials to Flusion, but then re-run their training courses under our supervision to ensure our preferences win out. Or... we could simply comply."
-  giga_katzen.7044.a: "We'll cooperate fully."
-  giga_katzen.7044.b: "Run parallel domestic training."
-  giga_katzen.7044.c: "Reject the exchange program entirely."
-  giga_katzen.7045.name: "Propaganda Commissioned"
-  giga_katzen.7045.desc: "The Katzenartig cultural bureau in Großlaurendaar is requesting our cooperation to run an information campaign extolling how submitting to the Kaiser has benefited [Root.GetAjd] society. While this messaging would be targeted towards those outside our borders, we have to consider the domestic perceptions: denigrating our past in this way would be an insult to those segments of our population that think life was better before the Katzens.\n\nPragmatically, however, the Katzenartig agency has indicated that the campaign will go ahead with or without our help, and if we aren't involved the portrayal of us may be even less flattering, upsetting our populace... The choice is lose-lose for us, but if we so desire, we can at least choose to lose standing up for our history and challenging the Katzens for control of the narrative."
-  giga_katzen.7045.a: "It's best to have a seat at the table."
-  giga_katzen.7045.b: "We won't sign off on lies about ourselves."
-  giga_katzen.7046.name: "Katzen Joint Military Exercises"
-  giga_katzen.7046.desc: "The latest round of the Katzenartig navy's Exercise Katzpazität is coming up, and this time, we've been nominated to host. For all the prestige we could gain, there is the simple fact of cost: Katzpazität is a serious event, and the strain hosting would put on our military infrastructure is hefty to match. Of course, turning down the opportunity - especially now that Katzenartig High Command has put the pressure on us by making our nomination public - could be interpreted as a lack of commitment to martial values: a very serious accusation for an Imperium territory.\n\nIt's likely that refusing to host would result in our military integration being leveraged for punishment, so we'll need to weigh up our response carefully with consideration of our current security situation."
-  giga_katzen.7046.a: "Bring on Katzpazität."
-  giga_katzen.7046.b: "Our logistics are simply unequipped to host."
-  giga_katzen.7047.name: "[VassalEventTitleAcademic]"
-  giga_katzen.7047.individualist.name: "Academic Overcompetence"
-  giga_katzen.7047.desc: "A prominent team of sociologists recently authored a rather critical work on Katzen cultural assimilation. Despite the stir in academic circles, normally such a work wouldn't be worth our noting, but this one has drawn the ire of universities in Katown and Bundengrad. These reliably pro-Kaiser publishers aren't well-respected by our own sociologists, but they have too much influence to be dismissed, and are sending us a very clear message: either we bring our academics in line, or they cut our academics off."
-  giga_katzen.7047.a: "Update research-ethics guidelines to ban disruptive papers."
-  giga_katzen.7047.b: "We won't let our researchers be gagged."
-  giga_katzen.7047.materialist.b: "An intolerable attack on knowledge."
-  giga_katzen.7047.hive.name: "Intimidatingly-Large-Brain Drone"
-  giga_katzen.7047.hive.desc: "A high-level cluster of sociology brain drones recently concluded a rather critical work on the efficiency of Katzen-vassal economic relations. Despite the valuable insights to us, normally such a work wouldn't be diplomatically relevant, but this one has drawn the ire of universities in Katown and Bundengrad. Our brain drones typically dismiss these reliably pro-Kaiser publishers, but they have too much influence for our diplomatic subnodes to dismiss, and are sending us a very clear message: either we change our research priorities, or they cut our research cooperation off."
-  giga_katzen.7047.machine.name: "Superoptimal Subroutines"
-  giga_katzen.7047.machine.desc: "A high-level circuit of sociology subroutines recently concluded a rather critical work on the efficiency of Katzen-vassal economic relations. Despite the valuable insights to us, normally such a work wouldn't be diplomatically relevant, but this one has drawn the ire of universities in Katown and Bundengrad. Our research subroutines typically dismiss these reliably pro-Kaiser publishers, but they have too much influence for our diplomatic subnodes to dismiss, and are sending us a very clear message: either we change our research priorities, or they cut our research cooperation off."
-  giga_katzen.7047.gestalt.a: "Deprioritise any disruptive research going forwards."
-  giga_katzen.7047.gestalt.b: "Truth is the collective's priority."
-  giga_katzen.7048.name: "Katzgouverneur's Legitimacy Questioned"
-  giga_katzen.7048.desc_opening: "Katzgouverneur [Root.GetRulerName], the figure sent to rule us from the Katzenartig Imperium, is struggling to exert their authority, undermining the efficacy of our government. It seems broad swathes of our society reject their right to rule over us, and are cooperating with orders very half-heartedly."
-  giga_katzen.7048.democratic.desc: "$giga_katzen.7048.desc_opening$\n\nThere isn't much room in reality to deny that [Root.GetRulerName] lacks a democratic mandate, and Flusion would never let us take their leadership to the polls. The best we could do to fabricate some legitimacy is to downplay the extent of their power and shift some de facto-ceremonial elected subordinates into the spotlight... but can we really betray the spirit of our democratic traditions like that? If we can't, Flusion and the Katzgouverneur will simply have to work uphill through the public's anger."
-  giga_katzen.7048.democratic.a: "Let the masses think they're in charge."
-  giga_katzen.7048.democratic.b: "Transparency of power is non-negotiable."
-  giga_katzen.7048.oligarchic.desc: "$giga_katzen.7048.desc_opening$\n\nOur traditional elites are chafing at their lost influence now that they have to work with a governor's rigid foreign loyalties rather than the familiar pliable figures of the past. If they begin to conspire openly with one another for their common interests, the governor's rule could be seriously weakened. The best way to avoid such a situation would be to manoeuvre the oligarchs against one another, thereby preventing the formation of a united front through paranoia and competition. Though that would undermine other aspects of our government, naturally..."
-  giga_katzen.7048.oligarchic.a: "Adapting means playing power games."
-  giga_katzen.7048.oligarchic.b: "We are built on oligarchic common interest."
-  giga_katzen.7048.dictatorial.desc: "$giga_katzen.7048.desc_opening$\n\nThere are certain assumptions about how a [Root.GetAdj] dictator rules that [Root.GetRulerName] doesn't seem aware of, and there are certain deeply-rooted connections that [Root.GetRulerName] lacks. Our foreign-born ruler's unfamiliarity with our institutions makes them vulnerable. We could win favour with Flusion by assembling a team of advisors to solidify the Katzgouverneur's position... but is that what we really want to achieve?"
-  giga_katzen.7048.dictatorial.a: "Stability demands a truly authoritative leader."
-  giga_katzen.7048.dictatorial.b: "The true dictatorship will outlast this puppet."
-  giga_katzen.7048.imperial.desc: "$giga_katzen.7048.desc_opening$\n\nThe simple fact is that the Katzgouverneur doesn't have the right background to sit in succession to the imperial line, and never will... unless we rewrite our society around them to metaphorically mould the throne into a Katzen shape. Of course, the cultural consequences of such a move are not to be taken lightly... nor are the consequences of letting a ruler without legitimacy retain power."
-  giga_katzen.7048.imperial.a: "Who controls the present controls the past."
-  giga_katzen.7048.imperial.b: "History will be moved past but never betrayed."
-  giga_katzen.7048.corporate.desc: "$giga_katzen.7048.desc_opening$\n\nThe market's mood is shaky as investors scramble to handle the shocks of the constant decrees from the Kaiser's regulators. Private consultants are pitching a high-impact proposal to establish a dynamic response team that would keep innovators up-to-date with the regulatory environment... but lobbyists are up in arms over the costs of compliance on their profit margins, and advocating for a whole-of-market competitive escalation against Flusion's economic intervention."
-  giga_katzen.7048.corporate.a: "Always take the cheapest path in the now."
-  giga_katzen.7048.corporate.b: "Market principles come before everything."
-  giga_katzen.7049.name: "Criminal Responsibility"
-  giga_katzen.7049.desc: "A delegation of Katzen counterintelligence officers has suddenly descended on [Capital.GetName], claiming reason to believe that a notorious partisan group is operating in our territory to smuggle weapon components. They refuse to offer any evidence on the grounds that they don't know how just how compromised we are, yet are demanding a one-sided cooperation from our security forces to hand over... basically any intel requested. Due to the lack of sharing on their part, we can't even confirm if these partisans are real, or merely a fabrication for Katzenartig security agencies to gain leverage over our own.\n\nFor obvious reasons, opening so many holes in our intelligence networks is hugely risky - not to mention bureaucratically expensive - but if we refused to cooperate then the partisans turn out to be real and successfully carry out an attack against the Imperium... we can only imagine the Kaiser's wrath."
-  giga_katzen.7049.a: "We can't risk harbouring partisans."
-  giga_katzen.7049.b: "Minimal cooperation - protect our sources."
-  giga_katzen.7049.b.tooltip: "§RThis may have unpredictable consequences in the near future.§!"
-  giga_katzen.70491.name: "Territorial Violation"
-  giga_katzen.70491.desc: "Our security forces on [katzen_partisan_raid_planet] were caught badly off guard when a modified Katzen transport decloaked in close proximity, and a flurry of spaceplanes and drop-pods descended on a region of the colony. In a lightning operation, these special forces overran a surprised nest of partisans in a brief but destructive firefight, then extracted with captured partisan fighters before we could mobilise a response.\n\nEvidently, the Katzens decided we weren't taking our counter-partisan cooperation seriously, and worked behind our back to take out the (evidently real) rebels... and now we're humiliated, left scrambling to clean up the consequences and explain to our people why we were caught unawares."
-  giga_katzen.70491.gestalt.desc: "Our security forces on [katzen_partisan_raid_planet] were caught badly off guard when a modified Katzen transport decloaked in close proximity, and a flurry of spaceplanes and drop-pods descended on a region of the colony. In a lightning operation, these special forces overran a surprised nest of partisans in a brief but destructive firefight, then extracted with captured partisan fighters before we could mobilise a response.\n\nEvidently, the Katzens decided we weren't taking our counter-partisan cooperation seriously, and worked behind our back to take out the (evidently real) rebels... and in doing so, proved that the collective lacks awareness or control of affairs in our own territory."
-  giga_katzen.70491.a: "We're not in the best position to object..."
-  giga_katzen.70491.b: "Outrageous! OUTRAGEOUS!"
-  giga_katzen.70492.name: "Atom Bombing in Katown!"
-  giga_katzen.70492.desc: "Today began as a normal day on Flusion, but ended as one that history wouldn't forget. A firestorm of chaotic reports overran Katzenartig media controls, exposing to the galaxy footage of a Katown cityscape backlit by flames.\n\nThe intel is still coming in, but everything points to the detonation of a nuclear bomb, somehow, in an arms manufacturing precinct, with thousands of factory workers unaccounted for in the immediate aftermath. A partisan group has claimed responsibility for this \"tragic but necessary\" attack on the Katzen war machine - a group with a name we've heard mentioned recently..."
-  giga_katzen.70492.a: "Oh... that - that group..."
-  councilor_katzen_colonial_chief: "Colonial Consul-General"
-  councilor_katzen_colonial_chief_female: "$councilor_katzen_colonial_chief$"
-  councilor_katzen_colonial_chief_desc: "The $TITLE$ upholds relations between our central government and most far-flung administrations."
-  katzen_subversion_bureaucratic: "Bureaucratic Subversion"
-  katzen_subversion_bureaucratic_desc: "We are feeding the Flusionian government disinformation about our economy. Of course, our own management also suffers."
-  katzen_subversion_bureaucratic_imperium: "Bureaucratic Subversion"
-  katzen_subversion_bureaucratic_imperium_desc: "Average project budget overrun"
-  katzen_subversion_heavyhanded: "Clumsy Communications"
-  katzen_subversion_heavyhanded_desc: "An abrasive information campaign here and a cultural blunder there can ensure the Kaiser's reforms go down like a lead balloon in the public eye."
-  katzen_subversion_heavyhanded_gestalt: "Clumsy Communications"
-  katzen_subversion_heavyhanded_gestalt_desc: "Filtering contradictory orders about the Kaiser's ordered reforms down to our drones will impede their productivity, but also burden Flusion's administrative liaisons."
-  katzen_subversion_heavyhanded_imperium: "Clumsy Communications"
-  katzen_subversion_heavyhanded_imperium_desc: "Brb firing the media bureau"
-  katzen_subversion_unrest: "Apathetic Crackdown"
-  katzen_subversion_unrest_desc: "Intentionally-incompetent security forces are only exacerbating protests against Katzen rule."
-  katzen_subversion_unrest_imperium: "Apathetic Crackdown"
-  katzen_subversion_unrest_imperium_desc: "Reisigerkatzenpanzer Man is blocking the road smh"
-  katzen_subversion_unrest_gestalt: "Unhampered Deviancy"
-  katzen_subversion_unrest_gestalt_desc: "We are deliberately failing to rein in deviant cells who have concluded that overthrowing Katzen rule will protect the collective."
-  katzen_subversion_unrest_gestalt_imperium: "Unhampered Deviancy"
-  katzen_subversion_unrest_gestalt_imperium_desc: "Reisigerkatzenpanzer Man is blocking the road smh"
-  katzen_subversion_rally_compliance: "Backing Rally"
-  katzen_subversion_rally_compliance_desc: "We are funding a controversial rally organised in support of the Kaiser."
-  katzen_subversion_rally_compliance_imperium: "Patriotic Rally"
-  katzen_subversion_rally_compliance_imperium_desc: "He is the messiah!"
-  katzen_subversion_rally_noncompliance: "Unsupportive State"
-  katzen_subversion_rally_noncompliance_desc: "Pro-Kaiser are grumbling about our lack of support for their beliefs."
-  katzen_subversion_rally_noncompliance_imperium: "Disunited Imperium"
-  katzen_subversion_rally_noncompliance_imperium_desc: "He is not the messiah..."
-  katzen_subversion_rally_severe_noncompliance: "Kaiserist Repression"
-  katzen_subversion_rally_severe_noncompliance_desc: "Legal officials rushed to prosecute citizens for foreign loyalties after they tried to organise a pro-Kaiser rally. These judges have since been reprimanded for their obviously rogue actions, of course."
-  katzen_subversion_rally_severe_noncompliance_imperium: "Resentful Imperium"
-  katzen_subversion_rally_severe_noncompliance_imperium_desc: "Decisively messiahn't"
-  katzen_subversion_building_compliance: "Credit Crunch"
-  katzen_subversion_building_compliance_desc: "Our finances are under more strain than we budgeted for after bailout funds were sent to a Flusionian construction company."
-  katzen_subversion_building_compliance_corporate: "$katzen_subversion_building_compliance$"
-  katzen_subversion_building_compliance_corporate_desc: "Our finances are under more strain than we budgeted for after bailout funds were sent to a Flusionian construction company - though we have recovered a portion of the costs."
-  katzen_subversion_building_compliance_imperium: "Coerced Liquidity"
-  katzen_subversion_building_compliance_imperium_desc: "katzen_subversion_building_compliance_imperium_desc"
-  katzen_subversion_building_noncompliance: "Financial Sanctions"
-  katzen_subversion_building_noncompliance_desc: "Certain Katzen trade zone privileges have been temporarily revoked after we refused to bail out a Flusionian company."
-  katzen_subversion_building_noncompliance_imperium: "Financial Woes"
-  katzen_subversion_building_noncompliance_imperium_desc: "katzen_subversion_building_noncompliance_imperium_desc"
-  katzen_subversion_standards_compliance: "Bureaucratic Restructuring"
-  katzen_subversion_standards_compliance_desc: "The bureaucracy is undergoing a restandardisation to align with Katzenartig norms."
-  katzen_subversion_standards_compliance_imperium: "Standardised Bureaucracy"
-  katzen_subversion_standards_compliance_imperium_desc: "What the heck is a mile? We only use the superior metric, Kaiserometres"
-  katzen_subversion_standards_noncompliance: "Parallel Bureaucracy"
-  katzen_subversion_standards_noncompliance_desc: "We've chosen to bear the cost of maintaining a parallel bureaucratic standard to the one used on Flusion."
-  katzen_subversion_standards_noncompliance_imperium: "Flusiocratic Friction"
-  katzen_subversion_standards_noncompliance_imperium_desc: "Sunny Smiles is about to lose her house"
-  katzen_subversion_cultural_compliance: "Cultural Unrest"
-  katzen_subversion_cultural_compliance_desc: "Cultural traditionalists and radicals alike are upset about the enforcement of Katzen culture."
-  katzen_subversion_cultural_compliance_hive: "Early Termination"
-  katzen_subversion_cultural_compliance_hive_desc: "Drones that fall out of pace with Katzenification experience an early termination."
-  katzen_subversion_cultural_compliance_machine: "$katzen_subversion_cultural_compliance_hive$"
-  katzen_subversion_cultural_compliance_machine_desc: "$katzen_subversion_cultural_compliance_hive_desc$"
-  katzen_subversion_cultural_compliance_imperium: "Rapid Katzenification"
-  katzen_subversion_cultural_compliance_imperium_desc: "Superior Katzen government has ABOLISHED schedule overruns :)"
-  katzen_subversion_cultural_noncompliance: "Cultural Advocacy"
-  katzen_subversion_cultural_noncompliance_desc: "The populace's concern about the pace of Katzenification is being relayed to Flusion to defuse domestic tensions."
-  katzen_subversion_cultural_noncompliance_gestalt: "Pragmatic Pace"
-  katzen_subversion_cultural_noncompliance_gestalt_desc: "Developmental concerns about the pace of Katzenification are being relayed to Flusion to reduce domestic economic costs."
-  katzen_subversion_cultural_noncompliance_imperium: "Delayed Katzenification"
-  katzen_subversion_cultural_noncompliance_imperium_desc: "Inferior Katzen government suffered schedule overruns :("
-  katzen_subversion_cultural_noncompliance_gestalt_imperium: "$katzen_subversion_cultural_noncompliance_imperium$"
-  katzen_subversion_cultural_noncompliance_gestalt_imperium_desc: "$katzen_subversion_cultural_noncompliance_imperium_desc$"
-  katzen_subversion_exchange_compliance: "Outsourced Leadership"
-  katzen_subversion_exchange_compliance_desc: "Our leaders spent a portion of their training in Katzen institutions rather than our own, reducing the integration of our council."
-  katzen_subversion_exchange_compliance_imperium: "Streamlined Education"
-  katzen_subversion_exchange_compliance_imperium_desc: "We offer world-class education on how great the Kaiser is"
-  katzen_subversion_exchange_noncompliance: "Doubled Training"
-  katzen_subversion_exchange_noncompliance_desc: "Our leaders have to redo portions of their training in our own institutions after having learnt overlapping content in Katzen ones."
-  katzen_subversion_exchange_noncompliance_imperium: "Conflicting Educations"
-  katzen_subversion_exchange_noncompliance_imperium_desc: "2+2=4.5"
-  katzen_subversion_exchange_severe_noncompliance: "Isolated Education"
-  katzen_subversion_exchange_severe_noncompliance_desc: "Since we rejected a closer educational exchange program with Flusionian institutions, our leaders-in-training have instead been cut off."
-  katzen_subversion_exchange_severe_noncompliance_imperium: "Rival Methodologies"
-  katzen_subversion_exchange_severe_noncompliance_imperium_desc: "Most respectful academic disagreement"
-  katzen_subversion_propaganda_compliance: "Insulting Representations"
-  katzen_subversion_propaganda_compliance_desc: "Our government has cooperated in developing what many perceive as degrading lies about our history."
-  katzen_subversion_propaganda_compliance_imperium: "Tales of Progress"
-  katzen_subversion_propaganda_compliance_imperium_desc: "A rising Kaiser lifts all species"
-  katzen_subversion_propaganda_noncompliance: "Humiliating Reputation"
-  katzen_subversion_propaganda_noncompliance_desc: "The Katzens are publishing extremely crude propaganda that has given our culture a poor reputation."
-  katzen_subversion_propaganda_noncompliance_imperium: "Dubious Achievements"
-  katzen_subversion_propaganda_noncompliance_imperium_desc: "No trust me this is EXACTLY how it went"
-  katzen_subversion_exercises_compliance: "Katzpazität Host"
-  katzen_subversion_exercises_compliance_desc: "Our logistics are under strain as we host major military exercises with other Katzenartig navies."
-  katzen_subversion_exercises_compliance_imperium: "Exercise Katzpazität"
-  katzen_subversion_exercises_compliance_imperium_desc: "Colossus-measuring contest"
-  katzen_subversion_exercises_noncompliance: "Strategic Overdependence Fee"
-  katzen_subversion_exercises_noncompliance_desc: "Over-integration with Katzen military structures is now being leveraged to leave us exposed after we angered the central Katzen navy."
-  katzen_subversion_exercises_noncompliance_imperium: "Missed Military Exercises"
-  katzen_subversion_exercises_noncompliance_imperium_desc: "So which end is the barrel again?"
-  katzen_subversion_sociology_compliance: "Chilling Effect"
-  katzen_subversion_sociology_compliance_desc: "Our academics are scared to genuinely analyse Katzen society after the passing of dangerously-vague research-ethics guidelines."
-  katzen_subversion_sociology_compliance_gestalt: "Forbidden Knowledge"
-  katzen_subversion_sociology_compliance_gestalt_desc: "Studies into Katzen economic structures have been deprioritised to avoid any further insulting revelations."
-  katzen_subversion_sociology_compliance_imperium: "Thought Leaders"
-  katzen_subversion_sociology_compliance_imperium_desc: "Mm yes I am very clever only look at me"
-  katzen_subversion_sociology_noncompliance: "Grants Embargo"
-  katzen_subversion_sociology_noncompliance_desc: "Flusionian universities with deep pockets have placed an embargo on our research projects."
-  katzen_subversion_sociology_noncompliance_gestalt: "$katzen_subversion_sociology_noncompliance$"
-  katzen_subversion_sociology_noncompliance_gestalt_desc: "$katzen_subversion_sociology_noncompliance_desc$"
-  katzen_subversion_sociology_noncompliance_imperium: "Challenged Consensus"
-  katzen_subversion_sociology_noncompliance_imperium_desc: "Katzen think tank members curling up and crying when someone says the Kaiser is only 99% perfect"
-  katzen_subversion_legitimacy_compliance_democratic: "Managed Democracy"
-  katzen_subversion_legitimacy_compliance_democratic_desc: "Agitation to democratise the role of Katzgouverneur has been defused by directing attention to a number of new puppet positions."
-  katzen_subversion_legitimacy_compliance_oligarchic: "Oligarchic Conflict"
-  katzen_subversion_legitimacy_compliance_oligarchic_desc: "THe oligarchy has been turned against one another to prevent the formation of a united front against the Katzgouverneur."
-  katzen_subversion_legitimacy_compliance_dictatorial: "Special Interests Betrayed"
-  katzen_subversion_legitimacy_compliance_dictatorial_desc: "A team of advisors are helping to consolidate the power of the Katzgouverneur, to the displeasure of certain entrenched interests."
-  katzen_subversion_legitimacy_compliance_imperial: "Rewritten Lineage"
-  katzen_subversion_legitimacy_compliance_imperial_desc: "Cultural authorities work day and night to tweak our society in favour of legitimising the Katzgouverneur's power."
-  katzen_subversion_legitimacy_compliance_corporate: "Compliance Costs"
-  katzen_subversion_legitimacy_compliance_corporate_desc: "Any company that wants to survive has to work through the Kaiser's economic micromanagement."
-  katzen_subversion_legitimacy_compliance_imperium: "Effective Vassals"
-  katzen_subversion_legitimacy_compliance_imperium_desc: "grand admiral AI vassal bonus"
-  katzen_subversion_legitimacy_noncompliance: "Illegitimate Rule"
-  katzen_subversion_legitimacy_noncompliance_desc: "Many are deeply resentful of the Katzgouverneur's clearly-illegitimate rule."
-  katzen_subversion_legitimacy_noncompliance_imperium: "Ineffective Vassals"
-  katzen_subversion_legitimacy_noncompliance_imperium_desc: "civilian AI vassal deficit"
-  katzen_subversion_partisans_compliance: "Intelligence Sharing"
-  katzen_subversion_partisans_compliance_desc: "Sensitive security data is being shared in large quantities with central Katzen counter-partisan agencies."
-  katzen_subversion_partisans_compliance_imperium: "Counter-Partisan Operation"
-  katzen_subversion_partisans_compliance_imperium_desc: "If we don't find dissidents we can always make some"
-  katzen_subversion_partisans_noncompliance_raid_noprotest: "Non-credible Jurisdiction"
-  katzen_subversion_partisans_noncompliance_raid_noprotest_desc: "A raid on partisans by Katzen forces on one of our colonies has shown the galaxy that we aren't credibly in control of our territory."
-  katzen_subversion_partisans_noncompliance_raid_protest: "Laughable Objections"
-  katzen_subversion_partisans_noncompliance_raid_protest_desc: "We've embarrassed ourselves with desperate, hypocritical complaints after Katzen forces raided a partisan cell in our territory."
-  katzen_subversion_partisans_noncompliance_raid_noprotest_imperium: "Saboteur Arrests"
-  katzen_subversion_partisans_noncompliance_raid_noprotest_imperium_desc: "We got em bois"
-  katzen_subversion_partisans_noncompliance_raid_protest_imperium: "Enforcement Dispute"
-  katzen_subversion_partisans_noncompliance_raid_protest_imperium_desc: "It was just a small military operation on your territory, stop overreacting smh"
-  katzen_subversion_partisans_noncompliance_bombing: "Murderous Negligence"
-  katzen_subversion_partisans_noncompliance_bombing_desc: "Our refusal to take the partisan threat seriously made us complicit in a major nuclear attack on Flusion."
-  katzen_subversion_partisans_noncompliance_bombing_imperium: "Nuclear Attack"
-  katzen_subversion_partisans_noncompliance_bombing_imperium_desc: "Yikes..."
-  katzen_planetcraft_intervention: "Anti-Planetcraft Interventionism"
-  katzen_planetcraft_intervention_desc: "Mobilise the fleet! The Katzens cannot be allowed to complete their new flagship."
-  giga_katzencollapse_age: "Collapsed Age"
-  giga_katzencollapse_age_desc: "This civilization has lost much of its technology in a catastrophic collapse. Various warlord factions still control advanced pre-Collapse technology, but the planetary technological and industrial base is shattered. Wracked by infighting over what's left, the planet's inhabitants may continue to decline in the coming era."
-  col_giga_pre_ftl_katzencollapse: "$giga_katzencollapse_age$"
-  col_giga_pre_ftl_katzencollapse_desc: "$giga_katzencollapse_age_desc$"
-  col_giga_pre_ftl_katzencollapse_tt: "$col_giga_pre_ftl_katzencollapse_desc$"
-  KATZEN_COUNTRY_PROVISIONAL: "Katzen Rump State"
-  KATZEN_COUNTRY_PROVISIONAL_DESC: "The [GigaFlusionProvisionalGovernmentName] is a heavily-armed sector centralised around Flusion, committed to maintaining stability in their territory."
-  flusion_consolidation_instability: "Reformation Woes"
-  flusion_consolidation_instability_desc: "Dissatisfied with the Kaiser's broken promises, the population is agitating for change."
-  katzen_splinter_starter_boost: "Nationbuilding Spirit"
-  katzen_civil_war_navy_boost: "Civilwarpilled navymaxxing"
-  kaiser_planetcraft_1: "Kaiser Planetcraft Worksite"
-  kaiser_planetcraft_1_DESC: "Converting Nesar into a warship to dwarf the Kaiser Moon is the first project of a new generation of Katzen engineering."
-  kaiser_planetcraft_1_MEGASTRUCTURE_DETAILS: "skibidi kaiselet"
-  kaiser_planetcraft_2: "Kaiser Planetcraft"
-  kaiser_planetcraft_2_DESC: "hi can anyone read this bloop blup woppity"
-  mod_giga_katzen_ship_cost_mult: "mod_giga_katzen_ship_cost_mult name"
-  origin_eawafkaiser: "origin_eawafkaiser submod compat placeholder"
-  origin_eawafkaiser_desc: "origin_eawafkaiser_desc submod compat placeholder"
+  giga_katzen.7000.name: "플루시온의 전략적 변화" # 3908890105386509890
+  giga_katzen.7000.desc: "카첸아르틱 제국으로부터 들려오는 최근의 보고들에 따르면 현재 전략적, 정치적 변화가 진행 중이라고 합니다. 카이저는 플루시온의 통치 영역이 당분간 충분히 확장되었다고 판단한 듯하며, 참모들에게 대규모 행정 개편을 위한 다양한 계획 초안을 작성하도록 지시하고 있습니다.\n\n카첸 군국주의의 포기를 기대할 수는 없겠지만, 제국 국경에 인접한 자유 국가들에게는 잠시 숨 고를 틈이 찾아올 것으로 보입니다. 반면 이미 카이저의 발굽 아래 있는 이들에게는 더욱 가혹한 통제가 조여올 것입니다.\n\n실질적으로 이는 카이저가 향후 몇 년 동안 진행 중인 분쟁들을 마무리 짓고 끊임없는 팽창주의를 억제하려 함을 의미합니다. 새로운 첩보를 바탕으로 은하계 정세를 검토하여 이것이 우리에게 기회를 제공하는지 확인해야 합니다." # 16412168600567907199
+  giga_katzen.7000.a: "매우 반가운 소식이다." # 18086611281131594440
+  giga_katzen.7000.a.tooltip: "카첸인들이 외부 외교에 쏟을 여유가 없어짐에 따라, §B카첸 개혁§! 기간 동안 §Y카첸 무관§!이 우호도를 높일 확률이 §R절반으로 감소§!합니다." # 11552309869069395470
+  giga_katzen.7000.b: "플루시온과의 관계를 더 돈독히 할 기회인가?" # 1331277526604173807
+  giga_katzen.7000.c: "플루시온의 손아귀에서 벗어날 시간이 얼마 남지 않았다..." # 12557315032450661312
+  giga_katzen.7000.d: "관료제의 계획을 방해하기 위해 수치를 조작합니다." # 371350996319967027
+  katzen_instability_up: "이는 제국이 치명적일 수 있는 불안정성으로 고통받을 확률을 §G증가§!시킬 것입니다." # 7245820793740244007
+  katzen_instability_up_lots: "이는 제국이 치명적일 수 있는 불안정성으로 고통받을 확률을 §G크게 증가§!시킬 것입니다." # 8677591984958992027
+  katzen_instability_down: "이는 제국이 치명적일 수 있는 불안정성으로 고통받을 확률을 §R감소§!시킬 것입니다." # 6542438951483159364
+  giga_katzen.7001.name: "카첸의 평화 제의" # 1964891834569908533
+  giga_katzen.7001.desc: "카첸아르틱 제국으로부터 들어오는 고위급 통신에 따르면, 현재 국경을 유지한 채 우리와의 전쟁을 종결할 것을 제안하고 있습니다. 악명 높은 폭력성과 팽창주의 성향을 지닌 카첸인들로서는 이례적인 제안이지만, 최근 대외 문제에서 대내 문제로 초점을 전환한 것을 고려하면 완전히 예상치 못한 일은 아닙니다.\n\n평화 제의는 진심인 것으로 보이지만, 카첸인들은 자신들이 단순히 무른 태도를 취하는 것이 아니며 우리가 거부할 경우 전력을 다해 전쟁을 계속할 준비가 되어 있다고 분명히 밝혔습니다. 물론 우리가 자신 있다면 계속 싸우며 더 유리한 입장에 섰을 때 평화를 요구하거나, 혹은 아예 평화를 거부할 수도 있습니다..." # 1717099868236714326
+  giga_katzen.7001.a: "계투를 계속한다." # 16844575359607466816
+  giga_katzen.7001.militarist.a: "저들이 주저하고 있을지 몰라도, 우리는 그렇지 않다." # 14203876435016869787
+  giga_katzen.7001.b: "휴전을 시작한다." # 15100374312722214455
+  giga_katzen.7001.pacifist.b: "드디어 저들에게서 이성적인 순간이 오는군." # 14110578453925713991
+  giga_katzen.7002.name: "카첸아르틱 개혁 개시" # 1557213828652285003
+  giga_katzen.7002.desc: "카첸아르틱 제국에서 흘러나오는 공공 정보에 따르면 카이저가 한때 은밀히 추진하던 개혁 계획을 강행했다고 합니다. 입수한 최신 첩보에 따르면, 카이저는 플루시온의 행성 및 제국 전반의 권력을 공고히 하기 위해 고안된 광범위한 행정 개혁들을 단행하는 데 약 20년의 세월을 소모할 것으로 예상됩니다.\n\n물론 개혁은 위험한 사업이며, 특히 카첸화 가속이나 지역 정치적 특권의 재조정과 같은 프로그램들은 반발을 불러일으킬 가능성이 매우 높습니다. 카이저가 이 시기를 지나 자신의 통치권을 더욱 강화된 상태로 마칠 수 있을지는 전적으로 시민들과 부하들이 카이저가 약속을 이행했다고 느끼는지 여부에 달려 있을 것입니다..." # 5210342973117900708
+  giga_katzen.7002.a: "그들이 계속 이 상태를 유지하기를 바라자..." # 4366313136125093739
+  giga_katzen.7002.b: "명령만 내리소서, 따르겠나이다." # 805467589642390671
+  giga_katzen.7002.c: "모든 것이 수포로 돌아가기를 바랄 뿐입니다." # 422313062007273684
+  giga_katzen.7002.d: "몇 가지 개혁을 대충 처리하는 정도는 우리도 할 수 있을 텐데..." # 1905045254102045593
+  giga_katzen.7012.name: "카첸아르티크 제국의 불안정!" # 14993187249603098187
+  giga_katzen.7012.desc: "카첸아르티크 시민들이 카이저가 약속한 유토피아적 비전을 카이저가 실현하지 못하고 있다고 느끼는 모양입니다. 수도 자체에서 공공연한 소요 사태가 발생했으며, 카이저는 권력을 재구축하기 위해 강경 진압으로 대응했습니다. 하지만 세간의 이목을 끄는 반역죄 선고가 급증한 것으로 볼 때, 제국의 고위층 모두가 카이저의 의지를 집행하는 데 열성적인 것은 아닌 듯합니다.\n\n카이저의 통치에 대한 이러한 시험에도 불구하고, 카이저 정권이 붕괴할지 아니면 또 다른 세대를 위해 권력을 재구축할지 단언하기는 아직 이릅니다. 그리고 이 위기가 수많은 사회적 전선에서 전개되고 있는 만큼, 답을 얻기까지는 몇 년이 걸릴 수도 있습니다.\n\n그렇다 하더라도 이 시기 동안 카첸아르티크 제국은 추가적인 위협에 대처할 역량이 부족할 수 있으며, 전쟁은 카첸 정부를 한계까지 몰아붙이는 데 도움이 될 수 있습니다..." # 8343208089808699936
+  giga_katzen.7012.a: "유망한 소식입니다." # 14184650642225119080
+  giga_katzen.7012.b: "압박을 가중하겠다!" # 13358130493384466436
+  giga_katzen.7012.b.tooltip: "우리는 §Y카첸아르티크 제국§!에 §R선전포고§!를 할 것입니다. 향후 몇 년간의 성공적인 공세는 제국이 붕괴할 확률을 §G증가§!시킬 것입니다." # 3605617635569503469
+  giga_katzen.7012.c: "반역자들! 우리는 카이저를 믿는다." # 14477589057707365126
+  giga_katzen.7012.c.tooltip: "§Y카이저를 지지하거나 반대하는 것은 카이저가 권력을 유지할 확률에 영향을 미칩니다.§!" # 889712260153244858
+  giga_katzen.7012.d: "이번이 반란을 일으킬 마지막 기회일지도 몰라!" # 2155471948380626120
+  giga_katzen.7012.d.tooltip: "$giga_katzen.0033.a.tooltip$\n\n$giga_katzen.7012.c.tooltip$" # 9151758867724016953
+  giga_katzen.7012.e: "우리 인구가 내부에서부터 제국을 뒤엎을 것이다!" # 6624309598142353037
+  giga_katzen.7013.name: "카이저가 권력을 유지하다" # 109522546974340686
+  giga_katzen.7013.desc: "카첸아르티크 제국의 최근 소요 사태가 진정되었으며, 카이저의 권력 장악력은 시험을 거쳤으나 꺾이지 않은 채 드러났습니다. 양보해야 할 때와 잔혹하게 탄압해야 할 때를 가늠하는 기이할 정도로 운 좋은 일련의 도박을 통해, 카이저 정권은 대부분의 화약고 이슈를 성공적으로 무력화했습니다.\n\n이번 사건이 카이저의 준신성(準神性)적 이미지에 큰 타격을 입히기는 했지만, 카첸아르티크 제국은 예정보다 조금 늦어졌을 뿐 개혁의 궤도로 다시 복귀한 것으로 보입니다." # 8943525968043522346
+  giga_katzen.7013.a: "젠장!" # 494873546911456286
+  giga_katzen.7013.b: "정의가 오늘 승리한다." # 2118360691761283509
+  giga_katzen.7013.c: "우리는 기회를 놓쳤어..." # 9278950337568650482
+  giga_katzen.7014.name: "카첸아르티크 제국이 폭발하다!" # 15372310090571535167
+  giga_katzen.7014.desc: "카첸아르티크 제국의 악화되던 상황이 급변하여 카이저가 실종되었습니다! 혼란스러운 상황 속에서, 수많은 암투를 벌이던 파벌 중 누가 그를 폐위시켰는지, 아니면 카이저 스스로가 몰락하는 자신의 계획을 직감하고 붕괴하는 프로젝트로부터 깔끔하게 도피를 조직했는지는 알 수 없습니다. 어쨌든 카이저가 사라지자 그의 정권은 완전히 붕괴했습니다.\n\n여러 지도자가 절대권력을 장악하거나 사태를 중재하려는 시도는 모두 실패로 돌아갔습니다. 제국의 한정된 영토에 너무나 많은 긴장이 압축된 결과, 그 어떤 가시적인 중앙 권력도 완전히 해체되었습니다. 이제 남은 것은 잔혹한 행성 간 권력 투쟁뿐입니다.\n\n카이저 시대의 위대한 프로젝트들은 지지자와 반대자들의 꿈과 함께 화염 속에 휩싸였습니다. 플루시온은 이론적으로 여전히 어마어마한 산업 잠재력을 가지고 있지만, 제국의 불쌍한 잔재가 조만간 은하계 무대로 복귀하려면 정치적 기적이 일어나야 할 것입니다." # 15368239681531634926
+  giga_katzen.7014.b: "그들의 폭력적인 방식이 그토록 끔찍한 결말을 불러왔군요..." # 1459812159403153015
+  giga_katzen.7020.name: "카첸아르티크 제국이 분열되었습니다!" # 17127215941987073803
+  giga_katzen.7020.loris.desc: "카첸아르티크 제국의 악화되던 상황이 카이저의 실종과 함께 급변했습니다! 혼란스러운 상황 속에서, 수많은 암투를 벌이던 세력 중 누가 그를 폐위시켰는지, 아니면 카이저 스스로가 몰락하는 계획을 눈치채고 무너지는 제국으로부터 깔끔하게 탈출을 감행했는지는 알 수 없습니다. 어쨌든 카이저가 사라지면서 그의 정권은 완전히 붕괴되었습니다.\n\n이제 카첸 영토는 §Y[katzen_civil_war_realm.GetName]§!, §Y[katzen_civil_war_republic.GetName]§!, §Y[katzen_civil_war_socialist.GetName]§!, §Y[katzen_civil_war_junta.GetName]§!의 4개 세력 간에 벌어지는 혹독한 §Y카첸 내전§!(으)로 갈라졌습니다! 스스로 정통 후계자임을 자처하는 각 세력은 몰락한 제국의 저명한 지도자가 이끌고 있으며, 카첸 국가를 재건하는 방법에 대해 타협할 수 없는 비전을 품고 있습니다.\n\n인상적이게도, 이전 플루시온의 총독이었던 로리스 폰 카텐스바흐는 플루시온 주변에 비교적 안정적인 중립 지대인 §Y플루시온 임시 정부§!(를)을 구축하는 데 성공했습니다. 카첸아르티크의 옛 영토 내에는 만약 내전이 확고하게 종결된다면, 승자가 플루시온의 민간 정부와 재통합하여 정통성과 안정성을 부여할 것이라는 불안정한 합의가 존재합니다. 키블스와 키티 루프트가 이끄는, 시민의 안익을 최우선으로 둘 여지를 남겨둔 평화주의 성향의 경쟁자들은 로리스의 개인적인 지지를 받고 있을 것으로 널리 의심받고 있지만, 플루시온의 지도자는 플루시온의 자산 보존과 카첸의 단결을 최우선으로 생각하고 있는 것으로 보입니다." # 2250910209754217709
+  giga_katzen.7020.douclaw.desc: "카첸아르티크 제국의 악화되던 상황이 카이저의 실종과 함께 급변했습니다! 혼란스러운 상황 속에서, 수많은 암투를 벌이던 세력 중 누가 그를 폐위시켰는지, 아니면 카이저 스스로가 몰락하는 계획을 눈치채고 무너지는 제국으로부터 깔끔하게 탈출을 감행했는지는 알 수 없습니다. 어쨌든 카이저가 사라지면서 그의 정권은 완전히 붕괴되었습니다.\n\n이제 카첸 영토는 §Y[katzen_civil_war_realm.GetName]§!, §Y[katzen_civil_war_republic.GetName]§!, §Y[katzen_civil_war_socialist.GetName]§!, §Y[katzen_civil_war_junta.GetName]§!의 4개 세력 간에 벌어지는 혹독한 §Y카첸 내전§!(으)로 갈라졌습니다! 스스로 정통 후계자임을 자처하는 각 세력은 몰락한 제국의 저명한 지도자가 이끌고 있으며, 카첸 국가를 재건하는 방법에 대해 타협할 수 없는 비전을 품고 있습니다.\n\n인상적이게도, 이전 카첸 해군참모총장이었던 도우클로 맥카수르는 플루시온 주변에 비교적 안정적인 중립 지대인 §Y카첸아르티크 비상 사령부§!(를)을 구축하는 데 성공했습니다. 카첸아르티크의 옛 영토 내에는 만약 내전이 확고하게 종결된다면, 승자가 플루시온의 군사 정부와 재통합하여 정통성과 안정성을 부여할 것이라는 불안정한 합의가 존재합니다. 카틀리닌과 엘윈이 이끄는, 카이저와 같은 군사적 가치를 우선시하는 군국주의 성향의 경쟁자들은 도우클로의 개인적인 지지를 받고 있을 것으로 널리 의심받고 있지만, 플루시온의 지도자는 플루시온의 자산 보존과 카첸의 단결을 최우선으로 생각하고 있는 것으로 보입니다." # 5750677271612982358
+  giga_katzen.7020.b: "비열한 반역자들이 우리의 미래를 훔쳤다!" # 298524064911671499
+  giga_katzen.7020.b.tooltip: "§R우리는 독립을 이루었습니다.§!" # 14044629745416036189
+  giga_katzen.7020.c: "드디어 다시 자유다!" # 5808994487374462002
+  giga_katzen.7020.c.tooltip: "§G우리는 독립을 이루었습니다.§!" # 10349866440023655416
+  giga_katzen.7021.name: "[GigaFlusionProvisionalGovernmentName]" # 8662446497583935572
+  giga_katzen.7021.name.loris: "플루시온 임시 정부" # 8001892023526231469
+  giga_katzen.7021.name.douclaw: "카첸아르티크 비상 사령부" # 15381851507711058761
+  giga_katzen.7021.intro.loris.desc: "플루시온에서 외계인 여러분께 다시 인사드립니다. 현재 우리의 지도자 §YLoris von Kattensbach§!(을)를 대신하여 말씀드리는 §YDouclaw MacCathur§!입니다.\n\n로리스의 노력 덕분에 우리는 플루시온과 그 직할 영토를 내전으로부터 보호해냈으며, 카첸 국가가 재통합될 때까지 주민들의 안전을 지킬 것입니다.\n\n우리는 외부인들과의 갈등을 원하지 않지만, 언제나 그렇듯이 우리 자신을 지킬 준비는 철저히 되어 있습니다." # 10302867278138152977
+  giga_katzen.7021.intro.loris.succession.desc: "플루시온에서 카첸인 여러분께 다시 인사드립니다. 현재 우리의 지도자 §YLoris von Kattensbach§!(을)를 대신하여 말씀드리는 §YDouclaw MacCathur§!입니다.\n\n로리스의 노력 덕분에 우리는 플루시온과 그 직할 영토를 내전으로부터 보호해냈으며, 카첸 국가가 재통합될 때까지 주민들의 안전을 지킬 것입니다.\n\n언제나 그렇듯이 우리 자신을 지킬 준비는 철저히 되어 있습니다만, 여러분도 우리 문명의 수도를 안전하게 지키는 것이 얼마나 중요한지 이해하리라 믿습니다." # 10026726627808868624
+  giga_katzen.7021.intro.douclaw.desc: "플루시온에서 외계인 여러분께 다시 인사드립니다. 제국 임시 정부의 지도자 §YDouclaw MacCathur§!입니다.\n\n군대의 신속한 조치 덕분에 우리는 플루시온과 그 직할 영토를 내전으로부터 보호해냈으며, 카첸 국가가 재통합될 때까지 이 땅을 안전하게 지킬 것입니다.\n\n우리는 외부인들과의 갈등을 원하지 않지만, 언제나 그렇듯이 우리 자신을 지킬 준비는 철저히 되어 있습니다." # 1424849116764506892
+  giga_katzen.7021.intro.douclaw.succession.desc: "플루시온에서 카첸인 여러분께 다시 인사드립니다. 제국 임시 정부의 지도자 §YDouclaw MacCathur§!입니다.\n\n군대의 신속한 조치 덕분에 우리는 플루시온과 그 직할 영토를 내전으로부터 보호해냈으며, 카첸 국가가 재통합될 때까지 이 땅을 안전하게 지킬 것입니다.\n\n언제나 그렇듯이 우리 자신을 지킬 준비는 철저히 되어 있습니다만, 여러분도 우리 문명의 수도를 안전하게 지키는 것이 얼마나 중요한지 이해하리라 믿습니다." # 15291983833001398040
+  giga_katzen.7021.whatareyou: "현재 플루시온의 책임자는 누구인가요?" # 14338654488347888961
+  giga_katzen.7021.whatareyou.response: "우리 [GigaFlusionProvisionalGovernmentName]은(는) 카첸아르티크 제국 기관의 직속 후신들을 계속해서 운영하고 있습니다. 우리의 임무는 진행 중인 내전이 플루시온에 있는 우리 문명의 수도를 파괴하지 못하도록 보장하는 것입니다." # 12788254252987534348
+  giga_katzen.7021.howalive: "[GigaFlusionProvisionalGovernmentName]은(는) 어떻게 생겨나게 되었나요?" # 11155945605180310227
+  giga_katzen.7021.howalive.loris.response: "카이저가 실종된 직후의 혼란을 간신히 이겨냈지만, 로리스 폰 카텐스바흐는 플루시온의 다양한 종족들에게 널리 존경받고 있으며 그들을 잘 대우함으로써 우리 모두가 서로에게 칼을 겨누지 않도록 막아주었습니다." # 485100644917503221
+  giga_katzen.7021.howalive.douclaw.response: "카이저가 사라졌을 때 상황은 암울했지만, 나는 그의 곁에서 많은 경험을 쌓았고 그것이 큰 도움이 되었습니다. 나는 도우클로 맥카수르라는 이름을 카이저의 충실한 참모로 기억하는 동료 장교들을 빠르게 규합했고, 상황을 수습하기 위해 움직였습니다." # 10400866095317934193
+  giga_katzen.7021.futureplans: "앞으로 무엇을 할 예정인가요?" # 1770588181369255744
+  giga_katzen.7021.futureplans.response: "내전이 종결되면 재통합 절차를 시작할 것입니다. 물론 우리의 조언에 따라, 플루전은 안정된 기관의 관리 상태에서 새로 들어서는 지도부로 이양될 것입니다." # 16864317711826629818
+  giga_katzen.7021.whoseside: "내전에서 어느 쪽 편을 들고 있나요?" # 13080340352229804543
+  giga_katzen.7021.whoseside.response: "우리는 매우 엄격한 중립을 지키고 있습니다. 아니요, 더 캐묻지 마세요. 위험한 주제입니다. 각 교전 세력이 우리를 배신자로 여긴다고 생각할지 모르지만, 우리가 편을 들지 않는 한 그들은 여기서 우리의 역할이 얼마나 중요한지 이해하고 있습니다." # 9501917361443698442
+  giga_katzen.7021.whoseside.succession.response: "우리는 매우 엄격한 중립을 지키고 있습니다. 아니요, 지원을 요구하지 마세요. 우리는 다른 교전 세력들에게 우리가 배신자가 아니라고 설득했지만, 그것은 우리가 편을 들지 않을 때만 유효합니다. 여기서 우리의 역할이 얼마나 중요한지 이해해 주시길 바랍니다." # 387487896627774819
+  giga_katzen.7021.a: "당신은 플루전의 합법적인 과도 정부와 이야기하고 있습니다." # 13725129784650234279
+  giga_katzen.7021.b: "플루전의 중립은 우리 문명의 가장 위대한 자산을 덧없는 권력 투쟁으로부터 보호하는 열쇠입니다." # 16916709731852397329
+  giga_katzen.7021.c: "안심하십시오, 우리는 여전히 우리 스스로를 방어할 충분한 능력이 있습니다." # 12885778365860816471
+  giga_katzen.7021.d: "카이저는 우리를 버렸지만, 우리는 우리 자신을 버리지 않았습니다." # 17448347490162666148
+  giga_katzen.7021.e: "플루전 인류의 유산은 낭비되어서는 안 되며, 낭비되지도 않을 것입니다." # 7301502462727926349
+  giga_katzen.7021.f: "플루전의 우리들은 전쟁의 신속한 종결을 바라고 있습니다. 글쎄요... 어떤 이들은 그렇습니다." # 5988387417696977381
+  giga_katzen.7021.g: "일부 플루전인들은 현재의 독립을 더 선호할지도 모르지만, 우리의 미래가 어떤 모습이든 간에, 무엇보다도 먼저 온전해야 합니다." # 8648648821128165348
+  giga_katzen.7021.h: "안정성이 최우선 순위입니다." # 5038130534736214512
+  giga_katzen.7021.i: "카이저 시대와는 꽤 달라 보일지라도, 우리 문명은 다시 통합될 것입니다." # 17760256000896793712
+  giga_katzen.7021.j: "당신이 내전에 개입한다면 우리는 편을 들 수 없지만, 당신이 플루전을 상대로 움직인다면 주저 없이 행동할 것입니다." # 16051455360296345461
+  giga_katzen.7021.k: "플루전인들은 강합니다. 우리도 이 시련을겨겨낼 것입니다." # 5143156876727867875
+  giga_katzen.7021.war.a: "아무것도 깨닫지 못하는 겁니까? 우리 카첸은 포기하지 않습니다." # 10508897602153393481
+  giga_katzen.7021.war.b: "우리의 무예가 카이저와 함께 사라졌다고 생각하십니까?" # 7350702272065938388
+  giga_katzen.7021.war.c: "프로젝트 몬트카노네부터 당신과의 전투까지, 공통된 위협만큼 플루전인들을 하나로 뭉치게 하는 것은 없습니다." # 18095008019514453336
+  giga_katzen.7021.diplowar: "§R당신은 너무 오랜 시간 동안 플루전에 매달려 있었습니다!§!" # 4462145171161730256
+  giga_katzen.7021.diplowar.response: "기꺼이... 덤벼보십시오!" # 7508532987665162252
+  giga_katzen.7021.diplowar.tooltip: "우리는 §Y[GigaFlusionProvisionalGovernmentName]§!(으)로 §R전쟁을 선포할 것입니다§!. 그들은 언제든지 평화를 받아들일 것입니다. 기존의 모든  Katzen 분리주의 국가들은 플루션을 방어하기 위해 우리와의 §R전쟁에 가담할 것입니다§!." # 12915523714355680315
+  cant_flusiokrieg_contender: "우리는 카첸 내전을 승리함으로써만 플루션과 재통합하기로 헌신했습니다." # 5022044478753074820
+  giga_katzen.7021.diplopeace: "§B이 싸움을 끝내자, 플루션인들이여.§!" # 18095350654560964521
+  giga_katzen.7021.diplopeace.response: "훌륭합니다. 이 무의미한 언쟁을 끝내죠." # 13441767509738357658
+  giga_katzen.7021.diplopeace.tooltip: "우리는 §Y[GigaFlusionProvisionalGovernmentName]§! 및 현재 그들의 방어를 위해 개입하고 있는 모든 Katzen 분리주의 국가들과의 §B전쟁을 종결할 것입니다§!. 모든 현재 국경은 유지됩니다." # 8945823601537264117
+  giga_katzen.7022.name: "계승" # 14004343213302285812
+  giga_katzen.7022.desc: "카이저는 사라졌고, 제국은 산산조각 났으며, 카첸킨트의 미래는 불투명합니다. 하지만 우리는 여전히 건재합니다. 그리고 불과 몇 년 전만 해도, 카이저의 말은 우리 역시 \"카첸\"이라는 것이었습니다. 카틀리닌, 엘윈, 키블스, 그리고 키티 루프트가 계승권을 주장했지만, 왜 우리가 그들보다 못하다는 말입니까?\n\n우리 문명의 역사를 정의할 선택의 기로에 서 있습니다: 카이저 계획의 폐허를 뒤로하고 떠날 것인가, 아니면 카첸 국가의 재통합에 우리의 권리를 주장할 것인가? 우리가 §Y카첸 내전§!에 참전하여 승리한다면, [GigaFlusionProvisionalGovernmentName]의 자산은 우리의 것이 될 것입니다. 그중에서도 가장 중요한 것은 카테일의 유산이 우리 이름으로 귀속되어 우리의 [root.species.GetHandNamePlural] 속에서 빚어질 것이라는 점입니다." # 9958556759060253585
+  giga_katzen.7022.a: "우리는 카첸아르티크 제국을 재건할 것입니다." # 265072150586020416
+  giga_katzen.7022.a.tooltip: "우리는 §Y카첸 내전§!에 §R참전할 것이며§!, 다른 모든 계승 경쟁자들을 물리친다면 §Y[GigaFlusionProvisionalGovernmentName]§!을(를) 병합하고 §B[root.GetAdj] 카첸제국(Katzimperium)§!(이)가 될 것입니다. 전쟁을 떠나는 것은 §R불가능할 것입니다§!." # 6447970804624287946
+  giga_katzen.7022.b: "아니요. 더 이상은 안 됩니다." # 15960966902426063557
+  giga_katzen.7022.b.tooltip: "§Y이 기회는 다시 오지 않을 것입니다.§!" # 9557874859317275249
+  giga_katzen.7023.name: "왕위 계승" # 17768060283665416370
+  giga_katzen.7023.loris.desc: "마침내 카첸 내전이 끝났습니다. 카이저가 사라진 후의 혼란이 찾아왔고, 수년간의 잔혹한 갈등이 이어졌으며, 그리고 침묵이 찾아왔습니다—이제 그것은 승리의 우레와 같은 함성으로 대체되었습니다. 카틀리닌, 엘윈, 키블스, 그리고 키티 루프트의 선동적인 외침은 역사 속으로 묻혔습니다. 전장에 우리만 남은 이상, 우리의 정당한 상속 주장을 반박할 경쟁자가 남아있지 않기 때문입니다.\n\n이제 §YLoris von Kattensbach§!(이)가 §Y플루션 임시 당국§!의 관리직을 퇴위하고, 카첸 문명의 심장부와 미래를 향한 우리의 비전을 우리에게 맡겼습니다. 이와 함께 카첸 국가는 다시 태어났습니다. 은하는 이제 §B$katzen_new_imperium_name$§!을(를) 알게 됩니다." # 5550591819985588233
+  giga_katzen.7023.douclaw.desc: "마침내 카첸 내전이 끝났습니다. 카이저가 사라진 후의 혼란이 찾아왔고, 수년간의 잔혹한 갈등이 이어졌으며, 그리고 침묵이 찾아왔습니다—이제 그것은 승리의 우레와 같은 함성으로 대체되었습니다. 카틀리닌, 엘윈, 키블스, 그리고 키티 루프트의 선동적인 외침은 역사 속으로 묻혔습니다. 전장에 우리만 남은 이상, 우리의 정당한 상속 주장을 반박할 경쟁자가 남아있지 않기 때문입니다.\n\n이제 §YDouclaw MacCathur§!(이)가 §Y카첸아르티크 비상 사령부§!의 관리직을 퇴위하고, 카첸 문명의 심장부와 미래를 향한 우리의 비전을 우리에게 맡겼습니다. 이와 함께 카첸 국가는 다시 태어났습니다. 은하는 이제 §B$katzen_new_imperium_name$§!을(를) 알게 됩니다." # 1625979642489388559
+  giga_katzen.7023.noprovisional.desc: "마침내 카첸 내전이 끝났습니다. 카이저가 사라진 후의 혼란이 찾아왔고, 수년간의 잔혹한 갈등이 이어졌으며, 그리고 침묵이 찾아왔습니다—이제 그것은 승리의 우레와 같은 함성으로 대체되었습니다. 카틀리닌, 엘윈, 키블스, 그리고 키티 루프트의 선동적인 외침은 역사 속으로 묻혔습니다. 전장에 우리만 남은 이상, 우리의 정당한 상속 주장을 반박할 경쟁자가 남아있지 않기 때문입니다.\n\n[GigaFlusionProvisionalGovernmentName]와의 기쁜 재회는 우리에게서 빼앗겼을지도 모르지만, 그럼에도 불구하고 카첸킨트는 미래를 향한 우리의 비전 아래 다시 하나가 되었습니다. 이와 함께 카첸 국가는 다시 태어났습니다. 은하는 이제 §B$katzen_new_imperium_name$§!을(를) 알게 됩니다." # 14086822990061833212
+  giga_katzen.7023.a: "카이저는 사라졌지만, 제국은 건재합니다." # 13365119925819403549
+  giga_katzen.7023.a.tooltip: "우리는 §Y[GigaFlusionProvisionalGovernmentName]§!을(를) §G통합§!하고 §B[root.GetAdj] 카첸제국(Katzimperium)§!(이)가 될 것입니다." # 16721949830181336909
+  katzen_new_imperium_name: "[root.GetAdj] 카츠임페리움" # 6705167236549274052
+  giga_katzen.7024.name: "[katzen_civil_war_player.GetName]이(가) 카첸아르티크 제국을 재통합합니다!" # 3161498815258694110
+  giga_katzen.7024.loris.desc: "카첸 내전의 다른 모든 교전 세력들이 파괴됨에 따라, 이제 §Y[katzen_civil_war_player.GetName]§!(이)가 치명적인 고양이 내전의 최종 승자로 자리 잡았습니다.\n\n내전이 종결된 후, §YLoris von Kattensbach§!(이)가 승리한 세력과 §Y플루션 임시 당국§!을 통합하기 위한 협상을 시작하였으며, 이는 §Y[katzen_civil_war_player.GetAdj] 카첸제국§!의 수립으로 절정에 달했습니다.\n\n카첸 경쟁자들의 짐을 덜어내고 이제 플루션의 경제적 강점을 무기로 삼은 이 승리에 찬 새로운 국가는 은하계 정세에서 우위에 서게 되었습니다. 이제 남은 질문은 이 개혁된 제국이 자기 자신과 은하계를 위해 어떤 비전을 가지고 있는가 하는 것입니다." # 9408484355604800529
+  giga_katzen.7024.douclaw.desc: "카첸 내전의 다른 모든 교전 세력들이 파괴됨에 따라, 이제 §Y[katzen_civil_war_player.GetName]§!(이)가 치명적인 고양이 내전의 최종 승자로 우뚝 섰습니다.\n\n내전이 종결된 후, §Y더클로 맥캐서§!는 §Y카첸라티크 비상 사령부§!와 승전 세력을 통합하기 위한 협상에 착수했으며, 이는 §Y[katzen_civil_war_player.GetAdj] 카첸제국§!의 수립으로 절정에 달했습니다.\n\n최근 카첸 라이벌들의 짐을 덜어내고 이제 플루시온의 경제력 원동력으로 무장한 이 승리에 찬 새로운 국가는 은하계의 주도권을 장악하고 있습니다. 이제 남은 질문은 이 개혁된 제국이 자신과 은하계를 위해 어떤 미래를 그리고 있는가 하는 점입니다." # 7842535237015583338
+  giga_katzen.7024.noprovisional.desc: "카첸 내전의 다른 모든 교전 세력들이 파괴됨에 따라, 이제 §Y[katzen_civil_war_player.GetName]§!(이)가 치명적인 고양이 내전의 최종 승자로 우뚝 섰습니다.\n\n내전이 종결된 후, 승전 세력은 국가적 변모를 겪었으며, 이는 §Y[katzen_civil_war_player.GetAdj] 카첸제국§!의 등장으로 절정에 달했습니다.\n\n최근 카첸 라이벌들의 짐을 덜어내고 이제 플루시온의 경제력 원동력으로 무장한 이 승리에 찬 새로운 국가는 은하계의 주도권을 장악하고 있습니다. 이제 남은 질문은 이 개혁된 제국이 자신과 은하계를 위해 어떤 미래를 그리고 있는가 하는 점입니다." # 5127006072208967872
+  giga_katzen.7024.a: "제발, 그만..." # 16644057844846424152
+  giga_katzen.7024.b: "그들이 어떤 길을 갈지 지켜보겠소." # 17156157374852747025
+  giga_katzen.7024.c: "역사적으로 의로운 날입니다." # 11394768613378541183
+  giga_katzen.7031.name: "네사르에서의 카첸 행성함 건조!" # 18084533931458807650
+  giga_katzen.7031.desc: "거대 구조물 공학에 대한 카이저의 애정이 낳은 최신작이 용암 행성 §YNesar§!에서 잉태되고 있습니다. 그것이 무엇인지는 이미 알고 있습니다. 애초에 §R행성 전체를 군함으로 개조하는 것§!을 숨기기는 어려우니까요. 따라서 카첸라티크 제국은 대신 이 새로운 거대 구조물을 결집의 야망으로 요란하게 내세우며, 건조 중인 \"§YKaiserübermacht§!\"가 과거 카이저 문의 완공에 필적하는 카첸 역사상 비약적인 도약이 될 것이라고 공약하고 있습니다.\n\n새로운 기함이 취역하면 카이저 문은 이류로 전락하겠지만, 모델 자체가 구식이 되는 것은 아닙니다. 오히려 §R카이저 문이 본격적인 양산에 돌입§!하여 카첸 군사 산업의 새로운 정점을 알리게 될 것입니다. 하지만 카이저우베르마흐트와 기존 카이저 문의 역할에는 핵심적인 차이가 있습니다. 이론상 카이저우베르마흐트가 패배하더라도 §R제국이 혼란에 빠지지는 않는다§!는 것입니다. §B개혁§!이 행정적 강화를 완료한다면, 플루시온을 잃는 것 외에는 카이저의 기계를 멈출 수 없을 것으로 예상됩니다.\n\n카첸의 위협을 타도하고자 한다면, 카이저우베르마흐트가 가동되고 카이저의 은하 정복이 다시 시작되기까지 §R우리에게는 단 10년의 시간밖에 없을§! 것입니다..." # 5550813357719636669
+  giga_katzen.7031.ally.desc: "거대 구조물 공학에 대한 카이저의 애정이 낳은 최신작이 용암 행성 §YNesar§!에서 잉태되고 있습니다. 그것이 무엇인지는 이미 알고 있습니다. 애초에 §R행성 전체를 군함으로 개조하는 것§!을 숨기기는 어려우니까요. 따라서 카첸라티크 제국은 대신 이 새로운 거대 구조물을 결집의 야망으로 요란하게 내세우며, 건조 중인 \"§YKaiserübermacht§!\"가 과거 카이저 문의 완공에 필적하는 카첸 역사상 비약적인 도약이 될 것이라고 공약하고 있습니다.\n\n새로운 기함이 취역하면 카이저 문은 이류로 전락하겠지만, 모델 자체가 구식이 되는 것은 아닙니다. 오히려 §R카이저 문이 본격적인 양산에 돌입§!하여 카첸 군사 산업의 새로운 정점을 알리게 될 것입니다. 하지만 카이저우베르마흐트와 기존 카이저 문의 역할에는 핵심적인 차이가 있습니다. 이론상 카이저우베르마흐트가 패배하더라도 §R제국이 혼란에 빠지지는 않는다§!는 것입니다. §B개혁§!이 행정적 강화를 완료한다면, 플루시온을 잃는 것 외에는 카이저의 기계를 멈출 수 없을 것으로 예상됩니다.\n\n제국을 타도하고자 하는 이들에게는, 카이저우베르마흐트가 가동되고 카이저의 은하 정복이 다시 시작되기까지 §R단 10년의 시간밖에 없을§! 것입니다..." # 5615222939121385834
+  giga_katzen.7031.a: "이럴수가..." # 4940173092505810561
+  giga_katzen.7031.b: "시간이 있을 때 당장 그들을 막아야 합니다!" # 16379687289822335993
+  giga_katzen.7031.b.tooltip: "우리는 카첸라티크 제국에 §R전쟁을 선포§!할 것입니다." # 12090361349838146082
+  giga_katzen.7031.c: "카이저께 영광을." # 12027012024063641425
+  giga_katzen.7032.name: "제2차 카첸 정복" # 17966751269112992112
+  giga_katzen.7032.desc: "카첸의 전략이 다시 한번 플루시온을 향하고 있습니다. 다만 이번에는 내정이 아니라 대외적인 방향입니다. 행정적 광풍이 잦아들고 군수 공장이 가동을 시작합니다. 한편, 카이저는 그 어느 때보다 권력을 공고히 다진 것으로 보입니다. 한때 네사르로 불렸으나 이제는 §IKaiserübermacht§!(으)로 불리는 거대한 행성 군함과 함께 §B카첸 개혁§!이 완료된 것으로 보입니다.\n\n카이저는 카첸 문명의 빛이 파우시픽의 심장부에서 은하계의 끝까지, 그리고 그 너머까지 비추게 될 것이라고 맹세했습니다. §R제2차 카첸 정복§!이 시작되었습니다." # 16002260791193629436
+  giga_katzen.7032.a: "이렇게 다시 시작되는군." # 3649339981266479957
+  giga_katzen.7032.a.tooltip: "§R카첸라티크 제국이 다시 팽창주의적 태도로 돌아갔습니다. 이제 추가적인 카이저 문을 건조하고 더 강력한 마크 II 함선을 배치할 것입니다. 카이저 문은 더 이상 사보타주할 수 없으며, 파괴되더라도 카첸인들이 혼란 상태에 빠지지 않을 것입니다.§!" # 17620423225464948904
+  giga_katzen.7032.b: "카첸의 아이들이 전진한다." # 15802432455623130050
+  giga_katzen.7040.name: "애국적인 요청" # 12024636806230358182
+  giga_katzen.7040.desc: "카이저를 위한 시민들이라는 단체가 친카첸 대규모 집회 자금을 지원받기 위해 보조금을 신청하며, \"카이저의 위대한 사명에 대한 [root.GetAdj] 국민들의 열정을 확고히 하겠다\"는 임무를 밝혔습니다.\n\n우리에게 자금을 제공할 법적 의무는 없지만, 플루시온의 언론 매체들은 이미 청원자들의 애국심을 칭찬하고 있으므로 신청을 거부할 경우 우리의 평판에 큰 부담이 될 것입니다. 게다가, 확인할 수 없는 첩보에 따르면 주최측 중에 플루시온 요원들이 섞여 있을 가능성이 있습니다. 사실이라면 이 상황은 우리의 충성 서약을 강요하기 위한 계략일 것입니다... 설령 그렇지 않더라도 결과는 마찬가지입니다." # 7729419745548152083
+  giga_katzen.7040.a: "지원금을 승인합니다." # 18391650579229107863
+  giga_katzen.7040.b: "우리는 이에 예산을 배정하지 않을 것입니다." # 18224242192403149672
+  giga_katzen.7040.c: "주최 측을 반역죄로 기소하십시오." # 10895477406051110394
+  giga_katzen.7041.name: "플루시온의 흔들리는 재정" # 338756483404474531
+  giga_katzen.7041.desc: "플루시온의 최근 뉴스 보도에 따르면, 대규모 도시 건설 계약이 틀어진 후 한 대형 건설 회사가 파산 직전에 이르렀으며, 핵심 유지 보수 자금조달조차 겨우 유지되는 반쯤 지어진 수백 개의 구조물만 남게 되었다고 합니다. 평소라면 우리와 상관없는 일이었겠지만, 가장 최근 뉴스는 우리가 이제 이 이야기의 일부가 되었다는 것입니다! 플루시온 행정부는 재정난에 빠진 회사를 구제하라고 우리에게 압력을 가하고 있으며, 이는 건설을 다시 정상 궤도에 올려놓을 것입니다.\n\n만약 우리가 자금을 마련할 수 없거나 거부한다면, 플루시온 연락관들은 우리의 카첸아르티크 무역 구역 특권 중 일부가 정지될 수 있다고 암시하고 있습니다..." # 7356860313003020980
+  giga_katzen.7041.a: "자금을 마련하십시오." # 14163648620272013257
+  giga_katzen.7041.corporate.a: "영리한 투자는 부분적으로 스스로 자금을 조달할 수 있습니다..." # 6165282622720640383
+  giga_katzen.7041.b: "우리는 플루시온의 재정에 책임이 없습니다." # 12543070315320743486
+  giga_katzen.7042.name: "플루시온의 마찰" # 4596306359094607183
+  giga_katzen.7042.desc: "플루시온의 중앙 정부는 자국과 [root.GetCapitalName] 사이의 적지 않은 데이터 공유 사고율을 눈치채고, 카첸아르티크 표준보다는 주로 자체 프로세스를 사용하는 우리의 관료제를 탓하고 있습니다. 플루시온은 카이저의 관료들이 우리의 데이터에 더 원활하게 접근할 수 있게 해 줄 표준화 및 통합 프로그램의 비용을 전액 지불하겠다고 제안하고 있습니다. 그들은 이것이 제국의 일원이 되는 이점을 극대화하는 데 사용될 것이라고 확신합니다. 현재의 프로세스를 유지하기로 선택할 수도 있지만, 플루시온은 앞으로 너무 많은 중복 프로세스를 운영하는 것에 대한 전적인 책임이 우리의 예산에 있다고 경고했습니다." # 485664136729418666
+  giga_katzen.7042.a: "합리적인 제안입니다." # 15812363569144249436
+  giga_katzen.7042.b: "우리는 스스로를 관리하는 법을 알고 있습니다." # 6645698475453784699
+  giga_katzen.7043.name: "[VassalEventTitleCultural]" # 9061092256376383797
+  giga_katzen.7043.individualist.name: "문화 보호 요구" # 6976253359734827053
+  giga_katzen.7043.desc: "카첸아르티크의 신하가 된 이래로, 우리 문화의 모든 측면은 제국이 공포한 문화적 규범에 더 잘 부합하도록 \"카첸화\"를 거치고 있습니다. 하지만 최근 들어 이러한 동화 정책에 대한 불만이 거세지고 있습니다. 전통주의자와 급진적 문화 개혁론자 모두가 차이점을 제쳐두고 강제적인 카첸화에 대한 분노를 공유하며 목소리를 높이고 있습니다. 이 반대자들을 무시하면 그들의 반감이 더욱 커질 뿐이겠지만, 그들의 의견을 경청한다는 것은 그들의 문제를 플루시온에 전달한다는 뜻이며, 플루시온은 그 어떤 내용도 달가워하지 않을 것입니다..." # 16619377325991657188
+  giga_katzen.7043.a: "무시하십시오. 그들도 익숙해질 것입니다." # 17420548171536352621
+  giga_katzen.7043.b: "우리 인구의 우려를 플루시온에 전달하십시오." # 2473828045721072504
+  giga_katzen.7043.hive.name: "집단적 혼란" # 14546737203403217807
+  giga_katzen.7043.hive.desc: "카첸아르티크의 신하가 된 이래로, 우리 행동의 모든 측면은 제국이 공포한 문화적 규범에 군체 의식을 더 잘 끼워맞추기 위해 \"카첸화\"를 거치고 있습니다. 하지만 최근 들어 이러한 동화 정책의 심리적 대가가 수면 위로 떠오르고 있습니다. 카첸 이전 시대나 심지어 직전의 카첸 정책에 태어난 오래된 드론들은 활동에 적응하는 데 어려움을 겪고 있습니다.\n\n이를 내부적으로 해결하려면 불순응이 완전한 일탈이 되기 전에 이 드론들을 숙청해야겠지만, 그러한 결과를 피하려면 플루시온에 우리의 인구 대체율에 맞춰 카첸화를 늦춰달라고 요청해야 할 것이며, 이는 기쁘게 받아들여지지 않을 요청입니다..." # 838623243123280965
+  giga_katzen.7043.hive.a: "보조를 맞추지 못하는 드론들을 재처리하십시오." # 557660579096842585
+  giga_katzen.7043.gestalt.b: "카첸화의 속도를 늦춰달라고 요청하십시오." # 10989810913151215908
+  giga_katzen.7043.machine.name: "계획된 구식화" # 10730933022202179390
+  giga_katzen.7043.machine.desc: "카첸아르티크의 종속국이 된 이래로, 우리 행동의 모든 측면은 제국이 공포한 문화적 규범에 기계 집합체가 더 잘 부합하도록 \"카첸화(Katzenification)\"를 겪어왔습니다. 하지만 최근 들어 이러한 동화 정책의 운영 비용이 수면 위로 떠오르고 있습니다. 카첸 이전 시대나 혹은 직전의 카첸 정책에 맞춰 건조된 구형 드론들은 활동을 조절하기 위해 특수한 재프로그래밍이 필요하지만, 우리는 그 업데이트 속도를 따라잡지 못하고 있습니다.\n\n이 문제를 내부적으로 해결하려면 불행히도 이 드론들의 버전 비호환성이 완전한 일탈로 이어지기 전에 해체해야 하겠지만, 그러한 결과를 피하려면 플루시온에 카첸화를 우리의 표준 업데이트 주기에 맞춰 늦춰 달라고 요청해야 합니다. 물론 이는 기분 좋게 받아들여질 요청이 아닐 것입니다..." # 14417101525640199237
+  giga_katzen.7043.machine.a: "뒤처지는 드론을 해체합니다." # 2819552598992144226
+  giga_katzen.7044.name: "플루시온 교환 프로그램 제안" # 13100496081658964307
+  giga_katzen.7044.desc: "플루시온의 최신 제안은 우리 고위 관리들의 교육 중 일부를 카타운과 분덴그라드의 아카데미에 위탁하는 내용을 담고 있습니다. 이는 틀림없이 차세대 정치 엘리트들과 우호적인 인맥을 형성하고 캣젠의 통치 방식에 대한 경외심을 심어주기 위함일 것입니다. 이 엘리트 학교들은 고위급 실무를 직접 접할 수 있는 곳으로 유명하지만, 이 프로그램을 받아들이는 것은 우리 지도자들의 교육에 대한 통제권을 일부 포기하는 것을 의미합니다.\n\n이러한 대가가 용납할 수 없다면 제안을 단호히 거부할 수도 있지만, 플루시온은 기존의 공동 교육 프로그램에서 우리 지도자들을 배제하는 방식으로 보복할지도 모릅니다. 통제권을 유지하는 보다 온건한 방법으로는 우리 관리들을 플루시온에 파견하되 우리의 선호가 반영되도록 우리의 감독 하에 교육 과정을 다시 이수하게 하는 것입니다. 아니면... 단순히 이에 따를 수도 있습니다." # 7877991727758310501
+  giga_katzen.7044.a: "우리는 전적으로 협력하겠습니다." # 5019715749814517752
+  giga_katzen.7044.b: "병렬 국내 훈련을 실행합니다." # 4596803304601770367
+  giga_katzen.7044.c: "교환 프로그램을 전면 거부합니다." # 9778990088978831577
+  giga_katzen.7045.name: "선전 활동 위탁됨" # 12801889108932210640
+  giga_katzen.7045.desc: "그로스라우렌다르에 위치한 카첸아르티크 문화국은 카첸 황제에게 복종하는 것이 [Root.GetAjd] 사회에 어떤 이득을 가져다주었는지 칭송하는 정보 캠페인에 협조해 줄 것을 요구하고 있습니다. 이 메시지는 국경 너머의 이들을 대상으로 하겠지만, 국내 여론 또한 고려하지 않을 수 없습니다. 이런 식으로 우리의 과거를 깎아내리는 것은 카첸의 통치 이전의 삶이 더 나았다고 생각하는 우리 국민들에게 모욕이 될 것입니다.\n\n하지만 현실적으로 카첸아르티크 기관은 우리의 협조 여부와 관계없이 캠페인을 강행할 것이며, 우리가 관여하지 않는다면 우리에 대한 묘사가 훨씬 더 불래래하게 그려져 민심을 뒤흔들 수 있습니다... 우리에게는 양쪽 모두 손해인 진퇴양난의 선택이지만, 원한다면 적어도 우리의 역사를 지키고 서사의 주도권을 쥐기 위해 카첸에 맞서며 당당하게 패배하는 길을 택할 수도 있습니다." # 5621286441135394213
+  giga_katzen.7045.a: "협상 테이블에 자리를 잡는 것이 가장 좋습니다." # 12522706374672820475
+  giga_katzen.7045.b: "우리 자신에 대한 거짓말에는 서명하지 않을 것입니다." # 14495097989958229685
+  giga_katzen.7046.name: "카첸 연합 군사 훈련" # 11973362347672614047
+  giga_katzen.7046.desc: "카첸아르티크 해군의 최신 '카츠파치테트(Katzpazität)' 훈련이 다가오고 있으며, 이번에는 우리 제국이 개최국으로 지명되었습니다. 얻을 수 있는 명예만큼이나 비용이라는 현실적인 문제가 따릅니다. 카츠파치테트는 진지한 행사이며, 이를 개최하는 과정에서 군사 인프라가 받게 될 부담 역시 엄청납니다. 물론 특히 카첸아르티크 최고 사령부가 우리의 지명 사실을 대중에게 공표하여 압박을 가하고 있는 지금 이 기회를 거절하는 것은 무예의 가치에 대한 헌신 부족으로 해석될 수 있으며, 이는 임페리움 영토에게는 매우 심각한 비난이 될 것입니다.\n\n개최를 거절할 경우 군사적 통합이 처벌 수단으로 이용될 가능성이 높으므로, 현재의 안보 상황을 고려하여 우리의 대응을 신중하게 저울질해야 합니다." # 2336401391786698312
+  giga_katzen.7046.a: "카츠파치타트를 가져오십시오." # 9429819940570733552
+  giga_katzen.7046.b: "우리의 보급 체계는 손님을 맞이할 준비가 되어 있지 않습니다." # 3657104435811610961
+  giga_katzen.7047.name: "[VassalEventTitleAcademic]" # 14161123384258975834
+  giga_katzen.7047.individualist.name: "학문적 과잉 역량" # 9321302868784045086
+  giga_katzen.7047.desc: "최근 저명한 사회학자 팀이 캣첸 문화 동화에 대한 상당히 비판적인 저서를 출간했습니다. 학계의 파장에도 불구하고 보통 이러한 저서는 우리가 주목할 가치가 없지만, 이번 책은 카이통과 분덴그라드의 대학들로부터 분노를 사고 있습니다. 황제를 충실히 지지하는 이 출판사들은 우리 사회학자들에게 존경받지는 못하지만 무시하기에는 너무 큰 영향력을 가지고 있으며, 우리에게 아주 명확한 메시지를 보내고 있습니다. 우리의 학자들을 통제하든, 아니면 그들과의 교류를 끊어버리든 하라는 것입니다." # 7563042371968864251
+  giga_katzen.7047.a: "연구 윤리 지침을 개정하여 사회적 파장을 일으키는 논문의 발행을 금지합니다." # 4413720024307814231
+  giga_katzen.7047.b: "우리는 연구원들이 입막음당하도록 내버려 두지 않겠습니다." # 4507429045221690010
+  giga_katzen.7047.materialist.b: "지식에 대한 용납할 수 없는 공격입니다." # 16800146093999823659
+  giga_katzen.7047.hive.name: "위압적으로 커다란 두뇌 드론" # 10995705149802687142
+  giga_katzen.7047.hive.desc: "고급 사회학 두뇌 드론 군집이 최근 캇첸-속국 경제 관계의 효율성에 관한 매우 중요한 연구를 마쳤습니다. 우리에게는 귀중한 통찰을 주었지만, 보통 이러한 연구는 외교적으로 연관성이 없어야 정상입니다. 그러나 이 연구는 카타운과 분덴그라드의 대학들의 분노를 사고 말았습니다. 우리의 두뇌 드론들은 보통 이 카이저 친위 성향의 언론사들을 가볍게 무시하지만, 우리의 외교 서브노드가 무시하기에는 너무 큰 영향력을 가지고 있으며 아주 명확한 메시지를 보내오고 있습니다. 연구 우선순위를 바꾸지 않으면 연구 협력을 끊어버리겠다는 것입니다." # 5843724130832616167
+  giga_katzen.7047.machine.name: "초최적화 서브루틴" # 12062114579615859394
+  giga_katzen.7047.machine.desc: "고급 사회학 서브루틴 회로가 최근 캇첸-속국 경제 관계의 효율성에 관한 매우 중요한 연구를 마쳤습니다. 우리에게는 귀중한 통찰을 주었지만, 보통 이러한 연구는 외교적으로 연관성이 없어야 정상입니다. 그러나 이 연구는 카타운과 분덴그라드의 대학들의 분노를 사고 말았습니다. 우리의 연구 서브루틴들은 보통 이 카이저 친위 성향의 언론사들을 가볍게 무시하지만, 우리의 외교 서브노드가 무시하기에는 너무 큰 영향력을 가지고 있으며 아주 명확한 메시지를 보내오고 있습니다. 연구 우선순위를 바꾸지 않으면 연구 협력을 끊어버리겠다는 것입니다." # 17210918768888492420
+  giga_katzen.7047.gestalt.a: "앞으로 사회적 혼란을 야기할 연구는 우선순위에서 제외합니다." # 9087372683043254741
+  giga_katzen.7047.gestalt.b: "진실은 집합체의 최우선 과제입니다." # 4001653196506887747
+  giga_katzen.7048.name: "카츠고베르너의 정통성에 대한 의문 제기" # 12821404094942087060
+  giga_katzen.7048.desc_opening: "캇첸아르틱 제국에서 파견되어 우리를 통치하는 카츠고베르너 [Root.GetRulerName]이(가) 권력을 행사하는 데 어려움을 겪으며 우리 정부의 효율성을 저해하고 있습니다. 우리 사회의 광범위한 계층이 그들의 통치권을 거부하며 지시를 매우 마지못해 따르고 있는 것으로 보입니다." # 9775877416299140108
+  giga_katzen.7048.democratic.desc: "$giga_katzen.7048.desc_opening$\n\[Root.GetRulerName]에게 민주적 위임이 결여되어 있다는 사실을 현실적으로 부정하기는 어려우며, 플루션은 우리가 그들의 지도부를 투표에 부치도록 내버려 두지 않을 것입니다. 정통성을 조작하기 위해 우리가 할 수 있는 최선은 그들의 권력 규모를 축소하고 실질적으로는 의례적인 선출직 하위 임원들을 스포트라이트에 세우는 것뿐입니다... 하지만 과연 우리는 이토록 민주적 전통의 정신을 배신할 수 있을까요? 만약 그럴 수 없다면, 플루션과 카츠고베르너는 대중의 분노 속에서 역경을 헤쳐나가야만 할 것입니다." # 2939832658528022142
+  giga_katzen.7048.democratic.a: "대중들이 스스로를 지배하고 있다고 믿게 하십시오." # 3410469470923449479
+  giga_katzen.7048.democratic.b: "권력의 투명성은 타협할 수 없습니다." # 1068666353731010684
+  giga_katzen.7048.oligarchic.desc: "$giga_katzen.7048.desc_opening$\n\n과거의 친숙하고 유연한 인물들 대신 총독의 경직된 대외 충성심을 상대해야 하게 되자, 전통적인 기득권층은 영향력을 상실한 것에 불만을 품고 있습니다. 만약 그들이 공통의 이익을 위해 서로 공개적으로 모의하기 시작한다면, 총독의 지배력은 심각하게 약화될 수 있습니다. 이러한 상황을 피하는 가장 좋은 방법은 과두정 인사들 서로가 서로를 견제하도록 조작하여, 편집증과 경쟁을 통해 통일된 전선이 형성되는 것을 막는 것입니다. 물론 그것이 우리 정부의 다른 측면들을 약화시키겠지만 말입니다..." # 838547203893965779
+  giga_katzen.7048.oligarchic.a: "적응한다는 것은 권력 게임을 플레이하는 것을 의미합니다." # 18106565619412808873
+  giga_katzen.7048.oligarchic.b: "우리는 과두정의 공통 이익을 바탕으로 건설되었습니다." # 16690798139929701022
+  giga_katzen.7048.dictatorial.desc: "$giga_katzen.7048.desc_opening$\n\[Root.GetRulerName]이(가) 인지하지 못하는 [Root.GetAdj] 독재자의 통치 방식에 대한 특정한 가정들이 존재하며, 또한 [Root.GetRulerName]에게는 결여되어 있는 깊이 뿌리박힌 연줄들이 존재합니다. 외국 출신 통치자가 우리의 제도에 익숙하지 않다는 점은 그들을 취약하게 만듭니다. 우리는 카츠고베르너의 입지를 공고히 할 참모진을 구성함으로써 플루션의 환심을 살 수 있습니다... 하지만 그것이 정말 우리가 이루고 싶은 목표입니까?" # 10758167990016773724
+  giga_katzen.7048.dictatorial.a: "안정에는 진정으로 권위 있는 지도자가 필요합니다." # 15589769564113430391
+  giga_katzen.7048.dictatorial.b: "진정한 독재는 이 허수아비를 오래도록 압도할 것입니다." # 18004391316085878510
+  giga_katzen.7048.imperial.desc: "$giga_katzen.7048.desc_opening$\n\n단순한 사실은 카츠고베르너에게 제국 계승 서열에 오를 올바른 배경이 없으며, 앞으로도 결코 없을 것이라는 점입니다... 비유적으로 왕좌를 캇첸의 형태로 빚어내기 위해 우리 사회를 그들을 중심으로 재작성하지 않는 한 말입니다. 물론 그러한 조치가 가져올 문화적 여파는 가볍게 여길 수 없으며, 정통성 없는 통치자가 권력을 유지하도록 내버려 두는 것의 결과 또한 마찬가지입니다." # 7539857577094517405
+  giga_katzen.7048.imperial.a: "현재를 지배하는 자가 과거를 지배한다." # 8713432498737862533
+  giga_katzen.7048.imperial.b: "역사는 지나쳐 갈지언정 결코 배신당하지 않으리라." # 2930354514871722361
+  giga_katzen.7048.corporate.desc: "$giga_katzen.7048.desc_opening$\n\n카이저 규제 기관의 끊임없는 칙령이 가져온 충격에 투자자들이 허우적거리면서 시장의 분위기는 크게 흔들리고 있습니다. 민간 컨설턴트들은 혁신가들이 최신 규제 환경에 적응할 수 있도록 지원하는 역동적인 대응 팀을 설립하자는 영향력 큰 제안을 내놓고 있습니다... 하지만 로비스트들은 이로 인한 규정 준수 비용이 자신들의 이익률을 갉아먹는다며 맹렬히 반발하고 있고, 플루시옹의 경제 개입에 맞서 전 시장 차원의 경쟁적 확전을 옹호하고 있습니다." # 12685760176994603223
+  giga_katzen.7048.corporate.a: "지금 당장 가장 저렴한 길을 택하라." # 7245368166115496128
+  giga_katzen.7048.corporate.b: "시장 원리가 그 무엇보다 우선한다." # 16945317797528525652
+  giga_katzen.7049.name: "형사적 책임" # 3844660224490967100
+  giga_katzen.7049.desc: "캣첸 방첩 요원들로 구성된 사절단이 갑자기 [Capital.GetName]에 들이닥쳐, 악명 높은 파르티잔 조직이 우리 영토 내에서 암약하며 무기 부품을 밀수거하고 있다는 정황이 있다고 주장했습니다. 그들은 우리가 얼마나 매수되었는지 알 수 없다는 이유로 어떠한 증거도 제시하길 거부하면서도, 우리 보안 부대에 일방적인 협력을 요구하며... 기본적으로 요구하는 모든 정보의 인도를 강요하고 있습니다. 정보 공유가 전혀 이루어지지 않는 탓에, 우리는 이 파르티잔이 실존하는지 아니면 캣첸 보안 기관이 우리를 통제하기 위해 지어낸 핑계일 뿐인지조차 확인할 수 없습니다.\n\n명백한 이유로, 정보망에 이토록 많은 구멍을 뚫는 것은 엄청나게 위험할 뿐만 아니라 관료적 비용 또한 막대합니다. 하지만 협력을 거부했다가 파르티잔이 실제로 존재하여 제국을 상대로 한 공격을 성공시키기라도 한다면... 카이저의 분노는 상상조차 하기 두렵습니다." # 4510077457093967323
+  giga_katzen.7049.a: "우리는 유격대를 숨겨줄 위험을 감수할 수 없다." # 12773368051650524947
+  giga_katzen.7049.b: "최소한의 협력 - 우리의 정보원을 보호해야 한다." # 4744570924908121844
+  giga_katzen.7049.b.tooltip: "§R이는 가까운 미래에 예측할 수 없는 결과를 초래할 수 있습니다.§!" # 18138216697307430860
+  giga_katzen.70491.name: "영토 침범" # 7693619642668910183
+  giga_katzen.70491.desc: "[katzen_partisan_raid_planet]의 보안 부대는 근접 거리에서 위장 장치를 해제한 개첸의 개조된 수송선과, 식민지 일대로 급습해 내리는 수많은 군용기 및 강하 포트들로 인해 완전히 허를 찌르고 말았습니다. 전격적인 작전 속에서 이 특수 부대들은 짧지만 파괴적인 교전 끝에 들이닥친 반군 은거지를 제압하였고, 우리가 대응 태세를 갖추기도 전에 사로잡힌 반군 전사들을 데리고 철수했습니다.\n\n분명 개첸들은 우리가 대반군 협력을 진지하게 다루지 않고 있다고 판단하였고, (명백히 실존하는) 반군들을 처단하기 위해 우리 몰래 암약한 것입니다... 이제 우리는 망신을 당한 채, 그 후폭풍을 수습하고 어째서 우리가 허를 찌렸는지 우리 국민들에게 해명하느라 동분서주하고 있습니다." # 2721183905664668916
+  giga_katzen.70491.gestalt.desc: "[katzen_partisan_raid_planet]의 우리 보안 부대는 근거리에서 은폐를 해제한 개조된 카첸 운송선과, 식민지의 한 지역으로 강하하는 수많은 우주기지와 강하 포드에 완전히 허를 찔렸습니다. 전격적인 작전 속에 이 특수 부대는 짧지만 파괴적인 교전 끝에 방심하고 있던 파르티잔 소굴을 제압했고, 우리가 대응을 조직하기도 전에 포획한 파르티잔 전사들을 데리고 철수했습니다.\n\n분명 카첸인들은 우리가 대파르티잔 협력을 진지하게 받아들이지 않고 있다고 판단하여, (실제로 존재하는) 반란들을 독단적으로 소탕하기로 한 것입니다... 그리고 이를 통해 우리 집단이 우리 영토 내의 사태에 대한 인식이나 통제력이 부족하다는 것을 증명해 보였습니다." # 2874462411169013769
+  giga_katzen.70491.a: "우리가 이의를 제기할 만한 좋은 상황은 아니군요..." # 17799259365860370945
+  giga_katzen.70491.b: "터무니없군! 터무니없어!" # 3696911582622784230
+  giga_katzen.70492.name: "카타운의 원자폭탄 폭격!" # 5159672510928812653
+  giga_katzen.70492.desc: "오늘은 플루션에서 평범하게 시작된 하루였으나, 역사 속에 영원히 잊히지 않을 날로 막을 내렸습니다. 혼란스러운 보도들이 캣첸아르티크의 언론 통제를 뚫고 쏟아져 나오며, 화염을 등진 카타운 도시 경관의 영상이 은하계에 낱낱이 공개되었습니다.\n\n첩보가 여전히 들어오고 있는 중이지만, 모든 정황은 무기 제조 구역에서 어째서인지 핵폭탄이 기습적으로 폭발했음을 가리키고 있으며, 직후 수천 명의 공장 노동자들의 생사가 불투명한 상태입니다. 한 유격대 조직이 캣첸의 전쟁 기계를 겨냥한 이 \"비극적이지만 불가피한\" 공격의 배후를 자처하고 나섰습니다. 최근 들어 우리가 귀에 익숙하게 들었던 이름의 조직이 말입니다..." # 8064093247220057357
+  giga_katzen.70492.a: "오... 그 - 그 집단..." # 1635328042294018068
+  councilor_katzen_colonial_chief: "식민 총영사" # 17541067375338894738
+  councilor_katzen_colonial_chief_female: "$councilor_katzen_colonial_chief$" # 16001423612670494783
+  councilor_katzen_colonial_chief_desc: "$TITLE$은(는) 우리 중앙 정부와 가장 멀리 떨어진 행정부 간의 관계를 유지합니다." # 17583894232084669768
+  katzen_subversion_bureaucratic: "관료적 파괴 공작" # 10104913128925551853
+  katzen_subversion_bureaucratic_desc: "우리는 플루시온 정부에 우리 경제에 대한 허위 정보를 주입하고 있습니다. 물론 우리 자신의 관리 체계도 타격을 입고 있습니다." # 14234996776829401061
+  katzen_subversion_bureaucratic_imperium: "관료적 파괴 공작" # 10104913128925551853
+  katzen_subversion_bureaucratic_imperium_desc: "평균적인 프로젝트 예산 초과" # 15736200759098768267
+  katzen_subversion_heavyhanded: "서툰 소통" # 8437688385830788372
+  katzen_subversion_heavyhanded_desc: "여기서는 거친 정보전을, 저기서는 문화적 실책을 저지름으로써 카이저의 개혁이 대중의 눈에 납처럼 가라앉도록 확실히 만들 수 있습니다." # 12855262193905958427
+  katzen_subversion_heavyhanded_gestalt: "서툰 소통" # 8437688385830788372
+  katzen_subversion_heavyhanded_gestalt_desc: "카이저의 지시로 이루어진 개혁에 관한 모순된 명령들을 우리 드론들에게 여과 없이 전달함으로써 그들의 생산성을 저해하는 동시에 플루시온의 행정 연락관들에게 부담을 안겨줍니다." # 3158410999768097195
+  katzen_subversion_heavyhanded_imperium: "서툰 소통" # 8437688385830788372
+  katzen_subversion_heavyhanded_imperium_desc: "잠시 언론국을 해고하는 중" # 10982335399096793501
+  katzen_subversion_unrest: "냉담한 진압" # 1907821201254321390
+  katzen_subversion_unrest_desc: "의도적으로 무능한 보안 부대는  Katzen 통치에 대한 항의를 악화시킬 뿐입니다." # 12047039649596072857
+  katzen_subversion_unrest_imperium: "냉담한 진압" # 1907821201254321390
+  katzen_subversion_unrest_imperium_desc: "라이지거카첸판처 맨이 길을 막고 있네 한숨만 나옴" # 7527938049227007825
+  katzen_subversion_unrest_gestalt: "제어되지 않는 일탈" # 909269497036858418
+  katzen_subversion_unrest_gestalt_desc: "우리는 Katzen의 통치를 전복하는 것이 집단을 보호할 것이라고 결론 내린 일탈 집단들을 의도적으로 통제하지 않고 방치하고 있습니다." # 15230823691212948900
+  katzen_subversion_unrest_gestalt_imperium: "제어되지 않는 일탈" # 909269497036858418
+  katzen_subversion_unrest_gestalt_imperium_desc: "라이지거카첸판처 맨이 길을 막고 있네 한숨만 나옴" # 7527938049227007825
+  katzen_subversion_rally_compliance: "집회 지원" # 4978709069449786731
+  katzen_subversion_rally_compliance_desc: "우리는 카이저를 지지하는 논란의 여지가 있는 집회를 자금 지원하고 있습니다." # 15141829359638639352
+  katzen_subversion_rally_compliance_imperium: "애국 집회" # 16372258365962908911
+  katzen_subversion_rally_compliance_imperium_desc: "그는 메시아다!" # 5819224309065019306
+  katzen_subversion_rally_noncompliance: "비지원 국가" # 12441652865749299683
+  katzen_subversion_rally_noncompliance_desc: "친카이저 세력들이 자신들의 신념에 대한 우리의 지원 부족을 불평하고 있습니다." # 15593840811541754138
+  katzen_subversion_rally_noncompliance_imperium: "분열된 제국" # 10373437609472587916
+  katzen_subversion_rally_noncompliance_imperium_desc: "그는 메시아가 아니다..." # 7136479131504339161
+  katzen_subversion_rally_severe_noncompliance: "카이저주의자 진압" # 17318141933829714183
+  katzen_subversion_rally_severe_noncompliance_desc: "친카이저 집회를 조직하려던 시민들이 외국에 대한 충성을 이유로 법 집행관들에 의해 급히 기소되었습니다. 물론 이 판사들은 명백한 독단적 행동으로 인해 이후 질책을 받았습니다." # 5381259522028713035
+  katzen_subversion_rally_severe_noncompliance_imperium: "원망스러운 제국" # 10893401619231580410
+  katzen_subversion_rally_severe_noncompliance_imperium_desc: "확실히 메시아가 아님" # 18262445955987477039
+  katzen_subversion_building_compliance: "신용 경색" # 5633246581175703253
+  katzen_subversion_building_compliance_desc: "플루시안 건설 회사에 구제금융 자금이 전달된 후, 우리의 재정은 예산 책정보다 더 큰 압박을 받고 있습니다." # 9803680045143087491
+  katzen_subversion_building_compliance_corporate: "$katzen_subversion_building_compliance$" # 77819838330355397
+  katzen_subversion_building_compliance_corporate_desc: "플루시안 건설 회사에 구제금융 자금이 전달된 후 우리의 재정은 예산 책정보다 더 큰 압박을 받고 있습니다 - 비용의 일부를 회수하긴 했지만 말입니다." # 15898615357859656946
+  katzen_subversion_building_compliance_imperium: "강요된 유동성" # 1721883087832233340
+  katzen_subversion_building_compliance_imperium_desc: "katzen_subversion_building_compliance_imperium_desc" # 16604829988683413082
+  katzen_subversion_building_noncompliance: "금융 제재" # 12676829007876710528
+  katzen_subversion_building_noncompliance_desc: "플루시안 회사에 대한 구제금융을 거부한 후 일부 카이저 무역 구역 특권이 일시적으로 철회되었습니다." # 3046685304019432912
+  katzen_subversion_building_noncompliance_imperium: "재정적 고난" # 4238732578990101258
+  katzen_subversion_building_noncompliance_imperium_desc: "katzen_subversion_building_noncompliance_imperium_desc" # 6188557738459392790
+  katzen_subversion_standards_compliance: "관료제 재조정" # 17455752412750894144
+  katzen_subversion_standards_compliance_desc: "관료제는 카첸아르티크 규범에 맞추기 위해 표준화 작업을 거치는 중입니다." # 14452825505147839717
+  katzen_subversion_standards_compliance_imperium: "표준화된 관료제" # 5435904744191080800
+  katzen_subversion_standards_compliance_imperium_desc: "마일이 대체 뭔 소리야? 우리는 우월한 미터법인 카이저미터만 사용한다" # 3408829128455162455
+  katzen_subversion_standards_noncompliance: "병렬 관료제" # 5753922943243701460
+  katzen_subversion_standards_noncompliance_desc: "플루시온에서 사용되는 것과 병렬적인 관료제 표준을 유지하는 비용을 감수하기로 했습니다." # 8748038568708359129
+  katzen_subversion_standards_noncompliance_imperium: "플루시온의 마찰" # 4596306359094607183
+  katzen_subversion_standards_noncompliance_imperium_desc: "써니 스마일즈가 집을 잃을 위기에 처했습니다" # 5783729273493433406
+  katzen_subversion_cultural_compliance: "문화적 사회 불안" # 9809162666992426776
+  katzen_subversion_cultural_compliance_desc: "문화적 전통주의자와 급진주의자 모두 카첸 문화의 강요에 불만을 품고 있습니다." # 9314047067248904007
+  katzen_subversion_cultural_compliance_hive: "조기 폐기" # 10372824576956952987
+  katzen_subversion_cultural_compliance_hive_desc: "카첸화의 속도를 따라가지 못하는 드론은 조기 폐기됩니다." # 15844669625424078545
+  katzen_subversion_cultural_compliance_machine: "$katzen_subversion_cultural_compliance_hive$" # 17149380383143091169
+  katzen_subversion_cultural_compliance_machine_desc: "$katzen_subversion_cultural_compliance_hive_desc$" # 17237626367791214418
+  katzen_subversion_cultural_compliance_imperium: "급속한 카첸화" # 9955917776634967595
+  katzen_subversion_cultural_compliance_imperium_desc: "우월한 카첸 정부가 일정 초과를 폐지했습니다 :)" # 1684071640954972032
+  katzen_subversion_cultural_noncompliance: "문화적 옹호" # 1485712663807524244
+  katzen_subversion_cultural_noncompliance_desc: "카첸화 속도에 대한 대중의 우려가 국내 긴장을 완화하기 위해 플루시온으로 전달되고 있습니다." # 16835637155044690004
+  katzen_subversion_cultural_noncompliance_gestalt: "실용적 속도" # 2860307101262649300
+  katzen_subversion_cultural_noncompliance_gestalt_desc: "카첸화의 속도에 대한 발전적 우려가 국내 경제적 비용을 절감하기 위해 플루시온으로 전달되고 있습니다." # 10710969642316404871
+  katzen_subversion_cultural_noncompliance_imperium: "지연된 카첸화" # 13944743022221639754
+  katzen_subversion_cultural_noncompliance_imperium_desc: "열등한 카첸 정부가 일정 지연을 겪었습니다 :(" # 2863939963773678175
+  katzen_subversion_cultural_noncompliance_gestalt_imperium: "$katzen_subversion_cultural_noncompliance_imperium$" # 17215796276820147236
+  katzen_subversion_cultural_noncompliance_gestalt_imperium_desc: "$katzen_subversion_cultural_noncompliance_imperium_desc$" # 13755181289246668423
+  katzen_subversion_exchange_compliance: "외주화된 지도부" # 8237603236111358577
+  katzen_subversion_exchange_compliance_desc: "우리 지도자들은 자국이 아닌 카첸의 기관에서 교육의 일부를 이수하여, 우리 평의회의 결속력을 저하했습니다." # 16863787104803513051
+  katzen_subversion_exchange_compliance_imperium: "간소화된 교육" # 14879578066862237492
+  katzen_subversion_exchange_compliance_imperium_desc: "우리는 카이저가 얼마나 위대한지에 대한 세계 최고 수준의 교육을 제공합니다" # 2586409101016339823
+  katzen_subversion_exchange_noncompliance: "이중 훈련" # 2711690424513552505
+  katzen_subversion_exchange_noncompliance_desc: "우리 지도자들은 카첸 기관에서 중복되는 내용을 배운 후, 자국 기관에서 훈련의 일부를 다시 이수해야 합니다." # 12964074533758798392
+  katzen_subversion_exchange_noncompliance_imperium: "상충하는 교육" # 7671517637536581456
+  katzen_subversion_exchange_noncompliance_imperium_desc: "2+2=4.5" # 7321158581754226682
+  katzen_subversion_exchange_severe_noncompliance: "고립된 교육" # 3335159151487161771
+  katzen_subversion_exchange_severe_noncompliance_desc: "플루시온 기관과의 긴밀한 교육 교류 프로그램을 거부한 이후, 훈련 중인 우리 지도자들은 오히려 단절되었습니다." # 5499207701512342193
+  katzen_subversion_exchange_severe_noncompliance_imperium: "라이벌 방법론" # 4970676888544344249
+  katzen_subversion_exchange_severe_noncompliance_imperium_desc: "가장 상호 존중하는 학술적 의견 불일치" # 16548370279861805587
+  katzen_subversion_propaganda_compliance: "모욕적인 묘사" # 6248461095581570188
+  katzen_subversion_propaganda_compliance_desc: "우리 정부는 우리의 역사에 대해 많은 이들이 굴욕적인 거짓말로 여기는 것을 개발하는 데 협력했습니다." # 3856540879120978491
+  katzen_subversion_propaganda_compliance_imperium: "진보의 이야기" # 10726456935566676712
+  katzen_subversion_propaganda_compliance_imperium_desc: "상승하는 카이저가 모든 종족을 이끈다" # 9338348613624096483
+  katzen_subversion_propaganda_noncompliance: "굴욕적인 평판" # 3104084289066099448
+  katzen_subversion_propaganda_noncompliance_desc: "카첸인들이 우리 문화의 평판을 떨어뜨리는 극도로 조잡한 선전물을 발행하고 있습니다." # 7584781342692848666
+  katzen_subversion_propaganda_noncompliance_imperium: "수상한 업적들" # 10146428952726969874
+  katzen_subversion_propaganda_noncompliance_imperium_desc: "아니 믿어줘 진짜 이렇게 된 거라고" # 16622896633371576482
+  katzen_subversion_exercises_compliance: "카첸파치테트 숙주" # 17459073512249217240
+  katzen_subversion_exercises_compliance_desc: "다른 카첸아르티크 해군과의 대규모 군사 훈련을 주최하면서 우리의 군수 지원 능력이 압박을 받고 있습니다." # 3890021118365848612
+  katzen_subversion_exercises_compliance_imperium: "카첸파치테트 훈련" # 8022856626801504768
+  katzen_subversion_exercises_compliance_imperium_desc: "거대괴수 크기 비교 경쟁" # 6122257483219758378
+  katzen_subversion_exercises_noncompliance: "전략적 과의존 수수료" # 3064857754526565332
+  katzen_subversion_exercises_noncompliance_desc: "카첸 중앙 해군을 분노하게 만든 후, 카첸 군사 구조와의 과도한 통합이 우리를 무방비 상태로 만드는 데 악용되고 있습니다." # 6120219022825332290
+  katzen_subversion_exercises_noncompliance_imperium: "누락된 군사 훈련" # 9491489768276644601
+  katzen_subversion_exercises_noncompliance_imperium_desc: "그래서 총구는 어느 쪽이지?" # 18114396663001365675
+  katzen_subversion_sociology_compliance: "위축 효과" # 14108897864594981369
+  katzen_subversion_sociology_compliance_desc: "위험할 정도로 모호한 연구 윤리 지침이 통과된 후, 우리 학계는 카첸 사회를 진정으로 분석하기를 두려워하고 있습니다." # 8967446787301147669
+  katzen_subversion_sociology_compliance_gestalt: "금지된 지식" # 119276711496237673
+  katzen_subversion_sociology_compliance_gestalt_desc: "더 이상의 모욕적인 진실이 밝혀지는 것을 막기 위해 카첸 경제 구조에 대한 연구는 우선순위에서 밀려났습니다." # 9187146673067086512
+  katzen_subversion_sociology_compliance_imperium: "사상 지도자" # 5644270589820920106
+  katzen_subversion_sociology_compliance_imperium_desc: "음 그래 난 정말 똑똑해 날 보기만 해" # 16285236551561645131
+  katzen_subversion_sociology_noncompliance: "보조금 금수 조치" # 8363481369045844649
+  katzen_subversion_sociology_noncompliance_desc: "막대한 자금을 가진 플루시온 대학들이 우리 연구 프로젝트에 금수조치를 단행했습니다." # 13638793033503531047
+  katzen_subversion_sociology_noncompliance_gestalt: "$katzen_subversion_sociology_noncompliance$" # 9051833517919323963
+  katzen_subversion_sociology_noncompliance_gestalt_desc: "$katzen_subversion_sociology_noncompliance_desc$" # 760529372535071212
+  katzen_subversion_sociology_noncompliance_imperium: "이의가 제기된 합의" # 1746560933638480798
+  katzen_subversion_sociology_noncompliance_imperium_desc: "카이저가 단 99%만 완벽하다고 말하자 웅크려 울기 시작하는 카첸 싱크탱크 구성원들" # 9936221547467058544
+  katzen_subversion_legitimacy_compliance_democratic: "관리민주주의" # 1005433021663460641
+  katzen_subversion_legitimacy_compliance_democratic_desc: "카츠고우베르누르 직책의 민주화 요구는 여러 새로운 괴뢰 직위로 관심이 유도되면서 무마되었습니다." # 14116742101713660249
+  katzen_subversion_legitimacy_compliance_oligarchic: "과두제적 갈등" # 13165266458489718276
+  katzen_subversion_legitimacy_compliance_oligarchic_desc: "과두제 세력이 서로 대립하게 되어 카츠고우베르누르에 맞서는 통일전선 형성을 방지했습니다." # 11368511709282177009
+  katzen_subversion_legitimacy_compliance_dictatorial: "배신당한 특수 이익" # 6935661706026210595
+  katzen_subversion_legitimacy_compliance_dictatorial_desc: "고문단이 카츠고우베르누르의 권력 통합을 돕고 있으며, 이는 특정 기득권층의 불만을 사고 있습니다." # 3602502239558563685
+  katzen_subversion_legitimacy_compliance_imperial: "다시 쓰인 혈통" # 5560672253498270223
+  katzen_subversion_legitimacy_compliance_imperial_desc: "문화 당국은 카츠고우베르누르의 권력을 정당화하기 위해 밤낮으로 사회를 조율하고 있습니다." # 10929833305974497726
+  katzen_subversion_legitimacy_compliance_corporate: "순응 비용" # 13959484277573097498
+  katzen_subversion_legitimacy_compliance_corporate_desc: "살아남고자 하는 모든 기업은 카이저의 경제적 미시관리를 거쳐야 합니다." # 15751093649253153659
+  katzen_subversion_legitimacy_compliance_imperium: "효과적인 속국" # 10699957924347014850
+  katzen_subversion_legitimacy_compliance_imperium_desc: "대제독 AI 속국 보너스" # 3029511016020850125
+  katzen_subversion_legitimacy_noncompliance: "불법적인 통치" # 13793030006701721006
+  katzen_subversion_legitimacy_noncompliance_desc: "많은 이들이 카츠고우베르누르의 명백히 불법적인 통치에 깊은 반감을 품고 있습니다." # 434281941895662392
+  katzen_subversion_legitimacy_noncompliance_imperium: "비효과적인 속국" # 15716720330258801111
+  katzen_subversion_legitimacy_noncompliance_imperium_desc: "민간 AI 속국 적자" # 2000150792507022757
+  katzen_subversion_partisans_compliance: "정보 공유" # 3831942467563327859
+  katzen_subversion_partisans_compliance_desc: "중앙 캣젠 반군 토벌 기관과 다량의 민감한 보안 데이터가 공유되고 있습니다." # 12839461687446501043
+  katzen_subversion_partisans_compliance_imperium: "반군 토벌 작전" # 13816471178513164144
+  katzen_subversion_partisans_compliance_imperium_desc: "체제 반대파를 찾지 못한다면 직접 만들 수도 있습니다." # 9289567303852932661
+  katzen_subversion_partisans_noncompliance_raid_noprotest: "신뢰할 수 없는 관할권" # 10266310387825182079
+  katzen_subversion_partisans_noncompliance_raid_noprotest_desc: "카첼란 군대가 우리 식민지 중 한 곳에서 반군을 습격한 것은 우리가 영토를 제대로 통제하지 못하고 있음을 은하계에 보여주었습니다." # 8026308234351989386
+  katzen_subversion_partisans_noncompliance_raid_protest: "터무니없는 이의제기" # 3554051292348149408
+  katzen_subversion_partisans_noncompliance_raid_protest_desc: "카첼란 군대가 우리 영토 내의 반군 거점을 습격한 후, 우리는 절망적이고 위선적인 불만으로 스스로를 망신스럽게 만들었습니다." # 13293345846582268312
+  katzen_subversion_partisans_noncompliance_raid_noprotest_imperium: "사보테르 체포" # 4690926947477750962
+  katzen_subversion_partisans_noncompliance_raid_noprotest_imperium_desc: "드디어 잡았다 녀석들" # 4319296507834313880
+  katzen_subversion_partisans_noncompliance_raid_protest_imperium: "집행 분쟁" # 2400635801089188074
+  katzen_subversion_partisans_noncompliance_raid_protest_imperium_desc: "당신 영토에서의 작은 군사 작전일 뿐이니 과민반응 그만두세요" # 3044332975031187089
+  katzen_subversion_partisans_noncompliance_bombing: "살인적인 태만" # 14688074616231970344
+  katzen_subversion_partisans_noncompliance_bombing_desc: "반군 위협을 심각하게 여기기를 거부한 결과, 우리는 플루시온에 대한 대규모 핵 공격의 공모자가 되었습니다." # 14958744268021895090
+  katzen_subversion_partisans_noncompliance_bombing_imperium: "핵 공격" # 14101965007255842838
+  katzen_subversion_partisans_noncompliance_bombing_imperium_desc: "이런..." # 17922571186561918942
+  katzen_planetcraft_intervention: "행성함 대항 간섭주의" # 18331414616361071001
+  katzen_planetcraft_intervention_desc: "함대를 소집하라! 캣젠들이 새로운 기함을 완성하도록 내버려 둘 수는 없다." # 6285946543315587394
+  giga_katzencollapse_age: "붕괴된 시대" # 13754910383212162176
+  giga_katzencollapse_age_desc: "이 문명은 대참사적 붕괴로 인해 기술의 상당 부분을 상실했습니다. 다양한 군벌 세력이 여전히 붕괴 전의 고대 기술을 통제하고 있지만, 행성의 기술적 및 산업적 기반은 산산조각이 났습니다. 남은 유산을 두고 벌어지는 내분에 riven된 이 행성의 거주민들은 다가오는 시대에도 계속해서 쇠퇴할 수 있습니다." # 858922097372532564
+  col_giga_pre_ftl_katzencollapse: "$giga_katzencollapse_age$" # 1152811275022450911
+  col_giga_pre_ftl_katzencollapse_desc: "$giga_katzencollapse_age_desc$" # 12328115726665690244
+  col_giga_pre_ftl_katzencollapse_tt: "$col_giga_pre_ftl_katzencollapse_desc$" # 17349375032556054440
+  KATZEN_COUNTRY_PROVISIONAL: "카첸 잔류 정권" # 16485537253404677593
+  KATZEN_COUNTRY_PROVISIONAL_DESC: "[GigaFlusionProvisionalGovernmentName]은 플루시온을 중심으로 영토 내 안정을 유지하는 데 헌신하는 중무장 섹터입니다." # 18374681150793314708
+  flusion_consolidation_instability: "개혁의 고통" # 16183318885167946243
+  flusion_consolidation_instability_desc: "카이저의 깨진 약속에 불만을 품은 인구층이 변화를 요구하며 선동하고 있습니다." # 13403600532092118180
+  katzen_splinter_starter_boost: "국가 건설 정신" # 2398437289015691119
+  katzen_civil_war_navy_boost: "내전과잉 해군최적화" # 15278967972247711236
+  kaiser_planetcraft_1: "카이저 행성함 건조 현장" # 1458150004689363148
+  kaiser_planetcraft_1_DESC: "네사르를 카이저 문을 압도할 군함으로 개조하는 것은 새로운 세대의 카이저 공학이 착수하는 첫 번째 프로젝트입니다." # 9565561281916615756
+  kaiser_planetcraft_1_MEGASTRUCTURE_DETAILS: "스키비디 카이젤렛" # 10231018306775720765
+  kaiser_planetcraft_2: "카이저 행성함" # 8269833865572987057
+  kaiser_planetcraft_2_DESC: "안녕 이거 읽을 수 있는 사람 있나요 블루프 블럽 워피티" # 17681289685592967736
+  mod_giga_katzen_ship_cost_mult: "mod_giga_katzen_ship_cost_mult 이름" # 11691194254520855035
+  origin_eawafkaiser: "origin_eawafkaiser 서브모드 호환용 임시 문구" # 7988924280115123111
+  origin_eawafkaiser_desc: "origin_eawafkaiser_desc 서브모드 호환용 임시 문구 설명" # 17809484069284000610

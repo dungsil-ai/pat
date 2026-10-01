@@ -29,7 +29,7 @@
   building_giga_megaworkshop_hub: "거대 건설 물류 허브" # 4874474578103146933
   building_giga_megaworkshop_hub_plural: "메가건설 물류 허브" # 2867778914876112452
   building_giga_megaworkshop_hub_desc: "전문가들이 원대한 설계를 실현시키기 위해 거대한 수송선 및 건설선 함대를 지휘하는 동안, 분자 주조소는 막대한 양의 건설 자재를 쏟아냅니다." # 7141284425870669717
-  building_giga_megaworkshop_hub_count_condition: ""
+  building_giga_megaworkshop_hub_count_condition: "" # 17241709254077376921
   mod_planet_building_giga_megaworkshop_hub_build_speed_mult: "$building_giga_megaworkshop_hub$ 건설 속도" # 3165158126270285423
   building_giga_supertensiles_mines: "$giga_sr_amb_megaconstruction$ 추출기" # 16404595105682226305
   building_giga_supertensiles_mines_plural: "$giga_sr_amb_megaconstruction$ 추출기" # 16404595105682226305
@@ -196,16 +196,16 @@
   d_giga_lifeless_supertensiles_1: "$giga_sr_amb_megaconstruction$ 매장지" # 16689990188930382329
   d_giga_lifeless_supertensiles_1_desc: "이 행성에는 채취 가능한 초인장 재료 원천이 있습니다." # 90282677506191932
   col_giga_supertensiles_foundry: "메가 물류 센터" # 1694486683878003162
-  col_giga_supertensiles_foundry_desc: "Specializes in the production of £giga_sr_amb_megaconstruction£§S$giga_sr_amb_megaconstruction$§!."
+  col_giga_supertensiles_foundry_desc: "£giga_sr_amb_megaconstruction£§S$giga_sr_amb_megaconstruction$§! 생산에 특화되어 있습니다." # 510584344401590426
   col_giga_supertensiles_foundry_tt: "$col_giga_supertensiles_foundry_desc$" # 9057942224389026493
   col_giga_habitat_supertensiles_foundry: "메가 물류 기지" # 9002396866712964217
-  col_giga_habitat_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$"
+  col_giga_habitat_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$" # 9057942224389026493
   col_giga_habitat_supertensiles_foundry_tt: "$col_giga_habitat_supertensiles_foundry_desc$" # 4717370809014690422
-  col_giga_ringworld_supertensiles_foundry: "Megalogistics Segment"
-  col_giga_ringworld_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$"
-  col_giga_ringworld_supertensiles_foundry_tt: "$col_giga_ringworld_supertensiles_foundry_desc$"
-  col_giga_arkship_supertensiles_foundry: "Megalogistics Arkship"
-  col_giga_arkship_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$"
+  col_giga_ringworld_supertensiles_foundry: "거대물류 구역" # 15568374172400238716
+  col_giga_ringworld_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$" # 9057942224389026493
+  col_giga_ringworld_supertensiles_foundry_tt: "$col_giga_ringworld_supertensiles_foundry_desc$" # 14393680612579700422
+  col_giga_arkship_supertensiles_foundry: "거대물류 방주선" # 6377210818641621734
+  col_giga_arkship_supertensiles_foundry_desc: "$col_giga_supertensiles_foundry_desc$" # 9057942224389026493
   edict_giga_amb_sentient_metal_supertensiles: "생체 금속 지원 분자 주조 공장" # 17906998781836221082
   edict_giga_amb_sentient_metal_supertensiles_desc: "지각 있는 금속의 적응 특성은 초인장 재료 제조에 여러 가지 잠재적인 응용 분야를 가지고 있습니다.\n\n£job_giga_megaengineer£ §Y$job_giga_megaengineer_plural$§!의 기본 산출량과 유지 비용을 §Y50%§! 향상시킵니다.\n\n£job_giga_megaengineering_overseer£ §Y$job_giga_megaengineering_overseer_plural$§!의 기본 산출량과 유지 비용을 §Y20%§! 향상시킵니다.\n\n두 직책 모두의 §Y$alloys$ £alloys£ 유지 비용§! 중 절반을 £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§!로 대체합니다." # 13636444002362924239
   giga_amb.1000.name: "§Y[FromFrom.GetName]§!: 전략 자원 발견됨" # 3949312322395708890
@@ -220,8 +220,8 @@
   sm_ring_giga_supertensiles_mine_hub: "궤도상 클린룸 시설" # 7599107589391638363
   sm_ring_giga_supertensiles_mine_hub_desc: "궤도 고리 상의 특수 단계 시설 및 클린룸은 그렇지 않으면 낭비될 추출된 물질을 처리할 수 있게 해줍니다.\n\n§T활성화된 £building£ §Y$building_giga_supertensiles_mines$§! 건물당 +1의 £job_giga_supertensiles_extractor£ §Y초인장 추출§! 일자리를 제공합니다.§!" # 17557659813162214469
   ring_giga_supertensiles_mine_hub_condition: "§R행성은 최소 하나의 £building£ §Y$building_giga_supertensiles_mines$§! 건물을 지원할 수 있어야 합니다.§!" # 2435259943726961452
-  sm_arkship_giga_supertensiles_hub: "Zero-G Supertensile Foundries"
-  sm_arkship_giga_supertensiles_hub_desc: "This facility lies outside the standard production decks, using low gravity to enhance production of our $building_giga_megaworkshop_plural$ by using $sr_living_metal$ to streamline production processes, leading to increased throughput overall."
+  sm_arkship_giga_supertensiles_hub: "무중력 초장력 주조소" # 18132957275667933991
+  sm_arkship_giga_supertensiles_hub_desc: "이 시설은 표준 생산 갑판 바깥에 위치하며, 저중력을 활용하여 $sr_living_metal$을 이용해 생산 공정을 간소화함으로써 $building_giga_megaworkshop_plural$의 생산량을 증대시키고 전반적인 처리량을 향상시킵니다." # 15328170893390518875
   giga_tech_amb_supertensiles_acot_delta: "암흑 물질 강화 초인장 생산" # 2311423032697263946
   giga_tech_amb_supertensiles_acot_delta_desc: "암흑 물질 기반의 하드 라이트 시스템은 분자 합성에 혁명을 일으킬 잠재력을 가지고 있습니다." # 14751476324618162080
   job_giga_megaengineer_acot_delta: "경광 물질 기술" # 1970861506342279933
@@ -263,7 +263,7 @@
   building_giga_megaworkshop_hub_acot_delta: "델타 메가건설 물류 허브" # 16010187915635898104
   building_giga_megaworkshop_hub_acot_delta_plural: "델타 메가건설 물류 허브" # 3180099414699408417
   building_giga_megaworkshop_hub_acot_delta_desc: "암흑 물질 테더와 중력 싱크 덕분에 막대한 양의 물질을 쉽게 들어 올릴 수 있게 되었습니다. 우리의 궤도 건설 프로젝트가 그 어느 때보다 순조롭게 진행되고 있습니다." # 6983004802725922845
-  building_giga_megaworkshop_hub_acot_delta_count_condition: ""
+  building_giga_megaworkshop_hub_acot_delta_count_condition: "" # 17241709254077376921
   mod_planet_building_giga_megaworkshop_hub_acot_delta_build_speed_mult: "$building_giga_megaworkshop_hub_acot_delta$ 건설 속도" # 4960108059163704896
   giga_tech_amb_supertensiles_acot_alpha: "알파 프로젝트 거대 건설 방법론" # 15271902571695600512
   giga_tech_amb_supertensiles_acot_alpha_desc: "선구자 물질 디자인에 대한 분석은 분자 제조 분야에서 우리를 새로운 경지로 이끌었습니다." # 5402648839882057079
@@ -306,7 +306,7 @@
   building_giga_megaworkshop_hub_acot_alpha: "알파 메가건축 물류 허브" # 14525633270432767405
   building_giga_megaworkshop_hub_acot_alpha_plural: "알파 거대 구조물 물류 거점" # 1849368457730152211
   building_giga_megaworkshop_hub_acot_alpha_desc: "알파 프로젝트는 선구자들이 사용했던 물류 계획 기술과 그것이 어떻게 개선될 수 있는지에 대한 많은 통찰을 제공했습니다." # 6665580336511713375
-  building_giga_megaworkshop_hub_acot_alpha_count_condition: ""
+  building_giga_megaworkshop_hub_acot_alpha_count_condition: "" # 17241709254077376921
   mod_planet_building_giga_megaworkshop_hub_acot_alpha_build_speed_mult: "$building_giga_megaworkshop_hub_acot_alpha$ 건설 속도" # 12291967401606268965
   giga_tech_amb_supertensiles_acot_phanon: "룬적 물질 조작 기술" # 9965900292662348191
   giga_tech_amb_supertensiles_acot_phanon_desc: "룬 에너지의 비의적인 특성은 거대 구조물 건설 분야에서 상당한 발전을 가져올 것으로 기대됩니다." # 1251043332057672008
@@ -349,7 +349,7 @@
   building_giga_megaworkshop_hub_acot_phanon: "루닉 메가건축 물류 허브" # 2225851090663954517
   building_giga_megaworkshop_hub_acot_phanon_plural: "루닉 거대 구조물 물류 허브" # 3131652042710108741
   building_giga_megaworkshop_hub_acot_phanon_desc: "이해의 한계에 있는 신비로운 구조물들이 현실을 왜곡하여 하나의 저장 용기에 운송할 더 많은 보급품을 압축합니다." # 3117688458992437631
-  building_giga_megaworkshop_hub_acot_phanon_count_condition: ""
+  building_giga_megaworkshop_hub_acot_phanon_count_condition: "" # 17241709254077376921
   mod_planet_building_giga_megaworkshop_hub_acot_phanon_build_speed_mult: "$building_giga_megaworkshop_hub_acot_phanon$ 건설 속도" # 10307431163253275653
   giga_tech_amb_supertensiles_acot_sigma: "응용 질량 항성 핵융합" # 3866060746843527147
   giga_tech_amb_supertensiles_acot_sigma_desc: "우리가 스텔라라이트를 완벽히 다루게 되면서 아원자 수준까지 원하는 대로 세계를 개조할 수 있게 되었습니다." # 10403289252428575292
@@ -392,5 +392,5 @@
   building_giga_megaworkshop_hub_acot_sigma: "시그마 초대형 건설 물류 허브" # 16090446843775433970
   building_giga_megaworkshop_hub_acot_sigma_plural: "시그마 메가건설 물류 허브" # 3276325219901563660
   building_giga_megaworkshop_hub_acot_sigma_desc: "우주의 지배는 부정할 수 없습니다. 별들조차 우리의 의지에 굴복하며, 우리의 손길은 무한합니다." # 7759533824699180987
-  building_giga_megaworkshop_hub_acot_sigma_count_condition: ""
+  building_giga_megaworkshop_hub_acot_sigma_count_condition: "" # 17241709254077376921
   mod_planet_building_giga_megaworkshop_hub_acot_sigma_build_speed_mult: "$building_giga_megaworkshop_hub_acot_sigma$ 건설 속도" # 4235600920776512365

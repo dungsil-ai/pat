@@ -1,11 +1,11 @@
 ﻿l_korean:
-  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_TAB: "Upgrade Selector"
-  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_DESC: "Select an upgrade path for this megastructure."
-  MEGASTRUCTURE_CLICK_TO_ENABLE_GIGA_UPGRADE_CTRL: "§GClick to choose this Megastructure upgrade path§!"
-  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_ENABLED: "§GUpgrade Selected§!"
-  giga_overclock_fusion_suppressor_supernova: "Detonate Star Mode"
-  giga_overclock_fusion_suppressor_supernova_desc: "Set the structure to detonate the star, creating a supernova and leaving behind a neutron star with £giga_sr_iodizium£§I$giga_sr_iodizium$§! "
-  giga_overclock_fusion_suppressor_supernova_effect: "Set the §IFusion Suppressor§! to §I$fusion_suppressor_6a$§!."
-  giga_overclock_fusion_suppressor_black_hole: "Collapse Star Mode"
-  giga_overclock_fusion_suppressor_black_hole_desc: "Set the structure to collapse the star, creating a §I$pc_black_hole$§!"
-  giga_overclock_fusion_suppressor_black_hole_effect: "Set the §IFusion Suppressor§! to §I$fusion_suppressor_6b$§!."
+  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_TAB: "업그레이드 선택기" # 18410122595419485220
+  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_DESC: "이 거대 건축물의 업그레이드 경로를 선택합니다." # 4241928734685193571
+  MEGASTRUCTURE_CLICK_TO_ENABLE_GIGA_UPGRADE_CTRL: "§G클릭하여 이 거대 건축물 업그레이드 경로 선택§!" # 16538013405575928598
+  MEGASTRUCTURE_GIGA_UPGRADE_CTRL_ENABLED: "§G업그레이드 선택됨§!" # 839545278668602456
+  giga_overclock_fusion_suppressor_supernova: "항성 기폭 모드" # 795133972855978186
+  giga_overclock_fusion_suppressor_supernova_desc: "구조물을 설정하여 항성을 기폭시켜 초신성을 일으키고 £giga_sr_iodizium£§I$giga_sr_iodizium$§!을(를) 남깁니다." # 16939783703291293107
+  giga_overclock_fusion_suppressor_supernova_effect: "§I융합 억제기§!를 §I$fusion_suppressor_6a$§!(으)로 설정합니다." # 17120524724318319126
+  giga_overclock_fusion_suppressor_black_hole: "항성 붕괴 모드" # 17302820699795048117
+  giga_overclock_fusion_suppressor_black_hole_desc: "구조물을 설정하여 항성을 붕괴시키고 §I$pc_black_hole$§!(을)를 생성합니다." # 9285738702434785309
+  giga_overclock_fusion_suppressor_black_hole_effect: "§I융합 억제기§!를 §I$fusion_suppressor_6b$§!(으)로 설정합니다." # 5693002841936297026

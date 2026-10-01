@@ -47,24 +47,24 @@
   giga_rename_star_t1: "[rename_system.GetName] 에이" # 10377706563805665781
   giga_rename_star_t2: "[rename_system.GetName] B" # 12051696562352082485
   giga_rename_star_t3: "[rename_system.GetName] C" # 1319433381740019705
-  giga_moon_spiritualist: "Seraph"
-  giga_planet_spiritualist: "Herald Of Zarqlan"
-  giga_system_spiritualist: "Shroudtouched Will"
-  giga_moon_materialist: "Mentor"
-  giga_planet_materialist: "Luminary"
-  giga_system_materialist: "Elder"
-  giga_moon_xenophile: "Guardian"
-  giga_planet_xenophile: "Paragon"
-  giga_system_xenophile: "Ultima"
-  giga_moon_xenophobe: "Dominance"
-  giga_planet_xenophobe: "Ascendancy"
-  giga_system_xenophobe: "Zenith"
-  giga_moon_machine: "Lambda"
-  giga_planet_machine: "Pi"
-  giga_system_machine: "Omega"
-  giga_moon_hive: "Brethren"
-  giga_planet_hive: "Perpetuity"
-  giga_system_hive: "Thrice to Power"
-  giga_moon_meopa: "Fidelity"
-  giga_planet_meopa: "Sobakitränen"
+  giga_moon_spiritualist: "세라핌" # 15960354167010030505
+  giga_planet_spiritualist: "자르클란의 전령" # 9666934619087707612
+  giga_system_spiritualist: "슈라우드에 닿은 의지" # 9036513195375188755
+  giga_moon_materialist: "멘토" # 14140608883918752025
+  giga_planet_materialist: "루미너리" # 4431867822141240481
+  giga_system_materialist: "엘더" # 3891551784050347360
+  giga_moon_xenophile: "가디언" # 1851057251691045830
+  giga_planet_xenophile: "패러곤" # 9219633170655654458
+  giga_system_xenophile: "울티마" # 3337651595460204100
+  giga_moon_xenophobe: "도미넌스" # 9062601513984912084
+  giga_planet_xenophobe: "어센던시" # 15531674866564756236
+  giga_system_xenophobe: "제니스" # 1269951179464158267
+  giga_moon_machine: "람다" # 13548453998464271166
+  giga_planet_machine: "파이" # 9947742778939305831
+  giga_system_machine: "오메가" # 2995132945472329507
+  giga_moon_hive: "브레드런" # 11175847702648568224
+  giga_planet_hive: "퍼페추이티" # 13025471422724720687
+  giga_system_hive: "트라이스 투 파워" # 16691871397870067422
+  giga_moon_meopa: "피델리티" # 15686028132591811511
+  giga_planet_meopa: "소바키트레넨" # 16856873769161423916
   giga_system_meopa: "베르니히터" # 10495141468031915181

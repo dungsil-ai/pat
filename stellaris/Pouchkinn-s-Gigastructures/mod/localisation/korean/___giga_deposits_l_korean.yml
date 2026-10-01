@@ -12,9 +12,9 @@
   d_zro_cloud: "즈로 성운" # 4249627876468314340
   d_zro_cloud_desc: "끝없이 떠다니는 귀중한 즈로 입자들의 거대한 유랑 구름." # 14380150076271860352
   d_giga_supertensiles_1: "£giga_sr_amb_megaconstruction£ +1" # 6256544470360146816
-  d_giga_supertensiles_1_desc: ""
+  d_giga_supertensiles_1_desc: "" # 17241709254077376921
   d_giga_supertensiles_2: "£giga_sr_amb_megaconstruction£ +2" # 2960695998966619595
-  d_giga_supertensiles_2_desc: ""
+  d_giga_supertensiles_2_desc: "" # 17241709254077376921
   d_iodizium_deposit: "£giga_sr_iodizium£ +3" # 9503378252766760219
   d_iodizium_deposit_1: "£giga_sr_iodizium£ +1" # 14634693042489050073
   d_nicoll_deposit: "£minerals£ +10" # 14750764525639193362
@@ -27,18 +27,18 @@
   d_giga_hab_consumer_goods_1: "£소비재£ +1" # 6739737851143410976
   d_giga_hab_astral_threads_1: "£astral_threads£ +1" # 7126309452655601210
   d_subsurface_ocean_deposit_1: "£food£ +2 £society£ +4" # 16804724438009065308
-  d_iodizium_deposit_desc: ""
-  d_iodizium_deposit_1_desc: ""
-  d_nicoll_deposit_desc: ""
-  d_depletedstripmine_deposit_desc: ""
-  d_nicollboom_deposit_desc: ""
-  d_pouchkinn_deposit_desc: ""
-  d_ringworld_deposit_desc: ""
-  d_succ_deposit_desc: ""
-  d_giga_hab_nanites_1_desc: ""
-  d_giga_hab_consumer_goods_1_desc: ""
-  d_giga_hab_astral_threads_1_desc: ""
-  d_subsurface_ocean_deposit_1_desc: ""
+  d_iodizium_deposit_desc: "" # 17241709254077376921
+  d_iodizium_deposit_1_desc: "" # 17241709254077376921
+  d_nicoll_deposit_desc: "" # 17241709254077376921
+  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
+  d_nicollboom_deposit_desc: "" # 17241709254077376921
+  d_pouchkinn_deposit_desc: "" # 17241709254077376921
+  d_ringworld_deposit_desc: "" # 17241709254077376921
+  d_succ_deposit_desc: "" # 17241709254077376921
+  d_giga_hab_nanites_1_desc: "" # 17241709254077376921
+  d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
+  d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921
+  d_subsurface_ocean_deposit_1_desc: "" # 17241709254077376921
   d_giga_food_1: "£food£ +1" # 13198594911325131486
   d_giga_food_1_desc: "$d_giga_food_1$" # 11670648074534172502
   d_giga_food_2: "£food£ +2" # 7157903611014298026
@@ -89,8 +89,8 @@
   d_flusio_arcology_wreck_desc: "플루시오-아콜로지에서 발생한 전투로 부분적 또는 완전히 파괴된 도시들." # 500460360055046615
   d_flusio_arcology_anarchy: "플루시온 무정부 상태" # 16646561948448807195
   d_flusio_arcology_anarchy_desc: "행성에서 카이저를 몰아내기 위한 파괴적인 전투로 인한 부수적 피해의 결과로, 플루시온의 광범위한 지역이 완전한 무정부 상태에 빠져들었습니다." # 5876869257241802328
-  d_flusio_arcology_anarchy_collapse: "Flusionian Anarchy"
-  d_flusio_arcology_anarchy_collapse_desc: "Large swathes of Flusion have fallen into complete anarchy as a result of brutal warlord conflicts over the power vacuum left by the Kaiser."
+  d_flusio_arcology_anarchy_collapse: "플루시온 무정부 상태" # 16646561948448807195
+  d_flusio_arcology_anarchy_collapse_desc: "카이저가 남긴 권력 공백을 둘러싼 잔혹한 군벌 간의 분쟁으로 인해 플루시온의 광대한 영토가 완전한 무정부 상태에 빠졌습니다." # 13724197889961128877
   d_flusio_arcology_administration: "플루시오-아콜로지 행정부" # 6294343021211911643
   d_flusio_arcology_administration_desc: "플루션을 둘러싼 물류적 악몽을 관리하는 것은 결코 쉬운 일이 아닙니다. 플루시오-아르콜로지가 지원할 수 있는 구역의 수가 막대하기 때문에, 적절히 관리하기 위해서는 더 많은 주의가 필요합니다." # 879464044696686221
   d_flusio_arcology_administration_tooltip: "[giga_flusion_administration_mechanics]" # 3083366610459792673
@@ -102,10 +102,10 @@
   d_katlantropa_project_desc: "카틀란트로파 프로젝트는 이전의 사막 지역을 관개하여 농업 및 관개 용지로 적합하게 만들고 있습니다." # 7118027248159086495
   d_katlantropa_project_wreck: "카틀란트로파 사막화" # 9126462189880906154
   d_katlantropa_project_wreck_desc: "카틀란트로파의 파괴는 한때 경작지였던 지역들을 광활한 사막으로 되돌렸습니다." # 12762995033726930113
-  d_flusion_katown_central: "Zentralkatown"
-  d_flusion_katown_central_desc: "Designed by architect Dietrich Videafurr, the Katown Megalopolis is the shining jewel of Flusion.\n\nA colossal and perfectly-built megacity, it spans the entire northern part of the Katzen Herzlands. Blending natural spaces and rivers with elegant yet efficient Katzen architecture, it can house billions of inhabitants.\n\nHere in Inner Katown lie civic monuments such the Grand Katown Pyramid, a colossal pyramid that stretches miles into the sky: the architectural embodiment of galactic power."
-  d_flusion_bundengrad: "Bundengrad"
-  d_flusion_bundengrad_desc: "The semi-aquatic megacity of Bundengrad encompasses the remnants of the Katspian (previously Crabspian) sea, historic home to species such as the Kronks and Yinjites.\n\nCentral to this city's design purpose is the monumental Bundeshalle, built as the part-time residence and office of Katzenartig governor Loris von Kattensbach.\n\nThe Bundeshalle, alongside its army of ancillary bureaucratic offices, is designed to manage not only much of the day-to-day governance of Flusion, but also to wield authority over the many distant provinces of an interstellar empire."
+  d_flusion_katown_central: "젠트랄카타운" # 3969300072244615101
+  d_flusion_katown_central_desc: "건축가 디트리히 비데아푸르가 설계한 카타운 메가폴리스는 플루시온의 찬란한 보석입니다.\n\n거대하고 완벽하게 건설된 이 거대 도시는 카첸 헤르츠란트 북부 전체를 아우릅니다. 자연 친화적인 공간 및 강들과 우아하면서도 효율적인 카첸 건축 양식이 조화를 이루어, 수십억 명의 거주민을 수용할 수 있습니다.\n\n내부 카타운에는 하늘 높이 솟은 거대 피라미드인 대카타운 피라미드와 같은 시민 기념물이 자리 잡고 있으며, 이는 은하계 권력의 건축학적 화신입니다." # 15729483931154958178
+  d_flusion_bundengrad: "분덴그라드" # 11195475235660752524
+  d_flusion_bundengrad_desc: "반수생 거대 도시 분덴그라드는 크롱크와 인지트 같은 종족의 역사적 고향인 카츠피안(구 크랍스피안) 바다의 잔해를 아우르고 있습니다.\n\n이 도시의 설계 목적의 핵심은 카첸아르티크 총독 로리스 폰 카텐스바흐의 임시 거주지 겸 집무실로 건립된 기념비적인 분덴할레입니다.\n\n분덴할레는 수많은 부속 관청 행정 조직과 함께, 플루시온의 일상적인 통치 대부분을 관리할 뿐만 아니라 성간 제국의 수많은 원격 지방들에 대한 권력을 행사하도록 설계되었습니다." # 17731156589880585208
   d_flusion_katown_submerged: "Katownunterseeisch"
   d_flusion_katown_submerged_desc: "Many thousands of square kilometres of Katown lie underwater, including the whole of the northern Sonne Meer sea and stretches of the Pacwific Ocean. These sectors are built for the aquatic species of the Katzenartig Imperium.\n\nSuch intimate contact with the open ocean also has bountiful industrial and logistical uses, benefitting the import, processing and export of Flusionian goods from Katown."
   d_flusion_teho: "Teho"

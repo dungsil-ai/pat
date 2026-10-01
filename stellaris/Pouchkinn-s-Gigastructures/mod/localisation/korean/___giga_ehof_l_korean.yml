@@ -42,21 +42,21 @@
   SENTIENT_ARMOR_SMALL: "$tech_sm_armor$" # 8839219149154511558
   SENTIENT_ARMOR_MEDIUM: "$tech_sm_armor$" # 8839219149154511558
   SENTIENT_ARMOR_LARGE: "$tech_sm_armor$" # 8839219149154511558
-  BIO_SENTIENT_ARMOR: "Sentient Metal Carapace"
-  BIO_SENTIENT_ARMOR_DESC: "Layers of self-replicating sentient metal woven beneath neutronium scales form armor that is both nigh impenetrable and highly regenerative."
-  BIO_SENTIENT_ARMOR_SMALL: "$BIO_SENTIENT_ARMOR$"
-  BIO_SENTIENT_ARMOR_MEDIUM: "$BIO_SENTIENT_ARMOR$"
-  BIO_SENTIENT_ARMOR_LARGE: "$BIO_SENTIENT_ARMOR$"
+  BIO_SENTIENT_ARMOR: "지성 금속 갑주" # 4348215120551972991
+  BIO_SENTIENT_ARMOR_DESC: "중성자별 비늘 아래에 엮인 자기 복제 지성 금속 층은 거의 난공불락이면서도 재생력이 뛰어난 장갑을 형성합니다." # 10876534982484946887
+  BIO_SENTIENT_ARMOR_SMALL: "$BIO_SENTIENT_ARMOR$" # 2187511859415621984
+  BIO_SENTIENT_ARMOR_MEDIUM: "$BIO_SENTIENT_ARMOR$" # 2187511859415621984
+  BIO_SENTIENT_ARMOR_LARGE: "$BIO_SENTIENT_ARMOR$" # 2187511859415621984
   QNM_SHIELD: "$tech_qnm_shields$" # 17585912486575936677
   QNM_SHIELD_DESC: "$tech_qnm_shields_desc$" # 6328838124960963753
   QNM_SHIELD_SMALL: "$tech_qnm_shields$" # 17585912486575936677
   QNM_SHIELD_MEDIUM: "$tech_qnm_shields$" # 17585912486575936677
   QNM_SHIELD_LARGE: "$tech_qnm_shields$" # 17585912486575936677
-  BIO_QNM_SHIELD: "Negative Mass Shielded Musculature"
-  BIO_QNM_SHIELD_DESC: "By cultivating shield-projection tissues around negative mass micro-reactors, this technology generates a powerful negative gravitational field that actively repels incoming fire. This decrease in projectile velocity brought on by the gravitational field buys precious moments to selectively harden certain sections of the shield before impact."
-  BIO_QNM_SHIELD_SMALL: "$BIO_QNM_SHIELD$"
-  BIO_QNM_SHIELD_MEDIUM: "$BIO_QNM_SHIELD$"
-  BIO_QNM_SHIELD_LARGE: "$BIO_QNM_SHIELD$"
+  BIO_QNM_SHIELD: "음질량 차폐 근육" # 5804121854268984915
+  BIO_QNM_SHIELD_DESC: "음질량 소형 반응로 주변에 차폐 투사 조직을 배양하여, 이 기술은 다가오는 사격을 능동적으로 격퇴하는 강력한 음중력장을 생성합니다. 중력장으로 인해 투사체 속도가 감소하면서 충돌 전에 방패의 특정 부분을 선택적으로 강화할 소중한 시간을 벌 수 있습니다." # 3242796552399047745
+  BIO_QNM_SHIELD_SMALL: "$BIO_QNM_SHIELD$" # 9978019487916188676
+  BIO_QNM_SHIELD_MEDIUM: "$BIO_QNM_SHIELD$" # 9978019487916188676
+  BIO_QNM_SHIELD_LARGE: "$BIO_QNM_SHIELD$" # 9978019487916188676
   QNM_REACTOR_CORVETTE: "$tech_qnm_reactors$" # 12824565596486857925
   QNM_REACTOR_DESTROYER: "$tech_qnm_reactors$" # 12824565596486857925
   QNM_REACTOR_CRUISER: "$tech_qnm_reactors$" # 12824565596486857925
@@ -338,7 +338,7 @@
   TECH_UNLOCK_QNM_SENSOR_DESC: "§H$tech_qnm_sensors$§!\n$tech_qnm_sensors_desc$" # 728522671193967662
   tech_qnm_shields: "음질량 보호막" # 6246054308319762599
   tech_qnm_shields_desc: "음질량 보호막은 충돌 지점에서 에너지를 단순히 분산시키는 대신, 자신을 타격하는 물질과 에너지를 능동적으로 밀어냅니다." # 2667805383832558487
-  tech_bio_qnm_shields: "$tech_qnm_shields$"
+  tech_bio_qnm_shields: "$tech_qnm_shields$" # 17585912486575936677
   tech_qnm_reactors: "음질량 반응로" # 9350651870558055257
   tech_qnm_reactors_desc: "음질량 반응로는 이 물질과 \"일반\" 에너지의 편극된 흐름을 활용하여 거의 완벽한 쌍소멸을 달성하고, 그에 상응하는 막대한 전력을 생산합니다." # 13009538567621533618
   TECH_UNLOCK_QNM_REACTORS_TITLE: "§H부품 잠금 해제:§! $tech_qnm_reactors$" # 1105491894124136464
@@ -349,7 +349,7 @@
   TECH_UNLOCK_QNM_E_JUMP_DRIVE_TITLE_DESC: "§H$tech_qnm_jumpdrive$§!\n$tech_qnm_jumpdrive_desc$" # 1417084731605853784
   tech_sm_armor: "지성 금속 장갑" # 6314050253277895891
   tech_sm_armor_desc: "지각이 있는 금속은 손상 시 재구성 및 복제되며, 환경적 요인에 역동적으로 적응합니다. 이는 장갑을 위한 완벽한 물질입니다." # 11147885599834737406
-  tech_bio_sm_armor: "$tech_sm_armor$"
+  tech_bio_sm_armor: "$tech_sm_armor$" # 8839219149154511558
   tech_sm_auto_repair: "지각 금속 선체 재생" # 5597379759129276362
   tech_sm_auto_repair_desc: "지각 금속의 흔적과 물질 저장소가 포함된 재료로 함선 선체를 건조함으로써, 우리 함선은 극도의 효율로 스스로 수리할 수 있습니다." # 7125706210144190872
   tech_sm_computers: "지각 금속 지능" # 3790456741990652866
@@ -881,8 +881,8 @@
   ehof_loc_physics: "[ehof_destination_system.ehof_display_physics]" # 6686182351268855946
   ehof_loc_society: "[ehof_destination_system.ehof_display_society]" # 13139829011352987748
   ehof_loc_engineering: "[ehof_destination_system.ehof_display_engineering]" # 9282921699024398151
-  count_pool_leader_trigger: ""
-  count_owned_megastructure_trigger: ""
+  count_pool_leader_trigger: "" # 17241709254077376921
+  count_owned_megastructure_trigger: "" # 17241709254077376921
   ehof_toggle_temp_tooltip: "[ehof_toggle_temp_tooltip_scripted_loc]" # 10104750312695566602
   ehof_toggle_temp_settled_tooltip: "$ehof_ehof$를 전환하여 §H임시§! $ehof_wormhole$ 연결을 생성합니다." # 4080071665746561739
   ehof_toggle_temp_nomad_tooltip: "$tech_ehof_spinal$을 전환하여 §H임시§! $ehof_wormhole$ 연결을 생성합니다." # 6511978363307665470
@@ -890,7 +890,7 @@
   ehof_toggle_perm_settled_tooltip: "$ehof_ehof$를 전환하여 §H영구§! $ehof_wormhole$ 연결을 생성합니다." # 12753247695489371731
   ehof_toggle_perm_nomad_tooltip: "$tech_ehof_spinal$을 전환하여 §H영구§! $ehof_wormhole$ 연결을 생성합니다." # 3238483221206088656
   ehof_traders_tooltip: "$ehof_trader$와 통신을 엽니다" # 2431760120810197850
-  ehof_header_blank: ""
+  ehof_header_blank: "" # 17241709254077376921
   ehof_header_01: "§E목적지§!" # 14223621736581511947
   ehof_header_03: "§E행동§!" # 13791209776107794903
   ehof_header_04: "§E미탐사 목적지§!" # 15480266660598370115
@@ -1280,7 +1280,7 @@
   ehof_mega_trader_unbidden_warlock_tooltip: "$ehof_mega_trader_unbidden_warlock$\n언비든 워록\n\n$r_unbidden_warlock_effects$\n\n" # 18062571695512327180
   ehof_mega_trader_contingency_core_tooltip: "$ehof_mega_trader_contingency_core$\n컨틴전시 핵\n\n$r_contingency_core_effects$\n\n" # 13718732558346868023
   ehof_mega_trader_rare_system_tooltip: "$ehof_mega_trader_rare_system$\n희귀 성계\n\n$r_rare_system_desc$\n\n" # 5422083368261940622
-  ehof_mega_trader.110_prefix: ""
+  ehof_mega_trader.110_prefix: "" # 17241709254077376921
   ehof_mega_trader.110_suffix: "이 유물들은 덧없지만, 반드시 사용해야 한다는 법은 없습니다. 우리처럼 수집가가 되어보십시오!\n\n우리는 §Y5년§! £time£마다 재고를 보충합니다." # 18366397167229613191
   ehof_trader_bought_dragon_trophy: "$ehof_mega_trader.110_prefix$$ehof_mega_trader_dragon_trophy_tooltip$$ehof_mega_trader.110_suffix$" # 17422687524186898583
   ehof_trader_bought_khans_throne: "$ehof_mega_trader.110_prefix$$ehof_mega_trader_khans_throne_tooltip$$ehof_mega_trader.110_suffix$" # 11097091664659289538
