@@ -33,7 +33,10 @@ function getGoogle(): ReturnType<typeof createGoogleGenerativeAI> {
         'Google AI API 키가 설정되지 않았습니다. GOOGLE_AI_STUDIO_TOKEN 또는 GOOGLE_GENERATIVE_AI_API_KEY 환경 변수를 설정해주세요.',
       )
     }
-    _googleProvider = createGoogleGenerativeAI({ apiKey })
+    _googleProvider = createGoogleGenerativeAI({
+      apiKey,
+      baseURL: process.env.GOOGLE_AI_BASE_URL?.trim() || undefined,
+    })
   }
   return _googleProvider
 }

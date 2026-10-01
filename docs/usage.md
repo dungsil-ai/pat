@@ -55,12 +55,60 @@ GEMINI_MODEL=gemini-flash-lite-latest
 **환경 변수 설명:**
 - `GOOGLE_AI_STUDIO_TOKEN`: ai-sdk.dev가 사용하는 기본 Gemini API 키 (필수)
 - `GOOGLE_GENERATIVE_AI_API_KEY`: (선택) 기존 Gemini SDK 키, 존재하면 폴백 경로에서 사용
+- `GOOGLE_AI_BASE_URL`: (선택) Gemini API 호환 프록시의 기본 주소입니다. 미설정 또는 공백이면 공식 Google API를 사용합니다.
 - `GITHUB_TOKEN`: (선택) GitHub API 인증용 토큰. 업스트림 대시보드 및 GitHub 기반 버전 조회의 레이트 리밋 완화에 유용
 - `TRANSLATE_BATCH_SIZE`: 벌크 번역 시 한 번에 요청할 항목 수 (기본 20)
 - `TRANSLATION_TIMEOUT_MINUTES`: 번역 타임아웃(분). `false` 또는 `0`이면 비활성화
 - `TRANSLATE_MOD_CONCURRENCY`: 모드 단위 병렬 처리 동시성. 미설정 시 모드 개수만큼 자동 설정
 - `GEMINI_MODEL`: 사용할 Gemini 모델 ID. 미설정 시 코드 기본값(`gemini-flash-lite-latest`) 사용
 - `LOG_LEVEL`: 로그 레벨 (`info`, `debug` 등)
+
+### 번역 CI에서 Tailscale API 프록시 사용
+
+`translate-ck3.yml`, `translate-vic3.yml`, `translate-stellaris.yml`은 저장소 변수 `GOOGLE_AI_BASE_URL`로 요청 주소를 선택합니다. 미설정이거나 주소의 호스트가 `generativelanguage.googleapis.com`이면 Tailscale에 연결하지 않습니다. 다른 호스트를 지정하면 번역 실행 전에 Tailscale에 연결하고 해당 호스트까지 연결을 확인합니다. 연결에 실패하면 번역을 실행하지 않으며, 공식 API로 자동 우회하지 않습니다.
+
+#### 1. 프록시 서버 준비
+
+- 프록시 서버를 tailnet에 연결하고 CI에서 접근할 수 있는 Tailscale IP 또는 MagicDNS 호스트 이름을 확인합니다.
+- 프록시는 Gemini 네이티브 API 형식을 지원해야 합니다. OpenAI 호환 API만 지원하는 주소는 사용할 수 없습니다.
+- 기본 주소에는 API 접두 경로까지 포함합니다. 예를 들어 `https://api-proxy.example.ts.net/gemini/v1beta`를 지정하면 SDK는 그 뒤에 `/models/<모델>:generateContent`를 붙여 요청합니다. 이 주소는 예시이므로 실제 서버 주소와 경로로 변경해야 합니다.
+- 인증 키는 기존 `GOOGLE_AI_STUDIO_TOKEN` 값을 `x-goog-api-key` 헤더로 전달합니다. 프록시가 허용하는 키를 이 시크릿에 설정합니다. 별도의 Bearer 인증 헤더는 현재 지원하지 않습니다.
+- 프록시가 원래 Google API 키를 전달받는 방식이라면 프록시 서버를 신뢰할 수 있어야 합니다. PAT 전용 키를 사용하면 서비스별 사용량을 구분하기 쉽습니다.
+
+#### 2. Tailscale OIDC 신뢰 자격 증명 설정
+
+1. Tailscale 관리 콘솔에서 `tag:ci-pat`을 정의하고 태그 소유자를 지정합니다.
+2. 프록시 서버에 접근 정책용 태그를 지정하고, `tag:ci-pat`에서 프록시의 실제 API TCP 포트로 접근할 수 있도록 grants 또는 ACL을 구성합니다. 내부망 전체를 허용할 필요는 없습니다. 기존의 광범위한 허용 규칙도 함께 확인합니다.
+3. **Trust credentials → Credential → OpenID Connect**에서 GitHub용 신뢰 자격 증명을 생성합니다.
+4. Subject를 `repo:dungsil-ai/pat:ref:refs/heads/main`으로 제한합니다. 저장소 이름이나 실행 브랜치가 다르면 실제 값으로 변경합니다. 이 설정은 다른 브랜치에서 수동 실행하는 워크플로의 연결을 허용하지 않습니다.
+5. `auth_keys` 쓰기 권한과 `tag:ci-pat`을 지정합니다.
+6. 발급된 Client ID와 Audience를 복사합니다. OIDC 방식이므로 장기 OAuth secret은 필요하지 않습니다.
+
+세 번역 워크플로에는 OIDC 토큰 발급에 필요한 `id-token: write` 권한이 구성되어 있습니다. Tailscale Action은 실행별 임시 노드를 생성하고 작업 종료 후 로그아웃하여 노드를 제거합니다. Tailnet Lock을 사용하는 네트워크에서는 이 OIDC 구성을 그대로 사용할 수 없으므로 별도의 인증 구성이 필요합니다.
+
+#### 3. GitHub Actions 변수와 시크릿 설정
+
+저장소의 **Settings → Secrets and variables → Actions**에서 다음 값을 설정합니다.
+
+| 구분 | 이름 | 값 |
+| --- | --- | --- |
+| Variable | `GOOGLE_AI_BASE_URL` | 실제 프록시의 Gemini API 기본 주소 |
+| Secret | `TS_OAUTH_CLIENT_ID` | Tailscale OIDC Client ID |
+| Secret | `TS_AUDIENCE` | Tailscale OIDC Audience |
+| Secret | `GOOGLE_AI_STUDIO_TOKEN` | 프록시가 `x-goog-api-key`로 받는 인증 키 |
+
+프록시 URL에는 인증 정보를 넣지 않습니다. 호스트는 Tailscale에서 직접 연결을 확인할 수 있는 프록시 노드의 IP 또는 이름이어야 합니다. HTTPS를 사용한다면 runner가 신뢰하는 인증서와 URL의 호스트 이름이 일치해야 합니다.
+
+#### 4. 연결 및 사용량 확인
+
+1. 설정이 반영된 `main` 브랜치에서 번역 워크플로를 수동 실행합니다.
+2. **번역 API 연결 설정** 단계에서 Tailscale 연결과 프록시 노드 연결 확인이 성공했는지 확인합니다. 노드 연결 확인은 API 서비스의 정상 응답까지 보장하지는 않습니다.
+3. 번역 요청이 발생한 경우 프록시 로그와 사용량 집계를 확인합니다. 모든 항목이 번역 캐시에 있으면 API 요청이 발생하지 않을 수 있습니다.
+4. 공식 API로 복귀하려면 `GOOGLE_AI_BASE_URL` 변수를 삭제하거나 공식 주소 `https://generativelanguage.googleapis.com/v1beta`로 변경합니다. 프록시 전용 키를 사용했다면 `GOOGLE_AI_STUDIO_TOKEN`도 Google API 키로 복구합니다.
+
+이 자동 연결은 위의 세 번역 CI에만 적용됩니다. 재번역 CI에는 적용하지 않았습니다. 로컬 실행에서는 `.env`에 같은 `GOOGLE_AI_BASE_URL`을 설정할 수 있지만 Tailscale 연결은 직접 준비해야 합니다.
+
+공식 설정 문서: [Tailscale GitHub Action](https://tailscale.com/docs/integrations/github/github-action), [Workload identity federation](https://tailscale.com/docs/features/workload-identity-federation), [Google Provider](https://ai-sdk.dev/providers/ai-sdk-providers/google).
 
 ## 기본 사용법
 

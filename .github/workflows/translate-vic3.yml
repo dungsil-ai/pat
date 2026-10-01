@@ -20,9 +20,11 @@ jobs:
     permissions:
       contents: write
       issues: write
+      id-token: write
     env:
       GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       GOOGLE_AI_STUDIO_TOKEN: "${{secrets.GOOGLE_AI_STUDIO_TOKEN}}"
+      GOOGLE_AI_BASE_URL: "${{ vars.GOOGLE_AI_BASE_URL }}"
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
     steps:
       - uses: actions/checkout@v6
@@ -41,6 +43,12 @@ jobs:
           cache: 'pnpm'
           node-version-file: .node-version
       - run: pnpm install --frozen-lockfile
+      - name: 번역 API 연결 설정
+        uses: ./.github/actions/setup-translation-api
+        with:
+          base-url: ${{ env.GOOGLE_AI_BASE_URL }}
+          tailscale-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          tailscale-audience: ${{ secrets.TS_AUDIENCE }}
       - name: Run VIC3 translation
         id: translate
         run: pnpm vic3

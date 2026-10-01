@@ -1,0 +1,32 @@
+name: '번역 API 연결 설정'
+description: '공식 Google API가 아닌 주소를 사용할 때만 Tailscale에 연결합니다.'
+inputs:
+  base-url:
+    description: '번역 API 기본 주소. 빈 값이면 공식 Google API를 사용합니다.'
+    required: false
+    default: ''
+  tailscale-client-id:
+    description: 'Tailscale OIDC 연동 클라이언트 ID'
+    required: false
+    default: ''
+  tailscale-audience:
+    description: 'Tailscale OIDC 연동 Audience'
+    required: false
+    default: ''
+runs:
+  using: 'composite'
+  steps:
+    - name: 번역 API 주소 판정
+      id: endpoint
+      shell: bash
+      env:
+        GOOGLE_AI_BASE_URL: ${{ inputs.base-url }}
+      run: node "$GITHUB_ACTION_PATH/endpoint.cjs"
+    - name: API 프록시용 Tailscale 연결
+      if: steps.endpoint.outputs.use-proxy == 'true'
+      uses: tailscale/github-action@v4
+      with:
+        oauth-client-id: ${{ inputs.tailscale-client-id }}
+        audience: ${{ inputs.tailscale-audience }}
+        tags: tag:ci-pat
+        ping: ${{ steps.endpoint.outputs.hostname }}
