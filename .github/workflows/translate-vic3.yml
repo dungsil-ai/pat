@@ -25,6 +25,7 @@ jobs:
       GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       GOOGLE_AI_STUDIO_TOKEN: "${{secrets.GOOGLE_AI_STUDIO_TOKEN}}"
       GOOGLE_AI_BASE_URL: "${{ vars.GOOGLE_AI_BASE_URL }}"
+      GEMINI_MODEL: "${{ vars.GEMINI_MODEL }}"
       LOG_LEVEL: "${{ vars.LOG_LEVEL }}"
     steps:
       - uses: actions/checkout@v6

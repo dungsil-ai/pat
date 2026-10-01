@@ -95,6 +95,7 @@ GEMINI_MODEL=gemini-flash-lite-latest
 | 구분 | 이름 | 값 |
 | --- | --- | --- |
 | Variable | `GOOGLE_AI_BASE_URL` | `/chat/completions`를 제외한 OpenAI 호환 API 기본 주소 |
+| Variable | `GEMINI_MODEL` | 사용할 모델 ID. 프록시가 지원하는 모델을 지정합니다 |
 | Secret | `TS_OAUTH_CLIENT_ID` | Tailscale OIDC Client ID |
 | Secret | `TS_AUDIENCE` | Tailscale OIDC Audience |
 | Secret | `GOOGLE_AI_STUDIO_TOKEN` | 프록시가 `Authorization: Bearer`로 받는 API 키 |
