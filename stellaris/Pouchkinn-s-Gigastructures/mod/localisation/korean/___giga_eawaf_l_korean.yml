@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: aaef583
   eawaf_army: "비전 군대" # 16966082526917233174
   eawaf_army_desc: "기적의 군대" # 16966082526917233174
   eaw_early_army: "수정 강화 산업 군대" # 3647163047861631517
@@ -631,22 +632,22 @@
   giga_eawaf_disenchanter_upkeep_modifier: "giga_eawaf_disenchanter_upkeep_modifier" # 15813950506779897944
   giga_eawaf_disenchanter_speed_modifier: "giga_eawaf_disenchanter_speed_modifier" # 18263329646774830418
   giga_eawaf_psionic.100.name: "무형의 오라" # 1663179571097511738
-  giga_eawaf_psionic.100.desc: "We have detected large turbulence of psionic energy emanating from the §YFaust§! star system, slowly spreading outward. Our [GetScientist] have suggested that this phenomenon might be a direct manifestation of the psionic activity of the Sirens, the so-called §RStrife Field§!.\n\nThis $PSIONIC_AURA$ affects both matter and consciousness in observable reality, and we have noticed that it can propagate between star systems as far as the §RStrife Field§! current range.\n\nOur previous data on the Sirens indicates that this aura is highly detrimental and we must come with a method to potentially slow it down. Even though resisting the aura won't stop the Sirens, it's still very useful as it can hinder the actual effects the §RStrife Field§! has on reality."
-  giga_eawaf_psionic.100.a: "Be in high vigilance."
-  giga_eawaf_psionic.100.b: "Perhaps we can study the Mindwardens' technology."
-  giga_eawaf_psionic.100.c: "We'll fight it with our own psionic aura."
-  giga_eawaf_psionic.100.d: "Our shroud inhibition technology might prove useful."
-  giga_eawaf_psionic.101.name: "Strife Field Aura Clashing"
-  giga_eawaf_psionic.101.desc: "Our §Y$PSIONIC_AURA$§! within the §H[from.GetName]§! system has encountered the §RStrife Field aura§! radiating from the neighboring §H[fromfrom.GetName]§! system.\n\nIn theory, when two opposing auras come into conflict, the stronger projection should gradually overwhelm and disperse the weaker one. If the struggle resulted in a complete defeat for one side, the dominant aura might rapidly flow into the vacant system.\n\nUnfortunately, the §YSirens§!' $PSIONIC_AURA$ within §H[fromfrom.GetName]§! are far too powerful, and our conventional psionic aura could only stop them up to §Ya few months§!, depending on its intensity, before dispersing completely. Our only good news is that their aura cannot go further than the §RStrife Field§! itself even if they have won an aura clashing."
-  giga_eawaf_psionic.101.a: "How can this be!"
-  giga_eawaf_psionic.101.b: "At least we slowed them down."
-  giga_eawaf_psionic.101.c: "Even The End of the Cycle...failed?"
-  giga_eawaf_psionic.102.name: "Shroud Seal Fallen"
-  giga_eawaf_psionic.102.desc: "Our experts have observed anomalous changes within the $shroud_seal$ surrounding §H[from.GetName]§!. Its surface has begun emitting an unsettling red-purple hue identical to that of the §YSirens§!' psionic characteristics. At the same time, we've detected a considerable increase in psionic activity of the §RStrife Field§!.\n\nIt's clear that the $shroud_seal$ within §H[from.GetName]§! is no longer serving its intended purpose. Even worse, it appears to be beneficial to the §YSirens§! and is amplifying the growth of their §RStrife Field§!. If possible, we must mobilize our fleets to dismantle the $shroud_seal$ that once was."
-  giga_eawaf_psionic.102.a: "$BATTLESTATIONS$"
-  giga_eawaf_psionic.102.b: "We have to build something even bigger. Perhaps an §YAnti Siren Shield§!."
-  giga_eawaf_psionic.102.c: "Psionic suppression buildings constructed deep in our colony won't be as exposed."
-  giga_eawaf_psionic.102.tooltip: "A Shroud Seal that borders the §POuter Strife Field§! has a §G5%§! chance each month to be enthralled by the Sirens.\n\n§RInner Strife Field§! is too powerful for Shroud Seal to handle, it will instantly enthrall the structure."
-  giga_eawaf_psionic.103.name: "Dismantling Success"
-  giga_eawaf_psionic.103.desc: "The $giga_eawaf_shroud_seal$ in §H[from.GetName]§! has been successfully dismantled, no longer staying under the §YSirens§!' influence. The eerie red-purple structure is now a pile of wreckage, and our sensors confirm a measurable drop in the §RStrife Field§!'s psionic output.\n\nWhile the threat has not been eliminated, this will slow down the §YSirens§! and buy us more time."
-  giga_eawaf_psionic.103.a: "Perfect. Keep up the great work."
+  giga_eawaf_psionic.100.desc: "§Y파우스트§! 성계에서 기원하여 서서히 바깥으로 퍼져나가는 거대한 사이오닉 에너지 난류가 감지되었습니다. 우리의 [GetScientist]은(는) 이 현상이 이른바 §R분쟁 역장§!이라고 불리는 세이렌의 사이오닉 활동이 직접적으로 발현된 것일 수 있다고 제안했습니다.\n\n이 $PSIONIC_AURA$는 관측 가능한 현실의 물질과 의식 모두에 영향을 미치며, §R분쟁 역장§!의 현재 도달 범위 내에 있는 성계들 사이로 전파될 수 있음이 확인되었습니다.\n\n세이렌에 대한 이전 데이터에 따르면 이 아우라는 매우 해로우며, 우리는 이를 잠재적으로 늦출 방법을 찾아야 합니다. 아우라에 저항하는 것만으로는 세이렌을 막을 수 없지만, §R분쟁 역장§!이 현실에 미치는 실제적인 효과를 억제할 수 있으므로 여전히 매우 유용합니다." # 13330224464749963607
+  giga_eawaf_psionic.100.a: "각별한 경계를 유지하십시오." # 13372224894968214561
+  giga_eawaf_psionic.100.b: "마인드워든의 기술을 연구할 수 있을지도 모릅니다." # 7862925794800679853
+  giga_eawaf_psionic.100.c: "우리의 자체적인 사이오닉 아우라로 이에 맞서 싸울 것입니다." # 113592814141187906
+  giga_eawaf_psionic.100.d: "우리의 장막 억제 기술이 유용할 수 있습니다." # 14034169162967016839
+  giga_eawaf_psionic.101.name: "분쟁 역장 아우라 충돌" # 3567358403693310168
+  giga_eawaf_psionic.101.desc: "§H[from.GetName]§! 성계 내의 §Y$PSIONIC_AURA$§!가 인접한 §H[fromfrom.GetName]§! 성계에서 방출되는 §R분쟁 역장 아우라§!와 충돌했습니다.\n\n이론상으로 두 대립하는 아우라가 충돌할 때, 더 강력한 투사가 점진적으로 더 약한 아우라를 압도하고 분산시켜야 합니다. 만약 이 싸움이 한쪽의 완전한 패배로 끝난다면, 우세한 아우라가 빈 성계로 급속하게 흘러 들어갈 수 있습니다.\n\n안타깝게도 §H[fromfrom.GetName]§! 내 §YSirens§!의 $PSIONIC_AURA$는 너무나 강력하여, 우리의 전통적인 사이오닉 아우라는 완전히 분산되기 전 강도에 따라 §Y몇 달§! 동안만 그들을 저지할 수 있었습니다. 그나마 다행인 소식은 그들이 아우라 충돌에서 승리하더라도 그들의 아우라가 §R분쟁 역장§! 자체보다 더 멀리 나아갈 수는 없다는 점입니다." # 3166783113726527446
+  giga_eawaf_psionic.101.a: "어째서 이런 일이!" # 5879816322444466065
+  giga_eawaf_psionic.101.b: "적어도 그들의 진격을 늦추었습니다." # 5451152066458361842
+  giga_eawaf_psionic.101.c: "심지어 순환의 종말조차... 실패했단 말인가?" # 15172630708617874085
+  giga_eawaf_psionic.102.name: "장막 봉인 함락" # 11809250161900927114
+  giga_eawaf_psionic.102.desc: "우리 전문가들은 §H[from.GetName]§!을(를) 둘러싼 $shroud_seal$ 내에서 이상 변동을 관측했습니다. 표면에서 §YSirens§!의 사이오닉 특성과 완벽히 일치하는 불안한 적자색 빛이 발산되기 시작했습니다. 동시에 우리는 §R분쟁 역장§!의 사이오닉 활동이 상당 수준 증가한 것을 감지했습니다.\n\n§H[from.GetName]§! 내의 $shroud_seal$이 더 이상 본래의 목적을 수행하지 못하고 있음이 명백합니다. 설상가상으로, 이 봉인은 §YSirens§!에게 이롭게 작용하며 그들의 §R분쟁 역장§! 성장을 증폭시키고 있는 것으로 보입니다. 가능하다면, 우리는 함대를 동원하여 한때 존재했던 $shroud_seal$을 해체해야 합니다." # 4583002999820787265
+  giga_eawaf_psionic.102.a: "$BATTLESTATIONS$" # 1791281694999894529
+  giga_eawaf_psionic.102.b: "더 거대한 무언가를 건설해야 합니다. 아마도 §Y반세이렌 실드§! 같은 말입니다." # 12627943933434848381
+  giga_eawaf_psionic.102.c: "식민지 심장부에 건설된 사이오닉 억제 건물들은 그렇게 노출되지 않을 것입니다." # 11274497198741390459
+  giga_eawaf_psionic.102.tooltip: "§P외부 분쟁 역장§!과 인접한 장막 봉인은 매달 §G5%§!의 확률로 세이렌에게 매혹될 위험이 있습니다.\n\n§R내부 분쟁 역장§!은 장막 봉인으로 감당하기에는 너무 강력하여, 구조물을 즉시 매혹할 것입니다." # 7516781917055129667
+  giga_eawaf_psionic.103.name: "해체 성공" # 7824264671508693565
+  giga_eawaf_psionic.103.desc: "§H[from.GetName]§!의 $giga_eawaf_shroud_seal$이 성공적으로 해체되어 더 이상 §YSirens§!의 영향력 아래에 머물지 않게 되었습니다. 으스스한 적자색 구조물은 이제 잔해 더미가 되었으며, 우리의 센서는 §R분쟁 역장§!의 사이오닉 출력에서 측정 가능한 수준의 감소를 확인했습니다.\n\n위협이 완전히 제거된 것은 아니지만, 이는 §YSirens§!의 속도를 늦추고 우리에게 더 많은 시간을 벌어다 줄 것입니다." # 4943971192351506098
+  giga_eawaf_psionic.103.a: "완벽합니다. 계속 좋은 활약을 부탁합니다." # 18242226070863658152

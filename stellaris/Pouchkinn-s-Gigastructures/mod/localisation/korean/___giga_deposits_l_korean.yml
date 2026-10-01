@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: aaef583
   d_fluffy_plains: "솜털 평원" # 485737206964667424
   d_fluffy_plains_desc: "광대한 '평평한' 구름 평원, 강풍이 휘몰아칩니다." # 8544921466723519185
   d_gassy_rivers: "가스 강" # 13710469059791742472
@@ -106,20 +107,20 @@
   d_flusion_katown_central_desc: "건축가 디트리히 비데아푸르가 설계한 카타운 메가폴리스는 플루시온의 찬란한 보석입니다.\n\n거대하고 완벽하게 건설된 이 거대 도시는 카첸 헤르츠란트 북부 전체를 아우릅니다. 자연 친화적인 공간 및 강들과 우아하면서도 효율적인 카첸 건축 양식이 조화를 이루어, 수십억 명의 거주민을 수용할 수 있습니다.\n\n내부 카타운에는 하늘 높이 솟은 거대 피라미드인 대카타운 피라미드와 같은 시민 기념물이 자리 잡고 있으며, 이는 은하계 권력의 건축학적 화신입니다." # 15729483931154958178
   d_flusion_bundengrad: "분덴그라드" # 11195475235660752524
   d_flusion_bundengrad_desc: "반수생 거대 도시 분덴그라드는 크롱크와 인지트 같은 종족의 역사적 고향인 카츠피안(구 크랍스피안) 바다의 잔해를 아우르고 있습니다.\n\n이 도시의 설계 목적의 핵심은 카첸아르티크 총독 로리스 폰 카텐스바흐의 임시 거주지 겸 집무실로 건립된 기념비적인 분덴할레입니다.\n\n분덴할레는 수많은 부속 관청 행정 조직과 함께, 플루시온의 일상적인 통치 대부분을 관리할 뿐만 아니라 성간 제국의 수많은 원격 지방들에 대한 권력을 행사하도록 설계되었습니다." # 17731156589880585208
-  d_flusion_katown_submerged: "Katownunterseeisch"
-  d_flusion_katown_submerged_desc: "Many thousands of square kilometres of Katown lie underwater, including the whole of the northern Sonne Meer sea and stretches of the Pacwific Ocean. These sectors are built for the aquatic species of the Katzenartig Imperium.\n\nSuch intimate contact with the open ocean also has bountiful industrial and logistical uses, benefitting the import, processing and export of Flusionian goods from Katown."
-  d_flusion_teho: "Teho"
-  d_flusion_teho_desc: "Straddling Flusion's southern pole, the frigid megacity of Teho holds many secrets, both old and new.\n\nIn the depths of the city lie grand remains from an era over ten thousand years ago, from where the Haranians dominated southern Flusion till a dimming Jublio froze their pole over.\n\nMore recently, the Kaiser has filled every nook and cranny of the expanded city with black sites for some of the Imperium's less... good-looking research projects."
-  d_flusion_lutecien: "Lutecien"
-  d_flusion_lutecien_desc: "Even though Lutecien became the megacity of today under Katzen rule, the Roqualian heritage shines through. Reliable, easily-upgradeable, high-speed communications infrastructure keeps the future-focused streets of Lutecien wired in and up to date.\n\nThis Roqualian-style first-class digital infrastructure, with its scope widened by the Katzens from recreation to cyberwarfare, is now capable of performing a wide variety of high-tech purposes."
-  d_flusion_uranstadt: "Uranstadt"
-  d_flusion_uranstadt_desc: "Renowned as an engine of industrial progress, Uranstadt's heritage is that of a literal and metaphorical powerhouse of the Imperium.\n\nVast power cables, ubiquitous transformers, and old cooling towers repurposed for every task imaginable, characterise the aptly-named \"Uranium City\" of Flusion."
-  d_flusion_grosslaurendaar: "Großlaurendaar"
-  d_flusion_grosslaurendaar_desc: "The capital city of Laurendaar reflects the character of the continent as a whole under Katzenartig rule: a showpiece paradisaical realm. This constructed utopia was designed to be an ideal city, a tourist resort, and a giant propaganda set simultaneously.\n\nVast ecospheres cluster like raindrops on an overgrown metal grille, each containing a hand-perfected imitation of an alien world. In Großlaurendaar like nowhere else can one can turn a corner in an urban canyon to see anything from a sunbathed desert to a fungal cavern or thick jungle."
-  d_flusion_katown_outer: "Äußerekatown"
-  d_flusion_katown_outer_desc: "Outer Katown sprawls ever-south across the Herzlands of central Flusion, practically turning the Katown Megalopolis into a continent unto itself.\n\nImmense overland transport corridors tear open the heart of the city to trans- and inter- continental logistics, their burden lessened by countless spaceports.\n\nFactories in districts such as Brandenpurr are the size of small cities themselves, built for unthinkable efficiencies of scale and by unthinkable economic ambition."
-  d_flusion_gardenwilds: "Flusionian Gardenwilds"
-  d_flusion_gardenwilds_desc: "Within and without the mighty eperopoleis, the Flusio-Arcology is a garden as much as an megafactory, rich in somewhat tame but nonetheless beautiful nature."
+  d_flusion_katown_submerged: "카타운터제이시크" # 6871743692410131307
+  d_flusion_katown_submerged_desc: "카타운의 수많은 제곱킬로미터에 달하는 면적이 수중 아래에 잠겨 있으며, 북부 손네 메르 해전역 전체와 파크위픽 대양의 일부가 포함됩니다. 이 구역들은 카첸아르티크 제국의 수생 종족을 위해 건설되었습니다.\n\n개방된 대양과의 이러한 긴밀한 접촉은 또한 막대한 산업적 및 물류적 용도로 활용되어, 카타운에서 플루시온 상품의 수입, 가공, 수출에 큰 이점을 제공합니다." # 17360270605631962754
+  d_flusion_teho: "테호" # 18317344534545507448
+  d_flusion_teho_desc: "플루시온의 남극을 가로지르는 냉혹한 메가시티 테호는 고대와 현대의 수많은 비밀을 품고 있습니다.\n\n도시의 깊은 곳에는 만 년도 더 된 시대의 거대한 유적이 남아 있으며, 이곳에서 하라니아가 남부 플루시온을 지배하다가 희미해진 주블리오가 그들의 극지를 얼어붙게 만들었습니다.\n\n더 최근에는, 카이저가 확장된 도시의 구석구석을 제국의 다소... 보기에 좋지 않은 연구 프로젝트들을 위한 비밀 기지로 채워 넣었습니다." # 15823711261039741676
+  d_flusion_lutecien: "루테시앵" # 16470015364106919279
+  d_flusion_lutecien_desc: "루테시앵이 카첸의 통치 아래 오늘날의 메가시티로 거듭났음에도 불구하고, 로칼리아의 유산은 여전히 빛을 발합니다. 신뢰할 수 있고, 쉽게 업그레이드할 수 있는 고속 통신 인프라는 미래 지향적인 루테시앵의 거리를 항상 연결되어 최신 상태로 유지해 줍니다.\n\n카첸이 오락용에서 사이버전용으로 그 범위를 넓힌 이러한 로칼리아 스타일의 일급 디지털 인프라는 이제 다양한 첨단 목적을 수행할 수 있게 되었습니다." # 826015424972461125
+  d_flusion_uranstadt: "우란슈타트" # 1099351028567419263
+  d_flusion_uranstadt_desc: "산업 진보의 엔진으로 명성 높은 우란슈타트의 유산은 제국의 문자 그대로이자 은유적인 원동력입니다.\n\n거대한 송전 케이블, 어디에나 있는 변압기, 상상할 수 있는 모든 용도로 개조된 오래된 냉각탑들이 플루시온의 적절한 이름인 \"우라늄 도시\"를 특징짓습니다." # 2103770944921883725
+  d_flusion_grosslaurendaar: "그로스라우렌다르" # 3158126557047872064
+  d_flusion_grosslaurendaar_desc: "라우렌다르의 수도는 카첸아르티크 통치 아래 대륙 전체의 성격, 즉 전시용 낙원 영토를 반영합니다. 이 인공 유토피아는 이상적인 도시, 관광 리조트, 거대한 선전 세트장이 동시에 되도록 설계되었습니다.\n\n거대한 생태계들이 수풀 우거진 금속 격자 위에 빗방울처럼 모여 있으며, 각 생태계에는 외계 세계를 손으로 완벽하게 모사한 모습이 담겨 있습니다. 그로스라우렌다르에서는 그 어디에서도 볼 수 없듯 도시 협곡에서 모퉁이를 돌면 일광욕을 즐기는 사막부터 균류 동굴, 빽빽한 정글까지 무엇이든 볼 수 있습니다." # 14630421118820039340
+  d_flusion_katown_outer: "외우레카타운" # 9422700864116034908
+  d_flusion_katown_outer_desc: "아우터 카타운은 중앙 플루시온의 헤르츨란트를 가로질러 남쪽으로 끊없이 뻗어 나가며, 사실상 카타운 메가폴리스를 하나의 거대한 대륙으로 탈바꿈시킵니다.\n\n광활한 육상 운송 회랑이 대륙 간 및 대륙 횡단 물류를 위해 도시의 심장부를 가르고 있으며, 수많은 우주항이 그 부담을 덜어주고 있습니다.\n\n브란덴푸르와 같은 구역의 공장은 그 자체로 소도시만 하며, 상상할 수 없는 규모의 경제성과 상상할 수 없는 경제적 야망을 위해 지어졌습니다." # 14814110197517420050
+  d_flusion_gardenwilds: "플루시온 야생정원" # 12390384199341803105
+  d_flusion_gardenwilds_desc: "막강한 대도시권의 내부와 외부를 막론하고 플루시오 아콜로지는 거대 공장인 동시에 정원이기도 하며, 다소 길들여졌지만 그럼에도 아름다운 자연이 풍부합니다." # 3832006222408766530
   d_aeternum_gigantic_fission_reactor: "거대 핵분열 원자로" # 3253401782103603259
   d_aeternum_gigantic_fission_reactor_desc: "머나먼 곳에 이터넘이 건설한 기묘한 핵분열 반응로. 거대한 우라늄 덩어리를 동력원으로 삼아 막대한 양의 전력을 생산합니다." # 8889186149483258606
   d_exp_civ_primitive_preserve: "원시 문명 자작나무 보존지" # 4576529318400036259

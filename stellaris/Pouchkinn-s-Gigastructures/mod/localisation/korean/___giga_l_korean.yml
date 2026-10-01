@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: aaef583
   header_01_gigac: "§G초거대 구조물§!" # 10753055230619434190
   header_01_gigac_desc: "$header_01_gigac$\n이 기술은 너무 거대해서 이제 거대 구조공학으로 분류될 수 있는 거대 구조물을 잠금 해제합니다." # 6868045731907895636
   header_02_tetra: "§B사차원 공학§!" # 16667408771422790121
@@ -3681,7 +3682,7 @@
   giga_dialog.2704.a: "실로 놀라운 업적입니다." # 679024418553916007
   war_planet_0: "$gc_giga$$name_war_planet$ 건설 현장" # 3914807477894570507
   war_planet_0_DESC: "미래 $name_war_planet$ 건설 현장, 말 그대로 행성 전체를 둘러싸는 미친 우주선입니다. 앞으로 많은 작업이 필요합니다." # 4297234692516946962
-  war_planet_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_gigastructure$ - $giga_list_category_celestial_warship$ - $giga_list_category_ship_production$\nConverts a §YMolten§!, §YBarren§!, §YToxic§! or §YFrozen World§! at or above §YSize 24§! into a §YCelestial Warship§!\n§LThe Behemoth Planetcraft is equipped with even more powerful weaponry than its lunar brethren and should be capable of fending off most threats by itself."
+  war_planet_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_gigastructure$ - $giga_list_category_celestial_warship$ - $giga_list_category_ship_production$\n§Y크기 24§! 이상의 §Y용암 행성§!, §Y황무지 행성§!, §Y독성 행성§! 또는 §Y빙하 행성§!을 §Y천체 전함§!(으)로 변환합니다.\n§L거대 행성포는 달 크기의 형제들보다 훨씬 더 강력한 무장으로 무장하고 있으며, 단독으로도 대부분의 위협을 격퇴할 수 있을 것입니다." # 3736026379071313099
   war_planet_1: "플래닛크래프트 지각" # 10927868631202637173
   war_planet_1_DESC: "행성함의 외부 및 내부 시스템이 행성 지각 내부에 설치되었습니다. 이 행성의 핵 내부에는 가장 강력한 무기에도 동력을 공급할 수 있는 초거대 원자로가 설치되어 있습니다." # 10315907678983706153
   war_planet_2: "행성 크래프트 기동 시스템" # 17703314547314167306
@@ -4052,7 +4053,7 @@
   star_lifter_0: "$gc_mega$$name_starlifter$ 기지" # 12409679115811016643
   star_lifter_0_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\n\n§Y별§! 에서 £minerals£ §Y광물§!을(를) 채취합니다 - $giga_list_scales_with_star_size$\n\n§L거대한 $star_lifter_5$는 주어진 별을 완전히 에워싸고 핵융합 과정을 이용해 가벼운 원소로부터 대량의 사용 가능한 광물을 생성합니다.§!" # 16381159379850466808
-  star_lifter_0_CONSTRUCTION_INFO_DELAYED: ""
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
   star_lifter_1: "$name_starlifter$ 프레임" # 16243908914503820733
   star_lifter_1_DESC: "이 가느다란 틀은 언젠가 항성을 가려버릴 만큼 거대한 채광 단지를, 그리고 우리의 광물 부족을 지탱하게 될 것입니다." # 17489484396467732078
   star_lifter_2: "$name_starlifter$ 1단계" # 2838903713158100639
@@ -4776,7 +4777,7 @@
   giga_flusion.001.b: "잠깐, 카첸과 주스프리...?" # 798604628587527863
   giga_flusion.002.name: "두 종족의 이야기" # 8804104926337744145
   giga_flusion.002.katzenland_nuked.desc: "서로 다른 행성에서 발견된 카첸과 주스프리에 대한 우리의 조사 결과는, 카첸란드가 파괴된 후 두 종족이 탈출한 행성이 다름 아닌 원시 행성 플루션임을 시사하는 것으로 보입니다!\n\n비록 플루션에서 발견될 당시 두 종족 모두 기술적으로 상당히 퇴보한 상태였지만 말입니다. 이는 §Y메오피아 원정대 1§!이 행성에 불시착했을 가능성이 높으며, 살아남은 소수의 개체들이 사실상 기술 기반 전체를 처음부터 다시 재건해야 했음을 의미합니다.\n\n비록 그다지 중요한 발견은 아닐지라도, 이러한 결과는 우리 행성 생물고고학자들에게 큰 흥미를 불러일으키고 있습니다. 또한 이는 문명에 매우 암울한 상황이 닥치더라도, 모든 역경을 딛고 일어설 기적적인 생존 가능성을 결코 배제해서는 안 된다는 것을 보여줍니다.\n\n생각해보면 고무적이면서도 두려운 일이 아닐 수 없습니다..." # 2731764639060905649
-  giga_flusion.002.katzenland_alive.desc: "Our findings of Katzens and Zuspris on different planets shows a historic connection between Flusion and the §Y[giga_meopa_fe.GetName]§!! A reopened study into the elder empire's history has found references to the §YMeopian Expedition 1§!, which we believe was a large colonization vessel despatched towards Flusion many millenia ago.\n\nThe inferior technology of the Flusionian society implies that the colony ship most likely crash-landed, forcing the few remaining individuals to rebuild practically their entire technological base.\n\nIt isn't entirely clear why the §Y[giga_meopa_fe.GetName]§! abandoned the survivors completely, but our leading theory is that the by the time the ship reached Flusion, its progenitors had long since simply lost interest."
+  giga_flusion.002.katzenland_alive.desc: "서로 다른 행성에서 발견된 카첸과 주스프리의 흔적은 플루시온과 §Y[giga_meopa_fe.GetName]§! 사이의 역사적 연관성을 보여줍니다!! 고대 제국의 역사에 대한 재조사 과정에서 §Y메오피아 탐사선 1호§!에 대한 언급이 발견되었으며, 우리는 이것이 수천 년 전에 플루시온을 향해 파견된 대형 식민선이었다고 믿습니다.\n\n플루시온 사회의 열악한 기술력은 이 식민선이 불시착했음을 시사하며, 살아남은 소수의 생존자들은 사실상 전체 기술 기반을 처음부터 다시 구축해야 했습니다.\n\n§Y[giga_meopa_fe.GetName]§!이(가) 생존자들을 완전히 방치한 이유는 명확하지 않지만, 우리의 주요 가설은 함선이 플루시온에 도달했을 무렵에는 창조주들이 이미 흥미를 잃어버린 지 오래였다는 것입니다." # 15541986504800739220
   giga_flusion.002.a: "흥미로운 발견이군요!" # 18371615655988067093
   giga_flusion.004.name: "플루션 항전" # 12387310537299930360
   giga_flusion.004.a.desc: "심각한 소식입니다! 저희 군대가 플루션의 원시 방어자들을 격퇴한 직후, 행성의 주요 종족 중 하나인 카첸(Katzens)이 자신들의 민족이 포획되는 것을 막기 위함인지, 그들의 거대한 핵무기 저장고 전체를 기폭시켰습니다. 보통 이러한 행위는 행성을 황무지 행성으로 만들지만, 카첸은 핵무기에 엄청나게 많은 투자를 하여 일부 성간 제국과 맞먹는 비축량을 보유하고 있었습니다.\n\n수 분 내에 거대한 화염 구름이 행성 표면 대부분을 뒤덮었고, 산맥은 평탄해졌으며 행성 대양의 대부분은 증발했습니다. 모든 플루션인은 이 대격변으로 사망했으며, 그들의 문명은 완전히 파괴되었습니다.\n\n한때 푸르렀던 대륙형 세계 플루션은 폐허로 뒤덮인 거대하고 방사능이 가득한 사막으로 변모했습니다..." # 11666528409881341304
@@ -4808,7 +4809,7 @@
   building_giga_flusion_capital: "카타운 메갈로폴리스" # 3499495171403439265
   building_giga_flusion_capital_desc: "수백만 거주민의 터전인 거대한 도시로, 카첸 종족의 수도 역할을 합니다. 도시 중앙 정부가 입주한 눈에 띄게 거대한 현대적 피라미드가 특징적입니다. 또한, 거주민을 폭격으로부터 보호하는 거대한 원시 방어막 생성기도 갖추고 있습니다." # 16772755487700599611
   giga_flusion.301.name: "퓨전의 달 거대 구조물" # 6012527222434275013
-  giga_flusion.301.desc: "Our outpost in the §YJublio§! system reports that activity has started to pick up on a moon of §YFlusion§!, a primitive world located within the system.\n\nIndeed, it appears one of the planet's major nations, the §YKatzenartig Imperium§!, has started to undertake a massive construction project on Flusion's second moon, Muno. They are currently ferrying large amounts of material and personnel to the moon, and many permanent bases have popped up on the satellite's surface.\n\nThe primitives' radio transmissions are surprisingly well encoded, which prevented our scientists from finding out what the project was supposed to be. They aren't sure how to apprehend this peculiar situation, and some advocate that we put an end to this project ourselves immediately."
+  giga_flusion.301.desc: "§Y주블리오(Jublio)§! 계에 위치한 우리의 전초기지는 계 내에 위치한 미개 행성 §Y플루시온(Flusion)§!의 위성에서 활동이 활발해지기 시작했다고 보고했습니다.\n\n실제로 행성의 주요 국가 중 하나인 §Y카첸아르티크 제국(Katzenartig Imperium)§!이 플루시온의 제2위성인 무노(Muno)에서 대규모 건설 프로젝트에 착수한 것으로 보입니다. 그들은 현재 다량의 자재와 인원을 위성으로 운송하고 있으며, 위성의 표면에는 많은 영구 기지들이 생겨났습니다.\n\n원주민들의 무선 송신은 놀라울 정도로 잘 암호화되어 있어 우리 과학자들이 이 프로젝트의 정체를 알아내는 것을 방해했습니다. 그들은 이 기묘한 상황을 어떻게 파악해야 할지 확신하지 못하고 있으며, 일부는 우리가 직접 이 프로젝트를 즉시 끝내야 한다고 주장합니다." # 6142653176690297541
   giga_flusion.301.a: "그들을 방해하지 마십시오, 상관없습니다." # 766261425142438995
   giga_flusion.301.b: "프로젝트의 정체를 파악합니다." # 4800202577259825037
   giga_flusion.301.c: "저들은 막아야 한다. 즉시 달을 폭격하라!" # 4780989984751672217
@@ -4987,12 +4988,12 @@
   giga_mega.702.desc: "좋은 소식입니다! [giga_debris_system.GetName] 성계의 파괴된 $name_war_planet$을 복구하는 데 성공했습니다. 꽤 많은 작업이 필요했고, 내부 대부분을 완전히 처음부터 재건해야 했지만, 이 강력한 전함은 이제 다시 작동 가능합니다." # 10395287569855548217
   giga_mega.702.a: "훌륭합니다." # 13357587260733090656
   katzen_trait_martial: "군사 규율" # 10626171518497842560
-  katzen_trait_martial_desc: "This species is incredibly disciplined, thanks to long-standing martial traditions. They will fight like no other on the battlefield and vow absolute loyalty to their nation, defending it to the very end."
+  katzen_trait_martial_desc: "이 종족은 오랜 무예 전통 덕분에 엄청난 규율을 자랑합니다. 그들은 전장에서 그 누구보다 치열하게 싸울 것이며 국가에 대한 절대적인 충성을 맹세하고 끝까지 방어할 것입니다." # 16798629388738581900
   flusion_early_army: "플루션 군대" # 6402990168366486585
   flusion_early_army_desc: "플루션에 거주하는 다양한 종족들로 구성된 군대" # 3133203282094305145
   stellarite_kaiser_moon_modifier: "스텔라라이트 카이저 달" # 2039426122511255239
   stellarite_kaiser_moon_modifier_desc: "이 불가능할 정도로 강력한 공격 위성은 극도로 에너지가 넘치는 심오한 물질로 만들어졌다." # 2591791124348151683
-  improbable_kaiser_moon_modifier: "Improbable Kaiser Moon"
+  improbable_kaiser_moon_modifier: "개연성 없는 카이저의 달" # 10108245878539020352
   improbable_kaiser_moon_modifier_desc: "이 이해할 수 없을 정도로 강력한 공격 위성은 극도로 에너지가 넘치고 초차원적인 난해한 물질로 이루어져 있습니다." # 3496994217798254925
   stellarite_kaiser_moon_0: "$gc_mega$스텔라라이트 카이저 문 건설 현장" # 13225057005230988663
   stellarite_kaiser_moon_0_DESC: "작은 달을 중심으로 건설되는, 성계 전장을 초토화할 수 있는 거대한 초무기이자 장래의 스텔라라이트 카이저 문 건설 현장." # 5479486507718231369
@@ -5001,13 +5002,13 @@
   stellarite_kaiser_moon_1_DESC: "이 미래형 초무기는 달 하나를 통째로 이동시킬 수 있는 거대한 추진기를 갖추고 있습니다. 날개에는 이를 조종하기 위한 매끈한 임펄스 추진기가 장착되어 있습니다." # 12199437849756712256
   stellarite_kaiser_moon_2: "스텔라라이트 카이저 달" # 2039426122511255239
   stellarite_kaiser_moon_2_DESC: "완전한 스텔라라이트 카이저 문은 거의 모든 것을 관통할 수 있는 거대한 레일건과, 원자탄 발사기, 그리고 광대한 규모의 운동 에너지 포대를 장비하고 있습니다." # 4427630842647812475
-  improbable_kaiser_moon_0: "$gc_mega$Improbable Kaiser Moon Construction Site"
-  improbable_kaiser_moon_0_DESC: "The construction site for a future Improbable Kaiser Moon, a colossal superweapon built around a small moon, capable of laying waste to the stellar battlefield."
+  improbable_kaiser_moon_0: "$gc_mega$개연성 없는 카이저의 달 건설 현장" # 2993081285900047715
+  improbable_kaiser_moon_0_DESC: "성간 전장을 초토화할 수 있는 소형 위성 주위에 건설된 거대한 초병기, 미래의 개연성 없는 카이저의 달을 위한 건설 현장입니다." # 5478650209089296760
   improbable_kaiser_moon_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_celestial_warship$\n§Y용암§!, §Y황량함§! 또는 §Y얼어붙은 세계§! 중 §Y크기 5에서 7§! 사이의 행성을 특수한 §Y천체 전함§!(으)로 변환합니다.\n§L카첸 기술을 바탕으로 한 카이저 위성은 엄청난 에너지를 가진 물질로 만들어진, 작은 위성에 내장된 거대한 레일건으로 구성되어 있습니다.§!" # 12690581477323344905
-  improbable_kaiser_moon_1: "Improbable Kaiser Moon Movement Systems"
+  improbable_kaiser_moon_1: "개연성 없는 카이저의 달 이동 시스템" # 14323200421864100983
   improbable_kaiser_moon_1_DESC: "이 미래형 초병기는 거대한 위성을 이동시킬 수 있는 엄청난 추진기를 탑재하고 있습니다. 날개 부분에는 방향 전환을 위한 매끄러운 임펄스 추진기가 장착되어 있습니다." # 12199437849756712256
-  improbable_kaiser_moon_2: "Improbable Kaiser Moon"
-  improbable_kaiser_moon_2_DESC: "A complete Improbable Kaiser Moon, equipped with a gigantic railgun capable of puncturing nearly anything, alongside atomic warhead launchers and vast arrays of kinetic batteries."
+  improbable_kaiser_moon_2: "개연성 없는 카이저의 달" # 10108245878539020352
+  improbable_kaiser_moon_2_DESC: "거의 모든 것을 관통할 수 있는 거대한 레일건과 원자탄 발사기, 그리고 광범위한 운동에너지 포탑 배열을 갖춘 완전한 개연성 없는 카이저의 달입니다." # 15924597300728488780
   giga_katzen.0905.name: "스텔라라이트 카이저 문 건설 현장 완성!" # 1195469750545526631
   giga_katzen.0905.desc: "[giga_system.GetName] 성계에 미래 항성암 카이저 문 건설 현장이 이제 완료되었습니다.\n\n이 산업 플랫폼은 작은 달을 강력한 초무기로 변환하는 기지로 사용될 것입니다. 달을 연구하여 그것을 구성하는 데 사용된 물질을 어느 정도 복제하는 방법을 알아냈으며, 완벽한 복제는 아니지만 §Y750§! £energy£와 §Y250§! £alloys£의 매우 막대한 유지비가 수반될 것입니다." # 11449270831741870071
   giga_katzen.0905.a: "좋습니다." # 843958112380023394
@@ -5017,13 +5018,13 @@
   giga_katzen.0907.name: "스텔라라이트 카이저 문 비상!" # 4974838548859825537
   giga_katzen.0907.desc: "그리하여, 완료되었습니다!\n\n[giga_system.GetName] 성계에서, 우리는 작은 위성을 투사체를 상대론적 속도까지 가속할 수 있는 거대한 레일건을 장착한 치명적인 카첸 초무기로 전환하는 데 성공했습니다.\n\n이 레일건과 미사일, 거대한 자동포 모두로 무장한 이 무시무시한 구조물은, 카이저가 그러기를 바랐던 것처럼, 의심할 여지 없이 우리가 은하 지배를 확보하는 데 도움이 될 것입니다.\n\n그 지각 내에 저장된 거대한 양의 에너지에 의해 과충전된 이 위성의 무기는 은하의 다른 어떤 것과도 비할 데 없습니다.\n\n카이저가 어떻게 그토록 무시무시한 구조물을 건설하는 데 성공했는지 우리는 여전히 알 수 없습니다..." # 6497279813480897802
   giga_katzen.0907.a: "훌륭하군!" # 4941506436412555079
-  giga_katzen.0908.name: "Improbable Kaiser Moon Construction Site Complete!"
-  giga_katzen.0908.desc: "The construction site for a future Improbable Kaiser Moon has now been completed in the [giga_system.GetName] system.\n\nThis industrial platform shall be used as a base to convert a small moon into a fearsome superweapon. By studying the moon, we have managed to figure out how somewhat replicate the material used to construct it, and while it isn't a perfect replica, it will come with a very steep upkeep of §Y6000§! £energy£ and §Y2000§! £alloys£."
+  giga_katzen.0908.name: "개연성 없는 카이저의 달 건설 현장 완료!" # 9649528019171850948
+  giga_katzen.0908.desc: "[giga_system.GetName] 성계에 미래의 개연성 없는 카이저 위성 건설 현장이 완공되었습니다.\n\n이 산업 플랫폼은 작은 위성을 무시무시한 초병기로 개조하기 위한 기지로 사용될 것입니다. 위성을 연구한 바에 따르면 그것을 구성하는 물질을 어느 정도 모방하는 방법을 알아냈으며, 완전한 복제품은 아니지만 §Y6000§! £energy£ 및 §Y2000§! £alloys£라는 매우 막대한 유지비가 소모될 것입니다." # 4177651901523204919
   giga_katzen.0908.a: "좋습니다." # 843958112380023394
-  giga_katzen.0909.name: "Improbable Kaiser Moon Movement Systems Complete!"
+  giga_katzen.0909.name: "개연성 없는 카이저 위성 이동 시스템 완료!" # 2462222903578947323
   giga_katzen.0909.desc: "[giga_system.GetName] 성계에 있는 우리 카이저 달의 이동 시스템이 성공적으로 설치되었습니다. 전체 천체를 추진하는 데 사용될 거대한 추진기가 달의 뒷면에 건설되었습니다.\n\n이제 달을 구성하는 엄청난 위력의 결정체 물질을 동력원으로 삼는 달의 주력 초병기인 초대형 레일건 제작 작업을 시작해야 합니다." # 95999286562785710
   giga_katzen.0909.a: "훌륭합니다." # 4205353275372794963
-  giga_katzen.0910.name: "Improbable Kaiser Moon Takes Flight!"
+  giga_katzen.0910.name: "개연성 없는 카이저 위성이 비상하다!" # 2654943956414988027
   giga_katzen.0910.desc: "드디어 완료되었습니다! [giga_system.GetName] 성계에서 우리는 작은 위성을 투사체를 상대론적 속도로 가속할 수 있는 거대한 레일건을 갖춘 치명적인 카첸 초병기로 개조해냈습니다.\n\n이 레일건뿐만 아니라 미사일과 거대한 오토캐넌으로 무장한 이 두려운 구조물은 카이저가 바랐던 것처럼 우리가 은하계를 장악하는 데 의심할 여지 없이 큰 도움이 될 것입니다. 지각과 여러 고차원에 저장된 막대한 양의 에너지로 과충전된 이 달의 무장은 은하계의 그 어떤 것과도 비교할 수 없습니다.\n\n카이저가 어떻게 이런 두려운 구조물을 건조할 수 있었는지 우리는 여전히 확신하지 못하고 있습니다..." # 16547600659719522554
   giga_katzen.0910.a: "훌륭합니다!" # 4941506436412555079
   giga_tech_stellarite_kaiser_moon: "심오한 카첸 병기" # 4275582800970667757
@@ -5032,18 +5033,18 @@
   desc_stellarite_kaiser_moon: "회수된 카첸 기술을 기반으로 한, 진정으로 광기에 찬 공학 프로젝트입니다.\n막대한 양의 에너지를 방출할 수 있는 초고도 물질로 만들어졌으며, 극도로 강력한 무기 사용을 가능하게 합니다." # 12105936175574977116
   giga_tech_improbable_kaiser_moon: "무한 계획" # 18400437860324542462
   giga_tech_improbable_kaiser_moon_desc: "[ImprobKaiserMoonSalvageTetradimensional]" # 2152512252572070851
-  giga_tech_improbable_kaiser_moon_non_tetradim_desc: "Extensive studies of the Improbable Kaiser Moon has borne some limited fruit. Though we cannot fully understand the physics behind it, it seems to follow certain theoretical aspects of higher-dimensional engineering. This is what allowed it to fuel its huge array of weaponry, and our limited ability to reproduce it will allow us to construct replicates. No-one is sure how the Kaiser came across this knowledge before our own greatest minds, though."
-  giga_tech_improbable_kaiser_moon_tetradim_desc: "Extensive studies of the Improbable Kaiser Moon has finally borne fruit. The principles behind its construction are incredibly similar to those used in our current understanding of tetradimensional engineering. It is now confirmed that this is what allowed it to fuel its huge array of weaponry. Unfortunately, our scientists have no grounded explanation for how the Kaiser's weapons fired over a dozen times faster than any salvaged variants, or how his projectiles inflicted over sixty times more damage than they reasonably should. We can only assume that he had the assistance of some higher-dimensional being."
-  allow_improbable_kaiser_moon: "§HUnlocks Megastructure:§! Improbable Kaiser Moon"
+  giga_tech_improbable_kaiser_moon_non_tetradim_desc: "개연성 없는 카이저 위성에 대한 광범위한 연구가 어느 정도 결실을 맺었습니다. 그 이면에 숨겨진 물리학을 완전히 이해할 수는 없지만, 고차원 공학의 특정 이론적 측면을 따르는 것으로 보입니다. 이것이 바로 거대한 무기 체계에 연료를 공급할 수 있었던 이유이며, 우리의 제한적인 복제 능력을 통해 복제품을 건조할 수 있게 될 것입니다. 하지만 카이저가 우리 최고의 지성들보다 어떻게 먼저 이 지식을 접하게 되었는지는 누구도 확신하지 못합니다." # 16770059722373640888
+  giga_tech_improbable_kaiser_moon_tetradim_desc: "개연성 없는 카이저 위성에 대한 광범위한 연구가 마침내 결실을 맺었습니다. 그 건조 원리는 현재 우리가 이해하고 있는 4차원 공학에 사용되는 원리와 매우 유사합니다. 이것이 바로 거대한 무기 체계에 연료를 공급할 수 있게 해 준 원동력임이 확인되었습니다. 불행히도 우리 과학자들은 카이저의 무기가 인양된 어떤 변종들보다 어떻게 1두른 배 이상 빠르게 발사되었는지, 또는 투사체가 어떻게 합리적인 수준보다 60배 이상 더 많은 피해를 입혔는지에 대한 확실한 설명을 내놓지 못하고 있습니다. 우리는 그가 고차원적 존재의 도움을 받았다고 가정할 수밖에 없습니다." # 10041359491484984729
+  allow_improbable_kaiser_moon: "§H거대 건축물 해제:§! 개연성 없는 카이저 위성" # 5269938813793660684
   desc_improbable_kaiser_moon: "회수된 카이저 기술을 바탕으로 한 상상할 수 없을 정도로 복잡한 공학 프로젝트입니다. 막대한 양의 에너지를 방출할 수 있는 고도로 진화된 물질로 만들어졌으며, 우리 차원과 여러 고차원 사이를 끊임없이 전환하여 상상할 수 없을 정도로 강력한 무기를 사용할 수 있게 합니다." # 6784009659149594505
   giga_katzenartig_enabled_never: "£menu_disabled£카첸아르틱 제국 (§R존재하지 않음§!)\n§Y카첸아르틱 제국§!, §YUFS§!, 그리고 §Y코로나 마도정체§!는 §R생성되지 않습니다§!.\n\n플루션은 §Y방사능 사막 행성§!이 되며, 문명과 생명체가 없습니다. 코로나는 §Y장막 행성§!이 됩니다.\n\n카첸아르틱 제국이나 플루션 관련 이벤트는 발동하지 않으며, 그들과 관련된 모든 것은 사실상 사라집니다.\n\n두 시스템을 완전히 제거하려면 §YNo Katzenartig Imperium§! 하위 모드를 사용하십시오." # 4932348894327613719
-  giga_katzenartig_enabled: "£menu_enabled£Katzenartig Imperium\nThe militaristic Katzenartig Imperium might appear after midgame and attempt to expand into the galaxy.\n\nThe Katzens will use orbital arcologies, the three terraforming megastructures, the EHOF, and substellar compressors, regardless of whether or not they are enabled."
+  giga_katzenartig_enabled: "£menu_enabled£카첸아르티크 제국\n군국주의 성향의 카이저 제국이 중반기 이후 등장하여 은하계로 세력을 확장하려 할 것입니다.\n\n카첸은 활성화 여부와 관계없이 궤도 아콜로지, 세 개의 테라포밍 거대 건축물, EHOF, 그리고 항성하 압축기를 사용합니다." # 3325736399002202986
   giga_katzenartig_disabled: "£menu_disabled£카첸아르티크 제국\n카첸아르티크 제국은 등장하지 않을 것입니다.\n\n§B플루션은 여전히 원시적인 공격 달을 건설할 것이며, 카이저는 여전히 세계 정복을 시도하겠지만 항상 실패하고 그 결과 민주적인 통합 플루션이 일반 제국으로 등장하게 될 것입니다.\n\nFTL 플루션을 완전히 제거하고 싶다면 §Y존재하지 않음§! 옵션을 선택하십시오." # 517187936271103951
   giga_katzenartig_enabled_default: "£menu_o£카첸아르티크 제국 (§G기본값§!)\n카첸아르티크 제국은 대략 §Y~40%§! 출현할 확률이 있습니다." # 11434422823315167484
   giga_katzenartig_enabled_always: "£menu_katzen_a£카첸아르티그 제국 (§E보장됨§!)\n카첸아르티그 제국은 중반 이후에 그들의 달이 파괴되지 않는다면 §G항상§! 생성됩니다." # 6386864837475976960
   giga_katzenartig_enabled_easy: "카첸아르티그 제국 (§GRelaxed Kaiser§!)\n카첸아르티그 제국은 중반 이후에 §Galways§! 생성되지만 (게임 시작 시 달을 얻지는 못함), 일반적인 제국보다 §Gless§! 약하게 생성되며 다음의 디버프를 받습니다:\n§Y무기 피해량 -30%\n방어막 생명력 -40%\n장갑 생명력 -40%\n선체 생명력 -40%\n지상군 피해량 -40%\n지상군 생명력 -40%\n발사 속도 -20%\n함선 속도 -20§!\n§Y성계 기지 은폐 탐지 -2§!\n§Y함선/메가스트럭처 비용 +25%§!\n§Y카첸 연구는 전혀 확장되지 않아 버프를 제공하지 않습니다.§!" # 5219517318981102357
   giga_katzenartig_enabled_deathwish: "£menu_katzen_d£카첸아르티크 제국 (§R카이저의 광란의 질주§!)\n카첸아르티크 제국은 중반 이후에 §항상§! 출현하며, 다음과 같은 버프를 받아 §엄청나게§! 강력해집니다:\n§Y무기 피해량 +200%\n방어막 생명력 +200%\n장갑 생명력 +200%\n선체 생명력 +200%\n지상군 피해량 +200%\n지상군 생명력 +200%\n메가스트럭처 건설 속도 +100%\n발사 속도 +50%\n함선 속도 +50%§!\n§Y성계 기지에 은폐 탐지 +2§!\n§Y함선/메가스트럭처 비용 -25%§!\n§Y카첸 연구 속도가 평소보다 더 빠르게 증가합니다§!\n\n§R극도로 도전적입니다.§!" # 1145577524267476450
-  giga_katzenartig_enabled_stellarite: "£menu_katzen_s£Katzenartig Imperium\n(§YThe Stellarite Kaiser§!)\nThe Katzenartig Imperium will §Galways§! spawn after midgame, and will be §RMONTROUSLY§! more powerful, receiving the following buffs:\n§Y+1200% Weapons Damage\n+1200% Shield HP\n+1200% Armor HP\n+1200% Hull HP\n+800% Army Damage\n+800% Army Health\n+200% Megastructure Build Speed\n+300% Fire Rate\n+100% Ship Speed\n+500% Orbital Bombardment Damage§!\n§Y+5 Cloaking Detection on Starbases§!\n§Y-50% Ship/Megastructure Cost§!\n§YKatzen Research will scale much faster than usual§!\n\n§RPARTISANS WILL NOT APPEAR.§!\n§RIMPOSSIBLY CHALLENGING.\nTHIS IS NOT BALANCED.\nFOR USE WITH POWERFUL MODS!§!"
+  giga_katzenartig_enabled_stellarite: "£menu_katzen_s£카첸아르티크 제국\n(§Y별의 카이저§!)\n카첸아르티크 제국은 중반기 이후 §G항상§! 등장하며, §R어마어마하게§! 강력해져 다음과 같은 버프를 받습니다:\n§Y+1200% 무기 피해\n+1200% 실드 내구도\n+1200% 장갑 내구도\n+1200% 선체 내구도\n+800% 육군 피해\n+800% 육군 생명력\n+200% 거대 건축물 건설 속도\n+300% 연사력\n+100% 함선 속도\n+500% 궤도 폭격 피해§!\n§Y+5 성기지 은폐 탐지§!\n§Y-50% 함선/거대 건축물 비용§!\n§Y카첸 연구가 평소보다 훨씬 빠르게 진척됨§!\n\n§R레지스탕스가 등장하지 않습니다.§!\n§R극도로 도전적입니다.\n밸런스가 맞지 않습니다.\n 강력한 모드와 함께 사용하세요!§!" # 17126378408633284624
   giga_katzenartig_enabled_improbable: "£menu_katzen_i£카첸아르티크 제국\n(§B무한 불확실성 카이저§!)\n카첸아르티크 제국은 중반기 이후에 §G항상§! 등장하며, §R무한히§! 더 강력해져 다음의 버프를 받습니다:\n§Y+6000% 무기 피해\n+6000% 실드 내구도\n+6000% 장갑 내구도\n+6000% 선체 내구도\n+4000% 육군 피해\n+4000% 육군 체력\n+4000% 육군 사기\n+500% 거대 구조물 건설 속도\n+800% 연사력\n+800% 함선 이동 속도\n+30 기본 회피\n+150% 회피\n+1000% 궤도 폭격 피해\n-200% 행성 궤도 폭격 피해§!\n§Y성기지는 항상 위장을 간파함§!\n§Y-75% 함선/거대 구조물 비용§!\n§Y카첸 연구가 평소보다 훨씬, 훨씬 빠르게 진행됨§!\n\n§R레지스탕스는 등장하지 않습니다.§!\n§R기본적으로 불가능합니다.\n이것은 절대적으로 균형이 맞지 않습니다.\n극도로 강력한 모드와 함께 사용하기 위함입니다!§!" # 4856780034380411613
   katzen_easy: "느긋한 카이저" # 2020930737876084141
   katzen_easy_desc: "은하계를 정복하는 것은 쉽지 않은 일이지." # 3877959629881598763

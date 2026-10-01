@@ -1,4 +1,5 @@
 ﻿l_korean:
+# PAT verified upstream: aaef583
   giga_nomad_claim_unowned_nomad_compat_megas: "소유자 없는 유목민 호환 거대건축물 영유권 주장" # 3436493089386037577
   giga_nomad_claim_unowned_nomad_compat_megas_desc: "이 성계에 유목민이 사용할 수 있는 소유자 없는 거대건축물이 있는 경우, 이 결정을 통해 정당한 영유권을 주장할 수 있습니다." # 13367416677921822968
   giga_nomad_claim_unowned_nomad_compat_megas_effect: "이 성계 내의 모든 §Y유목민 호환 거대건축물§!이 우리 직속 통제로 이전됩니다." # 8214276214899418657
@@ -19,26 +20,26 @@
   giga_tech_nomad_war_moon: "반천체 프로토타입" # 4538546003966524485
   giga_tech_nomad_war_moon_desc: "$_giga_war_moon_plural$의 위협에 대항하기 위해 급조된 프로토타입 설계입니다. 내구성은 떨어지지만, 그들을 격파하기에 특화된 무기를 탑재하고 있습니다." # 11066365435705402436
   GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL: "정화 창" # 5255225506499505363
-  GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL_DESC: "A weapon specifically created to crack open planetary crust, and anything protecting it."
-  GIGA_NOMAD_WAR_MOON_COMPUTER: "$giga_nomad_war_moon$ Combat Computer"
-  GIGA_NOMAD_WAR_MOON_COMPUTER_DESC: "The $giga_nomad_war_moon$ will stay at very long range (§Y3250§!) range and fire its array of weapons at available targets."
-  REACTOR_NOMAD_WAR_MOON: "Prototype Heavy Reactor"
-  REACTOR_NOMAD_WAR_MOON_DESC: "A special reactor, specifically created and tuned to power the $giga_nomad_war_moon$ and its specialized systems."
-  nomad_war_moon_0: "$giga_nomad_war_moon$ Construction Site"
-  nomad_war_moon_0_DESC: "The construction site for a future $giga_nomad_war_moon$, a warship made to counter celestial craft."
-  nomad_war_moon_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_nomad_warship$ - $giga_list_category_ship_production$\nA warship specially created to fight celestials, doing more damage to large targets.\n§LThe $giga_nomad_war_moon_cap$ is a prototype weapons system, sacrificing some of the defensive power usually seen on a craft of this size for a massive primary weapon."
-  nomad_war_moon_1: "$giga_nomad_war_moon$ Hull"
-  nomad_war_moon_1_DESC: "The $giga_nomad_war_moon$ has almost been completed. Only the main weapon system and directly connected infrastructure remains."
-  nomad_war_moon_2: "$giga_nomad_war_moon$"
-  nomad_war_moon_2_DESC: "A completed $giga_nomad_war_moon$, ready to take to the stars."
-  nomad_war_moon_debris: "Wrecked $giga_nomad_war_moon$"
-  nomad_war_moon_debris_DESC: "The remnants of a massive warship built by an advanced civilization, which has remained largely intact due to its reinforced armored hull. Built around a massive primary weapon that is remarkably intact, it might be possible to restore this fearsome craft to its former glory, provided we have plenty of resources and the technology to do so."
-  nomad_war_moon_debris_MEGASTRUCTURE_DETAILS: "$nomad_war_moon_0_MEGASTRUCTURE_DETAILS$"
-  nomad_war_moon_restored: "$giga_nomad_war_moon$"
-  nomad_war_moon_restored_DESC: "$nomad_war_moon_2_DESC$"
-  nomad_war_moon_restored_MEGASTRUCTURE_DETAILS: "$war_moon_0_MEGASTRUCTURE_DETAILS$"
-  giga_nomad_dialog.000.name: "$giga_nomad_war_moon$ Construction Site Built"
-  giga_nomad_dialog.000.desc: "The Construction Site for a future $giga_nomad_war_moon$ is now complete. This deep-space construction site will serve as a staging depot in order to begin constructing the $giga_nomad_war_moon$ itself.\n\n§INOTE: Don't forget to design the $giga_nomad_war_moon$ in the ship designer!§!"
+  GIGA_NOMAD_WAR_MOON_ANTI_CELESTIAL_DESC: "행성 지각과 그를 보호하는 모든 것을 부수기 위해 특별히 제작된 무기입니다." # 9357533697740993130
+  GIGA_NOMAD_WAR_MOON_COMPUTER: "$giga_nomad_war_moon$ 전투 컴퓨터" # 17189526961477745676
+  GIGA_NOMAD_WAR_MOON_COMPUTER_DESC: "$giga_nomad_war_moon$은(는) 아주 먼 거리(§Y3250§!)를 유지하며 가 가능한 목표물에 무기 배열을 발사합니다." # 5116409773787352133
+  REACTOR_NOMAD_WAR_MOON: "시제품 중형 원자로" # 4535095083656226608
+  REACTOR_NOMAD_WAR_MOON_DESC: "$giga_nomad_war_moon$과(와) 그 특수 시스템에 전력을 공급하기 위해 특별히 제작 및 조율된 특수 원자로입니다." # 15221417340569277336
+  nomad_war_moon_0: "$giga_nomad_war_moon$ 건조 현장" # 15591795078685586990
+  nomad_war_moon_0_DESC: "천체 함선에 대항하기 위해 만들어진 군함인 미래의 $giga_nomad_war_moon$을(를) 위한 건조 현장입니다." # 8860038277628697296
+  nomad_war_moon_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_megastructure$ - $giga_list_category_nomad_warship$ - $giga_list_category_ship_production$\n천체와 싸우기 위해 특별히 제작된 군함으로, 거대한 목표물에게 더 큰 피해를 줍니다.\n§L$giga_nomad_war_moon_cap$은(는) 시제품 무기 시스템으로, 이 정도 크기의 함선에서 보통 볼 수 있는 방어력을 일부 희생하여 거대한 주무기를 탑재했습니다." # 9402706442802410733
+  nomad_war_moon_1: "$giga_nomad_war_moon$ 선체" # 9208814345307689323
+  nomad_war_moon_1_DESC: "$giga_nomad_war_moon$의 건조가 거의 완료되었습니다. 주무기 시스템과 직결된 기반 시설만 남았습니다." # 10736254025930937977
+  nomad_war_moon_2: "$giga_nomad_war_moon$" # 6285906506283808633
+  nomad_war_moon_2_DESC: "$giga_nomad_war_moon$ 건조가 완료되어 별을 향해 출항할 준비가 되었습니다." # 13523415310931724500
+  nomad_war_moon_debris: "잔해 상태의 $giga_nomad_war_moon$" # 1261443537676731396
+  nomad_war_moon_debris_DESC: "강화된 장갑 선체 덕분에 온전한 형태로 남아 있는, 고도로 발달된 문명이 건조한 거대 군함의 잔해입니다. 놀라울 정도로 온전한 거대 주무기를 중심으로 건조되었으며, 충분한 자원과 기술만 있다면 이 끔찍한 함선을 과거의 영광으로 되돌릴 수 있을지도 모릅니다." # 16671754200979445785
+  nomad_war_moon_debris_MEGASTRUCTURE_DETAILS: "$nomad_war_moon_0_MEGASTRUCTURE_DETAILS$" # 14474718270468454147
+  nomad_war_moon_restored: "$giga_nomad_war_moon$" # 6285906506283808633
+  nomad_war_moon_restored_DESC: "$nomad_war_moon_2_DESC$" # 14807443252740170066
+  nomad_war_moon_restored_MEGASTRUCTURE_DETAILS: "$war_moon_0_MEGASTRUCTURE_DETAILS$" # 8074461722287649107
+  giga_nomad_dialog.000.name: "$giga_nomad_war_moon$ 건조 현장 완공" # 7630038354061541381
+  giga_nomad_dialog.000.desc: "미래의 $giga_nomad_war_moon$을(를) 위한 건조 현장이 완공되었습니다. 이 심우주 건조 현장은 $giga_nomad_war_moon$ 자체의 건조를 시작하기 위한 전초기지 역할을 할 것입니다.\n\n§I참고: 함선 설계소에서 $giga_nomad_war_moon$을(를) 설계하는 것을 잊지 마십시오!§!" # 10279181360834030959
   giga_nomad_dialog.000.a: "놀랍군요." # 11372186741735424273
   giga_nomad_dialog.002.name: "$giga_nomad_war_moon$ 선체 건조 완료" # 1995607243706489720
   giga_nomad_dialog.002.desc: "$giga_nomad_war_moon$의 선체가 이제 완성되었습니다! 핵심 무기 체계와 원자로를 제외한 모든 부품의 설치와 테스트가 끝났습니다." # 4843774862291222080
