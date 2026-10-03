@@ -1,9 +1,10 @@
 ﻿l_korean:
-# PAT verified upstream: ad4c7ef
+# PAT verified upstream: 8445e71
   at_artifact_price_qwa_desc: "품질 및 부" # 1428228126832042988
   at_artifact_price_durability_desc: "내구도" # 5462542718754512371
   at_artifact_price_destroy_desc: "파괴 가치보다 적지 않게" # 7996520401236592626
   at_artifact_price_unique_desc: "고유한" # 8016983698034644334
+  at_artifact_price_min_desc: "최소 가격" # 1859722693087861478
   at_artifact_price_tribal_desc: "부족 정부" # 3000781372221870051
   at_artifact_ask_price_player_desc: "수익률" # 7229352659609977816
   at_artifact_ask_price_ai_greed_desc: "탐욕스러운 상인" # 18415624030931574837
