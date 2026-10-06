@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: 4a432e3
   pmg_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pm_mendelejew_coal_liquefaction: "석탄 액화" # 14049641981040974617
   pmg_mendelejew_isoprene: "합성 고무" # 10497239447374670003
@@ -231,21 +230,18 @@
   pmg_data_transportation_building_datacenter: "데이터 전송" # 3958067927722683896
   pm_local_network_building_datacenter: "지역 네트워크" # 4356550927925911043
   pm_internet_building_datacenter: "인터넷" # 18294203111589887707
-  pmg_data_optimization_primary_sector: "최적화" # 8147114492625738509
   pm_manual_data_reporting_primary_sector: "수동 데이터 보고" # 2966828791430992999
   pm_manual_data_optimization_primary_sector: "수동 데이터 최적화" # 6617053689258647574
   pm_digital_data_optimization_primary_sector: "디지털 데이터 최적화" # 5438169285567104682
   pm_digital_data_on_premises_primary_sector: "디지털 데이터 온프레미스" # 1487727957435063545
   pm_internet_data_reporting_primary_sector: "인터넷 데이터 보고" # 12301346942221092580
   pm_internet_data_optimization_primary_sector: "클라우드 데이터 최적화" # 3163034493859488736
-  pmg_data_optimization_light_industry: "최적화" # 8147114492625738509
   pm_manual_data_reporting_light_industry: "수동 데이터 보고" # 2966828791430992999
   pm_manual_data_optimization_light_industry: "수동 데이터 최적화" # 6617053689258647574
   pm_digital_data_optimization_light_industry: "디지털 데이터 최적화" # 5438169285567104682
   pm_digital_data_on_premises_light_industry: "디지털 데이터 온프레미스" # 1487727957435063545
   pm_internet_data_reporting_light_industry: "인터넷 데이터 보고" # 12301346942221092580
   pm_internet_data_optimization_light_industry: "클라우드 데이터 최적화" # 3163034493859488736
-  pmg_data_optimization_heavy_industry: "최적화" # 8147114492625738509
   pm_manual_data_reporting_heavy_industry: "수동 데이터 보고" # 2966828791430992999
   pm_manual_data_optimization_heavy_industry: "수동 데이터 최적화" # 6617053689258647574
   pm_digital_data_optimization_heavy_industry: "디지털 데이터 최적화" # 5438169285567104682
@@ -327,7 +323,6 @@
   pm_direct_reduced_iron_midrex_process: "미드렉스 공법" # 1522500838690440973
   pm_mobile_artillery: "로켓 포병" # 15081891605769264607
   pm_no_tank_production: "전차 없음" # 13808390104523045570
-  pm_tank_production: "1세대 전차" # 7797784628588636845
   pm_second_gen_tank_production: "2세대 전차" # 7531570544967305974
   pm_third_gen_tank_production: "3세대 전차" # 10676255994514673546
   pmg_helicopters: "헬리콥터" # 5826673679717711275
@@ -415,12 +410,9 @@
   pm_ogm: "유전자 변형 작물" # 17677630692026726631
   pm_ogm_building_rice_farm: "유전자 변형 작물" # 17677630692026726631
   pm_hydraulic_transmission_tractors_building_rice_farm: "유압식 변속 트랙터" # 2757962227268484289
-  pmg_data_optimization_light_industry_paper: "최적화" # 8147114492625738509
   pm_manual_data_reporting_light_industry_paper: "수동 데이터 보고" # 2966828791430992999
   pm_manual_data_optimization_light_industry_paper: "수동 데이터 최적화" # 6617053689258647574
-  pmg_data_optimization_heavy_industry_telecommunications: "최적화" # 8147114492625738509
   pm_internet_data_reporting_heavy_industry_telecommunications: "인터넷 데이터 보고" # 12301346942221092580
-  pmg_data_optimization_heavy_industry_software: "최적화" # 8147114492625738509
   pm_digital_data_optimization_heavy_industry_software: "디지털 데이터 최적화" # 5438169285567104682
   pm_digital_data_on_premises_heavy_industry_software: "디지털 데이터 온프레미스" # 1487727957435063545
   pm_internet_data_reporting_heavy_industry_software: "인터넷 데이터 보고" # 12301346942221092580
@@ -472,7 +464,6 @@
   pm_robotic_building_furniture_manufactory: "로봇 조립 라인" # 3664357297072673262
   pm_no_homeappliances: "전통 가구 우선" # 4591569876253612258
   pm_prefabricated_concrete_buildings: "조립식 콘크리트 건물" # 6628142140421386311
-  pmg_data_optimization_light_industry_university: "최적화" # 8147114492625738509
   pmg_breeding_livestock_ranch: "번식" # 16705046561968128489
   pm_fuel_trawlers: "연료 트롤선" # 16240709375052774788
   pm_fuel_whaling_ships: "연료 동력 포경선" # 1498272796853824746
@@ -716,23 +707,10 @@
   pm_purification_mine: "현대식 정제" # 12190261196422407402
   pm_advanced_purification_mine: "고급 정제" # 4201605683537958837
   pm_basic_purification_rare_earths_mine: "기초 정제" # 12816754735408946084
-  pmg_data_optimization_heavy_industry_computer: "최적화" # 8147114492625738509
   pm_digital_data_optimization_heavy_industry_computer: "디지털 데이터 최적화" # 5438169285567104682
   pm_digital_data_on_premises_heavy_industry_computer: "온프레미스 디지털 데이터" # 1487727957435063545
-  pm_internet_data_optimization_heavy_industry_telecommunications: "데이터 최적화" # 1434155673471641683
-  pmg_data_optimization_heavy_industry_algorithmic_dispatch: "데이터 최적화" # 1434155673471641683
   pm_internet_data_algorithmic_dispatch_heavy_industry: "알고리즘 최적화" # 10306209424860855498
   pm_internet_data_algorithmic_dispatch_heavy_industry_no_shopkeepers: "알고리즘 최적화" # 10306209424860855498
-  pmg_data_optimization_heavy_industry_algorithmic_dispatch_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pm_internet_data_reporting_primary_sector_no_shopkeepers: "데이터 보고" # 1477959398194662629
-  pm_internet_data_optimization_primary_sector_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pm_internet_data_reporting_light_industry_no_shopkeepers: "데이터 보고" # 1477959398194662629
-  pm_internet_data_optimization_light_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pm_internet_data_reporting_heavy_industry_no_shopkeepers: "데이터 보고" # 1477959398194662629
-  pm_internet_data_optimization_heavy_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pmg_data_optimization_primary_sector_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pmg_data_optimization_light_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
-  pmg_data_optimization_heavy_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
   streaming_services: "스트리밍 서비스" # 12943664315283921042
   pm_elgar_jazz_band: "재즈 밴드" # 16721837355298369864
   pm_elgar_rock_band: "록 밴드" # 2750338790201735480
@@ -813,3 +791,31 @@
   advanced_byproduct_extraction_bauxite_mine: "희토류 부산물" # 11956269570116210601
   advanced_byproduct_extraction_advancedores_mine: "희토류 부산물" # 11956269570116210601
   advanced_byproduct_extraction_rare_earths_mine: "우라늄 부산물" # 2603150294911233699
+  pm_wide_body_airliners: "Wide-Body Airliner"
+  pm_air_cargo_trade: "Global Air Logistics"
+  pm_connected_passenger_carriages: "Modern Passenger Carriages"
+  pm_hydrogen_direct_reduction: "Hydrogen Direct Reduction"
+  pm_hydroponic_controlled_environment: "Controlled Environment"
+  pmg_data_optimization_primary_sector: "Data Optimization"
+  pmg_data_optimization_light_industry: "Data Optimization"
+  pmg_data_optimization_heavy_industry: "Data Optimization"
+  pmg_data_optimization_light_industry_paper: "Data Optimization"
+  pmg_data_optimization_heavy_industry_telecommunications: "Data Optimization"
+  pmg_data_optimization_heavy_industry_software: "Data Optimization"
+  pmg_data_optimization_light_industry_university: "Data Optimization"
+  pmg_data_optimization_heavy_industry_computer: "Data Optimization"
+  pmg_data_optimization_heavy_industry_algorithmic_dispatch: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_heavy_industry_algorithmic_dispatch_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_primary_sector_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_light_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pmg_data_optimization_heavy_industry_no_shopkeepers: "데이터 최적화" # 1434155673471641683
+  pm_internet_data_optimization_heavy_industry_telecommunications: "Cloud Data Optimization"
+  pm_internet_data_reporting_primary_sector_no_shopkeepers: "Internet Data Reporting"
+  pm_internet_data_optimization_primary_sector_no_shopkeepers: "Cloud Data Optimization"
+  pm_internet_data_reporting_light_industry_no_shopkeepers: "Internet Data Reporting"
+  pm_internet_data_optimization_light_industry_no_shopkeepers: "Cloud Data Optimization"
+  pm_internet_data_reporting_heavy_industry_no_shopkeepers: "Internet Data Reporting"
+  pm_internet_data_optimization_heavy_industry_no_shopkeepers: "Cloud Data Optimization"
+  pm_agentic_business_services: "Agentic Business Services"
+  pm_cloud_agentic_data_analysis: "Cloud Agentic Data Processing"
+  pm_biopharmaceuticals: "Advanced Biopharmaceuticals"

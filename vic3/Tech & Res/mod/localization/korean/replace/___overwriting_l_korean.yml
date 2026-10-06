@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: 4a432e3
   building_synthetics_plant: "화장품 공장" # 15970412718626794292
   building_synthetics_plant_lens_option: "$building_synthetics_plant$ 확장" # 10256421238476698237
   building_synthetics_plant_throughput_add: "화장품 공장 [concept_throughput]" # 6979574026908716522
@@ -24,3 +23,4 @@
   je_end_strike_tt: "#v 파업#!이 종료되었습니다." # 6268542559769619919
   pm_telephones: "촛대형 전화기" # 13351277449905609951
   merchant_marine: "상선대" # 159769245574833208
+  pm_tank_production: "I Generation Tanks"
