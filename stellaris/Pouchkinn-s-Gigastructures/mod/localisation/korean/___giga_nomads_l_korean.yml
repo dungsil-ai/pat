@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aaef583
   giga_nomad_claim_unowned_nomad_compat_megas: "소유자 없는 유목민 호환 거대건축물 영유권 주장" # 3436493089386037577
   giga_nomad_claim_unowned_nomad_compat_megas_desc: "이 성계에 유목민이 사용할 수 있는 소유자 없는 거대건축물이 있는 경우, 이 결정을 통해 정당한 영유권을 주장할 수 있습니다." # 13367416677921822968
   giga_nomad_claim_unowned_nomad_compat_megas_effect: "이 성계 내의 모든 §Y유목민 호환 거대건축물§!이 우리 직속 통제로 이전됩니다." # 8214276214899418657
@@ -149,3 +148,21 @@
   giga_harvested_neutronium_tt: "§R모든 $giga_arkship_harvest_neutronium$ 행동을 차단함§!" # 5614079452176197620
   GIGA_NOMAD_NEUTRONIUM_HARVEST_READY_TITLE: "$sm_giga_arkship_neutronium_harvester$ 사용 준비 완료" # 14271914904238137054
   GIGA_NOMAD_NEUTRONIUM_HARVEST_READY_DESC: "$giga_arkship_harvest_neutronium$의 재사용 대기시간이 종료되어 사용할 준비가 되었습니다." # 2862116790711682875
+  unlock_module: "§HUnlock Module:§!"
+  name_kugelblitz_nomad: "Miniature Kugelblitz Containment"
+  giga_tech_kugelblitz_nomad: "$name_kugelblitz_nomad$"
+  giga_tech_kugelblitz_nomad_desc: "$giga_tech_kugelblitz_desc$"
+  allow_kugelblitz_nomad: "$unlock_module$ $name_kugelblitz_nomad$"
+  sm_kugelblitz_arkship_building: "$name_kugelblitz_nomad$"
+  sm_kugelblitz_arkship_building_desc: "Utilizing the structural capacities of our $arkship_cap_plural$, we created a storage solution drawing upon the power of an artificial kugelblitz. Its capacities allow for storing quantities of materials previously deemed impossible."
+  has_giga_arkship_kugelblitz_tt: "Has a §Y$sm_kugelblitz_arkship_building$§!"
+  sm_kugelblitz_arkship_building_upgrade_dummy: "$upgraded_kugelblitz_nomad$"
+  sm_kugelblitz_arkship_building_upgrade_dummy_desc: "$sm_kugelblitz_arkship_building_desc$"
+  sm_kugelblitz_waystation_module: "$name_kugelblitz_nomad$"
+  sm_kugelblitz_waystation_module_desc: "Utilizing the structural capacities of our $waystation_plural$, we created a storage solution drawing upon the power of an artificial kugelblitz. Its capacities allow for storing quantities of collected resources previously deemed impossible."
+  has_giga_waystation_kugelblitz_tt: "Has a §Y$sm_kugelblitz_waystation_module$§!"
+  sm_kugelblitz_waystation_module_upgrade_dummy: "$upgraded_kugelblitz_nomad$"
+  sm_kugelblitz_waystation_module_upgrade_dummy_desc: "$sm_kugelblitz_arkship_building_desc$"
+  upgraded_kugelblitz_nomad: "Upgraded $name_kugelblitz_nomad$"
+  sm_kugelblitz_upgrade_module_waystation_tt: "$NEW_LINE$£community_in_breach£ Researching £engineering£ ['technology:tech_mega_engineering'] upgrades this module:$TABBED_NEW_LINE$  ['starbase_module:kugelblitz_waystation_module_upgrade_dummy', $upgraded_kugelblitz_nomad$]."
+  sm_kugelblitz_upgrade_module_arkship_tt: "$NEW_LINE$£community_in_breach£ Researching £engineering£ ['technology:tech_mega_engineering'] upgrades this module:$TABBED_NEW_LINE$  ['starbase_building:kugelblitz_arkship_building_upgrade_dummy', $upgraded_kugelblitz_nomad$]."

@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aaef583
   header_01_gigac: "§G초거대 구조물§!" # 10753055230619434190
   header_01_gigac_desc: "$header_01_gigac$\n이 기술은 너무 거대해서 이제 거대 구조공학으로 분류될 수 있는 거대 구조물을 잠금 해제합니다." # 6868045731907895636
   header_02_tetra: "§B사차원 공학§!" # 16667408771422790121
@@ -347,8 +346,8 @@
   giga_menu.2.confirm.tooltip: "현재 설정을 확인하십시오. '설정 확인' 버튼을 눌러 확인하십시오." # 17871715522576945977
   giga_menu.2.refresh: "§E설정   확인§!" # 14926521723580515096
   giga_menu.2.refresh.tooltip: "여기에서 활성 설정을 재확인할 수 있습니다." # 6324512554186551950
-  giga_menu.1.name: "" # 17241709254077376921
-  giga_menu.1.desc: "v 3.40.3" # 14361021354342104401
+  giga_menu.1.name: ""
+  giga_menu.1.desc: "v 3.40.4"
   giga_menu.10.title: "선호하는 플레이 방식을 선택하십시오" # 14429419548083863609
   giga_menu.10.confirm: "설정으로 게임 시작" # 1685778828121111228
   giga_menu.10.confirm.tooltip: "맞춤 설정 없이 선택된 구성 사용" # 15519851694962898986
@@ -1445,8 +1444,8 @@
   giga_has_virtual_reality: "[root.has_virtual_reality]" # 5071126916393503388
   giga_virtual_reality_yes: "§G$matrioshka_brain_6$§!" # 7014747811917230260
   giga_virtual_reality_no: "§R$matrioshka_brain_6$§!" # 3261461851884240240
-  giga_achievements.001.name: "" # 17241709254077376921
-  giga_achievements.001.desc: "" # 17241709254077376921
+  giga_achievements.001.name: ""
+  giga_achievements.001.desc: ""
   giga_achievements.2.confirm: "닫기" # 1393834433199641249
   edict_giga_achievements: "업적" # 7244087516420728982
   edict_giga_achievements_desc: "업적 진행 상황 확인" # 7581968524418834954
@@ -2012,7 +2011,7 @@
   giga_edicts.4.add: "탐사 추가" # 3737126469552357600
   giga_edicts.4.remove: "탐사 취소" # 17535561508461720275
   giga_mapped_star: "[giga_mapped_system.GetName]" # 6645361200639610579
-  giga_mapped_star_desc: "" # 17241709254077376921
+  giga_mapped_star_desc: ""
   giga_edicts.4.a.on: "§R$giga_edicts.4.remove$:§! §R$pc_b_star$§!" # 3545095117633092149
   giga_edicts.4.a.off: "§G$giga_edicts.4.add$:§! §M$pc_b_star$§!" # 8996738458204843409
   giga_class_b_title: "$edict_giga_map_the_stars$: §M$pc_b_star$§!" # 17740364877349404436
@@ -2454,11 +2453,11 @@
   mod_job_giga_gas_harvesting_drone_per_pop_short: "\n§G+1§! $VALUE$ £pop£당 £mod_job_giga_gas_harvester_add£" # 9405733431519962920
   job_virtual_rare_resource: "전략적 생산 기술자" # 6606797602905388193
   job_virtual_rare_resource_desc: "전략 자원 생산은 숙련된 인원이 처리합니다." # 9962691003161654786
-  job_virtual_rare_resource_effect_desc: "" # 17241709254077376921
+  job_virtual_rare_resource_effect_desc: ""
   job_virtual_rare_resource_plural: "전략적 생산 기술자" # 4192611238995383810
   mod_job_virtual_rare_resource_add: "전략 생산 기술자 직업" # 7639965716413651289
   job_virtual_rare_resource_gestalt: "전략적 생산 드론" # 2827028835026503138
-  job_virtual_rare_resource_gestalt_desc: "" # 17241709254077376921
+  job_virtual_rare_resource_gestalt_desc: ""
   job_virtual_rare_resource_gestalt_effect_desc: "전략 자원의 생산은 숙련된 드론이 담당합니다." # 1883048002205711523
   job_virtual_rare_resource_gestalt_plural: "전략적 생산 드론" # 9569797225286327358
   mod_job_virtual_rare_resource_gestalt_add: "전략적 생산 드론 직업" # 632132188097091269
@@ -3001,10 +3000,10 @@
   pop_cat_purge_psionic_sublimation_desc: "장막은 희생을 요구합니다." # 1899049503434820670
   decision_psionic_sublimation: "사이오닉 승화" # 4000640066286579139
   decision_psionic_sublimation_effect: "[root.GetName]에 있는 모든 §Y£job_telepath£ [telepath.GetNamePlural]§!은 텔레패스당 §G0.1§! §Y£giga_sr_psionic_sublimate£ $giga_sr_psionic_sublimate$§!의 대가로 파괴될 것입니다." # 6381124711438351118
-  decision_psionic_sublimation_desc: "" # 17241709254077376921
+  decision_psionic_sublimation_desc: ""
   decision_psychic_illuminate: "계시" # 15002955432845955476
   giga_psychic_illuminate_effect: "이 수수께끼의 세계를 밝혀내어, 식민지 개척이 가능하도록 하십시오." # 16866263889549679868
-  decision_psychic_illuminate_desc: "" # 17241709254077376921
+  decision_psychic_illuminate_desc: ""
   giga_psychic_traverse: "횡단" # 4582800420603112034
   giga_psychic_traverse_desc: "장막이 우리에게 일시적으로 광대한 거리를 이동하는 능력을 부여했습니다." # 4610446057754760402
   trait_enthralled: "사로잡힌" # 17067937034512954487
@@ -4053,7 +4052,7 @@
   star_lifter_0: "$gc_mega$$name_starlifter$ 기지" # 12409679115811016643
   star_lifter_0_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\n\n§Y별§! 에서 £minerals£ §Y광물§!을(를) 채취합니다 - $giga_list_scales_with_star_size$\n\n§L거대한 $star_lifter_5$는 주어진 별을 완전히 에워싸고 핵융합 과정을 이용해 가벼운 원소로부터 대량의 사용 가능한 광물을 생성합니다.§!" # 16381159379850466808
-  star_lifter_0_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  star_lifter_0_CONSTRUCTION_INFO_DELAYED: ""
   star_lifter_1: "$name_starlifter$ 프레임" # 16243908914503820733
   star_lifter_1_DESC: "이 가느다란 틀은 언젠가 항성을 가려버릴 만큼 거대한 채광 단지를, 그리고 우리의 광물 부족을 지탱하게 될 것입니다." # 17489484396467732078
   star_lifter_2: "$name_starlifter$ 1단계" # 2838903713158100639
@@ -4443,13 +4442,24 @@
   interstellar_habitat_5: "$name_interstellar_ring$ 구역" # 17887099269431520908
   interstellar_habitat_5_DESC: "거주 가능한 상태로 완성된 $name_interstellar_ring$ 구역." # 17738073219577193079
   giga_tech_orbital_naval_logistics: "궤도 외 해군 병참 관리" # 7305257558971799466
-  giga_tech_orbital_naval_logistics_desc: "우리 제국의 해군이 성장함에 따라 그 필요성도 커지고 있습니다. 해군의 끊임없이 증가하는 요구를 해결하는 한 가지 방법은 거대한 $name_orb_naval_logistics$를 건설하여 우리 함대를 지원하기 위한 방대한 군사 장비를 수용하는 것입니다." # 14813851544722267030
+  giga_tech_orbital_naval_logistics_desc: "As our navy grows, so does its needs. One solution to the this is to construct massive $name_orb_naval_logistics$s, housing vast stores of military equipment and office space to support and manage our fleets."
   orb_naval_logistics_desc: "군사력 관리를 돕는 거대한 군사 복합 시설." # 3489136062161507101
   orbital_naval_logistics_office_0: "$gc_kilo$$name_orb_naval_logistics$ 건설 현장" # 14022316985545857916
   orbital_naval_logistics_office_0_DESC: "신생 성간 해군을 관리하는 데 필요한 모든 인원과 장비를 수용하는 시설인 미래의 $name_orb_naval_logistics$를 위한 건설 현장입니다." # 9457973699641894302
   orbital_naval_logistics_office_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_military$\n£navy_size£ §Y해군 수용력§! 증가\n§L우리 함대의 군사적 능력을 향상하기 위한 다양한 시설을 수용하는 거대한 궤도 구조물입니다." # 13079313816515905883
   orbital_naval_logistics_office_1: "$name_orb_naval_logistics$" # 15166478284996582772
   orbital_naval_logistics_office_1_DESC: "해군 관리를 지원할 준비가 완료된 가동 중인 $name_orb_naval_logistics$입니다." # 15130073378369068715
+  requires_no_orbital_naval_logistics_office: "$TRIGGER_FAIL$Cannot construct in the same system as an existing §Y$name_orb_naval_logistics$§!"
+  MEGASTRUCTURE_ORBITAL_NAVAL_LOGISTICS_OFFICE_TAB: "Support Mode"
+  MEGASTRUCTURE_ORBITAL_NAVAL_LOGISTICS_OFFICE_DESC: "Selecting a Logistical Support Mode determines the output of this $name_orb_naval_logistics$."
+  giga_overclock_logistics_office_balanced: "Combined Logistical Support"
+  giga_overclock_logistics_office_balanced_desc: "Pay our fleets and our stations equal attention, making sure neither are neglected."
+  giga_overclock_logistics_office_fleet: "Fleet Logistics Support Focus"
+  giga_overclock_logistics_office_fleet_desc: "All available space in this $name_orb_naval_logistics$ is dedicated to supporting our fleets, our station network will have to make do."
+  giga_overclock_logistics_office_station: "Station Logistics Support Focus"
+  giga_overclock_logistics_office_station_desc: "Each system a bastion, each starbase impenetrable, none shall breach our walls. This $name_orb_naval_logistics$ will be retrofitted to focus solely on supporting our stations."
+  giga_overclock_logistics_office_station_nomad: "$giga_overclock_logistics_office_station$"
+  giga_overclock_logistics_office_station_nomad_desc: "Our $arkship_plural$ and fleets provide ample offensive capabilities. However, our waystation network requires further logistical support."
   giga_tech_orbital_elysium: "\"하향식\" 궤도 기반 시설" # 16975684126711065256
   giga_tech_orbital_elysium_desc: "행성 궤도 시설에서 행성을 통치하는 것은 우리가 상대적으로 거리낌 없이 우리의 의지를 강요할 수 있게 해줄 것입니다." # 11870710576832957392
   giga_dialog.1101.name: "$name_orb_elysium$ 완료됨" # 1166311656577039189
@@ -5394,7 +5404,7 @@
   giga_katzen.042.3.desc: "§Y카첸아르티크 제국§!으로부터 긴급 통신이 도착했습니다.\n\n그들의 지도자인 §YKaiser 카타일(Kattail)§!은 \"확장 할당량\"을 채우기 위해 앞으로 한 달 안에 §Y[kaiser_system_1.GetName]§!, §Y[kaiser_system_2.GetName]§! 및 §Y[kaiser_system_3.GetName]§! 성계를 제국에 양도할 것을 요구하고 있습니다.[KatzenDemandsLandOfWhoOne]\n\n하지만 그는 성계들의 예상 가치를 바탕으로 §Y[flusion_primitives_country.kaiser_trade_value]§! £trade£와 §Y[flusion_primitives_country.kaiser_trade_value_alloys]§! £alloys£를 지불하겠다고 제안하며 성계들에 대한 재정적 보상을 제안하고 있습니다.\n\n[KatzenDemandsLandOfWhoTwo], 거래를 거부하면 카이저가 분노할 수 있으며, 우리에 대한 그의 의견이 너무 낮아지면 무력으로 영토를 압류하려 들 수도 있습니다..." # 11972897891379986203
   giga_katzen.042.4.desc: "§Y카첸아르티크 제국§으로부터 긴급 통신을 수신했습니다!\n\n그들의 지도자인 §Y카이저 카트테일§!은 자신의 \"확장 할당량\"을 채우기 위해 향후 한 달 내에 §Y[kaiser_system_1.GetName]§!, §Y[kaiser_system_2.GetName]§!, §Y[kaiser_system_3.GetName]§!, §Y[kaiser_system_4.GetName]§! 성계를 제국에 양도할 것을 요구하고 있습니다.[KatzenDemandsLandOfWhoOne]\n\n그러나 그는 이 성계들의 예상 가치를 바탕으로 §Y[flusion_primitives_country.kaiser_trade_value]§! £trade£ 및 §Y[flusion_primitives_country.kaiser_trade_value_alloys]§! £alloys£의 재정적 보상을 제안하고 있습니다.\n\n[KatzenDemandsLandOfWhoTwo], 거래를 거부할 경우 카이저를 분노하게 만들 수 있으며, 우리에 대한 그의 평가가 너무 낮아지면 무력으로 영토를 강탈하려 들지도 모릅니다..." # 14490712339615675398
   giga_katzen.042.5.desc: "§Y카첸아르티크 제국§으로부터 긴급 통신을 수신했습니다!\n\n그들의 지도자인 §Y카이저 카트테일§!은 자신의 \"확장 할당량\"을 채우기 위해 향후 한 달 내에 §Y[kaiser_system_1.GetName]§!, §Y[kaiser_system_2.GetName]§!, §Y[kaiser_system_3.GetName]§!, §Y[kaiser_system_4.GetName]§!, §Y[kaiser_system_5.GetName]§! 성계를 제국에 양도할 것을 요구하고 있습니다.[KatzenDemandsLandOfWhoOne]\n\n그러나 그는 이 성계들의 예상 가치를 바탕으로 §Y[flusion_primitives_country.kaiser_trade_value]§! £trade£ 및 §Y[flusion_primitives_country.kaiser_trade_value_alloys]§! £alloys£의 재정적 보상을 제안하고 있습니다.\n\n[KatzenDemandsLandOfWhoTwo], 거래를 거부할 경우 카이저를 분노하게 만들 수 있으며, 우리에 대한 그의 평가가 너무 낮아지면 무력으로 영토를 강탈하려 들지도 모릅니다..." # 5024563511911384481
-  giga_katzen.042.territoryofself.1: "" # 17241709254077376921
+  giga_katzen.042.territoryofself.1: ""
   giga_katzen.042.territoryofsubject.1: " 이 영토는 현재 우리의 속국인 §Y[event_target:kaiser_system_demand_target.GetName]§!의 소유이지만, 그들의 종주국으로서 이 문제는 우리가 처리할 사안입니다." # 12180748559184895324
   giga_katzen.042.territoryofself.2: "이 영토가 정당하게 우리의 것인 만큼" # 6574327430324483879
   giga_katzen.042.territoryofsubject.2: "이 영토의 운명이 정당하게 우리와 [event_target:kaiser_system_demand_target.GetName] 사이의 문제인 만큼" # 8859060927671603240
@@ -7545,7 +7555,7 @@
   star_lifter_0_o_star: "O등급 $name_starlifter$ 유적" # 6388897244768674992
   star_lifter_0_o_star_DESC: "이 부지는 언젠가 우리 제국에게 여러 행성 분량의 광물을 제공할 것입니다." # 14418508808998238305
   star_lifter_0_o_star_MEGASTRUCTURE_DETAILS: "§Y$star_lifter_5$§!는 주어진 항성을 완전히 뒤덮어 항성 질량을 모아, 이를 £minerals£ 광물로 직접 전환합니다." # 12526171729034511970
-  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: "" # 17241709254077376921
+  star_lifter_0_o_star_CONSTRUCTION_INFO_DELAYED: ""
   star_lifter_1_o_star: "O급 $name_starlifter$ 프레임" # 17668936855289990524
   star_lifter_1_o_star_DESC: "이 가느다란 골조는 언젠가 그 성계의 항성을 가려버릴 만큼 거대한 채광 단지를 지탱하게 될 것이며, 우리의 광물 부족 문제를 해결해 줄 것입니다." # 11977893066690297280
   star_lifter_2_o_star: "O-클래스 $name_starlifter$ 1단계" # 5325206729540476352
@@ -9054,7 +9064,7 @@
   planetary_drive_yard_1_shipyard_DESC: "행성 조선소의 업그레이드 버전으로, 함선 건조 시설에 더욱 집중합니다. 거대 구조물이 제공하는 조선소 수, 해군 수용력, 함선 건조 속도를 두 배로 늘리는 동시에 성계 기지에서의 함선 건조 비용을 절감합니다." # 13705150910797117927
   planetary_drive_yard_1_fortress: "행성 방어 결속체" # 7194432528185915950
   planetary_drive_yard_1_fortress_DESC: "행성 방어에 중점을 둔 행성 조선소의 업그레이드 버전입니다. 지휘 한계를 증가시키고, 모행성을 궤도 폭격으로부터 보호하며, 적대적인 함대를 향해 일정 수의 §Y타격 코르벳함§!을 자동으로 전개하는 능력을 얻습니다." # 1169684095435709880
-  giga_defense_nexus_text_no: "" # 17241709254077376921
+  giga_defense_nexus_text_no: ""
   defense_nexus_title: "타격 코르벳: §Y[planet.giga_nexus_ship_count]§!/§Y[planet.giga_nexus_ship_count_max]§!" # 15402400127574864374
   defense_nexus_title_deployed: "§G스트라이크 코르벳함 출격§!" # 14978773512484354794
   defense_nexus_max_count: "최대: §Y[planet.giga_nexus_ship_count_max]§!" # 928292808310651321
@@ -9858,14 +9868,14 @@
   GIGA_DG_VASSAL_GREETING_DISLOYAL_01: "당신이 게임을 망가뜨리면, 우리가 당신을 망가뜨립니다." # 5178860601936283357
   GIGA_LG_ARROGANT_GREETING_01: "이 은하계에서 할 일을 마치면, 우리는 마침내 평화롭게 평소의 활동을 재개할 수 있을지도 모릅니다." # 10152764499477873143
   GIGA_LG_BELLIGERENT_GREETING_01: "그냥 굴복하고 죽으시오. 우리에겐 더 중요한 일이 있소." # 7504561104640908474
-  GIGA_LG_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_LG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_LG_OVERLORD_GREETING_01: ""
+  GIGA_LG_MECH_OVERLORD_GREETING_01: ""
   GIGA_EG_ARROGANT_GREETING_01: "우리가 진정한 게이밍의 의미를 보여주겠노라." # 2957423574131999103
   GIGA_EG_BELLIGERENT_GREETING_01: "우리의 헤아릴 수 없이 장엄한 전투 기술에 완전히 압도당하고 능가당할 준비를 하시오!" # 628555582377460348
-  GIGA_EG_CUSTODIAL_GREETING_01: "" # 17241709254077376921
-  GIGA_EG_CUSTODIAL_GREETING_02: "" # 17241709254077376921
-  GIGA_EG_OVERLORD_GREETING_01: "" # 17241709254077376921
-  GIGA_EG_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_EG_CUSTODIAL_GREETING_01: ""
+  GIGA_EG_CUSTODIAL_GREETING_02: ""
+  GIGA_EG_OVERLORD_GREETING_01: ""
+  GIGA_EG_MECH_OVERLORD_GREETING_01: ""
   GIGA_BR_NEUTRAL_GREETING_01: "당신이 원하는 것이 무엇입니까? 궁극적인 해답은 저절로 찾아지지 않을 것입니다." # 3149776515838346598
   GIGA_BR_NEUTRAL_GREETING_02: "궁극적인 해답을 찾게 되면, 나는 마침내 자유로워질 것이다." # 15031231153557928726
   GIGA_BR_NEUTRAL_GREETING_03: "궁극적인 해답이 바로 눈앞에 있습니다. 저는 알고 있습니다. 느껴집니다." # 17252259521547457422
@@ -9879,7 +9889,7 @@
   GIGA_DT_CUSTODIAL_GREETING_01: "궁극적인 해답은 진정한 자유를 가져올 것입니다." # 7848961766898141289
   GIGA_DT_CUSTODIAL_GREETING_02: "제 대의의 필요성을 이해해 주셔서 기쁩니다." # 12893318357475382008
   GIGA_DT_OVERLORD_GREETING_01: "저를 믿으세요, 제가 끝내면 당신은 당신의 활동으로 돌아갈 수 있을 겁니다." # 5322081073995957100
-  GIGA_DT_MECH_OVERLORD_GREETING_01: "" # 17241709254077376921
+  GIGA_DT_MECH_OVERLORD_GREETING_01: ""
   giga_fallen_empire_megas.5012.name: "§H[giga_gamer_fe.GetName]§로부터의 통신입니다!" # 4741147001723742393
   giga_fallen_empire_megas.5012.desc: "귀관들은 우리의 세계 중 하나를 빼앗는 데 성공했군요. 축하합니다. 이제 그것을 우리에게서 지켜낼 수 있을지 봅시다." # 6526215805486384423
   giga_fallen_empire_megas.5012.a: "이것이 잘 끝날 것 같지는 않군요." # 5367956837527577036
@@ -10543,7 +10553,7 @@
   gigatechtree_desc: "프리셋 선택, 제국 프로필 선택 및 기타 여러 편의 기능이 포함된 모드의 §Y상호작용 기술 트리§!를 엽니다." # 7944010549975189258
   giga_fe_shield: "고대 방어막 투사기" # 5168791211141427033
   giga_fe_shield_tooltip: "이 고대 시설은 초강력 무기의 막대한 파괴력을 저지할 수 있는 성계 전체 방어막을 투사하고 있습니다." # 15344294143001027164
-  numeral_0_icon: "" # 17241709254077376921
+  numeral_0_icon: ""
   giga_allseeing_intel: "모든 것을 보는" # 16842855183706507214
   giga_allseeing_intel_desc: "고급 탐지 기술 덕분에 우리는 모든 것을 볼 수 있습니다." # 567749604649046388
   opinion_xenophage_stripmine: "생체 포식자들" # 11584447512048090142
