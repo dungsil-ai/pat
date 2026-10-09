@@ -196,3 +196,11 @@
   modernize_national_electric_system_decision: "국가 전력 시스템 현대화" # 9105489095040259269
   modernize_national_electric_system_decision_desc: "국가 전력망은 이미 우리의 지역 전력 시스템을 하나로 묶고 있습니다. 현대화된 전력 시스템은 고급 송전 관리를 공식화하고 더 크고 유연한 발전을 위해 국가를 준비시킬 것입니다." # 7071343858596198914
   modernize_national_electric_system_decision_tooltip: "#v 현대적 국가 전력 시스템#!을(를) 활성화합니다." # 7196927741105300459
+  decolonization_bahamas_decision: "Decolonize the Bahamas"
+  decolonization_bahamas_decision_desc: "End our direct rule over the Bahamas and allow its people to govern themselves. Recognizing Bahamian self-determination will improve our international reputation."
+  decolonization_jamaica_decision: "Decolonize Jamaica"
+  decolonization_jamaica_decision_desc: "End our direct rule over Jamaica and allow its people to govern themselves. Recognizing Jamaican self-determination will improve our international reputation."
+  decolonization_guyana_decision: "Decolonize Guyana"
+  decolonization_guyana_decision_desc: "End our direct rule over Guyana and allow its people to govern themselves. Recognizing Guyanese self-determination will improve our international reputation."
+  decolonization_suriname_decision: "Decolonize Suriname"
+  decolonization_suriname_decision_desc: "End our direct rule over Suriname and allow its people to govern themselves. Recognizing Surinamese self-determination will improve our international reputation."
