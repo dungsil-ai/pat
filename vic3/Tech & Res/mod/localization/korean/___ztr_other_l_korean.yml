@@ -404,3 +404,7 @@
   DIPLOMATIC_ACCEPTANCE_JINGOISTIC_RULER: "그들의 정부 형태 때문에" # 14952029176413711060
   DIPLOMATIC_ACCEPTANCE_ENEMY_NUCLEAR_WEAPONS: "상대방이 이미 핵무기를 보유하고 있기 때문에" # 7609487438551603635
   DIPLOMATIC_ACCEPTANCE_THREAT_OF_MUTALLY_ASSURED_DESTRUCTION: "매우 높은 세계 긴장 상태 속에서 #N 상호확증파괴#!의 위협 때문에" # 6732831270184672874
+  ztr_superpower_desc: "[Concept('concept_superpower','$concept_superpower$')] status requires [GetTechnology('neoimperialism').GetName] and a top-two global ranking, checked yearly. See the concept for requirements, benefits and [concept_power_bloc] rules."
+  ztr_bpm_ig_approval_modifier: "National Political Climate"
+  ztr_bpm_ig_pol_str_modifier: "National Political Climate"
+  ztr_bpm_ig_pop_attraction_modifier: "National Political Climate"
