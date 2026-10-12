@@ -272,7 +272,6 @@
   ztr_decolonization_homeland_cession_tt: "[ROOT.GetCountry.GetName]이(가) 직접 소유한 모든 #v 주#! 중 [SCOPE.sCountry('subject_scope').GetName]의 주류 문화에 해당하는 #gold_value 본국#!은(는) [SCOPE.sCountry('subject_scope').GetName](으)로 #p 이전#!됩니다." # 8478688689010163718
   ztr_decolonization_homeland_claims_tt: "[SCOPE.sCountry('subject_scope').GetName]은(는) [ROOT.GetCountry.GetName]이(가) 직접 소유한 모든 #v 주#! 중 그 주류 문화의 #gold_value 본국#!에 해당하는 지역에 #n 명분#!을 획득합니다." # 6238510194522739230
   ztr_decolonization.101.t: "유엔의 탈식민지 요구" # 4796037210950613593
-  ztr_decolonization.101.d: "[Concept('concept_united_nations','$concept_united_nations$')] #blue_value 총회#!는 [Concept('concept_un_decolonization_encouraged','$concept_un_decolonization_encouraged$')] 결의안에 따라 [ROOT.GetCountry.GetName]에 [SCOPE.sCountry('un_demand_subject').GetName]을(를) 식민 통치에서 해방할 것을 공식적으로 요구했으며, 해당되는 경우 우리 수도에서 직접 통치 중인 그 민족의 #gold_value 본국 영토#!를 반환할 것을 요구했습니다. 우리의 #n 악명#!은 국제 사회의 분노를 샀으며, 전 세계가 우리의 대응을 기다리고 있습니다." # 17141632871854970049
   ztr_decolonization.101.a: "결의안을 준수하십시오 — 독립을 승인하고 본국 영토를 양도하십시오." # 572035773808010736
   ztr_decolonization.101.b: "유엔에 저항하십시오. 우리는 명령받지 않을 것입니다." # 7940652669794799681
   ztr_decolonization.1.t: "탈식민지의 시대" # 1323662695752781723
@@ -594,3 +593,4 @@
   ztr_decolonization.71.d_phase4: "Resistance in #v Suriname#! has brought the colonial administration to the brink of collapse. The independence movement demands an immediate end to our rule, while international pressure for withdrawal continues to grow."
   ztr_decolonization.71.a: "Recognize Surinamese independence."
   ztr_decolonization.71.b: "We will retain control."
+  ztr_decolonization.101.d: "The [Concept('concept_united_nations','$concept_united_nations$')] #blue_value General Assembly#!, acting under its [Concept('concept_un_decolonization','$concept_un_decolonization$')] in favor of decolonization, has formally demanded that [ROOT.GetCountry.GetName] release [SCOPE.sCountry('un_demand_subject').GetName] from colonial rule — and, where applicable, return the #gold_value homeland territories#! of its peoples still administered directly from our capital. Our #n infamy#! has drawn the ire of the international community, and the world awaits our response."
