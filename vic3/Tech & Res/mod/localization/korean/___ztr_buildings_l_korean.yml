@@ -174,3 +174,4 @@
   building_power_grid_station_throughput_add: "전력망 발전소 [concept_throughput]" # 1175526330111556094
   building_power_grid_station_throughput_add_desc: "전력망 발전소의 [concept_throughput]를 높입니다." # 15706837908892711278
   building_renewable_energy_requires_national_electric_system_tt: "#v 국가 전력 시스템#! 또는 #v 현대적 국가 전력 시스템#!이 필요합니다." # 3951280529134796606
+  ztr_airport_can_construct_tt: "Airport levels, including queued construction, must be below the state limit: one level per #v 400,000#! inhabitants (rounded down), with a minimum limit of #v 1#!."
