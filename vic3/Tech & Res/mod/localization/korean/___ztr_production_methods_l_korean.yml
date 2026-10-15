@@ -495,7 +495,6 @@
   pm_3d_engine_building_interactive_media_industry: "3D 엔진 미들웨어" # 3363059690945989320
   pm_cross_platform_building_interactive_media_industry: "가벼운 오락 개발" # 9522000480256344750
   pm_ultraprocessed_snacks: "초가공 식품" # 1244909927899657510
-  pmg_civil_space_aircraft: "항공우주 생산" # 622437809118166716
   modern_productions_pm: "현대 극장" # 17319409170999692004
   silent_films: "무성 영화" # 1012475898956297974
   celluloide_films: "셀룰로이드 영화" # 14454490542113914981
@@ -824,3 +823,5 @@
   advanced_plantation_methods_building_rubber_plantation: "Advanced Plantation Harvesting"
   drone_assisted_agriculture_building_rubber_plantation: "Drone-Assisted Farming"
   pm_multiway_transport_logging_camp: "Versatile Transportation"
+  pmg_civil_space_aircraft: "Civil Aircraft Production"
+  pm_no_space_assets_production: "No Space Asset Production"
