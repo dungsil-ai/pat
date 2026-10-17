@@ -43,7 +43,6 @@
   building_natural_gas_rig: "천연 가스 시추 시설" # 3181144489460737623
   building_natural_gas_rig_lens_option: "$building_natural_gas_rig$ 확장" # 7104177114324183839
   building_natural_gas_rig_discovered_resource: "천연가스" # 6812135178498884265
-  building_space_assets_industry: "우주 자산 산업" # 15000920458650865413
   building_space_assets_industry_lens_option: "$building_space_assets_industry$ 확장" # 15314624030865769370
   building_highway: "고속도로" # 3969334153630841660
   building_highway_lens_option: "고속도로 확장" # 8770990575572711910
@@ -78,8 +77,6 @@
   building_pharmaceuticals_industry_throughput_add_desc: "제약 산업의 [concept_throughput]를 높입니다." # 11650137144014281617
   building_hydroponic_throughput_add: "수경 농장 [concept_throughput]" # 7511676121783917177
   building_hydroponic_throughput_add_desc: "수경 농장의 [concept_throughput]를 높입니다." # 9517014638627920376
-  building_space_assets_industry_throughput_add: "우주 자산 산업 [concept_throughput]" # 16472380523210295415
-  building_space_assets_industry_throughput_add_desc: "우주 자산 산업의 [concept_throughput]을(를) 높입니다." # 8058221924547645845
   building_water_plant_throughput_add: "수도 시설 [concept_throughput]" # 15232623293961149188
   building_water_plant_throughput_add_desc: "수도 시설의 [concept_throughput]을(를) 증가시킵니다." # 16397872196401031651
   building_water_desalination_plant_throughput_add: "해수 담수화 공장 [concept_throughput]" # 2422040294904708341
@@ -134,9 +131,6 @@
   building_interactive_media_industry_lens_option: "$building_interactive_media_industry$ 확장" # 3128686239751215224
   building_manzoni_publishing_industry_throughput_add: "미디어 산업 [concept_throughput]" # 2034551235381518810
   building_manzoni_publishing_industry_throughput_add_desc: "미디어 산업의 [concept_throughput]을(를) 증가시킵니다." # 5280258617014886710
-  building_aircraft_industry: "항공우주 산업" # 4580279789481887704
-  building_aircraft_industry_throughput_add: "항공우주 산업 [concept_throughput]" # 8449234019068018529
-  building_aircraft_industry_throughput_add_desc: "항공우주 산업의 [concept_throughput]을 높입니다." # 5767442063639516650
   building_consumer_electronics_industry: "소비자 전자 산업" # 10242957639647205845
   building_consumer_electronics_industry_lens_option: "소비자 가전 산업$" # 5589973205172853382
   building_consumer_electronics_industry_throughput_add: "가전제품 산업 [concept_throughput]" # 16602657913298472789
@@ -178,3 +172,10 @@
   state_building_airport_max_level_add: "Maximum Airport Level"
   state_building_airport_max_level_add_desc: "The maximum number of Airport levels that can be built in a state."
   ztr_airport_capacity_modifier_desc: "Airport capacity is based on the state population: one level per 400,000 inhabitants, rounded down, with a minimum of one. Updated annually."
+  building_aircraft_industry: "Aircraft Industries"
+  building_space_assets_industry: "Space Industries"
+  building_space_assets_industry_throughput_add: "Space Industries [concept_throughput]"
+  building_space_assets_industry_throughput_add_desc: "Raises the [concept_throughput] of Space Industries."
+  building_space_assets_industry_desc: "Specialized factories and research facilities that manufacture probes, satellites, and spacecraft for space exploration and orbital infrastructure."
+  building_aircraft_industry_throughput_add: "Aircraft Industries [concept_throughput]"
+  building_aircraft_industry_throughput_add_desc: "Raises the [concept_throughput] of Aircraft Industries."
