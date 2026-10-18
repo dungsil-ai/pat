@@ -21,3 +21,11 @@
   ideology_neoliberism_desc: "#lore 이 집단은 자유 시장 자본주의, 최소한의 정부 개입, 개인의 자유를 신봉합니다. 이들은 경제 성장과 개인의 책임을 증진하는 정책을 옹호하며, 과도한 규제와 사회 복지 프로그램에는 반대합니다.#!" # 17990751549211078990
   ideology_modern_individualism: "근대적 개인주의" # 14273592051578436260
   ideology_modern_individualism_desc: "#lore 포스트 케인스주의와 사회자유주의적 관점에서 재탄생한 고전적 자립의 신조입니다. 이 집단은 여전히 사적 기업, 자유 무역, 개방 시장을 옹호하지만, 복지 국가와도 타협했습니다. 연금, 임금 보조금, 고등 문해력은 더 이상 산업에 대한 위협이 아니라, 노동자가 곧 소비자가 되는 소비 사회의 토대로 간주됩니다. 근대적 개인주의자들은 개인의 존엄성이 자선이나 길드가 아닌, 대중의 번영과 이동성, 그리고 선택을 통해 가장 잘 지켜진다고 믿습니다.#!" # 5391596446288726496
+  ideology_bioethics_traditionalist: "Bioethical Conservatism"
+  ideology_bioethics_traditionalist_desc: "#lore This group holds that life is sacred from conception to natural death, and that family and adoption must follow the moral order handed down by tradition.#!"
+  ideology_bioethics_progressist: "Bioethical Reformism"
+  ideology_bioethics_progressist_desc: "#lore This group believes that medicine and law should serve individual choice, and that the state has no place deciding over birth, family and the end of life.#!"
+  ideology_education_traditionalist: "Educational Conservatism"
+  ideology_education_traditionalist_desc: "#lore This group sees higher learning as the preserve of a few, and believes young people belong in the fields, the workshop or the family business rather than in state classrooms.#!"
+  ideology_education_progressist: "Educational Reformism"
+  ideology_education_progressist_desc: "#lore This group believes that secondary schooling and public universities are the engine of national progress, and that education must be open to every citizen.#!"
