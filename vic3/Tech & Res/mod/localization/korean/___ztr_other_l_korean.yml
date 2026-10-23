@@ -133,12 +133,9 @@
   combat_unit_type_giant_death_robot: "거대 죽음의 로봇" # 4297619975635627934
   combat_unit_type_giant_death_robot_desc: "거대한 기계화 인공지능 병기는 첨단 무기, 방어 체계, 그리고 장갑을 갖추고 있으며, 전장에서 적군을 궤멸시킬 수 있습니다." # 16345664279852921073
   ztr_merge_power_bloc_diplomacy: "권력 블록 병합" # 7653944448458803827
-  ztr_merge_power_bloc_diplomacy_desc: "우리의 세력권과 유사한 [Concept('concept_ideology','$concept_ideology$')]을 공유하는 다른 세력권과의 합병 제안입니다." # 9973594415940577770
-  ztr_merge_power_bloc_diplomacy_effects_desc: "우리의 세력권을 [TreatyDraft.GetRightCountry.GetName]의 세력권과 합병하여, 공유하는 [Concept('concept_ideology','$concept_ideology$')]에 기반한 더욱 강력한 동맹을 결성합니다." # 11260817878674567249
   ztr_merge_power_bloc_diplomacy_name: "$ztr_merge_power_bloc_diplomacy$" # 18066710319493759108
   ztr_merge_power_bloc_diplomacy_action_name: "권력 블록 병합" # 7653944448458803827
   ztr_merge_power_bloc_diplomacy_proposal_notification_name: "# 세력 연합 합병 제안 #" # 3221941547919936142
-  ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "우리는 양측 진영이 유사한 [Concept('concept_ideology','$concept_ideology$')]을 공유하고 있기에, [TARGET_COUNTRY.GetName]에 우리의 세력 연합을 통합할 것을 제안했습니다. 이러한 통합은 우리의 동맹을 강화하고 공동 안보를 증진시킬 것입니다." # 5496804578851567230
   suez_canal_big_money: "수에즈 운하 특허" # 3482756953484851270
   suez_canal_big_money_exit: "수에즈 운하 인수" # 11830757751114044770
   suez_canal_small_money: "수에즈 운하 수익 분배" # 15261374037294582814
@@ -192,7 +189,6 @@
   ztr_merge_power_bloc_diplomacy_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]으로부터 $ztr_merge_power_bloc_diplomacy$를 부여받았습니다." # 4510195600299905090
   ztr_merge_power_bloc_diplomacy_proposal_third_party_declined_name: "$ztr_merge_power_bloc_diplomacy$ 거부됨" # 13054642067661087649
   ztr_merge_power_bloc_diplomacy_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]은 [INITIATOR_COUNTRY.GetName]으로부터 $ztr_merge_power_bloc_diplomacy$를 거절당했습니다." # 137099496714189416
-  ztr_similar_type_of_government_tt: "비슷한 [Concept('concept_ideology','$concept_ideology$')]를 가지고 있습니다." # 2794886697244342428
   HOSTILE_NUCLEAR_NEIGHBOUR: "#negative_value 적대적#! 핵 이웃" # 5310339023016893041
   DEVELOPING_OWN_NUCLEAR_WEAPONS: "자체 핵무기 개발" # 17629679344431351418
   imf_modernization_research_bonus_modifier: "지속적인 근대화" # 15495412835571883962
@@ -408,3 +404,7 @@
   ztr_bpm_ig_approval_modifier: "National Political Climate"
   ztr_bpm_ig_pol_str_modifier: "National Political Climate"
   ztr_bpm_ig_pop_attraction_modifier: "National Political Climate"
+  ztr_merge_power_bloc_diplomacy_desc: "A proposal to merge our power bloc with another one, since both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
+  ztr_merge_power_bloc_diplomacy_effects_desc: "Merges our power bloc with [TreatyDraft.GetRightCountry.GetName]'s power bloc, creating a stronger alliance based on a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
+  ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "We have proposed to [TARGET_COUNTRY.GetName] to merge our power blocs, as both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]. This unification would strengthen our alliance and enhance our collective security."
+  ztr_similar_type_of_government_tt: "Has a similar [Concept('concept_ideology_index','$concept_ideology_index$')]"
