@@ -1,9 +1,7 @@
 ﻿l_korean:
-  aeroplanes: "군용기" # 10027288187131300694
   civil_planes: "비행기" # 9942541435516958429
   bauxite: "보크사이트" # 1445528219541785425
   aluminium: "알루미늄" # 18233102779933528146
-  plastics: "플라스틱" # 3859283588461675941
   light_fuel: "경유" # 7917688321522982498
   lubricant: "윤활유" # 9934036532251853349
   heavy_fuel: "중유" # 7315218838118560079
@@ -13,7 +11,6 @@
   processors: "프로세서" # 1885287472645480584
   copper: "구리" # 11027802020195535945
   commonores: "일반 광석" # 9081330906484913240
-  automobiles: "차량" # 6974969927084111388
   advancedores: "고급 광석" # 10067223212668129959
   homeappliances: "가전제품" # 5322738816466848183
   elgar_music: "오락" # 15380445498511213679
@@ -22,7 +19,6 @@
   alloys: "합금" # 11054398819593279827
   water: "물" # 8142607344205050291
   fuel_cells: "연료 전지" # 3148361876162482352
-  pharmaceuticals: "의약품" # 6480103521692282332
   televisions: "텔레비전" # 18338624930657706262
   computer: "컴퓨터" # 6464724871802620488
   robotics: "로봇공학" # 9294682526893309936
@@ -82,8 +78,6 @@
   goods_input_plastics_mult_desc: "건물이 소비하는 @plastics! 투입량에 대한 보너스 또는 페널티" # 14903429565473495695
   goods_input_gas_mult: "@gas! 천연가스 투입량" # 6365569117360494856
   goods_input_gas_mult_desc: "건물에서 소비하는 @gas! 투입량에 대한 보너스 또는 페널티" # 12825887448312486143
-  goods_input_aeroplanes_add: "@aeroplanes! 군용기 투입량" # 17746252663676698428
-  goods_input_aeroplanes_add_desc: "건물에서 소비하는 @aeroplanes! 군용기 양" # 7461393262412928294
   goods_input_civil_planes_add: "@civil_planes! 비행기 투입량" # 9929416158210931935
   goods_input_civil_planes_add_desc: "건물에서 소비하는 @civil_planes! 비행기 양" # 10196317440302260112
   goods_input_bauxite_add: "@bauxite! 보크사이트 투입량" # 9288422036142198369
@@ -110,8 +104,6 @@
   goods_input_copper_add_desc: "건물에서 소비되는 @copper! 구리의 양" # 5129678066705809786
   goods_input_commonores_add: "@commonores! 일반 광석 투입량" # 6136431850721884127
   goods_input_commonores_add_desc: "건물에서 소비되는 @commonores! 일반 광석의 양" # 10611434332560480392
-  goods_input_automobiles_add: "@automobiles! 자동차 투입량" # 5299948482296733227
-  goods_input_automobiles_add_desc: "건물에서 소비되는 @automobiles! 자동차의 양" # 18279912814440084252
   goods_input_advancedores_add: "@advancedores! 고급 광석 투입량" # 13693251488290988086
   goods_input_advancedores_add_desc: "건물에서 소비되는 @advancedores! 고급 광석의 양" # 6078348927303200240
   goods_input_homeappliances_add: "@homeappliances! 가전제품 투입량" # 13411481354893997149
@@ -152,8 +144,6 @@
   goods_input_organized_data_add_desc: "건물에서 소비되는 @organized_data! 조직화된 데이터의 양" # 16884543336416370551
   goods_input_business_data_add: "@business_data! 비즈니스 데이터 투입" # 16605807590821847266
   goods_input_business_data_add_desc: "건물에서 소비되는 @business_data! 비즈니스 데이터의 양" # 5734924618674619123
-  goods_output_aeroplanes_add: "@aeroplanes! 전투기 산출" # 8236150305740765657
-  goods_output_aeroplanes_add_desc: "건물에서 생산되는 @aeroplanes! 전투기의 양" # 16394171012037866353
   goods_output_civil_planes_add: "@civil_planes! 비행기 산출" # 9304066854854316407
   goods_output_civil_planes_add_desc: "건물에서 생산되는 @civil_planes! 비행기의 양" # 10681418380058589677
   goods_output_bauxite_add: "@bauxite! 보크사이트 산출" # 8495590888554005663
@@ -179,8 +169,6 @@
   goods_output_copper_add_desc: "건물에서 생산되는 @copper! 구리의 양" # 2259108146807109872
   goods_output_commonores_add: "@commonores! 일반 광석 생산량" # 1597084709769612112
   goods_output_commonores_add_desc: "건물에서 생산되는 @commonores! 일반 광석의 양" # 543005146778694973
-  goods_output_automobiles_add: "@automobiles! 자동차 생산량" # 13554495179275564971
-  goods_output_automobiles_add_desc: "건물에서 생산되는 @automobiles! 자동차의 양" # 13183221688435725830
   goods_output_advancedores_add: "@advancedores! 고급 광석 생산량" # 5050924357462461459
   goods_output_advancedores_add_desc: "건물에서 생산되는 @advancedores! 고급 광석의 양" # 1876125432082494845
   goods_output_homeappliances_add: "@homeappliances! 가전제품 생산량" # 6031162264111814890

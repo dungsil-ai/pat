@@ -28,8 +28,6 @@
   state_harvest_condition_ztr_coastal_flooding_impact_mult_desc: "해안 침수의 영향이 증가하거나 감소합니다." # 1017506091881869852
   state_harvest_condition_ztr_coastal_flooding_duration_mult: "[GetHarvestConditionType('ztr_coastal_flooding').GetName] [concept_harvest_condition] 지속 기간" # 10452095238672558561
   state_harvest_condition_ztr_coastal_flooding_duration_mult_desc: "해안 침수의 지속 기간이 증가하거나 감소합니다." # 11703769556752595245
-  modifier_cyclone_relief: "허리케인 구호 활동" # 4321241684107076021
   modifier_cyclone_relief_desc: "긴급 복구, 대피소 운영 및 해안 구호로 인해 국가 재정에 일시적인 부담이 가중되고 있습니다." # 6659934082080461675
-  modifier_mega_flood_relief: "해안 방어 비상사태" # 8488343991016245744
   modifier_mega_flood_relief_desc: "방파제 건설과 보강 공사에 막대한 공공 자금이 소모되고 있습니다." # 10631730233718892080
   ztr_coastal_flooding_desc: "장기간의 해안 침수로 인해 수년간 농장과 마을, 사회 기반 시설이 마비됩니다. 염수 유입과 반복되는 해일로 인해 빠른 회복이 어려우며, 긴급 구호로 추가 피해를 억제할 수는 있으나 이 상태를 완전히 해소할 수는 없습니다." # 14591228045409724684

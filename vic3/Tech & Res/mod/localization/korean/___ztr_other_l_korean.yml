@@ -88,11 +88,8 @@
   mobilization_option_penicillin_medical_support_desc: "페니실린은 감염을 치료하고 전장에서 생명을 구할 수 있는 강력한 항생제입니다." # 7780820277168222110
   goods_input_telecommunications_add: "@telecommunications! 전기 통신 투입" # 17547414138926758440
   goods_input_telecommunications_add_desc: "건물들이 소비하는 @telecommunications! 통신량" # 10877859509653849249
-  goods_input_robotics_add: "@robotics! 로봇 공학 입력" # 708192872807179531
-  goods_input_robotics_add_desc: "건물에서 소비하는 @robotics! 로봇공학의 양" # 16017692447615509263
   electronic_support: "전자 지원" # 8957627629172904963
   remote_support: "원격 지원" # 4406339306841678023
-  nuclear_weapons: "핵무기" # 5627323961255064452
   mobilization_option_electronic_countermeasures: "전자 대응책" # 6334565004592494429
   mobilization_option_electronic_countermeasures_desc: "전자전 방해책은 아군 병력을 적의 레이더 및 조준 시스템으로부터 보호하는 데 도움이 됩니다." # 15748759132501104048
   mobilization_option_electronic_support_measures: "전자 지원 수단" # 15304937265335007300
@@ -111,8 +108,6 @@
   unit_combat_unit_type_modern_light_tanks_offense_mult_desc: "현대 경전차 공격력 배율" # 17551905715100052623
   unit_combat_unit_type_main_battle_tanks_offense_mult: "주력 전차 공격력 배율" # 14069699858886790146
   unit_combat_unit_type_main_battle_tanks_offense_mult_desc: "주력 전차 공격력 배율" # 14069699858886790146
-  unit_combat_unit_type_siege_artillery_offense_mult: "$combat_unit_type_siege_artillery$ $unit_offense_mult$" # 13344774950677082892
-  unit_combat_unit_type_siege_artillery_offense_mult_desc: "$combat_unit_type_siege_artillery$ $unit_offense_mult$" # 13344774950677082892
   unit_combat_unit_type_siege_artillery_defense_mult: "$combat_unit_type_siege_artillery$ $unit_defense_mult$" # 11994630182937102686
   unit_combat_unit_type_siege_artillery_defense_mult_desc: "$combat_unit_type_siege_artillery$ $unit_defense_mult$" # 11994630182937102686
   unit_combat_unit_type_self_propelled_artillery_offense_mult: "$combat_unit_type_self_propelled_artillery$ $unit_offense_mult$" # 18228279499864740975
@@ -207,7 +202,6 @@
   ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
   ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
   land_reclamation_struggle_modifier: "간척 사업의 투쟁" # 17326798404457842216
-  geographic_region_oceania: "오세아니아" # 77874904389657804
   modern_medicine_0: "19세기 초 복지" # 5751458070186196927
   modern_medicine_1: "19세기 후반 복지" # 135381448794086416
   modern_medicine_2: "20세기 초반 복지" # 4483400645717160092
@@ -401,9 +395,6 @@
   DIPLOMATIC_ACCEPTANCE_ENEMY_NUCLEAR_WEAPONS: "상대방이 이미 핵무기를 보유하고 있기 때문에" # 7609487438551603635
   DIPLOMATIC_ACCEPTANCE_THREAT_OF_MUTALLY_ASSURED_DESTRUCTION: "매우 높은 세계 긴장 상태 속에서 #N 상호확증파괴#!의 위협 때문에" # 6732831270184672874
   ztr_superpower_desc: "[Concept('concept_superpower','$concept_superpower$')] status requires [GetTechnology('neoimperialism').GetName] and a top-two global ranking, checked yearly. See the concept for requirements, benefits and [concept_power_bloc] rules."
-  ztr_bpm_ig_approval_modifier: "National Political Climate"
-  ztr_bpm_ig_pol_str_modifier: "National Political Climate"
-  ztr_bpm_ig_pop_attraction_modifier: "National Political Climate"
   ztr_merge_power_bloc_diplomacy_desc: "A proposal to merge our power bloc with another one, since both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
   ztr_merge_power_bloc_diplomacy_effects_desc: "Merges our power bloc with [TreatyDraft.GetRightCountry.GetName]'s power bloc, creating a stronger alliance based on a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
   ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "We have proposed to [TARGET_COUNTRY.GetName] to merge our power blocs, as both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]. This unification would strengthen our alliance and enhance our collective security."

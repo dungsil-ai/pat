@@ -138,8 +138,6 @@
   building_electronics_industry: "전자 부품 산업" # 17430324492429658057
   building_electronics_industry_throughput_add: "전자 부품 산업 [concept_throughput]" # 2421705360566407054
   building_electronics_industry_throughput_add_desc: "전자 부품 산업의 [concept_throughput]을(를) 높입니다." # 407996585776661190
-  building_oil_rig_throughput_add: "석유 굴착 장치 [concept_throughput]" # 7426271347343676875
-  building_oil_rig_throughput_add_desc: "유정의 [concept_throughput]을 증가시킵니다." # 5640299275949448449
   building_ecommerce_logistics: "전자상거래 물류 센터" # 16571400281508119596
   building_ecommerce_logistics_lens_option: "$building_ecommerce_logistics$ 확장" # 2462883647508428026
   building_ecommerce_logistics_throughput_add: "전자상거래 물류 [concept_throughput]" # 1741056886126853918

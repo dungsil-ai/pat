@@ -51,8 +51,6 @@
   pmg_automation_building_robotics_industry: "자동화" # 18411738171978629847
   pm_advanced_assembly_lines_building_robotics_industry: "고급 조립 라인" # 9416223957800701698
   pm_robotic_building_robotics_industry: "로봇 조립 라인" # 3664357297072673262
-  pmg_aeroplanes: "군용기" # 10027288187131300694
-  pm_aeroplane_production: "군용기 생산" # 5853177583207122898
   pm_modern_warplanes_production: "현대 군용기 생산" # 12767440847109761564
   pm_no_civil_plane_production: "민간 항공기 없음" # 7944981682982901132
   pm_zeppelins_production: "체펠린" # 16658539803029332290
@@ -79,7 +77,6 @@
   pmg_fuel_airport: "연료" # 9342805011431798179
   pm_airport_oil: "항공 연료" # 4185896634630666525
   pm_airport_kerosene: "등유" # 2982493946505999342
-  pmg_automobile_production: "차량" # 6974969927084111388
   pm_turbo_diesel_engines: "터보 디젤 엔진" # 10954462659262452171
   pmg_curie_mining_equipment_building_uranium_mine: "광산 장비" # 17140336587074594376
   pm_curie_picks_and_shovels_building_uranium_mine: "곡괭이와 삽" # 5178375057128475497
@@ -142,7 +139,6 @@
   pm_electric_pumped_water: "전기 펌프 양수" # 12234587523260039396
   pm_advanced_water_filtration: "고급 수질 여과" # 16217726122872364488
   pmg_automation_building_water_plant: "자동화" # 18411738171978629847
-  pm_no_steam_automation: "자동화 없음" # 7652304566797465410
   pm_copper_pipes: "구리 파이프" # 2553411215913812683
   pm_rotary_valve_engine_building_water_plant: "회전식 밸브 기관" # 14572944410143777332
   pm_basic_smelting_process: "기초 제련 과정" # 10238886343216675250
@@ -171,7 +167,7 @@
   pm_basic_homeappliances: "기본 가전제품" # 6721234034527463603
   pm_bronze_tools: "청동 도구" # 13840403896187281172
   pm_modern_tools: "근대적 도구" # 1464445827256599994
-  pm_nuclear-fission_plant: "핵분열 발전소" # 7432757473815202239
+  pm_nuclear-fission_plant: "Nuclear Reactor"
   pmg_base_building_telecommunications: "통신" # 3115444686459672923
   pm_manual_operators_network_building_telecommunications: "수동 조작원 네트워크" # 16962572162497495543
   pm_national_radio_network_building_telecommunications: "국가 라디오 네트워크" # 3024629185225111617
@@ -315,14 +311,13 @@
   pmg_base_building_natural_gas_rig: "천연가스 시추 시설" # 4298105705961136561
   pm_gas_steam_derricks: "가스 증기 데릭" # 18114078004519394880
   pm_gas_combustion_derricks: "가스 연소 채유탑" # 17467835806385004874
-  pm_gas_hydraulic_fracturing: "수압 파쇄" # 8483916183151686372
+  pm_gas_hydraulic_fracturing: "Fracking"
   pm_hb_process_steam_reforming: "HB 공정 - 증기 개질" # 12340106349092710927
   pmg_direct_reduced_iron_steelmaking: "직접환원철" # 7083080816987394825
   pm_disabled_direct_reduced_iron: "비활성화됨" # 1399321916878098753
   pm_direct_reduced_iron_hyl_process: "에이치와이엘 공정" # 3029041905005385805
   pm_direct_reduced_iron_midrex_process: "미드렉스 공법" # 1522500838690440973
   pm_mobile_artillery: "로켓 포병" # 15081891605769264607
-  pm_no_tank_production: "전차 없음" # 13808390104523045570
   pm_second_gen_tank_production: "2세대 전차" # 7531570544967305974
   pm_third_gen_tank_production: "3세대 전차" # 10676255994514673546
   pmg_helicopters: "헬리콥터" # 5826673679717711275
@@ -372,8 +367,6 @@
   pm_oil_hydraulic_fracturing: "수압 파쇄" # 8483916183151686372
   pm_gas_horizontal_perforation: "수평 천공" # 8164557770637606474
   pm_ev_motors: "전기차 엔진" # 14859274370707598470
-  pm_automobile_production: "시제품 차량" # 8676432804284356505
-  pm_mass_automobile_production: "초기 차량" # 18183468472318299206
   pm_modern_vehicles_production: "전후 차량" # 8080111446237043802
   pm_hybrid_vehicles_production: "하이브리드 차량" # 16549032020935549046
   pm_smart_vehicles_production: "스마트 차량" # 5561685448874985204
@@ -487,7 +480,7 @@
   pm_no_desalinated_water: "담수 없음" # 17048399776680617353
   pmg_gasification_building_mendelejew_hydrogenation_plants: "가스화" # 6163194949182457262
   pm_gasification_building_mendelejew_hydrogenation_plants: "합성 가스" # 13862347729171338635
-  pm_no_synthetic_rubber: "합성 고무 없음" # 8605890430904172365
+  pm_no_synthetic_rubber: "Prioritize Plastics"
   pmg_plastics_production: "플라스틱 & 고무 생산" # 10987832690190573404
   pmg_alloys_process: "합금 및 알루미늄 공정" # 14948918109009039159
   pmg_interactive_media_building_interactive_media_industry: "인터랙티브 미디어 제작" # 3791023301744178068
