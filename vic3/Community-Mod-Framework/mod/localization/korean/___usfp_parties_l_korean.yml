@@ -1,9 +1,7 @@
 ﻿l_korean:
-# PAT verified upstream: 807c32f
   party_american_party: "미국당" # 7723279495225666346
   party_free_soil_party: "자유 토지당" # 7664545663809705732
   party_radical_democracy_party: "급진 민주당" # 2554945704315611384
-  party_socialist: "사회주의 노동당" # 5519561527245271391
   intelligentsia_missing: "$ig_intelligentsia$가 자유당에 없음" # 501881550380223992
   industrialists_missing: "$ig_industrialists$가 자유무역당에 없습니다" # 8329838201522668386
   join_existing_party: "[concept_party]에 가입해야 합니다." # 10768194145562432431

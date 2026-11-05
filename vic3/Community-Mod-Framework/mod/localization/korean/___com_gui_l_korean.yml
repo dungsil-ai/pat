@@ -1,13 +1,27 @@
 ﻿l_korean:
-# PAT verified upstream: 807c32f
   gui_sidebar_example_button: "gui_sidebar_example_button" # 16827161175787099519
   gui_sidebar_example_button_desc: "예시" # 1513857641461741027
   gui_sidebar_example_button_tooltip: "이 버튼을 클릭하면 아무것도 일어나지 않습니다" # 4152568696005216116
   gui_character_opinion_example: "의견 예시" # 7562110352757794886
   com_gui_total_building: "[Building.GetName] 규모:" # 4781107405660026246
   com_no_sandbox_warning: "@red_cross! 목표가 선택된 상태에서는 $SANDBOX$를 사용할 수 없습니다" # 13636822750393792706
+  com_community_mod_menu_header: "Community Mod Menu"
+  com_debug_features_header: "Debug Functions"
+  com_debug_mode_toggle: "Toggle Debug Mode"
+  com_debug_mode_toggle_tooltip_ON: "Activate #bold Debug Mode#!"
+  com_debug_mode_toggle_tooltip_OFF: "Deactivate #bold Debug mode#!"
+  com_debug_variable_toggle: "Toggle Global Debug Variable"
+  com_debug_variable_toggle_tooltip_ON: "Set the #bold com_debug#! global variable"
+  com_debug_variable_toggle_tooltip_OFF: "Remove the #bold com_debug#! global variable"
+  com_mod_debug_manager_header: "Mod Debug Menu Manager"
+  com_mod_debug_manager_datamodel_empty: "@warning! #red #bold No mods present in datamodel!#!#!"
+  com_mod_debug_manager_mod_name: "[ScriptContainer.MakeScope.Var('com_mod_name').GetFlagName]" # 4583323493001609075
+  com_mod_debug_manager_mod_tooltip: "This will open the debug menu for [ScriptContainer.MakeScope.Var('com_mod_name').GetFlagName]"
+  com_mod_debug_manager_mod_tooltip_missing_command: "@warning! #red #bold Variable for console command not set!#!#!"
   com_event_location: "[GetPlayer.MakeScope.Var('com_event_window_location_var').GetFlagName]에서 발생한 이벤트" # 10184700852032093851
   com_debug_deer: "#header #todo 디버그 정보#!#!\n$TOOLTIP_DELIMITER$\n#bold 이벤트 ID: [Event.GetKey|v]\n$TOOLTIP_DELIMITER$\n#bold 트리거 설명:\n[Event.GetTriggerDesc]\n@information! 클릭하여 텍스트 편집기에서 이벤트 열기" # 15750909931800288972
+  com_release_manul: "Click to the hide the error counter while unpaused"
+  com_contain_manul: "Click to lock the error counter while unpaused"
   com_error_deer_tooltip: "#instruction 왼쪽 클릭#!으로 오류 로그 열기\n#instruction 왼쪽 클릭 + Shift#!으로 탐색기 열기\n#instruction 왼쪽 클릭 + Alt#!으로 느린 틱 작업 열기\n#instruction 오른쪽 클릭#!으로 닫기 (다시 오류가 발생하기 전까지)\n#instruction 오른쪽 클릭 + Shift#!으로 트위커 열기\n#instruction 오른쪽 클릭 + Alt#!으로 3D 통계 열기" # 14951443437567222190
   com_error_counter: "#bold [ErrorDeer.NumberOrErrors|v]개의 오류#!" # 10094424766754441795
   com_error_counter_tooltip: "[ErrorDeer.GetTooltip]" # 17515023484570454117
@@ -21,7 +35,10 @@
   com_debug.e: "테스트 & 4ious" # 4074723196073234045
   com_debug.james: "\"그냥 [GetTechnology('line_infantry').GetName] 연구나 해\" -1230james" # 10961944449040135390
   com_debug.james_tt: "#italic 제임스가 당신을 보며 미소 짓습니다...#!" # 10978015492550975796
+  com_placeholder_text: "#todo Placeholder Text#!"
+  com_ipsum_lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium elementum lorem sit amet fermentum. Nunc euismod velit id magna interdum, id aliquam velit venenatis. Nunc vitae odio maximus, sollicitudin massa nec, tristique dolor. Vivamus vitae tellus eu enim vehicula faucibus. Donec imperdiet porttitor dui ac vehicula. In hac habitasse platea dictumst. In neque nunc, posuere a ipsum ac, finibus aliquam ligula. Nulla at libero felis. Nullam porta posuere orci in cursus. Ut feugiat, orci gravida semper ornare, odio nisl laoreet leo, at commodo ipsum tellus vel ipsum. Suspendisse imperdiet ultricies ipsum vitae pulvinar.$com_lb$Aenean a nibh quis mauris maximus fringilla vel et dui. Cras at ipsum nulla. Nulla id finibus nunc. Proin vitae sapien odio. Nullam nec mi ante. Sed hendrerit ligula odio, in varius ligula sodales at. Fusce ut neque et lectus suscipit lobortis. Cras posuere tincidunt orci, nec mollis velit imperdiet ac. Sed sagittis auctor scelerisque.$com_lb$Ut neque odio, imperdiet at ultricies ut, vestibulum ac ligula. Nunc pharetra ante vel diam lacinia feugiat. Proin commodo dictum diam id aliquet. Quisque ultrices vitae nunc at congue. Nunc quis iaculis purus. Quisque mattis lectus eu cursus consectetur. Maecenas a ligula eu quam pharetra efficitur. Aliquam sapien purus, vulputate et viverra et, interdum iaculis massa. Nullam aliquet blandit elit ornare tempor. Quisque porttitor iaculis metus vel blandit. Mauris tempor nunc sit amet bibendum sollicitudin. Ut laoreet mi ac sagittis posuere. Morbi accumsan ante vitae nulla convallis, sed iaculis nisi hendrerit.$com_lb$Sed aliquam mauris massa, at laoreet turpis ullamcorper et. Nulla rutrum enim at sapien venenatis, a cursus nulla accumsan. Sed nec elementum sem. Sed et neque vitae ipsum consectetur pretium. Praesent luctus ex euismod, maximus ante consequat, volutpat nisi. Vivamus interdum purus vel luctus lobortis. Ut vitae est eget risus tempus eleifend vel et tellus. Phasellus ut lobortis tortor. Phasellus vulputate, lorem in consectetur ultrices, velit tellus suscipit arcu, at tempus ex nulla vitae libero. Etiam felis ante, lobortis vitae venenatis vitae, ultricies sed magna. Nullam venenatis lacus nec diam luctus, aliquam aliquam risus feugiat. Quisque sed tellus commodo, consequat odio sit amet, ultrices lorem. Vivamus leo risus, porta ut dignissim vitae, maximus in ex. Nullam luctus lacus dolor, quis malesuada nisi tristique ac. Maecenas in finibus est. Etiam porttitor felis at augue tincidunt, non porta magna laoreet.$com_lb$Maecenas eleifend justo vitae massa porttitor, a condimentum orci malesuada. In pretium nulla eu leo mollis, efficitur semper lorem suscipit. Suspendisse tincidunt iaculis urna nec dapibus. In metus libero, ullamcorper at mi sit amet, tincidunt sagittis tortor. Sed bibendum, risus sit amet blandit sodales, dolor metus sodales ex, vel tempus augue neque at nisi. Nunc mattis urna sit amet consectetur bibendum. Vivamus dapibus mi sit amet diam porta, eu dapibus elit consequat. Nam nulla diam, efficitur sit amet eleifend eu, vulputate sed nulla. Quisque imperdiet scelerisque orci ac rutrum."
   com_nl: "\n" # 7161557352316922208
+  com_lb: "\n\n"
   com_bp: "•" # 10991062373138645705
   com_nlbp: "\n • " # 5140152433316209271
   com_ttdl: "\n$TOOLTIP_DELIMITER$\n" # 5958986119376624063
