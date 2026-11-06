@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   ideology_nonexistent: "초기화되지 않음" # 9931611674239871260
   ideology_nonexistent_desc: "#lore 이 이익집단 또는 지도자는 아직 초기화되지 않았습니다. 초기화되지 않은 이익집단의 세력이 0이 아니라면 BPM 개발자에게 버그로 보고해 주십시오! #!" # 1304020136514659619
   ideology_placeholder_leader: "$ideology_nonexistent$" # 15450738802266654980
@@ -7,8 +6,6 @@
   ideology_center_leader: "중앙" # 10088933344845843871
   ideology_center_leader_desc: "#lore 이 지도자는 그들의 집단에 대한 이념적 정통성을 고수합니다. #!" # 11972617499610450299
   ideology_moderate_desc: "#lore 이 지도자는 특별한 이념을 가지고 있지 않으나, 전반적으로 보다 온건한 접근 방식을 선호합니다. #!" # 12180773038749711143
-  ideology_social_democrat: "노동자 급진파" # 17805747861735841207
-  ideology_social_democrat_desc: "#lore 이 지도자는 급진적 노동 운동의 전통에 폭넓게 부합하는 독특한 이념을 따릅니다. 보다 극단적인 사회주의자들과는 달리, 이 지도자는 부르주아 공화국을 전복하려 하기보다는 그 안에서 협력하고자 합니다. #!" # 6829471445147324115
   ideology_socialist_leader: "사회주의자" # 3261957402647864113
   ideology_socialist_leader_desc: "#lore 이 지도자는 제1 국제노동자협회에서 무정부주의자들에 맞섰던 광범위한 좌파 전통에 속합니다. #!" # 10163927374204909339
   ideology_agrarian_socialist_leader: "농본주의 사회주의자" # 12496643935443868344

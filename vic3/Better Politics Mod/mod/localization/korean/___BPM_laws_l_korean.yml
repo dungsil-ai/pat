@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   bpm_decorative_upgradable_law: "법률을 개선할 수 있습니다" # 5795797962902064547
   bpm_decorative_upgradable_law_desc: "이 법안을 통과시키면 일부 특정한 경우에 이를 더욱 강력한 형태로 개선하거나, 더 나은 변형으로 대체할 가능성이 열립니다." # 6285835444991775627
   law_multicultural: "세계주의" # 3915836261885143996
@@ -143,8 +142,12 @@
   lawgroup_labour_associations_desc: "이 법률들은 노동자 대변의 판도를 결정하며, 노동자들이 다양한 이념적 및 정부적 제약 속에서 어떻게 단결하고 자신들의 권익을 옹호할 수 있는지를 규정합니다." # 12268704192899268491
   law_combination_acts: "불법 노동조합" # 295199674958574803
   law_combination_acts_desc: "어떠한 형태의 노동조합도 엄격히 금지되며, 그러한 조직에 가담하는 것은 법에 위배됩니다." # 13997928714617204252
+  country_trade_unions_non_institutional: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] not treated as [concept_bpm_institutional_ig]"
+  country_trade_unions_non_institutional_desc: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] will not have their attractivness adjusted by the [concept_bpm_political_stability] of the country."
   law_corporatized_unions: "국가 통제 노동조합" # 6489477748739639371
   law_corporatized_unions_desc: "정부는 모든 노동조합을 감독하고 통제하며, 노동조합이 국가 정책 및 목표에 부합하도록 보장합니다." # 6649954846388934251
+  country_trade_unions_can_not_be_pressured_by_socialists: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] Immune to Socialist [concept_political_movement_pressure]"
+  country_trade_unions_can_not_be_pressured_by_socialists_desc: "$country_trade_unions_can_not_be_pressured_by_socialists$"
   law_anti_strike_laws: "제한적 노동조합" # 7225843931800517470
   law_anti_strike_laws_desc: "노동조합은 암묵적으로 허용되나, 파업 및 정치적 입장에 대해서는 엄격한 제한을 받습니다." # 4510084744764627599
   law_right_to_associate: "모든 노동조합 허용" # 1802014864730843338
@@ -153,6 +156,8 @@
   law_socialist_labor_unions_desc: "국가의 사회주의 교리에 부합하는 노동조합만이 국내에서 활동할 수 있습니다." # 2027476507660224552
   law_syndicalism: "생디칼리즘" # 12632527784956638882
   law_syndicalism_desc: "노동조합이 사회 조직의 기초로 활용되며, 국가의 통치 기구가 됩니다." # 8083448185046812366
+  law_no_labour_law: "No Union Laws"
+  law_no_labour_law_desc: "The state has no particular legislation or orientation towards unions, which exist as purely extra-legal entities."
   bpm_decorative_trade_unions_non_institutional: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName]이(가) [Concept('concept_bpm_institutional_ig', '제도권 이익 집단')]으로 취급되지 않음" # 11252649856221432282
   bpm_decorative_trade_unions_non_institutional_desc: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName]의 유인력은 국가의 [Concept('concept_bpm_political_stability', '정치적 안정')]에 의해 조정되지 않습니다\"" # 3049514397189498404
   bpm_decorative_trade_unions_force_leader_moderate: "[GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName]에 비좌파 지도자 강제 적용" # 12570871991274019593

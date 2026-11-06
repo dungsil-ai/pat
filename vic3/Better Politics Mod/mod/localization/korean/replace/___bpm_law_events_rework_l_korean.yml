@@ -1,37 +1,20 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
-  children_rights_events.1.t: "보이지 않는 울부짖음" # 7083966055794094640
   children_rights_events.1.d: "$country_legislature_name$의 나머지 의원들을 설득하기 위해, [SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName]은(는) [SCOPE.sState('child_labor_state').GetName]의 아동 노동 실태를 파헤쳤습니다. 그곳에서 그는 아이들이 작업장에서 겪는 비인도적인 환경 때문에, [SCOPE.sState('child_labor_state').GetName]의 많은 가족이 자녀가 일터로 보내지지 않기를 바라는 마음으로 아이들을 숨기고 있다는 사실을 발견했습니다." # 17028194751319335747
   children_rights_events.1.f: "\"어머니께서 조용히 있으라고 하셨습니다, 나리, 그래서 저희는 그리했습니다. 저와 제 동생은 무덤처럼 조용히 서 있었지요, 아시다시피, 저는 숨을 최대한 참았지만, 너무 어두워서 건달들은 이미 떠난 줄 알았습니다. 그들은 여기에서 우리를 찾지 못할 거라고, 어머니께서 그렇게 말씀하셨지요, 하지만 너무 어둡고, 추웠습니다, 나리.\"" # 18212927193468464480
   children_rights_events.1.a: "이 정보는 $country_legislature_name$의 일부 의원들의 마음을 돌릴 것입니다." # 10924227910205507062
   children_rights_events.1.b: "이 이야기는 [SCOPE.sCharacter('children_wrongs_ig_leader_scope').GetFullName] 덕분에 밖으로 알려지지 않았을 것입니다!" # 9764864108144340482
-  hidden_children_modifier: "숨겨진 자녀들" # 6380735601827941673
   bpm_brought_hidden_children_modifier: "숨겨진 아동들에게 주목하게 하다" # 12001570744753802689
-  children_rights_events.2.t: "쓰라린 진실" # 5845409149545182015
   children_rights_events.2.d: "[SCOPE.gsInterestGroup('children_wrongs_yes').GetName]은 해당 법안의 열렬한 반대파로서, [SCOPE.sState('child_labor_state').GetName]의 노동자들이 받는 낮은 임금 때문에 생계를 유지하기 위해 아동을 고용할 수밖에 없으며, 만약 아동 노동이 제한된다면 그 가족들은 심각한 고통을 겪게 될 것이라고 지적했습니다. 노동자를 대표하면서도 해당 법안을 지지하는 [SCOPE.gsInterestGroup('trade_unions_scope').GetName]은 곤란한 입장에 처해 있습니다." # 8768531374179714012
-  children_rights_events.2.f: "\"이건 미친 짓이오! 그들 스스로가 아이들을 노동하게 만들고 있는데 우리가 어떻게 그들을 도울 수 있단 말이오?! 우리는 무언가 조치를 취해야 하오! 이 야만적인 결정을 즉각 중단시키시오!\"\n\n\"음, 그들이 다른 선택지가 있었다면 자기 아이들에게 이런 일을 원하지 않았으리라는 것은 꽤 분명해 보이는군요, 그렇지 않습니까? 이 불쌍한 사람들을 그들의 생존 결정에 근거하여 판단하는 것은 그들에게 아무런 도움이 되지 않을 것입니다.\"" # 3790675636805365851
   children_rights_events.2.a: "그럼에도 불구하고, 우리는 이것을 막아야만 합니다." # 3753863888202472249
   children_rights_events.2.b: "그들은 생존을 위해 필요한 바를 행합니다." # 13155567254603177337
-  stopped_families_modifier: "아동 노동 논쟁" # 1514046933902314072
-  allowed_families_send_their_children_modifier: "아동 노동 양보" # 2463787063178758351
-  didnt_allow_families_send_their_children_modifier: "아동 노동 불허용" # 144354865322635881
-  children_rights_events.3.t: "피할 수 없는 부상" # 10218950665414113992
-  children_rights_events.3.d: "정부에서 [SCOPE.sLaw('current_law_scope').GetName]을 강력히 추진함에 따라, 이들이 남길 공백을 성인 남성들이 메우도록 강제되었습니다. 하지만 그들의 몸은 너무 크고 손가락은 너무 굵어서 이 임무에 부적합하며, 그 결과 산업 재해가 증가하고 있습니다." # 6145612942207229522
-  children_rights_events.3.f: "그들의 비명은 공장을 가득 채웠고, 기계 위에는 마치 스스로 심장이 있는 양 피가 흥건했습니다. 일주일 만에 열 번째로, 한 남자가 작은 기계를 조작하려다 손가락을 베었습니다. 그 기계는 이전에 오직 아이의 가느다란 손으로만 다루어졌던 것입니다. 시위가 거세지고 있습니다.\"그들이 아니면 우리 차례다\"" # 10441707780289075498
-  children_rights_events.3.a: "이런 종류의 일은 아무도 해서는 안 됩니다." # 4838320545507989678
-  children_rights_events.3.b: "아이들이 돌아오지 않을 것이니, 그들은 그 사실에 익숙해져야 할 것입니다." # 5728977788921988138
   children_rights_event.3.c: "더 이상 부상자가 발생하지 않도록 새로운 규정을 추가하십시오." # 4025615172049506430
   bpm_school_supplies_modifier: "무상 학용품" # 5158168596683678840
-  workers_appeased_modifier: "노동자들을 달랬습니다" # 6402667045223143392
-  confronted_workers_modifier: "노동자들과 대치하다" # 7964162839509532777
   children_rights_events.4.t: "당신은 이것을 볼 수 없을 것입니다" # 10704597605194842191
   children_rights_events.4.d: "이것은 귀하께서 보지 않으셔야 할 내용입니다." # 5740365852337930353
   children_rights_events.4.f: "\"당신은 이 내용을 보아서는 안 됩니다.\"" # 16121508545455784876
   children_rights_events.4.a: "BPM 개발자들에게 보고해 주십시오." # 17133067515803269835
   children_rights_events.4.b: "" # 17241709254077376921
   children_rights_events.4.c: "달려라." # 12390504363655969727
-  ragged_schools_modifier: "누더기 학교" # 10415243328862011381
-  ragged_schools_devout: "종교적 빈민 학교" # 10542658707808712412
   ragged_schools_no_devout: "비종교적 빈민 학교" # 4457516000374747513
   bpm_unity_campaign: "통일 캠페인" # 9253081519595382202
   bpm_decolonization: "제국주의 해체" # 5388154808830992804
@@ -39,16 +22,10 @@
   bpm_20procent_of_industry_collectivized_tt: "@information! #white #b 20%#! #white 모든 건물이 5년간 공유화될 것입니다.!#" # 1937617110653773091
   bpm_fake_socialists: "혁명을 배신하다" # 12888830523891640163
   council_republic_law_events.2.d: "[ROOT.GetCountry.GetCapital.GetCityHubName]에서 노동자 집단이 고용주들에게 반기를 들고 공장을 장악했다는 소문이 돌고 있습니다. 전국적으로 노동자들이 동요하며 이들의 전례를 따르고 있습니다." # 18253676950221378086
-  council_republic_law_events.2.f: "\"그들은 하루 만에 들이닥쳐 사장을 대판 혼내주고는 평소처럼 일을 시작했소. 경찰이 개입하려 했으나, 도구를 든 수백 명의 분노한 공장 노동자들에게 무슨 말을 한들 듣겠소.\"" # 10142751757953805449
   council_republic_law_events.2.a: "그리고 우리가 어찌 백성의 뜻을 거스를 수 있겠습니까? 개입하지 마시오." # 11653639982731304771
   council_republic_law_events.2.b: "자본가들이 반란을 일으킬 구실을 주어서는 안 됩니다. 우리는 이것을 억눌러야 합니다." # 713397925161279113
   council_republic_law_events.2.c: "우리는 그들을 도와야 하오, 혁만세!" # 5170484945814137318
-  council_republic_law_events.3.t: "정당 본부 화재로 전소" # 3974243307893871864
   council_republic_law_events.3.d: "[SCOPE.sParty('bpm_attacked_leftwing_party').GetName]의 본부가 전소되었습니다. 이로 인한 조직적 손실로 그들의 진척이 심각하게 저해되었습니다." # 11144476489960756017
-  council_republic_law_events.3.f: "\"친애하는 동지 @censored!@censored!@censored!@censored!께, @censored!@censored!@censored!@censored! 거리에 위치한 우리 당 본부가 화재로 대부분의 건물이 파괴되어 더 이상 운영될 수 없음을 유감스럽게 알려드립니다. 우리는 @censored!@censored!@censored!@censored!의 사보타주를 의심하고 있으나 현재로서는 이를 증명할 수 없습니다.\"" # 1662872298238639228
-  council_republic_law_events.3.a: "끔찍한 소식이오." # 7685313355377333638
-  council_republic_law_events.3.b: "어딘가에 그들을 세울 수 있을 것이라 확신합니다." # 14002231567506283317
-  council_republic_law_events.3.c: "이는 반동주의자들에 대한 유효한 전쟁 명분입니다." # 9926791640815066755
   bpm_fear_of_popular_uprising: "민중 봉기에 대한 두려움" # 2886453064808592792
   bpm_citizen_organizers: "시민 조직가들" # 1206764296570007786
   bpm_assisting_professors: "조교 교수들" # 13641405783714026189
@@ -70,26 +47,12 @@
   healthcare_laws.4.b: "보건부에 자금을 더 지원하십시오." # 5066016858223511443
   bpm_unhealth_bureaucracy: "불건전한 관료제" # 2198786667473894367
   bpm_healthcare_rights: "보호받을 권리" # 14052079362878408398
-  country_institution_cost_institution_health_system_mult: "@bur![Nbsp][concept_bureaucracy] [GetInstitutionType('institution_health_system').GetName] 비용" # 6938385376533385239
-  country_institution_cost_institution_health_system_mult_desc: "[GetInstitutionType('institution_health_system').GetName]을 시민들에게 제공하는 데 드는 @bur![Nbsp][concept_bureaucracy] 비용의 증가 또는 감소" # 16390044824832849622
-  internal_security_events.2.t: "뜻밖의 발견" # 18266282802935651662
-  internal_security_events.2.d: "정부가 [SCOPE.sLaw('current_law_scope').GetName] 법안 통과를 준비하는 동안, 우리 요원들이 [SCOPE.sC('spy_country').GetAdjectiveNoFormatting] 첩자를 생포하여 이미 미약한 그들에 대한 신뢰를 더욱 해치고 있습니다." # 518163948554483940
-  internal_security_events.2.f: "\"우리의 모든 장군과 그 가족의 명단, 병영과 항구의 현황에 대한 보고서, 수입, 수출, 생산, 항구에 대한 예측, 모든 것입니다! 그들이 우리의 가장 아끼는 [SCOPE.GetRootScope.GetCountry.GetCustom('alcohol')] 목록까지 가져가지 않은 것이 놀라울 지경이오!\"" # 7474812092552477392
-  internal_security_events.2.a: "우리 인민들은 알아야 합니다!" # 1722110962197933150
-  internal_security_events.2.b: "이것은 매우 유용한 정보이니... 비공개로 유지되어야 합니다." # 7465439297939661553
   bpm_counterintelligence_modifier: "정보 활동 강화 노력" # 13016495142989573486
-  counterattack_modifier: "대(對)첩보 공격" # 16293989747768020042
-  privacy_concerns_modifier: "개인 정보 보호 우려" # 6449679488209802351
-  privacy_concerns_movement_modifier: "개인 정보 보호 우려" # 6449679488209802351
-  privacy_concerns_movement_bad_modifier: "개인 정보 보호 우려" # 6449679488209802351
-  privacy_concerns_ig_modifier: "개인 정보 보호 우려" # 6449679488209802351
   bpm_privacy_concerns_good_modifier: "숨길 것 없음" # 17627951934289957193
   violent_suppression_modifier: "탄압에 대한 격분" # 3600381080938574809
   blamed_police_modifier: "경찰을 탓하다" # 6267161337269065505
   bpm_violent_suppression_modifier: "폭력적 진압에 대한 규탄" # 8658266489547586433
   bpm_government_info_modifier: "개인 정보 보호됨" # 13976572254576018718
-  terrorist_attack_modifier: "공개 사과" # 9516217252292587819
-  purged_police_modifier: "경찰 숙청" # 1840848279329609666
   labor_rights.3.c: "아무도 자유로워야 할 사람들을 위해 돈을 지불하지 않을 것입니다." # 2510006580749144764
   bpm_government_buying_serfs: "농노 매입" # 2883552180236054679
   bpm_serfs_buying_serfs: "농노들이 농노를 사다니" # 4723078515211698705
@@ -109,23 +72,18 @@
   slavery_law_events.1.b: "[SCOPE.gsInterestGroup('slaver_ig_scope').GetName]은 참으로 위대한 정신들의 함양자입니다." # 17956555404944184814
   slavery_law_events.2.d: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName], [SCOPE.gsInterestGroup('slaver_ig_scope').GetName]의 지도자는 공개 토론에서 노예제를 옹호하는 데 [SCOPE.sCharacter('slaver_ig_leader_scope').GetHerHis] 관심을 표명했습니다. 하지만 이 이론적인 토론은 [SCOPE.sCharacter('slaver_ig_leader_scope').GetSheHe]가 바라는 만큼 잘 풀리지 않을 수도 있습니다." # 8523100378278889866
   slavery_law_events.2.a: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetHerHim]에게 공개 토론에 맞설 조언을." # 14949282116001916485
-  slavery_law_events.2.b: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName]은 공개 토론을 가질 수 있으며, 그 과정에서 [SCOPE.sCharacter('slaver_ig_leader_scope').GetHerHis]의 의견이 제시될 것입니다." # 10168085998998387839
   slavery_law_events.3.c: "그 서적을 금지하라." # 13678982859591241518
   bpm_banned_book: "서적 금지" # 618098247027616354
   slavery_law_events.4.a: "이는 [SCOPE.sCharacter('abolitionist_ig_leader_scope').GetFullName]의 인기에 도움이 될 것입니다." # 16068428401706168109
   slavery_law_events.4.b: "[SCOPE.gsInterestGroup('abolitionist_ig_scope').GetName]은 새로 발견된 관심의 혜택을 받을 것입니다." # 5292914386123360222
   bpm_life_among_the_lowly_ig: "노예제 폐지론자 출판업자" # 1068227603319523250
   slavery_law_events.5.d: "[SCOPE.sCharacter('abolitionist_ig_scope')]가 노예제 폐지의 장점에 대해 논쟁하는 일련의 토론을 계획할 것을 제안했습니다. 만약 [SCOPE.sCharacter('abolitionist_ig_scope').GetHerHis]의 논쟁이 잘 진행된다면, [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetName]와 노예제 폐지 운동이 번창할 것입니다." # 7590226371864976017
-  great_debates: "위대한 논쟁" # 15834650606270853182
   state_atheism.2.d: "@학자들! [SCOPE.sState('godless_state').GetName]에 위치한 [SCOPE.sBuilding('godless_uni').GetName]의 학자들은 현재의 [SCOPE.sLaw('current_law_scope').GetName] 법안을 강력하게 지지하고 있습니다. 그들은 반(反)종교적 사상을 장려하기 위한 수단으로 무신론자 학회(Society of the Godless)를 창설했습니다." # 14130139425903764847
   bpm_modifier_atheist_progressivism: "무신론적 진보주의" # 3974675526674634610
-  state_atheism.6.t: "황금의 면죄부" # 4431799253073232189
   state_atheism.6.d: "군부가 [SCOPE.sState('religion_seizures_state').GetName]에 있는 모든 [SCOPE.sPop('majority_religion').GetReligion.GetName] 예배당에 대한 몰수를 집행하기 시작했습니다. 모든 구조물, 예술품, 값싼 금 장식품들이 청산을 위해 집계되고 있습니다." # 14464603091153457850
   bpm_modifier_seizure_of_church_gold_minting: "교회 금화 재주조" # 5203842367627325133
   bpm_modifier_seizure_of_church_gold_army: "교회 재산 재분배" # 9420366681392533627
   bpm_death_and_taxes_mod: "죽음과 세금" # 14240494078909359400
-  religious_education_modifier: "종교 교육" # 2890836068330305293
-  miraculous_healing: "기적적인 치유" # 12163562743836214251
   building_group_bg_subsistence_agriculture_peasants_standard_of_living_add: "@peasants! 농민을 위한 [concept_sol]! 농민" # 13052470250910882814
   building_group_bg_subsistence_agriculture_peasants_standard_of_living_add_desc: "기존 재산 위에 추가적인 [concept_sol]이 더해집니다." # 4042250545032090685
   building_group_bg_ranching_laborers_standard_of_living_add: "테스트 1" # 13522937023142321190

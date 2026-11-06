@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   bpm_movement_splits.1.t: "자유주의의 대두" # 1730454155842280164
   bpm_movement_splits.1.d: "지식인과 부르주아 모두가 우리 국가에서 커져가는 자유주의 운동에 매료되었습니다. 이 운동은 입헌 통치와 재산권 보호를 촉구하는 개혁을 주장합니다. 이제 자유주의 사상가들이 조직화하여 우리 정부에 직접적인 압력을 가하기 시작했습니다." # 6417799855672956929
   bpm_movement_splits.1.f: "도덕은 모든 나라에서 법률과 정부의 산물이며, 아프리카적이거나 아시아적이거나 유럽적인 것이 아닙니다. 그것은 선하거나 악한 것입니다.\n—데니 디드로, 1774년" # 8466967628553567628
@@ -135,10 +134,6 @@
   bpm_yugoslav_dominican_movemement_faction_default_name: "도미니카 민족주의자 파벌" # 9313712112688788181
   bpm_pressure_above_threshold: "최소한 #variable 20%#! 압력." # 15528383876689146468
   bpm_support_activism_above: "적어도 #variable 30%#! @population!과 활동성 @activism!을 지지하시오." # 16571091407525244696
-  movement_kaikoku_name: "개국파" # 11273802850571446303
-  movement_kaikoku: "$movement_kaikoku_name$" # 14341509207034662121
-  ideology_eco_kaikoku_ha: "$movement_kaikoku_name$" # 14742964736571601537
-  ideology_eco_kaikoku_ha_desc: "이 운동은 국가를 대외 무역과 영향력에 개방해야 한다고 믿습니다." # 11583733684716342605
   movement_market_liberal_name: "자유방임주의 운동" # 16283334773014159472
   ideology_eco_market_liberal_mov: "자유방임주의 운동" # 16283334773014159472
   ideology_eco_market_liberal_mov_desc: "$ideology_eco_market_liberal_mov$" # 12893010024680391061

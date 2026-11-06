@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   movement_bpm_pro_slavery: "노예제 찬성 운동" # 3655174169328117340
   movement_bpm_pro_slavery_name: "$movement_pro_slavery$" # 11653516922025810999
   movement_bpm_anti_slavery: "노예제 폐지 운동" # 5738990902104749503
@@ -18,10 +17,6 @@
   movement_bpm_fascist_name: "$movement_fascist$" # 10176180208589870432
   movement_bpm_corporatist: "기업주의 운동" # 15165493927106257976
   movement_bpm_corporatist_name: "$movement_corporatist$" # 6879951369143288960
-  movement_liberal: "자유주의 운동" # 11385747781819377433
-  movement_liberal_name: "$movement_liberal$" # 8911614283686893930
-  movement_radical: "급진 운동" # 19406225173299267
-  movement_radical_name: "$movement_radical$" # 11678311447578568787
   movement_bpm_positivist: "실증주의 운동" # 1882806547723337733
   movement_bpm_positivist_name: "$movement_positivist$" # 4861887467389541938
   movement_bpm_land_reform: "농민 운동" # 16325471144422523987
@@ -38,4 +33,4 @@
   movement_reformist_socialist: "개혁 사회주의 운동" # 10497791945429853763
   movement_bpm_german_pan_national: "독일 민족 운동" # 17717733785780766175
   movement_bpm_german_pan_national_name: "$movement_bpm_german_pan_national$" # 4225359526195595302
-  POLITICAL_MOVEMENT_RADICALISM_TOOLTIP: "#header [PoliticalMovement.GetNameNoIcon]의 [concept_activism]#!\n일부 운동은 봉기를 위해 #v 10%#!의 지지가 필요하며, 다른 운동은 #v 15%#!가 필요합니다. 무정부주의자들은 대규모 자생적 봉기를 위해 #v 30%#!가 필요합니다. 사회주의 및 공산주의 운동은 각각 25와 50의 노동 의식이 필요합니다.\n[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetRadicalism, '(CFixedPoint)0.5'), 'ACTIVISM_RED_ICON', 'ACTIVISM_ICON')] [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ($POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL$)\n$TOOLTIP_DELIMITER$\n#title 이 $concept_activism_short$은(는) #b [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)]#! (#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetTargetRadicalism, '(CFixedPoint)1'), 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED', 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL')]#!#!)(으)로 변화할 것으로 예상됩니다:#! #indent_newline:3 \n[PoliticalMovement.GetTargetRadicalismDesc]" # 13042658415870021848
+  POLITICAL_MOVEMENT_RADICALISM_TOOLTIP: "#header [concept_activism] in the [PoliticalMovement.GetNameNoIcon]#!\nSome Movements require #v 10%#! support to Revolt, while others require #v 15%#!. The Anarchists need #v 30%#! for a mass spontaneous uprising.\n[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetRadicalism, '(CFixedPoint)0.5'), 'ACTIVISM_RED_ICON', 'ACTIVISM_ICON')] [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ($POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL$)\n$TOOLTIP_DELIMITER$\n#title This $concept_activism_short$ is predicted to drift towards #b [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)]#! (#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetTargetRadicalism, '(CFixedPoint)1'), 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED', 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL')]#!#!):#! #indent_newline:3 \n[PoliticalMovement.GetTargetRadicalismDesc]"

@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   party_independents: "독립파들" # 15557934457247961309
   party_sdp: "사민당" # 10921245983745023286
   party_bolsheviks: "러시아 사회민주노동당(볼셰비키)" # 13684431994473186332
@@ -55,7 +54,6 @@
   party_aus_democratic: "외과의사" # 4965569912750878327
   party_reactionary_aus: "[SCOPE.GetRootScope.GetCountry.GetCustom('aus_reactionary_party_name')]" # 8115286457216011728
   party_german_people: "독일 인민당" # 2493616084315140796
-  party_fatherland_front: "조국 전선" # 13688782757023945447
   party_aus_nazis: "디엔에스이에이피" # 6295787676924769265
   party_spdao: "SDAPÖ" # 17902214691898536007
   party_revsoc_aus: "[SCOPE.GetRootScope.GetCountry.GetCustom('aus_revsoc_party_name')]" # 2302393172972862396
@@ -168,12 +166,10 @@
   party_revsoc_fra: "[SCOPE.GetRootScope.GetCountry.GetCustom('FRA_revsoc_party_name')]" # 4622824134082130956
   party_le_mountain: "라 몽타뉴" # 1359565963544169555
   party_blanquist: "중앙 혁명 위원회" # 17147048379372569738
-  party_ftsf: "FTSF" # 12611430928840824887
   party_sfio_right: "SFIO (우파)" # 18327264987531662392
   party_sfio_left: "사회주의노동자당 (좌파)" # 16239246759809017233
   party_sfio: "SFIO" # 16436213566984644946
   party_posr: "POSR" # 12932116817538129860
-  party_pcf: "피씨에프" # 18130956875920713360
   party_liberal_ita: "[SCOPE.GetRootScope.GetCountry.GetCustom('ita_liberal_party_name')]" # 4905365918137468314
   party_ita_liberal_union: "자유 연합" # 1991345100623154854
   party_radical_ita: "[SCOPE.GetRootScope.GetCountry.GetCustom('ita_radical_party_name')]" # 4495520454066297193
@@ -204,7 +200,6 @@
   party_spa_prog_republican: "진보 공화당" # 18241028228151484976
   party_spa_radical: "급진 공화당" # 16951787368145287017
   party_revsoc_spa: "[SCOPE.GetRootScope.GetCountry.GetCustom('spa_revsoc_party_name')]" # 3196783753408566745
-  party_psoe: "스페인 사회노동당" # 18342757330076952992
   party_psoe_left: "PSOE (좌파)" # 1151253823179825045
   party_pce: "PCE" # 10967093990656366572
   party_cnt: "CNT/FAI" # 11854306101465780087
@@ -252,8 +247,6 @@
   party_chi_progressive: "진보당" # 436862464816069723
   party_chi_right_kuomintang: "국민당 (우파)" # 5690275158473168109
   party_radical_chi: "[SCOPE.GetRootScope.GetCountry.GetCustom('chi_radical_party_name')]" # 16878183742955252109
-  party_revive_china_society: "중국 부흥회" # 4784824533433817889
-  party_tongmenghui: "동맹회" # 8459453629692968027
   party_kuomintang: "국민당" # 2172170873835292416
   party_chi_left_kuomintang: "국민당 (좌파)" # 15218271447537447095
   party_socialist_chi: "CDSP" # 4200678051230313797

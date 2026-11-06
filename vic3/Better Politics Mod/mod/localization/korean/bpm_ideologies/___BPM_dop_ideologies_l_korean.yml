@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   ideology_dop_party_socialist: "사회주의 정당" # 17705717531384586633
   ideology_dop_party_socialist_desc: "#lore 이 집단은 사회주의 정당을 프롤레타리아의 주요 정치 조직으로 간주합니다. 그들은 혁명적 상황에서 당에 권력을 집중시키기로 결정할 수 있습니다.#" # 1633320776785697088
   ideology_dop_anarchist: "아나키스트" # 5777696145623761088
@@ -31,7 +30,9 @@
   ideology_dop_syndical_unionist: "제도적 생디칼리스트" # 8145542995665195755
   ideology_dop_syndical_unionist_desc: "#lore 이제 생디칼리즘이 이 땅의 법이 되었으니, 노동조합들은 이념적 열광에서 물러나 이제 주로 현상 유지를 꾀하고 있습니다. #!" # 10553605006365078778
   ideology_dop_state_unionist: "연방주의자" # 8515308988718226927
-  ideology_dop_state_unionist_desc: "#lore 이제 국가 관료제가 노동조합의 역할을 대신하게 되었으므로, 이 집단의 현존하는 목적은 구성원들이 국가의 의지에 협력하도록 보장하는 것입니다. #!" # 17882923938369153613
+  ideology_dop_state_unionist_desc: "#lore This group believes conflict between labor and capital can be resolved via state mediated collaboration. #!"
+  ideology_dop_anti_unionist: "Anti-Unionist"
+  ideology_dop_anti_unionist_desc: "#lore This group is threatened by organized labor and seeks to use the state to suppress it. #!"
   ideology_dop_syndicalist: "생디칼리스트" # 12287891860791190895
   ideology_dop_syndicalist_desc: "#lore 노동조합 내에서조차 이념적으로 덜 치우친 노조들 사이에서 생디칼리즘 이론이 받아들여졌으며, 이들은 이제 생디칼리즘만이 고용주들의 쇠사슬을 끊을 수 있는 유일한 길이라고 여깁니다. #!" # 6060939125505335633
   ideology_dop_anarcho_syndicalist: "무정부주의적 생디칼리스트" # 7535324978704659639

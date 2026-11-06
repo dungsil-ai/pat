@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   bpm_repeatable_law_cooldown: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')]는 현재 #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_cooldown')]#!년의 재사용 대기시간 중에 있습니다." # 2245393814906180641
   law_repeatable_none: "반복 선택 불가" # 11764044511079574747
   law_repeatable_none_desc: "현재 고려 중인 [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] 법안은 없습니다." # 10807650444212950840
@@ -109,7 +108,7 @@
   bpm_decorative_will_be_removed_on_aggressive_war_desc: "공격자로 전쟁을 시작하거나 참여하면 이 효과가 제거됩니다. 여기에는 내전, 분리 독립 또는 원주민 봉기는 포함되지 않습니다." # 612734575736363902
   law_repeatable_military_war_propaganda: "전쟁 선전" # 10700023155347512134
   law_repeatable_military_war_propaganda_desc: "우리 국민들의 전쟁에 대한 인식을 개선하기 위해 애국적 선전을 배포하고 장려하십시오." # 9874726557660816488
-  bpm_law_effect_tt_repeatable_war_propaganda_result: "우리의 모든 [Concept('concept_war', '전쟁')]에 대한 [Concept('concept_war_exhaustion', '전쟁 피로도')]가 #v 25#만큼 감소할 것입니다!" # 11927190172303236707
+  bpm_law_effect_tt_repeatable_war_propaganda_result: "Our [concept_war_support] in all [Concept('concept_war', '$concept_wars$')] will be increased by #v 25#!"
   lawgroup_repeatable_culture: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - 문화" # 8506516788122188030
   lawgroup_repeatable_culture_desc: "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')]는 우리나라 내 다양한 문화적 사상의 장려를 다루고 있습니다." # 11116387689837363286
   bpm_law_effect_tt_culture_generic_result: "이 [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')]은 해당 [Concept('concept_law', '법률')]에 대한 입장을 가진 모든 [Concept('concept_bpm_ig_is_ideological', '이념적인')] [Concept('concept_interest_group', '이해집단')]을 대상으로 합니다. 이는 해당 법률에 대한 찬반 여부에 따라 이들 집단의 [Concept('concept_interest_group_attraction', '매력도')]와 [Concept('concept_approval', '지지율')]에 변화를 가져올 것입니다. 이러한 효과는 해당 법률을 강력히 지지하거나 강력히 반대하는 [Concept('concept_interest_group', '이해집단')]에게 더 강하게 나타납니다." # 12829465984324507252

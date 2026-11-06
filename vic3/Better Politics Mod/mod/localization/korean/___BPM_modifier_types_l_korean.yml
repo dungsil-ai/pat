@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   state_farmers_education_access_add: "[GetPopType('farmers').GetName]의 교육 접근성" # 8254554595838223103
   state_farmers_education_access_add_desc: "[GetPopType('farmers').GetName]에 대한 교육 접근성의 보너스 또는 페널티" # 12458569043008407035
   state_bureaucrats_education_access_add: "[GetPopType('bureaucrats').GetName]의 교육 접근성" # 5350788325762872063
@@ -18,16 +17,8 @@
   state_clergymen_education_access_add_desc: "[GetPopType('clergymen').GetName]에 대한 교육 접근성 보너스 또는 페널티" # 11300340853433458687
   state_academics_education_access_add: "[GetPopType('academics').GetName]을 위한 교육 접근성" # 8441465140840528392
   state_academics_education_access_add_desc: "[GetPopType('academics').GetName]의 교육 접근성에 대한 보너스 또는 페널티" # 12797240028122474578
-  building_group_bg_manufacturing_allowed_collectivization_add: "최소 노동자 소유 $bg_manufacturing$ $concept_building$ 단계" # 13803787592688194138
-  building_group_bg_manufacturing_allowed_collectivization_add_desc: "$building_group_bg_manufacturing_allowed_collectivization_add$" # 488130472856564007
-  building_group_bg_mining_allowed_collectivization_add: "최소 노동자 소유 $bg_mining$ $concept_building$ 단계" # 15536980928504661174
-  building_group_bg_mining_allowed_collectivization_add_desc: "$building_group_bg_mining_allowed_collectivization_add$" # 14121968402114459950
   building_group_bg_logging_allowed_collectivization_add: "최소 노동자 소유 $bg_logging$ $concept_building$ 단계" # 9127124808806798881
   building_group_bg_logging_allowed_collectivization_add_desc: "$building_group_bg_logging_allowed_collectivization_add$" # 9759213113780992017
-  building_group_bg_light_industry_allowed_collectivization_add: "최소 노동자 소유 $bg_light_industry$ $concept_building$ 단계" # 8639025682161697056
-  building_group_bg_light_industry_allowed_collectivization_add_desc: "$building_group_bg_light_industry_allowed_collectivization_add$" # 5108519574290405455
-  building_group_bg_heavy_industry_allowed_collectivization_add: "최소 노동자 소유 $bg_heavy_industry$ $concept_building$ 단계" # 8857320252602351253
-  building_group_bg_heavy_industry_allowed_collectivization_add_desc: "$building_group_bg_heavy_industry_allowed_collectivization_add$" # 12991812275725191690
   building_group_bg_fishing_allowed_collectivization_add: "최소 노동자 소유 $bg_fishing$ $concept_building$ 단계" # 4459618795880453226
   building_group_bg_fishing_allowed_collectivization_add_desc: "$building_group_bg_fishing_allowed_collectivization_add$" # 12456122288156526299
   building_group_bg_oil_extraction_allowed_collectivization_add: "최소 노동자 소유 $bg_oil_extraction$ $concept_building$ 단계" # 3601634702717803553

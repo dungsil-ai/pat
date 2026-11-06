@@ -1,11 +1,10 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   bpm_misc.1.t: "#N 호환되지 않는 저장 파일 경고#!" # 867378145710196673
   bpm_misc.1.d: "#N 경고#!: 이 저장 파일은 현재(2.2) 버전의 모드와 호환되지 않습니다. 이 저장 파일로 계속 플레이하시겠다면, #gold 저희 스팀 창작마당 페이지를 방문하여 2.1 버전을 다운로드할 수 있는 링크를 확인하십시오#!. 그렇지 않다면, 새로운 게임을 시작해 주십시오!" # 14656197061214014372
   bpm_misc.1.f: "구시대는 가라." # 1636761892873244406
   bpm_misc.1.a: "신 것을 받아들이다." # 11349905046838540207
   bpm_je_group_global: "세계적 사건들" # 4953533108359377048
-  bpm_je_group_interest_groups: "주요 이익집단" # 4880766897937470037
+  bpm_je_group_christian_democracy: "Christian Democracy"
   bpm_je_group_party_laws: "정당법" # 12654549556380937179
   bpm_provisional_government_events.1.t: "새로운 헌법인가?" # 4962475080180213722
   bpm_provisional_government_events.1.d: "[ROOT.GetCountry.GetName]의 새 지도부가 일련의 새로운 법률을 성문화하기 위해 회합을 가졌습니다." # 6877082885924059305

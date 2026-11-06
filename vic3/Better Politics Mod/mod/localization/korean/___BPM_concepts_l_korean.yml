@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: aff8c66
   concept_bpm_party_ban: "정당 금지" # 17233978227346913491
   concept_bpm_party_ban_desc: "특정 [Concept('concept_law', '법률')]은 다양한 [Concept('concept_party', '정당')]을 금지시킬 수 있습니다. 금지되면, 어떠한 [Concept('concept_interest_group','$concept_interest_groups$')]도 해당 [Concept('concept_party', '정당')]에 가입할 수 없습니다. 귀국의 언론의 자유 [Concept('concept_law', '법률')]가 정확히 어떤 [Concept('concept_party', '정당')]이 정당 금지로 인해 추방될지를 결정합니다." # 10753627206179819469
   concept_bpm_bannable_parties: "모든 정당 금지" # 15959478943630487098
@@ -215,6 +214,8 @@
   concept_extremist_desc: "우리 [concept_country]의 현 체제에 반대하는 [Concept('concept_interest_group', '이해집단')]." # 9742689226108052589
   concept_super_extremist: "극단주의자" # 6445235322895058684
   concept_super_extremist_desc: "우리 [concept_country]의 통념적인 정치의 범위를 훨씬 벗어나 활동하는 [Concept('concept_interest_group', '이해집단')]." # 5942739290074083319
+  concept_bpm_establishment: "Establishment"
+  concept_bpm_establishment_desc: "An [concept_interest_group] which is neither [concept_extremist] or [concept_super_extremist]."
   concept_bpm_law_support: "법률 지원" # 18122997734337770236
   concept_bpm_law_support_desc: "입법부에서 법률이 제정되는 것에 대한 지지 수준입니다. 이는 특정 [Concept('concept_interest_group', '이해집단')]이 법률을 지지할지 반대할지를 결정합니다." # 9279778509773525402
   concept_bpm_cabinet: "내각" # 5938625136258340261
