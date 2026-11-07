@@ -8,6 +8,6 @@
   country_institution_size_change_speed_institution_border_control_mult: "[GetInstitutionType('institution_border_control').GetName]의 기관 규모 변경 속도" # 2642129908409125775
   country_institution_size_change_speed_institution_border_control_mult_desc: "[GetInstitutionType('institution_border_control').GetName]의 규모가 얼마나 빨리 변하는지요" # 8844834008507011664
   state_political_strength_from_literacy_mult: "[concept_political_strength]은 [concept_literacy]로부터" # 13492672729420158200
-  state_political_strength_from_literacy_mult_desc: "[concept_literacy]로 인한 [Concept('concept_pop','$concept_pops$')]의 [concept_political_strength] 증감분" # 17694884455372639739
+  state_political_strength_from_literacy_mult_desc: "An increase or decrease to the amount of [concept_political_strength] of [Concept('concept_pop','$concept_pops|q$')] from [concept_literacy]"
   POL_STR_FROM_LITERACY: "[concept_literacy]에서: #variable $VAL|+=D$#!\n$TAB$문맹률 #tooltippable #tooltip:[POP.GetTooltipTag],LITERACY_TOOLTIP #v $LITERACY|0$#!#!#!: 정치 활동 인구 당 #bold $VALPERPOP|+=$#!" # 3110797694844683407
   POL_STR_FROM_LITERACY_AVERAGE: "[concept_literacy]에서: #variable $VAL|+=K$#!\n$TAB$평균 문해율 #variable $LITERACY|1$#!: 정치 활동 인구당 #bold $VALPERPOP|+=2$#!" # 9483393698815118215
