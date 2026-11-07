@@ -9,7 +9,6 @@
   batteries: "축전지" # 7362068705159573350
   electroniccomponents: "전자 부품" # 3932544411688289424
   processors: "프로세서" # 1885287472645480584
-  copper: "구리" # 11027802020195535945
   commonores: "일반 광석" # 9081330906484913240
   advancedores: "고급 광석" # 10067223212668129959
   homeappliances: "가전제품" # 5322738816466848183
@@ -100,8 +99,6 @@
   goods_input_electroniccomponents_add_desc: "건물에서 소비되는 @electroniccomponents! 전자 부품의 양" # 3384994248815078320
   goods_input_processors_add: "@processors! 프로세서 투입량" # 16411711618617499633
   goods_input_processors_add_desc: "건물에서 소비되는 @processors! 프로세서의 양" # 14899103024115035791
-  goods_input_copper_add: "@copper! 구리 투입량" # 14904760634630751258
-  goods_input_copper_add_desc: "건물에서 소비되는 @copper! 구리의 양" # 5129678066705809786
   goods_input_commonores_add: "@commonores! 일반 광석 투입량" # 6136431850721884127
   goods_input_commonores_add_desc: "건물에서 소비되는 @commonores! 일반 광석의 양" # 10611434332560480392
   goods_input_advancedores_add: "@advancedores! 고급 광석 투입량" # 13693251488290988086
@@ -165,8 +162,6 @@
   goods_output_electroniccomponents_add: "@electroniccomponents! 전자 부품 생산량" # 1895459522569896886
   goods_output_processors_add: "@processors! 프로세서 생산량" # 6345543369972806584
   goods_output_processors_add_desc: "건물에서 생산되는 @processors! 프로세서의 양" # 11958089689027670919
-  goods_output_copper_add: "@copper! 구리 생산량" # 11609303350554923910
-  goods_output_copper_add_desc: "건물에서 생산되는 @copper! 구리의 양" # 2259108146807109872
   goods_output_commonores_add: "@commonores! 일반 광석 생산량" # 1597084709769612112
   goods_output_commonores_add_desc: "건물에서 생산되는 @commonores! 일반 광석의 양" # 543005146778694973
   goods_output_advancedores_add: "@advancedores! 고급 광석 생산량" # 5050924357462461459

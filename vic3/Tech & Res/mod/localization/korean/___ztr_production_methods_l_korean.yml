@@ -96,16 +96,6 @@
   pm_dynamite_building_bauxite_mine: "다이너마이트" # 2457940046546015847
   pmg_steam_automation_building_bauxite_mine: "증기 자동화" # 7549265719736514720
   pmg_train_automation_building_bauxite_mine: "열차 자동화" # 5563784132978981735
-  pmg_mining_equipment_building_copper_mine: "채광 장비" # 17216167847494956779
-  pm_picks_and_shovels_building_copper_mine: "곡괭이와 삽" # 5178375057128475497
-  pm_atmospheric_engine_pump_building_copper_mine: "대기압 엔진 펌프" # 12648635104886229438
-  pm_condensing_engine_pump_building_copper_mine: "응축 기관 펌프" # 5170152777612316740
-  pm_diesel_pump_building_copper_mine: "디젤 펌프" # 15103057017428559217
-  pmg_explosives_building_copper_mine: "폭약" # 14130049398143983704
-  pm_nitroglycerin_building_copper_mine: "니트로글리세린" # 17545801121319106144
-  pm_dynamite_building_copper_mine: "다이너마이트" # 2457940046546015847
-  pmg_steam_automation_building_copper_mine: "증기 자동화" # 7549265719736514720
-  pmg_train_automation_building_copper_mine: "열차 자동화" # 5563784132978981735
   pmg_mining_equipment_building_commonores_mine: "채광 장비" # 17216167847494956779
   pm_picks_and_shovels_building_commonores_mine: "곡괭이와 삽" # 5178375057128475497
   pm_atmospheric_engine_pump_building_commonores_mine: "대기압 엔진 펌프" # 12648635104886229438

@@ -143,7 +143,6 @@
   research_center_site: "연구 센터 건설 현장" # 14096389837688265751
   research_center_survey: "연구 센터 조사" # 4344577396728759266
   research_center_modifier: "국가 연구 계획" # 8237024239576953821
-  ztr_modern_universities_linkage: "현대 대학 연계" # 4882043879282961666
   rise_of_extremism_modifier: "극단주의의 대두" # 13422406564079102474
   rise_of_left_modifier: "좌파 합의의 부상" # 12443761974207473244
   ai_strategy_rules_based_security: "UN 안정성 우선순위" # 2239059196275798391
@@ -342,7 +341,6 @@
   combat_unit_type_modern_tier_marines_desc: "신속한 상륙과 지속적인 해안 작전을 수행하도록 장비된 전문 상륙 부대." # 4164789653898445236
   combat_unit_type_advanced_tier_marines: "고급 해병대" # 5903958351361375216
   combat_unit_type_advanced_tier_marines_desc: "복잡한 해상 침공을 수행하기 위해 첨단 장비를 사용하는 정예 상륙 부대." # 8401042120679570025
-  extra: "호외" # 1397922501206358188
   ztr_swiss_neutral_financial_hub: "중립적 금융 허브" # 7435698664851519347
   ztr_swiss_neutral_financial_hub_desc: "스위스의 중립성과 연방 다원주의, 그리고 안전한 회담 장소라는 명성은 유럽 전역의 자본과 채권자, 상업적 신뢰를 끌어모으고 있습니다." # 9479597905821198894
   country_ship_type_modern_destroyer_construction_efficiency_add: "$ship_type_modern_destroyer$ 건조 효율" # 9008556902045446558
@@ -362,7 +360,6 @@
   ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
   ship_battle_against_ship_type_nuclear_carrier_hull_damage_mult: "$ship_type_nuclear_carrier$ $ship_hull_damage_mult$" # 5135717934562003711
   ship_battle_against_ship_type_nuclear_submarine_hull_damage_mult: "$ship_type_nuclear_submarine$ $ship_hull_damage_mult$" # 9742212741387262396
-  ztr_research_center_progress_modifier: "연구 센터 프로그램" # 765628099924757710
   ship_mod_slot_electronics_button_0: "기초" # 11884452299886114628
   ship_mod_slot_electronics_button_1: "고급" # 835417650835742317
   ship_mod_slot_electronics_button_2: "통합" # 17865783917993573886
@@ -399,3 +396,51 @@
   ztr_merge_power_bloc_diplomacy_effects_desc: "Merges our power bloc with [TreatyDraft.GetRightCountry.GetName]'s power bloc, creating a stronger alliance based on a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
   ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "We have proposed to [TARGET_COUNTRY.GetName] to merge our power blocs, as both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]. This unification would strengthen our alliance and enhance our collective security."
   ztr_similar_type_of_government_tt: "Has a similar [Concept('concept_ideology_index','$concept_ideology_index$')]"
+  ztr_research_agreement: "Research Agreement"
+  ztr_research_agreement_desc: ""
+  ztr_research_agreement_effects_desc: "• Each [concept_country] gains [Concept('concept_research_capacity','$concept_research_capacity$')]: #v 2#! points from an equal or larger partner, #v 2 / (1 + rank gap)#! from a smaller one, times #v 25%#! at neutral [concept_relations] up to #v 100%#! at #v 100#!\n• At most #v 6#! points from all agreements, #v 8#! with [GetTechnology('funded_research_projects').GetName]\n• Agreements in force: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members\n• The smaller partner develops a friendly [concept_political_lobby] toward the larger one\n• Requires a #v National Research Center#! in both countries\n• Both countries pay the [concept_influence] cost"
+  ztr_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetNameNoFormatting] and [SECOND_COUNTRY.GetNameNoFormatting] will share their scientific research"
+  ztr_research_agreement_research_center_tt: "Both countries operate a #v National Research Center#!"
+  ztr_research_agreement_slots_tt: "We have room for another $ztr_research_agreement$: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members"
+  ztr_research_agreement_other_slots_tt: "The other country has room for another $ztr_research_agreement$"
+  ztr_research_agreement_declined_tt: "No $ztr_research_agreement$ between the two countries was declined in the last #v 2#! years"
+  ztr_research_agreement_already_signed_tt: "The two countries do not already have a $ztr_research_agreement$"
+  ZTR_ACCEPTANCE_RESEARCH_CAPACITY: "from the [Concept('concept_research_capacity','$concept_research_capacity$')] we would gain"
+  ZTR_ACCEPTANCE_SCIENTIFIC_LEADERSHIP: "from scientific leadership over a smaller partner"
+  ZTR_ACCEPTANCE_SAME_POLE: "from sharing the same [Concept('concept_political_pole','$concept_political_pole$')]"
+  ZTR_ACCEPTANCE_OPPOSITE_POLE: "from belonging to an opposite [Concept('concept_political_pole','$concept_political_pole$')]"
+  ZTR_ACCEPTANCE_RIVALRY: "from rivalry or embargo between us"
+  ZTR_ACCEPTANCE_ALLIED: "from being allies"
+  ZTR_ACCEPTANCE_INFLUENCE: "from lacking the [concept_influence] to pay for it"
+  catalyst_ztr_research_agreement_signed: "$ztr_research_agreement$ Signed"
+  catalyst_ztr_research_agreement_signed_desc: "[COUNTRY.GetName] entering into a $ztr_research_agreement$ with [TARGET_COUNTRY.GetName]"
+  appeasement_ztr_research_agreement_signed: "Signed a $ztr_research_agreement$"
+  appeasement_ztr_research_agreement_ended: "Ended a $ztr_research_agreement$"
+  ztr_research_center_independent_modifier: "Independent Research"
+  ztr_research_center_independent_modifier_desc: "Our Research Center sets its own scientific agenda."
+  ztr_research_center_absorption_modifier: "Technology Absorption"
+  ztr_research_center_absorption_modifier_desc: "Our Research Center studies and adapts the science of more advanced nations."
+  ztr_propose_research_agreement: "Propose a $ztr_research_agreement$"
+  ztr_propose_research_agreement_name: "$ztr_research_agreement$"
+  ztr_propose_research_agreement_action_name: "A proposal for a $ztr_research_agreement$"
+  ztr_propose_research_agreement_action_propose_name: "Propose a $ztr_research_agreement$"
+  ztr_propose_research_agreement_proposal_notification_name: "$ztr_research_agreement$ proposed"
+  ztr_propose_research_agreement_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] proposes a $ztr_research_agreement$ to share their scientific research with us."
+  ztr_propose_research_agreement_proposal_notification_effects_desc: "$ztr_propose_research_agreement_desc$"
+  ztr_propose_research_agreement_proposal_accepted_name: "$ztr_research_agreement$ accepted"
+  ztr_propose_research_agreement_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our $ztr_research_agreement$."
+  ztr_propose_research_agreement_proposal_declined_name: "$ztr_research_agreement$ declined"
+  ztr_propose_research_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] declined our $ztr_research_agreement$."
+  ztr_propose_research_agreement_proposal_third_party_accepted_name: "$ztr_propose_research_agreement_proposal_accepted_name$" # 7135636480910475581
+  ztr_propose_research_agreement_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] accepted the $ztr_research_agreement$ proposed by [INITIATOR_COUNTRY.GetName]."
+  ztr_propose_research_agreement_proposal_third_party_declined_name: "$ztr_propose_research_agreement_proposal_declined_name$" # 9205046750676356664
+  ztr_propose_research_agreement_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] declined the $ztr_research_agreement$ proposed by [INITIATOR_COUNTRY.GetName]."
+  ztr_propose_research_agreement_can_create_tt: "The $ztr_research_agreement$ treaty can be signed"
+  ztr_propose_research_agreement_accept_tt: "A treaty with a $ztr_research_agreement$, binding for #v 5#! years, enters into force"
+  ztr_propose_research_agreement_decline_tt: "[concept_relations] #r -10#!, and no new $ztr_research_agreement$ between the two countries for #v 2#! years"
+  tactical_weapons_desc: "Guided missiles and rocket artillery that strike enemy positions far beyond the front line."
+  nuclear_weapons_desc: "Nuclear artillery and missiles that can obliterate entire enemy formations, at a terrible cost."
+  electronic_support_desc: "Electronic warfare systems that jam, deceive and track enemy communications and radars."
+  remote_support_desc: "Unmanned aerial vehicles that watch and strike the enemy without risking a pilot."
+  aerospace_surveillance: "Aerospace"
+  aerospace_surveillance_desc: "AWACS aircraft and satellites that watch the battlefield from above and coordinate your operations."

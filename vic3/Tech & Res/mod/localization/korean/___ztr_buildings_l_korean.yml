@@ -15,8 +15,6 @@
   building_water_plant_lens_option: "$building_water_plant$ 확장" # 9574639556927718811
   building_alloys_plant: "합금 공장" # 7370339954732562876
   building_alloys_plant_lens_option: "합금 주조소 확장" # 9924305190926474383
-  building_copper_mine: "구리 광산" # 7680501257094049745
-  building_copper_mine_lens_option: "$building_copper_mine$ 확장" # 561328873678725507
   building_advancedores_mine: "고급 광석 광산" # 15999781728225908685
   building_advancedores_mine_lens_option: "$building_advancedores_mine$ 확장" # 11018965469303402503
   building_commonores_mine: "일반 광석 광산" # 15254391591955434291
@@ -93,8 +91,6 @@
   building_uranium_mine_throughput_add_desc: "우라늄 광산의 [concept_throughput]을 높입니다." # 9525729843707685834
   building_bauxite_mine_throughput_add: "보크사이트 광산 [concept_throughput]" # 5774862245958036789
   building_bauxite_mine_throughput_add_desc: "보크사이트 광산의 [concept_throughput]을 높입니다." # 17919191970025159319
-  building_copper_mine_throughput_add: "구리 광산 [concept_throughput]" # 15101866123574032325
-  building_copper_mine_throughput_add_desc: "구리 광산의 [concept_throughput]를 증가시킵니다." # 2576532110739127506
   building_commonores_mine_throughput_add: "일반 광물 광산 [concept_throughput]" # 847515682062412372
   building_commonores_mine_throughput_add_desc: "보통 광석 광산의 [concept_throughput]을(를) 증가시킵니다." # 9633440174913220384
   building_advancedores_mine_throughput_add: "고급 광석 광산 [concept_throughput]" # 2222650394525244066

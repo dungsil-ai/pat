@@ -24,7 +24,6 @@
   pm_telephones: "촛대형 전화기" # 13351277449905609951
   merchant_marine: "상선대" # 159769245574833208
   pm_tank_production: "I Generation Tanks"
-  TOOLTIP_COUNTRY_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$\n$ztr_demography_vital_rates$"
   aeroplanes: "Warplanes"
   automobiles: "Vehicles"
   goods_input_aeroplanes_add: "@aeroplanes! Warplanes input"
@@ -43,3 +42,4 @@
   pm_no_tank_production: "No Tanks"
   pmg_aeroplanes: "Warplanes"
   pmg_automobile_production: "Vehicles"
+  TOOLTIP_COUNTRY_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$$ztr_demography_vital_rates$"
