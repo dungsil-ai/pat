@@ -15,7 +15,6 @@
   historical_population_of_france_1: "19세기 정체" # 6429505727594116601
   historical_population_of_france_2: "19세기 정체 해소" # 3049902143600546177
   population_of_brazil_end_of_slavery: "파벨라 붐" # 13336014164650035565
-  population_of_brazil_end_of_slavery_player: "파벨라 붐" # 13336014164650035565
   population_of_country_modernizing: "인구 폭발" # 2573071743070545074
   japan_meiji_modernization: "메이지 근대화" # 5235724425977086637
   japan_meiji_modernization_player: "메이지 근대화" # 5235724425977086637
@@ -48,19 +47,8 @@
   population_of_brazil_during_slavery: "독립 이후 노예제" # 15572915988515035870
   population_of_brazil_during_slavery_player: "독립 이후 노예제" # 15572915988515035870
   jewel_in_the_crown_modifier: "아시아의 보석" # 10148807465016620676
-  colonial_agricultural_shift_player: "식민지 농업 전환" # 15672124791499522617
-  colonial_agricultural_shift: "식민지 농업 전환" # 15672124791499522617
   ai_strategy_un_stability: "유엔 안정 전략" # 11677206720841615480
   ai_strategy_un_stability_desc: "[COUNTRY.GetName]은 유엔의 틀 내에서 안정을 유지하고, 분쟁에 대한 평화적 해결을 장려하며, 더 큰 전쟁으로의 확대를 방지하고자 합니다." # 16483505944766779115
-  demographic_stage_0: "산업화 이전 인구 단계" # 734941474734899417
-  demographic_stage_1: "초기 산업 인구 단계" # 758751363949588220
-  demographic_stage_2: "산업화 중기 인구 단계" # 7109152129561838613
-  demographic_stage_3: "후기 산업 인구 단계" # 10521689665432702228
-  demographic_stage_4: "초기 탈산업 인구학적 단계" # 15200345505170088993
-  demographic_stage_5: "탈산업화 중기 인구 단계" # 17427067898389756028
-  demographic_stage_6: "후기 탈산업 인구 단계" # 14587312571643805995
-  demographic_stage_7: "정체된 인구 단계" # 18289595806638711805
-  demographic_stage_8: "인구 감소 단계" # 14946610877081019609
   combat_unit_type_self_propelled_artillery: "자주포" # 15308249461666024741
   combat_unit_type_self_propelled_artillery_desc: "이동식 받침대에 장착된 대포로, 더 큰 유연성과 신속한 배치가 가능합니다." # 2293583417249847503
   combat_unit_type_rocket_artillery: "로켓 포병" # 15081891605769264607
@@ -444,3 +432,12 @@
   remote_support_desc: "Unmanned aerial vehicles that watch and strike the enemy without risking a pilot."
   aerospace_surveillance: "Aerospace"
   aerospace_surveillance_desc: "AWACS aircraft and satellites that watch the battlefield from above and coordinate your operations."
+  demographic_stage_1: "Pre-Industrial Demographic Stage"
+  demographic_stage_2: "Early Industrial Demographic Stage"
+  demographic_stage_3: "Mid Industrial Demographic Stage"
+  demographic_stage_4: "Late Industrial Demographic Stage"
+  demographic_stage_5: "Early Post-Industrial Demographic Stage"
+  demographic_stage_6: "Mid Post-Industrial Demographic Stage"
+  demographic_stage_7: "Late Post-Industrial Demographic Stage"
+  demographic_stage_8: "Stagnant Demographic Stage"
+  demographic_stage_9: "Declining Demographic Stage"

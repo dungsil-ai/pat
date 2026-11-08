@@ -13,7 +13,7 @@
   pm_automation_closed_loop_system: "폐쇄 루프 시스템" # 14008626982756386476
   pmg_type_building_power_plant: "자동화" # 18411738171978629847
   pm_automation_HFO_fuel: "중연료" # 7315218838118560079
-  pm_gas-fired_plant: "가스 화력 발전소" # 8158444127086869324
+  pm_gas-fired_plant: "Gas-Fired Plant"
   pmg_base_building_spaceport: "우주항" # 1105842104412328333
   pm_orbital_launch_system: "궤도 발사" # 18075257614568584245
   pm_no_telephones: "전화 없음" # 3890605575379714200
@@ -733,15 +733,15 @@
   pm_reservoir_dams_3: "저수지 댐" # 3943608960582282335
   pm_advanced_turbine_generators_3: "고급 터빈 발전기" # 9030685236816246654
   pm_early_power_plant_2: "초기 발전소" # 6380192581025988561
-  pm_coal-fired_plant_2: "석탄 화력 발전소" # 5425611460457290378
-  pm_oil-fired_plant_2: "석유 화력 발전소" # 16013754538677171808
-  pm_gas-fired_plant_2: "가스 화력 발전소" # 8158444127086869324
-  pm_nuclear-fission_plant_2: "핵분열 발전소" # 7432757473815202239
+  pm_coal-fired_plant_2: "Coal-Fired Plant"
+  pm_oil-fired_plant_2: "Oil-Fired Plant"
+  pm_gas-fired_plant_2: "Gas-Fired Plant"
+  pm_nuclear-fission_plant_2: "Nuclear Fission Plant"
   pm_early_power_plant_3: "초기 발전소" # 6380192581025988561
-  pm_coal-fired_plant_3: "석탄 화력 발전소" # 5425611460457290378
-  pm_oil-fired_plant_3: "석유 화력 발전소" # 16013754538677171808
-  pm_gas-fired_plant_3: "가스 화력 발전소" # 8158444127086869324
-  pm_nuclear-fission_plant_3: "핵분열 발전소" # 7432757473815202239
+  pm_coal-fired_plant_3: "Coal-Fired Plant"
+  pm_oil-fired_plant_3: "Oil-Fired Plant"
+  pm_gas-fired_plant_3: "Gas-Fired Plant"
+  pm_nuclear-fission_plant_3: "Nuclear Fission Plant"
   pm_geothermal_turbine_2: "지열 터빈" # 4854560334655354025
   pm_geothermal_turbine_3: "지열 터빈" # 4854560334655354025
   pmg_carbon_capture_building_oil_rig: "탄소 포집" # 361469759085402873
