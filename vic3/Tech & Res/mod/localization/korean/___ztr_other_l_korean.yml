@@ -185,7 +185,6 @@
   ztr_icc_member_modifier: "ICC 관할권" # 18181978016109285627
   ztr_icc_member_modifier_desc: "국제형사재판소 체제는 회원국들에게 어느 정도의 법적 및 외교적 제약을 부과합니다." # 15964460468966646811
   ztr_icc_investigation_modifier: "ICC 조사" # 7495670902019161460
-  ztr_icc_investigation_modifier_desc: "국제 검찰이 우리의 행위를 면밀히 조사하고 있어, 위신이 실추되고 국내 정통성이 약화하고 있습니다." # 17104037238301825375
   ztr_unesco_member_modifier: "유네스코 협력" # 10113030531413013501
   ztr_unesco_member_modifier_desc: "유네스코 참여는 더 넓은 세계와의 교육, 과학, 문화적 협력을 확대합니다." # 11020176500733889072
   land_reclamation_struggle_modifier: "간척 사업의 투쟁" # 17326798404457842216
@@ -441,3 +440,18 @@
   demographic_stage_7: "Late Post-Industrial Demographic Stage"
   demographic_stage_8: "Stagnant Demographic Stage"
   demographic_stage_9: "Declining Demographic Stage"
+  ztr_un_condemned_modifier_desc: "The United Nations has condemned our conduct. Until the condemnation expires, our voting rights in the UN are suspended; a second condemnation doubles these penalties and expels us."
+  ztr_icc_investigation_modifier_desc: "International prosecutors are scrutinizing our conduct, tarnishing our prestige and our diplomatic influence."
+  ztr_un_dues_modifier: "UN Contributions"
+  ztr_un_dues_modifier_desc: "Our yearly contribution to the budget of the United Nations, paid every week."
+  ztr_un_vote_commitment_support: "UN Vote Commitment: Support"
+  ztr_un_vote_commitment_support_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] votes in favor of the current UN proposal"
+  ztr_un_vote_commitment_support_desc: "The source country votes #P in favor#! of the proposal currently before the [Concept('concept_united_nations','$concept_united_nations$')] and cannot change its vote while the article is in force. The article ends with the vote session."
+  ztr_un_vote_commitment_support_effects_desc: "The source country's UN vote is set to #P Support#! and locked until the session closes."
+  ztr_un_vote_commitment_against: "UN Vote Commitment: Against"
+  ztr_un_vote_commitment_against_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] votes against the current UN proposal"
+  ztr_un_vote_commitment_against_desc: "The source country votes #N against#! the proposal currently before the [Concept('concept_united_nations','$concept_united_nations$')] and cannot change its vote while the article is in force. The article ends with the vote session."
+  ztr_un_vote_commitment_against_effects_desc: "The source country's UN vote is set to #N Against#! and locked until the session closes."
+  ztr_propose_research_agreement_desc: "A treaty with a single $ztr_research_agreement$ article, binding for #v 5#! years.\n$ztr_research_agreement_effects_desc$"
+  appeasement_ztr_research_agreement_signed_desc: "Signing a $ztr_research_agreement$"
+  appeasement_ztr_research_agreement_ended_desc: "Ending a $ztr_research_agreement$"
