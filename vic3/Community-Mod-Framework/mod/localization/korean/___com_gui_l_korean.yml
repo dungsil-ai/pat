@@ -23,8 +23,16 @@
   com_release_manul: "Click to the hide the error counter while unpaused"
   com_contain_manul: "Click to lock the error counter while unpaused"
   com_error_deer_tooltip: "#instruction 왼쪽 클릭#!으로 오류 로그 열기\n#instruction 왼쪽 클릭 + Shift#!으로 탐색기 열기\n#instruction 왼쪽 클릭 + Alt#!으로 느린 틱 작업 열기\n#instruction 오른쪽 클릭#!으로 닫기 (다시 오류가 발생하기 전까지)\n#instruction 오른쪽 클릭 + Shift#!으로 트위커 열기\n#instruction 오른쪽 클릭 + Alt#!으로 3D 통계 열기" # 14951443437567222190
-  com_error_counter: "#bold [ErrorDeer.NumberOrErrors|v]개의 오류#!" # 10094424766754441795
+  com_error_counter: "[AddLocalizationIf(Not(GetVariableSystem.Exists('error_deer_icon')),'com_error_counter_base')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'deer'),'com_error_counter_deer')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'manul'),'com_error_counter_manul')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'lion'),'com_error_counter_lion')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'muh_qween'),'com_error_counter_queen')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'frog'),'com_error_counter_frog')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'fix_bug'),'com_error_counter_fix_bug')][AddLocalizationIf(GetVariableSystem.HasValue('error_deer_icon', 'dynamic'),'com_error_counter_dynamic')]"
   com_error_counter_tooltip: "[ErrorDeer.GetTooltip]" # 17515023484570454117
+  com_error_counter_base: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Error(s)!#!#!"
+  com_error_counter_deer: "#bold #italic Oh deer, we have [ErrorDeer.NumberOrErrors|v] Error(s)!#!#!"
+  com_error_counter_manul: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Error(s). Let me check the Manul!#!#!"
+  com_error_counter_lion: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Error(s)!#!#!"
+  com_error_counter_queen: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Error(s). Unamusing.#!#!"
+  com_error_counter_frog: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Violation(s). Straight to jail.#!#!"
+  com_error_counter_fix_bug: "#bold #italic We have [ErrorDeer.NumberOrErrors|v] Bug(s). Pls Fix.#!#!"
+  com_error_counter_dynamic: "[GetGlobalVariable('com_error_deer_icon_var').GetInterestGroupTrait.GetDesc]"
   com_debug.t: "커뮤니티 GUI 테스트 이벤트" # 14439554426211369124
   com_debug.d: "\"빅토리아 3는 정말 형편없는 게임이야. 독창성이라곤 찾아볼 수 없는 시시한 게임이지. 국가 규모가 어떻든 플레이하기가 너무 쉬워. 빅토리아 2 때는 훨씬 나았어. 건물과 인구를 직접 관리하고 다양한 외교를 수행해야 했으니까.\"" # 6217398070270506244
   com_debug.f: "\"그래, 불행히도 제임스 말고는 아무도 모딩을 못 해\" -rskhm" # 11756833210712855117
