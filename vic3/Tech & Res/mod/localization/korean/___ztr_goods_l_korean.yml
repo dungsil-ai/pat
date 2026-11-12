@@ -8,7 +8,6 @@
   copperwires: "전선" # 3809263549271413053
   batteries: "축전지" # 7362068705159573350
   electroniccomponents: "전자 부품" # 3932544411688289424
-  processors: "프로세서" # 1885287472645480584
   commonores: "일반 광석" # 9081330906484913240
   advancedores: "고급 광석" # 10067223212668129959
   homeappliances: "가전제품" # 5322738816466848183
@@ -97,8 +96,6 @@
   goods_input_batteries_add_desc: "건물에서 소비하는 @batteries! 배터리 양" # 1135390328025201568
   goods_input_electroniccomponents_add: "@electroniccomponents! 전자 부품 투입량" # 9918339675582381302
   goods_input_electroniccomponents_add_desc: "건물에서 소비되는 @electroniccomponents! 전자 부품의 양" # 3384994248815078320
-  goods_input_processors_add: "@processors! 프로세서 투입량" # 16411711618617499633
-  goods_input_processors_add_desc: "건물에서 소비되는 @processors! 프로세서의 양" # 14899103024115035791
   goods_input_commonores_add: "@commonores! 일반 광석 투입량" # 6136431850721884127
   goods_input_commonores_add_desc: "건물에서 소비되는 @commonores! 일반 광석의 양" # 10611434332560480392
   goods_input_advancedores_add: "@advancedores! 고급 광석 투입량" # 13693251488290988086
@@ -160,8 +157,6 @@
   goods_output_batteries_add: "@batteries! 배터리 생산량" # 11220532223973871568
   goods_output_batteries_add_desc: "건물에서 생산되는 @batteries! 배터리의 양" # 10670981070535121803
   goods_output_electroniccomponents_add: "@electroniccomponents! 전자 부품 생산량" # 1895459522569896886
-  goods_output_processors_add: "@processors! 프로세서 생산량" # 6345543369972806584
-  goods_output_processors_add_desc: "건물에서 생산되는 @processors! 프로세서의 양" # 11958089689027670919
   goods_output_commonores_add: "@commonores! 일반 광석 생산량" # 1597084709769612112
   goods_output_commonores_add_desc: "건물에서 생산되는 @commonores! 일반 광석의 양" # 543005146778694973
   goods_output_advancedores_add: "@advancedores! 고급 광석 생산량" # 5050924357462461459
@@ -270,8 +265,6 @@
   goods_output_manzoni_prints_add_desc: "건물에서 생산되는 @manzoni_prints! 미디어 콘텐츠의 양" # 14552726860114630584
   goods_output_telecommunications_add: "@telecommunications! 전기 통신 생산량" # 5556642811588608276
   goods_output_telecommunications_add_desc: "건물에서 생산되는 @telecommunications! 전기 통신의 양" # 139919970396046721
-  goods_output_processors_mult: "@processors! 프로세서 생산량" # 6345543369972806584
-  goods_output_processors_mult_desc: "건물에서 생산되는 @processors! 생산량에 대한 보너스 또는 페널티" # 15970921200168531137
   goods_output_robotics_mult: "@robotics! 로봇 공학 생산량" # 10689630808392775097
   goods_output_robotics_mult_desc: "건물에서 생산되는 @robotics! 생산량에 대한 보너스 또는 페널티" # 2515937683027678052
   goods_input_light_fuel_mult_desc: "건물에서 소비되는 @light_fuel! 경량 연료의 양에 적용되는 보너스 또는 페널티입니다" # 18203071095218804609
@@ -284,3 +277,10 @@
   goods_output_coffee_mult_desc: "A bonus or penalty to the amount of @coffee! Coffee produced by buildings"
   goods_input_fine_art_add: "@fine_art! Fine Art input"
   goods_input_fine_art_add_desc: "The amount of @fine_art! Fine Art consumed by buildings"
+  processors: "Chips"
+  goods_input_processors_add: "@processors! Chips input"
+  goods_input_processors_add_desc: "The amount of @processors! Chips consumed by buildings"
+  goods_output_processors_add: "@processors! Chips output"
+  goods_output_processors_add_desc: "The amount of @processors! Chips produced by buildings"
+  goods_output_processors_mult: "@processors! Chips output"
+  goods_output_processors_mult_desc: "A bonus or penalty to the amount of @processors! Chips produced by buildings"

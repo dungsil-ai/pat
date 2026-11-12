@@ -37,9 +37,6 @@
   pmg_automation_building_electronics_plant: "자동화" # 18411738171978629847
   pm_watertube_boiler_building_electronics_plant: "수관 보일러" # 3203413198244518398
   pm_rotary_valve_engine_building_electronics_plant: "회전식 밸브 기관" # 14572944410143777332
-  pmg_base_building_processors: "가공기" # 13367468069779874615
-  pm_no_processors_production: "프로세서 없음" # 6240608457693099604
-  pm_integrated_circuit: "집적 프로세서" # 5719687588264932005
   pm_microprocessor: "마이크로프로세서" # 13481744703489693515
   pmg_base_building_computers: "컴퓨터" # 4227873765790080554
   pm_no_computer_production: "컴퓨터 없음" # 16666108230197653944
@@ -813,3 +810,8 @@
   pm_advanced_assembly_lines_building_space_assets_industry: "Advanced Assembly Lines"
   pm_robotic_building_space_assets_industry: "Robotic Assembly Lines"
   pm_iot_building_space_assets_industry: "IoT Assembly Lines"
+  pmg_base_building_processors: "Chips"
+  pm_no_processors_production: "No Chips"
+  pm_integrated_circuit: "Integrated Circuits"
+  pmg_un_headquarters: "United Nations Headquarters"
+  pm_un_headquarters: "United Nations Headquarters"
