@@ -218,13 +218,8 @@
   pause_nuclear_weapons_development_proposal_notification_desc: "제안된 합의는 축적된 진척도를 삭제하지 않고 제공국의 원자 및 수소폭탄 연구를 중단시킬 것입니다." # 8427150449528420689
   pause_nuclear_weapons_development_proposal_notification_effects_desc: "합의가 효력을 유지하는 동안 제공국의 원자 및 수소폭탄 연구를 중단시킵니다." # 10139501114681454614
   pause_nuclear_weapons_development_proposal_declined_desc: "제안된 핵 연구 중단이 거부되었습니다. 이 제안으로 인해 중단되는 프로그램은 없습니다." # 16958311124640565209
-  nuclear_de_escalation_treaty_desc: "양국은 유효 핵 타격력을 절반으로 줄이며, 상대국과 전략적으로 인접한 국가에 무기를 배치하는 것을 자제합니다. 탈퇴한 국가의 타격력은 5년 동안 절반으로 유지됩니다." # 9528580264722153707
-  nuclear_de_escalation_treaty_effects_desc: "조약이 활성화된 동안 양국의 핵 타격력이 #v 50%#! 감소합니다. 탈퇴한 국가의 전력은 #v 5년#! 동안 감소된 상태로 유지됩니다. 상대국 인근의 핵 배치 합의가 제한됩니다." # 8708183191171612190
   nuclear_de_escalation_treaty_pact_desc: "양국은 감소된 핵 타격력을 유지하며 서로의 인근에 핵 배치를 제한합니다." # 3330323744652301413
   nuclear_de_escalation_treaty_proposal_accepted_name: "핵 긴장 완화 조약 수용됨" # 11914003986801316108
-  nuclear_de_escalation_treaty_proposal_accepted_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]는 핵 타격력을 절반으로 줄이고 서로의 인근에 핵 배치를 제한하기로 합의했습니다." # 8106233642496262334
-  nuclear_de_escalation_treaty_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName]와 [TARGET_COUNTRY.GetName]는 핵 타격력을 절반으로 줄이고 서로의 인근에 핵 배치를 제한하게 될 것입니다." # 11497166515607101000
-  nuclear_de_escalation_treaty_proposal_notification_effects_desc: "양국의 유효 핵 타격력을 절반으로 줄입니다. 탈퇴한 국가의 전력은 5년 동안 감소된 상태로 유지됩니다." # 3391983595243725445
   nuclear_de_escalation_treaty_proposal_declined_desc: "[TARGET_COUNTRY.GetName]가 제안된 핵 타격력 감축 및 핵 배치 제한을 거부했습니다." # 16907673175552437689
   nuclear_ultimatum_white_peace_action_notification_desc: "핵 최후통첩이 핵 교환으로 이어졌습니다. 피해 규모는 운용 가능한 핵무기 저장량, 국가 방어력 및 투사 범위에 따라 달라집니다." # 15538309232924730440
   nuclear_ultimatum_white_peace_desc: "자국 또는 동일한 전쟁 중인 동맹국의 가용 핵무기 저장량을 바탕으로 백색 평화를 요구합니다. 거부 시 상대 연합군에 대한 타격과 준비된 핵무기를 보유한 국가들의 보복을 유발할 수 있습니다." # 7083485070979462087
@@ -240,3 +235,8 @@
   ZTR_NUCLEAR_POWER_RANK_ENTRY: "[THIS.GetCountry.MakeScope.Var('ztr_nuclear_power_rank_var').GetValue|0]. [THIS.GetCountry.GetName]: [THIS.GetCountry.MakeScope.Var('nuclear_strike_power_display').GetValue|0]"
   ZTR_NUCLEAR_DEFENCE_RANK_ENTRY: "[THIS.GetCountry.MakeScope.Var('ztr_nuclear_defence_rank_var').GetValue|0]. [THIS.GetCountry.GetName]: [THIS.GetCountry.MakeScope.Var('nuclear_strike_defence_display').GetValue|0]"
   nuclear_weapons: "Nuclear Weapons"
+  nuclear_de_escalation_treaty_desc: "Both countries cut their effective nuclear strike power to one third and refrain from stationing weapons in countries strategically adjacent to the other. A withdrawing country's strike power remains reduced for five years."
+  nuclear_de_escalation_treaty_effects_desc: "Both countries' nuclear strike power is reduced to #v one third#! while the treaty is active. A withdrawing country's power remains reduced for #v 5 years#!. Nuclear stationing agreements near the other party are restricted."
+  nuclear_de_escalation_treaty_proposal_accepted_desc: "[INITIATOR_COUNTRY.GetName] and [TARGET_COUNTRY.GetName] have agreed to cut their nuclear strike power to one third and restrict nuclear stationing near each other."
+  nuclear_de_escalation_treaty_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] and [TARGET_COUNTRY.GetName] would cut their nuclear strike power to one third and restrict nuclear stationing near each other."
+  nuclear_de_escalation_treaty_proposal_notification_effects_desc: "Cuts both countries' effective nuclear strike power to one third. A withdrawing country's power remains reduced for five years."

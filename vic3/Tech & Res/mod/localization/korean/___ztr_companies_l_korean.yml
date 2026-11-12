@@ -54,7 +54,6 @@
   elgar_company_basic_instruments_dynamic_name_tag_singular: "음악" # 8957872339519573027
   elgar_company_basic_instruments_dynamic_name_tag_plural: "악기" # 2684433203564931280
   elgar_company_steinway: "스타인웨이 & 선즈" # 1209111500328486980
-  company_basic_records_and_films: "기록" # 17391734919369887675
   company_basic_records_and_films_dynamic_name_tag_singular: "기록" # 11849355486296924151
   company_basic_records_and_films_dynamic_name_tag_plural: "기록" # 17391734919369887675
   company_yamaha: "야마하" # 9138390786429428186
@@ -199,3 +198,9 @@
   generic_company_basic_consulting: "종합 자문 그룹" # 3955354670030562842
   generic_company_basic_cosmetics: "표준 화장품" # 3758459667122872797
   generic_company_basic_tech: "통합 전자" # 17360701638987235442
+  curtiss_company_basic_air_travel: "Consolidated Airways"
+  elgar_company_basic_instruments: "United Instrument Makers"
+  company_basic_records_and_films: "Consolidated Records & Pictures"
+  generic_company_basic_software: "Integrated Software Systems"
+  generic_company_basic_software_dynamic_name_tag_singular: "Software"
+  generic_company_basic_software_dynamic_name_tag_plural: "Systems"
