@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: cda3ce2
   VIET_heard_about_Scarborough_Fair: "스카버러 박람회에 대해 들었소" # 15177439365176209270
   VIET_heard_about_Scarborough_Fair_desc: "스카버러 장터에 가실 건가요?\n파슬리, 세이지, 로즈마리, 그리고 타임\n그곳에 사는 이에게 안부를 전해주세요\n그녀는 한때 나의 진실한 연인이었지요" # 16198401124187029665
   VIET_oblivion_dream_pells_gate: "작은 숲속 마을을 꿈꾸다" # 1604667829189320936
@@ -1207,7 +1206,7 @@
   VIET_conformist_child_desc: "이 아이는 적어도 지금은 다른 아이들이 좋아하는 것을 따라 하려고 애쓰고 있습니다." # 3835476977887598068
   VIET_dancing_like_hinds: "암사슴처럼 춤추기를 즐김" # 4747221545491064115
   VIET_dancing_like_hinds_desc: "나이 든 사람들은 오늘날 젊은이들의 춤사위를 비난할지도 모르지만, 이 젊은이는 전혀 개의치 않는군요!" # 15100123355638107203
-  VIET_new_toys: "흥미로운 새 장난감들" # 11164930153835679828
+  VIET_new_toys_modifier: "Interesting New Toys"
   VIET_toy_keepsake: "어린 시절의 장난감 기념품" # 15637103387559075451
   VIET_alkanet_prank: "알칸넷 장난" # 17342954823006472378
   VIET_alkanet_prank_desc: "이 인물은 꼭두서니에서 추출한 붉은색 기름을 사용하여 자신이 피를 흘리는 것처럼 보이게 하는 장난을 치는 것을 좋아합니다." # 11262869362356862073
@@ -1659,4 +1658,10 @@
   VIET_li_qingzhao_poems_youth_desc: "이 인물은 [Glossary( '이청조', 'LI_QINGZHAO_GLOSS' )]가 사랑하는 남편 [Glossary( '조명성', 'ZHAO_MINGCHENG_GLOSS' )]와 함께 행복하게 지내던 시절의 초기 시에서 큰 영감을 받았습니다." # 16525569267481724249
   VIET_li_qingzhao_poems_old_age: "이청조의 후기 시에 영감을 받음" # 13397173535123933293
   VIET_li_qingzhao_poems_old_age_desc: "이 인물은 [Glossary( '이청조', 'LI_QINGZHAO_GLOSS' )]가 사랑하는 남편 [Glossary( '조명성', 'ZHAO_MINGCHENG_GLOSS' )]를 잃은 후 쓴 우울한 후기 시에서 큰 영감을 받았습니다." # 11051541896797225576
+  VIET_drinks_goat_milk: "Drinks Goat Milk"
+  VIET_drinks_goat_milk_desc: "Consumption of goat milk may have health benefits according to some medical authorities, but that doesn't change the fact that it is a drink associated with the destitute and desperate."
+  VIET_donated_foundling_wheels: "Helped Build Foundling Wheels"
+  VIET_donated_foundling_wheels_desc: "This character benevolently donated money to help fund the construction of [Glossary( 'foundling wheels', 'FOUNDLING_WHEELS_GLOSS' )]."
+  VIET_contemplating_place_in_life: "Contemplating Place in Life"
+  VIET_contemplating_place_in_life_desc: "#italic “For dust thou art, and unto dust shalt thou return.”#!"
   xxxxxxxxxx: "xxx" # 4339025660404407451

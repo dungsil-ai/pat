@@ -1,5 +1,4 @@
 ﻿l_korean:
-# PAT verified upstream: cda3ce2
   VIETmisc.0000.t: "xxxxx" # 1951045980481827005
   VIETmisc.0000.desc: "xxxxx" # 1951045980481827005
   VIETmisc.0000.a: "xxxxx" # 1951045980481827005
@@ -2048,15 +2047,21 @@
   VIETmisc.0425.a: "그녀의 젊은 시절의 행복한 시들이 가장 마음에 드는군." # 10486643395820082250
   VIETmisc.0425.b: "그녀의 말년에 쓴 어둡고 침울한 시들이 나를 가장 감동시키는군." # 15420063596481179565
   VIETmisc.0425.c: "내 글쓰기 실력을 키우기 위해 그녀의 시를 연구해야겠어." # 4570064034479950530
-  VIETmisc.0426.t: "xxxxx" # 1951045980481827005
-  VIETmisc.0426.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.0426.a: "xxxxx" # 1951045980481827005
-  VIETmisc.0427.t: "xxxxx" # 1951045980481827005
-  VIETmisc.0427.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.0427.a: "xxxxx" # 1951045980481827005
-  VIETmisc.0428.t: "xxxxx" # 1951045980481827005
-  VIETmisc.0428.desc: "xxxxx" # 1951045980481827005
-  VIETmisc.0428.a: "xxxxx" # 1951045980481827005
+  VIETmisc.0426.t: "Goat Milk"
+  VIETmisc.0426.desc: "My physician [physician.GetTitledFirstName] has become something of an enthusiast for goat milk, extolling its medical benefits over other forms of milk. [physician.GetSheHe|U] insists, “Drink it regularly and you’ll see immediate improvements to your constitution!”\n\n“But is it proper for some [ROOT.Char.GetTitleAsName] like myself?” I question. “Even the poor only drink goat’s milk when they have no other recourse.”\n\n“Health comes first, my [ROOT.Char.GetLadyLord],” [physician.GetFirstNameNoTooltip] explains, “and others’ petty opinions are a small price to pay for better health.”"
+  VIETmisc.0426.a: "Fair point! I’ll add goat milk to my diet."
+  VIETmisc.0426.b: "Nope. Not interested in doing this."
+  VIETmisc.0426.info: "#emphasis Historical Context:#! Goat milk has overall historically been a relatively small percentage of animal milk consumed in most societies compared to cow milk, for instance. However, more than a few ancient and medieval scholars like Pliny the Elder claimed that it had various beneficial medical properties."
+  VIETmisc.0427.t: "Think of the Children!"
+  VIETmisc.0427.desc: "The number of abandoned infants in the [ROOT.Char.GetPrimaryTitle.GetBaseName] has reached a high enough level that many there are concerned about this state of affairs.\n\n[ROOT.Char.GetFaith.GetAdjective] authorities have requested for donations for the construction of [Glossary( 'foundling wheels', 'FOUNDLING_WHEELS_GLOSS' )] in [ROOT.Char.GetFaith.HouseOfWorshipPlural] and other public places to alleviate this crisis. Infants left in these devices will then be cared for by the [ROOT.Char.Custom('DefaultPriestTitlePlural')]."
+  VIETmisc.0427.a: "Those poor babies need my help!"
+  VIETmisc.0427.b: "I cannot afford to help at this time."
+  VIETmisc.0428.t: "The Cosmos"
+  VIETmisc.0428.desc: "When I think of the grand passage of time, of those who have come before us, and those who will come after us, I cannot help but feel small and helpless.\n\nSometimes, all I can do is stare at the sky, whether the cerulean aether of the day, or the onyx depths of the night, and wonder with a poignant, bittersweet mixture of bewilderment, melancholy, and awe."
+  VIETmisc.0428.a: "I kind of don’t care, after thinking it over."
+  VIETmisc.0428.b: "I will do something worthwhile in this lifetime."
+  VIETmisc.0428.c: "Prayers to [ROOT.Char.GetFaith.HighGodName] will soothe my worries."
+  VIETmisc.0428.d: "Still, it’s a comfort knowing I’m part of the cosmos."
   VIETmisc.0429.t: "xxxxx" # 1951045980481827005
   VIETmisc.0429.desc: "xxxxx" # 1951045980481827005
   VIETmisc.0429.a: "xxxxx\" " # 15308465615999842627
