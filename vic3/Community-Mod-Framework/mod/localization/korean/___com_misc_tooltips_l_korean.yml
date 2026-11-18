@@ -12,3 +12,7 @@
   com_is_character_blocked_from_retire: "[concept_character]의 은퇴가 금지되었습니다." # 8734939741873896692
   com_block_retire_interaction_default: "[Character.GetFullName]의 은퇴가 금지되었습니다." # 10011499578819425762
   com_unblock_retire_interaction: "[SCOPE.sCharacter('com_interaction_blocker_scope').GetFullName]의 은퇴 금지가 해제됩니다." # 9670596665133489830
+  com_block_regencies: "Establishment of #bold Regencies#! will be blocked in [GetPlayer.GetNameNoFlag]"
+  com_unblock_regencies: "Establishment of #bold Regencies#! will be allowed in [GetPlayer.GetNameNoFlag]"
+  com_extend_regency: "Termination of #bold Regencies#! will be blocked in [GetPlayer.GetNameNoFlag]"
+  com_clear_regency_extension: "Termination of #bold Regencies#! will be allowed in [GetPlayer.GetNameNoFlag]"
