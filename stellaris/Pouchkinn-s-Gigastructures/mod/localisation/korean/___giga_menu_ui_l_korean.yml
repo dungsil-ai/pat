@@ -10,122 +10,13 @@
   giga_katzens_vassal_ezic: "$TRIGGER_FAIL$§YKatzprotektorat§!로서 우리의 카첸 군주들은 우리가 §YZuspri Order§!와 접촉하는 것을 허용하지 않을 만큼 막강한 권력을 쥐고 있으며, 안전한 접촉은커녕 시도조차 불가능합니다." # 6161398487693856210
   giga_solak_open: "$TRIGGER_FAIL$§Y로퀄리안 자유 투사§! 메뉴가 이미 열려 있습니다" # 11732888613697880885
   giga_katzens_ezic_rebellion: "$TRIGGER_FAIL$§YZuspri Vanguard§!는 현재 진행 중인 반란 때문에 정신이 없어 통신에 응답할 수 없습니다." # 2151678920064346878
-  giga_megaview_manage: "§H거대 구조물 관리§!" # 14491273764803187097
-  giga_megaview_manage_no_options: "$TRIGGER_FAIL$이 거대 구조물에는 추가 관리 옵션이 없습니다." # 2030199320832272920
-  giga_mega_management_title: "[from.GetName] 관리" # 17637076429069623026
-  giga_mega_management_dismantle: "거대 구조물 해체" # 17851099030717040035
-  giga_mega_management_dismantle_desc: "[from.GetName] 이것이 해체될 것이며, 그 과정에서 일부 자원을 회수하게 됩니다.\n\n§P이 조치는 최종적이며 취소할 수 없습니다.§!" # 16673623773168391942
-  giga_mega_management_dismantle_ongoing: "이 메가스트럭처는 이미 해체 중입니다" # 17226703009931742066
-  giga_mega_management_mode_already_selected: "§L이 모드가 현재 선택됨§!" # 13290935527153712643
   giga_mega_management_section_left: "£giga_mega_menu_title_left£" # 2005417145763106290
   giga_mega_management_section_right: "£giga_mega_menu_title_right£" # 5766211644358879335
   giga_megaview_highlight: "§H연결된 천체 강조§!\n이 구조물과 관련된 천체를 강조하고 이름표를 강제로 표시합니다." # 16914287913220615555
   giga_megaview_outliner: "§H거대구조체 윤곽선 아이콘 전환§!\n이 구조체와 연결된 윤곽선 아이콘을 전환합니다.\n\n§L이 전환 기능은 제3자 거대구조체나 보통 윤곽선 아이콘이 없는 거대구조체에서는 작동하지 않습니다.§!" # 6370550334770977664
-  giga_succ: "$giga_mega_management_section_left$$succ_1$ 속도$giga_mega_management_section_right$" # 4609427651044245977
-  giga_succ_mode_standard: "표준 추출" # 11709663457338736702
-  giga_succ_mode_standard_desc: "§L이 $name_succ_full$은 표준 속도로 작동할 것입니다.\n\n변동 없음 §Y거대 구조체 작동 기간§! £time£\n변동 없음 §Y산출량§!§! £energy£ £volatile_motes£ £exotic_gases£" # 6710865832973552945
-  giga_succ_mode_fast: "가속화된 추출" # 16883155573760516797
-  giga_succ_mode_fast_desc: "§L이 $name_succ_full$은 효율성을 희생하는 대신 더 빠른 속도로 작동합니다.\n\n§R거대 구조물 건설 기간§! 감소 £time£ \n§G산출량§! 증가 £energy£ £volatile_motes£ £exotic_gases£§!" # 11674124906747262091
-  giga_succ_mode_slow: "느린 추출" # 12586528725740088511
-  giga_succ_mode_slow_desc: "§L본 $name_succ_full$는 더 낮은 속도로 작동하여 전체 효율성을 증가시킵니다.\n\n§G메가스트럭처 지속 시간 증가§! £time£ \n§R생산량 감소§!§! £energy£ £volatile_motes£ £exotic_gases£" # 8365162320424935177
-  giga_automated_stripmine: "$giga_mega_management_section_left$$automated_stripmine_1$ 속도$giga_mega_management_section_right$" # 14569772473282401502
-  giga_automated_stripmine_mode_standard: "표준 추출" # 11709663457338736702
-  giga_automated_stripmine_mode_standard_desc: "§L$automated_stripmine_1$은 표준 속도로 가동됩니다.\n\n변경 없음 §Y거대 구조물 지속 시간§! £time£\n변경 없음 §Y생산량§!§! £minerals£ £rare_crystals£ £volatile_motes£ £exotic_gases£" # 8714820803505178767
-  giga_automated_stripmine_mode_fast: "가속화된 추출" # 16883155573760516797
-  giga_automated_stripmine_mode_fast_desc: "§L이 $automated_stripmine_1$는 효율성을 희생하여 더 빠른 속도로 작동합니다.\n\n감소: §R거대 구조물 건설 시간§! £time£\n증가: §G산출량§!§! £minerals£ £rare_crystals£ £volatile_motes£ £exotic_gases£" # 12518461504025620225
-  giga_automated_stripmine_mode_slow: "느린 추출" # 12586528725740088511
-  giga_automated_stripmine_mode_slow_desc: "§L이 $automated_stripmine_1$는 저속으로 가동되어 전반적인 효율을 높여줄 것입니다.\n\n§G거대 구조물 지속 시간§! 증가 £time£\n§R산출§!§! 감소 £minerals£ £rare_crystals£ £volatile_motes£ £exotic_gases£" # 17508222250158949854
   giga_kilo_potential_tooltip: "§E킬로 구조물 매장 잠재력:§!" # 14261636857973241331
   giga_science_candidate_tooltip: "과학 킬로 매장지: [root.GetScienceCandidatesColor][ROOT.GetScienceCandidates]§!" # 13738159821755859177
   giga_arc_furnace_system_short_tooltip: "$t$- 아크 용광로 매장지: [root.GetArcFurnaceColor][root.GetArcFurnacePlanets]§!" # 16994352201019019985
   giga_food_candidate_tooltip: "$t$- 행성 파종 넥서스 매장지: [root.GetFoodCandidatesColor][ROOT.GetFoodCandidates]§!" # 17317769009043519811
   MEGASTRUCTURE_SCIENCE_KILO_BEST_SYSTEMS_TOOLTIP_HEADER: "§E과학 킬로구조물 잠재력이 가장 높은 성계:§!" # 11528678554131413376
   MEGASTRUCTURE_FOOD_KILO_BEST_SYSTEMS_TOOLTIP_HEADER: "§E$name_planetary_seeder_nexus$ 잠재력이 가장 높은 성계:§!" # 7253708796328482579
-  giga_compendium.001.name: "디버그" # 143360522173664303
-  giga_compendium.001.desc: "디버그" # 143360522173664303
-  giga_compendium_open: "§H거대 구조물 편람§!§G!\n§G거대 구조물 편람을 열려면 클릭하세요§!!" # 17725532391854451113
-  giga_compendium_header_kilos: "§E킬로구조물§!" # 5628103670534141561
-  giga_compendium_header_e_megas: "§E초기 초구조물§!" # 10359688769094979649
-  giga_compendium_header_megas: "§E메가스트럭처" # 17281852176098540847
-  giga_compendium_header_gigas: "§E거대 구조물" # 12547031345046690775
-  giga_compendium_01_group_header: "거주지" # 17984340361844799175
-  giga_compendium_02_group_header: "운송" # 2117487778549531336
-  giga_compendium_03_group_header: "테라포밍" # 5331890937517895406
-  giga_compendium_04_group_header: "식민지 개선" # 8429966699027892090
-  giga_compendium_fail: "조건 미충족§R-" # 746255410496251191
-  giga_compendium_pass: "$t$통과§G-" # 3395934850253761573
-  giga_compendium_affix: "§!" # 5733586035605177026
-  giga_compendium_chk_dlc_overlord: "[from.giga_chk_dlc_overlord]" # 13269402243567350047
-  giga_compendium_chk_dlc_overlord_pass: "$giga_compendium_pass$종주국 $giga_compendium_affix$ DLC" # 13452642045929278845
-  giga_compendium_chk_dlc_overlord_fail: "$giga_compendium_fail$종속 제국 DLC$giga_compendium_one_planet_origin$$giga_compendium_affix$" # 5432024944151191256
-  giga_compendium_one_planet_origin: "프레임월드 제국" # 3168465750102513065
-  giga_compendium_requires_one_planet_fail: "$giga_compendium_fail$$giga_compendium_one_planet_origin$$giga_compendium_affix$ 기원이 아니어야 합니다." # 1260573792385788870
-  giga_compendium_requires_one_planet_pass: "$giga_compendium_pass$당신은 `$giga_compendium_one_planet_origin$$giga_compendium_affix$`가 아니어야 합니다." # 1955641309602879604
-  giga_compendium_requires_not_disabled_hab_pass: "$giga_compendium_pass$거주지가 비활성화되지 않았거나, ['civic:origin_void_dwellers'] / ['civic:origin_void_machines'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 11040918236107094892
-  giga_compendium_requires_not_disabled_hab_fail: "$giga_compendium_fail$거주지가 비활성화되지 않았거나, ['civic:origin_void_dwellers'] / ['civic:origin_void_machines'] / ['civic:origin_toxic_knights'] 제국이어야 합니다$giga_compendium_affix$" # 117550656283681887
-  giga_compendium_habitat_control_header: "§Y거주지 중앙 단지§!" # 9846463072930273331
-  giga_compendium_habitat_control_description: "$habitat_central_complex_DESC$" # 4640691964186051662
-  giga_compendium_habitat_control_prereqs: "\n요구 사항:\n$giga_compendium_pre_tech_hab_1$" # 3337343840389096328
-  giga_compendium_orbital_major_header: "§Y$major_orbital$§!" # 13595133998086115687
-  giga_compendium_orbital_description: "$major_orbital_DESC$" # 2965265274823321766
-  giga_compendium_orbital_minor_header: "§Y$minor_orbital$§!" # 6961140164749142167
-  concept_giga_compendium_tech_habitat_1: "$tech_habitat_1$" # 1061672694852339878
-  concept_giga_compendium_tech_habitat_1_desc: "선행 기술: 스타베이스 레벨 3\n$tech_habitat_1_desc$" # 1785999053402834625
-  giga_compendium_pre_tech_hab_1: "[from.giga_tech_habitat_1]" # 5692150637624632969
-  giga_compendium_chk_tech_hab_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_habitat_1']$giga_compendium_affix$" # 14649703642681046890
-  giga_compendium_chk_tech_hab_fail: "$giga_compendium_fail$ ['concept_giga_compendium_tech_habitat_1']$giga_compendium_affix$" # 11440064134432970051
-  giga_compendium_gateway_header: "§Y$gateway_0$§!" # 12985580829219759547
-  giga_compendium_gateway_description: "$gateway_final_DESC$" # 3853409983477705683
-  giga_compendium_gateway_prereqs: "\n요구 사항:$NEW_LINE$$giga_compendium_pre_tech_gateway_activation$$TABBED_NEW_LINE$또는$NEW_LINE$$giga_compendium_pre_tech_gateway_construction$" # 18346345720121347904
-  concept_giga_compendium_tech_gateway_activation: "$tech_gateway_activation$" # 318814204722423297
-  concept_giga_compendium_tech_gateway_activation_desc: "선행 기술:['technology:tech_hyper_drive_3']\n§L$tech_gateway_activation$" # 7985522733850745605
-  concept_giga_compendium_tech_gateway_construction: "$tech_gateway_construction$" # 4625172665521636134
-  concept_giga_compendium_tech_gateway_construction_desc: "필수 기술:\n-['technology:tech_mega_engineering']\n-['concept_giga_compendium_tech_gateway_activation']\n§L$tech_gateway_construction_desc$" # 13524436378348015514
-  giga_compendium_pre_tech_gateway_activation: "[from.giga_tech_gateway_activation]" # 6378179064062875385
-  giga_compendium_chk_tech_gateway_active_pass: "$giga_compendium_pass$$gateway_ruined$ 그리고 ['concept_giga_compendium_tech_gateway_activation']$giga_compendium_affix$" # 17288327480701157049
-  giga_compendium_chk_tech_gateway_active_fail: "$giga_compendium_fail$$gateway_ruined$과 ['concept_giga_compendium_tech_gateway_activation']$giga_compendium_affix$" # 16133923529639702303
-  giga_compendium_pre_tech_gateway_construction: "[from.giga_tech_gateway_construction]" # 5598867803242275336
-  giga_compendium_chk_tech_gateway_pass: "$giga_compendium_pass$ ['concept_giga_compendium_tech_gateway_construction']$giga_compendium_affix$" # 7814201556497793233
-  giga_compendium_chk_tech_gateway_fail: "$giga_compendium_fail$ ['concept_giga_compendium_tech_gateway_construction']$giga_compendium_affix$" # 10199474652882905208
-  giga_compendium_hyper_relay_header: "§Y하이퍼 릴레이§!" # 15383371501519991377
-  giga_compendium_hyper_relay_description: "$hyper_relay_DESC$" # 15694693944993110719
-  giga_compendium_hyper_relay_prereqs: "\n$giga_compendium_pre_tech_hyper_relays$\n$giga_compendium_chk_dlc_overlord$" # 7126111928302183823
-  concept_giga_compendium_tech_hyper_relay: "$tech_hyper_relays$" # 10136286557738403095
-  concept_giga_compendium_tech_hyper_relay_desc: "선행 기술:['technology:tech_hyper_drive_2']\n§L$tech_hyper_relays$§!" # 10414053875379471962
-  giga_compendium_pre_tech_hyper_relays: "[from.giga_tech_hyper_relays]" # 12320071998299991180
-  giga_compendium_chk_tech_hyper_relays_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_hyper_relay']$giga_compendium_affix$" # 8768214684353041962
-  giga_compendium_chk_tech_hyper_relays_fail: "$giga_compendium_fail$['concept_giga_compendium_tech_hyper_relay']$giga_compendium_affix$" # 11862106650249637961
-  giga_compendium_terraform_barren_header: "§Y$name_terraform_barren$§!" # 9150492817671504268
-  giga_compendium_terraform_barren_description: "$terraform_barren_0_DESC$" # 12693648174014804011
-  giga_compendium_terraform_barren_prereqs: "\n요구 조건:$NEW_LINE$$giga_compendium_pre_tech_terraform_barren$" # 7812027841919675662
-  giga_compendium_pre_tech_terraform_barren: "[from.giga_tech_terraform_barren]" # 13490163049803593225
-  giga_compendium_chk_tech_terraform_barren_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_terraform_barren']$giga_compendium_affix$" # 7059831235685602953
-  giga_compendium_chk_tech_terraform_barren_fail: "$giga_compendium_fail$['concept_giga_compendium_tech_terraform_barren']$giga_compendium_affix$" # 11504405078951814084
-  concept_giga_compendium_tech_terraform_barren: "$giga_tech_terraform_barren$" # 6800832077269871197
-  concept_giga_compendium_tech_terraform_barren_desc: "필수 기술:\n-['technology:tech_climate_restoration']\n-['technology:tech_battleships']\n-['concept_giga_compendium_tech_macro_scale_weather_manipulation']\n§L$giga_tech_terraform_barren_desc$§!" # 3387568655434388114
-  giga_compendium_terraform_toxic_header: "§Y$name_terraform_toxic$§!" # 12545297499536567973
-  giga_compendium_terraform_toxic_description: "$terraform_toxic_0_DESC$" # 6528077688277825204
-  giga_compendium_terraform_toxic_prereqs: "\n요구 조건:$NEW_LINE$$giga_compendium_pre_tech_terraform_toxic$" # 3561052044371718936
-  giga_compendium_pre_tech_terraform_toxic: "[from.giga_tech_terraform_toxic]" # 4252538556486278816
-  giga_compendium_chk_tech_terraform_toxic_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_terraform_toxic']$giga_compendium_affix$" # 2005188416264024821
-  giga_compendium_chk_tech_terraform_toxic_fail: "$giga_compendium_fail$ ['concept_giga_compendium_tech_terraform_toxic']$giga_compendium_affix$" # 4242026503375516965
-  concept_giga_compendium_tech_terraform_toxic: "$giga_tech_terraform_toxic$" # 2860345915828299349
-  concept_giga_compendium_tech_terraform_toxic_desc: "필요 기술: ['concept_giga_compendium_tech_terraform_barren']\n§L$giga_tech_terraform_toxic_desc$§!" # 6207038864266284786
-  giga_compendium_terraform_molten_header: "§Y$name_terraform_molten$§!" # 94882956819933502
-  giga_compendium_terraform_molten_description: "$terraform_molten_0_DESC$" # 264378131976905363
-  giga_compendium_terraform_molten_prereqs: "\n필요 조건:$NEW_LINE$$giga_compendium_pre_tech_terraform_molten$" # 4063954783959553919
-  giga_compendium_pre_tech_terraform_molten: "[from.giga_tech_terraform_molten]" # 15144198118020986708
-  giga_compendium_chk_tech_terraform_molten_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_terraform_molten']$giga_compendium_affix$" # 7878222131487066205
-  giga_compendium_chk_tech_terraform_molten_fail: "$giga_compendium_fail$['concept_giga_compendium_tech_terraform_molten']$giga_compendium_affix$" # 2638593871874387837
-  concept_giga_compendium_tech_terraform_molten: "$giga_tech_terraform_molten$" # 8412937293483582221
-  concept_giga_compendium_tech_terraform_molten_desc: "선행 기술: ['concept_giga_compendium_tech_terraform_toxic']\n§L$giga_tech_terraform_molten_desc$§!" # 4894497441203756626
-  giga_compendium_terraform_shattered_header: "§Y파쇄 행성 개조§!" # 16407596504866554690
-  giga_compendium_terraform_shattered_description: "$terraform_shattered_0_DESC$" # 10881085318407578406
-  giga_compendium_terraform_shattered_prereqs: "\n요구 조건:$NEW_LINE$$giga_compendium_pre_tech_terraform_shattered$" # 10747222002755343404
-  giga_compendium_pre_tech_terraform_shattered: "[from.giga_tech_terraform_shattered]" # 17213898703518495913
-  giga_compendium_chk_tech_terraform_shattered_pass: "$giga_compendium_pass$['concept_giga_compendium_tech_terraform_shattered']$giga_compendium_affix$" # 3588286371628123313
-  giga_compendium_chk_tech_terraform_shattered_fail: "$giga_compendium_fail$['concept_giga_compendium_tech_terraform_shattered']$giga_compendium_affix$" # 7870355460176384663
-  concept_giga_compendium_tech_terraform_shattered: "$giga_tech_terraform_shattered$" # 9582250006079366913
-  concept_giga_compendium_tech_terraform_shattered_desc: "필수 기술: ['concept_giga_compendium_tech_terraform_molten']\n§L$giga_tech_terraform_shattered_desc$§!" # 1842021220655528811
-  concept_giga_compendium_tech_macro_scale_weather_manipulation: "$giga_tech_macro_scale_weather_manipulation$" # 5831555041124451788
-  concept_giga_compendium_tech_macro_scale_weather_manipulation_desc: "필요 기술:\n-['technology:tech_sensors_3']\n-['technology:tech_cruisers']\n§L$giga_tech_macro_scale_weather_manipulation_desc$§!" # 15115498051498934101

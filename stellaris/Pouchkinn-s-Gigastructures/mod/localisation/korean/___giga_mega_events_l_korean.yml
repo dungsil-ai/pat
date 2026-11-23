@@ -76,37 +76,16 @@
   giga_dialog.3301.name: "$name_auto_stripmine$ 건설 부지 건설 완료" # 16436305657860991060
   giga_dialog.3301.desc: "우리 기술자들이 [giga_system.GetName] 근처에 미래의 $name_auto_stripmine$ 건설을 위한 건설 부지 조립을 완료했습니다.\n이 거대한 궤도 플랫폼은 행성 주위에 대규모 채굴 단지를 건설하기 위해 필요한 모든 것을 수용할 것이며, 결국 행성의 광물 자원을 거의 전부 채굴해낼 것입니다." # 1244329108768791017
   giga_dialog.3301.a: "훌륭하군!" # 4205353275372794963
-  giga_dialog.3302.name: "$name_auto_stripmine$ 궤도 장치 건설 완료" # 13917624415785293626
-  giga_dialog.3302.desc: "우리 $name_auto_stripmine$'s의 궤도 장치가 이제 완성되었습니다. 이 거대한 구조물은 대량의 채굴된 광물을 끌어올릴 수 있으며, 표면을 강력한 에너지 광선으로 폭파하여 행성의 채굴하기 어려운 부분을 녹일 수 있는 두 개의 거대한 견인 광선으로 구성되어 있습니다. 또한 광물 생산량을 추가로 증가시키기 위해 처리 링을 갖추고 있습니다. 이제, 실제 스트립 마이닝 작전을 시작하기 위해 수백만 개의 로봇 드릴 유닛으로 구성된 행성 표면 설비 건설을 마쳐야 합니다." # 5748915296144110538
   giga_dialog.3302.a: "훌륭합니다!" # 7941322641266364681
   giga_dialog.3303.title: "행성 노천 채광 가동 중" # 4809190453070838704
   giga_dialog.3303.desc: "우리의 $name_auto_stripmine$이 성공적으로 활성화되었습니다! 거대한 궤도 트랙터 빔이 수많은 톤의 광물을 쏘아 올리며, 수백만 대의 자동 로봇 드릴이 수천 개의 거대한 채굴 단지에서 행성의 휘발성 가스를 추출하고 수집합니다." # 12674752725289731789
-  giga_dialog.3303.monster.desc: "저희 $name_auto_stripmine$이 성공적으로 가동되었습니다! 거대한 궤도 트랙터 광선이 수백만 대의 자동 로봇 드릴이 수천 개의 거대한 채굴 단지에서 채굴한 행성의 수많은 광물을 끌어올리고 있습니다.\n\n[giga_planet.GetName]의 이전 거주민들은 시간 내에 구조물 가동으로부터 탈출하지 못했습니다. 그들은 마치 단순한 바위처럼 수집되어 $name_auto_stripmine$의 생산량에 더해질 것입니다." # 2354285087644813386
   giga_dialog.3303.a: "광물 생산량 정상." # 7298384281527519962
-  giga_dialog.3303.b: "그들에게는... 끔찍하군." # 14245485931586123533
-  giga_dialog.3304.title: "행성 표면 채굴장이 외핵에 도달했습니다" # 9662497485825779834
-  giga_dialog.3304.desc: "[giga_planet.GetName] $name_auto_stripmine$에 배치된 우리 기술자들과 과학자들이 알려온 바에 따르면, 채굴 작업이 행성의 용융 외핵에 도달했다고 합니다.\n이는 우리가 마침내 내핵에 도달하면, 광물 추출 작업이 몇 년 안에 중단될 것임을 의미합니다." # 10822397174577694896
-  giga_dialog.3304.a: "확인했습니다." # 3536622398024101432
-  giga_dialog.3305.title: "행성 노천 채굴 광산 고갈" # 3582491464640528982
-  giga_dialog.3305.desc: "[giga_planet.GetName] $name_auto_stripmine$에서 추출할 광물이 고갈되었습니다.\n[giga_planet.GetName]은(는) 작고 용융된 핵으로 축소되었으며 우주의 냉기에 노출되었습니다.\n핵에 남은 광물은 고급 프래킹 기술을 통해 추출되었으며, 이는 오직 폐기물과 거의 활용할 수 없는 물질만 남았다는 뜻입니다.\n궤도 장치는 해체되었으며, 이제 행성의 노출된 핵 위에 광물 매장지가 존재합니다." # 9006869620827649361
-  giga_dialog.3305.a: "피할 수 없었습니다." # 18324781341399113143
-  giga_dialog.3306.name: "행성 노천 채굴 시설 자원 발견" # 14398282629651690135
-  giga_dialog.3306.desc.minerals: "[fromfrom.GetName] $name_auto_stripmine$에서 상당히 큰 규모의 풍부한 광맥이 발굴되었습니다.\n\n이 광맥들은 궤도를 도는 $name_auto_stripmine$의 £minerals£§YMineral§ 생산량을 상당한 수준으로 증가시킬 것입니다.\n\n행성의 [from.gigas_stripmine_rich_mineral_deposit_length] 층만큼만 지속될 것으로 예상됩니다." # 14784759635787503834
-  giga_dialog.3306.desc.alloys: "[fromfrom.GetName] $name_auto_stripmine$이 맨틀에서 특이하게 밀도가 높은 부분을 발견했습니다. 암석권의 이 추가적인 고밀도 구역은 £alloys£§YAlloys§!와 구조적으로 놀라울 정도로 유사하여, 효과적으로 정제된 물질을 직접 채굴할 수 있게 해줍니다. 불행하게도, 우주선에 사용하기에 적합한 방어재인 물질을 발굴하는 것은 간단한 작업이 아니며, 이 밀집 퇴적물에 집중해야 하므로 £minerals£§YMineral§! 생산이 둔화될 것입니다.\n\n고밀도 물질이 고갈되기 전까지 행성의 [from.gigas_stripmine_alloy_deposit_length]개 층을 더 제거할 수 있을 것으로 예상됩니다." # 9419970350073123593
-  giga_dialog.3306.desc.gas: "[fromfrom.GetName] $name_auto_stripmine$이(가) 거대한 동굴층에 도달했습니다, 고압 형태의 £exotic_gases£§YExotic Gas§!!로 가득 차 있습니다! 표면의 드론들은 이 귀중한 가스를 추출할 수 있을 것입니다. 불행하게도, 드론을 가스 채취에 전환하면 £minerals£§YMineral§! 생산이 둔화될 것입니다.\n\n추정치에 따르면, 이 동굴들이 더 이상 나타나지 않기 전까지 행성 [from.gigas_stripmine_gas_deposit_length]층에 걸쳐 발견될 것입니다." # 12311201334495215138
-  giga_dialog.3306.desc.motes: "[fromfrom.GetName] $name_auto_stripmine$에서 고도로 휘발성인 화합물 층을 발견했습니다. 사소한 정제를 거치면 이 물질들은 £volatile_motes£§YVolatile Motes§!를 대체하는 데 사용될 수 있습니다. 하지만 이 풍부한 자원은 화합물의 우발적인 발화를 피하기 위해 채굴 작업을 늦춰야 하므로 £minerals£§YMineral§! 생산량을 감소시킬 것으로 예상됩니다.\n\n화합물은 행성의 [from.gigas_stripmine_motes_deposit_length]개 층 아래에서 고갈될 것으로 예측됩니다." # 2710378644764285057
-  giga_dialog.3306.desc.crystals: "[fromfrom.GetName] $name_auto_stripmine$이(가) 결정 구조물로 가득 찬 동굴을 발견했습니다. 적절한 정제 및 가공을 통해 이 수정 조각들을 유용한 £rare_crystals£§Y희귀 수정§!으로 바꿀 수 있습니다. 동굴은 불안정하며, 내부에 있는 수정을 손상시키지 않도록 조심스럽게 해체해야 하므로 유감스럽게도 £minerals£§Y광물§! 생산 속도가 느려질 것입니다.\n\n\n\n동굴은 행성의 [from.gigas_stripmine_crystal_deposit_length]개 층에서 추가로 존재할 것으로 예상됩니다." # 13021639921503676283
-  giga_dialog.3306.desc.tensiles: "[fromfrom.GetName] $name_auto_stripmine$은 정말로 놀라운 무언가를 발견했습니다. 행성의 기묘한 부분이 자연적으로 발생하는 £giga_sr_amb_megaconstruction£§Y초강력 인장 물질§! 때문에 중력에 저항하며 '비어있는' 상태입니다. 이 공허로 인해 구조물의 £minerals£§Y광물§! 산출량이 감소하겠지만, 이 자연적 £giga_sr_amb_megaconstruction£§Y초강력 인장 물질§!의 예상 수확량은 향후 거대 구조물 건설 프로젝트에 진정으로 귀중할 것입니다.\n\n이 공간은 오래 지속되지 않을 것으로 예상되며, 추정되는 [from.gigas_stripmine_supertensile_deposit_length] 행성 지층에 대해서만 채굴을 유지할 수 있을 것입니다." # 16230775412260511064
-  giga_dialog.3306.desc.default: "[fromfrom.GetName] $name_auto_stripmine$이 행성 표면 깊숙한 곳에 묻혀 있는 비정상적인 자원 밀집지를 발견했습니다. 이 자원들은 구조물의 생산량을 늘리는 데 매우 귀중할 것이지만, 영원히 지속되지는 않을 것입니다." # 10382711521197129237
   giga_dialog.1901.name: "$name_succ$ 건설 완료" # 7551094251274343633
   giga_dialog.1901.desc: "[giga_system.GetName] 성계에 미래의 $name_succ_full$ 건설 현장이 완료되었습니다! 이 구조물 위에 우리는 거대한 장치를 건설할 것이며, 이는 거대 가스 행성의 대기를 꾸준히 채취하여 이색 가스로 걸러낼 것입니다. 또한, 대기에서 발견되는 수소를 활용하는 핵융합로 덕분에 에너지를 생산할 것입니다." # 5961676629533114416
   giga_dialog.1901.a: "그 두문자어를 고안하는 데 얼마나 걸렸나요?" # 5001943256257145118
   giga_dialog.1903.title: "$name_succ$ 가동!" # 5091184640339097667
   giga_dialog.1903.desc: "우리의 $name_succ$가 [giga_system.GetName] 성계에서 가동 준비를 마쳤습니다! 그것의 트랙터 빔이 활성화되었으며, 가스 거성의 대기를 꾸준히 수확하고 있습니다." # 17801475297700977179
   giga_dialog.1903.a: "훌륭합니다!" # 7941322641266364681
-  giga_dialog.1904.title: "$name_succ$ 고갈됨" # 17306871987416057985
-  giga_dialog.1904.desc: "[giga_system.GetName] 성계의 우리 $name_succ_full$이(가) 이제 가스 거대 행성의 암석 내핵에 도달했습니다. 더 이상 추출할 대기가 남아있지 않으며, 이전 가스 거대 행성은 작고 미네랄이 풍부한 황량한 행성으로 변했습니다. 거대 구조물 자체는 해체되었으며, 내핵은 이제 원하는 방식으로 활용할 수 있습니다." # 588017403330187002
-  giga_dialog.1904.a: "모든 것은 끝나게 마련이다." # 6671712488735107902
   giga_dialog.3001.name: "신화적인 광장" # 7160085180041841809
   giga_dialog.3001.desc: "[from.GetName] 성계에는 기묘한 구조물이 놓여 있습니다. 우리 과학자들은 이 거대한 궤도 시설이 성계의 항성을 공전하는 모습을 보고 당혹감을 금치 못하고 있습니다. 사실, 너무 터무니없어서 장난이거나 센서의 이상 현상인 줄 알았습니다.\n\n$name_ringworld_square$.\n\n[from.GetName] 성계 내에는 정사각형 모양의 링월드가 놓여 있습니다. 과거에 상당한 손상을 입은 것으로 보이지만, 대부분의 구조는 여전히 온전한 상태인 것 같습니다. 이 구조물의 기묘한 형상은 물리학과 공학에 대해 우리가 아는 모든 것에 위배됩니다. 중력으로 인해 수천 년 전에 진작 산산조각 났어야 합니다. 하지만 이곳에 무심히 서서 누군가 그 신비를 밝혀내기를 기다리고 있습니다.\n\n작고 거의 버려진 기지 하나도 항성 위를 조용히 떠다니고 있는데, 우리 과학자들은 이 기지에 이 기묘한 구조물에 대한 유용한 정보가 담겨 있을 것이라 믿고 있습니다.\n\n이것이 대체 어떻게 아직까지 존재하는지 알아내기 위해 이 구조물과 기지를 조사하는 §SSpecial Project§!가 발행되었습니다." # 12253637539987910858
   giga_dialog.3001.gestalt.desc: "[from.GetName] 성계에 기묘한 구조물이 존재합니다. 우리 계산기들은 성계의 항성을 공전하는 이 거대한 궤도 시설을 보고 당혹감을 감추지 못하고 있습니다. 사실, 이 시설은 너무나도 터무니없어서 처음에는 일탈적인 사보타주이거나 센서의 이상 현상으로 간주되었습니다.\n\n$name_ringworld_square$입니다.\n\n[from.GetName] 성계 내부에는 정사각형 형태의 링월드가 존재합니다. 과거에 상당한 타격을 입은 것으로 보이지만, 구조적으로는 대부분 온전한 상태인 듯합니다. 이 구조물의 기묘한 형태는 우리가 알고 있는 물리학과 공학의 모든 상식을 뒤엎습니다. 중력의 법칙에 따르면 수천 년 전에 이미 산산조각 났어야 하기 때문입니다. 하지만 그럼에도 불구하고, 이 구조물은 그 비밀이 밝혀지기를 기다리며 그 자리에 묵묵히 서 있습니다.\n\n항성 위에는 작고 대부분 버려진 상태의 정거장이 조용히 떠 있으며, 우리 계산기들은 이 정거장에 이 특이한 구조물에 대한 유용한 정보가 담겨 있을 것으로 판단하고 있습니다.\n\n이 구조물이 어떻게 아직까지 존재하는지 알아내기 위해, 이 구조물과 정거장을 조사할 §S특수 프로젝트§!가 발행되었습니다." # 5429020498569231094
@@ -147,15 +126,13 @@
   giga_dialog.3009.name: "개릭스, 스퀘어월드의 수호자" # 12021583528990366082
   giga_dialog.3009.desc: "좋습니다! 제가 사각 세계의 기록 보관소를 검토하여 유용할 만한 자료를 찾아볼 수 있습니다. 어떤 종류의 자료를 검색하길 원하십니까?" # 5257090852692344127
   giga_dialog.3009.a: "일반 £physics_research£ §Y물리학 연구§!" # 18195116834595312873
-  giga_dialog.3009.a.response: "좋습니다! [GetPhysicistSwapPluralWithIcon]에 대한 데이터를 검색하겠습니다. 해당 분야의 연구 속도가 §Y10% 증가§!하지만 §Y+5% §!$physicist_type_plural_with_icon$의 비용이 발생합니다.\n\n다른 분야를 강화하고 싶으시다면, 다시 저에게 연락하여 다른 옵션을 선택해 주십시오." # 8610739081106689467
+  giga_dialog.3009.a.response: "Alright! I will retrieve data for your [GetPhysicistSwapPluralWithIcon], which will grant you a §Y10% increase§! to your research speed in that category at the cost of §Y+5% $physicist_type_plural_with_icon$ Upkeep§!.\n\nIf you wish for me to boost a different field, simply contact me again and pick a different option."
   giga_dialog.3009.b: "일반 £society_research£ §Y사회학 연구§!" # 6606045393088105917
-  giga_dialog.3009.b.response: "좋습니다! [GetBiologistSwapPluralWithIcon]에 대한 데이터를 검색하겠습니다. 해당 분야의 연구 속도가 §Y10% 증가§!하지만 §Y+5% §!$biologist_type_plural_with_icon$의 비용이 발생합니다.\n\n다른 분야를 강화하고 싶으시다면, 다시 저에게 연락하여 다른 옵션을 선택해 주십시오." # 7632027611490376940
+  giga_dialog.3009.b.response: "Alright! I will retrieve data for your [GetBiologistSwapPluralWithIcon], which will grant you a §Y10% increase§! to your research speed in that category at the cost of §Y+5% $biologist_type_plural_with_icon$ Upkeep§!.\n\nIf you wish for me to boost a different field, simply contact me again and pick a different option."
   giga_dialog.3009.c: "일반 £engineering_research£ §Y공학 연구§!" # 10644108182414141300
-  giga_dialog.3009.c.response: "좋습니다! [GetEngineerSwapPluralWithIcon]에 대한 데이터를 검색하겠습니다. 해당 분야의 연구 속도가 §Y10% 증가§!하지만 §Y+5% §!$engineer_type_plural_with_icon$의 비용이 발생합니다.\n\n다른 분야를 강화하고 싶으시다면, 다시 저에게 연락하여 다른 옵션을 선택해 주십시오." # 2781067386436767780
+  giga_dialog.3009.c.response: "Alright! I will retrieve data for your [GetEngineerSwapPluralWithIcon], which will grant you a §Y10% increase§! to your research speed in that category at the cost of §Y+5% $engineer_type_plural_with_icon$ Upkeep§!.\n\nIf you wish for me to boost a different field, simply contact me again and pick a different option."
   giga_dialog.3009.d: "됐습니다, 우리 연구를 돕지 마십시오." # 16837642715372180101
   giga_dialog.3009.d.response: "알겠습니다. 당신의 연구 지원을 중단하겠습니다. 원하신다면요..." # 319288122854845364
-  giga_dialog.13701.name: "메가스트럭처 관리" # 1664325945349438622
-  giga_dialog.13701.desc: "새로 건설된 [fromfrom.GetName]에 있는 [from.GetName]에는 메가스트럭처 UI 우측 상단 버튼에서 접근할 수 있는 추가 옵션이 있습니다.\n\n[from.GetName]만이 이러한 추가 옵션을 가진 유일한 메가스트럭처 유형이 아니므로, 해당 버튼이 활성화된 다른 메가스트럭처도 주의 깊게 살펴보십시오.\n\n이 메시지는 단 한 번만 표시됩니다." # 16699560243660579399
   giga_repeatables.001.name: "킬로스트럭처 용량 증가" # 11912543168079058894
   giga_repeatables.001.desc: "메가 엔지니어링 기술 발전에 따라, 공학자들은 우리의 건설 방식에 현대적인 기술을 적용하여 더 많은 킬로스트럭처를 건설 및 유지할 수 있게 되었습니다." # 15082874023564978061
   giga_repeatables.001.a.name: "$SPLENDID$" # 11619078356705176070

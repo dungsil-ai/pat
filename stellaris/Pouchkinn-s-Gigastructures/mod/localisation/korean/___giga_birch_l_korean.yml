@@ -59,6 +59,12 @@
   zone_giga_birch_structure_ops_extra_desc: "버치 시스템 개발을 위해 추가 공간이 할당되었습니다." # 4074104752685656958
   zone_giga_birch_structure_ops_aiondia: "궁전 단지" # 503112008273527833
   zone_giga_birch_structure_ops_aiondia_desc: "웅장함. 부유함. 우아함. 에테르나이트 수도의 육각형 배치 중심부에 있는 거대한 궁전 단지가 구현하는 개념들입니다. 표면적으로는 완벽해 보이지만, 정해진 경로를 벗어난 방문객들은 자동화 시스템이 구조물 유지보수를 위한 자원을 조달하는 데 어려움을 겪고 있으며, 겉으로 보이는 완벽함을 유지하기 위해 보이지 않는 벽들이 벌집처럼 속이 비어 있다는 사실을 곧 알게 될 것입니다." # 1733479556394424765
+  district_giga_birch_structure_origin: "Origin Insula"
+  district_giga_birch_structure_origin_plural: "$district_giga_birch_structure_origin$"
+  district_giga_birch_structure_origin_subtitle: "Structure Operations"
+  district_giga_birch_structure_origin_desc: "Where it all began and where our eyes were opened to the universe. Primarily a nature preserve, some infrastructure still remains."
+  zone_giga_birch_structure_ops_origin: "Historical District"
+  zone_giga_birch_structure_ops_origin_desc: "The original center of our civilization. A testament to where we came from, and what we have overcome."
   district_giga_birch_orykta: "오릭타 인술라" # 3754274533426654416
   district_giga_birch_orykta_plural: "오릭타 인술라이" # 12866372110260480801
   district_giga_birch_orykta_subtitle: "추출 배열" # 14986979843365759082
@@ -79,7 +85,7 @@
   district_giga_birch_orykta_energy_desc: "이 가속기와 수집기들은 에르고스피어를 통해 광자를 통과시킴으로써 블랙홀의 각운동량을 빼앗습니다." # 15130969956944140553
   mod_district_giga_birch_orykta_energy_max_add: "최대 $district_giga_birch_orykta_energy_plural$" # 18306957813896833871
   zone_giga_birch_orykta_energy: "발전기 구역" # 2022471298502462146
-  zone_giga_birch_orykta_energy_desc: "" # 17241709254077376921
+  zone_giga_birch_orykta_energy_desc: ""
   zone_giga_birch_orykta_insula_energy: "발전기 집중" # 14742802258098801764
   zone_giga_birch_orykta_insula_energy_desc: "플라즈마 도관과 초전도 송전선이 차폐된 상부 구조를 가로질러 $name_birch$의 심장부에 잠든 고요한 분노를 끌어냅니다." # 4671020105844987461
   zone_giga_birch_orykta_insula_energy_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_energy_plural$§!\n\n$job_giga_birch_orykta_manager_energy_effect_desc$" # 1865666964781605365
@@ -100,7 +106,7 @@
   district_giga_birch_orykta_minerals_desc: "사건의 지평선 너머에서 잃어버린 물질을 회수하는 뒤틀린 중력 드릴." # 7974786575045506158
   mod_district_giga_birch_orykta_minerals_max_add: "최대 $district_giga_birch_orykta_minerals_plural$" # 15231106903701190931
   zone_giga_birch_orykta_minerals: "채굴 지대" # 7654922645740312843
-  zone_giga_birch_orykta_minerals_desc: "" # 17241709254077376921
+  zone_giga_birch_orykta_minerals_desc: ""
   zone_giga_birch_orykta_insula_minerals: "채굴 집중" # 16119238628576063617
   zone_giga_birch_orykta_insula_minerals_desc: "확장된 수송 통로와 거대한 처리 시설을 통해 $pc_core_black_hole$에서 회수된 원자재를 문명의 근간으로 변환합니다." # 11214728627815895447
   zone_giga_birch_orykta_insula_minerals_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_minerals_plural$§!\n\n$job_giga_birch_orykta_manager_minerals_effect_desc$" # 543026814807450640
@@ -119,7 +125,7 @@
   district_giga_birch_orykta_refinery_desc: "전략 자원 생산을 전담하는 중력 보조 융합 도가니입니다." # 17239684419109545041
   mod_district_giga_birch_orykta_refinery_max_add: "최대 $district_giga_birch_orykta_refinery_plural$" # 10185533526376451698
   zone_giga_birch_orykta_refinery: "정제 구역" # 10630939379122384244
-  zone_giga_birch_orykta_refinery_desc: "" # 17241709254077376921
+  zone_giga_birch_orykta_refinery_desc: ""
   zone_giga_birch_orykta_insula_refinery: "정제소 집중" # 12036328341630333640
   zone_giga_birch_orykta_insula_refinery_desc: "가장 낮은 층의 뒤틀린 공간 속에서, 핵융합 합성 노드들이 단순한 원소를 이국적인 물질로 변환합니다." # 1713670288548683248
   zone_giga_birch_orykta_insula_refinery_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_refinery_plural$§!\n\n$job_giga_birch_orykta_manager_refinery_effect_desc$" # 4536564907634815083
@@ -136,7 +142,7 @@
   district_giga_birch_orykta_dark_matter_desc: "블랙홀에서 암흑 물질을 유도하여 분리하는 데 사용되는 정교한 탐지기들과 훨씬 더 정교한 조작기들의 격자." # 16550726232471905892
   mod_district_giga_birch_orykta_dark_matter_max_add: "최대 $district_giga_birch_orykta_dark_matter_plural$" # 16592322225910205920
   zone_giga_birch_orykta_dark_matter: "암흑 물질 지대" # 11633459110644460440
-  zone_giga_birch_orykta_dark_matter_desc: "" # 17241709254077376921
+  zone_giga_birch_orykta_dark_matter_desc: ""
   zone_giga_birch_orykta_insula_dark_matter: "직조 집중" # 17040475736241639888
   zone_giga_birch_orykta_insula_dark_matter_desc: "반짝이는 입자 포획 스크린이 공간을 접힌 그물망 형태로 구부려 산업 규모로 암흑 물질을 포획합니다." # 1398293870909174631
   zone_giga_birch_orykta_insula_dark_matter_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_dark_matter_plural$§!\n\n$job_giga_birch_orykta_manager_dark_matter_effect_desc$" # 776021562586177771
@@ -151,7 +157,7 @@
   district_giga_birch_orykta_negative_mass_desc: "블랙홀의 사건 지평선 근처에 있는 특이한 조건들은 음의 질량 변환에 유용함이 입증되었습니다." # 6535274098525300606
   mod_district_giga_birch_orykta_negative_mass_max_add: "최대 $district_giga_birch_orykta_negative_mass_plural$" # 7942983927958885072
   zone_giga_birch_orykta_negative_mass: "음질량 지대" # 13258780662250123885
-  zone_giga_birch_orykta_negative_mass_desc: "" # 17241709254077376921
+  zone_giga_birch_orykta_negative_mass_desc: ""
   zone_giga_birch_orykta_insula_negative_mass: "변환 집중" # 14975015953681016719
   zone_giga_birch_orykta_insula_negative_mass_desc: "음질량 변환 시설을 위한 효율적인 저장, 운송 및 자재 처리." # 3474273496603838709
   zone_giga_birch_orykta_insula_negative_mass_effect: "£job_giga_birch_orykta_manager£ §Y$job_giga_birch_orykta_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_orykta_manager_negative_mass_plural$§!\n\n$job_giga_birch_orykta_manager_negative_mass_effect_desc$" # 1442861872687102954
@@ -178,7 +184,7 @@
   district_giga_birch_ktisma_foundry_desc: "빽빽하게 늘어선 제련소들에서 고급 사업에 사용될 고품질 합금이 생산됩니다." # 17606836561286492589
   mod_district_giga_birch_ktisma_foundry_max_add: "최대 $district_giga_birch_ktisma_foundry_plural$" # 10520275534147445734
   zone_giga_birch_ktisma_foundry: "주조 구역" # 4370278073501205908
-  zone_giga_birch_ktisma_foundry_desc: "" # 17241709254077376921
+  zone_giga_birch_ktisma_foundry_desc: ""
   zone_giga_birch_ktisma_insula_foundry: "주조 집중" # 9231556708594746047
   zone_giga_birch_ktisma_insula_foundry_desc: "보조 재료 공급 장치가 끝없는 광석 흐름을 굶주린 제련소로 전달합니다." # 2588138466082794876
   zone_giga_birch_ktisma_insula_foundry_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_foundry_plural$§!\n\n$job_giga_birch_ktisma_manager_foundry_effect_desc$" # 14960167276520163662
@@ -199,7 +205,7 @@
   district_giga_birch_ktisma_factory_desc: "끝없는 생산 라인이 민간 시장에 공급할 상품들을 쏟아냅니다." # 9418911458130511432
   mod_district_giga_birch_ktisma_factory_max_add: "최대 $district_giga_birch_ktisma_factory_plural$" # 3395303337101083107
   zone_giga_birch_ktisma_factory: "공장 구역" # 1829434067874942646
-  zone_giga_birch_ktisma_factory_desc: "" # 17241709254077376921
+  zone_giga_birch_ktisma_factory_desc: ""
   zone_giga_birch_ktisma_insula_factory: "공장 집중" # 9675887788647836777
   zone_giga_birch_ktisma_insula_factory_desc: "민간 산업에 최적화된 수송 네트워크는 모든 요청이 제시간에 처리되도록 보장합니다." # 7110100426481665079
   zone_giga_birch_ktisma_insula_factory_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_factory_plural$§!\n\n$job_giga_birch_ktisma_manager_factory_effect_desc$" # 17756436930407018725
@@ -220,7 +226,7 @@
   district_giga_birch_ktisma_trade_desc_gestalt: "긴밀하게 연결된 수송 네트워크가 제조 허브 간의 수송을 최적화합니다." # 1814376488236557982
   mod_district_giga_birch_ktisma_trade_max_add: "최대 $district_giga_birch_ktisma_trade_plural$" # 12232383440674295725
   zone_giga_birch_ktisma_trade: "무역 지대" # 16358649036485848785
-  zone_giga_birch_ktisma_trade_desc: "" # 17241709254077376921
+  zone_giga_birch_ktisma_trade_desc: ""
   zone_giga_birch_ktisma_insula_trade: "물류 중심지" # 18089516102531164615
   zone_giga_birch_ktisma_insula_trade_desc: "편의성과 처리량의 완벽한 교차점 - 수송의 완성입니다." # 6598334431520439252
   zone_giga_birch_ktisma_insula_trade_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_trade_plural$§!\n\n$job_giga_birch_ktisma_manager_trade_effect_desc$" # 11508123131227019922
@@ -237,7 +243,7 @@
   district_giga_birch_ktisma_supertensiles_desc: "$district_giga_supertensiles_desc$" # 2633434774543255058
   mod_district_giga_birch_ktisma_supertensiles_max_add: "최대 $district_giga_birch_ktisma_supertensiles_plural$" # 9629968940195179700
   zone_giga_birch_ktisma_supertensiles: "메가물류 구역" # 8507365434613539192
-  zone_giga_birch_ktisma_supertensiles_desc: "" # 17241709254077376921
+  zone_giga_birch_ktisma_supertensiles_desc: ""
   zone_giga_birch_ktisma_insula_supertensiles: "메가물류 집중" # 5464422832115424481
   zone_giga_birch_ktisma_insula_supertensiles_desc: "우주항과 제조 시설 간의 향상된 상호 연결을 통해 그 어느 때보다 뛰어난 조율이 가능해졌습니다." # 4329798938027119081
   zone_giga_birch_ktisma_insula_supertensiles_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_supertensiles_plural$§!\n\n$job_giga_birch_ktisma_manager_supertensiles_effect_desc$" # 6683189764164491318
@@ -252,7 +258,7 @@
   district_giga_birch_ktisma_sentient_metal_desc: "이 특수 시설들은 지각 있는 금속 배양체에 그들이 증식하는 데 필요한 합금과 에너지를 공급합니다." # 17497791461472570043
   mod_district_giga_birch_ktisma_sentient_metal_max_add: "최대 $district_giga_birch_ktisma_sentient_metal_plural$" # 2677923927145897400
   zone_giga_birch_ktisma_sentient_metal: "지성 금속 구역" # 3528001126772999070
-  zone_giga_birch_ktisma_sentient_metal_desc: "" # 17241709254077376921
+  zone_giga_birch_ktisma_sentient_metal_desc: ""
   zone_giga_birch_ktisma_insula_sentient_metal: "지성 금속 집중" # 1117213872745251179
   zone_giga_birch_ktisma_insula_sentient_metal_desc: "확장된 공급 비축량, 직접 에너지 도관, 그리고 개선된 제품 처리 시설이 지성 금속 증식 과정을 효율화합니다." # 5357165836175859801
   zone_giga_birch_ktisma_insula_sentient_metal_effect: "£job_giga_birch_ktisma_manager£ §Y$job_giga_birch_ktisma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_ktisma_manager_sentient_metal_plural$§!\n\n$job_giga_birch_ktisma_manager_sentient_metal_effect_desc$" # 3689257107353833649
@@ -281,7 +287,7 @@
   district_giga_birch_physma_farm_desc_anglers: "무한한 지평선 너머로 생명으로 가득 찬 끝없는 바다가 펼쳐져 있습니다." # 1599950791698019429
   mod_district_giga_birch_physma_farm_max_add: "최대 $district_giga_birch_physma_farm_plural$" # 12986831503911640907
   zone_giga_birch_physma_farm: "농장 구역" # 563705959225351347
-  zone_giga_birch_physma_farm_desc: "" # 17241709254077376921
+  zone_giga_birch_physma_farm_desc: ""
   zone_giga_birch_physma_insula_farm: "농업 집중" # 16303253789331858057
   zone_giga_birch_physma_insula_farm_desc: "완벽하게 설계된 생태계 덕분에 식량 생산과 수집이 사소한 일이 되었습니다." # 14325671898242254581
   zone_giga_birch_physma_insula_farm_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y[GigaGetBirchManagerFarmPlural]§!\n\n[GigaGetBirchManagerFarmEffect]" # 15517673771843113518
@@ -308,7 +314,7 @@
   district_giga_birch_physma_laboratory_desc: "온갖 종류의 연구 시설들이 이 섹터를 가득 채우고 있습니다." # 2910178942831040013
   mod_district_giga_birch_physma_laboratory_max_add: "최대 $district_giga_birch_physma_laboratory_plural$" # 8937349542935505387
   zone_giga_birch_physma_laboratory: "연구 지대" # 17443735663964780284
-  zone_giga_birch_physma_laboratory_desc: "" # 17241709254077376921
+  zone_giga_birch_physma_laboratory_desc: ""
   zone_giga_birch_physma_insula_laboratory: "연구 집중" # 6955921175860148341
   zone_giga_birch_physma_insula_laboratory_desc: "이곳에서는 연구와 실험이 삶의 방식이 됩니다. 모든 행동은 통찰을 담고 있으며, 모든 움직임은 새로운 발견을 가져옵니다." # 7813051519322706595
   zone_giga_birch_physma_insula_laboratory_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_physma_manager_laboratory_plural$§!\n\n$job_giga_birch_physma_manager_laboratory_effect_desc$" # 10803566300320783815
@@ -331,7 +337,7 @@
   district_giga_birch_physma_administration_desc_sanctuary: "유기체가 쾌적하고 충실하며, 무엇보다도 통제된 방식으로 삶을 영위할 수 있는 넓은 거주 구역입니다." # 1033043731417129220
   mod_district_giga_birch_physma_administration_max_add: "최대 $district_giga_birch_physma_administration_plural$" # 12918439605833348424
   zone_giga_birch_physma_administration: "통합 지대" # 1865279135565404213
-  zone_giga_birch_physma_administration_desc: "" # 17241709254077376921
+  zone_giga_birch_physma_administration_desc: ""
   zone_giga_birch_physma_insula_administration: "통합 집중" # 1441353659240146849
   zone_giga_birch_physma_insula_administration_desc: "어떤 형태든 문화적 표현은 필수적입니다." # 11276248492889342884
   zone_giga_birch_physma_insula_administration_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y[GigaGetBirchManagerAdministrationPlural]§!\n\n[GigaGetBirchManagerAdministrationEffect]" # 6850143430355622321
@@ -348,7 +354,7 @@
   district_giga_birch_physma_fortress_desc: "인공 산맥 깊숙이 자리 잡은 이 강력한 보루들은 버치 월드 인슐라의 광대한 영역에 걸쳐 영향력을 투사합니다." # 77155088609557704
   mod_district_giga_birch_physma_fortress_max_add: "최대 $district_giga_birch_physma_fortress_plural$" # 15942608324771378524
   zone_giga_birch_physma_fortress: "요새 지대" # 15700601501090591326
-  zone_giga_birch_physma_fortress_desc: "" # 17241709254077376921
+  zone_giga_birch_physma_fortress_desc: ""
   zone_giga_birch_physma_insula_fortress: "군사 집중" # 15572204899958976279
   zone_giga_birch_physma_insula_fortress_desc: "언덕에도 눈이 달려 있다." # 5965029457955505065
   zone_giga_birch_physma_insula_fortress_effect: "£job_giga_birch_physma_manager£ §Y$job_giga_birch_physma_manager_plural$§! $giga_birch_manager_replace$ §Y$job_giga_birch_physma_manager_fortress_plural$§!\n\n$job_giga_birch_physma_manager_fortress_effect_desc$" # 12989325057470637364
@@ -398,7 +404,7 @@
   giga_birch_insula_name_plural: "$giga_birch_insula_col$인술라에§!" # 13626994552401057718
   giga_birch_district_insula_tooltip: "$giga_birch_insula_icon$$giga_birch_insula_col$인슐라§!는 일반 행성의 지구와 유사한 거대한 인공 대륙입니다. 각 유형은 일반적인 생산 영역을 담당하며 해당 구역을 건설하여 더욱 전문화할 수 있지만, 모두 동일한 건설 제한을 공유합니다." # 9621402810724051305
   mod_giga_birch_district_insula_tag: "이것은 $giga_birch_insula_icon$$giga_birch_insula_name$입니다.\n다른 $giga_birch_insula_name$ 유형 특구들과 한계치를 공유합니다.\n" # 151676606165646849
-  mod_giga_birch_district_insula_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_insula_tag_short: ""
   mod_giga_birch_district_insula_max: "최대 $giga_birch_insula_col$ 인술라에§!" # 14392404393733638413
   mod_giga_birch_district_insula_base: "$mod_giga_birch_district_insula_max$" # 11103534730583983465
   mod_giga_birch_district_insula_min: "최소 $giga_birch_insula_col$인술라§!" # 3574386346702558623
@@ -413,9 +419,9 @@
   giga_birch_district_orykta_desc: "$giga_birch_orykta_icon$$giga_birch_orykta_name$ 섹터는 중력 보조를 통한 $giga_r_motes$$giga_r_gases$$giga_r_crystals$ [owner.BirchNegativeMass] §Y전략 자원§! 처리와 $name_birch$의 $pc_core_black_hole$에서 접근 불가능한 $giga_r_energy$$giga_r_minerals$$giga_r_dm$ §Y원자재§!를 수집하는 데 특화되어 있습니다." # 815861561953538634
   giga_birch_district_orykta_tooltip: "$giga_birch_district_orykta_desc$\n " # 17340806566062495383
   mod_giga_birch_district_orykta_tag: "이것은 $giga_birch_orykta_icon$$giga_birch_orykta_name$ 구역입니다. 다른 $giga_birch_orykta_name$ 구역과 한도를 공유합니다.\n" # 10429373303262892591
-  mod_giga_birch_district_orykta_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_orykta_tag_short: ""
   mod_giga_birch_district_insula_orykta_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
-  mod_giga_birch_district_insula_orykta_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_insula_orykta_tag_short: ""
   mod_giga_birch_district_orykta_max: "최대 $giga_birch_orykta_col$Orykta§! 섹터" # 8254131076140111408
   giga_birch_district_orykta_allow: "§R이 행성은 더 이상 $giga_birch_orykta_name$ 섹터를 감당할 수 없습니다§!" # 6118681413443476385
   giga_birch_ktisma_col: "§L" # 10738380520156576673
@@ -425,9 +431,9 @@
   giga_birch_district_ktisma_desc: "$giga_birch_ktisma_icon$$giga_birch_ktisma_name$ 섹터는 £trade£ §Y물류§!, 그리고 $giga_r_alloys$ [owner.BirchCGs][owner.BirchSentientMetal][owner.BirchSupertensiles] §Y첨단 소재§!의 제조 및 가공에 특화되어 있습니다." # 6228177477376827519
   giga_birch_district_ktisma_tooltip: "$giga_birch_district_ktisma_desc$\n " # 15922434584974760615
   mod_giga_birch_district_ktisma_tag: "이것은 $giga_birch_ktisma_icon$$giga_birch_ktisma_name$ 구역입니다. 다른 $giga_birch_ktisma_name$ 구역과 상한선을 공유합니다.\n" # 14358253582394039938
-  mod_giga_birch_district_ktisma_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_ktisma_tag_short: ""
   mod_giga_birch_district_insula_ktisma_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
-  mod_giga_birch_district_insula_ktisma_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_insula_ktisma_tag_short: ""
   mod_giga_birch_district_ktisma_max: "최대 $giga_birch_ktisma_col$크티스마§! 섹터" # 12321460820882719270
   giga_birch_district_ktisma_allow: "§R이 행성은 더 이상 $giga_birch_ktisma_name$ 구역을 지원할 수 없습니다§!" # 10910400769760342524
   giga_birch_physma_col: "§E" # 10096669700574791507
@@ -438,9 +444,9 @@
   giga_birch_district_physma_tooltip: "$giga_birch_district_physma_desc$\n " # 8501298215513493296
   giga_birch_district_physma_gestalt_tooltip: "$giga_birch_physma_name$ 구역은 사회와 자연 세계의 재현 및 연구에 특화되어 있습니다. £food£ §Y농장§!, $giga_r_research$ §Y연구소§!, 그리고 £unity£ §Y문화 유적지§!가 이곳에서 발견될 수 있습니다." # 12335677890213976271
   mod_giga_birch_district_physma_tag: "이것은 $giga_birch_physma_icon$$giga_birch_physma_name$ 구역입니다. 이는 다른 $giga_birch_physma_name$ 구역과 상한선을 공유합니다.\n" # 1019189796604687409
-  mod_giga_birch_district_physma_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_physma_tag_short: ""
   mod_giga_birch_district_insula_physma_tag: "$mod_giga_birch_district_insula_tag$" # 17091376739460138739
-  mod_giga_birch_district_insula_physma_tag_short: "" # 17241709254077376921
+  mod_giga_birch_district_insula_physma_tag_short: ""
   mod_giga_birch_district_physma_max: "최대 `$giga_birch_physma_col$Physma§`! 구역" # 16342429754666022662
   giga_birch_district_physma_allow: "§R이 행성은 더 이상 $giga_birch_physma_name$ 섹터를 수용할 수 없습니다!§!" # 9389759308932189236
   planet_giga_birch_structure_managers: "버치 구조물 관리 직업" # 3354122989811321777
@@ -458,7 +464,7 @@
   job_giga_birch_structure_manager_drone: "인슐라 건설 관리 클러스터" # 9450910223357332111
   job_giga_birch_structure_manager_drone_plural: "인술라 건설 관리 클러스터" # 9964466487379004474
   job_giga_birch_structure_manager_drone_desc: "이 드론 군체들은 전체 건설 작업의 핵심부로서, 하급 공학 드론 팀을 지휘하여 새로운 인술라를 건설합니다." # 12454677199346059947
-  job_giga_birch_structure_manager_drone_effect_desc: "$job_giga_birch_structure_manager_drone_swap_plural_with_icon$는 £alloys£ §Y$alloys$§!와 £energy£ §Y$energy$§!를 £engineering_research£ §Y$engineering_research$§! 및 £unity£ §Y$unity$§!(으)로 전환하고, §Y실업§!을 해소하며, £job_giga_birch_structure_engineer_drone£ $job_giga_birch_structure_engineer_drone$ 직업을 제공합니다.\n$job_giga_birch_structure_engineer_drone_effect_desc$" # 3219394711492098950
+  job_giga_birch_structure_manager_drone_effect_desc: "$job_giga_birch_structure_manager_drone_swap_plural_with_icon$ turn $r_alloys$ and $r_energy$ into $r_engineering$ and $r_unity$, counter §YUnemployment§!, and provide £job_giga_birch_structure_engineer_drone£ $job_giga_birch_structure_engineer_drone$ Jobs\n$job_giga_birch_structure_engineer_drone_effect_desc$"
   job_giga_birch_structure_manager_drone_swap_plural_with_icon: "[giga_birch_structure_manager_drone.GetIcon] [giga_birch_structure_manager_drone.GetNamePlural]" # 14059556065505805457
   mod_job_giga_birch_structure_manager_drone_add: "[giga_birch_structure_manager_drone.GetName] 직업" # 9024785047328025900
   mod_job_giga_birch_structure_manager_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_birch_structure_manager_drone.GetName] 직업" # 15681589898104455745
@@ -490,7 +496,7 @@
   job_giga_birch_orykta_manager_energy: "오릭타 펜로즈 관리자" # 7193415311032204313
   job_giga_birch_orykta_manager_energy_plural: "오릭타 펜로즈 관리자들" # 17316105070148922699
   job_giga_birch_orykta_manager_energy_desc: "감마 반사판, 입자 가속기, 그리고 수집 배열은 에너지 생성 분야 전문가들의 소관입니다." # 2610676327864124002
-  job_giga_birch_orykta_manager_energy_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_energy_plural$는 추가로 막대한 양의 £energy£ §Y$energy$§!를 생산하며, £mod_pop_bonus_workforce_mult£ §Y$technician_jobs_bonus_workforce_mult$§!를 더욱 증가시킵니다." # 70932845286450265
+  job_giga_birch_orykta_manager_energy_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_energy_plural$ additionally produce a large amount of $r_energy$ and further increase £mod_pop_bonus_workforce_mult£ §Y$technician_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_manager_energy_minerals: "오릭타 추출 감독관" # 5046139381401109477
   job_giga_birch_orykta_manager_energy_minerals_plural: "오릭타 추출 감독관들" # 14410083587043000603
   job_giga_birch_orykta_manager_energy_minerals_desc: "입자 수집기와 중력 보어 운용 전문가인 이 숙련된 관리자들은 산업의 생명줄이 계속 흐르게 합니다." # 16172424465915659136
@@ -529,18 +535,18 @@
   job_giga_birch_orykta_manager_dark_matter: "오릭타 마스터 위버" # 12450189570981928079
   job_giga_birch_orykta_manager_dark_matter_plural: "오릭타 마스터 위버들" # 10500591925386148993
   job_giga_birch_orykta_manager_dark_matter_desc: "직조 기술의 대가인 이 숙련된 관리자들은 블랙홀의 안개 속에서 암흑 물질을 극도의 효율로 추출합니다." # 11649732913344538966
-  job_giga_birch_orykta_manager_dark_matter_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_dark_matter_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £sr_dark_matter£ §Y$sr_dark_matter$§!(으)로 변환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_dark_matter_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 295981776504507953
+  job_giga_birch_orykta_manager_dark_matter_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_dark_matter_plural$ additionally turn $r_minerals$ and $r_energy$ into $r_dark_matter$ and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_dark_matter_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_manager_dark_matter_negative_mass: "오릭타 추상 물리학자" # 16745959542597564719
   job_giga_birch_orykta_manager_dark_matter_negative_mass_plural: "오릭타 추상 물리학자들" # 12716507638515780564
   job_giga_birch_orykta_manager_dark_matter_negative_mass_desc: "바리온은 이미 지난 천년기의 유물입니다." # 406219211201663457
   job_giga_birch_orykta_manager_negative_mass: "오릭타 변환 관리자" # 2291384465604199988
   job_giga_birch_orykta_manager_negative_mass_plural: "오릭타 변환 관리자들" # 2454862051460703934
   job_giga_birch_orykta_manager_negative_mass_desc: "거대 변환 배열의 감독관인 이 숙련된 관리자들은 $giga_sr_negative_mass$의 효율적인 생산을 보장합니다." # 14420927124519207673
-  job_giga_birch_orykta_manager_negative_mass_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_negative_mass_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!(으)로 변환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_negative_mass_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 7231678018103311496
+  job_giga_birch_orykta_manager_negative_mass_effect_desc: "£job_giga_birch_orykta_manager£ $job_giga_birch_orykta_manager_negative_mass_plural$ additionally turn $r_minerals$ and $r_energy$ into £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_negative_mass_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_worker: "오릭타 인술라 노동자" # 18373357029631687824
   job_giga_birch_orykta_worker_plural: "오릭타 인술라 노동자" # 13649704749734828165
   job_giga_birch_orykta_worker_desc: "오릭타 인술라 시설 배치를 위해 훈련되었으나, 아직 특정 직무가 할당되지 않은 작업자들." # 15063000466159864256
-  job_giga_birch_orykta_worker_effect_desc: "$job_giga_birch_orykta_worker_swap_plural_with_icon$는 소량의 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!를 생산하며, $giga_birch_orykta_name$ 구역을 건설하여 전문화할 수 있습니다." # 11091998971025470100
+  job_giga_birch_orykta_worker_effect_desc: "$job_giga_birch_orykta_worker_swap_plural_with_icon$ produce a small amount of $r_energy$ and $r_minerals$, and can be specialized by building $giga_birch_orykta_name$ Sectors"
   job_giga_birch_orykta_worker_swap_plural_with_icon: "[giga_birch_orykta_worker.GetIcon] [giga_birch_orykta_worker.GetNamePlural]" # 9796121987944630791
   mod_job_giga_birch_orykta_worker_add: "[giga_birch_orykta_worker.GetName] 직업" # 9712229710752945581
   mod_job_giga_birch_orykta_worker_per_pop: "§G+1§! [giga_birch_orykta_worker.GetName] 직업 (팝 $VALUE$당)" # 7162133812547442900
@@ -554,7 +560,7 @@
   job_giga_birch_orykta_manager_drone_energy: "오릭타 펜로즈 관리 클러스터" # 14664057774069683971
   job_giga_birch_orykta_manager_drone_energy_plural: "오릭타 펜로즈 관리 클러스터들" # 13072151932962176515
   job_giga_birch_orykta_manager_drone_energy_desc: "감마 반사기, 입자 가속기, 그리고 수집 배열은 이 전문화된 드론 클러스터의 관할 구역입니다." # 6787834348428369495
-  job_giga_birch_orykta_manager_drone_energy_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_energy_plural$는 추가로 대량의 £energy£ §Y$energy$§!를 생산하며, £mod_pop_bonus_workforce_mult£ §Y$technician_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 4487779410595770746
+  job_giga_birch_orykta_manager_drone_energy_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_energy_plural$ additionally produce a large amount of $r_energy$ and further increase £mod_pop_bonus_workforce_mult£ §Y$technician_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_manager_drone_energy_minerals: "오릭타 추출 클러스터" # 15620794262656651423
   job_giga_birch_orykta_manager_drone_energy_minerals_plural: "오릭타 추출 클러스터" # 16972043504973423267
   job_giga_birch_orykta_manager_drone_energy_minerals_desc: "입자 수집기와 중력 시추기 운용의 전문가인 이 목적형 드론 클러스터는 산업의 생명줄을 유지합니다." # 18314938683956496941
@@ -593,18 +599,18 @@
   job_giga_birch_orykta_manager_drone_dark_matter: "오릭타 직조 초지성체" # 7688876471425919477
   job_giga_birch_orykta_manager_drone_dark_matter_plural: "오릭타 직조 초지성체들" # 18022549794931532230
   job_giga_birch_orykta_manager_drone_dark_matter_desc: "직조 기술의 대가인 이 목적 지향적 드론 군집들은 블랙홀의 안개 속에서 암흑 물질을 극도의 효율로 추출해냅니다." # 14370466317272929727
-  job_giga_birch_orykta_manager_drone_dark_matter_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_dark_matter_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £sr_dark_matter£ §Y$sr_dark_matter$§!로 변환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_dark_matter_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 6435736554828022977
+  job_giga_birch_orykta_manager_drone_dark_matter_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_dark_matter_plural$ additionally turn £minerals£ §Y$minerals$§! and $r_energy$ into £sr_dark_matter£ §Y$sr_dark_matter$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_dark_matter_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_manager_drone_dark_matter_negative_mass: "오릭타 추상화 군집" # 16650678429537814159
   job_giga_birch_orykta_manager_drone_dark_matter_negative_mass_plural: "오릭타 추상화 군집들" # 15671471572052419861
   job_giga_birch_orykta_manager_drone_dark_matter_negative_mass_desc: "$job_giga_birch_orykta_manager_dark_matter_negative_mass_desc$" # 14616901532200717998
   job_giga_birch_orykta_manager_drone_negative_mass: "오릭타 변환 클러스터" # 16220574793150021081
   job_giga_birch_orykta_manager_drone_negative_mass_plural: "오릭타 변환 클러스터" # 342060403904508039
   job_giga_birch_orykta_manager_drone_negative_mass_desc: "거대 변환 배열의 감독관인 이 목적 지향적 드론 클러스터는 $giga_sr_negative_mass$의 효율적인 생산을 보장합니다." # 2578562264547009831
-  job_giga_birch_orykta_manager_drone_negative_mass_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_negative_mass_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§!(으)로 변환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_negative_mass_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 1562807934535203327
+  job_giga_birch_orykta_manager_drone_negative_mass_effect_desc: "£job_giga_birch_orykta_manager_drone£ $job_giga_birch_orykta_manager_drone_negative_mass_plural$ additionally turn £minerals£ §Y$minerals$§! and $r_energy$ into £giga_sr_negative_mass£ §Y$giga_sr_negative_mass$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_negative_mass_jobs_bonus_workforce_mult$§!"
   job_giga_birch_orykta_worker_drone: "오릭타 인술라 드론" # 16465772007585181140
   job_giga_birch_orykta_worker_drone_plural: "오릭타 인슐라 드론" # 7907334477268063434
   job_giga_birch_orykta_worker_drone_desc: "오릭타 인술라 시설의 인력 충원을 담당하도록 배치되었지만, 아직 할 특정 작업이 없는 드론들." # 8932047924027777687
-  job_giga_birch_orykta_worker_drone_effect_desc: "$job_giga_birch_orykta_worker_drone_swap_plural_with_icon$은 소량의 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!를 생산하며, $giga_birch_orykta_name$ 구역을 건설하여 전문화할 수 있습니다." # 11606316971346727129
+  job_giga_birch_orykta_worker_drone_effect_desc: "$job_giga_birch_orykta_worker_drone_swap_plural_with_icon$ produce a small amount of $r_energy$ and £minerals£ §Y$minerals$§!, and can be specialized by building $giga_birch_orykta_name$ Sectors"
   job_giga_birch_orykta_worker_drone_swap_plural_with_icon: "[giga_birch_orykta_worker_drone.GetIcon] [giga_birch_orykta_worker_drone.GetNamePlural]" # 17889763162816536028
   mod_job_giga_birch_orykta_worker_drone_add: "[giga_birch_orykta_worker_drone.GetName] 직업" # 13574430858353977009
   mod_job_giga_birch_orykta_worker_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_birch_orykta_worker_drone.GetName] 직업" # 7364736005047765398
@@ -664,7 +670,7 @@
   job_giga_birch_ktisma_manager_sentient_metal: "크티스마 지성 금속 사육사" # 5358931552883160606
   job_giga_birch_ktisma_manager_sentient_metal_plural: "크티스마 지성 금속 사육사들" # 7397857367467724820
   job_giga_birch_ktisma_manager_sentient_metal_desc: "악명 높을 정도로 변덕스러운 $giga_sr_sentient_metal$을 키우는 일은 단호한 손길과 넘치는 인내심으로 다루는 것이 가장 좋습니다." # 7231508921044153704
-  job_giga_birch_ktisma_manager_sentient_metal_effect_desc: "£job_giga_birch_ktisma_manager£ $job_giga_birch_ktisma_manager_sentient_metal_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§!(으)로 전환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_sentient_metal_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 5363147417395340317
+  job_giga_birch_ktisma_manager_sentient_metal_effect_desc: "£job_giga_birch_ktisma_manager£ $job_giga_birch_ktisma_manager_sentient_metal_plural$ additionally turn £minerals£ §Y$minerals$§! and $r_energy$ into £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_sentient_metal_jobs_bonus_workforce_mult$§!"
   job_giga_birch_ktisma_worker: "크티스마 인술라 노동자" # 8476474909963324035
   job_giga_birch_ktisma_worker_plural: "크티스마 인술라 노동자" # 10449022437456267041
   job_giga_birch_ktisma_worker_desc: "크티스마 인술라의 시설 인력으로 훈련되었으나, 아직 특정 업무에 할당되지 않은 인력." # 816340531975559220
@@ -712,7 +718,7 @@
   job_giga_birch_ktisma_manager_drone_trade: "크티스마 물류 오버마인드" # 7082922112097019115
   job_giga_birch_ktisma_manager_drone_trade_plural: "크티스마 물류 오버마인드들" # 7535500448484352823
   job_giga_birch_ktisma_manager_drone_trade_desc: "[GetName]처럼 거대한 행성에서 발생하는 물류적 난제는 아무리 강조해도 지나치지 않지만, 이 특수 드론 클러스터들은 이를 손쉽게 처리합니다." # 5620308310088837217
-  job_giga_birch_ktisma_manager_drone_trade_effect_desc: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_trade_plural$는 추가로 £minerals£ §Y$minerals$§!(또는 £energy£ §Y$energy$§!)를 £trade£ §Y$trade$§!로 전환하며, £mod_pop_bonus_workforce_mult£ §Y$trader_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 9128295166539587495
+  job_giga_birch_ktisma_manager_drone_trade_effect_desc: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_trade_plural$ additionally turn £minerals£ §Y$minerals$§! (or $r_energy$) into £trade£ §Y$trade$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$trader_jobs_bonus_workforce_mult$§!"
   job_giga_birch_ktisma_manager_drone_trade_supertensiles: "크티스마 거대 물류 오버마인드" # 8466874264770714244
   job_giga_birch_ktisma_manager_drone_trade_supertensiles_plural: "크티스마 거대 물류 오버마인드들" # 590049019213857610
   job_giga_birch_ktisma_manager_drone_trade_supertensiles_desc: "건설 프로젝트의 규모가 진정으로 거대해질 때, 이 전문 드론들이 자재의 흐름을 관리하는 것을 보게 될 것입니다." # 1087159558198299936
@@ -729,7 +735,7 @@
   job_giga_birch_ktisma_manager_drone_sentient_metal: "크티스마 지성 금속 번식 노드" # 3222783217887441887
   job_giga_birch_ktisma_manager_drone_sentient_metal_plural: "크티스마 지성 금속 번식 노드들" # 17407633540830395216
   job_giga_birch_ktisma_manager_drone_sentient_metal_desc: "$job_giga_birch_ktisma_manager_sentient_metal_desc$" # 12177767713861376745
-  job_giga_birch_ktisma_manager_drone_sentient_metal_effect_desc: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_sentient_metal_plural$는 추가로 £minerals£ §Y$minerals$§!와 £energy£ §Y$energy$§!를 £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§!로 전환하며, £mod_pop_bonus_workforce_mult£ §Y$giga_sentient_metal_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 315241954611157325
+  job_giga_birch_ktisma_manager_drone_sentient_metal_effect_desc: "£job_giga_birch_ktisma_manager_drone£ $job_giga_birch_ktisma_manager_drone_sentient_metal_plural$ additionally turn £minerals£ §Y$minerals$§! and $r_energy$ into £giga_sr_sentient_metal£ §Y$giga_sr_sentient_metal$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$giga_sentient_metal_jobs_bonus_workforce_mult$§!"
   job_giga_birch_ktisma_worker_drone: "크티스마 인술라 드론" # 10592106668626734969
   job_giga_birch_ktisma_worker_drone_plural: "크티스마 인술라 드론" # 2228658517331005726
   job_giga_birch_ktisma_worker_drone_desc: "크티스마 인술라 시설 인력을 담당하도록 배정되었으나, 아직 구체적인 업무가 없는 드론들." # 846547841223514576
@@ -837,7 +843,7 @@
   job_giga_birch_physma_manager_drone_laboratory: "피스마 연구 클러스터" # 8815223816111879230
   job_giga_birch_physma_manager_drone_laboratory_plural: "피스마 연구 클러스터" # 18145933989282343116
   job_giga_birch_physma_manager_drone_laboratory_desc: "환경 연구의 관리자인 이 드론 클러스터와 그 하급자들은 자연 세계에 대한 우리의 이해를 증진합니다." # 10972205677808236461
-  job_giga_birch_physma_manager_drone_laboratory_effect_desc: "£job_giga_birch_physma_manager_drone£ $job_giga_birch_physma_manager_drone_laboratory_plural$는 추가로 £minerals£ §Y$minerals$§!(또는 £energy£ §Y$energy$§!)를 $giga_r_research$ §Y연구 점수§!로 전환하며, £mod_pop_bonus_workforce_mult£ §Y$researcher_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 15909443177445817714
+  job_giga_birch_physma_manager_drone_laboratory_effect_desc: "£job_giga_birch_physma_manager_drone£ $job_giga_birch_physma_manager_drone_laboratory_plural$ additionally turn £minerals£ §Y$minerals$§! (or $r_energy$) into $giga_r_research$ §YResearch Points§! and further increase £mod_pop_bonus_workforce_mult£ §Y$researcher_jobs_bonus_workforce_mult$§!"
   job_giga_birch_physma_manager_drone_laboratory_administration: "피스마 기록 보관 클러스터" # 12302002676399316566
   job_giga_birch_physma_manager_drone_laboratory_administration_plural: "피스마 기록 보관 클러스터" # 14305631222122768248
   job_giga_birch_physma_manager_drone_laboratory_administration_desc: "문화 연구의 관리자인 이 드론 클러스터와 그 하급자들은 역사의 기록자이며 과거에 대한 연구를 통해 미래를 이해합니다." # 16368329734464294278
@@ -847,7 +853,7 @@
   job_giga_birch_physma_manager_drone_administration: "피스마 중계 오버마인드" # 6444805410487585157
   job_giga_birch_physma_manager_drone_administration_plural: "피스마 중계 오버마인드" # 12980976481871084659
   job_giga_birch_physma_manager_drone_administration_desc: "거대한 신호 중계기의 관리자인 이 드론 군집과 그 하수인들은 서로 떨어진 섬들 사이의 정신적 결속이 유지되도록 합니다." # 7913219074933830356
-  job_giga_birch_physma_manager_drone_administration_effect_desc: "£job_giga_birch_physma_manager_drone£ $job_giga_birch_physma_manager_drone_administration_plural$는 추가로 £energy£ §Y$energy$§!(및 £food£ §Y$food$§! 또는 £minerals£ §Y$minerals$§!)를 £unity£ §Y$unity$§!로 전환하며, £mod_pop_bonus_workforce_mult£ §Y$bureaucrat_jobs_bonus_workforce_mult$§!를 추가로 증가시킵니다." # 8062134947552797675
+  job_giga_birch_physma_manager_drone_administration_effect_desc: "£job_giga_birch_physma_manager_drone£ $job_giga_birch_physma_manager_drone_administration_plural$ additionally turn $r_energy$ (and £food£ §Y$food$§!, or £minerals£ §Y$minerals$§!)into £unity£ §Y$unity$§! and further increase £mod_pop_bonus_workforce_mult£ §Y$bureaucrat_jobs_bonus_workforce_mult$§!"
   job_giga_birch_physma_manager_drone_administration_fortress: "피스마 워마인드" # 11139429041250592098
   job_giga_birch_physma_manager_drone_administration_fortress_plural: "피스마 워마인드" # 11215592723162675285
   job_giga_birch_physma_manager_drone_administration_fortress_desc: "군사 전략의 실행을 숙고하기 위해 창조된 이 특수 드론 군집은 전장에서 이론이 실천과 만나는 곳에 거주합니다." # 14863849299215590567
@@ -869,7 +875,7 @@
   job_giga_dark_matter_weaver: "암흑 물질 직조자" # 195770429593505461
   job_giga_dark_matter_weaver_plural: "암흑 물질 직조자" # 816175029916562939
   job_giga_dark_matter_weaver_desc: "이 전문가들은 블랙홀의 헤이즈에서 암흑 물질을 자아냅니다." # 248987907795996609
-  job_giga_dark_matter_weaver_effect_desc: "$job_giga_dark_matter_weaver_swap_plural_with_icon$는 £energy£ §Y$energy$§!와 £minerals£ §Y$minerals$§!를 사용하여 £sr_dark_matter£ §Y$sr_dark_matter$§!를 수집합니다." # 13851065280881347164
+  job_giga_dark_matter_weaver_effect_desc: "$job_giga_dark_matter_weaver_swap_plural_with_icon$ use $r_energy$ and £minerals£ §Y$minerals$§! to gather £sr_dark_matter£ §Y$sr_dark_matter$§!"
   job_giga_dark_matter_weaver_swap_plural_with_icon: "[giga_dark_matter_weaver.GetIcon] [giga_dark_matter_weaver.GetNamePlural]" # 5122064888118500408
   mod_job_giga_dark_matter_weaver_add: "[giga_dark_matter_weaver.GetName] 직업" # 14472468380321643893
   mod_job_giga_dark_matter_weaver_per_pop: "§G+1§! $VALUE$ 팝당 [giga_dark_matter_weaver.GetName] 직업" # 5353717798074697029
@@ -877,7 +883,7 @@
   job_giga_dark_matter_weaver_drone: "암흑 물질 엮는 드론" # 6275320621344887145
   job_giga_dark_matter_weaver_drone_plural: "암흑 물질 직조자 드론" # 8948321253553664689
   job_giga_dark_matter_weaver_drone_desc: "이 드론들은 블랙홀의 아지랑이로부터 암흑 물질을 짜냅니다." # 4286180702816910007
-  job_giga_dark_matter_weaver_drone_effect_desc: "$job_giga_dark_matter_weaver_drone_swap_plural_with_icon$은(는) £energy£ §Y$energy$§!와(과) £minerals£ §Y$minerals$§!을(를) 사용하여 £sr_dark_matter£ §Y$sr_dark_matter$§!을(를) 수집합니다." # 12499876007223313359
+  job_giga_dark_matter_weaver_drone_effect_desc: "$job_giga_dark_matter_weaver_drone_swap_plural_with_icon$ use $r_energy$ and £minerals£ §Y$minerals$§! to gather £sr_dark_matter£ §Y$sr_dark_matter$§!"
   job_giga_dark_matter_weaver_drone_swap_plural_with_icon: "[giga_dark_matter_weaver_drone.GetIcon] [giga_dark_matter_weaver_drone.GetNamePlural]" # 16463766627350676319
   mod_job_giga_dark_matter_weaver_drone_add: "[giga_dark_matter_weaver_drone.GetName] 직업" # 5966485744430322389
   mod_job_giga_dark_matter_weaver_drone_per_pop: "§G+1§! $VALUE$ 팝당 [giga_dark_matter_weaver_drone.GetName] 직업" # 10308414935041421791
@@ -893,8 +899,8 @@
   job_giga_birch_origin_trader_drone: "외계 고립계 접촉 드론" # 406772150461029970
   job_giga_birch_origin_trader_drone_plural: "외계 고립체 접촉 드론" # 18150282149145745443
   job_giga_birch_origin_trader_drone_desc: "이 드론들은 우리의 행성 이웃들과 교역 관계를 유지하고 있습니다." # 2168122872900091795
-  job_giga_birch_origin_trader_drone_effect_food_desc: "£job_giga_birch_origin_trader_drone£ $job_giga_birch_origin_trader_drone_plural$가 £food£ §Y$food$§!를 £energy£ §Y$energy$§!로 거래합니다." # 7912272747353634118
-  job_giga_birch_origin_trader_drone_effect_minerals_desc: "£job_giga_birch_origin_trader_drone£ $job_giga_birch_origin_trader_drone_plural$(은/는) £minerals£ §Y$minerals$§!를(을) £energy£ §Y$energy$§!로 거래합니다." # 4795484803686217849
+  job_giga_birch_origin_trader_drone_effect_food_desc: "£job_giga_birch_origin_trader_drone£ $job_giga_birch_origin_trader_drone_plural$ trade £food£ §Y$food$§! for $r_energy$"
+  job_giga_birch_origin_trader_drone_effect_minerals_desc: "£job_giga_birch_origin_trader_drone£ $job_giga_birch_origin_trader_drone_plural$ trade£minerals£ §Y$minerals$§! for $r_energy$"
   mod_job_giga_birch_origin_trader_drone_add: "$job_giga_birch_origin_trader_drone$ 직업" # 9501969008128853041
   mod_job_giga_birch_origin_trader_drone_per_pop: "§G+1§! 팝당 §Y$VALUE$§! 만큼의 $job_giga_birch_origin_trader_drone$ 직업" # 4274972305522477635
   mod_job_giga_birch_origin_trader_drone_per_pop_short: "§G+1§! £mod_job_clerk_add£당 §Y$VALUE$§! £pop£" # 11420296411987721929
@@ -1013,42 +1019,67 @@
   trait_auto_pc_birch_preference_desc: "$trait_auto_hab_preference_desc$" # 232539336545340631
   mod_pc_origin_birch_habitability: "$mod_pc_birch_habitability$" # 2692861387840875757
   trait_pc_origin_birch_preference: "쇠퇴하는 자작나무 세계 선호도" # 17200853279441873721
-  trait_pc_origin_birch_preference_desc: "" # 17241709254077376921
+  trait_pc_origin_birch_preference_desc: ""
   mod_pc_origin_dummy_birch_habitability: "$mod_pc_birch_habitability$" # 2692861387840875757
   trait_pc_origin_dummy_birch_preference: "더미 버치 세계 선호도 (이것은 보이면 안 됩니다)" # 10348640604773188554
   trait_pc_origin_dummy_birch_preference_desc: "$trait_pc_birch_preference_desc$" # 15407808382494675625
   mod_pc_giga_edge_of_eternity_habitability: "$pc_giga_edge_of_eternity$ 거주 적합도" # 17168674353561159210
   trait_pc_giga_edge_of_eternity_preference: "$pc_giga_edge_of_eternity$ 선호" # 14064038663616696689
   trait_pc_giga_edge_of_eternity_preference_desc: "$trait_pc_ocean_preference_desc$" # 13888574559150238551
-  edict_giga_migrate_birch_world: "버치 세계: 대이주" # 5610960367454648421
+  edict_giga_migrate_birch_world: "Birch World: The Great Migration"
   edict_giga_migrate_birch_world_desc: "버치 월드의 광활한 공간은 무한한 기회를 제공합니다. 실업 상태인 우리 팝들이 그곳에서 거주하도록 장려해야 합니다." # 16328253186164360879
-  edict_giga_migrate_birch_world_tooltip: "자동 재정착은 목적지로 버치 월드를 선택할 확률이 §Y훨씬§! 높아집니다.\n이주를 장려하기 위해 추가 일자리를 비워 둡니다." # 13520318880837612356
-  giga_mega.402.name: "상승하는 에너지 신호" # 5063908021074400237
-  giga_mega.402.desc: "이전에는 단순한 배경 소음으로 치부되었던 은하 중심부에서 발신되는 특정 신호들의 강도가 증가하기 시작했으며, 예상되는 정점 도달 시기는 약 §Y5년§! 후입니다.\n\n이제는 명확히 구분 가능한 이 신호들은 하이퍼드라이브 사용 후 하이퍼레인에서 방출되는 신호와 놀라울 정도로 유사합니다. 이에 우리 물리학자들 중 일부는 우리가 §Y새로운 하이퍼레인 연결§!이 형성되는 과정을 목격하고 있을지도 모른다고 흥분하며 주장하고 있습니다. 이는 우리가 아직 실시간으로 목격한 적이 없는 사건입니다.\n\n만약 이 \"새로운 하이퍼레인\" 이론이 사실이라면, 우리는 초광속 항행을 가능하게 만든 바로 그 현상을 실험할 전례 없는 기회를 맞이하게 될 것입니다. 더 나아가 §M은하의 심장부§!로 직접 접근하여 그곳에 잠들어 있을지 모를 막대한 보상을 얻을 가능성까지 열리게 됩니다." # 7244902965172050393
-  giga_mega.402.a: "$INCREDIBLE$" # 1342894312760860432
+  edict_giga_migrate_birch_world_tooltip: "Automatic Resettlement will be §Y+1000%§! more likely to pick the Birch World as its destination.\nExtra job slots will be left open to encourage migration."
+  giga_mega.403.name: "Core Shear Collapse"
+  giga_mega.403.desc: "For as long as we have studied it, the galactic core has always been out of reach. The supermassive object at its centre exerts such a powerful gravitational influence on §Yquasi-space§! that the boundary between it and real space is thrown into a state of turbulent shear, preventing stable hyperlanes from forming. Our surveys show a dense cluster of stars at the heart of the galaxy with no hyperlanes leading to any of them.\n\nOver the last decade, our subspace sensor arrays along our core-facing systems have recorded a nearly 20% reduction in the turbulence. More recently, they have begun detecting faint harmonics resembling those given off by hyperlanes as they settle after a jump. Our [GetPhysicsJobPlural] believe that new hyperlanes may be beginning to form along the edge of the core.[Root.GigaCoreSignature403][Root.GigaCoreHyperspace403]\n\nIf this trend continues, the first stable lanes should emerge in approximately §Y5 years§!."
+  giga_mega.403.a: "Keep us informed."
+  giga_core_signature_403_qso: " The readings are also full of hard radiation spikes, which arrive at regular intervals from somewhere deep inside the shear."
+  giga_core_signature_403_birch: " Apart from the harmonics, the readings are clean and the turbulence falling in a smooth, predictable manner."
+  giga_core_signature_403_aeternum: " The turbulence is not falling smoothly, though. It drops in sudden steps, roughly 42 days apart."
+  giga_core_hyperspace_403: "\n\nOur navigators noticed before our [GetPhysicsJobPlural] did. Pilots on the core-facing lanes have been reporting rough exits and unexplained drift for several years, which we now know were early effects of the shear relaxing."
   giga_discover_galactic_core_situation_type: "$giga_discover_galactic_core_situation$" # 17097670497033818899
-  giga_discover_galactic_core_situation: "초공간 도약로 형성 연구" # 6961261689992426711
-  giga_discover_galactic_core_situation_desc: "은하 중심부에서 점차 강해지는 에너지 신호는 새로운 하이퍼레인이 형성되고 있음을 암시하고 있습니다. 이와 같은 현상을 실시간으로 목격할 기회는 매우 드문 일이며, 면밀히 관찰한다면 하이퍼레인 네트워크를 형성하는 근원적인 힘에 대한 놀라운 통찰을 얻게 될 것입니다." # 8991320936444830486
-  giga_discover_galactic_core_situation_approach_hands_off: "$situation_a_rift_in_space_standard$" # 14351802880985779064
-  giga_discover_galactic_core_situation_approach_hands_off_desc: "현재로서는 하이퍼레인 형성 연구를 우선시할 여유가 없으므로, 우리 §Y[GetPhysicistSwapPluralWithIcon]§!은 관망하는 태도를 유지할 것입니다.\n\n더 깊이 있는 실험 기회를 잃게 되었음에도 불구하고, 이러한 접근 방식은 [owner.species.GetName]의 간섭으로 오염되지 않은 데이터를 수집할 수 있게 해 줄 것입니다." # 15829712546048149429
-  giga_discover_galactic_core_situation_approach_hands_off_tooltip: "우리의 §Y[GetPhysicistSwapPluralWithIcon]§!은(는) 개입하지 않는 방식을 고수하며, 멀리서 사건이 전개되는 과정을 지켜보기만 할 것입니다." # 5646044555327311793
-  giga_discover_galactic_core_situation_approach_hands_on: "직접 조사" # 3705535092575956159
-  giga_discover_galactic_core_situation_approach_hands_on_desc: "항성 간의 새로운 연결을 형성하는 하이퍼레인 실험을 통해 얻을 수 있는 통찰은 결코 간과할 수 없을 만큼 위대합니다." # 18362839747570843077
-  giga_discover_galactic_core_situation_approach_hands_on_tooltip: "우리의 §Y[GetPhysicistSwapPluralWithIcon]§!은(는) 초고에너지 타키온 빔으로 새로운 하이퍼레인을 자극하여 직접 상호작용할 것입니다." # 17570480515648485968
-  giga_discover_galactic_core_situation_approach_delay: "불가피한 운명을 지연하라" # 15172562911082130084
-  giga_discover_galactic_core_situation_approach_delay_desc: "자유롭게 접근 가능한 은하 중심부의 영향은 매우 우려스럽습니다. 우리가 이 하이퍼레인의 형성을 막을 수는 없지만, 그 너머에 무엇이 도사리고 있든 대비할 시간을 벌 수는 있습니다." # 6337745805157804680
-  giga_discover_galactic_core_situation_approach_delay_tooltip: "§Y$tech_experimental_subspace_navigation$§!에 대한 연구를 통해 습득한 원리를 적용함으로써, 하이퍼레인 형성 과정을 방해할 수 있을지도 모릅니다." # 2274008229488356790
-  giga_discover_galactic_core_situation_monthly_change_tooltip: "" # 17241709254077376921
-  giga_mega.403.name: "은하의 심장" # 14159826232645224092
-  giga_mega.403.desc.handsoff: "수많은 기록과 이론 정립 끝에, 새로운 하이퍼레인이 형성되고 그에 따라 여러 새로운 성계가 발견되면서 은하 중심부에 대한 우리의 관측이 종료되었습니다! 실시간으로 새로운 하이퍼레인이 형성되는 과정을 관측함으로써 얻은 통찰은 그 무엇과도 바꿀 수 없는 귀중한 자산이 되었습니다.\n\n은하 중심부 성단(core cluster)을 통해 은하의 양 끝을 연결하는 새로운 하이퍼레인이 형성됨에 따라, 은하는 좋든 나쁘든 그 어느 때보다 더 긴밀하게 연결되었습니다.\n\n이제 남은 것은 더 심층적인 조사를 수행하는 것뿐입니다. 우리가 무엇을 발견하게 될지 누가 알겠습니까..." # 709107369741281531
-  giga_mega.403.desc.handson: "수많은 이론 정립과 실험 끝에, 은하 중심부에 대한 우리의 관측이 막을 내렸습니다. 그 과정에서 여러 개의 새로운 하이퍼레인이 형성되었고, 뒤이어 여러 새로운 성계가 발견되었습니다! 하이퍼레인이 형성되는 순간 직접 상호작용하며 얻은 통찰은 이루 말할 수 없이 귀중한 자산이 되었습니다.\n\n은하 중심부 성단을 거쳐 은하의 양 끝을 잇는 이 새로운 하이퍼레인들이 형성됨에 따라, 은하는 그 어느 때보다 긴밀하게 연결되었습니다. 이것이 축복이 될지 재앙이 될지는 알 수 없습니다.\n\n이제 남은 것은 더 심층적인 조사를 수행하는 것뿐입니다. 우리가 무엇을 발견하게 될지, 누가 알겠습니까..." # 7730288222572283654
-  giga_mega.403.desc.delay: "우리의 최선의 노력으로도 그 과정을 늦출 수 없었던 은하 중심부로 연결되는 새로운 하이퍼레인의 형성이 결국 불가피한 것으로 판명되었습니다. 이제 완전히 새로운 하이퍼레인들과 이전에 알려지지 않았던 항성계들이 우리 앞에 드러났습니다. \n\n은하 중심부 성단을 통해 은하의 반대편을 연결하는 이 새로운 하이퍼레인들의 형성으로, 은하는 좋든 싫든 그 어느 때보다 더 밀접하게 연결되었습니다.\n\n이제 남은 것은 더 심층적인 조사를 수행하는 것뿐입니다. 우리가 무엇을 발견하게 될지 누가 알겠습니까..." # 8714293971626975417
-  giga_mega.403.a: "놀랍군!" # 6784546666338679051
-  giga_mega.403.a.tooltip: "이제 §I은하 중심부§!에 접근할 수 있습니다\n " # 12028165578605830068
-  giga_mega.404.name: "은하의 심장" # 14159826232645224092
-  giga_mega.404.desc: "은하계의 다른 거주자들이 은하 중심부로 이어지는 새로운 하이퍼레인들을 탐사하고 있었던 모양입니다. 몇 개의 완전히 새로운 하이퍼레인이 형성되고 그에 따라 여러 새로운 성계가 발견되면서, 이 매혹적인 과정과 우리의 상호작용은 끝이 났습니다! 새로운 하이퍼레인이 형성되는 과정을 실시간으로 관찰하며 얻은 통찰은 매우 귀중한 것으로 증명되었습니다.\n\n중심부 성단(core cluster)을 통해 은하의 양 끝을 연결하는 새로운 하이퍼레인이 형성됨에 따라, 은하는 좋든 나쁘든 그 어느 때보다 긴밀하게 연결되었습니다.\n\n이제 남은 것은 더욱 심층적인 조사를 수행하는 것뿐입니다. 우리가 무엇을 발견하게 될지는 아무도 모릅니다..." # 1971399915522206372
+  giga_discover_galactic_core_situation: "$giga_mega.403.name$"
+  giga_discover_galactic_core_situation_desc: "The quasi-space shear around the galactic core is relaxing, and new hyperlanes are beginning to form within it. We can observe the process, speed it up, or slow it down.\n\n§HProgress is shared between every player empire observing the core.§!"
+  giga_discover_galactic_core_situation_shared_progress: "Approaches across the galaxy"
+  giga_discover_galactic_core_situation_monthly_change_tooltip: ""
+  giga_discover_galactic_core_situation_approach_hands_off: "Passive Observation"
+  giga_discover_galactic_core_situation_approach_hands_off_desc: "Our §Y[GetPhysicistSwapPluralWithIcon]§! will record the shear from a distance and leave it alone. Lane formation will run at its natural pace, and our data will show exactly how the process works without us in the way."
+  giga_discover_galactic_core_situation_approach_hands_off_tooltip: "Our §Y[GetPhysicistSwapPluralWithIcon]§! will observe the shear from a distance and let it collapse at its natural pace.\n "
+  giga_discover_galactic_core_situation_approach_hands_on: "Lane Seeding"
+  giga_discover_galactic_core_situation_approach_hands_on_desc: "Tachyon emitters stationed along our core-facing systems will fire high-energy pulses into the weakest regions of the shear. Each pulse gives a forming lane a fixed point to anchor to, which will speed up the process and let us study the lanes at close range. Running the emitters will draw heavily on our energy grid.[owner.GigaCoreHyperspaceSeeding]"
+  giga_discover_galactic_core_situation_approach_hands_on_tooltip: "Our §Y[GetPhysicistSwapPluralWithIcon]§! will fire tachyon pulses into the shear to speed up lane formation.\n "
+  giga_core_hyperspace_seeding: "\n\nOur experience with hyperspace navigation lets us aim each pulse more precisely, so less energy is wasted."
+  giga_discover_galactic_core_situation_approach_delay: "Harmonic Suppression"
+  giga_discover_galactic_core_situation_approach_delay_desc: "The core has been cut off for as long as we have kept records, and we cannot rule out that something cut it off on purpose. Broadcasting inverted lane harmonics into the shear will disrupt the forming lanes and slow the process down, so we have more time before the core opens."
+  giga_discover_galactic_core_situation_approach_delay_tooltip: "Using what we learned from §Y$tech_experimental_subspace_navigation$§!, we will broadcast inverted lane harmonics into the shear to slow lane formation.\n "
+  giga_mega.404.name: "First Hyperlane"
+  giga_mega.404.desc: "Our sensor arrays have confirmed that a hyperlane has formed within the core shear. It does not reach any star system yet and ends in a pocket of turbulent quasi-space, but it has held stable for a matter of weeks, and more lanes are forming in its vicinity.\n\n[Root.GigaCoreSignature404]"
+  giga_mega.404.a: "Keep monitoring the situation."
+  giga_core_signature_404_qso: "Every few weeks a burst of hard radiation passes along the new lane and briefly destabilizes it. The object at the center of the core is putting out more energy than any star we have catalogued."
+  giga_core_signature_404_birch: "The lane has not destabilized once since it formed. Gravitational readings along it point to an enormous mass at the center of the core, with almost no light or radiation coming from it."
+  giga_core_signature_404_aeternum: "Mere hours after forming, a tachyonic pulse from deeper inside the core knocked the lane out of alignment for several minutes before it recovered. The pulse was modulated in a fixed, repeating pattern, which no known natural source produces."
+  giga_mega.406.name: "Breach Imminent"
+  giga_mega.406.desc: "Several hyperlanes now reach deep into the core, and only a thin band of the shear remains. Our navigators expect the first lanes to connect to the systems inside within the next few months, and survey routes are already being drawn up.\n\n[Root.GigaCoreSignature406]"
+  giga_mega.406.a: "Prepare the survey fleets."
+  giga_core_signature_406_qso: "Radiation levels along the new hyperlanes are rising every day. Any ship we send in will need heavy shielding."
+  giga_core_signature_406_birch: "Our estimates put the central object at several billion solar masses. It has no visible accretion disk and gives off almost no radiation, which suggests a dormant black hole."
+  giga_core_signature_406_aeternum: "The tachyonic pulses have grown weaker and less regular over time, we are almost certain that their source is technological in nature and our [GetPhysicsJobPlural] are now operating under the assumption that the core was sealed deliberately from the other side."
+  giga_mega.407.name: "The Heart of the Galaxy"
+  giga_mega.407.desc.open: "The shear has collapsed. Within only a few days, the actively-forming hyperlanes we had been observing anchored fully into the core, connecting them to the rest of the galaxy. Today is a great day indeed, for we can finally reach the galaxy's beating heart."
+  giga_mega.407.desc.close: "Our survey ships can now begin charting the core."
+  giga_mega.407.desc.handsoff: "$giga_mega.407.desc.open$\n\nSince we left the shear untouched, our records show lane formation exactly as it happens naturally, from the first harmonics to the final anchoring. It is the most detailed data on hyperlane formation we have ever collected.\n\n$giga_mega.407.desc.close$"
+  giga_mega.407.desc.handson: "$giga_mega.407.desc.open$\n\nOur tachyon emitters were active at every stage of the process, and our [GetPhysicsJobPlural] believe that the data collected by them will prove invaluable in our FTL research.\n\n$giga_mega.407.desc.close$"
+  giga_mega.407.desc.delay: "$giga_mega.407.desc.open$\n\nOur counter-harmonic broadcasts slowed down the formation and anchoring of the new hyperlanes but were unfortunately unable to stop the process completely. [Root.GigaCoreDelayPlanning][Root.GigaCoreDelayAeternum]\n\n$giga_mega.407.desc.close$"
+  giga_core_delay_planning: "Even so, the extra time has given our government a chance to work out how to deal with whatever we find in there."
+  giga_core_delay_planning_hive: "Even so, the extra time has let the Hive settle on how it will deal with whatever we find in there."
+  giga_core_delay_planning_machine: "Even so, the extra time let us run many thousands more simulations of what we might find in there."
+  giga_core_delay_aeternum: "\n\nWhile broadcasting, our [GetPhysicsJobPlural] noticed that our inverted harmonics closely matched the tachyonic pulses coming from inside the core. Something in there has been suppressing the lanes the same way, and for much longer."
+  giga_mega.407.a: "Into the core."
+  giga_mega.407.a.tooltip: "The §IGalactic Core§! can now be accessed\n "
+  giga_mega.408.name: "The Heart of the Galaxy"
+  giga_mega.408.desc: "The quasi-space shear around the galactic core has collapsed, and newly formed hyperlanes now connect it to the rest of the galaxy. Unfortunately, we did not get to observe their formation process, something which likely would have provided immense amounts of data. Nevertheless, our survey ships can now begin charting the star systems inside."
   giga_dialog.4101.name: "초거대" # 4770447081112434052
-  giga_dialog.4101.desc: "고된 여정 끝에, [Root.GetName]이 마침내 우리 은하의 중심부에 도달했습니다.\n성계에 진입하자마자, 승무원들은 거대한 §Y비활성 초대질량 블랙홀§!의 모습에 경악을 금치 못했습니다.\n\n이 거대한 천체는 수십억 개의 항성 질량에 달하며, 지름은 수백 천문단위입니다. 블랙홀을 공전하는 외로운 해양 행성 하나도 발견되었는데, 한 과학자는 블랙홀의 엄청난 조석력으로 인해 분명 거대한 파도가 칠 것이라고 추측했습니다.\n현재로서는 단순한 추측에 불과하지만, 과학계의 가장 대담한 일각에서는 이 블랙홀 주위에 거대한 구체를 건설하여 수경 명의 생명체가 거주할 수 있을 것이라는 이론을 제기하기도 합니다." # 13926846888702989921
+  giga_dialog.4101.desc: "After an arduous journey, the [Root.GetName] has finally reached the center of our galaxy.\n\nUpon entering the system, the crew was stunned by the sight of an absolutely massive §YInactive Supermassive Black Hole§!.\n\nThis gargantuan object weighs several billion stellar masses, and has a diameter of several hundreds astronomical units. A lone ocean planet was also spotted orbiting it, and one of the scientists speculated that it would certainly have gigantic waves due to the black hole's immense tidal forces.\nAlthough it is mere speculation for now, some of the wildest elements in the scientific community theorize that it would be possible to construct a massive sphere around this black hole, which could be inhabited by quadrillions of living beings."
+  giga_dialog.4101.originbirch.desc: "After an arduous journey, the [Root.GetName] has finally reached the center of our galaxy.\n\nUpon entering the system, the crew was stunned by the sight of an absolutely massive §YBirch World§!, a mind-bogglingly huge artificial habitat enveloping the entirety of the §YInactive Supermassive Black Hole§! within.\n\nA lone ocean planet was also spotted orbiting it, and one of the scientists speculated that it would certainly have gigantic waves due to the black hole's immense tidal forces.\nGazing upon the vastest expanse of habitable land in the galaxy is a moment that will never be forgotten."
   giga_dialog.4101.a: "경이롭군!" # 11826258457890550173
   giga_dialog.4102.name: "$name_birch$ 건설 현장이 완료되었습니다!" # 15530853849516694051
   giga_dialog.4102.desc: "우리 은하의 중심 블랙홀 주변에 미래의 $name_birch$ 건설 부지가 이제 완공되었습니다.\n이 발판은 사건의 지평선 바로 위, 중력이 거주 가능한 곳에 초합금으로 된 거대한 껍데기 형태의 실제 구조물 건설을 시작하기 위한 전초 기지 역할을 할 것입니다." # 12588702665517304880
@@ -1083,7 +1114,7 @@
   vsbw_begin: "무한한 광활함" # 5990484403465531213
   vsbw_begin_desc: "이 버치 세계를 궁극의 서식지로 개조할 때가 되었다. 어중간한 조치는 없을 것이다. 그 전체 표면은 우리 문명에 알려진 가장 발전된 기술로 개선될 것이다." # 1073685990824585733
   pc_void_birch: "초거대 버치 공허 구체" # 9914414329477901615
-  pc_void_birch_desc: "" # 17241709254077376921
+  pc_void_birch_desc: ""
   pc_void_birch_adj: "" # 17241709254077376921
   mod_pc_void_birch_habitability: "자작나무 거주 적합도" # 18432139256508454690
   trait_pc_void_birch_preference: "버치 월드 선호도" # 18170478876688826092
@@ -1153,6 +1184,13 @@
   giga_birch_origin_random_7_science_desc: "$giga_birch_origin_random_7_desc$" # 15434380870827474026
   giga_birch_origin_random_7_trade: "$giga_birch_origin_random_7$" # 13629556587626404947
   giga_birch_origin_random_7_trade_desc: "$giga_birch_origin_random_7_desc$" # 15434380870827474026
+  zone_unavailable_tech_basic_science_lab_2: "$physics_research_icon_with_space$$tech_basic_science_lab_2$"
+  zone_giga_origin_birch_lab: "Archaeological Sites"
+  zone_giga_origin_birch_lab_desc: "$district_giga_origin_birch_lab_desc$"
+  birch_origin_researcher_minor_artifact_production: "£minor_artifacts£ Produced per 100 [GetResearcherPluralWithIcon]: §G+0.5§!"
+  progress.3.a: "$progress.3.a.storm$"
+  repaired_birch_build_speed_buff: "Restored Birch Build Speed Buff"
+  repaired_birch_build_speed_buff_desc: "Temporary build speed modifier to compensate for all of your buildings being nuked."
   stage_9: "9단계" # 16694395781220944024
   stage_10: "X단계" # 7338016673832420032
   giga_situation_birch_origin: "우리의 고대 고향 탐사" # 7398321304070449562
@@ -1246,7 +1284,7 @@
   giga_situation_birch_expedition_9_type: "$giga_situation_birch_expedition_9$" # 2349542978072275371
   giga_situation_birch_expedition_9_desc: "이 휴면 상태의 채굴 시설은 구조물을 되살리는 열쇠가 될 수 있습니다. 또한 우리가 원하는 산출량을 조정할 기회를 제공하기도 합니다." # 10399019184451412396
   giga_situation_birch_expedition_9_outcome: "[target.GetName]은 우리가 어떤 §Y접근 방식§!을 선택하는지에 따라 다른 일자리와 최대 특수 지구를 제공하는 행성 특성을 얻게 될 것입니다." # 8779249703938714812
-  giga_situation_birch_expedition_9_outcome_energy: "[target.GetName]는 £energy£ §Y$energy$§! 생산에 중점을 둔 일자리와 최대 구역을 제공하는 행성 특징을 얻게 될 것입니다." # 17213843925926415354
+  giga_situation_birch_expedition_9_outcome_energy: "[target.GetName] will gain a Planetary Feature providing Jobs and Max Districts focused on the production of $r_energy$."
   giga_situation_birch_expedition_9_outcome_minerals: "[target.GetName]는 £minerals£ §Y$minerals$§! 생산에 중점을 둔 직업과 최대 특수 지구를 제공하는 행성 지형 하나를 얻게 됩니다." # 6084896829655369971
   giga_situation_birch_expedition_9_outcome_dark_matter: "[target.GetName]은/는 £sr_dark_matter£ §Y$sr_dark_matter$§! 생산에 초점을 맞춘 직업과 다양한 최대 구역을 제공하는 행성 특징을 획득하게 됩니다." # 13257070880744448852
   giga_situation_birch_expedition_9_monthly_change_tooltip: "이 상황의 진행은 우리가 선택하는 §Y접근 방식§!에 달려있습니다." # 18052415954346783608
@@ -1259,7 +1297,7 @@
   giga_situation_birch_expedition_9_approach_choose_tooltip: "다른 방법으로 수리를 시작하십시오. 이 상황이 2단계에 도달하면 더 이상 다른 접근 방식을 선택할 수 없습니다." # 16265328041067255123
   giga_situation_birch_expedition_9_approach_choose_desc: "준비는 완료되었으나, 나아갈 방향이 없습니다." # 14913703266479725717
   giga_situation_birch_expedition_9_approach_energy: "에너지 수집 확장" # 10033457036590269508
-  giga_situation_birch_expedition_9_approach_energy_tooltip: "완료되면 추출 배열은 £energy£ §Yenergy§! 수집에 집중할 것입니다." # 5798991877045301986
+  giga_situation_birch_expedition_9_approach_energy_tooltip: "Once completed, the extraction array will focus on the collection of $r_energy$.\n "
   giga_situation_birch_expedition_9_approach_energy_desc: "추출 배열의 고에너지 입자 수집 능력 확장에 주력함으로써, 우리의 에너지 산출량을 증진할 수 있습니다." # 5240862657579550750
   giga_situation_birch_expedition_9_approach_minerals: "집중형 광물 채굴기" # 10700607205741130116
   giga_situation_birch_expedition_9_approach_minerals_tooltip: "추출 배열이 완료되면 £minerals£ §Yminerals§! 채집에 집중할 것입니다." # 16927607938763776637
@@ -1318,7 +1356,7 @@
   giga_birch.1003.b: "구조물 일부를 해체합니다." # 2480473818277904450
   giga_birch.1003.b.desc: "의미 없는 유적 일부를 해체하면 £minerals£ §Y[minerals]§!와 £alloys£ §Y[alloys]§!를 얻을 수 있습니다." # 7845470514660809268
   giga_birch.1003.c: "발전소를 복구한다." # 16780453616136182816
-  giga_birch.1003.c.desc: "그들의 전기 기반 시설을 수리하면 추가 £energy£ §Yenergy§!를 수확할 수 있게 될 것입니다." # 13121239206640575458
+  giga_birch.1003.c.desc: "Repairing their electrical infrastructure will let us harvest extra $r_energy$.\n "
   giga_birch.1003.d: "모든 경작 가능한 토지는 활용되어야 합니다." # 3408562726551495302
   giga_birch.1003.d.desc: "무의미한 잔해를 제거하면 이 지역에서 £food£ §Yfood§!을 생산할 수 있게 됩니다." # 5749676402836469989
   giga_birch.1004: "불확실한 미래" # 16120038052992510046
@@ -1396,13 +1434,13 @@
   giga_birch.2009.trade.desc: "£district£ §Y$district_giga_origin_birch_lab_plural$§!은 추가적인 £society_research£ §Y$society_research$§!와 £unity£ §Y$unity$§!를 생산합니다.\n" # 12356135663077764906
   giga_birch.2009.desc.integrate: "강도 높은 협상 기간을 거쳐, [giga_birch_expedition_2_country.GetName]가 구조체를 옛 영광으로 복원하려는 우리의 임무에 합류하는 것에 동의했습니다. 은하계 나머지 국가들의 눈에는 그들은 우리의 기치 아래에 놓일 것이며, 우리 민족들은 시간이 지남에 따라 분명히 더욱 가까워질 것입니다." # 3480527122375676260
   giga_birch.2009.integrate: "우리는 함께 우리의 운명을 찾아낼 것입니다." # 3624635470616843397
-  giga_birch.2009.integrate.desc: "8 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ 팝들이 [situation.target.GetName]에 출현했습니다." # 10984142387315804477
+  giga_birch.2009.integrate.desc: "800 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ Pops appear on [situation.target.GetName].\n "
   giga_birch.2009.desc.conquer: "격렬한 전투 끝에, 우리 원정군이 [giga_birch_expedition_2_country.GetName]를 무조건 항복하게 만들었습니다.\n\n그들의 수효는 우리의 우월한 화력에 상대가 되지 못했습니다.\n\n우리는 이제 그들의 땅을 점령했으며, 그들의 자원은 마음껏 이용할 수 있게 되었습니다." # 10396263661948257123
   giga_birch.2009.conquer: "그들은 복종하는 법을 배우게 될 것이다." # 3625035428018672581
-  giga_birch.2009.conquer.desc: "6 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ 팝들이 §Y$pop_recently_conquered$§! 수정치를 가지고 [situation.target.GetName]에 나타납니다." # 5041149187000274634
+  giga_birch.2009.conquer.desc: "800 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ Pops with the §Y$pop_recently_conquered$§! modifier appear on [situation.target.GetName].\n "
   giga_birch.2009.desc.sanctuary: "초기 기술 공유라는 구실 하에, 우리는 [giga_birch_expedition_2_country.GetName]을 그들이 깨닫지도 못하는 사이에 상당 부분 우리의 유기체 보호구역 네트워크에 성공적으로 통합했습니다. 단기적으로는 그들은 감독 없이 살고 있다고 계속 생각하겠지만, 서서히 새로운 안전과 만족의 삶으로 이끌릴 것입니다.\n\n우리의 \"동맹\"은 헤아릴 수 없는 [giga_birch_expedition_2_species.GetAdjective] 세대 동안 축하받을 것입니다." # 14497405384161623840
   giga_birch.2009.sanctuary: "그들은 결국 우리에게 감사하게 될 것이다." # 11104868290341575188
-  giga_birch.2009.sanctuary.desc: "8 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ 팝들이 [situation.target.GetName]에 출현했습니다." # 10984142387315804477
+  giga_birch.2009.sanctuary.desc: "800 §Y[giga_birch_expedition_2_species.GetName]§! £pop£ Pops appear on [situation.target.GetName].\n "
   giga_birch.2009.a: "이 메시지를 볼 수 있다면, 뭔가 잘못되었습니다." # 12976150826427902451
   giga_birch.3001: "제3 원정" # 10579365491064124652
   giga_birch.3001.desc: "작동하는 첨탑을 찾아 미지의 영역으로 나아갈 세 번째 원정대를 보낼 때가 되었습니다.\n\n임무를 시작한 지 수십 년이 지난 지금, 우리는 많은 것을 배웠습니다. 추진 및 센서 기술의 새로운 발전은 우리의 [GigaGetExplorerPlural]가 이전보다 더 멀리 나아가고 더 많은 것을 볼 수 있도록 해 줄 것입니다.\n\n이번에는 호송대가 원정대 지도자 [giga_birch_expedition_leader.GetName]의 지휘 아래 두 번째 원정대가 세운 멀리 떨어진 전진 기지에서 계속 나아갈 것입니다." # 15298933140743127923
@@ -1484,7 +1522,7 @@
   giga_birch.6004.a: "우리는 이 지의류들을 재배해야 합니다." # 13418444347581193973
   giga_birch.6004.a.desc: "우리의 지하 전초기지는 £food£ §Yfood§! 생산에 집중할 것입니다.\n" # 155592832678313124
   giga_birch.6004.b: "저 가스 우물들을 활용하라." # 17493272932724036856
-  giga_birch.6004.b.desc: "우리의 동굴 전초기지는 £energy£ §Yenergy§! 생산에 집중할 것입니다." # 13919234471681977902
+  giga_birch.6004.b.desc: "Our outpost in the caverns will focus on producing $r_energy$.\n "
   giga_birch.7001: "제7차 원정대" # 14083148927798665255
   giga_birch.7001.desc: "여섯 번째 탐사 중 건설된 극지층 전진 기지에서 얻은 판독값과 구조체 네트워크 지도에 대한 추가 분석을 통해 두 번째 지휘소 위치에 대한 확실한 단서를 확보했습니다.\n\n탐사대장 [giga_birch_expedition_leader.GetName]가 이끄는 일곱 번째 탐사대가 지휘소에 도달하여 확보하는 것을 목표로 전진 기지에서 출발할 것입니다." # 14848269636112530776
   giga_birch.7001.a: "거의 다 왔습니다." # 4040116817873436816
@@ -1543,7 +1581,7 @@
   giga_birch.9003.a: "수리 즉시 착수" # 16029711632081311756
   giga_birch.9004: "추출 어레이 방식 최종화" # 10672624984073637919
   giga_birch.9004.desc: "우리는 이제 추출 배열 복원 작업에 있어 돌이킬 수 없는 지점에 이르렀습니다. 이 지점 이후로는 계획을 변경하는 것은 프로젝트에 불필요한 차질을 야기할 것이며, 처음부터 다시 시작해야 할 것입니다." # 12088437101699682027
-  giga_birch.9004.desc.energy: "$giga_birch.9004.desc$\n\n완료되면 입자 수집 배열이 우선 가동되어 우리의 £energy£ §Y$energy$§! 생산량을 증가시킵니다." # 717915006278104395
+  giga_birch.9004.desc.energy: "$giga_birch.9004.desc$\n\nOnce completed, the particle collection arrays will be prioritized, boosting our $r_energy$ output."
   giga_birch.9004.desc.minerals: "$giga_birch.9004.desc$\n\n완공되면 물질 채굴기에 우선순위가 부여되어, 우리의 £minerals£ §Y$minerals$§! 광물 생산량을 증대시킬 것입니다." # 16975740038069409007
   giga_birch.9004.desc.dark_matter: "$giga_birch.9004.desc$\n완료되면, 물질 시추기는 사용 가능한 £sr_dark_matter£ §Y$sr_dark_matter$§!의 추출을 우선시하도록 수정될 것입니다." # 8910141019007709816
   giga_birch.9004.a: "한 걸음 더 가까워졌습니다." # 1585297630895708376

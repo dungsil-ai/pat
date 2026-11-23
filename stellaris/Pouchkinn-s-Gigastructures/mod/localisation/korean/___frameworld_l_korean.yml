@@ -1,13 +1,13 @@
 ﻿l_korean:
   scope_debug: "이것: [This.GetName] 루트: [Root.GetName] 이전: [Prev.GetName] 출처: [From.GetName] 전역: [global_event_country.GetName]" # 8378610365594505185
-  mod_planet_technician_minerals_upkeep_add_planet: "£minerals£ $minerals$ [owner.GetTechnicianPlural]의 £job_technician£ 유지 비용" # 13928311025342722935
-  mod_planet_technician_energy_produces_add_planet: "£energy£ $energy$는 £job_technician£ [owner.GetTechnicianPlural]로부터 얻습니다." # 12340334754526725443
+  mod_planet_technician_minerals_upkeep_add_planet: "£minerals£ $minerals$ Upkeep of £job_technician£ [owner.GetTechnicianPlural]"
+  mod_planet_technician_energy_produces_add_planet: "£energy£ $energy$ from £job_technician£ [owner.GetTechnicianPlural]"
   giga_biotrophy_scaling: "$job_bio_trophy$ 규모" # 385784671154790668
   giga_biotrophy_scaling_fluff: "일정 시점을 넘어서면, 유기체를 관리하는 것의 이점은 개체 수 증가에 따른 운영 부담으로 인해 상쇄됩니다." # 14690128593205267302
   giga_biotrophy_scaling_desc: "§T이 메가스트럭처는 일반 행성보다 훨씬 높은 밀도의 £job_bio_trophy£ §Y$job_bio_trophy_plural$§!을 허용합니다. 이 효과는 §Y$mod_planet_jobs_complex_drone_produces_mult$§!이 높은 수치에 도달했을 때 발생하는 극심한 중첩 효과를 상쇄합니다.\n\n추가적인 £job_bio_trophy£ §Y$job_bio_trophy_plural$§!은 항상 이롭지만, 새로운 팝이 증가함에 따라 효율성은 §Y50§! 팝을 초과하면 §Y20%§!로, §Y150§! 팝에서는 더 낮아집니다.\n\n$job_bio_trophy$ 팝: §Y[Root.giga_biotrophy_count]§!\n기본 보너스: §G+[Root.giga_biotrophy_count]%§!\n조정된 보너스: §G+[Root.giga_biotrophy_adjusted]%§!\n효율성: §Y[Root.giga_biotrophy_efficiency]%§!§!\n§T--------------§!\n$giga_biotrophy_scaling_fluff$" # 11993481704150043451
   d_giga_biotrophy_scaling: "$giga_biotrophy_scaling$" # 8465027162020290018
   d_giga_biotrophy_scaling_desc: "§T상세 내용은 동일한 이름의 행성 수정자를 참조하십시오.§!\n\n$giga_biotrophy_scaling_fluff$" # 14642524988382434152
-  frameworld_blank: "" # 17241709254077376921
+  frameworld_blank: ""
   frameworld_space: " " # 548583522804720525
   frameworld_line: "\t" # 12510459969421899229
   pc_giga_frameworld: "프레임 세계" # 13700801779385555664
@@ -62,7 +62,7 @@
   giga_frameworld_docs_chain_title: "$pc_giga_frameworld$ 문서" # 10727090875092868615
   giga_frameworld_docs_chain_desc: "§Y$pc_giga_frameworld$§! 기원은 단일 수도 행성에 크게 집중하는 \"단일 행성\" 플레이 방식을 제공합니다. 식민지 개척선을 사용할 수 없으며, 수도를 잃으면 패배합니다. 건물 슬롯은 제한되지만, 구역은 무한히 확장할 수 있습니다.\n\n이 메뉴의 하위 범주에서 추가 정보를 확인하십시오." # 15722908265524881155
   giga_frameworld_docs_expansion: "확장" # 9841444435173684892
-  giga_frameworld_docs_expansion_desc: "추가 구역은 §Y행성 결정§! 및 §Y소행성 채집§!을 통해 추가할 수 있습니다. 각 확장은 사용된 방식에 관계없이 §Y$pc_giga_frameworld$§!에 여러 단계적인 보너스를 추가합니다. 모든 확장 보너스는 §Y행성 특성§! 메뉴에서 확인할 수 있습니다.\n확장 결정에는 세 가지 종류가 있습니다:\n\n- §T$giga_frameworld_expand$§!: £alloys£ $alloys$를 소모하며, 발동할 때마다 비용이 증가합니다. 또한 두 번 사용할 때마다 §Y건설 슬롯§!을 제공합니다. £mod_megastructures_cost_mult£ §Y$mod_megastructures_cost_mult$§!의 영향을 받습니다.\n- §T$giga_frameworld_reorganise$§!: 막대한 양의 £influence£ $influence$를 소모하며, 여러 일반적인 행동의 속도를 높입니다.\n- §T$giga_frameworld_expand_mass$§!: £giga_sr_bulk_matter£ $giga_sr_bulk_matter$를 소모하며, 사용할 때마다 §Y$mod_district_giga_frameworld_mining_max$§!에 1을 추가합니다." # 1218781427185510024
+  giga_frameworld_docs_expansion_desc: "Additional districts can be added through §YPlanetary Decisions§! and §YHarvesting Asteroids§!. Each expansion adds several incremental bonuses to the §Y$pc_giga_frameworld$§!, regardless of which method is used. All expansion bonuses can be found in the §YPlanetary Features§! menu.\nExpansion decisions come in three varieties:\n\n- §T$giga_frameworld_expand$§!: Costs £alloys£ $alloys$, increasing in cost each time it is enacted. Affected by £mod_megastructures_cost_mult£ §Y$mod_megastructures_cost_mult$§!.\n- §T$giga_frameworld_reorganise$§!: Costs a large amount of £influence£ $influence$ and speeds up several common actions.\n- §T$giga_frameworld_expand_mass$§!: Costs £giga_sr_bulk_matter£ $giga_sr_bulk_matter$, and adds one to §Y$mod_district_giga_frameworld_mining_max$§! per use."
   giga_frameworld_docs_asteroids: "2. 소행성 채취" # 15797977129010512006
   giga_frameworld_docs_asteroids_desc: "§Y$pc_giga_frameworld$§!는 §Y$frameworld_harvest_0$§! 메가구조물을 사용하여 소행성을 수확하여 확장할 수 있습니다. 수확된 각 소행성은 특구 하나를 추가하고, 다양한 점진적 보너스를 제공하며, 네 번 수확할 때마다 §Y$mod_district_giga_frameworld_mining_max$§!에 하나를 더합니다. 수확 비용은 £mod_planet_clear_blocker_cost_mult£ §Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§!에 비례하여 증가합니다.\n\n소행성 수확은 주요 확장 목표가 되어야 합니다. 수확 가능한 소행성이 있는 성계는 은하계 지도 툴팁에 표시됩니다.\n\n\"$frameworld_has_harvestable_asteroid$\"는 자원 매장지가 없는 소행성을 나타내며, 수확에 이상적입니다.\n\"$frameworld_has_harvestable_asteroid_2$\"는 자원 매장지가 있는 소행성만 남았음을 나타내며, 수확을 미루는 것이 좋을 수 있습니다.\n\"$frameworld_has_harvestable_asteroid_3$\"는 전략 자원 매장지가 있는 소행성만 남았음을 나타내며, 이는 수확에 가장 적합하지 않습니다." # 7732172523938196829
   giga_frameworld_docs_outposts: "프레임월드 전초기지들" # 3270048462526833674
@@ -466,7 +466,7 @@
   giga_frameworld_orbital_ring_upgrade_desc: "$d_frameworld_orbital_ring_desc$" # 12057044907238236730
   giga_frameworld_nanites: "나노기술 주입" # 10023669528367709442
   giga_frameworld_nanites_desc: "우리 자신을 변화시켰고, 이제 이 과정을 완수해야 합니다." # 7620103225122772463
-  giga_frameworld_nanites_effect: "£나노머신£ §Y나노머신$§을 소모하는 확장 결정을 활성화합니다!\n\n여러 지구를 나노기술로 개조합니다:\n\n§H$district_giga_frameworld_foundry$:§!\n- 추가 £합금£ §Y합금$§을 직접 생산\n- £에너지£ §Y에너지$§ 유지 비용 증가\n- 추가 £나노머신£ §Y나노머신$§ 유지 비용\n\n§H$district_giga_frameworld_science$:§!\n- [owner.GetResearcherIcon] §Y[owner.GetResearcher]§! 직업 1개 제거\n- [owner.GetNanotechResearcherIcon] §Y[owner.GetNanotechResearcher]§! 직업 3개 추가\n- 추가 £나노머신£ §Y나노머신$§ 유지 비용\n\n§H$district_giga_frameworld_refinery$:§!\n- 추가 $giga_r_motes$$giga_r_gases$$giga_r_crystals$ §Y전략 자원§!을 직접 생산\n- £에너지£ §Y에너지$§ 유지 비용 증가\n- 추가 £나노머신£ §Y나노머신$§ 유지 비용" # 13422907647984332436
+  giga_frameworld_nanites_effect: "Enables Expansion decisions costing £nanites£ §Y$nanites$§!\n\nRetrofits several Districts with nanotechnology:\n\n§H$district_giga_frameworld_foundry$:§!\n- Produces additional £alloys£ §Y$alloys$§! directly\n- Increased $r_energy$ Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_science$:§!\n- Removes 1 [owner.GetResearcherIcon] §Y[owner.GetResearcher]§! Job\n- Adds 3 [owner.GetNanotechResearcherIcon] §Y[owner.GetNanotechResearcher]§! Jobs\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_refinery$:§!\n- Produces additional $giga_r_motes$$giga_r_gases$$giga_r_crystals$ §YStrategic Resources§! directly\n- Increased $r_energy$ Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n "
   giga_frameworld_maginot: "마지노 독트린 실행" # 8943256451706527595
   giga_frameworld_maginot_effect: "§Y$name_maginot$ 메커니즘§!을 해금하여 $pc_giga_frameworld$의 방어 잠재력을 여러 방면으로 향상시킵니다:\n\n함대 전체를 상대할 수 있는 막강한 업그레이드 가능 방어 기지인 §Y$strategic_defence_command_platform$§!를 추가합니다.\n\n$pc_giga_frameworld$의 방어선에 §Y$frameworld_defensive_station_plural$§!를 3개 추가합니다.\n\n우주 방어를 강화하고 특수 병력을 제공하는 §Y$district_giga_frameworld_maginot_shield_generators$§! 및 §Y$district_giga_frameworld_maginot_planetary_cannons$§! 구역 건설을 허용합니다.\n\n§Y$district_giga_frameworld_fortress_plural$§!는 추가 강력한 방어 병력을 제공합니다.\n\n이 성계 및 인접 성계에서 웜홀 생성 및 점프 드라이브 작동을 차단하는 전환 가능한 §Y아공간 교란 시스템§!을 제공합니다.\n\n" # 13036694200280316891
   giga_frameworld_maginot_desc: "이제 우리는 행성이 요새화될 수 있는 터무니없는 수준을 이해했으며, 이 지식을 통해 우리 자신의 방어 체계를 개선할 명확한 길을 봅니다." # 13467896426074147098
@@ -527,6 +527,7 @@
   tr_expansion_colonization_fever_giga_frameworld_desc: "$tr_expansion_colonization_fever_desc$\n\n§H참고:§! 새로운 식민지에 추가로 생성되는 모든 £pop£ 팝은 이 전통의 유무와 관계없이 새로운 세계에 §Y$giga_frameworld_outpost$§!가 건설될 때 우리의 $pc_giga_frameworld$로 추가됩니다." # 8413342011010611763
   frameworld_defensive_station: "방어 기지" # 16814511335532707666
   frameworld_defensive_station_plural: "방어 기지" # 13113911847846574014
+  frameworld_defensive_station_cap: "Defense Station"
   frameworld_defensive_station_fleet: "방어 경계" # 10828258489687523802
   frameworld_defensive_station_section_1: "기본" # 11884452299886114628
   frameworld_defensive_station_section_2: "성채" # 11287530560547805800
@@ -723,7 +724,7 @@
   giga_frameworld_origin.012.desc.2: "[giga_planet.GetName]의 주요 구간에 대한 2차 기반 시설 업그레이드가 완료되었습니다.\n\n구조적 무결성 강화와 상호 연결된 수송망을 통해 상부 구조물이 추가적인 기능 모듈을 지원할 수 있게 되었습니다." # 16838249721490873844
   giga_frameworld_origin.012.a: "알겠습니다." # 12076608091024442278
   giga_frameworld_origin.013.name: "마지노 프로젝트 완료" # 17087210865510508728
-  giga_frameworld_origin.013.desc: "우리는 이제 [giga_planet.GetName] 주변의 궁극적인 방어선 완공을 마쳤습니다. 우리의 고향을 겹겹이 치명적인 요새로 에워쌌습니다. 이 진정 경외감을 불러일으키는 군사 공학의 위업은 그 어떤 세력도 거의 공격할 수 없으며, 통합 방어 플랫폼, 거대 운동 에너지 포대, 거대한 주둔지, 그리고 전체 함대의 생성량을 훨씬 능가하는 보호막 생성기를 갖추고 있습니다.\n추가로, 데드 핸드 시스템은 [giga_planet.GetName]의 어떤 대규모 파괴에 맞서는 억지력으로 작용합니다. 페일세이프가 활성화될 경우 기지의 중심 코어를 거대한 반물질 구동 성형 폭약으로 사용하여 §R궤도상의 적대 세력을 완전히 섬멸합니다.§!\n\n다양한 방어 시스템은 §Y결정§!을 통해 관리할 수 있습니다. 이 결정들에서 사용할 수 있도록 §Y특수 지구§!를 건설하여 $defensive_upgrade_point_plural$와 $offensive_upgrade_point_plural$를 얻으십시오." # 14503778039337039998
+  giga_frameworld_origin.013.desc: "We have now completed our ultimate defensive barrier around [giga_planet.GetName], encircling our home with layer upon layer of deadly fortifications. This truly awe-inspiring feat of military engineering is nigh unassailable by any force, featuring integrated defensive platforms, gigantic kinetic batteries, vast garrison emplacements, and shield generators far outstripping the generation of entire naval fleets.\nIn addition, the Dead Hand system stands as deterrent against any wholesale destruction of [giga_planet.GetName], by using the station's central core as a vast antimatter-fuelled shaped charge in the case of failsafe activation - §Rcompletely annihilating any hostile forces in orbit.§! \n\nThe various defence systems can be managed through §Ydecisions§!. Build §Ydistricts§! to gain $defensive_upgrade_point_plural$ and $offensive_upgrade_point_plural$ for use with these decisions."
   giga_frameworld_origin.013.a: "이제 그 누구도 감히 우리를 해할 수 없습니다." # 12013652714460056945
   giga_frameworld_origin.014.name: "2차 가공 궤도 시설 완료" # 2697927453896597395
   giga_frameworld_origin.014.desc: "[giga_planet.GetName] 근처에 여러 개의 새로운 가공 시설 건설을 완료했습니다. 이 시설들은 여러 보조 가공 건물들의 역량을 강화하여 생산 라인을 더욱 간소화하고 향상시킬 수 있도록 할 것입니다." # 16661305637403442223

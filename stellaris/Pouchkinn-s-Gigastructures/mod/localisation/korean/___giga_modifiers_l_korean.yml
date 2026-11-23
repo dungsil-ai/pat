@@ -111,6 +111,12 @@
   mod_farmer_jobs_bonus_workforce_mult_fake: "$farmer_jobs_bonus_workforce_mult$" # 51399971414080340
   mod_researcher_jobs_bonus_workforce_mult_fake: "$researcher_jobs_bonus_workforce_mult$" # 4835994630343836926
   mod_bureaucrat_jobs_bonus_workforce_mult_fake: "$bureaucrat_jobs_bonus_workforce_mult$" # 8995310789226260162
+  mod_physicist_jobs_bonus_workforce_mult_fake: "$physicist_jobs_bonus_workforce_mult$"
+  mod_biologist_jobs_bonus_workforce_mult_fake: "$biologist_jobs_bonus_workforce_mult$"
+  mod_engineer_jobs_bonus_workforce_mult_fake: "$engineer_jobs_bonus_workforce_mult$"
+  mod_civilian_and_maintenance_drone_cat_bonus_workforce_mult_fake: "$civilian_and_maintenance_drone_cat_bonus_workforce_mult$"
+  mod_influential_jobs_bonus_workforce_mult_fake: "$influential_jobs_bonus_workforce_mult$"
+  mod_giga_purge_jobs_bonus_workforce_mult_fake: "$giga_purge_jobs_bonus_workforce_mult$"
   mod_pop_chemist_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [chemist.GetNamePlural]" # 18304667611019099296
   mod_pop_chemist_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [chemist_drone.GetNamePlural]" # 12903011724857529847
   mod_pop_translucer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [translucer.GetNamePlural]" # 1597542140703476734
@@ -177,6 +183,10 @@
   mod_robotic_specialist_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ 로봇 [GetSpecialistPlural]" # 7924358488113425281
   mod_robotic_ruler_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ 로봇 $pop_cat_ruler_plural$" # 8651957372417321620
   mod_robotic_slave_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $pop_cat_slave_plural$" # 867577138582660131
+  giga_purge_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ Pops being purged"
+  purge_jobs_bonus_workforce_mult_tt: "$t$- $BONUS_WORKFORCE_FOR$ Pops being purged: $VARIABLE|1%=+$"
+  concept_planet_soldiers: "Soldier Jobs"
+  concept_planet_soldiers_desc: "Soldier jobs include: $TABBED_NEW_LINE$- [soldier.GetNamePlural] $TABBED_NEW_LINE$- [warrior_drone.GetNamePlural]"
   mod_giga_shroud_conduit_instability: "월간 장막 도관 불안정성" # 15296072772791972952
   mod_giga_hypersiphon_network_size: "$psychic_hypersiphon_2$ 네트워크 크기" # 3735842201876822530
   mod_giga_hypersiphon_safe_network_size: "§G$mod_giga_shroud_conduit_instability$ 발생하지 않음§!\n$mod_giga_hypersiphon_network_size$" # 6155274030089761810
@@ -191,7 +201,7 @@
   orbital_atmosphere_shredder_4_mod_tooltip: "발견된 매장지 규모를 §Y6§!으로 개선합니다! £physics_research£ $NEW_LINE$§E$SYSTEM_MODIFIER$§!: $TABBED_NEW_LINE$$mod_station_researchers_physics_research_produces_mult$: §G+$@kilo_prod_bonus_4_mod_value|%0$§!$TABBED_NEW_LINE$$mod_station_researchers_produces_mult$: §G+$@kilo_prod_bonus_4_mod_value|%0$§!" # 2919001359635766050
   orbital_atmosphere_shredder_restored_mod_tooltip: "성계 내 모든 적합한 행성, 위성, 소행성에서 규모 §Y6§! £physics_research£ 매장지를 발견합니다.$NEW_LINE$§E$SYSTEM_MODIFIER$§!: $TABBED_NEW_LINE$$mod_station_researchers_physics_research_produces_mult$: §G+$@kilo_prod_bonus_4_mod_value|%0$§!$TABBED_NEW_LINE$$mod_station_researchers_produces_mult$: §G+$@kilo_prod_bonus_4_mod_value|%0$§!" # 17589751882706357857
   orbital_eco_arcology_1_mod_tooltip: "해당 성계 내 모든 자격 있는 행성, 위성, 소행성에 크기 §Y2§! £society_research£ 매장량을 발견합니다." # 15175657397488618034
-  orbital_eco_arcology_2_mod_tooltip: "발견된 광상을 크기 §Y4§! £society_research£로 개선합니다." # 8623767812277858561
+  orbital_eco_arcology_2_mod_tooltip: "Improves uncovered deposits to Size §Y4§! £society_research£"
   orbital_eco_arcology_3_mod: "$orbital_artificial_eco_2$" # 11466621227678413707
   orbital_eco_arcology_3_mod_desc: "$orbital_artificial_eco_3_DESC$" # 6228484138105968876
   orbital_eco_arcology_3_mod_tooltip: "미발견 매장량의 규모를 §Y5§!로 개선합니다! £society_research£\n§E$SYSTEM_MODIFIER$§!:\n	$TABBED_NEW_LINE$$mod_station_researchers_society_research_produces_mult$: §G+$@kilo_prod_bonus_4_mod_value|%0$§!" # 3788722512241506989
@@ -221,6 +231,9 @@
   planetary_seeder_nexus_4_mod_desc: "$planetary_seeder_nexus_3_DESC$" # 271986015343092166
   planetary_seeder_nexus_4_mod_tooltip: "미발견 매장량을 크기 §Y4§!로 개선합니다!£food£$NEW_LINE$§E$SYSTEM_MODIFIER$§!: $TABBED_NEW_LINE$$station_gatherers_food_produces_mult$: §G+$@arc_furnace_4_mod_value|%0$§!" # 11499100685096394109
   station_gatherers_food_produces_mult: "£food£ $station_gatherers$에서 생산됨" # 14378946598135969162
+  pcc_planet_modifier_tt: "Resources Produced from ['concept_pcc_jobs',PCC Jobs]: §G+100%§!$NEW_LINE$Upkeep for ['concept_pcc_jobs',PCC Jobs]: §R+100%§!$NEW_LINE$£energy£ $energy$ Upkeep per 100 ['concept_pcc_jobs',PCC Jobs]: §R+2§!"
+  concept_pcc_jobs: "Planetary Computing Complex Jobs"
+  concept_pcc_jobs_desc: "Planetary Computing Complex Jobs include: $TABBED_NEW_LINE$- [physicist.GetNamePlural] $TABBED_NEW_LINE$- [biologist.GetNamePlural] $TABBED_NEW_LINE$- [engineer.GetNamePlural] $TABBED_NEW_LINE$- [bureaucrat.GetNamePlural] $TABBED_NEW_LINE$- [trader.GetNamePlural] $TABBED_NEW_LINE$- [soldier.GetNamePlural]"
   succ_mod: "$succ_1$" # 10495725251826705935
   succ_mod_desc: "$succ_1_DESC$" # 7597578312346287926
   succ_mod_tooltip: "§Y2§! 규모의 £exotic_gases£ 매장량을 발견했습니다." # 15343523318053624539
@@ -262,7 +275,6 @@
   mod_giga_shipyard_limit_add: "$name_eq_shipyard$ 건조 능력" # 13094765972901191424
   mod_giga_suppressor_limit_add: "$name_fusion_suppressor$ 용량" # 7152852924719965288
   mod_giga_vanilla_interstellar_limit_add: "$interstellar_assembly_4$ 수용량" # 10742745508638179774
-  mod_giga_stellarhabitat_limit_add: "$name_interstellar_hab$ 수용량" # 7858566249774623830
   mod_giga_disco_moon_limit_add: "$name_discomoon$ 용량" # 7452461504205699612
   mod_giga_maginot_limit_add: "$name_maginot$ 수용량" # 11341768612804244774
   mod_giga_vanilla_matter_limit_add: "$matter_decompressor_4$ 수용량" # 15356513620331117128

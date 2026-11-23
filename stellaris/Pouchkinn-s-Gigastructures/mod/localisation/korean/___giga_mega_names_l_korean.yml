@@ -2,7 +2,7 @@
   fusion_suppressor_0: "$gc_mega$$name_fusion_suppressor$ 건설 현장" # 7166747828859582544
   fusion_suppressor_0_DESC: "미래의 $name_fusion_suppressor$ 건설 부지이며, 이 극도로 발전된 장치 건설을 시작하는 데 필요한 모든 것을 갖추고 있습니다." # 7644538701527706011
   fusion_suppressor_0_MEGASTRUCTURE_DETAILS: "£기가 구조물£ $giga_list_category_megastructure$ - $giga_list_category_miscellaneous$\n일반 §Y항성§!을 §Y중성자별§! 및 §Y블랙홀§!로 변환할 수 있습니다 - $giga_list_damages_system_planets$\n§L핵융합 억제기(Fusion Suppressor)는 항성 내 핵융합 과정을 조작하여 초신성을 조기에 유발함으로써 해당 항성을 보다 이국적인 천체로 변모시킵니다." # 6860804110491573674
-  fusion_suppressor_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - $name_fusion_suppressor$의 완전한 완공은 구조물을 해체하고 사용 가능한 §Y블랙홀§!을 유지하거나, 혹은 항성을 §H초신성§! 폭발시켜 §R그 과정에서 시스템 내 모든 함선과 구조물을 파괴하고 모든 행성을 황폐하게 만들 수 있는§!, 사용 가능한 §Y중성자별§!을 남기는 선택지를 제공합니다. 남은 천체에는 £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!, £energy£ §Y$energy$§!, 그리고 £physics_research£ §Y$physics_research$§!가 무작위로 생성됩니다.\n\n§H참고:§! 다른 거대구조물에 중성자별을 사용하려면 $name_fusion_suppressor$가 §Y완전히 완공§!되어야 합니다.\n\n£giga_sr_iodizium£ §Y$giga_sr_iodizium$§!는 강력한 건물의 동력원으로 사용될 수 있으며, 이는 행성의 £physics_research£ £society_research£ £engineering_research£ §Y연구§! 및 £energy£ §Y$energy$§! 생산량을 향상시킵니다.\n\n§Y융합 억제기§!에 의해 생성된 §Y중성자별§!은 §YNidavellir Hyperforge§!에 적합합니다. §Y블랙홀§!은 다른 블랙홀 기반 거대구조물에 사용될 수 있습니다." # 11995156468867689444
+  fusion_suppressor_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - Full completion of the $name_fusion_suppressor$ results in the option to either dismantle the structure and keep a usable §YBlack Hole§!, or let the star §Hsupernova§!, §Rdestroying all ships and structures in the system, and scouring every planet in the process§!, leaving a usable §YNeutron Star§!. Remaining bodies are seeded randomly with £giga_sr_iodizium£ §Y$giga_sr_iodizium$§!, $r_energy$, and £physics_research£ §Y$physics_research$§!. \n\n§HNote:§! The $name_fusion_suppressor$ must be §Yfully completed§! in order to use the Neutron Star for another megastructure.\n\n£giga_sr_iodizium£ §Y$giga_sr_iodizium$§! can be used to fuel powerful buildings which improve planetary £physics_research£ £society_research£ £engineering_research£ §YResearch§! and $r_energy$ output.\n\n§YNeutron Stars§! created by the §YFusion Suppressor§! are fit for a §YNidavellir Hyperforge§!. The §YBlack Holes§! can be used for any other black hole-based megastructure."
   fusion_suppressor_1: "$name_fusion_suppressor$ 중력 변조기" # 4636438753353695712
   fusion_suppressor_1_DESC: "이 거대한 장치들은 항성 주변의 중력을 조작하여, 항성의 물질을 더 작은 부피로 압축하는 것을 가능하게 합니다." # 1380391934341255454
   fusion_suppressor_2: "$name_fusion_suppressor$ 항성 안정기" # 8959764536556463287
@@ -51,13 +51,13 @@
   ehof_megastructure_phase2_decommissioned_DESC: "$ehof_megastructure_phase1_decommissioned_DESC$" # 8463696857445710649
   ehof_megastructure_phase2_decommissioned_MEGASTRUCTURE_DETAILS: "$ehof_megastructure_phase2_decommissioned_DESC$" # 13227109469041180153
   ehof_megastructure_phase3: "$ehof_ehofp3$" # 7423420965175169430
-  ehof_megastructure_phase3_DESC: "§H£giga_sr_negative_mass£음의 질량§!을 사용하여 성간 항행을 위한 $ehof_wormholes$와 $sr_dark_matter$ 추출을 안정화합니다." # 11295053175319058552
+  ehof_megastructure_phase3_DESC: "Uses §H£giga_sr_negative_mass£Negative Mass§! to stabilize $ehof_wormholes$ for interstellar travel and £sr_dark_matter£ §Y$sr_dark_matter$§! extraction."
   ehof_megastructure_phase3_MEGASTRUCTURE_DETAILS: "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$" # 8558923644212389813
   ehof_megastructure_phase3_decommissioned: "$ehof_ehofp3$ (§E퇴역됨§!)" # 16465397467724057677
   ehof_megastructure_phase3_decommissioned_DESC: "$ehof_megastructure_phase1_decommissioned_DESC$" # 8463696857445710649
   ehof_megastructure_phase3_decommissioned_MEGASTRUCTURE_DETAILS: "$ehof_megastructure_phase3_decommissioned_DESC$" # 17970284390395552545
   ehof_megastructure_phase4: "$ehof_ehofp4$" # 6020415423555414790
-  ehof_megastructure_phase4_DESC: "§H£giga_sr_negative_mass£음의 질량§!을 사용하여 성간 항행을 위한 $ehof_wormholes$와 $sr_dark_matter$ 추출을 안정화합니다." # 11295053175319058552
+  ehof_megastructure_phase4_DESC: "Uses §H£giga_sr_negative_mass£Negative Mass§! to stabilize $ehof_wormholes$ for interstellar travel and £sr_dark_matter£ §Y$sr_dark_matter$§! extraction."
   ehof_megastructure_phase4_MEGASTRUCTURE_DETAILS: "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$" # 8558923644212389813
   ehof_megastructure_phase4_decommissioned: "$ehof_ehofp4$ (§E퇴역됨§!)" # 13038613894749247883
   ehof_megastructure_phase4_decommissioned_DESC: "$ehof_megastructure_phase1_decommissioned_DESC$" # 8463696857445710649

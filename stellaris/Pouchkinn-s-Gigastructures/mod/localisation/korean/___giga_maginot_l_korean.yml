@@ -197,12 +197,12 @@
   job_maginot_shield_generator_operator: "보호막 생성기 운용병" # 17296585302709526063
   job_maginot_shield_generator_operator_plural: "보호막 생성기 운영자" # 15557474442107191402
   job_maginot_shield_generator_operator_desc: "도시 구획 크기의 발전기 배열을 운영하도록 훈련받았으며, 그 외에도 $name_maginot_world$가 적 포격 위협으로부터 상당히 안전하게 유지되도록 보장합니다." # 18399541855957463715
-  job_maginot_shield_generator_operator_effect_desc: "£job_maginot_shield_generator_operator£ $job_maginot_shield_generator_operator_plural$은 £energy£ §Y$energy$§!와 £alloys£ §Y$alloys$§!를 £unity£ §Y통합§!로 전환하고 $name_maginot_world$에 §Y방어 업그레이드§!를 활성화합니다. 일자리 100개당 §Y$defensive_upgrade_point$§! 1개." # 13133959969045382770
+  job_maginot_shield_generator_operator_effect_desc: "£job_maginot_shield_generator_operator£ $job_maginot_shield_generator_operator_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §YUnity§! and enable §Ydefensive upgrades§! for the $name_maginot_world$. 1 §Y$defensive_upgrade_point$§! per 100 jobs."
   mod_job_maginot_shield_generator_operator_add: "$job_maginot_shield_generator_operator$" # 17402722615822897650
   job_maginot_shield_generator_operator_gestalt: "방어막 생성기 운용 드론" # 9377175123256406875
   job_maginot_shield_generator_operator_gestalt_plural: "방어막 생성기 운용 드론" # 9911758457887251147
   job_maginot_shield_generator_operator_gestalt_desc: "도시 구획 크기의 발전기 배열을 운영하도록 훈련받았으며, 그 외에도 $name_maginot_world$가 적 포격 위협으로부터 상당히 안전하게 유지되도록 보장합니다." # 18399541855957463715
-  job_maginot_shield_generator_operator_gestalt_effect_desc: "£job_maginot_shield_generator_operator_gestalt£ $job_maginot_shield_generator_operator_gestalt_plural$은 £energy£ §Y$energy$§!와 £alloys£ §Y$alloys$§!를 £unity£ §Y통합§!로 전환하고 $name_maginot_world$에 대한 §Y방어 업그레이드§!를 활성화합니다. 일자리 100개당 §Y$defensive_upgrade_point$§! 1개." # 9045823210036173251
+  job_maginot_shield_generator_operator_gestalt_effect_desc: "£job_maginot_shield_generator_operator_gestalt£ $job_maginot_shield_generator_operator_gestalt_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §YUnity§! and enable §Ydefensive upgrades§! for the $name_maginot_world$. 1 §Y$defensive_upgrade_point$§! per 100 jobs."
   mod_job_maginot_shield_generator_operator_gestalt_add: "$job_maginot_shield_generator_operator_gestalt$" # 1835722478445785215
   maginot_shield_generator_operator_gestalt_wilderness: "이지스 공생체" # 10413585905724827341
   job_maginot_shield_generator_operator_gestalt_wilderness: "$maginot_shield_generator_operator_gestalt_wilderness$" # 10331523302193227058
@@ -213,15 +213,15 @@
   job_maginot_planetary_cannon_operator: "방어망 조작원" # 10450340277336090661
   job_maginot_planetary_cannon_operator_plural: "방어망 운영자" # 7690853189664362465
   job_maginot_planetary_cannon_operator_desc: "숙련된 공학자 무리가 행성 방어포와 궤도 통신망을 모두 유지보수합니다. 훈련된 요원들은 지상 무기와 궤도 SD 플랫폼 모두에 배치되어, 감히 $name_maginot_world$와 성계를 공유할 정도로 어리석은 모든 적대 세력과 교전합니다." # 10947813195174693738
-  job_maginot_planetary_cannon_operator_effect_desc: "£job_maginot_planetary_cannon_operator£ $job_maginot_planetary_cannon_operator_plural$은 £energy£ §Y$energy$§와 £alloys£ §Y$alloys$§를 £unity£ §Y통합§!으로 전환하고 $name_maginot_world$에 대한 §Y공격 업그레이드§!를 활성화합니다. 일자리 100개당 §Y$offensive_upgrade_point$§ 1개." # 463549191599126664
+  job_maginot_planetary_cannon_operator_effect_desc: "£job_maginot_planetary_cannon_operator£ $job_maginot_planetary_cannon_operator_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §YUnity§! and enable §Yoffensive upgrades§! for the $name_maginot_world$. 1 §Y$offensive_upgrade_point$§! per 100 jobs."
   mod_job_maginot_planetary_cannon_operator_add: "$job_maginot_planetary_cannon_operator$" # 4062677635127627889
   job_maginot_planetary_cannon_operator_gestalt: "방어망 운용 드론" # 2650629225993666361
   job_maginot_planetary_cannon_operator_gestalt_plural: "방어망 운영자 드론" # 5529948804771865915
   job_maginot_planetary_cannon_operator_gestalt_desc: "훈련된 기술자 드론 무리가 행성 포대와 궤도 상부 연결망 둘 모두를 유지보수합니다. 전투 드론은 지상 무기뿐만 아니라 궤도 SD 플랫폼에도 배치되어, $name_maginot_world$와 성계를 공유할 만큼 어리석은 모든 적대적인 존재와 교전합니다." # 13156785951139254030
-  job_maginot_planetary_cannon_operator_gestalt_effect_desc: "£job_maginot_planetary_cannon_operator_gestalt£ $job_maginot_planetary_cannon_operator_gestalt_plural$은 £energy£ §Y$energy$§!와 £alloys£ §Y$alloys$§!를 £unity£ §Y통합§!로 전환하고 $name_maginot_world$에 대한 §Y공격 업그레이드§!를 활성화합니다. 일자리 100개당 §Y$offensive_upgrade_point$§! 1개." # 9517902615097880633
+  job_maginot_planetary_cannon_operator_gestalt_effect_desc: "£job_maginot_planetary_cannon_operator_gestalt£ $job_maginot_planetary_cannon_operator_gestalt_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §YUnity§! and enable §Yoffensive upgrades§! for the $name_maginot_world$. 1 §Y$offensive_upgrade_point$§! per 100 jobs."
   mod_job_maginot_planetary_cannon_operator_gestalt_add: "$job_maginot_planetary_cannon_operator_gestalt$" # 10572324575778666118
   maginot_planetary_cannon_operator_gestalt_wilderness: "센티넬심비온트" # 13775911186730348581
-  job_maginot_planetary_cannon_operator_gestalt_wilderness: "$Sentinelsymbiont$" # 4808328250044799386
+  job_maginot_planetary_cannon_operator_gestalt_wilderness: "$maginot_planetary_cannon_operator_gestalt_wilderness$"
   maginot_planetary_cannon_operator_gestalt_wilderness_plural: "센티넬심비온트들" # 7353037330706665148
   job_maginot_planetary_cannon_operator_gestalt_wilderness_plural: "$maginot_planetary_cannon_operator_gestalt_wilderness_plural$" # 5377152509248125788
   maginot_planetary_cannon_operator_gestalt_wilderness_desc: "무리들을 위험으로부터 보호하려는 원초적인 본능을 지닌 공학 및 전투용 심비온트입니다. 이들은 SD 플랫폼의 궤도 덮개와 행성 표면의 탄도 투사기 하층부를 모두 감독합니다." # 2836434909484505717
@@ -229,12 +229,12 @@
   job_maginot_bunker_officer: "마지노 방어 사령관" # 936857450053276629
   job_maginot_bunker_officer_plural: "마지노 방어 사령관들" # 14836440595622207835
   job_maginot_bunker_officer_desc: "벙커 구역 전체의 방어를 조직화하는 임무를 맡은 장교들." # 9619277674019317831
-  job_maginot_bunker_officer_effect_desc: "£job_maginot_bunker_officer£ $job_maginot_bunker_officer_plural$은 £energy£ §Y$energy$§!와 £alloys£ §Y$alloys$§!를 £unity£ §Y$unity$§!로 전환하고, £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!를 증가시키며 £defense_army£ §Y방어 군단§!을 생성합니다." # 4757796087525928973
+  job_maginot_bunker_officer_effect_desc: "£job_maginot_bunker_officer£ $job_maginot_bunker_officer_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! and spawn £defense_army£ §YDefense Armies§!"
   mod_job_maginot_bunker_officer_add: "$job_maginot_bunker_officer$" # 5614691716721418274
   job_maginot_bunker_officer_gestalt: "마지노 방어 사령부 드론" # 7207727989856280166
   job_maginot_bunker_officer_gestalt_plural: "마지노 방어 사령부 드론" # 10862024662725646751
   job_maginot_bunker_officer_gestalt_desc: "전체 벙커 섹터 방어 조직화를 위해 특별히 제작된 드론" # 3686722668709802115
-  job_maginot_bunker_officer_gestalt_effect_desc: "£job_maginot_bunker_officer_gestalt£ $job_maginot_bunker_officer_gestalt_plural$은 £energy£ §Y$energy$§!와 £alloys£ §Y$alloys$§!를 £unity£ §Y$unity$§!로 전환하고, £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!를 증가시키며 £defense_army£ §Y방어 군대§!를 생성합니다." # 3344286445199469210
+  job_maginot_bunker_officer_gestalt_effect_desc: "£job_maginot_bunker_officer_gestalt£ $job_maginot_bunker_officer_gestalt_plural$ turn $r_energy$ and £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§! and spawn £defense_army£ §YDefense Armies§!"
   mod_job_maginot_bunker_officer_gestalt_add: "$job_maginot_bunker_officer_gestalt$" # 14032114701097046769
   maginot_bunker_officer_gestalt_wilderness: "워렌심비온트" # 10356502215043909944
   job_maginot_bunker_officer_gestalt_wilderness: "$maginot_bunker_officer_gestalt_wilderness$" # 7103302456008074387
@@ -249,7 +249,7 @@
   mod_job_maginot_military_police_add: "$job_maginot_military_police$" # 17657086185855428197
   maginot_world_0: "$gc_mega$$name_maginot_world$ 건설 현장" # 4563923243689872071
   maginot_world_0_DESC: "아래 행성에 건설될 미래의 $name_maginot_world$ 건설 현장.\n이 거대한 요새는 언젠가 행성 맨틀 깊숙이 파고들고 대기권을 넘어 심우주까지 뻗어 나갈 것이며, 적에게 거의 난공불락의 장애물을 제시할 것입니다.\n행성의 모든 구역은 고유한 방어 구역으로 대체될 것이며, 행성 방어 플랫폼 관리가 가능해질 것입니다.\n$orbital_ring_tier_1_plural$는 통합되어 제거됩니다." # 10223370852828856975
-  maginot_world_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_defensive$\n대규모의 §Y방어 병력§!, §Y초광속 방해막§!을 제공하고 §Y도약 추진기§!를 차단합니다 - §B마지노 요새 단지 건물이 있는 행성이 필요합니다§!\n§L행성 전체를 뒤덮는 거대한 요새 단지는, 궁극적인 행성 방어를 제공합니다.§!" # 11022988417584590111
+  maginot_world_0_MEGASTRUCTURE_DETAILS: "£gigastructural£ $giga_list_category_megastructure$ - $giga_list_category_defensive$ \nProvides powerful orbital and ground defences and an §YFTL Inhibitors§!, and blocks §YJump Drives§! - §BREQUIRES WORLD WITH MAGINOT FORT COMPLEX BUILDING§!\n§LA vast fortress-complex engulfing an entire planet, providing the ultimate planetary defense.§!"
   maginot_world_1: "$name_maginot_world$ 골조" # 943105946239877633
   maginot_world_1_DESC: "초기 행성 개조, 굴착, 우주 엘리베이터 건설 및 부속 방어 고리의 건설 시작이 이루어졌습니다. 최심부 벙커 굴착이 완료되었고, 데드 핸드 시스템의 설치 작업이 시작될 수 있습니다." # 6868236876658311707
   maginot_world_2: "$name_maginot_world$" # 16775828653963692130

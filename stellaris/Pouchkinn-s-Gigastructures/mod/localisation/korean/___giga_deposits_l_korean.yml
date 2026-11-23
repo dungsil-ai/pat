@@ -18,11 +18,9 @@
   d_iodizium_deposit: "£giga_sr_iodizium£ +3" # 9503378252766760219
   d_iodizium_deposit_1: "£giga_sr_iodizium£ +1" # 14634693042489050073
   d_nicoll_deposit: "£minerals£ +10" # 14750764525639193362
-  d_depletedstripmine_deposit: "£minerals£ +20" # 2700189242436299685
   d_nicollboom_deposit: "£광물£ +15" # 7966808390146428135
   d_pouchkinn_deposit: "£physics£ +30" # 9219571488480645402
   d_ringworld_deposit: "£energy£ +50" # 797155960285904104
-  d_succ_deposit: "광물 +10 이국적인 기체 +5 희귀 수정 +5" # 17279361243052296302
   d_giga_hab_nanites_1: "나노로봇 +1" # 15815939212229835065
   d_giga_hab_consumer_goods_1: "£소비재£ +1" # 6739737851143410976
   d_giga_hab_astral_threads_1: "£astral_threads£ +1" # 7126309452655601210
@@ -30,11 +28,9 @@
   d_iodizium_deposit_desc: "" # 17241709254077376921
   d_iodizium_deposit_1_desc: "" # 17241709254077376921
   d_nicoll_deposit_desc: "" # 17241709254077376921
-  d_depletedstripmine_deposit_desc: "" # 17241709254077376921
   d_nicollboom_deposit_desc: "" # 17241709254077376921
   d_pouchkinn_deposit_desc: "" # 17241709254077376921
   d_ringworld_deposit_desc: "" # 17241709254077376921
-  d_succ_deposit_desc: "" # 17241709254077376921
   d_giga_hab_nanites_1_desc: "" # 17241709254077376921
   d_giga_hab_consumer_goods_1_desc: "" # 17241709254077376921
   d_giga_hab_astral_threads_1_desc: "" # 17241709254077376921

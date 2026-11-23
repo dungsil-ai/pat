@@ -51,11 +51,6 @@
   katown_partisans_1: "카타운 파르티잔" # 3461014790951907472
   katown_partisans_2: "카타운 파르티잔" # 14682542524750370589
   katown_partisans_3: "카타운 파르티잔" # 13202488874144486138
-  ezic_resistance_1: "에직 저항군" # 16791969837516932046
-  ezic_resistance_2: "에직 저항군" # 7773375713555709360
-  ezic_resistance_3: "에직 저항군" # 9198171352011782123
-  ezic_resistance_4: "에지크 저항군" # 5545196701186089034
-  ezic_resistance_5: "에지크 저항군" # 17595788682801812836
   solak_partisan_penalties: "solak_partisan_penalties" # 16036935184951983550
   easy_katzen_tech_level_buffs: "easy_katzen_tech_level_buffs" # 5135760414163491254
   katzen_tech_level_buffs: "katzen_tech_level_buffs" # 3159153306264620162
@@ -75,7 +70,7 @@
   ezic_sabotaged_armies: "ezic_sabotaged_armies" # 16069241503211430286
   ezic_sabotaged_power: "ezic_sabotaged_power:0 \"이지크의 전력망 사보타주\"\nezic_sabotaged_power_desc:0 \"이 행성의 전력망이 이지크 반군에 의해 체계적으로 파괴되었습니다. 기반 시설의 마비로 인해 생산량이 급감하고 있습니다.\"" # 13448012985647520206
   ezic_tropiana: "ezic_tropiana" # 5410447935271692477
-  only_joined_by_katzen_splinters: "only_joined_by_katzen_splinters" # 2526747911481995970
+  only_joined_by_katzen_splinters: "Can only be formed by Katzen splinter states."
   aeternum_debug_debuff: "aeternum_debug_debuff" # 1565521415156302724
   aeternum_comms_scramble_speed_1: "에테르눔 통신 교란 속도 1" # 14609532884783411855
   aeternum_comms_scramble_speed_2: "에테르눔 통신 교란 속도 2" # 8676762105791531812

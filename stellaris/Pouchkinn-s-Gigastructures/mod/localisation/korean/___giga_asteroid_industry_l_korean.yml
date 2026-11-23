@@ -3,8 +3,8 @@
   name_plural_asteroid_manufactory: "소행성 산업 단지" # 14929047522100030646
   asteroid_manufactory_0: "$gc_kilo$소행성 제조소" # 9142865455651403174
   asteroid_manufactory_0_DESC: "미래 산업 시설 건설 현장으로, 근처 소행성 주변에 대규모 채굴 및 가공 시설을 건설하기 위해 필요한 장비와 인력을 갖추고 있습니다." # 9115354339271613367
-  asteroid_manufactory_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_basic_resource_production$ - $giga_list_category_advanced_resource_production$\n§Y공장 건물§! 유형 선택지를 제공하며, 이는 §Y소행성 유형§! 및 §Y자원 매장지§!에 따라 달라집니다!\n일치하는 공장 건물은 동일한 §Y항성계§! 내 행성에 건설될 경우 §Y보너스§!를 제공합니다!\n§L소행성 주위에 건설되어 행성에서의 활용을 위해 자원을 채취하는 대규모 시설입니다.§!" # 707420627297075087
-  asteroid_manufactory_0_CONSTRUCTION_INFO_DELAYED: "$asteroid_manufactory_cost$\n\n§Y$asteroid_manufactory_candidate$§! 수정자를 가진 소행성에 건설해야 합니다.\n\n$MEGASTRUCTURE_UPGRADES_TO$\n\n$asteroid_manufactory_alloys_upgrade$\n$asteroid_manufactory_energy_upgrade$\n\n£consumer_goods£ $consumer_goods$을 사용하는 제국에서 사용 가능:\n$asteroid_manufactory_consumer_goods_upgrade$\n\n£food£ $food$을 사용하는 제국에서 사용 가능:\n$asteroid_manufactory_food_upgrade$\n\n§Y메가스트럭처 건설 한도§!가 £job£§B직업 기반§!으로 설정된 경우 사용 가능:\n$asteroid_manufactory_supertensiles_upgrade$" # 7161185291431186996
+  asteroid_manufactory_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_kilostructure$ - $giga_list_category_basic_resource_production$ - $giga_list_category_advanced_resource_production$\nProvides a choice of §YFactory Buildings§! based on the §YType of Asteroid§! and §YDeposit§!.\nMatching Factory Buildings provide a §YBonus§! if built on Planets in the same §YSolar System§!.\n§LA large facility built around an asteroid, harvesting resources for planetside use.§!"
+  asteroid_manufactory_0_CONSTRUCTION_INFO_DELAYED: "$asteroid_manufactory_cost$\n\nMust be built on an asteroid with an §Y$asteroid_manufactory_candidate$§! modifier\n\n$MEGASTRUCTURE_UPGRADES_TO$\n\n$asteroid_manufactory_alloys_upgrade$\n$asteroid_manufactory_energy_upgrade$\n\nAvailable to Empires which use £consumer_goods£ $consumer_goods$:\n$asteroid_manufactory_consumer_goods_upgrade$\n\nAvailable to Empires which use $r_food$:\n$asteroid_manufactory_food_upgrade$\n\nAvailable if §YMegastructure Build Cap§! is set to £job£§BJob-Based§!:\n$asteroid_manufactory_supertensiles_upgrade$"
   asteroid_manufactory_cost: "기본 업그레이드 비용: £unity£§Y500§! £alloys£§Y750§! £time£ 900" # 14012805947557523669
   asteroid_manufactory_synergy: "§G동일 항성계 보너스:§!" # 16948577897960819756
   asteroid_manufactory_rocky: "§L암석§!" # 12756456582475966215
@@ -20,7 +20,7 @@
   asteroid_manufactory_alloys_DESC: "이 채광 작업은 소행성에서 대량의 광석을 추출하고 분류하며, 행성 기지 제련소로 운송될 준비가 되어 있습니다." # 10478287868771049219
   asteroid_manufactory_alloys_trigger: "$giga_asteroid_industry_candidate_alloys$ 수정치가 필요합니다" # 12432707365776066705
   asteroid_manufactory_alloys_placement: "- £minerals£ §Y$minerals$§! 광물 또는 £alloys£ §Y$alloys$§! 합금 매장지가 있는 $asteroid_manufactory_rocky$ 소행성에 건설 가능" # 11484371291890056600
-  asteroid_manufactory_alloys_effect: "- $mod_building_giga_asteroid_factory_alloys_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ 일부 £job_foundry£ $job_foundry$ 유지비를 £energy£ §Y$energy$으로 바꿉니다!" # 14528239579523036992
+  asteroid_manufactory_alloys_effect: "- $mod_building_giga_asteroid_factory_alloys_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ Swaps some £job_foundry£ $job_foundry$ Upkeep for $r_energy$"
   asteroid_manufactory_alloys_upgrade: "합금 주조 노동자 ['concept_giga_asteroid_industry_alloys']" # 16106614476982471865
   concept_giga_asteroid_industry_alloys: "$asteroid_manufactory_alloys$" # 3851351585217083575
   concept_giga_asteroid_industry_alloys_desc: "$asteroid_manufactory_subtitle$$asteroid_manufactory_alloys_effect$" # 112118674635106139
@@ -35,7 +35,7 @@
   asteroid_manufactory_consumer_goods_DESC: "행성 내 소비재 공장에서 사용하기 위해 대량의 표준화된 부품을 미리 제작하는 재료 가공 시설" # 14054251326470080610
   asteroid_manufactory_consumer_goods_trigger: "$giga_asteroid_industry_candidate_consumer_goods$ 수정자를 요구합니다." # 10033201769649908443
   asteroid_manufactory_consumer_goods_placement: "- £minerals£ §Y$minerals$§! 매장지가 있는 $asteroid_manufactory_rocky$ 또는 $asteroid_manufactory_icy$ 소행성 위에 건설해야 합니다." # 15917205437645416942
-  asteroid_manufactory_consumer_goods_effect: "- 기가 소행성 공장 소비재 국가 최대치: §G+1§!\n- 소행성 제조 시너지: 일부 £job_artisan£ $job_artisan$이(가) £minerals£ §Y$minerals$§!를 소모합니다. £energy£ §Y$energy$§!를 유지비로 소모합니다." # 7853201533856649990
+  asteroid_manufactory_consumer_goods_effect: "- $mod_building_giga_asteroid_factory_consumer_goods_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ Swaps some £job_artisan£ $job_artisan$ $r_minerals$ Upkeep for $r_energy$"
   asteroid_manufactory_consumer_goods_upgrade: "£job_artisan£ ['concept_giga_asteroid_industry_consumer_goods']" # 6855426322790248001
   concept_giga_asteroid_industry_consumer_goods: "$asteroid_manufactory_consumer_goods$" # 6773611485168776539
   concept_giga_asteroid_industry_consumer_goods_desc: "$asteroid_manufactory_subtitle$§ERequirements:§!\n- £consumer_goods£을 사용하는 제국에서만 사용 가능합니다. §Y$consumer_goods$§!\n\n§EEffects:§!\n$asteroid_manufactory_consumer_goods_effect$" # 220678146705487533
@@ -49,8 +49,8 @@
   asteroid_manufactory_energy: "핵융합 연료 저장소" # 2645287313337865340
   asteroid_manufactory_energy_DESC: "행성 기반 에너지 생산 시설로 운송될 융합 전구체를 대규모로 추출 및 저장하는 시설입니다." # 17700884081734611163
   asteroid_manufactory_energy_trigger: "$giga_asteroid_industry_candidate_energy$ 수정치 필요" # 2631360836947356681
-  asteroid_manufactory_energy_placement: "$asteroid_manufactory_icy$ 소행성에 건설되어야 하며, £energy£ §Y$energy$§! 매장지를 보유해야 합니다." # 17415883885279995122
-  asteroid_manufactory_energy_effect: "- $mod_building_giga_asteroid_factory_energy_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ 행성 £energy£ §Y$energy$§! 유지비 감소" # 15514310535989244997
+  asteroid_manufactory_energy_placement: "- Must be built on an $asteroid_manufactory_icy$ Asteroid with an $r_energy$ Deposit"
+  asteroid_manufactory_energy_effect: "- $mod_building_giga_asteroid_factory_energy_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ Reduces Planet $r_energy$ Upkeeps"
   asteroid_manufactory_energy_upgrade: "£job_technician£ ['concept_giga_asteroid_industry_energy']" # 17999926746009775149
   concept_giga_asteroid_industry_energy: "$asteroid_manufactory_energy$" # 4248252027674328213
   concept_giga_asteroid_industry_energy_desc: "$asteroid_manufactory_subtitle$\n$asteroid_manufactory_energy_effect$" # 6718770239884011161
@@ -80,7 +80,7 @@
   asteroid_manufactory_supertensiles_DESC: "$giga_sr_amb_megaconstruction$ 및 몇몇 관련 광석을 자연적으로 추출하며, 행성 표면의 클린룸 시설에서 추가 처리를 위해 준비하는 고급 재료 처리 시설." # 10372878109553596370
   asteroid_manufactory_supertensiles_trigger: "$giga_asteroid_industry_candidate_supertensiles$ 모디파이어가 필요합니다" # 15667319399003521096
   asteroid_manufactory_supertensiles_placement: "- £giga_sr_amb_megaconstruction£ §Y$giga_sr_amb_megaconstruction$§! 매장지가 있는 $asteroid_manufactory_rocky$ 또는 $asteroid_manufactory_icy$ 소행성에 건설해야 합니다." # 8857168536882245364
-  asteroid_manufactory_supertensiles_effect: "$mod_building_giga_asteroid_factory_supertensiles_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ 일부 £job_giga_megaengineer£ $job_giga_megaengineer$ £unity£ §Y통합§!로 전환하고 £energy£ §Y에너지£! 유지 비용을 요구합니다." # 5006265911569623580
+  asteroid_manufactory_supertensiles_effect: "- $mod_building_giga_asteroid_factory_supertensiles_country_max$: §G+1§!\n- $asteroid_manufactory_synergy$ Swaps some £job_giga_megaengineer£ $job_giga_megaengineer$ £unity£ §Y$unity$§! Upkeep for $r_energy$"
   asteroid_manufactory_supertensiles_upgrade: "£job_giga_megaengineer£ ['concept_giga_asteroid_industry_supertensiles']" # 5265268490946124863
   concept_giga_asteroid_industry_supertensiles: "$asteroid_manufactory_supertensiles$" # 16684211575397085122
   concept_giga_asteroid_industry_supertensiles_desc: "$asteroid_manufactory_subtitle$§E요구 사항:§!\n- 거대구조물 건설 한도 §Y옵션§!은 £job£§B작업 기반§!으로 설정되어야 합니다.\n\n§E효과:§!\n$asteroid_manufactory_supertensiles_effect$" # 18077752946459891796
@@ -100,11 +100,11 @@
   giga_asteroid_industry.001.desc: "[FromFrom.solar_system.GetName] 성계에 미래의 산업 시설을 위한 건설 부지 작업이 완료되었습니다. 소행성 근처에 떠 있는 이 거대한 플랫폼에는 대규모 채굴 단지 건설을 시작하는 데 필요한 장비가 갖춰져 있으며, 이 단지는 모든 종류의 생산품을 생산하는 데 특화될 수 있습니다.\n\n한 가지 의문이 남습니다: 어떤 종류의 시설을 건설해야 할까요?" # 6764272340044795544
   giga_asteroid_industry.001.alloys: "£합금£을 생산하는 데 중점을 둔 채굴 시설입니다 §Y합금§!." # 4800316322271456735
   giga_asteroid_industry.001.alloys.effect: "이 기지는 ['concept_giga_asteroid_industry_alloys']를 건설하도록 설정될 것입니다." # 3732796753604738433
-  giga_asteroid_industry.001.consumer_goods: "£consumer_goods£ §Y$consumer_goods$§!를 위한 부품을 생산하도록 설계된 공장." # 15122424534032480224
+  giga_asteroid_industry.001.consumer_goods: "A factory designed to make parts for $r_consumer_goods$."
   giga_asteroid_industry.001.consumer_goods.effect: "이곳은 ['concept_giga_asteroid_industry_consumer_goods']을 건설하도록 설정될 것입니다." # 10187670735701016098
-  giga_asteroid_industry.001.energy: "£energy£ §Y$energy$§!을 생산하는 발전소용 연료 저장소." # 5655080212374388975
+  giga_asteroid_industry.001.energy: "A fuel depot for power plants producing $r_energy$."
   giga_asteroid_industry.001.energy.effect: "이 시설은 ['concept_giga_asteroid_industry_energy']를 건설하도록 구성됩니다." # 17440175074878169063
-  giga_asteroid_industry.001.food: "농장 관개와 £food£ §Y$food$§ 생산을 위한 얼음 가공기!" # 2104406014951643563
+  giga_asteroid_industry.001.food: "An ice processor for irrigating farms and producing $r_food$."
   giga_asteroid_industry.001.food.effect: "이 부지는 ['concept_giga_asteroid_industry_food']를 건설하도록 구성될 것입니다." # 5359558665996887260
   giga_asteroid_industry.001.supertensiles: "£giga_sr_amb_megaconstruction£ §Y$giga_sr_amb_megaconstruction$§!에 필요한 재료 추출기." # 8698124751668249341
   giga_asteroid_industry.001.supertensiles.effect: "이 시설은 ['concept_giga_asteroid_industry_supertensiles'] 건설을 위해 설정될 것입니다." # 15334057780385506042
@@ -171,8 +171,9 @@
   edict_giga_survey_asteroid_industry: "탐지하십시오 $asteroid_manufactory_candidate_plural$" # 1297885959029480467
   edict_giga_survey_asteroid_industry_desc: "우리 제국 내 모든 소행성을 조사하여 $name_asteroid_manufactory$에 필요한 자원을 보유한 소행성을 파악하십시오." # 6111668891861667823
   giga_edicts.3.name: "$asteroid_manufactory_candidate_plural$" # 13588597435828257684
-  giga_edicts.3.desc: "우리 제국의 다양한 소행성들에 대한 조사가 완료되었습니다. 잠재적인 $name_asteroid_manufactory$ 후보지들이 모두 목록화되었으며, 이제 확장 계획기에서 확인할 수 있습니다." # 2939340175117166904
-  giga_edicts.3.a: "훌륭하군!" # 4205353275372794963
+  giga_edicts.3.desc: "A survey of our empire's various asteroids has been concluded. All potential $name_asteroid_manufactory$ candidates have been catalogued, and we are ready to add them to our expansion planner. Alternatively, we can remove our current marked candidates to clean up our expansion planner."
+  giga_edicts.3.a.tooltip: "$name_asteroid_manufactory$ candidates will be §Gadded§! to our expansion planner."
+  giga_edicts.3.b.tooltip: "$name_asteroid_manufactory$ candidates will be §Rremoved§! from our expansion planner."
   giga_asteroid_industry_candidate_marked: "$asteroid_manufactory_candidate$" # 2678780654798226235
   giga_asteroid_industry_candidate_marked_desc: "이 소행성은 $name_asteroid_manufactory$ 건설에 적합한 후보지로 지정되었습니다." # 17016688120913426895
   requires_not_at_building_giga_asteroid_factory_energy_cap: "$TRIGGER_FAIL$ ['building:building_giga_asteroid_factory_energy'] 한도에 도달하여 해체할 수 없습니다." # 4508336954616663014

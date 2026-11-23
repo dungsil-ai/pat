@@ -11,5 +11,5 @@
   decision_giga_gas_giant_hive_district_desc: "$district_giga_gas_giant_habitat_hive_desc$" # 11756189544105478496
   decision_giga_gas_giant_nexus_district: "$district_giga_gas_giant_habitat_nexus$" # 5352881937187003035
   decision_giga_gas_giant_nexus_district_desc: "$district_giga_gas_giant_habitat_nexus_desc$" # 11879813347125398390
-  decision_giga_pcc_science_district: "$district_giga_pcc_science$" # 8816502950307994970
-  decision_giga_pcc_science_district_desc: "$district_giga_pcc_science_desc$" # 1613203677385909901
+  decision_giga_pcc_science_district: "$district_giga_pcc_processor$" # 6587593682312057377
+  decision_giga_pcc_science_district_desc: "$district_giga_pcc_processor_desc$" # 1681114185618083213

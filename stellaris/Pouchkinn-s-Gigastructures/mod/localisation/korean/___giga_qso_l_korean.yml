@@ -58,10 +58,10 @@
   quasi_stellar_obliterator_6_DESC: "초병기의 제어판을 열어 발사하거나 설정합니다." # 3035834581145372669
   quasi_stellar_marker_star_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_star_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_star_firing_MEGASTRUCTURE_DETAILS: ""
   quasi_stellar_marker_planet_firing: "Q.S.O. 웜홀" # 16133938208756191055
   quasi_stellar_marker_planet_firing_DESC: "$name_quasistellar$가 이 웜홀을 통해 발사되고 있습니다." # 15275602615273064437
-  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: "" # 17241709254077376921
+  quasi_stellar_marker_planet_firing_MEGASTRUCTURE_DETAILS: ""
   giga_qso.3000.name: "콰사리아의 평화" # 14516309440491175786
   giga_qso.3000.desc: "§R경악스러운 소식!§!\n\n우리 $name_quasistellar$의 중요한 부분이 완성됨에 따라, 은하계는 우리를 은하계의 안전에 대한 보편적인 위협으로 간주하기 시작한 듯합니다. 실제로, 대량 학살을 자행하지 않는 모든 제국은 오늘 '콰사리아의 평화'라 불리는 상호 불가침 조약과 함께 기한 없는 휴전에 합의했습니다. 그들은 적어도 지금은 우리의 하이퍼무기로 은하계의 안전을 위협하지 못하도록 사소한 다툼을 잠시 접어두기로 결정했습니다..." # 9789629933934543932
   giga_qso.3000.a: "그게 도움이 될 거라 생각하나?" # 6328228696513221900
@@ -165,7 +165,7 @@
   giga_qso_targeted_planet_9: "[giga_qso_targeted_planet_9.GetName]" # 5918802075074549844
   giga_qso_targeted_planet_10: "[giga_qso_targeted_planet_10.GetName]" # 4458746616975718568
   giga_qso.008.name: "$name_quasistellar$: 매개변수" # 9163117663241832459
-  giga_qso.008.desc: "여기에서 준항성체(Q.S.O.) 자체의 에너지 출력/소비를 관리할 수 있습니다.\n\nQ.S.O.의 §Y충전율§!을 높이면 £energy£ §Y$energy$§! 유지비가 증가하는 대신 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! 출력이 증가합니다.\n\n충전율을 낮추면 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! 출력이 감소하지만, 그 대가로 Q.S.O.의 £energy£ §Y$energy$§! 유지비가 감소하거나, 아예 없어지거나, 심지어 £energy£ §Y$energy$§! 생산으로 전환될 수도 있습니다.\n\n또한 아래의 블랙홀에 £minerals£§Y$minerals$§!, £food£§Y$food$§!, £consumer_goods£ §Y$consumer_goods$§!, £alloys£ §Y$alloys$§!, £giga_sr_bulk_matter£ §Y$giga_sr_bulk_matter$§! 및 §R기타...§!와 같은 다양한 자원을 투입하여 소량의 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 즉시 획득할 수 있습니다." # 2970057395400279144
+  giga_qso.008.desc: "Here, you can manage the power output/consumption of the Q.S.O. itself.\n\nIncreasing the §YCharging Rate§! of the Q.S.O. will increase its £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! output at the expense of a higher $r_energy$ upkeep.\n\nDecreasing the charging rate will decrease its £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§! output, in return, the Q.S.Os $r_energy$ upkeep will be reduced, nullified or even turned into $r_energy$ production.\n\nYou can also dump various resources, such as £minerals£§Y$minerals$§!, £food£§Y$food$§!, £consumer_goods£ §Y$consumer_goods$§!, £alloys£ §Y$alloys$§!, £giga_sr_bulk_matter£ §Y$giga_sr_bulk_matter$§! and §Rothers...§! into the black hole below to quickly gain small amounts of £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!."
   giga_qso.009.name: "$name_quasistellar$: 자원 투입" # 9023221167383889673
   giga_qso.009.desc: "여기에서 £minerals£§Y$minerals$§!, £food£§Y$food$§!, £consumer_goods£ §Y$consumer_goods$§!, £alloys£ §Y$alloys$§!, £giga_sr_bulk_matter£ §Y$giga_sr_bulk_matter$§! 및 §R기타...§!와 같은 다양한 자원을 아래의 블랙홀에 투입하여 소량의 £giga_sr_quasaric_energy£ §Y$giga_sr_quasaric_energy$§!를 즉시 획득할 수 있습니다. 부디 " # 17238608122282463145
   giga_qso.008.dump: "자원 투입..." # 16399291311687766444

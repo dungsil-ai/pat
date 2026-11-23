@@ -2,7 +2,7 @@
   giga_tech_the_vat: "거대 복제 시설" # 13220819781140617382
   giga_tech_the_vat_desc: "새로운 유전 공학 시대의 도래는 이전보다 훨씬 더 위대하고 야심찬 프로젝트를 위한 길을 열었습니다. 이전에는 행성에만 국한되었던 유전 공학이, 거대한 궤도 클론 시설을 통해 진정한 우주 생명체 함대를 신속하게 생체 공학적으로 생산하고 증식시켜 우리 해군력을 더욱 강화할 수 있게 될 것입니다." # 8712885263609061079
   giga_dialog.11301.name: "$name_the_vat$ 건설 현장 건설 완료" # 1360519120072695253
-  giga_dialog.11301.desc: "$name_the_vat_long$의 건설 현장이 이제 완료되었습니다. 이 궤도 플랫폼은 사상 최대 규모의 배양조를 건설하는 데 필요한 구조물을 구축하기 위한 발판 역할을 합니다.\n\n완공되면 우리 함대에서 복무할 대규모 생물학적 개체를 신속하게 생산할 수 있게 될 것입니다." # 15638795305739497983
+  giga_dialog.11301.desc: "The construction site for the $name_the_vat_long$ is now complete. This orbital platform serves as a staging ground for the structures necessary to build the largest vat ever conceived.\n\nOnce complete, it will be capable of rapidly producing large quantities of biological creatures to serve in our fleets."
   giga_dialog.11301.a: "훌륭하군." # 13528797227097630973
   giga_dialog.11302.name: "주요 배양조 건설 완료" # 13135260701830767117
   giga_dialog.11302.desc: "우리 궤도 클론 시설의 주 복제조 건설이 완료되었습니다. 이제 이 복제조는 종류를 막론하고 가장 큰 규모의 복제조가 되어, 다양한 설계의 진정한 거대 클론을 생성할 수 있습니다.\n\n§Y생체 거대 괴수를 격파하면 모든 B.I.G. 복제조의 주 복제조에서 해당 개체를 복제할 수 있게 됩니다.§!" # 6550063770502463073
@@ -14,7 +14,7 @@
   giga_dialog.11304.desc: "우리의 $name_the_vat_long$ 건설의 또 다른 단계가 완료되었습니다. 이 추가 배양조들은 훨씬 더 많은 클론들이 동시에 생산될 수 있게 할 것입니다." # 7851662840250748863
   giga_dialog.11304.a: "놀랍군!" # 6784546666338679051
   giga_dialog.11305.name: "5번째 및 6번째 보조 배양조 건설 완료" # 2136206677980366064
-  giga_dialog.11305.desc: "$name_the_vat_long$이 완료되었습니다. 6개의 보조 배양조와 거대한 주 배양조를 통해, 우리는 아주 짧은 시간 안에 거대한 혐오체 함대 전체를 복제하여, 이전에는 상상할 수 없었던 방식으로 전장을 지배할 수 있게 될 것입니다." # 6996364199500916926
+  giga_dialog.11305.desc: "The $name_the_vat_long$ is complete. With 6 auxilliary vats and a gargantuan primary vat, we will be able to clone entire fleets of giant abominations in a very short amount of time, enabling us to dominate the battlefield in ways never envisioned before."
   giga_dialog.11305.a: "복제를 시작한다." # 8211824982289716557
   the_vat_0: "$gc_mega$$name_the_vat$ 건설 현장" # 17286749771588277168
   the_vat_0_DESC: "이것을 거대한 클론 시설로 바꾸는 데 우리 공학자와 생물학자들이 필요로 할 모든 것을 포함하는 미래 배양조 건설 현장." # 16158440598019757856
@@ -106,7 +106,7 @@
   giga_maximum_mutation_desc: "우리의 유전적 운명을 추구하며, 아무리 기묘하고 난해하게 보일지라도 가능한 모든 경로를 고려해야만 합니다." # 6288692395176855959
   giga_prethoryn_larvae: "변이된 유충" # 357152001454386871
   giga_prethoryn_larvae_desc_short: "작은 꿈틀거리는 유충. 매우 빠르게 성장합니다. 발밑에 깔려 으스러질 수 있습니다." # 12425962914779270799
-  giga_prethoryn_larvae_desc_details: "" # 17241709254077376921
+  giga_prethoryn_larvae_desc_details: ""
   giga_vat_maximum_mutation_1: "최대 돌연변이: 인셉투스" # 11656076217149856156
   giga_vat_maximum_mutation_2: "극대 돌연변이: 비룰루스" # 16422670528428795849
   giga_vat_maximum_mutation_3: "최대 변이: 아우레우스" # 3213382437230939080
@@ -151,4 +151,6 @@
   giga_vat_unlocked_swarmlings: "§Y$small_ship_swarm_plural$§!은 이제 $name_the_vat$에서 복제 가능합니다." # 8898204278067298849
   giga_vat_unlocked_warriors: "§Y$large_ship_swarm_plural$§!는 이제 $name_the_vat$에서 복제할 수 있습니다." # 5849020504411221608
   giga_big_vat_modifier_not_machine: "고급 복제 방법" # 16579785158214134051
+  giga_big_vat_modifier_not_machine_desc: "Our experience with the $name_the_vat$ is transferrable to cloning in other areas."
   giga_big_vat_modifier_machine: "고급 조립 방식" # 6418125370090708249
+  giga_big_vat_modifier_machine_desc: "The $name_the_vat$ manufactures biological machines, but many of the production pipeline lessons are equally applicable to those made of metal."

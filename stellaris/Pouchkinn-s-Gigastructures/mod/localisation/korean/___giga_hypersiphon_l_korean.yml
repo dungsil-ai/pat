@@ -37,7 +37,7 @@
   job_giga_shroud_conduit_worker: "장막 도관 기술자" # 6599587924167071663
   job_giga_shroud_conduit_worker_plural: "장막 도관 기술자들" # 8759060127003500098
   job_giga_shroud_conduit_worker_desc: "$building_giga_shroud_conduit$에 의해 열린 미세한 장막 터널들의 관리를 맡은 전문가들." # 15532566115525976524
-  job_giga_shroud_conduit_worker_effect_desc: "$job_giga_shroud_conduit_worker_swap_plural_with_icon$가 £energy£ §Y$energy$§!를 집중시켜 £unity£ §Y$unity$§!를 생산하고 행성의 생산성을 향상합니다." # 14965461413741606068
+  job_giga_shroud_conduit_worker_effect_desc: "$job_giga_shroud_conduit_worker_swap_plural_with_icon$ channel $r_energy$ to produce £unity£ §Y$unity$§! and boost productivity on the planet."
   job_giga_shroud_conduit_worker_swap_plural_with_icon: "[giga_shroud_conduit_worker.GetIcon] [giga_shroud_conduit_worker.GetNamePlural]" # 15398322392695291054
   mod_job_giga_shroud_conduit_worker_add: "[giga_shroud_conduit_worker.GetName] 직업" # 6475242660391493140
   mod_job_giga_shroud_conduit_worker_per_pop: "팝 $VALUE$당 [giga_shroud_conduit_worker.GetName] 직업 §G+1§!" # 1549982056320808053
@@ -49,7 +49,7 @@
   job_giga_shroud_conduit_priest_plural: "$giga_shroud_conduit_priest_plural$" # 3743158049412225312
   giga_shroud_conduit_priest_desc: "$building_giga_shroud_conduit$가 생성하는 미묘한 연결을 관리하는 임무를 맡은 사이오닉 성직자들." # 3661239057354435133
   job_giga_shroud_conduit_priest_desc: "$giga_shroud_conduit_priest_desc$" # 18217722226154475863
-  job_giga_shroud_conduit_priest_effect_desc: "$job_giga_shroud_conduit_priest_swap_plural_with_icon$가 £energy£ §Y$energy$§!를 사용하여 £unity£ §Y$unity$§!를 생산하고, £amenities£ $MOD_PLANET_AMENITIES_ADD$를 제공하며 행성의 생산성을 향상합니다." # 9802204065267686104
+  job_giga_shroud_conduit_priest_effect_desc: "$job_giga_shroud_conduit_priest_swap_plural_with_icon$ use $r_energy$ to produce £unity£ §Y$unity$§!, provide £amenities£ $MOD_PLANET_AMENITIES_ADD$, and boost productivity on the planet."
   job_giga_shroud_conduit_priest_swap_plural_with_icon: "[giga_shroud_conduit_priest.GetIcon] [giga_shroud_conduit_priest.GetNamePlural]" # 5396556917324659043
   mod_job_giga_shroud_conduit_priest_add: "[giga_shroud_conduit_priest.GetName] 직업" # 14858364092851098859
   mod_job_giga_shroud_conduit_priest_per_pop: "팝 $VALUE$당 [giga_shroud_conduit_priest.GetName] 직업 §G+1§!" # 15707427311337649309
@@ -58,7 +58,7 @@
   job_giga_shroud_conduit_drone: "장막 도관 드론" # 17591958876384422934
   job_giga_shroud_conduit_drone_plural: "장막 도관 드론" # 7021363258338885928
   job_giga_shroud_conduit_drone_desc: "$building_giga_shroud_conduit$에서 생성된 섬세한 연결망 관리에 특화된 사이오닉 활성 드론입니다." # 14753991932469849009
-  job_giga_shroud_conduit_drone_effect_desc: "$job_giga_shroud_conduit_drone_swap_plural_with_icon$가 £energy£ §Y$energy$§!를 집중시켜 £unity£ §Y$unity$§!를 생산하고 행성의 생산성을 향상합니다." # 11506967127821448584
+  job_giga_shroud_conduit_drone_effect_desc: "$job_giga_shroud_conduit_drone_swap_plural_with_icon$ channel $r_energy$ to produce £unity£ §Y$unity$§! and boost productivity on the planet."
   job_giga_shroud_conduit_drone_swap_plural_with_icon: "[giga_shroud_conduit_drone.GetIcon] [giga_shroud_conduit_drone.GetNamePlural]" # 12560722095252554593
   mod_job_giga_shroud_conduit_drone_add: "[giga_shroud_conduit_drone.GetName] 직업" # 16676492258534128302
   mod_job_giga_shroud_conduit_drone_per_pop: "팝 $VALUE$당 [giga_shroud_conduit_drone.GetName] 직업 §G+1§!" # 15726600263551684920
@@ -68,7 +68,7 @@
   giga_situation_hypersiphon_tracker_type: "$name_psy_siphon$ 추적기" # 4296372279971823380
   giga_situation_hypersiphon_tracker: "[target.planet.GetName] $name_psy_siphon$ 추적" # 1169118464959471340
   giga_situation_hypersiphon_tracker_desc: "이 $name_psy_siphon$ 관련 이벤트를 관리합니다." # 9895323021649262158
-  giga_situation_hypersiphon_tracker_monthly_change_tooltip: "" # 17241709254077376921
+  giga_situation_hypersiphon_tracker_monthly_change_tooltip: ""
   giga_situation_hypersiphon_instability: "장막 도관 불안정" # 9164444101278834560
   giga_situation_hypersiphon_instability_type: "$giga_situation_hypersiphon_instability$" # 2340342339194256326
   giga_situation_hypersiphon_instability_desc: "우리 $name_psy_siphon$에 의해 생성된 거시적 사이오닉 터널은 장막의 국지적 구조 내에서 요동을 야기하고 있습니다.\n측정치에 따르면 활동 급증은 우리의 초기 예측을 훨씬 능가하며, 에너지 수준이 너무 높게 상승할 경우 우리는 부정적인 효과를 경험하기 시작할 수 있습니다." # 2134900454636905384
