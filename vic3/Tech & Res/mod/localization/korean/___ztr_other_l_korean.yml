@@ -159,10 +159,10 @@
   ztr_russian_communist_revolution: "소비에트 혁명" # 1650125634139571231
   ztr_russia_bright_future: "러시아의 회복력 있는 미래" # 13419403218918139412
   MODERN_DIPLOMATIC_ACCEPTANCE_BASE: "현대 외교 수용 기본치" # 2500365694835675744
-  ZTR_VERY_SIMILAR_LIBERTY_INDEX: "매우 유사한 [Concept('concept_liberty_index','$concept_liberty_index$')]" # 18389148400706024539
-  ZTR_SIMILAR_LIBERTY_INDEX: "유사한 [Concept('concept_liberty_index','$concept_liberty_index$')]" # 15893424795577036464
-  ZTR_NEUTRAL_LIBERTY_INDEX: "중립 [Concept('concept_liberty_index','$concept_liberty_index$')]" # 10769970557350375378
-  ZTR_SIMILAR_EQUALITY_INDEX: "유사한 [Concept('concept_equality_index','$concept_equality_index$')]" # 8975960430986099868
+  ZTR_VERY_SIMILAR_LIBERTY_INDEX: "Very Similar [Concept('concept_liberty_index','$concept_liberty_index|q$')]"
+  ZTR_SIMILAR_LIBERTY_INDEX: "Similar [Concept('concept_liberty_index','$concept_liberty_index|q$')]"
+  ZTR_NEUTRAL_LIBERTY_INDEX: "Neutral [Concept('concept_liberty_index','$concept_liberty_index|q$')]"
+  ZTR_SIMILAR_EQUALITY_INDEX: "Similar [Concept('concept_equality_index','$concept_equality_index|q$')]"
   ztr_merge_power_bloc_diplomacy_proposal_accepted_name: "$ztr_merge_power_bloc_diplomacy$ 수락됨" # 3500651324218971841
   ztr_merge_power_bloc_diplomacy_proposal_accepted_desc: "[TARGET_COUNTRY.GetName]가 우리의 $ztr_merge_power_bloc_diplomacy$ 제안을 수락했습니다." # 5773359793066878691
   ztr_merge_power_bloc_diplomacy_proposal_declined_name: "$ztr_merge_power_bloc_diplomacy$ 거절됨" # 3049681006915770919
@@ -231,16 +231,16 @@
   ztr_unify_countries_proposal_third_party_declined_name: "$ztr_unify_countries$ 거부됨" # 3213316392403096779
   ztr_unify_countries_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName]이(가) [INITIATOR_COUNTRY.GetName]의 통합 제안을 거부했습니다." # 17932693402596327092
   ztr_unify_countries_accept_effect_tt: "[SCOPE.sCountry('target_country').GetName]의 모든 [Concept('concept_state','주')]가 우리에게 이전되며, [SCOPE.sCountry('target_country').GetName]은(는) 주권 국가로서 해체됩니다." # 8029827105790821525
-  ztr_tooltip_countries_share_primary_culture: "우리는 그들과 [Concept('concept_culture','$concept_culture$')]을(를) 공유합니다." # 16386706001946949364
+  ztr_tooltip_countries_share_primary_culture: "We share a [Concept('concept_culture','$concept_culture|q$')] with them"
   ztr_tooltip_countries_state_contiguity: "우리는 그들의 주와 접해 있거나 겹치는 본토 주를 소유하고 있습니다." # 15573721804579337177
   ztr_tooltip_both_not_totalitarian: "두 국가 모두 #n 전체주의#!가 아닙니다." # 15208378740411282318
-  ztr_tooltip_countries_have_cultural_or_relations_ground: "우리는 [Concept('concept_culture','$concept_culture$')]을(를) 공유하며 그들과 최소 #v 중립#! 이상의 관계를 유지하고 있습니다." # 4973520652305543524
-  ztr_tooltip_countries_can_unify: "모든 통합 선결 조건이 충족되었습니다: 대상이 소규모 이웃 국가이고, 우리가 [Concept('concept_prestige','$concept_prestige$')] 면에서 그들보다 우위에 있으며, 문화적, 종교적, 또는 관계적 기반을 갖추었고, 정치적 성향이 충돌하지 않습니다." # 611555535838161004
+  ztr_tooltip_countries_have_cultural_or_relations_ground: "We share a [Concept('concept_culture','$concept_culture|q$')] and we have at least #v Neutral#! relations with them"
+  ztr_tooltip_countries_can_unify: "All unification preconditions are met: the target is a small neighbour, we outrank them in [Concept('concept_prestige','$concept_prestige|q$')], we have cultural, religious, or relational ground, and our political spectra do not clash"
   ztr_unified_country_integration: "통합 국가 합병" # 17884141130842282463
   ztr_unified_country_integration_desc: "자매 국가를 흡수함으로써 국민적 자부심이 고취되었고, 국가 권위가 강화되었으며, 10년간 이주와 내부 안정에 큰 활력을 불어넣었습니다." # 5209845515215718634
-  ZTR_UNIFY_ACCEPT_SHARED_PRIMARY_CULTURE: "공유된 [Concept('concept_culture','$concept_culture$')]" # 12281526414553979626
+  ZTR_UNIFY_ACCEPT_SHARED_PRIMARY_CULTURE: "Shared [Concept('concept_culture','$concept_culture|q$')]"
   ZTR_UNIFY_ACCEPT_SHARED_RELIGION: "공유된 [Concept('concept_state_religion','국교')]" # 12199078323848284435
-  ZTR_UNIFY_ACCEPT_SAME_POWER_BLOC: "이미 동일한 [Concept('concept_power_bloc','$concept_power_bloc$')]에 속해 있음" # 4433870577380131616
+  ZTR_UNIFY_ACCEPT_SAME_POWER_BLOC: "Already in the same [Concept('concept_power_bloc','$concept_power_bloc|q$')]"
   ship_type_modern_destroyer: "현대식 구축함" # 17603364401659186608
   ship_type_modern_destroyer_desc: "센서, 대잠수함전, 함대 방공을 중심으로 설계된 고속 유도 미사일 호위함입니다." # 4147474231075360199
   ship_type_modern_cruiser: "현대식 순양함" # 5839926847830553812
@@ -326,17 +326,17 @@
   ztr_swiss_neutral_financial_hub: "중립적 금융 허브" # 7435698664851519347
   ztr_swiss_neutral_financial_hub_desc: "스위스의 중립성과 연방 다원주의, 그리고 안전한 회담 장소라는 명성은 유럽 전역의 자본과 채권자, 상업적 신뢰를 끌어모으고 있습니다." # 9479597905821198894
   country_ship_type_modern_destroyer_construction_efficiency_add: "$ship_type_modern_destroyer$ 건조 효율" # 9008556902045446558
-  country_ship_type_modern_destroyer_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_destroyer$')] @ship_construction! [concept_ship_construction] 효율" # 12426635802344188467
+  country_ship_type_modern_destroyer_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_modern_destroyer|q$')] @ship_construction! [concept_ship_construction]"
   country_ship_type_modern_cruiser_construction_efficiency_add: "$ship_type_modern_cruiser$ 건조 효율" # 10191755656436742533
-  country_ship_type_modern_cruiser_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_cruiser$')] @ship_construction! [concept_ship_construction] 효율" # 7616568600330290563
+  country_ship_type_modern_cruiser_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_modern_cruiser|q$')] @ship_construction! [concept_ship_construction]"
   country_ship_type_modern_battleship_construction_efficiency_add: "$ship_type_modern_battleship$ 건조 효율" # 7543496379620033453
-  country_ship_type_modern_battleship_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_battleship$')] @ship_construction! [concept_ship_construction] 효율" # 5772359763900415877
+  country_ship_type_modern_battleship_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_modern_battleship|q$')] @ship_construction! [concept_ship_construction]"
   country_ship_type_nuclear_carrier_construction_efficiency_add: "$ship_type_nuclear_carrier$ 건조 효율" # 9626727525453721314
-  country_ship_type_nuclear_carrier_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_nuclear_carrier$')] @ship_construction! [concept_ship_construction] 효율" # 16866053692597907894
+  country_ship_type_nuclear_carrier_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_nuclear_carrier|q$')] @ship_construction! [concept_ship_construction]"
   country_ship_type_nuclear_submarine_construction_efficiency_add: "$ship_type_nuclear_submarine$ 건조 효율" # 7218611629403249788
-  country_ship_type_nuclear_submarine_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_nuclear_submarine$')] @ship_construction! [concept_ship_construction] 효율" # 11999699143869365959
+  country_ship_type_nuclear_submarine_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_nuclear_submarine|q$')] @ship_construction! [concept_ship_construction]"
   country_ship_type_modern_troop_ship_construction_efficiency_add: "$ship_type_modern_troop_ship$ 건조 효율" # 14965787543101315401
-  country_ship_type_modern_troop_ship_construction_efficiency_add_desc: "[Concept('concept_ship_type', '$ship_type_modern_troop_ship$')] @ship_construction! [concept_ship_construction] 효율" # 8254029106958615507
+  country_ship_type_modern_troop_ship_construction_efficiency_add_desc: "The efficiency of [Concept('concept_ship_type', '$ship_type_modern_troop_ship|q$')] @ship_construction! [concept_ship_construction]"
   ship_battle_against_ship_type_modern_destroyer_hull_damage_mult: "$ship_type_modern_destroyer$ $ship_hull_damage_mult$" # 8723697902834015255
   ship_battle_against_ship_type_modern_cruiser_hull_damage_mult: "$ship_type_modern_cruiser$ $ship_hull_damage_mult$" # 15011784714524327815
   ship_battle_against_ship_type_modern_battleship_hull_damage_mult: "$ship_type_modern_battleship$ $ship_hull_damage_mult$" # 6770527056498783858
@@ -373,24 +373,19 @@
   DIPLOMATIC_ACCEPTANCE_JINGOISTIC_RULER: "그들의 정부 형태 때문에" # 14952029176413711060
   DIPLOMATIC_ACCEPTANCE_ENEMY_NUCLEAR_WEAPONS: "상대방이 이미 핵무기를 보유하고 있기 때문에" # 7609487438551603635
   DIPLOMATIC_ACCEPTANCE_THREAT_OF_MUTALLY_ASSURED_DESTRUCTION: "매우 높은 세계 긴장 상태 속에서 #N 상호확증파괴#!의 위협 때문에" # 6732831270184672874
-  ztr_superpower_desc: "[Concept('concept_superpower','$concept_superpower$')] status requires [GetTechnology('neoimperialism').GetName] and a top-two global ranking, checked yearly. See the concept for requirements, benefits and [concept_power_bloc] rules."
-  ztr_merge_power_bloc_diplomacy_desc: "A proposal to merge our power bloc with another one, since both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
-  ztr_merge_power_bloc_diplomacy_effects_desc: "Merges our power bloc with [TreatyDraft.GetRightCountry.GetName]'s power bloc, creating a stronger alliance based on a similar [Concept('concept_ideology_index','$concept_ideology_index$')]."
-  ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "We have proposed to [TARGET_COUNTRY.GetName] to merge our power blocs, as both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index$')]. This unification would strengthen our alliance and enhance our collective security."
-  ztr_similar_type_of_government_tt: "Has a similar [Concept('concept_ideology_index','$concept_ideology_index$')]"
+  ztr_superpower_desc: "[Concept('concept_superpower','$concept_superpower|q$')] status requires [GetTechnology('neoimperialism').GetName] and a top-two global ranking, checked yearly. See the concept for requirements, benefits and [concept_power_bloc] rules."
+  ztr_merge_power_bloc_diplomacy_desc: "A proposal to merge our power bloc with another one, since both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index|q$')]."
+  ztr_merge_power_bloc_diplomacy_effects_desc: "Merges our power bloc with [TreatyDraft.GetRightCountry.GetName]'s power bloc, creating a stronger alliance based on a similar [Concept('concept_ideology_index','$concept_ideology_index|q$')]."
+  ztr_merge_power_bloc_diplomacy_proposal_notification_desc: "We have proposed to [TARGET_COUNTRY.GetName] to merge our power blocs, as both blocs share a similar [Concept('concept_ideology_index','$concept_ideology_index|q$')]. This unification would strengthen our alliance and enhance our collective security."
+  ztr_similar_type_of_government_tt: "Has a similar [Concept('concept_ideology_index','$concept_ideology_index|q$')]"
   ztr_research_agreement: "Research Agreement"
   ztr_research_agreement_desc: ""
-  ztr_research_agreement_effects_desc: "• Each [concept_country] gains [Concept('concept_research_capacity','$concept_research_capacity$')]: #v 2#! points from an equal or larger partner, #v 2 / (1 + rank gap)#! from a smaller one, times #v 25%#! at neutral [concept_relations] up to #v 100%#! at #v 100#!\n• At most #v 6#! points from all agreements, #v 8#! with [GetTechnology('funded_research_projects').GetName]\n• Agreements in force: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members\n• The smaller partner develops a friendly [concept_political_lobby] toward the larger one\n• Requires a #v National Research Center#! in both countries\n• Both countries pay the [concept_influence] cost"
   ztr_research_agreement_article_short_desc: "[FIRST_COUNTRY.GetNameNoFormatting] and [SECOND_COUNTRY.GetNameNoFormatting] will share their scientific research"
-  ztr_research_agreement_research_center_tt: "Both countries operate a #v National Research Center#!"
-  ztr_research_agreement_slots_tt: "We have room for another $ztr_research_agreement$: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members"
-  ztr_research_agreement_other_slots_tt: "The other country has room for another $ztr_research_agreement$"
   ztr_research_agreement_declined_tt: "No $ztr_research_agreement$ between the two countries was declined in the last #v 2#! years"
   ztr_research_agreement_already_signed_tt: "The two countries do not already have a $ztr_research_agreement$"
-  ZTR_ACCEPTANCE_RESEARCH_CAPACITY: "from the [Concept('concept_research_capacity','$concept_research_capacity$')] we would gain"
   ZTR_ACCEPTANCE_SCIENTIFIC_LEADERSHIP: "from scientific leadership over a smaller partner"
-  ZTR_ACCEPTANCE_SAME_POLE: "from sharing the same [Concept('concept_political_pole','$concept_political_pole$')]"
-  ZTR_ACCEPTANCE_OPPOSITE_POLE: "from belonging to an opposite [Concept('concept_political_pole','$concept_political_pole$')]"
+  ZTR_ACCEPTANCE_SAME_POLE: "from sharing the same [Concept('concept_political_pole','$concept_political_pole|q$')]"
+  ZTR_ACCEPTANCE_OPPOSITE_POLE: "from belonging to an opposite [Concept('concept_political_pole','$concept_political_pole|q$')]"
   ZTR_ACCEPTANCE_RIVALRY: "from rivalry or embargo between us"
   ZTR_ACCEPTANCE_ALLIED: "from being allies"
   ZTR_ACCEPTANCE_INFLUENCE: "from lacking the [concept_influence] to pay for it"
@@ -398,10 +393,6 @@
   catalyst_ztr_research_agreement_signed_desc: "[COUNTRY.GetName] entering into a $ztr_research_agreement$ with [TARGET_COUNTRY.GetName]"
   appeasement_ztr_research_agreement_signed: "Signed a $ztr_research_agreement$"
   appeasement_ztr_research_agreement_ended: "Ended a $ztr_research_agreement$"
-  ztr_research_center_independent_modifier: "Independent Research"
-  ztr_research_center_independent_modifier_desc: "Our Research Center sets its own scientific agenda."
-  ztr_research_center_absorption_modifier: "Technology Absorption"
-  ztr_research_center_absorption_modifier_desc: "Our Research Center studies and adapts the science of more advanced nations."
   ztr_propose_research_agreement: "Propose a $ztr_research_agreement$"
   ztr_propose_research_agreement_name: "$ztr_research_agreement$"
   ztr_propose_research_agreement_action_name: "A proposal for a $ztr_research_agreement$"
@@ -440,11 +431,11 @@
   ztr_un_dues_modifier_desc: "Our yearly contribution to the budget of the United Nations, paid every week."
   ztr_un_vote_commitment_support: "UN Vote Commitment: Support"
   ztr_un_vote_commitment_support_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] votes in favor of the current UN proposal"
-  ztr_un_vote_commitment_support_desc: "The source country votes #P in favor#! of the proposal currently before the [Concept('concept_united_nations','$concept_united_nations$')] and cannot change its vote while the article is in force. The article ends with the vote session."
+  ztr_un_vote_commitment_support_desc: "The source country votes #P in favor#! of the proposal currently before the [Concept('concept_united_nations','$concept_united_nations|q$')] and cannot change its vote while the article is in force. The article ends with the vote session."
   ztr_un_vote_commitment_support_effects_desc: "The source country's UN vote is set to #P Support#! and locked until the session closes."
   ztr_un_vote_commitment_against: "UN Vote Commitment: Against"
   ztr_un_vote_commitment_against_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] votes against the current UN proposal"
-  ztr_un_vote_commitment_against_desc: "The source country votes #N against#! the proposal currently before the [Concept('concept_united_nations','$concept_united_nations$')] and cannot change its vote while the article is in force. The article ends with the vote session."
+  ztr_un_vote_commitment_against_desc: "The source country votes #N against#! the proposal currently before the [Concept('concept_united_nations','$concept_united_nations|q$')] and cannot change its vote while the article is in force. The article ends with the vote session."
   ztr_un_vote_commitment_against_effects_desc: "The source country's UN vote is set to #N Against#! and locked until the session closes."
   ztr_propose_research_agreement_desc: "A treaty with a single $ztr_research_agreement$ article, binding for #v 5#! years.\n$ztr_research_agreement_effects_desc$"
   appeasement_ztr_research_agreement_signed_desc: "Signing a $ztr_research_agreement$"
@@ -454,3 +445,51 @@
   ztr_imf_aid_sol_modifier: "IMF Relief Programmes"
   ztr_imf_aid_sol_modifier_desc: "Food, health and housing programmes funded by the IMF aid."
   ztr_un_condemned_modifier_desc: "The United Nations has condemned our conduct. A second condemnation doubles these penalties and suspends our voting rights in the UN; a third triples them and expels us."
+  ZTR_ACCEPTANCE_RESEARCH_POINTS: "from the [Concept('concept_technology_spread','$concept_technology_spread|q$')] we would gain"
+  ztr_research_agreement_modifier: "Research Agreements"
+  ztr_research_agreement_modifier_desc: "Our research agreements share the findings of foreign laboratories with our scientists."
+  ZTR_ACCEPTANCE_BLOC_LEADER: "from the leadership of our [Concept('concept_power_bloc','$concept_power_bloc|q$')]"
+  ztr_research_agreement_speed_modifier: "Shared Research"
+  ztr_research_agreement_speed_modifier_desc: "Our research agreement partners have already researched the technology we are working on, and share what they learned: #P +5%#! [Concept('concept_research_speed','$concept_research_speed|q$')] per agreement point of those partners."
+  ZTR_ACCEPTANCE_PUPIL: "from the [Concept('concept_technology','$concept_technologies|q$')] we can teach them"
+  dp_ztr_chinese_civil_war: "Chinese Civil War"
+  dp_ztr_chinese_civil_war_tooltip: "Start a $dp_ztr_chinese_civil_war$ [concept_diplomatic_play]"
+  dp_ztr_chinese_civil_war_desc: "A war for the whole of China: there is no negotiated peace, and the losing side is annexed."
+  ztr_research_agreement_slots_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has room for another $ztr_research_agreement$: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members"
+  ztr_research_agreement_other_slots_tt: "[SCOPE.sCountry('target_country').GetName] has room for another $ztr_research_agreement$"
+  ztr_research_agreement_research_center_tt: "Both countries operate a $building_research_center$"
+  ztr_research_agreement_cost_modifier: "Research Agreements"
+  ztr_research_agreement_effects_desc: "• Each [concept_country] gains [Concept('concept_technology_spread','$concept_technology_spread|q$')]: #P +4%#! from an equal partner, #P +4%#! and #P +2%#! per rank step from a larger one, #P +4%#! minus #v 1%#! per rank step from a smaller one (at least #P +1%#!), plus #P +1%#! per #v 15#! [Concept('concept_technology','$concept_technologies|q$')] the partner is ahead of us (at most #P +8%#!, for countries set on active research), all times #v 25%#! at neutral [concept_relations] up to #v 100%#! at #v 100#!\n• At most #P +25%#! [Concept('concept_technology_spread','$concept_technology_spread|q$')] from all agreements, #P +2%#! more per #v 50#! million inhabitants\n• #P +5%#! [Concept('concept_research_speed','$concept_research_speed|q$')] per point on the technology in research, when the partner has already researched it, without a limit\n• Then raised by our higher education [concept_law] (Compulsory Secondary School #P +10%#!, Public Universities #P +25%#!) and the production method of our $building_research_center$ (#P +10%#! or #P +20%#!)\n• Agreements in force: #v 2#! up to minor powers, #v 3#! for major powers, #v 5#! for great powers, #v 8#! for superpowers, #v +2#! for #blue_value UNESCO#! members\n• The smaller partner develops a friendly [concept_political_lobby] toward the larger one\n• Requires a $building_research_center$ in both countries\n• Both countries pay the [concept_influence] cost, and #N 0.05%#! of their [concept_gdp] a year for each agreement in force"
+  ztr_research_agreement_cost_modifier_desc: "Our share of the laboratories, exchanges and joint projects of our research agreements: #N 0.05%#! of our [concept_gdp] a year for each agreement in force."
+  ztr_tooltip_countries_share_land_border: "We share a land border with them"
+  ZTR_UNIFY_ACCEPT_REACTIONARY_TARGET: "Their #gold_value Reactionary#! regime clings to its sovereignty"
+  ZTR_UNIFY_ACCEPT_SOCIAL_TARGET: "Both #positive_value Social#! regimes favour union"
+  ztr_licence_nuclear_reactor: "Nuclear Reactor Licence"
+  ztr_licence_nuclear_reactor_desc: ""
+  ztr_licence_nuclear_reactor_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] licenses its nuclear reactor to [TARGET_COUNTRY.GetNameNoFormatting]"
+  ztr_licence_nuclear_reactor_developer_tt: "The licensor has developed the #v Nuclear Reactor#! with its own programme"
+  ztr_licence_nuclear_reactor_not_developer_tt: "The licensee has not developed the #v Nuclear Reactor#! itself"
+  ztr_licence_fusion_reactor: "Fusion Reactor Licence"
+  ztr_licence_fusion_reactor_desc: ""
+  ztr_licence_fusion_reactor_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] licenses its fusion reactor to [TARGET_COUNTRY.GetNameNoFormatting]"
+  ztr_licence_fusion_reactor_developer_tt: "The licensor has developed the #v Fusion Reactor#! with its own programme"
+  ztr_licence_fusion_reactor_not_developer_tt: "The licensee has not developed the #v Fusion Reactor#! itself"
+  ztr_licence_nuclear_reactor_recent_tt: "The licensor has run its #v Nuclear Reactor#! for at least #v 5#! years"
+  ztr_licence_research_center_tt: "The licensee operates a $building_research_center$"
+  ztr_licence_already_signed_tt: "The licensor does not already license this technology to the licensee"
+  ZTR_ACCEPTANCE_TECHNOLOGY_MONOPOLY: "from our will to keep the technology to ourselves"
+  ZTR_ACCEPTANCE_PROLIFERATION_RISK: "from their nuclear weapons programme"
+  ZTR_ACCEPTANCE_LICENCE_WANTED: "from our need of the technology"
+  ZTR_ACCEPTANCE_OWN_PROGRAMME: "from our ability to develop it ourselves"
+  ztr_nuclear_reactor_licence_lapsed: "Reactors Without a Supplier"
+  ztr_nuclear_reactor_licence_lapsed_desc: "No developer supplies the know-how for our nuclear stations any longer: spare parts are improvised and every outage lasts longer."
+  ztr_fusion_licence_lapsed: "Fusion Plants Without a Supplier"
+  ztr_fusion_licence_lapsed_desc: "No developer supplies the know-how for our fusion plants any longer: spare parts are improvised and every outage lasts longer."
+  ZTR_ACCEPTANCE_ENOUGH_SUPPLIERS: "from already having two suppliers of this technology"
+  ztr_licence_nuclear_reactor_effects_desc: "• The licensee must have researched [GetTechnology('nuclear_reactor').GetName]: a licence supplies the industrial process, not the design\n• A [concept_ztr_technology_licence]: while it is in force the licensee can build a [GetBuildingType('building_nuclear_power_plant').GetName] in its capital and in each of its [Concept('concept_state','$concept_states|q$')] with a [concept_gdp] of at least #v 10M#!\n• The licensee's own Nuclear Power Programme advances #P +400%#! faster\n• Without any licence in force, a licensee that has not developed the #v Nuclear Reactor#! itself can build no new plants and its existing ones lose #N 20%#! [concept_throughput]\n• Only the developer builds plants in other countries"
+  ztr_licence_fusion_reactor_effects_desc: "• The licensee must have researched [GetTechnology('nuclear_fusion_reactor').GetName]: a licence supplies the industrial process, not the design\n• A [concept_ztr_technology_licence]: while it is in force the licensee can build a [GetBuildingType('building_fusion_power_plant').GetName] in its capital and in each of its [Concept('concept_state','$concept_states|q$')] with a [concept_gdp] of at least #v 80M#!\n• The licensee's own Fusion Reactor Programme advances #P +400%#! faster\n• Without any licence in force, a licensee that has not developed the #v Fusion Reactor#! itself can build no new plants and its existing ones lose #N 20%#! [concept_throughput]\n• Only the developer builds plants in other countries"
+  ztr_licence_source_none: "a foreign licence"
+  ztr_licence_nuclear_reactor_source_one: "our $ztr_licence_nuclear_reactor$ with [ROOT.GetCountry.MakeScope.Var('ztr_nuclear_reactor_licence_licensor_1').GetCountry.GetName]"
+  ztr_licence_nuclear_reactor_source_two: "our $ztr_licence_nuclear_reactor$ with [ROOT.GetCountry.MakeScope.Var('ztr_nuclear_reactor_licence_licensor_1').GetCountry.GetName] and [ROOT.GetCountry.MakeScope.Var('ztr_nuclear_reactor_licence_licensor_2').GetCountry.GetName]"
+  ztr_licence_fusion_reactor_source_one: "our $ztr_licence_fusion_reactor$ with [ROOT.GetCountry.MakeScope.Var('ztr_fusion_licence_licensor_1').GetCountry.GetName]"
+  ztr_licence_fusion_reactor_source_two: "our $ztr_licence_fusion_reactor$ with [ROOT.GetCountry.MakeScope.Var('ztr_fusion_licence_licensor_1').GetCountry.GetName] and [ROOT.GetCountry.MakeScope.Var('ztr_fusion_licence_licensor_2').GetCountry.GetName]"

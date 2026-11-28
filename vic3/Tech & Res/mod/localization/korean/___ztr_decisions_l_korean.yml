@@ -169,8 +169,6 @@
   decolonization_bhutan_decision_desc: "식민지 지배는 과거의 유물이 되어가고 있습니다. 우리는 부탄을 탈식민지화하고 그들의 백성이 스스로 통치하도록 허용해야 합니다. 이는 부탄인들과의 관계를 개선할 뿐만 아니라, 자결권을 존중하는 국가로서 우리의 국제적 명성을 높일 것입니다." # 11442565372189483626
   decolonization_tibet_decision: "티베트 탈식민화" # 1582878741399890684
   decolonization_tibet_decision_desc: "식민화는 이제 과거의 일이 되어가고 있습니다. 우리는 티베트를 탈식민화하고 그들의 백성이 스스로 통치하도록 허용해야 합니다. 이는 티베트인과의 관계를 개선할 뿐만 아니라 자결권을 존중하는 국가로서 국제적 명성 또한 드높일 것입니다." # 4988278779295301827
-  decolonization_new_zealand_decision: "뉴질랜드 탈식민화" # 16503658867941933158
-  decolonization_new_zealand_decision_desc: "식민주의는 이제 과거의 유물이 되어가고 있습니다. 우리는 뉴질랜드를 탈식민화하고 그곳 주민들이 스스로 통치하게 해야 합니다. 이는 뉴질랜드 주민들과의 관계를 개선할 뿐만 아니라, 자결권을 존중하는 국가로서 우리의 국제적 명성을 드높일 것입니다." # 8191109127353445526
   decolonization_new_zealand_decision_gbr: "뉴질랜드 식민지 개척" # 14912466476255498716
   decolonization_new_zealand_decision_gbr_desc: "우리 호주 식민지는 최근 몇 년간 크게 성장했으며, 이제 뉴질랜드에 별도의 식민지를 수립할 때입니다. 이는 우리가 이 지역의 사안들을 더 잘 관리하고 그 주민들과 마오리족 대다수를 위해 더 집중적인 통치를 제공할 것입니다." # 10347103385041994737
   decolonization_indonesia_netherlands_consolidation: "네덜란드령 동인도 제도를 통합하라" # 2123575616306242852
@@ -201,3 +199,16 @@
   decolonization_guyana_decision_desc: "End our direct rule over Guyana and allow its people to govern themselves. Recognizing Guyanese self-determination will improve our international reputation."
   decolonization_suriname_decision: "Decolonize Suriname"
   decolonization_suriname_decision_desc: "End our direct rule over Suriname and allow its people to govern themselves. Recognizing Surinamese self-determination will improve our international reputation."
+  decolonization_papua_new_guinea_decision: "Release Papua New Guinea"
+  decolonization_papua_new_guinea_decision_desc: "The peoples of New Guinea are ready to govern themselves. Granting independence to Papua New Guinea, from the western highlands to Bougainville, ends our colonial rule over the island and improves our international reputation."
+  ztr_release_papua_new_guinea_tt: "#v Papua New Guinea#! becomes independent with all our states in #v New Guinea#!, the western half included, and on #v Bougainville#!."
+  decolonization_australia_decision: "Release Australia"
+  decolonization_australia_decision_desc: "Australia has outgrown colonial rule. Handing our Australian states to the Australians recognizes their self-determination and improves our international reputation."
+  ztr_release_australia_tt: "Our states in #v Australia#! go to the country with its capital in Australia whose primary cultures are closest to the Australian or Aboriginal culture; between equally close countries, to the one with the most [concept_prestige]. If no country has its capital in Australia, they form #v Australia#!."
+  decolonization_new_zealand_decision: "Release New Zealand"
+  decolonization_new_zealand_decision_desc: "New Zealand has outgrown colonial rule. Handing our New Zealand states to its people recognizes their self-determination and improves our international reputation."
+  ztr_release_new_zealand_tt: "Our states in #v New Zealand#! go to the country with its capital in New Zealand whose primary cultures are closest to the Australian or Maori culture; between equally close countries, to the one with the most [concept_prestige]. If no country has its capital in New Zealand, they form #v New Zealand#!."
+  decolonization_haiti_decision: "Decolonize Haiti"
+  decolonization_haiti_decision_desc: "End our direct rule over Haiti and allow its people to govern themselves. Recognizing Haitian self-determination will improve our international reputation."
+  decolonization_dominican_republic_decision: "Decolonize the Dominican Republic"
+  decolonization_dominican_republic_decision_desc: "End our direct rule over the Dominican Republic and allow its people to govern themselves. Recognizing Dominican self-determination will improve our international reputation."

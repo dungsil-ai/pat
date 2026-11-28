@@ -21,7 +21,6 @@
   building_commonores_mine_lens_option: "확장 $building_commonores_mine$" # 3263376646551376007
   building_spaceport: "우주항" # 1105842104412328333
   building_spaceport_lens_option: "확장 $building_spaceport$" # 932284407806281584
-  building_nuclear_power_plant: "핵 발전소" # 6961291883925737459
   building_nuclear_power_plant_lens_option: "$building_nuclear_power_plant$ 증설" # 4331790541225591519
   building_uranium_mine: "우라늄 광산" # 4284753265099046353
   building_uranium_mine_lens_option: "우라늄 광산" # 13114853520924881935
@@ -175,3 +174,5 @@
   building_aircraft_industry_throughput_add_desc: "Raises the [concept_throughput] of Aircraft Industries."
   building_un_headquarters: "United Nations Headquarters"
   building_un_headquarters_desc: "The permanent seat and international territory of the United Nations, housing the General Assembly Hall, the Secretariat Building, and the Security Council Chamber."
+  building_nuclear_power_plant: "Nuclear Power Plant"
+  building_nuclear_power_plant_desc: "Fission reactors that turn uranium into large amounts of electricity for the national grid."

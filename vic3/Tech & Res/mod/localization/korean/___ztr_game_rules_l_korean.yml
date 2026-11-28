@@ -1,9 +1,9 @@
 ﻿l_korean:
   rule_ztr_decolonization_content: "탈식민화 콘텐츠 (기술 및 연구)" # 15527103058950690597
   setting_allow_ztr_decolonization_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_decolonization_content_desc #high 활성화됨#!#!#!" # 5107633600088820908
-  setting_allow_ztr_decolonization_content_desc: "1945년 이후의 #b 역사적인#! 경험을 위해, 이 캠페인 동안 일반적인 [Concept('concept_decolonization','$concept_decolonization$')] 콘텐츠를 허용합니다." # 18035629164456136403
+  setting_allow_ztr_decolonization_content_desc: "Allow general [Concept('concept_decolonization','$concept_decolonization|q$')] content during this campaign, for an #b historical#! experience after 1945."
   setting_no_ztr_decolonization_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_decolonization_content_desc #high 비활성화됨#!#!#!" # 9274366094724770440
-  setting_no_ztr_decolonization_content_desc: "이번 캠페인 동안 일반 [Concept('concept_decolonization','$concept_decolonization$')] 콘텐츠를 비활성화하여, #b 바닐라#! 및 #b 세계 정복#! 게임플레이에 집중하는 경험을 제공합니다." # 8322713639837931401
+  setting_no_ztr_decolonization_content_desc: "Disable general [Concept('concept_decolonization','$concept_decolonization|q$')] content during this campaign, for a #b vanilla#! and #b world-conquer#! gameplay-focused experience."
   rule_ztr_historical_content: "역사 콘텐츠 (기술 및 연구)" # 11474515142416685237
   setting_allow_ztr_historical_content: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_historical_content_desc #high 활성화됨#!#!#!" # 5732491184352026988
   setting_allow_ztr_historical_content_desc: "현재는 #b 인도#!, #b 오스트리아#!, #b 러시아/소련#! 및 #b 오스만 제국#!과 관련된 역사적 콘텐츠를 허용합니다." # 8047340203686961150
@@ -25,6 +25,11 @@
   setting_no_ztr_atom_bomb_content_desc: "더 바닐라 게임에 가까운 경험을 위해 이번 캠페인 동안 #i 원자 폭탄#! 콘텐츠를 비활성화합니다." # 7604286959078389313
   rule_ztr_climate_disasters: "기후 재난 (기술 및 연구)" # 7618628169183940381
   setting_allow_ztr_climate_disasters: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_climate_disasters_desc #high 활성화됨#!#!#!" # 11309209653213049160
-  setting_allow_ztr_climate_disasters_desc: "이번 캠페인 동안 [Concept('concept_pollution','$concept_pollution$')]로 인해 발생하는 [Concept('concept_harvest_condition','$concept_harvest_condition$')] 허용: 극심한 폭염, 대가뭄, 허리케인, 대형 산불, 해안 침수 등은 지구 온난화에 따라 빈도와 심각성이 증가합니다." # 12709692329104591190
   setting_no_ztr_climate_disasters: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_climate_disasters_desc #high 비활성화됨#!#!#!" # 14348422863061479148
-  setting_no_ztr_climate_disasters_desc: "기후로 인한 [Concept('concept_harvest_condition','$concept_harvest_condition$')]을(를) 비활성화합니다. 지구 온난화는 여전히 [Concept('concept_journal_entry','$concept_journal_entry$')]에서 추적되지만 새로운 재난은 발생하지 않습니다." # 10561547902096778703
+  setting_no_ztr_climate_disasters_desc: "Disable climate-driven [Concept('concept_harvest_condition','$concept_harvest_condition|q$')]. Global warming is still tracked in its [Concept('concept_journal_entry','$concept_journal_entry|q$')], but it will not spawn new disasters."
+  rule_ztr_patent_research_bonus: "Patent Research Bonus (Tech&Res)"
+  setting_allow_ztr_patent_research_bonus: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ztr_patent_research_bonus_desc #high Enabled#!#!#!"
+  setting_allow_ztr_patent_research_bonus_desc: "The [Concept('concept_ztr_patents','$concept_ztr_patents|q$')] of the sectors of the technology in research add to the weekly [concept_innovation] and its cap of every country with a National Research Center."
+  setting_no_ztr_patent_research_bonus: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ztr_patent_research_bonus_desc #high Disabled#!#!#!"
+  setting_no_ztr_patent_research_bonus_desc: "[Concept('concept_ztr_patents','$concept_ztr_patents|q$')] are still counted and shown, but give no research bonus."
+  setting_allow_ztr_climate_disasters_desc: "Allow [Concept('concept_harvest_condition','$concept_harvest_condition|q$')] driven by [Concept('concept_effective_pollution','$concept_effective_pollution|q$')] during this campaign: extreme heatwaves, megadroughts, hurricanes, megafires and coastal inundation, scaling in frequency and severity with global warming."

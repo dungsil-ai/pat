@@ -364,8 +364,6 @@
   pmg_explosives_factory_automation: "자동화" # 18411738171978629847
   pm_basic_electric_control_building_explosives_factory: "기본 전기 제어" # 14094882549028163190
   pm_advanced_electric_control_building_explosives_factory: "선진 전기 제어" # 4934158965090356378
-  pm_hd_televisions: "에이치디 티브이" # 927467182572219776
-  pm_smart_televisions: "스마트 TV" # 14290204839499915997
   pm_pem_fuel_cell: "PEM 연료전지" # 3939129137591832989
   pm_multi_core_processor: "멀티 코어 프로세서" # 14293421957176847501
   pm_cell_phones: "휴대폰" # 2760948059199925202
@@ -625,11 +623,6 @@
   pm_research_center_basic: "산업 시대의 연구소" # 502731041078046681
   pm_research_center_medium: "냉전 연구 단지" # 7311454517514852795
   pm_research_center_advanced: "글로벌 혁신 거점" # 11472621760057531174
-  pmg_specialization_research_center: "연구 센터 전문화" # 9893033968012999954
-  pm_research_center_education: "사회 진보 연구소" # 14207462614008633218
-  pm_research_military_modernization: "방위 기술국" # 7534088282723888747
-  pm_research_center_tech_spread: "기술 확산국" # 1543719222348838630
-  pm_research_center_future_studies: "첨단 연구 개발국" # 14954281459196303142
   pmg_base_building_hydroelectric_power_plant: "수력 발전소" # 17518034523466649246
   pmg_automation_building_hydroelectric_power_plant: "자동화" # 18411738171978629847
   pm_run_of_river_plants: "유수식 발전소" # 15932757412406165438
@@ -814,3 +807,14 @@
   pm_integrated_circuit: "Integrated Circuits"
   pmg_un_headquarters: "United Nations Headquarters"
   pm_un_headquarters: "United Nations Headquarters"
+  pm_hd_televisions: "Flat Screen LCD TV"
+  pm_smart_televisions: "OLED Smart TV"
+  pmg_base_building_nuclear_power_plant: "Nuclear Reactor"
+  pmg_refining_building_nuclear_power_plant: "$pmg_refining_building_power_plant$"
+  pmg_power_transmission_nuclear: "$pmg_power_transmission$"
+  pm_direct_current_nuclear: "$pm_direct_current$"
+  pm_half_current_nuclear: "$pm_half_current$"
+  pm_alternating_current_nuclear: "$pm_alternating_current$"
+  pm_automation_disabled_nuclear_power_plant: "$pm_automation_disabled_power_plant$"
+  pm_pressurized_systems_nuclear_power_plant: "$pm_pressurized_systems_power_plant$" # 11060019940719512471
+  pm_smart_grid_energy_management_nuclear_power_plant: "$pm_smart_grid_energy_management_power_plant$" # 17935976209481361676

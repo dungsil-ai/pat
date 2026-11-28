@@ -287,7 +287,7 @@
   ztr_decolonization_phases.2.a: "식민지 상황에 대한 공식 조사를 위임하십시오." # 10350084732074330312
   ztr_decolonization_phases.2.b: "보고서를 선교사들의 과장으로 치부하십시오." # 10143699050188586050
   ztr_decolonization_phases.3.t: "조국의 노래" # 3448632979839810999
-  ztr_decolonization_phases.3.d: "[SCOPE.sState('songs_state').GetName]에서 문화 부흥의 움직임이 일고 있습니다. [SCOPE.sCulture('native_culture_scope').GetName] [Concept('concept_culture','$concept_cultures$')]의 민요와 전통 무용, 구전 역사가 시장 광장과 결혼식, 그리고 군인이 지나갈 때면 침묵이 흐르는 심야의 모임에서 새로운 열기로 공연되고 있습니다.\n\n외부인에게는 단순한 향수로 보이는 것이 식민지 행정부에게는 저항의 첫 번째 언어이며, 정치적 요구가 곧 구체화될 수 있는 공유된 정체성입니다." # 18298024522295995508
+  ztr_decolonization_phases.3.d: "A cultural revival is stirring in [SCOPE.sState('songs_state').GetName]. Folk songs, traditional dances, and oral histories of [SCOPE.sCulture('native_culture_scope').GetName] [Concept('concept_culture','$concept_cultures|q$')] are performed with renewed fervor in market squares, at weddings, in late-night gatherings that fall silent when soldiers pass.\n\nWhat appears as mere nostalgia to the uninitiated is, to the colonial administration, the first language of resistance: a shared identity around which political demands may soon crystallize."
   ztr_decolonization_phases.3.a: "민속은 무해합니다: 그들이 노래하게 두십시오." # 17715434275077507030
   ztr_decolonization_phases.3.b: "이러한 체제 전복적 모임을 금지하십시오." # 10054780880121595758
   ztr_decolonization_phases.4.t: "시장의 속삭임" # 16863617314684408299
@@ -303,7 +303,7 @@
   ztr_decolonization_phases.6.a: "사태가 더 확산되기 전에 협상하십시오." # 16953172589877709495
   ztr_decolonization_phases.6.b: "경찰력을 투입하여 파업을 진압하십시오." # 10448164841288534085
   ztr_decolonization_phases.7.t: "국제 무대" # 2447126012217235586
-  ztr_decolonization_phases.7.d: "[SCOPE.sCountry('intl_subject').GetName]의 대표단이 [Concept('concept_united_nations','$concept_united_nations$')] #blue_value 총회#!에서 [ROOT.GetCountry.GetName]의 식민 통치에 대한 규탄 연설을 했습니다. 전 세계의 대표들은 숨길 수 없는 동정심으로 귀를 기울였고, 국제 언론은 이 광경을 대서특필하고 있습니다.\n\n경쟁국들은 기회를 엿보고 있습니다. 식민지 문제는 순전히 국내 문제라는 안일한 허구는 무너지고 있으며, 우리의 평판이 위태로운 상황입니다." # 13146920901455308059
+  ztr_decolonization_phases.7.d: "A delegation from [SCOPE.sCountry('intl_subject').GetName] has addressed the [Concept('concept_united_nations','$concept_united_nations|q$')] #blue_value General Assembly#!, presenting a damning account of colonial rule under [ROOT.GetCountry.GetName]. Delegates from across the world listen with undisguised sympathy, and the international press seizes upon the spectacle.\n\nRival nations smell opportunity. The comfortable fiction that colonial affairs are purely domestic matters is crumbling, and our reputation hangs in the balance."
   ztr_decolonization_phases.7.a: "피해를 최소화하는 것이 필수적입니다." # 8703644222454316628
   ztr_decolonization_phases.7.b: "대표단을 외세의 간섭이라며 비난하십시오." # 12622697080973539945
   ztr_decolonization_phases.8.t: "원주민 언론" # 17303477339659059510
@@ -548,7 +548,7 @@
   colony_pop.3.d: "[SCOPE.sCountry('generic_boom_subject').GetName]의 보고에 따르면 인구 성장이 지속적으로 증가하고 있습니다. 기초 공중 보건 인프라의 도입이 효과를 거두기 시작하여 유아 사망률이 감소하고 기대 수명이 연장되었으며, 식민지 경제가 수용할 수 없는 수준으로 젊은 인구층이 비대해지고 있습니다.\n\n성장은 점진적이지만, 이는 해당 지역의 인구학적 균형에 근본적인 변화가 일어났음을 시사합니다. 식민 지배에 미칠 영향은 간과할 수 없습니다." # 17823184425067594172
   colony_pop.3.a: "확인했습니다" # 16199118013351801554
   ztr_decolonization_slavery.1.t: "종주국의 노예들" # 6671732984185830092
-  ztr_decolonization_slavery.1.d: "[Concept('concept_united_nations','$concept_united_nations$')]의 #v 노예제 금지#! 조치로 인해 우리는 [SCOPE.sState('overlord_slavery_state').GetName]의 불편한 진실을 마주하게 되었습니다. 토착 지배자들이 수 세대 동안 유지해 온 토착 노예 관습이 우리의 식민 행정 하에서도 지속되고 있었던 것입니다. 우리는 현지 엘리트들의 협조를 유지하고 영토를 통치하기 위한 조용한 타협으로서 안정을 위해 이를 묵인해 왔습니다.\n\n하지만 이제 전 세계가 우리를 지켜보고 있습니다. 노예제 폐지론자들은 행동을 요구하고, 식민지 로비 단체는 강제 집행이 지역을 불안정하게 만들 것이라 경고합니다. 우리는 전면적으로 폐지할지, 아니면 현지 관습에 예외를 둘지 결정해야 합니다." # 15702376074104267170
+  ztr_decolonization_slavery.1.d: "The [Concept('concept_united_nations','$concept_united_nations|q$')] #v Slavery Ban#! has forced us to confront an uncomfortable truth in [SCOPE.sState('overlord_slavery_state').GetName]: indigenous slavery practices, maintained by native overlords for generations, have persisted under our colonial administration. We tolerated them for stability's sake as a quiet arrangement that kept local elites cooperative and the territory governable.\n\nBut the world's eyes are upon us now. Abolitionist societies demand action; the colonial lobby warns that enforcement will destabilize the region. We must decide whether to abolish universally or grant exemptions to local custom."
   ztr_decolonization_slavery.1.a: "예외 없이 전면적으로 금지를 집행한다" # 9221679480519388892
   ztr_decolonization_slavery.1.b: "안정을 유지하기 위해 문화적 예외를 인정한다" # 9327909379270056898
   ztr_decolonization_slavery_1_a_effect_tt: "[ztr_concept_colonial_state]에서 #n 급진파#!가 발생하고, 주류 문화가 아닌 본토 문화권은 #v 열의#!를 얻습니다." # 9808133016030549590
@@ -593,5 +593,25 @@
   ztr_decolonization.71.d_phase4: "Resistance in #v Suriname#! has brought the colonial administration to the brink of collapse. The independence movement demands an immediate end to our rule, while international pressure for withdrawal continues to grow."
   ztr_decolonization.71.a: "Recognize Surinamese independence."
   ztr_decolonization.71.b: "We will retain control."
-  ztr_decolonization.101.d: "The [Concept('concept_united_nations','$concept_united_nations$')] #blue_value General Assembly#!, acting under its [Concept('concept_un_decolonization','$concept_un_decolonization$')] in favor of decolonization, has formally demanded that [ROOT.GetCountry.GetName] release [SCOPE.sCountry('un_demand_subject').GetName] from colonial rule — and, where applicable, return the #gold_value homeland territories#! of its peoples still administered directly from our capital. Our #n infamy#! has drawn the ire of the international community, and the world awaits our response."
+  ztr_decolonization.101.d: "The [Concept('concept_united_nations','$concept_united_nations|q$')] #blue_value General Assembly#!, acting under its [Concept('concept_un_decolonization','$concept_un_decolonization|q$')] in favor of decolonization, has formally demanded that [ROOT.GetCountry.GetName] release [SCOPE.sCountry('un_demand_subject').GetName] from colonial rule — and, where applicable, return the #gold_value homeland territories#! of its peoples still administered directly from our capital. Our #n infamy#! has drawn the ire of the international community, and the world awaits our response."
   ztr_decolonization_renounce_claims_tt: "We #n renounce#! our [Concept('concept_claim', '$concept_claims|q$')] on the territories we give up: they can no longer be taken back with a #v $war_goal_return_state_type_name$#! war."
+  ztr_decolonization.72.t: "Haitian Decolonization"
+  ztr_decolonization.72.d_phase2: "Representatives from #v Haiti#! have petitioned our government for greater control over local affairs. They call for negotiations on self-government and the future of colonial rule."
+  ztr_decolonization.72.d_phase3: "Strikes and public demonstrations in #v Haiti#! have turned demands for reform into a campaign for #gold_value independence#!. Local leaders insist that their people must decide their own future."
+  ztr_decolonization.72.d_phase4: "Resistance in #v Haiti#! has brought the colonial administration to the brink of collapse. The independence movement demands an immediate end to our rule, while international pressure for withdrawal continues to grow."
+  ztr_decolonization.72.a: "Recognize Haitian independence."
+  ztr_decolonization.72.b: "We will retain control."
+  ztr_decolonization.73.t: "Dominican Decolonization"
+  ztr_decolonization.73.d_phase2: "Representatives from #v the Dominican Republic#! have petitioned our government for greater control over local affairs. They call for negotiations on self-government and the future of colonial rule."
+  ztr_decolonization.73.d_phase3: "Strikes and public demonstrations in #v the Dominican Republic#! have turned demands for reform into a campaign for #gold_value independence#!. Local leaders insist that their people must decide their own future."
+  ztr_decolonization.73.d_phase4: "Resistance in #v the Dominican Republic#! has brought the colonial administration to the brink of collapse. The independence movement demands an immediate end to our rule, while international pressure for withdrawal continues to grow."
+  ztr_decolonization.73.a: "Recognize Dominican independence."
+  ztr_decolonization.73.b: "We will retain control."
+  ztr_decolonization.74.t: "Papua New Guinean Decolonization"
+  ztr_decolonization.74.d_phase2: "Representatives from #v Papua New Guinea#! have petitioned our government for greater control over local affairs. They call for negotiations on self-government and the future of colonial rule."
+  ztr_decolonization.74.d_phase3: "Strikes and public demonstrations in #v Papua New Guinea#! have turned demands for reform into a campaign for #gold_value independence#!. Local leaders insist that their people must decide their own future."
+  ztr_decolonization.74.d_phase4: "Resistance in #v Papua New Guinea#! has brought the colonial administration to the brink of collapse. The independence movement demands an immediate end to our rule, while international pressure for withdrawal continues to grow."
+  ztr_decolonization.74.a: "Recognize Papua New Guinean independence."
+  ztr_decolonization.74.b: "We will retain control."
+  ztr_decolonization.1.d_land: "$ztr_decolonization.1.d$\n\nThe age of empty maps has ended as well. The lands that no state had ever administered have been divided among the nations at their borders, or entrusted to the foremost power of the world where no nation was near. Our surveyors, officials and police are already on their way to places that until yesterday had no name on our charts."
+  ztr_decolonization.1.a.tt: "We have received #v [ROOT.GetCountry.MakeScope.Var('ztr_unclaimed_states_gained').GetValue|0]#! [Concept('concept_state','$concept_states|q$')] once held by [Concept('concept_decentralized_nation','$concept_decentralized_nations|q$')]."

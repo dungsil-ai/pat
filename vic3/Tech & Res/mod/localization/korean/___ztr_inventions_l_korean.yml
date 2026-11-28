@@ -199,8 +199,6 @@
   sea_water_desalination_desc: "해수 담수화는 해수에서 염분과 불순물을 제거하여 담수를 생산하는 과정으로, 역삼투압 및 증류와 같은 다양한 기술을 활용합니다. 이 방법은 건조 지역 및 담수 자원이 제한적인 지역에 식수를 공급하는 데 매우 중요합니다." # 6956964806782211705
   fast_modular_furniture: "신속한 모듈식 가구" # 17126185903373797182
   fast_modular_furniture_desc: "빠른 모듈식 가구는 혁신적인 디자인으로 가구 산업에 혁명을 일으키며, 신속한 조립과 맞춤화를 가능하게 하여 현대적인 생활 방식과 선호를 충족시킵니다. 이케아는 이 분야의 선구자였으며, 어떤 공간에도 쉽게 적용할 수 있는 다양하고 세련되며 기능적인 가구 솔루션을 제공했습니다." # 5682035419267829221
-  photovoltaic_effect: "광전 효과" # 8058665593409251576
-  photovoltaic_effect_desc: "광전 효과란 빛과 같은 전자기 복사가 물질에서 전자를 방출시키는 과정이며, 이 전자를 이용해 전류를 생성할 수 있습니다. 이 현상은 광전 효과의 토대가 되었으며, 이는 빛을 받았을 때 물질 양단에 전위차를 유지함으로써 빛 에너지를 전기 에너지로 직접 변환할 수 있게 합니다." # 16661312760583283008
   wind_turbines: "풍력 터빈" # 3690498900052434645
   wind_turbines_desc: "풍력 터빈은 바람의 운동 에너지를 기계 에너지로 전환하고, 이를 다시 전기로 변환할 수 있는 장치입니다. 이들은 재생 에너지 생산에 중추적인 역할을 하며, 더욱 지속 가능하고 환경 친화적인 전력 공급에 기여합니다." # 5714070938894164561
   lithium_battery: "리튬 이온 배터리" # 17856772667939423457
@@ -230,8 +228,6 @@
   smart_vehicles_desc: "스마트 차량은 안전, 연결성, 자동화를 강화하는 첨단 기술과 시스템을 갖추고 있으며, 적응형 순항 제어, 차선 유지 보조, 차량 간 통신과 같은 기능들을 가능하게 합니다. 이는 자율 주행 및 개선된 운송 효율성을 향한 중요한 발걸음을 의미합니다." # 16088414169190041335
   parallel_computing_architecture: "병렬 컴퓨팅 아키텍처" # 13291048597748490149
   parallel_computing_architecture_desc: "병렬 컴퓨팅 아키텍처는 과학 시뮬레이션, 데이터 분석, 그리고 머신러닝과 같은 복잡한 작업에 대한 처리 능력과 효율성을 향상시키며 여러 계산을 동시에 수행할 수 있는 컴퓨터 시스템의 설계 및 구성을 지칭합니다. 그 예시로는 현대 컴퓨터에 사용되는 멀티코어 프로세서나 그래픽 처리 장치(GPU) 등이 있습니다." # 15894951378191622582
-  high_definition_television: "고해상도 모니터" # 7714565327095450323
-  high_definition_television_desc: "고화질 모니터는 표준 화질 모니터에 비해 향상된 해상도와 화질을 제공하여, 텔레비전, 게임, 컴퓨터 디스플레이를 포함한 다양한 응용 분야에서 더 선명하고 상세한 영상을 가능하게 하는 디스플레이 기술입니다." # 3539313542678151043
   smartphones: "스마트폰" # 13047224257883856613
   smartphones_desc: "스마트폰은 전화 기능과 연산 능력을 결합하여 인터넷 접속, 애플리케이션, 멀티미디어 기능을 소형 형태로 구현한 첨단 이동 통신 기기입니다." # 980890385021479864
   advanced_personal_computer: "고급 개인용 컴퓨터" # 8017230377477671846
@@ -273,7 +269,6 @@
   third_nuclear_reactor: "3세대 원자로" # 18011925577241889084
   third_nuclear_reactor_desc: "체르노빌 사고 이후, 원자력 산업은 안전과 효율성 면에서 상당한 진전을 이루어 3세대 원자로의 개발로 이어졌습니다. 이들 원자로는 향상된 안전 기능, 진보된 연료 기술, 그리고 강화된 운영 효율성을 통합하여 원자력 발전을 위한 더욱 신뢰할 수 있고 지속 가능한 선택지가 되었습니다." # 2240900199973444021
   nuclear_fusion_reactor: "핵융합 원자로" # 11434968162514052826
-  nuclear_fusion_reactor_desc: "태양의 동력원인 핵융합은 오랫동안 에너지 연구의 궁극적인 목표였습니다. 수소 동위원소(중수소와 삼중수소)를 극한의 온도에서 융합함으로써 핵융합 반응로는 최소한의 방사성 폐기물과 탄소 배출 없이 엄청난 양의 에너지를 생산합니다. 이 기술은 핵과학의 정점을 상징하며, 사실상 무한한 청정 에너지를 약속합니다." # 10180655706872254572
   iot_driven_manufacturing: "IoT 기반 제조" # 1078913409457290983
   iot_driven_manufacturing_desc: "사물 인터넷(IoT) 기반 제조는 사물 인터넷(IoT) 기술을 제조 공정에 통합하는 것을 의미하며, 이를 통해 실시간 모니터링, 데이터 수집 및 분석이 가능해져 생산 효율성을 최적화하고, 가동 중단 시간을 줄이며, 제품 품질을 향상시킬 수 있습니다. 이러한 접근 방식은 연결된 장치, 센서 및 데이터 분석을 활용하여 변화하는 수요에 적응하고 전반적인 운영 성과를 개선할 수 있는 스마트 공장을 구축합니다." # 365996621112388522
   cobots: "코봇" # 15568624749185986673
@@ -434,24 +429,24 @@
   artificial_intelligence_desc: "생성형 AI는 인간의 창의성을 모방하거나 확장하는 새로운 콘텐츠를 생성할 수 있는 시스템을 지칭합니다. 그 발전은 딥러닝의 진전, GPU 및 TPU를 활용한 대규모 병렬 컴퓨팅, 그리고 변이형 오토인코더, 생성적 적대 신경망, 트랜스포머와 같은 강력한 신경망 아키텍처의 개발에 힘입어 가속화되었습니다. 이러한 모델들은 데이터에서 복잡한 패턴을 인식하고 분석할 수 있을 뿐만 아니라, 고품질의 텍스트, 실사 같은 이미지, 합성 오디오, 심지어 동적인 비디오까지 생성할 수 있습니다. 생성형 AI는 많은 분야를 변화시키고 있지만, 동시에 진정성, 지적 재산권, 고용, 그리고 설득력 있게 인간과 유사한 결과물을 생산할 수 있는 기계들의 더 넓은 사회적 영향에 대한 중요한 질문들을 제기하고 있습니다." # 11818159904775226849
   advanced_wire: "폴리머 절연 전선" # 10748851207920299585
   advanced_wire_desc: "PVC(폴리염화비닐)를 전선 절연체로 채택한 것은 전기 공학에서 중대한 돌파구를 마련했습니다. PVC 전선은 내구성, 유연성, 그리고 열, 습기, 화학 물질에 대한 저항성으로 높이 평가받고 있습니다. 신뢰할 수 있는 절연 및 보호 기능을 제공함으로써 PVC는 더욱 안전하고 오래 지속되는 전기 연결을 가능하게 합니다. 폴리에틸렌(PE) 절연과 더불어 PVC는 주거용, 산업용, 자동차 배선에 가장 효율적이고 경제적인 해결책 중 하나로 남아 있습니다." # 13325314048141789958
-  country_allow_superpower_mechanics_bool: "[Concept('concept_superpower','$concept_superpower$')] 등급을 활성화할 것입니다." # 18313061387282396777
-  country_allow_superpower_mechanics_bool_desc: "이 국가가 [Concept('concept_superpower','$concept_superpower$')] 등급 메커니즘에 접근할 수 있는지 여부." # 6954255749118885516
-  country_allow_decolonization_mechanics_bool: "[Concept('concept_decolonization','$concept_decolonization$')] 메커니즘을 활성화합니다." # 6193092348110626415
-  country_allow_decolonization_mechanics_bool_desc: "이 국가가 [Concept('concept_decolonization','$concept_decolonization$')] 메커니즘에 접근할 수 있는지 여부." # 5136957365855135882
-  country_allow_int_org_participation_bool: "[Concept('concept_united_nations','국제 기구')] 참여를 [Concept('concept_liberty_index','$concept_liberty_index$')]에 기반하여 활성화합니다." # 4754405223872713579
-  country_allow_int_org_participation_bool_desc: "이 국가가 국제 연맹이나 [Concept('concept_united_nations','$concept_united_nations$')]과 같은 [Concept('concept_united_nations','$int_org$')]에 가입할 수 있는지 여부." # 3457438064668017430
+  country_allow_superpower_mechanics_bool: "Will enable [Concept('concept_superpower','$concept_superpower|q$')] Ranks"
+  country_allow_superpower_mechanics_bool_desc: "Whether this country can access [Concept('concept_superpower','$concept_superpower|q$')] Ranks mechanics."
+  country_allow_decolonization_mechanics_bool: "Will enable [Concept('concept_decolonization','$concept_decolonization|q$')] Mechanics"
+  country_allow_decolonization_mechanics_bool_desc: "Whether this country can access [Concept('concept_decolonization','$concept_decolonization|q$')] mechanics."
+  country_allow_int_org_participation_bool: "Will enable [Concept('concept_united_nations','International Organizations')] Participation based on [Concept('concept_liberty_index','$concept_liberty_index|q$')]"
+  country_allow_int_org_participation_bool_desc: "Whether this country can join [Concept('concept_united_nations','$int_org|q$')] such as the League of Nations or the [Concept('concept_united_nations','$concept_united_nations|q$')]."
   country_allow_intercontinental_nuclear_strike_bool: "대륙 간 핵 타격 능력을 활성화할 것입니다." # 8090876082950288692
   country_allow_intercontinental_nuclear_strike_bool_desc: "이 국가가 핵 공격 능력을 갖춘 대륙간 탄도 미사일(ICBM)을 개발하고 배치할 수 있는지 여부." # 12943277236088600600
   country_allow_everywhere_bauxite_mining_bool: "[Concept('concept_good','Bauxite')] 광물은 지도에 표시될 것입니다." # 8062940059177746572
-  country_allow_everywhere_bauxite_mining_bool_desc: "이 국가가 자연 발생 여부와 관계없이 지도상의 모든 곳에서 [Concept('concept_good','$concept_bauxite$')] 매장지를 채굴할 수 있는지 여부입니다." # 4391416421674571714
+  country_allow_everywhere_bauxite_mining_bool_desc: "Whether this country can mine [Concept('concept_good','$concept_bauxite|q$')] deposits everywhere on the map, regardless of natural occurrence."
   country_allow_everywhere_advanced_ores_mining_bool: "[Concept('concept_good','고급 광물')] 매장지는 지도상에 표시될 것입니다." # 3590964383096799992
-  country_allow_everywhere_advanced_ores_mining_bool_desc: "이 국가가 자연 발생 여부와 관계없이 지도상의 모든 곳에서 [Concept('concept_good','$concept_advanced_ores$')] 매장지를 채굴할 수 있는지 여부입니다." # 5444678349284569465
+  country_allow_everywhere_advanced_ores_mining_bool_desc: "Whether this country can mine [Concept('concept_good','$concept_advanced_ores|q$')] deposits everywhere on the map, regardless of natural occurrence."
   country_allow_everywhere_uranium_mining_bool: "[Concept('concept_good','Uranium')] 매장량이 지도에 표시될 것입니다." # 656751515817965812
-  country_allow_everywhere_uranium_mining_bool_desc: "이 국가가 자연 발생 여부와 관계없이 지도상의 모든 곳에서 [Concept('concept_good','$concept_uranium$')] 매장지를 추출할 수 있는지 여부입니다." # 1136489087081713931
+  country_allow_everywhere_uranium_mining_bool_desc: "Whether this country can extract [Concept('concept_good','$concept_uranium|q$')] deposits everywhere on the map, regardless of natural occurrence."
   country_allow_everywhere_gas_extraction_bool: "[Concept('concept_good','Gas')] 비축량이 지도에 표시될 것입니다" # 10517142936106926282
-  country_allow_everywhere_gas_extraction_bool_desc: "이 국가가 자연 발생 여부와 관계없이 지도상의 모든 곳에서 [Concept('concept_good','$concept_gas$')] 매장지를 추출할 수 있는지 여부입니다." # 2457777086729057288
+  country_allow_everywhere_gas_extraction_bool_desc: "Whether this country can extract [Concept('concept_good','$concept_gas|q$')] deposits everywhere on the map, regardless of natural occurrence."
   country_allow_everywhere_rare_earths_mining_bool: "[Concept('concept_good','희토류')] 매장량이 지도에 표시될 것입니다." # 17373588831438090440
-  country_allow_everywhere_rare_earths_mining_bool_desc: "이 국가가 자연 발생 여부와 관계없이 지도상의 모든 곳에서 [Concept('concept_good','$concept_rare_earths$')] 매장지를 추출할 수 있는지 여부입니다." # 9562486791923634352
+  country_allow_everywhere_rare_earths_mining_bool_desc: "Whether this country can extract [Concept('concept_good','$concept_rare_earths|q$')] deposits everywhere on the map, regardless of natural occurrence."
   cryptographic_communication: "암호 통신" # 11271649741256426026
   cryptographic_communication_desc: "제2차 세계 대전 중 적절히 활용된 이후, 암호 통신 기술은 현저히 발전하였으며 이제 민감한 정보를 보다 안전하게 보호하고 기밀 통신을 용이하게 하기 위해 다양한 민간 분야에서 널리 사용되고 있습니다." # 13198040295552047232
   increase_nuclear_strike_power_bool_tt: "일정량만큼 #v 핵 타격력#!을 #negative_value 증가#!시킵니다." # 687235969384858804
@@ -507,14 +502,24 @@
   green_hydrogen_steelmaking_desc: "Hydrogen produced by electrolysis with renewable power replaces coal and natural gas as the reducing agent for iron ore. The resulting sponge iron is melted in electric furnaces, cutting most of the carbon emissions of steelmaking, as long as the grid can supply abundant clean electricity."
   right_wing_populism: "Right-Wing Populism"
   right_wing_populism_desc: "In an age of global markets, mass migration and social media, new movements claim to speak for ordinary people against distant elites. Mixing nationalism, protectionism and distrust of institutions, right-wing populism reshapes the politics of provincial communities and the middle classes."
-  ztrpol_socialdemocracy_poles_tt: "[Concept('concept_interest_group','$concept_interest_groups$')] can now adopt new ideologies shaped by our [Concept('concept_political_pole','Ideological Pole')], once it has been stable for at least #v 4#! years."
+  ztrpol_socialdemocracy_poles_tt: "[Concept('concept_interest_group','$concept_interest_groups|q$')] can now adopt new ideologies shaped by our [Concept('concept_political_pole','Ideological Pole')], once it has been stable for at least #v 4#! years."
   country_unlocks_ztr_research_agreement_bool_desc: "This country can include the #v $ztr_research_agreement$#! Article in a [concept_treaty]."
   country_unlocks_nuclear_de_escalation_treaty_bool: "Unlocks the #v $nuclear_de_escalation_treaty$#! [concept_treaty] Article"
   country_unlocks_nuclear_de_escalation_treaty_bool_desc: "This country can include the #v $nuclear_de_escalation_treaty$#! Article in a [concept_treaty]."
   country_unlocks_pause_nuclear_weapons_development_bool: "Unlocks the #v $pause_nuclear_weapons_development$#! [concept_treaty] Article"
   country_unlocks_pause_nuclear_weapons_development_bool_desc: "This country can include the #v $pause_nuclear_weapons_development$#! Article in a [concept_treaty]."
   country_unlocks_ztr_research_agreement_bool: "Unlocks the @ztr_research_agreement! #v $ztr_research_agreement$#! [concept_treaty] Article"
-  country_unlocks_ztr_un_vote_commitment_support_bool: "For [Concept('concept_united_nations','$concept_united_nations$')] members: @ztr_un_vote_commitment_support! #v $ztr_un_vote_commitment_support$#! [concept_treaty] Article"
+  country_unlocks_ztr_un_vote_commitment_support_bool: "For [Concept('concept_united_nations','$concept_united_nations|q$')] members: @ztr_un_vote_commitment_support! #v $ztr_un_vote_commitment_support$#! [concept_treaty] Article"
   country_unlocks_ztr_un_vote_commitment_support_bool_desc: "During the last months of a UN vote, a great power can ask a member that has not voted yet to commit its vote #P in favor#! of the proposal through this [concept_treaty] Article."
-  country_unlocks_ztr_un_vote_commitment_against_bool: "For [Concept('concept_united_nations','$concept_united_nations$')] members: @ztr_un_vote_commitment_against! #v $ztr_un_vote_commitment_against$#! [concept_treaty] Article"
+  country_unlocks_ztr_un_vote_commitment_against_bool: "For [Concept('concept_united_nations','$concept_united_nations|q$')] members: @ztr_un_vote_commitment_against! #v $ztr_un_vote_commitment_against$#! [concept_treaty] Article"
   country_unlocks_ztr_un_vote_commitment_against_bool_desc: "During the last months of a UN vote, a great power can ask a member that has not voted yet to commit its vote #N against#! the proposal through this [concept_treaty] Article."
+  high_definition_television: "Liquid Crystal Displays"
+  high_definition_television_desc: "Liquid Crystal Displays replace the bulky cathode tube with a thin panel of liquid crystals that filter a backlight. Flat, light and power-efficient, they made high definition affordable and, during the 2000s, pushed the cathode tube out of televisions and computer monitors."
+  country_ztr_patents_mult: "[Concept('concept_ztr_patents','$concept_ztr_patents|q$')]"
+  country_ztr_patents_mult_desc: "Increases the [Concept('concept_ztr_patents','$concept_ztr_patents|q$')] filed each year in every sector."
+  ztr_patents_unlocked_tt: "@warning! Unlocks [Concept('concept_ztr_patents','$concept_ztr_patents|q$')]: with a [GetBuildingType('building_research_center').GetName], our industries file them in #v 14#! sectors, and the sectors of our current research speed it up."
+  country_ztr_research_agreements_mult: "Research Agreement effects"
+  country_ztr_research_agreements_mult_desc: "Increases the [Concept('concept_technology_spread','$concept_technology_spread|q$')] our research agreements give, after their cap."
+  nuclear_fusion_reactor_desc: "Nuclear fusion , the process that powers the sun , has long been the ultimate goal of energy research. By fusing hydrogen isotopes (deuterium and tritium) at extreme temperatures, a fusion reactor produces a staggering amount of energy with minimal radioactive waste and no carbon emissions. This technology represents the pinnacle of nuclear science, promising virtually limitless clean energy.\n\nResearching it gives only the design: we must complete the fusion programme of our #v National Research Center#!, or buy the process, before we can build fusion power plants."
+  photovoltaic_effect: "Silicon Solar Cells"
+  photovoltaic_effect_desc: "The photovoltaic effect is the generation of an electric voltage in a material exposed to light. Observed by Edmond Becquerel in 1839 and later explained by Einstein's theory of the photoelectric effect, it remained a laboratory curiosity until 1954, when Bell Labs built the first practical Silicon Solar Cell. Panels of such cells convert sunlight directly into electricity, with no fuel and no moving parts, opening the way to solar power plants."

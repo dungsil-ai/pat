@@ -9,14 +9,6 @@
   law_mining_strategic_desc: "이 법안은 광산 건설을 희토류와 같은 전략적 광산으로만 제한합니다. 이는 국가의 경제 및 군사적 필요를 위한 필수 자원을 확보하는 것을 목표로 합니다." # 7590687170877278462
   law_polluting_mining_banned: "오염성 채광 금지" # 11639495741597406190
   law_polluting_mining_banned_desc: "이 법안은 환경과 공중 보건을 보호하기 위해 모든 광산의 건설을 제한하고 모든 오염 유발 광산을 폐쇄합니다. 이는 지속 가능한 발전을 향한 중요한 진일보이지만, 경제에는 퇴보적인 조치입니다." # 2641779634747546626
-  lawgroup_uranium_usage: "우라늄 사용" # 9487307657648407032
-  lawgroup_uranium_usage_desc: "원자로 및 무기에서의 사용을 포함하여 우라늄의 사용을 규제하는 법률." # 17626799777541239109
-  law_uranium_civil_usage: "민간 우라늄 사용" # 18052908623740139489
-  law_uranium_civil_usage_desc: "이 법안은 핵 발전과 같은 민간 목적으로 우라늄 사용을 허용합니다. 이는 에너지 자립을 증진하고 화석 연료에 대한 의존도를 줄입니다." # 9188354797369482916
-  law_uranium_full_usage: "군용 우라늄 사용" # 12320069945484720546
-  law_uranium_full_usage_desc: "이 법은 우라늄을 핵무기를 포함한 민간 및 군사적 목적 모두에 사용할 수 있도록 허용합니다. 이는 에너지 자립을 촉진하고 국가 안보를 강화합니다. 이 법을 제정하면 #i 원자 폭탄#!을 보유하게 됩니다." # 9244617108747902704
-  law_uranium_ban: "우라늄 금지" # 7238717585891754749
-  law_uranium_ban_desc: "이 법안은 민간 및 군사적 용도를 포함한 모든 목적의 우라늄 사용을 금지합니다." # 15500157273357068710
   lawgroup_bioethics: "생명 윤리" # 9876904520481315233
   lawgroup_bioethics_desc: "생명권, 낙태, 안락사 등을 포함한 생명윤리 문제를 규제하는 법률." # 6516097769067804802
   law_life_rights: "생명권" # 5108958007672824197
@@ -61,12 +53,11 @@
   law_public_universities: "국립 대학교" # 12471684684514253615
   law_public_universities_desc: "이 법안은 공립 대학을 설립하여 모든 시민에게 접근 가능한 고등 교육을 제공합니다. 이는 학문적 탁월성, 연구, 혁신을 증진하는 것을 목표로 하며, 동시에 교육이 사회경제적 지위에 의해 제한받지 않도록 보장합니다." # 12909945716735415352
   nuclear_weapons_silo_destroy_tt: "이 국가의 #v 핵무기 사일로#! [concept_building]이 #V #N 해체#!될 것이며, 국가는 핵무기를 상실할 것입니다." # 15474042115421114667
-  nuclear_weapons_silo_destroy_and_nuclear_power_plant_disabled_tt: "이 국가의 #v 핵무기 사일로#! [concept_building]는 #V #N 해체#!될 것이며, #v 원자력 발전소#! [Concept('concept_production_method','$concept_production_methods$')]는 #V #N 가동 중지#!될 것입니다." # 733490943916633999
   mine_banned_hazardous_tt: "@warning! #v 석탄, 납 및 유황 광산#! [concept_building]은 더 이상 #v 건설 가능#!하지 않습니다." # 3199051885241071817
   mine_banned_strategic_tt: "@warning! #v 석탄, 납, 유황, 우라늄 및 보크사이트 광산#! [concept_building]은 더 이상 #v 건설 가능#!하지 않습니다." # 9659097082648106775
   mine_banned_tt: "@warning! #v 광산#! [concept_building]은 더 이상 #v 건설 가능#!하지 않습니다." # 16085774883008927468
   mine_banned_destroy_tt: "@warning! #v 이 국가의 석탄, 납, 황 광산#! [concept_building]이 #V #N 해체될 것입니다#!#!" # 15735363790598563404
-  recycling_center_activation_tt: "@warning! #v 도시 중심지#!의 [Concept('concept_production_method','$concept_production_methods$')] [concept_building]이 #positive_value 사용 가능#!해져 다양한 자원을 재활용할 수 있게 됩니다. 이는 폐기물을 줄이고 지속 가능한 자원 관리를 촉진하는 데 도움이 될 것입니다." # 14015077281696716103
+  recycling_center_activation_tt: "@warning! The Recycling Center [Concept('concept_production_method','$concept_production_methods|q$')] in #v Urban Centers#! [concept_building] will be #positive_value Available#!, allowing the recycling of various materials. This will help reduce waste and promote sustainable resource management."
   law_collectivized_agriculture_agro_socialist: "소련 농업 집단화" # 8832038398944030850
   law_command_economy_menshevik: "소비에트 국가 주도 경제" # 3778979648446655626
   law_council_republic_soviet: "소비에트 노동자 평의회 공화국" # 18446522381139756149
@@ -78,14 +69,24 @@
   law_national_electric_system_desc: "국가 송전 체계가 지역 망을 하나의 통합된 네트워크로 연결합니다. 재생 에너지를 포함한 대형 발전소와 변동 출력원을 고립된 지역 시스템에 과부하를 주지 않고 통합할 수 있습니다." # 17150326704658102946
   law_modern_national_electric_system: "현대적 국가 전력 체계" # 12463957482861095721
   law_modern_national_electric_system_desc: "국가 전력망이 현대적이고 고용량인 전력 시스템으로 관리됩니다. 첨단 송전 및 제어 방식을 사용하여 매우 대규모의 유연한 전력 생산을 지원합니다." # 7765494540782712565
-  ztr_un_hr_encouraged_decolonization_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] does not encourage decolonization through its [Concept('concept_un_decolonization','$concept_un_decolonization$')]."
-  ztr_un_hr_conservative_decolonization_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] does not restrict colonial laws through its [Concept('concept_un_decolonization','$concept_un_decolonization$')]."
-  ztr_un_hr_illegalized_slavery_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not banned slavery through its [Concept('concept_un_slavery','$concept_un_slavery$')]."
-  ztr_un_hr_restricted_labor_children_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not restricted child labor through its [concept_un_children_rights]."
-  ztr_un_hr_compulsory_primary_school_children_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not made primary schooling compulsory through its [concept_un_children_rights]."
-  ztr_un_hr_gender_equality_women_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not mandated gender equality through its [concept_un_women_rights]."
-  ztr_un_hr_basic_protection_environment_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not set a minimum environmental standard through its [concept_un_environment]."
-  ztr_un_hr_regulatory_bodies_labor_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not set a minimum labor standard through its [concept_un_labor_rights]."
-  ztr_un_hr_worker_protections_labor_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations$')] has not made worker protections the standard through its [concept_un_labor_rights]."
+  ztr_un_hr_encouraged_decolonization_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] does not encourage decolonization through its [Concept('concept_un_decolonization','$concept_un_decolonization|q$')]."
+  ztr_un_hr_conservative_decolonization_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] does not restrict colonial laws through its [Concept('concept_un_decolonization','$concept_un_decolonization|q$')]."
+  ztr_un_hr_illegalized_slavery_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not banned slavery through its [Concept('concept_un_slavery','$concept_un_slavery|q$')]."
+  ztr_un_hr_restricted_labor_children_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not restricted child labor through its [concept_un_children_rights]."
+  ztr_un_hr_compulsory_primary_school_children_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not made primary schooling compulsory through its [concept_un_children_rights]."
+  ztr_un_hr_gender_equality_women_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not mandated gender equality through its [concept_un_women_rights]."
+  ztr_un_hr_basic_protection_environment_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not set a minimum environmental standard through its [concept_un_environment]."
+  ztr_un_hr_regulatory_bodies_labor_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not set a minimum labor standard through its [concept_un_labor_rights]."
+  ztr_un_hr_worker_protections_labor_rights_tt: "The [Concept('concept_united_nations','$concept_united_nations|q$')] has not made worker protections the standard through its [concept_un_labor_rights]."
   law_coercive_pronatalism: "Coercive Pronatalism"
-  law_coercive_pronatalism_desc: "The state treats motherhood as a duty to the nation: family allowances and marriage loans reward large families, while celibacy, contraception and childlessness are taxed, censored and punished.\n\nSlows the [Concept('concept_demographic_stages','$concept_demographic_stages$')] by #negative_value -2#! points a year in stage 5, #negative_value -3#! in stage 6 and #negative_value -4#! from stage 7."
+  law_coercive_pronatalism_desc: "The state treats motherhood as a duty to the nation: family allowances and marriage loans reward large families, while celibacy, contraception and childlessness are taxed, censored and punished.\n\nSlows the [Concept('concept_demographic_stages','$concept_demographic_stages|q$')] by #negative_value -2#! points a year in stage 5, #negative_value -3#! in stage 6 and #negative_value -4#! from stage 7."
+  lawgroup_uranium_usage: "Nuclear Power"
+  lawgroup_uranium_usage_desc: "Laws on the civil use of nuclear energy. Nuclear weapons are not a law: they come from the programmes of the National Research Center and are given up by government decision."
+  law_uranium_civil_usage: "Nuclear Power Permitted"
+  law_uranium_civil_usage_desc: "Nuclear power plants can be built and operated wherever the state allows it."
+  law_ztr_nuclear_moratorium: "Nuclear Moratorium"
+  law_ztr_nuclear_moratorium_desc: "No new nuclear power plants: those already built keep running until the end of their life, as in Sweden after 1980, Spain after 1984 and Germany after 2002."
+  law_uranium_ban: "Nuclear Power Banned"
+  law_uranium_ban_desc: "Nuclear power plants are shut down and no new ones can be built."
+  ztr_nuclear_moratorium_activate_tt: "No new #v Nuclear Power Plants#! can be built; existing ones keep running"
+  ztr_nuclear_ban_activate_tt: "Every #v Nuclear Power Plant#! stops producing and no new ones can be built"
